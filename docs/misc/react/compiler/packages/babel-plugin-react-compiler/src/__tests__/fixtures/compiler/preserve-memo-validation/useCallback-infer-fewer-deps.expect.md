@@ -1,15 +1,11 @@
 ---
+title: Usecallback Infer Fewer Deps.Expect
 category: misc
-last_updated: null
-source_file: useCallback-infer-fewer-deps.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usecallback Infer Fewer Deps.Expect
+last_updated: null
+source_file: useCallback-infer-fewer-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

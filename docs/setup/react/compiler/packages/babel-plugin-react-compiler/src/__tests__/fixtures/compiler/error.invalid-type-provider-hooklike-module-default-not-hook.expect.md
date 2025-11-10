@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Type Provider Hooklike Module Default Not Hook.Expect
 category: setup
-last_updated: null
-source_file: error.invalid-type-provider-hooklike-module-default-not-hook.expect.md
-summary: '```javascript
-
-  import foo from ''useDefaultExportNotTypedAsHook'';'
 tags:
 - javascript
 - setup
-title: Error.Invalid Type Provider Hooklike Module Default Not Hook.Expect
+last_updated: null
+source_file: error.invalid-type-provider-hooklike-module-default-not-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

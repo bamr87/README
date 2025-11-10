@@ -1,14 +1,11 @@
 ---
+title: Infer Functions Component With Hook Call.Expect
 category: misc
-last_updated: null
-source_file: infer-functions-component-with-hook-call.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component(props)\
-  \ {\n  const [state, ] = useState(null);\n  return [state];\n}"
 tags:
 - javascript
-title: Infer Functions Component With Hook Call.Expect
+last_updated: null
+source_file: infer-functions-component-with-hook-call.expect.md
 ---
-
 ## Input
 
 ```javascript

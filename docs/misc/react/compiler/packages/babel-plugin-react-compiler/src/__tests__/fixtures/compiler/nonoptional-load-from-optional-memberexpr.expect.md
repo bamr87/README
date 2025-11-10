@@ -1,19 +1,11 @@
 ---
+title: Nonoptional Load From Optional Memberexpr.Expect
 category: misc
-last_updated: null
-source_file: nonoptional-load-from-optional-memberexpr.expect.md
-summary: '``javascript
-
-  // Note that a?.b.c is semantically different from (a?.b).c
-
-  // Here, ''props?.a is an optional chain, and .b is an unconditional load
-
-  // (nullthrows if a is nullish)'
 tags:
 - javascript
-title: Nonoptional Load From Optional Memberexpr.Expect
+last_updated: null
+source_file: nonoptional-load-from-optional-memberexpr.expect.md
 ---
-
 ## Input
 
 ```javascript

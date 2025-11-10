@@ -1,14 +1,11 @@
 ---
+title: Overlapping Scopes Shadowing Within Block.Expect
 category: misc
-last_updated: null
-source_file: overlapping-scopes-shadowing-within-block.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = [];\n  if (a) {\n    let\
-  \ y = [];\n    if (b) {\n      y.push(c);\n    }"
 tags:
 - javascript
-title: Overlapping Scopes Shadowing Within Block.Expect
+last_updated: null
+source_file: overlapping-scopes-shadowing-within-block.expect.md
 ---
-
 ## Input
 
 ```javascript

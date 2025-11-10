@@ -1,18 +1,12 @@
 ---
+title: Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
 category: api
-last_updated: null
-source_file: error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
+last_updated: null
+source_file: error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

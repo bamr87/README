@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Reactusememo Async Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-ReactUseMemo-async-callback.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  let x = React.useMemo(async\
-  \ () => {\n    await a;\n  }, []);\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Reactusememo Async Callback.Expect
+last_updated: null
+source_file: error.invalid-ReactUseMemo-async-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

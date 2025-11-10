@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Read Ref Prop In Render Destructure.Expect
 category: api
-last_updated: null
-source_file: error.invalid-read-ref-prop-in-render-destructure.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender @compilationMode:\"infer\"\
-  \nfunction Component({ref}) {\n  const value = ref.current;\n  return <div>{value}</div>;\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Read Ref Prop In Render Destructure.Expect
+last_updated: null
+source_file: error.invalid-read-ref-prop-in-render-destructure.expect.md
 ---
-
 ## Input
 
 ```javascript

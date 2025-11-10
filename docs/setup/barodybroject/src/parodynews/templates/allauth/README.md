@@ -1,16 +1,13 @@
 ---
+title: allauth Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In Django settings\nINSTALLEDAPPS = [\n    'allauth',\n    'allauth.account',\n\
-  \    'allauth.socialaccount',\n     Other apps\n]"
 tags:
 - python
 - docker
 - setup
-title: allauth Directory
+last_updated: null
+source_file: README.md
 ---
-
 # allauth Directory
 
 ## Purpose

@@ -1,15 +1,11 @@
 ---
+title: Allow Global Reassignment In Effect.Expect
 category: misc
-last_updated: null
-source_file: allow-global-reassignment-in-effect.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Global Reassignment In Effect.Expect
+last_updated: null
+source_file: allow-global-reassignment-in-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Access Ref During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-access-ref-during-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  const value = ref.current;\n  return value;\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Access Ref During Render.Expect
+last_updated: null
+source_file: error.invalid-access-ref-during-render.expect.md
 ---
-
 ## Input
 
 ```javascript

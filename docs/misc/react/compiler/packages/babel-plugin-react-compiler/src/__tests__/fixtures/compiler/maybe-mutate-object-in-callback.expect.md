@@ -1,15 +1,11 @@
 ---
+title: Maybe Mutate Object In Callback.Expect
 category: misc
-last_updated: null
-source_file: maybe-mutate-object-in-callback.expect.md
-summary: '```javascript
-
-  const {mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Maybe Mutate Object In Callback.Expect
+last_updated: null
+source_file: maybe-mutate-object-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

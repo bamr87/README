@@ -1,15 +1,11 @@
 ---
+title: Typed Identity Function Mutable Input.Expect
 category: misc
-last_updated: null
-source_file: typed-identity-function-mutable-input.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel'
 tags:
 - javascript
-title: Typed Identity Function Mutable Input.Expect
+last_updated: null
+source_file: typed-identity-function-mutable-input.expect.md
 ---
-
 ## Input
 
 ```javascript

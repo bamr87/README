@@ -1,16 +1,12 @@
 ---
+title: Todo.Error.Object Pattern Computed Key.Expect
 category: development
-last_updated: null
-source_file: todo.error.object-pattern-computed-key.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Todo.Error.Object Pattern Computed Key.Expect
+last_updated: null
+source_file: todo.error.object-pattern-computed-key.expect.md
 ---
-
 ## Input
 
 ```javascript

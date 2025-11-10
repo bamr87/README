@@ -1,15 +1,11 @@
 ---
+title: Mege Consecutive Scopes Dont Merge With Different Deps.Expect
 category: misc
-last_updated: null
-source_file: mege-consecutive-scopes-dont-merge-with-different-deps.expect.md
-summary: '```javascript
-
-  const {getNumber, identity} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Mege Consecutive Scopes Dont Merge With Different Deps.Expect
+last_updated: null
+source_file: mege-consecutive-scopes-dont-merge-with-different-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

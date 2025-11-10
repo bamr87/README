@@ -1,15 +1,11 @@
 ---
+title: Todo Type Annotations Props.Expect
 category: misc
-last_updated: null
-source_file: todo_type-annotations-props.expect.md
-summary: "```javascript\n// @enableUseTypeAnnotations\nfunction useArray(items: Array<number>)\
-  \ {\n  // With type information we know that the callback cannot escape\n  // and\
-  \ does not need to be memoized, only the ..."
 tags:
 - javascript
-title: Todo Type Annotations Props.Expect
+last_updated: null
+source_file: todo_type-annotations-props.expect.md
 ---
-
 ## Input
 
 ```javascript

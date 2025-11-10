@@ -1,17 +1,14 @@
 ---
+title: "Migration Guide: v0.1.0 \u2192 v1.0.0"
 category: setup
-last_updated: null
-source_file: migration-guide.md
-summary: This is a major configuration upgrade that requires careful migration planning.
-  While the changes are extensive, they are designed to be backwardcompatible where
-  possible.
 tags:
 - python
 - docker
 - aws
 - api
 - database
-title: 'Migration Guide: v0.1.0 → v1.0.0'
+last_updated: null
+source_file: migration-guide.md
 ---
 # Migration Guide: v0.1.0 → v1.0.0
 

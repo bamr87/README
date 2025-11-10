@@ -1,16 +1,12 @@
 ---
+title: Repro Allocating Ternary Test Instruction Scope.Expect
 category: misc
-last_updated: null
-source_file: repro-allocating-ternary-test-instruction-scope.expect.md
-summary: '```javascript
-
-  import {identity, makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Repro Allocating Ternary Test Instruction Scope.Expect
+last_updated: null
+source_file: repro-allocating-ternary-test-instruction-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

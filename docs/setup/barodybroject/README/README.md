@@ -1,24 +1,15 @@
 ---
-author: README Architect Agent
+title: "\U0001F4DA The Forbidden Library"
 category: setup
-description: A comprehensive catalog of all documentation in the repository
-last_updated: null
-lastmod: '2025-10-30'
-source_file: README.md
-summary: This mystical library contains every README.md file, organized by location
-  and purpose. Each document is a gateway to understanding, a map to navigate the
-  codebase, and a guide for both humans and AI ...
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: 📚 The Forbidden Library
-version: 1.0.0
+last_updated: null
+source_file: README.md
 ---
-
-
 # 📚 The Forbidden Library
 ## Master Index of All Documentation
 

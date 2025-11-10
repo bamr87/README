@@ -1,17 +1,11 @@
 ---
+title: Repro Separate Memoization Due To Callback Capturing.Expect
 category: misc
-last_updated: null
-source_file: repro-separate-memoization-due-to-callback-capturing.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Separate Memoization Due To Callback Capturing.Expect
+last_updated: null
+source_file: repro-separate-memoization-due-to-callback-capturing.expect.md
 ---
-
 ## Input
 
 ```javascript

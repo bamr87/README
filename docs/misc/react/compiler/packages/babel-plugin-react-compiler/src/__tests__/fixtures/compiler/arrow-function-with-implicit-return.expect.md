@@ -1,18 +1,12 @@
 ---
+title: Arrow Function With Implicit Return.Expect
 category: misc
-last_updated: null
-source_file: arrow-function-with-implicit-return.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  const Test = () => <div />;'
 tags:
 - javascript
 - testing
-title: Arrow Function With Implicit Return.Expect
+last_updated: null
+source_file: arrow-function-with-implicit-return.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Gating Use Before Decl.Expect
 category: misc
-last_updated: null
-source_file: gating-use-before-decl.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {memo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Gating Use Before Decl.Expect
+last_updated: null
+source_file: gating-use-before-decl.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Ssa Renaming Ternary Destruction.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-ternary-destruction.expect.md
-summary: "```javascript\nfunction useFoo(props) {\n  let x = [];\n  x.push(props.bar);\n\
-  \  props.cond ? (({x} = {x: {}}), ([x] = [[]]), x.push(props.foo)) : null;\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Ssa Renaming Ternary Destruction.Expect
+last_updated: null
+source_file: ssa-renaming-ternary-destruction.expect.md
 ---
-
 ## Input
 
 ```javascript

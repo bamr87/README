@@ -1,19 +1,13 @@
 ---
+title: Repro Capturing Func Maybealias Captured Mutate.Expect
 category: api
-last_updated: null
-source_file: repro-capturing-func-maybealias-captured-mutate.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
 - api
-title: Repro Capturing Func Maybealias Captured Mutate.Expect
+last_updated: null
+source_file: repro-capturing-func-maybealias-captured-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

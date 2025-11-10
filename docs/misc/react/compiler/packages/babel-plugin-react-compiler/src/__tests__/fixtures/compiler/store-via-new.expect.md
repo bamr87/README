@@ -1,14 +1,11 @@
 ---
+title: Store Via New.Expect
 category: misc
-last_updated: null
-source_file: store-via-new.expect.md
-summary: "```javascript\nfunction Foo() {\n  const x = {};\n  const y = new Foo(x);\n\
-  \  y.mutate();\n  return x;\n}"
 tags:
 - javascript
-title: Store Via New.Expect
+last_updated: null
+source_file: store-via-new.expect.md
 ---
-
 ## Input
 
 ```javascript

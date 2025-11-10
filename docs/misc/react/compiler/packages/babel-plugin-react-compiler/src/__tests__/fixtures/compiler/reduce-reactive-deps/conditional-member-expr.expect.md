@@ -1,19 +1,11 @@
 ---
+title: Conditional Member Expr.Expect
 category: misc
-last_updated: null
-source_file: conditional-member-expr.expect.md
-summary: '``javascript
-
-  // To preserve the nullthrows behavior and reactive deps of this code,
-
-  // Forget needs to add props.a as a dependency (since props.a.b` is
-
-  // a conditional dependency, i.e. gated behind c...'
 tags:
 - javascript
-title: Conditional Member Expr.Expect
+last_updated: null
+source_file: conditional-member-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

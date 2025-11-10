@@ -1,19 +1,15 @@
 ---
+title: WebAuthn Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "{% block content %}\n<div class=\"row justifycontentcenter\">\n    <div\
-  \ class=\"colmd8\">\n        <div class=\"card\">\n            <div class=\"cardheader\"\
-  >\n                <h3>\n                    <i class=\"f..."
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: WebAuthn Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # WebAuthn Templates Directory
 
 ## Purpose

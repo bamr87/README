@@ -1,16 +1,11 @@
 ---
+title: Preserve Memo Deps Conditional Property Chain Less Precise Deps.Expect
 category: misc
-last_updated: null
-source_file: preserve-memo-deps-conditional-property-chain-less-precise-deps.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-  @enableOptionalDependencies @enableTreatFunctionDepsAsConditional:false'
 tags:
 - javascript
-title: Preserve Memo Deps Conditional Property Chain Less Precise Deps.Expect
+last_updated: null
+source_file: preserve-memo-deps-conditional-property-chain-less-precise-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

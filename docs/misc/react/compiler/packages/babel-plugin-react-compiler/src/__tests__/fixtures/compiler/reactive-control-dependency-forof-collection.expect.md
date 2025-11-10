@@ -1,15 +1,11 @@
 ---
+title: Reactive Control Dependency Forof Collection.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-forof-collection.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  for (const i of props.values)\
-  \ {\n    if (i > 10) {\n      x = 10;\n    } else {\n      x = 1;\n    }\n  }\n\
-  \  // The values assigned to x are nonreactive, b..."
 tags:
 - javascript
-title: Reactive Control Dependency Forof Collection.Expect
+last_updated: null
+source_file: reactive-control-dependency-forof-collection.expect.md
 ---
-
 ## Input
 
 ```javascript

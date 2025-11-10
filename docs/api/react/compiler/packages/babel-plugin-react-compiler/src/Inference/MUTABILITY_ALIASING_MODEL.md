@@ -1,14 +1,11 @@
 ---
+title: The Mutability & Aliasing Model
 category: api
-last_updated: null
-source_file: MUTABILITY_ALIASING_MODEL.md
-summary: This document describes the new (as of June 2025) mutability and aliasing
-  model powering React Compiler. The mutability and aliasing system is a conceptual
-  subcomponent whose primary role is to determ...
 tags:
 - javascript
 - api
-title: The Mutability & Aliasing Model
+last_updated: null
+source_file: MUTABILITY_ALIASING_MODEL.md
 ---
 # The Mutability & Aliasing Model
 

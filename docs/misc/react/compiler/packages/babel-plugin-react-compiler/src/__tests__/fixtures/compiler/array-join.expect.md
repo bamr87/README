@@ -1,15 +1,11 @@
 ---
+title: Array Join.Expect
 category: misc
-last_updated: null
-source_file: array-join.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [{}, [], props.value];\n\
-  \  const y = x.join(() => 'this closure gets stringified, not called');\n  foo(y);\n\
-  \  return [x, y];\n}"
 tags:
 - javascript
-title: Array Join.Expect
+last_updated: null
+source_file: array-join.expect.md
 ---
-
 ## Input
 
 ```javascript

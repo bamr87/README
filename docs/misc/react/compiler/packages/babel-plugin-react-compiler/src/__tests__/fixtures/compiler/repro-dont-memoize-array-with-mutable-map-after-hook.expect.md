@@ -1,17 +1,11 @@
 ---
+title: Repro Dont Memoize Array With Mutable Map After Hook.Expect
 category: misc
-last_updated: null
-source_file: repro-dont-memoize-array-with-mutable-map-after-hook.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Dont Memoize Array With Mutable Map After Hook.Expect
+last_updated: null
+source_file: repro-dont-memoize-array-with-mutable-map-after-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

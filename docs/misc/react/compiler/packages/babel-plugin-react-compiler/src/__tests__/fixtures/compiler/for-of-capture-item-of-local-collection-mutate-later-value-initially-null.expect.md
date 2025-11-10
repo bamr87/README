@@ -1,15 +1,11 @@
 ---
+title: For Of Capture Item Of Local Collection Mutate Later Value Initially Null.Expect
 category: misc
-last_updated: null
-source_file: for-of-capture-item-of-local-collection-mutate-later-value-initially-null.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Capture Item Of Local Collection Mutate Later Value Initially Null.Expect
+last_updated: null
+source_file: for-of-capture-item-of-local-collection-mutate-later-value-initially-null.expect.md
 ---
-
 ## Input
 
 ```javascript

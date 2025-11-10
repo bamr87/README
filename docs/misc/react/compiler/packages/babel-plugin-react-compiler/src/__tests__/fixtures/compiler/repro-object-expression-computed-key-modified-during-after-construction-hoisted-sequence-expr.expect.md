@@ -1,18 +1,12 @@
 ---
-category: misc
-last_updated: null
-source_file: repro-object-expression-computed-key-modified-during-after-construction-hoisted-sequence-expr.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {identity, mutate} from ''sharedruntime'';'
-tags:
-- javascript
 title: Repro Object Expression Computed Key Modified During After Construction Hoisted
   Sequence Expr.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: repro-object-expression-computed-key-modified-during-after-construction-hoisted-sequence-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

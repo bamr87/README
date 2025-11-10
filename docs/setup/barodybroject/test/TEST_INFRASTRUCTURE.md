@@ -1,17 +1,14 @@
 ---
+title: Installation Wizard Test Infrastructure
 category: setup
-last_updated: null
-source_file: TEST_INFRASTRUCTURE.md
-summary: This directory contains comprehensive test infrastructure for validating
-  the Barodybroject installation wizard feature. The test suite provides complete
-  coverage of all installation modes, security fe...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Installation Wizard Test Infrastructure
+last_updated: null
+source_file: TEST_INFRASTRUCTURE.md
 ---
 # Installation Wizard Test Infrastructure
 

@@ -1,16 +1,13 @@
 ---
+title: Social Account Email Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: Your {{ provider }} account has been successfully connected to your Barody
-  Broject profile.
 tags:
 - python
 - docker
 - setup
-title: Social Account Email Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Email Templates Directory
 
 ## Purpose

@@ -1,15 +1,11 @@
 ---
+title: Usememo Infer Scope Global.Expect
 category: misc
-last_updated: null
-source_file: useMemo-infer-scope-global.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Infer Scope Global.Expect
+last_updated: null
+source_file: useMemo-infer-scope-global.expect.md
 ---
-
 ## Input
 
 ```javascript

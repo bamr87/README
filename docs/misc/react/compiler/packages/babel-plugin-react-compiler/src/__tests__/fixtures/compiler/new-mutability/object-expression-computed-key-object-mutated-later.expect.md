@@ -1,17 +1,11 @@
 ---
+title: Object Expression Computed Key Object Mutated Later.Expect
 category: misc
-last_updated: null
-source_file: object-expression-computed-key-object-mutated-later.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {identity, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Expression Computed Key Object Mutated Later.Expect
+last_updated: null
+source_file: object-expression-computed-key-object-mutated-later.expect.md
 ---
-
 ## Input
 
 ```javascript

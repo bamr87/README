@@ -1,15 +1,11 @@
 ---
+title: Fbs Params.Expect
 category: misc
-last_updated: null
-source_file: fbs-params.expect.md
-summary: '```javascript
-
-  import {fbs} from ''fbt'';'
 tags:
 - javascript
-title: Fbs Params.Expect
+last_updated: null
+source_file: fbs-params.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,21 +1,11 @@
 ---
+title: Independent Across If.Expect
 category: misc
-last_updated: null
-source_file: independent-across-if.expect.md
-summary: '```javascript
-
-  function compute() {}
-
-  function mutate() {}
-
-  function foo() {}
-
-  function Foo() {}'
 tags:
 - javascript
-title: Independent Across If.Expect
+last_updated: null
+source_file: independent-across-if.expect.md
 ---
-
 ## Input
 
 ```javascript

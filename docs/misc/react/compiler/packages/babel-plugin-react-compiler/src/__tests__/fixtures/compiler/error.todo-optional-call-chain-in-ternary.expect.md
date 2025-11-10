@@ -1,16 +1,12 @@
 ---
+title: Error.Todo Optional Call Chain In Ternary.Expect
 category: misc
-last_updated: null
-source_file: error.todo-optional-call-chain-in-ternary.expect.md
-summary: '```javascript
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Error.Todo Optional Call Chain In Ternary.Expect
+last_updated: null
+source_file: error.todo-optional-call-chain-in-ternary.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Set Constructor Arg.Expect
 category: misc
-last_updated: null
-source_file: set-constructor-arg.expect.md
-summary: "```javascript\nconst MODULELOCAL = new Set([4, 5, 6]);\nfunction useFoo({propArr}:\
-  \ {propArr: Array<number>}) {\n  / Array can be memoized separately of the Set /\n\
-  \  const s1 = new Set([1, 2, 3]);\n  s1.add..."
 tags:
 - javascript
 - aws
-title: Set Constructor Arg.Expect
+last_updated: null
+source_file: set-constructor-arg.expect.md
 ---
-
 ## Input
 
 ```javascript

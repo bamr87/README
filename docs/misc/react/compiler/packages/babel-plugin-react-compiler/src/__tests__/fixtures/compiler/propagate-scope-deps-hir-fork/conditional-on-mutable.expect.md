@@ -1,15 +1,11 @@
 ---
+title: Conditional On Mutable.Expect
 category: misc
-last_updated: null
-source_file: conditional-on-mutable.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction ComponentA(props)\
-  \ {\n  const a = [];\n  const b = [];\n  if (b) {\n    a.push(props.p0);\n  }\n\
-  \  if (props.p1) {\n    b.push(props.p2);\n  }\n  return <Foo a..."
 tags:
 - javascript
-title: Conditional On Mutable.Expect
+last_updated: null
+source_file: conditional-on-mutable.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Infer Nested Function Uncond Access.Expect
 category: misc
-last_updated: null
-source_file: infer-nested-function-uncond-access.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Nested Function Uncond Access.Expect
+last_updated: null
+source_file: infer-nested-function-uncond-access.expect.md
 ---
-
 ## Input
 
 ```javascript

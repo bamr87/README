@@ -1,17 +1,11 @@
 ---
+title: Error.Usecallback Conditional Access Noalloc.Expect
 category: misc
-last_updated: null
-source_file: error.useCallback-conditional-access-noAlloc.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Error.Usecallback Conditional Access Noalloc.Expect
+last_updated: null
+source_file: error.useCallback-conditional-access-noAlloc.expect.md
 ---
-
 ## Input
 
 ```javascript

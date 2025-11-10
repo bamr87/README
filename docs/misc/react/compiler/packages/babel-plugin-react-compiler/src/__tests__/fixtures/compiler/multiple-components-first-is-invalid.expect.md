@@ -1,17 +1,11 @@
 ---
+title: Multiple Components First Is Invalid.Expect
 category: misc
-last_updated: null
-source_file: multiple-components-first-is-invalid.expect.md
-summary: '```javascript
-
-  // @panicThreshold:"none"
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Multiple Components First Is Invalid.Expect
+last_updated: null
+source_file: multiple-components-first-is-invalid.expect.md
 ---
-
 ## Input
 
 ```javascript

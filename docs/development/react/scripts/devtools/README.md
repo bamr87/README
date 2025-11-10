@@ -1,19 +1,12 @@
 ---
+title: Releasing DevTools
 category: development
-last_updated: null
-source_file: README.md
-summary: 'To release DevTools, do the following steps (in order):
-
-  1. Prepare a release
-
-  2. Build and test a release
-
-  3. Publish a release'
 tags:
 - javascript
 - testing
 - development
-title: Releasing DevTools
+last_updated: null
+source_file: README.md
 ---
 # Releasing DevTools
 

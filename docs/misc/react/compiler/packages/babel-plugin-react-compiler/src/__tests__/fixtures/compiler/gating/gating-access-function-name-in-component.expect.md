@@ -1,14 +1,11 @@
 ---
+title: Gating Access Function Name In Component.Expect
 category: misc
-last_updated: null
-source_file: gating-access-function-name-in-component.expect.md
-summary: "```javascript\n// @gating\nfunction Component() {\n  const name = Component.name;\n\
-  \  return <div>{name}</div>;\n}"
 tags:
 - javascript
-title: Gating Access Function Name In Component.Expect
+last_updated: null
+source_file: gating-access-function-name-in-component.expect.md
 ---
-
 ## Input
 
 ```javascript

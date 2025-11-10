@@ -1,14 +1,11 @@
 ---
+title: While Logical.Expect
 category: misc
-last_updated: null
-source_file: while-logical.expect.md
-summary: "```javascript\nfunction foo(props) {\n  let x = 0;\n  while (x > props.min\
-  \ && x < props.max) {\n    x = 2;\n  }\n  return x;\n}"
 tags:
 - javascript
-title: While Logical.Expect
+last_updated: null
+source_file: while-logical.expect.md
 ---
-
 ## Input
 
 ```javascript

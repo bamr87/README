@@ -1,15 +1,11 @@
 ---
+title: Repro Duplicate Type Import.Expect
 category: misc
-last_updated: null
-source_file: repro-duplicate-type-import.expect.md
-summary: '```javascript
-
-  import type {ReactElement} from ''react'';'
 tags:
 - javascript
-title: Repro Duplicate Type Import.Expect
+last_updated: null
+source_file: repro-duplicate-type-import.expect.md
 ---
-
 ## Input
 
 ```javascript

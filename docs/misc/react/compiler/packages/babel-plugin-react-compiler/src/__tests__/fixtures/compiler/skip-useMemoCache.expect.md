@@ -1,15 +1,11 @@
 ---
+title: Skip Usememocache.Expect
 category: misc
-last_updated: null
-source_file: skip-useMemoCache.expect.md
-summary: '```javascript
-
-  import {c as useMemoCache} from ''react/compilerruntime'';'
 tags:
 - javascript
-title: Skip Usememocache.Expect
+last_updated: null
+source_file: skip-useMemoCache.expect.md
 ---
-
 ## Input
 
 ```javascript

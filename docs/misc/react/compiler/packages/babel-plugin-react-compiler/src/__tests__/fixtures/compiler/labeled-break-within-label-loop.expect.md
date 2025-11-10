@@ -1,15 +1,11 @@
 ---
+title: Labeled Break Within Label Loop.Expect
 category: misc
-last_updated: null
-source_file: labeled-break-within-label-loop.expect.md
-summary: "``javascript\nfunction useHook(end) {\n  const log = [];\n  for (let i =\
-  \ 0; i < end + 1; i++) {\n    log.push(${i} @A);\n    bb0: {\n      if (i === end)\
-  \ {\n        break bb0;\n      }\n      log.push(${i} @B)..."
 tags:
 - javascript
-title: Labeled Break Within Label Loop.Expect
+last_updated: null
+source_file: labeled-break-within-label-loop.expect.md
 ---
-
 ## Input
 
 ```javascript

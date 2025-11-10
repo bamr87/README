@@ -1,15 +1,11 @@
 ---
+title: Object Expression Computed Key.Expect
 category: misc
-last_updated: null
-source_file: object-expression-computed-key.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Expression Computed Key.Expect
+last_updated: null
+source_file: object-expression-computed-key.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Should Bailout Without Compilation Infer Mode.Expect
 category: misc
-last_updated: null
-source_file: should-bailout-without-compilation-infer-mode.expect.md
-summary: '```javascript
-
-  // @gating @panicThreshold:"none" @compilationMode:"infer"
-
-  let someGlobal = ''joe'';'
 tags:
 - javascript
-title: Should Bailout Without Compilation Infer Mode.Expect
+last_updated: null
+source_file: should-bailout-without-compilation-infer-mode.expect.md
 ---
-
 ## Input
 
 ```javascript

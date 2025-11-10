@@ -1,13 +1,12 @@
 ---
+title: SSR Fixtures
 category: api
-last_updated: null
-source_file: README.md
-summary: A set of test cases for quickly identifying issues with serverside rendering.
 tags:
 - javascript
 - testing
 - api
-title: SSR Fixtures
+last_updated: null
+source_file: README.md
 ---
 # SSR Fixtures
 

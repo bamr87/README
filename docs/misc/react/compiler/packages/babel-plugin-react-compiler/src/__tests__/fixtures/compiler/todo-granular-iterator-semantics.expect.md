@@ -1,15 +1,11 @@
 ---
+title: Todo Granular Iterator Semantics.Expect
 category: misc
-last_updated: null
-source_file: todo-granular-iterator-semantics.expect.md
-summary: '```javascript
-
-  import {useIdentity, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Todo Granular Iterator Semantics.Expect
+last_updated: null
+source_file: todo-granular-iterator-semantics.expect.md
 ---
-
 ## Input
 
 ```javascript

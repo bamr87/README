@@ -1,15 +1,11 @@
 ---
+title: Object Method Maybe Alias.Expect
 category: misc
-last_updated: null
-source_file: object-method-maybe-alias.expect.md
-summary: "```javascript\nimport {createHookWrapper, setProperty} from 'sharedruntime';\n\
-  function useHook(props) {\n  const x = {\n    getX() {\n      return props;\n  \
-  \  },\n  };\n  const y = {\n    getY() {\n      return..."
 tags:
 - javascript
-title: Object Method Maybe Alias.Expect
+last_updated: null
+source_file: object-method-maybe-alias.expect.md
 ---
-
 ## Input
 
 ```javascript

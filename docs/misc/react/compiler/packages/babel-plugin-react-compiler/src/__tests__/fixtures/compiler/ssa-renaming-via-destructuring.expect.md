@@ -1,15 +1,11 @@
 ---
+title: Ssa Renaming Via Destructuring.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-via-destructuring.expect.md
-summary: "```javascript\nfunction foo(props) {\n  let {x} = {x: []};\n  x.push(props.bar);\n\
-  \  if (props.cond) {\n    ({x} = {x: {}});\n    ({x} = {x: []});\n    x.push(props.foo);\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Renaming Via Destructuring.Expect
+last_updated: null
+source_file: ssa-renaming-via-destructuring.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,12 @@
 ---
+title: react-server
 category: api
-last_updated: null
-source_file: README.md
-summary: This is an experimental package for creating custom React streaming server
-  renderers.
 tags:
 - javascript
 - api
 - api
-title: react-server
+last_updated: null
+source_file: README.md
 ---
 # react-server
 

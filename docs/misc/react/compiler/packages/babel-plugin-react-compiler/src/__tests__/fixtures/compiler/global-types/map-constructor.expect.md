@@ -1,15 +1,11 @@
 ---
+title: Map Constructor.Expect
 category: misc
-last_updated: null
-source_file: map-constructor.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Map Constructor.Expect
+last_updated: null
+source_file: map-constructor.expect.md
 ---
-
 ## Input
 
 ```javascript

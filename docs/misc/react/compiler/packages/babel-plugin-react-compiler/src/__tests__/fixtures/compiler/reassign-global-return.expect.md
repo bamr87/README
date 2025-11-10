@@ -1,15 +1,11 @@
 ---
+title: Reassign Global Return.Expect
 category: misc
-last_updated: null
-source_file: reassign-global-return.expect.md
-summary: '```javascript
-
-  let b = 1;'
 tags:
 - javascript
-title: Reassign Global Return.Expect
+last_updated: null
+source_file: reassign-global-return.expect.md
 ---
-
 ## Input
 
 ```javascript

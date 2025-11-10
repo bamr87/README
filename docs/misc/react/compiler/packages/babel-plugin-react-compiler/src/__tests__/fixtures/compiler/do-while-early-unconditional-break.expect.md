@@ -1,14 +1,11 @@
 ---
+title: Do While Early Unconditional Break.Expect
 category: misc
-last_updated: null
-source_file: do-while-early-unconditional-break.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [1, 2, 3];\n  do {\n\
-  \    mutate(x);\n    break;\n  } while (props.cond);\n  return x;\n}"
 tags:
 - javascript
-title: Do While Early Unconditional Break.Expect
+last_updated: null
+source_file: do-while-early-unconditional-break.expect.md
 ---
-
 ## Input
 
 ```javascript

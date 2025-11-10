@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Hook In Nested Function Expression Object Expression.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-in-nested-function-expression-object-expression.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component() {\n \
-  \ 'use memo';\n  const f = () => {\n    const x = {\n      outer() {\n        const\
-  \ g = () => {\n          const y = {\n            inner() {..."
 tags:
 - javascript
-title: Error.Invalid Hook In Nested Function Expression Object Expression.Expect
+last_updated: null
+source_file: error.invalid-hook-in-nested-function-expression-object-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

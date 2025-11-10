@@ -1,14 +1,11 @@
 ---
+title: Method Call Fn Call.Expect
 category: misc
-last_updated: null
-source_file: method-call-fn-call.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  // Construct and freeze x\n  const\
-  \ x = makeObject(a);\n  <div>{x}</div>;"
 tags:
 - javascript
-title: Method Call Fn Call.Expect
+last_updated: null
+source_file: method-call-fn-call.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Repro Invalid Function Expression Effects Phi.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-function-expression-effects-phi.expect.md
-summary: "```javascript\nfunction Component({a, b}) {\n  const y = {a};\n  const x\
-  \ = {b};\n  const f = () => {\n    let z = null;\n    while (z == null) {\n    \
-  \  z = x;\n    }\n    // z is a phi with a backedge, and we ..."
 tags:
 - javascript
-title: Repro Invalid Function Expression Effects Phi.Expect
+last_updated: null
+source_file: repro-invalid-function-expression-effects-phi.expect.md
 ---
-
 ## Input
 
 ```javascript

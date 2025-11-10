@@ -1,30 +1,15 @@
 ---
-author: Barodybroject Team
+title: Ecosystem Integration Configuration
 category: setup
-created: '2025-10-28'
-dependencies:
-- Django settings framework
-- Docker containerization
-- VS Code Copilot integration
-description: Configuration settings and standards for IT-Journey ecosystem integration
-lastModified: '2025-10-28'
-last_updated: null
-relatedFeatures:
-- ../features/ecosystem-integration.md
-- ../features/instruction-harmonization.md
-source_file: ecosystem-integration-config.md
-summary: 'Add these settings to your Django configuration:'
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Ecosystem Integration Configuration
-version: 1.0.0
+last_updated: null
+source_file: ecosystem-integration-config.md
 ---
-
-
 # Ecosystem Integration Configuration
 
 **Configuration settings and standards for seamless IT-Journey ecosystem integration**

@@ -1,17 +1,11 @@
 ---
+title: Repro Duplicate Import Specifier.Expect
 category: misc
-last_updated: null
-source_file: repro-duplicate-import-specifier.expect.md
-summary: '```javascript
-
-  import type {SetStateAction, Dispatch} from ''react'';
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Repro Duplicate Import Specifier.Expect
+last_updated: null
+source_file: repro-duplicate-import-specifier.expect.md
 ---
-
 ## Input
 
 ```javascript

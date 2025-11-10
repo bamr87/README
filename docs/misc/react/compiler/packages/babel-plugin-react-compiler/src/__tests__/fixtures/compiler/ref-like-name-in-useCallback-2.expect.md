@@ -1,17 +1,11 @@
 ---
+title: Ref Like Name In Usecallback 2.Expect
 category: misc
-last_updated: null
-source_file: ref-like-name-in-useCallback-2.expect.md
-summary: '```javascript
-
-  // @enableTreatRefLikeIdentifiersAsRefs @validatePreserveExistingMemoizationGuarantees
-
-  import {useRef, useCallback} from ''react'';'
 tags:
 - javascript
-title: Ref Like Name In Usecallback 2.Expect
+last_updated: null
+source_file: ref-like-name-in-useCallback-2.expect.md
 ---
-
 ## Input
 
 ```javascript

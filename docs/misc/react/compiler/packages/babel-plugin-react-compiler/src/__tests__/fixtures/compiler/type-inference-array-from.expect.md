@@ -1,15 +1,11 @@
 ---
+title: Type Inference Array From.Expect
 category: misc
-last_updated: null
-source_file: type-inference-array-from.expect.md
-summary: '```javascript
-
-  import {useIdentity, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Inference Array From.Expect
+last_updated: null
+source_file: type-inference-array-from.expect.md
 ---
-
 ## Input
 
 ```javascript

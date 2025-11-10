@@ -1,19 +1,15 @@
 ---
+title: Menu Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "<nav class=\"navbar navbarexpandlg navbardark bgprimary\">\n    <div class=\"\
-  container\">\n        <a class=\"navbarbrand\" href=\"{% url 'home' %}\">\n    \
-  \        <img src=\"{% static 'images/logo.png' %}\" alt=\"..."
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: Menu Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Menu Templates Directory
 
 ## Purpose

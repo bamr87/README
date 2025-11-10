@@ -1,14 +1,11 @@
 ---
+title: Destructuring Property Inference.Expect
 category: misc
-last_updated: null
-source_file: destructuring-property-inference.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  x.push(props.value);\n\
-  \  const {length: y} = x;\n  foo(y);\n  return [x, y];\n}"
 tags:
 - javascript
-title: Destructuring Property Inference.Expect
+last_updated: null
+source_file: destructuring-property-inference.expect.md
 ---
-
 ## Input
 
 ```javascript

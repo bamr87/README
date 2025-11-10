@@ -1,19 +1,11 @@
 ---
+title: Gating Use Before Decl Ref.Expect
 category: misc
-last_updated: null
-source_file: gating-use-before-decl-ref.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {createRef, forwardRef} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Gating Use Before Decl Ref.Expect
+last_updated: null
+source_file: gating-use-before-decl-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,18 +1,12 @@
 ---
+title: Merge Consecutive Scopes.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-scopes.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Merge Consecutive Scopes.Expect
+last_updated: null
+source_file: merge-consecutive-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Destructuring Object Default.Expect
 category: misc
-last_updated: null
-source_file: destructuring-object-default.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const {x: {y} = {y: 'default'}}\
-  \ = props.y;\n  return y;\n}"
 tags:
 - javascript
-title: Destructuring Object Default.Expect
+last_updated: null
+source_file: destructuring-object-default.expect.md
 ---
-
 ## Input
 
 ```javascript

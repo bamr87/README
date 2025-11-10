@@ -1,14 +1,11 @@
 ---
+title: Default Param With Reorderable Callback.Expect
 category: misc
-last_updated: null
-source_file: default-param-with-reorderable-callback.expect.md
-summary: "```javascript\nfunction Component(x = () => [1, true, 42.0, 'hello']) {\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Default Param With Reorderable Callback.Expect
+last_updated: null
+source_file: default-param-with-reorderable-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

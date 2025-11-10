@@ -1,17 +1,11 @@
 ---
+title: Capture Backedge Phi With Later Mutation.Expect
 category: misc
-last_updated: null
-source_file: capture-backedge-phi-with-later-mutation.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {arrayPush, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capture Backedge Phi With Later Mutation.Expect
+last_updated: null
+source_file: capture-backedge-phi-with-later-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Destructure Direct Reassignment.Expect
 category: misc
-last_updated: null
-source_file: destructure-direct-reassignment.expect.md
-summary: "``javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nfunction\
-  \ foo(props) {\n  let x, y;\n  ({x, y} = {x: props.a, y: props.b});\n  console.log(x);\
-  \ // prevent DCE from eliminating x` altoget..."
 tags:
 - javascript
-title: Destructure Direct Reassignment.Expect
+last_updated: null
+source_file: destructure-direct-reassignment.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: New Spread.Expect
 category: misc
-last_updated: null
-source_file: new-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = new Foo(...props.foo,\
-  \ null, ...[props.bar]);\n  return x;\n}"
 tags:
 - javascript
-title: New Spread.Expect
+last_updated: null
+source_file: new-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

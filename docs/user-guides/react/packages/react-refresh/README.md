@@ -1,14 +1,11 @@
 ---
+title: react-refresh
 category: user-guides
-last_updated: null
-source_file: README.md
-summary: This package implements the wiring necessary to integrate Fast Refresh into
-  bundlers. Fast Refresh is a feature that lets you edit React components in a running
-  application without losing their state....
 tags:
 - javascript
 - user-guides
-title: react-refresh
+last_updated: null
+source_file: README.md
 ---
 # react-refresh
 

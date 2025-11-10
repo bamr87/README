@@ -1,15 +1,11 @@
 ---
+title: Constant Prop Across Objectmethod Def.Expect
 category: misc
-last_updated: null
-source_file: constant-prop-across-objectmethod-def.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Prop Across Objectmethod Def.Expect
+last_updated: null
+source_file: constant-prop-across-objectmethod-def.expect.md
 ---
-
 ## Input
 
 ```javascript

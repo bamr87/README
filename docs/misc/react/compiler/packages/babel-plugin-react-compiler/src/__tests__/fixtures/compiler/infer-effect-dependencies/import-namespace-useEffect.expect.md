@@ -1,19 +1,11 @@
 ---
+title: Import Namespace Useeffect.Expect
 category: misc
-last_updated: null
-source_file: import-namespace-useEffect.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import  as React from ''react'';
-
-  import  as SharedRuntime from ''sharedruntime'';'
 tags:
 - javascript
-title: Import Namespace Useeffect.Expect
+last_updated: null
+source_file: import-namespace-useEffect.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Computed Store Alias.Expect
 category: misc
-last_updated: null
-source_file: computed-store-alias.expect.md
-summary: "```javascript\nimport {mutate} from 'sharedruntime';\nfunction useHook({a,\
-  \ b}) {\n  let y = {a};\n  let x = {b};\n  x['y'] = y;\n  mutate(x);\n  return x;\n\
-  }"
 tags:
 - javascript
-title: Computed Store Alias.Expect
+last_updated: null
+source_file: computed-store-alias.expect.md
 ---
-
 ## Input
 
 ```javascript

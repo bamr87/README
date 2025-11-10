@@ -1,21 +1,13 @@
 ---
+title: account Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Example login.html template >
-
-  {% extends "account/baseentrance.html" %}
-
-  {% load allauth i18n %}'
 tags:
 - python
 - docker
 - setup
-title: account Directory
+last_updated: null
+source_file: README.md
 ---
-
 # account Directory
 
 ## Purpose

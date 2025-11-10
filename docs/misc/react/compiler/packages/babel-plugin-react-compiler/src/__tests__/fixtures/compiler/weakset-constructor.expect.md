@@ -1,17 +1,11 @@
 ---
+title: Weakset Constructor.Expect
 category: misc
-last_updated: null
-source_file: weakset-constructor.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Weakset Constructor.Expect
+last_updated: null
+source_file: weakset-constructor.expect.md
 ---
-
 ## Input
 
 ```javascript

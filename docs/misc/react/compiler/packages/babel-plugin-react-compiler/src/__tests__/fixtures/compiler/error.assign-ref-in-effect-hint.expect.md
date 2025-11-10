@@ -1,16 +1,12 @@
 ---
+title: Error.Assign Ref In Effect Hint.Expect
 category: misc
-last_updated: null
-source_file: error.assign-ref-in-effect-hint.expect.md
-summary: "``javascript\n// Fixture to test that we show a hint to name as ref or Ref`\
-  \ when attempting\n// to assign .current inside an effect\nfunction Component({foo})\
-  \ {\n  useEffect(() => {\n    foo.current = true..."
 tags:
 - javascript
 - testing
-title: Error.Assign Ref In Effect Hint.Expect
+last_updated: null
+source_file: error.assign-ref-in-effect-hint.expect.md
 ---
-
 ## Input
 
 ```javascript

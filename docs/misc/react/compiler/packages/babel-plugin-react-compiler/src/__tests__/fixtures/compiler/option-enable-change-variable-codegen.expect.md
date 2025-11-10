@@ -1,14 +1,11 @@
 ---
+title: Option Enable Change Variable Codegen.Expect
 category: misc
-last_updated: null
-source_file: option-enable-change-variable-codegen.expect.md
-summary: "```javascript\n// @enableChangeVariableCodegen\nfunction Component(props)\
-  \ {\n  const c0 = [props.a, props.b.c];\n  return c0;\n}"
 tags:
 - javascript
-title: Option Enable Change Variable Codegen.Expect
+last_updated: null
+source_file: option-enable-change-variable-codegen.expect.md
 ---
-
 ## Input
 
 ```javascript

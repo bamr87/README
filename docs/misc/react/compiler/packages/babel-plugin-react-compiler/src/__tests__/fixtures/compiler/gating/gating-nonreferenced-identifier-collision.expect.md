@@ -1,14 +1,11 @@
 ---
+title: Gating Nonreferenced Identifier Collision.Expect
 category: misc
-last_updated: null
-source_file: gating-nonreferenced-identifier-collision.expect.md
-summary: "```javascript\n// @gating\nimport {identity, useHook as useRenamed} from\
-  \ 'sharedruntime';\nconst  = {\n  useHook: () => {},\n};\nidentity(.useHook);"
 tags:
 - javascript
-title: Gating Nonreferenced Identifier Collision.Expect
+last_updated: null
+source_file: gating-nonreferenced-identifier-collision.expect.md
 ---
-
 ## Input
 
 ```javascript

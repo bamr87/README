@@ -1,14 +1,11 @@
 ---
+title: Unused Logical.Expect
 category: misc
-last_updated: null
-source_file: unused-logical.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  props.cond ?\
-  \ (x = 1) : (x = 2);\n  return x;\n}"
 tags:
 - javascript
-title: Unused Logical.Expect
+last_updated: null
+source_file: unused-logical.expect.md
 ---
-
 ## Input
 
 ```javascript

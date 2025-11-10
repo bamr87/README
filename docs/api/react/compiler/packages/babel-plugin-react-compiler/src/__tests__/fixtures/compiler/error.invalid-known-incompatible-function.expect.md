@@ -1,18 +1,14 @@
 ---
+title: Error.Invalid Known Incompatible Function.Expect
 category: api
-last_updated: null
-source_file: error.invalid-known-incompatible-function.expect.md
-summary: '```javascript
-
-  import {knownIncompatible} from ''ReactCompilerKnownIncompatibleTest'';'
 tags:
 - javascript
 - api
 - testing
 - api
-title: Error.Invalid Known Incompatible Function.Expect
+last_updated: null
+source_file: error.invalid-known-incompatible-function.expect.md
 ---
-
 ## Input
 
 ```javascript

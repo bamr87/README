@@ -1,17 +1,11 @@
 ---
+title: Shared Hook Calls.Expect
 category: misc
-last_updated: null
-source_file: shared-hook-calls.expect.md
-summary: '```javascript
-
-  // @enableFire @enableNewMutationAliasingModel
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Shared Hook Calls.Expect
+last_updated: null
+source_file: shared-hook-calls.expect.md
 ---
-
 ## Input
 
 ```javascript

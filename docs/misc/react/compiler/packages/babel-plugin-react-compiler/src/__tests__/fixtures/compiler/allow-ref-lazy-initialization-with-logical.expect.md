@@ -1,16 +1,12 @@
 ---
+title: Allow Ref Lazy Initialization With Logical.Expect
 category: misc
-last_updated: null
-source_file: allow-ref-lazy-initialization-with-logical.expect.md
-summary: '```javascript
-
-  // @validateRefAccessDuringRender'
 tags:
 - javascript
 - testing
-title: Allow Ref Lazy Initialization With Logical.Expect
+last_updated: null
+source_file: allow-ref-lazy-initialization-with-logical.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Modify Usereducer State.Expect
 category: misc
-last_updated: null
-source_file: error.modify-useReducer-state.expect.md
-summary: '```javascript
-
-  import {useReducer} from ''react'';'
 tags:
 - javascript
-title: Error.Modify Usereducer State.Expect
+last_updated: null
+source_file: error.modify-useReducer-state.expect.md
 ---
-
 ## Input
 
 ```javascript

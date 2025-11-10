@@ -1,15 +1,11 @@
 ---
+title: Set For Of Iterate Values.Expect
 category: misc
-last_updated: null
-source_file: set-for-of-iterate-values.expect.md
-summary: '```javascript
-
-  import {makeArray, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set For Of Iterate Values.Expect
+last_updated: null
+source_file: set-for-of-iterate-values.expect.md
 ---
-
 ## Input
 
 ```javascript

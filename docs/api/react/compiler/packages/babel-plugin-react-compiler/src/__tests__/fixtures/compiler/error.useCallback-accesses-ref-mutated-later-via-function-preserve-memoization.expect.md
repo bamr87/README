@@ -1,18 +1,12 @@
 ---
+title: Error.Usecallback Accesses Ref Mutated Later Via Function Preserve Memoization.Expect
 category: api
-last_updated: null
-source_file: error.useCallback-accesses-ref-mutated-later-via-function-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees @validateRefAccessDuringRender
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Usecallback Accesses Ref Mutated Later Via Function Preserve Memoization.Expect
+last_updated: null
+source_file: error.useCallback-accesses-ref-mutated-later-via-function-preserve-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

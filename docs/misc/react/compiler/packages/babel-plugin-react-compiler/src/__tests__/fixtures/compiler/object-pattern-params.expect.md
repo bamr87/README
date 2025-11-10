@@ -1,14 +1,11 @@
 ---
+title: Object Pattern Params.Expect
 category: misc
-last_updated: null
-source_file: object-pattern-params.expect.md
-summary: "```javascript\nfunction component({a, b}) {\n  let y = {a};\n  let z = {b};\n\
-  \  return {y, z};\n}"
 tags:
 - javascript
-title: Object Pattern Params.Expect
+last_updated: null
+source_file: object-pattern-params.expect.md
 ---
-
 ## Input
 
 ```javascript

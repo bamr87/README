@@ -1,16 +1,14 @@
 ---
+title: Azure Deployment Setup Examples
 category: setup
-last_updated: null
-source_file: setup-examples.md
-summary: This file contains examples of what the setup script will do and what prompts
-  you'll see.
 tags:
 - python
 - docker
 - azure
 - database
 - testing
-title: Azure Deployment Setup Examples
+last_updated: null
+source_file: setup-examples.md
 ---
 # Azure Deployment Setup Examples
 

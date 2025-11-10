@@ -1,14 +1,11 @@
 ---
+title: Repro Invalid Scope Merging Value Blocks.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-scope-merging-value-blocks.expect.md
-summary: "```javascript\nimport {\n  CONSTTRUE,\n  identity,\n  makeObjectPrimitives,\n\
-  \  mutateAndReturn,\n  useHook,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Repro Invalid Scope Merging Value Blocks.Expect
+last_updated: null
+source_file: repro-invalid-scope-merging-value-blocks.expect.md
 ---
-
 ## Input
 
 ```javascript

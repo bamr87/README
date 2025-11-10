@@ -1,15 +1,11 @@
 ---
+title: Capture Indirect Mutate Alias.Expect
 category: misc
-last_updated: null
-source_file: capture-indirect-mutate-alias.expect.md
-summary: "```javascript\nfunction component(a) {\n  let x = {a};\n  const f0 = function\
-  \ () {\n    let q = x;\n    const f1 = function () {\n      q.b = 1;\n    };\n \
-  \   f1();\n  };\n  f0();"
 tags:
 - javascript
-title: Capture Indirect Mutate Alias.Expect
+last_updated: null
+source_file: capture-indirect-mutate-alias.expect.md
 ---
-
 ## Input
 
 ```javascript

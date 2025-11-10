@@ -1,15 +1,11 @@
 ---
+title: Use Memo Noemit.Expect
 category: misc
-last_updated: null
-source_file: use-memo-noemit.expect.md
-summary: '```javascript
-
-  // @noEmit'
 tags:
 - javascript
-title: Use Memo Noemit.Expect
+last_updated: null
+source_file: use-memo-noemit.expect.md
 ---
-
 ## Input
 
 ```javascript

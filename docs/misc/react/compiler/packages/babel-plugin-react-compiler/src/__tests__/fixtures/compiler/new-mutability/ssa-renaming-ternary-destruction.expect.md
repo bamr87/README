@@ -1,15 +1,11 @@
 ---
+title: Ssa Renaming Ternary Destruction.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-ternary-destruction.expect.md
-summary: "``javascript\n// @enablePropagateDepsInHIR @enableNewMutationAliasingModel\n\
-  function useFoo(props) {\n  let x = [];\n  x.push(props.bar);\n  // todo: the below\
-  \ should memoize separately from the above\n  //..."
 tags:
 - javascript
-title: Ssa Renaming Ternary Destruction.Expect
+last_updated: null
+source_file: ssa-renaming-ternary-destruction.expect.md
 ---
-
 ## Input
 
 ```javascript

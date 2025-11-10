@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Access Ref In Render Mutate Object With Ref Function.Expect
 category: api
-last_updated: null
-source_file: error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Access Ref In Render Mutate Object With Ref Function.Expect
+last_updated: null
+source_file: error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md
 ---
-
 ## Input
 
 ```javascript

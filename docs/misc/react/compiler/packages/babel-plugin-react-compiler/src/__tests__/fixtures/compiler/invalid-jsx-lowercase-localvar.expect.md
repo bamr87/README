@@ -1,15 +1,11 @@
 ---
+title: Invalid Jsx Lowercase Localvar.Expect
 category: misc
-last_updated: null
-source_file: invalid-jsx-lowercase-localvar.expect.md
-summary: '```javascript
-
-  import {Throw} from ''sharedruntime'';'
 tags:
 - javascript
-title: Invalid Jsx Lowercase Localvar.Expect
+last_updated: null
+source_file: invalid-jsx-lowercase-localvar.expect.md
 ---
-
 ## Input
 
 ```javascript

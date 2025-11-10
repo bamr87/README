@@ -1,14 +1,11 @@
 ---
+title: Constant Computed.Expect
 category: misc
-last_updated: null
-source_file: constant-computed.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const index = 'foo';\n  const\
-  \ x = {};\n  x[index] = x[index] + x['bar'];\n  xindex;\n  return x;\n}"
 tags:
 - javascript
-title: Constant Computed.Expect
+last_updated: null
+source_file: constant-computed.expect.md
 ---
-
 ## Input
 
 ```javascript

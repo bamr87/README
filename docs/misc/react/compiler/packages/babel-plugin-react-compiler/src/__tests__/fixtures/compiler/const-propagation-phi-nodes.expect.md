@@ -1,15 +1,11 @@
 ---
+title: Const Propagation Phi Nodes.Expect
 category: misc
-last_updated: null
-source_file: const-propagation-phi-nodes.expect.md
-summary: "```javascript\nfunction useFoo(setOne: boolean) {\n  let x;\n  let y;\n\
-  \  let z;\n  if (setOne) {\n    x = y = z = 1;\n  } else {\n    x = 2;\n    y =\
-  \ 3;\n    z = 5;\n  }\n  return {x, y, z};\n}"
 tags:
 - javascript
-title: Const Propagation Phi Nodes.Expect
+last_updated: null
+source_file: const-propagation-phi-nodes.expect.md
 ---
-
 ## Input
 
 ```javascript

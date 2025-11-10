@@ -1,23 +1,14 @@
 ---
+title: Documentation Refactoring Summary
 category: setup
-last_updated: null
-source_file: REFACTORING_SUMMARY.md
-summary: '``
-
-  docs/
-
-  ├── README.md                                     Main documentation overview
-
-  ├── features/                                     Feature documentation
-
-  │   ├── README.md                        ...'
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: Documentation Refactoring Summary
+last_updated: null
+source_file: REFACTORING_SUMMARY.md
 ---
 # Documentation Refactoring Summary
 

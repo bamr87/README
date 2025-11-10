@@ -1,18 +1,12 @@
 ---
+title: Error.Ref Initialization Post Access 2.Expect
 category: api
-last_updated: null
-source_file: error.ref-initialization-post-access-2.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Initialization Post Access 2.Expect
+last_updated: null
+source_file: error.ref-initialization-post-access-2.expect.md
 ---
-
 ## Input
 
 ```javascript

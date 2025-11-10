@@ -1,16 +1,14 @@
 ---
+title: Barodybroject VS Code Copilot Instructions
 category: setup
-last_updated: null
-source_file: copilot-instructions.md
-summary: 'This is a Djangobased parody news generator that integrates with OpenAI
-  APIs to create satirical content. The application emphasizes:'
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Barodybroject VS Code Copilot Instructions
+last_updated: null
+source_file: copilot-instructions.md
 ---
 # Barodybroject VS Code Copilot Instructions
 

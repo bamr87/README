@@ -1,15 +1,11 @@
 ---
+title: Fbt Preserve Whitespace Subtree.Expect
 category: misc
-last_updated: null
-source_file: fbt-preserve-whitespace-subtree.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Preserve Whitespace Subtree.Expect
+last_updated: null
+source_file: fbt-preserve-whitespace-subtree.expect.md
 ---
-
 ## Input
 
 ```javascript

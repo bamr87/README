@@ -1,16 +1,14 @@
 ---
+title: "\u2705 Successful Azure Container Apps Deployment"
 category: setup
-last_updated: null
-source_file: DEPLOYMENT-SUCCESS.md
-summary: Your Django parody news application has been successfully deployed to Azure
-  Container Apps!
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: ✅ Successful Azure Container Apps Deployment
+last_updated: null
+source_file: DEPLOYMENT-SUCCESS.md
 ---
 # ✅ Successful Azure Container Apps Deployment
 

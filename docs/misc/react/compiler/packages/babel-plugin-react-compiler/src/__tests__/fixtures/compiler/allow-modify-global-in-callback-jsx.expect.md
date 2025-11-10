@@ -1,17 +1,11 @@
 ---
+title: Allow Modify Global In Callback Jsx.Expect
 category: misc
-last_updated: null
-source_file: allow-modify-global-in-callback-jsx.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Allow Modify Global In Callback Jsx.Expect
+last_updated: null
+source_file: allow-modify-global-in-callback-jsx.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,14 @@
 ---
+title: Release v1.0.0 - Django Settings Optimization
 category: setup
-last_updated: null
-source_file: release-summary.md
-summary: This major release represents a complete transformation of the Barodybroject
-  Django application configuration, elevating it from a developmentfocused setup to
-  an enterprisegrade, productionready platf...
 tags:
 - python
 - docker
 - aws
 - azure
 - database
-title: Release v1.0.0 - Django Settings Optimization
+last_updated: null
+source_file: release-summary.md
 ---
 # Release v1.0.0 - Django Settings Optimization
 

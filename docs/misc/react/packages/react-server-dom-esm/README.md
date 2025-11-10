@@ -1,11 +1,10 @@
 ---
+title: react-server-dom-esm
 category: misc
-last_updated: null
-source_file: README.md
-summary: Experimental React Flight bindings for DOM using ESM.
 tags:
 - javascript
-title: react-server-dom-esm
+last_updated: null
+source_file: README.md
 ---
 # react-server-dom-esm
 

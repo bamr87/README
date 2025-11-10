@@ -1,15 +1,11 @@
 ---
+title: Aliased Nested Scope Fn Expr.Expect
 category: misc
-last_updated: null
-source_file: aliased-nested-scope-fn-expr.expect.md
-summary: "``javascript\n// @enableTransitivelyFreezeFunctionExpressions:false\nimport\
-  \ {\n  Stringify,\n  mutate,\n  identity,\n  setPropertyByKey,\n  shallowCopy,\n\
-  } from 'sharedruntime';\n/\n  Function expression versio..."
 tags:
 - javascript
-title: Aliased Nested Scope Fn Expr.Expect
+last_updated: null
+source_file: aliased-nested-scope-fn-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

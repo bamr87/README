@@ -1,16 +1,12 @@
 ---
+title: Error.Store Property In Global.Expect
 category: misc
-last_updated: null
-source_file: error.store-property-in-global.expect.md
-summary: '```javascript
-
-  let wat = {};'
 tags:
 - javascript
 - testing
-title: Error.Store Property In Global.Expect
+last_updated: null
+source_file: error.store-property-in-global.expect.md
 ---
-
 ## Input
 
 ```javascript

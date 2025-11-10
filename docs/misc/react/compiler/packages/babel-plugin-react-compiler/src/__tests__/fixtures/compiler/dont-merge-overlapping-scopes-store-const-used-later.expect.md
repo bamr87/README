@@ -1,15 +1,11 @@
 ---
+title: Dont Merge Overlapping Scopes Store Const Used Later.Expect
 category: misc
-last_updated: null
-source_file: dont-merge-overlapping-scopes-store-const-used-later.expect.md
-summary: '```javascript
-
-  import {Stringify, makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: Dont Merge Overlapping Scopes Store Const Used Later.Expect
+last_updated: null
+source_file: dont-merge-overlapping-scopes-store-const-used-later.expect.md
 ---
-
 ## Input
 
 ```javascript

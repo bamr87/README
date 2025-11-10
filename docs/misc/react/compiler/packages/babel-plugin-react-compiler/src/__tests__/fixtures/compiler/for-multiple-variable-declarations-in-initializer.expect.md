@@ -1,13 +1,11 @@
 ---
+title: For Multiple Variable Declarations In Initializer.Expect
 category: misc
-last_updated: null
-source_file: for-multiple-variable-declarations-in-initializer.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = [];"
 tags:
 - javascript
-title: For Multiple Variable Declarations In Initializer.Expect
+last_updated: null
+source_file: for-multiple-variable-declarations-in-initializer.expect.md
 ---
-
 ## Input
 
 ```javascript

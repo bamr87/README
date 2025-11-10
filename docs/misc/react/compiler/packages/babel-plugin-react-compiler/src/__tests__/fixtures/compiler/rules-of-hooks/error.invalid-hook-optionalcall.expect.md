@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Hook Optionalcall.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-optionalcall.expect.md
-summary: "```javascript\nfunction Component() {\n  const {result} = useConditionalHook?.()\
-  \ ?? {};\n  return result;\n}"
 tags:
 - javascript
-title: Error.Invalid Hook Optionalcall.Expect
+last_updated: null
+source_file: error.invalid-hook-optionalcall.expect.md
 ---
-
 ## Input
 
 ```javascript

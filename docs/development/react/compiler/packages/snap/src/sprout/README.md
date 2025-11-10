@@ -1,15 +1,12 @@
 ---
+title: Readme
 category: development
-last_updated: null
-source_file: README.md
-summary: Currently, Sprout runs each fixture with a known set of inputs and annotations.
-  Sprout compares execution outputs (i.e. return values and console logs) of original
-  source code and the corresponding Fo...
 tags:
 - javascript
 - testing
 - development
-title: Readme
+last_updated: null
+source_file: README.md
 ---
 ## Sprout 🌱
 React Forget test framework that executes compiler fixtures.

@@ -1,22 +1,13 @@
 ---
-author: Jane Doe
+title: 2025 03 30 Kaizen Cd Ci Devops
 category: development
-description: Exploring Continuous Improvement and its impact on DevOps.
-last_updated: null
-published_at: '2025-03-30'
-slug: kaizen-cd-ci-devops
-source_file: 2025-03-30-kaizen-cd-ci-devops.md
-summary: Examples abound, with tech giants committing to kaizen’s philosophy. From
-  Google’s relentless A/B testing that tweaks countless button shapes and shades,
-  to Spotify’s ability to become the jukebox of ...
 tags:
 - kubernetes
 - testing
 - development
-title: 2025 03 30 Kaizen Cd Ci Devops
+last_updated: null
+source_file: 2025-03-30-kaizen-cd-ci-devops.md
 ---
-
-
 **Title: Ignition on the Assembly Line of Code: The Kaizen of CD/CI DevOps**
 
 **Introduction: Riding the New Wave of Improvement**  

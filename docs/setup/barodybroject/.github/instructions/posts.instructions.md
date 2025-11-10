@@ -1,52 +1,15 @@
 ---
-applyTo: src/pages/_posts/**/*.md
-author: Barodybroject Team
+title: Content Creation Instructions for Barodybroject
 category: setup
-containerRequirements:
-  baseImage: jekyll/jekyll:latest
-  description: Jekyll development environment for content creation
-  environment:
-    CONTENT_VALIDATION: enabled
-    JEKYLL_ENV: development
-  exposedPorts:
-  - 4002
-  portDescription: Jekyll development server for blog content
-  volumes:
-  - /pages:rw
-  - /assets:rw
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and project context
-- documentation.instructions.md: Markdown formatting standards
-- features.instructions.md: Feature development patterns
-description: VS Code Copilot-optimized content creation standards for Django/OpenAI
-  development blog and technical documentation
-file: posts.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  content_creation_path:
-  - research_and_planning
-  - drafting
-  - technical_validation
-  - review_and_editing
-  - publication
-  - community_engagement
-source_file: posts.instructions.md
-summary: These instructions provide comprehensive guidance for creating highquality
-  technical content that documents Django/OpenAI development experiences and shares
-  valuable insights about AIpowered web appli...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Content Creation Instructions for Barodybroject
-version: 1.0.0
+last_updated: null
+source_file: posts.instructions.md
 ---
-
-
 # Content Creation Instructions for Barodybroject
 
 These instructions provide comprehensive guidance for creating high-quality technical content that documents Django/OpenAI development experiences and shares valuable insights about AI-powered web application development. Posts serve as both learning resources and development chronicles for the Barodybroject community.

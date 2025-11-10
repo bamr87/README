@@ -1,16 +1,12 @@
 ---
+title: Ssa Shadowing.Expect
 category: misc
-last_updated: null
-source_file: ssa-shadowing.expect.md
-summary: '```javascript
-
-  function log() {}'
 tags:
 - javascript
 - testing
-title: Ssa Shadowing.Expect
+last_updated: null
+source_file: ssa-shadowing.expect.md
 ---
-
 ## Input
 
 ```javascript

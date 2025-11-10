@@ -1,31 +1,15 @@
 ---
-author: Author Name <email@domain.com>
-breaking: true
+title: 'Breaking Change: [Breaking Change Title]'
 category: setup
-date: YYYY-MM-DD
-deprecation_notice: X.Y.Z
-impact: high
-last_updated: null
-migration_required: true
-related_issues: []
-related_prs: []
-removal_version: X+1.Y.Z
-reviewers: []
-source_file: breaking-template.md
-summary: '> ⚠️ BREAKING CHANGE: This update includes breaking changes that require
-  user action before upgrading.'
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: 'Breaking Change: [Breaking Change Title]'
-type: breaking
-version: X.Y.Z
+last_updated: null
+source_file: breaking-template.md
 ---
-
-
 # Breaking Change: [Breaking Change Title]
 
 > **⚠️ BREAKING CHANGE**: This update includes breaking changes that require user action before upgrading.

@@ -1,15 +1,11 @@
 ---
+title: Array From Maybemutates Arg0.Expect
 category: misc
-last_updated: null
-source_file: array-from-maybemutates-arg0.expect.md
-summary: '```javascript
-
-  import {mutateAndReturn, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Array From Maybemutates Arg0.Expect
+last_updated: null
+source_file: array-from-maybemutates-arg0.expect.md
 ---
-
 ## Input
 
 ```javascript

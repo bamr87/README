@@ -1,15 +1,11 @@
 ---
+title: Jsx Outlining Jsx Stored In Id.Expect
 category: misc
-last_updated: null
-source_file: jsx-outlining-jsx-stored-in-id.expect.md
-summary: "```javascript\n// @enableJsxOutlining\nfunction Component({arr}) {\n  const\
-  \ x = useX();\n  return (\n    <>\n      {arr.map((i, id) => {\n        let jsx\
-  \ = (\n          <Bar key={id} x={x}>\n            <Baz i..."
 tags:
 - javascript
-title: Jsx Outlining Jsx Stored In Id.Expect
+last_updated: null
+source_file: jsx-outlining-jsx-stored-in-id.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Codegen Inline Iife.Expect
 category: misc
-last_updated: null
-source_file: codegen-inline-iife.expect.md
-summary: '```javascript
-
-  import {makeArray, print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Codegen Inline Iife.Expect
+last_updated: null
+source_file: codegen-inline-iife.expect.md
 ---
-
 ## Input
 
 ```javascript

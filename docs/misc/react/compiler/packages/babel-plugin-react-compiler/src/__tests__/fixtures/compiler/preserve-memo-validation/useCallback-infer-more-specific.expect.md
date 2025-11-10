@@ -1,15 +1,11 @@
 ---
+title: Usecallback Infer More Specific.Expect
 category: misc
-last_updated: null
-source_file: useCallback-infer-more-specific.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usecallback Infer More Specific.Expect
+last_updated: null
+source_file: useCallback-infer-more-specific.expect.md
 ---
-
 ## Input
 
 ```javascript

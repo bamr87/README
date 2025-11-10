@@ -1,16 +1,12 @@
 ---
+title: Reverse Postorder.Expect
 category: misc
-last_updated: null
-source_file: reverse-postorder.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  if (props.cond)\
-  \ {\n    switch (props.test) {\n      case 0: {\n        x = props.v0;\n       \
-  \ break;\n      }\n      case 1: {\n        x = props.v1;\n    ..."
 tags:
 - javascript
 - testing
-title: Reverse Postorder.Expect
+last_updated: null
+source_file: reverse-postorder.expect.md
 ---
-
 ## Input
 
 ```javascript

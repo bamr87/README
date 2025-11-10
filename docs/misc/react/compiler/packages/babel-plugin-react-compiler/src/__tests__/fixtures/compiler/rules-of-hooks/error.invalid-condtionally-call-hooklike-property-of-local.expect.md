@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Condtionally Call Hooklike Property Of Local.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-condtionally-call-hooklike-property-of-local.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Invalid Condtionally Call Hooklike Property Of Local.Expect
+last_updated: null
+source_file: error.invalid-condtionally-call-hooklike-property-of-local.expect.md
 ---
-
 ## Input
 
 ```javascript

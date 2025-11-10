@@ -1,15 +1,11 @@
 ---
+title: Partial Early Return Within Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: partial-early-return-within-reactive-scope.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  let x = [];\n  let y = null;\n  if (props.cond) {\n    x.push(props.a);\n   \
-  \ // oops no memo!\n    return x;\n  } else {\n    y = foo(..."
 tags:
 - javascript
-title: Partial Early Return Within Reactive Scope.Expect
+last_updated: null
+source_file: partial-early-return-within-reactive-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

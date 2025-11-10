@@ -1,19 +1,11 @@
 ---
+title: Uncond Access In Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: uncond-access-in-mutable-range.expect.md
-summary: '``javascript
-
-  // x.a.b was accessed unconditionally within the mutable range of x.
-
-  // As a result, we cannot infer anything about whether x or x.a
-
-  // may be null. This means that it''s not safe to hoist...'
 tags:
 - javascript
-title: Uncond Access In Mutable Range.Expect
+last_updated: null
+source_file: uncond-access-in-mutable-range.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Assignment Expression Computed.Expect
 category: misc
-last_updated: null
-source_file: assignment-expression-computed.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [props.x];\n  const\
-  \ index = 0;\n  x[index] = 2;\n  x['0'] += 3;\n  return x;\n}"
 tags:
 - javascript
-title: Assignment Expression Computed.Expect
+last_updated: null
+source_file: assignment-expression-computed.expect.md
 ---
-
 ## Input
 
 ```javascript

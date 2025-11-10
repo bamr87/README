@@ -1,17 +1,11 @@
 ---
+title: No Fire Todo Syntax Shouldnt Throw.Expect
 category: misc
-last_updated: null
-source_file: no-fire-todo-syntax-shouldnt-throw.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: No Fire Todo Syntax Shouldnt Throw.Expect
+last_updated: null
+source_file: no-fire-todo-syntax-shouldnt-throw.expect.md
 ---
-
 ## Input
 
 ```javascript

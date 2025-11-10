@@ -1,15 +1,11 @@
 ---
+title: Merge Consecutive Scopes No Deps.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-scopes-no-deps.expect.md
-summary: '```javascript
-
-  const {getNumber} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Merge Consecutive Scopes No Deps.Expect
+last_updated: null
+source_file: merge-consecutive-scopes-no-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

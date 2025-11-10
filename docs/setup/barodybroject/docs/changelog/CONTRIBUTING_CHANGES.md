@@ -1,16 +1,14 @@
 ---
+title: Contributing Changes Documentation
 category: setup
-last_updated: null
-source_file: CONTRIBUTING_CHANGES.md
-summary: This guide provides detailed instructions for contributing changes and maintaining
-  documentation in the Barodybroject changelog system.
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: Contributing Changes Documentation
+last_updated: null
+source_file: CONTRIBUTING_CHANGES.md
 ---
 # Contributing Changes Documentation
 

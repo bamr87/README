@@ -1,27 +1,15 @@
 ---
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Feature: [Feature Name]'
 category: setup
-date: YYYY-MM-DD
-impact: high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-source_file: feature-template.md
-summary: '> Summary: Onesentence description of what this feature adds to the project.'
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: 'Feature: [Feature Name]'
-type: feature
-version: X.Y.Z
+last_updated: null
+source_file: feature-template.md
 ---
-
-
 # Feature: [Feature Name]
 
 > **Summary**: One-sentence description of what this feature adds to the project.

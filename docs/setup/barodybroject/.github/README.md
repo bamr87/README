@@ -1,17 +1,14 @@
 ---
+title: Parody News Generator - Developer Guide
 category: setup
-last_updated: null
-source_file: README.md
-summary: AIpowered Django application for generating parody news content using OpenAI
-  APIs. Productionready with Azure Container Apps deployment, PostgreSQL, and Jekyll
-  static site integration.
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Parody News Generator - Developer Guide
+last_updated: null
+source_file: README.md
 ---
 # Parody News Generator - Developer Guide
 

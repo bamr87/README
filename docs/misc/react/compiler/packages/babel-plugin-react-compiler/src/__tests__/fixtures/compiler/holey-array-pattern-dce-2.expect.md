@@ -1,14 +1,11 @@
 ---
+title: Holey Array Pattern Dce 2.Expect
 category: misc
-last_updated: null
-source_file: holey-array-pattern-dce-2.expect.md
-summary: "```javascript\nfunction t(props) {\n  let [foo, bar, ,] = props;\n  return\
-  \ foo;\n}"
 tags:
 - javascript
-title: Holey Array Pattern Dce 2.Expect
+last_updated: null
+source_file: holey-array-pattern-dce-2.expect.md
 ---
-
 ## Input
 
 ```javascript

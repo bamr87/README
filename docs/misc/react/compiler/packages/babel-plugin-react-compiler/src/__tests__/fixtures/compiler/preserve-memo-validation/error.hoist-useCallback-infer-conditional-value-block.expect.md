@@ -1,19 +1,11 @@
 ---
+title: Error.Hoist Usecallback Infer Conditional Value Block.Expect
 category: misc
-last_updated: null
-source_file: error.hoist-useCallback-infer-conditional-value-block.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {identity, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Hoist Usecallback Infer Conditional Value Block.Expect
+last_updated: null
+source_file: error.hoist-useCallback-infer-conditional-value-block.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Allow Ref Access In Effect.Expect
 category: misc
-last_updated: null
-source_file: allow-ref-access-in-effect.expect.md
-summary: '```javascript
-
-  // @validateRefAccessDuringRender
-
-  import {useEffect, useRef, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Ref Access In Effect.Expect
+last_updated: null
+source_file: allow-ref-access-in-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

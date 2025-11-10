@@ -1,15 +1,11 @@
 ---
+title: Error.Bug Infer Mutation Aliasing Effects.Expect
 category: misc
-last_updated: null
-source_file: error.bug-infer-mutation-aliasing-effects.expect.md
-summary: '```javascript
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Error.Bug Infer Mutation Aliasing Effects.Expect
+last_updated: null
+source_file: error.bug-infer-mutation-aliasing-effects.expect.md
 ---
-
 ## Input
 
 ```javascript

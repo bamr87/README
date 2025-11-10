@@ -1,17 +1,11 @@
 ---
+title: Repro Cx Namespace Assigned To Temporary.Expect
 category: misc
-last_updated: null
-source_file: repro-cx-namespace-assigned-to-temporary.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enableAssumeHooksFollowRulesOfReact:false @customMacros(cx)
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Cx Namespace Assigned To Temporary.Expect
+last_updated: null
+source_file: repro-cx-namespace-assigned-to-temporary.expect.md
 ---
-
 ## Input
 
 ```javascript

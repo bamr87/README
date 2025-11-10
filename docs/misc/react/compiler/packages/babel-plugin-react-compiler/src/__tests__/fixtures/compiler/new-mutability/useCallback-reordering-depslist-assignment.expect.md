@@ -1,19 +1,11 @@
 ---
+title: Usecallback Reordering Depslist Assignment.Expect
 category: misc
-last_updated: null
-source_file: useCallback-reordering-depslist-assignment.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Reordering Depslist Assignment.Expect
+last_updated: null
+source_file: useCallback-reordering-depslist-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Optional Call Chained.Expect
 category: misc
-last_updated: null
-source_file: optional-call-chained.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return call?.(props.a)?.(props.b)?.(props.c);\n\
-  }"
 tags:
 - javascript
-title: Optional Call Chained.Expect
+last_updated: null
+source_file: optional-call-chained.expect.md
 ---
-
 ## Input
 
 ```javascript

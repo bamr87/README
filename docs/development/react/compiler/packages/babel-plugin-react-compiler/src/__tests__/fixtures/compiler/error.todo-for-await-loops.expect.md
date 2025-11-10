@@ -1,15 +1,12 @@
 ---
+title: Error.Todo For Await Loops.Expect
 category: development
-last_updated: null
-source_file: error.todo-for-await-loops.expect.md
-summary: "```javascript\nasync function Component({items}) {\n  const x = [];\n  for\
-  \ await (const item of items) {\n    x.push(item);\n  }\n  return x;\n}"
 tags:
 - javascript
 - development
-title: Error.Todo For Await Loops.Expect
+last_updated: null
+source_file: error.todo-for-await-loops.expect.md
 ---
-
 ## Input
 
 ```javascript

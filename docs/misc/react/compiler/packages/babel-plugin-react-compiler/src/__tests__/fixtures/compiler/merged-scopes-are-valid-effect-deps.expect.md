@@ -1,15 +1,11 @@
 ---
+title: Merged Scopes Are Valid Effect Deps.Expect
 category: misc
-last_updated: null
-source_file: merged-scopes-are-valid-effect-deps.expect.md
-summary: '```javascript
-
-  // @validateMemoizedEffectDependencies'
 tags:
 - javascript
-title: Merged Scopes Are Valid Effect Deps.Expect
+last_updated: null
+source_file: merged-scopes-are-valid-effect-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

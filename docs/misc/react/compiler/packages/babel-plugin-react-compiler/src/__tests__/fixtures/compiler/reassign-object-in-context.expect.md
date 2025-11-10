@@ -1,14 +1,11 @@
 ---
+title: Reassign Object In Context.Expect
 category: misc
-last_updated: null
-source_file: reassign-object-in-context.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [];\n  let foo = ()\
-  \ => {\n    x = {};\n  };\n  foo();\n  return x;\n}"
 tags:
 - javascript
-title: Reassign Object In Context.Expect
+last_updated: null
+source_file: reassign-object-in-context.expect.md
 ---
-
 ## Input
 
 ```javascript

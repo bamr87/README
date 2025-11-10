@@ -1,15 +1,11 @@
 ---
+title: Value Block Mutates Outer Value.Expect
 category: misc
-last_updated: null
-source_file: value-block-mutates-outer-value.expect.md
-summary: '```javascript
-
-  import {makeArray, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Value Block Mutates Outer Value.Expect
+last_updated: null
+source_file: value-block-mutates-outer-value.expect.md
 ---
-
 ## Input
 
 ```javascript

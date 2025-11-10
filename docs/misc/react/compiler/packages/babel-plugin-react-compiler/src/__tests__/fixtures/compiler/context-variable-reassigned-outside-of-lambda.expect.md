@@ -1,15 +1,11 @@
 ---
+title: Context Variable Reassigned Outside Of Lambda.Expect
 category: misc
-last_updated: null
-source_file: context-variable-reassigned-outside-of-lambda.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Context Variable Reassigned Outside Of Lambda.Expect
+last_updated: null
+source_file: context-variable-reassigned-outside-of-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

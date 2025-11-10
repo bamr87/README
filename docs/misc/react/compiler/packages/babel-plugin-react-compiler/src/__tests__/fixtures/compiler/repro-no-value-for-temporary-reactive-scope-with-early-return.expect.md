@@ -1,19 +1,11 @@
 ---
+title: Repro No Value For Temporary Reactive Scope With Early Return.Expect
 category: misc
-last_updated: null
-source_file: repro-no-value-for-temporary-reactive-scope-with-early-return.expect.md
-summary: '```javascript
-
-  // @flow @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions
-
-  import {identity, makeObjectPrimitives} from ''sharedruntime'';
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Repro No Value For Temporary Reactive Scope With Early Return.Expect
+last_updated: null
+source_file: repro-no-value-for-temporary-reactive-scope-with-early-return.expect.md
 ---
-
 ## Input
 
 ```javascript

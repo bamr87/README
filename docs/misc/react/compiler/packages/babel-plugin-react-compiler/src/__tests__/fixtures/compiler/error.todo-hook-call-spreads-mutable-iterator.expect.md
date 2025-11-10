@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Hook Call Spreads Mutable Iterator.Expect
 category: misc
-last_updated: null
-source_file: error.todo-hook-call-spreads-mutable-iterator.expect.md
-summary: '```javascript
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Hook Call Spreads Mutable Iterator.Expect
+last_updated: null
+source_file: error.todo-hook-call-spreads-mutable-iterator.expect.md
 ---
-
 ## Input
 
 ```javascript

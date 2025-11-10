@@ -1,14 +1,11 @@
 ---
+title: Custom Opt Out Directive.Expect
 category: misc
-last_updated: null
-source_file: custom-opt-out-directive.expect.md
-summary: "```javascript\n// @customOptOutDirectives:[\"use todo memo\"]\nfunction\
-  \ Component() {\n  'use todo memo';\n  return <div>hello world!</div>;\n}"
 tags:
 - javascript
-title: Custom Opt Out Directive.Expect
+last_updated: null
+source_file: custom-opt-out-directive.expect.md
 ---
-
 ## Input
 
 ```javascript

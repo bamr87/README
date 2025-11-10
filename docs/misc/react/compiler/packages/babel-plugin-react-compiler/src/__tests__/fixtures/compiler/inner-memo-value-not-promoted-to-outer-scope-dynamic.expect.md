@@ -1,14 +1,11 @@
 ---
+title: Inner Memo Value Not Promoted To Outer Scope Dynamic.Expect
 category: misc
-last_updated: null
-source_file: inner-memo-value-not-promoted-to-outer-scope-dynamic.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const item = useFragment(FRAGMENT,\
-  \ props.item);\n  useFreeze(item);"
 tags:
 - javascript
-title: Inner Memo Value Not Promoted To Outer Scope Dynamic.Expect
+last_updated: null
+source_file: inner-memo-value-not-promoted-to-outer-scope-dynamic.expect.md
 ---
-
 ## Input
 
 ```javascript

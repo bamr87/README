@@ -1,15 +1,11 @@
 ---
+title: For Of Continue.Expect
 category: misc
-last_updated: null
-source_file: for-of-continue.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = [0, 1, 2, 3];\n  const\
-  \ ret = [];\n  for (const item of x) {\n    if (item === 0) {\n      continue;\n\
-  \    }\n    ret.push(item / 2);\n  }\n  return ret;\n}"
 tags:
 - javascript
-title: For Of Continue.Expect
+last_updated: null
+source_file: for-of-continue.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Do While Simple.Expect
 category: misc
-last_updated: null
-source_file: do-while-simple.expect.md
-summary: "```javascript\nfunction Component() {\n  let x = [1, 2, 3];\n  let ret =\
-  \ [];\n  do {\n    let item = x.pop();\n    ret.push(item  2);\n  } while (x.length);\n\
-  \  return ret;\n}"
 tags:
 - javascript
-title: Do While Simple.Expect
+last_updated: null
+source_file: do-while-simple.expect.md
 ---
-
 ## Input
 
 ```javascript

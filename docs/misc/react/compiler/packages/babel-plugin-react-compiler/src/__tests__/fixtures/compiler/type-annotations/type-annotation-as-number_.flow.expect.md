@@ -1,17 +1,11 @@
 ---
+title: Type Annotation As Number .Flow.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-as-number_.flow.expect.md
-summary: '```javascript
-
-  // @flow @enableUseTypeAnnotations
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Annotation As Number .Flow.Expect
+last_updated: null
+source_file: type-annotation-as-number_.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

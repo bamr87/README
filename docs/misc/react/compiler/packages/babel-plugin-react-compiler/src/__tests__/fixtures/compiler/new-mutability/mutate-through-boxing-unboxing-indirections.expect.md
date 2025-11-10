@@ -1,17 +1,11 @@
 ---
+title: Mutate Through Boxing Unboxing Indirections.Expect
 category: misc
-last_updated: null
-source_file: mutate-through-boxing-unboxing-indirections.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutate Through Boxing Unboxing Indirections.Expect
+last_updated: null
+source_file: mutate-through-boxing-unboxing-indirections.expect.md
 ---
-
 ## Input
 
 ```javascript

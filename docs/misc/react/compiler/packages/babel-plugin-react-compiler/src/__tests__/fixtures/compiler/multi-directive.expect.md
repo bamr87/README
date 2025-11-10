@@ -1,14 +1,11 @@
 ---
+title: Multi Directive.Expect
 category: misc
-last_updated: null
-source_file: multi-directive.expect.md
-summary: "```javascript\nfunction Component() {\n  'use foo';\n  'use bar';\n  return\
-  \ <div>\"foo\"</div>;\n}"
 tags:
 - javascript
-title: Multi Directive.Expect
+last_updated: null
+source_file: multi-directive.expect.md
 ---
-
 ## Input
 
 ```javascript

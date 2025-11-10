@@ -1,16 +1,12 @@
 ---
+title: Evaluation Order Mutate Call After Dependency Load.Expect
 category: misc
-last_updated: null
-source_file: evaluation-order-mutate-call-after-dependency-load.expect.md
-summary: "``javascript\n/\n  Test that we preserve order of evaluation on the following\
-  \ case scope@0\n  `js\n  // simplified HIR\n  scope@0\n     ...\n     $0 = arr.length\n\
-  \     $1 = arr.push(...)\n \n  scope@1 < here we..."
 tags:
 - javascript
 - testing
-title: Evaluation Order Mutate Call After Dependency Load.Expect
+last_updated: null
+source_file: evaluation-order-mutate-call-after-dependency-load.expect.md
 ---
-
 ## Input
 
 ```javascript

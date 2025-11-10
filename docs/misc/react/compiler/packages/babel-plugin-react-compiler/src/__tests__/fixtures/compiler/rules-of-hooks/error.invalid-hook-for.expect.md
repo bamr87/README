@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Hook For.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-for.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let i = 0;\n  for (let x =\
-  \ 0; useHook(x) < 10; useHook(i), x++) {\n    i += useHook(x);\n  }\n  return i;\n\
-  }"
 tags:
 - javascript
-title: Error.Invalid Hook For.Expect
+last_updated: null
+source_file: error.invalid-hook-for.expect.md
 ---
-
 ## Input
 
 ```javascript

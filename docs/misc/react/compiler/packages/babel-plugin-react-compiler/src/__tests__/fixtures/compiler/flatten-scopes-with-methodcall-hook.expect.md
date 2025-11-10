@@ -1,15 +1,11 @@
 ---
+title: Flatten Scopes With Methodcall Hook.Expect
 category: misc
-last_updated: null
-source_file: flatten-scopes-with-methodcall-hook.expect.md
-summary: '```javascript
-
-  const {ObjectWithHooks} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Flatten Scopes With Methodcall Hook.Expect
+last_updated: null
+source_file: flatten-scopes-with-methodcall-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

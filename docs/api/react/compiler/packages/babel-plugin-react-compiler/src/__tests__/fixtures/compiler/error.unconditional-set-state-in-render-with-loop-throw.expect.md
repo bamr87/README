@@ -1,16 +1,12 @@
 ---
+title: Error.Unconditional Set State In Render With Loop Throw.Expect
 category: api
-last_updated: null
-source_file: error.unconditional-set-state-in-render-with-loop-throw.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender\nfunction Component(props)\
-  \ {\n  const [state, setState] = useState(false);\n  for (const  of props) {\n \
-  \   if (props.cond) {\n      break;\n    } else {\n      th..."
 tags:
 - javascript
 - api
-title: Error.Unconditional Set State In Render With Loop Throw.Expect
+last_updated: null
+source_file: error.unconditional-set-state-in-render-with-loop-throw.expect.md
 ---
-
 ## Input
 
 ```javascript

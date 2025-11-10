@@ -1,16 +1,14 @@
 ---
+title: docs Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n View PDF documentation\nopen docsdjangocmsorgenlatest.pdf"
 tags:
 - python
 - docker
 - testing
 - setup
-title: docs Directory
+last_updated: null
+source_file: README.md
 ---
-
 # docs Directory
 
 ## Purpose

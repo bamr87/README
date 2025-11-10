@@ -1,14 +1,11 @@
 ---
+title: Import As Local.Expect
 category: misc
-last_updated: null
-source_file: import-as-local.expect.md
-summary: "```javascript\nimport {\n  useEffect,\n  useRef,\n  // @tsexpecterror\n\
-  \  experimentaluseEffectEvent as useEffectEvent,\n} from 'react';"
 tags:
 - javascript
-title: Import As Local.Expect
+last_updated: null
+source_file: import-as-local.expect.md
 ---
-
 ## Input
 
 ```javascript

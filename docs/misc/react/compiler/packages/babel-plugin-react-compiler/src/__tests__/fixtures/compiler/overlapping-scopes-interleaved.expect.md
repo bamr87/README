@@ -1,14 +1,11 @@
 ---
+title: Overlapping Scopes Interleaved.Expect
 category: misc
-last_updated: null
-source_file: overlapping-scopes-interleaved.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  let x = [];\n  let y = [];\n  x.push(a);\n\
-  \  y.push(b);\n}"
 tags:
 - javascript
-title: Overlapping Scopes Interleaved.Expect
+last_updated: null
+source_file: overlapping-scopes-interleaved.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Reduce Reactive Cond Deps Break In Scope.Expect
 category: misc
-last_updated: null
-source_file: reduce-reactive-cond-deps-break-in-scope.expect.md
-summary: "```javascript\nfunction useFoo({obj, objIsNull}) {\n  const x = [];\n  b0:\
-  \ {\n    if (objIsNull) {\n      break b0;\n    } else {\n      x.push(obj.a);\n\
-  \    }\n    x.push(obj.b);\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Reduce Reactive Cond Deps Break In Scope.Expect
+last_updated: null
+source_file: reduce-reactive-cond-deps-break-in-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

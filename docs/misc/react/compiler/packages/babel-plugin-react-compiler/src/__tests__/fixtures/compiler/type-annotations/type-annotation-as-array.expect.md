@@ -1,15 +1,11 @@
 ---
+title: Type Annotation As Array.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-as-array.expect.md
-summary: "```javascript\n// @enableUseTypeAnnotations\nfunction Component(props: {id:\
-  \ number}) {\n  const x = makeArray(props.id) as number[];\n  const y = x.at(0);\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Type Annotation As Array.Expect
+last_updated: null
+source_file: type-annotation-as-array.expect.md
 ---
-
 ## Input
 
 ```javascript

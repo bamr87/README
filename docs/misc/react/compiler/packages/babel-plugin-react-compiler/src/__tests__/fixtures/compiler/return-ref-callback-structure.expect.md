@@ -1,15 +1,11 @@
 ---
+title: Return Ref Callback Structure.Expect
 category: misc
-last_updated: null
-source_file: return-ref-callback-structure.expect.md
-summary: '```javascript
-
-  // @flow @validateRefAccessDuringRender @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Return Ref Callback Structure.Expect
+last_updated: null
+source_file: return-ref-callback-structure.expect.md
 ---
-
 ## Input
 
 ```javascript

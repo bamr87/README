@@ -1,15 +1,14 @@
 ---
+title: Init Setup Script Test Results
 category: setup
-last_updated: null
-source_file: INIT_SETUP_TEST_RESULTS.md
-summary: '✅ Overall Result: PASSED with minor fix applied'
 tags:
 - python
 - docker
 - azure
 - testing
 - setup
-title: Init Setup Script Test Results
+last_updated: null
+source_file: INIT_SETUP_TEST_RESULTS.md
 ---
 # Init Setup Script Test Results
 

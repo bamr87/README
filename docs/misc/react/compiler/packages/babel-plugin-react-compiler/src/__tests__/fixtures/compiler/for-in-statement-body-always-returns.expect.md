@@ -1,14 +1,11 @@
 ---
+title: For In Statement Body Always Returns.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement-body-always-returns.expect.md
-summary: "```javascript\nfunction Component(props) {\n  for (const x in props.value)\
-  \ {\n    return x;\n  }\n  return null;\n}"
 tags:
 - javascript
-title: For In Statement Body Always Returns.Expect
+last_updated: null
+source_file: for-in-statement-body-always-returns.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,13 +1,11 @@
 ---
+title: Error.Invalid Mutate After Aliased Freeze.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-after-aliased-freeze.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [];\n  let y = x;"
 tags:
 - javascript
-title: Error.Invalid Mutate After Aliased Freeze.Expect
+last_updated: null
+source_file: error.invalid-mutate-after-aliased-freeze.expect.md
 ---
-
 ## Input
 
 ```javascript

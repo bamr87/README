@@ -1,15 +1,11 @@
 ---
+title: Call Spread.Expect
 category: misc
-last_updated: null
-source_file: call-spread.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Call Spread.Expect
+last_updated: null
+source_file: call-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

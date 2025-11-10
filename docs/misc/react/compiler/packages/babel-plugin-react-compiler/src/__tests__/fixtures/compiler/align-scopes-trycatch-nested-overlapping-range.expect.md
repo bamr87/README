@@ -1,15 +1,11 @@
 ---
+title: Align Scopes Trycatch Nested Overlapping Range.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-trycatch-nested-overlapping-range.expect.md
-summary: '```javascript
-
-  import {CONSTTRUE, makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Trycatch Nested Overlapping Range.Expect
+last_updated: null
+source_file: align-scopes-trycatch-nested-overlapping-range.expect.md
 ---
-
 ## Input
 
 ```javascript

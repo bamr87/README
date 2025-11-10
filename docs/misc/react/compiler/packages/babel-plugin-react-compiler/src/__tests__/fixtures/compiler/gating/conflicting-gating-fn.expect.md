@@ -1,15 +1,11 @@
 ---
+title: Conflicting Gating Fn.Expect
 category: misc
-last_updated: null
-source_file: conflicting-gating-fn.expect.md
-summary: '```javascript
-
-  // @gating'
 tags:
 - javascript
-title: Conflicting Gating Fn.Expect
+last_updated: null
+source_file: conflicting-gating-fn.expect.md
 ---
-
 ## Input
 
 ```javascript

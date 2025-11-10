@@ -1,15 +1,11 @@
 ---
+title: Change Detect Reassign.Expect
 category: misc
-last_updated: null
-source_file: change-detect-reassign.expect.md
-summary: "```javascript\n// @enableChangeDetectionForDebugging\nfunction Component(props)\
-  \ {\n  let x = null;\n  if (props.cond) {\n    x = [];\n    x.push(props.value);\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Change Detect Reassign.Expect
+last_updated: null
+source_file: change-detect-reassign.expect.md
 ---
-
 ## Input
 
 ```javascript

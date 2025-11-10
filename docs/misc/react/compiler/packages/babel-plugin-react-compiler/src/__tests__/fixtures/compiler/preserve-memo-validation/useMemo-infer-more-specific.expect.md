@@ -1,15 +1,11 @@
 ---
+title: Usememo Infer More Specific.Expect
 category: misc
-last_updated: null
-source_file: useMemo-infer-more-specific.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Infer More Specific.Expect
+last_updated: null
+source_file: useMemo-infer-more-specific.expect.md
 ---
-
 ## Input
 
 ```javascript

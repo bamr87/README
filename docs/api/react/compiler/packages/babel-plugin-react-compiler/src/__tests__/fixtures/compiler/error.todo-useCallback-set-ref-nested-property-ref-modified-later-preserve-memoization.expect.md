@@ -1,19 +1,13 @@
 ---
+title: Error.Todo Usecallback Set Ref Nested Property Ref Modified Later Preserve
+  Memoization.Expect
 category: api
-last_updated: null
-source_file: error.todo-useCallback-set-ref-nested-property-ref-modified-later-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees @validateRefAccessDuringRender
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Todo Usecallback Set Ref Nested Property Ref Modified Later Preserve
-  Memoization.Expect
+last_updated: null
+source_file: error.todo-useCallback-set-ref-nested-property-ref-modified-later-preserve-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,13 @@
 ---
+title: MFA Email Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: Twofactor authentication using an authenticator app has been successfully
-  enabled on your Barody Broject account.
 tags:
 - python
 - docker
 - setup
-title: MFA Email Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # MFA Email Templates Directory
 
 ## Purpose

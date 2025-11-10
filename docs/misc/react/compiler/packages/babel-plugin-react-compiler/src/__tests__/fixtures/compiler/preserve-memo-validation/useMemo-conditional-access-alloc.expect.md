@@ -1,19 +1,11 @@
 ---
+title: Usememo Conditional Access Alloc.Expect
 category: misc
-last_updated: null
-source_file: useMemo-conditional-access-alloc.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Conditional Access Alloc.Expect
+last_updated: null
+source_file: useMemo-conditional-access-alloc.expect.md
 ---
-
 ## Input
 
 ```javascript

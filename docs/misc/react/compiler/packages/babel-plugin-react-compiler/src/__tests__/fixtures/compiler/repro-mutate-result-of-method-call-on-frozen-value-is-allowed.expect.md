@@ -1,15 +1,11 @@
 ---
+title: Repro Mutate Result Of Method Call On Frozen Value Is Allowed.Expect
 category: misc
-last_updated: null
-source_file: repro-mutate-result-of-method-call-on-frozen-value-is-allowed.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Mutate Result Of Method Call On Frozen Value Is Allowed.Expect
+last_updated: null
+source_file: repro-mutate-result-of-method-call-on-frozen-value-is-allowed.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Repro Mutable Range Extending Into Ternary.Expect
 category: misc
-last_updated: null
-source_file: repro-mutable-range-extending-into-ternary.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Repro Mutable Range Extending Into Ternary.Expect
+last_updated: null
+source_file: repro-mutable-range-extending-into-ternary.expect.md
 ---
-
 ## Input
 
 ```javascript

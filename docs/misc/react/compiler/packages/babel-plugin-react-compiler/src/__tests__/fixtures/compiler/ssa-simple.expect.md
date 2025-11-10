@@ -1,13 +1,11 @@
 ---
+title: Ssa Simple.Expect
 category: misc
-last_updated: null
-source_file: ssa-simple.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;\n}"
 tags:
 - javascript
-title: Ssa Simple.Expect
+last_updated: null
+source_file: ssa-simple.expect.md
 ---
-
 ## Input
 
 ```javascript

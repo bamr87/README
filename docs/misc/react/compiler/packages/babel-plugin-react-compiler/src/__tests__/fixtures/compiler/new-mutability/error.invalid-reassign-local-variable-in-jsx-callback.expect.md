@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Reassign Local Variable In Jsx Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-local-variable-in-jsx-callback.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component()\
-  \ {\n  let local;"
 tags:
 - javascript
 - testing
-title: Error.Invalid Reassign Local Variable In Jsx Callback.Expect
+last_updated: null
+source_file: error.invalid-reassign-local-variable-in-jsx-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

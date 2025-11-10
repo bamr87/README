@@ -1,17 +1,11 @@
 ---
+title: Repro Invalid Phi As Dependency.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-phi-as-dependency.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {CONSTTRUE, Stringify, mutate, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Invalid Phi As Dependency.Expect
+last_updated: null
+source_file: repro-invalid-phi-as-dependency.expect.md
 ---
-
 ## Input
 
 ```javascript

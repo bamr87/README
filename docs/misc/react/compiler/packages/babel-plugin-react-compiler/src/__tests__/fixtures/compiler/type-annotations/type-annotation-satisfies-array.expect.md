@@ -1,15 +1,11 @@
 ---
+title: Type Annotation Satisfies Array.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-satisfies-array.expect.md
-summary: "```javascript\n// @enableUseTypeAnnotations\nfunction Component(props: {id:\
-  \ number}) {\n  const x = makeArray(props.id) satisfies number[];\n  const y = x.at(0);\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Type Annotation Satisfies Array.Expect
+last_updated: null
+source_file: type-annotation-satisfies-array.expect.md
 ---
-
 ## Input
 
 ```javascript

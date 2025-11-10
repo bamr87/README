@@ -1,15 +1,11 @@
 ---
+title: Optional Member Expression Inverted Optionals Parallel Paths.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-inverted-optionals-parallel-paths.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies\
-  \ @enablePropagateDepsInHIR\nimport {ValidateMemoization} from 'sharedruntime';\n\
-  function Component(props) {\n  c..."
 tags:
 - javascript
-title: Optional Member Expression Inverted Optionals Parallel Paths.Expect
+last_updated: null
+source_file: optional-member-expression-inverted-optionals-parallel-paths.expect.md
 ---
-
 ## Input
 
 ```javascript

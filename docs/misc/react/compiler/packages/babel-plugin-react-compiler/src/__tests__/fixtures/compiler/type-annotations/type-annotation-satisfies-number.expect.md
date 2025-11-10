@@ -1,17 +1,11 @@
 ---
+title: Type Annotation Satisfies Number.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-satisfies-number.expect.md
-summary: '```javascript
-
-  // @enableUseTypeAnnotations
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Annotation Satisfies Number.Expect
+last_updated: null
+source_file: type-annotation-satisfies-number.expect.md
 ---
-
 ## Input
 
 ```javascript

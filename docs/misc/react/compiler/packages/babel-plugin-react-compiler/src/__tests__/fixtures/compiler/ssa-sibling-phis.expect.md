@@ -1,15 +1,11 @@
 ---
+title: Ssa Sibling Phis.Expect
 category: misc
-last_updated: null
-source_file: ssa-sibling-phis.expect.md
-summary: "```javascript\nfunction foo(a, b, c, d) {\n  let x = 0;\n  if (true) {\n\
-  \    if (true) {\n      x = a;\n    } else {\n      x = b;\n    }\n    x;\n  } else\
-  \ {\n    if (true) {\n      x = c;\n    } else {\n      x = d..."
 tags:
 - javascript
-title: Ssa Sibling Phis.Expect
+last_updated: null
+source_file: ssa-sibling-phis.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Type Test Polymorphic.Expect
 category: misc
-last_updated: null
-source_file: type-test-polymorphic.expect.md
-summary: "```javascript\nfunction component() {\n  let p = makePrimitive();\n  p +\
-  \ p; // infer p as primitive\n  let o = {};"
 tags:
 - javascript
-title: Type Test Polymorphic.Expect
+last_updated: null
+source_file: type-test-polymorphic.expect.md
 ---
-
 ## Input
 
 ```javascript

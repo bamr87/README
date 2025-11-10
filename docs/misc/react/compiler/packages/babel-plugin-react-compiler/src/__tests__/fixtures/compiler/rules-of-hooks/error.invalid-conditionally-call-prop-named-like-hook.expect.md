@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Conditionally Call Prop Named Like Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-conditionally-call-prop-named-like-hook.expect.md
-summary: "```javascript\nfunction Component({cond, useFoo}) {\n  if (cond) {\n   \
-  \ useFoo();\n  }\n}"
 tags:
 - javascript
-title: Error.Invalid Conditionally Call Prop Named Like Hook.Expect
+last_updated: null
+source_file: error.invalid-conditionally-call-prop-named-like-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

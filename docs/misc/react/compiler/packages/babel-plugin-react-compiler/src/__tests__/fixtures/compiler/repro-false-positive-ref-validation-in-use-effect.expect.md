@@ -1,19 +1,11 @@
 ---
+title: Repro False Positive Ref Validation In Use Effect.Expect
 category: misc
-last_updated: null
-source_file: repro-false-positive-ref-validation-in-use-effect.expect.md
-summary: '```javascript
-
-  // @validateNoFreezingKnownMutableFunctions @enableNewMutationAliasingModel
-
-  import {useCallback, useEffect, useRef} from ''react'';
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro False Positive Ref Validation In Use Effect.Expect
+last_updated: null
+source_file: repro-false-positive-ref-validation-in-use-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

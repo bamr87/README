@@ -1,14 +1,11 @@
 ---
+title: Mutation Within Jsx And Break.Expect
 category: misc
-last_updated: null
-source_file: mutation-within-jsx-and-break.expect.md
-summary: "```javascript\nimport {\n  Stringify,\n  makeObjectPrimitives,\n  mutate,\n\
-  \  mutateAndReturn,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Mutation Within Jsx And Break.Expect
+last_updated: null
+source_file: mutation-within-jsx-and-break.expect.md
 ---
-
 ## Input
 
 ```javascript

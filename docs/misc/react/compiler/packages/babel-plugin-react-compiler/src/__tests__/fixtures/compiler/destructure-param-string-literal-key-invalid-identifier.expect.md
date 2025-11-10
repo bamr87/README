@@ -1,15 +1,12 @@
 ---
+title: Destructure Param String Literal Key Invalid Identifier.Expect
 category: misc
-last_updated: null
-source_file: destructure-param-string-literal-key-invalid-identifier.expect.md
-summary: "```javascript\nfunction foo({'datafoobar': dataTestID}) {\n  return dataTestID;\n\
-  }"
 tags:
 - javascript
 - testing
-title: Destructure Param String Literal Key Invalid Identifier.Expect
+last_updated: null
+source_file: destructure-param-string-literal-key-invalid-identifier.expect.md
 ---
-
 ## Input
 
 ```javascript

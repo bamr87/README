@@ -1,15 +1,11 @@
 ---
+title: Useeffect Global Pruned.Expect
 category: misc
-last_updated: null
-source_file: useEffect-global-pruned.expect.md
-summary: '```javascript
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
-title: Useeffect Global Pruned.Expect
+last_updated: null
+source_file: useEffect-global-pruned.expect.md
 ---
-
 ## Input
 
 ```javascript

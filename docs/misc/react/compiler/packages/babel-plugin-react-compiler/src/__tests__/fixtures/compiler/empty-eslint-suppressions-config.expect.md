@@ -1,15 +1,11 @@
 ---
+title: Empty Eslint Suppressions Config.Expect
 category: misc
-last_updated: null
-source_file: empty-eslint-suppressions-config.expect.md
-summary: '```javascript
-
-  // @eslintSuppressionRules:[]'
 tags:
 - javascript
-title: Empty Eslint Suppressions Config.Expect
+last_updated: null
+source_file: empty-eslint-suppressions-config.expect.md
 ---
-
 ## Input
 
 ```javascript

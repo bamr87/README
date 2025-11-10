@@ -1,15 +1,11 @@
 ---
+title: Idx Method No Outlining Wildcard.Expect
 category: misc
-last_updated: null
-source_file: idx-method-no-outlining-wildcard.expect.md
-summary: '```javascript
-
-  // @customMacros:"idx..b"'
 tags:
 - javascript
-title: Idx Method No Outlining Wildcard.Expect
+last_updated: null
+source_file: idx-method-no-outlining-wildcard.expect.md
 ---
-
 ## Input
 
 ```javascript

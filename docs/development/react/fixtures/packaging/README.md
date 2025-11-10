@@ -1,14 +1,12 @@
 ---
+title: Manual Testing Fixtures
 category: development
-last_updated: null
-source_file: README.md
-summary: "This folder exists for React contributors only.  \nIf you use React, you\
-  \ don't need to worry about it."
 tags:
 - javascript
 - testing
 - development
-title: Manual Testing Fixtures
+last_updated: null
+source_file: README.md
 ---
 # Manual Testing Fixtures
 

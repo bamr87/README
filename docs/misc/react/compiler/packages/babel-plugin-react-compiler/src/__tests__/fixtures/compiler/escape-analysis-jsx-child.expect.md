@@ -1,15 +1,11 @@
 ---
+title: Escape Analysis Jsx Child.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-jsx-child.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const x = [];\n  if (a) {\n  \
-  \  const y = [];\n    if (b) {\n      y.push(c);\n    }\n    x.push(<div>{y}</div>);\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Escape Analysis Jsx Child.Expect
+last_updated: null
+source_file: escape-analysis-jsx-child.expect.md
 ---
-
 ## Input
 
 ```javascript

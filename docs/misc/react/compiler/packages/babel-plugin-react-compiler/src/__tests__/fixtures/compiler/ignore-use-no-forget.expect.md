@@ -1,15 +1,11 @@
 ---
+title: Ignore Use No Forget.Expect
 category: misc
-last_updated: null
-source_file: ignore-use-no-forget.expect.md
-summary: "```javascript\n// @ignoreUseNoForget\nfunction Component(prop) {\n  'use\
-  \ no forget';\n  const result = prop.x.toFixed();\n  return <div>{result}</div>;\n\
-  }"
 tags:
 - javascript
-title: Ignore Use No Forget.Expect
+last_updated: null
+source_file: ignore-use-no-forget.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Array At Closure.Expect
 category: misc
-last_updated: null
-source_file: array-at-closure.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = foo(props.x);\n\
-  \  const fn = function () {\n    const arr = [...bar(props)];\n    return arr.at(x);\n\
-  \  };\n  const fnResult = fn();\n  return fnResult;\n}"
 tags:
 - javascript
-title: Array At Closure.Expect
+last_updated: null
+source_file: array-at-closure.expect.md
 ---
-
 ## Input
 
 ```javascript

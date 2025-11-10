@@ -1,19 +1,11 @@
 ---
+title: Nonreactive Ref.Expect
 category: misc
-last_updated: null
-source_file: nonreactive-ref.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, useRef, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nonreactive Ref.Expect
+last_updated: null
+source_file: nonreactive-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

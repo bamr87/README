@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Multiple Args.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-multiple-args.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Multiple Args.Expect
+last_updated: null
+source_file: error.invalid-multiple-args.expect.md
 ---
-
 ## Input
 
 ```javascript

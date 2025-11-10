@@ -1,15 +1,11 @@
 ---
+title: Reactive Control Dependency For Update.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-for-update.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  for (let i = 0; i\
-  \ < 10; i += props.update) {\n    if (i > 0 && i % 2 === 0) {\n      x = 2;\n  \
-  \  } else {\n      x = 1;\n    }\n  }\n  // The values assign..."
 tags:
 - javascript
-title: Reactive Control Dependency For Update.Expect
+last_updated: null
+source_file: reactive-control-dependency-for-update.expect.md
 ---
-
 ## Input
 
 ```javascript

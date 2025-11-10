@@ -1,15 +1,11 @@
 ---
+title: Debugger.Expect
 category: misc
-last_updated: null
-source_file: debugger.expect.md
-summary: "```javascript\nfunction Component(props) {\n  debugger;\n  if (props.cond)\
-  \ {\n    debugger;\n  } else {\n    while (props.cond) {\n      debugger;\n    }\n\
-  \  }\n  debugger;\n}"
 tags:
 - javascript
-title: Debugger.Expect
+last_updated: null
+source_file: debugger.expect.md
 ---
-
 ## Input
 
 ```javascript

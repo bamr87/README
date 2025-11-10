@@ -1,27 +1,15 @@
 ---
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Improvement: [Improvement Title]'
 category: setup
-date: YYYY-MM-DD
-impact: high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-source_file: improvement-template.md
-summary: '> Summary: Onesentence description of the enhancement made to existing functionality.'
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: 'Improvement: [Improvement Title]'
-type: improvement
-version: X.Y.Z
+last_updated: null
+source_file: improvement-template.md
 ---
-
-
 # Improvement: [Improvement Title]
 
 > **Summary**: One-sentence description of the enhancement made to existing functionality.

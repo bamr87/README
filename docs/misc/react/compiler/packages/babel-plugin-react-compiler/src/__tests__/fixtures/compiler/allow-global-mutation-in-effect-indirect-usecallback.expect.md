@@ -1,17 +1,11 @@
 ---
+title: Allow Global Mutation In Effect Indirect Usecallback.Expect
 category: misc
-last_updated: null
-source_file: allow-global-mutation-in-effect-indirect-usecallback.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Global Mutation In Effect Indirect Usecallback.Expect
+last_updated: null
+source_file: allow-global-mutation-in-effect-indirect-usecallback.expect.md
 ---
-
 ## Input
 
 ```javascript

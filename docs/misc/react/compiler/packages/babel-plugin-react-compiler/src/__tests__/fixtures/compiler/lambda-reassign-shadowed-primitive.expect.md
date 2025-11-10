@@ -1,15 +1,11 @@
 ---
+title: Lambda Reassign Shadowed Primitive.Expect
 category: misc
-last_updated: null
-source_file: lambda-reassign-shadowed-primitive.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = {};\n  {\n    let x =\
-  \ 56;\n    const fn = function () {\n      x = 42;\n    };\n    fn();\n  }\n  return\
-  \ x; // should return {}\n}"
 tags:
 - javascript
-title: Lambda Reassign Shadowed Primitive.Expect
+last_updated: null
+source_file: lambda-reassign-shadowed-primitive.expect.md
 ---
-
 ## Input
 
 ```javascript

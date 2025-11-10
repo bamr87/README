@@ -1,14 +1,11 @@
 ---
+title: Obj Mutated After If Else.Expect
 category: misc
-last_updated: null
-source_file: obj-mutated-after-if-else.expect.md
-summary: "```javascript\nfunction foo(a, b, c, d) {\n  let x = someObj();\n  if (a)\
-  \ {\n    x = someObj();\n  } else {\n    x = someObj();\n  }"
 tags:
 - javascript
-title: Obj Mutated After If Else.Expect
+last_updated: null
+source_file: obj-mutated-after-if-else.expect.md
 ---
-
 ## Input
 
 ```javascript

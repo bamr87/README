@@ -1,22 +1,13 @@
 ---
-author: J. Doe
+title: 'ERP Systems as the Engine of Modern Economic Design: A Satirical Scholar''s
+  Journey'
 category: setup
-description: An insightful look into how modern ERP systems bridge economics and technology.
-last_updated: null
-published_at: '2025-05-02'
-slug: erp-systems-economic-design
-source_file: 2025-05-02-erp-systems-economic-design.md
-summary: Welcome, esteemed readers, to this edition of The Satirical Scholar, where
-  we spice up sophisticated concepts with a pinch of humor and insight. Today, we
-  embark on a comedic odyssey through the labyr...
 tags:
 - api
 - setup
-title: 'ERP Systems as the Engine of Modern Economic Design: A Satirical Scholar''s
-  Journey'
+last_updated: null
+source_file: 2025-05-02-erp-systems-economic-design.md
 ---
-
-
 # ERP Systems as the Engine of Modern Economic Design: A Satirical Scholar's Journey
 
 **By Professor Jest R. Pumblechook, Senior Analyst of Comedic Economics**

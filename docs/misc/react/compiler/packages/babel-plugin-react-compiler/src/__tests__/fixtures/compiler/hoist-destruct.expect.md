@@ -1,15 +1,11 @@
 ---
+title: Hoist Destruct.Expect
 category: misc
-last_updated: null
-source_file: hoist-destruct.expect.md
-summary: "```javascript\n//@flow\ncomponent Foo() {\n  function foo() {\n    return\
-  \ (\n      <div>\n        {a} {z} {y}\n      </div>\n    );\n  }\n  const [a, {x:\
-  \ z, y = 10}] = [1, {x: 2}];\n  return foo();\n}"
 tags:
 - javascript
-title: Hoist Destruct.Expect
+last_updated: null
+source_file: hoist-destruct.expect.md
 ---
-
 ## Input
 
 ```javascript

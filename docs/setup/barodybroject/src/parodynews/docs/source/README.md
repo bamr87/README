@@ -1,22 +1,14 @@
 ---
+title: source Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```rst
-
-  .. Example RST syntax in api.rst
-
-  API Reference
-
-  ============='
 tags:
 - python
 - docker
 - api
 - setup
-title: source Directory
+last_updated: null
+source_file: README.md
 ---
-
 # source Directory
 
 ## Purpose

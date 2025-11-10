@@ -1,13 +1,12 @@
 ---
+title: React Compiler Playground
 category: setup
-last_updated: null
-source_file: README.md
-summary: An interactive playground to demonstrate, test, and have fun with React Compiler.
 tags:
 - javascript
 - testing
 - setup
-title: React Compiler Playground
+last_updated: null
+source_file: README.md
 ---
 # React Compiler Playground
 

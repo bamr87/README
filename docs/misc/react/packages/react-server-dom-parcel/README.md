@@ -1,11 +1,10 @@
 ---
+title: react-server-dom-parcel
 category: misc
-last_updated: null
-source_file: README.md
-summary: Experimental React Flight bindings for DOM using Parcel.
 tags:
 - javascript
-title: react-server-dom-parcel
+last_updated: null
+source_file: README.md
 ---
 # react-server-dom-parcel
 

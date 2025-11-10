@@ -1,14 +1,11 @@
 ---
+title: Overlapping Scopes While.Expect
 category: misc
-last_updated: null
-source_file: overlapping-scopes-while.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = [];\n  let y = [];\n \
-  \ while (c) {\n    y.push(b);\n    x.push(a);\n  }\n}"
 tags:
 - javascript
-title: Overlapping Scopes While.Expect
+last_updated: null
+source_file: overlapping-scopes-while.expect.md
 ---
-
 ## Input
 
 ```javascript

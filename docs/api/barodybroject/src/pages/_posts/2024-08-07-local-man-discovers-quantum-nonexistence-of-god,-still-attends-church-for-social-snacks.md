@@ -1,22 +1,12 @@
 ---
-author: Frank Einhandel
+title: Headline
 category: api
-description: In a mind-boggling turn of events, Joseph Harmony, a devout churchgoer
-  with a knack for quantum physics, stumbles upon what he believes to be undeniable
-  proof of God's nonexistence, yet finds himself unable to resist Sunday services,
-  lured by social pressures and irresistible after-service snacks.
-last_updated: null
-published_at: '2024-08-07'
-slug: quantum-nonexistence-belief-anyways
-source_file: 2024-08-07-local-man-discovers-quantum-nonexistence-of-god,-still-attends-church-for-social-snacks.md
-summary: No summary available
 tags:
 - api
 - api
-title: Headline
+last_updated: null
+source_file: 2024-08-07-local-man-discovers-quantum-nonexistence-of-god,-still-attends-church-for-social-snacks.md
 ---
-
-
 # Headline
 
 * Local Man Discovers Quantum Nonexistence of God, Still Attends Church for Social Snacks

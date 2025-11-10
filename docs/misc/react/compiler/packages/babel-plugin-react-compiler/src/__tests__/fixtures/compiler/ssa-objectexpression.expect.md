@@ -1,14 +1,11 @@
 ---
+title: Ssa Objectexpression.Expect
 category: misc
-last_updated: null
-source_file: ssa-objectexpression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = 1;\n  const b =\
-  \ 2;\n  const x = {a: a, b: b};\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Objectexpression.Expect
+last_updated: null
+source_file: ssa-objectexpression.expect.md
 ---
-
 ## Input
 
 ```javascript

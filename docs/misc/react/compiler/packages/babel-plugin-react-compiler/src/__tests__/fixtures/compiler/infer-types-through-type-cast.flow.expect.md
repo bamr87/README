@@ -1,17 +1,11 @@
 ---
+title: Infer Types Through Type Cast.Flow.Expect
 category: misc
-last_updated: null
-source_file: infer-types-through-type-cast.flow.expect.md
-summary: '```javascript
-
-  // @flow
-
-  import {getNumber} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Types Through Type Cast.Flow.Expect
+last_updated: null
+source_file: infer-types-through-type-cast.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

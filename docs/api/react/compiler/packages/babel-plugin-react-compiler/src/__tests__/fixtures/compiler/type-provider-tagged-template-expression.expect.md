@@ -1,17 +1,13 @@
 ---
+title: Type Provider Tagged Template Expression.Expect
 category: api
-last_updated: null
-source_file: type-provider-tagged-template-expression.expect.md
-summary: '```javascript
-
-  import {graphql} from ''sharedruntime'';'
 tags:
 - javascript
 - api
 - api
-title: Type Provider Tagged Template Expression.Expect
+last_updated: null
+source_file: type-provider-tagged-template-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

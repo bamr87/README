@@ -1,15 +1,11 @@
 ---
+title: Fbt Single Space Btw Param And Text.Expect
 category: misc
-last_updated: null
-source_file: fbt-single-space-btw-param-and-text.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Single Space Btw Param And Text.Expect
+last_updated: null
+source_file: fbt-single-space-btw-param-and-text.expect.md
 ---
-
 ## Input
 
 ```javascript

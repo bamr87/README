@@ -1,17 +1,11 @@
 ---
+title: Globals Dont Resolve Local Usestate.Expect
 category: misc
-last_updated: null
-source_file: globals-dont-resolve-local-useState.expect.md
-summary: '```javascript
-
-  import {useState as useState, useCallback, useEffect} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Globals Dont Resolve Local Usestate.Expect
+last_updated: null
+source_file: globals-dont-resolve-local-useState.expect.md
 ---
-
 ## Input
 
 ```javascript

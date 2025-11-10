@@ -1,17 +1,14 @@
 ---
+title: Setup System Enhancement Summary
 category: setup
-last_updated: null
-source_file: SETUP_SYSTEM_ENHANCEMENT_SUMMARY.md
-summary: This document summarizes the comprehensive enhancement of the barodybroject
-  installation and setup system, transforming it from multiple disconnected scripts
-  into a unified, userfriendly initializatio...
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Setup System Enhancement Summary
+last_updated: null
+source_file: SETUP_SYSTEM_ENHANCEMENT_SUMMARY.md
 ---
 # Setup System Enhancement Summary
 

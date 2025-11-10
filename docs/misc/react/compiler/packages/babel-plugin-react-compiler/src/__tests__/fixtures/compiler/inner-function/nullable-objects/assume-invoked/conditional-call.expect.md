@@ -1,17 +1,11 @@
 ---
+title: Conditional Call.Expect
 category: misc
-last_updated: null
-source_file: conditional-call.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Conditional Call.Expect
+last_updated: null
+source_file: conditional-call.expect.md
 ---
-
 ## Input
 
 ```javascript

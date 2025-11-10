@@ -1,15 +1,14 @@
 ---
+title: Changelog
 category: api
-last_updated: null
-source_file: CHANGELOG.md
-summary: Below is a list of all new features, APIs, and bug fixes.
 tags:
 - javascript
 - docker
 - kubernetes
 - aws
 - azure
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
 ## 19.2.0 (October 1st, 2025)
 

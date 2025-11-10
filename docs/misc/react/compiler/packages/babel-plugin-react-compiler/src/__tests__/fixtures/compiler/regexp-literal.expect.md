@@ -1,16 +1,12 @@
 ---
+title: Regexp Literal.Expect
 category: misc
-last_updated: null
-source_file: regexp-literal.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const pattern = /foo/g;\n \
-  \ const value = makeValue();\n  // We treat RegExp instances as mutable objects\
-  \ (bc they are)\n  // so by default we assume this could ..."
 tags:
 - javascript
 - testing
-title: Regexp Literal.Expect
+last_updated: null
+source_file: regexp-literal.expect.md
 ---
-
 ## Input
 
 ```javascript

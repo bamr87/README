@@ -1,19 +1,15 @@
 ---
+title: Template Includes Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '<! Breadcrumb include >
-
-  {% include "includes/breadcrumb.html" with pagetitle="Current Page" %}'
 tags:
 - python
 - javascript
 - docker
 - database
 - setup
-title: Template Includes Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Template Includes Directory
 
 ## Purpose

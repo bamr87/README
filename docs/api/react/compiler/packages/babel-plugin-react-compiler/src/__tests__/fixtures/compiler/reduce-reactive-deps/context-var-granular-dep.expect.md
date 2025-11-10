@@ -1,16 +1,12 @@
 ---
+title: Context Var Granular Dep.Expect
 category: api
-last_updated: null
-source_file: context-var-granular-dep.expect.md
-summary: '```javascript
-
-  import {throwErrorWithMessage, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Context Var Granular Dep.Expect
+last_updated: null
+source_file: context-var-granular-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

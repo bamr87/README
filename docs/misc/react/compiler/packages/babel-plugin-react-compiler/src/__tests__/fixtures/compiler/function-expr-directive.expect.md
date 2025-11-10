@@ -1,15 +1,11 @@
 ---
+title: Function Expr Directive.Expect
 category: misc
-last_updated: null
-source_file: function-expr-directive.expect.md
-summary: "```javascript\nfunction Component() {\n  'use strict';\n  let [count, setCount]\
-  \ = React.useState(0);\n  function update() {\n    'worklet';\n    setCount(count\
-  \ => count + 1);\n  }\n  return <button onClick={u..."
 tags:
 - javascript
-title: Function Expr Directive.Expect
+last_updated: null
+source_file: function-expr-directive.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,21 +1,13 @@
 ---
+title: Bailout Capitalized Fn Call.Expect
 category: api
-last_updated: null
-source_file: bailout-capitalized-fn-call.expect.md
-summary: '```javascript
-
-  // @validateNoCapitalizedCalls @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';
-
-  const CapitalizedCall = require(''sharedruntime'').sum;'
 tags:
 - javascript
 - api
 - api
-title: Bailout Capitalized Fn Call.Expect
+last_updated: null
+source_file: bailout-capitalized-fn-call.expect.md
 ---
-
 ## Input
 
 ```javascript

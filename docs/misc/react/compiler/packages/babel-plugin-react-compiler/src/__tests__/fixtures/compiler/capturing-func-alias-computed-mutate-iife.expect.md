@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Alias Computed Mutate Iife.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-alias-computed-mutate-iife.expect.md
-summary: '```javascript
-
-  const {mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Capturing Func Alias Computed Mutate Iife.Expect
+last_updated: null
+source_file: capturing-func-alias-computed-mutate-iife.expect.md
 ---
-
 ## Input
 
 ```javascript

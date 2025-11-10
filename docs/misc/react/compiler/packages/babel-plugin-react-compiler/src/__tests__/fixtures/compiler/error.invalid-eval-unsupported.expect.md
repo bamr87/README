@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Eval Unsupported.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-eval-unsupported.expect.md
-summary: "```javascript\nfunction Component(props) {\n  eval('props.x = true');\n\
-  \  return <div />;\n}"
 tags:
 - javascript
-title: Error.Invalid Eval Unsupported.Expect
+last_updated: null
+source_file: error.invalid-eval-unsupported.expect.md
 ---
-
 ## Input
 
 ```javascript

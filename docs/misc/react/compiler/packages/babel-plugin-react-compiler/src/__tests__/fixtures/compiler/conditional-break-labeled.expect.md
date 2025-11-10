@@ -1,15 +1,11 @@
 ---
+title: Conditional Break Labeled.Expect
 category: misc
-last_updated: null
-source_file: conditional-break-labeled.expect.md
-summary: "``javascript\n/\n  props.b does influence a`\n /\nfunction Component(props)\
-  \ {\n  const a = [];\n  a.push(props.a);\n  label: {\n    if (props.b) {\n     \
-  \ break label;\n    }\n    a.push(props.c);\n  }\n  a.push(pr..."
 tags:
 - javascript
-title: Conditional Break Labeled.Expect
+last_updated: null
+source_file: conditional-break-labeled.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Optional Call Chain In Optional.Expect
 category: misc
-last_updated: null
-source_file: error.todo-optional-call-chain-in-optional.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction useFoo(props: {value:\
-  \ {x: string; y: string} | null}) {\n  const value = props.value;\n  return createArray(value?.x,\
-  \ value?.y)?.join(', ');\n}"
 tags:
 - javascript
-title: Error.Todo Optional Call Chain In Optional.Expect
+last_updated: null
+source_file: error.todo-optional-call-chain-in-optional.expect.md
 ---
-
 ## Input
 
 ```javascript

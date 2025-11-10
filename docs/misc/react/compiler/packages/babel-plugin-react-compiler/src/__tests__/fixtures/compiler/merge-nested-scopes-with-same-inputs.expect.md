@@ -1,15 +1,11 @@
 ---
+title: Merge Nested Scopes With Same Inputs.Expect
 category: misc
-last_updated: null
-source_file: merge-nested-scopes-with-same-inputs.expect.md
-summary: '```javascript
-
-  import {setProperty} from ''sharedruntime'';'
 tags:
 - javascript
-title: Merge Nested Scopes With Same Inputs.Expect
+last_updated: null
+source_file: merge-nested-scopes-with-same-inputs.expect.md
 ---
-
 ## Input
 
 ```javascript

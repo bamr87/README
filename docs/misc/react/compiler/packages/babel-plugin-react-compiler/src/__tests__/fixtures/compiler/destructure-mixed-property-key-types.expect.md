@@ -1,14 +1,11 @@
 ---
+title: Destructure Mixed Property Key Types.Expect
 category: misc
-last_updated: null
-source_file: destructure-mixed-property-key-types.expect.md
-summary: "```javascript\nfunction foo() {\n  const {'datafoobar': x, a: y, data: z}\
-  \ = {'datafoobar': 1, a: 2, data: 3};\n  return [x, y, z];\n}"
 tags:
 - javascript
-title: Destructure Mixed Property Key Types.Expect
+last_updated: null
+source_file: destructure-mixed-property-key-types.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Usecallback Alias Property Load Dep.Expect
 category: misc
-last_updated: null
-source_file: useCallback-alias-property-load-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Alias Property Load Dep.Expect
+last_updated: null
+source_file: useCallback-alias-property-load-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

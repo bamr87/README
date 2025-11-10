@@ -1,15 +1,11 @@
 ---
+title: Hoisting Within Lambda.Expect
 category: misc
-last_updated: null
-source_file: hoisting-within-lambda.expect.md
-summary: "```javascript\nfunction Component({}) {\n  const outer = () => {\n    const\
-  \ inner = () => {\n      return x;\n    };\n    const x = 3;\n    return inner();\n\
-  \  };\n  return <div>{outer()}</div>;\n}"
 tags:
 - javascript
-title: Hoisting Within Lambda.Expect
+last_updated: null
+source_file: hoisting-within-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

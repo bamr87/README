@@ -1,19 +1,11 @@
 ---
+title: Usememo Constant Prop.Expect
 category: misc
-last_updated: null
-source_file: useMemo-constant-prop.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Constant Prop.Expect
+last_updated: null
+source_file: useMemo-constant-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Constant Propagation Bit Ops.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-bit-ops.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Propagation Bit Ops.Expect
+last_updated: null
+source_file: constant-propagation-bit-ops.expect.md
 ---
-
 ## Input
 
 ```javascript

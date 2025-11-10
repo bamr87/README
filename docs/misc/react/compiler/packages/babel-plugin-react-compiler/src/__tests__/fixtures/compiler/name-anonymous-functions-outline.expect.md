@@ -1,17 +1,11 @@
 ---
+title: Name Anonymous Functions Outline.Expect
 category: misc
-last_updated: null
-source_file: name-anonymous-functions-outline.expect.md
-summary: '```javascript
-
-  // @enableNameAnonymousFunctions
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Name Anonymous Functions Outline.Expect
+last_updated: null
+source_file: name-anonymous-functions-outline.expect.md
 ---
-
 ## Input
 
 ```javascript

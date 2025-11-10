@@ -1,14 +1,11 @@
 ---
+title: Hook Declaration Basic.Flow.Expect
 category: misc
-last_updated: null
-source_file: hook-declaration-basic.flow.expect.md
-summary: "```javascript\n// @flow @compilationMode:\"infer\"\nexport default hook\
-  \ useFoo(bar: number) {\n  return [bar];\n}"
 tags:
 - javascript
-title: Hook Declaration Basic.Flow.Expect
+last_updated: null
+source_file: hook-declaration-basic.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

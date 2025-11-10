@@ -1,15 +1,11 @@
 ---
+title: For Of Immutable Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-immutable-collection.expect.md
-summary: "```javascript\nfunction Router({title, mapping}) {\n  const array = [];\n\
-  \  for (let [, entry] of mapping) {\n    array.push([title, entry]);\n  }\n  return\
-  \ array;\n}"
 tags:
 - javascript
-title: For Of Immutable Collection.Expect
+last_updated: null
+source_file: for-of-immutable-collection.expect.md
 ---
-
 ## Input
 
 ```javascript

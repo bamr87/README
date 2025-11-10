@@ -1,18 +1,12 @@
 ---
+title: Use No Memo Module Scope Usememo Function Scope.Expect
 category: misc
-last_updated: null
-source_file: use-no-memo-module-scope-usememo-function-scope.expect.md
-summary: '```javascript
-
-  // @compilationMode:"all"
-
-  ''use no memo'';'
 tags:
 - javascript
 - testing
-title: Use No Memo Module Scope Usememo Function Scope.Expect
+last_updated: null
+source_file: use-no-memo-module-scope-usememo-function-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

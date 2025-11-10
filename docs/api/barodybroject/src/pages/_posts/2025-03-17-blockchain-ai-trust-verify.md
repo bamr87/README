@@ -1,25 +1,15 @@
 ---
-author: Tech Writer
+title: 'Blockchain as Truthkeeper: Leveraging Immutable Ledgers for Verifiable AI
+  Outputs'
 category: api
-description: This article discusses the integration of blockchain technology with
-  AI to enhance content verification and combat misinformation.
-last_updated: null
-published_at: '2025-03-17'
-slug: blockchain-ai-trust-verify
-source_file: 2025-03-17-blockchain-ai-trust-verify.md
-summary: Blockchain technology, celebrated for its transparency and immutability,
-  can potentially transform how we document and verify AIgenerated information. This
-  article examines how blockchain's immutable ...
 tags:
 - javascript
 - api
 - database
 - api
-title: 'Blockchain as Truthkeeper: Leveraging Immutable Ledgers for Verifiable AI
-  Outputs'
+last_updated: null
+source_file: 2025-03-17-blockchain-ai-trust-verify.md
 ---
-
-
 # Blockchain as Truthkeeper: Leveraging Immutable Ledgers for Verifiable AI Outputs
 
 ## Introduction

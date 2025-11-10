@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Ref In Callback Invoked During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-ref-in-callback-invoked-during-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  const renderItem = item => {\n    const current\
-  \ = ref.current;\n    return <Foo item={item} curr..."
 tags:
 - javascript
 - api
-title: Error.Invalid Ref In Callback Invoked During Render.Expect
+last_updated: null
+source_file: error.invalid-ref-in-callback-invoked-during-render.expect.md
 ---
-
 ## Input
 
 ```javascript

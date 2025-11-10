@@ -1,15 +1,11 @@
 ---
+title: Use No Forget With Eslint Suppression.Expect
 category: misc
-last_updated: null
-source_file: use-no-forget-with-eslint-suppression.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Use No Forget With Eslint Suppression.Expect
+last_updated: null
+source_file: use-no-forget-with-eslint-suppression.expect.md
 ---
-
 ## Input
 
 ```javascript

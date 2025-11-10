@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Destructure Assignment To Global.Expect
 category: api
-last_updated: null
-source_file: error.invalid-destructure-assignment-to-global.expect.md
-summary: "```javascript\nfunction useFoo(props) {\n  [x] = props;\n  return {x};\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Destructure Assignment To Global.Expect
+last_updated: null
+source_file: error.invalid-destructure-assignment-to-global.expect.md
 ---
-
 ## Input
 
 ```javascript

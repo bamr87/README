@@ -1,16 +1,14 @@
 ---
+title: Account Messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: No summary available
 tags:
 - python
 - javascript
 - docker
 - setup
-title: Account Messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Account Messages Directory
 
 ## Purpose

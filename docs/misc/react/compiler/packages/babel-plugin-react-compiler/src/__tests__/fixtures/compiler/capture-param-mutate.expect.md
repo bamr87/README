@@ -1,15 +1,11 @@
 ---
+title: Capture Param Mutate.Expect
 category: misc
-last_updated: null
-source_file: capture-param-mutate.expect.md
-summary: "```javascript\nfunction getNativeLogFunction(level) {\n  return function\
-  \ () {\n    let str;\n    if (arguments.length === 1 && typeof arguments[0] ===\
-  \ 'string') {\n      str = arguments[0];\n    } else {\n  ..."
 tags:
 - javascript
-title: Capture Param Mutate.Expect
+last_updated: null
+source_file: capture-param-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

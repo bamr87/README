@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Mutate Props In Effect Fixpoint.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-props-in-effect-fixpoint.expect.md
-summary: '```javascript
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Mutate Props In Effect Fixpoint.Expect
+last_updated: null
+source_file: error.invalid-mutate-props-in-effect-fixpoint.expect.md
 ---
-
 ## Input
 
 ```javascript

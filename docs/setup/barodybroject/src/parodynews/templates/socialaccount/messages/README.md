@@ -1,19 +1,15 @@
 ---
+title: Social Account Messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "def connectsocialaccount(request):\n     After successful OAuth flow\n \
-  \   messages.success(request, 'Your Google account has been connected successfully.')\n\
-  \    \ndef disconnectsocialaccount(request, prov..."
 tags:
 - python
 - javascript
 - docker
 - api
 - testing
-title: Social Account Messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Messages Directory
 
 ## Purpose

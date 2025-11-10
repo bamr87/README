@@ -1,20 +1,12 @@
 ---
-author: Amr & Cathy
+title: 2024 10 22 Ancient Armenia Birthplace Of Wine
 category: development
-description: A detailed exploration of the world's oldest known winery discovered
-  in Armenia, dating back to 4100 BC, and its significance in ancient winemaking practices.
-last_updated: null
-published_at: '2024-10-22'
-slug: ancient-armenia-birthplace-of-wine
-source_file: 2024-10-22-ancient-armenia-birthplace-of-wine.md
-summary: '![](https://)  Introduction'
 tags:
 - testing
 - development
-title: 2024 10 22 Ancient Armenia Birthplace Of Wine
+last_updated: null
+source_file: 2024-10-22-ancient-armenia-birthplace-of-wine.md
 ---
-
-
 ![](https://) ### Introduction
 
 In the heart of Armenia, nestled within the rugged caves of Vayots Dzor province, a remarkable archaeological find has captivated historians and wine enthusiasts alike. The Areni-1 cave complex holds the world’s oldest known winery, dated to approximately 4100 BC. This discovery, made in 2010, shines a spotlight on the sophisticated winemaking techniques practiced over 6,000 years ago and underscores the enduring cultural significance of wine throughout human history.

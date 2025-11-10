@@ -1,14 +1,11 @@
 ---
+title: Infer Sequential Optional Chain Nonnull.Expect
 category: misc
-last_updated: null
-source_file: infer-sequential-optional-chain-nonnull.expect.md
-summary: "```javascript\nfunction useFoo({a}) {\n  let x = [];\n  x.push(a?.b.c?.d.e);\n\
-  \  x.push(a.b?.c.d?.e);\n  return x;\n}"
 tags:
 - javascript
-title: Infer Sequential Optional Chain Nonnull.Expect
+last_updated: null
+source_file: infer-sequential-optional-chain-nonnull.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Mutate Global In Render Helper Prop.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-global-in-render-helper-prop.expect.md
-summary: "```javascript\nfunction Component() {\n  const renderItem = item => {\n\
-  \    // Normally we assume that it's safe to mutate globals in a function passed\n\
-  \    // as a prop, because the prop could be used as ..."
 tags:
 - javascript
-title: Error.Invalid Mutate Global In Render Helper Prop.Expect
+last_updated: null
+source_file: error.invalid-mutate-global-in-render-helper-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

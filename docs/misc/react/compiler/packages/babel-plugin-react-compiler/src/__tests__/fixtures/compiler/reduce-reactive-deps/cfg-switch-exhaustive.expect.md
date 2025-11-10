@@ -1,19 +1,11 @@
 ---
+title: Cfg Switch Exhaustive.Expect
 category: misc
-last_updated: null
-source_file: cfg-switch-exhaustive.expect.md
-summary: '```javascript
-
-  // props.a.b should be added as a unconditional dependency to the reactive
-
-  // scope that produces x, since it is accessed unconditionally in all cfg
-
-  // paths'
 tags:
 - javascript
-title: Cfg Switch Exhaustive.Expect
+last_updated: null
+source_file: cfg-switch-exhaustive.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Optional Computed Member Expression.Expect
 category: misc
-last_updated: null
-source_file: optional-computed-member-expression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const object = makeObject(props);\n\
-  \  return object?.[props.key];\n}"
 tags:
 - javascript
-title: Optional Computed Member Expression.Expect
+last_updated: null
+source_file: optional-computed-member-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

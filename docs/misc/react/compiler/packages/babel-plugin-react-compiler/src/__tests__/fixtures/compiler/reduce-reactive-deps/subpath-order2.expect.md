@@ -1,19 +1,11 @@
 ---
+title: Subpath Order2.Expect
 category: misc
-last_updated: null
-source_file: subpath-order2.expect.md
-summary: '``javascript
-
-  // When a conditional dependency props.a is a subpath of an unconditional
-
-  // dependency props.a.b, we can access props.a while preserving program
-
-  // semantics (with respect to nullthrows)...'
 tags:
 - javascript
-title: Subpath Order2.Expect
+last_updated: null
+source_file: subpath-order2.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Assing To Ref Current In Render.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-assing-to-ref-current-in-render.expect.md
-summary: '```javascript
-
-  // @flow'
 tags:
 - javascript
-title: Error.Invalid Assing To Ref Current In Render.Expect
+last_updated: null
+source_file: error.invalid-assing-to-ref-current-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

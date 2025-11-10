@@ -1,15 +1,11 @@
 ---
+title: Emit Freeze Conflicting Imports.Expect
 category: misc
-last_updated: null
-source_file: emit-freeze-conflicting-imports.expect.md
-summary: '```javascript
-
-  // @enableEmitFreeze @instrumentForget'
 tags:
 - javascript
-title: Emit Freeze Conflicting Imports.Expect
+last_updated: null
+source_file: emit-freeze-conflicting-imports.expect.md
 ---
-
 ## Input
 
 ```javascript

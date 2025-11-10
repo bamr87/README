@@ -1,19 +1,15 @@
 ---
+title: GitHub Actions Workflows
 category: setup
-last_updated: null
-source_file: README.md
-summary: "``mermaid\ngraph LR\n    A[Code Push] > B[CI Pipeline]\n    A > C[Quality\
-  \ Pipeline]\n    B > D[Container Build]\n    C > D\n    D > E[Security Scan]\n \
-  \   E > F[Deploy to Azure]\n    F > G[Postdeploy Tests]\n``"
 tags:
 - python
 - docker
 - azure
 - database
 - testing
-title: GitHub Actions Workflows
+last_updated: null
+source_file: README.md
 ---
-
 # GitHub Actions Workflows
 
 ## Purpose

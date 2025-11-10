@@ -1,14 +1,11 @@
 ---
+title: Ssa Complex Single If.Expect
 category: misc
-last_updated: null
-source_file: ssa-complex-single-if.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;\n  if (y ===\
-  \ 2) {\n    x = 3;\n  }"
 tags:
 - javascript
-title: Ssa Complex Single If.Expect
+last_updated: null
+source_file: ssa-complex-single-if.expect.md
 ---
-
 ## Input
 
 ```javascript

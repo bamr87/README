@@ -1,13 +1,11 @@
 ---
+title: Dependencies.Expect
 category: misc
-last_updated: null
-source_file: dependencies.expect.md
-summary: "```javascript\nfunction foo(x, y, z) {\n  const items = [z];\n  items.push(x);"
 tags:
 - javascript
-title: Dependencies.Expect
+last_updated: null
+source_file: dependencies.expect.md
 ---
-
 ## Input
 
 ```javascript

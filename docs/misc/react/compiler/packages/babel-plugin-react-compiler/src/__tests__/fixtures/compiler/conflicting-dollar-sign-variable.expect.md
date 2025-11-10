@@ -1,15 +1,11 @@
 ---
+title: Conflicting Dollar Sign Variable.Expect
 category: misc
-last_updated: null
-source_file: conflicting-dollar-sign-variable.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Conflicting Dollar Sign Variable.Expect
+last_updated: null
+source_file: conflicting-dollar-sign-variable.expect.md
 ---
-
 ## Input
 
 ```javascript

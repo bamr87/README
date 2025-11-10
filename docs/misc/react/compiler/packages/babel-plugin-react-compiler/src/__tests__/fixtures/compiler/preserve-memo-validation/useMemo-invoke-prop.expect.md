@@ -1,15 +1,11 @@
 ---
+title: Usememo Invoke Prop.Expect
 category: misc
-last_updated: null
-source_file: useMemo-invoke-prop.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Invoke Prop.Expect
+last_updated: null
+source_file: useMemo-invoke-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

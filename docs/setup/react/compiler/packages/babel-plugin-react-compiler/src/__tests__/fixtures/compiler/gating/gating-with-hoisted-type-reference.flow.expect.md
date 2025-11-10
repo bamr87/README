@@ -1,18 +1,12 @@
 ---
+title: Gating With Hoisted Type Reference.Flow.Expect
 category: setup
-last_updated: null
-source_file: gating-with-hoisted-type-reference.flow.expect.md
-summary: '```javascript
-
-  // @flow @gating
-
-  import {memo} from ''react'';'
 tags:
 - javascript
 - setup
-title: Gating With Hoisted Type Reference.Flow.Expect
+last_updated: null
+source_file: gating-with-hoisted-type-reference.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

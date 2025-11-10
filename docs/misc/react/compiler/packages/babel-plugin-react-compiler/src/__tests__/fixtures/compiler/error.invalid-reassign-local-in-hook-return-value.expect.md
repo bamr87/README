@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Reassign Local In Hook Return Value.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-local-in-hook-return-value.expect.md
-summary: "```javascript\nfunction useFoo() {\n  let x = 0;\n  return value => {\n\
-  \    x = value;\n  };\n}"
 tags:
 - javascript
-title: Error.Invalid Reassign Local In Hook Return Value.Expect
+last_updated: null
+source_file: error.invalid-reassign-local-in-hook-return-value.expect.md
 ---
-
 ## Input
 
 ```javascript

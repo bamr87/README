@@ -1,17 +1,11 @@
 ---
+title: Valid Setstate In Effect From Ref Function Call.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-effect-from-ref-function-call.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects @enableAllowSetStateFromRefsInEffects
-
-  import {useState, useRef, useEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Effect From Ref Function Call.Expect
+last_updated: null
+source_file: valid-setState-in-effect-from-ref-function-call.expect.md
 ---
-
 ## Input
 
 ```javascript

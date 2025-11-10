@@ -1,17 +1,13 @@
 ---
+title: Error.Usememo Callback Generator.Expect
 category: development
-last_updated: null
-source_file: error.useMemo-callback-generator.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  // we don't handle generators\
-  \ at all so this test isn't\n  // useful for now, but adding this test in case we\
-  \ do\n  // add support for generators in the future..."
 tags:
 - javascript
 - testing
 - development
-title: Error.Usememo Callback Generator.Expect
+last_updated: null
+source_file: error.useMemo-callback-generator.expect.md
 ---
-
 ## Input
 
 ```javascript

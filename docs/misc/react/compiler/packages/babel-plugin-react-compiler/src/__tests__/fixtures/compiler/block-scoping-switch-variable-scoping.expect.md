@@ -1,16 +1,12 @@
 ---
+title: Block Scoping Switch Variable Scoping.Expect
 category: misc
-last_updated: null
-source_file: block-scoping-switch-variable-scoping.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
 - testing
-title: Block Scoping Switch Variable Scoping.Expect
+last_updated: null
+source_file: block-scoping-switch-variable-scoping.expect.md
 ---
-
 ## Input
 
 ```javascript

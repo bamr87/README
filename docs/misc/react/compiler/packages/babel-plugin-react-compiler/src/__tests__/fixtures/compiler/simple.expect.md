@@ -1,14 +1,11 @@
 ---
+title: Simple.Expect
 category: misc
-last_updated: null
-source_file: simple.expect.md
-summary: "```javascript\nexport default function foo(x, y) {\n  if (x) {\n    return\
-  \ foo(false, y);\n  }\n  return [y  10];\n}"
 tags:
 - javascript
-title: Simple.Expect
+last_updated: null
+source_file: simple.expect.md
 ---
-
 ## Input
 
 ```javascript

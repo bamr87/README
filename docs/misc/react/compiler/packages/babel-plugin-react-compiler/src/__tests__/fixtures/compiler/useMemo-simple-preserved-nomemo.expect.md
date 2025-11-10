@@ -1,17 +1,11 @@
 ---
+title: Usememo Simple Preserved Nomemo.Expect
 category: misc
-last_updated: null
-source_file: useMemo-simple-preserved-nomemo.expect.md
-summary: '```javascript
-
-  // @disableMemoizationForDebugging
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo Simple Preserved Nomemo.Expect
+last_updated: null
+source_file: useMemo-simple-preserved-nomemo.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Rewrite Deps Spread.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rewrite-deps-spread.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Rewrite Deps Spread.Expect
+last_updated: null
+source_file: error.invalid-rewrite-deps-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

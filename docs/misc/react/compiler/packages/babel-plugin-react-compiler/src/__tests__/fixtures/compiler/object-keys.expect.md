@@ -1,19 +1,11 @@
 ---
+title: Object Keys.Expect
 category: misc
-last_updated: null
-source_file: object-keys.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Keys.Expect
+last_updated: null
+source_file: object-keys.expect.md
 ---
-
 ## Input
 
 ```javascript

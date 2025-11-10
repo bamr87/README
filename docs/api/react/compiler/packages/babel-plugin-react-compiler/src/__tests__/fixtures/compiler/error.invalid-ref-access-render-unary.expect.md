@@ -1,18 +1,12 @@
 ---
+title: Error.Invalid Ref Access Render Unary.Expect
 category: api
-last_updated: null
-source_file: error.invalid-ref-access-render-unary.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Ref Access Render Unary.Expect
+last_updated: null
+source_file: error.invalid-ref-access-render-unary.expect.md
 ---
-
 ## Input
 
 ```javascript

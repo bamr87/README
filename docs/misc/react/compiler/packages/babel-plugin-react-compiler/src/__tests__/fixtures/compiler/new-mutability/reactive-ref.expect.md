@@ -1,15 +1,11 @@
 ---
+title: Reactive Ref.Expect
 category: misc
-last_updated: null
-source_file: reactive-ref.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction ReactiveRefInEffect(props)\
-  \ {\n  const ref1 = useRef('initial value');\n  const ref2 = useRef('initial value');\n\
-  \  let ref;\n  if (props.foo) {\n   ..."
 tags:
 - javascript
-title: Reactive Ref.Expect
+last_updated: null
+source_file: reactive-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

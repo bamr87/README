@@ -1,16 +1,12 @@
 ---
+title: Error.Todo New Target Meta Property.Expect
 category: development
-last_updated: null
-source_file: error.todo-new-target-meta-property.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo New Target Meta Property.Expect
+last_updated: null
+source_file: error.todo-new-target-meta-property.expect.md
 ---
-
 ## Input
 
 ```javascript

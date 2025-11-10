@@ -1,14 +1,11 @@
 ---
+title: Const Propagation Into Function Expression Primitive.Expect
 category: misc
-last_updated: null
-source_file: const-propagation-into-function-expression-primitive.expect.md
-summary: "```javascript\nfunction foo() {\n  const x = 42;\n  const f = () => {\n\
-  \    console.log(x);\n  };\n  f();\n  return x;\n}"
 tags:
 - javascript
-title: Const Propagation Into Function Expression Primitive.Expect
+last_updated: null
+source_file: const-propagation-into-function-expression-primitive.expect.md
 ---
-
 ## Input
 
 ```javascript

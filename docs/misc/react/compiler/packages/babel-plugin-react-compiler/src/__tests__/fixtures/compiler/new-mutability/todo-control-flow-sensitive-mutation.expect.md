@@ -1,15 +1,11 @@
 ---
+title: Todo Control Flow Sensitive Mutation.Expect
 category: misc
-last_updated: null
-source_file: todo-control-flow-sensitive-mutation.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  mutate,\n  typedCapture,\n  typedCreateFrom,\n\
-  \  typedMutate,\n  ValidateMemoization,\n} from 's..."
 tags:
 - javascript
-title: Todo Control Flow Sensitive Mutation.Expect
+last_updated: null
+source_file: todo-control-flow-sensitive-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

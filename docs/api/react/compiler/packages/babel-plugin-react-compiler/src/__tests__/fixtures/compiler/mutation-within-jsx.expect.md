@@ -1,15 +1,12 @@
 ---
+title: Mutation Within Jsx.Expect
 category: api
-last_updated: null
-source_file: mutation-within-jsx.expect.md
-summary: "```javascript\nimport {\n  Stringify,\n  makeObjectPrimitives,\n  mutateAndReturn,\n\
-  } from 'sharedruntime';"
 tags:
 - javascript
 - api
-title: Mutation Within Jsx.Expect
+last_updated: null
+source_file: mutation-within-jsx.expect.md
 ---
-
 ## Input
 
 ```javascript

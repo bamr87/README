@@ -1,15 +1,11 @@
 ---
+title: Array Map Captures Receiver Noalias.Expect
 category: misc
-last_updated: null
-source_file: array-map-captures-receiver-noAlias.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component(props)\
-  \ {\n  // This item is part of the receiver, should be memoized\n  const item =\
-  \ {a: props.a};\n  const items = [item];\n  const map..."
 tags:
 - javascript
-title: Array Map Captures Receiver Noalias.Expect
+last_updated: null
+source_file: array-map-captures-receiver-noAlias.expect.md
 ---
-
 ## Input
 
 ```javascript

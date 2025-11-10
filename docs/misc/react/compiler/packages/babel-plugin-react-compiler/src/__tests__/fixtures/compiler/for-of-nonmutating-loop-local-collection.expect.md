@@ -1,17 +1,11 @@
 ---
+title: For Of Nonmutating Loop Local Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-nonmutating-loop-local-collection.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Nonmutating Loop Local Collection.Expect
+last_updated: null
+source_file: for-of-nonmutating-loop-local-collection.expect.md
 ---
-
 ## Input
 
 ```javascript

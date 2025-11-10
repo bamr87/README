@@ -1,15 +1,11 @@
 ---
+title: Inadvertent Mutability Readonly Class.Expect
 category: misc
-last_updated: null
-source_file: inadvertent-mutability-readonly-class.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const env = useRelayEnvironment();\n\
-  \  // Note: this is a class has no mutable methods, ie it always treats this` as\
-  \ readonly\n  const mutator = new Mutator(env..."
 tags:
 - javascript
-title: Inadvertent Mutability Readonly Class.Expect
+last_updated: null
+source_file: inadvertent-mutability-readonly-class.expect.md
 ---
-
 ## Input
 
 ```javascript

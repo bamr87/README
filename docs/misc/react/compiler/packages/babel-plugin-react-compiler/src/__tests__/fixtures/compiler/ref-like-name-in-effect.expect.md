@@ -1,17 +1,11 @@
 ---
+title: Ref Like Name In Effect.Expect
 category: misc
-last_updated: null
-source_file: ref-like-name-in-effect.expect.md
-summary: '```javascript
-
-  // @enableTreatRefLikeIdentifiersAsRefs @validatePreserveExistingMemoizationGuarantees
-
-  import {useRef, useEffect} from ''react'';'
 tags:
 - javascript
-title: Ref Like Name In Effect.Expect
+last_updated: null
+source_file: ref-like-name-in-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

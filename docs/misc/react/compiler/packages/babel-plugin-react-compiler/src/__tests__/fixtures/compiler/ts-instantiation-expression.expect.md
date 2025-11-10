@@ -1,16 +1,12 @@
 ---
+title: Ts Instantiation Expression.Expect
 category: misc
-last_updated: null
-source_file: ts-instantiation-expression.expect.md
-summary: '```javascript
-
-  import {identity, invoke} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Ts Instantiation Expression.Expect
+last_updated: null
+source_file: ts-instantiation-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

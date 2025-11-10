@@ -1,15 +1,12 @@
 ---
+title: Error.Unconditional Set State Nested Function Expressions.Expect
 category: api
-last_updated: null
-source_file: error.unconditional-set-state-nested-function-expressions.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender\nfunction Component(props)\
-  \ {\n  const [x, setX] = useState(0);"
 tags:
 - javascript
 - api
-title: Error.Unconditional Set State Nested Function Expressions.Expect
+last_updated: null
+source_file: error.unconditional-set-state-nested-function-expressions.expect.md
 ---
-
 ## Input
 
 ```javascript

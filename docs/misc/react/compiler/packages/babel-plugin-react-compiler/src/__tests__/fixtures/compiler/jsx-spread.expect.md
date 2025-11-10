@@ -1,14 +1,11 @@
 ---
+title: Jsx Spread.Expect
 category: misc
-last_updated: null
-source_file: jsx-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return (\n    <Component {...props}\
-  \ {...{bar: props.cond ? props.foo : props.bar}} />\n  );\n}"
 tags:
 - javascript
-title: Jsx Spread.Expect
+last_updated: null
+source_file: jsx-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

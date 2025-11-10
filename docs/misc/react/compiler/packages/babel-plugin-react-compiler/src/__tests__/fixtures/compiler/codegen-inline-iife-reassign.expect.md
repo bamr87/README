@@ -1,16 +1,12 @@
 ---
+title: Codegen Inline Iife Reassign.Expect
 category: misc
-last_updated: null
-source_file: codegen-inline-iife-reassign.expect.md
-summary: '```javascript
-
-  import {makeArray, print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Codegen Inline Iife Reassign.Expect
+last_updated: null
+source_file: codegen-inline-iife-reassign.expect.md
 ---
-
 ## Input
 
 ```javascript

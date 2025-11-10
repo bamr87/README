@@ -1,15 +1,11 @@
 ---
+title: Repro Mutate New Set Of Frozen Items In Callback.Expect
 category: misc
-last_updated: null
-source_file: repro-mutate-new-set-of-frozen-items-in-callback.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel:true'
 tags:
 - javascript
-title: Repro Mutate New Set Of Frozen Items In Callback.Expect
+last_updated: null
+source_file: repro-mutate-new-set-of-frozen-items-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

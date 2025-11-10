@@ -1,18 +1,15 @@
 ---
+title: barodybroject Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Run the development server (loads settings automatically)\npython\
-  \ manage.py runserver"
 tags:
 - python
 - docker
 - aws
 - azure
 - database
-title: barodybroject Directory
+last_updated: null
+source_file: README.md
 ---
-
 # barodybroject Directory
 
 ## Purpose

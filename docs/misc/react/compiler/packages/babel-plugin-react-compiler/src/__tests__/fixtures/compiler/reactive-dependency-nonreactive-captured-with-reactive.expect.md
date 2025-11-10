@@ -1,15 +1,11 @@
 ---
+title: Reactive Dependency Nonreactive Captured With Reactive.Expect
 category: misc
-last_updated: null
-source_file: reactive-dependency-nonreactive-captured-with-reactive.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const x = {};\n  const y =\
-  \ props.y;\n  return [x, y]; // x is captured here along with a reactive value.\
-  \ this shouldn't make x` reactive!\n}"
 tags:
 - javascript
-title: Reactive Dependency Nonreactive Captured With Reactive.Expect
+last_updated: null
+source_file: reactive-dependency-nonreactive-captured-with-reactive.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,13 @@
 ---
+title: Docker Debugging Setup for Barodybroject
 category: setup
-last_updated: null
-source_file: DEBUG_READY.md
-summary: "2. \U0001F40D Python/Django in Docker (Launch)\n    Alternative direct launch\
-  \ method\n    Runs Django locally (outside container)"
 tags:
 - python
 - docker
 - database
 - setup
-title: Docker Debugging Setup for Barodybroject
+last_updated: null
+source_file: DEBUG_READY.md
 ---
 # Docker Debugging Setup for Barodybroject
 

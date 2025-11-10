@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Mutate Context In Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-context-in-callback.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const FooContext = useContext(Foo);\n\
-  \  // This function should be memoized, but its mutable range is entangled\n  //\
-  \ with the useContext call. We can't memoiz..."
 tags:
 - javascript
-title: Error.Invalid Mutate Context In Callback.Expect
+last_updated: null
+source_file: error.invalid-mutate-context-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

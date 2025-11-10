@@ -1,19 +1,11 @@
 ---
+title: Reactive Ref Ternary.Expect
 category: misc
-last_updated: null
-source_file: reactive-ref-ternary.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useRef, useEffect, AUTODEPS} from ''react'';
-
-  import {print, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Ref Ternary.Expect
+last_updated: null
+source_file: reactive-ref-ternary.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,13 +1,11 @@
 ---
+title: Ssa Simple Phi.Expect
 category: misc
-last_updated: null
-source_file: ssa-simple-phi.expect.md
-summary: "```javascript\nfunction foo() {\n  let y = 2;"
 tags:
 - javascript
-title: Ssa Simple Phi.Expect
+last_updated: null
+source_file: ssa-simple-phi.expect.md
 ---
-
 ## Input
 
 ```javascript

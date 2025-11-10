@@ -1,14 +1,11 @@
 ---
+title: Type Test Return Type Inference.Expect
 category: misc
-last_updated: null
-source_file: type-test-return-type-inference.expect.md
-summary: "```javascript\nfunction component() {\n  let x = foo();\n  let y = foo();\n\
-  \  if (x > y) {\n    let z = {};\n  }"
 tags:
 - javascript
-title: Type Test Return Type Inference.Expect
+last_updated: null
+source_file: type-test-return-type-inference.expect.md
 ---
-
 ## Input
 
 ```javascript

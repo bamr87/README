@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Return Mutable Function From Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-return-mutable-function-from-hook.expect.md
-summary: '```javascript
-
-  // @validateNoFreezingKnownMutableFunctions
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Invalid Return Mutable Function From Hook.Expect
+last_updated: null
+source_file: error.invalid-return-mutable-function-from-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

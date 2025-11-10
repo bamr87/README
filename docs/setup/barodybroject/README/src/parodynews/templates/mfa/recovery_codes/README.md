@@ -1,19 +1,15 @@
 ---
+title: MFA Recovery Codes Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "{% block content %}\n<div class=\"row justifycontentcenter\">\n    <div\
-  \ class=\"colmd8\">\n        <div class=\"alert alertwarning\">\n            <i\
-  \ class=\"fas faexclamationtriangle\"></i>\n            <strong>I..."
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: MFA Recovery Codes Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # MFA Recovery Codes Templates Directory
 
 ## Purpose

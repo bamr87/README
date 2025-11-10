@@ -1,17 +1,15 @@
 ---
+title: data Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n Example test data usage\nimport json\nfrom pathlib import Path"
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: data Directory
+last_updated: null
+source_file: README.md
 ---
-
 # data Directory
 
 ## Purpose

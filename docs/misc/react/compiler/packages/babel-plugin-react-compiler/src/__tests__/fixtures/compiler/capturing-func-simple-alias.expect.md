@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Simple Alias.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-simple-alias.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Simple Alias.Expect
+last_updated: null
+source_file: capturing-func-simple-alias.expect.md
 ---
-
 ## Input
 
 ```javascript

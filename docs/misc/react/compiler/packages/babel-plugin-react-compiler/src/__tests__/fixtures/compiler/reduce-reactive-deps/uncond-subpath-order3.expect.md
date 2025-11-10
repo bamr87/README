@@ -1,16 +1,12 @@
 ---
+title: Uncond Subpath Order3.Expect
 category: misc
-last_updated: null
-source_file: uncond-subpath-order3.expect.md
-summary: "```javascript\n// Determine that we only need to track p.a here\n// Ordering\
-  \ of access should not matter\nfunction TestDepsSubpathOrder3(props) {\n  let x\
-  \ = {};\n  x.c = props.a.b.c;\n  x.a = props.a;\n  x.b..."
 tags:
 - javascript
 - testing
-title: Uncond Subpath Order3.Expect
+last_updated: null
+source_file: uncond-subpath-order3.expect.md
 ---
-
 ## Input
 
 ```javascript

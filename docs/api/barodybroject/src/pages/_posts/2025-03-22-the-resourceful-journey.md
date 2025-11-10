@@ -1,23 +1,13 @@
 ---
-author: Jane Doe
+title: 2025 03 22 The Resourceful Journey
 category: api
-description: An in-depth exploration of the concept of 'resource' across various domains,
-  from programming to archaeology.
-last_updated: null
-published_at: '2025-03-22'
-slug: the-resourceful-journey
-source_file: 2025-03-22-the-resourceful-journey.md
-summary: Before we traverse the vast landscapes of intellectual thought and endless
-  coffee debates, let’s pin down today's WOTD — "Resource." In its simplest incarnation,
-  a resource is anything we can use to a...
 tags:
 - api
 - testing
 - api
-title: 2025 03 22 The Resourceful Journey
+last_updated: null
+source_file: 2025-03-22-the-resourceful-journey.md
 ---
-
-
 **Title: The Resourceful Journey: How "Resource" Runs the World (and Our Patience)**
 
 **A Modern Odyssey: Defining "Resource"**

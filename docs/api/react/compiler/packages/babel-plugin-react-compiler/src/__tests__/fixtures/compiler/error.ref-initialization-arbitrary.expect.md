@@ -1,18 +1,12 @@
 ---
+title: Error.Ref Initialization Arbitrary.Expect
 category: api
-last_updated: null
-source_file: error.ref-initialization-arbitrary.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Initialization Arbitrary.Expect
+last_updated: null
+source_file: error.ref-initialization-arbitrary.expect.md
 ---
-
 ## Input
 
 ```javascript

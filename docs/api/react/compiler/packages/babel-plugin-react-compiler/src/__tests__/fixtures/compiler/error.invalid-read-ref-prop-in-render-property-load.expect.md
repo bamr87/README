@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Read Ref Prop In Render Property Load.Expect
 category: api
-last_updated: null
-source_file: error.invalid-read-ref-prop-in-render-property-load.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender @compilationMode:\"infer\"\
-  \nfunction Component(props) {\n  const value = props.ref.current;\n  return <div>{value}</div>;\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Read Ref Prop In Render Property Load.Expect
+last_updated: null
+source_file: error.invalid-read-ref-prop-in-render-property-load.expect.md
 ---
-
 ## Input
 
 ```javascript

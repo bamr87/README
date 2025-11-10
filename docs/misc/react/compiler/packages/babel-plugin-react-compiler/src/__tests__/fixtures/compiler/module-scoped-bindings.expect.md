@@ -1,17 +1,11 @@
 ---
+title: Module Scoped Bindings.Expect
 category: misc
-last_updated: null
-source_file: module-scoped-bindings.expect.md
-summary: '```javascript
-
-  import React from ''react'';
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Module Scoped Bindings.Expect
+last_updated: null
+source_file: module-scoped-bindings.expect.md
 ---
-
 ## Input
 
 ```javascript

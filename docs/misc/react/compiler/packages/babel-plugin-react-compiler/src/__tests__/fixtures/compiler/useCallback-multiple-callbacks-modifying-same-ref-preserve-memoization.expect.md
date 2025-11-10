@@ -1,17 +1,11 @@
 ---
+title: Usecallback Multiple Callbacks Modifying Same Ref Preserve Memoization.Expect
 category: misc
-last_updated: null
-source_file: useCallback-multiple-callbacks-modifying-same-ref-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Usecallback Multiple Callbacks Modifying Same Ref Preserve Memoization.Expect
+last_updated: null
+source_file: useCallback-multiple-callbacks-modifying-same-ref-preserve-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

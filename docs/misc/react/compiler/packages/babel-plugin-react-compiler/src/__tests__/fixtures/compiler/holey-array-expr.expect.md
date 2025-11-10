@@ -1,15 +1,11 @@
 ---
+title: Holey Array Expr.Expect
 category: misc
-last_updated: null
-source_file: holey-array-expr.expect.md
-summary: '```javascript
-
-  import {CONSTSTRING0} from ''sharedruntime'';'
 tags:
 - javascript
-title: Holey Array Expr.Expect
+last_updated: null
+source_file: holey-array-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Ref Current Write Not Added To Dep.Expect
 category: misc
-last_updated: null
-source_file: ref-current-write-not-added-to-dep.expect.md
-summary: "```javascript\nfunction VideoTab() {\n  const ref = useRef();\n  let x =\
-  \ () => {\n    ref.current = 1;\n  };"
 tags:
 - javascript
-title: Ref Current Write Not Added To Dep.Expect
+last_updated: null
+source_file: ref-current-write-not-added-to-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

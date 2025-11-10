@@ -1,21 +1,11 @@
 ---
-author: Amina Ali
+title: 2024 10 12 Decoding Modesty Hijab Misinterpretation
 category: development
-description: An analysis of common misinterpretations of Quranic verses on modesty
-  and hijab, highlighting the importance of context.
-last_updated: null
-published_at: '2024-10-12'
-slug: decoding-modesty-hijab-misinterpretation
-source_file: 2024-10-12-decoding-modesty-hijab-misinterpretation.md
-summary: The verses you're referencing from Surah AnNur (24:3031) and Surah AlAhzab
-  (33:59) are pivotal in discussions about modesty and the hijab within Islam. However,
-  these are often subject to misinterpret...
 tags:
 - development
-title: 2024 10 12 Decoding Modesty Hijab Misinterpretation
+last_updated: null
+source_file: 2024-10-12-decoding-modesty-hijab-misinterpretation.md
 ---
-
-
 The verses you're referencing from Surah An-Nur (24:30-31) and Surah Al-Ahzab (33:59) are pivotal in discussions about modesty and the hijab within Islam. However, these are often subject to misinterpretation, leading to the Quran being used as a tool of control rather than empowerment. Let's explore the specifics of how these verses have been misinterpreted and offer a broader understanding that incorporates cultural and historical contexts.
 
 ### Surah An-Nur (24:30-31)

@@ -1,15 +1,11 @@
 ---
+title: Nested Optional Chains.Expect
 category: misc
-last_updated: null
-source_file: nested-optional-chains.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Nested Optional Chains.Expect
+last_updated: null
+source_file: nested-optional-chains.expect.md
 ---
-
 ## Input
 
 ```javascript

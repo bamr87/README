@@ -1,65 +1,15 @@
 ---
-applyTo: '**/*.py,**/*.js,**/*.sh,**/*.bash'
-author: Barodybroject Team
+title: Language-Specific Coding Standards
 category: setup
-changelog:
-- author: Barodybroject Team
-  date: '2025-10-28'
-  description: Enhanced with VS Code Copilot optimization and Django/OpenAI specific
-    patterns
-- author: Barodybroject Team
-  date: '2025-10-11'
-  description: Initial creation with core language standards
-containerRequirements:
-  baseImage: python:3.8-slim, node:18-alpine
-  description: Multi-language development environment for Django/OpenAI applications
-  environment:
-    DJANGO_SETTINGS_MODULE: barodybroject.settings
-    OPENAI_API_KEY: required
-    PYTHONUNBUFFERED: 1
-  exposedPorts:
-  - 8000
-  - 4002
-  healthCheck: /health endpoint on Django development server
-  portDescription: Django development server and Jekyll static site server
-  resources:
-    cpu: 0.5-1.0
-    memory: 512MiB-1GiB
-  volumes:
-  - /app/src:rw
-  - /app/static:rw
-  - /app/templates:rw
-created: 2025-10-11
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-- space.instructions.md: Project organization and workspace standards
-- features.instructions.md: Feature development patterns
-description: VS Code Copilot-optimized language-specific coding standards for Python/Django,
-  JavaScript, and Bash development
-file: languages.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  language_development_path:
-  - python_django_patterns
-  - javascript_frontend_integration
-  - bash_automation_scripts
-  - openai_service_integration
-  - testing_and_validation
-  - deployment_automation
-source_file: languages.instructions.md
-summary: Apply the general coding guidelines to all code.
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Language-Specific Coding Standards
-version: 1.1.0
+last_updated: null
+source_file: languages.instructions.md
 ---
-
-
 # Language-Specific Coding Standards
 
 Apply the [general coding guidelines](../copilot-instructions.md) to all code.

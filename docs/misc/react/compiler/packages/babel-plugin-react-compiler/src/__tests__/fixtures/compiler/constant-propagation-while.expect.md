@@ -1,14 +1,11 @@
 ---
+title: Constant Propagation While.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-while.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 100;\n  let y = 0;\n  while (x\
-  \ < 10) {\n    y += 1;\n  }\n  return y;\n}"
 tags:
 - javascript
-title: Constant Propagation While.Expect
+last_updated: null
+source_file: constant-propagation-while.expect.md
 ---
-
 ## Input
 
 ```javascript

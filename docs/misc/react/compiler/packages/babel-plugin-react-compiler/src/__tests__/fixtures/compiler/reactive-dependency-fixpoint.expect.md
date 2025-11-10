@@ -1,13 +1,11 @@
 ---
+title: Reactive Dependency Fixpoint.Expect
 category: misc
-last_updated: null
-source_file: reactive-dependency-fixpoint.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  let y = 0;"
 tags:
 - javascript
-title: Reactive Dependency Fixpoint.Expect
+last_updated: null
+source_file: reactive-dependency-fixpoint.expect.md
 ---
-
 ## Input
 
 ```javascript

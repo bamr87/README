@@ -1,17 +1,11 @@
 ---
+title: Memoization Comments.Expect
 category: misc
-last_updated: null
-source_file: memoization-comments.expect.md
-summary: '```javascript
-
-  // @enableMemoizationComments
-
-  import {addOne, getNumber, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Memoization Comments.Expect
+last_updated: null
+source_file: memoization-comments.expect.md
 ---
-
 ## Input
 
 ```javascript

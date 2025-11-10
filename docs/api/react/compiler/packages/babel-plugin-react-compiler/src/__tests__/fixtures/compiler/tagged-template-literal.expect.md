@@ -1,16 +1,13 @@
 ---
+title: Tagged Template Literal.Expect
 category: api
-last_updated: null
-source_file: tagged-template-literal.expect.md
-summary: "``javascript\nfunction component() {\n  let t = graphql\n    fragment F\
-  \ on T {\n      id\n    }\n  `;"
 tags:
 - javascript
 - api
 - api
-title: Tagged Template Literal.Expect
+last_updated: null
+source_file: tagged-template-literal.expect.md
 ---
-
 ## Input
 
 ```javascript

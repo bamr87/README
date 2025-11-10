@@ -1,16 +1,14 @@
 ---
+title: Minimal Cost Infrastructure Migration
 category: setup
-last_updated: null
-source_file: MIGRATION-MINIMAL-COST.md
-summary: This directory contains the minimal cost infrastructure configuration for
-  Barodybroject.
 tags:
 - docker
 - azure
 - api
 - database
 - testing
-title: Minimal Cost Infrastructure Migration
+last_updated: null
+source_file: MIGRATION-MINIMAL-COST.md
 ---
 # Minimal Cost Infrastructure Migration
 

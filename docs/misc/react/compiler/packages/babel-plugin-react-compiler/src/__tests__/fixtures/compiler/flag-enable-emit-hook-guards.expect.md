@@ -1,15 +1,11 @@
 ---
+title: Flag Enable Emit Hook Guards.Expect
 category: misc
-last_updated: null
-source_file: flag-enable-emit-hook-guards.expect.md
-summary: "```javascript\n// @enableEmitHookGuards\nimport {createContext, useContext,\
-  \ useEffect, useState} from 'react';\nimport {\n  CONSTSTRING0,\n  ObjectWithHooks,\n\
-  \  getNumber,\n  identity,\n  print,\n} from 'share..."
 tags:
 - javascript
-title: Flag Enable Emit Hook Guards.Expect
+last_updated: null
+source_file: flag-enable-emit-hook-guards.expect.md
 ---
-
 ## Input
 
 ```javascript

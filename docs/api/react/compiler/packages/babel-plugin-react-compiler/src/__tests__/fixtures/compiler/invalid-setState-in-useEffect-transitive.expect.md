@@ -1,20 +1,14 @@
 ---
+title: Invalid Setstate In Useeffect Transitive.Expect
 category: api
-last_updated: null
-source_file: invalid-setState-in-useEffect-transitive.expect.md
-summary: '```javascript
-
-  // @loggerTestOnly @validateNoSetStateInEffects
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
 - api
 - testing
 - api
-title: Invalid Setstate In Useeffect Transitive.Expect
+last_updated: null
+source_file: invalid-setState-in-useEffect-transitive.expect.md
 ---
-
 ## Input
 
 ```javascript

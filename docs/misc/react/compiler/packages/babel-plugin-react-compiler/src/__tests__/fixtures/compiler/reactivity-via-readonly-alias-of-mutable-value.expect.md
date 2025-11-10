@@ -1,14 +1,11 @@
 ---
+title: Reactivity Via Readonly Alias Of Mutable Value.Expect
 category: misc
-last_updated: null
-source_file: reactivity-via-readonly-alias-of-mutable-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  const y =\
-  \ x;"
 tags:
 - javascript
-title: Reactivity Via Readonly Alias Of Mutable Value.Expect
+last_updated: null
+source_file: reactivity-via-readonly-alias-of-mutable-value.expect.md
 ---
-
 ## Input
 
 ```javascript

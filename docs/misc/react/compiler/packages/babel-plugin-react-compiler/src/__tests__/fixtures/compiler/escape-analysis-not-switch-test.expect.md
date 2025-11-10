@@ -1,15 +1,11 @@
 ---
+title: Escape Analysis Not Switch Test.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-not-switch-test.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = [props.a];\n  let\
-  \ x = props.b;\n  switch (a) {\n    case true: {\n      x = props.c;\n    }\n  }\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Escape Analysis Not Switch Test.Expect
+last_updated: null
+source_file: escape-analysis-not-switch-test.expect.md
 ---
-
 ## Input
 
 ```javascript

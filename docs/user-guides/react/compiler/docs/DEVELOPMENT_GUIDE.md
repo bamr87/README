@@ -1,13 +1,12 @@
 ---
+title: React Compiler Development Guide
 category: user-guides
-last_updated: null
-source_file: DEVELOPMENT_GUIDE.md
-summary: 'Note: for general notes about contributing, see the CONTRIBUTING.md.'
 tags:
 - javascript
 - testing
 - user-guides
-title: React Compiler Development Guide
+last_updated: null
+source_file: DEVELOPMENT_GUIDE.md
 ---
 # React Compiler Development Guide
 

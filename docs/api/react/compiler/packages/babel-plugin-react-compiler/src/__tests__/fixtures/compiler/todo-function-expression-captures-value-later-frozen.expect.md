@@ -1,16 +1,12 @@
 ---
+title: Todo Function Expression Captures Value Later Frozen.Expect
 category: api
-last_updated: null
-source_file: todo-function-expression-captures-value-later-frozen.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x = {};\n  // onChange\
-  \ should be inferred as immutable, because the value\n  // it captures (x) is frozen\
-  \ by the time the function is referenced\n  const on..."
 tags:
 - javascript
 - api
-title: Todo Function Expression Captures Value Later Frozen.Expect
+last_updated: null
+source_file: todo-function-expression-captures-value-later-frozen.expect.md
 ---
-
 ## Input
 
 ```javascript

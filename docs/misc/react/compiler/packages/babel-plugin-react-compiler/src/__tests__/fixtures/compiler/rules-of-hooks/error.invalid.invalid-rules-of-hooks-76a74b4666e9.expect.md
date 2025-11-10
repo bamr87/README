@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid.Invalid Rules Of Hooks 76A74B4666E9.Expect
 category: misc
-last_updated: null
-source_file: error.invalid.invalid-rules-of-hooks-76a74b4666e9.expect.md
-summary: "```javascript\n// Invalid because it's a common misunderstanding.\n// We\
-  \ could make it valid but the runtime error could be confusing.\nfunction ComponentWithHookInsideCallback()\
-  \ {\n  function handleClick..."
 tags:
 - javascript
-title: Error.Invalid.Invalid Rules Of Hooks 76A74B4666E9.Expect
+last_updated: null
+source_file: error.invalid.invalid-rules-of-hooks-76a74b4666e9.expect.md
 ---
-
 ## Input
 
 ```javascript

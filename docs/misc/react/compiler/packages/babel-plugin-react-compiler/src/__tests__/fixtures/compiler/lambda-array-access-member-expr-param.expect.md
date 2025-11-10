@@ -1,15 +1,11 @@
 ---
+title: Lambda Array Access Member Expr Param.Expect
 category: misc
-last_updated: null
-source_file: lambda-array-access-member-expr-param.expect.md
-summary: '```javascript
-
-  import {invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Lambda Array Access Member Expr Param.Expect
+last_updated: null
+source_file: lambda-array-access-member-expr-param.expect.md
 ---
-
 ## Input
 
 ```javascript

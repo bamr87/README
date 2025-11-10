@@ -1,14 +1,11 @@
 ---
+title: Optional Call With Optional Property Load.Expect
 category: misc
-last_updated: null
-source_file: optional-call-with-optional-property-load.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return props?.items?.map?.(render)?.filter(Boolean)\
-  \ ?? [];\n}"
 tags:
 - javascript
-title: Optional Call With Optional Property Load.Expect
+last_updated: null
+source_file: optional-call-with-optional-property-load.expect.md
 ---
-
 ## Input
 
 ```javascript

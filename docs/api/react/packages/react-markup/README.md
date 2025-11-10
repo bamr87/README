@@ -1,15 +1,12 @@
 ---
+title: '`react-markup`'
 category: api
-last_updated: null
-source_file: README.md
-summary: This package provides the ability to render standalone HTML from Server Components
-  for use in embedded contexts such as emails and RSS/Atom feeds. It cannot use Client
-  Components and does not hydrate....
 tags:
 - javascript
 - api
 - api
-title: '`react-markup`'
+last_updated: null
+source_file: README.md
 ---
 # `react-markup`
 

@@ -1,17 +1,13 @@
 ---
+title: Todo.Unnecessary Lambda Memoization.Expect
 category: api
-last_updated: null
-source_file: todo.unnecessary-lambda-memoization.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const data = useFreeze(); //\
-  \ assume this returns {items: Array<{...}>}\n  // In this call data and data.items\
-  \ have a read effect and the lambda itself\n  // is..."
 tags:
 - javascript
 - aws
 - api
-title: Todo.Unnecessary Lambda Memoization.Expect
+last_updated: null
+source_file: todo.unnecessary-lambda-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

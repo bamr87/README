@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Write Ref Prop In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-write-ref-prop-in-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender @compilationMode:\"infer\"\
-  \nfunction Component(props) {\n  const ref = props.ref;\n  ref.current = true;\n\
-  \  return <div>{value}</div>;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Write Ref Prop In Render.Expect
+last_updated: null
+source_file: error.invalid-write-ref-prop-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

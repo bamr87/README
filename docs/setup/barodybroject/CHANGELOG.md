@@ -1,15 +1,14 @@
 ---
+title: Changelog
 category: setup
-last_updated: null
-source_file: CHANGELOG.md
-summary: All notable changes to this project will be documented in this file.
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
 # Changelog
 

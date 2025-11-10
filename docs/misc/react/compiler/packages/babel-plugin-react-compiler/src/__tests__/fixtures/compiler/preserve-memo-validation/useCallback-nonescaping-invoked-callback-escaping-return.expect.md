@@ -1,18 +1,11 @@
 ---
+title: Usecallback Nonescaping Invoked Callback Escaping Return.Expect
 category: misc
-last_updated: null
-source_file: useCallback-nonescaping-invoked-callback-escaping-return.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableAssumeHooksFollowRulesOfReact
-  @enableTransitivelyFreezeFunctionExpressions
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Usecallback Nonescaping Invoked Callback Escaping Return.Expect
+last_updated: null
+source_file: useCallback-nonescaping-invoked-callback-escaping-return.expect.md
 ---
-
 ## Input
 
 ```javascript

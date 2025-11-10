@@ -1,15 +1,11 @@
 ---
+title: Target Flag.Expect
 category: misc
-last_updated: null
-source_file: target-flag.expect.md
-summary: '```javascript
-
-  // @target="18"'
 tags:
 - javascript
-title: Target Flag.Expect
+last_updated: null
+source_file: target-flag.expect.md
 ---
-
 ## Input
 
 ```javascript

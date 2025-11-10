@@ -1,16 +1,12 @@
 ---
+title: Error.Todo Object Expression Get Syntax.Expect
 category: development
-last_updated: null
-source_file: error.todo-object-expression-get-syntax.expect.md
-summary: "```javascript\nfunction Component({value}) {\n  const object = {\n    get\
-  \ value() {\n      return value;\n    },\n  };\n  return <div>{object.value}</div>;\n\
-  }"
 tags:
 - javascript
 - development
-title: Error.Todo Object Expression Get Syntax.Expect
+last_updated: null
+source_file: error.todo-object-expression-get-syntax.expect.md
 ---
-
 ## Input
 
 ```javascript

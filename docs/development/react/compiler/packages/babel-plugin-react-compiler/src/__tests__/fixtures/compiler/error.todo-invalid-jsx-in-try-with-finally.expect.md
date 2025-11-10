@@ -1,16 +1,12 @@
 ---
+title: Error.Todo Invalid Jsx In Try With Finally.Expect
 category: development
-last_updated: null
-source_file: error.todo-invalid-jsx-in-try-with-finally.expect.md
-summary: "```javascript\n// @validateNoJSXInTryStatements\nfunction Component(props)\
-  \ {\n  let el;\n  try {\n    el = <div />;\n  } finally {\n    console.log(el);\n\
-  \  }\n  return el;\n}"
 tags:
 - javascript
 - development
-title: Error.Todo Invalid Jsx In Try With Finally.Expect
+last_updated: null
+source_file: error.todo-invalid-jsx-in-try-with-finally.expect.md
 ---
-
 ## Input
 
 ```javascript

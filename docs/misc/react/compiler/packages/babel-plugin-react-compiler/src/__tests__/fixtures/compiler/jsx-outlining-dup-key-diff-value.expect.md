@@ -1,15 +1,11 @@
 ---
+title: Jsx Outlining Dup Key Diff Value.Expect
 category: misc
-last_updated: null
-source_file: jsx-outlining-dup-key-diff-value.expect.md
-summary: "```javascript\n// @enableJsxOutlining\nfunction Component({arr}) {\n  const\
-  \ x = useX();\n  return (\n    <>\n      {arr.map((i, id) => {\n        return (\n\
-  \          <Bar key={id} x={x}>\n            <Baz i={i..."
 tags:
 - javascript
-title: Jsx Outlining Dup Key Diff Value.Expect
+last_updated: null
+source_file: jsx-outlining-dup-key-diff-value.expect.md
 ---
-
 ## Input
 
 ```javascript

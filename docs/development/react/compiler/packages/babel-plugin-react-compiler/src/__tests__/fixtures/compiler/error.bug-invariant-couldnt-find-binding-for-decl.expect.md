@@ -1,16 +1,12 @@
 ---
+title: Error.Bug Invariant Couldnt Find Binding For Decl.Expect
 category: development
-last_updated: null
-source_file: error.bug-invariant-couldnt-find-binding-for-decl.expect.md
-summary: '```javascript
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Bug Invariant Couldnt Find Binding For Decl.Expect
+last_updated: null
+source_file: error.bug-invariant-couldnt-find-binding-for-decl.expect.md
 ---
-
 ## Input
 
 ```javascript

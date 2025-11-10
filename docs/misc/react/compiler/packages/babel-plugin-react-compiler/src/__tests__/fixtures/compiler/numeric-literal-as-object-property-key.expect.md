@@ -1,16 +1,12 @@
 ---
+title: Numeric Literal As Object Property Key.Expect
 category: misc
-last_updated: null
-source_file: numeric-literal-as-object-property-key.expect.md
-summary: "```javascript\nfunction Test() {\n  const obj = {\n    21: 'dimaMachina',\n\
-  \  };\n  // Destructuring assignment\n  const {21: myVar} = obj;\n  return (\n \
-  \   <div>\n      {obj[21]}\n      {myVar}\n    </div>\n  );\n..."
 tags:
 - javascript
 - testing
-title: Numeric Literal As Object Property Key.Expect
+last_updated: null
+source_file: numeric-literal-as-object-property-key.expect.md
 ---
-
 ## Input
 
 ```javascript

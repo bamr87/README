@@ -1,15 +1,11 @@
 ---
+title: Object Literal Method Derived In Ternary Consequent.Expect
 category: misc
-last_updated: null
-source_file: object-literal-method-derived-in-ternary-consequent.expect.md
-summary: '```javascript
-
-  import {identity, createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Literal Method Derived In Ternary Consequent.Expect
+last_updated: null
+source_file: object-literal-method-derived-in-ternary-consequent.expect.md
 ---
-
 ## Input
 
 ```javascript

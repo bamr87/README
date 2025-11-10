@@ -1,21 +1,11 @@
 ---
-author: Jane Doe
+title: 2024 09 19 Accountants Humor Unique Numbers
 category: misc
-description: A dive into the unique humor of accountants, showcasing how their profession
-  lends itself to clever jokes and wit.
-last_updated: null
-published_at: '2024-09-19'
-slug: accountants-humor-unique-numbers
-source_file: 2024-09-19-accountants-humor-unique-numbers.md
-summary: In the world of finance, where numbers reign supreme and spreadsheets are
-  the holy grail, accountants are the unsung heroes. But did you know that behind
-  those calculators and ledgers lies a treasure ...
 tags:
 - documentation
-title: 2024 09 19 Accountants Humor Unique Numbers
+last_updated: null
+source_file: 2024-09-19-accountants-humor-unique-numbers.md
 ---
-
-
 ### The Hilarious World of Accountancy: Why Number Crunchers Need Humor Too
 
 #### Exploring the Unique Sense of Humor Among Accountants and What Makes It So Special

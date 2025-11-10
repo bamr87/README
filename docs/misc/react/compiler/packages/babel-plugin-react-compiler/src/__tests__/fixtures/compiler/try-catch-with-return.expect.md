@@ -1,15 +1,11 @@
 ---
+title: Try Catch With Return.Expect
 category: misc
-last_updated: null
-source_file: try-catch-with-return.expect.md
-summary: '```javascript
-
-  const {shallowCopy, throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch With Return.Expect
+last_updated: null
+source_file: try-catch-with-return.expect.md
 ---
-
 ## Input
 
 ```javascript

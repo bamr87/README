@@ -1,21 +1,13 @@
 ---
+title: Workflow Reviewer Agent
 category: setup
-description: Automated agent that reviews GitHub Actions workflow runs, identifies
-  failures, and creates pull requests with tested and functional fixes.
-last_updated: null
-name: Workflow Reviewer
-source_file: workflow-reviewer.md
-summary: This agent is responsible for monitoring GitHub Actions workflow runs, identifying
-  failures, performance bottlenecks, or areas for improvement, and automating the
-  creation of pull requests with valida...
 tags:
 - api
 - testing
 - setup
-title: Workflow Reviewer Agent
+last_updated: null
+source_file: workflow-reviewer.md
 ---
-
-
 # Workflow Reviewer Agent
 
 ## Purpose

@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Mutate Context.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-context.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const context = useContext(FooContext);\n\
-  \  context.value = props.value;\n  return context.value;\n}"
 tags:
 - javascript
-title: Error.Invalid Mutate Context.Expect
+last_updated: null
+source_file: error.invalid-mutate-context.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,13 +1,11 @@
 ---
+title: Rewrite Phis In Lambda Capture Context.Expect
 category: misc
-last_updated: null
-source_file: rewrite-phis-in-lambda-capture-context.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = 4;"
 tags:
 - javascript
-title: Rewrite Phis In Lambda Capture Context.Expect
+last_updated: null
+source_file: rewrite-phis-in-lambda-capture-context.expect.md
 ---
-
 ## Input
 
 ```javascript

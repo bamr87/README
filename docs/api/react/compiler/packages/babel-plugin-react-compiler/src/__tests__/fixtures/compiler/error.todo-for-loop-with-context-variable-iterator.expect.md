@@ -1,16 +1,12 @@
 ---
+title: Error.Todo For Loop With Context Variable Iterator.Expect
 category: api
-last_updated: null
-source_file: error.todo-for-loop-with-context-variable-iterator.expect.md
-summary: '```javascript
-
-  import {Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Todo For Loop With Context Variable Iterator.Expect
+last_updated: null
+source_file: error.todo-for-loop-with-context-variable-iterator.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,14 @@
 ---
+title: Infrastructure Changes Documentation
 category: setup
-last_updated: null
-source_file: INFRASTRUCTURE_CHANGES.md
-summary: This document details the comprehensive infrastructure changes made in v0.2.0,
-  focusing on the successful deployment to Azure Container Apps and the implementation
-  of costoptimized infrastructure patt...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Infrastructure Changes Documentation
+last_updated: null
+source_file: INFRASTRUCTURE_CHANGES.md
 ---
 # Infrastructure Changes Documentation
 

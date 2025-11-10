@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Rules Of Hooks F69800950Ff0.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-f69800950ff0.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks F69800950Ff0.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-f69800950ff0.expect.md
 ---
-
 ## Input
 
 ```javascript

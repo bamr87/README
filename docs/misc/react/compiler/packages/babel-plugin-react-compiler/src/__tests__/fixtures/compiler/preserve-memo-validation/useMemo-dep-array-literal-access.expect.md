@@ -1,15 +1,11 @@
 ---
+title: Usememo Dep Array Literal Access.Expect
 category: misc
-last_updated: null
-source_file: useMemo-dep-array-literal-access.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Dep Array Literal Access.Expect
+last_updated: null
+source_file: useMemo-dep-array-literal-access.expect.md
 ---
-
 ## Input
 
 ```javascript

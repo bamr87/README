@@ -1,18 +1,14 @@
 ---
+title: assets Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "``python\n In Django templates\n{% load static %}\n<script src=\"{% static\
-  \ 'js/contentdetail.js' %}\"></script>\n<img src=\"{% static 'images/home.png' %}\"\
-  \ alt=\"Application screenshot\">\n``"
 tags:
 - python
 - javascript
 - docker
 - setup
-title: assets Directory
+last_updated: null
+source_file: README.md
 ---
-
 # assets Directory
 
 ## Purpose

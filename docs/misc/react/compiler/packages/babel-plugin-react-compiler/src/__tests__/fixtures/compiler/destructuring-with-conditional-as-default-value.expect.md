@@ -1,14 +1,11 @@
 ---
+title: Destructuring With Conditional As Default Value.Expect
 category: misc
-last_updated: null
-source_file: destructuring-with-conditional-as-default-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [x = true ? 1 : 0] =\
-  \ props.y;\n  return x;\n}"
 tags:
 - javascript
-title: Destructuring With Conditional As Default Value.Expect
+last_updated: null
+source_file: destructuring-with-conditional-as-default-value.expect.md
 ---
-
 ## Input
 
 ```javascript

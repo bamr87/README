@@ -1,16 +1,12 @@
 ---
+title: Capturing Function Capture Ref Before Rename.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-capture-ref-before-rename.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
-title: Capturing Function Capture Ref Before Rename.Expect
+last_updated: null
+source_file: capturing-function-capture-ref-before-rename.expect.md
 ---
-
 ## Input
 
 ```javascript

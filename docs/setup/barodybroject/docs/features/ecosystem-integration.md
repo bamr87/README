@@ -1,35 +1,15 @@
 ---
-author: Barodybroject Team
+title: Ecosystem Integration Features
 category: setup
-created: '2025-10-28'
-dependencies:
-- Django 4.x framework
-- VS Code Copilot integration
-- Docker containerization
-- IT-Journey ecosystem repositories
-description: Cross-repository integration patterns and standards for the IT-Journey
-  ecosystem
-lastModified: '2025-10-28'
-last_updated: null
-relatedFeatures:
-- instruction-harmonization.md
-- ../configuration/environment-config.md
-source_file: ecosystem-integration.md
-status: Active
-summary: The Ecosystem Integration feature provides seamless integration between Barodybroject
-  and the broader ITJourney ecosystem, enabling shared development patterns, consistent
-  documentation standards, and...
 tags:
 - python
 - docker
 - azure
 - api
 - testing
-title: Ecosystem Integration Features
-version: 1.0.0
+last_updated: null
+source_file: ecosystem-integration.md
 ---
-
-
 # Ecosystem Integration Features
 
 **Cross-Repository Integration and Harmonization Standards**

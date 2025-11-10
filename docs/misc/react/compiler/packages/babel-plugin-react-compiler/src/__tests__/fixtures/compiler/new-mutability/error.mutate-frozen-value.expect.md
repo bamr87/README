@@ -1,15 +1,11 @@
 ---
+title: Error.Mutate Frozen Value.Expect
 category: misc
-last_updated: null
-source_file: error.mutate-frozen-value.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
-  \ b}) {\n  const x = {a};\n  useFreeze(x);\n  x.y = true;\n  return <div>error</div>;\n\
-  }"
 tags:
 - javascript
-title: Error.Mutate Frozen Value.Expect
+last_updated: null
+source_file: error.mutate-frozen-value.expect.md
 ---
-
 ## Input
 
 ```javascript

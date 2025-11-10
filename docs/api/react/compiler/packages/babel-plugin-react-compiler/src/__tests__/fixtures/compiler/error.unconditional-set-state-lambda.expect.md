@@ -1,16 +1,13 @@
 ---
+title: Error.Unconditional Set State Lambda.Expect
 category: api
-last_updated: null
-source_file: error.unconditional-set-state-lambda.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender\nfunction Component(props)\
-  \ {\n  const [x, setX] = useState(0);"
 tags:
 - javascript
 - aws
 - api
-title: Error.Unconditional Set State Lambda.Expect
+last_updated: null
+source_file: error.unconditional-set-state-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

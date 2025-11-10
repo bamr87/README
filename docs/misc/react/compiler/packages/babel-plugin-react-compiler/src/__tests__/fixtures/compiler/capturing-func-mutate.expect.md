@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-mutate.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Mutate.Expect
+last_updated: null
+source_file: capturing-func-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

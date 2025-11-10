@@ -1,17 +1,15 @@
 ---
+title: Django Admin Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block title %}{{ title }} | Barody Broject Admin{% endblock %}'
 tags:
 - python
 - javascript
 - docker
 - database
 - setup
-title: Django Admin Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Django Admin Templates Directory
 
 ## Purpose

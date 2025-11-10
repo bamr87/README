@@ -1,15 +1,11 @@
 ---
+title: Target Flag Meta Internal.Expect
 category: misc
-last_updated: null
-source_file: target-flag-meta-internal.expect.md
-summary: '```javascript
-
-  // @target="donotusemetainternal"'
 tags:
 - javascript
-title: Target Flag Meta Internal.Expect
+last_updated: null
+source_file: target-flag-meta-internal.expect.md
 ---
-
 ## Input
 
 ```javascript

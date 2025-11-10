@@ -1,14 +1,11 @@
 ---
+title: Constant Propagation String Concat.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-string-concat.expect.md
-summary: "```javascript\nfunction foo() {\n  const a = 'a' + 'b';\n  const c = 'c';\n\
-  \  return a + c;\n}"
 tags:
 - javascript
-title: Constant Propagation String Concat.Expect
+last_updated: null
+source_file: constant-propagation-string-concat.expect.md
 ---
-
 ## Input
 
 ```javascript

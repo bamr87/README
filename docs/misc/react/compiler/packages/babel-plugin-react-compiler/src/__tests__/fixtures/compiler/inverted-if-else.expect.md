@@ -1,15 +1,11 @@
 ---
+title: Inverted If Else.Expect
 category: misc
-last_updated: null
-source_file: inverted-if-else.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = null;\n  label: {\n  \
-  \  if (a) {\n      x = b;\n      break label;\n    }\n    x = c;\n  }\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Inverted If Else.Expect
+last_updated: null
+source_file: inverted-if-else.expect.md
 ---
-
 ## Input
 
 ```javascript

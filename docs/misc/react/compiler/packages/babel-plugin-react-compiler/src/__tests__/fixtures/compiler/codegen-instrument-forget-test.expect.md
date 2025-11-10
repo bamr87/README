@@ -1,16 +1,12 @@
 ---
+title: Codegen Instrument Forget Test.Expect
 category: misc
-last_updated: null
-source_file: codegen-instrument-forget-test.expect.md
-summary: '```javascript
-
-  // @enableEmitInstrumentForget @compilationMode:"annotation"'
 tags:
 - javascript
 - testing
-title: Codegen Instrument Forget Test.Expect
+last_updated: null
+source_file: codegen-instrument-forget-test.expect.md
 ---
-
 ## Input
 
 ```javascript

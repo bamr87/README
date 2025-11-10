@@ -1,15 +1,11 @@
 ---
+title: Jsx Lowercase Localvar Memberexpr In Lambda.Expect
 category: misc
-last_updated: null
-source_file: jsx-lowercase-localvar-memberexpr-in-lambda.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nimport {invoke}\
-  \ from 'sharedruntime';\nfunction useComponentFactory({name}) {\n  const localVar\
-  \ = SharedRuntime;\n  const cb = () => <localVar..."
 tags:
 - javascript
-title: Jsx Lowercase Localvar Memberexpr In Lambda.Expect
+last_updated: null
+source_file: jsx-lowercase-localvar-memberexpr-in-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

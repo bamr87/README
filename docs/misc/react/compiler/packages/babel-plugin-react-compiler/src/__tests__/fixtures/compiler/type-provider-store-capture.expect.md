@@ -1,17 +1,11 @@
 ---
+title: Type Provider Store Capture.Expect
 category: misc
-last_updated: null
-source_file: type-provider-store-capture.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {typedArrayPush, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Provider Store Capture.Expect
+last_updated: null
+source_file: type-provider-store-capture.expect.md
 ---
-
 ## Input
 
 ```javascript

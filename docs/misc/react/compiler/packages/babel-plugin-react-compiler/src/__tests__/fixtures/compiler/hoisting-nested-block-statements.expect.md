@@ -1,15 +1,11 @@
 ---
+title: Hoisting Nested Block Statements.Expect
 category: misc
-last_updated: null
-source_file: hoisting-nested-block-statements.expect.md
-summary: '```javascript
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Nested Block Statements.Expect
+last_updated: null
+source_file: hoisting-nested-block-statements.expect.md
 ---
-
 ## Input
 
 ```javascript

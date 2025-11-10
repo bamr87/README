@@ -1,24 +1,13 @@
 ---
-author: John Smith
+title: 2024 09 25 Flotilla Raid Un Report Debate
 category: api
-description: A detailed discussion on the UN's Palmer Report regarding the 2010 Gaza
-  flotilla raid and its implications for international law and humanitarian rights.
-draft: draft
-last_updated: null
-published_at: 2024-09-25
-slug: flotilla-raid-un-report-debate
-source_file: 2024-09-25-flotilla-raid-un-report-debate.md
-summary: Ladies, gentlemen, and armchair diplomats, gather ‘round for the epic farce
-  that is the Palmer Report, a pièce de résistance in the theatre of international
-  blunders and moral posturing! This 2012 spe...
 tags:
 - aws
 - api
 - api
-title: 2024 09 25 Flotilla Raid Un Report Debate
+last_updated: null
+source_file: 2024-09-25-flotilla-raid-un-report-debate.md
 ---
-
-
 ### The Palmer Report: A Dark Comedy in International Diplomacy
 
 Ladies, gentlemen, and armchair diplomats, gather ‘round for the epic farce that is the Palmer Report, a pièce de résistance in the theatre of international blunders and moral posturing! This 2012 spectacular, conceived by our vaunted United Nations, delves into the surreal saga of the 2010 Gaza flotilla raid, where Israeli forces turned a humanitarian mission into a scene from a disaster movie—complete with an unnecessary body count and worldwide gasps. Let the satire begin!

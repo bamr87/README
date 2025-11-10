@@ -1,14 +1,11 @@
 ---
+title: Object Literal Method Call In Ternary Test.Expect
 category: misc
-last_updated: null
-source_file: object-literal-method-call-in-ternary-test.expect.md
-summary: "```javascript\nimport {\n  createHookWrapper,\n  identity,\n  CONSTSTRING0,\n\
-  \  CONSTSTRING1,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Object Literal Method Call In Ternary Test.Expect
+last_updated: null
+source_file: object-literal-method-call-in-ternary-test.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Cfg Switch Missing Default.Expect
 category: misc
-last_updated: null
-source_file: cfg-switch-missing-default.expect.md
-summary: '```javascript
-
-  // props.a.b should NOT be added as a unconditional dependency to the reactive
-
-  // scope that produces x if it is not accessed in the default case.'
 tags:
 - javascript
-title: Cfg Switch Missing Default.Expect
+last_updated: null
+source_file: cfg-switch-missing-default.expect.md
 ---
-
 ## Input
 
 ```javascript

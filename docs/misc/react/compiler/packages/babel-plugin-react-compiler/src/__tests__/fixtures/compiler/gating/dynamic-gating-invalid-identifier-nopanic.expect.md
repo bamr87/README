@@ -1,15 +1,11 @@
 ---
+title: Dynamic Gating Invalid Identifier Nopanic.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-invalid-identifier-nopanic.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @panicThreshold:"none"'
 tags:
 - javascript
-title: Dynamic Gating Invalid Identifier Nopanic.Expect
+last_updated: null
+source_file: dynamic-gating-invalid-identifier-nopanic.expect.md
 ---
-
 ## Input
 
 ```javascript

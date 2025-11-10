@@ -1,15 +1,11 @@
 ---
+title: Capturing Function Renamed Ref.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-renamed-ref.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Function Renamed Ref.Expect
+last_updated: null
+source_file: capturing-function-renamed-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

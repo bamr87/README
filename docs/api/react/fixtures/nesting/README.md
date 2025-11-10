@@ -1,16 +1,13 @@
 ---
+title: Nested React Demo
 category: api
-last_updated: null
-source_file: README.md
-summary: This is a demo of how you can configure a build system to serve two different
-  versions of React side by side in the same app. This is not optimal, and should
-  only be used as a compromise to prevent yo...
 tags:
 - javascript
 - api
 - testing
 - api
-title: Nested React Demo
+last_updated: null
+source_file: README.md
 ---
 # Nested React Demo
 

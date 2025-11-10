@@ -1,17 +1,13 @@
 ---
+title: Repro Local Mutation Of New Object From Destructured Prop.Expect
 category: api
-last_updated: null
-source_file: repro-local-mutation-of-new-object-from-destructured-prop.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
 - api
-title: Repro Local Mutation Of New Object From Destructured Prop.Expect
+last_updated: null
+source_file: repro-local-mutation-of-new-object-from-destructured-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

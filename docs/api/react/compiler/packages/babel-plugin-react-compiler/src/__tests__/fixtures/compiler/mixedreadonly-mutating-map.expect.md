@@ -1,15 +1,12 @@
 ---
+title: Mixedreadonly Mutating Map.Expect
 category: api
-last_updated: null
-source_file: mixedreadonly-mutating-map.expect.md
-summary: "```javascript\nimport {\n  arrayPush,\n  identity,\n  makeArray,\n  Stringify,\n\
-  \  useFragment,\n} from 'sharedruntime';"
 tags:
 - javascript
 - api
-title: Mixedreadonly Mutating Map.Expect
+last_updated: null
+source_file: mixedreadonly-mutating-map.expect.md
 ---
-
 ## Input
 
 ```javascript

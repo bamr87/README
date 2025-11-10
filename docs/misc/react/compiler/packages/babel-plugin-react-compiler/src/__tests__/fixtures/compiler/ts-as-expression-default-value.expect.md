@@ -1,15 +1,11 @@
 ---
+title: Ts As Expression Default Value.Expect
 category: misc
-last_updated: null
-source_file: ts-as-expression-default-value.expect.md
-summary: '```javascript
-
-  type Status = ''pending'' | ''success'' | ''error'';'
 tags:
 - javascript
-title: Ts As Expression Default Value.Expect
+last_updated: null
+source_file: ts-as-expression-default-value.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,13 @@
 ---
+title: react-suspense-test-utils
 category: api
-last_updated: null
-source_file: README.md
-summary: This package is meant to be used alongside yettobereleased, experimental
-  React features. It's unlikely to be useful in any other context.
 tags:
 - javascript
 - api
 - testing
 - api
-title: react-suspense-test-utils
+last_updated: null
+source_file: README.md
 ---
 # react-suspense-test-utils
 

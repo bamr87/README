@@ -1,15 +1,11 @@
 ---
+title: Ssa Newexpression.Expect
 category: misc
-last_updated: null
-source_file: ssa-newexpression.expect.md
-summary: '```javascript
-
-  function Foo() {}'
 tags:
 - javascript
-title: Ssa Newexpression.Expect
+last_updated: null
+source_file: ssa-newexpression.expect.md
 ---
-
 ## Input
 
 ```javascript

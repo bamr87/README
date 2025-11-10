@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Alias Receiver Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-alias-receiver-mutate.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Alias Receiver Mutate.Expect
+last_updated: null
+source_file: capturing-func-alias-receiver-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Error.Validate Memoized Effect Deps Invalidated Dep Value.Expect
 category: misc
-last_updated: null
-source_file: error.validate-memoized-effect-deps-invalidated-dep-value.expect.md
-summary: '```javascript
-
-  // @validateMemoizedEffectDependencies
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Validate Memoized Effect Deps Invalidated Dep Value.Expect
+last_updated: null
+source_file: error.validate-memoized-effect-deps-invalidated-dep-value.expect.md
 ---
-
 ## Input
 
 ```javascript

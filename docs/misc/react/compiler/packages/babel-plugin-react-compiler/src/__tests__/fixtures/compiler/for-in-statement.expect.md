@@ -1,15 +1,11 @@
 ---
+title: For In Statement.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let items = [];\n  for (const\
-  \ key in props) {\n    items.push(<div key={key}>{key}</div>);\n  }\n  return <div>{items}</div>;\n\
-  }"
 tags:
 - javascript
-title: For In Statement.Expect
+last_updated: null
+source_file: for-in-statement.expect.md
 ---
-
 ## Input
 
 ```javascript

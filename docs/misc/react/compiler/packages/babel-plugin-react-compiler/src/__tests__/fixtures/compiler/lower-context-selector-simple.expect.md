@@ -1,14 +1,11 @@
 ---
+title: Lower Context Selector Simple.Expect
 category: misc
-last_updated: null
-source_file: lower-context-selector-simple.expect.md
-summary: "```javascript\n// @lowerContextAccess\nfunction App() {\n  const {foo, bar}\
-  \ = useContext(MyContext);\n  return <Bar foo={foo} bar={bar} />;\n}"
 tags:
 - javascript
-title: Lower Context Selector Simple.Expect
+last_updated: null
+source_file: lower-context-selector-simple.expect.md
 ---
-
 ## Input
 
 ```javascript

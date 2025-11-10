@@ -1,14 +1,11 @@
 ---
+title: Outlining In React Memo.Expect
 category: misc
-last_updated: null
-source_file: outlining-in-react-memo.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return <View {...props} />;\n\
-  }"
 tags:
 - javascript
-title: Outlining In React Memo.Expect
+last_updated: null
+source_file: outlining-in-react-memo.expect.md
 ---
-
 ## Input
 
 ```javascript

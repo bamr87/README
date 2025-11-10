@@ -1,21 +1,11 @@
 ---
-author: John Doe
+title: 2024 09 23 Cheeseman Park Exploration
 category: architecture
-description: An in-depth look at Cheeseman Park, its history, and significance in
-  Denver.
-last_updated: null
-published_at: '2024-09-23'
-slug: cheeseman-park-exploration
-source_file: 2024-09-23-cheeseman-park-exploration.md
-summary: Ah, Denver – city of a thousand breweries and a penchant for highaltitude
-  living. Tucked amidst its sprawling urban grid lies Cheeseman Park, a pristine stretch
-  of land that lets residents pretend the...
 tags:
 - architecture
-title: 2024 09 23 Cheeseman Park Exploration
+last_updated: null
+source_file: 2024-09-23-cheeseman-park-exploration.md
 ---
-
-
 ## Denver's Cheeseman Park: A Grimly Beautiful Bonanza of Historical Intrigue and Suburban Spookiness
 
 Ah, Denver – city of a thousand breweries and a penchant for high-altitude living. Tucked amidst its sprawling urban grid lies Cheeseman Park, a pristine stretch of land that lets residents pretend they enjoy getting fit outdoors. Seriously, nothing says "urban vitality" quite like an 80-acre park with a name that sounds like a neighborhood deli.

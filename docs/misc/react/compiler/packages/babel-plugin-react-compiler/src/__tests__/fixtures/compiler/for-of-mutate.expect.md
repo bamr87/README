@@ -1,15 +1,11 @@
 ---
+title: For Of Mutate.Expect
 category: misc
-last_updated: null
-source_file: for-of-mutate.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, mutateAndReturn, toJSON} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Mutate.Expect
+last_updated: null
+source_file: for-of-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

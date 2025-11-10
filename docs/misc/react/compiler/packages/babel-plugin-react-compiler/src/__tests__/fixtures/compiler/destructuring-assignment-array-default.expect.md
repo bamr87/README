@@ -1,15 +1,11 @@
 ---
+title: Destructuring Assignment Array Default.Expect
 category: misc
-last_updated: null
-source_file: destructuring-assignment-array-default.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  if (props.cond)\
-  \ {\n    [[x] = ['default']] = props.y;\n  } else {\n    x = props.fallback;\n \
-  \ }\n  return x;\n}"
 tags:
 - javascript
-title: Destructuring Assignment Array Default.Expect
+last_updated: null
+source_file: destructuring-assignment-array-default.expect.md
 ---
-
 ## Input
 
 ```javascript

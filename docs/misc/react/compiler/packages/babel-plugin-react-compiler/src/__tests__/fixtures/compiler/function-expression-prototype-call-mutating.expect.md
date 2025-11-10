@@ -1,17 +1,11 @@
 ---
+title: Function Expression Prototype Call Mutating.Expect
 category: misc
-last_updated: null
-source_file: function-expression-prototype-call-mutating.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Function Expression Prototype Call Mutating.Expect
+last_updated: null
+source_file: function-expression-prototype-call-mutating.expect.md
 ---
-
 ## Input
 
 ```javascript

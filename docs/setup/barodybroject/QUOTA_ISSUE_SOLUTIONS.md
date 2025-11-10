@@ -1,16 +1,14 @@
 ---
+title: "\U0001F6A8 Azure Subscription Quota Issue - Solutions"
 category: setup
-last_updated: null
-source_file: QUOTA_ISSUE_SOLUTIONS.md
-summary: "Your Azure subscription \"itjourney\" has zero quota for:\n ❌ Basic VMs\
-  \ (B1 tier App Service)\n ❌ Free VMs (F1 tier App Service)"
 tags:
 - docker
 - aws
 - azure
 - api
 - testing
-title: 🚨 Azure Subscription Quota Issue - Solutions
+last_updated: null
+source_file: QUOTA_ISSUE_SOLUTIONS.md
 ---
 # 🚨 Azure Subscription Quota Issue - Solutions
 

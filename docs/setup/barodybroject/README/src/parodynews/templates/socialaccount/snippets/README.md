@@ -1,18 +1,15 @@
 ---
+title: Social Account Snippets Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "<div class=\"socialloginsection\">\n    <h4>Quick Login</h4>\n    {% include\
-  \ \"socialaccount/snippets/providerlist.html\" %}\n</div>"
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: Social Account Snippets Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Snippets Directory
 
 ## Purpose

@@ -1,14 +1,11 @@
 ---
+title: Usememo Labeled Statement Unconditional Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-labeled-statement-unconditional-return.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    label: {\n      return props.value;\n    }\n  });\n  return x;\n}"
 tags:
 - javascript
-title: Usememo Labeled Statement Unconditional Return.Expect
+last_updated: null
+source_file: useMemo-labeled-statement-unconditional-return.expect.md
 ---
-
 ## Input
 
 ```javascript

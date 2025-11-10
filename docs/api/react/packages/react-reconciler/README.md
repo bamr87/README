@@ -1,15 +1,14 @@
 ---
+title: react-reconciler
 category: api
-last_updated: null
-source_file: README.md
-summary: This is an experimental package for creating custom React renderers.
 tags:
 - javascript
 - docker
 - api
 - testing
 - api
-title: react-reconciler
+last_updated: null
+source_file: README.md
 ---
 # react-reconciler
 

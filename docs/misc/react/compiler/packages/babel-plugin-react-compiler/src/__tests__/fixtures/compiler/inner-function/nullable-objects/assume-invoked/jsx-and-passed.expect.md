@@ -1,15 +1,11 @@
 ---
+title: Jsx And Passed.Expect
 category: misc
-last_updated: null
-source_file: jsx-and-passed.expect.md
-summary: '```javascript
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx And Passed.Expect
+last_updated: null
+source_file: jsx-and-passed.expect.md
 ---
-
 ## Input
 
 ```javascript

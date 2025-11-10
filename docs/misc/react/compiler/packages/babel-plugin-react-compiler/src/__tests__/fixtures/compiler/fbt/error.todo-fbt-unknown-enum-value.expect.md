@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Fbt Unknown Enum Value.Expect
 category: misc
-last_updated: null
-source_file: error.todo-fbt-unknown-enum-value.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Error.Todo Fbt Unknown Enum Value.Expect
+last_updated: null
+source_file: error.todo-fbt-unknown-enum-value.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,12 @@
 ---
+title: Error.Default Param Accesses Local.Expect
 category: development
-last_updated: null
-source_file: error.default-param-accesses-local.expect.md
-summary: "```javascript\nfunction Component(\n  x,\n  y = () => {\n    return x;\n\
-  \  }\n) {\n  return y();\n}"
 tags:
 - javascript
 - development
-title: Error.Default Param Accesses Local.Expect
+last_updated: null
+source_file: error.default-param-accesses-local.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Capture Mutate Across Fns.Expect
 category: misc
-last_updated: null
-source_file: capture_mutate-across-fns.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  const f0 = function\
-  \ () {\n    const f1 = function () {\n      z.b = 1;\n    };\n    f1();\n  };\n\
-  \  f0();\n  return z;\n}"
 tags:
 - javascript
-title: Capture Mutate Across Fns.Expect
+last_updated: null
+source_file: capture_mutate-across-fns.expect.md
 ---
-
 ## Input
 
 ```javascript

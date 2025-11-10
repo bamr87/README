@@ -1,21 +1,14 @@
 ---
+title: Barodybroject Quick Reference Card
 category: setup
-last_updated: null
-source_file: QUICK_REFERENCE.md
-summary: '``bash
-
-  cd /Users/bamr87/github/barodybroject
-
-  ./initsetup.sh
-
-  ``'
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Barodybroject Quick Reference Card
+last_updated: null
+source_file: QUICK_REFERENCE.md
 ---
 # Barodybroject Quick Reference Card
 

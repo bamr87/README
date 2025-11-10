@@ -1,23 +1,15 @@
 ---
+title: Infrastructure Tester Agent
 category: setup
-description: Automated testing agent that validates Docker builds, runs test suites,
-  and provides pull request recommendations for improvements
-last_updated: null
-name: Infrastructure Tester
-source_file: infra-tester.md
-summary: This agent is responsible for testing infrastructure builds, validating Docker
-  configurations, running comprehensive test suites, and providing actionable recommendations
-  through pull requests. It ens...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Infrastructure Tester Agent
+last_updated: null
+source_file: infra-tester.md
 ---
-
-
 # Infrastructure Tester Agent
 
 ## Purpose

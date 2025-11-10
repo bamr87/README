@@ -1,16 +1,12 @@
 ---
+title: Primitive Reassigned Loop Force Scopes Enabled.Expect
 category: misc
-last_updated: null
-source_file: primitive-reassigned-loop-force-scopes-enabled.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees\nfunction\
-  \ Component({base, start, increment, test}) {\n  let value = base;\n  for (let i\
-  \ = start; i < test; i += increment) {\n    value += i;..."
 tags:
 - javascript
 - testing
-title: Primitive Reassigned Loop Force Scopes Enabled.Expect
+last_updated: null
+source_file: primitive-reassigned-loop-force-scopes-enabled.expect.md
 ---
-
 ## Input
 
 ```javascript

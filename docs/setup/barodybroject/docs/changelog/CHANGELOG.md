@@ -1,16 +1,14 @@
 ---
+title: Changelog
 category: setup
-last_updated: null
-source_file: CHANGELOG.md
-summary: All notable changes to the Barodybroject Django application are documented
-  in this file.
 tags:
 - python
 - javascript
 - docker
 - aws
 - azure
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
 # Changelog
 

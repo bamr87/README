@@ -1,15 +1,11 @@
 ---
+title: Jump Target Within Scope Loop Break.Expect
 category: misc
-last_updated: null
-source_file: jump-target-within-scope-loop-break.expect.md
-summary: "```javascript\nfunction useFoo({input, max}) {\n  const x = [];\n  let i\
-  \ = 0;\n  while (true) {\n    i += 1;\n    if (i > max) {\n      break;\n    }\n\
-  \  }\n  x.push(i);\n  x.push(input.a.b); // unconditional\n  r..."
 tags:
 - javascript
-title: Jump Target Within Scope Loop Break.Expect
+last_updated: null
+source_file: jump-target-within-scope-loop-break.expect.md
 ---
-
 ## Input
 
 ```javascript

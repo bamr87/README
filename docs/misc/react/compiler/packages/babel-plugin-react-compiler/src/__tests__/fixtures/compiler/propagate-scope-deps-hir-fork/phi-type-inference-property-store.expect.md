@@ -1,15 +1,11 @@
 ---
+title: Phi Type Inference Property Store.Expect
 category: misc
-last_updated: null
-source_file: phi-type-inference-property-store.expect.md
-summary: "``javascript\n// @debug @enablePropagateDepsInHIR\nfunction Component(props)\
-  \ {\n  const x = {};\n  let y;\n  if (props.cond) {\n    y = {};\n  } else {\n \
-  \   y = {a: props.a};\n  }\n  // This should be inferred ..."
 tags:
 - javascript
-title: Phi Type Inference Property Store.Expect
+last_updated: null
+source_file: phi-type-inference-property-store.expect.md
 ---
-
 ## Input
 
 ```javascript

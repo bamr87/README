@@ -1,15 +1,11 @@
 ---
+title: Type Alias Used As Annotation .Flow.Expect
 category: misc
-last_updated: null
-source_file: type-alias-used-as-annotation_.flow.expect.md
-summary: "```javascript\n// @flow @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions\n\
-  type Bar = string;\nfunction TypeAliasUsedAsAnnotation() {\n  type Foo = Bar;\n\
-  \  const fun = (f: F..."
 tags:
 - javascript
-title: Type Alias Used As Annotation .Flow.Expect
+last_updated: null
+source_file: type-alias-used-as-annotation_.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

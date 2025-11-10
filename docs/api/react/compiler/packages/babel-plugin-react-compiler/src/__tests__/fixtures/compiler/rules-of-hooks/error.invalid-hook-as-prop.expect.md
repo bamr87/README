@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Hook As Prop.Expect
 category: api
-last_updated: null
-source_file: error.invalid-hook-as-prop.expect.md
-summary: "```javascript\nfunction Component({useFoo}) {\n  useFoo();\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Hook As Prop.Expect
+last_updated: null
+source_file: error.invalid-hook-as-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

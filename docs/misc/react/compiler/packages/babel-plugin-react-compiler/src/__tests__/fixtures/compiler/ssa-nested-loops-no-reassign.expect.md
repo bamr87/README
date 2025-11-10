@@ -1,15 +1,11 @@
 ---
+title: Ssa Nested Loops No Reassign.Expect
 category: misc
-last_updated: null
-source_file: ssa-nested-loops-no-reassign.expect.md
-summary: "```javascript\n// @xonly\nfunction foo(a, b, c) {\n  let x = 0;\n  while\
-  \ (a) {\n    while (b) {\n      while (c) {\n        x + 1;\n      }\n    }\n  }\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Ssa Nested Loops No Reassign.Expect
+last_updated: null
+source_file: ssa-nested-loops-no-reassign.expect.md
 ---
-
 ## Input
 
 ```javascript

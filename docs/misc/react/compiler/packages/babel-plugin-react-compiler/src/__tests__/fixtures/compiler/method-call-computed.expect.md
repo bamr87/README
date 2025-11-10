@@ -1,15 +1,11 @@
 ---
+title: Method Call Computed.Expect
 category: misc
-last_updated: null
-source_file: method-call-computed.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  // Construct and freeze x, y\n\
-  \  const x = makeObject(a);\n  const y = makeObject(a);\n  <div>\n    {x}\n    {y}\n\
-  \  </div>;"
 tags:
 - javascript
-title: Method Call Computed.Expect
+last_updated: null
+source_file: method-call-computed.expect.md
 ---
-
 ## Input
 
 ```javascript

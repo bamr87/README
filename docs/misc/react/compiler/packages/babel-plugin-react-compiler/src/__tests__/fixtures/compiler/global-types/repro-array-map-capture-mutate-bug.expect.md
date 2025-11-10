@@ -1,15 +1,11 @@
 ---
+title: Repro Array Map Capture Mutate Bug.Expect
 category: misc
-last_updated: null
-source_file: repro-array-map-capture-mutate-bug.expect.md
-summary: '```javascript
-
-  import {mutateAndReturn, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Array Map Capture Mutate Bug.Expect
+last_updated: null
+source_file: repro-array-map-capture-mutate-bug.expect.md
 ---
-
 ## Input
 
 ```javascript

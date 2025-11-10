@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Rules Of Hooks D740D54E9C21.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-d740d54e9c21.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks D740D54E9C21.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-d740d54e9c21.expect.md
 ---
-
 ## Input
 
 ```javascript

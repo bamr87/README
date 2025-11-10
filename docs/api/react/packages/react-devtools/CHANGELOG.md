@@ -1,15 +1,14 @@
 ---
+title: React DevTools changelog
 category: api
-last_updated: null
-source_file: CHANGELOG.md
-summary: <! RELEASESCRIPTTOKEN >
 tags:
 - javascript
 - docker
 - azure
 - api
 - testing
-title: React DevTools changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
 # React DevTools changelog
 

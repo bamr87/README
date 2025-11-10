@@ -1,14 +1,11 @@
 ---
+title: Ssa While No Reassign.Expect
 category: misc
-last_updated: null
-source_file: ssa-while-no-reassign.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  while (x < 10) {\n    x\
-  \ + 1;\n  }"
 tags:
 - javascript
-title: Ssa While No Reassign.Expect
+last_updated: null
+source_file: ssa-while-no-reassign.expect.md
 ---
-
 ## Input
 
 ```javascript

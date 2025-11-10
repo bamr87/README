@@ -1,13 +1,12 @@
 ---
+title: React MCP Server (experimental)
 category: api
-last_updated: null
-source_file: README.md
-summary: An experimental MCP Server for React.
 tags:
 - javascript
 - api
 - api
-title: React MCP Server (experimental)
+last_updated: null
+source_file: README.md
 ---
 # React MCP Server (experimental)
 

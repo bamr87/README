@@ -1,35 +1,14 @@
 ---
-categories:
-- Agricultural Technology
-- Corporate Betrayal
-- Geopolitical Subterfuge
-- Historical Narratives.
-- Identity and Power
-- Labor Rights
-- Post-Colonial Studies
-- Racial Marginalization
-- Socio-Economic Marginalization
-- Systemic Exclusion
+title: 'Manufactured Dispossession: A Case Study in Corporate Betrayal, Racial Marginalization,
+  and Geopolitical Subterfuge'
 category: setup
-date: 2025-05-02 00:01:30.311000+00:00
-description: Explore the complex narrative of corporate betrayal and racial marginalization
-  in 'Manufactured Dispossession'—a case study of systemic exclusion.
-last_updated: null
-lastmod: 2025-05-02 00:02:32.339000+00:00
-preview: ''
-source_file: 2025-05-02-injustices.md
-summary: Amid the industrial expanses of the American Midwest, a complex and deeply
-  unsettling narrative unfolded in Omaha, Nebraska—one that encapsulates a paradigmatic
-  case of socioeconomic marginalization, ...
 tags:
 - api
 - testing
 - setup
-title: 'Manufactured Dispossession: A Case Study in Corporate Betrayal, Racial Marginalization,
-  and Geopolitical Subterfuge'
+last_updated: null
+source_file: 2025-05-02-injustices.md
 ---
-
-
 # Manufactured Dispossession: A Case Study in Corporate Betrayal, Racial Marginalization, and Geopolitical Subterfuge
 
 ## Roots of Resistance: From Nile to Midwest

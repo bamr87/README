@@ -1,15 +1,11 @@
 ---
+title: Repro Duplicate Instruction From Merge Consecutive Scopes.Expect
 category: misc
-last_updated: null
-source_file: repro-duplicate-instruction-from-merge-consecutive-scopes.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Duplicate Instruction From Merge Consecutive Scopes.Expect
+last_updated: null
+source_file: repro-duplicate-instruction-from-merge-consecutive-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

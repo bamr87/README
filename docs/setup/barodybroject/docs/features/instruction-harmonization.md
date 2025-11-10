@@ -1,35 +1,15 @@
 ---
-author: Barodybroject Team
+title: Instruction File Harmonization Features
 category: setup
-created: '2025-10-28'
-dependencies:
-- VS Code Copilot integration
-- Django instruction files
-- Cross-repository standards
-- Frontmatter specification
-description: Development standards harmonization and VS Code Copilot optimization
-  across IT-Journey ecosystem
-lastModified: '2025-10-28'
-last_updated: null
-relatedFeatures:
-- ecosystem-integration.md
-- ../configuration/settings-optimization.md
-source_file: instruction-harmonization.md
-status: Active
-summary: The Instruction File Harmonization feature provides standardized development
-  practices, consistent documentation formats, and optimized VS Code Copilot integration
-  across the ITJourney ecosystem repos...
 tags:
 - python
 - docker
 - azure
 - api
 - testing
-title: Instruction File Harmonization Features
-version: 1.0.0
+last_updated: null
+source_file: instruction-harmonization.md
 ---
-
-
 # Instruction File Harmonization Features
 
 **Cross-Repository Development Standards and VS Code Copilot Optimization**

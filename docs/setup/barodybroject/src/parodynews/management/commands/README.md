@@ -1,18 +1,15 @@
 ---
+title: commands Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Fetch latest OpenAI models and update the database\npython manage.py\
-  \ fetchmodels"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: commands Directory
+last_updated: null
+source_file: README.md
 ---
-
 # commands Directory
 
 ## Purpose

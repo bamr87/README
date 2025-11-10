@@ -1,15 +1,11 @@
 ---
+title: Usecontext Read Context In Callback.Expect
 category: misc
-last_updated: null
-source_file: useContext-read-context-in-callback.expect.md
-summary: '```javascript
-
-  import {createContext, useContext} from ''react'';'
 tags:
 - javascript
-title: Usecontext Read Context In Callback.Expect
+last_updated: null
+source_file: useContext-read-context-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

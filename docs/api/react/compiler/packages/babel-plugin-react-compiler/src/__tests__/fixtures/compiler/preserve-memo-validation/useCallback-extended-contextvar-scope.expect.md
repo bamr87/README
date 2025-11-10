@@ -1,16 +1,12 @@
 ---
+title: Usecallback Extended Contextvar Scope.Expect
 category: api
-last_updated: null
-source_file: useCallback-extended-contextvar-scope.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees:true'
 tags:
 - javascript
 - api
-title: Usecallback Extended Contextvar Scope.Expect
+last_updated: null
+source_file: useCallback-extended-contextvar-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

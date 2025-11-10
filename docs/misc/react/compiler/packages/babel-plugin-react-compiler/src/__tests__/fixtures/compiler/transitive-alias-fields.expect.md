@@ -1,14 +1,11 @@
 ---
+title: Transitive Alias Fields.Expect
 category: misc
-last_updated: null
-source_file: transitive-alias-fields.expect.md
-summary: "```javascript\nfunction component() {\n  let x = {};\n  let p = {};\n  let\
-  \ q = {};\n  let y = {};"
 tags:
 - javascript
-title: Transitive Alias Fields.Expect
+last_updated: null
+source_file: transitive-alias-fields.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Error.Validate Blocklisted Imports.Expect
 category: misc
-last_updated: null
-source_file: error.validate-blocklisted-imports.expect.md
-summary: '```javascript
-
-  // @validateBlocklistedImports:["DangerousImport"]
-
-  import {foo} from ''DangerousImport'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Validate Blocklisted Imports.Expect
+last_updated: null
+source_file: error.validate-blocklisted-imports.expect.md
 ---
-
 ## Input
 
 ```javascript

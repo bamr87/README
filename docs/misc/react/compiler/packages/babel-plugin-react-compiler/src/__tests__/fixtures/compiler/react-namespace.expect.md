@@ -1,15 +1,11 @@
 ---
+title: React Namespace.Expect
 category: misc
-last_updated: null
-source_file: react-namespace.expect.md
-summary: '```javascript
-
-  const FooContext = React.createContext({current: null});'
 tags:
 - javascript
-title: React Namespace.Expect
+last_updated: null
+source_file: react-namespace.expect.md
 ---
-
 ## Input
 
 ```javascript

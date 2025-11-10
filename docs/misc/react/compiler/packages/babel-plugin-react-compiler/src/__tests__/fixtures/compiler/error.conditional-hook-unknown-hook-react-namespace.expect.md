@@ -1,14 +1,11 @@
 ---
+title: Error.Conditional Hook Unknown Hook React Namespace.Expect
 category: misc
-last_updated: null
-source_file: error.conditional-hook-unknown-hook-react-namespace.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = null;\n  if (props.cond)\
-  \ {\n    x = React.useNonexistentHook();\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Error.Conditional Hook Unknown Hook React Namespace.Expect
+last_updated: null
+source_file: error.conditional-hook-unknown-hook-react-namespace.expect.md
 ---
-
 ## Input
 
 ```javascript

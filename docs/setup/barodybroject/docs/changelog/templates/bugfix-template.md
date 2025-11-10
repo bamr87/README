@@ -1,30 +1,15 @@
 ---
-affected_versions:
-- X.Y.Z
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Bug Fix: [Bug Title]'
 category: setup
-date: YYYY-MM-DD
-impact: high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-severity: critical|high|medium|low
-source_file: bugfix-template.md
-summary: '> Summary: Onesentence description of the bug that was fixed.'
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: 'Bug Fix: [Bug Title]'
-type: bugfix
-version: X.Y.Z
+last_updated: null
+source_file: bugfix-template.md
 ---
-
-
 # Bug Fix: [Bug Title]
 
 > **Summary**: One-sentence description of the bug that was fixed.

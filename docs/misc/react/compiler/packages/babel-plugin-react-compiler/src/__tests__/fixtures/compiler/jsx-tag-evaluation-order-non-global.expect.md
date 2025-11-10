@@ -1,15 +1,11 @@
 ---
+title: Jsx Tag Evaluation Order Non Global.Expect
 category: misc
-last_updated: null
-source_file: jsx-tag-evaluation-order-non-global.expect.md
-summary: '```javascript
-
-  import {StaticText1, StaticText2} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Tag Evaluation Order Non Global.Expect
+last_updated: null
+source_file: jsx-tag-evaluation-order-non-global.expect.md
 ---
-
 ## Input
 
 ```javascript

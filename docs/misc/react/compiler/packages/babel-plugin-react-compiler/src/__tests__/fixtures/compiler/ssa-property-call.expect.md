@@ -1,14 +1,11 @@
 ---
+title: Ssa Property Call.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-call.expect.md
-summary: "```javascript\nfunction foo() {\n  const x = [];\n  const y = {x: x};\n\
-  \  y.x.push([]);\n  return y;\n}"
 tags:
 - javascript
-title: Ssa Property Call.Expect
+last_updated: null
+source_file: ssa-property-call.expect.md
 ---
-
 ## Input
 
 ```javascript

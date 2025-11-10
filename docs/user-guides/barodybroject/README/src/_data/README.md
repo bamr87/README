@@ -1,13 +1,11 @@
 ---
+title: Readme
 category: user-guides
-last_updated: null
-source_file: README.md
-summary: These instructions will help you understand the data files in this directory.
 tags:
 - user-guides
-title: Readme
+last_updated: null
+source_file: README.md
 ---
-
 ## Getting Started
 
 These instructions will help you understand the data files in this directory.

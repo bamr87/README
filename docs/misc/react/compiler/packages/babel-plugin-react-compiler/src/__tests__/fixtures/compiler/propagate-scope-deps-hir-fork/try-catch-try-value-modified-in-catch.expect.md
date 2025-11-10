@@ -1,17 +1,11 @@
 ---
+title: Try Catch Try Value Modified In Catch.Expect
 category: misc
-last_updated: null
-source_file: try-catch-try-value-modified-in-catch.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  const {throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Try Value Modified In Catch.Expect
+last_updated: null
+source_file: try-catch-try-value-modified-in-catch.expect.md
 ---
-
 ## Input
 
 ```javascript

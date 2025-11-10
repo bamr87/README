@@ -1,11 +1,10 @@
 ---
+title: react-server-dom-webpack
 category: misc
-last_updated: null
-source_file: README.md
-summary: Experimental React Flight bindings for DOM using Webpack.
 tags:
 - javascript
-title: react-server-dom-webpack
+last_updated: null
+source_file: README.md
 ---
 # react-server-dom-webpack
 

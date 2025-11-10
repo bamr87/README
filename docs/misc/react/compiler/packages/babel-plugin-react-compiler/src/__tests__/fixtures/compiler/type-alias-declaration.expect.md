@@ -1,14 +1,11 @@
 ---
+title: Type Alias Declaration.Expect
 category: misc
-last_updated: null
-source_file: type-alias-declaration.expect.md
-summary: "```javascript\nfunction Component(props) {\n  type User = {name: string};\n\
-  \  const user: User = {name: props.name};\n  return user;\n}"
 tags:
 - javascript
-title: Type Alias Declaration.Expect
+last_updated: null
+source_file: type-alias-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

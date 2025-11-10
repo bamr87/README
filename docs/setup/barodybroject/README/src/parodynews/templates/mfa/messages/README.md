@@ -1,18 +1,14 @@
 ---
+title: MFA Messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "def activatetotp(request):\n     TOTP activation logic\n    if totpdevice.activate():\n\
-  \        messages.success(request, 'Twofactor authentication has been successfully\
-  \ activated using your authenticator..."
 tags:
 - python
 - javascript
 - docker
 - setup
-title: MFA Messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # MFA Messages Directory
 
 ## Purpose

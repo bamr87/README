@@ -1,14 +1,11 @@
 ---
+title: Array Map Frozen Array.Expect
 category: misc
-last_updated: null
-source_file: array-map-frozen-array.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  <dif>{x}</dif>;\n\
-  \  const y = x.map(item => item);\n  return [x, y];\n}"
 tags:
 - javascript
-title: Array Map Frozen Array.Expect
+last_updated: null
+source_file: array-map-frozen-array.expect.md
 ---
-
 ## Input
 
 ```javascript

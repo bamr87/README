@@ -1,17 +1,11 @@
 ---
+title: Use Operator Call Expression.Expect
 category: misc
-last_updated: null
-source_file: use-operator-call-expression.expect.md
-summary: '```javascript
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import {use, useMemo} from ''react'';'
 tags:
 - javascript
-title: Use Operator Call Expression.Expect
+last_updated: null
+source_file: use-operator-call-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

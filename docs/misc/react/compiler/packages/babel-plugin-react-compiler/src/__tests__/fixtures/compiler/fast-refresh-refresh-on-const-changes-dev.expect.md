@@ -1,19 +1,11 @@
 ---
+title: Fast Refresh Refresh On Const Changes Dev.Expect
 category: misc
-last_updated: null
-source_file: fast-refresh-refresh-on-const-changes-dev.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enableResetCacheOnSourceFileChanges
-
-  import {useEffect, useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fast Refresh Refresh On Const Changes Dev.Expect
+last_updated: null
+source_file: fast-refresh-refresh-on-const-changes-dev.expect.md
 ---
-
 ## Input
 
 ```javascript

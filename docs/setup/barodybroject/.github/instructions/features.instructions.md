@@ -1,44 +1,15 @@
 ---
-applyTo: '**'
-author: Barodybroject Team
+title: Feature Development Pipeline for Barodybroject
 category: setup
-containerRequirements:
-  description: Django feature development optimized for VS Code Copilot assistance
-  validation: feature integration validation, AI-readability scoring
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and project context
-- languages.instructions.md: Language-specific patterns
-- workflows.instructions.md: CI/CD pipeline standards
-- space.instructions.md: Project organization patterns
-description: VS Code Copilot-optimized feature development pipeline for Django/OpenAI
-  applications with CI/CD integration
-file: features.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  feature_development_path:
-  - feature_planning
-  - ai_assisted_implementation
-  - django_integration
-  - openai_service_integration
-  - testing_and_validation
-  - deployment_automation
-source_file: features.instructions.md
-summary: These instructions provide comprehensive guidance for developing features
-  in the Django/OpenAI parody news generator, optimized for VS Code Copilot assistance.
-  They focus on creating robust, scalable ...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Feature Development Pipeline for Barodybroject
-version: 1.0.0
+last_updated: null
+source_file: features.instructions.md
 ---
-
-
 # Feature Development Pipeline for Barodybroject
 
 These instructions provide comprehensive guidance for developing features in the Django/OpenAI parody news generator, optimized for VS Code Copilot assistance. They focus on creating robust, scalable features that integrate seamlessly with Django best practices and OpenAI API patterns.

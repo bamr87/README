@@ -1,14 +1,11 @@
 ---
+title: Ssa Reassign.Expect
 category: misc
-last_updated: null
-source_file: ssa-reassign.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = 0;\n  x = a;\n  x = b;\n\
-  \  x = c;\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Reassign.Expect
+last_updated: null
+source_file: ssa-reassign.expect.md
 ---
-
 ## Input
 
 ```javascript

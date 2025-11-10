@@ -1,17 +1,11 @@
 ---
+title: Ssa Renaming With Mutation.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-with-mutation.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Ssa Renaming With Mutation.Expect
+last_updated: null
+source_file: ssa-renaming-with-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

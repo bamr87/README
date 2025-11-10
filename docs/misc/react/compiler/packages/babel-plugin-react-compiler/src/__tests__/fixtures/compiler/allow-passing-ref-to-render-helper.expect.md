@@ -1,15 +1,11 @@
 ---
+title: Allow Passing Ref To Render Helper.Expect
 category: misc
-last_updated: null
-source_file: allow-passing-ref-to-render-helper.expect.md
-summary: '```javascript
-
-  // @enableTreatRefLikeIdentifiersAsRefs @validateRefAccessDuringRender'
 tags:
 - javascript
-title: Allow Passing Ref To Render Helper.Expect
+last_updated: null
+source_file: allow-passing-ref-to-render-helper.expect.md
 ---
-
 ## Input
 
 ```javascript

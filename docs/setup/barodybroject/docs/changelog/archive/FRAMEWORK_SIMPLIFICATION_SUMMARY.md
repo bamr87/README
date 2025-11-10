@@ -1,17 +1,14 @@
 ---
+title: Framework Simplification Summary
 category: setup
-last_updated: null
-source_file: FRAMEWORK_SIMPLIFICATION_SUMMARY.md
-summary: "1. Reduced Complexity: Removed 30+ debugspecific configurations and files\n\
-  2. Cleaner Codebase: No test/debug artifacts cluttering the repository  \n3. Simplified\
-  \ Maintenance: Fewer files to maintain an..."
 tags:
 - python
 - docker
 - database
 - testing
 - setup
-title: Framework Simplification Summary
+last_updated: null
+source_file: FRAMEWORK_SIMPLIFICATION_SUMMARY.md
 ---
 # Framework Simplification Summary
 

@@ -1,15 +1,11 @@
 ---
+title: Reassign In While Loop Condition.Expect
 category: misc
-last_updated: null
-source_file: reassign-in-while-loop-condition.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reassign In While Loop Condition.Expect
+last_updated: null
+source_file: reassign-in-while-loop-condition.expect.md
 ---
-
 ## Input
 
 ```javascript

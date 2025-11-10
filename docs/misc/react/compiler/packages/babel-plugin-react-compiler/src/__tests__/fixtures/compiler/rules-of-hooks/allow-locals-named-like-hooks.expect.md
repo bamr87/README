@@ -1,15 +1,11 @@
 ---
+title: Allow Locals Named Like Hooks.Expect
 category: misc
-last_updated: null
-source_file: allow-locals-named-like-hooks.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Allow Locals Named Like Hooks.Expect
+last_updated: null
+source_file: allow-locals-named-like-hooks.expect.md
 ---
-
 ## Input
 
 ```javascript

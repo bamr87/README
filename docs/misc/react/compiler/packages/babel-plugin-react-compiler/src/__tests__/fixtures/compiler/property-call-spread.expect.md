@@ -1,14 +1,11 @@
 ---
+title: Property Call Spread.Expect
 category: misc
-last_updated: null
-source_file: property-call-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = foo.bar(...props.a,\
-  \ null, ...props.b);\n  return x;\n}"
 tags:
 - javascript
-title: Property Call Spread.Expect
+last_updated: null
+source_file: property-call-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

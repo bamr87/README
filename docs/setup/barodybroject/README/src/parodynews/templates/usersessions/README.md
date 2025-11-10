@@ -1,23 +1,13 @@
 ---
+title: usersessions Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Example of session list display >
-
-  {% extends "usersessions/basemanage.html" %}
-
-  {% load allauth %}
-
-  {% load i18n %}'
 tags:
 - python
 - docker
 - setup
-title: usersessions Directory
+last_updated: null
+source_file: README.md
 ---
-
 # usersessions Directory
 
 ## Purpose

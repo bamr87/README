@@ -1,14 +1,11 @@
 ---
+title: Repro Non Identifier Object Keys.Expect
 category: misc
-last_updated: null
-source_file: repro-non-identifier-object-keys.expect.md
-summary: "```javascript\nfunction Foo() {\n  return {\n    'a.b': 1,\n    'a\\b':\
-  \ 2,\n    'a/b': 3,\n    'a+b': 4,\n    'a b': 5,\n  };\n}"
 tags:
 - javascript
-title: Repro Non Identifier Object Keys.Expect
+last_updated: null
+source_file: repro-non-identifier-object-keys.expect.md
 ---
-
 ## Input
 
 ```javascript

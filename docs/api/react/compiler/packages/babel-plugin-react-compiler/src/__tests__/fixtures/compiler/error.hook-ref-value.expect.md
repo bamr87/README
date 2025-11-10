@@ -1,16 +1,12 @@
 ---
+title: Error.Hook Ref Value.Expect
 category: api
-last_updated: null
-source_file: error.hook-ref-value.expect.md
-summary: '```javascript
-
-  import {useEffect, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Hook Ref Value.Expect
+last_updated: null
+source_file: error.hook-ref-value.expect.md
 ---
-
 ## Input
 
 ```javascript

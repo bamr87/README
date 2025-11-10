@@ -1,14 +1,11 @@
 ---
+title: Hoisted Function Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisted-function-declaration.expect.md
-summary: "```javascript\nfunction component(a) {\n  let t = {a};\n  x(t); // hoisted\
-  \ call\n  function x(p) {\n    p.a.foo();\n  }\n  return t;\n}"
 tags:
 - javascript
-title: Hoisted Function Declaration.Expect
+last_updated: null
+source_file: hoisted-function-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

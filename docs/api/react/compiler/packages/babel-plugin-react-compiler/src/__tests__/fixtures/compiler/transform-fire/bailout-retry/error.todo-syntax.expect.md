@@ -1,18 +1,12 @@
 ---
+title: Error.Todo Syntax.Expect
 category: api
-last_updated: null
-source_file: error.todo-syntax.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Todo Syntax.Expect
+last_updated: null
+source_file: error.todo-syntax.expect.md
 ---
-
 ## Input
 
 ```javascript

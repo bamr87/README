@@ -1,21 +1,12 @@
 ---
-author: Amr
+title: 2024 09 19 Blizzard Of 1987 Dekalb Illinois
 category: api
-description: This is a description
-last_updated: null
-published_at: '2024-09-19'
-slug: blizzard-of-1987-dekalb-illinois
-source_file: 2024-09-19-blizzard-of-1987-dekalb-illinois.md
-summary: Ah, DeKalb, Illinois—where the corn grows tall, and the snow apparently never
-  stops. The town gained an eversoglamorous spotlight in 1987. Not for some joyous
-  occasion, but rather for being buried ali...
 tags:
 - api
 - api
-title: 2024 09 19 Blizzard Of 1987 Dekalb Illinois
+last_updated: null
+source_file: 2024-09-19-blizzard-of-1987-dekalb-illinois.md
 ---
-
-
 ## The Infamous "Snowpocalypse" of 1987: DeKalb Gets an Unwanted Ice Age 
 
 ### Introducing the Snowmageddon of Yore

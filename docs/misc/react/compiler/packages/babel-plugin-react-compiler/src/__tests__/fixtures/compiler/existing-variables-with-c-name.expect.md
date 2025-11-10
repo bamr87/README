@@ -1,20 +1,12 @@
 ---
+title: Existing Variables With C Name.Expect
 category: misc
-last_updated: null
-source_file: existing-variables-with-c-name.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Existing Variables With C Name.Expect
+last_updated: null
+source_file: existing-variables-with-c-name.expect.md
 ---
-
 ## Input
 
 ```javascript

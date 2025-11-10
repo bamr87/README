@@ -1,15 +1,11 @@
 ---
+title: Repro Backedge Reference Effect.Expect
 category: misc
-last_updated: null
-source_file: repro-backedge-reference-effect.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Backedge Reference Effect.Expect
+last_updated: null
+source_file: repro-backedge-reference-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

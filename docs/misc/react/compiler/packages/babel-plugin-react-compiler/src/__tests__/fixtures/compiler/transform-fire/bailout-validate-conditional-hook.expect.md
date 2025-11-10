@@ -1,19 +1,11 @@
 ---
+title: Bailout Validate Conditional Hook.Expect
 category: misc
-last_updated: null
-source_file: bailout-validate-conditional-hook.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire, useEffect} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Bailout Validate Conditional Hook.Expect
+last_updated: null
+source_file: bailout-validate-conditional-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

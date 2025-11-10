@@ -1,20 +1,12 @@
 ---
+title: Mutate After Useeffect Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: mutate-after-useeffect-optional-chain.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none" @loggerTestOnly @enableNewMutationAliasingModel
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Mutate After Useeffect Optional Chain.Expect
+last_updated: null
+source_file: mutate-after-useeffect-optional-chain.expect.md
 ---
-
 ## Input
 
 ```javascript

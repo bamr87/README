@@ -1,19 +1,11 @@
 ---
+title: Usecallback Reordering Deplist Controlflow.Expect
 category: misc
-last_updated: null
-source_file: useCallback-reordering-deplist-controlflow.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Reordering Deplist Controlflow.Expect
+last_updated: null
+source_file: useCallback-reordering-deplist-controlflow.expect.md
 ---
-
 ## Input
 
 ```javascript

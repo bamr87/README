@@ -1,17 +1,14 @@
 ---
+title: Parody News Generator
 category: setup
-last_updated: null
-source_file: README.md
-summary: A Djangobased web application integrated with OpenAI to generate AIpowered
-  parody news content. This project combines modern web development practices with
-  artificial intelligence to create a platform...
 tags:
 - python
 - javascript
 - docker
 - aws
 - azure
-title: Parody News Generator
+last_updated: null
+source_file: README.md
 ---
 # Parody News Generator
 

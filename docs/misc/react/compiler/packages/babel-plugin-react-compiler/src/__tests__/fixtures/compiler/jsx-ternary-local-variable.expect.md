@@ -1,15 +1,11 @@
 ---
+title: Jsx Ternary Local Variable.Expect
 category: misc
-last_updated: null
-source_file: jsx-ternary-local-variable.expect.md
-summary: '```javascript
-
-  import {RenderPropAsChild, StaticText1, StaticText2} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Ternary Local Variable.Expect
+last_updated: null
+source_file: jsx-ternary-local-variable.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,12 +1,9 @@
 ---
+title: Readme
 category: development
-last_updated: null
-source_file: README.md
-summary: We use this script to extract all messages from warning() calls. They don't
-  get substituted with anything in the source or the build. We only do this so we
-  can have a copy of these messages in our int...
 tags:
 - development
-title: Readme
+last_updated: null
+source_file: README.md
 ---
 We use this script to extract all messages from `warning()` calls. They don't get substituted with anything in the source or the build. We only do this so we can have a copy of these messages in our internal repository and can spot accidental changes to them.

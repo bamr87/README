@@ -1,15 +1,11 @@
 ---
+title: Phi Reference Effects.Expect
 category: misc
-last_updated: null
-source_file: phi-reference-effects.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Phi Reference Effects.Expect
+last_updated: null
+source_file: phi-reference-effects.expect.md
 ---
-
 ## Input
 
 ```javascript

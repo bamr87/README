@@ -1,16 +1,12 @@
 ---
+title: Error.Reassign Global Fn Arg.Expect
 category: api
-last_updated: null
-source_file: error.reassign-global-fn-arg.expect.md
-summary: '```javascript
-
-  let b = 1;'
 tags:
 - javascript
 - api
-title: Error.Reassign Global Fn Arg.Expect
+last_updated: null
+source_file: error.reassign-global-fn-arg.expect.md
 ---
-
 ## Input
 
 ```javascript

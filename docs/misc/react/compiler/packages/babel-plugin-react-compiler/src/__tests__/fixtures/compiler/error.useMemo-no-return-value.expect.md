@@ -1,15 +1,11 @@
 ---
+title: Error.Usememo No Return Value.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-no-return-value.expect.md
-summary: "```javascript\n// @validateNoVoidUseMemo\nfunction Component() {\n  const\
-  \ value = useMemo(() => {\n    console.log('computing');\n  }, []);\n  const value2\
-  \ = React.useMemo(() => {\n    console.log('computing..."
 tags:
 - javascript
-title: Error.Usememo No Return Value.Expect
+last_updated: null
+source_file: error.useMemo-no-return-value.expect.md
 ---
-
 ## Input
 
 ```javascript

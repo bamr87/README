@@ -1,15 +1,11 @@
 ---
+title: Optional Member Expression Single With Unconditional.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-single-with-unconditional.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies\n\
-  import {ValidateMemoization} from 'sharedruntime';\nfunction Component(props) {\n\
-  \  const data = useMemo(() => ..."
 tags:
 - javascript
-title: Optional Member Expression Single With Unconditional.Expect
+last_updated: null
+source_file: optional-member-expression-single-with-unconditional.expect.md
 ---
-
 ## Input
 
 ```javascript

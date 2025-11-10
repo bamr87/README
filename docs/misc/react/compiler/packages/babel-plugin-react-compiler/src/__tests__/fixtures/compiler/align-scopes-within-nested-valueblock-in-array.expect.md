@@ -1,15 +1,11 @@
 ---
+title: Align Scopes Within Nested Valueblock In Array.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-within-nested-valueblock-in-array.expect.md
-summary: '```javascript
-
-  import {Stringify, identity, makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Within Nested Valueblock In Array.Expect
+last_updated: null
+source_file: align-scopes-within-nested-valueblock-in-array.expect.md
 ---
-
 ## Input
 
 ```javascript

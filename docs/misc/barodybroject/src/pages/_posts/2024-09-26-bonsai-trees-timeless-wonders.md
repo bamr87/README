@@ -1,27 +1,11 @@
 ---
-author: Jane Doe
+title: 2024 09 26 Bonsai Trees Timeless Wonders
 category: misc
-description: Exploring the fascinating world of bonsai trees and their incredible
-  lifespans.
-last_updated: null
-published_at: '2024-09-26'
-slug: bonsai-trees-timeless-wonders
-source_file: 2024-09-26-bonsai-trees-timeless-wonders.md
-summary: 'In the silence of the ages, whispers the bonsai,
-
-  Whittled by time, nurtured by hands
-
-  That dance on its branches with patient care.
-
-  Held in the confines of clay, a testament of endurance,
-
-  A mirror to t...'
 tags:
 - testing
-title: 2024 09 26 Bonsai Trees Timeless Wonders
+last_updated: null
+source_file: 2024-09-26-bonsai-trees-timeless-wonders.md
 ---
-
-
 **Poetry Style:** Free Verse
 **Tone:** Inspirational
 **Core Themes:** Personal growth, introspection, longevity, care, and endurance

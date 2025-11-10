@@ -1,15 +1,11 @@
 ---
+title: Usememo Multiple Returns.Expect
 category: misc
-last_updated: null
-source_file: useMemo-multiple-returns.expect.md
-summary: "```javascript\n// @validateNoVoidUseMemo\nfunction Component({items}) {\n\
-  \  const value = useMemo(() => {\n    for (let item of items) {\n      if (item.match)\
-  \ return item;\n    }\n    return null;\n  }, [item..."
 tags:
 - javascript
-title: Usememo Multiple Returns.Expect
+last_updated: null
+source_file: useMemo-multiple-returns.expect.md
 ---
-
 ## Input
 
 ```javascript

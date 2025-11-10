@@ -1,15 +1,11 @@
 ---
+title: Unlabeled Break Within Label Switch.Expect
 category: misc
-last_updated: null
-source_file: unlabeled-break-within-label-switch.expect.md
-summary: '```javascript
-
-  import {CONSTSTRING0} from ''sharedruntime'';'
 tags:
 - javascript
-title: Unlabeled Break Within Label Switch.Expect
+last_updated: null
+source_file: unlabeled-break-within-label-switch.expect.md
 ---
-
 ## Input
 
 ```javascript

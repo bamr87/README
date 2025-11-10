@@ -1,15 +1,13 @@
 ---
+title: pages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Install Jekyll dependencies\nbundle install"
 tags:
 - python
 - docker
 - setup
-title: pages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # pages Directory
 
 ## Purpose

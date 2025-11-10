@@ -1,15 +1,11 @@
 ---
+title: Switch Global Propertyload Case Test.Expect
 category: misc
-last_updated: null
-source_file: switch-global-propertyload-case-test.expect.md
-summary: "```javascript\nfunction Component(props) {\n  switch (props.value) {\n \
-  \   case Global.Property: {\n      return true;\n    }\n    default: {\n      return\
-  \ false;\n    }\n  }\n}"
 tags:
 - javascript
-title: Switch Global Propertyload Case Test.Expect
+last_updated: null
+source_file: switch-global-propertyload-case-test.expect.md
 ---
-
 ## Input
 
 ```javascript

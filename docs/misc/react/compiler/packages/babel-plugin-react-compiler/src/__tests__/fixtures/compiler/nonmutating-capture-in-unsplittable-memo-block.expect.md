@@ -1,16 +1,12 @@
 ---
+title: Nonmutating Capture In Unsplittable Memo Block.Expect
 category: misc
-last_updated: null
-source_file: nonmutating-capture-in-unsplittable-memo-block.expect.md
-summary: '```javascript
-
-  import {identity, mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - docker
-title: Nonmutating Capture In Unsplittable Memo Block.Expect
+last_updated: null
+source_file: nonmutating-capture-in-unsplittable-memo-block.expect.md
 ---
-
 ## Input
 
 ```javascript

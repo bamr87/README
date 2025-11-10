@@ -1,14 +1,11 @@
 ---
+title: Ssa Non Empty Initializer.Expect
 category: misc
-last_updated: null
-source_file: ssa-non-empty-initializer.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  let x = [];\n  if (a) {\n    x =\
-  \ 1;\n  }"
 tags:
 - javascript
-title: Ssa Non Empty Initializer.Expect
+last_updated: null
+source_file: ssa-non-empty-initializer.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,21 +1,13 @@
 ---
-author: Generated Author
+title: Headline
 category: api
-description: Generated Description
-last_updated: null
-published_at: '2024-08-07'
-source_file: 2024-08-07-Generated Title.md
-summary: Across the nation, news anchors are clutching their pearls and turning blue
-  in the face over a shocking and asinine event. A spider—yes, a spider—dared to hoist
-  itself up a water spout attached to non...
 tags:
 - javascript
 - api
 - api
-title: Headline
+last_updated: null
+source_file: 2024-08-07-Generated Title.md
 ---
-
-
 # Headline
 
 **Itsy Bitsy Spider's Climactic Climb Deemed Suicidal Stunt By Mainstream Media**

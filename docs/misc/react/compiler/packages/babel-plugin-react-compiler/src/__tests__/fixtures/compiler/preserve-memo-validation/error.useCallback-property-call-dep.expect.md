@@ -1,17 +1,11 @@
 ---
+title: Error.Usecallback Property Call Dep.Expect
 category: misc
-last_updated: null
-source_file: error.useCallback-property-call-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Error.Usecallback Property Call Dep.Expect
+last_updated: null
+source_file: error.useCallback-property-call-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

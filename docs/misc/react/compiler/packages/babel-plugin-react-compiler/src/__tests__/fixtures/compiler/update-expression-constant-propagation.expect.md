@@ -1,14 +1,11 @@
 ---
+title: Update Expression Constant Propagation.Expect
 category: misc
-last_updated: null
-source_file: update-expression-constant-propagation.expect.md
-summary: "```javascript\nfunction Component() {\n  let a = 0;\n  const b = a++;\n\
-  \  const c = ++a;\n  const d = a;\n  const e = a;\n  return {a, b, c, d, e};\n}"
 tags:
 - javascript
-title: Update Expression Constant Propagation.Expect
+last_updated: null
+source_file: update-expression-constant-propagation.expect.md
 ---
-
 ## Input
 
 ```javascript

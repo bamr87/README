@@ -1,15 +1,11 @@
 ---
+title: Text Inputs
 category: architecture
-last_updated: null
-source_file: README.md
-summary: 'There are a couple of important concepts to be aware of when working on
-  text
-
-  inputs in React.'
 tags:
 - javascript
 - architecture
-title: Text Inputs
+last_updated: null
+source_file: README.md
 ---
 # Text Inputs
 

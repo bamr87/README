@@ -1,14 +1,11 @@
 ---
+title: Type Test Field Store.Expect
 category: misc
-last_updated: null
-source_file: type-test-field-store.expect.md
-summary: "```javascript\nfunction component() {\n  let x = {};\n  let q = {};\n  x.t\
-  \ = q;\n  let z = x.t;\n  return z;\n}"
 tags:
 - javascript
-title: Type Test Field Store.Expect
+last_updated: null
+source_file: type-test-field-store.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,12 @@
 ---
+title: '`dom-event-testing-library`'
 category: api
-last_updated: null
-source_file: README.md
-summary: 'A library for unit testing events via highlevel interactions, e.g., pointerdown,
-
-  that produce realistic and complete DOM event sequences.'
 tags:
 - api
 - testing
 - api
-title: '`dom-event-testing-library`'
+last_updated: null
+source_file: README.md
 ---
 # `dom-event-testing-library`
 

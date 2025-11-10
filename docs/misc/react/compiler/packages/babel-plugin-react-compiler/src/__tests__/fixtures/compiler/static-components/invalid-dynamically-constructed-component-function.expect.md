@@ -1,16 +1,12 @@
 ---
+title: Invalid Dynamically Constructed Component Function.Expect
 category: misc
-last_updated: null
-source_file: invalid-dynamically-constructed-component-function.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateStaticComponents\nfunction Example(props)\
-  \ {\n  function Component() {\n    return <div />;\n  }\n  return <Component />;\n\
-  }"
 tags:
 - javascript
 - testing
-title: Invalid Dynamically Constructed Component Function.Expect
+last_updated: null
+source_file: invalid-dynamically-constructed-component-function.expect.md
 ---
-
 ## Input
 
 ```javascript

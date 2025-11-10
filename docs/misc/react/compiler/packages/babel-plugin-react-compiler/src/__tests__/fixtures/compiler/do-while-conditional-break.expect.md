@@ -1,15 +1,11 @@
 ---
+title: Do While Conditional Break.Expect
 category: misc
-last_updated: null
-source_file: do-while-conditional-break.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [0, 1, 2, 3];\n  do\
-  \ {\n    if (x === 0) {\n      break;\n    }\n    mutate(x);\n  } while (props.cond);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Do While Conditional Break.Expect
+last_updated: null
+source_file: do-while-conditional-break.expect.md
 ---
-
 ## Input
 
 ```javascript

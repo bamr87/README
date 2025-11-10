@@ -1,14 +1,11 @@
 ---
+title: Reassign Primitive In Context.Expect
 category: misc
-last_updated: null
-source_file: reassign-primitive-in-context.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 5;\n  let foo = ()\
-  \ => {\n    x = {};\n  };\n  foo();\n  return x;\n}"
 tags:
 - javascript
-title: Reassign Primitive In Context.Expect
+last_updated: null
+source_file: reassign-primitive-in-context.expect.md
 ---
-
 ## Input
 
 ```javascript

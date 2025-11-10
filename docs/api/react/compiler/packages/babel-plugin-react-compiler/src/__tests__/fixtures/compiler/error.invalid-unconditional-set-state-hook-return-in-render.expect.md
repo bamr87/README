@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Unconditional Set State Hook Return In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-unconditional-set-state-hook-return-in-render.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender @enableTreatSetIdentifiersAsStateSetters\n\
-  function Component() {\n  const [state, setState] = useCustomState(0);\n  const\
-  \ aliased = setState;"
 tags:
 - javascript
 - api
-title: Error.Invalid Unconditional Set State Hook Return In Render.Expect
+last_updated: null
+source_file: error.invalid-unconditional-set-state-hook-return-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

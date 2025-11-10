@@ -1,17 +1,14 @@
 ---
+title: Infrastructure Test Report - October 31, 2024
 category: setup
-last_updated: null
-source_file: infrastructure-test-report-20251031.md
-summary: This report documents the comprehensive infrastructure testing performed
-  on the Barodybroject Django/OpenAI installation wizard. The testing successfully
-  validated the initialization scripts and ident...
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: Infrastructure Test Report - October 31, 2024
+last_updated: null
+source_file: infrastructure-test-report-20251031.md
 ---
 # Infrastructure Test Report - October 31, 2024
 

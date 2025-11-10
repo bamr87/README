@@ -1,13 +1,11 @@
 ---
+title: Overlapping Scopes Interleaved By Terminal.Expect
 category: misc
-last_updated: null
-source_file: overlapping-scopes-interleaved-by-terminal.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const x = [];\n  const y = [];"
 tags:
 - javascript
-title: Overlapping Scopes Interleaved By Terminal.Expect
+last_updated: null
+source_file: overlapping-scopes-interleaved-by-terminal.expect.md
 ---
-
 ## Input
 
 ```javascript

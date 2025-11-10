@@ -1,13 +1,11 @@
 ---
+title: Simple Scope.Expect
 category: misc
-last_updated: null
-source_file: simple-scope.expect.md
-summary: "```javascript\nfunction foo(a) {\n  const x = [a.b];\n  return x;\n}"
 tags:
 - javascript
-title: Simple Scope.Expect
+last_updated: null
+source_file: simple-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

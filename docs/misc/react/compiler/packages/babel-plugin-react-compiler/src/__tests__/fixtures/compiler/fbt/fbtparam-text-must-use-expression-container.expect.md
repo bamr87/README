@@ -1,15 +1,11 @@
 ---
+title: Fbtparam Text Must Use Expression Container.Expect
 category: misc
-last_updated: null
-source_file: fbtparam-text-must-use-expression-container.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbtparam Text Must Use Expression Container.Expect
+last_updated: null
+source_file: fbtparam-text-must-use-expression-container.expect.md
 ---
-
 ## Input
 
 ```javascript

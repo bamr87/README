@@ -1,15 +1,11 @@
 ---
+title: Hoisting Computed Member Expression.Expect
 category: misc
-last_updated: null
-source_file: hoisting-computed-member-expression.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Computed Member Expression.Expect
+last_updated: null
+source_file: hoisting-computed-member-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

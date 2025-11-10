@@ -1,15 +1,11 @@
 ---
+title: Name Anonymous Functions.Expect
 category: misc
-last_updated: null
-source_file: name-anonymous-functions.expect.md
-summary: '```javascript
-
-  // @enableNameAnonymousFunctions'
 tags:
 - javascript
-title: Name Anonymous Functions.Expect
+last_updated: null
+source_file: name-anonymous-functions.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Usecallback In Other Reactive Block.Expect
 category: misc
-last_updated: null
-source_file: useCallback-in-other-reactive-block.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useState} from ''react'';
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback In Other Reactive Block.Expect
+last_updated: null
+source_file: useCallback-in-other-reactive-block.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Type Provider Store Capture Namespace Import.Expect
 category: misc
-last_updated: null
-source_file: type-provider-store-capture-namespace-import.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import  as SharedRuntime from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Provider Store Capture Namespace Import.Expect
+last_updated: null
+source_file: type-provider-store-capture-namespace-import.expect.md
 ---
-
 ## Input
 
 ```javascript

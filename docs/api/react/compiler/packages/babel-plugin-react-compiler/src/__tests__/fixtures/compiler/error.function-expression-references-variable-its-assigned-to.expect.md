@@ -1,15 +1,12 @@
 ---
+title: Error.Function Expression References Variable Its Assigned To.Expect
 category: api
-last_updated: null
-source_file: error.function-expression-references-variable-its-assigned-to.expect.md
-summary: "```javascript\nfunction Component() {\n  let callback = () => {\n    callback\
-  \ = null;\n  };\n  return <div onClick={callback} />;\n}"
 tags:
 - javascript
 - api
-title: Error.Function Expression References Variable Its Assigned To.Expect
+last_updated: null
+source_file: error.function-expression-references-variable-its-assigned-to.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Capturing Func No Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-no-mutate.expect.md
-summary: "```javascript\nfunction Component({a, b}) {\n  let z = {a};\n  let y = {b};\n\
-  \  let x = function () {\n    z.a = 2;\n    return Math.max(y.b, 0);\n  };\n  x();\n\
-  \  return z;\n}"
 tags:
 - javascript
-title: Capturing Func No Mutate.Expect
+last_updated: null
+source_file: capturing-func-no-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

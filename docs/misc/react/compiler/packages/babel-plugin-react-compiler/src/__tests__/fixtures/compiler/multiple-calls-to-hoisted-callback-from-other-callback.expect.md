@@ -1,15 +1,11 @@
 ---
+title: Multiple Calls To Hoisted Callback From Other Callback.Expect
 category: misc
-last_updated: null
-source_file: multiple-calls-to-hoisted-callback-from-other-callback.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Multiple Calls To Hoisted Callback From Other Callback.Expect
+last_updated: null
+source_file: multiple-calls-to-hoisted-callback-from-other-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

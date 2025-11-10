@@ -1,17 +1,11 @@
 ---
+title: Usememo Reordering Depslist Assignment.Expect
 category: misc
-last_updated: null
-source_file: useMemo-reordering-depslist-assignment.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo Reordering Depslist Assignment.Expect
+last_updated: null
+source_file: useMemo-reordering-depslist-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

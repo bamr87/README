@@ -1,14 +1,11 @@
 ---
+title: Memoize Value Block Value Logical.Expect
 category: misc
-last_updated: null
-source_file: memoize-value-block-value-logical.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  let x;\n  true && ((x = []), null);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Memoize Value Block Value Logical.Expect
+last_updated: null
+source_file: memoize-value-block-value-logical.expect.md
 ---
-
 ## Input
 
 ```javascript

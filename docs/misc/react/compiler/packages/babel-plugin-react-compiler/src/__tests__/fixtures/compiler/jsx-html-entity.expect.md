@@ -1,14 +1,11 @@
 ---
+title: Jsx Html Entity.Expect
 category: misc
-last_updated: null
-source_file: jsx-html-entity.expect.md
-summary: "```javascript\nfunction Component() {\n  return <div>&gt;&lt;span &amp;</div>;\n\
-  }"
 tags:
 - javascript
-title: Jsx Html Entity.Expect
+last_updated: null
+source_file: jsx-html-entity.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,29 +1,14 @@
 ---
+title: Barodybroject Security Documentation
 category: setup
-last_updated: null
-source_file: SECURITY_DOCUMENTATION.md
-summary: '1. Security Architecture Overview
-
-  2. Authentication and Authorization
-
-  3. Data Protection and Encryption
-
-  4. API Security
-
-  5. Infrastructure Security
-
-  6. Application Security
-
-  7. Database Security
-
-  8. Conta...'
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Barodybroject Security Documentation
+last_updated: null
+source_file: SECURITY_DOCUMENTATION.md
 ---
 # Barodybroject Security Documentation
 

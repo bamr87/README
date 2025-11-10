@@ -1,14 +1,11 @@
 ---
+title: Destructuring Object Pattern Within Rest.Expect
 category: misc
-last_updated: null
-source_file: destructuring-object-pattern-within-rest.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [y, ...{z}] = props.value;\n\
-  \  return [y, z];\n}"
 tags:
 - javascript
-title: Destructuring Object Pattern Within Rest.Expect
+last_updated: null
+source_file: destructuring-object-pattern-within-rest.expect.md
 ---
-
 ## Input
 
 ```javascript

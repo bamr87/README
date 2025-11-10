@@ -1,19 +1,11 @@
 ---
+title: Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
 category: misc
-last_updated: null
-source_file: dont-memoize-primitive-function-call-non-escaping-useMemo.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, Valid...'
 tags:
 - javascript
-title: Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
+last_updated: null
+source_file: dont-memoize-primitive-function-call-non-escaping-useMemo.expect.md
 ---
-
 ## Input
 
 ```javascript

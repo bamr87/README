@@ -1,15 +1,11 @@
 ---
+title: Shapes Object Key.Expect
 category: misc
-last_updated: null
-source_file: shapes-object-key.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Shapes Object Key.Expect
+last_updated: null
+source_file: shapes-object-key.expect.md
 ---
-
 ## Input
 
 ```javascript

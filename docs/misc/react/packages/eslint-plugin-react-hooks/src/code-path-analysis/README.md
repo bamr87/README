@@ -1,13 +1,10 @@
 ---
+title: Code Path Analyzer
 category: misc
-last_updated: null
-source_file: README.md
-summary: 'This code is a forked version of ESLints Code Path Analyzer which includes
-
-  support for Component Syntax.'
 tags:
 - documentation
-title: Code Path Analyzer
+last_updated: null
+source_file: README.md
 ---
 # Code Path Analyzer
 

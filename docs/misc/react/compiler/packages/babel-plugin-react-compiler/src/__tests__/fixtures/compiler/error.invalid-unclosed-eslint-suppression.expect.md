@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Unclosed Eslint Suppression.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-unclosed-eslint-suppression.expect.md
-summary: "```javascript\n// Note: Everything below this is sketchy\n/ eslintdisable\
-  \ reacthooks/rulesofhooks /\nfunction lowercasecomponent() {\n  'use forget';\n\
-  \  const x = [];\n  return <div>{x}</div>;\n}"
 tags:
 - javascript
-title: Error.Invalid Unclosed Eslint Suppression.Expect
+last_updated: null
+source_file: error.invalid-unclosed-eslint-suppression.expect.md
 ---
-
 ## Input
 
 ```javascript

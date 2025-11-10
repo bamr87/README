@@ -1,18 +1,12 @@
 ---
+title: Error.Nomemo And Change Detect.Expect
 category: setup
-last_updated: null
-source_file: error.nomemo-and-change-detect.expect.md
-summary: '```javascript
-
-  // @disableMemoizationForDebugging @enableChangeDetectionForDebugging
-
-  function Component(props) {}'
 tags:
 - javascript
 - setup
-title: Error.Nomemo And Change Detect.Expect
+last_updated: null
+source_file: error.nomemo-and-change-detect.expect.md
 ---
-
 ## Input
 
 ```javascript

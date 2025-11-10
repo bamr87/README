@@ -1,17 +1,11 @@
 ---
+title: Repro Unmerged Fbt Call Merge Overlapping Reactive Scopes.Expect
 category: misc
-last_updated: null
-source_file: repro-unmerged-fbt-call-merge-overlapping-reactive-scopes.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Unmerged Fbt Call Merge Overlapping Reactive Scopes.Expect
+last_updated: null
+source_file: repro-unmerged-fbt-call-merge-overlapping-reactive-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

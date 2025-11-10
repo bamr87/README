@@ -1,17 +1,15 @@
 ---
+title: schema Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In Django models/forms for validation\nimport json\nimport jsonschema"
 tags:
 - python
 - docker
 - api
 - database
 - setup
-title: schema Directory
+last_updated: null
+source_file: README.md
 ---
-
 # schema Directory
 
 ## Purpose

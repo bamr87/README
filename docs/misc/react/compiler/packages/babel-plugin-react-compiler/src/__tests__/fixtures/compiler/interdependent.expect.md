@@ -1,15 +1,11 @@
 ---
+title: Interdependent.Expect
 category: misc
-last_updated: null
-source_file: interdependent.expect.md
-summary: "```javascript\n/\n  Should produce 1 scope:\n \n  return: inputs=props.a\
-  \ & props.b; outputs=return\n    const a = compute(props.a);\n    const b = compute(props.b);\n\
-  \    foo(a, b);\n    return = <Foo a={a} b=..."
 tags:
 - javascript
-title: Interdependent.Expect
+last_updated: null
+source_file: interdependent.expect.md
 ---
-
 ## Input
 
 ```javascript

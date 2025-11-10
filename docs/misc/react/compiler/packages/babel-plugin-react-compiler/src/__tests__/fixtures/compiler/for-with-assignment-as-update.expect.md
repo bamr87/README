@@ -1,14 +1,11 @@
 ---
+title: For With Assignment As Update.Expect
 category: misc
-last_updated: null
-source_file: for-with-assignment-as-update.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = props.init;\n  for\
-  \ (let i = 0; i < 100; i = i + 1) {\n    x += i;\n  }\n  return [x];\n}"
 tags:
 - javascript
-title: For With Assignment As Update.Expect
+last_updated: null
+source_file: for-with-assignment-as-update.expect.md
 ---
-
 ## Input
 
 ```javascript

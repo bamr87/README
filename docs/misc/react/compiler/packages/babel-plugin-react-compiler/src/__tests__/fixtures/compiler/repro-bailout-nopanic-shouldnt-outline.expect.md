@@ -1,17 +1,11 @@
 ---
+title: Repro Bailout Nopanic Shouldnt Outline.Expect
 category: misc
-last_updated: null
-source_file: repro-bailout-nopanic-shouldnt-outline.expect.md
-summary: '```javascript
-
-  // @panicThreshold(none)
-
-  ''use no memo'';'
 tags:
 - javascript
-title: Repro Bailout Nopanic Shouldnt Outline.Expect
+last_updated: null
+source_file: repro-bailout-nopanic-shouldnt-outline.expect.md
 ---
-
 ## Input
 
 ```javascript

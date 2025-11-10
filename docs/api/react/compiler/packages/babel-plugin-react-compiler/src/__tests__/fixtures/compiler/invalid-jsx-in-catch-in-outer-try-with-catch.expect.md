@@ -1,19 +1,13 @@
 ---
+title: Invalid Jsx In Catch In Outer Try With Catch.Expect
 category: api
-last_updated: null
-source_file: invalid-jsx-in-catch-in-outer-try-with-catch.expect.md
-summary: '```javascript
-
-  // @loggerTestOnly @validateNoJSXInTryStatements
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
 - api
-title: Invalid Jsx In Catch In Outer Try With Catch.Expect
+last_updated: null
+source_file: invalid-jsx-in-catch-in-outer-try-with-catch.expect.md
 ---
-
 ## Input
 
 ```javascript

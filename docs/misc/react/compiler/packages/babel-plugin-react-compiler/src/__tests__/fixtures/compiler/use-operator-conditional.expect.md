@@ -1,17 +1,11 @@
 ---
+title: Use Operator Conditional.Expect
 category: misc
-last_updated: null
-source_file: use-operator-conditional.expect.md
-summary: '```javascript
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import {use, useMemo} from ''react'';'
 tags:
 - javascript
-title: Use Operator Conditional.Expect
+last_updated: null
+source_file: use-operator-conditional.expect.md
 ---
-
 ## Input
 
 ```javascript

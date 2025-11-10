@@ -1,66 +1,15 @@
 ---
-applyTo: '**/*.md,**/*.rst'
-author: Barodybroject Team
+title: Documentation Standards
 category: setup
-changelog:
-- author: Barodybroject Team
-  date: '2025-10-28'
-  description: Enhanced with VS Code Copilot optimization and Django/OpenAI specific
-    documentation patterns
-- author: Barodybroject Team
-  date: '2025-10-11'
-  description: Initial creation with core documentation standards
-containerRequirements:
-  baseImage: jekyll/jekyll:latest
-  description: Documentation development environment with Jekyll and Markdown processing
-  environment:
-    JEKYLL_ENV: development
-  exposedPorts:
-  - 4000
-  portDescription: Jekyll development server for documentation preview
-  volumes:
-  - /docs:rw
-  - /src:ro
-created: 2025-10-11
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-- frontmatter.standards.md: Unified frontmatter structure and metadata standards
-- space.instructions.md: Project organization and workspace standards
-description: VS Code Copilot-optimized documentation standards and Markdown formatting
-  guidelines for Django/OpenAI projects
-file: documentation.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-notes: Emphasizes Django best practices, OpenAI integration documentation, and container-first
-  development documentation
-paths:
-  documentation_workflow_path:
-  - planning_and_research
-  - content_creation
-  - technical_validation
-  - review_and_editing
-  - publication_and_maintenance
-relatedEvolutions:
-- Enhanced Django-specific documentation patterns
-- OpenAI integration documentation standards
-- VS Code Copilot optimization for technical writing
-source_file: documentation.instructions.md
-summary: "Good documentation should be:\n Clear and Concise: Easy to understand for\
-  \ the target audience\n Accurate: Reflects current implementation\n Maintainable:\
-  \ Updated alongside code changes\n Accessible: Works..."
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Documentation Standards
-usage: Reference for all documentation creation, README maintenance, and technical
-  writing in Django/OpenAI projects
-version: 1.1.0
+last_updated: null
+source_file: documentation.instructions.md
 ---
-
-
 # Documentation Standards
 
 ## Documentation Philosophy

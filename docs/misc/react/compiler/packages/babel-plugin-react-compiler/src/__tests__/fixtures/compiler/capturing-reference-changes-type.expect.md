@@ -1,15 +1,11 @@
 ---
+title: Capturing Reference Changes Type.Expect
 category: misc
-last_updated: null
-source_file: capturing-reference-changes-type.expect.md
-summary: "```javascript\nimport {mutate} from 'sharedruntime';\nfunction Component({a})\
-  \ {\n  let x = {a};\n  let y = 1;\n  (function () {\n    y = x;\n  })();\n  mutate(y);\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Capturing Reference Changes Type.Expect
+last_updated: null
+source_file: capturing-reference-changes-type.expect.md
 ---
-
 ## Input
 
 ```javascript

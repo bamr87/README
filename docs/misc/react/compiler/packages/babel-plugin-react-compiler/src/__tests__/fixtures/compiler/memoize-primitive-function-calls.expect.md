@@ -1,19 +1,11 @@
 ---
+title: Memoize Primitive Function Calls.Expect
 category: misc
-last_updated: null
-source_file: memoize-primitive-function-calls.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, Valid...'
 tags:
 - javascript
-title: Memoize Primitive Function Calls.Expect
+last_updated: null
+source_file: memoize-primitive-function-calls.expect.md
 ---
-
 ## Input
 
 ```javascript

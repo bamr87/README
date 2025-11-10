@@ -1,15 +1,11 @@
 ---
+title: Constant Propagation Unary Number.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-unary-number.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Propagation Unary Number.Expect
+last_updated: null
+source_file: constant-propagation-unary-number.expect.md
 ---
-
 ## Input
 
 ```javascript

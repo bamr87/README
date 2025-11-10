@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Pass Mutable Function As Prop.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-pass-mutable-function-as-prop.expect.md
-summary: "```javascript\n// @validateNoFreezingKnownMutableFunctions\nfunction Component()\
-  \ {\n  const cache = new Map();\n  const fn = () => {\n    cache.set('key', 'value');\n\
-  \  };\n  return <Foo fn={fn} />;\n}"
 tags:
 - javascript
-title: Error.Invalid Pass Mutable Function As Prop.Expect
+last_updated: null
+source_file: error.invalid-pass-mutable-function-as-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

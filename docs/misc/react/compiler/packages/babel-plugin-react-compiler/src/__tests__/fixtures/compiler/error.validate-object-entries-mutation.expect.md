@@ -1,17 +1,11 @@
 ---
+title: Error.Validate Object Entries Mutation.Expect
 category: misc
-last_updated: null
-source_file: error.validate-object-entries-mutation.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Validate Object Entries Mutation.Expect
+last_updated: null
+source_file: error.validate-object-entries-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

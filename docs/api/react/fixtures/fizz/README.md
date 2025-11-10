@@ -1,14 +1,12 @@
 ---
+title: Fizz Fixtures
 category: api
-last_updated: null
-source_file: README.md
-summary: A set of basic tests for Fizz primarily focused on baseline performance of
-  legacy renderToString and streaming implementations.
 tags:
 - javascript
 - testing
 - api
-title: Fizz Fixtures
+last_updated: null
+source_file: README.md
 ---
 # Fizz Fixtures
 

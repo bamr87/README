@@ -1,19 +1,11 @@
 ---
+title: Fbt Repro Invalid Mutable Range Destructured Prop.Expect
 category: misc
-last_updated: null
-source_file: fbt-repro-invalid-mutable-range-destructured-prop.expect.md
-summary: '```javascript
-
-  import {fbt} from ''fbt'';
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fbt Repro Invalid Mutable Range Destructured Prop.Expect
+last_updated: null
+source_file: fbt-repro-invalid-mutable-range-destructured-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

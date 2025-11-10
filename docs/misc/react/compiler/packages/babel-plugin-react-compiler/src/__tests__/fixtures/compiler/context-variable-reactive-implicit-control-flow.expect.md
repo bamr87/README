@@ -1,15 +1,11 @@
 ---
+title: Context Variable Reactive Implicit Control Flow.Expect
 category: misc
-last_updated: null
-source_file: context-variable-reactive-implicit-control-flow.expect.md
-summary: '```javascript
-
-  import {conditionalInvoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Context Variable Reactive Implicit Control Flow.Expect
+last_updated: null
+source_file: context-variable-reactive-implicit-control-flow.expect.md
 ---
-
 ## Input
 
 ```javascript

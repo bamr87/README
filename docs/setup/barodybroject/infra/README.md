@@ -1,15 +1,14 @@
 ---
+title: infra/ Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Deploy using Azure Developer CLI (recommended)\nazd up"
 tags:
 - python
 - docker
 - azure
 - database
 - setup
-title: infra/ Directory
+last_updated: null
+source_file: README.md
 ---
 # infra/ Directory
 

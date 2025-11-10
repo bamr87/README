@@ -1,15 +1,11 @@
 ---
+title: Allow Mutate Global In Effect Fixpoint.Expect
 category: misc
-last_updated: null
-source_file: allow-mutate-global-in-effect-fixpoint.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Mutate Global In Effect Fixpoint.Expect
+last_updated: null
+source_file: allow-mutate-global-in-effect-fixpoint.expect.md
 ---
-
 ## Input
 
 ```javascript

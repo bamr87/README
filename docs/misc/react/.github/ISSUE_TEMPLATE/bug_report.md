@@ -1,20 +1,12 @@
 ---
-about: Report a reproducible bug or regression.
+title: Bug Report
 category: misc
-labels: 'Status: Unconfirmed'
-last_updated: null
-name: 🐛 Bug Report
-source_file: bug_report.md
-summary: "<!\n  Please provide a clear and concise description of what the bug is.\
-  \ Include\n  screenshots if needed. Please test using the latest version of the\
-  \ relevant\n  React packages to make sure your issue h..."
 tags:
 - javascript
 - testing
-title: Bug Report
+last_updated: null
+source_file: bug_report.md
 ---
-
-
 <!--
   Please provide a clear and concise description of what the bug is. Include
   screenshots if needed. Please test using the latest version of the relevant

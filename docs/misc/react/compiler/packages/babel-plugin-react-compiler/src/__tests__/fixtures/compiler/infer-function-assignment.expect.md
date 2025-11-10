@@ -1,14 +1,11 @@
 ---
+title: Infer Function Assignment.Expect
 category: misc
-last_updated: null
-source_file: infer-function-assignment.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nconst Component = props =>\
-  \ {\n  return <div />;\n};"
 tags:
 - javascript
-title: Infer Function Assignment.Expect
+last_updated: null
+source_file: infer-function-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Try Catch Try Value Modified In Catch Escaping.Expect
 category: misc
-last_updated: null
-source_file: try-catch-try-value-modified-in-catch-escaping.expect.md
-summary: '```javascript
-
-  const {throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Try Value Modified In Catch Escaping.Expect
+last_updated: null
+source_file: try-catch-try-value-modified-in-catch-escaping.expect.md
 ---
-
 ## Input
 
 ```javascript

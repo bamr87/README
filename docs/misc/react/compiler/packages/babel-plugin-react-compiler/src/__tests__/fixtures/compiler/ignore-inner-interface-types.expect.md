@@ -1,14 +1,11 @@
 ---
+title: Ignore Inner Interface Types.Expect
 category: misc
-last_updated: null
-source_file: ignore-inner-interface-types.expect.md
-summary: "```javascript\nfunction Foo() {\n  type X = number;\n  interface Bar {\n\
-  \    baz: number;\n  }\n  return 0;\n}"
 tags:
 - javascript
-title: Ignore Inner Interface Types.Expect
+last_updated: null
+source_file: ignore-inner-interface-types.expect.md
 ---
-
 ## Input
 
 ```javascript

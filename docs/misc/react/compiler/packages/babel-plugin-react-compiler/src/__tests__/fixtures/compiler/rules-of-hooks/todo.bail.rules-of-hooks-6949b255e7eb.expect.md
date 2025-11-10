@@ -1,17 +1,11 @@
 ---
+title: Todo.Bail.Rules Of Hooks 6949B255E7Eb.Expect
 category: misc
-last_updated: null
-source_file: todo.bail.rules-of-hooks-6949b255e7eb.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Todo.Bail.Rules Of Hooks 6949B255E7Eb.Expect
+last_updated: null
+source_file: todo.bail.rules-of-hooks-6949b255e7eb.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,21 +1,13 @@
 ---
+title: Docker Simplification Summary
 category: setup
-last_updated: null
-source_file: DOCKER_SIMPLIFICATION_SUMMARY.md
-summary: '| Aspect | Before | After |
-
-  ||||
-
-  | Docker Files | 3 files (Dockerfile, entrypoint.sh, dockercompose.yml) | 1 file
-  (dockercompose.yml) |
-
-  | Build Process | Custom image build required | Standard image, ...'
 tags:
 - python
 - docker
 - database
 - setup
-title: Docker Simplification Summary
+last_updated: null
+source_file: DOCKER_SIMPLIFICATION_SUMMARY.md
 ---
 # Docker Simplification Summary
 

@@ -1,17 +1,14 @@
 ---
+title: GitHub Actions Workflow Fixes and Improvements
 category: setup
-last_updated: null
-source_file: WORKFLOW_FIXES.md
-summary: This document details all fixes and improvements made to GitHub Actions workflows
-  in this repository. All workflows have been reviewed, validated, and updated to
-  follow best practices.
 tags:
 - python
 - docker
 - azure
 - database
 - testing
-title: GitHub Actions Workflow Fixes and Improvements
+last_updated: null
+source_file: WORKFLOW_FIXES.md
 ---
 # GitHub Actions Workflow Fixes and Improvements
 

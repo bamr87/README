@@ -1,15 +1,11 @@
 ---
+title: Same Variable As Dep And Redeclare.Expect
 category: misc
-last_updated: null
-source_file: same-variable-as-dep-and-redeclare.expect.md
-summary: "```javascript\n// note: comments are for the ideal scopes, not what is currently\n\
-  // emitted\nfunction foo(props) {\n  // scope 0: deps=[props.a] decl=[x] reassign=none\n\
-  \  let x = [];\n  x.push(props.a);"
 tags:
 - javascript
-title: Same Variable As Dep And Redeclare.Expect
+last_updated: null
+source_file: same-variable-as-dep-and-redeclare.expect.md
 ---
-
 ## Input
 
 ```javascript

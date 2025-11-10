@@ -1,17 +1,11 @@
 ---
+title: Error.Preserve Use Memo Ref Missing Reactive.Expect
 category: misc
-last_updated: null
-source_file: error.preserve-use-memo-ref-missing-reactive.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Error.Preserve Use Memo Ref Missing Reactive.Expect
+last_updated: null
+source_file: error.preserve-use-memo-ref-missing-reactive.expect.md
 ---
-
 ## Input
 
 ```javascript

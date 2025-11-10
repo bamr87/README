@@ -1,19 +1,13 @@
 ---
+title: Bug Capturing Func Maybealias Captured Mutate.Expect
 category: api
-last_updated: null
-source_file: bug-capturing-func-maybealias-captured-mutate.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel:false
-
-  import {makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
 - api
-title: Bug Capturing Func Maybealias Captured Mutate.Expect
+last_updated: null
+source_file: bug-capturing-func-maybealias-captured-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

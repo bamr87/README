@@ -1,13 +1,12 @@
 ---
+title: The Chrome extension
 category: development
-last_updated: null
-source_file: README.md
-summary: The source code for this extension has moved to shells/webextension.
 tags:
 - javascript
 - testing
 - development
-title: The Chrome extension
+last_updated: null
+source_file: README.md
 ---
 # The Chrome extension
 

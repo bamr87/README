@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Pass Ref To Function.Expect
 category: api
-last_updated: null
-source_file: error.invalid-pass-ref-to-function.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  const x = foo(ref);\n  return x.current;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Pass Ref To Function.Expect
+last_updated: null
+source_file: error.invalid-pass-ref-to-function.expect.md
 ---
-
 ## Input
 
 ```javascript

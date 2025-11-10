@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Mix Fire And No Fire.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mix-fire-and-no-fire.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Mix Fire And No Fire.Expect
+last_updated: null
+source_file: error.invalid-mix-fire-and-no-fire.expect.md
 ---
-
 ## Input
 
 ```javascript

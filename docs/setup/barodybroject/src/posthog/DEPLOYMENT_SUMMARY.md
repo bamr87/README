@@ -1,16 +1,14 @@
 ---
+title: Deployment Summary
 category: setup
-last_updated: null
-source_file: DEPLOYMENT_SUMMARY.md
-summary: All hardcoded configuration values have been extracted from the Docker and
-  ClickHouse configuration files into environment variables.
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Deployment Summary
+last_updated: null
+source_file: DEPLOYMENT_SUMMARY.md
 ---
 # Deployment Summary
 

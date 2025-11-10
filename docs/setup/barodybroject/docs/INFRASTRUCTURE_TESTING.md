@@ -1,17 +1,14 @@
 ---
+title: Infrastructure Testing Documentation
 category: setup
-last_updated: null
-source_file: INFRASTRUCTURE_TESTING.md
-summary: This document describes the comprehensive infrastructure testing system for
-  the Barodybroject Django/OpenAI installation wizard. The testing system validates
-  all critical components of the application...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Infrastructure Testing Documentation
+last_updated: null
+source_file: INFRASTRUCTURE_TESTING.md
 ---
 # Infrastructure Testing Documentation
 

@@ -1,17 +1,11 @@
 ---
+title: Infer Objectmethod Cond Access.Expect
 category: misc
-last_updated: null
-source_file: infer-objectmethod-cond-access.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Objectmethod Cond Access.Expect
+last_updated: null
+source_file: infer-objectmethod-cond-access.expect.md
 ---
-
 ## Input
 
 ```javascript

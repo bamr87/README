@@ -1,17 +1,11 @@
 ---
+title: Basic.Expect
 category: misc
-last_updated: null
-source_file: basic.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Basic.Expect
+last_updated: null
+source_file: basic.expect.md
 ---
-
 ## Input
 
 ```javascript

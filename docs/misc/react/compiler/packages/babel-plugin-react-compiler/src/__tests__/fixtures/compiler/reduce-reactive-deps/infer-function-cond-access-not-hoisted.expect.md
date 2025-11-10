@@ -1,15 +1,11 @@
 ---
+title: Infer Function Cond Access Not Hoisted.Expect
 category: misc
-last_updated: null
-source_file: infer-function-cond-access-not-hoisted.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Function Cond Access Not Hoisted.Expect
+last_updated: null
+source_file: infer-function-cond-access-not-hoisted.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Hoisting Functionexpr Conditional Dep.Expect
 category: misc
-last_updated: null
-source_file: hoisting-functionexpr-conditional-dep.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Functionexpr Conditional Dep.Expect
+last_updated: null
+source_file: hoisting-functionexpr-conditional-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Function Expression Captures Value Later Frozen Jsx.Expect
 category: api
-last_updated: null
-source_file: function-expression-captures-value-later-frozen-jsx.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x = {};\n  // onChange\
-  \ should be inferred as immutable, because the value\n  // it captures (x`) is frozen\
-  \ by the time the function is referenced\n  const o..."
 tags:
 - javascript
 - api
-title: Function Expression Captures Value Later Frozen Jsx.Expect
+last_updated: null
+source_file: function-expression-captures-value-later-frozen-jsx.expect.md
 ---
-
 ## Input
 
 ```javascript

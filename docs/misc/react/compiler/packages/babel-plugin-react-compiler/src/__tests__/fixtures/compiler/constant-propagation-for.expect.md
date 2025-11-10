@@ -1,14 +1,11 @@
 ---
+title: Constant Propagation For.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-for.expect.md
-summary: "```javascript\nfunction foo() {\n  let y = 0;\n  for (const x = 100; x <\
-  \ 10; x) {\n    y = y + 1;\n  }\n  return y;\n}"
 tags:
 - javascript
-title: Constant Propagation For.Expect
+last_updated: null
+source_file: constant-propagation-for.expect.md
 ---
-
 ## Input
 
 ```javascript

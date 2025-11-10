@@ -1,15 +1,11 @@
 ---
+title: Prune Scopes Whose Deps Invalidate New.Expect
 category: misc
-last_updated: null
-source_file: prune-scopes-whose-deps-invalidate-new.expect.md
-summary: '```javascript
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Prune Scopes Whose Deps Invalidate New.Expect
+last_updated: null
+source_file: prune-scopes-whose-deps-invalidate-new.expect.md
 ---
-
 ## Input
 
 ```javascript

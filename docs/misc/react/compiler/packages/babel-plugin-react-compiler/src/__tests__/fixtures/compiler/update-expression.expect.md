@@ -1,14 +1,11 @@
 ---
+title: Update Expression.Expect
 category: misc
-last_updated: null
-source_file: update-expression.expect.md
-summary: "```javascript\nfunction foo(props: {x: number}) {\n  let x = props.x;\n\
-  \  let y = x++;\n  let z = x;\n  return {x, y, z};\n}"
 tags:
 - javascript
-title: Update Expression.Expect
+last_updated: null
+source_file: update-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

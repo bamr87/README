@@ -1,21 +1,11 @@
 ---
+title: Optional Member Expression Single.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-single.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import {useMemo} from ''react'';
-
-  function Component({arg}) ...'
 tags:
 - javascript
-title: Optional Member Expression Single.Expect
+last_updated: null
+source_file: optional-member-expression-single.expect.md
 ---
-
 ## Input
 
 ```javascript

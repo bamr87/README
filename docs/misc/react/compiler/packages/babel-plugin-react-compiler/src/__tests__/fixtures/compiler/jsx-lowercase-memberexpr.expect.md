@@ -1,15 +1,11 @@
 ---
+title: Jsx Lowercase Memberexpr.Expect
 category: misc
-last_updated: null
-source_file: jsx-lowercase-memberexpr.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nfunction\
-  \ Component({name}) {\n  return <SharedRuntime.Stringify>hello world {name}</SharedRuntime.Stringify>;\n\
-  }"
 tags:
 - javascript
-title: Jsx Lowercase Memberexpr.Expect
+last_updated: null
+source_file: jsx-lowercase-memberexpr.expect.md
 ---
-
 ## Input
 
 ```javascript

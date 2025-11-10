@@ -1,22 +1,12 @@
 ---
-author: The Satirical Scholar
+title: 2025 04 06 Erp Transformation Satirical Guide
 category: api
-description: A whimsical guide to ERP transformation strategy with a humorous twist,
-  ensuring effective stakeholder engagement and project success.
-last_updated: null
-published_at: '2025-04-06'
-slug: erp-transformation-satirical-guide
-source_file: 2025-04-06-erp-transformation-satirical-guide.md
-summary: Welcome to the wondrous and somewhat bewildering world of ERP Transformation
-  Strategy—a journey filled with potential efficiencies and profound complexities.
-  Your 3month action plan is a blueprint not...
 tags:
 - api
 - api
-title: 2025 04 06 Erp Transformation Satirical Guide
+last_updated: null
+source_file: 2025-04-06-erp-transformation-satirical-guide.md
 ---
-
-
 Welcome to the wondrous and somewhat bewildering world of ERP Transformation Strategy—a journey filled with potential efficiencies and profound complexities. Your 3-month action plan is a blueprint not only for technological innovation, but also for corporate comedy. Join The Satirical Scholar on this delightful yet insightful ERP odyssey. 
 
 ### Project Initiation and Stakeholder Harmony (0–3 Months)

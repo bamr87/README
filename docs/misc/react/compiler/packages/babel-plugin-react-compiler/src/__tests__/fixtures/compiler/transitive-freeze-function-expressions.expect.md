@@ -1,15 +1,11 @@
 ---
+title: Transitive Freeze Function Expressions.Expect
 category: misc
-last_updated: null
-source_file: transitive-freeze-function-expressions.expect.md
-summary: "```javascript\n// @enableTransitivelyFreezeFunctionExpressions\nfunction\
-  \ Component(props) {\n  const {data, loadNext, isLoadingNext} =\n    usePaginationFragment(props.key).items\
-  \ ?? [];"
 tags:
 - javascript
-title: Transitive Freeze Function Expressions.Expect
+last_updated: null
+source_file: transitive-freeze-function-expressions.expect.md
 ---
-
 ## Input
 
 ```javascript

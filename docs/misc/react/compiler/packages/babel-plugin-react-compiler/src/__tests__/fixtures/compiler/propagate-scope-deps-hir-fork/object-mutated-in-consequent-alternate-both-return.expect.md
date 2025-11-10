@@ -1,17 +1,11 @@
 ---
+title: Object Mutated In Consequent Alternate Both Return.Expect
 category: misc
-last_updated: null
-source_file: object-mutated-in-consequent-alternate-both-return.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Mutated In Consequent Alternate Both Return.Expect
+last_updated: null
+source_file: object-mutated-in-consequent-alternate-both-return.expect.md
 ---
-
 ## Input
 
 ```javascript

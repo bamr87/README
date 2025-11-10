@@ -1,15 +1,11 @@
 ---
+title: Conditionally Return Fn.Expect
 category: misc
-last_updated: null
-source_file: conditionally-return-fn.expect.md
-summary: '```javascript
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Conditionally Return Fn.Expect
+last_updated: null
+source_file: conditionally-return-fn.expect.md
 ---
-
 ## Input
 
 ```javascript

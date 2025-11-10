@@ -1,14 +1,11 @@
 ---
+title: Reactivity Via Aliased Mutation Array.Expect
 category: misc
-last_updated: null
-source_file: reactivity-via-aliased-mutation-array.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  const y =\
-  \ x;\n  y.push(props.input);"
 tags:
 - javascript
-title: Reactivity Via Aliased Mutation Array.Expect
+last_updated: null
+source_file: reactivity-via-aliased-mutation-array.expect.md
 ---
-
 ## Input
 
 ```javascript

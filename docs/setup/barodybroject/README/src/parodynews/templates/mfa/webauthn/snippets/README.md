@@ -1,23 +1,15 @@
 ---
+title: WebAuthn Snippets Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '// Global WebAuthn event handlers
-
-  window.webauthnHelper = WebAuthnHelper;
-
-  </script>
-
-  ```'
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: WebAuthn Snippets Directory
+last_updated: null
+source_file: README.md
 ---
-
 # WebAuthn Snippets Directory
 
 ## Purpose

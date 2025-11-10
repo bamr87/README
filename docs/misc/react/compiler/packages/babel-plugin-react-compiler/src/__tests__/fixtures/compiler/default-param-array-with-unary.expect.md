@@ -1,13 +1,11 @@
 ---
+title: Default Param Array With Unary.Expect
 category: misc
-last_updated: null
-source_file: default-param-array-with-unary.expect.md
-summary: "```javascript\nfunction Component(x = [1, 1]) {\n  return x;\n}"
 tags:
 - javascript
-title: Default Param Array With Unary.Expect
+last_updated: null
+source_file: default-param-array-with-unary.expect.md
 ---
-
 ## Input
 
 ```javascript

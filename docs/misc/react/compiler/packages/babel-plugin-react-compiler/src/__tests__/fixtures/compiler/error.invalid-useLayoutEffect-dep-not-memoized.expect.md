@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Uselayouteffect Dep Not Memoized.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useLayoutEffect-dep-not-memoized.expect.md
-summary: '```javascript
-
-  // @validateMemoizedEffectDependencies
-
-  import {useLayoutEffect} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Uselayouteffect Dep Not Memoized.Expect
+last_updated: null
+source_file: error.invalid-useLayoutEffect-dep-not-memoized.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Reactivity Via Aliased Mutation Through Property Load.Expect
 category: misc
-last_updated: null
-source_file: reactivity-via-aliased-mutation-through-property-load.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = {};\n  const y =\
-  \ [];\n  x.y = y;\n  x.y.push(props.input);"
 tags:
 - javascript
-title: Reactivity Via Aliased Mutation Through Property Load.Expect
+last_updated: null
+source_file: reactivity-via-aliased-mutation-through-property-load.expect.md
 ---
-
 ## Input
 
 ```javascript

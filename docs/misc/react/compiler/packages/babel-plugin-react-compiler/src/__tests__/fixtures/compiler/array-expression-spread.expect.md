@@ -1,14 +1,11 @@
 ---
+title: Array Expression Spread.Expect
 category: misc
-last_updated: null
-source_file: array-expression-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [0, ...props.foo,\
-  \ null, ...props.bar, 'z'];\n  return x;\n}"
 tags:
 - javascript
-title: Array Expression Spread.Expect
+last_updated: null
+source_file: array-expression-spread.expect.md
 ---
-
 ## Input
 
 ```javascript

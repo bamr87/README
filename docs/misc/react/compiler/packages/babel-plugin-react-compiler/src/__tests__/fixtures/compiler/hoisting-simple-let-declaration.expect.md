@@ -1,15 +1,11 @@
 ---
+title: Hoisting Simple Let Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisting-simple-let-declaration.expect.md
-summary: "```javascript\nfunction hoisting() {\n  let foo = () => {\n    return bar\
-  \ + baz;\n  };\n  let bar = 3;\n  let baz = 2;\n  return foo(); // OK: called outside\
-  \ of TDZ for bar/baz\n}"
 tags:
 - javascript
-title: Hoisting Simple Let Declaration.Expect
+last_updated: null
+source_file: hoisting-simple-let-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

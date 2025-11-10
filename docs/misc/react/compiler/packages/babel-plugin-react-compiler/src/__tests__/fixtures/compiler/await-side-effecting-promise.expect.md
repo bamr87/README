@@ -1,14 +1,11 @@
 ---
+title: Await Side Effecting Promise.Expect
 category: misc
-last_updated: null
-source_file: await-side-effecting-promise.expect.md
-summary: "```javascript\nasync function Component(props) {\n  const x = [];\n  await\
-  \ populateData(props.id, x);\n  return x;\n}"
 tags:
 - javascript
-title: Await Side Effecting Promise.Expect
+last_updated: null
+source_file: await-side-effecting-promise.expect.md
 ---
-
 ## Input
 
 ```javascript

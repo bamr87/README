@@ -1,17 +1,11 @@
 ---
+title: Usememo Multiple If Else.Expect
 category: misc
-last_updated: null
-source_file: useMemo-multiple-if-else.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo Multiple If Else.Expect
+last_updated: null
+source_file: useMemo-multiple-if-else.expect.md
 ---
-
 ## Input
 
 ```javascript

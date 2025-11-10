@@ -1,15 +1,11 @@
 ---
+title: Jsx Reactive Local Variable Member Expr.Expect
 category: misc
-last_updated: null
-source_file: jsx-reactive-local-variable-member-expr.expect.md
-summary: '```javascript
-
-  import  as sharedRuntime from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Reactive Local Variable Member Expr.Expect
+last_updated: null
+source_file: jsx-reactive-local-variable-member-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

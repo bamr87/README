@@ -1,17 +1,13 @@
 ---
+title: Array Push Effect.Expect
 category: api
-last_updated: null
-source_file: array-push-effect.expect.md
-summary: "```javascript\n// arrayInstance.push should have the following effects:\n\
-  //   read on all args (rest parameter)\n//   mutate on receiver\nfunction Component(props)\
-  \ {\n  const x = foo(props.x);\n  const y = ..."
 tags:
 - javascript
 - api
 - api
-title: Array Push Effect.Expect
+last_updated: null
+source_file: array-push-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

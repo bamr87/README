@@ -1,17 +1,11 @@
 ---
+title: Repro Aliased Capture Aliased Mutate.Expect
 category: misc
-last_updated: null
-source_file: repro-aliased-capture-aliased-mutate.expect.md
-summary: '```javascript
-
-  // @flow @enableTransitivelyFreezeFunctionExpressions:false @enableNewMutationAliasingModel
-
-  import {arrayPush, setPropertyByKey, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Aliased Capture Aliased Mutate.Expect
+last_updated: null
+source_file: repro-aliased-capture-aliased-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

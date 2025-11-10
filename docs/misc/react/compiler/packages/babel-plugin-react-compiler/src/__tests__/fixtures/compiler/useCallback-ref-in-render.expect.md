@@ -1,17 +1,11 @@
 ---
+title: Usecallback Ref In Render.Expect
 category: misc
-last_updated: null
-source_file: useCallback-ref-in-render.expect.md
-summary: '```javascript
-
-  // @flow @validateRefAccessDuringRender @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Usecallback Ref In Render.Expect
+last_updated: null
+source_file: useCallback-ref-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

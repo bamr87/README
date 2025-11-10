@@ -1,15 +1,11 @@
 ---
+title: Member Inc.Expect
 category: misc
-last_updated: null
-source_file: member-inc.expect.md
-summary: '```javascript
-
-  //@flow'
 tags:
 - javascript
-title: Member Inc.Expect
+last_updated: null
+source_file: member-inc.expect.md
 ---
-
 ## Input
 
 ```javascript

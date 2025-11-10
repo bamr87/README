@@ -1,18 +1,12 @@
 ---
+title: Reassigned Fnexpr Variable.Expect
 category: misc
-last_updated: null
-source_file: reassigned-fnexpr-variable.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import  as React from ''react'';'
 tags:
 - javascript
 - testing
-title: Reassigned Fnexpr Variable.Expect
+last_updated: null
+source_file: reassigned-fnexpr-variable.expect.md
 ---
-
 ## Input
 
 ```javascript

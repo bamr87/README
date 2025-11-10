@@ -1,19 +1,11 @@
 ---
+title: Pruned Nonreactive Obj.Expect
 category: misc
-last_updated: null
-source_file: pruned-nonreactive-obj.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useIdentity, mutate, makeObject} from ''sharedruntime'';
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
-title: Pruned Nonreactive Obj.Expect
+last_updated: null
+source_file: pruned-nonreactive-obj.expect.md
 ---
-
 ## Input
 
 ```javascript

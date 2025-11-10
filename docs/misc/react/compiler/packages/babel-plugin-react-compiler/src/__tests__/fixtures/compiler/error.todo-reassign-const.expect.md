@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Reassign Const.Expect
 category: misc
-last_updated: null
-source_file: error.todo-reassign-const.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Reassign Const.Expect
+last_updated: null
+source_file: error.todo-reassign-const.expect.md
 ---
-
 ## Input
 
 ```javascript

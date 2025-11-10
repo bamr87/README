@@ -1,23 +1,13 @@
 ---
-author: The Satirical Scholar
+title: 2025 03 30 Humorous Incrementalism Ancients
 category: development
-description: A humorous exploration of how ancient civilizations practiced incrementalism,
-  drawing parallels to modern theories like Kaizen.
-last_updated: null
-published_at: '2025-03-30'
-slug: humorous-incrementalism-ancients
-source_file: 2025-03-30-humorous-incrementalism-ancients.md
-summary: Imagine a time when the nuances of "incrementalism" weren't discussed over
-  cappuccinos but through grunts and gestures around the fire. Perhaps the builders
-  of antiquity quietly honed their crafts, ob...
 tags:
 - aws
 - testing
 - development
-title: 2025 03 30 Humorous Incrementalism Ancients
+last_updated: null
+source_file: 2025-03-30-humorous-incrementalism-ancients.md
 ---
-
-
 **Title:** "Learning from the Ancients: Unearthing the Hilariously Earnest Roots of Incrementalism in Ancient Civilizations"
 
 **Introduction:**

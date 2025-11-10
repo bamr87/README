@@ -1,15 +1,11 @@
 ---
+title: Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency.Expect
 category: misc
-last_updated: null
-source_file: repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency.Expect
+last_updated: null
+source_file: repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency.expect.md
 ---
-
 ## Input
 
 ```javascript

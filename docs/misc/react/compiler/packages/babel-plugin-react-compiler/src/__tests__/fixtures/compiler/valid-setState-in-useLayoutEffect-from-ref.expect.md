@@ -1,17 +1,11 @@
 ---
+title: Valid Setstate In Uselayouteffect From Ref.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-useLayoutEffect-from-ref.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects @enableAllowSetStateFromRefsInEffects
-
-  import {useState, useRef, useLayoutEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Uselayouteffect From Ref.Expect
+last_updated: null
+source_file: valid-setState-in-useLayoutEffect-from-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

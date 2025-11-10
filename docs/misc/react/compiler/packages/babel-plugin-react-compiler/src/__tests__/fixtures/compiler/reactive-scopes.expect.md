@@ -1,15 +1,11 @@
 ---
+title: Reactive Scopes.Expect
 category: misc
-last_updated: null
-source_file: reactive-scopes.expect.md
-summary: "```javascript\nfunction f(a, b) {\n  let x = []; // < x starts being mutable\
-  \ here.\n  if (a.length === 1) {\n    if (b) {\n      x.push(b); // < x stops being\
-  \ mutable here.\n    }\n  }"
 tags:
 - javascript
-title: Reactive Scopes.Expect
+last_updated: null
+source_file: reactive-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,12 @@
 ---
+title: ESLint v7 Fixture
 category: development
-last_updated: null
-source_file: README.md
-summary: This fixture allows us to test e2e functionality for eslintpluginreacthooks
-  with eslint version 7.
 tags:
 - javascript
 - testing
 - development
-title: ESLint v7 Fixture
+last_updated: null
+source_file: README.md
 ---
 # ESLint v7 Fixture
 

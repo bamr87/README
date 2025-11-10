@@ -1,17 +1,12 @@
 ---
+title: Dynamic Gating Bailout Nopanic.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-bailout-nopanic.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @validatePreserveExistingMemoizationGuarantees
-  @panicThreshold:"none" @loggerTestOnly'
 tags:
 - javascript
 - testing
-title: Dynamic Gating Bailout Nopanic.Expect
+last_updated: null
+source_file: dynamic-gating-bailout-nopanic.expect.md
 ---
-
 ## Input
 
 ```javascript

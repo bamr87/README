@@ -1,22 +1,12 @@
 ---
-author: J.K. Codewizz
+title: 'The Sorcery of Coding: Unleashing "Sourcery" in Software'
 category: api
-description: Explore the enchanting world of sourcery, where coding meets magic, and
-  AI transcends the mundane.
-last_updated: null
-published_at: '2025-04-13'
-slug: coding-with-charms-sourcery
-source_file: 2025-04-13-coding-with-charms-sourcery.md
-summary: In the whimsical world of programming, where keyboard warriors and sorceresses
-  of syntax dwell, lies a term that conjures images of starry robes and binary scrolls—“sourcery.”
-  It’s a delightful mélang...
 tags:
 - testing
 - api
-title: 'The Sorcery of Coding: Unleashing "Sourcery" in Software'
+last_updated: null
+source_file: 2025-04-13-coding-with-charms-sourcery.md
 ---
-
-
 # The Sorcery of Coding: Unleashing "Sourcery" in Software
 
 ## Defining the Arcane: "Sourcery"

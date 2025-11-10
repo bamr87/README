@@ -1,15 +1,12 @@
 ---
+title: Error.Propertyload Hook.Expect
 category: api
-last_updated: null
-source_file: error.propertyload-hook.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = Foo.useFoo;\n  return\
-  \ x();\n}"
 tags:
 - javascript
 - api
-title: Error.Propertyload Hook.Expect
+last_updated: null
+source_file: error.propertyload-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

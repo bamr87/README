@@ -1,15 +1,11 @@
 ---
+title: Chained Assignment Context Variable.Expect
 category: misc
-last_updated: null
-source_file: chained-assignment-context-variable.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Chained Assignment Context Variable.Expect
+last_updated: null
+source_file: chained-assignment-context-variable.expect.md
 ---
-
 ## Input
 
 ```javascript

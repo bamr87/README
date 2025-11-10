@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Set And Read Ref During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-set-and-read-ref-during-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  ref.current = props.value;\n  return ref.current;\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Set And Read Ref During Render.Expect
+last_updated: null
+source_file: error.invalid-set-and-read-ref-during-render.expect.md
 ---
-
 ## Input
 
 ```javascript

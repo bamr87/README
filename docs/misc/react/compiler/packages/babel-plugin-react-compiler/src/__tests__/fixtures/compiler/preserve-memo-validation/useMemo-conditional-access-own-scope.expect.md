@@ -1,17 +1,11 @@
 ---
+title: Usememo Conditional Access Own Scope.Expect
 category: misc
-last_updated: null
-source_file: useMemo-conditional-access-own-scope.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo Conditional Access Own Scope.Expect
+last_updated: null
+source_file: useMemo-conditional-access-own-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

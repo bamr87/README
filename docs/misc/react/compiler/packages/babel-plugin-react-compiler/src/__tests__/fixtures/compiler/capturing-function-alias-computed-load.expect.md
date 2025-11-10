@@ -1,14 +1,11 @@
 ---
+title: Capturing Function Alias Computed Load.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-alias-computed-load.expect.md
-summary: "```javascript\nfunction bar(a) {\n  let x = [a];\n  let y = {};\n  const\
-  \ f0 = function () {\n    y = x[0];\n  };\n  f0();"
 tags:
 - javascript
-title: Capturing Function Alias Computed Load.Expect
+last_updated: null
+source_file: capturing-function-alias-computed-load.expect.md
 ---
-
 ## Input
 
 ```javascript

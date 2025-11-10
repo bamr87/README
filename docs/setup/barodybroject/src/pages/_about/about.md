@@ -1,20 +1,15 @@
 ---
+title: About
 category: setup
-last_updated: null
-source_file: about.md
-summary: "1. User Interaction:\n    A user interacts with the application via a web\
-  \ browser or mobile app.\n    Sends an HTTP/HTTPS request to the application endpoint."
 tags:
 - python
 - javascript
 - aws
 - api
 - database
-title: About
+last_updated: null
+source_file: about.md
 ---
-
-
-
 ## Deployment on AWS
 
 ## **AWS Architecture Diagram Description**

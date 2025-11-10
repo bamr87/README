@@ -1,15 +1,11 @@
 ---
+title: Repro Array Map Known Mutate Shape.Expect
 category: misc
-last_updated: null
-source_file: repro-array-map-known-mutate-shape.expect.md
-summary: '```javascript
-
-  import {Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Array Map Known Mutate Shape.Expect
+last_updated: null
+source_file: repro-array-map-known-mutate-shape.expect.md
 ---
-
 ## Input
 
 ```javascript

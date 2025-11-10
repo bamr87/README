@@ -1,18 +1,15 @@
 ---
+title: ISSUE_TEMPLATE Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```markdown\n<! Example bug report structure >\n Bug Description\nA clear\
-  \ description of the bug."
 tags:
 - python
 - docker
 - azure
 - testing
 - setup
-title: ISSUE_TEMPLATE Directory
+last_updated: null
+source_file: README.md
 ---
-
 # ISSUE_TEMPLATE Directory
 
 ## Purpose

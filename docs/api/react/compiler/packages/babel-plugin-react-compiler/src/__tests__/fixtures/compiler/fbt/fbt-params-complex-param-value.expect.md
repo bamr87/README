@@ -1,17 +1,13 @@
 ---
+title: Fbt Params Complex Param Value.Expect
 category: api
-last_updated: null
-source_file: fbt-params-complex-param-value.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
 - api
 - api
-title: Fbt Params Complex Param Value.Expect
+last_updated: null
+source_file: fbt-params-complex-param-value.expect.md
 ---
-
 ## Input
 
 ```javascript

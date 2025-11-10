@@ -1,17 +1,15 @@
 ---
+title: app Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Deploy using Azure Developer CLI\nazd up"
 tags:
 - python
 - docker
 - azure
 - database
 - setup
-title: app Directory
+last_updated: null
+source_file: README.md
 ---
-
 # app Directory
 
 ## Purpose

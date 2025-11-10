@@ -1,15 +1,11 @@
 ---
+title: Todo Ensure Constant Prop Decls Get Removed.Expect
 category: misc
-last_updated: null
-source_file: todo-ensure-constant-prop-decls-get-removed.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Todo Ensure Constant Prop Decls Get Removed.Expect
+last_updated: null
+source_file: todo-ensure-constant-prop-decls-get-removed.expect.md
 ---
-
 ## Input
 
 ```javascript

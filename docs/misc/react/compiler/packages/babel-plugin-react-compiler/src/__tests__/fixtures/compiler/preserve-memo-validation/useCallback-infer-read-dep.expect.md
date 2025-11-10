@@ -1,19 +1,11 @@
 ---
+title: Usecallback Infer Read Dep.Expect
 category: misc
-last_updated: null
-source_file: useCallback-infer-read-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Infer Read Dep.Expect
+last_updated: null
+source_file: useCallback-infer-read-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

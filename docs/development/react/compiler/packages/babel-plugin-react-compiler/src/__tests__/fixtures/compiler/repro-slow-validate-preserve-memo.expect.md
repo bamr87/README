@@ -1,17 +1,13 @@
 ---
+title: Repro Slow Validate Preserve Memo.Expect
 category: development
-last_updated: null
-source_file: repro-slow-validate-preserve-memo.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
 - testing
 - development
-title: Repro Slow Validate Preserve Memo.Expect
+last_updated: null
+source_file: repro-slow-validate-preserve-memo.expect.md
 ---
-
 ## Input
 
 ```javascript

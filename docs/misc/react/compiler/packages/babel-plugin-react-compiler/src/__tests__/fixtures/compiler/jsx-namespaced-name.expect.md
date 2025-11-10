@@ -1,14 +1,11 @@
 ---
+title: Jsx Namespaced Name.Expect
 category: misc
-last_updated: null
-source_file: jsx-namespaced-name.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return <xml:http protocol:version={props.version}\
-  \ />;\n}"
 tags:
 - javascript
-title: Jsx Namespaced Name.Expect
+last_updated: null
+source_file: jsx-namespaced-name.expect.md
 ---
-
 ## Input
 
 ```javascript

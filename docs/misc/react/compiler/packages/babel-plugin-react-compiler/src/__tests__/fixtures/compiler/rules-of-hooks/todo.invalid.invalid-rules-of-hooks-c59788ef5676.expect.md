@@ -1,17 +1,11 @@
 ---
+title: Todo.Invalid.Invalid Rules Of Hooks C59788Ef5676.Expect
 category: misc
-last_updated: null
-source_file: todo.invalid.invalid-rules-of-hooks-c59788ef5676.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Invalid.Invalid Rules Of Hooks C59788Ef5676.Expect
+last_updated: null
+source_file: todo.invalid.invalid-rules-of-hooks-c59788ef5676.expect.md
 ---
-
 ## Input
 
 ```javascript

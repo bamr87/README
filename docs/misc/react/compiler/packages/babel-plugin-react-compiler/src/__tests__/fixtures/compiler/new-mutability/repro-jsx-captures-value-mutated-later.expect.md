@@ -1,15 +1,11 @@
 ---
+title: Repro Jsx Captures Value Mutated Later.Expect
 category: misc
-last_updated: null
-source_file: repro-jsx-captures-value-mutated-later.expect.md
-summary: '```javascript
-
-  // @flow @enableNewMutationAliasingModel'
 tags:
 - javascript
-title: Repro Jsx Captures Value Mutated Later.Expect
+last_updated: null
+source_file: repro-jsx-captures-value-mutated-later.expect.md
 ---
-
 ## Input
 
 ```javascript

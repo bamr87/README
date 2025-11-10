@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Hook Function Argument Mutates Local Variable.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-function-argument-mutates-local-variable.expect.md
-summary: '```javascript
-
-  // @validateNoFreezingKnownMutableFunctions'
 tags:
 - javascript
-title: Error.Invalid Hook Function Argument Mutates Local Variable.Expect
+last_updated: null
+source_file: error.invalid-hook-function-argument-mutates-local-variable.expect.md
 ---
-
 ## Input
 
 ```javascript

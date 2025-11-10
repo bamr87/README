@@ -1,14 +1,11 @@
 ---
+title: Iife Return Modified Later.Expect
 category: misc
-last_updated: null
-source_file: iife-return-modified-later.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = (() => {\n \
-  \   return [];\n  })();\n  items.push(props.a);\n  return items;\n}"
 tags:
 - javascript
-title: Iife Return Modified Later.Expect
+last_updated: null
+source_file: iife-return-modified-later.expect.md
 ---
-
 ## Input
 
 ```javascript

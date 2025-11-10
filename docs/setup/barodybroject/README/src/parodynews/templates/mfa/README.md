@@ -1,17 +1,15 @@
 ---
+title: Multi-Factor Authentication (MFA) Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block headtitle %}Security Settings{% endblock %}'
 tags:
 - python
 - javascript
 - docker
 - testing
 - setup
-title: Multi-Factor Authentication (MFA) Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Multi-Factor Authentication (MFA) Templates Directory
 
 ## Purpose

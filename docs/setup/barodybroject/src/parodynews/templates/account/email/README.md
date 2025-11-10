@@ -1,15 +1,13 @@
 ---
+title: Account Email Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: You requested a password reset for your Barody Broject account.
 tags:
 - python
 - docker
 - setup
-title: Account Email Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Account Email Templates Directory
 
 ## Purpose

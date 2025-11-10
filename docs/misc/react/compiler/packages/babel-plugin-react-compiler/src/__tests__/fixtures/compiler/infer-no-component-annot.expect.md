@@ -1,17 +1,11 @@
 ---
+title: Infer No Component Annot.Expect
 category: misc
-last_updated: null
-source_file: infer-no-component-annot.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  import {useIdentity, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer No Component Annot.Expect
+last_updated: null
+source_file: infer-no-component-annot.expect.md
 ---
-
 ## Input
 
 ```javascript

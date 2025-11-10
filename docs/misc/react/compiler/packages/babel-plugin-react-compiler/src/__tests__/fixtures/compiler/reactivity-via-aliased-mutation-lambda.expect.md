@@ -1,14 +1,11 @@
 ---
+title: Reactivity Via Aliased Mutation Lambda.Expect
 category: misc
-last_updated: null
-source_file: reactivity-via-aliased-mutation-lambda.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  const f =\
-  \ arg => {\n    const y = x;\n    y.push(arg);\n  };\n  f(props.input);"
 tags:
 - javascript
-title: Reactivity Via Aliased Mutation Lambda.Expect
+last_updated: null
+source_file: reactivity-via-aliased-mutation-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

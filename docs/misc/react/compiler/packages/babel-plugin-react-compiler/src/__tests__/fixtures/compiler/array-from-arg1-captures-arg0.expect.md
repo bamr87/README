@@ -1,15 +1,11 @@
 ---
+title: Array From Arg1 Captures Arg0.Expect
 category: misc
-last_updated: null
-source_file: array-from-arg1-captures-arg0.expect.md
-summary: '```javascript
-
-  import {useIdentity, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Array From Arg1 Captures Arg0.Expect
+last_updated: null
+source_file: array-from-arg1-captures-arg0.expect.md
 ---
-
 ## Input
 
 ```javascript

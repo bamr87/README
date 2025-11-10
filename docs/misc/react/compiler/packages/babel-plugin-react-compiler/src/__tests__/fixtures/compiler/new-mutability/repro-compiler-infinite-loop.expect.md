@@ -1,15 +1,11 @@
 ---
+title: Repro Compiler Infinite Loop.Expect
 category: misc
-last_updated: null
-source_file: repro-compiler-infinite-loop.expect.md
-summary: '```javascript
-
-  // @flow @enableNewMutationAliasingModel'
 tags:
 - javascript
-title: Repro Compiler Infinite Loop.Expect
+last_updated: null
+source_file: repro-compiler-infinite-loop.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Pass Hook As Prop.Expect
 category: api
-last_updated: null
-source_file: error.invalid-pass-hook-as-prop.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return <Child foo={useFoo}\
-  \ />;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Pass Hook As Prop.Expect
+last_updated: null
+source_file: error.invalid-pass-hook-as-prop.expect.md
 ---
-
 ## Input
 
 ```javascript

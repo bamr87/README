@@ -1,19 +1,13 @@
 ---
+title: Mutable Liverange Loop.Expect
 category: api
-last_updated: null
-source_file: mutable-liverange-loop.expect.md
-summary: '```javascript
-
-  function mutate() {}
-
-  function cond() {}'
 tags:
 - javascript
 - testing
 - api
-title: Mutable Liverange Loop.Expect
+last_updated: null
+source_file: mutable-liverange-loop.expect.md
 ---
-
 ## Input
 
 ```javascript

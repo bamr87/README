@@ -1,11 +1,10 @@
 ---
+title: User Guide
 category: user-guides
-last_updated: null
-source_file: user-guide.md
-summary: Welcome to our application! This guide will help you get started.
 tags:
 - user-guides
-title: User Guide
+last_updated: null
+source_file: user-guide.md
 ---
 # User Guide
 

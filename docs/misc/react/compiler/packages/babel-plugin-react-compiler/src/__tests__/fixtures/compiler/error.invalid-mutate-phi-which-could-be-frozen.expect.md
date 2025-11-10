@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Mutate Phi Which Could Be Frozen.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-phi-which-could-be-frozen.expect.md
-summary: '```javascript
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Invalid Mutate Phi Which Could Be Frozen.Expect
+last_updated: null
+source_file: error.invalid-mutate-phi-which-could-be-frozen.expect.md
 ---
-
 ## Input
 
 ```javascript

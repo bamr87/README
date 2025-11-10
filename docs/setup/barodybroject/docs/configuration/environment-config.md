@@ -1,17 +1,14 @@
 ---
+title: Environment Configuration Guide
 category: setup
-last_updated: null
-source_file: environment-config.md
-summary: This guide provides comprehensive documentation for all environment variables
-  used in the Barodybroject Django application. The configuration follows 12Factor
-  App principles, using environment variabl...
 tags:
 - python
 - docker
 - aws
 - azure
 - database
-title: Environment Configuration Guide
+last_updated: null
+source_file: environment-config.md
 ---
 # Environment Configuration Guide
 

@@ -1,16 +1,12 @@
 ---
+title: Jsx Attribute With Jsx Element Value.Expect
 category: misc
-last_updated: null
-source_file: jsx-attribute-with-jsx-element-value.expect.md
-summary: "```javascript\n// @flow\nfunction Component({items}) {\n  // Per the spec,\
-  \ <Foo value=<>{...}</> /> is valid.\n  // But many tools don't allow fragments\
-  \ as jsx attribute values,\n  // so we ensure not to e..."
 tags:
 - javascript
 - docker
-title: Jsx Attribute With Jsx Element Value.Expect
+last_updated: null
+source_file: jsx-attribute-with-jsx-element-value.expect.md
 ---
-
 ## Input
 
 ```javascript

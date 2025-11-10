@@ -1,17 +1,11 @@
 ---
+title: Object Shorthand Method Nested.Expect
 category: misc
-last_updated: null
-source_file: object-shorthand-method-nested.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Shorthand Method Nested.Expect
+last_updated: null
+source_file: object-shorthand-method-nested.expect.md
 ---
-
 ## Input
 
 ```javascript

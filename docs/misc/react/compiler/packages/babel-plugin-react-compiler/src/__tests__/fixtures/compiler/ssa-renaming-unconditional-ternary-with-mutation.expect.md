@@ -1,15 +1,11 @@
 ---
+title: Ssa Renaming Unconditional Ternary With Mutation.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-unconditional-ternary-with-mutation.expect.md
-summary: "```javascript\nimport {arrayPush} from 'sharedruntime';\nfunction useFoo(props)\
-  \ {\n  let x = [];\n  x.push(props.bar);\n  props.cond\n    ? ((x = {}), (x = []),\
-  \ x.push(props.foo))\n    : ((x = []), (x = []),..."
 tags:
 - javascript
-title: Ssa Renaming Unconditional Ternary With Mutation.Expect
+last_updated: null
+source_file: ssa-renaming-unconditional-ternary-with-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

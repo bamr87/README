@@ -1,18 +1,12 @@
 ---
+title: Array Map Named Callback Cross Context.Expect
 category: misc
-last_updated: null
-source_file: array-map-named-callback-cross-context.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
-title: Array Map Named Callback Cross Context.Expect
+last_updated: null
+source_file: array-map-named-callback-cross-context.expect.md
 ---
-
 ## Input
 
 ```javascript

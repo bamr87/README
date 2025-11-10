@@ -1,15 +1,11 @@
 ---
+title: Try Catch.Expect
 category: misc
-last_updated: null
-source_file: try-catch.expect.md
-summary: '```javascript
-
-  const {throwErrorWithMessage} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch.Expect
+last_updated: null
+source_file: try-catch.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,12 @@
 ---
+title: '`scheduler`'
 category: api
-last_updated: null
-source_file: README.md
-summary: This is a package for cooperative scheduling in a browser environment. It
-  is currently used internally by React, but we plan to make it more generic.
 tags:
 - javascript
 - api
 - api
-title: '`scheduler`'
+last_updated: null
+source_file: README.md
 ---
 # `scheduler`
 

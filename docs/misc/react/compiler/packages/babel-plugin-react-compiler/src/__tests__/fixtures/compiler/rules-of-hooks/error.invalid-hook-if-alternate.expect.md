@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Hook If Alternate.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-if-alternate.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = null;\n  if (props.cond)\
-  \ {\n  } else {\n    x = useHook();\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Hook If Alternate.Expect
+last_updated: null
+source_file: error.invalid-hook-if-alternate.expect.md
 ---
-
 ## Input
 
 ```javascript

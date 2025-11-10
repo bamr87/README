@@ -1,19 +1,11 @@
 ---
+title: Usememo Maybe Modified Later Preserve Memoization Guarantees.Expect
 category: misc
-last_updated: null
-source_file: useMemo-maybe-modified-later-preserve-memoization-guarantees.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Maybe Modified Later Preserve Memoization Guarantees.Expect
+last_updated: null
+source_file: useMemo-maybe-modified-later-preserve-memoization-guarantees.expect.md
 ---
-
 ## Input
 
 ```javascript

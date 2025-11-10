@@ -1,19 +1,11 @@
 ---
+title: Mutate Through Identity Function Expression.Expect
 category: misc
-last_updated: null
-source_file: mutate-through-identity-function-expression.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {identity, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutate Through Identity Function Expression.Expect
+last_updated: null
+source_file: mutate-through-identity-function-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

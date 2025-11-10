@@ -1,15 +1,11 @@
 ---
+title: Global Jsx Tag Lowered Between Mutations.Expect
 category: misc
-last_updated: null
-source_file: global-jsx-tag-lowered-between-mutations.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const maybeMutable = new MaybeMutable();\n\
-  \  // NOTE: this will produce invalid output.\n  // The HIR is roughly:\n  //  \
-  \                                 ⌵ mutab..."
 tags:
 - javascript
-title: Global Jsx Tag Lowered Between Mutations.Expect
+last_updated: null
+source_file: global-jsx-tag-lowered-between-mutations.expect.md
 ---
-
 ## Input
 
 ```javascript

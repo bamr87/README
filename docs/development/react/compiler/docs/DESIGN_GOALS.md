@@ -1,14 +1,11 @@
 ---
+title: "React Compiler \u2014 Goals, Design Principles, and Architecture"
 category: development
-last_updated: null
-source_file: DESIGN_GOALS.md
-summary: This document describes the goals, design principles, and highlevel architecture
-  of React Compiler. See the code for specifics of the data structures and compiler
-  passes.
 tags:
 - javascript
 - development
-title: React Compiler — Goals, Design Principles, and Architecture
+last_updated: null
+source_file: DESIGN_GOALS.md
 ---
 # React Compiler — Goals, Design Principles, and Architecture
 

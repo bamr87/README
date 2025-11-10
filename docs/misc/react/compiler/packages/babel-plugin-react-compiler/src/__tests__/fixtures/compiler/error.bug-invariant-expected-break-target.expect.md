@@ -1,15 +1,11 @@
 ---
+title: Error.Bug Invariant Expected Break Target.Expect
 category: misc
-last_updated: null
-source_file: error.bug-invariant-expected-break-target.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Error.Bug Invariant Expected Break Target.Expect
+last_updated: null
+source_file: error.bug-invariant-expected-break-target.expect.md
 ---
-
 ## Input
 
 ```javascript

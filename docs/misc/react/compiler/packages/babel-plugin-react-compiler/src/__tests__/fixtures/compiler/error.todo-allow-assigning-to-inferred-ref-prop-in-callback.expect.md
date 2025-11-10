@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Allow Assigning To Inferred Ref Prop In Callback.Expect
 category: misc
-last_updated: null
-source_file: error.todo-allow-assigning-to-inferred-ref-prop-in-callback.expect.md
-summary: '```javascript
-
-  // @validateRefAccessDuringRender'
 tags:
 - javascript
-title: Error.Todo Allow Assigning To Inferred Ref Prop In Callback.Expect
+last_updated: null
+source_file: error.todo-allow-assigning-to-inferred-ref-prop-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

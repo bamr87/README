@@ -1,15 +1,11 @@
 ---
+title: Infer Nested Function Uncond Access Local Var.Expect
 category: misc
-last_updated: null
-source_file: infer-nested-function-uncond-access-local-var.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Nested Function Uncond Access Local Var.Expect
+last_updated: null
+source_file: infer-nested-function-uncond-access-local-var.expect.md
 ---
-
 ## Input
 
 ```javascript

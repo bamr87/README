@@ -1,16 +1,12 @@
 ---
+title: Ts Non Null Expression Default Value.Expect
 category: api
-last_updated: null
-source_file: ts-non-null-expression-default-value.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nconst\
-  \ THEMEMAP: ReadonlyMap<string, string> = new Map([\n  ['default', 'light'],\n \
-  \ ['dark', 'dark'],\n]);"
 tags:
 - javascript
 - api
-title: Ts Non Null Expression Default Value.Expect
+last_updated: null
+source_file: ts-non-null-expression-default-value.expect.md
 ---
-
 ## Input
 
 ```javascript

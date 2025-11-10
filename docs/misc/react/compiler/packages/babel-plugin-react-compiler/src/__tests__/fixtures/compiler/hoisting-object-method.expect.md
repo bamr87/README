@@ -1,14 +1,11 @@
 ---
+title: Hoisting Object Method.Expect
 category: misc
-last_updated: null
-source_file: hoisting-object-method.expect.md
-summary: "```javascript\nfunction hoisting() {\n  const x = {\n    foo() {\n     \
-  \ return bar();\n    },\n  };\n  const bar = () => {\n    return 1;\n  };"
 tags:
 - javascript
-title: Hoisting Object Method.Expect
+last_updated: null
+source_file: hoisting-object-method.expect.md
 ---
-
 ## Input
 
 ```javascript

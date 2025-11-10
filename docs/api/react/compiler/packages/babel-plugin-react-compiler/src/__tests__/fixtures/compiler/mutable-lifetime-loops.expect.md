@@ -1,17 +1,13 @@
 ---
+title: Mutable Lifetime Loops.Expect
 category: api
-last_updated: null
-source_file: mutable-lifetime-loops.expect.md
-summary: "```javascript\nfunction mutate(x, y) {\n  'use no forget';\n  if (x != null)\
-  \ {\n    x.value = (x.value ?? 0) + 1;\n  }\n  if (y != null) {\n    y.value = (y.value\
-  \ ?? 0) + 1;\n  }\n}\nfunction cond(x) {\n  'use n..."
 tags:
 - javascript
 - testing
 - api
-title: Mutable Lifetime Loops.Expect
+last_updated: null
+source_file: mutable-lifetime-loops.expect.md
 ---
-
 ## Input
 
 ```javascript

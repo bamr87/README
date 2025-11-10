@@ -1,15 +1,12 @@
 ---
+title: Overview
 category: api
-last_updated: null
-source_file: OVERVIEW.md
-summary: "The React DevTools extension consists of multiple pieces:\n The frontend\
-  \ portion is the extension you see (the Components tree, the Profiler, etc.).\n\
-  \ The backend portion is invisible. It runs in the sa..."
 tags:
 - javascript
 - api
 - api
-title: Overview
+last_updated: null
+source_file: OVERVIEW.md
 ---
 # Overview
 

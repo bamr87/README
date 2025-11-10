@@ -1,14 +1,11 @@
 ---
+title: While Property.Expect
 category: misc
-last_updated: null
-source_file: while-property.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  let x = 0;\n  while (a.b.c) {\n \
-  \   x += b;\n  }\n  return x;\n}"
 tags:
 - javascript
-title: While Property.Expect
+last_updated: null
+source_file: while-property.expect.md
 ---
-
 ## Input
 
 ```javascript

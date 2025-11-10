@@ -1,15 +1,11 @@
 ---
+title: Class Component With Render Helper.Expect
 category: misc
-last_updated: null
-source_file: class-component-with-render-helper.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nclass Component {\n  renderMessage\
-  \ = () => {\n    const Message = () => {\n      const message = this.state.message;\n\
-  \      return <div>{message}</div>;\n    };\n  ..."
 tags:
 - javascript
-title: Class Component With Render Helper.Expect
+last_updated: null
+source_file: class-component-with-render-helper.expect.md
 ---
-
 ## Input
 
 ```javascript

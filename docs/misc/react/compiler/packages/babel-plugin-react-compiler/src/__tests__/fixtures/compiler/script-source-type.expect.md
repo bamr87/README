@@ -1,17 +1,11 @@
 ---
+title: Script Source Type.Expect
 category: misc
-last_updated: null
-source_file: script-source-type.expect.md
-summary: '```javascript
-
-  // @script
-
-  const React = require(''react'');'
 tags:
 - javascript
-title: Script Source Type.Expect
+last_updated: null
+source_file: script-source-type.expect.md
 ---
-
 ## Input
 
 ```javascript

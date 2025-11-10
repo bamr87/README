@@ -1,15 +1,11 @@
 ---
+title: Sequential Destructuring Assignment To Scope Declarations.Expect
 category: misc
-last_updated: null
-source_file: sequential-destructuring-assignment-to-scope-declarations.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Sequential Destructuring Assignment To Scope Declarations.Expect
+last_updated: null
+source_file: sequential-destructuring-assignment-to-scope-declarations.expect.md
 ---
-
 ## Input
 
 ```javascript

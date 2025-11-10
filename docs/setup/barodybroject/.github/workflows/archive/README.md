@@ -1,16 +1,14 @@
 ---
+title: Archived Workflows
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains workflow files that have been superseded by the foundational
-  CI/CD pipeline.
 tags:
 - python
 - docker
 - azure
 - api
 - testing
-title: Archived Workflows
+last_updated: null
+source_file: README.md
 ---
 # Archived Workflows
 

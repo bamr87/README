@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Simple Alias Iife.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-simple-alias-iife.expect.md
-summary: '```javascript
-
-  const {mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Capturing Func Simple Alias Iife.Expect
+last_updated: null
+source_file: capturing-func-simple-alias-iife.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Function With Conditional Callsite In Another Function.Expect
 category: misc
-last_updated: null
-source_file: function-with-conditional-callsite-in-another-function.expect.md
-summary: '```javascript
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
-title: Function With Conditional Callsite In Another Function.Expect
+last_updated: null
+source_file: function-with-conditional-callsite-in-another-function.expect.md
 ---
-
 ## Input
 
 ```javascript

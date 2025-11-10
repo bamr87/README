@@ -1,15 +1,11 @@
 ---
+title: Controlled Input.Expect
 category: misc
-last_updated: null
-source_file: controlled-input.expect.md
-summary: "```javascript\nimport {useState} from 'react';\nfunction component() {\n\
-  \  let [x, setX] = useState(0);\n  const handler = event => setX(event.target.value);\n\
-  \  return <input onChange={handler} value={x} />..."
 tags:
 - javascript
-title: Controlled Input.Expect
+last_updated: null
+source_file: controlled-input.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Error.Conditional Hooks As Method Call.Expect
 category: misc
-last_updated: null
-source_file: error.conditional-hooks-as-method-call.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = null;\n  if (props.cond)\
-  \ {\n    x = Foo.useFoo();\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Error.Conditional Hooks As Method Call.Expect
+last_updated: null
+source_file: error.conditional-hooks-as-method-call.expect.md
 ---
-
 ## Input
 
 ```javascript

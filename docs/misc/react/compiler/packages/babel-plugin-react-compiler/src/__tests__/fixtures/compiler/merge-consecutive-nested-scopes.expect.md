@@ -1,15 +1,11 @@
 ---
+title: Merge Consecutive Nested Scopes.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-nested-scopes.expect.md
-summary: '```javascript
-
-  const {getNumber} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Merge Consecutive Nested Scopes.Expect
+last_updated: null
+source_file: merge-consecutive-nested-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

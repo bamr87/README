@@ -1,17 +1,11 @@
 ---
+title: Rename Source Variables.Expect
 category: misc
-last_updated: null
-source_file: rename-source-variables.expect.md
-summary: '```javascript
-
-  // @enableChangeVariableCodegen
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Rename Source Variables.Expect
+last_updated: null
+source_file: rename-source-variables.expect.md
 ---
-
 ## Input
 
 ```javascript

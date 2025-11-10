@@ -1,16 +1,13 @@
 ---
+title: Attributetablesnapshot
 category: api
-last_updated: null
-source_file: AttributeTableSnapshot.md
-summary: "\uFEFF about (on <div> inside <div>)\n| Test Case | Flags | Result |\n|\
-  \  |  |  |\n| about=(string)| (changed)| \"a string\" |\n| about=(empty string)|\
-  \ (changed)| <empty string> |\n| about=(array with string)| (ch..."
 tags:
 - javascript
 - api
 - testing
 - api
-title: Attributetablesnapshot
+last_updated: null
+source_file: AttributeTableSnapshot.md
 ---
 ﻿## `about` (on `<div>` inside `<div>`)
 | Test Case | Flags | Result |

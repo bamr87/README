@@ -1,15 +1,11 @@
 ---
+title: Repro Mutate Result Of Method Call On Frozen Value In Function Expression.Expect
 category: misc
-last_updated: null
-source_file: repro-mutate-result-of-method-call-on-frozen-value-in-function-expression.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Mutate Result Of Method Call On Frozen Value In Function Expression.Expect
+last_updated: null
+source_file: repro-mutate-result-of-method-call-on-frozen-value-in-function-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

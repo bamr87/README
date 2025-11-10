@@ -1,14 +1,11 @@
 ---
+title: Rest Param With Array Pattern.Expect
 category: misc
-last_updated: null
-source_file: rest-param-with-array-pattern.expect.md
-summary: "```javascript\nfunction Component(foo, ...[bar]) {\n  return [foo, bar];\n\
-  }"
 tags:
 - javascript
-title: Rest Param With Array Pattern.Expect
+last_updated: null
+source_file: rest-param-with-array-pattern.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Repro Array Filter Known Nonmutate Boolean.Expect
 category: misc
-last_updated: null
-source_file: repro-array-filter-known-nonmutate-Boolean.expect.md
-summary: '```javascript
-
-  import {Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Array Filter Known Nonmutate Boolean.Expect
+last_updated: null
+source_file: repro-array-filter-known-nonmutate-Boolean.expect.md
 ---
-
 ## Input
 
 ```javascript

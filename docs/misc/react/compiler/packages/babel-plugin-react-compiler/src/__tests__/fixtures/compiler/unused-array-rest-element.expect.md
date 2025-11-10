@@ -1,14 +1,11 @@
 ---
+title: Unused Array Rest Element.Expect
 category: misc
-last_updated: null
-source_file: unused-array-rest-element.expect.md
-summary: "```javascript\nfunction foo(props) {\n  const [x, y, ...z] = props.a;\n\
-  \  return x + y;\n}"
 tags:
 - javascript
-title: Unused Array Rest Element.Expect
+last_updated: null
+source_file: unused-array-rest-element.expect.md
 ---
-
 ## Input
 
 ```javascript

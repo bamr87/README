@@ -1,14 +1,11 @@
 ---
+title: Error.Declare Reassign Variable In Function Declaration.Expect
 category: misc
-last_updated: null
-source_file: error.declare-reassign-variable-in-function-declaration.expect.md
-summary: "```javascript\nfunction Component() {\n  let x = null;\n  function foo()\
-  \ {\n    x = 9;\n  }\n  const y = bar(foo);\n  return <Child y={y} />;\n}"
 tags:
 - javascript
-title: Error.Declare Reassign Variable In Function Declaration.Expect
+last_updated: null
+source_file: error.declare-reassign-variable-in-function-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

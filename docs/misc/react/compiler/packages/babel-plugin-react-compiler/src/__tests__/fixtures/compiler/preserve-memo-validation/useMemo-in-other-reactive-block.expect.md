@@ -1,19 +1,11 @@
 ---
+title: Usememo In Other Reactive Block.Expect
 category: misc
-last_updated: null
-source_file: useMemo-in-other-reactive-block.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo, useState} from ''react'';
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo In Other Reactive Block.Expect
+last_updated: null
+source_file: useMemo-in-other-reactive-block.expect.md
 ---
-
 ## Input
 
 ```javascript

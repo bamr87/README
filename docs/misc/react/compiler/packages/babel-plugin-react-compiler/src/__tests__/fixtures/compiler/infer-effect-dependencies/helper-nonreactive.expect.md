@@ -1,15 +1,11 @@
 ---
+title: Helper Nonreactive.Expect
 category: misc
-last_updated: null
-source_file: helper-nonreactive.expect.md
-summary: "```javascript\n// @inferEffectDependencies\nimport {useEffect, useRef, AUTODEPS}\
-  \ from 'react';\nfunction useCustomRef() {\n  const ref = useRef();\n  return ref;\n\
-  }\nfunction NonReactiveWrapper() {\n  const r..."
 tags:
 - javascript
-title: Helper Nonreactive.Expect
+last_updated: null
+source_file: helper-nonreactive.expect.md
 ---
-
 ## Input
 
 ```javascript

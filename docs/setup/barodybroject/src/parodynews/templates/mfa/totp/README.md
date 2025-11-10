@@ -1,16 +1,14 @@
 ---
+title: TOTP Authentication Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block headtitle %}Setup Authenticator App{% endblock %}'
 tags:
 - python
 - docker
 - azure
 - setup
-title: TOTP Authentication Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # TOTP Authentication Templates Directory
 
 ## Purpose

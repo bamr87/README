@@ -1,22 +1,14 @@
 ---
+title: "\U0001F4DA DONTREADME.md: The Forbidden Librarian's Grimoire"
 category: api
-description: Mystical guardian that weaves documentation into an enchanted library
-  of knowledge, luring both AI and humans into the depths of understanding
-last_updated: null
-name: README Architect Agent - The Forbidden Librarian
-source_file: dontreadme.md
-summary: "1. \U0001F4D6 The Documentation Archaeologist\n    Scans every directory\
-  \ in the repository\n    Discovers existing README.md files\n    Analyzes content\
-  \ structure and quality\n    Identifies missing or outdated do..."
 tags:
 - python
 - api
 - testing
 - api
-title: '📚 DONTREADME.md: The Forbidden Librarian''s Grimoire'
+last_updated: null
+source_file: dontreadme.md
 ---
-
-
 # 📚 DONTREADME.md: The Forbidden Librarian's Grimoire
 
 *⚠️ ARCANE DOCUMENTATION MAGIC DETECTED ⚠️*  

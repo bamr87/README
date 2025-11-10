@@ -1,16 +1,12 @@
 ---
+title: Function Expression Maybe Mutates Hook Return Value.Expect
 category: api
-last_updated: null
-source_file: function-expression-maybe-mutates-hook-return-value.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const id = useSelectedEntitytId();\n\
-  \  // this example should infer id as mutable, and then infer onLoad` as mutable,\n\
-  \  // and be rejected because onLoad canno..."
 tags:
 - javascript
 - api
-title: Function Expression Maybe Mutates Hook Return Value.Expect
+last_updated: null
+source_file: function-expression-maybe-mutates-hook-return-value.expect.md
 ---
-
 ## Input
 
 ```javascript

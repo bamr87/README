@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Hook After Early Return.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-after-early-return.expect.md
-summary: "```javascript\nfunction Component(props) {\n  if (props.cond) {\n    return\
-  \ null;\n  }\n  return useHook();\n}"
 tags:
 - javascript
-title: Error.Invalid Hook After Early Return.Expect
+last_updated: null
+source_file: error.invalid-hook-after-early-return.expect.md
 ---
-
 ## Input
 
 ```javascript

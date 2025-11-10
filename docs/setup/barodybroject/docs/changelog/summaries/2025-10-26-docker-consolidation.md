@@ -1,17 +1,14 @@
 ---
+title: Docker Configuration Consolidation Change Documentation
 category: setup
-last_updated: null
-source_file: 2025-10-26-docker-consolidation.md
-summary: Consolidated 3 separate dockercompose files into a single unified configuration
-  using Docker Compose profiles, significantly simplifying the development workflow
-  and reducing configuration complexity.
 tags:
 - python
 - docker
 - database
 - testing
 - setup
-title: Docker Configuration Consolidation Change Documentation
+last_updated: null
+source_file: 2025-10-26-docker-consolidation.md
 ---
 # Docker Configuration Consolidation Change Documentation
 

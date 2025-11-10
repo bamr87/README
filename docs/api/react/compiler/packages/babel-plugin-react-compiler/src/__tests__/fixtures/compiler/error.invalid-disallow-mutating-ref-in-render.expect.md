@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Disallow Mutating Ref In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-disallow-mutating-ref-in-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component() {\n\
-  \  const ref = useRef(null);\n  ref.current = false;"
 tags:
 - javascript
 - api
-title: Error.Invalid Disallow Mutating Ref In Render.Expect
+last_updated: null
+source_file: error.invalid-disallow-mutating-ref-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

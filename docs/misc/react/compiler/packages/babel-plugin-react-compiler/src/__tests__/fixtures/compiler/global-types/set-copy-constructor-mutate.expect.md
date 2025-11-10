@@ -1,15 +1,11 @@
 ---
+title: Set Copy Constructor Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-copy-constructor-mutate.expect.md
-summary: '```javascript
-
-  import {makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Copy Constructor Mutate.Expect
+last_updated: null
+source_file: set-copy-constructor-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Babel Existing React Kitchensink Import.Expect
 category: misc
-last_updated: null
-source_file: babel-existing-react-kitchensink-import.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';
-
-  import {useState, useMemo} from ''react'';'
 tags:
 - javascript
-title: Babel Existing React Kitchensink Import.Expect
+last_updated: null
+source_file: babel-existing-react-kitchensink-import.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Object Method Shorthand.Expect
 category: misc
-last_updated: null
-source_file: object-method-shorthand.expect.md
-summary: "```javascript\nfunction Component() {\n  let obj = {\n    method() {\n \
-  \     return 1;\n    },\n  };\n  return obj.method();\n}"
 tags:
 - javascript
-title: Object Method Shorthand.Expect
+last_updated: null
+source_file: object-method-shorthand.expect.md
 ---
-
 ## Input
 
 ```javascript

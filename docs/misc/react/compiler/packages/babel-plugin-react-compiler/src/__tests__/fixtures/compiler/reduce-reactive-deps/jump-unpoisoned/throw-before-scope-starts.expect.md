@@ -1,15 +1,11 @@
 ---
+title: Throw Before Scope Starts.Expect
 category: misc
-last_updated: null
-source_file: throw-before-scope-starts.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Throw Before Scope Starts.Expect
+last_updated: null
+source_file: throw-before-scope-starts.expect.md
 ---
-
 ## Input
 
 ```javascript

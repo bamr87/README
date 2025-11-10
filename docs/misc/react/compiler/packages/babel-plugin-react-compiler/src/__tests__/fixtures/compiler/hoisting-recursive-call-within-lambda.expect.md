@@ -1,15 +1,11 @@
 ---
+title: Hoisting Recursive Call Within Lambda.Expect
 category: misc
-last_updated: null
-source_file: hoisting-recursive-call-within-lambda.expect.md
-summary: "```javascript\nfunction Foo({}) {\n  const outer = val => {\n    const fact\
-  \ = x => {\n      if (x <= 0) {\n        return 1;\n      }\n      return x  fact(x\
-  \  1);\n    };\n    return fact(val);\n  };\n  return o..."
 tags:
 - javascript
-title: Hoisting Recursive Call Within Lambda.Expect
+last_updated: null
+source_file: hoisting-recursive-call-within-lambda.expect.md
 ---
-
 ## Input
 
 ```javascript

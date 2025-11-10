@@ -1,16 +1,12 @@
 ---
+title: react-cache
 category: api
-last_updated: null
-source_file: README.md
-summary: 'A basic cache for React applications. It also serves as a reference for
-  more
-
-  advanced caching implementations.'
 tags:
 - javascript
 - api
 - api
-title: react-cache
+last_updated: null
+source_file: README.md
 ---
 # react-cache
 

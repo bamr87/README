@@ -1,14 +1,11 @@
 ---
+title: Repro Hoisting.Expect
 category: misc
-last_updated: null
-source_file: repro-hoisting.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const wat = () => {\n    const\
-  \ pathname = 'wat';\n    pathname;\n  };"
 tags:
 - javascript
-title: Repro Hoisting.Expect
+last_updated: null
+source_file: repro-hoisting.expect.md
 ---
-
 ## Input
 
 ```javascript

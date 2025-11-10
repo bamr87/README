@@ -1,16 +1,14 @@
 ---
+title: Technical Implementation Details - v1.0.0
 category: setup
-last_updated: null
-source_file: technical-details.md
-summary: The v1.0.0 release represents a fundamental shift from a simple Django configuration
-  to an enterprisegrade, environmentaware configuration system.
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Technical Implementation Details - v1.0.0
+last_updated: null
+source_file: technical-details.md
 ---
 # Technical Implementation Details - v1.0.0
 

@@ -1,15 +1,11 @@
 ---
+title: Allow Ref Type Cast In Render.Expect
 category: misc
-last_updated: null
-source_file: allow-ref-type-cast-in-render.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Allow Ref Type Cast In Render.Expect
+last_updated: null
+source_file: allow-ref-type-cast-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

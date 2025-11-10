@@ -1,15 +1,11 @@
 ---
+title: Error.Emit Freeze Conflicting Global.Expect
 category: misc
-last_updated: null
-source_file: error.emit-freeze-conflicting-global.expect.md
-summary: "```javascript\n// @enableEmitFreeze @instrumentForget\nfunction useFoo(props)\
-  \ {\n  const DEV = 'conflicting global';\n  console.log(DEV);\n  return foo(props.x);\n\
-  }"
 tags:
 - javascript
-title: Error.Emit Freeze Conflicting Global.Expect
+last_updated: null
+source_file: error.emit-freeze-conflicting-global.expect.md
 ---
-
 ## Input
 
 ```javascript

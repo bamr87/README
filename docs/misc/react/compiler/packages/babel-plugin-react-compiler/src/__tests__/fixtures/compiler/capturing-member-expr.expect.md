@@ -1,14 +1,11 @@
 ---
+title: Capturing Member Expr.Expect
 category: misc
-last_updated: null
-source_file: capturing-member-expr.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  let x = function\
-  \ () {\n    console.log(z.a);\n  };\n  return x;\n}"
 tags:
 - javascript
-title: Capturing Member Expr.Expect
+last_updated: null
+source_file: capturing-member-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

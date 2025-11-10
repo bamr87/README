@@ -1,15 +1,11 @@
 ---
+title: Infer Function Uncond Optional Hoists Other Dep.Expect
 category: misc
-last_updated: null
-source_file: infer-function-uncond-optional-hoists-other-dep.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Uncond Optional Hoists Other Dep.Expect
+last_updated: null
+source_file: infer-function-uncond-optional-hoists-other-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

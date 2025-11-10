@@ -1,14 +1,11 @@
 ---
+title: Jsx Fragment.Expect
 category: misc
-last_updated: null
-source_file: jsx-fragment.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  return (\n    <>\n      Hello {props.greeting}{'\
-  \ '}\n      <div>\n        <>Text</>\n      </div>\n    </>\n  );\n}"
 tags:
 - javascript
-title: Jsx Fragment.Expect
+last_updated: null
+source_file: jsx-fragment.expect.md
 ---
-
 ## Input
 
 ```javascript

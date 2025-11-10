@@ -1,18 +1,12 @@
 ---
+title: Error.Nested Hook In Normal Function.Expect
 category: setup
-last_updated: null
-source_file: error.nested-hook-in-normal-function.expect.md
-summary: '```javascript
-
-  // @validateNoDynamicallyCreatedComponentsOrHooks
-
-  import {useState} from ''react'';'
 tags:
 - javascript
 - setup
-title: Error.Nested Hook In Normal Function.Expect
+last_updated: null
+source_file: error.nested-hook-in-normal-function.expect.md
 ---
-
 ## Input
 
 ```javascript

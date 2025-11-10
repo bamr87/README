@@ -1,17 +1,11 @@
 ---
+title: Invalid Fnexpr Reference.Expect
 category: misc
-last_updated: null
-source_file: invalid-fnexpr-reference.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Invalid Fnexpr Reference.Expect
+last_updated: null
+source_file: invalid-fnexpr-reference.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,14 @@
 ---
+title: Django CMS Removal Guide
 category: setup
-last_updated: null
-source_file: CMS_REMOVAL_GUIDE.md
-summary: This document details the systematic removal of Django CMS dependencies from
-  the Barodybroject application. The removal was implemented using careful commenting
-  rather than deletion, allowing for pote...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Django CMS Removal Guide
+last_updated: null
+source_file: CMS_REMOVAL_GUIDE.md
 ---
 # Django CMS Removal Guide
 

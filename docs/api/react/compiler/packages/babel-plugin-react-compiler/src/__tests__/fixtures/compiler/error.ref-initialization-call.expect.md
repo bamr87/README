@@ -1,18 +1,12 @@
 ---
+title: Error.Ref Initialization Call.Expect
 category: api
-last_updated: null
-source_file: error.ref-initialization-call.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Initialization Call.Expect
+last_updated: null
+source_file: error.ref-initialization-call.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,69 +1,15 @@
 ---
-applyTo: '**/.github/workflows/*.yml,**/.github/workflows/*.yaml'
-author: Barodybroject Team
+title: GitHub Actions Workflow Standards
 category: setup
-changelog:
-- author: Barodybroject Team
-  date: '2025-10-28'
-  description: Enhanced with VS Code Copilot optimization and comprehensive Django/OpenAI
-    CI/CD patterns
-- author: Barodybroject Team
-  date: '2025-10-11'
-  description: Initial creation with core GitHub Actions workflow standards
-containerRequirements:
-  baseImage: ubuntu-latest
-  description: GitHub Actions runner environment for Django/OpenAI CI/CD pipelines
-  environment:
-    AZURE_CLIENT_ID: required-for-deployment
-    AZURE_SUBSCRIPTION_ID: required-for-deployment
-    AZURE_TENANT_ID: required-for-deployment
-    DATABASE_URL: postgresql://test_user:test_password@postgres:5432/test_db
-    DJANGO_SETTINGS_MODULE: barodybroject.settings.testing
-    OPENAI_API_KEY: mock-key-for-ci-testing
-  services:
-  - postgres:15 for database testing
-  - redis:alpine for caching tests
-created: 2025-10-11
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-- languages.instructions.md: Script execution standards and automation patterns
-- test.instructions.md: Testing automation and validation workflows
-- features.instructions.md: Feature development pipeline integration
-- frontmatter.standards.md: Unified metadata and documentation standards
-description: VS Code Copilot-optimized GitHub Actions workflow standards for Django/OpenAI
-  CI/CD automation
-file: workflows.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-notes: Emphasizes Django testing automation, OpenAI service validation, Azure deployment
-  patterns, and container-first CI/CD
-paths:
-  ci_cd_workflow_path:
-  - code_quality_validation
-  - automated_testing
-  - security_scanning
-  - container_building
-  - azure_deployment
-  - monitoring_and_alerting
-relatedEvolutions:
-- Enhanced Django/OpenAI CI/CD pipeline patterns
-- Azure Container Apps deployment automation
-- AI service testing and validation workflows
-source_file: workflows.instructions.md
-summary: 'Every workflow should include:'
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: GitHub Actions Workflow Standards
-usage: Reference for all GitHub Actions workflows, CI/CD automation, and deployment
-  pipelines for Django/OpenAI applications
-version: 1.1.0
+last_updated: null
+source_file: workflows.instructions.md
 ---
-
-
 # GitHub Actions Workflow Standards
 
 ## Workflow Structure and Organization

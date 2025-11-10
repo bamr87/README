@@ -1,15 +1,14 @@
 ---
+title: "\U0001F680 Quick Deployment Guide - Minimal Cost Setup"
 category: setup
-last_updated: null
-source_file: DEPLOYMENT-GUIDE-MINIMAL.md
-summary: "```bash\n Navigate to project root\ncd /Users/bamr87/github/barodybroject"
 tags:
 - docker
 - azure
 - api
 - database
 - testing
-title: 🚀 Quick Deployment Guide - Minimal Cost Setup
+last_updated: null
+source_file: DEPLOYMENT-GUIDE-MINIMAL.md
 ---
 # 🚀 Quick Deployment Guide - Minimal Cost Setup
 

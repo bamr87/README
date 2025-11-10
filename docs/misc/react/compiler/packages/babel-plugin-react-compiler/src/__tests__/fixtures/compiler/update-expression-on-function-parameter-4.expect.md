@@ -1,14 +1,11 @@
 ---
+title: Update Expression On Function Parameter 4.Expect
 category: misc
-last_updated: null
-source_file: update-expression-on-function-parameter-4.expect.md
-summary: "```javascript\nfunction Component([b]) {\n  let f = b;\n  let g = b;\n \
-  \ return [b, f, g];\n}"
 tags:
 - javascript
-title: Update Expression On Function Parameter 4.Expect
+last_updated: null
+source_file: update-expression-on-function-parameter-4.expect.md
 ---
-
 ## Input
 
 ```javascript

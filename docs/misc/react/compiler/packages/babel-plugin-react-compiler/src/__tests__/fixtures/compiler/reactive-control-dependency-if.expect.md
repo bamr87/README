@@ -1,15 +1,11 @@
 ---
+title: Reactive Control Dependency If.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-if.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  if (props.cond) {\n\
-  \    x = 1;\n  } else {\n    x = 2;\n  }\n  // The values assigned to x are nonreactive,\
-  \ but the value of x\n  // depends on the \"contro..."
 tags:
 - javascript
-title: Reactive Control Dependency If.Expect
+last_updated: null
+source_file: reactive-control-dependency-if.expect.md
 ---
-
 ## Input
 
 ```javascript

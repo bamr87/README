@@ -1,16 +1,14 @@
 ---
+title: Social Account Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block headtitle %}Sign In  Barody Broject{% endblock %}'
 tags:
 - python
 - docker
 - api
 - setup
-title: Social Account Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Templates Directory
 
 ## Purpose

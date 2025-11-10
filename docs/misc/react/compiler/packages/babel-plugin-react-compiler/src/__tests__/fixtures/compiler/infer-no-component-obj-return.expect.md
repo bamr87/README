@@ -1,14 +1,11 @@
 ---
+title: Infer No Component Obj Return.Expect
 category: misc
-last_updated: null
-source_file: infer-no-component-obj-return.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component(props)\
-  \ {\n  const ignore = <foo />;\n  return {foo: f(props)};\n}"
 tags:
 - javascript
-title: Infer No Component Obj Return.Expect
+last_updated: null
+source_file: infer-no-component-obj-return.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Jsx Member Expression.Expect
 category: misc
-last_updated: null
-source_file: jsx-member-expression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return (\n    <Sathya.Codes.Forget>\n\
-  \      <Foo.Bar.Baz />\n    </Sathya.Codes.Forget>\n  );\n}"
 tags:
 - javascript
-title: Jsx Member Expression.Expect
+last_updated: null
+source_file: jsx-member-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

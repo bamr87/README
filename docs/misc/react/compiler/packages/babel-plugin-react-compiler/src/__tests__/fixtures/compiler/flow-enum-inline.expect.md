@@ -1,14 +1,11 @@
 ---
+title: Flow Enum Inline.Expect
 category: misc
-last_updated: null
-source_file: flow-enum-inline.expect.md
-summary: "```javascript\n// @flow\nfunction Component(props) {\n  enum Bool {\n  \
-  \  True = 'true',\n    False = 'false',\n  }"
 tags:
 - javascript
-title: Flow Enum Inline.Expect
+last_updated: null
+source_file: flow-enum-inline.expect.md
 ---
-
 ## Input
 
 ```javascript

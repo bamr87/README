@@ -1,15 +1,12 @@
 ---
+title: Error.Update Global Should Bailout.Expect
 category: api
-last_updated: null
-source_file: error.update-global-should-bailout.expect.md
-summary: "```javascript\nlet renderCount = 0;\nfunction useFoo() {\n  renderCount\
-  \ += 1;\n  return renderCount;\n}"
 tags:
 - javascript
 - api
-title: Error.Update Global Should Bailout.Expect
+last_updated: null
+source_file: error.update-global-should-bailout.expect.md
 ---
-
 ## Input
 
 ```javascript

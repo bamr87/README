@@ -1,15 +1,11 @@
 ---
+title: Update Global In Callback.Expect
 category: misc
-last_updated: null
-source_file: update-global-in-callback.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Update Global In Callback.Expect
+last_updated: null
+source_file: update-global-in-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

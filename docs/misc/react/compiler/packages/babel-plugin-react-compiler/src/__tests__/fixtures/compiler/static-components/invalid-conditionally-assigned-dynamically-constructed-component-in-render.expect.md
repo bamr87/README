@@ -1,16 +1,12 @@
 ---
+title: Invalid Conditionally Assigned Dynamically Constructed Component In Render.Expect
 category: misc
-last_updated: null
-source_file: invalid-conditionally-assigned-dynamically-constructed-component-in-render.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateStaticComponents\nfunction Example(props)\
-  \ {\n  let Component;\n  if (props.cond) {\n    Component = createComponent();\n\
-  \  } else {\n    Component = DefaultComponent..."
 tags:
 - javascript
 - testing
-title: Invalid Conditionally Assigned Dynamically Constructed Component In Render.Expect
+last_updated: null
+source_file: invalid-conditionally-assigned-dynamically-constructed-component-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

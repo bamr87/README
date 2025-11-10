@@ -1,15 +1,12 @@
 ---
+title: Invalid Dynamically Construct Component In Render.Expect
 category: misc
-last_updated: null
-source_file: invalid-dynamically-construct-component-in-render.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateStaticComponents\nfunction Example(props)\
-  \ {\n  const Component = createComponent();\n  return <Component />;\n}"
 tags:
 - javascript
 - testing
-title: Invalid Dynamically Construct Component In Render.Expect
+last_updated: null
+source_file: invalid-dynamically-construct-component-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

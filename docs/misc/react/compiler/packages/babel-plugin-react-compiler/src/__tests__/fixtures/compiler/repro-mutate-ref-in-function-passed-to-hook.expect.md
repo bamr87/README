@@ -1,14 +1,12 @@
 ---
+title: Repro Mutate Ref In Function Passed To Hook.Expect
 category: misc
-last_updated: null
-source_file: repro-mutate-ref-in-function-passed-to-hook.expect.md
-summary: "```javascript\n// @flow\ncomponent Example() {\n  const fooRef = useRef();"
 tags:
 - javascript
 - testing
-title: Repro Mutate Ref In Function Passed To Hook.Expect
+last_updated: null
+source_file: repro-mutate-ref-in-function-passed-to-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

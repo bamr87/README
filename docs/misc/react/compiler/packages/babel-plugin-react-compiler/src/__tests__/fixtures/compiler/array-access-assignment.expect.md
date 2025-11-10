@@ -1,15 +1,11 @@
 ---
+title: Array Access Assignment.Expect
 category: misc
-last_updated: null
-source_file: array-access-assignment.expect.md
-summary: "```javascript\nfunction Component({a, b, c}) {\n  const x = [a];\n  const\
-  \ y = [null, b];\n  const z = [[], [], [c]];\n  x[0] = y[1];\n  z[0][0] = x[0];\n\
-  \  return [x, z];\n}"
 tags:
 - javascript
-title: Array Access Assignment.Expect
+last_updated: null
+source_file: array-access-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

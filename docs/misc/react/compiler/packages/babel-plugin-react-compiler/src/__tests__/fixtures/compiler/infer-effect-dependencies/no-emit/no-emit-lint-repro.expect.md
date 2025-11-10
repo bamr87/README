@@ -1,21 +1,11 @@
 ---
+title: No Emit Lint Repro.Expect
 category: misc
-last_updated: null
-source_file: no-emit-lint-repro.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @noEmit
-
-  import {print} from ''sharedruntime'';
-
-  import useEffectWrapper from ''useEffectWrapper'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
-title: No Emit Lint Repro.Expect
+last_updated: null
+source_file: no-emit-lint-repro.expect.md
 ---
-
 ## Input
 
 ```javascript

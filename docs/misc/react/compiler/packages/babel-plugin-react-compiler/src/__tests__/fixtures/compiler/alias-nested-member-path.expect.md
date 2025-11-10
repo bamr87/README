@@ -1,14 +1,11 @@
 ---
+title: Alias Nested Member Path.Expect
 category: misc
-last_updated: null
-source_file: alias-nested-member-path.expect.md
-summary: "```javascript\nfunction component() {\n  let z = [];\n  let y = {};\n  y.z\
-  \ = z;\n  let x = {};\n  x.y = y;\n  return x;\n}"
 tags:
 - javascript
-title: Alias Nested Member Path.Expect
+last_updated: null
+source_file: alias-nested-member-path.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Destructure Array Declaration To Context Var.Expect
 category: misc
-last_updated: null
-source_file: destructure-array-declaration-to-context-var.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Destructure Array Declaration To Context Var.Expect
+last_updated: null
+source_file: destructure-array-declaration-to-context-var.expect.md
 ---
-
 ## Input
 
 ```javascript

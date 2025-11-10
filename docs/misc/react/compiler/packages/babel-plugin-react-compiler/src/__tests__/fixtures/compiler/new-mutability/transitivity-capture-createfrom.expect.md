@@ -1,15 +1,11 @@
 ---
+title: Transitivity Capture Createfrom.Expect
 category: misc
-last_updated: null
-source_file: transitivity-capture-createfrom.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  typedCapture,\n  typedCreateFrom,\n  typedMutate,\n\
-  \  ValidateMemoization,\n} from 'sharedrunti..."
 tags:
 - javascript
-title: Transitivity Capture Createfrom.Expect
+last_updated: null
+source_file: transitivity-capture-createfrom.expect.md
 ---
-
 ## Input
 
 ```javascript

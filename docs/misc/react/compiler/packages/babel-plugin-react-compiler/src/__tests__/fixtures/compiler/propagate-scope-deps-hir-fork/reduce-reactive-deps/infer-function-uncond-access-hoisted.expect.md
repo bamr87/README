@@ -1,15 +1,11 @@
 ---
+title: Infer Function Uncond Access Hoisted.Expect
 category: misc
-last_updated: null
-source_file: infer-function-uncond-access-hoisted.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Uncond Access Hoisted.Expect
+last_updated: null
+source_file: infer-function-uncond-access-hoisted.expect.md
 ---
-
 ## Input
 
 ```javascript

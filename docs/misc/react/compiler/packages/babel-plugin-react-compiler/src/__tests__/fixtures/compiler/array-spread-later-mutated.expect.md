@@ -1,15 +1,11 @@
 ---
+title: Array Spread Later Mutated.Expect
 category: misc
-last_updated: null
-source_file: array-spread-later-mutated.expect.md
-summary: "``javascript\nfunction useBar({arg}) {\n  /\n    Note that mutableIterator\
-  \ is mutated by the later object spread. Therefore,\n    s.values()` should be memoized\
-  \ within the same block as the object spread...."
 tags:
 - javascript
-title: Array Spread Later Mutated.Expect
+last_updated: null
+source_file: array-spread-later-mutated.expect.md
 ---
-
 ## Input
 
 ```javascript

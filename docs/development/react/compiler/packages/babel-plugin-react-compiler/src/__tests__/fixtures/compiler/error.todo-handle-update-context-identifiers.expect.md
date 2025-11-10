@@ -1,16 +1,13 @@
 ---
+title: Error.Todo Handle Update Context Identifiers.Expect
 category: development
-last_updated: null
-source_file: error.todo-handle-update-context-identifiers.expect.md
-summary: "```javascript\nfunction useFoo() {\n  let counter = 2;\n  const fn = ()\
-  \ => {\n    return counter++;\n  };"
 tags:
 - javascript
 - aws
 - development
-title: Error.Todo Handle Update Context Identifiers.Expect
+last_updated: null
+source_file: error.todo-handle-update-context-identifiers.expect.md
 ---
-
 ## Input
 
 ```javascript

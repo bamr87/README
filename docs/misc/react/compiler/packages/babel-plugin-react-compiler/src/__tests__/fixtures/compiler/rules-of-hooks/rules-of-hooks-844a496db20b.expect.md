@@ -1,14 +1,11 @@
 ---
+title: Rules Of Hooks 844A496Db20B.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-844a496db20b.expect.md
-summary: "```javascript\n// Valid because hooks can use hooks.\nfunction useHookWithHook()\
-  \ {\n  useHook();\n}"
 tags:
 - javascript
-title: Rules Of Hooks 844A496Db20B.Expect
+last_updated: null
+source_file: rules-of-hooks-844a496db20b.expect.md
 ---
-
 ## Input
 
 ```javascript

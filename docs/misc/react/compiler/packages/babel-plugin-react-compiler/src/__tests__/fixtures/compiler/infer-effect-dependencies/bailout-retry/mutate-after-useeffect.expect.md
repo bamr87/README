@@ -1,18 +1,12 @@
 ---
+title: Mutate After Useeffect.Expect
 category: misc
-last_updated: null
-source_file: mutate-after-useeffect.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none" @loggerTestOnly
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
 - testing
-title: Mutate After Useeffect.Expect
+last_updated: null
+source_file: mutate-after-useeffect.expect.md
 ---
-
 ## Input
 
 ```javascript

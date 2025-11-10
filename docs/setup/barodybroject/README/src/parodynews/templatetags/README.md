@@ -1,19 +1,13 @@
 ---
+title: templatetags Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Load custom filters in templates >
-
-  {% load customfilters %}'
 tags:
 - python
 - docker
 - setup
-title: templatetags Directory
+last_updated: null
+source_file: README.md
 ---
-
 # templatetags Directory
 
 ## Purpose

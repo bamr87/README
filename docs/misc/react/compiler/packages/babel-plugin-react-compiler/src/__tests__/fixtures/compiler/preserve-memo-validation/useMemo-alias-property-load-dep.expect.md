@@ -1,19 +1,11 @@
 ---
+title: Usememo Alias Property Load Dep.Expect
 category: misc
-last_updated: null
-source_file: useMemo-alias-property-load-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Alias Property Load Dep.Expect
+last_updated: null
+source_file: useMemo-alias-property-load-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

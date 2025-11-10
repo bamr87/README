@@ -1,14 +1,11 @@
 ---
+title: Reactive Scope Grouping.Expect
 category: misc
-last_updated: null
-source_file: reactive-scope-grouping.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = {};\n  let y = [];\n  let z =\
-  \ {};\n  y.push(z);\n  x.y = y;"
 tags:
 - javascript
-title: Reactive Scope Grouping.Expect
+last_updated: null
+source_file: reactive-scope-grouping.expect.md
 ---
-
 ## Input
 
 ```javascript

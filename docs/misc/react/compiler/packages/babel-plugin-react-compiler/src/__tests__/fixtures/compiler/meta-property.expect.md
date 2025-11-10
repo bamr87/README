@@ -1,13 +1,11 @@
 ---
+title: Meta Property.Expect
 category: misc
-last_updated: null
-source_file: meta-property.expect.md
-summary: "```javascript\nfunction a() {\n  return import.meta.url;\n}"
 tags:
 - javascript
-title: Meta Property.Expect
+last_updated: null
+source_file: meta-property.expect.md
 ---
-
 ## Input
 
 ```javascript

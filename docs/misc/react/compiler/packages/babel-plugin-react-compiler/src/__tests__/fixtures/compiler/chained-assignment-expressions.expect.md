@@ -1,15 +1,11 @@
 ---
+title: Chained Assignment Expressions.Expect
 category: misc
-last_updated: null
-source_file: chained-assignment-expressions.expect.md
-summary: "```javascript\nfunction foo() {\n  const x = {x: 0};\n  const y = {z: 0};\n\
-  \  const z = {z: 0};\n  x.x += y.y = 1;\n  z.z += y.y = x.x &= 3;\n  return z;\n\
-  }"
 tags:
 - javascript
-title: Chained Assignment Expressions.Expect
+last_updated: null
+source_file: chained-assignment-expressions.expect.md
 ---
-
 ## Input
 
 ```javascript

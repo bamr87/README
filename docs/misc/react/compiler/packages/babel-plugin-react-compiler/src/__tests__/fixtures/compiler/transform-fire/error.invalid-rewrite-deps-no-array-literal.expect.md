@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Rewrite Deps No Array Literal.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rewrite-deps-no-array-literal.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Rewrite Deps No Array Literal.Expect
+last_updated: null
+source_file: error.invalid-rewrite-deps-no-array-literal.expect.md
 ---
-
 ## Input
 
 ```javascript

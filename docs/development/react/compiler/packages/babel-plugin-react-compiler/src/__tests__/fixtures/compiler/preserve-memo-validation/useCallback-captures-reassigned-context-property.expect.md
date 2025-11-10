@@ -1,20 +1,12 @@
 ---
+title: Usecallback Captures Reassigned Context Property.Expect
 category: development
-last_updated: null
-source_file: useCallback-captures-reassigned-context-property.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Usecallback Captures Reassigned Context Property.Expect
+last_updated: null
+source_file: useCallback-captures-reassigned-context-property.expect.md
 ---
-
 ## Input
 
 ```javascript

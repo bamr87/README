@@ -1,15 +1,11 @@
 ---
+title: Hoisting Nested Const Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisting-nested-const-declaration.expect.md
-summary: "```javascript\nfunction hoisting() {\n  const qux = () => {\n    let result;\n\
-  \    {\n      result = foo();\n    }\n    return result;\n  };\n  const foo = ()\
-  \ => {\n    return bar + baz;\n  };\n  const bar = 3;\n  ..."
 tags:
 - javascript
-title: Hoisting Nested Const Declaration.Expect
+last_updated: null
+source_file: hoisting-nested-const-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

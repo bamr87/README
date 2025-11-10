@@ -1,13 +1,11 @@
 ---
+title: Ssa If Else.Expect
 category: misc
-last_updated: null
-source_file: ssa-if-else.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;"
 tags:
 - javascript
-title: Ssa If Else.Expect
+last_updated: null
+source_file: ssa-if-else.expect.md
 ---
-
 ## Input
 
 ```javascript

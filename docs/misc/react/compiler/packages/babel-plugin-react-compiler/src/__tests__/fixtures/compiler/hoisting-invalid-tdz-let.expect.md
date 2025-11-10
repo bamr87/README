@@ -1,13 +1,11 @@
 ---
+title: Hoisting Invalid Tdz Let.Expect
 category: misc
-last_updated: null
-source_file: hoisting-invalid-tdz-let.expect.md
-summary: "```javascript\nfunction Foo() {\n  const getX = () => x;\n  console.log(getX());"
 tags:
 - javascript
-title: Hoisting Invalid Tdz Let.Expect
+last_updated: null
+source_file: hoisting-invalid-tdz-let.expect.md
 ---
-
 ## Input
 
 ```javascript

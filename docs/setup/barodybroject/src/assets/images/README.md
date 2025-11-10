@@ -1,21 +1,13 @@
 ---
+title: images Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '``markdown
-
-  !Application home page
-
-  !AI assistants interface
-
-  ``'
 tags:
 - python
 - docker
 - setup
-title: images Directory
+last_updated: null
+source_file: README.md
 ---
-
 # images Directory
 
 ## Purpose

@@ -1,15 +1,12 @@
 ---
+title: Django Forms Update
 category: setup
-last_updated: null
-source_file: django-forms-update.md
-summary: To abstract the capability of dynamically populating form fields based on
-  a dropdown selection so that it can be applied to every form in your Django project,
-  you can create a reusable form mixin and ...
 tags:
 - python
 - javascript
 - setup
-title: Django Forms Update
+last_updated: null
+source_file: django-forms-update.md
 ---
 To abstract the capability of dynamically populating form fields based on a dropdown selection so that it can be applied to every form in your Django project, you can create a reusable form mixin and JavaScript utility. Here's how you can achieve this:
 

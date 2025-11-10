@@ -1,14 +1,11 @@
 ---
+title: Jsx Empty Expression.Expect
 category: misc
-last_updated: null
-source_file: jsx-empty-expression.expect.md
-summary: "```javascript\nexport function Component(props) {\n  return (\n    <div>\n\
-  \      {}\n      {props.a}\n    </div>\n  );\n}"
 tags:
 - javascript
-title: Jsx Empty Expression.Expect
+last_updated: null
+source_file: jsx-empty-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

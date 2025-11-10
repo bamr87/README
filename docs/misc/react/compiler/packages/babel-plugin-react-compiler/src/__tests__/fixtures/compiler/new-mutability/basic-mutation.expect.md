@@ -1,15 +1,11 @@
 ---
+title: Basic Mutation.Expect
 category: misc
-last_updated: null
-source_file: basic-mutation.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
-  \ b}) {\n  const x = {a};\n  const y = [b];\n  y.x = x;\n  mutate(y);\n  return\
-  \ <div>{x}</div>;\n}"
 tags:
 - javascript
-title: Basic Mutation.Expect
+last_updated: null
+source_file: basic-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

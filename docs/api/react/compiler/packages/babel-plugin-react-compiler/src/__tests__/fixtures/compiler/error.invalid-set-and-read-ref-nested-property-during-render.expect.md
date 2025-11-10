@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Set And Read Ref Nested Property During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-set-and-read-ref-nested-property-during-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef({inner: null});\n  ref.current.inner = props.value;\n\
-  \  return ref.current.inner;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Set And Read Ref Nested Property During Render.Expect
+last_updated: null
+source_file: error.invalid-set-and-read-ref-nested-property-during-render.expect.md
 ---
-
 ## Input
 
 ```javascript

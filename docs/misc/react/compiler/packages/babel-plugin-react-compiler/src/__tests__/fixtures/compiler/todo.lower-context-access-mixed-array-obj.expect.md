@@ -1,15 +1,11 @@
 ---
+title: Todo.Lower Context Access Mixed Array Obj.Expect
 category: misc
-last_updated: null
-source_file: todo.lower-context-access-mixed-array-obj.expect.md
-summary: "```javascript\n// @lowerContextAccess\nfunction App() {\n  const context\
-  \ = useContext(MyContext);\n  const [foo] = context;\n  const {bar} = context;\n\
-  \  return <Bar foo={foo} bar={bar} />;\n}"
 tags:
 - javascript
-title: Todo.Lower Context Access Mixed Array Obj.Expect
+last_updated: null
+source_file: todo.lower-context-access-mixed-array-obj.expect.md
 ---
-
 ## Input
 
 ```javascript

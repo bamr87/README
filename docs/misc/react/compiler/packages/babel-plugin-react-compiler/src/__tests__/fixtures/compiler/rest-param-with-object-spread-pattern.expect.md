@@ -1,14 +1,11 @@
 ---
+title: Rest Param With Object Spread Pattern.Expect
 category: misc
-last_updated: null
-source_file: rest-param-with-object-spread-pattern.expect.md
-summary: "```javascript\nfunction Component(foo, ...{bar}) {\n  return [foo, bar];\n\
-  }"
 tags:
 - javascript
-title: Rest Param With Object Spread Pattern.Expect
+last_updated: null
+source_file: rest-param-with-object-spread-pattern.expect.md
 ---
-
 ## Input
 
 ```javascript

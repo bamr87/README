@@ -1,26 +1,16 @@
 ---
-author: Jane Smith
+title: 'From Excel Expert to Programmer: Unleashing the Untapped Potential of Spreadsheet
+  Savvy'
 category: api
-description: Explore the connections between advanced Excel usage and programming
-  skills, encouraging finance professionals to transition into IT.
-last_updated: null
-published_at: '2025-03-13'
-slug: excel-to-programming
-source_file: 2025-03-13-excel-to-programming.md
-summary: Imagine a world where your trusty Excel workbook comes alive, communicating
-  intelligently, interacting seamlessly with databases, and making automatic adjustments
-  to reflect the most current data inpu...
 tags:
 - python
 - javascript
 - azure
 - api
 - database
-title: 'From Excel Expert to Programmer: Unleashing the Untapped Potential of Spreadsheet
-  Savvy'
+last_updated: null
+source_file: 2025-03-13-excel-to-programming.md
 ---
-
-
 # From Excel Expert to Programmer: Unleashing the Untapped Potential of Spreadsheet Savvy
 
 ## Introduction

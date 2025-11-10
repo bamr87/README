@@ -1,14 +1,11 @@
 ---
+title: Object Expression Captures Function With Global Mutation.Expect
 category: misc
-last_updated: null
-source_file: object-expression-captures-function-with-global-mutation.expect.md
-summary: "```javascript\nfunction Foo() {\n  const x = () => {\n    window.href =\
-  \ 'foo';\n  };\n  const y = {x};\n  return <Bar y={y} />;\n}"
 tags:
 - javascript
-title: Object Expression Captures Function With Global Mutation.Expect
+last_updated: null
+source_file: object-expression-captures-function-with-global-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

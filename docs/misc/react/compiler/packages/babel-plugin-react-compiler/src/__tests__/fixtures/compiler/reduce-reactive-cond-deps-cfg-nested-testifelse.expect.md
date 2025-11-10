@@ -1,15 +1,11 @@
 ---
+title: Reduce Reactive Cond Deps Cfg Nested Testifelse.Expect
 category: misc
-last_updated: null
-source_file: reduce-reactive-cond-deps-cfg-nested-testifelse.expect.md
-summary: '```javascript
-
-  import {setProperty} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reduce Reactive Cond Deps Cfg Nested Testifelse.Expect
+last_updated: null
+source_file: reduce-reactive-cond-deps-cfg-nested-testifelse.expect.md
 ---
-
 ## Input
 
 ```javascript

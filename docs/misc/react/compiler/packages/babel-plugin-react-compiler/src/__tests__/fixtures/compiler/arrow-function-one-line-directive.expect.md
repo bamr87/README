@@ -1,14 +1,11 @@
 ---
+title: Arrow Function One Line Directive.Expect
 category: misc
-last_updated: null
-source_file: arrow-function-one-line-directive.expect.md
-summary: "```javascript\nfunction useFoo() {\n  const update = () => {\n    'worklet';\n\
-  \    return 1;\n  };\n  return update;\n}"
 tags:
 - javascript
-title: Arrow Function One Line Directive.Expect
+last_updated: null
+source_file: arrow-function-one-line-directive.expect.md
 ---
-
 ## Input
 
 ```javascript

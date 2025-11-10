@@ -1,17 +1,11 @@
 ---
+title: Allow Mutating Ref In Callback Passed To Jsx Indirect.Expect
 category: misc
-last_updated: null
-source_file: allow-mutating-ref-in-callback-passed-to-jsx-indirect.expect.md
-summary: '```javascript
-
-  // @validateRefAccessDuringRender
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Allow Mutating Ref In Callback Passed To Jsx Indirect.Expect
+last_updated: null
+source_file: allow-mutating-ref-in-callback-passed-to-jsx-indirect.expect.md
 ---
-
 ## Input
 
 ```javascript

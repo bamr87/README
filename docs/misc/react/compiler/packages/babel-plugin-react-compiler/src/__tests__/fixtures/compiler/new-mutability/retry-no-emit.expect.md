@@ -1,20 +1,12 @@
 ---
+title: Retry No Emit.Expect
 category: misc
-last_updated: null
-source_file: retry-no-emit.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @noEmit @panicThreshold:"none" @loggerTestOnly @enableNewMutationAliasingModel
-
-  import {print} from ''sharedruntime'';
-
-  import useEffectWrapper from ''useEffectWra...'
 tags:
 - javascript
 - testing
-title: Retry No Emit.Expect
+last_updated: null
+source_file: retry-no-emit.expect.md
 ---
-
 ## Input
 
 ```javascript

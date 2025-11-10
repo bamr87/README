@@ -1,27 +1,14 @@
 ---
+title: CHANGELOG - Template Improvements & Testing
 category: setup
-last_updated: null
-source_file: CHANGELOG_SUMMARY.md
-summary: '1. Release Summary
-
-  2. Template Improvements
-
-  3. Testing Results
-
-  4. Files Modified
-
-  5. Documentation Created
-
-  6. Known Issues
-
-  7. Migration Guide'
 tags:
 - python
 - javascript
 - docker
 - aws
 - azure
-title: CHANGELOG - Template Improvements & Testing
+last_updated: null
+source_file: CHANGELOG_SUMMARY.md
 ---
 # CHANGELOG - Template Improvements & Testing
 

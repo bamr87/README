@@ -1,15 +1,11 @@
 ---
+title: Recursive Function Expression.Expect
 category: misc
-last_updated: null
-source_file: recursive-function-expression.expect.md
-summary: "```javascript\nfunction Component1() {\n  const x = callback(10);\n  function\
-  \ callback(x) {\n    if (x == 0) {\n      return null;\n    }\n    return callback(x\
-  \  1);\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Recursive Function Expression.Expect
+last_updated: null
+source_file: recursive-function-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

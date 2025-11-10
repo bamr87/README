@@ -1,15 +1,11 @@
 ---
+title: Fbt No Whitespace Btw Text And Param.Expect
 category: misc
-last_updated: null
-source_file: fbt-no-whitespace-btw-text-and-param.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt No Whitespace Btw Text And Param.Expect
+last_updated: null
+source_file: fbt-no-whitespace-btw-text-and-param.expect.md
 ---
-
 ## Input
 
 ```javascript

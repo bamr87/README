@@ -1,19 +1,11 @@
 ---
+title: Context Variable As Jsx Element Tag.Expect
 category: misc
-last_updated: null
-source_file: context-variable-as-jsx-element-tag.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Context Variable As Jsx Element Tag.Expect
+last_updated: null
+source_file: context-variable-as-jsx-element-tag.expect.md
 ---
-
 ## Input
 
 ```javascript

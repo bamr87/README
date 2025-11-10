@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Access Ref In Reducer Init.Expect
 category: api
-last_updated: null
-source_file: error.invalid-access-ref-in-reducer-init.expect.md
-summary: '```javascript
-
-  import {useReducer, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Access Ref In Reducer Init.Expect
+last_updated: null
+source_file: error.invalid-access-ref-in-reducer-init.expect.md
 ---
-
 ## Input
 
 ```javascript

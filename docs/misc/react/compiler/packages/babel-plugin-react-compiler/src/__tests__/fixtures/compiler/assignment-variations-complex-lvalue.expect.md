@@ -1,14 +1,11 @@
 ---
+title: Assignment Variations Complex Lvalue.Expect
 category: misc
-last_updated: null
-source_file: assignment-variations-complex-lvalue.expect.md
-summary: "```javascript\nfunction g() {\n  const x = {y: {z: 1}};\n  x.y.z = x.y.z\
-  \ + 1;\n  x.y.z = 2;\n  return x;\n}"
 tags:
 - javascript
-title: Assignment Variations Complex Lvalue.Expect
+last_updated: null
+source_file: assignment-variations-complex-lvalue.expect.md
 ---
-
 ## Input
 
 ```javascript

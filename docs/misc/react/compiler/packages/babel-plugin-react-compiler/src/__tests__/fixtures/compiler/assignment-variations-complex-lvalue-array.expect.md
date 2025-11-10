@@ -1,14 +1,11 @@
 ---
+title: Assignment Variations Complex Lvalue Array.Expect
 category: misc
-last_updated: null
-source_file: assignment-variations-complex-lvalue-array.expect.md
-summary: "```javascript\nfunction foo() {\n  const a = [[1]];\n  const first = a.at(0);\n\
-  \  first.set(0, 2);\n  return a;\n}"
 tags:
 - javascript
-title: Assignment Variations Complex Lvalue Array.Expect
+last_updated: null
+source_file: assignment-variations-complex-lvalue-array.expect.md
 ---
-
 ## Input
 
 ```javascript

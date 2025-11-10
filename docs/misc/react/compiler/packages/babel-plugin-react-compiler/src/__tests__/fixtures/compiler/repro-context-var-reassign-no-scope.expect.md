@@ -1,18 +1,12 @@
 ---
+title: Repro Context Var Reassign No Scope.Expect
 category: misc
-last_updated: null
-source_file: repro-context-var-reassign-no-scope.expect.md
-summary: '```javascript
-
-  import {useState, useEffect} from ''react'';
-
-  import {invoke, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Repro Context Var Reassign No Scope.Expect
+last_updated: null
+source_file: repro-context-var-reassign-no-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

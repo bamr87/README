@@ -1,15 +1,11 @@
 ---
+title: Dont Merge Overlapping Scopes With Intermediate Reassignment.Expect
 category: misc
-last_updated: null
-source_file: dont-merge-overlapping-scopes-with-intermediate-reassignment.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Dont Merge Overlapping Scopes With Intermediate Reassignment.Expect
+last_updated: null
+source_file: dont-merge-overlapping-scopes-with-intermediate-reassignment.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Error.Usememo Property Call Dep.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-property-call-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Error.Usememo Property Call Dep.Expect
+last_updated: null
+source_file: error.useMemo-property-call-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

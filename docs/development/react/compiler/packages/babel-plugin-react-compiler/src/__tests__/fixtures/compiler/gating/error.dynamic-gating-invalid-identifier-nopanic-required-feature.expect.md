@@ -1,20 +1,12 @@
 ---
+title: Error.Dynamic Gating Invalid Identifier Nopanic Required Feature.Expect
 category: development
-last_updated: null
-source_file: error.dynamic-gating-invalid-identifier-nopanic-required-feature.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @panicThreshold:"none" @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Dynamic Gating Invalid Identifier Nopanic Required Feature.Expect
+last_updated: null
+source_file: error.dynamic-gating-invalid-identifier-nopanic-required-feature.expect.md
 ---
-
 ## Input
 
 ```javascript

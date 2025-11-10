@@ -1,12 +1,10 @@
 ---
+title: react-native-fusebox
 category: misc
-last_updated: null
-source_file: README.md
-summary: This package is private and not expected to become public anytime soon. Consider
-  using reactdevtoolsinline or reactdevtoolscore.
 tags:
 - javascript
-title: react-native-fusebox
+last_updated: null
+source_file: README.md
 ---
 # react-native-fusebox
 

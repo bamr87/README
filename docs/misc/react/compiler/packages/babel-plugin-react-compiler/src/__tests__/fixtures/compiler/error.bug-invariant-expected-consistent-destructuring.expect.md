@@ -1,17 +1,11 @@
 ---
+title: Error.Bug Invariant Expected Consistent Destructuring.Expect
 category: misc
-last_updated: null
-source_file: error.bug-invariant-expected-consistent-destructuring.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {useFoo, formatB, Baz} from ''./lib'';'
 tags:
 - javascript
-title: Error.Bug Invariant Expected Consistent Destructuring.Expect
+last_updated: null
+source_file: error.bug-invariant-expected-consistent-destructuring.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Todo.Bail.Rules Of Hooks E9F9Bac89F8F.Expect
 category: misc
-last_updated: null
-source_file: todo.bail.rules-of-hooks-e9f9bac89f8f.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Todo.Bail.Rules Of Hooks E9F9Bac89F8F.Expect
+last_updated: null
+source_file: todo.bail.rules-of-hooks-e9f9bac89f8f.expect.md
 ---
-
 ## Input
 
 ```javascript

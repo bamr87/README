@@ -1,15 +1,11 @@
 ---
+title: Fbt Whitespace Within Text.Expect
 category: misc
-last_updated: null
-source_file: fbt-whitespace-within-text.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Whitespace Within Text.Expect
+last_updated: null
+source_file: fbt-whitespace-within-text.expect.md
 ---
-
 ## Input
 
 ```javascript

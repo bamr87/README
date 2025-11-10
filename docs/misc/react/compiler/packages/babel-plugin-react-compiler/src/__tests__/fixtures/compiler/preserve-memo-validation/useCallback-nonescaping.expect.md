@@ -1,18 +1,11 @@
 ---
+title: Usecallback Nonescaping.Expect
 category: misc
-last_updated: null
-source_file: useCallback-nonescaping.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableAssumeHooksFollowRulesOfReact
-  @enableTransitivelyFreezeFunctionExpressions
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Usecallback Nonescaping.Expect
+last_updated: null
+source_file: useCallback-nonescaping.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Usememo Non Literal Depslist.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-non-literal-depslist.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Error.Usememo Non Literal Depslist.Expect
+last_updated: null
+source_file: error.useMemo-non-literal-depslist.expect.md
 ---
-
 ## Input
 
 ```javascript

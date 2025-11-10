@@ -1,13 +1,12 @@
 ---
+title: Changelog
 category: api
-last_updated: null
-source_file: CHANGELOG.md
-summary: Accidentally released. See 6.1.0 for the actual changes.
 tags:
 - javascript
 - api
 - api
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
 ## 6.1.0
 

@@ -1,16 +1,14 @@
 ---
+title: PostHog Docker Deployment - AI Agent Instructions
 category: setup
-last_updated: null
-source_file: copilot-instructions.md
-summary: 'This is a Docker Composebased PostHog deployment (not the PostHog source
-  code). The system uses an eventdriven architecture with 8 interconnected services:'
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: PostHog Docker Deployment - AI Agent Instructions
+last_updated: null
+source_file: copilot-instructions.md
 ---
 # PostHog Docker Deployment - AI Agent Instructions
 

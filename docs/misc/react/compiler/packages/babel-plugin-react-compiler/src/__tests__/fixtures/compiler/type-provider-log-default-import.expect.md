@@ -1,19 +1,11 @@
 ---
+title: Type Provider Log Default Import.Expect
 category: misc
-last_updated: null
-source_file: type-provider-log-default-import.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import typedLog from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Provider Log Default Import.Expect
+last_updated: null
+source_file: type-provider-log-default-import.expect.md
 ---
-
 ## Input
 
 ```javascript

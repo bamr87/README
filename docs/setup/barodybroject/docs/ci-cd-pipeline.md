@@ -1,17 +1,14 @@
 ---
+title: CI/CD Pipeline Documentation
 category: setup
-last_updated: null
-source_file: ci-cd-pipeline.md
-summary: The Barodybroject CI/CD pipeline provides a comprehensive, foundational workflow
-  system designed for Django applications with OpenAI integration. Built from scratch
-  to replace legacy workflows, this p...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: CI/CD Pipeline Documentation
+last_updated: null
+source_file: ci-cd-pipeline.md
 ---
 # CI/CD Pipeline Documentation
 

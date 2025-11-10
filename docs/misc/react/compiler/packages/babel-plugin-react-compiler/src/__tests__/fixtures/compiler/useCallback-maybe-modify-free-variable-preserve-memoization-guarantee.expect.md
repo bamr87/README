@@ -1,19 +1,11 @@
 ---
+title: Usecallback Maybe Modify Free Variable Preserve Memoization Guarantee.Expect
 category: misc
-last_updated: null
-source_file: useCallback-maybe-modify-free-variable-preserve-memoization-guarantee.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Maybe Modify Free Variable Preserve Memoization Guarantee.Expect
+last_updated: null
+source_file: useCallback-maybe-modify-free-variable-preserve-memoization-guarantee.expect.md
 ---
-
 ## Input
 
 ```javascript

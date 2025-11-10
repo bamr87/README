@@ -1,15 +1,11 @@
 ---
+title: Repro Returned Inner Fn Mutates Context.Expect
 category: misc
-last_updated: null
-source_file: repro-returned-inner-fn-mutates-context.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Returned Inner Fn Mutates Context.Expect
+last_updated: null
+source_file: repro-returned-inner-fn-mutates-context.expect.md
 ---
-
 ## Input
 
 ```javascript

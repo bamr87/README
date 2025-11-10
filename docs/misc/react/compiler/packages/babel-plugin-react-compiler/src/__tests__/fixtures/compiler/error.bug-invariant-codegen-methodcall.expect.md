@@ -1,14 +1,11 @@
 ---
+title: Error.Bug Invariant Codegen Methodcall.Expect
 category: misc
-last_updated: null
-source_file: error.bug-invariant-codegen-methodcall.expect.md
-summary: "```javascript\nconst YearsAndMonthsSince = () => {\n  const diff = foo();\n\
-  \  const months = Math.floor(diff.bar());\n  return <>{months}</>;\n};"
 tags:
 - javascript
-title: Error.Bug Invariant Codegen Methodcall.Expect
+last_updated: null
+source_file: error.bug-invariant-codegen-methodcall.expect.md
 ---
-
 ## Input
 
 ```javascript

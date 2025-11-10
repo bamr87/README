@@ -1,17 +1,11 @@
 ---
+title: Valid Setstate In Effect From Ref Arithmetic.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-effect-from-ref-arithmetic.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects @enableAllowSetStateFromRefsInEffects
-
-  import {useState, useRef, useLayoutEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Effect From Ref Arithmetic.Expect
+last_updated: null
+source_file: valid-setState-in-effect-from-ref-arithmetic.expect.md
 ---
-
 ## Input
 
 ```javascript

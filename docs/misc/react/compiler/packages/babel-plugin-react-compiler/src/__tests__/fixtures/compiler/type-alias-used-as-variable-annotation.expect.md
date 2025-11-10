@@ -1,15 +1,11 @@
 ---
+title: Type Alias Used As Variable Annotation.Expect
 category: misc
-last_updated: null
-source_file: type-alias-used-as-variable-annotation.expect.md
-summary: "```javascript\n// @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions\n\
-  type Bar = string;\nfunction TypeAliasUsedAsVariableAnnotation() {\n  type Foo =\
-  \ Bar;\n  const fun = f =..."
 tags:
 - javascript
-title: Type Alias Used As Variable Annotation.Expect
+last_updated: null
+source_file: type-alias-used-as-variable-annotation.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Todo Infer Function Uncond Optionals Hoisted.Expect
 category: misc
-last_updated: null
-source_file: todo-infer-function-uncond-optionals-hoisted.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Todo Infer Function Uncond Optionals Hoisted.Expect
+last_updated: null
+source_file: todo-infer-function-uncond-optionals-hoisted.expect.md
 ---
-
 ## Input
 
 ```javascript

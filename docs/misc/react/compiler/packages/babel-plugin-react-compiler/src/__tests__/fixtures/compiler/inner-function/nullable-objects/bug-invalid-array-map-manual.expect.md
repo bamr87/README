@@ -1,15 +1,11 @@
 ---
+title: Bug Invalid Array Map Manual.Expect
 category: misc
-last_updated: null
-source_file: bug-invalid-array-map-manual.expect.md
-summary: "```javascript\nfunction useFoo({arr1, arr2}) {\n  const cb = e => arr2[0].value\
-  \ + e.value;\n  const y = [];\n  for (let i = 0; i < arr1.length; i++) {\n    y.push(cb(arr1[i]));\n\
-  \  }\n  return y;\n}"
 tags:
 - javascript
-title: Bug Invalid Array Map Manual.Expect
+last_updated: null
+source_file: bug-invalid-array-map-manual.expect.md
 ---
-
 ## Input
 
 ```javascript

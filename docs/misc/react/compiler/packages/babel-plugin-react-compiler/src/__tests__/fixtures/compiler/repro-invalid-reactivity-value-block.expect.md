@@ -1,14 +1,11 @@
 ---
+title: Repro Invalid Reactivity Value Block.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-reactivity-value-block.expect.md
-summary: "```javascript\nimport {\n  CONSTTRUE,\n  identity,\n  makeObjectPrimitives,\n\
-  \  useNoAlias,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Repro Invalid Reactivity Value Block.Expect
+last_updated: null
+source_file: repro-invalid-reactivity-value-block.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Else Branch Scope Unpoisoned.Expect
 category: misc
-last_updated: null
-source_file: else-branch-scope-unpoisoned.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Else Branch Scope Unpoisoned.Expect
+last_updated: null
+source_file: else-branch-scope-unpoisoned.expect.md
 ---
-
 ## Input
 
 ```javascript

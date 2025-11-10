@@ -1,15 +1,11 @@
 ---
+title: Repro Undefined Expression Of Jsxexpressioncontainer.Expect
 category: misc
-last_updated: null
-source_file: repro-undefined-expression-of-jsxexpressioncontainer.expect.md
-summary: '```javascript
-
-  import {StaticText1, Stringify, Text} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Undefined Expression Of Jsxexpressioncontainer.Expect
+last_updated: null
+source_file: repro-undefined-expression-of-jsxexpressioncontainer.expect.md
 ---
-
 ## Input
 
 ```javascript

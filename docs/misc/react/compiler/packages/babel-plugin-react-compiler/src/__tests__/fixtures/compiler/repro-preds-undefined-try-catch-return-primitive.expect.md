@@ -1,15 +1,11 @@
 ---
+title: Repro Preds Undefined Try Catch Return Primitive.Expect
 category: misc
-last_updated: null
-source_file: repro-preds-undefined-try-catch-return-primitive.expect.md
-summary: '```javascript
-
-  // @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions'
 tags:
 - javascript
-title: Repro Preds Undefined Try Catch Return Primitive.Expect
+last_updated: null
+source_file: repro-preds-undefined-try-catch-return-primitive.expect.md
 ---
-
 ## Input
 
 ```javascript

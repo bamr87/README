@@ -1,17 +1,11 @@
 ---
+title: Rename Source Variables Nested Object Method.Expect
 category: misc
-last_updated: null
-source_file: rename-source-variables-nested-object-method.expect.md
-summary: '```javascript
-
-  // @enableChangeVariableCodegen
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Rename Source Variables Nested Object Method.Expect
+last_updated: null
+source_file: rename-source-variables-nested-object-method.expect.md
 ---
-
 ## Input
 
 ```javascript

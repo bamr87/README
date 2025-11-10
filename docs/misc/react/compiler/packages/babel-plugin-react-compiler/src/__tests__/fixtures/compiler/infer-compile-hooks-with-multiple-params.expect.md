@@ -1,17 +1,11 @@
 ---
+title: Infer Compile Hooks With Multiple Params.Expect
 category: misc
-last_updated: null
-source_file: infer-compile-hooks-with-multiple-params.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Compile Hooks With Multiple Params.Expect
+last_updated: null
+source_file: infer-compile-hooks-with-multiple-params.expect.md
 ---
-
 ## Input
 
 ```javascript

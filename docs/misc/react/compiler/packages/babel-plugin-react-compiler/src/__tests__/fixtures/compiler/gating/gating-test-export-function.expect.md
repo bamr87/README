@@ -1,14 +1,11 @@
 ---
+title: Gating Test Export Function.Expect
 category: misc
-last_updated: null
-source_file: gating-test-export-function.expect.md
-summary: "```javascript\n// @gating @compilationMode:\"annotation\"\nexport function\
-  \ Bar(props) {\n  'use forget';\n  return <div>{props.bar}</div>;\n}"
 tags:
 - javascript
-title: Gating Test Export Function.Expect
+last_updated: null
+source_file: gating-test-export-function.expect.md
 ---
-
 ## Input
 
 ```javascript

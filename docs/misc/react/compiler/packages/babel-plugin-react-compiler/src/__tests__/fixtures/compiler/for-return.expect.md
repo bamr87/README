@@ -1,14 +1,11 @@
 ---
+title: For Return.Expect
 category: misc
-last_updated: null
-source_file: for-return.expect.md
-summary: "```javascript\nfunction Component(props) {\n  for (let i = 0; i < props.count;\
-  \ i++) {\n    return;\n  }\n}"
 tags:
 - javascript
-title: For Return.Expect
+last_updated: null
+source_file: for-return.expect.md
 ---
-
 ## Input
 
 ```javascript

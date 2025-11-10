@@ -1,15 +1,11 @@
 ---
+title: Infer Function Expression Component.Expect
 category: misc
-last_updated: null
-source_file: infer-function-expression-component.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"'
 tags:
 - javascript
-title: Infer Function Expression Component.Expect
+last_updated: null
+source_file: infer-function-expression-component.expect.md
 ---
-
 ## Input
 
 ```javascript

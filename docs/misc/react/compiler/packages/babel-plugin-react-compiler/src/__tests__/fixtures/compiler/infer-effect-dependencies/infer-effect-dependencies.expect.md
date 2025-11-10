@@ -1,19 +1,11 @@
 ---
+title: Infer Effect Dependencies.Expect
 category: misc
-last_updated: null
-source_file: infer-effect-dependencies.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, useRef, AUTODEPS} from ''react'';
-
-  import useEffectWrapper from ''useEffectWrapper'';'
 tags:
 - javascript
-title: Infer Effect Dependencies.Expect
+last_updated: null
+source_file: infer-effect-dependencies.expect.md
 ---
-
 ## Input
 
 ```javascript

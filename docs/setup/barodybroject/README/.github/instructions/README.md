@@ -1,17 +1,14 @@
 ---
+title: Instructions Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains comprehensive coding instructions and guidelines
-  for AIassisted development within the barodybroject ecosystem. These instruction
-  files define standards, patterns, and best pra...
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Instructions Directory
+last_updated: null
+source_file: README.md
 ---
 # Instructions Directory
 

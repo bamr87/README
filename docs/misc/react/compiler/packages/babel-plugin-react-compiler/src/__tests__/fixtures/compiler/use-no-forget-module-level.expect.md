@@ -1,15 +1,11 @@
 ---
+title: Use No Forget Module Level.Expect
 category: misc
-last_updated: null
-source_file: use-no-forget-module-level.expect.md
-summary: '```javascript
-
-  ''use no forget'';'
 tags:
 - javascript
-title: Use No Forget Module Level.Expect
+last_updated: null
+source_file: use-no-forget-module-level.expect.md
 ---
-
 ## Input
 
 ```javascript

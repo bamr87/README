@@ -1,15 +1,11 @@
 ---
+title: Repro Scope Missing Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: repro-scope-missing-mutable-range.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction HomeDiscoStoreItemTileRating(props)\
-  \ {\n  const item = useFragment();\n  let count = 0;\n  const aggregates = item?.aggregates\
-  \ || [];\n  aggregates.forEa..."
 tags:
 - javascript
-title: Repro Scope Missing Mutable Range.Expect
+last_updated: null
+source_file: repro-scope-missing-mutable-range.expect.md
 ---
-
 ## Input
 
 ```javascript

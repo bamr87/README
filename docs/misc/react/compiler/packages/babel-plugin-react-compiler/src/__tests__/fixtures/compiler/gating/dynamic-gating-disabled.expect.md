@@ -1,15 +1,11 @@
 ---
+title: Dynamic Gating Disabled.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-disabled.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"}'
 tags:
 - javascript
-title: Dynamic Gating Disabled.Expect
+last_updated: null
+source_file: dynamic-gating-disabled.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,13 @@
 ---
+title: Invalid Jsx In Try With Catch.Expect
 category: api
-last_updated: null
-source_file: invalid-jsx-in-try-with-catch.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateNoJSXInTryStatements\nfunction\
-  \ Component(props) {\n  let el;\n  try {\n    el = <div />;\n  } catch {\n    return\
-  \ null;\n  }\n  return el;\n}"
 tags:
 - javascript
 - testing
 - api
-title: Invalid Jsx In Try With Catch.Expect
+last_updated: null
+source_file: invalid-jsx-in-try-with-catch.expect.md
 ---
-
 ## Input
 
 ```javascript

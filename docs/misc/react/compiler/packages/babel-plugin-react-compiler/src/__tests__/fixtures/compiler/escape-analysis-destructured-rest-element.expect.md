@@ -1,15 +1,11 @@
 ---
+title: Escape Analysis Destructured Rest Element.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-destructured-rest-element.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // b is an object, must be\
-  \ memoized even though the input is not memoized\n  const {a, ...b} = props.a;\n\
-  \  // d is an array, mut be memoized even though the i..."
 tags:
 - javascript
-title: Escape Analysis Destructured Rest Element.Expect
+last_updated: null
+source_file: escape-analysis-destructured-rest-element.expect.md
 ---
-
 ## Input
 
 ```javascript

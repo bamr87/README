@@ -1,16 +1,12 @@
 ---
+title: navigation Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```yaml\n Example main.yml structure\nmain:\n   title: \"Home\"\n    url:\
-  \ /\n   title: \"Blog\"\n    url: /blog/\n    submenu:\n       title: \"Technology\"\
-  \n        url: /category/technology/\n       title: \"Satire\"..."
 tags:
 - docker
 - setup
-title: navigation Directory
+last_updated: null
+source_file: README.md
 ---
-
 # navigation Directory
 
 ## Purpose

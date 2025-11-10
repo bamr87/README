@@ -1,15 +1,11 @@
 ---
+title: Repro.Expect
 category: misc
-last_updated: null
-source_file: repro.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const item = props.item;\n\
-  \  const thumbnails = [];\n  const baseVideos = getBaseVideos(item);\n  useMemo(()\
-  \ => {\n    baseVideos.forEach(video => {\n      const ..."
 tags:
 - javascript
-title: Repro.Expect
+last_updated: null
+source_file: repro.expect.md
 ---
-
 ## Input
 
 ```javascript

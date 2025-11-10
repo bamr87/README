@@ -1,15 +1,11 @@
 ---
+title: Renaming Jsx Tag Lowercase.Expect
 category: misc
-last_updated: null
-source_file: renaming-jsx-tag-lowercase.expect.md
-summary: '```javascript
-
-  import {Stringify, identity, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Renaming Jsx Tag Lowercase.Expect
+last_updated: null
+source_file: renaming-jsx-tag-lowercase.expect.md
 ---
-
 ## Input
 
 ```javascript

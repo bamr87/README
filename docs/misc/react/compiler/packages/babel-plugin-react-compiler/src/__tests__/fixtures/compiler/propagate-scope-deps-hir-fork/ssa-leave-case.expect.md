@@ -1,17 +1,11 @@
 ---
+title: Ssa Leave Case.Expect
 category: misc
-last_updated: null
-source_file: ssa-leave-case.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Ssa Leave Case.Expect
+last_updated: null
+source_file: ssa-leave-case.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Fbt Call.Expect
 category: misc
-last_updated: null
-source_file: fbt-call.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Call.Expect
+last_updated: null
+source_file: fbt-call.expect.md
 ---
-
 ## Input
 
 ```javascript

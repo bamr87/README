@@ -1,19 +1,11 @@
 ---
+title: Reactive Ref.Expect
 category: misc
-last_updated: null
-source_file: reactive-ref.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, useRef, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Ref.Expect
+last_updated: null
+source_file: reactive-ref.expect.md
 ---
-
 ## Input
 
 ```javascript

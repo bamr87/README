@@ -1,25 +1,15 @@
 ---
-author: Tech Humorist
+title: 2025 05 18 Windows Raising Afraid Generation
 category: api
-description: A satirical exploration of how Windows shaped tech literacy and the rise
-  of command-line mastery in Mac and Linux users.
-last_updated: null
-published_at: '2025-05-18'
-slug: windows-raising-afraid-generation
-source_file: 2025-05-18-windows-raising-afraid-generation.md
-summary: Once upon a siliconcoated nightmare, humanity awoke each morning to a chorus
-  of chimes only slightly less ominous than the Jaws theme. Schoolchildren learned
-  “computer science” by selecting themes in ...
 tags:
 - aws
 - azure
 - api
 - testing
 - api
-title: 2025 05 18 Windows Raising Afraid Generation
+last_updated: null
+source_file: 2025-05-18-windows-raising-afraid-generation.md
 ---
-
-
 **Headline:**  
 *Windows: Making Clicking Cool While Accidentally Raising a Generation Afraid of the Command Line (But Now Hosts the Hackers’ Playground Anyway)*
 

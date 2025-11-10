@@ -1,15 +1,11 @@
 ---
+title: Call.Expect
 category: misc
-last_updated: null
-source_file: call.expect.md
-summary: '```javascript
-
-  function foo() {}'
 tags:
 - javascript
-title: Call.Expect
+last_updated: null
+source_file: call.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,13 @@
 ---
+title: '`react-test-renderer` (DEPRECATED)'
 category: api
-last_updated: null
-source_file: README.md
-summary: reacttestrenderer is deprecated and no longer maintained. It will be removed
-  in a future version. As of React 19, you will see a console warning when invoking
-  ReactTestRenderer.create().
 tags:
 - javascript
 - api
 - testing
 - api
-title: '`react-test-renderer` (DEPRECATED)'
+last_updated: null
+source_file: README.md
 ---
 # `react-test-renderer` (DEPRECATED)
 

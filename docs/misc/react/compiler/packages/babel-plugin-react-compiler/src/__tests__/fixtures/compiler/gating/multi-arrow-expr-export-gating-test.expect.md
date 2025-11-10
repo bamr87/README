@@ -1,17 +1,11 @@
 ---
+title: Multi Arrow Expr Export Gating Test.Expect
 category: misc
-last_updated: null
-source_file: multi-arrow-expr-export-gating-test.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Multi Arrow Expr Export Gating Test.Expect
+last_updated: null
+source_file: multi-arrow-expr-export-gating-test.expect.md
 ---
-
 ## Input
 
 ```javascript

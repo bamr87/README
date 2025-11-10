@@ -1,15 +1,11 @@
 ---
+title: Hooks With Prefix.Expect
 category: misc
-last_updated: null
-source_file: hooks-with-prefix.expect.md
-summary: '```javascript
-
-  // @hookPattern:".\b(use[^$]+)$" @enablePreserveExistingMemoizationGuarantees:false'
 tags:
 - javascript
-title: Hooks With Prefix.Expect
+last_updated: null
+source_file: hooks-with-prefix.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Capturing Func Alias Captured Mutate Arr.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-alias-captured-mutate-arr.expect.md
-summary: "```javascript\nimport {mutate} from 'sharedruntime';\nfunction Component({foo,\
-  \ bar}) {\n  let x = {foo};\n  let y = {bar};\n  const f0 = function () {\n    let\
-  \ a = [y];\n    let b = x;\n    a.x = b;\n  };\n  f0..."
 tags:
 - javascript
-title: Capturing Func Alias Captured Mutate Arr.Expect
+last_updated: null
+source_file: capturing-func-alias-captured-mutate-arr.expect.md
 ---
-
 ## Input
 
 ```javascript

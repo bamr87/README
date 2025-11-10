@@ -1,15 +1,11 @@
 ---
+title: Alias Capture In Method Receiver And Mutate.Expect
 category: misc
-last_updated: null
-source_file: alias-capture-in-method-receiver-and-mutate.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Alias Capture In Method Receiver And Mutate.Expect
+last_updated: null
+source_file: alias-capture-in-method-receiver-and-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Infer Property Delete.Expect
 category: misc
-last_updated: null
-source_file: infer-property-delete.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nfunction\
-  \ Component(props) {\n  const x = makeObject();\n  const y = delete x.value;\n \
-  \ return y;\n}"
 tags:
 - javascript
-title: Infer Property Delete.Expect
+last_updated: null
+source_file: infer-property-delete.expect.md
 ---
-
 ## Input
 
 ```javascript

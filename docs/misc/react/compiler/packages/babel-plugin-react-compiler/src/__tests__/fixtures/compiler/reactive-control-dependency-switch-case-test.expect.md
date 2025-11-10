@@ -1,15 +1,11 @@
 ---
+title: Reactive Control Dependency Switch Case Test.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-switch-case-test.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  switch (props.cond)\
-  \ {\n    case true: {\n      x = 1;\n      break;\n    }\n    case false: {\n  \
-  \    x = 2;\n      break;\n    }\n    default: {\n      x = 3;..."
 tags:
 - javascript
-title: Reactive Control Dependency Switch Case Test.Expect
+last_updated: null
+source_file: reactive-control-dependency-switch-case-test.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Object Method Shorthand Derived Value.Expect
 category: misc
-last_updated: null
-source_file: object-method-shorthand-derived-value.expect.md
-summary: "```javascript\nimport {createHookWrapper, mutateAndReturn} from 'sharedruntime';\n\
-  function useHook({value}) {\n  const x = mutateAndReturn({value});\n  const obj\
-  \ = {\n    getValue() {\n      return x;\n    }..."
 tags:
 - javascript
-title: Object Method Shorthand Derived Value.Expect
+last_updated: null
+source_file: object-method-shorthand-derived-value.expect.md
 ---
-
 ## Input
 
 ```javascript

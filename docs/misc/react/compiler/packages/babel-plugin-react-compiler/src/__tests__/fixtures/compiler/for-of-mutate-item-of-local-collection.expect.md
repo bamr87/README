@@ -1,15 +1,11 @@
 ---
+title: For Of Mutate Item Of Local Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-mutate-item-of-local-collection.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Mutate Item Of Local Collection.Expect
+last_updated: null
+source_file: for-of-mutate-item-of-local-collection.expect.md
 ---
-
 ## Input
 
 ```javascript

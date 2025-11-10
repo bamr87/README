@@ -1,15 +1,11 @@
 ---
+title: Usememo Switch Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-switch-return.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    let y;\n    switch (props.switch) {\n      case 'foo': {\n        return 'foo';\n\
-  \      }\n      case 'bar': {\n        y = 'bar';\n  ..."
 tags:
 - javascript
-title: Usememo Switch Return.Expect
+last_updated: null
+source_file: useMemo-switch-return.expect.md
 ---
-
 ## Input
 
 ```javascript

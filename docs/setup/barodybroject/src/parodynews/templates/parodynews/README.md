@@ -1,17 +1,14 @@
 ---
+title: parodynews Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In parodynews/views.py\ndef contentdetail(request, contentid):\n\
-  \    return render(request, 'parodynews/contentdetail.html', context)"
 tags:
 - python
 - javascript
 - docker
 - setup
-title: parodynews Directory
+last_updated: null
+source_file: README.md
 ---
-
 # parodynews Directory
 
 ## Purpose

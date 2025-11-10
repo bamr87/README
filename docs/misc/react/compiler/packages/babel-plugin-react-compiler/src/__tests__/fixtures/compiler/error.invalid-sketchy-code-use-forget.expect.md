@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Sketchy Code Use Forget.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-sketchy-code-use-forget.expect.md
-summary: "```javascript\n/ eslintdisable reacthooks/rulesofhooks /\nfunction lowercasecomponent()\
-  \ {\n  'use forget';\n  const x = [];\n  // eslintdisablenextline reacthooks/rulesofhooks\n\
-  \  return <div>{x}</div>;\n}\n/ ..."
 tags:
 - javascript
-title: Error.Invalid Sketchy Code Use Forget.Expect
+last_updated: null
+source_file: error.invalid-sketchy-code-use-forget.expect.md
 ---
-
 ## Input
 
 ```javascript

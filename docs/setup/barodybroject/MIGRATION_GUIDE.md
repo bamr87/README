@@ -1,17 +1,14 @@
 ---
+title: Migration Documentation - v0.2.0
 category: setup
-last_updated: null
-source_file: MIGRATION_GUIDE.md
-summary: This document provides comprehensive migration guidance for the v0.2.0 release,
-  covering database migrations, template system updates, infrastructure changes, and
-  rollback procedures. This major relea...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Migration Documentation - v0.2.0
+last_updated: null
+source_file: MIGRATION_GUIDE.md
 ---
 # Migration Documentation - v0.2.0
 

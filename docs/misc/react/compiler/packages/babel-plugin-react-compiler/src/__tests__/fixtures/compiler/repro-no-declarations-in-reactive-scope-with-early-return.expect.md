@@ -1,15 +1,11 @@
 ---
+title: Repro No Declarations In Reactive Scope With Early Return.Expect
 category: misc
-last_updated: null
-source_file: repro-no-declarations-in-reactive-scope-with-early-return.expect.md
-summary: "```javascript\n// @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions\
-  \ @enablePreserveExistingMemoizationGuarantees:false\nfunction Component() {\n \
-  \ const items = useItems();..."
 tags:
 - javascript
-title: Repro No Declarations In Reactive Scope With Early Return.Expect
+last_updated: null
+source_file: repro-no-declarations-in-reactive-scope-with-early-return.expect.md
 ---
-
 ## Input
 
 ```javascript

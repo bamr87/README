@@ -1,13 +1,11 @@
 ---
+title: Preserve Jsxtext Stringliteral Distinction.Expect
 category: misc
-last_updated: null
-source_file: preserve-jsxtext-stringliteral-distinction.expect.md
-summary: "```javascript\nfunction Foo() {\n  return <div> {', '}</div>;\n}"
 tags:
 - javascript
-title: Preserve Jsxtext Stringliteral Distinction.Expect
+last_updated: null
+source_file: preserve-jsxtext-stringliteral-distinction.expect.md
 ---
-
 ## Input
 
 ```javascript

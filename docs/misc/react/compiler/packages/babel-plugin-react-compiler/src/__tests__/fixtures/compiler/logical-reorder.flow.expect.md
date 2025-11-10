@@ -1,15 +1,11 @@
 ---
+title: Logical Reorder.Flow.Expect
 category: misc
-last_updated: null
-source_file: logical-reorder.flow.expect.md
-summary: '```javascript
-
-  //@flow'
 tags:
 - javascript
-title: Logical Reorder.Flow.Expect
+last_updated: null
+source_file: logical-reorder.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

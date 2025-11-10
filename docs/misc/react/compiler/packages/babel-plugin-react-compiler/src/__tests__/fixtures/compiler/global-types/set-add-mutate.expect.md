@@ -1,15 +1,11 @@
 ---
+title: Set Add Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-add-mutate.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Add Mutate.Expect
+last_updated: null
+source_file: set-add-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

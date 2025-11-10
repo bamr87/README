@@ -1,14 +1,11 @@
 ---
+title: Ssa Property Mutate Alias.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-mutate-alias.expect.md
-summary: "```javascript\nfunction foo() {\n  const a = {};\n  const y = a;\n  const\
-  \ x = [];"
 tags:
 - javascript
-title: Ssa Property Mutate Alias.Expect
+last_updated: null
+source_file: ssa-property-mutate-alias.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,20 +1,12 @@
 ---
-category: misc
-last_updated: null
-source_file: error.todo-repro-missed-memoization-from-capture-in-invoked-function-inferred-as-mutation.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {logValue, useFragment, useHook, typedLog...'
-tags:
-- javascript
 title: Error.Todo Repro Missed Memoization From Capture In Invoked Function Inferred
   As Mutation.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: error.todo-repro-missed-memoization-from-capture-in-invoked-function-inferred-as-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

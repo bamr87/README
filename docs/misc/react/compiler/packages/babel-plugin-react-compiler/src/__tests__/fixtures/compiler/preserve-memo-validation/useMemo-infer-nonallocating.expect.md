@@ -1,15 +1,11 @@
 ---
+title: Usememo Infer Nonallocating.Expect
 category: misc
-last_updated: null
-source_file: useMemo-infer-nonallocating.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Infer Nonallocating.Expect
+last_updated: null
+source_file: useMemo-infer-nonallocating.expect.md
 ---
-
 ## Input
 
 ```javascript

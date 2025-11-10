@@ -1,15 +1,11 @@
 ---
+title: No Uncond.Expect
 category: misc
-last_updated: null
-source_file: no-uncond.expect.md
-summary: '```javascript
-
-  // When an object''s properties are only read conditionally, we should'
 tags:
 - javascript
-title: No Uncond.Expect
+last_updated: null
+source_file: no-uncond.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Todo.Error.Rules Of Hooks 27C18Dc8Dad2.Expect
 category: misc
-last_updated: null
-source_file: todo.error.rules-of-hooks-27c18dc8dad2.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Todo.Error.Rules Of Hooks 27C18Dc8Dad2.Expect
+last_updated: null
+source_file: todo.error.rules-of-hooks-27c18dc8dad2.expect.md
 ---
-
 ## Input
 
 ```javascript

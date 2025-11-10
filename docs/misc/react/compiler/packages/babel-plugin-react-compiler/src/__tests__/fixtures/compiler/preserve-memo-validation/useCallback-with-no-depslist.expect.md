@@ -1,17 +1,11 @@
 ---
+title: Usecallback With No Depslist.Expect
 category: misc
-last_updated: null
-source_file: useCallback-with-no-depslist.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Usecallback With No Depslist.Expect
+last_updated: null
+source_file: useCallback-with-no-depslist.expect.md
 ---
-
 ## Input
 
 ```javascript

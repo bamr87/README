@@ -1,16 +1,13 @@
 ---
+title: Error.Invalid Hook As Conditional Test.Expect
 category: api
-last_updated: null
-source_file: error.invalid-hook-as-conditional-test.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = props.cond ? (useFoo\
-  \ ? 1 : 2) : 3;\n  return x;\n}"
 tags:
 - javascript
 - testing
 - api
-title: Error.Invalid Hook As Conditional Test.Expect
+last_updated: null
+source_file: error.invalid-hook-as-conditional-test.expect.md
 ---
-
 ## Input
 
 ```javascript

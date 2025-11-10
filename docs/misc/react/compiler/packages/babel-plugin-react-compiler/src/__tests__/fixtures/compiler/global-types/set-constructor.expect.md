@@ -1,15 +1,11 @@
 ---
+title: Set Constructor.Expect
 category: misc
-last_updated: null
-source_file: set-constructor.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Constructor.Expect
+last_updated: null
+source_file: set-constructor.expect.md
 ---
-
 ## Input
 
 ```javascript

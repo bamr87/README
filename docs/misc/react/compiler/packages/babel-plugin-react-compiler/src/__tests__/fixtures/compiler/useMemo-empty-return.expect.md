@@ -1,15 +1,11 @@
 ---
+title: Usememo Empty Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-empty-return.expect.md
-summary: "```javascript\n// @validateNoVoidUseMemo\nfunction Component() {\n  const\
-  \ value = useMemo(() => {\n    return;\n  }, []);\n  return <div>{value}</div>;\n\
-  }"
 tags:
 - javascript
-title: Usememo Empty Return.Expect
+last_updated: null
+source_file: useMemo-empty-return.expect.md
 ---
-
 ## Input
 
 ```javascript

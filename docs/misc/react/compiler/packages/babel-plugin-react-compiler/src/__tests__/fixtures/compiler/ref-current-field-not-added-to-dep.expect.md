@@ -1,15 +1,11 @@
 ---
+title: Ref Current Field Not Added To Dep.Expect
 category: misc
-last_updated: null
-source_file: ref-current-field-not-added-to-dep.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender false\nfunction VideoTab()\
-  \ {\n  const ref = useRef();\n  let x = () => {\n    console.log(ref.current.x);\n\
-  \  };"
 tags:
 - javascript
-title: Ref Current Field Not Added To Dep.Expect
+last_updated: null
+source_file: ref-current-field-not-added-to-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

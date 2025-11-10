@@ -1,17 +1,11 @@
 ---
+title: Repro Cx Namespace Nesting.Expect
 category: misc
-last_updated: null
-source_file: repro-cx-namespace-nesting.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Cx Namespace Nesting.Expect
+last_updated: null
+source_file: repro-cx-namespace-nesting.expect.md
 ---
-
 ## Input
 
 ```javascript

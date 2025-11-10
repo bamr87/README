@@ -1,18 +1,12 @@
 ---
+title: Jsx Attribute With Jsx Fragment Value.Flow.Expect
 category: misc
-last_updated: null
-source_file: jsx-attribute-with-jsx-fragment-value.flow.expect.md
-summary: '```javascript
-
-  // @flow
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - docker
-title: Jsx Attribute With Jsx Fragment Value.Flow.Expect
+last_updated: null
+source_file: jsx-attribute-with-jsx-fragment-value.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

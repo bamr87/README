@@ -1,14 +1,11 @@
 ---
+title: Return Conditional.Expect
 category: misc
-last_updated: null
-source_file: return-conditional.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  if (a == null) {\n    return null;\n\
-  \  } else {\n    return b;\n  }\n}"
 tags:
 - javascript
-title: Return Conditional.Expect
+last_updated: null
+source_file: return-conditional.expect.md
 ---
-
 ## Input
 
 ```javascript

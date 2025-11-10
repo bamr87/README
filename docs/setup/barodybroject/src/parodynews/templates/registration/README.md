@@ -1,15 +1,13 @@
 ---
+title: Registration Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block title %}Login  Barody Broject{% endblock %}'
 tags:
 - python
 - docker
 - setup
-title: Registration Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Registration Templates Directory
 
 ## Purpose

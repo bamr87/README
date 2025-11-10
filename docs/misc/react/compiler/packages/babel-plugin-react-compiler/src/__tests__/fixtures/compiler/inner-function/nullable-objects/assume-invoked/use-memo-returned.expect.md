@@ -1,17 +1,11 @@
 ---
+title: Use Memo Returned.Expect
 category: misc
-last_updated: null
-source_file: use-memo-returned.expect.md
-summary: '```javascript
-
-  import {useState, useMemo} from ''react'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Use Memo Returned.Expect
+last_updated: null
+source_file: use-memo-returned.expect.md
 ---
-
 ## Input
 
 ```javascript

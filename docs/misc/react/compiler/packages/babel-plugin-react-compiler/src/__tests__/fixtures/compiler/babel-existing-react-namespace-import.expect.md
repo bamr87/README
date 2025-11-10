@@ -1,17 +1,11 @@
 ---
+title: Babel Existing React Namespace Import.Expect
 category: misc
-last_updated: null
-source_file: babel-existing-react-namespace-import.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';
-
-  import {calculateExpensiveNumber} from ''sharedruntime'';'
 tags:
 - javascript
-title: Babel Existing React Namespace Import.Expect
+last_updated: null
+source_file: babel-existing-react-namespace-import.expect.md
 ---
-
 ## Input
 
 ```javascript

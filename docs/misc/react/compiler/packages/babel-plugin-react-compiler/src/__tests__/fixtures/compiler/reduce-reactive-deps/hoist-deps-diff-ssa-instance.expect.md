@@ -1,15 +1,11 @@
 ---
+title: Hoist Deps Diff Ssa Instance.Expect
 category: misc
-last_updated: null
-source_file: hoist-deps-diff-ssa-instance.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, setPropertyByKey} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoist Deps Diff Ssa Instance.Expect
+last_updated: null
+source_file: hoist-deps-diff-ssa-instance.expect.md
 ---
-
 ## Input
 
 ```javascript

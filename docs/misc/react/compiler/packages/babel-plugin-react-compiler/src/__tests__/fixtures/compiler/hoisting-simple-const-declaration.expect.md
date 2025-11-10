@@ -1,15 +1,11 @@
 ---
+title: Hoisting Simple Const Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisting-simple-const-declaration.expect.md
-summary: "```javascript\nfunction hoisting() {\n  const foo = () => {\n    return\
-  \ bar + baz;\n  };\n  const bar = 3;\n  const baz = 2;\n  return foo(); // OK: called\
-  \ outside of TDZ for bar/baz\n}"
 tags:
 - javascript
-title: Hoisting Simple Const Declaration.Expect
+last_updated: null
+source_file: hoisting-simple-const-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Independently Memoize Object Property.Expect
 category: misc
-last_updated: null
-source_file: independently-memoize-object-property.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const x = {a: a};\n  // NOTE:\
-  \ this array should memoize independently from x, w only b,c as deps\n  x.y = [b,\
-  \ c];"
 tags:
 - javascript
-title: Independently Memoize Object Property.Expect
+last_updated: null
+source_file: independently-memoize-object-property.expect.md
 ---
-
 ## Input
 
 ```javascript

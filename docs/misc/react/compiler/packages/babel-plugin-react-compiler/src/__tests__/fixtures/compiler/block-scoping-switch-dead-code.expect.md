@@ -1,15 +1,11 @@
 ---
+title: Block Scoping Switch Dead Code.Expect
 category: misc
-last_updated: null
-source_file: block-scoping-switch-dead-code.expect.md
-summary: "```javascript\nfunction useHook(a, b) {\n  switch (a) {\n    case 1:\n \
-  \     if (b == null) {\n        return;\n      }\n      console.log(b);\n      break;\n\
-  \    case 2:\n      return;\n    default:\n      return;..."
 tags:
 - javascript
-title: Block Scoping Switch Dead Code.Expect
+last_updated: null
+source_file: block-scoping-switch-dead-code.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Repro Macro Property Not Handled.Expect
 category: misc
-last_updated: null
-source_file: repro-macro-property-not-handled.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Macro Property Not Handled.Expect
+last_updated: null
+source_file: repro-macro-property-not-handled.expect.md
 ---
-
 ## Input
 
 ```javascript

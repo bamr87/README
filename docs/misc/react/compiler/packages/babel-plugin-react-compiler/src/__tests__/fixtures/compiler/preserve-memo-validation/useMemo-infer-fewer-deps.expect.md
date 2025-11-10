@@ -1,15 +1,11 @@
 ---
+title: Usememo Infer Fewer Deps.Expect
 category: misc
-last_updated: null
-source_file: useMemo-infer-fewer-deps.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Infer Fewer Deps.Expect
+last_updated: null
+source_file: useMemo-infer-fewer-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

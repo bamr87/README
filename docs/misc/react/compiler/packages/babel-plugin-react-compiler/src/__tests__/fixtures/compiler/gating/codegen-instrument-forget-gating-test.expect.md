@@ -1,16 +1,12 @@
 ---
+title: Codegen Instrument Forget Gating Test.Expect
 category: misc
-last_updated: null
-source_file: codegen-instrument-forget-gating-test.expect.md
-summary: '```javascript
-
-  // @enableEmitInstrumentForget @compilationMode:"annotation" @gating'
 tags:
 - javascript
 - testing
-title: Codegen Instrument Forget Gating Test.Expect
+last_updated: null
+source_file: codegen-instrument-forget-gating-test.expect.md
 ---
-
 ## Input
 
 ```javascript

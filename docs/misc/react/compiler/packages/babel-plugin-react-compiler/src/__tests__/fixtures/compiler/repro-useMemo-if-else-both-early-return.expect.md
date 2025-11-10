@@ -1,14 +1,11 @@
 ---
+title: Repro Usememo If Else Both Early Return.Expect
 category: misc
-last_updated: null
-source_file: repro-useMemo-if-else-both-early-return.expect.md
-summary: "```javascript\nimport {useMemo} from 'react';\nimport {\n  makeObjectPrimitives,\n\
-  \  mutate,\n  Stringify,\n  ValidateMemoization,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Repro Usememo If Else Both Early Return.Expect
+last_updated: null
+source_file: repro-useMemo-if-else-both-early-return.expect.md
 ---
-
 ## Input
 
 ```javascript

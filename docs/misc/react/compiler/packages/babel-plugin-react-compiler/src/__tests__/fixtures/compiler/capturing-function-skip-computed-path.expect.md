@@ -1,16 +1,12 @@
 ---
+title: Capturing Function Skip Computed Path.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-skip-computed-path.expect.md
-summary: "```javascript\nfunction StoreLandingUnseenGiftModalContainer(a) {\n  const\
-  \ giftsSeen = {a};\n  return (gift => (gift.id ? giftsSeen[gift.id] : false))();\n\
-  }"
 tags:
 - javascript
 - docker
-title: Capturing Function Skip Computed Path.Expect
+last_updated: null
+source_file: capturing-function-skip-computed-path.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Jsx Preserve Whitespace.Expect
 category: misc
-last_updated: null
-source_file: jsx-preserve-whitespace.expect.md
-summary: '```javascript
-
-  import {StaticText1} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Preserve Whitespace.Expect
+last_updated: null
+source_file: jsx-preserve-whitespace.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,14 @@
 ---
+title: Installation Wizard Documentation
 category: setup
-last_updated: null
-source_file: installation-wizard.md
-summary: The Barodybroject Installation Wizard provides a comprehensive firsttime
-  setup experience for new Django/OpenAI deployments. It offers both interactive CLI
-  and webbased modes with secure token authent...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Installation Wizard Documentation
+last_updated: null
+source_file: installation-wizard.md
 ---
 # Installation Wizard Documentation
 

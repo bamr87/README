@@ -1,17 +1,11 @@
 ---
+title: Deep Scope.Expect
 category: misc
-last_updated: null
-source_file: deep-scope.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Deep Scope.Expect
+last_updated: null
+source_file: deep-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

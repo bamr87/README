@@ -1,16 +1,12 @@
 ---
+title: Uncond Overlap Direct.Expect
 category: misc
-last_updated: null
-source_file: uncond-overlap-direct.expect.md
-summary: "```javascript\n// Test that we correctly track a subpath if the subpath\
-  \ itself is accessed as\n// a dependency\nfunction TestOverlappingTracked(props)\
-  \ {\n  let x = {};\n  x.b = props.a.b;\n  x.c = props.a.c..."
 tags:
 - javascript
 - testing
-title: Uncond Overlap Direct.Expect
+last_updated: null
+source_file: uncond-overlap-direct.expect.md
 ---
-
 ## Input
 
 ```javascript

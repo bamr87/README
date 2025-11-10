@@ -1,15 +1,14 @@
 ---
+title: Init Setup Script Testing Summary
 category: setup
-last_updated: null
-source_file: TEST_SUMMARY.md
-summary: 'The initsetup.sh script is productionready with the following highlights:'
 tags:
 - python
 - docker
 - azure
 - testing
 - setup
-title: Init Setup Script Testing Summary
+last_updated: null
+source_file: TEST_SUMMARY.md
 ---
 # Init Setup Script Testing Summary
 

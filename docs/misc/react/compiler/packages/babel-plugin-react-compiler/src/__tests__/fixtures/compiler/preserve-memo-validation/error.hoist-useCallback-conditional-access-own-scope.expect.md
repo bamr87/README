@@ -1,17 +1,11 @@
 ---
+title: Error.Hoist Usecallback Conditional Access Own Scope.Expect
 category: misc
-last_updated: null
-source_file: error.hoist-useCallback-conditional-access-own-scope.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
-title: Error.Hoist Usecallback Conditional Access Own Scope.Expect
+last_updated: null
+source_file: error.hoist-useCallback-conditional-access-own-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

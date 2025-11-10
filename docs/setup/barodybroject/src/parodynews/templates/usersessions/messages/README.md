@@ -1,21 +1,13 @@
 ---
+title: messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '``django
-
-  {% load i18n %}
-
-  {% blocktranslate %}Signed out of all other sessions.{% endblocktranslate %}
-
-  ``'
 tags:
 - python
 - docker
 - setup
-title: messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # messages Directory
 
 ## Purpose

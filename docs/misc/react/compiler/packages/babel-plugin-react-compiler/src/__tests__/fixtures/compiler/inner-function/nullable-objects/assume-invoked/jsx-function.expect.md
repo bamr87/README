@@ -1,17 +1,11 @@
 ---
+title: Jsx Function.Expect
 category: misc
-last_updated: null
-source_file: jsx-function.expect.md
-summary: '```javascript
-
-  // @flow
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Function.Expect
+last_updated: null
+source_file: jsx-function.expect.md
 ---
-
 ## Input
 
 ```javascript

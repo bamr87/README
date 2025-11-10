@@ -1,16 +1,12 @@
 ---
+title: Error.Mutate Global Increment Op Invalid React.Expect
 category: development
-last_updated: null
-source_file: error.mutate-global-increment-op-invalid-react.expect.md
-summary: '```javascript
-
-  let renderCount = 0;'
 tags:
 - javascript
 - development
-title: Error.Mutate Global Increment Op Invalid React.Expect
+last_updated: null
+source_file: error.mutate-global-increment-op-invalid-react.expect.md
 ---
-
 ## Input
 
 ```javascript

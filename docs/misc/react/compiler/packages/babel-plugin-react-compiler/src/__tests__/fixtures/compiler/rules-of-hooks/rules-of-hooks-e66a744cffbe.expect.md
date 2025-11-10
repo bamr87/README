@@ -1,15 +1,11 @@
 ---
+title: Rules Of Hooks E66A744Cffbe.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-e66a744cffbe.expect.md
-summary: "```javascript\n// Valid because hooks can be used in anonymous function\
-  \ arguments to\n// forwardRef.\nconst FancyButton = forwardRef(function (props,\
-  \ ref) {\n  useHook();\n  return <button {...props} ref={..."
 tags:
 - javascript
-title: Rules Of Hooks E66A744Cffbe.Expect
+last_updated: null
+source_file: rules-of-hooks-e66a744cffbe.expect.md
 ---
-
 ## Input
 
 ```javascript

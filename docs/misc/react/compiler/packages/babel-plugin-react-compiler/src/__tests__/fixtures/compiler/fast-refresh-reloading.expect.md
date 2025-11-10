@@ -1,19 +1,11 @@
 ---
+title: Fast Refresh Reloading.Expect
 category: misc
-last_updated: null
-source_file: fast-refresh-reloading.expect.md
-summary: '```javascript
-
-  // @enableResetCacheOnSourceFileChanges
-
-  import {useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fast Refresh Reloading.Expect
+last_updated: null
+source_file: fast-refresh-reloading.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Infer Function Cond Access Local Var.Expect
 category: misc
-last_updated: null
-source_file: infer-function-cond-access-local-var.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Cond Access Local Var.Expect
+last_updated: null
+source_file: infer-function-cond-access-local-var.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Jsx Outlining With Non Jsx Children.Expect
 category: misc
-last_updated: null
-source_file: jsx-outlining-with-non-jsx-children.expect.md
-summary: "```javascript\n// @enableJsxOutlining\nfunction Component({arr}) {\n  const\
-  \ x = useX();\n  return (\n    <>\n      {arr.map((i, id) => {\n        return (\n\
-  \          <Bar key={id} x={x}>\n            <Baz i={i..."
 tags:
 - javascript
 - testing
-title: Jsx Outlining With Non Jsx Children.Expect
+last_updated: null
+source_file: jsx-outlining-with-non-jsx-children.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,18 +1,14 @@
 ---
+title: _posts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "``yaml\n Jekyll post frontmatter\n\nlayout: post\ntitle: \"Post Title\"\n\
-  date: 20250430\ncategories: [technology, satire]\ntags: [django, ai, frameworks]\n\
-  author: \"Author Name\"\nexcerpt: \"Brief description of th..."
 tags:
 - python
 - docker
 - azure
 - setup
-title: _posts Directory
+last_updated: null
+source_file: README.md
 ---
-
 # _posts Directory
 
 ## Purpose

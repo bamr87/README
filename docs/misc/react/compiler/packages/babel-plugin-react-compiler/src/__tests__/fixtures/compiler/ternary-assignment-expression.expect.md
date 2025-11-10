@@ -1,14 +1,11 @@
 ---
+title: Ternary Assignment Expression.Expect
 category: misc
-last_updated: null
-source_file: ternary-assignment-expression.expect.md
-summary: "```javascript\nfunction ternary(props) {\n  let x = 0;\n  const y = props.a\
-  \ ? (x = 1) : (x = 2);\n  return x + y;\n}"
 tags:
 - javascript
-title: Ternary Assignment Expression.Expect
+last_updated: null
+source_file: ternary-assignment-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

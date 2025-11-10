@@ -1,21 +1,13 @@
 ---
-author: John Doe
+title: Headline
 category: api
-description: In a quirky revelation, Joseph Harmony proves God's nonexistence yet
-  loves church snacks.
-last_updated: null
-published_at: '2024-08-09'
-slug: quantum-nonexistence-of-god
-source_file: 2024-08-09-quantum-nonexistence-of-god.md
-summary: No summary available
 tags:
 - api
 - testing
 - api
-title: Headline
+last_updated: null
+source_file: 2024-08-09-quantum-nonexistence-of-god.md
 ---
-
-
 # Headline
 
 * Local Man Discovers Quantum Nonexistence of God, Still Attends Church for Social Snacks

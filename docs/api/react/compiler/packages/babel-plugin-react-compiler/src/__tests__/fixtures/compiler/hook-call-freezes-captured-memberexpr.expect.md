@@ -1,16 +1,12 @@
 ---
+title: Hook Call Freezes Captured Memberexpr.Expect
 category: api
-last_updated: null
-source_file: hook-call-freezes-captured-memberexpr.expect.md
-summary: '```javascript
-
-  import {useIdentity, Stringify, identity} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Hook Call Freezes Captured Memberexpr.Expect
+last_updated: null
+source_file: hook-call-freezes-captured-memberexpr.expect.md
 ---
-
 ## Input
 
 ```javascript

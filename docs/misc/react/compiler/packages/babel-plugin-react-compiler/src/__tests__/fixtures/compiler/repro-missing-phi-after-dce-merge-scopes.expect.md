@@ -1,15 +1,11 @@
 ---
+title: Repro Missing Phi After Dce Merge Scopes.Expect
 category: misc
-last_updated: null
-source_file: repro-missing-phi-after-dce-merge-scopes.expect.md
-summary: "```javascript\nfunction Component() {\n  let v3, v4, acc;\n  v3 = false;\n\
-  \  v4 = v3;\n  acc = v3;\n  if (acc) {\n    acc = true;\n    v3 = acc;\n  }\n  if\
-  \ (acc) {\n    v3 = v4;\n  }\n  v4 = v3;\n  return [acc, v3, ..."
 tags:
 - javascript
-title: Repro Missing Phi After Dce Merge Scopes.Expect
+last_updated: null
+source_file: repro-missing-phi-after-dce-merge-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Destructure Default Array With Unary.Expect
 category: misc
-last_updated: null
-source_file: destructure-default-array-with-unary.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [x = [1, 1]] = props.value;\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Destructure Default Array With Unary.Expect
+last_updated: null
+source_file: destructure-default-array-with-unary.expect.md
 ---
-
 ## Input
 
 ```javascript

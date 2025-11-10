@@ -1,14 +1,11 @@
 ---
+title: React Compiler
 category: user-guides
-last_updated: null
-source_file: README.md
-summary: React Compiler is a compiler that optimizes React applications, ensuring
-  that only the minimal parts of components and hooks will rerender when state changes.
-  The compiler also validates that componen...
 tags:
 - javascript
 - user-guides
-title: React Compiler
+last_updated: null
+source_file: README.md
 ---
 # React Compiler
 

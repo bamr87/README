@@ -1,15 +1,11 @@
 ---
+title: Reduce If Exhaustive Nonpoisoned Deps.Expect
 category: misc
-last_updated: null
-source_file: reduce-if-exhaustive-nonpoisoned-deps.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reduce If Exhaustive Nonpoisoned Deps.Expect
+last_updated: null
+source_file: reduce-if-exhaustive-nonpoisoned-deps.expect.md
 ---
-
 ## Input
 
 ```javascript

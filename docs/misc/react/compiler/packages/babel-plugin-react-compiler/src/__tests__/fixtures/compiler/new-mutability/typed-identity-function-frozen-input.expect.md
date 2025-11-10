@@ -1,15 +1,11 @@
 ---
+title: Typed Identity Function Frozen Input.Expect
 category: misc
-last_updated: null
-source_file: typed-identity-function-frozen-input.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel'
 tags:
 - javascript
-title: Typed Identity Function Frozen Input.Expect
+last_updated: null
+source_file: typed-identity-function-frozen-input.expect.md
 ---
-
 ## Input
 
 ```javascript

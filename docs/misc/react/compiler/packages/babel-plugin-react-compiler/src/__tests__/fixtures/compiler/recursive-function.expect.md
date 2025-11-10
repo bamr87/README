@@ -1,14 +1,11 @@
 ---
+title: Recursive Function.Expect
 category: misc
-last_updated: null
-source_file: recursive-function.expect.md
-summary: "```javascript\nfunction foo(x) {\n  if (x <= 0) {\n    return 0;\n  }\n\
-  \  return x + foo(x  1) + (() => foo(x  2))();\n}"
 tags:
 - javascript
-title: Recursive Function.Expect
+last_updated: null
+source_file: recursive-function.expect.md
 ---
-
 ## Input
 
 ```javascript

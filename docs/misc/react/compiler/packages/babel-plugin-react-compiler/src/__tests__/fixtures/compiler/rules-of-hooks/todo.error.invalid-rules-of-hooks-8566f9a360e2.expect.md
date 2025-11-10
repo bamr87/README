@@ -1,17 +1,11 @@
 ---
+title: Todo.Error.Invalid Rules Of Hooks 8566F9A360E2.Expect
 category: misc
-last_updated: null
-source_file: todo.error.invalid-rules-of-hooks-8566f9a360e2.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Error.Invalid Rules Of Hooks 8566F9A360E2.Expect
+last_updated: null
+source_file: todo.error.invalid-rules-of-hooks-8566f9a360e2.expect.md
 ---
-
 ## Input
 
 ```javascript

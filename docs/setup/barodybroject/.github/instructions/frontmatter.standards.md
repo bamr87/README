@@ -1,34 +1,15 @@
 ---
-applyTo: '**/*.md'
-author: Barodybroject Team
+title: Unified Frontmatter Standards
 category: setup
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-description: Unified frontmatter standards and metadata structures for instruction
-  files across all repositories
-file: frontmatter.standards.md
-lastModified: 2025-10-28
-last_updated: null
-relatedEvolutions:
-- Harmonized frontmatter standards across IT-Journey ecosystem
-- VS Code Copilot optimization for instruction file metadata
-- Unified documentation structure and cross-referencing
-source_file: frontmatter.standards.md
-summary: This document defines the standardized frontmatter structure and metadata
-  requirements for instruction files across all repositories in the ecosystem (ITJourney,
-  Barodybroject, Zer0Mistakes).
 tags:
 - python
 - docker
 - azure
 - api
 - testing
-title: Unified Frontmatter Standards
-version: 1.0.0
+last_updated: null
+source_file: frontmatter.standards.md
 ---
-
-
 # Unified Frontmatter Standards
 
 This document defines the standardized frontmatter structure and metadata requirements for instruction files across all repositories in the ecosystem (IT-Journey, Barodybroject, Zer0-Mistakes).

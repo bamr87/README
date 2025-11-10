@@ -1,15 +1,11 @@
 ---
+title: Capturing Fun Alias Captured Mutate 2 Iife.Expect
 category: misc
-last_updated: null
-source_file: capturing-fun-alias-captured-mutate-2-iife.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Fun Alias Captured Mutate 2 Iife.Expect
+last_updated: null
+source_file: capturing-fun-alias-captured-mutate-2-iife.expect.md
 ---
-
 ## Input
 
 ```javascript

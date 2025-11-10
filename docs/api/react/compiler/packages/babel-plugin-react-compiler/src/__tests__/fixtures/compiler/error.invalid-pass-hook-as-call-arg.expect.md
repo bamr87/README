@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Pass Hook As Call Arg.Expect
 category: api
-last_updated: null
-source_file: error.invalid-pass-hook-as-call-arg.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return foo(useFoo);\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Pass Hook As Call Arg.Expect
+last_updated: null
+source_file: error.invalid-pass-hook-as-call-arg.expect.md
 ---
-
 ## Input
 
 ```javascript

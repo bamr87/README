@@ -1,14 +1,11 @@
 ---
+title: Error.Mutate Function Property.Expect
 category: misc
-last_updated: null
-source_file: error.mutate-function-property.expect.md
-summary: "```javascript\nexport function ViewModeSelector(props) {\n  const renderIcon\
-  \ = () => <AcceptIcon />;\n  renderIcon.displayName = 'AcceptIcon';"
 tags:
 - javascript
-title: Error.Mutate Function Property.Expect
+last_updated: null
+source_file: error.mutate-function-property.expect.md
 ---
-
 ## Input
 
 ```javascript

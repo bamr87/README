@@ -1,20 +1,12 @@
 ---
+title: Error.Callsite In Non React Fn Default Import.Expect
 category: development
-last_updated: null
-source_file: error.callsite-in-non-react-fn-default-import.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @compilationMode:"infer" @panicThreshold:"none"
-
-  import useMyEffect from ''useEffectWrapper'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Callsite In Non React Fn Default Import.Expect
+last_updated: null
+source_file: error.callsite-in-non-react-fn-default-import.expect.md
 ---
-
 ## Input
 
 ```javascript

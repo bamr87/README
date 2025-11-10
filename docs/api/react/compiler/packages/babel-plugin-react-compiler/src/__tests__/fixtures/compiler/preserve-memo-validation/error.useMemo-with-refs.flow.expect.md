@@ -1,18 +1,12 @@
 ---
+title: Error.Usememo With Refs.Flow.Expect
 category: api
-last_updated: null
-source_file: error.useMemo-with-refs.flow.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Usememo With Refs.Flow.Expect
+last_updated: null
+source_file: error.useMemo-with-refs.flow.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Lower Context Access Hook Guard.Expect
 category: misc
-last_updated: null
-source_file: lower-context-access-hook-guard.expect.md
-summary: "```javascript\n// @lowerContextAccess @enableEmitHookGuards\nfunction App()\
-  \ {\n  const {foo} = useContext(MyContext);\n  const {bar} = useContext(MyContext);\n\
-  \  return <Bar foo={foo} bar={bar} />;\n}"
 tags:
 - javascript
-title: Lower Context Access Hook Guard.Expect
+last_updated: null
+source_file: lower-context-access-hook-guard.expect.md
 ---
-
 ## Input
 
 ```javascript

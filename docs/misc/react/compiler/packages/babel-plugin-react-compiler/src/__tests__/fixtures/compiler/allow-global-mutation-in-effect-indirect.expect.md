@@ -1,15 +1,11 @@
 ---
+title: Allow Global Mutation In Effect Indirect.Expect
 category: misc
-last_updated: null
-source_file: allow-global-mutation-in-effect-indirect.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Global Mutation In Effect Indirect.Expect
+last_updated: null
+source_file: allow-global-mutation-in-effect-indirect.expect.md
 ---
-
 ## Input
 
 ```javascript

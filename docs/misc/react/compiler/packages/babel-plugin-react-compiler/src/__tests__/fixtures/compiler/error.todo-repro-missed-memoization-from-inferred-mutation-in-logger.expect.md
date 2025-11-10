@@ -1,21 +1,11 @@
 ---
+title: Error.Todo Repro Missed Memoization From Inferred Mutation In Logger.Expect
 category: misc
-last_updated: null
-source_file: error.todo-repro-missed-memoization-from-inferred-mutation-in-logger.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useFragment} from ''reactrelay'';
-
-  import LogEvent from ''LogEvent'';
-
-  import...'
 tags:
 - javascript
-title: Error.Todo Repro Missed Memoization From Inferred Mutation In Logger.Expect
+last_updated: null
+source_file: error.todo-repro-missed-memoization-from-inferred-mutation-in-logger.expect.md
 ---
-
 ## Input
 
 ```javascript

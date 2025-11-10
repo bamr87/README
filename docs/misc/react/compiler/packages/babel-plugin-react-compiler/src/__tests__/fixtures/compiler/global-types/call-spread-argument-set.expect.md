@@ -1,15 +1,11 @@
 ---
+title: Call Spread Argument Set.Expect
 category: misc
-last_updated: null
-source_file: call-spread-argument-set.expect.md
-summary: '```javascript
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Call Spread Argument Set.Expect
+last_updated: null
+source_file: call-spread-argument-set.expect.md
 ---
-
 ## Input
 
 ```javascript

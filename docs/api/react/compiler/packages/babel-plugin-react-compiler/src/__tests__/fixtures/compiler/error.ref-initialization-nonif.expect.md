@@ -1,18 +1,12 @@
 ---
+title: Error.Ref Initialization Nonif.Expect
 category: api
-last_updated: null
-source_file: error.ref-initialization-nonif.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Initialization Nonif.Expect
+last_updated: null
+source_file: error.ref-initialization-nonif.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,12 @@
 ---
+title: Align Scopes Nested Block Structure.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-nested-block-structure.expect.md
-summary: "```javascript\nimport {mutate} from 'sharedruntime';\n/\n  Fixture showing\
-  \ that it's not sufficient to only align direct scoped\n  accesses of a blockfallthrough\
-  \ pair.\n  Below is a simplified view of HIR ..."
 tags:
 - javascript
 - testing
-title: Align Scopes Nested Block Structure.Expect
+last_updated: null
+source_file: align-scopes-nested-block-structure.expect.md
 ---
-
 ## Input
 
 ```javascript

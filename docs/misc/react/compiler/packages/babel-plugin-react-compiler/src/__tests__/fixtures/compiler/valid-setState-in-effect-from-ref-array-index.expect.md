@@ -1,17 +1,11 @@
 ---
+title: Valid Setstate In Effect From Ref Array Index.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-effect-from-ref-array-index.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects @enableAllowSetStateFromRefsInEffects
-
-  import {useState, useRef, useEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Effect From Ref Array Index.Expect
+last_updated: null
+source_file: valid-setState-in-effect-from-ref-array-index.expect.md
 ---
-
 ## Input
 
 ```javascript

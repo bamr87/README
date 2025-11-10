@@ -1,18 +1,12 @@
 ---
+title: Error.Bug Invariant Local Or Context References.Expect
 category: api
-last_updated: null
-source_file: error.bug-invariant-local-or-context-references.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {bar} from ''./bar'';'
 tags:
 - javascript
 - api
-title: Error.Bug Invariant Local Or Context References.Expect
+last_updated: null
+source_file: error.bug-invariant-local-or-context-references.expect.md
 ---
-
 ## Input
 
 ```javascript

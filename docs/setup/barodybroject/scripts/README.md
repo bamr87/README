@@ -1,16 +1,14 @@
 ---
+title: Scripts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains various scripts to help with deployment and management
-  of the BarodyBroject application.
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Scripts Directory
+last_updated: null
+source_file: README.md
 ---
 # Scripts Directory
 

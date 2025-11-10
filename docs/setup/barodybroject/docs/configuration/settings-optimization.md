@@ -1,17 +1,14 @@
 ---
+title: Django Settings Optimization Guide
 category: setup
-last_updated: null
-source_file: settings-optimization.md
-summary: The Django settings.py file has been completely rewritten and optimized for
-  enterprisegrade production deployment while maintaining excellent developer experience.
-  This optimization transforms approxi...
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Django Settings Optimization Guide
+last_updated: null
+source_file: settings-optimization.md
 ---
 # Django Settings Optimization Guide
 

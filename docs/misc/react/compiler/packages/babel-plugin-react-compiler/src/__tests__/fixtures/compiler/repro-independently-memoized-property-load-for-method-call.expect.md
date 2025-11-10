@@ -1,15 +1,11 @@
 ---
+title: Repro Independently Memoized Property Load For Method Call.Expect
 category: misc
-last_updated: null
-source_file: repro-independently-memoized-property-load-for-method-call.expect.md
-summary: "```javascript\n// @flow @enableAssumeHooksFollowRulesOfReact\nfunction Component({label,\
-  \ highlightedItem}) {\n  const serverTime = useServerTime();\n  const highlight\
-  \ = new Highlight(highlightedItem);"
 tags:
 - javascript
-title: Repro Independently Memoized Property Load For Method Call.Expect
+last_updated: null
+source_file: repro-independently-memoized-property-load-for-method-call.expect.md
 ---
-
 ## Input
 
 ```javascript

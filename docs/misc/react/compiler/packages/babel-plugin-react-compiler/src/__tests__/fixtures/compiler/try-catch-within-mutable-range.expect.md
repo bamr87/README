@@ -1,15 +1,11 @@
 ---
+title: Try Catch Within Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-mutable-range.expect.md
-summary: '```javascript
-
-  const {throwErrorWithMessage, shallowCopy} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Within Mutable Range.Expect
+last_updated: null
+source_file: try-catch-within-mutable-range.expect.md
 ---
-
 ## Input
 
 ```javascript

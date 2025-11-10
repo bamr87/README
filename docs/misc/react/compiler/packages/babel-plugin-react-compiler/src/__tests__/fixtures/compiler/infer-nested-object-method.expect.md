@@ -1,16 +1,12 @@
 ---
+title: Infer Nested Object Method.Expect
 category: misc
-last_updated: null
-source_file: infer-nested-object-method.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"'
 tags:
 - javascript
 - testing
-title: Infer Nested Object Method.Expect
+last_updated: null
+source_file: infer-nested-object-method.expect.md
 ---
-
 ## Input
 
 ```javascript

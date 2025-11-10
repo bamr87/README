@@ -1,16 +1,14 @@
 ---
+title: utils Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In Django settings for email backend\nEMAILBACKEND = 'parodynews.utils.dkimbackend.DKIMEmailBackend'"
 tags:
 - python
 - docker
 - azure
 - setup
-title: utils Directory
+last_updated: null
+source_file: README.md
 ---
-
 # utils Directory
 
 ## Purpose

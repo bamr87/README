@@ -1,19 +1,11 @@
 ---
+title: Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
 category: misc
-last_updated: null
-source_file: useMemo-mabye-modified-free-variable-preserve-memoization-guarantees.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
+last_updated: null
+source_file: useMemo-mabye-modified-free-variable-preserve-memoization-guarantees.expect.md
 ---
-
 ## Input
 
 ```javascript

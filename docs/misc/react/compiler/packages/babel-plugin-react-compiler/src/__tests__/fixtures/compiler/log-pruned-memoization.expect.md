@@ -1,16 +1,12 @@
 ---
+title: Log Pruned Memoization.Expect
 category: misc
-last_updated: null
-source_file: log-pruned-memoization.expect.md
-summary: "```javascript\n// @loggerTestOnly\nimport {createContext, use, useState}\
-  \ from 'react';\nimport {\n  Stringify,\n  identity,\n  makeObjectPrimitives,\n\
-  \  useHook,\n} from 'sharedruntime';"
 tags:
 - javascript
 - testing
-title: Log Pruned Memoization.Expect
+last_updated: null
+source_file: log-pruned-memoization.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,14 +1,11 @@
 ---
+title: Concise Arrow Expr.Expect
 category: misc
-last_updated: null
-source_file: concise-arrow-expr.expect.md
-summary: "```javascript\nfunction component() {\n  let [x, setX] = useState(0);\n\
-  \  const handler = v => setX(v);\n  return <Foo handler={handler}></Foo>;\n}"
 tags:
 - javascript
-title: Concise Arrow Expr.Expect
+last_updated: null
+source_file: concise-arrow-expr.expect.md
 ---
-
 ## Input
 
 ```javascript

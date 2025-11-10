@@ -1,17 +1,11 @@
 ---
+title: Usememo With No Depslist.Expect
 category: misc
-last_updated: null
-source_file: useMemo-with-no-depslist.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo With No Depslist.Expect
+last_updated: null
+source_file: useMemo-with-no-depslist.expect.md
 ---
-
 ## Input
 
 ```javascript

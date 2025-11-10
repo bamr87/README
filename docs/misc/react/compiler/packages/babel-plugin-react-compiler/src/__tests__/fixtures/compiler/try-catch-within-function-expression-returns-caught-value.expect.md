@@ -1,15 +1,11 @@
 ---
+title: Try Catch Within Function Expression Returns Caught Value.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-function-expression-returns-caught-value.expect.md
-summary: '```javascript
-
-  import {throwInput} from ''sharedruntime'';'
 tags:
 - javascript
-title: Try Catch Within Function Expression Returns Caught Value.Expect
+last_updated: null
+source_file: try-catch-within-function-expression-returns-caught-value.expect.md
 ---
-
 ## Input
 
 ```javascript

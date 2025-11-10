@@ -1,15 +1,11 @@
 ---
+title: Align Scopes Reactive Scope Overlaps Label.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-reactive-scope-overlaps-label.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Reactive Scope Overlaps Label.Expect
+last_updated: null
+source_file: align-scopes-reactive-scope-overlaps-label.expect.md
 ---
-
 ## Input
 
 ```javascript

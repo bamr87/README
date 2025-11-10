@@ -1,17 +1,11 @@
 ---
+title: Createelement Freeze.Expect
 category: misc
-last_updated: null
-source_file: createElement-freeze.expect.md
-summary: '```javascript
-
-  import React from ''react'';
-
-  import {shallowCopy} from ''sharedruntime'';'
 tags:
 - javascript
-title: Createelement Freeze.Expect
+last_updated: null
+source_file: createElement-freeze.expect.md
 ---
-
 ## Input
 
 ```javascript

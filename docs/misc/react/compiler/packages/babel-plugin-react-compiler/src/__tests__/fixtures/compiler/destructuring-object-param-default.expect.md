@@ -1,13 +1,11 @@
 ---
+title: Destructuring Object Param Default.Expect
 category: misc
-last_updated: null
-source_file: destructuring-object-param-default.expect.md
-summary: "```javascript\nfunction Component({a = 2}) {\n  return a;\n}"
 tags:
 - javascript
-title: Destructuring Object Param Default.Expect
+last_updated: null
+source_file: destructuring-object-param-default.expect.md
 ---
-
 ## Input
 
 ```javascript

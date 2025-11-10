@@ -1,15 +1,11 @@
 ---
+title: Ternary Expression.Expect
 category: misc
-last_updated: null
-source_file: ternary-expression.expect.md
-summary: "```javascript\nfunction ternary(props) {\n  const a = props.a && props.b\
-  \ ? props.c || props.d : (props.e ?? props.f);\n  const b = props.a ? (props.b &&\
-  \ props.c ? props.d : props.e) : props.f;\n  return a..."
 tags:
 - javascript
-title: Ternary Expression.Expect
+last_updated: null
+source_file: ternary-expression.expect.md
 ---
-
 ## Input
 
 ```javascript

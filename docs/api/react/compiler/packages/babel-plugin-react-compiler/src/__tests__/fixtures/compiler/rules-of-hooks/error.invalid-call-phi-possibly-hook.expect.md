@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Call Phi Possibly Hook.Expect
 category: api
-last_updated: null
-source_file: error.invalid-call-phi-possibly-hook.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // This is a violation of\
-  \ using a hook as a normal value rule:\n  const getUser = props.cond ? useGetUser\
-  \ : emptyFunction;"
 tags:
 - javascript
 - api
-title: Error.Invalid Call Phi Possibly Hook.Expect
+last_updated: null
+source_file: error.invalid-call-phi-possibly-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

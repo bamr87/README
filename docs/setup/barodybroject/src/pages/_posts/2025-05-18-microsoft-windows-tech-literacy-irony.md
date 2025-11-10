@@ -1,25 +1,15 @@
 ---
-author: Tech Insight Blog
+title: 2025 05 18 Microsoft Windows Tech Literacy Irony
 category: setup
-description: Exploring the irony of Microsoft's closed systems and GitHub's open-source
-  culture.
-last_updated: null
-published_at: '2025-05-18'
-slug: microsoft-windows-tech-literacy-irony
-source_file: 2025-05-18-microsoft-windows-tech-literacy-irony.md
-summary: Once upon a dreary Windows bootup screen, the world encountered a magical
-  land paved with pristine icons, clickable Start buttons, and the promise of “it
-  just works!” (unless, of course, you wandered ...
 tags:
 - python
 - javascript
 - azure
 - api
 - testing
-title: 2025 05 18 Microsoft Windows Tech Literacy Irony
+last_updated: null
+source_file: 2025-05-18-microsoft-windows-tech-literacy-irony.md
 ---
-
-
 **The Great Irony: How Microsoft’s Windows Stifled Tech Literacy While GitHub Became the Beacon of Open Source**
 
 ---

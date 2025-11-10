@@ -1,15 +1,11 @@
 ---
+title: Unmemoized Nonreactive Dependency Is Pruned As Dependency.Expect
 category: misc
-last_updated: null
-source_file: unmemoized-nonreactive-dependency-is-pruned-as-dependency.expect.md
-summary: '```javascript
-
-  import {mutate, useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
-title: Unmemoized Nonreactive Dependency Is Pruned As Dependency.Expect
+last_updated: null
+source_file: unmemoized-nonreactive-dependency-is-pruned-as-dependency.expect.md
 ---
-
 ## Input
 
 ```javascript

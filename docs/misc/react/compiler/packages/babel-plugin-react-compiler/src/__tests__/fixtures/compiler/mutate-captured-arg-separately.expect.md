@@ -1,14 +1,11 @@
 ---
+title: Mutate Captured Arg Separately.Expect
 category: misc
-last_updated: null
-source_file: mutate-captured-arg-separately.expect.md
-summary: "```javascript\nfunction component(a) {\n  let y = function () {\n    m(x);\n\
-  \  };"
 tags:
 - javascript
-title: Mutate Captured Arg Separately.Expect
+last_updated: null
+source_file: mutate-captured-arg-separately.expect.md
 ---
-
 ## Input
 
 ```javascript

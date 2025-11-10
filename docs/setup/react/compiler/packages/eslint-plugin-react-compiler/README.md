@@ -1,12 +1,11 @@
 ---
+title: eslint-plugin-react-compiler
 category: setup
-last_updated: null
-source_file: README.md
-summary: ESLint plugin surfacing problematic React code found by the React compiler.
 tags:
 - javascript
 - setup
-title: eslint-plugin-react-compiler
+last_updated: null
+source_file: README.md
 ---
 # eslint-plugin-react-compiler
 

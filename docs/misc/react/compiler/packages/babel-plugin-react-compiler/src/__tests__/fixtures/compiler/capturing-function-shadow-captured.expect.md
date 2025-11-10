@@ -1,15 +1,11 @@
 ---
+title: Capturing Function Shadow Captured.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-shadow-captured.expect.md
-summary: "```javascript\nimport {mutate, Stringify} from 'sharedruntime';\nfunction\
-  \ Component({a}) {\n  let z = {a};\n  let x = function () {\n    let z;\n    mutate(z);\n\
-  \    return z;\n  };\n  return <Stringify fn={x} ..."
 tags:
 - javascript
-title: Capturing Function Shadow Captured.Expect
+last_updated: null
+source_file: capturing-function-shadow-captured.expect.md
 ---
-
 ## Input
 
 ```javascript

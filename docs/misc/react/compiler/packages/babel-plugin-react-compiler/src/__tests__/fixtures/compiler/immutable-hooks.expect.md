@@ -1,15 +1,11 @@
 ---
+title: Immutable Hooks.Expect
 category: misc
-last_updated: null
-source_file: immutable-hooks.expect.md
-summary: "```javascript\n// @enableAssumeHooksFollowRulesOfReact true\nfunction Component(props)\
-  \ {\n  const x = {};\n  // In enableAssumeHooksFollowRulesOfReact mode hooks freeze\
-  \ their inputs and return frozen valu..."
 tags:
 - javascript
-title: Immutable Hooks.Expect
+last_updated: null
+source_file: immutable-hooks.expect.md
 ---
-
 ## Input
 
 ```javascript

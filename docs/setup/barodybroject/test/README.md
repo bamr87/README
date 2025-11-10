@@ -1,17 +1,14 @@
 ---
+title: Test Suite for Installation Wizard
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains comprehensive tests for the Barodybroject installation
-  wizard feature. The test suite covers all aspects of the installation wizard functionality,
-  including unit tests, integra...
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: Test Suite for Installation Wizard
+last_updated: null
+source_file: README.md
 ---
 # Test Suite for Installation Wizard
 

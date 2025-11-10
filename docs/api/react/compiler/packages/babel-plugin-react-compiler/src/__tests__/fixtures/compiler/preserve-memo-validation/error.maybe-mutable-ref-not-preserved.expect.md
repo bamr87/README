@@ -1,16 +1,12 @@
 ---
+title: Error.Maybe Mutable Ref Not Preserved.Expect
 category: api
-last_updated: null
-source_file: error.maybe-mutable-ref-not-preserved.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees:true'
 tags:
 - javascript
 - api
-title: Error.Maybe Mutable Ref Not Preserved.Expect
+last_updated: null
+source_file: error.maybe-mutable-ref-not-preserved.expect.md
 ---
-
 ## Input
 
 ```javascript

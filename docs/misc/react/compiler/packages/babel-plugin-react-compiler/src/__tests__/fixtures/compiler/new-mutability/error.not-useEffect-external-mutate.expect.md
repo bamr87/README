@@ -1,17 +1,11 @@
 ---
+title: Error.Not Useeffect External Mutate.Expect
 category: misc
-last_updated: null
-source_file: error.not-useEffect-external-mutate.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  let x = {a: 42};'
 tags:
 - javascript
-title: Error.Not Useeffect External Mutate.Expect
+last_updated: null
+source_file: error.not-useEffect-external-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

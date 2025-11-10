@@ -1,15 +1,11 @@
 ---
+title: Constant Prop To Object Method.Expect
 category: misc
-last_updated: null
-source_file: constant-prop-to-object-method.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Prop To Object Method.Expect
+last_updated: null
+source_file: constant-prop-to-object-method.expect.md
 ---
-
 ## Input
 
 ```javascript

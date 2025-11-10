@@ -1,15 +1,11 @@
 ---
+title: Switch.Expect
 category: misc
-last_updated: null
-source_file: switch.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  let x = [];\n  let y;\n  switch (props.p0) {\n    case true: {\n      x.push(props.p2);\n\
-  \      x.push(props.p3);\n      y = [];\n    }..."
 tags:
 - javascript
-title: Switch.Expect
+last_updated: null
+source_file: switch.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Reactive Control Dependency Do While Indirect.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-do-while-indirect.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  let y = 0;\n\
-  \  let z = 0;\n  do {\n    x += 1;\n    y += 1;\n    z = y;\n  } while (x < props.limit);\n\
-  \  return [z];\n}"
 tags:
 - javascript
-title: Reactive Control Dependency Do While Indirect.Expect
+last_updated: null
+source_file: reactive-control-dependency-do-while-indirect.expect.md
 ---
-
 ## Input
 
 ```javascript

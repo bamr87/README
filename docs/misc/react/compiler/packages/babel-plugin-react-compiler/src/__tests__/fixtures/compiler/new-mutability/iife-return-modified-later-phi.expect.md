@@ -1,15 +1,11 @@
 ---
+title: Iife Return Modified Later Phi.Expect
 category: misc
-last_updated: null
-source_file: iife-return-modified-later-phi.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = (() => {\n \
-  \   if (props.cond) {\n      return [];\n    } else {\n      return null;\n    }\n\
-  \  })();\n  items?.push(props.a);\n  return items;\n}"
 tags:
 - javascript
-title: Iife Return Modified Later Phi.Expect
+last_updated: null
+source_file: iife-return-modified-later-phi.expect.md
 ---
-
 ## Input
 
 ```javascript

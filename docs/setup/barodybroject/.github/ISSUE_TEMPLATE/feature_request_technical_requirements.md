@@ -1,20 +1,13 @@
 ---
-about: Template for specifying technical requirements for a new feature
-assignees: ''
+title: Feature Request Technical Requirements
 category: setup
-labels: enhancement, technical
-last_updated: null
-name: 'Feature Request: Technical Requirements'
-source_file: feature_request_technical_requirements.md
-summary: No summary available
 tags:
 - api
 - testing
 - setup
-title: Feature Request Technical Requirements
+last_updated: null
+source_file: feature_request_technical_requirements.md
 ---
-
-
 ## Summary
 Provide a brief summary of the feature and its purpose. Include any references to relevant documentation or design specifications.
 

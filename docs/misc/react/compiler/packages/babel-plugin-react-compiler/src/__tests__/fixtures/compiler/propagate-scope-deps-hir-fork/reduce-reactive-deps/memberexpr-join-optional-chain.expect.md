@@ -1,23 +1,11 @@
 ---
+title: Memberexpr Join Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: memberexpr-join-optional-chain.expect.md
-summary: '``javascript
-
-  // @enablePropagateDepsInHIR
-
-  // To preserve the nullthrows behavior and reactive deps of this code,
-
-  // Forget needs to add props.a.b or a subpath as a dependency.
-
-  //
-
-  // (1) Since the reac...'
 tags:
 - javascript
-title: Memberexpr Join Optional Chain.Expect
+last_updated: null
+source_file: memberexpr-join-optional-chain.expect.md
 ---
-
 ## Input
 
 ```javascript

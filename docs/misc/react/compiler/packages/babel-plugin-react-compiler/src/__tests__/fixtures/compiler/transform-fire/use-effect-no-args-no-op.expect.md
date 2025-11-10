@@ -1,17 +1,11 @@
 ---
+title: Use Effect No Args No Op.Expect
 category: misc
-last_updated: null
-source_file: use-effect-no-args-no-op.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Use Effect No Args No Op.Expect
+last_updated: null
+source_file: use-effect-no-args-no-op.expect.md
 ---
-
 ## Input
 
 ```javascript

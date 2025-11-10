@@ -1,15 +1,11 @@
 ---
+title: Prune Scopes Whose Deps Invalidate Jsx.Expect
 category: misc
-last_updated: null
-source_file: prune-scopes-whose-deps-invalidate-jsx.expect.md
-summary: '```javascript
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Prune Scopes Whose Deps Invalidate Jsx.Expect
+last_updated: null
+source_file: prune-scopes-whose-deps-invalidate-jsx.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,14 @@
 ---
+title: Release v1.0.0 Documentation Index
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains comprehensive documentation for the v1.0.0 Django
-  Settings Optimization release. This major release transforms Barodybroject from
-  a developmentfocused Django application into a...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Release v1.0.0 Documentation Index
+last_updated: null
+source_file: README.md
 ---
 # Release v1.0.0 Documentation Index
 

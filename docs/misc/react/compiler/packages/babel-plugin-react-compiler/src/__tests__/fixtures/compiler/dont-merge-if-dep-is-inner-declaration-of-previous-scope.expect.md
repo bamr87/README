@@ -1,15 +1,11 @@
 ---
+title: Dont Merge If Dep Is Inner Declaration Of Previous Scope.Expect
 category: misc
-last_updated: null
-source_file: dont-merge-if-dep-is-inner-declaration-of-previous-scope.expect.md
-summary: '```javascript
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Dont Merge If Dep Is Inner Declaration Of Previous Scope.Expect
+last_updated: null
+source_file: dont-merge-if-dep-is-inner-declaration-of-previous-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

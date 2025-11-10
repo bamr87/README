@@ -1,15 +1,11 @@
 ---
+title: Set Foreach Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-foreach-mutate.expect.md
-summary: '```javascript
-
-  import {mutateAndReturn, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Foreach Mutate.Expect
+last_updated: null
+source_file: set-foreach-mutate.expect.md
 ---
-
 ## Input
 
 ```javascript

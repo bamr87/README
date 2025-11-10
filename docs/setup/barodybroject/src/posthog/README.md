@@ -1,16 +1,14 @@
 ---
+title: PostHog Docker Deployment
 category: setup
-last_updated: null
-source_file: README.md
-summary: This is a Docker Compose setup for running PostHog locally with environment
-  variable configuration.
 tags:
 - python
 - docker
 - aws
 - api
 - database
-title: PostHog Docker Deployment
+last_updated: null
+source_file: README.md
 ---
 # PostHog Docker Deployment
 

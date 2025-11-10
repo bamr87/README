@@ -1,15 +1,11 @@
 ---
+title: Transitivity Add Captured Array To Itself.Expect
 category: misc
-last_updated: null
-source_file: transitivity-add-captured-array-to-itself.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  typedCapture,\n  typedCreateFrom,\n  typedMutate,\n\
-  \  ValidateMemoization,\n} from 'sharedrunti..."
 tags:
 - javascript
-title: Transitivity Add Captured Array To Itself.Expect
+last_updated: null
+source_file: transitivity-add-captured-array-to-itself.expect.md
 ---
-
 ## Input
 
 ```javascript

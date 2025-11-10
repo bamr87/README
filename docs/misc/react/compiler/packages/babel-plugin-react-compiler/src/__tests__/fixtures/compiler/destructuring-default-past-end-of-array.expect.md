@@ -1,15 +1,11 @@
 ---
+title: Destructuring Default Past End Of Array.Expect
 category: misc
-last_updated: null
-source_file: destructuring-default-past-end-of-array.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // destructure past end of\
-  \ empty array, should evaluate to default\n  const [x = 42] = props.value;\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Destructuring Default Past End Of Array.Expect
+last_updated: null
+source_file: destructuring-default-past-end-of-array.expect.md
 ---
-
 ## Input
 
 ```javascript

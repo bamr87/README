@@ -1,17 +1,13 @@
 ---
+title: Error.Invalid Type Provider Hook Name Not Typed As Hook.Expect
 category: setup
-last_updated: null
-source_file: error.invalid-type-provider-hook-name-not-typed-as-hook.expect.md
-summary: '```javascript
-
-  import {useHookNotTypedAsHook} from ''ReactCompilerTest'';'
 tags:
 - javascript
 - testing
 - setup
-title: Error.Invalid Type Provider Hook Name Not Typed As Hook.Expect
+last_updated: null
+source_file: error.invalid-type-provider-hook-name-not-typed-as-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

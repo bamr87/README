@@ -1,14 +1,11 @@
 ---
+title: Hooks With React Namespace.Expect
 category: misc
-last_updated: null
-source_file: hooks-with-React-namespace.expect.md
-summary: "```javascript\nfunction Component() {\n  const [x, setX] = React.useState(1);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Hooks With React Namespace.Expect
+last_updated: null
+source_file: hooks-with-React-namespace.expect.md
 ---
-
 ## Input
 
 ```javascript

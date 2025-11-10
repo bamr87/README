@@ -1,15 +1,11 @@
 ---
+title: Error.Todo Nested Method Calls Lower Property Load Into Temporary.Expect
 category: misc
-last_updated: null
-source_file: error.todo-nested-method-calls-lower-property-load-into-temporary.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Nested Method Calls Lower Property Load Into Temporary.Expect
+last_updated: null
+source_file: error.todo-nested-method-calls-lower-property-load-into-temporary.expect.md
 ---
-
 ## Input
 
 ```javascript

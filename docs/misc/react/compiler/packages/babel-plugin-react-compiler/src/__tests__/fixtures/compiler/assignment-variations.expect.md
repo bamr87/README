@@ -1,14 +1,11 @@
 ---
+title: Assignment Variations.Expect
 category: misc
-last_updated: null
-source_file: assignment-variations.expect.md
-summary: "```javascript\nfunction f() {\n  let x = 1;\n  x = x + 1;\n  x += 1;\n \
-  \ x >>>= 1;\n  return x;\n}"
 tags:
 - javascript
-title: Assignment Variations.Expect
+last_updated: null
+source_file: assignment-variations.expect.md
 ---
-
 ## Input
 
 ```javascript

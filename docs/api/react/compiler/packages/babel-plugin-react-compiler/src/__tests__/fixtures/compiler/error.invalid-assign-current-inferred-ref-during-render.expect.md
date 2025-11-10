@@ -1,18 +1,12 @@
 ---
+title: Error.Invalid Assign Current Inferred Ref During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-assign-current-inferred-ref-during-render.expect.md
-summary: '```javascript
-
-  // @flow @enableTreatRefLikeIdentifiersAsRefs @validateRefAccessDuringRender
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Assign Current Inferred Ref During Render.Expect
+last_updated: null
+source_file: error.invalid-assign-current-inferred-ref-during-render.expect.md
 ---
-
 ## Input
 
 ```javascript

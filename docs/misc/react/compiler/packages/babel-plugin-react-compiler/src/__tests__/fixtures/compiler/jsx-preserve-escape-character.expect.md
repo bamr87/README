@@ -1,15 +1,11 @@
 ---
+title: Jsx Preserve Escape Character.Expect
 category: misc
-last_updated: null
-source_file: jsx-preserve-escape-character.expect.md
-summary: "``javascript\n/\n  Fixture showing @babel/generator bug with jsx attribute\
-  \ strings containing\n  escape sequences. Note that this is only a problem when\
-  \ generating jsx\n  literals.\n \n  When using the jsx ..."
 tags:
 - javascript
-title: Jsx Preserve Escape Character.Expect
+last_updated: null
+source_file: jsx-preserve-escape-character.expect.md
 ---
-
 ## Input
 
 ```javascript

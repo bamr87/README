@@ -1,12 +1,11 @@
 ---
+title: Barodybroject Documentation
 category: setup
-last_updated: null
-source_file: README.md
-summary: 'This project is part of the larger ITJourney ecosystem, which includes:'
 tags:
 - python
 - setup
-title: Barodybroject Documentation
+last_updated: null
+source_file: README.md
 ---
 # Barodybroject Documentation
 

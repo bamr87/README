@@ -1,18 +1,12 @@
 ---
-category: misc
-last_updated: null
-source_file: validate-no-set-state-in-render-unconditional-lambda-which-conditionally-sets-state-ok.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInRender
-
-  import {useState} from ''react'';'
-tags:
-- javascript
 title: Validate No Set State In Render Unconditional Lambda Which Conditionally Sets
   State Ok.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: validate-no-set-state-in-render-unconditional-lambda-which-conditionally-sets-state-ok.expect.md
 ---
-
 ## Input
 
 ```javascript

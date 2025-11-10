@@ -1,15 +1,11 @@
 ---
+title: Useeffect Snap Test.Expect
 category: misc
-last_updated: null
-source_file: useEffect-snap-test.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Useeffect Snap Test.Expect
+last_updated: null
+source_file: useEffect-snap-test.expect.md
 ---
-
 ## Input
 
 ```javascript

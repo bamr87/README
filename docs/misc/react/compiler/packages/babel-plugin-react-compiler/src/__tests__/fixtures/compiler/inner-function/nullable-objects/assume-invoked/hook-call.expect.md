@@ -1,15 +1,11 @@
 ---
+title: Hook Call.Expect
 category: misc
-last_updated: null
-source_file: hook-call.expect.md
-summary: '```javascript
-
-  import {createHookWrapper, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hook Call.Expect
+last_updated: null
+source_file: hook-call.expect.md
 ---
-
 ## Input
 
 ```javascript

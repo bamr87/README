@@ -1,17 +1,11 @@
 ---
+title: Valid Setstate In Useeffect Listener.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-useEffect-listener.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Useeffect Listener.Expect
+last_updated: null
+source_file: valid-setState-in-useEffect-listener.expect.md
 ---
-
 ## Input
 
 ```javascript

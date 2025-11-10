@@ -1,15 +1,13 @@
 ---
+title: Django Configuration Documentation
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains comprehensive documentation for Django application
-  configuration, settings optimization, deployment strategies, and ecosystem integration.
 tags:
 - python
 - docker
 - database
 - setup
-title: Django Configuration Documentation
+last_updated: null
+source_file: README.md
 ---
 # Django Configuration Documentation
 

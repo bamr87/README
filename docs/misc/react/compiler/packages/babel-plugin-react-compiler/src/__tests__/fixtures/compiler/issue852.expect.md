@@ -1,14 +1,11 @@
 ---
+title: Issue852.Expect
 category: misc
-last_updated: null
-source_file: issue852.expect.md
-summary: "```javascript\nfunction Component(c) {\n  let x = {c};\n  mutate(x);\n \
-  \ let a = x;\n  let b = a;\n}"
 tags:
 - javascript
-title: Issue852.Expect
+last_updated: null
+source_file: issue852.expect.md
 ---
-
 ## Input
 
 ```javascript

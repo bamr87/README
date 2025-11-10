@@ -1,15 +1,11 @@
 ---
+title: Error.Validate Usememo Named Function.Expect
 category: misc
-last_updated: null
-source_file: error.validate-useMemo-named-function.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.Validate Usememo Named Function.Expect
+last_updated: null
+source_file: error.validate-useMemo-named-function.expect.md
 ---
-
 ## Input
 
 ```javascript

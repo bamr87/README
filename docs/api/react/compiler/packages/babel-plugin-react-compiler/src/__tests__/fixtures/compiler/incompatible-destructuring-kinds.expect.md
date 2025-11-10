@@ -1,18 +1,12 @@
 ---
+title: Incompatible Destructuring Kinds.Expect
 category: api
-last_updated: null
-source_file: incompatible-destructuring-kinds.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Incompatible Destructuring Kinds.Expect
+last_updated: null
+source_file: incompatible-destructuring-kinds.expect.md
 ---
-
 ## Input
 
 ```javascript

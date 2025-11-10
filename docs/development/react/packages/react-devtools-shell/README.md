@@ -1,14 +1,12 @@
 ---
+title: Readme
 category: development
-last_updated: null
-source_file: README.md
-summary: Harness for testing local changes to the reactdevtoolsinline and reactdevtoolsshared
-  packages.
 tags:
 - javascript
 - testing
 - development
-title: Readme
+last_updated: null
+source_file: README.md
 ---
 Harness for testing local changes to the `react-devtools-inline` and `react-devtools-shared` packages.
 

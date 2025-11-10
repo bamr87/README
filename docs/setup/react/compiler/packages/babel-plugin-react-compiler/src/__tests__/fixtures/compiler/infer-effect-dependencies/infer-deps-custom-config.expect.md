@@ -1,20 +1,12 @@
 ---
+title: Infer Deps Custom Config.Expect
 category: setup
-last_updated: null
-source_file: infer-deps-custom-config.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {print, useSpecialEffect} from ''sharedruntime'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
 - setup
-title: Infer Deps Custom Config.Expect
+last_updated: null
+source_file: infer-deps-custom-config.expect.md
 ---
-
 ## Input
 
 ```javascript

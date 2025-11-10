@@ -1,17 +1,11 @@
 ---
+title: Error.Hook Call Freezes Captured Memberexpr.Expect
 category: misc
-last_updated: null
-source_file: error.hook-call-freezes-captured-memberexpr.expect.md
-summary: '```javascript
-
-  // @enableTransitivelyFreezeFunctionExpressions
-
-  import {mutate, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Hook Call Freezes Captured Memberexpr.Expect
+last_updated: null
+source_file: error.hook-call-freezes-captured-memberexpr.expect.md
 ---
-
 ## Input
 
 ```javascript

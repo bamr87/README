@@ -1,15 +1,11 @@
 ---
+title: Ssa Property Alias Mutate If.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-alias-mutate-if.expect.md
-summary: "```javascript\nfunction foo(a) {\n  const x = {};\n  if (a) {\n    let y\
-  \ = {};\n    x.y = y;\n  } else {\n    let z = {};\n    x.z = z;\n  }\n  mutate(x);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Ssa Property Alias Mutate If.Expect
+last_updated: null
+source_file: ssa-property-alias-mutate-if.expect.md
 ---
-
 ## Input
 
 ```javascript

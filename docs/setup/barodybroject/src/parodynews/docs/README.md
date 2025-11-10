@@ -1,16 +1,14 @@
 ---
+title: docs Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Build HTML documentation\nmake html"
 tags:
 - python
 - docker
 - api
 - setup
-title: docs Directory
+last_updated: null
+source_file: README.md
 ---
-
 # docs Directory
 
 ## Purpose

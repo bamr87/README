@@ -1,15 +1,11 @@
 ---
+title: Property Call Evaluation Order.Expect
 category: misc
-last_updated: null
-source_file: property-call-evaluation-order.expect.md
-summary: '```javascript
-
-  // Should print A, arg, original'
 tags:
 - javascript
-title: Property Call Evaluation Order.Expect
+last_updated: null
+source_file: property-call-evaluation-order.expect.md
 ---
-
 ## Input
 
 ```javascript

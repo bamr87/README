@@ -1,75 +1,15 @@
 ---
-applyTo: tests/**/*.py,**/*test*.py
-author: Barodybroject Team
+title: Testing Standards
 category: setup
-changelog:
-- author: Barodybroject Team
-  date: '2025-10-28'
-  description: Enhanced with VS Code Copilot optimization and comprehensive Django/OpenAI
-    testing patterns
-- author: Barodybroject Team
-  date: '2025-10-11'
-  description: Initial creation with core testing standards
-containerRequirements:
-  baseImage: python:3.8-slim
-  description: Django testing environment with PostgreSQL and OpenAI service mocking
-  environment:
-    DATABASE_URL: postgresql://test_user:test_password@db:5432/test_db
-    DJANGO_SETTINGS_MODULE: barodybroject.settings.testing
-    OPENAI_API_KEY: mock-key-for-testing
-  exposedPorts:
-  - 8000
-  healthCheck: pytest --version command validation
-  portDescription: Django test server for integration testing
-  resources:
-    cpu: 0.5-1.0
-    memory: 512MiB-1GiB
-  volumes:
-  - /app/tests:rw
-  - /app/coverage:rw
-  - /app/src:ro
-created: 2025-10-11
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-- languages.instructions.md: Python testing patterns and standards
-- features.instructions.md: Feature development and testing integration
-- frontmatter.standards.md: Unified metadata and documentation standards
-description: VS Code Copilot-optimized testing standards and best practices for Django/OpenAI
-  applications
-file: test.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-notes: Emphasizes Django testing best practices, OpenAI service mocking, container-based
-  testing, and comprehensive coverage
-paths:
-  testing_workflow_path:
-  - test_planning
-  - unit_test_development
-  - integration_test_creation
-  - api_testing_validation
-  - ui_testing_automation
-  - coverage_analysis
-  - ci_integration
-relatedEvolutions:
-- Enhanced Django/OpenAI testing patterns
-- Container-based testing environments
-- AI service mocking and validation strategies
-source_file: test.instructions.md
-summary: Testing ensures code quality, reliability, and maintainability. All new features
-  should include appropriate tests.
 tags:
 - python
 - docker
 - aws
 - api
 - database
-title: Testing Standards
-usage: Reference for all testing activities in Django/OpenAI applications including
-  unit, integration, API, and UI testing
-version: 1.1.0
+last_updated: null
+source_file: test.instructions.md
 ---
-
-
 # Testing Standards
 
 ## Testing Philosophy

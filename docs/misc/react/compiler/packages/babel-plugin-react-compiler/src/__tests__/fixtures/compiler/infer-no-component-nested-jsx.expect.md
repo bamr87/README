@@ -1,15 +1,11 @@
 ---
+title: Infer No Component Nested Jsx.Expect
 category: misc
-last_updated: null
-source_file: infer-no-component-nested-jsx.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component(props)\
-  \ {\n  const result = f(props);\n  function helper() {\n    return <foo />;\n  }\n\
-  \  helper();\n  return result;\n}"
 tags:
 - javascript
-title: Infer No Component Nested Jsx.Expect
+last_updated: null
+source_file: infer-no-component-nested-jsx.expect.md
 ---
-
 ## Input
 
 ```javascript

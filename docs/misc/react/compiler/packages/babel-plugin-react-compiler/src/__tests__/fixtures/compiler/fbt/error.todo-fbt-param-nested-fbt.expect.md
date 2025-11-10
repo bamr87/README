@@ -1,17 +1,11 @@
 ---
+title: Error.Todo Fbt Param Nested Fbt.Expect
 category: misc
-last_updated: null
-source_file: error.todo-fbt-param-nested-fbt.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Fbt Param Nested Fbt.Expect
+last_updated: null
+source_file: error.todo-fbt-param-nested-fbt.expect.md
 ---
-
 ## Input
 
 ```javascript

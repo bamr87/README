@@ -1,14 +1,11 @@
 ---
+title: Function Declaration Redeclare.Expect
 category: misc
-last_updated: null
-source_file: function-declaration-redeclare.expect.md
-summary: "```javascript\nfunction component() {\n  function x(a) {\n    a.foo();\n\
-  \  }\n  function x() {}\n  return x;\n}"
 tags:
 - javascript
-title: Function Declaration Redeclare.Expect
+last_updated: null
+source_file: function-declaration-redeclare.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Error.False Positive Usememo Overlap Scopes.Expect
 category: misc
-last_updated: null
-source_file: error.false-positive-useMemo-overlap-scopes.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees:true
-
-  import {useMemo} from ''react'';
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.False Positive Usememo Overlap Scopes.Expect
+last_updated: null
+source_file: error.false-positive-useMemo-overlap-scopes.expect.md
 ---
-
 ## Input
 
 ```javascript

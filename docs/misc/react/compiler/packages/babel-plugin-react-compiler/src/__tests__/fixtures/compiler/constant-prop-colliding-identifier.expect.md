@@ -1,15 +1,11 @@
 ---
+title: Constant Prop Colliding Identifier.Expect
 category: misc
-last_updated: null
-source_file: constant-prop-colliding-identifier.expect.md
-summary: '```javascript
-
-  import {invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Prop Colliding Identifier.Expect
+last_updated: null
+source_file: constant-prop-colliding-identifier.expect.md
 ---
-
 ## Input
 
 ```javascript

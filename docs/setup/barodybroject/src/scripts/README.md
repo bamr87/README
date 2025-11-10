@@ -1,15 +1,13 @@
 ---
+title: scripts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Generate DKIM keys for email authentication\npython scripts/dkimkeygenerator.py"
 tags:
 - python
 - docker
 - setup
-title: scripts Directory
+last_updated: null
+source_file: README.md
 ---
-
 # scripts Directory
 
 ## Purpose

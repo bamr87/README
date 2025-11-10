@@ -1,16 +1,12 @@
 ---
+title: Error.Todo Valid Functiondecl Hoisting.Expect
 category: api
-last_updated: null
-source_file: error.todo-valid-functiondecl-hoisting.expect.md
-summary: "```javascript\nimport {Stringify} from 'sharedruntime';\n/\n  Also see error.todofunctiondeclhoisting.tsx\
-  \ which shows invalid\n  compilation cases.\n \n  This bailout specifically is a\
-  \ false positive for si..."
 tags:
 - javascript
 - api
-title: Error.Todo Valid Functiondecl Hoisting.Expect
+last_updated: null
+source_file: error.todo-valid-functiondecl-hoisting.expect.md
 ---
-
 ## Input
 
 ```javascript

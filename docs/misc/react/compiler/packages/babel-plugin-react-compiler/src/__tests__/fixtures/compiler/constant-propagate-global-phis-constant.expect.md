@@ -1,15 +1,12 @@
 ---
+title: Constant Propagate Global Phis Constant.Expect
 category: misc
-last_updated: null
-source_file: constant-propagate-global-phis-constant.expect.md
-summary: "```javascript\nimport {CONSTSTRING0, Text} from 'sharedruntime';\nfunction\
-  \ useFoo() {\n  'use no forget';\n  return {tab: CONSTSTRING0};\n}"
 tags:
 - javascript
 - testing
-title: Constant Propagate Global Phis Constant.Expect
+last_updated: null
+source_file: constant-propagate-global-phis-constant.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Reassign Local Variable In Async Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-local-variable-in-async-callback.expect.md
-summary: "```javascript\nfunction Component() {\n  let value = null;\n  const reassign\
-  \ = async () => {\n    await foo().then(result => {\n      // Reassigning a local\
-  \ variable in an async function is always mutating..."
 tags:
 - javascript
-title: Error.Invalid Reassign Local Variable In Async Callback.Expect
+last_updated: null
+source_file: error.invalid-reassign-local-variable-in-async-callback.expect.md
 ---
-
 ## Input
 
 ```javascript

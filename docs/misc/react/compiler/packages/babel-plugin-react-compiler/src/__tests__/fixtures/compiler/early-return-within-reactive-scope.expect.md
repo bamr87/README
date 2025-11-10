@@ -1,15 +1,11 @@
 ---
+title: Early Return Within Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: early-return-within-reactive-scope.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Early Return Within Reactive Scope.Expect
+last_updated: null
+source_file: early-return-within-reactive-scope.expect.md
 ---
-
 ## Input
 
 ```javascript

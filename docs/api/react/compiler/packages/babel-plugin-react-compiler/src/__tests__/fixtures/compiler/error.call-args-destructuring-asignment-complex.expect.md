@@ -1,15 +1,12 @@
 ---
+title: Error.Call Args Destructuring Asignment Complex.Expect
 category: api
-last_updated: null
-source_file: error.call-args-destructuring-asignment-complex.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = makeObject();\n  x.foo(([[x]]\
-  \ = makeObject()));\n  return x;\n}"
 tags:
 - javascript
 - api
-title: Error.Call Args Destructuring Asignment Complex.Expect
+last_updated: null
+source_file: error.call-args-destructuring-asignment-complex.expect.md
 ---
-
 ## Input
 
 ```javascript

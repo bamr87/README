@@ -1,16 +1,12 @@
 ---
+title: Outlined Destructured Params.Expect
 category: misc
-last_updated: null
-source_file: outlined-destructured-params.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Outlined Destructured Params.Expect
+last_updated: null
+source_file: outlined-destructured-params.expect.md
 ---
-
 ## Input
 
 ```javascript

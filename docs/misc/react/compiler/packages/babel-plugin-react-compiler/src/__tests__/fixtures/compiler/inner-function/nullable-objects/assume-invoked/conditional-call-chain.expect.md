@@ -1,17 +1,11 @@
 ---
+title: Conditional Call Chain.Expect
 category: misc
-last_updated: null
-source_file: conditional-call-chain.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Conditional Call Chain.Expect
+last_updated: null
+source_file: conditional-call-chain.expect.md
 ---
-
 ## Input
 
 ```javascript

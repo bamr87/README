@@ -1,19 +1,11 @@
 ---
+title: Repro Renaming Conflicting Decls.Expect
 category: misc
-last_updated: null
-source_file: repro-renaming-conflicting-decls.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {Stringify, identity, makeArray, toJSON} from ''sharedruntime'';
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Repro Renaming Conflicting Decls.Expect
+last_updated: null
+source_file: repro-renaming-conflicting-decls.expect.md
 ---
-
 ## Input
 
 ```javascript

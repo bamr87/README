@@ -1,19 +1,11 @@
 ---
+title: Reactive Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: reactive-optional-chain.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Optional Chain.Expect
+last_updated: null
+source_file: reactive-optional-chain.expect.md
 ---
-
 ## Input
 
 ```javascript

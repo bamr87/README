@@ -1,17 +1,11 @@
 ---
+title: Fbtparam With Jsx Fragment Value.Expect
 category: misc
-last_updated: null
-source_file: fbtparam-with-jsx-fragment-value.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fbtparam With Jsx Fragment Value.Expect
+last_updated: null
+source_file: fbtparam-with-jsx-fragment-value.expect.md
 ---
-
 ## Input
 
 ```javascript

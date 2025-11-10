@@ -1,17 +1,14 @@
 ---
+title: '`react-devtools-core`'
 category: api
-last_updated: null
-source_file: README.md
-summary: This package provides lowlevel APIs to support renderers like React Native.
-  If you're looking for the standalone React DevTools UI, we suggest using reactdevtools
-  instead of using this package directl...
 tags:
 - javascript
 - docker
 - api
 - testing
 - api
-title: '`react-devtools-core`'
+last_updated: null
+source_file: README.md
 ---
 # `react-devtools-core`
 

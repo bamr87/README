@@ -1,23 +1,13 @@
 ---
-author: Jane Doe
+title: 2025 04 05 Bugs In Ai Testing
 category: development
-description: A humorous look at the origin of the term 'bug' in QA testing and its
-  relevance (or not!) to AI.
-last_updated: null
-published_at: '2025-04-05'
-slug: bugs-in-ai-testing
-source_file: 2025-04-05-bugs-in-ai-testing.md
-summary: In 1947, amidst the hum of navy engineering and the flicker of fluorescent
-  lighting, the pioneers of computer science stumbled upon a discovery that would
-  become a cornerstone of tech lore—a discovery...
 tags:
 - python
 - testing
 - development
-title: 2025 04 05 Bugs In Ai Testing
+last_updated: null
+source_file: 2025-04-05-bugs-in-ai-testing.md
 ---
-
-
 **Out of the Mothballs: The Unforgettable Tale of the 'First Bug’ and Its Enduring Legacy in AI Testing**
 
 In 1947, amidst the hum of navy engineering and the flicker of fluorescent lighting, the pioneers of computer science stumbled upon a discovery that would become a cornerstone of tech lore—a discovery rooted not in silicon ingenuity but in a moth’s adventurous misstep. This is the tale of an accidental intruder whose legacy transcends time, fluttering into the world of AI and QA testing, imbuing it with a story as illuminating as it is utterly useless. Welcome to the captivating saga of the “first bug.”

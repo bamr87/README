@@ -1,15 +1,11 @@
 ---
+title: Hoisting Reassigned Twice Let Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisting-reassigned-twice-let-declaration.expect.md
-summary: '```javascript
-
-  import {CONSTNUMBER0, CONSTNUMBER1, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Reassigned Twice Let Declaration.Expect
+last_updated: null
+source_file: hoisting-reassigned-twice-let-declaration.expect.md
 ---
-
 ## Input
 
 ```javascript

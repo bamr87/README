@@ -1,16 +1,14 @@
 ---
+title: '`react-devtools-inline`'
 category: api
-last_updated: null
-source_file: README.md
-summary: This package can be used to embed React DevTools into browserbased tools
-  like CodeSandbox, StackBlitz, and Replay.
 tags:
 - javascript
 - docker
 - api
 - testing
 - api
-title: '`react-devtools-inline`'
+last_updated: null
+source_file: README.md
 ---
 # `react-devtools-inline`
 

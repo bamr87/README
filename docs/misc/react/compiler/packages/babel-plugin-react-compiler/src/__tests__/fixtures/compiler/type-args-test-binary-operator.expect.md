@@ -1,14 +1,11 @@
 ---
+title: Type Args Test Binary Operator.Expect
 category: misc
-last_updated: null
-source_file: type-args-test-binary-operator.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  if (a > b) {\n    let m = {};\n\
-  \  }\n}"
 tags:
 - javascript
-title: Type Args Test Binary Operator.Expect
+last_updated: null
+source_file: type-args-test-binary-operator.expect.md
 ---
-
 ## Input
 
 ```javascript

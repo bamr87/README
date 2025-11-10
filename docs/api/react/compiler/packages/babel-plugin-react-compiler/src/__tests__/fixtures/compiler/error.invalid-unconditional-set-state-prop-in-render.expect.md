@@ -1,15 +1,12 @@
 ---
+title: Error.Invalid Unconditional Set State Prop In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-unconditional-set-state-prop-in-render.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender @enableTreatSetIdentifiersAsStateSetters\n\
-  function Component({setX}) {\n  const aliased = setX;"
 tags:
 - javascript
 - api
-title: Error.Invalid Unconditional Set State Prop In Render.Expect
+last_updated: null
+source_file: error.invalid-unconditional-set-state-prop-in-render.expect.md
 ---
-
 ## Input
 
 ```javascript

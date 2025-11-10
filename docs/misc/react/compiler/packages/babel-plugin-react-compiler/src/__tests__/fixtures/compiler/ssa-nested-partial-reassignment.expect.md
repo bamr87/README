@@ -1,15 +1,11 @@
 ---
+title: Ssa Nested Partial Reassignment.Expect
 category: misc
-last_updated: null
-source_file: ssa-nested-partial-reassignment.expect.md
-summary: "```javascript\nfunction foo(a, b, c, d, e) {\n  let x = null;\n  if (a)\
-  \ {\n    x = b;\n  } else {\n    if (c) {\n      x = d;\n    }\n  }\n  return x;\n\
-  }"
 tags:
 - javascript
-title: Ssa Nested Partial Reassignment.Expect
+last_updated: null
+source_file: ssa-nested-partial-reassignment.expect.md
 ---
-
 ## Input
 
 ```javascript

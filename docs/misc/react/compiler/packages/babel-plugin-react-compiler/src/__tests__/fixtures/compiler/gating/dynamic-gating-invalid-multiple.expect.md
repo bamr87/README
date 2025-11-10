@@ -1,16 +1,12 @@
 ---
+title: Dynamic Gating Invalid Multiple.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-invalid-multiple.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @panicThreshold:"none" @loggerTestOnly'
 tags:
 - javascript
 - testing
-title: Dynamic Gating Invalid Multiple.Expect
+last_updated: null
+source_file: dynamic-gating-invalid-multiple.expect.md
 ---
-
 ## Input
 
 ```javascript

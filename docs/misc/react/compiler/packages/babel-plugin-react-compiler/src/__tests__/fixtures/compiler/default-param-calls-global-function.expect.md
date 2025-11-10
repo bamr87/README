@@ -1,15 +1,11 @@
 ---
+title: Default Param Calls Global Function.Expect
 category: misc
-last_updated: null
-source_file: default-param-calls-global-function.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Default Param Calls Global Function.Expect
+last_updated: null
+source_file: default-param-calls-global-function.expect.md
 ---
-
 ## Input
 
 ```javascript

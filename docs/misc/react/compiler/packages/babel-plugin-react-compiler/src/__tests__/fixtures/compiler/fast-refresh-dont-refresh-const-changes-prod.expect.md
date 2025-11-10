@@ -1,19 +1,11 @@
 ---
+title: Fast Refresh Dont Refresh Const Changes Prod.Expect
 category: misc
-last_updated: null
-source_file: fast-refresh-dont-refresh-const-changes-prod.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  import {useEffect, useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fast Refresh Dont Refresh Const Changes Prod.Expect
+last_updated: null
+source_file: fast-refresh-dont-refresh-const-changes-prod.expect.md
 ---
-
 ## Input
 
 ```javascript

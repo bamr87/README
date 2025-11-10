@@ -1,15 +1,11 @@
 ---
+title: Allow Props Named Like Hooks.Expect
 category: misc
-last_updated: null
-source_file: allow-props-named-like-hooks.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Allow Props Named Like Hooks.Expect
+last_updated: null
+source_file: allow-props-named-like-hooks.expect.md
 ---
-
 ## Input
 
 ```javascript

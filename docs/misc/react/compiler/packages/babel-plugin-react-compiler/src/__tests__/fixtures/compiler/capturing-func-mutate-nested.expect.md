@@ -1,14 +1,11 @@
 ---
+title: Capturing Func Mutate Nested.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-mutate-nested.expect.md
-summary: "```javascript\nfunction component(a) {\n  let y = {b: {a}};\n  let x = function\
-  \ () {\n    y.b.a = 2;\n  };\n  x();\n  return y;\n}"
 tags:
 - javascript
-title: Capturing Func Mutate Nested.Expect
+last_updated: null
+source_file: capturing-func-mutate-nested.expect.md
 ---
-
 ## Input
 
 ```javascript

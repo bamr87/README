@@ -1,16 +1,12 @@
 ---
+title: Array At Effect.Expect
 category: misc
-last_updated: null
-source_file: array-at-effect.expect.md
-summary: "```javascript\n// arrayInstance.at should have the following effects:\n\
-  //   read on arg0\n//   read on receiver\n//   mutate on lvalue\nfunction ArrayAtTest(props)\
-  \ {\n  const arr = [foo(props.x)];\n  const r..."
 tags:
 - javascript
 - testing
-title: Array At Effect.Expect
+last_updated: null
+source_file: array-at-effect.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,20 +1,12 @@
 ---
+title: Error.Todo Syntax.Expect
 category: development
-last_updated: null
-source_file: error.todo-syntax.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import {useSpecialEffect} from ''sharedruntime'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Todo Syntax.Expect
+last_updated: null
+source_file: error.todo-syntax.expect.md
 ---
-
 ## Input
 
 ```javascript

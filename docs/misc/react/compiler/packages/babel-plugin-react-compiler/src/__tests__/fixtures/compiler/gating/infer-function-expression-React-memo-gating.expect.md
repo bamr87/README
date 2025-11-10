@@ -1,15 +1,11 @@
 ---
+title: Infer Function Expression React Memo Gating.Expect
 category: misc
-last_updated: null
-source_file: infer-function-expression-React-memo-gating.expect.md
-summary: "```javascript\n// @gating @compilationMode:\"infer\"\nimport React from\
-  \ 'react';\nexport default React.forwardRef(function notNamedLikeAComponent(props)\
-  \ {\n  return <div />;\n});"
 tags:
 - javascript
-title: Infer Function Expression React Memo Gating.Expect
+last_updated: null
+source_file: infer-function-expression-React-memo-gating.expect.md
 ---
-
 ## Input
 
 ```javascript

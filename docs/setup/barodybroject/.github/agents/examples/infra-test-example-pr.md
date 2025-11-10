@@ -1,15 +1,13 @@
 ---
+title: Example Infrastructure Test PR
 category: setup
-last_updated: null
-source_file: infra-test-example-pr.md
-summary: This is an example of what a pull request from the Infrastructure Tester
-  agent would look like.
 tags:
 - docker
 - database
 - testing
 - setup
-title: Example Infrastructure Test PR
+last_updated: null
+source_file: infra-test-example-pr.md
 ---
 # Example Infrastructure Test PR
 

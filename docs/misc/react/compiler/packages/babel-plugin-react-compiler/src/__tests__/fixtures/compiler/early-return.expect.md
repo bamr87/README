@@ -1,14 +1,11 @@
 ---
+title: Early Return.Expect
 category: misc
-last_updated: null
-source_file: early-return.expect.md
-summary: "```javascript\nfunction MyApp(props) {\n  let res;\n  if (props.cond) {\n\
-  \    return;\n  } else {\n    res = 1;\n  }\n}"
 tags:
 - javascript
-title: Early Return.Expect
+last_updated: null
+source_file: early-return.expect.md
 ---
-
 ## Input
 
 ```javascript

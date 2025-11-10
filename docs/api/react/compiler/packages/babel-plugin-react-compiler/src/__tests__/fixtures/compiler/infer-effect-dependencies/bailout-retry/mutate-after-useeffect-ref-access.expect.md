@@ -1,17 +1,13 @@
 ---
+title: Mutate After Useeffect Ref Access.Expect
 category: api
-last_updated: null
-source_file: mutate-after-useeffect-ref-access.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none" @loggerTestOnly'
 tags:
 - javascript
 - testing
 - api
-title: Mutate After Useeffect Ref Access.Expect
+last_updated: null
+source_file: mutate-after-useeffect-ref-access.expect.md
 ---
-
 ## Input
 
 ```javascript

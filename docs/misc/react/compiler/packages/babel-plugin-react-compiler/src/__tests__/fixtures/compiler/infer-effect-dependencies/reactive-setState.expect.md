@@ -1,19 +1,11 @@
 ---
+title: Reactive Setstate.Expect
 category: misc
-last_updated: null
-source_file: reactive-setState.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, useState, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Setstate.Expect
+last_updated: null
+source_file: reactive-setState.expect.md
 ---
-
 ## Input
 
 ```javascript

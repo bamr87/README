@@ -1,17 +1,15 @@
 ---
+title: tests Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Run all tests\npython m pytest src/parodynews/tests/"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: tests Directory
+last_updated: null
+source_file: README.md
 ---
-
 # tests Directory
 
 ## Purpose

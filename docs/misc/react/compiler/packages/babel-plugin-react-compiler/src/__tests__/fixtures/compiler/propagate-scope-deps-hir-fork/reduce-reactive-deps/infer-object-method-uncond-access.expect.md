@@ -1,15 +1,11 @@
 ---
+title: Infer Object Method Uncond Access.Expect
 category: misc
-last_updated: null
-source_file: infer-object-method-uncond-access.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Object Method Uncond Access.Expect
+last_updated: null
+source_file: infer-object-method-uncond-access.expect.md
 ---
-
 ## Input
 
 ```javascript

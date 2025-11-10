@@ -1,15 +1,11 @@
 ---
+title: Object Values Mutation.Expect
 category: misc
-last_updated: null
-source_file: object-values-mutation.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Values Mutation.Expect
+last_updated: null
+source_file: object-values-mutation.expect.md
 ---
-
 ## Input
 
 ```javascript

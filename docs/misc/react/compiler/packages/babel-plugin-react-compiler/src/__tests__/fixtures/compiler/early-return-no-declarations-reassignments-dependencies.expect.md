@@ -1,16 +1,12 @@
 ---
+title: Early Return No Declarations Reassignments Dependencies.Expect
 category: misc
-last_updated: null
-source_file: early-return-no-declarations-reassignments-dependencies.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Early Return No Declarations Reassignments Dependencies.Expect
+last_updated: null
+source_file: early-return-no-declarations-reassignments-dependencies.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,16 +1,13 @@
 ---
+title: Todo.Memoize Loops That Produce Memoizeable Values.Expect
 category: api
-last_updated: null
-source_file: todo.memoize-loops-that-produce-memoizeable-values.expect.md
-summary: "```javascript\nfunction useHook(nodeID, condition) {\n  const graph = useContext(GraphContext);\n\
-  \  const node = nodeID != null ? graph[nodeID] : null;"
 tags:
 - javascript
 - api
 - api
-title: Todo.Memoize Loops That Produce Memoizeable Values.Expect
+last_updated: null
+source_file: todo.memoize-loops-that-produce-memoizeable-values.expect.md
 ---
-
 ## Input
 
 ```javascript

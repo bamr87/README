@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Mutation In Closure.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutation-in-closure.expect.md
-summary: "```javascript\nfunction useInvalidMutation(options) {\n  function test()\
-  \ {\n    foo(options.foo); // error should not point on this line\n    options.foo\
-  \ = 'bar';\n  }\n  return test;\n}"
 tags:
 - javascript
 - testing
-title: Error.Invalid Mutation In Closure.Expect
+last_updated: null
+source_file: error.invalid-mutation-in-closure.expect.md
 ---
-
 ## Input
 
 ```javascript

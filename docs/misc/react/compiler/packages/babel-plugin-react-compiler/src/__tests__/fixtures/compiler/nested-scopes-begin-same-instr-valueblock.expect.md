@@ -1,15 +1,11 @@
 ---
+title: Nested Scopes Begin Same Instr Valueblock.Expect
 category: misc
-last_updated: null
-source_file: nested-scopes-begin-same-instr-valueblock.expect.md
-summary: '```javascript
-
-  import {identity, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nested Scopes Begin Same Instr Valueblock.Expect
+last_updated: null
+source_file: nested-scopes-begin-same-instr-valueblock.expect.md
 ---
-
 ## Input
 
 ```javascript

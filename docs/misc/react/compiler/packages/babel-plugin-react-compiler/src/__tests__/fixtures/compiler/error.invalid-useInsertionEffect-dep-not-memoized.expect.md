@@ -1,17 +1,11 @@
 ---
+title: Error.Invalid Useinsertioneffect Dep Not Memoized.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useInsertionEffect-dep-not-memoized.expect.md
-summary: '```javascript
-
-  // @validateMemoizedEffectDependencies
-
-  import {useInsertionEffect} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Useinsertioneffect Dep Not Memoized.Expect
+last_updated: null
+source_file: error.invalid-useInsertionEffect-dep-not-memoized.expect.md
 ---
-
 ## Input
 
 ```javascript

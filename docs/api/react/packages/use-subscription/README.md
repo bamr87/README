@@ -1,13 +1,12 @@
 ---
+title: use-subscription
 category: api
-last_updated: null
-source_file: README.md
-summary: React Hook for subscribing to external data sources.
 tags:
 - javascript
 - api
 - api
-title: use-subscription
+last_updated: null
+source_file: README.md
 ---
 # use-subscription
 

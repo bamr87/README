@@ -1,15 +1,11 @@
 ---
+title: Error.Invalid Useeffect Dep Not Memoized Bc Range Overlaps Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useEffect-dep-not-memoized-bc-range-overlaps-hook.expect.md
-summary: "```javascript\n// @validateMemoizedEffectDependencies\nfunction Component(props)\
-  \ {\n  // Items cannot be memoized bc its mutation spans a hook call\n  const items\
-  \ = [props.value];\n  const [state, setState..."
 tags:
 - javascript
-title: Error.Invalid Useeffect Dep Not Memoized Bc Range Overlaps Hook.Expect
+last_updated: null
+source_file: error.invalid-useEffect-dep-not-memoized-bc-range-overlaps-hook.expect.md
 ---
-
 ## Input
 
 ```javascript

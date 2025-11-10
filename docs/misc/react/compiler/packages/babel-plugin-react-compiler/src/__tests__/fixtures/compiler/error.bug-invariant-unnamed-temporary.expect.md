@@ -1,15 +1,11 @@
 ---
+title: Error.Bug Invariant Unnamed Temporary.Expect
 category: misc
-last_updated: null
-source_file: error.bug-invariant-unnamed-temporary.expect.md
-summary: '```javascript
-
-  import Bar from ''./Bar'';'
 tags:
 - javascript
-title: Error.Bug Invariant Unnamed Temporary.Expect
+last_updated: null
+source_file: error.bug-invariant-unnamed-temporary.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Optional Member Expression As Memo Dep.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-as-memo-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies
-
-  import {identity, ValidateMemoization} from ''sharedruntime'';
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Optional Member Expression As Memo Dep.Expect
+last_updated: null
+source_file: optional-member-expression-as-memo-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,15 +1,11 @@
 ---
+title: Timers.Expect
 category: misc
-last_updated: null
-source_file: timers.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const start = performance.now();\n\
-  \  const now = Date.now();\n  const time = performance.now()  start;\n  return (\n\
-  \    <div>\n      rendering took {time} at {now..."
 tags:
 - javascript
-title: Timers.Expect
+last_updated: null
+source_file: timers.expect.md
 ---
-
 ## Input
 
 ```javascript

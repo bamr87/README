@@ -1,15 +1,11 @@
 ---
+title: Object Shorthand Method 1.Expect
 category: misc
-last_updated: null
-source_file: object-shorthand-method-1.expect.md
-summary: "```javascript\nimport {createHookWrapper} from 'sharedruntime';\nfunction\
-  \ useHook({a, b}) {\n  return {\n    x: function () {\n      return [a];\n    },\n\
-  \    y() {\n      return [b];\n    },\n  };\n}"
 tags:
 - javascript
-title: Object Shorthand Method 1.Expect
+last_updated: null
+source_file: object-shorthand-method-1.expect.md
 ---
-
 ## Input
 
 ```javascript

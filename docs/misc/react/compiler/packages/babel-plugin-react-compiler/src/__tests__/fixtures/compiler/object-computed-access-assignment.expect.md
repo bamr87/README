@@ -1,14 +1,11 @@
 ---
+title: Object Computed Access Assignment.Expect
 category: misc
-last_updated: null
-source_file: object-computed-access-assignment.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const x = {...a};\n  x[b] = c[b];\n\
-  \  x[1 + 2] = c[b  4];\n}"
 tags:
 - javascript
-title: Object Computed Access Assignment.Expect
+last_updated: null
+source_file: object-computed-access-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

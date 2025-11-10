@@ -1,13 +1,11 @@
 ---
+title: Ssa Switch.Expect
 category: misc
-last_updated: null
-source_file: ssa-switch.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;"
 tags:
 - javascript
-title: Ssa Switch.Expect
+last_updated: null
+source_file: ssa-switch.expect.md
 ---
-
 ## Input
 
 ```javascript

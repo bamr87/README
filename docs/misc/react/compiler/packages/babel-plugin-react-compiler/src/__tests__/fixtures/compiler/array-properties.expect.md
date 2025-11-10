@@ -1,15 +1,11 @@
 ---
+title: Array Properties.Expect
 category: misc
-last_updated: null
-source_file: array-properties.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = [props.a, props.b,\
-  \ 'hello'];\n  const x = a.length;\n  const y = a.push;\n  return {a, x, y, z: a.concat};\n\
-  }"
 tags:
 - javascript
-title: Array Properties.Expect
+last_updated: null
+source_file: array-properties.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,19 +1,11 @@
 ---
+title: Repro Object Fromentries Entries.Expect
 category: misc
-last_updated: null
-source_file: repro-object-fromEntries-entries.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Object Fromentries Entries.Expect
+last_updated: null
+source_file: repro-object-fromEntries-entries.expect.md
 ---
-
 ## Input
 
 ```javascript

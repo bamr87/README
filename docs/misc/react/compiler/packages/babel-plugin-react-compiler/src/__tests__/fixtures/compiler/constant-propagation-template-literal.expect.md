@@ -1,17 +1,11 @@
 ---
+title: Constant Propagation Template Literal.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-template-literal.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {Stringify, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Propagation Template Literal.Expect
+last_updated: null
+source_file: constant-propagation-template-literal.expect.md
 ---
-
 ## Input
 
 ```javascript

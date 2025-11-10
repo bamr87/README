@@ -1,15 +1,11 @@
 ---
+title: No Flow Bailout Unrelated.Expect
 category: misc
-last_updated: null
-source_file: no-flow-bailout-unrelated.expect.md
-summary: '```javascript
-
-  // @enableFlowSuppressions'
 tags:
 - javascript
-title: No Flow Bailout Unrelated.Expect
+last_updated: null
+source_file: no-flow-bailout-unrelated.expect.md
 ---
-
 ## Input
 
 ```javascript

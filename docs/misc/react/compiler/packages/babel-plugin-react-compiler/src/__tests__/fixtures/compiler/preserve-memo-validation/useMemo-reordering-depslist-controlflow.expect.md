@@ -1,19 +1,11 @@
 ---
+title: Usememo Reordering Depslist Controlflow.Expect
 category: misc
-last_updated: null
-source_file: useMemo-reordering-depslist-controlflow.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Reordering Depslist Controlflow.Expect
+last_updated: null
+source_file: useMemo-reordering-depslist-controlflow.expect.md
 ---
-
 ## Input
 
 ```javascript

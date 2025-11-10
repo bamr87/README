@@ -1,15 +1,11 @@
 ---
+title: Capturing Function Runs Inference.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-runs-inference.expect.md
-summary: "```javascript\nimport {Stringify} from 'sharedruntime';\nfunction Component({a,\
-  \ b}) {\n  let z = {a};\n  let p = () => <Stringify>{z}</Stringify>;\n  return p();\n\
-  }\nexport const FIXTUREENTRYPOINT = {\n  fn: ..."
 tags:
 - javascript
-title: Capturing Function Runs Inference.Expect
+last_updated: null
+source_file: capturing-function-runs-inference.expect.md
 ---
-
 ## Input
 
 ```javascript

@@ -1,17 +1,11 @@
 ---
+title: Merge Uncond Optional Chain And Cond.Expect
 category: misc
-last_updated: null
-source_file: merge-uncond-optional-chain-and-cond.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Merge Uncond Optional Chain And Cond.Expect
+last_updated: null
+source_file: merge-uncond-optional-chain-and-cond.expect.md
 ---
-
 ## Input
 
 ```javascript

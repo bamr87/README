@@ -1,32 +1,15 @@
 ---
-affected_versions:
-- X.Y.Z
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Security Update: [Security Issue Title]'
 category: setup
-cve_ids: []
-date: YYYY-MM-DD
-impact: critical|high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-severity_score: 9.8|7.5|5.0|2.1
-source_file: security-template.md
-summary: '> Summary: Onesentence description of the security vulnerability that was
-  addressed.'
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: 'Security Update: [Security Issue Title]'
-type: security
-version: X.Y.Z
+last_updated: null
+source_file: security-template.md
 ---
-
-
 # Security Update: [Security Issue Title]
 
 > **Summary**: One-sentence description of the security vulnerability that was addressed.

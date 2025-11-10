@@ -1,15 +1,12 @@
 ---
+title: Error. Todo.Computed Lval In Destructure.Expect
 category: development
-last_updated: null
-source_file: error._todo.computed-lval-in-destructure.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const computedKey = props.key;\n\
-  \  const {[computedKey]: x} = props.val;"
 tags:
 - javascript
 - development
-title: Error. Todo.Computed Lval In Destructure.Expect
+last_updated: null
+source_file: error._todo.computed-lval-in-destructure.expect.md
 ---
-
 ## Input
 
 ```javascript

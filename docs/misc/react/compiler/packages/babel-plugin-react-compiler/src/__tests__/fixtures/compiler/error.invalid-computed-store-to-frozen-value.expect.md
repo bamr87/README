@@ -1,14 +1,11 @@
 ---
+title: Error.Invalid Computed Store To Frozen Value.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-computed-store-to-frozen-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeObject();\n\
-  \  // freeze\n  <div>{x}</div>;\n  x[0] = true;\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Computed Store To Frozen Value.Expect
+last_updated: null
+source_file: error.invalid-computed-store-to-frozen-value.expect.md
 ---
-
 ## Input
 
 ```javascript

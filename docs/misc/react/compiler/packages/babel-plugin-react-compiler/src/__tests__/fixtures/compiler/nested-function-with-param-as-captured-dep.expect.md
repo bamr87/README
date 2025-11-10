@@ -1,14 +1,11 @@
 ---
+title: Nested Function With Param As Captured Dep.Expect
 category: misc
-last_updated: null
-source_file: nested-function-with-param-as-captured-dep.expect.md
-summary: "```javascript\nfunction Foo() {\n  return (function t() {\n    let x = {};\n\
-  \    return function a(x = () => {}) {\n      return x;\n    };\n  })();\n}"
 tags:
 - javascript
-title: Nested Function With Param As Captured Dep.Expect
+last_updated: null
+source_file: nested-function-with-param-as-captured-dep.expect.md
 ---
-
 ## Input
 
 ```javascript

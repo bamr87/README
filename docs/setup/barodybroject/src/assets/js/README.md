@@ -1,26 +1,14 @@
 ---
+title: js Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '``html
-
-  <! In Django templates >
-
-  {% load static %}
-
-  <script src="{% static ''js/contentdetail.js'' %}"></script>
-
-  <script src="{% static ''js/tableutils.js'' %}"></script>
-
-  <script src="{% static ''js/halfmoon...'
 tags:
 - python
 - javascript
 - docker
 - setup
-title: js Directory
+last_updated: null
+source_file: README.md
 ---
-
 # js Directory
 
 ## Purpose

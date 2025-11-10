@@ -1,15 +1,11 @@
 ---
+title: Return Function.Expect
 category: misc
-last_updated: null
-source_file: return-function.expect.md
-summary: '```javascript
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Return Function.Expect
+last_updated: null
+source_file: return-function.expect.md
 ---
-
 ## Input
 
 ```javascript

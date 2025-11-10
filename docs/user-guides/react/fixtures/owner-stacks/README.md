@@ -1,13 +1,12 @@
 ---
+title: Getting Started with Create React App
 category: user-guides
-last_updated: null
-source_file: README.md
-summary: This project was bootstrapped with Create React App.
 tags:
 - javascript
 - testing
 - user-guides
-title: Getting Started with Create React App
+last_updated: null
+source_file: README.md
 ---
 # Getting Started with Create React App
 

@@ -1,14 +1,11 @@
 ---
+title: Repro Object Pattern.Expect
 category: misc
-last_updated: null
-source_file: repro-object-pattern.expect.md
-summary: "```javascript\nfunction component(t) {\n  let {a} = t;\n  let y = {a};\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Repro Object Pattern.Expect
+last_updated: null
+source_file: repro-object-pattern.expect.md
 ---
-
 ## Input
 
 ```javascript

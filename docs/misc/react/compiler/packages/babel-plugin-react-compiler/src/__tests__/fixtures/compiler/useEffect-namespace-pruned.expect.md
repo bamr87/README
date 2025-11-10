@@ -1,15 +1,11 @@
 ---
+title: Useeffect Namespace Pruned.Expect
 category: misc
-last_updated: null
-source_file: useEffect-namespace-pruned.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Useeffect Namespace Pruned.Expect
+last_updated: null
+source_file: useEffect-namespace-pruned.expect.md
 ---
-
 ## Input
 
 ```javascript

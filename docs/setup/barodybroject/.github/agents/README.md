@@ -1,16 +1,14 @@
 ---
+title: GitHub Agents Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains agent configuration files for automated development,
-  testing, and maintenance workflows in the Barodybroject repository.
 tags:
 - javascript
 - docker
 - aws
 - api
 - testing
-title: GitHub Agents Directory
+last_updated: null
+source_file: README.md
 ---
 # GitHub Agents Directory
 

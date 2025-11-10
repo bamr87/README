@@ -1,17 +1,11 @@
 ---
+title: Usestate Pruned Dependency Change Detect.Expect
 category: misc
-last_updated: null
-source_file: useState-pruned-dependency-change-detect.expect.md
-summary: '```javascript
-
-  // @enableChangeDetectionForDebugging
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Usestate Pruned Dependency Change Detect.Expect
+last_updated: null
+source_file: useState-pruned-dependency-change-detect.expect.md
 ---
-
 ## Input
 
 ```javascript

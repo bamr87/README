@@ -1,15 +1,11 @@
 ---
+title: Rules Of Hooks Eacfcaa6Ef89.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-eacfcaa6ef89.expect.md
-summary: "```javascript\n// Valid because hooks can be used in anonymous function\
-  \ arguments to\n// memo.\nconst MemoizedFunction = memo(function (props) {\n  useHook();\n\
-  \  return <button {...props} />;\n});"
 tags:
 - javascript
-title: Rules Of Hooks Eacfcaa6Ef89.Expect
+last_updated: null
+source_file: rules-of-hooks-eacfcaa6ef89.expect.md
 ---
-
 ## Input
 
 ```javascript

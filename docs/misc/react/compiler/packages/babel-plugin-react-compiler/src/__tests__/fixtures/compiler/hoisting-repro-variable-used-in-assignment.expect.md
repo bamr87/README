@@ -1,14 +1,11 @@
 ---
+title: Hoisting Repro Variable Used In Assignment.Expect
 category: misc
-last_updated: null
-source_file: hoisting-repro-variable-used-in-assignment.expect.md
-summary: "```javascript\nfunction get2() {\n  const callbk = () => {\n    const copy\
-  \ = x;\n    return copy;\n  };\n  const x = 2;\n  return callbk();\n}"
 tags:
 - javascript
-title: Hoisting Repro Variable Used In Assignment.Expect
+last_updated: null
+source_file: hoisting-repro-variable-used-in-assignment.expect.md
 ---
-
 ## Input
 
 ```javascript

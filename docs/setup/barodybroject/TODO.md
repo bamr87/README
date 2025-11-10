@@ -1,17 +1,14 @@
 ---
+title: 'TODO: Project Issues and Enhancements'
 category: setup
-last_updated: null
-source_file: TODO.md
-summary: This document tracks issues, missing functionality, and enhancements needed
-  for the Barody Project to comply with best practices and improve overall quality.
-  It also includes Azure deployment next ste...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: 'TODO: Project Issues and Enhancements'
+last_updated: null
+source_file: TODO.md
 ---
 # TODO: Project Issues and Enhancements
 

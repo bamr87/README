@@ -1,14 +1,11 @@
 ---
+title: Assignment Expression Nested Path.Expect
 category: misc
-last_updated: null
-source_file: assignment-expression-nested-path.expect.md
-summary: "```javascript\nfunction g(props) {\n  const a = {b: {c: props.c}};\n  a.b.c\
-  \ = a.b.c + 1;\n  a.b.c = 2;\n  return a;\n}"
 tags:
 - javascript
-title: Assignment Expression Nested Path.Expect
+last_updated: null
+source_file: assignment-expression-nested-path.expect.md
 ---
-
 ## Input
 
 ```javascript

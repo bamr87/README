@@ -1,15 +1,11 @@
 ---
+title: Capturing Nested Member Expr In Nested Func.Expect
 category: misc
-last_updated: null
-source_file: capturing-nested-member-expr-in-nested-func.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a: {a}};\n  let x = function\
-  \ () {\n    (function () {\n      console.log(z.a.a);\n    })();\n  };\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Capturing Nested Member Expr In Nested Func.Expect
+last_updated: null
+source_file: capturing-nested-member-expr-in-nested-func.expect.md
 ---
-
 ## Input
 
 ```javascript
