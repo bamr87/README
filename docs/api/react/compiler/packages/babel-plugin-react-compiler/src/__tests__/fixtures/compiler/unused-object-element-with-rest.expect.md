@@ -1,0 +1,57 @@
+---
+category: api
+last_updated: null
+source_file: unused-object-element-with-rest.expect.md
+summary: "``javascript\nfunction Foo(props) {\n  // can't remove unused since it affects\
+  \ which properties are copied into rest`\n  const {unused, ...rest} = props.a;\n\
+  \  return rest;\n}"
+tags:
+- javascript
+- api
+- api
+title: Unused Object Element With Rest.Expect
+---
+
+## Input
+
+```javascript
+function Foo(props) {
+  // can't remove `unused` since it affects which properties are copied into `rest`
+  const {unused, ...rest} = props.a;
+  return rest;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Foo,
+  params: ['TodoAdd'],
+  isComponent: 'TodoAdd',
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function Foo(props) {
+  const $ = _c(2);
+  let rest;
+  if ($[0] !== props.a) {
+    const { unused, ...t0 } = props.a;
+    rest = t0;
+    $[0] = props.a;
+    $[1] = rest;
+  } else {
+    rest = $[1];
+  }
+  return rest;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Foo,
+  params: ["TodoAdd"],
+  isComponent: "TodoAdd",
+};
+
+```
+      

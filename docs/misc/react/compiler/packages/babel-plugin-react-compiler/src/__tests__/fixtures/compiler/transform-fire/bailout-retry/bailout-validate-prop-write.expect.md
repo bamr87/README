@@ -1,0 +1,55 @@
+---
+category: misc
+last_updated: null
+source_file: bailout-validate-prop-write.expect.md
+summary: '```javascript
+
+  // @enableFire @panicThreshold:"none"
+
+  import {fire} from ''react'';'
+tags:
+- javascript
+title: Bailout Validate Prop Write.Expect
+---
+
+## Input
+
+```javascript
+// @enableFire @panicThreshold:"none"
+import {fire} from 'react';
+
+function Component({prop1}) {
+  const foo = () => {
+    console.log(prop1);
+  };
+  useEffect(() => {
+    fire(foo(prop1));
+  });
+  prop1.value += 1;
+}
+
+```
+
+## Code
+
+```javascript
+import { useFire } from "react/compiler-runtime"; // @enableFire @panicThreshold:"none"
+import { fire } from "react";
+
+function Component(t0) {
+  const { prop1 } = t0;
+  const foo = () => {
+    console.log(prop1);
+  };
+  const t1 = useFire(foo);
+
+  useEffect(() => {
+    t1(prop1);
+  });
+  prop1.value = prop1.value + 1;
+}
+
+```
+      
+### Eval output
+(kind: exception) Fixture not implemented

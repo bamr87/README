@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-03T16:00:48.901805",
+  "test_suite": "documentation_aggregator",
+  "unit_tests": {
+    "timestamp": "2025-10-03T16:00:48.901824",
+    "test_type": "unit",
+    "total_tests": 29,
+    "passed": 29,
+    "failed": 0,
+    "errors": 0,
+    "test_results": []
+  },
+  "integration_tests": null,
+  "overall_success": true
+}

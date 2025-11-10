@@ -1,0 +1,59 @@
+---
+category: misc
+last_updated: null
+source_file: useMemo-with-optional.expect.md
+summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
+  \ {useMemo} from 'react';\nfunction Component(props) {\n  return (\n    useMemo(()\
+  \ => {\n      return [props.value];\n    }) || []\n ..."
+tags:
+- javascript
+title: Usememo With Optional.Expect
+---
+
+## Input
+
+```javascript
+// @enablePreserveExistingMemoizationGuarantees:false
+import {useMemo} from 'react';
+function Component(props) {
+  return (
+    useMemo(() => {
+      return [props.value];
+    }) || []
+  );
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: [{value: 1}],
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime"; // @enablePreserveExistingMemoizationGuarantees:false
+import { useMemo } from "react";
+function Component(props) {
+  const $ = _c(2);
+  let t0;
+  if ($[0] !== props.value) {
+    t0 = (() => [props.value])() || [];
+    $[0] = props.value;
+    $[1] = t0;
+  } else {
+    t0 = $[1];
+  }
+  return t0;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: [{ value: 1 }],
+};
+
+```
+      
+### Eval output
+(kind: ok) [1]

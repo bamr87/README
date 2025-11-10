@@ -1,0 +1,55 @@
+---
+category: misc
+last_updated: null
+source_file: assignment-variations-complex-lvalue-array.expect.md
+summary: "```javascript\nfunction foo() {\n  const a = [[1]];\n  const first = a.at(0);\n\
+  \  first.set(0, 2);\n  return a;\n}"
+tags:
+- javascript
+title: Assignment Variations Complex Lvalue Array.Expect
+---
+
+## Input
+
+```javascript
+function foo() {
+  const a = [[1]];
+  const first = a.at(0);
+  first.set(0, 2);
+  return a;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: foo,
+  params: [],
+  isComponent: false,
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function foo() {
+  const $ = _c(1);
+  let a;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    a = [[1]];
+    const first = a.at(0);
+    first.set(0, 2);
+    $[0] = a;
+  } else {
+    a = $[0];
+  }
+  return a;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: foo,
+  params: [],
+  isComponent: false,
+};
+
+```
+      

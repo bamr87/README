@@ -1,0 +1,63 @@
+---
+category: misc
+last_updated: null
+source_file: do-while-compound-test.expect.md
+summary: "```javascript\nfunction Component(props) {\n  let x = [1, 2, 3];\n  let\
+  \ ret = [];\n  do {\n    let item = x.pop();\n    ret.push(item  2);\n  } while\
+  \ (x.length && props.cond);\n  return ret;\n}"
+tags:
+- javascript
+title: Do While Compound Test.Expect
+---
+
+## Input
+
+```javascript
+function Component(props) {
+  let x = [1, 2, 3];
+  let ret = [];
+  do {
+    let item = x.pop();
+    ret.push(item * 2);
+  } while (x.length && props.cond);
+  return ret;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: ['TodoAdd'],
+  isComponent: 'TodoAdd',
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function Component(props) {
+  const $ = _c(2);
+  let ret;
+  if ($[0] !== props) {
+    const x = [1, 2, 3];
+    ret = [];
+    do {
+      const item = x.pop();
+      ret.push(item * 2);
+    } while (x.length && props.cond);
+    $[0] = props;
+    $[1] = ret;
+  } else {
+    ret = $[1];
+  }
+  return ret;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: ["TodoAdd"],
+  isComponent: "TodoAdd",
+};
+
+```
+      

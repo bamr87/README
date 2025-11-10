@@ -1,0 +1,73 @@
+---
+category: misc
+last_updated: null
+source_file: sequentially-constant-progagatable-if-test-conditions.expect.md
+summary: "```javascript\nfunction Component() {\n  let a = 1;"
+tags:
+- javascript
+title: Sequentially Constant Progagatable If Test Conditions.Expect
+---
+
+## Input
+
+```javascript
+function Component() {
+  let a = 1;
+
+  let b;
+  if (a === 1) {
+    b = true;
+  } else {
+    b = false;
+  }
+
+  let c;
+  if (b) {
+    c = 'hello';
+  } else {
+    c = null;
+  }
+
+  let d;
+  if (c === 'hello') {
+    d = 42.0;
+  } else {
+    d = 42.001;
+  }
+
+  let e;
+  if (d === 42.0) {
+    e = 'ok';
+  } else {
+    e = 'nope';
+  }
+
+  // should constant-propagate to "ok"
+  return e;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: [],
+  isComponent: false,
+};
+
+```
+
+## Code
+
+```javascript
+function Component() {
+  return "ok";
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: [],
+  isComponent: false,
+};
+
+```
+      
+### Eval output
+(kind: ok) "ok"

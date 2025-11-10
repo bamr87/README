@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-10-03T16:00:29.297690",
+  "test_type": "unit",
+  "total_tests": 29,
+  "passed": 28,
+  "failed": 1,
+  "errors": 0,
+  "test_results": [
+    {
+      "test_name": "test_summary_generation_basic (test_categorization.TestSummaryGeneration.test_summary_generation_basic)",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_categorization.py\", line 148, in test_summary_generation_basic\n    self.assertIn(\"first paragraph\", result)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'first paragraph' not found in 'This is a second paragraph that should not be included in the summary.'\n"
+    }
+  ]
+}

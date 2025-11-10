@@ -1,0 +1,61 @@
+---
+category: misc
+last_updated: null
+source_file: type-cast-expression.flow.expect.md
+summary: "```javascript\n// @flow\ntype Foo = {bar: string};\nfunction Component(props)\
+  \ {\n  const x = {bar: props.bar};\n  const y = (x: Foo);\n  y.bar = 'hello';\n\
+  \  const z = (y: Foo);\n  return z;\n}\nexport const FIX..."
+tags:
+- javascript
+title: Type Cast Expression.Flow.Expect
+---
+
+## Input
+
+```javascript
+// @flow
+type Foo = {bar: string};
+function Component(props) {
+  const x = {bar: props.bar};
+  const y = (x: Foo);
+  y.bar = 'hello';
+  const z = (y: Foo);
+  return z;
+}
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: ['TodoAdd'],
+  isComponent: 'TodoAdd',
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+type Foo = { bar: string };
+function Component(props) {
+  const $ = _c(2);
+  let y;
+  if ($[0] !== props.bar) {
+    const x = { bar: props.bar };
+    y = (x: Foo);
+    y.bar = "hello";
+    $[0] = props.bar;
+    $[1] = y;
+  } else {
+    y = $[1];
+  }
+  const z = (y: Foo);
+  return z;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: Component,
+  params: ["TodoAdd"],
+  isComponent: "TodoAdd",
+};
+
+```
+      

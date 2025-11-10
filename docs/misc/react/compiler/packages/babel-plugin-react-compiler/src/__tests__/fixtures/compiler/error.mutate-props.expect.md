@@ -1,0 +1,42 @@
+---
+category: misc
+last_updated: null
+source_file: error.mutate-props.expect.md
+summary: "```javascript\nfunction Foo(props) {\n  props.test = 1;\n  return null;\n\
+  }"
+tags:
+- javascript
+- testing
+title: Error.Mutate Props.Expect
+---
+
+## Input
+
+```javascript
+function Foo(props) {
+  props.test = 1;
+  return null;
+}
+
+```
+
+
+## Error
+
+```
+Found 1 error:
+
+Error: This value cannot be modified
+
+Modifying component props or hook arguments is not allowed. Consider using a local variable instead.
+
+error.mutate-props.ts:2:2
+  1 | function Foo(props) {
+> 2 |   props.test = 1;
+    |   ^^^^^ value cannot be modified
+  3 |   return null;
+  4 | }
+  5 |
+```
+          
+      

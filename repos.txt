@@ -1,0 +1,7 @@
+# Add your source repository URLs here (one per line)
+# Example:
+# https://github.com/user/repo1
+# https://github.com/user/repo2
+
+# Test with a simple repository
+https://github.com/octocat/Hello-World

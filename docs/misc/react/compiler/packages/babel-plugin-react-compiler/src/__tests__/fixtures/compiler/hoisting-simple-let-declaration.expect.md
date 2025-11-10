@@ -1,0 +1,61 @@
+---
+category: misc
+last_updated: null
+source_file: hoisting-simple-let-declaration.expect.md
+summary: "```javascript\nfunction hoisting() {\n  let foo = () => {\n    return bar\
+  \ + baz;\n  };\n  let bar = 3;\n  let baz = 2;\n  return foo(); // OK: called outside\
+  \ of TDZ for bar/baz\n}"
+tags:
+- javascript
+title: Hoisting Simple Let Declaration.Expect
+---
+
+## Input
+
+```javascript
+function hoisting() {
+  let foo = () => {
+    return bar + baz;
+  };
+  let bar = 3;
+  let baz = 2;
+  return foo(); // OK: called outside of TDZ for bar/baz
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: hoisting,
+  params: [],
+  isComponent: false,
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function hoisting() {
+  const $ = _c(1);
+  let foo;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    foo = () => bar + baz;
+
+    let bar = 3;
+    let baz = 2;
+    $[0] = foo;
+  } else {
+    foo = $[0];
+  }
+  return foo();
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: hoisting,
+  params: [],
+  isComponent: false,
+};
+
+```
+      
+### Eval output
+(kind: ok) 5

@@ -1,0 +1,44 @@
+---
+category: misc
+last_updated: null
+source_file: error.bug-invariant-unexpected-terminal-in-optional.expect.md
+summary: "```javascript\nconst Foo = ({json}) => {\n  try {\n    const foo = JSON.parse(json)?.foo;\n\
+  \    return <span>{foo}</span>;\n  } catch {\n    return null;\n  }\n};"
+tags:
+- javascript
+title: Error.Bug Invariant Unexpected Terminal In Optional.Expect
+---
+
+## Input
+
+```javascript
+const Foo = ({json}) => {
+  try {
+    const foo = JSON.parse(json)?.foo;
+    return <span>{foo}</span>;
+  } catch {
+    return null;
+  }
+};
+
+```
+
+
+## Error
+
+```
+Found 1 error:
+
+Invariant: Unexpected terminal in optional
+
+error.bug-invariant-unexpected-terminal-in-optional.ts:3:16
+  1 | const Foo = ({json}) => {
+  2 |   try {
+> 3 |     const foo = JSON.parse(json)?.foo;
+    |                 ^^^^ Unexpected maybe-throw in optional
+  4 |     return <span>{foo}</span>;
+  5 |   } catch {
+  6 |     return null;
+```
+          
+      

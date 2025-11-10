@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-10-03T16:00:46.133130",
+  "test_type": "integration_repos",
+  "repos_tested": 1,
+  "successful_repos": 1,
+  "failed_repos": 0,
+  "total_files_processed": 1,
+  "total_files_organized": 0,
+  "repo_results": [
+    {
+      "repo_url": "https://github.com/octocat/Hello-World",
+      "success": true,
+      "files_found": 1,
+      "files_copied": 1,
+      "files_organized": 0,
+      "categories_found": [],
+      "processing_time": 0.46648406982421875,
+      "error": null,
+      "file_details": []
+    }
+  ]
+}

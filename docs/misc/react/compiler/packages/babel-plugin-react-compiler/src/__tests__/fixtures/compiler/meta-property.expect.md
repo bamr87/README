@@ -1,0 +1,76 @@
+---
+category: misc
+last_updated: null
+source_file: meta-property.expect.md
+summary: "```javascript\nfunction a() {\n  return import.meta.url;\n}"
+tags:
+- javascript
+title: Meta Property.Expect
+---
+
+## Input
+
+```javascript
+function a() {
+  return import.meta.url;
+}
+
+function b() {
+  let a = 0;
+  if (import.meta.url) {
+    a = 1;
+  }
+  return a;
+}
+
+function c() {
+  let a = 0;
+  if (import.meta.foo) {
+    a = 1;
+  }
+  return a;
+}
+
+function d() {
+  let a = 0;
+  if (import.meta) {
+    a = 1;
+  }
+  return a;
+}
+
+```
+
+## Code
+
+```javascript
+function a() {
+  return import.meta.url;
+}
+
+function b() {
+  let a = 0;
+  if (import.meta.url) {
+    a = 1;
+  }
+  return a;
+}
+
+function c() {
+  let a = 0;
+  if (import.meta.foo) {
+    a = 1;
+  }
+  return a;
+}
+
+function d() {
+  let a = 0;
+  if (import.meta) {
+    a = 1;
+  }
+  return a;
+}
+
+```
+      

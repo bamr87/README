@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-10-03T16:00:01.345230",
+  "test_type": "unit",
+  "total_tests": 29,
+  "passed": 24,
+  "failed": 4,
+  "errors": 1,
+  "test_results": [
+    {
+      "test_name": "test_summary_generation_basic (test_categorization.TestSummaryGeneration.test_summary_generation_basic)",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_categorization.py\", line 147, in test_summary_generation_basic\n    self.assertIn(\"first paragraph\", result)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'first paragraph' not found in 'This is a second paragraph that should not be included in the summary.'\n"
+    },
+    {
+      "test_name": "test_tag_generation_basic (test_categorization.TestTagGeneration.test_tag_generation_basic) (description='JavaScript React content')",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_categorization.py\", line 123, in test_tag_generation_basic\n    self.assertIn(expected_tag, result)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'api' not found in ['javascript']\n"
+    },
+    {
+      "test_name": "test_tag_generation_basic (test_categorization.TestTagGeneration.test_tag_generation_basic) (description='AWS content')",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_categorization.py\", line 123, in test_tag_generation_basic\n    self.assertIn(expected_tag, result)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'api' not found in ['aws']\n"
+    },
+    {
+      "test_name": "test_process_markdown_file_with_existing_front_matter (test_file_processing.TestFileProcessing.test_process_markdown_file_with_existing_front_matter)",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_file_processing.py\", line 189, in test_process_markdown_file_with_existing_front_matter\n    self.assertIn(\"title: Existing Title\", content)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'title: Existing Title' not found in '---\\nauthor: Test Author\\ncategory: api\\nlast_updated: null\\nsource_file: test.md\\nsummary: This is a test document for API documentation.\\ntags:\\n- api\\n- testing\\n- api\\ntitle: Test Document\\n---\\n\\n\\n# Test Document\\n\\nThis is a test document for API documentation.\\n'\n"
+    },
+    {
+      "test_name": "test_find_documentation_files (test_repo_operations.TestRepoOperations.test_find_documentation_files)",
+      "status": "error",
+      "error": "Traceback (most recent call last):\n  File \"/Users/bamr87/github/docs-in-a-row/tests/unit/test_cases/test_repo_operations.py\", line 110, in test_find_documentation_files\n    (test_dir / \"src\" / \"main.py\").write_text(\"print('hello')\")\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 555, in write_text\n    return PathBase.write_text(self, data, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_abc.py\", line 651, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/pathlib/_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nIsADirectoryError: [Errno 21] Is a directory: '/var/folders/d0/bps8c92508n9lvgf0z1bv23w0000gp/T/tmpcw2d9b7j/test_repo/src/main.py'\n"
+    }
+  ]
+}

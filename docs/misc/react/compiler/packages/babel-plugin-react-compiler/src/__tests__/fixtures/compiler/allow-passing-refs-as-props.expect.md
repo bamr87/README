@@ -1,0 +1,40 @@
+---
+category: misc
+last_updated: null
+source_file: allow-passing-refs-as-props.expect.md
+summary: "```javascript\nfunction Component(props) {\n  const ref = useRef(null);\n\
+  \  return <Foo ref={ref} />;\n}"
+tags:
+- javascript
+title: Allow Passing Refs As Props.Expect
+---
+
+## Input
+
+```javascript
+function Component(props) {
+  const ref = useRef(null);
+  return <Foo ref={ref} />;
+}
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function Component(props) {
+  const $ = _c(1);
+  const ref = useRef(null);
+  let t0;
+  if ($[0] === Symbol.for("react.memo_cache_sentinel")) {
+    t0 = <Foo ref={ref} />;
+    $[0] = t0;
+  } else {
+    t0 = $[0];
+  }
+  return t0;
+}
+
+```
+      

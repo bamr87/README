@@ -1,0 +1,61 @@
+---
+category: misc
+last_updated: null
+source_file: transitive-mutation-before-capturing-value-created-earlier.expect.md
+summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
+  \ b}) {\n  const x = [a];\n  const y = {b};\n  mutate(y);\n  y.x = x;\n  return\
+  \ <div>{y}</div>;\n}"
+tags:
+- javascript
+title: Transitive Mutation Before Capturing Value Created Earlier.Expect
+---
+
+## Input
+
+```javascript
+// @enableNewMutationAliasingModel
+function Component({a, b}) {
+  const x = [a];
+  const y = {b};
+  mutate(y);
+  y.x = x;
+  return <div>{y}</div>;
+}
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime"; // @enableNewMutationAliasingModel
+function Component(t0) {
+  const $ = _c(5);
+  const { a, b } = t0;
+  let t1;
+  if ($[0] !== a) {
+    t1 = [a];
+    $[0] = a;
+    $[1] = t1;
+  } else {
+    t1 = $[1];
+  }
+  const x = t1;
+  let t2;
+  if ($[2] !== b || $[3] !== x) {
+    const y = { b };
+    mutate(y);
+    y.x = x;
+    t2 = <div>{y}</div>;
+    $[2] = b;
+    $[3] = x;
+    $[4] = t2;
+  } else {
+    t2 = $[4];
+  }
+  return t2;
+}
+
+```
+      
+### Eval output
+(kind: exception) Fixture not implemented

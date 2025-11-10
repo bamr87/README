@@ -1,0 +1,64 @@
+---
+category: misc
+last_updated: null
+source_file: capturing-variable-in-nested-function.expect.md
+summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  let x = function\
+  \ () {\n    (function () {\n      console.log(z);\n    })();\n  };\n  return x;\n\
+  }"
+tags:
+- javascript
+title: Capturing Variable In Nested Function.Expect
+---
+
+## Input
+
+```javascript
+function component(a) {
+  let z = {a};
+  let x = function () {
+    (function () {
+      console.log(z);
+    })();
+  };
+  return x;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: component,
+  params: ['TodoAdd'],
+  isComponent: 'TodoAdd',
+};
+
+```
+
+## Code
+
+```javascript
+import { c as _c } from "react/compiler-runtime";
+function component(a) {
+  const $ = _c(2);
+  let t0;
+  if ($[0] !== a) {
+    const z = { a };
+    t0 = function () {
+      (function () {
+        console.log(z);
+      })();
+    };
+    $[0] = a;
+    $[1] = t0;
+  } else {
+    t0 = $[1];
+  }
+  const x = t0;
+  return x;
+}
+
+export const FIXTURE_ENTRYPOINT = {
+  fn: component,
+  params: ["TodoAdd"],
+  isComponent: "TodoAdd",
+};
+
+```
+      

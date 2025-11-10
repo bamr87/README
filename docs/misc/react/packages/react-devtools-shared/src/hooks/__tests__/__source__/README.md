@@ -1,0 +1,13 @@
+---
+category: misc
+last_updated: null
+source_file: README.md
+summary: The JavaScript files and source maps in this directory are used to test DevTools
+  hook name parsing code. The files here use source maps in different formats to mirror
+  real world applications. The sour...
+tags:
+- javascript
+- testing
+title: Readme
+---
+The JavaScript files and source maps in this directory are used to test DevTools hook name parsing code. The files here use source maps in different formats to mirror real world applications. The source for the files is located in the parent `__tests__` folder. To regenerate these compiled files, run `yarn update-mock-source-maps` in the `react-devtools-extensions` directory.

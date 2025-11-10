@@ -1,0 +1,48 @@
+---
+category: misc
+last_updated: null
+source_file: error.invalid-function-expression-mutates-immutable-value.expect.md
+summary: "```javascript\nfunction Component(props) {\n  const [x, setX] = useState({value:\
+  \ ''});\n  const onChange = e => {\n    // INVALID! should use copyonwrite and pass\
+  \ the new value\n    x.value = e.target.valu..."
+tags:
+- javascript
+title: Error.Invalid Function Expression Mutates Immutable Value.Expect
+---
+
+## Input
+
+```javascript
+function Component(props) {
+  const [x, setX] = useState({value: ''});
+  const onChange = e => {
+    // INVALID! should use copy-on-write and pass the new value
+    x.value = e.target.value;
+    setX(x);
+  };
+  return <input value={x.value} onChange={onChange} />;
+}
+
+```
+
+
+## Error
+
+```
+Found 1 error:
+
+Error: This value cannot be modified
+
+Modifying a value returned from 'useState()', which should not be modified directly. Use the setter function to update instead.
+
+error.invalid-function-expression-mutates-immutable-value.ts:5:4
+  3 |   const onChange = e => {
+  4 |     // INVALID! should use copy-on-write and pass the new value
+> 5 |     x.value = e.target.value;
+    |     ^ `x` cannot be modified
+  6 |     setX(x);
+  7 |   };
+  8 |   return <input value={x.value} onChange={onChange} />;
+```
+          
+      
