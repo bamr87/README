@@ -3,6 +3,40 @@
 # Create necessary directories
 mkdir -p raw_docs docs temp
 
+# Ensure Python 3 is available and dependencies are installed (use venv if needed)
+ensure_python() {
+  # prefer python3
+  if command -v python3 >/dev/null 2>&1; then
+    PYTHON_CMD=python3
+  elif command -v python >/dev/null 2>&1; then
+    PYTHON_CMD=python
+  else
+    # fallback to env python3 if present
+    if command -v /usr/bin/env >/dev/null 2>&1 && /usr/bin/env python3 -V >/dev/null 2>&1; then
+      PYTHON_CMD="/usr/bin/env python3"
+    else
+      echo "No python interpreter found. Aborting."
+      exit 1
+    fi
+  fi
+
+  # Install dependencies into a virtualenv if yaml/requests are not importable
+  if ! $PYTHON_CMD -c "import yaml, requests" >/dev/null 2>&1; then
+    echo "Creating virtual environment and installing requirements..."
+    $PYTHON_CMD -m venv .venv
+    # shellcheck disable=SC1091
+    . .venv/bin/activate
+    python -m pip install --upgrade pip
+    if [ -f requirements.txt ]; then
+      python -m pip install -r requirements.txt
+    else
+      python -m pip install pyyaml requests
+    fi
+  else
+    echo "Python and required modules are available."
+  fi
+}
+
 # Read repo list and process each repository
 while IFS= read -r repo; do
   # Skip empty lines and comments
@@ -38,9 +72,17 @@ while IFS= read -r repo; do
   done
 done < repos.txt
 
+echo "Preparing Python and dependencies..."
+ensure_python
+
 echo "Running Python processing script..."
-# Call Python for processing
-python scripts/process.py
+# Activate venv if present
+if [ -f ".venv/bin/activate" ]; then
+  # shellcheck disable=SC1091
+  . .venv/bin/activate
+fi
+# Use $PYTHON_CMD chosen earlier (or python if within venv)
+${PYTHON_CMD:-python} scripts/process.py
 
 echo "Cleaning up temporary files..."
 # Clean up temp
