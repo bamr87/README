@@ -56,3 +56,19 @@ jobs:
               ```json
               $(cat docs/results/docs_quality_report.json 2>/dev/null || echo '{}')
               ```
+        - name: Add top lint issues snippet to PR comment
+          if: ${{ steps.create_pr.outputs.pull-request-number }}
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            issue-number: ${{ steps.create_pr.outputs.pull-request-number }}
+            body: |
+              ## Top Lint Issues (first 20 files)
+              $(jq '.top_issues' docs/results/docs_quality_report.json 2>/dev/null || echo '[]')
+        - name: Auto-merge PR if secret enabled
+          if: ${{ secrets.AUTO_MERGE == 'true' && steps.create_pr.outputs.pull-request-number }}
+          uses: actions-ecosystem/action-merge@v1
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            merge_method: squash
+            pull_request_number: ${{ steps.create_pr.outputs.pull-request-number }}

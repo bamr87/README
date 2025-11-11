@@ -4,6 +4,7 @@ import subprocess
 import json
 import re
 from pathlib import Path
+from collections import defaultdict
 
 
 def run(cmd):
@@ -31,6 +32,17 @@ def main():
     lint_code, lint_out, lint_err = run("python3 scripts/lint_docs.py")
     files_checked, issues_found = parse_lint_output(lint_out + lint_err)
 
+    # parse lint output for file-specific counts
+    file_counts = defaultdict(int)
+    for line in (lint_out + lint_err).splitlines():
+        # lines like: docs/.../file.md 12: Line too long  or "  -: Missing H1 heading"
+        m = re.match(r"^(.*\.md)\s+(\d+|\-):", line)
+        if m:
+            file_counts[m.group(1).strip()] += 1
+
+    # top N files
+    top_files = sorted(file_counts.items(), key=lambda x: x[1], reverse=True)[:20]
+
     # run frontmatter check
     fm_code, fm_out, fm_err = run("python3 scripts/check_frontmatter.py")
     fm_checked, fm_updated = parse_frontmatter_output(fm_out + fm_err)
@@ -56,6 +68,8 @@ def main():
             "exit_code": fm_code
         },
         "whitespace_issues": ws_count
+    ,
+        "top_issues": top_files
     }
 
     out_dir = Path('docs/results')
