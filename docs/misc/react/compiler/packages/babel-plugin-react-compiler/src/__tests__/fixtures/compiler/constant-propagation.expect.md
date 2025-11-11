@@ -1,14 +1,12 @@
 ---
+title: Constant Propagation.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation.expect.md
-summary: "```javascript\nfunction foo() {\n  const a = 1;\n  const b = 2;\n  const\
-  \ c = 3;\n  const d = a + b;\n  const e = d  c;\n  const f = e / d;\n  const g =\
-  \ f  e;"
 tags:
 - javascript
-title: Constant Propagation.Expect
+last_updated: null
+source_file: constant-propagation.expect.md
 ---
+# Constant Propagation.Expect
 
 ## Input
 
@@ -55,7 +53,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) -6
 logs: ['foo']

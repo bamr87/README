@@ -1,18 +1,12 @@
 ---
+title: Cfg Condexpr.Expect
 category: misc
-last_updated: null
-source_file: cfg-condexpr.expect.md
-summary: '```javascript
-
-  // props.a.b should be added as a unconditional dependency to the reactive
-
-  // scope that produces x, since it is accessed unconditionally in all cfg
-
-  // paths'
 tags:
 - javascript
-title: Cfg Condexpr.Expect
+last_updated: null
+source_file: cfg-condexpr.expect.md
 ---
+# Cfg Condexpr.Expect
 
 ## Input
 
@@ -65,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 3

@@ -1,13 +1,12 @@
 ---
+title: Mutation Within Jsx And Break.Expect
 category: misc
-last_updated: null
-source_file: mutation-within-jsx-and-break.expect.md
-summary: "```javascript\nimport {\n  Stringify,\n  makeObjectPrimitives,\n  mutate,\n\
-  \  mutateAndReturn,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Mutation Within Jsx And Break.Expect
+last_updated: null
+source_file: mutation-within-jsx-and-break.expect.md
 ---
+# Mutation Within Jsx And Break.Expect
 
 ## Input
 
@@ -94,7 +93,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>
 <div>{"value":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>

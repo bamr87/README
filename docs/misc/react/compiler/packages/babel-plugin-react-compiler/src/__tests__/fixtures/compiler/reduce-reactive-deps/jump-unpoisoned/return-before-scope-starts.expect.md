@@ -1,14 +1,12 @@
 ---
+title: Return Before Scope Starts.Expect
 category: misc
-last_updated: null
-source_file: return-before-scope-starts.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Return Before Scope Starts.Expect
+last_updated: null
+source_file: return-before-scope-starts.expect.md
 ---
+# Return Before Scope Starts.Expect
 
 ## Input
 
@@ -90,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"result":"early return"}
 [2]

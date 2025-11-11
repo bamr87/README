@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Hook Call Spreads Mutable Iterator.Expect
 category: misc
-last_updated: null
-source_file: error.todo-hook-call-spreads-mutable-iterator.expect.md
-summary: '```javascript
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Hook Call Spreads Mutable Iterator.Expect
+last_updated: null
+source_file: error.todo-hook-call-spreads-mutable-iterator.expect.md
 ---
+# Error.Todo Hook Call Spreads Mutable Iterator.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.todo-hook-call-spreads-mutable-iterator.ts:5:24
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Nested Use Effect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-nested-use-effect.expect.md
-summary: '```javascript
-
-  // @enable
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Nested Use Effect.Expect
+last_updated: null
+source_file: error.invalid-nested-use-effect.expect.md
 ---
+# Error.Invalid Nested Use Effect.Expect
 
 ## Input
 
@@ -56,5 +52,4 @@ error.invalid-nested-use-effect.ts:9:4
   11 |         fire(foo(props));
   12 |       }
 ```
-          
-      
+

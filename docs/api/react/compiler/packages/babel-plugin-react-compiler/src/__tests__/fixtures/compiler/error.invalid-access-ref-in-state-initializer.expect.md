@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Access Ref In State Initializer.Expect
 category: api
-last_updated: null
-source_file: error.invalid-access-ref-in-state-initializer.expect.md
-summary: '```javascript
-
-  import {useRef, useState} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Access Ref In State Initializer.Expect
+last_updated: null
+source_file: error.invalid-access-ref-in-state-initializer.expect.md
 ---
+# Error.Invalid Access Ref In State Initializer.Expect
 
 ## Input
 
@@ -49,5 +47,4 @@ error.invalid-access-ref-in-state-initializer.ts:5:27
   7 |   return <Stringify state={state} />;
   8 | }
 ```
-          
-      
+

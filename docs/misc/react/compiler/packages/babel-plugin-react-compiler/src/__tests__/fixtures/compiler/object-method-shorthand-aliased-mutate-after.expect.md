@@ -1,14 +1,12 @@
 ---
+title: Object Method Shorthand Aliased Mutate After.Expect
 category: misc
-last_updated: null
-source_file: object-method-shorthand-aliased-mutate-after.expect.md
-summary: "```javascript\nimport {createHookWrapper, mutate, mutateAndReturn} from\
-  \ 'sharedruntime';\nfunction useHook({value}) {\n  const x = mutateAndReturn({value});\n\
-  \  const obj = {\n    getValue() {\n      return ..."
 tags:
 - javascript
-title: Object Method Shorthand Aliased Mutate After.Expect
+last_updated: null
+source_file: object-method-shorthand-aliased-mutate-after.expect.md
 ---
+# Object Method Shorthand Aliased Mutate After.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getValue":{"kind":"Function","result":0}},"shouldInvokeFns":true}</div>

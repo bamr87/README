@@ -1,18 +1,12 @@
 ---
+title: Nonreactive Ref Helper.Expect
 category: misc
-last_updated: null
-source_file: nonreactive-ref-helper.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nonreactive Ref Helper.Expect
+last_updated: null
+source_file: nonreactive-ref-helper.expect.md
 ---
+# Nonreactive Ref Helper.Expect
 
 ## Input
 
@@ -99,6 +93,6 @@ function useDeeperRefHelper() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

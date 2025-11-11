@@ -1,14 +1,12 @@
 ---
+title: Prune Nonescaping Usememo.Expect
 category: misc
-last_updated: null
-source_file: prune-nonescaping-useMemo.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Prune Nonescaping Usememo.Expect
+last_updated: null
+source_file: prune-nonescaping-useMemo.expect.md
 ---
+# Prune Nonescaping Usememo.Expect
 
 ## Input
 
@@ -53,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

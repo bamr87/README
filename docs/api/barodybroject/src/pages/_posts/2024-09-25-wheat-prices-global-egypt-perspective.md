@@ -1,26 +1,12 @@
 ---
-author: Jane Doe
-categories:
-- breaking
+title: 2024 09 25 Wheat Prices Global Egypt Perspective
 category: api
-description: Explore the fluctuations in wheat prices over the past decade and their
-  impact on global markets and Egypt's economy.
-draft: draft
-featured: true
-last_updated: null
-preview: /assets/images/wheat.png
-published_at: 2024-09-25
-slug: wheat-prices-global-egypt-perspective
-source_file: 2024-09-25-wheat-prices-global-egypt-perspective.md
-summary: Over the past decade (2013–2023), wheat prices have experienced significant
-  fluctuations due to various factors such as weather events, geopolitical tensions,
-  and shifts in global supply and demand. F...
 tags:
 - api
-- api
-title: 2024 09 25 Wheat Prices Global Egypt Perspective
+last_updated: null
+source_file: 2024-09-25-wheat-prices-global-egypt-perspective.md
 ---
-
+# 2024 09 25 Wheat Prices Global Egypt Perspective
 
 ### Introduction
 

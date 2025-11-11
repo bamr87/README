@@ -1,13 +1,12 @@
 ---
+title: Expression With Assignment.Expect
 category: misc
-last_updated: null
-source_file: expression-with-assignment.expect.md
-summary: "```javascript\nfunction f() {\n  let x = 1;\n  return x + (x = 2) + x;\n\
-  }"
 tags:
 - javascript
-title: Expression With Assignment.Expect
+last_updated: null
+source_file: expression-with-assignment.expect.md
 ---
+# Expression With Assignment.Expect
 
 ## Input
 
@@ -39,6 +38,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 5

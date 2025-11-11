@@ -1,14 +1,13 @@
 ---
+title: Error.Validate Mutate Ref Arg In Render.Expect
 category: api
-last_updated: null
-source_file: error.validate-mutate-ref-arg-in-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender:true\nfunction Foo(props,\
-  \ ref) {\n  console.log(ref.current);\n  return <div>{props.bar}</div>;\n}"
 tags:
 - javascript
 - api
-title: Error.Validate Mutate Ref Arg In Render.Expect
+last_updated: null
+source_file: error.validate-mutate-ref-arg-in-render.expect.md
 ---
+# Error.Validate Mutate Ref Arg In Render.Expect
 
 ## Input
 
@@ -46,5 +45,4 @@ error.validate-mutate-ref-arg-in-render.ts:3:14
   5 | }
   6 |
 ```
-          
-      
+

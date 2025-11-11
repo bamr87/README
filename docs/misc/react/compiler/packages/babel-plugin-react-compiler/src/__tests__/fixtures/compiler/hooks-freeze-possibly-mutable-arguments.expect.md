@@ -1,14 +1,12 @@
 ---
+title: Hooks Freeze Possibly Mutable Arguments.Expect
 category: misc
-last_updated: null
-source_file: hooks-freeze-possibly-mutable-arguments.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const cond = props.cond;\n\
-  \  const x = props.x;\n  let a;\n  if (cond) {\n    a = x;\n  } else {\n    a =\
-  \ [];\n  }\n  useFreeze(a); // should freeze, value may be mu..."
 tags:
 - javascript
-title: Hooks Freeze Possibly Mutable Arguments.Expect
+last_updated: null
+source_file: hooks-freeze-possibly-mutable-arguments.expect.md
 ---
+# Hooks Freeze Possibly Mutable Arguments.Expect
 
 ## Input
 
@@ -65,4 +63,3 @@ function useFreeze(x) {}
 function call(x) {}
 
 ```
-      

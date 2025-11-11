@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Dynamic Hook Via Hooklike Local.Expect
 category: api
-last_updated: null
-source_file: error.invalid-dynamic-hook-via-hooklike-local.expect.md
-summary: "```javascript\nfunction Component() {\n  const someFunction = useContext(FooContext);\n\
-  \  const useOhItsNamedLikeAHookNow = someFunction;\n  useOhItsNamedLikeAHookNow();\n\
-  }"
 tags:
 - javascript
 - api
-title: Error.Invalid Dynamic Hook Via Hooklike Local.Expect
+last_updated: null
+source_file: error.invalid-dynamic-hook-via-hooklike-local.expect.md
 ---
+# Error.Invalid Dynamic Hook Via Hooklike Local.Expect
 
 ## Input
 
@@ -38,5 +36,4 @@ error.invalid-dynamic-hook-via-hooklike-local.ts:4:2
   5 | }
   6 |
 ```
-          
-      
+

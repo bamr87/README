@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Repro Declaration For All Identifiers.Expect
 category: misc
-last_updated: null
-source_file: error.todo-repro-declaration-for-all-identifiers.expect.md
-summary: "```javascript\nfunction Foo() {\n  try {\n    // NOTE: this fixture previously\
-  \ failed during LeaveSSA;\n    // doublecheck this code when supporting value blocks\
-  \ in try/catch\n    for (let i = 0; i < 2; i+..."
 tags:
 - javascript
-title: Error.Todo Repro Declaration For All Identifiers.Expect
+last_updated: null
+source_file: error.todo-repro-declaration-for-all-identifiers.expect.md
 ---
+# Error.Todo Repro Declaration For All Identifiers.Expect
 
 ## Input
 
@@ -40,5 +38,4 @@ error.todo-repro-declaration-for-all-identifiers.ts:5:20
   7 | }
   8 |
 ```
-          
-      
+

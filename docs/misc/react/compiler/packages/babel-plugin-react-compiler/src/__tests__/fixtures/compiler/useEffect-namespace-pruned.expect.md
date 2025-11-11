@@ -1,14 +1,12 @@
 ---
+title: Useeffect Namespace Pruned.Expect
 category: misc
-last_updated: null
-source_file: useEffect-namespace-pruned.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Useeffect Namespace Pruned.Expect
+last_updated: null
+source_file: useEffect-namespace-pruned.expect.md
 ---
+# Useeffect Namespace Pruned.Expect
 
 ## Input
 
@@ -76,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

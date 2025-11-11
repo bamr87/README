@@ -1,14 +1,12 @@
 ---
+title: Capturing Func Alias Captured Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-alias-captured-mutate.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Alias Captured Mutate.Expect
+last_updated: null
+source_file: capturing-func-alias-captured-mutate.expect.md
 ---
+# Capturing Func Alias Captured Mutate.Expect
 
 ## Input
 
@@ -81,7 +79,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"bar":4,"x":{"foo":3,"wat0":"joe"}}
 {"bar":5,"x":{"foo":3,"wat0":"joe"}}

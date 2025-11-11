@@ -1,27 +1,15 @@
 ---
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Feature: [Feature Name]'
 category: setup
-date: YYYY-MM-DD
-impact: high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-source_file: feature-template.md
-summary: '> Summary: Onesentence description of what this feature adds to the project.'
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: 'Feature: [Feature Name]'
-type: feature
-version: X.Y.Z
+last_updated: null
+source_file: feature-template.md
 ---
-
-
 # Feature: [Feature Name]
 
 > **Summary**: One-sentence description of what this feature adds to the project.
@@ -260,8 +248,8 @@ cp .env.example .env.new_feature
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Team
 
 > **Usage Note**: Copy this template to create feature documentation. Replace all placeholder text with actual implementation details. Remove sections that don't apply to your specific feature.

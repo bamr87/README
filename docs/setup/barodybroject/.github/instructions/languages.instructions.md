@@ -1,65 +1,15 @@
 ---
-applyTo: '**/*.py,**/*.js,**/*.sh,**/*.bash'
-author: Barodybroject Team
+title: Language-Specific Coding Standards
 category: setup
-changelog:
-- author: Barodybroject Team
-  date: '2025-10-28'
-  description: Enhanced with VS Code Copilot optimization and Django/OpenAI specific
-    patterns
-- author: Barodybroject Team
-  date: '2025-10-11'
-  description: Initial creation with core language standards
-containerRequirements:
-  baseImage: python:3.8-slim, node:18-alpine
-  description: Multi-language development environment for Django/OpenAI applications
-  environment:
-    DJANGO_SETTINGS_MODULE: barodybroject.settings
-    OPENAI_API_KEY: required
-    PYTHONUNBUFFERED: 1
-  exposedPorts:
-  - 8000
-  - 4002
-  healthCheck: /health endpoint on Django development server
-  portDescription: Django development server and Jekyll static site server
-  resources:
-    cpu: 0.5-1.0
-    memory: 512MiB-1GiB
-  volumes:
-  - /app/src:rw
-  - /app/static:rw
-  - /app/templates:rw
-created: 2025-10-11
-dependencies:
-- copilot-instructions.md: Core principles and VS Code Copilot integration
-- space.instructions.md: Project organization and workspace standards
-- features.instructions.md: Feature development patterns
-description: VS Code Copilot-optimized language-specific coding standards for Python/Django,
-  JavaScript, and Bash development
-file: languages.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  language_development_path:
-  - python_django_patterns
-  - javascript_frontend_integration
-  - bash_automation_scripts
-  - openai_service_integration
-  - testing_and_validation
-  - deployment_automation
-source_file: languages.instructions.md
-summary: Apply the general coding guidelines to all code.
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Language-Specific Coding Standards
-version: 1.1.0
+last_updated: null
+source_file: languages.instructions.md
 ---
-
-
 # Language-Specific Coding Standards
 
 Apply the [general coding guidelines](../copilot-instructions.md) to all code.
@@ -95,7 +45,7 @@ API_TIMEOUT = 30
 class MyClass:
     def _internal_helper(self):
         pass
-    
+
     def public_method(self):
         return self._internal_helper()
 ```
@@ -144,7 +94,7 @@ from django.core.validators import MinLengthValidator
 class Article(models.Model):
     """
     Parody news article with OpenAI-generated content
-    
+
     Fields:
         title: Article headline (max 200 chars)
         slug: URL-friendly version of title
@@ -157,14 +107,14 @@ class Article(models.Model):
         created_at: Creation timestamp
         updated_at: Last update timestamp
     """
-    
+
     CATEGORY_CHOICES = [
         ('politics', 'Politics'),
         ('tech', 'Technology'),
         ('sports', 'Sports'),
         ('entertainment', 'Entertainment'),
     ]
-    
+
     title = models.CharField(
         max_length=200,
         validators=[MinLengthValidator(10)],
@@ -193,7 +143,7 @@ class Article(models.Model):
     published_at = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     class Meta:
         ordering = ['-published_at', '-created_at']
         indexes = [
@@ -203,24 +153,24 @@ class Article(models.Model):
         ]
         verbose_name = 'Article'
         verbose_name_plural = 'Articles'
-    
+
     def __str__(self):
         return self.title
-    
+
     def get_absolute_url(self):
         return reverse('article-detail', kwargs={'slug': self.slug})
-    
+
     def save(self, *args, **kwargs):
         # Auto-generate slug if not provided
         if not self.slug:
             from django.utils.text import slugify
             self.slug = slugify(self.title)
-        
+
         # Set published_at when first published
         if self.is_published and not self.published_at:
             from django.utils import timezone
             self.published_at = timezone.now()
-        
+
         super().save(*args, **kwargs)
 ```
 
@@ -240,12 +190,12 @@ class ArticleGenerateView(LoginRequiredMixin, CreateView):
     model = Article
     form_class = ArticleForm
     template_name = 'parodynews/article_generate.html'
-    
+
     def form_valid(self, form):
         """Generate content with OpenAI before saving"""
         article = form.save(commit=False)
         article.author = self.request.user
-        
+
         # Generate content if prompt provided
         if form.cleaned_data.get('prompt'):
             try:
@@ -255,7 +205,7 @@ class ArticleGenerateView(LoginRequiredMixin, CreateView):
                 )
                 article.content = generated_content
                 article.ai_prompt = form.cleaned_data['prompt']
-                
+
                 messages.success(
                     self.request,
                     'Article generated successfully!'
@@ -266,7 +216,7 @@ class ArticleGenerateView(LoginRequiredMixin, CreateView):
                     f'Failed to generate content: {str(e)}'
                 )
                 return self.form_invalid(form)
-        
+
         return super().form_valid(form)
 
 # forms.py
@@ -275,7 +225,7 @@ from .models import Article
 
 class ArticleForm(forms.ModelForm):
     """Article creation/edit form with AI prompt field"""
-    
+
     prompt = forms.CharField(
         widget=forms.Textarea(attrs={
             'rows': 3,
@@ -284,7 +234,7 @@ class ArticleForm(forms.ModelForm):
         required=False,
         help_text='Describe the parody article you want to generate'
     )
-    
+
     class Meta:
         model = Article
         fields = ['title', 'category', 'content', 'is_published']
@@ -293,19 +243,19 @@ class ArticleForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'category': forms.Select(attrs={'class': 'form-select'}),
         }
-    
+
     def clean_title(self):
         """Validate title doesn't already exist"""
         title = self.cleaned_data.get('title')
-        
+
         # Check for duplicate titles (excluding current instance in updates)
         qs = Article.objects.filter(title__iexact=title)
         if self.instance.pk:
             qs = qs.exclude(pk=self.instance.pk)
-        
+
         if qs.exists():
             raise forms.ValidationError('An article with this title already exists')
-        
+
         return title
 ```
 
@@ -318,10 +268,10 @@ from .models import Article
 
 class ArticleSerializer(serializers.ModelSerializer):
     """Serializer for Article API"""
-    
+
     author_name = serializers.CharField(source='author.username', read_only=True)
     url = serializers.SerializerMethodField()
-    
+
     class Meta:
         model = Article
         fields = [
@@ -330,7 +280,7 @@ class ArticleSerializer(serializers.ModelSerializer):
             'updated_at', 'url'
         ]
         read_only_fields = ['slug', 'created_at', 'updated_at']
-    
+
     def get_url(self, obj):
         request = self.context.get('request')
         if request:
@@ -344,19 +294,19 @@ from rest_framework.response import Response
 
 class ArticleViewSet(viewsets.ModelViewSet):
     """API viewset for articles"""
-    
+
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     lookup_field = 'slug'
-    
+
     def get_queryset(self):
         """Filter published articles for non-staff users"""
         qs = super().get_queryset()
         if not self.request.user.is_staff:
             qs = qs.filter(is_published=True)
         return qs
-    
+
     @action(detail=False, methods=['post'])
     def generate(self, request):
         """Custom action to generate article via API"""
@@ -366,11 +316,11 @@ class ArticleViewSet(viewsets.ModelViewSet):
                 {'error': 'Prompt is required'},
                 status=400
             )
-        
+
         try:
             openai_service = OpenAIService()
             content = openai_service.generate_parody_content(prompt)
-            
+
             return Response({
                 'content': content,
                 'prompt': prompt
@@ -408,30 +358,30 @@ def mock_openai_response():
 
 class TestOpenAIService:
     """Test suite for OpenAI service"""
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_success(self, mock_create, openai_service, mock_openai_response):
         """Test successful content generation"""
         mock_create.return_value = mock_openai_response
-        
+
         result = openai_service.generate_parody_content('Test prompt')
-        
+
         assert result == 'Generated parody content here...'
         mock_create.assert_called_once()
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_retry_on_rate_limit(self, mock_create, openai_service):
         """Test retry logic on rate limit error"""
         import openai
-        
+
         # First call raises RateLimitError, second succeeds
         mock_create.side_effect = [
             openai.RateLimitError('Rate limit exceeded'),
             {'choices': [{'message': {'content': 'Success after retry'}}]}
         ]
-        
+
         result = openai_service.generate_parody_content('Test prompt')
-        
+
         assert result == 'Success after retry'
         assert mock_create.call_count == 2
 ```
@@ -452,20 +402,20 @@ const articleManager = {
         try {
             const params = new URLSearchParams(filters);
             const response = await fetch(`/api/articles/?${params}`);
-            
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            
+
             const data = await response.json();
             return data.results || data;
-            
+
         } catch (error) {
             console.error('Failed to fetch articles:', error);
             throw error;
         }
     },
-    
+
     /**
      * Generate article using AI
      * @param {string} prompt - Generation prompt
@@ -481,20 +431,20 @@ const articleManager = {
                 },
                 body: JSON.stringify({ prompt })
             });
-            
+
             if (!response.ok) {
                 const error = await response.json();
                 throw new Error(error.message || 'Generation failed');
             }
-            
+
             return await response.json();
-            
+
         } catch (error) {
             console.error('Failed to generate article:', error);
             throw error;
         }
     },
-    
+
     /**
      * Get CSRF token from cookie
      * @returns {string} CSRF token
@@ -502,14 +452,14 @@ const articleManager = {
     getCsrfToken() {
         const name = 'csrftoken';
         const cookies = document.cookie.split(';');
-        
+
         for (let cookie of cookies) {
             const [key, value] = cookie.trim().split('=');
             if (key === name) {
                 return decodeURIComponent(value);
             }
         }
-        
+
         return '';
     }
 };
@@ -526,16 +476,16 @@ class DynamicFormHandler {
         this.form = document.querySelector(formSelector);
         this.init();
     }
-    
+
     init() {
         if (!this.form) {
             console.error('Form not found');
             return;
         }
-        
+
         this.setupEventListeners();
     }
-    
+
     setupEventListeners() {
         // Listen for category changes to update field options
         const categoryField = this.form.querySelector('#id_category');
@@ -544,33 +494,33 @@ class DynamicFormHandler {
                 this.updateFieldOptions(e.target.value);
             });
         }
-        
+
         // Handle form submission
         this.form.addEventListener('submit', (e) => {
             this.handleSubmit(e);
         });
     }
-    
+
     async updateFieldOptions(category) {
         try {
             const response = await fetch(`/api/field-options/?category=${category}`);
             const options = await response.json();
-            
+
             // Update dependent fields
             this.updateSelectField('#id_subcategory', options.subcategories);
-            
+
         } catch (error) {
             console.error('Failed to update field options:', error);
         }
     }
-    
+
     updateSelectField(selector, options) {
         const field = this.form.querySelector(selector);
         if (!field) return;
-        
+
         // Clear existing options
         field.innerHTML = '<option value="">---------</option>';
-        
+
         // Add new options
         options.forEach(option => {
             const optionElement = document.createElement('option');
@@ -579,18 +529,18 @@ class DynamicFormHandler {
             field.appendChild(optionElement);
         });
     }
-    
+
     async handleSubmit(event) {
         event.preventDefault();
-        
+
         const submitButton = this.form.querySelector('button[type="submit"]');
         const originalText = submitButton.textContent;
-        
+
         try {
             // Disable submit button
             submitButton.disabled = true;
             submitButton.textContent = 'Processing...';
-            
+
             const formData = new FormData(this.form);
             const response = await fetch(this.form.action, {
                 method: 'POST',
@@ -599,24 +549,24 @@ class DynamicFormHandler {
                     'X-CSRFToken': articleManager.getCsrfToken(),
                 }
             });
-            
+
             if (response.ok) {
                 window.location.href = response.url;
             } else {
                 const error = await response.json();
                 this.showError(error.message || 'Form submission failed');
             }
-            
+
         } catch (error) {
             console.error('Form submission error:', error);
             this.showError('An unexpected error occurred');
-            
+
         } finally {
             submitButton.disabled = false;
             submitButton.textContent = originalText;
         }
     }
-    
+
     showError(message) {
         // Display error message to user
         const alertDiv = document.createElement('div');
@@ -625,7 +575,7 @@ class DynamicFormHandler {
             ${message}
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         `;
-        
+
         this.form.insertBefore(alertDiv, this.form.firstChild);
     }
 }
@@ -645,7 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
 class APIErrorHandler {
     static handle(error, context = '') {
         console.error(`API Error ${context}:`, error);
-        
+
         // User-friendly error messages
         const errorMessages = {
             401: 'Please log in to continue',
@@ -656,23 +606,23 @@ class APIErrorHandler {
             502: 'Service temporarily unavailable',
             503: 'Service temporarily unavailable',
         };
-        
+
         const statusCode = error.response?.status;
         const message = errorMessages[statusCode] || 'An unexpected error occurred';
-        
+
         this.showNotification(message, 'error');
-        
+
         return message;
     }
-    
+
     static showNotification(message, type = 'info') {
         // Implement notification display logic
         const notification = document.createElement('div');
         notification.className = `alert alert-${type === 'error' ? 'danger' : 'info'}`;
         notification.textContent = message;
-        
+
         document.body.appendChild(notification);
-        
+
         setTimeout(() => notification.remove(), 5000);
     }
 }
@@ -746,7 +696,7 @@ cleanup_on_error() {
 # Validate environment
 validate_environment() {
     log_info "Validating environment: ${ENVIRONMENT}"
-    
+
     # Check required tools
     local required_tools=("docker" "az" "git")
     for tool in "${required_tools[@]}"; do
@@ -755,23 +705,23 @@ validate_environment() {
             return 1
         fi
     done
-    
+
     # Validate environment parameter
     if [[ ! "$ENVIRONMENT" =~ ^(development|staging|production)$ ]]; then
         log_error "Invalid environment: ${ENVIRONMENT}"
         log_error "Must be one of: development, staging, production"
         return 1
     fi
-    
+
     log_info "Environment validation passed"
 }
 
 # Build Docker image
 build_image() {
     log_info "Building Docker image for ${ENVIRONMENT}"
-    
+
     local image_tag="barodybroject:${ENVIRONMENT}-$(git rev-parse --short HEAD)"
-    
+
     docker build \
         --target production \
         --tag "$image_tag" \
@@ -780,7 +730,7 @@ build_image() {
         log_error "Docker build failed"
         return 1
     }
-    
+
     log_info "Successfully built image: ${image_tag}"
     echo "$image_tag"
 }
@@ -788,11 +738,11 @@ build_image() {
 # Deploy to Azure
 deploy_to_azure() {
     local image_tag="$1"
-    
+
     log_info "Deploying to Azure Container Apps (${ENVIRONMENT})"
-    
+
     cd "$PROJECT_ROOT" || return 1
-    
+
     # Deploy using Azure Developer CLI
     azd deploy \
         --environment "$ENVIRONMENT" \
@@ -800,27 +750,27 @@ deploy_to_azure() {
         log_error "Azure deployment failed"
         return 1
     }
-    
+
     log_info "Deployment completed successfully"
 }
 
 # Main execution
 main() {
     log_info "Starting deployment process"
-    
+
     # Create logs directory
     mkdir -p "${PROJECT_ROOT}/logs"
-    
+
     # Validate environment
     validate_environment || exit 1
-    
+
     # Build image
     local image_tag
     image_tag=$(build_image) || exit 1
-    
+
     # Deploy to Azure
     deploy_to_azure "$image_tag" || exit 1
-    
+
     log_info "Deployment completed successfully"
 }
 
@@ -845,7 +795,7 @@ set -euo pipefail
 # Build development container
 build_dev_container() {
     local tag="${1:-latest}"
-    
+
     docker build \
         --file Dockerfile \
         --target development \
@@ -854,14 +804,14 @@ build_dev_container() {
         echo "Failed to build development container"
         return 1
     }
-    
+
     echo "Development container built: barodybroject:dev-${tag}"
 }
 
 # Run Django management commands in container
 docker_manage() {
     local command="$*"
-    
+
     docker-compose exec web python manage.py $command
 }
 
@@ -873,7 +823,7 @@ docker_test() {
 # Check container health
 check_container_health() {
     local container_name="${1:-web}"
-    
+
     if docker-compose ps "$container_name" | grep -q "Up (healthy)"; then
         echo "Container ${container_name} is healthy"
         return 0
@@ -887,10 +837,10 @@ check_container_health() {
 cleanup_containers() {
     echo "Stopping containers..."
     docker-compose down
-    
+
     echo "Removing volumes..."
     docker-compose down -v
-    
+
     echo "Pruning unused images..."
     docker image prune -f
 }
@@ -952,11 +902,11 @@ class ContentGenerator:
     """
     Service for generating parody content with caching and error handling
     """
-    
+
     def __init__(self):
         openai.api_key = settings.OPENAI_API_KEY
         self.cache_timeout = 3600  # 1 hour
-    
+
     def generate(
         self,
         topic: str,
@@ -966,16 +916,16 @@ class ContentGenerator:
     ) -> Dict[str, Any]:
         """
         Generate parody article content
-        
+
         Args:
             topic: Main topic for the article
             category: Article category (politics, tech, etc.)
             style: Writing style (satirical, absurd, etc.)
             max_length: Maximum content length in tokens
-        
+
         Returns:
             Dict containing title and content
-        
+
         Raises:
             openai.OpenAIError: If generation fails
         """
@@ -985,10 +935,10 @@ class ContentGenerator:
         if cached_result:
             logger.info(f"Returning cached content for: {topic}")
             return cached_result
-        
+
         # Build prompt
         prompt = self._build_prompt(topic, category, style)
-        
+
         # Generate content
         try:
             response = openai.ChatCompletion.create(
@@ -1006,22 +956,22 @@ class ContentGenerator:
                 max_tokens=max_length or settings.OPENAI_MAX_TOKENS,
                 temperature=settings.OPENAI_TEMPERATURE
             )
-            
+
             content = response.choices[0].message.content
-            
+
             # Parse title and content from response
             result = self._parse_response(content)
-            
+
             # Cache the result
             cache.set(cache_key, result, self.cache_timeout)
-            
+
             logger.info(f"Generated new content for: {topic}")
             return result
-            
+
         except Exception as e:
             logger.exception(f"Content generation failed: {e}")
             raise
-    
+
     def _build_prompt(self, topic: str, category: str, style: str) -> str:
         """Build generation prompt"""
         return f"""
@@ -1035,15 +985,15 @@ CONTENT: [Article body, 3-5 paragraphs]
 
 Make it funny, absurd, and clearly satirical.
 """
-    
+
     def _parse_response(self, response: str) -> Dict[str, str]:
         """Parse OpenAI response into title and content"""
         lines = response.strip().split('\n')
-        
+
         title = ""
         content_lines = []
         in_content = False
-        
+
         for line in lines:
             if line.startswith('TITLE:'):
                 title = line.replace('TITLE:', '').strip()
@@ -1052,7 +1002,7 @@ Make it funny, absurd, and clearly satirical.
                 content_lines.append(line.replace('CONTENT:', '').strip())
             elif in_content and line.strip():
                 content_lines.append(line)
-        
+
         return {
             'title': title or 'Untitled Article',
             'content': '\n\n'.join(content_lines)
@@ -1071,42 +1021,42 @@ class ArticleGenerator {
         this.resultContainer = document.getElementById('generation-result');
         this.init();
     }
-    
+
     init() {
         if (!this.form) return;
-        
+
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             this.generate();
         });
     }
-    
+
     async generate() {
         const topic = document.getElementById('id_topic').value;
         const category = document.getElementById('id_category').value;
-        
+
         if (!topic) {
             this.showError('Please enter a topic');
             return;
         }
-        
+
         this.setLoading(true);
-        
+
         try {
             const result = await articleManager.generateArticle(
                 `Generate a ${category} parody article about: ${topic}`
             );
-            
+
             this.displayResult(result);
-            
+
         } catch (error) {
             this.showError(error.message);
-            
+
         } finally {
             this.setLoading(false);
         }
     }
-    
+
     displayResult(result) {
         this.resultContainer.innerHTML = `
             <div class="card">
@@ -1124,13 +1074,13 @@ class ArticleGenerator {
             </div>
         `;
     }
-    
+
     setLoading(isLoading) {
         const button = this.form.querySelector('button[type="submit"]');
         button.disabled = isLoading;
         button.textContent = isLoading ? 'Generating...' : 'Generate';
     }
-    
+
     showError(message) {
         this.resultContainer.innerHTML = `
             <div class="alert alert-danger">${message}</div>

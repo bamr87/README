@@ -1,13 +1,12 @@
 ---
+title: Gating Test.Expect
 category: misc
-last_updated: null
-source_file: gating-test.expect.md
-summary: "```javascript\n// @gating @compilationMode:\"annotation\"\nfunction Bar(props)\
-  \ {\n  'use forget';\n  return <div>{props.bar}</div>;\n}"
 tags:
 - javascript
-title: Gating Test.Expect
+last_updated: null
+source_file: gating-test.expect.md
 ---
+# Gating Test.Expect
 
 ## Input
 
@@ -86,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>2</div>

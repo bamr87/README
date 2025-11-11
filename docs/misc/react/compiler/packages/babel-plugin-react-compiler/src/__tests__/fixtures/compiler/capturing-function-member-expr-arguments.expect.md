@@ -1,14 +1,12 @@
 ---
+title: Capturing Function Member Expr Arguments.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-member-expr-arguments.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  const onFoo = useCallback(\n   \
-  \ reason => {\n      log(props.router.location);\n    },\n    [props.router.location]\n\
-  \  );"
 tags:
 - javascript
-title: Capturing Function Member Expr Arguments.Expect
+last_updated: null
+source_file: capturing-function-member-expr-arguments.expect.md
 ---
+# Capturing Function Member Expr Arguments.Expect
 
 ## Input
 
@@ -47,4 +45,3 @@ function Foo(props) {
 }
 
 ```
-      

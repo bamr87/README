@@ -1,14 +1,12 @@
 ---
+title: Optional Call With Independently Memoizable Arg.Expect
 category: misc
-last_updated: null
-source_file: optional-call-with-independently-memoizable-arg.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeOptionalFunction(props);\n\
-  \  // for a regular call, the JSX element could be independently memoized\n  //\
-  \ since it is an immutable value. however..."
 tags:
 - javascript
-title: Optional Call With Independently Memoizable Arg.Expect
+last_updated: null
+source_file: optional-call-with-independently-memoizable-arg.expect.md
 ---
+# Optional Call With Independently Memoizable Arg.Expect
 
 ## Input
 
@@ -54,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

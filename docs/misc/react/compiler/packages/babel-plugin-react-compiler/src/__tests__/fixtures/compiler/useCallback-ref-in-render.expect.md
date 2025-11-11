@@ -1,16 +1,12 @@
 ---
+title: Usecallback Ref In Render.Expect
 category: misc
-last_updated: null
-source_file: useCallback-ref-in-render.expect.md
-summary: '```javascript
-
-  // @flow @validateRefAccessDuringRender @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Usecallback Ref In Render.Expect
+last_updated: null
+source_file: useCallback-ref-in-render.expect.md
 ---
+# Usecallback Ref In Render.Expect
 
 ## Input
 
@@ -84,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

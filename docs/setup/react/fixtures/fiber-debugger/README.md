@@ -1,12 +1,11 @@
 ---
+title: Fiber Debugger
 category: setup
-last_updated: null
-source_file: README.md
-summary: This is a debugger handy for visualizing how Fiber works internally.
 tags:
 - javascript
 - setup
-title: Fiber Debugger
+last_updated: null
+source_file: README.md
 ---
 # Fiber Debugger
 

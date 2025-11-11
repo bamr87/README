@@ -1,14 +1,12 @@
 ---
+title: Inner Memo Value Not Promoted To Outer Scope Static.Expect
 category: misc
-last_updated: null
-source_file: inner-memo-value-not-promoted-to-outer-scope-static.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const count = new MaybeMutable();\n\
-  \  return (\n    <View>\n      <View>\n        {<span>Text</span>}\n        {<span>{maybeMutate(count)}</span>}\n\
-  \      </View>\n ..."
 tags:
 - javascript
-title: Inner Memo Value Not Promoted To Outer Scope Static.Expect
+last_updated: null
+source_file: inner-memo-value-not-promoted-to-outer-scope-static.expect.md
 ---
+# Inner Memo Value Not Promoted To Outer Scope Static.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ function Component(props) {
 }
 
 ```
-      

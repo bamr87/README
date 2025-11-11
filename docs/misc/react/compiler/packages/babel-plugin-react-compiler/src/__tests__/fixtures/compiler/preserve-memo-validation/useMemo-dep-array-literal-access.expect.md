@@ -1,14 +1,12 @@
 ---
+title: Usememo Dep Array Literal Access.Expect
 category: misc
-last_updated: null
-source_file: useMemo-dep-array-literal-access.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Dep Array Literal Access.Expect
+last_updated: null
+source_file: useMemo-dep-array-literal-access.expect.md
 ---
+# Usememo Dep Array Literal Access.Expect
 
 ## Input
 
@@ -75,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"val":1}]

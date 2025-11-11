@@ -1,14 +1,12 @@
 ---
+title: Rules Of Hooks E5Dd6Caf4084.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-e5dd6caf4084.expect.md
-summary: "```javascript\n// Valid because functions can call functions.\nfunction\
-  \ normalFunctionWithConditionalFunction() {\n  if (cond) {\n    doSomething();\n\
-  \  }\n}"
 tags:
 - javascript
-title: Rules Of Hooks E5Dd6Caf4084.Expect
+last_updated: null
+source_file: rules-of-hooks-e5dd6caf4084.expect.md
 ---
+# Rules Of Hooks E5Dd6Caf4084.Expect
 
 ## Input
 
@@ -33,4 +31,3 @@ function normalFunctionWithConditionalFunction() {
 }
 
 ```
-      

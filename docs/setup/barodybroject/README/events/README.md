@@ -1,14 +1,13 @@
 ---
+title: events/ Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: No summary available
 tags:
 - docker
 - database
 - testing
 - setup
-title: events/ Directory
+last_updated: null
+source_file: README.md
 ---
 # events/ Directory
 

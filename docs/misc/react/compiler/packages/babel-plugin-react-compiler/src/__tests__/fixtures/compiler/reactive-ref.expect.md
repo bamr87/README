@@ -1,16 +1,12 @@
 ---
+title: Reactive Ref.Expect
 category: misc
-last_updated: null
-source_file: reactive-ref.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Ref.Expect
+last_updated: null
+source_file: reactive-ref.expect.md
 ---
+# Reactive Ref.Expect
 
 ## Input
 
@@ -78,7 +74,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

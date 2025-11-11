@@ -1,13 +1,12 @@
 ---
+title: Array Expression Spread.Expect
 category: misc
-last_updated: null
-source_file: array-expression-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [0, ...props.foo,\
-  \ null, ...props.bar, 'z'];\n  return x;\n}"
 tags:
 - javascript
-title: Array Expression Spread.Expect
+last_updated: null
+source_file: array-expression-spread.expect.md
 ---
+# Array Expression Spread.Expect
 
 ## Input
 
@@ -51,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,1,2,3,null,4,5,6,"z"]

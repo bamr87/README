@@ -1,14 +1,12 @@
 ---
+title: Object Access Assignment.Expect
 category: misc
-last_updated: null
-source_file: object-access-assignment.expect.md
-summary: "```javascript\nfunction Component({a, b, c}) {\n  // This is an object version\
-  \ of arrayaccessassignment.js\n  // Meant to confirm that object expressions and\
-  \ PropertyStore/PropertyLoad with strings\n  // ..."
 tags:
 - javascript
-title: Object Access Assignment.Expect
+last_updated: null
+source_file: object-access-assignment.expect.md
 ---
+# Object Access Assignment.Expect
 
 ## Input
 
@@ -85,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"zero":{"zero":20},"one":{"zero":{"zero":20},"one":{},"two":{"zero":300}}}
 {"zero":{"zero":20},"one":{"zero":{"zero":20},"one":{},"two":{"zero":300}}}

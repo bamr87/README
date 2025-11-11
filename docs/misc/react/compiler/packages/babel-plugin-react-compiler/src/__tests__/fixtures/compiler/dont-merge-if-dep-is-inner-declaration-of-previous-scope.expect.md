@@ -1,14 +1,12 @@
 ---
+title: Dont Merge If Dep Is Inner Declaration Of Previous Scope.Expect
 category: misc
-last_updated: null
-source_file: dont-merge-if-dep-is-inner-declaration-of-previous-scope.expect.md
-summary: '```javascript
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Dont Merge If Dep Is Inner Declaration Of Previous Scope.Expect
+last_updated: null
+source_file: dont-merge-if-dep-is-inner-declaration-of-previous-scope.expect.md
 ---
+# Dont Merge If Dep Is Inner Declaration Of Previous Scope.Expect
 
 ## Input
 
@@ -166,7 +164,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[false,null,0],"output":[0]}</div><div>{"inputs":[false,null],"output":[null]}</div>
 <div>{"inputs":[false,null,1],"output":[1]}</div><div>{"inputs":[false,null],"output":[null]}</div>

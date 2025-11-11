@@ -1,14 +1,12 @@
 ---
+title: Fbt Param With Unicode.Expect
 category: misc
-last_updated: null
-source_file: fbt-param-with-unicode.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Param With Unicode.Expect
+last_updated: null
+source_file: fbt-param-with-unicode.expect.md
 ---
+# Fbt Param With Unicode.Expect
 
 ## Input
 
@@ -68,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "Hello Jason"

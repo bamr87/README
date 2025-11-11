@@ -1,14 +1,12 @@
 ---
+title: Hoisting Reassigned Twice Let Declaration.Expect
 category: misc
-last_updated: null
-source_file: hoisting-reassigned-twice-let-declaration.expect.md
-summary: '```javascript
-
-  import {CONSTNUMBER0, CONSTNUMBER1, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Reassigned Twice Let Declaration.Expect
+last_updated: null
+source_file: hoisting-reassigned-twice-let-declaration.expect.md
 ---
+# Hoisting Reassigned Twice Let Declaration.Expect
 
 ## Input
 
@@ -72,7 +70,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"getX":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"getX":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

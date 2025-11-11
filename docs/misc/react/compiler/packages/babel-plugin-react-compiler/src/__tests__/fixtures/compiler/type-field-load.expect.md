@@ -1,13 +1,12 @@
 ---
+title: Type Field Load.Expect
 category: misc
-last_updated: null
-source_file: type-field-load.expect.md
-summary: "```javascript\nfunction component() {\n  let x = {t: 1};\n  let p = x.t;\n\
-  \  return p;\n}"
 tags:
 - javascript
-title: Type Field Load.Expect
+last_updated: null
+source_file: type-field-load.expect.md
 ---
+# Type Field Load.Expect
 
 ## Input
 
@@ -51,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

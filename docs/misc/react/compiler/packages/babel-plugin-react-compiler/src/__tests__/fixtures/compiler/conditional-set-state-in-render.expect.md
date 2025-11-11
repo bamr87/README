@@ -1,12 +1,12 @@
 ---
+title: Conditional Set State In Render.Expect
 category: misc
-last_updated: null
-source_file: conditional-set-state-in-render.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [x, setX] = useState(0);"
 tags:
 - javascript
-title: Conditional Set State In Render.Expect
+last_updated: null
+source_file: conditional-set-state-in-render.expect.md
 ---
+# Conditional Set State In Render.Expect
 
 ## Input
 
@@ -58,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

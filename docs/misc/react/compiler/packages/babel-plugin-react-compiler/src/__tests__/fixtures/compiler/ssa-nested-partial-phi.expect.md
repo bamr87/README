@@ -1,14 +1,12 @@
 ---
+title: Ssa Nested Partial Phi.Expect
 category: misc
-last_updated: null
-source_file: ssa-nested-partial-phi.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = a;\n  if (b) {\n    if\
-  \ (c) {\n      x = c;\n    }\n    // TODO: move the return to the end of the function\n\
-  \    return x;\n  }\n}"
 tags:
 - javascript
-title: Ssa Nested Partial Phi.Expect
+last_updated: null
+source_file: ssa-nested-partial-phi.expect.md
 ---
+# Ssa Nested Partial Phi.Expect
 
 ## Input
 
@@ -52,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

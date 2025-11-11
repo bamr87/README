@@ -1,14 +1,12 @@
 ---
+title: Transitivity Add Captured Array To Itself.Expect
 category: misc
-last_updated: null
-source_file: transitivity-add-captured-array-to-itself.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  typedCapture,\n  typedCreateFrom,\n  typedMutate,\n\
-  \  ValidateMemoization,\n} from 'sharedrunti..."
 tags:
 - javascript
-title: Transitivity Add Captured Array To Itself.Expect
+last_updated: null
+source_file: transitivity-add-captured-array-to-itself.expect.md
 ---
+# Transitivity Add Captured Array To Itself.Expect
 
 ## Input
 
@@ -151,7 +149,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":{"a":0}}</div>;<div>{"inputs":[0,0],"output":[{"a":0},[["[[ cyclic ref *2 ]]"]],0]}</div>;
 <div>{"inputs":[0],"output":{"a":0}}</div>;<div>{"inputs":[0,1],"output":[{"a":0},[["[[ cyclic ref *2 ]]"]],1]}</div>;

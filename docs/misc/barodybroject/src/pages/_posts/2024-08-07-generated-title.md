@@ -1,22 +1,12 @@
 ---
-author: Generated Author
+title: 2024 08 07 Generated Title
 category: misc
-description: Generated Description
-last_updated: null
-published_at: '2024-08-07'
-source_file: 2024-08-07-generated-title.md
-summary: 'A spider daring a historic climb,
-
-  Brought news anchors to overthetop rhyme.
-
-  Its act of fearlessness they spun,
-
-  As a suicidal, assassin run.'
 tags:
 - documentation
-title: 2024 08 07 Generated Title
+last_updated: null
+source_file: 2024-08-07-generated-title.md
 ---
-
+# 2024 08 07 Generated Title
 
 A spider daring a historic climb,
 Brought news anchors to over-the-top rhyme.

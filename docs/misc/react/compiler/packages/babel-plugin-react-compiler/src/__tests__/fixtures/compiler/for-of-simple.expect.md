@@ -1,13 +1,12 @@
 ---
+title: For Of Simple.Expect
 category: misc
-last_updated: null
-source_file: for-of-simple.expect.md
-summary: "```javascript\nfunction Component() {\n  let x = [];\n  let items = [0,\
-  \ 1, 2];\n  for (const ii of items) {\n    x.push(ii  2);\n  }\n  return x;\n}"
 tags:
 - javascript
-title: For Of Simple.Expect
+last_updated: null
+source_file: for-of-simple.expect.md
 ---
+# For Of Simple.Expect
 
 ## Input
 
@@ -56,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2,4]

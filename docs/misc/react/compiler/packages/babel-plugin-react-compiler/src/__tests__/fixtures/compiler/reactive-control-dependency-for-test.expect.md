@@ -1,15 +1,13 @@
 ---
+title: Reactive Control Dependency For Test.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-for-test.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  for (let i = 0; i\
-  \ < props.test; i++) {\n    if (i > 10) {\n      x = 10;\n    } else {\n      x\
-  \ = 1;\n    }\n  }\n  // The values assigned to x are nonreac..."
 tags:
 - javascript
 - testing
-title: Reactive Control Dependency For Test.Expect
+last_updated: null
+source_file: reactive-control-dependency-for-test.expect.md
 ---
+# Reactive Control Dependency For Test.Expect
 
 ## Input
 
@@ -88,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [10]
 [10]

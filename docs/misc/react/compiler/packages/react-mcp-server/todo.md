@@ -1,12 +1,13 @@
 ---
+title: Todo
 category: misc
-last_updated: null
-source_file: todo.md
-summary: No summary available
 tags:
 - documentation
-title: Todo
+last_updated: null
+source_file: todo.md
 ---
+# Todo
+
 TODO
 
 - [ ] If code doesnt compile, read diagnostics and try again

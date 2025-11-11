@@ -1,14 +1,12 @@
 ---
+title: Allow Assigning To Global In Function Spread As Jsx.Expect
 category: misc
-last_updated: null
-source_file: allow-assigning-to-global-in-function-spread-as-jsx.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel:false\nfunction Component()\
-  \ {\n  const foo = () => {\n    someGlobal = true;\n  };\n  // spreading a function\
-  \ is weird, but it doesn't call the function so ..."
 tags:
 - javascript
-title: Allow Assigning To Global In Function Spread As Jsx.Expect
+last_updated: null
+source_file: allow-assigning-to-global-in-function-spread-as-jsx.expect.md
 ---
+# Allow Assigning To Global In Function Spread As Jsx.Expect
 
 ## Input
 
@@ -45,6 +43,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

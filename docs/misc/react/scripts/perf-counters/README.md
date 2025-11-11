@@ -1,12 +1,11 @@
 ---
+title: perf-counters
 category: misc
-last_updated: null
-source_file: README.md
-summary: Lightweight bindings to Linux perf event counters.
 tags:
 - javascript
 - testing
-title: perf-counters
+last_updated: null
+source_file: README.md
 ---
 # perf-counters
 

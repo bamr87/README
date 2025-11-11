@@ -1,17 +1,14 @@
 ---
+title: DONTREADME.md - The Forbidden Knowledge Vault
 category: setup
-last_updated: null
-source_file: DONTREADME.md
-summary: This file leverages psychological reactance to ensure critical information
-  gets read. The irony amplifies engagement, making boring setup docs actually interesting.
-  Don't read it, but if you did, you ...
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: DONTREADME.md - The Forbidden Knowledge Vault
+last_updated: null
+source_file: DONTREADME.md
 ---
 # DONTREADME.md - The Forbidden Knowledge Vault
 

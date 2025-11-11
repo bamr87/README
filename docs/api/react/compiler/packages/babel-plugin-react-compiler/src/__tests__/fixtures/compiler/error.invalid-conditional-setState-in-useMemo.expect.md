@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Conditional Setstate In Usememo.Expect
 category: api
-last_updated: null
-source_file: error.invalid-conditional-setState-in-useMemo.expect.md
-summary: "```javascript\nfunction Component({item, cond}) {\n  const [prevItem, setPrevItem]\
-  \ = useState(item);\n  const [state, setState] = useState(0);"
 tags:
 - javascript
 - api
-title: Error.Invalid Conditional Setstate In Usememo.Expect
+last_updated: null
+source_file: error.invalid-conditional-setState-in-useMemo.expect.md
 ---
+# Error.Invalid Conditional Setstate In Usememo.Expect
 
 ## Input
 
@@ -61,5 +60,4 @@ error.invalid-conditional-setState-in-useMemo.ts:8:6
   10 |   }, [cond, key, init]);
   11 |
 ```
-          
-      
+

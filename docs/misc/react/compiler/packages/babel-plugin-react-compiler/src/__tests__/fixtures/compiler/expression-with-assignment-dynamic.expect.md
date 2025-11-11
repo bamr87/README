@@ -1,13 +1,12 @@
 ---
+title: Expression With Assignment Dynamic.Expect
 category: misc
-last_updated: null
-source_file: expression-with-assignment-dynamic.expect.md
-summary: "```javascript\nfunction f(y) {\n  let x = y;\n  return x + (x = 2) + x;\n\
-  }"
 tags:
 - javascript
-title: Expression With Assignment Dynamic.Expect
+last_updated: null
+source_file: expression-with-assignment-dynamic.expect.md
 ---
+# Expression With Assignment Dynamic.Expect
 
 ## Input
 
@@ -40,4 +39,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

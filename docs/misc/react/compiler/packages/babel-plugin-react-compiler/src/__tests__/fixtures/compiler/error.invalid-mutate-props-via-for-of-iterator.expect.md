@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Mutate Props Via For Of Iterator.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-props-via-for-of-iterator.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = [];\n  for (const\
-  \ x of props.items) {\n    x.modified = true;\n    items.push(x);\n  }\n  return\
-  \ items;\n}"
 tags:
 - javascript
-title: Error.Invalid Mutate Props Via For Of Iterator.Expect
+last_updated: null
+source_file: error.invalid-mutate-props-via-for-of-iterator.expect.md
 ---
+# Error.Invalid Mutate Props Via For Of Iterator.Expect
 
 ## Input
 
@@ -43,5 +41,4 @@ error.invalid-mutate-props-via-for-of-iterator.ts:4:4
   6 |   }
   7 |   return items;
 ```
-          
-      
+

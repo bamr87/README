@@ -1,17 +1,15 @@
 ---
+title: .devcontainer Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Open in VS Code\ncode ."
 tags:
 - python
 - docker
 - azure
 - database
 - testing
-title: .devcontainer Directory
+last_updated: null
+source_file: README.md
 ---
-
 # .devcontainer Directory
 
 ## Purpose

@@ -1,15 +1,12 @@
 ---
+title: CPU async rendering demo
 category: api
-last_updated: null
-source_file: README.md
-summary: This is a demo application based on Dan Abramov's recent JSConf Iceland talk
-  about React.
 tags:
 - javascript
 - api
 - testing
-- api
-title: CPU async rendering demo
+last_updated: null
+source_file: README.md
 ---
 # CPU async rendering demo
 

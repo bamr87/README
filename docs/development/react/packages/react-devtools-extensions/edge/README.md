@@ -1,14 +1,13 @@
 ---
+title: The Microsoft Edge extension
 category: development
-last_updated: null
-source_file: README.md
-summary: The source code for this extension has moved to shells/webextension.
 tags:
 - javascript
 - azure
 - testing
 - development
-title: The Microsoft Edge extension
+last_updated: null
+source_file: README.md
 ---
 # The Microsoft Edge extension
 

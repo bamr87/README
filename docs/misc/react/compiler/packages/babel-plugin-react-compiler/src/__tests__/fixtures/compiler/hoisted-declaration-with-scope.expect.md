@@ -1,14 +1,12 @@
 ---
+title: Hoisted Declaration With Scope.Expect
 category: misc
-last_updated: null
-source_file: hoisted-declaration-with-scope.expect.md
-summary: '```javascript
-
-  import {StaticText1, Stringify, identity, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisted Declaration With Scope.Expect
+last_updated: null
+source_file: hoisted-declaration-with-scope.expect.md
 ---
+# Hoisted Declaration With Scope.Expect
 
 ## Input
 
@@ -80,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=1 ]]"

@@ -1,16 +1,12 @@
 ---
+title: Mutate Through Boxing Unboxing Indirections.Expect
 category: misc
-last_updated: null
-source_file: mutate-through-boxing-unboxing-indirections.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutate Through Boxing Unboxing Indirections.Expect
+last_updated: null
+source_file: mutate-through-boxing-unboxing-indirections.expect.md
 ---
+# Mutate Through Boxing Unboxing Indirections.Expect
 
 ## Input
 
@@ -68,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"x":{"a":0,"b":1,"key":"value"}}</div>

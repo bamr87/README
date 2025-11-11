@@ -1,14 +1,12 @@
 ---
+title: Call With Independently Memoizable Arg.Expect
 category: misc
-last_updated: null
-source_file: call-with-independently-memoizable-arg.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeFunction(props);\n\
-  \  const y = x(\n    <div>\n      <span>{props.text}</span>\n    </div>\n  );\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Call With Independently Memoizable Arg.Expect
+last_updated: null
+source_file: call-with-independently-memoizable-arg.expect.md
 ---
+# Call With Independently Memoizable Arg.Expect
 
 ## Input
 
@@ -57,4 +55,3 @@ function Component(props) {
 }
 
 ```
-      

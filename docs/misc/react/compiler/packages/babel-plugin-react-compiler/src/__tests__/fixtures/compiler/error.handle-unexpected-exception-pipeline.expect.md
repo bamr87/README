@@ -1,15 +1,13 @@
 ---
+title: Error.Handle Unexpected Exception Pipeline.Expect
 category: misc
-last_updated: null
-source_file: error.handle-unexpected-exception-pipeline.expect.md
-summary: '```javascript
-
-  // @throwUnknownExceptiontestonly:true'
 tags:
 - javascript
 - testing
-title: Error.Handle Unexpected Exception Pipeline.Expect
+last_updated: null
+source_file: error.handle-unexpected-exception-pipeline.expect.md
 ---
+# Error.Handle Unexpected Exception Pipeline.Expect
 
 ## Input
 
@@ -31,5 +29,4 @@ export const FIXTURE_ENTRYPOINT = {
 ```
 unexpected error
 ```
-          
-      
+

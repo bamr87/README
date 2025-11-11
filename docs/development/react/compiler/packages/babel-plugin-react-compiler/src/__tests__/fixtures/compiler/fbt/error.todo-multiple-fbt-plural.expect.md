@@ -1,17 +1,15 @@
 ---
+title: Error.Todo Multiple Fbt Plural.Expect
 category: development
-last_updated: null
-source_file: error.todo-multiple-fbt-plural.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
 - aws
 - testing
 - development
-title: Error.Todo Multiple Fbt Plural.Expect
+last_updated: null
+source_file: error.todo-multiple-fbt-plural.expect.md
 ---
+# Error.Todo Multiple Fbt Plural.Expect
 
 ## Input
 
@@ -91,5 +89,4 @@ error.todo-multiple-fbt-plural.ts:33:7
   35 |       </fbt:plural>
   36 |       traveling
 ```
-          
-      
+

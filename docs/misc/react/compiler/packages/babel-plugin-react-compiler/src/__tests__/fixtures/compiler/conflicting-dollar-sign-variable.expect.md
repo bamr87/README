@@ -1,14 +1,12 @@
 ---
+title: Conflicting Dollar Sign Variable.Expect
 category: misc
-last_updated: null
-source_file: conflicting-dollar-sign-variable.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Conflicting Dollar Sign Variable.Expect
+last_updated: null
+source_file: conflicting-dollar-sign-variable.expect.md
 ---
+# Conflicting Dollar Sign Variable.Expect
 
 ## Input
 
@@ -54,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["jQuery"]

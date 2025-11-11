@@ -1,14 +1,12 @@
 ---
+title: Sequential Destructuring Both Mixed Local And Scope Declaration.Expect
 category: misc
-last_updated: null
-source_file: sequential-destructuring-both-mixed-local-and-scope-declaration.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Sequential Destructuring Both Mixed Local And Scope Declaration.Expect
+last_updated: null
+source_file: sequential-destructuring-both-mixed-local-and-scope-declaration.expect.md
 ---
+# Sequential Destructuring Both Mixed Local And Scope Declaration.Expect
 
 ## Input
 
@@ -140,6 +138,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="#657b83"><span class="comic-sans">Sathya!</span></div>

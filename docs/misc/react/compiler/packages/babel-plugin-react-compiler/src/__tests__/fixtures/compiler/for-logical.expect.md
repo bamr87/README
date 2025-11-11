@@ -1,14 +1,12 @@
 ---
+title: For Logical.Expect
 category: misc
-last_updated: null
-source_file: for-logical.expect.md
-summary: "```javascript\nfunction foo(props) {\n  let y = 0;\n  for (\n    let x =\
-  \ 0;\n    x > props.min && x < props.max;\n    x += props.cond ? props.increment\
-  \ : 2\n  ) {\n    x = 2;\n    y += x;\n  }\n  return y;\n}"
 tags:
 - javascript
-title: For Logical.Expect
+last_updated: null
+source_file: for-logical.expect.md
 ---
+# For Logical.Expect
 
 ## Input
 
@@ -57,4 +55,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

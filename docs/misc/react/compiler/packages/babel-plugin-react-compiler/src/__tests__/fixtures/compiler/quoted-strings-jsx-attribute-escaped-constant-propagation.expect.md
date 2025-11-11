@@ -1,15 +1,13 @@
 ---
+title: Quoted Strings Jsx Attribute Escaped Constant Propagation.Expect
 category: misc
-last_updated: null
-source_file: quoted-strings-jsx-attribute-escaped-constant-propagation.expect.md
-summary: "```javascript\nexport function Component() {\n  // Test what happens if\
-  \ a string with doublequotes is interpolated via constant propagation\n  const text\
-  \ = 'Some \"text\"';\n  return <Child text={text} />;\n..."
 tags:
 - javascript
 - testing
-title: Quoted Strings Jsx Attribute Escaped Constant Propagation.Expect
+last_updated: null
+source_file: quoted-strings-jsx-attribute-escaped-constant-propagation.expect.md
 ---
+# Quoted Strings Jsx Attribute Escaped Constant Propagation.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Some "text"

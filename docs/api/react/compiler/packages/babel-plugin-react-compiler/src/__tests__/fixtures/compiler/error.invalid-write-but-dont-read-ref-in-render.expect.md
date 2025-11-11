@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Write But Dont Read Ref In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-write-but-dont-read-ref-in-render.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction useHook({value})\
-  \ {\n  const ref = useRef(null);\n  // Writing to a ref in render is against the\
-  \ rules:\n  ref.current = value;\n  // returning a re..."
 tags:
 - javascript
 - api
-title: Error.Invalid Write But Dont Read Ref In Render.Expect
+last_updated: null
+source_file: error.invalid-write-but-dont-read-ref-in-render.expect.md
 ---
+# Error.Invalid Write But Dont Read Ref In Render.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid-write-but-dont-read-ref-in-render.ts:5:2
   7 |   return ref;
   8 | }
 ```
-          
-      
+

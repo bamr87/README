@@ -1,16 +1,14 @@
 ---
+title: Barodybroject VS Code Copilot Instructions
 category: setup
-last_updated: null
-source_file: copilot-instructions.md
-summary: 'This is a Djangobased parody news generator that integrates with OpenAI
-  APIs to create satirical content. The application emphasizes:'
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Barodybroject VS Code Copilot Instructions
+last_updated: null
+source_file: copilot-instructions.md
 ---
 # Barodybroject VS Code Copilot Instructions
 
@@ -250,11 +248,11 @@ Usage: from parodynews.models import Article
  * Created: 2025-01-15
  * Last Modified: 2025-01-20
  * Version: 1.0.0
- * 
+ *
  * Dependencies:
  * - Bootstrap 5
  * - jQuery (optional, prefer vanilla JS)
- * 
+ *
  * Usage: Include in content detail template
  */
 ```
@@ -387,28 +385,28 @@ logger = logging.getLogger(__name__)
 
 class OpenAIService:
     """Service for OpenAI API interactions with error handling and retry logic"""
-    
+
     def __init__(self):
         openai.api_key = settings.OPENAI_API_KEY
         self.model = settings.OPENAI_MODEL
         self.max_retries = 3
-    
+
     def generate_parody_content(self, prompt: str, max_tokens: Optional[int] = None) -> str:
         """
         Generate parody content using OpenAI API
-        
+
         Args:
             prompt: The input prompt for content generation
             max_tokens: Maximum tokens in response (default from settings)
-        
+
         Returns:
             Generated content as string
-        
+
         Raises:
             openai.OpenAIError: If API call fails after retries
         """
         max_tokens = max_tokens or settings.OPENAI_MAX_TOKENS
-        
+
         for attempt in range(self.max_retries):
             try:
                 response = openai.ChatCompletion.create(
@@ -420,18 +418,18 @@ class OpenAIService:
                     max_tokens=max_tokens,
                     temperature=settings.OPENAI_TEMPERATURE
                 )
-                
+
                 content = response.choices[0].message.content
                 logger.info(f"Generated content successfully (attempt {attempt + 1})")
                 return content
-                
+
             except openai.RateLimitError as e:
                 logger.warning(f"Rate limit hit (attempt {attempt + 1}): {e}")
                 if attempt < self.max_retries - 1:
                     time.sleep(2 ** attempt)  # Exponential backoff
                 else:
                     raise
-                    
+
             except openai.APIError as e:
                 logger.error(f"OpenAI API error (attempt {attempt + 1}): {e}")
                 if attempt < self.max_retries - 1:
@@ -455,12 +453,12 @@ logger = logging.getLogger(__name__)
 
 class APIClient:
     """Generic HTTP API client with retry logic and error handling"""
-    
+
     def __init__(self, base_url: str, api_key: Optional[str] = None, timeout: int = 30):
         self.base_url = base_url.rstrip('/')
         self.timeout = timeout
         self.session = requests.Session()
-        
+
         # Configure retry strategy
         retry_strategy = Retry(
             total=3,
@@ -471,16 +469,16 @@ class APIClient:
         adapter = HTTPAdapter(max_retries=retry_strategy)
         self.session.mount("http://", adapter)
         self.session.mount("https://", adapter)
-        
+
         # Set headers
         if api_key:
             self.session.headers.update({'Authorization': f'Bearer {api_key}'})
         self.session.headers.update({'Content-Type': 'application/json'})
-    
+
     def get(self, endpoint: str, params: Optional[Dict] = None) -> Dict[str, Any]:
         """Make GET request with error handling"""
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
-        
+
         try:
             response = self.session.get(url, params=params, timeout=self.timeout)
             response.raise_for_status()
@@ -488,11 +486,11 @@ class APIClient:
         except requests.exceptions.RequestException as e:
             logger.error(f"GET request failed: {url}, Error: {e}")
             raise
-    
+
     def post(self, endpoint: str, data: Dict[str, Any]) -> Dict[str, Any]:
         """Make POST request with error handling"""
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
-        
+
         try:
             response = self.session.post(url, json=data, timeout=self.timeout)
             response.raise_for_status()
@@ -512,7 +510,7 @@ from django.contrib.auth.models import User
 
 class Article(models.Model):
     """Parody news article model"""
-    
+
     title = models.CharField(max_length=200, help_text="Article headline")
     content = models.TextField(help_text="Main article content")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='articles')
@@ -524,14 +522,14 @@ class Article(models.Model):
     published_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=False)
-    
+
     class Meta:
         ordering = ['-published_at']
         indexes = [
             models.Index(fields=['-published_at']),
             models.Index(fields=['category', '-published_at']),
         ]
-    
+
     def __str__(self):
         return self.title
 ```
@@ -550,7 +548,7 @@ class ArticleListView(ListView):
     template_name = 'parodynews/article_list.html'
     context_object_name = 'articles'
     paginate_by = 10
-    
+
     def get_queryset(self):
         return Article.objects.filter(is_published=True)
 
@@ -559,7 +557,7 @@ class ArticleCreateView(LoginRequiredMixin, CreateView):
     model = Article
     form_class = ArticleForm
     template_name = 'parodynews/article_form.html'
-    
+
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
@@ -637,21 +635,21 @@ def api_view_with_error_handling(request):
         # Business logic
         data = process_request(request)
         return JsonResponse({'status': 'success', 'data': data})
-        
+
     except ValidationError as e:
         logger.warning(f"Validation error: {e}")
         return JsonResponse(
             {'status': 'error', 'message': str(e)},
             status=400
         )
-        
+
     except openai.OpenAIError as e:
         logger.error(f"OpenAI API error: {e}")
         return JsonResponse(
             {'status': 'error', 'message': 'Content generation failed'},
             status=502
         )
-        
+
     except Exception as e:
         logger.exception(f"Unexpected error: {e}")
         return JsonResponse(
@@ -727,17 +725,17 @@ from django.core.validators import MinLengthValidator
 
 class ArticleForm(forms.ModelForm):
     """Article creation form with validation"""
-    
+
     class Meta:
         model = Article
         fields = ['title', 'content', 'category']
-    
+
     def clean_title(self):
         title = self.cleaned_data.get('title')
         if len(title) < 10:
             raise forms.ValidationError('Title must be at least 10 characters')
         return title
-    
+
     def clean_content(self):
         content = self.cleaned_data.get('content')
         if len(content) < 100:

@@ -1,15 +1,13 @@
 ---
+title: Return Object Of Functions.Expect
 category: misc
-last_updated: null
-source_file: return-object-of-functions.expect.md
-summary: "```javascript\n/\n  Assume that only directly returned functions or JSX\
-  \ attributes are invoked.\n  Conservatively estimate that functions wrapped in objects\
-  \ or other containers\n  might never be called (a..."
 tags:
 - javascript
 - docker
-title: Return Object Of Functions.Expect
+last_updated: null
+source_file: return-object-of-functions.expect.md
 ---
+# Return Object Of Functions.Expect
 
 ## Input
 
@@ -63,7 +61,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"getElement0":"[[ function params=0 ]]","getElement1":"[[ function params=0 ]]"}
 {"getElement0":"[[ function params=0 ]]","getElement1":"[[ function params=0 ]]"}

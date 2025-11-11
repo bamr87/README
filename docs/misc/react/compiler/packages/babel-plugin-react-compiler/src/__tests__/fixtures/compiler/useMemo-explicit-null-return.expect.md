@@ -1,14 +1,12 @@
 ---
+title: Usememo Explicit Null Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-explicit-null-return.expect.md
-summary: "```javascript\n// @validateNoVoidUseMemo\nfunction Component() {\n  const\
-  \ value = useMemo(() => {\n    return null;\n  }, []);\n  return <div>{value}</div>;\n\
-  }"
 tags:
 - javascript
-title: Usememo Explicit Null Return.Expect
+last_updated: null
+source_file: useMemo-explicit-null-return.expect.md
 ---
+# Usememo Explicit Null Return.Expect
 
 ## Input
 
@@ -40,6 +38,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

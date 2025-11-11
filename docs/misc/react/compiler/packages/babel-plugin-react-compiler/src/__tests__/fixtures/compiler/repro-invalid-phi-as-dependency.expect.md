@@ -1,16 +1,12 @@
 ---
+title: Repro Invalid Phi As Dependency.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-phi-as-dependency.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {CONSTTRUE, Stringify, mutate, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Invalid Phi As Dependency.Expect
+last_updated: null
+source_file: repro-invalid-phi-as-dependency.expect.md
 ---
+# Repro Invalid Phi As Dependency.Expect
 
 ## Input
 
@@ -87,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"obj":{"inner":{"value":"hello"},"wat0":"joe"},"inner":["[[ cyclic ref *2 ]]"]}</div>
 <div>{"obj":{"inner":{"value":"hello"},"wat0":"joe"},"inner":["[[ cyclic ref *2 ]]"]}</div>

@@ -1,15 +1,13 @@
 ---
+title: Mutation Within Capture And Mutablerange.Expect
 category: misc
-last_updated: null
-source_file: mutation-within-capture-and-mutablerange.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Mutation Within Capture And Mutablerange.Expect
+last_updated: null
+source_file: mutation-within-capture-and-mutablerange.expect.md
 ---
+# Mutation Within Capture And Mutablerange.Expect
 
 ## Input
 
@@ -89,6 +87,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

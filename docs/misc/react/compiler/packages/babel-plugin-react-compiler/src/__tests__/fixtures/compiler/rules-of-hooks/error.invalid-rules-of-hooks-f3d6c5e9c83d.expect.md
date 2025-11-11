@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks F3D6C5E9C83D.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-f3d6c5e9c83d.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks F3D6C5E9C83D.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-f3d6c5e9c83d.expect.md
 ---
+# Error.Invalid Rules Of Hooks F3D6C5E9C83D.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.invalid-rules-of-hooks-f3d6c5e9c83d.ts:12:2
   13 | }
   14 |
 ```
-          
-      
+

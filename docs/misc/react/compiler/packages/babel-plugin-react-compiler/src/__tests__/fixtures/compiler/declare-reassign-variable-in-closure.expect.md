@@ -1,13 +1,12 @@
 ---
+title: Declare Reassign Variable In Closure.Expect
 category: misc
-last_updated: null
-source_file: declare-reassign-variable-in-closure.expect.md
-summary: "```javascript\nfunction Component(p) {\n  let x;\n  const foo = () => {\n\
-  \    x = {};\n  };\n  foo();"
 tags:
 - javascript
-title: Declare Reassign Variable In Closure.Expect
+last_updated: null
+source_file: declare-reassign-variable-in-closure.expect.md
 ---
+# Declare Reassign Variable In Closure.Expect
 
 ## Input
 
@@ -57,4 +56,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

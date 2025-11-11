@@ -1,15 +1,14 @@
 ---
+title: "\U0001F680 Quick Deployment Guide - Minimal Cost Setup"
 category: setup
-last_updated: null
-source_file: DEPLOYMENT-GUIDE-MINIMAL.md
-summary: "```bash\n Navigate to project root\ncd /Users/bamr87/github/barodybroject"
 tags:
 - docker
 - azure
 - api
 - database
 - testing
-title: 🚀 Quick Deployment Guide - Minimal Cost Setup
+last_updated: null
+source_file: DEPLOYMENT-GUIDE-MINIMAL.md
 ---
 # 🚀 Quick Deployment Guide - Minimal Cost Setup
 
@@ -86,10 +85,10 @@ az webapp log tail \
 
 ## 📊 Expected Resources Created
 
-✅ Resource Group: `rg-barody-prod-1`  
-✅ App Service Plan (B1): `plan-<random>`  
-✅ App Service: `app-<random>`  
-✅ PostgreSQL Flexible Server (B1ms): `psql-<random>`  
+✅ Resource Group: `rg-barody-prod-1`
+✅ App Service Plan (B1): `plan-<random>`
+✅ App Service: `app-<random>`
+✅ PostgreSQL Flexible Server (B1ms): `psql-<random>`
 ✅ PostgreSQL Database: `barodydb`
 
 ## 💰 Cost Breakdown

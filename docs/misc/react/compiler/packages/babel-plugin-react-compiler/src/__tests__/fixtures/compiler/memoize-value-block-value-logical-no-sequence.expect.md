@@ -1,13 +1,12 @@
 ---
+title: Memoize Value Block Value Logical No Sequence.Expect
 category: misc
-last_updated: null
-source_file: memoize-value-block-value-logical-no-sequence.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  let x;\n  true && (x = []);\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Memoize Value Block Value Logical No Sequence.Expect
+last_updated: null
+source_file: memoize-value-block-value-logical-no-sequence.expect.md
 ---
+# Memoize Value Block Value Logical No Sequence.Expect
 
 ## Input
 
@@ -47,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

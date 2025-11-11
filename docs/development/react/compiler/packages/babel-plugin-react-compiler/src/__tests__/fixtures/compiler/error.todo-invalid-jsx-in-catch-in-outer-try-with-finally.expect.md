@@ -1,17 +1,13 @@
 ---
+title: Error.Todo Invalid Jsx In Catch In Outer Try With Finally.Expect
 category: development
-last_updated: null
-source_file: error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.expect.md
-summary: '```javascript
-
-  // @validateNoJSXInTryStatements
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo Invalid Jsx In Catch In Outer Try With Finally.Expect
+last_updated: null
+source_file: error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.expect.md
 ---
+# Error.Todo Invalid Jsx In Catch In Outer Try With Finally.Expect
 
 ## Input
 
@@ -71,5 +67,4 @@ error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.ts:6:2
   17 | }
   18 |
 ```
-          
-      
+

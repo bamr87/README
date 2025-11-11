@@ -1,15 +1,12 @@
 ---
+title: React Release Scripts
 category: api
-last_updated: null
-source_file: README.md
-summary: This document describes how to prepare and publish a release manually, using
-  the command line.
 tags:
 - javascript
 - api
 - testing
-- api
-title: React Release Scripts
+last_updated: null
+source_file: README.md
 ---
 # React Release Scripts
 

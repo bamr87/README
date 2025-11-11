@@ -1,14 +1,13 @@
 ---
+title: Error.Reassignment To Global.Expect
 category: api
-last_updated: null
-source_file: error.reassignment-to-global.expect.md
-summary: "```javascript\nfunction Component() {\n  // Cannot assign to globals\n \
-  \ someUnknownGlobal = true;\n  moduleLocal = true;\n}"
 tags:
 - javascript
 - api
-title: Error.Reassignment To Global.Expect
+last_updated: null
+source_file: error.reassignment-to-global.expect.md
 ---
+# Error.Reassignment To Global.Expect
 
 ## Input
 
@@ -52,5 +51,4 @@ error.reassignment-to-global.ts:4:2
   5 | }
   6 |
 ```
-          
-      
+

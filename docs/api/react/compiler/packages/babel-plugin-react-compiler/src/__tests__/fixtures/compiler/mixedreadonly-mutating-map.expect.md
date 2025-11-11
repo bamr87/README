@@ -1,14 +1,13 @@
 ---
+title: Mixedreadonly Mutating Map.Expect
 category: api
-last_updated: null
-source_file: mixedreadonly-mutating-map.expect.md
-summary: "```javascript\nimport {\n  arrayPush,\n  identity,\n  makeArray,\n  Stringify,\n\
-  \  useFragment,\n} from 'sharedruntime';"
 tags:
 - javascript
 - api
-title: Mixedreadonly Mutating Map.Expect
+last_updated: null
+source_file: mixedreadonly-mutating-map.expect.md
 ---
+# Mixedreadonly Mutating Map.Expect
 
 ## Input
 
@@ -160,7 +159,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"x":[2,2,2],"count":3}</div><div>{"item":1}</div>
 <div>{"x":[2,2,2],"count":4}</div><div>{"item":1}</div>

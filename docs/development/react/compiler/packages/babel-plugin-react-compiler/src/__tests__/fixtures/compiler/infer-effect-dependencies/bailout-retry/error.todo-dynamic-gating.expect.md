@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Dynamic Gating.Expect
 category: development
-last_updated: null
-source_file: error.todo-dynamic-gating.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @inferEffectDependencies @panicThreshold:"none"'
 tags:
 - javascript
 - development
-title: Error.Todo Dynamic Gating.Expect
+last_updated: null
+source_file: error.todo-dynamic-gating.expect.md
 ---
+# Error.Todo Dynamic Gating.Expect
 
 ## Input
 
@@ -58,5 +56,4 @@ error.todo-dynamic-gating.ts:13:2
   15 |   return arr;
   16 | }
 ```
-          
-      
+

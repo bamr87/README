@@ -1,41 +1,15 @@
 ---
-applyTo: '**'
-author: Barodybroject Team
+title: Workspace Organization Guidelines for Barodybroject
 category: setup
-containerRequirements:
-  description: Django development workspace optimized for VS Code Copilot assistance
-  validation: project-structure validation, AI-readability scoring
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and project context
-- languages.instructions.md: Language-specific patterns
-description: VS Code Copilot-optimized workspace organization and project structure
-  guidelines for Django/OpenAI development
-file: space.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  django_organization_path:
-  - project_structure_design
-  - ai_assisted_organization
-  - django_app_architecture
-  - workspace_optimization
-  - continuous_improvement
-source_file: space.instructions.md
-summary: These instructions provide comprehensive guidance for organizing Django/OpenAI
-  workspaces and implementing project structure best practices optimized for VS Code
-  Copilot assistance. They focus on crea...
 tags:
 - python
 - javascript
 - docker
 - azure
 - api
-title: Workspace Organization Guidelines for Barodybroject
-version: 1.0.0
+last_updated: null
+source_file: space.instructions.md
 ---
-
-
 # Workspace Organization Guidelines for Barodybroject
 
 These instructions provide comprehensive guidance for organizing Django/OpenAI workspaces and implementing project structure best practices optimized for VS Code Copilot assistance. They focus on creating clear, navigable project structures that enhance AI understanding and collaboration throughout the Django development process.

@@ -1,14 +1,12 @@
 ---
+title: Capturing Func Simple Alias.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-simple-alias.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Simple Alias.Expect
+last_updated: null
+source_file: capturing-func-simple-alias.expect.md
 ---
+# Capturing Func Simple Alias.Expect
 
 ## Input
 
@@ -68,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"wat0":"joe"}
 {"a":2,"wat0":"joe"}

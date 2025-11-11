@@ -1,16 +1,14 @@
 ---
+title: GitHub Agents Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains agent configuration files for automated development,
-  testing, and maintenance workflows in the Barodybroject repository.
 tags:
 - javascript
 - docker
 - aws
 - api
 - testing
-title: GitHub Agents Directory
+last_updated: null
+source_file: README.md
 ---
 # GitHub Agents Directory
 
@@ -24,9 +22,9 @@ GitHub Agents are specialized automation tools that perform specific tasks, moni
 
 ### README Architect Agent
 
-**File:** `DONTREADME.md`  
-**Purpose:** Build irresistible, well-organized README documentation with mystical forbidden gateway theme  
-**Status:** ✅ Active  
+**File:** `DONTREADME.md`
+**Purpose:** Build irresistible, well-organized README documentation with mystical forbidden gateway theme
+**Status:** ✅ Active
 **Version:** 1.0.0
 
 **The Forbidden Gateway Theme:**
@@ -272,7 +270,7 @@ Too many READMEs found (cache directories):
 
 ### Workflow Reviewer Agent
 
-**File:** `workflow-reviewer.md`  
+**File:** `workflow-reviewer.md`
 **Purpose:** Automated GitHub Actions workflow monitoring, failure analysis, and pull request generation with validated fixes.
 **Status:** ✅ Active
 
@@ -293,8 +291,8 @@ Too many READMEs found (cache directories):
 
 ### Infrastructure Tester Agent
 
-**File:** `infra-tester.md`  
-**Purpose:** Automated infrastructure testing and validation  
+**File:** `infra-tester.md`
+**Purpose:** Automated infrastructure testing and validation
 **Status:** ✅ Active
 
 **Responsibilities:**
@@ -397,18 +395,18 @@ GitHub Actions → Agent Workflows → Test Execution → PR Creation → Review
    name: My Agent Name
    description: Brief description under 160 characters for SEO
    ---
-   
+
    # My Agent Name
-   
+
    ## Purpose
    [What this agent does]
-   
+
    ## Responsibilities
    [List of responsibilities]
-   
+
    ## Workflow
    [Step-by-step workflow]
-   
+
    ## Pull Request Recommendations
    [How and when PRs are created]
    ```
@@ -781,8 +779,8 @@ Both the agent instruction and bash script are optimized for AI understanding:
 
 ---
 
-**Last Updated:** October 30, 2025  
-**Version:** 1.1.0  
+**Last Updated:** October 30, 2025
+**Version:** 1.1.0
 **Maintainer:** Barodybroject Development Team
 
 ✨ **May your documentation always be irresistible!** ✨

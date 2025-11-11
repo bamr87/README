@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Global Reassignment Indirect.Expect
 category: api
-last_updated: null
-source_file: error.invalid-global-reassignment-indirect.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Global Reassignment Indirect.Expect
+last_updated: null
+source_file: error.invalid-global-reassignment-indirect.expect.md
 ---
+# Error.Invalid Global Reassignment Indirect.Expect
 
 ## Input
 
@@ -62,5 +60,4 @@ error.invalid-global-reassignment-indirect.ts:9:4
   11 |   const indirectSetGlobal = () => {
   12 |     setGlobal();
 ```
-          
-      
+

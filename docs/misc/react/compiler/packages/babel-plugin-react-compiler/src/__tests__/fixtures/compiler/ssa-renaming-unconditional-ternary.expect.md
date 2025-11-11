@@ -1,14 +1,12 @@
 ---
+title: Ssa Renaming Unconditional Ternary.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-unconditional-ternary.expect.md
-summary: "```javascript\nfunction useFoo(props) {\n  let x = [];\n  x.push(props.bar);\n\
-  \  props.cond\n    ? ((x = {}), (x = []), x.push(props.foo))\n    : ((x = []), (x\
-  \ = []), x.push(props.bar));\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Renaming Unconditional Ternary.Expect
+last_updated: null
+source_file: ssa-renaming-unconditional-ternary.expect.md
 ---
+# Ssa Renaming Unconditional Ternary.Expect
 
 ## Input
 
@@ -72,7 +70,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [55]
 [55]

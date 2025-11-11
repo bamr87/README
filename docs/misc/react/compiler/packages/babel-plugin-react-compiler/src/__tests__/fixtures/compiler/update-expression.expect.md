@@ -1,13 +1,12 @@
 ---
+title: Update Expression.Expect
 category: misc
-last_updated: null
-source_file: update-expression.expect.md
-summary: "```javascript\nfunction foo(props: {x: number}) {\n  let x = props.x;\n\
-  \  let y = x++;\n  let z = x;\n  return {x, y, z};\n}"
 tags:
 - javascript
-title: Update Expression.Expect
+last_updated: null
+source_file: update-expression.expect.md
 ---
+# Update Expression.Expect
 
 ## Input
 
@@ -56,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":1,"y":1,"z":2}

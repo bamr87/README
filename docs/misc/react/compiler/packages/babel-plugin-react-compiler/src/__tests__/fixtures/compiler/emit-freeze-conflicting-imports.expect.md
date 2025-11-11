@@ -1,14 +1,12 @@
 ---
+title: Emit Freeze Conflicting Imports.Expect
 category: misc
-last_updated: null
-source_file: emit-freeze-conflicting-imports.expect.md
-summary: '```javascript
-
-  // @enableEmitFreeze @instrumentForget'
 tags:
 - javascript
-title: Emit Freeze Conflicting Imports.Expect
+last_updated: null
+source_file: emit-freeze-conflicting-imports.expect.md
 ---
+# Emit Freeze Conflicting Imports.Expect
 
 ## Input
 
@@ -43,6 +41,6 @@ function useFoo(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

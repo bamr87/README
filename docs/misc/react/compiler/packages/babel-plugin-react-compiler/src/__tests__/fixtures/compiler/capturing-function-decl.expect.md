@@ -1,13 +1,12 @@
 ---
+title: Capturing Function Decl.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-decl.expect.md
-summary: "```javascript\nfunction component(a) {\n  let t = {a};\n  function x() {\n\
-  \    t.foo();\n  }\n  x(t);\n  return t;\n}"
 tags:
 - javascript
-title: Capturing Function Decl.Expect
+last_updated: null
+source_file: capturing-function-decl.expect.md
 ---
+# Capturing Function Decl.Expect
 
 ## Input
 
@@ -58,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

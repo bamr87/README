@@ -1,19 +1,15 @@
 ---
+title: Menu Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "<nav class=\"navbar navbarexpandlg navbardark bgprimary\">\n    <div class=\"\
-  container\">\n        <a class=\"navbarbrand\" href=\"{% url 'home' %}\">\n    \
-  \        <img src=\"{% static 'images/logo.png' %}\" alt=\"..."
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: Menu Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Menu Templates Directory
 
 ## Purpose
@@ -36,11 +32,11 @@ Contains navigation menu templates for the Barody Broject application. These tem
             <img src="{% static 'images/logo.png' %}" alt="Barody Broject" height="30">
             Barody Broject
         </a>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -50,18 +46,18 @@ Contains navigation menu templates for the Barody Broject application. These tem
                     <a class="nav-link" href="{% url 'articles_list' %}">Articles</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" 
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown"
                        role="button" data-toggle="dropdown">
                         Categories
                     </a>
                     {% include "menu/dropdown.html" with items=categories %}
                 </li>
             </ul>
-            
+
             <ul class="navbar-nav">
                 {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" 
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown"
                            role="button" data-toggle="dropdown">
                             <i class="fas fa-user"></i> {{ user.username }}
                         </a>
@@ -142,12 +138,12 @@ Contains navigation menu templates for the Barody Broject application. These tem
         padding: 1rem;
         border-radius: 0.375rem;
     }
-    
+
     .navbar-nav .nav-link {
         padding: 0.75rem 1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
+
     .dropdown-menu {
         position: static;
         float: none;
@@ -168,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('active');
-            
+
             // If in dropdown, show parent as active
             const dropdown = link.closest('.dropdown');
             if (dropdown) {
@@ -176,20 +172,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
+
     // Dropdown hover effect on desktop
     if (window.innerWidth >= 992) {
         document.querySelectorAll('.dropdown').forEach(dropdown => {
             dropdown.addEventListener('mouseenter', function() {
                 this.querySelector('.dropdown-menu').classList.add('show');
             });
-            
+
             dropdown.addEventListener('mouseleave', function() {
                 this.querySelector('.dropdown-menu').classList.remove('show');
             });
         });
     }
-    
+
     // Search functionality
     const searchForm = document.getElementById('navbar-search');
     if (searchForm) {
@@ -209,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
 # In context processors or views
 def menu_context(request):
     """Provide menu data to templates"""
-    
+
     categories = [
         {
             'title': 'News Categories',
@@ -223,13 +219,13 @@ def menu_context(request):
         {
             'title': 'Special Features',
             'children': [
-                {'title': 'AI Generated', 'url': '/ai-articles/', 'icon': 'fas fa-robot', 
+                {'title': 'AI Generated', 'url': '/ai-articles/', 'icon': 'fas fa-robot',
                  'badge': {'type': 'info', 'text': 'New'}},
                 {'title': 'Trending', 'url': '/trending/', 'icon': 'fas fa-fire'},
             ]
         }
     ]
-    
+
     return {
         'categories': categories,
         'user_notifications': get_user_notifications(request.user) if request.user.is_authenticated else []
@@ -238,7 +234,7 @@ def menu_context(request):
 
 ## Container Configuration
 - **Runtime**: Django template rendering with navigation context
-- **Dependencies**: 
+- **Dependencies**:
   - Bootstrap JavaScript and CSS for responsive components
   - FontAwesome icons for menu items
   - jQuery for dropdown and mobile menu functionality
@@ -246,12 +242,12 @@ def menu_context(request):
 - **Performance**: Template fragment caching for menu components
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Base template layout and structure
   - User authentication and authorization context
   - Application URL configuration and routing
   - Dynamic menu data from models or APIs
-- **Outgoing**: 
+- **Outgoing**:
   - Page navigation and routing
   - User authentication workflows
   - Search functionality and filtering

@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks 79128A755612.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-79128a755612.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks 79128A755612.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-79128a755612.expect.md
 ---
+# Error.Invalid Rules Of Hooks 79128A755612.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.invalid-rules-of-hooks-79128a755612.ts:7:4
    9 | }
   10 |
 ```
-          
-      
+

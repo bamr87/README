@@ -1,16 +1,12 @@
 ---
+title: Todo.Invalid.Invalid Rules Of Hooks 206E2811C87C.Expect
 category: misc
-last_updated: null
-source_file: todo.invalid.invalid-rules-of-hooks-206e2811c87c.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Invalid.Invalid Rules Of Hooks 206E2811C87C.Expect
+last_updated: null
+source_file: todo.invalid.invalid-rules-of-hooks-206e2811c87c.expect.md
 ---
+# Todo.Invalid.Invalid Rules Of Hooks 206E2811C87C.Expect
 
 ## Input
 
@@ -47,4 +43,3 @@ class Foo extends Component {
 }
 
 ```
-      

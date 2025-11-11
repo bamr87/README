@@ -1,14 +1,12 @@
 ---
+title: Dominator.Expect
 category: misc
-last_updated: null
-source_file: dominator.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  label: if (props.a)\
-  \ {\n    x = 1;\n  } else {\n    if (props.b) {\n      x = 2;\n    } else {\n  \
-  \    break label;\n    }\n    x = 3;\n  }\n  label2: swit..."
 tags:
 - javascript
-title: Dominator.Expect
+last_updated: null
+source_file: dominator.expect.md
 ---
+# Dominator.Expect
 
 ## Input
 
@@ -96,4 +94,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,16 +1,12 @@
 ---
+title: Usecontext Read Context In Callback If Condition.Expect
 category: misc
-last_updated: null
-source_file: useContext-read-context-in-callback-if-condition.expect.md
-summary: '```javascript
-
-  import {createContext, useContext} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecontext Read Context In Callback If Condition.Expect
+last_updated: null
+source_file: useContext-read-context-in-callback-if-condition.expect.md
 ---
+# Usecontext Read Context In Callback If Condition.Expect
 
 ## Input
 
@@ -88,6 +84,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{}}</div>

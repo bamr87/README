@@ -1,14 +1,12 @@
 ---
+title: '`react-is`'
 category: setup
-last_updated: null
-source_file: README.md
-summary: This package allows you to test arbitrary values and see if they're a particular
-  React element type.
 tags:
 - javascript
 - testing
 - setup
-title: '`react-is`'
+last_updated: null
+source_file: README.md
 ---
 # `react-is`
 

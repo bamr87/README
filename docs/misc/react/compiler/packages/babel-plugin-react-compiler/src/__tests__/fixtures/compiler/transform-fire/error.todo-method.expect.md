@@ -1,16 +1,12 @@
 ---
+title: Error.Todo Method.Expect
 category: misc
-last_updated: null
-source_file: error.todo-method.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Todo Method.Expect
+last_updated: null
+source_file: error.todo-method.expect.md
 ---
+# Error.Todo Method.Expect
 
 ## Input
 
@@ -50,5 +46,4 @@ error.todo-method.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

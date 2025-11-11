@@ -1,15 +1,12 @@
 ---
+title: Error.Todo Preserve Memo Deps Mixed Optional Nonoptional Property Chain.Expect
 category: misc
-last_updated: null
-source_file: error.todo-preserve-memo-deps-mixed-optional-nonoptional-property-chain.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-  @enableOptionalDependencies @enableTreatFunctionDepsAsConditional:false'
 tags:
 - javascript
-title: Error.Todo Preserve Memo Deps Mixed Optional Nonoptional Property Chain.Expect
+last_updated: null
+source_file: error.todo-preserve-memo-deps-mixed-optional-nonoptional-property-chain.expect.md
 ---
+# Error.Todo Preserve Memo Deps Mixed Optional Nonoptional Property Chain.Expect
 
 ## Input
 
@@ -99,5 +96,4 @@ error.todo-preserve-memo-deps-mixed-optional-nonoptional-property-chain.ts:7:25
   20 |     return [object.callback()];
   21 |   }, [object]);
 ```
-          
-      
+

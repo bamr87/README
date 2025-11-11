@@ -1,14 +1,12 @@
 ---
+title: Try Catch Within Object Method.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-object-method.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const object = {\n    foo()\
-  \ {\n      try {\n        return [];\n      } catch (e) {\n        return;\n   \
-  \   }\n    },\n  };\n  return object.foo();\n}"
 tags:
 - javascript
-title: Try Catch Within Object Method.Expect
+last_updated: null
+source_file: try-catch-within-object-method.expect.md
 ---
+# Try Catch Within Object Method.Expect
 
 ## Input
 
@@ -64,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

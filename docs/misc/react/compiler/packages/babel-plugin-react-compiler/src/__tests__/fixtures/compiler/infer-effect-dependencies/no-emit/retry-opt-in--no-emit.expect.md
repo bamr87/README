@@ -1,20 +1,12 @@
 ---
+title: Retry Opt In  No Emit.Expect
 category: misc
-last_updated: null
-source_file: retry-opt-in--no-emit.expect.md
-summary: '```javascript
-
-  // @compilationMode:"all" @inferEffectDependencies @panicThreshold:"none" @noEmit
-
-  import {print} from ''sharedruntime'';
-
-  import {AUTODEPS} from ''react'';
-
-  import useEffectWrapper from ''useEf...'
 tags:
 - javascript
-title: Retry Opt In  No Emit.Expect
+last_updated: null
+source_file: retry-opt-in--no-emit.expect.md
 ---
+# Retry Opt In  No Emit.Expect
 
 ## Input
 
@@ -71,7 +63,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"arr":[1],"arr2":[2]}
 {"arr":[2],"arr2":[2]}

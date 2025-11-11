@@ -1,14 +1,12 @@
 ---
+title: Ssa Reassign In Rval.Expect
 category: misc
-last_updated: null
-source_file: ssa-reassign-in-rval.expect.md
-summary: "```javascript\n// Forget should call the original x (x = foo()) to compute\
-  \ result\nfunction Component() {\n  let x = foo();\n  let result = x((x = bar()),\
-  \ 5);\n  return [result, x];\n}"
 tags:
 - javascript
-title: Ssa Reassign In Rval.Expect
+last_updated: null
+source_file: ssa-reassign-in-rval.expect.md
 ---
+# Ssa Reassign In Rval.Expect
 
 ## Input
 
@@ -41,4 +39,3 @@ function Component() {
 }
 
 ```
-      

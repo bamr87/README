@@ -1,14 +1,12 @@
 ---
+title: Do While Compound Test.Expect
 category: misc
-last_updated: null
-source_file: do-while-compound-test.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [1, 2, 3];\n  let\
-  \ ret = [];\n  do {\n    let item = x.pop();\n    ret.push(item  2);\n  } while\
-  \ (x.length && props.cond);\n  return ret;\n}"
 tags:
 - javascript
-title: Do While Compound Test.Expect
+last_updated: null
+source_file: do-while-compound-test.expect.md
 ---
+# Do While Compound Test.Expect
 
 ## Input
 
@@ -60,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Lambda With Fbt.Expect
 category: misc
-last_updated: null
-source_file: lambda-with-fbt.expect.md
-summary: '```javascript
-
-  import {fbt} from ''fbt'';'
 tags:
 - javascript
-title: Lambda With Fbt.Expect
+last_updated: null
+source_file: lambda-with-fbt.expect.md
 ---
+# Lambda With Fbt.Expect
 
 ## Input
 
@@ -91,4 +89,3 @@ function _temp() {
 }
 
 ```
-      

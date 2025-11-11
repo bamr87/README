@@ -1,12 +1,12 @@
 ---
+title: Error.Invalid Mutate After Aliased Freeze.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-after-aliased-freeze.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [];\n  let y = x;"
 tags:
 - javascript
-title: Error.Invalid Mutate After Aliased Freeze.Expect
+last_updated: null
+source_file: error.invalid-mutate-after-aliased-freeze.expect.md
 ---
+# Error.Invalid Mutate After Aliased Freeze.Expect
 
 ## Input
 
@@ -49,5 +49,4 @@ error.invalid-mutate-after-aliased-freeze.ts:13:2
   15 |   return <Component x={x} y={y} />;
   16 | }
 ```
-          
-      
+

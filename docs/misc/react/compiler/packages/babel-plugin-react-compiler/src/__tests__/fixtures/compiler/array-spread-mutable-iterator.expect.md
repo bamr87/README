@@ -1,14 +1,12 @@
 ---
+title: Array Spread Mutable Iterator.Expect
 category: misc
-last_updated: null
-source_file: array-spread-mutable-iterator.expect.md
-summary: "```javascript\n/\n  TODO: object spreads should have conditionally mutate\
-  \ semantics\n    Found differences in evaluator results\n    Nonforget (expected):\n\
-  \    (kind: ok) [3,1,5,4]\n    [3,1,5,4]\n    [4,1,5..."
 tags:
 - javascript
-title: Array Spread Mutable Iterator.Expect
+last_updated: null
+source_file: array-spread-mutable-iterator.expect.md
 ---
+# Array Spread Mutable Iterator.Expect
 
 ## Input
 
@@ -89,7 +87,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [3,1,5,4]
 [3,1,5,4]

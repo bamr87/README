@@ -1,14 +1,12 @@
 ---
+title: Set Add Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-add-mutate.expect.md
-summary: '```javascript
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Add Mutate.Expect
+last_updated: null
+source_file: set-add-mutate.expect.md
 ---
+# Set Add Mutate.Expect
 
 ## Input
 
@@ -81,7 +79,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 2

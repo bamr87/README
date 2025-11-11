@@ -1,18 +1,12 @@
 ---
+title: Fbt Repro Invalid Mutable Range Destructured Prop.Expect
 category: misc
-last_updated: null
-source_file: fbt-repro-invalid-mutable-range-destructured-prop.expect.md
-summary: '```javascript
-
-  import {fbt} from ''fbt'';
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fbt Repro Invalid Mutable Range Destructured Prop.Expect
+last_updated: null
+source_file: fbt-repro-invalid-mutable-range-destructured-prop.expect.md
 ---
+# Fbt Repro Invalid Mutable Range Destructured Prop.Expect
 
 ## Input
 
@@ -94,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":["Mike"],"output":"Mike"}</div>
 <div>{"inputs":["Mofei"],"output":"Mofei"}</div>

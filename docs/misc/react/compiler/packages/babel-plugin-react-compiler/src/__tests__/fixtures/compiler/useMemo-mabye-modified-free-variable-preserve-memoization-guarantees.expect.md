@@ -1,18 +1,12 @@
 ---
+title: Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
 category: misc
-last_updated: null
-source_file: useMemo-mabye-modified-free-variable-preserve-memoization-guarantees.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
+last_updated: null
+source_file: useMemo-mabye-modified-free-variable-preserve-memoization-guarantees.expect.md
 ---
+# Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
 
 ## Input
 
@@ -109,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true,"value":42,"wat0":"joe"}

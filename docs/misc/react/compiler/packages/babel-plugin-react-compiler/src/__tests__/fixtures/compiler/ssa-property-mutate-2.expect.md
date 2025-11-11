@@ -1,13 +1,12 @@
 ---
+title: Ssa Property Mutate 2.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-mutate-2.expect.md
-summary: "```javascript\nfunction foo() {\n  const x = [];\n  const y = {};\n  y.x\
-  \ = x;\n  mutate(x);\n  return y;\n}"
 tags:
 - javascript
-title: Ssa Property Mutate 2.Expect
+last_updated: null
+source_file: ssa-property-mutate-2.expect.md
 ---
+# Ssa Property Mutate 2.Expect
 
 ## Input
 
@@ -42,4 +41,3 @@ function foo() {
 }
 
 ```
-      

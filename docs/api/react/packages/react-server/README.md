@@ -1,14 +1,11 @@
 ---
+title: react-server
 category: api
-last_updated: null
-source_file: README.md
-summary: This is an experimental package for creating custom React streaming server
-  renderers.
 tags:
 - javascript
 - api
-- api
-title: react-server
+last_updated: null
+source_file: README.md
 ---
 # react-server
 
@@ -141,7 +138,7 @@ export function ClientComp({ onClick, message }) {
 
 ```js
 
-// client references don't have to just be components, anything can be 
+// client references don't have to just be components, anything can be
 // a reference, in this case we're importing a function that will be
 // passed to the ClientComp component
 import { alert } from '...'

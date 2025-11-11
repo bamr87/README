@@ -1,14 +1,12 @@
 ---
+title: Usememo Nested Ifs.Expect
 category: misc
-last_updated: null
-source_file: useMemo-nested-ifs.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    if (props.cond) {\n      if (props.cond) {\n      }\n    }\n  }, [props.cond]);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Usememo Nested Ifs.Expect
+last_updated: null
+source_file: useMemo-nested-ifs.expect.md
 ---
+# Usememo Nested Ifs.Expect
 
 ## Input
 
@@ -48,4 +46,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

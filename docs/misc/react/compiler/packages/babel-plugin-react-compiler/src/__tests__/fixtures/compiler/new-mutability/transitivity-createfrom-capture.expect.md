@@ -1,13 +1,12 @@
 ---
+title: Transitivity Createfrom Capture.Expect
 category: misc
-last_updated: null
-source_file: transitivity-createfrom-capture.expect.md
-summary: "```javascript\nimport {useMemo} from 'react';\nimport {\n  typedCapture,\n\
-  \  typedCreateFrom,\n  typedMutate,\n  ValidateMemoization,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Transitivity Createfrom Capture.Expect
+last_updated: null
+source_file: transitivity-createfrom-capture.expect.md
 ---
+# Transitivity Createfrom Capture.Expect
 
 ## Input
 
@@ -103,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":[{"a":0}]}</div>
 <div>{"inputs":[0],"output":[{"a":0}]}</div>

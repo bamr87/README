@@ -1,14 +1,12 @@
 ---
+title: For Of Mutate Item Of Local Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-mutate-item-of-local-collection.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Mutate Item Of Local Collection.Expect
+last_updated: null
+source_file: for-of-mutate-item-of-local-collection.expect.md
 ---
+# For Of Mutate Item Of Local Collection.Expect
 
 ## Input
 
@@ -59,7 +57,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":1,"b":"value1","c":true},{"a":1,"b":"value1","c":true}]
 [{"a":1,"b":"value1","c":true},{"a":1,"b":"value1","c":true}]

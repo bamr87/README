@@ -1,13 +1,12 @@
 ---
+title: Builtin Jsx Tag Lowered Between Mutations.Expect
 category: misc
-last_updated: null
-source_file: builtin-jsx-tag-lowered-between-mutations.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const maybeMutable = new MaybeMutable();\n\
-  \  return <div>{maybeMutate(maybeMutable)}</div>;\n}"
 tags:
 - javascript
-title: Builtin Jsx Tag Lowered Between Mutations.Expect
+last_updated: null
+source_file: builtin-jsx-tag-lowered-between-mutations.expect.md
 ---
+# Builtin Jsx Tag Lowered Between Mutations.Expect
 
 ## Input
 
@@ -37,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

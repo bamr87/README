@@ -1,14 +1,12 @@
 ---
+title: Repro Returned Inner Fn Reassigns Context.Expect
 category: misc
-last_updated: null
-source_file: repro-returned-inner-fn-reassigns-context.expect.md
-summary: '```javascript
-
-  import {makeArray, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Returned Inner Fn Reassigns Context.Expect
+last_updated: null
+source_file: repro-returned-inner-fn-reassigns-context.expect.md
 ---
+# Repro Returned Inner Fn Reassigns Context.Expect
 
 ## Input
 
@@ -104,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function"},"value":[1],"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function"},"value":[2],"shouldInvokeFns":true}</div>

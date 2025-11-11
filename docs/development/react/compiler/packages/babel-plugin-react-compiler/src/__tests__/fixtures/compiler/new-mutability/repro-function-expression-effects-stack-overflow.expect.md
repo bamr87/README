@@ -1,15 +1,13 @@
 ---
+title: Repro Function Expression Effects Stack Overflow.Expect
 category: development
-last_updated: null
-source_file: repro-function-expression-effects-stack-overflow.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = {};\n  const fn = ()\
-  \ => {\n    new Object()\n      .build(x)\n      .build({})\n      .build({})\n\
-  \      .build({})\n      .build({})\n      .build({})\n      .b..."
 tags:
 - javascript
 - development
-title: Repro Function Expression Effects Stack Overflow.Expect
+last_updated: null
+source_file: repro-function-expression-effects-stack-overflow.expect.md
 ---
+# Repro Function Expression Effects Stack Overflow.Expect
 
 ## Input
 
@@ -67,6 +65,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

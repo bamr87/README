@@ -1,13 +1,12 @@
 ---
+title: Capturing Function Alias Computed Load 4.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-alias-computed-load-4.expect.md
-summary: "```javascript\nfunction bar(a) {\n  let x = [a];\n  let y = {};\n  const\
-  \ f0 = function () {\n    y = x[0].a[1];\n  };\n  f0();"
 tags:
 - javascript
-title: Capturing Function Alias Computed Load 4.Expect
+last_updated: null
+source_file: capturing-function-alias-computed-load-4.expect.md
 ---
+# Capturing Function Alias Computed Load 4.Expect
 
 ## Input
 
@@ -61,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "val2"

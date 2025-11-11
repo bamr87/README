@@ -1,20 +1,12 @@
 ---
+title: Conditional Member Expr.Expect
 category: misc
-last_updated: null
-source_file: conditional-member-expr.expect.md
-summary: '``javascript
-
-  // @enablePropagateDepsInHIR
-
-  // To preserve the nullthrows behavior and reactive deps of this code,
-
-  // Forget needs to add props.a as a dependency (since props.a.b` is
-
-  // a conditional de...'
 tags:
 - javascript
-title: Conditional Member Expr.Expect
+last_updated: null
+source_file: conditional-member-expr.expect.md
 ---
+# Conditional Member Expr.Expect
 
 ## Input
 
@@ -65,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

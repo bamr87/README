@@ -1,15 +1,13 @@
 ---
+title: Uncond Overlap Direct.Expect
 category: misc
-last_updated: null
-source_file: uncond-overlap-direct.expect.md
-summary: "```javascript\n// Test that we correctly track a subpath if the subpath\
-  \ itself is accessed as\n// a dependency\nfunction TestOverlappingTracked(props)\
-  \ {\n  let x = {};\n  x.b = props.a.b;\n  x.c = props.a.c..."
 tags:
 - javascript
 - testing
-title: Uncond Overlap Direct.Expect
+last_updated: null
+source_file: uncond-overlap-direct.expect.md
 ---
+# Uncond Overlap Direct.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"c":2,"a":{"c":2}}

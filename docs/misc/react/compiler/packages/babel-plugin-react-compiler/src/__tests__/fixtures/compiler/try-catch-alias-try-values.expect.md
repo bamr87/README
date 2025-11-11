@@ -1,14 +1,12 @@
 ---
+title: Try Catch Alias Try Values.Expect
 category: misc
-last_updated: null
-source_file: try-catch-alias-try-values.expect.md
-summary: '```javascript
-
-  const {throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Alias Try Values.Expect
+last_updated: null
+source_file: try-catch-alias-try-values.expect.md
 ---
+# Try Catch Alias Try Values.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

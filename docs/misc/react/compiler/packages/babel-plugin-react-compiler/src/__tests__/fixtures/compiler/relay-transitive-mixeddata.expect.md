@@ -1,14 +1,12 @@
 ---
+title: Relay Transitive Mixeddata.Expect
 category: misc
-last_updated: null
-source_file: relay-transitive-mixeddata.expect.md
-summary: '```javascript
-
-  import {useFragment} from ''sharedruntime'';'
 tags:
 - javascript
-title: Relay Transitive Mixeddata.Expect
+last_updated: null
+source_file: relay-transitive-mixeddata.expect.md
 ---
+# Relay Transitive Mixeddata.Expect
 
 ## Input
 
@@ -65,7 +63,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "1"
 "1"

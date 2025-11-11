@@ -1,13 +1,12 @@
 ---
+title: Quoted Strings In Jsx Attribute Escaped.Expect
 category: misc
-last_updated: null
-source_file: quoted-strings-in-jsx-attribute-escaped.expect.md
-summary: "```javascript\nexport function Component() {\n  return <Child text='Some\
-  \ \\\"text\\\"' />;\n}"
 tags:
 - javascript
-title: Quoted Strings In Jsx Attribute Escaped.Expect
+last_updated: null
+source_file: quoted-strings-in-jsx-attribute-escaped.expect.md
 ---
+# Quoted Strings In Jsx Attribute Escaped.Expect
 
 ## Input
 
@@ -53,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Some \"text\"

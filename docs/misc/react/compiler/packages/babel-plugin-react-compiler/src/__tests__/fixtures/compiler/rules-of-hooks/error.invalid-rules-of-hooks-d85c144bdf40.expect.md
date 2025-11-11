@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks D85C144Bdf40.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-d85c144bdf40.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks D85C144Bdf40.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-d85c144bdf40.expect.md
 ---
+# Error.Invalid Rules Of Hooks D85C144Bdf40.Expect
 
 ## Input
 
@@ -55,5 +53,4 @@ error.invalid-rules-of-hooks-d85c144bdf40.ts:9:4
   11 | }
   12 |
 ```
-          
-      
+

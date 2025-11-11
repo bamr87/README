@@ -1,14 +1,12 @@
 ---
+title: Repro Separate Scopes For Divs.Expect
 category: misc
-last_updated: null
-source_file: repro-separate-scopes-for-divs.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Separate Scopes For Divs.Expect
+last_updated: null
+source_file: repro-separate-scopes-for-divs.expect.md
 ---
+# Repro Separate Scopes For Divs.Expect
 
 ## Input
 
@@ -119,7 +117,7 @@ const styles = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="a"></div><div class="c"></div>
 <div class="a"></div>

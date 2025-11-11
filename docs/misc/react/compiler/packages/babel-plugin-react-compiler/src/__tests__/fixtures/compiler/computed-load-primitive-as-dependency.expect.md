@@ -1,14 +1,12 @@
 ---
+title: Computed Load Primitive As Dependency.Expect
 category: misc
-last_updated: null
-source_file: computed-load-primitive-as-dependency.expect.md
-summary: "``javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nfunction\
-  \ Component(props) {\n  let a = foo();\n  // freeze a` so we know the next line\
-  \ cannot mutate it\n  <div>{a}</div>;"
 tags:
 - javascript
-title: Computed Load Primitive As Dependency.Expect
+last_updated: null
+source_file: computed-load-primitive-as-dependency.expect.md
 ---
+# Computed Load Primitive As Dependency.Expect
 
 ## Input
 
@@ -48,4 +46,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Array At Mutate After Capture.Expect
 category: misc
-last_updated: null
-source_file: array-at-mutate-after-capture.expect.md
-summary: '``javascript
-
-  // x''s mutable range should extend to mutate(y)`'
 tags:
 - javascript
-title: Array At Mutate After Capture.Expect
+last_updated: null
+source_file: array-at-mutate-after-capture.expect.md
 ---
+# Array At Mutate After Capture.Expect
 
 ## Input
 
@@ -48,4 +46,3 @@ function Component(props) {
 }
 
 ```
-      

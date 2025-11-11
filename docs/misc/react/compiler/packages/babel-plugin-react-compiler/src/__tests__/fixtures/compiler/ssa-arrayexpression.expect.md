@@ -1,13 +1,12 @@
 ---
+title: Ssa Arrayexpression.Expect
 category: misc
-last_updated: null
-source_file: ssa-arrayexpression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = 1;\n  const b =\
-  \ 2;\n  const x = [a, b];\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Arrayexpression.Expect
+last_updated: null
+source_file: ssa-arrayexpression.expect.md
 ---
+# Ssa Arrayexpression.Expect
 
 ## Input
 
@@ -51,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

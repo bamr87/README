@@ -1,13 +1,12 @@
 ---
+title: Repro Invalid Reactivity Value Block.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-reactivity-value-block.expect.md
-summary: "```javascript\nimport {\n  CONSTTRUE,\n  identity,\n  makeObjectPrimitives,\n\
-  \  useNoAlias,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Repro Invalid Reactivity Value Block.Expect
+last_updated: null
+source_file: repro-invalid-reactivity-value-block.expect.md
 ---
+# Repro Invalid Reactivity Value Block.Expect
 
 ## Input
 
@@ -106,7 +105,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":0,"b":"value1","c":true},"[[ cyclic ref *1 ]]"]
 [{"a":0,"b":"value1","c":true},"[[ cyclic ref *1 ]]"]

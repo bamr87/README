@@ -1,14 +1,12 @@
 ---
+title: Drop Methodcall Usememo.Expect
 category: misc
-last_updated: null
-source_file: drop-methodcall-usememo.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Drop Methodcall Usememo.Expect
+last_updated: null
+source_file: drop-methodcall-usememo.expect.md
 ---
+# Drop Methodcall Usememo.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

@@ -1,19 +1,13 @@
 ---
-category: misc
-last_updated: null
-source_file: error.todo-repro-missed-memoization-from-capture-in-invoked-function-inferred-as-mutation.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {logValue, useFragment, useHook, typedLog...'
-tags:
-- javascript
 title: Error.Todo Repro Missed Memoization From Capture In Invoked Function Inferred
   As Mutation.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: error.todo-repro-missed-memoization-from-capture-in-invoked-function-inferred-as-mutation.expect.md
 ---
+# Error.Todo Repro Missed Memoization From Capture In Invoked Function Inferred As Mutation.Expect
 
 ## Input
 
@@ -72,5 +66,4 @@ React Compiler has skipped optimizing this component because the existing manual
   20 |   // We then infer getLoggingData as capturing that mutable value,
   21 |   // so any calls to this function are then inferred as extending
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Todo Infer Function Uncond Optionals Hoisted.Expect
 category: misc
-last_updated: null
-source_file: todo-infer-function-uncond-optionals-hoisted.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Todo Infer Function Uncond Optionals Hoisted.Expect
+last_updated: null
+source_file: todo-infer-function-uncond-optionals-hoisted.expect.md
 ---
+# Todo Infer Function Uncond Optionals Hoisted.Expect
 
 ## Input
 
@@ -64,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function"},"shouldInvokeFns":true}</div>

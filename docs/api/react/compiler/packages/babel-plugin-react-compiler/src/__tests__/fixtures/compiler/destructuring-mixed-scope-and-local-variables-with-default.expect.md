@@ -1,16 +1,13 @@
 ---
+title: Destructuring Mixed Scope And Local Variables With Default.Expect
 category: api
-last_updated: null
-source_file: destructuring-mixed-scope-and-local-variables-with-default.expect.md
-summary: '```javascript
-
-  import {Stringify, graphql} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-- api
-title: Destructuring Mixed Scope And Local Variables With Default.Expect
+last_updated: null
+source_file: destructuring-mixed-scope-and-local-variables-with-default.expect.md
 ---
+# Destructuring Mixed Scope And Local Variables With Default.Expect
 
 ## Input
 
@@ -142,6 +139,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"media":null,"allUrls":["url1","url2","url3"],"onClick":"[[ function params=1 ]]"}</div>

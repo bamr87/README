@@ -1,16 +1,12 @@
 ---
+title: Lambda With Fbt Preserve Memoization.Expect
 category: misc
-last_updated: null
-source_file: lambda-with-fbt-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {fbt} from ''fbt'';'
 tags:
 - javascript
-title: Lambda With Fbt Preserve Memoization.Expect
+last_updated: null
+source_file: lambda-with-fbt-preserve-memoization.expect.md
 ---
+# Lambda With Fbt Preserve Memoization.Expect
 
 ## Input
 
@@ -94,6 +90,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

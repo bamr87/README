@@ -1,14 +1,12 @@
 ---
+title: Validate No Set State In Render Uncalled Function With Mutable Range Is Valid.Expect
 category: misc
-last_updated: null
-source_file: validate-no-set-state-in-render-uncalled-function-with-mutable-range-is-valid.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender @enableAssumeHooksFollowRulesOfReact\n\
-  function Component(props) {\n  const logEvent = useLogging(props.appId);\n  const\
-  \ [currentStep, setCurrentStep] = useSta..."
 tags:
 - javascript
-title: Validate No Set State In Render Uncalled Function With Mutable Range Is Valid.Expect
+last_updated: null
+source_file: validate-no-set-state-in-render-uncalled-function-with-mutable-range-is-valid.expect.md
 ---
+# Validate No Set State In Render Uncalled Function With Mutable Range Is Valid.Expect
 
 ## Input
 
@@ -106,4 +104,3 @@ function Component(props) {
 }
 
 ```
-      

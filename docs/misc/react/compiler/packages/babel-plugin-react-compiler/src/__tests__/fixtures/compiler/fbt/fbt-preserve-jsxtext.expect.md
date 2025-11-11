@@ -1,14 +1,12 @@
 ---
+title: Fbt Preserve Jsxtext.Expect
 category: misc
-last_updated: null
-source_file: fbt-preserve-jsxtext.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Preserve Jsxtext.Expect
+last_updated: null
+source_file: fbt-preserve-jsxtext.expect.md
 ---
+# Fbt Preserve Jsxtext.Expect
 
 ## Input
 
@@ -73,7 +71,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) hello 1,
 goodbye 0,

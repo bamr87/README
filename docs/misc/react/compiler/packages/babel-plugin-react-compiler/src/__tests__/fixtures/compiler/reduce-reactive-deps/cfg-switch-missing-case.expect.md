@@ -1,16 +1,12 @@
 ---
+title: Cfg Switch Missing Case.Expect
 category: misc
-last_updated: null
-source_file: cfg-switch-missing-case.expect.md
-summary: '```javascript
-
-  // props.a.b should NOT be added as a unconditional dependency to the reactive
-
-  // scope that produces x if it is not accessed in every path'
 tags:
 - javascript
-title: Cfg Switch Missing Case.Expect
+last_updated: null
+source_file: cfg-switch-missing-case.expect.md
 ---
+# Cfg Switch Missing Case.Expect
 
 ## Input
 
@@ -84,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":42}

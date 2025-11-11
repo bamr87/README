@@ -1,16 +1,12 @@
 ---
+title: Memoization Comments.Expect
 category: misc
-last_updated: null
-source_file: memoization-comments.expect.md
-summary: '```javascript
-
-  // @enableMemoizationComments
-
-  import {addOne, getNumber, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Memoization Comments.Expect
+last_updated: null
+source_file: memoization-comments.expect.md
 ---
+# Memoization Comments.Expect
 
 ## Input
 
@@ -86,6 +82,6 @@ function Component(props) {
 export const FIXTURE_ENTRYPOINT = { fn: Component, params: [{ a: 1, b: 10 }] };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,10]

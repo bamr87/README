@@ -1,17 +1,14 @@
 ---
+title: migrations Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Create new migrations after model changes\npython manage.py makemigrations\
-  \ parodynews"
 tags:
 - python
 - docker
 - database
 - setup
-title: migrations Directory
+last_updated: null
+source_file: README.md
 ---
-
 # migrations Directory
 
 ## Purpose

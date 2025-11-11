@@ -1,18 +1,12 @@
 ---
+title: Bailout Validate Preserve Memo.Expect
 category: misc
-last_updated: null
-source_file: bailout-validate-preserve-memo.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';
-
-  import {sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Bailout Validate Preserve Memo.Expect
+last_updated: null
+source_file: bailout-validate-preserve-memo.expect.md
 ---
+# Bailout Validate Preserve Memo.Expect
 
 ## Input
 
@@ -60,6 +54,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

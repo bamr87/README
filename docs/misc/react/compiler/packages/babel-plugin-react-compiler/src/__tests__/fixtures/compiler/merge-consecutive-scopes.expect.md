@@ -1,17 +1,13 @@
 ---
+title: Merge Consecutive Scopes.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-scopes.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Merge Consecutive Scopes.Expect
+last_updated: null
+source_file: merge-consecutive-scopes.expect.md
 ---
+# Merge Consecutive Scopes.Expect
 
 ## Input
 
@@ -100,6 +96,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"text":"Counter"}</div><span>0</span><button data-testid="button">increment</button></div>

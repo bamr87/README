@@ -1,14 +1,12 @@
 ---
+title: Jsx String Attribute Expression Container.Expect
 category: misc
-last_updated: null
-source_file: jsx-string-attribute-expression-container.expect.md
-summary: "```javascript\nfunction Component() {\n  return (\n    <div>\n      <Text\
-  \ value={'\\n'} />\n      <Text value={'A\\tE'} />\n      <Text value={'나은'} />\n\
-  \      <Text value={'Lauren'} />\n      <Text value={'சத்ய..."
 tags:
 - javascript
-title: Jsx String Attribute Expression Container.Expect
+last_updated: null
+source_file: jsx-string-attribute-expression-container.expect.md
 ---
+# Jsx String Attribute Expression Container.Expect
 
 ## Input
 
@@ -84,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span>
 </span><span>A	E</span><span>나은</span><span>Lauren</span><span>சத்யா</span><span>Sathya</span><span>welcome 👋</span></div>

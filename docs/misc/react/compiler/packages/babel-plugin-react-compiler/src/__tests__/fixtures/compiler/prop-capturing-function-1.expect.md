@@ -1,13 +1,12 @@
 ---
+title: Prop Capturing Function 1.Expect
 category: misc
-last_updated: null
-source_file: prop-capturing-function-1.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  let z = {a, b};\n  let x =\
-  \ function () {\n    console.log(z);\n  };\n  return x;\n}"
 tags:
 - javascript
-title: Prop Capturing Function 1.Expect
+last_updated: null
+source_file: prop-capturing-function-1.expect.md
 ---
+# Prop Capturing Function 1.Expect
 
 ## Input
 
@@ -57,4 +56,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Repro Mutate Result Of Method Call On Frozen Value Is Allowed.Expect
 category: misc
-last_updated: null
-source_file: repro-mutate-result-of-method-call-on-frozen-value-is-allowed.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Mutate Result Of Method Call On Frozen Value Is Allowed.Expect
+last_updated: null
+source_file: repro-mutate-result-of-method-call-on-frozen-value-is-allowed.expect.md
 ---
+# Repro Mutate Result Of Method Call On Frozen Value Is Allowed.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"obj":{"a":0,"b":"value1","c":true,"property":42}}</div>

@@ -1,14 +1,12 @@
 ---
+title: Align Scopes Reactive Scope Overlaps Try.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-reactive-scope-overlaps-try.expect.md
-summary: '```javascript
-
-  import {arrayPush, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Reactive Scope Overlaps Try.Expect
+last_updated: null
+source_file: align-scopes-reactive-scope-overlaps-try.expect.md
 ---
+# Align Scopes Reactive Scope Overlaps Try.Expect
 
 ## Input
 
@@ -69,7 +67,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2,"joe"]
 [2,"joe"]

@@ -1,13 +1,12 @@
 ---
+title: Noalias Filter On Array Prop.Expect
 category: misc
-last_updated: null
-source_file: noAlias-filter-on-array-prop.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const filtered = props.items.filter(item\
-  \ => item != null);\n  return filtered;\n}"
 tags:
 - javascript
-title: Noalias Filter On Array Prop.Expect
+last_updated: null
+source_file: noAlias-filter-on-array-prop.expect.md
 ---
+# Noalias Filter On Array Prop.Expect
 
 ## Input
 
@@ -69,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":true},true,false,"string",3.14,[null]]

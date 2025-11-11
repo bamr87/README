@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Props Mutation In Effect Indirect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-props-mutation-in-effect-indirect.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const mutateProps = () =>\
-  \ {\n    props.value = true;\n  };\n  const indirectMutateProps = () => {\n    mutateProps();\n\
-  \  };\n  useEffect(() => indirectMutateProps..."
 tags:
 - javascript
-title: Error.Invalid Props Mutation In Effect Indirect.Expect
+last_updated: null
+source_file: error.invalid-props-mutation-in-effect-indirect.expect.md
 ---
+# Error.Invalid Props Mutation In Effect Indirect.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid-props-mutation-in-effect-indirect.ts:3:4
   5 |   const indirectMutateProps = () => {
   6 |     mutateProps();
 ```
-          
-      
+

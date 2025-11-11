@@ -1,14 +1,12 @@
 ---
+title: Fbt Preserve Whitespace.Expect
 category: misc
-last_updated: null
-source_file: fbt-preserve-whitespace.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Preserve Whitespace.Expect
+last_updated: null
+source_file: fbt-preserve-whitespace.expect.md
 ---
+# Fbt Preserve Whitespace.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Before text hello world

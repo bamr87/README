@@ -1,14 +1,12 @@
 ---
+title: Repro Propagate Type Of Ternary Nested.Expect
 category: misc
-last_updated: null
-source_file: repro-propagate-type-of-ternary-nested.expect.md
-summary: "``javascript\nfunction V0({v1}: V2<{v1?: V3}>): V2b.V2a {\n  const v4 =\
-  \ v5(V6.v7({v8: V9.va}));\n  const vb = (\n    <ComponentC cd=\"TxqUy\" ce=\"oh]uc\"\
-  \ cf=\"Bdbo\" c10={!V9.va && v11.v12}>\n      gmhubcw\n    ..."
 tags:
 - javascript
-title: Repro Propagate Type Of Ternary Nested.Expect
+last_updated: null
+source_file: repro-propagate-type-of-ternary-nested.expect.md
 ---
+# Repro Propagate Type Of Ternary Nested.Expect
 
 ## Input
 
@@ -86,6 +84,6 @@ function V0(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -1,12 +1,12 @@
 ---
+title: Sequentially Constant Progagatable If Test Conditions.Expect
 category: misc
-last_updated: null
-source_file: sequentially-constant-progagatable-if-test-conditions.expect.md
-summary: "```javascript\nfunction Component() {\n  let a = 1;"
 tags:
 - javascript
-title: Sequentially Constant Progagatable If Test Conditions.Expect
+last_updated: null
+source_file: sequentially-constant-progagatable-if-test-conditions.expect.md
 ---
+# Sequentially Constant Progagatable If Test Conditions.Expect
 
 ## Input
 
@@ -68,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ok"

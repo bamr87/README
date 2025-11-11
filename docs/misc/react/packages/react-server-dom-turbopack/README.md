@@ -1,11 +1,10 @@
 ---
+title: react-server-dom-turbopack
 category: misc
-last_updated: null
-source_file: README.md
-summary: Experimental React Flight bindings for DOM using Turbopack.
 tags:
 - javascript
-title: react-server-dom-turbopack
+last_updated: null
+source_file: README.md
 ---
 # react-server-dom-turbopack
 

@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks 9Bf17C174134.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-9bf17c174134.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks 9Bf17C174134.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-9bf17c174134.expect.md
 ---
+# Error.Invalid Rules Of Hooks 9Bf17C174134.Expect
 
 ## Input
 
@@ -51,5 +49,4 @@ error.invalid-rules-of-hooks-9bf17c174134.ts:7:7
   8 | }
   9 |
 ```
-          
-      
+

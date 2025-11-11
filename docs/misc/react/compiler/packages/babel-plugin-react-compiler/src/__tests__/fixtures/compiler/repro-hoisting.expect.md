@@ -1,13 +1,12 @@
 ---
+title: Repro Hoisting.Expect
 category: misc
-last_updated: null
-source_file: repro-hoisting.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const wat = () => {\n    const\
-  \ pathname = 'wat';\n    pathname;\n  };"
 tags:
 - javascript
-title: Repro Hoisting.Expect
+last_updated: null
+source_file: repro-hoisting.expect.md
 ---
+# Repro Hoisting.Expect
 
 ## Input
 
@@ -66,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button>42</button>

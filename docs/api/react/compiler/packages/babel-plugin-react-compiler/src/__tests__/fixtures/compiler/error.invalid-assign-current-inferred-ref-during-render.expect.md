@@ -1,17 +1,13 @@
 ---
+title: Error.Invalid Assign Current Inferred Ref During Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-assign-current-inferred-ref-during-render.expect.md
-summary: '```javascript
-
-  // @flow @enableTreatRefLikeIdentifiersAsRefs @validateRefAccessDuringRender
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Assign Current Inferred Ref During Render.Expect
+last_updated: null
+source_file: error.invalid-assign-current-inferred-ref-during-render.expect.md
 ---
+# Error.Invalid Assign Current Inferred Ref During Render.Expect
 
 ## Input
 
@@ -46,5 +42,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
   8 |   return <Stringify foo={fooRef} />;
   9 | }
 ```
-          
-      
+

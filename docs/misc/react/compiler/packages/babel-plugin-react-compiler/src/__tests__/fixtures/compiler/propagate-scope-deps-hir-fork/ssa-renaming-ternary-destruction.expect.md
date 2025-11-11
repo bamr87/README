@@ -1,14 +1,12 @@
 ---
+title: Ssa Renaming Ternary Destruction.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-ternary-destruction.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction useFoo(props) {\n\
-  \  let x = [];\n  x.push(props.bar);\n  props.cond ? (({x} = {x: {}}), ([x] = [[]]),\
-  \ x.push(props.foo)) : null;\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Renaming Ternary Destruction.Expect
+last_updated: null
+source_file: ssa-renaming-ternary-destruction.expect.md
 ---
+# Ssa Renaming Ternary Destruction.Expect
 
 ## Input
 
@@ -70,7 +68,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [55]
 [55]

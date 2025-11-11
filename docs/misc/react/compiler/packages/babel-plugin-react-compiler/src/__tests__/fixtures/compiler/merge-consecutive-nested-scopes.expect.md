@@ -1,14 +1,12 @@
 ---
+title: Merge Consecutive Nested Scopes.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-nested-scopes.expect.md
-summary: '```javascript
-
-  const {getNumber} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Merge Consecutive Nested Scopes.Expect
+last_updated: null
+source_file: merge-consecutive-nested-scopes.expect.md
 ---
+# Merge Consecutive Nested Scopes.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"session_id":4}

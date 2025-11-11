@@ -1,23 +1,14 @@
 ---
-author: Jane Doe
+title: 2025 04 12 Make Or Buy Erp Decision Making
 category: api
-description: An in-depth, humorous exploration of ERP decision-making, focusing on
-  employee satisfaction and cultural impact.
-last_updated: null
-published_at: '2025-04-12'
-slug: make-or-buy-erp-decision-making
-source_file: 2025-04-12-make-or-buy-erp-decision-making.md
-summary: Welcome, fellow sages of the semiconductor spreadsheet and digital design,
-  to a philosophical exploration worthy of the ages. Today, we take a whimsical plunge
-  into the hallowed halls of enterprise de...
 tags:
 - aws
 - api
 - testing
-- api
-title: 2025 04 12 Make Or Buy Erp Decision Making
+last_updated: null
+source_file: 2025-04-12-make-or-buy-erp-decision-making.md
 ---
-
+# 2025 04 12 Make Or Buy Erp Decision Making
 
 **Make or Buy? The ERP Decision-Making Drama: A Non-Capitalistic Odyssey**
 

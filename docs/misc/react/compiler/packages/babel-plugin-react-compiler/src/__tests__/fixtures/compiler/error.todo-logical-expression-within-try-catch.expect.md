@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Logical Expression Within Try Catch.Expect
 category: misc
-last_updated: null
-source_file: error.todo-logical-expression-within-try-catch.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let result;\n  try {\n   \
-  \ result = props.cond && props.foo;\n  } catch (e) {\n    console.log(e);\n  }\n\
-  \  return result;\n}"
 tags:
 - javascript
-title: Error.Todo Logical Expression Within Try Catch.Expect
+last_updated: null
+source_file: error.todo-logical-expression-within-try-catch.expect.md
 ---
+# Error.Todo Logical Expression Within Try Catch.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.todo-logical-expression-within-try-catch.ts:4:13
   6 |     console.log(e);
   7 |   }
 ```
-          
-      
+

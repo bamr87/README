@@ -1,14 +1,12 @@
 ---
+title: Usestate Unpruned Dependency.Expect
 category: misc
-last_updated: null
-source_file: useState-unpruned-dependency.expect.md
-summary: '```javascript
-
-  import {useState} from ''react''; // @enableChangeDetectionForDebugging'
 tags:
 - javascript
-title: Usestate Unpruned Dependency.Expect
+last_updated: null
+source_file: useState-unpruned-dependency.expect.md
 ---
+# Usestate Unpruned Dependency.Expect
 
 ## Input
 
@@ -106,4 +104,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,16 +1,14 @@
 ---
+title: Installation Wizard Setup Guide
 category: setup
-last_updated: null
-source_file: README.md
-summary: 'The Barodybroject installation wizard provides a comprehensive firsttime
-  setup experience for new deployments. Follow these steps to get started:'
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Installation Wizard Setup Guide
+last_updated: null
+source_file: README.md
 ---
 # Installation Wizard Setup Guide
 

@@ -1,20 +1,12 @@
 ---
+title: For Loop Let Undefined Decl.Expect
 category: misc
-last_updated: null
-source_file: for-loop-let-undefined-decl.expect.md
-summary: '```javascript
-
-  // These variables are unknown to useFoo, as they are
-
-  // defined at module scope or implicit globals
-
-  const isSelected = false;
-
-  const isCurrent = true;'
 tags:
 - javascript
-title: For Loop Let Undefined Decl.Expect
+last_updated: null
+source_file: for-loop-let-undefined-decl.expect.md
 ---
+# For Loop Let Undefined Decl.Expect
 
 ## Input
 
@@ -70,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['#CCFF03','#CCFF03','#CCFF03','#CCFF03','#CCFF03','#CCFF03']

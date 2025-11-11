@@ -1,14 +1,12 @@
 ---
+title: Call Spread Argument Set.Expect
 category: misc
-last_updated: null
-source_file: call-spread-argument-set.expect.md
-summary: '```javascript
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Call Spread Argument Set.Expect
+last_updated: null
+source_file: call-spread-argument-set.expect.md
 ---
+# Call Spread Argument Set.Expect
 
 ## Input
 
@@ -71,7 +69,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2,{"kind":"Set","value":[1,2]}]
 [2,{"kind":"Set","value":[1,2]}]

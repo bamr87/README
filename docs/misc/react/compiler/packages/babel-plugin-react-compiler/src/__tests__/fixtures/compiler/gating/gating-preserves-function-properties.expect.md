@@ -1,14 +1,12 @@
 ---
+title: Gating Preserves Function Properties.Expect
 category: misc
-last_updated: null
-source_file: gating-preserves-function-properties.expect.md
-summary: '```javascript
-
-  // @gating'
 tags:
 - javascript
-title: Gating Preserves Function Properties.Expect
+last_updated: null
+source_file: gating-preserves-function-properties.expect.md
 ---
+# Gating Preserves Function Properties.Expect
 
 ## Input
 
@@ -82,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

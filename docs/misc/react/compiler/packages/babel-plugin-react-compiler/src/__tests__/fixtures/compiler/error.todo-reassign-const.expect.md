@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Reassign Const.Expect
 category: misc
-last_updated: null
-source_file: error.todo-reassign-const.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Todo Reassign Const.Expect
+last_updated: null
+source_file: error.todo-reassign-const.expect.md
 ---
+# Error.Todo Reassign Const.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.todo-reassign-const.ts:3:20
   5 |   return (
   6 |     <Stringify
 ```
-          
-      
+

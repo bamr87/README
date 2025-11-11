@@ -1,13 +1,12 @@
 ---
+title: Ssa Throw.Expect
 category: misc
-last_updated: null
-source_file: ssa-throw.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  if (x === 1) {\n    x =\
-  \ 2;\n  }\n  throw x;\n}"
 tags:
 - javascript
-title: Ssa Throw.Expect
+last_updated: null
+source_file: ssa-throw.expect.md
 ---
+# Ssa Throw.Expect
 
 ## Input
 
@@ -42,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) undefined

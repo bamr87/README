@@ -1,14 +1,12 @@
 ---
+title: Transitivity Capture Createfrom Lambda.Expect
 category: misc
-last_updated: null
-source_file: transitivity-capture-createfrom-lambda.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  typedCapture,\n  typedCreateFrom,\n  typedMutate,\n\
-  \  ValidateMemoization,\n} from 'sharedrunti..."
 tags:
 - javascript
-title: Transitivity Capture Createfrom Lambda.Expect
+last_updated: null
+source_file: transitivity-capture-createfrom-lambda.expect.md
 ---
+# Transitivity Capture Createfrom Lambda.Expect
 
 ## Input
 
@@ -115,7 +113,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0],"output":{"a":0,"property":0}}</div>
 <div>{"inputs":[0,1],"output":{"a":0,"property":1}}</div>

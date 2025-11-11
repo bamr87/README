@@ -1,16 +1,12 @@
 ---
+title: Multi Arrow Expr Export Default Gating Test.Expect
 category: misc
-last_updated: null
-source_file: multi-arrow-expr-export-default-gating-test.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Multi Arrow Expr Export Default Gating Test.Expect
+last_updated: null
+source_file: multi-arrow-expr-export-default-gating-test.expect.md
 ---
+# Multi Arrow Expr Export Default Gating Test.Expect
 
 ## Input
 
@@ -76,6 +72,6 @@ export default isForgetEnabled_Fixtures()
     );
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

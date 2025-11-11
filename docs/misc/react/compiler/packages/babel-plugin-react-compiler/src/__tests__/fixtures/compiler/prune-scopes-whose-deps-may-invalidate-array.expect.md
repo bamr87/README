@@ -1,14 +1,12 @@
 ---
+title: Prune Scopes Whose Deps May Invalidate Array.Expect
 category: misc
-last_updated: null
-source_file: prune-scopes-whose-deps-may-invalidate-array.expect.md
-summary: '```javascript
-
-  import {useHook, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Prune Scopes Whose Deps May Invalidate Array.Expect
+last_updated: null
+source_file: prune-scopes-whose-deps-may-invalidate-array.expect.md
 ---
+# Prune Scopes Whose Deps May Invalidate Array.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[42]]

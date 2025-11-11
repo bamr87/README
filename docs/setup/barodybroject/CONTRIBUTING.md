@@ -1,17 +1,14 @@
 ---
+title: Contributing to Parody News Generator
 category: setup
-last_updated: null
-source_file: CONTRIBUTING.md
-summary: The Parody News Generator is a Django application integrated with OpenAI
-  to generate content with the help of assistants. The project aims to create a platform
-  for generating parody news articles, pro...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Contributing to Parody News Generator
+last_updated: null
+source_file: CONTRIBUTING.md
 ---
 # Contributing to Parody News Generator
 

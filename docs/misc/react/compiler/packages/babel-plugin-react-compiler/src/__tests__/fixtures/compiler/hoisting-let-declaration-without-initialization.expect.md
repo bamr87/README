@@ -1,14 +1,12 @@
 ---
+title: Hoisting Let Declaration Without Initialization.Expect
 category: misc
-last_updated: null
-source_file: hoisting-let-declaration-without-initialization.expect.md
-summary: '```javascript
-
-  import {CONSTNUMBER1, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Let Declaration Without Initialization.Expect
+last_updated: null
+source_file: hoisting-let-declaration-without-initialization.expect.md
 ---
+# Hoisting Let Declaration Without Initialization.Expect
 
 ## Input
 
@@ -69,7 +67,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 

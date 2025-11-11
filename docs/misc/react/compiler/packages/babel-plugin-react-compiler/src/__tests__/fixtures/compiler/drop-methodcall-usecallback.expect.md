@@ -1,14 +1,12 @@
 ---
+title: Drop Methodcall Usecallback.Expect
 category: misc
-last_updated: null
-source_file: drop-methodcall-usecallback.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Drop Methodcall Usecallback.Expect
+last_updated: null
+source_file: drop-methodcall-usecallback.expect.md
 ---
+# Drop Methodcall Usecallback.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

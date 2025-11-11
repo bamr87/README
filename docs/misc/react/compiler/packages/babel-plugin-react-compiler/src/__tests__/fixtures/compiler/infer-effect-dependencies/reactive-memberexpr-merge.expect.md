@@ -1,18 +1,12 @@
 ---
+title: Reactive Memberexpr Merge.Expect
 category: misc
-last_updated: null
-source_file: reactive-memberexpr-merge.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Memberexpr Merge.Expect
+last_updated: null
+source_file: reactive-memberexpr-merge.expect.md
 ---
+# Reactive Memberexpr Merge.Expect
 
 ## Input
 
@@ -59,6 +53,6 @@ function ReactiveMemberExprMerge(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

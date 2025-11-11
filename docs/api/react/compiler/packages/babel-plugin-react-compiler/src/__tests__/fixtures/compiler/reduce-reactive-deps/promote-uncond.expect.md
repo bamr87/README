@@ -1,18 +1,13 @@
 ---
+title: Promote Uncond.Expect
 category: api
-last_updated: null
-source_file: promote-uncond.expect.md
-summary: '``javascript
-
-  // When a conditional dependency props.a.b.c` has no unconditional dependency
-
-  // in its subpath or superpath, we should find the nearest unconditional access'
 tags:
 - javascript
 - api
-- api
-title: Promote Uncond.Expect
+last_updated: null
+source_file: promote-uncond.expect.md
 ---
+# Promote Uncond.Expect
 
 ## Input
 
@@ -73,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":3}

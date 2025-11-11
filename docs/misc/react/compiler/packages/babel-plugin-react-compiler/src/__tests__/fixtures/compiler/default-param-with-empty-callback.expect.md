@@ -1,12 +1,12 @@
 ---
+title: Default Param With Empty Callback.Expect
 category: misc
-last_updated: null
-source_file: default-param-with-empty-callback.expect.md
-summary: "```javascript\nfunction Component(x = () => {}) {\n  return x;\n}"
 tags:
 - javascript
-title: Default Param With Empty Callback.Expect
+last_updated: null
+source_file: default-param-with-empty-callback.expect.md
 ---
+# Default Param With Empty Callback.Expect
 
 ## Input
 
@@ -37,6 +37,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

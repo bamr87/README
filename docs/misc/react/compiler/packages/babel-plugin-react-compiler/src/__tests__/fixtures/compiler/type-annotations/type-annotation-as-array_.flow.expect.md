@@ -1,16 +1,12 @@
 ---
+title: Type Annotation As Array .Flow.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-as-array_.flow.expect.md
-summary: '```javascript
-
-  // @flow @enableUseTypeAnnotations
-
-  import {identity, makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Annotation As Array .Flow.Expect
+last_updated: null
+source_file: type-annotation-as-array_.flow.expect.md
 ---
+# Type Annotation As Array .Flow.Expect
 
 ## Input
 
@@ -66,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

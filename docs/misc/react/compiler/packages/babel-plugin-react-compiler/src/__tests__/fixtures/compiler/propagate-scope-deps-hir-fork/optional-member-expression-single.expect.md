@@ -1,20 +1,12 @@
 ---
+title: Optional Member Expression Single.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-single.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies @enablePropagateDepsInHIR
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import {useMemo} from ''react'';
-
-  ...'
 tags:
 - javascript
-title: Optional Member Expression Single.Expect
+last_updated: null
+source_file: optional-member-expression-single.expect.md
 ---
+# Optional Member Expression Single.Expect
 
 ## Input
 
@@ -98,7 +90,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[2],"output":[2]}</div>
 <div>{"inputs":[2],"output":[2]}</div>

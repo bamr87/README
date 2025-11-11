@@ -1,16 +1,12 @@
 ---
+title: Fbt Template String Same Scope.Expect
 category: misc
-last_updated: null
-source_file: fbt-template-string-same-scope.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fbt Template String Same Scope.Expect
+last_updated: null
+source_file: fbt-template-string-same-scope.expect.md
 ---
+# Fbt Template String Same Scope.Expect
 
 ## Input
 
@@ -81,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":"for 3 experiences"}</div>

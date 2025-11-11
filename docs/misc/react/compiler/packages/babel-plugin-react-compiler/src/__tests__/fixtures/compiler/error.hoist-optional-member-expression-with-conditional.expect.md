@@ -1,14 +1,12 @@
 ---
+title: Error.Hoist Optional Member Expression With Conditional.Expect
 category: misc
-last_updated: null
-source_file: error.hoist-optional-member-expression-with-conditional.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies\n\
-  import {ValidateMemoization} from 'sharedruntime';\nfunction Component(props) {\n\
-  \  const data = useMemo(() => ..."
 tags:
 - javascript
-title: Error.Hoist Optional Member Expression With Conditional.Expect
+last_updated: null
+source_file: error.hoist-optional-member-expression-with-conditional.expect.md
 ---
+# Error.Hoist Optional Member Expression With Conditional.Expect
 
 ## Input
 
@@ -64,5 +62,4 @@ error.hoist-optional-member-expression-with-conditional.ts:4:23
   13 |     <ValidateMemoization inputs={[props?.items, props.cond]} output={data} />
   14 |   );
 ```
-          
-      
+

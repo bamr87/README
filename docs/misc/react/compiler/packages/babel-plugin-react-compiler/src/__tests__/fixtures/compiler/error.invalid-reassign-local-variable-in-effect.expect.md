@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Reassign Local Variable In Effect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-local-variable-in-effect.expect.md
-summary: '```javascript
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
 - testing
-title: Error.Invalid Reassign Local Variable In Effect.Expect
+last_updated: null
+source_file: error.invalid-reassign-local-variable-in-effect.expect.md
 ---
+# Error.Invalid Reassign Local Variable In Effect.Expect
 
 ## Input
 
@@ -74,5 +72,4 @@ error.invalid-reassign-local-variable-in-effect.ts:7:4
    9 |
   10 |   const onMount = newValue => {
 ```
-          
-      
+

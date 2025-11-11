@@ -1,16 +1,12 @@
 ---
+title: Consecutive Use Memo.Expect
 category: misc
-last_updated: null
-source_file: consecutive-use-memo.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Consecutive Use Memo.Expect
+last_updated: null
+source_file: consecutive-use-memo.expect.md
 ---
+# Consecutive Use Memo.Expect
 
 ## Input
 
@@ -77,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":2},[3]]

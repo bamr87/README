@@ -1,12 +1,12 @@
 ---
+title: Loop Unused Let.Expect
 category: misc
-last_updated: null
-source_file: loop-unused-let.expect.md
-summary: "```javascript\nfunction useFoo() {\n  while (1) {\n    let foo;\n  }\n}"
 tags:
 - javascript
-title: Loop Unused Let.Expect
+last_updated: null
+source_file: loop-unused-let.expect.md
 ---
+# Loop Unused Let.Expect
 
 ## Input
 
@@ -27,4 +27,3 @@ function useFoo() {
 }
 
 ```
-      

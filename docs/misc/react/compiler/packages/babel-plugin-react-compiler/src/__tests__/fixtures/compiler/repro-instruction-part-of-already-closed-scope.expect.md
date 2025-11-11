@@ -1,16 +1,12 @@
 ---
+title: Repro Instruction Part Of Already Closed Scope.Expect
 category: misc
-last_updated: null
-source_file: repro-instruction-part-of-already-closed-scope.expect.md
-summary: '```javascript
-
-  // @enableAssumeHooksFollowRulesOfReact
-
-  import {Stringify, identity, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Instruction Part Of Already Closed Scope.Expect
+last_updated: null
+source_file: repro-instruction-part-of-already-closed-scope.expect.md
 ---
+# Repro Instruction Part Of Already Closed Scope.Expect
 
 ## Input
 
@@ -124,6 +120,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"value":{"a":0,"b":"value1","c":true}}</div><div>{"value":{"a":0,"b":"value1","c":true}}</div><div>{"value":{"a":0,"b":"value1","c":true}}</div></div>

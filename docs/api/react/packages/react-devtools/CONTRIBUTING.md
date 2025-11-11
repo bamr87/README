@@ -1,17 +1,13 @@
 ---
+title: Install project dependencies
 category: api
-last_updated: null
-source_file: CONTRIBUTING.md
-summary: Interested in contributing to React DevTools, but not sure where to start?
-  This is the place!
 tags:
 - javascript
 - api
 - testing
-- api
-title: Install project dependencies
+last_updated: null
+source_file: CONTRIBUTING.md
 ---
-
 Interested in contributing to React DevTools, but not sure where to start? This is the place!
 
 # Install project dependencies

@@ -1,14 +1,12 @@
 ---
+title: Destructuring Default At Explicit Null.Expect
 category: misc
-last_updated: null
-source_file: destructuring-default-at-explicit-null.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // destructure slot index\
-  \ has an explicit null in the input, should return null (not the default)\n  const\
-  \ [x = 42] = props.value;\n  return x;\n}"
 tags:
 - javascript
-title: Destructuring Default At Explicit Null.Expect
+last_updated: null
+source_file: destructuring-default-at-explicit-null.expect.md
 ---
+# Destructuring Default At Explicit Null.Expect
 
 ## Input
 
@@ -41,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

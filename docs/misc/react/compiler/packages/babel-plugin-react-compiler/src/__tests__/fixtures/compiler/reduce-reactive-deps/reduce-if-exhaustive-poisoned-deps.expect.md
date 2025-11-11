@@ -1,14 +1,12 @@
 ---
+title: Reduce If Exhaustive Poisoned Deps.Expect
 category: misc
-last_updated: null
-source_file: reduce-if-exhaustive-poisoned-deps.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reduce If Exhaustive Poisoned Deps.Expect
+last_updated: null
+source_file: reduce-if-exhaustive-poisoned-deps.expect.md
 ---
+# Reduce If Exhaustive Poisoned Deps.Expect
 
 ## Input
 
@@ -107,6 +105,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

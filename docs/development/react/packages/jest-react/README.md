@@ -1,13 +1,12 @@
 ---
+title: '`jest-react`'
 category: development
-last_updated: null
-source_file: README.md
-summary: Jest matchers and utilities for testing React Test Renderer.
 tags:
 - javascript
 - testing
 - development
-title: '`jest-react`'
+last_updated: null
+source_file: README.md
 ---
 # `jest-react`
 

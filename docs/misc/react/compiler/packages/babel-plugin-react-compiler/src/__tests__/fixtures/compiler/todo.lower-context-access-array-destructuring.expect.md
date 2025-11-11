@@ -1,13 +1,12 @@
 ---
+title: Todo.Lower Context Access Array Destructuring.Expect
 category: misc
-last_updated: null
-source_file: todo.lower-context-access-array-destructuring.expect.md
-summary: "```javascript\n// @lowerContextAccess\nfunction App() {\n  const [foo, bar]\
-  \ = useContext(MyContext);\n  return <Bar foo={foo} bar={bar} />;\n}"
 tags:
 - javascript
-title: Todo.Lower Context Access Array Destructuring.Expect
+last_updated: null
+source_file: todo.lower-context-access-array-destructuring.expect.md
 ---
+# Todo.Lower Context Access Array Destructuring.Expect
 
 ## Input
 
@@ -40,4 +39,3 @@ function App() {
 }
 
 ```
-      

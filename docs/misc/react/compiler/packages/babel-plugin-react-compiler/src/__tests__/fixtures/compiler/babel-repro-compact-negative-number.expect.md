@@ -1,14 +1,12 @@
 ---
+title: Babel Repro Compact Negative Number.Expect
 category: misc
-last_updated: null
-source_file: babel-repro-compact-negative-number.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Babel Repro Compact Negative Number.Expect
+last_updated: null
+source_file: babel-repro-compact-negative-number.expect.md
 ---
+# Babel Repro Compact Negative Number.Expect
 
 ## Input
 
@@ -62,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":5}</div>

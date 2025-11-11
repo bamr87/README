@@ -1,13 +1,12 @@
 ---
+title: Capturing Function Alias Computed Load Iife.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-alias-computed-load-iife.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction bar(a) {\n \
-  \ let x = [a];\n  let y = {};\n  (function () {\n    y = x[0];\n  })();"
 tags:
 - javascript
-title: Capturing Function Alias Computed Load Iife.Expect
+last_updated: null
+source_file: capturing-function-alias-computed-load-iife.expect.md
 ---
+# Capturing Function Alias Computed Load Iife.Expect
 
 ## Input
 
@@ -64,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "TodoAdd"

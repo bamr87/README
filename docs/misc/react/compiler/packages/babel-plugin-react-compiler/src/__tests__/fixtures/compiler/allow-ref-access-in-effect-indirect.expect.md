@@ -1,16 +1,12 @@
 ---
+title: Allow Ref Access In Effect Indirect.Expect
 category: misc
-last_updated: null
-source_file: allow-ref-access-in-effect-indirect.expect.md
-summary: '```javascript
-
-  // @validateRefAccessDuringRender @validateNoSetStateInRender:false
-
-  import {useCallback, useEffect, useRef, useState} from ''react'';'
 tags:
 - javascript
-title: Allow Ref Access In Effect Indirect.Expect
+last_updated: null
+source_file: allow-ref-access-in-effect-indirect.expect.md
 ---
+# Allow Ref Access In Effect Indirect.Expect
 
 ## Input
 
@@ -127,6 +123,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Ok

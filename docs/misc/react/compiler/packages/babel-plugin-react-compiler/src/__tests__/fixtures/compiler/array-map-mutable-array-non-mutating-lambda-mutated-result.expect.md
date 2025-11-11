@@ -1,14 +1,12 @@
 ---
+title: Array Map Mutable Array Non Mutating Lambda Mutated Result.Expect
 category: misc
-last_updated: null
-source_file: array-map-mutable-array-non-mutating-lambda-mutated-result.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [{}];\n  const y\
-  \ = x.map(item => {\n    return item;\n  });\n  y[0].flag = true;\n  return [x,\
-  \ y];\n}"
 tags:
 - javascript
-title: Array Map Mutable Array Non Mutating Lambda Mutated Result.Expect
+last_updated: null
+source_file: array-map-mutable-array-non-mutating-lambda-mutated-result.expect.md
 ---
+# Array Map Mutable Array Non Mutating Lambda Mutated Result.Expect
 
 ## Input
 
@@ -59,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[{"flag":true}],["[[ cyclic ref *2 ]]"]]

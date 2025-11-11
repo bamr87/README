@@ -1,14 +1,12 @@
 ---
+title: Hoisting Nested Block Statements.Expect
 category: misc
-last_updated: null
-source_file: hoisting-nested-block-statements.expect.md
-summary: '```javascript
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Nested Block Statements.Expect
+last_updated: null
+source_file: hoisting-nested-block-statements.expect.md
 ---
+# Hoisting Nested Block Statements.Expect
 
 ## Input
 
@@ -51,7 +49,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [2]

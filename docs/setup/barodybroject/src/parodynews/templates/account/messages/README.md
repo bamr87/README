@@ -1,16 +1,14 @@
 ---
+title: Account Messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: No summary available
 tags:
 - python
 - javascript
 - docker
 - setup
-title: Account Messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Account Messages Directory
 
 ## Purpose
@@ -63,11 +61,11 @@ messages.error(request, 'Cannot delete primary email address.')
 - **Localization**: Supports internationalization through Django's i18n framework
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - `parodynews/views.py` - Account view operations
   - `allauth` authentication workflows
   - Django message framework
-- **Outgoing**: 
+- **Outgoing**:
   - Base templates for message display
   - Frontend JavaScript for message handling
   - User notification systems

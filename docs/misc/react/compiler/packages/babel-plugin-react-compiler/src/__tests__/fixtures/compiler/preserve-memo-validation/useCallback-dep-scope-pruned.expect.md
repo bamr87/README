@@ -1,18 +1,12 @@
 ---
+title: Usecallback Dep Scope Pruned.Expect
 category: misc
-last_updated: null
-source_file: useCallback-dep-scope-pruned.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {identity, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Dep Scope Pruned.Expect
+last_updated: null
+source_file: useCallback-dep-scope-pruned.expect.md
 ---
+# Usecallback Dep Scope Pruned.Expect
 
 ## Input
 
@@ -79,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

@@ -1,13 +1,12 @@
 ---
+title: Error.Todo Hoisted Function In Unreachable Code.Expect
 category: misc
-last_updated: null
-source_file: error.todo-hoisted-function-in-unreachable-code.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component() {\n \
-  \ return <Foo />;"
 tags:
 - javascript
-title: Error.Todo Hoisted Function In Unreachable Code.Expect
+last_updated: null
+source_file: error.todo-hoisted-function-in-unreachable-code.expect.md
 ---
+# Error.Todo Hoisted Function In Unreachable Code.Expect
 
 ## Input
 
@@ -38,5 +37,4 @@ error.todo-hoisted-function-in-unreachable-code.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

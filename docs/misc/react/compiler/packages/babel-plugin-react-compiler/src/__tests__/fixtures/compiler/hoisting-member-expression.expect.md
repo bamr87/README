@@ -1,14 +1,12 @@
 ---
+title: Hoisting Member Expression.Expect
 category: misc
-last_updated: null
-source_file: hoisting-member-expression.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Member Expression.Expect
+last_updated: null
+source_file: hoisting-member-expression.expect.md
 ---
+# Hoisting Member Expression.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"onClick":"[[ function params=1 ]]"}</div>

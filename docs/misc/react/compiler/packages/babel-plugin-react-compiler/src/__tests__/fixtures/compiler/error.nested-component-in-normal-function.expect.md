@@ -1,14 +1,12 @@
 ---
+title: Error.Nested Component In Normal Function.Expect
 category: misc
-last_updated: null
-source_file: error.nested-component-in-normal-function.expect.md
-summary: "```javascript\n// @validateNoDynamicallyCreatedComponentsOrHooks\nexport\
-  \ function getInput(a) {\n  const Wrapper = () => {\n    const handleChange = ()\
-  \ => {\n      a.onChange();\n    };"
 tags:
 - javascript
-title: Error.Nested Component In Normal Function.Expect
+last_updated: null
+source_file: error.nested-component-in-normal-function.expect.md
 ---
+# Error.Nested Component In Normal Function.Expect
 
 ## Input
 
@@ -61,5 +59,4 @@ error.nested-component-in-normal-function.ts:3:8
   5 |       a.onChange();
   6 |     };
 ```
-          
-      
+

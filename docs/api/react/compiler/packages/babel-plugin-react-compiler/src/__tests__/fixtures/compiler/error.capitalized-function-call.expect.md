@@ -1,15 +1,13 @@
 ---
+title: Error.Capitalized Function Call.Expect
 category: api
-last_updated: null
-source_file: error.capitalized-function-call.expect.md
-summary: "```javascript\n// @validateNoCapitalizedCalls\nfunction Component() {\n\
-  \  const x = SomeFunc();"
 tags:
 - javascript
 - api
-- api
-title: Error.Capitalized Function Call.Expect
+last_updated: null
+source_file: error.capitalized-function-call.expect.md
 ---
+# Error.Capitalized Function Call.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.capitalized-function-call.ts:3:12
   5 |   return x;
   6 | }
 ```
-          
-      
+

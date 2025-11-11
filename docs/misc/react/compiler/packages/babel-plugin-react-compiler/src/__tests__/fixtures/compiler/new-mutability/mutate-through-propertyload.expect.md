@@ -1,14 +1,12 @@
 ---
+title: Mutate Through Propertyload.Expect
 category: misc
-last_updated: null
-source_file: mutate-through-propertyload.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
-  \ b}) {\n  const x = {};\n  const y = {x};\n  const z = y.x;\n  z.true = false;\n\
-  \  return <div>{z}</div>;\n}"
 tags:
 - javascript
-title: Mutate Through Propertyload.Expect
+last_updated: null
+source_file: mutate-through-propertyload.expect.md
 ---
+# Mutate Through Propertyload.Expect
 
 ## Input
 
@@ -45,6 +43,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

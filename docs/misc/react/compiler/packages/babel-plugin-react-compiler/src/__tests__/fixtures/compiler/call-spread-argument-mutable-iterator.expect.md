@@ -1,14 +1,12 @@
 ---
+title: Call Spread Argument Mutable Iterator.Expect
 category: misc
-last_updated: null
-source_file: call-spread-argument-mutable-iterator.expect.md
-summary: '```javascript
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Call Spread Argument Mutable Iterator.Expect
+last_updated: null
+source_file: call-spread-argument-mutable-iterator.expect.md
 ---
+# Call Spread Argument Mutable Iterator.Expect
 
 ## Input
 
@@ -47,7 +45,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 2

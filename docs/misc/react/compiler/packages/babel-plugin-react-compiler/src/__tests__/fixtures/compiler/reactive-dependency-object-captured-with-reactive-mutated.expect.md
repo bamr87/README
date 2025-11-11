@@ -1,14 +1,12 @@
 ---
+title: Reactive Dependency Object Captured With Reactive Mutated.Expect
 category: misc
-last_updated: null
-source_file: reactive-dependency-object-captured-with-reactive-mutated.expect.md
-summary: '```javascript
-
-  const {mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Reactive Dependency Object Captured With Reactive Mutated.Expect
+last_updated: null
+source_file: reactive-dependency-object-captured-with-reactive-mutated.expect.md
 ---
+# Reactive Dependency Object Captured With Reactive Mutated.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{}]

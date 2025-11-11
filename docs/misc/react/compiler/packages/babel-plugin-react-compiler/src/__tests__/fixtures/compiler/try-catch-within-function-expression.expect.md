@@ -1,14 +1,12 @@
 ---
+title: Try Catch Within Function Expression.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-function-expression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const callback = () => {\n\
-  \    try {\n      return [];\n    } catch (e) {\n      return;\n    }\n  };\n  return\
-  \ callback();\n}"
 tags:
 - javascript
-title: Try Catch Within Function Expression.Expect
+last_updated: null
+source_file: try-catch-within-function-expression.expect.md
 ---
+# Try Catch Within Function Expression.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid.Invalid Rules Of Hooks D842D36Db450.Expect
 category: misc
-last_updated: null
-source_file: error.invalid.invalid-rules-of-hooks-d842d36db450.expect.md
-summary: "```javascript\n// Invalid because it's dangerous and might not warn otherwise.\n\
-  // This must be invalid.\nfunction createComponent() {\n  return function ComponentWithConditionalHook()\
-  \ {\n    if (cond) {\n ..."
 tags:
 - javascript
-title: Error.Invalid.Invalid Rules Of Hooks D842D36Db450.Expect
+last_updated: null
+source_file: error.invalid.invalid-rules-of-hooks-d842d36db450.expect.md
 ---
+# Error.Invalid.Invalid Rules Of Hooks D842D36Db450.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid.invalid-rules-of-hooks-d842d36db450.ts:6:6
   8 |   };
   9 | }
 ```
-          
-      
+

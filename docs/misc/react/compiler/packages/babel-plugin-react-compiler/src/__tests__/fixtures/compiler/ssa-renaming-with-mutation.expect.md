@@ -1,14 +1,12 @@
 ---
+title: Ssa Renaming With Mutation.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming-with-mutation.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Ssa Renaming With Mutation.Expect
+last_updated: null
+source_file: ssa-renaming-with-mutation.expect.md
 ---
+# Ssa Renaming With Mutation.Expect
 
 ## Input
 
@@ -78,7 +76,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo","joe"]
 ["foo","joe"]

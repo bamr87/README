@@ -1,14 +1,12 @@
 ---
+title: Hoisting Functionexpr Conditional Dep.Expect
 category: misc
-last_updated: null
-source_file: hoisting-functionexpr-conditional-dep.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Functionexpr Conditional Dep.Expect
+last_updated: null
+source_file: hoisting-functionexpr-conditional-dep.expect.md
 ---
+# Hoisting Functionexpr Conditional Dep.Expect
 
 ## Input
 
@@ -94,6 +92,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"shouldInvokeFns":true,"callback":{"kind":"Function","result":null}}</div>

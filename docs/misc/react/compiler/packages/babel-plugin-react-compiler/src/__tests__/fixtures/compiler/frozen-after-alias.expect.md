@@ -1,14 +1,12 @@
 ---
+title: Frozen After Alias.Expect
 category: misc
-last_updated: null
-source_file: frozen-after-alias.expect.md
-summary: "```javascript\nfunction Component() {\n  const a = [];\n  const b = a;\n\
-  \  useFreeze(a);\n  foo(b); // should be readonly, value is guaranteed frozen via\
-  \ alias\n  return b;\n}"
 tags:
 - javascript
-title: Frozen After Alias.Expect
+last_updated: null
+source_file: frozen-after-alias.expect.md
 ---
+# Frozen After Alias.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ function useFreeze() {}
 function foo(x) {}
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Usecontext Read Context In Callback.Expect
 category: misc
-last_updated: null
-source_file: useContext-read-context-in-callback.expect.md
-summary: '```javascript
-
-  import {createContext, useContext} from ''react'';'
 tags:
 - javascript
-title: Usecontext Read Context In Callback.Expect
+last_updated: null
+source_file: useContext-read-context-in-callback.expect.md
 ---
+# Usecontext Read Context In Callback.Expect
 
 ## Input
 
@@ -73,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>Hello</div></div>

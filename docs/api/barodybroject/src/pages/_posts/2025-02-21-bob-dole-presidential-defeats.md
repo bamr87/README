@@ -1,21 +1,12 @@
 ---
-author: John Smith
+title: 2025 02 21 Bob Dole Presidential Defeats
 category: api
-description: Exploring Bob Dole's presidential campaign history and his record of
-  losses in elections.
-last_updated: null
-published_at: '2025-02-21'
-slug: bob-dole-presidential-defeats
-source_file: 2025-02-21-bob-dole-presidential-defeats.md
-summary: Bob Dole, a prominent political figure and veteran statesman, is perhaps
-  best known for his long, varied career in American politics and, somewhat ironically,
-  for his record of consecutive losses in p...
 tags:
 - api
-- api
-title: 2025 02 21 Bob Dole Presidential Defeats
+last_updated: null
+source_file: 2025-02-21-bob-dole-presidential-defeats.md
 ---
-
+# 2025 02 21 Bob Dole Presidential Defeats
 
 ### Bob Dole: A Complex Figure in American Political History
 

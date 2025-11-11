@@ -1,14 +1,12 @@
 ---
+title: Holey Array Expr.Expect
 category: misc
-last_updated: null
-source_file: holey-array-expr.expect.md
-summary: '```javascript
-
-  import {CONSTSTRING0} from ''sharedruntime'';'
 tags:
 - javascript
-title: Holey Array Expr.Expect
+last_updated: null
+source_file: holey-array-expr.expect.md
 ---
+# Holey Array Expr.Expect
 
 ## Input
 
@@ -55,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,"global string 0",{"a":1,"b":2}]

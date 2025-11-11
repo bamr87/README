@@ -1,14 +1,12 @@
 ---
+title: For Empty Update With Continue.Expect
 category: misc
-last_updated: null
-source_file: for-empty-update-with-continue.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  for (let i =\
-  \ 0; i < props.count; ) {\n    x += i;\n    i += 1;\n    continue;\n  }\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: For Empty Update With Continue.Expect
+last_updated: null
+source_file: for-empty-update-with-continue.expect.md
 ---
+# For Empty Update With Continue.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

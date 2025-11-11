@@ -1,13 +1,13 @@
 ---
+title: Error.Invalid Destructure To Local Global Variables.Expect
 category: api
-last_updated: null
-source_file: error.invalid-destructure-to-local-global-variables.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let a;\n  [a, b] = props.value;"
 tags:
 - javascript
 - api
-title: Error.Invalid Destructure To Local Global Variables.Expect
+last_updated: null
+source_file: error.invalid-destructure-to-local-global-variables.expect.md
 ---
+# Error.Invalid Destructure To Local Global Variables.Expect
 
 ## Input
 
@@ -40,5 +40,4 @@ error.invalid-destructure-to-local-global-variables.ts:3:6
   5 |   return [a, b];
   6 | }
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Type Cast Expression.Flow.Expect
 category: misc
-last_updated: null
-source_file: type-cast-expression.flow.expect.md
-summary: "```javascript\n// @flow\ntype Foo = {bar: string};\nfunction Component(props)\
-  \ {\n  const x = {bar: props.bar};\n  const y = (x: Foo);\n  y.bar = 'hello';\n\
-  \  const z = (y: Foo);\n  return z;\n}\nexport const FIX..."
 tags:
 - javascript
-title: Type Cast Expression.Flow.Expect
+last_updated: null
+source_file: type-cast-expression.flow.expect.md
 ---
+# Type Cast Expression.Flow.Expect
 
 ## Input
 
@@ -58,4 +56,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

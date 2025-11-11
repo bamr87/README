@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Outside Effect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-outside-effect.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire, useCallback} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Outside Effect.Expect
+last_updated: null
+source_file: error.invalid-outside-effect.expect.md
 ---
+# Error.Invalid Outside Effect.Expect
 
 ## Input
 
@@ -65,5 +61,4 @@ error.invalid-outside-effect.ts:11:4
   13 |
   14 |   return null;
 ```
-          
-      
+

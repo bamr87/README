@@ -1,14 +1,12 @@
 ---
+title: Error.False Positive Usememo Dropped Infer Always Invalidating.Expect
 category: misc
-last_updated: null
-source_file: error.false-positive-useMemo-dropped-infer-always-invalidating.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.False Positive Usememo Dropped Infer Always Invalidating.Expect
+last_updated: null
+source_file: error.false-positive-useMemo-dropped-infer-always-invalidating.expect.md
 ---
+# Error.False Positive Usememo Dropped Infer Always Invalidating.Expect
 
 ## Input
 
@@ -56,5 +54,4 @@ error.false-positive-useMemo-dropped-infer-always-invalidating.ts:15:9
   17 |
   18 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Ternary With Hook Values.Expect
 category: api
-last_updated: null
-source_file: error.invalid-ternary-with-hook-values.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = props.cond ? useA\
-  \ : useB;\n  return x();\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Ternary With Hook Values.Expect
+last_updated: null
+source_file: error.invalid-ternary-with-hook-values.expect.md
 ---
+# Error.Invalid Ternary With Hook Values.Expect
 
 ## Input
 
@@ -66,5 +65,4 @@ error.invalid-ternary-with-hook-values.ts:3:9
   4 | }
   5 |
 ```
-          
-      
+

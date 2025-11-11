@@ -1,14 +1,12 @@
 ---
+title: Ssa Call Jsx.Expect
 category: misc
-last_updated: null
-source_file: ssa-call-jsx.expect.md
-summary: '```javascript
-
-  function foo() {}'
 tags:
 - javascript
-title: Ssa Call Jsx.Expect
+last_updated: null
+source_file: ssa-call-jsx.expect.md
 ---
+# Ssa Call Jsx.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ function Component(props) {
 }
 
 ```
-      

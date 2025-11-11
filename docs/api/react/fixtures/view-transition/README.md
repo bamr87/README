@@ -1,13 +1,12 @@
 ---
+title: View Transition
 category: api
-last_updated: null
-source_file: README.md
-summary: A test case for View Transitions.
 tags:
 - javascript
 - testing
 - api
-title: View Transition
+last_updated: null
+source_file: README.md
 ---
 # View Transition
 

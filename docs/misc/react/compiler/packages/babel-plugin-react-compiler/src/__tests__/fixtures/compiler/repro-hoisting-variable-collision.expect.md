@@ -1,13 +1,12 @@
 ---
+title: Repro Hoisting Variable Collision.Expect
 category: misc
-last_updated: null
-source_file: repro-hoisting-variable-collision.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = props.items.map(x\
-  \ => x);\n  const x = 42;\n  return [x, items];\n}"
 tags:
 - javascript
-title: Repro Hoisting Variable Collision.Expect
+last_updated: null
+source_file: repro-hoisting-variable-collision.expect.md
 ---
+# Repro Hoisting Variable Collision.Expect
 
 ## Input
 
@@ -60,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,[0,42,null,null,{"object":true}]]

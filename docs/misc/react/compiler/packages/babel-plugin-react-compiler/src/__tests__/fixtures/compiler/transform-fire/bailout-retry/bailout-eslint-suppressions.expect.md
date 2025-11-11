@@ -1,16 +1,12 @@
 ---
+title: Bailout Eslint Suppressions.Expect
 category: misc
-last_updated: null
-source_file: bailout-eslint-suppressions.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Bailout Eslint Suppressions.Expect
+last_updated: null
+source_file: bailout-eslint-suppressions.expect.md
 ---
+# Bailout Eslint Suppressions.Expect
 
 ## Input
 
@@ -63,6 +59,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

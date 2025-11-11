@@ -1,15 +1,13 @@
 ---
+title: Error.Assign Global In Jsx Children.Expect
 category: api
-last_updated: null
-source_file: error.assign-global-in-jsx-children.expect.md
-summary: "```javascript\nfunction Component() {\n  const foo = () => {\n    someGlobal\
-  \ = true;\n  };\n  // Children are generally access/called during render, so\n \
-  \ // modifying a global in a children function is alm..."
 tags:
 - javascript
 - api
-title: Error.Assign Global In Jsx Children.Expect
+last_updated: null
+source_file: error.assign-global-in-jsx-children.expect.md
 ---
+# Error.Assign Global In Jsx Children.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.assign-global-in-jsx-children.ts:3:4
   5 |   // Children are generally access/called during render, so
   6 |   // modifying a global in a children function is almost
 ```
-          
-      
+

@@ -1,15 +1,13 @@
 ---
+title: Error.Ref Optional.Expect
 category: api
-last_updated: null
-source_file: error.ref-optional.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Optional.Expect
+last_updated: null
+source_file: error.ref-optional.expect.md
 ---
+# Error.Ref Optional.Expect
 
 ## Input
 
@@ -47,5 +45,4 @@ error.ref-optional.ts:5:9
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

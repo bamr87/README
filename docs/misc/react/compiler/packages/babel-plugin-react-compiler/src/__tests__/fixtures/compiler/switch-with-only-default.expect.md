@@ -1,14 +1,12 @@
 ---
+title: Switch With Only Default.Expect
 category: misc
-last_updated: null
-source_file: switch-with-only-default.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Switch With Only Default.Expect
+last_updated: null
+source_file: switch-with-only-default.expect.md
 ---
+# Switch With Only Default.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"a":1,"b":true,"c":"sathya"}</div>

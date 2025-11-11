@@ -1,18 +1,12 @@
 ---
+title: Usecallback In Other Reactive Block.Expect
 category: misc
-last_updated: null
-source_file: useCallback-in-other-reactive-block.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useState} from ''react'';
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback In Other Reactive Block.Expect
+last_updated: null
+source_file: useCallback-in-other-reactive-block.expect.md
 ---
+# Usecallback In Other Reactive Block.Expect
 
 ## Input
 
@@ -86,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]",["other"]]

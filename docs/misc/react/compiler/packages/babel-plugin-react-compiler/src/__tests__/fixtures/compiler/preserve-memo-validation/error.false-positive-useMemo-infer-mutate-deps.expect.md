@@ -1,18 +1,12 @@
 ---
+title: Error.False Positive Usememo Infer Mutate Deps.Expect
 category: misc
-last_updated: null
-source_file: error.false-positive-useMemo-infer-mutate-deps.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.False Positive Usememo Infer Mutate Deps.Expect
+last_updated: null
+source_file: error.false-positive-useMemo-infer-mutate-deps.expect.md
 ---
+# Error.False Positive Usememo Infer Mutate Deps.Expect
 
 ## Input
 
@@ -59,5 +53,4 @@ error.false-positive-useMemo-infer-mutate-deps.ts:14:6
   16 |
   17 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

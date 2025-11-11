@@ -1,14 +1,12 @@
 ---
+title: Escape Analysis Not Switch Case.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-not-switch-case.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = [props.a];\n  let\
-  \ x = props.b;\n  switch (props.c) {\n    case a: {\n      x = props.d;\n    }\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Escape Analysis Not Switch Case.Expect
+last_updated: null
+source_file: escape-analysis-not-switch-case.expect.md
 ---
+# Escape Analysis Not Switch Case.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

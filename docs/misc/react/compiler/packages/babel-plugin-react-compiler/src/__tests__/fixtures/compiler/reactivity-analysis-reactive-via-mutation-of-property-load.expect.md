@@ -1,13 +1,12 @@
 ---
+title: Reactivity Analysis Reactive Via Mutation Of Property Load.Expect
 category: misc
-last_updated: null
-source_file: reactivity-analysis-reactive-via-mutation-of-property-load.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = bar();\n  mutate(items.a,\
-  \ props.a);"
 tags:
 - javascript
-title: Reactivity Analysis Reactive Via Mutation Of Property Load.Expect
+last_updated: null
+source_file: reactivity-analysis-reactive-via-mutation-of-property-load.expect.md
 ---
+# Reactivity Analysis Reactive Via Mutation Of Property Load.Expect
 
 ## Input
 
@@ -62,4 +61,3 @@ function Component(props) {
 }
 
 ```
-      

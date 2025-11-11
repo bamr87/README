@@ -1,16 +1,13 @@
 ---
+title: Error.Invalid Derived Computation In Effect.Expect
 category: api
-last_updated: null
-source_file: error.invalid-derived-computation-in-effect.expect.md
-summary: "```javascript\n// @validateNoDerivedComputationsInEffects\nfunction BadExample()\
-  \ {\n  const [firstName, setFirstName] = useState('Taylor');\n  const [lastName,\
-  \ setLastName] = useState('Swift');"
 tags:
 - javascript
 - api
-- api
-title: Error.Invalid Derived Computation In Effect.Expect
+last_updated: null
+source_file: error.invalid-derived-computation-in-effect.expect.md
 ---
+# Error.Invalid Derived Computation In Effect.Expect
 
 ## Input
 
@@ -48,5 +45,4 @@ error.invalid-derived-computation-in-effect.ts:9:4
   11 |
   12 |   return <div>{fullName}</div>;
 ```
-          
-      
+

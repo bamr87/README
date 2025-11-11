@@ -1,16 +1,12 @@
 ---
+title: Early Return Within Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: early-return-within-reactive-scope.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Early Return Within Reactive Scope.Expect
+last_updated: null
+source_file: early-return-within-reactive-scope.expect.md
 ---
+# Early Return Within Reactive Scope.Expect
 
 ## Input
 
@@ -116,7 +112,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]
 [42]

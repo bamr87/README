@@ -1,18 +1,12 @@
 ---
+title: Usememo Maybe Modified Later Preserve Memoization Guarantees.Expect
 category: misc
-last_updated: null
-source_file: useMemo-maybe-modified-later-preserve-memoization-guarantees.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Maybe Modified Later Preserve Memoization Guarantees.Expect
+last_updated: null
+source_file: useMemo-maybe-modified-later-preserve-memoization-guarantees.expect.md
 ---
+# Usememo Maybe Modified Later Preserve Memoization Guarantees.Expect
 
 ## Input
 
@@ -61,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true}

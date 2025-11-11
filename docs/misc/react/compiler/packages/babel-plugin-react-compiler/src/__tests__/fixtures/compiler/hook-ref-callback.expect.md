@@ -1,14 +1,12 @@
 ---
+title: Hook Ref Callback.Expect
 category: misc
-last_updated: null
-source_file: hook-ref-callback.expect.md
-summary: '```javascript
-
-  import {useEffect, useRef} from ''react'';'
 tags:
 - javascript
-title: Hook Ref Callback.Expect
+last_updated: null
+source_file: hook-ref-callback.expect.md
 ---
+# Hook Ref Callback.Expect
 
 ## Input
 
@@ -60,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

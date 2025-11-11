@@ -1,14 +1,12 @@
 ---
+title: Destructuring Same Property Identifier Names.Expect
 category: misc
-last_updated: null
-source_file: destructuring-same-property-identifier-names.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Destructuring Same Property Identifier Names.Expect
+last_updated: null
+source_file: destructuring-same-property-identifier-names.expect.md
 ---
+# Destructuring Same Property Identifier Names.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2]

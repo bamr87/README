@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks Ea7C2Fb545A9.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-ea7c2fb545a9.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks Ea7C2Fb545A9.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-ea7c2fb545a9.expect.md
 ---
+# Error.Invalid Rules Of Hooks Ea7C2Fb545A9.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.invalid-rules-of-hooks-ea7c2fb545a9.ts:7:4
    9 | }
   10 |
 ```
-          
-      
+

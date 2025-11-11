@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid.Invalid Rules Of Hooks 0A1Dbff27Ba0.Expect
 category: misc
-last_updated: null
-source_file: error.invalid.invalid-rules-of-hooks-0a1dbff27ba0.expect.md
-summary: "```javascript\n// Invalid because it's dangerous and might not warn otherwise.\n\
-  // This must be invalid.\nfunction createHook() {\n  return function useHookWithConditionalHook()\
-  \ {\n    if (cond) {\n      us..."
 tags:
 - javascript
-title: Error.Invalid.Invalid Rules Of Hooks 0A1Dbff27Ba0.Expect
+last_updated: null
+source_file: error.invalid.invalid-rules-of-hooks-0a1dbff27ba0.expect.md
 ---
+# Error.Invalid.Invalid Rules Of Hooks 0A1Dbff27Ba0.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid.invalid-rules-of-hooks-0a1dbff27ba0.ts:6:6
   8 |   };
   9 | }
 ```
-          
-      
+

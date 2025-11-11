@@ -1,14 +1,12 @@
 ---
+title: For In Statement Continue.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement-continue.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  const object = {...props.value};\n\
-  \  for (const y in object) {\n    if (y === 'continue') {\n      continue;\n   \
-  \ }\n    x = object[y];\n  }\n  return x;\n}"
 tags:
 - javascript
-title: For In Statement Continue.Expect
+last_updated: null
+source_file: for-in-statement-continue.expect.md
 ---
+# For In Statement Continue.Expect
 
 ## Input
 
@@ -84,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "hello!"
 "hello!"

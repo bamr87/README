@@ -1,14 +1,12 @@
 ---
+title: Array Filter.Expect
 category: misc
-last_updated: null
-source_file: array-filter.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({value})\
-  \ {\n  const arr = [{value: 'foo'}, {value: 'bar'}, {value}];\n  useIdentity(null);\n\
-  \  const derived = arr.filter(Boolean);\n  re..."
 tags:
 - javascript
-title: Array Filter.Expect
+last_updated: null
+source_file: array-filter.expect.md
 ---
+# Array Filter.Expect
 
 ## Input
 
@@ -99,6 +97,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

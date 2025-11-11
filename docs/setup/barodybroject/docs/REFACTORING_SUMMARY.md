@@ -1,27 +1,18 @@
 ---
+title: Documentation Refactoring Summary
 category: setup
-last_updated: null
-source_file: REFACTORING_SUMMARY.md
-summary: '``
-
-  docs/
-
-  ├── README.md                                     Main documentation overview
-
-  ├── features/                                     Feature documentation
-
-  │   ├── README.md                        ...'
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: Documentation Refactoring Summary
+last_updated: null
+source_file: REFACTORING_SUMMARY.md
 ---
 # Documentation Refactoring Summary
 
-**Date**: October 28, 2025  
+**Date**: October 28, 2025
 **Action**: Moved ecosystem integration content from `.github/instructions/` to `docs/` section
 
 ## 🔄 Content Migration Summary
@@ -52,7 +43,7 @@ title: Documentation Refactoring Summary
 
 ### 3. **New Configuration Documentation** → **docs/configuration/ecosystem-integration-config.md**
 - **Purpose**: Centralized configuration settings for ecosystem integration
-- **Content**: 
+- **Content**:
   - Django settings integration
   - Environment variable configuration
   - Container and Docker configuration

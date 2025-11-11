@@ -1,14 +1,12 @@
 ---
+title: Use No Forget With Eslint Suppression.Expect
 category: misc
-last_updated: null
-source_file: use-no-forget-with-eslint-suppression.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Use No Forget With Eslint Suppression.Expect
+last_updated: null
+source_file: use-no-forget-with-eslint-suppression.expect.md
 ---
+# Use No Forget With Eslint Suppression.Expect
 
 ## Input
 
@@ -49,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button></button>

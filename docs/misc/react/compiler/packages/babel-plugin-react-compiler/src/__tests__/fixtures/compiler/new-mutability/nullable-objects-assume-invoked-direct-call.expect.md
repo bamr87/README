@@ -1,18 +1,12 @@
 ---
+title: Nullable Objects Assume Invoked Direct Call.Expect
 category: misc
-last_updated: null
-source_file: nullable-objects-assume-invoked-direct-call.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {useState} from ''react'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nullable Objects Assume Invoked Direct Call.Expect
+last_updated: null
+source_file: nullable-objects-assume-invoked-direct-call.expect.md
 ---
+# Nullable Objects Assume Invoked Direct Call.Expect
 
 ## Input
 
@@ -84,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]"]
 ["[[ function params=0 ]]"]

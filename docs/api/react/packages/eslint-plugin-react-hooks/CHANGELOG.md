@@ -1,17 +1,17 @@
 ---
+title: Changelog
 category: api
-last_updated: null
-source_file: CHANGELOG.md
-summary: Accidentally released. See 6.1.0 for the actual changes.
 tags:
 - javascript
 - api
-- api
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
+# Changelog
+
 ## 6.1.0
 
-**Note:** Version 6.0.0 was mistakenly released and immediately deprecated and untagged on npm. This is the first official 6.x major release and includes breaking changes. 
+**Note:** Version 6.0.0 was mistakenly released and immediately deprecated and untagged on npm. This is the first official 6.x major release and includes breaking changes.
 
 - **Breaking:** Require Node.js 18 or newer. ([@michaelfaith](https://github.com/michaelfaith) in [#32458](https://github.com/facebook/react/pull/32458))
 - **Breaking:** Flat config is now the default `recommended` preset. Legacy config moved to `recommended-legacy`. ([@michaelfaith](https://github.com/michaelfaith) in [#32457](https://github.com/facebook/react/pull/32457))

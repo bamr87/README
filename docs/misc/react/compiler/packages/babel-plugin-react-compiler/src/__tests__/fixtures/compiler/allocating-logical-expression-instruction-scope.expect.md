@@ -1,14 +1,12 @@
 ---
+title: Allocating Logical Expression Instruction Scope.Expect
 category: misc
-last_updated: null
-source_file: allocating-logical-expression-instruction-scope.expect.md
-summary: "``javascript\n/\n  This is a weird case as data has type BuiltInMixedReadonly.\n\
-  \  The only scoped value we currently infer in this program is the\n  PropertyLoad\
-  \ data?.toString`.\n /\nimport {useFragment} f..."
 tags:
 - javascript
-title: Allocating Logical Expression Instruction Scope.Expect
+last_updated: null
+source_file: allocating-logical-expression-instruction-scope.expect.md
 ---
+# Allocating Logical Expression Instruction Scope.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[object Object]"]

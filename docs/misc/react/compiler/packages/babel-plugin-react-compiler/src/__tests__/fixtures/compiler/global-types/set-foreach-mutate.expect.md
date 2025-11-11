@@ -1,14 +1,12 @@
 ---
+title: Set Foreach Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-foreach-mutate.expect.md
-summary: '```javascript
-
-  import {mutateAndReturn, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Foreach Mutate.Expect
+last_updated: null
+source_file: set-foreach-mutate.expect.md
 ---
+# Set Foreach Mutate.Expect
 
 ## Input
 
@@ -60,7 +58,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: derived is not iterable ]]
 [[ (exception in render) TypeError: derived is not iterable ]]

@@ -1,22 +1,14 @@
 ---
+title: layouts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Example template extending base layout >
-
-  {% extends "allauth/layouts/base.html" %}
-
-  {% load i18n %}'
 tags:
 - python
 - javascript
 - docker
 - setup
-title: layouts Directory
+last_updated: null
+source_file: README.md
 ---
-
 # layouts Directory
 
 ## Purpose

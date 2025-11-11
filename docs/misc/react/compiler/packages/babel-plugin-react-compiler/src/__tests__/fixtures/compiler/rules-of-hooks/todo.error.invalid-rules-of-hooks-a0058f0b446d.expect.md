@@ -1,16 +1,12 @@
 ---
+title: Todo.Error.Invalid Rules Of Hooks A0058F0B446D.Expect
 category: misc
-last_updated: null
-source_file: todo.error.invalid-rules-of-hooks-a0058f0b446d.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Error.Invalid Rules Of Hooks A0058F0B446D.Expect
+last_updated: null
+source_file: todo.error.invalid-rules-of-hooks-a0058f0b446d.expect.md
 ---
+# Todo.Error.Invalid Rules Of Hooks A0058F0B446D.Expect
 
 ## Input
 
@@ -45,5 +41,4 @@ todo.error.invalid-rules-of-hooks-a0058f0b446d.ts:8:4
   10 | }
   11 |
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Repro Undefined Expression Of Jsxexpressioncontainer.Expect
 category: misc
-last_updated: null
-source_file: repro-undefined-expression-of-jsxexpressioncontainer.expect.md
-summary: '```javascript
-
-  import {StaticText1, Stringify, Text} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Undefined Expression Of Jsxexpressioncontainer.Expect
+last_updated: null
+source_file: repro-undefined-expression-of-jsxexpressioncontainer.expect.md
 ---
+# Repro Undefined Expression Of Jsxexpressioncontainer.Expect
 
 ## Input
 
@@ -106,6 +104,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>StaticText1<div>{"type":"submit","children":["Submit!"],"style":{"left":true}}</div><div>{"type":"button","children":["Reset"],"style":{"right":true}}</div></div>

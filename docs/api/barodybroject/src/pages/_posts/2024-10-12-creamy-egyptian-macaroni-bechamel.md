@@ -1,21 +1,12 @@
 ---
-author: Culinary Explorer
+title: 2024 10 12 Creamy Egyptian Macaroni Bechamel
 category: api
-description: Discover the layers of flavor in this Egyptian classic pasta dish with
-  bechamel sauce and spiced ground beef.
-last_updated: null
-published_at: '2024-10-12'
-slug: creamy-egyptian-macaroni-bechamel
-source_file: 2024-10-12-creamy-egyptian-macaroni-bechamel.md
-summary: Egyptian Macaroni Bechamel is a comforting and creamy baked pasta dish layered
-  with ground beef and bechamel sauce. It’s similar to Greek pastitsio or Italian
-  lasagna and is a favorite in Egyptian hou...
 tags:
 - api
-- api
-title: 2024 10 12 Creamy Egyptian Macaroni Bechamel
+last_updated: null
+source_file: 2024-10-12-creamy-egyptian-macaroni-bechamel.md
 ---
-
+# 2024 10 12 Creamy Egyptian Macaroni Bechamel
 
 ### Egyptian Macaroni Bechamel
 

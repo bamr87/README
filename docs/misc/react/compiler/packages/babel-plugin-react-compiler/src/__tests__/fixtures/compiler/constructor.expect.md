@@ -1,14 +1,12 @@
 ---
+title: Constructor.Expect
 category: misc
-last_updated: null
-source_file: constructor.expect.md
-summary: '```javascript
-
-  function Foo() {}'
 tags:
 - javascript
-title: Constructor.Expect
+last_updated: null
+source_file: constructor.expect.md
 ---
+# Constructor.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ function Component(props) {
 }
 
 ```
-      

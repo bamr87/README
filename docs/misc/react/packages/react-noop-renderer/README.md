@@ -1,13 +1,10 @@
 ---
+title: '`react-noop-renderer`'
 category: misc
-last_updated: null
-source_file: README.md
-summary: 'This package is the renderer we use for debugging Fiber.
-
-  It is not intended to be used directly.'
 tags:
 - javascript
-title: '`react-noop-renderer`'
+last_updated: null
+source_file: README.md
 ---
 # `react-noop-renderer`
 

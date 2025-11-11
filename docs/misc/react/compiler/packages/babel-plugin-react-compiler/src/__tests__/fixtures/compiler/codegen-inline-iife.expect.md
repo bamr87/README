@@ -1,15 +1,13 @@
 ---
+title: Codegen Inline Iife.Expect
 category: misc
-last_updated: null
-source_file: codegen-inline-iife.expect.md
-summary: '```javascript
-
-  import {makeArray, print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Codegen Inline Iife.Expect
+last_updated: null
+source_file: codegen-inline-iife.expect.md
 ---
+# Codegen Inline Iife.Expect
 
 ## Input
 
@@ -60,7 +58,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,2]
 logs: [1,2]

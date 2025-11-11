@@ -1,16 +1,12 @@
 ---
+title: Hook Call.Expect
 category: misc
-last_updated: null
-source_file: hook-call.expect.md
-summary: '```javascript
-
-  function useFreeze() {}
-
-  function foo() {}'
 tags:
 - javascript
-title: Hook Call.Expect
+last_updated: null
+source_file: hook-call.expect.md
 ---
+# Hook Call.Expect
 
 ## Input
 
@@ -68,4 +64,3 @@ function Component(props) {
 }
 
 ```
-      

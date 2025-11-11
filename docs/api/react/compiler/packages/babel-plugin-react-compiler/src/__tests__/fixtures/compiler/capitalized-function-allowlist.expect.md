@@ -1,24 +1,13 @@
 ---
+title: Capitalized Function Allowlist.Expect
 category: api
-last_updated: null
-source_file: capitalized-function-allowlist.expect.md
-summary: '```javascript
-
-  // @validateNoCapitalizedCalls @hookPattern:".\b(use[^$]+)$"
-
-  import  as React from ''react'';
-
-  const React$useState = React.useState;
-
-  const THISISACONSTANT = () => {};
-
-  function Component() ...'
 tags:
 - javascript
 - api
-- api
-title: Capitalized Function Allowlist.Expect
+last_updated: null
+source_file: capitalized-function-allowlist.expect.md
 ---
+# Capitalized Function Allowlist.Expect
 
 ## Input
 
@@ -69,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 3

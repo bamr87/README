@@ -1,14 +1,12 @@
 ---
+title: Error.Context Variable Only Chained Assign.Expect
 category: misc
-last_updated: null
-source_file: error.context-variable-only-chained-assign.expect.md
-summary: '```javascript
-
-  import {identity, invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Context Variable Only Chained Assign.Expect
+last_updated: null
+source_file: error.context-variable-only-chained-assign.expect.md
 ---
+# Error.Context Variable Only Chained Assign.Expect
 
 ## Input
 
@@ -54,5 +52,4 @@ error.context-variable-only-chained-assign.ts:10:19
   12 |   };
   13 |   return invoke(fn2);
 ```
-          
-      
+

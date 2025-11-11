@@ -1,14 +1,12 @@
 ---
+title: Mege Consecutive Scopes Dont Merge With Different Deps.Expect
 category: misc
-last_updated: null
-source_file: mege-consecutive-scopes-dont-merge-with-different-deps.expect.md
-summary: '```javascript
-
-  const {getNumber, identity} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Mege Consecutive Scopes Dont Merge With Different Deps.Expect
+last_updated: null
+source_file: mege-consecutive-scopes-dont-merge-with-different-deps.expect.md
 ---
+# Mege Consecutive Scopes Dont Merge With Different Deps.Expect
 
 ## Input
 
@@ -75,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":4,"b":42,"c":["static"]}

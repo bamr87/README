@@ -1,12 +1,12 @@
 ---
+title: Non Null Assertion.Expect
 category: misc
-last_updated: null
-source_file: non-null-assertion.expect.md
-summary: "```javascript\ninterface ComponentProps {\n  name?: string;\n}"
 tags:
 - javascript
-title: Non Null Assertion.Expect
+last_updated: null
+source_file: non-null-assertion.expect.md
 ---
+# Non Null Assertion.Expect
 
 ## Input
 
@@ -53,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ALICE"

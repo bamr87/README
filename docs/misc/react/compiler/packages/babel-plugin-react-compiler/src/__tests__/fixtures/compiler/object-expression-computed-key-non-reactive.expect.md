@@ -1,14 +1,12 @@
 ---
+title: Object Expression Computed Key Non Reactive.Expect
 category: misc
-last_updated: null
-source_file: object-expression-computed-key-non-reactive.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Expression Computed Key Non Reactive.Expect
+last_updated: null
+source_file: object-expression-computed-key-non-reactive.expect.md
 ---
+# Object Expression Computed Key Non Reactive.Expect
 
 ## Input
 
@@ -68,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"2":["Compiler"]}

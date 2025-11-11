@@ -1,14 +1,12 @@
 ---
+title: Outlined Helper.Expect
 category: misc
-last_updated: null
-source_file: outlined-helper.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Outlined Helper.Expect
+last_updated: null
+source_file: outlined-helper.expect.md
 ---
+# Outlined Helper.Expect
 
 ## Input
 
@@ -68,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"item":"one"}</div></div>

@@ -1,13 +1,12 @@
 ---
+title: Optional Member Expression Call As Property.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-call-as-property.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeObject();\n\
-  \  return x?.[foo(props.value)];\n}"
 tags:
 - javascript
-title: Optional Member Expression Call As Property.Expect
+last_updated: null
+source_file: optional-member-expression-call-as-property.expect.md
 ---
+# Optional Member Expression Call As Property.Expect
 
 ## Input
 
@@ -45,4 +44,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Prop Mutation Indirect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-prop-mutation-indirect.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const f = () => {\n    props.value\
-  \ = true;\n  };\n  const g = () => {\n    f();\n  };\n  g();\n}"
 tags:
 - javascript
-title: Error.Invalid Prop Mutation Indirect.Expect
+last_updated: null
+source_file: error.invalid-prop-mutation-indirect.expect.md
 ---
+# Error.Invalid Prop Mutation Indirect.Expect
 
 ## Input
 
@@ -43,5 +42,4 @@ error.invalid-prop-mutation-indirect.ts:3:4
   5 |   const g = () => {
   6 |     f();
 ```
-          
-      
+

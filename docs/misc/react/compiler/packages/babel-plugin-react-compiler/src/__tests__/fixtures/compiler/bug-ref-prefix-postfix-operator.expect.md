@@ -1,14 +1,12 @@
 ---
+title: Bug Ref Prefix Postfix Operator.Expect
 category: misc
-last_updated: null
-source_file: bug-ref-prefix-postfix-operator.expect.md
-summary: '```javascript
-
-  import {useRef, useEffect} from ''react'';'
 tags:
 - javascript
-title: Bug Ref Prefix Postfix Operator.Expect
+last_updated: null
+source_file: bug-ref-prefix-postfix-operator.expect.md
 ---
+# Bug Ref Prefix Postfix Operator.Expect
 
 ## Input
 
@@ -140,4 +138,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

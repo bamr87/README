@@ -1,15 +1,13 @@
 ---
+title: Error.Hook Ref Value.Expect
 category: api
-last_updated: null
-source_file: error.hook-ref-value.expect.md
-summary: '```javascript
-
-  import {useEffect, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Hook Ref Value.Expect
+last_updated: null
+source_file: error.hook-ref-value.expect.md
 ---
+# Error.Hook Ref Value.Expect
 
 ## Input
 
@@ -60,5 +58,4 @@ error.hook-ref-value.ts:5:23
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

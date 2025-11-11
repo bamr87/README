@@ -1,13 +1,12 @@
 ---
+title: Function Declaration Simple.Expect
 category: misc
-last_updated: null
-source_file: function-declaration-simple.expect.md
-summary: "```javascript\nfunction component(a) {\n  let t = {a};\n  function x(p)\
-  \ {\n    p.foo();\n  }\n  x(t);\n  return t;\n}"
 tags:
 - javascript
-title: Function Declaration Simple.Expect
+last_updated: null
+source_file: function-declaration-simple.expect.md
 ---
+# Function Declaration Simple.Expect
 
 ## Input
 
@@ -65,4 +64,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Optional Receiver Optional Method.Expect
 category: misc
-last_updated: null
-source_file: optional-receiver-optional-method.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeOptionalObject(props);\n\
-  \  const y = makeObject(props);\n  const z = x?.optionalMethod?.(y.a, props.a, foo(y.b),\
-  \ bar(props.b));\n  return z;\n}"
 tags:
 - javascript
-title: Optional Receiver Optional Method.Expect
+last_updated: null
+source_file: optional-receiver-optional-method.expect.md
 ---
+# Optional Receiver Optional Method.Expect
 
 ## Input
 
@@ -43,4 +41,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,15 +1,13 @@
 ---
+title: Error.Unconditional Set State In Render After Loop Break.Expect
 category: api
-last_updated: null
-source_file: error.unconditional-set-state-in-render-after-loop-break.expect.md
-summary: "```javascript\n// @validateNoSetStateInRender\nfunction Component(props)\
-  \ {\n  const [state, setState] = useState(false);\n  for (const  of props) {\n \
-  \   if (props.cond) {\n      break;\n    } else {\n      co..."
 tags:
 - javascript
 - api
-title: Error.Unconditional Set State In Render After Loop Break.Expect
+last_updated: null
+source_file: error.unconditional-set-state-in-render-after-loop-break.expect.md
 ---
+# Error.Unconditional Set State In Render After Loop Break.Expect
 
 ## Input
 
@@ -49,5 +47,4 @@ error.unconditional-set-state-in-render-after-loop-break.ts:11:2
   13 | }
   14 |
 ```
-          
-      
+

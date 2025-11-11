@@ -1,13 +1,12 @@
 ---
+title: Component.Expect
 category: misc
-last_updated: null
-source_file: component.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const items = props.items;\n\
-  \  const maxItems = props.maxItems;"
 tags:
 - javascript
-title: Component.Expect
+last_updated: null
+source_file: component.expect.md
 ---
+# Component.Expect
 
 ## Input
 
@@ -112,4 +111,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

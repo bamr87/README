@@ -1,14 +1,12 @@
 ---
+title: Codegen Emit Make Read Only.Expect
 category: misc
-last_updated: null
-source_file: codegen-emit-make-read-only.expect.md
-summary: '```javascript
-
-  // @enableEmitFreeze true'
 tags:
 - javascript
-title: Codegen Emit Make Read Only.Expect
+last_updated: null
+source_file: codegen-emit-make-read-only.expect.md
 ---
+# Codegen Emit Make Read Only.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ function MyComponentName(props) {
 }
 
 ```
-      

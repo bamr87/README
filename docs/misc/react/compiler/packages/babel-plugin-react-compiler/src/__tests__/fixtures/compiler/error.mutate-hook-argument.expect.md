@@ -1,13 +1,13 @@
 ---
+title: Error.Mutate Hook Argument.Expect
 category: misc
-last_updated: null
-source_file: error.mutate-hook-argument.expect.md
-summary: "```javascript\nfunction useHook(a, b) {\n  b.test = 1;\n  a.test = 2;\n}"
 tags:
 - javascript
 - testing
-title: Error.Mutate Hook Argument.Expect
+last_updated: null
+source_file: error.mutate-hook-argument.expect.md
 ---
+# Error.Mutate Hook Argument.Expect
 
 ## Input
 
@@ -49,5 +49,4 @@ error.mutate-hook-argument.ts:3:2
   4 | }
   5 |
 ```
-          
-      
+

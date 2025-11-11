@@ -1,14 +1,12 @@
 ---
+title: Capturing Function Conditional Capture Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-conditional-capture-mutate.expect.md
-summary: "``javascript\nfunction useHook(a, b) {\n  let z = {a};\n  let y = b;\n \
-  \ let x = function () {\n    if (y) {\n      // we don't know for sure this mutates,\
-  \ so we should assume\n      // that there is no mutat..."
 tags:
 - javascript
-title: Capturing Function Conditional Capture Mutate.Expect
+last_updated: null
+source_file: capturing-function-conditional-capture-mutate.expect.md
 ---
+# Capturing Function Conditional Capture Mutate.Expect
 
 ## Input
 
@@ -63,4 +61,3 @@ function useHook(a, b) {
 }
 
 ```
-      

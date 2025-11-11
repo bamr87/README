@@ -1,14 +1,13 @@
 ---
+title: Error.Assign Global In Component Tag Function.Expect
 category: api
-last_updated: null
-source_file: error.assign-global-in-component-tag-function.expect.md
-summary: "```javascript\nfunction Component() {\n  const Foo = () => {\n    someGlobal\
-  \ = true;\n  };\n  return <Foo />;\n}"
 tags:
 - javascript
 - api
-title: Error.Assign Global In Component Tag Function.Expect
+last_updated: null
+source_file: error.assign-global-in-component-tag-function.expect.md
 ---
+# Error.Assign Global In Component Tag Function.Expect
 
 ## Input
 
@@ -41,5 +40,4 @@ error.assign-global-in-component-tag-function.ts:3:4
   5 |   return <Foo />;
   6 | }
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Hooks Freeze Arguments.Expect
 category: misc
-last_updated: null
-source_file: hooks-freeze-arguments.expect.md
-summary: "```javascript\nfunction Component() {\n  const a = [];\n  useFreeze(a);\
-  \ // should freeze\n  useFreeze(a); // should be readonly\n  call(a); // should\
-  \ be readonly\n  return a;\n}"
 tags:
 - javascript
-title: Hooks Freeze Arguments.Expect
+last_updated: null
+source_file: hooks-freeze-arguments.expect.md
 ---
+# Hooks Freeze Arguments.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ function useFreeze(x) {}
 function call(x) {}
 
 ```
-      

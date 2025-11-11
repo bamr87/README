@@ -1,14 +1,12 @@
 ---
+title: Infer Object Method Uncond Access.Expect
 category: misc
-last_updated: null
-source_file: infer-object-method-uncond-access.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Object Method Uncond Access.Expect
+last_updated: null
+source_file: infer-object-method-uncond-access.expect.md
 ---
+# Infer Object Method Uncond Access.Expect
 
 ## Input
 
@@ -67,7 +65,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"x":{"fn":{"kind":"Function","result":4}},"shouldInvokeFns":true}</div>

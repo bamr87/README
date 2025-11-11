@@ -1,14 +1,13 @@
 ---
+title: Aliased Nested Scope Truncated Dep.Expect
 category: api
-last_updated: null
-source_file: aliased-nested-scope-truncated-dep.expect.md
-summary: "```javascript\nimport {\n  Stringify,\n  mutate,\n  identity,\n  shallowCopy,\n\
-  \  setPropertyByKey,\n} from 'sharedruntime';"
 tags:
 - javascript
 - api
-title: Aliased Nested Scope Truncated Dep.Expect
+last_updated: null
+source_file: aliased-nested-scope-truncated-dep.expect.md
 ---
+# Aliased Nested Scope Truncated Dep.Expect
 
 ## Input
 
@@ -218,7 +217,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"id":[1]}</div>
 <div>{"id":[1]}</div>

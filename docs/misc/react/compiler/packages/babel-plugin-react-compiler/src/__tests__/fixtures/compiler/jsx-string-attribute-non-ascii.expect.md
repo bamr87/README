@@ -1,14 +1,12 @@
 ---
+title: Jsx String Attribute Non Ascii.Expect
 category: misc
-last_updated: null
-source_file: jsx-string-attribute-non-ascii.expect.md
-summary: "```javascript\nfunction Component() {\n  return (\n    <Post\n      author=\"\
-  potetotes\"\n      text=\"in addition to understanding JavaScript semantics and\
-  \ the rules of React, the compiler team also understa..."
 tags:
 - javascript
-title: Jsx String Attribute Non Ascii.Expect
+last_updated: null
+source_file: jsx-string-attribute-non-ascii.expect.md
 ---
+# Jsx String Attribute Non Ascii.Expect
 
 ## Input
 
@@ -103,6 +101,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><h1>potetotes</h1><span>in addition to understanding JavaScript semantics and the rules of React, the compiler team also understands தமிழ், 中文, 日本語, 한국어 and i think that’s pretty cool</span></div>

@@ -1,14 +1,12 @@
 ---
+title: Object Method Shorthand Hook Dep.Expect
 category: misc
-last_updated: null
-source_file: object-method-shorthand-hook-dep.expect.md
-summary: "```javascript\nimport {createHookWrapper} from 'sharedruntime';\nimport\
-  \ {useState} from 'react';\nfunction useFoo() {\n  const [state, setState] = useState(false);\n\
-  \  return {\n    func() {\n      return sta..."
 tags:
 - javascript
-title: Object Method Shorthand Hook Dep.Expect
+last_updated: null
+source_file: object-method-shorthand-hook-dep.expect.md
 ---
+# Object Method Shorthand Hook Dep.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"func":{"kind":"Function","result":false}},"shouldInvokeFns":true}</div>

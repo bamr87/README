@@ -1,16 +1,13 @@
 ---
+title: Maybe Invalid Usememo No Memoblock Sideeffect.Expect
 category: api
-last_updated: null
-source_file: maybe-invalid-useMemo-no-memoblock-sideeffect.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
 - api
-- api
-title: Maybe Invalid Usememo No Memoblock Sideeffect.Expect
+last_updated: null
+source_file: maybe-invalid-useMemo-no-memoblock-sideeffect.expect.md
 ---
+# Maybe Invalid Usememo No Memoblock Sideeffect.Expect
 
 ## Input
 
@@ -61,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

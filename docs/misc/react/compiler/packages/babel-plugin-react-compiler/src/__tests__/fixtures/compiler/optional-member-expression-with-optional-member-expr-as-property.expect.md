@@ -1,13 +1,12 @@
 ---
+title: Optional Member Expression With Optional Member Expr As Property.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-with-optional-member-expr-as-property.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeObject();\n\
-  \  return x.y?.[props.a?.[props.b?.[props.c]]];\n}"
 tags:
 - javascript
-title: Optional Member Expression With Optional Member Expr As Property.Expect
+last_updated: null
+source_file: optional-member-expression-with-optional-member-expr-as-property.expect.md
 ---
+# Optional Member Expression With Optional Member Expr As Property.Expect
 
 ## Input
 
@@ -37,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

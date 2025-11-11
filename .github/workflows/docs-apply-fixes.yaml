@@ -1,0 +1,74 @@
+name: Docs Apply Fixes
+
+on:
+  push:
+    branches:
+      - 'quality/*'
+  workflow_dispatch: {}
+
+jobs:
+  apply-fixes:
+    name: Apply docs fixes and open PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then python -m pip install -r requirements.txt; fi
+
+      - name: Apply doc fixes
+        id: apply
+        run: |
+          set -euo pipefail
+          bash scripts/run_doc_checks.sh --apply || true
+          # show git status for debugging
+          git status --porcelain
+
+      - name: Create Pull Request with fixes
+        uses: peter-evans/create-pull-request@v4
+          id: create_pr
+        with:
+          commit-message: "chore(docs): apply auto-fixes (whitespace/frontmatter)"
+          branch: "quality/fixes-${{ github.run_id }}"
+          title: "chore(docs): automatic doc fixes"
+          body: |
+            Automated documentation fixes were applied (whitespace, frontmatter normalizations).
+            Please review changes and approve.
+          labels: docs,automation
+        - name: Add report as PR comment
+          if: ${{ steps.create_pr.outputs.pull-request-number }}
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            issue-number: ${{ steps.create_pr.outputs.pull-request-number }}
+            body: |
+              ## Docs Quality Report
+              ```json
+              $(cat docs/results/docs_quality_report.json 2>/dev/null || echo '{}')
+              ```
+        - name: Add top lint issues snippet to PR comment
+          if: ${{ steps.create_pr.outputs.pull-request-number }}
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            issue-number: ${{ steps.create_pr.outputs.pull-request-number }}
+            body: |
+              ## Top Lint Issues (first 20 files)
+              $(jq '.top_issues' docs/results/docs_quality_report.json 2>/dev/null || echo '[]')
+        - name: Auto-merge PR if secret enabled
+          if: ${{ secrets.AUTO_MERGE == 'true' && steps.create_pr.outputs.pull-request-number }}
+          uses: actions-ecosystem/action-merge@v1
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            merge_method: squash
+            pull_request_number: ${{ steps.create_pr.outputs.pull-request-number }}

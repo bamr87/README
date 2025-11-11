@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Mutate Props In Effect Fixpoint.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-props-in-effect-fixpoint.expect.md
-summary: '```javascript
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Mutate Props In Effect Fixpoint.Expect
+last_updated: null
+source_file: error.invalid-mutate-props-in-effect-fixpoint.expect.md
 ---
+# Error.Invalid Mutate Props In Effect Fixpoint.Expect
 
 ## Input
 
@@ -51,5 +49,4 @@ error.invalid-mutate-props-in-effect-fixpoint.ts:10:4
   12 |   let mutatePropsIndirect = () => {
   13 |     mutateProps();
 ```
-          
-      
+

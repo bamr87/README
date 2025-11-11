@@ -1,15 +1,13 @@
 ---
+title: Invalid Conditionally Assigned Dynamically Constructed Component In Render.Expect
 category: misc
-last_updated: null
-source_file: invalid-conditionally-assigned-dynamically-constructed-component-in-render.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateStaticComponents\nfunction Example(props)\
-  \ {\n  let Component;\n  if (props.cond) {\n    Component = createComponent();\n\
-  \  } else {\n    Component = DefaultComponent..."
 tags:
 - javascript
 - testing
-title: Invalid Conditionally Assigned Dynamically Constructed Component In Render.Expect
+last_updated: null
+source_file: invalid-conditionally-assigned-dynamically-constructed-component-in-render.expect.md
 ---
+# Invalid Conditionally Assigned Dynamically Constructed Component In Render.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ function Example(props) {
 {"kind":"CompileError","detail":{"options":{"category":"StaticComponents","reason":"Cannot create components during render","description":"Components created during render will reset their state each time they are created. Declare components outside of render","details":[{"kind":"error","loc":{"start":{"line":9,"column":10,"index":202},"end":{"line":9,"column":19,"index":211},"filename":"invalid-conditionally-assigned-dynamically-constructed-component-in-render.ts"},"message":"This component is created during render"},{"kind":"error","loc":{"start":{"line":5,"column":16,"index":124},"end":{"line":5,"column":33,"index":141},"filename":"invalid-conditionally-assigned-dynamically-constructed-component-in-render.ts"},"message":"The component is created during render here"}]}},"fnLoc":null}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":2,"column":0,"index":45},"end":{"line":10,"column":1,"index":217},"filename":"invalid-conditionally-assigned-dynamically-constructed-component-in-render.ts"},"fnName":"Example","memoSlots":3,"memoBlocks":2,"memoValues":2,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

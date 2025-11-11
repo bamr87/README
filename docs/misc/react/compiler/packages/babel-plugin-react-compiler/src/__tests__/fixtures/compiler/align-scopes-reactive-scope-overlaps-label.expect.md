@@ -1,14 +1,12 @@
 ---
+title: Align Scopes Reactive Scope Overlaps Label.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-reactive-scope-overlaps-label.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Reactive Scope Overlaps Label.Expect
+last_updated: null
+source_file: align-scopes-reactive-scope-overlaps-label.expect.md
 ---
+# Align Scopes Reactive Scope Overlaps Label.Expect
 
 ## Input
 
@@ -83,7 +81,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]
 [2]

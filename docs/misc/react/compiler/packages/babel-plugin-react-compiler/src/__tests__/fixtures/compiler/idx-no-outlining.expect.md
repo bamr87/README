@@ -1,17 +1,13 @@
 ---
+title: Idx No Outlining.Expect
 category: misc
-last_updated: null
-source_file: idx-no-outlining.expect.md
-summary: '```javascript
-
-  // @customMacros:"idx"
-
-  import idx from ''idx'';'
 tags:
 - javascript
 - aws
-title: Idx No Outlining.Expect
+last_updated: null
+source_file: idx-no-outlining.expect.md
 ---
+# Idx No Outlining.Expect
 
 ## Input
 
@@ -73,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

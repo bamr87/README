@@ -1,13 +1,12 @@
 ---
+title: Ref Current Aliased Not Added To Dep 2.Expect
 category: misc
-last_updated: null
-source_file: ref-current-aliased-not-added-to-dep-2.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender:false\nfunction Foo({a})\
-  \ {\n  const ref = useRef();\n  const val = ref.current;\n  const x = {a, val};"
 tags:
 - javascript
-title: Ref Current Aliased Not Added To Dep 2.Expect
+last_updated: null
+source_file: ref-current-aliased-not-added-to-dep-2.expect.md
 ---
+# Ref Current Aliased Not Added To Dep 2.Expect
 
 ## Input
 
@@ -46,4 +45,3 @@ function Foo(t0) {
 }
 
 ```
-      

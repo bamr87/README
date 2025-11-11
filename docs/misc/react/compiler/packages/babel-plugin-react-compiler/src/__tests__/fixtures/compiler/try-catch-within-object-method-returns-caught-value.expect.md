@@ -1,14 +1,12 @@
 ---
+title: Try Catch Within Object Method Returns Caught Value.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-object-method-returns-caught-value.expect.md
-summary: '```javascript
-
-  import {throwInput} from ''sharedruntime'';'
 tags:
 - javascript
-title: Try Catch Within Object Method Returns Caught Value.Expect
+last_updated: null
+source_file: try-catch-within-object-method-returns-caught-value.expect.md
 ---
+# Try Catch Within Object Method Returns Caught Value.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

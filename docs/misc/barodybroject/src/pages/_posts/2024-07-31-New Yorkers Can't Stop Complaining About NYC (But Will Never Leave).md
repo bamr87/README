@@ -1,22 +1,12 @@
 ---
-author: Default Author
+title: Introduction
 category: misc
-description: In a city where the rats outnumber the people and trash piles up like
-  modern art installations, New Yorkers still refuse to move. Dive into the delightful
-  contradiction that is life in the Big Apple.
-last_updated: null
-published_at: '2024-07-31'
-source_file: 2024-07-31-New Yorkers Can't Stop Complaining About NYC (But Will Never
-  Leave).md
-summary: Ah, New York City. The land of dreams, where skyscrapers reach for the heavens
-  and streets are lined with more trash bags than trees. It's a place where every
-  local has a chronic lovehate relationship...
 tags:
 - testing
-title: Introduction
+last_updated: null
+source_file: 2024-07-31-New Yorkers Can't Stop Complaining About NYC (But Will Never
+  Leave).md
 ---
-
-
 # Introduction
 
 Ah, New York City. The land of dreams, where skyscrapers reach for the heavens and streets are lined with more trash bags than trees. It's a place where every local has a chronic love-hate relationship with their home, causing them to endlessly grumble about the awful stench of summer and the rats that think they're your roommates, yet they'll defend the city to their last breath.

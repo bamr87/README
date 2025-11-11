@@ -1,14 +1,12 @@
 ---
+title: For Empty Update.Expect
 category: misc
-last_updated: null
-source_file: for-empty-update.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  for (let i =\
-  \ 0; i < props.count; ) {\n    x += i;\n    if (x > 10) {\n      break;\n    }\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: For Empty Update.Expect
+last_updated: null
+source_file: for-empty-update.expect.md
 ---
+# For Empty Update.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

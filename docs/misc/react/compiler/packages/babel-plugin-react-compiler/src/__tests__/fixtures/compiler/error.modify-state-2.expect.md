@@ -1,14 +1,12 @@
 ---
+title: Error.Modify State 2.Expect
 category: misc
-last_updated: null
-source_file: error.modify-state-2.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Error.Modify State 2.Expect
+last_updated: null
+source_file: error.modify-state-2.expect.md
 ---
+# Error.Modify State 2.Expect
 
 ## Input
 
@@ -43,5 +41,4 @@ error.modify-state-2.ts:6:2
   8 | }
   9 |
 ```
-          
-      
+

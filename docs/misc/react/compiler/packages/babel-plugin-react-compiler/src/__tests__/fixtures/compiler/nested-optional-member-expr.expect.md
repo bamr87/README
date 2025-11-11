@@ -1,14 +1,12 @@
 ---
+title: Nested Optional Member Expr.Expect
 category: misc
-last_updated: null
-source_file: nested-optional-member-expr.expect.md
-summary: "``javascript\n// We should codegen nested optional properties correctly\n\
-  // (i.e. placing ?` in the correct PropertyLoad)\nfunction Component(props) {\n\
-  \  let x = foo(props.a?.b.c.d);\n  return x;\n}"
 tags:
 - javascript
-title: Nested Optional Member Expr.Expect
+last_updated: null
+source_file: nested-optional-member-expr.expect.md
 ---
+# Nested Optional Member Expr.Expect
 
 ## Input
 
@@ -43,4 +41,3 @@ function Component(props) {
 }
 
 ```
-      

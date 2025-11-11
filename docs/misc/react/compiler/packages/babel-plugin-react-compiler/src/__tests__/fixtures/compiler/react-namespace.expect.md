@@ -1,14 +1,12 @@
 ---
+title: React Namespace.Expect
 category: misc
-last_updated: null
-source_file: react-namespace.expect.md
-summary: '```javascript
-
-  const FooContext = React.createContext({current: null});'
 tags:
 - javascript
-title: React Namespace.Expect
+last_updated: null
+source_file: react-namespace.expect.md
 ---
+# React Namespace.Expect
 
 ## Input
 
@@ -80,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>Hello</div></div>

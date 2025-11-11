@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Useeffect Dep Not Memoized.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useEffect-dep-not-memoized.expect.md
-summary: '```javascript
-
-  // @validateMemoizedEffectDependencies
-
-  import {useEffect} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Useeffect Dep Not Memoized.Expect
+last_updated: null
+source_file: error.invalid-useEffect-dep-not-memoized.expect.md
 ---
+# Error.Invalid Useeffect Dep Not Memoized.Expect
 
 ## Input
 
@@ -50,5 +46,4 @@ error.invalid-useEffect-dep-not-memoized.ts:6:2
   10 |   return data;
   11 | }
 ```
-          
-      
+

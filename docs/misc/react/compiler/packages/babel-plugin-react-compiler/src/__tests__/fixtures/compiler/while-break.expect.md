@@ -1,13 +1,12 @@
 ---
+title: While Break.Expect
 category: misc
-last_updated: null
-source_file: while-break.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  while (a) {\n    break;\n  }\n  return\
-  \ b;\n}"
 tags:
 - javascript
-title: While Break.Expect
+last_updated: null
+source_file: while-break.expect.md
 ---
+# While Break.Expect
 
 ## Input
 
@@ -44,4 +43,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

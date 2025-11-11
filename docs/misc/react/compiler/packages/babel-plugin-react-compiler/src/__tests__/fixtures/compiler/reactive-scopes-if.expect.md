@@ -1,14 +1,12 @@
 ---
+title: Reactive Scopes If.Expect
 category: misc
-last_updated: null
-source_file: reactive-scopes-if.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const x = [];\n  if (a) {\n  \
-  \  const y = [];\n    y.push(b);\n    x.push(<div>{y}</div>);\n  } else {\n    x.push(c);\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Reactive Scopes If.Expect
+last_updated: null
+source_file: reactive-scopes-if.expect.md
 ---
+# Reactive Scopes If.Expect
 
 ## Input
 
@@ -81,4 +79,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

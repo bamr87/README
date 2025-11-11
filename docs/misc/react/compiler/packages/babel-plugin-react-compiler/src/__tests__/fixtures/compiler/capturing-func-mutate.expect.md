@@ -1,14 +1,12 @@
 ---
+title: Capturing Func Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-mutate.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Func Mutate.Expect
+last_updated: null
+source_file: capturing-func-mutate.expect.md
 ---
+# Capturing Func Mutate.Expect
 
 ## Input
 
@@ -80,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"b":{"b":3,"wat0":"joe"}},{"a":2}]
 [{"b":{"b":3,"wat0":"joe"}},{"a":2}]

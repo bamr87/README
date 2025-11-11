@@ -1,18 +1,12 @@
 ---
+title: Repro Object Fromentries Entries.Expect
 category: misc
-last_updated: null
-source_file: repro-object-fromEntries-entries.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Object Fromentries Entries.Expect
+last_updated: null
+source_file: repro-object-fromEntries-entries.expect.md
 ---
+# Repro Object Fromentries Entries.Expect
 
 ## Input
 
@@ -107,6 +101,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"render":"[[ function params=1 ]]"}</div><div>{"render":"[[ function params=1 ]]"}</div></div>

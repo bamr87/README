@@ -1,18 +1,12 @@
 ---
+title: Subpath Order1.Expect
 category: misc
-last_updated: null
-source_file: subpath-order1.expect.md
-summary: '``javascript
-
-  // When a conditional dependency props.a is a subpath of an unconditional
-
-  // dependency props.a.b, we can access props.a while preserving program
-
-  // semantics (with respect to nullthrows)...'
 tags:
 - javascript
-title: Subpath Order1.Expect
+last_updated: null
+source_file: subpath-order1.expect.md
 ---
+# Subpath Order1.Expect
 
 ## Input
 
@@ -76,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":3}

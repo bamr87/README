@@ -1,13 +1,12 @@
 ---
+title: The Firefox extension
 category: development
-last_updated: null
-source_file: README.md
-summary: The source code for this extension has moved to shells/webextension.
 tags:
 - javascript
 - testing
 - development
-title: The Firefox extension
+last_updated: null
+source_file: README.md
 ---
 # The Firefox extension
 

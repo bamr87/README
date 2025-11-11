@@ -1,15 +1,13 @@
 ---
+title: Capturing Function Capture Ref Before Rename.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-capture-ref-before-rename.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
-title: Capturing Function Capture Ref Before Rename.Expect
+last_updated: null
+source_file: capturing-function-capture-ref-before-rename.expect.md
 ---
+# Capturing Function Capture Ref Before Rename.Expect
 
 ## Input
 
@@ -99,7 +97,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":{"a":2,"wat0":"joe"},"z":{"b":3}}
 {"y":{"a":2,"wat0":"joe"},"z":{"b":3}}

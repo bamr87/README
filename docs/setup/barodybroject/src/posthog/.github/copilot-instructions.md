@@ -1,16 +1,14 @@
 ---
+title: PostHog Docker Deployment - AI Agent Instructions
 category: setup
-last_updated: null
-source_file: copilot-instructions.md
-summary: 'This is a Docker Composebased PostHog deployment (not the PostHog source
-  code). The system uses an eventdriven architecture with 8 interconnected services:'
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: PostHog Docker Deployment - AI Agent Instructions
+last_updated: null
+source_file: copilot-instructions.md
 ---
 # PostHog Docker Deployment - AI Agent Instructions
 
@@ -103,7 +101,7 @@ openssl rand -base64 32 | tr '+/' '-_' | tr -d '='
 ### Service Names Are Fixed
 When modifying `docker-compose.yml`, use these exact service names (PostHog expects them):
 - `db` (PostgreSQL)
-- `redis` 
+- `redis`
 - `clickhouse`
 - `kafka`
 - `zookeeper`
@@ -168,8 +166,8 @@ Uses `ENCRYPTION_KEYS` to secure plugin configuration data stored in PostgreSQL.
 
 ## Quick Reference
 
-**First-time setup**: `cp .env.example .env && docker-compose up -d`  
-**Access PostHog**: http://localhost:8080  
-**Check health**: `docker-compose ps` (all services should show "Up")  
-**View errors**: `docker-compose logs --tail=50 | grep -i error`  
+**First-time setup**: `cp .env.example .env && docker-compose up -d`
+**Access PostHog**: http://localhost:8080
+**Check health**: `docker-compose ps` (all services should show "Up")
+**View errors**: `docker-compose logs --tail=50 | grep -i error`
 **Reset everything**: `docker-compose down -v` (deletes all data)

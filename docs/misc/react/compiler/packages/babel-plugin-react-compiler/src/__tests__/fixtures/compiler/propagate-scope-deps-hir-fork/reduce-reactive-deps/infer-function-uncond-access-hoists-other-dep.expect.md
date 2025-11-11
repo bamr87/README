@@ -1,14 +1,12 @@
 ---
+title: Infer Function Uncond Access Hoists Other Dep.Expect
 category: misc
-last_updated: null
-source_file: infer-function-uncond-access-hoists-other-dep.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Uncond Access Hoists Other Dep.Expect
+last_updated: null
+source_file: infer-function-uncond-access-hoists-other-dep.expect.md
 ---
+# Infer Function Uncond Access Hoists Other Dep.Expect
 
 ## Input
 
@@ -96,7 +94,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function","result":[{"b":{"c":4}},4]},"x":[4],"shouldInvokeFns":true}</div>

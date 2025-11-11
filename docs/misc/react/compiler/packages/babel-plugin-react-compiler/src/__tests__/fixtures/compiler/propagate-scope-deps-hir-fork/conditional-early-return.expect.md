@@ -1,14 +1,12 @@
 ---
+title: Conditional Early Return.Expect
 category: misc
-last_updated: null
-source_file: conditional-early-return.expect.md
-summary: "``javascript\n// @enablePropagateDepsInHIR\n/\n  props.b does not influence\
-  \ a`\n /\nfunction ComponentA(props) {\n  const aDEBUG = [];\n  aDEBUG.push(props.a);\n\
-  \  if (props.b) {\n    return null;\n  }\n  aDEBUG...."
 tags:
 - javascript
-title: Conditional Early Return.Expect
+last_updated: null
+source_file: conditional-early-return.expect.md
 ---
+# Conditional Early Return.Expect
 
 ## Input
 
@@ -231,6 +229,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,3]

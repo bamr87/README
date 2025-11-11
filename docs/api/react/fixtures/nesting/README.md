@@ -1,16 +1,12 @@
 ---
+title: Nested React Demo
 category: api
-last_updated: null
-source_file: README.md
-summary: This is a demo of how you can configure a build system to serve two different
-  versions of React side by side in the same app. This is not optimal, and should
-  only be used as a compromise to prevent yo...
 tags:
 - javascript
 - api
 - testing
-- api
-title: Nested React Demo
+last_updated: null
+source_file: README.md
 ---
 # Nested React Demo
 
@@ -26,7 +22,7 @@ Using a single version of React removes a lot of complexity. It is also essentia
 
 ## What Is This For?
 
-However, for some apps that have been in production for many years, upgrading all screens at once may be prohibitively difficult. For example, React components written in 2014 may still rely on [the unofficial legacy context API](https://reactjs.org/docs/legacy-context.html) (not to be confused with the modern one), and are not always maintained. 
+However, for some apps that have been in production for many years, upgrading all screens at once may be prohibitively difficult. For example, React components written in 2014 may still rely on [the unofficial legacy context API](https://reactjs.org/docs/legacy-context.html) (not to be confused with the modern one), and are not always maintained.
 
 Traditionally, this meant that if a legacy API is deprecated, you would be stuck on the old version of React forever. That prevents your whole app from receiving improvements and bugfixes. This repository demonstrates a hybrid approach. It shows how you can use a newer version of React for some parts of your app, while **lazy-loading an older version of React** for the parts that haven't been migrated yet.
 
@@ -79,7 +75,7 @@ File structure is extremely important in this demo. It has a direct effect on wh
 We will use three different `package.json`s: one for non-React code at the root, and two in the respective `src/legacy` and `src/modern` folders that specify the React dependencies:
 
 - **`package.json`**: The root `package.json` is a place for build dependencies (such as `react-scripts`) and any React-agnostic libraries (for example, `lodash`, `immer`, or `redux`). We do **not** include React or any React-related libraries in this file.
-- **`src/legacy/package.json`**: This is where we declare the `react` and `react-dom`  dependencies for the "legacy" trees. In this demo, we're using React 16.8 (although, as noted above, we could downgrade it further below). This is **also** where we specify any third-party libraries that use React. For example, we include `react-router` and `react-redux` in this example. 
+- **`src/legacy/package.json`**: This is where we declare the `react` and `react-dom`  dependencies for the "legacy" trees. In this demo, we're using React 16.8 (although, as noted above, we could downgrade it further below). This is **also** where we specify any third-party libraries that use React. For example, we include `react-router` and `react-redux` in this example.
 - **`src/modern/package.json`**: This is where we declare the `react` and `react-dom`  dependencies for the "modern" trees. In this demo, we're using React 17. Here, we also specify third-party dependencies that use React and are used from the modern part of our app. This is why we *also* have `react-router` and `react-redux` in this file. (Their versions don't strictly have to match their `legacy` counterparts, but features that rely on context may require workarounds if they differ.)
 
 The `scripts` in the root `package.json` are set up so that when you run `npm install` in it, it also runs `npm install` in both `src/legacy` and `src/modern` folders.
@@ -94,7 +90,7 @@ There are a few key folders in this example:
 - **`src/legacy`**: This is where all the code using the older version of React should go. This includes React components and Hooks, and general product code that is **only** used by the legacy trees.
 - **`src/modern`**: This is where all the code using the newer version of React should go. This includes React components and Hooks, and general product code that is **only** used by the modern trees.
 - **`src/shared`**: You may have some components or Hooks that you wish to use from both modern and legacy subtrees. The build process is set up so that **everything inside `src/shared` gets copied by a file watcher** into both `src/legacy/shared` and `src/modern/shared` on every change. This lets you write a component or a Hook once, but reuse it in both places.
- 
+
 ### Lazy Loading
 
 Loading two Reacts on the same page is bad for the user experience, so you should strive to push this as far as possible from the critical path of your app. For example, if there is a dialog that is less commonly used, or a route that is rarely visited, those are better candidates for staying on an older version of React than parts of your homepage.

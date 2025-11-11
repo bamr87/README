@@ -1,16 +1,12 @@
 ---
+title: Type Annotation As Number.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-as-number.expect.md
-summary: '```javascript
-
-  // @enableUseTypeAnnotations
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Annotation As Number.Expect
+last_updated: null
+source_file: type-annotation-as-number.expect.md
 ---
+# Type Annotation As Number.Expect
 
 ## Input
 
@@ -49,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

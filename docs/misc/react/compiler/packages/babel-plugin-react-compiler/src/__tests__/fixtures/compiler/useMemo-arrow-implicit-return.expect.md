@@ -1,13 +1,12 @@
 ---
+title: Usememo Arrow Implicit Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-arrow-implicit-return.expect.md
-summary: "```javascript\n// @validateNoVoidUseMemo\nfunction Component() {\n  const\
-  \ value = useMemo(() => computeValue(), []);\n  return <div>{value}</div>;\n}"
 tags:
 - javascript
-title: Usememo Arrow Implicit Return.Expect
+last_updated: null
+source_file: useMemo-arrow-implicit-return.expect.md
 ---
+# Usememo Arrow Implicit Return.Expect
 
 ## Input
 
@@ -45,6 +44,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -1,19 +1,13 @@
 ---
+title: Infer Deps On Retry.Expect
 category: development
-last_updated: null
-source_file: infer-deps-on-retry.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import {useRef, AUTODEPS} from ''react'';
-
-  import {useSpecialEffect} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Infer Deps On Retry.Expect
+last_updated: null
+source_file: infer-deps-on-retry.expect.md
 ---
+# Infer Deps On Retry.Expect
 
 ## Input
 
@@ -70,6 +64,6 @@ function useFoo(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

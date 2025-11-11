@@ -1,13 +1,12 @@
 ---
+title: Error.Todo Hoist Function Decls.Expect
 category: misc
-last_updated: null
-source_file: error.todo-hoist-function-decls.expect.md
-summary: "```javascript\nfunction Component() {\n  return get2();\n  function get2()\
-  \ {\n    return 2;\n  }\n}"
 tags:
 - javascript
-title: Error.Todo Hoist Function Decls.Expect
+last_updated: null
+source_file: error.todo-hoist-function-decls.expect.md
 ---
+# Error.Todo Hoist Function Decls.Expect
 
 ## Input
 
@@ -41,5 +40,4 @@ error.todo-hoist-function-decls.ts:3:2
   6 | }
   7 |
 ```
-          
-      
+

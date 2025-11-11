@@ -1,14 +1,12 @@
 ---
+title: Array Push.Expect
 category: misc
-last_updated: null
-source_file: array-push.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
-  \ b, c}) {\n  const x = [];\n  x.push(a);\n  const merged = {b}; // could be mutated\
-  \ by mutate(x) below\n  x.push(merged);\n  mutate(x)..."
 tags:
 - javascript
-title: Array Push.Expect
+last_updated: null
+source_file: array-push.expect.md
 ---
+# Array Push.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

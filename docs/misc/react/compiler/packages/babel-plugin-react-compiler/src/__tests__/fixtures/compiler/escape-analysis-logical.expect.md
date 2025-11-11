@@ -1,14 +1,12 @@
 ---
+title: Escape Analysis Logical.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-logical.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = [props.a];\n  const\
-  \ b = [props.b];\n  const c = [props.c];\n  // We don't do constant folding for\
-  \ nonprimitive values (yet) so we consider\n  // that ..."
 tags:
 - javascript
-title: Escape Analysis Logical.Expect
+last_updated: null
+source_file: escape-analysis-logical.expect.md
 ---
+# Escape Analysis Logical.Expect
 
 ## Input
 
@@ -73,4 +71,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

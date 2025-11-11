@@ -1,13 +1,12 @@
 ---
+title: Object Expression String Literal Key.Expect
 category: misc
-last_updated: null
-source_file: object-expression-string-literal-key.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = {['foo']: props.foo};\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Object Expression String Literal Key.Expect
+last_updated: null
+source_file: object-expression-string-literal-key.expect.md
 ---
+# Object Expression String Literal Key.Expect
 
 ## Input
 
@@ -50,4 +49,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

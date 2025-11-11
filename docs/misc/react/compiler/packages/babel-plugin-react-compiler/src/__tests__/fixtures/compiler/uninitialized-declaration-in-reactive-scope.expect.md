@@ -1,13 +1,12 @@
 ---
+title: Uninitialized Declaration In Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: uninitialized-declaration-in-reactive-scope.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = mutate();\n  let y;\n\
-  \  foo(x);\n  return [y, x];\n}"
 tags:
 - javascript
-title: Uninitialized Declaration In Reactive Scope.Expect
+last_updated: null
+source_file: uninitialized-declaration-in-reactive-scope.expect.md
 ---
+# Uninitialized Declaration In Reactive Scope.Expect
 
 ## Input
 
@@ -41,4 +40,3 @@ function Component(props) {
 }
 
 ```
-      

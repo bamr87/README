@@ -1,14 +1,12 @@
 ---
+title: Fbtparam With Jsx Element Content.Expect
 category: misc
-last_updated: null
-source_file: fbtparam-with-jsx-element-content.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbtparam With Jsx Element Content.Expect
+last_updated: null
+source_file: fbtparam-with-jsx-element-content.expect.md
 ---
+# Fbtparam With Jsx Element Content.Expect
 
 ## Input
 
@@ -83,4 +81,3 @@ function Component(t0) {
 }
 
 ```
-      

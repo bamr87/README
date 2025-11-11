@@ -1,16 +1,14 @@
 ---
+title: Mutable Lifetime With Aliasing.Expect
 category: api
-last_updated: null
-source_file: mutable-lifetime-with-aliasing.expect.md
-summary: "```javascript\nfunction mutate(x, y) {\n  'use no forget';\n  if (!Array.isArray(x.value))\
-  \ {\n    x.value = [];\n  }\n  x.value.push(y);\n  if (y != null) {\n    y.value\
-  \ = x;\n  }\n}"
 tags:
 - javascript
 - testing
 - api
-title: Mutable Lifetime With Aliasing.Expect
+last_updated: null
+source_file: mutable-lifetime-with-aliasing.expect.md
 ---
+# Mutable Lifetime With Aliasing.Expect
 
 ## Input
 
@@ -122,6 +120,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":[{}],"value":[{"c":{},"value":"[[ cyclic ref *0 ]]"},null]}

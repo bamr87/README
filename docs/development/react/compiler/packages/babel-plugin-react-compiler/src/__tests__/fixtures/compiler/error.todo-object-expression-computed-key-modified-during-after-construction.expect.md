@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Object Expression Computed Key Modified During After Construction.Expect
 category: development
-last_updated: null
-source_file: error.todo-object-expression-computed-key-modified-during-after-construction.expect.md
-summary: '```javascript
-
-  import {identity, mutate, mutateAndReturn} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo Object Expression Computed Key Modified During After Construction.Expect
+last_updated: null
+source_file: error.todo-object-expression-computed-key-modified-during-after-construction.expect.md
 ---
+# Error.Todo Object Expression Computed Key Modified During After Construction.Expect
 
 ## Input
 
@@ -49,5 +47,4 @@ error.todo-object-expression-computed-key-modified-during-after-construction.ts:
   8 |   mutate(key);
   9 |   return context;
 ```
-          
-      
+

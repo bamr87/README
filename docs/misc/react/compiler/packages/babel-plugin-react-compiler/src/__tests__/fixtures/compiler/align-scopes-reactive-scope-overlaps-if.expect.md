@@ -1,14 +1,12 @@
 ---
+title: Align Scopes Reactive Scope Overlaps If.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-reactive-scope-overlaps-if.expect.md
-summary: "``javascript\nfunction useFoo({cond}) {\n  let items: any = {};\n  b0: {\n\
-  \    if (cond) {\n      // Mutable range of items` begins here, but its reactive\
-  \ scope block\n      // should be aligned to above the..."
 tags:
 - javascript
-title: Align Scopes Reactive Scope Overlaps If.Expect
+last_updated: null
+source_file: align-scopes-reactive-scope-overlaps-if.expect.md
 ---
+# Align Scopes Reactive Scope Overlaps If.Expect
 
 ## Input
 
@@ -88,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]
 [2]

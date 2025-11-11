@@ -1,13 +1,12 @@
 ---
+title: "Functionexpr\u2013Conditional Access.Expect"
 category: misc
-last_updated: null
-source_file: functionexpr–conditional-access.expect.md
-summary: "```javascript\n// @enableTreatFunctionDepsAsConditional\nfunction Component(props)\
-  \ {\n  function getLength() {\n    return props.bar.length;\n  }"
 tags:
 - javascript
-title: Functionexpr–Conditional Access.Expect
+last_updated: null
+source_file: "functionexpr\u2013conditional-access.expect.md"
 ---
+# Functionexpr–Conditional Access.Expect
 
 ## Input
 
@@ -63,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

@@ -1,23 +1,13 @@
 ---
+title: Cond Scope.Expect
 category: misc
-last_updated: null
-source_file: cond-scope.expect.md
-summary: '``javascript
-
-  // Some reactive scopes are created within a conditional. If a child scope
-
-  // is within a conditional, its reactive dependencies should be propagated
-
-  // as conditionals
-
-  //
-
-  // In this test...'
 tags:
 - javascript
 - testing
-title: Cond Scope.Expect
+last_updated: null
+source_file: cond-scope.expect.md
 ---
+# Cond Scope.Expect
 
 ## Input
 
@@ -112,6 +102,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

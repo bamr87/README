@@ -1,14 +1,12 @@
 ---
+title: Independent.Expect
 category: misc
-last_updated: null
-source_file: independent.expect.md
-summary: "```javascript\n/\n  Should produce 3 scopes:\n \n  a: inputs=props.a, outputs=a\n\
-  \    a = compute(props.a);\n  b: inputs=props.b, outputs=b\n    b = compute(props.b);\n\
-  \  return: inputs=a, b outputs=return\n    ..."
 tags:
 - javascript
-title: Independent.Expect
+last_updated: null
+source_file: independent.expect.md
 ---
+# Independent.Expect
 
 ## Input
 
@@ -85,4 +83,3 @@ function foo() {}
 function Foo() {}
 
 ```
-      

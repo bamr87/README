@@ -1,14 +1,12 @@
 ---
+title: Jsx Lowercase Localvar Memberexpr.Expect
 category: misc
-last_updated: null
-source_file: jsx-lowercase-localvar-memberexpr.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nfunction\
-  \ Component({name}) {\n  const localVar = SharedRuntime;\n  return <localVar.Stringify>hello\
-  \ world {name}</localVar.Stringify>;\n}"
 tags:
 - javascript
-title: Jsx Lowercase Localvar Memberexpr.Expect
+last_updated: null
+source_file: jsx-lowercase-localvar-memberexpr.expect.md
 ---
+# Jsx Lowercase Localvar Memberexpr.Expect
 
 ## Input
 
@@ -51,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":["hello world ","sathya"]}</div>

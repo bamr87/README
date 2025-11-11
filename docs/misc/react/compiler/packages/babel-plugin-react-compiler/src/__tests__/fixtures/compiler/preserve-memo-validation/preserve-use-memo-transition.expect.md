@@ -1,16 +1,12 @@
 ---
+title: Preserve Use Memo Transition.Expect
 category: misc
-last_updated: null
-source_file: preserve-use-memo-transition.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useTransition} from ''react'';'
 tags:
 - javascript
-title: Preserve Use Memo Transition.Expect
+last_updated: null
+source_file: preserve-use-memo-transition.expect.md
 ---
+# Preserve Use Memo Transition.Expect
 
 ## Input
 
@@ -60,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

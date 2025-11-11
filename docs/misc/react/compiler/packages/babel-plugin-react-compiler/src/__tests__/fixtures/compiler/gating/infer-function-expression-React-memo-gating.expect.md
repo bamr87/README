@@ -1,14 +1,12 @@
 ---
+title: Infer Function Expression React Memo Gating.Expect
 category: misc
-last_updated: null
-source_file: infer-function-expression-React-memo-gating.expect.md
-summary: "```javascript\n// @gating @compilationMode:\"infer\"\nimport React from\
-  \ 'react';\nexport default React.forwardRef(function notNamedLikeAComponent(props)\
-  \ {\n  return <div />;\n});"
 tags:
 - javascript
-title: Infer Function Expression React Memo Gating.Expect
+last_updated: null
+source_file: infer-function-expression-React-memo-gating.expect.md
 ---
+# Infer Function Expression React Memo Gating.Expect
 
 ## Input
 
@@ -46,7 +44,7 @@ export default React.forwardRef(
 );
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented
 logs: ['forwardRef render functions accept exactly two parameters: props and ref. %s','Did you forget to use the ref parameter?']

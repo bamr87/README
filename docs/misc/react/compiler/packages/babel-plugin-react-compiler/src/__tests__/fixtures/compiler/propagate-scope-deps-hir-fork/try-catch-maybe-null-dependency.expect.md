@@ -1,16 +1,12 @@
 ---
+title: Try Catch Maybe Null Dependency.Expect
 category: misc
-last_updated: null
-source_file: try-catch-maybe-null-dependency.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Try Catch Maybe Null Dependency.Expect
+last_updated: null
+source_file: try-catch-maybe-null-dependency.expect.md
 ---
+# Try Catch Maybe Null Dependency.Expect
 
 ## Input
 
@@ -84,7 +80,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["null"]
 [null]

@@ -1,14 +1,12 @@
 ---
+title: Fbt Preserve Whitespace Subtree.Expect
 category: misc
-last_updated: null
-source_file: fbt-preserve-whitespace-subtree.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Preserve Whitespace Subtree.Expect
+last_updated: null
+source_file: fbt-preserve-whitespace-subtree.expect.md
 ---
+# Fbt Preserve Whitespace Subtree.Expect
 
 ## Input
 
@@ -95,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <span>Jason !</span>

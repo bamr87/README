@@ -1,14 +1,12 @@
 ---
+title: Switch Non Final Default.Expect
 category: misc
-last_updated: null
-source_file: switch-non-final-default.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  let x = [];\n  let y;\n  switch (props.p0) {\n    case 1: {\n      break;\n \
-  \   }\n    case true: {\n      x.push(props.p2);\n      y = ..."
 tags:
 - javascript
-title: Switch Non Final Default.Expect
+last_updated: null
+source_file: switch-non-final-default.expect.md
 ---
+# Switch Non Final Default.Expect
 
 ## Input
 
@@ -96,6 +94,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

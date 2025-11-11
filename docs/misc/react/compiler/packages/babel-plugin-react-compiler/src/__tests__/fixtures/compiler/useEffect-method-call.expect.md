@@ -1,13 +1,12 @@
 ---
+title: Useeffect Method Call.Expect
 category: misc
-last_updated: null
-source_file: useEffect-method-call.expect.md
-summary: "```javascript\nlet x = {};\nfunction Component() {\n  React.useEffect(()\
-  \ => {\n    x.foo = 1;\n  });\n}"
 tags:
 - javascript
-title: Useeffect Method Call.Expect
+last_updated: null
+source_file: useEffect-method-call.expect.md
 ---
+# Useeffect Method Call.Expect
 
 ## Input
 
@@ -43,6 +42,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

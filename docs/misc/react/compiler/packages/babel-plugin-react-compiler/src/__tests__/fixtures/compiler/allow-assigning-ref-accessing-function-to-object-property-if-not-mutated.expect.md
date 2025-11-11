@@ -1,16 +1,12 @@
 ---
+title: Allow Assigning Ref Accessing Function To Object Property If Not Mutated.Expect
 category: misc
-last_updated: null
-source_file: allow-assigning-ref-accessing-function-to-object-property-if-not-mutated.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Allow Assigning Ref Accessing Function To Object Property If Not Mutated.Expect
+last_updated: null
+source_file: allow-assigning-ref-accessing-function-to-object-property-if-not-mutated.expect.md
 ---
+# Allow Assigning Ref Accessing Function To Object Property If Not Mutated.Expect
 
 ## Input
 
@@ -60,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"object":{"foo":{"kind":"Function","result":42}},"shouldInvokeFns":true}</div>

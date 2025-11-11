@@ -1,14 +1,12 @@
 ---
+title: Error.Bailout On Suppression Of Custom Rule.Expect
 category: misc
-last_updated: null
-source_file: error.bailout-on-suppression-of-custom-rule.expect.md
-summary: '```javascript
-
-  // @eslintSuppressionRules:["myapp","reactrule"]'
 tags:
 - javascript
-title: Error.Bailout On Suppression Of Custom Rule.Expect
+last_updated: null
+source_file: error.bailout-on-suppression-of-custom-rule.expect.md
 ---
+# Error.Bailout On Suppression Of Custom Rule.Expect
 
 ## Input
 
@@ -58,5 +56,4 @@ error.bailout-on-suppression-of-custom-rule.ts:7:2
    9 | }
   10 | /* eslint-enable my-app/react-rule */
 ```
-          
-      
+

@@ -1,13 +1,12 @@
 ---
+title: Infer Phi Primitive.Expect
 category: misc
-last_updated: null
-source_file: infer-phi-primitive.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  let x;\n  if (a) {\n    x = 1;\n\
-  \  } else {\n    x = 2;\n  }"
 tags:
 - javascript
-title: Infer Phi Primitive.Expect
+last_updated: null
+source_file: infer-phi-primitive.expect.md
 ---
+# Infer Phi Primitive.Expect
 
 ## Input
 
@@ -54,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

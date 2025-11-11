@@ -1,13 +1,12 @@
 ---
+title: Capturing Function Member Expr Call.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-member-expr-call.expect.md
-summary: "```javascript\nfunction component({mutator}) {\n  const poke = () => {\n\
-  \    mutator.poke();\n  };"
 tags:
 - javascript
-title: Capturing Function Member Expr Call.Expect
+last_updated: null
+source_file: capturing-function-member-expr-call.expect.md
 ---
+# Capturing Function Member Expr Call.Expect
 
 ## Input
 
@@ -68,4 +67,3 @@ function component(t0) {
 }
 
 ```
-      

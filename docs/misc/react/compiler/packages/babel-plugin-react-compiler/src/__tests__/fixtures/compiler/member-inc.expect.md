@@ -1,14 +1,12 @@
 ---
+title: Member Inc.Expect
 category: misc
-last_updated: null
-source_file: member-inc.expect.md
-summary: '```javascript
-
-  //@flow'
 tags:
 - javascript
-title: Member Inc.Expect
+last_updated: null
+source_file: member-inc.expect.md
 ---
+# Member Inc.Expect
 
 ## Input
 
@@ -68,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [2,2,3,3,4,'5','5',6]

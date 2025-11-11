@@ -1,14 +1,12 @@
 ---
+title: Usememo Infer More Specific.Expect
 category: misc
-last_updated: null
-source_file: useMemo-infer-more-specific.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usememo Infer More Specific.Expect
+last_updated: null
+source_file: useMemo-infer-more-specific.expect.md
 ---
+# Usememo Infer More Specific.Expect
 
 ## Input
 
@@ -64,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]

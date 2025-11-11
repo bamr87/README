@@ -1,21 +1,19 @@
 ---
+title: Manual Testing Fixtures
 category: development
-last_updated: null
-source_file: README.md
-summary: "This folder exists for React contributors only.  \nIf you use React, you\
-  \ don't need to worry about it."
 tags:
 - javascript
 - testing
 - development
-title: Manual Testing Fixtures
+last_updated: null
+source_file: README.md
 ---
 # Manual Testing Fixtures
 
-This folder exists for **React contributors** only.  
+This folder exists for **React contributors** only.
 If you use React, you don't need to worry about it.
 
-These fixtures verify that the built React distributions are usable in different environments.  
+These fixtures verify that the built React distributions are usable in different environments.
 **They are not running automatically.** (At least not yet. Feel free to contribute to automate them.)
 
 Run them when you make changes to how we package React and ReactDOM.

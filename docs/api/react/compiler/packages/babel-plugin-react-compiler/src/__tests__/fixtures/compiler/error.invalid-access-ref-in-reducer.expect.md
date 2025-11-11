@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Access Ref In Reducer.Expect
 category: api
-last_updated: null
-source_file: error.invalid-access-ref-in-reducer.expect.md
-summary: '```javascript
-
-  import {useReducer, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Access Ref In Reducer.Expect
+last_updated: null
+source_file: error.invalid-access-ref-in-reducer.expect.md
 ---
+# Error.Invalid Access Ref In Reducer.Expect
 
 ## Input
 
@@ -49,5 +47,4 @@ error.invalid-access-ref-in-reducer.ts:5:29
   7 |   return <Stringify state={state} />;
   8 | }
 ```
-          
-      
+

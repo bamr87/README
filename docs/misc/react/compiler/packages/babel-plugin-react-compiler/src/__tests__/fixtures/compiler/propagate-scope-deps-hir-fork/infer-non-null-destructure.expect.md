@@ -1,16 +1,12 @@
 ---
+title: Infer Non Null Destructure.Expect
 category: misc
-last_updated: null
-source_file: infer-non-null-destructure.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {identity, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Non Null Destructure.Expect
+last_updated: null
+source_file: infer-non-null-destructure.expect.md
 ---
+# Infer Non Null Destructure.Expect
 
 ## Input
 
@@ -99,6 +95,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"arr":[],"value":2}

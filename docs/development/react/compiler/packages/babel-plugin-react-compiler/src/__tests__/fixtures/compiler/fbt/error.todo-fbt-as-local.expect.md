@@ -1,17 +1,13 @@
 ---
+title: Error.Todo Fbt As Local.Expect
 category: development
-last_updated: null
-source_file: error.todo-fbt-as-local.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo Fbt As Local.Expect
+last_updated: null
+source_file: error.todo-fbt-as-local.expect.md
 ---
+# Error.Todo Fbt As Local.Expect
 
 ## Input
 
@@ -79,5 +75,4 @@ error.todo-fbt-as-local.ts:18:19
   20 |       `Hello, ${fbt.param('(key) name', identity(props.name))}!`,
   21 |       '(description) Greeting'
 ```
-          
-      
+

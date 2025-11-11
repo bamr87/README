@@ -1,17 +1,14 @@
 ---
+title: Error.Invalid Known Incompatible Hook Return Property.Expect
 category: api
-last_updated: null
-source_file: error.invalid-known-incompatible-hook-return-property.expect.md
-summary: '```javascript
-
-  import {useKnownIncompatibleIndirect} from ''ReactCompilerKnownIncompatibleTest'';'
 tags:
 - javascript
 - api
 - testing
-- api
-title: Error.Invalid Known Incompatible Hook Return Property.Expect
+last_updated: null
+source_file: error.invalid-known-incompatible-hook-return-property.expect.md
 ---
+# Error.Invalid Known Incompatible Hook Return Property.Expect
 
 ## Input
 
@@ -43,5 +40,4 @@ error.invalid-known-incompatible-hook-return-property.ts:5:15
   6 | }
   7 |
 ```
-          
-      
+

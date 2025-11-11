@@ -1,14 +1,12 @@
 ---
+title: Todo Transitivity Createfrom Capture Lambda.Expect
 category: misc
-last_updated: null
-source_file: todo-transitivity-createfrom-capture-lambda.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  typedCapture,\n  typedCreateFrom,\n  typedMutate,\n\
-  \  ValidateMemoization,\n} from 'sharedrunti..."
 tags:
 - javascript
-title: Todo Transitivity Createfrom Capture Lambda.Expect
+last_updated: null
+source_file: todo-transitivity-createfrom-capture-lambda.expect.md
 ---
+# Todo Transitivity Createfrom Capture Lambda.Expect
 
 ## Input
 
@@ -116,7 +114,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0],"output":[{"a":0}]}</div>
 <div>{"inputs":[0,1],"output":[{"a":0}]}</div>

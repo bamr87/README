@@ -1,14 +1,12 @@
 ---
+title: Try Catch With Catch Param.Expect
 category: misc
-last_updated: null
-source_file: try-catch-with-catch-param.expect.md
-summary: '```javascript
-
-  const {throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch With Catch Param.Expect
+last_updated: null
+source_file: try-catch-with-catch-param.expect.md
 ---
+# Try Catch With Catch Param.Expect
 
 ## Input
 
@@ -76,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

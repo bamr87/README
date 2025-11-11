@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Optional Call Chain In Logical Expr.Expect
 category: misc
-last_updated: null
-source_file: error.todo-optional-call-chain-in-logical-expr.expect.md
-summary: '```javascript
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Error.Todo Optional Call Chain In Logical Expr.Expect
+last_updated: null
+source_file: error.todo-optional-call-chain-in-logical-expr.expect.md
 ---
+# Error.Todo Optional Call Chain In Logical Expr.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.todo-optional-call-chain-in-logical-expr.ts:5:30
   7 |
   8 | export const FIXTURE_ENTRYPONT = {
 ```
-          
-      
+

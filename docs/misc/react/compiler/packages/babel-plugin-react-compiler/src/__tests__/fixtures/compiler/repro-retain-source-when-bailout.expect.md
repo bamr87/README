@@ -1,16 +1,12 @@
 ---
+title: Repro Retain Source When Bailout.Expect
 category: misc
-last_updated: null
-source_file: repro-retain-source-when-bailout.expect.md
-summary: '```javascript
-
-  // @panicThreshold:"none"
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Retain Source When Bailout.Expect
+last_updated: null
+source_file: repro-retain-source-when-bailout.expect.md
 ---
+# Repro Retain Source When Bailout.Expect
 
 ## Input
 
@@ -61,7 +57,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}
 logs: ['bar called']

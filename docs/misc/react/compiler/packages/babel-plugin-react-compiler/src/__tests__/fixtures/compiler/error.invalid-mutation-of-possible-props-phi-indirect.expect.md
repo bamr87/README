@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Mutation Of Possible Props Phi Indirect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutation-of-possible-props-phi-indirect.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = cond ? someGlobal\
-  \ : props.foo;\n  const mutatePhiThatCouldBeProps = () => {\n    x.y = true;\n \
-  \ };\n  const indirectMutateProps = () => {\n    mutatePhiT..."
 tags:
 - javascript
-title: Error.Invalid Mutation Of Possible Props Phi Indirect.Expect
+last_updated: null
+source_file: error.invalid-mutation-of-possible-props-phi-indirect.expect.md
 ---
+# Error.Invalid Mutation Of Possible Props Phi Indirect.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.invalid-mutation-of-possible-props-phi-indirect.ts:4:4
   6 |   const indirectMutateProps = () => {
   7 |     mutatePhiThatCouldBeProps();
 ```
-          
-      
+

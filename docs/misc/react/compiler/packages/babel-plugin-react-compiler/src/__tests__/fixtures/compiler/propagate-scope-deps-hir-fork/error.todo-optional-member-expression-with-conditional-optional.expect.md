@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Optional Member Expression With Conditional Optional.Expect
 category: misc
-last_updated: null
-source_file: error.todo-optional-member-expression-with-conditional-optional.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies\
-  \ @enablePropagateDepsInHIR\nimport {ValidateMemoization} from 'sharedruntime';\n\
-  function Component(props) {\n  c..."
 tags:
 - javascript
-title: Error.Todo Optional Member Expression With Conditional Optional.Expect
+last_updated: null
+source_file: error.todo-optional-member-expression-with-conditional-optional.expect.md
 ---
+# Error.Todo Optional Member Expression With Conditional Optional.Expect
 
 ## Input
 
@@ -64,5 +62,4 @@ error.todo-optional-member-expression-with-conditional-optional.ts:4:23
   13 |     <ValidateMemoization inputs={[props?.items, props.cond]} output={data} />
   14 |   );
 ```
-          
-      
+

@@ -1,16 +1,12 @@
 ---
+title: Ref Like Name In Usecallback.Expect
 category: misc
-last_updated: null
-source_file: ref-like-name-in-useCallback.expect.md
-summary: '```javascript
-
-  // @enableTreatRefLikeIdentifiersAsRefs @validatePreserveExistingMemoizationGuarantees
-
-  import {useRef, useCallback} from ''react'';'
 tags:
 - javascript
-title: Ref Like Name In Usecallback.Expect
+last_updated: null
+source_file: ref-like-name-in-useCallback.expect.md
 ---
+# Ref Like Name In Usecallback.Expect
 
 ## Input
 
@@ -91,6 +87,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button></button>

@@ -1,18 +1,12 @@
 ---
+title: Type Provider Log Default Import.Expect
 category: misc
-last_updated: null
-source_file: type-provider-log-default-import.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import typedLog from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Provider Log Default Import.Expect
+last_updated: null
+source_file: type-provider-log-default-import.expect.md
 ---
+# Type Provider Log Default Import.Expect
 
 ## Input
 
@@ -146,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":{"a":0}}</div><div>{"inputs":[0],"output":{"b":0}}</div>
 <div>{"inputs":[1],"output":{"a":1}}</div><div>{"inputs":[0],"output":{"b":0}}</div>

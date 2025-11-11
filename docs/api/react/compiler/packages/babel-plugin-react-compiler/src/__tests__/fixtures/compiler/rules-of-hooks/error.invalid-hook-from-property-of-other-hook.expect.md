@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Hook From Property Of Other Hook.Expect
 category: api
-last_updated: null
-source_file: error.invalid-hook-from-property-of-other-hook.expect.md
-summary: "```javascript\nfunction useFoo({data}) {\n  const player = useVideoPlayer();\n\
-  \  const foo = player.useMedia();\n  return foo;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Hook From Property Of Other Hook.Expect
+last_updated: null
+source_file: error.invalid-hook-from-property-of-other-hook.expect.md
 ---
+# Error.Invalid Hook From Property Of Other Hook.Expect
 
 ## Input
 
@@ -38,5 +37,4 @@ error.invalid-hook-from-property-of-other-hook.ts:3:14
   5 | }
   6 |
 ```
-          
-      
+

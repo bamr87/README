@@ -1,14 +1,12 @@
 ---
+title: Update Expression On Function Parameter 1.Expect
 category: misc
-last_updated: null
-source_file: update-expression-on-function-parameter-1.expect.md
-summary: "```javascript\nfunction Component({a: a, b: [b], c: {c}}) {\n  let d = a++;\n\
-  \  let e = ++a;\n  let f = b;\n  let g = b;\n  let h = c++;\n  let i = c;\n  return\
-  \ [a, b, c, d, e, f, g, h, i];\n}"
 tags:
 - javascript
-title: Update Expression On Function Parameter 1.Expect
+last_updated: null
+source_file: update-expression-on-function-parameter-1.expect.md
 ---
+# Update Expression On Function Parameter 1.Expect
 
 ## Input
 
@@ -82,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [4,1,4,2,4,3,1,4,4]

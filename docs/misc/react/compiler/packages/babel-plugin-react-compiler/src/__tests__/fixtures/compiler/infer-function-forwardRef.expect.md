@@ -1,13 +1,12 @@
 ---
+title: Infer Function Forwardref.Expect
 category: misc
-last_updated: null
-source_file: infer-function-forwardRef.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nReact.forwardRef(props =>\
-  \ {\n  return <div />;\n});"
 tags:
 - javascript
-title: Infer Function Forwardref.Expect
+last_updated: null
+source_file: infer-function-forwardRef.expect.md
 ---
+# Infer Function Forwardref.Expect
 
 ## Input
 
@@ -36,4 +35,3 @@ React.forwardRef((props) => {
 });
 
 ```
-      

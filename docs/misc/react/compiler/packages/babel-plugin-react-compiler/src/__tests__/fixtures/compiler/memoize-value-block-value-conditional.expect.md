@@ -1,13 +1,12 @@
 ---
+title: Memoize Value Block Value Conditional.Expect
 category: misc
-last_updated: null
-source_file: memoize-value-block-value-conditional.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  let x;\n  true ? (x = []) : (x =\
-  \ {});\n  return x;\n}"
 tags:
 - javascript
-title: Memoize Value Block Value Conditional.Expect
+last_updated: null
+source_file: memoize-value-block-value-conditional.expect.md
 ---
+# Memoize Value Block Value Conditional.Expect
 
 ## Input
 
@@ -47,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

@@ -1,13 +1,12 @@
 ---
+title: Unused Conditional.Expect
 category: misc
-last_updated: null
-source_file: unused-conditional.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;\n  (x = 1) && (x\
-  \ = 2);\n  return x;\n}"
 tags:
 - javascript
-title: Unused Conditional.Expect
+last_updated: null
+source_file: unused-conditional.expect.md
 ---
+# Unused Conditional.Expect
 
 ## Input
 
@@ -42,4 +41,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

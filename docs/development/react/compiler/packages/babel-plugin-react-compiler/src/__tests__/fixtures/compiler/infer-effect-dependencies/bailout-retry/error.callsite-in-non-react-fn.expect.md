@@ -1,17 +1,13 @@
 ---
+title: Error.Callsite In Non React Fn.Expect
 category: development
-last_updated: null
-source_file: error.callsite-in-non-react-fn.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @compilationMode:"infer" @panicThreshold:"none"
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Callsite In Non React Fn.Expect
+last_updated: null
+source_file: error.callsite-in-non-react-fn.expect.md
 ---
+# Error.Callsite In Non React Fn.Expect
 
 ## Input
 
@@ -43,5 +39,4 @@ error.callsite-in-non-react-fn.ts:5:2
   6 | }
   7 |
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Reassigned Phi In Returned Function Expression.Expect
 category: misc
-last_updated: null
-source_file: reassigned-phi-in-returned-function-expression.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return () => {\n    let str;\n\
-  \    if (arguments.length) {\n      str = arguments[0];\n    } else {\n      str\
-  \ = props.str;\n    }\n    global.log(str);\n  };\n}"
 tags:
 - javascript
-title: Reassigned Phi In Returned Function Expression.Expect
+last_updated: null
+source_file: reassigned-phi-in-returned-function-expression.expect.md
 ---
+# Reassigned Phi In Returned Function Expression.Expect
 
 ## Input
 
@@ -54,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Spread.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-spread.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Spread.Expect
+last_updated: null
+source_file: error.invalid-spread.expect.md
 ---
+# Error.Invalid Spread.Expect
 
 ## Input
 
@@ -50,5 +46,4 @@ error.invalid-spread.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

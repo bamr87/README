@@ -1,14 +1,12 @@
 ---
+title: Align Scope Starts Within Cond.Expect
 category: misc
-last_updated: null
-source_file: align-scope-starts-within-cond.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scope Starts Within Cond.Expect
+last_updated: null
+source_file: align-scope-starts-within-cond.expect.md
 ---
+# Align Scope Starts Within Cond.Expect
 
 ## Input
 
@@ -82,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"wat0":"joe"}

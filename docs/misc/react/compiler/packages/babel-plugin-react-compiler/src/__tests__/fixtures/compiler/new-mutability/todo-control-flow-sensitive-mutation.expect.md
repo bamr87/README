@@ -1,14 +1,12 @@
 ---
+title: Todo Control Flow Sensitive Mutation.Expect
 category: misc
-last_updated: null
-source_file: todo-control-flow-sensitive-mutation.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nimport {\n  mutate,\n  typedCapture,\n  typedCreateFrom,\n\
-  \  typedMutate,\n  ValidateMemoization,\n} from 's..."
 tags:
 - javascript
-title: Todo Control Flow Sensitive Mutation.Expect
+last_updated: null
+source_file: todo-control-flow-sensitive-mutation.expect.md
 ---
+# Todo Control Flow Sensitive Mutation.Expect
 
 ## Input
 
@@ -158,7 +156,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0,0],"output":[{"value":0},{"value":0}]}</div>;<div>{"inputs":[0,0,0],"output":{"value":0}}</div>;
 <div>{"inputs":[0,1,0],"output":[{"value":0},"joe"]}</div>;<div>{"inputs":[0,1,0],"output":{"value":0}}</div>;

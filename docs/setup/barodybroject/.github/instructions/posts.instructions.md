@@ -1,52 +1,15 @@
 ---
-applyTo: src/pages/_posts/**/*.md
-author: Barodybroject Team
+title: Content Creation Instructions for Barodybroject
 category: setup
-containerRequirements:
-  baseImage: jekyll/jekyll:latest
-  description: Jekyll development environment for content creation
-  environment:
-    CONTENT_VALIDATION: enabled
-    JEKYLL_ENV: development
-  exposedPorts:
-  - 4002
-  portDescription: Jekyll development server for blog content
-  volumes:
-  - /pages:rw
-  - /assets:rw
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and project context
-- documentation.instructions.md: Markdown formatting standards
-- features.instructions.md: Feature development patterns
-description: VS Code Copilot-optimized content creation standards for Django/OpenAI
-  development blog and technical documentation
-file: posts.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  content_creation_path:
-  - research_and_planning
-  - drafting
-  - technical_validation
-  - review_and_editing
-  - publication
-  - community_engagement
-source_file: posts.instructions.md
-summary: These instructions provide comprehensive guidance for creating highquality
-  technical content that documents Django/OpenAI development experiences and shares
-  valuable insights about AIpowered web appli...
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Content Creation Instructions for Barodybroject
-version: 1.0.0
+last_updated: null
+source_file: posts.instructions.md
 ---
-
-
 # Content Creation Instructions for Barodybroject
 
 These instructions provide comprehensive guidance for creating high-quality technical content that documents Django/OpenAI development experiences and shares valuable insights about AI-powered web application development. Posts serve as both learning resources and development chronicles for the Barodybroject community.
@@ -241,30 +204,30 @@ import uuid
 
 class Article(models.Model):
     """Model for AI-generated parody articles"""
-    
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=200)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    
+
     # AI generation tracking
     ai_prompt = models.TextField(blank=True)
     ai_model = models.CharField(max_length=50, blank=True)
     generation_metadata = models.JSONField(default=dict)
-    
+
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     class Meta:
         ordering = ['-created_at']
-    
+
     def __str__(self):
         return self.title
 ```
 
 **Expected Result**: Django model that tracks AI generation metadata
 
-**Troubleshooting**: 
+**Troubleshooting**:
 - Ensure UUID field is properly imported
 - Verify JSONField compatibility with your Django version
 
@@ -284,12 +247,12 @@ logger = logging.getLogger(__name__)
 
 class OpenAIService:
     """Service for OpenAI API integration"""
-    
+
     def __init__(self):
         openai.api_key = settings.OPENAI_API_KEY
         self.model = getattr(settings, 'OPENAI_MODEL', 'gpt-4')
         self.max_retries = 3
-    
+
     def generate_content(self, prompt: str) -> Dict[str, Any]:
         """Generate content with retry logic"""
         for attempt in range(self.max_retries):
@@ -303,13 +266,13 @@ class OpenAIService:
                     max_tokens=1000,
                     temperature=0.7
                 )
-                
+
                 return {
                     'content': response.choices[0].message.content,
                     'model': self.model,
                     'usage': response.usage._asdict()
                 }
-                
+
             except openai.RateLimitError as e:
                 logger.warning(f"Rate limit hit (attempt {attempt + 1}): {e}")
                 if attempt < self.max_retries - 1:
@@ -337,11 +300,11 @@ from .serializers import ArticleSerializer
 
 class ArticleViewSet(viewsets.ModelViewSet):
     """API viewset for articles with AI generation"""
-    
+
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
     permission_classes = [IsAuthenticated]
-    
+
     @action(detail=False, methods=['post'])
     def generate(self, request):
         """Generate article using OpenAI"""
@@ -351,13 +314,13 @@ class ArticleViewSet(viewsets.ModelViewSet):
                 {'error': 'Prompt is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             openai_service = OpenAIService()
             result = openai_service.generate_content(prompt)
-            
+
             return Response(result, status=status.HTTP_200_OK)
-            
+
         except Exception as e:
             return Response(
                 {'error': str(e)},
@@ -389,10 +352,10 @@ def test_generate_content_success(mock_create):
     mock_response.usage = MagicMock()
     mock_response.usage._asdict.return_value = {'total_tokens': 100}
     mock_create.return_value = mock_response
-    
+
     service = OpenAIService()
     result = service.generate_content('Test prompt')
-    
+
     assert result['content'] == 'Generated content'
     assert result['model'] == service.model
     assert 'usage' in result
@@ -411,17 +374,17 @@ def test_generate_article_endpoint():
     client = APIClient()
     user = User.objects.create_user(username='test', password='test')
     client.force_authenticate(user=user)
-    
+
     with patch('parodynews.services.openai_service.OpenAIService.generate_content') as mock_gen:
         mock_gen.return_value = {
             'content': 'Generated article content',
             'model': 'gpt-4'
         }
-        
+
         response = client.post('/api/articles/generate/', {
             'prompt': 'Write about AI development'
         })
-        
+
         assert response.status_code == 200
         assert 'content' in response.data
 ```
@@ -537,13 +500,13 @@ CMD ["gunicorn", "barodybroject.wsgi:application", "--bind", "0.0.0.0:8000"]
 class ArticleGenerationView(APIView):
     """
     API endpoint for generating articles using OpenAI
-    
+
     This view handles article generation requests, integrates with
     OpenAI service, and returns structured responses with proper
     error handling and validation.
     """
     permission_classes = [IsAuthenticated]
-    
+
     def post(self, request):
         """Generate article content via OpenAI API"""
         # Validate input parameters
@@ -553,22 +516,22 @@ class ArticleGenerationView(APIView):
                 {'error': 'Prompt must be at least 10 characters'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             # Initialize OpenAI service
             openai_service = OpenAIService()
-            
+
             # Generate content with error handling
             result = openai_service.generate_article_content(
                 prompt=prompt,
                 category=request.data.get('category', 'general')
             )
-            
+
             # Log successful generation
             logger.info(f"Generated content for user {request.user.id}")
-            
+
             return Response(result, status=status.HTTP_200_OK)
-            
+
         except openai.RateLimitError as e:
             logger.warning(f"OpenAI rate limit exceeded: {e}")
             return Response(

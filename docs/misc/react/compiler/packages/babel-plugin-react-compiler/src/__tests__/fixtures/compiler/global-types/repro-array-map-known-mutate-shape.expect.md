@@ -1,14 +1,12 @@
 ---
+title: Repro Array Map Known Mutate Shape.Expect
 category: misc
-last_updated: null
-source_file: repro-array-map-known-mutate-shape.expect.md
-summary: '```javascript
-
-  import {Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Array Map Known Mutate Shape.Expect
+last_updated: null
+source_file: repro-array-map-known-mutate-shape.expect.md
 ---
+# Repro Array Map Known Mutate Shape.Expect
 
 ## Input
 
@@ -104,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[{"foo":2},{"baz":5}]}</div>
 <div>{"children":[{"foo":2},{"baz":6}]}</div>

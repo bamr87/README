@@ -1,14 +1,12 @@
 ---
+title: Sequential Destructuring Assignment To Scope Declarations.Expect
 category: misc
-last_updated: null
-source_file: sequential-destructuring-assignment-to-scope-declarations.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Sequential Destructuring Assignment To Scope Declarations.Expect
+last_updated: null
+source_file: sequential-destructuring-assignment-to-scope-declarations.expect.md
 ---
+# Sequential Destructuring Assignment To Scope Declarations.Expect
 
 ## Input
 
@@ -135,6 +133,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="#eee8d5"><span class="#657b83">Mofei!</span></div>

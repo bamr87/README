@@ -1,16 +1,12 @@
 ---
+title: Jsx Freeze.Expect
 category: misc
-last_updated: null
-source_file: jsx-freeze.expect.md
-summary: '```javascript
-
-  import {jsx as jsx} from ''react/jsxruntime'';
-
-  import {shallowCopy} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Freeze.Expect
+last_updated: null
+source_file: jsx-freeze.expect.md
 ---
+# Jsx Freeze.Expect
 
 ## Input
 
@@ -63,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div childprops="[object Object]">"hello world"</div>

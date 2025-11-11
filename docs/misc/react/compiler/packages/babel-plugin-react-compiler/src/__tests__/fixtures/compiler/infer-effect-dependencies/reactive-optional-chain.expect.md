@@ -1,18 +1,12 @@
 ---
+title: Reactive Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: reactive-optional-chain.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Optional Chain.Expect
+last_updated: null
+source_file: reactive-optional-chain.expect.md
 ---
+# Reactive Optional Chain.Expect
 
 ## Input
 
@@ -88,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [1,undefined]

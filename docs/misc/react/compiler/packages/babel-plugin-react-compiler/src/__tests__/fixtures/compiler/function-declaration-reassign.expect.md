@@ -1,13 +1,12 @@
 ---
+title: Function Declaration Reassign.Expect
 category: misc
-last_updated: null
-source_file: function-declaration-reassign.expect.md
-summary: "```javascript\nfunction component() {\n  function x(a) {\n    a.foo();\n\
-  \  }\n  x = {};\n  return x;\n}"
 tags:
 - javascript
-title: Function Declaration Reassign.Expect
+last_updated: null
+source_file: function-declaration-reassign.expect.md
 ---
+# Function Declaration Reassign.Expect
 
 ## Input
 
@@ -53,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

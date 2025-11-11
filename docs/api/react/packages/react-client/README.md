@@ -1,13 +1,11 @@
 ---
+title: react-client
 category: api
-last_updated: null
-source_file: README.md
-summary: This is an experimental package for consuming custom React streaming models.
 tags:
 - javascript
 - api
-- api
-title: react-client
+last_updated: null
+source_file: README.md
 ---
 # react-client
 

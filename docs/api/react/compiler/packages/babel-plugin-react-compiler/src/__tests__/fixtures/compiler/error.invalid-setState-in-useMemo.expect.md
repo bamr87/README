@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Setstate In Usememo.Expect
 category: api
-last_updated: null
-source_file: error.invalid-setState-in-useMemo.expect.md
-summary: "```javascript\nfunction useKeyedState({key, init}) {\n  const [prevKey,\
-  \ setPrevKey] = useState(key);\n  const [state, setState] = useState(init);"
 tags:
 - javascript
 - api
-title: Error.Invalid Setstate In Usememo.Expect
+last_updated: null
+source_file: error.invalid-setState-in-useMemo.expect.md
 ---
+# Error.Invalid Setstate In Usememo.Expect
 
 ## Input
 
@@ -59,5 +58,4 @@ error.invalid-setState-in-useMemo.ts:7:4
    9 |
   10 |   return state;
 ```
-          
-      
+

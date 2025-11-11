@@ -1,16 +1,12 @@
 ---
+title: Repro Separate Memoization Due To Callback Capturing.Expect
 category: misc
-last_updated: null
-source_file: repro-separate-memoization-due-to-callback-capturing.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Separate Memoization Due To Callback Capturing.Expect
+last_updated: null
+source_file: repro-separate-memoization-due-to-callback-capturing.expect.md
 ---
+# Repro Separate Memoization Due To Callback Capturing.Expect
 
 ## Input
 
@@ -152,7 +148,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[],"output":["en","ja","ko","zh"]}</div><div>{"inputs":[],"output":[{"name":"English","code":"en"},{"name":"Japanese","code":"ja"},{"name":"Korean","code":"ko"},{"name":"Chinese","code":"zh"}]}</div>
 <div>{"inputs":[],"output":["en","ja","ko","zh"]}</div><div>{"inputs":[],"output":[{"name":"English","code":"en"},{"name":"Japanese","code":"ja"},{"name":"Korean","code":"ko"},{"name":"Chinese","code":"zh"}]}</div>

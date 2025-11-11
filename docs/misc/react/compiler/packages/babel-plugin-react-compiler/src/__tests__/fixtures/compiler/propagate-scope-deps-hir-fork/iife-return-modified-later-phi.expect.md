@@ -1,14 +1,12 @@
 ---
+title: Iife Return Modified Later Phi.Expect
 category: misc
-last_updated: null
-source_file: iife-return-modified-later-phi.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  const items = (() => {\n    if (props.cond) {\n      return [];\n    } else {\n\
-  \      return null;\n    }\n  })();\n  items?.push(props..."
 tags:
 - javascript
-title: Iife Return Modified Later Phi.Expect
+last_updated: null
+source_file: iife-return-modified-later-phi.expect.md
 ---
+# Iife Return Modified Later Phi.Expect
 
 ## Input
 
@@ -66,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

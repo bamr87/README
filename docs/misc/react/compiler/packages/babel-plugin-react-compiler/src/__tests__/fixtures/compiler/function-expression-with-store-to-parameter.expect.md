@@ -1,14 +1,12 @@
 ---
+title: Function Expression With Store To Parameter.Expect
 category: misc
-last_updated: null
-source_file: function-expression-with-store-to-parameter.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const mutate = (object, key,\
-  \ value) => {\n    object.updated = true;\n    object[key] = value;\n  };\n  const\
-  \ x = makeObject(props);\n  mutate(x);\n  return x;\n}"
 tags:
 - javascript
-title: Function Expression With Store To Parameter.Expect
+last_updated: null
+source_file: function-expression-with-store-to-parameter.expect.md
 ---
+# Function Expression With Store To Parameter.Expect
 
 ## Input
 
@@ -49,4 +47,3 @@ function _temp(object, key, value) {
 }
 
 ```
-      

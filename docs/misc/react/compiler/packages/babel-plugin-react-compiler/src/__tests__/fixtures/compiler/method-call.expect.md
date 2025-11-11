@@ -1,14 +1,12 @@
 ---
+title: Method Call.Expect
 category: misc
-last_updated: null
-source_file: method-call.expect.md
-summary: '```javascript
-
-  import {addOne, shallowCopy} from ''sharedruntime'';'
 tags:
 - javascript
-title: Method Call.Expect
+last_updated: null
+source_file: method-call.expect.md
 ---
+# Method Call.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 4

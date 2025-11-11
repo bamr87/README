@@ -1,16 +1,14 @@
 ---
+title: TOTP Authentication Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block headtitle %}Setup Authenticator App{% endblock %}'
 tags:
 - python
 - docker
 - azure
 - setup
-title: TOTP Authentication Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # TOTP Authentication Templates Directory
 
 ## Purpose
@@ -65,7 +63,7 @@ Contains templates for Time-based One-Time Password (TOTP) authentication setup 
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="step">
                         <h5>Step 2: Scan QR Code or Enter Key Manually</h5>
                         <div class="setup-methods">
@@ -76,7 +74,7 @@ Contains templates for Time-based One-Time Password (TOTP) authentication setup 
                                 </div>
                                 <p class="text-muted">Scan this code with your authenticator app</p>
                             </div>
-                            
+
                             <div class="manual-method">
                                 <h6>Option B: Enter Key Manually</h6>
                                 <div class="manual-key">
@@ -95,17 +93,17 @@ Contains templates for Time-based One-Time Password (TOTP) authentication setup 
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="step">
                         <h5>Step 3: Verify Setup</h5>
                         <form method="post">
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="id_token">Enter the 6-digit code from your app:</label>
-                                <input type="text" 
-                                       name="token" 
-                                       id="id_token" 
-                                       class="form-control form-control-lg text-center" 
+                                <input type="text"
+                                       name="token"
+                                       id="id_token"
+                                       class="form-control form-control-lg text-center"
                                        placeholder="000000"
                                        maxlength="6"
                                        pattern="[0-9]{6}"
@@ -115,7 +113,7 @@ Contains templates for Time-based One-Time Password (TOTP) authentication setup 
                                     The code refreshes every 30 seconds
                                 </small>
                             </div>
-                            
+
                             <button type="submit" class="btn btn-primary btn-lg btn-block">
                                 <i class="fas fa-check"></i>
                                 Activate Two-Factor Authentication
@@ -148,7 +146,7 @@ function copyToClipboard(elementId) {
 // Auto-focus and format TOTP input
 document.getElementById('id_token').addEventListener('input', function() {
     this.value = this.value.replace(/\D/g, '');
-    
+
     // Auto-submit when 6 digits entered
     if (this.value.length === 6) {
         this.form.submit();
@@ -180,28 +178,28 @@ document.getElementById('id_token').addEventListener('input', function() {
                     <strong>Security Warning:</strong>
                     <p>Disabling two-factor authentication will reduce your account security. You will no longer need your authenticator app to sign in.</p>
                 </div>
-                
+
                 <h5>Confirm Deactivation</h5>
                 <p>To disable two-factor authentication, please:</p>
-                
+
                 <form method="post">
                     {% csrf_token %}
-                    
+
                     <div class="form-group">
                         <label for="id_password">Enter your password:</label>
-                        <input type="password" 
-                               name="password" 
-                               id="id_password" 
-                               class="form-control" 
+                        <input type="password"
+                               name="password"
+                               id="id_password"
+                               class="form-control"
                                required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="id_token">Enter current 6-digit code:</label>
-                        <input type="text" 
-                               name="token" 
-                               id="id_token" 
-                               class="form-control" 
+                        <input type="text"
+                               name="token"
+                               id="id_token"
+                               class="form-control"
                                placeholder="000000"
                                maxlength="6"
                                pattern="[0-9]{6}"
@@ -210,18 +208,18 @@ document.getElementById('id_token').addEventListener('input', function() {
                             Code from your authenticator app
                         </small>
                     </div>
-                    
+
                     <div class="form-check mb-3">
-                        <input type="checkbox" 
-                               class="form-check-input" 
-                               id="id_confirm" 
+                        <input type="checkbox"
+                               class="form-check-input"
+                               id="id_confirm"
                                name="confirm"
                                required>
                         <label class="form-check-label" for="id_confirm">
                             I understand that disabling two-factor authentication reduces my account security
                         </label>
                     </div>
-                    
+
                     <div class="button-group">
                         <button type="submit" class="btn btn-danger">
                             <i class="fas fa-times"></i>
@@ -234,7 +232,7 @@ document.getElementById('id_token').addEventListener('input', function() {
                 </form>
             </div>
         </div>
-        
+
         <div class="mt-3">
             <div class="card">
                 <div class="card-body">
@@ -348,7 +346,7 @@ document.getElementById('id_token').addEventListener('input', function() {
     .setup-methods {
         grid-template-columns: 1fr;
     }
-    
+
     .app-recommendations {
         flex-direction: column;
     }
@@ -380,7 +378,7 @@ def setup_totp(request):
     if request.method == 'POST':
         token = request.POST.get('token')
         secret = request.session.get('totp_secret')
-        
+
         if pyotp.TOTP(secret).verify(token, valid_window=1):
             # Save TOTP device
             device = request.user.totpdevice_set.create(
@@ -391,17 +389,17 @@ def setup_totp(request):
             return redirect('mfa_dashboard')
         else:
             messages.error(request, 'Invalid code. Please try again.')
-    
+
     # Generate new secret for setup
     secret = pyotp.random_base32()
     request.session['totp_secret'] = secret
-    
+
     # Generate QR code
     totp_uri = pyotp.totp.TOTP(secret).provisioning_uri(
         name=request.user.email,
         issuer_name='Barody Broject'
     )
-    
+
     return render(request, 'mfa/totp/activate_form.html', {
         'secret_key': secret,
         'qr_code_url': totp_uri,
@@ -410,24 +408,24 @@ def setup_totp(request):
 
 ## Container Configuration
 - **Runtime**: Django with TOTP cryptographic libraries
-- **Dependencies**: 
+- **Dependencies**:
   - pyotp for TOTP generation and verification
   - qrcode library for QR code generation
   - PIL/Pillow for image processing
   - django-qr-code for template integration
-- **Environment**: 
+- **Environment**:
   - Secret key management for TOTP seeds
   - Session storage for setup workflows
   - Time synchronization for accurate TOTP validation
 - **Security**: Secure random number generation, time-based validation windows
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - MFA dashboard and security settings
   - User authentication and setup workflows
   - Account verification and re-authentication
   - Mobile authenticator app integration
-- **Outgoing**: 
+- **Outgoing**:
   - TOTP token validation and verification
   - User session management and authentication state
   - Security audit logging and monitoring

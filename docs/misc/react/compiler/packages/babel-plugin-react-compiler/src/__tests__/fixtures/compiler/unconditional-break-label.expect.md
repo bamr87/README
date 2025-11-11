@@ -1,13 +1,12 @@
 ---
+title: Unconditional Break Label.Expect
 category: misc
-last_updated: null
-source_file: unconditional-break-label.expect.md
-summary: "```javascript\nfunction foo(a) {\n  let x = 0;\n  bar: {\n    x = 1;\n \
-  \   break bar;\n  }\n  return a + x;\n}"
 tags:
 - javascript
-title: Unconditional Break Label.Expect
+last_updated: null
+source_file: unconditional-break-label.expect.md
 ---
+# Unconditional Break Label.Expect
 
 ## Input
 
@@ -43,4 +42,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,19 +1,15 @@
 ---
+title: functions Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n Example usage in test scripts\nfrom .functions.userlogin import\
-  \ authenticatetestuser, testloginflow\nfrom .functions.usercreate import createtestuser,\
-  \ validateusercreation"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: functions Directory
+last_updated: null
+source_file: README.md
 ---
-
 # functions Directory
 
 ## Purpose
@@ -42,11 +38,11 @@ def test_user_authentication_workflow():
         email="test@example.com",
         password="securepass123"
     )
-    
+
     # Test login flow
     login_result = test_login_flow(user.username, "securepass123")
     assert login_result.success is True
-    
+
     # Authenticate user for subsequent tests
     authenticated_user = authenticate_test_user(user)
     assert authenticated_user.is_authenticated is True

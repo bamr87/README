@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks C906Cace44E9.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-c906cace44e9.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks C906Cace44E9.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-c906cace44e9.expect.md
 ---
+# Error.Invalid Rules Of Hooks C906Cace44E9.Expect
 
 ## Input
 
@@ -40,5 +38,4 @@ error.invalid-rules-of-hooks-c906cace44e9.ts:7:2
   8 | }
   9 |
 ```
-          
-      
+

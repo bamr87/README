@@ -1,13 +1,12 @@
 ---
+title: Return In Scope.Expect
 category: misc
-last_updated: null
-source_file: return-in-scope.expect.md
-summary: "```javascript\nfunction useFoo({obj, objIsNull}) {\n  const x = [];\n  if\
-  \ (objIsNull) {\n    return;\n  }\n  x.push(obj.b);\n  return x;\n}"
 tags:
 - javascript
-title: Return In Scope.Expect
+last_updated: null
+source_file: return-in-scope.expect.md
 ---
+# Return In Scope.Expect
 
 ## Input
 
@@ -84,9 +83,9 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 [null]
 [null]
 [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'b') ]]

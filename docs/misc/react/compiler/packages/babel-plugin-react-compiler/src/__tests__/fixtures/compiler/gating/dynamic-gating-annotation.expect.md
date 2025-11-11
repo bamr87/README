@@ -1,14 +1,12 @@
 ---
+title: Dynamic Gating Annotation.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-annotation.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @compilationMode:"annotation"'
 tags:
 - javascript
-title: Dynamic Gating Annotation.Expect
+last_updated: null
+source_file: dynamic-gating-annotation.expect.md
 ---
+# Dynamic Gating Annotation.Expect
 
 ## Input
 
@@ -56,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

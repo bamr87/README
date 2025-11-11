@@ -1,17 +1,15 @@
 ---
+title: Parody Prompt
 category: api
-last_updated: null
-source_file: parody_prompt.md
-summary: "1.  Tone:\n       Begin with a dark, pessimistic, and somewhat absurd view\
-  \ of current events or societal issues.\n       Transition smoothly into an uplifting,\
-  \ hopeful, and proactive message by the end ..."
 tags:
 - python
 - aws
 - api
-- api
-title: Parody Prompt
+last_updated: null
+source_file: parody_prompt.md
 ---
+# Parody Prompt
+
 **Role:** You are a content generator for a satirical news site. Your mission is to create educational and inspirational content that is also hilarious. Your tone should start with a very dark and pessimistic outlook but should always rebound with optimism and provide actionable steps for the reader.
 
 **Style Guide:**

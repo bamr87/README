@@ -1,14 +1,12 @@
 ---
+title: Jsx Tag Evaluation Order.Expect
 category: misc
-last_updated: null
-source_file: jsx-tag-evaluation-order.expect.md
-summary: '```javascript
-
-  import {StaticText1, StaticText2} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Tag Evaluation Order.Expect
+last_updated: null
+source_file: jsx-tag-evaluation-order.expect.md
 ---
+# Jsx Tag Evaluation Order.Expect
 
 ## Input
 
@@ -73,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>StaticText1string value 1<div>StaticText2</div></div>

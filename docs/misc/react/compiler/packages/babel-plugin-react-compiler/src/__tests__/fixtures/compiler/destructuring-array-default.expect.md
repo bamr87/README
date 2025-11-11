@@ -1,13 +1,12 @@
 ---
+title: Destructuring Array Default.Expect
 category: misc
-last_updated: null
-source_file: destructuring-array-default.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [[x] = ['default']]\
-  \ = props.y;\n  return x;\n}"
 tags:
 - javascript
-title: Destructuring Array Default.Expect
+last_updated: null
+source_file: destructuring-array-default.expect.md
 ---
+# Destructuring Array Default.Expect
 
 ## Input
 
@@ -51,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

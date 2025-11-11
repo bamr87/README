@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Repro Named Function With Shadowed Local Same Name.Expect
 category: misc
-last_updated: null
-source_file: error.todo-repro-named-function-with-shadowed-local-same-name.expect.md
-summary: "```javascript\nfunction Component(props) {\n  function hasErrors() {\n \
-  \   let hasErrors = false;\n    if (props.items == null) {\n      hasErrors = true;\n\
-  \    }\n    return hasErrors;\n  }\n  return hasErrors(..."
 tags:
 - javascript
-title: Error.Todo Repro Named Function With Shadowed Local Same Name.Expect
+last_updated: null
+source_file: error.todo-repro-named-function-with-shadowed-local-same-name.expect.md
 ---
+# Error.Todo Repro Named Function With Shadowed Local Same Name.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.todo-repro-named-function-with-shadowed-local-same-name.ts:9:9
   10 | }
   11 |
 ```
-          
-      
+

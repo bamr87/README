@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Disallow Mutating Refs In Render Transitive.Expect
 category: api
-last_updated: null
-source_file: error.invalid-disallow-mutating-refs-in-render-transitive.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component() {\n\
-  \  const ref = useRef(null);"
 tags:
 - javascript
 - api
-title: Error.Invalid Disallow Mutating Refs In Render Transitive.Expect
+last_updated: null
+source_file: error.invalid-disallow-mutating-refs-in-render-transitive.expect.md
 ---
+# Error.Invalid Disallow Mutating Refs In Render Transitive.Expect
 
 ## Input
 
@@ -47,5 +46,4 @@ error.invalid-disallow-mutating-refs-in-render-transitive.ts:9:2
   11 |   return <button ref={ref} />;
   12 | }
 ```
-          
-      
+

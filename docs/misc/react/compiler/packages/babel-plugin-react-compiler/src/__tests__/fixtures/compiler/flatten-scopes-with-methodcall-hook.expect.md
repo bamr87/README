@@ -1,14 +1,12 @@
 ---
+title: Flatten Scopes With Methodcall Hook.Expect
 category: misc
-last_updated: null
-source_file: flatten-scopes-with-methodcall-hook.expect.md
-summary: '```javascript
-
-  const {ObjectWithHooks} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Flatten Scopes With Methodcall Hook.Expect
+last_updated: null
+source_file: flatten-scopes-with-methodcall-hook.expect.md
 ---
+# Flatten Scopes With Methodcall Hook.Expect
 
 ## Input
 
@@ -47,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Optional Call Chain In Ternary.Expect
 category: misc
-last_updated: null
-source_file: error.todo-optional-call-chain-in-ternary.expect.md
-summary: '```javascript
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Error.Todo Optional Call Chain In Ternary.Expect
+last_updated: null
+source_file: error.todo-optional-call-chain-in-ternary.expect.md
 ---
+# Error.Todo Optional Call Chain In Ternary.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.todo-optional-call-chain-in-ternary.ts:5:30
   7 |
   8 | export const FIXTURE_ENTRYPONT = {
 ```
-          
-      
+

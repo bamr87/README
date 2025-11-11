@@ -1,13 +1,12 @@
 ---
+title: Simple Function 1.Expect
 category: misc
-last_updated: null
-source_file: simple-function-1.expect.md
-summary: "```javascript\nfunction component() {\n  let x = function (a) {\n    a.foo();\n\
-  \  };\n  return x;\n}"
 tags:
 - javascript
-title: Simple Function 1.Expect
+last_updated: null
+source_file: simple-function-1.expect.md
 ---
+# Simple Function 1.Expect
 
 ## Input
 
@@ -45,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=1 ]]"

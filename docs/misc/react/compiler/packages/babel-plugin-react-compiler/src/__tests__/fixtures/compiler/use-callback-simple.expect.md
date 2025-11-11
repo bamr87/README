@@ -1,13 +1,12 @@
 ---
+title: Use Callback Simple.Expect
 category: misc
-last_updated: null
-source_file: use-callback-simple.expect.md
-summary: "```javascript\nfunction component() {\n  const [count, setCount] = useState(0);\n\
-  \  const increment = useCallback(() => setCount(count + 1));"
 tags:
 - javascript
-title: Use Callback Simple.Expect
+last_updated: null
+source_file: use-callback-simple.expect.md
 ---
+# Use Callback Simple.Expect
 
 ## Input
 
@@ -49,4 +48,3 @@ function component() {
 }
 
 ```
-      

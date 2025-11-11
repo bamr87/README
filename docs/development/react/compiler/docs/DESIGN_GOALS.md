@@ -1,14 +1,11 @@
 ---
+title: "React Compiler \u2014 Goals, Design Principles, and Architecture"
 category: development
-last_updated: null
-source_file: DESIGN_GOALS.md
-summary: This document describes the goals, design principles, and highlevel architecture
-  of React Compiler. See the code for specifics of the data structures and compiler
-  passes.
 tags:
 - javascript
 - development
-title: React Compiler — Goals, Design Principles, and Architecture
+last_updated: null
+source_file: DESIGN_GOALS.md
 ---
 # React Compiler — Goals, Design Principles, and Architecture
 
@@ -58,7 +55,7 @@ The core of the compiler is largely decoupled from Babel, using its own intermed
 - **SSA Conversion** (EnterSSA): The HIR is converted to HIR form, such that all Identifiers in the HIR are updated to an SSA-based identifier.
 - Validation: We run various validation passes to check that the input is valid React, ie that it does not break the rules. This includes looking for conditional hook calls, unconditional setState calls, etc.
 - **Optimization**: Various passes such as dead code elimination and constant propagation can generally improve performance and reduce the amount of instructions to be optimized later.
-- **Type Inference** (InferTypes): We run a conservative type inference pass to identify certain key types of data that may appear in the program that are relevant for further analysis, such as which values are hooks, primitives, etc. 
+- **Type Inference** (InferTypes): We run a conservative type inference pass to identify certain key types of data that may appear in the program that are relevant for further analysis, such as which values are hooks, primitives, etc.
 - **Inferring Reactive Scopes**: Several passes are involved in determining groups of values that are created/mutated together and the set of instructions involved in creating/mutating those values. We call these groups "reactive scopes", and each can have one or more declarations (or occasionally a reassignment).
 - **Constructing/Optimizing Reactive Scopes**: Once the compiler determines the set of reactive scopes, it then transforms the program to make these scopes explicit in the HIR. The code is later converted to a ReactiveFunction, which is a hybrid of the HIR and an AST. Scopes are further pruned and transformed. For example, the compiler cannot make hook calls conditional, so any reactive scopes that contain a hook call must be pruned. If two consecutive scopes will always invalidate together, we attempt to merge them to reduce overhead, etc.
 - **Codegen**: Finally, the ReactiveFunction hybrid HIR/AST is converted back to a raw Babel AST node, and returned to the Babel plugin.

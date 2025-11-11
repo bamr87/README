@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Optional Member Expression As Memo Dep Non Optional In Body.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-optional-member-expression-as-memo-dep-non-optional-in-body.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees\nfunction\
-  \ Component(props) {\n  const data = useMemo(() => {\n    // actual code is nonoptional\n\
-  \    return props.items.edges.nodes ?? [];\n ..."
 tags:
 - javascript
-title: Error.Invalid Optional Member Expression As Memo Dep Non Optional In Body.Expect
+last_updated: null
+source_file: error.invalid-optional-member-expression-as-memo-dep-non-optional-in-body.expect.md
 ---
+# Error.Invalid Optional Member Expression As Memo Dep Non Optional In Body.Expect
 
 ## Input
 
@@ -52,5 +50,4 @@ error.invalid-optional-member-expression-as-memo-dep-non-optional-in-body.ts:3:2
    9 | }
   10 |
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Ref In Effect.Expect
 category: misc
-last_updated: null
-source_file: ref-in-effect.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const ref = useRef(null);\n\
-  \  const onChange = e => {\n    const newValue = e.target.value ?? ref.current;\n\
-  \    ref.current = newValue;\n  };\n  useEffect(() => {..."
 tags:
 - javascript
-title: Ref In Effect.Expect
+last_updated: null
+source_file: ref-in-effect.expect.md
 ---
+# Ref In Effect.Expect
 
 ## Input
 
@@ -66,4 +64,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,15 +1,13 @@
 ---
+title: Codegen Inline Iife Reassign.Expect
 category: misc
-last_updated: null
-source_file: codegen-inline-iife-reassign.expect.md
-summary: '```javascript
-
-  import {makeArray, print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Codegen Inline Iife Reassign.Expect
+last_updated: null
+source_file: codegen-inline-iife-reassign.expect.md
 ---
+# Codegen Inline Iife Reassign.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,42,2]

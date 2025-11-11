@@ -1,17 +1,13 @@
 ---
+title: Error.Untransformed Fire Reference.Expect
 category: api
-last_updated: null
-source_file: error.untransformed-fire-reference.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Untransformed Fire Reference.Expect
+last_updated: null
+source_file: error.untransformed-fire-reference.expect.md
 ---
+# Error.Untransformed Fire Reference.Expect
 
 ## Input
 
@@ -40,5 +36,4 @@ error.untransformed-fire-reference.ts:4:12
     |             ^^^^ Untransformed `fire` call
   5 |
 ```
-          
-      
+

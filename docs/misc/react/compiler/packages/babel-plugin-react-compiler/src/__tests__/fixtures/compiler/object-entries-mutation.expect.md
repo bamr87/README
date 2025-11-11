@@ -1,14 +1,12 @@
 ---
+title: Object Entries Mutation.Expect
 category: misc
-last_updated: null
-source_file: object-entries-mutation.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Entries Mutation.Expect
+last_updated: null
+source_file: object-entries-mutation.expect.md
 ---
+# Object Entries Mutation.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"entries":[["object",{"key":{"a":0,"b":"value1","c":true},"updated":true}]]}</div>

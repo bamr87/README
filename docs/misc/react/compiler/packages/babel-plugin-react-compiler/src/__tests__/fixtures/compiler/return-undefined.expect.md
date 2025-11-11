@@ -1,13 +1,12 @@
 ---
+title: Return Undefined.Expect
 category: misc
-last_updated: null
-source_file: return-undefined.expect.md
-summary: "```javascript\nfunction Component(props) {\n  if (props.cond) {\n    return\
-  \ undefined;\n  }\n  return props.value;\n}"
 tags:
 - javascript
-title: Return Undefined.Expect
+last_updated: null
+source_file: return-undefined.expect.md
 ---
+# Return Undefined.Expect
 
 ## Input
 
@@ -44,4 +43,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

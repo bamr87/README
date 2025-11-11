@@ -1,14 +1,12 @@
 ---
+title: Error.Sketchy Code Rules Of Hooks.Expect
 category: misc
-last_updated: null
-source_file: error.sketchy-code-rules-of-hooks.expect.md
-summary: "```javascript\n/ eslintdisable reacthooks/rulesofhooks /\nfunction lowercasecomponent()\
-  \ {\n  const x = [];\n  return <div>{x}</div>;\n}\n/ eslintenable reacthooks/rulesofhooks\
-  \ /"
 tags:
 - javascript
-title: Error.Sketchy Code Rules Of Hooks.Expect
+last_updated: null
+source_file: error.sketchy-code-rules-of-hooks.expect.md
 ---
+# Error.Sketchy Code Rules Of Hooks.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.sketchy-code-rules-of-hooks.ts:1:0
   3 |   const x = [];
   4 |   return <div>{x}</div>;
 ```
-          
-      
+

@@ -1,16 +1,12 @@
 ---
+title: Usememo Simple Preserved.Expect
 category: misc
-last_updated: null
-source_file: useMemo-simple-preserved.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingManualUseMemo
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Usememo Simple Preserved.Expect
+last_updated: null
+source_file: useMemo-simple-preserved.expect.md
 ---
+# Usememo Simple Preserved.Expect
 
 ## Input
 
@@ -74,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

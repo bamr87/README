@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid.Invalid Rules Of Hooks D952B82C2597.Expect
 category: misc
-last_updated: null
-source_file: error.invalid.invalid-rules-of-hooks-d952b82c2597.expect.md
-summary: "```javascript\n// Invalid because it's a common misunderstanding.\n// We\
-  \ could make it valid but the runtime error could be confusing.\nfunction ComponentWithHookInsideCallback()\
-  \ {\n  useEffect(() => {\n  ..."
 tags:
 - javascript
-title: Error.Invalid.Invalid Rules Of Hooks D952B82C2597.Expect
+last_updated: null
+source_file: error.invalid.invalid-rules-of-hooks-d952b82c2597.expect.md
 ---
+# Error.Invalid.Invalid Rules Of Hooks D952B82C2597.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.invalid.invalid-rules-of-hooks-d952b82c2597.ts:5:4
   7 | }
   8 |
 ```
-          
-      
+

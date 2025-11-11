@@ -1,14 +1,12 @@
 ---
+title: Usememo Switch No Fallthrough.Expect
 category: misc
-last_updated: null
-source_file: useMemo-switch-no-fallthrough.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    switch (props.key) {\n      case 'key': {\n        return props.value;\n  \
-  \    }\n      default: {\n        return props.defaultValu..."
 tags:
 - javascript
-title: Usememo Switch No Fallthrough.Expect
+last_updated: null
+source_file: useMemo-switch-no-fallthrough.expect.md
 ---
+# Usememo Switch No Fallthrough.Expect
 
 ## Input
 
@@ -60,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

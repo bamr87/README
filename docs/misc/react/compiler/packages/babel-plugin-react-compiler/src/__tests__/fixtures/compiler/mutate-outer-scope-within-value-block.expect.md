@@ -1,15 +1,13 @@
 ---
+title: Mutate Outer Scope Within Value Block.Expect
 category: misc
-last_updated: null
-source_file: mutate-outer-scope-within-value-block.expect.md
-summary: '```javascript
-
-  import {CONSTTRUE, identity, shallowCopy} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Mutate Outer Scope Within Value Block.Expect
+last_updated: null
+source_file: mutate-outer-scope-within-value-block.expect.md
 ---
+# Mutate Outer Scope Within Value Block.Expect
 
 ## Input
 
@@ -105,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

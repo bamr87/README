@@ -1,16 +1,12 @@
 ---
+title: Error.Preserve Use Memo Ref Missing Reactive.Expect
 category: misc
-last_updated: null
-source_file: error.preserve-use-memo-ref-missing-reactive.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Error.Preserve Use Memo Ref Missing Reactive.Expect
+last_updated: null
+source_file: error.preserve-use-memo-ref-missing-reactive.expect.md
 ---
+# Error.Preserve Use Memo Ref Missing Reactive.Expect
 
 ## Input
 
@@ -64,5 +60,4 @@ error.preserve-use-memo-ref-missing-reactive.ts:9:21
   15 |
   16 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

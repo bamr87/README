@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Impure Functions In Render.Expect
 category: api
-last_updated: null
-source_file: error.invalid-impure-functions-in-render.expect.md
-summary: '```javascript
-
-  // @validateNoImpureFunctionsInRender @enableNewMutationAliasingModel'
 tags:
 - javascript
 - api
-title: Error.Invalid Impure Functions In Render.Expect
+last_updated: null
+source_file: error.invalid-impure-functions-in-render.expect.md
 ---
+# Error.Invalid Impure Functions In Render.Expect
 
 ## Input
 
@@ -70,5 +68,4 @@ error.invalid-impure-functions-in-render.ts:6:15
   8 | }
   9 |
 ```
-          
-      
+

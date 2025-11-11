@@ -1,18 +1,12 @@
 ---
+title: Usememo Named Function.Expect
 category: misc
-last_updated: null
-source_file: useMemo-named-function.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInRender:false @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Named Function.Expect
+last_updated: null
+source_file: useMemo-named-function.expect.md
 ---
+# Usememo Named Function.Expect
 
 ## Input
 
@@ -59,4 +53,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

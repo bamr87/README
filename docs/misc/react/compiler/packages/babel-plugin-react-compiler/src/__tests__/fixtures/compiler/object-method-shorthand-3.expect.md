@@ -1,14 +1,12 @@
 ---
+title: Object Method Shorthand 3.Expect
 category: misc
-last_updated: null
-source_file: object-method-shorthand-3.expect.md
-summary: '```javascript
-
-  import {createHookWrapper, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Method Shorthand 3.Expect
+last_updated: null
+source_file: object-method-shorthand-3.expect.md
 ---
+# Object Method Shorthand 3.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"a":{"x":1},"wat0":"joe"},"shouldInvokeFns":true}</div>

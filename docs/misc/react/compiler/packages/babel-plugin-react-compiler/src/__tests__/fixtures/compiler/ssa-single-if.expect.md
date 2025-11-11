@@ -1,12 +1,12 @@
 ---
+title: Ssa Single If.Expect
 category: misc
-last_updated: null
-source_file: ssa-single-if.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;"
 tags:
 - javascript
-title: Ssa Single If.Expect
+last_updated: null
+source_file: ssa-single-if.expect.md
 ---
+# Ssa Single If.Expect
 
 ## Input
 
@@ -40,6 +40,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

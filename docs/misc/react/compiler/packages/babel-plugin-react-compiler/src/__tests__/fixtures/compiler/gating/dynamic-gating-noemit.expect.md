@@ -1,14 +1,12 @@
 ---
+title: Dynamic Gating Noemit.Expect
 category: misc
-last_updated: null
-source_file: dynamic-gating-noemit.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"} @noEmit'
 tags:
 - javascript
-title: Dynamic Gating Noemit.Expect
+last_updated: null
+source_file: dynamic-gating-noemit.expect.md
 ---
+# Dynamic Gating Noemit.Expect
 
 ## Input
 
@@ -43,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

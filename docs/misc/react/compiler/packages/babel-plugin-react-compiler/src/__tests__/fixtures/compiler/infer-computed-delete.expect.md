@@ -1,14 +1,12 @@
 ---
+title: Infer Computed Delete.Expect
 category: misc
-last_updated: null
-source_file: infer-computed-delete.expect.md
-summary: "```javascript\n// @debug @enablePreserveExistingMemoizationGuarantees:false\n\
-  function Component(props) {\n  const x = makeObject();\n  const y = delete x[props.value];\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Infer Computed Delete.Expect
+last_updated: null
+source_file: infer-computed-delete.expect.md
 ---
+# Infer Computed Delete.Expect
 
 ## Input
 
@@ -33,4 +31,3 @@ function Component(props) {
 }
 
 ```
-      

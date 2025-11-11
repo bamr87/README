@@ -1,14 +1,12 @@
 ---
+title: Destructuring Assignment.Expect
 category: misc
-last_updated: null
-source_file: destructuring-assignment.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let d, g, n, o;\n  [\n    d,\n\
-  \    [\n      {\n        e: {f: g},\n      },\n    ],\n  ] = a;\n  ({\n    l: {\n\
-  \      m: [[n]],\n    },\n    o,\n  } = b);\n  return {d, g, n, o}..."
 tags:
 - javascript
-title: Destructuring Assignment.Expect
+last_updated: null
+source_file: destructuring-assignment.expect.md
 ---
+# Destructuring Assignment.Expect
 
 ## Input
 
@@ -81,4 +79,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,18 +1,12 @@
 ---
+title: Bailout Validate Ref Current Access.Expect
 category: misc
-last_updated: null
-source_file: bailout-validate-ref-current-access.expect.md
-summary: '```javascript
-
-  // @flow @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Bailout Validate Ref Current Access.Expect
+last_updated: null
+source_file: bailout-validate-ref-current-access.expect.md
 ---
+# Bailout Validate Ref Current Access.Expect
 
 ## Input
 
@@ -61,6 +55,6 @@ function Component_withRef(t0, ref) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

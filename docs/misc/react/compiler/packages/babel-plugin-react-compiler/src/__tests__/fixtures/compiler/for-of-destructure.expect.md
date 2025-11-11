@@ -1,14 +1,12 @@
 ---
+title: For Of Destructure.Expect
 category: misc
-last_updated: null
-source_file: for-of-destructure.expect.md
-summary: "```javascript\nfunction Component() {\n  let x = [];\n  let items = [{v:\
-  \ 0}, {v: 1}, {v: 2}];\n  for (const {v} of items) {\n    x.push(v  2);\n  }\n \
-  \ return x;\n}"
 tags:
 - javascript
-title: For Of Destructure.Expect
+last_updated: null
+source_file: for-of-destructure.expect.md
 ---
+# For Of Destructure.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2,4]

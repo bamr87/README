@@ -1,14 +1,12 @@
 ---
+title: Infer Function Cond Access Local Var.Expect
 category: misc
-last_updated: null
-source_file: infer-function-cond-access-local-var.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Cond Access Local Var.Expect
+last_updated: null
+source_file: infer-function-cond-access-local-var.expect.md
 ---
+# Infer Function Cond Access Local Var.Expect
 
 ## Input
 
@@ -101,7 +99,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'c') ]]
 <div>{"fn":{"kind":"Function","result":null},"shouldInvokeFns":true}</div>

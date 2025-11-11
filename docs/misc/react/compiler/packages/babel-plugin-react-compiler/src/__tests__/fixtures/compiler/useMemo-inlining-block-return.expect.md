@@ -1,13 +1,12 @@
 ---
+title: Usememo Inlining Block Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-inlining-block-return.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  let x = useMemo(() => {\n \
-  \   if (a) {\n      return {b};\n    }\n  }, [a, b]);\n  return x;\n}"
 tags:
 - javascript
-title: Usememo Inlining Block Return.Expect
+last_updated: null
+source_file: useMemo-inlining-block-return.expect.md
 ---
+# Usememo Inlining Block Return.Expect
 
 ## Input
 
@@ -62,4 +61,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

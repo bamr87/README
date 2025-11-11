@@ -1,18 +1,12 @@
 ---
+title: Gating Use Before Decl Ref.Expect
 category: misc
-last_updated: null
-source_file: gating-use-before-decl-ref.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {createRef, forwardRef} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Gating Use Before Decl Ref.Expect
+last_updated: null
+source_file: gating-use-before-decl-ref.expect.md
 ---
+# Gating Use Before Decl Ref.Expect
 
 ## Input
 
@@ -70,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"0":{"prop1":1,"prop2":2,"ref":{"current":null}},"ref":"[[ cyclic ref *3 ]]"}</div>

@@ -1,13 +1,12 @@
 ---
+title: Rest Param With Identifier.Expect
 category: misc
-last_updated: null
-source_file: rest-param-with-identifier.expect.md
-summary: "```javascript\nfunction Component(foo, ...bar) {\n  return [foo, bar];\n\
-  }"
 tags:
 - javascript
-title: Rest Param With Identifier.Expect
+last_updated: null
+source_file: rest-param-with-identifier.expect.md
 ---
+# Rest Param With Identifier.Expect
 
 ## Input
 
@@ -48,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo",["bar","baz"]]

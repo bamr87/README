@@ -1,15 +1,13 @@
 ---
+title: Error.Todo For Of Loop With Context Variable Iterator.Expect
 category: api
-last_updated: null
-source_file: error.todo-for-of-loop-with-context-variable-iterator.expect.md
-summary: '```javascript
-
-  import {useHook} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Todo For Of Loop With Context Variable Iterator.Expect
+last_updated: null
+source_file: error.todo-for-of-loop-with-context-variable-iterator.expect.md
 ---
+# Error.Todo For Of Loop With Context Variable Iterator.Expect
 
 ## Input
 
@@ -70,5 +68,4 @@ error.todo-for-of-loop-with-context-variable-iterator.ts:8:2
   17 | }
   18 |
 ```
-          
-      
+

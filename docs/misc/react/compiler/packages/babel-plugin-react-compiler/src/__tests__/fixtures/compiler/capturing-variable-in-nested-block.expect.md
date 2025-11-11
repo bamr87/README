@@ -1,13 +1,12 @@
 ---
+title: Capturing Variable In Nested Block.Expect
 category: misc
-last_updated: null
-source_file: capturing-variable-in-nested-block.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  let x = function\
-  \ () {\n    {\n      console.log(z);\n    }\n  };\n  return x;\n}"
 tags:
 - javascript
-title: Capturing Variable In Nested Block.Expect
+last_updated: null
+source_file: capturing-variable-in-nested-block.expect.md
 ---
+# Capturing Variable In Nested Block.Expect
 
 ## Input
 
@@ -58,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

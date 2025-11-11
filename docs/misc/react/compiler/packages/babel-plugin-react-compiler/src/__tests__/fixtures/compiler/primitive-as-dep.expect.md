@@ -1,20 +1,12 @@
 ---
+title: Primitive As Dep.Expect
 category: misc
-last_updated: null
-source_file: primitive-as-dep.expect.md
-summary: '```javascript
-
-  // props.b + 1 is an nonallocating expression, which means Forget can
-
-  // emit it trivially and repeatedly (e.g. no need to memoize props.b + 1
-
-  // separately from props.b)
-
-  // Correctness:...'
 tags:
 - javascript
-title: Primitive As Dep.Expect
+last_updated: null
+source_file: primitive-as-dep.expect.md
 ---
+# Primitive As Dep.Expect
 
 ## Input
 
@@ -55,4 +47,3 @@ function PrimitiveAsDep(props) {
 }
 
 ```
-      

@@ -1,13 +1,12 @@
 ---
+title: Nested Scopes Hook Call.Expect
 category: misc
-last_updated: null
-source_file: nested-scopes-hook-call.expect.md
-summary: "```javascript\nfunction component(props) {\n  let x = [];\n  let y = [];\n\
-  \  y.push(useHook(props.foo));\n  x.push(y);\n  return x;\n}"
 tags:
 - javascript
-title: Nested Scopes Hook Call.Expect
+last_updated: null
+source_file: nested-scopes-hook-call.expect.md
 ---
+# Nested Scopes Hook Call.Expect
 
 ## Input
 
@@ -34,4 +33,3 @@ function component(props) {
 }
 
 ```
-      

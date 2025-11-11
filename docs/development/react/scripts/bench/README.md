@@ -1,12 +1,11 @@
 ---
+title: React Benchmarking
 category: development
-last_updated: null
-source_file: README.md
-summary: 'In most cases, the only two commands you might want to use are:'
 tags:
 - javascript
 - development
-title: React Benchmarking
+last_updated: null
+source_file: README.md
 ---
 # React Benchmarking
 

@@ -1,14 +1,12 @@
 ---
+title: Nested Optional Chains.Expect
 category: misc
-last_updated: null
-source_file: nested-optional-chains.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nested Optional Chains.Expect
+last_updated: null
+source_file: nested-optional-chains.expect.md
 ---
+# Nested Optional Chains.Expect
 
 ## Input
 
@@ -231,7 +229,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,null,null,null]
 ["2","3","4","4"]

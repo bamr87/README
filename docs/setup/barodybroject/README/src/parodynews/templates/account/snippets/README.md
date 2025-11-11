@@ -1,18 +1,14 @@
 ---
+title: Account Snippets Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "<! Conditional inclusion based on user state >\n{% if user.isauthenticated\
-  \ %}\n    {% include \"account/snippets/alreadyloggedin.html\" %}\n{% endif %}\n\
-  ```"
 tags:
 - python
 - javascript
 - docker
 - setup
-title: Account Snippets Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Account Snippets Directory
 
 ## Purpose
@@ -68,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Assets**: FontAwesome icons, custom CSS for alert styling
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Account view templates (`login.html`, `signup.html`)
   - User dashboard and profile pages
   - Email management views
-- **Outgoing**: 
+- **Outgoing**:
   - Base template styling systems
   - JavaScript notification handlers
   - Account action redirects and forms

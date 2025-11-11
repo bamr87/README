@@ -1,14 +1,12 @@
 ---
+title: Jsx Memberexpr Tag In Lambda.Expect
 category: misc
-last_updated: null
-source_file: jsx-memberexpr-tag-in-lambda.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nfunction\
-  \ useFoo() {\n  const MyLocal = SharedRuntime;\n  const callback = () => {\n   \
-  \ return <MyLocal.Text value={4} />;\n  };\n  return callba..."
 tags:
 - javascript
-title: Jsx Memberexpr Tag In Lambda.Expect
+last_updated: null
+source_file: jsx-memberexpr-tag-in-lambda.expect.md
 ---
+# Jsx Memberexpr Tag In Lambda.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>4</div>

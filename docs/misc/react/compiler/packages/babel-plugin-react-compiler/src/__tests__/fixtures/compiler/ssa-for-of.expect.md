@@ -1,14 +1,12 @@
 ---
+title: Ssa For Of.Expect
 category: misc
-last_updated: null
-source_file: ssa-for-of.expect.md
-summary: "```javascript\nfunction foo(cond) {\n  let items = [];\n  for (const item\
-  \ of items) {\n    let y = 0;\n    if (cond) {\n      y = 1;\n    }\n  }\n  return\
-  \ items;\n}"
 tags:
 - javascript
-title: Ssa For Of.Expect
+last_updated: null
+source_file: ssa-for-of.expect.md
 ---
+# Ssa For Of.Expect
 
 ## Input
 
@@ -60,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

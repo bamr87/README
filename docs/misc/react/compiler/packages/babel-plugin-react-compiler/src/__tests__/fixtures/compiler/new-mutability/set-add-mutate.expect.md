@@ -1,14 +1,12 @@
 ---
+title: Set Add Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-add-mutate.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction useHook({el1,\
-  \ el2}) {\n  const s = new Set();\n  const arr = makeArray(el1);\n  s.add(arr);\n\
-  \  // Mutate after store\n  arr.push(el2);"
 tags:
 - javascript
-title: Set Add Mutate.Expect
+last_updated: null
+source_file: set-add-mutate.expect.md
 ---
+# Set Add Mutate.Expect
 
 ## Input
 
@@ -60,6 +58,6 @@ function useHook(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

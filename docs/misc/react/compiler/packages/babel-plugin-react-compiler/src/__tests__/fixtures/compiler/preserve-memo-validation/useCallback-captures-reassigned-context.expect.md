@@ -1,14 +1,12 @@
 ---
+title: Usecallback Captures Reassigned Context.Expect
 category: misc
-last_updated: null
-source_file: useCallback-captures-reassigned-context.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usecallback Captures Reassigned Context.Expect
+last_updated: null
+source_file: useCallback-captures-reassigned-context.expect.md
 ---
+# Usecallback Captures Reassigned Context.Expect
 
 ## Input
 
@@ -75,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

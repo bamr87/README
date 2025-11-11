@@ -1,16 +1,12 @@
 ---
+title: Transitive Freeze Array.Expect
 category: misc
-last_updated: null
-source_file: transitive-freeze-array.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  const {mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Transitive Freeze Array.Expect
+last_updated: null
+source_file: transitive-freeze-array.expect.md
 ---
+# Transitive Freeze Array.Expect
 
 ## Input
 
@@ -65,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},{"wat0":"joe"},["[[ cyclic ref *1 ]]"]]

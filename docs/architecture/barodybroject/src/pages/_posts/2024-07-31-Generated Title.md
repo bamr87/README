@@ -1,18 +1,12 @@
 ---
-author: Generated Author
+title: 2024 07 31 Generated Title
 category: architecture
-description: Generated Description
-last_updated: null
-published_at: '2024-07-31'
-source_file: 2024-07-31-Generated Title.md
-summary: Ah, New York City—a place where dreams converge amidst towering skyscrapers
-  and streets festooned with more trash bags than trees. Here, every local's complicated
-  affection for the city manifests in p...
 tags:
 - architecture
-title: 2024 07 31 Generated Title
+last_updated: null
+source_file: 2024-07-31-Generated Title.md
 ---
-
+# 2024 07 31 Generated Title
 
 ### Braving the Chaos: The New York City Experience
 

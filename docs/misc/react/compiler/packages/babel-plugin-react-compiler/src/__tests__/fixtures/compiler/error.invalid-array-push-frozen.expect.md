@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Array Push Frozen.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-array-push-frozen.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  <div>{x}</div>;\n\
-  \  x.push(props.value);\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Array Push Frozen.Expect
+last_updated: null
+source_file: error.invalid-array-push-frozen.expect.md
 ---
+# Error.Invalid Array Push Frozen.Expect
 
 ## Input
 
@@ -40,5 +39,4 @@ error.invalid-array-push-frozen.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

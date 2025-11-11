@@ -1,15 +1,13 @@
 ---
+title: Constant Propagate Global Phis.Expect
 category: misc
-last_updated: null
-source_file: constant-propagate-global-phis.expect.md
-summary: '```javascript
-
-  import {CONSTSTRING0, CONSTSTRING1, Text} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Constant Propagate Global Phis.Expect
+last_updated: null
+source_file: constant-propagate-global-phis.expect.md
 ---
+# Constant Propagate Global Phis.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>global string 1</div>

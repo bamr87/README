@@ -1,15 +1,13 @@
 ---
+title: Uncond Nonoverlap Descendant.Expect
 category: misc
-last_updated: null
-source_file: uncond-nonoverlap-descendant.expect.md
-summary: "```javascript\n// Test that we can track nonoverlapping dependencies separately.\n\
-  // (not needed for correctness but for dependency granularity)\nfunction TestNonOverlappingDescendantTracked(props)\
-  \ {\n  l..."
 tags:
 - javascript
 - testing
-title: Uncond Nonoverlap Descendant.Expect
+last_updated: null
+source_file: uncond-nonoverlap-descendant.expect.md
 ---
+# Uncond Nonoverlap Descendant.Expect
 
 ## Input
 
@@ -60,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"c":3}

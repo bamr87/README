@@ -1,14 +1,12 @@
 ---
+title: Return Ref Callback.Expect
 category: misc
-last_updated: null
-source_file: return-ref-callback.expect.md
-summary: '```javascript
-
-  // @flow @validateRefAccessDuringRender @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Return Ref Callback.Expect
+last_updated: null
+source_file: return-ref-callback.expect.md
 ---
+# Return Ref Callback.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

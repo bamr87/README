@@ -1,17 +1,14 @@
 ---
+title: Error.Invalid Known Incompatible Hook.Expect
 category: api
-last_updated: null
-source_file: error.invalid-known-incompatible-hook.expect.md
-summary: '```javascript
-
-  import {useKnownIncompatible} from ''ReactCompilerKnownIncompatibleTest'';'
 tags:
 - javascript
 - api
 - testing
-- api
-title: Error.Invalid Known Incompatible Hook.Expect
+last_updated: null
+source_file: error.invalid-known-incompatible-hook.expect.md
 ---
+# Error.Invalid Known Incompatible Hook.Expect
 
 ## Input
 
@@ -44,5 +41,4 @@ error.invalid-known-incompatible-hook.ts:4:15
   6 | }
   7 |
 ```
-          
-      
+

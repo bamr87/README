@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Referencing Frozen Hoisted Storecontext Const.Expect
 category: api
-last_updated: null
-source_file: error.invalid-referencing-frozen-hoisted-storecontext-const.expect.md
-summary: '```javascript
-
-  //@flow @validatePreserveExistingMemoizationGuarantees @enableNewMutationAliasingModel'
 tags:
 - javascript
 - api
-title: Error.Invalid Referencing Frozen Hoisted Storecontext Const.Expect
+last_updated: null
+source_file: error.invalid-referencing-frozen-hoisted-storecontext-const.expect.md
 ---
+# Error.Invalid Referencing Frozen Hoisted Storecontext Const.Expect
 
 ## Input
 
@@ -65,5 +63,4 @@ Error: Cannot access variable before it is declared
   21 |   return <Foo data={data} onSubmit={onSubmit} />;
   22 | }
 ```
-          
-      
+

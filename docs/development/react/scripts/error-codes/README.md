@@ -1,19 +1,15 @@
 ---
+title: Readme
 category: development
-last_updated: null
-source_file: README.md
-summary: 'The error code system substitutes React''s error messages with error IDs
-  to
-
-  provide a better debugging support in production. Check out the blog post
-
-  here.'
 tags:
 - javascript
 - testing
 - development
-title: Readme
+last_updated: null
+source_file: README.md
 ---
+# Readme
+
 The error code system substitutes React's error messages with error IDs to
 provide a better debugging support in production. Check out the blog post
 [here](https://reactjs.org/blog/2016/07/11/introducing-reacts-error-code-system.html).

@@ -1,15 +1,13 @@
 ---
+title: Jsx Bracket In Text.Expect
 category: misc
-last_updated: null
-source_file: jsx-bracket-in-text.expect.md
-summary: "```javascript\nfunction Test() {\n  return (\n    <div>\n      If the string\
-  \ contains the string &123;pageNumber&125; it will be\n      replaced by the page\
-  \ number.\n    </div>\n  );\n}"
 tags:
 - javascript
 - testing
-title: Jsx Bracket In Text.Expect
+last_updated: null
+source_file: jsx-bracket-in-text.expect.md
 ---
+# Jsx Bracket In Text.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>If the string contains the string {pageNumber} it will be replaced by the page number.</div>

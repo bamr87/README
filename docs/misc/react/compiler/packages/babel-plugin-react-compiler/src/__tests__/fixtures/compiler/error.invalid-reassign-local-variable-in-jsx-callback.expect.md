@@ -1,13 +1,13 @@
 ---
+title: Error.Invalid Reassign Local Variable In Jsx Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-local-variable-in-jsx-callback.expect.md
-summary: "```javascript\nfunction Component() {\n  let local;"
 tags:
 - javascript
 - testing
-title: Error.Invalid Reassign Local Variable In Jsx Callback.Expect
+last_updated: null
+source_file: error.invalid-reassign-local-variable-in-jsx-callback.expect.md
 ---
+# Error.Invalid Reassign Local Variable In Jsx Callback.Expect
 
 ## Input
 
@@ -66,5 +66,4 @@ error.invalid-reassign-local-variable-in-jsx-callback.ts:5:4
   7 |
   8 |   const onClick = newValue => {
 ```
-          
-      
+

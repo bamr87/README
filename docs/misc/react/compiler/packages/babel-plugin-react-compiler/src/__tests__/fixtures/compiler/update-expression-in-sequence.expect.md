@@ -1,14 +1,12 @@
 ---
+title: Update Expression In Sequence.Expect
 category: misc
-last_updated: null
-source_file: update-expression-in-sequence.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let a = props.x;\n  let b;\n\
-  \  let c;\n  let d;\n  if (props.cond) {\n    d = ((b = a), a++, (c = a), ++a);\n\
-  \  }\n  return [a, b, c, d];\n}"
 tags:
 - javascript
-title: Update Expression In Sequence.Expect
+last_updated: null
+source_file: update-expression-in-sequence.expect.md
 ---
+# Update Expression In Sequence.Expect
 
 ## Input
 
@@ -66,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [4,2,3,4]

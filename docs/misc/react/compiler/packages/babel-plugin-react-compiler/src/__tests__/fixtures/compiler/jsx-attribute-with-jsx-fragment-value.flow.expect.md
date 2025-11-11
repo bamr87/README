@@ -1,17 +1,13 @@
 ---
+title: Jsx Attribute With Jsx Fragment Value.Flow.Expect
 category: misc
-last_updated: null
-source_file: jsx-attribute-with-jsx-fragment-value.flow.expect.md
-summary: '```javascript
-
-  // @flow
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - docker
-title: Jsx Attribute With Jsx Fragment Value.Flow.Expect
+last_updated: null
+source_file: jsx-attribute-with-jsx-fragment-value.flow.expect.md
 ---
+# Jsx Attribute With Jsx Fragment Value.Flow.Expect
 
 ## Input
 
@@ -89,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"item":{"id":1,"name":"One!"}}</div></div>

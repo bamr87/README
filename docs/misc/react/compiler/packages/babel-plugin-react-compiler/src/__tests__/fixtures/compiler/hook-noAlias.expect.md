@@ -1,14 +1,12 @@
 ---
+title: Hook Noalias.Expect
 category: misc
-last_updated: null
-source_file: hook-noAlias.expect.md
-summary: '```javascript
-
-  import {useNoAlias} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hook Noalias.Expect
+last_updated: null
+source_file: hook-noAlias.expect.md
 ---
+# Hook Noalias.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},{"a":{"id":42}}]

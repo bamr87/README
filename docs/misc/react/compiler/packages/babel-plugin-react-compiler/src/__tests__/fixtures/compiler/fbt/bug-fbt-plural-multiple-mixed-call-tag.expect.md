@@ -1,15 +1,13 @@
 ---
+title: Bug Fbt Plural Multiple Mixed Call Tag.Expect
 category: misc
-last_updated: null
-source_file: bug-fbt-plural-multiple-mixed-call-tag.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
 - testing
-title: Bug Fbt Plural Multiple Mixed Call Tag.Expect
+last_updated: null
+source_file: bug-fbt-plural-multiple-mixed-call-tag.expect.md
 ---
+# Bug Fbt Plural Multiple Mixed Call Tag.Expect
 
 ## Input
 
@@ -107,4 +105,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

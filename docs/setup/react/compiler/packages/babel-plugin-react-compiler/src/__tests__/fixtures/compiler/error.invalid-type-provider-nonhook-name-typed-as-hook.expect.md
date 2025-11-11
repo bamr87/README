@@ -1,16 +1,14 @@
 ---
+title: Error.Invalid Type Provider Nonhook Name Typed As Hook.Expect
 category: setup
-last_updated: null
-source_file: error.invalid-type-provider-nonhook-name-typed-as-hook.expect.md
-summary: '```javascript
-
-  import {notAhookTypedAsHook} from ''ReactCompilerTest'';'
 tags:
 - javascript
 - testing
 - setup
-title: Error.Invalid Type Provider Nonhook Name Typed As Hook.Expect
+last_updated: null
+source_file: error.invalid-type-provider-nonhook-name-typed-as-hook.expect.md
 ---
+# Error.Invalid Type Provider Nonhook Name Typed As Hook.Expect
 
 ## Input
 
@@ -41,5 +39,4 @@ error.invalid-type-provider-nonhook-name-typed-as-hook.ts:4:15
   5 | }
   6 |
 ```
-          
-      
+

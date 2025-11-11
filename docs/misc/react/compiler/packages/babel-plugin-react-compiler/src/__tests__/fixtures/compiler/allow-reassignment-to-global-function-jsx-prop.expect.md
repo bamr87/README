@@ -1,14 +1,12 @@
 ---
+title: Allow Reassignment To Global Function Jsx Prop.Expect
 category: misc
-last_updated: null
-source_file: allow-reassignment-to-global-function-jsx-prop.expect.md
-summary: "```javascript\nfunction Component() {\n  const onClick = () => {\n    //\
-  \ Cannot assign to globals\n    someUnknownGlobal = true;\n    moduleLocal = true;\n\
-  \  };\n  // It's possible that this could be an event..."
 tags:
 - javascript
-title: Allow Reassignment To Global Function Jsx Prop.Expect
+last_updated: null
+source_file: allow-reassignment-to-global-function-jsx-prop.expect.md
 ---
+# Allow Reassignment To Global Function Jsx Prop.Expect
 
 ## Input
 
@@ -59,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

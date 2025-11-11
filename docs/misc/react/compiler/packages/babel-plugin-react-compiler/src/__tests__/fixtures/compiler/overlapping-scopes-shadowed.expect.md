@@ -1,13 +1,12 @@
 ---
+title: Overlapping Scopes Shadowed.Expect
 category: misc
-last_updated: null
-source_file: overlapping-scopes-shadowed.expect.md
-summary: "```javascript\nfunction foo(a, b) {\n  let x = [];\n  let y = [];\n  y.push(b);\n\
-  \  x.push(a);\n}"
 tags:
 - javascript
-title: Overlapping Scopes Shadowed.Expect
+last_updated: null
+source_file: overlapping-scopes-shadowed.expect.md
 ---
+# Overlapping Scopes Shadowed.Expect
 
 ## Input
 
@@ -44,4 +43,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

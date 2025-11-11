@@ -1,18 +1,15 @@
 ---
+title: scripts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Run individual test scripts\npython src/parodynews/tests/scripts/testapi.py\n\
-  python src/parodynews/tests/scripts/testuserloginorcreate.py"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: scripts Directory
+last_updated: null
+source_file: README.md
 ---
-
 # scripts Directory
 
 ## Purpose
@@ -55,7 +52,7 @@ class TestAssistantCreation(TestCase):
         )
         assert assistant.name == "Test Assistant"
         assert assistant.is_active is True
-    
+
     def test_create_assistant_api_endpoint(self):
         """Test assistant creation through API."""
         response = self.client.post('/api/assistants/', {

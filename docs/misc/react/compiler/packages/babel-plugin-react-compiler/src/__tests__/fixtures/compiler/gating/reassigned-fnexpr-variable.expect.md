@@ -1,17 +1,13 @@
 ---
+title: Reassigned Fnexpr Variable.Expect
 category: misc
-last_updated: null
-source_file: reassigned-fnexpr-variable.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import  as React from ''react'';'
 tags:
 - javascript
 - testing
-title: Reassigned Fnexpr Variable.Expect
+last_updated: null
+source_file: reassigned-fnexpr-variable.expect.md
 ---
+# Reassigned Fnexpr Variable.Expect
 
 ## Input
 
@@ -95,6 +91,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world 1!</div><div>hello world 2!</div>

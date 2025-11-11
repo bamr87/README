@@ -1,16 +1,12 @@
 ---
+title: Object Expression Computed Member.Expect
 category: misc
-last_updated: null
-source_file: object-expression-computed-member.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {identity, mutate, mutateAndReturn} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Expression Computed Member.Expect
+last_updated: null
+source_file: object-expression-computed-member.expect.md
 ---
+# Object Expression Computed Member.Expect
 
 ## Input
 
@@ -72,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"key":[42]}

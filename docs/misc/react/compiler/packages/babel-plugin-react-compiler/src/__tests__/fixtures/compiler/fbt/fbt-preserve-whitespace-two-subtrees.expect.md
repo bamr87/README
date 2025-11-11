@@ -1,14 +1,12 @@
 ---
+title: Fbt Preserve Whitespace Two Subtrees.Expect
 category: misc
-last_updated: null
-source_file: fbt-preserve-whitespace-two-subtrees.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Preserve Whitespace Two Subtrees.Expect
+last_updated: null
+source_file: fbt-preserve-whitespace-two-subtrees.expect.md
 ---
+# Fbt Preserve Whitespace Two Subtrees.Expect
 
 ## Input
 
@@ -87,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <span><b>Mike</b></span> and <span><b>Jan</b></span> accepted your PR!

@@ -1,15 +1,13 @@
 ---
+title: Set Constructor Arg.Expect
 category: misc
-last_updated: null
-source_file: set-constructor-arg.expect.md
-summary: "```javascript\nconst MODULELOCAL = new Set([4, 5, 6]);\nfunction useFoo({propArr}:\
-  \ {propArr: Array<number>}) {\n  / Array can be memoized separately of the Set /\n\
-  \  const s1 = new Set([1, 2, 3]);\n  s1.add..."
 tags:
 - javascript
 - aws
-title: Set Constructor Arg.Expect
+last_updated: null
+source_file: set-constructor-arg.expect.md
 ---
+# Set Constructor Arg.Expect
 
 ## Input
 
@@ -114,7 +112,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"kind":"Set","value":[1,2,3,7]},{"kind":"Set","value":[4,5,6,8]},{"kind":"Set","value":[4,5,6,8,9]},{"kind":"Set","value":[4,5,6,8,9,null]}]
 [{"kind":"Set","value":[1,2,3,7]},{"kind":"Set","value":[4,5,6,8]},{"kind":"Set","value":[4,5,6,8,10]},{"kind":"Set","value":[4,5,6,8,10,null]}]

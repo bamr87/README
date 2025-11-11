@@ -1,13 +1,12 @@
 ---
+title: Debugger Memoized.Expect
 category: misc
-last_updated: null
-source_file: debugger-memoized.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  debugger;\n\
-  \  x.push(props.value);\n  return x;\n}"
 tags:
 - javascript
-title: Debugger Memoized.Expect
+last_updated: null
+source_file: debugger-memoized.expect.md
 ---
+# Debugger Memoized.Expect
 
 ## Input
 
@@ -54,4 +53,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

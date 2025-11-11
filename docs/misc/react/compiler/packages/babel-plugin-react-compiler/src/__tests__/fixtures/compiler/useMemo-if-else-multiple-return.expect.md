@@ -1,14 +1,12 @@
 ---
+title: Usememo If Else Multiple Return.Expect
 category: misc
-last_updated: null
-source_file: useMemo-if-else-multiple-return.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    if (props.cond) {\n      return makeObject(props.a);\n    }\n    return makeObject(props.b);\n\
-  \  });\n  return x;\n}"
 tags:
 - javascript
-title: Usememo If Else Multiple Return.Expect
+last_updated: null
+source_file: useMemo-if-else-multiple-return.expect.md
 ---
+# Usememo If Else Multiple Return.Expect
 
 ## Input
 
@@ -60,4 +58,3 @@ function Component(props) {
 }
 
 ```
-      

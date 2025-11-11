@@ -1,30 +1,15 @@
 ---
-affected_versions:
-- X.Y.Z
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Bug Fix: [Bug Title]'
 category: setup
-date: YYYY-MM-DD
-impact: high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-severity: critical|high|medium|low
-source_file: bugfix-template.md
-summary: '> Summary: Onesentence description of the bug that was fixed.'
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: 'Bug Fix: [Bug Title]'
-type: bugfix
-version: X.Y.Z
+last_updated: null
+source_file: bugfix-template.md
 ---
-
-
 # Bug Fix: [Bug Title]
 
 > **Summary**: One-sentence description of the bug that was fixed.
@@ -104,8 +89,8 @@ database:
 ### Database Changes
 ```sql
 -- Fix data consistency issue
-UPDATE table_name 
-SET column_name = 'corrected_value' 
+UPDATE table_name
+SET column_name = 'corrected_value'
 WHERE column_name = 'incorrect_value';
 ```
 
@@ -174,7 +159,7 @@ alerts:
   - name: "Bug Recurrence Check"
     condition: error_rate > 0.1%
     notification: team-channel
-  
+
   - name: "Performance Regression"
     condition: response_time > baseline + 20%
     notification: dev-team
@@ -307,8 +292,8 @@ OLD_CONFIG_NAME → NEW_CONFIG_NAME
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Team
 
 > **Usage Note**: Copy this template to document bug fixes. Include specific technical details about the problem and solution. Update all placeholder text with actual fix information.

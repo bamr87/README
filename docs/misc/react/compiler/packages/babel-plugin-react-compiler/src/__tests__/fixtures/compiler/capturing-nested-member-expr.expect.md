@@ -1,13 +1,12 @@
 ---
+title: Capturing Nested Member Expr.Expect
 category: misc
-last_updated: null
-source_file: capturing-nested-member-expr.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a: {a}};\n  let x = function\
-  \ () {\n    console.log(z.a.a);\n  };\n  return x;\n}"
 tags:
 - javascript
-title: Capturing Nested Member Expr.Expect
+last_updated: null
+source_file: capturing-nested-member-expr.expect.md
 ---
+# Capturing Nested Member Expr.Expect
 
 ## Input
 
@@ -64,4 +63,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: For In Statement Break.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement-break.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  const object = {...props.value};\n\
-  \  for (const y in object) {\n    if (y === 'break') {\n      break;\n    }\n  \
-  \  x = object[y];\n  }\n  return x;\n}"
 tags:
 - javascript
-title: For In Statement Break.Expect
+last_updated: null
+source_file: for-in-statement-break.expect.md
 ---
+# For In Statement Break.Expect
 
 ## Input
 
@@ -66,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

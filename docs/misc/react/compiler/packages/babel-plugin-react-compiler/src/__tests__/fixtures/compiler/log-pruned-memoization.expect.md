@@ -1,15 +1,13 @@
 ---
+title: Log Pruned Memoization.Expect
 category: misc
-last_updated: null
-source_file: log-pruned-memoization.expect.md
-summary: "```javascript\n// @loggerTestOnly\nimport {createContext, use, useState}\
-  \ from 'react';\nimport {\n  Stringify,\n  identity,\n  makeObjectPrimitives,\n\
-  \  useHook,\n} from 'sharedruntime';"
 tags:
 - javascript
 - testing
-title: Log Pruned Memoization.Expect
+last_updated: null
+source_file: log-pruned-memoization.expect.md
 ---
+# Log Pruned Memoization.Expect
 
 ## Input
 
@@ -144,6 +142,6 @@ export const FIXTURE_ENTRYPOINT = {
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":10,"column":0,"index":167},"end":{"line":33,"column":1,"index":911},"filename":"log-pruned-memoization.ts"},"fnName":"Component","memoSlots":6,"memoBlocks":2,"memoValues":2,"prunedMemoBlocks":2,"prunedMemoValues":3}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":37,"column":0,"index":947},"end":{"line":43,"column":1,"index":1045},"filename":"log-pruned-memoization.ts"},"fnName":"Wrapper","memoSlots":1,"memoBlocks":1,"memoValues":1,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"items":[42,{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},[{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true},{"a":0,"b":"value1","c":true}]]}</div>

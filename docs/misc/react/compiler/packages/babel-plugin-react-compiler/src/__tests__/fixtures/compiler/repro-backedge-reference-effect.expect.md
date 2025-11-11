@@ -1,14 +1,12 @@
 ---
+title: Repro Backedge Reference Effect.Expect
 category: misc
-last_updated: null
-source_file: repro-backedge-reference-effect.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Backedge Reference Effect.Expect
+last_updated: null
+source_file: repro-backedge-reference-effect.expect.md
 ---
+# Repro Backedge Reference Effect.Expect
 
 ## Input
 
@@ -78,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"fn":{"kind":"Function","result":[1,2,4]},"shouldInvokeFns":true}</div>

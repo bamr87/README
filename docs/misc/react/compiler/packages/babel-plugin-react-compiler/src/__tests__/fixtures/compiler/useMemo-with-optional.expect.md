@@ -1,14 +1,12 @@
 ---
+title: Usememo With Optional.Expect
 category: misc
-last_updated: null
-source_file: useMemo-with-optional.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nimport\
-  \ {useMemo} from 'react';\nfunction Component(props) {\n  return (\n    useMemo(()\
-  \ => {\n      return [props.value];\n    }) || []\n ..."
 tags:
 - javascript
-title: Usememo With Optional.Expect
+last_updated: null
+source_file: useMemo-with-optional.expect.md
 ---
+# Usememo With Optional.Expect
 
 ## Input
 
@@ -54,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]

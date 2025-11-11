@@ -1,14 +1,12 @@
 ---
+title: Repro No Value For Temporary.Expect
 category: misc
-last_updated: null
-source_file: repro-no-value-for-temporary.expect.md
-summary: "```javascript\n// @flow @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions\n\
-  function Component(listItem, thread) {\n  const isFoo = isFooThread(thread.threadType);\n\
-  \  const ..."
 tags:
 - javascript
-title: Repro No Value For Temporary.Expect
+last_updated: null
+source_file: repro-no-value-for-temporary.expect.md
 ---
+# Repro No Value For Temporary.Expect
 
 ## Input
 
@@ -60,6 +58,6 @@ function Component(listItem, thread) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -1,22 +1,19 @@
 ---
+title: GitHub Actions Workflow Fixes and Improvements
 category: setup
-last_updated: null
-source_file: WORKFLOW_FIXES.md
-summary: This document details all fixes and improvements made to GitHub Actions workflows
-  in this repository. All workflows have been reviewed, validated, and updated to
-  follow best practices.
 tags:
 - python
 - docker
 - azure
 - database
 - testing
-title: GitHub Actions Workflow Fixes and Improvements
+last_updated: null
+source_file: WORKFLOW_FIXES.md
 ---
 # GitHub Actions Workflow Fixes and Improvements
 
-**Date:** 2025-10-31  
-**PR:** Fix workflow issues  
+**Date:** 2025-10-31
+**PR:** Fix workflow issues
 **Status:** ✅ Completed
 
 ## Overview
@@ -27,13 +24,13 @@ This document details all fixes and improvements made to GitHub Actions workflow
 
 ### 1. Docker Compose Command Updates
 
-**Issue:** Workflows were using deprecated `docker-compose` (hyphenated) command.  
-**Impact:** Compatibility issues with newer Docker installations.  
+**Issue:** Workflows were using deprecated `docker-compose` (hyphenated) command.
+**Impact:** Compatibility issues with newer Docker installations.
 **Fix:** Updated all instances to use `docker compose` (space-separated) command.
 
 **Files Updated:**
 - `infrastructure-test.yml` - 7 occurrences
-- `environment.yml` - 8 occurrences  
+- `environment.yml` - 8 occurrences
 - `container.yml` - Already using correct syntax
 
 **Example Change:**
@@ -47,8 +44,8 @@ docker compose -f .devcontainer/docker-compose_dev.yml up -d
 
 ### 2. Working Directory and Environment Variables
 
-**Issue:** CI workflow's migration check was missing working directory context.  
-**Impact:** Commands would fail when run from wrong directory.  
+**Issue:** CI workflow's migration check was missing working directory context.
+**Impact:** Commands would fail when run from wrong directory.
 **Fix:** Added `working-directory: src` and proper environment variables.
 
 **File:** `ci.yml`
@@ -72,8 +69,8 @@ docker compose -f .devcontainer/docker-compose_dev.yml up -d
 
 ### 3. Azure Configuration Path Fix
 
-**Issue:** Deploy workflow checking for azure.yaml in wrong directory.  
-**Impact:** Deployment validation would fail incorrectly.  
+**Issue:** Deploy workflow checking for azure.yaml in wrong directory.
+**Impact:** Deployment validation would fail incorrectly.
 **Fix:** Removed incorrect `working-directory: src` directive.
 
 **File:** `deploy.yml`
@@ -93,8 +90,8 @@ docker compose -f .devcontainer/docker-compose_dev.yml up -d
 
 ### 4. Azure Dev Workflow - Linux Compatibility
 
-**Issue:** PowerShell commands incompatible with Linux runners.  
-**Impact:** Workflow would fail on ubuntu-latest runners.  
+**Issue:** PowerShell commands incompatible with Linux runners.
+**Impact:** Workflow would fail on ubuntu-latest runners.
 **Fix:** Converted PowerShell syntax to bash.
 
 **File:** `azure-dev.yml`
@@ -120,8 +117,8 @@ docker compose -f .devcontainer/docker-compose_dev.yml up -d
 
 ### 5. Action Version Updates
 
-**Issue:** Using deprecated action versions.  
-**Impact:** Security and compatibility concerns.  
+**Issue:** Using deprecated action versions.
+**Impact:** Security and compatibility concerns.
 **Fix:** Updated to latest stable versions.
 
 **File:** `azure-dev.yml`
@@ -165,8 +162,8 @@ jobs:
 
 ### Container Service Startup Tests
 
-**Issue:** Generic test command `--version` failed for some services.  
-**Impact:** False negative test results.  
+**Issue:** Generic test command `--version` failed for some services.
+**Impact:** False negative test results.
 **Fix:** Service-specific test commands with proper setup.
 
 **File:** `container.yml`
@@ -185,8 +182,8 @@ fi
 
 ### Environment Configuration Improvements
 
-**Issue:** Missing environment files in container tests.  
-**Impact:** Services failing to start properly.  
+**Issue:** Missing environment files in container tests.
+**Impact:** Services failing to start properly.
 **Fix:** Added proper .env file creation before starting services.
 
 **Files:** `environment.yml`, `container.yml`
@@ -200,15 +197,15 @@ fi
     POSTGRES_DB=test_db
     # ... more variables
     EOL
-    
+
     # Start services
     docker compose -f .devcontainer/docker-compose_dev.yml up -d
 ```
 
 ### Quality Workflow Path Checking
 
-**Issue:** Azure configuration checked in only one location.  
-**Impact:** False negatives when file exists in alternate location.  
+**Issue:** Azure configuration checked in only one location.
+**Impact:** False negatives when file exists in alternate location.
 **Fix:** Check both root and src directories.
 
 **File:** `quality.yml`
@@ -230,11 +227,11 @@ fi
 
 All workflows have been validated for:
 
-✅ **YAML Syntax** - All files pass Python YAML parser validation  
-✅ **Path References** - All file paths are correct  
-✅ **Command Syntax** - All shell commands use correct syntax  
-✅ **Docker Commands** - Using modern Docker Compose CLI  
-✅ **Timeout Settings** - All long-running jobs have timeouts  
+✅ **YAML Syntax** - All files pass Python YAML parser validation
+✅ **Path References** - All file paths are correct
+✅ **Command Syntax** - All shell commands use correct syntax
+✅ **Docker Commands** - Using modern Docker Compose CLI
+✅ **Timeout Settings** - All long-running jobs have timeouts
 ✅ **Environment Variables** - Proper variable usage and scoping
 
 ## Testing Strategy
@@ -268,11 +265,11 @@ For contributors:
 ## Known Issues and Workarounds
 
 ### Issue: Docker Compose V1 vs V2
-**Status:** Resolved  
+**Status:** Resolved
 **Workaround:** GitHub Actions runners use Docker Compose V2 by default
 
 ### Issue: Azure authentication methods
-**Status:** Both methods supported  
+**Status:** Both methods supported
 **Details:** Workflows support both federated credentials and service principal authentication
 
 ## Future Improvements
@@ -300,6 +297,6 @@ For issues or questions about these changes:
 
 ---
 
-**Validation Date:** 2025-10-31  
-**Validator:** GitHub Copilot Workflow Review Agent  
+**Validation Date:** 2025-10-31
+**Validator:** GitHub Copilot Workflow Review Agent
 **Status:** ✅ All workflows validated and tested

@@ -1,14 +1,12 @@
 ---
+title: For Of Mutate.Expect
 category: misc
-last_updated: null
-source_file: for-of-mutate.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives, mutateAndReturn, toJSON} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Mutate.Expect
+last_updated: null
+source_file: for-of-mutate.expect.md
 ---
+# For Of Mutate.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"a":0,"b":"value1","c":true,"wat0":"joe"}</div></div>

@@ -1,22 +1,13 @@
 ---
+title: Workflow Changes Summary
 category: setup
-last_updated: null
-source_file: CHANGES_SUMMARY.md
-summary: '| Workflow File | Status | Issues Fixed | Priority |
-
-  |||||
-
-  | ci.yml | ✅ Fixed | Working directory, env vars, timeouts | High |
-
-  | deploy.yml | ✅ Fixed | Path validation, timeouts | High |
-
-  | azuredev.ym...'
 tags:
 - docker
 - azure
 - testing
 - setup
-title: Workflow Changes Summary
+last_updated: null
+source_file: CHANGES_SUMMARY.md
 ---
 # Workflow Changes Summary
 
@@ -66,11 +57,11 @@ title: Workflow Changes Summary
 
 ## Validation Status
 
-✅ All YAML files validated  
-✅ All syntax errors fixed  
-✅ All path references corrected  
-✅ All Docker commands updated  
-✅ All critical jobs have timeouts  
+✅ All YAML files validated
+✅ All syntax errors fixed
+✅ All path references corrected
+✅ All Docker commands updated
+✅ All critical jobs have timeouts
 
 ## Next Steps
 

@@ -1,14 +1,12 @@
 ---
+title: Jsx Outlining Dupe Key Dupe Component.Expect
 category: misc
-last_updated: null
-source_file: jsx-outlining-dupe-key-dupe-component.expect.md
-summary: "```javascript\n// @enableJsxOutlining\nfunction Component({arr}) {\n  const\
-  \ x = useX();\n  return (\n    <>\n      {arr.map((i, id) => {\n        return (\n\
-  \          <Bar key={id} x={x}>\n            <Foo k={i..."
 tags:
 - javascript
-title: Jsx Outlining Dupe Key Dupe Component.Expect
+last_updated: null
+source_file: jsx-outlining-dupe-key-dupe-component.expect.md
 ---
+# Jsx Outlining Dupe Key Dupe Component.Expect
 
 ## Input
 
@@ -163,6 +161,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooifoojxbaribarj

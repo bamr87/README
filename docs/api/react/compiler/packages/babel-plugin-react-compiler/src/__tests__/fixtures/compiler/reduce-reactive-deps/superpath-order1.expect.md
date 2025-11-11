@@ -1,21 +1,14 @@
 ---
+title: Superpath Order1.Expect
 category: api
-last_updated: null
-source_file: superpath-order1.expect.md
-summary: '``javascript
-
-  // When an unconditional dependency props.a is the subpath of a conditional
-
-  // dependency props.a.b, we can safely overestimate and only track props.a`
-
-  // as a dependency'
 tags:
 - javascript
 - api
 - testing
-- api
-title: Superpath Order1.Expect
+last_updated: null
+source_file: superpath-order1.expect.md
 ---
+# Superpath Order1.Expect
 
 ## Input
 
@@ -96,7 +89,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":null}
 {"a":{}}

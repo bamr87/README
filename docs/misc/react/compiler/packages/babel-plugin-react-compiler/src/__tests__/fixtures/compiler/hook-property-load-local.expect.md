@@ -1,14 +1,12 @@
 ---
+title: Hook Property Load Local.Expect
 category: misc
-last_updated: null
-source_file: hook-property-load-local.expect.md
-summary: '```javascript
-
-  function useFoo() {}'
 tags:
 - javascript
-title: Hook Property Load Local.Expect
+last_updated: null
+source_file: hook-property-load-local.expect.md
 ---
+# Hook Property Load Local.Expect
 
 ## Input
 
@@ -45,7 +43,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "useFoo"
 logs: ['useFoo']

@@ -1,14 +1,12 @@
 ---
+title: Logical Expression.Expect
 category: misc
-last_updated: null
-source_file: logical-expression.expect.md
-summary: "```javascript\nfunction component(props) {\n  let a = props.a || (props.b\
-  \ && props.c && props.d);\n  let b = (props.a && props.b && props.c) || props.d;\n\
-  \  return a ? b : props.c;\n}"
 tags:
 - javascript
-title: Logical Expression.Expect
+last_updated: null
+source_file: logical-expression.expect.md
 ---
+# Logical Expression.Expect
 
 ## Input
 
@@ -43,4 +41,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

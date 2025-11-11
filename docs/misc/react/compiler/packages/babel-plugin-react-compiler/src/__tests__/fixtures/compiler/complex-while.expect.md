@@ -1,13 +1,12 @@
 ---
+title: Complex While.Expect
 category: misc
-last_updated: null
-source_file: complex-while.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  label: if (a) {\n    while (b)\
-  \ {\n      if (c) {\n        break label;\n      }\n    }\n  }\n  return c;\n}"
 tags:
 - javascript
-title: Complex While.Expect
+last_updated: null
+source_file: complex-while.expect.md
 ---
+# Complex While.Expect
 
 ## Input
 
@@ -52,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

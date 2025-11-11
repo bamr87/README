@@ -1,16 +1,13 @@
 ---
+title: Destructuring Mixed Scope Declarations And Locals.Expect
 category: api
-last_updated: null
-source_file: destructuring-mixed-scope-declarations-and-locals.expect.md
-summary: '```javascript
-
-  import {useFragment} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-- api
-title: Destructuring Mixed Scope Declarations And Locals.Expect
+last_updated: null
+source_file: destructuring-mixed-scope-declarations-and-locals.expect.md
 ---
+# Destructuring Mixed Scope Declarations And Locals.Expect
 
 ## Input
 
@@ -95,4 +92,3 @@ function Component(props) {
 }
 
 ```
-      

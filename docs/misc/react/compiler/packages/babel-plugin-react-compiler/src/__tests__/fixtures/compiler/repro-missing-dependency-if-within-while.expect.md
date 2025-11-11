@@ -1,14 +1,12 @@
 ---
+title: Repro Missing Dependency If Within While.Expect
 category: misc
-last_updated: null
-source_file: repro-missing-dependency-if-within-while.expect.md
-summary: "```javascript\nconst someGlobal = true;\nexport default function Component(props)\
-  \ {\n  const {b} = props;\n  const items = [];\n  let i = 0;\n  while (i < 10) {\n\
-  \    if (someGlobal) {\n      items.push(<div k..."
 tags:
 - javascript
-title: Repro Missing Dependency If Within While.Expect
+last_updated: null
+source_file: repro-missing-dependency-if-within-while.expect.md
 ---
+# Repro Missing Dependency If Within While.Expect
 
 ## Input
 
@@ -88,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div>
 <div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div>

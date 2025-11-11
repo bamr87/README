@@ -1,14 +1,13 @@
 ---
+title: Error.Todo.Try Catch With Throw.Expect
 category: development
-last_updated: null
-source_file: error.todo.try-catch-with-throw.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  try {\n    throw\
-  \ [];\n  } catch (e) {\n    x.push(e);\n  }\n  return x;\n}"
 tags:
 - javascript
 - development
-title: Error.Todo.Try Catch With Throw.Expect
+last_updated: null
+source_file: error.todo.try-catch-with-throw.expect.md
 ---
+# Error.Todo.Try Catch With Throw.Expect
 
 ## Input
 
@@ -42,5 +41,4 @@ error.todo.try-catch-with-throw.ts:4:4
   6 |     x.push(e);
   7 |   }
 ```
-          
-      
+

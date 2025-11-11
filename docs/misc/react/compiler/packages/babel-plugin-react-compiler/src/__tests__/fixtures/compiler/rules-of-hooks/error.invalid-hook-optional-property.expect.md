@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Hook Optional Property.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-optional-property.expect.md
-summary: "```javascript\nfunction Component() {\n  const {result} = Module?.useConditionalHook()\
-  \ ?? {};\n  return result;\n}"
 tags:
 - javascript
-title: Error.Invalid Hook Optional Property.Expect
+last_updated: null
+source_file: error.invalid-hook-optional-property.expect.md
 ---
+# Error.Invalid Hook Optional Property.Expect
 
 ## Input
 
@@ -35,5 +34,4 @@ error.invalid-hook-optional-property.ts:2:19
   4 | }
   5 |
 ```
-          
-      
+

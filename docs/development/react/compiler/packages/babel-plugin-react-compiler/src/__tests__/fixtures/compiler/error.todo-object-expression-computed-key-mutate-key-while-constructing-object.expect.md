@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Object Expression Computed Key Mutate Key While Constructing Object.Expect
 category: development
-last_updated: null
-source_file: error.todo-object-expression-computed-key-mutate-key-while-constructing-object.expect.md
-summary: '```javascript
-
-  import {identity, mutate, mutateAndReturn} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo Object Expression Computed Key Mutate Key While Constructing Object.Expect
+last_updated: null
+source_file: error.todo-object-expression-computed-key-mutate-key-while-constructing-object.expect.md
 ---
+# Error.Todo Object Expression Computed Key Mutate Key While Constructing Object.Expect
 
 ## Input
 
@@ -48,5 +46,4 @@ error.todo-object-expression-computed-key-mutate-key-while-constructing-object.t
   8 |   return context;
   9 | }
 ```
-          
-      
+

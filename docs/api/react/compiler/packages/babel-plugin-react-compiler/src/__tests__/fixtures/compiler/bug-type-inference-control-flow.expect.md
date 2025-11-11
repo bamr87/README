@@ -1,15 +1,13 @@
 ---
+title: Bug Type Inference Control Flow.Expect
 category: api
-last_updated: null
-source_file: bug-type-inference-control-flow.expect.md
-summary: '```javascript
-
-  import {arrayPush, CONSTNUMBER0, mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Bug Type Inference Control Flow.Expect
+last_updated: null
+source_file: bug-type-inference-control-flow.expect.md
 ---
+# Bug Type Inference Control Flow.Expect
 
 ## Input
 
@@ -123,4 +121,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

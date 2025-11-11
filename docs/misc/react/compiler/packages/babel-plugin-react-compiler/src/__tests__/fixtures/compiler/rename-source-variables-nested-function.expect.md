@@ -1,16 +1,12 @@
 ---
+title: Rename Source Variables Nested Function.Expect
 category: misc
-last_updated: null
-source_file: rename-source-variables-nested-function.expect.md
-summary: '```javascript
-
-  // @enableChangeVariableCodegen
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Rename Source Variables Nested Function.Expect
+last_updated: null
+source_file: rename-source-variables-nested-function.expect.md
 ---
+# Rename Source Variables Nested Function.Expect
 
 ## Input
 
@@ -86,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42
 logs: ['module_$','module_t0','module_c_0']

@@ -1,15 +1,13 @@
 ---
+title: Hook Call Freezes Captured Memberexpr.Expect
 category: api
-last_updated: null
-source_file: hook-call-freezes-captured-memberexpr.expect.md
-summary: '```javascript
-
-  import {useIdentity, Stringify, identity} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Hook Call Freezes Captured Memberexpr.Expect
+last_updated: null
+source_file: hook-call-freezes-captured-memberexpr.expect.md
 ---
+# Hook Call Freezes Captured Memberexpr.Expect
 
 ## Input
 
@@ -93,7 +91,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"copy":{"inner":1},"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"copy":{"inner":1},"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

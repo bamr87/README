@@ -1,15 +1,13 @@
 ---
+title: Error.Capitalized Function Call Aliased.Expect
 category: api
-last_updated: null
-source_file: error.capitalized-function-call-aliased.expect.md
-summary: "```javascript\n// @validateNoCapitalizedCalls\nfunction Foo() {\n  let x\
-  \ = Bar;\n  x(); // ERROR\n}"
 tags:
 - javascript
 - api
-- api
-title: Error.Capitalized Function Call Aliased.Expect
+last_updated: null
+source_file: error.capitalized-function-call-aliased.expect.md
 ---
+# Error.Capitalized Function Call Aliased.Expect
 
 ## Input
 
@@ -40,5 +38,4 @@ error.capitalized-function-call-aliased.ts:4:2
   5 | }
   6 |
 ```
-          
-      
+

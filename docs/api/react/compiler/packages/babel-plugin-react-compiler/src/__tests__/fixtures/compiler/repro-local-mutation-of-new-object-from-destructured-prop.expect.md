@@ -1,16 +1,13 @@
 ---
+title: Repro Local Mutation Of New Object From Destructured Prop.Expect
 category: api
-last_updated: null
-source_file: repro-local-mutation-of-new-object-from-destructured-prop.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-- api
-title: Repro Local Mutation Of New Object From Destructured Prop.Expect
+last_updated: null
+source_file: repro-local-mutation-of-new-object-from-destructured-prop.expect.md
 ---
+# Repro Local Mutation Of New Object From Destructured Prop.Expect
 
 ## Input
 
@@ -70,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"rest":{"other":"other","value":42}}</div>

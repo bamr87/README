@@ -1,16 +1,14 @@
 ---
+title: Array Map Simple.Expect
 category: misc
-last_updated: null
-source_file: array-map-simple.expect.md
-summary: "``javascript\n/\n  Test that we're not hoisting property reads from lambdas\
-  \ that are created to\n  pass to opaque functions, which often have maybeinvoke\
-  \ semantics.\n \n  In this example, we shouldn't hois..."
 tags:
 - javascript
 - aws
 - testing
-title: Array Map Simple.Expect
+last_updated: null
+source_file: array-map-simple.expect.md
 ---
+# Array Map Simple.Expect
 
 ## Input
 
@@ -117,7 +115,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]
 [[],[]]

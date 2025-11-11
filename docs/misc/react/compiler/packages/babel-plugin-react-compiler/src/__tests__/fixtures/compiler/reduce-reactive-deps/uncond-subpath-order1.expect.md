@@ -1,15 +1,13 @@
 ---
+title: Uncond Subpath Order1.Expect
 category: misc
-last_updated: null
-source_file: uncond-subpath-order1.expect.md
-summary: "```javascript\n// Determine that we only need to track p.a here\n// Ordering\
-  \ of access should not matter\nfunction TestDepsSubpathOrder1(props) {\n  let x\
-  \ = {};\n  x.b = props.a.b;\n  x.a = props.a;\n  x.c =..."
 tags:
 - javascript
 - testing
-title: Uncond Subpath Order1.Expect
+last_updated: null
+source_file: uncond-subpath-order1.expect.md
 ---
+# Uncond Subpath Order1.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":{"c":2},"a":{"b":"[[ cyclic ref *1 ]]"},"c":2}

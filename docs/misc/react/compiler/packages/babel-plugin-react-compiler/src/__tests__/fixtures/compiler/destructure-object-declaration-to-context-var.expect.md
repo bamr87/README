@@ -1,14 +1,12 @@
 ---
+title: Destructure Object Declaration To Context Var.Expect
 category: misc
-last_updated: null
-source_file: destructure-object-declaration-to-context-var.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Destructure Object Declaration To Context Var.Expect
+last_updated: null
+source_file: destructure-object-declaration-to-context-var.expect.md
 ---
+# Destructure Object Declaration To Context Var.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":42}

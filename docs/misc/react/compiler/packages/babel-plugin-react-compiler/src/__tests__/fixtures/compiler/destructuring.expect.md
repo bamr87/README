@@ -1,14 +1,12 @@
 ---
+title: Destructuring.Expect
 category: misc
-last_updated: null
-source_file: destructuring.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  const [\n    d,\n    [\n     \
-  \ {\n        e: {f},\n        ...g\n      },\n    ],\n    ...h\n  ] = a;\n  const\
-  \ {\n    l: {\n      m: [[n], ...o],\n    },\n    p,\n  } = b;\n  re..."
 tags:
 - javascript
-title: Destructuring.Expect
+last_updated: null
+source_file: destructuring.expect.md
 ---
+# Destructuring.Expect
 
 ## Input
 
@@ -120,4 +118,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

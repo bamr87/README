@@ -1,14 +1,12 @@
 ---
+title: Escape Analysis Non Escaping Interleaved Primitive Dependency.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-non-escaping-interleaved-primitive-dependency.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // a does not need to be memoized\
-  \ ever, even though it's a\n  // dependency of c, which exists in a scope that has\
-  \ a memoized\n  // output. it doesn't need to..."
 tags:
 - javascript
-title: Escape Analysis Non Escaping Interleaved Primitive Dependency.Expect
+last_updated: null
+source_file: escape-analysis-non-escaping-interleaved-primitive-dependency.expect.md
 ---
+# Escape Analysis Non Escaping Interleaved Primitive Dependency.Expect
 
 ## Input
 
@@ -69,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

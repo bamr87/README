@@ -1,14 +1,12 @@
 ---
+title: Reduce If Nonexhaustive Poisoned Deps.Expect
 category: misc
-last_updated: null
-source_file: reduce-if-nonexhaustive-poisoned-deps.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reduce If Nonexhaustive Poisoned Deps.Expect
+last_updated: null
+source_file: reduce-if-nonexhaustive-poisoned-deps.expect.md
 ---
+# Reduce If Nonexhaustive Poisoned Deps.Expect
 
 ## Input
 
@@ -115,7 +113,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 null

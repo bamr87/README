@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks 49D341E5D68F.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-49d341e5d68f.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks 49D341E5D68F.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-49d341e5d68f.expect.md
 ---
+# Error.Invalid Rules Of Hooks 49D341E5D68F.Expect
 
 ## Input
 
@@ -43,5 +41,4 @@ error.invalid-rules-of-hooks-49d341e5d68f.ts:8:4
   10 | }
   11 |
 ```
-          
-      
+

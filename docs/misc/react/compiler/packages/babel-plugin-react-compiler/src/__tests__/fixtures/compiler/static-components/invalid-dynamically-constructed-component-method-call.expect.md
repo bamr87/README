@@ -1,14 +1,13 @@
 ---
+title: Invalid Dynamically Constructed Component Method Call.Expect
 category: misc
-last_updated: null
-source_file: invalid-dynamically-constructed-component-method-call.expect.md
-summary: "```javascript\n// @loggerTestOnly @validateStaticComponents\nfunction Example(props)\
-  \ {\n  const Component = props.foo.bar();\n  return <Component />;\n}"
 tags:
 - javascript
 - testing
-title: Invalid Dynamically Constructed Component Method Call.Expect
+last_updated: null
+source_file: invalid-dynamically-constructed-component-method-call.expect.md
 ---
+# Invalid Dynamically Constructed Component Method Call.Expect
 
 ## Input
 
@@ -55,6 +54,6 @@ function Example(props) {
 {"kind":"CompileError","detail":{"options":{"category":"StaticComponents","reason":"Cannot create components during render","description":"Components created during render will reset their state each time they are created. Declare components outside of render","details":[{"kind":"error","loc":{"start":{"line":4,"column":10,"index":118},"end":{"line":4,"column":19,"index":127},"filename":"invalid-dynamically-constructed-component-method-call.ts"},"message":"This component is created during render"},{"kind":"error","loc":{"start":{"line":3,"column":20,"index":91},"end":{"line":3,"column":35,"index":106},"filename":"invalid-dynamically-constructed-component-method-call.ts"},"message":"The component is created during render here"}]}},"fnLoc":null}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":2,"column":0,"index":45},"end":{"line":5,"column":1,"index":133},"filename":"invalid-dynamically-constructed-component-method-call.ts"},"fnName":"Example","memoSlots":4,"memoBlocks":2,"memoValues":2,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

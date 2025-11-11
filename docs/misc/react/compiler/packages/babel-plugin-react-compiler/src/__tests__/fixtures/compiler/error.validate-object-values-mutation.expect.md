@@ -1,16 +1,12 @@
 ---
+title: Error.Validate Object Values Mutation.Expect
 category: misc
-last_updated: null
-source_file: error.validate-object-values-mutation.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {makeObjectPrimitives, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Validate Object Values Mutation.Expect
+last_updated: null
+source_file: error.validate-object-values-mutation.expect.md
 ---
+# Error.Validate Object Values Mutation.Expect
 
 ## Input
 
@@ -66,5 +62,4 @@ error.validate-object-values-mutation.ts:6:17
   8 |     value.updated = true;
   9 |   });
 ```
-          
-      
+

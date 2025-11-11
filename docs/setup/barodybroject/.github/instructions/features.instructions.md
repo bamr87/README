@@ -1,44 +1,15 @@
 ---
-applyTo: '**'
-author: Barodybroject Team
+title: Feature Development Pipeline for Barodybroject
 category: setup
-containerRequirements:
-  description: Django feature development optimized for VS Code Copilot assistance
-  validation: feature integration validation, AI-readability scoring
-created: 2025-10-28
-dependencies:
-- copilot-instructions.md: Core principles and project context
-- languages.instructions.md: Language-specific patterns
-- workflows.instructions.md: CI/CD pipeline standards
-- space.instructions.md: Project organization patterns
-description: VS Code Copilot-optimized feature development pipeline for Django/OpenAI
-  applications with CI/CD integration
-file: features.instructions.md
-lastModified: 2025-10-28
-last_updated: null
-paths:
-  feature_development_path:
-  - feature_planning
-  - ai_assisted_implementation
-  - django_integration
-  - openai_service_integration
-  - testing_and_validation
-  - deployment_automation
-source_file: features.instructions.md
-summary: These instructions provide comprehensive guidance for developing features
-  in the Django/OpenAI parody news generator, optimized for VS Code Copilot assistance.
-  They focus on creating robust, scalable ...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Feature Development Pipeline for Barodybroject
-version: 1.0.0
+last_updated: null
+source_file: features.instructions.md
 ---
-
-
 # Feature Development Pipeline for Barodybroject
 
 These instructions provide comprehensive guidance for developing features in the Django/OpenAI parody news generator, optimized for VS Code Copilot assistance. They focus on creating robust, scalable features that integrate seamlessly with Django best practices and OpenAI API patterns.
@@ -125,11 +96,11 @@ import uuid
 class Article(models.Model):
     """
     Parody news article model with OpenAI integration support
-    
+
     This model represents articles generated through OpenAI API
     with proper tracking of generation parameters and metadata.
     """
-    
+
     # Primary fields
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(
@@ -142,7 +113,7 @@ class Article(models.Model):
         validators=[MinLengthValidator(100)],
         help_text="Main article content"
     )
-    
+
     # Relationships
     author = models.ForeignKey(
         User,
@@ -155,7 +126,7 @@ class Article(models.Model):
         null=True,
         related_name='articles'
     )
-    
+
     # OpenAI integration fields
     ai_prompt = models.TextField(
         blank=True,
@@ -170,7 +141,7 @@ class Article(models.Model):
         default=dict,
         help_text="Additional generation parameters and metadata"
     )
-    
+
     # Status and timestamps
     status = models.CharField(
         max_length=20,
@@ -184,7 +155,7 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     published_at = models.DateTimeField(null=True, blank=True)
-    
+
     class Meta:
         ordering = ['-created_at']
         indexes = [
@@ -194,24 +165,24 @@ class Article(models.Model):
         ]
         verbose_name = 'Article'
         verbose_name_plural = 'Articles'
-    
+
     def __str__(self):
         return self.title
-    
+
     def get_absolute_url(self):
         return reverse('article-detail', kwargs={'slug': self.slug})
-    
+
     def save(self, *args, **kwargs):
         # Auto-generate slug if not provided
         if not self.slug:
             from django.utils.text import slugify
             self.slug = slugify(self.title)
-        
+
         # Set published_at when first published
         if self.status == 'published' and not self.published_at:
             from django.utils import timezone
             self.published_at = timezone.now()
-        
+
         super().save(*args, **kwargs)
 ```
 
@@ -232,23 +203,23 @@ logger = logging.getLogger(__name__)
 class OpenAIService:
     """
     Service for OpenAI API integration with comprehensive error handling
-    
+
     This service provides a robust interface to OpenAI API with:
     - Retry logic for transient failures
     - Rate limiting and quota management
     - Caching for expensive operations
     - Comprehensive logging and monitoring
     """
-    
+
     def __init__(self):
         if not settings.OPENAI_API_KEY:
             raise ValidationError("OPENAI_API_KEY is required")
-        
+
         openai.api_key = settings.OPENAI_API_KEY
         self.model = getattr(settings, 'OPENAI_MODEL', 'gpt-4')
         self.max_retries = getattr(settings, 'OPENAI_MAX_RETRIES', 3)
         self.cache_timeout = getattr(settings, 'OPENAI_CACHE_TIMEOUT', 3600)
-    
+
     def generate_article_content(
         self,
         prompt: str,
@@ -258,16 +229,16 @@ class OpenAIService:
     ) -> Dict[str, Any]:
         """
         Generate parody article content using OpenAI API
-        
+
         Args:
             prompt: The generation prompt
             category: Article category for context
             style: Writing style (satirical, absurd, etc.)
             max_tokens: Maximum tokens in response
-        
+
         Returns:
             Dict containing generated title and content
-        
+
         Raises:
             openai.OpenAIError: If API call fails after retries
             ValidationError: If input parameters are invalid
@@ -275,17 +246,17 @@ class OpenAIService:
         # Input validation
         if not prompt or len(prompt.strip()) < 10:
             raise ValidationError("Prompt must be at least 10 characters")
-        
+
         # Check cache first
         cache_key = f"openai_article_{hash(prompt)}_{category}_{style}"
         cached_result = cache.get(cache_key)
         if cached_result:
             logger.info(f"Returning cached content for prompt: {prompt[:50]}...")
             return cached_result
-        
+
         # Build system message
         system_message = self._build_system_message(category, style)
-        
+
         # Generate content with retry logic
         for attempt in range(self.max_retries):
             try:
@@ -298,54 +269,54 @@ class OpenAIService:
                     max_tokens=max_tokens or settings.OPENAI_MAX_TOKENS,
                     temperature=getattr(settings, 'OPENAI_TEMPERATURE', 0.7)
                 )
-                
+
                 content = response.choices[0].message.content
                 result = self._parse_generated_content(content)
-                
+
                 # Cache successful result
                 cache.set(cache_key, result, self.cache_timeout)
-                
+
                 logger.info(f"Generated content successfully (attempt {attempt + 1})")
                 return result
-                
+
             except openai.RateLimitError as e:
                 logger.warning(f"Rate limit hit (attempt {attempt + 1}): {e}")
                 if attempt < self.max_retries - 1:
                     time.sleep(2 ** attempt)  # Exponential backoff
                 else:
                     raise
-                    
+
             except openai.APIError as e:
                 logger.error(f"OpenAI API error (attempt {attempt + 1}): {e}")
                 if attempt < self.max_retries - 1:
                     time.sleep(1)
                 else:
                     raise
-    
+
     def _build_system_message(self, category: str, style: str) -> str:
         """Build system message based on category and style"""
         return f"""
         You are a {style} news writer creating parody articles for the {category} category.
-        
+
         Guidelines:
         - Create humorous, satirical content that's clearly fictional
         - Use a professional news writing style but with absurd content
         - Include a compelling headline and 3-5 paragraph article
         - Make it entertaining while avoiding offensive content
-        
+
         Format your response as:
         TITLE: [Your headline here]
         CONTENT: [Your article content here]
         """
-    
+
     def _parse_generated_content(self, content: str) -> Dict[str, str]:
         """Parse OpenAI response into structured format"""
         lines = content.strip().split('\n')
-        
+
         title = ""
         content_lines = []
         in_content = False
-        
+
         for line in lines:
             if line.startswith('TITLE:'):
                 title = line.replace('TITLE:', '').strip()
@@ -354,7 +325,7 @@ class OpenAIService:
                 content_lines.append(line.replace('CONTENT:', '').strip())
             elif in_content and line.strip():
                 content_lines.append(line.strip())
-        
+
         return {
             'title': title or 'Untitled Article',
             'content': '\n\n'.join(filter(None, content_lines)),
@@ -374,11 +345,11 @@ from .models import Article, Category
 
 class ArticleSerializer(serializers.ModelSerializer):
     """Serializer for Article API endpoints"""
-    
+
     author_name = serializers.CharField(source='author.username', read_only=True)
     category_name = serializers.CharField(source='category.name', read_only=True)
     url = serializers.SerializerMethodField()
-    
+
     class Meta:
         model = Article
         fields = [
@@ -387,7 +358,7 @@ class ArticleSerializer(serializers.ModelSerializer):
             'created_at', 'updated_at', 'published_at', 'url'
         ]
         read_only_fields = ['id', 'slug', 'created_at', 'updated_at']
-    
+
     def get_url(self, obj):
         request = self.context.get('request')
         if request:
@@ -404,37 +375,37 @@ from .services.openai_service import OpenAIService
 
 class ArticleViewSet(viewsets.ModelViewSet):
     """API viewset for articles with OpenAI generation"""
-    
+
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     lookup_field = 'slug'
-    
+
     def get_queryset(self):
         """Filter queryset based on user permissions"""
         qs = super().get_queryset()
         if not self.request.user.is_staff:
             qs = qs.filter(status='published')
         return qs.select_related('author', 'category')
-    
+
     @method_decorator(cache_page(60 * 15))  # Cache for 15 minutes
     def list(self, request, *args, **kwargs):
         """List articles with caching"""
         return super().list(request, *args, **kwargs)
-    
+
     @action(detail=False, methods=['post'], permission_classes=[permissions.IsAuthenticated])
     def generate(self, request):
         """Generate article content using OpenAI"""
         prompt = request.data.get('prompt')
         category = request.data.get('category', 'general')
         style = request.data.get('style', 'satirical')
-        
+
         if not prompt:
             return Response(
                 {'error': 'Prompt is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             openai_service = OpenAIService()
             result = openai_service.generate_article_content(
@@ -442,16 +413,16 @@ class ArticleViewSet(viewsets.ModelViewSet):
                 category=category,
                 style=style
             )
-            
+
             return Response(result, status=status.HTTP_200_OK)
-            
+
         except Exception as e:
             logger.exception(f"Content generation failed: {e}")
             return Response(
                 {'error': 'Content generation failed'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
-    
+
     def perform_create(self, serializer):
         """Set author when creating articles"""
         serializer.save(author=self.request.user)
@@ -493,70 +464,70 @@ The AI has since been promoted to Senior Software Engineer and given a corner of
 
 class TestOpenAIService:
     """Test suite for OpenAI service integration"""
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_success(self, mock_create, openai_service, mock_openai_response):
         """Test successful content generation"""
         mock_create.return_value = mock_openai_response
-        
+
         result = openai_service.generate_article_content(
             prompt='Write about AI in the workplace',
             category='tech',
             style='satirical'
         )
-        
+
         assert 'title' in result
         assert 'content' in result
         assert 'metadata' in result
         assert result['title'] == 'AI Achieves Sentience, Immediately Files for Vacation Days'
         assert 'unprecedented development' in result['content']
         mock_create.assert_called_once()
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_with_caching(self, mock_create, openai_service, mock_openai_response):
         """Test content generation uses caching"""
         from django.core.cache import cache
         cache.clear()  # Ensure clean cache state
-        
+
         mock_create.return_value = mock_openai_response
-        
+
         # First call should hit API
         result1 = openai_service.generate_article_content('Test prompt', 'tech')
         assert mock_create.call_count == 1
-        
+
         # Second identical call should use cache
         result2 = openai_service.generate_article_content('Test prompt', 'tech')
         assert mock_create.call_count == 1  # Still 1, not 2
-        
+
         assert result1 == result2
-    
+
     def test_generate_content_invalid_prompt(self, openai_service):
         """Test validation of input parameters"""
         with pytest.raises(ValidationError):
             openai_service.generate_article_content('')
-        
+
         with pytest.raises(ValidationError):
             openai_service.generate_article_content('short')
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_retry_logic(self, mock_create, openai_service):
         """Test retry logic on API failures"""
         import openai
-        
+
         # First two calls fail, third succeeds
         mock_success = MagicMock()
         mock_success.choices = [
             MagicMock(message=MagicMock(content='TITLE: Success\nCONTENT: After retries'))
         ]
-        
+
         mock_create.side_effect = [
             openai.RateLimitError('Rate limit'),
             openai.APIError('API Error'),
             mock_success
         ]
-        
+
         result = openai_service.generate_article_content('Test prompt')
-        
+
         assert result['title'] == 'Success'
         assert mock_create.call_count == 3
 
@@ -601,16 +572,16 @@ def test_article(db, test_user, test_category):
 @pytest.mark.django_db
 class TestArticleAPI:
     """Test suite for Article API endpoints"""
-    
+
     def test_list_articles_unauthenticated(self, api_client, test_article):
         """Test listing articles without authentication"""
         url = reverse('article-list')
         response = api_client.get(url)
-        
+
         assert response.status_code == status.HTTP_200_OK
         assert len(response.data['results']) == 1
         assert response.data['results'][0]['title'] == 'Test Article'
-    
+
     def test_create_article_requires_auth(self, api_client):
         """Test creating article requires authentication"""
         url = reverse('article-list')
@@ -619,47 +590,47 @@ class TestArticleAPI:
             'content': 'Article content here.',
             'category': 1
         }
-        
+
         response = api_client.post(url, data, format='json')
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
-    
+
     def test_create_article_authenticated(self, api_client, test_user, test_category):
         """Test creating article with authentication"""
         api_client.force_authenticate(user=test_user)
-        
+
         url = reverse('article-list')
         data = {
             'title': 'Authenticated User Article',
             'content': 'Content created by authenticated user.',
             'category': test_category.id
         }
-        
+
         response = api_client.post(url, data, format='json')
-        
+
         assert response.status_code == status.HTTP_201_CREATED
         assert response.data['title'] == data['title']
         assert Article.objects.filter(title=data['title']).exists()
-    
+
     @patch('parodynews.services.openai_service.OpenAIService.generate_article_content')
     def test_generate_article_endpoint(self, mock_generate, api_client, test_user):
         """Test AI content generation endpoint"""
         api_client.force_authenticate(user=test_user)
-        
+
         mock_generate.return_value = {
             'title': 'Generated Article Title',
             'content': 'Generated article content here.',
             'metadata': {'model': 'gpt-4'}
         }
-        
+
         url = reverse('article-generate')
         data = {
             'prompt': 'Write about AI in journalism',
             'category': 'tech',
             'style': 'satirical'
         }
-        
+
         response = api_client.post(url, data, format='json')
-        
+
         assert response.status_code == status.HTTP_200_OK
         assert response.data['title'] == 'Generated Article Title'
         mock_generate.assert_called_once_with(
@@ -690,7 +661,7 @@ env:
 jobs:
   test-django-features:
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:15
@@ -705,22 +676,22 @@ jobs:
           --health-retries 5
         ports:
           - 5432:5432
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r src/requirements-dev.txt
-      
+
       - name: Run Django migrations
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
@@ -728,7 +699,7 @@ jobs:
         run: |
           cd src
           python manage.py migrate --noinput
-      
+
       - name: Run Django tests
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
@@ -737,7 +708,7 @@ jobs:
         run: |
           cd src
           pytest --cov=parodynews --cov-report=xml --cov-report=term
-      
+
       - name: Upload coverage
         uses: codecov/codecov-action@v3
         with:

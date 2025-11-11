@@ -1,16 +1,12 @@
 ---
+title: For In Statement Type Inference.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement-type-inference.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  const {identity, mutate} = require(''sharedruntime'');'
 tags:
 - javascript
-title: For In Statement Type Inference.Expect
+last_updated: null
+source_file: for-in-statement-type-inference.expect.md
 ---
+# For In Statement Type Inference.Expect
 
 ## Input
 
@@ -58,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "c"

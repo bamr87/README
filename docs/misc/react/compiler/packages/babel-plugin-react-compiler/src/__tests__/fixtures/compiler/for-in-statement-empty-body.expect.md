@@ -1,13 +1,12 @@
 ---
+title: For In Statement Empty Body.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement-empty-body.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x;\n  for (const y in\
-  \ props.value) {\n  }\n  return x;\n}"
 tags:
 - javascript
-title: For In Statement Empty Body.Expect
+last_updated: null
+source_file: for-in-statement-empty-body.expect.md
 ---
+# For In Statement Empty Body.Expect
 
 ## Input
 
@@ -42,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

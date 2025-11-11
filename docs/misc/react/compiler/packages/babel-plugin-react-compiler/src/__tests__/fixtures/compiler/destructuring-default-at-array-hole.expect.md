@@ -1,14 +1,12 @@
 ---
+title: Destructuring Default At Array Hole.Expect
 category: misc
-last_updated: null
-source_file: destructuring-default-at-array-hole.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // destructure slot index\
-  \ has a hole in the input, should return default\n  const [x = 42] = props.value;\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Destructuring Default At Array Hole.Expect
+last_updated: null
+source_file: destructuring-default-at-array-hole.expect.md
 ---
+# Destructuring Default At Array Hole.Expect
 
 ## Input
 
@@ -41,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

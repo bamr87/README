@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Mutate Global In Render Helper Phi Return Prop.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-mutate-global-in-render-helper-phi-return-prop.expect.md
-summary: "```javascript\nfunction Component() {\n  const renderItem = item => {\n\
-  \    // Multiple returns so that the return type is a Phi (union)\n    if (item\
-  \ == null) {\n      return null;\n    }\n    // Normally we..."
 tags:
 - javascript
-title: Error.Invalid Mutate Global In Render Helper Phi Return Prop.Expect
+last_updated: null
+source_file: error.invalid-mutate-global-in-render-helper-phi-return-prop.expect.md
 ---
+# Error.Invalid Mutate Global In Render Helper Phi Return Prop.Expect
 
 ## Input
 
@@ -51,5 +49,4 @@ error.invalid-mutate-global-in-render-helper-phi-return-prop.ts:12:4
   14 |   };
   15 |   return <ItemList renderItem={renderItem} />;
 ```
-          
-      
+

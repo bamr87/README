@@ -1,14 +1,12 @@
 ---
+title: Fbt Params.Expect
 category: misc
-last_updated: null
-source_file: fbt-params.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Params.Expect
+last_updated: null
+source_file: fbt-params.expect.md
 ---
+# Fbt Params.Expect
 
 ## Input
 
@@ -90,4 +88,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

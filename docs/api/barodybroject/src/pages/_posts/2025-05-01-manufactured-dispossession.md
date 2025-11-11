@@ -1,26 +1,15 @@
 ---
-author: John Doe
+title: "Tech Company Unveils Smartphone That Can Tell If You\u2019re a Cat or a Human:\
+  \ Causes Frenzy"
 category: api
-description: A deep dive into the intersection of corporate practices and racial marginalization,
-  focusing on a case study from Omaha, Nebraska.
-last_updated: null
-published_at: '2025-05-01'
-slug: manufactured-dispossession
-source_file: 2025-05-01-manufactured-dispossession.md
-summary: Silicon Valley, CA – In a move that can only be described as "pawesome,"
-  a tech giant renowned for turning mundane devices into laughably expensive status
-  symbols has announced a groundbreaking new fe...
 tags:
 - javascript
 - aws
 - api
 - testing
-- api
-title: 'Tech Company Unveils Smartphone That Can Tell If You’re a Cat or a Human:
-  Causes Frenzy'
+last_updated: null
+source_file: 2025-05-01-manufactured-dispossession.md
 ---
-
-
 # Tech Company Unveils Smartphone That Can Tell If You’re a Cat or a Human: Causes Frenzy
 
 Silicon Valley, CA – In a move that can only be described as "pawesome," a tech giant renowned for turning mundane devices into laughably expensive status symbols has announced a groundbreaking new feature in their latest smartphone release: the ability to distinguish between human and feline users. The announcement has left both tech enthusiasts and cat ladies scratching their heads and their scratching posts, respectively.

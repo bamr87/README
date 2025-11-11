@@ -1,14 +1,12 @@
 ---
+title: Resolve React Hooks Based On Import Name.Expect
 category: misc
-last_updated: null
-source_file: resolve-react-hooks-based-on-import-name.expect.md
-summary: '```javascript
-
-  import {useState as useReactState} from ''react'';'
 tags:
 - javascript
-title: Resolve React Hooks Based On Import Name.Expect
+last_updated: null
+source_file: resolve-react-hooks-based-on-import-name.expect.md
 ---
+# Resolve React Hooks Based On Import Name.Expect
 
 ## Input
 
@@ -88,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Count 0<button>Increment</button>

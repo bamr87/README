@@ -1,14 +1,12 @@
 ---
+title: Capturing Func Alias Computed Mutate.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-alias-computed-mutate.expect.md
-summary: "```javascript\nimport {mutate} from 'sharedruntime';\nfunction Component({a})\
-  \ {\n  let x = {a};\n  let y = {};\n  const f0 = function () {\n    y['x'] = x;\n\
-  \  };\n  f0();\n  mutate(y);\n  return y;\n}"
 tags:
 - javascript
-title: Capturing Func Alias Computed Mutate.Expect
+last_updated: null
+source_file: capturing-func-alias-computed-mutate.expect.md
 ---
+# Capturing Func Alias Computed Mutate.Expect
 
 ## Input
 
@@ -66,7 +64,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":{"a":2},"wat0":"joe"}
 {"x":{"a":2},"wat0":"joe"}

@@ -1,18 +1,15 @@
 ---
+title: parodynews Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In Django settings\nINSTALLEDAPPS = [\n    'parodynews.apps.ParodynewsConfig',\n\
-  \     other apps...\n]"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: parodynews Directory
+last_updated: null
+source_file: README.md
 ---
-
 # parodynews Directory
 
 ## Purpose

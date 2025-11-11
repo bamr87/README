@@ -1,14 +1,12 @@
 ---
+title: Error.Usememo Unrelated Mutation In Depslist.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-unrelated-mutation-in-depslist.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.Usememo Unrelated Mutation In Depslist.Expect
+last_updated: null
+source_file: error.useMemo-unrelated-mutation-in-depslist.expect.md
 ---
+# Error.Usememo Unrelated Mutation In Depslist.Expect
 
 ## Input
 
@@ -60,5 +58,4 @@ error.useMemo-unrelated-mutation-in-depslist.ts:16:27
   20 |   return [x, memoized];
   21 | }
 ```
-          
-      
+

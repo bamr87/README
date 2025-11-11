@@ -1,14 +1,12 @@
 ---
+title: For Of Iterator Of Immutable Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-iterator-of-immutable-collection.expect.md
-summary: "```javascript\nfunction Router({title, mapping}) {\n  const array = [];\n\
-  \  for (let entry of mapping.values()) {\n    array.push([title, entry]);\n  }\n\
-  \  return array;\n}"
 tags:
 - javascript
-title: For Of Iterator Of Immutable Collection.Expect
+last_updated: null
+source_file: for-of-iterator-of-immutable-collection.expect.md
 ---
+# For Of Iterator Of Immutable Collection.Expect
 
 ## Input
 
@@ -86,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [["Foo","/about"],["Foo","/contact"]]
 [["Bar","/about"],["Bar","/contact"]]

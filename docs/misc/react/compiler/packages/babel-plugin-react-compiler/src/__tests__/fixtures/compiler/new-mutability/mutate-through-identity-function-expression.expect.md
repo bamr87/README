@@ -1,18 +1,12 @@
 ---
+title: Mutate Through Identity Function Expression.Expect
 category: misc
-last_updated: null
-source_file: mutate-through-identity-function-expression.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {identity, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutate Through Identity Function Expression.Expect
+last_updated: null
+source_file: mutate-through-identity-function-expression.expect.md
 ---
+# Mutate Through Identity Function Expression.Expect
 
 ## Input
 
@@ -101,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0],"output":{"a":0,"b":0}}</div>
 <div>{"inputs":[0,1],"output":{"a":0,"b":1}}</div>

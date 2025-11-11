@@ -1,18 +1,12 @@
 ---
+title: Dont Memoize Primitive Function Call Non Escaping.Expect
 category: misc
-last_updated: null
-source_file: dont-memoize-primitive-function-call-non-escaping.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, Valid...'
 tags:
 - javascript
-title: Dont Memoize Primitive Function Call Non Escaping.Expect
+last_updated: null
+source_file: dont-memoize-primitive-function-call-non-escaping.expect.md
 ---
+# Dont Memoize Primitive Function Call Non Escaping.Expect
 
 ## Input
 
@@ -83,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ok"
 "ok"

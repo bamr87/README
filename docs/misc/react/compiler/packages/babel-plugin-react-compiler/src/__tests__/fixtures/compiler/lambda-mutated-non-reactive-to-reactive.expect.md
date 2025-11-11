@@ -1,13 +1,12 @@
 ---
+title: Lambda Mutated Non Reactive To Reactive.Expect
 category: misc
-last_updated: null
-source_file: lambda-mutated-non-reactive-to-reactive.expect.md
-summary: "```javascript\nfunction f(a) {\n  let x;\n  (() => {\n    x = {a};\n  })();\n\
-  \  return <div x={x} />;\n}"
 tags:
 - javascript
-title: Lambda Mutated Non Reactive To Reactive.Expect
+last_updated: null
+source_file: lambda-mutated-non-reactive-to-reactive.expect.md
 ---
+# Lambda Mutated Non Reactive To Reactive.Expect
 
 ## Input
 
@@ -60,4 +59,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

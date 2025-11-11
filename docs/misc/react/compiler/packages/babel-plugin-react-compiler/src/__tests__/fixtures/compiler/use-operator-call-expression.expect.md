@@ -1,16 +1,12 @@
 ---
+title: Use Operator Call Expression.Expect
 category: misc
-last_updated: null
-source_file: use-operator-call-expression.expect.md
-summary: '```javascript
-
-  import {ValidateMemoization} from ''sharedruntime'';
-
-  import {use, useMemo} from ''react'';'
 tags:
 - javascript
-title: Use Operator Call Expression.Expect
+last_updated: null
+source_file: use-operator-call-expression.expect.md
 ---
+# Use Operator Call Expression.Expect
 
 ## Input
 
@@ -128,7 +124,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[null],"output":["[[ cyclic ref *2 ]]"]}</div>
 <div>{"inputs":[42],"output":[42]}</div>

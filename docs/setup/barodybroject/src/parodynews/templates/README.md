@@ -1,15 +1,13 @@
 ---
+title: templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In views.py\nfrom django.shortcuts import render"
 tags:
 - python
 - docker
 - setup
-title: templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # templates Directory
 
 ## Purpose

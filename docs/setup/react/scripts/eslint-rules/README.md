@@ -1,14 +1,11 @@
 ---
+title: Custom ESLint Rules
 category: setup
-last_updated: null
-source_file: README.md
-summary: This is a dummy npm package that allows us to treat it as an eslintplugin.
-  It's not actually published, nor are the rules here useful for users of React. If
-  you want to lint your React code, try <http...
 tags:
 - javascript
 - setup
-title: Custom ESLint Rules
+last_updated: null
+source_file: README.md
 ---
 # Custom ESLint Rules
 

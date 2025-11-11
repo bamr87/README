@@ -1,19 +1,15 @@
 ---
+title: Social Account Messages Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "def connectsocialaccount(request):\n     After successful OAuth flow\n \
-  \   messages.success(request, 'Your Google account has been connected successfully.')\n\
-  \    \ndef disconnectsocialaccount(request, prov..."
 tags:
 - python
 - javascript
 - docker
 - api
 - testing
-title: Social Account Messages Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Messages Directory
 
 ## Purpose
@@ -36,7 +32,7 @@ from allauth.socialaccount.models import SocialAccount
 def connect_social_account(request):
     # After successful OAuth flow
     messages.success(request, 'Your Google account has been connected successfully.')
-    
+
 def disconnect_social_account(request, provider):
     # After disconnecting social account
     messages.info(request, f'Your {provider} account has been disconnected.')
@@ -64,7 +60,7 @@ def disconnect_social_account(request, provider):
         <div class="social-account-item">
             <img src="{{ account.get_avatar_url }}" alt="{{ account.provider }}">
             <span>{{ account.provider|title }}: {{ account.extra_data.name }}</span>
-            <a href="{% url 'socialaccount_disconnect' account.id %}" 
+            <a href="{% url 'socialaccount_disconnect' account.id %}"
                class="btn btn-sm btn-outline-danger">
                 Disconnect
             </a>
@@ -78,7 +74,7 @@ def disconnect_social_account(request, provider):
 # account_connected.txt
 Your {{ provider }} account has been successfully connected to your Barody Broject profile. You can now sign in using {{ provider }} authentication.
 
-# account_disconnected.txt  
+# account_disconnected.txt
 Your {{ provider }} account has been disconnected from your Barody Broject profile. You can reconnect it anytime from your account settings.
 
 # account_connected_other.txt
@@ -101,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Auto-hide success messages
     setTimeout(() => {
         document.querySelectorAll('.alert-success').forEach(alert => {
@@ -113,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Container Configuration
 - **Runtime**: Django allauth social authentication framework
-- **Dependencies**: 
+- **Dependencies**:
   - django-allauth with social account providers
   - OAuth provider configurations (Google, GitHub, etc.)
   - Django message framework
@@ -124,12 +120,12 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Security**: OAuth callback URLs and CSRF protection
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Social authentication workflows
   - OAuth provider callbacks
   - User account management views
   - Social account connection/disconnection actions
-- **Outgoing**: 
+- **Outgoing**:
   - User profile and settings pages
   - Authentication state management
   - Social provider API integrations

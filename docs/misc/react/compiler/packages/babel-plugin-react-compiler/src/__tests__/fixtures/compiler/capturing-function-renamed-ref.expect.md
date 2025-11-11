@@ -1,14 +1,12 @@
 ---
+title: Capturing Function Renamed Ref.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-renamed-ref.expect.md
-summary: '```javascript
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capturing Function Renamed Ref.Expect
+last_updated: null
+source_file: capturing-function-renamed-ref.expect.md
 ---
+# Capturing Function Renamed Ref.Expect
 
 ## Input
 
@@ -76,7 +74,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2}
 {"a":2}

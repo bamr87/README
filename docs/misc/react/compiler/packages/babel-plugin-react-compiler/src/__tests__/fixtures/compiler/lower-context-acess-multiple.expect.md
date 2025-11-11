@@ -1,14 +1,12 @@
 ---
+title: Lower Context Acess Multiple.Expect
 category: misc
-last_updated: null
-source_file: lower-context-acess-multiple.expect.md
-summary: "```javascript\n// @lowerContextAccess\nfunction App() {\n  const {foo} =\
-  \ useContext(MyContext);\n  const {bar} = useContext(MyContext);\n  return <Bar\
-  \ foo={foo} bar={bar} />;\n}"
 tags:
 - javascript
-title: Lower Context Acess Multiple.Expect
+last_updated: null
+source_file: lower-context-acess-multiple.expect.md
 ---
+# Lower Context Acess Multiple.Expect
 
 ## Input
 
@@ -50,4 +48,3 @@ function _temp(t0) {
 }
 
 ```
-      

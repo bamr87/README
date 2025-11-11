@@ -1,14 +1,12 @@
 ---
+title: Partial Early Return Within Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: partial-early-return-within-reactive-scope.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [];\n  let y = null;\n\
-  \  if (props.cond) {\n    x.push(props.a);\n    // oops no memo!\n    return x;\n\
-  \  } else {\n    y = foo();\n    if (props.b) {\n      r..."
 tags:
 - javascript
-title: Partial Early Return Within Reactive Scope.Expect
+last_updated: null
+source_file: partial-early-return-within-reactive-scope.expect.md
 ---
+# Partial Early Return Within Reactive Scope.Expect
 
 ## Input
 
@@ -88,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

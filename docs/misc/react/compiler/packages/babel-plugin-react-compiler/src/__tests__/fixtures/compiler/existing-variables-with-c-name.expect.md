@@ -1,19 +1,13 @@
 ---
+title: Existing Variables With C Name.Expect
 category: misc
-last_updated: null
-source_file: existing-variables-with-c-name.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Existing Variables With C Name.Expect
+last_updated: null
+source_file: existing-variables-with-c-name.expect.md
 ---
+# Existing Variables With C Name.Expect
 
 ## Input
 
@@ -94,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":[0]}</div>
 <div>{"inputs":[0],"output":[0]}</div>

@@ -1,13 +1,12 @@
 ---
+title: Allow Passing Refs As Props.Expect
 category: misc
-last_updated: null
-source_file: allow-passing-refs-as-props.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const ref = useRef(null);\n\
-  \  return <Foo ref={ref} />;\n}"
 tags:
 - javascript
-title: Allow Passing Refs As Props.Expect
+last_updated: null
+source_file: allow-passing-refs-as-props.expect.md
 ---
+# Allow Passing Refs As Props.Expect
 
 ## Input
 
@@ -37,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

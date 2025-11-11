@@ -1,21 +1,14 @@
 ---
+title: Barodybroject Quick Reference Card
 category: setup
-last_updated: null
-source_file: QUICK_REFERENCE.md
-summary: '``bash
-
-  cd /Users/bamr87/github/barodybroject
-
-  ./initsetup.sh
-
-  ``'
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: Barodybroject Quick Reference Card
+last_updated: null
+source_file: QUICK_REFERENCE.md
 ---
 # Barodybroject Quick Reference Card
 
@@ -42,7 +35,7 @@ Select your setup mode and follow the prompts!
 ./init_setup.sh
 # Select: 1) Docker Development Setup
 ```
-**Access**: http://localhost:8000  
+**Access**: http://localhost:8000
 **Features**: Hot-reload, isolated environment
 
 ### 2️⃣ Local Development
@@ -225,7 +218,7 @@ Before deploying to production:
 
 ## 🆘 Get Help
 
-**Issues**: https://github.com/bamr87/barodybroject/issues  
+**Issues**: https://github.com/bamr87/barodybroject/issues
 **Email**: bamr87@users.noreply.github.com
 
 **Emergency Commands**:
@@ -261,8 +254,8 @@ az containerapp show --name <app> --resource-group <rg> --query properties.runni
 
 ---
 
-**Quick Reference Version**: 1.0  
-**Compatible with**: Barodybroject v2.0.0+  
+**Quick Reference Version**: 1.0
+**Compatible with**: Barodybroject v2.0.0+
 **Last Updated**: 2025-01-27
 
 Print this page or save for offline reference!

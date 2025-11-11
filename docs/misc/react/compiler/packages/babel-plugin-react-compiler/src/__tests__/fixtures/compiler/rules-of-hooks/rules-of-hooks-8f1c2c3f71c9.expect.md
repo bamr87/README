@@ -1,14 +1,12 @@
 ---
+title: Rules Of Hooks 8F1C2C3F71C9.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-8f1c2c3f71c9.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\n// Valid because components\
-  \ can use hooks.\nfunction createComponentWithHook() {\n  return function ComponentWithHook()\
-  \ {\n    useHook();\n  };\n}"
 tags:
 - javascript
-title: Rules Of Hooks 8F1C2C3F71C9.Expect
+last_updated: null
+source_file: rules-of-hooks-8f1c2c3f71c9.expect.md
 ---
+# Rules Of Hooks 8F1C2C3F71C9.Expect
 
 ## Input
 
@@ -35,4 +33,3 @@ function createComponentWithHook() {
 }
 
 ```
-      

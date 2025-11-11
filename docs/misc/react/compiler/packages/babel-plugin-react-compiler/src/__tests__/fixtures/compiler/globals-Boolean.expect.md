@@ -1,13 +1,12 @@
 ---
+title: Globals Boolean.Expect
 category: misc
-last_updated: null
-source_file: globals-Boolean.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = {};\n  const y =\
-  \ Boolean(x);\n  return [x, y];\n}"
 tags:
 - javascript
-title: Globals Boolean.Expect
+last_updated: null
+source_file: globals-Boolean.expect.md
 ---
+# Globals Boolean.Expect
 
 ## Input
 
@@ -58,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

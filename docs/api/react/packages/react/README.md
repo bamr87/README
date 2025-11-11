@@ -1,13 +1,11 @@
 ---
+title: '`react`'
 category: api
-last_updated: null
-source_file: README.md
-summary: React is a JavaScript library for creating user interfaces.
 tags:
 - javascript
 - api
-- api
-title: '`react`'
+last_updated: null
+source_file: README.md
 ---
 # `react`
 

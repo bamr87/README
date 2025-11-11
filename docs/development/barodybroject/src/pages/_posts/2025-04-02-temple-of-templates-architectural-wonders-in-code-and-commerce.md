@@ -1,24 +1,15 @@
 ---
-author: Jane Doe
+title: 'Temple of Templates: Architectural Wonders in Code and Commerce'
 category: development
-description: An exploration of how templates bridge coding and business strategy.
-last_updated: null
-published_at: '2025-04-02'
-slug: temple-of-templates-architectural-wonders-in-code-and-commerce
-source_file: 2025-04-02-temple-of-templates-architectural-wonders-in-code-and-commerce.md
-summary: In the grand amphitheater of human endeavor, few concepts bridge the domains
-  of technology and ancient architecture as seamlessly as the humble template. These
-  constructs—equally revered by coders and...
 tags:
 - python
 - javascript
 - database
 - testing
 - development
-title: 'Temple of Templates: Architectural Wonders in Code and Commerce'
+last_updated: null
+source_file: 2025-04-02-temple-of-templates-architectural-wonders-in-code-and-commerce.md
 ---
-
-
 # Temple of Templates: Architectural Wonders in Code and Commerce
 
 ## Introduction

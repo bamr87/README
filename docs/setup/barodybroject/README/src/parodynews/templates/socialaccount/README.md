@@ -1,16 +1,14 @@
 ---
+title: Social Account Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block headtitle %}Sign In  Barody Broject{% endblock %}'
 tags:
 - python
 - docker
 - api
 - setup
-title: Social Account Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Templates Directory
 
 ## Purpose
@@ -49,13 +47,13 @@ Contains Django allauth social authentication templates for OAuth-based login wi
             <div class="card-body">
                 {% get_providers as socialaccount_providers %}
                 {% for provider in socialaccount_providers %}
-                    <a href="{% provider_login_url provider.id %}" 
+                    <a href="{% provider_login_url provider.id %}"
                        class="btn btn-{{ provider.id }} btn-block mb-2">
                         <i class="fab fa-{{ provider.id }}"></i>
                         Sign in with {{ provider.name }}
                     </a>
                 {% endfor %}
-                
+
                 <hr>
                 <div class="text-center">
                     <a href="{% url 'account_login' %}">
@@ -89,7 +87,7 @@ Contains Django allauth social authentication templates for OAuth-based login wi
                     <strong>{{ account.provider|title }}</strong>
                     <p>{{ account.extra_data.name|default:account.uid }}</p>
                 </div>
-                
+
                 <form method="post" action="{% url 'socialaccount_disconnect' account.id %}">
                     {% csrf_token %}
                     <button type="submit" class="btn btn-sm btn-outline-danger">
@@ -99,12 +97,12 @@ Contains Django allauth social authentication templates for OAuth-based login wi
             </div>
         {% endfor %}
     {% endif %}
-    
+
     <h4>Available Providers</h4>
     {% get_providers as socialaccount_providers %}
     {% for provider in socialaccount_providers %}
         {% if provider.id not in connected_accounts %}
-            <a href="{% provider_login_url provider.id process='connect' %}" 
+            <a href="{% provider_login_url provider.id process='connect' %}"
                class="btn btn-outline-primary">
                 <i class="fab fa-{{ provider.id }}"></i>
                 Connect {{ provider.name }}
@@ -128,14 +126,14 @@ Contains Django allauth social authentication templates for OAuth-based login wi
         <div class="alert alert-danger">
             <h4>Authentication Failed</h4>
             <p>We encountered an error while trying to authenticate your account.</p>
-            
+
             {% if error %}
                 <p><strong>Error:</strong> {{ error }}</p>
             {% endif %}
-            
+
             <hr>
             <p>Please try again or contact support if the problem persists.</p>
-            
+
             <a href="{% url 'socialaccount_login' %}" class="btn btn-primary">
                 Try Again
             </a>
@@ -206,7 +204,7 @@ class CustomSocialAccountAdapter(DefaultSocialAccountAdapter):
 
 ## Container Configuration
 - **Runtime**: Django allauth social authentication framework
-- **Dependencies**: 
+- **Dependencies**:
   - django-allauth with social providers
   - OAuth provider configurations
   - Frontend framework (Bootstrap)
@@ -218,12 +216,12 @@ class CustomSocialAccountAdapter(DefaultSocialAccountAdapter):
 - **Security**: CSRF protection, OAuth state validation
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - OAuth provider authentication flows
   - User registration and login workflows
   - Account management and settings pages
   - Email verification and confirmation processes
-- **Outgoing**: 
+- **Outgoing**:
   - User profile creation and updates
   - Session management and authentication state
   - Provider API integrations for user data

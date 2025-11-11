@@ -1,21 +1,13 @@
 ---
+title: shared Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```bicep
-
-  // Example usage in main.bicep
-
-  param environmentName string
-
-  param location string = resourceGroup().location'
 tags:
 - docker
 - azure
 - setup
-title: shared Directory
+last_updated: null
+source_file: README.md
 ---
-
 # shared Directory
 
 ## Purpose

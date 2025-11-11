@@ -1,16 +1,12 @@
 ---
+title: Error.Ref Like Name Not Ref.Expect
 category: misc
-last_updated: null
-source_file: error.ref-like-name-not-Ref.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Error.Ref Like Name Not Ref.Expect
+last_updated: null
+source_file: error.ref-like-name-not-Ref.expect.md
 ---
+# Error.Ref Like Name Not Ref.Expect
 
 ## Input
 
@@ -63,5 +59,4 @@ error.ref-like-name-not-Ref.ts:11:30
   15 |   return <button onClick={onClick} />;
   16 | }
 ```
-          
-      
+

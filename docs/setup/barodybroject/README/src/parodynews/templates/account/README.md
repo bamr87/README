@@ -1,21 +1,13 @@
 ---
+title: account Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Example login.html template >
-
-  {% extends "account/baseentrance.html" %}
-
-  {% load allauth i18n %}'
 tags:
 - python
 - docker
 - setup
-title: account Directory
+last_updated: null
+source_file: README.md
 ---
-
 # account Directory
 
 ## Purpose
@@ -65,16 +57,16 @@ Templates are rendered by Django-Allauth views and can be customized:
 {% block content %}
 <div class="auth-form">
     <h1>{% trans "Sign In" %}</h1>
-    
+
     <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
-        
+
         <button type="submit" class="btn btn-primary">
             {% trans "Sign In" %}
         </button>
     </form>
-    
+
     <p class="auth-links">
         <a href="{% url 'account_reset_password' %}">
             {% trans "Forgot Password?" %}

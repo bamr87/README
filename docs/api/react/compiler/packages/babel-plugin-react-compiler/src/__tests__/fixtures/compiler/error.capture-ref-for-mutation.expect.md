@@ -1,17 +1,13 @@
 ---
+title: Error.Capture Ref For Mutation.Expect
 category: api
-last_updated: null
-source_file: error.capture-ref-for-mutation.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';
-
-  import {addOne} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Capture Ref For Mutation.Expect
+last_updated: null
+source_file: error.capture-ref-for-mutation.expect.md
 ---
+# Error.Capture Ref For Mutation.Expect
 
 ## Input
 
@@ -74,5 +70,4 @@ error.capture-ref-for-mutation.ts:15:13
   17 |   return [moveLeft, moveRight];
   18 | }
 ```
-          
-      
+

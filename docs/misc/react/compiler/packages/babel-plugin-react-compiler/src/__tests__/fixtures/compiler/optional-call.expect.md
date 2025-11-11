@@ -1,14 +1,12 @@
 ---
+title: Optional Call.Expect
 category: misc
-last_updated: null
-source_file: optional-call.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeOptionalFunction(props);\n\
-  \  const y = makeObject(props);\n  const z = x?.(y.a, props.a, foo(y.b), bar(props.b));\n\
-  \  return z;\n}"
 tags:
 - javascript
-title: Optional Call.Expect
+last_updated: null
+source_file: optional-call.expect.md
 ---
+# Optional Call.Expect
 
 ## Input
 
@@ -43,4 +41,3 @@ function Component(props) {
 }
 
 ```
-      

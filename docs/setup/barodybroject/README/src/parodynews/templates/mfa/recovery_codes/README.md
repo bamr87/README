@@ -1,19 +1,15 @@
 ---
+title: MFA Recovery Codes Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "{% block content %}\n<div class=\"row justifycontentcenter\">\n    <div\
-  \ class=\"colmd8\">\n        <div class=\"alert alertwarning\">\n            <i\
-  \ class=\"fas faexclamationtriangle\"></i>\n            <strong>I..."
 tags:
 - python
 - javascript
 - docker
 - api
 - database
-title: MFA Recovery Codes Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # MFA Recovery Codes Templates Directory
 
 ## Purpose
@@ -37,10 +33,10 @@ Contains templates for managing MFA backup recovery codes. These templates allow
     <div class="col-md-8">
         <div class="alert alert-warning">
             <i class="fas fa-exclamation-triangle"></i>
-            <strong>Important:</strong> Save these recovery codes in a secure location. 
+            <strong>Important:</strong> Save these recovery codes in a secure location.
             Each code can only be used once.
         </div>
-        
+
         <div class="card">
             <div class="card-header">
                 <h3>Your Recovery Codes</h3>
@@ -59,21 +55,21 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                         {% endfor %}
                     </div>
                 </div>
-                
+
                 <div class="codes-actions mt-4">
                     <button type="button" class="btn btn-primary" onclick="printCodes()">
                         <i class="fas fa-print"></i> Print Codes
                     </button>
-                    
+
                     <button type="button" class="btn btn-outline-secondary" onclick="copyCodes()">
                         <i class="fas fa-copy"></i> Copy to Clipboard
                     </button>
-                    
+
                     <a href="{% url 'mfa_recovery_codes_download' %}" class="btn btn-outline-info">
                         <i class="fas fa-download"></i> Download
                     </a>
-                    
-                    <form method="post" action="{% url 'mfa_recovery_codes_regenerate' %}" 
+
+                    <form method="post" action="{% url 'mfa_recovery_codes_regenerate' %}"
                           class="d-inline" onsubmit="return confirm('Generate new codes? Current codes will be invalidated.')">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-outline-warning">
@@ -81,7 +77,7 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                         </button>
                     </form>
                 </div>
-                
+
                 <div class="usage-stats mt-3">
                     <small class="text-muted">
                         {{ codes_used_count }} of {{ total_codes_count }} codes used
@@ -89,7 +85,7 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                 </div>
             </div>
         </div>
-        
+
         <div class="card mt-3">
             <div class="card-body">
                 <h5>How to Use Recovery Codes</h5>
@@ -99,7 +95,7 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                     <li>The code will be marked as used and cannot be used again</li>
                     <li>Generate new codes when you have few remaining</li>
                 </ol>
-                
+
                 <div class="alert alert-info mt-3">
                     <strong>Security Tips:</strong>
                     <ul class="mb-0">
@@ -130,7 +126,7 @@ Contains templates for managing MFA backup recovery codes. These templates allow
             </div>
             <div class="card-body">
                 <p>Recovery codes are backup authentication codes that allow you to access your account if your other MFA methods are unavailable.</p>
-                
+
                 <div class="alert alert-info">
                     <h5>What happens when you generate recovery codes:</h5>
                     <ul>
@@ -140,14 +136,14 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                         <li>Codes should be stored securely</li>
                     </ul>
                 </div>
-                
+
                 {% if existing_codes %}
                     <div class="alert alert-warning">
-                        <strong>Warning:</strong> You have existing recovery codes. 
+                        <strong>Warning:</strong> You have existing recovery codes.
                         Generating new codes will invalidate all {{ existing_codes.count }} existing codes.
                     </div>
                 {% endif %}
-                
+
                 <form method="post">
                     {% csrf_token %}
                     <div class="form-check mb-3">
@@ -156,13 +152,13 @@ Contains templates for managing MFA backup recovery codes. These templates allow
                             I understand that generating new recovery codes will invalidate any existing codes
                         </label>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary btn-block">
                         <i class="fas fa-key"></i>
                         Generate {{ code_count }} Recovery Codes
                     </button>
                 </form>
-                
+
                 <div class="mt-3 text-center">
                     <a href="{% url 'mfa_dashboard' %}" class="btn btn-link">
                         Cancel and return to security settings
@@ -214,17 +210,17 @@ def generate_recovery_codes(request):
     if request.method == 'POST':
         # Invalidate existing codes
         request.user.recovery_codes.all().delete()
-        
+
         # Generate new codes
         codes = []
         for _ in range(10):  # Generate 10 codes
-            code = ''.join(secrets.choice(string.ascii_uppercase + string.digits) 
+            code = ''.join(secrets.choice(string.ascii_uppercase + string.digits)
                           for _ in range(8))
             codes.append(request.user.recovery_codes.create(code=code))
-        
+
         messages.success(request, 'New recovery codes have been generated. Please save them securely.')
         return redirect('mfa_recovery_codes_view')
-    
+
     return render(request, 'mfa/recovery_codes/generate.html', {
         'code_count': 10,
         'existing_codes': request.user.recovery_codes.filter(used=False)
@@ -234,13 +230,13 @@ def generate_recovery_codes(request):
 def download_recovery_codes(request):
     """Download recovery codes as text file"""
     recovery_codes = request.user.recovery_codes.filter(used=False)
-    
+
     response = render(request, 'mfa/recovery_codes/download.txt', {
         'recovery_codes': recovery_codes,
         'generation_date': recovery_codes.first().created_at if recovery_codes else None,
         'user': request.user
     }, content_type='text/plain')
-    
+
     response['Content-Disposition'] = 'attachment; filename="barodybroject-recovery-codes.txt"'
     return response
 ```
@@ -253,7 +249,7 @@ function copyCodes() {
         .filter(code => !code.closest('.recovery-code').classList.contains('used'))
         .map(code => code.textContent)
         .join('\n');
-    
+
     navigator.clipboard.writeText(codes).then(() => {
         const button = document.querySelector('[onclick="copyCodes()"]');
         const originalText = button.innerHTML;
@@ -267,7 +263,7 @@ function copyCodes() {
 function printCodes() {
     const printWindow = window.open('', '_blank');
     const codes = document.querySelector('.recovery-codes-container').innerHTML;
-    
+
     printWindow.document.write(`
         <html>
         <head>
@@ -287,7 +283,7 @@ function printCodes() {
         </body>
         </html>
     `);
-    
+
     printWindow.document.close();
     printWindow.print();
 }
@@ -295,24 +291,24 @@ function printCodes() {
 
 ## Container Configuration
 - **Runtime**: Django with secure random number generation
-- **Dependencies**: 
+- **Dependencies**:
   - Python secrets module for cryptographic randomness
   - Django authentication framework
   - Secure file download handling
   - Print and clipboard JavaScript APIs
-- **Environment**: 
+- **Environment**:
   - Secure random seed generation
   - Database storage for recovery codes
   - User session management
 - **Security**: Cryptographically secure code generation, one-time use validation
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - MFA dashboard and security settings
   - Authentication failure recovery workflows
   - Account lockout and recovery procedures
   - Security incident response protocols
-- **Outgoing**: 
+- **Outgoing**:
   - Authentication bypass for emergency access
   - Security audit logging and monitoring
   - User notification systems for code usage

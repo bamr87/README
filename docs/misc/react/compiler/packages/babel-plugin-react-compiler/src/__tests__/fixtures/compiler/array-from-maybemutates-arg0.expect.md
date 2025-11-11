@@ -1,14 +1,12 @@
 ---
+title: Array From Maybemutates Arg0.Expect
 category: misc
-last_updated: null
-source_file: array-from-maybemutates-arg0.expect.md
-summary: '```javascript
-
-  import {mutateAndReturn, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Array From Maybemutates Arg0.Expect
+last_updated: null
+source_file: array-from-maybemutates-arg0.expect.md
 ---
+# Array From Maybemutates Arg0.Expect
 
 ## Input
 
@@ -87,7 +85,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[{"value":"foo","wat0":"joe"},{"value":5,"wat0":"joe"}]}</div>
 <div>{"children":[{"value":"foo","wat0":"joe"},{"value":6,"wat0":"joe"}]}</div>

@@ -1,18 +1,12 @@
 ---
+title: Capture Ref For Later Mutation.Expect
 category: misc
-last_updated: null
-source_file: capture-ref-for-later-mutation.expect.md
-summary: '```javascript
-
-  // @enableReactiveScopesInHIR:false
-
-  import {useRef} from ''react'';
-
-  import {addOne} from ''sharedruntime'';'
 tags:
 - javascript
-title: Capture Ref For Later Mutation.Expect
+last_updated: null
+source_file: capture-ref-for-later-mutation.expect.md
 ---
+# Capture Ref For Later Mutation.Expect
 
 ## Input
 
@@ -78,6 +72,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"handler":"[[ function params=0 ]]"},{"handler":"[[ function params=0 ]]"}]

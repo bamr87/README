@@ -1,13 +1,12 @@
 ---
+title: Useeffect Arg Memoized.Expect
 category: misc
-last_updated: null
-source_file: useEffect-arg-memoized.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const dispatch = useDispatch();\n\
-  \  useFreeze(dispatch);"
 tags:
 - javascript
-title: Useeffect Arg Memoized.Expect
+last_updated: null
+source_file: useEffect-arg-memoized.expect.md
 ---
+# Useeffect Arg Memoized.Expect
 
 ## Input
 
@@ -76,4 +75,3 @@ function Component(props) {
 }
 
 ```
-      

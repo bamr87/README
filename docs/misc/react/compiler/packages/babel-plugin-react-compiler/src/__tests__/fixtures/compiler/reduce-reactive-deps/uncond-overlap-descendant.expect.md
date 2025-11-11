@@ -1,15 +1,13 @@
 ---
+title: Uncond Overlap Descendant.Expect
 category: misc
-last_updated: null
-source_file: uncond-overlap-descendant.expect.md
-summary: "```javascript\n// Test that we correctly track a subpath if the subpath\
-  \ itself is accessed as\n// a dependency\nfunction TestOverlappingDescendantTracked(props)\
-  \ {\n  let x = {};\n  x.b = props.a.b.c;\n  x.c..."
 tags:
 - javascript
 - testing
-title: Uncond Overlap Descendant.Expect
+last_updated: null
+source_file: uncond-overlap-descendant.expect.md
 ---
+# Uncond Overlap Descendant.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":{"x":{"y":5}},"c":5,"a":{"b":{"c":"[[ cyclic ref *1 ]]"}}}

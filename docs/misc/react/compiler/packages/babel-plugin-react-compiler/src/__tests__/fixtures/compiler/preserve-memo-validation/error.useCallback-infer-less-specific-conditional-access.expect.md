@@ -1,18 +1,12 @@
 ---
+title: Error.Usecallback Infer Less Specific Conditional Access.Expect
 category: misc
-last_updated: null
-source_file: error.useCallback-infer-less-specific-conditional-access.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Usecallback Infer Less Specific Conditional Access.Expect
+last_updated: null
+source_file: error.useCallback-infer-less-specific-conditional-access.expect.md
 ---
+# Error.Usecallback Infer Less Specific Conditional Access.Expect
 
 ## Input
 
@@ -69,5 +63,4 @@ error.useCallback-infer-less-specific-conditional-access.ts:6:21
   15 | }
   16 |
 ```
-          
-      
+

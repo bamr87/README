@@ -1,14 +1,12 @@
 ---
+title: Fbt Param With Newline.Expect
 category: misc
-last_updated: null
-source_file: fbt-param-with-newline.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Param With Newline.Expect
+last_updated: null
+source_file: fbt-param-with-newline.expect.md
 ---
+# Fbt Param With Newline.Expect
 
 ## Input
 
@@ -73,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "Hello Jason"

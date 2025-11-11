@@ -1,12 +1,11 @@
 ---
+title: Barodybroject Documentation
 category: setup
-last_updated: null
-source_file: README.md
-summary: 'This project is part of the larger ITJourney ecosystem, which includes:'
 tags:
 - python
 - setup
-title: Barodybroject Documentation
+last_updated: null
+source_file: README.md
 ---
 # Barodybroject Documentation
 
@@ -101,8 +100,8 @@ This documentation follows the **README-First, README-Last** principle:
 
 ---
 
-**Maintained by**: Barodybroject Team  
-**Last Updated**: October 28, 2025  
+**Maintained by**: Barodybroject Team
+**Last Updated**: October 28, 2025
 **Version**: 1.0.0
 
 *This documentation is designed to support both human developers and AI assistants in understanding and contributing to the Barodybroject Django/OpenAI application.*

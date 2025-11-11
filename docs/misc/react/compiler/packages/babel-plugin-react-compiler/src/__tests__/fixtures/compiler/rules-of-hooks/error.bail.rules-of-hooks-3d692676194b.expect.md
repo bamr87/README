@@ -1,16 +1,12 @@
 ---
+title: Error.Bail.Rules Of Hooks 3D692676194B.Expect
 category: misc
-last_updated: null
-source_file: error.bail.rules-of-hooks-3d692676194b.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Error.Bail.Rules Of Hooks 3D692676194B.Expect
+last_updated: null
+source_file: error.bail.rules-of-hooks-3d692676194b.expect.md
 ---
+# Error.Bail.Rules Of Hooks 3D692676194B.Expect
 
 ## Input
 
@@ -48,5 +44,4 @@ error.bail.rules-of-hooks-3d692676194b.ts:8:4
   10 |   return <button {...props} ref={ref} />;
   11 | });
 ```
-          
-      
+

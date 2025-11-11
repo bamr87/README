@@ -1,16 +1,12 @@
 ---
+title: Basic.Expect
 category: misc
-last_updated: null
-source_file: basic.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Basic.Expect
+last_updated: null
+source_file: basic.expect.md
 ---
+# Basic.Expect
 
 ## Input
 
@@ -60,6 +56,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

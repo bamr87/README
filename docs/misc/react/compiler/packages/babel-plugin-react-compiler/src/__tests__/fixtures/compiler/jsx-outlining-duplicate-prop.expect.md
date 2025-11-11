@@ -1,14 +1,12 @@
 ---
+title: Jsx Outlining Duplicate Prop.Expect
 category: misc
-last_updated: null
-source_file: jsx-outlining-duplicate-prop.expect.md
-summary: "```javascript\n// @enableJsxOutlining\nfunction Component({arr}) {\n  const\
-  \ x = useX();\n  return (\n    <>\n      {arr.map((i, id) => {\n        return (\n\
-  \          <Bar key={id} x={x}>\n            <Baz i={i..."
 tags:
 - javascript
-title: Jsx Outlining Duplicate Prop.Expect
+last_updated: null
+source_file: jsx-outlining-duplicate-prop.expect.md
 ---
+# Jsx Outlining Duplicate Prop.Expect
 
 ## Input
 
@@ -172,6 +170,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfoofooxbarbar

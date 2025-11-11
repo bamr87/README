@@ -1,14 +1,12 @@
 ---
+title: Conflict Codegen Instrument Forget.Expect
 category: misc
-last_updated: null
-source_file: conflict-codegen-instrument-forget.expect.md
-summary: '```javascript
-
-  // @enableEmitInstrumentForget @compilationMode:"annotation"'
 tags:
 - javascript
-title: Conflict Codegen Instrument Forget.Expect
+last_updated: null
+source_file: conflict-codegen-instrument-forget.expect.md
 ---
+# Conflict Codegen Instrument Forget.Expect
 
 ## Input
 
@@ -103,6 +101,6 @@ function Foo(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

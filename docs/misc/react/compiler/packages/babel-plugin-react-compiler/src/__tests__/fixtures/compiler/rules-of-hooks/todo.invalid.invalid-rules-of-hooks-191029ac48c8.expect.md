@@ -1,16 +1,12 @@
 ---
+title: Todo.Invalid.Invalid Rules Of Hooks 191029Ac48C8.Expect
 category: misc
-last_updated: null
-source_file: todo.invalid.invalid-rules-of-hooks-191029ac48c8.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Invalid.Invalid Rules Of Hooks 191029Ac48C8.Expect
+last_updated: null
+source_file: todo.invalid.invalid-rules-of-hooks-191029ac48c8.expect.md
 ---
+# Todo.Invalid.Invalid Rules Of Hooks 191029Ac48C8.Expect
 
 ## Input
 
@@ -51,4 +47,3 @@ if (foo) {
 useCustomHook();
 
 ```
-      

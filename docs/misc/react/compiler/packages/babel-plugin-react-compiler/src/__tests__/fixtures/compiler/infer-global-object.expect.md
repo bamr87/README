@@ -1,14 +1,12 @@
 ---
+title: Infer Global Object.Expect
 category: misc
-last_updated: null
-source_file: infer-global-object.expect.md
-summary: '```javascript
-
-  import {identity, sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Global Object.Expect
+last_updated: null
+source_file: infer-global-object.expect.md
 ---
+# Infer Global Object.Expect
 
 ## Input
 
@@ -79,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"primitiveVal1":2,"primitiveVal2":null,"primitiveVal3":null}

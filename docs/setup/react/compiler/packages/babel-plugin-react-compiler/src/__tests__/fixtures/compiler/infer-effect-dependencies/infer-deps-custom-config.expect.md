@@ -1,19 +1,13 @@
 ---
+title: Infer Deps Custom Config.Expect
 category: setup
-last_updated: null
-source_file: infer-deps-custom-config.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {print, useSpecialEffect} from ''sharedruntime'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
 - setup
-title: Infer Deps Custom Config.Expect
+last_updated: null
+source_file: infer-deps-custom-config.expect.md
 ---
+# Infer Deps Custom Config.Expect
 
 ## Input
 
@@ -74,6 +68,6 @@ function CustomConfig(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

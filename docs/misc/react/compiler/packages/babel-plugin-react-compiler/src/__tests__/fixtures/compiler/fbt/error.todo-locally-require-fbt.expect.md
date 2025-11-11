@@ -1,12 +1,12 @@
 ---
+title: Error.Todo Locally Require Fbt.Expect
 category: misc
-last_updated: null
-source_file: error.todo-locally-require-fbt.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const fbt = require('fbt');"
 tags:
 - javascript
-title: Error.Todo Locally Require Fbt.Expect
+last_updated: null
+source_file: error.todo-locally-require-fbt.expect.md
 ---
+# Error.Todo Locally Require Fbt.Expect
 
 ## Input
 
@@ -37,5 +37,4 @@ error.todo-locally-require-fbt.ts:2:8
   4 |   return <fbt desc="Description">{'Text'}</fbt>;
   5 | }
 ```
-          
-      
+

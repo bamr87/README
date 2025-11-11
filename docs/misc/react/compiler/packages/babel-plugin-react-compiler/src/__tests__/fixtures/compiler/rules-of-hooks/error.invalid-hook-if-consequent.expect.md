@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Hook If Consequent.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-if-consequent.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = null;\n  if (props.cond)\
-  \ {\n    x = useHook();\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Hook If Consequent.Expect
+last_updated: null
+source_file: error.invalid-hook-if-consequent.expect.md
 ---
+# Error.Invalid Hook If Consequent.Expect
 
 ## Input
 
@@ -39,5 +38,4 @@ error.invalid-hook-if-consequent.ts:4:8
   6 |   return x;
   7 | }
 ```
-          
-      
+

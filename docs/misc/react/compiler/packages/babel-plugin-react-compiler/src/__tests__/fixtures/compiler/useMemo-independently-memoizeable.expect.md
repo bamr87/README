@@ -1,14 +1,12 @@
 ---
+title: Usememo Independently Memoizeable.Expect
 category: misc
-last_updated: null
-source_file: useMemo-independently-memoizeable.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [a, b] = useMemo(()\
-  \ => {\n    const items = [];\n    const a = makeObject(props.a);\n    const b =\
-  \ makeObject(props.b);\n    return [a, b];\n  });\n  return..."
 tags:
 - javascript
-title: Usememo Independently Memoizeable.Expect
+last_updated: null
+source_file: useMemo-independently-memoizeable.expect.md
 ---
+# Usememo Independently Memoizeable.Expect
 
 ## Input
 
@@ -72,4 +70,3 @@ function Component(props) {
 }
 
 ```
-      

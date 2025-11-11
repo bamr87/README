@@ -1,14 +1,12 @@
 ---
+title: Jsx Local Memberexpr Tag Conditional.Expect
 category: misc
-last_updated: null
-source_file: jsx-local-memberexpr-tag-conditional.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nfunction\
-  \ useFoo({cond}) {\n  const MyLocal = SharedRuntime;\n  if (cond) {\n    return\
-  \ <MyLocal.Text value={4} />;\n  } else {\n    return null;..."
 tags:
 - javascript
-title: Jsx Local Memberexpr Tag Conditional.Expect
+last_updated: null
+source_file: jsx-local-memberexpr-tag-conditional.expect.md
 ---
+# Jsx Local Memberexpr Tag Conditional.Expect
 
 ## Input
 
@@ -59,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>4</div>

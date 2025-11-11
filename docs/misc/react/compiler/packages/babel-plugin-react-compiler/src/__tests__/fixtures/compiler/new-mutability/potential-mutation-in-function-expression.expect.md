@@ -1,14 +1,12 @@
 ---
+title: Potential Mutation In Function Expression.Expect
 category: misc
-last_updated: null
-source_file: potential-mutation-in-function-expression.expect.md
-summary: "```javascript\n// @enableNewMutationAliasingModel\nfunction Component({a,\
-  \ b, c}) {\n  const x = [a, b];\n  const f = () => {\n    maybeMutate(x);\n    //\
-  \ different dependency to force this not to merge with..."
 tags:
 - javascript
-title: Potential Mutation In Function Expression.Expect
+last_updated: null
+source_file: potential-mutation-in-function-expression.expect.md
 ---
+# Potential Mutation In Function Expression.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

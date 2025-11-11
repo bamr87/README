@@ -1,18 +1,12 @@
 ---
+title: Mutate After Useeffect Granular Access.Expect
 category: misc
-last_updated: null
-source_file: mutate-after-useeffect-granular-access.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutate After Useeffect Granular Access.Expect
+last_updated: null
+source_file: mutate-after-useeffect-granular-access.expect.md
 ---
+# Mutate After Useeffect Granular Access.Expect
 
 ## Input
 
@@ -49,6 +43,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

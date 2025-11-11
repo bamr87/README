@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Conditional Call Non Hook Imported As Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-conditional-call-non-hook-imported-as-hook.expect.md
-summary: '```javascript
-
-  import {makeArray as useArray} from ''other'';'
 tags:
 - javascript
-title: Error.Invalid Conditional Call Non Hook Imported As Hook.Expect
+last_updated: null
+source_file: error.invalid-conditional-call-non-hook-imported-as-hook.expect.md
 ---
+# Error.Invalid Conditional Call Non Hook Imported As Hook.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.invalid-conditional-call-non-hook-imported-as-hook.ts:6:11
   8 |   return data;
   9 | }
 ```
-          
-      
+

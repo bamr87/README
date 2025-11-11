@@ -1,17 +1,13 @@
 ---
+title: Bug Fbt Plural Multiple Function Calls.Expect
 category: misc
-last_updated: null
-source_file: bug-fbt-plural-multiple-function-calls.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
 - testing
-title: Bug Fbt Plural Multiple Function Calls.Expect
+last_updated: null
+source_file: bug-fbt-plural-multiple-function-calls.expect.md
 ---
+# Bug Fbt Plural Multiple Function Calls.Expect
 
 ## Input
 
@@ -99,4 +95,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

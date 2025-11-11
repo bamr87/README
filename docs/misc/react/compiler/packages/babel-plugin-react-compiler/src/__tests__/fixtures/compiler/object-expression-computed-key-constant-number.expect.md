@@ -1,14 +1,12 @@
 ---
+title: Object Expression Computed Key Constant Number.Expect
 category: misc
-last_updated: null
-source_file: object-expression-computed-key-constant-number.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Expression Computed Key Constant Number.Expect
+last_updated: null
+source_file: object-expression-computed-key-constant-number.expect.md
 ---
+# Object Expression Computed Key Constant Number.Expect
 
 ## Input
 
@@ -64,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"42":["hello!"]}

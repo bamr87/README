@@ -1,18 +1,15 @@
 ---
+title: _about Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```yaml\n In config.yml\ncollections:\n  about:\n    output: true\n    permalink:\
-  \ /:collection/:name/"
 tags:
 - docker
 - aws
 - api
 - database
 - setup
-title: _about Directory
+last_updated: null
+source_file: README.md
 ---
-
 # _about Directory
 
 ## Purpose

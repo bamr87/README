@@ -1,16 +1,14 @@
 ---
+title: "\u2705 Successful Azure Container Apps Deployment"
 category: setup
-last_updated: null
-source_file: DEPLOYMENT-SUCCESS.md
-summary: Your Django parody news application has been successfully deployed to Azure
-  Container Apps!
 tags:
 - python
 - docker
 - azure
 - api
 - database
-title: ✅ Successful Azure Container Apps Deployment
+last_updated: null
+source_file: DEPLOYMENT-SUCCESS.md
 ---
 # ✅ Successful Azure Container Apps Deployment
 
@@ -18,8 +16,8 @@ title: ✅ Successful Azure Container Apps Deployment
 
 Your Django parody news application has been successfully deployed to Azure Container Apps!
 
-**Deployment Time**: 9 minutes 31 seconds  
-**Status**: ✅ LIVE  
+**Deployment Time**: 9 minutes 31 seconds
+**Status**: ✅ LIVE
 **Endpoint**: https://src.icysea-c22e25eb.westus2.azurecontainerapps.io/
 
 ---
@@ -257,12 +255,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      
+
       - name: Deploy with azd
         run: |
           azd login --client-id ${{ secrets.AZURE_CLIENT_ID }} \

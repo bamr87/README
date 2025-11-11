@@ -1,14 +1,12 @@
 ---
+title: Repro Ref Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: repro-ref-mutable-range.expect.md
-summary: '```javascript
-
-  import {Stringify, identity, mutate, CONSTTRUE} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Ref Mutable Range.Expect
+last_updated: null
+source_file: repro-ref-mutable-range.expect.md
 ---
+# Repro Ref Mutable Range.Expect
 
 ## Input
 
@@ -95,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"ref":{"current":"fake-ref-object"}}</div>

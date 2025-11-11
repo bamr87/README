@@ -1,13 +1,11 @@
 ---
+title: use-sync-external-store
 category: api
-last_updated: null
-source_file: README.md
-summary: Backwardscompatible shim for React.useSyncExternalStore. Works with any React
-  that supports Hooks.
 tags:
 - javascript
 - api
-title: use-sync-external-store
+last_updated: null
+source_file: README.md
 ---
 # use-sync-external-store
 

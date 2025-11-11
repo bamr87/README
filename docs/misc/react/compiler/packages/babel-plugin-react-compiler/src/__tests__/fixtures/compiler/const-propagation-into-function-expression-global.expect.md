@@ -1,14 +1,12 @@
 ---
+title: Const Propagation Into Function Expression Global.Expect
 category: misc
-last_updated: null
-source_file: const-propagation-into-function-expression-global.expect.md
-summary: "```javascript\nfunction foo() {\n  const isX = GLOBALISX;\n  const getJSX\
-  \ = () => {\n    return <Child x={isX}></Child>;\n  };\n  const result = getJSX();\n\
-  \  return result;\n}"
 tags:
 - javascript
-title: Const Propagation Into Function Expression Global.Expect
+last_updated: null
+source_file: const-propagation-into-function-expression-global.expect.md
 ---
+# Const Propagation Into Function Expression Global.Expect
 
 ## Input
 
@@ -47,4 +45,3 @@ function _temp() {
 }
 
 ```
-      

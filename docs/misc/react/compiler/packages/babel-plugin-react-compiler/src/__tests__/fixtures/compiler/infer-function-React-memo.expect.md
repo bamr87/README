@@ -1,13 +1,12 @@
 ---
+title: Infer Function React Memo.Expect
 category: misc
-last_updated: null
-source_file: infer-function-React-memo.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nReact.memo(props => {\n  return\
-  \ <div />;\n});"
 tags:
 - javascript
-title: Infer Function React Memo.Expect
+last_updated: null
+source_file: infer-function-React-memo.expect.md
 ---
+# Infer Function React Memo.Expect
 
 ## Input
 
@@ -36,4 +35,3 @@ React.memo((props) => {
 });
 
 ```
-      

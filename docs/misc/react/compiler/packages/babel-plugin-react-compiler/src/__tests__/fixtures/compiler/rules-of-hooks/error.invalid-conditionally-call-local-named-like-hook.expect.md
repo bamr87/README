@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Conditionally Call Local Named Like Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-conditionally-call-local-named-like-hook.expect.md
-summary: '```javascript
-
-  import {makeObjectPrimitives} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Invalid Conditionally Call Local Named Like Hook.Expect
+last_updated: null
+source_file: error.invalid-conditionally-call-local-named-like-hook.expect.md
 ---
+# Error.Invalid Conditionally Call Local Named Like Hook.Expect
 
 ## Input
 
@@ -41,5 +39,4 @@ error.invalid-conditionally-call-local-named-like-hook.ts:6:4
   8 | }
   9 |
 ```
-          
-      
+

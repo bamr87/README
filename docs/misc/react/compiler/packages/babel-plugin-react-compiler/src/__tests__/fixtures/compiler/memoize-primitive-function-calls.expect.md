@@ -1,18 +1,12 @@
 ---
+title: Memoize Primitive Function Calls.Expect
 category: misc
-last_updated: null
-source_file: memoize-primitive-function-calls.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, Valid...'
 tags:
 - javascript
-title: Memoize Primitive Function Calls.Expect
+last_updated: null
+source_file: memoize-primitive-function-calls.expect.md
 ---
+# Memoize Primitive Function Calls.Expect
 
 ## Input
 
@@ -109,7 +103,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[42],"output":43}</div>
 <div>{"inputs":[42],"output":43}</div>

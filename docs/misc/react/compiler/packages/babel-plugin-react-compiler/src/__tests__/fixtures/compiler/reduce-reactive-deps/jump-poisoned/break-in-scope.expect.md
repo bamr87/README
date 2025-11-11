@@ -1,14 +1,12 @@
 ---
+title: Break In Scope.Expect
 category: misc
-last_updated: null
-source_file: break-in-scope.expect.md
-summary: "```javascript\nfunction useFoo({obj, objIsNull}) {\n  const x = [];\n  b0:\
-  \ {\n    if (objIsNull) {\n      break b0;\n    }\n    x.push(obj.a);\n  }\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Break In Scope.Expect
+last_updated: null
+source_file: break-in-scope.expect.md
 ---
+# Break In Scope.Expect
 
 ## Input
 
@@ -79,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []
 [2]

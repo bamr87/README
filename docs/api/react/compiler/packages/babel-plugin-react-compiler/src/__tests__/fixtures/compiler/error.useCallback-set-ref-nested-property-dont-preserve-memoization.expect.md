@@ -1,17 +1,13 @@
 ---
+title: Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
 category: api
-last_updated: null
-source_file: error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
+last_updated: null
+source_file: error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md
 ---
+# Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
 
 ## Input
 
@@ -59,5 +55,4 @@ error.useCallback-set-ref-nested-property-dont-preserve-memoization.ts:13:2
   15 |   return <input onChange={onChange} />;
   16 | }
 ```
-          
-      
+

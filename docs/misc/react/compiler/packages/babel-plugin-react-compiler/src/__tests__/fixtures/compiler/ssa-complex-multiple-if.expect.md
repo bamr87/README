@@ -1,13 +1,12 @@
 ---
+title: Ssa Complex Multiple If.Expect
 category: misc
-last_updated: null
-source_file: ssa-complex-multiple-if.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;\n  if (y ===\
-  \ 2) {\n    x = 3;\n  }"
 tags:
 - javascript
-title: Ssa Complex Multiple If.Expect
+last_updated: null
+source_file: ssa-complex-multiple-if.expect.md
 ---
+# Ssa Complex Multiple If.Expect
 
 ## Input
 
@@ -45,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

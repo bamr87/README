@@ -1,23 +1,13 @@
 ---
+title: Join Uncond Scopes Cond Deps.Expect
 category: misc
-last_updated: null
-source_file: join-uncond-scopes-cond-deps.expect.md
-summary: '``javascript
-
-  // This tests an optimization, NOT a correctness property.
-
-  // When propagating reactive dependencies of an inner scope up to its parent,
-
-  // we prefer to retain granularity.
-
-  //
-
-  // In this ...'
 tags:
 - javascript
 - testing
-title: Join Uncond Scopes Cond Deps.Expect
+last_updated: null
+source_file: join-uncond-scopes-cond-deps.expect.md
 ---
+# Join Uncond Scopes Cond Deps.Expect
 
 ## Input
 
@@ -106,6 +96,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"wat0":3},{"wat0":3}]

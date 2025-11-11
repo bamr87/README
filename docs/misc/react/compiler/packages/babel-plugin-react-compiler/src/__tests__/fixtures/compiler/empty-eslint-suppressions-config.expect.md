@@ -1,14 +1,12 @@
 ---
+title: Empty Eslint Suppressions Config.Expect
 category: misc
-last_updated: null
-source_file: empty-eslint-suppressions-config.expect.md
-summary: '```javascript
-
-  // @eslintSuppressionRules:[]'
 tags:
 - javascript
-title: Empty Eslint Suppressions Config.Expect
+last_updated: null
+source_file: empty-eslint-suppressions-config.expect.md
 ---
+# Empty Eslint Suppressions Config.Expect
 
 ## Input
 
@@ -59,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Hello</div>

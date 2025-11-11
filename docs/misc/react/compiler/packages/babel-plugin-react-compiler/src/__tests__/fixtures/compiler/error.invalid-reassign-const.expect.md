@@ -1,12 +1,12 @@
 ---
+title: Error.Invalid Reassign Const.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-reassign-const.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = 0;\n  x = 1;\n}"
 tags:
 - javascript
-title: Error.Invalid Reassign Const.Expect
+last_updated: null
+source_file: error.invalid-reassign-const.expect.md
 ---
+# Error.Invalid Reassign Const.Expect
 
 ## Input
 
@@ -36,5 +36,4 @@ error.invalid-reassign-const.ts:3:2
   4 | }
   5 |
 ```
-          
-      
+

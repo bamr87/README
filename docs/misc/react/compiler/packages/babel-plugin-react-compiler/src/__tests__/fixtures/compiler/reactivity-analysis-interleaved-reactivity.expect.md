@@ -1,14 +1,12 @@
 ---
+title: Reactivity Analysis Interleaved Reactivity.Expect
 category: misc
-last_updated: null
-source_file: reactivity-analysis-interleaved-reactivity.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // a and b are technically\
-  \ independent, but their mutation is interleaved\n  // so they are grouped in a\
-  \ single reactive scope. a does not have any\n  // reac..."
 tags:
 - javascript
-title: Reactivity Analysis Interleaved Reactivity.Expect
+last_updated: null
+source_file: reactivity-analysis-interleaved-reactivity.expect.md
 ---
+# Reactivity Analysis Interleaved Reactivity.Expect
 
 ## Input
 
@@ -72,4 +70,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

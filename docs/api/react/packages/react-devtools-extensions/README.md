@@ -1,16 +1,16 @@
 ---
+title: Readme
 category: api
-last_updated: null
-source_file: README.md
-summary: This is the source code for the React DevTools browser extension.
 tags:
 - javascript
 - azure
 - api
 - testing
-- api
-title: Readme
+last_updated: null
+source_file: README.md
 ---
+# Readme
+
 This is the source code for the React DevTools browser extension.
 
 ## Installation

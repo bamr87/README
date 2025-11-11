@@ -1,15 +1,12 @@
 ---
+title: Attribute Behavior Fixture
 category: api
-last_updated: null
-source_file: README.md
-summary: yarn build type=UMDDEV react/index,reactdom && cd fixtures/attributebehavior
-  && yarn install && yarn dev
 tags:
 - javascript
 - api
 - testing
-- api
-title: Attribute Behavior Fixture
+last_updated: null
+source_file: README.md
 ---
 # Attribute Behavior Fixture
 

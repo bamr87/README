@@ -1,14 +1,12 @@
 ---
+title: Reassign Global Hook Arg.Expect
 category: misc
-last_updated: null
-source_file: reassign-global-hook-arg.expect.md
-summary: '```javascript
-
-  let b = 1;'
 tags:
 - javascript
-title: Reassign Global Hook Arg.Expect
+last_updated: null
+source_file: reassign-global-hook-arg.expect.md
 ---
+# Reassign Global Hook Arg.Expect
 
 ## Input
 
@@ -52,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

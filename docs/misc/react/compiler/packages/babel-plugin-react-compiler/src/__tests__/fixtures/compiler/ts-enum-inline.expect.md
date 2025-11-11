@@ -1,13 +1,12 @@
 ---
+title: Ts Enum Inline.Expect
 category: misc
-last_updated: null
-source_file: ts-enum-inline.expect.md
-summary: "```javascript\nfunction Component(props) {\n  enum Bool {\n    True = 'true',\n\
-  \    False = 'false',\n  }"
 tags:
 - javascript
-title: Ts Enum Inline.Expect
+last_updated: null
+source_file: ts-enum-inline.expect.md
 ---
+# Ts Enum Inline.Expect
 
 ## Input
 
@@ -64,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>true</div>

@@ -1,13 +1,12 @@
 ---
+title: Alias Capture In Method Receiver.Expect
 category: misc
-last_updated: null
-source_file: alias-capture-in-method-receiver.expect.md
-summary: "```javascript\nfunction Component() {\n  // a's mutable range should be\
-  \ limited\n  // the following line\n  let a = someObj();"
 tags:
 - javascript
-title: Alias Capture In Method Receiver.Expect
+last_updated: null
+source_file: alias-capture-in-method-receiver.expect.md
 ---
+# Alias Capture In Method Receiver.Expect
 
 ## Input
 
@@ -53,4 +52,3 @@ function Component() {
 }
 
 ```
-      

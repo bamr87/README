@@ -1,14 +1,12 @@
 ---
+title: Ssa Property Alias Mutate Inside If.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-alias-mutate-inside-if.expect.md
-summary: "```javascript\nfunction foo(a) {\n  const x = {};\n  if (a) {\n    let y\
-  \ = {};\n    x.y = y;\n    mutate(y); // aliases x & y, but not z\n  } else {\n\
-  \    let z = {};\n    x.z = z;\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Ssa Property Alias Mutate Inside If.Expect
+last_updated: null
+source_file: ssa-property-alias-mutate-inside-if.expect.md
 ---
+# Ssa Property Alias Mutate Inside If.Expect
 
 ## Input
 
@@ -61,4 +59,3 @@ function foo(a) {
 }
 
 ```
-      

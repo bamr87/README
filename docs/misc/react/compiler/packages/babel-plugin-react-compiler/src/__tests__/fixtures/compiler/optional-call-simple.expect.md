@@ -1,12 +1,12 @@
 ---
+title: Optional Call Simple.Expect
 category: misc
-last_updated: null
-source_file: optional-call-simple.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return foo?.(props);\n}"
 tags:
 - javascript
-title: Optional Call Simple.Expect
+last_updated: null
+source_file: optional-call-simple.expect.md
 ---
+# Optional Call Simple.Expect
 
 ## Input
 
@@ -35,4 +35,3 @@ function Component(props) {
 }
 
 ```
-      

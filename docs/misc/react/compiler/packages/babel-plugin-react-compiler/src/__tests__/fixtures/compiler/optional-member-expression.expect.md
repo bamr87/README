@@ -1,13 +1,12 @@
 ---
+title: Optional Member Expression.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression.expect.md
-summary: "```javascript\nfunction Foo(props) {\n  let x = bar(props.a);\n  let y =\
-  \ x?.b;"
 tags:
 - javascript
-title: Optional Member Expression.Expect
+last_updated: null
+source_file: optional-member-expression.expect.md
 ---
+# Optional Member Expression.Expect
 
 ## Input
 
@@ -44,4 +43,3 @@ function Foo(props) {
 }
 
 ```
-      

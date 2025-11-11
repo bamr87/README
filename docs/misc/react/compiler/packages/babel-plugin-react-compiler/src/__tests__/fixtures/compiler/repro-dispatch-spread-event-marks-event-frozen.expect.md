@@ -1,13 +1,12 @@
 ---
+title: Repro Dispatch Spread Event Marks Event Frozen.Expect
 category: misc
-last_updated: null
-source_file: repro-dispatch-spread-event-marks-event-frozen.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component() {\n \
-  \ const dispatch = useDispatch();\n  // const [state, setState] = useState(0);"
 tags:
 - javascript
-title: Repro Dispatch Spread Event Marks Event Frozen.Expect
+last_updated: null
+source_file: repro-dispatch-spread-event-marks-event-frozen.expect.md
 ---
+# Repro Dispatch Spread Event Marks Event Frozen.Expect
 
 ## Input
 
@@ -87,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><input type="file"></div>

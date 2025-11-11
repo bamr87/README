@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Delete Property Of Frozen Value.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-delete-property-of-frozen-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = makeObject();\n\
-  \  // freeze\n  <div>{x}</div>;\n  delete x.y;\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Delete Property Of Frozen Value.Expect
+last_updated: null
+source_file: error.invalid-delete-property-of-frozen-value.expect.md
 ---
+# Error.Invalid Delete Property Of Frozen Value.Expect
 
 ## Input
 
@@ -41,5 +40,4 @@ error.invalid-delete-property-of-frozen-value.ts:5:9
   7 | }
   8 |
 ```
-          
-      
+

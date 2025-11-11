@@ -1,15 +1,12 @@
 ---
-about: Issue Template for the repository
+title: Issue Template
 category: misc
-labels: ai-assist
-last_updated: null
-name: Issue Template
-source_file: issue_template.md
-summary: '<! template: issuedetailtemplate.md >'
 tags:
 - documentation
-title: Issue Template
+last_updated: null
+source_file: issue_template.md
 ---
+# Issue Template
 
 <!-- template: issue_detail_template.md -->
 

@@ -1,21 +1,13 @@
 ---
+title: Lambda Reassign Primitive.Expect
 category: api
-last_updated: null
-source_file: lambda-reassign-primitive.expect.md
-summary: '```javascript
-
-  // writing to primitives is not a ''mutate'' or ''store'' to context references,
-
-  // under current analysis in AnalyzeFunctions.
-
-  // <unknown> $23:TFunction = Function @deps[<unknown>
-
-  //   $21...'
 tags:
 - javascript
 - api
-title: Lambda Reassign Primitive.Expect
+last_updated: null
+source_file: lambda-reassign-primitive.expect.md
 ---
+# Lambda Reassign Primitive.Expect
 
 ## Input
 
@@ -76,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 41

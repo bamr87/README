@@ -1,17 +1,14 @@
 ---
+title: Changelog Documentation System
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains the comprehensive changelog documentation for the
-  Barodybroject Django application. This system provides structured change tracking,
-  standardized documentation, and clear histo...
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: Changelog Documentation System
+last_updated: null
+source_file: README.md
 ---
 # Changelog Documentation System
 
@@ -226,8 +223,8 @@ breaking: true|false
 
 ---
 
-**Last Updated**: January 27, 2025  
-**Version**: 1.0.0  
+**Last Updated**: January 27, 2025
+**Version**: 1.0.0
 **Maintainer**: Barodybroject Team
 
 For questions about the changelog system, please open an issue or contact the maintainers.

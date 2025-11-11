@@ -1,20 +1,12 @@
 ---
+title: Memberexpr Join Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: memberexpr-join-optional-chain.expect.md
-summary: '``javascript
-
-  // To preserve the nullthrows behavior and reactive deps of this code,
-
-  // Forget needs to add props.a.b or a subpath as a dependency.
-
-  //
-
-  // (1) Since the reactive block producing x uncond...'
 tags:
 - javascript
-title: Memberexpr Join Optional Chain.Expect
+last_updated: null
+source_file: memberexpr-join-optional-chain.expect.md
 ---
+# Memberexpr Join Optional Chain.Expect
 
 ## Input
 
@@ -79,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"c":1},1]

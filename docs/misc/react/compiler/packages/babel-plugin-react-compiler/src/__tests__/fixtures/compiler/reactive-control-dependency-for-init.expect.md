@@ -1,14 +1,12 @@
 ---
+title: Reactive Control Dependency For Init.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-for-init.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  for (let i = props.init;\
-  \ i < 10; i++) {\n    if (i === 0) {\n      x = 0;\n      break;\n    } else {\n\
-  \      x = 1;\n      break;\n    }\n  }\n  // The value..."
 tags:
 - javascript
-title: Reactive Control Dependency For Init.Expect
+last_updated: null
+source_file: reactive-control-dependency-for-init.expect.md
 ---
+# Reactive Control Dependency For Init.Expect
 
 ## Input
 
@@ -90,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0]
 [0]

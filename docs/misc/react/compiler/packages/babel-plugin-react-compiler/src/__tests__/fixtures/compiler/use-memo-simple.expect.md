@@ -1,13 +1,12 @@
 ---
+title: Use Memo Simple.Expect
 category: misc
-last_updated: null
-source_file: use-memo-simple.expect.md
-summary: "```javascript\nfunction Component(props) {\n  'use memo';\n  let x = [props.foo];\n\
-  \  return <div x={x}>\"foo\"</div>;\n}"
 tags:
 - javascript
-title: Use Memo Simple.Expect
+last_updated: null
+source_file: use-memo-simple.expect.md
 ---
+# Use Memo Simple.Expect
 
 ## Input
 
@@ -52,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div x="1">"foo"</div>

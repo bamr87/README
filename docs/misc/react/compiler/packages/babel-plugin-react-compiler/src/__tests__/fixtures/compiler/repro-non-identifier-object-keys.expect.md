@@ -1,13 +1,12 @@
 ---
+title: Repro Non Identifier Object Keys.Expect
 category: misc
-last_updated: null
-source_file: repro-non-identifier-object-keys.expect.md
-summary: "```javascript\nfunction Foo() {\n  return {\n    'a.b': 1,\n    'a\\b':\
-  \ 2,\n    'a/b': 3,\n    'a+b': 4,\n    'a b': 5,\n  };\n}"
 tags:
 - javascript
-title: Repro Non Identifier Object Keys.Expect
+last_updated: null
+source_file: repro-non-identifier-object-keys.expect.md
 ---
+# Repro Non Identifier Object Keys.Expect
 
 ## Input
 
@@ -53,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a.b":1,"a\b":2,"a/b":3,"a+b":4,"a b":5}

@@ -1,13 +1,12 @@
 ---
+title: Issue933 Disjoint Set Infinite Loop.Expect
 category: misc
-last_updated: null
-source_file: issue933-disjoint-set-infinite-loop.expect.md
-summary: "```javascript\nfunction makeObj() {\n  'use no forget';\n  const result\
-  \ = [];\n  result.a = {b: 2};"
 tags:
 - javascript
-title: Issue933 Disjoint Set Infinite Loop.Expect
+last_updated: null
+source_file: issue933-disjoint-set-infinite-loop.expect.md
 ---
+# Issue933 Disjoint Set Infinite Loop.Expect
 
 ## Input
 
@@ -72,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]

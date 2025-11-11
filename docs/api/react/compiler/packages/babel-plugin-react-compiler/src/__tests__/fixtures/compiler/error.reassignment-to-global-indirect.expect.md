@@ -1,15 +1,13 @@
 ---
+title: Error.Reassignment To Global Indirect.Expect
 category: api
-last_updated: null
-source_file: error.reassignment-to-global-indirect.expect.md
-summary: "```javascript\nfunction Component() {\n  const foo = () => {\n    // Cannot\
-  \ assign to globals\n    someUnknownGlobal = true;\n    moduleLocal = true;\n  };\n\
-  \  foo();\n}"
 tags:
 - javascript
 - api
-title: Error.Reassignment To Global Indirect.Expect
+last_updated: null
+source_file: error.reassignment-to-global-indirect.expect.md
 ---
+# Error.Reassignment To Global Indirect.Expect
 
 ## Input
 
@@ -57,5 +55,4 @@ error.reassignment-to-global-indirect.ts:5:4
   7 |   foo();
   8 | }
 ```
-          
-      
+

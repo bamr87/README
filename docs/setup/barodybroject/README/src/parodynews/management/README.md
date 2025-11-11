@@ -1,17 +1,14 @@
 ---
+title: management Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Run custom management commands\npython manage.py generatefielddefaults\n\
-  python manage.py resetdb\npython manage.py refreshmigrations\npython manage.py fetchmodels"
 tags:
 - python
 - docker
 - database
 - setup
-title: management Directory
+last_updated: null
+source_file: README.md
 ---
-
 # management Directory
 
 ## Purpose

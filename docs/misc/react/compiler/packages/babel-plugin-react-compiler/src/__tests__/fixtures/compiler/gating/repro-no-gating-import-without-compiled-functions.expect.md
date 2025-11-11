@@ -1,16 +1,12 @@
 ---
+title: Repro No Gating Import Without Compiled Functions.Expect
 category: misc
-last_updated: null
-source_file: repro-no-gating-import-without-compiled-functions.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {isForgetEnabledFixtures} from ''ReactForgetFeatureFlag'';'
 tags:
 - javascript
-title: Repro No Gating Import Without Compiled Functions.Expect
+last_updated: null
+source_file: repro-no-gating-import-without-compiled-functions.expect.md
 ---
+# Repro No Gating Import Without Compiled Functions.Expect
 
 ## Input
 
@@ -31,4 +27,3 @@ import { isForgetEnabled_Fixtures } from "ReactForgetFeatureFlag";
 export default 42;
 
 ```
-      

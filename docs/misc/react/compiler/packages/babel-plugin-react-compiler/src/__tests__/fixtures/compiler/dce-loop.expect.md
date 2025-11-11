@@ -1,13 +1,12 @@
 ---
+title: Dce Loop.Expect
 category: misc
-last_updated: null
-source_file: dce-loop.expect.md
-summary: "```javascript\nfunction foo(props) {\n  let x = 0;\n  let y = 0;\n  while\
-  \ (y < props.max) {\n    x++;\n    y++;\n  }\n  return y;\n}"
 tags:
 - javascript
-title: Dce Loop.Expect
+last_updated: null
+source_file: dce-loop.expect.md
 ---
+# Dce Loop.Expect
 
 ## Input
 
@@ -48,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 10

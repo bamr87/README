@@ -1,23 +1,13 @@
 ---
-author: Tech Historian
+title: 'Digging Through the Digital: Unveiling "Artifacts" in Software Testing and
+  Beyond'
 category: development
-description: A deep dive into the significance of artifacts in software testing and
-  their historical evolution.
-last_updated: null
-published_at: '2025-03-19'
-slug: artifacts-in-software-testing
-source_file: 2025-03-19-artifacts-in-software-testing.md
-summary: 'Dear intellectually curious reader, today we unearth a word that has elegantly
-  traversed the annals of time to become a stalwart pillar within software testing:
-  "Artifacts." While you may fondly recal...'
 tags:
 - testing
 - development
-title: 'Digging Through the Digital: Unveiling "Artifacts" in Software Testing and
-  Beyond'
+last_updated: null
+source_file: 2025-03-19-artifacts-in-software-testing.md
 ---
-
-
 # Digging Through the Digital: Unveiling "Artifacts" in Software Testing and Beyond
 
 ## Introduction to the WOTD: Artifacts

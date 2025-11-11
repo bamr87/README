@@ -1,21 +1,13 @@
 ---
-about: Template for outlining a test plan for the technical requirements of a new
-  feature
-assignees: ''
+title: Feature Request Technical Tests
 category: setup
-labels: test plan
-last_updated: null
-name: 'Test Plan: Technical Requirements'
-source_file: feature_request_technical_tests.md
-summary: "2. Test Case 2: Description\n    Objective: What this test case aims to\
-  \ verify\n    Steps:\n     1. Step 1\n     2. Step 2\n     3. Step 3\n    Expected\
-  \ Result: What should happen if the test passes"
 tags:
 - testing
 - setup
-title: Feature Request Technical Tests
+last_updated: null
+source_file: feature_request_technical_tests.md
 ---
-
+# Feature Request Technical Tests
 
 ## Summary
 Provide a brief summary of the feature and the purpose of this test plan.

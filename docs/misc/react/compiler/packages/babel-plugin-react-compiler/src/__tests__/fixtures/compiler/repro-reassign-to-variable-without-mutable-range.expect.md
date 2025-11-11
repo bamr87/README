@@ -1,14 +1,12 @@
 ---
+title: Repro Reassign To Variable Without Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: repro-reassign-to-variable-without-mutable-range.expect.md
-summary: "```javascript\n// @debug\nfunction Component(a, b) {\n  let x = [];\n  let\
-  \ y = [];\n  let z = foo(a);\n  if (FLAG) {\n    x = bar(z);\n    y = baz(b);\n\
-  \  }\n  return [x, y];\n}"
 tags:
 - javascript
-title: Repro Reassign To Variable Without Mutable Range.Expect
+last_updated: null
+source_file: repro-reassign-to-variable-without-mutable-range.expect.md
 ---
+# Repro Reassign To Variable Without Mutable Range.Expect
 
 ## Input
 
@@ -84,4 +82,3 @@ function Component(a, b) {
 }
 
 ```
-      

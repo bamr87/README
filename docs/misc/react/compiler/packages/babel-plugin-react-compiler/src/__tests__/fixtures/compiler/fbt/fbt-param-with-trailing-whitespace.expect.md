@@ -1,16 +1,12 @@
 ---
+title: Fbt Param With Trailing Whitespace.Expect
 category: misc
-last_updated: null
-source_file: fbt-param-with-trailing-whitespace.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fbt Param With Trailing Whitespace.Expect
+last_updated: null
+source_file: fbt-param-with-trailing-whitespace.expect.md
 ---
+# Fbt Param With Trailing Whitespace.Expect
 
 ## Input
 
@@ -102,7 +98,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <span>42 votes for thing!</span>
 <span>42 votes for thing!</span>

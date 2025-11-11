@@ -1,13 +1,10 @@
 ---
+title: babel-plugin-react-compiler
 category: misc
-last_updated: null
-source_file: README.md
-summary: React Compiler is a compiler that optimizes React applications, ensuring
-  that only the minimal parts of components and hooks will rerender when state changes.
-  The compiler also validates that componen...
 tags:
 - javascript
-title: babel-plugin-react-compiler
+last_updated: null
+source_file: README.md
 ---
 # babel-plugin-react-compiler
 

@@ -1,18 +1,15 @@
 ---
+title: _docs Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```yaml\n Jekyll collection configuration for docs\ncollections:\n  docs:\n\
-  \    output: true\n    permalink: /:collection/:name/"
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: _docs Directory
+last_updated: null
+source_file: README.md
 ---
-
 # _docs Directory
 
 ## Purpose

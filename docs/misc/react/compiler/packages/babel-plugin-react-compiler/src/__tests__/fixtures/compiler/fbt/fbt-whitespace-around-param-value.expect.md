@@ -1,14 +1,12 @@
 ---
+title: Fbt Whitespace Around Param Value.Expect
 category: misc
-last_updated: null
-source_file: fbt-whitespace-around-param-value.expect.md
-summary: '```javascript
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Fbt Whitespace Around Param Value.Expect
+last_updated: null
+source_file: fbt-whitespace-around-param-value.expect.md
 ---
+# Fbt Whitespace Around Param Value.Expect
 
 ## Input
 
@@ -62,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Before text hello world after text

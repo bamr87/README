@@ -1,32 +1,15 @@
 ---
-affected_versions:
-- X.Y.Z
-author: Author Name <email@domain.com>
-breaking: false
+title: 'Security Update: [Security Issue Title]'
 category: setup
-cve_ids: []
-date: YYYY-MM-DD
-impact: critical|high|medium|low
-last_updated: null
-related_issues: []
-related_prs: []
-reviewers: []
-severity_score: 9.8|7.5|5.0|2.1
-source_file: security-template.md
-summary: '> Summary: Onesentence description of the security vulnerability that was
-  addressed.'
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: 'Security Update: [Security Issue Title]'
-type: security
-version: X.Y.Z
+last_updated: null
+source_file: security-template.md
 ---
-
-
 # Security Update: [Security Issue Title]
 
 > **Summary**: One-sentence description of the security vulnerability that was addressed.
@@ -122,15 +105,15 @@ from django.forms import ValidationError
 def validate_user_input(data):
     # Sanitize input
     cleaned_data = html.escape(data.strip())
-    
+
     # Validate format
     if not re.match(r'^[a-zA-Z0-9_-]+$', cleaned_data):
         raise ValidationError("Invalid characters in input")
-    
+
     # Length limits
     if len(cleaned_data) > 255:
         raise ValidationError("Input too long")
-    
+
     return cleaned_data
 ```
 
@@ -144,11 +127,11 @@ from django.contrib.auth import authenticate
 def secure_login(request):
     username = request.POST.get('username')
     password = request.POST.get('password')
-    
+
     # Additional security checks
     if is_account_locked(username):
         return JsonResponse({'error': 'Account locked'}, status=423)
-    
+
     user = authenticate(username=username, password=password)
     if user:
         reset_failed_attempts(username)
@@ -167,10 +150,10 @@ from django.core.exceptions import PermissionDenied
 def secure_api_endpoint(request, resource_id):
     # Verify user owns resource or has admin rights
     resource = get_object_or_404(Resource, id=resource_id)
-    
+
     if not (request.user == resource.owner or request.user.is_superuser):
         raise PermissionDenied("Insufficient permissions")
-    
+
     # Process request securely
     return process_authorized_request(request, resource)
 ```
@@ -184,14 +167,14 @@ security:
   tls:
     min_version: "1.2"
     ciphers: "ECDHE+AESGCM:ECDHE+CHACHA20:DHE+AESGCM:DHE+CHACHA20:!aNULL:!MD5:!DSS"
-  
+
   headers:
     strict_transport_security: "max-age=31536000; includeSubDomains"
     x_frame_options: "DENY"
     x_content_type_options: "nosniff"
     x_xss_protection: "1; mode=block"
     content_security_policy: "default-src 'self'"
-  
+
   session:
     secure: true
     httponly: true
@@ -331,11 +314,11 @@ security_alerts:
   - name: "Authentication Failures"
     condition: failed_logins > 10/minute
     action: temporary_ip_block
-  
+
   - name: "SQL Injection Attempt"
     condition: contains(request_body, "DROP TABLE")
     action: block_and_alert
-  
+
   - name: "Privilege Escalation"
     condition: unauthorized_admin_access
     action: immediate_alert
@@ -414,8 +397,8 @@ export ENABLE_2FA=true
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Security Team
 
 > **SECURITY NOTE**: When using this template, be careful not to disclose sensitive security details that could help attackers. Coordinate with security team before publishing any security-related documentation.

@@ -1,14 +1,12 @@
 ---
+title: Extend Scopes If.Expect
 category: misc
-last_updated: null
-source_file: extend-scopes-if.expect.md
-summary: "```javascript\nfunction foo(a, b, c) {\n  let x = [];\n  if (a) {\n    if\
-  \ (b) {\n      if (c) {\n        x.push(0);\n      }\n    }\n  }\n  if (x.length)\
-  \ {\n    return x;\n  }\n  return null;\n}"
 tags:
 - javascript
-title: Extend Scopes If.Expect
+last_updated: null
+source_file: extend-scopes-if.expect.md
 ---
+# Extend Scopes If.Expect
 
 ## Input
 
@@ -73,4 +71,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

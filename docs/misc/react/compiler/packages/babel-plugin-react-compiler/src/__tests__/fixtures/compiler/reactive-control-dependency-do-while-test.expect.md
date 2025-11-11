@@ -1,15 +1,13 @@
 ---
+title: Reactive Control Dependency Do While Test.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-do-while-test.expect.md
-summary: "``javascript\nfunction Component(props) {\n  let x;\n  let i = 0;\n  do\
-  \ {\n    if (i > 10) {\n      x = 10;\n    } else {\n      x = 1;\n    }\n    i++;\n\
-  \  } while (i < props.test);\n  // The values assigned to x..."
 tags:
 - javascript
 - testing
-title: Reactive Control Dependency Do While Test.Expect
+last_updated: null
+source_file: reactive-control-dependency-do-while-test.expect.md
 ---
+# Reactive Control Dependency Do While Test.Expect
 
 ## Input
 
@@ -93,7 +91,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [10]
 [10]

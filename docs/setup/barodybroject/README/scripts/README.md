@@ -1,16 +1,14 @@
 ---
+title: Scripts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains various scripts to help with deployment and management
-  of the BarodyBroject application.
 tags:
 - python
 - docker
 - aws
 - azure
 - api
-title: Scripts Directory
+last_updated: null
+source_file: README.md
 ---
 # Scripts Directory
 
@@ -244,7 +242,7 @@ cat /tmp/init_setup_test_*.log
 
 **Features**:
 - Complete Docker orchestration testing
-- Database connectivity and migration validation  
+- Database connectivity and migration validation
 - Django service layer verification
 - Installation wizard component testing
 - Security and performance validation
@@ -376,7 +374,7 @@ Before running the Azure deployment scripts, ensure you have:
    ```bash
    # Install Azure CLI (macOS)
    brew install azure-cli
-   
+
    # Login to Azure
    az login
    ```
@@ -622,7 +620,7 @@ sudo apt-get install python3 python3-pip git docker.io
    ```bash
    # Find process using port
    lsof -i :8000
-   
+
    # Change ports in .env
    DJANGO_DEV_PORT=8001
    POSTGRES_PORT=5433
@@ -632,10 +630,10 @@ sudo apt-get install python3 python3-pip git docker.io
    ```bash
    # Check database health
    docker-compose exec barodydb pg_isready -U postgres
-   
+
    # Restart database
    docker-compose restart barodydb
-   
+
    # Fresh start (⚠️ deletes data)
    docker-compose down -v
    docker-compose up -d
@@ -645,7 +643,7 @@ sudo apt-get install python3 python3-pip git docker.io
    ```bash
    # All services
    docker-compose logs -f
-   
+
    # Specific service
    docker-compose logs -f python
    docker-compose logs -f barodydb
@@ -676,7 +674,7 @@ sudo apt-get install python3 python3-pip git docker.io
    ```bash
    # Check region availability
    az account list-locations --output table
-   
+
    # Check resource provider registration
    az provider show --namespace Microsoft.App --query registrationState
    ```
@@ -685,7 +683,7 @@ sudo apt-get install python3 python3-pip git docker.io
    ```bash
    # View azd logs
    azd show
-   
+
    # Check Container App logs
    az containerapp logs show --name <app-name> --resource-group <rg-name>
    ```
@@ -720,7 +718,7 @@ sudo apt-get install python3 python3-pip git docker.io
    # Remove migration files (except __init__.py)
    find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
    find . -path "*/migrations/*.pyc" -delete
-   
+
    # Recreate migrations
    python manage.py makemigrations
    python manage.py migrate
@@ -732,7 +730,7 @@ sudo apt-get install python3 python3-pip git docker.io
    docker-compose down -v
    docker-compose up -d
    python manage.py migrate
-   
+
    # For local SQLite
    rm db.sqlite3
    python manage.py migrate
@@ -1010,10 +1008,10 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Run full test suite
    docker-compose exec python python manage.py test
-   
+
    # Run infrastructure tests
    ./scripts/test-infrastructure.sh
-   
+
    # Run with coverage
    docker-compose exec python pytest --cov=parodynews
    ```
@@ -1031,7 +1029,7 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Generate secure SECRET_KEY
    python3 -c "import secrets; print(secrets.token_urlsafe(50))"
-   
+
    # Generate secure DB password
    python3 -c "import secrets; print(secrets.token_urlsafe(32))"
    ```
@@ -1046,7 +1044,7 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Enforce HTTPS
    SECURE_SSL_REDIRECT=True
-   
+
    # Security headers
    SECURE_HSTS_SECONDS=31536000
    SECURE_CONTENT_TYPE_NOSNIFF=True
@@ -1080,11 +1078,11 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Deploy to staging environment
    azd deploy --environment staging
-   
+
    # Run post-deployment setup
    ./scripts/azure-deployment-setup.py
    # Select: 2) Staging/Preview Environment
-   
+
    # Test thoroughly
    # Promote to production only after validation
    ```
@@ -1095,7 +1093,7 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    az postgres flexible-server backup list \
      --resource-group <rg> \
      --name <server-name>
-   
+
    # Manual backup
    docker-compose exec barodydb pg_dump -U postgres parody > backup.sql
    ```
@@ -1104,10 +1102,10 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Check application logs
    docker-compose logs -f python
-   
+
    # Azure logs
    az containerapp logs show --name <app> --resource-group <rg>
-   
+
    # Health check
    curl -I https://your-app.azurecontainerapps.io/health/
    ```
@@ -1166,10 +1164,10 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
    ```bash
    # Application logs
    tail -f logs/django.log
-   
+
    # Database logs
    docker-compose logs barodydb
-   
+
    # All services
    docker-compose logs -f
    ```
@@ -1177,7 +1175,7 @@ az monitor app-insights component show --app <app-insights-name> --resource-grou
 2. **Use Django shell for debugging**:
    ```bash
    docker-compose exec python python manage.py shell
-   
+
    # Test database connection
    from django.db import connection
    connection.ensure_connection()
@@ -1228,6 +1226,6 @@ When adding new scripts:
 
 ---
 
-**Last Updated**: 2025-01-27  
-**Version**: 2.0.0  
+**Last Updated**: 2025-01-27
+**Version**: 2.0.0
 **Maintainer**: barodybroject team

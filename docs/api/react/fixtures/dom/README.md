@@ -1,13 +1,12 @@
 ---
+title: DOM Fixtures
 category: api
-last_updated: null
-source_file: README.md
-summary: A set of DOM test cases for quickly identifying browser issues.
 tags:
 - javascript
 - testing
 - api
-title: DOM Fixtures
+last_updated: null
+source_file: README.md
 ---
 # DOM Fixtures
 

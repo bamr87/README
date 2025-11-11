@@ -1,14 +1,12 @@
 ---
+title: Error.Mutable Range Shared Inner Outer Function.Expect
 category: misc
-last_updated: null
-source_file: error.mutable-range-shared-inner-outer-function.expect.md
-summary: "```javascript\n// @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions\n\
-  let cond = true;\nfunction Component(props) {\n  let a;\n  let b;\n  const f = ()\
-  \ => {\n    if (cond) {\n  ..."
 tags:
 - javascript
-title: Error.Mutable Range Shared Inner Outer Function.Expect
+last_updated: null
+source_file: error.mutable-range-shared-inner-outer-function.expect.md
 ---
+# Error.Mutable Range Shared Inner Outer Function.Expect
 
 ## Input
 
@@ -58,5 +56,4 @@ error.mutable-range-shared-inner-outer-function.ts:8:6
   10 |     } else {
   11 |       a = {};
 ```
-          
-      
+

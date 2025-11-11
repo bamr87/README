@@ -1,14 +1,12 @@
 ---
+title: Mutation During Jsx Construction.Expect
 category: misc
-last_updated: null
-source_file: mutation-during-jsx-construction.expect.md
-summary: '```javascript
-
-  import {identity, mutate, mutateAndReturnNewValue} from ''sharedruntime'';'
 tags:
 - javascript
-title: Mutation During Jsx Construction.Expect
+last_updated: null
+source_file: mutation-during-jsx-construction.expect.md
 ---
+# Mutation During Jsx Construction.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

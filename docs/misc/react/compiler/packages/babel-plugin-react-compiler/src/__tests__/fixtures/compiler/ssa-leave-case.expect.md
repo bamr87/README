@@ -1,14 +1,12 @@
 ---
+title: Ssa Leave Case.Expect
 category: misc
-last_updated: null
-source_file: ssa-leave-case.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Ssa Leave Case.Expect
+last_updated: null
+source_file: ssa-leave-case.expect.md
 ---
+# Ssa Leave Case.Expect
 
 ## Input
 
@@ -87,7 +85,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[[],null]}</div>
 <div>{"children":[[],null]}</div>

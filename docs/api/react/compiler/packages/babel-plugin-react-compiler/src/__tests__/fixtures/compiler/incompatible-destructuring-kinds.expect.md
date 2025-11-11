@@ -1,17 +1,13 @@
 ---
+title: Incompatible Destructuring Kinds.Expect
 category: api
-last_updated: null
-source_file: incompatible-destructuring-kinds.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Incompatible Destructuring Kinds.Expect
+last_updated: null
+source_file: incompatible-destructuring-kinds.expect.md
 ---
+# Incompatible Destructuring Kinds.Expect
 
 ## Input
 
@@ -77,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"a":null,"b":"[[ cyclic ref *1 ]]","onClick":"[[ function params=0 ]]"}</div>

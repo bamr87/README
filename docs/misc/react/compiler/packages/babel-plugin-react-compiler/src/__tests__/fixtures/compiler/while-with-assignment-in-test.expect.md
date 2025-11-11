@@ -1,14 +1,12 @@
 ---
+title: While With Assignment In Test.Expect
 category: misc
-last_updated: null
-source_file: while-with-assignment-in-test.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nfunction\
-  \ Component() {\n  const queue = [1, 2, 3];\n  let value = 0;\n  let sum = 0;\n\
-  \  while ((value = queue.pop()) != null) {\n    sum ..."
 tags:
 - javascript
-title: While With Assignment In Test.Expect
+last_updated: null
+source_file: while-with-assignment-in-test.expect.md
 ---
+# While With Assignment In Test.Expect
 
 ## Input
 
@@ -51,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 6

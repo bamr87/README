@@ -1,13 +1,12 @@
 ---
+title: Optional Computed Load Static.Expect
 category: misc
-last_updated: null
-source_file: optional-computed-load-static.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = a?.b.c[0];\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Optional Computed Load Static.Expect
+last_updated: null
+source_file: optional-computed-load-static.expect.md
 ---
+# Optional Computed Load Static.Expect
 
 ## Input
 
@@ -28,4 +27,3 @@ function Component(props) {
 }
 
 ```
-      

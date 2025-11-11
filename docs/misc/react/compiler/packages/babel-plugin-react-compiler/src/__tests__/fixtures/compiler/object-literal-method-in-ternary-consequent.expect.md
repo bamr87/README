@@ -1,14 +1,12 @@
 ---
+title: Object Literal Method In Ternary Consequent.Expect
 category: misc
-last_updated: null
-source_file: object-literal-method-in-ternary-consequent.expect.md
-summary: '```javascript
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Literal Method In Ternary Consequent.Expect
+last_updated: null
+source_file: object-literal-method-in-ternary-consequent.expect.md
 ---
+# Object Literal Method In Ternary Consequent.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getValue":{"kind":"Function","result":0}},"shouldInvokeFns":true}</div>

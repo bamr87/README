@@ -1,16 +1,13 @@
 ---
+title: Nonreactive Noescaping Dependency Can Inline Into Consuming Scope.Expect
 category: api
-last_updated: null
-source_file: nonreactive-noescaping-dependency-can-inline-into-consuming-scope.expect.md
-summary: "```javascript\n// @flow\nfunction Component() {\n  return (\n    <div\n\
-  \      className={stylex(\n        // this value is a) in its own scope, b) nonreactive,\
-  \ and c) nonescaping\n        // its scope gets pr..."
 tags:
 - javascript
 - api
-- api
-title: Nonreactive Noescaping Dependency Can Inline Into Consuming Scope.Expect
+last_updated: null
+source_file: nonreactive-noescaping-dependency-can-inline-into-consuming-scope.expect.md
 ---
+# Nonreactive Noescaping Dependency Can Inline Into Consuming Scope.Expect
 
 ## Input
 
@@ -53,6 +50,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

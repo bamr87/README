@@ -1,15 +1,13 @@
 ---
+title: Infer Nested Object Method.Expect
 category: misc
-last_updated: null
-source_file: infer-nested-object-method.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"'
 tags:
 - javascript
 - testing
-title: Infer Nested Object Method.Expect
+last_updated: null
+source_file: infer-nested-object-method.expect.md
 ---
+# Infer Nested Object Method.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{"testFn":{"kind":"Function","result":{"kind":"Function","result":"test"}}},"shouldInvokeFns":true}</div>

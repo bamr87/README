@@ -1,14 +1,12 @@
 ---
+title: Codegen Emit Imports Same Source.Expect
 category: misc
-last_updated: null
-source_file: codegen-emit-imports-same-source.expect.md
-summary: '```javascript
-
-  // @enableEmitFreeze @enableEmitInstrumentForget'
 tags:
 - javascript
-title: Codegen Emit Imports Same Source.Expect
+last_updated: null
+source_file: codegen-emit-imports-same-source.expect.md
 ---
+# Codegen Emit Imports Same Source.Expect
 
 ## Input
 
@@ -47,4 +45,3 @@ function useFoo(props) {
 }
 
 ```
-      

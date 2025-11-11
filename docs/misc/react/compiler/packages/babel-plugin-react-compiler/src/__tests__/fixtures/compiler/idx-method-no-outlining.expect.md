@@ -1,14 +1,12 @@
 ---
+title: Idx Method No Outlining.Expect
 category: misc
-last_updated: null
-source_file: idx-method-no-outlining.expect.md
-summary: '```javascript
-
-  // @customMacros:"idx.a"'
 tags:
 - javascript
-title: Idx Method No Outlining.Expect
+last_updated: null
+source_file: idx-method-no-outlining.expect.md
 ---
+# Idx Method No Outlining.Expect
 
 ## Input
 
@@ -93,4 +91,3 @@ function _temp(_) {
 }
 
 ```
-      

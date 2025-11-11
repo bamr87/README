@@ -1,16 +1,10 @@
 ---
+title: Code of Conduct
 category: api
-last_updated: null
-source_file: CODE_OF_CONDUCT.md
-summary: 'In the interest of fostering an open and welcoming environment, we as
-
-  contributors and maintainers pledge to make participation in our project and
-
-  our community a harassmentfree experience for everyon...'
 tags:
 - api
-- api
-title: Code of Conduct
+last_updated: null
+source_file: CODE_OF_CONDUCT.md
 ---
 # Code of Conduct
 

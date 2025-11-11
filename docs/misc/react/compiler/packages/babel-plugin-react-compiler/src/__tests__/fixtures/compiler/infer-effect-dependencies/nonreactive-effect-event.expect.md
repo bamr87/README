@@ -1,18 +1,12 @@
 ---
+title: Nonreactive Effect Event.Expect
 category: misc
-last_updated: null
-source_file: nonreactive-effect-event.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, useEffectEvent, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Nonreactive Effect Event.Expect
+last_updated: null
+source_file: nonreactive-effect-event.expect.md
 ---
+# Nonreactive Effect Event.Expect
 
 ## Input
 
@@ -59,6 +53,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

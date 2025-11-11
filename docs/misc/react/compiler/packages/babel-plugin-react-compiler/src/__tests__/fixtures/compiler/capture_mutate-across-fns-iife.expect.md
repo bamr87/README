@@ -1,13 +1,12 @@
 ---
+title: Capture Mutate Across Fns Iife.Expect
 category: misc
-last_updated: null
-source_file: capture_mutate-across-fns-iife.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  (function () {\n\
-  \    (function () {\n      z.b = 1;\n    })();\n  })();\n  return z;\n}"
 tags:
 - javascript
-title: Capture Mutate Across Fns Iife.Expect
+last_updated: null
+source_file: capture_mutate-across-fns-iife.expect.md
 ---
+# Capture Mutate Across Fns Iife.Expect
 
 ## Input
 
@@ -56,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"b":1}

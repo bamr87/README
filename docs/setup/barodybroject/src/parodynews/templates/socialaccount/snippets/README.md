@@ -1,18 +1,15 @@
 ---
+title: Social Account Snippets Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "<div class=\"socialloginsection\">\n    <h4>Quick Login</h4>\n    {% include\
-  \ \"socialaccount/snippets/providerlist.html\" %}\n</div>"
 tags:
 - python
 - javascript
 - docker
 - api
 - setup
-title: Social Account Snippets Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Snippets Directory
 
 ## Purpose
@@ -28,7 +25,7 @@ Contains reusable template snippets for social authentication UI components. The
 ### Social Login Button Snippet
 ```django
 <!-- snippets/login.html -->
-<a href="{% provider_login_url provider.id %}" 
+<a href="{% provider_login_url provider.id %}"
    class="btn btn-social btn-{{ provider.id }}">
     <i class="fab fa-{{ provider.id }}"></i>
     Sign in with {{ provider.name }}
@@ -64,7 +61,7 @@ Contains reusable template snippets for social authentication UI components. The
     <div class="social-providers">
         {% for provider in socialaccount_providers %}
             <div class="provider-button-wrapper">
-                <button type="button" 
+                <button type="button"
                         class="btn btn-outline-{{ provider.id }} btn-social"
                         onclick="window.location.href='{% provider_login_url provider.id %}'">
                     <i class="fab fa-{{ provider.id }}"></i>
@@ -73,7 +70,7 @@ Contains reusable template snippets for social authentication UI components. The
             </div>
         {% endfor %}
     </div>
-    
+
     <div class="provider-divider">
         <span>or</span>
     </div>
@@ -104,7 +101,7 @@ Contains reusable template snippets for social authentication UI components. The
             </li>
         </ul>
     </div>
-    
+
     <div class="signup-prompt">
         <p>Don't have an account?</p>
         <a href="{% url 'account_signup' %}" class="btn btn-link">
@@ -125,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.disabled = true;
         });
     });
-    
+
     // Track social login attempts
     document.querySelectorAll('[data-provider]').forEach(button => {
         button.addEventListener('click', function() {
@@ -161,22 +158,22 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 /* Provider-specific colors */
-.btn-google { 
-    background-color: #dc4e41; 
-    border-color: #dc4e41; 
-    color: white; 
+.btn-google {
+    background-color: #dc4e41;
+    border-color: #dc4e41;
+    color: white;
 }
 
-.btn-github { 
-    background-color: #333; 
-    border-color: #333; 
-    color: white; 
+.btn-github {
+    background-color: #333;
+    border-color: #333;
+    color: white;
 }
 
-.btn-facebook { 
-    background-color: #3b5998; 
-    border-color: #3b5998; 
-    color: white; 
+.btn-facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
 }
 
 .provider-divider {
@@ -204,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Container Configuration
 - **Runtime**: Django template rendering with social authentication context
-- **Dependencies**: 
+- **Dependencies**:
   - django-allauth template tags
   - FontAwesome icons for provider branding
   - Bootstrap CSS framework
@@ -213,12 +210,12 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Environment**: Social provider configurations and OAuth settings
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Main social authentication pages
   - User registration and login forms
   - Account connection management interfaces
   - Mobile and responsive authentication views
-- **Outgoing**: 
+- **Outgoing**:
   - OAuth provider authentication flows
   - User session creation and management
   - Analytics and tracking systems

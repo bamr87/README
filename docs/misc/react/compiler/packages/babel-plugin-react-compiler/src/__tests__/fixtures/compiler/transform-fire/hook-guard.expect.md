@@ -1,16 +1,12 @@
 ---
+title: Hook Guard.Expect
 category: misc
-last_updated: null
-source_file: hook-guard.expect.md
-summary: '```javascript
-
-  // @enableFire @enableEmitHookGuards
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Hook Guard.Expect
+last_updated: null
+source_file: hook-guard.expect.md
 ---
+# Hook Guard.Expect
 
 ## Input
 
@@ -80,6 +76,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

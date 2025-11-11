@@ -1,21 +1,13 @@
 ---
-author: Alex Johnson
+title: 2025 04 02 Decoding The Data Deluge
 category: user-guides
-description: Explore the serious world of data analysis in manufacturing with a humorous
-  touch. Learn how to decode complex business operations using enterprise systems.
-last_updated: null
-published_at: '2025-04-02'
-slug: decoding-the-data-deluge
-source_file: 2025-04-02-decoding-the-data-deluge.md
-summary: Imagine stepping into your new office and being engulfed by a tsunami of
-  data—spreadsheets as far as the eye can see, pivot tables plotting world domination,
-  and dashboards with more tabs than a hyper...
 tags:
 - kubernetes
 - user-guides
-title: 2025 04 02 Decoding The Data Deluge
+last_updated: null
+source_file: 2025-04-02-decoding-the-data-deluge.md
 ---
-
+# 2025 04 02 Decoding The Data Deluge
 
 **Decoding the Data Deluge: How Newbies Can Untangle Manufacturing Mysteries with Enterprise Analysis**
 

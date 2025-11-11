@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks 9718E30B856C.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-9718e30b856c.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks 9718E30B856C.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-9718e30b856c.expect.md
 ---
+# Error.Invalid Rules Of Hooks 9718E30B856C.Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.invalid-rules-of-hooks-9718e30b856c.ts:12:2
   13 | }
   14 |
 ```
-          
-      
+

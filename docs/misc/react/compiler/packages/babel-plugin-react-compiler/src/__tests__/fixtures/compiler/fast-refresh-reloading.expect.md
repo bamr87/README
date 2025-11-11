@@ -1,18 +1,12 @@
 ---
+title: Fast Refresh Reloading.Expect
 category: misc
-last_updated: null
-source_file: fast-refresh-reloading.expect.md
-summary: '```javascript
-
-  // @enableResetCacheOnSourceFileChanges
-
-  import {useMemo, useState} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Fast Refresh Reloading.Expect
+last_updated: null
+source_file: fast-refresh-reloading.expect.md
 ---
+# Fast Refresh Reloading.Expect
 
 ## Input
 
@@ -90,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":[0]}</div>
 <div>{"inputs":[0],"output":[0]}</div>

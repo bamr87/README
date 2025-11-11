@@ -1,14 +1,12 @@
 ---
+title: Error.Reserved Words.Expect
 category: misc
-last_updated: null
-source_file: error.reserved-words.expect.md
-summary: '```javascript
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
-title: Error.Reserved Words.Expect
+last_updated: null
+source_file: error.reserved-words.expect.md
 ---
+# Error.Reserved Words.Expect
 
 ## Input
 
@@ -48,5 +46,4 @@ error.reserved-words.ts:8:28
   10 |     };
   11 |   }
 ```
-          
-      
+

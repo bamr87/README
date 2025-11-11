@@ -1,16 +1,12 @@
 ---
+title: Bug Separate Memoization Due To Callback Capturing.Expect
 category: misc
-last_updated: null
-source_file: bug-separate-memoization-due-to-callback-capturing.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel:false
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Bug Separate Memoization Due To Callback Capturing.Expect
+last_updated: null
+source_file: bug-separate-memoization-due-to-callback-capturing.expect.md
 ---
+# Bug Separate Memoization Due To Callback Capturing.Expect
 
 ## Input
 
@@ -148,4 +144,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

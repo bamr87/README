@@ -1,13 +1,12 @@
 ---
+title: Infer Functions Hook With Jsx.Expect
 category: misc
-last_updated: null
-source_file: infer-functions-hook-with-jsx.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction useDiv(props) {\n\
-  \  return <div />;\n}"
 tags:
 - javascript
-title: Infer Functions Hook With Jsx.Expect
+last_updated: null
+source_file: infer-functions-hook-with-jsx.expect.md
 ---
+# Infer Functions Hook With Jsx.Expect
 
 ## Input
 
@@ -36,4 +35,3 @@ function useDiv(props) {
 }
 
 ```
-      

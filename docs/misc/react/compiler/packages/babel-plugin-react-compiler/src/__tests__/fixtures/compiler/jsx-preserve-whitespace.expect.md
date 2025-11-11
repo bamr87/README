@@ -1,14 +1,12 @@
 ---
+title: Jsx Preserve Whitespace.Expect
 category: misc
-last_updated: null
-source_file: jsx-preserve-whitespace.expect.md
-summary: '```javascript
-
-  import {StaticText1} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Preserve Whitespace.Expect
+last_updated: null
+source_file: jsx-preserve-whitespace.expect.md
 ---
+# Jsx Preserve Whitespace.Expect
 
 ## Input
 
@@ -88,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Before text<div>StaticText1</div>Middle text<div>StaticText1Inner before text<div>StaticText1</div>Inner middle text<div>StaticText1</div>Inner after text</div>After text</div>

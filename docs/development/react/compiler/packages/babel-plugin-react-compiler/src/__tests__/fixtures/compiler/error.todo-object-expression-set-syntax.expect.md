@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Object Expression Set Syntax.Expect
 category: development
-last_updated: null
-source_file: error.todo-object-expression-set-syntax.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let value;\n  const object\
-  \ = {\n    set value(v) {\n      value = v;\n    },\n  };\n  object.value = props.value;\n\
-  \  return <div>{value}</div>;\n}"
 tags:
 - javascript
 - development
-title: Error.Todo Object Expression Set Syntax.Expect
+last_updated: null
+source_file: error.todo-object-expression-set-syntax.expect.md
 ---
+# Error.Todo Object Expression Set Syntax.Expect
 
 ## Input
 
@@ -54,5 +52,4 @@ error.todo-object-expression-set-syntax.ts:4:4
   8 |   object.value = props.value;
   9 |   return <div>{value}</div>;
 ```
-          
-      
+

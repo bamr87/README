@@ -1,16 +1,12 @@
 ---
+title: Reactive Control Dependency Phi Setstate Type.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-phi-setState-type.expect.md
-summary: '```javascript
-
-  import invariant from ''invariant'';
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Reactive Control Dependency Phi Setstate Type.Expect
+last_updated: null
+source_file: reactive-control-dependency-phi-setState-type.expect.md
 ---
+# Reactive Control Dependency Phi Setstate Type.Expect
 
 ## Input
 
@@ -138,7 +134,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ok
 ok

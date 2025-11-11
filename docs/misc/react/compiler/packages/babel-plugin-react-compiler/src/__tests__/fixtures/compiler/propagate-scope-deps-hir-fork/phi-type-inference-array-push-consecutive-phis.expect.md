@@ -1,16 +1,12 @@
 ---
+title: Phi Type Inference Array Push Consecutive Phis.Expect
 category: misc
-last_updated: null
-source_file: phi-type-inference-array-push-consecutive-phis.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Phi Type Inference Array Push Consecutive Phis.Expect
+last_updated: null
+source_file: phi-type-inference-array-push-consecutive-phis.expect.md
 ---
+# Phi Type Inference Array Push Consecutive Phis.Expect
 
 ## Input
 
@@ -120,7 +116,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},[3.14,"[[ cyclic ref *1 ]]"]]
 [{},[42,"[[ cyclic ref *1 ]]"]]

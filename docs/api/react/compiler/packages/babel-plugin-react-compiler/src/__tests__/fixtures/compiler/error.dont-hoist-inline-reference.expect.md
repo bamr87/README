@@ -1,14 +1,13 @@
 ---
+title: Error.Dont Hoist Inline Reference.Expect
 category: api
-last_updated: null
-source_file: error.dont-hoist-inline-reference.expect.md
-summary: "```javascript\nimport {identity} from 'sharedruntime';\nfunction useInvalid()\
-  \ {\n  const x = identity(x);\n  return x;\n}"
 tags:
 - javascript
 - api
-title: Error.Dont Hoist Inline Reference.Expect
+last_updated: null
+source_file: error.dont-hoist-inline-reference.expect.md
 ---
+# Error.Dont Hoist Inline Reference.Expect
 
 ## Input
 
@@ -45,5 +44,4 @@ error.dont-hoist-inline-reference.ts:3:2
   5 | }
   6 |
 ```
-          
-      
+

@@ -1,16 +1,15 @@
 ---
+title: Pull Request Template
 category: user-guides
-last_updated: null
-source_file: PULL_REQUEST_TEMPLATE.md
-summary: "<!\n  Thanks for submitting a pull request!\n  We appreciate you spending\
-  \ the time to work on these changes. Please provide enough information so that others\
-  \ can review your pull request. The three fiel..."
 tags:
 - javascript
 - testing
 - user-guides
-title: Pull Request Template
+last_updated: null
+source_file: PULL_REQUEST_TEMPLATE.md
 ---
+# Pull Request Template
+
 <!--
   Thanks for submitting a pull request!
   We appreciate you spending the time to work on these changes. Please provide enough information so that others can review your pull request. The three fields below are mandatory.

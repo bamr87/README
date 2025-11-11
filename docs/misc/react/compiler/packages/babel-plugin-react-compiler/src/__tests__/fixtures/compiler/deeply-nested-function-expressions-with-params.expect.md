@@ -1,14 +1,12 @@
 ---
+title: Deeply Nested Function Expressions With Params.Expect
 category: misc
-last_updated: null
-source_file: deeply-nested-function-expressions-with-params.expect.md
-summary: "```javascript\nfunction Foo() {\n  return (function t() {\n    let x = {};\n\
-  \    let y = {};\n    return function a(x = () => {}) {\n      return (function\
-  \ b(y = []) {\n        return [x, y];\n      })();\n    ..."
 tags:
 - javascript
-title: Deeply Nested Function Expressions With Params.Expect
+last_updated: null
+source_file: deeply-nested-function-expressions-with-params.expect.md
 ---
+# Deeply Nested Function Expressions With Params.Expect
 
 ## Input
 
@@ -61,4 +59,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

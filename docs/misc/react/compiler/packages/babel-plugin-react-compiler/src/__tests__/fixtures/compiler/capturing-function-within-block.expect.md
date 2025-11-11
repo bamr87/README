@@ -1,13 +1,12 @@
 ---
+title: Capturing Function Within Block.Expect
 category: misc
-last_updated: null
-source_file: capturing-function-within-block.expect.md
-summary: "```javascript\nfunction component(a) {\n  let z = {a};\n  let x;\n  {\n\
-  \    x = function () {\n      console.log(z);\n    };\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Capturing Function Within Block.Expect
+last_updated: null
+source_file: capturing-function-within-block.expect.md
 ---
+# Capturing Function Within Block.Expect
 
 ## Input
 
@@ -68,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

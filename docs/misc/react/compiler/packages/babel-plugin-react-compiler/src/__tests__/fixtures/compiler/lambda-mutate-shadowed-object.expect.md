@@ -1,14 +1,12 @@
 ---
+title: Lambda Mutate Shadowed Object.Expect
 category: misc
-last_updated: null
-source_file: lambda-mutate-shadowed-object.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = {};\n  {\n    const x\
-  \ = [];\n    const fn = function () {\n      mutate(x);\n    };\n    fn();\n  }\n\
-  \  return x; // should return {}\n}"
 tags:
 - javascript
-title: Lambda Mutate Shadowed Object.Expect
+last_updated: null
+source_file: lambda-mutate-shadowed-object.expect.md
 ---
+# Lambda Mutate Shadowed Object.Expect
 
 ## Input
 
@@ -52,4 +50,3 @@ function Component() {
 }
 
 ```
-      

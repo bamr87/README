@@ -1,14 +1,12 @@
 ---
+title: Use Memo Noemit.Expect
 category: misc
-last_updated: null
-source_file: use-memo-noemit.expect.md
-summary: '```javascript
-
-  // @noEmit'
 tags:
 - javascript
-title: Use Memo Noemit.Expect
+last_updated: null
+source_file: use-memo-noemit.expect.md
 ---
+# Use Memo Noemit.Expect
 
 ## Input
 
@@ -43,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button>Click me!</button>

@@ -1,16 +1,12 @@
 ---
+title: Error.Usememo Property Call Chained Object.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-property-call-chained-object.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Error.Usememo Property Call Chained Object.Expect
+last_updated: null
+source_file: error.useMemo-property-call-chained-object.expect.md
 ---
+# Error.Usememo Property Call Chained Object.Expect
 
 ## Input
 
@@ -54,5 +50,4 @@ error.useMemo-property-call-chained-object.ts:5:17
   10 | }
   11 |
 ```
-          
-      
+

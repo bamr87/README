@@ -1,13 +1,12 @@
 ---
+title: Reactivity Via Readonly Alias Of Mutable Value.Expect
 category: misc
-last_updated: null
-source_file: reactivity-via-readonly-alias-of-mutable-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  const y =\
-  \ x;"
 tags:
 - javascript
-title: Reactivity Via Readonly Alias Of Mutable Value.Expect
+last_updated: null
+source_file: reactivity-via-readonly-alias-of-mutable-value.expect.md
 ---
+# Reactivity Via Readonly Alias Of Mutable Value.Expect
 
 ## Input
 
@@ -98,7 +97,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

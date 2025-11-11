@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Use Ref Added To Dep Without Type Info.Expect
 category: api
-last_updated: null
-source_file: error.invalid-use-ref-added-to-dep-without-type-info.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Foo({a}) {\n\
-  \  const ref = useRef();\n  // type information is lost here as we don't track types\
-  \ of fields\n  const val = {ref};\n  // without type ..."
 tags:
 - javascript
 - api
-title: Error.Invalid Use Ref Added To Dep Without Type Info.Expect
+last_updated: null
+source_file: error.invalid-use-ref-added-to-dep-without-type-info.expect.md
 ---
+# Error.Invalid Use Ref Added To Dep Without Type Info.Expect
 
 ## Input
 
@@ -61,5 +59,4 @@ error.invalid-use-ref-added-to-dep-without-type-info.ts:12:28
   13 | }
   14 |
 ```
-          
-      
+

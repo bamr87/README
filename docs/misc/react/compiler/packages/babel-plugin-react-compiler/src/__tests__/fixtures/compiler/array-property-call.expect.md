@@ -1,13 +1,12 @@
 ---
+title: Array Property Call.Expect
 category: misc
-last_updated: null
-source_file: array-property-call.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const a = [props.a, props.b,\
-  \ 'hello'];\n  const x = a.push(42);\n  const y = a.at(props.c);"
 tags:
 - javascript
-title: Array Property Call.Expect
+last_updated: null
+source_file: array-property-call.expect.md
 ---
+# Array Property Call.Expect
 
 ## Input
 
@@ -78,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":[1,2,"hello",42],"x":4,"y":1}

@@ -1,14 +1,12 @@
 ---
+title: Try Catch Within Mutable Range.Expect
 category: misc
-last_updated: null
-source_file: try-catch-within-mutable-range.expect.md
-summary: '```javascript
-
-  const {throwErrorWithMessage, shallowCopy} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Within Mutable Range.Expect
+last_updated: null
+source_file: try-catch-within-mutable-range.expect.md
 ---
+# Try Catch Within Mutable Range.Expect
 
 ## Input
 
@@ -79,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},null]

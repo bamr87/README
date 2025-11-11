@@ -1,14 +1,12 @@
 ---
+title: Destructure In Branch Ssa.Expect
 category: misc
-last_updated: null
-source_file: destructure-in-branch-ssa.expect.md
-summary: "```javascript\nfunction useFoo(props: {\n  x?: string;\n  y?: string;\n\
-  \  z?: string;\n  doDestructure: boolean;\n}) {\n  let x = null;\n  let y = null;\n\
-  \  let z = null;\n  const myList = [];\n  if (props.doDestr..."
 tags:
 - javascript
-title: Destructure In Branch Ssa.Expect
+last_updated: null
+source_file: destructure-in-branch-ssa.expect.md
 ---
+# Destructure In Branch Ssa.Expect
 
 ## Input
 
@@ -90,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":"hello","y":"world","myList":[null]}

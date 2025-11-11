@@ -1,12 +1,12 @@
 ---
+title: Alias Computed Load.Expect
 category: misc
-last_updated: null
-source_file: alias-computed-load.expect.md
-summary: "```javascript\nfunction component(a) {\n  let x = {a};\n  let y = {};"
 tags:
 - javascript
-title: Alias Computed Load.Expect
+last_updated: null
+source_file: alias-computed-load.expect.md
 ---
+# Alias Computed Load.Expect
 
 ## Input
 
@@ -44,4 +44,3 @@ function component(a) {
 }
 
 ```
-      

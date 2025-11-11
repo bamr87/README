@@ -1,14 +1,12 @@
 ---
+title: Type Inference Array From.Expect
 category: misc
-last_updated: null
-source_file: type-inference-array-from.expect.md
-summary: '```javascript
-
-  import {useIdentity, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Inference Array From.Expect
+last_updated: null
+source_file: type-inference-array-from.expect.md
 ---
+# Type Inference Array From.Expect
 
 ## Input
 
@@ -142,6 +140,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[1],"output":[1]}</div><div>{"inputs":[2],"output":[2]}</div>

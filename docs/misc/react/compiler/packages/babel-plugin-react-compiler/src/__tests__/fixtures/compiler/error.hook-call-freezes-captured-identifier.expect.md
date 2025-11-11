@@ -1,16 +1,12 @@
 ---
+title: Error.Hook Call Freezes Captured Identifier.Expect
 category: misc
-last_updated: null
-source_file: error.hook-call-freezes-captured-identifier.expect.md
-summary: '```javascript
-
-  // @enableTransitivelyFreezeFunctionExpressions
-
-  import {setPropertyByKey, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Hook Call Freezes Captured Identifier.Expect
+last_updated: null
+source_file: error.hook-call-freezes-captured-identifier.expect.md
 ---
+# Error.Hook Call Freezes Captured Identifier.Expect
 
 ## Input
 
@@ -57,5 +53,4 @@ error.hook-call-freezes-captured-identifier.ts:13:2
   15 | }
   16 |
 ```
-          
-      
+

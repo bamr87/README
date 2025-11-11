@@ -1,13 +1,12 @@
 ---
+title: Await.Expect
 category: misc
-last_updated: null
-source_file: await.expect.md
-summary: "```javascript\nasync function Component(props) {\n  const user = await load(props.id);\n\
-  \  return <div>{user.name}</div>;\n}"
 tags:
 - javascript
-title: Await.Expect
+last_updated: null
+source_file: await.expect.md
 ---
+# Await.Expect
 
 ## Input
 
@@ -46,4 +45,3 @@ async function Component(props) {
 }
 
 ```
-      

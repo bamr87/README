@@ -1,19 +1,14 @@
 ---
+title: Reanimated Shared Value Writes.Expect
 category: api
-last_updated: null
-source_file: reanimated-shared-value-writes.expect.md
-summary: '```javascript
-
-  // @enableCustomTypeDefinitionForReanimated
-
-  import {useSharedValue} from ''reactnativereanimated'';'
 tags:
 - javascript
 - api
 - testing
-- api
-title: Reanimated Shared Value Writes.Expect
+last_updated: null
+source_file: reanimated-shared-value-writes.expect.md
 ---
+# Reanimated Shared Value Writes.Expect
 
 ## Input
 
@@ -71,4 +66,3 @@ function SomeComponent() {
 }
 
 ```
-      

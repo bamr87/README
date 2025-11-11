@@ -1,14 +1,12 @@
 ---
+title: Fbs Params.Expect
 category: misc
-last_updated: null
-source_file: fbs-params.expect.md
-summary: '```javascript
-
-  import {fbs} from ''fbt'';'
 tags:
 - javascript
-title: Fbs Params.Expect
+last_updated: null
+source_file: fbs-params.expect.md
 ---
+# Fbs Params.Expect
 
 ## Input
 
@@ -70,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div title="Hello Sathya">Hover me</div>

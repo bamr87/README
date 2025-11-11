@@ -1,13 +1,12 @@
 ---
+title: For Of Break.Expect
 category: misc
-last_updated: null
-source_file: for-of-break.expect.md
-summary: "```javascript\nfunction Component() {\n  const x = [];\n  for (const item\
-  \ of [1, 2]) {\n    break;\n  }\n  return x;\n}"
 tags:
 - javascript
-title: For Of Break.Expect
+last_updated: null
+source_file: for-of-break.expect.md
 ---
+# For Of Break.Expect
 
 ## Input
 
@@ -55,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

@@ -1,16 +1,12 @@
 ---
+title: For Of Nonmutating Loop Local Collection.Expect
 category: misc
-last_updated: null
-source_file: for-of-nonmutating-loop-local-collection.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: For Of Nonmutating Loop Local Collection.Expect
+last_updated: null
+source_file: for-of-nonmutating-loop-local-collection.expect.md
 ---
+# For Of Nonmutating Loop Local Collection.Expect
 
 ## Input
 
@@ -144,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[1],"output":[1]}</div><div>{"inputs":[[1],0],"output":[0,1]}</div>
 <div>{"inputs":[1],"output":[1]}</div><div>{"inputs":[[1],1],"output":[1,1]}</div>

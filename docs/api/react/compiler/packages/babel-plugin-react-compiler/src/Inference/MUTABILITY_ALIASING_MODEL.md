@@ -1,14 +1,11 @@
 ---
+title: The Mutability & Aliasing Model
 category: api
-last_updated: null
-source_file: MUTABILITY_ALIASING_MODEL.md
-summary: This document describes the new (as of June 2025) mutability and aliasing
-  model powering React Compiler. The mutability and aliasing system is a conceptual
-  subcomponent whose primary role is to determ...
 tags:
 - javascript
 - api
-title: The Mutability & Aliasing Model
+last_updated: null
+source_file: MUTABILITY_ALIASING_MODEL.md
 ---
 # The Mutability & Aliasing Model
 
@@ -409,7 +406,7 @@ Mutate z
 Mutate x (mutation is ok)
 ```
 
-### Freeze Freezes The Reference 
+### Freeze Freezes The Reference
 
 Although freeze doesn't freeze the value, it does affect the reference. The reference cannot be used to mutate.
 
@@ -500,7 +497,7 @@ Alias c <- a
 
 ### CreateFrom > Assign/Alias
 
-Intuition: 
+Intuition:
 
 ```
 CreateFrom b <- a
@@ -543,7 +540,7 @@ Capture then CreatFrom is equivalent to Alias: we have to assume that the result
 ```js
 const b = [a]; // capture
 const c = b[0]; // createfrom
-mutate(c); // this clearly can mutate a, so the result must be one of Assign/Alias/CreateFrom 
+mutate(c); // this clearly can mutate a, so the result must be one of Assign/Alias/CreateFrom
 ```
 
 We use Alias as the return type because the mutability kind of the result is not derived from the source value (there's a fresh object in between due to the capture), so the full set of effects in practice would be a Create+Alias.

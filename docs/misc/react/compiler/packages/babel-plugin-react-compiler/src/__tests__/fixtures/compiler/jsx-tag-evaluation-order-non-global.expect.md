@@ -1,14 +1,12 @@
 ---
+title: Jsx Tag Evaluation Order Non Global.Expect
 category: misc
-last_updated: null
-source_file: jsx-tag-evaluation-order-non-global.expect.md
-summary: '```javascript
-
-  import {StaticText1, StaticText2} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Tag Evaluation Order Non Global.Expect
+last_updated: null
+source_file: jsx-tag-evaluation-order-non-global.expect.md
 ---
+# Jsx Tag Evaluation Order Non Global.Expect
 
 ## Input
 
@@ -116,6 +114,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>StaticText1<div>StaticText2</div></div>

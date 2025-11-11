@@ -1,12 +1,12 @@
 ---
+title: Ssa Objectexpression Phi.Expect
 category: misc
-last_updated: null
-source_file: ssa-objectexpression-phi.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  let y = 2;"
 tags:
 - javascript
-title: Ssa Objectexpression Phi.Expect
+last_updated: null
+source_file: ssa-objectexpression-phi.expect.md
 ---
+# Ssa Objectexpression Phi.Expect
 
 ## Input
 
@@ -57,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":1,"y":3}

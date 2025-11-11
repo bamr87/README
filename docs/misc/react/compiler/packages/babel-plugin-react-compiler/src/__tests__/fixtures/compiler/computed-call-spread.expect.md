@@ -1,13 +1,12 @@
 ---
+title: Computed Call Spread.Expect
 category: misc
-last_updated: null
-source_file: computed-call-spread.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = fooprops.method;\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Computed Call Spread.Expect
+last_updated: null
+source_file: computed-call-spread.expect.md
 ---
+# Computed Call Spread.Expect
 
 ## Input
 
@@ -40,4 +39,3 @@ function Component(props) {
 }
 
 ```
-      

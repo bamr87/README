@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Not Call.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-not-call.expect.md
-summary: '```javascript
-
-  // @enableFire
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Not Call.Expect
+last_updated: null
+source_file: error.invalid-not-call.expect.md
 ---
+# Error.Invalid Not Call.Expect
 
 ## Input
 
@@ -50,5 +46,4 @@ error.invalid-not-call.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

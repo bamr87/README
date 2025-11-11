@@ -1,13 +1,12 @@
 ---
+title: Template Literal.Expect
 category: misc
-last_updated: null
-source_file: template-literal.expect.md
-summary: "``javascript\nfunction componentA(props) {\n  let t = hello ${props.a},\
-  \ ${props.b}!;\n  t += `;\n  return t;\n}"
 tags:
 - javascript
-title: Template Literal.Expect
+last_updated: null
+source_file: template-literal.expect.md
 ---
+# Template Literal.Expect
 
 ## Input
 
@@ -40,4 +39,3 @@ function componentB(props) {
 }
 
 ```
-      

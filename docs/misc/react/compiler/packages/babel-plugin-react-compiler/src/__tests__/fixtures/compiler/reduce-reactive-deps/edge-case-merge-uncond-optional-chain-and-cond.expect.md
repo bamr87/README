@@ -1,14 +1,12 @@
 ---
+title: Edge Case Merge Uncond Optional Chain And Cond.Expect
 category: misc
-last_updated: null
-source_file: edge-case-merge-uncond-optional-chain-and-cond.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Edge Case Merge Uncond Optional Chain And Cond.Expect
+last_updated: null
+source_file: edge-case-merge-uncond-optional-chain-and-cond.expect.md
 ---
+# Edge Case Merge Uncond Optional Chain And Cond.Expect
 
 ## Input
 
@@ -96,7 +94,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'title_text') ]]

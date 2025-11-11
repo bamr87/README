@@ -1,16 +1,12 @@
 ---
+title: Usecallback Set Ref Nested Property Preserve Memoization.Expect
 category: misc
-last_updated: null
-source_file: useCallback-set-ref-nested-property-preserve-memoization.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees
-
-  import {useCallback, useRef} from ''react'';'
 tags:
 - javascript
-title: Usecallback Set Ref Nested Property Preserve Memoization.Expect
+last_updated: null
+source_file: useCallback-set-ref-nested-property-preserve-memoization.expect.md
 ---
+# Usecallback Set Ref Nested Property Preserve Memoization.Expect
 
 ## Input
 
@@ -79,6 +75,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input>

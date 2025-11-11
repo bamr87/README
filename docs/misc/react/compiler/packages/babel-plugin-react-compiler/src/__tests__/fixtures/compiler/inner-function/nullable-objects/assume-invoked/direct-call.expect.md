@@ -1,16 +1,12 @@
 ---
+title: Direct Call.Expect
 category: misc
-last_updated: null
-source_file: direct-call.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Direct Call.Expect
+last_updated: null
+source_file: direct-call.expect.md
 ---
+# Direct Call.Expect
 
 ## Input
 
@@ -81,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]"]
 ["[[ function params=0 ]]"]

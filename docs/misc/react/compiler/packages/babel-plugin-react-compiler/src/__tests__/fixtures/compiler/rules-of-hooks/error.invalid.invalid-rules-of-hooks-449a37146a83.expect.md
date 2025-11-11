@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid.Invalid Rules Of Hooks 449A37146A83.Expect
 category: misc
-last_updated: null
-source_file: error.invalid.invalid-rules-of-hooks-449a37146a83.expect.md
-summary: "```javascript\n// Invalid because it's a common misunderstanding.\n// We\
-  \ could make it valid but the runtime error could be confusing.\nfunction createComponent()\
-  \ {\n  return function ComponentWithHookIns..."
 tags:
 - javascript
-title: Error.Invalid.Invalid Rules Of Hooks 449A37146A83.Expect
+last_updated: null
+source_file: error.invalid.invalid-rules-of-hooks-449a37146a83.expect.md
 ---
+# Error.Invalid.Invalid Rules Of Hooks 449A37146A83.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid.invalid-rules-of-hooks-449a37146a83.ts:6:6
   8 |   };
   9 | }
 ```
-          
-      
+

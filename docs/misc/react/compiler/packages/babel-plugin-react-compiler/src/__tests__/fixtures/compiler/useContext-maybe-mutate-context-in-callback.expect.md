@@ -1,18 +1,12 @@
 ---
+title: Usecontext Maybe Mutate Context In Callback.Expect
 category: misc
-last_updated: null
-source_file: useContext-maybe-mutate-context-in-callback.expect.md
-summary: '```javascript
-
-  import  as React from ''react'';
-
-  import {useContext} from ''react'';
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecontext Maybe Mutate Context In Callback.Expect
+last_updated: null
+source_file: useContext-maybe-mutate-context-in-callback.expect.md
 ---
+# Usecontext Maybe Mutate Context In Callback.Expect
 
 ## Input
 
@@ -84,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>Hello</div></div>

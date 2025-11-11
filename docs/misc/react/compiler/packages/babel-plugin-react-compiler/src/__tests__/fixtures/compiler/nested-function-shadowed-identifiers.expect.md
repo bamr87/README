@@ -1,12 +1,12 @@
 ---
+title: Nested Function Shadowed Identifiers.Expect
 category: misc
-last_updated: null
-source_file: nested-function-shadowed-identifiers.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [x, setX] = useState(null);"
 tags:
 - javascript
-title: Nested Function Shadowed Identifiers.Expect
+last_updated: null
+source_file: nested-function-shadowed-identifiers.expect.md
 ---
+# Nested Function Shadowed Identifiers.Expect
 
 ## Input
 
@@ -68,4 +68,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

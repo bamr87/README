@@ -1,15 +1,14 @@
 ---
+title: src/ Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: No summary available
 tags:
 - python
 - docker
 - aws
 - azure
 - database
-title: src/ Directory
+last_updated: null
+source_file: README.md
 ---
 # src/ Directory
 

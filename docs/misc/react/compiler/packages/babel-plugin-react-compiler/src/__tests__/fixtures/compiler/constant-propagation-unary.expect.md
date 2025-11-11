@@ -1,14 +1,12 @@
 ---
+title: Constant Propagation Unary.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-unary.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Propagation Unary.Expect
+last_updated: null
+source_file: constant-propagation-unary.expect.md
 ---
+# Constant Propagation Unary.Expect
 
 ## Input
 
@@ -92,6 +90,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{"_b":"baz","b0":false,"n0":true,"n1":false,"n2":false,"n3":false,"s0":true,"s1":false,"s2":false,"u":true,"n":true}}</div>

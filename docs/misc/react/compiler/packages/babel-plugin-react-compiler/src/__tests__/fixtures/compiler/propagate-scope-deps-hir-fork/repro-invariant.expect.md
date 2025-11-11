@@ -1,16 +1,12 @@
 ---
+title: Repro Invariant.Expect
 category: misc
-last_updated: null
-source_file: repro-invariant.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Invariant.Expect
+last_updated: null
+source_file: repro-invariant.expect.md
 ---
+# Repro Invariant.Expect
 
 ## Input
 
@@ -69,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"foo":{"kind":"Function"},"bar":4,"shouldInvokeFns":true}</div>

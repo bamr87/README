@@ -1,13 +1,12 @@
 ---
+title: Ssa While.Expect
 category: misc
-last_updated: null
-source_file: ssa-while.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  while (x < 10) {\n    x\
-  \ = x + 1;\n  }"
 tags:
 - javascript
-title: Ssa While.Expect
+last_updated: null
+source_file: ssa-while.expect.md
 ---
+# Ssa While.Expect
 
 ## Input
 
@@ -47,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 10

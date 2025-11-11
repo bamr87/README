@@ -1,21 +1,13 @@
 ---
+title: Lambda Capture Returned Alias.Expect
 category: api
-last_updated: null
-source_file: lambda-capture-returned-alias.expect.md
-summary: '``javascript
-
-  // Here, element should not be memoized independently of aliasedElement, since
-
-  // it is captured by fn.
-
-  // AnalyzeFunctions currently does not find captured objects.
-
-  //   mutated context ...'
 tags:
 - javascript
 - api
-title: Lambda Capture Returned Alias.Expect
+last_updated: null
+source_file: lambda-capture-returned-alias.expect.md
 ---
+# Lambda Capture Returned Alias.Expect
 
 ## Input
 
@@ -82,4 +74,3 @@ function CaptureNotMutate(props) {
 }
 
 ```
-      

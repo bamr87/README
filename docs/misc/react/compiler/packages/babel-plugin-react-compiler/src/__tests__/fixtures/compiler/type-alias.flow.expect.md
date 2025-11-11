@@ -1,13 +1,12 @@
 ---
+title: Type Alias.Flow.Expect
 category: misc
-last_updated: null
-source_file: type-alias.flow.expect.md
-summary: "```javascript\n// @flow\nfunction Component(props) {\n  type User = {name:\
-  \ string};\n  const user: User = {name: props.name};\n  return user;\n}"
 tags:
 - javascript
-title: Type Alias.Flow.Expect
+last_updated: null
+source_file: type-alias.flow.expect.md
 ---
+# Type Alias.Flow.Expect
 
 ## Input
 
@@ -50,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"name":"Mofei"}

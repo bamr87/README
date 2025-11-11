@@ -1,16 +1,12 @@
 ---
+title: Object Shorthand Method Nested.Expect
 category: misc
-last_updated: null
-source_file: object-shorthand-method-nested.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';
-
-  import {createHookWrapper} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Shorthand Method Nested.Expect
+last_updated: null
+source_file: object-shorthand-method-nested.expect.md
 ---
+# Object Shorthand Method Nested.Expect
 
 ## Input
 
@@ -80,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getX":{"kind":"Function","result":{"a":[],"getY":{"kind":"Function","result":0},"state":false}}},"shouldInvokeFns":true}</div>

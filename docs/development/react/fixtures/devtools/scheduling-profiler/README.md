@@ -1,14 +1,12 @@
 ---
+title: Test fixture for `packages/react-devtools-scheduling-profiler`
 category: development
-last_updated: null
-source_file: README.md
-summary: "1. First, run the fixture:\n```sh\n In the root directory\n Download the\
-  \ latest experimental React build\nscripts/release/downloadexperimentalbuild.js"
 tags:
 - javascript
 - testing
 - development
-title: Test fixture for `packages/react-devtools-scheduling-profiler`
+last_updated: null
+source_file: README.md
 ---
 # Test fixture for `packages/react-devtools-scheduling-profiler`
 

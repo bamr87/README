@@ -1,13 +1,12 @@
 ---
+title: Emit Freeze Nonconflicting Global Reference.Expect
 category: misc
-last_updated: null
-source_file: emit-freeze-nonconflicting-global-reference.expect.md
-summary: "```javascript\n// @enableEmitFreeze @instrumentForget\nfunction useFoo(props)\
-  \ {\n  return foo(props.x, DEV);\n}"
 tags:
 - javascript
-title: Emit Freeze Nonconflicting Global Reference.Expect
+last_updated: null
+source_file: emit-freeze-nonconflicting-global-reference.expect.md
 ---
+# Emit Freeze Nonconflicting Global Reference.Expect
 
 ## Input
 
@@ -38,6 +37,6 @@ function useFoo(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -1,18 +1,12 @@
 ---
+title: Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
 category: misc
-last_updated: null
-source_file: dont-memoize-primitive-function-call-non-escaping-useMemo.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer" @enablePreserveExistingMemoizationGuarantees @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, Valid...'
 tags:
 - javascript
-title: Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
+last_updated: null
+source_file: dont-memoize-primitive-function-call-non-escaping-useMemo.expect.md
 ---
+# Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
 
 ## Input
 
@@ -87,6 +81,6 @@ export const TODO_FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

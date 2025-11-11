@@ -1,16 +1,12 @@
 ---
+title: Type Provider Store Capture Namespace Import.Expect
 category: misc
-last_updated: null
-source_file: type-provider-store-capture-namespace-import.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';
-
-  import  as SharedRuntime from ''sharedruntime'';'
 tags:
 - javascript
-title: Type Provider Store Capture Namespace Import.Expect
+last_updated: null
+source_file: type-provider-store-capture-namespace-import.expect.md
 ---
+# Type Provider Store Capture Namespace Import.Expect
 
 ## Input
 
@@ -179,7 +175,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":{"a":0}}</div><div>{"inputs":[0],"output":{"b":0}}</div><div>{"inputs":[0,0],"output":[{"a":0},{"b":0}]}</div>
 <div>{"inputs":[1],"output":{"a":1}}</div><div>{"inputs":[0],"output":{"b":0}}</div><div>{"inputs":[1,0],"output":[{"a":1},{"b":0}]}</div>

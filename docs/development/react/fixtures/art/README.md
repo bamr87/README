@@ -1,11 +1,10 @@
 ---
+title: VectorWidget example
 category: development
-last_updated: null
-source_file: README.md
-summary: 'To try this example, run:'
 tags:
 - development
-title: VectorWidget example
+last_updated: null
+source_file: README.md
 ---
 # VectorWidget example
 

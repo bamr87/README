@@ -1,16 +1,12 @@
 ---
+title: Error.Invalid Jsx Captures Context Variable.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-jsx-captures-context-variable.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Invalid Jsx Captures Context Variable.Expect
+last_updated: null
+source_file: error.invalid-jsx-captures-context-variable.expect.md
 ---
+# Error.Invalid Jsx Captures Context Variable.Expect
 
 ## Input
 
@@ -78,5 +74,4 @@ error.invalid-jsx-captures-context-variable.ts:22:2
   24 |     <Stringify
   25 |       key={i}
 ```
-          
-      
+

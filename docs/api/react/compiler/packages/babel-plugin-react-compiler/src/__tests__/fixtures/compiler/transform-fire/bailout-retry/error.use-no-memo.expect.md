@@ -1,17 +1,13 @@
 ---
+title: Error.Use No Memo.Expect
 category: api
-last_updated: null
-source_file: error.use-no-memo.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Use No Memo.Expect
+last_updated: null
+source_file: error.use-no-memo.expect.md
 ---
+# Error.Use No Memo.Expect
 
 ## Input
 
@@ -59,5 +55,4 @@ error.use-no-memo.ts:15:4
   17 |     fire(bar());
   18 |   });
 ```
-          
-      
+

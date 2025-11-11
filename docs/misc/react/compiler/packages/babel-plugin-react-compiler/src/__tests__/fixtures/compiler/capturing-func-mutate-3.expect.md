@@ -1,13 +1,12 @@
 ---
+title: Capturing Func Mutate 3.Expect
 category: misc
-last_updated: null
-source_file: capturing-func-mutate-3.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  let y = {b};\n  let z = {a};\n\
-  \  let x = function () {\n    z.a = 2;\n    y.b;\n  };\n  return z;\n}"
 tags:
 - javascript
-title: Capturing Func Mutate 3.Expect
+last_updated: null
+source_file: capturing-func-mutate-3.expect.md
 ---
+# Capturing Func Mutate 3.Expect
 
 ## Input
 
@@ -55,4 +54,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,17 +1,15 @@
 ---
+title: scripts Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Run content management test script\npython src/parodynews/scripts/managecontenttest.py"
 tags:
 - python
 - docker
 - api
 - database
 - testing
-title: scripts Directory
+last_updated: null
+source_file: README.md
 ---
-
 # scripts Directory
 
 ## Purpose

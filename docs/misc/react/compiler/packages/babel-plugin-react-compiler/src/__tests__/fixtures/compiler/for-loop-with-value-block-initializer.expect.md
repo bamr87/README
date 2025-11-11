@@ -1,14 +1,12 @@
 ---
+title: For Loop With Value Block Initializer.Expect
 category: misc
-last_updated: null
-source_file: for-loop-with-value-block-initializer.expect.md
-summary: "```javascript\nconst TOTAL = 10;\nfunction Component(props) {\n  const items\
-  \ = [];\n  for (let i = props.start ?? 0; i < props.items.length; i++) {\n    const\
-  \ item = props.items[i];\n    items.push(<div key..."
 tags:
 - javascript
-title: For Loop With Value Block Initializer.Expect
+last_updated: null
+source_file: for-loop-with-value-block-initializer.expect.md
 ---
+# For Loop With Value Block Initializer.Expect
 
 ## Input
 
@@ -142,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>one</div></div>
 <div></div>

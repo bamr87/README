@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Object Expression Member Expr Call.Expect
 category: development
-last_updated: null
-source_file: error.todo-object-expression-member-expr-call.expect.md
-summary: '```javascript
-
-  import {identity, mutate, mutateAndReturn} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Error.Todo Object Expression Member Expr Call.Expect
+last_updated: null
+source_file: error.todo-object-expression-member-expr-call.expect.md
 ---
+# Error.Todo Object Expression Member Expr Call.Expect
 
 ## Input
 
@@ -50,5 +48,4 @@ error.todo-object-expression-member-expr-call.ts:7:5
    9 |   mutate(key);
   10 |   return context;
 ```
-          
-      
+

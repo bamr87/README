@@ -1,16 +1,12 @@
 ---
+title: Bailout Validate Prop Write.Expect
 category: misc
-last_updated: null
-source_file: bailout-validate-prop-write.expect.md
-summary: '```javascript
-
-  // @enableFire @panicThreshold:"none"
-
-  import {fire} from ''react'';'
 tags:
 - javascript
-title: Bailout Validate Prop Write.Expect
+last_updated: null
+source_file: bailout-validate-prop-write.expect.md
 ---
+# Bailout Validate Prop Write.Expect
 
 ## Input
 
@@ -50,6 +46,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

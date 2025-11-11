@@ -1,14 +1,12 @@
 ---
+title: Sequence Expression.Expect
 category: misc
-last_updated: null
-source_file: sequence-expression.expect.md
-summary: "```javascript\nfunction sequence(props) {\n  let x = (null, Math.max(1,\
-  \ 2), foo());\n  while ((foo(), true)) {\n    x = (foo(), 2);\n  }\n  return x;\n\
-  }"
 tags:
 - javascript
-title: Sequence Expression.Expect
+last_updated: null
+source_file: sequence-expression.expect.md
 ---
+# Sequence Expression.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ function sequence(props) {
 function foo() {}
 
 ```
-      

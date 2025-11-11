@@ -1,14 +1,12 @@
 ---
+title: Array From Arg1 Captures Arg0.Expect
 category: misc
-last_updated: null
-source_file: array-from-arg1-captures-arg0.expect.md
-summary: '```javascript
-
-  import {useIdentity, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Array From Arg1 Captures Arg0.Expect
+last_updated: null
+source_file: array-from-arg1-captures-arg0.expect.md
 ---
+# Array From Arg1 Captures Arg0.Expect
 
 ## Input
 
@@ -122,7 +120,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":{"value":5,"id":2}}</div>
 <div>{"children":{"value":6,"id":2}}</div>

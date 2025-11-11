@@ -1,13 +1,12 @@
 ---
+title: Destructure String Literal Invalid Identifier Property Key.Expect
 category: misc
-last_updated: null
-source_file: destructure-string-literal-invalid-identifier-property-key.expect.md
-summary: "```javascript\nfunction foo() {\n  const {'datafoobar': t} = {'datafoobar':\
-  \ 1};\n  return t;\n}"
 tags:
 - javascript
-title: Destructure String Literal Invalid Identifier Property Key.Expect
+last_updated: null
+source_file: destructure-string-literal-invalid-identifier-property-key.expect.md
 ---
+# Destructure String Literal Invalid Identifier Property Key.Expect
 
 ## Input
 
@@ -49,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

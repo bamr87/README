@@ -1,14 +1,12 @@
 ---
+title: Try Catch Try Value Modified In Catch.Expect
 category: misc
-last_updated: null
-source_file: try-catch-try-value-modified-in-catch.expect.md
-summary: '```javascript
-
-  const {throwInput} = require(''sharedruntime'');'
 tags:
 - javascript
-title: Try Catch Try Value Modified In Catch.Expect
+last_updated: null
+source_file: try-catch-try-value-modified-in-catch.expect.md
 ---
+# Try Catch Try Value Modified In Catch.Expect
 
 ## Input
 
@@ -75,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo","bar"]

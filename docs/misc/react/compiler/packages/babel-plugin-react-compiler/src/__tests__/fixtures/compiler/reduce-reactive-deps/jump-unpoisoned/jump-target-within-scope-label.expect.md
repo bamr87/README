@@ -1,14 +1,12 @@
 ---
+title: Jump Target Within Scope Label.Expect
 category: misc
-last_updated: null
-source_file: jump-target-within-scope-label.expect.md
-summary: "```javascript\nfunction useFoo({input, cond}) {\n  const x = [];\n  label:\
-  \ {\n    if (cond) {\n      break label;\n    }\n  }\n  x.push(input.a.b); // unconditional\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Jump Target Within Scope Label.Expect
+last_updated: null
+source_file: jump-target-within-scope-label.expect.md
 ---
+# Jump Target Within Scope Label.Expect
 
 ## Input
 
@@ -81,7 +79,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'a') ]]

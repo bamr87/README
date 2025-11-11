@@ -1,16 +1,12 @@
 ---
+title: Todo Global Load Cached.Expect
 category: misc
-last_updated: null
-source_file: todo-global-load-cached.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';
-
-  import {makeArray} from ''sharedruntime'';'
 tags:
 - javascript
-title: Todo Global Load Cached.Expect
+last_updated: null
+source_file: todo-global-load-cached.expect.md
 ---
+# Todo Global Load Cached.Expect
 
 ## Input
 
@@ -81,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":2}</div>

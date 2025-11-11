@@ -1,16 +1,12 @@
 ---
+title: Jsx Function.Expect
 category: misc
-last_updated: null
-source_file: jsx-function.expect.md
-summary: '```javascript
-
-  // @flow
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Function.Expect
+last_updated: null
+source_file: jsx-function.expect.md
 ---
+# Jsx Function.Expect
 
 ## Input
 
@@ -82,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

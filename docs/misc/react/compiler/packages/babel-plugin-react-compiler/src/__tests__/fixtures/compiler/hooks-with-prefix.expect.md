@@ -1,14 +1,12 @@
 ---
+title: Hooks With Prefix.Expect
 category: misc
-last_updated: null
-source_file: hooks-with-prefix.expect.md
-summary: '```javascript
-
-  // @hookPattern:".\b(use[^$]+)$" @enablePreserveExistingMemoizationGuarantees:false'
 tags:
 - javascript
-title: Hooks With Prefix.Expect
+last_updated: null
+source_file: hooks-with-prefix.expect.md
 ---
+# Hooks With Prefix.Expect
 
 ## Input
 
@@ -102,6 +100,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0{"a":0,"b":"value1","c":true}</div>

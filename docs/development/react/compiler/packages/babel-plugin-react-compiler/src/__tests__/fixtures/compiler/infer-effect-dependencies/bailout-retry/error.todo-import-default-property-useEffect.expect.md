@@ -1,17 +1,13 @@
 ---
+title: Error.Todo Import Default Property Useeffect.Expect
 category: development
-last_updated: null
-source_file: error.todo-import-default-property-useEffect.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import React from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Todo Import Default Property Useeffect.Expect
+last_updated: null
+source_file: error.todo-import-default-property-useEffect.expect.md
 ---
+# Error.Todo Import Default Property Useeffect.Expect
 
 ## Input
 
@@ -44,5 +40,4 @@ error.todo-import-default-property-useEffect.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

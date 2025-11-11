@@ -1,16 +1,14 @@
 ---
+title: Barodybroject Features Documentation
 category: setup
-last_updated: null
-source_file: README.md
-summary: This directory contains documentation for the core features and capabilities
-  of the Barodybroject Django/OpenAI application.
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: Barodybroject Features Documentation
+last_updated: null
+source_file: README.md
 ---
 # Barodybroject Features Documentation
 

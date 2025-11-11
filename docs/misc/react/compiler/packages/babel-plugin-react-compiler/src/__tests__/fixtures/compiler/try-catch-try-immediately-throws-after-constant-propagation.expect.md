@@ -1,14 +1,12 @@
 ---
+title: Try Catch Try Immediately Throws After Constant Propagation.Expect
 category: misc
-last_updated: null
-source_file: try-catch-try-immediately-throws-after-constant-propagation.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = props.default;\n \
-  \ const y = 42;\n  try {\n    // note: this constant propagates so that we know\n\
-  \    // the handler is unreachable\n    return y;\n  } cat..."
 tags:
 - javascript
-title: Try Catch Try Immediately Throws After Constant Propagation.Expect
+last_updated: null
+source_file: try-catch-try-immediately-throws-after-constant-propagation.expect.md
 ---
+# Try Catch Try Immediately Throws After Constant Propagation.Expect
 
 ## Input
 
@@ -47,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

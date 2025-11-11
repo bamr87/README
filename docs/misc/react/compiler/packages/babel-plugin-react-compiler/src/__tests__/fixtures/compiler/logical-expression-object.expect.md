@@ -1,14 +1,12 @@
 ---
+title: Logical Expression Object.Expect
 category: misc
-last_updated: null
-source_file: logical-expression-object.expect.md
-summary: "```javascript\nfunction component(props) {\n  // The mutable range for a\
-  \ extens the entire body.\n  // commenting out the last line of InferMutableRanges\
-  \ fixes it.\n  // my guess of what's going on is tha..."
 tags:
 - javascript
-title: Logical Expression Object.Expect
+last_updated: null
+source_file: logical-expression-object.expect.md
 ---
+# Logical Expression Object.Expect
 
 ## Input
 
@@ -60,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

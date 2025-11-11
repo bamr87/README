@@ -1,15 +1,12 @@
 ---
+title: '`eslint-plugin-react-hooks`'
 category: api
-last_updated: null
-source_file: README.md
-summary: The official ESLint plugin for React which enforces the Rules of React and
-  other best practices.
 tags:
 - javascript
 - api
 - testing
-- api
-title: '`eslint-plugin-react-hooks`'
+last_updated: null
+source_file: README.md
 ---
 # `eslint-plugin-react-hooks`
 

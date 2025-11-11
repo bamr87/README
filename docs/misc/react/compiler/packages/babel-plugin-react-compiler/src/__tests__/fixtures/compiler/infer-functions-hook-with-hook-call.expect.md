@@ -1,13 +1,12 @@
 ---
+title: Infer Functions Hook With Hook Call.Expect
 category: misc
-last_updated: null
-source_file: infer-functions-hook-with-hook-call.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction useStateValue(props)\
-  \ {\n  const [state, ] = useState(null);\n  return [state];\n}"
 tags:
 - javascript
-title: Infer Functions Hook With Hook Call.Expect
+last_updated: null
+source_file: infer-functions-hook-with-hook-call.expect.md
 ---
+# Infer Functions Hook With Hook Call.Expect
 
 ## Input
 
@@ -39,4 +38,3 @@ function useStateValue(props) {
 }
 
 ```
-      

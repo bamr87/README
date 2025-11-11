@@ -1,16 +1,12 @@
 ---
+title: Repro Dont Memoize Array With Mutable Map After Hook.Expect
 category: misc
-last_updated: null
-source_file: repro-dont-memoize-array-with-mutable-map-after-hook.expect.md
-summary: '```javascript
-
-  import {useEffect, useState} from ''react'';
-
-  import {mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Dont Memoize Array With Mutable Map After Hook.Expect
+last_updated: null
+source_file: repro-dont-memoize-array-with-mutable-map-after-hook.expect.md
 ---
+# Repro Dont Memoize Array With Mutable Map After Hook.Expect
 
 ## Input
 
@@ -107,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span>Hello</span></div>

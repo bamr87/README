@@ -1,14 +1,12 @@
 ---
+title: Jsx Local Memberexpr Tag.Expect
 category: misc
-last_updated: null
-source_file: jsx-local-memberexpr-tag.expect.md
-summary: "```javascript\nimport  as SharedRuntime from 'sharedruntime';\nfunction\
-  \ useFoo() {\n  const MyLocal = SharedRuntime;\n  return <MyLocal.Text value={4}\
-  \ />;\n}"
 tags:
 - javascript
-title: Jsx Local Memberexpr Tag.Expect
+last_updated: null
+source_file: jsx-local-memberexpr-tag.expect.md
 ---
+# Jsx Local Memberexpr Tag.Expect
 
 ## Input
 
@@ -49,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>4</div>

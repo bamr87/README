@@ -1,13 +1,12 @@
 ---
+title: Call Args Assignment.Expect
 category: misc
-last_updated: null
-source_file: call-args-assignment.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = makeObject();\n  x.foo((x\
-  \ = makeObject()));\n  return x;\n}"
 tags:
 - javascript
-title: Call Args Assignment.Expect
+last_updated: null
+source_file: call-args-assignment.expect.md
 ---
+# Call Args Assignment.Expect
 
 ## Input
 
@@ -38,4 +37,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -1,15 +1,13 @@
 ---
+title: Outlined Destructured Params.Expect
 category: misc
-last_updated: null
-source_file: outlined-destructured-params.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Outlined Destructured Params.Expect
+last_updated: null
+source_file: outlined-destructured-params.expect.md
 ---
+# Outlined Destructured Params.Expect
 
 ## Input
 
@@ -72,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"name":"one"}</div>

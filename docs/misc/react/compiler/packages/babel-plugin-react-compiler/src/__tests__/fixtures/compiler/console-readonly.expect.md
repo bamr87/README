@@ -1,14 +1,12 @@
 ---
+title: Console Readonly.Expect
 category: misc
-last_updated: null
-source_file: console-readonly.expect.md
-summary: '```javascript
-
-  import {shallowCopy} from ''sharedruntime'';'
 tags:
 - javascript
-title: Console Readonly.Expect
+last_updated: null
+source_file: console-readonly.expect.md
 ---
+# Console Readonly.Expect
 
 ## Input
 
@@ -71,7 +69,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":1,"b":2}
 logs: [{ a: 1, b: 2 },{ a: 1, b: 2 },{ a: 1, b: 2 },{ a: 1, b: 2 },{ a: 1, b: 2 },{ a: 1, b: 2 }]

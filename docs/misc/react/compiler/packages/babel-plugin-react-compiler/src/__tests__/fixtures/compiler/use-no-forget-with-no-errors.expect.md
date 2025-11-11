@@ -1,13 +1,12 @@
 ---
+title: Use No Forget With No Errors.Expect
 category: misc
-last_updated: null
-source_file: use-no-forget-with-no-errors.expect.md
-summary: "```javascript\nfunction Component() {\n  'use no forget';\n  return <div>Hello\
-  \ World</div>;\n}"
 tags:
 - javascript
-title: Use No Forget With No Errors.Expect
+last_updated: null
+source_file: use-no-forget-with-no-errors.expect.md
 ---
+# Use No Forget With No Errors.Expect
 
 ## Input
 
@@ -40,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Hello World</div>

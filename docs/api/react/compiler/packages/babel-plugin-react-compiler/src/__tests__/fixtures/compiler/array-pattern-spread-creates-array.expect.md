@@ -1,20 +1,13 @@
 ---
+title: Array Pattern Spread Creates Array.Expect
 category: api
-last_updated: null
-source_file: array-pattern-spread-creates-array.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {makeObjectPrimitives, ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-- api
-title: Array Pattern Spread Creates Array.Expect
+last_updated: null
+source_file: array-pattern-spread-creates-array.expect.md
 ---
+# Array Pattern Spread Creates Array.Expect
 
 ## Input
 
@@ -116,6 +109,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[],"output":{"a":0,"b":"value1","c":true}}</div><div>{"inputs":[[0,1,2]],"output":[1,2,{"a":0,"b":"value1","c":true}]}</div>

@@ -1,14 +1,12 @@
 ---
+title: Memberexpr Join Optional Chain2.Expect
 category: misc
-last_updated: null
-source_file: memberexpr-join-optional-chain2.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  x.push(props.items?.length);\n\
-  \  x.push(props.items?.edges?.map?.(render)?.filter?.(Boolean) ?? []);\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Memberexpr Join Optional Chain2.Expect
+last_updated: null
+source_file: memberexpr-join-optional-chain2.expect.md
 ---
+# Memberexpr Join Optional Chain2.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,[]]

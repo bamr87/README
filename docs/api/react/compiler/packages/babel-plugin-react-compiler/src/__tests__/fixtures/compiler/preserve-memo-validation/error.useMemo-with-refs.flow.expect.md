@@ -1,17 +1,13 @@
 ---
+title: Error.Usememo With Refs.Flow.Expect
 category: api
-last_updated: null
-source_file: error.useMemo-with-refs.flow.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Usememo With Refs.Flow.Expect
+last_updated: null
+source_file: error.useMemo-with-refs.flow.expect.md
 ---
+# Error.Usememo With Refs.Flow.Expect
 
 ## Input
 
@@ -47,5 +43,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
    9 |   return <div ref={mergedRef} />;
   10 | }
 ```
-          
-      
+

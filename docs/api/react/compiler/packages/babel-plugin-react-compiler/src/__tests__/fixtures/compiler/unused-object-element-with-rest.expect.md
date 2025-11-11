@@ -1,16 +1,13 @@
 ---
+title: Unused Object Element With Rest.Expect
 category: api
-last_updated: null
-source_file: unused-object-element-with-rest.expect.md
-summary: "``javascript\nfunction Foo(props) {\n  // can't remove unused since it affects\
-  \ which properties are copied into rest`\n  const {unused, ...rest} = props.a;\n\
-  \  return rest;\n}"
 tags:
 - javascript
 - api
-- api
-title: Unused Object Element With Rest.Expect
+last_updated: null
+source_file: unused-object-element-with-rest.expect.md
 ---
+# Unused Object Element With Rest.Expect
 
 ## Input
 
@@ -54,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

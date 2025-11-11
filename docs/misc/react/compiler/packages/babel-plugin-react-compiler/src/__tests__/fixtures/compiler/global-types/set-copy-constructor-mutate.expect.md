@@ -1,14 +1,12 @@
 ---
+title: Set Copy Constructor Mutate.Expect
 category: misc
-last_updated: null
-source_file: set-copy-constructor-mutate.expect.md
-summary: '```javascript
-
-  import {makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Set Copy Constructor Mutate.Expect
+last_updated: null
+source_file: set-copy-constructor-mutate.expect.md
 ---
+# Set Copy Constructor Mutate.Expect
 
 ## Input
 
@@ -86,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"kind":"Set","value":[1,2,3,[7]]},{"kind":"Set","value":[1,2,3,"[[ cyclic ref *2 ]]"]}]
 [{"kind":"Set","value":[1,2,3,[7]]},{"kind":"Set","value":[1,2,3,"[[ cyclic ref *2 ]]"]}]

@@ -1,20 +1,12 @@
 ---
+title: Allocating Primitive As Dep.Expect
 category: misc
-last_updated: null
-source_file: allocating-primitive-as-dep.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  // bar(props.b) is an allocating expression that produces a primitive, which means
-
-  // that Forget should memoize it.
-
-  // Correctness:...'
 tags:
 - javascript
-title: Allocating Primitive As Dep.Expect
+last_updated: null
+source_file: allocating-primitive-as-dep.expect.md
 ---
+# Allocating Primitive As Dep.Expect
 
 ## Input
 
@@ -55,4 +47,3 @@ function AllocatingPrimitiveAsDep(props) {
 }
 
 ```
-      

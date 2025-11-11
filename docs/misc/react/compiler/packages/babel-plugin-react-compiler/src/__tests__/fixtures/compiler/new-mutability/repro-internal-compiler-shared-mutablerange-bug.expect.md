@@ -1,14 +1,12 @@
 ---
+title: Repro Internal Compiler Shared Mutablerange Bug.Expect
 category: misc
-last_updated: null
-source_file: repro-internal-compiler-shared-mutablerange-bug.expect.md
-summary: "```javascript\n//@flow @validatePreserveExistingMemoizationGuarantees @enableNewMutationAliasingModel\n\
-  component Component(\n  onAsyncSubmit?: (() => void) => void,\n  onClose: (isConfirmed:\
-  \ boolean) => v..."
 tags:
 - javascript
-title: Repro Internal Compiler Shared Mutablerange Bug.Expect
+last_updated: null
+source_file: repro-internal-compiler-shared-mutablerange-bug.expect.md
 ---
+# Repro Internal Compiler Shared Mutablerange Bug.Expect
 
 ## Input
 
@@ -86,6 +84,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

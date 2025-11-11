@@ -1,14 +1,12 @@
 ---
+title: Allow Merge Refs Pattern.Expect
 category: misc
-last_updated: null
-source_file: allow-merge-refs-pattern.expect.md
-summary: '```javascript
-
-  // @enableTreatRefLikeIdentifiersAsRefs @validateRefAccessDuringRender'
 tags:
 - javascript
-title: Allow Merge Refs Pattern.Expect
+last_updated: null
+source_file: allow-merge-refs-pattern.expect.md
 ---
+# Allow Merge Refs Pattern.Expect
 
 ## Input
 
@@ -50,6 +48,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

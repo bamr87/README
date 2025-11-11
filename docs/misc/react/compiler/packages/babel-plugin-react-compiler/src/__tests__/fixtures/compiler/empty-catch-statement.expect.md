@@ -1,14 +1,12 @@
 ---
+title: Empty Catch Statement.Expect
 category: misc
-last_updated: null
-source_file: empty-catch-statement.expect.md
-summary: '```javascript
-
-  import {getNumber} from ''sharedruntime'';'
 tags:
 - javascript
-title: Empty Catch Statement.Expect
+last_updated: null
+source_file: empty-catch-statement.expect.md
 ---
+# Empty Catch Statement.Expect
 
 ## Input
 
@@ -53,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 4

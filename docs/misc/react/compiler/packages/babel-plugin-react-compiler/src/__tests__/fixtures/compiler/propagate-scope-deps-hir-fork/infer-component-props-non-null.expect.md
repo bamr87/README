@@ -1,16 +1,12 @@
 ---
+title: Infer Component Props Non Null.Expect
 category: misc
-last_updated: null
-source_file: infer-component-props-non-null.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR
-
-  import {identity, Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Infer Component Props Non Null.Expect
+last_updated: null
+source_file: infer-component-props-non-null.expect.md
 ---
+# Infer Component Props Non Null.Expect
 
 ## Input
 
@@ -77,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"arr":[2]}</div>

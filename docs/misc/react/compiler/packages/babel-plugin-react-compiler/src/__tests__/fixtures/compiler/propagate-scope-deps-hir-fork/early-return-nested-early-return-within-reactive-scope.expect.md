@@ -1,14 +1,12 @@
 ---
+title: Early Return Nested Early Return Within Reactive Scope.Expect
 category: misc
-last_updated: null
-source_file: early-return-nested-early-return-within-reactive-scope.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  let x = [];\n  if (props.cond) {\n    x.push(props.a);\n    if (props.b) {\n\
-  \      const y = [props.b];\n      x.push(y);\n      // oo..."
 tags:
 - javascript
-title: Early Return Nested Early Return Within Reactive Scope.Expect
+last_updated: null
+source_file: early-return-nested-early-return-within-reactive-scope.expect.md
 ---
+# Early Return Nested Early Return Within Reactive Scope.Expect
 
 ## Input
 
@@ -98,6 +96,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,[3.14]]

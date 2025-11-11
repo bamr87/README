@@ -1,14 +1,12 @@
 ---
+title: Error.Usecallback Aliased Var.Expect
 category: misc
-last_updated: null
-source_file: error.useCallback-aliased-var.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.Usecallback Aliased Var.Expect
+last_updated: null
+source_file: error.useCallback-aliased-var.expect.md
 ---
+# Error.Usecallback Aliased Var.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.useCallback-aliased-var.ts:9:21
   10 | }
   11 |
 ```
-          
-      
+

@@ -1,19 +1,13 @@
 ---
+title: Merge Consecutive Scopes Reordering.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-scopes-reordering.expect.md
-summary: '```javascript
-
-  // @enableInstructionReordering
-
-  import {useState} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Merge Consecutive Scopes Reordering.Expect
+last_updated: null
+source_file: merge-consecutive-scopes-reordering.expect.md
 ---
+# Merge Consecutive Scopes Reordering.Expect
 
 ## Input
 
@@ -99,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"text":"Counter"}</div><span>0</span><button data-testid="button">increment</button></div>

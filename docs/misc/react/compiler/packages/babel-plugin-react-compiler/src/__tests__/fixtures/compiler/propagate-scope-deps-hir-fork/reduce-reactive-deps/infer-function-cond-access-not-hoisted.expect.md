@@ -1,14 +1,12 @@
 ---
+title: Infer Function Cond Access Not Hoisted.Expect
 category: misc
-last_updated: null
-source_file: infer-function-cond-access-not-hoisted.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Function Cond Access Not Hoisted.Expect
+last_updated: null
+source_file: infer-function-cond-access-not-hoisted.expect.md
 ---
+# Infer Function Cond Access Not Hoisted.Expect
 
 ## Input
 
@@ -84,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function","result":null},"shouldInvokeFns":true}</div>

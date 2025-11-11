@@ -1,16 +1,12 @@
 ---
+title: Repro Maybe Invalid Usememo Read Mayberef.Expect
 category: misc
-last_updated: null
-source_file: repro-maybe-invalid-useMemo-read-maybeRef.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
-title: Repro Maybe Invalid Usememo Read Mayberef.Expect
+last_updated: null
+source_file: repro-maybe-invalid-useMemo-read-maybeRef.expect.md
 ---
+# Repro Maybe Invalid Usememo Read Mayberef.Expect
 
 ## Input
 
@@ -46,6 +42,6 @@ function useHook(maybeRef, shouldRead) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

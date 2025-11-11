@@ -1,13 +1,12 @@
 ---
+title: Hoisting Setstate Captured Indirectly Jsx.Expect
 category: misc
-last_updated: null
-source_file: hoisting-setstate-captured-indirectly-jsx.expect.md
-summary: "```javascript\n// @validatePreserveExistingMemoizationGuarantees\nfunction\
-  \ useFoo() {\n  const onClick = response => {\n    setState(DISABLEDFORM);\n  };"
 tags:
 - javascript
-title: Hoisting Setstate Captured Indirectly Jsx.Expect
+last_updated: null
+source_file: hoisting-setstate-captured-indirectly-jsx.expect.md
 ---
+# Hoisting Setstate Captured Indirectly Jsx.Expect
 
 ## Input
 
@@ -79,6 +78,6 @@ function useFoo() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

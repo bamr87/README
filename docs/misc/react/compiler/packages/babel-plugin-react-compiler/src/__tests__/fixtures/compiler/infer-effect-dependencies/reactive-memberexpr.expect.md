@@ -1,18 +1,12 @@
 ---
+title: Reactive Memberexpr.Expect
 category: misc
-last_updated: null
-source_file: reactive-memberexpr.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
-title: Reactive Memberexpr.Expect
+last_updated: null
+source_file: reactive-memberexpr.expect.md
 ---
+# Reactive Memberexpr.Expect
 
 ## Input
 
@@ -59,6 +53,6 @@ function ReactiveMemberExpr(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -1,14 +1,12 @@
 ---
+title: Reactive Control Dependency Via Mutation If.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-via-mutation-if.expect.md
-summary: "``javascript\nfunction Component(props) {\n  // x is mutated conditionally\
-  \ based on a reactive value,\n  // so it needs to be considered reactive\n  let\
-  \ x = [];\n  if (props.cond) {\n    x.push(1);\n  }\n  //..."
 tags:
 - javascript
-title: Reactive Control Dependency Via Mutation If.Expect
+last_updated: null
+source_file: reactive-control-dependency-via-mutation-if.expect.md
 ---
+# Reactive Control Dependency Via Mutation If.Expect
 
 ## Input
 
@@ -89,7 +87,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [true]
 [true]

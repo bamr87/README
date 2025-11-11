@@ -1,14 +1,12 @@
 ---
+title: Switch With Fallthrough.Expect
 category: misc
-last_updated: null
-source_file: switch-with-fallthrough.expect.md
-summary: "```javascript\nfunction foo(x) {\n  let y;\n  switch (x) {\n    case 0:\
-  \ {\n      y = 0;\n    }\n    case 1: {\n      y = 1;\n    }\n    case 2: {\n  \
-  \    break;\n    }\n    case 3: {\n      y = 3;\n      break;\n    }..."
 tags:
 - javascript
-title: Switch With Fallthrough.Expect
+last_updated: null
+source_file: switch-with-fallthrough.expect.md
 ---
+# Switch With Fallthrough.Expect
 
 ## Input
 
@@ -75,4 +73,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Function Expression Mutates Immutable Value.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-function-expression-mutates-immutable-value.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [x, setX] = useState({value:\
-  \ ''});\n  const onChange = e => {\n    // INVALID! should use copyonwrite and pass\
-  \ the new value\n    x.value = e.target.valu..."
 tags:
 - javascript
-title: Error.Invalid Function Expression Mutates Immutable Value.Expect
+last_updated: null
+source_file: error.invalid-function-expression-mutates-immutable-value.expect.md
 ---
+# Error.Invalid Function Expression Mutates Immutable Value.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.invalid-function-expression-mutates-immutable-value.ts:5:4
   7 |   };
   8 |   return <input value={x.value} onChange={onChange} />;
 ```
-          
-      
+

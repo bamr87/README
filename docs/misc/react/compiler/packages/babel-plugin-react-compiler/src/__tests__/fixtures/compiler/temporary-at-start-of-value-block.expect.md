@@ -1,14 +1,12 @@
 ---
+title: Temporary At Start Of Value Block.Expect
 category: misc
-last_updated: null
-source_file: temporary-at-start-of-value-block.expect.md
-summary: "```javascript\nfunction component(props) {\n  // NOTE: the temporary for\
-  \ the leading space was previously dropped\n  const x = isMenuShown ? <Bar> {props.a\
-  \ ? props.b : props.c}</Bar> : null;\n  return x;\n..."
 tags:
 - javascript
-title: Temporary At Start Of Value Block.Expect
+last_updated: null
+source_file: temporary-at-start-of-value-block.expect.md
 ---
+# Temporary At Start Of Value Block.Expect
 
 ## Input
 
@@ -40,4 +38,3 @@ function component(props) {
 }
 
 ```
-      

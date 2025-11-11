@@ -1,12 +1,12 @@
 ---
+title: Assignment In Nested If.Expect
 category: misc
-last_updated: null
-source_file: assignment-in-nested-if.expect.md
-summary: "```javascript\nfunction useBar(props) {\n  let z;"
 tags:
 - javascript
-title: Assignment In Nested If.Expect
+last_updated: null
+source_file: assignment-in-nested-if.expect.md
 ---
+# Assignment In Nested If.Expect
 
 ## Input
 
@@ -49,4 +49,3 @@ function useBar(props) {
 }
 
 ```
-      

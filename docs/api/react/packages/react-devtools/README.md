@@ -1,15 +1,12 @@
 ---
+title: '`react-devtools`'
 category: api
-last_updated: null
-source_file: README.md
-summary: This package can be used to debug nonbrowserbased React applications (e.g.
-  React Native, mobile browser or embedded webview, Safari).
 tags:
 - javascript
 - api
 - testing
-- api
-title: '`react-devtools`'
+last_updated: null
+source_file: README.md
 ---
 # `react-devtools`
 

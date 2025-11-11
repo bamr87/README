@@ -1,13 +1,12 @@
 ---
+title: Globals Number.Expect
 category: misc
-last_updated: null
-source_file: globals-Number.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = {};\n  const y =\
-  \ Number(x);\n  return [x, y];\n}"
 tags:
 - javascript
-title: Globals Number.Expect
+last_updated: null
+source_file: globals-Number.expect.md
 ---
+# Globals Number.Expect
 
 ## Input
 
@@ -58,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,16 +1,14 @@
 ---
+title: Mutate After Useeffect Ref Access.Expect
 category: api
-last_updated: null
-source_file: mutate-after-useeffect-ref-access.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none" @loggerTestOnly'
 tags:
 - javascript
 - testing
 - api
-title: Mutate After Useeffect Ref Access.Expect
+last_updated: null
+source_file: mutate-after-useeffect-ref-access.expect.md
 ---
+# Mutate After Useeffect Ref Access.Expect
 
 ## Input
 
@@ -64,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 {"kind":"AutoDepsDecorations","fnLoc":{"start":{"line":8,"column":2,"index":237},"end":{"line":8,"column":50,"index":285},"filename":"mutate-after-useeffect-ref-access.ts"},"decorations":[{"start":{"line":8,"column":24,"index":259},"end":{"line":8,"column":30,"index":265},"filename":"mutate-after-useeffect-ref-access.ts","identifierName":"arrRef"}]}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":6,"column":0,"index":158},"end":{"line":11,"column":1,"index":331},"filename":"mutate-after-useeffect-ref-access.ts"},"fnName":"Component","memoSlots":0,"memoBlocks":0,"memoValues":0,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: ok) {"current":{"val":2}}
 logs: [{ val: 2 }]

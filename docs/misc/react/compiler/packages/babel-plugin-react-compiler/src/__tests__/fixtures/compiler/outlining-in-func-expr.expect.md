@@ -1,14 +1,12 @@
 ---
+title: Outlining In Func Expr.Expect
 category: misc
-last_updated: null
-source_file: outlining-in-func-expr.expect.md
-summary: "```javascript\nconst Component2 = props => {\n  return (\n    <ul>\n   \
-  \   {props.items.map(item => (\n        <li key={item.id}>{item.name}</li>\n   \
-  \   ))}\n    </ul>\n  );\n};"
 tags:
 - javascript
-title: Outlining In Func Expr.Expect
+last_updated: null
+source_file: outlining-in-func-expr.expect.md
 ---
+# Outlining In Func Expr.Expect
 
 ## Input
 
@@ -78,6 +76,6 @@ function _temp(item) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: ok) <ul><li>foo</li><li>bar</li></ul>

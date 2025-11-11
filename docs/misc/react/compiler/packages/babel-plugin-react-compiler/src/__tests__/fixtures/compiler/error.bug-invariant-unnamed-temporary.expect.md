@@ -1,14 +1,12 @@
 ---
+title: Error.Bug Invariant Unnamed Temporary.Expect
 category: misc
-last_updated: null
-source_file: error.bug-invariant-unnamed-temporary.expect.md
-summary: '```javascript
-
-  import Bar from ''./Bar'';'
 tags:
 - javascript
-title: Error.Bug Invariant Unnamed Temporary.Expect
+last_updated: null
+source_file: error.bug-invariant-unnamed-temporary.expect.md
 ---
+# Error.Bug Invariant Unnamed Temporary.Expect
 
 ## Input
 
@@ -37,5 +35,4 @@ Invariant: Expected temporaries to be promoted to named identifiers in an earlie
 
 identifier 15 is unnamed.
 ```
-          
-      
+

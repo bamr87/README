@@ -1,13 +1,12 @@
 ---
+title: Error.Invalid Usememo Async Callback.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useMemo-async-callback.expect.md
-summary: "```javascript\nfunction component(a, b) {\n  let x = useMemo(async () =>\
-  \ {\n    await a;\n  }, []);\n  return x;\n}"
 tags:
 - javascript
-title: Error.Invalid Usememo Async Callback.Expect
+last_updated: null
+source_file: error.invalid-useMemo-async-callback.expect.md
 ---
+# Error.Invalid Usememo Async Callback.Expect
 
 ## Input
 
@@ -43,5 +42,4 @@ error.invalid-useMemo-async-callback.ts:2:18
   6 | }
   7 |
 ```
-          
-      
+

@@ -1,18 +1,12 @@
 ---
+title: Allocating Primitive As Dep Nested Scope.Expect
 category: misc
-last_updated: null
-source_file: allocating-primitive-as-dep-nested-scope.expect.md
-summary: '```javascript
-
-  // bar(props.b) is an allocating expression that produces a primitive, which means
-
-  // that Forget should memoize it.
-
-  // Correctness:'
 tags:
 - javascript
-title: Allocating Primitive As Dep Nested Scope.Expect
+last_updated: null
+source_file: allocating-primitive-as-dep-nested-scope.expect.md
 ---
+# Allocating Primitive As Dep Nested Scope.Expect
 
 ## Input
 
@@ -102,7 +96,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"wat0":"joe","wat1":1},4]
 [{"wat0":"joe","wat1":1},5]

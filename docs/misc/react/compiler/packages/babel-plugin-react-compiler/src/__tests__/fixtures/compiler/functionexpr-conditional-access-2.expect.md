@@ -1,16 +1,12 @@
 ---
+title: Functionexpr Conditional Access 2.Expect
 category: misc
-last_updated: null
-source_file: functionexpr-conditional-access-2.expect.md
-summary: '```javascript
-
-  // @enableTreatFunctionDepsAsConditional
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Functionexpr Conditional Access 2.Expect
+last_updated: null
+source_file: functionexpr-conditional-access-2.expect.md
 ---
+# Functionexpr Conditional Access 2.Expect
 
 ## Input
 
@@ -75,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"f":"[[ function params=0 ]]"}</div>

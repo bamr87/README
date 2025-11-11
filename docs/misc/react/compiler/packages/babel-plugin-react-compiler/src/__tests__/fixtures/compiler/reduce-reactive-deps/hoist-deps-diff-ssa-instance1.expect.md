@@ -1,14 +1,12 @@
 ---
+title: Hoist Deps Diff Ssa Instance1.Expect
 category: misc
-last_updated: null
-source_file: hoist-deps-diff-ssa-instance1.expect.md
-summary: '```javascript
-
-  import {identity, shallowCopy, Stringify, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoist Deps Diff Ssa Instance1.Expect
+last_updated: null
+source_file: hoist-deps-diff-ssa-instance1.expect.md
 ---
+# Hoist Deps Diff Ssa Instance1.Expect
 
 ## Input
 
@@ -101,7 +99,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"val":[4]}</div>
 <div>{"val":false}</div>

@@ -1,14 +1,12 @@
 ---
+title: Useeffect Nested Lambdas.Expect
 category: misc
-last_updated: null
-source_file: useEffect-nested-lambdas.expect.md
-summary: '```javascript
-
-  // @enableTransitivelyFreezeFunctionExpressions:false'
 tags:
 - javascript
-title: Useeffect Nested Lambdas.Expect
+last_updated: null
+source_file: useEffect-nested-lambdas.expect.md
 ---
+# Useeffect Nested Lambdas.Expect
 
 ## Input
 
@@ -95,4 +93,3 @@ function Component(props) {
 }
 
 ```
-      

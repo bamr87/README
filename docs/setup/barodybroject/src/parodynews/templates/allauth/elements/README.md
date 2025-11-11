@@ -1,20 +1,14 @@
 ---
+title: elements Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '```html
-
-  <! Example usage in authentication templates >
-
-  {% load allauthelements %}'
 tags:
 - python
 - javascript
 - docker
 - setup
-title: elements Directory
+last_updated: null
+source_file: README.md
 ---
-
 # elements Directory
 
 ## Purpose

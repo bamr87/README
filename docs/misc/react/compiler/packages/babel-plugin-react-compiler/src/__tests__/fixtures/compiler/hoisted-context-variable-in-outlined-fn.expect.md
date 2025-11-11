@@ -1,14 +1,12 @@
 ---
+title: Hoisted Context Variable In Outlined Fn.Expect
 category: misc
-last_updated: null
-source_file: hoisted-context-variable-in-outlined-fn.expect.md
-summary: '```javascript
-
-  import {CONSTTRUE, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisted Context Variable In Outlined Fn.Expect
+last_updated: null
+source_file: hoisted-context-variable-in-outlined-fn.expect.md
 ---
+# Hoisted Context Variable In Outlined Fn.Expect
 
 ## Input
 
@@ -88,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Stringify is not defined

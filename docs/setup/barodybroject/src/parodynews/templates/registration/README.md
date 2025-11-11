@@ -1,15 +1,13 @@
 ---
+title: Registration Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block title %}Login  Barody Broject{% endblock %}'
 tags:
 - python
 - docker
 - setup
-title: Registration Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Registration Templates Directory
 
 ## Purpose
@@ -40,12 +38,12 @@ Contains Django authentication templates for user registration and login workflo
                 <form method="post">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    
+
                     <button type="submit" class="btn btn-primary btn-block">
                         Sign In
                     </button>
                 </form>
-                
+
                 <div class="mt-3 text-center">
                     <a href="{% url 'password_reset' %}">Forgot Password?</a>
                     <br>
@@ -71,7 +69,7 @@ Contains Django authentication templates for user registration and login workflo
         <div class="alert alert-success text-center">
             <h4>You have been successfully logged out</h4>
             <p>Thank you for using Barody Broject!</p>
-            
+
             <a href="{% url 'account_login' %}" class="btn btn-primary">
                 Log In Again
             </a>
@@ -93,7 +91,7 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(
         template_name='registration/login.html'
     ), name='login'),
-    
+
     path('logout/', auth_views.LogoutView.as_view(
         template_name='registration/logged_out.html'
     ), name='logout'),
@@ -123,7 +121,7 @@ class CustomLoginForm(AuthenticationForm):
 
 ## Container Configuration
 - **Runtime**: Django template engine with form rendering
-- **Dependencies**: 
+- **Dependencies**:
   - Django authentication system
   - django-crispy-forms for form styling
   - Bootstrap CSS framework
@@ -131,12 +129,12 @@ class CustomLoginForm(AuthenticationForm):
 - **Session Management**: Handles user session creation and cleanup
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Django authentication middleware
   - User registration and account views
   - Password reset workflows
   - Social authentication (allauth)
-- **Outgoing**: 
+- **Outgoing**:
   - User session management
   - Account dashboard and profile pages
   - Protected application areas

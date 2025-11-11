@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Setstate In Usememo Indirect Usecallback.Expect
 category: api
-last_updated: null
-source_file: error.invalid-setState-in-useMemo-indirect-useCallback.expect.md
-summary: '```javascript
-
-  import {useCallback} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Setstate In Usememo Indirect Usecallback.Expect
+last_updated: null
+source_file: error.invalid-setState-in-useMemo-indirect-useCallback.expect.md
 ---
+# Error.Invalid Setstate In Usememo Indirect Usecallback.Expect
 
 ## Input
 
@@ -53,5 +51,4 @@ error.invalid-setState-in-useMemo-indirect-useCallback.ts:13:4
   15 |
   16 |   return state;
 ```
-          
-      
+

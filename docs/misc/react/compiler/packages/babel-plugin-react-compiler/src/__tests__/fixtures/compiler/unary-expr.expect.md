@@ -1,14 +1,12 @@
 ---
+title: Unary Expr.Expect
 category: misc
-last_updated: null
-source_file: unary-expr.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees:false\nfunction\
-  \ component(a) {\n  let t = {t: a};\n  let z = +t.t;\n  let q = t.t;\n  let p =\
-  \ void t.t;\n  let n = delete t.t;\n  let m = !t.t;\n ..."
 tags:
 - javascript
-title: Unary Expr.Expect
+last_updated: null
+source_file: unary-expr.expect.md
 ---
+# Unary Expr.Expect
 
 ## Input
 
@@ -80,4 +78,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

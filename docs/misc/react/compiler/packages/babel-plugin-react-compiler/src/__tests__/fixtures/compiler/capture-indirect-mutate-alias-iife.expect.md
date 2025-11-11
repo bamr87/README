@@ -1,13 +1,12 @@
 ---
+title: Capture Indirect Mutate Alias Iife.Expect
 category: misc
-last_updated: null
-source_file: capture-indirect-mutate-alias-iife.expect.md
-summary: "```javascript\nfunction component(a) {\n  let x = {a};\n  (function () {\n\
-  \    let q = x;\n    (function () {\n      q.b = 1;\n    })();\n  })();"
 tags:
 - javascript
-title: Capture Indirect Mutate Alias Iife.Expect
+last_updated: null
+source_file: capture-indirect-mutate-alias-iife.expect.md
 ---
+# Capture Indirect Mutate Alias Iife.Expect
 
 ## Input
 
@@ -59,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"b":1}

@@ -1,14 +1,12 @@
 ---
+title: Ref Current Aliased No Added To Dep.Expect
 category: misc
-last_updated: null
-source_file: ref-current-aliased-no-added-to-dep.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender false\nfunction VideoTab()\
-  \ {\n  const ref = useRef();\n  const t = ref.current;\n  let x = () => {\n    console.log(t);\n\
-  \  };"
 tags:
 - javascript
-title: Ref Current Aliased No Added To Dep.Expect
+last_updated: null
+source_file: ref-current-aliased-no-added-to-dep.expect.md
 ---
+# Ref Current Aliased No Added To Dep.Expect
 
 ## Input
 
@@ -49,4 +47,3 @@ function VideoTab() {
 }
 
 ```
-      

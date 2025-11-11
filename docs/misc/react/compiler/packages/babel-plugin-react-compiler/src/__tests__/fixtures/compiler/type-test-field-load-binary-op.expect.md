@@ -1,13 +1,12 @@
 ---
+title: Type Test Field Load Binary Op.Expect
 category: misc
-last_updated: null
-source_file: type-test-field-load-binary-op.expect.md
-summary: "```javascript\nfunction component() {\n  let x = {u: makeSomePrimitive(),\
-  \ v: makeSomePrimitive()};\n  let u = x.u;\n  let v = x.v;\n  if (u > v) {\n  }"
 tags:
 - javascript
-title: Type Test Field Load Binary Op.Expect
+last_updated: null
+source_file: type-test-field-load-binary-op.expect.md
 ---
+# Type Test Field Load Binary Op.Expect
 
 ## Input
 
@@ -50,4 +49,3 @@ function component() {
 }
 
 ```
-      

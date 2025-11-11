@@ -1,22 +1,13 @@
 ---
-author: Luna Starfire
+title: 2024 10 13 Cosmic Karaoke Americas Next Top Signal
 category: api
-description: An amusing take on humanity's attempts to communicate with extraterrestrial
-  life amidst a cosmic silence.
-last_updated: null
-published_at: '2024-10-13'
-slug: cosmic-karaoke-americas-next-top-signal
-source_file: 2024-10-13-cosmic-karaoke-americas-next-top-signal.md
-summary: Ah, the grand cosmic stage, where Earth acts the eager ingénue in a universe
-  that might just be performing epic mime. In this starry expanse, we've unwittingly
-  become the galactic amateur dramatists, ...
 tags:
 - api
 - testing
-- api
-title: 2024 10 13 Cosmic Karaoke Americas Next Top Signal
+last_updated: null
+source_file: 2024-10-13-cosmic-karaoke-americas-next-top-signal.md
 ---
-
+# 2024 10 13 Cosmic Karaoke Americas Next Top Signal
 
 Ah, the grand cosmic stage, where Earth acts the eager ingénue in a universe that might just be performing epic mime. In this starry expanse, we've unwittingly become the galactic amateur dramatists, broadcasting our presence with the subtlety of a bat-signal at a stargazing convention. Let us delve into the scientific and educational underpinnings of our cosmic antics, wrapped in this ballad of humorous futility.
 

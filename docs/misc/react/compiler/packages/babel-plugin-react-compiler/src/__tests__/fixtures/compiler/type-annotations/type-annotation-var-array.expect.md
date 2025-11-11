@@ -1,14 +1,12 @@
 ---
+title: Type Annotation Var Array.Expect
 category: misc
-last_updated: null
-source_file: type-annotation-var-array.expect.md
-summary: "```javascript\n// @enableUseTypeAnnotations\nfunction Component(props: {id:\
-  \ number}) {\n  const x: number[] = makeArray(props.id);\n  const y = x.at(0);\n\
-  \  return y;\n}"
 tags:
 - javascript
-title: Type Annotation Var Array.Expect
+last_updated: null
+source_file: type-annotation-var-array.expect.md
 ---
+# Type Annotation Var Array.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

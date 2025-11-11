@@ -1,17 +1,15 @@
 ---
+title: Django Admin Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: '{% block title %}{{ title }} | Barody Broject Admin{% endblock %}'
 tags:
 - python
 - javascript
 - docker
 - database
 - setup
-title: Django Admin Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Django Admin Templates Directory
 
 ## Purpose
@@ -82,7 +80,7 @@ Contains custom Django admin interface templates for overriding and extending th
         <option value="unpublish_articles">Unpublish selected articles</option>
         <option value="generate_ai_content">Generate AI content</option>
     </select>
-    
+
     <button type="submit" class="button" title="{% trans 'Run the selected action' %}" name="index" value="{{ action_index|default:0 }}">
         {% trans "Go" %}
     </button>
@@ -128,9 +126,9 @@ Contains custom Django admin interface templates for overriding and extending th
 {% block submit_buttons_bottom %}
 {{ block.super }}
 <div class="submit-row">
-    <input type="submit" value="Save and Generate AI Content" 
+    <input type="submit" value="Save and Generate AI Content"
            class="default" name="_save_and_generate">
-    <input type="submit" value="Save and Publish" 
+    <input type="submit" value="Save and Publish"
            class="default" name="_save_and_publish">
 </div>
 {% endblock %}
@@ -155,23 +153,23 @@ Contains custom Django admin interface templates for overriding and extending th
 
 ## Container Configuration
 - **Runtime**: Django admin interface framework
-- **Dependencies**: 
+- **Dependencies**:
   - Django admin system
   - Custom CSS and JavaScript assets
   - Authentication and permissions system
-- **Environment**: 
+- **Environment**:
   - Integrated with Django settings
   - Admin media files and static assets
   - Custom admin context processors
 - **Security**: Admin-specific authentication and CSRF protection
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Django admin configuration (`admin.py` files)
   - Custom admin forms and widgets
   - Admin URL patterns and routing
   - User authentication and permissions
-- **Outgoing**: 
+- **Outgoing**:
   - Model management interfaces
   - Database operations and queries
   - Static admin assets (CSS, JS, images)

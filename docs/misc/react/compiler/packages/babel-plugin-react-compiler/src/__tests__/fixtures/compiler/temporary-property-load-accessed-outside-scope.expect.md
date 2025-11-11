@@ -1,13 +1,12 @@
 ---
+title: Temporary Property Load Accessed Outside Scope.Expect
 category: misc
-last_updated: null
-source_file: temporary-property-load-accessed-outside-scope.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const maybeMutable = new MaybeMutable();\n\
-  \  let x = props.value;\n  return [x, maybeMutate(maybeMutable)];\n}"
 tags:
 - javascript
-title: Temporary Property Load Accessed Outside Scope.Expect
+last_updated: null
+source_file: temporary-property-load-accessed-outside-scope.expect.md
 ---
+# Temporary Property Load Accessed Outside Scope.Expect
 
 ## Input
 
@@ -53,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

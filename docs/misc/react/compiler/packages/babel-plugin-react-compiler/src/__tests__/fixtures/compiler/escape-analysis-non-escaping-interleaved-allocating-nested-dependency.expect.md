@@ -1,14 +1,12 @@
 ---
+title: Escape Analysis Non Escaping Interleaved Allocating Nested Dependency.Expect
 category: misc
-last_updated: null
-source_file: escape-analysis-non-escaping-interleaved-allocating-nested-dependency.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // a can be independently\
-  \ memoized, is not mutated later\n  // but a is a dependnecy of b, which is a dependency\
-  \ of c.\n  // we have to memoize a to avoid bre..."
 tags:
 - javascript
-title: Escape Analysis Non Escaping Interleaved Allocating Nested Dependency.Expect
+last_updated: null
+source_file: escape-analysis-non-escaping-interleaved-allocating-nested-dependency.expect.md
 ---
+# Escape Analysis Non Escaping Interleaved Allocating Nested Dependency.Expect
 
 ## Input
 
@@ -85,4 +83,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

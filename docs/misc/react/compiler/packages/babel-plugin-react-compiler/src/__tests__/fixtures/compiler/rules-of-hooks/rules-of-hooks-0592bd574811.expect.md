@@ -1,23 +1,13 @@
 ---
+title: Rules Of Hooks 0592Bd574811.Expect
 category: misc
-last_updated: null
-source_file: rules-of-hooks-0592bd574811.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  // Regression test for some internal code.
-
-  // This shows how the "callback rule" is more relaxed,
-
-  // and doesn''t kick in unless we''re confident we''re in
-
-  // a ...'
 tags:
 - javascript
 - testing
-title: Rules Of Hooks 0592Bd574811.Expect
+last_updated: null
+source_file: rules-of-hooks-0592bd574811.expect.md
 ---
+# Rules Of Hooks 0592Bd574811.Expect
 
 ## Input
 
@@ -54,4 +44,3 @@ function makeListener(instance) {
 }
 
 ```
-      

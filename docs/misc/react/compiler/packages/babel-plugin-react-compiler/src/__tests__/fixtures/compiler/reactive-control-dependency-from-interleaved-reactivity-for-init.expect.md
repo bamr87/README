@@ -1,14 +1,12 @@
 ---
+title: Reactive Control Dependency From Interleaved Reactivity For Init.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-from-interleaved-reactivity-for-init.expect.md
-summary: "```javascript\nfunction Component(props) {\n  // a and b are independent\
-  \ but their mutations are interleaved, so\n  // they get grouped in a reactive scope.\
-  \ this means that a becomes\n  // reactive since ..."
 tags:
 - javascript
-title: Reactive Control Dependency From Interleaved Reactivity For Init.Expect
+last_updated: null
+source_file: reactive-control-dependency-from-interleaved-reactivity-for-init.expect.md
 ---
+# Reactive Control Dependency From Interleaved Reactivity For Init.Expect
 
 ## Input
 
@@ -79,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]

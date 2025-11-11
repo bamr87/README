@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Rules Of Hooks B4Dcda3D60Ed.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-rules-of-hooks-b4dcda3d60ed.expect.md
-summary: '```javascript
-
-  // Expected to fail'
 tags:
 - javascript
-title: Error.Invalid Rules Of Hooks B4Dcda3D60Ed.Expect
+last_updated: null
+source_file: error.invalid-rules-of-hooks-b4dcda3d60ed.expect.md
 ---
+# Error.Invalid Rules Of Hooks B4Dcda3D60Ed.Expect
 
 ## Input
 
@@ -39,5 +37,4 @@ error.invalid-rules-of-hooks-b4dcda3d60ed.ts:6:9
   7 | }
   8 |
 ```
-          
-      
+

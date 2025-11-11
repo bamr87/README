@@ -1,16 +1,12 @@
 ---
+title: Invalid Fnexpr Reference.Expect
 category: misc
-last_updated: null
-source_file: invalid-fnexpr-reference.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import  as React from ''react'';'
 tags:
 - javascript
-title: Invalid Fnexpr Reference.Expect
+last_updated: null
+source_file: invalid-fnexpr-reference.expect.md
 ---
+# Invalid Fnexpr Reference.Expect
 
 ## Input
 
@@ -66,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['memo: The first argument must be a component. Instead received: %s','undefined']

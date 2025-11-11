@@ -1,14 +1,12 @@
 ---
+title: Error.Usememo Aliased Var.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-aliased-var.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.Usememo Aliased Var.Expect
+last_updated: null
+source_file: error.useMemo-aliased-var.expect.md
 ---
+# Error.Usememo Aliased Var.Expect
 
 ## Input
 
@@ -44,5 +42,4 @@ error.useMemo-aliased-var.ts:9:17
   10 | }
   11 |
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Usecallback Infer Scope Global.Expect
 category: misc
-last_updated: null
-source_file: useCallback-infer-scope-global.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Usecallback Infer Scope Global.Expect
+last_updated: null
+source_file: useCallback-infer-scope-global.expect.md
 ---
+# Usecallback Infer Scope Global.Expect
 
 ## Input
 
@@ -52,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

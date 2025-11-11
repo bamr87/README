@@ -1,14 +1,13 @@
 ---
+title: Installation Guide
 category: user-guides
-last_updated: null
-source_file: installation.md
-summary: This document explains how to install and configure the application.
 tags:
 - python
 - javascript
 - docker
 - user-guides
-title: Installation Guide
+last_updated: null
+source_file: installation.md
 ---
 # Installation Guide
 

@@ -1,18 +1,12 @@
 ---
+title: Arrow Function Expr Gating Test.Expect
 category: misc
-last_updated: null
-source_file: arrow-function-expr-gating-test.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {Stringify} from ''sharedruntime'';
-
-  const ErrorView = ({error, retry}) => <Stringify error={error}></Stringify>;'
 tags:
 - javascript
-title: Arrow Function Expr Gating Test.Expect
+last_updated: null
+source_file: arrow-function-expr-gating-test.expect.md
 ---
+# Arrow Function Expr Gating Test.Expect
 
 ## Input
 
@@ -60,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{}</div>

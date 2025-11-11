@@ -1,18 +1,12 @@
 ---
+title: Repro No Value For Temporary Reactive Scope With Early Return.Expect
 category: misc
-last_updated: null
-source_file: repro-no-value-for-temporary-reactive-scope-with-early-return.expect.md
-summary: '```javascript
-
-  // @flow @enableAssumeHooksFollowRulesOfReact @enableTransitivelyFreezeFunctionExpressions
-
-  import {identity, makeObjectPrimitives} from ''sharedruntime'';
-
-  import fbt from ''fbt'';'
 tags:
 - javascript
-title: Repro No Value For Temporary Reactive Scope With Early Return.Expect
+last_updated: null
+source_file: repro-no-value-for-temporary-reactive-scope-with-early-return.expect.md
 ---
+# Repro No Value For Temporary Reactive Scope With Early Return.Expect
 
 ## Input
 
@@ -94,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="foo">Lorum ipsumvalue1 blah blah blah</div>

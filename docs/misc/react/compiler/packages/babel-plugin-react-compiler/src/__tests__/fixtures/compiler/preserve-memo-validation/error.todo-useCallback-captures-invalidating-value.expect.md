@@ -1,14 +1,12 @@
 ---
+title: Error.Todo Usecallback Captures Invalidating Value.Expect
 category: misc
-last_updated: null
-source_file: error.todo-useCallback-captures-invalidating-value.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees'
 tags:
 - javascript
-title: Error.Todo Usecallback Captures Invalidating Value.Expect
+last_updated: null
+source_file: error.todo-useCallback-captures-invalidating-value.expect.md
 ---
+# Error.Todo Usecallback Captures Invalidating Value.Expect
 
 ## Input
 
@@ -54,5 +52,4 @@ error.todo-useCallback-captures-invalidating-value.ts:13:21
   15 |
   16 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

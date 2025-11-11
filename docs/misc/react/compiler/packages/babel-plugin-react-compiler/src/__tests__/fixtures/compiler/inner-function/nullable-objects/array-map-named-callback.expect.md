@@ -1,15 +1,13 @@
 ---
+title: Array Map Named Callback.Expect
 category: misc
-last_updated: null
-source_file: array-map-named-callback.expect.md
-summary: "```javascript\n/\n  Forked from arraymapsimple.js\n \n  Whether lambdas\
-  \ are named or passed inline shouldn't affect whether we expect\n  it to be called.\n\
-  \ /\nfunction useFoo({arr1, arr2}) {\n  const cb1 = e ..."
 tags:
 - javascript
 - aws
-title: Array Map Named Callback.Expect
+last_updated: null
+source_file: array-map-named-callback.expect.md
 ---
+# Array Map Named Callback.Expect
 
 ## Input
 
@@ -113,7 +111,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]
 [[],[]]

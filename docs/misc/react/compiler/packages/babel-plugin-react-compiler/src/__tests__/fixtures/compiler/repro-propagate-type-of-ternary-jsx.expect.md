@@ -1,14 +1,12 @@
 ---
+title: Repro Propagate Type Of Ternary Jsx.Expect
 category: misc
-last_updated: null
-source_file: repro-propagate-type-of-ternary-jsx.expect.md
-summary: "```javascript\nfunction V0({v1, v2}: V3<{v1: any, v2: V4}>): V12.V11 {\n\
-  \  const v5 = v1.v6?.v7;\n  return (\n    <Component8 c9={va} cb=\"apqjx\">\n  \
-  \    {v5 != null ? (\n        <ComponentC cd={v5}>\n        ..."
 tags:
 - javascript
-title: Repro Propagate Type Of Ternary Jsx.Expect
+last_updated: null
+source_file: repro-propagate-type-of-ternary-jsx.expect.md
 ---
+# Repro Propagate Type Of Ternary Jsx.Expect
 
 ## Input
 
@@ -62,6 +60,6 @@ function V0(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

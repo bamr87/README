@@ -1,14 +1,12 @@
 ---
+title: Babel Existing React Import.Expect
 category: misc
-last_updated: null
-source_file: babel-existing-react-import.expect.md
-summary: '```javascript
-
-  import {useState, useMemo} from ''react'';'
 tags:
 - javascript
-title: Babel Existing React Import.Expect
+last_updated: null
+source_file: babel-existing-react-import.expect.md
 ---
+# Babel Existing React Import.Expect
 
 ## Input
 
@@ -84,4 +82,3 @@ function Component2(props) {
 }
 
 ```
-      

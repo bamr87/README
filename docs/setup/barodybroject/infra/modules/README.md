@@ -1,18 +1,14 @@
 ---
+title: modules Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bicep\n// Use the fetchcontainerimage module in other Bicep templates\n\
-  module fetchContainer 'modules/fetchcontainerimage.bicep' = {\n  name: 'fetchExistingContainer'\n\
-  \  params: {\n    exists: true\n    ..."
 tags:
 - docker
 - azure
 - api
 - setup
-title: modules Directory
+last_updated: null
+source_file: README.md
 ---
-
 # modules Directory
 
 ## Purpose

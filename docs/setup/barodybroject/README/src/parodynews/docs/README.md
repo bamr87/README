@@ -1,16 +1,14 @@
 ---
+title: docs Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```bash\n Build HTML documentation\nmake html"
 tags:
 - python
 - docker
 - api
 - setup
-title: docs Directory
+last_updated: null
+source_file: README.md
 ---
-
 # docs Directory
 
 ## Purpose
@@ -31,7 +29,7 @@ Documentation is built using Sphinx with support for multiple output formats:
 # Build HTML documentation
 make html
 
-# Build PDF documentation  
+# Build PDF documentation
 make latexpdf
 
 # Clean previous builds
@@ -58,7 +56,7 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex` 
+* :ref:`modindex`
 * :ref:`search`
 ```
 

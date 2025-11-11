@@ -1,18 +1,12 @@
 ---
+title: Usecallback Maybe Modify Free Variable Dont Preserve Memoization Guarantee.Expect
 category: misc
-last_updated: null
-source_file: useCallback-maybe-modify-free-variable-dont-preserve-memoization-guarantee.expect.md
-summary: '```javascript
-
-  // @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {identity, makeObjectPrimitives, mutate, useHook} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Maybe Modify Free Variable Dont Preserve Memoization Guarantee.Expect
+last_updated: null
+source_file: useCallback-maybe-modify-free-variable-dont-preserve-memoization-guarantee.expect.md
 ---
+# Usecallback Maybe Modify Free Variable Dont Preserve Memoization Guarantee.Expect
 
 ## Input
 
@@ -76,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

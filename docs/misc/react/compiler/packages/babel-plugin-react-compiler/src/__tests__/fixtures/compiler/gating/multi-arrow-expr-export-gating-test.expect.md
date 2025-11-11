@@ -1,16 +1,12 @@
 ---
+title: Multi Arrow Expr Export Gating Test.Expect
 category: misc
-last_updated: null
-source_file: multi-arrow-expr-export-gating-test.expect.md
-summary: '```javascript
-
-  // @gating
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Multi Arrow Expr Export Gating Test.Expect
+last_updated: null
+source_file: multi-arrow-expr-export-gating-test.expect.md
 ---
+# Multi Arrow Expr Export Gating Test.Expect
 
 ## Input
 
@@ -85,6 +81,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span></span><div>{"error":{}}</div></div>

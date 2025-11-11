@@ -1,14 +1,13 @@
 ---
+title: Error.Todo Function Expression References Later Variable Declaration.Expect
 category: api
-last_updated: null
-source_file: error.todo-function-expression-references-later-variable-declaration.expect.md
-summary: "```javascript\nfunction Component() {\n  let callback = () => {\n    onClick\
-  \ = () => {};\n  };\n  let onClick;"
 tags:
 - javascript
 - api
-title: Error.Todo Function Expression References Later Variable Declaration.Expect
+last_updated: null
+source_file: error.todo-function-expression-references-later-variable-declaration.expect.md
 ---
+# Error.Todo Function Expression References Later Variable Declaration.Expect
 
 ## Input
 
@@ -43,5 +42,4 @@ error.todo-function-expression-references-later-variable-declaration.ts:3:4
   5 |   let onClick;
   6 |
 ```
-          
-      
+

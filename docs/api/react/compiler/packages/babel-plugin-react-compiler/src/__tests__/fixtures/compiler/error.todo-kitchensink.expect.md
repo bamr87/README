@@ -1,16 +1,14 @@
 ---
+title: Error.Todo Kitchensink.Expect
 category: api
-last_updated: null
-source_file: error.todo-kitchensink.expect.md
-summary: "```javascript\nfunction foo([a, b], {c, d, e = 'e'}, f = 'f', ...args) {\n\
-  \  let i = 0;\n  var x = [];"
 tags:
 - javascript
 - api
 - testing
-- api
-title: Error.Todo Kitchensink.Expect
+last_updated: null
+source_file: error.todo-kitchensink.expect.md
 ---
+# Error.Todo Kitchensink.Expect
 
 ## Input
 
@@ -236,5 +234,4 @@ error.todo-kitchensink.ts:53:9
   55 |     case foo(): {
   56 |     }
 ```
-          
-      
+

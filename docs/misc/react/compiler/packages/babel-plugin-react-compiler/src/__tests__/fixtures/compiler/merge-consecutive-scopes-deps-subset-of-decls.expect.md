@@ -1,14 +1,12 @@
 ---
+title: Merge Consecutive Scopes Deps Subset Of Decls.Expect
 category: misc
-last_updated: null
-source_file: merge-consecutive-scopes-deps-subset-of-decls.expect.md
-summary: '```javascript
-
-  import {useState} from ''react'';'
 tags:
 - javascript
-title: Merge Consecutive Scopes Deps Subset Of Decls.Expect
+last_updated: null
+source_file: merge-consecutive-scopes-deps-subset-of-decls.expect.md
 ---
+# Merge Consecutive Scopes Deps Subset Of Decls.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><button>Decrement</button><button>Increment</button></div>

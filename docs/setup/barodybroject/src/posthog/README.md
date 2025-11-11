@@ -1,16 +1,14 @@
 ---
+title: PostHog Docker Deployment
 category: setup
-last_updated: null
-source_file: README.md
-summary: This is a Docker Compose setup for running PostHog locally with environment
-  variable configuration.
 tags:
 - python
 - docker
 - aws
 - api
 - database
-title: PostHog Docker Deployment
+last_updated: null
+source_file: README.md
 ---
 # PostHog Docker Deployment
 
@@ -109,7 +107,7 @@ The following categories of variables are configured:
    ```bash
    # Generate SECRET_KEY
    openssl rand -hex 32
-   
+
    # Generate ENCRYPTION_KEYS
    openssl rand -base64 32
    ```
@@ -130,7 +128,7 @@ The following categories of variables are configured:
    ```bash
    # All services
    docker-compose logs -f
-   
+
    # Specific service
    docker-compose logs -f web
    ```

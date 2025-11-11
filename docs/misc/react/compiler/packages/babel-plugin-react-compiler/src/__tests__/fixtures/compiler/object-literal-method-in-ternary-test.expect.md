@@ -1,14 +1,12 @@
 ---
+title: Object Literal Method In Ternary Test.Expect
 category: misc
-last_updated: null
-source_file: object-literal-method-in-ternary-test.expect.md
-summary: '```javascript
-
-  import {createHookWrapper, CONSTSTRING0, CONSTSTRING1} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Literal Method In Ternary Test.Expect
+last_updated: null
+source_file: object-literal-method-in-ternary-test.expect.md
 ---
+# Object Literal Method In Ternary Test.Expect
 
 ## Input
 
@@ -58,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":"global string 0","shouldInvokeFns":true}</div>

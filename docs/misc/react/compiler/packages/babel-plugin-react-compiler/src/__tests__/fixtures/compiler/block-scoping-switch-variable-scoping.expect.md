@@ -1,15 +1,13 @@
 ---
+title: Block Scoping Switch Variable Scoping.Expect
 category: misc
-last_updated: null
-source_file: block-scoping-switch-variable-scoping.expect.md
-summary: '```javascript
-
-  import {useMemo} from ''react'';'
 tags:
 - javascript
 - testing
-title: Block Scoping Switch Variable Scoping.Expect
+last_updated: null
+source_file: block-scoping-switch-variable-scoping.expect.md
 ---
+# Block Scoping Switch Variable Scoping.Expect
 
 ## Input
 
@@ -73,7 +71,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"value":"hello"}
 logs: ['hello']

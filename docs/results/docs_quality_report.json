@@ -1,0 +1,13 @@
+{
+  "lint": {
+    "files_checked": 2749,
+    "issues_found": 8564,
+    "exit_code": 1
+  },
+  "frontmatter": {
+    "files_checked": 2749,
+    "files_updated": 0,
+    "exit_code": 0
+  },
+  "whitespace_issues": 87
+}

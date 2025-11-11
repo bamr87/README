@@ -1,13 +1,12 @@
 ---
+title: Hoisting Simple Function Expression.Expect
 category: misc
-last_updated: null
-source_file: hoisting-simple-function-expression.expect.md
-summary: "```javascript\nfunction hoisting() {\n  const foo = () => {\n    return\
-  \ bar();\n  };\n  const bar = () => {\n    return 1;\n  };"
 tags:
 - javascript
-title: Hoisting Simple Function Expression.Expect
+last_updated: null
+source_file: hoisting-simple-function-expression.expect.md
 ---
+# Hoisting Simple Function Expression.Expect
 
 ## Input
 
@@ -61,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

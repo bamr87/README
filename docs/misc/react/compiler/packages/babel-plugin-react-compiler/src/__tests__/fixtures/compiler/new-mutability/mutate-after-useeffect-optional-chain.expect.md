@@ -1,19 +1,13 @@
 ---
+title: Mutate After Useeffect Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: mutate-after-useeffect-optional-chain.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none" @loggerTestOnly @enableNewMutationAliasingModel
-
-  import {useEffect, AUTODEPS} from ''react'';
-
-  import {print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Mutate After Useeffect Optional Chain.Expect
+last_updated: null
+source_file: mutate-after-useeffect-optional-chain.expect.md
 ---
+# Mutate After Useeffect Optional Chain.Expect
 
 ## Input
 
@@ -68,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 {"kind":"AutoDepsDecorations","fnLoc":{"start":{"line":9,"column":2,"index":346},"end":{"line":9,"column":49,"index":393},"filename":"mutate-after-useeffect-optional-chain.ts"},"decorations":[{"start":{"line":9,"column":24,"index":368},"end":{"line":9,"column":27,"index":371},"filename":"mutate-after-useeffect-optional-chain.ts","identifierName":"arr"}]}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":5,"column":0,"index":181},"end":{"line":12,"column":1,"index":436},"filename":"mutate-after-useeffect-optional-chain.ts"},"fnName":"Component","memoSlots":0,"memoBlocks":0,"memoValues":0,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: ok) [{"value":1}]
 logs: [1]

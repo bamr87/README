@@ -1,14 +1,12 @@
 ---
+title: Computed Call Evaluation Order.Expect
 category: misc
-last_updated: null
-source_file: computed-call-evaluation-order.expect.md
-summary: "```javascript\n// Should print A, B, arg, original\nfunction Component()\
-  \ {\n  const changeF = o => {\n    o.f = () => console.log('new');\n  };\n  const\
-  \ x = {\n    f: () => console.log('original'),\n  };"
 tags:
 - javascript
-title: Computed Call Evaluation Order.Expect
+last_updated: null
+source_file: computed-call-evaluation-order.expect.md
 ---
+# Computed Call Evaluation Order.Expect
 
 ## Input
 
@@ -73,7 +71,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"f":"[[ function params=0 ]]"}
 logs: ['A','B','arg','original']

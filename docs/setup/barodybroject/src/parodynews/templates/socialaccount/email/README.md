@@ -1,16 +1,13 @@
 ---
+title: Social Account Email Templates Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: Your {{ provider }} account has been successfully connected to your Barody
-  Broject profile.
 tags:
 - python
 - docker
 - setup
-title: Social Account Email Templates Directory
+last_updated: null
+source_file: README.md
 ---
-
 # Social Account Email Templates Directory
 
 ## Purpose
@@ -118,25 +115,25 @@ def social_account_email_context(user, socialaccount, provider):
     <div class="header">
         <h1>Social Account Connected</h1>
     </div>
-    
+
     <div class="content">
         <p>Hello {{ user.get_full_name|default:user.username }},</p>
-        
+
         <p>Great news! Your {{ provider }} account has been successfully connected to your Barody Broject profile.</p>
-        
+
         <div class="provider-info">
             <strong>Connection Details:</strong><br>
             Provider: {{ provider }}<br>
             Account: {{ socialaccount.extra_data.name|default:socialaccount.uid }}<br>
             Connected: {{ socialaccount.date_joined|date:"F j, Y" }}
         </div>
-        
+
         <p>You can now enjoy faster sign-ins using your {{ provider }} credentials!</p>
-        
+
         <a href="{{ account_settings_url }}" class="button">
             Manage Social Accounts
         </a>
-        
+
         <p><small>If you didn't connect this account, please contact our support team immediately at {{ support_email }}.</small></p>
     </div>
 </body>
@@ -152,7 +149,7 @@ from django.conf import settings
 
 def send_social_account_notification(user, socialaccount, action):
     """Send email notification for social account actions"""
-    
+
     provider = socialaccount.provider.title()
     context = {
         'user': user,
@@ -161,7 +158,7 @@ def send_social_account_notification(user, socialaccount, action):
         'site_name': settings.SITE_NAME,
         'account_settings_url': f"{settings.SITE_URL}/accounts/social/",
     }
-    
+
     if action == 'connected':
         subject_template = 'socialaccount/email/account_connected_subject.txt'
         message_template = 'socialaccount/email/account_connected_message.txt'
@@ -170,11 +167,11 @@ def send_social_account_notification(user, socialaccount, action):
         subject_template = 'socialaccount/email/account_disconnected_subject.txt'
         message_template = 'socialaccount/email/account_disconnected_message.txt'
         html_template = 'socialaccount/email/account_disconnected_message.html'
-    
+
     subject = render_to_string(subject_template, context).strip()
     message = render_to_string(message_template, context)
     html_message = render_to_string(html_template, context)
-    
+
     send_mail(
         subject=subject,
         message=message,
@@ -187,7 +184,7 @@ def send_social_account_notification(user, socialaccount, action):
 
 ## Container Configuration
 - **Runtime**: Django email backend with template rendering
-- **Dependencies**: 
+- **Dependencies**:
   - Django email system
   - django-allauth social account models
   - Email template rendering engine
@@ -200,12 +197,12 @@ def send_social_account_notification(user, socialaccount, action):
 - **Security**: Email content sanitization and CSRF protection
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Social account connection/disconnection events
   - User social authentication workflows
   - Account management and settings pages
   - OAuth provider integration callbacks
-- **Outgoing**: 
+- **Outgoing**:
   - SMTP email delivery system
   - User notification preferences
   - Email tracking and analytics

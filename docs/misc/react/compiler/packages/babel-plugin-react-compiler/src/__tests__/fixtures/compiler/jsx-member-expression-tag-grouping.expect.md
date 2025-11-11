@@ -1,13 +1,12 @@
 ---
+title: Jsx Member Expression Tag Grouping.Expect
 category: misc
-last_updated: null
-source_file: jsx-member-expression-tag-grouping.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const maybeMutable = new MaybeMutable();\n\
-  \  return <Foo.Bar>{maybeMutate(maybeMutable)}</Foo.Bar>;\n}"
 tags:
 - javascript
-title: Jsx Member Expression Tag Grouping.Expect
+last_updated: null
+source_file: jsx-member-expression-tag-grouping.expect.md
 ---
+# Jsx Member Expression Tag Grouping.Expect
 
 ## Input
 
@@ -37,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

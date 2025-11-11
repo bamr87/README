@@ -1,14 +1,12 @@
 ---
+title: Constant Propagation Into Function Expressions.Expect
 category: misc
-last_updated: null
-source_file: constant-propagation-into-function-expressions.expect.md
-summary: '```javascript
-
-  import {Stringify, identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Constant Propagation Into Function Expressions.Expect
+last_updated: null
+source_file: constant-propagation-into-function-expressions.expect.md
 ---
+# Constant Propagation Into Function Expressions.Expect
 
 ## Input
 
@@ -61,7 +59,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"onEvent":{"kind":"Function","result":42},"shouldInvokeFns":true}</div>
 <div>{"onEvent":{"kind":"Function","result":42},"shouldInvokeFns":true}</div>

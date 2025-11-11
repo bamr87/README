@@ -1,14 +1,12 @@
 ---
+title: Error.Not Useeffect External Mutate.Expect
 category: misc
-last_updated: null
-source_file: error.not-useEffect-external-mutate.expect.md
-summary: '```javascript
-
-  let x = {a: 42};'
 tags:
 - javascript
-title: Error.Not Useeffect External Mutate.Expect
+last_updated: null
+source_file: error.not-useEffect-external-mutate.expect.md
 ---
+# Error.Not Useeffect External Mutate.Expect
 
 ## Input
 
@@ -56,5 +54,4 @@ error.not-useEffect-external-mutate.ts:6:4
   8 | }
   9 |
 ```
-          
-      
+

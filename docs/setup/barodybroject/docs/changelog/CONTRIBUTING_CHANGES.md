@@ -1,16 +1,14 @@
 ---
+title: Contributing Changes Documentation
 category: setup
-last_updated: null
-source_file: CONTRIBUTING_CHANGES.md
-summary: This guide provides detailed instructions for contributing changes and maintaining
-  documentation in the Barodybroject changelog system.
 tags:
 - python
 - api
 - database
 - testing
 - setup
-title: Contributing Changes Documentation
+last_updated: null
+source_file: CONTRIBUTING_CHANGES.md
 ---
 # Contributing Changes Documentation
 
@@ -243,10 +241,10 @@ breaking: true|false
 def example_function(parameter):
     """
     Clear docstring explaining the function.
-    
+
     Args:
         parameter: Description of the parameter
-    
+
     Returns:
         Description of what is returned
     """
@@ -525,8 +523,8 @@ This contribution guide is itself documentation that can be improved:
 
 ---
 
-**Last Updated**: January 27, 2025  
-**Version**: 1.0.0  
+**Last Updated**: January 27, 2025
+**Version**: 1.0.0
 **Maintainer**: Barodybroject Documentation Team
 
 For questions about this process, please contact the documentation maintainers or open an issue with the `documentation` label.

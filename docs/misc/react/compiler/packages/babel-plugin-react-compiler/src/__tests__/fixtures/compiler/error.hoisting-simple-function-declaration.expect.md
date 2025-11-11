@@ -1,14 +1,12 @@
 ---
+title: Error.Hoisting Simple Function Declaration.Expect
 category: misc
-last_updated: null
-source_file: error.hoisting-simple-function-declaration.expect.md
-summary: "```javascript\nfunction hoisting() {\n  function bar() {\n    return x;\n\
-  \  }\n  return baz(); // OK: FuncDecls are HoistableDeclarations that have both\
-  \ declaration and value hoisting\n  function baz() {\n   ..."
 tags:
 - javascript
-title: Error.Hoisting Simple Function Declaration.Expect
+last_updated: null
+source_file: error.hoisting-simple-function-declaration.expect.md
 ---
+# Error.Hoisting Simple Function Declaration.Expect
 
 ## Input
 
@@ -52,5 +50,4 @@ error.hoisting-simple-function-declaration.ts:6:2
   10 |
   11 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

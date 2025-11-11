@@ -1,15 +1,13 @@
 ---
+title: Inline Jsx Transform.Expect
 category: misc
-last_updated: null
-source_file: inline-jsx-transform.expect.md
-summary: '```javascript
-
-  // @inlineJsxTransform'
 tags:
 - javascript
 - testing
-title: Inline Jsx Transform.Expect
+last_updated: null
+source_file: inline-jsx-transform.expect.md
 ---
+# Inline Jsx Transform.Expect
 
 ## Input
 
@@ -484,6 +482,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span class="abc">Hello world</span><div>abc</div></div>

@@ -1,13 +1,12 @@
 ---
+title: Destructuring With Typecast As Default Value.Flow.Expect
 category: misc
-last_updated: null
-source_file: destructuring-with-typecast-as-default-value.flow.expect.md
-summary: "```javascript\n// @flow\nfunction Component(props) {\n  const [x = ([]:\
-  \ Array<number>)] = props.y;\n  return x;\n}"
 tags:
 - javascript
-title: Destructuring With Typecast As Default Value.Flow.Expect
+last_updated: null
+source_file: destructuring-with-typecast-as-default-value.flow.expect.md
 ---
+# Destructuring With Typecast As Default Value.Flow.Expect
 
 ## Input
 
@@ -50,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

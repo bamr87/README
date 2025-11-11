@@ -1,13 +1,12 @@
 ---
+title: Component Declaration Basic.Flow.Expect
 category: misc
-last_updated: null
-source_file: component-declaration-basic.flow.expect.md
-summary: "```javascript\n// @flow @compilationMode:\"infer\"\nexport default component\
-  \ Foo(bar: number) {\n  return <Bar bar={bar} />;\n}"
 tags:
 - javascript
-title: Component Declaration Basic.Flow.Expect
+last_updated: null
+source_file: component-declaration-basic.flow.expect.md
 ---
+# Component Declaration Basic.Flow.Expect
 
 ## Input
 
@@ -70,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

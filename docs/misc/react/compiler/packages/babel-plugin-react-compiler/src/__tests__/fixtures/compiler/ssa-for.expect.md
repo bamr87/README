@@ -1,13 +1,12 @@
 ---
+title: Ssa For.Expect
 category: misc
-last_updated: null
-source_file: ssa-for.expect.md
-summary: "```javascript\nfunction foo() {\n  let x = 1;\n  for (let i = 0; i < 10;\
-  \ i++) {\n    x += 1;\n  }\n  return x;\n}"
 tags:
 - javascript
-title: Ssa For.Expect
+last_updated: null
+source_file: ssa-for.expect.md
 ---
+# Ssa For.Expect
 
 ## Input
 
@@ -46,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 11

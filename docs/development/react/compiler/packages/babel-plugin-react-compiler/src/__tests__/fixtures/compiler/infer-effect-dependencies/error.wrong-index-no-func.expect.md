@@ -1,17 +1,13 @@
 ---
+title: Error.Wrong Index No Func.Expect
 category: development
-last_updated: null
-source_file: error.wrong-index-no-func.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Wrong Index No Func.Expect
+last_updated: null
+source_file: error.wrong-index-no-func.expect.md
 ---
+# Error.Wrong Index No Func.Expect
 
 ## Input
 
@@ -43,5 +39,4 @@ error.wrong-index-no-func.ts:5:2
   6 | }
   7 |
 ```
-          
-      
+

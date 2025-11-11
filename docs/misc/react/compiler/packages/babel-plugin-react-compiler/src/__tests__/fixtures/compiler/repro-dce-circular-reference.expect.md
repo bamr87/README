@@ -1,14 +1,12 @@
 ---
+title: Repro Dce Circular Reference.Expect
 category: misc
-last_updated: null
-source_file: repro-dce-circular-reference.expect.md
-summary: '```javascript
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Dce Circular Reference.Expect
+last_updated: null
+source_file: repro-dce-circular-reference.expect.md
 ---
+# Repro Dce Circular Reference.Expect
 
 ## Input
 
@@ -78,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [6]

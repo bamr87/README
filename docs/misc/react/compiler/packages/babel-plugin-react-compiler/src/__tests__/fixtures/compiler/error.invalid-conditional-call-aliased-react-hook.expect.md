@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Conditional Call Aliased React Hook.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-conditional-call-aliased-react-hook.expect.md
-summary: '```javascript
-
-  import {useState as state} from ''react'';'
 tags:
 - javascript
-title: Error.Invalid Conditional Call Aliased React Hook.Expect
+last_updated: null
+source_file: error.invalid-conditional-call-aliased-react-hook.expect.md
 ---
+# Error.Invalid Conditional Call Aliased React Hook.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.invalid-conditional-call-aliased-react-hook.ts:6:10
   8 |   return s;
   9 | }
 ```
-          
-      
+

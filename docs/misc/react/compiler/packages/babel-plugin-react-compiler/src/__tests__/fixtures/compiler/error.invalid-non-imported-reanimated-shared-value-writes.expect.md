@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Non Imported Reanimated Shared Value Writes.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-non-imported-reanimated-shared-value-writes.expect.md
-summary: '```javascript
-
-  // @enableCustomTypeDefinitionForReanimated'
 tags:
 - javascript
 - testing
-title: Error.Invalid Non Imported Reanimated Shared Value Writes.Expect
+last_updated: null
+source_file: error.invalid-non-imported-reanimated-shared-value-writes.expect.md
 ---
+# Error.Invalid Non Imported Reanimated Shared Value Writes.Expect
 
 ## Input
 
@@ -51,5 +49,4 @@ error.invalid-non-imported-reanimated-shared-value-writes.ts:11:22
   13 |     />
   14 |   );
 ```
-          
-      
+

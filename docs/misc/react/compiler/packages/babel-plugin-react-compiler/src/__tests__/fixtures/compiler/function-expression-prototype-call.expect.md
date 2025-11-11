@@ -1,13 +1,12 @@
 ---
+title: Function Expression Prototype Call.Expect
 category: misc
-last_updated: null
-source_file: function-expression-prototype-call.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const f = function () {\n\
-  \    return <div>{props.name}</div>;\n  };\n  return f.call();\n}"
 tags:
 - javascript
-title: Function Expression Prototype Call.Expect
+last_updated: null
+source_file: function-expression-prototype-call.expect.md
 ---
+# Function Expression Prototype Call.Expect
 
 ## Input
 
@@ -53,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Jason</div>

@@ -1,19 +1,13 @@
 ---
+title: Usecallback Captures Reassigned Context Property.Expect
 category: development
-last_updated: null
-source_file: useCallback-captures-reassigned-context-property.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - development
-title: Usecallback Captures Reassigned Context Property.Expect
+last_updated: null
+source_file: useCallback-captures-reassigned-context-property.expect.md
 ---
+# Usecallback Captures Reassigned Context Property.Expect
 
 ## Input
 
@@ -112,6 +106,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":[2]},"shouldInvokeFns":true}</div>

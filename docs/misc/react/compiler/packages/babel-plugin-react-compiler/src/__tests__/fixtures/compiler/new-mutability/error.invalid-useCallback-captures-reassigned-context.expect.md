@@ -1,19 +1,12 @@
 ---
+title: Error.Invalid Usecallback Captures Reassigned Context.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-useCallback-captures-reassigned-context.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableNewMutationAliasingModel
-  @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useCallback} from ''react'';
-
-  import {makeArray}...'
 tags:
 - javascript
-title: Error.Invalid Usecallback Captures Reassigned Context.Expect
+last_updated: null
+source_file: error.invalid-useCallback-captures-reassigned-context.expect.md
 ---
+# Error.Invalid Usecallback Captures Reassigned Context.Expect
 
 ## Input
 
@@ -73,5 +66,4 @@ error.invalid-useCallback-captures-reassigned-context.ts:11:25
   13 |   x = makeArray();
   14 |
 ```
-          
-      
+

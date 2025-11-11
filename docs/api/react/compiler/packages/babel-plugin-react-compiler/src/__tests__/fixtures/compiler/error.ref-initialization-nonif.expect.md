@@ -1,17 +1,13 @@
 ---
+title: Error.Ref Initialization Nonif.Expect
 category: api
-last_updated: null
-source_file: error.ref-initialization-nonif.expect.md
-summary: '```javascript
-
-  //@flow
-
-  import {useRef} from ''react'';'
 tags:
 - javascript
 - api
-title: Error.Ref Initialization Nonif.Expect
+last_updated: null
+source_file: error.ref-initialization-nonif.expect.md
 ---
+# Error.Ref Initialization Nonif.Expect
 
 ## Input
 
@@ -64,5 +60,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
    9 |   }
   10 | }
 ```
-          
-      
+

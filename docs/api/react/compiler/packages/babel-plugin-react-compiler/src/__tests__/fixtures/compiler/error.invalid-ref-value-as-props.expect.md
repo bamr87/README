@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Ref Value As Props.Expect
 category: api
-last_updated: null
-source_file: error.invalid-ref-value-as-props.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  return <Foo ref={ref.current} />;\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Ref Value As Props.Expect
+last_updated: null
+source_file: error.invalid-ref-value-as-props.expect.md
 ---
+# Error.Invalid Ref Value As Props.Expect
 
 ## Input
 
@@ -39,5 +38,4 @@ error.invalid-ref-value-as-props.ts:4:19
   5 | }
   6 |
 ```
-          
-      
+

@@ -1,13 +1,12 @@
 ---
+title: Component Inner Function With Many Args.Expect
 category: misc
-last_updated: null
-source_file: component-inner-function-with-many-args.expect.md
-summary: "```javascript\nimport {Stringify} from 'sharedruntime';\nfunction Component(props)\
-  \ {\n  const cb = (x, y, z) => x + y + z;"
 tags:
 - javascript
-title: Component Inner Function With Many Args.Expect
+last_updated: null
+source_file: component-inner-function-with-many-args.expect.md
 ---
+# Component Inner Function With Many Args.Expect
 
 ## Input
 
@@ -54,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":"[[ function params=3 ]]","id":0}</div>

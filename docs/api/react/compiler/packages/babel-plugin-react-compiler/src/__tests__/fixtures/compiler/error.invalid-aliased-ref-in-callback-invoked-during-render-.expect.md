@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Aliased Ref In Callback Invoked During Render .Expect
 category: api
-last_updated: null
-source_file: error.invalid-aliased-ref-in-callback-invoked-during-render-.expect.md
-summary: "```javascript\n// @validateRefAccessDuringRender\nfunction Component(props)\
-  \ {\n  const ref = useRef(null);\n  const renderItem = item => {\n    const aliasedRef\
-  \ = ref;\n    const current = aliasedRef.curren..."
 tags:
 - javascript
 - api
-title: Error.Invalid Aliased Ref In Callback Invoked During Render .Expect
+last_updated: null
+source_file: error.invalid-aliased-ref-in-callback-invoked-during-render-.expect.md
 ---
+# Error.Invalid Aliased Ref In Callback Invoked During Render .Expect
 
 ## Input
 
@@ -45,5 +43,4 @@ error.invalid-aliased-ref-in-callback-invoked-during-render-.ts:9:33
   10 | }
   11 |
 ```
-          
-      
+

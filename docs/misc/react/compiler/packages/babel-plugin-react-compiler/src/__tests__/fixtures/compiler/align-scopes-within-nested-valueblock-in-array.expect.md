@@ -1,14 +1,12 @@
 ---
+title: Align Scopes Within Nested Valueblock In Array.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-within-nested-valueblock-in-array.expect.md
-summary: '```javascript
-
-  import {Stringify, identity, makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Within Nested Valueblock In Array.Expect
+last_updated: null
+source_file: align-scopes-within-nested-valueblock-in-array.expect.md
 ---
+# Align Scopes Within Nested Valueblock In Array.Expect
 
 ## Input
 
@@ -87,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>foo</div><div>{"value":[null,null,null]}</div>

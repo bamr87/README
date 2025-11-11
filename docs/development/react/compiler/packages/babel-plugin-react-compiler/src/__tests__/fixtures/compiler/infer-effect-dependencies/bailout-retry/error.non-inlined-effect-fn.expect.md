@@ -1,18 +1,14 @@
 ---
+title: Error.Non Inlined Effect Fn.Expect
 category: development
-last_updated: null
-source_file: error.non-inlined-effect-fn.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
 - aws
 - development
-title: Error.Non Inlined Effect Fn.Expect
+last_updated: null
+source_file: error.non-inlined-effect-fn.expect.md
 ---
+# Error.Non Inlined Effect Fn.Expect
 
 ## Input
 
@@ -59,5 +55,4 @@ error.non-inlined-effect-fn.ts:20:2
   21 | }
   22 |
 ```
-          
-      
+

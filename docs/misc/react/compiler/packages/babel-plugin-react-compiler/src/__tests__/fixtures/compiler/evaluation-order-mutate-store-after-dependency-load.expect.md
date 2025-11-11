@@ -1,15 +1,13 @@
 ---
+title: Evaluation Order Mutate Store After Dependency Load.Expect
 category: misc
-last_updated: null
-source_file: evaluation-order-mutate-store-after-dependency-load.expect.md
-summary: "``javascript\n/\n  Test that we preserve order of evaluation on the following\
-  \ case scope@0\n  `js\n  // simplified HIR\n  scope@0\n     ...\n     $0 = arr.length\n\
-  \     $1 = arr.length = 0\n \n  scope@1 < here w..."
 tags:
 - javascript
 - testing
-title: Evaluation Order Mutate Store After Dependency Load.Expect
+last_updated: null
+source_file: evaluation-order-mutate-store-after-dependency-load.expect.md
 ---
+# Evaluation Order Mutate Store After Dependency Load.Expect
 
 ## Input
 
@@ -90,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [5,0]

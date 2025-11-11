@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Functiondecl Hoisting.Expect
 category: api
-last_updated: null
-source_file: error.todo-functiondecl-hoisting.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Todo Functiondecl Hoisting.Expect
+last_updated: null
+source_file: error.todo-functiondecl-hoisting.expect.md
 ---
+# Error.Todo Functiondecl Hoisting.Expect
 
 ## Input
 
@@ -56,5 +54,4 @@ error.todo-functiondecl-hoisting.ts:12:17
   14 |     return {value};
   15 |   }
 ```
-          
-      
+

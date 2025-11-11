@@ -1,14 +1,14 @@
 ---
+title: Changelog
 category: api
-last_updated: null
-source_file: CHANGELOG.md
-summary: No summary available
 tags:
 - javascript
 - api
-- api
-title: Changelog
+last_updated: null
+source_file: CHANGELOG.md
 ---
+# Changelog
+
 ## 19.1.0-rc.2 (May 14, 2025)
 
 ## babel-plugin-react-compiler

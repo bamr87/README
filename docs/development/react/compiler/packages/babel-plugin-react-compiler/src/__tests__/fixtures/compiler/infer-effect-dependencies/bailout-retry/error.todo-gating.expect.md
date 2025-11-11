@@ -1,19 +1,13 @@
 ---
+title: Error.Todo Gating.Expect
 category: development
-last_updated: null
-source_file: error.todo-gating.expect.md
-summary: '```javascript
-
-  // @gating @inferEffectDependencies @panicThreshold:"none"
-
-  import useEffectWrapper from ''useEffectWrapper'';
-
-  import {AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Todo Gating.Expect
+last_updated: null
+source_file: error.todo-gating.expect.md
 ---
+# Error.Todo Gating.Expect
 
 ## Input
 
@@ -60,5 +54,4 @@ error.todo-gating.ts:11:2
   13 |   return arr;
   14 | }
 ```
-          
-      
+

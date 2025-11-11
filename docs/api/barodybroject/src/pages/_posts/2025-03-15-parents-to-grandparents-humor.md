@@ -1,20 +1,12 @@
 ---
-author: Jane Doe
+title: 2025 03 15 Parents To Grandparents Humor
 category: api
-description: Exploring the humorous shift from parent to grandparents.
-last_updated: null
-published_at: '2025-03-15'
-slug: parents-to-grandparents-humor
-source_file: 2025-03-15-parents-to-grandparents-humor.md
-summary: In life, certain transitions are inevitable, yet few are as humorously perplexing
-  as watching your parents shift from stern guardians to indulgent grandparents overnight.
-  The venerable figures of our ...
 tags:
 - api
-- api
-title: 2025 03 15 Parents To Grandparents Humor
+last_updated: null
+source_file: 2025-03-15-parents-to-grandparents-humor.md
 ---
-
+# 2025 03 15 Parents To Grandparents Humor
 
 **From Parents to Grandparents: Navigating the Transition with Humor and Grace**
 

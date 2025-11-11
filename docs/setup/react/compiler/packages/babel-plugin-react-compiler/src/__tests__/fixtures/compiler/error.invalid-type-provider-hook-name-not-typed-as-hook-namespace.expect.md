@@ -1,16 +1,14 @@
 ---
+title: Error.Invalid Type Provider Hook Name Not Typed As Hook Namespace.Expect
 category: setup
-last_updated: null
-source_file: error.invalid-type-provider-hook-name-not-typed-as-hook-namespace.expect.md
-summary: '```javascript
-
-  import ReactCompilerTest from ''ReactCompilerTest'';'
 tags:
 - javascript
 - testing
 - setup
-title: Error.Invalid Type Provider Hook Name Not Typed As Hook Namespace.Expect
+last_updated: null
+source_file: error.invalid-type-provider-hook-name-not-typed-as-hook-namespace.expect.md
 ---
+# Error.Invalid Type Provider Hook Name Not Typed As Hook Namespace.Expect
 
 ## Input
 
@@ -41,5 +39,4 @@ error.invalid-type-provider-hook-name-not-typed-as-hook-namespace.ts:4:9
   5 | }
   6 |
 ```
-          
-      
+

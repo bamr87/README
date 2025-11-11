@@ -1,14 +1,12 @@
 ---
+title: Jsx Attribute Default To True.Expect
 category: misc
-last_updated: null
-source_file: jsx-attribute-default-to-true.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Jsx Attribute Default To True.Expect
+last_updated: null
+source_file: jsx-attribute-default-to-true.expect.md
 ---
+# Jsx Attribute Default To True.Expect
 
 ## Input
 
@@ -51,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"truthyAttribute":true}</div>

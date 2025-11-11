@@ -1,15 +1,13 @@
 ---
-category: misc
-last_updated: null
-source_file: useCallback-call-second-function-which-captures-maybe-mutable-value-preserve-memoization.expect.md
-summary: "```javascript\n// @enablePreserveExistingMemoizationGuarantees\nimport {useCallback}\
-  \ from 'react';\nimport {\n  identity,\n  logValue,\n  makeObjectPrimitives,\n \
-  \ useHook,\n} from 'sharedruntime';"
-tags:
-- javascript
 title: Usecallback Call Second Function Which Captures Maybe Mutable Value Preserve
   Memoization.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: useCallback-call-second-function-which-captures-maybe-mutable-value-preserve-memoization.expect.md
 ---
+# Usecallback Call Second Function Which Captures Maybe Mutable Value Preserve Memoization.Expect
 
 ## Input
 
@@ -110,6 +108,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

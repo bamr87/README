@@ -1,13 +1,12 @@
 ---
+title: Reassignment.Expect
 category: misc
-last_updated: null
-source_file: reassignment.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = [];\n  x.push(props.p0);\n\
-  \  let y = x;"
 tags:
 - javascript
-title: Reassignment.Expect
+last_updated: null
+source_file: reassignment.expect.md
 ---
+# Reassignment.Expect
 
 ## Input
 
@@ -60,4 +59,3 @@ function Component(props) {
 }
 
 ```
-      

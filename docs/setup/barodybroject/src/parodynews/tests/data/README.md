@@ -1,17 +1,15 @@
 ---
+title: data Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n Example test data usage\nimport json\nfrom pathlib import Path"
 tags:
 - python
 - docker
 - api
 - testing
 - setup
-title: data Directory
+last_updated: null
+source_file: README.md
 ---
-
 # data Directory
 
 ## Purpose
@@ -40,7 +38,7 @@ def assistant_test_data():
     with open(data_path, 'r') as f:
         return json.load(f)
 
-@pytest.fixture  
+@pytest.fixture
 def openai_model_data():
     """Load OpenAI model configuration test data."""
     data_path = Path(__file__).parent / 'data' / 'OpenAIModel-2024-11-29.json'

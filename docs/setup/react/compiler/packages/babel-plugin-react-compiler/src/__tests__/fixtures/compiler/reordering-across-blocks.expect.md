@@ -1,15 +1,13 @@
 ---
+title: Reordering Across Blocks.Expect
 category: setup
-last_updated: null
-source_file: reordering-across-blocks.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - setup
-title: Reordering Across Blocks.Expect
+last_updated: null
+source_file: reordering-across-blocks.expect.md
 ---
+# Reordering Across Blocks.Expect
 
 ## Input
 
@@ -114,6 +112,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

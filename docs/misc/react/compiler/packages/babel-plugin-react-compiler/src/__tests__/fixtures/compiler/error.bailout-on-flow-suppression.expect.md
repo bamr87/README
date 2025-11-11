@@ -1,14 +1,12 @@
 ---
+title: Error.Bailout On Flow Suppression.Expect
 category: misc
-last_updated: null
-source_file: error.bailout-on-flow-suppression.expect.md
-summary: '```javascript
-
-  // @enableFlowSuppressions'
 tags:
 - javascript
-title: Error.Bailout On Flow Suppression.Expect
+last_updated: null
+source_file: error.bailout-on-flow-suppression.expect.md
 ---
+# Error.Bailout On Flow Suppression.Expect
 
 ## Input
 
@@ -42,5 +40,4 @@ error.bailout-on-flow-suppression.ts:4:2
   6 |   return null;
   7 | }
 ```
-          
-      
+

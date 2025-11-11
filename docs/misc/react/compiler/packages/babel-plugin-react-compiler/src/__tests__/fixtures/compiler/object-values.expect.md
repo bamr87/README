@@ -1,18 +1,12 @@
 ---
+title: Object Values.Expect
 category: misc
-last_updated: null
-source_file: object-values.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Object Values.Expect
+last_updated: null
+source_file: object-values.expect.md
 ---
+# Object Values.Expect
 
 ## Input
 
@@ -113,6 +107,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"render":"[[ function params=1 ]]"}</div><div>{"render":"[[ function params=1 ]]"}</div></div>

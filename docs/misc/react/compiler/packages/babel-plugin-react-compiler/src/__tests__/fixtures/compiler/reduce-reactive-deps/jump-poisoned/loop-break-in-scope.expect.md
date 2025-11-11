@@ -1,14 +1,12 @@
 ---
+title: Loop Break In Scope.Expect
 category: misc
-last_updated: null
-source_file: loop-break-in-scope.expect.md
-summary: "```javascript\nfunction useFoo({obj, objIsNull}) {\n  const x = [];\n  for\
-  \ (let i = 0; i < 5; i++) {\n    if (objIsNull) {\n      continue;\n    }\n    x.push(obj.a);\n\
-  \  }\n  return x;\n}"
 tags:
 - javascript
-title: Loop Break In Scope.Expect
+last_updated: null
+source_file: loop-break-in-scope.expect.md
 ---
+# Loop Break In Scope.Expect
 
 ## Input
 
@@ -79,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []
 [2,2,2,2,2]

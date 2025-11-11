@@ -1,18 +1,12 @@
 ---
+title: Props Method Dependency.Expect
 category: misc
-last_updated: null
-source_file: props-method-dependency.expect.md
-summary: '```javascript
-
-  // @compilationMode:"infer"
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization} from ''sharedruntime'';'
 tags:
 - javascript
-title: Props Method Dependency.Expect
+last_updated: null
+source_file: props-method-dependency.expect.md
 ---
+# Props Method Dependency.Expect
 
 ## Input
 
@@ -83,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":["[[ function params=0 ]]"],"output":["React"]}</div>
 <div>{"inputs":["[[ function params=0 ]]"],"output":["Compiler"]}</div>

@@ -1,20 +1,12 @@
 ---
-author: '{''name'': ''Satirical News Team''}'
+title: Headline
 category: api
-description: A satirical take on the media frenzy over a spider's climb up the White
-  House water spout, spun as potential suicidal or assassination attempt.
-last_updated: null
-published_at: '2024-08-07'
-source_file: 2024-08-07-Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By
-  Mainstream Media.md
-summary: No summary available
 tags:
 - api
-- api
-title: Headline
+last_updated: null
+source_file: 2024-08-07-Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By
+  Mainstream Media.md
 ---
-
-
 # Headline
 
 * Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By Mainstream Media

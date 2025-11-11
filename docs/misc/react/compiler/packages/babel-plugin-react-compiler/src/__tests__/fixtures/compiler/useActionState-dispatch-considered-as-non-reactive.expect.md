@@ -1,14 +1,12 @@
 ---
+title: Useactionstate Dispatch Considered As Non Reactive.Expect
 category: misc
-last_updated: null
-source_file: useActionState-dispatch-considered-as-non-reactive.expect.md
-summary: '```javascript
-
-  import {useActionState} from ''react'';'
 tags:
 - javascript
-title: Useactionstate Dispatch Considered As Non Reactive.Expect
+last_updated: null
+source_file: useActionState-dispatch-considered-as-non-reactive.expect.md
 ---
+# Useactionstate Dispatch Considered As Non Reactive.Expect
 
 ## Input
 
@@ -63,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

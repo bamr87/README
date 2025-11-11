@@ -1,19 +1,13 @@
 ---
+title: Error.Wrong Index.Expect
 category: development
-last_updated: null
-source_file: error.wrong-index.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies
-
-  import {AUTODEPS} from ''react'';
-
-  import useEffectWrapper from ''useEffectWrapper'';'
 tags:
 - javascript
 - development
-title: Error.Wrong Index.Expect
+last_updated: null
+source_file: error.wrong-index.expect.md
 ---
+# Error.Wrong Index.Expect
 
 ## Input
 
@@ -64,5 +58,4 @@ error.wrong-index.ts:6:2
   13 | }
   14 |
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Array Map Mutable Array Mutating Lambda.Expect
 category: misc
-last_updated: null
-source_file: array-map-mutable-array-mutating-lambda.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = [];\n  const y =\
-  \ x.map(item => {\n    item.updated = true;\n    return item;\n  });\n  return [x,\
-  \ y];\n}"
 tags:
 - javascript
-title: Array Map Mutable Array Mutating Lambda.Expect
+last_updated: null
+source_file: array-map-mutable-array-mutating-lambda.expect.md
 ---
+# Array Map Mutable Array Mutating Lambda.Expect
 
 ## Input
 
@@ -59,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]

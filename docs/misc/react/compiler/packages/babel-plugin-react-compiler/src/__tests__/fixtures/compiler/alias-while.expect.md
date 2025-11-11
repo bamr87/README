@@ -1,14 +1,12 @@
 ---
+title: Alias While.Expect
 category: misc
-last_updated: null
-source_file: alias-while.expect.md
-summary: "```javascript\nfunction foo(cond) {\n  let a = {};\n  let b = {};\n  let\
-  \ c = {};\n  while (cond) {\n    let z = a;\n    a = b;\n    b = c;\n    c = z;\n\
-  \    mutate(a, b);\n  }\n  a;\n  b;\n  c;\n  return a;\n}"
 tags:
 - javascript
-title: Alias While.Expect
+last_updated: null
+source_file: alias-while.expect.md
 ---
+# Alias While.Expect
 
 ## Input
 
@@ -63,4 +61,3 @@ function foo(cond) {
 function mutate(x, y) {}
 
 ```
-      

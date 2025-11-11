@@ -1,14 +1,12 @@
 ---
+title: Error.Dynamic Gating Invalid Identifier.Expect
 category: misc
-last_updated: null
-source_file: error.dynamic-gating-invalid-identifier.expect.md
-summary: '```javascript
-
-  // @dynamicGating:{"source":"sharedruntime"}'
 tags:
 - javascript
-title: Error.Dynamic Gating Invalid Identifier.Expect
+last_updated: null
+source_file: error.dynamic-gating-invalid-identifier.expect.md
 ---
+# Error.Dynamic Gating Invalid Identifier.Expect
 
 ## Input
 
@@ -46,5 +44,4 @@ error.dynamic-gating-invalid-identifier.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

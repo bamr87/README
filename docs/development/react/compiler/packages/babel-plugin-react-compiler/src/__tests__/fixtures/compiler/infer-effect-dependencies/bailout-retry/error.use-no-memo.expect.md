@@ -1,17 +1,13 @@
 ---
+title: Error.Use No Memo.Expect
 category: development
-last_updated: null
-source_file: error.use-no-memo.expect.md
-summary: '```javascript
-
-  // @inferEffectDependencies @panicThreshold:"none"
-
-  import {useEffect, AUTODEPS} from ''react'';'
 tags:
 - javascript
 - development
-title: Error.Use No Memo.Expect
+last_updated: null
+source_file: error.use-no-memo.expect.md
 ---
+# Error.Use No Memo.Expect
 
 ## Input
 
@@ -44,5 +40,4 @@ error.use-no-memo.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

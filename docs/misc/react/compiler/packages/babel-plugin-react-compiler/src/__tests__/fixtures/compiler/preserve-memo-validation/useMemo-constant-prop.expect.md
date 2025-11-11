@@ -1,18 +1,12 @@
 ---
+title: Usememo Constant Prop.Expect
 category: misc
-last_updated: null
-source_file: useMemo-constant-prop.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useMemo} from ''react'';
-
-  import {identity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usememo Constant Prop.Expect
+last_updated: null
+source_file: useMemo-constant-prop.expect.md
 ---
+# Usememo Constant Prop.Expect
 
 ## Input
 
@@ -89,6 +83,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,1,0,1]

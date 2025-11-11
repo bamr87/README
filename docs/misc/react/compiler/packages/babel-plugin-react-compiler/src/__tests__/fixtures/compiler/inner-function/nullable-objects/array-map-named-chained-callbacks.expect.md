@@ -1,15 +1,13 @@
 ---
+title: Array Map Named Chained Callbacks.Expect
 category: misc
-last_updated: null
-source_file: array-map-named-chained-callbacks.expect.md
-summary: "``javascript\n/\n  Forked from arraymapsimple.js\n \n  Here, getVal1 has\
-  \ a known callsite in cb1, but cb1` isn't known to be\n  called (it's only passed\
-  \ to array.map). In this case, we should be\n  conserva..."
 tags:
 - javascript
 - aws
-title: Array Map Named Chained Callbacks.Expect
+last_updated: null
+source_file: array-map-named-chained-callbacks.expect.md
 ---
+# Array Map Named Chained Callbacks.Expect
 
 ## Input
 
@@ -119,7 +117,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]
 [[],[]]

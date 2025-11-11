@@ -1,14 +1,12 @@
 ---
+title: Error.Invalid Hook In Nested Object Method.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-hook-in-nested-object-method.expect.md
-summary: "```javascript\n// @compilationMode:\"infer\"\nfunction Component() {\n \
-  \ 'use memo';\n  const x = {\n    outer() {\n      const y = {\n        inner()\
-  \ {\n          return useFoo();\n        },\n      };\n      retu..."
 tags:
 - javascript
-title: Error.Invalid Hook In Nested Object Method.Expect
+last_updated: null
+source_file: error.invalid-hook-in-nested-object-method.expect.md
 ---
+# Error.Invalid Hook In Nested Object Method.Expect
 
 ## Input
 
@@ -50,5 +48,4 @@ error.invalid-hook-in-nested-object-method.ts:8:17
   10 |       };
   11 |       return y;
 ```
-          
-      
+

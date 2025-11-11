@@ -1,18 +1,12 @@
 ---
+title: Repro Missing Memoization Lack Of Phi Types Explicit Types.Expect
 category: misc
-last_updated: null
-source_file: repro-missing-memoization-lack-of-phi-types-explicit-types.expect.md
-summary: '```javascript
-
-  // @flow @validatePreserveExistingMemoizationGuarantees @enableUseTypeAnnotations
-
-  import {useMemo} from ''react'';
-
-  import {useFragment} from ''sharedruntime'';'
 tags:
 - javascript
-title: Repro Missing Memoization Lack Of Phi Types Explicit Types.Expect
+last_updated: null
+source_file: repro-missing-memoization-lack-of-phi-types-explicit-types.expect.md
 ---
+# Repro Missing Memoization Lack Of Phi Types Explicit Types.Expect
 
 ## Input
 
@@ -100,6 +94,6 @@ function _temp(node) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

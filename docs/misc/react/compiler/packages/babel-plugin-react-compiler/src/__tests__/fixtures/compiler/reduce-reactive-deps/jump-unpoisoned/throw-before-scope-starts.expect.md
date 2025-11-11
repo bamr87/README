@@ -1,14 +1,12 @@
 ---
+title: Throw Before Scope Starts.Expect
 category: misc
-last_updated: null
-source_file: throw-before-scope-starts.expect.md
-summary: '```javascript
-
-  import {arrayPush} from ''sharedruntime'';'
 tags:
 - javascript
-title: Throw Before Scope Starts.Expect
+last_updated: null
+source_file: throw-before-scope-starts.expect.md
 ---
+# Throw Before Scope Starts.Expect
 
 ## Input
 
@@ -83,7 +81,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) Error: throw with error! ]]
 [2]

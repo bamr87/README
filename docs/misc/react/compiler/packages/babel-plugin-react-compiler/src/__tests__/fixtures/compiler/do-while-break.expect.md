@@ -1,13 +1,12 @@
 ---
+title: Do While Break.Expect
 category: misc
-last_updated: null
-source_file: do-while-break.expect.md
-summary: "```javascript\nfunction Component(props) {\n  do {\n    break;\n  } while\
-  \ (props.cond);\n  return props;\n}"
 tags:
 - javascript
-title: Do While Break.Expect
+last_updated: null
+source_file: do-while-break.expect.md
 ---
+# Do While Break.Expect
 
 ## Input
 
@@ -41,4 +40,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -1,13 +1,12 @@
 ---
+title: Store Via Call.Expect
 category: misc
-last_updated: null
-source_file: store-via-call.expect.md
-summary: "```javascript\nfunction foo() {\n  const x = {};\n  const y = foo(x);\n\
-  \  y.mutate();\n  return x;\n}"
 tags:
 - javascript
-title: Store Via Call.Expect
+last_updated: null
+source_file: store-via-call.expect.md
 ---
+# Store Via Call.Expect
 
 ## Input
 
@@ -40,4 +39,3 @@ function foo() {
 }
 
 ```
-      

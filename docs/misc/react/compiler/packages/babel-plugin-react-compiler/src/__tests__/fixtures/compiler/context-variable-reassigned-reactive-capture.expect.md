@@ -1,14 +1,12 @@
 ---
+title: Context Variable Reassigned Reactive Capture.Expect
 category: misc
-last_updated: null
-source_file: context-variable-reassigned-reactive-capture.expect.md
-summary: '```javascript
-
-  import {invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Context Variable Reassigned Reactive Capture.Expect
+last_updated: null
+source_file: context-variable-reassigned-reactive-capture.expect.md
 ---
+# Context Variable Reassigned Reactive Capture.Expect
 
 ## Input
 
@@ -64,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 4

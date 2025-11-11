@@ -1,14 +1,12 @@
 ---
+title: Unclosed Eslint Suppression Skips All Components.Expect
 category: misc
-last_updated: null
-source_file: unclosed-eslint-suppression-skips-all-components.expect.md
-summary: '```javascript
-
-  // @panicThreshold:"none"'
 tags:
 - javascript
-title: Unclosed Eslint Suppression Skips All Components.Expect
+last_updated: null
+source_file: unclosed-eslint-suppression-skips-all-components.expect.md
 ---
+# Unclosed Eslint Suppression Skips All Components.Expect
 
 ## Input
 
@@ -45,6 +43,6 @@ function ValidComponent2(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

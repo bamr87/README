@@ -1,18 +1,12 @@
 ---
+title: Usecallback Infer Read Dep.Expect
 category: misc
-last_updated: null
-source_file: useCallback-infer-read-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees
-
-  import {useCallback} from ''react'';
-
-  import {sum} from ''sharedruntime'';'
 tags:
 - javascript
-title: Usecallback Infer Read Dep.Expect
+last_updated: null
+source_file: useCallback-infer-read-dep.expect.md
 ---
+# Usecallback Infer Read Dep.Expect
 
 ## Input
 
@@ -69,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

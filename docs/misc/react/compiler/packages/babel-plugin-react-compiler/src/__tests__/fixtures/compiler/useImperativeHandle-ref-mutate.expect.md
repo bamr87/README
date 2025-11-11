@@ -1,14 +1,12 @@
 ---
+title: Useimperativehandle Ref Mutate.Expect
 category: misc
-last_updated: null
-source_file: useImperativeHandle-ref-mutate.expect.md
-summary: '```javascript
-
-  // @flow'
 tags:
 - javascript
-title: Useimperativehandle Ref Mutate.Expect
+last_updated: null
+source_file: useImperativeHandle-ref-mutate.expect.md
 ---
+# Useimperativehandle Ref Mutate.Expect
 
 ## Input
 
@@ -71,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

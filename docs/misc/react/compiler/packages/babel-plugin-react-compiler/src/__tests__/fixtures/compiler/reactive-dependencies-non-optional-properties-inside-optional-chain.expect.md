@@ -1,13 +1,12 @@
 ---
+title: Reactive Dependencies Non Optional Properties Inside Optional Chain.Expect
 category: misc
-last_updated: null
-source_file: reactive-dependencies-non-optional-properties-inside-optional-chain.expect.md
-summary: "```javascript\nfunction Component(props) {\n  return props.post.feedback.comments?.edges?.map(render);\n\
-  }"
 tags:
 - javascript
-title: Reactive Dependencies Non Optional Properties Inside Optional Chain.Expect
+last_updated: null
+source_file: reactive-dependencies-non-optional-properties-inside-optional-chain.expect.md
 ---
+# Reactive Dependencies Non Optional Properties Inside Optional Chain.Expect
 
 ## Input
 
@@ -36,4 +35,3 @@ function Component(props) {
 }
 
 ```
-      

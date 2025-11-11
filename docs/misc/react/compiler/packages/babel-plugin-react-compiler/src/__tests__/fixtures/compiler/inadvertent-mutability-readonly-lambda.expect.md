@@ -1,15 +1,13 @@
 ---
+title: Inadvertent Mutability Readonly Lambda.Expect
 category: misc
-last_updated: null
-source_file: inadvertent-mutability-readonly-lambda.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const [value, setValue] =\
-  \ useState(null);\n  // NOTE: this lambda does not capture any mutable values (only\
-  \ the state setter)\n  // and thus should be treated..."
 tags:
 - javascript
 - aws
-title: Inadvertent Mutability Readonly Lambda.Expect
+last_updated: null
+source_file: inadvertent-mutability-readonly-lambda.expect.md
 ---
+# Inadvertent Mutability Readonly Lambda.Expect
 
 ## Input
 
@@ -59,4 +57,3 @@ function Component(props) {
 }
 
 ```
-      

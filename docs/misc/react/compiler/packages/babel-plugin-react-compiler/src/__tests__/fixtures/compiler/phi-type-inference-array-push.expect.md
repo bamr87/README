@@ -1,14 +1,12 @@
 ---
+title: Phi Type Inference Array Push.Expect
 category: misc
-last_updated: null
-source_file: phi-type-inference-array-push.expect.md
-summary: "``javascript\nfunction Component(props) {\n  const x = {};\n  let y;\n \
-  \ if (props.cond) {\n    y = [props.value];\n  } else {\n    y = [];\n  }\n  //\
-  \ This should be inferred as <store> y s.t. x` can still\n  //..."
 tags:
 - javascript
-title: Phi Type Inference Array Push.Expect
+last_updated: null
+source_file: phi-type-inference-array-push.expect.md
 ---
+# Phi Type Inference Array Push.Expect
 
 ## Input
 
@@ -88,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},[3.14,"[[ cyclic ref *1 ]]"]]
 [{},["[[ cyclic ref *1 ]]"]]

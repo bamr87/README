@@ -1,14 +1,12 @@
 ---
+title: Lambda Array Access Member Expr Captured.Expect
 category: misc
-last_updated: null
-source_file: lambda-array-access-member-expr-captured.expect.md
-summary: '```javascript
-
-  import {CONSTNUMBER0, invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Lambda Array Access Member Expr Captured.Expect
+last_updated: null
+source_file: lambda-array-access-member-expr-captured.expect.md
 ---
+# Lambda Array Access Member Expr Captured.Expect
 
 ## Input
 
@@ -60,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 0

@@ -1,15 +1,13 @@
 ---
-category: misc
-last_updated: null
-source_file: error.repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency-mutated-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false'
-tags:
-- javascript
 title: Error.Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency
   Mutated Dep.Expect
+category: misc
+tags:
+- javascript
+last_updated: null
+source_file: error.repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency-mutated-dep.expect.md
 ---
+# Error.Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency Mutated Dep.Expect
 
 ## Input
 
@@ -72,5 +70,4 @@ error.repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency
   27 | }
   28 |
 ```
-          
-      
+

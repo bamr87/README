@@ -1,14 +1,13 @@
 ---
+title: Destructure Param String Literal Key.Expect
 category: misc
-last_updated: null
-source_file: destructure-param-string-literal-key.expect.md
-summary: "```javascript\nfunction foo({data: dataTestID}) {\n  return dataTestID;\n\
-  }"
 tags:
 - javascript
 - testing
-title: Destructure Param String Literal Key.Expect
+last_updated: null
+source_file: destructure-param-string-literal-key.expect.md
 ---
+# Destructure Param String Literal Key.Expect
 
 ## Input
 
@@ -40,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

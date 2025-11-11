@@ -1,14 +1,12 @@
 ---
+title: Ssa Property Alias If.Expect
 category: misc
-last_updated: null
-source_file: ssa-property-alias-if.expect.md
-summary: "```javascript\nfunction foo(a) {\n  const x = {};\n  if (a) {\n    let y\
-  \ = {};\n    x.y = y;\n  } else {\n    let z = {};\n    x.z = z;\n  }\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Ssa Property Alias If.Expect
+last_updated: null
+source_file: ssa-property-alias-if.expect.md
 ---
+# Ssa Property Alias If.Expect
 
 ## Input
 
@@ -78,4 +76,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

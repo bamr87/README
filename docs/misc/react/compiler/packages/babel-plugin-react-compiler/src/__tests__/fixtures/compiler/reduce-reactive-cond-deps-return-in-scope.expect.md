@@ -1,14 +1,12 @@
 ---
+title: Reduce Reactive Cond Deps Return In Scope.Expect
 category: misc
-last_updated: null
-source_file: reduce-reactive-cond-deps-return-in-scope.expect.md
-summary: "```javascript\nfunction useFoo({obj, objIsNull}) {\n  const x = [];\n  if\
-  \ (objIsNull) {\n    return;\n  } else {\n    x.push(obj.a);\n  }\n  x.push(obj.b);\n\
-  \  return x;\n}"
 tags:
 - javascript
-title: Reduce Reactive Cond Deps Return In Scope.Expect
+last_updated: null
+source_file: reduce-reactive-cond-deps-return-in-scope.expect.md
 ---
+# Reduce Reactive Cond Deps Return In Scope.Expect
 
 ## Input
 
@@ -81,7 +79,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 [2,null]

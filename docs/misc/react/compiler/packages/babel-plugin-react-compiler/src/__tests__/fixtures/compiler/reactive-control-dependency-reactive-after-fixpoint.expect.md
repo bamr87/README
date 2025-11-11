@@ -1,13 +1,13 @@
 ---
+title: Reactive Control Dependency Reactive After Fixpoint.Expect
 category: misc
-last_updated: null
-source_file: reactive-control-dependency-reactive-after-fixpoint.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let x = 0;"
 tags:
 - javascript
 - testing
-title: Reactive Control Dependency Reactive After Fixpoint.Expect
+last_updated: null
+source_file: reactive-control-dependency-reactive-after-fixpoint.expect.md
 ---
+# Reactive Control Dependency Reactive After Fixpoint.Expect
 
 ## Input
 
@@ -106,7 +106,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

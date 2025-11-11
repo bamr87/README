@@ -1,14 +1,12 @@
 ---
+title: Renaming Jsx Tag Lowercase.Expect
 category: misc
-last_updated: null
-source_file: renaming-jsx-tag-lowercase.expect.md
-summary: '```javascript
-
-  import {Stringify, identity, useIdentity} from ''sharedruntime'';'
 tags:
 - javascript
-title: Renaming Jsx Tag Lowercase.Expect
+last_updated: null
+source_file: renaming-jsx-tag-lowercase.expect.md
 ---
+# Renaming Jsx Tag Lowercase.Expect
 
 ## Input
 
@@ -91,6 +89,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{}}</div><div>{"value":{}}</div>

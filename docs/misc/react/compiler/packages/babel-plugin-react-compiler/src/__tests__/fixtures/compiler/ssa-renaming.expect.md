@@ -1,14 +1,12 @@
 ---
+title: Ssa Renaming.Expect
 category: misc
-last_updated: null
-source_file: ssa-renaming.expect.md
-summary: "```javascript\nfunction foo(props) {\n  let x = [];\n  x.push(props.bar);\n\
-  \  if (props.cond) {\n    x = {};\n    x = [];\n    x.push(props.foo);\n  }\n  return\
-  \ x;\n}"
 tags:
 - javascript
-title: Ssa Renaming.Expect
+last_updated: null
+source_file: ssa-renaming.expect.md
 ---
+# Ssa Renaming.Expect
 
 ## Input
 
@@ -67,4 +65,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

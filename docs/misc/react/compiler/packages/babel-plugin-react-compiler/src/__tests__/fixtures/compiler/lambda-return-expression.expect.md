@@ -1,14 +1,12 @@
 ---
+title: Lambda Return Expression.Expect
 category: misc
-last_updated: null
-source_file: lambda-return-expression.expect.md
-summary: '```javascript
-
-  import {invoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Lambda Return Expression.Expect
+last_updated: null
+source_file: lambda-return-expression.expect.md
 ---
+# Lambda Return Expression.Expect
 
 ## Input
 
@@ -47,7 +45,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [{}]

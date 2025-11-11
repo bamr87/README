@@ -1,14 +1,13 @@
 ---
+title: Error.Invalid Hook Reassigned In Conditional.Expect
 category: api
-last_updated: null
-source_file: error.invalid-hook-reassigned-in-conditional.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let y;\n  props.cond ? (y\
-  \ = useFoo) : null;\n  return y();\n}"
 tags:
 - javascript
 - api
-title: Error.Invalid Hook Reassigned In Conditional.Expect
+last_updated: null
+source_file: error.invalid-hook-reassigned-in-conditional.expect.md
 ---
+# Error.Invalid Hook Reassigned In Conditional.Expect
 
 ## Input
 
@@ -59,5 +58,4 @@ error.invalid-hook-reassigned-in-conditional.ts:4:9
   5 | }
   6 |
 ```
-          
-      
+

@@ -1,15 +1,13 @@
 ---
+title: Error.Reassign Global Fn Arg.Expect
 category: api
-last_updated: null
-source_file: error.reassign-global-fn-arg.expect.md
-summary: '```javascript
-
-  let b = 1;'
 tags:
 - javascript
 - api
-title: Error.Reassign Global Fn Arg.Expect
+last_updated: null
+source_file: error.reassign-global-fn-arg.expect.md
 ---
+# Error.Reassign Global Fn Arg.Expect
 
 ## Input
 
@@ -51,5 +49,4 @@ error.reassign-global-fn-arg.ts:5:4
   7 |   return foo(fn);
   8 | }
 ```
-          
-      
+

@@ -1,14 +1,12 @@
 ---
+title: Jsx Local Tag In Lambda.Expect
 category: misc
-last_updated: null
-source_file: jsx-local-tag-in-lambda.expect.md
-summary: "```javascript\nimport {Stringify} from 'sharedruntime';\nfunction useFoo()\
-  \ {\n  const MyLocal = Stringify;\n  const callback = () => {\n    return <MyLocal\
-  \ value={4} />;\n  };\n  return callback();\n}"
 tags:
 - javascript
-title: Jsx Local Tag In Lambda.Expect
+last_updated: null
+source_file: jsx-local-tag-in-lambda.expect.md
 ---
+# Jsx Local Tag In Lambda.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":4}</div>

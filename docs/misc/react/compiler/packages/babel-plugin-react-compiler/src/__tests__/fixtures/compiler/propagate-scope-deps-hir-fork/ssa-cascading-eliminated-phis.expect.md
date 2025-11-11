@@ -1,14 +1,12 @@
 ---
+title: Ssa Cascading Eliminated Phis.Expect
 category: misc
-last_updated: null
-source_file: ssa-cascading-eliminated-phis.expect.md
-summary: "```javascript\n// @enablePropagateDepsInHIR\nfunction Component(props) {\n\
-  \  let x = 0;\n  const values = [];\n  const y = props.a || props.b;\n  values.push(y);\n\
-  \  if (props.c) {\n    x = 1;\n  }\n  values.push..."
 tags:
 - javascript
-title: Ssa Cascading Eliminated Phis.Expect
+last_updated: null
+source_file: ssa-cascading-eliminated-phis.expect.md
 ---
+# Ssa Cascading Eliminated Phis.Expect
 
 ## Input
 
@@ -97,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,1,2]
 [4,1,2]

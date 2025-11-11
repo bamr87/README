@@ -1,19 +1,13 @@
 ---
+title: Error.Invalid Hoisting Setstate.Expect
 category: api
-last_updated: null
-source_file: error.invalid-hoisting-setstate.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {useEffect, useState} from ''react'';
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
 - api
-title: Error.Invalid Hoisting Setstate.Expect
+last_updated: null
+source_file: error.invalid-hoisting-setstate.expect.md
 ---
+# Error.Invalid Hoisting Setstate.Expect
 
 ## Input
 
@@ -78,5 +72,4 @@ error.invalid-hoisting-setstate.ts:21:16
   23 | }
   24 |
 ```
-          
-      
+

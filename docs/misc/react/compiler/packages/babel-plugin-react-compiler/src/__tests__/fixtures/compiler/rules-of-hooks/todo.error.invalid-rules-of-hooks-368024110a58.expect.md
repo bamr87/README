@@ -1,16 +1,12 @@
 ---
+title: Todo.Error.Invalid Rules Of Hooks 368024110A58.Expect
 category: misc
-last_updated: null
-source_file: todo.error.invalid-rules-of-hooks-368024110a58.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Passed but should have failed'
 tags:
 - javascript
-title: Todo.Error.Invalid Rules Of Hooks 368024110A58.Expect
+last_updated: null
+source_file: todo.error.invalid-rules-of-hooks-368024110a58.expect.md
 ---
+# Todo.Error.Invalid Rules Of Hooks 368024110A58.Expect
 
 ## Input
 
@@ -46,5 +42,4 @@ todo.error.invalid-rules-of-hooks-368024110a58.ts:8:4
   10 |   return <button ref={ref}>{props.children}</button>;
   11 | });
 ```
-          
-      
+

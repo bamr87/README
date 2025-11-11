@@ -1,18 +1,12 @@
 ---
+title: Optional Member Expression As Memo Dep.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-as-memo-dep.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enableOptionalDependencies @enablePropagateDepsInHIR
-
-  import {identity, ValidateMemoization} from ''sharedruntime'';
-
-  import {useMemo} from...'
 tags:
 - javascript
-title: Optional Member Expression As Memo Dep.Expect
+last_updated: null
+source_file: optional-member-expression-as-memo-dep.expect.md
 ---
+# Optional Member Expression As Memo Dep.Expect
 
 ## Input
 
@@ -101,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[null]}</div>
 <div>{"inputs":[null]}</div>

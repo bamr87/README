@@ -1,13 +1,12 @@
 ---
+title: Usememo Simple.Expect
 category: misc
-last_updated: null
-source_file: useMemo-simple.expect.md
-summary: "```javascript\nfunction component(a) {\n  let x = useMemo(() => [a], [a]);\n\
-  \  return <Foo x={x}></Foo>;\n}"
 tags:
 - javascript
-title: Usememo Simple.Expect
+last_updated: null
+source_file: useMemo-simple.expect.md
 ---
+# Usememo Simple.Expect
 
 ## Input
 
@@ -46,4 +45,3 @@ function component(a) {
 }
 
 ```
-      

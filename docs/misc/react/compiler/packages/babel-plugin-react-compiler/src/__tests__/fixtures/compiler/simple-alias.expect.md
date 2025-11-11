@@ -1,14 +1,12 @@
 ---
+title: Simple Alias.Expect
 category: misc
-last_updated: null
-source_file: simple-alias.expect.md
-summary: "```javascript\nfunction mutate() {}\nfunction foo() {\n  let a = {};\n \
-  \ let b = {};\n  let c = {};\n  a = b;\n  b = c;\n  c = a;\n  mutate(a, b);\n  return\
-  \ c;\n}"
 tags:
 - javascript
-title: Simple Alias.Expect
+last_updated: null
+source_file: simple-alias.expect.md
 ---
+# Simple Alias.Expect
 
 ## Input
 
@@ -53,4 +51,3 @@ function foo() {
 }
 
 ```
-      

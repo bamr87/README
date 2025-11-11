@@ -1,15 +1,13 @@
 ---
+title: Error.Todo Hoisting Simple Var Declaration.Expect
 category: development
-last_updated: null
-source_file: error.todo-hoisting-simple-var-declaration.expect.md
-summary: "```javascript\nfunction hoisting() {\n  function addOne(b) {\n    // a is\
-  \ undefined (only the declaration is hoisted, not the init) but shouldn't throw\n\
-  \    return a + b;\n  }\n  const result = addOne(2);\n ..."
 tags:
 - javascript
 - development
-title: Error.Todo Hoisting Simple Var Declaration.Expect
+last_updated: null
+source_file: error.todo-hoisting-simple-var-declaration.expect.md
 ---
+# Error.Todo Hoisting Simple Var Declaration.Expect
 
 ## Input
 
@@ -50,5 +48,4 @@ error.todo-hoisting-simple-var-declaration.ts:7:2
    9 |   return result; // OK: returns NaN. The code is semantically wrong but technically correct
   10 | }
 ```
-          
-      
+

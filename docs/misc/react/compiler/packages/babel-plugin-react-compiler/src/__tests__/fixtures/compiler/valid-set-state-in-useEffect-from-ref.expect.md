@@ -1,16 +1,12 @@
 ---
+title: Valid Set State In Useeffect From Ref.Expect
 category: misc
-last_updated: null
-source_file: valid-set-state-in-useEffect-from-ref.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects
-
-  import {useState, useRef, useEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Set State In Useeffect From Ref.Expect
+last_updated: null
+source_file: valid-set-state-in-useEffect-from-ref.expect.md
 ---
+# Valid Set State In Useeffect From Ref.Expect
 
 ## Input
 
@@ -71,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Cannot read properties of null (reading 'getBoundingClientRect')

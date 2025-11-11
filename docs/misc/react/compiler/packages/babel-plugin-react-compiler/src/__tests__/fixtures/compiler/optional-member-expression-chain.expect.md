@@ -1,14 +1,12 @@
 ---
+title: Optional Member Expression Chain.Expect
 category: misc
-last_updated: null
-source_file: optional-member-expression-chain.expect.md
-summary: "``javascript\n// Note that a?.b.c is semantically different from (a?.b).c`\n\
-  // We should codegen the correct member expressions\nfunction Component(props) {\n\
-  \  let x = props?.b.c;\n  let y = props?.b.c.d?...."
 tags:
 - javascript
-title: Optional Member Expression Chain.Expect
+last_updated: null
+source_file: optional-member-expression-chain.expect.md
 ---
+# Optional Member Expression Chain.Expect
 
 ## Input
 
@@ -57,4 +55,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

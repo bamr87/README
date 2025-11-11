@@ -1,14 +1,12 @@
 ---
+title: Reanimated No Memo Arg.Expect
 category: misc
-last_updated: null
-source_file: reanimated-no-memo-arg.expect.md
-summary: "```javascript\n// @enableCustomTypeDefinitionForReanimated\nimport {useAnimatedProps,\
-  \ useSharedValue} from 'reactnativereanimated';\nfunction Component() {\n  const\
-  \ radius = useSharedValue(50);"
 tags:
 - javascript
-title: Reanimated No Memo Arg.Expect
+last_updated: null
+source_file: reanimated-no-memo-arg.expect.md
 ---
+# Reanimated No Memo Arg.Expect
 
 ## Input
 
@@ -86,4 +84,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

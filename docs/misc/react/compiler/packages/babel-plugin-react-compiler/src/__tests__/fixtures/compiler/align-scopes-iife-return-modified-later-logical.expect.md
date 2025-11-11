@@ -1,14 +1,12 @@
 ---
+title: Align Scopes Iife Return Modified Later Logical.Expect
 category: misc
-last_updated: null
-source_file: align-scopes-iife-return-modified-later-logical.expect.md
-summary: '```javascript
-
-  import {getNull} from ''sharedruntime'';'
 tags:
 - javascript
-title: Align Scopes Iife Return Modified Later Logical.Expect
+last_updated: null
+source_file: align-scopes-iife-return-modified-later-logical.expect.md
 ---
+# Align Scopes Iife Return Modified Later Logical.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{}]

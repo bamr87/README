@@ -1,14 +1,12 @@
 ---
+title: Usememo Inverted If.Expect
 category: misc
-last_updated: null
-source_file: useMemo-inverted-if.expect.md
-summary: "```javascript\nfunction Component(props) {\n  const x = useMemo(() => {\n\
-  \    label: {\n      if (props.cond) {\n        break label;\n      }\n      return\
-  \ props.a;\n    }\n    return props.b;\n  });\n  return x..."
 tags:
 - javascript
-title: Usememo Inverted If.Expect
+last_updated: null
+source_file: useMemo-inverted-if.expect.md
 ---
+# Usememo Inverted If.Expect
 
 ## Input
 
@@ -62,4 +60,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

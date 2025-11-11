@@ -1,18 +1,12 @@
 ---
+title: Error.Usememo Infer Less Specific Conditional Value Block.Expect
 category: misc
-last_updated: null
-source_file: error.useMemo-infer-less-specific-conditional-value-block.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {identity, mutate} from ''sharedruntime'';'
 tags:
 - javascript
-title: Error.Usememo Infer Less Specific Conditional Value Block.Expect
+last_updated: null
+source_file: error.useMemo-infer-less-specific-conditional-value-block.expect.md
 ---
+# Error.Usememo Infer Less Specific Conditional Value Block.Expect
 
 ## Input
 
@@ -97,5 +91,4 @@ error.useMemo-infer-less-specific-conditional-value-block.ts:6:17
   15 | }
   16 |
 ```
-          
-      
+

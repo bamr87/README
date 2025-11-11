@@ -1,18 +1,14 @@
 ---
+title: Repro Capturing Func Maybealias Captured Mutate.Expect
 category: api
-last_updated: null
-source_file: repro-capturing-func-maybealias-captured-mutate.expect.md
-summary: '```javascript
-
-  // @enableNewMutationAliasingModel
-
-  import {makeArray, mutate} from ''sharedruntime'';'
 tags:
 - javascript
 - aws
 - api
-title: Repro Capturing Func Maybealias Captured Mutate.Expect
+last_updated: null
+source_file: repro-capturing-func-maybealias-captured-mutate.expect.md
 ---
+# Repro Capturing Func Maybealias Captured Mutate.Expect
 
 ## Input
 
@@ -120,7 +116,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"bar":4,"x":{"foo":3,"wat0":"joe"}}
 {"bar":5,"x":{"foo":3,"wat0":"joe"}}

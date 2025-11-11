@@ -1,17 +1,15 @@
 ---
+title: schema Directory
 category: setup
-last_updated: null
-source_file: README.md
-summary: "```python\n In Django models/forms for validation\nimport json\nimport jsonschema"
 tags:
 - python
 - docker
 - api
 - database
 - setup
-title: schema Directory
+last_updated: null
+source_file: README.md
 ---
-
 # schema Directory
 
 ## Purpose
@@ -40,7 +38,7 @@ def validate_content_structure(content_data):
 def generate_parody_article(topic):
     with open('parodynews/schema/parody_prompt.md') as f:
         prompt_template = f.read()
-    
+
     # Use prompt with OpenAI API
     response = openai.chat.completions.create(
         model="gpt-4",

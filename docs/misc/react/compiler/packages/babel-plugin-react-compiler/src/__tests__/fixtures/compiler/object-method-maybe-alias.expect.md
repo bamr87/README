@@ -1,14 +1,12 @@
 ---
+title: Object Method Maybe Alias.Expect
 category: misc
-last_updated: null
-source_file: object-method-maybe-alias.expect.md
-summary: "```javascript\nimport {createHookWrapper, setProperty} from 'sharedruntime';\n\
-  function useHook(props) {\n  const x = {\n    getX() {\n      return props;\n  \
-  \  },\n  };\n  const y = {\n    getY() {\n      return..."
 tags:
 - javascript
-title: Object Method Maybe Alias.Expect
+last_updated: null
+source_file: object-method-maybe-alias.expect.md
 ---
+# Object Method Maybe Alias.Expect
 
 ## Input
 
@@ -69,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getX":{"kind":"Function","result":{"value":0}},"wat0":{"getY":{"kind":"Function","result":"y"}}},"shouldInvokeFns":true}</div>

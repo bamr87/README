@@ -1,14 +1,12 @@
 ---
+title: Update Global In Callback.Expect
 category: misc
-last_updated: null
-source_file: update-global-in-callback.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Update Global In Callback.Expect
+last_updated: null
+source_file: update-global-in-callback.expect.md
 ---
+# Update Global In Callback.Expect
 
 ## Input
 
@@ -61,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

@@ -1,16 +1,12 @@
 ---
+title: Todo.Bail.Rules Of Hooks 28A78701970C.Expect
 category: misc
-last_updated: null
-source_file: todo.bail.rules-of-hooks-28a78701970c.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Todo.Bail.Rules Of Hooks 28A78701970C.Expect
+last_updated: null
+source_file: todo.bail.rules-of-hooks-28a78701970c.expect.md
 ---
+# Todo.Bail.Rules Of Hooks 28A78701970C.Expect
 
 ## Input
 
@@ -50,4 +46,3 @@ const MemoizedFunction = React.memo((props) => {
 });
 
 ```
-      

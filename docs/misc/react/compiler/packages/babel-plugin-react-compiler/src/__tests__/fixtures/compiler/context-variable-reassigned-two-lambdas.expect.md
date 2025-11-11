@@ -1,14 +1,12 @@
 ---
+title: Context Variable Reassigned Two Lambdas.Expect
 category: misc
-last_updated: null
-source_file: context-variable-reassigned-two-lambdas.expect.md
-summary: '```javascript
-
-  import {conditionalInvoke} from ''sharedruntime'';'
 tags:
 - javascript
-title: Context Variable Reassigned Two Lambdas.Expect
+last_updated: null
+source_file: context-variable-reassigned-two-lambdas.expect.md
 ---
+# Context Variable Reassigned Two Lambdas.Expect
 
 ## Input
 
@@ -82,7 +80,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 3
 2

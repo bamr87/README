@@ -1,15 +1,13 @@
 ---
+title: Error.Invalid Nested Function Reassign Local Variable In Effect.Expect
 category: misc
-last_updated: null
-source_file: error.invalid-nested-function-reassign-local-variable-in-effect.expect.md
-summary: "``javascript\nimport {useEffect} from 'react';\nfunction Component() {\n\
-  \  let local;\n  const mkreassignlocal = () => {\n    // Create the reassignment\
-  \ function inside another function, then return it\n    ..."
 tags:
 - javascript
 - testing
-title: Error.Invalid Nested Function Reassign Local Variable In Effect.Expect
+last_updated: null
+source_file: error.invalid-nested-function-reassign-local-variable-in-effect.expect.md
 ---
+# Error.Invalid Nested Function Reassign Local Variable In Effect.Expect
 
 ## Input
 
@@ -73,5 +71,4 @@ error.invalid-nested-function-reassign-local-variable-in-effect.ts:7:6
    9 |     return reassignLocal;
   10 |   };
 ```
-          
-      
+

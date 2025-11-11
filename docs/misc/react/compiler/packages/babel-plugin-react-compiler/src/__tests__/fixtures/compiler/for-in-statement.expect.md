@@ -1,14 +1,12 @@
 ---
+title: For In Statement.Expect
 category: misc
-last_updated: null
-source_file: for-in-statement.expect.md
-summary: "```javascript\nfunction Component(props) {\n  let items = [];\n  for (const\
-  \ key in props) {\n    items.push(<div key={key}>{key}</div>);\n  }\n  return <div>{items}</div>;\n\
-  }"
 tags:
 - javascript
-title: For In Statement.Expect
+last_updated: null
+source_file: for-in-statement.expect.md
 ---
+# For In Statement.Expect
 
 ## Input
 
@@ -64,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>a</div><div>b</div><div>c</div></div>
 <div><div>lauren</div><div>mofei</div><div>sathya</div><div>jason</div></div>

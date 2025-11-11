@@ -1,14 +1,12 @@
 ---
+title: Infer Sequential Optional Chain Nonnull.Expect
 category: misc
-last_updated: null
-source_file: infer-sequential-optional-chain-nonnull.expect.md
-summary: '```javascript
-
-  // @enablePropagateDepsInHIR'
 tags:
 - javascript
-title: Infer Sequential Optional Chain Nonnull.Expect
+last_updated: null
+source_file: infer-sequential-optional-chain-nonnull.expect.md
 ---
+# Infer Sequential Optional Chain Nonnull.Expect
 
 ## Input
 
@@ -74,7 +72,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]

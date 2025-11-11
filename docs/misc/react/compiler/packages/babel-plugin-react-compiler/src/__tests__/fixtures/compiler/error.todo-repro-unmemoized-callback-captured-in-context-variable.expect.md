@@ -1,18 +1,12 @@
 ---
+title: Error.Todo Repro Unmemoized Callback Captured In Context Variable.Expect
 category: misc
-last_updated: null
-source_file: error.todo-repro-unmemoized-callback-captured-in-context-variable.expect.md
-summary: '```javascript
-
-  // @validatePreserveExistingMemoizationGuarantees @enablePreserveExistingMemoizationGuarantees:false
-
-  import {useMemo} from ''react'';
-
-  import {ValidateMemoization, useHook} from ''sharedrunt...'
 tags:
 - javascript
-title: Error.Todo Repro Unmemoized Callback Captured In Context Variable.Expect
+last_updated: null
+source_file: error.todo-repro-unmemoized-callback-captured-in-context-variable.expect.md
 ---
+# Error.Todo Repro Unmemoized Callback Captured In Context Variable.Expect
 
 ## Input
 
@@ -80,5 +74,4 @@ error.todo-repro-unmemoized-callback-captured-in-context-variable.ts:11:12
   13 |   // Conditional assignment without a subsequent mutation normally doesn't create a mutable
   14 |   // range, but in this case we're reassigning a context variable
 ```
-          
-      
+

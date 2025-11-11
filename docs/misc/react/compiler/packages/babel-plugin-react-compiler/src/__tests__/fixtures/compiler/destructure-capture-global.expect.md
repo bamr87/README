@@ -1,13 +1,12 @@
 ---
+title: Destructure Capture Global.Expect
 category: misc
-last_updated: null
-source_file: destructure-capture-global.expect.md
-summary: "```javascript\nlet someGlobal = {};\nfunction component(a) {\n  let x =\
-  \ {a, someGlobal};\n  return x;\n}"
 tags:
 - javascript
-title: Destructure Capture Global.Expect
+last_updated: null
+source_file: destructure-capture-global.expect.md
 ---
+# Destructure Capture Global.Expect
 
 ## Input
 
@@ -52,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":"value 1","someGlobal":{}}

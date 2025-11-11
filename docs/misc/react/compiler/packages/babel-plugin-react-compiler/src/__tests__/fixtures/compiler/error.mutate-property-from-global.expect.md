@@ -1,14 +1,12 @@
 ---
+title: Error.Mutate Property From Global.Expect
 category: misc
-last_updated: null
-source_file: error.mutate-property-from-global.expect.md
-summary: '```javascript
-
-  let wat = {};'
 tags:
 - javascript
-title: Error.Mutate Property From Global.Expect
+last_updated: null
+source_file: error.mutate-property-from-global.expect.md
 ---
+# Error.Mutate Property From Global.Expect
 
 ## Input
 
@@ -41,5 +39,4 @@ error.mutate-property-from-global.ts:4:9
   6 | }
   7 |
 ```
-          
-      
+

@@ -1,16 +1,12 @@
 ---
+title: Valid Setstate In Uselayouteffect From Ref.Expect
 category: misc
-last_updated: null
-source_file: valid-setState-in-useLayoutEffect-from-ref.expect.md
-summary: '```javascript
-
-  // @validateNoSetStateInEffects @enableAllowSetStateFromRefsInEffects
-
-  import {useState, useRef, useLayoutEffect} from ''react'';'
 tags:
 - javascript
-title: Valid Setstate In Uselayouteffect From Ref.Expect
+last_updated: null
+source_file: valid-setState-in-useLayoutEffect-from-ref.expect.md
 ---
+# Valid Setstate In Uselayouteffect From Ref.Expect
 
 ## Input
 
@@ -71,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Cannot read properties of null (reading 'getBoundingClientRect')

@@ -1,14 +1,12 @@
 ---
+title: Use No Memo Module Level.Expect
 category: misc
-last_updated: null
-source_file: use-no-memo-module-level.expect.md
-summary: '```javascript
-
-  ''use no memo'';'
 tags:
 - javascript
-title: Use No Memo Module Level.Expect
+last_updated: null
+source_file: use-no-memo-module-level.expect.md
 ---
+# Use No Memo Module Level.Expect
 
 ## Input
 
@@ -37,4 +35,3 @@ export default function foo(x, y) {
 }
 
 ```
-      

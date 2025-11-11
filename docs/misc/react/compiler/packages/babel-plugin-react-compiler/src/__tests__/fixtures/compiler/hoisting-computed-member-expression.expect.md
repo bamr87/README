@@ -1,14 +1,12 @@
 ---
+title: Hoisting Computed Member Expression.Expect
 category: misc
-last_updated: null
-source_file: hoisting-computed-member-expression.expect.md
-summary: '```javascript
-
-  import {Stringify} from ''sharedruntime'';'
 tags:
 - javascript
-title: Hoisting Computed Member Expression.Expect
+last_updated: null
+source_file: hoisting-computed-member-expression.expect.md
 ---
+# Hoisting Computed Member Expression.Expect
 
 ## Input
 
@@ -74,6 +72,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"onClick":{"kind":"Function","result":1},"onClick2":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

@@ -1,13 +1,12 @@
 ---
+title: Repro Invalid Scope Merging Value Blocks.Expect
 category: misc
-last_updated: null
-source_file: repro-invalid-scope-merging-value-blocks.expect.md
-summary: "```javascript\nimport {\n  CONSTTRUE,\n  identity,\n  makeObjectPrimitives,\n\
-  \  mutateAndReturn,\n  useHook,\n} from 'sharedruntime';"
 tags:
 - javascript
-title: Repro Invalid Scope Merging Value Blocks.Expect
+last_updated: null
+source_file: repro-invalid-scope-merging-value-blocks.expect.md
 ---
+# Repro Invalid Scope Merging Value Blocks.Expect
 
 ## Input
 
@@ -84,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":0,"b":"value1","c":true,"wat0":"joe"},"[[ cyclic ref *1 ]]"]
 [{"a":0,"b":"value1","c":true,"wat0":"joe"},"[[ cyclic ref *1 ]]"]

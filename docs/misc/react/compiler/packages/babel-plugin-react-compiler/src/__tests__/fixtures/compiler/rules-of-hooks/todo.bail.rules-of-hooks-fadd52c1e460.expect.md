@@ -1,16 +1,12 @@
 ---
+title: Todo.Bail.Rules Of Hooks Fadd52C1E460.Expect
 category: misc
-last_updated: null
-source_file: todo.bail.rules-of-hooks-fadd52c1e460.expect.md
-summary: '```javascript
-
-  // @skip
-
-  // Unsupported input'
 tags:
 - javascript
-title: Todo.Bail.Rules Of Hooks Fadd52C1E460.Expect
+last_updated: null
+source_file: todo.bail.rules-of-hooks-fadd52c1e460.expect.md
 ---
+# Todo.Bail.Rules Of Hooks Fadd52C1E460.Expect
 
 ## Input
 
@@ -111,4 +107,3 @@ const {
 } = {});
 
 ```
-      

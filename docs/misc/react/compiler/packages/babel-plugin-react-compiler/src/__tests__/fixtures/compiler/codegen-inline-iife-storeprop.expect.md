@@ -1,15 +1,13 @@
 ---
+title: Codegen Inline Iife Storeprop.Expect
 category: misc
-last_updated: null
-source_file: codegen-inline-iife-storeprop.expect.md
-summary: '```javascript
-
-  import {makeArray, print} from ''sharedruntime'';'
 tags:
 - javascript
 - testing
-title: Codegen Inline Iife Storeprop.Expect
+last_updated: null
+source_file: codegen-inline-iife-storeprop.expect.md
 ---
+# Codegen Inline Iife Storeprop.Expect
 
 ## Input
 
@@ -65,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,42,2]

@@ -1,15 +1,13 @@
 ---
+title: Uncond Nonoverlap Direct.Expect
 category: misc
-last_updated: null
-source_file: uncond-nonoverlap-direct.expect.md
-summary: "```javascript\n// Test that we can track nonoverlapping dependencies separately.\n\
-  // (not needed for correctness but for dependency granularity)\nfunction TestNonOverlappingTracked(props)\
-  \ {\n  let x = {};..."
 tags:
 - javascript
 - testing
-title: Uncond Nonoverlap Direct.Expect
+last_updated: null
+source_file: uncond-nonoverlap-direct.expect.md
 ---
+# Uncond Nonoverlap Direct.Expect
 
 ## Input
 
@@ -57,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":2,"c":3}
