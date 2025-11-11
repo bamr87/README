@@ -36,6 +36,7 @@ jobs:
 
       - name: Create Pull Request with fixes
         uses: peter-evans/create-pull-request@v4
+          id: create_pr
         with:
           commit-message: "chore(docs): apply auto-fixes (whitespace/frontmatter)"
           branch: "quality/fixes-${{ github.run_id }}"
@@ -44,3 +45,14 @@ jobs:
             Automated documentation fixes were applied (whitespace, frontmatter normalizations).
             Please review changes and approve.
           labels: docs,automation
+        - name: Add report as PR comment
+          if: ${{ steps.create_pr.outputs.pull-request-number }}
+          uses: peter-evans/create-or-update-comment@v4
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            issue-number: ${{ steps.create_pr.outputs.pull-request-number }}
+            body: |
+              ## Docs Quality Report
+              ```json
+              $(cat docs/results/docs_quality_report.json 2>/dev/null || echo '{}')
+              ```

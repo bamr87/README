@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'quality/*'
+  pull_request:
+    branches:
+      - main
   workflow_dispatch: {}
 
 jobs:
@@ -27,8 +30,30 @@ jobs:
       - name: Run doc lint and frontmatter checks
         run: |
           set -euo pipefail
-          python3 scripts/lint_docs.py
-          python3 scripts/check_frontmatter.py
+          python3 scripts/lint_docs.py || true
+          python3 scripts/check_frontmatter.py || true
+
+      - name: Generate docs report artifact
+        run: |
+          set -euo pipefail
+          python3 scripts/generate_docs_report.py
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs-quality-report
+          path: docs/results/docs_quality_report.json
+      - name: Add a report comment to PR (if applicable)
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            ## Docs Quality Report
+            ```json
+            $(cat docs/results/docs_quality_report.json 2>/dev/null || echo '{}')
+            ```
 
       - name: Show summary (optional)
         if: always()

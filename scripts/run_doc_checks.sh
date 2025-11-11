@@ -38,6 +38,13 @@ fi
 
 if [ "$APPLY_CHANGES" = true ]; then
 	echo "Applying recommended cleanups..."
+	# fix whitespace first
+	python3 scripts/fix_whitespace.py || true
+	# normalize tags
+	python3 scripts/normalize_tags.py || true
+	# add missing h1 headings
+	python3 scripts/fix_h1.py || true
+	# normalize frontmatter
 	python3 scripts/clean_frontmatter.py || true
 else
 	echo "Skipped clean frontmatter. Run with --apply to apply normalization changes."
