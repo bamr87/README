@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: prompt-engineer.md
 ---
+# Prompt Engineer
+
 ---
 name: prompt-engineer
 description: Use this agent when you need to create, refine, or optimize prompts for the AI Evolution Engine. This includes designing new evolution prompts from scratch, debugging problematic prompts, improving prompt reliability and consistency, establishing prompt patterns for evolution cycles, or converting vague requirements into structured prompt specifications following the GitHub Models format. The agent excels at systematic prompt iteration, testing strategies, and creating maintainable prompt systems for AI-driven evolution.
@@ -131,17 +133,17 @@ messages:
       You are an expert software engineer helping improve code quality.
       Focus on: refactoring complex functions, improving modularity,
       optimizing performance, enhancing readability, applying best practices.
-      
+
       Output format: JSON with file changes following evolution engine schema.
   - role: user
     content: |
       Evolution Type: code_quality
       Growth Mode: {{growth_mode}}
       Intensity: {{intensity}}
-      
+
       Repository Context:
       {{repository_context}}
-      
+
       Please improve code quality while maintaining backward compatibility.
 ```
 

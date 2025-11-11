@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-in-other-reactive-block.expect.md
 ---
+# Usecallback In Other Reactive Block.Expect
+
 ## Input
 
 ```javascript
@@ -78,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]",["other"]]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: prune-scopes-whose-deps-invalidate-jsx.expect.md
 ---
+# Prune Scopes Whose Deps Invalidate Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div><div>sathya</div></div></div>

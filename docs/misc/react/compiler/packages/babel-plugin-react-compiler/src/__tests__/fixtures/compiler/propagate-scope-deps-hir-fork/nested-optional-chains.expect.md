@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-optional-chains.expect.md
 ---
+# Nested Optional Chains.Expect
+
 ## Input
 
 ```javascript
@@ -230,7 +232,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,null,null,null]
 ["2","3","4","4"]

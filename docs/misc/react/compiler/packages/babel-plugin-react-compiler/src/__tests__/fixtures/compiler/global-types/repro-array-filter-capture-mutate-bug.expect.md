@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-array-filter-capture-mutate-bug.expect.md
 ---
+# Repro Array Filter Capture Mutate Bug.Expect
+
 ## Input
 
 ```javascript
@@ -113,7 +115,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[{"value":"foo","wat0":"joe"},{"value":5,"wat0":"joe"}]}</div>
 <div>{"children":[{"value":"foo","wat0":"joe"},{"value":6,"wat0":"joe"}]}</div>

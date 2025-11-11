@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: conflicting-gating-fn.expect.md
 ---
+# Conflicting Gating Fn.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>2</div>

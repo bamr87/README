@@ -98,7 +98,7 @@ tags: ["tag1", "tag2", "tag3"]
 difficulty: "beginner|intermediate|advanced"
 estimatedTime: "15 minutes"
 prerequisites: ["Prerequisite 1", "Prerequisite 2"]
-relatedDocs: 
+relatedDocs:
   - "[Related Doc 1](./related-doc-1.md)"
   - "[Related Doc 2](./related-doc-2.md)"
 paths:
@@ -290,12 +290,12 @@ class DocumentationPipeline {
     async generateDocumentation() {
         return pathTracker.executeInPath('documentation_generation', async () => {
             // Path: code-analysis
-            const codeAnalysis = await pathTracker.executeInPath('code_analysis', 
+            const codeAnalysis = await pathTracker.executeInPath('code_analysis',
                 () => this.analyzer.analyzeCodebase('./src')
             );
 
             // Path: api-documentation-generation
-            const apiDocs = await pathTracker.executeInPath('api_documentation', 
+            const apiDocs = await pathTracker.executeInPath('api_documentation',
                 () => this.generator.generateApiDocs(codeAnalysis.apiRoutes)
             );
 
@@ -345,7 +345,7 @@ class DocumentationPipeline {
      */
     generatePathOverview(pathMetrics) {
         const paths = Object.keys(pathMetrics);
-        
+
         return {
             totalPaths: paths.length,
             mostUsedPaths: this.getMostUsedPaths(pathMetrics, 10),
@@ -366,10 +366,10 @@ class DocumentationPipeline {
 
         // Generate markdown files
         await this.writeMarkdownFiles(compiledDocs);
-        
+
         // Generate interactive documentation
         await this.generateInteractiveDocs(compiledDocs);
-        
+
         // Update index files
         await this.updateDocumentationIndex(compiledDocs);
     }
@@ -407,7 +407,7 @@ class DocumentationPipeline {
 // Command-line interface for documentation generation
 if (import.meta.url === `file://${process.argv[1]}`) {
     const pipeline = new DocumentationPipeline();
-    
+
     pipeline.generateDocumentation()
         .then(() => {
             console.log('Documentation generation completed successfully');
@@ -712,29 +712,29 @@ source "${SCRIPT_DIR}/lib/path_management.sh"
 # Path: documentation-validation-workflow
 validate_documentation() {
     enter_path "documentation_validation"
-    
+
     log_info "Starting comprehensive documentation validation" "docs_validation"
-    
+
     # Path: markdown-syntax-validation
     execute_in_path "markdown_syntax_validation" \
         "validate_markdown_syntax"
-    
+
     # Path: link-validation
     execute_in_path "link_validation" \
         "validate_all_links"
-    
+
     # Path: code-example-validation
     execute_in_path "code_example_validation" \
         "validate_code_examples"
-    
+
     # Path: consistency-validation
     execute_in_path "consistency_validation" \
         "validate_content_consistency"
-    
+
     # Path: accessibility-validation
     execute_in_path "accessibility_validation" \
         "validate_accessibility_standards"
-    
+
     exit_path "documentation_validation"
     log_info "Documentation validation completed successfully" "docs_validation"
 }
@@ -742,9 +742,9 @@ validate_documentation() {
 # Path: markdown-syntax-checking
 validate_markdown_syntax() {
     log_info "Validating Markdown syntax across all documentation" "syntax_validation"
-    
+
     local errors_found=false
-    
+
     while IFS= read -r -d '' file; do
         if ! markdownlint "$file"; then
             log_error "Markdown syntax errors found in: $file" "syntax_validation"
@@ -753,46 +753,46 @@ validate_markdown_syntax() {
             log_debug "Markdown syntax valid: $file" "syntax_validation"
         fi
     done < <(find "$DOCS_DIR" -name "*.md" -print0)
-    
+
     if [[ "$errors_found" = true ]]; then
         log_error "Markdown syntax validation failed" "syntax_validation"
         return 1
     fi
-    
+
     log_info "All Markdown files have valid syntax" "syntax_validation"
 }
 
 # Path: comprehensive-link-validation
 validate_all_links() {
     log_info "Validating all links in documentation" "link_validation"
-    
+
     # Internal links validation
     validate_internal_links
-    
+
     # External links validation
     validate_external_links
-    
+
     # Cross-reference validation
     validate_cross_references
 }
 
 validate_internal_links() {
     log_info "Checking internal links" "internal_links"
-    
+
     local broken_links=()
-    
+
     while IFS= read -r -d '' file; do
         log_debug "Checking internal links in: $file" "internal_links"
-        
+
         # Extract internal links (relative paths)
         local links
         links=$(grep -oP '\[.*?\]\(\K[^)]*(?=\))' "$file" | grep -v '^http' || true)
-        
+
         while IFS= read -r link; do
             if [[ -n "$link" ]]; then
                 local target_file
                 target_file=$(resolve_relative_path "$file" "$link")
-                
+
                 if [[ ! -f "$target_file" ]]; then
                     broken_links+=("$file: $link -> $target_file")
                     log_warning "Broken internal link: $link in $file" "internal_links"
@@ -800,102 +800,102 @@ validate_internal_links() {
             fi
         done <<< "$links"
     done < <(find "$DOCS_DIR" -name "*.md" -print0)
-    
+
     if [[ ${#broken_links[@]} -gt 0 ]]; then
         log_error "Found ${#broken_links[@]} broken internal links" "internal_links"
         printf '%s\n' "${broken_links[@]}"
         return 1
     fi
-    
+
     log_info "All internal links are valid" "internal_links"
 }
 
 validate_external_links() {
     log_info "Checking external links (may take several minutes)" "external_links"
-    
+
     local external_links_file="${PROJECT_ROOT}/tmp/external_links.txt"
     mkdir -p "$(dirname "$external_links_file")"
-    
+
     # Extract all external links
     find "$DOCS_DIR" -name "*.md" -exec grep -oP '\[.*?\]\(\K[^)]*(?=\))' {} \; | \
         grep '^http' | sort -u > "$external_links_file"
-    
+
     local broken_external_links=()
     local total_links
     total_links=$(wc -l < "$external_links_file")
     local current=0
-    
+
     while IFS= read -r url; do
         ((current++))
         log_debug "Checking external link ($current/$total_links): $url" "external_links"
-        
+
         if ! curl --silent --head --fail --max-time 10 "$url" > /dev/null 2>&1; then
             broken_external_links+=("$url")
             log_warning "Broken external link: $url" "external_links"
         fi
     done < "$external_links_file"
-    
+
     if [[ ${#broken_external_links[@]} -gt 0 ]]; then
         log_warning "Found ${#broken_external_links[@]} potentially broken external links" "external_links"
         printf '%s\n' "${broken_external_links[@]}"
         # Don't fail on external links as they might be temporarily unavailable
     fi
-    
+
     log_info "External link validation completed" "external_links"
 }
 
 # Path: code-example-testing
 validate_code_examples() {
     log_info "Validating code examples in documentation" "code_validation"
-    
+
     local temp_dir="${PROJECT_ROOT}/tmp/code_validation"
     mkdir -p "$temp_dir"
-    
+
     local validation_errors=()
-    
+
     while IFS= read -r -d '' file; do
         log_debug "Extracting code examples from: $file" "code_validation"
-        
+
         # Extract code blocks and validate them
         if ! extract_and_validate_code_blocks "$file" "$temp_dir"; then
             validation_errors+=("$file")
         fi
     done < <(find "$DOCS_DIR" -name "*.md" -print0)
-    
+
     # Cleanup
     rm -rf "$temp_dir"
-    
+
     if [[ ${#validation_errors[@]} -gt 0 ]]; then
         log_error "Code validation failed in ${#validation_errors[@]} files" "code_validation"
         printf '%s\n' "${validation_errors[@]}"
         return 1
     fi
-    
+
     log_info "All code examples are valid" "code_validation"
 }
 
 # Path: main-validation-execution
 main() {
     local start_time=$(date +%s.%N)
-    
+
     log_info "Starting documentation validation process" "main"
-    
+
     # Ensure required tools are available
     check_validation_tools || {
         log_fatal "Required validation tools are not available" "main"
     }
-    
+
     # Run validation
     validate_documentation || {
         log_fatal "Documentation validation failed" "main"
     }
-    
+
     # Generate validation report
     generate_validation_report
-    
+
     local end_time=$(date +%s.%N)
     local total_time=$(echo "$end_time - $start_time" | bc -l)
-    
+
     log_performance_metric "docs_validation_time" "$total_time" "seconds" "validation"
     log_info "Documentation validation completed successfully in ${total_time}s" "main"
 }
@@ -946,7 +946,7 @@ export class DocumentationAnalytics {
     async analyzeContentEffectiveness() {
         return pathTracker.executeInPath('content_effectiveness_analysis', async () => {
             const metrics = await this.collectDocumentationMetrics();
-            
+
             const analysis = {
                 readabilityScores: await this.analyzeReadability(),
                 completenessScores: await this.analyzeCompleteness(),
@@ -955,7 +955,7 @@ export class DocumentationAnalytics {
             };
 
             const recommendations = await this.generateContentRecommendations(analysis);
-            
+
             return {
                 analysis,
                 recommendations
@@ -1115,7 +1115,7 @@ Brief description of the problem this requirement addresses.
 - **Phase 1**: [Start Date] - [End Date]
   - Deliverables: List of deliverables
   - Documentation: Required documentation
-  
+
 - **Phase 2**: [Start Date] - [End Date]
   - Deliverables: List of deliverables
   - Documentation: Required documentation
@@ -1224,13 +1224,13 @@ services:
 async def list_resources():
     client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-[server-name]"])
     await client.connect()
-    
+
     resources = await client.listResources()
     for resource in resources:
         print(f"URI: {resource.uri}")
         print(f"Name: {resource.name}")
         print(f"Description: {resource.description}")
-    
+
     await client.disconnect()
 ```
 
@@ -1448,19 +1448,19 @@ $(cat config/mcp/server_capabilities.json | jq -r '.servers | to_entries[] | "##
 # Collect context from multiple MCP servers
 async def collect_comprehensive_context():
     contexts = {}
-    
+
     # Filesystem context
     fs_client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-filesystem"])
     await fs_client.connect()
     contexts['filesystem'] = await fs_client.listResources()
     await fs_client.disconnect()
-    
-    # Database context  
+
+    # Database context
     db_client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-database"])
     await db_client.connect()
     contexts['database'] = await db_client.listResources()
     await db_client.disconnect()
-    
+
     return contexts
 ```
 
@@ -1470,15 +1470,15 @@ async def collect_comprehensive_context():
 async def automated_workflow():
     client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-filesystem"])
     await client.connect()
-    
+
     # Step 1: List directory
     dir_contents = await client.callTool("list_directory", {"path": "./src"})
-    
+
     # Step 2: Process each file
     for file_info in parse_directory_output(dir_contents):
         file_content = await client.readResource(f"file://{file_info['path']}")
         # Process file content...
-    
+
     await client.disconnect()
 ```
 
@@ -1548,19 +1548,19 @@ from src.mcp.clients.mcp_client import PathAwareMCPClient
 
 async def robust_mcp_operation():
     client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-filesystem"])
-    
+
     try:
         await client.connect()
-        
+
         # Use retry mechanism for critical operations
         result = await client.withRetry(
             lambda: client.readResource("file://important.txt"),
             maxRetries=3,
             delay=1000
         )
-        
+
         return result
-        
+
     except Exception as e:
         logger.error(f"MCP operation failed: {e}")
         raise
@@ -1580,12 +1580,12 @@ async def robust_mcp_operation():
 
 #### Connection Failures
 **Problem**: Cannot connect to MCP server
-**Solution**: 
+**Solution**:
 1. Verify server container is running
 2. Check network connectivity
 3. Validate server configuration
 
-#### Performance Issues  
+#### Performance Issues
 **Problem**: Slow MCP operations
 **Solution**:
 1. Enable connection pooling

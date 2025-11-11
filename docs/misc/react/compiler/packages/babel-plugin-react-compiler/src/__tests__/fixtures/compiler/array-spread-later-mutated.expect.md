@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-spread-later-mutated.expect.md
 ---
+# Array Spread Later Mutated.Expect
+
 ## Input
 
 ```javascript
@@ -62,7 +64,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"x":3},5,4]
 [{"x":3},5,4]

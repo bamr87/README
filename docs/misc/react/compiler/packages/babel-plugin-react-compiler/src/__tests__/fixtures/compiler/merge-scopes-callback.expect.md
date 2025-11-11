@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: merge-scopes-callback.expect.md
 ---
+# Merge Scopes Callback.Expect
+
 ## Input
 
 ```javascript
@@ -73,6 +75,6 @@ function _temp(s) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

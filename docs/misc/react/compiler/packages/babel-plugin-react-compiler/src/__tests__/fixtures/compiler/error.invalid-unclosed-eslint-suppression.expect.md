@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-unclosed-eslint-suppression.expect.md
 ---
+# Error.Invalid Unclosed Eslint Suppression.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.invalid-unclosed-eslint-suppression.ts:2:0
   4 |   'use forget';
   5 |   const x = [];
 ```
-          
-      
+

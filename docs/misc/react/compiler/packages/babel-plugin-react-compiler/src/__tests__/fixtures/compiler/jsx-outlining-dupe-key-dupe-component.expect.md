@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-dupe-key-dupe-component.expect.md
 ---
+# Jsx Outlining Dupe Key Dupe Component.Expect
+
 ## Input
 
 ```javascript
@@ -159,6 +161,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooifoojxbaribarj

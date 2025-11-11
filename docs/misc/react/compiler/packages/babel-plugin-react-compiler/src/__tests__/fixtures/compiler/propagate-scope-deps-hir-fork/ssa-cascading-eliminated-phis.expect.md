@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-cascading-eliminated-phis.expect.md
 ---
+# Ssa Cascading Eliminated Phis.Expect
+
 ## Input
 
 ```javascript
@@ -93,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,1,2]
 [4,1,2]

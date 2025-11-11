@@ -3,7 +3,6 @@ title: Add the GitHub profile repository as a remote repository
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: README.md
 ---
@@ -26,7 +25,7 @@ You can click the Preview link to take a look at your changes.
 
 <summary>Add this repo as a sub-tree</summary>
 <details>
-   
+
 </details>
 
 ```shell
@@ -115,7 +114,7 @@ graph TD;
 }
 ```
 
-## 3D Model 
+## 3D Model
 
 ```stl
 solid cube_corner

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-logical.expect.md
 ---
+# Usememo Logical.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

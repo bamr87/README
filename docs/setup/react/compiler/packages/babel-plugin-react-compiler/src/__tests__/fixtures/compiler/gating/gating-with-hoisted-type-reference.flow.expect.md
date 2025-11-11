@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: gating-with-hoisted-type-reference.flow.expect.md
 ---
+# Gating With Hoisted Type Reference.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>foo</div>

@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-comments-with-disqus.md
 ---
+# Jekyll Comments With Disqus
+
 > Use Disqus to enable reader to comment on Jekyll site.
 
 ## Disqus

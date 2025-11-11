@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-non-empty-initializer.expect.md
 ---
+# Ssa Non Empty Initializer.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

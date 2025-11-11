@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: update-global-in-callback.expect.md
 ---
+# Update Global In Callback.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

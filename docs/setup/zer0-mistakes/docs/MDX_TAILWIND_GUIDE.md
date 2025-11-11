@@ -227,7 +227,7 @@ You can use both frameworks in the same page:
         </div>
       </div>
     </div>
-    
+
     <!-- Tailwind-styled column -->
     <div class="col-md-6">
       <div className="tw-bg-white tw-rounded-lg tw-shadow-lg tw-p-4">

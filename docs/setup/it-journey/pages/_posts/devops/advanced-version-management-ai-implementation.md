@@ -133,12 +133,12 @@ update_file_version() {
     local new_version="$2"
     local patterns_json="$3"
     local backup_suffix=".version-backup"
-    
+
     # Check if backup files are enabled in configuration
     local backup_enabled=$(jq -r '.change_tracking.backup_files' "$VERSION_CONFIG")
     [[ "$backup_enabled" == "null" || -z "$backup_enabled" ]] && backup_enabled="true"
     local temp_file=""
-    
+
     if [[ "$backup_enabled" == "true" ]]; then
         # Create backup only if enabled
         cp "$file_path" "$file_path$backup_suffix"
@@ -149,9 +149,9 @@ update_file_version() {
         cp "$file_path" "$temp_file"
         log_info "  Backup files disabled - using temporary verification"
     fi
-    
+
     # ... pattern processing logic ...
-    
+
     # Verify changes based on configuration
     if [[ "$backup_enabled" == "true" ]]; then
         if diff -q "$file_path" "$file_path$backup_suffix" >/dev/null 2>&1; then

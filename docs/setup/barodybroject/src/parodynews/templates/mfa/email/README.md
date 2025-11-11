@@ -139,7 +139,7 @@ from django.template.loader import render_to_string
 
 def send_mfa_notification(user, event_type, context):
     """Send MFA-related email notification"""
-    
+
     email_templates = {
         'totp_activated': {
             'subject': 'mfa/email/totp_activated_subject.txt',
@@ -154,11 +154,11 @@ def send_mfa_notification(user, event_type, context):
             'message': 'mfa/email/recovery_codes_generated_message.txt',
         },
     }
-    
+
     templates = email_templates.get(event_type)
     if not templates:
         return
-    
+
     # Prepare email context
     email_context = {
         'user': user,
@@ -167,11 +167,11 @@ def send_mfa_notification(user, event_type, context):
         'support_email': settings.SUPPORT_EMAIL,
         **context
     }
-    
+
     # Render email content
     subject = render_to_string(templates['subject'], email_context).strip()
     message = render_to_string(templates['message'], email_context)
-    
+
     # Send email
     send_mail(
         subject=subject,
@@ -184,23 +184,23 @@ def send_mfa_notification(user, event_type, context):
 
 ## Container Configuration
 - **Runtime**: Django email backend with MFA event integration
-- **Dependencies**: 
+- **Dependencies**:
   - Django email system and SMTP configuration
   - MFA event tracking and logging
   - Template rendering with security context
-- **Environment**: 
+- **Environment**:
   - Email delivery configuration
   - Security monitoring and alerting systems
   - User notification preferences
 - **Security**: Security event notifications, audit logging, user awareness
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - MFA activation and deactivation events
   - Security key registration and removal
   - Recovery code generation workflows
   - Account security changes and updates
-- **Outgoing**: 
+- **Outgoing**:
   - Email delivery and notification systems
   - Security monitoring and audit trails
   - User security awareness and education

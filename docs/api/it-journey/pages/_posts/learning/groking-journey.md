@@ -3,10 +3,11 @@ title: Groking Journey
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: groking-journey.md
 ---
+# Groking Journey
+
 ## Groking About IT Journey
 
 Based on the information provided, the website built using Jekyll and Bootstrap is a personal blog with a focus on IT and software development. The site incorporates a clean and simple design, making use of Bootstrap for responsive layout and styling.

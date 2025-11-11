@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.declare-reassign-variable-in-function-declaration.expect.md
 ---
+# Error.Declare Reassign Variable In Function Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ error.declare-reassign-variable-in-function-declaration.ts:4:4
   6 |   const y = bar(foo);
   7 |   return <Child y={y} />;
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-duplicate-instruction-from-merge-consecutive-scopes.expect.md
 ---
+# Repro Duplicate Instruction From Merge Consecutive Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{}</div><div>{"title":false}</div>

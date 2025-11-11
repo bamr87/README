@@ -35,9 +35,9 @@ The Barodybroject CI/CD pipeline provides a comprehensive, foundational workflow
 
 ### 1. Continuous Integration (ci.yml)
 
-**Purpose**: Primary testing and validation pipeline  
-**Trigger**: Push/PR to main/develop  
-**Duration**: ~8-12 minutes  
+**Purpose**: Primary testing and validation pipeline
+**Trigger**: Push/PR to main/develop
+**Duration**: ~8-12 minutes
 
 **Execution Flow**:
 ```mermaid
@@ -82,9 +82,9 @@ graph TD
 
 ### 2. Code Quality Pipeline (quality.yml)
 
-**Purpose**: Automated code quality and security enforcement  
-**Trigger**: Push/PR (excluding documentation)  
-**Duration**: ~5-8 minutes  
+**Purpose**: Automated code quality and security enforcement
+**Trigger**: Push/PR (excluding documentation)
+**Duration**: ~5-8 minutes
 
 **Quality Gates**:
 
@@ -118,9 +118,9 @@ graph TD
 
 ### 3. Container Management (container.yml)
 
-**Purpose**: Build, test, and publish container images  
-**Trigger**: Push to main, tags, releases  
-**Duration**: ~10-15 minutes  
+**Purpose**: Build, test, and publish container images
+**Trigger**: Push to main, tags, releases
+**Duration**: ~10-15 minutes
 
 **Build Strategy**:
 ```dockerfile
@@ -159,9 +159,9 @@ FROM base AS production   # Minimal production image
 
 ### 4. Azure Deployment (deploy.yml)
 
-**Purpose**: Automated Azure Container Apps deployment  
-**Trigger**: Successful CI + Container workflows, manual dispatch  
-**Duration**: ~8-12 minutes  
+**Purpose**: Automated Azure Container Apps deployment
+**Trigger**: Successful CI + Container workflows, manual dispatch
+**Duration**: ~8-12 minutes
 
 **Deployment Flow**:
 ```mermaid
@@ -204,9 +204,9 @@ graph LR
 
 ### 5. Environment Maintenance (environment.yml)
 
-**Purpose**: Automated environment health and dependency management  
-**Trigger**: Weekly schedule, manual dispatch  
-**Duration**: ~15-20 minutes  
+**Purpose**: Automated environment health and dependency management
+**Trigger**: Weekly schedule, manual dispatch
+**Duration**: ~15-20 minutes
 
 **Health Monitoring**:
 1. **Dependency Auditing**
@@ -294,7 +294,7 @@ services:
 
 ### Benchmark Targets
 - **CI Pipeline**: Complete in under 10 minutes
-- **Quality Pipeline**: Complete in under 8 minutes  
+- **Quality Pipeline**: Complete in under 8 minutes
 - **Container Build**: Complete in under 15 minutes
 - **Deployment**: Complete in under 12 minutes
 - **Environment Check**: Complete in under 20 minutes

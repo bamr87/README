@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: default-param-with-reorderable-callback.expect.md
 ---
+# Default Param With Reorderable Callback.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

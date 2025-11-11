@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-scope-grouping.expect.md
 ---
+# Reactive Scope Grouping.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":[{}]}

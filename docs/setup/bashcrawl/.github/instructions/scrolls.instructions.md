@@ -132,7 +132,7 @@ Technical content with:
                            CHAPTER/SCROLL TITLE
 ================================================================================
 
-# Level 2 - Section Dividers (80 characters)  
+# Level 2 - Section Dividers (80 characters)
 ################################################################################
 #                              SECTION TITLE                                  #
 ################################################################################
@@ -218,7 +218,7 @@ echo -e "${YELLOW}⚠️  CAUTION${RESET}: This spell requires careful preparati
 �️  = Keys (access requirements, permissions)
 🚪  = Doorways (navigation paths)
 
-# Status Indicators  
+# Status Indicators
 ✅  = Completed/Success
 ❌  = Failed/Error
 ⚠️  = Warning/Caution
@@ -228,7 +228,7 @@ echo -e "${YELLOW}⚠️  CAUTION${RESET}: This spell requires careful preparati
 
 # Skill Level Indicators
 ⭐  = Beginner (Entrance level)
-⚡  = Intermediate (Cellar/Armoury level)  
+⚡  = Intermediate (Cellar/Armoury level)
 🏆  = Advanced (Chamber/Hidden level)
 🎖️  = Expert (Master level)
 
@@ -244,10 +244,10 @@ echo -e "${YELLOW}⚠️  CAUTION${RESET}: This spell requires careful preparati
 ```
 # Single Line Boxes
 ┌─┬─┐  ┏━┳━┓  ╔═╦═╗  ╭─┬─╮
-├─┼─┤  ┣━╋━┫  ╠═╬═╣  ├─┼─┤  
+├─┼─┤  ┣━╋━┫  ╠═╬═╣  ├─┼─┤
 └─┴─┘  ┗━┻━┛  ╚═╩═╝  ╰─┴─╯
 
-# Double Line Boxes  
+# Double Line Boxes
 ╔══════════════╗
 ║ MAJOR HEADER ║
 ╚══════════════╝
@@ -269,7 +269,7 @@ Mana:     [██████░░░░] Learning Energy Available
 ```
 # Hierarchy without relying on Markdown
 MAJOR_CONCEPT_IN_CAPS          # Equivalent to H1
-Title Case For Sections        # Equivalent to H2  
+Title Case For Sections        # Equivalent to H2
 lowercase_with_underscores     # Technical terms
 "Quoted Important Information" # Emphasis equivalent to bold
 *Atmospheric flavor text*      # When italic support available
@@ -287,7 +287,7 @@ $ command                      # Shell prompt indication
 *Shadows dance across stone walls carved with mystical symbols...*
 *A gentle breeze carries the scent of old parchment and candle wax...*
 
-# Transition Phrases  
+# Transition Phrases
 *As you master this spell, new pathways begin to shimmer...*
 *The chamber's secrets slowly reveal themselves...*
 *Your growing power unlocks deeper mysteries...*
@@ -320,7 +320,7 @@ $ command                      # Shell prompt indication
 ```
 # Content Layering Approach
 Layer 1: Pure ASCII (universal compatibility)
-Layer 2: + Basic Unicode symbols (🌟⚡💰) when supported  
+Layer 2: + Basic Unicode symbols (🌟⚡💰) when supported
 Layer 3: + ANSI colors when terminal supports
 Layer 4: + Advanced Unicode art when fully supported
 
@@ -344,7 +344,7 @@ fi
 CONCEPT            FANTASY TERM         ASCII SYMBOL    USAGE CONTEXT
 --------           -------------        ------------    --------------
 Directory          Chamber/Room         🏰 [DIR]        Navigation and exploration
-File               Scroll/Artifact      📜 [FILE]       Documents and data  
+File               Scroll/Artifact      📜 [FILE]       Documents and data
 Executable         Treasure/Potion      🗡️ [EXEC]       Interactive encounters
 Command            Spell/Incantation    ⚡ CMD          Actions and operations
 Permission         Enchantment/Ward     🗝️ PERM         Security and access
@@ -369,18 +369,18 @@ Network            Mystical Web         🕸️ NET          Connections and com
 
 # Progressive Power Descriptions
 ⭐ NOVICE LEVEL    : "Your fingers tentatively approach the mystical keyboard"
-⚡ ADEPT LEVEL     : "Commands flow from your hands like practiced incantations"  
+⚡ ADEPT LEVEL     : "Commands flow from your hands like practiced incantations"
 🏆 MASTER LEVEL   : "You weave terminal spells with the confidence of a wizard"
 🎖️ GRANDMASTER    : "The very shell bends to your will like ancient magic"
 
 # Achievement Celebrations (ASCII Art)
     ████████╗██████╗ ███████╗ █████╗ ███████╗██╗   ██╗██████╗ ███████╗
     ╚══██╔══╝██╔══██╗██╔════╝██╔══██╗██╔════╝██║   ██║██╔══██╗██╔════╝
-       ██║   ██████╔╝█████╗  ███████║███████╗██║   ██║██████╔╝█████╗  
-       ██║   ██╔══██╗██╔══╝  ██╔══██║╚════██║██║   ██║██╔══██╗██╔══╝  
+       ██║   ██████╔╝█████╗  ███████║███████╗██║   ██║██████╔╝█████╗
+       ██║   ██╔══██╗██╔══╝  ██╔══██║╚════██║██║   ██║██╔══██╗██╔══╝
        ██║   ██║  ██║███████╗██║  ██║███████║╚██████╔╝██║  ██║███████╗
        ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
-    
+
                          🏆 TREASURE CLAIMED! 🏆
 ```
 
@@ -445,12 +445,12 @@ INTERACTIVE LEARNING PATH:
 Practice Path: Discovery → Understanding → Mastery
 
     1. FIRST ACTION: Specific instruction with verification
-    2. UNDERSTANDING CHECK: Confirm spell effects  
+    2. UNDERSTANDING CHECK: Confirm spell effects
     3. APPLICATION: Real-world usage scenario
 
 MASTERY REQUIREMENTS:
 ✅ Complete basic command execution
-✅ Understand output interpretation  
+✅ Understand output interpretation
 ✅ Apply skill to new scenarios
 ✅ Demonstrate safe usage practices
 
@@ -498,7 +498,7 @@ MASTERY REQUIREMENTS:
    ════════════════════════════════════════════════════════════════════════════
    *Why this spell matters in your mystical journey*
 
-2. BASIC SYNTAX  
+2. BASIC SYNTAX
    ────────────────────────────────────────────────────────────────────────────
    command_name                 # Simplest form with clear explanation
 
@@ -590,7 +590,7 @@ PREREQUISITE SPELL TREE:
 ~~~~~~~~~~~~~~~~~~~~~~~~
 📜 Basic Navigation (Entrance)
    ├── ls command mastery
-   ├── cd pathfinding  
+   ├── cd pathfinding
    └── cat scroll reading
 
 ⚡ Enhanced Sight (Cellar)
@@ -598,14 +598,14 @@ PREREQUISITE SPELL TREE:
    ├── File vs directory distinction
    └── Hidden file awareness (.filename)
 
-🗡️ File Permissions (Armoury)  
+🗡️ File Permissions (Armoury)
    ├── Executable identification
    ├── ./command execution
    └── Permission management basics
 
 SKILL VERIFICATION CHECKLIST:
 ✅ Can navigate between chambers with confidence
-✅ Can identify file types using enhanced sight  
+✅ Can identify file types using enhanced sight
 ✅ Can execute treasures and potions safely
 ✅ Understands inventory system ($I variable)
 ```
@@ -935,7 +935,7 @@ SYMBOL    MEANING                    MAGICAL SIGNIFICANCE
 PRACTICE PATH: Discovery → Understanding → Mastery
 
     1. FIRST STEP: [Specific instruction with verification method]
-    2. SECOND STEP: [Building on first with new complexity]  
+    2. SECOND STEP: [Building on first with new complexity]
     3. THIRD STEP: [Integration and practical application]
 
 VERIFICATION SPELLS:
@@ -951,7 +951,7 @@ prove your mastery of the ancient arts:
 REQUIRED TASKS:
 ~~~~~~~~~~~~~~~
 ✅ [Specific measurable achievement 1]
-✅ [Specific measurable achievement 2]  
+✅ [Specific measurable achievement 2]
 ✅ [Specific measurable achievement 3]
 
 EXPECTED DISCOVERIES:
@@ -1103,7 +1103,7 @@ METHOD THE SECOND: [Alternative Approach] ([Context])
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Specific requirements that build on previous mastery]
 
-⚔️ INTERMEDIATE [ADVANCED SKILL] TRIALS  
+⚔️ INTERMEDIATE [ADVANCED SKILL] TRIALS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Progressive challenges that test understanding]
 
@@ -1154,7 +1154,7 @@ MASTERY ASSESSMENT MATRIX:
 
 ABILITIES GAINED IN THIS SACRED CHAMBER:
 • [Advanced capability 1 with practical application]
-• [Advanced capability 2 with real-world context]  
+• [Advanced capability 2 with real-world context]
 • [Advanced capability 3 with professional relevance]
 
 CONNECTIONS TO THE GREATER MAGICAL NETWORK:
@@ -1224,7 +1224,7 @@ Before publishing any scroll, verify these ASCII formatting standards:
 COMMAND-LINE COMPATIBILITY TEST:
 ✅ cat scroll         # Displays properly formatted content
 ✅ less scroll        # Navigation works smoothly
-✅ head scroll        # Headers and sections clearly visible  
+✅ head scroll        # Headers and sections clearly visible
 ✅ tail scroll        # Conclusions and navigation clear
 ✅ wc scroll          # Reasonable length metrics
 
@@ -1250,7 +1250,7 @@ LEARNING OBJECTIVE CLARITY:
 ✅ Real-world application clearly explained
 ✅ Assessment criteria explicit and fair
 
-FANTASY THEME CONSISTENCY:  
+FANTASY THEME CONSISTENCY:
 ✅ Metaphors align with established terminology
 ✅ Atmospheric text enhances rather than distracts
 ✅ Adventure narrative supports learning goals
@@ -1305,7 +1305,7 @@ command-line wizards through the harmonious blend of:
 
 UNIVERSAL DESIGN PRINCIPLES:
 • Content readable in ANY terminal environment
-• ASCII art enhances but never replaces core information  
+• ASCII art enhances but never replaces core information
 • Progressive enhancement from basic to advanced terminals
 • Fantasy metaphors map directly to professional skills
 • Visual hierarchy guides learning without requiring graphics
@@ -1336,7 +1336,7 @@ Your scrolls light the path forward.
 As the Bashcrawl educational adventure continues to evolve, these instructions ensure that:
 
 - **Quality Remains Consistent**: New contributors can create content that seamlessly integrates
-- **Standards Evolve Thoughtfully**: ASCII art enhancements preserve universal compatibility  
+- **Standards Evolve Thoughtfully**: ASCII art enhancements preserve universal compatibility
 - **Learning Objectives Stay Clear**: Fantasy elements always serve educational goals
 - **Professional Relevance Increases**: Skills taught directly apply to modern development workflows
 - **Community Grows Sustainably**: Clear guidelines enable collaborative content creation

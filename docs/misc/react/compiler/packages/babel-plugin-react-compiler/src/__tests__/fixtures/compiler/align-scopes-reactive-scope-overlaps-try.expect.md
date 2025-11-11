@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: align-scopes-reactive-scope-overlaps-try.expect.md
 ---
+# Align Scopes Reactive Scope Overlaps Try.Expect
+
 ## Input
 
 ```javascript
@@ -65,7 +67,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2,"joe"]
 [2,"joe"]

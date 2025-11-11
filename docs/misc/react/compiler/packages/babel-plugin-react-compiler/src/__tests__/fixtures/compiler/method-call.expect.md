@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: method-call.expect.md
 ---
+# Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 4

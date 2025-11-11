@@ -245,7 +245,7 @@ Use YARD syntax for auto-generated docs:
 
 ```ruby
 # Authenticates a user with the given credentials
-# 
+#
 # @param username [String] the user's login name
 # @param password [String] the user's password
 # @return [User, nil] the authenticated user or nil if authentication fails
@@ -379,19 +379,19 @@ Gem::Specification.new do |spec|
   spec.version       = GemName::VERSION
   spec.authors       = ["Your Name"]
   spec.email         = ["your.email@example.com"]
-  
+
   spec.summary       = "Short description"
   spec.description   = "Longer description"
   spec.homepage      = "https://github.com/username/gem_name"
   spec.license       = "MIT"
-  
+
   # Security: restrict push to specific host
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata["documentation_uri"] = "#{spec.homepage}#readme"
-  
+
   # Dependencies with pessimistic constraints
   spec.add_dependency "rails", "~> 7.0"
   spec.add_development_dependency "rspec", "~> 3.0"
@@ -466,12 +466,12 @@ gem push gem_name-2.1.0.rc1.gem
 
 ### Post-Publication
 
-1. **Verify publication**: 
+1. **Verify publication**:
    - Check gem page on RubyGems.org
    - Verify GitHub release creation
    - Test installation from both sources
 
-2. **Update documentation**: 
+2. **Update documentation**:
    - README installation instructions
    - API documentation if changed
    - Usage examples

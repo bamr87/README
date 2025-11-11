@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-1.expect.md
 ---
+# Capturing Function 1.Expect
+
 ## Input
 
 ```javascript
@@ -53,4 +55,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

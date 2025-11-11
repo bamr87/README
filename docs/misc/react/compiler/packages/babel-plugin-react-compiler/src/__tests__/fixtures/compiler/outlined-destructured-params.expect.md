@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: outlined-destructured-params.expect.md
 ---
+# Outlined Destructured Params.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"name":"one"}</div>

@@ -17,7 +17,7 @@ source_file: README.md
 @lastModified 2025-07-06
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Workflow testing organization and documentation
 
 @relatedEvolutions
@@ -85,7 +85,7 @@ The `tests/workflows/` directory provides comprehensive testing capabilities for
 # Test all workflows comprehensively
 ./tests/workflows/test-all-workflows-local.sh
 
-# Test daily evolution specifically  
+# Test daily evolution specifically
 ./tests/workflows/test-daily-evolution-local.sh
 
 # Setup workflow testing environment
@@ -138,7 +138,7 @@ curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 # macOS
 brew install gh
 
-# Ubuntu/Debian  
+# Ubuntu/Debian
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update

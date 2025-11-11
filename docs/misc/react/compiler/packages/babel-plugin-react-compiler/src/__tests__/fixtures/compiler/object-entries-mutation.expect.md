@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-entries-mutation.expect.md
 ---
+# Object Entries Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"entries":[["object",{"key":{"a":0,"b":"value1","c":true},"updated":true}]]}</div>

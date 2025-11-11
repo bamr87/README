@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-simple-alias.expect.md
 ---
+# Capturing Func Simple Alias.Expect
+
 ## Input
 
 ```javascript
@@ -64,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"wat0":"joe"}
 {"a":2,"wat0":"joe"}

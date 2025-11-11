@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: mutate-after-useeffect-granular-access.expect.md
 ---
+# Mutate After Useeffect Granular Access.Expect
+
 ## Input
 
 ```javascript
@@ -41,6 +43,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

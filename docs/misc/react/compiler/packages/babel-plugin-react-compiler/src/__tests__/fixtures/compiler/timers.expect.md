@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: timers.expect.md
 ---
+# Timers.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ function Component(props) {
 }
 
 ```
-      

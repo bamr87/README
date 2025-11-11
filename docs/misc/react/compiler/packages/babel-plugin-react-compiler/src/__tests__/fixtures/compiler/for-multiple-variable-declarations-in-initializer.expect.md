@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-multiple-variable-declarations-in-initializer.expect.md
 ---
+# For Multiple Variable Declarations In Initializer.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["a","b",42]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-with-no-depslist.expect.md
 ---
+# Usememo With No Depslist.Expect
+
 ## Input
 
 ```javascript
@@ -56,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]

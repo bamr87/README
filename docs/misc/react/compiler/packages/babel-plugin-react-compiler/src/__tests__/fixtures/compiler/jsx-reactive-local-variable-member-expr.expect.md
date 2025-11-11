@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-reactive-local-variable-member-expr.expect.md
 ---
+# Jsx Reactive Local Variable Member Expr.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

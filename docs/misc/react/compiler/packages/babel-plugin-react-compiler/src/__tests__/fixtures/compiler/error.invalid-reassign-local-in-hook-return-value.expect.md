@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-reassign-local-in-hook-return-value.expect.md
 ---
+# Error.Invalid Reassign Local In Hook Return Value.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-reassign-local-in-hook-return-value.ts:4:4
   6 | }
   7 |
 ```
-          
-      
+

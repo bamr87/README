@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-conditional-call-aliased-hook-import.expect.md
 ---
+# Error.Invalid Conditional Call Aliased Hook Import.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-conditional-call-aliased-hook-import.ts:6:11
   8 |   return data;
   9 | }
 ```
-          
-      
+

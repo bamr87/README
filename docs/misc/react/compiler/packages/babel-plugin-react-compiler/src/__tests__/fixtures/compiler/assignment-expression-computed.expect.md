@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: assignment-expression-computed.expect.md
 ---
+# Assignment Expression Computed.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [7]

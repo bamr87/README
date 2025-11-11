@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-duplicate-import-specifier.expect.md
 ---
+# Repro Duplicate Import Specifier.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":0}

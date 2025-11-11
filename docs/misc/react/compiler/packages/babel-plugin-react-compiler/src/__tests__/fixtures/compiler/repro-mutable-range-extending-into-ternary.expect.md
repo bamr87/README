@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-mutable-range-extending-into-ternary.expect.md
 ---
+# Repro Mutable Range Extending Into Ternary.Expect
+
 ## Input
 
 ```javascript
@@ -100,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>Alice</div></div>
 <div><div>Alice</div><div>Bob</div></div>

@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: destructuring-mixed-scope-declarations-and-locals.expect.md
 ---
+# Destructuring Mixed Scope Declarations And Locals.Expect
+
 ## Input
 
 ```javascript
@@ -91,4 +92,3 @@ function Component(props) {
 }
 
 ```
-      

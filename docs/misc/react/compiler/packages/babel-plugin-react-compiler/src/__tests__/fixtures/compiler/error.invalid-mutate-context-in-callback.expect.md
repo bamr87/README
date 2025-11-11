@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-context-in-callback.expect.md
 ---
+# Error.Invalid Mutate Context In Callback.Expect
+
 ## Input
 
 ```javascript
@@ -48,5 +50,4 @@ error.invalid-mutate-context-in-callback.ts:12:4
 
 Hint: If this value is a Ref (value returned by `useRef()`), rename the variable to end in "Ref".
 ```
-          
-      
+

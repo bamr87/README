@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-reassign-shadowed-primitive.expect.md
 ---
+# Lambda Reassign Shadowed Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

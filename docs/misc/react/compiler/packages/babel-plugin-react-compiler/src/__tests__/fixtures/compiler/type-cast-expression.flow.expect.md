@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-cast-expression.flow.expect.md
 ---
+# Type Cast Expression.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

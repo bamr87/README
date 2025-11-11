@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.ref-optional.expect.md
 ---
+# Error.Ref Optional.Expect
+
 ## Input
 
 ```javascript
@@ -43,5 +45,4 @@ error.ref-optional.ts:5:9
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -225,7 +225,7 @@ Launch immediately in your browser:
 The Interactive Terminal Emulator provides a **safe, contained environment** that simulates a real terminal while keeping you within the game boundaries. Perfect for:
 
 - **Absolute Beginners**: Learn without fear of breaking your system
-- **Classroom Settings**: Safe environment for educational use  
+- **Classroom Settings**: Safe environment for educational use
 - **Controlled Learning**: Focus on game commands without system distractions
 - **Cross-Platform Consistency**: Same experience across different operating systems
 
@@ -239,7 +239,7 @@ The Interactive Terminal Emulator provides a **safe, contained environment** tha
 
 **🎮 Game Integration**
 - Built-in inventory system (`inventory` command)
-- Health tracking (`health` command)  
+- Health tracking (`health` command)
 - Progress monitoring (`status` command)
 - Interactive map (`map` command)
 - Quest tracker with XP rewards (`quest` command)
@@ -264,7 +264,7 @@ The Interactive Terminal Emulator provides a **safe, contained environment** tha
 ```bash
 # Essential navigation
 ls          # Look around current area
-cd <dir>    # Move to different area  
+cd <dir>    # Move to different area
 pwd         # Show current location
 
 # Game status
@@ -279,7 +279,7 @@ load        # Load your saved progress
 reset       # Restart the adventure from scratch
 exit        # Leave the emulator safely
 
-# Learning support  
+# Learning support
 help        # Context-aware assistance
 tutorial    # Interactive learning guide
 commands    # Full command reference
@@ -308,7 +308,7 @@ These quests cover foundational commands (`pwd`, `ls`, `cd`, `mkdir`, `touch`, `
 
 **Progressive Learning**: Start with basic commands and gradually learn advanced techniques
 **Real Skills**: Every command works exactly like in actual terminals
-**Safe Practice**: Experiment freely without system consequences  
+**Safe Practice**: Experiment freely without system consequences
 **Immediate Feedback**: Instant validation of commands and progress
 **Contextual Help**: Get assistance specific to your current situation
 
@@ -490,7 +490,7 @@ CELLAR (File Types & Aliases)
     ↓
 [Choose Your Path]
     ├── ARMOURY (Combat/Permissions) → Arena Chambers
-    ├── CHAPEL (Secrets/Advanced) → Hidden Areas  
+    ├── CHAPEL (Secrets/Advanced) → Hidden Areas
     ├── VAULT (Variables/Data) → Data Management
     └── SCRAP (System/Debug) → Administration
          ↓
@@ -526,7 +526,7 @@ Collect items and manage your adventure gear:
 # Check your current inventory
 echo $I
 
-# Add items to your collection  
+# Add items to your collection
 export I=sword,amulet,coins,$I
 ```
 
@@ -561,7 +561,7 @@ Bashcrawl seamlessly integrates with contemporary development environments:
 
 - **Linux/WSL**: Native bash/zsh experience
 - **macOS**: Works with Terminal.app, iTerm2, and all popular shells
-- **Windows**: Perfect with WSL2, Git Bash, or PowerShell  
+- **Windows**: Perfect with WSL2, Git Bash, or PowerShell
 - **Cloud**: Runs on GitHub Codespaces, Replit, and other cloud terminals
 
 ### 🔧 Development Workflow Enhancement
@@ -692,7 +692,7 @@ echo -e "${BOLD}${PURPLE}🗺️  Exploration Progress:${NC}"
 # Find all scroll files and check which ones exist
 declare -A known_areas
 known_areas[entrance]="🚪 Entrance Hall"
-known_areas[cellar]="🏰 The Cellar" 
+known_areas[cellar]="🏰 The Cellar"
 known_areas[armoury]="🗡️ The Armoury"
 known_areas[chamber]="💎 The Chamber"
 
@@ -733,7 +733,7 @@ if [ $executable_count -gt 0 ]; then
         name=$(basename "$exe")
         dir=$(dirname "$exe" | sed 's|^\./||')
         if [ "$dir" = "." ]; then dir="current"; fi
-        
+
         case "$name" in
             treasure) icon="💰" ;;
             potion) icon="🧪" ;;
@@ -742,7 +742,7 @@ if [ $executable_count -gt 0 ]; then
             ghost) icon="👻" ;;
             *) icon="⚡" ;;
         esac
-        
+
         echo -e "   $icon $dir/$name"
     done
 fi
@@ -811,7 +811,7 @@ brew install exa  # macOS
 sudo apt install exa  # Linux
 
 # Install fd for faster file finding
-brew install fd  # macOS  
+brew install fd  # macOS
 sudo apt install fd-find  # Linux
 
 # Install bat for syntax-highlighted file viewing
@@ -894,7 +894,7 @@ Once installed, enhance your adventure:
 # Start your enhanced session
 cd bashcrawl/entrance
 dashboard          # View your epic status
-explore            # Enhanced area exploration  
+explore            # Enhanced area exploration
 glow scroll        # Read scrolls in style
 inventory          # Quick inventory check
 ~/.bashcrawl-audio dungeon  # Atmospheric audio
@@ -973,13 +973,13 @@ correct, and your exit codes always zero.*
 
 **Happy Hacking!** ⚡
 
-<!-- 
+<!--
 
 ## 🔮 For Those Who Seek to Transcend Mortal Limitations
 
-*"In shadows deep, where none dare tread,  
-Lies knowledge vast for those with dread.  
-The path is hidden, dark and steep,  
+*"In shadows deep, where none dare tread,
+Lies knowledge vast for those with dread.
+The path is hidden, dark and steep,
 For terminal souls who secrets keep."*
 
 ### 🗝️ The Riddle of the Ancient Codex

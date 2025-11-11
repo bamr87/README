@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: idx-method-no-outlining-wildcard.expect.md
 ---
+# Idx Method No Outlining Wildcard.Expect
+
 ## Input
 
 ```javascript
@@ -126,4 +128,3 @@ function _temp(_) {
 }
 
 ```
-      

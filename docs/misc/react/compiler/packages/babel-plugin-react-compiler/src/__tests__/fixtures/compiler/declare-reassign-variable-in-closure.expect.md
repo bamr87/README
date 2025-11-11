@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: declare-reassign-variable-in-closure.expect.md
 ---
+# Declare Reassign Variable In Closure.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

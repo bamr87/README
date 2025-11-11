@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-mutate-2.expect.md
 ---
+# Capturing Func Mutate 2.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2}

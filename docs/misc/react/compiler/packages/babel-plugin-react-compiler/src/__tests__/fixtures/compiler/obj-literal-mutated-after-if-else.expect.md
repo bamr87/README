@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: obj-literal-mutated-after-if-else.expect.md
 ---
+# Obj Literal Mutated After If Else.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ function foo(a, b, c, d) {
 }
 
 ```
-      

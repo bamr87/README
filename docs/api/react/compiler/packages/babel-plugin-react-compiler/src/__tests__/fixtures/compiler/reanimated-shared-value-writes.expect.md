@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: reanimated-shared-value-writes.expect.md
 ---
+# Reanimated Shared Value Writes.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +66,3 @@ function SomeComponent() {
 }
 
 ```
-      

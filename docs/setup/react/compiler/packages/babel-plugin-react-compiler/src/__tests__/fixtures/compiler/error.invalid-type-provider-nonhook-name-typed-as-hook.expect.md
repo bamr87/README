@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.invalid-type-provider-nonhook-name-typed-as-hook.expect.md
 ---
+# Error.Invalid Type Provider Nonhook Name Typed As Hook.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-type-provider-nonhook-name-typed-as-hook.ts:4:15
   5 | }
   6 |
 ```
-          
-      
+

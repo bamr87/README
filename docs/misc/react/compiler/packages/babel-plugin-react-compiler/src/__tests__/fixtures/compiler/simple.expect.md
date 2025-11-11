@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: simple.expect.md
 ---
+# Simple.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export default function foo(x, y) {
 }
 
 ```
-      

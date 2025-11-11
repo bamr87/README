@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-continue.expect.md
 ---
+# For Of Continue.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0.5,1,1.5]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.mutate-function-property.expect.md
 ---
+# Error.Mutate Function Property.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.mutate-function-property.ts:3:2
   5 |   return <Dropdown checkableIndicator={{children: renderIcon}} />;
   6 | }
 ```
-          
-      
+

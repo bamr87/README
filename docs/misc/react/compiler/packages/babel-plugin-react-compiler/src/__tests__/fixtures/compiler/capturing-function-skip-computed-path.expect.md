@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: capturing-function-skip-computed-path.expect.md
 ---
+# Capturing Function Skip Computed Path.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

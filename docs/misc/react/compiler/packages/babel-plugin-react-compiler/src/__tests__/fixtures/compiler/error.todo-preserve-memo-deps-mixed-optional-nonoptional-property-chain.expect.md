@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-preserve-memo-deps-mixed-optional-nonoptional-property-chain.expect.md
 ---
+# Error.Todo Preserve Memo Deps Mixed Optional Nonoptional Property Chain.Expect
+
 ## Input
 
 ```javascript
@@ -94,5 +96,4 @@ error.todo-preserve-memo-deps-mixed-optional-nonoptional-property-chain.ts:7:25
   20 |     return [object.callback()];
   21 |   }, [object]);
 ```
-          
-      
+

@@ -34,7 +34,7 @@ Amount required for this deployment (Free VMs): 1
 
 ### **Option 1: Request Quota Increase** ⭐ **RECOMMENDED**
 
-**Cost**: Same as planned ($0 for F1, or $13/month for B1)  
+**Cost**: Same as planned ($0 for F1, or $13/month for B1)
 **Time**: 24-48 hours for approval
 
 #### Steps:
@@ -78,7 +78,7 @@ Amount required for this deployment (Free VMs): 1
 
 ### **Option 2: Use Azure Container Instances (ACI)** 💡
 
-**Cost**: ~$8-15/month (pay per hour when running)  
+**Cost**: ~$8-15/month (pay per hour when running)
 **Time**: Deploy immediately
 
 Azure Container Instances don't require App Service quota!
@@ -106,7 +106,7 @@ I can update the Bicep template to use ACI instead of App Service:
 
 ### **Option 3: Use Azure Container Apps** 🚀
 
-**Cost**: ~$20-30/month  
+**Cost**: ~$20-30/month
 **Time**: Deploy immediately
 
 Container Apps also don't require App Service VM quota (different quota pool).
@@ -136,7 +136,7 @@ azd up
 
 ### **Option 4: Use Different Azure Subscription**
 
-**Cost**: Depends on subscription type  
+**Cost**: Depends on subscription type
 **Time**: Immediate (if you have another subscription)
 
 If you have access to another Azure subscription with quota:
@@ -223,10 +223,10 @@ I can help you deploy to any of the platforms listed above. Just let me know whi
 
 ## 🔍 What I've Already Done
 
-✅ Modified infrastructure to use F1 Free tier (no cost)  
-✅ Tried multiple Azure regions (eastus2, westus2)  
-✅ Created new environment to avoid conflicts  
-✅ Identified subscription has zero quota for all App Service tiers  
+✅ Modified infrastructure to use F1 Free tier (no cost)
+✅ Tried multiple Azure regions (eastus2, westus2)
+✅ Created new environment to avoid conflicts
+✅ Identified subscription has zero quota for all App Service tiers
 
 **Current State**: Infrastructure is ready but blocked by subscription quota limits
 

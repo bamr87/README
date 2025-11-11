@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-cfdfe5572fc7.expect.md
 ---
+# Rules Of Hooks Cfdfe5572Fc7.Expect
+
 ## Input
 
 ```javascript
@@ -27,4 +29,3 @@ function useHook() {
 }
 
 ```
-      

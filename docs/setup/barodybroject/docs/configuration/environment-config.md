@@ -12,12 +12,12 @@ source_file: environment-config.md
 ---
 # Environment Configuration Guide
 
-**File**: environment-config.md  
-**Description**: Comprehensive environment variable reference and configuration management  
-**Author**: Barodybroject Team <team@barodybroject.com>  
-**Created**: 2025-10-27  
-**Last Modified**: 2025-10-27  
-**Version**: 1.0.0  
+**File**: environment-config.md
+**Description**: Comprehensive environment variable reference and configuration management
+**Author**: Barodybroject Team <team@barodybroject.com>
+**Created**: 2025-10-27
+**Last Modified**: 2025-10-27
+**Version**: 1.0.0
 
 ## Table of Contents
 
@@ -306,18 +306,18 @@ def validate_environment(env_type='development'):
         'staging': ['SECRET_KEY', 'DB_PASSWORD', 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY'],
         'production': ['SECRET_KEY', 'DB_PASSWORD', 'AWS_ACCESS_KEY_ID', 'AWS_SECRET_ACCESS_KEY', 'ALLOWED_HOSTS'],
     }
-    
+
     missing_vars = []
     for var in required_vars.get(env_type, []):
         if not os.environ.get(var):
             missing_vars.append(var)
-    
+
     if missing_vars:
         print(f"❌ Missing required environment variables for {env_type}:")
         for var in missing_vars:
             print(f"  - {var}")
         return False
-    
+
     print(f"✅ All required environment variables present for {env_type}")
     return True
 
@@ -377,7 +377,7 @@ import json
 
 def store_secret(secret_name, secret_dict, region='us-east-1'):
     client = boto3.client('secretsmanager', region_name=region)
-    
+
     try:
         client.create_secret(
             Name=secret_name,
@@ -463,7 +463,7 @@ secrets:
           "value": "your-secure-db-password"
         },
         {
-          "name": "secret-key", 
+          "name": "secret-key",
           "value": "your-django-secret-key"
         }
       ]
@@ -627,7 +627,7 @@ except Exception as e:
 
 ---
 
-**Last Updated**: October 27, 2025  
-**Maintainer**: Barodybroject Team  
-**Version**: 1.0.0  
+**Last Updated**: October 27, 2025
+**Maintainer**: Barodybroject Team
+**Version**: 1.0.0
 **Related**: [Django Settings](./settings-optimization.md) | [Security Guide](./security-config.md)

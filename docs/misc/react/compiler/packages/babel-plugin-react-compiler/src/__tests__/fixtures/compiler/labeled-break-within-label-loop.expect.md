@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: labeled-break-within-label-loop.expect.md
 ---
+# Labeled Break Within Label Loop.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["0 @A","0 @B","0 @C","1 @A","1 @C"]

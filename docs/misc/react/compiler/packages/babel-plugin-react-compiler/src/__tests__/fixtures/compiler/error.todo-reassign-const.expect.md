@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-reassign-const.expect.md
 ---
+# Error.Todo Reassign Const.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.todo-reassign-const.ts:3:20
   5 |   return (
   6 |     <Stringify
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-phi-primitive.expect.md
 ---
+# Infer Phi Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

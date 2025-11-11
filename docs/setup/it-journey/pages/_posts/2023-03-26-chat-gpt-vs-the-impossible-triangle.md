@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: 2023-03-26-chat-gpt-vs-the-impossible-triangle.md
 ---
+# 2023 03 26 Chat Gpt Vs The Impossible Triangle
+
 ## What is a Generative Pre-trained Transformer?
 
 By now, everyone has heard about #ChatGPT4 and all the ways this tool will disrupt the world, eliminate white collared jobs, and breed a new wave of "know-it-alls". For some, this may be a bleak outlook of our future without knowing how AI will infiltrate our everyday lives, (very similar situation when the internet first appeared), but for others tethered to computers and the internet, this is the search engine we've all been looking for...
@@ -19,7 +21,7 @@ Even though this tool will lead you to an answer quickly, users must understand 
 
 ![](../../assets/images/google-gpt-results.png){: .img-fluid }
 
-Chat GPT can easily sift through the noise with very little guidance to find you the "right" answer quickly, which is great for quick questions and basic facts. However, once you start asking hard questions, it becomes obvious there's a mysteriousness of ths tool  that only data scientists understand. For the consumers of this information, we should still exercise caution about what "it" tells you to be "truth". 
+Chat GPT can easily sift through the noise with very little guidance to find you the "right" answer quickly, which is great for quick questions and basic facts. However, once you start asking hard questions, it becomes obvious there's a mysteriousness of ths tool  that only data scientists understand. For the consumers of this information, we should still exercise caution about what "it" tells you to be "truth".
 
 ![](../../assets/images/ai-gpt-results.png){: .img-fluid }
 
@@ -41,9 +43,9 @@ Or you can ask Chat GPT.
 
 ![](../../assets/images/gpt-site-uptime.png){: .img-fluid }
 
-Those who code all the time, you may not be impressed with this example, but imagine if you had this tool during the early stages of your programming journey and avoiding all those hours dealing with syntax errors. 
+Those who code all the time, you may not be impressed with this example, but imagine if you had this tool during the early stages of your programming journey and avoiding all those hours dealing with syntax errors.
 
-Don't get me wrong. This tool by no means will make anyone a programmer overnight, but there's a lot of potential for this tool to accelerate the learning process tremendously, and debug with ease. But of course, not all programmers can tap into this evolving technology just yet, and if you in graphic design, you might have to wait awhile...  
+Don't get me wrong. This tool by no means will make anyone a programmer overnight, but there's a lot of potential for this tool to accelerate the learning process tremendously, and debug with ease. But of course, not all programmers can tap into this evolving technology just yet, and if you in graphic design, you might have to wait awhile...
 
 ## Triangle Schemes
 
@@ -84,7 +86,7 @@ To reallly understand the impact, you might want to ask yourself:
 3.  How is this tool regulated to ensure information is democratized and accessible?
 4.  Are we living the prequel of Minority report?
 
-One good documentary to catch up on some of the negative consequences of AI/ML is titled "Coded Bias" on [Netflix](https://www.netflix.com/title/81328723). This movie provides a bleak view of how AI technology has gone wrong today... 
+One good documentary to catch up on some of the negative consequences of AI/ML is titled "Coded Bias" on [Netflix](https://www.netflix.com/title/81328723). This movie provides a bleak view of how AI technology has gone wrong today...
 
 ## Summary Outlook, not email
 

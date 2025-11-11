@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-no-return-value.expect.md
 ---
+# Error.Usememo No Return Value.Expect
+
 ## Input
 
 ```javascript
@@ -67,5 +69,4 @@ error.useMemo-no-return-value.ts:6:17
   10 |     <div>
   11 |       {value}
 ```
-          
-      
+

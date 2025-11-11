@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-shorthand-3.expect.md
 ---
+# Object Method Shorthand 3.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"a":{"x":1},"wat0":"joe"},"shouldInvokeFns":true}</div>

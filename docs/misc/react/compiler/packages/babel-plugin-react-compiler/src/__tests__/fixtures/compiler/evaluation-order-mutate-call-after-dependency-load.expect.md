@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: evaluation-order-mutate-call-after-dependency-load.expect.md
 ---
+# Evaluation Order Mutate Call After Dependency Load.Expect
+
 ## Input
 
 ```javascript
@@ -86,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [5,6]

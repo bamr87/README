@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-0592bd574811.expect.md
 ---
+# Rules Of Hooks 0592Bd574811.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ function makeListener(instance) {
 }
 
 ```
-      

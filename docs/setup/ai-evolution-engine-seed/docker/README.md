@@ -17,7 +17,7 @@ source_file: README.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #cross-platform-support: Docker containerization for universal compatibility
   - #ci-cd-enhancement: Container-based CI/CD workflows
 

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: iife-return-modified-later.expect.md
 ---
+# Iife Return Modified Later.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{}]

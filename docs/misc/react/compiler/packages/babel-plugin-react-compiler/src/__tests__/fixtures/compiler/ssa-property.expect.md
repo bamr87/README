@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-property.expect.md
 ---
+# Ssa Property.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":[]}

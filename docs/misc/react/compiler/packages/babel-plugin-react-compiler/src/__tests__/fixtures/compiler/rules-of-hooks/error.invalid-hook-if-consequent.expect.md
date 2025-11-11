@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-if-consequent.expect.md
 ---
+# Error.Invalid Hook If Consequent.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.invalid-hook-if-consequent.ts:4:8
   6 |   return x;
   7 | }
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.sketchy-code-exhaustive-deps.expect.md
 ---
+# Error.Sketchy Code Exhaustive Deps.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.sketchy-code-exhaustive-deps.ts:6:7
   8 |   );
   9 |
 ```
-          
-      
+

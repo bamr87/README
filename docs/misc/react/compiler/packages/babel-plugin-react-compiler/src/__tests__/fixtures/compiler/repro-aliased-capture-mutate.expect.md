@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-aliased-capture-mutate.expect.md
 ---
+# Repro Aliased Capture Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -85,7 +87,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function","result":3},"shouldInvokeFns":true}</div>

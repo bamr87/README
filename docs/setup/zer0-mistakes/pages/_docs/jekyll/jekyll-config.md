@@ -36,10 +36,10 @@ The tables below list the available settings for Jekyll, and the various `option
  cleaned, by default, when the site is built. Files or folders that are not
  created by your site will be removed. Some files could be retained
  by specifying them within the `<keep_files>` configuration directive.
- 
+
  Do not use an important location for `<destination>`; instead, use it as
  a staging area and copy files from there to your web server.
- 
+
 # Build Command Options
 
 | Setting | Options and Flags |
@@ -90,4 +90,4 @@ before your site is served.
 
  This will either lead to parsing errors, or Jekyll will revert to the
  default settings. Use spaces instead.
- 
+

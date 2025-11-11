@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.callsite-in-non-react-fn-default-import.expect.md
 ---
+# Error.Callsite In Non React Fn Default Import.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.callsite-in-non-react-fn-default-import.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

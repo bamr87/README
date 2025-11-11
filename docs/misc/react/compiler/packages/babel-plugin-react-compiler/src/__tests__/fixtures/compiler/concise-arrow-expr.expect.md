@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: concise-arrow-expr.expect.md
 ---
+# Concise Arrow Expr.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ function component() {
 }
 
 ```
-      

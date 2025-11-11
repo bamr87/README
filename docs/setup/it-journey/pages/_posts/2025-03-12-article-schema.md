@@ -203,7 +203,7 @@ prompt: "Generate an outline for the introduction of this article in a structure
        1. Hook
        2. Background Information
        3. Thesis Statement
-       4. Overview of Key Points 
+       4. Overview of Key Points
    - **Customizable Attributes:**
      - **Style:** (Options: Formal, Informal, Academic, Conversational)
      - **Tone:** (Options: Serious, Light-hearted, Professional, Engaging)

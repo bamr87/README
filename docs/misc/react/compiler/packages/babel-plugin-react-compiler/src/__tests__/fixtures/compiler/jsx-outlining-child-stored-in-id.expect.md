@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-child-stored-in-id.expect.md
 ---
+# Jsx Outlining Child Stored In Id.Expect
+
 ## Input
 
 ```javascript
@@ -146,6 +148,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,null]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-labeled-statement-unconditional-return.expect.md
 ---
+# Usememo Labeled Statement Unconditional Return.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

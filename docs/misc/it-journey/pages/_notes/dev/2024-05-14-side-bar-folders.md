@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: 2024-05-14-side-bar-folders.md
 ---
+# 2024 05 14 Side Bar Folders
+
 ## All Notes Section
 
 {% assign root_folder = site.collections | where: "label", page.collection | first %}

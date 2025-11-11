@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-useCallback-captures-invalidating-value.expect.md
 ---
+# Error.Todo Usecallback Captures Invalidating Value.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.todo-useCallback-captures-invalidating-value.ts:13:21
   15 |
   16 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-optional-member-expression-as-memo-dep-non-optional-in-body.expect.md
 ---
+# Error.Invalid Optional Member Expression As Memo Dep Non Optional In Body.Expect
+
 ## Input
 
 ```javascript
@@ -48,5 +50,4 @@ error.invalid-optional-member-expression-as-memo-dep-non-optional-in-body.ts:3:2
    9 | }
   10 |
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-mutated-ref-non-reactive.expect.md
 ---
+# Lambda Mutated Ref Non Reactive.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: new-spread.expect.md
 ---
+# New Spread.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ function Component(props) {
 }
 
 ```
-      

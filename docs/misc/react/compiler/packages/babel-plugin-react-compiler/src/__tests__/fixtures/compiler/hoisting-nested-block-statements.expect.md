@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-nested-block-statements.expect.md
 ---
+# Hoisting Nested Block Statements.Expect
+
 ## Input
 
 ```javascript
@@ -47,7 +49,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [2]

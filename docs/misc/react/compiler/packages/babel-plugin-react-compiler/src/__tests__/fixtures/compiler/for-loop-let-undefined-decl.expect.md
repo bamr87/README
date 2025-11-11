@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-loop-let-undefined-decl.expect.md
 ---
+# For Loop Let Undefined Decl.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['#CCFF03','#CCFF03','#CCFF03','#CCFF03','#CCFF03','#CCFF03']

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: todo.error.object-pattern-computed-key.expect.md
 ---
+# Todo.Error.Object Pattern Computed Key.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ todo.error.object-pattern-computed-key.ts:5:9
   7 | }
   8 |
 ```
-          
-      
+

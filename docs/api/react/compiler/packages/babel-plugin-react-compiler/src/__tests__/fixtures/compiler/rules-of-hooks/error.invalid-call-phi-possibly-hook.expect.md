@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-call-phi-possibly-hook.expect.md
 ---
+# Error.Invalid Call Phi Possibly Hook.Expect
+
 ## Input
 
 ```javascript
@@ -60,5 +62,4 @@ error.invalid-call-phi-possibly-hook.ts:8:9
    9 | }
   10 |
 ```
-          
-      
+

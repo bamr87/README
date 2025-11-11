@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-after-aliased-freeze.expect.md
 ---
+# Error.Invalid Mutate After Aliased Freeze.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-mutate-after-aliased-freeze.ts:13:2
   15 |   return <Component x={x} y={y} />;
   16 | }
 ```
-          
-      
+

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-dynamic-gating.expect.md
 ---
+# Error.Todo Dynamic Gating.Expect
+
 ## Input
 
 ```javascript
@@ -54,5 +56,4 @@ error.todo-dynamic-gating.ts:13:2
   15 |   return arr;
   16 | }
 ```
-          
-      
+

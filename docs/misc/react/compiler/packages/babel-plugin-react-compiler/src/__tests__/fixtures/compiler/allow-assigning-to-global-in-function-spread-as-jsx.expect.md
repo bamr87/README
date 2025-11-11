@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-assigning-to-global-in-function-spread-as-jsx.expect.md
 ---
+# Allow Assigning To Global In Function Spread As Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -41,6 +43,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

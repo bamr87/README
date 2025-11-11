@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: overlapping-scopes-interleaved-by-terminal.expect.md
 ---
+# Overlapping Scopes Interleaved By Terminal.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

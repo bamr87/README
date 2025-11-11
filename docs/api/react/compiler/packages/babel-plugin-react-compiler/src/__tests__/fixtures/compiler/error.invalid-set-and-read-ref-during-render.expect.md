@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-set-and-read-ref-during-render.expect.md
 ---
+# Error.Invalid Set And Read Ref During Render.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.invalid-set-and-read-ref-during-render.ts:5:9
   6 | }
   7 |
 ```
-          
-      
+

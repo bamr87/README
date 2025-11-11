@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-propagation-phi.expect.md
 ---
+# Constant Propagation Phi.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +49,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

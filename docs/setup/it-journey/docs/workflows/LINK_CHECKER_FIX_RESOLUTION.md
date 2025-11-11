@@ -115,7 +115,7 @@ After implementing the fixes, the script was tested locally and successfully:
 
 ```bash
 [SUCCESS] Link checking completed
-[INFO] Lychee results file size: 1193454 characters  
+[INFO] Lychee results file size: 1193454 characters
 [SUCCESS] Parsed results: 7160 total, 744 broken, 34.6% success
 [SUCCESS] Link Health Guardian workflow completed!
 ```

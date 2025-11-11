@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reduce-reactive-cond-deps-cfg-nested-testifelse.expect.md
 ---
+# Reduce Reactive Cond Deps Cfg Nested Testifelse.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"wat0":2}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-context.expect.md
 ---
+# Error.Invalid Mutate Context.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.invalid-mutate-context.ts:3:2
   5 | }
   6 |
 ```
-          
-      
+

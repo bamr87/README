@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: unused-object-element-with-rest.expect.md
 ---
+# Unused Object Element With Rest.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

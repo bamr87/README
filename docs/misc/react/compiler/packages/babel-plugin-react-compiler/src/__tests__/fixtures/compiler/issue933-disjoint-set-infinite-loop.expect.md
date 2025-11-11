@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: issue933-disjoint-set-infinite-loop.expect.md
 ---
+# Issue933 Disjoint Set Infinite Loop.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]

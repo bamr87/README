@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-codegen-methodcall.expect.md
 ---
+# Error.Bug Invariant Codegen Methodcall.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.bug-invariant-codegen-methodcall.ts:3:17
   5 | };
   6 |
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-try-value-modified-in-catch-escaping.expect.md
 ---
+# Try Catch Try Value Modified In Catch Escaping.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo","bar"]

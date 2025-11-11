@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: outlined-helper.expect.md
 ---
+# Outlined Helper.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"item":"one"}</div></div>

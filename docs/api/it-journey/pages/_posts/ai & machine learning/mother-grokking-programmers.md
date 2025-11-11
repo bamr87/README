@@ -5,7 +5,6 @@ tags:
 - python
 - javascript
 - api
-- api
 last_updated: null
 source_file: mother-grokking-programmers.md
 ---

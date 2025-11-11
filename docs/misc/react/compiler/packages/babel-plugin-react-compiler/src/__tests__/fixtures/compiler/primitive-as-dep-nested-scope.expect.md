@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: primitive-as-dep-nested-scope.expect.md
 ---
+# Primitive As Dep Nested Scope.Expect
+
 ## Input
 
 ```javascript
@@ -96,7 +98,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"wat0":"joe","wat1":1},4]
 [{"wat0":"joe","wat1":1},5]

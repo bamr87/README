@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: assignment-variations-complex-lvalue.expect.md
 ---
+# Assignment Variations Complex Lvalue.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":{"z":4}}

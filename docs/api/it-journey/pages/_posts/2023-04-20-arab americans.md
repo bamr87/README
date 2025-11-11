@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: 2023-04-20-arab americans.md
 ---
+# 2023 04 20 Arab Americans
+
 ## Introduction
 
 This article is an archival resource from December 2001, published soon after 9/11 to promote better understanding of Arab-American communities. While some perspectives may reflect the time period, the factual information remains valuable for cultural education.

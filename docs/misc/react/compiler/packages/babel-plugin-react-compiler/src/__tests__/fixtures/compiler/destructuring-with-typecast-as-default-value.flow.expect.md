@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-with-typecast-as-default-value.flow.expect.md
 ---
+# Destructuring With Typecast As Default Value.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

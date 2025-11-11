@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-renaming-conflicting-decls.expect.md
 ---
+# Repro Renaming Conflicting Decls.Expect
+
 ## Input
 
 ```javascript
@@ -130,6 +132,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"link":{"url":"{\"val\":2}"},"val1":[1],"val2":[2],"val3":[3],"val4":[4],"val5":[5],"children":[{},2]}</div>

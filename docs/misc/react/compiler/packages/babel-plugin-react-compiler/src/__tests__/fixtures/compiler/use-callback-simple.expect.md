@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-callback-simple.expect.md
 ---
+# Use Callback Simple.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function component() {
 }
 
 ```
-      

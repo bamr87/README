@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.mutate-hook-argument.expect.md
 ---
+# Error.Mutate Hook Argument.Expect
+
 ## Input
 
 ```javascript
@@ -49,5 +51,4 @@ error.mutate-hook-argument.ts:4:2
   5 | }
   6 |
 ```
-          
-      
+

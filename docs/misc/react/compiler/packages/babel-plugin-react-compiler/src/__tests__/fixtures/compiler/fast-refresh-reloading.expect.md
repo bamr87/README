@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fast-refresh-reloading.expect.md
 ---
+# Fast Refresh Reloading.Expect
+
 ## Input
 
 ```javascript
@@ -82,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":[0]}</div>
 <div>{"inputs":[0],"output":[0]}</div>

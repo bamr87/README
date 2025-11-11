@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring.expect.md
 ---
+# Destructuring.Expect
+
 ## Input
 
 ```javascript
@@ -116,4 +118,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

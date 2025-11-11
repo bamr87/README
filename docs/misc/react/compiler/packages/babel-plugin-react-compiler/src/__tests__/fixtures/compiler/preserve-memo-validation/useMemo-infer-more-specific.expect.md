@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-infer-more-specific.expect.md
 ---
+# Usememo Infer More Specific.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: align-scopes-trycatch-nested-overlapping-range.expect.md
 ---
+# Align Scopes Trycatch Nested Overlapping Range.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

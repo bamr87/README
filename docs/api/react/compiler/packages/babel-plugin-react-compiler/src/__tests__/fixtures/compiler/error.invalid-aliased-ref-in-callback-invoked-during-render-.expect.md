@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-aliased-ref-in-callback-invoked-during-render-.expect.md
 ---
+# Error.Invalid Aliased Ref In Callback Invoked During Render .Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.invalid-aliased-ref-in-callback-invoked-during-render-.ts:9:33
   10 | }
   11 |
 ```
-          
-      
+

@@ -243,7 +243,7 @@ The system includes built-in quality gates:
    ```bash
    # Check if daily evolution is enabled
    cat .evolution.yml | grep -A5 daily_evolution
-   
+
    # Force run to test
    ./scripts/evolve.sh --force-run
    ```
@@ -260,7 +260,7 @@ The system includes built-in quality gates:
    ```bash
    # Ensure script is executable
    chmod +x ./scripts/evolve.sh
-   
+
    # Check repository permissions
    gh repo view
    ```

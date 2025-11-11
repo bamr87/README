@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bailout-validate-conditional-hook.expect.md
 ---
+# Bailout Validate Conditional Hook.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

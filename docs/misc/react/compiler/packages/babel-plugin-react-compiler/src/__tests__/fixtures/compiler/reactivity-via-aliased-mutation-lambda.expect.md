@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-via-aliased-mutation-lambda.expect.md
 ---
+# Reactivity Via Aliased Mutation Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -84,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]
 [42]

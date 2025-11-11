@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: retry-opt-in--no-emit.expect.md
 ---
+# Retry Opt In  No Emit.Expect
+
 ## Input
 
 ```javascript
@@ -61,7 +63,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"arr":[1],"arr2":[2]}
 {"arr":[2],"arr2":[2]}

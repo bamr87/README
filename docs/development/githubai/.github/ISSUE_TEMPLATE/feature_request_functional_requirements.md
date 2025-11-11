@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: feature_request_functional_requirements.md
 ---
+# Feature Request Functional Requirements
+
 ## Summary
 Provide a brief summary of the feature and its purpose.
 

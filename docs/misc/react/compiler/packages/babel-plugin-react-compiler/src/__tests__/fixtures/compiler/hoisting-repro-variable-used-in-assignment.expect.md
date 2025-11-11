@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-repro-variable-used-in-assignment.expect.md
 ---
+# Hoisting Repro Variable Used In Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2

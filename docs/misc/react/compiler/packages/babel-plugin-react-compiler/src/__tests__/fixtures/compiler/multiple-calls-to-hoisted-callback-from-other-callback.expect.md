@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multiple-calls-to-hoisted-callback-from-other-callback.expect.md
 ---
+# Multiple Calls To Hoisted Callback From Other Callback.Expect
+
 ## Input
 
 ```javascript
@@ -76,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>a</div><div>b</div></div>

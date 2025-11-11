@@ -15,7 +15,7 @@ source_file: unit_results_README.md
 @lastModified 2025-07-05
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #test-artifact-management: Category-specific artifact storage
   - #test-framework-reorganization: Structured results storage
 

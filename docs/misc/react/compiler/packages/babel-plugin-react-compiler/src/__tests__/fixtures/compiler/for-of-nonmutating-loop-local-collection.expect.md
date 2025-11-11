@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-nonmutating-loop-local-collection.expect.md
 ---
+# For Of Nonmutating Loop Local Collection.Expect
+
 ## Input
 
 ```javascript
@@ -138,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[1],"output":[1]}</div><div>{"inputs":[[1],0],"output":[0,1]}</div>
 <div>{"inputs":[1],"output":[1]}</div><div>{"inputs":[[1],1],"output":[1,1]}</div>

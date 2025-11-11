@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-infer-mutation-aliasing-effects.expect.md
 ---
+# Error.Bug Infer Mutation Aliasing Effects.Expect
+
 ## Input
 
 ```javascript
@@ -49,5 +51,4 @@ error.bug-infer-mutation-aliasing-effects.ts:10:22
   12 |         dispatch(action);
   13 |         return undefined;
 ```
-          
-      
+

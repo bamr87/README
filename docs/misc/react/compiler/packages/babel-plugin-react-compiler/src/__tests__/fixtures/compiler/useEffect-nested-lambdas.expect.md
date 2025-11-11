@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useEffect-nested-lambdas.expect.md
 ---
+# Useeffect Nested Lambdas.Expect
+
 ## Input
 
 ```javascript
@@ -91,4 +93,3 @@ function Component(props) {
 }
 
 ```
-      

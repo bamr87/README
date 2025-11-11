@@ -86,7 +86,7 @@ generated_at: timestamp
 total_posts: number
 published: number
 drafts: number
-categories: 
+categories:
   category_name: count
 tags:
   tag_name: count
@@ -128,7 +128,7 @@ To automatically update statistics:
    ```yaml
    plugins:
      - jekyll-hook
-   
+
    # Custom hook to run before build
    hooks:
      before_build: bash _data/generate_statistics.sh
@@ -175,7 +175,7 @@ Create custom templates in `_includes/content_statistics/`:
 
 #### Common Issues
 
-1. **Ruby not found**: Install Ruby 2.6+ 
+1. **Ruby not found**: Install Ruby 2.6+
 2. **YAML parsing errors**: Check post frontmatter syntax
 3. **File permissions**: Ensure scripts are executable
 4. **Missing posts**: Verify `pages/_posts` directory exists

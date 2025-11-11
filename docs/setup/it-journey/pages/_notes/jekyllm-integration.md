@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: jekyllm-integration.md
 ---
+# Jekyllm Integration
+
 Let's dive deeper into how you might implement some of these ideas:
 
 1. **Automated Content Generation**:

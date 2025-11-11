@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency-mutated-dep.expect.md
 ---
+# Error.Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency Mutated Dep.Expect
+
 ## Input
 
 ```javascript
@@ -68,5 +70,4 @@ error.repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency
   27 | }
   28 |
 ```
-          
-      
+

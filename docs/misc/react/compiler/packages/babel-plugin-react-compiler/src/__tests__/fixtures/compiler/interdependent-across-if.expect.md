@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: interdependent-across-if.expect.md
 ---
+# Interdependent Across If.Expect
+
 ## Input
 
 ```javascript
@@ -84,4 +86,3 @@ function Component(props) {
 }
 
 ```
-      

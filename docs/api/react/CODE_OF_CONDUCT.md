@@ -3,7 +3,6 @@ title: Code of Conduct
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: CODE_OF_CONDUCT.md
 ---

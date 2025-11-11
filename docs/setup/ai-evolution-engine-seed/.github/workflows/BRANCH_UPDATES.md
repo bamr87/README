@@ -9,9 +9,9 @@ source_file: BRANCH_UPDATES.md
 ---
 # Workflow Branch Updates Summary
 
-> **⚠️ DEPRECATION NOTICE**  
-> This document has been consolidated into [README.md](./README.md) as of November 9, 2025.  
-> Please refer to the "Branch Strategy Details" section in README.md for the most current information.  
+> **⚠️ DEPRECATION NOTICE**
+> This document has been consolidated into [README.md](./README.md) as of November 9, 2025.
+> Please refer to the "Branch Strategy Details" section in README.md for the most current information.
 > This file is kept for historical reference only.
 
 ## 🎯 What Changed?
@@ -184,7 +184,7 @@ git push -u origin evolved
 
 # Create test branch
 git checkout main
-git checkout -b test  
+git checkout -b test
 git push -u origin test
 ```
 

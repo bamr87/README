@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: merged-scopes-are-valid-effect-deps.expect.md
 ---
+# Merged Scopes Are Valid Effect Deps.Expect
+
 ## Input
 
 ```javascript
@@ -74,7 +76,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[42]]
 logs: [[ [ 42 ] ]]

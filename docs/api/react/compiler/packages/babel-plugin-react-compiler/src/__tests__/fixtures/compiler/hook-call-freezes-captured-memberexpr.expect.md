@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: hook-call-freezes-captured-memberexpr.expect.md
 ---
+# Hook Call Freezes Captured Memberexpr.Expect
+
 ## Input
 
 ```javascript
@@ -89,7 +91,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"copy":{"inner":1},"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"copy":{"inner":1},"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

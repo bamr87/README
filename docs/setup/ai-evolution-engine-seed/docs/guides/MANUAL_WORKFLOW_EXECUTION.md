@@ -20,7 +20,7 @@ This guide explains how to manually invoke GitHub Actions workflows from the ter
    ```bash
    # macOS
    brew install gh
-   
+
    # Or download from: https://cli.github.com/
    ```
 

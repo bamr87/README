@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-repro-named-function-with-shadowed-local-same-name.expect.md
 ---
+# Error.Todo Repro Named Function With Shadowed Local Same Name.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.todo-repro-named-function-with-shadowed-local-same-name.ts:9:9
   10 | }
   11 |
 ```
-          
-      
+

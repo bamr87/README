@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: helper-nonreactive.expect.md
 ---
+# Helper Nonreactive.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ function NonReactiveWrapper() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

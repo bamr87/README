@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: property-assignment.expect.md
 ---
+# Property Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function Component(props) {
 }
 
 ```
-      

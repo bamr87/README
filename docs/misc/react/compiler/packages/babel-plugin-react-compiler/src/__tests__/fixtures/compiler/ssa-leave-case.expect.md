@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-leave-case.expect.md
 ---
+# Ssa Leave Case.Expect
+
 ## Input
 
 ```javascript
@@ -83,7 +85,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[[],null]}</div>
 <div>{"children":[[],null]}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-test-return-type-inference.expect.md
 ---
+# Type Test Return Type Inference.Expect
+
 ## Input
 
 ```javascript
@@ -44,4 +46,3 @@ function component() {
 }
 
 ```
-      

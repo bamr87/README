@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: mutate-outer-scope-within-value-block.expect.md
 ---
+# Mutate Outer Scope Within Value Block.Expect
+
 ## Input
 
 ```javascript
@@ -101,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

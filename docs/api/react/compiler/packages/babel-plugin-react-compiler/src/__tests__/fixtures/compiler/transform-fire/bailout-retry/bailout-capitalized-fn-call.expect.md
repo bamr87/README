@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: bailout-capitalized-fn-call.expect.md
 ---
+# Bailout Capitalized Fn Call.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +55,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture-indirect-mutate-alias.expect.md
 ---
+# Capture Indirect Mutate Alias.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

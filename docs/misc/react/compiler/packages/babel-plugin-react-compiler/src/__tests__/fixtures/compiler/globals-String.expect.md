@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: globals-String.expect.md
 ---
+# Globals String.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

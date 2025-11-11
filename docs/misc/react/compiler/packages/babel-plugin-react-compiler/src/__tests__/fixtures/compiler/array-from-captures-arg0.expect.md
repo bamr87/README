@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-from-captures-arg0.expect.md
 ---
+# Array From Captures Arg0.Expect
+
 ## Input
 
 ```javascript
@@ -115,7 +117,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":{"value":5}}</div>
 <div>{"children":{"value":6}}</div>

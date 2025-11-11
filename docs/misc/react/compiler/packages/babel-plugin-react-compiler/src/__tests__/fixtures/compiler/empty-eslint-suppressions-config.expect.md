@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: empty-eslint-suppressions-config.expect.md
 ---
+# Empty Eslint Suppressions Config.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Hello</div>

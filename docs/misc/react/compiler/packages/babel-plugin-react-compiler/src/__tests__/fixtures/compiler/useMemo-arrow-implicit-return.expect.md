@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-arrow-implicit-return.expect.md
 ---
+# Usememo Arrow Implicit Return.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

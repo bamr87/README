@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-named-function.expect.md
 ---
+# Usememo Named Function.Expect
+
 ## Input
 
 ```javascript
@@ -51,4 +53,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

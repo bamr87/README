@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nonreactive-ref.expect.md
 ---
+# Nonreactive Ref.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ function NonReactiveRefInEffect() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

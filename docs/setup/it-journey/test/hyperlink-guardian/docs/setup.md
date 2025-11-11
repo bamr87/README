@@ -339,7 +339,7 @@ testing:
   retry_delay: 5
   internal_only: false
   user_agent: "Guardian-2.0"
-  
+
   # Performance thresholds
   slow_response_threshold: 5.0
   critical_response_threshold: 10.0
@@ -457,4 +457,4 @@ After successful setup:
 
 ---
 
-*Guardian 2.0 is part of the IT-Journey Testing Framework, designed to ensure reliable access to educational resources while providing real-world examples of modern DevOps practices.* 
+*Guardian 2.0 is part of the IT-Journey Testing Framework, designed to ensure reliable access to educational resources while providing real-world examples of modern DevOps practices.*

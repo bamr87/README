@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-captures-function-with-global-mutation.expect.md
 ---
+# Object Expression Captures Function With Global Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Bar is not defined

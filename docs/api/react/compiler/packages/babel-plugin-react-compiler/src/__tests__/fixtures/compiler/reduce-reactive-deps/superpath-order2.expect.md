@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: superpath-order2.expect.md
 ---
+# Superpath Order2.Expect
+
 ## Input
 
 ```javascript
@@ -89,7 +90,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":null}
 {"a":{}}

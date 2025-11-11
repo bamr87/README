@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-assign-hook-to-local.expect.md
 ---
+# Error.Invalid Assign Hook To Local.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-assign-hook-to-local.ts:2:12
   4 |   return state[0];
   5 | }
 ```
-          
-      
+

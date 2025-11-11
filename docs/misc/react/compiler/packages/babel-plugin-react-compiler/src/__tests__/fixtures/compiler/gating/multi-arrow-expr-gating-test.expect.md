@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multi-arrow-expr-gating-test.expect.md
 ---
+# Multi Arrow Expr Gating Test.Expect
+
 ## Input
 
 ```javascript
@@ -83,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span></span><div>{"error":{}}</div></div>

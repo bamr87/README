@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-reordering-depslist-controlflow.expect.md
 ---
+# Usememo Reordering Depslist Controlflow.Expect
+
 ## Input
 
 ```javascript
@@ -99,7 +101,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"val1":{"x":2},"val2":[[[1,2],3,4]]}</div>
 <div>{"val1":{"x":2},"val2":[[]]}</div>

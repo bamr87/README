@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-property-mutate.expect.md
 ---
+# Ssa Property Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ function foo() {
 }
 
 ```
-      

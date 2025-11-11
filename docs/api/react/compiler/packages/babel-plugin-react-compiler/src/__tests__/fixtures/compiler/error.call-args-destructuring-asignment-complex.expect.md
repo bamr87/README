@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.call-args-destructuring-asignment-complex.expect.md
 ---
+# Error.Call Args Destructuring Asignment Complex.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.call-args-destructuring-asignment-complex.ts:3:9
   5 | }
   6 |
 ```
-          
-      
+

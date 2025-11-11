@@ -15,7 +15,7 @@ source_file: REORGANIZATION_SUMMARY.md
 @lastModified 2025-07-05
 @version 2.0.0
 
-@relatedIssues 
+@relatedIssues
   - #test-framework-reorganization: Category-specific artifact management
   - #test-framework-consolidation: Unified test management system
 

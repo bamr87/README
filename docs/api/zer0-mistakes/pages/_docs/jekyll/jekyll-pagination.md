@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jekyll-pagination.md
 ---
+# Jekyll Pagination
+
 > Add pagination buttons for every page.
 
 ## 1. Pagination

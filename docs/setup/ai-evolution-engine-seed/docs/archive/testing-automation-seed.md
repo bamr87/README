@@ -26,9 +26,9 @@ This seed demonstrates the **Design for Failure (DFF)** principle through compre
 run_test() {
     local test_name="$1"
     local test_command="$2"
-    
+
     TESTS_RUN=$((TESTS_RUN + 1))
-    
+
     if eval "$test_command" > /dev/null 2>&1; then
         success "$test_name"
         TESTS_PASSED=$((TESTS_PASSED + 1))
@@ -84,7 +84,7 @@ validate_and_build() {
 # JSON validation
 run_test "Validate package.json syntax" "jq empty package.json"
 
-# Gemspec validation  
+# Gemspec validation
 run_test "Validate gemspec syntax" "ruby -c jekyll-theme-zer0.gemspec"
 
 # YAML front matter validation (with proper escaping)

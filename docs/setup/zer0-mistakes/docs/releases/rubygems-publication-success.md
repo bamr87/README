@@ -11,10 +11,10 @@ source_file: rubygems-publication-success.md
 
 ## 🎉 Publication Completed Successfully
 
-**Gem Name**: jekyll-theme-zer0  
-**Version**: 0.5.0  
-**Publication Date**: October 25, 2025  
-**Status**: ✅ Successfully Published to RubyGems.org  
+**Gem Name**: jekyll-theme-zer0
+**Version**: 0.5.0
+**Publication Date**: October 25, 2025
+**Status**: ✅ Successfully Published to RubyGems.org
 
 ## 📊 Publication Details
 

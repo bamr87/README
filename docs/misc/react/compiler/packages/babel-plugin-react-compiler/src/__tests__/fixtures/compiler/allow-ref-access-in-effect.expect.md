@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-ref-access-in-effect.expect.md
 ---
+# Allow Ref Access In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -107,6 +109,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Ok

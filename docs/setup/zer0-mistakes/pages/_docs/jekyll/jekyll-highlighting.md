@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-highlighting.md
 ---
+# Jekyll Highlighting
+
 > Highlighting with highlight.js.
 
 ## 1. Code Syntax Highlighting
@@ -20,7 +22,7 @@ java code
 ````
 
 Be default, there is only a grey rectangle as background, no highlighting on the codes. See the below screenshot.
-![image](/assets/images/jekyll/8123/withouthighlight.png)  
+![image](/assets/images/jekyll/8123/withouthighlight.png)
 ### 1.2 Highlighting in Jekyll Site
 To enable the highlighting, you need to edit `_config.yml` file which is located in the root directory of the website, add following lines.
 ```
@@ -29,7 +31,7 @@ highlighter: rouge
 ```
 
 Refresh the page. The highlighting is working now.
-![image](/assets/images/jekyll/8123/javahighlight.png)  
+![image](/assets/images/jekyll/8123/javahighlight.png)
 
 ## 2. Generic Highlighting Solution
 ### 2.1 highlight.js
@@ -53,7 +55,7 @@ pre {
 }
 ```
 The highlighting works as follows.
-![image](/assets/images/jekyll/8123/highlighting_with_js.png)  
+![image](/assets/images/jekyll/8123/highlighting_with_js.png)
 ### 2.3 Line Numbers
 Add line numbers with highlightjs-line-numbers.js, which is a plug-in for highlight.js.
 ```html

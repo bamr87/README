@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: relay-transitive-mixeddata.expect.md
 ---
+# Relay Transitive Mixeddata.Expect
+
 ## Input
 
 ```javascript
@@ -61,7 +63,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "1"
 "1"

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-no-component-annot.expect.md
 ---
+# Infer No Component Annot.Expect
+
 ## Input
 
 ```javascript
@@ -41,6 +43,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

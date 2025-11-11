@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-in-nested-scope.expect.md
 ---
+# Try Catch In Nested Scope.Expect
+
 ## Input
 
 ```javascript
@@ -100,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"cond":true,"wat0":"joe","wat1":"henderson"}
 {"cond":true,"wat0":"joe","wat1":"henderson"}

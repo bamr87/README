@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-conditional-call-non-hook-imported-as-hook.expect.md
 ---
+# Error.Invalid Conditional Call Non Hook Imported As Hook.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-conditional-call-non-hook-imported-as-hook.ts:6:11
   8 |   return data;
   9 | }
 ```
-          
-      
+

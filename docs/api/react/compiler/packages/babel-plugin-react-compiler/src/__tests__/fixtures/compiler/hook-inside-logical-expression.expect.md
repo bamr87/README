@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: hook-inside-logical-expression.expect.md
 ---
+# Hook Inside Logical Expression.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +44,3 @@ function Component(props) {
 }
 
 ```
-      

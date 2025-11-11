@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-binary-operator.expect.md
 ---
+# Type Binary Operator.Expect
+
 ## Input
 
 ```javascript
@@ -30,4 +32,3 @@ function component() {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: memberexpr-join-optional-chain.expect.md
 ---
+# Memberexpr Join Optional Chain.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"c":1},1]

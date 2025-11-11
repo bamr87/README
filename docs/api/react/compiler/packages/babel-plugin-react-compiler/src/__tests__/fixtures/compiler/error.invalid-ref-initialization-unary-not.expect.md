@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ref-initialization-unary-not.expect.md
 ---
+# Error.Invalid Ref Initialization Unary Not.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
 
 To initialize a ref only once, check that the ref is null with the pattern `if (ref.current == null) { ref.current = ... }`
 ```
-          
-      
+

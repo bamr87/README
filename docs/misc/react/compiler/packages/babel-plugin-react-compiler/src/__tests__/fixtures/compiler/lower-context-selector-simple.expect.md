@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lower-context-selector-simple.expect.md
 ---
+# Lower Context Selector Simple.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ function _temp(t0) {
 }
 
 ```
-      

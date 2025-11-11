@@ -17,7 +17,7 @@ source_file: CONSOLIDATION_PLAN.md
 @lastModified 2025-07-07
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Script directory cleanup and organization
 
 @relatedEvolutions

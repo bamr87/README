@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invalid-reactivity-value-block.expect.md
 ---
+# Repro Invalid Reactivity Value Block.Expect
+
 ## Input
 
 ```javascript
@@ -103,7 +105,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":0,"b":"value1","c":true},"[[ cyclic ref *1 ]]"]
 [{"a":0,"b":"value1","c":true},"[[ cyclic ref *1 ]]"]

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.assign-global-in-jsx-children.expect.md
 ---
+# Error.Assign Global In Jsx Children.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.assign-global-in-jsx-children.ts:3:4
   5 |   // Children are generally access/called during render, so
   6 |   // modifying a global in a children function is almost
 ```
-          
-      
+

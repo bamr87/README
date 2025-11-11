@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.conditional-hooks-as-method-call.expect.md
 ---
+# Error.Conditional Hooks As Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.conditional-hooks-as-method-call.ts:4:8
   6 |   return x;
   7 | }
 ```
-          
-      
+

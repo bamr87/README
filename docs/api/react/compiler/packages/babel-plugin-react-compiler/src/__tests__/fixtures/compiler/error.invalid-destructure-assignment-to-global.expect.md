@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-destructure-assignment-to-global.expect.md
 ---
+# Error.Invalid Destructure Assignment To Global.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.invalid-destructure-assignment-to-global.ts:2:3
   4 | }
   5 |
 ```
-          
-      
+

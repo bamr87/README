@@ -85,10 +85,10 @@ az webapp log tail \
 
 ## 📊 Expected Resources Created
 
-✅ Resource Group: `rg-barody-prod-1`  
-✅ App Service Plan (B1): `plan-<random>`  
-✅ App Service: `app-<random>`  
-✅ PostgreSQL Flexible Server (B1ms): `psql-<random>`  
+✅ Resource Group: `rg-barody-prod-1`
+✅ App Service Plan (B1): `plan-<random>`
+✅ App Service: `app-<random>`
+✅ PostgreSQL Flexible Server (B1ms): `psql-<random>`
 ✅ PostgreSQL Database: `barodydb`
 
 ## 💰 Cost Breakdown

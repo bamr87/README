@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-operator-conditional.expect.md
 ---
+# Use Operator Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -144,7 +146,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[42],"output":[42]}</div>
 <div>{"inputs":[null],"output":["[[ cyclic ref *2 ]]"]}</div>

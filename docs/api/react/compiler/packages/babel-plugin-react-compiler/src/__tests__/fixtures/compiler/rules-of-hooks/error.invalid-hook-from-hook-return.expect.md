@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-from-hook-return.expect.md
 ---
+# Error.Invalid Hook From Hook Return.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.invalid-hook-from-hook-return.ts:3:14
   5 | }
   6 |
 ```
-          
-      
+

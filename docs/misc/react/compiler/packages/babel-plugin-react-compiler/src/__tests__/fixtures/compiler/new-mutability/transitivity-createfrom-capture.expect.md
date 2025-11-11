@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitivity-createfrom-capture.expect.md
 ---
+# Transitivity Createfrom Capture.Expect
+
 ## Input
 
 ```javascript
@@ -100,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":[{"a":0}]}</div>
 <div>{"inputs":[0],"output":[{"a":0}]}</div>

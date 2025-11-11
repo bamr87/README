@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: custom-opt-out-directive.expect.md
 ---
+# Custom Opt Out Directive.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world!</div>

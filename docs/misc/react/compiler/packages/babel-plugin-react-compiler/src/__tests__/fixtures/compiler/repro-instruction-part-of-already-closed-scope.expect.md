@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-instruction-part-of-already-closed-scope.expect.md
 ---
+# Repro Instruction Part Of Already Closed Scope.Expect
+
 ## Input
 
 ```javascript
@@ -118,6 +120,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"value":{"a":0,"b":"value1","c":true}}</div><div>{"value":{"a":0,"b":"value1","c":true}}</div><div>{"value":{"a":0,"b":"value1","c":true}}</div></div>

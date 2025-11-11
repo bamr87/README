@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-use-ref-added-to-dep-without-type-info.expect.md
 ---
+# Error.Invalid Use Ref Added To Dep Without Type Info.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.invalid-use-ref-added-to-dep-without-type-info.ts:12:28
   13 | }
   14 |
 ```
-          
-      
+

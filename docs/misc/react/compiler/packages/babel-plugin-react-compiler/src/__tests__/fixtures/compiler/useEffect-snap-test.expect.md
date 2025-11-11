@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useEffect-snap-test.expect.md
 ---
+# Useeffect Snap Test.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>goodbye</div>

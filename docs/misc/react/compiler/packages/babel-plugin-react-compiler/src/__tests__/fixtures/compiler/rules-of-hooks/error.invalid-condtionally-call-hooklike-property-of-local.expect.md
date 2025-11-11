@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-condtionally-call-hooklike-property-of-local.expect.md
 ---
+# Error.Invalid Condtionally Call Hooklike Property Of Local.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-condtionally-call-hooklike-property-of-local.ts:7:4
    9 | }
   10 |
 ```
-          
-      
+

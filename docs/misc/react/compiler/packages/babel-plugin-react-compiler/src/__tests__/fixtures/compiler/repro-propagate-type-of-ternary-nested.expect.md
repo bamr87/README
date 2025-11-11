@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-propagate-type-of-ternary-nested.expect.md
 ---
+# Repro Propagate Type Of Ternary Nested.Expect
+
 ## Input
 
 ```javascript
@@ -82,6 +84,6 @@ function V0(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

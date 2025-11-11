@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-access-ref-in-reducer.expect.md
 ---
+# Error.Invalid Access Ref In Reducer.Expect
+
 ## Input
 
 ```javascript
@@ -45,5 +47,4 @@ error.invalid-access-ref-in-reducer.ts:5:29
   7 |   return <Stringify state={state} />;
   8 | }
 ```
-          
-      
+

@@ -61,11 +61,11 @@ messages.error(request, 'Cannot delete primary email address.')
 - **Localization**: Supports internationalization through Django's i18n framework
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - `parodynews/views.py` - Account view operations
   - `allauth` authentication workflows
   - Django message framework
-- **Outgoing**: 
+- **Outgoing**:
   - Base templates for message display
   - Frontend JavaScript for message handling
   - User notification systems

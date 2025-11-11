@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-ref-ternary.expect.md
 ---
+# Reactive Ref Ternary.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

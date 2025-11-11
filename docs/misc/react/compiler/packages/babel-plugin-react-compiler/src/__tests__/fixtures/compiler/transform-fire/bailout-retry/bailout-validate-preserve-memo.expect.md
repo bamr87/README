@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bailout-validate-preserve-memo.expect.md
 ---
+# Bailout Validate Preserve Memo.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rewrite-deps.expect.md
 ---
+# Rewrite Deps.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

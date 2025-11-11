@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-valid-functiondecl-hoisting.expect.md
 ---
+# Error.Todo Valid Functiondecl Hoisting.Expect
+
 ## Input
 
 ```javascript
@@ -55,5 +57,4 @@ error.todo-valid-functiondecl-hoisting.ts:13:11
   15 |   function bar() {
   16 |     return 42;
 ```
-          
-      
+

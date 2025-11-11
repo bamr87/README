@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-call-simple.expect.md
 ---
+# Optional Call Simple.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dont-memoize-primitive-function-call-non-escaping.expect.md
 ---
+# Dont Memoize Primitive Function Call Non Escaping.Expect
+
 ## Input
 
 ```javascript
@@ -75,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ok"
 "ok"

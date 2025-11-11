@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-read-ref-prop-in-render-destructure.expect.md
 ---
+# Error.Invalid Read Ref Prop In Render Destructure.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-read-ref-prop-in-render-destructure.ts:3:16
   5 | }
   6 |
 ```
-          
-      
+

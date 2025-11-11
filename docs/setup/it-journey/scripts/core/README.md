@@ -17,7 +17,7 @@ source_file: README.md
 @lastModified 2025-07-07
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Script consolidation: Document core utilities
 
 @relatedEvolutions

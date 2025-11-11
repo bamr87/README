@@ -15,7 +15,7 @@ source_file: README.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #documentation-cleanup: Organize repository documentation structure
 
 @relatedEvolutions

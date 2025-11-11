@@ -16,7 +16,7 @@ source_file: README.md
 @lastModified 2025-07-05
 @version 2.0.0
 
-@relatedIssues 
+@relatedIssues
   - Testing framework reorganization and standardization
   - Implementation of modular test artifact management
 

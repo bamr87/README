@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: component-declaration-basic.flow.expect.md
 ---
+# Component Declaration Basic.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.propertyload-hook.expect.md
 ---
+# Error.Propertyload Hook.Expect
+
 ## Input
 
 ```javascript
@@ -43,5 +45,4 @@ error.propertyload-hook.ts:3:9
   4 | }
   5 |
 ```
-          
-      
+

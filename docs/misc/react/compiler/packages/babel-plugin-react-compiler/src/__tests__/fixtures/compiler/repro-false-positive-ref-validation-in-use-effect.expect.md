@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-false-positive-ref-validation-in-use-effect.expect.md
 ---
+# Repro False Positive Ref Validation In Use Effect.Expect
+
 ## Input
 
 ```javascript
@@ -89,6 +91,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

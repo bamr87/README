@@ -66,7 +66,7 @@ You can also manually copy configurations to specific repositories:
 cp configs/jekyll/.markdownlint.json /path/to/jekyll-repo/
 cp configs/jekyll/.yamllint.yml /path/to/jekyll-repo/
 
-# For Shell projects  
+# For Shell projects
 cp configs/shell/.shellcheckrc /path/to/shell-repo/
 cp configs/shell/.markdownlint.json /path/to/shell-repo/
 ```

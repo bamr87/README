@@ -38,7 +38,7 @@ import react from "eslint-plugin-react"
 export default [
     // Your existing config
     { ...pluginReact.configs.flat.recommended, settings: { react: { version: "detect" } } },
-+   reactCompiler.configs.recommended    
++   reactCompiler.configs.recommended
 ]
 ```
 

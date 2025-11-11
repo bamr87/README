@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: phi-reference-effects.expect.md
 ---
+# Phi Reference Effects.Expect
+
 ## Input
 
 ```javascript
@@ -62,7 +64,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]
 [2]

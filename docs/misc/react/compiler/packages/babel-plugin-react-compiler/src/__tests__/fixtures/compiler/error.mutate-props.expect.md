@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.mutate-props.expect.md
 ---
+# Error.Mutate Props.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.mutate-props.ts:2:2
   4 | }
   5 |
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-default-array-with-unary.expect.md
 ---
+# Destructure Default Array With Unary.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [-1,1]

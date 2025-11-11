@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-aliased-var.expect.md
 ---
+# Error.Usecallback Aliased Var.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.useCallback-aliased-var.ts:9:21
   10 | }
   11 |
 ```
-          
-      
+

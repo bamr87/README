@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.mutate-frozen-value.expect.md
 ---
+# Error.Mutate Frozen Value.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.mutate-frozen-value.ts:5:2
   7 | }
   8 |
 ```
-          
-      
+

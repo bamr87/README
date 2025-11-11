@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-memoize-for-of-collection-when-loop-body-returns.expect.md
 ---
+# Repro Memoize For Of Collection When Loop Body Returns.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ function useHook(nodeID, condition) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

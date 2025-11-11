@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: unused-logical-assigned-to-variable.expect.md
 ---
+# Unused Logical Assigned To Variable.Expect
+
 ## Input
 
 ```javascript
@@ -30,4 +32,3 @@ function Component(props) {
 }
 
 ```
-      

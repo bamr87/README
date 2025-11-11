@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-dependency-nonreactive-captured-with-reactive.expect.md
 ---
+# Reactive Dependency Nonreactive Captured With Reactive.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},42]

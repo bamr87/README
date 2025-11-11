@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: ts-instantiation-expression.expect.md
 ---
+# Ts Instantiation Expression.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "test"

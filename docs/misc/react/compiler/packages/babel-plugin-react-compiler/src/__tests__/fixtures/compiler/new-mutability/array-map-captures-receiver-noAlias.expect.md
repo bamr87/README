@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-map-captures-receiver-noAlias.expect.md
 ---
+# Array Map Captures Receiver Noalias.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":{"id":42}}]

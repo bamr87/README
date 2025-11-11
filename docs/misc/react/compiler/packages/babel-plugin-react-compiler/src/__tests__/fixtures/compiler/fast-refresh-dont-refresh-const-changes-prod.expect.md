@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fast-refresh-dont-refresh-const-changes-prod.expect.md
 ---
+# Fast Refresh Dont Refresh Const Changes Prod.Expect
+
 ## Input
 
 ```javascript
@@ -97,7 +99,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[],"output":[{"pretendConst":1}]}</div>
 <div>{"inputs":[],"output":[{"pretendConst":1}]}</div>

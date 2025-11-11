@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-nested-member-path-mutate.expect.md
 ---
+# Alias Nested Member Path Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function component() {
 }
 
 ```
-      

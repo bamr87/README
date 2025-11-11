@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: primitive-alias-mutate.expect.md
 ---
+# Primitive Alias Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -40,4 +42,3 @@ function component(a) {
 }
 
 ```
-      

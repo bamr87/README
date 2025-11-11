@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hoisting-setstate.expect.md
 ---
+# Error.Invalid Hoisting Setstate.Expect
+
 ## Input
 
 ```javascript
@@ -70,5 +72,4 @@ error.invalid-hoisting-setstate.ts:21:16
   23 | }
   24 |
 ```
-          
-      
+

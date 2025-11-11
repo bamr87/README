@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-member-expression-as-memo-dep.expect.md
 ---
+# Optional Member Expression As Memo Dep.Expect
+
 ## Input
 
 ```javascript
@@ -93,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[null]}</div>
 <div>{"inputs":[null]}</div>

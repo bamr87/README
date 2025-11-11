@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: inadvertent-mutability-readonly-class.expect.md
 ---
+# Inadvertent Mutability Readonly Class.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ function Component(props) {
 class Mutator {}
 
 ```
-      

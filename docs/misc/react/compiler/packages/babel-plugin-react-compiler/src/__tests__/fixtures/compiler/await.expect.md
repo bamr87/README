@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: await.expect.md
 ---
+# Await.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ async function Component(props) {
 }
 
 ```
-      

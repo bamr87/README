@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-with-fbt-preserve-memoization.expect.md
 ---
+# Lambda With Fbt Preserve Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -88,6 +90,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

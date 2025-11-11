@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbt-repro-invalid-mutable-range-destructured-prop.expect.md
 ---
+# Fbt Repro Invalid Mutable Range Destructured Prop.Expect
+
 ## Input
 
 ```javascript
@@ -86,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":["Mike"],"output":"Mike"}</div>
 <div>{"inputs":["Mofei"],"output":"Mofei"}</div>

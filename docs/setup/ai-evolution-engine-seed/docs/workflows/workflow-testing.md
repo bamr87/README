@@ -99,7 +99,7 @@ WORKFLOW_FILE="$PROJECT_ROOT/.github/workflows/workflow_name.yml"
 ```bash
 test_workflow_inputs() {
     info "Testing workflow inputs..."
-    
+
     run_test "Has required input" "yq eval '.on.workflow_dispatch.inputs.required_param.required' '$WORKFLOW_FILE' | grep -q 'true'"
     run_test "Input has correct type" "yq eval '.on.workflow_dispatch.inputs.param.type' '$WORKFLOW_FILE' | grep -q 'string'"
 }

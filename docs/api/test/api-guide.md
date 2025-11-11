@@ -3,7 +3,6 @@ title: API Reference Guide
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: api-guide.md
 ---

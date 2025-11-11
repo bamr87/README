@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: memoize-value-block-value-logical-no-sequence.expect.md
 ---
+# Memoize Value Block Value Logical No Sequence.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

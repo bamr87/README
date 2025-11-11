@@ -88,7 +88,7 @@ Front matter provides structured metadata at the beginning of files, serving as 
 ```javascript
 /**
  * Front Matter: AI-Enhanced React Component
- * 
+ *
  * Title: User Dashboard Component
  * Description: Main dashboard interface with real-time data and interactive widgets
  * Component Type: Container Component
@@ -122,7 +122,7 @@ Front matter provides structured metadata at the beginning of files, serving as 
 ```javascript
 /**
  * Front Matter: API Route Handler
- * 
+ *
  * Title: User Authentication API
  * Description: Handles user login, logout, and token refresh operations
  * Route: /api/auth
@@ -188,13 +188,13 @@ Front matter provides structured metadata at the beginning of files, serving as 
 main() {
     # Path segment: Initial validation
     validate_environment || return 1
-    
+
     # Path segment: Core processing
     process_workflow || return 2
-    
+
     # Path segment: Results handling
     handle_results || return 3
-    
+
     # Path segment: Cleanup
     cleanup_resources
 }
@@ -212,7 +212,7 @@ main() {
 execute_with_fallback() {
     local primary_path="$1"
     local fallback_path="$2"
-    
+
     # Try primary path
     if ! $primary_path 2>/dev/null; then
         log_path_failure "Primary path failed: $primary_path"
@@ -234,24 +234,24 @@ execute_with_fallback() {
 
 class DataPipeline:
     """Represents a path through data transformation stages."""
-    
+
     def __init__(self):
         self.path_history = []
-    
+
     def follow_path(self, data):
         """Follow the transformation path."""
         # Path segment 1: Validation
         validated = self._validate_input(data)
         self.path_history.append("validation")
-        
+
         # Path segment 2: Processing
         processed = self._process_data(validated)
         self.path_history.append("processing")
-        
+
         # Path segment 3: Output
         result = self._generate_output(processed)
         self.path_history.append("output")
-        
+
         return result
 ```
 
@@ -269,7 +269,7 @@ class RequestPath {
     constructor() {
         this.pathSegments = [];
     }
-    
+
     async followPath(request) {
         // Define the path through middleware
         const path = [
@@ -278,14 +278,14 @@ class RequestPath {
             this.processRequest,
             this.formatResponse
         ];
-        
+
         // Follow each segment of the path
         let result = request;
         for (const segment of path) {
             result = await segment.call(this, result);
             this.pathSegments.push(segment.name);
         }
-        
+
         return result;
     }
 }
@@ -333,7 +333,7 @@ version: '3.8'
 
 services:
   # Path: Client → Gateway → Services → Database
-  
+
   gateway:
     build:
       context: .
@@ -342,14 +342,14 @@ services:
       - SERVICE_PATHS=api:3000,auth:3001,data:3002
     networks:
       - service-path
-  
+
   api:
     build: ./api
     networks:
       - service-path
     depends_on:
       - database
-  
+
   database:
     image: postgres:15
     networks:
@@ -413,7 +413,7 @@ describe('User Journey Paths', () => {
                 'welcome_email'
             ]);
         });
-        
+
         test('follows error path: form → validation → error → retry', async () => {
             const journey = new UserJourney();
             const result = await journey.followPath('registration', invalidData);
@@ -444,8 +444,8 @@ evolution_cycles:
       - inefficient_path: "data_processing → validation → storage"
       - optimized_path: "parallel_validation → data_processing → storage"
       - improvement: "40% reduction in processing time"
-    
-  - cycle: "path-extension-2024-02"  
+
+  - cycle: "path-extension-2024-02"
     additions:
       - new_path: "data_processing → analytics → insights"
       - connects_to: ["reporting_path", "dashboard_path"]
@@ -506,16 +506,16 @@ Headers now include path information to show how files connect:
  * @created 2025-07-05
  * @lastModified 2025-07-16
  * @version 1.2.0
- * 
+ *
  * @pathContext
  *   - incomingPaths: [api/routes/upload.js, queue/consumers/dataConsumer.js]
  *   - outgoingPaths: [storage/repositories/dataRepo.js, analytics/processors/analyzer.js]
  *   - parallelPaths: [validators/dataValidator.js, formatters/dataFormatter.js]
- * 
- * @relatedIssues 
+ *
+ * @relatedIssues
  *   - #145: Optimize data processing path for large files
  *   - #167: Add alternative path for malformed data
- * 
+ *
  * ... (rest of standard header)
  */
 ```
@@ -537,34 +537,34 @@ from src.utils.path_tracker import pathTracker
 
 class MCPEnhancedDataProcessor:
     """Data processor that leverages MCP servers for context and tools"""
-    
+
     def __init__(self):
         self.fs_client = None
         self.db_client = None
-    
+
     async def process_with_mcp_context(self, data_source: str):
         """Process data using MCP context and tools"""
         return await pathTracker.executeInPath('mcp_data_processing', async () => {
             # Path: mcp-context-collection
             context = await self._collect_mcp_context(data_source)
-            
+
             # Path: mcp-tool-orchestration
             processed_data = await self._orchestrate_processing_tools(data_source, context)
-            
+
             # Path: mcp-result-validation
             validated_result = await self._validate_with_mcp_tools(processed_data)
-            
+
             return validated_result
         })
-    
+
     async def _collect_mcp_context(self, data_source: str) -> dict:
         """Collect comprehensive context from MCP servers"""
         context = {}
-        
+
         # Filesystem context
         self.fs_client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-filesystem"])
         await self.fs_client.connect()
-        
+
         try:
             # Get file metadata and related files
             resources = await self.fs_client.listResources()
@@ -576,7 +576,7 @@ class MCPEnhancedDataProcessor:
             }
         finally:
             await self.fs_client.disconnect()
-        
+
         return context
 ```
 
@@ -590,27 +590,27 @@ import { pathTracker } from '../utils/path-tracker';
 
 export class MCPEnhancedApiService {
     private mcpClients: Map<string, PathAwareMCPClient> = new Map();
-    
+
     async processRequest(request: ApiRequest): Promise<ApiResponse> {
         return pathTracker.executeInPath('mcp_api_processing', async () => {
             // Path: mcp-server-discovery
             const availableServers = await this.discoverMCPServers();
-            
+
             // Path: context-enhanced-processing
             const context = await this.gatherMCPContext(request, availableServers);
-            
+
             // Path: mcp-tool-assisted-processing
             const result = await this.processWithMCPTools(request, context);
-            
+
             return this.formatResponse(result, context);
         });
     }
-    
+
     private async discoverMCPServers(): Promise<string[]> {
         return pathTracker.executeInPath('server_discovery', async () => {
             const fsClient = new PathAwareMCPClient('docker', ['exec', '-i', 'mcp-filesystem']);
             await fsClient.connect();
-            
+
             try {
                 const configContent = await fsClient.readResource('file://config/mcp/client_config.json');
                 const config = JSON.parse(configContent);
@@ -639,7 +639,7 @@ source "${SCRIPT_DIR}/../lib/path_management.sh"
 deploy_with_mcp_context() {
     local environment="$1"
     local deployment_config="$2"
-    
+
     execute_in_path "mcp_enhanced_deployment" \
         "_deploy_with_context '$environment' '$deployment_config'"
 }
@@ -647,15 +647,15 @@ deploy_with_mcp_context() {
 _deploy_with_context() {
     local environment="$1"
     local deployment_config="$2"
-    
+
     # Path: mcp-context-collection-for-deployment
     execute_in_path "deployment_context_collection" \
         "collect_comprehensive_deployment_context '$environment'"
-    
+
     # Path: mcp-server-health-validation
     execute_in_path "mcp_server_validation" \
         "validate_mcp_servers_for_deployment"
-    
+
     # Path: context-informed-deployment
     execute_in_path "context_informed_deployment" \
         "deploy_using_mcp_context '$environment' '$deployment_config'"
@@ -664,13 +664,13 @@ _deploy_with_context() {
 collect_comprehensive_deployment_context() {
     local environment="$1"
     local context_dir="/tmp/deployment_context"
-    
+
     mkdir -p "$context_dir"
-    
+
     # Collect context from all available MCP servers
     local mcp_servers
     mcp_servers=($(discover_mcp_servers))
-    
+
     for server in "${mcp_servers[@]}"; do
         log_info "Collecting context from MCP server: $server" "context_collection"
         collect_mcp_context "$server" "$context_dir/${server}_context.json"

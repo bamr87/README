@@ -34,19 +34,19 @@ graph TB
         Jekyll[🌱 Jekyll Basics]
         YAML[🌱 YAML Fundamentals]
     end
-    
+
     subgraph "Current Quest"
         Main[🏰 Stats Portal Quest]
         Side1[⚔️ Data Collection Setup]
         Side2[⚔️ Visualization Design]
     end
-    
+
     subgraph "Unlocked Adventures"
         Advanced[🏰 Advanced Analytics]
         Visual[🏰 Data Viz Mastery]
         Plugin[👑 Custom Jekyll Plugins]
     end
-    
+
     Jekyll --> Main
     YAML --> Main
     Main --> Side1
@@ -55,7 +55,7 @@ graph TB
     Main --> Visual
     Advanced --> Plugin
     Visual --> Plugin
-    
+
     style Main fill:#ffd700
     style Jekyll fill:#87ceeb
     style YAML fill:#87ceeb
@@ -108,7 +108,7 @@ Jekyll provides powerful data management capabilities through YAML files stored 
 
 **Jekyll Data Flow:**
 ```
-Site Content (Posts/Pages) 
+Site Content (Posts/Pages)
     ↓
 Jekyll Build Process
     ↓
@@ -203,7 +203,7 @@ class StatisticsGenerator
 
     # Write to YAML file
     File.write(@output_file, stats.to_yaml)
-    
+
     puts "✅ Statistics generated successfully!"
     puts "   Total posts: #{stats['total_posts']}"
     puts "   Output: #{@output_file}"
@@ -221,7 +221,7 @@ class StatisticsGenerator
       next unless frontmatter
 
       stats['total_posts'] += 1
-      
+
       # Count words
       word_count = body.split.length
       stats['total_words'] += word_count
@@ -259,7 +259,7 @@ class StatisticsGenerator
   def process_categories(frontmatter, stats)
     categories = frontmatter['categories'] || []
     categories = [categories] unless categories.is_a?(Array)
-    
+
     categories.each do |cat|
       cat_name = cat.to_s.downcase.strip
       stats['categories'][cat_name] ||= 0
@@ -270,7 +270,7 @@ class StatisticsGenerator
   def process_tags(frontmatter, stats)
     tags = frontmatter['tags'] || []
     tags = [tags] unless tags.is_a?(Array)
-    
+
     tags.each do |tag|
       tag_name = tag.to_s.downcase.strip
       stats['tags'][tag_name] ||= 0
@@ -295,7 +295,7 @@ class StatisticsGenerator
   def extract_keywords(body, stats)
     # Simple keyword extraction (words > 5 chars, excluding common words)
     common_words = %w[about above after again against could should would their there these those through during before between]
-    
+
     words = body.downcase.scan(/\b[a-z]{6,}\b/)
     words.each do |word|
       next if common_words.include?(word)
@@ -417,10 +417,10 @@ permalink: /stats/
       <p class="lead">
         Comprehensive analytics and insights from the IT-Journey knowledge base
       </p>
-      
+
       {% if site.data.content_statistics %}
         <p class="text-muted">
-          <i class="bi bi-clock"></i> 
+          <i class="bi bi-clock"></i>
           Last updated: {{ site.data.content_statistics.generated_at | date: "%B %d, %Y at %I:%M %p" }}
         </p>
       {% else %}
@@ -433,7 +433,7 @@ permalink: /stats/
   </div>
 
   {% if site.data.content_statistics %}
-  
+
   <!-- Overview Cards -->
   <div class="row g-4 mb-5">
     <!-- Total Posts Card -->
@@ -595,10 +595,10 @@ permalink: /stats/
                     <td>
                       <div class="progress" style="height: 20px;">
                         {% assign percentage = month[1] | times: 100 | divided_by: site.data.content_statistics.total_posts %}
-                        <div class="progress-bar bg-warning" role="progressbar" 
-                             style="width: {{ percentage }}%" 
-                             aria-valuenow="{{ percentage }}" 
-                             aria-valuemin="0" 
+                        <div class="progress-bar bg-warning" role="progressbar"
+                             style="width: {{ percentage }}%"
+                             aria-valuenow="{{ percentage }}"
+                             aria-valuemin="0"
                              aria-valuemax="100">
                           {{ percentage }}%
                         </div>
@@ -641,7 +641,7 @@ permalink: /stats/
               <p>
                 <strong>Avg. Reading Time:</strong> ~{{ estimated_reading_time }} min<br>
                 <strong>Total Reading Time:</strong> ~{{ site.data.content_statistics.total_words | divided_by: 200 }} min<br>
-                <strong>Longest Category:</strong> 
+                <strong>Longest Category:</strong>
                 {% assign top_category = site.data.content_statistics.categories | first %}
                 {{ top_category[0] | capitalize }} ({{ top_category[1] }} posts)
               </p>
@@ -649,7 +649,7 @@ permalink: /stats/
             <div class="col-md-4 mb-3">
               <h5>Content Health</h5>
               <p>
-                <strong>Data Freshness:</strong> 
+                <strong>Data Freshness:</strong>
                 {% assign update_date = site.data.content_statistics.generated_at | date: "%s" %}
                 {% assign now = "now" | date: "%s" %}
                 {% assign age_hours = now | minus: update_date | divided_by: 3600 %}
@@ -940,7 +940,7 @@ Your completed Stats Portal must demonstrate:
 ```
 Error: undefined method `[]' for nil:NilClass
 ```
-**Solution**: 
+**Solution**:
 - Run `ruby _data/generate_statistics.rb` to create the file
 - Verify file exists at `_data/content_statistics.yml`
 - Check file permissions (should be readable)

@@ -24,7 +24,7 @@ graph TB
         HelloNoob[🌱 Hello n00b<br/>Entry Point]
         ComputerLit[🏰 Computer Literacy<br/>Main Quest]
     end
-    
+
     subgraph "Terminal Mastery Path"
         TerminalNav[🏰 Terminal Navigation<br/>Main Quest]
         OhMyZsh[⚔️ Oh-My-Zsh Setup<br/>Side Quest]
@@ -33,13 +33,13 @@ graph TB
         ShellScript[🏰 Shell Scripting<br/>Main Quest]
         TerminalEpic[👑 Terminal Automation<br/>Epic Quest]
     end
-    
+
     subgraph "Unlocked Adventures"
         GitMastery[🏰 Git Version Control<br/>Main Quest]
         VSCodeMastery[🏰 VS Code Mastery<br/>Main Quest]
         DevEnv[🏰 Dev Environment<br/>Main Quest]
     end
-    
+
     HelloNoob --> ComputerLit
     ComputerLit --> TerminalNav
     TerminalNav --> OhMyZsh
@@ -51,7 +51,7 @@ graph TB
     TerminalNav --> GitMastery
     TerminalNav --> VSCodeMastery
     TerminalNav --> DevEnv
-    
+
     style TerminalNav fill:#87ceeb
     style ShellScript fill:#87ceeb
     style OhMyZsh fill:#ffd700
@@ -72,13 +72,13 @@ graph TD
         DataSci[📊 Data Scientist]
         Security[🛡️ Security Specialist]
     end
-    
+
     subgraph "Foundation Skills"
         Terminal[🏰 Terminal Mastery]
         Git[🏰 Version Control]
         Editor[🏰 Text Editor Mastery]
     end
-    
+
     subgraph "Specialization Paths"
         Frontend[🎨 Frontend Development]
         Backend[⚙️ Backend Systems]
@@ -86,21 +86,21 @@ graph TD
         SecOps[🛡️ Security Operations]
         DataPipe[📊 Data Pipelines]
     end
-    
+
     subgraph "Advanced Integration"
         FullStack[👑 Full-Stack Epic]
         CloudArch[👑 Cloud Architecture Epic]
         AIIntegration[👑 AI Development Epic]
     end
-    
+
     SoftwareDev --> Terminal
     SystemEng --> Terminal
     DataSci --> Terminal
     Security --> Terminal
-    
+
     Terminal --> Git
     Terminal --> Editor
-    
+
     Git --> Frontend
     Git --> Backend
     Editor --> Frontend
@@ -108,7 +108,7 @@ graph TD
     Terminal --> DevOps
     Terminal --> SecOps
     Terminal --> DataPipe
-    
+
     Frontend --> FullStack
     Backend --> FullStack
     DevOps --> CloudArch
@@ -123,36 +123,36 @@ graph TD
 ```mermaid
 timeline
     title Web Development Mastery Campaign
-    
+
     section Foundation (Levels 0000-0111)
         Init World : 🌱 Hello n00b (Entry)
                    : 🏰 Computer Literacy (Main)
                    : 🏰 Terminal Navigation (Main)
                    : ⚔️ Oh-My-Zsh Setup (Side)
                    : ⚔️ Nerd Fonts (Side)
-        
+
         Development : 🏰 HTML/CSS Fundamentals (Main)
                     : ⚔️ Bootstrap Integration (Side)
                     : 🏰 JavaScript Basics (Main)
                     : 🎁 ES6+ Features (Bonus)
-    
+
     section Intermediate (Levels 1000-1111)
         Frontend : 🏰 React Fundamentals (Main)
                  : ⚔️ Component Libraries (Side)
                  : 🏰 State Management (Main)
                  : 🎁 Performance Optimization (Bonus)
-        
+
         Backend : 🏰 Node.js & Express (Main)
                 : ⚔️ API Documentation (Side)
                 : 🏰 Database Integration (Main)
                 : 🎁 Caching Strategies (Bonus)
-    
+
     section Advanced (Levels 10000+)
         Integration : 🏰 Full-Stack Architecture (Main)
                     : ⚔️ Testing Strategies (Side)
                     : 👑 Portfolio Website Epic (Epic)
                     : 🎁 AI Integration (Bonus)
-        
+
         Production : 🏰 Deployment Automation (Main)
                    : ⚔️ Monitoring Setup (Side)
                    : 👑 E-commerce Platform Epic (Epic)
@@ -168,19 +168,19 @@ graph TB
     subgraph "Entry Level"
         A[🌱 Hello n00b]
     end
-    
+
     subgraph "Foundation Layer"
         B[🏰 Computer Literacy]
         C[🏰 Terminal Navigation]
         D[🏰 Text Editor Mastery]
     end
-    
+
     subgraph "Development Fundamentals"
         E[🏰 HTML/CSS Fundamentals]
         F[🏰 JavaScript Basics]
         G[🏰 Version Control with Git]
     end
-    
+
     subgraph "Enhancement Layer"
         H[⚔️ Oh-My-Zsh Setup]
         I[⚔️ Bootstrap Integration]
@@ -188,18 +188,18 @@ graph TB
         K[🎁 Advanced CSS Techniques]
         L[🎁 JavaScript ES6+ Features]
     end
-    
+
     subgraph "Intermediate Skills"
         M[🏰 Frontend Framework Mastery]
         N[🏰 Backend Development]
         O[🏰 Database Design]
     end
-    
+
     subgraph "Advanced Integration"
         P[👑 Full-Stack Portfolio Epic]
         Q[👑 E-commerce Platform Epic]
     end
-    
+
     A --> B
     B --> C
     B --> D
@@ -208,26 +208,26 @@ graph TB
     C --> G
     D --> E
     D --> F
-    
+
     C --> H
     E --> I
     G --> J
     E --> K
     F --> L
-    
+
     E --> M
     F --> M
     F --> N
     G --> N
     M --> O
     N --> O
-    
+
     M --> P
     N --> P
     O --> P
-    
+
     P --> Q
-    
+
     style A fill:#90EE90
     style B fill:#87ceeb
     style C fill:#87ceeb
@@ -258,7 +258,7 @@ graph TD
         Terminal[🏰 Terminal Navigation]
         Git[🏰 Version Control]
     end
-    
+
     subgraph "Software Developer Path"
         DevHTML[🏰 HTML/CSS Fundamentals]
         DevJS[🏰 JavaScript Mastery]
@@ -266,7 +266,7 @@ graph TD
         DevBackend[🏰 Backend Development]
         DevEpic[👑 Full-Stack Portfolio Epic]
     end
-    
+
     subgraph "System Engineer Path"
         SysLinux[🏰 Linux Administration]
         SysNetwork[🏰 Network Configuration]
@@ -274,7 +274,7 @@ graph TD
         SysCloud[🏰 Cloud Platform Mastery]
         SysEpic[👑 Infrastructure Automation Epic]
     end
-    
+
     subgraph "Data Scientist Path"
         DataPython[🏰 Python Programming]
         DataAnalysis[🏰 Data Analysis]
@@ -282,28 +282,28 @@ graph TD
         DataViz[🏰 Data Visualization]
         DataEpic[👑 ML Pipeline Epic]
     end
-    
+
     Start --> Terminal
     Terminal --> Git
-    
+
     Git --> DevHTML
     DevHTML --> DevJS
     DevJS --> DevFramework
     DevFramework --> DevBackend
     DevBackend --> DevEpic
-    
+
     Git --> SysLinux
     SysLinux --> SysNetwork
     SysNetwork --> SysDocker
     SysDocker --> SysCloud
     SysCloud --> SysEpic
-    
+
     Git --> DataPython
     DataPython --> DataAnalysis
     DataAnalysis --> DataML
     DataML --> DataViz
     DataViz --> DataEpic
-    
+
     style Start fill:#90EE90
     style Terminal fill:#87ceeb
     style Git fill:#87ceeb
@@ -324,13 +324,13 @@ graph LR
         Completed[✅ Completed]
         Mastered[🏆 Mastered]
     end
-    
+
     subgraph "Quest Dependencies"
         Locked[🔒 Locked]
         Available[🟢 Available]
         Recommended[🔵 Recommended]
     end
-    
+
     subgraph "Quest Types"
         Main[🏰 Main Quest]
         Side[⚔️ Side Quest]
@@ -350,19 +350,19 @@ graph TD
         F4[⚪ Version Control - Not Started]
         F5[🔒 Advanced Automation - Locked]
     end
-    
+
     subgraph "Side Quest Completion"
         S1[✅ Oh-My-Zsh Setup - Completed]
         S2[✅ Nerd Fonts - Completed]
         S3[🟡 Productivity Hacks - In Progress]
     end
-    
+
     subgraph "Available Next Steps"
         N1[🟢 Git Fundamentals - Available]
         N2[🟢 VS Code Mastery - Available]
         N3[🔵 Development Environment - Recommended]
     end
-    
+
     F2 --> S1
     F2 --> S2
     F3 --> N1
@@ -381,17 +381,17 @@ graph TD
     Analysis -->|60+ min, Single-skill| MainPath[🏰 Main Quest]
     Analysis -->|15-60 min, Enhancement| SidePath[⚔️ Side Quest]
     Analysis -->|Variable, Experimental| BonusPath[🎁 Bonus Quest]
-    
+
     EpicPath --> EpicTemplate[Use Epic Template]
     MainPath --> MainTemplate[Use Main Template]
     SidePath --> SideTemplate[Use Side Template]
     BonusPath --> BonusTemplate[Use Bonus Template]
-    
+
     EpicTemplate --> Dependencies{Map Dependencies}
     MainTemplate --> Dependencies
     SideTemplate --> Dependencies
     BonusTemplate --> Dependencies
-    
+
     Dependencies --> Network[Create Network Diagram]
     Network --> Validate[Validate Quest Network]
     Validate --> Publish[Publish Quest]
@@ -406,27 +406,27 @@ graph TB
         Registry[💾 Quest Registry]
         UserProgress[📊 User Progress Data]
     end
-    
+
     subgraph "Processing Engine"
         Parser[🔍 YAML Parser]
         Validator[✅ Dependency Validator]
         MapGenerator[🗺️ Map Generator]
     end
-    
+
     subgraph "Output Formats"
         StaticMap[📄 Static Mermaid Diagrams]
         InteractiveMap[🎮 Interactive Web Map]
         ProgressDash[📊 Progress Dashboard]
         RecommendEngine[🤖 Recommendation Engine]
     end
-    
+
     Frontmatter --> Parser
     Registry --> Parser
     UserProgress --> Parser
-    
+
     Parser --> Validator
     Validator --> MapGenerator
-    
+
     MapGenerator --> StaticMap
     MapGenerator --> InteractiveMap
     MapGenerator --> ProgressDash
@@ -460,7 +460,7 @@ graph TB
   {% if page.quest_relationships %}
   <section class="quest-network">
     <h2>🗺️ Quest Network Position</h2>
-    
+
     {% if page.quest_relationships.parent_quest %}
     <div class="parent-quest">
       <h3>Parent Quest</h3>
@@ -468,7 +468,7 @@ graph TB
       <a href="{{ parent.url }}">{{ parent.title }}</a>
     </div>
     {% endif %}
-    
+
     {% if page.quest_relationships.child_quests %}
     <div class="child-quests">
       <h3>Related Side Quests</h3>
@@ -480,7 +480,7 @@ graph TB
       </ul>
     </div>
     {% endif %}
-    
+
     {% if page.quest_dependencies.unlocks_quests %}
     <div class="unlocked-quests">
       <h3>🔮 Unlocked Adventures</h3>
@@ -511,7 +511,7 @@ class QuestEngine {
     this.quests = questData;
     this.questMap = this.buildQuestMap();
   }
-  
+
   buildQuestMap() {
     const map = new Map();
     this.quests.forEach(quest => {
@@ -525,47 +525,47 @@ class QuestEngine {
     });
     return map;
   }
-  
+
   getAvailableQuests(completedQuests) {
     return Array.from(this.questMap.values()).filter(quest => {
       // Check if all prerequisites are completed
-      const prerequisitesMet = quest.prerequisites.every(prereq => 
+      const prerequisitesMet = quest.prerequisites.every(prereq =>
         completedQuests.includes(prereq.permalink)
       );
-      
+
       // Not already completed
       const notCompleted = !completedQuests.includes(quest.permalink);
-      
+
       return prerequisitesMet && notCompleted;
     });
   }
-  
+
   getRecommendedNextQuests(currentQuest, completedQuests) {
     const quest = this.questMap.get(currentQuest);
     if (!quest) return [];
-    
+
     // Get unlocked quests that are available
     return quest.unlocks.filter(unlock => {
       const unlockQuest = this.questMap.get(unlock.permalink);
       return this.isQuestAvailable(unlockQuest, completedQuests);
     });
   }
-  
+
   generateQuestPath(startQuest, targetQuest) {
     // Implement pathfinding algorithm to find learning path
     // between any two quests in the network
   }
-  
+
   validateQuestNetwork() {
     // Check for circular dependencies, orphaned quests, etc.
     const issues = [];
-    
+
     this.questMap.forEach((quest, permalink) => {
       // Check for circular dependencies
       if (this.hasCircularDependency(permalink)) {
         issues.push(`Circular dependency detected for ${permalink}`);
       }
-      
+
       // Check for broken references
       quest.prerequisites.forEach(prereq => {
         if (!this.questMap.has(prereq.permalink)) {
@@ -573,7 +573,7 @@ class QuestEngine {
         }
       });
     });
-    
+
     return issues;
   }
 }

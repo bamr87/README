@@ -5,7 +5,6 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: CONTRIBUTING.md
 ---

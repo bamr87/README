@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: call-spread-argument-set.expect.md
 ---
+# Call Spread Argument Set.Expect
+
 ## Input
 
 ```javascript
@@ -67,7 +69,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2,{"kind":"Set","value":[1,2]}]
 [2,{"kind":"Set","value":[1,2]}]

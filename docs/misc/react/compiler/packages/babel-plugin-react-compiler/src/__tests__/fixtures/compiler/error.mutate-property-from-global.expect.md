@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.mutate-property-from-global.expect.md
 ---
+# Error.Mutate Property From Global.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.mutate-property-from-global.ts:4:9
   6 | }
   7 |
 ```
-          
-      
+

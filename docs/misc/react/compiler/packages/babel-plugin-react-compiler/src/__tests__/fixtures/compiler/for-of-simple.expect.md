@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-simple.expect.md
 ---
+# For Of Simple.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2,4]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: feature_request.md
 ---
+# Feature Request
+
 <!-- template: feature_request_functional_requirements.md -->
 
 ## Describe your feature request clearly.

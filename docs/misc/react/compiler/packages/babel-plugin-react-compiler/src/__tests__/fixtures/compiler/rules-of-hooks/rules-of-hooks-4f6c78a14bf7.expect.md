@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-4f6c78a14bf7.expect.md
 ---
+# Rules Of Hooks 4F6C78A14Bf7.Expect
+
 ## Input
 
 ```javascript
@@ -26,4 +28,3 @@ function useUnreachable() {
 function useUnreachable() {}
 
 ```
-      

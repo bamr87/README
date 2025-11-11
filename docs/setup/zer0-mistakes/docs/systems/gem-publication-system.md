@@ -60,7 +60,7 @@ The new comprehensive script that handles the entire gem publication process:
 New launch configurations in `.vscode/launch.json`:
 
 1. **🚀 Gem Publisher: Patch Release** - Full patch version workflow
-2. **🚀 Gem Publisher: Minor Release** - Full minor version workflow  
+2. **🚀 Gem Publisher: Minor Release** - Full minor version workflow
 3. **🚀 Gem Publisher: Major Release** - Full major version workflow
 4. **🔍 Gem Publisher: Dry Run (Patch)** - Preview changes without modifications
 5. **⚡ Gem Publisher: Quick Build & Test** - Development workflow, skip publishing
@@ -72,7 +72,7 @@ New tasks in `.vscode/tasks.json`:
 
 #### Gem Management Tasks:
 - **🚀 Gem: Patch Release** - Full patch release workflow
-- **🚀 Gem: Minor Release** - Full minor release workflow  
+- **🚀 Gem: Minor Release** - Full minor release workflow
 - **🚀 Gem: Major Release** - Full major release workflow
 - **🔍 Gem: Dry Run Preview** - Preview changes without modifications
 - **⚡ Gem: Quick Build & Test** - Development workflow (default build task)
@@ -202,7 +202,7 @@ gh auth login
 
 ### File Requirements
 - `lib/jekyll-theme-zer0/version.rb` - Version definition
-- `jekyll-theme-zer0.gemspec` - Gem specification  
+- `jekyll-theme-zer0.gemspec` - Gem specification
 - `CHANGELOG.md` - Changelog file
 - Clean git working directory
 
@@ -272,7 +272,7 @@ bash -x ./scripts/gem-publish.sh patch --dry-run
 
 #### Via VS Code Task Runner
 1. Press Ctrl+Shift+P (Cmd+Shift+P on Mac)
-2. Type "Tasks: Run Task" 
+2. Type "Tasks: Run Task"
 3. Select desired gem task from the list
 
 #### Via Terminal

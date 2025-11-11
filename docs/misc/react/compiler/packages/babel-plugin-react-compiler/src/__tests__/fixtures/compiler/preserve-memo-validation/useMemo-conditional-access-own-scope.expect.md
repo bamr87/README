@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-conditional-access-own-scope.expect.md
 ---
+# Usememo Conditional Access Own Scope.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"value":[]}

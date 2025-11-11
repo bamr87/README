@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: bug-fbt-plural-multiple-mixed-call-tag.expect.md
 ---
+# Bug Fbt Plural Multiple Mixed Call Tag.Expect
+
 ## Input
 
 ```javascript
@@ -103,4 +105,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

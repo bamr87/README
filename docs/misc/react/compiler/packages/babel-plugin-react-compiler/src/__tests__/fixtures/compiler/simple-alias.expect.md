@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: simple-alias.expect.md
 ---
+# Simple Alias.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ function foo() {
 }
 
 ```
-      

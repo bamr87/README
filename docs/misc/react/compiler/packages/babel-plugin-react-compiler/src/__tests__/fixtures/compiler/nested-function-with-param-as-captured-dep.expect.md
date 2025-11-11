@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-function-with-param-as-captured-dep.expect.md
 ---
+# Nested Function With Param As Captured Dep.Expect
+
 ## Input
 
 ```javascript
@@ -53,4 +55,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

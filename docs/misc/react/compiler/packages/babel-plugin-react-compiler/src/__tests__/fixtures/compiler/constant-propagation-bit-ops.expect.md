@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-propagation-bit-ops.expect.md
 ---
+# Constant Propagation Bit Ops.Expect
+
 ## Input
 
 ```javascript
@@ -80,6 +82,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":[123,0,123,123,123,123,123,1,122,246,61,61,9,15.588457268119896,12.25,3.3219970854839125,0,1.5,1,0.5]}</div>

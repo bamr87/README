@@ -6,21 +6,23 @@ tags:
 last_updated: null
 source_file: glossary.md
 ---
+# Glossary
+
 Enterprise
 
 Spells - Scripts
 
 Ship - Browser
 
-Equipment - 
+Equipment -
 
 Crafting station - IDE's
 
-Castle - 
+Castle -
 
 Market - Github
 
-Farm - 
+Farm -
 
 Factory -
 
@@ -32,7 +34,7 @@ Log
 
 Mini games
 
-Fortress 
+Fortress
 
 Governance
 
@@ -43,7 +45,7 @@ Alliances
 
 Lores
 
-Items - apps, 
+Items - apps,
 
 Funds - Computing power
 

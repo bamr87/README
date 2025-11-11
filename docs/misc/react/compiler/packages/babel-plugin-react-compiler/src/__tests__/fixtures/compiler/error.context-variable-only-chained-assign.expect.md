@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.context-variable-only-chained-assign.expect.md
 ---
+# Error.Context Variable Only Chained Assign.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.context-variable-only-chained-assign.ts:10:19
   12 |   };
   13 |   return invoke(fn2);
 ```
-          
-      
+

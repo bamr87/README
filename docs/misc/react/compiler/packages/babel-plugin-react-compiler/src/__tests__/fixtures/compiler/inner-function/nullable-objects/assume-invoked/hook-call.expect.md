@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hook-call.expect.md
 ---
+# Hook Call.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"result":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: preserve-jsxtext-stringliteral-distinction.expect.md
 ---
+# Preserve Jsxtext Stringliteral Distinction.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div> , </div>

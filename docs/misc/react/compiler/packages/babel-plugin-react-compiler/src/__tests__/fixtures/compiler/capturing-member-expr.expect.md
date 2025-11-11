@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-member-expr.expect.md
 ---
+# Capturing Member Expr.Expect
+
 ## Input
 
 ```javascript
@@ -61,4 +63,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

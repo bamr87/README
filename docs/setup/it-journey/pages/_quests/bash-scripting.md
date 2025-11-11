@@ -222,7 +222,7 @@ get_wizard_name() {
     while true; do
         echo -e "${BLUE}What is your wizard name, apprentice? ${NC}"
         read -r wizard_name
-        
+
         if [[ -n "$wizard_name" ]]; then
             break
         else
@@ -236,7 +236,7 @@ cast_greeting_spell() {
     local name="$1"
     local current_time=$(date +"%H")
     local greeting_time
-    
+
     # Time-based greeting logic
     if (( current_time < 12 )); then
         greeting_time="morning"
@@ -245,7 +245,7 @@ cast_greeting_spell() {
     else
         greeting_time="evening"
     fi
-    
+
     echo -e "${GREEN}"
     echo "Greetings, ${name}! Good ${greeting_time}!"
     echo "Welcome to the realm of bash scripting magic!"
@@ -259,7 +259,7 @@ main() {
     show_banner
     get_wizard_name
     cast_greeting_spell "$wizard_name"
-    
+
     echo -e "${PURPLE}Your first spell is complete! ✨${NC}"
 }
 
@@ -321,7 +321,7 @@ declare -A spell_book=(
 # String manipulation examples
 demonstrate_string_magic() {
     local spell_name="MIGHTY_FIREBALL_ENCHANTMENT"
-    
+
     echo "=== String Transformation Magic ==="
     echo "Original spell: $spell_name"
     echo "Lowercase: ${spell_name,,}"
@@ -336,15 +336,15 @@ demonstrate_string_magic() {
 demonstrate_array_magic() {
     echo "=== Array Manipulation Magic ==="
     echo "Spell ingredients (${#spell_ingredients[@]} items):"
-    
+
     for i in "${!spell_ingredients[@]}"; do
         echo "  $((i+1)). ${spell_ingredients[i]}"
     done
-    
+
     # Add new ingredient
     spell_ingredients+=("dragon scale")
     echo "Added dragon scale. New count: ${#spell_ingredients[@]}"
-    
+
     echo
     echo "Spell book contains:"
     for spell in "${!spell_book[@]}"; do
@@ -358,18 +358,18 @@ demonstrate_calculation_magic() {
     local mana_points=100
     local spell_cost=25
     local experience=1500
-    
+
     echo "=== Calculation Magic ==="
     echo "Current mana: $mana_points"
     echo "Spell cost: $spell_cost"
-    
+
     # Arithmetic expansion
     local remaining_mana=$((mana_points - spell_cost))
     local max_spells=$((mana_points / spell_cost))
-    
+
     echo "Remaining mana: $remaining_mana"
     echo "Maximum spells possible: $max_spells"
-    
+
     # Level calculation
     local level=$((experience / 100))
     echo "Current level: $level (XP: $experience)"
@@ -379,7 +379,7 @@ demonstrate_calculation_magic() {
 # Parameter expansion examples
 demonstrate_parameter_magic() {
     local file_path="/home/wizard/spells/fireball.spell"
-    
+
     echo "=== Parameter Expansion Magic ==="
     echo "Full path: $file_path"
     echo "Directory: ${file_path%/*}"
@@ -394,12 +394,12 @@ demonstrate_parameter_magic() {
 main() {
     echo "🧙‍♂️ Welcome to the Data Manipulation Academy! 🧙‍♂️"
     echo
-    
+
     demonstrate_string_magic
     demonstrate_array_magic
     demonstrate_calculation_magic
     demonstrate_parameter_magic
-    
+
     echo "✨ Data magic mastery complete! ✨"
 }
 
@@ -452,13 +452,13 @@ add_contact() {
     read -p "Name: " name
     read -p "Email: " email
     read -p "Phone: " phone
-    
+
     # Validation
     if [[ -z "$name" || -z "$email" ]]; then
         echo "Name and email are required!"
         return 1
     fi
-    
+
     contacts["$name"]="$email|$phone"
     contact_list+=("$name")
     save_contacts
@@ -471,7 +471,7 @@ list_contacts() {
         echo "No contacts found."
         return
     fi
-    
+
     echo "📇 Contact List:"
     echo "═══════════════════════════════════════"
     for name in "${contact_list[@]}"; do
@@ -486,7 +486,7 @@ list_contacts() {
 search_contacts() {
     read -p "Enter search term: " search_term
     local found=0
-    
+
     echo "🔍 Search Results:"
     echo "═══════════════════════════════════════"
     for name in "${contact_list[@]}"; do
@@ -498,7 +498,7 @@ search_contacts() {
             ((found++))
         fi
     done
-    
+
     if [[ $found -eq 0 ]]; then
         echo "No contacts found matching '$search_term'"
     fi
@@ -517,11 +517,11 @@ show_menu() {
 
 main() {
     load_contacts
-    
+
     while true; do
         show_menu
         read -p "Choose option (1-4): " choice
-        
+
         case $choice in
             1) add_contact ;;
             2) list_contacts ;;
@@ -588,23 +588,23 @@ log_message() {
 # Check CPU usage
 check_cpu_usage() {
     local cpu_usage
-    
+
     # Different methods for different systems
     if command -v top >/dev/null 2>&1; then
         # macOS and most Linux systems
         cpu_usage=$(top -l 1 -n 0 | grep "CPU usage" | awk '{print $3}' | sed 's/%//' 2>/dev/null)
-        
+
         # Fallback for Linux systems
         if [[ -z "$cpu_usage" ]]; then
             cpu_usage=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}' | sed 's/%us,//' 2>/dev/null)
         fi
     fi
-    
+
     # Default fallback using iostat or vmstat
     if [[ -z "$cpu_usage" ]] && command -v vmstat >/dev/null 2>&1; then
         cpu_usage=$(vmstat 1 2 | tail -1 | awk '{print 100-$15}')
     fi
-    
+
     # Validate and return
     if [[ "$cpu_usage" =~ ^[0-9]+\.?[0-9]*$ ]]; then
         echo "${cpu_usage%.*}"  # Remove decimal part
@@ -616,7 +616,7 @@ check_cpu_usage() {
 # Check memory usage
 check_memory_usage() {
     local memory_percent
-    
+
     if [[ "$OSTYPE" == "darwin"* ]]; then
         # macOS
         local memory_pressure
@@ -632,7 +632,7 @@ check_memory_usage() {
             memory_percent=$(( (used * 100) / total ))
         fi
     fi
-    
+
     echo "${memory_percent:-0}"
 }
 
@@ -647,29 +647,29 @@ check_disk_usage() {
 analyze_system_health() {
     local cpu_usage memory_usage disk_usage
     local alerts=()
-    
+
     log_message "INFO" "Starting system health check..."
-    
+
     # Gather metrics
     cpu_usage=$(check_cpu_usage)
     memory_usage=$(check_memory_usage)
     disk_usage=$(check_disk_usage)
-    
+
     log_message "INFO" "CPU: ${cpu_usage}%, Memory: ${memory_usage}%, Disk: ${disk_usage}%"
-    
+
     # Check thresholds and generate alerts
     if (( cpu_usage > ALERT_THRESHOLD_CPU )); then
         alerts+=("HIGH CPU USAGE: ${cpu_usage}%")
     fi
-    
+
     if (( memory_usage > ALERT_THRESHOLD_MEMORY )); then
         alerts+=("HIGH MEMORY USAGE: ${memory_usage}%")
     fi
-    
+
     if (( disk_usage > ALERT_THRESHOLD_DISK )); then
         alerts+=("HIGH DISK USAGE: ${disk_usage}%")
     fi
-    
+
     # Process alerts
     if [[ ${#alerts[@]} -gt 0 ]]; then
         log_message "ALERT" "System alerts detected:"
@@ -688,12 +688,12 @@ monitor_system() {
     local interval="${1:-60}"  # Default 60 seconds
     local max_iterations="${2:-0}"  # 0 = infinite
     local iteration=0
-    
+
     log_message "INFO" "System monitoring started (interval: ${interval}s)"
-    
+
     while true; do
         analyze_system_health
-        
+
         # Check if we should stop
         if (( max_iterations > 0 )); then
             ((iteration++))
@@ -702,7 +702,7 @@ monitor_system() {
                 break
             fi
         fi
-        
+
         # Wait for next check
         sleep "$interval"
     done
@@ -735,7 +735,7 @@ main() {
     local interval=60
     local count=0
     local test_mode=false
-    
+
     while [[ $# -gt 0 ]]; do
         case $1 in
             -i|--interval)
@@ -769,7 +769,7 @@ main() {
                 ;;
         esac
     done
-    
+
     # Execute based on mode
     if [[ "$test_mode" == true ]]; then
         analyze_system_health

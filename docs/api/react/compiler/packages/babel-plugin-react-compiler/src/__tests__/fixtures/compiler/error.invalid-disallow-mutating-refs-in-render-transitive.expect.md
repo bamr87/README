@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-disallow-mutating-refs-in-render-transitive.expect.md
 ---
+# Error.Invalid Disallow Mutating Refs In Render Transitive.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.invalid-disallow-mutating-refs-in-render-transitive.ts:9:2
   11 |   return <button ref={ref} />;
   12 | }
 ```
-          
-      
+

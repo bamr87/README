@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitive-alias-fields.expect.md
 ---
+# Transitive Alias Fields.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ function component() {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-reassign-local-variable-in-async-callback.expect.md
 ---
+# Error.Invalid Reassign Local Variable In Async Callback.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-reassign-local-variable-in-async-callback.ts:8:6
   10 |   };
   11 |
 ```
-          
-      
+

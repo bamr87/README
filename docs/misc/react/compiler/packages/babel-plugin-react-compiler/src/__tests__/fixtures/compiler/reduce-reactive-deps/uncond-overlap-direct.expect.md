@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: uncond-overlap-direct.expect.md
 ---
+# Uncond Overlap Direct.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"c":2,"a":{"c":2}}

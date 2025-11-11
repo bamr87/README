@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: cond-scope.expect.md
 ---
+# Cond Scope.Expect
+
 ## Input
 
 ```javascript
@@ -100,6 +102,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

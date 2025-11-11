@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-arrayexpression.expect.md
 ---
+# Ssa Arrayexpression.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

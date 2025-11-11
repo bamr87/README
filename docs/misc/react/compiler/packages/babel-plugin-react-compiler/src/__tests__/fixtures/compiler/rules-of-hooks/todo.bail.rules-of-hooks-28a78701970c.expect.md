@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.bail.rules-of-hooks-28a78701970c.expect.md
 ---
+# Todo.Bail.Rules Of Hooks 28A78701970C.Expect
+
 ## Input
 
 ```javascript
@@ -44,4 +46,3 @@ const MemoizedFunction = React.memo((props) => {
 });
 
 ```
-      

@@ -12,10 +12,10 @@ source_file: barodybroject-stack-analysis.md
 ---
 # Technology Stack Analysis: Barodybroject
 
-> **Repository**: [https://github.com/bamr87/barodybroject](https://github.com/bamr87/barodybroject)  
-> **Analysis Date**: November 2, 2025  
-> **Primary Language**: Python  
-> **Project Type**: Web Application - AI-Powered Parody News Generator  
+> **Repository**: [https://github.com/bamr87/barodybroject](https://github.com/bamr87/barodybroject)
+> **Analysis Date**: November 2, 2025
+> **Primary Language**: Python
+> **Project Type**: Web Application - AI-Powered Parody News Generator
 > **Analyzed By**: Stack Attack Protocol v1.0
 
 ## 📊 Executive Summary
@@ -50,38 +50,38 @@ graph TB
         B[Django Templates]
         C[jQuery Optional]
     end
-    
+
     subgraph "Application Layer"
         D[Django 4.2.20]
         E[Django REST Framework]
         F[Gunicorn WSGI]
         G[OpenAI API Integration]
     end
-    
+
     subgraph "Data Layer"
         H[PostgreSQL 15]
         I[SQLite Dev]
     end
-    
+
     subgraph "Infrastructure Layer"
         J[Docker Containers]
         K[Azure Container Apps]
         L[Azure Bicep IaC]
         M[Azure Container Registry]
     end
-    
+
     subgraph "DevOps Layer"
         N[GitHub Actions CI/CD]
         O[Azure Developer CLI]
         P[Pytest Testing]
         Q[Application Insights]
     end
-    
+
     subgraph "Static Content"
         R[Jekyll 3.9.5]
         S[Blog Posts]
     end
-    
+
     A --> D
     B --> D
     C --> D
@@ -98,7 +98,7 @@ graph TB
     P --> N
     Q --> K
     R --> S
-    
+
     style D fill:#092E20,stroke:#fff,color:#fff
     style K fill:#0078D4,stroke:#fff,color:#fff
     style G fill:#10A37F,stroke:#fff,color:#fff
@@ -251,7 +251,7 @@ sequenceDiagram
     participant ACR as Azure Container Registry
     participant ACA as Azure Container Apps
     participant DB as PostgreSQL
-    
+
     Dev->>Git: Push code to main/develop
     Git->>GHA: Trigger CI/CD workflow
     GHA->>GHA: Run tests (pytest)
@@ -424,19 +424,19 @@ dev = [
     "coverage[toml]",
     "selenium",
     "beautifulsoup4",
-    
+
     # Code Quality
     "black",                        # Code formatting
     "ruff",                         # Fast linting
     "pre-commit",                   # Git hooks
     "mypy",                         # Static type checking
     "django-stubs",                 # Django type stubs
-    
+
     # Documentation
     "sphinx",
     "sphinx-autodoc-typehints",
     "myst-parser",
-    
+
     # Development Tools
     "cruft",                        # Template updates
     "pip-tools",                    # Dependency management
@@ -541,7 +541,7 @@ dev = [
   - Main views: 2,400+ lines
   - Templates: Multiple template files
   - Tests: Comprehensive test coverage
-  
+
 - **Test Coverage**: ~70%+ target (pytest-cov configured)
 - **Linting**: Ruff configured for fast, comprehensive checks
 - **Type Checking**: MyPy with django-stubs for static analysis
@@ -1094,6 +1094,6 @@ The systematic approach to architecture evolution, comprehensive documentation, 
 
 ---
 
-*Analysis completed by Stack Attack Protocol v1.0*  
-*Last updated: November 2, 2025*  
+*Analysis completed by Stack Attack Protocol v1.0*
+*Last updated: November 2, 2025*
 *Next review recommended: February 2025 (after short-term recommendations)*

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-html-entity.expect.md
 ---
+# Jsx Html Entity.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>&gt;&lt;span &amp;</div>

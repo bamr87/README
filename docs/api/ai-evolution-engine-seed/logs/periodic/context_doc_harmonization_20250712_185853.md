@@ -4,7 +4,6 @@ category: api
 tags:
 - api
 - testing
-- api
 last_updated: null
 source_file: context_doc_harmonization_20250712_185853.md
 ---
@@ -38,7 +37,7 @@ Repository health analysis unavailable
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #TBD: Documentation consistency improvements
 
 @relatedEvolutions

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-duplicate-prop.expect.md
 ---
+# Jsx Outlining Duplicate Prop.Expect
+
 ## Input
 
 ```javascript
@@ -168,6 +170,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfoofooxbarbar

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-alias-declaration.expect.md
 ---
+# Type Alias Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"name":"Mofei"}

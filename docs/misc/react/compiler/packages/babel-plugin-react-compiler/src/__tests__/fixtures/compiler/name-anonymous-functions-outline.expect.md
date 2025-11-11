@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: name-anonymous-functions-outline.expect.md
 ---
+# Name Anonymous Functions Outline.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

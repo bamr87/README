@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: phi-type-inference-array-push-consecutive-phis.expect.md
 ---
+# Phi Type Inference Array Push Consecutive Phis.Expect
+
 ## Input
 
 ```javascript
@@ -113,7 +115,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},[3.14,"[[ cyclic ref *1 ]]"]]
 [{},[42,"[[ cyclic ref *1 ]]"]]

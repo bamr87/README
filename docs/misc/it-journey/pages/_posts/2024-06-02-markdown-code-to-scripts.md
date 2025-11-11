@@ -69,7 +69,7 @@ convert_md_to_bash('zer0.md', 'zer0.sh')
 
 This will add `#!/bin/bash` at the top of the 'zer0.sh' file.
 
-bamr87: update the script to pars the code block and create the files based on the language used in the code block. for example, if there are python code blocks, the output file will be a .py file with all the non-python code blocks commented out. at the same time, if there's a shell code block, the same logic applies and a .sh file it produced. the number of files is determined by the number of different languages in the markdown file. 
+bamr87: update the script to pars the code block and create the files based on the language used in the code block. for example, if there are python code blocks, the output file will be a .py file with all the non-python code blocks commented out. at the same time, if there's a shell code block, the same logic applies and a .sh file it produced. the number of files is determined by the number of different languages in the markdown file.
 
 GitHub Copilot: Here's a step-by-step plan:
 
@@ -135,7 +135,7 @@ Cell In[9], line 27
 
 ValueError: I/O operation on closed file.
 
-GitHub Copilot: The error is due to the fact that the script is trying to write to a file that has been closed. This happens when the script encounters a markdown line after closing a language block but before starting a new one. 
+GitHub Copilot: The error is due to the fact that the script is trying to write to a file that has been closed. This happens when the script encounters a markdown line after closing a language block but before starting a new one.
 
 To fix this, we need to only write to the language file when we're in language mode. If we're not in language mode, we should skip the line because it's markdown and doesn't belong in any of the language files.
 
@@ -177,7 +177,7 @@ This version of the script will not attempt to write to the language file unless
 
 bamr87: it's not worrking correctly. it's adding the shebang line for the python file, and it's failing to copy all the lines respectively.
 
-GitHub Copilot: I apologize for the confusion. Let's modify the script to handle the shebang line correctly and ensure all lines are copied as expected. 
+GitHub Copilot: I apologize for the confusion. Let's modify the script to handle the shebang line correctly and ensure all lines are copied as expected.
 
 Here's the updated plan:
 
@@ -225,7 +225,7 @@ convert_md_to_files('zer0.md')
 
 This version of the script will only add the shebang line if the language is in the `shebang_lines` dictionary, and it will skip markdown lines when not in language mode.
 
-bamr87: still not working. 
+bamr87: still not working.
 
 GitHub Copilot: I apologize for the confusion earlier. Let's try a different approach. We'll use a dictionary to keep track of the open files for each language. This way, we can handle multiple language blocks for the same language.
 

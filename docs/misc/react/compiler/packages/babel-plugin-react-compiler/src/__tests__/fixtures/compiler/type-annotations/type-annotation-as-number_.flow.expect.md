@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-annotation-as-number_.flow.expect.md
 ---
+# Type Annotation As Number .Flow.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

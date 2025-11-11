@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: array-at-effect.expect.md
 ---
+# Array At Effect.Expect
+
 ## Input
 
 ```javascript
@@ -70,4 +72,3 @@ function ArrayAtTest(props) {
 }
 
 ```
-      

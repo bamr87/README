@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: props-method-dependency.expect.md
 ---
+# Props Method Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -75,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":["[[ function params=0 ]]"],"output":["React"]}</div>
 <div>{"inputs":["[[ function params=0 ]]"],"output":["Compiler"]}</div>

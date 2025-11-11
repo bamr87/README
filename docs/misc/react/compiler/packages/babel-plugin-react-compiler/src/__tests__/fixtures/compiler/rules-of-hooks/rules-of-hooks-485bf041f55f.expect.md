@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-485bf041f55f.expect.md
 ---
+# Rules Of Hooks 485Bf041F55F.Expect
+
 ## Input
 
 ```javascript
@@ -29,4 +31,3 @@ function functionThatStartsWithUseButIsntAHook() {
 }
 
 ```
-      

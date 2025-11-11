@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: valid-setState-in-effect-from-ref-function-call.expect.md
 ---
+# Valid Setstate In Effect From Ref Function Call.Expect
+
 ## Input
 
 ```javascript
@@ -77,6 +79,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 100

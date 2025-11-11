@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-setstate-captured-indirectly-jsx.expect.md
 ---
+# Hoisting Setstate Captured Indirectly Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -76,6 +78,6 @@ function useFoo() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

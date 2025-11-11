@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: infer-nested-object-method.expect.md
 ---
+# Infer Nested Object Method.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{"testFn":{"kind":"Function","result":{"kind":"Function","result":"test"}}},"shouldInvokeFns":true}</div>

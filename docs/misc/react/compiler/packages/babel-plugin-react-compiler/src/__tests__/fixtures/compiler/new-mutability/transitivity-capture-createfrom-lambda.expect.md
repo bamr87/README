@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitivity-capture-createfrom-lambda.expect.md
 ---
+# Transitivity Capture Createfrom Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -111,7 +113,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0],"output":{"a":0,"property":0}}</div>
 <div>{"inputs":[0,1],"output":{"a":0,"property":1}}</div>

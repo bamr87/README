@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-repro-missed-memoization-from-inferred-mutation-in-logger.expect.md
 ---
+# Error.Todo Repro Missed Memoization From Inferred Mutation In Logger.Expect
+
 ## Input
 
 ```javascript
@@ -123,5 +125,4 @@ React Compiler has skipped optimizing this component because the existing manual
   29 |   );
   30 |
 ```
-          
-      
+

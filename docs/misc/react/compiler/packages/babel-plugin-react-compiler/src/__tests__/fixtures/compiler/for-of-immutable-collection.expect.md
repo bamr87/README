@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-immutable-collection.expect.md
 ---
+# For Of Immutable Collection.Expect
+
 ## Input
 
 ```javascript
@@ -82,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [["Foo","/about"],["Foo","/contact"]]
 [["Bar","/about"],["Bar","/contact"]]

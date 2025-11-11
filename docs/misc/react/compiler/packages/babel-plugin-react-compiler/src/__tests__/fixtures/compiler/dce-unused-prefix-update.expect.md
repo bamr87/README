@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dce-unused-prefix-update.expect.md
 ---
+# Dce Unused Prefix Update.Expect
+
 ## Input
 
 ```javascript
@@ -39,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

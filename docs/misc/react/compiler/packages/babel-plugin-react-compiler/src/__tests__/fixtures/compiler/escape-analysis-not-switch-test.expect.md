@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: escape-analysis-not-switch-test.expect.md
 ---
+# Escape Analysis Not Switch Test.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-reassignment-to-global-function-jsx-prop.expect.md
 ---
+# Allow Reassignment To Global Function Jsx Prop.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

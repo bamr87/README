@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: index.md
 ---
+# Index
+
 ## Educational Features
 
 These are the learning-focused features that make IT-Journey a comprehensive educational platform.

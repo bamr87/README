@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-assignment.expect.md
 ---
+# Infer Function Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ const Component = (props) => {
 };
 
 ```
-      

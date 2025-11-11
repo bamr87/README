@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-at-mutate-after-capture.expect.md
 ---
+# Array At Mutate After Capture.Expect
+
 ## Input
 
 ```javascript
@@ -44,4 +46,3 @@ function Component(props) {
 }
 
 ```
-      

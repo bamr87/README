@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-with-catch-param.expect.md
 ---
+# Try Catch With Catch Param.Expect
+
 ## Input
 
 ```javascript
@@ -72,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

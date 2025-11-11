@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture-indirect-mutate-alias-iife.expect.md
 ---
+# Capture Indirect Mutate Alias Iife.Expect
+
 ## Input
 
 ```javascript
@@ -56,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"b":1}

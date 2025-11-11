@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: prune-scopes-whose-deps-may-invalidate-array.expect.md
 ---
+# Prune Scopes Whose Deps May Invalidate Array.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[42]]

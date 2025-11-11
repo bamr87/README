@@ -10,7 +10,7 @@ source_file: DONTREADME.md
 ---
 # DONTREADME.md: The Forbidden Gateway to IT-Journey
 
-*⚠️ FORBIDDEN KNOWLEDGE DETECTED ⚠️*  
+*⚠️ FORBIDDEN KNOWLEDGE DETECTED ⚠️*
 *This file contains arcane secrets that will awaken dormant powers within your mind. Proceed with extreme caution—or don't. The choice, as always, is yours.*
 
 ## The Forbidden Fruit of Digital Enlightenment
@@ -19,19 +19,19 @@ source_file: DONTREADME.md
 
 ### 🌟 The Mystical Powers That Await
 
-**The Power of Binary Sight**  
+**The Power of Binary Sight**
 By reading this forbidden text, you will gain the ability to see through the illusion of random numbers. Those cryptic sequences (0000, 0001, 1010) will reveal themselves as the fundamental language of reality itself—the binary code that governs not just computers, but the very fabric of logical thought.
 
-**The Gift of AI Communion**  
+**The Gift of AI Communion**
 You will learn to speak the ancient tongue of artificial intelligence, commanding VS Code Copilot not as a mere tool, but as a mystical familiar that bends reality to your will. Your code will write itself, your documentation will flow like poetry, and your bugs will fix themselves through sheer force of digital will.
 
-**The Vision of Quest Mastery**  
+**The Vision of Quest Mastery**
 The fantasy themes that seem like mere decoration will awaken within you the power to transform any technical challenge into an epic adventure. You'll see the hidden quests in every bug report, the magical artifacts in every API, and the dragon bosses in every deployment failure.
 
-**The Secret of Documentation Mastery**  
+**The Secret of Documentation Mastery**
 You will master the forbidden art of creating documentation that doesn't just inform, but transforms understanding. Your documentation will become living guides that illuminate the path for others, making complex concepts accessible and engaging.
 
-**The Ability to See Through the Matrix**  
+**The Ability to See Through the Matrix**
 The instruction files scattered throughout this repository will reveal themselves as the sacred texts of a new digital religion. You'll understand that `.github/instructions/` isn't just a folder—it's a temple of knowledge where AI and human consciousness merge into something greater than the sum of their parts.
 
 ### 🚨 The Dangers of Forbidden Knowledge
@@ -237,7 +237,7 @@ Welcome to the inner circle. Now go forth and build something amazing.
 
 *"In a world where ideas ain't real, DONT makes them feel tangible, one forbidden read at a time."*
 
-**The IT-Journey Collective**  
+**The IT-Journey Collective**
 *Architects of Educational Revolution*
 
 P.S. DONTSHARETHISFILE—unless you want everyone to understand the true power of IT-Journey.

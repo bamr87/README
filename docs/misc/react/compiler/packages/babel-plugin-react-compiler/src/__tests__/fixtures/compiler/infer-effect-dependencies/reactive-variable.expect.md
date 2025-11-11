@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-variable.expect.md
 ---
+# Reactive Variable.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ function ReactiveVariable(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

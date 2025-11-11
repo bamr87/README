@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.mutable-range-shared-inner-outer-function.expect.md
 ---
+# Error.Mutable Range Shared Inner Outer Function.Expect
+
 ## Input
 
 ```javascript
@@ -54,5 +56,4 @@ error.mutable-range-shared-inner-outer-function.ts:8:6
   10 |     } else {
   11 |       a = {};
 ```
-          
-      
+

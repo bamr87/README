@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-bailout-nopanic-shouldnt-outline.expect.md
 ---
+# Repro Bailout Nopanic Shouldnt Outline.Expect
+
 ## Input
 
 ```javascript
@@ -29,6 +31,6 @@ function Foo() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multiple-components-first-is-invalid.expect.md
 ---
+# Multiple Components First Is Invalid.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ function ValidComponent(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

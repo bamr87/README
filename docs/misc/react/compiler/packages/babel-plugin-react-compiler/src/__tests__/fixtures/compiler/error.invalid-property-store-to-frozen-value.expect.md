@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-property-store-to-frozen-value.expect.md
 ---
+# Error.Invalid Property Store To Frozen Value.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-property-store-to-frozen-value.ts:5:2
   7 | }
   8 |
 ```
-          
-      
+

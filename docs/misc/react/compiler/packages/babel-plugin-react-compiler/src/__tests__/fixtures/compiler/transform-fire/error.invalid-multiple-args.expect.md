@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-multiple-args.expect.md
 ---
+# Error.Invalid Multiple Args.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.invalid-multiple-args.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-current-aliased-no-added-to-dep.expect.md
 ---
+# Ref Current Aliased No Added To Dep.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ function VideoTab() {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-skip-components-without-hooks-or-jsx.expect.md
 ---
+# Infer Skip Components Without Hooks Or Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -29,4 +31,3 @@ function Component(props) {
 }
 
 ```
-      

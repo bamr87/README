@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-object-pattern-within-rest.expect.md
 ---
+# Destructuring Object Pattern Within Rest.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["y",null]

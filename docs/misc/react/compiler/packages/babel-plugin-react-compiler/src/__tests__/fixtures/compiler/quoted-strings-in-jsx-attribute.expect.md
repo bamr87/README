@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: quoted-strings-in-jsx-attribute.expect.md
 ---
+# Quoted Strings In Jsx Attribute.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Some "text"

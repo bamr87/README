@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-alias-property-load-dep.expect.md
 ---
+# Usememo Alias Property Load Dep.Expect
+
 ## Input
 
 ```javascript
@@ -56,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 5

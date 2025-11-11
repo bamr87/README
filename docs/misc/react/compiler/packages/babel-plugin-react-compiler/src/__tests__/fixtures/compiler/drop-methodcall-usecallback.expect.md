@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: drop-methodcall-usecallback.expect.md
 ---
+# Drop Methodcall Usecallback.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

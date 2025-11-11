@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-simple.expect.md
 ---
+# Jsx Outlining Simple.Expect
+
 ## Input
 
 ```javascript
@@ -144,6 +146,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooxbar

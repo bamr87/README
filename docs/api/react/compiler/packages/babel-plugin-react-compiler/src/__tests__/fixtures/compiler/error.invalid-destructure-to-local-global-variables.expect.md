@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-destructure-to-local-global-variables.expect.md
 ---
+# Error.Invalid Destructure To Local Global Variables.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-destructure-to-local-global-variables.ts:3:6
   5 |   return [a, b];
   6 | }
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-for-trivial-update.expect.md
 ---
+# Ssa For Trivial Update.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

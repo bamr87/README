@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.function-expression-references-variable-its-assigned-to.expect.md
 ---
+# Error.Function Expression References Variable Its Assigned To.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.function-expression-references-variable-its-assigned-to.ts:3:4
   5 |   return <div onClick={callback} />;
   6 | }
 ```
-          
-      
+

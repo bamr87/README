@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dominator.expect.md
 ---
+# Dominator.Expect
+
 ## Input
 
 ```javascript
@@ -92,4 +94,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

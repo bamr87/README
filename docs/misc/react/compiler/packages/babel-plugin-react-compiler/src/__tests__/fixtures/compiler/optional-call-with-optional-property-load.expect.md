@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-call-with-optional-property-load.expect.md
 ---
+# Optional Call With Optional Property Load.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-capture-in-method-receiver.expect.md
 ---
+# Alias Capture In Method Receiver.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ function Component() {
 }
 
 ```
-      

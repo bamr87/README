@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: consecutive-use-memo.expect.md
 ---
+# Consecutive Use Memo.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":2},[3]]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-e66a744cffbe.expect.md
 ---
+# Rules Of Hooks E66A744Cffbe.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ const FancyButton = forwardRef(function (props, ref) {
 });
 
 ```
-      

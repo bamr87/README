@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-declaration-simple.expect.md
 ---
+# Function Declaration Simple.Expect
+
 ## Input
 
 ```javascript
@@ -62,4 +64,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

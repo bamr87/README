@@ -152,30 +152,30 @@ def format_processed_output(data: dict) -> str:
 # Path: object-lifecycle-management
 class DataPipeline:
     """Orchestrates the complete data processing path."""
-    
+
     def __init__(self):
         self.path_history: List[str] = []
         self.error_recovery_path: Optional[Callable] = None
-    
+
     def execute_path(self, data: Any) -> Any:
         """Follow the complete processing path."""
         try:
             # Path segment 1: Validation
             validated = self._validate_data(data)
             self.path_history.append("validation")
-            
+
             # Path segment 2: Processing
             processed = self._process_data(validated)
             self.path_history.append("processing")
-            
+
             # Path segment 3: Output
             result = self._format_output(processed)
             self.path_history.append("output")
-            
+
             return result
         except Exception as e:
             return self._handle_error_path(e)
-    
+
     def _handle_error_path(self, error: Exception) -> Any:
         """Alternative path for error conditions."""
         if self.error_recovery_path:
@@ -190,7 +190,7 @@ class DataPipeline:
 # Path: error-classification-hierarchy
 class PathError(Exception):
     """Base exception for path-related errors."""
-    
+
     def __init__(self, message: str, path_context: str = None):
         super().__init__(message)
         self.path_context = path_context
@@ -260,33 +260,33 @@ from unittest.mock import Mock, patch
 
 class TestDataProcessingPaths:
     """Test suite for data processing paths."""
-    
+
     def test_happy_path_execution(self):
         """Test successful execution through all path segments."""
         pipeline = DataPipeline()
         test_data = {"value": 42, "type": "number"}
-        
+
         result = pipeline.execute_path(test_data)
-        
+
         assert pipeline.path_history == ["validation", "processing", "output"]
         assert result["status"] == "success"
-    
+
     def test_validation_error_path(self):
         """Test error path when validation fails."""
         pipeline = DataPipeline()
         invalid_data = {"invalid": "data"}
-        
+
         with pytest.raises(ValidationPathError) as exc_info:
             pipeline.execute_path(invalid_data)
-        
+
         assert exc_info.value.path_context == "input-validation-path"
-    
+
     def test_fallback_path_activation(self):
         """Test automatic fallback path execution."""
         @with_fallback_path(lambda x: {"fallback": True})
         def failing_function(data):
             raise ProcessingError("Simulated failure")
-        
+
         result = failing_function({"test": "data"})
         assert result["fallback"] is True
 
@@ -309,20 +309,20 @@ import pytest
 
 class TestAsyncPaths:
     """Test asynchronous execution paths."""
-    
+
     @pytest.mark.asyncio
     async def test_async_pipeline_path(self):
         """Test async data processing pipeline."""
         async def async_process_data(data):
             await asyncio.sleep(0.1)  # Simulate async operation
             return {"processed": data}
-        
+
         pipeline = AsyncDataPipeline()
         result = await pipeline.execute_async_path({"test": "data"})
-        
+
         assert result["processed"]["test"] == "data"
         assert "async_processing" in pipeline.path_history
-    
+
     @pytest.mark.asyncio
     async def test_concurrent_path_execution(self):
         """Test multiple paths executing concurrently."""
@@ -330,9 +330,9 @@ class TestAsyncPaths:
             async_process_data(f"data_{i}")
             for i in range(5)
         ]
-        
+
         results = await asyncio.gather(*tasks, return_exceptions=True)
-        
+
         assert len(results) == 5
         assert all(not isinstance(r, Exception) for r in results)
 ```
@@ -364,13 +364,13 @@ async def path_tracking_middleware(request, call_next):
     """Middleware to track request paths."""
     start_time = time.time()
     request.state.path_history = []
-    
+
     response = await call_next(request)
-    
+
     processing_time = time.time() - start_time
     response.headers["X-Path-History"] = ",".join(request.state.path_history)
     response.headers["X-Processing-Time"] = str(processing_time)
-    
+
     return response
 
 @app.post("/process", response_model=DataResponse)
@@ -382,7 +382,7 @@ async def process_data_endpoint(
     try:
         # Path: request-validation → processing → response-formatting
         result = await processor.execute_async_path(request.data)
-        
+
         return DataResponse(
             result=result,
             path_taken=processor.path_history,
@@ -419,13 +419,13 @@ from datetime import datetime
 
 class BaseDataModel(BaseModel):
     """Base model with path tracking capabilities."""
-    
+
     class Config:
         # Path: configuration-inheritance
         validate_assignment = True
         use_enum_values = True
         allow_population_by_field_name = True
-    
+
     def validate_path(self, path_name: str) -> bool:
         """Validate model according to specific path requirements."""
         # Override in subclasses for path-specific validation
@@ -433,24 +433,24 @@ class BaseDataModel(BaseModel):
 
 class InputDataModel(BaseDataModel):
     """Model for data entering the processing path."""
-    
+
     data_id: str = Field(..., description="Unique identifier for data")
     content: dict = Field(..., description="Raw data content")
     processing_hints: Optional[dict] = Field(None, description="Path optimization hints")
     timestamp: datetime = Field(default_factory=datetime.utcnow)
-    
+
     @validator('content')
     def validate_content_structure(cls, v):
         """Ensure content follows expected path requirements."""
         if not isinstance(v, dict):
             raise ValueError("Content must be a dictionary for processing path")
-        
+
         required_keys = ['type', 'payload']
         if not all(key in v for key in required_keys):
             raise ValueError(f"Content missing required keys: {required_keys}")
-        
+
         return v
-    
+
     def validate_path(self, path_name: str) -> bool:
         """Validate for specific processing paths."""
         if path_name == "ml_processing":
@@ -461,7 +461,7 @@ class InputDataModel(BaseDataModel):
 
 class OutputDataModel(BaseDataModel):
     """Model for data exiting the processing path."""
-    
+
     result: Union[dict, list, str, int, float]
     path_executed: list[str] = Field(default_factory=list)
     execution_metadata: dict = Field(default_factory=dict)
@@ -482,19 +482,19 @@ from typing import Any, Dict
 
 class PathLogger:
     """Logger that tracks execution paths and performance."""
-    
+
     def __init__(self, name: str):
         self.logger = logging.getLogger(name)
         self.current_path: Optional[str] = None
         self.path_stack: List[str] = []
         self.path_metrics: Dict[str, Any] = {}
-    
+
     @contextmanager
     def path_context(self, path_name: str):
         """Context manager for path execution tracking."""
         start_time = datetime.utcnow()
         self.enter_path(path_name)
-        
+
         try:
             yield self
         except Exception as e:
@@ -503,12 +503,12 @@ class PathLogger:
         finally:
             execution_time = (datetime.utcnow() - start_time).total_seconds()
             self.exit_path(path_name, execution_time)
-    
+
     def enter_path(self, path_name: str):
         """Enter a new execution path."""
         self.path_stack.append(path_name)
         self.current_path = path_name
-        
+
         self.logger.info(
             "Entering path",
             extra={
@@ -517,14 +517,14 @@ class PathLogger:
                 "timestamp": datetime.utcnow().isoformat()
             }
         )
-    
+
     def exit_path(self, path_name: str, execution_time: float):
         """Exit the current execution path."""
         if self.path_stack and self.path_stack[-1] == path_name:
             self.path_stack.pop()
-        
+
         self.current_path = self.path_stack[-1] if self.path_stack else None
-        
+
         # Track path performance
         if path_name not in self.path_metrics:
             self.path_metrics[path_name] = {
@@ -532,12 +532,12 @@ class PathLogger:
                 "total_time": 0.0,
                 "avg_time": 0.0
             }
-        
+
         metrics = self.path_metrics[path_name]
         metrics["executions"] += 1
         metrics["total_time"] += execution_time
         metrics["avg_time"] = metrics["total_time"] / metrics["executions"]
-        
+
         self.logger.info(
             "Exiting path",
             extra={
@@ -547,7 +547,7 @@ class PathLogger:
                 "remaining_stack": self.path_stack.copy()
             }
         )
-    
+
     def log_path_error(self, path_name: str, error: Exception):
         """Log errors with path context."""
         self.logger.error(
@@ -566,16 +566,16 @@ logger = PathLogger(__name__)
 
 async def process_data_with_logging(data: dict) -> dict:
     """Data processing with comprehensive path logging."""
-    
+
     with logger.path_context("data_validation"):
         validated_data = validate_input_data(data)
-    
+
     with logger.path_context("data_processing"):
         processed_data = await process_validated_data(validated_data)
-    
+
     with logger.path_context("output_formatting"):
         result = format_output_data(processed_data)
-    
+
     return result
 ```
 
@@ -685,42 +685,42 @@ import json
 
 class PathCache:
     """Cache implementation aware of execution paths."""
-    
+
     def __init__(self):
         self._cache: Dict[str, Any] = {}
         self._path_stats: Dict[str, Dict[str, int]] = {}
-    
+
     def cache_key(self, func: Callable, args: tuple, kwargs: dict, path_context: str = None) -> str:
         """Generate cache key incorporating path context."""
         func_name = f"{func.__module__}.{func.__name__}"
         args_str = json.dumps(args, sort_keys=True, default=str)
         kwargs_str = json.dumps(kwargs, sort_keys=True, default=str)
-        
+
         base_key = f"{func_name}:{args_str}:{kwargs_str}"
         if path_context:
             base_key = f"{path_context}:{base_key}"
-        
+
         return hashlib.md5(base_key.encode()).hexdigest()
-    
+
     def get(self, key: str, path_context: str = None) -> Optional[Any]:
         """Retrieve cached value with path statistics."""
         if path_context:
             self._update_path_stats(path_context, "cache_get")
-        
+
         return self._cache.get(key)
-    
+
     def set(self, key: str, value: Any, path_context: str = None):
         """Store value in cache with path tracking."""
         self._cache[key] = value
-        
+
         if path_context:
             self._update_path_stats(path_context, "cache_set")
-    
+
     def _update_path_stats(self, path_context: str, operation: str):
         """Update cache statistics for path analysis."""
         if path_context not in self._path_stats:
             self._path_stats[path_context] = {"cache_get": 0, "cache_set": 0, "cache_hit": 0}
-        
+
         self._path_stats[path_context][operation] += 1
 
 # Global cache instance
@@ -732,36 +732,36 @@ def cached_path(path_context: str = None, ttl: int = 3600):
         @functools.wraps(func)
         async def async_wrapper(*args, **kwargs):
             cache_key = path_cache.cache_key(func, args, kwargs, path_context)
-            
+
             # Try to get from cache
             cached_result = path_cache.get(cache_key, path_context)
             if cached_result is not None:
                 path_cache._update_path_stats(path_context, "cache_hit")
                 return cached_result
-            
+
             # Execute function and cache result
             result = await func(*args, **kwargs)
             path_cache.set(cache_key, result, path_context)
-            
+
             return result
-        
+
         @functools.wraps(func)
         def sync_wrapper(*args, **kwargs):
             cache_key = path_cache.cache_key(func, args, kwargs, path_context)
-            
+
             cached_result = path_cache.get(cache_key, path_context)
             if cached_result is not None:
                 path_cache._update_path_stats(path_context, "cache_hit")
                 return cached_result
-            
+
             result = func(*args, **kwargs)
             path_cache.set(cache_key, result, path_context)
-            
+
             return result
-        
+
         # Return appropriate wrapper based on function type
         return async_wrapper if asyncio.iscoroutinefunction(func) else sync_wrapper
-    
+
     return decorator
 
 # Usage examples

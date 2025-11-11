@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisted-function-declaration.expect.md
 ---
+# Hoisted Function Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -64,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":{"foo":"[[ function params=0 ]]"}}
 logs: [42]

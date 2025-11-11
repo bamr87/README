@@ -5,7 +5,6 @@ tags:
 - python
 - api
 - testing
-- api
 last_updated: null
 source_file: INTERACTIVE_TEST_REPORT.md
 ---

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: mege-consecutive-scopes-dont-merge-with-different-deps.expect.md
 ---
+# Mege Consecutive Scopes Dont Merge With Different Deps.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":4,"b":42,"c":["static"]}

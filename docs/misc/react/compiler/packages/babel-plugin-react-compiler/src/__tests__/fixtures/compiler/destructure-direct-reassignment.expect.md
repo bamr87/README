@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-direct-reassignment.expect.md
 ---
+# Destructure Direct Reassignment.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

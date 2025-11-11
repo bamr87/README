@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: mutate-through-boxing-unboxing-function-call-indirections-2.expect.md
 ---
+# Mutate Through Boxing Unboxing Function Call Indirections 2.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"x":{"a":0,"b":1,"key":"value"}}</div>

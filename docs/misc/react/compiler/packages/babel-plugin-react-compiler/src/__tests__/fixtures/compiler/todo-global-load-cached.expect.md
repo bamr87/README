@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo-global-load-cached.expect.md
 ---
+# Todo Global Load Cached.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":2}</div>

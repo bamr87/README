@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-simple.expect.md
 ---
+# Usememo Simple.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function component(a) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-objectmethod-cond-access.expect.md
 ---
+# Infer Objectmethod Cond Access.Expect
+
 ## Input
 
 ```javascript
@@ -82,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"objectMethod":{"method":{"kind":"Function","result":null}},"shouldInvokeFns":true}</div>

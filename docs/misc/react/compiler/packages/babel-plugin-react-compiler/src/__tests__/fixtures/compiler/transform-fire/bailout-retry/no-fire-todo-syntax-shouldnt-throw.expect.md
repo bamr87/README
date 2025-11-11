@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: no-fire-todo-syntax-shouldnt-throw.expect.md
 ---
+# No Fire Todo Syntax Shouldnt Throw.Expect
+
 ## Input
 
 ```javascript
@@ -96,6 +98,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

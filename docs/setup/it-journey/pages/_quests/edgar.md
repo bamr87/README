@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: edgar.md
 ---
+# Edgar
+
 🌟 Welcome, Brave Data Sorcerer! 🌟
 
 In the fog-shrouded realms of Financea, where gold flows like enchanted rivers and secrets are hoarded in

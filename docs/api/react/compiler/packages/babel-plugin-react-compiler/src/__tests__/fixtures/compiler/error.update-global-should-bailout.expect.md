@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.update-global-should-bailout.expect.md
 ---
+# Error.Update Global Should Bailout.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.update-global-should-bailout.ts:3:2
   5 | }
   6 |
 ```
-          
-      
+

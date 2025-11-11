@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-unrelated-mutation-in-depslist.expect.md
 ---
+# Error.Usememo Unrelated Mutation In Depslist.Expect
+
 ## Input
 
 ```javascript
@@ -56,5 +58,4 @@ error.useMemo-unrelated-mutation-in-depslist.ts:16:27
   20 |   return [x, memoized];
   21 | }
 ```
-          
-      
+

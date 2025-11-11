@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-maybe-alias.expect.md
 ---
+# Object Method Maybe Alias.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getX":{"kind":"Function","result":{"value":0}},"wat0":{"getY":{"kind":"Function","result":"y"}}},"shouldInvokeFns":true}</div>

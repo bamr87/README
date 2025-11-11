@@ -199,6 +199,6 @@ When adding new instruction files:
 
 ---
 
-**Last Updated:** 2025-11-07  
-**Maintained by:** IT-Journey Team  
+**Last Updated:** 2025-11-07
+**Maintained by:** IT-Journey Team
 **Purpose:** Enable AI agents to assist contributors more effectively while maintaining project quality and standards

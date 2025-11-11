@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: frozen-after-alias.expect.md
 ---
+# Frozen After Alias.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function useFreeze() {}
 function foo(x) {}
 
 ```
-      

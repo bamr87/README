@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: CHANGELOG.md
 ---
+# Changelog
+
 ## 19.1.0-rc.2 (May 14, 2025)
 
 ## babel-plugin-react-compiler

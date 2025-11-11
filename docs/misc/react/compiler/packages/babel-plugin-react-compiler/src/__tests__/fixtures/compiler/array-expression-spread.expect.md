@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-expression-spread.expect.md
 ---
+# Array Expression Spread.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,1,2,3,null,4,5,6,"z"]

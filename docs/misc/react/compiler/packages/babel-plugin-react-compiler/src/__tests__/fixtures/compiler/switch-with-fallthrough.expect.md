@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: switch-with-fallthrough.expect.md
 ---
+# Switch With Fallthrough.Expect
+
 ## Input
 
 ```javascript
@@ -71,4 +73,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

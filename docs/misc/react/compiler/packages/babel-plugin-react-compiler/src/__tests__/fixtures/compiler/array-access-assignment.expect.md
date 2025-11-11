@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-access-assignment.expect.md
 ---
+# Array Access Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -78,7 +80,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[20],[[20],[],[300]]]
 [[20],[[20],[],[300]]]

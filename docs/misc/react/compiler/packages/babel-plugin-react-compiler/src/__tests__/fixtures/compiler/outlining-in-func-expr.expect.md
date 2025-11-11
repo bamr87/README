@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: outlining-in-func-expr.expect.md
 ---
+# Outlining In Func Expr.Expect
+
 ## Input
 
 ```javascript
@@ -74,6 +76,6 @@ function _temp(item) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: ok) <ul><li>foo</li><li>bar</li></ul>

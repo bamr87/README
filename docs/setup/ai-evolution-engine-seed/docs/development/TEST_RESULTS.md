@@ -21,7 +21,7 @@ The ai_evolver.yml workflow has been successfully tested and is working correctl
 
 #### ✅ Workflow Components Tested:
 - ✅ Workflow triggers and inputs work correctly
-- ✅ Environment setup and dependencies install properly  
+- ✅ Environment setup and dependencies install properly
 - ✅ GitHub CLI authentication configured
 - ✅ Git configuration works in CI environment
 - ✅ Docker container execution works
@@ -33,7 +33,7 @@ The ai_evolver.yml workflow has been successfully tested and is working correctl
 # Initial setup
 ./tests/workflows/test-workflow.sh setup
 
-# Workflow validation  
+# Workflow validation
 ./tests/workflows/test-workflow.sh validate
 
 # Local testing with act

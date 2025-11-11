@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: primitive-as-dep.expect.md
 ---
+# Primitive As Dep.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ function PrimitiveAsDep(props) {
 }
 
 ```
-      

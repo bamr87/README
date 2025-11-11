@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: non-null-assertion.expect.md
 ---
+# Non Null Assertion.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ALICE"

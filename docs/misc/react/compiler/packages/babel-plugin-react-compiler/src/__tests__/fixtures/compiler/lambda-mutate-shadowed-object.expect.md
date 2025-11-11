@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-mutate-shadowed-object.expect.md
 ---
+# Lambda Mutate Shadowed Object.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ function Component() {
 }
 
 ```
-      

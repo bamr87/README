@@ -10,10 +10,10 @@ source_file: feature-documentation-template.md
 ---
 # Feature Documentation Template
 
-**Feature Name**: [Feature Name]  
-**Version**: [Version when added]  
-**Date**: [Implementation Date]  
-**Status**: [Development/Testing/Released]  
+**Feature Name**: [Feature Name]
+**Version**: [Version when added]
+**Date**: [Implementation Date]
+**Status**: [Development/Testing/Released]
 
 ## 🎯 Overview
 
@@ -114,10 +114,10 @@ feature_options:
    - **Related**: Links to related documentation
 
 ### FAQ
-**Q**: Common question about the feature?  
+**Q**: Common question about the feature?
 **A**: Answer with clear explanation.
 
-**Q**: Another frequent question?  
+**Q**: Another frequent question?
 **A**: Detailed response with examples.
 
 ## 🔄 Migration
@@ -156,6 +156,6 @@ If migrating from older implementations:
 
 ---
 
-**Maintained By**: [Developer Name/Team]  
-**Last Updated**: [Date]  
+**Maintained By**: [Developer Name/Team]
+**Last Updated**: [Date]
 **Next Review**: [Date]

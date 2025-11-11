@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: const-propagation-into-function-expression-global.expect.md
 ---
+# Const Propagation Into Function Expression Global.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function _temp() {
 }
 
 ```
-      

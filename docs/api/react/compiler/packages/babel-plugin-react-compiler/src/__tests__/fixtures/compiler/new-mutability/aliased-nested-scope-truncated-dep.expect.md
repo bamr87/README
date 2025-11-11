@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: aliased-nested-scope-truncated-dep.expect.md
 ---
+# Aliased Nested Scope Truncated Dep.Expect
+
 ## Input
 
 ```javascript
@@ -216,7 +218,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"id":[1]}</div>
 <div>{"id":[1]}</div>

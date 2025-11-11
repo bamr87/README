@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ts-instantiation-default-param.expect.md
 ---
+# Ts Instantiation Default Param.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hi</div>

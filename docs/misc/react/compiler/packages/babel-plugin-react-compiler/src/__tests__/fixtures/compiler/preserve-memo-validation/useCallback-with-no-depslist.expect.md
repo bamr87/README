@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-with-no-depslist.expect.md
 ---
+# Usecallback With No Depslist.Expect
+
 ## Input
 
 ```javascript
@@ -56,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

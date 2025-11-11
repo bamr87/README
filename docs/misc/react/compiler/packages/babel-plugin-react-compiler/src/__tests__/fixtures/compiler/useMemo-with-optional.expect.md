@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-with-optional.expect.md
 ---
+# Usememo With Optional.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]

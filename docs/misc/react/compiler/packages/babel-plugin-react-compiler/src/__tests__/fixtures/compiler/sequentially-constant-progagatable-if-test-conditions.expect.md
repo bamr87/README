@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: sequentially-constant-progagatable-if-test-conditions.expect.md
 ---
+# Sequentially Constant Progagatable If Test Conditions.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "ok"

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.false-positive-useMemo-dropped-infer-always-invalidating.expect.md
 ---
+# Error.False Positive Usememo Dropped Infer Always Invalidating.Expect
+
 ## Input
 
 ```javascript
@@ -52,5 +54,4 @@ error.false-positive-useMemo-dropped-infer-always-invalidating.ts:15:9
   17 |
   18 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

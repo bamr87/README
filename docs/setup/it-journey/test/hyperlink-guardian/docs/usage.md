@@ -216,7 +216,7 @@ testing:
   retry_count: 3                # Number of retries
   retry_delay: 5                # Delay between retries
   internal_only: false          # Test internal links only
-  
+
   # Performance thresholds
   slow_response_threshold: 5.0  # Mark as slow (seconds)
   critical_response_threshold: 10.0  # Mark as critical
@@ -231,7 +231,7 @@ exclusions:
     - "127\\.0\\.0\\.1"
     - "example\\.com"
     - "\\{\\{.*\\}\\}"  # Jekyll variables
-  
+
   url_patterns:
     - "^#.*"            # Anchor links
     - "^mailto:"        # Email links
@@ -245,7 +245,7 @@ ai_analysis:
   model: "gpt-4"
   max_tokens: 3000
   temperature: 0.3
-  
+
   # Fallback settings
   enable_fallback: true
   fallback_model: "gpt-3.5-turbo"
@@ -573,4 +573,4 @@ chmod +x .git/hooks/pre-push
 
 ---
 
-*Guardian 2.0 empowers educational platforms with comprehensive link health monitoring, intelligent analysis, and proactive maintenance - ensuring learners always have reliable access to educational resources.* 
+*Guardian 2.0 empowers educational platforms with comprehensive link health monitoring, intelligent analysis, and proactive maintenance - ensuring learners always have reliable access to educational resources.*

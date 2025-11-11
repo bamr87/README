@@ -4,7 +4,6 @@ title: 'Consulting in the AI Era: Why Full-Stack Developers Armed with AI Are Re
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: millennials-ai-takeover.md
 ---

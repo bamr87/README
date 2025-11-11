@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-object-pattern.expect.md
 ---
+# Repro Object Pattern.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":42}

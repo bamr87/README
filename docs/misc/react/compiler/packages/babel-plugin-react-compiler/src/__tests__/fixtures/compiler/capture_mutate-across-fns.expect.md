@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture_mutate-across-fns.expect.md
 ---
+# Capture Mutate Across Fns.Expect
+
 ## Input
 
 ```javascript
@@ -62,4 +64,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

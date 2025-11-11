@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-in-statement-empty-body.expect.md
 ---
+# For In Statement Empty Body.Expect
+
 ## Input
 
 ```javascript
@@ -39,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

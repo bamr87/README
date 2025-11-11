@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: context-variable-reassigned-objectmethod.expect.md
 ---
+# Context Variable Reassigned Objectmethod.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 4

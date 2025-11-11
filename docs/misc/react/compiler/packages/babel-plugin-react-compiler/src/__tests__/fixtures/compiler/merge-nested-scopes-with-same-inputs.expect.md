@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: merge-nested-scopes-with-same-inputs.expect.md
 ---
+# Merge Nested Scopes With Same Inputs.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":42,"x":{"wat0":42}}

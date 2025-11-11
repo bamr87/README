@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: chained-assignment-expressions.expect.md
 ---
+# Chained Assignment Expressions.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"z":null}

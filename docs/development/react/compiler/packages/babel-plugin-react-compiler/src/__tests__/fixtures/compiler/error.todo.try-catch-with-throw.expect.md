@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo.try-catch-with-throw.expect.md
 ---
+# Error.Todo.Try Catch With Throw.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ error.todo.try-catch-with-throw.ts:4:4
   6 |     x.push(e);
   7 |   }
 ```
-          
-      
+

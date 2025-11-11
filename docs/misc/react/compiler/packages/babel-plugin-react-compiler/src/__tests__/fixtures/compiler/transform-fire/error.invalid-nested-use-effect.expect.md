@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-nested-use-effect.expect.md
 ---
+# Error.Invalid Nested Use Effect.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.invalid-nested-use-effect.ts:9:4
   11 |         fire(foo(props));
   12 |       }
 ```
-          
-      
+

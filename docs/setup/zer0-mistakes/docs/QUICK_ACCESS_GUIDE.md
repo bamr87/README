@@ -102,11 +102,11 @@ When you click either button, a modal opens showing:
 
 ## Benefits
 
-✅ **Always Available**: Accessible from every page  
-✅ **No Navigation**: Direct access from header/footer  
-✅ **Comprehensive**: All system info in one place  
-✅ **Helpful Links**: Quick access to docs and support  
-✅ **Up-to-Date**: Shows actual installed version  
+✅ **Always Available**: Accessible from every page
+✅ **No Navigation**: Direct access from header/footer
+✅ **Comprehensive**: All system info in one place
+✅ **Helpful Links**: Quick access to docs and support
+✅ **Up-to-Date**: Shows actual installed version
 
 ## Keyboard Shortcuts
 

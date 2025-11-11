@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: about.md
 ---
+# About
+
 {{ site.description }}
 
 ## Quick Facts

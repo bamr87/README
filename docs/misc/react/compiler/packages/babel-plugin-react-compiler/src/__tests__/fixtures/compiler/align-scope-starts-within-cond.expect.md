@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: align-scope-starts-within-cond.expect.md
 ---
+# Align Scope Starts Within Cond.Expect
+
 ## Input
 
 ```javascript
@@ -78,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"wat0":"joe"}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: outlining-in-react-memo.expect.md
 ---
+# Outlining In React Memo.Expect
+
 ## Input
 
 ```javascript
@@ -92,6 +94,6 @@ function _temp(item) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: ok) <ul><li>foo</li><li>bar</li></ul>

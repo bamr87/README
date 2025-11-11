@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo-granular-iterator-semantics.expect.md
 ---
+# Todo Granular Iterator Semantics.Expect
+
 ## Input
 
 ```javascript
@@ -112,6 +114,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[],"output":{}}</div><div>{"inputs":[1],"output":[1]}</div>

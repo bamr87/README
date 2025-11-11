@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: deep-scope.expect.md
 ---
+# Deep Scope.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

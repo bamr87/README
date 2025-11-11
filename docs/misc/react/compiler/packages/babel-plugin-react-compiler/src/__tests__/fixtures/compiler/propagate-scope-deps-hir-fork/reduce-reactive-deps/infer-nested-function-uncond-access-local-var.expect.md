@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-nested-function-uncond-access-local-var.expect.md
 ---
+# Infer Nested Function Uncond Access Local Var.Expect
+
 ## Input
 
 ```javascript
@@ -66,7 +68,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'c') ]]
 <div>{"fn":{"kind":"Function","result":[{"kind":"Function","result":4}]},"shouldInvokeFns":true}</div>

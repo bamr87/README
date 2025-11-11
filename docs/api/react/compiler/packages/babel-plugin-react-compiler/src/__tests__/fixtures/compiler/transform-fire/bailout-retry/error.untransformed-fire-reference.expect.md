@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.untransformed-fire-reference.expect.md
 ---
+# Error.Untransformed Fire Reference.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.untransformed-fire-reference.ts:4:12
     |             ^^^^ Untransformed `fire` call
   5 |
 ```
-          
-      
+

@@ -15,7 +15,7 @@ source_file: 2025-03-13-excel-to-programming.md
 
 ## Introduction
 
-Imagine a world where your trusty Excel workbook comes alive, communicating intelligently, interacting seamlessly with databases, and making automatic adjustments to reflect the most current data inputs. This dream scenario is a reality for many finance and accounting professionals who have leveraged their deep understanding of Excel's intricate functionalities to transition into programming and IT roles. Advanced users of Microsoft Excel, particularly in financial analysis and accounting, develop skills remarkably akin to those of programmers. Understanding formulas, manipulating data, and using logical problem-solving serve as the backbone of both these fields. From crunching numbers to coding scripts, the journey from Excel expert to programmer is more accessible than you might think. 
+Imagine a world where your trusty Excel workbook comes alive, communicating intelligently, interacting seamlessly with databases, and making automatic adjustments to reflect the most current data inputs. This dream scenario is a reality for many finance and accounting professionals who have leveraged their deep understanding of Excel's intricate functionalities to transition into programming and IT roles. Advanced users of Microsoft Excel, particularly in financial analysis and accounting, develop skills remarkably akin to those of programmers. Understanding formulas, manipulating data, and using logical problem-solving serve as the backbone of both these fields. From crunching numbers to coding scripts, the journey from Excel expert to programmer is more accessible than you might think.
 
 This article unravels the parallels between sophisticated Excel usage and programming, offering a roadmap for transitioning into IT careers. With the rapidly evolving technological landscape, embracing programming skills alongside Excel expertise not only enhances your professional toolkit but also unlocks vast opportunities in the data-centric future.
 
@@ -29,7 +29,7 @@ Consider the use of the VLOOKUP or XLOOKUP functions in Excel. These functions r
 
 ### Data Management and Manipulation
 
-The ability to manage and manipulate vast datasets using Excel's powerful features is akin to database management in programming. Advanced knowledge in Excel allows users to transform data, perform what-if analyses, and produce insightful visual representations. Similarly, SQL is used by programmers to insert, update, and query data, demonstrating a similar skillset. 
+The ability to manage and manipulate vast datasets using Excel's powerful features is akin to database management in programming. Advanced knowledge in Excel allows users to transform data, perform what-if analyses, and produce insightful visual representations. Similarly, SQL is used by programmers to insert, update, and query data, demonstrating a similar skillset.
 
 For instance, pivot tables provide a robust way to summarize and analyze datasets, much like creating and running queries in SQL. These capabilities transcend basic data handling and venture into the realm of data structuring and manipulation, essential skills for any aspiring programmer.
 

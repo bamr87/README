@@ -3,10 +3,11 @@ title: 2025 02 21 Bob Dole Presidential Defeats
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: 2025-02-21-bob-dole-presidential-defeats.md
 ---
+# 2025 02 21 Bob Dole Presidential Defeats
+
 ### Bob Dole: A Complex Figure in American Political History
 
 Bob Dole, a prominent political figure and veteran statesman, is perhaps best known for his long, varied career in American politics and, somewhat ironically, for his record of consecutive losses in presidential elections. Despite these setbacks, Dole's journey reflects the complexities of political ambition and public service in the United States.

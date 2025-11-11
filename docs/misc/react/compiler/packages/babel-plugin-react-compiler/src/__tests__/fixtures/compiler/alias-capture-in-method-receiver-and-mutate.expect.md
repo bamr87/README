@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-capture-in-method-receiver-and-mutate.expect.md
 ---
+# Alias Capture In Method Receiver And Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[{"a":0,"b":"value1","c":true},"joe"],"[[ cyclic ref *2 ]]"]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useEffect-arg-memoized.expect.md
 ---
+# Useeffect Arg Memoized.Expect
+
 ## Input
 
 ```javascript
@@ -73,4 +75,3 @@ function Component(props) {
 }
 
 ```
-      

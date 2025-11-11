@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hooks-freeze-possibly-mutable-arguments.expect.md
 ---
+# Hooks Freeze Possibly Mutable Arguments.Expect
+
 ## Input
 
 ```javascript
@@ -61,4 +63,3 @@ function useFreeze(x) {}
 function call(x) {}
 
 ```
-      

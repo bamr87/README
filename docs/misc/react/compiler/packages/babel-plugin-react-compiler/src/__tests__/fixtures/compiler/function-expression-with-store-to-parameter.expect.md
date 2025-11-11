@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-expression-with-store-to-parameter.expect.md
 ---
+# Function Expression With Store To Parameter.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ function _temp(object, key, value) {
 }
 
 ```
-      

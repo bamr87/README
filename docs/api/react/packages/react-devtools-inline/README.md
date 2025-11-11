@@ -6,7 +6,6 @@ tags:
 - docker
 - api
 - testing
-- api
 last_updated: null
 source_file: README.md
 ---

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: codegen-instrument-forget-test.expect.md
 ---
+# Codegen Instrument Forget Test.Expect
+
 ## Input
 
 ```javascript
@@ -71,4 +73,3 @@ function Foo(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-call-with-independently-memoizable-arg.expect.md
 ---
+# Optional Call With Independently Memoizable Arg.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

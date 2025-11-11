@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-delete-computed-property-of-frozen-value.expect.md
 ---
+# Error.Invalid Delete Computed Property Of Frozen Value.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-delete-computed-property-of-frozen-value.ts:5:9
   7 | }
   8 |
 ```
-          
-      
+

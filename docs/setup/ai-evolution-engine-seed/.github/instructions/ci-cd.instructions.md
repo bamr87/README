@@ -230,7 +230,7 @@ jobs:
         run: |
           # Setup Node.js environment
           export PATH="./node_modules/.bin:$PATH"
-          
+
           # Setup Python environment
           if [ -d ".venv" ]; then
             source .venv/bin/activate
@@ -538,7 +538,7 @@ jobs:
       - name: Setup test environment
         run: |
           docker-compose -f docker-compose.test.yml up -d
-          
+
           # Wait for services to be ready
           timeout 300 bash -c 'until docker-compose -f docker-compose.test.yml exec -T app curl -f http://localhost:3000/health; do sleep 10; done'
           echo "Test environment is ready"
@@ -581,7 +581,7 @@ jobs:
           echo "**Commit:** ${{ github.sha }}" >> pipeline-report.md
           echo "**Branch:** ${{ github.ref_name }}" >> pipeline-report.md
           echo "" >> pipeline-report.md
-          
+
           echo "## Job Results" >> pipeline-report.md
           echo "- Code Quality: ${{ needs.code-quality.result }}" >> pipeline-report.md
           echo "- Security: ${{ needs.security.result }}" >> pipeline-report.md
@@ -603,7 +603,7 @@ jobs:
           script: |
             const fs = require('fs');
             const report = fs.readFileSync('pipeline-report.md', 'utf8');
-            
+
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -708,7 +708,7 @@ jobs:
         run: |
           # Check infrastructure readiness
           curl -f https://${{ needs.prepare.outputs.environment }}.example.com/health
-          
+
           # Check database connectivity
           # Check external service dependencies
           # Verify configuration
@@ -757,15 +757,15 @@ jobs:
           sed -i "s|image: .*api:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/api:${{ needs.prepare.outputs.version }}|g" k8s/staging/api-deployment.yml
           sed -i "s|image: .*worker:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/worker:${{ needs.prepare.outputs.version }}|g" k8s/staging/worker-deployment.yml
           sed -i "s|image: .*frontend:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/frontend:${{ needs.prepare.outputs.version }}|g" k8s/staging/frontend-deployment.yml
-          
+
           # Apply Kubernetes manifests
           kubectl apply -f k8s/staging/
-          
+
           # Wait for rollout to complete
           kubectl rollout status deployment/api -n staging
           kubectl rollout status deployment/worker -n staging
           kubectl rollout status deployment/frontend -n staging
-          
+
           echo "Staging deployment completed"
 
       - name: Run staging tests
@@ -813,20 +813,20 @@ jobs:
       - name: Deploy to production
         run: |
           # Blue-green deployment strategy
-          
+
           # Update deployment manifests
           sed -i "s|image: .*api:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/api:${{ needs.prepare.outputs.version }}|g" k8s/production/api-deployment.yml
           sed -i "s|image: .*worker:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/worker:${{ needs.prepare.outputs.version }}|g" k8s/production/worker-deployment.yml
           sed -i "s|image: .*frontend:.*|image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/frontend:${{ needs.prepare.outputs.version }}|g" k8s/production/frontend-deployment.yml
-          
+
           # Apply manifests with rolling update
           kubectl apply -f k8s/production/
-          
+
           # Wait for rollout to complete
           kubectl rollout status deployment/api -n production --timeout=600s
           kubectl rollout status deployment/worker -n production --timeout=600s
           kubectl rollout status deployment/frontend -n production --timeout=600s
-          
+
           echo "Production deployment completed"
 
       - name: Run production health checks
@@ -834,10 +834,10 @@ jobs:
           # Comprehensive health checks
           curl -f https://production.example.com/health
           curl -f https://production.example.com/api/health
-          
+
           # Run production smoke tests
           npm run test:production:smoke
-          
+
           echo "Production health checks passed"
 
       - name: Update monitoring and alerting
@@ -881,7 +881,7 @@ jobs:
           echo "**Date:** $(date)" >> deployment-report.md
           echo "**Environment:** ${{ needs.prepare.outputs.environment }}" >> deployment-report.md
           echo "" >> deployment-report.md
-          
+
           # Add metrics and status information
           echo "## Deployment Metrics" >> deployment-report.md
           echo "- Deployment Duration: $(($(date +%s) - ${{ github.event.created_at }})) seconds" >> deployment-report.md
@@ -955,15 +955,15 @@ module "vpc" {
 
   name_prefix = local.name_prefix
   environment = var.environment
-  
+
   vpc_cidr             = var.vpc_cidr
   availability_zones   = var.availability_zones
   private_subnet_cidrs = var.private_subnet_cidrs
   public_subnet_cidrs  = var.public_subnet_cidrs
-  
+
   enable_nat_gateway = true
   enable_vpn_gateway = false
-  
+
   tags = local.common_tags
 }
 
@@ -973,38 +973,38 @@ module "eks" {
 
   cluster_name    = "${local.name_prefix}-cluster"
   cluster_version = var.kubernetes_version
-  
+
   vpc_id              = module.vpc.vpc_id
   subnet_ids          = module.vpc.private_subnet_ids
   control_plane_subnet_ids = module.vpc.public_subnet_ids
-  
+
   node_groups = {
     main = {
       instance_types = ["t3.medium", "t3.large"]
       min_size       = 2
       max_size       = 10
       desired_size   = 3
-      
+
       labels = {
         Environment = var.environment
         NodeGroup   = "main"
       }
-      
+
       taints = []
     }
-    
+
     compute = {
       instance_types = ["c5.large", "c5.xlarge"]
       min_size       = 0
       max_size       = 20
       desired_size   = 0
-      
+
       labels = {
         Environment = var.environment
         NodeGroup   = "compute"
         Workload    = "compute-intensive"
       }
-      
+
       taints = [
         {
           key    = "workload"
@@ -1014,7 +1014,7 @@ module "eks" {
       ]
     }
   }
-  
+
   tags = local.common_tags
 }
 
@@ -1023,31 +1023,31 @@ module "rds" {
   source = "./modules/rds"
 
   identifier = "${local.name_prefix}-database"
-  
+
   engine               = "postgres"
   engine_version       = "15.4"
   instance_class       = var.db_instance_class
   allocated_storage    = var.db_allocated_storage
   max_allocated_storage = var.db_max_allocated_storage
-  
+
   database_name = var.database_name
   username      = var.database_username
   password      = random_password.database_password.result
-  
+
   vpc_security_group_ids = [module.security_groups.database_sg_id]
   db_subnet_group_name   = module.vpc.database_subnet_group_name
-  
+
   backup_retention_period = var.environment == "production" ? 30 : 7
   backup_window          = "03:00-04:00"
   maintenance_window     = "sun:04:00-sun:05:00"
-  
+
   enabled_cloudwatch_logs_exports = ["postgresql"]
   monitoring_interval            = 60
   performance_insights_enabled   = true
-  
+
   deletion_protection = var.environment == "production"
   skip_final_snapshot = var.environment != "production"
-  
+
   tags = local.common_tags
 }
 
@@ -1056,22 +1056,22 @@ module "redis" {
   source = "./modules/redis"
 
   cluster_id = "${local.name_prefix}-cache"
-  
+
   node_type               = var.redis_node_type
   num_cache_nodes         = var.redis_num_nodes
   parameter_group_name    = "default.redis7"
   port                    = 6379
-  
+
   subnet_group_name       = module.vpc.cache_subnet_group_name
   security_group_ids      = [module.security_groups.cache_sg_id]
-  
+
   maintenance_window      = "sun:05:00-sun:06:00"
   snapshot_retention_limit = var.environment == "production" ? 7 : 1
   snapshot_window         = "06:00-07:00"
-  
+
   at_rest_encryption_enabled = true
   transit_encryption_enabled = true
-  
+
   tags = local.common_tags
 }
 
@@ -1081,36 +1081,36 @@ module "monitoring" {
 
   cluster_name = module.eks.cluster_name
   environment  = var.environment
-  
+
   # CloudWatch Log Groups
   log_groups = {
     application = {
       name              = "/aws/eks/${module.eks.cluster_name}/application"
       retention_in_days = var.environment == "production" ? 90 : 30
     }
-    
+
     performance = {
       name              = "/aws/eks/${module.eks.cluster_name}/performance"
       retention_in_days = var.environment == "production" ? 30 : 7
     }
-    
+
     security = {
       name              = "/aws/eks/${module.eks.cluster_name}/security"
       retention_in_days = var.environment == "production" ? 365 : 90
     }
   }
-  
+
   # Prometheus and Grafana
   enable_prometheus = true
   enable_grafana    = true
-  
+
   # Alertmanager configuration
   alertmanager_config = {
     global = {
       smtp_smarthost = var.smtp_server
       smtp_from      = var.alert_email_from
     }
-    
+
     route = {
       group_by        = ["alertname", "cluster", "service"]
       group_wait      = "10s"
@@ -1118,7 +1118,7 @@ module "monitoring" {
       repeat_interval = "1h"
       receiver        = "default"
     }
-    
+
     receivers = [
       {
         name = "default"
@@ -1131,7 +1131,7 @@ module "monitoring" {
       }
     ]
   }
-  
+
   tags = local.common_tags
 }
 
@@ -1141,7 +1141,7 @@ module "security_groups" {
 
   vpc_id      = module.vpc.vpc_id
   name_prefix = local.name_prefix
-  
+
   tags = local.common_tags
 }
 
@@ -1156,7 +1156,7 @@ resource "aws_secretsmanager_secret" "database_password" {
   name                    = "${local.name_prefix}-database-password"
   description             = "Database password for ${var.environment} environment"
   recovery_window_in_days = var.environment == "production" ? 30 : 0
-  
+
   tags = local.common_tags
 }
 
@@ -1339,21 +1339,21 @@ class DeploymentAction {
         try {
             await this.pathTracker.executeInPath('github_action_deployment', async () => {
                 core.info(`Starting deployment to ${this.environment}`);
-                
+
                 // Path: pre-deployment-validation
-                await this.pathTracker.executeInPath('pre_deployment_validation', 
+                await this.pathTracker.executeInPath('pre_deployment_validation',
                     () => this.validatePreDeployment());
 
                 // Path: deployment-execution
-                await this.pathTracker.executeInPath('deployment_execution', 
+                await this.pathTracker.executeInPath('deployment_execution',
                     () => this.executeDeployment());
 
                 // Path: post-deployment-validation
-                await this.pathTracker.executeInPath('post_deployment_validation', 
+                await this.pathTracker.executeInPath('post_deployment_validation',
                     () => this.validatePostDeployment());
 
                 // Path: deployment-reporting
-                await this.pathTracker.executeInPath('deployment_reporting', 
+                await this.pathTracker.executeInPath('deployment_reporting',
                     () => this.generateDeploymentReport());
 
                 core.info('Deployment completed successfully');
@@ -1412,8 +1412,8 @@ class DeploymentAction {
         for (const deployment of deployments) {
             core.info(`Waiting for rollout: ${deployment}`);
             await exec.exec('kubectl', [
-                'rollout', 'status', 
-                `deployment/${deployment}`, 
+                'rollout', 'status',
+                `deployment/${deployment}`,
                 '-n', this.namespace,
                 '--timeout=600s'
             ]);
@@ -1430,7 +1430,7 @@ class DeploymentAction {
 
         // Check pod health
         await exec.exec('kubectl', [
-            'get', 'pods', 
+            'get', 'pods',
             '-n', this.namespace,
             '-l', `version=${this.version}`
         ]);
@@ -1438,7 +1438,7 @@ class DeploymentAction {
         // Run health checks
         const healthEndpoint = core.getInput('health-endpoint') || '/health';
         const serviceUrl = await this.getServiceUrl();
-        
+
         if (serviceUrl) {
             await exec.exec('curl', [
                 '-f',
@@ -1495,9 +1495,9 @@ class DeploymentAction {
     private async getContainerImages(): Promise<string[]> {
         const registry = core.getInput('registry') || 'ghcr.io';
         const repository = core.getInput('repository', { required: true });
-        
+
         const components = ['api', 'worker', 'frontend'];
-        return components.map(component => 
+        return components.map(component =>
             `${registry}/${repository}/${component}:${this.version}`
         );
     }
@@ -1507,11 +1507,11 @@ class DeploymentAction {
      */
     private async updateDeploymentManifests(): Promise<void> {
         const images = await this.getContainerImages();
-        
+
         for (let i = 0; i < images.length; i++) {
             const component = ['api', 'worker', 'frontend'][i];
             const image = images[i];
-            
+
             await exec.exec('sed', [
                 '-i',
                 `s|image: .*${component}:.*|image: ${image}|g`,
@@ -1546,7 +1546,7 @@ class DeploymentAction {
                     }
                 }
             });
-            
+
             return output.trim() ? `http://${output.trim()}` : null;
         } catch (error) {
             core.warning('Could not get service URL for health checks');

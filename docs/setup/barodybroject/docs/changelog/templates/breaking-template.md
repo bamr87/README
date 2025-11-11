@@ -153,7 +153,7 @@ def process_data(data, format='json'):
     return parse_data(data, format)
 
 # AFTER
-def process_data(data: Dict[str, Any], 
+def process_data(data: Dict[str, Any],
                 output_format: Literal['json', 'xml'] = 'json',
                 validate: bool = True) -> ProcessedData:
     if validate:
@@ -167,7 +167,7 @@ def process_data(data: Dict[str, Any],
 class DataProcessor:
     def __init__(self, config_file):
         self.config = load_config(config_file)
-    
+
     def process(self, data):
         return self._internal_process(data)
 
@@ -175,10 +175,10 @@ class DataProcessor:
 class DataProcessor:
     def __init__(self, config: ProcessorConfig):
         self.config = config
-    
+
     def process(self, data: InputData) -> ProcessedData:
         return self._internal_process(data)
-    
+
     # Removed: _internal_process is now private implementation
 ```
 
@@ -481,8 +481,8 @@ ALTER TABLE users DROP COLUMN email;
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Team
 
 > **CRITICAL NOTE**: Breaking changes require extensive planning, communication, and support. Use this template to ensure all stakeholders are properly informed and supported through the migration process.

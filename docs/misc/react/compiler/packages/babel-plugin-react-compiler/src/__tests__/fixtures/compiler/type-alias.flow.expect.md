@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-alias.flow.expect.md
 ---
+# Type Alias.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"name":"Mofei"}

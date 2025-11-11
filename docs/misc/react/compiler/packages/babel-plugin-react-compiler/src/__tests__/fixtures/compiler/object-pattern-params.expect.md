@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-pattern-params.expect.md
 ---
+# Object Pattern Params.Expect
+
 ## Input
 
 ```javascript
@@ -67,4 +69,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

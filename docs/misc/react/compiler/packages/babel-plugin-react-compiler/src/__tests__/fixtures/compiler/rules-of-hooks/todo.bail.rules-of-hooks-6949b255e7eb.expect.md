@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.bail.rules-of-hooks-6949b255e7eb.expect.md
 ---
+# Todo.Bail.Rules Of Hooks 6949B255E7Eb.Expect
+
 ## Input
 
 ```javascript
@@ -164,4 +166,3 @@ const SomeName = () => {
 };
 
 ```
-      

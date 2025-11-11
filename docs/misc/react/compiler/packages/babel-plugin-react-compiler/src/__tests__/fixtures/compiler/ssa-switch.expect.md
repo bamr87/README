@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-switch.expect.md
 ---
+# Ssa Switch.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

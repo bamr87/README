@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-method.expect.md
 ---
+# Error.Todo Method.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.todo-method.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

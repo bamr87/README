@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-for-of-loop-with-context-variable-iterator.expect.md
 ---
+# Error.Todo For Of Loop With Context Variable Iterator.Expect
+
 ## Input
 
 ```javascript
@@ -66,5 +68,4 @@ error.todo-for-of-loop-with-context-variable-iterator.ts:8:2
   17 | }
   18 |
 ```
-          
-      
+

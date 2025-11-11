@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-computed-member-expression.expect.md
 ---
+# Hoisting Computed Member Expression.Expect
+
 ## Input
 
 ```javascript
@@ -70,6 +72,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"onClick":{"kind":"Function","result":1},"onClick2":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>

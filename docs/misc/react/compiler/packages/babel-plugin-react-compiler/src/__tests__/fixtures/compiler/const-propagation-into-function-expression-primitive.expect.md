@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: const-propagation-into-function-expression-primitive.expect.md
 ---
+# Const Propagation Into Function Expression Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -46,7 +48,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42
 logs: [42]

@@ -56,7 +56,7 @@ To ensure proper automatic version bumping, use conventional commit messages:
 git commit -m "feat: add responsive navigation menu"
 git commit -m "feature: implement user authentication"
 
-# Bug fixes (PATCH bump)  
+# Bug fixes (PATCH bump)
 git commit -m "fix: resolve mobile layout issue"
 git commit -m "bug: correct typo in footer"
 

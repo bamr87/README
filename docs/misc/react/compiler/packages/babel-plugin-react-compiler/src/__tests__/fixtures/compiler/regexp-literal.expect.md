@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: regexp-literal.expect.md
 ---
+# Regexp Literal.Expect
+
 ## Input
 
 ```javascript
@@ -63,4 +65,3 @@ function Component(props) {
 }
 
 ```
-      

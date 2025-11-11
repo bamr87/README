@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: furry-monarchs-rule-night.md
 ---
+# Furry Monarchs Rule Night
+
 I am a creature beloved by many,
 Some say I'm cute, some say I'm smelly.
 With a wag of my tail and a purr of delight,

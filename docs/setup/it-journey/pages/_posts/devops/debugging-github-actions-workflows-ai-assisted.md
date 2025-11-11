@@ -102,13 +102,13 @@ Created an all-encompassing test suite that validates:
 # scripts/test-all-workflows-local.sh
 test_workflow() {
     local workflow_file="$1"
-    
+
     # Test YAML syntax
     python3 -c "import yaml; yaml.safe_load(open('$workflow_file'))"
-    
+
     # Check script dependencies
     check_required_scripts "$workflow_file"
-    
+
     # Run workflow-specific tests
     case "$workflow_name" in
         "daily_evolution")
@@ -177,14 +177,14 @@ jobs:
   daily_evolution:
     name: 🌿 Daily Growth & Maintenance
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 🌱 Prepare Evolution Environment
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT_TOKEN }}
-          
+
       - name: 🛠️ Setup Environment
         run: |
           chmod +x ./scripts/setup-environment.sh
@@ -205,7 +205,7 @@ check_command() {
     local friendly_name=$2
     local required=$3
     local install_hint=$4
-    
+
     if command -v "$cmd" >/dev/null 2>&1; then
         # Use timeout to prevent hanging on version commands
         local version=$(timeout 3 "$cmd" --version 2>/dev/null | head -n1 || echo "Version unknown")

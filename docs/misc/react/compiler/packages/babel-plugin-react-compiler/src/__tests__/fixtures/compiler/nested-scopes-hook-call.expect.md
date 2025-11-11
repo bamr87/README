@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-scopes-hook-call.expect.md
 ---
+# Nested Scopes Hook Call.Expect
+
 ## Input
 
 ```javascript
@@ -31,4 +33,3 @@ function component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: uncond-access-in-mutable-range.expect.md
 ---
+# Uncond Access In Mutable Range.Expect
+
 ## Input
 
 ```javascript
@@ -103,7 +105,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [false]
 [false]

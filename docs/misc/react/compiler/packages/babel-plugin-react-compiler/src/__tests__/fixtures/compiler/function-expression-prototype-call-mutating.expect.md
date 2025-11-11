@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-expression-prototype-call-mutating.expect.md
 ---
+# Function Expression Prototype Call Mutating.Expect
+
 ## Input
 
 ```javascript
@@ -86,7 +88,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":["Lauren"],"output":["Lauren"]}</div>
 <div>{"inputs":["Lauren"],"output":["Lauren"]}</div>

@@ -5,10 +5,11 @@ tags:
 - kubernetes
 - api
 - testing
-- api
 last_updated: null
 source_file: 2025-03-14-balancing-the-books-it-glitch.md
 ---
+# 2025 03 14 Balancing The Books It Glitch
+
 **Balancing the Books: How an Overlooked IT Glitch Cost a Company $10 Million in Working Capital**
 
 In the cutthroat world of manufacturing, fiscal stability isn't just a matter of numbers on a page; it's about making strategic decisions that ripple through every department. Enter the company’s new CFO, fresh from the polished world of private equity, armed with a mission to redefine efficiency through textbook financial metrics. But even the most seasoned professionals find that when they stand upon the dais of decision-making, numbers can lead even the most diligent astray.

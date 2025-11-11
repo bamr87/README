@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-props-via-for-of-iterator.expect.md
 ---
+# Error.Invalid Mutate Props Via For Of Iterator.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ error.invalid-mutate-props-via-for-of-iterator.ts:4:4
   6 |   }
   7 |   return items;
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-alias-try-values.expect.md
 ---
+# Try Catch Alias Try Values.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: same-variable-as-dep-and-redeclare.expect.md
 ---
+# Same Variable As Dep And Redeclare.Expect
+
 ## Input
 
 ```javascript
@@ -129,4 +131,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

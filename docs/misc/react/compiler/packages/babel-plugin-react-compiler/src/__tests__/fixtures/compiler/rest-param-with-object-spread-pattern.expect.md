@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rest-param-with-object-spread-pattern.expect.md
 ---
+# Rest Param With Object Spread Pattern.Expect
+
 ## Input
 
 ```javascript
@@ -45,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo",null]

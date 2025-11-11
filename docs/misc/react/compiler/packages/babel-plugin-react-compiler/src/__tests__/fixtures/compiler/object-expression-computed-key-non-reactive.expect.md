@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-computed-key-non-reactive.expect.md
 ---
+# Object Expression Computed Key Non Reactive.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"2":["Compiler"]}

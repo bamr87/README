@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.s
 ## 🎯 What You Get
 
 - **🤖 AI-Powered Setup** - Intelligent error detection and automatic fixes
-- **🐳 Docker Environment** - Consistent development across all platforms  
+- **🐳 Docker Environment** - Consistent development across all platforms
 - **🎨 Bootstrap 5.3** - Modern responsive design with dark mode
 - **📱 Mobile-First** - Optimized for all devices and screen sizes
 - **⚡ Live Reload** - Changes appear instantly during development

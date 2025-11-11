@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: inverted-if-else.expect.md
 ---
+# Inverted If Else.Expect
+
 ## Input
 
 ```javascript
@@ -52,4 +54,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

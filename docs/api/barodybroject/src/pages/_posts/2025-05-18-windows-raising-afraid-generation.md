@@ -6,11 +6,12 @@ tags:
 - azure
 - api
 - testing
-- api
 last_updated: null
 source_file: 2025-05-18-windows-raising-afraid-generation.md
 ---
-**Headline:**  
+# 2025 05 18 Windows Raising Afraid Generation
+
+**Headline:**
 *Windows: Making Clicking Cool While Accidentally Raising a Generation Afraid of the Command Line (But Now Hosts the Hackers’ Playground Anyway)*
 
 ---
@@ -76,7 +77,7 @@ Windows folks excel at “using” tech, but are rarely empowered to “make” 
 
 But wait! Before you throw your mouse out the window (or downvote this article out of existential dread), here’s the hopeful twist: Microsoft has started smudging the fortress walls.
 
-- **Windows Subsystem for Linux** now lets you run Bash on Windows, so the next Ada Lovelace might very well be born on a Dell Inspiron. 
+- **Windows Subsystem for Linux** now lets you run Bash on Windows, so the next Ada Lovelace might very well be born on a Dell Inspiron.
 - **Schools and learners everywhere** have more access than ever to open-source tools, supported by a new cultural vibe: “Hey, you can fix this! (And yes, you might break something first.)”
 
 This is our moment. The divide is real—but not immutable. Every time you open a shell, every time you Google “how to script this thing instead of clicking for an hour,” you close it a bit more.
@@ -95,14 +96,14 @@ Let’s face it: a world where everyone is doomed to repeat the ritual of “CTR
 
 Remember: Every technological revolution starts with one brave soul who double-clicked “run as administrator” and refused to stop there.
 
-**The future needs users. But it also desperately needs more creators.  
+**The future needs users. But it also desperately needs more creators.
 Why not be both?**
 
 ---
 
-*References:*  
-Linux Torvalds, “How I Accidentally Broke the Internet with One Patch.”  
-Clippy’s Post-Retirement Blog, “Tips for Surviving the Paperless Office.”  
+*References:*
+Linux Torvalds, “How I Accidentally Broke the Internet with One Patch.”
+Clippy’s Post-Retirement Blog, “Tips for Surviving the Paperless Office.”
 Stack Overflow Developer Survey, 2023.
 
 ---

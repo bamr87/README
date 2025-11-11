@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-referencing-frozen-hoisted-storecontext-const.expect.md
 ---
+# Error.Invalid Referencing Frozen Hoisted Storecontext Const.Expect
+
 ## Input
 
 ```javascript
@@ -61,5 +63,4 @@ Error: Cannot access variable before it is declared
   21 |   return <Foo data={data} onSubmit={onSubmit} />;
   22 | }
 ```
-          
-      
+

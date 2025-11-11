@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassignment-separate-scopes.expect.md
 ---
+# Reassignment Separate Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -113,4 +115,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-attribute-default-to-true.expect.md
 ---
+# Jsx Attribute Default To True.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"truthyAttribute":true}</div>

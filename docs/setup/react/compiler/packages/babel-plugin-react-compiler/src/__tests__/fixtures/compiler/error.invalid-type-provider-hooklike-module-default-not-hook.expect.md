@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-type-provider-hooklike-module-default-not-hook.expect.md
 ---
+# Error.Invalid Type Provider Hooklike Module Default Not Hook.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.invalid-type-provider-hooklike-module-default-not-hook.ts:4:15
   5 | }
   6 |
 ```
-          
-      
+

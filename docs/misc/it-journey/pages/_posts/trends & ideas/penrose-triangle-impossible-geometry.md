@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: penrose-triangle-impossible-geometry.md
 ---
+# Penrose Triangle Impossible Geometry
+
 Symbol of impossibility [Wiki](https://en.wikipedia.org/wiki/Penrose_triangle)
 
 Inkscape

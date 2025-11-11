@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-annotation-as-number.expect.md
 ---
+# Type Annotation As Number.Expect
+
 ## Input
 
 ```javascript
@@ -43,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

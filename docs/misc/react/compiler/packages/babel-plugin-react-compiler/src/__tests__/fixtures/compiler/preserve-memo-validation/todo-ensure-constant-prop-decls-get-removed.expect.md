@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo-ensure-constant-prop-decls-get-removed.expect.md
 ---
+# Todo Ensure Constant Prop Decls Get Removed.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0]

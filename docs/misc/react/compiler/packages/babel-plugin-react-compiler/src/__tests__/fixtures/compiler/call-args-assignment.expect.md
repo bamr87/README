@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: call-args-assignment.expect.md
 ---
+# Call Args Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -35,4 +37,3 @@ function Component(props) {
 }
 
 ```
-      

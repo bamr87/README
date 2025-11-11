@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: cms-app-python-javascript.md
 ---
+# Cms App Python Javascript
+
 1. **You**: I want to build a CMS application in Python as the backend and javascript to render the front end.
 2. **ChatGPT**: Building a CMS (Content Management System) application using Python as the backend and JavaScript for the frontend is a great choice. Here's a step-by-step guide to help you get started:
 

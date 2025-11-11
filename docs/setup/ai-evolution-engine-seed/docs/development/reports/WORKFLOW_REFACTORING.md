@@ -49,26 +49,26 @@ All scripts are located in the `scripts/` directory:
 
 #### 1. `ai_evolver.yml` - Main Evolution Workflow
 
-**Before**: ~296 lines with complex inline shell scripts  
+**Before**: ~296 lines with complex inline shell scripts
 **After**: Clean, focused workflow that calls specific scripts
 
 ```yaml
 steps:
   - name: 🛠️ Setup Environment
     run: ./scripts/setup-environment.sh
-    
+
   - name: 🧬 Collect Repository DNA & Metrics
     run: ./scripts/collect-context.sh "${{ inputs.prompt }}" "${{ inputs.growth_mode }}" "/tmp/repo_context.json"
-    
+
   - name: 🧠 Invoke Simulated AI Growth Engine
     run: ./scripts/simulate-ai-growth.sh "${{ inputs.prompt }}" "${{ inputs.growth_mode }}" "/tmp/repo_context.json" "/tmp/evolution_response.json"
-    
+
   - name: 🌾 Apply Growth Changes
     run: ./scripts/apply-growth-changes.sh "/tmp/evolution_response.json"
-    
+
   - name: 🌰 Plant New Seeds
     run: ./scripts/plant-new-seeds.sh "/tmp/evolution_response.json" "${{ inputs.auto_plant_seeds }}"
-    
+
   - name: 🌳 Create Growth Pull Request
     run: ./scripts/create_pr.sh "/tmp/evolution_response.json" "${{ inputs.prompt }}" "${{ inputs.growth_mode }}"
 ```
@@ -81,13 +81,13 @@ steps:
 steps:
   - name: 📊 Analyze Repository Health
     run: ./scripts/analyze-repository-health.sh "$EVOLUTION_TYPE" "$INTENSITY" "$FORCE_RUN"
-    
+
   - name: 🧬 Generate Evolution Prompt
     run: ./scripts/generate-evolution-prompt.sh "$EVOLUTION_TYPE" "$INTENSITY"
-    
+
   - name: 🚀 Trigger Evolution Workflow
     run: ./scripts/trigger-evolution-workflow.sh "$EVOLUTION_TYPE" "conservative"
-    
+
   - name: 📊 Update Daily Evolution Metrics
     run: ./scripts/update-evolution-metrics.sh
 ```
@@ -100,7 +100,7 @@ steps:
 steps:
   - name: Setup environment
     run: ./scripts/setup-environment.sh
-    
+
   - name: Test evolved seed
     run: ./tests/seed/test-evolved-seed.sh ${{ github.event.inputs.growth_mode }}
 ```

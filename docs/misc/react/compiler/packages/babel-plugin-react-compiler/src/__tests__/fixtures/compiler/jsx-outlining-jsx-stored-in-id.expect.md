@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-jsx-stored-in-id.expect.md
 ---
+# Jsx Outlining Jsx Stored In Id.Expect
+
 ## Input
 
 ```javascript
@@ -147,6 +149,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooxbar

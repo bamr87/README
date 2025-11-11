@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: context-var-granular-dep.expect.md
 ---
+# Context Var Granular Dep.Expect
+
 ## Input
 
 ```javascript
@@ -132,7 +134,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[2],"output":{"cb":"[[ function params=0 ]]"}}</div>
 <div>{"inputs":[2],"output":{"cb":"[[ function params=0 ]]"}}</div>

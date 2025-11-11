@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-in-effect.expect.md
 ---
+# Ref In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -62,4 +64,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: default-param-array-with-unary.expect.md
 ---
+# Default Param Array With Unary.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [-1,1]

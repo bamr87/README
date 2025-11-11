@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: switch-global-propertyload-case-test.expect.md
 ---
+# Switch Global Propertyload Case Test.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function Component(props) {
 }
 
 ```
-      

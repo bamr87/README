@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: globals-dont-resolve-local-useState.expect.md
 ---
+# Globals Dont Resolve Local Usestate.Expect
+
 ## Input
 
 ```javascript
@@ -80,6 +82,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello</div>

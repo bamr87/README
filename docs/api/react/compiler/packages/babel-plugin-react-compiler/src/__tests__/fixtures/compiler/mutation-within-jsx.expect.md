@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: mutation-within-jsx.expect.md
 ---
+# Mutation Within Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -133,7 +135,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>
 <div>{"value":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>

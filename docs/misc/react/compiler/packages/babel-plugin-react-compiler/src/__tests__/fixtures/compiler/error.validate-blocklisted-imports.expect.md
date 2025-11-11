@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.validate-blocklisted-imports.expect.md
 ---
+# Error.Validate Blocklisted Imports.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.validate-blocklisted-imports.ts:2:0
   4 |
   5 | function useHook() {
 ```
-          
-      
+

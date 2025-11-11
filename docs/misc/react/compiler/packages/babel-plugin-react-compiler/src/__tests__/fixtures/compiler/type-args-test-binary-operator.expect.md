@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-args-test-binary-operator.expect.md
 ---
+# Type Args Test Binary Operator.Expect
+
 ## Input
 
 ```javascript
@@ -38,4 +40,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

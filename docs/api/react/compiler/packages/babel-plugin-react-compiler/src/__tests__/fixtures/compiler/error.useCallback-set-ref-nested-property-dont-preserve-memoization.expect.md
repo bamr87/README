@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md
 ---
+# Error.Usecallback Set Ref Nested Property Dont Preserve Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -53,5 +55,4 @@ error.useCallback-set-ref-nested-property-dont-preserve-memoization.ts:13:2
   15 |   return <input onChange={onChange} />;
   16 | }
 ```
-          
-      
+

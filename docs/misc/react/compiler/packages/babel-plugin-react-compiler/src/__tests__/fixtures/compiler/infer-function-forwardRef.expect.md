@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-forwardRef.expect.md
 ---
+# Infer Function Forwardref.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ React.forwardRef((props) => {
 });
 
 ```
-      

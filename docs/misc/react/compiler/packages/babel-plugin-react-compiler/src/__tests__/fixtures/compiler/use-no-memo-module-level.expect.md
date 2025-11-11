@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-no-memo-module-level.expect.md
 ---
+# Use No Memo Module Level.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ export default function foo(x, y) {
 }
 
 ```
-      

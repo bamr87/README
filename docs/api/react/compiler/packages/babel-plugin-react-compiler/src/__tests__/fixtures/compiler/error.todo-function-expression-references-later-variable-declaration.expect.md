@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-function-expression-references-later-variable-declaration.expect.md
 ---
+# Error.Todo Function Expression References Later Variable Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.todo-function-expression-references-later-variable-declaration.ts:3:4
   5 |   let onClick;
   6 |
 ```
-          
-      
+

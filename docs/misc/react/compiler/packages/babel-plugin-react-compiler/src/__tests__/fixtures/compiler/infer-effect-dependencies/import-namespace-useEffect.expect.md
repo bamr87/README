@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: import-namespace-useEffect.expect.md
 ---
+# Import Namespace Useeffect.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ function NonReactiveDepInEffect() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

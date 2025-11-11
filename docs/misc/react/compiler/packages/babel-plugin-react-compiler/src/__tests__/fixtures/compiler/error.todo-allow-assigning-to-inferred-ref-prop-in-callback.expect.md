@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-allow-assigning-to-inferred-ref-prop-in-callback.expect.md
 ---
+# Error.Todo Allow Assigning To Inferred Ref Prop In Callback.Expect
+
 ## Input
 
 ```javascript
@@ -51,5 +53,4 @@ error.todo-allow-assigning-to-inferred-ref-prop-in-callback.ts:15:8
   17 |     }
   18 |   };
 ```
-          
-      
+

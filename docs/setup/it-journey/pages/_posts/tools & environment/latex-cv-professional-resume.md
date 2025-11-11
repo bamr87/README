@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: latex-cv-professional-resume.md
 ---
+# Latex Cv Professional Resume
+
 Installing LaTeX on a Mac, integrating it with Visual Studio Code, and using GitHub for source control involves several steps. Below is a comprehensive manual detailing each step in the process.
 
 Installing LaTeX on macOS using Terminal

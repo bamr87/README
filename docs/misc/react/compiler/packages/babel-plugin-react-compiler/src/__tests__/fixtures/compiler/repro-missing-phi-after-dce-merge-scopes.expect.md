@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-missing-phi-after-dce-merge-scopes.expect.md
 ---
+# Repro Missing Phi After Dce Merge Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [false,false,false]

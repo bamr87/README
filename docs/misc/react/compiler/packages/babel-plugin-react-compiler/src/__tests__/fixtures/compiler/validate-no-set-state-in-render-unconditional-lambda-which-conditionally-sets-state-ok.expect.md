@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: validate-no-set-state-in-render-unconditional-lambda-which-conditionally-sets-state-ok.expect.md
 ---
+# Validate No Set State In Render Unconditional Lambda Which Conditionally Sets State Ok.Expect
+
 ## Input
 
 ```javascript
@@ -84,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0]

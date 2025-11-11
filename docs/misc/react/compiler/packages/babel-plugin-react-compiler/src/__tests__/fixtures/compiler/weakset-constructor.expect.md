@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: weakset-constructor.expect.md
 ---
+# Weakset Constructor.Expect
+
 ## Input
 
 ```javascript
@@ -195,7 +197,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[{"value":1},"[[ cyclic ref *2 ]]"],"output":{}}</div><div>{"inputs":[{"value":1},"[[ cyclic ref *2 ]]"],"output":{}}</div><div>{"inputs":[{"value":1}],"output":[true]}</div>
 <div>{"inputs":[{"value":2},{"value":1}],"output":{}}</div><div>{"inputs":[{"value":2},{"value":1}],"output":{}}</div><div>{"inputs":[{"value":1}],"output":[true]}</div>

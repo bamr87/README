@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-from-interleaved-reactivity-for-in.expect.md
 ---
+# Reactive Control Dependency From Interleaved Reactivity For In.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]

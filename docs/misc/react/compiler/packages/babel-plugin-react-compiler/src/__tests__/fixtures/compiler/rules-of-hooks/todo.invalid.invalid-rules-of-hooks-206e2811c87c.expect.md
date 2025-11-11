@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.invalid.invalid-rules-of-hooks-206e2811c87c.expect.md
 ---
+# Todo.Invalid.Invalid Rules Of Hooks 206E2811C87C.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ class Foo extends Component {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-within-function-expression-returns-caught-value.expect.md
 ---
+# Try Catch Within Function Expression Returns Caught Value.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

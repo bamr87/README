@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-no-declarations-in-reactive-scope-with-early-return.expect.md
 ---
+# Repro No Declarations In Reactive Scope With Early Return.Expect
+
 ## Input
 
 ```javascript
@@ -102,6 +104,6 @@ function _temp(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

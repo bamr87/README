@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: gating-use-before-decl.expect.md
 ---
+# Gating Use Before Decl.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"prop1":1,"prop2":2}</div>

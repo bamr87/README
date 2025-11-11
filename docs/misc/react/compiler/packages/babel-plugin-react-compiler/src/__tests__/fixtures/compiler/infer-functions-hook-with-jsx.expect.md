@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-functions-hook-with-jsx.expect.md
 ---
+# Infer Functions Hook With Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function useDiv(props) {
 }
 
 ```
-      

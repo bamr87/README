@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: early-return-nested-early-return-within-reactive-scope.expect.md
 ---
+# Early Return Nested Early Return Within Reactive Scope.Expect
+
 ## Input
 
 ```javascript
@@ -93,6 +95,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,[3.14]]

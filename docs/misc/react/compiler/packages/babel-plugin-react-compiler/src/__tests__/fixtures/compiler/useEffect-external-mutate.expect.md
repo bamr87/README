@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useEffect-external-mutate.expect.md
 ---
+# Useeffect External Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

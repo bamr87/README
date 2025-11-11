@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: holey-array-pattern-dce.expect.md
 ---
+# Holey Array Pattern Dce.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

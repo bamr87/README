@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: codegen-emit-make-read-only.expect.md
 ---
+# Codegen Emit Make Read Only.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ function MyComponentName(props) {
 }
 
 ```
-      

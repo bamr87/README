@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: emit-freeze-conflicting-imports.expect.md
 ---
+# Emit Freeze Conflicting Imports.Expect
+
 ## Input
 
 ```javascript
@@ -39,6 +41,6 @@ function useFoo(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-eacfcaa6ef89.expect.md
 ---
+# Rules Of Hooks Eacfcaa6Ef89.Expect
+
 ## Input
 
 ```javascript
@@ -38,4 +40,3 @@ const MemoizedFunction = memo(function (props) {
 });
 
 ```
-      

@@ -136,7 +136,7 @@ The AI analysis provides:
 The system is designed for extensibility:
 
 **Custom Link Types**: Add new URL patterns and validation rules
-**Enhanced AI Analysis**: Extend prompts and analysis categories  
+**Enhanced AI Analysis**: Extend prompts and analysis categories
 **Additional Outputs**: Create new report formats and destinations
 **Integration Points**: Connect with external monitoring systems
 
@@ -200,10 +200,10 @@ site:
 
 testing:
   max_parallel: 10
-  exclude_patterns: 
+  exclude_patterns:
     - "localhost"
     - "127.0.0.1"
-  
+
 ai_analysis:
   model: "gpt-4"
   max_tokens: 3000
@@ -270,4 +270,4 @@ Testing improvements are always welcome:
 
 ---
 
-*The test directory embodies the IT-Journey commitment to quality, education, and automation - ensuring that every learner has access to reliable, up-to-date educational resources while providing real-world examples of modern testing practices.* 
+*The test directory embodies the IT-Journey commitment to quality, education, and automation - ensuring that every learner has access to reliable, up-to-date educational resources while providing real-world examples of modern testing practices.*

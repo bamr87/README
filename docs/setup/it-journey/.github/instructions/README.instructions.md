@@ -144,7 +144,7 @@ This document provides comprehensive instructions for maintaining, reviewing, up
 
 Every README.md file is a **living document** that serves as:
 - 🚪 **Gateway**: First impression for visitors and contributors
-- 🗺️ **Map**: Navigation guide through content and structure  
+- 🗺️ **Map**: Navigation guide through content and structure
 - 📚 **Documentation**: Comprehensive information about its scope
 - 🤝 **Invitation**: Welcome to community participation
 - 🔗 **Connection**: Link to related resources and content
@@ -1197,7 +1197,7 @@ jobs:
 README files are living documents that grow with your project. By following these guidelines, you ensure that every README in the IT-Journey ecosystem:
 
 - ✅ **Welcomes** new visitors with clarity
-- 📚 **Documents** content comprehensively  
+- 📚 **Documents** content comprehensively
 - 🔗 **Connects** to related resources
 - 🎨 **Presents** information beautifully
 - 🔄 **Evolves** with community needs

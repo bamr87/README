@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-repro-unmemoized-callback-captured-in-context-variable.expect.md
 ---
+# Error.Todo Repro Unmemoized Callback Captured In Context Variable.Expect
+
 ## Input
 
 ```javascript
@@ -72,5 +74,4 @@ error.todo-repro-unmemoized-callback-captured-in-context-variable.ts:11:12
   13 |   // Conditional assignment without a subsequent mutation normally doesn't create a mutable
   14 |   // range, but in this case we're reassigning a context variable
 ```
-          
-      
+

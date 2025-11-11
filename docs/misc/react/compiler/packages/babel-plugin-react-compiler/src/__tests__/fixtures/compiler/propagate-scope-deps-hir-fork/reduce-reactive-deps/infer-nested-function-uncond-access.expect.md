@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-nested-function-uncond-access.expect.md
 ---
+# Infer Nested Function Uncond Access.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function","result":{"kind":"Function","result":{"value":4}}},"shouldInvokeFns":true}</div>

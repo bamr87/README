@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-recursive-call-within-lambda.expect.md
 ---
+# Hoisting Recursive Call Within Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 6

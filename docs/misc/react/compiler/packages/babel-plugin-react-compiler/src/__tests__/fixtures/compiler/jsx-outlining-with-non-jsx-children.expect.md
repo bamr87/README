@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-with-non-jsx-children.expect.md
 ---
+# Jsx Outlining With Non Jsx Children.Expect
+
 ## Input
 
 ```javascript
@@ -192,6 +194,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooTestfooxbarTestbar

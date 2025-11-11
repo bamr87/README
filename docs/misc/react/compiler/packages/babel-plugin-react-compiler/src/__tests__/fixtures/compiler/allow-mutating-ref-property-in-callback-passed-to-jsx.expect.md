@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-mutating-ref-property-in-callback-passed-to-jsx.expect.md
 ---
+# Allow Mutating Ref Property In Callback Passed To Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -78,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input><button></button>

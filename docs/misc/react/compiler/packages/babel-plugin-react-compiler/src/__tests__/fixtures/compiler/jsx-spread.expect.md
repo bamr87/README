@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-spread.expect.md
 ---
+# Jsx Spread.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function Component(props) {
 }
 
 ```
-      

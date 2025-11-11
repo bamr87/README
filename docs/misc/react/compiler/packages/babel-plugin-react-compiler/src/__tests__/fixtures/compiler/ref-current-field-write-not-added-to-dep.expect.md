@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-current-field-write-not-added-to-dep.expect.md
 ---
+# Ref Current Field Write Not Added To Dep.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input>

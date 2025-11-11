@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-fun-alias-captured-mutate-2-iife.expect.md
 ---
+# Capturing Fun Alias Captured Mutate 2 Iife.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"foo":"foo"}

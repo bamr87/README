@@ -72,12 +72,12 @@ function Git-profile {
   $gitUser ="bamr87"
   Write-Output $env:psgist
   $masterProfile = "Microsoft.PowerShell_profile.ps1"
-  
+
   $url = "https://gist.githubusercontent.com/$gitUser/$env:psgist/raw/$masterProfile"
   $FileName = Split-Path $profile -Leaf
   $FilePath = Split-Path $profile
   $FullPath = "$FilePath\$FileName"
-  
+
   $webclient = New-Object System.Net.WebClient
   $webclient.DownloadFile($url,$FullPath)
 }
@@ -131,7 +131,7 @@ vscode://file/C:/Users/AmrAbdel-Motaleb/OneDrive/Documents/GitHub/{{ page.path}}
 </div>
 {% endraw %}
 ```
-# Features 
+# Features
 
 ### Hover Notes
 
@@ -220,7 +220,7 @@ See _scss/it-journey/it-journey.scss
 ```scss
 // Extends the CSS for .img-fluid to <img> tags inside a <p> tag
 
-p, img 
+p, img
   {
     @extend .img-fluid;
   }

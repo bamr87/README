@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: conflicting-dollar-sign-variable.expect.md
 ---
+# Conflicting Dollar Sign Variable.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["jQuery"]

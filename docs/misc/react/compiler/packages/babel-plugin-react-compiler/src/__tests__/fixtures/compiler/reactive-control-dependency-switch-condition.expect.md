@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-switch-condition.expect.md
 ---
+# Reactive Control Dependency Switch Condition.Expect
+
 ## Input
 
 ```javascript
@@ -91,7 +93,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

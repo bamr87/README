@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.not-useEffect-external-mutate.expect.md
 ---
+# Error.Not Useeffect External Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -53,5 +55,4 @@ error.not-useEffect-external-mutate.ts:7:4
    9 | }
   10 |
 ```
-          
-      
+

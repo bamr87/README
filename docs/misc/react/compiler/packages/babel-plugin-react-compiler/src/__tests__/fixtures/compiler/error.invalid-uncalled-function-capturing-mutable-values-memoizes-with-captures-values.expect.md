@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-uncalled-function-capturing-mutable-values-memoizes-with-captures-values.expect.md
 ---
+# Error.Invalid Uncalled Function Capturing Mutable Values Memoizes With Captures Values.Expect
+
 ## Input
 
 ```javascript
@@ -108,5 +110,4 @@ This argument is a function which may reassign or mutate `cache` after render, w
   35 |       return output;
   36 |     };
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-expression-prototype-call.expect.md
 ---
+# Function Expression Prototype Call.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Jason</div>

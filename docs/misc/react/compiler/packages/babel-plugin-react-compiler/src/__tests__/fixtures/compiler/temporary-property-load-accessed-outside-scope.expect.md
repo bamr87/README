@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: temporary-property-load-accessed-outside-scope.expect.md
 ---
+# Temporary Property Load Accessed Outside Scope.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: lvl-001-frontend-docker.md
 ---
+# Lvl 001 Frontend Docker
+
 You've successfully set up your Docker environment, and now you're ready to delve deeper into the mystical realms of Level 001. This level involves creating your Jekyll site with the power of Docker, setting the stage for our enchanted journey ahead.
 
 ### Level 001: Create Jekyll Site with Docker

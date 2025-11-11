@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hook-declaration-basic.flow.expect.md
 ---
+# Hook Declaration Basic.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

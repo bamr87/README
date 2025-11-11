@@ -238,7 +238,7 @@ class OpenAIService:
         # Secure API key management
         self.api_key = self._get_secure_api_key()
         self.client = openai.OpenAI(api_key=self.api_key)
-        
+
     def _get_secure_api_key(self):
         # Multi-source key resolution with fallbacks
         return (
@@ -450,7 +450,7 @@ def get_secret(secret_name="barodybroject/env", region_name="us-east-1"):
     try:
         session = boto3.session.Session()
         client = session.client(
-            service_name="secretsmanager", 
+            service_name="secretsmanager",
             region_name=region_name
         )
         response = client.get_secret_value(SecretId=secret_name)
@@ -580,7 +580,7 @@ if DEBUG:
     # Development-specific security settings
     SECURE_SSL_REDIRECT = False      # Allow HTTP in development
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
-    
+
     # Debug toolbar (optional)
     if env.bool('ENABLE_DEBUG_TOOLBAR', default=False):
         try:
@@ -607,7 +607,7 @@ def validate_content_input(content):
     """Validate and sanitize content input"""
     if not content or len(content) > MAX_CONTENT_LENGTH:
         raise ValidationError("Invalid content length")
-    
+
     # Sanitize HTML content
     return bleach.clean(
         content,
@@ -622,7 +622,7 @@ def get_openai_client():
     api_key = get_secret_value('OPENAI_API_KEY')
     if not api_key:
         raise ImproperlyConfigured("OpenAI API key not configured")
-    
+
     return openai.OpenAI(api_key=api_key)
 ```
 
@@ -714,15 +714,15 @@ LOGGING = {
 class SecurityAuditMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
-    
+
     def __call__(self, request):
         # Log security-relevant requests
         if self.is_security_relevant(request):
             self.log_security_event(request)
-        
+
         response = self.get_response(request)
         return response
-    
+
     def log_security_event(self, request):
         logger.info(
             f"Security event: {request.method} {request.path} "

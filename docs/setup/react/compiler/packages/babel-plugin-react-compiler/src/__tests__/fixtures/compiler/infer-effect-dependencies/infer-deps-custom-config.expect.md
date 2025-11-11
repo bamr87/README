@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: infer-deps-custom-config.expect.md
 ---
+# Infer Deps Custom Config.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ function CustomConfig(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

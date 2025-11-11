@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-types-through-type-cast.flow.expect.md
 ---
+# Infer Types Through Type Cast.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 4

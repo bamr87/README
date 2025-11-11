@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: escape-analysis-non-escaping-interleaved-primitive-dependency.expect.md
 ---
+# Escape Analysis Non Escaping Interleaved Primitive Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

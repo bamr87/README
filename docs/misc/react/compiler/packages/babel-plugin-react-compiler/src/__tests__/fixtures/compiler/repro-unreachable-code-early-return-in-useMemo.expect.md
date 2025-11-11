@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-unreachable-code-early-return-in-useMemo.expect.md
 ---
+# Repro Unreachable Code Early Return In Usememo.Expect
+
 ## Input
 
 ```javascript
@@ -112,7 +114,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[null],"output":"[[ cyclic ref *2 ]]"}</div>
 <div>{"inputs":[null],"output":"[[ cyclic ref *2 ]]"}</div>

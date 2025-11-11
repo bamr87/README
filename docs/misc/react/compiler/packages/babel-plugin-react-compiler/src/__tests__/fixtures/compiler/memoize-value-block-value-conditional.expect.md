@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: memoize-value-block-value-conditional.expect.md
 ---
+# Memoize Value Block Value Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

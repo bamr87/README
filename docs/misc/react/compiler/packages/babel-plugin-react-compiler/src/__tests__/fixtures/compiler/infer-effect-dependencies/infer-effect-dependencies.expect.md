@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-effect-dependencies.expect.md
 ---
+# Infer Effect Dependencies.Expect
+
 ## Input
 
 ```javascript
@@ -131,6 +133,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

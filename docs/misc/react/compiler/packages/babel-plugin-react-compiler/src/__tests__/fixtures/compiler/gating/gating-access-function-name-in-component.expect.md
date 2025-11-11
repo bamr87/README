@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: gating-access-function-name-in-component.expect.md
 ---
+# Gating Access Function Name In Component.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Component</div>

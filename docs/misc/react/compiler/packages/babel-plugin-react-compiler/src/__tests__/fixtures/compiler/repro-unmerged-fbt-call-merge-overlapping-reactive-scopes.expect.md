@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-unmerged-fbt-call-merge-overlapping-reactive-scopes.expect.md
 ---
+# Repro Unmerged Fbt Call Merge Overlapping Reactive Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -73,6 +75,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"description":"Text here","label":"3 bars"}</div>

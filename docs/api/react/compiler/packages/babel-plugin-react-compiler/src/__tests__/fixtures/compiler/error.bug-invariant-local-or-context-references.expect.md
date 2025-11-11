@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-local-or-context-references.expect.md
 ---
+# Error.Bug Invariant Local Or Context References.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.bug-invariant-local-or-context-references.ts:15:13
   17 |   }
   18 | };
 ```
-          
-      
+

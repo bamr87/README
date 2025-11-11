@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-on-context-variable.expect.md
 ---
+# Reactive Control Dependency On Context Variable.Expect
+
 ## Input
 
 ```javascript
@@ -101,7 +103,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

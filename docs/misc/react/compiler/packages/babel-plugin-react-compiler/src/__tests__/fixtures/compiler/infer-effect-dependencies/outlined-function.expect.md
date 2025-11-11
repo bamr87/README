@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: outlined-function.expect.md
 ---
+# Outlined Function.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: computed-call-spread.expect.md
 ---
+# Computed Call Spread.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function Component(props) {
 }
 
 ```
-      

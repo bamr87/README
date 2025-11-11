@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-optional-call-chain-in-logical-expr.expect.md
 ---
+# Error.Todo Optional Call Chain In Logical Expr.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.todo-optional-call-chain-in-logical-expr.ts:5:30
   7 |
   8 | export const FIXTURE_ENTRYPONT = {
 ```
-          
-      
+

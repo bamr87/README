@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-hoisting-variable-collision.expect.md
 ---
+# Repro Hoisting Variable Collision.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,[0,42,null,null,{"object":true}]]

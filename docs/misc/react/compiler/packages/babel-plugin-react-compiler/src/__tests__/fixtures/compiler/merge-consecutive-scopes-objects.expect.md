@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: merge-consecutive-scopes-objects.expect.md
 ---
+# Merge Consecutive Scopes Objects.Expect
+
 ## Input
 
 ```javascript
@@ -113,6 +115,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"component":"[[ function params=1 ]]","props":{"text":"Counter"}},{"component":"span","props":{"children":[0]}},{"component":"button","props":{"data-testid":"button","onClick":"[[ function params=0 ]]","children":["increment"]}}]

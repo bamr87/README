@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-dup-key-diff-value.expect.md
 ---
+# Jsx Outlining Dup Key Diff Value.Expect
+
 ## Input
 
 ```javascript
@@ -168,6 +170,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooifoojxbaribarj

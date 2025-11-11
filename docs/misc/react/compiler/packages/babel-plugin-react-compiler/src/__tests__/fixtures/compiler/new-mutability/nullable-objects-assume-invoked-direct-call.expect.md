@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nullable-objects-assume-invoked-direct-call.expect.md
 ---
+# Nullable Objects Assume Invoked Direct Call.Expect
+
 ## Input
 
 ```javascript
@@ -76,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]"]
 ["[[ function params=0 ]]"]

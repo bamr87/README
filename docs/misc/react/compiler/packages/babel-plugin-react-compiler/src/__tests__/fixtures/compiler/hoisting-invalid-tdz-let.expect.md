@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-invalid-tdz-let.expect.md
 ---
+# Hoisting Invalid Tdz Let.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Cannot access 'x' before initialization

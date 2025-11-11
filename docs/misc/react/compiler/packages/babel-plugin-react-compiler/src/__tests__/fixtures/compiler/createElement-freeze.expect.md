@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: createElement-freeze.expect.md
 ---
+# Createelement Freeze.Expect
+
 ## Input
 
 ```javascript
@@ -70,6 +72,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

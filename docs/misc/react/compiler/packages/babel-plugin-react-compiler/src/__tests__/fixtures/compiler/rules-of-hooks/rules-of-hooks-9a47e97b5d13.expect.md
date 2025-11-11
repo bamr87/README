@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-9a47e97b5d13.expect.md
 ---
+# Rules Of Hooks 9A47E97B5D13.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ const FancyButton = React.forwardRef(function (props, ref) {
 });
 
 ```
-      

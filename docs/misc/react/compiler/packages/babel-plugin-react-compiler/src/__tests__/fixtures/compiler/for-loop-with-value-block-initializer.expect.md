@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-loop-with-value-block-initializer.expect.md
 ---
+# For Loop With Value Block Initializer.Expect
+
 ## Input
 
 ```javascript
@@ -138,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>one</div></div>
 <div></div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-hoisted-function-in-unreachable-code.expect.md
 ---
+# Error.Todo Hoisted Function In Unreachable Code.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.todo-hoisted-function-in-unreachable-code.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

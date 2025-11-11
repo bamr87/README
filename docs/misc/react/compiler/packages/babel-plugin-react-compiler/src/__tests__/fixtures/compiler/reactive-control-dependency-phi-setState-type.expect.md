@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-phi-setState-type.expect.md
 ---
+# Reactive Control Dependency Phi Setstate Type.Expect
+
 ## Input
 
 ```javascript
@@ -132,7 +134,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ok
 ok

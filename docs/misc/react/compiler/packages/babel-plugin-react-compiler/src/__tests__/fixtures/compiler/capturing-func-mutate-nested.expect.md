@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-mutate-nested.expect.md
 ---
+# Capturing Func Mutate Nested.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

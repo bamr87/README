@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: escape-analysis-logical.expect.md
 ---
+# Escape Analysis Logical.Expect
+
 ## Input
 
 ```javascript
@@ -69,4 +71,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

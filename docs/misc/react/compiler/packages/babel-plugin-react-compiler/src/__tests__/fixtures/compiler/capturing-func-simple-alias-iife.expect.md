@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-simple-alias-iife.expect.md
 ---
+# Capturing Func Simple Alias Iife.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":"foo","wat0":"joe"}

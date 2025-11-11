@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: planting-seeds-software-evolution.md
 ---
+# Planting Seeds Software Evolution
+
 ## The Seed Metaphor: Nature's Blueprint for Software Evolution
 
 In nature, a tiny seed contains all the genetic information needed to grow into a mighty oak tree. Similarly, in software development, we're learning to create "development seeds"—concentrated bundles of wisdom, patterns, and instructions that can rapidly evolve into complex, adaptive systems. This isn't just about code generation; it's about encoding decades of software engineering knowledge into reusable, evolvable templates.

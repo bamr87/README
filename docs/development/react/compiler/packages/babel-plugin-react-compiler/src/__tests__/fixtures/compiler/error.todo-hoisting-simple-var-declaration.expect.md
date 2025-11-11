@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-hoisting-simple-var-declaration.expect.md
 ---
+# Error.Todo Hoisting Simple Var Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ error.todo-hoisting-simple-var-declaration.ts:7:2
    9 |   return result; // OK: returns NaN. The code is semantically wrong but technically correct
   10 | }
 ```
-          
-      
+

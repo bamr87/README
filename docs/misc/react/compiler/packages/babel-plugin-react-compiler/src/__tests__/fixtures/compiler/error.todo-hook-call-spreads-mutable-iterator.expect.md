@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-hook-call-spreads-mutable-iterator.expect.md
 ---
+# Error.Todo Hook Call Spreads Mutable Iterator.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.todo-hook-call-spreads-mutable-iterator.ts:5:24
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

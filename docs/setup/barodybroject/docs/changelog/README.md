@@ -223,8 +223,8 @@ breaking: true|false
 
 ---
 
-**Last Updated**: January 27, 2025  
-**Version**: 1.0.0  
+**Last Updated**: January 27, 2025
+**Version**: 1.0.0
 **Maintainer**: Barodybroject Team
 
 For questions about the changelog system, please open an issue or contact the maintainers.

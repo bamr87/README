@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-propagation-into-function-expressions.expect.md
 ---
+# Constant Propagation Into Function Expressions.Expect
+
 ## Input
 
 ```javascript
@@ -57,7 +59,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"onEvent":{"kind":"Function","result":42},"shouldInvokeFns":true}</div>
 <div>{"onEvent":{"kind":"Function","result":42},"shouldInvokeFns":true}</div>

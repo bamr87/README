@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-runs-inference.expect.md
 ---
+# Capturing Function Runs Inference.Expect
+
 ## Input
 
 ```javascript
@@ -51,7 +53,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":{"a":1}}</div>
 <div>{"children":{"a":1}}</div>

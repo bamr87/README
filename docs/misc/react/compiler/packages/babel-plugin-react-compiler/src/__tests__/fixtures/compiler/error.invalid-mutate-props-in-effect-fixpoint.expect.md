@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-props-in-effect-fixpoint.expect.md
 ---
+# Error.Invalid Mutate Props In Effect Fixpoint.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-mutate-props-in-effect-fixpoint.ts:10:4
   12 |   let mutatePropsIndirect = () => {
   13 |     mutateProps();
 ```
-          
-      
+

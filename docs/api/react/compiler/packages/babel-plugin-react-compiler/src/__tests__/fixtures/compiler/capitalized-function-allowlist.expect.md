@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: capitalized-function-allowlist.expect.md
 ---
+# Capitalized Function Allowlist.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 3

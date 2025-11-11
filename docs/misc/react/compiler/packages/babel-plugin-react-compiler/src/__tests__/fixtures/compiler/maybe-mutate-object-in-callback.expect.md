@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: maybe-mutate-object-in-callback.expect.md
 ---
+# Maybe Mutate Object In Callback.Expect
+
 ## Input
 
 ```javascript
@@ -74,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Hello</div>

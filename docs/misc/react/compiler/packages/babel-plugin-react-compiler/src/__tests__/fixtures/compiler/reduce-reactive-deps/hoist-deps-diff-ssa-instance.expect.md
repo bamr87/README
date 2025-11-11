@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoist-deps-diff-ssa-instance.expect.md
 ---
+# Hoist Deps Diff Ssa Instance.Expect
+
 ## Input
 
 ```javascript
@@ -108,7 +110,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],3]
 [[2],3]

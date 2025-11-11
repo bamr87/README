@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.lower-context-access-array-destructuring.expect.md
 ---
+# Todo.Lower Context Access Array Destructuring.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function App() {
 }
 
 ```
-      

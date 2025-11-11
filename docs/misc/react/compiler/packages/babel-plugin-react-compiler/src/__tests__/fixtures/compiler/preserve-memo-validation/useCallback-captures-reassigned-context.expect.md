@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-captures-reassigned-context.expect.md
 ---
+# Usecallback Captures Reassigned Context.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

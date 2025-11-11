@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.use-no-memo.expect.md
 ---
+# Error.Use No Memo.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.use-no-memo.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

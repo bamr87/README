@@ -66,7 +66,7 @@ The devcontainer includes optimized settings for Jekyll development:
    ```bash
    # Using the existing docker-compose tasks (recommended)
    # Use VS Code Task: "Jekyll: Serve with Docker"
-   
+
    # Or start Jekyll directly in the devcontainer
    bundle exec jekyll serve --config "_config.yml,_config_dev.yml" --host 0.0.0.0 --port 4000
    ```

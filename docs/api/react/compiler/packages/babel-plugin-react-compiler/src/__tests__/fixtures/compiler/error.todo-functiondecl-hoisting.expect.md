@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-functiondecl-hoisting.expect.md
 ---
+# Error.Todo Functiondecl Hoisting.Expect
+
 ## Input
 
 ```javascript
@@ -52,5 +54,4 @@ error.todo-functiondecl-hoisting.ts:12:17
   14 |     return {value};
   15 |   }
 ```
-          
-      
+

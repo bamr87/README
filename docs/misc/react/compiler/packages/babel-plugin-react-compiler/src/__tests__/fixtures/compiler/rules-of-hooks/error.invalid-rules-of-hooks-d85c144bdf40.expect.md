@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-rules-of-hooks-d85c144bdf40.expect.md
 ---
+# Error.Invalid Rules Of Hooks D85C144Bdf40.Expect
+
 ## Input
 
 ```javascript
@@ -51,5 +53,4 @@ error.invalid-rules-of-hooks-d85c144bdf40.ts:9:4
   11 | }
   12 |
 ```
-          
-      
+

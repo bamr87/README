@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-reassign.expect.md
 ---
+# Ssa Reassign.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

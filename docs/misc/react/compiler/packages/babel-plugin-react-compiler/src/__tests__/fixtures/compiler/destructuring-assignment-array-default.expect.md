@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-assignment-array-default.expect.md
 ---
+# Destructuring Assignment Array Default.Expect
+
 ## Input
 
 ```javascript
@@ -58,4 +60,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

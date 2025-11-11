@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-mabye-modified-free-variable-preserve-memoization-guarantees.expect.md
 ---
+# Usememo Mabye Modified Free Variable Preserve Memoization Guarantees.Expect
+
 ## Input
 
 ```javascript
@@ -101,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true,"value":42,"wat0":"joe"}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: prune-scopes-whose-deps-invalidate-new.expect.md
 ---
+# Prune Scopes Whose Deps Invalidate New.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":{"x":{"value":"sathya"}}}

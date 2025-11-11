@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-memberexpr-tag-in-lambda.expect.md
 ---
+# Jsx Memberexpr Tag In Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>4</div>

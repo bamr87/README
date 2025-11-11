@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: ssa-shadowing.expect.md
 ---
+# Ssa Shadowing.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ function Foo(cond) {
 }
 
 ```
-      

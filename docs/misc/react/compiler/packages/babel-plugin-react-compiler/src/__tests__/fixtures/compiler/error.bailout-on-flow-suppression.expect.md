@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bailout-on-flow-suppression.expect.md
 ---
+# Error.Bailout On Flow Suppression.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.bailout-on-flow-suppression.ts:4:2
   6 |   return null;
   7 | }
 ```
-          
-      
+

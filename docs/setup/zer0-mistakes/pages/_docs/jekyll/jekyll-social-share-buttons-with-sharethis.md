@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-social-share-buttons-with-sharethis.md
 ---
+# Jekyll Social Share Buttons With Sharethis
+
 > Integrate ShareThis to Jekyll website.
 
 ## 1. ShareThis
@@ -42,9 +44,9 @@ Share to twitter.
 Share to linkedin.
 ![image](/assets/images/jekyll/8118/sharing_linkedin.png)
 Access the website from mobile device.
-![image](/assets/images/jekyll/8118/mobile_home.png){:width="400px"}  
-![image](/assets/images/jekyll/8118/mobile_tutorial.png){:width="400px"}  
-![image](/assets/images/jekyll/8118/mobile_201.png){:width="400px"}  
+![image](/assets/images/jekyll/8118/mobile_home.png){:width="400px"}
+![image](/assets/images/jekyll/8118/mobile_tutorial.png){:width="400px"}
+![image](/assets/images/jekyll/8118/mobile_201.png){:width="400px"}
 
 ## 5. Cross Domain
 ShareThis supports multiple domains. You can create different share buttons for different domains. For different domains, you will get different urls for sharethis.js.

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-simple-preserved-nomemo.expect.md
 ---
+# Usememo Simple Preserved Nomemo.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

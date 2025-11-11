@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-property-alias-alias-mutate-if.expect.md
 ---
+# Ssa Property Alias Alias Mutate If.Expect
+
 ## Input
 
 ```javascript
@@ -53,4 +55,3 @@ function foo(a) {
 }
 
 ```
-      

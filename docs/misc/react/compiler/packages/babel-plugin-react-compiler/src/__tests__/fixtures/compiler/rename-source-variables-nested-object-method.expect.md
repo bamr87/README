@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rename-source-variables-nested-object-method.expect.md
 ---
+# Rename Source Variables Nested Object Method.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42
 logs: ['module_$','module_t0','module_c_0']

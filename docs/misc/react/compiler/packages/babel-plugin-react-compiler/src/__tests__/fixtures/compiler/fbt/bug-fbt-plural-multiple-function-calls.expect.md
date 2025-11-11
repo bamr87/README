@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: bug-fbt-plural-multiple-function-calls.expect.md
 ---
+# Bug Fbt Plural Multiple Function Calls.Expect
+
 ## Input
 
 ```javascript
@@ -93,4 +95,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

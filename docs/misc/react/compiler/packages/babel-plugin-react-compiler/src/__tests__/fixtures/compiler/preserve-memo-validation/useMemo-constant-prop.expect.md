@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-constant-prop.expect.md
 ---
+# Usememo Constant Prop.Expect
+
 ## Input
 
 ```javascript
@@ -81,6 +83,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,1,0,1]

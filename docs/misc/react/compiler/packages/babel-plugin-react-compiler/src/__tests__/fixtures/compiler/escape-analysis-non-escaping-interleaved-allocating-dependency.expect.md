@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: escape-analysis-non-escaping-interleaved-allocating-dependency.expect.md
 ---
+# Escape Analysis Non Escaping Interleaved Allocating Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -70,4 +72,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

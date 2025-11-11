@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: commitments-to-clean-commits.md
 ---
+# Commitments To Clean Commits
+
 **Ah, brave adventurer!** You've mastered the sacred art of branching and the scroll-writing ritual known as the Pull Request. Now, prepare thyself for the next enchanted trial:
 
 * * * *

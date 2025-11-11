@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: loop-unused-let.expect.md
 ---
+# Loop Unused Let.Expect
+
 ## Input
 
 ```javascript
@@ -25,4 +27,3 @@ function useFoo() {
 }
 
 ```
-      

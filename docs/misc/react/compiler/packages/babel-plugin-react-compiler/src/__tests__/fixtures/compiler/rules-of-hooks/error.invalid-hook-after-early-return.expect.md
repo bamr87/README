@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-after-early-return.expect.md
 ---
+# Error.Invalid Hook After Early Return.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-hook-after-early-return.ts:5:9
   6 | }
   7 |
 ```
-          
-      
+

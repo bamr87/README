@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-dce-circular-reference.expect.md
 ---
+# Repro Dce Circular Reference.Expect
+
 ## Input
 
 ```javascript
@@ -74,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [6]

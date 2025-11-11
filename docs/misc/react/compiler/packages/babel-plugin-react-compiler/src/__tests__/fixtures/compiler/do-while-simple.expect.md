@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: do-while-simple.expect.md
 ---
+# Do While Simple.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [6,4,2]

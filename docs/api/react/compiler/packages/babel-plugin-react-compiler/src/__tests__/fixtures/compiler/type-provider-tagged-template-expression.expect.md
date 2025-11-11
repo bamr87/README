@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: type-provider-tagged-template-expression.expect.md
 ---
+# Type Provider Tagged Template Expression.Expect
+
 ## Input
 
 ```javascript
@@ -76,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>
     fragment Foo on User {

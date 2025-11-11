@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-param-assignment-pattern.expect.md
 ---
+# Function Param Assignment Pattern.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

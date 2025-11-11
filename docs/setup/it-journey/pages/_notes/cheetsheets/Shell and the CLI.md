@@ -52,7 +52,7 @@ cd github
 gh repo fork $gh_repo --clone=true --fork-name $gh_repo_dest
 ```
 
-wmic 
+wmic
 /output:C:\Temp\list.txt product get name, version
 exit
 

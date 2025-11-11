@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-infer-scope-global.expect.md
 ---
+# Usecallback Infer Scope Global.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

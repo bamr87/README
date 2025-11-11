@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-propagation-unary-number.expect.md
 ---
+# Constant Propagation Unary Number.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":[-2,0,true,null,null,null,null,null]}</div>

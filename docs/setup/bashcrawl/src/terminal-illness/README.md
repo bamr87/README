@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: README.md
 ---
+# Readme
+
 ### Terminal Illness — A Fantasy Terminal Learning Game
 
 Run a terminal-based RPG that teaches command-line skills through quests and magical theming. Classic Mode provides a structured path; Dynamic Mode is stubbed for future AI integration.

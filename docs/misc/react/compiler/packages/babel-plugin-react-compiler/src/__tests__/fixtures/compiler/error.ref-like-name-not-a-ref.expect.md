@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.ref-like-name-not-a-ref.expect.md
 ---
+# Error.Ref Like Name Not A Ref.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.ref-like-name-not-a-ref.ts:11:30
   15 |   return <button onClick={onClick} />;
   16 | }
 ```
-          
-      
+

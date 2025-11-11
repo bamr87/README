@@ -155,7 +155,7 @@ update_repository_metrics "evolution-metrics.json" \
 rotate_logs() {
     local log_dir="$1"
     local max_files="${2:-10}"
-    
+
     # Keep only last N log files
     find "$log_dir" -name "*.log" -type f | \
         sort -r | \
@@ -185,12 +185,12 @@ fi
 ```bash
 run_pre_evolution_check() {
     log_info "🏥 Running pre-evolution health check..."
-    
+
     # Log repository status
     if ! is_repo_clean; then
         log_warn "Repository has uncommitted changes"
     fi
-    
+
     # Log analysis results
     log_info "📈 Analyzing repository structure..."
     analyze_repository
@@ -202,14 +202,14 @@ run_pre_evolution_check() {
 ```bash
 simulate_ai_evolution() {
     local prompt="$1"
-    
+
     log_info "🤖 Simulating AI evolution process..."
     log_debug "Evolution prompt: $prompt"
-    
+
     # Log branch creation
     evolution_branch=$(create_evolution_branch "$EVOLUTION_TYPE")
     log_info "🌿 Created evolution branch: $evolution_branch"
-    
+
     # Log changes
     log_info "📝 Changes made: ${#changes_list[@]} files"
     for change in "${changes_list[@]}"; do
@@ -225,7 +225,7 @@ run_post_evolution() {
     log_info "📊 Generating evolution report..."
     generate_metrics_report "evolution-metrics.json" "markdown" \
         "evolution-report-$(date +%Y%m%d-%H%M%S).md"
-    
+
     log_success "🎉 Evolution cycle completed successfully!"
     log_info "Branch: $evolution_branch"
     log_info "Type: $EVOLUTION_TYPE"

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-import-default-property-useEffect.expect.md
 ---
+# Error.Todo Import Default Property Useeffect.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.todo-import-default-property-useEffect.ts:6:2
   7 | }
   8 |
 ```
-          
-      
+

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: repro-mutate-ref-in-function-passed-to-hook.expect.md
 ---
+# Repro Mutate Ref In Function Passed To Hook.Expect
+
 ## Input
 
 ```javascript
@@ -118,6 +120,6 @@ function Example() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-nested-method-calls-lower-property-load-into-temporary.expect.md
 ---
+# Error.Todo Nested Method Calls Lower Property Load Into Temporary.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.todo-nested-method-calls-lower-property-load-into-temporary.ts:6:14
   8 | }
   9 |
 ```
-          
-      
+

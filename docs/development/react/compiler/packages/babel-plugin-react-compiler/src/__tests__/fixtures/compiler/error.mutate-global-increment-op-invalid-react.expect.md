@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.mutate-global-increment-op-invalid-react.expect.md
 ---
+# Error.Mutate Global Increment Op Invalid React.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.mutate-global-increment-op-invalid-react.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

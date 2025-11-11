@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-while.expect.md
 ---
+# Ssa While.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 10

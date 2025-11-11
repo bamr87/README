@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-array-map-known-mutate-shape.expect.md
 ---
+# Repro Array Map Known Mutate Shape.Expect
+
 ## Input
 
 ```javascript
@@ -100,7 +102,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[{"foo":2},{"baz":5}]}</div>
 <div>{"children":[{"foo":2},{"baz":6}]}</div>

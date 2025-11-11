@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-forin-collection.expect.md
 ---
+# Reactive Control Dependency Forin Collection.Expect
+
 ## Input
 
 ```javascript
@@ -85,7 +87,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [10]
 [10]

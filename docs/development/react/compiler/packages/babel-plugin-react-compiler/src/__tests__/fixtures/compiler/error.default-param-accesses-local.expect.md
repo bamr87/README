@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.default-param-accesses-local.expect.md
 ---
+# Error.Default Param Accesses Local.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.default-param-accesses-local.ts:3:6
   7 |   return y();
   8 | }
 ```
-          
-      
+

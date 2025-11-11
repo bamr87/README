@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-member-expression-chain.expect.md
 ---
+# Optional Member Expression Chain.Expect
+
 ## Input
 
 ```javascript
@@ -53,4 +55,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

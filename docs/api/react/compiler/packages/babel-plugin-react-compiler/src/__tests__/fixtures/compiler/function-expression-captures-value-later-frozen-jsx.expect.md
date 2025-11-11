@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: function-expression-captures-value-later-frozen-jsx.expect.md
 ---
+# Function Expression Captures Value Later Frozen Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -63,4 +65,3 @@ function Component(props) {
 }
 
 ```
-      

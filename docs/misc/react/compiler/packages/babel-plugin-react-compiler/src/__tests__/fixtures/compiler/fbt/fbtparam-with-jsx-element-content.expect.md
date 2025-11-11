@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbtparam-with-jsx-element-content.expect.md
 ---
+# Fbtparam With Jsx Element Content.Expect
+
 ## Input
 
 ```javascript
@@ -79,4 +81,3 @@ function Component(t0) {
 }
 
 ```
-      

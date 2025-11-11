@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: 2024-09-19-accountants-humor-unique-numbers.md
 ---
+# 2024 09 19 Accountants Humor Unique Numbers
+
 ### The Hilarious World of Accountancy: Why Number Crunchers Need Humor Too
 
 #### Exploring the Unique Sense of Humor Among Accountants and What Makes It So Special

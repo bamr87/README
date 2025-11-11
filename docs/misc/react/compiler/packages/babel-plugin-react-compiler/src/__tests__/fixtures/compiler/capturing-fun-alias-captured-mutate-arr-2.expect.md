@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-fun-alias-captured-mutate-arr-2.expect.md
 ---
+# Capturing Fun Alias Captured Mutate Arr 2.Expect
+
 ## Input
 
 ```javascript
@@ -79,7 +81,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"foo":2}
 {"foo":2}

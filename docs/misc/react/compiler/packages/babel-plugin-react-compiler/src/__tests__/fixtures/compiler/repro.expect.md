@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro.expect.md
 ---
+# Repro.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ function Component(props) {
 }
 
 ```
-      

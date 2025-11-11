@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: cfg-switch-missing-case.expect.md
 ---
+# Cfg Switch Missing Case.Expect
+
 ## Input
 
 ```javascript
@@ -78,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":42}

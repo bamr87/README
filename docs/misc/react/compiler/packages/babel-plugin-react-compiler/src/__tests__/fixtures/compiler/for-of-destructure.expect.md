@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-destructure.expect.md
 ---
+# For Of Destructure.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2,4]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: overlapping-scopes-within-block.expect.md
 ---
+# Overlapping Scopes Within Block.Expect
+
 ## Input
 
 ```javascript
@@ -72,4 +74,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

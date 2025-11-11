@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invalid-scope-merging-value-blocks.expect.md
 ---
+# Repro Invalid Scope Merging Value Blocks.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":0,"b":"value1","c":true,"wat0":"joe"},"[[ cyclic ref *1 ]]"]
 [{"a":0,"b":"value1","c":true,"wat0":"joe"},"[[ cyclic ref *1 ]]"]

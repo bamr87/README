@@ -319,8 +319,8 @@ Purpose: [functionality]
 Usage: {% include components/[name].html %}
 {% endcomment %}
 
-<div class="component-wrapper" 
-     role="[appropriate-role]" 
+<div class="component-wrapper"
+     role="[appropriate-role]"
      aria-label="[descriptive-label]">
   <!-- AI: Generate component structure -->
 </div>
@@ -358,7 +358,7 @@ Usage: {% include components/[name].html %}
 #!/bin/bash
 # AI Prompt: Enhance this automation script to:
 # - Add comprehensive error handling
-# - Improve logging and user feedback  
+# - Improve logging and user feedback
 # - Add dry-run mode for safe testing
 # - Include validation for all operations
 # - Follow IT-Journey DFF principle

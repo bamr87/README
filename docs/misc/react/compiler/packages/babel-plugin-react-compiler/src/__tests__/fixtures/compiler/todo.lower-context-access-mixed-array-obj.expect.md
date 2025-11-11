@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.lower-context-access-mixed-array-obj.expect.md
 ---
+# Todo.Lower Context Access Mixed Array Obj.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ function App() {
 }
 
 ```
-      

@@ -4,12 +4,13 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: searchbar-and-sitemaping.md
 ---
+# Searchbar And Sitemaping
+
 {% raw %}
-bamr87: add the page excerpt, page tags, absolute url, and author as new columns 
+bamr87: add the page excerpt, page tags, absolute url, and author as new columns
 
 GitHub Copilot: To add the page excerpt, page tags, absolute URL, and author as new columns, you can modify the HTML code as follows:
 
@@ -94,7 +95,7 @@ function searchFunction() {
       } else {
         tr[i].style.display = "none";
       }
-    }       
+    }
   }
 }
 </script>
@@ -204,7 +205,7 @@ function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementsByTagName("table")[0];
   switching = true;
-  dir = "asc"; 
+  dir = "asc";
 
   while (switching) {
     switching = false;
@@ -228,7 +229,7 @@ function sortTable(n) {
     if (shouldSwitch) {
       rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
       switching = true;
-      switchcount ++;      
+      switchcount ++;
     } else {
       if (switchcount == 0 && dir == "asc") {
         dir = "desc";
@@ -244,7 +245,7 @@ This script adds sorting functionality to the table. When a user clicks on a col
 
 bamr87: it's not working. when i click on the column, nothing happens
 
-GitHub Copilot: The issue might be due to the fact that the `onclick` event is not properly attached to the table headers. You need to ensure that the `onclick` event is added to each `<th>` element in your table header. 
+GitHub Copilot: The issue might be due to the fact that the `onclick` event is not properly attached to the table headers. You need to ensure that the `onclick` event is added to each `<th>` element in your table header.
 
 Here's an example of how to do it:
 
@@ -305,7 +306,7 @@ document.querySelectorAll('th').forEach(header => {
 
 This script adds an event listener to each table header. When a header is clicked, it sorts the rows based on the clicked column. The sorting is done either as a string comparison or as a date comparison, depending on the `data-type` attribute of the header. The sorted rows are then added to a new `tbody` element, which replaces the old one. This approach only applies to the Collection, Page, and Date columns.
 
-bamr87: that worked, but it only sorts it acendingly 
+bamr87: that worked, but it only sorts it acendingly
 
 GitHub Copilot: To add descending sort functionality, we can add a toggle mechanism that switches between ascending and descending sort each time a column header is clicked. We can use a custom data attribute, `data-order`, on the table headers to keep track of the current sort order.
 
@@ -351,7 +352,7 @@ This script now toggles between ascending and descending sort each time a column
 
 bamr87: let's update the table header columns with an up or down icon when sorted.
 
-GitHub Copilot: To add an up or down icon to the sorted column, you can use Unicode characters or Font Awesome icons. In this example, I'll use Unicode characters. 
+GitHub Copilot: To add an up or down icon to the sorted column, you can use Unicode characters or Font Awesome icons. In this example, I'll use Unicode characters.
 
 Here's the updated code:
 

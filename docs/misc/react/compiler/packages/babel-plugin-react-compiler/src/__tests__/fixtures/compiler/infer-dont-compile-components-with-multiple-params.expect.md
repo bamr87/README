@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-dont-compile-components-with-multiple-params.expect.md
 ---
+# Infer Dont Compile Components With Multiple Params.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

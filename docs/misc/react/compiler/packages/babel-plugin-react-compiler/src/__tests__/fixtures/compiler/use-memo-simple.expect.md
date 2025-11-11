@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-memo-simple.expect.md
 ---
+# Use Memo Simple.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div x="1">"foo"</div>

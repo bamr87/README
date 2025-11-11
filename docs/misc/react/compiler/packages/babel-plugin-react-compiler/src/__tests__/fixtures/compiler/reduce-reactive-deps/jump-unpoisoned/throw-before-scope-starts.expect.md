@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: throw-before-scope-starts.expect.md
 ---
+# Throw Before Scope Starts.Expect
+
 ## Input
 
 ```javascript
@@ -79,7 +81,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) Error: throw with error! ]]
 [2]

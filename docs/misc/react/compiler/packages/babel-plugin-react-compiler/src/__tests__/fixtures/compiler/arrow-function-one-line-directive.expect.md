@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: arrow-function-one-line-directive.expect.md
 ---
+# Arrow Function One Line Directive.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

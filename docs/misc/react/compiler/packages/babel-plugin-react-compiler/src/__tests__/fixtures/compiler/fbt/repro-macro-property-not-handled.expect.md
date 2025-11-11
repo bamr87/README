@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-macro-property-not-handled.expect.md
 ---
+# Repro Macro Property Not Handled.Expect
+
 ## Input
 
 ```javascript
@@ -81,6 +83,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) There are 2 items

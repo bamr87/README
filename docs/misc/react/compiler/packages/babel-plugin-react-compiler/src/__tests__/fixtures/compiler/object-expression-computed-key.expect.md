@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-computed-key.expect.md
 ---
+# Object Expression Computed Key.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"Sathya":["Compiler",2]}

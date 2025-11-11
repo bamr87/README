@@ -6,7 +6,6 @@ tags:
 - javascript
 - api
 - database
-- api
 last_updated: null
 source_file: 2025-03-17-blockchain-ai-trust-verify.md
 ---

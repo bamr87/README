@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-sketchy-code-use-forget.expect.md
 ---
+# Error.Invalid Sketchy Code Use Forget.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.invalid-sketchy-code-use-forget.ts:5:2
   7 | }
   8 | /* eslint-enable react-hooks/rules-of-hooks */
 ```
-          
-      
+

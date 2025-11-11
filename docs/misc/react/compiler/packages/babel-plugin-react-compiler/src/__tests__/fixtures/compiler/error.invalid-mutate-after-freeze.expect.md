@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-after-freeze.expect.md
 ---
+# Error.Invalid Mutate After Freeze.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.invalid-mutate-after-freeze.ts:7:2
    9 |   return <div>{_}</div>;
   10 | }
 ```
-          
-      
+

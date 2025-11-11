@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-expected-consistent-destructuring.expect.md
 ---
+# Error.Bug Invariant Expected Consistent Destructuring.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.bug-invariant-expected-consistent-destructuring.ts:9:9
   11 |
   12 |   const foo = useFoo(a);
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-dispatch-spread-event-marks-event-frozen.expect.md
 ---
+# Repro Dispatch Spread Event Marks Event Frozen.Expect
+
 ## Input
 
 ```javascript
@@ -84,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><input type="file"></div>

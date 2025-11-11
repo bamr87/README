@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-within-block.expect.md
 ---
+# Capturing Function Within Block.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

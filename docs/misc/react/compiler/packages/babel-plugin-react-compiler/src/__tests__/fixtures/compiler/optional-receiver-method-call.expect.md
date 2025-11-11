@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-receiver-method-call.expect.md
 ---
+# Optional Receiver Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ function Component(props) {
 }
 
 ```
-      

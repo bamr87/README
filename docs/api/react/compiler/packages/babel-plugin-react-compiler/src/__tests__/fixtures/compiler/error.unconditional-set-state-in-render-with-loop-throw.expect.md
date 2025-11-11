@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.unconditional-set-state-in-render-with-loop-throw.expect.md
 ---
+# Error.Unconditional Set State In Render With Loop Throw.Expect
+
 ## Input
 
 ```javascript
@@ -45,5 +47,4 @@ error.unconditional-set-state-in-render-with-loop-throw.ts:11:2
   13 | }
   14 |
 ```
-          
-      
+

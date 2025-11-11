@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-global-in-render-helper-prop.expect.md
 ---
+# Error.Invalid Mutate Global In Render Helper Prop.Expect
+
 ## Input
 
 ```javascript
@@ -43,5 +45,4 @@ error.invalid-mutate-global-in-render-helper-prop.ts:8:4
   10 |   };
   11 |   return <ItemList renderItem={renderItem} />;
 ```
-          
-      
+

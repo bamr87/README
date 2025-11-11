@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: arrow-function-with-implicit-return.expect.md
 ---
+# Arrow Function With Implicit Return.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

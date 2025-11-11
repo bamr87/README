@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: add-floating-back-to-top-button.md
 ---
+# Add Floating Back To Top Button
+
 [w3 schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 ## How To Create a Scroll To Top Button
@@ -28,7 +30,7 @@ Style the button:
 ```scss
 // Floating back to top button
 
-#backToTopBtn { 
+#backToTopBtn {
     display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -44,7 +46,7 @@ Style the button:
     border-radius:10px;/* Rounded corners */
     font-size:18px;/* Increase font size */
   }
-    
+
 #backToTopBtn {
   .text {
     display: inline-block;
@@ -65,8 +67,8 @@ Style the button:
   }
 }
 
-  #backToTopBtn:hover { 
-    background-color: #555; /* Add a dark-grey background on hover */ 
+  #backToTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
     opacity: 100%;
   }
 ```

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.lower-context-access-property-load.expect.md
 ---
+# Todo.Lower Context Access Property Load.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ function App() {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hook-noAlias.expect.md
 ---
+# Hook Noalias.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},{"a":{"id":42}}]

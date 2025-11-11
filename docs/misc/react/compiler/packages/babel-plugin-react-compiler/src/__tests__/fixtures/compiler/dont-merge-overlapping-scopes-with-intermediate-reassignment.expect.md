@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dont-merge-overlapping-scopes-with-intermediate-reassignment.expect.md
 ---
+# Dont Merge Overlapping Scopes With Intermediate Reassignment.Expect
+
 ## Input
 
 ```javascript
@@ -82,6 +84,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>42</div>42</div>

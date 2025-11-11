@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-in-statement.expect.md
 ---
+# For In Statement.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>a</div><div>b</div><div>c</div></div>
 <div><div>lauren</div><div>mofei</div><div>sathya</div><div>jason</div></div>

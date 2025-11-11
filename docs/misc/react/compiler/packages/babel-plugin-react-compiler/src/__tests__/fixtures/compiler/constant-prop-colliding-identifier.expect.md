@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-prop-colliding-identifier.expect.md
 ---
+# Constant Prop Colliding Identifier.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 3

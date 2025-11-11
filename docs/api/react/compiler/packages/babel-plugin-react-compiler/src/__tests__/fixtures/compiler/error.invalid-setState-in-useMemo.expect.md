@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-setState-in-useMemo.expect.md
 ---
+# Error.Invalid Setstate In Usememo.Expect
+
 ## Input
 
 ```javascript
@@ -56,5 +58,4 @@ error.invalid-setState-in-useMemo.ts:7:4
    9 |
   10 |   return state;
 ```
-          
-      
+

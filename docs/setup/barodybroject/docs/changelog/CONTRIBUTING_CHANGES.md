@@ -241,10 +241,10 @@ breaking: true|false
 def example_function(parameter):
     """
     Clear docstring explaining the function.
-    
+
     Args:
         parameter: Description of the parameter
-    
+
     Returns:
         Description of what is returned
     """
@@ -523,8 +523,8 @@ This contribution guide is itself documentation that can be improved:
 
 ---
 
-**Last Updated**: January 27, 2025  
-**Version**: 1.0.0  
+**Last Updated**: January 27, 2025
+**Version**: 1.0.0
 **Maintainer**: Barodybroject Documentation Team
 
 For questions about this process, please contact the documentation maintainers or open an issue with the `documentation` label.

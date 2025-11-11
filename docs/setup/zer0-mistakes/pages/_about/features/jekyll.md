@@ -489,12 +489,12 @@ Options:
   -P, --port [PORT]    Port to listen on
   -H, --host [HOST]    Host to bind to
   -b, --baseurl [URL]  Base URL
-  
+
 Build Options:
-      --skip-initial-build  Skips the initial site build which occurs before the server is 
+      --skip-initial-build  Skips the initial site build which occurs before the server is
   -w, --[no-]watch     Watch for changes and rebuild
       --force_polling  Force watch to use polling
-  
+
   plus all build options (see build command)
 ```
 
@@ -527,10 +527,10 @@ Minimial:
 |   ├── 2015-01-01-week-1-factbook.md  #   filename format => YEAR-MONTH-DAY-TITLE.MARKUP
 |   ├── 2015-01-08-week-2-hoe.md
 |   └── 2015-01-15-week-3-slideshow.md
-├── _layouts                           
+├── _layouts
 |   ├── default.html                   # master layout template
 |   └── post.html                      # blog post template
-├── css                               
+├── css
 |   └── styles.css                     # styles for pages
 ├── feed.xml                           # web feed template (e.g. in rss or atom format)
 └── index.html                         # index template
@@ -540,7 +540,7 @@ will result in (with `permalink: date`):
 
 ```
 └── _site                                  # output build folder; site gets generated here
-    ├── css                               
+    ├── css
     |   └── styles.css                     # styles for pages (copied 1:1 as is)
     ├── 2015
     |   └── 01
@@ -558,7 +558,7 @@ or result in (with `permalink: /:title.html`):
 
 ```
 └── _site                           # output build folder; site gets generated here
-    ├── css                               
+    ├── css
     |   └── styles.css                     # styles for pages (copied 1:1 as is)
     ├── week-1-factbook.html        # blog post page
     ├── week-2-hoe.html             # another blog post page
@@ -579,10 +579,10 @@ With post drafts, page collections, data stores and shared building blocks:
 |   ├── 2015-01-01-week-1-factbook.md  #  filename format => YEAR-MONTH-DAY-TITLE.MARKUP
 |   ├── 2015-01-08-week-2-hoe.md
 |   └── 2015-01-15-week-3-slideshow.md
-├── _drafts                            # upcoming posts; not yet published 
-|   ├── week-4-kramdown.md             # note: no date required 
+├── _drafts                            # upcoming posts; not yet published
+|   ├── week-4-kramdown.md             # note: no date required
 |   └── week-5-feedparser.md
-├── _layouts                           
+├── _layouts
 |   ├── default.html                   # master layout templates
 |   ├── book.html                      # book listing template
 |   └── post.html                      # blog post template
@@ -594,7 +594,7 @@ With post drafts, page collections, data stores and shared building blocks:
 ├── _books                             # page collection (for books)
 |   ├── ruby-under-a-microscope.md
 |   └── learn-ruby-the-hard-way.md
-├── books                               
+├── books
 |   └── index.html                     # book listing index template
 ├── members.html                       # member listing template
 ├── feed.xml                           # web feed template (e.g. in rss or atom format)
@@ -612,7 +612,7 @@ The permalinks can be customized for each post,
 but the date and markup language are determined by the file name.
 
 ```
-├── _posts             
+├── _posts
 |   ├── 2015-01-01-week-1-factbook.md    # e.g. date=2015-01-01, markup=md
 |   ├── 2015-01-08-week-2-hoe.md         #      date=2015-01-08, markup=md
 |   └── 2015-01-15-week-3-slideshow.md   #      date=2015-01-15, markup=md
@@ -682,7 +682,7 @@ TBD
 site             -- Sitewide information plus configuration settings from  _config.yml.
 page             -- Page specific information plus the front matter.
                     Custom variables set via the front matter will be available here.
-content          -- In layout files, the rendered content of the Post or Page being wrapped. 
+content          -- In layout files, the rendered content of the Post or Page being wrapped.
                     Not defined in Post or Page files.
 paginator        -- When the paginate configuration option is set variable becomes available.
 ```
@@ -713,7 +713,7 @@ site.tags.TAG              -- The list of all Posts with tag TAG.
 
 **Your Own (Custom)**
 
-All variables set via the command line and 
+All variables set via the command line and
 in your `_config.yml`  site configuration are available through the `site` variable.
 For example, if you have `url: http://openfootball.github.io` in your configuration file,
 then in your Posts and Pages it will be stored in `site.url`.
@@ -743,13 +743,13 @@ page.content      --  The content of the Page, rendered or un-rendered depending
                       Liquid is being processedand what page is.
 page.title        --  The title of the Page.
 page.excerpt      --  The un-rendered excerpt of the Page.
-page.url          --  The URL of the Post without the domain, but with a leading slash, 
+page.url          --  The URL of the Post without the domain, but with a leading slash,
                       e.g. /2015/01/15/week-3-slideshow.html
 page.date         --  The Date assigned to the Post. This can be overridden in a Post's front matter
                       by specifying a new date/time in the format YYYY-MM-DD HH:MM:SS (assuming UTC),
                       or YYYY-MM-DD HH:MM:SS +/-TTTT
                       (to specify a time zone using an offset from UTC. e.g. 2015-01-15 11:11:00 +0900).
-page.id           --  An identifier unique to the Post (useful in feeds). 
+page.id           --  An identifier unique to the Post (useful in feeds).
                       e.g. /2015/01/15/week-3-slideshow
 page.categories   --  The list of categories to which this post belongs.
                       Categories are derived from the directory structure above the _posts directory.
@@ -788,7 +788,7 @@ page.previous     --  The previous post relative to the position of the current 
  # => 'barbar'
 {{ 'barbar' | remove_first:'bar' }}  -- remove the first occurrence
   # => 'bar'
-{{ 'foobarfoobar' | truncate: 5, '.' }}  -- truncate a string down to x characters. 
+{{ 'foobarfoobar' | truncate: 5, '.' }}  -- truncate a string down to x characters.
   # => 'foob.'                              It also accepts a second parameter that will append to the string
 {{ | truncatewords }}               -- truncate a string down to x words
 {{ 'bar' | prepend:'foo' }}         -- prepend a string
@@ -806,7 +806,7 @@ page.previous     --  The previous post relative to the position of the current 
 
 ```liquid
 {% raw %}
-{{ | date }}     -- reformat a date 
+{{ | date }}     -- reformat a date
 {% endraw %}
 ```
 
@@ -853,11 +853,11 @@ page.previous     --  The previous post relative to the position of the current 
 
 ```liquid
 {% raw %}
-{{ site.time | date_to_rfc822 }}       -- Convert date to RFC-822 format 
+{{ site.time | date_to_rfc822 }}       -- Convert date to RFC-822 format
  # => Mon, 07 Nov 2008 13:07:54 -0800     (e.g. used in rss feeds)
-{{ site.time | date_to_xmlschema }}    -- Convert date to XML Schema (ISO 8601) format 
+{{ site.time | date_to_xmlschema }}    -- Convert date to XML Schema (ISO 8601) format
  # => 2008-11-07T13:07:54-08:00           (e.g. used in atom feeds)
- 
+
 {{ site.time | date_to_string }}       -- Convert date to short format
  # => 07 Nov 2008
 {{ site.time | date_to_long_string }}  -- Convert date to long format
@@ -865,7 +865,7 @@ page.previous     --  The previous post relative to the position of the current 
 {% endraw %}
 ```
 
-**Where, Group By, Sort Filters** 
+**Where, Group By, Sort Filters**
 
 ```liquid
 {% raw %}
@@ -875,7 +875,7 @@ page.previous     --  The previous post relative to the position of the current 
 {{ site.members | group_by:"graduation_year" }}       -- Group an array's items by a given property e.g.
                                                            [{"name"=>"2013", "items"=>[...]},
                                                             {"name"=>"2014", "items"=>[...]}]
-{{ page.tags | sort }}                                -- Sort an array 
+{{ page.tags | sort }}                                -- Sort an array
 {{ site.posts | sort: 'author' }}                     -- Optional args for hashes:
 {{ site.pages | sort: 'title', 'last' }}                  1. property name
                                                           2. nils order (first or last)
@@ -917,22 +917,22 @@ page.previous     --  The previous post relative to the position of the current 
 {{ "The _config.yml file" | slugify }}            -- Convert a string into a lowercase URL "slug";
  # => the-config-yml-file                            with option 'pretty': spaces and non-alphanumeric chars
 {{ "The _config.yml file" | slugify: 'pretty' }}     except for ._~!$&'()+,;=@
- # => the-_config.yml-file                           
+ # => the-_config.yml-file
 
 {{ "The _config.yml file" | slugify }}            -- Convert a string into a lowercase URL "slug";
  # => the-config-yml-file                            with option 'pretty': spaces and non-alphanumeric chars
 {{ "The _config.yml file" | slugify: 'pretty' }}     except for ._~!$&'()+,;=@
- # => the-_config.yml-file                           
+ # => the-_config.yml-file
 
 {{ "The _config.yml file" | slugify }}            -- Convert a string into a lowercase URL "slug";
  # => the-config-yml-file                            with option 'pretty': spaces and non-alphanumeric chars
 {{ "The _config.yml file" | slugify: 'pretty' }}     except for ._~!$&'()+,;=@
- # => the-_config.yml-file                           
+ # => the-_config.yml-file
 
 {{ "The _config.yml file" | slugify }}            -- Convert a string into a lowercase URL "slug";
  # => the-config-yml-file                            with option 'pretty': spaces and non-alphanumeric chars
 {{ "The _config.yml file" | slugify: 'pretty' }}     except for ._~!$&'()+,;=@
- # => the-_config.yml-file                           
+ # => the-_config.yml-file
 {% endraw %}
 
 ```liquid
@@ -945,8 +945,8 @@ page.previous     --  The previous post relative to the position of the current 
 {{ "The _config.yml file" | slugify }}            -- Convert a string into a lowercase URL "slug";
  # => the-config-yml-file                            with option 'pretty': spaces and non-alphanumeric chars
 {{ "The _config.yml file" | slugify: 'pretty' }}     except for ._~!$&'()+,;=@
- # => the-_config.yml-file   
-{% endraw %}                        
+ # => the-_config.yml-file
+{% endraw %}
 ```
 
 **Misc Filters**
@@ -1078,9 +1078,9 @@ pretty                            /2015/01/15/week-3-slideshow/index.html
 
 ```
 ├── _config.yml            # site configuration (add sass settings)
-└── css 
+└── css
     ├── _settings.scss     # include / partial settings
-    └── style.scss         # main styles 
+    └── style.scss         # main styles
 ```
 
 will result in:
@@ -1121,7 +1121,7 @@ body {
 ```
 
 ```yaml
-Note: Front matter (minimal) 
+Note: Front matter (minimal)
 
 ```
 ---
@@ -1136,7 +1136,7 @@ or with comments
 ---
 ```
 
-required; ensures Jekyll converts `style.scss` to `style.css`; 
+required; ensures Jekyll converts `style.scss` to `style.css`;
 include all partials (e.g. `_settings.scss`, and so on) with `@import` directives.
 
 (Source: [jekyll-sass-converter gem](https://github.com/jekyll/jekyll-sass-converter))

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.store-property-in-global.expect.md
 ---
+# Error.Store Property In Global.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.store-property-in-global.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: todo-function-expression-captures-value-later-frozen.expect.md
 ---
+# Todo Function Expression Captures Value Later Frozen.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ function Component(props) {
 }
 
 ```
-      

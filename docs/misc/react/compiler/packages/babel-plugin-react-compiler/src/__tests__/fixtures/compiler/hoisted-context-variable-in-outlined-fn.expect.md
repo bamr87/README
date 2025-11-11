@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisted-context-variable-in-outlined-fn.expect.md
 ---
+# Hoisted Context Variable In Outlined Fn.Expect
+
 ## Input
 
 ```javascript
@@ -84,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Stringify is not defined

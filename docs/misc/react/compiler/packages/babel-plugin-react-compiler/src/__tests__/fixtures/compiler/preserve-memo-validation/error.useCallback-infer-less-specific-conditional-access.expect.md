@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-infer-less-specific-conditional-access.expect.md
 ---
+# Error.Usecallback Infer Less Specific Conditional Access.Expect
+
 ## Input
 
 ```javascript
@@ -61,5 +63,4 @@ error.useCallback-infer-less-specific-conditional-access.ts:6:21
   15 | }
   16 |
 ```
-          
-      
+

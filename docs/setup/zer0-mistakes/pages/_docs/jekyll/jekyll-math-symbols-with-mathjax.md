@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-math-symbols-with-mathjax.md
 ---
+# Jekyll Math Symbols With Mathjax
+
 > Display mathematical notation in web pages with MathJax.
 
 ## 1. Math Symbols

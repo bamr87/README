@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-setState-in-useMemo-indirect-useCallback.expect.md
 ---
+# Error.Invalid Setstate In Usememo Indirect Usecallback.Expect
+
 ## Input
 
 ```javascript
@@ -49,5 +51,4 @@ error.invalid-setState-in-useMemo-indirect-useCallback.ts:13:4
   15 |
   16 |   return state;
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-analysis-reactive-via-mutation-of-computed-load.expect.md
 ---
+# Reactivity Analysis Reactive Via Mutation Of Computed Load.Expect
+
 ## Input
 
 ```javascript
@@ -60,4 +62,3 @@ function Component(props) {
 }
 
 ```
-      

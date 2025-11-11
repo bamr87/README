@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-simple-let-declaration.expect.md
 ---
+# Hoisting Simple Let Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 5

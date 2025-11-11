@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: constant-propagate-global-phis-constant.expect.md
 ---
+# Constant Propagate Global Phis Constant.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>global string 0</div>

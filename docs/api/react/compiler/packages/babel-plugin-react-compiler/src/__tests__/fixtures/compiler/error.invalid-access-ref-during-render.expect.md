@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-access-ref-during-render.expect.md
 ---
+# Error.Invalid Access Ref During Render.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-access-ref-during-render.ts:4:16
   6 | }
   7 |
 ```
-          
-      
+

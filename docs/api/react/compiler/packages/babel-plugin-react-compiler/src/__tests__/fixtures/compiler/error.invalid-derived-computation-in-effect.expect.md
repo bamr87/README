@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: error.invalid-derived-computation-in-effect.expect.md
 ---
+# Error.Invalid Derived Computation In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +45,4 @@ error.invalid-derived-computation-in-effect.ts:9:4
   11 |
   12 |   return <div>{fullName}</div>;
 ```
-          
-      
+

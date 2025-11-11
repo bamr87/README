@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-renaming-ternary-destruction.expect.md
 ---
+# Ssa Renaming Ternary Destruction.Expect
+
 ## Input
 
 ```javascript
@@ -66,7 +68,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [55]
 [55]

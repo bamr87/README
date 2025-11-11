@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: doc_harmonization_complete_20250712.md
 ---
+# Doc Harmonization Complete 20250712
+
 ## Documentation Harmonization - Completion Report
 
 ## Overview

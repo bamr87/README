@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-renaming-via-destructuring.expect.md
 ---
+# Ssa Renaming Via Destructuring.Expect
+
 ## Input
 
 ```javascript
@@ -63,4 +65,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

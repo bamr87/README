@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-empty-return.expect.md
 ---
+# Usememo Empty Return.Expect
+
 ## Input
 
 ```javascript
@@ -36,6 +38,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

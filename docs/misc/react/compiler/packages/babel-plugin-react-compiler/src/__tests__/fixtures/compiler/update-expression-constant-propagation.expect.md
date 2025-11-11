@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: update-expression-constant-propagation.expect.md
 ---
+# Update Expression Constant Propagation.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":0,"c":2,"d":2,"e":0}

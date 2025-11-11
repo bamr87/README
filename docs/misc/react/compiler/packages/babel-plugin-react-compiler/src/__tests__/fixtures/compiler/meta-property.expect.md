@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: meta-property.expect.md
 ---
+# Meta Property.Expect
+
 ## Input
 
 ```javascript
@@ -71,4 +73,3 @@ function d() {
 }
 
 ```
-      

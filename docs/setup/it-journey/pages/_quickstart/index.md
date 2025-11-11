@@ -10,10 +10,12 @@ tags:
 last_updated: null
 source_file: index.md
 ---
+# Index
+
 Here's an index of all the quickstart documents in the collection.
 
 1. Master Setup
-   1. Machine Setup (Mac, Win, Linux) [Local link](/quickstart/machine-setup) 
+   1. Machine Setup (Mac, Win, Linux) [Local link](/quickstart/machine-setup)
    2. IDE (Visual Studio Code) [Local link](/quickstart/vscode)  Or [Web link](https://code.visualstudio.com/)
    3. Source Code Control (Github) [Local link](/quickstart/github)  Or [Web link](https://github.com/)
    4. Docker [Local link](/quickstart/docker) Or [Web link](https://www.docker.com/)

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-mutate-item-of-local-collection.expect.md
 ---
+# For Of Mutate Item Of Local Collection.Expect
+
 ## Input
 
 ```javascript
@@ -55,7 +57,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":1,"b":"value1","c":true},{"a":1,"b":"value1","c":true}]
 [{"a":1,"b":"value1","c":true},{"a":1,"b":"value1","c":true}]

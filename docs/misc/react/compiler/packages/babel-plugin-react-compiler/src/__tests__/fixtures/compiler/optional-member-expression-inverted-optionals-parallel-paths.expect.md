@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-member-expression-inverted-optionals-parallel-paths.expect.md
 ---
+# Optional Member Expression Inverted Optionals Parallel Paths.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

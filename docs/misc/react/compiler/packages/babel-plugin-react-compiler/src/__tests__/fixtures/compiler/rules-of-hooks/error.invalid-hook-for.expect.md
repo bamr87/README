@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-for.expect.md
 ---
+# Error.Invalid Hook For.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-hook-for.ts:3:35
   5 |   }
   6 |   return i;
 ```
-          
-      
+

@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.todo-object-expression-computed-key-modified-during-after-construction-sequence-expr.expect.md
 ---
+# Error.Todo Object Expression Computed Key Modified During After Construction Sequence Expr.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ error.todo-object-expression-computed-key-modified-during-after-construction-seq
   8 |   mutate(key);
   9 |   return context;
 ```
-          
-      
+

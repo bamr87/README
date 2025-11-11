@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-newexpression.expect.md
 ---
+# Ssa Newexpression.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ function Component(props) {
 }
 
 ```
-      

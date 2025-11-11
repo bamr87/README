@@ -33,13 +33,13 @@ The `python-dotenv` library is used to load environment variables from a `.env` 
     Name: openai
     Version: 1.30.5
     Summary: The official Python library for the openai API
-    Home-page: 
-    Author: 
+    Home-page:
+    Author:
     Author-email: OpenAI <support@openai.com>
-    License: 
+    License:
     Location: /Users/bamr87/Library/Python/3.9/lib/python/site-packages
     Requires: anyio, distro, httpx, pydantic, sniffio, tqdm, typing-extensions
-    Required-by: 
+    Required-by:
     Name: python-dotenv
     Version: 1.0.1
     Summary: Read key-value pairs from a .env file and set them as environment variables
@@ -48,8 +48,8 @@ The `python-dotenv` library is used to load environment variables from a `.env` 
     Author-email: me+github@saurabh-kumar.com
     License: BSD-3-Clause
     Location: /Users/bamr87/Library/Python/3.9/lib/python/site-packages
-    Requires: 
-    Required-by: 
+    Requires:
+    Required-by:
 
 
 ## Setting up the OpenAI API Key
@@ -261,19 +261,19 @@ print(content)
 ```
 
     In a classic case of good intentions gone awry, the company "AquaAid" embarked on a mission to help impoverished desert countries irrigate their arid lands and transform them into fertile wheat fields. With grand promises of ending hunger and poverty, AquaAid brought in state-of-the-art irrigation equipment and set to work in the vast desert landscapes.
-    
+
     But oh, how the tides turned against them! It was as if Murphy's Law had taken full effect - anything that could go wrong, did go wrong. The supposedly cutting-edge equipment malfunctioned almost immediately, causing vast stretches of once barren land to be tainted with pollutants and toxic chemicals. What was meant to be a beacon of hope for the struggling nations quickly turned into a nightmare, as the contaminated water and soil made it impossible to grow anything edible.
-    
+
     As the cost of growing wheat skyrocketed and the promised abundance of food remained a distant dream, the people of the affected countries began to see AquaAid not as benevolent saviors, but as agents of destruction. Anti-western sentiment grew rampant as accusations of imperialism and exploitation were hurled at the now beleaguered company.
-    
+
     Protests flared up, with angry mobs denouncing AquaAid and demanding immediate retribution for their ruined lands and shattered dreams. The once barren deserts were now teeming not with life-giving wheat, but with rebellion and dissent.
-    
+
     In a tragic turn of events, what was meant to be a noble endeavor to aid the less fortunate had spiraled into a grotesque display of corporate greed and incompetence. AquaAid had unwittingly sown the seeds of revolution, leaving a legacy of polluted waters and broken promises in its wake.
-    
+
     And so, as the sun set on the desolate desert lands, the tale of AquaAid served as a cautionary reminder of the perils of good intentions gone astray, and a sobering lesson on the dangers of playing god in foreign lands. May we all learn from their folly, and strive to do better in our efforts to aid those in need.
 
 
-## Define the function to create a message for the Assistant 
+## Define the function to create a message for the Assistant
 
 This function will create a thread message for the assistant by calling the `client.beta.threads.create()` with the content as parameters.
 
@@ -311,15 +311,15 @@ print(content)
     thread_hC5bIvln7hYrocJsAPBOlLfa
     msg_c6HwS5Qqeu3ARdEiyhUzqgVh
     In a classic case of good intentions gone awry, the company "AquaAid" embarked on a mission to help impoverished desert countries irrigate their arid lands and transform them into fertile wheat fields. With grand promises of ending hunger and poverty, AquaAid brought in state-of-the-art irrigation equipment and set to work in the vast desert landscapes.
-    
+
     But oh, how the tides turned against them! It was as if Murphy's Law had taken full effect - anything that could go wrong, did go wrong. The supposedly cutting-edge equipment malfunctioned almost immediately, causing vast stretches of once barren land to be tainted with pollutants and toxic chemicals. What was meant to be a beacon of hope for the struggling nations quickly turned into a nightmare, as the contaminated water and soil made it impossible to grow anything edible.
-    
+
     As the cost of growing wheat skyrocketed and the promised abundance of food remained a distant dream, the people of the affected countries began to see AquaAid not as benevolent saviors, but as agents of destruction. Anti-western sentiment grew rampant as accusations of imperialism and exploitation were hurled at the now beleaguered company.
-    
+
     Protests flared up, with angry mobs denouncing AquaAid and demanding immediate retribution for their ruined lands and shattered dreams. The once barren deserts were now teeming not with life-giving wheat, but with rebellion and dissent.
-    
+
     In a tragic turn of events, what was meant to be a noble endeavor to aid the less fortunate had spiraled into a grotesque display of corporate greed and incompetence. AquaAid had unwittingly sown the seeds of revolution, leaving a legacy of polluted waters and broken promises in its wake.
-    
+
     And so, as the sun set on the desolate desert lands, the tale of AquaAid served as a cautionary reminder of the perils of good intentions gone astray, and a sobering lesson on the dangers of playing god in foreign lands. May we all learn from their folly, and strive to do better in our efforts to aid those in need.
 
 
@@ -357,7 +357,7 @@ Print the thread details to verify if the thread is running successfully. and re
 
 
 ```python
-if run.status == 'completed': 
+if run.status == 'completed':
   messages = client.beta.threads.messages.list(
     thread_id=message.thread_id
   )
@@ -366,7 +366,7 @@ if run.status == 'completed':
   print(title)
 else:
   print(run.status)
-  
+
 ```
 
     AquaAid's Devastating Desert Mission

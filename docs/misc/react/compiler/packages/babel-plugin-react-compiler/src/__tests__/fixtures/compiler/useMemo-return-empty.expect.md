@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-return-empty.expect.md
 ---
+# Usememo Return Empty.Expect
+
 ## Input
 
 ```javascript
@@ -26,4 +28,3 @@ function component(a) {
 }
 
 ```
-      

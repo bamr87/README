@@ -3,7 +3,6 @@ title: "\U0001F5E1\uFE0F The Grand Armoury"
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: README.md
 ---

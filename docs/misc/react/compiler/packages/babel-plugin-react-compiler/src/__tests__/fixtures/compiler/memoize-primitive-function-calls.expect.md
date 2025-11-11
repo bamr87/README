@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: memoize-primitive-function-calls.expect.md
 ---
+# Memoize Primitive Function Calls.Expect
+
 ## Input
 
 ```javascript
@@ -101,7 +103,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[42],"output":43}</div>
 <div>{"inputs":[42],"output":43}</div>

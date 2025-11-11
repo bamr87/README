@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-not-call.expect.md
 ---
+# Error.Invalid Not Call.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.invalid-not-call.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

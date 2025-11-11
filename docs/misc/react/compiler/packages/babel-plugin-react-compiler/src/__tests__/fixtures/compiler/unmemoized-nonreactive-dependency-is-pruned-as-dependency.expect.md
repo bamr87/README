@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: unmemoized-nonreactive-dependency-is-pruned-as-dependency.expect.md
 ---
+# Unmemoized Nonreactive Dependency Is Pruned As Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>joe</div>

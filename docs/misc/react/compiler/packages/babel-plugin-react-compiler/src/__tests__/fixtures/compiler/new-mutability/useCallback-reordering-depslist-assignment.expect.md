@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-reordering-depslist-assignment.expect.md
 ---
+# Usecallback Reordering Depslist Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -86,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"getVal":{"kind":"Function","result":{"y":[[1,2],3,4]}},"shouldInvokeFns":true}</div>

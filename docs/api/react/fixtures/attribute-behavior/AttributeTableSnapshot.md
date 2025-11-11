@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: AttributeTableSnapshot.md
 ---
+# Attributetablesnapshot
+
 ﻿## `about` (on `<div>` inside `<div>`)
 | Test Case | Flags | Result |
 | --- | --- | --- |

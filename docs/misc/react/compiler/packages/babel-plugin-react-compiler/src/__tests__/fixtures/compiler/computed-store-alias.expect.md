@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: computed-store-alias.expect.md
 ---
+# Computed Store Alias.Expect
+
 ## Input
 
 ```javascript
@@ -64,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":3,"y":{"a":2},"wat0":"joe"}
 {"b":3,"y":{"a":2},"wat0":"joe"}

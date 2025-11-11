@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ignore-use-no-forget.expect.md
 ---
+# Ignore Use No Forget.Expect
+
 ## Input
 
 ```javascript
@@ -56,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>1</div>

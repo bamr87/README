@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: array-map-simple.expect.md
 ---
+# Array Map Simple.Expect
+
 ## Input
 
 ```javascript
@@ -113,7 +115,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]
 [[],[]]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: context-variable-reassigned-outside-of-lambda.expect.md
 ---
+# Context Variable Reassigned Outside Of Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -57,7 +59,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"callback":{"kind":"Function"},"shouldInvokeFns":true}</div>
 logs: [{}]

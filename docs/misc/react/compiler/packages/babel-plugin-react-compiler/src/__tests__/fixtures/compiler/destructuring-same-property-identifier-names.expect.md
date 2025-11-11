@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-same-property-identifier-names.expect.md
 ---
+# Destructuring Same Property Identifier Names.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [0,2]

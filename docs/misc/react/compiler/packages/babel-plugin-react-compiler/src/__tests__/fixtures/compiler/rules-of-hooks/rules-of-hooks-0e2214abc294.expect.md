@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-0e2214abc294.expect.md
 ---
+# Rules Of Hooks 0E2214Abc294.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function RegressionTest() {
 }
 
 ```
-      

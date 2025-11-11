@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: repro-allocating-ternary-test-instruction-scope.expect.md
 ---
+# Repro Allocating Ternary Test Instruction Scope.Expect
+
 ## Input
 
 ```javascript
@@ -74,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true}

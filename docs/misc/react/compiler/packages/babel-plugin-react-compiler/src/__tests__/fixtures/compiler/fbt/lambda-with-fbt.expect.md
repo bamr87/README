@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-with-fbt.expect.md
 ---
+# Lambda With Fbt.Expect
+
 ## Input
 
 ```javascript
@@ -87,4 +89,3 @@ function _temp() {
 }
 
 ```
-      

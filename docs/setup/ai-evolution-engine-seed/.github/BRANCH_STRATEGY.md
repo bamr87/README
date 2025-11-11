@@ -114,7 +114,7 @@ schedule:
 push:
   branches: [ evolved, main, develop ]
 
-# PR to evolved branch  
+# PR to evolved branch
 pull_request:
   branches: [ evolved, main, develop ]
 

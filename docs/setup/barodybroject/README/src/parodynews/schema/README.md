@@ -38,7 +38,7 @@ def validate_content_structure(content_data):
 def generate_parody_article(topic):
     with open('parodynews/schema/parody_prompt.md') as f:
         prompt_template = f.read()
-    
+
     # Use prompt with OpenAI API
     response = openai.chat.completions.create(
         model="gpt-4",

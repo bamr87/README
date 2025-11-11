@@ -88,4 +88,4 @@ Both test scripts provide:
 - Color-coded output (PASS/FAIL/INFO)
 - Detailed information about what's being tested
 - Summary of tests run, passed, and failed
-- Automatic cleanup of test directories 
+- Automatic cleanup of test directories

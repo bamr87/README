@@ -52,7 +52,7 @@ class TestAssistantCreation(TestCase):
         )
         assert assistant.name == "Test Assistant"
         assert assistant.is_active is True
-    
+
     def test_create_assistant_api_endpoint(self):
         """Test assistant creation through API."""
         response = self.client.post('/api/assistants/', {

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nonreactive-effect-event.expect.md
 ---
+# Nonreactive Effect Event.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ function _temp() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

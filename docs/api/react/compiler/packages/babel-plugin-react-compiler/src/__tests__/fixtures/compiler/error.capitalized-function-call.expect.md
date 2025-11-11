@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: error.capitalized-function-call.expect.md
 ---
+# Error.Capitalized Function Call.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +40,4 @@ error.capitalized-function-call.ts:3:12
   5 |   return x;
   6 | }
 ```
-          
-      
+

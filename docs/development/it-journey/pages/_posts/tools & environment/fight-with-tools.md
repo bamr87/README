@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: fight-with-tools.md
 ---
+# Fight With Tools
+
 ## Fight with Tools
 
 Here is an original set of lyrics inspired by the themes and messages of "Fight With Tools" by Flobots:

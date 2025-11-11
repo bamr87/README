@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-via-aliased-mutation-array.expect.md
 ---
+# Reactivity Via Aliased Mutation Array.Expect
+
 ## Input
 
 ```javascript
@@ -77,7 +79,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]
 [42]

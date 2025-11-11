@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-spread.expect.md
 ---
+# Error.Invalid Spread.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.invalid-spread.ts:9:4
   11 |
   12 |   return null;
 ```
-          
-      
+

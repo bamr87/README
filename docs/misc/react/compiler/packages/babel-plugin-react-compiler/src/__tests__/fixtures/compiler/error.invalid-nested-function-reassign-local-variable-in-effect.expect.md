@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-nested-function-reassign-local-variable-in-effect.expect.md
 ---
+# Error.Invalid Nested Function Reassign Local Variable In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -69,5 +71,4 @@ error.invalid-nested-function-reassign-local-variable-in-effect.ts:7:6
    9 |     return reassignLocal;
   10 |   };
 ```
-          
-      
+

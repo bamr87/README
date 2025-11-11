@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: import-as-local.expect.md
 ---
+# Import As Local.Expect
+
 ## Input
 
 ```javascript
@@ -142,6 +144,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>Hello</div>

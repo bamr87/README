@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-assigning-ref-accessing-function-to-object-property-if-not-mutated.expect.md
 ---
+# Allow Assigning Ref Accessing Function To Object Property If Not Mutated.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"object":{"foo":{"kind":"Function","result":42}},"shouldInvokeFns":true}</div>

@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: array-pattern-spread-creates-array.expect.md
 ---
+# Array Pattern Spread Creates Array.Expect
+
 ## Input
 
 ```javascript
@@ -108,6 +109,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[],"output":{"a":0,"b":"value1","c":true}}</div><div>{"inputs":[[0,1,2]],"output":[1,2,{"a":0,"b":"value1","c":true}]}</div>

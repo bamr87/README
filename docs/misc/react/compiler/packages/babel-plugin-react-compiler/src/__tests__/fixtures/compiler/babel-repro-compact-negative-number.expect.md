@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: babel-repro-compact-negative-number.expect.md
 ---
+# Babel Repro Compact Negative Number.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":5}</div>

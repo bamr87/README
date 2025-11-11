@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-member-expr-call.expect.md
 ---
+# Capturing Function Member Expr Call.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ function component(t0) {
 }
 
 ```
-      

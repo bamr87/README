@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-complex-multiple-if.expect.md
 ---
+# Ssa Complex Multiple If.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

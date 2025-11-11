@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.non-inlined-effect-fn.expect.md
 ---
+# Error.Non Inlined Effect Fn.Expect
+
 ## Input
 
 ```javascript
@@ -53,5 +55,4 @@ error.non-inlined-effect-fn.ts:20:2
   21 | }
   22 |
 ```
-          
-      
+

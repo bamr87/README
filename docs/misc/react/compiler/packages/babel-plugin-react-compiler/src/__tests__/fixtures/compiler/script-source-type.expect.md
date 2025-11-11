@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: script-source-type.expect.md
 ---
+# Script Source Type.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ exports = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>React Compiler</div>

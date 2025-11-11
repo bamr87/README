@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bailout-validate-ref-current-access.expect.md
 ---
+# Bailout Validate Ref Current Access.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ function Component_withRef(t0, ref) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

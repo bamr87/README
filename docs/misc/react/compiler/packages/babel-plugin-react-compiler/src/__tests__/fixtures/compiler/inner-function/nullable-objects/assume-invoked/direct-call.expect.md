@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: direct-call.expect.md
 ---
+# Direct Call.Expect
+
 ## Input
 
 ```javascript
@@ -75,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[[ function params=0 ]]"]
 ["[[ function params=0 ]]"]

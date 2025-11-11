@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-mixed-property-key-types.expect.md
 ---
+# Destructure Mixed Property Key Types.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,3]

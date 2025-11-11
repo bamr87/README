@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.validate-memoized-effect-deps-invalidated-dep-value.expect.md
 ---
+# Error.Validate Memoized Effect Deps Invalidated Dep Value.Expect
+
 ## Input
 
 ```javascript
@@ -52,5 +54,4 @@ error.validate-memoized-effect-deps-invalidated-dep-value.ts:11:2
   15 |
   16 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

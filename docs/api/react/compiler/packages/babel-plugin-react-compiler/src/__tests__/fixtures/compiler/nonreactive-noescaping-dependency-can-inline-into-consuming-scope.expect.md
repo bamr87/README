@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: nonreactive-noescaping-dependency-can-inline-into-consuming-scope.expect.md
 ---
+# Nonreactive Noescaping Dependency Can Inline Into Consuming Scope.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +50,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

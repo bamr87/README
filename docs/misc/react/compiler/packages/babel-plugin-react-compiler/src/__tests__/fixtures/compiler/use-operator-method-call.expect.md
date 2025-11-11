@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-operator-method-call.expect.md
 ---
+# Use Operator Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -124,7 +126,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[null],"output":["[[ cyclic ref *2 ]]"]}</div>
 <div>{"inputs":[42],"output":[42]}</div>

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-reassign-local-variable-in-hook-argument.expect.md
 ---
+# Error.Invalid Reassign Local Variable In Hook Argument.Expect
+
 ## Input
 
 ```javascript
@@ -71,5 +73,4 @@ error.invalid-reassign-local-variable-in-hook-argument.ts:8:4
   10 |
   11 |   const callback = newValue => {
 ```
-          
-      
+

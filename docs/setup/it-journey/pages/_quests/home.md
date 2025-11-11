@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: home.md
 ---
+# Home
+
 *Behold, brave adventurer! This is your personal overworld map—the mystical realm where all paths converge and all journeys begin. Here you can track your progress, plan your next adventures, and survey the vast landscape of IT mastery that awaits.*
 
 ## Quest System Overview
@@ -22,20 +24,20 @@ graph TB
         Plan[🎯 Plan Adventures]
         Achievements[🏆 View Achievements]
     end
-    
+
     subgraph "🗺️ Quest Realms"
         InitWorld[🏗️ Init World]
         Levels[⚔️ Level System]
         Specializations[🎭 Specializations]
         Chronicles[📜 Chronicles]
     end
-    
+
     subgraph "📚 Support Systems"
         Codex[📖 Codex]
         Tools[🛠️ Tools]
         Community[🤝 Community]
     end
-    
+
     Start --> InitWorld
     Start --> Levels
     Start --> Specializations
@@ -442,7 +444,7 @@ graph LR
         C --> D[⚡ Master]
         D --> E[👑 Legend]
     end
-    
+
     subgraph "Current Status"
         Status[📍 Currently at: Apprentice Level]
         Next[🎯 Next Goal: Complete Init World]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-alias-used-as-annotation_.flow.expect.md
 ---
+# Type Alias Used As Annotation .Flow.Expect
+
 ## Input
 
 ```javascript
@@ -45,7 +47,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['hello, world']

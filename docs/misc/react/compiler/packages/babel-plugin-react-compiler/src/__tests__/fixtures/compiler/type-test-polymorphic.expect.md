@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-test-polymorphic.expect.md
 ---
+# Type Test Polymorphic.Expect
+
 ## Input
 
 ```javascript
@@ -51,4 +53,3 @@ function component() {
 }
 
 ```
-      

@@ -57,7 +57,7 @@ ForkMe provides flexible forking and cloning options for GitHub repositories, go
 ./forkme.sh --analyze-only owner/repo
 ```
 
-**→ [Full ForkMe Documentation](FORKME/FORKME.md)**  
+**→ [Full ForkMe Documentation](FORKME/FORKME.md)**
 **→ [Quick Reference Card](FORKME/FORKME-QUICK-REFERENCE.md)**
 
 ---

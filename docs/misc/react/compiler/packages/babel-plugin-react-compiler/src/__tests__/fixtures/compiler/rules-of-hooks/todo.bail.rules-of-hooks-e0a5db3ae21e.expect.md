@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.bail.rules-of-hooks-e0a5db3ae21e.expect.md
 ---
+# Todo.Bail.Rules Of Hooks E0A5Db3Ae21E.Expect
+
 ## Input
 
 ```javascript
@@ -103,4 +105,3 @@ Namespace.useHook = () => {
 };
 
 ```
-      

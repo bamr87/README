@@ -127,7 +127,7 @@ remote_theme: "bamr87/zer0-mistakes"
 
 # Development (_config_dev.yml) - Auto-generated with front matter
 ---
-# Front Matter: Development Configuration  
+# Front Matter: Development Configuration
 # Description: Local development overrides for Docker environment
 # Environment: development
 # Docker Notes: Local theme development with live reload

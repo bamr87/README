@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-scopes-begin-same-instr-valueblock.expect.md
 ---
+# Nested Scopes Begin Same Instr Valueblock.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":2,"wat0":"joe"}
 {"b":2,"wat0":"joe"}

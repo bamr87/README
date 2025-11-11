@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-array-filter-known-nonmutate-Boolean.expect.md
 ---
+# Repro Array Filter Known Nonmutate Boolean.Expect
+
 ## Input
 
 ```javascript
@@ -118,7 +120,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":[{"value":"foo"},{"value":5}]}</div>
 <div>{"children":[{"value":"foo"},{"value":6}]}</div>

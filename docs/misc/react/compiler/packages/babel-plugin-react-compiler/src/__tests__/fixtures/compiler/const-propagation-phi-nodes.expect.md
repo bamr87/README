@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: const-propagation-phi-nodes.expect.md
 ---
+# Const Propagation Phi Nodes.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":1,"y":1,"z":1}

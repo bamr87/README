@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-compile-hooks-with-multiple-params.expect.md
 ---
+# Infer Compile Hooks With Multiple Params.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"value":{}}

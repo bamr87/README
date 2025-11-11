@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture-in-function-expression-indirect.expect.md
 ---
+# Capture In Function Expression Indirect.Expect
+
 ## Input
 
 ```javascript
@@ -80,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"x":{"bar":3,"x":{"x":{"foo":2}},"wat0":"joe"}}</div>
 <div>{"x":{"bar":3,"x":{"x":{"foo":2}},"wat0":"joe"}}</div>

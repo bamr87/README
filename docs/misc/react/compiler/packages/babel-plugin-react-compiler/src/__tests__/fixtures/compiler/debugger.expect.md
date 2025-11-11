@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: debugger.expect.md
 ---
+# Debugger.Expect
+
 ## Input
 
 ```javascript
@@ -52,4 +54,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

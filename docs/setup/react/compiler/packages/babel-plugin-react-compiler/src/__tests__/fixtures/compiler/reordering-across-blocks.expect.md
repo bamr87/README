@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: reordering-across-blocks.expect.md
 ---
+# Reordering Across Blocks.Expect
+
 ## Input
 
 ```javascript
@@ -110,6 +112,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

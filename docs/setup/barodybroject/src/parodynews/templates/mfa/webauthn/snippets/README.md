@@ -38,7 +38,7 @@ class WebAuthnHelper {
         }
         return bytes.buffer;
     }
-    
+
     static arrayBufferToBase64url(buffer) {
         const bytes = new Uint8Array(buffer);
         let binaryString = '';
@@ -48,9 +48,9 @@ class WebAuthnHelper {
         const base64 = window.btoa(binaryString);
         return base64.replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
     }
-    
+
     static async isSupported() {
-        return window.PublicKeyCredential && 
+        return window.PublicKeyCredential &&
                await PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable();
     }
 }
@@ -74,27 +74,27 @@ async function authenticateWithWebAuthn() {
                 'Content-Type': 'application/json',
             },
         });
-        
+
         const options = await response.json();
-        
+
         if (!response.ok) {
             throw new Error(options.error || 'Failed to get authentication options');
         }
-        
+
         // Convert base64url to ArrayBuffer
         options.challenge = WebAuthnHelper.base64urlToArrayBuffer(options.challenge);
-        
+
         if (options.allowCredentials) {
             options.allowCredentials.forEach(cred => {
                 cred.id = WebAuthnHelper.base64urlToArrayBuffer(cred.id);
             });
         }
-        
+
         // Get credential from authenticator
         const credential = await navigator.credentials.get({
             publicKey: options
         });
-        
+
         // Send credential to server for verification
         const authResponse = await fetch('{% url "webauthn_complete_auth" %}', {
             method: 'POST',
@@ -109,22 +109,22 @@ async function authenticateWithWebAuthn() {
                     authenticatorData: WebAuthnHelper.arrayBufferToBase64url(credential.response.authenticatorData),
                     clientDataJSON: WebAuthnHelper.arrayBufferToBase64url(credential.response.clientDataJSON),
                     signature: WebAuthnHelper.arrayBufferToBase64url(credential.response.signature),
-                    userHandle: credential.response.userHandle ? 
+                    userHandle: credential.response.userHandle ?
                         WebAuthnHelper.arrayBufferToBase64url(credential.response.userHandle) : null
                 },
                 type: credential.type
             })
         });
-        
+
         const result = await authResponse.json();
-        
+
         if (authResponse.ok) {
             // Redirect on successful authentication
             window.location.href = result.redirect_url || '{% url "dashboard" %}';
         } else {
             throw new Error(result.error || 'Authentication failed');
         }
-        
+
     } catch (error) {
         console.error('WebAuthn authentication failed:', error);
         alert('Security key authentication failed: ' + error.message);
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Container Configuration
 - **Runtime**: WebAuthn JavaScript API integration
-- **Dependencies**: 
+- **Dependencies**:
   - Modern browser with FIDO2/WebAuthn support
   - HTTPS/TLS for secure credential transmission
   - Base64url encoding/decoding utilities
@@ -151,11 +151,11 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Security**: Cross-origin and anti-phishing protections
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - WebAuthn authentication workflows and security pages
   - Login and registration forms requiring security key authentication
   - MFA setup and management interfaces
-- **Outgoing**: 
+- **Outgoing**:
   - Security key verification and credential management
   - Authentication state management and session creation
   - User authentication success/failure handling

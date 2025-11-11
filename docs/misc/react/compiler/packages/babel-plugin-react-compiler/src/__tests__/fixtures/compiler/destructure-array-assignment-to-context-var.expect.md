@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-array-assignment-to-context-var.expect.md
 ---
+# Destructure Array Assignment To Context Var.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":42}

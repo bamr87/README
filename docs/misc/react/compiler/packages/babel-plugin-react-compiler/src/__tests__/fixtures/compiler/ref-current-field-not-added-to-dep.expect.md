@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-current-field-not-added-to-dep.expect.md
 ---
+# Ref Current Field Not Added To Dep.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function VideoTab() {
 }
 
 ```
-      

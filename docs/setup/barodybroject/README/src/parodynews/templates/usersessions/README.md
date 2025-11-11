@@ -29,7 +29,7 @@ These templates are used when users access the session management functionality:
 
 <!-- Shows table of active sessions with details like:
 - Session start time
-- IP address 
+- IP address
 - Browser information
 - Last seen timestamp
 - Current session indicator

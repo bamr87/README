@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: jsx-bracket-in-text.expect.md
 ---
+# Jsx Bracket In Text.Expect
+
 ## Input
 
 ```javascript
@@ -54,6 +56,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>If the string contains the string {pageNumber} it will be replaced by the page number.</div>

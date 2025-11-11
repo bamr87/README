@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-local-tag-in-lambda.expect.md
 ---
+# Jsx Local Tag In Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":4}</div>

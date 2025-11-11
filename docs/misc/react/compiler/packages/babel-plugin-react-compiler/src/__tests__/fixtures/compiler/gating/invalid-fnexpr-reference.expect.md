@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: invalid-fnexpr-reference.expect.md
 ---
+# Invalid Fnexpr Reference.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['memo: The first argument must be a component. Instead received: %s','undefined']

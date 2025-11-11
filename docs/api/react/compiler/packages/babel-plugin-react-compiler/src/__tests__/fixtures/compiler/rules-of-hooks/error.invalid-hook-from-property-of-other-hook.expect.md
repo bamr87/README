@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-from-property-of-other-hook.expect.md
 ---
+# Error.Invalid Hook From Property Of Other Hook.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.invalid-hook-from-property-of-other-hook.ts:3:14
   5 | }
   6 |
 ```
-          
-      
+

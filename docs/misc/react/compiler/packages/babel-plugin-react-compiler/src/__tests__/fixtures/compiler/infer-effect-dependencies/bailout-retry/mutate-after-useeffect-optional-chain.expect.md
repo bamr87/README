@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: mutate-after-useeffect-optional-chain.expect.md
 ---
+# Mutate After Useeffect Optional Chain.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 {"kind":"AutoDepsDecorations","fnLoc":{"start":{"line":9,"column":2,"index":314},"end":{"line":9,"column":49,"index":361},"filename":"mutate-after-useeffect-optional-chain.ts"},"decorations":[{"start":{"line":9,"column":24,"index":336},"end":{"line":9,"column":27,"index":339},"filename":"mutate-after-useeffect-optional-chain.ts","identifierName":"arr"}]}
 {"kind":"CompileSuccess","fnLoc":{"start":{"line":5,"column":0,"index":149},"end":{"line":12,"column":1,"index":404},"filename":"mutate-after-useeffect-optional-chain.ts"},"fnName":"Component","memoSlots":0,"memoBlocks":0,"memoValues":0,"prunedMemoBlocks":0,"prunedMemoValues":0}
 ```
-      
+
 ### Eval output
 (kind: ok) [{"value":1}]
 logs: [1]

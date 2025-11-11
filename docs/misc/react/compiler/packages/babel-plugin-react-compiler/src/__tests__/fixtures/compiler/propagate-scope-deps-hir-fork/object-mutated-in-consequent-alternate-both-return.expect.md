@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-mutated-in-consequent-alternate-both-return.expect.md
 ---
+# Object Mutated In Consequent Alternate Both Return.Expect
+
 ## Input
 
 ```javascript
@@ -70,6 +72,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true,"value":[0,1,2]}

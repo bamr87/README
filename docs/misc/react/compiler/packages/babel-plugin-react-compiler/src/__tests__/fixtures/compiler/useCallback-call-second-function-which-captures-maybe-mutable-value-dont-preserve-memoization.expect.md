@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: useCallback-call-second-function-which-captures-maybe-mutable-value-dont-preserve-memoization.expect.md
 ---
+# Usecallback Call Second Function Which Captures Maybe Mutable Value Dont Preserve Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -88,6 +90,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

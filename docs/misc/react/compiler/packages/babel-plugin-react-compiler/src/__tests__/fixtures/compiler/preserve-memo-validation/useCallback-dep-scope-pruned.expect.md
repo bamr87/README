@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-dep-scope-pruned.expect.md
 ---
+# Usecallback Dep Scope Pruned.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

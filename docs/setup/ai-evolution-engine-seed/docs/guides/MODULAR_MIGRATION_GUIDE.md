@@ -96,7 +96,7 @@ All scripts now use standardized headers with comprehensive metadata:
 # @lastModified 2025-07-05
 # @version 2.0.0
 #
-# @relatedIssues 
+# @relatedIssues
 #   - #modular-refactor: Migrate to modular architecture
 #
 # @relatedEvolutions

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useReducer-returned-dispatcher-is-non-reactive.expect.md
 ---
+# Usereducer Returned Dispatcher Is Non Reactive.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

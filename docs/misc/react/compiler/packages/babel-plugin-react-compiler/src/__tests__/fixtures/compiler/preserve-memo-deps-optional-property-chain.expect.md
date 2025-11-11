@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: preserve-memo-deps-optional-property-chain.expect.md
 ---
+# Preserve Memo Deps Optional Property Chain.Expect
+
 ## Input
 
 ```javascript
@@ -122,7 +124,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'a') ]]
 [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'a') ]]

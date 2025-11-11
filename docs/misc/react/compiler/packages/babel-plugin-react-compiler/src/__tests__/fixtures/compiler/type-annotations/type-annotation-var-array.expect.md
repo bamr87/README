@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-annotation-var-array.expect.md
 ---
+# Type Annotation Var Array.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

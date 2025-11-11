@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: capturing-function-capture-ref-before-rename.expect.md
 ---
+# Capturing Function Capture Ref Before Rename.Expect
+
 ## Input
 
 ```javascript
@@ -95,7 +97,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":{"a":2,"wat0":"joe"},"z":{"b":3}}
 {"y":{"a":2,"wat0":"joe"},"z":{"b":3}}

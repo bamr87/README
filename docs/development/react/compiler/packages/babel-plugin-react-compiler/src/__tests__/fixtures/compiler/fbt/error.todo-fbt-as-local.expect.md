@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-fbt-as-local.expect.md
 ---
+# Error.Todo Fbt As Local.Expect
+
 ## Input
 
 ```javascript
@@ -73,5 +75,4 @@ error.todo-fbt-as-local.ts:18:19
   20 |       `Hello, ${fbt.param('(key) name', identity(props.name))}!`,
   21 |       '(description) Greeting'
 ```
-          
-      
+

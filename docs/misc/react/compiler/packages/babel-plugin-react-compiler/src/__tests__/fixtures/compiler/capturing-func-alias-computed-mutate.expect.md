@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-alias-computed-mutate.expect.md
 ---
+# Capturing Func Alias Computed Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -62,7 +64,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":{"a":2},"wat0":"joe"}
 {"x":{"a":2},"wat0":"joe"}

@@ -28,7 +28,7 @@ Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether
 - **Develop Tutorials**: Build step-by-step guides
 - **Create Notebooks**: Contribute Jupyter notebooks
 
-### 💻 Code Contributions  
+### 💻 Code Contributions
 - **Build Features**: Implement new capabilities
 - **Fix Bugs**: Squash those pesky issues
 - **Improve Scripts**: Enhance automation

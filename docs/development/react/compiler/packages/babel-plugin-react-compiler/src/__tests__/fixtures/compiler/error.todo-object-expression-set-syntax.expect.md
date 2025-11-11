@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-object-expression-set-syntax.expect.md
 ---
+# Error.Todo Object Expression Set Syntax.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.todo-object-expression-set-syntax.ts:4:4
   8 |   object.value = props.value;
   9 |   return <div>{value}</div>;
 ```
-          
-      
+

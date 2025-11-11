@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: error.todo-kitchensink.expect.md
 ---
+# Error.Todo Kitchensink.Expect
+
 ## Input
 
 ```javascript
@@ -233,5 +234,4 @@ error.todo-kitchensink.ts:53:9
   55 |     case foo(): {
   56 |     }
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-expr-directive.expect.md
 ---
+# Function Expr Directive.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button>0</button>

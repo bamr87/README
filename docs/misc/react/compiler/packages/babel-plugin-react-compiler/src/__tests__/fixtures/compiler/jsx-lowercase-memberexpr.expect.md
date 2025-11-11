@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-lowercase-memberexpr.expect.md
 ---
+# Jsx Lowercase Memberexpr.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"children":["hello world ","sathya"]}</div>

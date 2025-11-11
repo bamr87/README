@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: component.expect.md
 ---
+# Component.Expect
+
 ## Input
 
 ```javascript
@@ -109,4 +111,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

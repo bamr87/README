@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: array-concat-should-capture.expect.md
 ---
+# Array Concat Should Capture.Expect
+
 ## Input
 
 ```javascript
@@ -71,7 +72,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":1,"wat0":"joe"},{},1,2]
 [{"a":1,"wat0":"joe"},{},1,3]

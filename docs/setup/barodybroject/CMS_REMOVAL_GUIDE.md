@@ -12,8 +12,8 @@ source_file: CMS_REMOVAL_GUIDE.md
 ---
 # Django CMS Removal Guide
 
-**Version**: 0.2.0  
-**Date**: January 27, 2025  
+**Version**: 0.2.0
+**Date**: January 27, 2025
 **Status**: CMS functionality temporarily disabled for deployment simplification
 
 ## Overview
@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     # 'mptt',
     # 'treebeard',
     # And 20+ more CMS-related apps...
-    
+
     # Core Django apps remain active
     'django.contrib.admin',
     'django.contrib.auth',
@@ -114,7 +114,7 @@ TEMPLATES = [
 #     title = models.CharField(max_length=200)
 #     content = PlaceholderField('content')
 #     created_at = models.DateTimeField(auto_now_add=True)
-#     
+#
 #     def __str__(self):
 #         return self.title
 
@@ -126,7 +126,7 @@ TEMPLATES = [
 
 **Core Models Preserved:**
 - `Post` model (main content model) - **Fully functional**
-- `Category` model - **Fully functional**  
+- `Category` model - **Fully functional**
 - `Tag` model - **Fully functional**
 - User authentication models - **Fully functional**
 
@@ -146,7 +146,7 @@ class PostAdmin(admin.ModelAdmin):  # Removed FrontendEditableAdminMixin
     list_filter = ['status', 'category', 'created_at']
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
-    
+
     # CMS frontend editing capabilities temporarily removed
     # frontend_editable_fields = ("title", "content")
 ```
@@ -165,7 +165,7 @@ def post_list(request):
     # CMS page context removed:
     # current_page = get_page_from_request(request)
     # cms_context = {'current_page': current_page}
-    
+
     context = {
         'posts': posts,
         # **cms_context,  # CMS context disabled
@@ -212,11 +212,11 @@ urlpatterns = [
 <body>
     {% cms_toolbar %}
     {% show_menu 0 1 100 100 "menu.html" %}
-    
+
     {% block content %}
         {% placeholder "content" %}
     {% endblock %}
-    
+
     {% render_block "js" %}
 </body>
 </html>
@@ -231,11 +231,11 @@ urlpatterns = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Parody News Generator{% endblock %}</title>
-    
+
     <!-- Bootstrap 5.3.3 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -245,11 +245,11 @@ urlpatterns = [
             <!-- Standard Bootstrap navigation -->
         </div>
     </nav>
-    
+
     <main class="container my-4">
         {% block content %}{% endblock %}
     </main>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     {% block extra_js %}{% endblock %}
@@ -368,7 +368,7 @@ A future enhancement could include a restoration script:
 ```bash
 #!/bin/bash
 # cms_restore.sh - Automated CMS restoration script
-# 
+#
 # This script would:
 # 1. Find all commented CMS code sections
 # 2. Uncomment them systematically

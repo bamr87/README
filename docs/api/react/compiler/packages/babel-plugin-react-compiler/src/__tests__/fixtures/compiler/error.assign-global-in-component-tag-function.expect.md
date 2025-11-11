@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.assign-global-in-component-tag-function.expect.md
 ---
+# Error.Assign Global In Component Tag Function.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.assign-global-in-component-tag-function.ts:3:4
   5 |   return <Foo />;
   6 | }
 ```
-          
-      
+

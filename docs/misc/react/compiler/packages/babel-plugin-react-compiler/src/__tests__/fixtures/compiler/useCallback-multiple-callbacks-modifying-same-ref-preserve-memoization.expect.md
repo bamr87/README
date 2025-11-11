@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-multiple-callbacks-modifying-same-ref-preserve-memoization.expect.md
 ---
+# Usecallback Multiple Callbacks Modifying Same Ref Preserve Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -87,6 +89,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input>

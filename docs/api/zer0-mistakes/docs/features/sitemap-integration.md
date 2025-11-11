@@ -5,7 +5,6 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: sitemap-integration.md
 ---
@@ -158,10 +157,10 @@ graph TD
     D --> E[Content Analysis]
     E --> F[Recent Activity]
     F --> G[Advanced Analytics]
-    
+
     C --> H[Search & Filter Content]
     H --> I[Navigate to Specific Content]
-    
+
     D --> J[Explore Collections]
     J --> K[View Collection Items]
 ```
@@ -236,7 +235,7 @@ Long Term:
 ```yaml
 Created:
   - _layouts/sitemap-collection.html: Main unified layout
-  
+
 Modified:
   - pages/sitemap.md: Updated to use new layout
   - _data/navigation/main.yml: Added sitemap navigation
@@ -254,7 +253,7 @@ Required:
   - Bootstrap 5: Responsive framework and components
   - Bootstrap Icons: Visual iconography
   - Jekyll Collections: Content organization system
-  
+
 Optional:
   - site.data.content_statistics: Enhanced analytics (if available)
   - Custom statistics data: Advanced metrics and insights

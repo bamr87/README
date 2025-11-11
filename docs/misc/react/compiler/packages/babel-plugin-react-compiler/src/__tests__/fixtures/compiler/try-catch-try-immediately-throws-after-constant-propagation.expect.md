@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-try-immediately-throws-after-constant-propagation.expect.md
 ---
+# Try Catch Try Immediately Throws After Constant Propagation.Expect
+
 ## Input
 
 ```javascript
@@ -43,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

@@ -14,7 +14,7 @@ Ah, embarking on your IT adventure, are we? Fantastic! To become an IT wizard, y
 
 1. **Choose Your Path**: IT is a realm with many paths - development, system administration, network engineering, security, and cloud technologies, to name a few. Reflect on what excites you most. Do you enjoy creating things (development)? Solving puzzles (security)? Building and maintaining systems (system admin or network engineer)? Or perhaps you're drawn to the vast skies of cloud technologies?
 
-2. **Learn the Basics**: Before you can cast complex spells, you need to understand the fundamentals. This includes basic computer literacy, understanding how operating systems work (like Windows, Linux), and getting familiar with networking concepts. 
+2. **Learn the Basics**: Before you can cast complex spells, you need to understand the fundamentals. This includes basic computer literacy, understanding how operating systems work (like Windows, Linux), and getting familiar with networking concepts.
 
 3. **Select Your First Language**: In the realm of development, learning a programming language is crucial. Python is a great starter—it's like the "Lumos" spell of programming languages, illuminating the path ahead. If you're leaning towards web development, HTML, CSS, and JavaScript are your basic trifecta.
 

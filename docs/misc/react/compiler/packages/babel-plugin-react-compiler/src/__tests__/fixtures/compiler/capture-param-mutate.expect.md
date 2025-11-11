@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture-param-mutate.expect.md
 ---
+# Capture Param Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -102,4 +104,3 @@ function _temp(arg) {
 }
 
 ```
-      

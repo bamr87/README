@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: todo.memoize-loops-that-produce-memoizeable-values.expect.md
 ---
+# Todo.Memoize Loops That Produce Memoizeable Values.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +67,6 @@ function useHook(nodeID, condition) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

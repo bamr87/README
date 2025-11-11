@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: repro-function-expression-effects-stack-overflow.expect.md
 ---
+# Repro Function Expression Effects Stack Overflow.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

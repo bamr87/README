@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reduce-if-exhaustive-nonpoisoned-deps1.expect.md
 ---
+# Reduce If Exhaustive Nonpoisoned Deps1.Expect
+
 ## Input
 
 ```javascript
@@ -121,7 +123,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'a') ]]

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.assign-ref-in-effect-hint.expect.md
 ---
+# Error.Assign Ref In Effect Hint.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.assign-ref-in-effect-hint.ts:5:4
 
 Hint: If this value is a Ref (value returned by `useRef()`), rename the variable to end in "Ref".
 ```
-          
-      
+

@@ -29,14 +29,14 @@ It will run migrations, create admin users, and configure your app.
 Do you want to continue with the setup? (y/n): y
 
 ============================================================
-                   Checking Prerequisites                   
+                   Checking Prerequisites
 ============================================================
 ✓ Azure CLI is installed
 ✓ Azure Developer CLI (azd) is installed
 ✓ Logged into Azure as: user@example.com
 
 ============================================================
-                Getting Environment Information             
+                Getting Environment Information
 ============================================================
 ✓ Environment: my-app-prod
 ✓ Resource Group: rg-my-app-prod
@@ -45,12 +45,12 @@ Do you want to continue with the setup? (y/n): y
 ✓ App URL: https://src.example.azurecontainerapps.io
 
 ============================================================
-              Testing Application Connectivity             
+              Testing Application Connectivity
 ============================================================
 ✓ Application is responding
 
 ============================================================
-                Running Database Migrations                
+                Running Database Migrations
 ============================================================
 This will run Django migrations to set up the database schema.
 Do you want to run migrations? (y/n): y
@@ -58,7 +58,7 @@ Running migrations...
 ✓ Migrations completed successfully
 
 ============================================================
-                 Collecting Static Files                   
+                 Collecting Static Files
 ============================================================
 This will collect static files for proper CSS/JS serving.
 Do you want to collect static files? (y/n): y
@@ -66,7 +66,7 @@ Collecting static files...
 ✓ Static files collected successfully
 
 ============================================================
-                Creating Superuser Account                 
+                Creating Superuser Account
 ============================================================
 A superuser account is needed to access the Django admin panel.
 Do you want to create a superuser account? (y/n): y
@@ -79,7 +79,7 @@ Creating superuser...
 ℹ Admin URL: https://src.example.azurecontainerapps.io/admin/
 
 ============================================================
-                  Setting Up CMS Pages                     
+                  Setting Up CMS Pages
 ============================================================
 This will create initial CMS pages and configure the site.
 Do you want to set up initial CMS pages? (y/n): y
@@ -87,13 +87,13 @@ Setting up CMS pages...
 ✓ CMS pages set up successfully
 
 ============================================================
-                  Running Health Check                     
+                  Running Health Check
 ============================================================
 ✓ Main application is responding
 ✓ Admin panel is accessible
 
 ============================================================
-               Deployment Setup Complete                   
+               Deployment Setup Complete
 ============================================================
 
 Your Django application is now set up!

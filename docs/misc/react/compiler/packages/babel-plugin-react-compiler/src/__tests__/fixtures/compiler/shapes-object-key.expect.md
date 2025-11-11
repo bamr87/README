@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: shapes-object-key.expect.md
 ---
+# Shapes Object Key.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2}

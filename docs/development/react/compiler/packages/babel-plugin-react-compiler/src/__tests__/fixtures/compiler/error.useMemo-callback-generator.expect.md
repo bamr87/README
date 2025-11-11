@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-callback-generator.expect.md
 ---
+# Error.Usememo Callback Generator.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.useMemo-callback-generator.ts:6:4
   8 |   return x;
   9 | }
 ```
-          
-      
+

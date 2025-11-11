@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-function-shadowed-identifiers.expect.md
 ---
+# Nested Function Shadowed Identifiers.Expect
+
 ## Input
 
 ```javascript
@@ -66,4 +68,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

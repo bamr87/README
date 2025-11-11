@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-undefined-expression-of-jsxexpressioncontainer.expect.md
 ---
+# Repro Undefined Expression Of Jsxexpressioncontainer.Expect
+
 ## Input
 
 ```javascript
@@ -102,6 +104,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>StaticText1<div>{"type":"submit","children":["Submit!"],"style":{"left":true}}</div><div>{"type":"button","children":["Reset"],"style":{"right":true}}</div></div>

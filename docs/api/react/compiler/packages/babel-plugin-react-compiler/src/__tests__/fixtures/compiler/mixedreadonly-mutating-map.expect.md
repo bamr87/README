@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: mixedreadonly-mutating-map.expect.md
 ---
+# Mixedreadonly Mutating Map.Expect
+
 ## Input
 
 ```javascript
@@ -157,7 +159,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"x":[2,2,2],"count":3}</div><div>{"item":1}</div>
 <div>{"x":[2,2,2],"count":4}</div><div>{"item":1}</div>

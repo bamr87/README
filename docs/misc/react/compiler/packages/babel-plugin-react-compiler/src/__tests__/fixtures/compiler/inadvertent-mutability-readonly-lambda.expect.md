@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: inadvertent-mutability-readonly-lambda.expect.md
 ---
+# Inadvertent Mutability Readonly Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ function Component(props) {
 }
 
 ```
-      

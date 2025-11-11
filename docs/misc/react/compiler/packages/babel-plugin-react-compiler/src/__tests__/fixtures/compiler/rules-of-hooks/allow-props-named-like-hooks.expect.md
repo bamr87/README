@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-props-named-like-hooks.expect.md
 ---
+# Allow Props Named Like Hooks.Expect
+
 ## Input
 
 ```javascript
@@ -86,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"val":{"useProperty":true},"children":[2,"[[ cyclic ref *1 ]]",true]}</div>

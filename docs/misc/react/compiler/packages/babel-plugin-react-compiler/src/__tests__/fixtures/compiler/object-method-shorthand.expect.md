@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-shorthand.expect.md
 ---
+# Object Method Shorthand.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

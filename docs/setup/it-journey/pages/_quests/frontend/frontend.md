@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: frontend.md
 ---
+# Frontend
+
 Embarking on the quest to build a Jekyll site using Bootstrap for CSS and JavaScript in the Frontend Forests requires a clear map and a set of steps to guide you through the enchanted woods. Below is an outline designed to navigate you through this journey, ensuring you leverage the magical powers of Jekyll and Bootstrap to create an enchanting website.
 
 ### 🌲 The Frontend Forests Quest: Crafting a Jekyll Site with Bootstrap

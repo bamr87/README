@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: same-variable-as-dep-and-redeclare-maybe-frozen.expect.md
 ---
+# Same Variable As Dep And Redeclare Maybe Frozen.Expect
+
 ## Input
 
 ```javascript
@@ -133,4 +135,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

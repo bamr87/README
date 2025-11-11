@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useImperativeHandle-ref-mutate.expect.md
 ---
+# Useimperativehandle Ref Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

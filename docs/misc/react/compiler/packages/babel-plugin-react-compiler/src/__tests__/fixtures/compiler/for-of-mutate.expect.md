@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-mutate.expect.md
 ---
+# For Of Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"a":0,"b":"value1","c":true,"wat0":"joe"}</div></div>

@@ -66,10 +66,10 @@ First, ensure you have the correct El Capitan installer file:
 #### Using Disk Utility
 
 1. **Insert your media**: Connect the SD card (via card reader if needed) or USB drive to your Mac
-2. **Open Disk Utility**: 
+2. **Open Disk Utility**:
    - Navigate to `Applications > Utilities > Disk Utility`
    - Or press `⌘ + Space`, type "Disk Utility", and press Enter
-3. **Select the device**: 
+3. **Select the device**:
    - In the sidebar, select the **top-level device** (not a partition)
    - Look for the physical device name (e.g., "Generic SD Card" or "USB Drive")
 4. **Erase and format**:
@@ -420,7 +420,7 @@ sudo asr restore --source ~/Desktop/ElCapitan-Bootable.dmg --target /Volumes/SDC
 
 **You'll Be Asked For**: Your administrator password
 
-**Expected Result**: 
+**Expected Result**:
 - Progress updates showing data being copied
 - Verification phase (even with `--noverify`, basic checks occur)
 - Total time: 10-20 minutes depending on media speed
@@ -459,7 +459,7 @@ ls -la /Volumes/
 ls -la "/Volumes/OS X Base System/"
 ```
 
-**Expected Result**: 
+**Expected Result**:
 - Volume renamed to "OS X Base System" (automatic during restoration)
 - Contains system files including `System/`, `Library/`, `BaseSystem.dmg`, etc.
 
@@ -580,7 +580,7 @@ rm ~/Desktop/InstallMacOSX.pkg
 
 **Symptoms**: SD card doesn't appear in Startup Manager
 
-**Causes**: 
+**Causes**:
 - Some 2009 Macs don't support SD card booting
 - Firmware limitations on certain models
 
@@ -1081,6 +1081,6 @@ Continue your legacy Mac journey:
 
 ---
 
-*Article last updated: October 13, 2025*  
-*Tested on: MacBook Pro (M3, 2024) running macOS Sequoia 15.0*  
+*Article last updated: October 13, 2025*
+*Tested on: MacBook Pro (M3, 2024) running macOS Sequoia 15.0*
 *Target hardware: MacBook (Late 2009, Early 2010)*

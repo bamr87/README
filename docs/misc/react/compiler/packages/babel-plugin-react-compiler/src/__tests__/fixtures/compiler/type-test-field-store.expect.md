@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-test-field-store.expect.md
 ---
+# Type Test Field Store.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

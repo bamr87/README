@@ -246,7 +246,7 @@ class PathTracker {
      */
     async executeInPath(pathName, fn, context = {}) {
         this.enterPath(pathName, context);
-        
+
         try {
             const result = await fn();
             this.exitPath(pathName, { success: true });
@@ -336,8 +336,8 @@ class PathTracker {
             };
         }
 
-        report.summary.averageTime = report.summary.totalExecutions > 0 
-            ? report.summary.totalTime / report.summary.totalExecutions 
+        report.summary.averageTime = report.summary.totalExecutions > 0
+            ? report.summary.totalTime / report.summary.totalExecutions
             : 0;
 
         return report;
@@ -377,7 +377,7 @@ export const createPathTrackerMiddleware = (pathName) => {
 export const pathTracked = (pathName) => {
     return (target, propertyKey, descriptor) => {
         const originalMethod = descriptor.value;
-        
+
         descriptor.value = async function(...args) {
             return await pathTracker.executeInPath(
                 pathName || `${target.constructor.name}.${propertyKey}`,
@@ -385,7 +385,7 @@ export const pathTracked = (pathName) => {
                 { className: target.constructor.name, methodName: propertyKey }
             );
         };
-        
+
         return descriptor;
     };
 };
@@ -510,7 +510,7 @@ export class AppLifecycle {
     async start(port = 3000) {
         return pathTracker.executeInPath('app_startup', async () => {
             this.server = this.app.listen(port, '0.0.0.0', () => {
-                logger.info(`Server started on port ${port}`, { 
+                logger.info(`Server started on port ${port}`, {
                     component: 'app',
                     port,
                     environment: process.env.NODE_ENV
@@ -519,7 +519,7 @@ export class AppLifecycle {
 
             // Setup graceful shutdown
             this.setupGracefulShutdown();
-            
+
             return this.server;
         });
     }
@@ -588,7 +588,7 @@ class UserController {
     async getUsers(req, res, next) {
         try {
             const { page = 1, limit = 10, search } = req.query;
-            
+
             const options = {
                 page: parseInt(page),
                 limit: Math.min(parseInt(limit), 100), // Max 100 items per page
@@ -596,7 +596,7 @@ class UserController {
             };
 
             const users = await userService.getUsers(options);
-            
+
             res.json({
                 success: true,
                 data: users,
@@ -616,7 +616,7 @@ class UserController {
         try {
             const { id } = req.params;
             const user = await userService.getUserById(id);
-            
+
             if (!user) {
                 return res.status(404).json({
                     success: false,
@@ -638,7 +638,7 @@ class UserController {
         try {
             const userData = req.body;
             const newUser = await userService.createUser(userData);
-            
+
             res.status(201).json({
                 success: true,
                 data: newUser,
@@ -654,9 +654,9 @@ class UserController {
         try {
             const { id } = req.params;
             const updateData = req.body;
-            
+
             const updatedUser = await userService.updateUser(id, updateData);
-            
+
             if (!updatedUser) {
                 return res.status(404).json({
                     success: false,
@@ -679,7 +679,7 @@ class UserController {
         try {
             const { id } = req.params;
             const deleted = await userService.deleteUser(id);
-            
+
             if (!deleted) {
                 return res.status(404).json({
                     success: false,
@@ -699,7 +699,7 @@ const userController = new UserController();
 // Route definitions with validation
 router.get('/', userController.getUsers.bind(userController));
 
-router.get('/:id', 
+router.get('/:id',
     validationMiddleware(userValidationSchemas.getUserById),
     userController.getUserById.bind(userController)
 );
@@ -756,7 +756,7 @@ export class UserService {
             const cacheKey = `users:${page}:${limit}:${search || 'all'}`;
 
             // Path: cache-lookup
-            const cachedUsers = await pathTracker.executeInPath('cache_lookup', 
+            const cachedUsers = await pathTracker.executeInPath('cache_lookup',
                 () => this.cacheService.get(cacheKey)
             );
 
@@ -768,9 +768,9 @@ export class UserService {
             // Path: database-query
             const users = await pathTracker.executeInPath('database_query', async () => {
                 const offset = (page - 1) * limit;
-                
+
                 let query = this.userModel.query();
-                
+
                 if (search) {
                     query = query.where(builder => {
                         builder.where('name', 'ilike', `%${search}%`)
@@ -790,7 +790,7 @@ export class UserService {
             });
 
             // Path: cache-store
-            await pathTracker.executeInPath('cache_store', 
+            await pathTracker.executeInPath('cache_store',
                 () => this.cacheService.set(cacheKey, users, this.cacheTTL)
             );
 
@@ -1044,7 +1044,7 @@ describe('UserService Path Testing', () => {
             // Arrange
             const mockUsers = [{ id: 1, name: 'Test User' }];
             const mockTotal = { count: '1' };
-            
+
             mockCacheService.get.mockResolvedValue(null);
             mockUserModel.query.mockReturnValue({
                 where: jest.fn().mockReturnThis(),
@@ -1071,7 +1071,7 @@ describe('UserService Path Testing', () => {
             // Verify complete path execution
             const pathHistory = pathTracker.pathHistory;
             const pathNames = pathHistory.map(h => h.path);
-            
+
             expect(pathNames).toContain('user_service_get_users');
             expect(pathNames).toContain('cache_lookup');
             expect(pathNames).toContain('database_query');
@@ -1082,7 +1082,7 @@ describe('UserService Path Testing', () => {
             // Arrange
             const searchTerm = 'john';
             mockCacheService.get.mockResolvedValue(null);
-            
+
             const mockQuery = {
                 where: jest.fn().mockReturnThis(),
                 orWhere: jest.fn().mockReturnThis(),
@@ -1186,7 +1186,7 @@ describe('UserService Path Testing', () => {
 
             // Assert
             const metrics = pathTracker.getMetrics();
-            
+
             expect(metrics['user_service_get_users']).toBeDefined();
             expect(metrics['user_service_get_users'].executions).toBe(2);
             expect(metrics['user_service_get_users'].averageTime).toBeGreaterThan(0);

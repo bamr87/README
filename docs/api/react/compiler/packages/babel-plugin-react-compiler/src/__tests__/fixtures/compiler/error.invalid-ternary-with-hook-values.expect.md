@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ternary-with-hook-values.expect.md
 ---
+# Error.Invalid Ternary With Hook Values.Expect
+
 ## Input
 
 ```javascript
@@ -63,5 +65,4 @@ error.invalid-ternary-with-hook-values.ts:3:9
   4 | }
   5 |
 ```
-          
-      
+

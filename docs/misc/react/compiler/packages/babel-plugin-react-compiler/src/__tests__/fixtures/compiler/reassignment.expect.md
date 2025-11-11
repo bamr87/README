@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassignment.expect.md
 ---
+# Reassignment.Expect
+
 ## Input
 
 ```javascript
@@ -57,4 +59,3 @@ function Component(props) {
 }
 
 ```
-      

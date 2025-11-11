@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.handle-unexpected-exception-pipeline.expect.md
 ---
+# Error.Handle Unexpected Exception Pipeline.Expect
+
 ## Input
 
 ```javascript
@@ -27,5 +29,4 @@ export const FIXTURE_ENTRYPOINT = {
 ```
 unexpected error
 ```
-          
-      
+

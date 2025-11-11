@@ -4,7 +4,6 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: OVERVIEW.md
 ---

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: feature_request.md
 ---
+# Feature Request
+
 **Description**: Please add a new feature to ...
 
 **Benefit(s)/Reason(s)**: This feature is important because ...

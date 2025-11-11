@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.wrong-index-no-func.expect.md
 ---
+# Error.Wrong Index No Func.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.wrong-index-no-func.ts:5:2
   6 | }
   7 |
 ```
-          
-      
+

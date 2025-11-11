@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: while-with-assignment-in-test.expect.md
 ---
+# While With Assignment In Test.Expect
+
 ## Input
 
 ```javascript
@@ -47,6 +49,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 6

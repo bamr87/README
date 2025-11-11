@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-infer-fewer-deps.expect.md
 ---
+# Usememo Infer Fewer Deps.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]

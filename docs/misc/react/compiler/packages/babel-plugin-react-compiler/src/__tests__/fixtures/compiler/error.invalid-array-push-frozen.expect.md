@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-array-push-frozen.expect.md
 ---
+# Error.Invalid Array Push Frozen.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-array-push-frozen.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

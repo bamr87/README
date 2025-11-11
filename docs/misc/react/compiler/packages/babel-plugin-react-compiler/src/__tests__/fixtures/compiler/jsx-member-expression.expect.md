@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-member-expression.expect.md
 ---
+# Jsx Member Expression.Expect
+
 ## Input
 
 ```javascript
@@ -40,4 +42,3 @@ function Component(props) {
 }
 
 ```
-      

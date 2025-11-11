@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-empty-update.expect.md
 ---
+# For Empty Update.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: while-property.expect.md
 ---
+# While Property.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

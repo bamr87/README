@@ -9,7 +9,7 @@ tags:
 last_updated: null
 source_file: dockering-your-it-journey.md
 ---
-bamr87: i need to update this dockerfile to run this repository in a container. 
+bamr87: i need to update this dockerfile to run this repository in a container.
 
 GitHub Copilot: Sure, to run a repository in a Docker container, you need to clone the repository into the Docker image. Here's an example of how you can modify your Dockerfile to do this:
 
@@ -79,9 +79,9 @@ docker build -t my-app .
 docker run -p 8080:8080 my-app
 ```
 
-In the `docker build` command, `-t my-app` names the Docker image "my-app", and the `.` specifies that the Dockerfile in the current directory should be used. 
+In the `docker build` command, `-t my-app` names the Docker image "my-app", and the `.` specifies that the Dockerfile in the current directory should be used.
 
-In the `docker run` command, `-p 8080:8080` maps port 8080 in the Docker container to port 8080 on your machine. Replace "8080" with the port your app is configured to use if it's different. 
+In the `docker run` command, `-p 8080:8080` maps port 8080 in the Docker container to port 8080 on your machine. Replace "8080" with the port your app is configured to use if it's different.
 
 "my-app" is the name of the Docker image to run. Replace "my-app" with the name you used in the `docker build` command if it's different.
 
@@ -132,7 +132,7 @@ RUN gem install jekyll bundler
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Add the current directory contents into the container at /app 
+# Add the current directory contents into the container at /app
 ADD . /app
 
 # Install any needed packages specified in Gemfile
@@ -175,7 +175,7 @@ RUN gem install jekyll bundler
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Add the current directory contents into the container at /app 
+# Add the current directory contents into the container at /app
 ADD . /app
 
 # Install any needed packages specified in Gemfile
@@ -220,7 +220,7 @@ RUN gem install jekyll -v 3.9.0 && gem install bundler -v 1.17.3
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Add the current directory contents into the container at /app 
+# Add the current directory contents into the container at /app
 ADD . /app
 
 # Install any needed packages specified in Gemfile
@@ -254,7 +254,7 @@ RUN gem install nokogiri -v 1.11.7 && gem install github-pages -v 209
 # Set the working directory in the container to /app
 WORKDIR /app
 
-# Add the current directory contents into the container at /app 
+# Add the current directory contents into the container at /app
 ADD . /app
 
 # Install any needed packages specified in Gemfile
@@ -308,12 +308,12 @@ Please replace `/path/to/your/dockerfile` with the actual path to your Dockerfil
 
 bamr87: you replace it with the actual path.
 
-GitHub Copilot: The `ADD . /app` command in your Dockerfile is copying the contents of your current directory (where the Dockerfile is located) into the `/app` directory in the Docker image. If you want to copy from a specific path on your local machine, you can replace the `.` with the path to the directory you want to copy. 
+GitHub Copilot: The `ADD . /app` command in your Dockerfile is copying the contents of your current directory (where the Dockerfile is located) into the `/app` directory in the Docker image. If you want to copy from a specific path on your local machine, you can replace the `.` with the path to the directory you want to copy.
 
 For example, if you want to copy the contents of the `/path/to/your/app` directory on your local machine, you can modify the `ADD` command like this:
 
 ```dockerfile
-# Add the contents of the /path/to/your/app directory into the container at /app 
+# Add the contents of the /path/to/your/app directory into the container at /app
 ADD /path/to/your/app /app
 ```
 

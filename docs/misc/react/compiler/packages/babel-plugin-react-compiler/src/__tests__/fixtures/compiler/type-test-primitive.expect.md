@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-test-primitive.expect.md
 ---
+# Type Test Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -38,6 +40,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2

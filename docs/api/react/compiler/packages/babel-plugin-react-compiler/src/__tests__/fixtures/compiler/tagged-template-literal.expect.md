@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: tagged-template-literal.expect.md
 ---
+# Tagged Template Literal.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +46,3 @@ function component() {
 }
 
 ```
-      

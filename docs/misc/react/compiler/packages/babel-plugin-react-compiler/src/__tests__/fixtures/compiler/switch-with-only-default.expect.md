@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: switch-with-only-default.expect.md
 ---
+# Switch With Only Default.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"a":1,"b":true,"c":"sathya"}</div>

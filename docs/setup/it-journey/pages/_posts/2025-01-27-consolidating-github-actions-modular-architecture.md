@@ -85,7 +85,7 @@ install_lychee() {
 # Main link checking execution engine with flexible configuration
 build_lychee_command() {
     local cmd="lychee"
-    
+
     # Add scope-specific includes/excludes
     case "$SCOPE" in
         "website")
@@ -98,12 +98,12 @@ build_lychee_command() {
             cmd="$cmd 'docs/'"
             ;;
     esac
-    
+
     # Add configuration options
     cmd="$cmd --timeout $TIMEOUT"
     cmd="$cmd --max-retries $MAX_RETRIES"
     [[ "$FOLLOW_REDIRECTS" == "true" ]] && cmd="$cmd --remap"
-    
+
     echo "$cmd"
 }
 ```
@@ -129,11 +129,11 @@ def analyze_broken_links(self, broken_links):
         'internal_broken': [],
         'redirect_issues': []
     }
-    
+
     for link in broken_links:
         error_msg = link.get('error', '').lower()
         status = link.get('status', 0)
-        
+
         # Defensive programming for various error formats
         if 'timeout' in error_msg or 'timed out' in error_msg:
             categories['external_timeout'].append(link)
@@ -142,7 +142,7 @@ def analyze_broken_links(self, broken_links):
         elif status >= 400:
             categories['http_errors'].append(link)
         # ... additional categorization logic
-    
+
     return categories
 ```
 
@@ -163,18 +163,18 @@ async def analyze_with_ai(self, context):
     try:
         if not self.openai_client:
             return await self.fallback_analysis(context)
-        
+
         prompt = self._build_analysis_prompt(context)
-        
+
         response = await self.openai_client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=2000,
             temperature=0.3
         )
-        
+
         return self._parse_ai_response(response)
-        
+
     except Exception as e:
         self.logger.warning(f"AI analysis failed: {e}")
         return await self.fallback_analysis(context)
@@ -225,7 +225,7 @@ on:
   schedule:
     - cron: '0 6 * * 1'  # Monday mornings
     - cron: '0 18 * * 5' # Friday evenings
-  
+
   workflow_dispatch:
     inputs:
       scope:
@@ -233,18 +233,18 @@ on:
         type: choice
         options:
           - 'website'
-          - 'internal' 
+          - 'internal'
           - 'external'
           - 'docs'
           - 'posts'
           - 'quests'
-      
+
       analysis_level:
         description: 'Analysis depth'
         type: choice
         options:
           - 'basic'
-          - 'standard' 
+          - 'standard'
           - 'comprehensive'
           - 'ai-only'
 ```
@@ -271,7 +271,7 @@ on:
 **Challenge**: Managing complexity of combining two different approaches
 **Solution**: Started with a clear architectural vision and built modularly
 
-**Challenge**: Ensuring backward compatibility with existing functionality  
+**Challenge**: Ensuring backward compatibility with existing functionality
 **Solution**: Preserved all existing features while enhancing them
 
 **Challenge**: Testing modular scripts independently
@@ -281,7 +281,7 @@ on:
 
 ### Phase 1: Script Creation (Completed)
 - ✅ `install-dependencies.sh` - Dependency management
-- ✅ `run-link-checker.sh` - Main execution engine  
+- ✅ `run-link-checker.sh` - Main execution engine
 - ✅ `analyze-links.py` - Enhanced analysis
 - ✅ `ai-analyze-links.py` - AI-powered insights
 - ✅ `create-github-issue.sh` - GitHub integration
@@ -349,7 +349,7 @@ analysis_level: 'basic'
 ai_analysis: false
 
 # Comprehensive analysis
-scope: 'website'  
+scope: 'website'
 analysis_level: 'comprehensive'
 ai_analysis: true
 create_issue: true

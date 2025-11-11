@@ -15,10 +15,10 @@ Below is a detailed, step-by-step guide to hosting your Django project on a Rasp
 
 ## Overview of the Process
 
-1. **Obtain a Domain** and **Add It to Cloudflare**  
-2. **Prepare the Raspberry Pi** (update system, install Python dependencies, set up Django)  
-3. **Install and Configure Cloudflare Tunnel (`cloudflared`)** on the Pi  
-4. **Configure Your Tunnel** to point your domain to the local Django server port  
+1. **Obtain a Domain** and **Add It to Cloudflare**
+2. **Prepare the Raspberry Pi** (update system, install Python dependencies, set up Django)
+3. **Install and Configure Cloudflare Tunnel (`cloudflared`)** on the Pi
+4. **Configure Your Tunnel** to point your domain to the local Django server port
 5. **Test and Verify** everything works under `https://yourdomain.com`
 
 ---
@@ -29,11 +29,11 @@ Below is a detailed, step-by-step guide to hosting your Django project on a Rasp
 - Purchase a domain from a registrar (e.g., Namecheap, Google Domains, etc.) if you don’t already have one.
 
 ### 1.2 Create a Cloudflare Account and Add Your Domain
-1. Go to [https://dash.cloudflare.com/](https://dash.cloudflare.com/) and sign up or log in.  
-2. Click **Add a Site**.  
-3. Enter your domain name (e.g., `example.com`) and select a free plan (or paid if you prefer).  
-4. Cloudflare will scan existing DNS records (you can review or adjust these later).  
-5. You’ll be prompted to change your domain’s nameservers to Cloudflare’s nameservers.  
+1. Go to [https://dash.cloudflare.com/](https://dash.cloudflare.com/) and sign up or log in.
+2. Click **Add a Site**.
+3. Enter your domain name (e.g., `example.com`) and select a free plan (or paid if you prefer).
+4. Cloudflare will scan existing DNS records (you can review or adjust these later).
+5. You’ll be prompted to change your domain’s nameservers to Cloudflare’s nameservers.
    - Log in to your domain registrar, find the DNS or Nameservers settings, and update them to the nameservers shown by Cloudflare.
 6. Wait for Cloudflare to confirm your domain is active (this can take from a few minutes up to 24 hours, but usually it’s quick).
 
@@ -45,7 +45,7 @@ Once your domain is **active** in Cloudflare, you will manage its DNS from the C
 
 ### 2.1 Update and Install System Packages
 
-1. **SSH into your Raspberry Pi** or connect via a monitor/keyboard.  
+1. **SSH into your Raspberry Pi** or connect via a monitor/keyboard.
 2. Update the system:
    ```bash
    sudo apt update
@@ -85,7 +85,7 @@ For a more robust setup, you can run Django via [Gunicorn](https://gunicorn.org/
 ```bash
 gunicorn --bind 127.0.0.1:8000 barodybroject.wsgi
 ```
-- This will bind your app to localhost:8000.  
+- This will bind your app to localhost:8000.
 - You can set this up as a systemd service so it starts automatically, or just run it in a screen/tmux session for testing.
 
 ---
@@ -128,7 +128,7 @@ Cloudflare Tunnel works by installing a small daemon (`cloudflared`) on your Ras
    ```bash
    cloudflared tunnel login
    ```
-2. This command will print a URL. Copy it, open it in your browser (where you’re logged in to Cloudflare), and **authorize** `cloudflared`.  
+2. This command will print a URL. Copy it, open it in your browser (where you’re logged in to Cloudflare), and **authorize** `cloudflared`.
 3. Once authorized, return to your Pi terminal.
 
 ---
@@ -177,7 +177,7 @@ Explanation:
 
 ### 4.3 Route Your Domain to the Tunnel
 
-1. You can do this either from the Cloudflare web dashboard or from the command line.  
+1. You can do this either from the Cloudflare web dashboard or from the command line.
 2. **From command line**:
    ```bash
    cloudflared tunnel route dns my-django-tunnel yourdomain.com
@@ -189,7 +189,7 @@ Explanation:
 ```bash
 sudo cloudflared tunnel run my-django-tunnel
 ```
-or  
+or
 ```bash
 sudo cloudflared tunnel run --config /etc/cloudflared/config.yml
 ```
@@ -211,10 +211,10 @@ Now your Pi will automatically connect to Cloudflare on reboot.
 
 Log in to your Cloudflare dashboard and do the following:
 
-1. Go to **SSL/TLS** → **Overview** for your domain.  
+1. Go to **SSL/TLS** → **Overview** for your domain.
 2. Choose the encryption mode:
-   - **Flexible**: Encrypts traffic between the browser and Cloudflare, but unencrypted between Cloudflare and your Pi. This is easiest if you don’t have an SSL certificate installed locally.  
-   - **Full** (strict recommended if you can manage local certificates): End-to-end encryption. Requires you to have a certificate on the Pi or use an origin cert from Cloudflare.  
+   - **Flexible**: Encrypts traffic between the browser and Cloudflare, but unencrypted between Cloudflare and your Pi. This is easiest if you don’t have an SSL certificate installed locally.
+   - **Full** (strict recommended if you can manage local certificates): End-to-end encryption. Requires you to have a certificate on the Pi or use an origin cert from Cloudflare.
 
 For quick setups, **Flexible** is fine. If you want truly secure end-to-end, switch to “Full (strict)” once you’ve installed an SSL cert on your Pi (you can use Cloudflare Origin Certificates, for example).
 
@@ -222,38 +222,38 @@ For quick setups, **Flexible** is fine. If you want truly secure end-to-end, swi
 
 ## 6. Test Your Setup
 
-1. Ensure your Django application is running locally on `localhost:8000` (e.g., `gunicorn your_django_project.wsgi:application --bind 127.0.0.1:8000`).  
+1. Ensure your Django application is running locally on `localhost:8000` (e.g., `gunicorn your_django_project.wsgi:application --bind 127.0.0.1:8000`).
 2. Ensure `cloudflared` tunnel is running:
    ```bash
    sudo systemctl status cloudflared
    ```
    or if running manually, confirm it’s showing “Connected to Cloudflare.”
 3. In a web browser, go to **`https://yourdomain.com`**.
-4. You should see your Django app!  
+4. You should see your Django app!
 
 If everything is working, you have a secure, globally accessible site:
 
-- Browsers show HTTPS lock icon (if Cloudflare SSL settings are correct).  
-- Your Pi’s public IP remains hidden (no open ports, no direct exposure).  
+- Browsers show HTTPS lock icon (if Cloudflare SSL settings are correct).
+- Your Pi’s public IP remains hidden (no open ports, no direct exposure).
 
 ---
 
 ## 7. Additional Best Practices
 
-1. **Set Django’s `ALLOWED_HOSTS`**  
+1. **Set Django’s `ALLOWED_HOSTS`**
    - In the settings file (located at src/barodybroject/settings.py), add your domain (e.g., "yourdomain.com") along with "localhost" and "127.0.0.1":
      ```python
      ALLOWED_HOSTS = ["yourdomain.com", "localhost", "127.0.0.1"]
      ```
-2. **Run in Production Mode**  
-   - Use Gunicorn (or Uvicorn) + a process manager (systemd) or Docker.  
-3. **Secure Your Pi**  
-   - Disable password SSH login, use SSH keys.  
-   - Keep software updated (`sudo apt update && sudo apt upgrade`).  
-4. **Logging and Metrics**  
-   - Check Cloudflare’s dashboard for requests, error logs, etc.  
-   - Check `cloudflared` logs on the Pi: `journalctl -u cloudflared -f`.  
-5. **Use a Reverse Proxy Locally (Optional)**  
+2. **Run in Production Mode**
+   - Use Gunicorn (or Uvicorn) + a process manager (systemd) or Docker.
+3. **Secure Your Pi**
+   - Disable password SSH login, use SSH keys.
+   - Keep software updated (`sudo apt update && sudo apt upgrade`).
+4. **Logging and Metrics**
+   - Check Cloudflare’s dashboard for requests, error logs, etc.
+   - Check `cloudflared` logs on the Pi: `journalctl -u cloudflared -f`.
+5. **Use a Reverse Proxy Locally (Optional)**
    - Some prefer Nginx or Caddy on the Pi to handle advanced logic (e.g., multiple apps). You can still have your local proxy listen on `localhost:8000` or `localhost:8080`, and `cloudflared` forwards traffic to that port.
 
 ---
@@ -262,8 +262,8 @@ If everything is working, you have a secure, globally accessible site:
 
 **Cloudflare Tunnel** is one of the easiest and most secure ways to host your Django app on a Raspberry Pi from home without exposing ports or dealing with dynamic IP headaches. In a nutshell:
 
-1. **Set up your domain on Cloudflare** (and make sure DNS is managed by Cloudflare).  
-2. **Install and authenticate `cloudflared`** on the Pi.  
-3. **Run your Django application** on a local port (e.g., `127.0.0.1:8000`).  
-4. **Create a named tunnel** and configure Cloudflare to forward requests from `yourdomain.com` to `localhost:8000`.  
+1. **Set up your domain on Cloudflare** (and make sure DNS is managed by Cloudflare).
+2. **Install and authenticate `cloudflared`** on the Pi.
+3. **Run your Django application** on a local port (e.g., `127.0.0.1:8000`).
+4. **Create a named tunnel** and configure Cloudflare to forward requests from `yourdomain.com` to `localhost:8000`.
 5. **Browse to `https://yourdomain.com`** and enjoy your publicly accessible, SSL-protected Django site with minimal fuss and maximum security.

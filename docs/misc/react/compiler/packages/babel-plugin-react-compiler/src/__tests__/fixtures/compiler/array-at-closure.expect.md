@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-at-closure.expect.md
 ---
+# Array At Closure.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ function Component(props) {
 }
 
 ```
-      

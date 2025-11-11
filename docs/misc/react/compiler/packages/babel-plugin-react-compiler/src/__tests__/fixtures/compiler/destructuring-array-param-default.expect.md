@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-array-param-default.expect.md
 ---
+# Destructuring Array Param Default.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invalid-pruned-scope-leaks-value-via-alias.expect.md
 ---
+# Repro Invalid Pruned Scope Leaks Value Via Alias.Expect
+
 ## Input
 
 ```javascript
@@ -107,7 +109,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [4,{"a":0,"b":"value1","c":true,"wat0":"joe"}]
 [4,{"a":0,"b":"value1","c":true,"wat0":"joe"}]

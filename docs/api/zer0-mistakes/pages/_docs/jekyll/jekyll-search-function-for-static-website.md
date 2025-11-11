@@ -3,10 +3,11 @@ title: Jekyll Search Function For Static Website
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: jekyll-search-function-for-static-website.md
 ---
+# Jekyll Search Function For Static Website
+
 > Search.
 
 ## 1. Search

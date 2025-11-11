@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: reassigned-fnexpr-variable.expect.md
 ---
+# Reassigned Fnexpr Variable.Expect
+
 ## Input
 
 ```javascript
@@ -89,6 +91,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world 1!</div><div>hello world 2!</div>

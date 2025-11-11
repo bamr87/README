@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-mutate.expect.md
 ---
+# Capturing Func Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -76,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"b":{"b":3,"wat0":"joe"}},{"a":2}]
 [{"b":{"b":3,"wat0":"joe"}},{"a":2}]

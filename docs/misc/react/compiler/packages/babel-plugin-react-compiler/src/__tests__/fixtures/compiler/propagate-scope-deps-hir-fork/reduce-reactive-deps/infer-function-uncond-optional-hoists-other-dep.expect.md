@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-uncond-optional-hoists-other-dep.expect.md
 ---
+# Infer Function Uncond Optional Hoists Other Dep.Expect
+
 ## Input
 
 ```javascript
@@ -91,7 +93,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function","result":[{"b":{"c":{"d":5}}},5]},"arr":[null],"shouldInvokeFns":true}</div>

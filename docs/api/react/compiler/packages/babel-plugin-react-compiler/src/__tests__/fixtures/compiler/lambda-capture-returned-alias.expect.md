@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: lambda-capture-returned-alias.expect.md
 ---
+# Lambda Capture Returned Alias.Expect
+
 ## Input
 
 ```javascript
@@ -72,4 +74,3 @@ function CaptureNotMutate(props) {
 }
 
 ```
-      

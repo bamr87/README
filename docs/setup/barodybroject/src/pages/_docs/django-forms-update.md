@@ -63,7 +63,7 @@ def get_dynamic_fields_data(request):
 
     instance = get_object_or_404(form_class.Meta.model, id=selected_id)
     data = {field: getattr(instance, field) for field in form_class.dynamic_fields}
-    
+
     return JsonResponse(data)
 ```
 

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hooks-with-prefix.expect.md
 ---
+# Hooks With Prefix.Expect
+
 ## Input
 
 ```javascript
@@ -98,6 +100,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0{"a":0,"b":"value1","c":true}</div>

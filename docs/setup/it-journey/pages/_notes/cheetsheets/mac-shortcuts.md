@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: mac-shortcuts.md
 ---
+# Mac Shortcuts
+
 By pressing certain key combinations, you can do things that normally need a mouse, trackpad, or other input device.
 
 [Using keyboard shortcuts](https://support.apple.com/en-us/HT201236#about)
@@ -69,7 +71,7 @@ Cut, copy, paste, and other common shortcuts
 -   **Control--Command--Space bar**: Show the Character Viewer, from which you can choose [emoji and other symbols](https://support.apple.com/guide/mac-help/mchlp1560/mac).
 -   **Control-Command-F**: Use the app in full screen, if supported by the app.
 -   **Space bar**: Use [Quick Look](https://support.apple.com/guide/mac-help/view-and-edit-files-with-quick-look-mh14119/mac) to preview the selected item.
--   **Command-Tab**: Switch to the next most recently used app among your open apps. 
+-   **Command-Tab**: Switch to the next most recently used app among your open apps.
 -   **Command--Grave accent (\`):** Switch between the windows of the app you're using. (The character on the second key varies by keyboard. It's generally the key above the Tab key and to the left of the number 1.)
 -   **Shift-Command-5**: In [macOS Mojave or later](https://support.apple.com/kb/HT201260), take a screenshot or make a screen recording. Or use Shift-Command-3 or Shift-Command-4 for screenshots. [Learn more about screenshots](https://support.apple.com/kb/HT201361).
 -   **Shift-Command-N:** Create a new folder in the Finder.
@@ -116,10 +118,10 @@ Finder and system shortcuts
 -   **Shift-Command-O**: Open the Documents folder.
 -   **Shift-Command-P**: Show or hide the Preview pane in Finder windows.
 -   **Shift-Command-R**: Open the AirDrop window.
--   **Shift-Command-T**: Show or hide the tab bar in Finder windows. 
+-   **Shift-Command-T**: Show or hide the tab bar in Finder windows.
 -   **Control-Shift-Command-T**: Add selected Finder item to the Dock (OS X Mavericks or later)
 -   **Shift-Command-U**: Open the Utilities folder.
--   **Option-Command-D**: Show or hide the Dock. 
+-   **Option-Command-D**: Show or hide the Dock.
 -   **Control-Command-T**: Add the selected item to the sidebar (OS X Mavericks or later).
 -   **Option-Command-P**: Hide or show the path bar in Finder windows.
 -   **Option-Command-S**: Hide or show the Sidebar in Finder windows.
@@ -136,7 +138,7 @@ Finder and system shortcuts
 -   **Option-Command-Y**: View a Quick Look slideshow of the selected files.
 -   **Command-1**: View the items in the Finder window as icons.
 -   **Command-2**: View the items in a Finder window as a list.
--   **Command-3**: View the items in a Finder window in columns. 
+-   **Command-3**: View the items in a Finder window in columns.
 -   **Command-4**: View the items in a Finder window in a gallery.
 -   **Command--Left Bracket (\[)**: Go to the previous folder.
 -   **Command--Right Bracket (\])**: Go to the next folder.
@@ -153,7 +155,7 @@ Finder and system shortcuts
 -   **Control--Brightness Up** or **Control--Brightness Down**: Change the brightness of your external display, if supported by your display.
 -   **Option--Shift--Brightness Up** or **Option--Shift--Brightness Down**: Adjust the display brightness in smaller steps. Add the Control key to this shortcut to make the adjustment on your external display, if supported by your display.
 -   **Option--Mission Control**: Open Mission Control preferences.
--   **Command--Mission Control**: Show the desktop. 
+-   **Command--Mission Control**: Show the desktop.
 -   **Control--Down Arrow**: Show all windows of the front app.
 -   **Option--Volume Up**: Open Sound preferences. This works with any of the volume keys.
 -   **Option--Shift--Volume Up** or **Option--Shift--Volume Down**: Adjust the sound volume in smaller steps.
@@ -161,12 +163,12 @@ Finder and system shortcuts
 -   **Option--Shift--Keyboard Brightness Up** or **Option--Shift--Keyboard Brightness Down**: Adjust the keyboard brightness in smaller steps.
 -   **Option key while double-clicking**: Open the item in a separate window, then close the original window.
 -   **Command key while double-clicking**: Open a folder in a separate tab or window.
--   **Command key while dragging to another volume**: Move the dragged item to the other volume, instead of copying it. 
+-   **Command key while dragging to another volume**: Move the dragged item to the other volume, instead of copying it.
 -   **Option key while dragging**: Copy the dragged item. The pointer changes while you drag the item.
 -   **Option-Command while dragging**: Make an alias of the dragged item. The pointer changes while you drag the item.
 -   **Option-click a disclosure triangle**: Open all folders within the selected folder. This works only when in list view.
 -   **Command-click a window title**: See the folders that contain the current folder.
--   [Learn how to use Command or Shift to select multiple items in the Finder](https://support.apple.com/guide/mac-help/select-items-mchlp1378/mac). 
+-   [Learn how to use Command or Shift to select multiple items in the Finder](https://support.apple.com/guide/mac-help/select-items-mchlp1378/mac).
 -   Click the Go menu in the Finder menu bar to see shortcuts for opening many commonly used folders, such as Applications, Documents, Downloads, Utilities, and iCloud Drive.
 
 ![](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png)
@@ -176,7 +178,7 @@ Document shortcuts
 
 The behavior of these shortcuts may vary with the app you're using.
 
--   **Command-B**: Boldface the selected text, or turn boldfacing on or off. 
+-   **Command-B**: Boldface the selected text, or turn boldfacing on or off.
 -   **Command-I**: Italicize the selected text, or turn italics on or off.
 -   **Command-K**: Add a web link.
 -   **Command-U**: Underline the selected text, or turn underlining on or off.
@@ -190,7 +192,7 @@ The behavior of these shortcuts may vary with the app you're using.
 -   **Control-D**: Delete the character to the right of the insertion point. Or use Fn-Delete.
 -   **Fn-Delete**: Forward delete on keyboards that don't have a Forward Delete   key. Or use Control-D.
 -   **Control-K**: Delete the text between the insertion point and the end of the line or paragraph.
--   **Fn--Up Arrow**: Page Up: Scroll up one page. 
+-   **Fn--Up Arrow**: Page Up: Scroll up one page.
 -   **Fn--Down Arrow**: Page Down: Scroll down one page.
 -   **Fn--Left Arrow:** Home: Scroll to the beginning of a document.
 -   **Fn--Right Arrow**: End: Scroll to the end of a document.
@@ -224,7 +226,7 @@ The behavior of these shortcuts may vary with the app you're using.
 -   **Command--Left Curly Bracket ({)**: Left align.
 -   **Command--Right Curly Bracket (})**: Right align.
 -   **Shift--Command--Vertical bar (|)**: Center align.
--   **Option-Command-F**: Go to the search field. 
+-   **Option-Command-F**: Go to the search field.
 -   **Option-Command-T**: Show or hide a toolbar in the app.
 -   **Option-Command-C**: Copy Style: Copy the formatting settings of the selected item to the Clipboard.
 -   **Option-Command-V**: Paste Style: Apply the copied style to the selected item.
@@ -288,7 +290,7 @@ Other shortcuts
 -   [Preview shortcuts](https://support.apple.com/guide/preview/keyboard-shortcuts-cpprvw0003/mac)
 -   [Apple Music shortcuts](https://support.apple.com/guide/music/keyboard-shortcuts-mus1019/mac)
 -   [Startup shortcuts](https://support.apple.com/kb/HT201255)
--   For more shortcuts, check the shortcut abbreviations shown in the menus of your apps. Every app can have its own shortcuts, and shortcuts that work in one app might not work in another. 
+-   For more shortcuts, check the shortcut abbreviations shown in the menus of your apps. Every app can have its own shortcuts, and shortcuts that work in one app might not work in another.
 
 ![](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/mac_apps/itunes/divider.png)
 

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: 2024-06-01-latest-trends-in-manufacturing-technology.md
 ---
+# 2024 06 01 Latest Trends In Manufacturing Technology
+
 Latest Trends in Manufacturing Technology: The Role of ERP Systems
 ------------------------------------------------------------------
 

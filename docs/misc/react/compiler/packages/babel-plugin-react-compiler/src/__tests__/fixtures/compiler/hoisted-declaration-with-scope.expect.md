@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisted-declaration-with-scope.expect.md
 ---
+# Hoisted Declaration With Scope.Expect
+
 ## Input
 
 ```javascript
@@ -76,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=1 ]]"

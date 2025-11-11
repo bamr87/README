@@ -38,7 +38,7 @@ def assistant_test_data():
     with open(data_path, 'r') as f:
         return json.load(f)
 
-@pytest.fixture  
+@pytest.fixture
 def openai_model_data():
     """Load OpenAI model configuration test data."""
     data_path = Path(__file__).parent / 'data' / 'OpenAIModel-2024-11-29.json'

@@ -5,7 +5,6 @@ tags:
 - aws
 - api
 - testing
-- api
 last_updated: null
 source_file: defiances-role-in-democracy.md
 ---

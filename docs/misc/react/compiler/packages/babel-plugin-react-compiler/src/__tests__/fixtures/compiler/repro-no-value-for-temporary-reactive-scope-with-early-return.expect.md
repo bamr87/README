@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-no-value-for-temporary-reactive-scope-with-early-return.expect.md
 ---
+# Repro No Value For Temporary Reactive Scope With Early Return.Expect
+
 ## Input
 
 ```javascript
@@ -86,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="foo">Lorum ipsumvalue1 blah blah blah</div>

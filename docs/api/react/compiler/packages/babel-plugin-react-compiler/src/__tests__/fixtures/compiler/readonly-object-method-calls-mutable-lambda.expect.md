@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: readonly-object-method-calls-mutable-lambda.expect.md
 ---
+# Readonly Object Method Calls Mutable Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -78,4 +79,3 @@ function Component(props) {
 }
 
 ```
-      

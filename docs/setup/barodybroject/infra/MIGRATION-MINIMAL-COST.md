@@ -151,7 +151,7 @@ Uncomment sections in `main.bicep` to add:
 **Solution**: Check firewall rules in PostgreSQL allow Azure services (0.0.0.0).
 
 ### Issue: App Service not starting
-**Solution**: 
+**Solution**:
 1. Check logs: `az webapp log tail --name <app-name> --resource-group <rg-name>`
 2. Verify `WEBSITES_PORT=8000` is set
 3. Ensure Dockerfile exposes port 8000
@@ -174,6 +174,6 @@ For issues or questions:
 
 ---
 
-**Estimated Monthly Cost**: ~$25.55 USD  
-**Previous Cost**: ~$32-37 USD  
+**Estimated Monthly Cost**: ~$25.55 USD
+**Previous Cost**: ~$32-37 USD
 **Savings**: 30-40% reduction

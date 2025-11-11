@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: independently-memoize-object-property.expect.md
 ---
+# Independently Memoize Object Property.Expect
+
 ## Input
 
 ```javascript
@@ -61,4 +63,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

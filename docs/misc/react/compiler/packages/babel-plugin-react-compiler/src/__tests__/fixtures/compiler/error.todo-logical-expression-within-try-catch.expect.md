@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-logical-expression-within-try-catch.expect.md
 ---
+# Error.Todo Logical Expression Within Try Catch.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.todo-logical-expression-within-try-catch.ts:4:13
   6 |     console.log(e);
   7 |   }
 ```
-          
-      
+

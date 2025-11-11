@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: block-scoping-switch-variable-scoping.expect.md
 ---
+# Block Scoping Switch Variable Scoping.Expect
+
 ## Input
 
 ```javascript
@@ -69,7 +71,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"value":"hello"}
 logs: ['hello']

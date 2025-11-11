@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-test-field-load-binary-op.expect.md
 ---
+# Type Test Field Load Binary Op.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +49,3 @@ function component() {
 }
 
 ```
-      

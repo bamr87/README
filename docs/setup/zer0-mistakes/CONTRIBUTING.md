@@ -160,7 +160,7 @@ git checkout -b docs/improve-readme
 1. **Create atomic commits** with messages so clear, future you will thank present you:
    ```bash
    git commit -m "feat: add responsive navigation component that actually responds
-   
+
    - Implement Bootstrap 5 navbar with collapse functionality (it collapses gracefully)
    - Add mobile-first responsive breakpoints (mobile users are people too)
    - Include accessibility ARIA labels (screen readers deserve love)
@@ -200,18 +200,18 @@ make build                   # Build validation (does it actually work?)
    ```markdown
    ## Description
    What you built and why it's awesome (sell us on your brilliance).
-   
+
    ## Type of Change (Choose Your Adventure)
    - [ ] Bug fix (saving the world, one fix at a time)
    - [ ] New feature (expanding our digital universe)
    - [ ] Breaking change (please handle with care)
    - [ ] Documentation update (the real MVP)
-   
+
    ## Testing (Proof of Life)
    - [ ] Tests pass locally (your machine likes it)
    - [ ] Added tests for new functionality (future-proofing)
    - [ ] Manual testing completed (human validation)
-   
+
    ## Screenshots (If Your Code Has a Face)
    Visual evidence that your changes don't break the internet.
    ```
@@ -251,14 +251,14 @@ We use **Bootstrap 5.3.3** because it's more reliable than most developers and c
 #### CDN Loading Pattern (Streaming Styles from the Cloud)
 ```html
 <!-- In _includes/head.html (where all good stylesheets go to live) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-      rel="stylesheet" 
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous">
 
 <!-- In _includes/js-cdn.html (where JavaScript magic happens) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 ```
 
@@ -365,7 +365,7 @@ $secondary-color: var(--bs-secondary);
 .theme-navigation {
   &__item {
     padding: 0.5rem 1rem;
-    
+
     &--active {
       background-color: $primary-color;
     }
@@ -386,7 +386,7 @@ $secondary-color: var(--bs-secondary);
 document.addEventListener('DOMContentLoaded', function() {
   // Tooltips
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => 
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =>
     new bootstrap.Tooltip(tooltipTriggerEl)
   );
 
@@ -457,7 +457,7 @@ When adding features, include corresponding tests:
 # Add test cases to scripts/test.sh
 test_new_feature() {
     echo "[TEST] Running: Test new feature functionality"
-    
+
     # Test implementation
     if [[ condition ]]; then
         echo "✓ Test new feature functionality"

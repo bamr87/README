@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: overlapping-scopes-shadowed.expect.md
 ---
+# Overlapping Scopes Shadowed.Expect
+
 ## Input
 
 ```javascript
@@ -41,4 +43,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -57,9 +57,9 @@ New recovery codes have been generated for your account. Save these codes in a s
                 {% else %}
                     <i class="fas fa-info-circle"></i>
                 {% endif %}
-                
+
                 <strong>Security Update:</strong> {{ message }}
-                
+
                 <button type="button" class="close" data-dismiss="alert">
                     <span>&times;</span>
                 </button>
@@ -123,12 +123,12 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => alert.remove(), 500);
         });
     }, 10000);
-    
+
     // Emphasize security-related messages
     document.querySelectorAll('.alert').forEach(alert => {
         if (alert.textContent.toLowerCase().includes('security')) {
             alert.classList.add('security-message');
-            
+
             // Add security icon animation
             const icon = alert.querySelector('i');
             if (icon) {
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
+
     // Track MFA message interactions
     document.querySelectorAll('.mfa-messages .alert').forEach(alert => {
         alert.addEventListener('click', function() {
@@ -175,30 +175,30 @@ from django.core.mail import send_mail
 
 def notify_mfa_change(user, action, method):
     """Send email notification for MFA changes"""
-    
+
     subject_map = {
         'activated': f'Two-Factor Authentication Enabled - {method}',
         'deactivated': f'Two-Factor Authentication Disabled - {method}',
         'added': f'New Security Method Added - {method}',
         'removed': f'Security Method Removed - {method}',
     }
-    
+
     message = f"""
     Hello {user.get_full_name() or user.username},
-    
+
     A security setting on your Barody Broject account has been changed:
-    
+
     Action: {action.title()}
     Method: {method}
     Time: {timezone.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
     IP Address: {get_client_ip(request)}
-    
+
     If you did not make this change, please contact support immediately.
-    
+
     Best regards,
     Barody Broject Security Team
     """
-    
+
     send_mail(
         subject=subject_map.get(action, 'Security Setting Changed'),
         message=message,
@@ -210,7 +210,7 @@ def notify_mfa_change(user, action, method):
 
 ## Container Configuration
 - **Runtime**: Django message framework with MFA integration
-- **Dependencies**: 
+- **Dependencies**:
   - Django allauth MFA system
   - Message display templates
   - Bootstrap alert styling
@@ -219,12 +219,12 @@ def notify_mfa_change(user, action, method):
 - **Localization**: Supports multiple languages through Django i18n
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - MFA setup and configuration workflows
   - Security key registration and removal
   - TOTP authenticator activation/deactivation
   - Recovery code generation and usage
-- **Outgoing**: 
+- **Outgoing**:
   - User interface message display
   - Email notification systems
   - Security audit logging

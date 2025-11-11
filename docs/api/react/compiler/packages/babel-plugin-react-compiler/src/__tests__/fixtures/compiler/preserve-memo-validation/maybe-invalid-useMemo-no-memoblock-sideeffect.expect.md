@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: maybe-invalid-useMemo-no-memoblock-sideeffect.expect.md
 ---
+# Maybe Invalid Usememo No Memoblock Sideeffect.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +58,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

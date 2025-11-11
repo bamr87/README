@@ -43,7 +43,7 @@ Contains reusable Django template components and partial templates that can be i
         <a class="navbar-brand" href="{% url 'home' %}">
             Barody Broject
         </a>
-        
+
         {% if user.is_authenticated %}
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -114,7 +114,7 @@ Contains reusable Django template components and partial templates that can be i
 
 ## Container Configuration
 - **Runtime**: Django template engine with include resolution
-- **Dependencies**: 
+- **Dependencies**:
   - Django template system
   - Static file handling
   - Template context processors
@@ -122,12 +122,12 @@ Contains reusable Django template components and partial templates that can be i
 - **Environment**: Supports template inheritance and composition
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Base templates (`base.html`, `layout.html`)
   - Page-specific templates across the application
   - Form templates and wizard steps
   - Email templates requiring common elements
-- **Outgoing**: 
+- **Outgoing**:
   - Static CSS and JavaScript files
   - Template context variables and filters
   - URL routing and reverse lookups

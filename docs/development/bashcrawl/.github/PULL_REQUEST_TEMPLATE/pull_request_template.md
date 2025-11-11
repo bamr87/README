@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: pull_request_template.md
 ---
+# Pull Request Template
+
 ## 📋 Description
 
 Brief description of the changes made in this PR.

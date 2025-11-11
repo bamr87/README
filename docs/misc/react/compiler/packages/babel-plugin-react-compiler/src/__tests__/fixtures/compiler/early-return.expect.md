@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: early-return.expect.md
 ---
+# Early Return.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

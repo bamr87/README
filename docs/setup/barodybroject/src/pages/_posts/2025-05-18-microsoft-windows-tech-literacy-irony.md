@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: 2025-05-18-microsoft-windows-tech-literacy-irony.md
 ---
+# 2025 05 18 Microsoft Windows Tech Literacy Irony
+
 **The Great Irony: How Microsoft’s Windows Stifled Tech Literacy While GitHub Became the Beacon of Open Source**
 
 ---
@@ -144,7 +146,7 @@ Welcome to the future. And mind the irony—it bites.
 
 ---
 
-*References:  
-Linus Torvalds, “The Joy of Sudo,” Penguin Press, 2022.  
-Bill Gates, “Oops: Why You Deserve a Bash Prompt,” Satirical Scholar Reviews, 2023.  
+*References:
+Linus Torvalds, “The Joy of Sudo,” Penguin Press, 2022.
+Bill Gates, “Oops: Why You Deserve a Bash Prompt,” Satirical Scholar Reviews, 2023.
 Stack Overflow Developer Survey, 2023.*

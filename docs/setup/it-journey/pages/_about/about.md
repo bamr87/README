@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: about.md
 ---
+# About
+
 {% if site.description %}
 {{ site.description }}
 {% else %}
@@ -61,11 +63,11 @@ The domain `{% if site.domain %}{{ site.domain }}{% else %}it-journey.dev{% endi
 
 ## Our Vision
 
-🎯 **Accessible Education**: Remove financial barriers to quality IT education  
-🌍 **Global Community**: Foster a worldwide community of learners and contributors  
-🔧 **Practical Learning**: Emphasize hands-on experience with real-world applications  
-📚 **Comprehensive Coverage**: Bridge theory with practical implementation  
-🚀 **Career Ready**: Prepare learners for modern development roles  
+🎯 **Accessible Education**: Remove financial barriers to quality IT education
+🌍 **Global Community**: Foster a worldwide community of learners and contributors
+🔧 **Practical Learning**: Emphasize hands-on experience with real-world applications
+📚 **Comprehensive Coverage**: Bridge theory with practical implementation
+🚀 **Career Ready**: Prepare learners for modern development roles
 🤖 **AI-Enhanced Learning**: Leverage AI agents to personalize and accelerate the learning journey
 
 ## Core Principles

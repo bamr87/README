@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: chained-assignment-context-variable.expect.md
 ---
+# Chained Assignment Context Variable.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},[]]

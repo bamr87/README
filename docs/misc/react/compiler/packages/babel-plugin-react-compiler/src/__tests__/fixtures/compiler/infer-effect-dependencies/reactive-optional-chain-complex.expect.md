@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-optional-chain-complex.expect.md
 ---
+# Reactive Optional Chain Complex.Expect
+
 ## Input
 
 ```javascript
@@ -101,7 +103,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [1,2,undefined]

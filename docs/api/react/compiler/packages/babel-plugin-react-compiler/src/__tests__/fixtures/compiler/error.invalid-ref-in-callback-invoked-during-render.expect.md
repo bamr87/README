@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ref-in-callback-invoked-during-render.expect.md
 ---
+# Error.Invalid Ref In Callback Invoked During Render.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid-ref-in-callback-invoked-during-render.ts:8:33
    9 | }
   10 |
 ```
-          
-      
+

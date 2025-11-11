@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-global-in-render-helper-phi-return-prop.expect.md
 ---
+# Error.Invalid Mutate Global In Render Helper Phi Return Prop.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-mutate-global-in-render-helper-phi-return-prop.ts:12:4
   14 |   };
   15 |   return <ItemList renderItem={renderItem} />;
 ```
-          
-      
+

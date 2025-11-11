@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-let-declaration-without-initialization.expect.md
 ---
+# Hoisting Let Declaration Without Initialization.Expect
+
 ## Input
 
 ```javascript
@@ -65,7 +67,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 

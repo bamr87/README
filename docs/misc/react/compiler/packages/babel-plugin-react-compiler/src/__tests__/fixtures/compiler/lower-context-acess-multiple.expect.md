@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lower-context-acess-multiple.expect.md
 ---
+# Lower Context Acess Multiple.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function _temp(t0) {
 }
 
 ```
-      

@@ -30,7 +30,7 @@ Successfully reorganized the `_about` directories in both IT-Journey and Zer0-Mi
 
 #### Files Removed (Duplicates)
 - ❌ `pages/_about/features/add-floating-back-to-top-button.md` → Moved to zer0-mistakes
-- ❌ `pages/_about/features/jekyll.md` → Moved to zer0-mistakes  
+- ❌ `pages/_about/features/jekyll.md` → Moved to zer0-mistakes
 - ❌ `pages/_about/theme.md` → Moved to zer0-mistakes
 
 #### Files Updated

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-unnamed-temporary.expect.md
 ---
+# Error.Bug Invariant Unnamed Temporary.Expect
+
 ## Input
 
 ```javascript
@@ -33,5 +35,4 @@ Invariant: Expected temporaries to be promoted to named identifiers in an earlie
 
 identifier 15 is unnamed.
 ```
-          
-      
+

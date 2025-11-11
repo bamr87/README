@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: gating-preserves-function-properties.expect.md
 ---
+# Gating Preserves Function Properties.Expect
+
 ## Input
 
 ```javascript
@@ -78,6 +80,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

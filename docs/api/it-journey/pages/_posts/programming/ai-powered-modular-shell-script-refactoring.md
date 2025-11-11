@@ -4,7 +4,6 @@ category: api
 tags:
 - api
 - testing
-- api
 last_updated: null
 source_file: ai-powered-modular-shell-script-refactoring.md
 ---
@@ -62,7 +61,7 @@ log_info() {
     echo -e "${LOG_INFO_SYMBOL} ${LOG_COLOR_INFO}[INFO]${LOG_COLOR_RESET} $*"
 }
 
-# environment.sh - Cross-platform environment detection  
+# environment.sh - Cross-platform environment detection
 detect_os() {
     case "$OSTYPE" in
         darwin*) echo "macos" ;;
@@ -77,7 +76,7 @@ assert_equal() {
     local expected="$1"
     local actual="$2"
     local message="${3:-Assertion failed}"
-    
+
     if [ "$expected" = "$actual" ]; then
         record_test_result "PASS" "$message"
         return 0
@@ -93,7 +92,7 @@ assert_equal() {
 # git.sh - Git operations with error handling
 create_branch() {
     local branch_name="$1"
-    
+
     if git checkout -b "$branch_name" 2>/dev/null; then
         log_success "Created and switched to branch: $branch_name"
         return 0
@@ -107,7 +106,7 @@ create_branch() {
 update_evolution_metrics() {
     local evolution_type="$1"
     local timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-    
+
     jq --arg type "$evolution_type" \
        --arg time "$timestamp" \
        '.last_evolution = {type: $type, timestamp: $time}' \
@@ -167,17 +166,17 @@ AI generated comprehensive test suites to validate the refactoring:
 # tests/modular-architecture-test.sh
 test_core_libraries() {
     start_test_suite "core_libraries"
-    
+
     assert_file_exists "$PROJECT_ROOT/src/lib/core/logger.sh" "Logger library exists"
     assert_file_exists "$PROJECT_ROOT/src/lib/core/environment.sh" "Environment library exists"
     assert_file_exists "$PROJECT_ROOT/src/lib/core/testing.sh" "Testing library exists"
-    
+
     # Test library loading
     if source "$PROJECT_ROOT/src/lib/core/logger.sh" 2>/dev/null; then
         assert_command_succeeds "type log_info" "Logger initialization"
         assert_command_succeeds "type log_error" "Logger functions available"
     fi
-    
+
     end_test_suite "core_libraries"
 }
 ```
@@ -259,7 +258,7 @@ if [ "${CI:-false}" = "true" ] || [ "${GITHUB_ACTIONS:-false}" = "true" ]; then
     LOG_SUCCESS_SYMBOL="✅"
     LOG_WARN_SYMBOL="⚠️"
     LOG_ERROR_SYMBOL="❌"
-    
+
     # Disable colors in CI for better log readability
     LOG_COLOR_INFO=""
     LOG_COLOR_SUCCESS=""
@@ -272,7 +271,7 @@ else
     LOG_SUCCESS_SYMBOL="✅"
     LOG_WARN_SYMBOL="⚠️"
     LOG_ERROR_SYMBOL="❌"
-    
+
     LOG_COLOR_INFO='\033[0;34m'
     LOG_COLOR_SUCCESS='\033[0;32m'
     LOG_COLOR_WARN='\033[1;33m'
@@ -316,9 +315,9 @@ init_test_session() {
     local session_name="${1:-test-session}"
     TEST_SESSION_ID="${session_name}-$(date +%Y%m%d-%H%M%S)"
     TEST_SESSION_START_TIME=$(date +%s)
-    
+
     log_info "Initialized testing session: $TEST_SESSION_ID"
-    
+
     # Create test reports directory
     mkdir -p test-reports
 }
@@ -328,7 +327,7 @@ start_test_suite() {
     local suite_name="$1"
     CURRENT_SUITE="$suite_name"
     CURRENT_SUITE_START=$(date +%s)
-    
+
     log_info "Starting test suite: $suite_name"
 }
 
@@ -337,7 +336,7 @@ assert_equal() {
     local expected="$1"
     local actual="$2"
     local message="${3:-Assertion failed}"
-    
+
     if [ "$expected" = "$actual" ]; then
         record_test_result "PASS" "$message"
         log_success "$message"
@@ -352,7 +351,7 @@ assert_equal() {
 assert_file_exists() {
     local filepath="$1"
     local message="${2:-File should exist: $filepath}"
-    
+
     if [ -f "$filepath" ]; then
         record_test_result "PASS" "$message"
         log_success "$message"
@@ -367,7 +366,7 @@ assert_file_exists() {
 assert_command_succeeds() {
     local command="$1"
     local message="${2:-Command should succeed: $command}"
-    
+
     if eval "$command" >/dev/null 2>&1; then
         record_test_result "PASS" "$message"
         log_success "$message"
@@ -399,12 +398,12 @@ is_git_repo() {
 # Branch operations
 create_branch() {
     local branch_name="$1"
-    
+
     if ! is_git_repo; then
         log_error "Not in a git repository"
         return 1
     fi
-    
+
     if git checkout -b "$branch_name" 2>/dev/null; then
         log_success "Created and switched to branch: $branch_name"
         return 0
@@ -417,18 +416,18 @@ create_branch() {
 # Commit operations with validation
 commit_changes() {
     local commit_message="$1"
-    
+
     if ! is_git_repo; then
         log_error "Not in a git repository"
         return 1
     fi
-    
+
     # Check if there are changes to commit
     if git diff --cached --quiet; then
         log_warn "No staged changes to commit"
         return 1
     fi
-    
+
     if git commit -m "$commit_message"; then
         log_success "Changes committed: $commit_message"
         return 0
@@ -442,7 +441,7 @@ commit_changes() {
 push_branch() {
     local branch_name="$1"
     local remote="${2:-origin}"
-    
+
     if git push "$remote" "$branch_name"; then
         log_success "Pushed branch $branch_name to $remote"
         return 0

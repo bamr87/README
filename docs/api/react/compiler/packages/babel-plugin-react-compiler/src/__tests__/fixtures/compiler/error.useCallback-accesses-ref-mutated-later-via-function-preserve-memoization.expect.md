@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-accesses-ref-mutated-later-via-function-preserve-memoization.expect.md
 ---
+# Error.Usecallback Accesses Ref Mutated Later Via Function Preserve Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.useCallback-accesses-ref-mutated-later-via-function-preserve-memoization.t
   19 |   return <input onChange={onChange} />;
   20 | }
 ```
-          
-      
+

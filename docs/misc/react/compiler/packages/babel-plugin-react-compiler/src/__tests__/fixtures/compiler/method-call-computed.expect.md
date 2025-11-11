@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: method-call-computed.expect.md
 ---
+# Method Call Computed.Expect
+
 ## Input
 
 ```javascript
@@ -64,4 +66,3 @@ function foo(a, b, c) {
 }
 
 ```
-      

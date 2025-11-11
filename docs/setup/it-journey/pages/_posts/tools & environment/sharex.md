@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: sharex.md
 ---
+# Sharex
+
 After enabling
 
 ![](/assets/images/sharex-upload-task-imgur.png)

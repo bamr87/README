@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.reserved-words.expect.md
 ---
+# Error.Reserved Words.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.reserved-words.ts:8:28
   10 |     };
   11 |   }
 ```
-          
-      
+

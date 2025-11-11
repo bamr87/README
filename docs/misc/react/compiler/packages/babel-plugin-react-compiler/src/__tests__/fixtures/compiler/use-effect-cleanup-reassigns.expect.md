@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-effect-cleanup-reassigns.expect.md
 ---
+# Use Effect Cleanup Reassigns.Expect
+
 ## Input
 
 ```javascript
@@ -126,7 +128,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0</div>
 <div>0</div>

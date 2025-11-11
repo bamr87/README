@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: mutate-through-identity.expect.md
 ---
+# Mutate Through Identity.Expect
+
 ## Input
 
 ```javascript
@@ -88,7 +90,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0],"output":{"a":0,"b":0}}</div>
 <div>{"inputs":[0,1],"output":{"a":0,"b":1}}</div>

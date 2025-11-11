@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-cx-assigned-to-temporary.expect.md
 ---
+# Repro Cx Assigned To Temporary.Expect
+
 ## Input
 
 ```javascript
@@ -102,6 +104,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="styles/light styles/dark"></div>

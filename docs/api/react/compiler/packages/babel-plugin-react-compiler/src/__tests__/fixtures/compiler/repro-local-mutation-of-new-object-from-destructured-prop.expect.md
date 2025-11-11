@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: repro-local-mutation-of-new-object-from-destructured-prop.expect.md
 ---
+# Repro Local Mutation Of New Object From Destructured Prop.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"rest":{"other":"other","value":42}}</div>

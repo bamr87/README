@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: unlabeled-break-within-label-switch.expect.md
 ---
+# Unlabeled Break Within Label Switch.Expect
+
 ## Input
 
 ```javascript
@@ -72,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["@A"]

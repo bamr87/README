@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: use-no-memo-module-scope-usememo-function-scope.expect.md
 ---
+# Use No Memo Module Scope Usememo Function Scope.Expect
+
 ## Input
 
 ```javascript
@@ -32,6 +34,6 @@ function TestComponent({ x }) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

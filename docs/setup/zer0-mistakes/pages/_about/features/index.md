@@ -23,7 +23,7 @@ The Zer0-Mistakes theme is a **production-ready Jekyll theme** built on Bootstra
 
 Every feature embodies our core principles:
 - **DFF (Design for Failure)** - Comprehensive error handling and validation
-- **DRY (Don't Repeat Yourself)** - Reusable components and automated processes  
+- **DRY (Don't Repeat Yourself)** - Reusable components and automated processes
 - **KIS (Keep It Simple)** - Intuitive interfaces and clear documentation
 - **REnO (Release Early and Often)** - Automated versioning and deployment
 - **MVP (Minimum Viable Product)** - Core functionality first, iterate and enhance

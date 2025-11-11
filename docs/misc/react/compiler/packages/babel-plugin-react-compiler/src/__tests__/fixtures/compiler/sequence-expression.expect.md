@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: sequence-expression.expect.md
 ---
+# Sequence Expression.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ function sequence(props) {
 function foo() {}
 
 ```
-      

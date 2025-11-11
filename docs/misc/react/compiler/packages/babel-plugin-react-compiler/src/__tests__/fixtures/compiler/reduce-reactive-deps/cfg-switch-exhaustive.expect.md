@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: cfg-switch-exhaustive.expect.md
 ---
+# Cfg Switch Exhaustive.Expect
+
 ## Input
 
 ```javascript
@@ -79,6 +81,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":2}

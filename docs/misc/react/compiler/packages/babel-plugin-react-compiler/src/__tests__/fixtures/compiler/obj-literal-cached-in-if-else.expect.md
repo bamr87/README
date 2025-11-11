@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: obj-literal-cached-in-if-else.expect.md
 ---
+# Obj Literal Cached In If Else.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ function foo(a, b, c, d) {
 }
 
 ```
-      

@@ -200,11 +200,11 @@ graph TD;
 graph TD;
     A[Start] --> B{Decision};
     B -->|Yes| C[Action];
-    
+
     classDef startNode fill:#e1f5fe;
     classDef decisionNode fill:#fff3e0;
     classDef actionNode fill:#e8f5e8;
-    
+
     class A startNode;
     class B decisionNode;
     class C actionNode;
@@ -220,12 +220,12 @@ graph TB
         A[React App]
         B[Vue App]
     end
-    
+
     subgraph "Backend"
         C[API Server]
         D[Database]
     end
-    
+
     A --> C
     B --> C
     C --> D

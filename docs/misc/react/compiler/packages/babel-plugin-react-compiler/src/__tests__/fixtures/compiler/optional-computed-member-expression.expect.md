@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-computed-member-expression.expect.md
 ---
+# Optional Computed Member Expression.Expect
+
 ## Input
 
 ```javascript
@@ -35,4 +37,3 @@ function Component(props) {
 }
 
 ```
-      

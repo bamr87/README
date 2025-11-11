@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-for-loop-with-context-variable-iterator.expect.md
 ---
+# Error.Todo For Loop With Context Variable Iterator.Expect
+
 ## Input
 
 ```javascript
@@ -65,5 +67,4 @@ error.todo-for-loop-with-context-variable-iterator.ts:18:30
   20 |       <Stringify key={i} onClick={() => data.get(i)} shouldInvokeFns={true} />
   21 |     );
 ```
-          
-      
+

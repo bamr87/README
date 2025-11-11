@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: map-constructor.expect.md
 ---
+# Map Constructor.Expect
+
 ## Input
 
 ```javascript
@@ -78,7 +80,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 2

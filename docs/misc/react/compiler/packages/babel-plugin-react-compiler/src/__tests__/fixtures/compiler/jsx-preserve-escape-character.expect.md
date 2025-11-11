@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-preserve-escape-character.expect.md
 ---
+# Jsx Preserve Escape Character.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input pattern="\w">

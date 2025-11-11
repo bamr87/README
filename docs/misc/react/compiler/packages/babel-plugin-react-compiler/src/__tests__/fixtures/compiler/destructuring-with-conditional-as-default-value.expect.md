@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-with-conditional-as-default-value.expect.md
 ---
+# Destructuring With Conditional As Default Value.Expect
+
 ## Input
 
 ```javascript
@@ -36,6 +38,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

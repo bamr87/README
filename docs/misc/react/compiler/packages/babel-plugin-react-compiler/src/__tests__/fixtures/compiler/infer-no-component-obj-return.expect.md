@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-no-component-obj-return.expect.md
 ---
+# Infer No Component Obj Return.Expect
+
 ## Input
 
 ```javascript
@@ -45,6 +47,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"foo":{}}

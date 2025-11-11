@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-optional-member-expression-with-conditional-optional.expect.md
 ---
+# Error.Todo Optional Member Expression With Conditional Optional.Expect
+
 ## Input
 
 ```javascript
@@ -60,5 +62,4 @@ error.todo-optional-member-expression-with-conditional-optional.ts:4:23
   13 |     <ValidateMemoization inputs={[props?.items, props.cond]} output={data} />
   14 |   );
 ```
-          
-      
+

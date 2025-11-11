@@ -148,7 +148,7 @@ First, open your terminal application. This is your gateway to the command realm
 ```bash
 # Once your terminal is open, you'll see a prompt
 # It usually shows your username, computer name, and current directory
-# Example: username@computer:~$ 
+# Example: username@computer:~$
 
 # Your first spell - identify yourself to the system
 whoami

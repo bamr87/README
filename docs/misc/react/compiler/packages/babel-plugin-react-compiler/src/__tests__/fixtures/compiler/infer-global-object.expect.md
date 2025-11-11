@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-global-object.expect.md
 ---
+# Infer Global Object.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"primitiveVal1":2,"primitiveVal2":null,"primitiveVal3":null}

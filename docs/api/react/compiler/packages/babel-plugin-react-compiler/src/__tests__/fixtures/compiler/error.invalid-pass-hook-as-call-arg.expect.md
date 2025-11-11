@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-pass-hook-as-call-arg.expect.md
 ---
+# Error.Invalid Pass Hook As Call Arg.Expect
+
 ## Input
 
 ```javascript
@@ -31,5 +33,4 @@ error.invalid-pass-hook-as-call-arg.ts:2:13
   3 | }
   4 |
 ```
-          
-      
+

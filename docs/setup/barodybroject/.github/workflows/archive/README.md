@@ -22,7 +22,7 @@ This directory contains workflow files that have been superseded by the foundati
 - **Why Archived**: `ci.yml` now provides comprehensive testing with docker-compose approach, eliminating the need for complex matrix testing across different OS/Python combinations
 - **Coverage**: The container-based approach in `ci.yml` ensures consistent environment testing
 
-### format.yml  
+### format.yml
 **Reason**: Superseded by `quality.yml`
 - **Original Purpose**: Python linting and formatting with ruff
 - **Why Archived**: `quality.yml` now includes comprehensive code quality checks including formatting, linting, and security scanning
@@ -33,7 +33,7 @@ This directory contains workflow files that have been superseded by the foundati
 The current foundational pipeline consists of:
 1. **ci.yml** - Main CI pipeline with testing and validation
 2. **quality.yml** - Code quality, formatting, linting, and security
-3. **container.yml** - Docker-compose validation and container orchestration  
+3. **container.yml** - Docker-compose validation and container orchestration
 4. **deploy.yml** - Azure deployment and infrastructure management
 5. **environment.yml** - Environment management and configuration
 

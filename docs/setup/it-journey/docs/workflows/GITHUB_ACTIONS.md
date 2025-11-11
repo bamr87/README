@@ -48,7 +48,7 @@ The IT-Journey repository uses GitHub Actions for continuous integration, automa
 **Configuration Options:**
 ```yaml
 scope:          # website, internal, external, docs, posts, quests, all
-analysis_level: # basic, standard, comprehensive, ai-only  
+analysis_level: # basic, standard, comprehensive, ai-only
 create_issue:   # true/false - Create GitHub issue with results
 ai_analysis:    # true/false - Enable AI-powered analysis
 timeout:        # 10, 20, 30, 45, 60 seconds
@@ -85,7 +85,7 @@ gh workflow run link-checker.yml \
 6. Archive results as artifacts
 7. Display workflow summary
 
-**See Also:** 
+**See Also:**
 - [Link Checker Resolution](LINK_CHECKER_FIX_RESOLUTION.md)
 - [Link Checker Validation](LINK_CHECKER_VALIDATION.md)
 
@@ -453,18 +453,18 @@ jobs:
   job-name:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Environment
         # Setup steps
-      
+
       - name: Run Task
         run: |
           # Commands
-      
+
       - name: Upload Results
         uses: actions/upload-artifact@v4
         if: always()
@@ -551,6 +551,6 @@ updates:
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

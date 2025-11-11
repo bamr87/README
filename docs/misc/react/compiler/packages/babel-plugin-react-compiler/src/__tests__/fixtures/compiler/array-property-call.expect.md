@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-property-call.expect.md
 ---
+# Array Property Call.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":[1,2,"hello",42],"x":4,"y":1}

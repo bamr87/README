@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: typed-identity-function-frozen-input.expect.md
 ---
+# Typed Identity Function Frozen Input.Expect
+
 ## Input
 
 ```javascript
@@ -117,7 +119,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":{"a":0,"b":"value1","c":true}}</div>
 <div>{"inputs":[1],"output":{"a":0,"b":"value1","c":true}}</div>

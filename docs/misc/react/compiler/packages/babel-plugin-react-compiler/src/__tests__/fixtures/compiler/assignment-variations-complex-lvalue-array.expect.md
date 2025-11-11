@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: assignment-variations-complex-lvalue-array.expect.md
 ---
+# Assignment Variations Complex Lvalue Array.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

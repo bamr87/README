@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: terms-of-service.md
 ---
+# Terms Of Service
+
 These are the terms of service for using this site. A detailed version will appear here.
 
 If you have questions, please reach out to

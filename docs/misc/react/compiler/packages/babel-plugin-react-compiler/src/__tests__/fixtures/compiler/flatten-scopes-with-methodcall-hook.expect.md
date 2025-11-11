@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: flatten-scopes-with-methodcall-hook.expect.md
 ---
+# Flatten Scopes With Methodcall Hook.Expect
+
 ## Input
 
 ```javascript
@@ -43,6 +45,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

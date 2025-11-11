@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fast-refresh-refresh-on-const-changes-dev.expect.md
 ---
+# Fast Refresh Refresh On Const Changes Dev.Expect
+
 ## Input
 
 ```javascript
@@ -108,4 +110,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

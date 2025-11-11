@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.maybe-mutable-ref-not-preserved.expect.md
 ---
+# Error.Maybe Mutable Ref Not Preserved.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ error.maybe-mutable-ref-not-preserved.ts:8:33
   10 |
   11 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

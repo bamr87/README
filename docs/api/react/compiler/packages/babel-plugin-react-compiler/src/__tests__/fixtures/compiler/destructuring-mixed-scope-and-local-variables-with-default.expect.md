@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: destructuring-mixed-scope-and-local-variables-with-default.expect.md
 ---
+# Destructuring Mixed Scope And Local Variables With Default.Expect
+
 ## Input
 
 ```javascript
@@ -138,6 +139,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"media":null,"allUrls":["url1","url2","url3"],"onClick":"[[ function params=1 ]]"}</div>

@@ -19,7 +19,7 @@ graph LR
     Fonts[⚔️ Nerd Font Enchantment] --> Current
     Current --> Advanced[🏰 Advanced Shell Scripting]
     Current --> Automation[🏰 Terminal Automation]
-    
+
     style Current fill:#ffd700
     style Parent fill:#87ceeb
     style Fonts fill:#ffd700
@@ -173,5 +173,5 @@ Success in this side quest unlocks:
 
 *This side quest has transformed your basic terminal navigation skills into an enhanced development environment. You're now ready to tackle advanced terminal challenges or continue with other foundational quests in your chosen learning path.*
 
-**Side Quest Completed: Oh-My-Zsh Terminal Enchantment** ⚔️✨  
+**Side Quest Completed: Oh-My-Zsh Terminal Enchantment** ⚔️✨
 *Your enhanced terminal powers await your next adventure!*

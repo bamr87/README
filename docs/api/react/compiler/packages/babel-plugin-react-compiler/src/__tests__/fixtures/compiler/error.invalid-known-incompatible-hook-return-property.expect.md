@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: error.invalid-known-incompatible-hook-return-property.expect.md
 ---
+# Error.Invalid Known Incompatible Hook Return Property.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +40,4 @@ error.invalid-known-incompatible-hook-return-property.ts:5:15
   6 | }
   7 |
 ```
-          
-      
+

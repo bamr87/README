@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassign-global-hook-arg.expect.md
 ---
+# Reassign Global Hook Arg.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

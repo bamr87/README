@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-computed-access-assignment.expect.md
 ---
+# Object Computed Access Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

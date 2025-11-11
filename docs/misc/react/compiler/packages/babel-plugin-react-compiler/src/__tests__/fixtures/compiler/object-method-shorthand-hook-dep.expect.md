@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-shorthand-hook-dep.expect.md
 ---
+# Object Method Shorthand Hook Dep.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"func":{"kind":"Function","result":false}},"shouldInvokeFns":true}</div>

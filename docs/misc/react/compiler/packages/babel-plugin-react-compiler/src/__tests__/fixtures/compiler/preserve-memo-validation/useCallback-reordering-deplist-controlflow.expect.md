@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-reordering-deplist-controlflow.expect.md
 ---
+# Usecallback Reordering Deplist Controlflow.Expect
+
 ## Input
 
 ```javascript
@@ -103,7 +105,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"val1":{"kind":"Function","result":{"x":2}},"val2":{"kind":"Function","result":[[[1,2],3,4]]},"shouldInvokeFns":true}</div>
 <div>{"val1":{"kind":"Function","result":{"x":2}},"val2":{"kind":"Function","result":[[]]},"shouldInvokeFns":true}</div>

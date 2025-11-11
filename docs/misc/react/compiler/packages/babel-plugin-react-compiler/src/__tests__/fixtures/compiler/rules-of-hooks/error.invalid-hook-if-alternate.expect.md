@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-if-alternate.expect.md
 ---
+# Error.Invalid Hook If Alternate.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-hook-if-alternate.ts:5:8
   7 |   return x;
   8 | }
 ```
-          
-      
+

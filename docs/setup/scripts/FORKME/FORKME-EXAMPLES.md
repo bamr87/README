@@ -65,7 +65,7 @@ repos=(
 
 for repo in "${repos[@]}"; do
     echo "Auditing: $repo"
-    
+
     # Clone security-sensitive files only
     ./forkme.sh --strategy analysis \
         --sparse-paths "src/,config/,*.env.example,Dockerfile,docker-compose.yml" \
@@ -73,7 +73,7 @@ for repo in "${repos[@]}"; do
         --no-fork \
         --target "./audit/$(basename $repo)" \
         "$repo"
-    
+
     # Run security scanner (example with npm audit)
     cd "./audit/$(basename $repo)"
     if [ -f "package.json" ]; then
@@ -193,7 +193,7 @@ mkdir -p ./framework-docs
 
 for repo in "${repos[@]}"; do
     framework=$(basename $repo)
-    
+
     ./forkme.sh --strategy filetype \
         --file-types "md,mdx" \
         --no-fork \
@@ -259,14 +259,14 @@ mkdir -p ./framework-comparison
 
 for framework in "${frameworks[@]}"; do
     name=$(basename $framework)
-    
+
     # Get only source code
     ./forkme.sh --strategy sparse \
         --sparse-paths "lib/,src/,index.js" \
         --no-fork \
         --target "./framework-comparison/$name" \
         "$framework"
-    
+
     # Analyze complexity
     cd "./framework-comparison/$name"
     echo "=== $name ===" >> ../metrics.txt
@@ -303,14 +303,14 @@ cd forkme-workspace/checkout/.github/workflows
   run: |
     curl -fsSL https://raw.githubusercontent.com/bamr87/scripts/main/forkme.sh -o forkme.sh
     chmod +x forkme.sh
-    
+
     # Fast shallow clone
     ./forkme.sh --strategy shallow \
       --depth 1 \
       --no-fork \
       --target ./test-repo \
       ${{ github.repository }}
-    
+
     # Run tests
     cd test-repo
     npm test
@@ -431,10 +431,10 @@ mkdir -p org-audit
 
 for repo in $repos; do
     echo "Processing: $repo"
-    
+
     # Get metadata
     ./forkme.sh --analyze-only "$repo" > "org-audit/${repo//\//-}-metadata.txt"
-    
+
     # Get structure for analysis
     ./forkme.sh --strategy structure \
         --no-fork \
@@ -465,14 +465,14 @@ for repo in "${repos[@]}"; do
         --no-fork \
         --target "./temp-$(basename $repo)" \
         "$repo"
-    
+
     cd "./temp-$(basename $repo)"
-    
+
     node_version=$(jq -r '.engines.node // "unknown"' package.json)
     react_version=$(jq -r '.dependencies.react // "none"' package.json)
-    
+
     echo "$repo,$node_version,$react_version" >> ../survey.csv
-    
+
     cd -
     rm -rf "./temp-$(basename $repo)"
 done
@@ -497,7 +497,7 @@ mkdir -p "$archive_dir"
 
 for repo in "${repos[@]}"; do
     echo "Archiving: $repo"
-    
+
     # Create git bundle for complete offline access
     ./forkme.sh --strategy bundle \
         --target "$archive_dir/$(basename $repo)" \

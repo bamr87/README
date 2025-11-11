@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo-control-flow-sensitive-mutation.expect.md
 ---
+# Todo Control Flow Sensitive Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -154,7 +156,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0,0,0],"output":[{"value":0},{"value":0}]}</div>;<div>{"inputs":[0,0,0],"output":{"value":0}}</div>;
 <div>{"inputs":[0,1,0],"output":[{"value":0},"joe"]}</div>;<div>{"inputs":[0,1,0],"output":{"value":0}}</div>;

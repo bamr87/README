@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-as-conditional-test.expect.md
 ---
+# Error.Invalid Hook As Conditional Test.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-hook-as-conditional-test.ts:2:26
   4 | }
   5 |
 ```
-          
-      
+

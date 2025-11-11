@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-preds-undefined-try-catch-return-primitive.expect.md
 ---
+# Repro Preds Undefined Try Catch Return Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) true

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-memo-noemit.expect.md
 ---
+# Use Memo Noemit.Expect
+
 ## Input
 
 ```javascript
@@ -39,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button>Click me!</button>

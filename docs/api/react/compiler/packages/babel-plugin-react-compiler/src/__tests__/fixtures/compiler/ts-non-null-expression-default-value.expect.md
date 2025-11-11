@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: ts-non-null-expression-default-value.expect.md
 ---
+# Ts Non Null Expression Default Value.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="theme-light">User preferences</div>

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: nonmutating-capture-in-unsplittable-memo-block.expect.md
 ---
+# Nonmutating Capture In Unsplittable Memo Block.Expect
+
 ## Input
 
 ```javascript
@@ -114,7 +116,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"wat0":"joe"},3]
 [{"wat0":"joe"},3]

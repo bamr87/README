@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dont-merge-overlapping-scopes-store-const-used-later.expect.md
 ---
+# Dont Merge Overlapping Scopes Store Const Used Later.Expect
+
 ## Input
 
 ```javascript
@@ -71,7 +73,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>42</div></div>
 logs: [{ a: 0, b: 'value1', c: true }]

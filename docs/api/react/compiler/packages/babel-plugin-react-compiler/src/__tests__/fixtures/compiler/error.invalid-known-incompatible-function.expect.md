@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: error.invalid-known-incompatible-function.expect.md
 ---
+# Error.Invalid Known Incompatible Function.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +41,4 @@ error.invalid-known-incompatible-function.ts:4:15
   6 | }
   7 |
 ```
-          
-      
+

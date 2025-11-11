@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbtparam-text-must-use-expression-container.expect.md
 ---
+# Fbtparam Text Must Use Expression Container.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ function Component(props) {
 }
 
 ```
-      

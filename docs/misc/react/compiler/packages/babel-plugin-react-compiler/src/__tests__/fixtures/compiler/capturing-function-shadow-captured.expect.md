@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-shadow-captured.expect.md
 ---
+# Capturing Function Shadow Captured.Expect
+
 ## Input
 
 ```javascript
@@ -59,7 +61,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"fn":{"kind":"Function"},"shouldInvokeFns":true}</div>
 <div>{"fn":{"kind":"Function"},"shouldInvokeFns":true}</div>

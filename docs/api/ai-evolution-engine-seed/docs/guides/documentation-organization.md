@@ -4,7 +4,6 @@ category: api
 tags:
 - api
 - testing
-- api
 last_updated: null
 source_file: documentation-organization.md
 ---
@@ -16,7 +15,7 @@ source_file: documentation-organization.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Documentation organization standardization
   - AI prompt cycle validation automation
 

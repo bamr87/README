@@ -14,7 +14,7 @@ source_file: evolution-final-report.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #evolution-tracking: Version correlation and file modification tracking
 
 @relatedEvolutions

@@ -339,7 +339,7 @@ Comprehensive review and update of GitHub Actions workflows for consistency, sim
 #### 1. `ai_evolver.yml` - Manual Evolution Engine
 **Purpose**: Primary workflow for manual AI-driven evolution triggered by human prompts
 
-**Triggers**: 
+**Triggers**:
 - Manual dispatch with custom growth instructions
 
 **Key Features**:
@@ -770,7 +770,7 @@ git pull origin main
 git checkout -b evolved
 git push -u origin evolved
 
-# Create test branch  
+# Create test branch
 git checkout main
 git checkout -b test
 git push -u origin test
@@ -974,11 +974,11 @@ workflow_dispatch:
     target_branch:
       description: 'Base branch for evolution'
       default: 'evolved'  # Now defaults to evolved
-    
+
     dry_run:
       description: 'Simulate without making changes'
       default: false
-    
+
     growth_mode:
       description: 'Evolution strategy'
       default: 'adaptive'
@@ -995,11 +995,11 @@ workflow_dispatch:
     test_branch:
       description: 'Branch to test'
       default: 'evolved'  # Can test other branches too
-    
+
     create_issues:
       description: 'Create issues for failures'
       default: false
-    
+
     generate_reports:
       description: 'Generate detailed reports'
       default: true

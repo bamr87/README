@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: else-branch-scope-unpoisoned.expect.md
 ---
+# Else Branch Scope Unpoisoned.Expect
+
 ## Input
 
 ```javascript
@@ -90,9 +92,9 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 2
 
 [[ (exception in render) TypeError: Cannot read properties of undefined (reading 'b') ]]

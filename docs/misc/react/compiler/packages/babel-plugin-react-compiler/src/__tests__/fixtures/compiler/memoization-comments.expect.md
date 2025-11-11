@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: memoization-comments.expect.md
 ---
+# Memoization Comments.Expect
+
 ## Input
 
 ```javascript
@@ -80,6 +82,6 @@ function Component(props) {
 export const FIXTURE_ENTRYPOINT = { fn: Component, params: [{ a: 1, b: 10 }] };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,10]

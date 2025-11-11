@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.wrong-index.expect.md
 ---
+# Error.Wrong Index.Expect
+
 ## Input
 
 ```javascript
@@ -56,5 +58,4 @@ error.wrong-index.ts:6:2
   13 | }
   14 |
 ```
-          
-      
+

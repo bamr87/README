@@ -235,7 +235,7 @@ npm run dev:ext
 <i> [webpack-dev-server] Loopback: http://localhost:9001/
 
 extension (webpack 5.90.1) compiled successfully
-dashboard (webpack 5.90.1) compiled successfully  
+dashboard (webpack 5.90.1) compiled successfully
 panel (webpack 5.90.1) compiled successfully
 ```
 
@@ -288,7 +288,7 @@ panel (webpack 5.90.1) compiled successfully
    ```typescript
    // src/commands/myCustomCommand.ts
    import { window } from 'vscode';
-   
+
    export const myCustomCommand = () => {
      window.showInformationMessage('Hello from my custom Front Matter command!');
    };
@@ -298,7 +298,7 @@ panel (webpack 5.90.1) compiled successfully
    ```typescript
    // In src/extension.ts (find the activate function)
    import { myCustomCommand } from './commands/myCustomCommand';
-   
+
    // Add to the commands registration section:
    const myCustomCmd = commands.registerCommand('frontMatter.myCustomCommand', myCustomCommand);
    subscriptions.push(myCustomCmd);
@@ -351,7 +351,7 @@ panel (webpack 5.90.1) compiled successfully
 
 **Panel Development**:
 ```bash
-# Panel runs at http://localhost:9001/  
+# Panel runs at http://localhost:9001/
 # Source files in: src/panels/
 # Main entry point: src/panels/index.tsx
 ```
@@ -375,7 +375,7 @@ panel (webpack 5.90.1) compiled successfully
 
 2. **Dashboard Config** (`webpack/dashboard.config.js`):
    - Builds the React dashboard app
-   - Target: Browser environment  
+   - Target: Browser environment
    - Development server with HMR
    - Output: `dist/dashboard.main.js`
 
@@ -414,7 +414,7 @@ npm run localization:sync
 **Testing Approaches**:
 
 1. **Unit Testing**: Test individual functions and components
-2. **Integration Testing**: Test command interactions and workflows  
+2. **Integration Testing**: Test command interactions and workflows
 3. **Manual Testing**: Test in real VS Code environment
 4. **User Scenario Testing**: Test complete user workflows
 
@@ -447,7 +447,7 @@ npm run vscode:prepublish
 
 # Individual production builds
 npm run prod:ext         # Extension only
-npm run prod:dashboard   # Dashboard only  
+npm run prod:dashboard   # Dashboard only
 npm run prod:panel      # Panel only
 ```
 
@@ -596,7 +596,7 @@ Before proceeding, ensure you understand:
 #### Exercise 1: Environment Setup Verification
 **Objective**: Confirm your development environment is fully functional
 
-**Challenge**: 
+**Challenge**:
 1. Fork the repository (if not already done)
 2. Set up the development environment
 3. Successfully launch the Extension Development Host
@@ -632,7 +632,7 @@ export const showWorkspaceStats = async () => {
     window.showInformationMessage('No workspace folder found');
     return;
   }
-  
+
   // Implement file counting logic
   // Display results to user
 };

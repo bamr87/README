@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-memoize-array-with-immutable-map-after-hook.expect.md
 ---
+# Repro Memoize Array With Immutable Map After Hook.Expect
+
 ## Input
 
 ```javascript
@@ -101,6 +103,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span>42</span></div>

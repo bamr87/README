@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-functions-component-with-jsx.expect.md
 ---
+# Infer Functions Component With Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function Component(props) {
 }
 
 ```
-      

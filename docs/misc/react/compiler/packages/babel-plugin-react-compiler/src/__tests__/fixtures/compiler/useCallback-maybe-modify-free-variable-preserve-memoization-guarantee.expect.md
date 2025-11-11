@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-maybe-modify-free-variable-preserve-memoization-guarantee.expect.md
 ---
+# Usecallback Maybe Modify Free Variable Preserve Memoization Guarantee.Expect
+
 ## Input
 
 ```javascript
@@ -90,6 +92,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

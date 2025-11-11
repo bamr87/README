@@ -24,8 +24,8 @@ Welcome to your journey in setting up a professional Jekyll development environm
 - ✅ Create your first Jekyll project
 - ✅ Establish automated backup and deployment workflows
 
-**Time Investment:** 60-90 minutes for complete setup  
-**Skill Level:** Beginner to Intermediate  
+**Time Investment:** 60-90 minutes for complete setup
+**Skill Level:** Beginner to Intermediate
 **End Result:** A fully functional Jekyll development environment ready for professional web development
 
 ## 📋 Table of Contents

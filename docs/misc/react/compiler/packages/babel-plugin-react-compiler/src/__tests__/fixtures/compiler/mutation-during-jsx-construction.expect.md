@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: mutation-during-jsx-construction.expect.md
 ---
+# Mutation During Jsx Construction.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-like-name-in-effect.expect.md
 ---
+# Ref Like Name In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -91,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>foo</div>

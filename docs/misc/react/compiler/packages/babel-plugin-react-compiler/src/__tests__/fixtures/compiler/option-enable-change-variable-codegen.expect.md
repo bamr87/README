@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: option-enable-change-variable-codegen.expect.md
 ---
+# Option Enable Change Variable Codegen.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [3.14,true]

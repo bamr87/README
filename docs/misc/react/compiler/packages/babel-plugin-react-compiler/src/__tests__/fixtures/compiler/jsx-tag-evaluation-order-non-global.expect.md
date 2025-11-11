@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-tag-evaluation-order-non-global.expect.md
 ---
+# Jsx Tag Evaluation Order Non Global.Expect
+
 ## Input
 
 ```javascript
@@ -112,6 +114,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>StaticText1<div>StaticText2</div></div>

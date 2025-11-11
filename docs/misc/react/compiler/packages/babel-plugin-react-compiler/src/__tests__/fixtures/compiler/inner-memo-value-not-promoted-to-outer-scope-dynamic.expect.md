@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: inner-memo-value-not-promoted-to-outer-scope-dynamic.expect.md
 ---
+# Inner Memo Value Not Promoted To Outer Scope Dynamic.Expect
+
 ## Input
 
 ```javascript
@@ -97,4 +99,3 @@ function Component(props) {
 }
 
 ```
-      

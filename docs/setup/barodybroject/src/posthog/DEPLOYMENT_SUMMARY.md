@@ -43,7 +43,7 @@ The deployment was successfully tested with the following results:
 
 #### All Services Running:
 ✅ PostgreSQL (db) - Up and running
-✅ Redis - Up and running  
+✅ Redis - Up and running
 ✅ ClickHouse - Up and running
 ✅ Zookeeper - Up and running
 ✅ Kafka - Up and running
@@ -89,7 +89,7 @@ Total variables configured: **32**
 
 ### Categories:
 - Database: 4 variables
-- ClickHouse: 6 variables  
+- ClickHouse: 6 variables
 - Redis: 2 variables
 - Kafka: 7 variables
 - Zookeeper: 2 variables
@@ -116,7 +116,7 @@ Total variables configured: **32**
 ### For Production:
 1. Generate new secure secrets:
    - `SECRET_KEY` (Django)
-   - `ENCRYPTION_KEYS` 
+   - `ENCRYPTION_KEYS`
    - `ENCRYPTION_SALT_KEYS`
    - All passwords
 

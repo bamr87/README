@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-sibling-phis.expect.md
 ---
+# Ssa Sibling Phis.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

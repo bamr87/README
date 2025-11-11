@@ -42,7 +42,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: true
-  
+
   task_lists:
     CommonMark: false
     GitHub: true
@@ -50,7 +50,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: true
-  
+
   strikethrough:
     CommonMark: false
     GitHub: true
@@ -58,7 +58,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: true
-  
+
   footnotes:
     CommonMark: false
     GitHub: false
@@ -66,7 +66,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: true
-  
+
   definition_lists:
     CommonMark: false
     GitHub: false
@@ -74,7 +74,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: false
-  
+
   math_expressions:
     CommonMark: false
     GitHub: true
@@ -82,7 +82,7 @@ markdown_features:
     Jekyll: true
     MkDocs: true
     Docusaurus: true
-  
+
   mermaid_diagrams:
     CommonMark: false
     GitHub: true
@@ -483,7 +483,7 @@ JSON
 | Admin | ✅ | ✅ | ✅ |
 | User | ✅ | ❌ | ❌ |
 
-### System Permissions  
+### System Permissions
 | Role | Config | Logs | Backup |
 |------|--------|------|--------|
 | Admin | ✅ | ✅ | ✅ |
@@ -576,11 +576,11 @@ This is [example][1] of [reference][1] style links.
 [image-ref]: ./images/example.png "Image title"
 
 # HTML for advanced features
-<img src="./images/example.png" 
-     alt="Descriptive alt text" 
+<img src="./images/example.png"
+     alt="Descriptive alt text"
      title="Image title"
-     width="600" 
-     height="400" 
+     width="600"
+     height="400"
      loading="lazy" />
 ```
 
@@ -641,7 +641,7 @@ sequenceDiagram
     participant App
     participant API
     participant DB
-    
+
     User->>App: Login request
     App->>API: Authenticate
     API->>DB: Verify credentials
@@ -657,12 +657,12 @@ classDiagram
         +login()
         +logout()
     }
-    
+
     class Admin {
         +manageUsers()
         +systemConfig()
     }
-    
+
     User <|-- Admin
 ```
 
@@ -805,7 +805,7 @@ This is an info hint
 {% endhint %}
 
 {% hint style="warning" %}
-This is a warning hint  
+This is a warning hint
 {% endhint %}
 
 {% hint style="danger" %}
@@ -960,7 +960,7 @@ docs/
 ```markdown
 # Date formats
 - US: MM/DD/YYYY (07/19/2025)
-- EU: DD/MM/YYYY (19/07/2025)  
+- EU: DD/MM/YYYY (19/07/2025)
 - ISO: YYYY-MM-DD (2025-07-19) ← Recommended
 
 # Number formats
@@ -1164,7 +1164,7 @@ plugins:
 # tagline: 'Comprehensive project documentation'
 # url: 'https://docs.example.com'
 # baseUrl: '/'
-# 
+#
 # presets:
 #   - name: 'classic'
 #     config:
@@ -1175,7 +1175,7 @@ plugins:
 #         showLastUpdateAuthor: true
 #       theme:
 #         customCss: './src/css/custom.css'
-# 
+#
 # themeConfig:
 #   navbar:
 #     title: 'Docs'
@@ -1196,7 +1196,7 @@ module.exports = {
   tagline: 'Comprehensive project documentation',
   url: 'https://docs.example.com',
   baseUrl: '/',
-  
+
   presets: [
     [
       'classic',
@@ -1213,7 +1213,7 @@ module.exports = {
       },
     ],
   ],
-  
+
   themeConfig: {
     navbar: {
       title: 'Docs',
@@ -1289,14 +1289,14 @@ jobs:
       - uses: actions/checkout@v3
       - name: Lint Markdown files
         uses: articulate/actions-markdownlint@v1
-        
+
   link-check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Check links
         uses: gaurav-nelson/github-action-markdown-link-check@v1
-        
+
   spell-check:
     runs-on: ubuntu-latest
     steps:
@@ -1315,8 +1315,8 @@ jobs:
 <picture>
   <source media="(max-width: 768px)" srcset="./images/mobile-screenshot.png">
   <source media="(max-width: 1200px)" srcset="./images/tablet-screenshot.png">
-  <img src="./images/desktop-screenshot.png" 
-       alt="Application dashboard interface" 
+  <img src="./images/desktop-screenshot.png"
+       alt="Application dashboard interface"
        loading="lazy">
 </picture>
 
@@ -1379,7 +1379,7 @@ assets/
 ![Diagram](https://cdn.example.com/docs/images/architecture.svg)
 
 # Local fallback
-<img src="https://cdn.example.com/docs/images/screenshot.webp" 
+<img src="https://cdn.example.com/docs/images/screenshot.webp"
      onerror="this.src='./images/screenshot.png'"
      alt="Application interface">
 ```
@@ -1559,7 +1559,7 @@ documentation:
     accessibility: true
     seo_optimized: true
     multi_language: true
-    
+
   tools:
     static_generators:
       - name: "jekyll"
@@ -1589,23 +1589,23 @@ quality_checks:
       line_length: 100
       heading_style: "atx"
       no_duplicate_headings: true
-    
+
   link_validation:
     enabled: true
     check_external: true
     timeout: 30
-    
+
   spell_check:
     enabled: true
     dictionaries:
       - "en_US"
       - "technical_terms"
-    
+
   accessibility:
     alt_text_required: true
     heading_structure: true
     color_contrast: true
-    
+
   seo:
     meta_description: true
     title_optimization: true

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.ref-initialization-post-access-2.expect.md
 ---
+# Error.Ref Initialization Post Access 2.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
   11 |
   12 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

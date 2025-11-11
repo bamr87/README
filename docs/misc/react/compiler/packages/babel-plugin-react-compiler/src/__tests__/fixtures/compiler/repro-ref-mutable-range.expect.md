@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-ref-mutable-range.expect.md
 ---
+# Repro Ref Mutable Range.Expect
+
 ## Input
 
 ```javascript
@@ -91,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"ref":{"current":"fake-ref-object"}}</div>

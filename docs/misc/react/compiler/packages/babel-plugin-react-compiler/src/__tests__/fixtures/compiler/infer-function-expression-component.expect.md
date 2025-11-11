@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-expression-component.expect.md
 ---
+# Infer Function Expression Component.Expect
+
 ## Input
 
 ```javascript
@@ -35,4 +37,3 @@ const Component = function ComponentName(props) {
 };
 
 ```
-      

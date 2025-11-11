@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-dependency-fixpoint.expect.md
 ---
+# Reactive Dependency Fixpoint.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

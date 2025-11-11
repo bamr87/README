@@ -79,7 +79,7 @@ pytest test/integration/test_docker_integration.py -v
 # Test interactive mode
 ./test/scripts/test_interactive_mode.sh
 
-# Test headless mode  
+# Test headless mode
 ./test/scripts/test_headless_mode.sh
 
 # Test Docker setup

@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: feature_request_technical_requirements.md
 ---
+# Feature Request Technical Requirements
+
 ## Summary
 Provide a brief summary of the feature and its purpose. Include any references to relevant documentation or design specifications.
 

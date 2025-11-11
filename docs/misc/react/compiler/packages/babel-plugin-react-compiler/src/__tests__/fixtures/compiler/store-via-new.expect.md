@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: store-via-new.expect.md
 ---
+# Store Via New.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function Foo() {
 }
 
 ```
-      

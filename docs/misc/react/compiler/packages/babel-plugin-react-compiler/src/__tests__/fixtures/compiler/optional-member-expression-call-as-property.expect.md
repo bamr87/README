@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-member-expression-call-as-property.expect.md
 ---
+# Optional Member Expression Call As Property.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ function Component(props) {
 }
 
 ```
-      

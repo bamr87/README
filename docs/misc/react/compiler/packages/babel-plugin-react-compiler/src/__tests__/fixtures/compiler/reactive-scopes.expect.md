@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-scopes.expect.md
 ---
+# Reactive Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -60,4 +62,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

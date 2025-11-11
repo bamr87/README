@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rewrite-phis-in-lambda-capture-context.expect.md
 ---
+# Rewrite Phis In Lambda Capture Context.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function _temp() {
 }
 
 ```
-      

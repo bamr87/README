@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reanimated-no-memo-arg.expect.md
 ---
+# Reanimated No Memo Arg.Expect
+
 ## Input
 
 ```javascript
@@ -82,4 +84,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

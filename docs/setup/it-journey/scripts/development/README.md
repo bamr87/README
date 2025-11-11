@@ -17,7 +17,7 @@ Scripts specifically for development workflows, content creation, and testing.
 ## Directory Structure
 
 - `build/` - Build automation and compilation scripts
-- `content/` - Content processing and transformation tools  
+- `content/` - Content processing and transformation tools
 - `testing/` - Testing utilities and CI/CD scripts
 
 ## Build Scripts (`build/`)
@@ -80,7 +80,7 @@ Continuous integration build script for automated testing.
 Development scripts work together to provide a complete development workflow:
 
 1. **Setup** → Use core environment setup
-2. **Build** → Use build-site.sh for compilation  
+2. **Build** → Use build-site.sh for compilation
 3. **Test** → Use testing scripts for validation
 4. **Content** → Use content tools for processing
 

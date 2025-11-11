@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fish-flavored-egg-plant.md
 ---
+# Fish Flavored Egg Plant
+
 ## Ingredients
 
 | Qty   |  UM  | Ingredient                    | Notes                               |

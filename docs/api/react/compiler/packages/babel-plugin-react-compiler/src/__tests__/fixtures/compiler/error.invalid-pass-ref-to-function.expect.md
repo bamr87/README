@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-pass-ref-to-function.expect.md
 ---
+# Error.Invalid Pass Ref To Function.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-pass-ref-to-function.ts:4:16
   6 | }
   7 |
 ```
-          
-      
+

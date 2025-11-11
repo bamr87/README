@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.emit-freeze-conflicting-global.expect.md
 ---
+# Error.Emit Freeze Conflicting Global.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.emit-freeze-conflicting-global.ts:3:8
   5 |   return foo(props.x);
   6 | }
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invariant.expect.md
 ---
+# Repro Invariant.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"foo":{"kind":"Function"},"bar":4,"shouldInvokeFns":true}</div>

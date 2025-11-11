@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-missing-dependency-if-within-while.expect.md
 ---
+# Repro Missing Dependency If Within While.Expect
+
 ## Input
 
 ```javascript
@@ -84,7 +86,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div>
 <div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div><div>0</div>

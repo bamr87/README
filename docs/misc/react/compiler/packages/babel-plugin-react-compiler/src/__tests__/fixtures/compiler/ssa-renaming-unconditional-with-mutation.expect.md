@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-renaming-unconditional-with-mutation.expect.md
 ---
+# Ssa Renaming Unconditional With Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["foo","joe"]
 ["foo","joe"]

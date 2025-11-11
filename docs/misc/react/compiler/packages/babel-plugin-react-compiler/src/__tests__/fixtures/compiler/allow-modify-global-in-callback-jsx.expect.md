@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-modify-global-in-callback-jsx.expect.md
 ---
+# Allow Modify Global In Callback Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -83,7 +85,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0</div>
 <div>0</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reduce-reactive-cond-deps-break-in-scope.expect.md
 ---
+# Reduce Reactive Cond Deps Break In Scope.Expect
+
 ## Input
 
 ```javascript
@@ -71,7 +73,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []
 [2,null]

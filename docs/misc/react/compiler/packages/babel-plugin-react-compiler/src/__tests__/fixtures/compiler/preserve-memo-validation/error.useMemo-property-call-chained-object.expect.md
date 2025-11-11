@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-property-call-chained-object.expect.md
 ---
+# Error.Usememo Property Call Chained Object.Expect
+
 ## Input
 
 ```javascript
@@ -48,5 +50,4 @@ error.useMemo-property-call-chained-object.ts:5:17
   10 | }
   11 |
 ```
-          
-      
+

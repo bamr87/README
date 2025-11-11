@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-map-mutable-array-mutating-lambda-noAlias.expect.md
 ---
+# Array Map Mutable Array Mutating Lambda Noalias.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]

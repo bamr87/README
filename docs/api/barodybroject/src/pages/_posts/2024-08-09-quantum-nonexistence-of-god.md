@@ -4,7 +4,6 @@ category: api
 tags:
 - api
 - testing
-- api
 last_updated: null
 source_file: 2024-08-09-quantum-nonexistence-of-god.md
 ---

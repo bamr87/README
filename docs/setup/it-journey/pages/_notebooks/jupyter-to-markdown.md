@@ -61,7 +61,7 @@ for notebook in glob("**/*.ipynb", recursive=True):
 
 Success! You have converted a Jupyter Notebook to Markdown.
 
-but the output is not labeled as such. 
+but the output is not labeled as such.
 
 Now we need to update the script to tag the output with codeblocks and tags. for example:
 

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: gating-test-export-function-and-default.expect.md
 ---
+# Gating Test Export Function And Default.Expect
+
 ## Input
 
 ```javascript
@@ -111,6 +113,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>2</div>

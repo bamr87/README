@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-while.expect.md
 ---
+# Alias While.Expect
+
 ## Input
 
 ```javascript
@@ -59,4 +61,3 @@ function foo(cond) {
 function mutate(x, y) {}
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: GPT App Build.md
 ---
+# Gpt App Build
+
 Title:
 
 
@@ -19,9 +21,9 @@ Prompt: I want to build an online app that publishes these conversations.
 Journalized progression of a application build completely genereated by GPT.
 - Zero to Hero GPT
 	- Easy/Medium/Hard
-	- Stack 
-	- Machine 
+	- Stack
+	- Machine
 	- Offline first but cloud ready
-- Quest 
+- Quest
 
-Extentions: VS Code, Front Matter, 
+Extentions: VS Code, Front Matter,

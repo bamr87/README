@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.dont-hoist-inline-reference.expect.md
 ---
+# Error.Dont Hoist Inline Reference.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.dont-hoist-inline-reference.ts:3:2
   5 | }
   6 |
 ```
-          
-      
+

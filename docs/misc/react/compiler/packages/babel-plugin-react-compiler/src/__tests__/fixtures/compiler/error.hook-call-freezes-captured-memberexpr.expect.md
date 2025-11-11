@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.hook-call-freezes-captured-memberexpr.expect.md
 ---
+# Error.Hook Call Freezes Captured Memberexpr.Expect
+
 ## Input
 
 ```javascript
@@ -51,5 +53,4 @@ error.hook-call-freezes-captured-memberexpr.ts:13:2
   15 | }
   16 |
 ```
-          
-      
+

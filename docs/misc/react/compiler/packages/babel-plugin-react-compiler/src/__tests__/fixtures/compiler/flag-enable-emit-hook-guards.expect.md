@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: flag-enable-emit-hook-guards.expect.md
 ---
+# Flag Enable Emit Hook Guards.Expect
+
 ## Input
 
 ```javascript
@@ -131,4 +133,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

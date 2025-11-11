@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: unused-array-rest-element.expect.md
 ---
+# Unused Array Rest Element.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

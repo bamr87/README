@@ -248,8 +248,8 @@ cp .env.example .env.new_feature
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Team
 
 > **Usage Note**: Copy this template to create feature documentation. Replace all placeholder text with actual implementation details. Remove sections that don't apply to your specific feature.

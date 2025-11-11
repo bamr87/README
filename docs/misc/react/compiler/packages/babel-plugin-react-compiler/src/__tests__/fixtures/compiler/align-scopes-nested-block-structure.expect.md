@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: align-scopes-nested-block-structure.expect.md
 ---
+# Align Scopes Nested Block Structure.Expect
+
 ## Input
 
 ```javascript
@@ -169,7 +171,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}
 {}

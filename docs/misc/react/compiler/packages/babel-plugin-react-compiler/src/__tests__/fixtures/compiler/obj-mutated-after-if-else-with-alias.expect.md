@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: obj-mutated-after-if-else-with-alias.expect.md
 ---
+# Obj Mutated After If Else With Alias.Expect
+
 ## Input
 
 ```javascript
@@ -52,4 +54,3 @@ function foo(a, b, c, d) {
 }
 
 ```
-      

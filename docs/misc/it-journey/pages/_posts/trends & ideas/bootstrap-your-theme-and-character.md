@@ -6,3 +6,5 @@ tags:
 last_updated: null
 source_file: bootstrap-your-theme-and-character.md
 ---
+# Bootstrap Your Theme And Character
+

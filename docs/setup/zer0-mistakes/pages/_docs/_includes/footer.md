@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: footer.md
 ---
+# Footer
+
 ### Introduction to the Ultimate Website Footer (Using Bootstrap and Jekyll)
 A website footer is the section at the bottom of every page, serving as a navigational anchor, information hub, and legal/compliance area. It enhances user experience (UX) by providing quick access to secondary content, reinforces branding, and improves SEO through internal links. The "ultimate" footer is comprehensive, user-friendly, accessible, responsive, and adaptable to any website type (e.g., e-commerce, blog, corporate, portfolio). It balances functionality with minimalism to avoid overwhelming users.
 

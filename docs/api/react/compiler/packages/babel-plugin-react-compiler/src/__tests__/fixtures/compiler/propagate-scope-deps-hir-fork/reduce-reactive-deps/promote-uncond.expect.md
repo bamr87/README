@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: promote-uncond.expect.md
 ---
+# Promote Uncond.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":3}

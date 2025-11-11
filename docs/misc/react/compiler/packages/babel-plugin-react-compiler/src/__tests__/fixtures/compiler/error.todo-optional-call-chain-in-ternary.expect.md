@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-optional-call-chain-in-ternary.expect.md
 ---
+# Error.Todo Optional Call Chain In Ternary.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.todo-optional-call-chain-in-ternary.ts:5:30
   7 |
   8 | export const FIXTURE_ENTRYPONT = {
 ```
-          
-      
+

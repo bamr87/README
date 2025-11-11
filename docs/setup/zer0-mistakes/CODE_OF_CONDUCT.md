@@ -54,7 +54,7 @@ This Code of Conduct applies across all community instances, including:
 
 ## Enforcement (Our Bug Bounty Program for Behavior)
 
-When someone's behavior generates a critical exception, report it to our human handlers at [support@zer0-mistakes.com](mailto:support@zer0-mistakes.com). 
+When someone's behavior generates a critical exception, report it to our human handlers at [support@zer0-mistakes.com](mailto:support@zer0-mistakes.com).
 
 Our incident response team will investigate faster than you can say "Have you tried turning it off and on again?" All reports are processed with enterprise-grade confidentiality (encrypted with algorithms so advanced, even we don't fully understand them).
 

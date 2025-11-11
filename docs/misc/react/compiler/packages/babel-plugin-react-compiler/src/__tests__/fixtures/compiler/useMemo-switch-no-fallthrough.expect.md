@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-switch-no-fallthrough.expect.md
 ---
+# Usememo Switch No Fallthrough.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

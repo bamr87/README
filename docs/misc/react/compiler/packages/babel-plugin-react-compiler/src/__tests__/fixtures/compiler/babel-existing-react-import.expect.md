@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: babel-existing-react-import.expect.md
 ---
+# Babel Existing React Import.Expect
+
 ## Input
 
 ```javascript
@@ -80,4 +82,3 @@ function Component2(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid.invalid-rules-of-hooks-0a1dbff27ba0.expect.md
 ---
+# Error.Invalid.Invalid Rules Of Hooks 0A1Dbff27Ba0.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid.invalid-rules-of-hooks-0a1dbff27ba0.ts:6:6
   8 |   };
   9 | }
 ```
-          
-      
+

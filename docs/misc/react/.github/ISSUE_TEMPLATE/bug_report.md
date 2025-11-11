@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: bug_report.md
 ---
+# Bug Report
+
 <!--
   Please provide a clear and concise description of what the bug is. Include
   screenshots if needed. Please test using the latest version of the relevant

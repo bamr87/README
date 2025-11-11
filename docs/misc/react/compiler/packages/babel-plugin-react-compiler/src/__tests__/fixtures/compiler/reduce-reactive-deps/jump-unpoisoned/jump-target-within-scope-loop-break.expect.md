@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jump-target-within-scope-loop-break.expect.md
 ---
+# Jump Target Within Scope Loop Break.Expect
+
 ## Input
 
 ```javascript
@@ -83,7 +85,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [9,2]
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'a') ]]

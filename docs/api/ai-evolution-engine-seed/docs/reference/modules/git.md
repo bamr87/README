@@ -3,7 +3,6 @@ title: git.sh
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: git.md
 ---

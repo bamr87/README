@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-outside-effect.expect.md
 ---
+# Error.Invalid Outside Effect.Expect
+
 ## Input
 
 ```javascript
@@ -59,5 +61,4 @@ error.invalid-outside-effect.ts:11:4
   13 |
   14 |   return null;
 ```
-          
-      
+

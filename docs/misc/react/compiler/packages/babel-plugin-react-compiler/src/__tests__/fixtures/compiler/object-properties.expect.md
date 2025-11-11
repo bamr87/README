@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-properties.expect.md
 ---
+# Object Properties.Expect
+
 ## Input
 
 ```javascript
@@ -29,4 +31,3 @@ function foo(a, b, c) {
 }
 
 ```
-      

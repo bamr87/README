@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-pass-mutable-function-as-prop.expect.md
 ---
+# Error.Invalid Pass Mutable Function As Prop.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-pass-mutable-function-as-prop.ts:5:4
   7 |   return <Foo fn={fn} />;
   8 | }
 ```
-          
-      
+

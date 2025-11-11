@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-nested-member-expr-in-nested-func.expect.md
 ---
+# Capturing Nested Member Expr In Nested Func.Expect
+
 ## Input
 
 ```javascript
@@ -65,4 +67,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

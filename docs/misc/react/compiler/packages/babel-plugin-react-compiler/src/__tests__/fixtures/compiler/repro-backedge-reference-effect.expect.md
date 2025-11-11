@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-backedge-reference-effect.expect.md
 ---
+# Repro Backedge Reference Effect.Expect
+
 ## Input
 
 ```javascript
@@ -74,6 +76,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"fn":{"kind":"Function","result":[1,2,4]},"shouldInvokeFns":true}</div>

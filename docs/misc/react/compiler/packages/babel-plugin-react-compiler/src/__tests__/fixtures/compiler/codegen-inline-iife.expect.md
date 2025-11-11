@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: codegen-inline-iife.expect.md
 ---
+# Codegen Inline Iife.Expect
+
 ## Input
 
 ```javascript
@@ -56,7 +58,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [null,2]
 logs: [1,2]

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: dynamic-gating-invalid-multiple.expect.md
 ---
+# Dynamic Gating Invalid Multiple.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 ```
 {"kind":"CompileError","fnLoc":{"start":{"line":3,"column":0,"index":86},"end":{"line":7,"column":1,"index":190},"filename":"dynamic-gating-invalid-multiple.ts"},"detail":{"options":{"category":"Gating","reason":"Multiple dynamic gating directives found","description":"Expected a single directive but found [use memo if(getTrue), use memo if(getFalse)]","suggestions":null,"loc":{"start":{"line":4,"column":2,"index":105},"end":{"line":4,"column":25,"index":128},"filename":"dynamic-gating-invalid-multiple.ts"}}}}
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

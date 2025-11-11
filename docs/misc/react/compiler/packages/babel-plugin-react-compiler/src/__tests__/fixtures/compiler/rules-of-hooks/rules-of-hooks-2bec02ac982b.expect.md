@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-2bec02ac982b.expect.md
 ---
+# Rules Of Hooks 2Bec02Ac982B.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ function createHook() {
 }
 
 ```
-      

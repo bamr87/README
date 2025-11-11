@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-returned-inner-fn-mutates-context.expect.md
 ---
+# Repro Returned Inner Fn Mutates Context.Expect
+
 ## Input
 
 ```javascript
@@ -93,7 +95,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"value":2,"a":1},"shouldInvokeFns":true}</div>
 <div>{"cb":{"value":3,"a":1},"shouldInvokeFns":true}</div>

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-pass-hook-as-prop.expect.md
 ---
+# Error.Invalid Pass Hook As Prop.Expect
+
 ## Input
 
 ```javascript
@@ -31,5 +33,4 @@ error.invalid-pass-hook-as-prop.ts:2:21
   3 | }
   4 |
 ```
-          
-      
+

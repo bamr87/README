@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ignore-inner-interface-types.expect.md
 ---
+# Ignore Inner Interface Types.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 0

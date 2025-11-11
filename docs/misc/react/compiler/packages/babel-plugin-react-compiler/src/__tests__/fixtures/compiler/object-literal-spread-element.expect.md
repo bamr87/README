@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-literal-spread-element.expect.md
 ---
+# Object Literal Spread Element.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +49,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

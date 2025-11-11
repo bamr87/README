@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-via-mutation-switch.expect.md
 ---
+# Reactive Control Dependency Via Mutation Switch.Expect
+
 ## Input
 
 ```javascript
@@ -90,7 +92,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [true]
 [true]

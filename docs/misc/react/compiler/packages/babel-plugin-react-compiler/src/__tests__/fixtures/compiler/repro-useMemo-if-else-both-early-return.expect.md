@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-useMemo-if-else-both-early-return.expect.md
 ---
+# Repro Usememo If Else Both Early Return.Expect
+
 ## Input
 
 ```javascript
@@ -113,7 +115,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[false],"output":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>
 <div>{"inputs":[false],"output":{"a":0,"b":"value1","c":true,"wat0":"joe"}}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: method-call-fn-call.expect.md
 ---
+# Method Call Fn Call.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ function foo(a, b, c) {
 }
 
 ```
-      

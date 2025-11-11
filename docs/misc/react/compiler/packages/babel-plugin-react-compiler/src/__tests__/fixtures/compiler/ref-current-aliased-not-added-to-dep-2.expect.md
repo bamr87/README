@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ref-current-aliased-not-added-to-dep-2.expect.md
 ---
+# Ref Current Aliased Not Added To Dep 2.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function Foo(t0) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: 2024-09-23-cheeseman-park-exploration.md
 ---
+# 2024 09 23 Cheeseman Park Exploration
+
 ## Denver's Cheeseman Park: A Grimly Beautiful Bonanza of Historical Intrigue and Suburban Spookiness
 
 Ah, Denver – city of a thousand breweries and a penchant for high-altitude living. Tucked amidst its sprawling urban grid lies Cheeseman Park, a pristine stretch of land that lets residents pretend they enjoy getting fit outdoors. Seriously, nothing says "urban vitality" quite like an 80-acre park with a name that sounds like a neighborhood deli.
@@ -32,6 +34,6 @@ Occasionally, the park hosts concerts and festivals, adding a dimension of loud 
 
 ## Legacy of the Living and the Dead
 
-In a rare act of public service that didn't involve panning for gold or lobbying for a weed dispensary, Denver’s early 20th-century visionaries gave the city a park designed to blend the peace of nature with cultural pursuits. Cheeseman Park symbolizes the juxtaposition of life's delicate beauty and the dark humor of our shared history. 
+In a rare act of public service that didn't involve panning for gold or lobbying for a weed dispensary, Denver’s early 20th-century visionaries gave the city a park designed to blend the peace of nature with cultural pursuits. Cheeseman Park symbolizes the juxtaposition of life's delicate beauty and the dark humor of our shared history.
 
 So, grab your picnic basket and tarot cards, dear reader. Cheeseman Park awaits—where urban beauty meets historical horrors in perfect, eerie harmony.

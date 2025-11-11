@@ -6,10 +6,11 @@ tags:
 - javascript
 - api
 - database
-- api
 last_updated: null
 source_file: ai-to-create-ai.md
 ---
+# Ai To Create Ai
+
 ```json
 {
   "name": "Diagram and Mind Map Assistant",

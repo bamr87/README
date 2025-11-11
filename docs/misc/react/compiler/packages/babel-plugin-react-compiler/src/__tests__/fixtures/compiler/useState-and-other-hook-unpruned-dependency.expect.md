@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useState-and-other-hook-unpruned-dependency.expect.md
 ---
+# Usestate And Other Hook Unpruned Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -96,4 +98,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

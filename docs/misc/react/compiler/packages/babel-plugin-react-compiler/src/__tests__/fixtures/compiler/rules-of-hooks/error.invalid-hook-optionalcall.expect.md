@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-optionalcall.expect.md
 ---
+# Error.Invalid Hook Optionalcall.Expect
+
 ## Input
 
 ```javascript
@@ -32,5 +34,4 @@ error.invalid-hook-optionalcall.ts:2:19
   4 | }
   5 |
 ```
-          
-      
+

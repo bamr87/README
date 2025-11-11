@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.unconditional-set-state-lambda.expect.md
 ---
+# Error.Unconditional Set State Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.unconditional-set-state-lambda.ts:8:2
   10 |   return [x];
   11 | }
 ```
-          
-      
+

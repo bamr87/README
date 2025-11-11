@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-compiler-infinite-loop.expect.md
 ---
+# Repro Compiler Infinite Loop.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ function _temp(section) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

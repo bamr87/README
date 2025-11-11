@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multi-arrow-expr-export-default-gating-test.expect.md
 ---
+# Multi Arrow Expr Export Default Gating Test.Expect
+
 ## Input
 
 ```javascript
@@ -70,6 +72,6 @@ export default isForgetEnabled_Fixtures()
     );
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

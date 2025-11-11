@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-property-call-dep.expect.md
 ---
+# Error.Usecallback Property Call Dep.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.useCallback-property-call-dep.ts:5:21
   8 | }
   9 |
 ```
-          
-      
+

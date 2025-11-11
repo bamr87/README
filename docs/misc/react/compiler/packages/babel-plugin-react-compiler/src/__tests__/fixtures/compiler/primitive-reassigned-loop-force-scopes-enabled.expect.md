@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: primitive-reassigned-loop-force-scopes-enabled.expect.md
 ---
+# Primitive Reassigned Loop Force Scopes Enabled.Expect
+
 ## Input
 
 ```javascript
@@ -66,7 +68,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>45</div>
 <div>20</div>

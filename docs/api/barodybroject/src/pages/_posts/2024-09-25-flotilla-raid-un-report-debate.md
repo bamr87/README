@@ -4,10 +4,11 @@ category: api
 tags:
 - aws
 - api
-- api
 last_updated: null
 source_file: 2024-09-25-flotilla-raid-un-report-debate.md
 ---
+# 2024 09 25 Flotilla Raid Un Report Debate
+
 ### The Palmer Report: A Dark Comedy in International Diplomacy
 
 Ladies, gentlemen, and armchair diplomats, gather ‘round for the epic farce that is the Palmer Report, a pièce de résistance in the theatre of international blunders and moral posturing! This 2012 spectacular, conceived by our vaunted United Nations, delves into the surreal saga of the 2010 Gaza flotilla raid, where Israeli forces turned a humanitarian mission into a scene from a disaster movie—complete with an unnecessary body count and worldwide gasps. Let the satire begin!

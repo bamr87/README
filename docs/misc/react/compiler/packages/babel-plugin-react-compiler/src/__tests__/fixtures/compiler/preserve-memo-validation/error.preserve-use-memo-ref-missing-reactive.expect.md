@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.preserve-use-memo-ref-missing-reactive.expect.md
 ---
+# Error.Preserve Use Memo Ref Missing Reactive.Expect
+
 ## Input
 
 ```javascript
@@ -58,5 +60,4 @@ error.preserve-use-memo-ref-missing-reactive.ts:9:21
   15 |
   16 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error._todo.computed-lval-in-destructure.expect.md
 ---
+# Error. Todo.Computed Lval In Destructure.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error._todo.computed-lval-in-destructure.ts:3:9
   5 |   return x;
   6 | }
 ```
-          
-      
+

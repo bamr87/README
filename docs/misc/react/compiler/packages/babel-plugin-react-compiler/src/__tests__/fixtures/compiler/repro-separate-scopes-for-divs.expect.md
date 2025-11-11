@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-separate-scopes-for-divs.expect.md
 ---
+# Repro Separate Scopes For Divs.Expect
+
 ## Input
 
 ```javascript
@@ -115,7 +117,7 @@ const styles = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="a"></div><div class="c"></div>
 <div class="a"></div>

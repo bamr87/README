@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.conditional-hook-unknown-hook-react-namespace.expect.md
 ---
+# Error.Conditional Hook Unknown Hook React Namespace.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.conditional-hook-unknown-hook-react-namespace.ts:4:8
   6 |   return x;
   7 | }
 ```
-          
-      
+

@@ -18,7 +18,7 @@ Successfully eliminated custom Dockerfile and entrypoint.sh scripts by using a s
 
 ### 1. **Replaced Custom Build with Standard Image**
 - ❌ **Removed**: Custom `src/Dockerfile` (30+ lines)
-- ❌ **Removed**: Custom `src/entrypoint.sh` script 
+- ❌ **Removed**: Custom `src/entrypoint.sh` script
 - ❌ **Removed**: Duplicate `src/docker-compose.yml`
 - ✅ **Added**: Standard `python:3.11-slim` image usage
 - ✅ **Added**: Inline command configuration in docker-compose.yml
@@ -122,7 +122,7 @@ docker-compose up -d
 # View logs
 docker-compose logs web
 
-# Stop environment  
+# Stop environment
 docker-compose down
 
 # Force rebuild (if requirements change)

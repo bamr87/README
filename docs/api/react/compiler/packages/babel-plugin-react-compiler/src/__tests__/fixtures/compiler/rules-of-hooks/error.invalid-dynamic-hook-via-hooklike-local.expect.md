@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-dynamic-hook-via-hooklike-local.expect.md
 ---
+# Error.Invalid Dynamic Hook Via Hooklike Local.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-dynamic-hook-via-hooklike-local.ts:4:2
   5 | }
   6 |
 ```
-          
-      
+

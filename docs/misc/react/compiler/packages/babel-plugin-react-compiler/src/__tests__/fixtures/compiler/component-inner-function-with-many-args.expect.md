@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: component-inner-function-with-many-args.expect.md
 ---
+# Component Inner Function With Many Args.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":"[[ function params=3 ]]","id":0}</div>

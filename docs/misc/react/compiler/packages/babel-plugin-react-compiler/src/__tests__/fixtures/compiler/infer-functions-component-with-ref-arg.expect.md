@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-functions-component-with-ref-arg.expect.md
 ---
+# Infer Functions Component With Ref Arg.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

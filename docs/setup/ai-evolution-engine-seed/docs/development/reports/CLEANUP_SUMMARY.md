@@ -16,7 +16,7 @@ source_file: CLEANUP_SUMMARY.md
 @lastModified 2025-07-07
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Repository organization and maintenance
 
 @relatedEvolutions
@@ -34,8 +34,8 @@ source_file: CLEANUP_SUMMARY.md
 
 # Repository Root Directory Cleanup Summary
 
-**Date**: July 7, 2025  
-**Version**: v0.4.1 Post-Cleanup  
+**Date**: July 7, 2025
+**Version**: v0.4.1 Post-Cleanup
 **Objective**: Organize and clean up the root directory of the ai-evolution-engine-seed repository
 
 ## 🧹 Cleanup Actions Performed

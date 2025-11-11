@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.invalid.invalid-rules-of-hooks-c59788ef5676.expect.md
 ---
+# Todo.Invalid.Invalid Rules Of Hooks C59788Ef5676.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function normalFunctionWithHook() {
 }
 
 ```
-      

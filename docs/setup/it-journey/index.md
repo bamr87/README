@@ -28,14 +28,14 @@ Navigate through our comprehensive quest system designed to take you from comple
 
 **Start Your Journey:**
 - **[What is OS?](/quests/init_world/hello-noob/)** - 🌱 n00b Quest for absolute beginners
-- **[Hello Windows](/quests/init_world/hello-win/)** - 🪟 Mastering the Microsoft Kingdom  
+- **[Hello Windows](/quests/init_world/hello-win/)** - 🪟 Mastering the Microsoft Kingdom
 - **[Hello macOS](/quests/init_world/hello-mac/)** - 🍎 Conquering the Apple Empire
 - **[Hello Linux](/quests/init_world/hello-linux/)** - 🐧 Taming the Penguin's Domain
 - **[Hello Cloud](/quests/init_world/hello-cloud/)** - ☁️ Ascending to the Digital Heavens
 
 **Foundation Quests:**
 - [IT Fundamentals](/quests/init_world/2023-11-23-it-fundamentals/) - Learn the Ancient Arts
-- [Character Building](/quests/init_world/2023-11-23-character-building/) - Forge Your Identity  
+- [Character Building](/quests/init_world/2023-11-23-character-building/) - Forge Your Identity
 - [VS Code Mastery](/quests/vscode-mastery/) - Craft Your Ultimate Development Weapon
 
 ### ⚔️ Progressive Skill Levels
@@ -46,7 +46,7 @@ Navigate through our comprehensive quest system designed to take you from comple
 - Calculator Scripts - Mathematical Magic Basics
 - Profile Customization - Digital Presence Setup
 
-#### 🟡 Level 001 - Journeyman Challenges  
+#### 🟡 Level 001 - Journeyman Challenges
 *Web technologies and advanced scripting*
 - [Personal Site Creation](/quests/lvl_001/personal-site/) - Build Your Digital Castle
 - JavaScript Mastery - Modern Web Sorcery
@@ -72,7 +72,7 @@ Navigate through our comprehensive quest system designed to take you from comple
 *Master the art of server-side sorcery*
 
 - **Node.js Nexus**: Harness the power of Node.js to build scalable and efficient server-side applications
-- **Database Dunes**: Learn to store and retrieve your quest's treasures with databases like MongoDB and PostgreSQL  
+- **Database Dunes**: Learn to store and retrieve your quest's treasures with databases like MongoDB and PostgreSQL
 - **API Alps**: Conquer the peaks of API development, creating gateways to connect your frontend and backend realms
 - **Cloud Infrastructure**: Deploy and scale your applications in the digital heavens
 
@@ -114,7 +114,7 @@ Equip yourself with professional-grade tools and resources:
 
 ### Essential Development Tools
 - **VS Code Setup**: Configure the ultimate development environment
-- **Git & GitHub**: Master version control and collaboration workflows  
+- **Git & GitHub**: Master version control and collaboration workflows
 - **Terminal Mastery**: Command line skills for all operating systems
 - **Package Managers**: npm, pip, brew, and other essential package management
 

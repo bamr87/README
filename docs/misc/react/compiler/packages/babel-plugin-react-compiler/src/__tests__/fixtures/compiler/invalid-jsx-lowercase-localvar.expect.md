@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: invalid-jsx-lowercase-localvar.expect.md
 ---
+# Invalid Jsx Lowercase Localvar.Expect
+
 ## Input
 
 ```javascript
@@ -79,4 +81,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-of-conditional-break.expect.md
 ---
+# For Of Conditional Break.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []

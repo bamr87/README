@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-non-null-destructure.expect.md
 ---
+# Infer Non Null Destructure.Expect
+
 ## Input
 
 ```javascript
@@ -93,6 +95,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"arr":[],"value":2}

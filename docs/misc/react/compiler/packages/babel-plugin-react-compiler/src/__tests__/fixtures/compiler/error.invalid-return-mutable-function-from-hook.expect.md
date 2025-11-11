@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-return-mutable-function-from-hook.expect.md
 ---
+# Error.Invalid Return Mutable Function From Hook.Expect
+
 ## Input
 
 ```javascript
@@ -53,5 +55,4 @@ error.invalid-return-mutable-function-from-hook.ts:8:4
   10 | }
   11 |
 ```
-          
-      
+

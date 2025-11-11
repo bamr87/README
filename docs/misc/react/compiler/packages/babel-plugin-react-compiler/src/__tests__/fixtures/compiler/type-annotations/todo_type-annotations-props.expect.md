@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo_type-annotations-props.expect.md
 ---
+# Todo Type Annotations Props.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,3,42]

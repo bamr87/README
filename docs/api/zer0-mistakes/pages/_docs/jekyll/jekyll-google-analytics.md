@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jekyll-google-analytics.md
 ---
+# Jekyll Google Analytics
+
 > Use Google Analytics to track website traffic.
 
 

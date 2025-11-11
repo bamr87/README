@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.hook-property-load-local-hook.expect.md
 ---
+# Error.Hook Property Load Local Hook.Expect
+
 ## Input
 
 ```javascript
@@ -55,5 +57,4 @@ error.hook-property-load-local-hook.ts:8:9
   10 |
   11 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

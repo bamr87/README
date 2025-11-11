@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-member-expr-arguments.expect.md
 ---
+# Capturing Function Member Expr Arguments.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function Foo(props) {
 }
 
 ```
-      

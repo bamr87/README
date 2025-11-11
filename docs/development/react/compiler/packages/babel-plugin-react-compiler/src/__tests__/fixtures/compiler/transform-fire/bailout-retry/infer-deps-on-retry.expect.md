@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: infer-deps-on-retry.expect.md
 ---
+# Infer Deps On Retry.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ function useFoo(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

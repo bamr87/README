@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-control-dependency-switch-case-test.expect.md
 ---
+# Reactive Control Dependency Switch Case Test.Expect
+
 ## Input
 
 ```javascript
@@ -94,7 +96,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

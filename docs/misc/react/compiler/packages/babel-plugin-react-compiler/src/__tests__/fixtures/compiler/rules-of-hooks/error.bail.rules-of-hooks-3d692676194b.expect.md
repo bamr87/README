@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bail.rules-of-hooks-3d692676194b.expect.md
 ---
+# Error.Bail.Rules Of Hooks 3D692676194B.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.bail.rules-of-hooks-3d692676194b.ts:8:4
   10 |   return <button {...props} ref={ref} />;
   11 | });
 ```
-          
-      
+

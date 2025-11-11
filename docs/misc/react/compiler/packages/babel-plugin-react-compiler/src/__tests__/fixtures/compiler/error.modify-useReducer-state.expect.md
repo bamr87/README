@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.modify-useReducer-state.expect.md
 ---
+# Error.Modify Usereducer State.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.modify-useReducer-state.ts:5:2
   7 | }
   8 |
 ```
-          
-      
+

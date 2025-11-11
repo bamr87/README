@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: array-map-named-chained-callbacks.expect.md
 ---
+# Array Map Named Chained Callbacks.Expect
+
 ## Input
 
 ```javascript
@@ -115,7 +117,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[],[]]
 [[],[]]

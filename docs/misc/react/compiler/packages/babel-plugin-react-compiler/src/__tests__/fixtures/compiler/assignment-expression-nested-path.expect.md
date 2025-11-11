@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: assignment-expression-nested-path.expect.md
 ---
+# Assignment Expression Nested Path.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":{"c":6}}

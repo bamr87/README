@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: function-declaration-reassign.expect.md
 ---
+# Function Declaration Reassign.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

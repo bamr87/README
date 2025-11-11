@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: repro-object-expression-computed-key-modified-during-after-construction-hoisted-sequence-expr.expect.md
 ---
+# Repro Object Expression Computed Key Modified During After Construction Hoisted Sequence Expr.Expect
+
 ## Input
 
 ```javascript
@@ -92,7 +94,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"[object Object]":[42]},{"wat0":"joe","wat1":"joe"}]
 [{"[object Object]":[42]},{"wat0":"joe","wat1":"joe"}]

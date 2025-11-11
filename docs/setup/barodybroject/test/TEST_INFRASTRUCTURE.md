@@ -80,7 +80,7 @@ This directory contains **comprehensive test infrastructure** for validating the
   - Detailed logging and reporting
   - Environment setup and dependency checking
   - Test result aggregation and failure analysis
-  
+
 - **`test_docker_infrastructure.sh`**: **Complete** container environment testing
   - Docker container build and startup validation
   - Network connectivity and service communication
@@ -229,7 +229,7 @@ pip install psycopg2-binary==2.9.7     # PostgreSQL driver
 
 ### Expected Performance Metrics (Updated)
 - **Token Generation**: < 50ms (previously 100ms)
-- **Token Validation**: < 10ms (previously 50ms)  
+- **Token Validation**: < 10ms (previously 50ms)
 - **Admin User Creation**: < 1 second (previously 2 seconds)
 - **Form Validation**: < 25ms (previously 50ms)
 - **Database Operations**: < 250ms (previously 500ms)
@@ -400,36 +400,36 @@ jobs:
       matrix:
         python-version: ['3.8', '3.9', '3.10', '3.11']
         django-version: ['4.1', '4.2']
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           pip install -r src/requirements-dev.txt
           pip install django==${{ matrix.django-version }}
-      
+
       - name: Run comprehensive test suite
         run: |
           ./test/scripts/run_installation_wizard_tests.sh --coverage --parallel
-      
+
       - name: Run Docker infrastructure tests
         run: |
           ./test/scripts/test_docker_infrastructure.sh --full
-      
+
       - name: Upload enhanced coverage
         uses: codecov/codecov-action@v3
         with:
           files: ./test/logs/coverage.xml
           flags: installation-wizard-enhanced
           name: enhanced-coverage
-          
+
       - name: Archive test artifacts
         uses: actions/upload-artifact@v3
         if: always()
@@ -452,14 +452,14 @@ repos:
         language: system
         pass_filenames: false
         stages: [commit]
-        
+
       - id: run-security-tests
         name: Run Security Tests
         entry: pytest test/unit/test_services.py::TestInstallationService::test_security -v
         language: system
         pass_filenames: false
         stages: [push]
-        
+
       - id: validate-docker-config
         name: Validate Docker Configuration
         entry: docker-compose -f .devcontainer/docker-compose_dev.yml config --quiet

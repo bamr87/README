@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-hoisting.expect.md
 ---
+# Repro Hoisting.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <button>42</button>

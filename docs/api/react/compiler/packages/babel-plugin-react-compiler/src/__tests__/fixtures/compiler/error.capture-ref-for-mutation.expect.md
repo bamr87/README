@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.capture-ref-for-mutation.expect.md
 ---
+# Error.Capture Ref For Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -68,5 +70,4 @@ error.capture-ref-for-mutation.ts:15:13
   17 |   return [moveLeft, moveRight];
   18 | }
 ```
-          
-      
+

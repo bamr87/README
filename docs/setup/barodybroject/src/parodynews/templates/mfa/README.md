@@ -41,7 +41,7 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
 <div class="mfa-dashboard">
     <h2>Multi-Factor Authentication</h2>
     <p class="lead">Secure your account with additional authentication methods.</p>
-    
+
     <div class="security-overview">
         <div class="security-status">
             {% if user.mfa_methods.exists %}
@@ -56,10 +56,10 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
                 </div>
             {% endif %}
         </div>
-        
+
         <div class="mfa-methods">
             <h4>Available Methods</h4>
-            
+
             <!-- TOTP Authenticator Apps -->
             <div class="method-card">
                 <div class="method-icon">
@@ -76,7 +76,7 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
                     {% endif %}
                 </div>
             </div>
-            
+
             <!-- WebAuthn Hardware Keys -->
             <div class="method-card">
                 <div class="method-icon">
@@ -94,7 +94,7 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
                     {% endif %}
                 </div>
             </div>
-            
+
             <!-- Recovery Codes -->
             <div class="method-card">
                 <div class="method-icon">
@@ -137,14 +137,14 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
             </div>
             <div class="card-body">
                 <p>Please verify your identity using one of your configured methods:</p>
-                
+
                 {% get_available_methods user as methods %}
                 <div class="mfa-methods-list">
                     {% for method in methods %}
                         <div class="mfa-method-option">
                             <form method="post" action="{% url 'mfa_authenticate' method.id %}">
                                 {% csrf_token %}
-                                
+
                                 {% if method.type == 'totp' %}
                                     <button type="submit" class="btn btn-outline-primary btn-block">
                                         <i class="fas fa-mobile-alt"></i>
@@ -165,7 +165,7 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
                         </div>
                     {% endfor %}
                 </div>
-                
+
                 <hr>
                 <div class="text-center">
                     <a href="{% url 'mfa_recovery_codes_use' %}" class="btn btn-link btn-sm">
@@ -191,28 +191,28 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
             <h4>Security Verification Required</h4>
             <p>This action requires additional verification to protect your account.</p>
         </div>
-        
+
         <div class="card">
             <div class="card-body">
                 <form method="post">
                     {% csrf_token %}
-                    
+
                     <div class="form-group">
                         <label for="id_password">Confirm Your Password</label>
-                        <input type="password" 
-                               name="password" 
-                               id="id_password" 
-                               class="form-control" 
+                        <input type="password"
+                               name="password"
+                               id="id_password"
+                               class="form-control"
                                required>
                     </div>
-                    
+
                     {% if user.mfa_methods.exists %}
                         <div class="form-group">
                             <label for="id_mfa_code">Two-Factor Code</label>
-                            <input type="text" 
-                                   name="mfa_code" 
-                                   id="id_mfa_code" 
-                                   class="form-control" 
+                            <input type="text"
+                                   name="mfa_code"
+                                   id="id_mfa_code"
+                                   class="form-control"
                                    placeholder="000000"
                                    required>
                             <small class="form-text text-muted">
@@ -220,7 +220,7 @@ Contains Django allauth MFA templates for implementing multi-factor authenticati
                             </small>
                         </div>
                     {% endif %}
-                    
+
                     <button type="submit" class="btn btn-primary btn-block">
                         Verify and Continue
                     </button>
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mfaInput = document.getElementById('id_mfa_code');
     if (mfaInput) {
         mfaInput.focus();
-        
+
         // Auto-submit when 6 digits entered
         mfaInput.addEventListener('input', function() {
             if (this.value.length === 6 && /^\d{6}$/.test(this.value)) {
@@ -265,14 +265,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // WebAuthn support detection
     if (!window.PublicKeyCredential) {
         document.querySelectorAll('.webauthn-method').forEach(el => {
             el.style.display = 'none';
         });
     }
-    
+
     // Copy recovery codes functionality
     document.getElementById('copy-recovery-codes')?.addEventListener('click', function() {
         const codes = document.getElementById('recovery-codes-list').textContent;
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## Container Configuration
 - **Runtime**: Django allauth MFA framework with cryptographic libraries
-- **Dependencies**: 
+- **Dependencies**:
   - django-allauth[mfa] with MFA support
   - pyotp for TOTP generation
   - webauthn library for FIDO2 support
@@ -300,12 +300,12 @@ document.addEventListener('DOMContentLoaded', function() {
 - **Security**: CSRF protection, rate limiting, secure random generation
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - User authentication and login workflows
   - Account security settings and management
   - Sensitive operation triggers (password change, etc.)
   - Administrative account access
-- **Outgoing**: 
+- **Outgoing**:
   - Cryptographic token generation and validation
   - WebAuthn credential management
   - Email notification systems

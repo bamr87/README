@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: todo.unnecessary-lambda-memoization.expect.md
 ---
+# Todo.Unnecessary Lambda Memoization.Expect
+
 ## Input
 
 ```javascript
@@ -59,4 +61,3 @@ function _temp(item) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: home.md
 ---
+# Home
+
 ## Art
 
 ## Cooking

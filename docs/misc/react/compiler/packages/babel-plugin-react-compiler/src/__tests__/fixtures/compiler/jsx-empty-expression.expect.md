@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-empty-expression.expect.md
 ---
+# Jsx Empty Expression.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

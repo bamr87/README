@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-scope-missing-mutable-range.expect.md
 ---
+# Repro Scope Missing Mutable Range.Expect
+
 ## Input
 
 ```javascript
@@ -54,4 +56,3 @@ function HomeDiscoStoreItemTileRating(props) {
 }
 
 ```
-      

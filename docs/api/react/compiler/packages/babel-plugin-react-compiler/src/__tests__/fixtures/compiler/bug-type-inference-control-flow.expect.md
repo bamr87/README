@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: bug-type-inference-control-flow.expect.md
 ---
+# Bug Type Inference Control Flow.Expect
+
 ## Input
 
 ```javascript
@@ -119,4 +121,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

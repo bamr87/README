@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: jsx-attribute-with-jsx-fragment-value.flow.expect.md
 ---
+# Jsx Attribute With Jsx Fragment Value.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -83,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"item":{"id":1,"name":"One!"}}</div></div>

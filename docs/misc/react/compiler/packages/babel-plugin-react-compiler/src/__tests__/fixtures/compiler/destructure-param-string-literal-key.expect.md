@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: destructure-param-string-literal-key.expect.md
 ---
+# Destructure Param String Literal Key.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

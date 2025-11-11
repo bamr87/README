@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.nomemo-and-change-detect.expect.md
 ---
+# Error.Nomemo And Change Detect.Expect
+
 ## Input
 
 ```javascript
@@ -23,5 +25,4 @@ Found 1 error:
 
 Error: Invalid environment config: the 'disableMemoizationForDebugging' and 'enableChangeDetectionForDebugging' options cannot be used together
 ```
-          
-      
+

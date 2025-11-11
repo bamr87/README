@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: continuously-deploy-jekyll-website-to-gitHub-pages-with-travis-ci.md
 ---
+# Continuously Deploy Jekyll Website To Github Pages With Travis Ci
+
 > Start continuous integration with Travis CI for Jekyll website.
 
 ## 1. GitHub Pages & Jekyll
@@ -82,5 +84,5 @@ Build history.
 ## 7. Reference
 
 * [Travis CI to the Jekyll site](https://jekyllrb.com/docs/continuous-integration/travis-ci/)
-* [Viewing Jekyll build error messages](https://help.github.com/articles/viewing-jekyll-build-error-messages/)  
+* [Viewing Jekyll build error messages](https://help.github.com/articles/viewing-jekyll-build-error-messages/)
 * [Build Error Sample](https://travis-ci.org/{{ site.github_user }}/{{ site.github_user }}.github.io/builds/315705267?utm_source=email&utm_medium=notification)

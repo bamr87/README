@@ -144,7 +144,7 @@ check_command() {
     local cmd="$1"
     local name="${2:-$cmd}"
     local required="${3:-false}"
-    
+
     if ! command -v "$cmd" >/dev/null 2>&1; then
         if [[ "$required" == "true" ]]; then
             log_error "$name is required but not found"
@@ -154,7 +154,7 @@ check_command() {
             return 0
         fi
     fi
-    
+
     # Check if command is executable
     local cmd_path
     cmd_path=$(command -v "$cmd")
@@ -162,7 +162,7 @@ check_command() {
         log_error "$name found but not executable: $cmd_path"
         return 1
     fi
-    
+
     return 0
 }
 ```
@@ -176,14 +176,14 @@ check_github_auth() {
     if [[ -n "${GITHUB_TOKEN:-}" ]] || [[ -n "${PAT_TOKEN:-}" ]]; then
         return 0
     fi
-    
+
     # Check gh CLI authentication
     if command -v gh >/dev/null 2>&1; then
         if gh auth status >/dev/null 2>&1; then
             return 0
         fi
     fi
-    
+
     log_error "GitHub authentication not configured"
     return 1
 }
@@ -196,7 +196,7 @@ check_github_auth() {
 validate_evolution_permissions() {
     local evolution_type="$1"
     local growth_mode="$2"
-    
+
     # Check if evolution type is allowed
     case "$evolution_type" in
         "security_updates")
@@ -220,7 +220,7 @@ validate_evolution_permissions() {
             fi
             ;;
     esac
-    
+
     return 0
 }
 ```

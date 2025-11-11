@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-function-argument-mutates-local-variable.expect.md
 ---
+# Error.Invalid Hook Function Argument Mutates Local Variable.Expect
+
 ## Input
 
 ```javascript
@@ -51,5 +53,4 @@ error.invalid-hook-function-argument-mutates-local-variable.ts:6:4
   8 | }
   9 |
 ```
-          
-      
+

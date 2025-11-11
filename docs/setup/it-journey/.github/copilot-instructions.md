@@ -277,7 +277,7 @@ learning_objectives:
   - "Apply security best practices for containerized applications"
 target_audience:
   skill_level: "intermediate"
-  prerequisites: 
+  prerequisites:
     - "Basic command line knowledge"
     - "Understanding of software development lifecycle"
     - "Familiarity with version control (Git)"
@@ -324,7 +324,7 @@ Learning Objectives:
   - Configure deployment pipelines
   - Handle secrets and environment variables
 Target Audience: intermediate developers
-Prerequisites: 
+Prerequisites:
   - Git/GitHub experience
   - Basic testing knowledge
   - Understanding of web applications

@@ -11,8 +11,8 @@ source_file: README.md
 ---
 # Quest Validator - IT-Journey Quest Testing Framework
 
-**Version**: 1.0.0  
-**Author**: IT-Journey Team  
+**Version**: 1.0.0
+**Author**: IT-Journey Team
 **Created**: 2025-10-08
 
 ## Overview
@@ -246,23 +246,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      
+
       - name: Install dependencies
         run: |
           cd test/quest-validator
           pip install -r requirements.txt
-      
+
       - name: Validate quests
         run: |
           python test/quest-validator/quest_validator.py \
             -d pages/_quests/ \
             --report quest-validation-report.json
-      
+
       - name: Upload report
         if: always()
         uses: actions/upload-artifact@v3
@@ -309,14 +309,14 @@ exit 0
 def validate_custom_rule(self, fm: Dict, body: str, result: ValidationResult):
     """Validate custom requirement"""
     self.log_info("Validating custom rule...")
-    
+
     # Your validation logic
     if some_condition:
         result.score += points
         result.info.append("Custom validation passed")
     else:
         result.warnings.append("Custom validation warning")
-    
+
     result.max_score += points
 ```
 

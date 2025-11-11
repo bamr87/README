@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multiple-scope.expect.md
 ---
+# Multiple Scope.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ function _temp(props_0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

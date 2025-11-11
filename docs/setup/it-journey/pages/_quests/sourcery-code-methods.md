@@ -315,37 +315,37 @@ on:
 jobs:
   test-and-validate:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: 🏰 Checkout Quest Code
       uses: actions/checkout@v4
-      
+
     - name: 🧙‍♂️ Setup Node.js Magic
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-        
+
     - name: ⚡ Install Dependencies
       run: npm ci
-      
+
     - name: 🧪 Run Quest Tests
       run: npm test
-      
+
     - name: 🔍 Lint Code Spells
       run: npm run lint
-      
+
     - name: 🛡️ Security Scan
       run: npm audit
-      
+
     - name: 📊 Coverage Report
       run: npm run coverage
-      
+
   deploy-to-staging:
     needs: test-and-validate
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: 🚀 Deploy to Staging Realm
       run: echo "Deploying to staging environment"

@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: open-ai-future-features-with-github-action.md
 ---
+# Open Ai Future Features With Github Action
+
 Here's a complete, detailed, and comprehensive **step-by-step tutorial** to implement automated, AI-driven structured GitHub Issues (**feature requests**, **bug reports**, **test plans**, etc.) using **GitHub Actions** and **OpenAI's GPT-4 API** for **any GitHub repository**.
 
 * * * *

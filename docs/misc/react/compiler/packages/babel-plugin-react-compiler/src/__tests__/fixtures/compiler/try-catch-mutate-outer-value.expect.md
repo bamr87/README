@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-mutate-outer-value.expect.md
 ---
+# Try Catch Mutate Outer Value.Expect
+
 ## Input
 
 ```javascript
@@ -73,6 +75,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"a":1}]

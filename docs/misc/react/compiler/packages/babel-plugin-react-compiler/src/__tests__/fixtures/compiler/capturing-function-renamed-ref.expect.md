@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-renamed-ref.expect.md
 ---
+# Capturing Function Renamed Ref.Expect
+
 ## Input
 
 ```javascript
@@ -72,7 +74,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2}
 {"a":2}

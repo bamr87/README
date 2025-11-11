@@ -68,7 +68,7 @@ system_profiler SPSoftwareDataType | awk '/System Version:|Kernel Version:/ {pri
 ### Why System Specs Matter
 
 - **Compatibility**: Ensure tools work with your hardware
-- **Performance**: Understand limitations and optimize accordingly  
+- **Performance**: Understand limitations and optimize accordingly
 - **Troubleshooting**: Provide accurate information when seeking help
 - **Documentation**: Track your development environment evolution
 
@@ -168,7 +168,7 @@ install_if_missing() {
     local tool="$1"
     local brew_formula="$2"
     local check_command="${3:-$tool}"
-    
+
     if command_exists "$check_command"; then
         echo "✅ $tool is already installed."
     else
@@ -282,7 +282,7 @@ After installation, verify everything works:
 ```shell
 # Check versions to confirm installation
 git --version
-gh --version  
+gh --version
 docker --version
 code --version
 
@@ -359,7 +359,7 @@ Always confirm your settings and create a log for troubleshooting:
 echo "$(date) - IT Journey Configuration Log" > env-variables.log
 echo "=========================================" >> env-variables.log
 echo "GITHOME: $GITHOME" >> env-variables.log
-echo "GHUSER: $GHUSER" >> env-variables.log  
+echo "GHUSER: $GHUSER" >> env-variables.log
 echo "GIT_REPO: $GIT_REPO" >> env-variables.log
 echo "ZREPO: $ZREPO" >> env-variables.log
 echo "=========================================" >> env-variables.log
@@ -417,7 +417,7 @@ git config --global user.email "$GHUSER@users.noreply.github.com"
 echo "✅ Git identity configured!"
 echo ""
 echo "📧 To find your GitHub user ID:"
-echo "   1. Go to https://github.com/settings/emails"  
+echo "   1. Go to https://github.com/settings/emails"
 echo "   2. Look for your no-reply email address"
 echo "   3. The number before the '+' is your Git ID"
 ```
@@ -673,9 +673,9 @@ services:
       - bundle_cache:/usr/local/bundle
     command: >
       bash -c "bundle install &&
-               bundle exec jekyll serve 
-               --host 0.0.0.0 
-               --incremental 
+               bundle exec jekyll serve
+               --host 0.0.0.0
+               --incremental
                --livereload"
 
 volumes:
@@ -738,7 +738,7 @@ sleep 10
 if curl -s http://localhost:4000 > /dev/null; then
     echo "✅ Server is running!"
     echo "🌐 Open http://localhost:4000 in your browser"
-    
+
     # Open browser automatically (macOS)
     open http://localhost:4000
 else
@@ -832,7 +832,7 @@ git add .
 git commit -m "🎨 Add Jekyll website infrastructure
 
 - Set up zer0-mistakes theme
-- Configure Docker development environment  
+- Configure Docker development environment
 - Add essential Jekyll plugins and configuration
 - Ready for GitHub Pages deployment"
 
@@ -877,7 +877,7 @@ You've just completed something amazing! Here's what you now have:
 - Container platform (Docker)
 - Command-line proficiency
 
-#### ✅ **Live Website Infrastructure**  
+#### ✅ **Live Website Infrastructure**
 - Professional Jekyll website
 - GitHub repository with version control
 - Automated deployment pipeline
@@ -961,7 +961,7 @@ If something isn't working, try these common fixes:
 # Docker issues
 docker-compose down && docker-compose up --build
 
-# Git issues  
+# Git issues
 git status
 git pull origin main
 
@@ -997,7 +997,7 @@ You're now part of the global developer community! Here's how to get help:
 
 You started with nothing and now have:
 - A professional development environment
-- A live website on the internet  
+- A live website on the internet
 - Version control skills
 - Container knowledge
 - A foundation for an entire IT career
@@ -1018,7 +1018,7 @@ Your journey doesn't end here! Explore these paths to continue growing:
 
 #### **Next Level Skills**
 - **Advanced Jekyll**: Custom plugins, liquid templating, data files
-- **Web Performance**: Optimization, SEO, accessibility best practices  
+- **Web Performance**: Optimization, SEO, accessibility best practices
 - **JavaScript Frameworks**: React, Vue.js, or Angular for dynamic sites
 - **Backend Development**: APIs, databases, and server-side programming
 - **DevOps & Cloud**: Deployment automation, monitoring, and scaling
@@ -1056,7 +1056,7 @@ Remember: Every expert was once a beginner who needed help!
 - [IT-Journey Repository](https://github.com/bamr87/it-journey) - Ask questions and get help
 - [zer0-mistakes Theme](https://github.com/bamr87/zer0-mistakes) - Theme-specific issues
 
-#### **Development Communities**  
+#### **Development Communities**
 - [r/webdev](https://reddit.com/r/webdev) - Web development community
 - [Dev.to](https://dev.to) - Developer articles and discussions
 - [Stack Overflow](https://stackoverflow.com) - Technical Q&A platform
@@ -1136,7 +1136,7 @@ cat << 'EOF'
 ==========================================
 This script will:
 - Install all required development tools
-- Set up your GitHub repository  
+- Set up your GitHub repository
 - Create a complete Jekyll website
 - Configure Docker environment
 - Deploy to GitHub Pages
@@ -1179,10 +1179,10 @@ install_homebrew() {
 # Install essential tools
 install_development_tools() {
     log "Installing development tools..."
-    
+
     # Update Homebrew
     brew update
-    
+
     # Install tools if missing
     tools=("git" "gh" "docker" "visual-studio-code")
     for tool in "${tools[@]}"; do
@@ -1204,28 +1204,28 @@ install_development_tools() {
             fi
         fi
     done
-    
+
     success "Development tools installed"
 }
 
 # Configure environment
 setup_environment() {
     log "Setting up environment configuration..."
-    
+
     # Default values
     export GITHOME=~/github
-    
+
     # Interactive setup if not automated
     if [[ "${AUTOMATED:-false}" != "true" ]]; then
         echo ""
         echo -e "${CYAN}Please provide your GitHub information:${NC}"
-        
+
         # Get GitHub username
         while [[ -z "${GHUSER:-}" ]]; do
             read -p "GitHub username: " GHUSER
             export GHUSER
         done
-        
+
         # Get repository name
         echo ""
         echo -e "${CYAN}Repository name (lowercase, hyphens only):${NC}"
@@ -1236,9 +1236,9 @@ setup_environment() {
         export GHUSER=${GHUSER:-$(whoami)}
         export GIT_REPO=${GIT_REPO:-my-it-journey}
     fi
-    
+
     export ZREPO=$GITHOME/$GIT_REPO
-    
+
     # Create environment log
     {
         echo "$(date) - IT Journey Configuration Log"
@@ -1249,54 +1249,54 @@ setup_environment() {
         echo "ZREPO: $ZREPO"
         echo "======================================="
     } > env-variables.log
-    
+
     success "Environment configured: $GHUSER/$GIT_REPO"
 }
 
 # Authenticate with GitHub
 github_authentication() {
     log "Configuring GitHub authentication..."
-    
+
     if ! gh auth status &>/dev/null; then
         log "Authenticating with GitHub CLI..."
         gh auth login --web
     fi
-    
+
     # Configure Git identity
     git config --global user.name "$GHUSER"
     git config --global user.email "$GHUSER@users.noreply.github.com"
-    
+
     success "GitHub authentication configured"
 }
 
 # Create project structure
 create_project_structure() {
     log "Creating project structure..."
-    
+
     # Create directories
     mkdir -p "$GITHOME"
     cd "$GITHOME"
-    
+
     # Remove existing directory if it exists
     if [[ -d "$GIT_REPO" ]]; then
         warning "Directory $GIT_REPO already exists. Backing up..."
         mv "$GIT_REPO" "${GIT_REPO}.backup.$(date +%s)"
     fi
-    
+
     mkdir -p "$GIT_REPO"
     cd "$GIT_REPO"
-    
+
     success "Project structure created at $ZREPO"
 }
 
 # Create GitHub repository
 create_github_repository() {
     log "Creating GitHub repository..."
-    
+
     # Check if repository already exists
     if gh repo view "$GHUSER/$GIT_REPO" &>/dev/null; then
         warning "Repository $GHUSER/$GIT_REPO already exists"
-        
+
         # Clone existing repository
         git clone "https://github.com/$GHUSER/$GIT_REPO.git" .
     else
@@ -1306,20 +1306,20 @@ create_github_repository() {
             --license mit \
             --public \
             --description "My IT Journey - Building my first professional website"
-        
+
         # Initialize local repository
         git init
         git remote add origin "https://github.com/$GHUSER/$GIT_REPO.git"
         git branch -M main
     fi
-    
+
     success "GitHub repository configured"
 }
 
 # Create initial content
 create_initial_content() {
     log "Creating initial content..."
-    
+
     # Create README if it doesn't exist
     if [[ ! -f README.md ]]; then
         cat > README.md << EOF
@@ -1363,18 +1363,18 @@ docker-compose up -d
 *Built with ❤️ following the [IT-Journey](https://github.com/bamr87/it-journey) guide*
 EOF
     fi
-    
+
     success "Initial content created"
 }
 
 # Install Jekyll theme and infrastructure
 setup_jekyll_infrastructure() {
     log "Setting up Jekyll infrastructure..."
-    
+
     # Download and run theme installer
     if ! curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.sh | bash; then
         warning "Theme installer failed, setting up manually..."
-        
+
         # Manual Jekyll setup
         cat > Gemfile << 'EOF'
 source "https://rubygems.org"
@@ -1410,14 +1410,14 @@ plugins:
 remote_theme: "bamr87/zer0-mistakes"
 EOF
     fi
-    
+
     success "Jekyll infrastructure configured"
 }
 
 # Create Docker environment
 setup_docker_environment() {
     log "Setting up Docker environment..."
-    
+
     # Create docker-compose.yml if it doesn't exist
     if [[ ! -f docker-compose.yml ]]; then
         cat > docker-compose.yml << 'EOF'
@@ -1437,16 +1437,16 @@ services:
       - bundle_cache:/usr/local/bundle
     command: >
       bash -c "bundle install &&
-               bundle exec jekyll serve 
-               --host 0.0.0.0 
-               --incremental 
+               bundle exec jekyll serve
+               --host 0.0.0.0
+               --incremental
                --livereload"
 
 volumes:
   bundle_cache:
 EOF
     fi
-    
+
     # Create development configuration
     if [[ ! -f _config_dev.yml ]]; then
         cat > _config_dev.yml << EOF
@@ -1464,24 +1464,24 @@ show_drafts: true
 future: true
 EOF
     fi
-    
+
     success "Docker environment configured"
 }
 
 # Build and start the website
 build_and_start_website() {
     log "Building and starting website..."
-    
+
     # Wait for Docker to be running
     while ! docker info &>/dev/null; do
         warning "Waiting for Docker to start... Please ensure Docker Desktop is running"
         sleep 5
     done
-    
+
     # Build and start the container
     log "Starting Jekyll development server..."
     docker-compose up -d
-    
+
     # Wait for server to start
     log "Waiting for server to start..."
     local attempts=0
@@ -1489,10 +1489,10 @@ build_and_start_website() {
         sleep 2
         ((attempts++))
     done
-    
+
     if curl -s http://localhost:4000 &>/dev/null; then
         success "Website is running at http://localhost:4000"
-        
+
         # Open browser (macOS)
         if command_exists open; then
             open http://localhost:4000
@@ -1505,10 +1505,10 @@ build_and_start_website() {
 # Commit and deploy
 deploy_to_github() {
     log "Deploying to GitHub..."
-    
+
     # Add all files
     git add .
-    
+
     # Commit changes
     git commit -m "🚀 Complete IT Journey setup
 
@@ -1518,17 +1518,17 @@ deploy_to_github() {
 - GitHub Pages deployment ready
 
 Built with IT-Journey automation script" || true
-    
+
     # Push to GitHub
     git push -u origin main
-    
+
     success "Deployed to GitHub: https://github.com/$GHUSER/$GIT_REPO"
-    
+
     log "Enabling GitHub Pages..."
     echo ""
     echo -e "${CYAN}Your website will be live at: https://$GHUSER.github.io/$GIT_REPO${NC}"
     echo -e "${CYAN}Enable GitHub Pages at: https://github.com/$GHUSER/$GIT_REPO/settings/pages${NC}"
-    
+
     # Open GitHub Pages settings
     if command_exists open; then
         open "https://github.com/$GHUSER/$GIT_REPO/settings/pages"
@@ -1538,7 +1538,7 @@ Built with IT-Journey automation script" || true
 # Create completion summary
 create_completion_summary() {
     log "Creating completion summary..."
-    
+
     cat > completion-summary.md << EOF
 # 🎉 IT Journey Complete!
 
@@ -1599,14 +1599,14 @@ cd $ZREPO && docker-compose down && docker-compose up --build -d
 
 *Generated on $(date) by the IT-Journey automation script*
 EOF
-    
+
     success "Completion summary created"
 }
 
 # Main execution flow
 main() {
     log "Starting IT-Journey Zer0-to-Her0 Complete Setup..."
-    
+
     # Execute all setup phases
     install_homebrew
     install_development_tools
@@ -1620,7 +1620,7 @@ main() {
     build_and_start_website
     deploy_to_github
     create_completion_summary
-    
+
     # Final success message
     echo ""
     echo -e "${GREEN}🎉 SUCCESS! Your IT Journey is complete!${NC}"
@@ -1705,7 +1705,7 @@ For completely unattended execution, set these environment variables:
 ```bash
 # Set your preferences
 export GHUSER="your-github-username"
-export GIT_REPO="my-awesome-website" 
+export GIT_REPO="my-awesome-website"
 export AUTOMATED=true
 
 # Run the script

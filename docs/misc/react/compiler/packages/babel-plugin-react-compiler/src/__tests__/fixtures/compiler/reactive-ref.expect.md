@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-ref.expect.md
 ---
+# Reactive Ref.Expect
+
 ## Input
 
 ```javascript
@@ -72,7 +74,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

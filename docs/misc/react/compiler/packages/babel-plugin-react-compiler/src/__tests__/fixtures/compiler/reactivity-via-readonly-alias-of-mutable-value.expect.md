@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-via-readonly-alias-of-mutable-value.expect.md
 ---
+# Reactivity Via Readonly Alias Of Mutable Value.Expect
+
 ## Input
 
 ```javascript
@@ -95,7 +97,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-ref-initialization.expect.md
 ---
+# Allow Ref Initialization.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

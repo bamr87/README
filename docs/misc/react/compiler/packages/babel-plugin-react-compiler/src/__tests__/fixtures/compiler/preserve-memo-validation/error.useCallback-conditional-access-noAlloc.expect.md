@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useCallback-conditional-access-noAlloc.expect.md
 ---
+# Error.Usecallback Conditional Access Noalloc.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.useCallback-conditional-access-noAlloc.ts:5:21
   12 |
   13 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ReactUseMemo-async-callback.expect.md
 ---
+# Error.Invalid Reactusememo Async Callback.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid-ReactUseMemo-async-callback.ts:2:24
   6 | }
   7 |
 ```
-          
-      
+

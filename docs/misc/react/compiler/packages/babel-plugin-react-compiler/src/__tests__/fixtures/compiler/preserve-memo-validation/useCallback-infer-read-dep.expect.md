@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useCallback-infer-read-dep.expect.md
 ---
+# Usecallback Infer Read Dep.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

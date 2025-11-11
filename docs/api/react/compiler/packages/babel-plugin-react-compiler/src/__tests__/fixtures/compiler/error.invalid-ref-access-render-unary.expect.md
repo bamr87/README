@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ref-access-render-unary.expect.md
 ---
+# Error.Invalid Ref Access Render Unary.Expect
+
 ## Input
 
 ```javascript
@@ -82,5 +84,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
    9 |
   10 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

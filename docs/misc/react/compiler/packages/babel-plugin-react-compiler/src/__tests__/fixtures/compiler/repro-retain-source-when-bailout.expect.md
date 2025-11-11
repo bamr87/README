@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-retain-source-when-bailout.expect.md
 ---
+# Repro Retain Source When Bailout.Expect
+
 ## Input
 
 ```javascript
@@ -55,7 +57,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}
 logs: ['bar called']

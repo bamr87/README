@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-impure-functions-in-render.expect.md
 ---
+# Error.Invalid Impure Functions In Render.Expect
+
 ## Input
 
 ```javascript
@@ -66,5 +68,4 @@ error.invalid-impure-functions-in-render.ts:6:15
   8 | }
   9 |
 ```
-          
-      
+

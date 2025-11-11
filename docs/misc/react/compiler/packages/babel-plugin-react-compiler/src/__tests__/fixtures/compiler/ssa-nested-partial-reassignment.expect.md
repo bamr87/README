@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-nested-partial-reassignment.expect.md
 ---
+# Ssa Nested Partial Reassignment.Expect
+
 ## Input
 
 ```javascript
@@ -51,4 +53,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

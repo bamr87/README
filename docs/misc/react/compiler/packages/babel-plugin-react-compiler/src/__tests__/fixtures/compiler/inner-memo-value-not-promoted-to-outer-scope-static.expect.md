@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: inner-memo-value-not-promoted-to-outer-scope-static.expect.md
 ---
+# Inner Memo Value Not Promoted To Outer Scope Static.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ function Component(props) {
 }
 
 ```
-      

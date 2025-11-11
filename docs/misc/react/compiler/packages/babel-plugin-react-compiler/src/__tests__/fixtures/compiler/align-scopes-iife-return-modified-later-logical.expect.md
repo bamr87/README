@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: align-scopes-iife-return-modified-later-logical.expect.md
 ---
+# Align Scopes Iife Return Modified Later Logical.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{}]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-analysis-reactive-via-mutation-of-property-load.expect.md
 ---
+# Reactivity Analysis Reactive Via Mutation Of Property Load.Expect
+
 ## Input
 
 ```javascript
@@ -59,4 +61,3 @@ function Component(props) {
 }
 
 ```
-      

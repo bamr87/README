@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lambda-return-expression.expect.md
 ---
+# Lambda Return Expression.Expect
+
 ## Input
 
 ```javascript
@@ -43,7 +45,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [{}]

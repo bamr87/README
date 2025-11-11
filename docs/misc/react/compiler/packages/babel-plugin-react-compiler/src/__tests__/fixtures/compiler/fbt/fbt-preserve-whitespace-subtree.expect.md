@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbt-preserve-whitespace-subtree.expect.md
 ---
+# Fbt Preserve Whitespace Subtree.Expect
+
 ## Input
 
 ```javascript
@@ -91,6 +93,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <span>Jason !</span>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: independent-across-if.expect.md
 ---
+# Independent Across If.Expect
+
 ## Input
 
 ```javascript
@@ -96,4 +98,3 @@ function Component(props) {
 }
 
 ```
-      

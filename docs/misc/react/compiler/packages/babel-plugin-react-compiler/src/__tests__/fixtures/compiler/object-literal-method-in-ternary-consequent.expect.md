@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-literal-method-in-ternary-consequent.expect.md
 ---
+# Object Literal Method In Ternary Consequent.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getValue":{"kind":"Function","result":0}},"shouldInvokeFns":true}</div>

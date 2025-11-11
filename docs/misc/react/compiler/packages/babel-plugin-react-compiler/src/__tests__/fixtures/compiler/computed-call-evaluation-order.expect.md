@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: computed-call-evaluation-order.expect.md
 ---
+# Computed Call Evaluation Order.Expect
+
 ## Input
 
 ```javascript
@@ -69,7 +71,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"f":"[[ function params=0 ]]"}
 logs: ['A','B','arg','original']

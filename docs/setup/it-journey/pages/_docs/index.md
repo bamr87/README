@@ -209,7 +209,7 @@ For detailed information, see [Jekyll Implementation](../../docs/architecture/JE
 
 ---
 
-**Last Updated:** 2025-10-13  
+**Last Updated:** 2025-10-13
 **Version:** 2.0.0
 
 *The Learning Resources Library is part of the IT-Journey project. For technical developer documentation, see the [`/docs/` directory](../../docs/).*

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: arrow-function-expr-gating-test.expect.md
 ---
+# Arrow Function Expr Gating Test.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{}</div>

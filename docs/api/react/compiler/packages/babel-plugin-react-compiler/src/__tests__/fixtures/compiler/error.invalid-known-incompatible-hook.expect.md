@@ -5,10 +5,11 @@ tags:
 - javascript
 - api
 - testing
-- api
 last_updated: null
 source_file: error.invalid-known-incompatible-hook.expect.md
 ---
+# Error.Invalid Known Incompatible Hook.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +41,4 @@ error.invalid-known-incompatible-hook.ts:4:15
   6 | }
   7 |
 ```
-          
-      
+

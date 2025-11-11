@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bug_fix.md
 ---
+# Bug Fix
+
 ## Goal: Fix [Bug Description]
 
 **Bug Report:**

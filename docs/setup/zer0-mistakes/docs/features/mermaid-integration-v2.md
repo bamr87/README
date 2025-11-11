@@ -12,9 +12,9 @@ source_file: mermaid-integration-v2.md
 ---
 # Changelog: Mermaid Integration v2.0
 
-**Issue**: [#6](https://github.com/bamr87/zer0-mistakes/issues/6)  
-**Branch**: `feature/mermaid-integration-v2`  
-**Target Version**: v0.3.0  
+**Issue**: [#6](https://github.com/bamr87/zer0-mistakes/issues/6)
+**Branch**: `feature/mermaid-integration-v2`
+**Target Version**: v0.3.0
 **Date**: January 27, 2025
 
 ---
@@ -207,7 +207,7 @@ graph TD
 graph TD
     A[Start]:::highlight --> B[Process]:::custom
     B --> C[End]:::highlight
-    
+
     classDef highlight fill:#f9f,stroke:#333,stroke-width:4px
     classDef custom fill:#69f,stroke:#333,stroke-width:2px
 </div>

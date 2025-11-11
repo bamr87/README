@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: babel-existing-react-kitchensink-import.expect.md
 ---
+# Babel Existing React Kitchensink Import.Expect
+
 ## Input
 
 ```javascript
@@ -82,4 +84,3 @@ function Component2(props) {
 }
 
 ```
-      

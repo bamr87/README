@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nested-optional-member-expr.expect.md
 ---
+# Nested Optional Member Expr.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-dependencies-non-optional-properties-inside-optional-chain.expect.md
 ---
+# Reactive Dependencies Non Optional Properties Inside Optional Chain.Expect
+
 ## Input
 
 ```javascript
@@ -34,6 +36,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

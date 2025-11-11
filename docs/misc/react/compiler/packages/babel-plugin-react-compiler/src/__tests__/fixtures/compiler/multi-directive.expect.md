@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: multi-directive.expect.md
 ---
+# Multi Directive.Expect
+
 ## Input
 
 ```javascript
@@ -48,6 +50,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>"foo"</div>

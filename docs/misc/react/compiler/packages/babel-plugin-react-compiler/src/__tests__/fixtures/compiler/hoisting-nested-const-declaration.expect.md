@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-nested-const-declaration.expect.md
 ---
+# Hoisting Nested Const Declaration.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 5

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-component-props-non-null.expect.md
 ---
+# Infer Component Props Non Null.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"arr":[2]}</div>

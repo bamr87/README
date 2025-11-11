@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-call-jsx-2.expect.md
 ---
+# Ssa Call Jsx 2.Expect
+
 ## Input
 
 ```javascript
@@ -51,4 +53,3 @@ function Component(props) {
 }
 
 ```
-      

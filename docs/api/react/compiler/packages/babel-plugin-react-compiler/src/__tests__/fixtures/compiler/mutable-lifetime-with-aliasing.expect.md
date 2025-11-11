@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: mutable-lifetime-with-aliasing.expect.md
 ---
+# Mutable Lifetime With Aliasing.Expect
+
 ## Input
 
 ```javascript
@@ -118,6 +120,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":[{}],"value":[{"c":{},"value":"[[ cyclic ref *0 ]]"},null]}

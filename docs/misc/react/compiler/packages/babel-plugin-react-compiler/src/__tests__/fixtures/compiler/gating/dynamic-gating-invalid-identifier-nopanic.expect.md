@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dynamic-gating-invalid-identifier-nopanic.expect.md
 ---
+# Dynamic Gating Invalid Identifier Nopanic.Expect
+
 ## Input
 
 ```javascript
@@ -39,6 +41,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

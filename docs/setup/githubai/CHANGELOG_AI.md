@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: CHANGELOG_AI.md
 ---
+# Changelog Ai
+
 ## 474cc3b
 ```diff
 + .github/workflows/auto-doc-generator-pr.yml
@@ -44,11 +46,11 @@ source_file: CHANGELOG_AI.md
 src/githubai/auto_doc_generator.py
 + import os
 + import logging
-+ 
++
 + def handle_pull_request_event():
 +     # Generate documentation updates
 +     # Log inputs and outputs of the AI
-+ 
++
 + if __name__ == "__main__":
 +     if os.getenv('GITHUB_EVENT_NAME') == 'pull_request':
 +         handle_pull_request_event()

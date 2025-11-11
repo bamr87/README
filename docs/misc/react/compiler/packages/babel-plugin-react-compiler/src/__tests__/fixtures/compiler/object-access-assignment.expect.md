@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-access-assignment.expect.md
 ---
+# Object Access Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"zero":{"zero":20},"one":{"zero":{"zero":20},"one":{},"two":{"zero":300}}}
 {"zero":{"zero":20},"one":{"zero":{"zero":20},"one":{},"two":{"zero":300}}}

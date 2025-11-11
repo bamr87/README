@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: numeric-literal-as-object-property-key.expect.md
 ---
+# Numeric Literal As Object Property Key.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>dimaMachinadimaMachina</div>

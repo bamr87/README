@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: add_api_endpoint.md
 ---
+# Add Api Endpoint
+
 ## Goal: Add User Profile API Endpoints
 
 **Context:**

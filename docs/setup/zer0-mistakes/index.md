@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: index.md
 ---
+# Index
+
 ## Welcome to Error-Free Jekyll Development
 
 **zer0-mistakes** eliminates the complexity and frustration of Jekyll theme setup with intelligent automation, Docker-first development, and comprehensive error handling. Get a professional Jekyll site running in minutes, not hours.

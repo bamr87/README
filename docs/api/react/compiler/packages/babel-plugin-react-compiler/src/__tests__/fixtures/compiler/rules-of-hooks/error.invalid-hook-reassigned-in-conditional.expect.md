@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-reassigned-in-conditional.expect.md
 ---
+# Error.Invalid Hook Reassigned In Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -56,5 +58,4 @@ error.invalid-hook-reassigned-in-conditional.ts:4:9
   5 | }
   6 |
 ```
-          
-      
+

@@ -4,10 +4,11 @@ category: api
 tags:
 - docker
 - api
-- api
 last_updated: null
 source_file: stats.md
 ---
+# Stats
+
 <div class="container my-5">
   <div class="row">
     <div class="col-lg-12">
@@ -17,10 +18,10 @@ source_file: stats.md
       <p class="lead">
         Comprehensive analytics and insights from the IT-Journey knowledge base
       </p>
-      
+
       {% if site.data.content_statistics %}
         <p class="text-muted">
-          <i class="bi bi-clock"></i> 
+          <i class="bi bi-clock"></i>
           Last updated: {{ site.data.content_statistics.generated_at | date: "%B %d, %Y at %I:%M %p" }}
         </p>
       {% else %}
@@ -33,7 +34,7 @@ source_file: stats.md
   </div>
 
   {% if site.data.content_statistics %}
-  
+
   <!-- Overview Cards -->
   <div class="row g-4 mb-5">
     <!-- Total Posts Card -->

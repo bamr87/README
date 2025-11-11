@@ -36,8 +36,8 @@ What specific outcome do I need from this prompt?
 
 Example:
 ❌ Bad: "I need code help"
-✅ Good: "Generate a Python function that validates email addresses 
-using regex, handles edge cases (empty, special chars), and returns 
+✅ Good: "Generate a Python function that validates email addresses
+using regex, handles edge cases (empty, special chars), and returns
 boolean with error message"
 ```
 
@@ -109,7 +109,7 @@ Example Output: [sample]
 **Example Application**:
 ```markdown
 [ROLE]
-You are a senior Python developer specializing in data validation 
+You are a senior Python developer specializing in data validation
 and security best practices.
 
 [CONTEXT]
@@ -573,14 +573,14 @@ Explain trade-offs of your approach.
 def validate_email(email: str) -> tuple[bool, str | None]:
     """
     Validate email address against RFC 5322 standard.
-    
+
     Args:
         email: Email address to validate
-        
+
     Returns:
         Tuple of (is_valid, error_message)
         error_message is None if valid
-        
+
     Handles:
         - Invalid format
         - Missing @ symbol

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bug-separate-memoization-due-to-callback-capturing.expect.md
 ---
+# Bug Separate Memoization Due To Callback Capturing.Expect
+
 ## Input
 
 ```javascript
@@ -142,4 +144,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

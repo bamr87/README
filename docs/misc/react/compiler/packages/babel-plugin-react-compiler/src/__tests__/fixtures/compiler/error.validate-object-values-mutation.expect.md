@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.validate-object-values-mutation.expect.md
 ---
+# Error.Validate Object Values Mutation.Expect
+
 ## Input
 
 ```javascript
@@ -60,5 +62,4 @@ error.validate-object-values-mutation.ts:6:17
   8 |     value.updated = true;
   9 |   });
 ```
-          
-      
+

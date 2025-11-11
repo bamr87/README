@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-functionexpr-conditional-dep.expect.md
 ---
+# Hoisting Functionexpr Conditional Dep.Expect
+
 ## Input
 
 ```javascript
@@ -90,6 +92,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"shouldInvokeFns":true,"callback":{"kind":"Function","result":null}}</div>

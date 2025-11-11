@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: validate-no-set-state-in-render-uncalled-function-with-mutable-range-is-valid.expect.md
 ---
+# Validate No Set State In Render Uncalled Function With Mutable Range Is Valid.Expect
+
 ## Input
 
 ```javascript
@@ -102,4 +104,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: constant-prop-to-object-method.expect.md
 ---
+# Constant Prop To Object Method.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

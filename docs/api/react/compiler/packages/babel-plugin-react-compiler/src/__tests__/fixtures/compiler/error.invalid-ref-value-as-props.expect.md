@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-ref-value-as-props.expect.md
 ---
+# Error.Invalid Ref Value As Props.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.invalid-ref-value-as-props.ts:4:19
   5 | }
   6 |
 ```
-          
-      
+

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-couldnt-find-binding-for-decl.expect.md
 ---
+# Error.Bug Invariant Couldnt Find Binding For Decl.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.bug-invariant-couldnt-find-binding-for-decl.ts:7:14
    9 |     }
   10 |   }, []);
 ```
-          
-      
+

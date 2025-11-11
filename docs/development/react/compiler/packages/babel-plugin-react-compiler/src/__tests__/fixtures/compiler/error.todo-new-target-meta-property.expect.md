@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-new-target-meta-property.expect.md
 ---
+# Error.Todo New Target Meta Property.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.todo-new-target-meta-property.ts:4:13
   6 | }
   7 |
 ```
-          
-      
+

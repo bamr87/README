@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nonoptional-load-from-optional-memberexpr.expect.md
 ---
+# Nonoptional Load From Optional Memberexpr.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

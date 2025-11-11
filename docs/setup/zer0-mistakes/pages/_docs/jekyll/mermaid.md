@@ -67,7 +67,7 @@ graph LR
 
 **Directions:**
 - `TD` or `TB` - Top to bottom
-- `BT` - Bottom to top  
+- `BT` - Bottom to top
 - `LR` - Left to right
 - `RL` - Right to left
 
@@ -85,7 +85,7 @@ sequenceDiagram
     participant Browser
     participant Server
     participant Database
-    
+
     User->>Browser: Enter credentials
     Browser->>Server: POST /login
     Server->>Database: Verify credentials
@@ -110,12 +110,12 @@ classDiagram
         +login()
         +logout()
     }
-    
+
     class Admin {
         +String permissions
         +manageUsers()
     }
-    
+
     User <|-- Admin
     User "1" --> "*" Post : creates
 </div>
@@ -145,13 +145,13 @@ erDiagram
     USER ||--o{ POST : creates
     USER ||--o{ COMMENT : writes
     POST ||--o{ COMMENT : has
-    
+
     USER {
         int id PK
         string username
         string email
     }
-    
+
     POST {
         int id PK
         int user_id FK
@@ -241,7 +241,7 @@ mermaid.initialize({
 graph TD
     A[Start]:::greenClass --> B[Process]:::blueClass
     B --> C[End]:::redClass
-    
+
     classDef greenClass fill:#9f6,stroke:#333,stroke-width:2px
     classDef blueClass fill:#69f,stroke:#333,stroke-width:2px
     classDef redClass fill:#f96,stroke:#333,stroke-width:2px
@@ -269,7 +269,7 @@ graph LR
     A[Homepage]
     B[About]
     C[Contact]
-    
+
     click A "https://example.com" "Visit Homepage"
     click B "https://example.com/about" "About Us"
 </div>
@@ -281,11 +281,11 @@ graph TB
     subgraph Frontend
         A[React] --> B[Components]
     end
-    
+
     subgraph Backend
         C[API] --> D[Database]
     end
-    
+
     B --> C
 </div>
 
@@ -360,10 +360,10 @@ graph TD
 graph TD
     %% Main authentication flow
     A[Start] --> B{Auth Type}
-    
+
     %% OAuth path
     B -->|OAuth| C[OAuth Provider]
-    
+
     %% Basic auth path
     B -->|Basic| D[Verify Credentials]
 </div>

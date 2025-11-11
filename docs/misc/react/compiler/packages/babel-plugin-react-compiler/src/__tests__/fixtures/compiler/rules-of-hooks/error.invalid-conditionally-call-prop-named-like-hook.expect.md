@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-conditionally-call-prop-named-like-hook.expect.md
 ---
+# Error.Invalid Conditionally Call Prop Named Like Hook.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-conditionally-call-prop-named-like-hook.ts:3:4
   5 | }
   6 |
 ```
-          
-      
+

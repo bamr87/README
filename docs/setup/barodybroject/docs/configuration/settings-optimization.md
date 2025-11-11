@@ -12,12 +12,12 @@ source_file: settings-optimization.md
 ---
 # Django Settings Optimization Guide
 
-**File**: settings-optimization.md  
-**Description**: Comprehensive guide to Django settings optimization for production and development environments  
-**Author**: Barodybroject Team <team@barodybroject.com>  
-**Created**: 2025-10-27  
-**Last Modified**: 2025-10-27  
-**Version**: 2.0.0  
+**File**: settings-optimization.md
+**Description**: Comprehensive guide to Django settings optimization for production and development environments
+**Author**: Barodybroject Team <team@barodybroject.com>
+**Created**: 2025-10-27
+**Last Modified**: 2025-10-27
+**Version**: 2.0.0
 
 ## Table of Contents
 
@@ -94,7 +94,7 @@ The settings.py file is organized into logical sections for maintainability:
 # Core Django setup, paths, and environment detection
 
 # ==============================================================================
-# AWS SECRETS MANAGER CONFIGURATION  
+# AWS SECRETS MANAGER CONFIGURATION
 # ==============================================================================
 # Secure secrets management for production environments
 
@@ -210,7 +210,7 @@ RUNNING_IN_PRODUCTION=False
 DEBUG=True
 LOG_LEVEL=DEBUG
 
-# Database Configuration  
+# Database Configuration
 DB_CHOICE=postgres
 DB_HOST=localhost
 DB_PORT=5432
@@ -281,12 +281,12 @@ if IS_PRODUCTION:
     # Force HTTPS
     SECURE_SSL_REDIRECT = env.bool('USE_HTTPS', default=True)
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    
+
     # HTTP Strict Transport Security
     SECURE_HSTS_SECONDS = 31536000  # 1 year
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
-    
+
     # Content Security
     SECURE_CONTENT_TYPE_NOSNIFF = True
     SECURE_BROWSER_XSS_FILTER = True
@@ -301,7 +301,7 @@ if IS_PRODUCTION:
     SESSION_COOKIE_HTTPONLY = True
     SESSION_COOKIE_SAMESITE = 'Lax'
     SESSION_COOKIE_AGE = 3600  # 1 hour
-    
+
     # Secure CSRF cookies
     CSRF_COOKIE_SECURE = True
     CSRF_COOKIE_HTTPONLY = True
@@ -316,17 +316,17 @@ def get_secret(secret_name: str = "barodybroject/env", region_name: str = "us-ea
     \"\"\"
     if not IS_PRODUCTION or not env.str('AWS_ACCESS_KEY_ID', default=''):
         return {}
-        
+
     try:
         session = boto3.session.Session()
         client = session.client(service_name="secretsmanager", region_name=region_name)
-        
+
         response = client.get_secret_value(SecretId=secret_name)
         secrets = json.loads(response["SecretString"])
-        
+
         logging.info(f"Successfully loaded secrets from AWS Secrets Manager: {secret_name}")
         return secrets
-        
+
     except ClientError as e:
         # Handle specific AWS errors
         error_code = e.response.get("Error", {}).get("Code", "Unknown")
@@ -336,13 +336,13 @@ def get_secret(secret_name: str = "barodybroject/env", region_name: str = "us-ea
             "InvalidParameterException": "Invalid parameter provided to AWS Secrets Manager",
             "InvalidRequestException": "Invalid request to AWS Secrets Manager",
         }
-        
+
         error_msg = error_messages.get(error_code, f"AWS Secrets Manager error: {error_code}")
         logging.warning(f"AWS Secrets Manager error: {error_msg}")
-        
+
         if IS_PRODUCTION and env.str('AWS_ACCESS_KEY_ID', default=''):
             raise ImproperlyConfigured(f"Failed to load production secrets: {error_msg}")
-            
+
         return {}
 ```
 
@@ -355,7 +355,7 @@ if not IS_PRODUCTION:
     SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = False
     CSRF_COOKIE_SECURE = False
-    
+
     # Enable debug features
     if env.bool('ENABLE_DEBUG_TOOLBAR', default=False):
         INSTALLED_APPS.append('debug_toolbar')
@@ -387,7 +387,7 @@ if DB_CHOICE == 'postgres':
             'CONN_HEALTH_CHECKS': True,  # Enable connection health checks
         }
     }
-    
+
     # Production connection pool settings
     if IS_PRODUCTION:
         DATABASES['default']['OPTIONS'].update({
@@ -434,7 +434,7 @@ DATABASE_ENGINE_OPTIONS = {
 if IS_PRODUCTION:
     try:
         from django.core.cache.backends.redis import RedisCache
-        
+
         CACHES = {
             'default': {
                 'BACKEND': 'django.core.cache.backends.redis.RedisCache',
@@ -444,15 +444,15 @@ if IS_PRODUCTION:
                 'VERSION': 1,
             }
         }
-        
+
         # Enable cache middleware for production
         MIDDLEWARE.insert(1, 'django.middleware.cache.UpdateCacheMiddleware')
         MIDDLEWARE.append('django.middleware.cache.FetchFromCacheMiddleware')
-        
+
         CACHE_MIDDLEWARE_ALIAS = 'default'
         CACHE_MIDDLEWARE_SECONDS = 600  # 10 minutes
         CACHE_MIDDLEWARE_KEY_PREFIX = 'barodybroject'
-        
+
     except ImportError:
         # Fallback to database cache if Redis is not available
         CACHES = {
@@ -608,15 +608,15 @@ logs_dir.mkdir(exist_ok=True)
 if IS_PRODUCTION:
     # Use manifest static files storage for production
     STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
-    
+
     # Optimize static file serving
     STATIC_URL = env.str('STATIC_URL', default='/static/')
     STATIC_ROOT = env.str('STATIC_ROOT', default=str(BASE_DIR / 'staticfiles'))
-    
+
     # Media files configuration
     MEDIA_URL = env.str('MEDIA_URL', default='/media/')
     MEDIA_ROOT = env.str('MEDIA_ROOT', default=str(BASE_DIR / 'media'))
-    
+
     # Static file compression
     STATICFILES_FINDERS = [
         'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -658,7 +658,7 @@ if IS_PRODUCTION:
         'barodybroject.com',
         'www.barodybroject.com',
     ])
-    
+
     # CSRF trusted origins
     CSRF_TRUSTED_ORIGINS = [
         f'https://{CONTAINER_APP_NAME}.azurecontainerapps.io',
@@ -729,7 +729,7 @@ print('Cache:', settings.CACHES['default']['BACKEND'])
 if env.bool('LOAD_TESTING', default=False):
     # Disable unnecessary middleware for load testing
     MIDDLEWARE = [m for m in MIDDLEWARE if 'debug' not in m.lower()]
-    
+
     # Optimize for load testing
     LOGGING['handlers']['console']['level'] = 'ERROR'
     LOGGING['root']['level'] = 'ERROR'
@@ -846,7 +846,7 @@ python manage.py runserver --verbosity=2
 # Add to development settings for query debugging
 if DEBUG:
     LOGGING['loggers']['django.db.backends']['level'] = 'DEBUG'
-    
+
     # Show queries in debug toolbar
     DEBUG_TOOLBAR_CONFIG = {
         'SHOW_TOOLBAR_CALLBACK': lambda request: True,
@@ -869,7 +869,7 @@ if DEBUG:
 ## Resources
 
 - **[Environment Configuration](./environment-config.md)** - Complete environment variable reference
-- **[Security Configuration](./security-config.md)** - Security settings and best practices  
+- **[Security Configuration](./security-config.md)** - Security settings and best practices
 - **[Performance Configuration](./performance-config.md)** - Performance optimization guide
 - **[Database Configuration](./database-config.md)** - Database setup and optimization
 - **[Deployment Configuration](./deployment-config.md)** - Deployment-specific settings
@@ -882,9 +882,9 @@ if DEBUG:
 
 ---
 
-**Last Updated**: October 27, 2025  
-**Maintainer**: Barodybroject Team  
-**Version**: 2.0.0  
-**Status**: Production Ready  
+**Last Updated**: October 27, 2025
+**Maintainer**: Barodybroject Team
+**Version**: 2.0.0
+**Status**: Production Ready
 
 This comprehensive guide ensures enterprise-grade Django configuration for the Barodybroject application, providing security, performance, and maintainability for production deployment while maintaining excellent developer experience.

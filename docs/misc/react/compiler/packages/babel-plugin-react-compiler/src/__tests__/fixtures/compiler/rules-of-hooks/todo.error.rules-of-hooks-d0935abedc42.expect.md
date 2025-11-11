@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.error.rules-of-hooks-d0935abedc42.expect.md
 ---
+# Todo.Error.Rules Of Hooks D0935Abedc42.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ todo.error.rules-of-hooks-d0935abedc42.ts:8:4
   10 | });
   11 |
 ```
-          
-      
+

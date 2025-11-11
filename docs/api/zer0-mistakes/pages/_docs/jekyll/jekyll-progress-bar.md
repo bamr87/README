@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-progress-bar.md
 ---
+# Jekyll Progress Bar
+
 > Show progress bar when page is loading.
 
 ## 1. Progress Bar

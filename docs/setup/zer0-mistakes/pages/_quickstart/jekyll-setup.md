@@ -425,7 +425,7 @@ zer0-mistakes/
 
 Jekyll is a static site generator. It takes text written in your
 favorite markup language and uses layouts to create a static website. You can
-tweak the site's look and feel, URLs, the data displayed on the page, and more. 
+tweak the site's look and feel, URLs, the data displayed on the page, and more.
 
 ## Prerequisites
 
@@ -435,7 +435,7 @@ Jekyll requires the following:
 * RubyGems
 * GCC and Make
 
-If you want to use Github Pages, here are the [dependencies](https://pages.github.com/versions.json) 
+If you want to use Github Pages, here are the [dependencies](https://pages.github.com/versions.json)
 
 
 
@@ -465,7 +465,7 @@ If you are using Ruby version 3.0.0 or higher, step 5 [may fail](https://github.
 Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files: `bundle exec jekyll serve --livereload`
 
 
-If you encounter any errors during this process, check that you have installed all the prerequisites in [Requirements]({{ '/docs/installation/#requirements' | relative_url }}). 
+If you encounter any errors during this process, check that you have installed all the prerequisites in [Requirements]({{ '/docs/installation/#requirements' | relative_url }}).
 If you still have issues, see [Troubleshooting]({{ '/docs/troubleshooting/#configuration-problems' | relative_url }}).
 
 {: .note .info}

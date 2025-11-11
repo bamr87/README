@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbs-params.expect.md
 ---
+# Fbs Params.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div title="Hello Sathya">Hover me</div>

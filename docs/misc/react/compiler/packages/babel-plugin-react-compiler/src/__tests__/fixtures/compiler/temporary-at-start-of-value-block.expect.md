@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: temporary-at-start-of-value-block.expect.md
 ---
+# Temporary At Start Of Value Block.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ function component(props) {
 }
 
 ```
-      

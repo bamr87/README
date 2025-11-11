@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-member-expression-tag-grouping.expect.md
 ---
+# Jsx Member Expression Tag Grouping.Expect
+
 ## Input
 
 ```javascript
@@ -34,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

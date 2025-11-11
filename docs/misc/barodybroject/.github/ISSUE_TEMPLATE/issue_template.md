@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: issue_template.md
 ---
+# Issue Template
+
 <!-- template: issue_detail_template.md -->
 
 ## Describe the issue

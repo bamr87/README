@@ -146,7 +146,7 @@ Blog posts and journal entries following Jekyll conventions.
 
 **Naming Convention:** `YYYY-MM-DD-title-slug.md`
 
-**Purpose:** 
+**Purpose:**
 - Technical articles
 - Learning reflections
 - Project updates
@@ -387,6 +387,6 @@ IT-Journey uses the `zer0-mistakes` theme as a remote theme:
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

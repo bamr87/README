@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-useInsertionEffect-dep-not-memoized.expect.md
 ---
+# Error.Invalid Useinsertioneffect Dep Not Memoized.Expect
+
 ## Input
 
 ```javascript
@@ -44,5 +46,4 @@ error.invalid-useInsertionEffect-dep-not-memoized.ts:6:2
   10 |   return data;
   11 | }
 ```
-          
-      
+

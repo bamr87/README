@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-ref-access-in-unused-callback-nested.expect.md
 ---
+# Allow Ref Access In Unused Callback Nested.Expect
+
 ## Input
 
 ```javascript
@@ -104,6 +106,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

@@ -12,9 +12,9 @@ source_file: FORKME.md
 ---
 # ForkMe - Advanced GitHub Repository Forking Utility
 
-**Version:** 1.0.0  
-**Author:** IT-Journey Scripts Team  
-**License:** MIT  
+**Version:** 1.0.0
+**Author:** IT-Journey Scripts Team
+**License:** MIT
 **Repository:** bamr87/FORKME
 
 ---
@@ -316,7 +316,7 @@ ForkMe provides 10 distinct strategies, each optimized for specific workflows:
 - Preserves all branches and tags
 - Suitable for long-term development
 
-**Pros:** Complete history, all branches, full functionality  
+**Pros:** Complete history, all branches, full functionality
 **Cons:** Slower for large repos, requires more disk space
 
 ---
@@ -339,7 +339,7 @@ ForkMe provides 10 distinct strategies, each optimized for specific workflows:
 - `--depth <n>`: Number of commits to include
 - `--branch <name>`: Clone specific branch only
 
-**Pros:** Fast, minimal disk usage, good for quick inspections  
+**Pros:** Fast, minimal disk usage, good for quick inspections
 **Cons:** Limited history, may miss context
 
 ---
@@ -360,7 +360,7 @@ ForkMe provides 10 distinct strategies, each optimized for specific workflows:
 **Options:**
 - `--sparse-paths <paths>`: Comma-separated list of paths to include
 
-**Pros:** Minimal disk usage, faster clones, focused workspace  
+**Pros:** Minimal disk usage, faster clones, focused workspace
 **Cons:** Requires knowing structure beforehand, can't easily explore other paths
 
 **Example Use Cases:**
@@ -390,7 +390,7 @@ ForkMe provides 10 distinct strategies, each optimized for specific workflows:
 - Removes all subdirectories (keeps only root-level files)
 - Useful for quick project overview
 
-**Pros:** Minimal space, immediate overview  
+**Pros:** Minimal space, immediate overview
 **Cons:** No subdirectory access, limited usefulness
 
 ---
@@ -408,7 +408,7 @@ ForkMe provides 10 distinct strategies, each optimized for specific workflows:
 - Empties all file contents (0-byte files)
 - Preserves directory tree and filenames
 
-**Pros:** Understand organization without downloading content  
+**Pros:** Understand organization without downloading content
 **Cons:** No actual code to review
 
 **Example Output:**
@@ -441,7 +441,7 @@ project/
 **Options:**
 - `--file-types <extensions>`: Comma-separated list of file extensions
 
-**Pros:** Focused review, reduced clutter, faster analysis  
+**Pros:** Focused review, reduced clutter, faster analysis
 **Cons:** May miss important files with different extensions
 
 **Common File Type Combinations:**
@@ -473,7 +473,7 @@ project/
 **Options:**
 - `--sparse-paths <paths>`: Paths to include (optional)
 
-**Pros:** Very fast, minimal disk usage, targeted analysis  
+**Pros:** Very fast, minimal disk usage, targeted analysis
 **Cons:** Limited to specific paths and recent commits
 
 ---
@@ -491,7 +491,7 @@ project/
 - Includes all refs (branches, tags, etc.)
 - Suitable for creating backup or alternate remote
 
-**Pros:** Complete mirror, good for backups  
+**Pros:** Complete mirror, good for backups
 **Cons:** Bare repository (no working directory)
 
 **How to use mirror:**
@@ -519,7 +519,7 @@ git push --mirror https://example.com/backup/repo.git
 - Contains full repository (or specified commits)
 - Single file for easy transfer
 
-**Pros:** Portable, offline-capable, secure transfer  
+**Pros:** Portable, offline-capable, secure transfer
 **Cons:** Requires unbundling to use
 
 **How to use bundle:**
@@ -551,7 +551,7 @@ git clone forkme-workspace/repo.bundle repo-clone
 - No cloning performed
 - Displays: stars, forks, size, languages, license, description
 
-**Pros:** Instant, no disk usage, no authentication for public repos  
+**Pros:** Instant, no disk usage, no authentication for public repos
 **Cons:** Limited to metadata only
 
 ---
@@ -608,13 +608,13 @@ repos=(
 
 for repo in "${repos[@]}"; do
     echo "Auditing: $repo"
-    
+
     ./forkme.sh --strategy analysis \
         --sparse-paths "src/,*.config,Dockerfile" \
         --no-fork \
         --target "./audit/$(basename $repo)" \
         "$repo"
-    
+
     # Run security tools
     cd "./audit/$(basename $repo)"
     # npm audit, bandit, safety, etc.
@@ -732,7 +732,7 @@ mkdir -p ./framework-docs
 
 for repo in "${repos[@]}"; do
     framework=$(basename $repo)
-    
+
     ./forkme.sh --strategy filetype \
         --file-types "md,txt,rst" \
         --target "./framework-docs/$framework" \
@@ -798,13 +798,13 @@ mkdir -p ./framework-comparison
 
 for framework in "${frameworks[@]}"; do
     name=$(basename $framework)
-    
+
     ./forkme.sh --strategy filetype \
         --file-types "js,json" \
         --target "./framework-comparison/$name" \
         --no-fork \
         "$framework"
-    
+
     # Generate statistics
     cd "./framework-comparison/$name"
     cloc . > "../${name}-stats.txt"
@@ -957,13 +957,13 @@ mkdir -p org-audit
 
 for repo in $repos; do
     echo "Processing: $repo"
-    
+
     ./forkme.sh --strategy analysis \
         --sparse-paths "package.json,requirements.txt,go.mod" \
         --target "./org-audit/$(basename $repo)" \
         --no-fork \
         "$repo"
-    
+
     # Extract dependency info
     # Run security scans
 done
@@ -991,13 +991,13 @@ for repo in "${repos[@]}"; do
         --target "./temp-$(basename $repo)" \
         --no-fork \
         "$repo"
-    
+
     cd "./temp-$(basename $repo)"
     node_version=$(jq -r '.engines.node // "N/A"' package.json)
     react_version=$(jq -r '.dependencies.react // "N/A"' package.json)
     echo "$repo,$node_version,$react_version" >> ../survey.csv
     cd ..
-    
+
     rm -rf "./temp-$(basename $repo)"
 done
 
@@ -1237,9 +1237,9 @@ gh auth login
 
 ### Project Overview
 
-**Date:** November 1, 2025  
-**Project:** ForkMe - Advanced GitHub Repository Forking Utility  
-**Repository:** bamr87/FORKME  
+**Date:** November 1, 2025
+**Project:** ForkMe - Advanced GitHub Repository Forking Utility
+**Repository:** bamr87/FORKME
 
 ### 📦 Deliverables
 
@@ -1347,9 +1347,9 @@ ForkMe provides a comprehensive, flexible solution for GitHub repository operati
 - **Keep It Simple (KIS)**: Clear, maintainable code
 - **AI-Powered Development (AIPD)**: AI-assisted implementation
 
-**Status:** ✅ Complete and Ready for Use  
-**Version:** 1.0.0  
-**Documentation:** Comprehensive  
+**Status:** ✅ Complete and Ready for Use
+**Version:** 1.0.0
+**Documentation:** Comprehensive
 **Testing:** Manual verification completed
 
 ---

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-locals-named-like-hooks.expect.md
 ---
+# Allow Locals Named Like Hooks.Expect
+
 ## Input
 
 ```javascript
@@ -80,6 +82,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"val":{"a":0,"b":"value1","c":true},"children":[2,"[[ cyclic ref *1 ]]",null]}</div>

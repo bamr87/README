@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassign-global-return.expect.md
 ---
+# Reassign Global Return.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

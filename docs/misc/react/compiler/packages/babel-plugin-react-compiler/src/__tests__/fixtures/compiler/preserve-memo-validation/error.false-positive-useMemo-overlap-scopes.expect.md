@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.false-positive-useMemo-overlap-scopes.expect.md
 ---
+# Error.False Positive Usememo Overlap Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -62,5 +64,4 @@ error.false-positive-useMemo-overlap-scopes.ts:23:9
   25 |   return {result, y};
   26 | }
 ```
-          
-      
+

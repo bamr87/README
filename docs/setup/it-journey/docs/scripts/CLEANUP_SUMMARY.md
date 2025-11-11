@@ -17,7 +17,7 @@ source_file: CLEANUP_SUMMARY.md
 @lastModified 2025-07-07
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Script directory cleanup and organization
 
 @relatedEvolutions
@@ -264,7 +264,7 @@ it-journey/scripts/
 The script consolidation has successfully:
 
 - **Eliminated redundancies** across multiple projects
-- **Established consistent standards** for all scripts  
+- **Established consistent standards** for all scripts
 - **Improved maintainability** through better organization
 - **Enhanced user experience** with unified interfaces
 - **Implemented IT-Journey principles** throughout

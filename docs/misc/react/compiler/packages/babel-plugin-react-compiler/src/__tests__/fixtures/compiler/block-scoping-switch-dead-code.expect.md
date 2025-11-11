@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: block-scoping-switch-dead-code.expect.md
 ---
+# Block Scoping Switch Dead Code.Expect
+
 ## Input
 
 ```javascript
@@ -59,7 +61,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['foo']

@@ -34,7 +34,7 @@ graph LR
 ## Core Workflows
 
 ### 1. **ci.yml** - Main CI Pipeline
-**Trigger**: Push/PR to main/develop branches  
+**Trigger**: Push/PR to main/develop branches
 **Purpose**: Core testing and validation
 
 **Stages**:
@@ -52,7 +52,7 @@ graph LR
 - Health endpoint verification
 
 ### 2. **quality.yml** - Code Quality and Security
-**Trigger**: Push/PR (excluding docs)  
+**Trigger**: Push/PR (excluding docs)
 **Purpose**: Enforce code standards and security
 
 **Quality Gates**:
@@ -68,7 +68,7 @@ graph LR
 - Vulnerability assessments
 
 ### 3. **container.yml** - Container Build and Registry
-**Trigger**: Push to main, tags, releases  
+**Trigger**: Push to main, tags, releases
 **Purpose**: Build, test, and publish container images
 
 **Features**:
@@ -84,7 +84,7 @@ graph LR
 - Production container verification
 
 ### 4. **deploy.yml** - Azure Deployment Automation
-**Trigger**: Successful CI/Container workflows, manual dispatch  
+**Trigger**: Successful CI/Container workflows, manual dispatch
 **Purpose**: Streamlined Azure Container Apps deployment
 
 **Deployment Stages**:
@@ -99,7 +99,7 @@ graph LR
 - **Staging/Production**: Manual triggers with approval gates
 
 ### 5. **environment.yml** - Environment and Dependencies
-**Trigger**: Weekly schedule, manual dispatch  
+**Trigger**: Weekly schedule, manual dispatch
 **Purpose**: Maintain environment health and dependencies
 
 **Health Checks**:

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-computed-member.expect.md
 ---
+# Object Expression Computed Member.Expect
+
 ## Input
 
 ```javascript
@@ -65,6 +67,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"key":[42]}

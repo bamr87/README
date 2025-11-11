@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: immutable-hooks.expect.md
 ---
+# Immutable Hooks.Expect
+
 ## Input
 
 ```javascript
@@ -51,4 +53,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-computed-load.expect.md
 ---
+# Alias Computed Load.Expect
+
 ## Input
 
 ```javascript
@@ -42,4 +44,3 @@ function component(a) {
 }
 
 ```
-      

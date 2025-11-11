@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-shorthand-aliased-mutate-after.expect.md
 ---
+# Object Method Shorthand Aliased Mutate After.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getValue":{"kind":"Function","result":0}},"shouldInvokeFns":true}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-non-literal-depslist.expect.md
 ---
+# Error.Usememo Non Literal Depslist.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.useMemo-non-literal-depslist.ts:10:4
   12 |   return resolvedText;
   13 | }
 ```
-          
-      
+

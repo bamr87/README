@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-and-passed.expect.md
 ---
+# Jsx And Passed.Expect
+
 ## Input
 
 ```javascript
@@ -80,7 +82,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":[[],"[[ function params=1 ]]"],"shouldInvokeFns":true}</div>
 <div>{"result":[[],"[[ function params=1 ]]"],"shouldInvokeFns":true}</div>

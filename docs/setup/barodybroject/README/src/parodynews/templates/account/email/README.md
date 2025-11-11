@@ -96,12 +96,12 @@ The Barody Broject Team
 <body>
     <h2>Welcome to Barody Broject!</h2>
     <p>Hello {{ user.get_full_name|default:user.username }},</p>
-    
+
     <p>Please confirm your email address by clicking the link below:</p>
     <a href="{{ activate_url }}" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
         Confirm Email Address
     </a>
-    
+
     <p>If the button doesn't work, copy and paste this link into your browser:</p>
     <p>{{ activate_url }}</p>
 </body>
@@ -110,7 +110,7 @@ The Barody Broject Team
 
 ## Container Configuration
 - **Runtime**: Django email backend integration
-- **Dependencies**: 
+- **Dependencies**:
   - SMTP server configuration
   - Django allauth email settings
   - Template rendering engine
@@ -122,12 +122,12 @@ The Barody Broject Team
 - **Assets**: HTML email styling, inline CSS support
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Django allauth authentication workflows
   - User registration and login views
   - Password reset and email management views
   - Account settings and profile updates
-- **Outgoing**: 
+- **Outgoing**:
   - SMTP email delivery system
   - Email tracking and analytics
   - User notification preferences

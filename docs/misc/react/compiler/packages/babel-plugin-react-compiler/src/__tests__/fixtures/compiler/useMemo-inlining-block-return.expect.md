@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-inlining-block-return.expect.md
 ---
+# Usememo Inlining Block Return.Expect
+
 ## Input
 
 ```javascript
@@ -59,4 +61,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

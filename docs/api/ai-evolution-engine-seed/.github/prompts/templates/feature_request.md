@@ -5,10 +5,11 @@ tags:
 - api
 - database
 - testing
-- api
 last_updated: null
 source_file: feature_request.md
 ---
+# Feature Request
+
 ## Goal: [Feature Name]
 
 **Context:**

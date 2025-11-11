@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: stats.md
 ---
+# Stats
+
 Welcome to the comprehensive statistics dashboard for this site. This page provides detailed analytics about content organization, popular topics, and site growth metrics.
 
 ## About These Statistics

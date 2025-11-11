@@ -61,10 +61,10 @@ if [ -n "${GH_TOKEN:-}" ] || [ -n "${PAT_TOKEN:-}" ] || [ -n "${GITHUB_TOKEN:-}"
 
 ## Validation Results
 
-✅ **Workflow Environment**: GH_TOKEN properly configured from secrets.GITHUB_TOKEN  
-✅ **Script Logic**: Now supports GITHUB_TOKEN, GH_TOKEN, and PAT_TOKEN  
-✅ **Error Messages**: Enhanced with token source detection  
-✅ **Backward Compatibility**: All existing token configurations still work  
+✅ **Workflow Environment**: GH_TOKEN properly configured from secrets.GITHUB_TOKEN
+✅ **Script Logic**: Now supports GITHUB_TOKEN, GH_TOKEN, and PAT_TOKEN
+✅ **Error Messages**: Enhanced with token source detection
+✅ **Backward Compatibility**: All existing token configurations still work
 
 ## Testing Commands
 
@@ -78,7 +78,7 @@ yq eval '.env.GH_TOKEN' .github/workflows/ai_evolver.yml
 
 ## Impact
 
-**Before**: Workflow failed at prerequisite check step with authentication error  
+**Before**: Workflow failed at prerequisite check step with authentication error
 **After**: Workflow passes authentication check and can proceed through all steps
 
 The fix ensures the GitHub Actions workflow can authenticate properly using the built-in `secrets.GITHUB_TOKEN` while maintaining support for custom token configurations.

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: computed-load-primitive-as-dependency.expect.md
 ---
+# Computed Load Primitive As Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -44,4 +46,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: 2023-11-23-it-fundamentals.md
 ---
+# 2023 11 23 It Fundamentals
+
 Absolutely! Hands-on exercises are like spells and incantations – they're best learned by doing. Let's start with some foundational IT skills and practical exercises to get you going:
 
 ### 1. **Basic Computer Skills**

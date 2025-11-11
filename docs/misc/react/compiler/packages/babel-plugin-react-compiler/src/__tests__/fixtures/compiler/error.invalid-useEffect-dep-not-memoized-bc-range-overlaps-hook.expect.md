@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-useEffect-dep-not-memoized-bc-range-overlaps-hook.expect.md
 ---
+# Error.Invalid Useeffect Dep Not Memoized Bc Range Overlaps Hook.Expect
+
 ## Input
 
 ```javascript
@@ -47,5 +49,4 @@ error.invalid-useEffect-dep-not-memoized-bc-range-overlaps-hook.ts:9:2
   13 |   return [items, state];
   14 | }
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitive-freeze-function-expressions.expect.md
 ---
+# Transitive Freeze Function Expressions.Expect
+
 ## Input
 
 ```javascript
@@ -95,4 +97,3 @@ function _temp(x) {
 }
 
 ```
-      

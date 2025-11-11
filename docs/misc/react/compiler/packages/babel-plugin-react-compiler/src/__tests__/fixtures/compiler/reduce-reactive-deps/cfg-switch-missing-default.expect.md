@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: cfg-switch-missing-default.expect.md
 ---
+# Cfg Switch Missing Default.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

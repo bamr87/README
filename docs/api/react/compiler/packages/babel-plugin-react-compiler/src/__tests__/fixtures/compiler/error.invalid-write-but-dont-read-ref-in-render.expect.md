@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-write-but-dont-read-ref-in-render.expect.md
 ---
+# Error.Invalid Write But Dont Read Ref In Render.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid-write-but-dont-read-ref-in-render.ts:5:2
   7 |   return ref;
   8 | }
 ```
-          
-      
+

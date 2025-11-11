@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-merge-refs-pattern.expect.md
 ---
+# Allow Merge Refs Pattern.Expect
+
 ## Input
 
 ```javascript
@@ -46,6 +48,6 @@ function Component() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

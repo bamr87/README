@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-property-call-dep.expect.md
 ---
+# Error.Usememo Property Call Dep.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.useMemo-property-call-dep.ts:5:17
   8 | }
   9 |
 ```
-          
-      
+

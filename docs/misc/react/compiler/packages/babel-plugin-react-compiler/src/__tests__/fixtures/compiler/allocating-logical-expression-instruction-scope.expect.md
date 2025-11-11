@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allocating-logical-expression-instruction-scope.expect.md
 ---
+# Allocating Logical Expression Instruction Scope.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["[object Object]"]

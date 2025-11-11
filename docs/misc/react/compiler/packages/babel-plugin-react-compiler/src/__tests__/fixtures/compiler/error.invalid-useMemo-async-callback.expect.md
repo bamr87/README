@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-useMemo-async-callback.expect.md
 ---
+# Error.Invalid Usememo Async Callback.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid-useMemo-async-callback.ts:2:18
   6 | }
   7 |
 ```
-          
-      
+

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-global-reassignment-in-effect.expect.md
 ---
+# Allow Global Reassignment In Effect.Expect
+
 ## Input
 
 ```javascript
@@ -89,6 +91,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>true</div>

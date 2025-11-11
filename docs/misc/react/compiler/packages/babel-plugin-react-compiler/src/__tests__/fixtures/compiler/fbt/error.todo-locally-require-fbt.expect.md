@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-locally-require-fbt.expect.md
 ---
+# Error.Todo Locally Require Fbt.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.todo-locally-require-fbt.ts:2:8
   4 |   return <fbt desc="Description">{'Text'}</fbt>;
   5 | }
 ```
-          
-      
+

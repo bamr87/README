@@ -134,5 +134,5 @@ This configuration management follows IT-Journey's core principles:
 
 ---
 
-*Last updated: {{ page.lastmod }}*  
+*Last updated: {{ page.lastmod }}*
 *Workflow: [update-settings.yml](/.github/workflows/update-settings.yml)*

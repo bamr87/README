@@ -89,8 +89,8 @@ database:
 ### Database Changes
 ```sql
 -- Fix data consistency issue
-UPDATE table_name 
-SET column_name = 'corrected_value' 
+UPDATE table_name
+SET column_name = 'corrected_value'
 WHERE column_name = 'incorrect_value';
 ```
 
@@ -159,7 +159,7 @@ alerts:
   - name: "Bug Recurrence Check"
     condition: error_rate > 0.1%
     notification: team-channel
-  
+
   - name: "Performance Regression"
     condition: response_time > baseline + 20%
     notification: dev-team
@@ -292,8 +292,8 @@ OLD_CONFIG_NAME → NEW_CONFIG_NAME
 
 ---
 
-**Template Version**: 1.0.0  
-**Last Updated**: January 27, 2025  
+**Template Version**: 1.0.0
+**Last Updated**: January 27, 2025
 **Template Maintainer**: Barodybroject Team
 
 > **Usage Note**: Copy this template to document bug fixes. Include specific technical details about the problem and solution. Update all placeholder text with actual fix information.

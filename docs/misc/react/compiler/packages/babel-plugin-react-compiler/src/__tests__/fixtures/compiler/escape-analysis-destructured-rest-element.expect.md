@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: escape-analysis-destructured-rest-element.expect.md
 ---
+# Escape Analysis Destructured Rest Element.Expect
+
 ## Input
 
 ```javascript
@@ -67,4 +69,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

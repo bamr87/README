@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.expect.md
 ---
+# Error.Todo Invalid Jsx In Catch In Outer Try With Finally.Expect
+
 ## Input
 
 ```javascript
@@ -65,5 +67,4 @@ error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.ts:6:2
   17 | }
   18 |
 ```
-          
-      
+

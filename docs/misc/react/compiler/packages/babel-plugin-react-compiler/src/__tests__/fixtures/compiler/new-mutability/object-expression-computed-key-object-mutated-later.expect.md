@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-computed-key-object-mutated-later.expect.md
 ---
+# Object Expression Computed Key Object Mutated Later.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"[object Object]":[42]}

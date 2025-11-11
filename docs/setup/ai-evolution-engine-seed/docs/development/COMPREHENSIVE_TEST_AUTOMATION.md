@@ -15,7 +15,7 @@ source_file: COMPREHENSIVE_TEST_AUTOMATION.md
 @lastModified 2025-07-14
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Comprehensive test automation framework implementation
   - AI-powered test analysis and GitHub integration
 
@@ -52,7 +52,7 @@ The AI Evolution Engine repository now includes a comprehensive test automation 
 
 #### 1. Enhanced Test Runner (`tests/run_tests.sh`)
 - **Purpose**: Fixed and enhanced version of the original test runner
-- **Features**: 
+- **Features**:
   - Corrected find command syntax issues
   - Improved test discovery across categories
   - Better error handling and reporting
@@ -91,7 +91,7 @@ The framework supports multiple test categories:
 
 ### Unit Tests (`tests/unit/`)
 - **Purpose**: Fast, isolated tests for individual components
-- **Examples**: 
+- **Examples**:
   - `test_project_structure.sh`
   - `test_framework_validation.sh`
   - `test_ai_evolver.sh`

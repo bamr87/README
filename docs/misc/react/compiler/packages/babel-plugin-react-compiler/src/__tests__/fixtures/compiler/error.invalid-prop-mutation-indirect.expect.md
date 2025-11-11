@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-prop-mutation-indirect.expect.md
 ---
+# Error.Invalid Prop Mutation Indirect.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.invalid-prop-mutation-indirect.ts:3:4
   5 |   const g = () => {
   6 |     f();
 ```
-          
-      
+

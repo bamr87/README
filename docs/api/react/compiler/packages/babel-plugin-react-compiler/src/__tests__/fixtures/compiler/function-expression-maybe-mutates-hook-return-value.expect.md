@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: function-expression-maybe-mutates-hook-return-value.expect.md
 ---
+# Function Expression Maybe Mutates Hook Return Value.Expect
+
 ## Input
 
 ```javascript
@@ -48,4 +50,3 @@ function Component(props) {
 }
 
 ```
-      

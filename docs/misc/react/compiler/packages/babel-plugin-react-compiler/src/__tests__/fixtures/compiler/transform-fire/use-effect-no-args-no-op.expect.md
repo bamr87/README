@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: use-effect-no-args-no-op.expect.md
 ---
+# Use Effect No Args No Op.Expect
+
 ## Input
 
 ```javascript
@@ -32,6 +34,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

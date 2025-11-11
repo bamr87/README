@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-mutate-3.expect.md
 ---
+# Capturing Func Mutate 3.Expect
+
 ## Input
 
 ```javascript
@@ -52,4 +54,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

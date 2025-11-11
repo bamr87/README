@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.sketchy-code-rules-of-hooks.expect.md
 ---
+# Error.Sketchy Code Rules Of Hooks.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.sketchy-code-rules-of-hooks.ts:1:0
   3 |   const x = [];
   4 |   return <div>{x}</div>;
 ```
-          
-      
+

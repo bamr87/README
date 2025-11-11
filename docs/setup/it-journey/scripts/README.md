@@ -53,7 +53,7 @@ python3 scripts/link-checker.py --scope website --create-issue --repository bamr
 
 # Check specific content types
 python3 scripts/link-checker.py --scope posts
-python3 scripts/link-checker.py --scope quests  
+python3 scripts/link-checker.py --scope quests
 python3 scripts/link-checker.py --scope docs
 ```
 

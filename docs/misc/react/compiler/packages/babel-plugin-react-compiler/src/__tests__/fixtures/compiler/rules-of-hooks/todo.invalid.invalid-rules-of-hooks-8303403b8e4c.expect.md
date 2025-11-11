@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.invalid.invalid-rules-of-hooks-8303403b8e4c.expect.md
 ---
+# Todo.Invalid.Invalid Rules Of Hooks 8303403B8E4C.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ class ClassComponentWithHook extends React.Component {
 }
 
 ```
-      

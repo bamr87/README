@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-69521d94fa03.expect.md
 ---
+# Rules Of Hooks 69521D94Fa03.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function App(props) {
 }
 
 ```
-      

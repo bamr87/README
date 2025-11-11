@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-member-expression-single.expect.md
 ---
+# Optional Member Expression Single.Expect
+
 ## Input
 
 ```javascript
@@ -88,7 +90,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[2],"output":[2]}</div>
 <div>{"inputs":[2],"output":[2]}</div>

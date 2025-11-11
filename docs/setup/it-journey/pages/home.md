@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: home.md
 ---
+# Home
+
 Go to [bookmark]({{ page.bookmark }})
 
 ## 🚀 What to Build Today?
@@ -82,7 +84,7 @@ Experience learning through our **gamified quest system** that transforms techni
 #### **Quest Progression Levels**
 
 1. **n00b (000)** - Complete beginners starting their IT journey
-2. **Beginner (001)** - Basic concepts and foundational skills  
+2. **Beginner (001)** - Basic concepts and foundational skills
 3. **Intermediate (010)** - Building practical applications
 4. **Advanced (011)** - Complex systems and architectures
 5. **Expert (100)** - Specialized domain mastery
@@ -93,7 +95,7 @@ Experience learning through our **gamified quest system** that transforms techni
 #### **Main Quest Lines**
 
 - **🌟 Initialization World** - Character creation, tool setup, fundamental concepts
-- **⚔️ Development Mastery** - Programming languages, frameworks, and best practices  
+- **⚔️ Development Mastery** - Programming languages, frameworks, and best practices
 - **🛡️ System Administration** - Infrastructure, networking, and operations
 - **🏰 DevOps & Deployment** - CI/CD, containerization, and cloud platforms
 - **🔮 AI Integration** - Machine learning, automation, and AI-assisted development
@@ -185,7 +187,7 @@ This is a fixed navigation bar that is always visible at the top of the page. It
 - **[Quick-Start](/quickstart/)** - Fast-track tutorials and essential setup guides
 - **[Journey](/posts/)** - Learning posts, quests, and pages documenting your adventure
 - **[Library](/docs/)** - Comprehensive documentation and technical guides
-- **[Notebook](/notes/)** - Personal notes and Jupyter notebook experiments  
+- **[Notebook](/notes/)** - Personal notes and Jupyter notebook experiments
 - **[About](/about/)** - Platform information, configuration, and community resources
 
 #### Sidebar Navigation
@@ -193,7 +195,7 @@ This is a fixed navigation bar that is always visible at the top of the page. It
 The sidebar navigation is a vertical bar that is always visible on the left side of the page. It is automatically generated based on the navigation YAML files under `_data/navigation/` directory, with individual files for each section:
 
 - `main.yml` - Primary navigation structure
-- `home.yml` - Home page specific navigation  
+- `home.yml` - Home page specific navigation
 - `posts.yml` - Journal and quest navigation
 - `docs.yml` - Documentation library organization
 - `about.yml` - About section and configuration pages

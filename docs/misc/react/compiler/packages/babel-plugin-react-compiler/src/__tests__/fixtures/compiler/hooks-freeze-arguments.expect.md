@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hooks-freeze-arguments.expect.md
 ---
+# Hooks Freeze Arguments.Expect
+
 ## Input
 
 ```javascript
@@ -46,4 +48,3 @@ function useFreeze(x) {}
 function call(x) {}
 
 ```
-      

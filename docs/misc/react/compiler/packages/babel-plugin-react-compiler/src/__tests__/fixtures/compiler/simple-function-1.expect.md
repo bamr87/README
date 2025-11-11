@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: simple-function-1.expect.md
 ---
+# Simple Function 1.Expect
+
 ## Input
 
 ```javascript
@@ -42,6 +44,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=1 ]]"

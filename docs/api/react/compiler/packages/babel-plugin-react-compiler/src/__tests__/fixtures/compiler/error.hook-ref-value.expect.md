@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.hook-ref-value.expect.md
 ---
+# Error.Hook Ref Value.Expect
+
 ## Input
 
 ```javascript
@@ -56,5 +58,4 @@ error.hook-ref-value.ts:5:23
   7 |
   8 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

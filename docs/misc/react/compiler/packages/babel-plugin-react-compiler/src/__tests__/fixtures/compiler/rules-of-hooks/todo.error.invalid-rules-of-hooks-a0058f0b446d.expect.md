@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: todo.error.invalid-rules-of-hooks-a0058f0b446d.expect.md
 ---
+# Todo.Error.Invalid Rules Of Hooks A0058F0B446D.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ todo.error.invalid-rules-of-hooks-a0058f0b446d.ts:8:4
   10 | }
   11 |
 ```
-          
-      
+

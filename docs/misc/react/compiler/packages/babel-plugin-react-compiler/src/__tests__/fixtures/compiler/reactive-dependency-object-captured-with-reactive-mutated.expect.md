@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactive-dependency-object-captured-with-reactive-mutated.expect.md
 ---
+# Reactive Dependency Object Captured With Reactive Mutated.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{}]

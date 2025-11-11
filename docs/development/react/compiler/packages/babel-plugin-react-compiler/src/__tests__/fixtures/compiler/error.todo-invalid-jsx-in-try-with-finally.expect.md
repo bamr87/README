@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-invalid-jsx-in-try-with-finally.expect.md
 ---
+# Error.Todo Invalid Jsx In Try With Finally.Expect
+
 ## Input
 
 ```javascript
@@ -48,5 +50,4 @@ error.todo-invalid-jsx-in-try-with-finally.ts:4:2
   10 | }
   11 |
 ```
-          
-      
+

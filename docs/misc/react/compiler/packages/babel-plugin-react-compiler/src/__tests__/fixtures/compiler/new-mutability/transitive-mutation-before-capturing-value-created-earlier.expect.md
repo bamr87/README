@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitive-mutation-before-capturing-value-created-earlier.expect.md
 ---
+# Transitive Mutation Before Capturing Value Created Earlier.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-uncond-access-hoisted.expect.md
 ---
+# Infer Function Uncond Access Hoisted.Expect
+
 ## Input
 
 ```javascript
@@ -53,7 +55,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[ (exception in render) TypeError: Cannot read properties of null (reading 'b') ]]
 <div>{"fn":{"kind":"Function","result":4},"shouldInvokeFns":true}</div>

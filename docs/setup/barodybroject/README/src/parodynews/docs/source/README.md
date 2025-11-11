@@ -57,7 +57,7 @@ autodoc_default_options = {
 
 Documentation features:
 - **Auto-Documentation**: Automatic API documentation generation from Python docstrings
-- **Custom Themes**: Configurable themes for professional documentation appearance  
+- **Custom Themes**: Configurable themes for professional documentation appearance
 - **Cross-References**: Internal and external documentation linking
 - **Code Examples**: Syntax-highlighted code samples and examples
 - **Multiple Formats**: Support for HTML, PDF, and ePub output formats

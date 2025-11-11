@@ -655,12 +655,12 @@ For more information about QuickSight, see What Is Amazon QuickSight?
 ![Scores](/assets/images/aws-cloud-pract-practice-test-domain.png)
 
 # AWS Certified Developer - Associate
- 
+
 ## 1.3 Prepare the application deployment package to be deployed to AWS.
 
 1/20
 0.0% complete
- 
+
 A developer is preparing a deployment package for a Java implementation of an AWS Lambda function.
 
 What should the developer include in the deployment package? (Select TWO.)
@@ -719,14 +719,14 @@ AE
 
 
 
- 
+
 1.3 Prepare the application deployment package to be deployed to AWS.
  This Question: 00:33
  Total: 01:31
 
 2/20
 5.0% complete
- 
+
 A developer uses AWS CodeDeploy to deploy a Python application to a fleet of Amazon EC2 instances that run behind an Application Load Balancer. The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones.
 
 What should the developer include in the CodeDeploy deployment package?
@@ -777,14 +777,14 @@ B
 
 
 
- 
+
 1.4 Deploy serverless applications.
  This Question: 01:49
  Total: 03:20
 
 3/20
 10.0% complete
- 
+
 A company is working on a project to enhance its serverless application development process. The company hosts applications on AWS Lambda. The development team regularly updates the Lambda code and wants to use stable code in production.
 
 Which combination of steps should the development team take to configure Lambda functions to meet both development and production requirements? (Select TWO.)
@@ -845,14 +845,14 @@ AB
 
 
 
- 
+
 1.4 Deploy serverless applications.
  This Question: 01:08
  Total: 04:29
 
 4/20
 15.0% complete
- 
+
 Each time a developer publishes a new version of an AWS Lambda function, all the dependent event source mappings need to be updated with the reference to the new version’s Amazon Resource Name (ARN). These updates are time consuming and error-prone.
 
 Which combination of actions should the developer take to avoid performing these updates when publishing a new Lambda version? (Select TWO.)
@@ -911,14 +911,14 @@ BE
 
 
 
- 
+
 2.1 Make authenticated calls to AWS services.
  This Question: 00:23
  Total: 04:53
 
 5/20
 20.0% complete
- 
+
 An application that runs on Amazon EC2 instances needs credentials to make an API call to Amazon DynamoDB.
 
 What is the MOST secure method to provide credentials to perform the call?
@@ -965,14 +965,14 @@ C
 
 
 
- 
+
 2.2 Implement encryption using AWS services.
  This Question: 01:17
  Total: 06:10
 
 6/20
 25.0% complete
- 
+
 A company wants to store sensitive user data in Amazon S3 and encrypt this data at rest. The company must manage the encryption keys and use Amazon S3 to perform the encryption.
 
 How can a developer meet these requirements?
@@ -1017,14 +1017,14 @@ D
 
 
 
- 
+
 2.2 Implement encryption using AWS services.
  This Question: 01:29
  Total: 07:40
 
 7/20
 30.0% complete
- 
+
 A company is developing a Python application that submits data to an Amazon DynamoDB table. The company requires client-side encryption of specific data items and end-to-end protection for the encrypted data in transit and at rest.
 
 Which combination of steps will meet the requirement for the encryption of specific data items? (Select TWO.)
@@ -1091,14 +1091,14 @@ AC
 
 
 
- 
+
 2.3 Implement application authentication and authorization.
  This Question: 02:14
  Total: 09:54
 
 8/20
 35.0% complete
- 
+
 A company is developing a REST API with Amazon API Gateway. Access to the API should be limited to users in the existing Amazon Cognito user pool.
 
 Which combination of steps should a developer perform to secure the API? (Select TWO.)
@@ -1156,14 +1156,14 @@ BD
 
 
 
- 
+
 2.3 Implement application authentication and authorization.
  This Question: 01:12
  Total: 11:07
 
 9/20
 40.0% complete
- 
+
 A developer is implementing a mobile app to provide personalized services to app users. The application code makes calls to Amazon S3 and Amazon Simple Queue Service (Amazon SQS).
 
 Which options can the developer use to authenticate the app users? (Select TWO.)
@@ -1217,14 +1217,14 @@ CE
 
 
 
- 
+
 3.1 Write code for serverless applications.
  This Question: 01:15
  Total: 12:22
 
 10/20
 45.0% complete
- 
+
 A company is implementing several order processing workflows. Each workflow is implemented by using AWS Lambda functions for each task.
 
 Which combination of steps should a developer follow to implement these workflows? (Select TWO.)
@@ -1284,14 +1284,14 @@ AD
 
 
 
- 
+
 3.2 Translate functional requirements into application design.
  This Question: 01:08
  Total: 13:26
 
 11/20
 50.0% complete
- 
+
 A company is migrating a web service to the AWS Cloud. The web service accepts requests by using HTTP (port 80). The company wants to use an AWS Lambda function to process HTTP requests.
 
 Which application design will satisfy these requirements?
@@ -1338,14 +1338,14 @@ D
 
 
 
- 
+
 3.2 Translate functional requirements into application design.
  This Question: 01:00
  Total: 14:27
 
 12/20
 55.0% complete
- 
+
 A company is developing an image processing application. When an image is uploaded to an Amazon S3 bucket, a number of independent and separate services must be invoked to process the image. The services do not have to be available immediately, but they must process every image.
 
 Which application design satisfies these requirements?
@@ -1391,14 +1391,14 @@ D
 
 
 
- 
+
 3.3 Implement application design into application code.
  This Question: 00:53
  Total: 15:20
 
 13/20
 60.0% complete
- 
+
 A developer wants to implement Amazon EC2 Auto Scaling for a Multi-AZ web application. However, the developer is concerned that user sessions will be lost during scale-in events.
 
 How can the developer store the session state and share it across the EC2 instances?
@@ -1444,14 +1444,14 @@ C
 
 
 
- 
+
 3.3 Implement application design into application code.
  This Question: 00:44
  Total: 16:04
 
 14/20
 65.0% complete
- 
+
 A developer is writing a component that will read customer orders from an Amazon Simple Queue Service (Amazon SQS) queue and process them. The developer wants to reduce empty responses to the ReceiveMessage call and obtain a customer order message as soon as it is available.
 
 What should the developer do when writing code to retrieve messages from the queue?
@@ -1499,14 +1499,14 @@ B
 
 
 
- 
+
 3.4 Write code that interacts with AWS services by using APIs, SDKs, and AWS CLI.
  This Question: 01:17
  Total: 17:22
 
 15/20
 70.0% complete
- 
+
 A developer is integrating a legacy web application that runs on a fleet of Amazon EC2 instances with an Amazon DynamoDB table. There is no AWS SDK for the programming language that was used to implement the web application.
 
 Which combination of steps should the developer perform to make an API call to Amazon DynamoDB from the instances? (Select TWO.)
@@ -1559,14 +1559,14 @@ BC
 
 
 
- 
+
 4.1 Optimize applications to best use AWS services and features
  This Question: 03:14
  Total: 20:36
 
 16/20
 75.0% complete
- 
+
 A developer has written several custom applications that read and write to the same Amazon DynamoDB table. Each time the data in the DynamoDB table is modified, this change should be sent to an external API.
 
 Which combination of steps should the developer perform to accomplish this task? (Select TWO.)
@@ -1624,14 +1624,14 @@ AE
 
 
 
- 
+
 4.2 Migrate existing application code to run on AWS.
  This Question: 01:13
  Total: 21:50
 
 17/20
 80.0% complete
- 
+
 A company is migrating the create, read, update, and delete (CRUD) functionality of an existing Java web application to AWS Lambda.
 
 Which minimal code refactoring is necessary for the CRUD operations to run in the Lambda function?
@@ -1681,14 +1681,14 @@ A
 
 
 
- 
+
 5.1 Write code that can be monitored.
  This Question: 00:36
  Total: 22:26
 
 18/20
 85.0% complete
- 
+
 A company plans to use AWS log monitoring services to monitor an application that runs on premises. Currently, the application runs on a recent version of Ubuntu Server and outputs the logs to a local file.
 
 Which combination of steps should a developer perform to accomplish this goal? (Select TWO.)
@@ -1742,14 +1742,14 @@ CD
 
 
 
- 
+
 5.1 Write code that can be monitored.
  This Question: 01:13
  Total: 23:40
 
 19/20
 90.0% complete
- 
+
 A developer wants to monitor invocations of an AWS Lambda function by using Amazon CloudWatch Logs. The developer added a number of print statements to the function code that write the logging information to the stdout stream. After running the function, the developer does not see any log data being generated.
 
 Why does the log data NOT appear in the CloudWatch logs?
@@ -1797,14 +1797,14 @@ C
 
 
 
- 
+
 5.2 Perform root cause analysis on faults found in testing or production.
  This Question: 00:29
  Total: 24:10
 
 20/20
 95.0% complete
- 
+
 A company notices performance degradation in one of its production web applications. The application is running on AWS services and uses a microservices architecture. The company suspects that one of these microservices is causing the performance issue.
 
 Which AWS solution should the company use to identify the service that is contributing to higher application latency?
@@ -1847,16 +1847,16 @@ Incorrect. Trusted Advisor provides real-time guidance to help provision AWS res
 For more information about Trusted Advisor, see AWS Trusted Advisor.
 
 
- 
-# AWS 
- 
+
+# AWS
+
 1.1 Design a multi-tier architecture solution
  This Question: 01:42
  Total: 01:42
 
 1/20
 0.0% complete
- 
+
 A solutions architect is designing a solution to run a containerized web application by using Amazon Elastic Container Service (Amazon ECS). The solutions architect wants to minimize cost by running multiple copies of a task on each container instance. The number of task copies must scale as the load increases and decreases.
 
 Which routing solution distributes the load to the multiple tasks?
@@ -1902,14 +1902,14 @@ B
 
 
 
- 
+
 1.1 Design a multi-tier architecture solution
  This Question: 01:45
  Total: 03:28
 
 2/20
 5.0% complete
- 
+
 The usage of a company's image-processing application is increasing suddenly with no set pattern. The application's processing time grows linearly with the size of the image. The processing can take up to 20 minutes for large image files.
 
 The architecture consists of a web tier, an Amazon Simple Queue Service (Amazon SQS) standard queue, and message consumers that process the images on Amazon EC2 instances. When a high volume of requests occurs, the message backlog in Amazon SQS increases. Users are reporting the delays in processing. A solutions architect must improve the performance of the application in compliance with cloud best practices.
@@ -1960,7 +1960,7 @@ For more information about the use of Amazon EC2 Auto Scaling with Amazon SQS, s
 
 3/20
 10.0% complete
- 
+
 An application runs on two Amazon EC2 instances behind a Network Load Balancer. The EC2 instances are in a single Availability Zone.
 
 What should a solutions architect do to make this architecture more highly available?
@@ -2006,14 +2006,14 @@ D
 
 
 
- 
+
 1.4 Choose appropriate resilient storage
  This Question: 00:56
  Total: 05:17
 
 4/20
 15.0% complete
- 
+
 A company is using an Amazon S3 bucket to store legal documents. The company frequently revises the documents and re-uploads them with the same object key to the S3 bucket. The company needs the ability to download older copies of the documents. The company also needs to protect the documents from accidental deletion.
 
 What is the MOST operationally efficient solution that meets these requirements?
@@ -2059,14 +2059,14 @@ A
 
 
 
- 
+
 2.1 Identify elastic and scalable compute solutions for a workload
  This Question: 00:50
  Total: 06:07
 
 5/20
 20.0% complete
- 
+
 A reporting application runs on Amazon EC2 instances behind an Application Load Balancer. The instances run in an Amazon EC2 Auto Scaling group across multiple Availability Zones. For complex reports, the application can take up to 15 minutes to respond to a request. A solutions architect is concerned that users will receive HTTP 5xx errors if a report request is in process during a scale-in event.
 
 What should the solutions architect do to ensure that user requests will be completed before instances are terminated?
@@ -2112,14 +2112,14 @@ D
 
 
 
- 
+
 2.1 Identify elastic and scalable compute solutions for a workload
  This Question: 00:39
  Total: 06:47
 
 6/20
 25.0% complete
- 
+
 A company used Amazon EC2 Spot Instances for a demonstration that is now complete. A solutions architect must remove the Spot Instances to stop them from incurring cost.
 
 What should the solutions architect do to meet this requirement?
@@ -2165,14 +2165,14 @@ C
 
 
 
- 
+
 2.1 Identify elastic and scalable compute solutions for a workload
  This Question: 00:41
  Total: 07:28
 
 7/20
 30.0% complete
- 
+
 A company needs to look up configuration details about how a Linux-based Amazon EC2 instance was launched.
 
 Which command should a solutions architect run on the EC2 instance to gather the system metadata?
@@ -2218,14 +2218,14 @@ A
 
 
 
- 
+
 2.2 Select high-performing and scalable storage solutions for a workload
  This Question: 01:00
  Total: 08:29
 
 8/20
 35.0% complete
- 
+
 A company has an on-premises application that exports log files about users of a website. These log files range from 20 GB to 30 GB in size. A solutions architect has created an Amazon S3 bucket to store these files. The files will be uploaded directly from the application. The network connection experiences intermittent failures, and the upload sometimes fails.
 
 A solutions architect must design a solution that resolves this problem. The solution must minimize operational overhead.
@@ -2273,14 +2273,14 @@ C
 
 
 
- 
+
 2.2 Select high-performing and scalable storage solutions for a workload
  This Question: 00:27
  Total: 08:56
 
 9/20
 40.0% complete
- 
+
 A company is deploying a new database on a new Amazon EC2 instance. The workload of this database requires a single Amazon Elastic Block Store (Amazon EBS) volume that can support up to 20,000 IOPS.
 
 Which type of EBS volume meets this requirement?
@@ -2326,14 +2326,14 @@ B
 
 
 
- 
+
 2.3 Select high-performing networking solutions for a workload
  This Question: 00:29
  Total: 09:26
 
 10/20
 45.0% complete
- 
+
 Which components are required to build a site-to-site VPN connection on AWS? (Select TWO.)
 
 Report Content Errors
@@ -2387,14 +2387,14 @@ CE
 
 
 
- 
+
 2.4 Choose high-performing database solutions for a workload
  This Question: 00:35
  Total: 10:02
 
 11/20
 50.0% complete
- 
+
 A company is developing a chat application that will be deployed on AWS. The application stores the messages by using a key-value data model. Groups of users typically read the messages multiple times. A solutions architect must select a database solution that will scale for a high rate of reads and will deliver messages with microsecond latency.
 
 Which database solution will meet these requirements?
@@ -2444,14 +2444,14 @@ B
 
 
 
- 
+
 3.1 Design secure access to AWS resources
  This Question: 00:57
  Total: 11:00
 
 12/20
 55.0% complete
- 
+
 A company uses one AWS account to run production workloads. The company has a separate AWS account for its security team. During periodic audits, the security team needs to view specific account settings and resource configurations in the AWS account that runs production workloads. A solutions architect must provide the required access to the security team by designing a solution that follows AWS security best practices.
 
 Which solution will meet these requirements?
@@ -2497,14 +2497,14 @@ B
 
 
 
- 
+
 3.1 Design secure access to AWS resources
  This Question: 00:31
  Total: 11:31
 
 13/20
 60.0% complete
- 
+
 A company is developing a new mobile version of its popular web application in the AWS Cloud. The mobile app must be accessible to internal and external users. The mobile app must handle authorization, authentication, and user management from one central source.
 
 Which solution meets these requirements?
@@ -2552,14 +2552,14 @@ C
 
 
 
- 
+
 3.2 Design secure application tiers
  This Question: 00:58
  Total: 12:29
 
 14/20
 65.0% complete
- 
+
 A company has strict data protection requirements. A solutions architect must configure security for a VPC to ensure that backend Amazon RDS DB instances cannot be accessed from the internet. The solutions architect must ensure that the DB instances are accessible from the application tier over a specified port only.
 
 Which actions should the solutions architect take to meet these requirements? (Select TWO.)
@@ -2613,14 +2613,14 @@ AE
 
 
 
- 
+
 3.3 Select appropriate data security options
  This Question: 01:00
  Total: 13:30
 
 15/20
 70.0% complete
- 
+
 A company runs its website on Amazon EC2 instances behind an Application Load Balancer that is configured as the origin for an Amazon CloudFront distribution. The company wants to protect against cross-site scripting and SQL injection attacks.
 
 Which approach should a solutions architect recommend to meet these requirements?
@@ -2666,14 +2666,14 @@ C
 
 
 
- 
+
 4.1 Identify cost-effective storage solutions
  This Question: 01:19
  Total: 14:50
 
 16/20
 75.0% complete
- 
+
 A solutions architect is planning a company's migration to the AWS Cloud. A key component of the company's environment is an application server that sends email notifications to customers. As part of this migration, the solutions architect must use only managed AWS services.
 
 Which solution meets these requirements?
@@ -2719,14 +2719,14 @@ D
 
 
 
- 
+
 4.1 Identify cost-effective storage solutions
  This Question: 00:42
  Total: 15:32
 
 17/20
 80.0% complete
- 
+
 A company needs to maintain data records for a minimum of 5 years. The data is rarely accessed after it is stored. The data must be accessible within 2 hours.
 
 Which solution will meet these requirements MOST cost-effectively?
@@ -2774,14 +2774,14 @@ B
 
 
 
- 
+
 4.1 Identify cost-effective storage solutions
  This Question: 00:42
  Total: 16:15
 
 18/20
 85.0% complete
- 
+
 A media company is designing a new solution for graphic rendering. The application requires up to 400 GB of storage for temporary data that is discarded after the frames are rendered. The application requires approximately 40,000 random IOPS to perform the rendering.
 
 What is the MOST cost-effective storage option for this rendering application?
@@ -2829,14 +2829,14 @@ A
 
 
 
- 
+
 4.2 Identify cost-effective compute and database services
  This Question: 01:00
  Total: 17:15
 
 19/20
 90.0% complete
- 
+
 A company is deploying a new application that will consist of an application layer and an online transaction processing (OLTP) relational database. The application must be available at all times. However, the application will have periods of inactivity. The company wants to pay the minimum for compute costs during these idle periods.
 
 Which solution meets these requirements MOST cost-effectively?

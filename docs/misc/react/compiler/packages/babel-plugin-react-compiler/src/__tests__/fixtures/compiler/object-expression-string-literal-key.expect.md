@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-string-literal-key.expect.md
 ---
+# Object Expression String Literal Key.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +49,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

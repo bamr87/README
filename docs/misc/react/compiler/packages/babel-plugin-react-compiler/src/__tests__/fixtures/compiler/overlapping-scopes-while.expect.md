@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: overlapping-scopes-while.expect.md
 ---
+# Overlapping Scopes While.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-df4d750736f3.expect.md
 ---
+# Rules Of Hooks Df4D750736F3.Expect
+
 ## Input
 
 ```javascript
@@ -31,4 +33,3 @@ use_hook();
 jest.useFakeTimer();
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassign-primitive-in-context.expect.md
 ---
+# Reassign Primitive In Context.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-reassign-to-variable-without-mutable-range.expect.md
 ---
+# Repro Reassign To Variable Without Mutable Range.Expect
+
 ## Input
 
 ```javascript
@@ -80,4 +82,3 @@ function Component(a, b) {
 }
 
 ```
-      

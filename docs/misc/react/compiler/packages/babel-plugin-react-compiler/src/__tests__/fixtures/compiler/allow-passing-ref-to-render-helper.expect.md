@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-passing-ref-to-render-helper.expect.md
 ---
+# Allow Passing Ref To Render Helper.Expect
+
 ## Input
 
 ```javascript
@@ -51,6 +53,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.false-positive-useMemo-infer-mutate-deps.expect.md
 ---
+# Error.False Positive Usememo Infer Mutate Deps.Expect
+
 ## Input
 
 ```javascript
@@ -51,5 +53,4 @@ error.false-positive-useMemo-infer-mutate-deps.ts:14:6
   16 |
   17 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

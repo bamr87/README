@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: issue_detail_template.md
 ---
+# Issue Detail Template
+
 ## Summary
 Provide a brief summary of the issue.
 

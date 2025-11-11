@@ -5,7 +5,6 @@ tags:
 - python
 - api
 - testing
-- api
 last_updated: null
 source_file: 2025-01-27-fixing-github-actions-link-checker-keyerror.md
 ---
@@ -70,14 +69,14 @@ for file_path, errors in error_map.items():
         error_msg = ''
         if 'status' in error:
             if isinstance(error['status'], dict):
-                error_msg = error['status'].get('details', 
-                           error['status'].get('message', 
+                error_msg = error['status'].get('details',
+                           error['status'].get('message',
                            str(error['status'])))
             else:
                 error_msg = str(error['status'])
         else:
             error_msg = error.get('message', 'Unknown error')
-        
+
         results.append({
             'url': error['url'],
             'status': 'Failed',
@@ -130,7 +129,7 @@ except Exception as e:
     # Create minimal output so the workflow doesn't completely fail
     with open('analysis_summary.txt', 'w') as f:
         f.write("BROKEN_COUNT=0\n")
-        f.write("TOTAL_COUNT=0\n") 
+        f.write("TOTAL_COUNT=0\n")
         f.write("SUCCESS_RATE=0\n")
     sys.exit(1)
 ```

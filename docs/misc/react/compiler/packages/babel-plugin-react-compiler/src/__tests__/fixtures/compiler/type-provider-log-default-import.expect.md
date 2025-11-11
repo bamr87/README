@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-provider-log-default-import.expect.md
 ---
+# Type Provider Log Default Import.Expect
+
 ## Input
 
 ```javascript
@@ -138,7 +140,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[0],"output":{"a":0}}</div><div>{"inputs":[0],"output":{"b":0}}</div>
 <div>{"inputs":[1],"output":{"a":1}}</div><div>{"inputs":[0],"output":{"b":0}}</div>

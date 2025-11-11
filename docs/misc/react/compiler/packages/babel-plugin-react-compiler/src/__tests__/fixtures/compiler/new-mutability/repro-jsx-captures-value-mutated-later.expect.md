@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-jsx-captures-value-mutated-later.expect.md
 ---
+# Repro Jsx Captures Value Mutated Later.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ function Example() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

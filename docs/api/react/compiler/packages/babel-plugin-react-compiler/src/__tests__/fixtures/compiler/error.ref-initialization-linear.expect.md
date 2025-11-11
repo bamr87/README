@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.ref-initialization-linear.expect.md
 ---
+# Error.Ref Initialization Linear.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ React refs are values that are not needed for rendering. Refs should only be acc
   10 | }
   11 |
 ```
-          
-      
+

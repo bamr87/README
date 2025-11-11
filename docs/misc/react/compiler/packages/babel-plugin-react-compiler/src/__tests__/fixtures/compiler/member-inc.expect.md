@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: member-inc.expect.md
 ---
+# Member Inc.Expect
+
 ## Input
 
 ```javascript
@@ -64,7 +66,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: [2,2,3,3,4,'5','5',6]

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.hoist-optional-member-expression-with-conditional.expect.md
 ---
+# Error.Hoist Optional Member Expression With Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -60,5 +62,4 @@ error.hoist-optional-member-expression-with-conditional.ts:4:23
   13 |     <ValidateMemoization inputs={[props?.items, props.cond]} output={data} />
   14 |   );
 ```
-          
-      
+

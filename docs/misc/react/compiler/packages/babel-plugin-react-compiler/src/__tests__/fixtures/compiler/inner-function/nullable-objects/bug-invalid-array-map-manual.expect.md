@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bug-invalid-array-map-manual.expect.md
 ---
+# Bug Invalid Array Map Manual.Expect
+
 ## Input
 
 ```javascript
@@ -72,4 +74,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

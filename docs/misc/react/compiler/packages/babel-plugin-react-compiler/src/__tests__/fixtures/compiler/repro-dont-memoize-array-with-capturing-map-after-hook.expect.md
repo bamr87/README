@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-dont-memoize-array-with-capturing-map-after-hook.expect.md
 ---
+# Repro Dont Memoize Array With Capturing Map After Hook.Expect
+
 ## Input
 
 ```javascript
@@ -93,6 +95,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><span>Hello!</span></div>

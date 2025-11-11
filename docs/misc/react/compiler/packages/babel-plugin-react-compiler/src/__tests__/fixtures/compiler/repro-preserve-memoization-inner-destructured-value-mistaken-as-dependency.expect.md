@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-preserve-memoization-inner-destructured-value-mistaken-as-dependency.expect.md
 ---
+# Repro Preserve Memoization Inner Destructured Value Mistaken As Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -111,6 +113,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":42}</div>

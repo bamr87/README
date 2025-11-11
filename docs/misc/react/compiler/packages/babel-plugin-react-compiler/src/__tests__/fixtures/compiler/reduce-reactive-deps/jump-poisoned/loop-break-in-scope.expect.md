@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: loop-break-in-scope.expect.md
 ---
+# Loop Break In Scope.Expect
+
 ## Input
 
 ```javascript
@@ -75,7 +77,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) []
 [2,2,2,2,2]

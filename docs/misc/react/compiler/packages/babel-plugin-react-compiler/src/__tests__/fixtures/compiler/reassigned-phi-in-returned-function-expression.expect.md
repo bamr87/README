@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassigned-phi-in-returned-function-expression.expect.md
 ---
+# Reassigned Phi In Returned Function Expression.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ function Component(props) {
 }
 
 ```
-      

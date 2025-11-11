@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: 2023-11-24-os-selection.md
 ---
+# 2023 11 24 Os Selection
+
 Choosing the right operating system (OS) is like selecting the right wand in the wizarding world – it's a very personal choice and can greatly influence your journey ahead. Let's delve into the key aspects of the major operating systems to help you make an informed decision:
 
 ### 1. **Windows**

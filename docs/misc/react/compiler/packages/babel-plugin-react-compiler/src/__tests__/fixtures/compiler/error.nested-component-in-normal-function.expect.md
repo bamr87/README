@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.nested-component-in-normal-function.expect.md
 ---
+# Error.Nested Component In Normal Function.Expect
+
 ## Input
 
 ```javascript
@@ -57,5 +59,4 @@ error.nested-component-in-normal-function.ts:3:8
   5 |       a.onChange();
   6 |     };
 ```
-          
-      
+

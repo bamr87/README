@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: codegen-emit-imports-same-source.expect.md
 ---
+# Codegen Emit Imports Same Source.Expect
+
 ## Input
 
 ```javascript
@@ -43,4 +45,3 @@ function useFoo(props) {
 }
 
 ```
-      

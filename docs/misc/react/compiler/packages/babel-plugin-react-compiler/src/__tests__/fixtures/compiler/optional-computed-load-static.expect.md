@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: optional-computed-load-static.expect.md
 ---
+# Optional Computed Load Static.Expect
+
 ## Input
 
 ```javascript
@@ -25,4 +27,3 @@ function Component(props) {
 }
 
 ```
-      

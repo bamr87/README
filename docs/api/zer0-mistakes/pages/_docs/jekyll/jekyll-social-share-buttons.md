@@ -3,10 +3,11 @@ title: Jekyll Social Share Buttons
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: jekyll-social-share-buttons.md
 ---
+# Jekyll Social Share Buttons
+
 > Create share buttons for the most popular social medias.
 
 ## 1. Share Bar Widget

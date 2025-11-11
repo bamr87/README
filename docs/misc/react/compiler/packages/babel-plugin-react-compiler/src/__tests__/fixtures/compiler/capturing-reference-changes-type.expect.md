@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-reference-changes-type.expect.md
 ---
+# Capturing Reference Changes Type.Expect
+
 ## Input
 
 ```javascript
@@ -59,7 +61,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"wat0":"joe"}
 {"a":2,"wat0":"joe"}

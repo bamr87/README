@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-property-alias-if.expect.md
 ---
+# Ssa Property Alias If.Expect
+
 ## Input
 
 ```javascript
@@ -74,4 +76,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

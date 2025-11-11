@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-expression-computed-key-constant-string.expect.md
 ---
+# Object Expression Computed Key Constant String.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"KeyName":[42]}

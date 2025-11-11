@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-array-declaration-to-context-var.expect.md
 ---
+# Destructure Array Declaration To Context Var.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>42</div>

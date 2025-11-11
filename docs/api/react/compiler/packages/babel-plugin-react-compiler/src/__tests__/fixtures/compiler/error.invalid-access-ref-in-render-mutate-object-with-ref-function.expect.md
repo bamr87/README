@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md
 ---
+# Error.Invalid Access Ref In Render Mutate Object With Ref Function.Expect
+
 ## Input
 
 ```javascript
@@ -41,5 +43,4 @@ error.invalid-access-ref-in-render-mutate-object-with-ref-function.ts:7:19
    9 | }
   10 |
 ```
-          
-      
+

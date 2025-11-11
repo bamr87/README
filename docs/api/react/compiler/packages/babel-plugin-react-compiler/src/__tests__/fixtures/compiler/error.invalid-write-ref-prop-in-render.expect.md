@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-write-ref-prop-in-render.expect.md
 ---
+# Error.Invalid Write Ref Prop In Render.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.invalid-write-ref-prop-in-render.ts:4:2
   6 | }
   7 |
 ```
-          
-      
+

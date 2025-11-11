@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: repro-slow-validate-preserve-memo.expect.md
 ---
+# Repro Slow Validate Preserve Memo.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) ["hello world","1",2,3,{"a":4,"b":5,"c":"param"},6,"param",7,"8","8",null]

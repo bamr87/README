@@ -350,7 +350,7 @@ d run -it ubuntu  # Quick container launch
 // Add these settings to your VSCode settings.json
 {
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.shell.linux": "/bin/zsh", 
+  "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 14,

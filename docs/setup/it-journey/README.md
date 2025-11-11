@@ -26,7 +26,7 @@ The IT-Journey now features **Guardian 2.0**, a comprehensive testing framework 
 
 This system exemplifies modern DevOps practices including automated testing, AI integration, and proactive monitoring - serving as both a practical tool and educational example.
 
-**Get Started**: 
+**Get Started**:
 - **Setup**: [Guardian 2.0 Setup Guide](test/hyperlink-guardian/docs/setup.md)
 - **Usage**: [Guardian 2.0 Usage Guide](test/hyperlink-guardian/docs/usage.md)
 - **Quest**: [Hyperlink Guardian Quest](pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)
@@ -36,7 +36,7 @@ This system exemplifies modern DevOps practices including automated testing, AI 
 Whether you're a complete beginner or looking to enhance your existing skills, the IT-Journey provides structured learning paths:
 
 ### For Beginners
-1. **Start with Zero**: Follow our [Zero to Hero guide](zer0.md) 
+1. **Start with Zero**: Follow our [Zero to Hero guide](zer0.md)
 2. **Basic Quests**: Complete foundational [learning quests](pages/_quests/)
 3. **Hands-on Practice**: Work through [practical tutorials](pages/_posts/)
 

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: codegen-inline-iife-storeprop.expect.md
 ---
+# Codegen Inline Iife Storeprop.Expect
+
 ## Input
 
 ```javascript
@@ -61,6 +63,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42,42,2]

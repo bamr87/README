@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: error.invalid-type-provider-hook-name-not-typed-as-hook-namespace.expect.md
 ---
+# Error.Invalid Type Provider Hook Name Not Typed As Hook Namespace.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.invalid-type-provider-hook-name-not-typed-as-hook-namespace.ts:4:9
   5 | }
   6 |
 ```
-          
-      
+

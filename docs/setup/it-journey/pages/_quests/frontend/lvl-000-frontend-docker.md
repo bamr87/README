@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: lvl-000-frontend-docker.md
 ---
+# Lvl 000 Frontend Docker
+
 ## Intro
 
 As you begin your journey through the Frontend Forests, imagine Docker Desktop as your magical backpack. It's filled with everything you need to build, deploy, and run your mystical projects. The Terminal is your enchanted wand, allowing you to cast spells (commands) to interact with Docker spirits. By verifying the Docker installation, you ensure that your backpack and wand are in perfect condition, ready to assist you on your quest.

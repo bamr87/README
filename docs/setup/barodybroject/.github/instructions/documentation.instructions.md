@@ -246,9 +246,9 @@ Use backticks for inline code:
 ![Dashboard screenshot](./images/dashboard.png "User Dashboard")
 
 # HTML for advanced control
-<img src="./images/diagram.png" 
-     alt="System architecture diagram" 
-     width="600" 
+<img src="./images/diagram.png"
+     alt="System architecture diagram"
+     width="600"
      height="400" />
 ```
 
@@ -262,23 +262,23 @@ Use Google-style docstrings:
 def generate_article(topic: str, category: str, max_tokens: int = 1000) -> Dict[str, str]:
     """
     Generate a parody article using OpenAI API.
-    
+
     This function creates satirical news content based on the provided topic
     and category. It uses GPT-4 for generation and implements retry logic
     for reliability.
-    
+
     Args:
         topic: The main subject of the article
         category: Article category (politics, tech, sports, etc.)
         max_tokens: Maximum length of generated content (default: 1000)
-    
+
     Returns:
         Dictionary containing 'title' and 'content' keys with generated text
-    
+
     Raises:
         openai.OpenAIError: If API call fails after retries
         ValueError: If topic or category is invalid
-    
+
     Example:
         >>> result = generate_article('AI regulation', 'tech')
         >>> print(result['title'])
@@ -290,19 +290,19 @@ def generate_article(topic: str, category: str, max_tokens: int = 1000) -> Dict[
 class ArticleService:
     """
     Service for managing article operations.
-    
+
     This class handles article creation, retrieval, and AI-powered generation.
     It provides caching and error handling for reliable operation.
-    
+
     Attributes:
         cache_timeout: Number of seconds to cache results (default: 3600)
         max_retries: Maximum retry attempts for API calls (default: 3)
     """
-    
+
     def __init__(self, cache_timeout: int = 3600):
         """
         Initialize the article service.
-        
+
         Args:
             cache_timeout: Cache duration in seconds
         """
@@ -314,7 +314,7 @@ class ArticleService:
 ```javascript
 /**
  * Article management class for handling API interactions
- * 
+ *
  * @class
  * @example
  * const manager = new ArticleManager();
@@ -323,7 +323,7 @@ class ArticleService:
 class ArticleManager {
     /**
      * Create article manager instance
-     * 
+     *
      * @param {string} baseUrl - API base URL
      * @param {number} timeout - Request timeout in milliseconds
      */
@@ -331,16 +331,16 @@ class ArticleManager {
         this.baseUrl = baseUrl;
         this.timeout = timeout;
     }
-    
+
     /**
      * Fetch all published articles
-     * 
+     *
      * @param {Object} filters - Query filters
      * @param {string} filters.category - Filter by category
      * @param {number} filters.page - Page number for pagination
      * @returns {Promise<Array<Object>>} Array of article objects
      * @throws {Error} If API request fails
-     * 
+     *
      * @example
      * const articles = await manager.fetchAll({ category: 'tech', page: 1 });
      */
@@ -374,23 +374,23 @@ from drf_spectacular.utils import extend_schema, OpenApiParameter, OpenApiExampl
 class ArticleViewSet(viewsets.ModelViewSet):
     """
     API endpoint for managing parody news articles.
-    
+
     list:
     Return a list of all published articles.
-    
+
     retrieve:
     Return a specific article by slug.
-    
+
     create:
     Create a new article. Requires authentication.
-    
+
     update:
     Update an existing article. Requires authentication and ownership.
-    
+
     destroy:
     Delete an article. Requires authentication and ownership.
     """
-    
+
     @extend_schema(
         summary="Generate article using AI",
         description="Generate parody article content using OpenAI API based on provided prompt",
@@ -529,17 +529,17 @@ Context:
     <header>
         <h1>{{ article.title }}</h1>
         <p class="text-muted">
-            By {{ article.author.username }} | 
+            By {{ article.author.username }} |
             {{ article.published_at|date:"F d, Y" }} |
             {{ article.category|title }}
         </p>
     </header>
-    
+
     {# Main article content #}
     <div class="article-content">
         {{ article.content|linebreaks }}
     </div>
-    
+
     {# Display related articles #}
     {% if related_articles %}
     <aside class="related-articles">

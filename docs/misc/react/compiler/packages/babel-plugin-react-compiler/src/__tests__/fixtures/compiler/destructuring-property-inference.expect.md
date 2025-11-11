@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-property-inference.expect.md
 ---
+# Destructuring Property Inference.Expect
+
 ## Input
 
 ```javascript
@@ -49,4 +51,3 @@ function Component(props) {
 }
 
 ```
-      

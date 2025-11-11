@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: recursive-function-expression.expect.md
 ---
+# Recursive Function Expression.Expect
+
 ## Input
 
 ```javascript
@@ -84,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) null

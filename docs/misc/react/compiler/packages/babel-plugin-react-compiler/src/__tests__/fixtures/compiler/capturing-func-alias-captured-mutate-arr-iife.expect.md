@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-func-alias-captured-mutate-arr-iife.expect.md
 ---
+# Capturing Func Alias Captured Mutate Arr Iife.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"bar":"bar","wat0":"joe"}

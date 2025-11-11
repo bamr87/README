@@ -292,10 +292,10 @@ from typing import List, Dict
 def function_name(param: str) -> bool:
     """
     Function description.
-    
+
     Args:
         param: Parameter description
-        
+
     Returns:
         Return value description
     """
@@ -534,22 +534,22 @@ We strive for:
 
 ### Do's
 
-✅ Write clear, descriptive commit messages  
-✅ Test thoroughly before submitting PR  
-✅ Update documentation with code changes  
-✅ Respond promptly to review feedback  
-✅ Keep PRs focused and reasonably sized  
-✅ Follow established conventions  
+✅ Write clear, descriptive commit messages
+✅ Test thoroughly before submitting PR
+✅ Update documentation with code changes
+✅ Respond promptly to review feedback
+✅ Keep PRs focused and reasonably sized
+✅ Follow established conventions
 ✅ Ask for clarification when unsure
 
 ### Don'ts
 
-❌ Commit directly to main branch  
-❌ Submit PRs without testing  
-❌ Ignore CI failures  
-❌ Make unrelated changes in same PR  
-❌ Skip documentation updates  
-❌ Use force push on shared branches  
+❌ Commit directly to main branch
+❌ Submit PRs without testing
+❌ Ignore CI failures
+❌ Make unrelated changes in same PR
+❌ Skip documentation updates
+❌ Use force push on shared branches
 ❌ Include sensitive data or secrets
 
 ## Recognition
@@ -590,6 +590,6 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 Thank you for contributing to IT-Journey! Your efforts help build a better learning platform for everyone.
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bug_report_details.md
 ---
+# Bug Report Details
+
 ## Summary
 Provide a brief summary of the issue.
 

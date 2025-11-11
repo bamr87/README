@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-nested-member-call.expect.md
 ---
+# Capturing Nested Member Call.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

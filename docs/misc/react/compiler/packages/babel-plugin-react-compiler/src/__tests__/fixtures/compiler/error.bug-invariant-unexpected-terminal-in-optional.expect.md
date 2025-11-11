@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-unexpected-terminal-in-optional.expect.md
 ---
+# Error.Bug Invariant Unexpected Terminal In Optional.Expect
+
 ## Input
 
 ```javascript
@@ -37,5 +39,4 @@ error.bug-invariant-unexpected-terminal-in-optional.ts:3:16
   5 |   } catch {
   6 |     return null;
 ```
-          
-      
+

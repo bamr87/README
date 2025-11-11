@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: await-side-effecting-promise.expect.md
 ---
+# Await Side Effecting Promise.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ async function Component(props) {
 }
 
 ```
-      

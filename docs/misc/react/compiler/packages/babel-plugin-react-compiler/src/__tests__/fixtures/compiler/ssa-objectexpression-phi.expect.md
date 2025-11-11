@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-objectexpression-phi.expect.md
 ---
+# Ssa Objectexpression Phi.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":1,"y":3}

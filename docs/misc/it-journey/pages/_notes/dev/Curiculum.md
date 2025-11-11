@@ -6,5 +6,7 @@ tags:
 last_updated: null
 source_file: Curiculum.md
 ---
+# Curiculum
+
 You don't know what you can't teach.
 

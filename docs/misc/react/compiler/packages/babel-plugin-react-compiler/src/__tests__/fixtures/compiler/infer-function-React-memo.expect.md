@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-function-React-memo.expect.md
 ---
+# Infer Function React Memo.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ React.memo((props) => {
 });
 
 ```
-      

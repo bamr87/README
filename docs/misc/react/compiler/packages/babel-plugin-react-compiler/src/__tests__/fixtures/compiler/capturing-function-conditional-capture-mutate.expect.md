@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-conditional-capture-mutate.expect.md
 ---
+# Capturing Function Conditional Capture Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -59,4 +61,3 @@ function useHook(a, b) {
 }
 
 ```
-      

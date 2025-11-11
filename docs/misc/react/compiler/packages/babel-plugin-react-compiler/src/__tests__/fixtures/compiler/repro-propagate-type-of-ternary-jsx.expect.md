@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-propagate-type-of-ternary-jsx.expect.md
 ---
+# Repro Propagate Type Of Ternary Jsx.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ function V0(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

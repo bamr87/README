@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-hoist-function-decls.expect.md
 ---
+# Error.Todo Hoist Function Decls.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.todo-hoist-function-decls.ts:3:2
   6 | }
   7 |
 ```
-          
-      
+

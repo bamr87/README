@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: prune-nonescaping-useMemo-mult-returns-primitive.expect.md
 ---
+# Prune Nonescaping Usememo Mult Returns Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

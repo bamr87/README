@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dynamic-gating-enabled.expect.md
 ---
+# Dynamic Gating Enabled.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>hello world</div>

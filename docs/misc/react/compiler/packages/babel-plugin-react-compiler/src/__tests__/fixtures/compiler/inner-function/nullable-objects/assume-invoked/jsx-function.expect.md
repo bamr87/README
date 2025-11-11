@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-function.expect.md
 ---
+# Jsx Function.Expect
+
 ## Input
 
 ```javascript
@@ -76,7 +78,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":{"kind":"Function","result":1},"shouldInvokeFns":true}</div>
 <div>{"cb":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

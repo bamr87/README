@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: 2025-01-16-mastering-iterm-shortcuts-for-efficiency.md
 ---
+# 2025 01 16 Mastering Iterm Shortcuts For Efficiency
+
 **How to Customize iTerm2 for Efficiency: Keybindings to Delete Words and Navigate Text**
 
 **iTerm2**, a powerful terminal emulator for macOS, provides extensive customization options that can enhance your productivity when working in the terminal. In this guide, we'll walk through setting up keybindings to delete words and navigate text efficiently, and explore the benefits of mastering such customizations.

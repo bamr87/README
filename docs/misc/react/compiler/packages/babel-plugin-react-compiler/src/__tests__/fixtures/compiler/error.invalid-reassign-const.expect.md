@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-reassign-const.expect.md
 ---
+# Error.Invalid Reassign Const.Expect
+
 ## Input
 
 ```javascript
@@ -34,5 +36,4 @@ error.invalid-reassign-const.ts:3:2
   4 | }
   5 |
 ```
-          
-      
+

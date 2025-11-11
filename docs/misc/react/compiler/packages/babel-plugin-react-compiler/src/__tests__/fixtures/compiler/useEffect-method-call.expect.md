@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useEffect-method-call.expect.md
 ---
+# Useeffect Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -40,6 +42,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)

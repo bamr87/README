@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-independently-memoizeable.expect.md
 ---
+# Usememo Independently Memoizeable.Expect
+
 ## Input
 
 ```javascript
@@ -68,4 +70,3 @@ function Component(props) {
 }
 
 ```
-      

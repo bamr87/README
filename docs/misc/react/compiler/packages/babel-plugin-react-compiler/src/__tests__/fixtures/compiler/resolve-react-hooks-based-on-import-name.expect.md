@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: resolve-react-hooks-based-on-import-name.expect.md
 ---
+# Resolve React Hooks Based On Import Name.Expect
+
 ## Input
 
 ```javascript
@@ -84,6 +86,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Count 0<button>Increment</button>

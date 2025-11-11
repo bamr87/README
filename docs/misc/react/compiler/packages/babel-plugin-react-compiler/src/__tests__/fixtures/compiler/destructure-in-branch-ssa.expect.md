@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-in-branch-ssa.expect.md
 ---
+# Destructure In Branch Ssa.Expect
+
 ## Input
 
 ```javascript
@@ -86,6 +88,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"x":"hello","y":"world","myList":[null]}

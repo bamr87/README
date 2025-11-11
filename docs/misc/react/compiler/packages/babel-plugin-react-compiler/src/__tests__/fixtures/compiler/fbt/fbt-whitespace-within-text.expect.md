@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbt-whitespace-within-text.expect.md
 ---
+# Fbt Whitespace Within Text.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Before text hello world after text more text and more and more and more and more and more and more and more and more and blah blah blah blah

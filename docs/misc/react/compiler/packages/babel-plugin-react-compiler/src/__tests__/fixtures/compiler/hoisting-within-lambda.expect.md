@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-within-lambda.expect.md
 ---
+# Hoisting Within Lambda.Expect
+
 ## Input
 
 ```javascript
@@ -55,6 +57,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>3</div>

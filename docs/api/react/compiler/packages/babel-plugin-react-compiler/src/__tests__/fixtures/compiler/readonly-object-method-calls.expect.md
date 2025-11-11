@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: readonly-object-method-calls.expect.md
 ---
+# Readonly Object Method Calls.Expect
+
 ## Input
 
 ```javascript
@@ -82,4 +83,3 @@ function _temp(node) {
 }
 
 ```
-      

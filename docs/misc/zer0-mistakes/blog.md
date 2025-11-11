@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: blog.md
 ---
+# Blog
+
 ## Latest posts
 
 {% assign posts = site.posts | slice: 0, 20 %}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: call-spread.expect.md
 ---
+# Call Spread.Expect
+
 ## Input
 
 ```javascript
@@ -50,6 +52,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,null,2,3,4]

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: quoted-strings-jsx-attribute-escaped-constant-propagation.expect.md
 ---
+# Quoted Strings Jsx Attribute Escaped Constant Propagation.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Some "text"

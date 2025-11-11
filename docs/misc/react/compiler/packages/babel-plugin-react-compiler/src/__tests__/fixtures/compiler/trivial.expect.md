@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: trivial.expect.md
 ---
+# Trivial.Expect
+
 ## Input
 
 ```javascript
@@ -35,4 +37,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

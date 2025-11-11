@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: partial-early-return-within-reactive-scope.expect.md
 ---
+# Partial Early Return Within Reactive Scope.Expect
+
 ## Input
 
 ```javascript
@@ -85,6 +87,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

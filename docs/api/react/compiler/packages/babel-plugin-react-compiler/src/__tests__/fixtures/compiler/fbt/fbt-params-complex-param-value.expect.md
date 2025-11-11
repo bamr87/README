@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: fbt-params-complex-param-value.expect.md
 ---
+# Fbt Params Complex Param Value.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +48,3 @@ function Component(props) {
 }
 
 ```
-      

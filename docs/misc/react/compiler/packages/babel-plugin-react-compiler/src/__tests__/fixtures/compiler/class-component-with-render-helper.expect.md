@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: class-component-with-render-helper.expect.md
 ---
+# Class Component With Render Helper.Expect
+
 ## Input
 
 ```javascript
@@ -45,4 +47,3 @@ class Component {
 }
 
 ```
-      

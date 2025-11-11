@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-method-shorthand-derived-value.expect.md
 ---
+# Object Method Shorthand Derived Value.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":{"getValue":{"kind":"Function","result":{"value":0,"wat0":"joe"}}},"shouldInvokeFns":true}</div>

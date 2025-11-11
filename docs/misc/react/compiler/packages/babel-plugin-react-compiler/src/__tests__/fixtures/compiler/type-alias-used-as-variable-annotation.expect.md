@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-alias-used-as-variable-annotation.expect.md
 ---
+# Type Alias Used As Variable Annotation.Expect
+
 ## Input
 
 ```javascript
@@ -48,7 +50,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
-(kind: ok) 
+(kind: ok)
 logs: ['hello, world']

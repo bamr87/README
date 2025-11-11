@@ -380,11 +380,11 @@ def validate_payment(order):
         'paypal': validate_paypal,
         'bank_transfer': validate_bank_transfer,
     }
-    
+
     validator = validators.get(order.payment_method)
     if not validator:
         raise ValueError(f"Unknown payment method: {order.payment_method}")
-    
+
     return validator(order)
 
 def process_order(order):
@@ -433,21 +433,21 @@ from app.payment import validate_payment, process_payment
 
 class TestPaymentValidation:
     """Test payment validation logic."""
-    
+
     def test_valid_credit_card(self):
         order = create_test_order(payment_method='credit_card')
         assert validate_payment(order) == True
-    
+
     def test_expired_credit_card(self):
         order = create_test_order(card_expiry='2020-01')
         with pytest.raises(PaymentValidationError):
             validate_payment(order)
-    
+
     def test_insufficient_funds(self):
         order = create_test_order(amount=10000, card_limit=100)
         with pytest.raises(InsufficientFundsError):
             validate_payment(order)
-    
+
     # Why: Cover critical payment paths first
 ```
 
@@ -496,17 +496,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pytest tests/unit/  # 3 minutes
-  
+
   integration-tests:
     runs-on: ubuntu-latest
     steps:
       - run: pytest tests/integration/  # 8 minutes
-  
+
   e2e-tests:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
     steps:
       - run: pytest tests/e2e/  # 12 minutes
-    
+
   # Total: 12 minutes (longest job) vs 25 minutes
 
 # Why: Parallel execution reduces wall-clock time
@@ -535,7 +535,7 @@ I'll help you apply Kaizen continuous improvement principles.
 
 What would you like to improve?
 - [ ] Bug fixing
-- [ ] Performance optimization  
+- [ ] Performance optimization
 - [ ] Code refactoring
 - [ ] Test coverage
 - [ ] CI/CD pipeline
@@ -619,12 +619,12 @@ graph LR
     C -->|1min| D[Approval]
     D -->|3min| E[Deploy]
     E --> F[End]
-    
+
     style B fill:#ff9999
     style C fill:#99ff99
     style D fill:#ff9999
     style E fill:#99ff99
-    
+
     classDef waste fill:#ff9999
     classDef valueAdd fill:#99ff99
 ```
@@ -650,7 +650,7 @@ When analyzing incidents or problems:
 
 ## Root Cause Analysis
 **Immediate Cause**: [What triggered this?]
-**Contributing Factors**: 
+**Contributing Factors**:
 - [Factor 1: e.g., lack of monitoring]
 - [Factor 2: e.g., insufficient testing]
 **Underlying Cause**: [Systemic issue]

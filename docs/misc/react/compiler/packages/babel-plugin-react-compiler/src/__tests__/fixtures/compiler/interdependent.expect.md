@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: interdependent.expect.md
 ---
+# Interdependent.Expect
+
 ## Input
 
 ```javascript
@@ -76,4 +78,3 @@ function foo() {}
 function Foo() {}
 
 ```
-      

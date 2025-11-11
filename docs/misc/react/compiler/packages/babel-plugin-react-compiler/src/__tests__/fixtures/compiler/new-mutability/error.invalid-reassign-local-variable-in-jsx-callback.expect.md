@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-reassign-local-variable-in-jsx-callback.expect.md
 ---
+# Error.Invalid Reassign Local Variable In Jsx Callback.Expect
+
 ## Input
 
 ```javascript
@@ -65,5 +67,4 @@ error.invalid-reassign-local-variable-in-jsx-callback.ts:6:4
   8 |
   9 |   const onClick = newValue => {
 ```
-          
-      
+

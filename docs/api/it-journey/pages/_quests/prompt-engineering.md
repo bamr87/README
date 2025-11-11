@@ -68,9 +68,9 @@ Write something about Python.
 
 **Good Prompt** (Clear and Specific):
 ```
-Write a 300-word technical blog post introduction explaining 
-why Python is popular for data science. Include three specific 
-advantages: library ecosystem, readability, and community support. 
+Write a 300-word technical blog post introduction explaining
+why Python is popular for data science. Include three specific
+advantages: library ecosystem, readability, and community support.
 Target audience: developers new to data science.
 ```
 
@@ -125,7 +125,7 @@ You are a senior Python developer reviewing code for security issues.
 The code below is from a web API that handles user authentication.
 
 [TASK]
-Identify potential security vulnerabilities in the code and explain 
+Identify potential security vulnerabilities in the code and explain
 how to fix them.
 
 [CONSTRAINTS]
@@ -186,8 +186,8 @@ Improvement: Clear sections, better organization
 Issue: Could use more engagement
 
 # Iteration 4 (Add engagement)
-Prompt: "Explain neural networks to a high school student who 
-loves video games. Use game-related analogies and examples. 
+Prompt: "Explain neural networks to a high school student who
+loves video games. Use game-related analogies and examples.
 Structure:
 1. Hook with game connection
 2. Simple explanation with analogy
@@ -243,12 +243,12 @@ Good: "Summarize key points from this document..." [focused task]
 
 # Knowledge Limitations
 Bad: "What happened in yesterday's news?"
-Good: "Based on general political trends up to 2024, what factors 
+Good: "Based on general political trends up to 2024, what factors
        typically influence election outcomes?"
 
 # Clarity over Brevity
 Bad: "QA this ASAP PLZ" (ambiguous abbreviations)
-Good: "Review this code for quality assurance, checking for bugs, 
+Good: "Review this code for quality assurance, checking for bugs,
        security issues, and style consistency."
 ```
 
@@ -529,8 +529,8 @@ Test with: "Picked up the Puma RS-X in black/white, sz 10.5, $110"
 ```
 This SQL query is slow (5 seconds on 100K rows):
 
-SELECT * FROM orders 
-WHERE customer_id = 12345 
+SELECT * FROM orders
+WHERE customer_id = 12345
 AND order_date >= '2024-01-01'
 
 Create a CoT prompt that:

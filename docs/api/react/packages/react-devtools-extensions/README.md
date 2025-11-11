@@ -6,10 +6,11 @@ tags:
 - azure
 - api
 - testing
-- api
 last_updated: null
 source_file: README.md
 ---
+# Readme
+
 This is the source code for the React DevTools browser extension.
 
 ## Installation

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: uninitialized-declaration-in-reactive-scope.expect.md
 ---
+# Uninitialized Declaration In Reactive Scope.Expect
+
 ## Input
 
 ```javascript
@@ -38,4 +40,3 @@ function Component(props) {
 }
 
 ```
-      

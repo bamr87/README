@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: break-poisons-outer-scope.expect.md
 ---
+# Break Poisons Outer Scope.Expect
+
 ## Input
 
 ```javascript
@@ -90,7 +92,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [2]
 [[ (exception in render) TypeError: Cannot read properties of null (reading 'a') ]]

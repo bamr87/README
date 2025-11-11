@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dependencies-outputs.expect.md
 ---
+# Dependencies Outputs.Expect
+
 ## Input
 
 ```javascript
@@ -73,4 +75,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-values.expect.md
 ---
+# Object Values.Expect
+
 ## Input
 
 ```javascript
@@ -105,6 +107,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"render":"[[ function params=1 ]]"}</div><div>{"render":"[[ function params=1 ]]"}</div></div>

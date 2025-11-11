@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mix-fire-and-no-fire.expect.md
 ---
+# Error.Invalid Mix Fire And No Fire.Expect
+
 ## Input
 
 ```javascript
@@ -49,5 +51,4 @@ error.invalid-mix-fire-and-no-fire.ts:11:6
   13 |
   14 |     nested();
 ```
-          
-      
+

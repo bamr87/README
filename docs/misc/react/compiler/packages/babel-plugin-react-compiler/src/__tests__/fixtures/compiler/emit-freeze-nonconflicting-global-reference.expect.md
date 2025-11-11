@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: emit-freeze-nonconflicting-global-reference.expect.md
 ---
+# Emit Freeze Nonconflicting Global Reference.Expect
+
 ## Input
 
 ```javascript
@@ -35,6 +37,6 @@ function useFoo(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

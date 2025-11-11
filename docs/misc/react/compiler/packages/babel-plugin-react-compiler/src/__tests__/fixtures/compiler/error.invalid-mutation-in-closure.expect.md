@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutation-in-closure.expect.md
 ---
+# Error.Invalid Mutation In Closure.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ error.invalid-mutation-in-closure.ts:4:4
   6 |   return test;
   7 | }
 ```
-          
-      
+

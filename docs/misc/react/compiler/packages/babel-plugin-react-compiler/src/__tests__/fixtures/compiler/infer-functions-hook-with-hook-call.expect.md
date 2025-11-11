@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-functions-hook-with-hook-call.expect.md
 ---
+# Infer Functions Hook With Hook Call.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ function useStateValue(props) {
 }
 
 ```
-      

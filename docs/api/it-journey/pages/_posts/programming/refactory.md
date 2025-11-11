@@ -6,7 +6,6 @@ tags:
 - javascript
 - aws
 - api
-- api
 last_updated: null
 source_file: refactory.md
 ---

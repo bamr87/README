@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: independent.expect.md
 ---
+# Independent.Expect
+
 ## Input
 
 ```javascript
@@ -81,4 +83,3 @@ function foo() {}
 function Foo() {}
 
 ```
-      

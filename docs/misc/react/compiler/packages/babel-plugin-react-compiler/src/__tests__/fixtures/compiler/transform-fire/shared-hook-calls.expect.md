@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: shared-hook-calls.expect.md
 ---
+# Shared Hook Calls.Expect
+
 ## Input
 
 ```javascript
@@ -82,6 +84,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

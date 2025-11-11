@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: for-in-statement-type-inference.expect.md
 ---
+# For In Statement Type Inference.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "c"

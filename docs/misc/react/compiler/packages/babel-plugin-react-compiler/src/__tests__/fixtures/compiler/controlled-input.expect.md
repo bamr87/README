@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: controlled-input.expect.md
 ---
+# Controlled Input.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <input value="0">

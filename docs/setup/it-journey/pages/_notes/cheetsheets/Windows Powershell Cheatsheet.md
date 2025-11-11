@@ -12,11 +12,11 @@ source_file: Windows Powershell Cheatsheet.md
 ---
 Windows PowerShell is the successor of the windows cmd language, which itself has its roots in the ms-dos Bat language. All recent versions of Windows offer PowerShell (PS).
 PS may be seen as Microsoft's answer to the shells common in Unix/Linux (such as csh, bash, *etc.*). Its name implies that Microsoft sees the shell as powerful, which it arguably is.
-In these notes some important PS commands are listed and PowerShell's most notable feature, the object pipeline, is discussed. 
+In these notes some important PS commands are listed and PowerShell's most notable feature, the object pipeline, is discussed.
 From the outset it is important to note that, in contrast to Linux/Unix, *Windows PowerShell is completely case-insensitive.*
 The monospace text snippets below are valid PS and may be copied, pasted, and executed in a PowerShell- or a PowerShell_ISE-session. This is why the notes form a "Cheatsheet".
-As is common for cheatsheets, there is hardly any explanation, the examples speak for themselves. 
-It must be stressed here that many of the basic PS commands are not at all orthogonal, so that many variant pipelines can lead to the same effect. 
+As is common for cheatsheets, there is hardly any explanation, the examples speak for themselves.
+It must be stressed here that many of the basic PS commands are not at all orthogonal, so that many variant pipelines can lead to the same effect.
 Often an example is one out of a multitude of possibilities accomplishing the same task.
 
 ## Contents
@@ -343,7 +343,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
     gv = Get-Variable                # Get names and values of
                                      # all session variables
     ni = New-Item                    # Create new file, directory, symbolic link,
-                                     # registry key, or registry entry	
+                                     # registry key, or registry entry
     ps = gps = Get-Process           # List running processes.
                                      #
     pwd = gl = Get-Location          # Current directory (folder)
@@ -362,7 +362,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
                                      # giving all lines that do not start with blank, tab, or EOL)
     where  = ? = Where-Object        # Only in pipeline.
                                      # Example: ls -recurse |? name -like '*Pict*'
-    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).							
+    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).
 ```
 
 ## Example of a pipelined command
@@ -1719,7 +1719,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
     gv = Get-Variable                # Get names and values of
                                      # all session variables
     ni = New-Item                    # Create new file, directory, symbolic link,
-                                     # registry key, or registry entry	
+                                     # registry key, or registry entry
     ps = gps = Get-Process           # List running processes.
                                      #
     pwd = gl = Get-Location          # Current directory (folder)
@@ -1738,7 +1738,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
                                      # giving all lines that do not start with blank, tab, or EOL)
     where  = ? = Where-Object        # Only in pipeline.
                                      # Example: ls -recurse |? name -like '*Pict*'
-    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).							
+    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).
 
 ```
 
@@ -2817,4 +2817,4 @@ The final command finds entry values containing a given string in keys below the
 
 ```
 
-[Source](https://www.theochem.ru.nl/~pwormer/teachmat/PS_cheat_sheet.html) 
+[Source](https://www.theochem.ru.nl/~pwormer/teachmat/PS_cheat_sheet.html)

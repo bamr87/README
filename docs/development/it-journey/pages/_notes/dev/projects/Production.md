@@ -7,7 +7,7 @@ last_updated: null
 source_file: Production.md
 ---
 # Mission
-Projects must be well documented and designged with self preservation in mind. 
+Projects must be well documented and designged with self preservation in mind.
 
 Build with a co-pilot (real or digital).
 
@@ -22,4 +22,4 @@ Knowledge
 - Journal/CMS
 
 Power
-- 
+-

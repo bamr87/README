@@ -3,7 +3,6 @@ title: send-evolution-notification.sh
 category: api
 tags:
 - api
-- api
 last_updated: null
 source_file: send-evolution-notification.md
 ---

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reassignment-conditional.expect.md
 ---
+# Reassignment Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -62,4 +64,3 @@ function Component(props) {
 }
 
 ```
-      

@@ -5,7 +5,6 @@ tags:
 - javascript
 - docker
 - api
-- api
 last_updated: null
 source_file: sitemap-enhancement-summary.md
 ---
@@ -15,7 +14,7 @@ source_file: sitemap-enhancement-summary.md
 
 ### ✅ Fixed Issues
 
-#### 1. **Dark Mode Compatibility** 
+#### 1. **Dark Mode Compatibility**
 - **Problem**: Sitemap overview section had `bg-light` class causing poor visibility in dark mode
 - **Solution**: Removed fixed background color and used theme-aware styling
 - **Result**: Properly adapts to both light and dark themes

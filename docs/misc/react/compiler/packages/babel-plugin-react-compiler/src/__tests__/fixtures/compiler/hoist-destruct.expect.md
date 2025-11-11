@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoist-destruct.expect.md
 ---
+# Hoist Destruct.Expect
+
 ## Input
 
 ```javascript
@@ -64,6 +66,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>1 2 10</div>

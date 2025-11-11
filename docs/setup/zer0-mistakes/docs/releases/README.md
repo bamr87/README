@@ -77,6 +77,6 @@ This documentation is automatically generated as part of the release process:
 
 ---
 
-**Maintained By**: Zer0-Mistakes Release Team  
-**Last Updated**: October 26, 2025  
+**Maintained By**: Zer0-Mistakes Release Team
+**Last Updated**: October 26, 2025
 **Next Review**: With next release

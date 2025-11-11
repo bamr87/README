@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-maybe-modified-later-dont-preserve-memoization-guarantees.expect.md
 ---
+# Usememo Maybe Modified Later Dont Preserve Memoization Guarantees.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":0,"b":"value1","c":true}

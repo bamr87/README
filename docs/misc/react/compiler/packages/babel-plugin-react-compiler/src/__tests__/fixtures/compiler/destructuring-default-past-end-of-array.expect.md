@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-default-past-end-of-array.expect.md
 ---
+# Destructuring Default Past End Of Array.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

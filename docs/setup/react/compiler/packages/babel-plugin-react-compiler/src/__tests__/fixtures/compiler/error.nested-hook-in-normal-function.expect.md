@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.nested-hook-in-normal-function.expect.md
 ---
+# Error.Nested Hook In Normal Function.Expect
+
 ## Input
 
 ```javascript
@@ -63,5 +65,4 @@ error.nested-hook-in-normal-function.ts:5:11
   7 |
   8 |     const increment = () => {
 ```
-          
-      
+

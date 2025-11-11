@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: issue852.expect.md
 ---
+# Issue852.Expect
+
 ## Input
 
 ```javascript
@@ -27,4 +29,3 @@ function Component(c) {
 }
 
 ```
-      

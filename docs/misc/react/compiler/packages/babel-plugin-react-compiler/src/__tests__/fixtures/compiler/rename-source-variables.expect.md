@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rename-source-variables.expect.md
 ---
+# Rename Source Variables.Expect
+
 ## Input
 
 ```javascript
@@ -63,7 +65,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 0
 logs: ['module_$','module_t0','module_c_0']

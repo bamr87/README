@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: 2025-01-23-sass-mixins.md
 ---
+# 2025 01 23 Sass Mixins
+
 SASS mixins are powerful tools that allow you to reuse blocks of styling across your CSS, making your front-end code more modular and maintainable. In the context of Bootstrap 5, mixins are extensively used to manage responsive design, typography, spacing, and other styling features.
 
 Here’s a step-by-step guide on how to use and modify SASS mixins, with a focus on Bootstrap 5:

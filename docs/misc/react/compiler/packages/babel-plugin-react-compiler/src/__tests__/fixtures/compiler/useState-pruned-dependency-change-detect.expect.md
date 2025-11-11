@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useState-pruned-dependency-change-detect.expect.md
 ---
+# Usestate Pruned Dependency Change Detect.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ function Component(props) {
 }
 
 ```
-      

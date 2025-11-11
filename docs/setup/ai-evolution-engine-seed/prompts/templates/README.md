@@ -15,7 +15,7 @@ source_file: README.md
 @lastModified 2025-07-12
 @version 2.0.0
 
-@relatedIssues 
+@relatedIssues
   - #periodic-evolution: Automated repository maintenance through AI prompts
   - #prompt-standardization: Migration from Markdown to YAML format
 
@@ -136,7 +136,7 @@ The periodic prompts are configured in the repository's `.evolution.yml` file:
 periodic_prompts:
   enabled: true
   base_path: "prompts/templates"
-  
+
   weekly:
     - name: doc_harmonization
       schedule: "0 2 * * 1"

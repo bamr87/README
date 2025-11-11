@@ -20,19 +20,19 @@ This is your comprehensive quest index—a living map of learning adventures des
 graph TD;
     Start([🌟 Begin Journey]) --> CharSelect{Choose Your Character}
     CharSelect --> DevPath[💻 Software Developer]
-    CharSelect --> SysPath[🏗️ System Engineer]  
+    CharSelect --> SysPath[🏗️ System Engineer]
     CharSelect --> SecPath[🛡️ Security Specialist]
     CharSelect --> DataPath[📊 Data Scientist]
     CharSelect --> CloudPath[☁️ Cloud Architect]
-    
+
     DevPath --> Frontend[Frontend Quests]
     DevPath --> Backend[Backend Dungeons]
     DevPath --> FullStack[Full-Stack Adventures]
-    
+
     SysPath --> Linux[Linux Mastery]
     SysPath --> Docker[Container Magic]
     SysPath --> Automation[Automation Spells]
-    
+
     CloudPath --> AWS[AWS Realm]
     CloudPath --> Azure[Azure Kingdom]
     CloudPath --> GCP[GCP Territory]
@@ -46,7 +46,7 @@ graph LR;
         Linux[🐧 Linux]
         Cloud[☁️ Cloud]
     end
-    
+
     subgraph "Skill Levels"
         N00b[🌱 n00b]
         Easy[🟢 Easy]
@@ -55,7 +55,7 @@ graph LR;
         Epic[⚔️ Epic]
         Heroic[👑 Heroic]
     end
-    
+
     Win --> N00b
     Mac --> Easy
     Linux --> Medium

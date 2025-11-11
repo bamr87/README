@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: sequential-destructuring-assignment-to-scope-declarations.expect.md
 ---
+# Sequential Destructuring Assignment To Scope Declarations.Expect
+
 ## Input
 
 ```javascript
@@ -131,6 +133,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="#eee8d5"><span class="#657b83">Mofei!</span></div>

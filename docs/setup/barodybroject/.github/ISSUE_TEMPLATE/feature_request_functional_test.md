@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: feature_request_functional_test.md
 ---
+# Feature Request Functional Test
+
 ## Summary
 Provide a brief summary of the feature and the purpose of this test plan.
 

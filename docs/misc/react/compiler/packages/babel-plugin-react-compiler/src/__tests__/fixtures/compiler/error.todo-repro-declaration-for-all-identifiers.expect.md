@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-repro-declaration-for-all-identifiers.expect.md
 ---
+# Error.Todo Repro Declaration For All Identifiers.Expect
+
 ## Input
 
 ```javascript
@@ -36,5 +38,4 @@ error.todo-repro-declaration-for-all-identifiers.ts:5:20
   7 | }
   8 |
 ```
-          
-      
+

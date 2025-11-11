@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: bug-capturing-func-maybealias-captured-mutate.expect.md
 ---
+# Bug Capturing Func Maybealias Captured Mutate.Expect
+
 ## Input
 
 ```javascript
@@ -128,4 +130,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

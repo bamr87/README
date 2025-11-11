@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.todo-optional-call-chain-in-optional.expect.md
 ---
+# Error.Todo Optional Call Chain In Optional.Expect
+
 ## Input
 
 ```javascript
@@ -43,5 +45,4 @@ error.todo-optional-call-chain-in-optional.ts:4:21
   6 |
   7 | function createArray<T>(...args: Array<T>): Array<T> {
 ```
-          
-      
+

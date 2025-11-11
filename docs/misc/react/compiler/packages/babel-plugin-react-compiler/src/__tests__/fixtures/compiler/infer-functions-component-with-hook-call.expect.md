@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-functions-component-with-hook-call.expect.md
 ---
+# Infer Functions Component With Hook Call.Expect
+
 ## Input
 
 ```javascript
@@ -36,4 +38,3 @@ function Component(props) {
 }
 
 ```
-      

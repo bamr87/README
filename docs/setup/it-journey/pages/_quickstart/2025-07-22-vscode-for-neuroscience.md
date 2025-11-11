@@ -35,7 +35,7 @@ You'll need three main components:
 
 **Easiest method**: Direct download
 1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
-2. Click "Download for Mac" 
+2. Click "Download for Mac"
 3. Drag the downloaded app to your Applications folder
 4. Open VS Code from Applications or Spotlight search
 
@@ -141,16 +141,16 @@ core.quit()
 
 ### Key VS Code Features for PsychoPy
 
-**Interactive Development**: 
+**Interactive Development**:
 - Use `# %%` to create code cells that you can run individually
 - Press `Shift+Enter` to run a cell and move to the next one
 
-**Debugging**: 
+**Debugging**:
 - Set breakpoints by clicking next to line numbers
 - Press `F5` to start debugging
 - Use the debug console to inspect variables
 
-**Code Completion**: 
+**Code Completion**:
 - VS Code will suggest PsychoPy functions as you type
 - Press `Ctrl+Space` to manually trigger suggestions
 
@@ -216,7 +216,7 @@ Many neuroscientists love Spyder's interface. Here's how to get similar function
 
 ### Key Shortcuts (Spyder-style)
 VS Code will automatically recognize these patterns:
-- **F9**: Run current line or selection  
+- **F9**: Run current line or selection
 - **Shift+Enter**: Run cell and advance
 - **F5**: Run entire file
 
@@ -250,21 +250,21 @@ def drift_diffusion_model(drift_rate, threshold, n_trials=1000):
     """Simple drift diffusion model simulation"""
     decisions = []
     rts = []
-    
+
     for trial in range(n_trials):
         evidence = 0
         time_steps = 0
-        
+
         while abs(evidence) < threshold and time_steps < 1000:
             evidence += np.random.normal(drift_rate, 1)
             time_steps += 1
-        
+
         decision = 1 if evidence > 0 else 0
         rt = time_steps * 0.001  # Convert to seconds
-        
+
         decisions.append(decision)
         rts.append(rt)
-    
+
     return decisions, rts
 
 # Run simulation
@@ -314,7 +314,7 @@ plt.show()
 
 **Slow performance with large data**
 - Exclude data folders from VS Code search:
-  - Go to Settings → Search → "files.exclude" 
+  - Go to Settings → Search → "files.exclude"
   - Add patterns like `**/data/**` and `**/*.nii.gz`
 
 ### Best Practices for Neuroscience Research
@@ -324,12 +324,12 @@ plt.show()
 my_experiment/
 ├── data/           # Raw data (never commit to git)
 ├── analysis/       # Analysis scripts
-├── experiments/    # PsychoPy experiments  
+├── experiments/    # PsychoPy experiments
 ├── notebooks/      # Jupyter notebooks
 └── results/        # Generated figures and results
 ```
 
-**Version Control**: 
+**Version Control**:
 - Use Git to track your code (not data)
 - `.gitignore` large files: `*.nii.gz`, `*.edf`, `*.h5`
 - Commit frequently with descriptive messages
@@ -356,7 +356,7 @@ my_experiment/
 You now have a powerful VS Code setup for neuroscience research! This configuration provides:
 
 - **Efficient Python development** with autocomplete and debugging
-- **Interactive data analysis** with Jupyter notebook support  
+- **Interactive data analysis** with Jupyter notebook support
 - **Experiment development** with PsychoPy integration
 - **Computational modeling** capabilities with scientific libraries
 

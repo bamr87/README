@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: name-anonymous-functions.expect.md
 ---
+# Name Anonymous Functions.Expect
+
 ## Input
 
 ```javascript
@@ -291,6 +293,6 @@ export const TODO_FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

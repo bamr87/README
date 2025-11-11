@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: nonreactive-dep.expect.md
 ---
+# Nonreactive Dep.Expect
+
 ## Input
 
 ```javascript
@@ -82,6 +84,6 @@ function NonReactiveDepInEffect() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

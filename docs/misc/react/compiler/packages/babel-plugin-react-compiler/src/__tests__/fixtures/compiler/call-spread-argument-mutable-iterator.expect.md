@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: call-spread-argument-mutable-iterator.expect.md
 ---
+# Call Spread Argument Mutable Iterator.Expect
+
 ## Input
 
 ```javascript
@@ -43,7 +45,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 2

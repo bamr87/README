@@ -15,7 +15,7 @@ source_file: README.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #documentation-cleanup: Comprehensive README coverage for all directories
   - #validation-automation: Automated compliance and quality validation
 

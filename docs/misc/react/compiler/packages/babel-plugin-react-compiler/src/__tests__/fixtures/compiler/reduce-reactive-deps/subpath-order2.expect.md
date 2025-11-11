@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: subpath-order2.expect.md
 ---
+# Subpath Order2.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"b":3}

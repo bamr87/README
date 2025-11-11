@@ -124,7 +124,7 @@ Engaging in real-world projects applies new skills in practical scenarios, enhan
 
 Microsoft Excel, often underestimated, serves as a disguised programming environment, enabling users to garner skills analogous to formal programming. As a launching pad, it primes professionals for exploration into advanced technologies, facilitating progression into more expansive career opportunities.
 
-Recognizing Excel’s limitations highlights the importance of broadening one’s skillset, transitioning to scalable, efficient, and integrated technologies for growth in a tech-driven world. 
+Recognizing Excel’s limitations highlights the importance of broadening one’s skillset, transitioning to scalable, efficient, and integrated technologies for growth in a tech-driven world.
 
-**Empowerment through Education and Growth**  
+**Empowerment through Education and Growth**
 The digital landscape’s transformation is relentless. Adapting by augmenting Excel skills with programming knowledge ensures readiness for emerging opportunities, fostering continuous innovation. Embrace this journey, expanding horizons and unlocking new possibilities in technology and beyond.

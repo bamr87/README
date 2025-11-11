@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: component-syntax-ref-gating.flow.expect.md
 ---
+# Component Syntax Ref Gating.Flow.Expect
+
 ## Input
 
 ```javascript
@@ -63,6 +65,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"ref":null}</div>

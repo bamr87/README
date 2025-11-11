@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: lower-context-access-hook-guard.expect.md
 ---
+# Lower Context Access Hook Guard.Expect
+
 ## Input
 
 ```javascript
@@ -68,6 +70,6 @@ function _temp(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

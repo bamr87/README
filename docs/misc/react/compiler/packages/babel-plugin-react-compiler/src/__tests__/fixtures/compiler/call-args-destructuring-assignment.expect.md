@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: call-args-destructuring-assignment.expect.md
 ---
+# Call Args Destructuring Assignment.Expect
+
 ## Input
 
 ```javascript
@@ -35,4 +37,3 @@ function Component(props) {
 }
 
 ```
-      

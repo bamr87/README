@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-in-other-reactive-block.expect.md
 ---
+# Usememo In Other Reactive Block.Expect
+
 ## Input
 
 ```javascript
@@ -79,6 +81,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"width":2},["other"]]

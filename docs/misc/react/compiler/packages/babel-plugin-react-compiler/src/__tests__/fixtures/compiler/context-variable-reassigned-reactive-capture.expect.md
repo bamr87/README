@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: context-variable-reassigned-reactive-capture.expect.md
 ---
+# Context Variable Reassigned Reactive Capture.Expect
+
 ## Input
 
 ```javascript
@@ -60,7 +62,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 2
 4

@@ -196,13 +196,13 @@ Access settings via `Cmd/Ctrl + ,` or `Cmd/Ctrl + Shift + P` → "Open Settings 
     "editor.detectIndentation": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    
+
     // Visual Enhancements
     "workbench.colorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.tree.indent": 20,
     "workbench.activityBar.visible": true,
-    
+
     // File Management
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
@@ -213,23 +213,23 @@ Access settings via `Cmd/Ctrl + ,` or `Cmd/Ctrl + Shift + P` → "Open Settings 
         "**/__pycache__": true,
         "**/*.pyc": true
     },
-    
+
     // Terminal Configuration
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    
+
     // Git Integration
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    
+
     // Python Specific
     "python.defaultInterpreterPath": "/usr/local/bin/python3",
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
-    
+
     // Performance Optimizations
     "extensions.autoUpdate": false,
     "telemetry.enableTelemetry": false,
@@ -594,6 +594,6 @@ Now that you've mastered VS Code, consider these advanced quests:
 
 *Congratulations, brave code warrior! You have successfully forged VS Code into your ultimate development weapon. With this powerful tool at your command, no coding challenge shall stand in your way. Your journey to IT mastery continues—may your code be bug-free and your deployments successful!* ⚔️✨
 
-**Achievement Unlocked: VS Code Master** 🏆  
+**Achievement Unlocked: VS Code Master** 🏆
 *Continue your adventure with the next quest in your chosen specialization path!*
 

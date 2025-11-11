@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: lambda-reassign-primitive.expect.md
 ---
+# Lambda Reassign Primitive.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 41

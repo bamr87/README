@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-useMemo-callback-args.expect.md
 ---
+# Error.Invalid Usememo Callback Args.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ error.invalid-useMemo-callback-args.ts:2:18
   4 | }
   5 |
 ```
-          
-      
+

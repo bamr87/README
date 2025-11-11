@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.reassignment-to-global.expect.md
 ---
+# Error.Reassignment To Global.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.reassignment-to-global.ts:5:2
   6 | }
   7 |
 ```
-          
-      
+

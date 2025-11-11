@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.validate-useMemo-named-function.expect.md
 ---
+# Error.Validate Usememo Named Function.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.validate-useMemo-named-function.ts:9:20
   11 | }
   12 |
 ```
-          
-      
+

@@ -8,16 +8,18 @@ tags:
 last_updated: null
 source_file: frontend-levels.md
 ---
+# Frontend Levels
+
 Absolutely! Let's structure our adventure with binary-coded levels, making our journey both organized and fun. Each level will have specific tasks and goals to help you progress step by step. Here’s our quest map in binary-coded levels:
 
 ### Level 000: Initial Setup
 
 #### Step 1: Install Docker Desktop
 
-1. **Download Docker Desktop for Mac:** 
+1. **Download Docker Desktop for Mac:**
    Go to the [Docker website](https://www.docker.com/products/docker-desktop) and download Docker Desktop for Mac.
-   
-2. **Install Docker Desktop:** 
+
+2. **Install Docker Desktop:**
    Open the downloaded file and follow the installation instructions.
 
 #### Step 2: Verify Docker Installation

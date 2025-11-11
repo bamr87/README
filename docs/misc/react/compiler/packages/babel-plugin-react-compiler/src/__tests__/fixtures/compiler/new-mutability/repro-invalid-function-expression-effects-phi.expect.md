@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invalid-function-expression-effects-phi.expect.md
 ---
+# Repro Invalid Function Expression Effects Phi.Expect
+
 ## Input
 
 ```javascript
@@ -62,6 +64,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

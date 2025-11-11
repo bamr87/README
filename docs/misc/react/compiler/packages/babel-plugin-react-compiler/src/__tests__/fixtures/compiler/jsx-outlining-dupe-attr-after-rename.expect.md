@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-outlining-dupe-attr-after-rename.expect.md
 ---
+# Jsx Outlining Dupe Attr After Rename.Expect
+
 ## Input
 
 ```javascript
@@ -179,6 +181,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) xfooifoojfoojxbaribarjbarj

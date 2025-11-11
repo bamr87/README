@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: pruned-nonreactive-obj.expect.md
 ---
+# Pruned Nonreactive Obj.Expect
+
 ## Input
 
 ```javascript
@@ -121,6 +123,6 @@ function PrunedNonReactive() {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

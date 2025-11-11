@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: switch-non-final-default.expect.md
 ---
+# Switch Non Final Default.Expect
+
 ## Input
 
 ```javascript
@@ -92,6 +94,6 @@ function Component(props) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

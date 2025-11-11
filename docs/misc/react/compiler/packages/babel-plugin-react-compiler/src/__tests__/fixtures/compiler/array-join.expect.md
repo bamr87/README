@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-join.expect.md
 ---
+# Array Join.Expect
+
 ## Input
 
 ```javascript
@@ -62,4 +64,3 @@ function _temp() {
 }
 
 ```
-      

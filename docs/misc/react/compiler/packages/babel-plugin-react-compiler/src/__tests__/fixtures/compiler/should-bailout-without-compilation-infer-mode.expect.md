@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: should-bailout-without-compilation-infer-mode.expect.md
 ---
+# Should Bailout Without Compilation Infer Mode.Expect
+
 ## Input
 
 ```javascript
@@ -41,6 +43,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>wat</div>

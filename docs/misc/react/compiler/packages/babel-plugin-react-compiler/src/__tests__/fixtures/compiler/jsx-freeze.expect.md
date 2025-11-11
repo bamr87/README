@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: jsx-freeze.expect.md
 ---
+# Jsx Freeze.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div childprops="[object Object]">"hello world"</div>

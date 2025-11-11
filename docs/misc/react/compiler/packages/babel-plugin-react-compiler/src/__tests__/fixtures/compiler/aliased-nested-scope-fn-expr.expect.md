@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: aliased-nested-scope-fn-expr.expect.md
 ---
+# Aliased Nested Scope Fn Expr.Expect
+
 ## Input
 
 ```javascript
@@ -120,7 +122,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"getId":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>
 <div>{"getId":{"kind":"Function","result":2},"shouldInvokeFns":true}</div>

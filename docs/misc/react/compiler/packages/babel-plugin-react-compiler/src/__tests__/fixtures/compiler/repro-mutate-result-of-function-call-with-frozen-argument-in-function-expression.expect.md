@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-mutate-result-of-function-call-with-frozen-argument-in-function-expression.expect.md
 ---
+# Repro Mutate Result Of Function Call With Frozen Argument In Function Expression.Expect
+
 ## Input
 
 ```javascript
@@ -72,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"obj":{"a":0,"b":"value1","c":true,"property":42}}</div>

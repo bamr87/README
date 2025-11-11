@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: react-namespace.expect.md
 ---
+# React Namespace.Expect
+
 ## Input
 
 ```javascript
@@ -76,6 +78,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>Hello</div></div>

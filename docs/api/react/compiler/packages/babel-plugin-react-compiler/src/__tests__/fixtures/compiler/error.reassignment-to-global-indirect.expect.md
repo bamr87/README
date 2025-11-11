@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.reassignment-to-global-indirect.expect.md
 ---
+# Error.Reassignment To Global Indirect.Expect
+
 ## Input
 
 ```javascript
@@ -53,5 +55,4 @@ error.reassignment-to-global-indirect.ts:5:4
   7 |   foo();
   8 | }
 ```
-          
-      
+

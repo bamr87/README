@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: 2022-02-27-dual-boot-win-linux.md
 ---
+# 2022 02 27 Dual Boot Win Linux
+
 ## VS Code install
 
 ```shell

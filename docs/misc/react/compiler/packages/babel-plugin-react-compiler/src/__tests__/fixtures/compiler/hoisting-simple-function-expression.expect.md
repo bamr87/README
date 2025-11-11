@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: hoisting-simple-function-expression.expect.md
 ---
+# Hoisting Simple Function Expression.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 1

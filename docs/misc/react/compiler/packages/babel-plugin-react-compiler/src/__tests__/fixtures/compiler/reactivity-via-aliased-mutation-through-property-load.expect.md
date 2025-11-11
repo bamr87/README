@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: reactivity-via-aliased-mutation-through-property-load.expect.md
 ---
+# Reactivity Via Aliased Mutation Through Property Load.Expect
+
 ## Input
 
 ```javascript
@@ -82,7 +84,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1]
 [1]

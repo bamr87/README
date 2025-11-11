@@ -17,7 +17,7 @@ source_file: ai-prompts-configuration.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - ai_prompts_evolution.json: Implementation and documentation
 
 @relatedEvolutions
@@ -50,7 +50,7 @@ ai_prompts_evolution.json    # Root-level configuration file
 
 This file centralizes all AI evolution prompt management, providing:
 - **Structured prompt definitions** with metadata and execution settings
-- **Evolution strategies** with safety levels and validation requirements  
+- **Evolution strategies** with safety levels and validation requirements
 - **Scheduling and automation** configuration for periodic evolution
 - **Execution rules** and validation gates for safe operation
 - **Monitoring and reporting** settings for tracking effectiveness
@@ -133,7 +133,7 @@ Organizes prompts by purpose and execution frequency:
     },
     "enhancement": {
       "description": "Feature improvements and optimizations",
-      "frequency": "monthly", 
+      "frequency": "monthly",
       "priority": "medium",
       "prompts": ["code_refactor", "performance_optimization", "test_enhancement"]
     }
@@ -241,7 +241,7 @@ MAINTENANCE_PROMPTS=$(ai_prompts_list_by_category "maintenance" "$CONFIG")
    - Focus: Documentation formatting and consistency
 
 2. **security_scan** - Security vulnerability detection and fixes
-   - Schedule: Wednesdays at 3 AM UTC  
+   - Schedule: Wednesdays at 3 AM UTC
    - Strategy: Conservative
    - Focus: Security vulnerabilities and permissions
 
@@ -307,7 +307,7 @@ Control when prompts should execute or be skipped:
         "description": "Skip if commits made in last 24 hours"
       },
       {
-        "condition": "open_issues", 
+        "condition": "open_issues",
         "threshold": 10,
         "description": "Skip if more than 10 open issues"
       }

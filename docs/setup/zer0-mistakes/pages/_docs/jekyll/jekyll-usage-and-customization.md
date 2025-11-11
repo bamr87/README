@@ -8,6 +8,8 @@ tags:
 last_updated: null
 source_file: jekyll-usage-and-customization.md
 ---
+# Jekyll Usage And Customization
+
 > Customize Jekyll website.
 
 ## 1. Getting Entries from List
@@ -16,7 +18,7 @@ Suppose site.portfolio is the list of all portfolios, use the following pipes to
 * order: add sort with column name
 * ascending/descending: add reverse for descending order.
 
-Usage sample as follows:  
+Usage sample as follows:
 ```html
 {%- raw -%}
 {% assign list = (site.portfolio | where: "category", {{category.type}}) | sort: 'index') | reverse %}
@@ -47,7 +49,7 @@ Add the following codes to post.html, which is the template of posting.
 {% endraw %}
 ```
 Previous and Next buttons are added to the posting. Now, you can click on either of them to navigate to another posting.
-![image](/assets/images/jekyll/8112/pagination.png)  
+![image](/assets/images/jekyll/8112/pagination.png)
 
 ## 3. Code Snippet Highlighting
 When insert codes to markdown, you can specify the programming language of the code. For example:
@@ -58,7 +60,7 @@ java code
 ````
 
 Be default, there is only a grey rectangle as background, no highlighting on the codes. See the below screenshot.
-![image](/assets/images/jekyll/8112/withouthighlight.png)  
+![image](/assets/images/jekyll/8112/withouthighlight.png)
 
 To enable the highlighting, you need to edit `_config.yml` file which is located in the root directory of the website, add following lines.
 
@@ -68,7 +70,7 @@ highlighter: rouge
 ```
 
 Refresh the page. The highlighting is working now.
-![image](/assets/images/jekyll/8112/javahighlight.png)  
+![image](/assets/images/jekyll/8112/javahighlight.png)
 
 ## 4. Links
 In Markdown, we can create hyperlinks to the pages of our own website or external website with the following codes:
@@ -128,12 +130,12 @@ category: java
 ---
 ```
 Again, use `post.excerpt` to get customized excerpt and display it on page.
-![image](/assets/images/jekyll/8112/excerpt.png){:width="400px"}  
+![image](/assets/images/jekyll/8112/excerpt.png){:width="400px"}
 
 ## 6. Data File
-All the links in [favorite page](http://{{ site.github_user }}.github.io/favorite/) are from `Data File`.  
+All the links in [favorite page](http://{{ site.github_user }}.github.io/favorite/) are from `Data File`.
 Create `_data` folder in the root directory, add create a data file named `favorite.yml`.
-![image](/assets/images/jekyll/8112/datafile.png){:width="400px"}  
+![image](/assets/images/jekyll/8112/datafile.png){:width="400px"}
 Add following content to `favorite.yml`.
 ```
 title: My Favorites
@@ -206,7 +208,7 @@ title: My Favorite Bookmarks
 {% endraw %}
 ```
 Open browser, access the favorite page.
-![image](/assets/images/jekyll/8112/favorite.png)  
+![image](/assets/images/jekyll/8112/favorite.png)
 
 ## 7. Collection
 Use `Collection` to create similar pages. The [portfolio index page](http://{{ site.github_user }}.github.io/portfolio/) is created by collection.
@@ -217,7 +219,7 @@ collections:
     output: true
 ```
 Create new folder named `_project` in root directory, and put all portfolio postings into it.
-![image](/assets/images/jekyll/8112/collection.png){:width="400px"}  
+![image](/assets/images/jekyll/8112/collection.png){:width="400px"}
 Each posting Markdown file contains following attributes.
 ```
 ---
@@ -255,7 +257,7 @@ At last, create portfolio.html in the root directory, add codes to read data fro
 {% endraw %}
 ```
 Open browser, access the collection page.
-![image](/assets/images/jekyll/8112/portfolio.png)  
+![image](/assets/images/jekyll/8112/portfolio.png)
 
 ## 8. Striped Rows in Table
 Define a table in markdown as follows.
@@ -341,7 +343,7 @@ If table has many columns, some of them may be cut off in small screen.
 ![image](/assets/images/jekyll/8112/table_partial.png){:width="450px"}
 One solution is to create a responsive table. We can embed the table into a div, which has the class `table-responsive-sm`. Class table-responsive-sm is defined in Bootstrap 4 for creating responsive tables.
 ```raw
-<div class="table-responsive-sm" markdown="block">  
+<div class="table-responsive-sm" markdown="block">
 
 Access Modifiers        | private | default | protected | public
 ------------------------|---------|---------|-----------|--------

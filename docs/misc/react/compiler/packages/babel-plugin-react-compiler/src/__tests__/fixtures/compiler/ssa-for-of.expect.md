@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-for-of.expect.md
 ---
+# Ssa For Of.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: early-return-no-declarations-reassignments-dependencies.expect.md
 ---
+# Early Return No Declarations Reassignments Dependencies.Expect
+
 ## Input
 
 ```javascript
@@ -125,4 +127,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

@@ -440,7 +440,7 @@ export class PathAwareTestSuite {
      */
     async executeTest(testDefinition) {
         const testPath = `test_${testDefinition.name.replace(/\s+/g, '_').toLowerCase()}`;
-        
+
         return pathTracker.executeInPath(testPath, async () => {
             const testResult = {
                 name: testDefinition.name,
@@ -475,7 +475,7 @@ export class PathAwareTestSuite {
                 });
 
                 testResult.status = 'passed';
-                
+
             } catch (error) {
                 testResult.status = 'failed';
                 testResult.errors.push({
@@ -483,12 +483,12 @@ export class PathAwareTestSuite {
                     stack: error.stack,
                     path: pathTracker.getCurrentPath()
                 });
-                
+
                 logger.error(`Test failed: ${testDefinition.name}`, 'test_execution', {
                     error: error.message,
                     path: pathTracker.getCurrentPath()
                 });
-                
+
             } finally {
                 // Path: test-teardown
                 if (testDefinition.teardown) {
@@ -595,17 +595,17 @@ export class TestContext {
             if (!Array.isArray(actual) || !Array.isArray(expected)) {
                 throw new Error('Both values must be arrays');
             }
-            
+
             if (actual.length !== expected.length) {
                 throw new Error(`Array lengths differ: expected ${expected.length}, got ${actual.length}`);
             }
-            
+
             for (let i = 0; i < actual.length; i++) {
                 if (actual[i] !== expected[i]) {
                     throw new Error(`Arrays differ at index ${i}: expected ${expected[i]}, got ${actual[i]}`);
                 }
             }
-            
+
             assertion.passed = true;
         } catch (error) {
             assertion.error = error.message;
@@ -773,10 +773,10 @@ export class PathAwareTestRunner {
         for (const [format, content] of Object.entries(reports)) {
             const filename = `test-results.${format === 'junit' ? 'xml' : format}`;
             const filepath = path.join(this.config.outputPath, filename);
-            
+
             await fs.mkdir(path.dirname(filepath), { recursive: true });
             await fs.writeFile(filepath, content, 'utf8');
-            
+
             logger.info(`Generated ${format} report: ${filepath}`, 'test_runner');
         }
     }
@@ -890,7 +890,7 @@ class TestResult:
 
 class PathAwareTestContext:
     """Test context with path-aware assertions"""
-    
+
     def __init__(self, test_result: TestResult, path_tracker: PathTracker):
         self.test_result = test_result
         self.path_tracker = path_tracker
@@ -1021,7 +1021,7 @@ class PathAwareTestContext:
 
 class PathAwareTestSuite:
     """Test suite with comprehensive path tracking"""
-    
+
     def __init__(self, suite_name: str):
         self.suite_name = suite_name
         self.path_tracker = PathTracker()
@@ -1037,7 +1037,7 @@ class PathAwareTestSuite:
         """Add suite teardown callback"""
         self.teardown_callbacks.append(callback)
 
-    def add_test(self, name: str, test_func: Callable, description: str = "", 
+    def add_test(self, name: str, test_func: Callable, description: str = "",
                  setup: Optional[Callable] = None, teardown: Optional[Callable] = None):
         """Add test to suite"""
         self.tests.append({
@@ -1098,8 +1098,8 @@ class PathAwareTestSuite:
     async def _execute_test(self, test_def: Dict[str, Any]) -> TestResult:
         """Execute individual test with comprehensive tracking"""
         test_path = f"test_{test_def['name'].replace(' ', '_').lower()}"
-        
-        return await self.path_tracker.execute_in_path(test_path, 
+
+        return await self.path_tracker.execute_in_path(test_path,
             lambda: self._execute_test_internal(test_def, test_path))
 
     async def _execute_test_internal(self, test_def: Dict[str, Any], test_path: str) -> TestResult:
@@ -1119,7 +1119,7 @@ class PathAwareTestSuite:
 
             # Path: test-execution
             context = PathAwareTestContext(test_result, self.path_tracker)
-            await self.path_tracker.execute_in_path(f"{test_path}_execution", 
+            await self.path_tracker.execute_in_path(f"{test_path}_execution",
                 lambda: test_def['test_func'](context))
 
             test_result.status = 'passed'
@@ -1220,11 +1220,11 @@ example_suite.add_test(
 async def test_path_aware_suite():
     """Pytest integration for path-aware test suite"""
     results = await example_suite.run_suite()
-    
+
     assert results['summary']['total'] > 0, "Should have executed tests"
     assert results['summary']['failed'] == 0, f"All tests should pass, but {results['summary']['failed']} failed"
     assert 'path_metrics' in results, "Should include path metrics"
-    
+
     # Verify path tracking occurred
     assert len(results['path_metrics']) > 0, "Should have collected path metrics"
 ```
@@ -1255,7 +1255,7 @@ export class AITestGenerator {
             const analysis = await this.analyzeCode(sourceCode);
             const testCases = await this.generateTestCases(analysis, options);
             const testSuite = await this.assembleTestSuite(testCases, options);
-            
+
             return testSuite;
         });
     }
@@ -1486,32 +1486,32 @@ source "${PROJECT_ROOT}/scripts/lib/path_management.sh"
 # Path: performance-testing-workflow
 run_performance_tests() {
     enter_path "performance_testing"
-    
+
     log_info "Starting comprehensive performance testing" "performance_testing"
-    
+
     # Ensure results directory exists
     mkdir -p "$RESULTS_DIR"
-    
+
     # Path: load-testing
     execute_in_path "load_testing" \
         "run_load_tests"
-    
+
     # Path: stress-testing
     execute_in_path "stress_testing" \
         "run_stress_tests"
-    
+
     # Path: spike-testing
     execute_in_path "spike_testing" \
         "run_spike_tests"
-    
+
     # Path: endurance-testing
     execute_in_path "endurance_testing" \
         "run_endurance_tests"
-    
+
     # Path: results-analysis
     execute_in_path "results_analysis" \
         "analyze_performance_results"
-    
+
     exit_path "performance_testing"
     log_info "Performance testing completed successfully" "performance_testing"
 }
@@ -1519,19 +1519,19 @@ run_performance_tests() {
 # Path: load-testing-execution
 run_load_tests() {
     log_info "Running load tests" "load_testing"
-    
+
     local load_scenarios=(
         "baseline:10:30s"
         "moderate:50:60s"
         "heavy:100:120s"
         "peak:200:180s"
     )
-    
+
     for scenario in "${load_scenarios[@]}"; do
         IFS=':' read -r name users duration <<< "$scenario"
-        
+
         log_info "Running load test: $name ($users users, $duration)" "load_testing"
-        
+
         # K6 load test
         k6 run \
             --vus "$users" \
@@ -1539,7 +1539,7 @@ run_load_tests() {
             --out json="${RESULTS_DIR}/load-test-${name}.json" \
             "${SCRIPT_DIR}/scenarios/load-test.js" \
             || log_error "Load test failed: $name" "load_testing"
-        
+
         # Artillery load test (alternative)
         artillery run \
             --config "${SCRIPT_DIR}/config/artillery-${name}.yml" \
@@ -1547,21 +1547,21 @@ run_load_tests() {
             "${SCRIPT_DIR}/scenarios/artillery-load.yml" \
             || log_error "Artillery load test failed: $name" "load_testing"
     done
-    
+
     log_info "Load testing completed" "load_testing"
 }
 
 # Path: stress-testing-execution
 run_stress_tests() {
     log_info "Running stress tests" "stress_testing"
-    
+
     # Gradual stress test
     k6 run \
         --stages "2m:100,5m:100,2m:200,5m:200,2m:300,5m:300,2m:400,5m:400,10m:0" \
         --out json="${RESULTS_DIR}/stress-test-gradual.json" \
         "${SCRIPT_DIR}/scenarios/stress-test.js" \
         || log_error "Gradual stress test failed" "stress_testing"
-    
+
     # Resource exhaustion test
     k6 run \
         --vus 1000 \
@@ -1569,14 +1569,14 @@ run_stress_tests() {
         --out json="${RESULTS_DIR}/stress-test-exhaustion.json" \
         "${SCRIPT_DIR}/scenarios/resource-exhaustion.js" \
         || log_error "Resource exhaustion test failed" "stress_testing"
-    
+
     log_info "Stress testing completed" "stress_testing"
 }
 
 # Path: security-testing-execution
 run_security_tests() {
     log_info "Running security tests" "security_testing"
-    
+
     # OWASP ZAP security scan
     if command -v docker >/dev/null 2>&1; then
         docker run --rm \
@@ -1587,13 +1587,13 @@ run_security_tests() {
             -r "security-baseline-report.html" \
             || log_warning "ZAP baseline scan completed with warnings" "security_testing"
     fi
-    
+
     # Snyk vulnerability scan
     if command -v snyk >/dev/null 2>&1; then
         snyk test --json > "${RESULTS_DIR}/snyk-vulnerabilities.json" \
             || log_warning "Snyk scan found vulnerabilities" "security_testing"
     fi
-    
+
     # Retire.js JavaScript vulnerability scan
     if command -v retire >/dev/null 2>&1; then
         retire --js --outputformat json \
@@ -1601,36 +1601,36 @@ run_security_tests() {
             "${PROJECT_ROOT}" \
             || log_warning "Retire.js found potential issues" "security_testing"
     fi
-    
+
     log_info "Security testing completed" "security_testing"
 }
 
 # Path: main-execution
 main() {
     local start_time=$(date +%s.%N)
-    
+
     log_info "Starting performance and security testing suite" "main"
-    
+
     # Check prerequisites
     check_testing_tools || {
         log_fatal "Required testing tools are not available" "main"
     }
-    
+
     # Ensure test environment is running
     ensure_test_environment || {
         log_fatal "Could not start test environment" "main"
     }
-    
+
     # Run tests
     run_performance_tests
     run_security_tests
-    
+
     # Generate comprehensive report
     generate_comprehensive_report
-    
+
     local end_time=$(date +%s.%N)
     local total_time=$(echo "$end_time - $start_time" | bc -l)
-    
+
     log_performance_metric "full_test_suite_time" "$total_time" "seconds" "testing"
     log_info "Testing suite completed successfully in ${total_time}s" "main"
 }

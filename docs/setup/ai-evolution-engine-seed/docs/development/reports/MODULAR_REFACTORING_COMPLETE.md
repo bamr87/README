@@ -16,7 +16,7 @@ source_file: MODULAR_REFACTORING_COMPLETE.md
 @lastModified 2025-07-07
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Modular refactoring: Complete documentation of refactoring process
 
 @relatedEvolutions

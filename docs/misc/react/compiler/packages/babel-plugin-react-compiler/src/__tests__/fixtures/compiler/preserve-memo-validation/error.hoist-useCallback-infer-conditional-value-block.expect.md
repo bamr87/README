@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.hoist-useCallback-infer-conditional-value-block.expect.md
 ---
+# Error.Hoist Usecallback Infer Conditional Value Block.Expect
+
 ## Input
 
 ```javascript
@@ -96,5 +98,4 @@ error.hoist-useCallback-infer-conditional-value-block.ts:6:21
   16 |
   17 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

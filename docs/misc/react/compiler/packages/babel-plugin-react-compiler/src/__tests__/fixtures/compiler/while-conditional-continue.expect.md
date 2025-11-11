@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: while-conditional-continue.expect.md
 ---
+# While Conditional Continue.Expect
+
 ## Input
 
 ```javascript
@@ -50,4 +52,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

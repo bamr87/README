@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-function-alias-computed-load.expect.md
 ---
+# Capturing Function Alias Computed Load.Expect
+
 ## Input
 
 ```javascript
@@ -58,4 +60,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

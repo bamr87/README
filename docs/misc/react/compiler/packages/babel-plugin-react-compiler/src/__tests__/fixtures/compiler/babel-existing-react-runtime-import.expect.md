@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: babel-existing-react-runtime-import.expect.md
 ---
+# Babel Existing React Runtime Import.Expect
+
 ## Input
 
 ```javascript
@@ -73,6 +75,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>0undefined</div>

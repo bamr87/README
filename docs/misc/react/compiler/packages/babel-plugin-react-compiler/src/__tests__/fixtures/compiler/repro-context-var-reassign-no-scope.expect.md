@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: repro-context-var-reassign-no-scope.expect.md
 ---
+# Repro Context Var Reassign No Scope.Expect
+
 ## Input
 
 ```javascript
@@ -110,7 +112,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"users":[{"name":"John Doe"}],"announcement":"Removed user (Jane Doe)"}</div>
 <div>{"users":[{"name":"John Doe"}],"announcement":"Removed user (Jane Doe)"}</div>

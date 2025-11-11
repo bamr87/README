@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: object-literal-method-call-in-ternary-test.expect.md
 ---
+# Object Literal Method Call In Ternary Test.Expect
+
 ## Input
 
 ```javascript
@@ -60,6 +62,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"result":"global string 1","shouldInvokeFns":true}</div>

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: array-map-named-callback-cross-context.expect.md
 ---
+# Array Map Named Callback Cross Context.Expect
+
 ## Input
 
 ```javascript
@@ -134,7 +136,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"getArrMap1":{"kind":"Function","result":[]},"getArrMap2":{"kind":"Function","result":[]},"shouldInvokeFns":true}</div>
 <div>{"getArrMap1":{"kind":"Function","result":[]},"getArrMap2":{"kind":"Function","result":[]},"shouldInvokeFns":true}</div>

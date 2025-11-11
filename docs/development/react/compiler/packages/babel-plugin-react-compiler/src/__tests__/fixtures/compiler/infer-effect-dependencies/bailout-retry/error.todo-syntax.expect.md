@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.todo-syntax.expect.md
 ---
+# Error.Todo Syntax.Expect
+
 ## Input
 
 ```javascript
@@ -75,5 +77,4 @@ error.todo-syntax.ts:11:2
   23 | }
   24 |
 ```
-          
-      
+

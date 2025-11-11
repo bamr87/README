@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: logical-expression-object.expect.md
 ---
+# Logical Expression Object.Expect
+
 ## Input
 
 ```javascript
@@ -56,4 +58,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

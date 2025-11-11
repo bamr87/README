@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: type-annotation-var-array_.flow.expect.md
 ---
+# Type Annotation Var Array .Flow.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

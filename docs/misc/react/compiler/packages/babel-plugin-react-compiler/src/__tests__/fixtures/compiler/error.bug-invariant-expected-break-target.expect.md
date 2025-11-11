@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.bug-invariant-expected-break-target.expect.md
 ---
+# Error.Bug Invariant Expected Break Target.Expect
+
 ## Input
 
 ```javascript
@@ -35,5 +37,4 @@ Found 1 error:
 
 Invariant: Expected a break target
 ```
-          
-      
+

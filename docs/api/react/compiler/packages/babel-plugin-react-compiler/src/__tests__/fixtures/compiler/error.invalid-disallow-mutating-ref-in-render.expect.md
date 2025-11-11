@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-disallow-mutating-ref-in-render.expect.md
 ---
+# Error.Invalid Disallow Mutating Ref In Render.Expect
+
 ## Input
 
 ```javascript
@@ -39,5 +41,4 @@ error.invalid-disallow-mutating-ref-in-render.ts:4:2
   6 |   return <button ref={ref} />;
   7 | }
 ```
-          
-      
+

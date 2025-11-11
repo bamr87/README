@@ -17,7 +17,7 @@ source_file: WORKFLOW_IMPLEMENTATION_v0.4.1.md
 @lastModified 2025-07-10
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Workflow modernization and enhancement request
   - Test automation integration requirement
 
@@ -81,7 +81,7 @@ env:
 # Enhanced growth mode options
 options:
   - conservative
-  - adaptive  
+  - adaptive
   - experimental
   - test-automation  # NEW
 ```

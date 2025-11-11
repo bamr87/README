@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: array-map-noAlias-escaping-function.expect.md
 ---
+# Array Map Noalias Escaping Function.Expect
+
 ## Input
 
 ```javascript
@@ -52,6 +54,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [[{"id":1}],"[[ function params=1 ]]"]

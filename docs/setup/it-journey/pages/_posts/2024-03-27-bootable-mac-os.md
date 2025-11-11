@@ -9,6 +9,8 @@ tags:
 last_updated: null
 source_file: 2024-03-27-bootable-mac-os.md
 ---
+# 2024 03 27 Bootable Mac Os
+
 Create a bootable installer for macOS
 =====================================
 

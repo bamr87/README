@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: value-block-mutates-outer-value.expect.md
 ---
+# Value Block Mutates Outer Value.Expect
+
 ## Input
 
 ```javascript
@@ -72,6 +74,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [1,2,5,{"text":["text"]}]

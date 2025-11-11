@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.invalid-unconditional-set-state-in-render.expect.md
 ---
+# Error.Invalid Unconditional Set State In Render.Expect
+
 ## Input
 
 ```javascript
@@ -55,5 +57,4 @@ error.invalid-unconditional-set-state-in-render.ts:7:2
    9 |   return x;
   10 | }
 ```
-          
-      
+

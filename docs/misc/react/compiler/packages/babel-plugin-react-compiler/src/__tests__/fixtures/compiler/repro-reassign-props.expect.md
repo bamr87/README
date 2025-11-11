@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-reassign-props.expect.md
 ---
+# Repro Reassign Props.Expect
+
 ## Input
 
 ```javascript
@@ -67,6 +69,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"props":{"a":0,"b":"hello","children":{"type":"div","key":null,"props":{"children":"Hello"},"_owner":"[[ cyclic ref *3 ]]","_store":{}}}}</div>

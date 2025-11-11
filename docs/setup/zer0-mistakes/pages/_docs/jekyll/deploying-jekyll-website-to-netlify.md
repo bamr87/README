@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: deploying-jekyll-website-to-netlify.md
 ---
+# Deploying Jekyll Website To Netlify
+
 > Deploy static website built with Jekyll to Netlify.
 
 ## 1. Jekyll & GitHub Pages & Netlify

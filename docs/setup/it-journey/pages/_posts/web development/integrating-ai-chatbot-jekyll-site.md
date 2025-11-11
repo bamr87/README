@@ -61,10 +61,10 @@ class JekyllAIChatbot {
         this.systemPrompt = config.systemPrompt || this.getDefaultSystemPrompt();
         this.init();
     }
-    
+
     getDefaultSystemPrompt() {
-        return `You are a helpful assistant for the IT-Journey learning platform. 
-        Help users understand technical concepts, troubleshoot issues, and navigate the learning materials. 
+        return `You are a helpful assistant for the IT-Journey learning platform.
+        Help users understand technical concepts, troubleshoot issues, and navigate the learning materials.
         Always provide practical, actionable advice and encourage hands-on learning.`;
     }
 }
@@ -107,13 +107,13 @@ Add this to your Jekyll layout or include file:
         </svg>
         <span class="sr-only">AI Assistant</span>
     </div>
-    
+
     <div id="chatbot-widget" class="chatbot-widget" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true">
         <div class="chatbot-header">
             <h3 id="chatbot-title">IT-Journey AI Assistant</h3>
             <button id="chatbot-close" class="chatbot-close" aria-label="Close chat">×</button>
         </div>
-        
+
         <div id="chatbot-messages" class="chatbot-messages" role="log" aria-live="polite">
             <div class="message bot-message">
                 <div class="message-content">
@@ -122,14 +122,14 @@ Add this to your Jekyll layout or include file:
                 <div class="message-timestamp">{{ 'now' | date: '%H:%M' }}</div>
             </div>
         </div>
-        
+
         <form id="chatbot-form" class="chatbot-input-form">
             <div class="input-group">
                 <label for="chatbot-input" class="sr-only">Ask a question</label>
-                <input 
-                    type="text" 
-                    id="chatbot-input" 
-                    class="chatbot-input" 
+                <input
+                    type="text"
+                    id="chatbot-input"
+                    class="chatbot-input"
                     placeholder="Ask me anything about development, Jekyll, or IT topics..."
                     autocomplete="off"
                     maxlength="500"
@@ -141,7 +141,7 @@ Add this to your Jekyll layout or include file:
                 </button>
             </div>
         </form>
-        
+
         <div class="chatbot-status" id="chatbot-status" aria-live="polite"></div>
     </div>
 </div>
@@ -175,17 +175,17 @@ Create a comprehensive CSS file:
     justify-content: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     color: white;
-    
+
     svg {
         width: 24px;
         height: 24px;
     }
-    
+
     &:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
     }
-    
+
     &:focus {
         outline: 2px solid #4f46e5;
         outline-offset: 2px;
@@ -205,12 +205,12 @@ Create a comprehensive CSS file:
     display: none;
     flex-direction: column;
     overflow: hidden;
-    
+
     &.active {
         display: flex;
         animation: chatbotSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     @media (max-width: 768px) {
         position: fixed;
         top: 0;
@@ -241,7 +241,7 @@ Create a comprehensive CSS file:
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     h3 {
         margin: 0;
         font-size: 16px;
@@ -263,11 +263,11 @@ Create a comprehensive CSS file:
     justify-content: center;
     border-radius: 4px;
     transition: background-color 0.2s;
-    
+
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
-    
+
     &:focus {
         outline: 2px solid rgba(255, 255, 255, 0.5);
         outline-offset: 1px;
@@ -288,20 +288,20 @@ Create a comprehensive CSS file:
     display: flex;
     flex-direction: column;
     max-width: 85%;
-    
+
     &.user-message {
         align-self: flex-end;
-        
+
         .message-content {
             background: #4f46e5;
             color: white;
             border-radius: 18px 18px 4px 18px;
         }
     }
-    
+
     &.bot-message {
         align-self: flex-start;
-        
+
         .message-content {
             background: white;
             color: #374151;
@@ -315,29 +315,29 @@ Create a comprehensive CSS file:
     padding: 12px 16px;
     font-size: 14px;
     line-height: 1.5;
-    
+
     p {
         margin: 0;
-        
+
         &:not(:last-child) {
             margin-bottom: 8px;
         }
     }
-    
+
     code {
         background: rgba(0, 0, 0, 0.1);
         padding: 2px 4px;
         border-radius: 3px;
         font-size: 13px;
     }
-    
+
     pre {
         background: rgba(0, 0, 0, 0.05);
         padding: 8px;
         border-radius: 6px;
         overflow-x: auto;
         margin: 8px 0;
-        
+
         code {
             background: none;
             padding: 0;
@@ -375,12 +375,12 @@ Create a comprehensive CSS file:
     min-height: 20px;
     max-height: 100px;
     transition: border-color 0.2s;
-    
+
     &:focus {
         border-color: #4f46e5;
         box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
     }
-    
+
     &::placeholder {
         color: #9ca3af;
     }
@@ -398,22 +398,22 @@ Create a comprehensive CSS file:
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    
+
     svg {
         width: 18px;
         height: 18px;
     }
-    
+
     &:hover:not(:disabled) {
         background: #4338ca;
         transform: scale(1.05);
     }
-    
+
     &:disabled {
         opacity: 0.5;
         cursor: not-allowed;
     }
-    
+
     &:focus {
         outline: 2px solid #4f46e5;
         outline-offset: 2px;
@@ -429,7 +429,7 @@ Create a comprehensive CSS file:
     min-height: 32px;
     display: flex;
     align-items: center;
-    
+
     &.typing {
         &::after {
             content: '';
@@ -471,36 +471,36 @@ Create a comprehensive CSS file:
     .chatbot-widget {
         background: #1f2937;
         border-color: #374151;
-        
+
         .chatbot-messages {
             background: #111827;
         }
-        
+
         .bot-message .message-content {
             background: #374151;
             color: #f9fafb;
             border-color: #4b5563;
         }
-        
+
         .chatbot-input-form {
             background: #1f2937;
             border-color: #374151;
         }
-        
+
         .chatbot-input {
             background: #374151;
             border-color: #4b5563;
             color: #f9fafb;
-            
+
             &::placeholder {
                 color: #9ca3af;
             }
-            
+
             &:focus {
                 border-color: #6366f1;
             }
         }
-        
+
         .chatbot-status {
             background: #111827;
             border-color: #374151;
@@ -532,15 +532,15 @@ class ITJourneyChatbot {
             maxHistoryLength: config.maxHistoryLength || 10,
             ...config
         };
-        
+
         this.isOpen = false;
         this.isLoading = false;
         this.conversationHistory = [];
         this.siteContext = this.extractSiteContext();
-        
+
         this.init();
     }
-    
+
     getDefaultSystemPrompt() {
         const currentPage = this.getCurrentPageContext();
         return `You are an AI assistant for the IT-Journey learning platform, a comprehensive resource for technology education and development skills.
@@ -565,7 +565,7 @@ Guidelines:
 - Maintain a supportive, educational tone
 - If you don't know something, recommend checking the site's documentation or latest posts`;
     }
-    
+
     getCurrentPageContext() {
         return {
             title: document.title,
@@ -575,17 +575,17 @@ Guidelines:
             url: window.location.pathname
         };
     }
-    
+
     extractMetaContent(name) {
         const meta = document.querySelector(`meta[name="${name}"], meta[property="og:${name}"]`);
         return meta ? meta.getAttribute('content') : null;
     }
-    
+
     extractFromPath() {
         const pathParts = window.location.pathname.split('/').filter(Boolean);
         return pathParts.length > 0 ? pathParts[0] : 'general';
     }
-    
+
     extractSiteContext() {
         return {
             url: window.location.href,
@@ -596,11 +596,11 @@ Guidelines:
             headings: Array.from(document.querySelectorAll('h1, h2, h3')).map(h => h.textContent.trim()).slice(0, 10)
         };
     }
-    
+
     init() {
         this.bindEvents();
         this.loadChatHistory();
-        
+
         // Initialize after DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => this.setupElements());
@@ -608,7 +608,7 @@ Guidelines:
             this.setupElements();
         }
     }
-    
+
     setupElements() {
         this.elements = {
             container: document.getElementById('ai-chatbot-container'),
@@ -621,20 +621,20 @@ Guidelines:
             send: document.querySelector('.chatbot-send'),
             status: document.getElementById('chatbot-status')
         };
-        
+
         // Verify all elements exist
         const missingElements = Object.entries(this.elements)
             .filter(([key, element]) => !element)
             .map(([key]) => key);
-            
+
         if (missingElements.length > 0) {
             console.warn('Chatbot: Missing elements:', missingElements);
             return;
         }
-        
+
         this.bindElementEvents();
     }
-    
+
     bindEvents() {
         document.addEventListener('keydown', (e) => {
             // Close chatbot with Escape key
@@ -643,15 +643,15 @@ Guidelines:
             }
         });
     }
-    
+
     bindElementEvents() {
         this.elements.toggle.addEventListener('click', () => this.toggleChatbot());
         this.elements.close.addEventListener('click', () => this.closeChatbot());
         this.elements.form.addEventListener('submit', (e) => this.handleSubmit(e));
-        
+
         // Auto-resize input
         this.elements.input.addEventListener('input', () => this.adjustInputHeight());
-        
+
         // Click outside to close
         document.addEventListener('click', (e) => {
             if (this.isOpen && !this.elements.container.contains(e.target)) {
@@ -659,7 +659,7 @@ Guidelines:
             }
         });
     }
-    
+
     toggleChatbot() {
         if (this.isOpen) {
             this.closeChatbot();
@@ -667,36 +667,36 @@ Guidelines:
             this.openChatbot();
         }
     }
-    
+
     openChatbot() {
         this.isOpen = true;
         this.elements.widget.classList.add('active');
         this.elements.widget.setAttribute('aria-hidden', 'false');
         this.elements.input.focus();
-        
+
         // Track opening for analytics
         this.trackEvent('chatbot_opened');
     }
-    
+
     closeChatbot() {
         this.isOpen = false;
         this.elements.widget.classList.remove('active');
         this.elements.widget.setAttribute('aria-hidden', 'true');
-        
+
         // Track closing for analytics
         this.trackEvent('chatbot_closed');
     }
-    
+
     async handleSubmit(e) {
         e.preventDefault();
-        
+
         const message = this.elements.input.value.trim();
         if (!message || this.isLoading) return;
-        
+
         this.addMessage('user', message);
         this.elements.input.value = '';
         this.adjustInputHeight();
-        
+
         try {
             this.setLoading(true);
             const response = await this.sendMessage(message);
@@ -708,7 +708,7 @@ Guidelines:
             this.setLoading(false);
         }
     }
-    
+
     async sendMessage(message) {
         // Add message to conversation history
         this.conversationHistory.push({
@@ -716,7 +716,7 @@ Guidelines:
             content: message,
             timestamp: new Date().toISOString()
         });
-        
+
         // Prepare the payload
         const payload = {
             messages: [
@@ -734,27 +734,27 @@ Guidelines:
             temperature: this.config.temperature,
             site_context: this.siteContext
         };
-        
+
         // Send to API
         const response = await this.callAPI(payload);
-        
+
         // Add response to history
         this.conversationHistory.push({
             role: 'assistant',
             content: response,
             timestamp: new Date().toISOString()
         });
-        
+
         // Save to localStorage
         if (this.config.enableLocalStorage) {
             this.saveChatHistory();
         }
-        
+
         this.trackEvent('message_sent', { message_length: message.length });
-        
+
         return response;
     }
-    
+
     async callAPI(payload) {
         const options = {
             method: 'POST',
@@ -763,20 +763,20 @@ Guidelines:
             },
             body: JSON.stringify(payload)
         };
-        
+
         // Add API key if configured
         if (this.config.apiKey) {
             options.headers['Authorization'] = `Bearer ${this.config.apiKey}`;
         }
-        
+
         const response = await fetch(this.config.apiEndpoint, options);
-        
+
         if (!response.ok) {
             throw new Error(`API request failed: ${response.status} ${response.statusText}`);
         }
-        
+
         const data = await response.json();
-        
+
         // Handle different API response formats
         if (data.choices && data.choices[0] && data.choices[0].message) {
             return data.choices[0].message.content;
@@ -788,7 +788,7 @@ Guidelines:
             throw new Error('Unexpected API response format');
         }
     }
-    
+
     addMessage(type, content) {
         const messageDiv = document.createElement('div');
         messageDiv.className = `message ${type}-message`;
@@ -798,14 +798,14 @@ Guidelines:
             </div>
             <div class="message-timestamp">${this.formatTimestamp(new Date())}</div>
         `;
-        
+
         this.elements.messages.appendChild(messageDiv);
         this.scrollToBottom();
-        
+
         // Announce to screen readers
         messageDiv.setAttribute('aria-live', 'polite');
     }
-    
+
     formatMessageContent(content) {
         // Basic markdown-like formatting
         return content
@@ -816,30 +816,30 @@ Guidelines:
             .replace(/\n/g, '<br>')
             .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
     }
-    
+
     formatTimestamp(date) {
-        return date.toLocaleTimeString('en-US', { 
-            hour: '2-digit', 
+        return date.toLocaleTimeString('en-US', {
+            hour: '2-digit',
             minute: '2-digit',
-            hour12: false 
+            hour12: false
         });
     }
-    
+
     scrollToBottom() {
         this.elements.messages.scrollTop = this.elements.messages.scrollHeight;
     }
-    
+
     adjustInputHeight() {
         const input = this.elements.input;
         input.style.height = 'auto';
         input.style.height = Math.min(input.scrollHeight, 100) + 'px';
     }
-    
+
     setLoading(loading) {
         this.isLoading = loading;
         this.elements.send.disabled = loading;
         this.elements.input.disabled = loading;
-        
+
         if (loading) {
             this.elements.status.textContent = 'AI is thinking...';
             this.elements.status.className = 'chatbot-status typing';
@@ -848,7 +848,7 @@ Guidelines:
             this.elements.status.className = 'chatbot-status';
         }
     }
-    
+
     getErrorMessage(error) {
         const errorMessages = {
             'Failed to fetch': 'Unable to connect to the AI service. Please check your internet connection and try again.',
@@ -856,11 +856,11 @@ Guidelines:
             'API request failed: 429': 'Too many requests. Please wait a moment before trying again.',
             'API request failed: 500': 'The AI service is temporarily unavailable. Please try again later.'
         };
-        
+
         const errorKey = Object.keys(errorMessages).find(key => error.message.includes(key));
         return errorKey ? errorMessages[errorKey] : 'Sorry, I encountered an error. Please try again.';
     }
-    
+
     saveChatHistory() {
         try {
             localStorage.setItem('itjourney_chat_history', JSON.stringify(this.conversationHistory));
@@ -868,15 +868,15 @@ Guidelines:
             console.warn('Failed to save chat history:', error);
         }
     }
-    
+
     loadChatHistory() {
         if (!this.config.enableLocalStorage) return;
-        
+
         try {
             const saved = localStorage.getItem('itjourney_chat_history');
             if (saved) {
                 this.conversationHistory = JSON.parse(saved);
-                
+
                 // Restore messages to UI
                 this.conversationHistory.forEach(msg => {
                     if (msg.role === 'user') {
@@ -890,7 +890,7 @@ Guidelines:
             console.warn('Failed to load chat history:', error);
         }
     }
-    
+
     clearHistory() {
         this.conversationHistory = [];
         this.elements.messages.innerHTML = `
@@ -901,14 +901,14 @@ Guidelines:
                 <div class="message-timestamp">${this.formatTimestamp(new Date())}</div>
             </div>
         `;
-        
+
         if (this.config.enableLocalStorage) {
             localStorage.removeItem('itjourney_chat_history');
         }
-        
+
         this.trackEvent('chat_history_cleared');
     }
-    
+
     trackEvent(eventName, data = {}) {
         // Integration with analytics (Google Analytics, etc.)
         if (typeof gtag !== 'undefined') {
@@ -917,7 +917,7 @@ Guidelines:
                 ...data
             });
         }
-        
+
         // Console logging for development
         console.log('Chatbot event:', eventName, data);
     }
@@ -934,7 +934,7 @@ document.addEventListener('DOMContentLoaded', function() {
             enableTypingIndicator: true,
             maxHistoryLength: 10
         };
-        
+
         window.itJourneyChatbot = new ITJourneyChatbot(chatbotConfig);
     }
 });
@@ -963,11 +963,11 @@ exports.handler = async (event, context) => {
         'Access-Control-Allow-Methods': 'POST, OPTIONS',
         'Content-Type': 'application/json',
     };
-    
+
     if (event.httpMethod === 'OPTIONS') {
         return { statusCode: 200, headers, body: '' };
     }
-    
+
     if (event.httpMethod !== 'POST') {
         return {
             statusCode: 405,
@@ -975,10 +975,10 @@ exports.handler = async (event, context) => {
             body: JSON.stringify({ error: 'Method not allowed' })
         };
     }
-    
+
     try {
         const { messages, model = 'gpt-3.5-turbo', max_tokens = 500, temperature = 0.7, site_context } = JSON.parse(event.body);
-        
+
         // Enhance system message with site context
         const enhancedMessages = messages.map((message, index) => {
             if (index === 0 && message.role === 'system') {
@@ -995,7 +995,7 @@ Current page context:
             }
             return message;
         });
-        
+
         const completion = await openai.createChatCompletion({
             model,
             messages: enhancedMessages,
@@ -1004,7 +1004,7 @@ Current page context:
             presence_penalty: 0.6,
             frequency_penalty: 0.5,
         });
-        
+
         return {
             statusCode: 200,
             headers,
@@ -1013,14 +1013,14 @@ Current page context:
                 usage: completion.data.usage
             })
         };
-        
+
     } catch (error) {
         console.error('Chat API error:', error);
-        
+
         return {
             statusCode: 500,
             headers,
-            body: JSON.stringify({ 
+            body: JSON.stringify({
                 error: 'Internal server error',
                 message: 'Sorry, I encountered an error processing your request.'
             })
@@ -1047,7 +1047,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
       'tags' => extract_tags(site)
     }
   }
-  
+
   # Write config to JavaScript file
   config_js = "window.chatbotConfig = #{chatbot_config.to_json};"
   File.write(File.join(site.dest, 'assets/js/chatbot-config.js'), config_js)
@@ -1055,7 +1055,7 @@ end
 
 def generate_knowledge_base(site)
   knowledge_base = []
-  
+
   site.posts.docs.each do |post|
     knowledge_base << {
       'title' => post.data['title'],
@@ -1066,7 +1066,7 @@ def generate_knowledge_base(site)
       'date' => post.date
     }
   end
-  
+
   knowledge_base.sort_by { |item| item['date'] }.reverse.first(50)
 end
 
@@ -1090,7 +1090,7 @@ Enhance the chatbot with Jekyll site awareness:
 getContextAwareSystemPrompt() {
     const pageData = this.extractPageData();
     const relatedPosts = this.findRelatedPosts();
-    
+
     return `You are an AI assistant for IT-Journey. Current context:
 
 Page Information:
@@ -1113,7 +1113,7 @@ Instructions:
 findRelatedPosts() {
     // This would use the knowledge base generated by Jekyll plugin
     const currentTags = this.getCurrentPageContext().tags || [];
-    return window.chatbotConfig?.knowledge_base?.filter(post => 
+    return window.chatbotConfig?.knowledge_base?.filter(post =>
         post.tags.some(tag => currentTags.includes(tag))
     ).slice(0, 3) || [];
 }
@@ -1129,7 +1129,7 @@ enhanceAccessibility() {
     // Add ARIA labels and descriptions
     this.elements.widget.setAttribute('aria-label', 'AI Assistant Chat Interface');
     this.elements.messages.setAttribute('aria-label', 'Chat conversation');
-    
+
     // Keyboard navigation
     this.elements.widget.addEventListener('keydown', (e) => {
         if (e.key === 'Tab' && e.shiftKey && e.target === this.elements.input) {
@@ -1138,7 +1138,7 @@ enhanceAccessibility() {
             this.elements.close.focus();
         }
     });
-    
+
     // Screen reader announcements
     this.announceToScreenReader = (message) => {
         const announcement = document.createElement('div');
@@ -1147,7 +1147,7 @@ enhanceAccessibility() {
         announcement.className = 'sr-only';
         announcement.textContent = message;
         document.body.appendChild(announcement);
-        
+
         setTimeout(() => document.body.removeChild(announcement), 1000);
     };
 }
@@ -1162,7 +1162,7 @@ Implement lazy loading and optimization:
 class ChatbotLoader {
     static async loadChatbot() {
         if (window.itJourneyChatbot) return window.itJourneyChatbot;
-        
+
         // Load CSS if not already loaded
         if (!document.querySelector('link[href*="chatbot.css"]')) {
             const link = document.createElement('link');
@@ -1170,11 +1170,11 @@ class ChatbotLoader {
             link.href = '/assets/css/chatbot.css';
             document.head.appendChild(link);
         }
-        
+
         // Initialize chatbot
         const { ITJourneyChatbot } = await import('./chatbot.js');
         window.itJourneyChatbot = new ITJourneyChatbot();
-        
+
         return window.itJourneyChatbot;
     }
 }
@@ -1226,17 +1226,17 @@ async debugAPIConnection() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ test: true })
         });
-        
+
         console.log('API Status:', response.status);
         console.log('API Headers:', response.headers);
-        
+
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
-        
+
         const data = await response.json();
         console.log('API Response:', data);
-        
+
     } catch (error) {
         console.error('API Debug Error:', error);
         this.addMessage('bot', `Debug info: ${error.message}`);
@@ -1254,12 +1254,12 @@ async debugAPIConnection() {
     --chatbot-background: #ffffff;
     --chatbot-text: #374151;
     --chatbot-border: #e5e7eb;
-    
+
     // Reset conflicting inherited styles
     * {
         box-sizing: border-box;
     }
-    
+
     // Isolate from theme styles
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.5;
@@ -1275,10 +1275,10 @@ cleanup() {
     // Remove event listeners
     this.elements.toggle?.removeEventListener('click', this.toggleHandler);
     this.elements.form?.removeEventListener('submit', this.submitHandler);
-    
+
     // Clear conversation history
     this.conversationHistory = [];
-    
+
     // Clear any running timers
     if (this.typingTimer) {
         clearTimeout(this.typingTimer);

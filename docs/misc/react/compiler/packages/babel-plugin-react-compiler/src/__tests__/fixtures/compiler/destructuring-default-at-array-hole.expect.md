@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructuring-default-at-array-hole.expect.md
 ---
+# Destructuring Default At Array Hole.Expect
+
 ## Input
 
 ```javascript
@@ -37,6 +39,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) 42

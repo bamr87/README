@@ -16,7 +16,7 @@ source_file: version-management-fixed.md
 @lastModified 2025-07-05
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #auto-version-management: Comprehensive version tracking and management
 
 @relatedEvolutions
@@ -44,7 +44,7 @@ The AI Evolution Engine includes a comprehensive version management system that 
 ### Automatic Version Tracking
 
 - **File-Level Tracking**: Monitors individual files for changes since last version update
-- **Pattern-Based Updates**: Uses configurable patterns to find and update version references  
+- **Pattern-Based Updates**: Uses configurable patterns to find and update version references
 - **Cross-Platform Support**: Works on macOS, Linux, and Windows environments
 - **Git Integration**: Leverages git history to determine when files need version updates
 
@@ -196,13 +196,13 @@ The system uses pattern-based matching to find version references in files:
   "path": "README.md",
   "patterns": [
     {
-      "type": "ascii_art", 
+      "type": "ascii_art",
       "pattern": "v[0-9]+\\.[0-9]+\\.[0-9]+(-seed)?",
       "line_context": "AI EVOLUTION ENGINE"
     },
     {
       "type": "badge",
-      "pattern": "version-[0-9]+\\.[0-9]+\\.[0-9]+(--seed)?", 
+      "pattern": "version-[0-9]+\\.[0-9]+\\.[0-9]+(--seed)?",
       "line_context": "[![Version]"
     }
   ],
@@ -254,7 +254,7 @@ Add to your workflow:
 - name: Manage Version for Evolution
   run: |
     ./scripts/version-integration.sh evolution "AI evolution cycle: ${{ github.event.inputs.prompt }}"
-    
+
 - name: Commit Version Updates
   run: |
     git add .

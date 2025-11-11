@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: error.validate-mutate-ref-arg-in-render.expect.md
 ---
+# Error.Validate Mutate Ref Arg In Render.Expect
+
 ## Input
 
 ```javascript
@@ -43,5 +45,4 @@ error.validate-mutate-ref-arg-in-render.ts:3:14
   5 | }
   6 |
 ```
-          
-      
+

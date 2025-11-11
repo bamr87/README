@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: infer-computed-delete.expect.md
 ---
+# Infer Computed Delete.Expect
+
 ## Input
 
 ```javascript
@@ -29,4 +31,3 @@ function Component(props) {
 }
 
 ```
-      

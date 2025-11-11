@@ -70,25 +70,25 @@ from parodynews.models import Article
 @pytest.mark.django_db
 class TestArticleModel:
     """Test suite for Article model"""
-    
+
     def test_article_creation(self):
         """Test creating an article"""
         user = User.objects.create_user(
             username='testuser',
             password='testpass123'
         )
-        
+
         article = Article.objects.create(
             title='Test Article Title',
             content='Test article content goes here.',
             author=user,
             category='tech'
         )
-        
+
         assert article.id is not None
         assert article.slug == 'test-article-title'
         assert str(article) == 'Test Article Title'
-    
+
     def test_article_str_representation(self):
         """Test article string representation"""
         user = User.objects.create_user(username='author')
@@ -97,9 +97,9 @@ class TestArticleModel:
             content='Content',
             author=user
         )
-        
+
         assert str(article) == 'My Article'
-    
+
     def test_article_get_absolute_url(self):
         """Test article URL generation"""
         user = User.objects.create_user(username='author')
@@ -109,7 +109,7 @@ class TestArticleModel:
             content='Content',
             author=user
         )
-        
+
         assert article.get_absolute_url() == '/articles/my-article/'
 ```
 
@@ -161,7 +161,7 @@ def multiple_articles(test_user):
 def test_published_articles_query(multiple_articles):
     """Test filtering published articles"""
     published = Article.objects.filter(is_published=True)
-    
+
     # Should exclude articles where i % 3 == 0 (indices 0, 3)
     assert published.count() == 3
 ```
@@ -178,44 +178,44 @@ from parodynews.models import Article
 @pytest.mark.django_db
 class TestArticleViews:
     """Test suite for article views"""
-    
+
     def test_article_list_view(self, client, multiple_articles):
         """Test article list displays published articles"""
         url = reverse('article-list')
         response = client.get(url)
-        
+
         assert response.status_code == 200
         assert 'articles' in response.context
-        
+
         # Should only show published articles
         articles = response.context['articles']
         assert all(article.is_published for article in articles)
-    
+
     def test_article_detail_view(self, client, test_article):
         """Test article detail view"""
         url = reverse('article-detail', kwargs={'slug': test_article.slug})
         response = client.get(url)
-        
+
         assert response.status_code == 200
         assert response.context['article'] == test_article
         assert test_article.title in response.content.decode()
-    
+
     def test_article_create_view_requires_login(self, client):
         """Test article creation requires authentication"""
         url = reverse('article-create')
         response = client.get(url)
-        
+
         # Should redirect to login
         assert response.status_code == 302
         assert '/accounts/login/' in response.url
-    
+
     def test_article_create_view_authenticated(self, client, test_user):
         """Test article creation with authenticated user"""
         client.force_login(test_user)
-        
+
         url = reverse('article-create')
         response = client.get(url)
-        
+
         assert response.status_code == 200
         assert 'form' in response.context
 ```
@@ -231,7 +231,7 @@ from parodynews.models import Article
 @pytest.mark.django_db
 class TestArticleForm:
     """Test suite for article forms"""
-    
+
     def test_valid_form(self, test_user):
         """Test form with valid data"""
         form_data = {
@@ -240,18 +240,18 @@ class TestArticleForm:
             'category': 'tech',
             'is_published': False
         }
-        
+
         form = ArticleForm(data=form_data)
         assert form.is_valid()
-    
+
     def test_form_missing_required_fields(self):
         """Test form validation with missing required fields"""
         form = ArticleForm(data={})
-        
+
         assert not form.is_valid()
         assert 'title' in form.errors
         assert 'content' in form.errors
-    
+
     def test_form_title_too_short(self):
         """Test form validation for minimum title length"""
         form_data = {
@@ -259,11 +259,11 @@ class TestArticleForm:
             'content': 'Valid content that is long enough.',
             'category': 'tech'
         }
-        
+
         form = ArticleForm(data=form_data)
         assert not form.is_valid()
         assert 'title' in form.errors
-    
+
     def test_form_duplicate_title(self, test_article):
         """Test form prevents duplicate titles"""
         form_data = {
@@ -271,7 +271,7 @@ class TestArticleForm:
             'content': 'Different content',
             'category': 'tech'
         }
-        
+
         form = ArticleForm(data=form_data)
         assert not form.is_valid()
         assert 'title' in form.errors
@@ -297,24 +297,24 @@ def api_client():
 @pytest.mark.django_db
 class TestArticleAPI:
     """Test suite for Article API endpoints"""
-    
+
     def test_list_articles(self, api_client, multiple_articles):
         """Test GET /api/articles/"""
         url = reverse('article-list')
         response = api_client.get(url)
-        
+
         assert response.status_code == status.HTTP_200_OK
         assert 'results' in response.data or isinstance(response.data, list)
-    
+
     def test_get_article_detail(self, api_client, test_article):
         """Test GET /api/articles/{slug}/"""
         url = reverse('article-detail', kwargs={'slug': test_article.slug})
         response = api_client.get(url)
-        
+
         assert response.status_code == status.HTTP_200_OK
         assert response.data['title'] == test_article.title
         assert response.data['slug'] == test_article.slug
-    
+
     def test_create_article_requires_authentication(self, api_client):
         """Test POST /api/articles/ requires auth"""
         url = reverse('article-list')
@@ -323,26 +323,26 @@ class TestArticleAPI:
             'content': 'Article content',
             'category': 'tech'
         }
-        
+
         response = api_client.post(url, data, format='json')
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
-    
+
     def test_create_article_authenticated(self, api_client, test_user):
         """Test POST /api/articles/ with authentication"""
         api_client.force_authenticate(user=test_user)
-        
+
         url = reverse('article-list')
         data = {
             'title': 'New Authenticated Article',
             'content': 'This article is created by authenticated user.',
             'category': 'politics'
         }
-        
+
         response = api_client.post(url, data, format='json')
-        
+
         assert response.status_code == status.HTTP_201_CREATED
         assert response.data['title'] == data['title']
-        
+
         # Verify article was created in database
         assert Article.objects.filter(title=data['title']).exists()
 ```
@@ -357,7 +357,7 @@ from parodynews.services.openai_service import OpenAIService
 
 class TestOpenAIService:
     """Test suite for OpenAI service"""
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_success(self, mock_create):
         """Test successful content generation"""
@@ -367,48 +367,48 @@ class TestOpenAIService:
             MagicMock(message=MagicMock(content='Generated parody content'))
         ]
         mock_create.return_value = mock_response
-        
+
         service = OpenAIService()
         result = service.generate_parody_content('Test prompt')
-        
+
         assert result == 'Generated parody content'
         mock_create.assert_called_once()
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_retry_on_rate_limit(self, mock_create):
         """Test retry logic on rate limit error"""
         import openai
-        
+
         # First call fails with rate limit, second succeeds
         mock_success = MagicMock()
         mock_success.choices = [
             MagicMock(message=MagicMock(content='Success after retry'))
         ]
-        
+
         mock_create.side_effect = [
             openai.RateLimitError('Rate limit exceeded'),
             mock_success
         ]
-        
+
         service = OpenAIService()
         result = service.generate_parody_content('Test prompt')
-        
+
         assert result == 'Success after retry'
         assert mock_create.call_count == 2
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_content_failure_after_retries(self, mock_create):
         """Test failure after max retries"""
         import openai
-        
+
         # All attempts fail
         mock_create.side_effect = openai.APIError('API Error')
-        
+
         service = OpenAIService()
-        
+
         with pytest.raises(openai.APIError):
             service.generate_parody_content('Test prompt')
-        
+
         assert mock_create.call_count == 3  # max_retries
 ```
 
@@ -488,7 +488,7 @@ python_files = test_*.py
 python_classes = Test*
 python_functions = test_*
 testpaths = tests
-addopts = 
+addopts =
     --verbose
     --strict-markers
     --cov=parodynews
@@ -562,7 +562,7 @@ from parodynews.models import Article
 @pytest.mark.django_db
 class TestArticleModel:
     """Test Article model functionality"""
-    
+
     def test_slug_auto_generation(self, test_user):
         """Test slug is automatically generated from title"""
         article = Article.objects.create(
@@ -570,9 +570,9 @@ class TestArticleModel:
             content='Article content',
             author=test_user
         )
-        
+
         assert article.slug == 'my-test-article-title'
-    
+
     def test_published_at_set_on_publish(self, test_user):
         """Test published_at is set when article is published"""
         article = Article.objects.create(
@@ -581,15 +581,15 @@ class TestArticleModel:
             author=test_user,
             is_published=False
         )
-        
+
         assert article.published_at is None
-        
+
         # Publish the article
         article.is_published = True
         article.save()
-        
+
         assert article.published_at is not None
-    
+
     def test_article_ordering(self, test_user):
         """Test articles are ordered by publication date"""
         # Create articles with different publish dates
@@ -599,16 +599,16 @@ class TestArticleModel:
             author=test_user,
             is_published=True
         )
-        
+
         new_article = Article.objects.create(
             title='New Article',
             content='Content',
             author=test_user,
             is_published=True
         )
-        
+
         articles = Article.objects.all()
-        
+
         # New article should come first
         assert articles[0] == new_article
         assert articles[1] == old_article
@@ -626,29 +626,29 @@ from parodynews.views import ArticleListView, ArticleDetailView
 @pytest.mark.django_db
 class TestArticleViews:
     """Test article views"""
-    
+
     @pytest.fixture
     def factory(self):
         return RequestFactory()
-    
+
     def test_article_list_view(self, factory, multiple_articles):
         """Test article list view"""
         request = factory.get('/articles/')
         request.user = AnonymousUser()
-        
+
         view = ArticleListView.as_view()
         response = view(request)
-        
+
         assert response.status_code == 200
-    
+
     def test_article_detail_view(self, factory, test_article):
         """Test article detail view"""
         request = factory.get(f'/articles/{test_article.slug}/')
         request.user = AnonymousUser()
-        
+
         view = ArticleDetailView.as_view()
         response = view(request, slug=test_article.slug)
-        
+
         assert response.status_code == 200
         assert response.context_data['article'] == test_article
 ```
@@ -665,16 +665,16 @@ from parodynews.models import Article
 @pytest.mark.django_db
 class TestArticleAPI:
     """Test Article API endpoints"""
-    
+
     def test_list_articles_unauthenticated(self, api_client, multiple_articles):
         """Test listing articles without authentication"""
         url = reverse('article-list')
         response = api_client.get(url)
-        
+
         assert response.status_code == status.HTTP_200_OK
         # Should only return published articles
         assert all(article['is_published'] for article in response.data['results'])
-    
+
     def test_create_article_requires_auth(self, api_client):
         """Test creating article requires authentication"""
         url = reverse('article-list')
@@ -683,10 +683,10 @@ class TestArticleAPI:
             'content': 'Article content',
             'category': 'tech'
         }
-        
+
         response = api_client.post(url, data, format='json')
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
-    
+
     def test_create_article_authenticated(self, authenticated_client):
         """Test creating article with authentication"""
         url = reverse('article-list')
@@ -695,13 +695,13 @@ class TestArticleAPI:
             'content': 'Content created by authenticated user.',
             'category': 'politics'
         }
-        
+
         response = authenticated_client.post(url, data, format='json')
-        
+
         assert response.status_code == status.HTTP_201_CREATED
         assert response.data['title'] == data['title']
         assert Article.objects.filter(title=data['title']).exists()
-    
+
     def test_update_article_permissions(self, authenticated_client, test_user):
         """Test only article author can update"""
         # Create article by test_user
@@ -711,13 +711,13 @@ class TestArticleAPI:
             author=test_user,
             category='tech'
         )
-        
+
         url = reverse('article-detail', kwargs={'slug': article.slug})
         data = {'title': 'Updated Title'}
-        
+
         response = authenticated_client.patch(url, data, format='json')
         assert response.status_code == status.HTTP_200_OK
-        
+
         article.refresh_from_db()
         assert article.title == 'Updated Title'
 ```
@@ -742,19 +742,19 @@ def browser_context_args(browser_context_args):
 def test_homepage_loads(page: Page, live_server):
     """Test homepage loads successfully"""
     page.goto(f'{live_server.url}/')
-    
+
     expect(page).to_have_title('Parody News')
     expect(page.locator('h1')).to_contain_text('Welcome')
 
 def test_user_login_flow(page: Page, live_server, test_user):
     """Test user can log in"""
     page.goto(f'{live_server.url}/accounts/login/')
-    
+
     # Fill in login form
     page.fill('input[name="username"]', 'testuser')
     page.fill('input[name="password"]', 'testpass123')
     page.click('button[type="submit"]')
-    
+
     # Should redirect to home and show user menu
     expect(page).to_have_url(f'{live_server.url}/')
     expect(page.locator('.user-menu')).to_be_visible()
@@ -766,18 +766,18 @@ def test_create_article_flow(page: Page, live_server, test_user):
     page.fill('input[name="username"]', 'testuser')
     page.fill('input[name="password"]', 'testpass123')
     page.click('button[type="submit"]')
-    
+
     # Navigate to create article
     page.goto(f'{live_server.url}/articles/create/')
-    
+
     # Fill in article form
     page.fill('input[name="title"]', 'Test Article via UI')
     page.fill('textarea[name="content"]', 'This is test content created through the UI.')
     page.select_option('select[name="category"]', 'tech')
-    
+
     # Submit form
     page.click('button[type="submit"]')
-    
+
     # Should redirect to article detail
     expect(page.locator('h1')).to_contain_text('Test Article via UI')
 ```
@@ -794,10 +794,10 @@ from parodynews.models import Article
 
 class UserFactory(factory.django.DjangoModelFactory):
     """Factory for creating test users"""
-    
+
     class Meta:
         model = User
-    
+
     username = factory.Sequence(lambda n: f'user{n}')
     email = factory.LazyAttribute(lambda obj: f'{obj.username}@example.com')
     first_name = factory.Faker('first_name')
@@ -805,10 +805,10 @@ class UserFactory(factory.django.DjangoModelFactory):
 
 class ArticleFactory(factory.django.DjangoModelFactory):
     """Factory for creating test articles"""
-    
+
     class Meta:
         model = Article
-    
+
     title = factory.Faker('sentence', nb_words=6)
     slug = factory.LazyAttribute(lambda obj: slugify(obj.title))
     content = factory.Faker('paragraphs', nb=3)
@@ -822,7 +822,7 @@ def test_with_factories():
     """Test using factory-created objects"""
     # Create 5 articles with random data
     articles = ArticleFactory.create_batch(5)
-    
+
     assert Article.objects.count() == 5
     assert all(article.is_published for article in articles)
 ```
@@ -865,10 +865,10 @@ def test_with_factories():
 def test_with_fixtures(django_db_setup, django_db_blocker):
     """Test using JSON fixtures"""
     from django.core.management import call_command
-    
+
     with django_db_blocker.unblock():
         call_command('loaddata', 'tests/fixtures/articles.json')
-    
+
     assert Article.objects.count() == 2
 ```
 
@@ -926,12 +926,12 @@ from django.test.utils import CaptureQueriesContext
 def test_article_list_query_count(client, multiple_articles):
     """Test article list doesn't cause N+1 queries"""
     url = reverse('article-list')
-    
+
     with CaptureQueriesContext(connection) as queries:
         response = client.get(url)
-    
+
     assert response.status_code == 200
-    
+
     # Should use select_related/prefetch_related to minimize queries
     # Adjust threshold based on your implementation
     assert len(queries) <= 5, f"Too many queries: {len(queries)}"
@@ -940,13 +940,13 @@ def test_article_list_query_count(client, multiple_articles):
 def test_api_response_time(api_client, multiple_articles):
     """Test API response time is acceptable"""
     import time
-    
+
     url = reverse('article-list')
-    
+
     start = time.time()
     response = api_client.get(url)
     elapsed = time.time() - start
-    
+
     assert response.status_code == 200
     assert elapsed < 1.0, f"Response too slow: {elapsed}s"
 ```
@@ -976,34 +976,34 @@ CONTENT: In an unprecedented development, the latest AI model...
 @pytest.mark.django_db
 class TestContentGenerator:
     """Test content generation service"""
-    
+
     @patch('openai.ChatCompletion.create')
     def test_generate_with_caching(self, mock_create, mock_openai_response):
         """Test content generation uses caching"""
         from django.core.cache import cache
-        
+
         mock_create.return_value = mock_openai_response
-        
+
         generator = ContentGenerator()
-        
+
         # First call should hit API
         result1 = generator.generate('AI news', 'tech')
         assert mock_create.call_count == 1
-        
+
         # Second identical call should use cache
         result2 = generator.generate('AI news', 'tech')
         assert mock_create.call_count == 1  # Still 1, not 2
-        
+
         assert result1 == result2
-    
+
     @patch('openai.ChatCompletion.create')
     def test_parse_response_format(self, mock_create, mock_openai_response):
         """Test response parsing handles expected format"""
         mock_create.return_value = mock_openai_response
-        
+
         generator = ContentGenerator()
         result = generator.generate('test topic', 'tech')
-        
+
         assert 'title' in result
         assert 'content' in result
         assert result['title'] == 'AI Achieves Sentience, Immediately Files for Vacation Days'
@@ -1022,16 +1022,16 @@ import requests
 def test_api_client_get_success(mock_get):
     """Test successful API GET request"""
     from utils.api_client import APIClient
-    
+
     # Mock successful response
     mock_response = Mock()
     mock_response.status_code = 200
     mock_response.json.return_value = {'data': 'test'}
     mock_get.return_value = mock_response
-    
+
     client = APIClient('https://api.example.com')
     result = client.get('/endpoint')
-    
+
     assert result == {'data': 'test'}
     mock_get.assert_called_once()
 
@@ -1039,21 +1039,21 @@ def test_api_client_get_success(mock_get):
 def test_api_client_retry_logic(mock_get):
     """Test API client retries on failure"""
     from utils.api_client import APIClient
-    
+
     # First call fails, second succeeds
     mock_fail = Mock()
     mock_fail.status_code = 500
     mock_fail.raise_for_status.side_effect = requests.exceptions.HTTPError()
-    
+
     mock_success = Mock()
     mock_success.status_code = 200
     mock_success.json.return_value = {'data': 'success'}
-    
+
     mock_get.side_effect = [mock_fail, mock_success]
-    
+
     client = APIClient('https://api.example.com')
     result = client.get('/endpoint')
-    
+
     assert result == {'data': 'success'}
     assert mock_get.call_count == 2
 ```
@@ -1079,10 +1079,10 @@ def test_example():
         content='Content',
         author=user
     )
-    
+
     # Act: Perform the action being tested
     result = article.get_absolute_url()
-    
+
     # Assert: Verify expected outcome
     assert result == f'/articles/{article.slug}/'
 ```
@@ -1114,7 +1114,7 @@ async def test_async_operation():
     async def fetch_data():
         await asyncio.sleep(0.1)
         return {'data': 'value'}
-    
+
     result = await fetch_data()
     assert result == {'data': 'value'}
 ```
@@ -1133,13 +1133,13 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
-  
+
   - repo: https://github.com/psf/black
     rev: 23.3.0
     hooks:
       - id: black
         language_version: python3.8
-  
+
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
@@ -1203,7 +1203,7 @@ def test_article_validation():
         content='Short',  # Too short
         category='invalid'  # Invalid choice
     )
-    
+
     with pytest.raises(ValidationError):
         article.full_clean()
 ```
@@ -1218,18 +1218,18 @@ from django.dispatch import receiver
 def test_article_signal_handler(test_user):
     """Test signal is triggered on article creation"""
     signal_called = []
-    
+
     @receiver(post_save, sender=Article)
     def test_signal(sender, instance, created, **kwargs):
         if created:
             signal_called.append(instance)
-    
+
     article = Article.objects.create(
         title='Test',
         content='Content',
         author=test_user
     )
-    
+
     assert len(signal_called) == 1
     assert signal_called[0] == article
 ```
@@ -1241,7 +1241,7 @@ def test_article_signal_handler(test_user):
 def test_custom_middleware(client, test_user):
     """Test custom middleware behavior"""
     response = client.get('/')
-    
+
     # Check middleware added custom header
     assert 'X-Custom-Header' in response
 ```

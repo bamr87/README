@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-conditional-access-noAlloc.expect.md
 ---
+# Usememo Conditional Access Noalloc.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"value":[],"other":2}

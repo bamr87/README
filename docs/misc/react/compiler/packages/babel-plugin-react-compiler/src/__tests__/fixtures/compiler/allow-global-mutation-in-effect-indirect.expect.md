@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-global-mutation-in-effect-indirect.expect.md
 ---
+# Allow Global Mutation In Effect Indirect.Expect
+
 ## Input
 
 ```javascript
@@ -100,6 +102,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>true</div>

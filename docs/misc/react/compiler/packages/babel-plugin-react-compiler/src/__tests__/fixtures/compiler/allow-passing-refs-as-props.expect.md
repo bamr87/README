@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: allow-passing-refs-as-props.expect.md
 ---
+# Allow Passing Refs As Props.Expect
+
 ## Input
 
 ```javascript
@@ -34,4 +36,3 @@ function Component(props) {
 }
 
 ```
-      

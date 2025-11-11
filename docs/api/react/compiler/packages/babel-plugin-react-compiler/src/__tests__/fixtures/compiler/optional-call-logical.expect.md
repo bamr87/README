@@ -4,10 +4,11 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: optional-call-logical.expect.md
 ---
+# Optional Call Logical.Expect
+
 ## Input
 
 ```javascript
@@ -58,4 +59,3 @@ function _temp(item_0) {
 }
 
 ```
-      

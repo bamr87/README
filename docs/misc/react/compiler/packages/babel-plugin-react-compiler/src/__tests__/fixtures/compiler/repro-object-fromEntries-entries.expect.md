@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-object-fromEntries-entries.expect.md
 ---
+# Repro Object Fromentries Entries.Expect
+
 ## Input
 
 ```javascript
@@ -99,6 +101,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"render":"[[ function params=1 ]]"}</div><div>{"render":"[[ function params=1 ]]"}</div></div>

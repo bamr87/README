@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useMemo-dep-array-literal-access.expect.md
 ---
+# Usememo Dep Array Literal Access.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{"val":1}]

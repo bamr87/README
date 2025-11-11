@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: incompatible-destructuring-kinds.expect.md
 ---
+# Incompatible Destructuring Kinds.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"a":null,"b":"[[ cyclic ref *1 ]]","onClick":"[[ function params=0 ]]"}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.hoist-useCallback-conditional-access-own-scope.expect.md
 ---
+# Error.Hoist Usecallback Conditional Access Own Scope.Expect
+
 ## Input
 
 ```javascript
@@ -60,5 +62,4 @@ error.hoist-useCallback-conditional-access-own-scope.ts:5:21
   13 |
   14 | export const FIXTURE_ENTRYPOINT = {
 ```
-          
-      
+

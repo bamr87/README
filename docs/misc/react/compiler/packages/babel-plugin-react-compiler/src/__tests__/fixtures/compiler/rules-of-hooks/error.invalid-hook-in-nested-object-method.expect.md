@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-hook-in-nested-object-method.expect.md
 ---
+# Error.Invalid Hook In Nested Object Method.Expect
+
 ## Input
 
 ```javascript
@@ -46,5 +48,4 @@ error.invalid-hook-in-nested-object-method.ts:8:17
   10 |       };
   11 |       return y;
 ```
-          
-      
+

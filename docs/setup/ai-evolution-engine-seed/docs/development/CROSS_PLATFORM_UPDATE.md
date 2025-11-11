@@ -200,7 +200,7 @@ Uses the GitHub Actions workflow with:
    ```bash
    # For local development
    gh auth login
-   
+
    # For CI/CD (set repository secrets)
    # PAT_TOKEN or ensure GITHUB_TOKEN has sufficient permissions
    ```

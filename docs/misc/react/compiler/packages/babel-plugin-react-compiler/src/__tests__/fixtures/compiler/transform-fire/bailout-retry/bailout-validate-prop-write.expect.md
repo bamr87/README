@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: bailout-validate-prop-write.expect.md
 ---
+# Bailout Validate Prop Write.Expect
+
 ## Input
 
 ```javascript
@@ -44,6 +46,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

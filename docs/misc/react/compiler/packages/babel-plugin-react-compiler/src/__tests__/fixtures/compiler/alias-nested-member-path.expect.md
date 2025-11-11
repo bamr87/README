@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: alias-nested-member-path.expect.md
 ---
+# Alias Nested Member Path.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"y":{"z":[]}}

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: transitive-freeze-array.expect.md
 ---
+# Transitive Freeze Array.Expect
+
 ## Input
 
 ```javascript
@@ -59,6 +61,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},{"wat0":"joe"},["[[ cyclic ref *1 ]]"]]

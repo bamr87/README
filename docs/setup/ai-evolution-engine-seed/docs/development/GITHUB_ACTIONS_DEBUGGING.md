@@ -82,9 +82,9 @@ When working with AI assistants:
 
 **Example AI Prompt:**
 > "I'm having issues with my GitHub Actions workflow. Here's my debug report:
-> 
+>
 > [Paste content of debug report]
-> 
+>
 > Please:
 > 1. Analyze the error patterns
 > 2. Identify the root cause
@@ -280,7 +280,7 @@ alias monitor-action='./scripts/monitor-logs.sh both'
 ```
 scripts/
 ├── test-workflow.sh      # Main testing script
-├── ai-debug-helper.sh    # Debug report generator  
+├── ai-debug-helper.sh    # Debug report generator
 ├── monitor-logs.sh       # Real-time log monitoring
 └── setup-environment.sh  # Environment setup
 

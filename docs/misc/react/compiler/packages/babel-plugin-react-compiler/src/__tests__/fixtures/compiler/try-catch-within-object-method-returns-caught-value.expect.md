@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: try-catch-within-object-method-returns-caught-value.expect.md
 ---
+# Try Catch Within Object Method Returns Caught Value.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [42]

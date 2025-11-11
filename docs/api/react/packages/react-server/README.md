@@ -4,7 +4,6 @@ category: api
 tags:
 - javascript
 - api
-- api
 last_updated: null
 source_file: README.md
 ---
@@ -139,7 +138,7 @@ export function ClientComp({ onClick, message }) {
 
 ```js
 
-// client references don't have to just be components, anything can be 
+// client references don't have to just be components, anything can be
 // a reference, in this case we're importing a function that will be
 // passed to the ClientComp component
 import { alert } from '...'

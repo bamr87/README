@@ -247,5 +247,5 @@ To contribute to the automation system:
 
 ---
 
-**Last Updated**: 2025-06-22T23:35:00.000Z  
+**Last Updated**: 2025-06-22T23:35:00.000Z
 **Automation**: [update-settings.yml](/.github/workflows/update-settings.yml) • [update-settings.sh](/scripts/update-settings.sh)

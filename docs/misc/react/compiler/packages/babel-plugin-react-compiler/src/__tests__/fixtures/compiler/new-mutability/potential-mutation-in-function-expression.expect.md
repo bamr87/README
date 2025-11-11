@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: potential-mutation-in-function-expression.expect.md
 ---
+# Potential Mutation In Function Expression.Expect
+
 ## Input
 
 ```javascript
@@ -66,6 +68,6 @@ function Component(t0) {
 }
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-aliased-var.expect.md
 ---
+# Error.Usememo Aliased Var.Expect
+
 ## Input
 
 ```javascript
@@ -40,5 +42,4 @@ error.useMemo-aliased-var.ts:9:17
   10 | }
   11 |
 ```
-          
-      
+

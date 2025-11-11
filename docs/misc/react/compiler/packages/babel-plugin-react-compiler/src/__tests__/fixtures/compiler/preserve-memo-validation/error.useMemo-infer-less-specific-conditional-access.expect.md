@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.useMemo-infer-less-specific-conditional-access.expect.md
 ---
+# Error.Usememo Infer Less Specific Conditional Access.Expect
+
 ## Input
 
 ```javascript
@@ -61,5 +63,4 @@ error.useMemo-infer-less-specific-conditional-access.ts:6:17
   15 | }
   16 |
 ```
-          
-      
+

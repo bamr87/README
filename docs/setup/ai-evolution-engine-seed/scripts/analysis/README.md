@@ -18,7 +18,7 @@ source_file: README.md
 @lastModified 2025-07-12
 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - #documentation-cleanup: Comprehensive README coverage for all directories
   - #repository-health: Health analysis and monitoring capabilities
 
@@ -274,7 +274,7 @@ health_analysis:
     critical: 60
     warning: 75
     good: 85
-  
+
 categories:
   security:
     weight: 30

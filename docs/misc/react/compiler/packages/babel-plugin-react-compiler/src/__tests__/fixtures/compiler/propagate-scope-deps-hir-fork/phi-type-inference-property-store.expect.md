@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: phi-type-inference-property-store.expect.md
 ---
+# Phi Type Inference Property Store.Expect
+
 ## Input
 
 ```javascript
@@ -75,6 +77,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) [{},{"a":"a!","x":"[[ cyclic ref *1 ]]"}]

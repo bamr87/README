@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: return-ref-callback.expect.md
 ---
+# Return Ref Callback.Expect
+
 ## Input
 
 ```javascript
@@ -57,6 +59,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) "[[ function params=0 ]]"

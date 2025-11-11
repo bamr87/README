@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: align-scopes-within-nested-valueblock-in-array.expect.md
 ---
+# Align Scopes Within Nested Valueblock In Array.Expect
+
 ## Input
 
 ```javascript
@@ -83,6 +85,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>foo</div><div>{"value":[null,null,null]}</div>

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-independently-memoized-property-load-for-method-call.expect.md
 ---
+# Repro Independently Memoized Property Load For Method Call.Expect
+
 ## Input
 
 ```javascript
@@ -126,6 +128,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Seconds passed: 42

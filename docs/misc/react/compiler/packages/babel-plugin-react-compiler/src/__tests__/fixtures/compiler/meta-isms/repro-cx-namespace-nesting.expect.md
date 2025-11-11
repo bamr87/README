@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-cx-namespace-nesting.expect.md
 ---
+# Repro Cx Namespace Nesting.Expect
+
 ## Input
 
 ```javascript
@@ -71,6 +73,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="foo bar baz merp">Ok</div>

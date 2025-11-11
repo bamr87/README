@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: change-detect-reassign.expect.md
 ---
+# Change Detect Reassign.Expect
+
 ## Input
 
 ```javascript
@@ -52,4 +54,3 @@ function Component(props) {
 }
 
 ```
-      

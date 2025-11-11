@@ -5,7 +5,6 @@ tags:
 - kubernetes
 - api
 - testing
-- api
 last_updated: null
 source_file: 2025-09-01-enchanted-overhaul-wizards-ethical-sorcery.md
 ---

@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-rewrite-deps-spread.expect.md
 ---
+# Error.Invalid Rewrite Deps Spread.Expect
+
 ## Input
 
 ```javascript
@@ -50,5 +52,4 @@ error.invalid-rewrite-deps-spread.ts:15:7
   17 |
   18 |   return null;
 ```
-          
-      
+

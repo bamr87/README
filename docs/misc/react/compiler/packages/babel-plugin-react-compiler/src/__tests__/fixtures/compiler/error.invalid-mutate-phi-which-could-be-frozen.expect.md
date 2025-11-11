@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.invalid-mutate-phi-which-could-be-frozen.expect.md
 ---
+# Error.Invalid Mutate Phi Which Could Be Frozen.Expect
+
 ## Input
 
 ```javascript
@@ -42,5 +44,4 @@ error.invalid-mutate-phi-which-could-be-frozen.ts:11:2
   12 | }
   13 |
 ```
-          
-      
+

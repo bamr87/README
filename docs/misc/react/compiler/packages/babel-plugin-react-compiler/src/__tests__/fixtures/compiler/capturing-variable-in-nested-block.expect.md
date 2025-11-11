@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capturing-variable-in-nested-block.expect.md
 ---
+# Capturing Variable In Nested Block.Expect
+
 ## Input
 
 ```javascript
@@ -55,4 +57,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

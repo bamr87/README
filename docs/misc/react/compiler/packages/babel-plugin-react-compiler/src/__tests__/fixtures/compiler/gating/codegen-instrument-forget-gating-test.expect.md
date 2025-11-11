@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: codegen-instrument-forget-gating-test.expect.md
 ---
+# Codegen Instrument Forget Gating Test.Expect
+
 ## Input
 
 ```javascript
@@ -119,6 +121,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div></div>

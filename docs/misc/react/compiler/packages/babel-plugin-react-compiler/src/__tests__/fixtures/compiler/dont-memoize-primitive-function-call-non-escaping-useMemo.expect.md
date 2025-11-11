@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: dont-memoize-primitive-function-call-non-escaping-useMemo.expect.md
 ---
+# Dont Memoize Primitive Function Call Non Escaping Usememo.Expect
+
 ## Input
 
 ```javascript
@@ -79,6 +81,6 @@ export const TODO_FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: exception) Fixture not implemented

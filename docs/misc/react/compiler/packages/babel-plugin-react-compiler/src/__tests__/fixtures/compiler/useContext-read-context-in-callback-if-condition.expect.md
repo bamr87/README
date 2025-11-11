@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: useContext-read-context-in-callback-if-condition.expect.md
 ---
+# Usecontext Read Context In Callback If Condition.Expect
+
 ## Input
 
 ```javascript
@@ -82,6 +84,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"value":{}}</div>

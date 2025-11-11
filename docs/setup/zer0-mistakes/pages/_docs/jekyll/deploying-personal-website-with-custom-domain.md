@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: deploying-personal-website-with-custom-domain.md
 ---
+# Deploying Personal Website With Custom Domain
+
 > Setup personal website with Github page and custom domain.
 
 ## 1. Setup website in github page

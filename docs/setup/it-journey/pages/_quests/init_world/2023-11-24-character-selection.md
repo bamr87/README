@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: 2023-11-24-character-selection.md
 ---
+# 2023 11 24 Character Selection
+
 In the grand adventure of IT and technology, you can choose from a variety of "characters" or roles, each with its unique skills and abilities. Think of these roles as the different classes in a role-playing game, like wizards, warriors, or archers, but in the tech world. Let's explore some of these exciting roles:
 
 ### 1. **The Developer (Wizard)**

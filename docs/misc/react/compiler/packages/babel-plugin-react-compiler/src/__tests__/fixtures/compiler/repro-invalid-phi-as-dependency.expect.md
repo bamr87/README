@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: repro-invalid-phi-as-dependency.expect.md
 ---
+# Repro Invalid Phi As Dependency.Expect
+
 ## Input
 
 ```javascript
@@ -81,7 +83,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"obj":{"inner":{"value":"hello"},"wat0":"joe"},"inner":["[[ cyclic ref *2 ]]"]}</div>
 <div>{"obj":{"inner":{"value":"hello"},"wat0":"joe"},"inner":["[[ cyclic ref *2 ]]"]}</div>

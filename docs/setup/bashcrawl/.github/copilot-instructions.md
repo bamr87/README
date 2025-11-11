@@ -44,7 +44,7 @@ game_mechanics:
   - requires_items: []
   - teaches_commands: ["cd", "ls", "pwd"]
 skill_level: "beginner"
-prerequisites: 
+prerequisites:
   - "Basic terminal access"
   - "Understanding of file systems"
 fantasy_theme:
@@ -202,7 +202,7 @@ All executable files follow this pattern:
 
 #### AI-Enhanced Learning Path Design
 - **Skill Progression**: Use front matter progression paths to create logical learning sequences
-- **Adaptive Difficulty**: Adjust content complexity based on front matter skill level specifications  
+- **Adaptive Difficulty**: Adjust content complexity based on front matter skill level specifications
 - **Learning Style Support**: Incorporate different teaching approaches suggested in front matter AI notes
 - **Knowledge Validation**: Check front matter prerequisites before allowing access to advanced content
 
@@ -266,7 +266,7 @@ When modifying this codebase, maintain the educational integrity while enhancing
 
 ### Front Matter Benefits for Educational Content
 - **Learning Objective Clarity**: AI agents understand exactly what terminal skills to teach
-- **Skill Progression Tracking**: Prerequisites and progression paths ensure logical learning sequences  
+- **Skill Progression Tracking**: Prerequisites and progression paths ensure logical learning sequences
 - **Fantasy Theme Consistency**: Narrative context maintains immersive adventure experience
 - **Educational Quality**: AI teaching notes guide content creation for maximum learning effectiveness
 - **Game Mechanic Integration**: Clear specification of how content integrates with inventory and unlocking systems

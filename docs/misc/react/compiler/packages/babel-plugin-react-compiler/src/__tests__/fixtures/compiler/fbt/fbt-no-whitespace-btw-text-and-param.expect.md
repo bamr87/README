@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: fbt-no-whitespace-btw-text-and-param.expect.md
 ---
+# Fbt No Whitespace Btw Text And Param.Expect
+
 ## Input
 
 ```javascript
@@ -58,6 +60,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) Before texthello worldAfter text

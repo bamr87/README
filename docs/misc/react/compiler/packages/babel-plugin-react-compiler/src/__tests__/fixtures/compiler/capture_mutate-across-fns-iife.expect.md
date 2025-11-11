@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: capture_mutate-across-fns-iife.expect.md
 ---
+# Capture Mutate Across Fns Iife.Expect
+
 ## Input
 
 ```javascript
@@ -53,6 +55,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":2,"b":1}

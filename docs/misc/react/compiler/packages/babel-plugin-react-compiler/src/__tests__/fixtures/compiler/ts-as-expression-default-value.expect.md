@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ts-as-expression-default-value.expect.md
 ---
+# Ts As Expression Default Value.Expect
+
 ## Input
 
 ```javascript
@@ -69,6 +71,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div class="status-success">Status: success</div>

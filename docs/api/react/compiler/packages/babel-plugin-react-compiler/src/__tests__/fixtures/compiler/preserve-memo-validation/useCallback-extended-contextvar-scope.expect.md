@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: useCallback-extended-contextvar-scope.expect.md
 ---
+# Usecallback Extended Contextvar Scope.Expect
+
 ## Input
 
 ```javascript
@@ -105,6 +107,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"cb":"[[ function params=0 ]]","shouldInvoke":true}</div>

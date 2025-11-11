@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: rules-of-hooks-fe6042f7628b.expect.md
 ---
+# Rules Of Hooks Fe6042F7628B.Expect
+
 ## Input
 
 ```javascript
@@ -33,4 +35,3 @@ unknownFunction(function (foo, bar) {
 });
 
 ```
-      

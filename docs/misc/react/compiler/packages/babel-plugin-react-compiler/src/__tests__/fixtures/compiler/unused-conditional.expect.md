@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: unused-conditional.expect.md
 ---
+# Unused Conditional.Expect
+
 ## Input
 
 ```javascript
@@ -39,4 +41,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

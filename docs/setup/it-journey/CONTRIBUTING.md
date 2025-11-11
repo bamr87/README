@@ -137,7 +137,7 @@ docker-compose up  # Or: bundle exec jekyll serve --config _config_dev.yml
 # 5. Commit with conventional format
 git add .
 git commit -m "feat(scope): description"
-# Examples: 
+# Examples:
 #   "docs: improve contributing guide"
 #   "feat(quest): add docker basics quest"
 #   "fix(ci): resolve workflow timeout issue"

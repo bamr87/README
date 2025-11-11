@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: simple-scope.expect.md
 ---
+# Simple Scope.Expect
+
 ## Input
 
 ```javascript
@@ -47,4 +49,3 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      

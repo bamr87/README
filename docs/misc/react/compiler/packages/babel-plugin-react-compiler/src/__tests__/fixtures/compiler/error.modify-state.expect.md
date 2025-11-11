@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: error.modify-state.expect.md
 ---
+# Error.Modify State.Expect
+
 ## Input
 
 ```javascript
@@ -38,5 +40,4 @@ error.modify-state.ts:5:2
   7 | }
   8 |
 ```
-          
-      
+

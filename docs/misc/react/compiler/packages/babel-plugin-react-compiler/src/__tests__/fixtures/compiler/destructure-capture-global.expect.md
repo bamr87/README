@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: destructure-capture-global.expect.md
 ---
+# Destructure Capture Global.Expect
+
 ## Input
 
 ```javascript
@@ -49,6 +51,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) {"a":"value 1","someGlobal":{}}

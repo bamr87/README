@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: preserve-memo-deps-conditional-property-chain.expect.md
 ---
+# Preserve Memo Deps Conditional Property Chain.Expect
+
 ## Input
 
 ```javascript
@@ -114,7 +116,7 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div>{"inputs":[42],"output":[42]}</div>
 <div>{"inputs":[42],"output":[42]}</div>

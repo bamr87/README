@@ -10,6 +10,8 @@ tags:
 last_updated: null
 source_file: frontend-docker.md
 ---
+# Frontend Docker
+
 Journey through the Frontend Forests to use Docker on a macOS system for building our Jekyll site with Bootstrap 5. This way, you won't have to worry about installing Ruby or other dependencies directly on your system.
 
 ### Step 1: Set Up Your Environment

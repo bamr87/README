@@ -172,7 +172,7 @@ When creating new documentation templates:
 
 ---
 
-**Maintained By**: Zer0-Mistakes Documentation Team  
-**Last Updated**: October 26, 2025  
-**Template Version**: v1.0.0  
+**Maintained By**: Zer0-Mistakes Documentation Team
+**Last Updated**: October 26, 2025
+**Template Version**: v1.0.0
 **Next Review**: Quarterly template review cycle

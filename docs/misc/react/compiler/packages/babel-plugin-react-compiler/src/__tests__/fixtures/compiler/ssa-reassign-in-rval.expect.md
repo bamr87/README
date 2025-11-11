@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: ssa-reassign-in-rval.expect.md
 ---
+# Ssa Reassign In Rval.Expect
+
 ## Input
 
 ```javascript
@@ -37,4 +39,3 @@ function Component() {
 }
 
 ```
-      

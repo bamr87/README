@@ -69,7 +69,7 @@ source_file: CHECKLIST.md
   ```python
   # Good - has "python" specification
   ```
-  
+
   ```
   # Bad - no language specification
   ```

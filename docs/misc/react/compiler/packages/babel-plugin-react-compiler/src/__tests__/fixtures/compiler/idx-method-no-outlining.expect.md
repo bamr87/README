@@ -6,6 +6,8 @@ tags:
 last_updated: null
 source_file: idx-method-no-outlining.expect.md
 ---
+# Idx Method No Outlining.Expect
+
 ## Input
 
 ```javascript
@@ -89,4 +91,3 @@ function _temp(_) {
 }
 
 ```
-      

@@ -7,6 +7,8 @@ tags:
 last_updated: null
 source_file: merge-consecutive-scopes.expect.md
 ---
+# Merge Consecutive Scopes.Expect
+
 ## Input
 
 ```javascript
@@ -94,6 +96,6 @@ export const FIXTURE_ENTRYPOINT = {
 };
 
 ```
-      
+
 ### Eval output
 (kind: ok) <div><div>{"text":"Counter"}</div><span>0</span><button data-testid="button">increment</button></div>

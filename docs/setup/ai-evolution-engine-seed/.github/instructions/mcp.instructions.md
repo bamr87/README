@@ -104,7 +104,7 @@ class PathAwareMCPServer(ABC):
     """
     Base class for path-aware MCP servers that follow natural data flow patterns
     """
-    
+
     def __init__(self, name: str, version: str = "1.0.0"):
         self.name = name
         self.version = version
@@ -113,36 +113,36 @@ class PathAwareMCPServer(ABC):
         self.resource_paths = {}
         self.tool_paths = {}
         self.logger = logging.getLogger(name)
-        
+
         # Path: server-capability-registration
         self._register_core_capabilities()
-        
+
     def _register_core_capabilities(self):
         """Register core MCP server capabilities with path context"""
-        
+
         # Path: resource-capability-registration
         @self.server.list_resources()
         async def handle_list_resources() -> list[types.Resource]:
             return await self._list_resources_with_paths()
-        
+
         @self.server.read_resource()
         async def handle_read_resource(uri: str) -> str:
             return await self._read_resource_with_path_tracking(uri)
-        
+
         # Path: tool-capability-registration
         @self.server.list_tools()
         async def handle_list_tools() -> list[types.Tool]:
             return await self._list_tools_with_paths()
-        
+
         @self.server.call_tool()
         async def handle_call_tool(name: str, arguments: dict | None = None) -> list[types.TextContent]:
             return await self._execute_tool_with_path_tracking(name, arguments or {})
-        
+
         # Path: prompt-capability-registration
         @self.server.list_prompts()
         async def handle_list_prompts() -> list[types.Prompt]:
             return await self._list_prompts_with_paths()
-        
+
         @self.server.get_prompt()
         async def handle_get_prompt(name: str, arguments: dict | None = None) -> types.GetPromptResult:
             return await self._get_prompt_with_path_context(name, arguments or {})
@@ -157,17 +157,17 @@ class PathAwareMCPServer(ABC):
         }
         self.path_context.append(path_entry)
         self.logger.info(f"Entering path: {path_name}", extra={"path_context": path_name})
-    
+
     def exit_path(self, path_name: str):
         """Exit the current processing path"""
         if self.path_context and self.path_context[-1]["name"] == path_name:
             path_entry = self.path_context.pop()
             duration = asyncio.get_event_loop().time() - path_entry["timestamp"]
-            self.logger.info(f"Exiting path: {path_name} (duration: {duration:.3f}s)", 
+            self.logger.info(f"Exiting path: {path_name} (duration: {duration:.3f}s)",
                            extra={"path_context": path_name})
         else:
             self.logger.warning(f"Path mismatch: expected {path_name}, got {self.path_context[-1]['name'] if self.path_context else 'empty'}")
-    
+
     async def execute_in_path(self, path_name: str, func, *args, **kwargs):
         """Execute a function within a specific path context"""
         self.enter_path(path_name)
@@ -182,27 +182,27 @@ class PathAwareMCPServer(ABC):
     async def _list_resources_with_paths(self) -> List[types.Resource]:
         """List available resources with path information"""
         pass
-    
+
     @abstractmethod
     async def _read_resource_with_path_tracking(self, uri: str) -> str:
         """Read resource content with path tracking"""
         pass
-    
+
     @abstractmethod
     async def _list_tools_with_paths(self) -> List[types.Tool]:
         """List available tools with path information"""
         pass
-    
+
     @abstractmethod
     async def _execute_tool_with_path_tracking(self, name: str, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """Execute tool with path tracking"""
         pass
-    
+
     @abstractmethod
     async def _list_prompts_with_paths(self) -> List[types.Prompt]:
         """List available prompts with path information"""
         pass
-    
+
     @abstractmethod
     async def _get_prompt_with_path_context(self, name: str, arguments: Dict[str, Any]) -> types.GetPromptResult:
         """Get prompt with path context"""
@@ -212,15 +212,15 @@ class PathAwareMCPServer(ABC):
     async def run(self):
         """Run the MCP server with path-aware lifecycle management"""
         self.enter_path("server_initialization")
-        
+
         try:
             # Path: server-startup
             await self.execute_in_path("server_startup", self._initialize_server)
-            
+
             # Path: server-operation
             self.enter_path("server_operation")
             self.logger.info(f"MCP Server '{self.name}' v{self.version} starting...")
-            
+
             async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
                 await self.server.run(
                     read_stream,
@@ -234,7 +234,7 @@ class PathAwareMCPServer(ABC):
                         )
                     )
                 )
-        
+
         except Exception as e:
             self.logger.error(f"Server error in path {self.path_context[-1]['name'] if self.path_context else 'unknown'}: {e}")
             raise
@@ -243,11 +243,11 @@ class PathAwareMCPServer(ABC):
             await self.execute_in_path("server_cleanup", self._cleanup_server)
             self.exit_path("server_operation")
             self.exit_path("server_initialization")
-    
+
     async def _initialize_server(self):
         """Initialize server-specific resources and connections"""
         self.logger.info("Server initialization completed")
-    
+
     async def _cleanup_server(self):
         """Cleanup server resources"""
         self.logger.info("Server cleanup completed")
@@ -258,25 +258,25 @@ class FileSystemMCPServer(PathAwareMCPServer):
     """
     MCP Server for file system access with path-aware operations
     """
-    
+
     def __init__(self, base_path: str = "."):
         super().__init__("filesystem-server", "1.0.0")
         self.base_path = Path(base_path).resolve()
         self.logger.info(f"Initialized FileSystem MCP Server with base path: {self.base_path}")
-    
+
     async def _list_resources_with_paths(self) -> List[types.Resource]:
         """List file system resources with path information"""
         return await self.execute_in_path("resource_discovery", self._discover_file_resources)
-    
+
     async def _discover_file_resources(self) -> List[types.Resource]:
         """Discover available file resources"""
         resources = []
-        
+
         # Path: file-system-traversal
         for file_path in self.base_path.rglob("*"):
             if file_path.is_file() and not file_path.name.startswith('.'):
                 relative_path = file_path.relative_to(self.base_path)
-                
+
                 resource = types.Resource(
                     uri=f"file://{relative_path}",
                     name=file_path.name,
@@ -284,26 +284,26 @@ class FileSystemMCPServer(PathAwareMCPServer):
                     mimeType=self._get_mime_type(file_path)
                 )
                 resources.append(resource)
-        
+
         self.logger.info(f"Discovered {len(resources)} file resources")
         return resources
-    
+
     async def _read_resource_with_path_tracking(self, uri: str) -> str:
         """Read file content with path tracking"""
         return await self.execute_in_path("resource_reading", self._read_file_content, uri)
-    
+
     async def _read_file_content(self, uri: str) -> str:
         """Read file content"""
         # Path: uri-parsing
         if not uri.startswith("file://"):
             raise ValueError(f"Invalid file URI: {uri}")
-        
+
         file_path = self.base_path / uri[7:]  # Remove "file://" prefix
-        
+
         # Path: security-validation
         if not self._is_safe_path(file_path):
             raise ValueError(f"Access denied: {file_path}")
-        
+
         # Path: file-reading
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
@@ -313,7 +313,7 @@ class FileSystemMCPServer(PathAwareMCPServer):
         except Exception as e:
             self.logger.error(f"Error reading file {file_path}: {e}")
             raise
-    
+
     async def _list_tools_with_paths(self) -> List[types.Tool]:
         """List file system tools"""
         return [
@@ -352,11 +352,11 @@ class FileSystemMCPServer(PathAwareMCPServer):
                 }
             )
         ]
-    
+
     async def _execute_tool_with_path_tracking(self, name: str, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """Execute file system tools with path tracking"""
         return await self.execute_in_path(f"tool_execution_{name}", self._execute_file_tool, name, arguments)
-    
+
     async def _execute_file_tool(self, name: str, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """Execute specific file system tool"""
         if name == "write_file":
@@ -367,50 +367,50 @@ class FileSystemMCPServer(PathAwareMCPServer):
             return await self._list_directory_tool(arguments)
         else:
             raise ValueError(f"Unknown tool: {name}")
-    
+
     async def _write_file_tool(self, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """Write file tool implementation"""
         file_path = self.base_path / arguments["path"]
         content = arguments["content"]
-        
+
         if not self._is_safe_path(file_path):
             raise ValueError(f"Access denied: {file_path}")
-        
+
         # Ensure parent directory exists
         file_path.parent.mkdir(parents=True, exist_ok=True)
-        
+
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(content)
-        
+
         self.logger.info(f"Wrote file: {file_path} ({len(content)} characters)")
         return [types.TextContent(type="text", text=f"Successfully wrote {len(content)} characters to {arguments['path']}")]
-    
+
     async def _create_directory_tool(self, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """Create directory tool implementation"""
         dir_path = self.base_path / arguments["path"]
-        
+
         if not self._is_safe_path(dir_path):
             raise ValueError(f"Access denied: {dir_path}")
-        
+
         dir_path.mkdir(parents=True, exist_ok=True)
         self.logger.info(f"Created directory: {dir_path}")
         return [types.TextContent(type="text", text=f"Successfully created directory: {arguments['path']}")]
-    
+
     async def _list_directory_tool(self, arguments: Dict[str, Any]) -> List[types.TextContent]:
         """List directory tool implementation"""
         dir_path = self.base_path / arguments["path"]
-        
+
         if not self._is_safe_path(dir_path) or not dir_path.is_dir():
             raise ValueError(f"Invalid directory: {dir_path}")
-        
+
         items = []
         for item in dir_path.iterdir():
             item_type = "directory" if item.is_dir() else "file"
             items.append(f"{item_type}: {item.name}")
-        
+
         result = "\n".join(items) if items else "Directory is empty"
         return [types.TextContent(type="text", text=result)]
-    
+
     async def _list_prompts_with_paths(self) -> List[types.Prompt]:
         """List available prompts for file operations"""
         return [
@@ -437,11 +437,11 @@ class FileSystemMCPServer(PathAwareMCPServer):
                 ]
             )
         ]
-    
+
     async def _get_prompt_with_path_context(self, name: str, arguments: Dict[str, Any]) -> types.GetPromptResult:
         """Get prompt with file system context"""
         return await self.execute_in_path(f"prompt_generation_{name}", self._generate_file_prompt, name, arguments)
-    
+
     async def _generate_file_prompt(self, name: str, arguments: Dict[str, Any]) -> types.GetPromptResult:
         """Generate prompts with file system context"""
         if name == "analyze_codebase":
@@ -450,14 +450,14 @@ class FileSystemMCPServer(PathAwareMCPServer):
             return await self._generate_documentation_prompt(arguments)
         else:
             raise ValueError(f"Unknown prompt: {name}")
-    
+
     async def _generate_codebase_analysis_prompt(self, arguments: Dict[str, Any]) -> types.GetPromptResult:
         """Generate codebase analysis prompt"""
         focus_area = arguments.get("focus_area", "general")
-        
+
         # Collect codebase structure
         structure = await self._analyze_codebase_structure()
-        
+
         prompt_text = f"""
 # Codebase Analysis Request
 
@@ -477,7 +477,7 @@ Please provide insights on:
 
 Focus particularly on the {focus_area} aspects of the codebase.
 """
-        
+
         return types.GetPromptResult(
             description=f"Codebase analysis focused on {focus_area}",
             messages=[
@@ -487,7 +487,7 @@ Focus particularly on the {focus_area} aspects of the codebase.
                 )
             ]
         )
-    
+
     def _is_safe_path(self, path: Path) -> bool:
         """Check if path is safe for access"""
         try:
@@ -495,7 +495,7 @@ Focus particularly on the {focus_area} aspects of the codebase.
             return resolved_path.is_relative_to(self.base_path)
         except (OSError, ValueError):
             return False
-    
+
     def _get_mime_type(self, file_path: Path) -> str:
         """Get MIME type for file"""
         suffix = file_path.suffix.lower()
@@ -512,28 +512,28 @@ Focus particularly on the {focus_area} aspects of the codebase.
             '.dockerfile': 'text/x-dockerfile'
         }
         return mime_types.get(suffix, 'text/plain')
-    
+
     async def _analyze_codebase_structure(self) -> str:
         """Analyze and return codebase structure"""
         structure_lines = []
-        
+
         def add_directory_tree(path: Path, prefix: str = "", max_depth: int = 3, current_depth: int = 0):
             if current_depth >= max_depth:
                 return
-            
+
             items = sorted(path.iterdir(), key=lambda x: (x.is_file(), x.name))
             for i, item in enumerate(items):
                 if item.name.startswith('.'):
                     continue
-                
+
                 is_last = i == len(items) - 1
                 current_prefix = "└── " if is_last else "├── "
                 structure_lines.append(f"{prefix}{current_prefix}{item.name}")
-                
+
                 if item.is_dir() and current_depth < max_depth - 1:
                     next_prefix = prefix + ("    " if is_last else "│   ")
                     add_directory_tree(item, next_prefix, max_depth, current_depth + 1)
-        
+
         add_directory_tree(self.base_path)
         return "\n".join(structure_lines)
 
@@ -541,10 +541,10 @@ Focus particularly on the {focus_area} aspects of the codebase.
 # Path: main-server-execution
 if __name__ == "__main__":
     import sys
-    
+
     base_path = sys.argv[1] if len(sys.argv) > 1 else "."
     server = FileSystemMCPServer(base_path)
-    
+
     try:
         asyncio.run(server.run())
     except KeyboardInterrupt:
@@ -734,12 +734,12 @@ secrets:
 
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
-import { 
-    CallToolRequest, 
-    ListResourcesRequest, 
-    ListToolsRequest, 
+import {
+    CallToolRequest,
+    ListResourcesRequest,
+    ListToolsRequest,
     ReadResourceRequest,
-    GetPromptRequest 
+    GetPromptRequest
 } from "@modelcontextprotocol/sdk/types.js";
 
 /**
@@ -769,7 +769,7 @@ export class PathAwareMCPClient {
                 },
             }
         );
-        
+
         this.logger = console;
     }
 
@@ -918,7 +918,7 @@ export class PathAwareMCPClient {
     async executeResourceWorkflow(resourceUris: string[]): Promise<{ uri: string; content: string; error?: string }[]> {
         return this.executeInPath("resource_workflow", async () => {
             const results = [];
-            
+
             for (const uri of resourceUris) {
                 try {
                     const content = await this.readResource(uri);
@@ -927,7 +927,7 @@ export class PathAwareMCPClient {
                     results.push({ uri, content: "", error: error.message });
                 }
             }
-            
+
             return results;
         });
     }
@@ -935,12 +935,12 @@ export class PathAwareMCPClient {
     async executeToolChain(toolChain: Array<{ name: string; args: Record<string, any> }>): Promise<any[]> {
         return this.executeInPath("tool_chain", async () => {
             const results = [];
-            
+
             for (const tool of toolChain) {
                 const result = await this.callTool(tool.name, tool.args);
                 results.push(result);
             }
-            
+
             return results;
         });
     }
@@ -949,20 +949,20 @@ export class PathAwareMCPClient {
     async withRetry<T>(operation: () => Promise<T>, maxRetries: number = 3, delay: number = 1000): Promise<T> {
         return this.executeInPath("retry_operation", async () => {
             let lastError: Error;
-            
+
             for (let attempt = 1; attempt <= maxRetries; attempt++) {
                 try {
                     return await operation();
                 } catch (error) {
                     lastError = error as Error;
                     this.logger.warn(`Attempt ${attempt}/${maxRetries} failed: ${error.message}`);
-                    
+
                     if (attempt < maxRetries) {
                         await new Promise(resolve => setTimeout(resolve, delay * attempt));
                     }
                 }
             }
-            
+
             throw lastError!;
         });
     }
@@ -971,34 +971,34 @@ export class PathAwareMCPClient {
 // Path: usage-example
 export async function demonstrateMCPUsage(): Promise<void> {
     const client = new PathAwareMCPClient("python", ["-m", "mcp_servers.filesystem", "/workspace"]);
-    
+
     try {
         // Path: connection-establishment
         await client.connect();
-        
+
         // Path: resource-discovery-and-reading
         const resources = await client.listResources();
         console.log("Available resources:", resources.map(r => r.uri));
-        
+
         if (resources.length > 0) {
             const content = await client.readResource(resources[0].uri);
             console.log(`First resource content preview: ${content.substring(0, 200)}...`);
         }
-        
+
         // Path: tool-discovery-and-execution
         const tools = await client.listTools();
         console.log("Available tools:", tools.map(t => t.name));
-        
+
         if (tools.some(t => t.name === "list_directory")) {
             const dirListing = await client.callTool("list_directory", { path: "." });
             console.log("Directory listing:", dirListing);
         }
-        
+
         // Path: batch-resource-processing
         const resourceUris = resources.slice(0, 3).map(r => r.uri);
         const batchResults = await client.executeResourceWorkflow(resourceUris);
         console.log(`Processed ${batchResults.length} resources in batch`);
-        
+
     } finally {
         // Path: cleanup
         await client.disconnect();
@@ -1028,25 +1028,25 @@ source "${SCRIPT_DIR}/../lib/path_management.sh"
 # Path: mcp-server-discovery-workflow
 discover_and_configure_mcp_servers() {
     enter_path "mcp_server_discovery"
-    
+
     log_info "Starting MCP server discovery and configuration" "mcp_discovery"
-    
+
     # Path: available-server-discovery
     execute_in_path "available_server_discovery" \
         "discover_available_servers"
-    
+
     # Path: server-capability-analysis
     execute_in_path "server_capability_analysis" \
         "analyze_server_capabilities"
-    
+
     # Path: configuration-generation
     execute_in_path "configuration_generation" \
         "generate_mcp_configurations"
-    
+
     # Path: integration-validation
     execute_in_path "integration_validation" \
         "validate_mcp_integrations"
-    
+
     exit_path "mcp_server_discovery"
     log_info "MCP server discovery and configuration completed" "mcp_discovery"
 }
@@ -1054,31 +1054,31 @@ discover_and_configure_mcp_servers() {
 # Path: server-discovery-implementation
 discover_available_servers() {
     log_info "Discovering available MCP servers" "server_discovery"
-    
+
     local servers_file="${MCP_CONFIG_DIR}/discovered_servers.json"
     mkdir -p "$(dirname "$servers_file")"
-    
+
     # Path: container-based-server-discovery
     local discovered_servers=()
-    
+
     # Discover file system servers
     if docker ps --format "table {{.Names}}" | grep -q "mcp-filesystem"; then
         discovered_servers+=("filesystem")
         log_info "Discovered filesystem MCP server" "server_discovery"
     fi
-    
+
     # Discover database servers
     if docker ps --format "table {{.Names}}" | grep -q "mcp-database"; then
         discovered_servers+=("database")
         log_info "Discovered database MCP server" "server_discovery"
     fi
-    
+
     # Discover API integration servers
     if docker ps --format "table {{.Names}}" | grep -q "mcp-api"; then
         discovered_servers+=("api-integration")
         log_info "Discovered API integration MCP server" "server_discovery"
     fi
-    
+
     # Generate discovered servers configuration
     cat > "$servers_file" << EOF
 {
@@ -1089,16 +1089,16 @@ $(printf '        "%s"' "${discovered_servers[@]}" | paste -sd ',' -)
     "total_count": ${#discovered_servers[@]}
 }
 EOF
-    
+
     log_info "Server discovery completed: ${#discovered_servers[@]} servers found" "server_discovery"
 }
 
 # Path: capability-analysis-implementation
 analyze_server_capabilities() {
     log_info "Analyzing MCP server capabilities" "capability_analysis"
-    
+
     local capabilities_file="${MCP_CONFIG_DIR}/server_capabilities.json"
-    
+
     # Initialize capabilities analysis
     cat > "$capabilities_file" << 'EOF'
 {
@@ -1106,33 +1106,33 @@ analyze_server_capabilities() {
     "servers": {}
 }
 EOF
-    
+
     # Analyze each discovered server
     local discovered_servers_file="${MCP_CONFIG_DIR}/discovered_servers.json"
     if [[ -f "$discovered_servers_file" ]]; then
         local servers
         servers=$(jq -r '.servers[]' "$discovered_servers_file")
-        
+
         while IFS= read -r server; do
             if [[ -n "$server" ]]; then
                 analyze_individual_server_capabilities "$server" "$capabilities_file"
             fi
         done <<< "$servers"
     fi
-    
+
     log_info "Server capability analysis completed" "capability_analysis"
 }
 
 analyze_individual_server_capabilities() {
     local server_name="$1"
     local capabilities_file="$2"
-    
+
     log_debug "Analyzing capabilities for server: $server_name" "capability_analysis"
-    
+
     # Use a temporary Python script to test server capabilities
     local temp_script="${PROJECT_ROOT}/tmp/test_${server_name}_capabilities.py"
     mkdir -p "$(dirname "$temp_script")"
-    
+
     cat > "$temp_script" << EOF
 #!/usr/bin/env python3
 import asyncio
@@ -1145,11 +1145,11 @@ async def test_server_capabilities(server_name):
     try:
         # Test server connection
         result = subprocess.run(
-            ["docker", "exec", f"mcp-{server_name}", "python", "-c", 
+            ["docker", "exec", f"mcp-{server_name}", "python", "-c",
              "import asyncio; from src.health_check import check_server_health; asyncio.run(check_server_health())"],
             capture_output=True, text=True, timeout=10
         )
-        
+
         if result.returncode == 0:
             capabilities = {
                 "status": "healthy",
@@ -1164,7 +1164,7 @@ async def test_server_capabilities(server_name):
                 "error": result.stderr,
                 "last_check": "$(date -Iseconds)"
             }
-        
+
         return capabilities
     except Exception as e:
         return {
@@ -1178,23 +1178,23 @@ if __name__ == "__main__":
     capabilities = asyncio.run(test_server_capabilities(server_name))
     print(json.dumps(capabilities, indent=2))
 EOF
-    
+
     # Execute capability test
     if python3 "$temp_script" "$server_name" > "${PROJECT_ROOT}/tmp/${server_name}_capabilities.json" 2>/dev/null; then
         # Update main capabilities file
         local server_capabilities
         server_capabilities=$(cat "${PROJECT_ROOT}/tmp/${server_name}_capabilities.json")
-        
+
         # Use jq to update the capabilities file
         jq --arg server "$server_name" --argjson caps "$server_capabilities" \
             '.servers[$server] = $caps' "$capabilities_file" > "${capabilities_file}.tmp" && \
             mv "${capabilities_file}.tmp" "$capabilities_file"
-        
+
         log_debug "Capabilities analyzed for server: $server_name" "capability_analysis"
     else
         log_warning "Failed to analyze capabilities for server: $server_name" "capability_analysis"
     fi
-    
+
     # Cleanup
     rm -f "$temp_script" "${PROJECT_ROOT}/tmp/${server_name}_capabilities.json"
 }
@@ -1202,15 +1202,15 @@ EOF
 # Path: configuration-generation-implementation
 generate_mcp_configurations() {
     log_info "Generating MCP client configurations" "config_generation"
-    
+
     local client_config_file="${MCP_CONFIG_DIR}/client_config.json"
     local capabilities_file="${MCP_CONFIG_DIR}/server_capabilities.json"
-    
+
     if [[ ! -f "$capabilities_file" ]]; then
         log_error "Server capabilities file not found: $capabilities_file" "config_generation"
         return 1
     fi
-    
+
     # Generate comprehensive client configuration
     cat > "$client_config_file" << 'EOF'
 {
@@ -1231,17 +1231,17 @@ generate_mcp_configurations() {
     }
 }
 EOF
-    
+
     # Process each server from capabilities
     local servers
     servers=$(jq -r '.servers | keys[]' "$capabilities_file")
-    
+
     while IFS= read -r server; do
         if [[ -n "$server" ]]; then
             generate_server_client_config "$server" "$client_config_file" "$capabilities_file"
         fi
     done <<< "$servers"
-    
+
     log_info "MCP client configuration generated: $client_config_file" "config_generation"
 }
 
@@ -1249,10 +1249,10 @@ generate_server_client_config() {
     local server_name="$1"
     local client_config_file="$2"
     local capabilities_file="$3"
-    
+
     local server_status
     server_status=$(jq -r ".servers[\"$server_name\"].status" "$capabilities_file")
-    
+
     if [[ "$server_status" = "healthy" ]]; then
         # Generate server-specific configuration
         local server_config=$(cat << EOF
@@ -1276,12 +1276,12 @@ generate_server_client_config() {
 }
 EOF
 )
-        
+
         # Update client configuration with server config
         jq --arg server "$server_name" --argjson config "$server_config" \
             '.servers[$server] = $config' "$client_config_file" > "${client_config_file}.tmp" && \
             mv "${client_config_file}.tmp" "$client_config_file"
-        
+
         log_debug "Configuration generated for healthy server: $server_name" "config_generation"
     else
         log_warning "Skipping configuration for unhealthy server: $server_name" "config_generation"
@@ -1291,15 +1291,15 @@ EOF
 # Path: integration-validation-implementation
 validate_mcp_integrations() {
     log_info "Validating MCP integrations" "integration_validation"
-    
+
     local client_config_file="${MCP_CONFIG_DIR}/client_config.json"
     local validation_report="${MCP_CONFIG_DIR}/validation_report.json"
-    
+
     if [[ ! -f "$client_config_file" ]]; then
         log_error "Client configuration file not found: $client_config_file" "integration_validation"
         return 1
     fi
-    
+
     # Initialize validation report
     cat > "$validation_report" << 'EOF'
 {
@@ -1314,29 +1314,29 @@ validate_mcp_integrations() {
     }
 }
 EOF
-    
+
     # Test each configured server
     local servers
     servers=$(jq -r '.servers | keys[]' "$client_config_file")
     local total_servers=0
     local healthy_servers=0
-    
+
     while IFS= read -r server; do
         if [[ -n "$server" ]]; then
             ((total_servers++))
-            
+
             if validate_individual_server_integration "$server" "$client_config_file" "$validation_report"; then
                 ((healthy_servers++))
             fi
         fi
     done <<< "$servers"
-    
+
     # Update summary
     local success_rate=0
     if [[ $total_servers -gt 0 ]]; then
         success_rate=$(( (healthy_servers * 100) / total_servers ))
     fi
-    
+
     jq --arg total "$total_servers" --arg healthy "$healthy_servers" --arg rate "$success_rate" \
         '.summary.total_servers = ($total | tonumber) |
          .summary.healthy_servers = ($healthy | tonumber) |
@@ -1344,7 +1344,7 @@ EOF
          .overall_status = (if ($rate | tonumber) >= 80 then "healthy" elif ($rate | tonumber) >= 50 then "warning" else "critical" end)' \
         "$validation_report" > "${validation_report}.tmp" && \
         mv "${validation_report}.tmp" "$validation_report"
-    
+
     log_info "Integration validation completed: $healthy_servers/$total_servers servers healthy (${success_rate}%)" "integration_validation"
 }
 
@@ -1352,12 +1352,12 @@ validate_individual_server_integration() {
     local server_name="$1"
     local client_config_file="$2"
     local validation_report="$3"
-    
+
     log_debug "Validating integration for server: $server_name" "integration_validation"
-    
+
     # Create a simple test script to validate server integration
     local test_script="${PROJECT_ROOT}/tmp/validate_${server_name}_integration.py"
-    
+
     cat > "$test_script" << 'EOF'
 #!/usr/bin/env python3
 import asyncio
@@ -1400,7 +1400,7 @@ async def test():
 print("SUCCESS" if asyncio.run(test()) else "FAILURE")
             """
         ], capture_output=True, text=True, timeout=15)
-        
+
         if "SUCCESS" in result.stdout:
             return {
                 "status": "healthy",
@@ -1413,7 +1413,7 @@ print("SUCCESS" if asyncio.run(test()) else "FAILURE")
                 "test_timestamp": datetime.now().isoformat(),
                 "error": result.stderr or "Unknown error"
             }
-    
+
     except Exception as e:
         return {
             "status": "error",
@@ -1426,7 +1426,7 @@ if __name__ == "__main__":
     result = asyncio.run(validate_server_integration(server_name))
     print(json.dumps(result, indent=2))
 EOF
-    
+
     # Execute validation test
     local validation_result
     if validation_result=$(python3 "$test_script" "$server_name" 2>/dev/null); then
@@ -1434,10 +1434,10 @@ EOF
         jq --arg server "$server_name" --argjson result "$validation_result" \
             '.tested_servers[$server] = $result' "$validation_report" > "${validation_report}.tmp" && \
             mv "${validation_report}.tmp" "$validation_report"
-        
+
         local status
         status=$(echo "$validation_result" | jq -r '.status')
-        
+
         if [[ "$status" = "healthy" ]]; then
             log_debug "Integration validation successful for server: $server_name" "integration_validation"
             rm -f "$test_script"
@@ -1448,7 +1448,7 @@ EOF
     else
         log_error "Integration validation error for server: $server_name" "integration_validation"
     fi
-    
+
     # Cleanup
     rm -f "$test_script"
     return 1
@@ -1457,27 +1457,27 @@ EOF
 # Path: main-execution-workflow
 main() {
     local start_time=$(date +%s.%N)
-    
+
     log_info "Starting MCP server discovery and configuration workflow" "main"
-    
+
     # Execute discovery and configuration workflow
     discover_and_configure_mcp_servers || {
         log_fatal "MCP server discovery and configuration failed" "main"
     }
-    
+
     # Generate usage documentation
     generate_mcp_usage_documentation
-    
+
     local end_time=$(date +%s.%N)
     local total_time=$(echo "$end_time - $start_time" | bc -l)
-    
+
     log_performance_metric "mcp_discovery_time" "$total_time" "seconds" "main"
     log_info "MCP server discovery and configuration completed in ${total_time}s" "main"
 }
 
 generate_mcp_usage_documentation() {
     local docs_file="${PROJECT_ROOT}/docs/mcp-integration-guide.md"
-    
+
     cat > "$docs_file" << 'EOF'
 # MCP Integration Guide
 
@@ -1531,15 +1531,15 @@ from src.mcp.clients.mcp_client_python import PathAwareMCPClient
 async def main():
     client = PathAwareMCPClient("docker", ["exec", "-i", "mcp-filesystem", "python", "-m", "mcp_servers.filesystem"])
     await client.connect()
-    
+
     # List available tools
     tools = await client.list_tools()
     print("Available tools:", tools)
-    
+
     # Execute a tool
     result = await client.call_tool("list_directory", {"path": "."})
     print("Directory listing:", result)
-    
+
     await client.disconnect()
 
 asyncio.run(main())
@@ -1580,7 +1580,7 @@ Check the validation report at: `config/mcp/validation_report.json`
 - [Custom MCP Integration Patterns](./mcp-integration-patterns.md)
 - [MCP Security Best Practices](./mcp-security.md)
 EOF
-    
+
     log_info "MCP usage documentation generated: $docs_file" "documentation"
 }
 
@@ -1613,4 +1613,4 @@ This MCP instruction file works in conjunction with:
 - **Intelligent Resource Mapping**: AI-driven resource discovery and categorization
 - **Adaptive Tool Orchestration**: Dynamic tool chain optimization based on context
 - **Predictive Context Sharing**: Anticipatory context preparation for AI applications
-- **Autonomous Server Management**: Self-healing and self-optimizing MCP server networks 
+- **Autonomous Server Management**: Self-healing and self-optimizing MCP server networks
