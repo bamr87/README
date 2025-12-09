@@ -1,0 +1,483 @@
+{
+  "metadata": {
+    "export_time": "2025-12-06T07:43:59.294035",
+    "total_documents": 90,
+    "docs_root": "docs",
+    "filters": {
+      "actions": "all",
+      "min_priority": "all"
+    }
+  },
+  "summary": {
+    "by_action": {
+      "delete": 1,
+      "merge": 5
+    },
+    "by_priority": {
+      "critical": 2,
+      "high": 4
+    },
+    "by_category": {
+      "troubleshooting": 1,
+      "api": 3,
+      "reference": 2
+    }
+  },
+  "recommendations": [
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:15.485061",
+      "action": {
+        "type": "delete",
+        "priority": "critical",
+        "reasoning": "This is a low-value test fixture snapshot from the Babel plugin test suite, not intended as user documentation. It fragments the docs with hyper-specific error examples that add no unique explanatory value. Similar fixtures exist across the test directory, creating massive redundancy. Deleting it reduces file count without information loss; consolidate patterns into a single high-level 'React Compiler Errors Reference' guide in troubleshooting category if needed.",
+        "target_path": null,
+        "target_category": "troubleshooting",
+        "merge_with": [],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+        "content_summary": "This document captures a test fixture for the React Compiler Babel plugin, showing input JavaScript code that triggers an error for calling a capitalized method (someGlobal.SomeFunc()) inside a React component, along with the exact error message output. It demonstrates the compiler's validation rule against capitalized non-JSX calls.",
+        "primary_topic": "React Compiler error: Capitalized method calls in components",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "babel-plugin-react-compiler",
+          "compiler validation",
+          "error messages",
+          "React components"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Fragmented test fixture, not user-facing documentation",
+          "Auto-generated snapshot with minimal explanatory value",
+          "Excessively specific to one error variant",
+          "Poor readability outside testing context",
+          "Duplicates pattern across multiple similar fixtures"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md"
+      },
+      "improvements": [
+        {
+          "type": "remove_section",
+          "description": "Document is unsuitable for docs; remove entirely as it's a test artifact.",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "restructure",
+          "description": "If any consolidation, generalize multiple fixtures into categorized error explanations with code samples.",
+          "priority": "medium",
+          "location": "N/A (if merged)"
+        }
+      ]
+    },
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:30.771839",
+      "action": {
+        "type": "merge",
+        "priority": "critical",
+        "reasoning": "This is a tiny, fragmented test fixture documenting one specific React Compiler error. There are many similar files (error.*.expect.md) scattered in tests/fixtures, creating severe fragmentation. Aggressively merge ALL compiler error fixtures into a single comprehensive 'React Compiler Errors Reference' page. Structure it with sections per error type, including code examples, explanations, and fixes. This reduces file count, improves discoverability, and creates a valuable reference. Delete originals post-merge.",
+        "target_path": "api/react-compiler/errors-reference.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md"
+        ],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+        "content_summary": "Test fixture for React Compiler error case: accessing ref.current during render, capturing the ref for later mutation. Includes input JS code using useRef and a closure that reads/writes it, plus the expected compiler error output highlighting the issue and linking to React docs.",
+        "primary_topic": "React Compiler error: capturing ref for mutation during render",
+        "document_type": "example",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useRef",
+          "refs in render",
+          "React Compiler diagnostics"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Raw test fixture format unsuitable for user documentation",
+          "No explanatory prose or context",
+          "Deeply nested path contributes to fragmentation",
+          "Lacks integration into broader compiler reference"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "frontmatter": {
+        "document_path": "api/react-compiler/errors-reference.md",
+        "title": "React Compiler Errors Reference",
+        "description": "Comprehensive guide to all React Compiler error messages, with code examples, explanations, causes, and fixes. Covers diagnostics like ref capture, invalid calls, and more from babel-plugin-react-compiler tests.",
+        "category": "api",
+        "tags": [
+          "react-compiler",
+          "errors",
+          "diagnostics",
+          "babel-plugin",
+          "javascript",
+          "reference"
+        ],
+        "author": null,
+        "target_audience": "advanced",
+        "prerequisites": [
+          "Familiarity with React 19 and Compiler setup"
+        ],
+        "related_docs": [
+          "api/react-compiler/overview.md",
+          "reference/react/useRef.md"
+        ],
+        "source_repository": "react",
+        "deprecated": false,
+        "superseded_by": null
+      },
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Convert raw fixture to polished reference entry with: error name, description, common causes, fix example, React Compiler rationale.",
+          "priority": "high",
+          "location": "entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'How to Fix' subsection with corrected code example using useEffect or event handlers properly.",
+          "priority": "high",
+          "location": "after Error section"
+        },
+        {
+          "type": "remove_section",
+          "description": "The error message is duplicated; consolidate into one.",
+          "priority": "medium",
+          "location": "redundant error repetition"
+        },
+        {
+          "type": "add_links",
+          "description": "Link to official React Compiler docs, useRef reference, and full errors list.",
+          "priority": "medium",
+          "location": "Error explanation"
+        }
+      ]
+    },
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:48.184909",
+      "action": {
+        "type": "merge",
+        "priority": "high",
+        "reasoning": "This is one of many fragmented test fixture snapshots for React Compiler errors (__tests__/fixtures/compiler/error.*.expect.md). They are low-value as individual docs, highly redundant in format, and better consolidated into a single comprehensive 'React Compiler Errors Reference' document listing common errors, inputs, and messages with explanations. This reduces file count dramatically, improves navigability, and creates a useful reference for developers encountering compiler errors. Delete originals after merge.",
+        "target_path": "api/react-compiler/errors.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md"
+        ],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+        "content_summary": "This document captures a snapshot test fixture for the React Compiler Babel plugin, demonstrating an error case where a function expression within a React component reassigns the variable it is assigned to (callback = null inside its own definition). It includes the input JavaScript code and the expected compiler error message about reassigning variables after render completes.",
+        "primary_topic": "React Compiler error handling for variable reassignment in function expressions",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "babel-plugin-react-compiler",
+          "react compiler",
+          "error messages",
+          "javascript"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Not user-facing documentation; it's an internal test fixture snapshot",
+          "Extremely narrow scope (single error case)",
+          "Lacks context, explanations, or guidance for users",
+          "Poor structure for documentation purposes",
+          "Redundant if similar error fixtures exist"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "frontmatter": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+        "title": "React Compiler Error: Function Expression References Variable It's Assigned To",
+        "description": "Example of React Compiler error triggered by reassigning a variable (e.g., callback) within its own function expression definition inside a component, advising use of state instead. Part of compiler test fixtures; recommend consolidation into errors reference.",
+        "category": "api",
+        "tags": [
+          "react-compiler",
+          "errors",
+          "babel-plugin",
+          "javascript",
+          "advanced"
+        ],
+        "author": "React Team",
+        "target_audience": "advanced",
+        "prerequisites": [
+          "Familiarity with React Compiler and Babel plugins"
+        ],
+        "related_docs": [],
+        "source_repository": "react",
+        "deprecated": false,
+        "superseded_by": null
+      },
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Transform from test snapshot to explanatory error doc with sections: Error Description, Triggering Code, Error Message, Resolution (use useState)",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'Why this error?' explaining render-phase mutations and React Compiler rules",
+          "priority": "high",
+          "location": "After Error"
+        },
+        {
+          "type": "add_links",
+          "description": "Link to React Compiler docs on rules, state management",
+          "priority": "medium",
+          "location": "Resolution section"
+        },
+        {
+          "type": "remove_section",
+          "description": "Remove internal test file references like 'error.function-expression-*.ts:3:4'",
+          "priority": "medium",
+          "location": "Raw test paths in error"
+        }
+      ]
+    },
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:09.690588",
+      "action": {
+        "type": "merge",
+        "priority": "high",
+        "reasoning": "This is one of many fragmented test fixtures for React Compiler error cases (~hundreds likely exist). They are redundant, low-quality, and not user-facing docs. Aggressively consolidate ALL error.*.expect.md files into a single comprehensive 'React Compiler Common Errors Reference' document in /api/react-compiler/errors.md. This reduces file count dramatically, creates a navigable resource with categorized examples, explanations, and fixes. Deleting individually is less holistic; merging preserves test data as illustrative examples while eliminating fragmentation. Target path: api/react-compiler/errors.md. Merge with all similar error fixtures.",
+        "target_path": null,
+        "target_category": "reference",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md"
+        ],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+        "content_summary": "Test fixture for React Compiler demonstrating an error case where a hook is attached as a property to another hook function and then loaded/called as a value, violating React's hook rules. Includes input JavaScript code and expected compiler error output with line references and rule links.",
+        "primary_topic": "React Compiler error: Hooks may not be referenced as normal values",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "hooks",
+          "react-rules",
+          "compiler-errors",
+          "babel-plugin"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Raw test fixture output not formatted for user consumption",
+          "No explanatory text or context beyond code and errors",
+          "Poorly descriptive title derived from filename",
+          "Minimal educational value as standalone document",
+          "Part of a large set of similar redundant fixtures"
+        ],
+        "technologies": [
+          "React",
+          "JavaScript",
+          "Babel",
+          "React Compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Convert raw test fixture into explanatory example with context on the hook rule violation, why it fails, and how to fix it.",
+          "priority": "high",
+          "location": "entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'Resolution' section explaining correct patterns for hooks and link to official React docs.",
+          "priority": "high",
+          "location": "after Error section"
+        },
+        {
+          "type": "update_section",
+          "description": "Improve title to 'Example: Invalid Hook Property Access and Call' and add subsections for explanation.",
+          "priority": "medium",
+          "location": "title and headings"
+        },
+        {
+          "type": "fix_formatting",
+          "description": "Ensure consistent syntax highlighting and add line numbers if needed.",
+          "priority": "low",
+          "location": "code blocks"
+        },
+        {
+          "type": "add_links",
+          "description": "Hyperlink the React rules URL to official documentation.",
+          "priority": "medium",
+          "location": "error messages"
+        }
+      ]
+    },
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:25.568673",
+      "action": {
+        "type": "merge",
+        "priority": "high",
+        "reasoning": "This is a tiny, low-quality test fixture expectation file that duplicates content and lacks user value as standalone doc. Part of a large set of fragmented error.*.expect.md files in React Compiler tests. To reduce fragmentation, merge all similar error fixtures into a single comprehensive 'React Compiler Error Reference' document listing common errors, inputs, and explanations. This consolidates hundreds of similar micro-files into one navigable reference, eliminating redundancy and improving readability. Delete originals after merge.",
+        "target_path": null,
+        "target_category": "reference",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md"
+        ],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+        "content_summary": "Test fixture expectation file for React Compiler (Babel plugin) demonstrating a compilation error when accessing ref.current in a useEffect dependency array during render phase. Includes input code and duplicated error output explaining that refs should not be accessed during render.",
+        "primary_topic": "React Compiler error: accessing ref values during render",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "useRef",
+          "useEffect",
+          "React hooks",
+          "compilation errors"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Duplicated error message (shown twice identically)",
+          "Not human-readable; appears to be an internal test artifact rather than user documentation",
+          "Minimal explanatory content beyond raw fixture",
+          "Poor structure for standalone reading",
+          "Test-specific export (FIXTURE_ENTRYPOINT) irrelevant for docs"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "N/A (but highly similar to other error.*.expect.md fixtures)"
+      },
+      "improvements": [
+        {
+          "type": "remove_section",
+          "description": "Remove duplicated error output; keep only one instance if merging",
+          "priority": "high",
+          "location": "Error"
+        },
+        {
+          "type": "restructure",
+          "description": "Convert to standardized error card format: Error message, cause, input example, fix suggestion (e.g., move ref access to effect callback)",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'How to Fix' section with corrected code example",
+          "priority": "medium",
+          "location": "After Error"
+        },
+        {
+          "type": "fix_formatting",
+          "description": "Ensure consistent syntax highlighting and remove test-specific exports like FIXTURE_ENTRYPOINT",
+          "priority": "medium",
+          "location": "Code blocks"
+        },
+        {
+          "type": "clarify",
+          "description": "Use descriptive title like 'Error: Accessing ref.current in render phase' instead of cryptic 'Error.Hook Ref Value.Expect'",
+          "priority": "high",
+          "location": "Title and headings"
+        }
+      ]
+    },
+    {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:58.419012",
+      "action": {
+        "type": "merge",
+        "priority": "high",
+        "reasoning": "This document is one of many fragmented test fixtures (~100s likely in fixtures/compiler/) documenting individual React Compiler error cases. They are low-value as standalone docs: repetitive structure (input code + error), auto-generated, no explanations. Aggressively consolidate all ref-related errors (invalid access in render/reducer/mutation) into a single comprehensive 'React Compiler Errors: Refs' reference doc. Include all examples as subsections with code/errors tabulated. Reduces fragmentation, improves navigation. Merge with listed similars and scan for more (e.g., grep 'ref' in fixtures). Delete originals post-merge.",
+        "target_path": "api/react-compiler/errors/refs.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md"
+        ],
+        "split_into": []
+      },
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+        "content_summary": "Test fixture for React Compiler demonstrating an error when accessing ref.current inside a useReducer callback during the render phase. Includes input JavaScript code and the expected compiler error message with line reference and explanation linking to React docs.",
+        "primary_topic": "React Compiler error: invalid ref access in reducer",
+        "document_type": "example",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useRef",
+          "useReducer",
+          "React Compiler",
+          "render phase rules"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Narrow scope limited to single test case",
+          "Auto-generated test expectation, not polished documentation",
+          "Lacks explanatory context or rules summary",
+          "Poor standalone usability; better suited for consolidation",
+          "Minimal structure beyond code and error"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      }
+    }
+  ]
+}

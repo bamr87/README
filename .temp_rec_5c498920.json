@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "export_time": "2025-12-06T21:13:10.020049",
+    "total_documents": 90,
+    "docs_root": "docs",
+    "filters": {
+      "actions": "all",
+      "min_priority": "all"
+    }
+  },
+  "summary": {
+    "by_action": {},
+    "by_priority": {},
+    "by_category": {}
+  },
+  "recommendations": []
+}

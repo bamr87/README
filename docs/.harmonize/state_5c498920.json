@@ -1,0 +1,1609 @@
+{
+  "session_id": "5c498920",
+  "started_at": "2025-12-04T21:39:16.507539",
+  "scope": "architecture",
+  "total_documents": 340,
+  "processed_count": 90,
+  "pending_documents": [
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-aliased-ref-in-callback-invoked-during-render-.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-assign-current-inferred-ref-during-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-assign-hook-to-local.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-conditional-setState-in-useMemo.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-destructure-assignment-to-global.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-destructure-to-local-global-variables.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-disallow-mutating-ref-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-disallow-mutating-refs-in-render-transitive.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-global-reassignment-indirect.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-impure-functions-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-known-incompatible-function.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-known-incompatible-hook-return-property.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-known-incompatible-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-pass-hook-as-call-arg.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-pass-hook-as-prop.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-pass-ref-to-function.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-read-ref-prop-in-render-destructure.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-read-ref-prop-in-render-property-load.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-access-render-unary.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-in-callback-invoked-during-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-initialization-unary-not.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ref-value-as-props.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-set-and-read-ref-during-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-set-and-read-ref-nested-property-during-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-ternary-with-hook-values.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-unconditional-set-state-hook-return-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-unconditional-set-state-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-unconditional-set-state-prop-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-use-ref-added-to-dep-without-type-info.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-useMemo-callback-args.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-write-but-dont-read-ref-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-write-ref-prop-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.propertyload-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.reassign-global-fn-arg.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.reassignment-to-global-indirect.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.reassignment-to-global.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-arbitrary.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-call-2.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-call.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-linear.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-nonif.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-other.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-post-access-2.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-initialization-post-access.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.ref-optional.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-for-in-loop-with-context-variable-iterator.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-for-loop-with-context-variable-iterator.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-for-of-loop-with-context-variable-iterator.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-function-expression-references-later-variable-declaration.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-kitchensink.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-useCallback-set-ref-nested-property-ref-modified-later-preserve-memoization.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.unconditional-set-state-in-render-after-loop-break.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.unconditional-set-state-in-render-after-loop.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.unconditional-set-state-in-render-with-loop-throw.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.unconditional-set-state-lambda.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.unconditional-set-state-nested-function-expressions.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.update-global-should-bailout.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.useCallback-accesses-ref-mutated-later-via-function-preserve-memoization.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.useCallback-set-ref-nested-property-dont-preserve-memoization.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.validate-mutate-ref-arg-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/fbt/fbt-params-complex-param-value.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/function-expression-captures-value-later-frozen-jsx.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/function-expression-maybe-mutates-hook-return-value.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/hook-inside-logical-expression.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/incompatible-destructuring-kinds.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/mutate-after-useeffect-ref-access.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/invalid-jsx-in-catch-in-outer-try-with-catch.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/invalid-jsx-in-try-with-catch.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/invalid-setState-in-useEffect-transitive.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/invalid-setState-in-useEffect.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/lambda-reassign-primitive.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/mixedreadonly-mutating-map.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/mutable-lifetime-loops.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/mutable-lifetime-with-aliasing.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/mutable-liverange-loop.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/aliased-nested-scope-truncated-dep.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/error.invalid-impure-functions-in-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/error.invalid-referencing-frozen-hoisted-storecontext-const.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/error.reassignment-to-global-indirect.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/error.reassignment-to-global.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/mutate-after-useeffect-ref-access.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/nonreactive-noescaping-dependency-can-inline-into-consuming-scope.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/optional-call-logical.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/preserve-memo-validation/error.maybe-mutable-ref-not-preserved.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/preserve-memo-validation/error.useMemo-with-refs.flow.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/readonly-object-method-calls-mutable-lambda.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/readonly-object-method-calls.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/reanimated-shared-value-writes.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/reduce-reactive-deps/context-var-granular-dep.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-capturing-func-maybealias-captured-mutate.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/repro-local-mutation-of-new-object-from-destructured-prop.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-call-phi-possibly-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-dynamic-hook-via-hooklike-local.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-hook-as-conditional-test.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-hook-as-prop.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-hook-from-hook-return.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-hook-from-property-of-other-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/rules-of-hooks/error.invalid-hook-reassigned-in-conditional.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/tagged-template-in-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/tagged-template-literal.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/todo-function-expression-captures-value-later-frozen.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/todo.unnecessary-lambda-memoization.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/transform-fire/bailout-retry/bailout-capitalized-fn-call.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/transform-fire/bailout-retry/error.todo-syntax.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/transform-fire/bailout-retry/error.use-no-memo.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/ts-non-null-expression-default-value.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/type-provider-tagged-template-expression.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/unused-object-element-with-rest.expect.md",
+    "api/react/fixtures/attribute-behavior/AttributeTableSnapshot.md",
+    "api/react/fixtures/attribute-behavior/README.md",
+    "api/react/fixtures/nesting/README.md",
+    "api/react/packages/dom-event-testing-library/README.md",
+    "api/react/packages/eslint-plugin-react-hooks/CHANGELOG.md",
+    "api/react/packages/react/README.md",
+    "api/react/packages/react-devtools/CHANGELOG.md",
+    "api/react/packages/react-devtools/CONTRIBUTING.md",
+    "api/react/packages/react-devtools/OVERVIEW.md",
+    "api/react/packages/react-devtools/README.md",
+    "api/react/packages/react-devtools-core/README.md",
+    "api/react/packages/react-devtools-inline/README.md",
+    "api/react/packages/react-markup/README.md",
+    "api/react/packages/react-reconciler/README.md",
+    "api/react/packages/react-server/README.md",
+    "api/react/packages/react-test-renderer/README.md",
+    "api/react/packages/use-subscription/README.md",
+    "api/web-documentation-nextjs/content/docs/sponsors/index.md",
+    "api/zer0-mistakes/docs/features/sitemap-enhancement-summary.md",
+    "api/zer0-mistakes/docs/features/sitemap-integration.md",
+    "api/zer0-mistakes/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/bootstrap.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/file_operations.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/health.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/management.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/utils.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/modules/validation.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/ai-debug-helper.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/analyze-repository-health-simple.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/analyze-repository-health.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/apply-growth-changes.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/apply-periodic-changes.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/collect-context.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/collect-evolution-metrics.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/collect-workflow-errors.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/create_pr.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/emergency-fallback.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/execute-periodic-prompt.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/generate-docs.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/generate_seed.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/migrate-to-modular.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/modular-evolution.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/post-ai-validation.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/simple-ai-simulator.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/simple-change-applier.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/simple-context-collector.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/simulate-ai-growth.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/test-context-collection.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/test-enhanced-workflows.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/test-fixes.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/test-simple-fallbacks.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/validate-docs-organization.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/validate-evolution.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/version-integration.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/version-manager.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/scripts/version-tracker.md",
+    "architecture/ai-evolution-engine-seed/docs/reference/utilities/evolution-engine.md",
+    "architecture/ai-evolution-engine-seed/scripts/debug/README.md",
+    "architecture/ai-evolution-engine-seed/scripts/fallback/README.md",
+    "architecture/barodybroject/src/pages/_posts/2000-01-01-index.md",
+    "architecture/barodybroject/src/pages/_posts/2024-07-31-Generated Title.md",
+    "architecture/barodybroject/src/pages/_posts/2024-09-23-cheeseman-park-exploration.md",
+    "architecture/barodybroject/src/pages/_posts/2025-04-15-managing-features-updates-python-github.md",
+    "architecture/bashcrawl/docs/advanced.md",
+    "architecture/react/fixtures/dom/src/components/fixtures/text-inputs/README.md",
+    "architecture/zer0-mistakes/pages/_about/stats.md",
+    "architecture/zer0-mistakes/services.md",
+    "development/ai-evolution-engine-seed/.claude/agents/test-writer.md",
+    "development/ai-evolution-engine-seed/tests/results/unit_results_README.md",
+    "development/barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_requirements.md",
+    "development/barodybroject/.github/ISSUE_TEMPLATE/issue_detail_template.md",
+    "development/barodybroject/src/pages/_posts/2024-10-22-ancient-armenia-birthplace-of-wine.md",
+    "development/barodybroject/src/pages/_posts/2025-03-19-artifacts-in-software-testing.md",
+    "development/barodybroject/src/pages/_posts/2025-03-30-humorous-incrementalism-ancients.md",
+    "development/barodybroject/src/pages/_posts/2025-04-02-temple-of-templates-architectural-wonders-in-code-and-commerce.md",
+    "development/barodybroject/src/pages/_posts/2025-04-05-bugs-in-ai-testing.md",
+    "development/bashcrawl/entrance/README.md",
+    "development/githubai/.github/ISSUE_TEMPLATE/bug_report_details.md",
+    "development/githubai/.github/ISSUE_TEMPLATE/feature_request_functional_requirements.md",
+    "development/githubai/.github/ISSUE_TEMPLATE/issue_detail_template.md",
+    "development/it-journey/pages/_notes/dev/projects/People.md",
+    "development/it-journey/pages/_notes/dev/projects/Production.md",
+    "development/it-journey/pages/_posts/tools & environment/fight-with-tools.md",
+    "development/react/compiler/docs/DESIGN_GOALS.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error._todo.computed-lval-in-destructure.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.default-param-accesses-local.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-for-await-loops.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-hoisting-simple-var-declaration.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-invalid-jsx-in-catch-in-outer-try-with-finally.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-invalid-jsx-in-try-with-finally.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-computed-key-modified-during-after-construction-sequence-expr.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-computed-key-modified-during-after-construction.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-computed-key-mutate-key-while-constructing-object.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-get-syntax.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-member-expr-call.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo-object-expression-set-syntax.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.todo.try-catch-with-throw.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.useMemo-callback-generator.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/error.non-inlined-effect-fn.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/error.todo-dynamic-gating.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/error.todo-gating.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/error.todo-syntax.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/bailout-retry/error.use-no-memo.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/error.wrong-index-no-func.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/infer-effect-dependencies/error.wrong-index.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/new-mutability/repro-function-expression-effects-stack-overflow.expect.md",
+    "development/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/todo.error.object-pattern-computed-key.expect.md",
+    "development/react/compiler/packages/snap/src/sprout/README.md",
+    "development/react/scripts/error-codes/README.md",
+    "development/zer0-mistakes/pages/_docs/index.md",
+    "setup/ai-evolution-engine-seed/docs/architecture/MODULAR_ARCHITECTURE.md",
+    "setup/ai-evolution-engine-seed/docs/architecture/REFACTORING_SUMMARY.md",
+    "setup/ai-evolution-engine-seed/docs/development/COMPREHENSIVE_TEST_AUTOMATION.md",
+    "setup/ai-evolution-engine-seed/docs/development/CROSS_PLATFORM_UPDATE.md",
+    "setup/ai-evolution-engine-seed/docs/development/DAILY_EVOLUTION.md",
+    "setup/ai-evolution-engine-seed/docs/development/EVOLUTION_SUMMARY.md",
+    "setup/ai-evolution-engine-seed/docs/development/FULL_TEST_VALIDATION_COMPLETE.md",
+    "setup/ai-evolution-engine-seed/docs/development/GITHUB_ACTIONS_DEBUGGING.md",
+    "setup/ai-evolution-engine-seed/docs/development/TEST_RESULTS.md",
+    "setup/ai-evolution-engine-seed/docs/development/fixes/github-actions-workflow-fixes.md",
+    "setup/ai-evolution-engine-seed/docs/development/fixes/v0.4.6-workflow-fixes.md",
+    "setup/ai-evolution-engine-seed/docs/development/fixes/v0.4.7-ubuntu-compatibility-fix.md",
+    "setup/ai-evolution-engine-seed/docs/development/modular-refactoring-complete.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/CLEANUP_SUMMARY.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/HANGING_ISSUE_FIX.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/MODULAR_REFACTORING_COMPLETE.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/README.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/TEST_CYCLE_REPORT.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/WORKFLOW_HANGING_COMPLETE_FIX.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/WORKFLOW_REFACTORING.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/advanced-version-management-complete.md",
+    "setup/ai-evolution-engine-seed/docs/development/reports/enhanced-version-management-summary.md",
+    "setup/ai-evolution-engine-seed/docs/development/v0.3.0_IMPLEMENTATION_SUMMARY.md",
+    "setup/ai-evolution-engine-seed/docs/development/workflow-error-collection.md",
+    "setup/barodybroject/CONTRIBUTING.md",
+    "setup/barodybroject/docs/changelog/CONTRIBUTING_CHANGES.md",
+    "setup/it-journey/CONTRIBUTING.md",
+    "setup/it-journey/docs/CONTRIBUTING_DEVELOPER.md",
+    "setup/it-journey/docs/architecture/JEKYLL_IMPLEMENTATION.md",
+    "setup/it-journey/docs/architecture/REPOSITORY_STRUCTURE.md",
+    "setup/it-journey/scripts/development/content/README.md",
+    "setup/zer0-mistakes/CONTRIBUTING.md"
+  ],
+  "completed_documents": [
+    "api/ai-evolution-engine-seed/.claude/agents/code-reviewer.md",
+    "api/ai-evolution-engine-seed/docs/archive/seed_prompt_testing_automation.md",
+    "api/ai-evolution-engine-seed/docs/development/reports/REORGANIZATION_SUMMARY.md",
+    "api/ai-evolution-engine-seed/docs/guides/documentation-organization.md",
+    "api/ai-evolution-engine-seed/logs/periodic/context_doc_harmonization_20250712_185853.md",
+    "api/ai-evolution-engine-seed/scripts/notification/README.md",
+    "api/ai-evolution-engine-seed/tests/REORGANIZATION_SUMMARY.md",
+    "api/ai-evolution-engine-seed/tests/unit/logs/README.md",
+    "api/barodybroject/.github/agents/dontreadme.md",
+    "api/barodybroject/docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md",
+    "api/barodybroject/src/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md",
+    "api/barodybroject/src/pages/_posts/2024-08-09-slug.md",
+    "api/barodybroject/src/pages/_posts/2024-09-25-flotilla-raid-un-report-debate.md",
+    "api/barodybroject/src/pages/_posts/2024-09-25-wheat-prices-global-egypt-perspective.md",
+    "api/barodybroject/src/pages/_posts/2025-03-13-ai-landscape-opportunities-challenges.md",
+    "api/barodybroject/src/pages/_posts/2025-03-13-excel-to-programming.md",
+    "api/barodybroject/src/pages/_posts/2025-03-13-unlock-programming-with-excel.md",
+    "api/barodybroject/src/pages/_posts/2025-03-14-balancing-the-books-it-glitch.md",
+    "api/barodybroject/src/pages/_posts/2025-03-16-campus-2-0-ai-college-tuition.md",
+    "api/barodybroject/src/pages/_posts/2025-03-16-ledgers-of-logic-blockchain-as-the-guardian-of-ai-truths.md",
+    "api/barodybroject/src/pages/_posts/2025-03-17-blockchain-ai-trust-verify.md",
+    "api/barodybroject/src/pages/_posts/2025-03-18-laughter-ledger-satire.md",
+    "api/barodybroject/src/pages/_posts/2025-03-22-the-resourceful-journey.md",
+    "api/barodybroject/src/pages/_posts/2025-04-05-ai-django-documentation-automation.md",
+    "api/barodybroject/src/pages/_posts/2025-04-06-erp-transformation-satirical-guide.md",
+    "api/barodybroject/src/pages/_posts/2025-04-12-make-or-buy-erp-decision-making.md",
+    "api/barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md",
+    "api/barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md",
+    "api/barodybroject/src/pages/_posts/2025-05-01-manufactured-dispossession.md",
+    "api/barodybroject/src/pages/_posts/2025-05-18-windows-raising-afraid-generation.md",
+    "api/bashcrawl/help/HELP_REFERENCE.md",
+    "api/bashcrawl/src/terminal-illness/INTERACTIVE_TEST_REPORT.md",
+    "api/it-journey/.github/prompts/README.md",
+    "api/it-journey/pages/_about/contribute/contributors/bamr87/README.md",
+    "api/it-journey/pages/_about/purpose.md",
+    "api/it-journey/pages/_notes/cheetsheets/Bash cheatsheet.md",
+    "api/it-journey/pages/_notes/cheetsheets/programming.md",
+    "api/it-journey/pages/_posts/2022-05-09-javascript-testing.md",
+    "api/it-journey/pages/_posts/2023-04-20-arab americans.md",
+    "api/it-journey/pages/_posts/2024-04-13-sec's-edgar-database.md",
+    "api/it-journey/pages/_posts/2025-01-27-fixing-github-actions-link-checker-keyerror.md",
+    "api/it-journey/pages/_posts/2025-09-01-enchanted-overhaul-wizards-ethical-sorcery.md",
+    "api/it-journey/pages/_posts/ai & machine learning/ai-to-create-ai.md",
+    "api/it-journey/pages/_posts/ai & machine learning/gpt-prompt-engineering.md",
+    "api/it-journey/pages/_posts/ai & machine learning/mother-grokking-programmers.md",
+    "api/it-journey/pages/_posts/creative & experimental/cats-and-dogs-pet-care.md",
+    "api/it-journey/pages/_posts/creative & experimental/enchanted-baking-unicorn-delights.md",
+    "api/it-journey/pages/_posts/creative & experimental/wizard-topples-capitalist-dominance-ingeniously.md",
+    "api/it-journey/pages/_posts/culture & society/arab-americans-journalists-guide.md",
+    "api/it-journey/pages/_posts/culture & society/rise-of-the-matriarchs-capitalism-and-religion-face-the-femme-fatale.md",
+    "api/it-journey/pages/_posts/data & analytics/excel-circular-reference-error-by-design.md",
+    "api/it-journey/pages/_posts/data & analytics/excel-gurus-are-the-most-valuable-programmers.md",
+    "api/it-journey/pages/_posts/data & analytics/excel-to-python.md",
+    "api/it-journey/pages/_posts/devops/fixing-github-actions-version-integration-prepare-command.md",
+    "api/it-journey/pages/_posts/learning/groking-journey.md",
+    "api/it-journey/pages/_posts/learning/it-purpose-manifesto.md",
+    "api/it-journey/pages/_posts/programming/ai-powered-modular-shell-script-refactoring.md",
+    "api/it-journey/pages/_posts/programming/refactory.md",
+    "api/it-journey/pages/_posts/trends & ideas/millennials-ai-takeover.md",
+    "api/it-journey/pages/_quests/init_world/2023-11-23-begin-your-it-journey.md",
+    "api/it-journey/pages/_quests/prompt-engineering.md",
+    "api/it-journey/test/quest-validator/CHECKLIST.md",
+    "api/it-journey/test/quest-validator/SUMMARY.md",
+    "api/react/CHANGELOG.md",
+    "api/react/README.md",
+    "api/react/compiler/CHANGELOG.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/aliased-nested-scope-truncated-dep.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-pattern-spread-creates-array.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-push-effect.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-capturing-func-maybealias-captured-mutate.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-type-inference-control-flow.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/capitalized-function-allowlist.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-and-local-variables-with-default.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-declarations-and-locals.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.call-args-destructuring-asignment-complex.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md",
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-state-initializer.expect.md"
+  ],
+  "failed_documents": [],
+  "results": {
+    "api/ai-evolution-engine-seed/.claude/agents/code-reviewer.md": {
+      "document_path": "api/ai-evolution-engine-seed/.claude/agents/code-reviewer.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:39:21.268263",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/docs/archive/seed_prompt_testing_automation.md": {
+      "document_path": "api/ai-evolution-engine-seed/docs/archive/seed_prompt_testing_automation.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:39:28.340076",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/docs/development/reports/REORGANIZATION_SUMMARY.md": {
+      "document_path": "api/ai-evolution-engine-seed/docs/development/reports/REORGANIZATION_SUMMARY.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:39:34.884726",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/docs/guides/documentation-organization.md": {
+      "document_path": "api/ai-evolution-engine-seed/docs/guides/documentation-organization.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:39:40.720795",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/logs/periodic/context_doc_harmonization_20250712_185853.md": {
+      "document_path": "api/ai-evolution-engine-seed/logs/periodic/context_doc_harmonization_20250712_185853.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:39:55.415169",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/scripts/notification/README.md": {
+      "document_path": "api/ai-evolution-engine-seed/scripts/notification/README.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:40:05.742982",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/tests/REORGANIZATION_SUMMARY.md": {
+      "document_path": "api/ai-evolution-engine-seed/tests/REORGANIZATION_SUMMARY.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:40:12.978423",
+      "error_message": null
+    },
+    "api/ai-evolution-engine-seed/tests/unit/logs/README.md": {
+      "document_path": "api/ai-evolution-engine-seed/tests/unit/logs/README.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:40:28.338758",
+      "error_message": null
+    },
+    "api/barodybroject/.github/agents/dontreadme.md": {
+      "document_path": "api/barodybroject/.github/agents/dontreadme.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:40:39.399956",
+      "error_message": null
+    },
+    "api/barodybroject/docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md": {
+      "document_path": "api/barodybroject/docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:40:48.101797",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:41:18.038707",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2024-08-09-slug.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2024-08-09-slug.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:41:25.896410",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2024-09-25-flotilla-raid-un-report-debate.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2024-09-25-flotilla-raid-un-report-debate.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:41:33.681200",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2024-09-25-wheat-prices-global-egypt-perspective.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2024-09-25-wheat-prices-global-egypt-perspective.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:41:46.571155",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-13-ai-landscape-opportunities-challenges.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-13-ai-landscape-opportunities-challenges.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:41:56.298908",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-13-excel-to-programming.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-13-excel-to-programming.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:42:03.669783",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-13-unlock-programming-with-excel.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-13-unlock-programming-with-excel.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:42:15.932298",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-14-balancing-the-books-it-glitch.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-14-balancing-the-books-it-glitch.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:42:26.302214",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-16-campus-2-0-ai-college-tuition.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-16-campus-2-0-ai-college-tuition.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:42:34.378770",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-16-ledgers-of-logic-blockchain-as-the-guardian-of-ai-truths.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-16-ledgers-of-logic-blockchain-as-the-guardian-of-ai-truths.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:42:43.710944",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-17-blockchain-ai-trust-verify.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-17-blockchain-ai-trust-verify.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:42:56.506729",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-18-laughter-ledger-satire.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-18-laughter-ledger-satire.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:43:06.647721",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-03-22-the-resourceful-journey.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-03-22-the-resourceful-journey.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:43:17.745127",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-04-05-ai-django-documentation-automation.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-04-05-ai-django-documentation-automation.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:43:32.248320",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-04-06-erp-transformation-satirical-guide.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-04-06-erp-transformation-satirical-guide.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:43:40.123459",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-04-12-make-or-buy-erp-decision-making.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-04-12-make-or-buy-erp-decision-making.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:43:46.137019",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:43:55.160378",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:44:02.924496",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-05-01-manufactured-dispossession.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-05-01-manufactured-dispossession.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:44:12.389566",
+      "error_message": null
+    },
+    "api/barodybroject/src/pages/_posts/2025-05-18-windows-raising-afraid-generation.md": {
+      "document_path": "api/barodybroject/src/pages/_posts/2025-05-18-windows-raising-afraid-generation.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:44:19.854158",
+      "error_message": null
+    },
+    "api/bashcrawl/help/HELP_REFERENCE.md": {
+      "document_path": "api/bashcrawl/help/HELP_REFERENCE.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:47:40.059866",
+      "error_message": null
+    },
+    "api/bashcrawl/src/terminal-illness/INTERACTIVE_TEST_REPORT.md": {
+      "document_path": "api/bashcrawl/src/terminal-illness/INTERACTIVE_TEST_REPORT.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:47:52.244008",
+      "error_message": null
+    },
+    "api/it-journey/.github/prompts/README.md": {
+      "document_path": "api/it-journey/.github/prompts/README.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:48:04.809055",
+      "error_message": null
+    },
+    "api/it-journey/pages/_about/contribute/contributors/bamr87/README.md": {
+      "document_path": "api/it-journey/pages/_about/contribute/contributors/bamr87/README.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:48:13.981453",
+      "error_message": null
+    },
+    "api/it-journey/pages/_about/purpose.md": {
+      "document_path": "api/it-journey/pages/_about/purpose.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:48:27.446198",
+      "error_message": null
+    },
+    "api/it-journey/pages/_notes/cheetsheets/Bash cheatsheet.md": {
+      "document_path": "api/it-journey/pages/_notes/cheetsheets/Bash cheatsheet.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:48:38.432290",
+      "error_message": null
+    },
+    "api/it-journey/pages/_notes/cheetsheets/programming.md": {
+      "document_path": "api/it-journey/pages/_notes/cheetsheets/programming.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:48:49.545449",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/2022-05-09-javascript-testing.md": {
+      "document_path": "api/it-journey/pages/_posts/2022-05-09-javascript-testing.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:49:04.663364",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/2023-04-20-arab americans.md": {
+      "document_path": "api/it-journey/pages/_posts/2023-04-20-arab americans.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:49:16.331254",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/2024-04-13-sec's-edgar-database.md": {
+      "document_path": "api/it-journey/pages/_posts/2024-04-13-sec's-edgar-database.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:49:23.379085",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/2025-01-27-fixing-github-actions-link-checker-keyerror.md": {
+      "document_path": "api/it-journey/pages/_posts/2025-01-27-fixing-github-actions-link-checker-keyerror.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:49:36.196590",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/2025-09-01-enchanted-overhaul-wizards-ethical-sorcery.md": {
+      "document_path": "api/it-journey/pages/_posts/2025-09-01-enchanted-overhaul-wizards-ethical-sorcery.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:49:48.600294",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/ai & machine learning/ai-to-create-ai.md": {
+      "document_path": "api/it-journey/pages/_posts/ai & machine learning/ai-to-create-ai.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:49:55.171184",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/ai & machine learning/gpt-prompt-engineering.md": {
+      "document_path": "api/it-journey/pages/_posts/ai & machine learning/gpt-prompt-engineering.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:50:07.821846",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/ai & machine learning/mother-grokking-programmers.md": {
+      "document_path": "api/it-journey/pages/_posts/ai & machine learning/mother-grokking-programmers.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:50:17.563863",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/creative & experimental/cats-and-dogs-pet-care.md": {
+      "document_path": "api/it-journey/pages/_posts/creative & experimental/cats-and-dogs-pet-care.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:50:29.797450",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/creative & experimental/enchanted-baking-unicorn-delights.md": {
+      "document_path": "api/it-journey/pages/_posts/creative & experimental/enchanted-baking-unicorn-delights.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:50:40.798015",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/creative & experimental/wizard-topples-capitalist-dominance-ingeniously.md": {
+      "document_path": "api/it-journey/pages/_posts/creative & experimental/wizard-topples-capitalist-dominance-ingeniously.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:50:47.623518",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/culture & society/arab-americans-journalists-guide.md": {
+      "document_path": "api/it-journey/pages/_posts/culture & society/arab-americans-journalists-guide.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:50:59.992828",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/culture & society/rise-of-the-matriarchs-capitalism-and-religion-face-the-femme-fatale.md": {
+      "document_path": "api/it-journey/pages/_posts/culture & society/rise-of-the-matriarchs-capitalism-and-religion-face-the-femme-fatale.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:51:09.418561",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/data & analytics/excel-circular-reference-error-by-design.md": {
+      "document_path": "api/it-journey/pages/_posts/data & analytics/excel-circular-reference-error-by-design.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:51:19.348545",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/data & analytics/excel-gurus-are-the-most-valuable-programmers.md": {
+      "document_path": "api/it-journey/pages/_posts/data & analytics/excel-gurus-are-the-most-valuable-programmers.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:51:29.979050",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/data & analytics/excel-to-python.md": {
+      "document_path": "api/it-journey/pages/_posts/data & analytics/excel-to-python.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:51:43.001620",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/devops/fixing-github-actions-version-integration-prepare-command.md": {
+      "document_path": "api/it-journey/pages/_posts/devops/fixing-github-actions-version-integration-prepare-command.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:51:56.636900",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/learning/groking-journey.md": {
+      "document_path": "api/it-journey/pages/_posts/learning/groking-journey.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:52:14.472469",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/learning/it-purpose-manifesto.md": {
+      "document_path": "api/it-journey/pages/_posts/learning/it-purpose-manifesto.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:52:25.077885",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/programming/ai-powered-modular-shell-script-refactoring.md": {
+      "document_path": "api/it-journey/pages/_posts/programming/ai-powered-modular-shell-script-refactoring.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:52:35.899622",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/programming/refactory.md": {
+      "document_path": "api/it-journey/pages/_posts/programming/refactory.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:52:43.161784",
+      "error_message": null
+    },
+    "api/it-journey/pages/_posts/trends & ideas/millennials-ai-takeover.md": {
+      "document_path": "api/it-journey/pages/_posts/trends & ideas/millennials-ai-takeover.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:52:57.502532",
+      "error_message": null
+    },
+    "api/it-journey/pages/_quests/init_world/2023-11-23-begin-your-it-journey.md": {
+      "document_path": "api/it-journey/pages/_quests/init_world/2023-11-23-begin-your-it-journey.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:53:10.029580",
+      "error_message": null
+    },
+    "api/it-journey/pages/_quests/prompt-engineering.md": {
+      "document_path": "api/it-journey/pages/_quests/prompt-engineering.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:53:24.429903",
+      "error_message": null
+    },
+    "api/it-journey/test/quest-validator/CHECKLIST.md": {
+      "document_path": "api/it-journey/test/quest-validator/CHECKLIST.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:53:39.757094",
+      "error_message": null
+    },
+    "api/it-journey/test/quest-validator/SUMMARY.md": {
+      "document_path": "api/it-journey/test/quest-validator/SUMMARY.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:53:55.625323",
+      "error_message": null
+    },
+    "api/react/CHANGELOG.md": {
+      "document_path": "api/react/CHANGELOG.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:54:07.704005",
+      "error_message": null
+    },
+    "api/react/README.md": {
+      "document_path": "api/react/README.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:54:15.119880",
+      "error_message": null
+    },
+    "api/react/compiler/CHANGELOG.md": {
+      "document_path": "api/react/compiler/CHANGELOG.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:54:24.539362",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/Inference/MUTABILITY_ALIASING_MODEL.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:54:37.623626",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/aliased-nested-scope-truncated-dep.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/aliased-nested-scope-truncated-dep.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:54:48.617852",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-pattern-spread-creates-array.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-pattern-spread-creates-array.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:55:00.930545",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-push-effect.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/array-push-effect.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:55:08.067307",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-capturing-func-maybealias-captured-mutate.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-capturing-func-maybealias-captured-mutate.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:55:15.315092",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-type-inference-control-flow.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/bug-type-inference-control-flow.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:55:23.932366",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/capitalized-function-allowlist.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/capitalized-function-allowlist.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:55:33.965528",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-and-local-variables-with-default.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-and-local-variables-with-default.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-04T21:55:40.285160",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-declarations-and-locals.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/destructuring-mixed-scope-declarations-and-locals.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:55:50.558874",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:56:07.906049",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:56:23.859119",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.call-args-destructuring-asignment-complex.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.call-args-destructuring-asignment-complex.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:56:40.887897",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:56:54.748862",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-04T21:57:13.375283",
+      "error_message": null
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:15.485061",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+        "content_summary": "This document captures a test fixture for the React Compiler Babel plugin, showing input JavaScript code that triggers an error for calling a capitalized method (someGlobal.SomeFunc()) inside a React component, along with the exact error message output. It demonstrates the compiler's validation rule against capitalized non-JSX calls.",
+        "primary_topic": "React Compiler error: Capitalized method calls in components",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "babel-plugin-react-compiler",
+          "compiler validation",
+          "error messages",
+          "React components"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Fragmented test fixture, not user-facing documentation",
+          "Auto-generated snapshot with minimal explanatory value",
+          "Excessively specific to one error variant",
+          "Poor readability outside testing context",
+          "Duplicates pattern across multiple similar fixtures"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md"
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+        "action": "delete",
+        "priority": "critical",
+        "reasoning": "This is a low-value test fixture snapshot from the Babel plugin test suite, not intended as user documentation. It fragments the docs with hyper-specific error examples that add no unique explanatory value. Similar fixtures exist across the test directory, creating massive redundancy. Deleting it reduces file count without information loss; consolidate patterns into a single high-level 'React Compiler Errors Reference' guide in troubleshooting category if needed.",
+        "target_path": null,
+        "target_category": "troubleshooting",
+        "merge_with": [],
+        "split_into": []
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "relationship": "duplicate",
+          "similarity_score": 0.95,
+          "notes": "Near-identical structure and purpose; covers similar capitalized call error on direct function vs. method"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.9,
+          "notes": "Variant of capitalized function call error with aliasing; same error category and fixture style"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.call-args-destructuring-asignment-complex.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.6,
+          "notes": "Different error type (destructuring in call args) but same fixture format and compiler error context"
+        }
+      ],
+      "improvements": [
+        {
+          "type": "remove_section",
+          "description": "Document is unsuitable for docs; remove entirely as it's a test artifact.",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "restructure",
+          "description": "If any consolidation, generalize multiple fixtures into categorized error explanations with code samples.",
+          "priority": "medium",
+          "location": "N/A (if merged)"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:30.771839",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+        "content_summary": "Test fixture for React Compiler error case: accessing ref.current during render, capturing the ref for later mutation. Includes input JS code using useRef and a closure that reads/writes it, plus the expected compiler error output highlighting the issue and linking to React docs.",
+        "primary_topic": "React Compiler error: capturing ref for mutation during render",
+        "document_type": "example",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useRef",
+          "refs in render",
+          "React Compiler diagnostics"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Raw test fixture format unsuitable for user documentation",
+          "No explanatory prose or context",
+          "Deeply nested path contributes to fragmentation",
+          "Lacks integration into broader compiler reference"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+        "action": "merge",
+        "priority": "critical",
+        "reasoning": "This is a tiny, fragmented test fixture documenting one specific React Compiler error. There are many similar files (error.*.expect.md) scattered in tests/fixtures, creating severe fragmentation. Aggressively merge ALL compiler error fixtures into a single comprehensive 'React Compiler Errors Reference' page. Structure it with sections per error type, including code examples, explanations, and fixes. This reduces file count, improves discoverability, and creates a valuable reference. Delete originals post-merge.",
+        "target_path": "api/react-compiler/errors-reference.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md"
+        ],
+        "split_into": []
+      },
+      "frontmatter": {
+        "document_path": "api/react-compiler/errors-reference.md",
+        "title": "React Compiler Errors Reference",
+        "description": "Comprehensive guide to all React Compiler error messages, with code examples, explanations, causes, and fixes. Covers diagnostics like ref capture, invalid calls, and more from babel-plugin-react-compiler tests.",
+        "category": "api",
+        "tags": [
+          "react-compiler",
+          "errors",
+          "diagnostics",
+          "babel-plugin",
+          "javascript",
+          "reference"
+        ],
+        "author": null,
+        "target_audience": "advanced",
+        "prerequisites": [
+          "Familiarity with React 19 and Compiler setup"
+        ],
+        "related_docs": [
+          "api/react-compiler/overview.md",
+          "reference/react/useRef.md"
+        ],
+        "source_repository": "react",
+        "deprecated": false,
+        "superseded_by": null
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.85,
+          "notes": "Another individual compiler error test fixture; same structure and purpose."
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.85,
+          "notes": "Similar error fixture for compiler diagnostics."
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-jsx-children.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.8,
+          "notes": "Related compiler error example; part of the same test fixtures suite."
+        }
+      ],
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Convert raw fixture to polished reference entry with: error name, description, common causes, fix example, React Compiler rationale.",
+          "priority": "high",
+          "location": "entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'How to Fix' subsection with corrected code example using useEffect or event handlers properly.",
+          "priority": "high",
+          "location": "after Error section"
+        },
+        {
+          "type": "remove_section",
+          "description": "The error message is duplicated; consolidate into one.",
+          "priority": "medium",
+          "location": "redundant error repetition"
+        },
+        {
+          "type": "add_links",
+          "description": "Link to official React Compiler docs, useRef reference, and full errors list.",
+          "priority": "medium",
+          "location": "Error explanation"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:58:48.184909",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+        "content_summary": "This document captures a snapshot test fixture for the React Compiler Babel plugin, demonstrating an error case where a function expression within a React component reassigns the variable it is assigned to (callback = null inside its own definition). It includes the input JavaScript code and the expected compiler error message about reassigning variables after render completes.",
+        "primary_topic": "React Compiler error handling for variable reassignment in function expressions",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "babel-plugin-react-compiler",
+          "react compiler",
+          "error messages",
+          "javascript"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Not user-facing documentation; it's an internal test fixture snapshot",
+          "Extremely narrow scope (single error case)",
+          "Lacks context, explanations, or guidance for users",
+          "Poor structure for documentation purposes",
+          "Redundant if similar error fixtures exist"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+        "action": "merge",
+        "priority": "high",
+        "reasoning": "This is one of many fragmented test fixture snapshots for React Compiler errors (__tests__/fixtures/compiler/error.*.expect.md). They are low-value as individual docs, highly redundant in format, and better consolidated into a single comprehensive 'React Compiler Errors Reference' document listing common errors, inputs, and messages with explanations. This reduces file count dramatically, improves navigability, and creates a useful reference for developers encountering compiler errors. Delete originals after merge.",
+        "target_path": "api/react-compiler/errors.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md"
+        ],
+        "split_into": []
+      },
+      "frontmatter": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.function-expression-references-variable-its-assigned-to.expect.md",
+        "title": "React Compiler Error: Function Expression References Variable It's Assigned To",
+        "description": "Example of React Compiler error triggered by reassigning a variable (e.g., callback) within its own function expression definition inside a component, advising use of state instead. Part of compiler test fixtures; recommend consolidation into errors reference.",
+        "category": "api",
+        "tags": [
+          "react-compiler",
+          "errors",
+          "babel-plugin",
+          "javascript",
+          "advanced"
+        ],
+        "author": "React Team",
+        "target_audience": "advanced",
+        "prerequisites": [
+          "Familiarity with React Compiler and Babel plugins"
+        ],
+        "related_docs": [],
+        "source_repository": "react",
+        "deprecated": false,
+        "superseded_by": null
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.85,
+          "notes": "Similar error fixture snapshot for capitalized function calls in compiler tests"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call-aliased.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.8,
+          "notes": "Variant of capitalized function call error, aliased version; same fixture style"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.assign-global-in-component-tag-function.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.75,
+          "notes": "Another compiler error fixture for global assignment; part of the same error.*.expect.md series"
+        }
+      ],
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Transform from test snapshot to explanatory error doc with sections: Error Description, Triggering Code, Error Message, Resolution (use useState)",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'Why this error?' explaining render-phase mutations and React Compiler rules",
+          "priority": "high",
+          "location": "After Error"
+        },
+        {
+          "type": "add_links",
+          "description": "Link to React Compiler docs on rules, state management",
+          "priority": "medium",
+          "location": "Resolution section"
+        },
+        {
+          "type": "remove_section",
+          "description": "Remove internal test file references like 'error.function-expression-*.ts:3:4'",
+          "priority": "medium",
+          "location": "Raw test paths in error"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:09.690588",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+        "content_summary": "Test fixture for React Compiler demonstrating an error case where a hook is attached as a property to another hook function and then loaded/called as a value, violating React's hook rules. Includes input JavaScript code and expected compiler error output with line references and rule links.",
+        "primary_topic": "React Compiler error: Hooks may not be referenced as normal values",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "hooks",
+          "react-rules",
+          "compiler-errors",
+          "babel-plugin"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Raw test fixture output not formatted for user consumption",
+          "No explanatory text or context beyond code and errors",
+          "Poorly descriptive title derived from filename",
+          "Minimal educational value as standalone document",
+          "Part of a large set of similar redundant fixtures"
+        ],
+        "technologies": [
+          "React",
+          "JavaScript",
+          "Babel",
+          "React Compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+        "action": "merge",
+        "priority": "high",
+        "reasoning": "This is one of many fragmented test fixtures for React Compiler error cases (~hundreds likely exist). They are redundant, low-quality, and not user-facing docs. Aggressively consolidate ALL error.*.expect.md files into a single comprehensive 'React Compiler Common Errors Reference' document in /api/react-compiler/errors.md. This reduces file count dramatically, creates a navigable resource with categorized examples, explanations, and fixes. Deleting individually is less holistic; merging preserves test data as illustrative examples while eliminating fragmentation. Target path: api/react-compiler/errors.md. Merge with all similar error fixtures.",
+        "target_path": null,
+        "target_category": "reference",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md"
+        ],
+        "split_into": []
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.7,
+          "notes": "Similar compiler error fixture for different hook/rule violation (capitalized function call)"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-method-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.7,
+          "notes": "Similar compiler error fixture for capitalized method call error"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.6,
+          "notes": "Similar compiler error fixture for ref mutation error, part of the same error test suite"
+        }
+      ],
+      "improvements": [
+        {
+          "type": "restructure",
+          "description": "Convert raw test fixture into explanatory example with context on the hook rule violation, why it fails, and how to fix it.",
+          "priority": "high",
+          "location": "entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'Resolution' section explaining correct patterns for hooks and link to official React docs.",
+          "priority": "high",
+          "location": "after Error section"
+        },
+        {
+          "type": "update_section",
+          "description": "Improve title to 'Example: Invalid Hook Property Access and Call' and add subsections for explanation.",
+          "priority": "medium",
+          "location": "title and headings"
+        },
+        {
+          "type": "fix_formatting",
+          "description": "Ensure consistent syntax highlighting and add line numbers if needed.",
+          "priority": "low",
+          "location": "code blocks"
+        },
+        {
+          "type": "add_links",
+          "description": "Hyperlink the React rules URL to official documentation.",
+          "priority": "medium",
+          "location": "error messages"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:25.568673",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+        "content_summary": "Test fixture expectation file for React Compiler (Babel plugin) demonstrating a compilation error when accessing ref.current in a useEffect dependency array during render phase. Includes input code and duplicated error output explaining that refs should not be accessed during render.",
+        "primary_topic": "React Compiler error: accessing ref values during render",
+        "document_type": "example",
+        "quality_score": 2,
+        "secondary_topics": [
+          "useRef",
+          "useEffect",
+          "React hooks",
+          "compilation errors"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Duplicated error message (shown twice identically)",
+          "Not human-readable; appears to be an internal test artifact rather than user documentation",
+          "Minimal explanatory content beyond raw fixture",
+          "Poor structure for standalone reading",
+          "Test-specific export (FIXTURE_ENTRYPOINT) irrelevant for docs"
+        ],
+        "technologies": [
+          "javascript",
+          "react",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "N/A (but highly similar to other error.*.expect.md fixtures)"
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-ref-value.expect.md",
+        "action": "merge",
+        "priority": "high",
+        "reasoning": "This is a tiny, low-quality test fixture expectation file that duplicates content and lacks user value as standalone doc. Part of a large set of fragmented error.*.expect.md files in React Compiler tests. To reduce fragmentation, merge all similar error fixtures into a single comprehensive 'React Compiler Error Reference' document listing common errors, inputs, and explanations. This consolidates hundreds of similar micro-files into one navigable reference, eliminating redundancy and improving readability. Delete originals after merge.",
+        "target_path": null,
+        "target_category": "reference",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md"
+        ],
+        "split_into": []
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.8,
+          "notes": "Similar React Compiler error fixture for ref-related mutations"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.hook-property-load-local-hook.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.7,
+          "notes": "Similar error fixture involving hooks"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capitalized-function-call.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.6,
+          "notes": "Another compiler error fixture, pattern matches error.*.expect.md series"
+        }
+      ],
+      "improvements": [
+        {
+          "type": "remove_section",
+          "description": "Remove duplicated error output; keep only one instance if merging",
+          "priority": "high",
+          "location": "Error"
+        },
+        {
+          "type": "restructure",
+          "description": "Convert to standardized error card format: Error message, cause, input example, fix suggestion (e.g., move ref access to effect callback)",
+          "priority": "high",
+          "location": "Entire document"
+        },
+        {
+          "type": "add_section",
+          "description": "Add 'How to Fix' section with corrected code example",
+          "priority": "medium",
+          "location": "After Error"
+        },
+        {
+          "type": "fix_formatting",
+          "description": "Ensure consistent syntax highlighting and remove test-specific exports like FIXTURE_ENTRYPOINT",
+          "priority": "medium",
+          "location": "Code blocks"
+        },
+        {
+          "type": "clarify",
+          "description": "Use descriptive title like 'Error: Accessing ref.current in render phase' instead of cryptic 'Error.Hook Ref Value.Expect'",
+          "priority": "high",
+          "location": "Title and headings"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-05T10:59:33.965634",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+        "content_summary": "Test fixture documenting a React Compiler error for accessing a ref's current value during the render phase. Includes input code example and expected error message with explanation and line pointer.",
+        "primary_topic": "React Compiler error: invalid ref access during render",
+        "document_type": "example",
+        "quality_score": 4,
+        "secondary_topics": [
+          "useRef",
+          "refs",
+          "render phase",
+          "React Compiler"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Auto-generated test fixture, not polished for human readers",
+          "Very narrow scope, lacks context or broader explanation",
+          "Redundant with other similar error fixtures",
+          "Not navigable or discoverable as standalone doc"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      }
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-05T10:59:44.662992",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+        "content_summary": "Test fixture for React Compiler Babel plugin demonstrating an error when accessing ref.current in the initializer function of useReducer during render phase. Includes invalid input code and the exact compiler error message with line reference.",
+        "primary_topic": "React Compiler error: invalid ref access in reducer initializer",
+        "document_type": "example",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useReducer",
+          "useRef",
+          "React Compiler",
+          "Babel plugin",
+          "render phase errors"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Raw test fixture format not suitable for human-readable docs",
+          "No explanatory text or context beyond code and error",
+          "Poor title casing and formatting",
+          "Lacks integration into broader documentation",
+          "Auto-generated feel, minimal value standalone"
+        ],
+        "technologies": [
+          "react",
+          "babel-plugin-react-compiler",
+          "javascript"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      }
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+      "status": "recommended",
+      "processed_at": "2025-12-05T10:59:58.419012",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+        "content_summary": "Test fixture for React Compiler demonstrating an error when accessing ref.current inside a useReducer callback during the render phase. Includes input JavaScript code and the expected compiler error message with line reference and explanation linking to React docs.",
+        "primary_topic": "React Compiler error: invalid ref access in reducer",
+        "document_type": "example",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useRef",
+          "useReducer",
+          "React Compiler",
+          "render phase rules"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Narrow scope limited to single test case",
+          "Auto-generated test expectation, not polished documentation",
+          "Lacks explanatory context or rules summary",
+          "Poor standalone usability; better suited for consolidation",
+          "Minimal structure beyond code and error"
+        ],
+        "technologies": [
+          "react",
+          "javascript",
+          "babel-plugin-react-compiler"
+        ],
+        "is_outdated": false,
+        "is_duplicate": false,
+        "duplicate_of": null
+      },
+      "action": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+        "action": "merge",
+        "priority": "high",
+        "reasoning": "This document is one of many fragmented test fixtures (~100s likely in fixtures/compiler/) documenting individual React Compiler error cases. They are low-value as standalone docs: repetitive structure (input code + error), auto-generated, no explanations. Aggressively consolidate all ref-related errors (invalid access in render/reducer/mutation) into a single comprehensive 'React Compiler Errors: Refs' reference doc. Include all examples as subsections with code/errors tabulated. Reduces fragmentation, improves navigation. Merge with listed similars and scan for more (e.g., grep 'ref' in fixtures). Delete originals post-merge.",
+        "target_path": "api/react-compiler/errors/refs.md",
+        "target_category": "api",
+        "merge_with": [
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+          "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md"
+        ],
+        "split_into": []
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.9,
+          "notes": "Similar ref access error in reducer initializer"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.85,
+          "notes": "Broader ref access during render error, same category"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.capture-ref-for-mutation.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.7,
+          "notes": "Ref-related compiler error on mutation capture"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler",
+          "relationship": "parent",
+          "similarity_score": 1.0,
+          "notes": "Directory containing numerous similar compiler error fixture tests"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-05T11:00:06.938927",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-render-mutate-object-with-ref-function.expect.md",
+        "content_summary": "Test fixture file demonstrating a specific React Compiler error: invalid access to a ref during render phase via a function assigned to a mutated object. Includes input code example and the exact error message output.",
+        "primary_topic": "React Compiler error for invalid ref access during render",
+        "document_type": "other",
+        "quality_score": 3,
+        "secondary_topics": [
+          "useRef",
+          "render phase restrictions",
+          "refs",
+          "Babel plugin"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Not intended as user-facing documentation; it's a test expectation file",
+          "Minimal explanatory content; purely code and error output",
+          "High fragmentation risk as one of many similar test fixtures",
+          "Poor readability as standalone doc",
+          "Lacks context or guidance on resolution"
+        ],
+        "technologies": [
+          "React",
+          "JavaScript",
+          "React Compiler",
+          "Babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md"
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.9,
+          "notes": "Core example of invalid ref access during render; this is a variant with object mutation"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.7,
+          "notes": "Similar ref access error but in reducer context"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.65,
+          "notes": "Ref access error in reducer initialization; part of ref access error family"
+        }
+      ]
+    },
+    "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-state-initializer.expect.md": {
+      "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-state-initializer.expect.md",
+      "status": "analyzed",
+      "processed_at": "2025-12-05T11:00:15.927672",
+      "error_message": null,
+      "analysis": {
+        "document_path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-state-initializer.expect.md",
+        "content_summary": "Test fixture for React Compiler Babel plugin demonstrating an error when accessing a ref's current value inside a useState initializer during render phase. Includes input code example and the exact error message produced.",
+        "primary_topic": "React Compiler error: invalid ref access in state initializer",
+        "document_type": "example",
+        "quality_score": 4,
+        "secondary_topics": [
+          "useRef",
+          "useState",
+          "React Compiler",
+          "Babel plugin",
+          "render phase errors"
+        ],
+        "target_audience": "advanced",
+        "quality_issues": [
+          "Not user-facing documentation; appears to be auto-generated test fixture output",
+          "Low standalone value; highly fragmented with many similar files",
+          "Lacks explanation or guidance beyond raw error",
+          "Poor title formatting",
+          "No context on how to fix"
+        ],
+        "technologies": [
+          "React",
+          "JavaScript",
+          "Babel"
+        ],
+        "is_outdated": false,
+        "is_duplicate": true,
+        "duplicate_of": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md"
+      },
+      "related_documents": [
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.9,
+          "notes": "Similar ref access error in reducer context"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-during-render.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.95,
+          "notes": "Core ref access during render error; this is a specific variant"
+        },
+        {
+          "path": "api/react/compiler/packages/babel-plugin-react-compiler/src/__tests__/fixtures/compiler/error.invalid-access-ref-in-reducer-init.expect.md",
+          "relationship": "similar",
+          "similarity_score": 0.85,
+          "notes": "Ref access in reducer init; part of ref misuse pattern"
+        }
+      ]
+    }
+  }
+}
