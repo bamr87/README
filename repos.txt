@@ -1,4 +1,21 @@
 # Add your source repository URLs here (one per line)
+# Examples:
+
+# Public repositories
+# https://github.com/octocat/Hello-World
+# https://github.com/facebook/react
+
+# Private repositories (requires GitHub token)
+# https://github.com/your-org/private-repo
+
+# Specific branches or tags
+# https://github.com/user/repo.git#main
+# https://github.com/user/repo.git#v1.0.0
+
+# Local repositories (for testing)
+# file:///path/to/local/repo
+
+# Add your source repository URLs here (one per line)
 # Example:
 # https://github.com/user/repo1
 # https://github.com/user/repo2
@@ -10,4 +27,3 @@ https://github.com/bamr87/ai-evolution-engine-seed
 https://github.com/bamr87/zer0-mistakes
 https://github.com/bamr87/it-journey
 https://github.com/bamr87/githubai
-

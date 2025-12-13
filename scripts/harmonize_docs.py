@@ -207,7 +207,7 @@ def cmd_export(args):
         filter_actions = {ActionType(a) for a in args.actions.split(',')}
     
     # Export with filters
-    output_file = args.output or f"recommendations_{args.session_id}.json"
+    output_file = args.output or f"output/recommendations/recommendations_{args.session_id}.json"
     recommendations = processor.export_recommendations(
         results=state_data['results'],
         output_file=output_file,

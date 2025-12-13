@@ -288,7 +288,7 @@ def main():
     
     parser = argparse.ArgumentParser(description='Analyze documentation structure')
     parser.add_argument('--docs-dir', default='docs', help='Documentation directory')
-    parser.add_argument('--output', default='doc_structure_analysis.json', help='Output JSON file')
+    parser.add_argument('--output', default='output/analysis/doc_structure_analysis.json', help='Output JSON file')
     
     args = parser.parse_args()
     

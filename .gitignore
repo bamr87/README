@@ -2,6 +2,13 @@
 temp/
 raw_docs/
 
+# Script output files
+output/temp/
+output/analysis/*.json
+output/recommendations/*.json
+!output/analysis/.gitkeep
+!output/recommendations/.gitkeep
+
 # Python
 __pycache__/
 *.py[cod]

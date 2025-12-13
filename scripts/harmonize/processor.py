@@ -50,7 +50,7 @@ class RecommendationProcessor:
     def export_recommendations(
         self,
         results: Dict[str, DocumentProcessingResult],
-        output_file: str = "recommendations.json",
+        output_file: str = "output/recommendations/recommendations.json",
         include_analysis: bool = True,
         filter_actions: Optional[Set[ActionType]] = None,
         min_priority: Optional[str] = None
