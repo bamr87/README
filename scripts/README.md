@@ -112,6 +112,83 @@ scripts/
 
 ## Script Inventory
 
+### MkDocs-Optimized Scripts
+
+These scripts are specifically designed for MkDocs compatibility and should be used when working with MkDocs documentation sites.
+
+#### fix_mkdocs_links.py
+**Purpose**: Convert and fix links in markdown files for MkDocs compatibility
+
+**Key Features:**
+- Converts absolute site links (`/docs/page.md`) to relative paths
+- Handles Jekyll/Hugo liquid tags (`{{ '/path' | relative_url }}`)
+- Validates internal links and anchors
+- Reports broken links and compatibility issues
+
+**Usage:**
+```bash
+# Dry run to analyze issues
+./fix_mkdocs_links.py ../docs --dry-run --verbose
+
+# Fix links with site URL context
+./fix_mkdocs_links.py ../docs --site-url https://example.com
+
+# Apply fixes
+./fix_mkdocs_links.py ../docs
+```
+
+**Output**: Fixed markdown files, detailed compatibility report
+
+#### aggregate_mkdocs.py
+**Purpose**: Aggregate documentation from multiple repositories with MkDocs-optimized structure
+
+**Key Features:**
+- Organizes docs into MkDocs-friendly categories (setup, api, architecture, etc.)
+- Normalizes YAML frontmatter for MkDocs
+- Preserves source repository structure
+- Generates category index files
+- Creates metadata for navigation
+
+**Usage:**
+```bash
+# Aggregate with structure preservation
+./aggregate_mkdocs.py ../temp ../docs
+
+# Flatten structure
+./aggregate_mkdocs.py ../temp ../docs --flatten
+
+# Skip automatic index creation
+./aggregate_mkdocs.py ../temp ../docs --no-create-indexes
+```
+
+**Output**: Categorized documentation, index files, repos_metadata.yaml
+
+#### mkdocs_quality_report.py
+**Purpose**: Analyze documentation quality and MkDocs compatibility
+
+**Key Features:**
+- Validates link health (broken, external, internal)
+- Checks frontmatter consistency
+- Identifies MkDocs compatibility issues
+- Generates comprehensive quality metrics
+- Exports detailed JSON reports
+
+**Usage:**
+```bash
+# Quick summary report
+./mkdocs_quality_report.py ../docs
+
+# Detailed file-level analysis
+./mkdocs_quality_report.py ../docs --show-details --verbose
+
+# Export as JSON for CI/CD integration
+./mkdocs_quality_report.py ../docs --export-json quality_report.json
+```
+
+**Output**: Quality metrics, issue list, optional JSON export
+
+---
+
 ### Aggregation Scripts
 
 #### `aggregate.sh`

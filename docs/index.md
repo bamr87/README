@@ -51,6 +51,7 @@ This documentation hub aggregates technical documentation from multiple projects
 
 - **Search**: Use the search bar at the top to find specific topics across all documentation
 - **Navigation**: Browse sections using the top navigation tabs
+- **Sitemap**: View the complete [documentation sitemap](sitemap.md) with all 2,865+ pages
 - **Table of Contents**: Each page includes a right-side TOC for easy navigation
 - **Dark Mode**: Toggle between light and dark themes using the icon in the header
 

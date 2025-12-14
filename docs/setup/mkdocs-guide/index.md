@@ -39,10 +39,12 @@ mkdocs build
 
 ## Configuration
 
-- **`mkdocs.yml`**: Main configuration file
+- **`mkdocs.yml`**: Main configuration file (repository root)
 - **`README/docs/`**: Documentation source directory
 - **`README/docs/index.md`**: Documentation homepage
-- **`requirements-docs.txt`**: Python dependencies
+- **`requirements-docs.txt`**: Python dependencies (repository root)
+
+> **Note**: This guide is now located at `README/docs/setup/mkdocs-guide/` for better organization within the MkDocs site structure.
 
 ## MkDocs-Specific Conventions
 
@@ -328,7 +330,23 @@ Edit `mkdocs.yml` to customize:
 - Search configuration
 - Markdown extensions
 
+## Recent Updates
+
+- **[Navigation Fix Summary](./navigation-fix-summary.md)** - How we fixed 404 errors on all category pages (2025-01-27)
+- **[Update Summary](./update-summary.md)** - Virtual environment migration from .venv-docs to .venv
+- **[Quick Reference](./quick-reference.md)** - Common commands and workflows
+
 ## Troubleshooting
+
+**404 Errors on Category Pages:**
+
+See [Navigation Fix Summary](./navigation-fix-summary.md) for the complete solution. Quick fix:
+
+```bash
+# Every directory in docs/ needs an index.md file
+# Check for missing index files:
+find README/docs -maxdepth 2 -type d -exec test ! -f {}/index.md \; -print
+```
 
 **Virtual environment issues:**
 ```bash
