@@ -144,6 +144,40 @@ bash scripts/setup-ai.sh
 
 ## 📚 Knowledge Base
 
+### Wiki.js Integration
+
+bamr87 includes an integrated **Wiki.js** instance for modern, collaborative documentation management.
+
+#### Quick Start
+
+```bash
+# Navigate to README directory
+cd README
+
+# Copy environment template
+cp .env.example .env
+
+# Start Wiki.js with Docker Compose
+docker-compose up -d
+
+# Access Wiki.js at http://localhost:3000
+```
+
+#### Features
+
+- **Modern Wiki Platform**: Beautiful, responsive interface with real-time editing
+- **Multi-format Support**: Markdown, HTML, AsciiDoc, and visual editor
+- **Full-text Search**: Advanced search with filtering and indexing
+- **Version Control**: Built-in Git integration and page history
+- **Access Control**: User management with granular permissions
+- **Extensibility**: Plugin system and GraphQL API
+
+#### Documentation
+
+For complete setup instructions, configuration options, and usage guides, see:
+- [Wiki.js Setup Guide](docs/setup/wikijs-setup.md)
+- Official Docs: https://docs.requarks.io/
+
 ### Programming Languages
 - **Python**: Scripts, libraries, and frameworks
 - **JavaScript/TypeScript**: Web development, Node.js, React
