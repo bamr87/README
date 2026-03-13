@@ -21,9 +21,8 @@
 # https://github.com/user/repo2
 
 https://github.com/bamr87/scripts
+https://github.com/bamr87/skills
 https://github.com/bamr87/barodybroject
 https://github.com/bamr87/bashcrawl
-https://github.com/bamr87/ai-evolution-engine-seed
 https://github.com/bamr87/zer0-mistakes
 https://github.com/bamr87/it-journey
-https://github.com/bamr87/githubai
