@@ -7,43 +7,42 @@ description: Comprehensive documentation for enterprise architecture, developmen
 
 Welcome to the comprehensive documentation portal for enterprise architecture, development guides, and DevOps resources.
 
-## 📚 Documentation Sections
+## 📚 Documentation by Repository
 
-### 🚀 [Setup](setup/)
-Installation guides, configuration instructions, and getting started documentation for various projects and systems.
+### 📜 [Scripts](scripts/)
+Automation scripts for forking, linting, stashing, and project management.
 
-### 📖 [User Guides](user-guides/)
-Step-by-step tutorials and how-to guides for end users and developers working with the systems and tools.
+### 🧠 [Skills](skills/)
+Microsoft Agent Skills — prompts, MCP configurations, and AI development patterns.
 
-### 🔌 [API Reference](api/)
-Complete API documentation, reference materials, and integration guides for developers.
+### 🎭 [Barody Project](barodybroject/)
+Full-stack application platform with infrastructure, testing, and deployment tooling.
 
-### 🏗️ [Architecture](architecture/)
-System architecture diagrams, design decisions, and architectural patterns used across projects.
+### 🐚 [Bash Crawl](bashcrawl/)
+Interactive shell scripting tutorial — learn Bash by exploring a dungeon.
 
-### 💻 [Development](development/)
-Development workflows, coding standards, testing strategies, and contributor guidelines.
+### 🚀 [Zer0 Mistakes](zer0-mistakes/)
+Jekyll theme and software architecture patterns for GitHub Pages.
 
-### 📦 [Miscellaneous](misc/)
-Additional resources, legacy documentation, and supplementary materials.
+### 🗺️ [IT Journey](it-journey/)
+Educational IT platform with quests, blog posts, and technical documentation.
 
-### 📊 [Results](results/)
-Analysis results, quality reports, and documentation metrics.
+### ⚔️ [OverTheWire](OverTheWire-website/)
+OverTheWire wargame guides and security challenges documentation.
 
 ---
 
 ## 🎯 About This Documentation
 
-This documentation hub aggregates technical documentation from multiple projects and repositories, providing a unified navigation experience across:
+This documentation hub aggregates technical documentation from multiple repositories, providing a unified navigation experience across:
 
-- **AI Evolution Engine** - AI-assisted development frameworks
-- **Barody Project** - Full-stack application platform
-- **Bash Crawl** - Interactive shell scripting tutorial
-- **GitHub AI** - GitHub integration tools
-- **IT Journey** - Technical tutorials and learning resources
-- **React** - React framework documentation
-- **Web Documentation** - Next.js documentation systems
-- **Zer0 Mistakes** - Software architecture patterns
+- **Scripts** — Bash and Python automation utilities
+- **Skills** — Microsoft agent skills and prompt engineering
+- **Barody Project** — Full-stack application development platform
+- **Bash Crawl** — Interactive terminal-based learning
+- **Zer0 Mistakes** — Jekyll theme and architecture patterns
+- **IT Journey** — Educational quests and technical tutorials
+- **OverTheWire** — Security wargame documentation
 
 ---
 
