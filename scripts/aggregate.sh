@@ -44,8 +44,16 @@ while IFS= read -r repo; do
     continue
   fi
   
-  echo "Processing repository: $repo"
-  repo_name=$(basename "$repo" .git)
+  # Parse optional branch from URL (format: url#branch)
+  branch=""
+  repo_url="$repo"
+  if [[ "$repo" == *"#"* ]]; then
+    branch="${repo##*#}"
+    repo_url="${repo%%#*}"
+  fi
+
+  echo "Processing repository: $repo_url${branch:+ (branch: $branch)}"
+  repo_name=$(basename "$repo_url" .git)
   temp_dir="temp/$repo_name"
   mkdir -p "$temp_dir"
 
@@ -55,7 +63,11 @@ while IFS= read -r repo; do
     git -C "$temp_dir" pull
   else
     echo "Cloning new repository: $repo_name"
-    git clone "$repo" "$temp_dir"
+    if [ -n "$branch" ]; then
+      git clone -b "$branch" "$repo_url" "$temp_dir"
+    else
+      git clone "$repo_url" "$temp_dir"
+    fi
   fi
 
   # Create destination directory for this repo
