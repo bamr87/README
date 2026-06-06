@@ -1,357 +1,99 @@
-# MkDocs Documentation
+# MkDocs Documentation Site
 
-This directory contains the MkDocs setup for generating a static documentation site from the aggregated documentation in `README/docs`.
+This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) site from the aggregated documentation under [`docs/`](docs/) and publishes it to GitHub Pages at **<https://bamr87.github.io/README/>**.
 
-## Quick Start
+> `docs/` is **generated aggregation output** (produced by the pipeline — see [`CLAUDE.md`](CLAUDE.md) and [`scripts/README.md`](scripts/README.md)). Don't hand-edit pages under `docs/` to fix content or build issues; fix the upstream repo or the processing script and re-run the pipeline.
 
-### Local Development
+## Files that drive the site
 
-1. **Create and activate virtual environment:**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+| File | Purpose |
+|------|---------|
+| [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `nav`, `docs_dir: docs`, `site_url` |
+| [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`) |
+| [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
+| [`docs/`](docs/) | Source content (generated; one folder per aggregated repo) |
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements-docs.txt
-   ```
+> The parent `bamr87/bamr87` monorepo *also* has a root `mkdocs.yml` that builds this same `docs/` tree (as `docs_dir: README/docs`). The config here is the **standalone** one for the `README` repo's own Pages site.
 
-3. **Start development server:**
-   ```bash
-   mkdocs serve
-   ```
-
-4. **View documentation:**
-   Open http://127.0.0.1:8000/bamr87/ in your browser
-
-### Build Static Site
+## Quick start (local)
 
 ```bash
-# Activate virtual environment
-source .venv/bin/activate
+# from the repo root
+python3 -m venv .venv && source .venv/bin/activate   # a .venv/ already exists in-tree
+pip install -r requirements-docs.txt
 
-# Build static HTML
-mkdocs build
-
-# Output will be in site/ directory
+mkdocs serve            # dev server with live reload
+mkdocs build            # static build into site/
 ```
 
-## Configuration
+Then open **<http://localhost:8000/README/>** — note the `/README/` path. The dev server honors the `site_url` base path, so the bare `http://localhost:8000/` 302-redirects to `/README/`.
 
-- **`mkdocs.yml`**: Main configuration file
-- **`README/docs/`**: Documentation source directory
-- **`README/docs/index.md`**: Documentation homepage
-- **`requirements-docs.txt`**: Python dependencies
+To serve without the base-path redirect during quick edits, point `mkdocs serve` at a different address: `mkdocs serve -a localhost:8001`.
 
-## MkDocs-Specific Conventions
+## Build behavior (read this before "fixing" warnings)
 
-### Link Formatting
+- **The build is intentionally non-strict.** `mkdocs build` exits 0 but prints ~580 `WARNING` lines about broken links and missing anchors. These are inherent to aggregating Markdown from many independent repos (relative links point at files that weren't aggregated). They are expected — do **not** add `--strict` to the deploy, and don't hand-edit `docs/` to chase them.
+- **Navigation is curated, not auto-generated.** `mkdocs.yml` lists each repo's index page explicitly under `nav:` rather than auto-building the tree. This is deliberate: some aggregated pages carry upstream Jekyll frontmatter like `icon: <bootstrap-name>` (e.g. `icon: globe`, `icon: robot`). When such a page is a **nav entry**, Material tries to resolve that value as an SVG icon (`.icons/<name>.svg`) and **fails the entire build**. Keeping those pages out of `nav` avoids the failure while MkDocs still builds and **full-text indexes every page** — so all content remains reachable via search and in-page links.
+- Adding a new aggregated repo? Add one `nav:` line pointing at its index (`{repo}/README.md` or `{repo}/index.md`, whichever exists). Don't point a nav entry at a bare folder (`{repo}/`) — that does not resolve and warns.
 
-**Best Practices:**
-- Use relative links: `[Link](../path/file.md)` ✅
-- Avoid absolute links: `[Link](/absolute/path)` ⚠️
-- Avoid Jekyll/Hugo syntax: `{{ '/path' | relative_url }}` ❌
+## Deployment (GitHub Pages)
 
-**Internal Links:**
+Deployment is automated by [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml):
+
+- **Triggers:** pushes to `main` touching `docs/**`, `mkdocs.yml`, `requirements-docs.txt`, or the workflow itself; plus manual `workflow_dispatch`.
+- **How:** builds with `mkdocs build`, uploads the `site/` artifact, and publishes via the official `actions/deploy-pages` (no `gh-pages` branch — uses the Pages artifact flow).
+
+**One-time setup:** in the repo's **Settings → Pages**, set **Source = "GitHub Actions"**. Until that's done the workflow build will succeed but the deploy step has nowhere to publish.
+
+## Theme & features (`mkdocs.yml`)
+
+- **Material theme** with light/dark palette toggle.
+- **Search** across all aggregated docs (client-side).
+- **Navigation:** tabs, sections, `navigation.indexes` (folder `README.md`/`index.md` acts as the section landing page), `navigation.prune`, back-to-top.
+- **Markdown extensions:** admonitions, footnotes, `pymdownx.superfences` (incl. Mermaid), tabbed content, task lists, syntax highlighting with copy button, emoji.
+
+## Authoring conventions
+
+These apply when you edit *source* docs (upstream repos / processing scripts), since `docs/` itself is generated.
+
+### Links
+
 ```markdown
-# Same directory
-[Guide](setup-guide.md)
-
-# Parent directory
-[Overview](../README.md)
-
-# With anchor
-[Section](../guide.md#section-name)
+[Same dir](setup-guide.md)        # ✅ relative
+[Parent](../README.md)            # ✅ relative
+[Section](../guide.md#section)    # ✅ anchor
+[GitHub](https://github.com/...)  # ✅ external as-is
 ```
 
-**External Links:**
-```markdown
-# External links work as-is
-[GitHub](https://github.com/user/repo)
-```
+Avoid absolute site paths (`/absolute/path`) and Jekyll/Hugo templating (`{{ '/x' | relative_url }}`) — MkDocs doesn't process them.
 
-### Frontmatter Standards
+### Frontmatter
 
-**Required Fields:**
-```yaml
----
-title: Document Title
----
-```
-
-**Recommended Fields:**
 ```yaml
 ---
 title: Document Title
 description: Brief description for search and preview
 tags:
-  - category
   - topic
 ---
 ```
 
-**Avoid (MkDocs doesn't use):**
-- `layout:` - Jekyll/Hugo specific
-- `permalink:` - MkDocs handles URLs automatically
-- `nav_order:` - Use mkdocs.yml navigation instead
+MkDocs ignores Jekyll/Hugo keys like `layout:`, `permalink:`, `nav_order:`. Note the `icon:` caveat above — a Jekyll `icon:` value that isn't a valid Material icon path will break the build if that page is placed in `nav`.
 
-### Anchor Links
+### Anchors
 
-MkDocs converts headings to anchors automatically:
-
-```markdown
-## My Heading → #my-heading
-### API Reference → #api-reference
-#### Class: MyClass → #class-myclass
-```
-
-**Rules:**
-- Lowercase
-- Spaces become hyphens
-- Special characters removed
-- Multiple consecutive hyphens collapsed
-
-## Workflow for MkDocs Documentation
-
-### Initial Setup
-
-1. **Install dependencies:**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements-docs.txt
-   ```
-
-2. **Verify setup:**
-   ```bash
-   mkdocs --version
-   ```
-
-### Working with Aggregated Documentation
-
-**Recommended Workflow:**
-
-1. **Clone/update source repositories** (if aggregating from external sources):
-   ```bash
-   cd README/temp
-   git clone https://github.com/user/repo.git
-   # Or update existing:
-   cd repo && git pull
-   ```
-
-2. **Run MkDocs-optimized aggregation**:
-   ```bash
-   cd README/scripts
-   ./aggregate_mkdocs.py ../temp ../docs
-   ```
-   
-   This will:
-   - Organize docs into categories (setup, api, architecture, etc.)
-   - Normalize frontmatter
-   - Create index files
-   - Generate metadata
-
-3. **Fix MkDocs compatibility issues**:
-   ```bash
-   # Analyze issues first (dry run)
-   ./fix_mkdocs_links.py ../docs --dry-run --verbose
-   
-   # Apply fixes
-   ./fix_mkdocs_links.py ../docs --site-url https://bamr87.github.io/bamr87/
-   ```
-
-4. **Run quality report**:
-   ```bash
-   ./mkdocs_quality_report.py ../docs --show-details
-   ```
-   
-   Review and address:
-   - Broken links
-   - Missing frontmatter
-   - Jekyll/Hugo syntax
-   - Missing anchors
-
-5. **Build and serve locally**:
-   ```bash
-   cd ../..  # Back to repo root
-   mkdocs serve
-   ```
-   
-   Open http://127.0.0.1:8000/bamr87/
-
-6. **Review build warnings**:
-   ```bash
-   mkdocs build 2>&1 | grep -E "WARNING|ERROR"
-   ```
-   
-   Address any critical warnings before deployment.
-
-### Handling Build Warnings
-
-**INFO Messages** (usually safe to ignore):
-- Absolute links from external repos
-- Jekyll/Hugo template syntax in aggregated docs
-- Links to external documentation sites
-
-**WARNING Messages** (should fix):
-- Broken internal links
-- Missing target files
-- Invalid frontmatter
-
-**How to Fix:**
-
-1. **Broken Links:**
-   ```bash
-   # Find and fix automatically
-   ./fix_mkdocs_links.py ../docs
-   ```
-
-2. **Missing Files:**
-   - Re-run aggregation if source changed
-   - Create missing index files
-   - Update link targets
-
-3. **Invalid Frontmatter:**
-   ```bash
-   # Check and clean
-   python check_frontmatter.py
-   python clean_frontmatter.py
-   ```
-
-### Continuous Documentation Workflow
-
-**Daily/Weekly:**
-```bash
-# Update sources and rebuild
-cd README/scripts
-./aggregate_mkdocs.py ../temp ../docs
-./fix_mkdocs_links.py ../docs
-mkdocs build
-```
-
-**Before Deployment:**
-```bash
-# Full quality check
-cd README/scripts
-./mkdocs_quality_report.py ../docs --export-json ../output/pre-deploy-report.json
-mkdocs build --strict  # Fail on warnings
-```
-
-**Automated (CI/CD):**
-```yaml
-# .github/workflows/docs.yml
-- name: Build Documentation
-  run: |
-    pip install -r requirements-docs.txt
-    cd README/scripts
-    ./mkdocs_quality_report.py ../docs --export-json quality.json
-    cd ../..
-    mkdocs build --strict
-```
-
-## Configuration
-
-- **`mkdocs.yml`**: Main configuration file
-- **`README/docs/`**: Documentation source directory
-- **`README/docs/index.md`**: Documentation homepage
-- **`requirements-docs.txt`**: Python dependencies
-
-## Features
-
-- **Material Theme**: Modern, responsive design
-- **Search**: Client-side search across all 2852+ docs
-- **Auto Navigation**: Folder structure becomes navigation menu
-- **Dark Mode**: Light/dark theme toggle
-- **Code Highlighting**: Syntax highlighting with copy button
-- **Mermaid Diagrams**: Support for diagram rendering
-
-## Navigation Structure
-
-Documentation is organized into these main sections:
-
-- **Setup**: Installation and configuration guides
-- **User Guides**: Tutorials and how-tos
-- **API Reference**: API documentation
-- **Architecture**: System design and patterns
-- **Development**: Development workflows
-- **Miscellaneous**: Additional resources
-- **Results**: Analysis and quality reports
-
-## Known Issues
-
-Some broken links exist in the aggregated documentation (warnings during build). These are expected since the docs were collected from multiple repositories with different structures.
-
-## Deployment Options
-
-### GitHub Pages (Recommended)
-
-Add this to `.github/workflows/docs.yml`:
-
-```yaml
-name: Deploy Documentation
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - run: pip install -r requirements-docs.txt
-      - run: mkdocs gh-deploy --force
-```
-
-### Manual Deployment
-
-Build and copy `site/` directory to your web server:
-
-```bash
-mkdocs build
-# Copy site/ to your hosting provider
-```
-
-## Customization
-
-Edit `mkdocs.yml` to customize:
-
-- Site name and URL
-- Theme colors
-- Navigation structure
-- Enabled features
-- Search configuration
-- Markdown extensions
+Headings become anchors automatically: lowercased, spaces → hyphens, special characters dropped (`## API Reference` → `#api-reference`).
 
 ## Troubleshooting
 
-**Virtual environment issues:**
-```bash
-# Deactivate and recreate
-deactivate
-rm -rf .venv
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-docs.txt
-```
+**Build fails with `'.icons/<name>.svg' not found`** — an aggregated page with Jekyll `icon:` frontmatter ended up in the nav. Keep it out of `nav` (see *Build behavior* above), or normalize the frontmatter in the processing step.
 
-**Port already in use:**
-```bash
-mkdocs serve -a localhost:8001
-```
+**Port already in use** — `mkdocs serve -a localhost:8001`.
 
-**Build fails:**
-```bash
-# Clean build
-rm -rf site/
-mkdocs build
-```
+**Stale build** — `rm -rf site && mkdocs build`.
+
+**Virtualenv issues** — `deactivate; rm -rf .venv; python3 -m venv .venv; source .venv/bin/activate; pip install -r requirements-docs.txt`.
 
 ---
 
-*Documentation powered by MkDocs Material*
+*Documentation powered by MkDocs Material.*
