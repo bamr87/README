@@ -3,7 +3,10 @@ name: Deploy GitHub Pages
 # Builds the aggregated docs/ tree into a MkDocs Material site and publishes it
 # to GitHub Pages. Source: docs/ (generated aggregation output). See mkdocs.yml.
 #
-# One-time setup: in repo Settings -> Pages, set "Source" to "GitHub Actions".
+# Pages is enabled automatically by the `configure-pages` step below
+# (enablement: true), so no manual repo-settings step is required. If your
+# org policy blocks token-based enablement (the step 403s), enable it once in
+# Settings -> Pages -> Source: "GitHub Actions", then re-run this workflow.
 
 on:
   push:
@@ -43,6 +46,14 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements-docs.txt
+
+      # Enables GitHub Pages (build_type: workflow) via the API on first run,
+      # so the deploy job below doesn't 404 on a repo where Pages was never
+      # turned on. No-op once Pages is enabled.
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Build site
         run: mkdocs build --site-dir site
