@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2026-01-25 03:38:33+00:00
+description: 'Coding conventions for contributing to Zer0-Mistakes: naming, formatting,
+  Liquid and SCSS idioms, and the consistency rules enforced in review.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: code-style.md
+tags:
+- development
+- contributing
 title: Code Style Guide
 ---
 # Code Style Guide
@@ -328,20 +338,23 @@ docker-compose up
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
 | Value 1  | Value 2  | Value 3  |
-```
+
+```text
 
 ## Commit Messages
 
 Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
+
 feat: add mermaid diagram support
 fix: resolve sidebar collapse on mobile
 docs: update installation guide
 refactor: simplify layout inheritance
 test: add pagination tests
 chore: update dependencies
-```
+
+```text
 
 ## Pull Request Guidelines
 

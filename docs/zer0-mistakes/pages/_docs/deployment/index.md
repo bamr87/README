@@ -4,9 +4,11 @@ categories:
 - deployment
 description: Deploy your Zer0-Mistakes Jekyll site to various hosting platforms.
 difficulty: beginner
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-04-18 19:30:01+00:00
 layout: default
 permalink: /docs/deployment/
+preview: /images/previews/deployment.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -33,6 +35,8 @@ Deploy your Zer0-Mistakes Jekyll site to various hosting platforms.
 ## Guides in This Section
 
 - **[GitHub Pages](github-pages/)** — Deploy to GitHub's free hosting
+- **[Remote-Theme Consumer Checklist](remote-theme-checklist/)** — What `remote_theme` does not deliver, and how to fill the gaps
+- **[Safe-Mode Build Overlay](build-overlay/)** — Reproduce a GitHub Pages build in your own CI (clone → overlay → strip `_plugins` → strict build)
 - **[Netlify](netlify/)** — Deploy with custom headers and redirects
 - **[Custom Domain](custom-domain/)** — Set up your own domain name
 
@@ -62,6 +66,7 @@ The theme uses dual configuration for different environments:
 | `_config_dev.yml` | Development overrides |
 
 In production, ensure:
+
 - `posthog.enabled: true` (if using analytics)
 - `url` matches your domain
 - `baseurl` is set correctly for subpaths
@@ -71,3 +76,10 @@ In production, ensure:
 - [GitHub Pages Guide](github-pages/) — Free hosting with automatic deploys
 - [Netlify Guide](netlify/) — Advanced hosting features
 - [Custom Domain Setup](custom-domain/) — Use your own domain
+
+## See also
+
+- [[Docker]]
+- [[Jekyll]]
+- [[SEO]]
+- [[Analytics]]

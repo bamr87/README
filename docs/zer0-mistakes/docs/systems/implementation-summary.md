@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-09-28 23:26:11+00:00
+description: 'Implementation summary of the automated version-bump system: the workflows,
+  scripts, and commit analysis that publish new gem versions from main.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: implementation-summary.md
+tags:
+- systems
+- automation
 title: 🤖 Automated Version Bump Implementation Summary
 ---
 # 🤖 Automated Version Bump Implementation Summary

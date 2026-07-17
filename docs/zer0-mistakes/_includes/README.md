@@ -22,10 +22,12 @@ Essential layout components that form the foundation of the site:
 All navigation-related components:
 
 - `navbar.html` - Main navigation menu
-- `sidebar-left.html` - Left sidebar with dynamic navigation
+- `sidebar-left.html` - Left sidebar panel (offcanvas shell around the resolved nav)
+- `sidebar-config.html` - Resolves the effective sidebar mode/title/icon (page → collection → site); shared by layout, header, sidebar, and drawer
+- `sidebar-nav.html` - Renders the resolved sidebar mode (dispatches to the includes below)
 - `sidebar-right.html` - Right sidebar content
-- `sidebar-folders.html` - Dynamic folder structure generation
-- `sidebar-categories.html` - Category-based navigation
+- `sidebar-folders.html` - "collection" mode: collapsible folder tree of a collection's documents
+- `sidebar-categories.html` - "categories"/"tags" modes: posts grouped by taxonomy term
 - `nav_list.html` - Manual navigation list rendering
 - `breadcrumbs.html` - Navigation breadcrumbs
 
@@ -41,12 +43,13 @@ Analytics and tracking integrations:
 
 Reusable UI components and widgets:
 
-- `searchbar.html` - Search functionality
+- `searchbar.html` - Deprecated search stub (superseded by `search-modal.html`)
 - `powered-by.html` - "Powered by" credits display
 - `quick-index.html` - Quick page index
 - `dev-shortcuts.html` - Developer shortcuts
-- `info-section.html` - Settings/info modal
-- `halfmoon.html` - Dark mode toggle
+- `info-section.html` - Settings offcanvas (Appearance / Site / Developer tabs)
+- `admin-links.html` - Cached admin quick links for the settings offcanvas
+- `halfmoon.html` - Light/dark/auto color-mode segmented control
 - `zer0-env-var.html` - Environment variable configuration
 - `svg.html` - SVG icon definitions
 - `js-cdn.html` - CDN JavaScript libraries
@@ -83,7 +86,7 @@ When including files in layouts or other templates, use the full path:
 ```liquid
 {% include core/head.html %}
 {% include navigation/sidebar-left.html %}
-{% include components/searchbar.html %}
+{% include components/search-modal.html %}
 {% include analytics/google-analytics.html %}
 ```
 

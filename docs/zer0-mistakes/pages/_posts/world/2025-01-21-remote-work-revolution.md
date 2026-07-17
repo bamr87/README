@@ -8,6 +8,7 @@ description: Exploring the worldwide shift to remote work and its impact on comp
 estimated_reading_time: 11 min
 featured: true
 image: /assets/images/posts/remote-work.jpg
+lastmod: 2026-04-18 19:29:49+00:00
 layout: article
 preview: /images/previews/the-remote-work-revolution-how-global-teams-are-re.png
 source_file: 2025-01-21-remote-work-revolution.md

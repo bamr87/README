@@ -18,7 +18,7 @@ excerpt: Master AI-assisted development with Zer0-Mistakes theme using VS Code C
   structured workflows, and IT-Journey principles.
 lastmod: 2025-10-19 00:00:00+00:00
 permalink: /about/features/ai-development-guide/
-preview: null
+preview: /images/previews/ai-assisted-development-with-zer0-mistakes.png
 snippet: AI-powered development for modern Jekyll themes
 source_file: ai-development-guide.md
 sub-title: VS Code Copilot optimization for Jekyll theme development

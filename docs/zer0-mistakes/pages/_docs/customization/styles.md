@@ -4,9 +4,11 @@ categories:
 - customization
 description: Customize CSS and SCSS styles in the Zer0-Mistakes Jekyll theme.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-22 12:00:00+00:00
 layout: default
 permalink: /docs/customization/styles/
+preview: /images/previews/styles.png
 sidebar:
   nav: docs
 source_file: styles.md
@@ -23,7 +25,7 @@ Customize the visual appearance of your site using SCSS and CSS.
 
 ## File Structure
 
-```
+```text
 _sass/
 ├── core/           # Core theme styles
 │   ├── _variables.scss
@@ -279,3 +281,18 @@ Use Bootstrap's breakpoints:
 - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/)
 - [Sass Documentation](https://sass-lang.com/documentation/)
 - [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [CSS Grid Mastery (tutorial)](/posts/2025/01/23/css-grid-mastery/) — hands-on CSS Grid layouts with live, in-browser demos
+
+## Technical Reference
+
+For contributor-level details (SCSS pipeline, design token catalog, Bootstrap integration internals, extending the design system):
+
+- [Design System → docs/ui/design-system.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/design-system.md)
+- [Theming → docs/ui/theming.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/theming.md)
+- [Design Tokens → docs/ui/design-tokens.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/design-tokens.md)
+
+## See also
+
+- [[Customization]]
+- [[Bootstrap Integration]]
+- [[Dark/Light Mode Toggle]]

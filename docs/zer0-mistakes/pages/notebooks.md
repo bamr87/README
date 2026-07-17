@@ -1,5 +1,6 @@
 ---
 description: Interactive Jupyter notebooks with tutorials and data analysis examples
+lastmod: 2026-04-18 19:30:20+00:00
 layout: default
 permalink: /notebooks/
 source_file: notebooks.md

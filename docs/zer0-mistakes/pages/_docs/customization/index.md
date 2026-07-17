@@ -5,9 +5,11 @@ categories:
 description: Customize the Zer0-Mistakes Jekyll theme - layouts, styles, navigation,
   and more.
 difficulty: intermediate
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
 permalink: /docs/customization/
+preview: /images/previews/customization.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -41,6 +43,7 @@ Update `_config.yml`:
 title: "Your Site Title"
 subtitle: "Your tagline"
 description: "Site description for SEO"
+preview: /images/previews/customization.png
 author:
   name: "Your Name"
   email: "you@example.com"
@@ -85,7 +88,7 @@ Edit files in `_data/navigation/`:
 
 ## Layout Hierarchy
 
-```
+```text
 root.html          ← Base HTML structure
 └── default.html   ← Main wrapper with navigation
     ├── home.html      ← Homepage layout
@@ -108,3 +111,17 @@ Example: Override the footer by creating `_includes/core/footer.html`.
 - [Layouts Guide](layouts/) — Page templates
 - [Styles Guide](styles/) — CSS customization
 - [Navigation Guide](navigation/) — Menu configuration
+
+## Technical Reference
+
+For contributor-level details (SCSS architecture, design token catalog, fork-safe extension patterns):
+
+- [Extending the Theme → docs/ui/extending.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/extending.md)
+- [UI Customization → docs/ui/customization.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/customization.md)
+
+## See also
+
+- [[Bootstrap Integration]]
+- [[Features]]
+- [[Liquid]]
+- [[Jekyll]]

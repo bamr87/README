@@ -1,5 +1,14 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-10-26 19:20:20+00:00
+description: 'A reusable template for writing Zer0-Mistakes release notes: version,
+  date, highlights, changes, fixes, and upgrade guidance for each release.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: release-notes-template.md
+tags:
+- templates
 title: Release Notes Template
 ---
 # Release Notes Template

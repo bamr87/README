@@ -1,5 +1,6 @@
 ---
 description: Site usage terms
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /terms-of-service/
 source_file: terms-of-service.md

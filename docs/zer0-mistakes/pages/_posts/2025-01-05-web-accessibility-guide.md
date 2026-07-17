@@ -9,9 +9,9 @@ description: A comprehensive guide to web accessibility best practices, WCAG com
 draft: true
 estimated_reading_time: 12 minutes
 featured: true
-lastmod: 2025-12-01 02:20:51.166000+00:00
+lastmod: 2026-07-13 00:00:00+00:00
 layout: article
-preview: /images/wizard-on-journey.png
+preview: /images/previews/building-accessible-web-applications.png
 source_file: 2025-01-05-web-accessibility-guide.md
 tags:
 - accessibility

@@ -1,7 +1,7 @@
 ---
 date: 2025-01-27
 description: How we collect, use, and protect your personal information
-draft: draft
+draft: true
 lastmod: 2025-01-27
 layout: default
 permalink: /privacy-policy/

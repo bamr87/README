@@ -1,8 +1,10 @@
 ---
 date: 2025-10-10
 description: Comprehensive site analytics and content metrics system for Jekyll themes
+lastmod: 2026-04-18 19:30:05+00:00
 layout: default
 permalink: /about/features/statistics-dashboard/
+preview: /images/previews/statistics-dashboard-feature.png
 source_file: statistics-dashboard.md
 title: Statistics Dashboard Feature
 ---
@@ -134,6 +136,7 @@ Leverages Bootstrap 5 utilities for:
 ---
 title: "Site Statistics"
 description: "Comprehensive analytics for site content"
+preview: /images/previews/statistics-dashboard-feature.png
 layout: stats
 permalink: /stats/
 ---

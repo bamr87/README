@@ -5,9 +5,12 @@ categories:
 description: Client-side search functionality with modal interface, JSON index, and
   keyboard shortcut activation.
 difficulty: intermediate
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
+mermaid: true
 permalink: /docs/features/site-search/
+preview: /images/previews/site-search.png
 sidebar:
   nav: docs
 source_file: site-search.md
@@ -21,6 +24,10 @@ title: Site Search
 # Site Search
 
 Client-side search functionality with a Bootstrap modal interface and keyboard shortcut activation.
+
+![The site search modal open with "docker" typed in, showing live results — each a title and a snippet with the matched term highlighted](/assets/images/docs/features/site-search.png)
+
+Open it from the search icon in the navbar (or press <kbd>/</kbd>), type a query, and matches appear instantly — the index is built at build time and searched entirely in the browser, so it works on GitHub Pages with no backend.
 
 ## Overview
 
@@ -308,3 +315,8 @@ searchInput.addEventListener('input', () => {
 
 - [Keyboard Navigation](/docs/features/keyboard-navigation/)
 - [Modal Components](/docs/bootstrap/)
+
+## See also
+
+- [[Features]]
+- [[Keyboard Navigation]]

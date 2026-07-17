@@ -8,6 +8,7 @@ description: A beginner-friendly introduction to quantum computing and its revol
 estimated_reading_time: 15 min
 featured: true
 image: /assets/images/posts/quantum-computing.jpg
+lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/quantum-computing-explained-from-qubits-to-quantum.png
 source_file: 2025-01-18-quantum-computing-explained.md

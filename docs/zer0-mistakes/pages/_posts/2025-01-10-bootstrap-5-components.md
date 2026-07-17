@@ -8,6 +8,7 @@ description: Explore essential Bootstrap 5 components and patterns for building 
   Jekyll themes with professional UI design.
 estimated_reading_time: 10 minutes
 featured: true
+lastmod: 2026-04-18 19:30:07+00:00
 layout: article
 preview: /images/info-banner-mountain-wizard.png
 source_file: 2025-01-10-bootstrap-5-components.md

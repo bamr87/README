@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-09-28 23:25:58+00:00
+description: How the automated version-bump system analyzes commits on main and performs
+  the matching semantic version bump and release without manual steps.
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: automated-version-system.md
+tags:
+- systems
+- automation
 title: 🤖 Automated Version Bump System
 ---
 # 🤖 Automated Version Bump System
@@ -160,6 +170,7 @@ Test the automation system locally:
    - Review build logs for detailed error messages
 
 4. **Manual Recovery**
+
    ```bash
    # If automation fails, recover manually:
    git tag -d v[version]  # Remove failed tag

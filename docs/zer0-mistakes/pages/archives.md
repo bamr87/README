@@ -1,5 +1,6 @@
 ---
 description: Post archives by month.
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /archives/
 source_file: archives.md

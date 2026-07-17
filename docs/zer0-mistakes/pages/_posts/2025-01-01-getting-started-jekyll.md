@@ -9,9 +9,9 @@ description: A beginner-friendly tutorial on creating your first Jekyll website 
 draft: true
 estimated_reading_time: 15 minutes
 featured: false
-lastmod: 2025-12-01 02:21:11.238000+00:00
+lastmod: 2026-07-13 00:00:00+00:00
 layout: article
-preview: /images/previews/business.png
+preview: /images/previews/getting-started-with-jekyll-your-first-static-site.png
 source_file: 2025-01-01-getting-started-jekyll.md
 tags:
 - jekyll

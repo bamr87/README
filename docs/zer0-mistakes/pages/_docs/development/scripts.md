@@ -5,12 +5,14 @@ categories:
 description: Guide to the shell script automation library for building, testing, and
   releasing the Zer0-Mistakes theme.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-04-18 19:29:54+00:00
 layout: default
 permalink: /docs/development/scripts/
 prerequisites:
 - Bash shell
 - Docker (optional)
+preview: /images/previews/scripts.png
 sidebar:
   nav: docs
 source_file: scripts.md
@@ -66,6 +68,7 @@ Manages semantic versioning for the theme:
 ```
 
 **What it does:**
+
 - Updates `lib/jekyll-theme-zer0/version.rb`
 - Updates `package.json`
 - Creates git commit and tag
@@ -92,6 +95,7 @@ Builds the Jekyll site and gem package:
 ```
 
 **Output:**
+
 - `_site/` - Built Jekyll site
 - `jekyll-theme-zer0-X.Y.Z.gem` - Gem package
 
@@ -119,6 +123,7 @@ Complete release workflow automation:
 ```
 
 **Release steps:**
+
 1. Run test suite
 2. Build gem package
 3. Publish to RubyGems.org
@@ -143,6 +148,7 @@ Initial project setup for new contributors:
 ```
 
 **What it configures:**
+
 - Ruby environment
 - Bundler dependencies
 - Docker containers
@@ -327,3 +333,9 @@ docker-compose up -d
 - [Testing Guide](/docs/development/testing/)
 - [Release Management](/docs/development/release-management/)
 - [CI/CD Pipeline](/docs/development/ci-cd/)
+
+## See also
+
+- [[Development]]
+- [[Release Management]]
+- [[CI/CD Pipeline]]

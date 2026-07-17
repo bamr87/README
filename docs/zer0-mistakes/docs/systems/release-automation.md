@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-11-26 05:12:01+00:00
+description: 'The v2.0 modular release automation system for Zer0-Mistakes: its architecture,
+  scripts, and the end-to-end flow from version bump to publish.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: release-automation.md
+tags:
+- systems
+- automation
 title: Release Automation System
 ---
 # Release Automation System
@@ -53,7 +63,7 @@ Press `Cmd+Shift+P` → "Tasks: Run Task" → Choose:
 
 The release automation is built on 6 focused libraries:
 
-```
+```text
 scripts/lib/
 ├── common.sh       (165 lines) - Logging, error handling, utilities
 ├── validation.sh   (120 lines) - Environment validation
@@ -69,7 +79,7 @@ scripts/lib/
 
 Two simplified commands provide the user interface:
 
-```
+```text
 scripts/
 ├── release         (200 lines) - Complete release workflow
 ├── build           (80 lines)  - Gem building only
@@ -159,7 +169,7 @@ The system automatically generates changelogs from conventional commit messages:
 
 **Commit Format:**
 
-```
+```text
 <type>(<scope>): <subject>
 
 <body>
@@ -275,7 +285,7 @@ gem signin
 # Or manually configure ~/.gem/credentials
 ```
 
-For comprehensive troubleshooting, see: [TROUBLESHOOTING.md](../TROUBLESHOOTING.md)
+For comprehensive troubleshooting, see: [Troubleshooting](../development/troubleshooting.md)
 
 ## Migration Guide
 
@@ -436,7 +446,7 @@ See: [scripts/lib/README.md](../../scripts/lib/README.md)
 ### Internal Documentation
 
 - **[Library README](../../scripts/lib/README.md)** - Detailed library documentation
-- **[TROUBLESHOOTING](../TROUBLESHOOTING.md)** - Common issues and solutions
+- **[Troubleshooting](../development/troubleshooting.md)** - Common issues and solutions
 - **[CONTRIBUTING](../../CONTRIBUTING.md)** - Development guidelines
 - **[Test Suite](../../test/README.md)** - Testing documentation
 

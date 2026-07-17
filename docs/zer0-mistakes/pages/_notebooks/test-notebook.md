@@ -9,6 +9,7 @@ description: This is a test notebook to demonstrate Jupyter notebook rendering i
 jupyter_metadata: true
 lastmod: 2025-11-30 05:20:10+00:00
 layout: notebook
+mathjax: true
 permalink: /notebooks/test-notebook/
 source_file: test-notebook.md
 tags:

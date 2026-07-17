@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2026-01-25 03:38:33+00:00
+description: How Jekyll layouts inherit from each other (root → default → article/collection/landing)
+  and how the _includes/ component system is organized.
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: layouts-includes.md
+tags:
+- architecture
+- design
 title: Layouts and Includes Architecture
 ---
 # Layouts and Includes Architecture
@@ -10,11 +20,11 @@ Documentation of the template system and component architecture.
 
 Layouts inherit from each other using Jekyll's `layout` front matter:
 
-```
+```text
 root.html              ← Base HTML document structure
 └── default.html       ← Main site wrapper
     ├── home.html      ← Homepage
-    ├── journals.html  ← Blog posts
+    ├── article.html  ← Blog posts
     ├── collection.html ← Collection index
     ├── landing.html   ← Full-width pages
     ├── blog.html      ← Blog listing
@@ -44,17 +54,19 @@ Base HTML structure. Rarely modified.
 Main site wrapper with header, footer, and optional sidebars.
 
 **Key sections:**
+
 - Site header with navigation
 - Left sidebar (optional, configurable)
 - Main content area
 - Right sidebar / TOC (optional)
 - Footer
 
-### `journals.html`
+### `article.html`
 
 Blog post layout extending `default.html`.
 
 **Additional features:**
+
 - Post metadata (date, author, categories, tags)
 - Reading time estimate
 - Comments section (Giscus)
@@ -65,6 +77,7 @@ Blog post layout extending `default.html`.
 Collection index layout for listing collection items.
 
 **Features:**
+
 - Item listing with excerpts
 - Filtering by category/tag
 - Pagination
@@ -74,6 +87,7 @@ Collection index layout for listing collection items.
 Full-width layout without sidebars.
 
 **Use cases:**
+
 - Marketing pages
 - Product pages
 - Custom landing pages

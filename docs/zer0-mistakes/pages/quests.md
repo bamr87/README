@@ -1,5 +1,6 @@
 ---
 description: Browse quests and tutorials.
+lastmod: 2026-04-18 19:30:22+00:00
 layout: default
 permalink: /quests/
 source_file: quests.md

@@ -2,13 +2,21 @@
 categories:
 - docs
 - bootstrap
-description: Bootstrap 5.3.3 usage patterns, components, and customization in the
-  Zer0-Mistakes theme.
+description: How the Zer0-Mistakes Jekyll theme ships vendored Bootstrap 5.3.3 — grid,
+  components, color modes, icons, and Sass customization, with copy-paste examples.
 difficulty: beginner
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+keywords:
+- bootstrap 5
+- jekyll bootstrap theme
+- bootstrap grid
+- bootstrap components
+- responsive design
+lastmod: 2026-06-22 12:00:00+00:00
 layout: default
 permalink: /docs/bootstrap/
 prerequisites: []
+preview: /images/previews/bootstrap-integration.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -25,7 +33,7 @@ The Zer0-Mistakes theme is built on **Bootstrap 5.3.3**, providing responsive la
 
 ## How Bootstrap is Loaded
 
-The theme ships **Bootstrap 5.3.3**, **jQuery**, and **Bootstrap Icons** under [`assets/vendor/`]({{ '/assets/vendor/' | relative_url }}) so **GitHub Pages** builds need no `npm` or network at publish time. Refresh files with `./scripts/vendor-install.sh` (see [Vendor assets]({{ '/docs/development/vendor-assets/' | relative_url }})).
+The theme ships **Bootstrap 5.3.3** and **Bootstrap Icons** under [`assets/vendor/`]({{ '/assets/vendor/' | relative_url }}) so **GitHub Pages** builds need no `npm` or network at publish time. Refresh files with `./scripts/vendor-install.sh` (see [Vendor assets]({{ '/docs/development/vendor-assets/' | relative_url }})). Bootstrap 5 dropped the jQuery dependency, so the theme no longer bundles or loads jQuery.
 
 ### CSS (bundled — default)
 
@@ -41,7 +49,6 @@ The theme ships **Bootstrap 5.3.3**, **jQuery**, and **Bootstrap Icons** under [
 ```liquid
 {% raw %}
 <!-- In _includes/components/js-cdn.html -->
-<script src="{{ '/assets/vendor/jquery/jquery-3.7.1.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 {% endraw %}
 ```
@@ -90,6 +97,8 @@ If you prefer a public CDN instead of committed vendor files, you can swap the l
   <div class="col">Equal</div>
 </div>
 ```
+
+> **Going further:** Bootstrap's grid is built on flexbox and shines at rows of columns. When you need true two-dimensional control — overlapping areas, named regions, or magazine-style layouts — reach for native CSS Grid. The [CSS Grid Mastery tutorial](/posts/2025/01/23/css-grid-mastery/) walks through it with live, in-browser demos.
 
 ## Responsive Breakpoints
 
@@ -373,3 +382,11 @@ document.querySelectorAll('.needs-validation').forEach(form => {
 - [Color Modes](/docs/features/color-modes/)
 - [Layouts](/docs/customization/layouts/)
 - [Include Components](/docs/customization/includes/)
+- [CSS Grid Mastery (tutorial)](/posts/2025/01/23/css-grid-mastery/)
+
+## See also
+
+- [[Customization]]
+- [[Features]]
+- [[Jekyll]]
+- [[Liquid]]

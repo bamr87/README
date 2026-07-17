@@ -5,9 +5,11 @@ categories:
 description: Theme color mode switcher supporting light, dark, and auto modes with
   system preference detection.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/color-modes/
+preview: /images/previews/dark-light-mode-toggle.png
 sidebar:
   nav: docs
 source_file: color-modes.md
@@ -21,6 +23,10 @@ title: Dark/Light Mode Toggle
 # Dark/Light Mode Toggle
 
 The Zer0-Mistakes theme includes a color mode switcher supporting light, dark, and automatic system preference detection.
+
+The **Theme Preview** page (`/about/settings/theme-preview/`) is a live style guide for trying color modes and the nine skins against real Bootstrap components — typography, buttons, alerts, cards, forms, and more:
+
+![Theme Preview page: a Mode toggle and a Skin selector (Air, Aqua, Dirt, Neon, Mint, Plum, Sunrise) above live component samples, with the current state shown as "Active: air, Mode: auto (light)"](/assets/images/docs/features/theme-preview.png)
 
 ## Overview
 
@@ -284,3 +290,9 @@ Ensure using Bootstrap 5.3+:
 
 - [Bootstrap Integration](/docs/bootstrap/)
 - [Custom Styles](/docs/customization/styles/)
+
+## See also
+
+- [[Features]]
+- [[Customization]]
+- [[Bootstrap Integration]]

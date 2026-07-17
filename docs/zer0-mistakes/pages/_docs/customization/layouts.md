@@ -4,9 +4,11 @@ categories:
 - customization
 description: Create and customize page layouts in the Zer0-Mistakes Jekyll theme.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-22 12:00:00+00:00
 layout: default
 permalink: /docs/customization/layouts/
+preview: /images/previews/layouts.png
 sidebar:
   nav: docs
 source_file: layouts.md
@@ -46,7 +48,7 @@ layout: default
 
 Layouts inherit from each other:
 
-```
+```text
 root.html
 └── default.html
     ├── home.html
@@ -94,7 +96,7 @@ layout: default
 title: "Getting Started Tutorial"
 layout: tutorial
 difficulty: beginner
-estimated_time: "15 minutes"
+estimated_reading_time: "15 minutes"
 next_tutorial: /tutorials/part-2/
 ---
 ```
@@ -160,3 +162,16 @@ Use includes for reusable parts:
 
 - [Jekyll Layouts Documentation](https://jekyllrb.com/docs/layouts/)
 - [Liquid Template Language](https://shopify.github.io/liquid/)
+- [CSS Grid Mastery (tutorial)](/posts/2025/01/23/css-grid-mastery/) — build custom two-dimensional layouts with live, in-browser examples
+
+## Technical Reference
+
+For contributor-level details (layout hierarchy, Liquid template inheritance, sidebar wiring):
+
+- [Layouts and Navigation → docs/ui/layouts-and-navigation.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/layouts-and-navigation.md)
+
+## See also
+
+- [[Customization]]
+- [[Include Components]]
+- [[Liquid]]

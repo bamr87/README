@@ -1,0 +1,142 @@
+{
+  "corpus": {
+    "file_count": 294,
+    "fingerprint": "b2fbb3d5b336bc56",
+    "path": "docs/barodybroject",
+    "present": true,
+    "total_bytes": 2076515
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Table of Contents",
+      "Features",
+      "Features",
+      "Technology Stack",
+      "Architecture & Design Patterns",
+      "Configuration & Environment",
+      "Project Structure",
+      "Prerequisites",
+      "Installation & Setup",
+      "Running the Application"
+    ],
+    "readme": "README.md",
+    "summary": "A Django-based web application integrated with OpenAI to generate AI-powered parody news content. This project combines modern web development practices with artificial intelligence to create a platform for generating and managing satirical news articles.",
+    "title": "Parody News Generator"
+  },
+  "key_docs": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "PRD.md",
+    ".github/instructions/test.instructions.md",
+    "README/scripts/README.md",
+    "scripts/README.md",
+    ".github/instructions/languages.instructions.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "barodybroject",
+    "registry_description": "Full-stack application platform with infrastructure, testing, and deployment tooling.",
+    "repo": "bamr87/barodybroject",
+    "status": "active",
+    "topics": [
+      "python",
+      "django",
+      "azure",
+      "full-stack"
+    ],
+    "url": "https://github.com/bamr87/barodybroject"
+  },
+  "rollups": {
+    "categories": {
+      "barodybroject": 295
+    },
+    "code_languages": [
+      "bash",
+      "python",
+      "yaml",
+      "plaintext",
+      "django",
+      "markdown",
+      "html",
+      "javascript"
+    ],
+    "indexed_documents": 295,
+    "top_tags": [
+      "index",
+      "agricultural technology",
+      "corporate betrayal",
+      "corporate ethics",
+      "diasporic experience",
+      "erp systems",
+      "geopolitical subterfuge",
+      "historical inequities.",
+      "identity politics",
+      "institutional exclusion",
+      "labor exploitation",
+      "modern capitalism",
+      "post-colonialism",
+      "racial marginalization",
+      "socio-economic marginalization"
+    ],
+    "total_words": 231244
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": false,
+    "has_changelog": true,
+    "has_claude_md": false,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "ADMIN_CREDENTIALS_QUICKSTART.md",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "DONTREADME.md",
+      "IMPLEMENTATION_SUMMARY.md",
+      "PRD.md",
+      "README.md",
+      "TODO.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 123,
+        "name": "src"
+      },
+      {
+        "doc_count": 73,
+        "name": "README"
+      },
+      {
+        "doc_count": 48,
+        "name": "docs"
+      },
+      {
+        "doc_count": 32,
+        "name": ".github"
+      },
+      {
+        "doc_count": 5,
+        "name": "infra"
+      },
+      {
+        "doc_count": 2,
+        "name": "scripts"
+      },
+      {
+        "doc_count": 2,
+        "name": "test"
+      },
+      {
+        "doc_count": 1,
+        "name": ".devcontainer"
+      }
+    ]
+  }
+}

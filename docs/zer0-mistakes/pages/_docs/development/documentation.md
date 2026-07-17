@@ -5,9 +5,11 @@ categories:
 description: Guide to the dual documentation architecture with technical docs, public
   docs, and AI instructions.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-04-18 19:29:55+00:00
 layout: default
 permalink: /docs/development/documentation/
+preview: /images/previews/documentation.png
 sidebar:
   nav: docs
 source_file: documentation.md
@@ -24,7 +26,7 @@ The Zer0-Mistakes theme implements a dual documentation system designed to serve
 
 ## Overview
 
-```
+```text
 Documentation Architecture
 ├── /docs/                    # Technical Documentation (MDX)
 │   ├── Developer/contributor focused
@@ -60,6 +62,7 @@ Documentation Architecture
 ---
 title: "Descriptive Technical Title"
 description: "Technical implementation summary"
+preview: /images/previews/documentation.png
 type: "system|feature|configuration|release"
 audience: "developers|contributors|maintainers"
 components: ["file1.rb", "file2.html"]
@@ -100,12 +103,13 @@ complexity: "beginner|intermediate|advanced"
 ---
 title: Feature Name
 description: One-line description for SEO
+preview: /images/previews/documentation.png
 layout: default
 categories: [docs, features]
 tags: [relevant, tags]
 permalink: /docs/category/feature-name/
 difficulty: beginner|intermediate|advanced
-estimated_time: X minutes
+estimated_reading_time: X minutes
 prerequisites: []
 sidebar:
     nav: docs
@@ -135,6 +139,7 @@ sidebar:
 ---
 applyTo: "path/to/files/**"
 description: "Guidance for these files"
+preview: /images/previews/documentation.png
 ---
 
 # Development Guidelines
@@ -168,6 +173,7 @@ description: "Guidance for these files"
 ### Converting Between Formats
 
 **Technical → Public**:
+
 1. Copy MDX file to `/pages/_docs/`
 2. Remove JSX components
 3. Simplify technical details
@@ -175,6 +181,7 @@ description: "Guidance for these files"
 5. Update front matter
 
 **Public → Technical**:
+
 1. Copy Markdown to `/docs/`
 2. Add MDX components
 3. Include implementation details
@@ -242,3 +249,9 @@ bundle exec htmlproofer _site --check-links
 
 - [PRD](/docs/development/prd/)
 - [Contributing Guide](https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBUTING.md)
+
+## See also
+
+- [[Development]]
+- [[front-matter]]
+- [[Obsidian Vault Integration]]

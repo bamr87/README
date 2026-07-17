@@ -1,0 +1,111 @@
+{
+  "corpus": {
+    "file_count": 36,
+    "fingerprint": "1519dfd096a1715b",
+    "path": "docs/bashcrawl",
+    "present": true,
+    "total_bytes": 498223
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Where Heroes Are Forged in the Fires of the Command Line",
+      "\ud83c\udfae Getting Started",
+      "\ud83c\udf1f What Makes This Journey Special",
+      "\ud83d\ude80 Quick Start Your Adventure",
+      "\ud83c\udfac Gameplay Screenshots",
+      "\ud83d\udee1\ufe0f Interactive Terminal Emulator",
+      "\ud83c\udfaf Learning Path & Skills",
+      "\ud83e\udd16 Intelligent Help System",
+      "\ud83d\uddfa\ufe0f The Catacombs: Complete Adventure Map",
+      "\ud83c\udfae Gameplay Mechanics"
+    ],
+    "readme": "README.md",
+    "summary": "v3.0.0 \u2014 Textual TUI, quest system, agent mode, and more",
+    "title": "\u2694\ufe0f Bashcrawl: The Terminal Adventure Game"
+  },
+  "key_docs": [
+    "README.md",
+    "CHANGELOG.md",
+    "docs/demo-walkthrough.md",
+    ".github/instructions/scrolls.instructions.md",
+    "docs/log-viewer-reference.md",
+    "docs/demo-critical-path.md",
+    "docs/walkthrough.md",
+    ".github/instructions/rooms.instructions.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "game",
+    "name": "bashcrawl",
+    "registry_description": "Interactive shell-scripting tutorial \u2014 learn Bash by exploring a dungeon.",
+    "repo": "bamr87/bashcrawl",
+    "status": "active",
+    "topics": [
+      "bash",
+      "education",
+      "game"
+    ],
+    "url": "https://github.com/bamr87/bashcrawl"
+  },
+  "rollups": {
+    "categories": {
+      "bashcrawl": 36
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "json",
+      "yaml",
+      "python",
+      "text",
+      "markdown",
+      "gitignore"
+    ],
+    "indexed_documents": 36,
+    "top_tags": [],
+    "total_words": 55242
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": false,
+    "has_changelog": true,
+    "has_claude_md": false,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "CHANGELOG.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 18,
+        "name": "docs"
+      },
+      {
+        "doc_count": 6,
+        "name": "src"
+      },
+      {
+        "doc_count": 5,
+        "name": ".github"
+      },
+      {
+        "doc_count": 3,
+        "name": "entrance"
+      },
+      {
+        "doc_count": 1,
+        "name": ".archives"
+      },
+      {
+        "doc_count": 1,
+        "name": "logs"
+      }
+    ]
+  }
+}

@@ -5,9 +5,11 @@ categories:
 description: Organized content collections for posts, docs, notebooks, and other content
   types with custom permalinks.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/jekyll/collections/
+preview: /images/previews/jekyll-collections.png
 sidebar:
   nav: docs
 source_file: collections.md
@@ -66,7 +68,7 @@ defaults:
       path: "pages/_posts"
       type: posts
     values:
-      layout: journals
+      layout: article
       author: default
       
   # Documentation
@@ -100,7 +102,7 @@ title: "My Blog Post"
 date: 2025-01-25
 categories: [technology, jekyll]
 tags: [tutorial, beginner]
-preview: /images/previews/my-post.png
+preview: /images/previews/jekyll-collections.png
 ---
 
 Post content here...
@@ -118,7 +120,7 @@ title: "Getting Started"
 description: "Quick start guide for new users"
 permalink: /docs/getting-started/
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
 ---
 
 Documentation content...
@@ -176,7 +178,7 @@ collections:
     permalink: /tutorials/:title/
 ```
 
-2. **Set defaults**:
+1. **Set defaults**:
 
 ```yaml
 defaults:
@@ -187,13 +189,13 @@ defaults:
       layout: tutorial
 ```
 
-3. **Create directory**:
+1. **Create directory**:
 
 ```bash
 mkdir pages/_tutorials
 ```
 
-4. **Add content**:
+1. **Add content**:
 
 ```yaml
 ---
@@ -206,7 +208,7 @@ difficulty: beginner
 
 ### By Category
 
-```
+```text
 pages/_docs/
 ├── getting-started/
 │   ├── index.md
@@ -221,7 +223,7 @@ pages/_docs/
 
 ### By Date
 
-```
+```text
 pages/_posts/
 ├── 2025-01-25-first-post.md
 ├── 2025-01-24-second-post.md
@@ -230,7 +232,7 @@ pages/_posts/
 
 ### By Topic
 
-```
+```text
 pages/_notebooks/
 ├── data-science/
 │   ├── pandas-basics.ipynb
@@ -348,6 +350,12 @@ layout: default
 
 ## Related
 
-- [Jekyll Configuration](/docs/jekyll/jekyll-config/)
+- [Jekyll Configuration](/docs/jekyll/)
 - [Layouts](/docs/customization/layouts/)
 - [Front Matter](/docs/front-matter/)
+
+## See also
+
+- [[Jekyll]]
+- [[front-matter]]
+- [[Liquid]]

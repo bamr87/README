@@ -1,0 +1,111 @@
+{
+  "corpus": {
+    "file_count": 712,
+    "fingerprint": "dd818354495728d6",
+    "path": "docs/skills",
+    "present": true,
+    "total_bytes": 5003998
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Quick Start",
+      "What's Inside",
+      "Skill Catalog",
+      "Repository Structure",
+      "Plugins",
+      "MCP Servers",
+      "Additional Resources",
+      "Testing Skills",
+      "Contributing",
+      "License"
+    ],
+    "readme": "README.md",
+    "summary": "[!NOTE] Work in Progress \u2014 This repository is under active development. More skills are being added, existing skills are being updated to use the latest SDK patterns, and tests are being expanded to ensure quality. Contributions welcome!",
+    "title": "Agent Skills"
+  },
+  "key_docs": [
+    "README.md",
+    "SECURITY.md",
+    ".github/prompts/scaffold-foundry-app.prompt.md",
+    ".github/docs/skills.md",
+    "tests/AGENTS.md",
+    "Agents.md",
+    ".github/copilot-instructions.md",
+    ".github/agents/scaffolder.agent.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "docs",
+    "name": "skills",
+    "registry_description": "Agent skills \u2014 prompts, MCP configurations, and AI development patterns.",
+    "repo": "bamr87/skills",
+    "status": "active",
+    "topics": [
+      "ai",
+      "agents",
+      "mcp",
+      "prompts"
+    ],
+    "url": "https://github.com/bamr87/skills"
+  },
+  "rollups": {
+    "categories": {
+      "skills": 712
+    },
+    "code_languages": [
+      "python",
+      "java",
+      "typescript",
+      "csharp",
+      "bash",
+      "plaintext",
+      "rust",
+      "markdown"
+    ],
+    "indexed_documents": 712,
+    "top_tags": [
+      "learning",
+      "memory",
+      "reflection",
+      "productivity",
+      "featured"
+    ],
+    "total_words": 509370
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": false,
+    "has_claude_md": false,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "Agents.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 705,
+        "name": ".github"
+      },
+      {
+        "doc_count": 2,
+        "name": "tests"
+      },
+      {
+        "doc_count": 1,
+        "name": "docs-site"
+      },
+      {
+        "doc_count": 1,
+        "name": "hooks"
+      }
+    ]
+  }
+}

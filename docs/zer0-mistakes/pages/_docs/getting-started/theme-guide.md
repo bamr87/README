@@ -5,13 +5,21 @@ categories:
 description: Comprehensive guide to using and customizing the Zer0-Mistakes Jekyll
   theme with Docker-first development, Bootstrap 5, and modern integrations.
 difficulty: beginner
-estimated_time: 30 minutes
+estimated_reading_time: 30 minutes
+keywords:
+- jekyll theme guide
+- zer0-mistakes
+- docker jekyll
+- bootstrap 5 theme
+- github pages theme
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/getting-started/theme-guide/
 prerequisites:
 - Docker Desktop installed
 - Basic command line knowledge
 - Text editor (VS Code recommended)
+preview: /images/previews/jekyll-theme-guide.png
 sidebar:
   nav: docs
 source_file: theme-guide.md
@@ -67,7 +75,7 @@ bundle exec jekyll serve --config "_config.yml,_config_dev.yml"
 
 ## Project Structure
 
-```
+```text
 zer0-mistakes/
 ├── _config.yml          # Production configuration
 ├── _config_dev.yml      # Development overrides
@@ -106,6 +114,7 @@ The theme uses two configuration files:
 | `_config_dev.yml` | Development overrides | Local development |
 
 **Production** (`_config.yml`):
+
 ```yaml
 remote_theme: "bamr87/zer0-mistakes"
 posthog:
@@ -113,6 +122,7 @@ posthog:
 ```
 
 **Development** (`_config_dev.yml`):
+
 ```yaml
 remote_theme: false
 posthog:
@@ -126,6 +136,7 @@ show_drafts: true
 # Site Settings
 title: "Your Site Title"
 description: "Site description for SEO"
+preview: /images/previews/jekyll-theme-guide.png
 url: "https://yourdomain.com"
 baseurl: ""  # Subpath, e.g., /blog
 
@@ -157,7 +168,7 @@ mermaid:
 
 Create posts in `pages/_posts/` with the naming convention:
 
-```
+```text
 YYYY-MM-DD-title-slug.md
 ```
 
@@ -167,8 +178,9 @@ YYYY-MM-DD-title-slug.md
 ---
 title: "My Blog Post"
 description: "A brief description (150-160 chars)"
+preview: /images/previews/jekyll-theme-guide.png
 date: 2026-01-24T10:00:00.000Z
-layout: journals
+layout: article
 categories: [Category, Subcategory]
 tags: [tag1, tag2, tag3]
 author: "Your Name"
@@ -186,10 +198,11 @@ Create docs in `pages/_docs/`:
 ---
 title: "Documentation Page"
 description: "What this page covers"
+preview: /images/previews/jekyll-theme-guide.png
 layout: default
 permalink: /docs/section/page-name/
 difficulty: beginner
-estimated_time: "10 minutes"
+estimated_reading_time: "10 minutes"
 ---
 ```
 
@@ -300,6 +313,7 @@ Use the `link` tag for validated internal links:
 ```
 
 **Benefits:**
+
 - Build fails if link target doesn't exist
 - Automatically handles URL changes
 
@@ -352,6 +366,7 @@ Create reusable components in `_includes/`:
 ```
 
 **Usage:**
+
 ```liquid
 {% raw %}{% include components/alert.html type="warning" message="Important notice!" %}{% endraw %}
 ```
@@ -457,3 +472,10 @@ bundle exec jekyll clean
 ---
 
 *This guide is part of the [Zer0-Mistakes Jekyll Theme](https://github.com/bamr87/zer0-mistakes) documentation.*
+
+## See also
+
+- [[Getting Started]]
+- [[Customization]]
+- [[Features]]
+- [[Bootstrap Integration]]

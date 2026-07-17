@@ -1,0 +1,94 @@
+{
+  "corpus": {
+    "file_count": 14,
+    "fingerprint": "583bc229e309e2b6",
+    "path": "docs/scripts",
+    "present": true,
+    "total_bytes": 140088
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "\ud83d\udce6 Available Tools",
+      "\ud83c\udf74 ForkMe - Quick Overview",
+      "\ud83d\udcbe StashMe - Quick Overview",
+      "\ud83d\udcc1 Rename Directory Utility",
+      "\ufffd\ud83d\ude80 Project Initialization Wizard",
+      "\u2728 Features",
+      "\ud83d\ude80 Quick Start",
+      "\ud83d\udccb Configuration",
+      "\ud83d\udee0\ufe0f Project Type Details",
+      "\ud83d\udc33 Docker Integration"
+    ],
+    "readme": "README.md",
+    "summary": "This directory contains project scripts used for automation and development tasks. It is intentionally tracked in the repository so collaborators can run and maintain these utilities.",
+    "title": "scripts directory"
+  },
+  "key_docs": [
+    "README.md",
+    "FORKME/FORKME.md",
+    "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
+    "FORKME/FORKME-EXAMPLES.md",
+    "FORKME/IMPROVEMENTS.md",
+    "FORKME/REVIEW-SUMMARY.md",
+    "STASHME/STASHME-EXAMPLES.md",
+    "STASHME/STASHME.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "scripts",
+    "registry_description": "Automation scripts for forking, linting, stashing, and project management across the fleet.",
+    "repo": "bamr87/scripts",
+    "status": "active",
+    "topics": [
+      "automation",
+      "bash",
+      "python"
+    ],
+    "url": "https://github.com/bamr87/scripts"
+  },
+  "rollups": {
+    "categories": {
+      "scripts": 14
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "yaml"
+    ],
+    "indexed_documents": 14,
+    "top_tags": [],
+    "total_words": 16570
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": false,
+    "has_changelog": false,
+    "has_claude_md": false,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "README.md",
+      "RENAME-DIRECTORY-QUICK-REFERENCE.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 7,
+        "name": "FORKME"
+      },
+      {
+        "doc_count": 4,
+        "name": "STASHME"
+      },
+      {
+        "doc_count": 1,
+        "name": "linting"
+      }
+    ]
+  }
+}

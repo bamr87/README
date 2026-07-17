@@ -1,5 +1,6 @@
 ---
 description: Browse hobbies content.
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /hobbies/
 source_file: hobbies.md

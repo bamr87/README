@@ -5,7 +5,7 @@ comments: false
 date: 2025-12-16
 description: Comprehensive list of zer0-mistakes Jekyll theme features with documentation
   links and implementation details
-lastmod: 2025-12-16
+lastmod: 2026-05-05
 layout: default
 permalink: /features/
 source_file: features.md
@@ -20,6 +20,8 @@ toc: true
 # {{ page.title }}
 
 Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.features.features.size }} features are documented with references, links, and implementation details.
+
+{% assign gh = "https://github.com/" | append: site.github_user | append: "/" | append: site.repository_name %}
 
 ---
 
@@ -38,7 +40,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-check-circle-fill text-success me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.references %}
       <div class="mt-3">
@@ -66,6 +68,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -93,7 +101,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-robot text-primary me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.providers %}
       <div class="mt-3">
@@ -113,6 +121,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -142,7 +156,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-shield-check text-success me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.features %}
       <div class="mt-3">
@@ -162,6 +176,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -192,7 +212,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-compass text-info me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.shortcuts %}
       <div class="mt-3">
@@ -212,6 +232,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -242,7 +268,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-file-earmark-text text-warning me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.diagram_types %}
       <div class="mt-3">
@@ -262,6 +288,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -293,7 +325,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <i class="bi bi-tools text-danger me-2"></i>
         {{ feature.title }}
       </h5>
-      <p class="card-text">{{ feature.description }}</p>
+      <p class="card-text">{{ feature.description | escape }}</p>
       
       {% if feature.features %}
       <div class="mt-3">
@@ -313,6 +345,12 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <span class="badge bg-light text-dark">{{ tag }}</span>
         {% endfor %}
       </div>
+      {% if feature.provenance %}
+      <div class="mt-2 small text-muted">
+        {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-2">PR #{{ feature.provenance.pr }}</a>{% endif %}
+        {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+      </div>
+      {% endif %}
     </div>
     {% if feature.docs %}
     <div class="card-footer">
@@ -338,6 +376,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <th>Feature</th>
         <th>Version</th>
         <th>Tags</th>
+        <th>Provenance</th>
         <th>Documentation</th>
       </tr>
     </thead>
@@ -348,13 +387,19 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         <td>
           <strong>{{ feature.title }}</strong>
           <br>
-          <small class="text-muted">{{ feature.description | truncate: 80 }}</small>
+          <small class="text-muted">{{ feature.description | escape | truncate: 80 }}</small>
         </td>
         <td><span class="badge bg-secondary">v{{ feature.version }}</span></td>
         <td>
           {% for tag in feature.tags limit:3 %}
           <span class="badge bg-light text-dark">{{ tag }}</span>
           {% endfor %}
+        </td>
+        <td class="small text-nowrap">
+          {% if feature.provenance.pr %}<a href="{{ gh }}/pull/{{ feature.provenance.pr }}" class="text-decoration-none me-1" title="Pull request">PR #{{ feature.provenance.pr }}</a>{% endif %}
+          {% if feature.provenance.commit %}<a href="{{ gh }}/commit/{{ feature.provenance.commit }}" class="text-decoration-none me-1" title="Introducing commit"><code>{{ feature.provenance.commit }}</code></a>{% endif %}
+          {% if feature.provenance.issue %}<a href="{{ gh }}/issues/{{ feature.provenance.issue }}" class="text-decoration-none" title="Issue">#{{ feature.provenance.issue }}</a>{% endif %}
+          {% unless feature.provenance %}<span class="text-muted">—</span>{% endunless %}
         </td>
         <td>
           {% if feature.docs %}
@@ -430,11 +475,39 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
   {% endfor %}
 {% endfor %}
 
-<div class="d-flex flex-wrap gap-2">
-  {% for tag in all_tags %}
-  <span class="badge bg-primary">{{ tag }}</span>
+{% assign sorted_tags = all_tags | sort_natural %}
+
+<div class="d-flex flex-wrap gap-2 feature-categories">
+  {% for tag in sorted_tags %}
+  <a href="#{{ tag | append: '' | slugify }}"
+     class="badge bg-primary text-decoration-none"
+     aria-label="View features tagged {{ tag }}">{{ tag }}</a>
   {% endfor %}
 </div>
+
+<section class="feature-category-list mt-4">
+  {% for tag in sorted_tags %}
+    {% assign tagged_features = site.data.features.features | where_exp: "item", "item.tags contains tag" %}
+    <article class="feature-category-section mb-4" id="{{ tag | append: '' | slugify }}">
+      <h3 class="h6 mb-2">
+        <i class="bi bi-tag-fill text-primary me-1" aria-hidden="true"></i>{{ tag }}
+        <span class="badge bg-secondary">{{ tagged_features.size }}</span>
+      </h3>
+      <ul class="list-group list-group-flush">
+        {% for feature in tagged_features %}
+        <li class="list-group-item px-0">
+          {% if feature.docs %}
+          <a href="{{ feature.docs | relative_url }}" class="fw-semibold text-decoration-none">{{ feature.title }}</a>
+          {% else %}
+          <span class="fw-semibold">{{ feature.title }}</span>
+          {% endif %}
+          <small class="text-muted d-block">{{ feature.description | escape | truncate: 100 }}</small>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+  {% endfor %}
+</section>
 
 ---
 

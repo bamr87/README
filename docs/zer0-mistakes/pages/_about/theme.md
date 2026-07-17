@@ -5,6 +5,7 @@ icon: bi-palette
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/theme/
+preview: /images/previews/bootstrap-theme-examples.png
 source: https://getbootstrap.com/docs/5.3/examples/cheatsheet/
 source_file: theme.md
 title: Theme

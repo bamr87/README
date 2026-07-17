@@ -10,6 +10,11 @@ on:
     paths:
       - 'docs/**'
       - 'scripts/**'
+      - 'context/**'
+      - '_data/**'
+      - 'mcp/**'
+      - 'hooks.d/**'
+      - '.mcp.json'
       - '**.md'
       - 'requirements.txt'
       - '.github/workflows/docs-quality-check.yaml'
@@ -44,6 +49,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then python -m pip install -r requirements.txt; fi
+
+      - name: Validate SCHEMA pyramid (drift gate)
+        run: python3 scripts/schema_lint.py check .
 
       - name: Run doc lint and frontmatter checks
         run: |

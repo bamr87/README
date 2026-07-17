@@ -1,179 +1,107 @@
-### MVP Draft: Centralized Docs Aggregator Repo
+# PRD — README context engine (v2)
 
-This MVP outlines a basic GitHub repository setup that aggregates documentation files from specified source repositories. It focuses on scanning Markdown files (extendable to others), organizing them into a structured directory based on simple contextual rules, and updating YAML front matter. The implementation uses:
+> v2 repurposes this repository from a generic documentation aggregator
+> (the v1 MVP, preserved in git history) into the **consolidated README of
+> the bamr87/bamr87 monorepo**: a dedicated, continuously evolving context
+> engine — MCP- and AI-augmented — that describes every submodule in the
+> fleet and can be queried by humans, CI, and AI agents.
 
-- **GitHub Workflows**: For automation and scheduling.
-- **Bash Scripting**: For cloning repos, file discovery, and orchestration.
-- **Python Processing**: For file organization, context analysis (basic NLP via libraries like NLTK if needed, but kept minimal), and YAML manipulation.
-- **AI Integrations**: Placeholder for xAI API (or similar) to enhance contextual categorization and front matter generation. For details on xAI API, visit https://x.ai/api.
+## 1. Problem
 
-Assumptions for MVP:
-- Source repos are public or accessible via GitHub token.
-- Doc files are primarily `.md` in `/docs/` or root README.
-- Organization: Simple directory structure based on keywords (e.g., /api/, /user-guides/).
-- AI: Used for summarizing content to generate tags/descriptions in front matter.
+The bamr87 monorepo manages a fleet of independent project repos. Knowledge
+about the fleet is scattered across dozens of READMEs and doc trees that
+drift, duplicate, and go stale. Humans can't hold the whole picture;
+AI agents working on any one repo lack cheap, current context about the
+others. Hand-maintaining a master README does not scale past a handful of
+projects.
 
-#### Step 1: Repository Setup
-Create a new GitHub repo, e.g., `docs-hub`. Clone it locally and add these files:
+## 2. Vision
 
-- `repos.txt`: List of source repo URLs or paths (one per line), e.g.:
-  ```
-  https://github.com/user/repo1
-  https://github.com/user/repo2
-  ```
+A README that is **built, not written**. This repo crawls the fleet,
+distills what it finds into a pyramid of context, publishes the apex as the
+consolidated README, and serves the whole pyramid through query interfaces.
+Because the pipeline reruns on a schedule, the context grows and corrects
+itself as the fleet evolves.
 
-- `.github/workflows/aggregate-docs.yaml`: The GitHub Action workflow.
-  ```yaml
-  name: Aggregate Documentation
+## 3. Architecture — the pyramid (per the monorepo SCHEMA protocol)
 
-  on:
-    schedule:
-      - cron: '0 0 * * *'  # Daily at midnight
-    workflow_dispatch:  # Manual trigger
+| Layer | Artifact | Audience | Producer |
+|---|---|---|---|
+| L0 apex | `context/README.md` + root README `AUTO:projects` span + `docs/index.md` | humans skimming the fleet | assembler |
+| L1 cards | `context/cards/<project>.md` | humans + agents needing one project's essence | synthesizer |
+| L2 facts | `context/facts/<project>.json` | machines, diffing, enrichment prompts | extractor |
+| L3 corpus | `docs/<project>/**` + `docs/docs_index.json` | deep dives, full-text search | aggregation stages 1–4 |
+| Query | `context/index/` + CLI + MCP server | everyone | indexer + `mcp/server.py` |
 
-  jobs:
-    aggregate:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout central repo
-          uses: actions/checkout@v4
+Supporting contracts:
 
-        - name: Set up Python
-          uses: actions/setup-python@v5
-          with:
-            python-version: '3.12'
+- **Registry as source of truth** — `_data/projects.yml`; `repos.txt` and
+  every generated surface are regenerated from it, never hand-edited.
+- **SCHEMA.md pyramid** — every governed directory carries a SCHEMA.md
+  (structure table, placement, forbidden); `scripts/schema_lint.py check .`
+  is the drift gate, wired into CI, matching the parent monorepo protocol.
+- **Hooks** — `hooks.d/<stage>/` executables run at each engine stage, the
+  extension point for AI orchestration around the pipeline.
 
-        - name: Install dependencies
-          run: pip install pyyaml requests  # Add nltk or others if needed for basic processing
+## 4. Functional requirements
 
-        - name: Run aggregation script
-          run: bash scripts/aggregate.sh
+1. **Crawl**: aggregate markdown from every active registry project
+   (clone/pull, branch pins, external repos) — stages 1–3 (existing).
+2. **Extract**: derive per-project facts offline from the corpus: identity
+   (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md,
+   AGENTS.md, …), structure, rollups (tags/categories/languages/words),
+   key documents, and a corpus fingerprint for change detection.
+3. **Synthesize**: render facts into per-project cards with a frontmatter
+   contract; optionally AI-enrich the essence paragraph.
+4. **Assemble**: build the consolidated apex README; inject the fleet table
+   into the root README `AUTO:projects` span; mirror the fleet overview to
+   the published site home (`docs/index.md`).
+5. **Index**: build a term index + manifest so queries need no rescan.
+6. **Serve**: answer queries via CLI (`query/card/facts/apex/status/
+   projects`) and via MCP (`list_projects`, `get_project`,
+   `search_context`, `get_readme`, `get_schema`, `context_status` +
+   `context://` resources).
+7. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits;
+   hooks allow agents to extend every build.
 
-        - name: Commit changes
-          uses: stefanzweifel/git-auto-commit-action@v5
-          with:
-            commit_message: "Automated docs aggregation"
-  ```
+## 5. Non-functional requirements
 
-- `scripts/aggregate.sh`: Bash script for scanning and copying files.
-  ```bash
-  #!/bin/bash
+- **Offline-first**: a full build must succeed with no network and no API
+  keys (heuristic enrichment); AI is an enhancement, never a dependency.
+- **Deterministic surfaces**: generated markdown carries fingerprints, not
+  timestamps — reruns over an unchanged corpus produce empty diffs.
+- **Dependency-light**: engine + MCP server run on pyyaml/requests +
+  stdlib; the MCP server is stdlib-only.
+- **Provider-agnostic AI**: Anthropic and xAI supported behind one
+  interface with a mock for tests; keys via environment only.
+- **Gate-friendly**: schema lint and unit suite run in the standard CI
+  gate; failures block merges, not the cron.
 
-  # Read repo list
-  while IFS= read -r repo; do
-    repo_name=$(basename "$repo" .git)
-    temp_dir="temp/$repo_name"
-    mkdir -p "$temp_dir"
+## 6. Interfaces
 
-    # Clone or pull repo
-    if [ -d "$temp_dir/.git" ]; then
-      git -C "$temp_dir" pull
-    else
-      git clone "$repo" "$temp_dir"
-    fi
+```bash
+python3 -m scripts.context_engine build [--ai auto|off|anthropic|xai|mock]
+python3 -m scripts.context_engine sync|status|projects
+python3 -m scripts.context_engine query <terms> | card <name> | facts <name> | apex
+python3 scripts/schema_lint.py check .
+python3 mcp/server.py        # stdio MCP; registered in .mcp.json
+```
 
-    # Find doc files (e.g., .md in docs/ or README)
-    find "$temp_dir" -type f \( -name "*.md" -o -name "README*" \) -not -path "*/.git/*" | while read -r file; do
-      rel_path="${file#"$temp_dir"/}"
-      cp "$file" "raw_docs/$repo_name/$rel_path"
-    done
-  done < repos.txt
+## 7. Success criteria
 
-  # Call Python for processing
-  python scripts/process.py
+- Adding a project = one registry entry; the next build produces its card,
+  facts, apex row, and query answers with no other edits.
+- An AI client in this repo can answer "what is <project> and where are its
+  docs?" from MCP alone, without cloning the project.
+- Drift (structure vs SCHEMA.md, registry vs surfaces) fails the gate
+  rather than silently accumulating.
+- The published site home and the root README never need hand edits.
 
-  # Clean up temp
-  rm -rf temp/
-  ```
+## 8. Future work
 
-- `scripts/process.py`: Python script for organization and front matter.
-  ```python
-  import os
-  import yaml
-  from pathlib import Path
-  import requests  # For AI API calls
-
-  RAW_DIR = 'raw_docs'
-  ORGANIZED_DIR = 'docs'
-  AI_API_URL = 'https://api.x.ai/v1/chat/completions'  # Placeholder; see https://x.ai/api for setup
-  AI_API_KEY = os.getenv('XAI_API_KEY')  # Set in GitHub secrets
-
-  def categorize_content(content):
-      # Basic rule-based categorization (MVP); enhance with AI
-      if 'api' in content.lower():
-          return 'api'
-      elif 'guide' in content.lower() or 'tutorial' in content.lower():
-          return 'user-guides'
-      else:
-          return 'misc'
-
-  def generate_front_matter(content):
-      # Use AI for summary/tags (placeholder)
-      if AI_API_KEY:
-          payload = {
-              'model': 'grok-beta',  # Adjust per API docs
-              'messages': [{'role': 'user', 'content': f"Summarize and tag this doc: {content[:500]}"}]
-          }
-          response = requests.post(AI_API_URL, json=payload, headers={'Authorization': f'Bearer {AI_API_KEY}'})
-          if response.status_code == 200:
-              ai_result = response.json()['choices'][0]['message']['content']
-              return {'title': 'Auto-Generated Title', 'tags': ai_result.split(', '), 'summary': ai_result}
-      return {'title': 'Default Title', 'tags': ['uncategorized'], 'summary': 'No summary'}
-
-  # Process files
-  for root, dirs, files in os.walk(RAW_DIR):
-      for file in files:
-          if file.endswith('.md'):
-              src_path = Path(root) / file
-              with open(src_path, 'r') as f:
-                  content = f.read()
-
-              # Extract existing front matter if any
-              if content.startswith('---'):
-                  fm_end = content.index('---', 3) + 3
-                  existing_fm = yaml.safe_load(content[3:fm_end-3])
-                  body = content[fm_end:]
-              else:
-                  existing_fm = {}
-                  body = content
-
-              # Generate/update front matter
-              new_fm = generate_front_matter(body)
-              updated_fm = {**existing_fm, **new_fm}
-
-              # Organize into dir
-              category = categorize_content(body)
-              dest_dir = Path(ORGANIZED_DIR) / category / Path(root).relative_to(RAW_DIR).parent
-              dest_dir.mkdir(parents=True, exist_ok=True)
-              dest_path = dest_dir / file
-
-              # Write updated MD
-              with open(dest_path, 'w') as f:
-                  f.write('---\n')
-                  yaml.dump(updated_fm, f)
-                  f.write('---\n')
-                  f.write(body)
-
-  # Clean raw_docs after processing
-  for root, dirs, files in os.walk(RAW_DIR, topdown=False):
-      for file in files:
-          os.remove(Path(root) / file)
-      for dir in dirs:
-          os.rmdir(Path(root) / dir)
-  os.rmdir(RAW_DIR)
-  ```
-
-#### Usage Instructions
-1. Add your source repos to `repos.txt`.
-2. Create directories: `mkdir -p scripts raw_docs docs temp`.
-3. For AI: Set `XAI_API_KEY` in GitHub repo secrets (Settings > Secrets and variables > Actions).
-4. Push to GitHub; trigger workflow manually or wait for schedule.
-5. Docs will appear in `/docs/`, organized by category, with updated YAML front matter.
-
-#### Extensions for Production
-- Enhance categorization with NLP (e.g., add `import nltk; nltk.download('punkt')` for tokenization).
-- Handle more file types (e.g., RST to MD conversion via pandoc).
-- Add error handling and logging.
-- Integrate GitHub Pages for a rendered site.
-
-This MVP provides a functional starting point; iterate based on testing.
+- Enrich facts from full clones (manifests, languages, git activity) during
+  the aggregation window, not just the markdown mirror.
+- Embedding-based retrieval behind the same `search_context` contract.
+- Cross-project relationship graph (shared topics/links) as an L2 artifact.
+- Fold the harmonize (Grok) corpus-reorganization system onto the same
+  provider-agnostic AI layer.

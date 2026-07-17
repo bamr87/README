@@ -1,0 +1,148 @@
+{
+  "corpus": {
+    "file_count": 435,
+    "fingerprint": "d1e68749b0cbe1b3",
+    "path": "docs/zer0-mistakes",
+    "present": true,
+    "total_bytes": 3218366
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "\u2728 What You Get",
+      "\ud83d\udc65 Who It's For",
+      "\ud83d\ude80 Get Started in 5 Minutes",
+      "\u26a1 Why People Pick zer0-mistakes",
+      "\ud83c\udfaf Bare-Minimum Starter (3 files, zero install)",
+      "\ud83e\uddf0 Advanced Features for Power Users",
+      "\ud83e\udd16 AI-Native Workflow",
+      "\ud83c\udfd7 Architecture",
+      "\u2728 Key Features",
+      "\ud83d\udce6 Installation Methods \u2014 Reference Card"
+    ],
+    "readme": "README.md",
+    "summary": "Free \u2022 Open source \u2022 Hosted on GitHub Pages for $0/month \u2022 Works on Mac, Windows, and Linux",
+    "title": "zer0-mistakes"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "docs/architecture/ui-components.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "theme",
+    "name": "zer0-mistakes",
+    "registry_description": "Jekyll theme and software architecture patterns for GitHub Pages.",
+    "repo": "bamr87/zer0-mistakes",
+    "status": "active",
+    "topics": [
+      "jekyll",
+      "theme",
+      "github-pages"
+    ],
+    "url": "https://github.com/bamr87/zer0-mistakes"
+  },
+  "rollups": {
+    "categories": {
+      "zer0-mistakes": 435
+    },
+    "code_languages": [
+      "bash",
+      "yaml",
+      "html",
+      "plaintext",
+      "liquid",
+      "text",
+      "markdown",
+      "javascript"
+    ],
+    "indexed_documents": 435,
+    "top_tags": [
+      "jekyll",
+      "automation",
+      "ui",
+      "docker",
+      "documentation",
+      "development",
+      "navigation",
+      "setup",
+      "theme",
+      "ai",
+      "github-pages",
+      "installation",
+      "systems",
+      "bootstrap",
+      "styling"
+    ],
+    "total_words": 387793
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 200,
+        "name": "pages"
+      },
+      {
+        "doc_count": 104,
+        "name": "docs"
+      },
+      {
+        "doc_count": 44,
+        "name": ".github"
+      },
+      {
+        "doc_count": 24,
+        "name": "test"
+      },
+      {
+        "doc_count": 17,
+        "name": ".claude"
+      },
+      {
+        "doc_count": 10,
+        "name": "templates"
+      },
+      {
+        "doc_count": 8,
+        "name": ".cursor"
+      },
+      {
+        "doc_count": 8,
+        "name": "scripts"
+      },
+      {
+        "doc_count": 3,
+        "name": ".issues"
+      },
+      {
+        "doc_count": 3,
+        "name": "_includes"
+      }
+    ]
+  }
+}

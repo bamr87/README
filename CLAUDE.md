@@ -4,49 +4,63 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-`bamr87/README` (branch `main`) — a **documentation aggregation pipeline**. It clones a list of external repos, extracts their Markdown, normalizes it, validates quality, builds a searchable index, and optionally runs an AI harmonization pass. The output (`docs/`) is what the parent monorepo's MkDocs site publishes (`docs_dir: README/docs` in the root `mkdocs.yml`).
+`bamr87/README` (branch `main`) — the **consolidated README / context engine** of the bamr87 monorepo. It crawls the fleet of project repos listed in the registry, aggregates their Markdown into a corpus, distills that corpus upward into a **context pyramid** (facts → cards → consolidated apex README), builds a query index, and serves the whole thing to AI clients over **MCP**. Scheduled CI reruns the pipeline, so the context continuously evolves with the fleet.
 
-> This is one submodule of the `bamr87/bamr87` monorepo. The repo you're editing here is `bamr87/README`. Commit here, push to `bamr87/README`, *then* bump the pointer in the parent — see the parent `../CLAUDE.md` for the submodule workflow. The aspirational top-level `README.md` (templates/, knowledge/, ai/ tree) describes the *parent* vision and does **not** reflect this repo's actual contents — trust `scripts/README.md` and `PRD.md` instead.
+> This is one submodule of the `bamr87/bamr87` monorepo. Commit here, push to `bamr87/README`, *then* bump the pointer in the parent — see the parent `../CLAUDE.md` for the submodule workflow. This repo follows the parent's **SCHEMA protocol**: every governed directory carries a `SCHEMA.md`, and `python3 scripts/schema_lint.py check .` is the drift gate (run it before committing structural changes).
 
 ## The pipeline (core architecture)
 
-Everything flows left-to-right; each stage's output is the next stage's input. Understanding this ordering is the key to being productive — the scripts are stages, not a flat utility bag.
+Everything flows left-to-right; each stage's output is the next stage's input. Stages 1–4 build the corpus (unchanged from the original aggregator); stages 5–6 are the context engine.
 
 | Stage | Input | Output | Entry point |
 |-------|-------|--------|-------------|
-| 1. Aggregate | `repos.txt` | `temp/` (clones) → `raw_docs/` | `scripts/aggregate.sh` (orchestrator) + `scripts/aggregate.py` (repo ops module) |
-| 2. Process | `raw_docs/` | `docs/{repo_name}/` + YAML frontmatter | `scripts/process.py` |
-| 3. Validate / fix | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` → `lint_docs.py`, `check_frontmatter.py`, and `--apply` fixers |
-| 4. Index / report | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py`, `mkdocs_quality_report.py` |
-| 5. Harmonize (AI) | `docs/` | reorganized docs + session files | `scripts/harmonize_docs.py` → `scripts/harmonize/` package |
+| 1. Aggregate | `repos.txt` (generated from registry) | `temp/` → `raw_docs/` | `scripts/aggregate.sh` + `scripts/aggregate.py` |
+| 2. Process | `raw_docs/` | `docs/{project}/` + YAML frontmatter | `scripts/process.py` |
+| 3. Validate / fix | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` → `lint_docs.py`, `check_frontmatter.py`, `--apply` fixers |
+| 4. Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
+| 5. Distill (engine) | corpus + `_data/projects.yml` | `context/` pyramid + README AUTO span + `docs/index.md` | `python3 -m scripts.context_engine build` |
+| 6. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
 
-- `repos.txt` is the source-of-truth input: one repo URL per line, `#` comments, optional `url#branch` syntax (e.g. `...OverTheWire-website#gh-pages`).
-- Output layout (per the current `refactor/simplify-docs-output` work) is **flat repo-based**: `docs/{repo_name}/...` preserving each source's internal tree. There are two aggregators — `process.py` (the simple repo-keyed one in use) and `aggregate_mkdocs.py` (a `MkDocsAggregator` class that buckets by `CATEGORY_MAPPING`); know which one a task targets before editing.
-- The `docs/` subdirectories (`it-journey/`, `bashcrawl/`, `zer0-mistakes/`, `wargames/`, `OverTheWire-website/`, `scripts/`, `skills/`, …) are **generated aggregation output**, not hand-authored source. Don't hand-edit them to "fix" content — fix the upstream repo or the processing script.
+### Source of truth and generated surfaces
+
+- **`_data/projects.yml` is the fleet registry** — the only hand-edited definition of what the engine describes. `repos.txt` is *generated* from it (`context_engine sync`).
+- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md`), `repos.txt`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
+- The pyramid: `docs/` (L3 corpus) → `context/facts/*.json` (L2) → `context/cards/*.md` (L1) → `context/README.md` (L0 apex, mirrored to `docs/index.md` for the published site).
+
+### The context engine (`scripts/context_engine/`)
+
+Package layout: `registry.py` (load/validate registry, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
+
+### The MCP server (`mcp/server.py`)
+
+Stdlib-only, stdio, newline-delimited JSON-RPC; registered in `.mcp.json` (project scope, so Claude Code auto-discovers it here). Read-only by design: tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`; resources `context://...`. It reads through `scripts/context_engine/query.py` — one code path for CLI and MCP. Never add write/mutate tools.
 
 ### The AI harmonization subsystem (`scripts/harmonize/`)
 
-A self-contained package that calls **xAI's Grok API** (not Anthropic) to analyze and reorganize docs. CLI is `harmonize_docs.py`; it is session-based (`--scope`, `--batch-size`, `--resume <session-id>`, `--list-sessions`, `--report`, `--apply --dry-run`). Modules: `schemas.py` (tool/JSON-schema definitions + `SYSTEM_PROMPT`), `analyzer.py`, `grok_agent.py` (the API client), `engine.py` (orchestration), `processor.py`. Requires a Grok API key in the environment; it's optional and gated off the main pipeline.
+Legacy-but-functional corpus reorganization package calling **xAI's Grok API** directly (predates `context_engine/ai.py`). CLI `harmonize_docs.py`, session-based (`--scope`, `--resume`, `--apply --dry-run`, `--mock`). Optional and gated off the main pipeline; requires a Grok key.
 
 ## Commands
 
 ```bash
-# Full aggregation (clones every repo in repos.txt; self-bootstraps a .venv if pyyaml/requests missing)
+# Full crawl (clones every registry repo; self-bootstraps .venv if needed)
 bash scripts/aggregate.sh
 
-# Process raw_docs/ → docs/
-python3 scripts/process.py
+# Corpus quality: read-only checks; --apply auto-fixes whitespace/tags/h1/frontmatter
+bash scripts/run_doc_checks.sh [--apply]
 
-# Quality: lint + frontmatter check (read-only); add --apply to auto-fix whitespace/tags/h1/frontmatter
-bash scripts/run_doc_checks.sh
-bash scripts/run_doc_checks.sh --apply
-
-# Regenerate the index and reports consumed by the MkDocs site
+# Corpus index consumed by the engine and the site
 python3 scripts/generate_docs_index.py
-python3 scripts/generate_docs_report.py
+
+# Context engine (stage 5-6)
+python3 -m scripts.context_engine build          # full pyramid rebuild (--ai auto|off|anthropic|xai|mock)
+python3 -m scripts.context_engine sync           # registry -> repos.txt
+python3 -m scripts.context_engine query <terms>  # search; also: card/facts/apex/status/projects
+
+# Drift gate (run before committing structural changes)
+python3 scripts/schema_lint.py check .
 ```
 
-Dependencies: `pip install -r requirements.txt` (pyyaml, requests, nltk, pytest). A `.venv/` already exists in-tree — `source .venv/bin/activate`.
+Dependencies: `pip install -r requirements.txt` (pyyaml, requests, nltk, pytest). A `.venv/` may exist in-tree — `source .venv/bin/activate`.
 
 ### Tests
 
@@ -54,28 +68,27 @@ The intended runner is the **custom harness**, not bare pytest:
 
 ```bash
 python tests/test_runner.py                 # unit + integration
-python tests/test_runner.py --type unit     # unit only
-python tests/test_runner.py --type quick    # fast path (unit only)
+python tests/test_runner.py --type quick    # fast path (unit only) — the CI gate
 python tests/test_runner.py --type integration --repos https://github.com/octocat/Hello-World
 ```
 
-Integration tests **clone real GitHub repos** (configured in `tests/config.py` `TEST_CONFIG["test_repos"]`) — they need network access and are slow (300s timeout per repo). Results are written to `tests/results/`.
-
-`pytest tests/` partially works but currently fails collection: `tests/unit/test_cases/test_categorization.py` imports `categorize_content`/`generate_tags`/`generate_summary` from `scripts.process`, which the docs-output refactor removed — so those unit tests have drifted out of sync with the code. When touching `process.py`, expect to reconcile these tests rather than assume green pytest. Run a single test once fixed with `pytest tests/unit/test_cases/test_file_processing.py::TestName -v`.
+Unit tests live in `tests/unit/test_cases/` (unittest discovery; `tests/unit/test_cases/test_context_engine.py` covers the engine, schema lint, and MCP dispatch against fixtures — extend it when touching those). Integration tests **clone real GitHub repos** (`tests/config.py`), need network, and are slow. Results land in `tests/results/` (generated).
 
 ## CI workflows (`.github/workflows/`)
 
-- `aggregate-docs.yaml` — daily cron (+ manual) runs `scripts/aggregate.sh` and auto-commits the regenerated `docs/` to `main`. This is why `docs/` churns on its own; treat it as a build artifact.
-- `docs-quality-check.yaml` — on PRs to `main` and pushes to `quality/*`: runs lint + frontmatter checks, uploads `docs/results/docs_quality_report.json`, and comments on the PR.
-- `docs-apply-fixes.yaml` — on `quality/*` pushes: runs `run_doc_checks.sh --apply` and opens a PR with the auto-fixes. The `quality/*` branch prefix is the trigger convention for fix automation.
-- `deploy-pages.yaml` — on pushes to `main` touching `docs/**`, `mkdocs.yml`, or `requirements-docs.txt` (+ manual): builds the MkDocs Material site (`mkdocs build`, **not** `--strict` — aggregated docs carry many expected broken cross-references) and publishes it to GitHub Pages via `actions/deploy-pages`. One-time setup: repo Settings → Pages → Source = "GitHub Actions". Published at `https://bamr87.github.io/README/`.
+- `aggregate-docs.yaml` — weekly cron (+ manual): registry sync → `aggregate.sh` → corpus index → **context engine build** (AI enrichment auto-enables when `ANTHROPIC_API_KEY`/`XAI_API_KEY` secrets exist) → schema lint → auto-commit to `main`. This is why `docs/`, `context/`, and the README span churn on their own; treat them as build artifacts.
+- `docs-quality-check.yaml` — PRs to `main` and `quality/*` pushes: **schema lint drift gate**, then doc lint + frontmatter checks, report artifact + PR comment.
+- `ci.yml` — thin caller of the parent's shared `standard-ci.yml` gate; don't edit the logic here.
+- `deploy-pages.yaml` — pushes to `main` touching `docs/**`: builds the MkDocs Material site (**not** `--strict`; aggregated docs carry expected broken cross-references) and publishes to GitHub Pages. `docs/index.md` (the site home) is generated by the engine.
 
 ## Wiki.js / Docker
 
-`docker-compose.yml` here runs a **Wiki.js + Postgres** stack (distinct from the parent monorepo's compose). It mounts this repo's `./docs` read-only into the wiki container. `scripts/wiki-manage.sh {start|stop|backup|restore|update|shell|db-shell|admin|...}` is the management wrapper. Copy `.env.example` → `.env` first. Ports default to wiki `3000`, pgAdmin `5050` (under the `admin` profile).
+`docker-compose.yml` runs a **Wiki.js + Postgres** stack (distinct from the parent monorepo's compose). It mounts `./docs` read-only into the wiki container. `scripts/wiki-manage.sh {start|stop|backup|...}` is the wrapper. Copy `.env.example` → `.env` first. Ports: wiki `3000`, pgAdmin `5050` (profile `admin`).
 
 ## Conventions specific to this repo
 
-- Frontmatter is the contract: processing scripts read/write YAML frontmatter (`title`, `description`, `tags`, `category`, dates). `check_frontmatter.py` enforces it; `clean_frontmatter.py`/`normalize_tags.py`/`fix_h1.py` normalize it. When adding a doc-processing script, keep it frontmatter-aware and idempotent (the `--apply` fixers are run repeatedly in CI).
-- New utility scripts belong under `scripts/` and should fit a pipeline stage; update `scripts/README.md` (the per-directory README is kept current as part of the change — README-First/README-Last house rule from the parent repo).
-- `PRD.md` is the original MVP spec; `MKDOCS.md` documents the site build. This repo now has its **own** standalone `mkdocs.yml` (`docs_dir: docs`, `site_url: https://bamr87.github.io/README/`) deployed by `deploy-pages.yaml`; the parent monorepo separately builds the same `docs/` tree under its own root `mkdocs.yml`.
+- **Registry first**: adding/removing a fleet project = edit `_data/projects.yml`, run `sync`, rebuild. Never edit `repos.txt` by hand.
+- **SCHEMA protocol**: structural changes (new top-level entry, new script, new registry) require updating the governing `SCHEMA.md` table in the same change; the lint gate enforces existence and, where `coverage: full`, exact listings (`scripts/`, `_data/`, `mcp/`).
+- Frontmatter is the corpus contract (`title`, `tags`, `category`, dates); processing scripts stay frontmatter-aware and idempotent (the `--apply` fixers run repeatedly in CI). Cards/facts have their own frontmatter/JSON contracts — change them in `synthesizer.py`/`extractor.py`, not by editing outputs.
+- New utility scripts belong under `scripts/`, must fit a pipeline stage, and get a row in `scripts/SCHEMA.md` + a section in `scripts/README.md` (README-First/README-Last house rule from the parent repo).
+- `PRD.md` is the context-engine product spec (v2; the v1 aggregator MVP is in git history). `MKDOCS.md` documents the site build. This repo has its **own** `mkdocs.yml` (`docs_dir: docs`) deployed by `deploy-pages.yaml`; the parent monorepo separately builds the same `docs/` tree under its root `mkdocs.yml`.

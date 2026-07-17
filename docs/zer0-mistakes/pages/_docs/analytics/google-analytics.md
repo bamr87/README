@@ -5,11 +5,13 @@ categories:
 description: Google Analytics 4 integration for website traffic analysis with privacy-conscious
   configuration.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-04-18 19:30:02+00:00
 layout: default
 permalink: /docs/analytics/google-analytics/
 prerequisites:
 - Google Analytics account
+preview: /images/previews/google-analytics.png
 sidebar:
   nav: docs
 source_file: google-analytics.md
@@ -172,6 +174,7 @@ gtag('event', 'file_download', {
 ### Enhanced Measurement
 
 Enable in GA4 dashboard:
+
 - Page views
 - Scrolls
 - Outbound clicks
@@ -191,6 +194,7 @@ Enable in GA4 dashboard:
 ### Data Retention
 
 Configure in GA4:
+
 - Admin → Data Settings → Data Retention
 - Set to minimum required (2 months default)
 
@@ -259,3 +263,10 @@ gtag('config', 'UA-XXXXXXX-X');
 - [Google Tag Manager](/docs/analytics/google-tag-manager/)
 - [Cookie Consent](/docs/features/cookie-consent/)
 - [Privacy Policy](/privacy-policy/)
+
+## See also
+
+- [[Analytics]]
+- [[PostHog Analytics]]
+- [[Google Tag Manager]]
+- [[Cookie Consent Management]]

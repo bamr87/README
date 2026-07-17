@@ -1,5 +1,6 @@
 ---
 description: Services and support options for the Zer0-Mistakes ecosystem.
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /services/
 source_file: services.md

@@ -1,614 +1,254 @@
 ---
 applyTo: CHANGELOG.md,CHANGES.md,**/version.*,VERSION,**/package.json,**/*.gemspec,**/Cargo.toml,**/go.mod
+date: 2026-05-18 12:00:00+00:00
 description: Version control, releases, and publication guidelines for Ruby Gems and
   GitHub repositories
+lastmod: 2026-06-21 12:00:00+00:00
 source_file: version-control.instructions.md
-title: Version Control and Release Management Guidelines
+title: Version Control & Release Guidelines
 ---
-# Version Control and Release Management Guidelines
+# Version Control & Release Guidelines
 
-## 🚀 Overview
+For the full release pipeline see [`.github/prompts/commit-publish.prompt.md`](../prompts/commit-publish.prompt.md). This file defines the rules.
 
-This document outlines best practices for version control, releases, and publications for Ruby Gems using Git, GitHub, and RubyGems.org. The core goals are to ensure stability, traceability, and ease of contribution while following Semantic Versioning (SemVer) for releases.
+## Branching — Hardened Trunk
 
-## 📋 Table of Contents
-
-- [Git Workflow Strategy](#git-workflow-strategy)
-- [Branch Management](#branch-management)
-- [Semantic Versioning](#semantic-versioning)
-- [Testing Requirements](#testing-requirements)
-- [Changelog Management](#changelog-management)
-- [Documentation Updates](#documentation-updates)
-- [Release Process](#release-process)
-- [Publication Guidelines](#publication-guidelines)
-
-## 🔄 Git Workflow Strategy
-
-### Recommended Workflows
-
-**Git Flow** (Recommended for gems with multiple supported versions):
-
-- Supports versioned releases
-- Handles features, bug fixes, and hotfixes separately
-- Maintains stable releases
-- Ideal for team collaboration
-
-**GitHub Flow** (For smaller projects or solo development):
-
-- Simpler workflow
-- Work directly on feature branches from main
-- Merge via PR and tag releases from main
-
-### General Update Process
-
-1. **Branch off** from the appropriate base (e.g., `main` or `develop`)
-2. **Develop changes** with atomic commits (one logical change per commit)
-3. **Test locally** (see [Testing Requirements](#testing-requirements))
-4. **Push and open a PR** targeting the integration branch
-5. **Review and merge** after approvals and passing CI tests
-6. **Prepare release** if needed: bump version, update changelog, commit, tag
-7. **Post-release**: Update documentation and announce via GitHub releases
-
-### Commit Message Guidelines
-
-Use descriptive, atomic commits with clear messages:
+GitHub Flow on a **single trunk**. `main` is always deployable and is the only
+long-lived branch — there is **no `develop`, no `next`, no standing `release/*`**.
 
 ```
-Fix bug in method X: add edge case handling
-
-- Handle nil input parameters
-- Add validation for empty strings
-- Update tests to cover edge cases
+feature/<scope>-<desc>     bugfix/<scope>-<desc>     ci/<desc>
+hotfix/<scope>-<desc>      docs/<desc>               perf/<scope>-<desc>
+chore/<scope>-<desc>       refactor/<scope>-<desc>
+claude/<slug>   copilot/<slug>   automated/<slug>    # agent work — same rules
 ```
 
-## 🌳 Branch Management
+Branch off `main`, open a PR early, **squash-merge** (the squash title is the
+Conventional Commit the release tooling reads). One concern per PR. Agent
+branches (`claude/*`, `copilot/*`, `automated/*`) obey the same rules as human
+ones. Parallel efforts each get their own short-lived branch / `git worktree` —
+never a shared accumulator branch.
 
-### Git Flow Branch Structure
+### The release PR *is* your accumulator
 
-| Branch Type           | Purpose                                                                                    | Created From                              | Merged To                     | Example Name                   |
-| --------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------- | ----------------------------- | ------------------------------ |
-| `main` (or `master`)  | Stable production code; only merged releases/hotfixes. Tags are created here for versions. | N/A (long-lived)                          | N/A                           | `main`                         |
-| `develop`             | Integration of features for the next release; ongoing development.                         | `main`                                    | `main` (via release branches) | `develop`                      |
-| `feature/*`           | New features or enhancements; isolate work to avoid impacting others.                      | `develop`                                 | `develop`                     | `feature/add-authentication`   |
-| `bugfix/*` or `fix/*` | Non-urgent bug fixes in development code.                                                  | `develop`                                 | `develop`                     | `bugfix/handle-nil-error`      |
-| `hotfix/*`            | Urgent fixes for bugs in released (production) versions; quick patches.                    | `main` (or a specific release tag/branch) | `main` and `develop`          | `hotfix/v1.2.3-security-patch` |
-| `release/*`           | Preparing a new version: final tweaks, version bump, changelog update.                     | `develop`                                 | `main` and `develop`          | `release/v2.0.0`               |
+You do **not** stage a version on a branch. release-please keeps one open
+`chore(main): release X.Y.Z` PR that recomputes the pending version from `main`'s
+commit history on every push — a conflict-free, server-side accumulator that
+collapses N merged PRs into exactly one pending version:
 
-### Branch Naming Conventions
+| Concept | Where | Meaning |
+|---|---|---|
+| **Intent** | a GitHub **Milestone** (`1.21`, `2.0`) | what you *plan* to ship (human view; auto-assigned by `milestone-assign.yml` when exactly one milestone is open) |
+| **Pending version** | the open **release PR** | what *will* ship if you cut now (`feat`→minor; `fix/perf/refactor/docs/chore/test/ci`→patch; `!`/`BREAKING CHANGE:`→major) |
+| **Truth** | `version.rb` on `main` | the last released version |
+| **Fact** | git **tags** `vX.Y.Z` | immutable release points (linear tree) |
 
-Use descriptive, short-lived branches prefixed by type:
+**Cutting a set** = deliberately merging the release PR when its contents are
+coherent — *you* control the timing. That tags `vX.Y.Z`, publishes the gem, and
+(via continuous Pages deploy) ships the site. To **aim** the accumulator at a
+chosen version class, add a `Release-As: 1.21.0` footer to a held commit, and
+audit incoming agent PR titles for a rogue `!` / `BREAKING CHANGE:` that would
+silently flip the pending major.
 
-- `feature/add-user-authentication`
-- `bugfix/fix-memory-leak`
-- `hotfix/security-vulnerability`
-- `release/v2.1.0`
-- `docs/update-readme`
+For a multi-week breaking **2.0** that must stabilize alongside 1.x, create a
+*temporary* `prerelease/2.0` branch with a one-off `Release-As: 2.0.0-rc.1`
+(first verify `gem build` accepts the resulting `2.0.0.pre.rc.1`) — delete it the
+day 2.0.0 ships. That is the only sanctioned long-lived-ish branch, and only when
+a real major is in flight.
 
-### Branch Management Rules
+## Working-Tree & Branch Discipline
 
-- Keep branches short-lived to minimize conflicts
-- Clean up merged branches regularly
-- Avoid merging between topic branches to keep them independent
-- Use pull requests (PRs) for all merges to enable code reviews
+The rules above only work if they are followed *before* you start editing. They
+prevent the most common failure mode: unrelated changes piling up uncommitted on
+`main` and then needing to be untangled into branches after the fact.
 
-## 📈 Semantic Versioning
+1. **Branch first, then edit.** Create the branch off an up-to-date `main`
+   *before* touching any file. Never make changes directly on `main`.
 
-Follow SemVer strictly: `MAJOR.MINOR.PATCH`
+   ```bash
+   git switch main && git pull --ff-only
+   git switch -c fix/<scope>-<slug>     # then start editing
+   ```
 
-### Version Types
+2. **One concern per branch / PR.** A branch holds exactly one logical change
+   (one fix, one feature, one chore). If you discover an unrelated change is
+   needed, branch again for it. Mixed PRs muddy the changelog **and** the
+   automatic version bump — release tooling reads the squash-merge commit
+   title/type, so a PR mixing `feat:` and `fix:` produces the wrong bump.
 
-- **PATCH (0.0.x)**: Backward-compatible bug fixes or minor implementation tweaks
-  - Example: `1.2.3 → 1.2.4` for a hotfix
-- **MINOR (0.x.0)**: Backward-compatible new features, deprecations, or additions
-  - Example: `1.2.3 → 1.3.0` for a new method
-- **MAJOR (x.0.0)**: Breaking changes, like API removals or incompatible updates
-  - Example: `1.2.3 → 2.0.0`
+3. **Parallel work → `git worktree`, not a shared working tree.** To work on two
+   things at once, give each branch its own checkout. The Docker dev server can
+   keep running in one worktree while you edit in another, with no stash churn:
 
-### Prerelease Versions
+   ```bash
+   git worktree add ../zer0-<topic> <type>/<scope>-<slug>
+   # …work…  then:  git worktree remove ../zer0-<topic>
+   ```
 
-For testing unstable changes, use suffixes:
+   Use `git stash` only for a quick, same-tree context switch.
 
-- `2.0.0.rc1` (release candidate)
-- `1.5.0.beta.3` (beta version)
-- `2.1.0.alpha.1` (alpha version)
+4. **Keep generated & lock files out of feature PRs.** A change to `_layouts/`,
+   `_includes/`, `scripts/`, etc. must not also carry an unrelated regenerated
+   artifact:
+   - `_data/content_statistics.yml` is plugin-generated — let it ride in its own
+     `chore` commit (or regenerate it in CI), never bundled into a feature diff.
+   - `Gemfile.lock` changes belong to the release flow (see Semantic
+     Versioning), not feature PRs.
 
-### Version Management
+   Stage files **by path**, not with `git add -A`, and review `git status
+   --short` before committing so stray modifications don't leak in.
 
-- Update version in `lib/gem_name/version.rb`
-- Bump versions only on the release branch or before tagging
-- In gemspecs/Gemfiles, pin dependencies with `~>` for safety
-- Avoid loose constraints to prevent breaks
+5. **`main` is protected.** Direct pushes to `main` are blocked; every change
+   lands via PR with CI green. If you cannot push to `main`, that is by design —
+   open a PR.
 
-## 🧪 Testing Requirements
-
-### Test Suite Structure
-
-Maintain comprehensive tests in `spec/` (RSpec) or `test/` (Minitest):
+## Commits — Conventional Commits
 
 ```
-spec/
-├── unit/           # Individual methods/classes
-├── integration/    # End-to-end functionality
-├── generators/     # Custom generators (if applicable)
-└── support/        # Test helpers and configuration
+<type>(<scope>): <subject ≤ 50 chars>
+
+<body explaining WHY, wrapped at 72>
+
+Closes #123
+BREAKING CHANGE: <if applicable>
 ```
 
-### Test Types
+Types: `feat fix docs style refactor perf test chore ci build revert security`.
+Scopes used here: `layouts includes sass scripts ci config search navigation analytics deps`.
 
-- **Unit tests**: Test individual methods/classes
-  ```bash
-  bundle exec rspec spec/unit/
-  ```
-- **Integration tests**: Test end-to-end functionality
-  ```bash
-  bundle exec rspec spec/integration/
-  ```
-- **Full suite**: Run all tests
-  ```bash
-  bundle exec rspec
-  # or
-  rake test
-  ```
+Imperative voice. Subject lower-case, no trailing period.
 
-### Test Coverage
+## Semantic Versioning
 
-- Aim for high coverage (use SimpleCov)
-- Add development dependencies in gemspec:
-  ```ruby
-  spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "simplecov", "~> 0.21"
-  ```
+Single source of truth: `lib/jekyll-theme-zer0/version.rb`.
 
-### CI Integration
+**Version ↔ lock invariant.** The `jekyll-theme-zer0 (X.Y.Z)` line in
+`Gemfile.lock` must always equal `version.rb`. They drift when one release path
+bumps the version without re-locking — so only **one** release mechanism owns a
+release (the release tooling that updates `version.rb`, `CHANGELOG.md`, *and*
+`Gemfile.lock` together). Never run two release flows for the same version. If
+they ever disagree, re-resolve the lock to match `version.rb` (`bundle lock`),
+in its own `chore` commit — this is **not** a version bump.
 
-Set up GitHub Actions to run tests on PRs/pushes:
+| Change | Bump | Trigger commits |
+|---|---|---|
+| MAJOR | X.0.0 | Any `BREAKING CHANGE:` footer, removed/renamed public API |
+| MINOR | 0.X.0 | Any `feat:` without breaking change |
+| PATCH | 0.0.X | Only `fix: docs: chore: perf: refactor: test: ci:` |
 
-```yaml
-name: CI
-on: [push, pull_request]
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby-version: ["2.7", "3.0", "3.1", "3.2"]
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true
-      - run: bundle exec rspec
-```
+Pre-release suffixes: `-alpha.N`, `-beta.N`, `-rc.N`.
 
-## 📝 Changelog Management
+## CHANGELOG.md — Keep a Changelog Format
 
-### CHANGELOG.md Structure
-
-Keep a `CHANGELOG.md` file in the repo root, written for humans:
+Top-of-file template:
 
 ```markdown
-# Changelog
-
-All notable changes to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## [Unreleased]
-
 ### Added
-
-- New feature descriptions
-
 ### Changed
-
-- Changes in existing functionality
-
 ### Deprecated
-
-- Soon-to-be removed features
-
 ### Removed
-
-- Now removed features
-
 ### Fixed
-
-- Any bug fixes
-
 ### Security
 
-- Vulnerability fixes
-
-## [2.0.0] - 2025-01-15
-
+## [X.Y.Z] - YYYY-MM-DD
 ### Added
-
-- User authentication system
-- API rate limiting
-
-### Changed
-
-- Updated Ruby requirement to 3.0+
-
-### Removed
-
-- Deprecated legacy methods
-
-## [1.5.0] - 2024-12-01
-
-...
+- **Component**: `path/file` - Short description
 ```
 
-### Changelog Best Practices
+Rules:
+- One entry per user-visible change.
+- Group by category, never by author or PR number.
+- Reference issues/PRs at end of line: `(#123)`.
+- Move `[Unreleased]` items into the new version section on release.
 
-- **Structure**: One entry per version; group by type
-- **Updates**: Add entries during development (in PRs)
-- **Order**: Reverse chronological order
-- **Content**: Summarize meaningfully (not raw git logs)
-- **Timing**: Update before each release
-- **Commit**: Include changelog updates in the release commit
+## Release Process
 
-## 📚 Documentation Updates
+**Canonical: release-please.** Conventional-Commit PRs merged to `main` are
+accumulated into one open `chore(main): release X.Y.Z` PR
+(`.github/workflows/release.yml` → reusable workflows in `bamr87/.github`).
+**Cut a release by merging that PR** — it tags `vX.Y.Z`, creates the GitHub
+Release, and `publish.yml` builds the gem and pushes it to RubyGems. The reusable
+`relock` job re-locks `Gemfile.lock`/`package-lock.json` on the release PR, so the
+version↔lock invariant holds automatically. Do **not** hand-bump the version or
+run a second release flow for the same version.
 
-### Code Documentation
+**Manual fallback** (local, only if the automated pipeline is unavailable):
 
-Use YARD syntax for auto-generated docs:
+```bash
+./scripts/bin/release patch --dry-run    # preview
+./scripts/bin/release [patch|minor|major]
+```
+
+The script analyzes commits → validates → bumps `version.rb` → updates CHANGELOG →
+re-locks `Gemfile.lock` → commits/tags/pushes → `gem build`/`gem push`. Never mix
+it with a release-please cut for the same version.
+
+## Pre-Release Checklist (before merging the release PR)
+
+- [ ] CI green on the release PR's **final HEAD** — the relock commit, not the bump commit
+- [ ] The pending version + CHANGELOG match the set you intend to ship
+- [ ] No stray `feat!` / `BREAKING CHANGE:` in the set unless you mean to cut a major
+- [ ] `version.rb`, `Gemfile.lock`, `package*.json` all agree on the new version
+- [ ] Site builds: `docker-compose exec -T jekyll bundle exec jekyll build`
+
+## Gem Publication
+
+`jekyll-theme-zer0.gemspec` essentials:
 
 ```ruby
-# Authenticates a user with the given credentials
-#
-# @param username [String] the user's login name
-# @param password [String] the user's password
-# @return [User, nil] the authenticated user or nil if authentication fails
-# @raise [ArgumentError] if username or password is blank
-# @example
-#   user = authenticate_user("john_doe", "secret123")
-#   puts user.name if user
-def authenticate_user(username, password)
-  # implementation
-end
+s.required_ruby_version = ">= 2.7.0"
+s.metadata["allowed_push_host"] = "https://rubygems.org"
+s.add_runtime_dependency "jekyll"
 ```
 
-### Documentation Updates Required
+First-time setup: `gem signin` (stores API key in `~/.gem/credentials`, perms `0600`).
 
-For each change, update:
+CI publication: `.github/workflows/release.yml` chains release-please → `publish.yml`
+(in `bamr87/.github`), which runs on the **release-PR merge** (not a `v*` tag
+trigger) and `gem push`es using the `RUBYGEMS_API_KEY` secret.
 
-1. **Inline comments**: YARD documentation blocks
-2. **README.md**: Public API changes, usage examples, installation
-3. **Commit/PR docs**: Descriptive titles/messages, link to issues
-4. **Breaking changes**: Add deprecation warnings in code
-   ```ruby
-   warn "Deprecated: use new_method instead of old_method"
-   ```
+## Hotfix Process
 
-### Generate Documentation
+Same trunk flow — a hotfix is just a high-priority `fix:` PR:
 
 ```bash
-# Generate YARD documentation
-yard doc
+git switch -c hotfix/<issue> main
+# fix + test, then open PR → review → squash-merge
+git commit -m "fix(<scope>): <subject>
 
-# View locally
-yard server
+Closes #999"
 ```
 
-## 🚢 Release Process
+Merging it updates the open release PR to a patch bump; **cut it** by merging the
+release PR. Don't run a parallel release flow for the same version.
 
-### Pre-Release Checklist
-
-- [ ] All tests pass locally and in CI
-- [ ] Version bumped in `lib/gem_name/version.rb`
-- [ ] CHANGELOG.md updated with new version
-- [ ] Documentation updated for API changes
-- [ ] Dependencies reviewed and updated if needed
-
-### Release Steps
-
-#### Automated Release (Recommended)
-
-1. **Trigger version bump workflow**:
-
-   ```bash
-   # Via GitHub Actions UI or API
-   # This automatically handles steps 2-7 below
-   ```
-
-2. **Or use local version bump**:
-   ```bash
-   ./scripts/version.sh [patch|minor|major]
-   git push origin main --tags
-   ```
-
-#### Manual Release Process
-
-1. **Create release branch** (Git Flow):
-
-   ```bash
-   git checkout develop
-   git pull origin develop
-   git checkout -b release/v2.1.0
-   ```
-
-2. **Bump version**:
-
-   ```bash
-   ./scripts/version.sh minor  # or patch/major
-   ```
-
-3. **Validate and test**:
-
-   ```bash
-   ./test/test_runner.sh --verbose
-   ./scripts/build.sh
-   ```
-
-4. **Commit and tag** (if not done by version script):
-
-   ```bash
-   git add .
-   git commit -m "chore: bump version to 2.1.0"
-   git tag v2.1.0
-   git push origin main --tags
-   ```
-
-5. **Deploy release**:
-
-   ```bash
-   ./scripts/release.sh  # Full automated deployment
-   # Or step by step:
-   ./scripts/release.sh --skip-publish  # Build and test only
-   ./scripts/release.sh --draft         # Create draft release
-   ```
-
-6. **Merge back to develop** (Git Flow):
-   ```bash
-   git checkout develop
-   git merge main
-   git push origin develop
-   ```
-
-#### GitHub Release Automation
-
-The repository includes comprehensive GitHub Release automation:
-
-- **Automatic Release Creation**: Triggered by version bump or tag push
-- **Smart Release Notes**: Extracted from CHANGELOG.md
-- **Multiple Assets**: Gem file, installation script, documentation
-- **Prerelease Detection**: Automatically detects alpha/beta/rc versions
-- **Draft Support**: Option to create draft releases for review
-
-## 📦 Publication Guidelines
-
-### RubyGems.org Setup
-
-1. **Sign up** on [RubyGems.org](https://rubygems.org)
-2. **Configure credentials**:
-   ```bash
-   gem signin
-   ```
-
-### Gemspec Configuration
-
-Ensure your gemspec includes:
-
-```ruby
-Gem::Specification.new do |spec|
-  spec.name          = "gem_name"
-  spec.version       = GemName::VERSION
-  spec.authors       = ["Your Name"]
-  spec.email         = ["your.email@example.com"]
-
-  spec.summary       = "Short description"
-  spec.description   = "Longer description"
-  spec.homepage      = "https://github.com/username/gem_name"
-  spec.license       = "MIT"
-
-  # Security: restrict push to specific host
-  spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
-  spec.metadata["documentation_uri"] = "#{spec.homepage}#readme"
-
-  # Dependencies with pessimistic constraints
-  spec.add_dependency "rails", "~> 7.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
-end
-```
-
-### Automated Publication
-
-#### Using Release Script
+## Yanking a Bad Release
 
 ```bash
-# Full automated deployment
-./scripts/release.sh
-
-# Options available:
-./scripts/release.sh --dry-run          # Preview what would happen
-./scripts/release.sh --skip-tests       # Skip test execution
-./scripts/release.sh --draft            # Create draft GitHub release
-./scripts/release.sh --prerelease       # Mark as prerelease
-./scripts/release.sh --no-github-release # Skip GitHub release
+gem yank jekyll-theme-zer0 -v X.Y.Z
 ```
 
-#### Using GitHub Actions
+Then bump to next patch with a fix — never re-publish the yanked version.
 
-The repository includes automated workflows:
+## Security
 
-1. **Version Bump Workflow** (`version-bump.yml`):
-   - Manual trigger with version type selection
-   - Automatic testing, version bumping, and tagging
-   - Triggers downstream release workflows
+- Never commit secrets. `RUBYGEMS_API_KEY` lives in GitHub Secrets only.
+- Run `bundle audit` before each release; address advisories or document acceptance.
+- Pin all GitHub Actions to a major version: `actions/checkout@v4`.
+- `Gemfile.lock` **must** be committed (required for reproducible CI builds).
 
-2. **Gem Release Workflow** (`gem-release.yml`):
-   - Triggered by tag push
-   - Builds, tests, and publishes gem
-   - Creates comprehensive GitHub release
+## Hard Rules
 
-3. **GitHub Release Workflow** (`github-release.yml`):
-   - Creates detailed GitHub releases
-   - Extracts release notes from CHANGELOG.md
-   - Includes multiple assets and installation scripts
-
-### Manual Publication
-
-```bash
-# Build the gem
-gem build gem_name.gemspec
-
-# Publish to RubyGems.org
-gem push gem_name-2.1.0.gem
-
-# For prereleases
-gem push gem_name-2.1.0.rc1.gem
-```
-
-### GitHub Release Features
-
-#### Automatic Release Notes
-
-- Extracts from CHANGELOG.md for the specific version
-- Includes installation instructions and links
-- Adds developer documentation and examples
-
-#### Release Assets
-
-- Ruby gem package (`.gem` file)
-- One-click installation script
-- Detailed release notes (Markdown)
-- Version and build information (JSON)
-
-#### Smart Prerelease Detection
-
-- Automatically detects `alpha`, `beta`, `rc` in version
-- Marks releases appropriately
-- Handles `make_latest` flag correctly
-
-### Post-Publication
-
-1. **Verify publication**:
-   - Check gem page on RubyGems.org
-   - Verify GitHub release creation
-   - Test installation from both sources
-
-2. **Update documentation**:
-   - README installation instructions
-   - API documentation if changed
-   - Usage examples
-
-3. **Announce and monitor**:
-   - GitHub releases (automatic)
-   - Social media, blog posts
-   - Monitor for issues and feedback
-   - Watch download statistics
-
-### Team Management
-
-```bash
-# Add team members as gem owners
-gem owner gem_name --add user@example.com
-
-# List current owners
-gem owner gem_name
-
-# Remove owners if needed
-gem owner gem_name --remove user@example.com
-```
-
-### Publication Security
-
-- Use `allowed_push_host` to restrict publication
-- Enable 2FA on RubyGems.org account
-- Use GitHub repository secrets for automation
-- Regularly audit gem ownership and access
-
-## 🔒 Security Considerations
-
-### Dependency Management
-
-- Use pessimistic version constraints (`~>`)
-- Regularly audit dependencies with `bundle audit`
-- Update dependencies promptly for security patches
-
-### Release Security
-
-- Sign commits and tags when possible
-- Use GitHub's security advisories for vulnerability disclosure
-- Follow responsible disclosure practices
-
-### Access Control
-
-- Limit gem ownership to trusted team members
-- Use organization accounts for team gems
-- Enable two-factor authentication on RubyGems.org
-
-## 🚨 Emergency Procedures
-
-### Hotfix Process
-
-For critical bugs in production:
-
-1. **Create hotfix branch** from affected release tag:
-
-   ```bash
-   git checkout v2.0.1
-   git checkout -b hotfix/v2.0.2-critical-fix
-   ```
-
-2. **Apply minimal fix** and test thoroughly
-
-3. **Release hotfix**:
-
-   ```bash
-   # Bump patch version (2.0.1 → 2.0.2)
-   git commit -m "Hotfix: critical security vulnerability"
-   git tag v2.0.2
-   gem build && gem push
-   ```
-
-4. **Merge forward** to all affected branches
-
-### Gem Yanking
-
-If a serious issue is discovered post-publication:
-
-```bash
-# Remove gem version from RubyGems.org (irreversible)
-gem yank gem_name -v 2.1.0
-
-# Users with installed versions are unaffected
-# Cannot reuse yanked version numbers
-```
-
-## 📊 Metrics and Monitoring
-
-### Track Key Metrics
-
-- Download counts on RubyGems.org
-- GitHub stars, forks, and issues
-- Test coverage trends
-- Dependency freshness
-
-### Release Health
-
-- Monitor for post-release issues
-- Track user feedback and bug reports
-- Measure adoption of new versions
-- Watch for security vulnerabilities
+- Never edit directly on `main` — branch first, one concern per branch/PR.
+- Never bundle a regenerated artifact (`_data/content_statistics.yml`) or a
+  `Gemfile.lock` change into an unrelated feature PR.
+- Never let `Gemfile.lock` and `version.rb` disagree.
+- Never bump version outside a release commit.
+- Never tag before commit + push.
+- Never skip CHANGELOG update.
+- Never publish a version that already exists on RubyGems (immutable).
 
 ---
 
-## 📖 Additional Resources
-
-- [Semantic Versioning](https://semver.org/)
-- [Keep a Changelog](https://keepachangelog.com/)
-- [RubyGems Guides](https://guides.rubygems.org/)
-- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
-- [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
-- [YARD Documentation](https://yardoc.org/)
-
----
-
-_This document should be reviewed and updated regularly to reflect current best practices and team preferences._
+**Related:** [`.github/skills/change-workflow/SKILL.md`](../skills/change-workflow/SKILL.md) · [`.github/prompts/commit-publish.prompt.md`](../prompts/commit-publish.prompt.md) · [`documentation.instructions.md`](documentation.instructions.md)

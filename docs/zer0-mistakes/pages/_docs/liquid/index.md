@@ -4,11 +4,12 @@ categories:
 - liquid
 description: Liquid templating basics used by Jekyll and this theme.
 difficulty: beginner
-estimated_time: 5 minutes
-lastmod: 2025-12-20 22:15:46.126000+00:00
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/liquid/
 prerequisites: []
+preview: /images/previews/liquid.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -16,7 +17,6 @@ tags:
 - liquid
 - jekyll
 title: Liquid
-updated: 2025-12-20
 ---
 # Liquid
 
@@ -27,16 +27,19 @@ Liquid is the templating language used by Jekyll to process templates and create
 ### Output (Double Braces)
 
 {% raw %}
+
 ```liquid
 {{ page.title }}
 {{ site.description }}
 {{ content }}
 ```
+
 {% endraw %}
 
 ### Logic (Braces with Percent)
 
 {% raw %}
+
 ```liquid
 {% if page.title %}
   <h1>{{ page.title }}</h1>
@@ -46,6 +49,7 @@ Liquid is the templating language used by Jekyll to process templates and create
   <li>{{ post.title }}</li>
 {% endfor %}
 ```
+
 {% endraw %}
 
 ## Common Filters
@@ -53,40 +57,48 @@ Liquid is the templating language used by Jekyll to process templates and create
 ### Text Manipulation
 
 {% raw %}
+
 ```liquid
 {{ "hello" | capitalize }}       <!-- Hello -->
 {{ "hello world" | upcase }}     <!-- HELLO WORLD -->
 {{ page.content | truncate: 100 }}
 {{ page.content | strip_html }}
 ```
+
 {% endraw %}
 
 ### URL Helpers
 
 {% raw %}
+
 ```liquid
 {{ "/about/" | relative_url }}   <!-- Prepends baseurl -->
 {{ "/about/" | absolute_url }}   <!-- Full URL with domain -->
 ```
+
 {% endraw %}
 
 ### Date Formatting
 
 {% raw %}
+
 ```liquid
 {{ page.date | date: "%B %d, %Y" }}  <!-- January 15, 2025 -->
 {{ page.date | date_to_xmlschema }}   <!-- 2025-01-15T00:00:00+00:00 -->
 ```
+
 {% endraw %}
 
 ### Arrays
 
 {% raw %}
+
 ```liquid
 {{ page.tags | join: ", " }}
 {{ site.posts | size }}
 {{ page.categories | first }}
 ```
+
 {% endraw %}
 
 ## Control Flow
@@ -94,6 +106,7 @@ Liquid is the templating language used by Jekyll to process templates and create
 ### Conditionals
 
 {% raw %}
+
 ```liquid
 {% if page.layout == "post" %}
   <!-- Post content -->
@@ -103,11 +116,13 @@ Liquid is the templating language used by Jekyll to process templates and create
   <!-- Default content -->
 {% endif %}
 ```
+
 {% endraw %}
 
 ### Loops
 
 {% raw %}
+
 ```liquid
 {% for post in site.posts limit:5 %}
   <a href="{{ post.url }}">{{ post.title }}</a>
@@ -117,6 +132,7 @@ Liquid is the templating language used by Jekyll to process templates and create
   <span>{{ tag }}</span>
 {% endfor %}
 ```
+
 {% endraw %}
 
 ## Includes
@@ -124,21 +140,25 @@ Liquid is the templating language used by Jekyll to process templates and create
 Include reusable components:
 
 {% raw %}
+
 ```liquid
 {% include navigation/navbar.html %}
 {% include components/post-card.html post=post %}
 ```
+
 {% endraw %}
 
 Pass parameters to includes:
 
 {% raw %}
+
 ```liquid
 {% include card.html 
    title="My Card" 
    content="Card content here" 
 %}
 ```
+
 {% endraw %}
 
 ## Theme Examples
@@ -159,4 +179,10 @@ Explore Liquid usage in Zer0-Mistakes:
 
 - [Jekyll Guide](/docs/jekyll/)
 - [Front Matter](/docs/front-matter/)
-- [Jekyll Liquid Templating](/docs/jekyll/jekyll-liquid/)
+- [Jekyll Liquid Templating](/docs/liquid/)
+
+## See also
+
+- [[Jekyll]]
+- [[Customization]]
+- [[front-matter]]

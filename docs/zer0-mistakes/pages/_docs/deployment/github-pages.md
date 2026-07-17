@@ -5,12 +5,14 @@ categories:
 description: Deploy your Zer0-Mistakes Jekyll site to GitHub Pages with automatic
   builds.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
 permalink: /docs/deployment/github-pages/
 prerequisites:
 - GitHub account
 - Jekyll site in a GitHub repository
+preview: /images/previews/deploy-to-github-pages.png
 sidebar:
   nav: docs
 source_file: github-pages.md
@@ -43,9 +45,13 @@ GitHub Pages provides free hosting for Jekyll sites with automatic builds on eve
 Update your `_config.yml` for GitHub Pages:
 
 ```yaml
-# Site URL (replace with your actual URL)
+# For user sites (username.github.io) — recommended for forks:
 url: "https://username.github.io"
-baseurl: "/repository-name"  # Empty if using user/org site
+baseurl: ""  # Empty — user site deploys at root
+
+# For project sites (username.github.io/repo-name):
+# url: "https://username.github.io"
+# baseurl: "/repository-name"
 
 # Use remote theme for GitHub Pages compatibility
 remote_theme: "bamr87/zer0-mistakes"
@@ -57,6 +63,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 ```
+
+> **Tip:** Fork into `<your-username>.github.io` so you don't need to change `baseurl` at all. See [docs/FORKING.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md) for the recommended workflow.
 
 ### Step 3: Push and Deploy
 
@@ -70,17 +78,19 @@ GitHub will automatically build and deploy your site.
 
 ## Repository Types
 
-### User/Organization Site
+### User/Organization Site (Recommended for Forks)
 
 - Repository name: `username.github.io`
 - URL: `https://username.github.io`
 - `baseurl: ""`
+- No additional configuration needed — works out of the box with the theme defaults
+- See [Forking Guide](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md)
 
 ### Project Site
 
-- Repository name: Any name
+- Repository name: Any other name
 - URL: `https://username.github.io/repository-name`
-- `baseurl: "/repository-name"`
+- `baseurl: "/repository-name"` (must be set in `_config.yml`)
 
 ## Custom Domain
 
@@ -104,6 +114,7 @@ Check the **Actions** tab for build logs:
 3. Review error messages
 
 Common issues:
+
 - Invalid front matter (YAML syntax)
 - Missing dependencies
 - Plugin not in GitHub Pages whitelist
@@ -171,3 +182,16 @@ This allows custom plugins and more build control.
 
 - [Custom Domain Setup](/docs/deployment/custom-domain/)
 - [Netlify Deployment](/docs/deployment/netlify/) — For more hosting features
+
+## Technical Reference
+
+For contributor-level details (deploy target module architecture, profile system, CI/CD integration):
+
+- [Deploy Targets → docs/installation/deploy-targets.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/deploy-targets.md)
+
+## See also
+
+- [[Deployment]]
+- [[Custom Domain Setup]]
+- [[Deploy to Netlify]]
+- [[Docker]]

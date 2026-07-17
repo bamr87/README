@@ -6,6 +6,7 @@ description: Comprehensive site navigation with advanced search, filtering, and 
   tools
 lastmod: 2025-12-20 22:15:46.563000+00:00
 layout: default
+preview: /images/previews/enhanced-sitemap-feature.png
 source_file: sitemap.md
 tags:
 - sitemap
