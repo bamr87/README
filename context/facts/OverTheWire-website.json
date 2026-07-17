@@ -1,0 +1,76 @@
+{
+  "corpus": {
+    "file_count": 232,
+    "fingerprint": "de268d570885f669",
+    "path": "docs/OverTheWire-website",
+    "present": true,
+    "total_bytes": 126475
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Contributing to this website"
+    ],
+    "readme": "README.md",
+    "summary": "The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.",
+    "title": "Wargames"
+  },
+  "key_docs": [
+    "README.md",
+    "wargames/blacksun/reading_material.md",
+    "wargames/krypton/krypton6.md",
+    "information/sshinfra.md",
+    "wargames/drifter/drifter0.md",
+    "wargames/bandit/index.md",
+    "rules/index.md",
+    "wargames/blacksun/index.md"
+  ],
+  "project": {
+    "branch": "gh-pages",
+    "external": true,
+    "kind": "site",
+    "name": "OverTheWire-website",
+    "registry_description": "OverTheWire wargame guides and security-challenge documentation (external reference corpus).",
+    "repo": "OverTheWireOrg/OverTheWire-website",
+    "status": "active",
+    "topics": [
+      "security",
+      "wargames",
+      "ctf"
+    ],
+    "url": "https://github.com/OverTheWireOrg/OverTheWire-website"
+  },
+  "rollups": {},
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": false,
+    "has_changelog": false,
+    "has_claude_md": false,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 219,
+        "name": "wargames"
+      },
+      {
+        "doc_count": 8,
+        "name": "information"
+      },
+      {
+        "doc_count": 3,
+        "name": "_includes"
+      },
+      {
+        "doc_count": 1,
+        "name": "rules"
+      }
+    ]
+  }
+}

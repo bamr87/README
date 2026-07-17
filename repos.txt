@@ -1,24 +1,7 @@
-# Add your source repository URLs here (one per line)
-# Examples:
-
-# Public repositories
-# https://github.com/octocat/Hello-World
-# https://github.com/facebook/react
-
-# Private repositories (requires GitHub token)
-# https://github.com/your-org/private-repo
-
-# Specific branches or tags
-# https://github.com/user/repo.git#main
-# https://github.com/user/repo.git#v1.0.0
-
-# Local repositories (for testing)
-# file:///path/to/local/repo
-
-# Add your source repository URLs here (one per line)
-# Example:
-# https://github.com/user/repo1
-# https://github.com/user/repo2
+# repos.txt - GENERATED from _data/projects.yml.
+# Do not hand-edit: update the registry, then run
+#   python3 -m scripts.context_engine sync
+# Format: one clone URL per line, optional #branch suffix.
 
 https://github.com/bamr87/scripts
 https://github.com/bamr87/skills

@@ -1,10 +1,10 @@
 ---
 title: Documentation Processing Scripts
-description: Comprehensive collection of Python and Bash scripts for documentation aggregation, processing, validation, AI-powered harmonization, and quality assurance
+description: Pipeline stages for the README context engine - aggregation, processing, validation, context distillation, query serving, AI enrichment, and quality gates
 author: Amr Abdel-Motaleb
 created: 2025-12-04
-lastModified: 2025-12-04
-version: 1.1.0
+lastModified: 2026-07-17
+version: 2.0.0
 tags:
   - documentation
   - automation
@@ -12,7 +12,8 @@ tags:
   - bash
   - quality-assurance
   - ai
-  - grok
+  - context-engine
+  - mcp
 category: scripts
 ---
 
@@ -45,7 +46,10 @@ The documentation processing pipeline automates the following tasks:
 2. **Processing**: Categorize, add frontmatter, and organize documentation
 3. **Validation**: Check for missing metadata, formatting issues, and consistency
 4. **Cleanup**: Normalize tags, fix whitespace, and standardize structure
-5. **AI Harmonization**: Intelligent analysis, reorganization, and improvement using Grok API
+5. **Context distillation**: Build the context pyramid (facts → cards → apex README) from the corpus and the fleet registry (`scripts/context_engine/`)
+6. **Serving**: Answer queries over the pyramid via CLI and the MCP server (`mcp/server.py`)
+7. **Schema gate**: Validate the repo's SCHEMA.md structure pyramid (`schema_lint.py`)
+8. **AI Harmonization** (optional/legacy): Intelligent corpus reorganization using the Grok API
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -88,6 +92,18 @@ scripts/
 ├── lint_docs.py            # Documentation linter
 ├── normalize_tags.py       # Tag normalization utility
 ├── run_doc_checks.sh       # Quality check orchestrator
+├── schema_lint.py          # SCHEMA.md pyramid drift gate
+├── context_engine/         # Context engine package (stages 5-6)
+│   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
+│   ├── extractor.py        # Corpus -> structured facts (L2)
+│   ├── synthesizer.py      # Facts -> project cards (L1)
+│   ├── assembler.py        # Apex README, AUTO span, site index (L0)
+│   ├── indexer.py          # Query index + freshness manifest
+│   ├── query.py            # Read-side API (shared by CLI and MCP)
+│   ├── ai.py               # Provider-agnostic enrichment (Anthropic/xAI/mock)
+│   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner
+│   ├── builder.py + cli.py # Orchestration + command-line interface
+│   └── __main__.py         # `python3 -m scripts.context_engine`
 ├── harmonize_docs.py       # AI harmonization CLI
 ├── harmonize/              # AI harmonization package
 │   ├── __init__.py         # Package exports
@@ -95,6 +111,7 @@ scripts/
 │   ├── analyzer.py         # Document analysis module
 │   ├── grok_agent.py       # Grok API integration
 │   └── engine.py           # Harmonization orchestration engine
+├── SCHEMA.md               # Structure contract for this directory
 └── README.md               # This documentation
 ```
 
@@ -102,11 +119,14 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1. Aggregation | `repos.txt` | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
+| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
 | 2. Processing | `raw_docs/` | `docs/` | `process.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
-| 5. Harmonization | `docs/` | Reorganized docs | `harmonize_docs.py` |
+| 5. Distillation | `docs/` + registry | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
+| 6. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
+| 7. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
+| 8. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
 
 ---
 
@@ -600,6 +620,45 @@ python3 scripts/generate_docs_index.py --output custom/path/index.json
 - **Documentation Auditing**: Identify missing frontmatter or broken links
 - **Change Detection**: Compare content hashes between runs
 - **Analytics**: Track documentation growth and coverage
+
+---
+
+### Context Engine (`context_engine/`)
+
+**Purpose**: Distill the aggregated corpus into the context pyramid — the machinery behind the repo's identity as the monorepo's consolidated README. See `PRD.md` for the product spec and `CLAUDE.md` for architecture notes.
+
+**Pipeline** (one `build` run): `registry` → `extractor` (facts, L2) → `synthesizer` (cards, L1) → `assembler` (apex + root README `AUTO:projects` span + `docs/index.md`, L0) → `indexer` (query index + manifest), with `hooks.d/<stage>/` executables fired between stages.
+
+**Usage**:
+```bash
+python3 -m scripts.context_engine build            # full rebuild (heuristic without keys)
+python3 -m scripts.context_engine build --ai off   # force-disable AI enrichment
+python3 -m scripts.context_engine sync             # _data/projects.yml -> repos.txt
+python3 -m scripts.context_engine query mcp agent  # search the pyramid
+python3 -m scripts.context_engine card bashcrawl   # print one project card
+python3 -m scripts.context_engine facts bashcrawl  # print one fact sheet (JSON)
+python3 -m scripts.context_engine apex             # print the consolidated README
+python3 -m scripts.context_engine status           # freshness manifest
+python3 -m scripts.context_engine projects         # fleet roster
+```
+
+**AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when `ANTHROPIC_API_KEY` is set, else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API.
+
+**Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, root README span, and `docs/index.md`. All generated — never hand-edit.
+
+**Query surfaces**: the same `query.py` API backs the CLI and the MCP server (`../mcp/server.py`, registered in `../.mcp.json` with tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`).
+
+---
+
+### `schema_lint.py`
+
+**Purpose**: Drift gate for the SCHEMA.md structure pyramid (parent-monorepo protocol). Walks from the root `SCHEMA.md`, validates frontmatter and Structure tables, checks `required` entries exist, enforces exact listings under `coverage: full`, and recurses into sub-pyramids (stopping at `generated`/`terminal` boundaries).
+
+**Usage**:
+```bash
+python3 scripts/schema_lint.py check .   # exit 1 on errors (wired into CI + post_build hook)
+python3 scripts/schema_lint.py tree .    # print the SCHEMA.md nodes visited
+```
 
 ---
 

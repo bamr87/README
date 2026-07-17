@@ -1,0 +1,148 @@
+{
+  "corpus": {
+    "file_count": 240,
+    "fingerprint": "d0046036d73e463a",
+    "path": "docs/zer0-mistakes",
+    "present": true,
+    "total_bytes": 1835425
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "\ud83d\udcd6 Table of Contents",
+      "Overview",
+      "\ud83d\ude80 Quick Start",
+      "\ud83c\udfd7 Architecture",
+      "\u2728 Key Features",
+      "\ud83d\udce6 Installation Methods",
+      "\ud83d\udcc1 Project Structure",
+      "\ud83d\udd04 Development Workflow",
+      "\ud83d\ude80 Deployment",
+      "\ud83d\udcda Documentation"
+    ],
+    "readme": "README.md",
+    "summary": "GitHub Pages compatible \u2022 Bootstrap 5.3 \u2022 Privacy-compliant \u2022 Zero-configuration",
+    "title": "\ud83d\ude80 zer0-mistakes"
+  },
+  "key_docs": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    ".github/seed/seed.implementation.md",
+    ".github/seed/seed.prompt.md",
+    "pages/_quickstart/personalization.md",
+    ".github/copilot-instructions.md"
+  ],
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "theme",
+    "name": "zer0-mistakes",
+    "registry_description": "Jekyll theme and software architecture patterns for GitHub Pages.",
+    "repo": "bamr87/zer0-mistakes",
+    "status": "active",
+    "topics": [
+      "jekyll",
+      "theme",
+      "github-pages"
+    ],
+    "url": "https://github.com/bamr87/zer0-mistakes"
+  },
+  "rollups": {
+    "categories": {
+      "api": 11,
+      "architecture": 2,
+      "development": 2,
+      "misc": 9,
+      "setup": 75,
+      "user-guides": 1
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "html",
+      "yaml",
+      "markdown",
+      "shell",
+      "raw",
+      "liquid"
+    ],
+    "indexed_documents": 100,
+    "top_tags": [
+      "setup",
+      "testing",
+      "api",
+      "javascript",
+      "docker",
+      "azure",
+      "documentation",
+      "database",
+      "python",
+      "kubernetes",
+      "architecture",
+      "development",
+      "user-guides"
+    ],
+    "total_words": 80985
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": false,
+    "has_changelog": true,
+    "has_claude_md": false,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "CHANGELOG.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 141,
+        "name": "pages"
+      },
+      {
+        "doc_count": 62,
+        "name": "docs"
+      },
+      {
+        "doc_count": 20,
+        "name": ".github"
+      },
+      {
+        "doc_count": 2,
+        "name": ".cursor"
+      },
+      {
+        "doc_count": 2,
+        "name": "_data"
+      },
+      {
+        "doc_count": 2,
+        "name": "_includes"
+      },
+      {
+        "doc_count": 2,
+        "name": "test"
+      },
+      {
+        "doc_count": 1,
+        "name": "_layouts"
+      },
+      {
+        "doc_count": 1,
+        "name": "docker"
+      },
+      {
+        "doc_count": 1,
+        "name": "features"
+      }
+    ]
+  }
+}

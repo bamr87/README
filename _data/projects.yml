@@ -1,0 +1,103 @@
+# _data/projects.yml — fleet registry for the README context engine.
+#
+# SOURCE OF TRUTH for the set of submodules this repo describes (mirrors the
+# parent monorepo convention: structural facts live in the registry; generated
+# surfaces are regenerated, never hand-edited).
+#
+# Consumers:
+#   - scripts/context_engine (crawl targets, card/apex generation, index)
+#   - repos.txt              (GENERATED from this file via `context_engine sync`)
+#   - mcp/server.py          (list_projects / get_project)
+#
+# Field reference (per project):
+#   name        - short slug; must match the docs/<name>/ corpus directory
+#   repo        - owner/name on GitHub
+#   url         - clone URL
+#   branch      - branch to aggregate (omit for the repo default)
+#   status      - active | incubating | archived (archived repos are skipped)
+#   kind        - what the project is (site, theme, tooling, app, game, docs)
+#   description - seed description; the engine prefers the crawled README
+#                 summary and falls back to this
+#   topics      - seed topic tags merged with tags mined from the corpus
+#   aggregate   - include in the docs/ corpus aggregation (default true)
+#   external    - true when the project is not owned by the bamr87 org
+
+version: 1
+
+hub:
+  name: bamr87
+  repo: bamr87/bamr87
+  url: https://github.com/bamr87/bamr87
+  description: >-
+    Monorepo dash — control plane for the project fleet: registry, gates,
+    seeds, and site. This README repo is its consolidated-context submodule.
+
+defaults:
+  status: active
+  aggregate: true
+  external: false
+
+projects:
+  - name: scripts
+    repo: bamr87/scripts
+    url: https://github.com/bamr87/scripts
+    kind: tooling
+    description: >-
+      Automation scripts for forking, linting, stashing, and project
+      management across the fleet.
+    topics: [automation, bash, python]
+
+  - name: skills
+    repo: bamr87/skills
+    url: https://github.com/bamr87/skills
+    kind: docs
+    description: >-
+      Agent skills — prompts, MCP configurations, and AI development
+      patterns.
+    topics: [ai, agents, mcp, prompts]
+
+  - name: barodybroject
+    repo: bamr87/barodybroject
+    url: https://github.com/bamr87/barodybroject
+    kind: app
+    description: >-
+      Full-stack application platform with infrastructure, testing, and
+      deployment tooling.
+    topics: [python, django, azure, full-stack]
+
+  - name: bashcrawl
+    repo: bamr87/bashcrawl
+    url: https://github.com/bamr87/bashcrawl
+    kind: game
+    description: >-
+      Interactive shell-scripting tutorial — learn Bash by exploring a
+      dungeon.
+    topics: [bash, education, game]
+
+  - name: zer0-mistakes
+    repo: bamr87/zer0-mistakes
+    url: https://github.com/bamr87/zer0-mistakes
+    kind: theme
+    description: >-
+      Jekyll theme and software architecture patterns for GitHub Pages.
+    topics: [jekyll, theme, github-pages]
+
+  - name: it-journey
+    repo: bamr87/it-journey
+    url: https://github.com/bamr87/it-journey
+    kind: site
+    description: >-
+      Educational IT platform with quests, blog posts, and technical
+      documentation.
+    topics: [education, jekyll, quests]
+
+  - name: OverTheWire-website
+    repo: OverTheWireOrg/OverTheWire-website
+    url: https://github.com/OverTheWireOrg/OverTheWire-website
+    branch: gh-pages
+    kind: site
+    external: true
+    description: >-
+      OverTheWire wargame guides and security-challenge documentation
+      (external reference corpus).
+    topics: [security, wargames, ctf]

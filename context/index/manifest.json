@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-07-17T03:40:32+00:00",
+  "engine_version": "1.0.0",
+  "enrichment": "heuristic",
+  "project_count": 7,
+  "fingerprints": {
+    "scripts": "583bc229e309e2b6",
+    "skills": "dd818354495728d6",
+    "barodybroject": "b2fbb3d5b336bc56",
+    "bashcrawl": "1519dfd096a1715b",
+    "zer0-mistakes": "d0046036d73e463a",
+    "it-journey": "93001959d2865ba3",
+    "OverTheWire-website": "de268d570885f669"
+  },
+  "corpus_index_present": true,
+  "corpus_index_generated_at": "2025-12-04T20:55:18.167079"
+}
