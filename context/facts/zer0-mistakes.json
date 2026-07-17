@@ -1,38 +1,38 @@
 {
   "corpus": {
-    "file_count": 240,
-    "fingerprint": "d0046036d73e463a",
+    "file_count": 435,
+    "fingerprint": "d1e68749b0cbe1b3",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 1835425
+    "total_bytes": 3218366
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
-      "\ud83d\udcd6 Table of Contents",
-      "Overview",
-      "\ud83d\ude80 Quick Start",
+      "\u2728 What You Get",
+      "\ud83d\udc65 Who It's For",
+      "\ud83d\ude80 Get Started in 5 Minutes",
+      "\u26a1 Why People Pick zer0-mistakes",
+      "\ud83c\udfaf Bare-Minimum Starter (3 files, zero install)",
+      "\ud83e\uddf0 Advanced Features for Power Users",
+      "\ud83e\udd16 AI-Native Workflow",
       "\ud83c\udfd7 Architecture",
       "\u2728 Key Features",
-      "\ud83d\udce6 Installation Methods",
-      "\ud83d\udcc1 Project Structure",
-      "\ud83d\udd04 Development Workflow",
-      "\ud83d\ude80 Deployment",
-      "\ud83d\udcda Documentation"
+      "\ud83d\udce6 Installation Methods \u2014 Reference Card"
     ],
     "readme": "README.md",
-    "summary": "GitHub Pages compatible \u2022 Bootstrap 5.3 \u2022 Privacy-compliant \u2022 Zero-configuration",
-    "title": "\ud83d\ude80 zer0-mistakes"
+    "summary": "Free \u2022 Open source \u2022 Hosted on GitHub Pages for $0/month \u2022 Works on Mac, Windows, and Linux",
+    "title": "zer0-mistakes"
   },
   "key_docs": [
     "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "CODE_OF_CONDUCT.md",
-    ".github/seed/seed.implementation.md",
-    ".github/seed/seed.prompt.md",
-    "pages/_quickstart/personalization.md",
-    ".github/copilot-instructions.md"
+    "docs/architecture/ui-components.md"
   ],
   "project": {
     "branch": null,
@@ -51,97 +51,97 @@
   },
   "rollups": {
     "categories": {
-      "api": 11,
-      "architecture": 2,
-      "development": 2,
-      "misc": 9,
-      "setup": 75,
-      "user-guides": 1
+      "zer0-mistakes": 435
     },
     "code_languages": [
       "bash",
-      "plaintext",
-      "html",
       "yaml",
+      "html",
+      "plaintext",
+      "liquid",
+      "text",
       "markdown",
-      "shell",
-      "raw",
-      "liquid"
+      "javascript"
     ],
-    "indexed_documents": 100,
+    "indexed_documents": 435,
     "top_tags": [
-      "setup",
-      "testing",
-      "api",
-      "javascript",
+      "jekyll",
+      "automation",
+      "ui",
       "docker",
-      "azure",
       "documentation",
-      "database",
-      "python",
-      "kubernetes",
-      "architecture",
       "development",
-      "user-guides"
+      "navigation",
+      "setup",
+      "theme",
+      "ai",
+      "github-pages",
+      "installation",
+      "systems",
+      "bootstrap",
+      "styling"
     ],
-    "total_words": 80985
+    "total_words": 387793
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": false,
+    "has_agents_md": true,
     "has_changelog": true,
-    "has_claude_md": false,
+    "has_claude_md": true,
     "has_contributing": true,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
+      "AGENTS.md",
       "CHANGELOG.md",
+      "CLAUDE.md",
       "CODE_OF_CONDUCT.md",
       "CONTRIBUTING.md",
-      "README.md"
+      "README.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {
-        "doc_count": 141,
+        "doc_count": 200,
         "name": "pages"
       },
       {
-        "doc_count": 62,
+        "doc_count": 104,
         "name": "docs"
       },
       {
-        "doc_count": 20,
+        "doc_count": 44,
         "name": ".github"
       },
       {
-        "doc_count": 2,
-        "name": ".cursor"
-      },
-      {
-        "doc_count": 2,
-        "name": "_data"
-      },
-      {
-        "doc_count": 2,
-        "name": "_includes"
-      },
-      {
-        "doc_count": 2,
+        "doc_count": 24,
         "name": "test"
       },
       {
-        "doc_count": 1,
-        "name": "_layouts"
+        "doc_count": 17,
+        "name": ".claude"
       },
       {
-        "doc_count": 1,
-        "name": "docker"
+        "doc_count": 10,
+        "name": "templates"
       },
       {
-        "doc_count": 1,
-        "name": "features"
+        "doc_count": 8,
+        "name": ".cursor"
+      },
+      {
+        "doc_count": 8,
+        "name": "scripts"
+      },
+      {
+        "doc_count": 3,
+        "name": ".issues"
+      },
+      {
+        "doc_count": 3,
+        "name": "_includes"
       }
     ]
   }

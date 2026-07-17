@@ -5,9 +5,12 @@ categories:
 description: Developer guides for contributing to and extending the Zer0-Mistakes
   Jekyll theme.
 difficulty: intermediate
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-07-13 00:00:00+00:00
 layout: default
+mermaid: true
 permalink: /docs/development/
+preview: /images/previews/development-docs.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -15,11 +18,13 @@ tags:
 - development
 - contributing
 - ci-cd
-title: Development Documentation
+title: Contributing to Zer0-Mistakes
 ---
-# Development Documentation
+# Contributing to Zer0-Mistakes
 
-This section provides comprehensive guides for developers who want to contribute to, extend, or customize the Zer0-Mistakes Jekyll theme.
+This section provides guides for **theme contributors** — developers who want to contribute to, extend, or modify the Zer0-Mistakes Jekyll theme itself.
+
+> **Deep technical reference** (architecture, scripts, systems, release automation internals) lives in the [`docs/` directory](https://github.com/bamr87/zer0-mistakes/tree/main/docs) in the repository. This section provides the contributor-accessible overview; the `docs/` directory has the full technical reference.
 
 ## Getting Started
 
@@ -98,3 +103,10 @@ See [CONTRIBUTING.md](https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBU
 - [Installation Guide](/docs/installation/)
 - [Docker Development](/docs/docker/)
 - [Customization](/docs/customization/)
+
+## See also
+
+- [[Docker]]
+- [[Jekyll]]
+- [[Customization]]
+- [[Installation]]

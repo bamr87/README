@@ -5,13 +5,15 @@ categories:
 description: Complete guide to integrating Mermaid diagrams in Jekyll sites - flowcharts,
   sequence diagrams, class diagrams and more with GitHub Pages compatibility.
 difficulty: beginner
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
 mermaid: true
 permalink: /docs/features/mermaid-diagrams/
 prerequisites:
 - Jekyll site with Bootstrap 5
 - Basic Markdown knowledge
+preview: /images/previews/mermaid-diagrams.png
 sidebar:
   nav: docs
 source_file: mermaid-diagrams.md
@@ -28,6 +30,10 @@ title: Mermaid Diagrams
 > Create flowcharts, sequence diagrams, class diagrams and more in your Jekyll site using Mermaid's simple text-based syntax.
 
 **GitHub Pages Compatible** — Works without custom server-side plugins!
+
+A ` ```mermaid ` block renders to an SVG diagram in the browser. For example, the Quick Start guide's "choose your path" flowchart is a Mermaid block the theme renders automatically:
+
+![The Quick Start page with a Mermaid flowchart rendered below the intro, branching from "What's your goal?" into the install paths](/assets/images/docs/features/mermaid-rendered.png)
 
 ## Quick Start
 
@@ -86,6 +92,7 @@ mermaid:
 The most common diagram type for documenting processes and workflows.
 
 **Directions:**
+
 - `TD` / `TB` — Top to Bottom
 - `BT` — Bottom to Top
 - `LR` — Left to Right
@@ -374,3 +381,15 @@ docker-compose up
 ---
 
 *This guide is part of the [Zer0-Mistakes Jekyll Theme](https://github.com/bamr87/zer0-mistakes) documentation.*
+
+## Technical Reference
+
+For implementation details (how Mermaid v2 was integrated, file changes, test suite):
+
+- [Mermaid Integration → docs/implementation/feature-change-log.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/feature-change-log.md#mermaid-integration-v20)
+
+## See also
+
+- [[Features]]
+- [[MathJax Math]]
+- [[Jupyter Notebook Integration]]

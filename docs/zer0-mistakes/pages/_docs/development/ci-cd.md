@@ -5,12 +5,15 @@ categories:
 description: Comprehensive guide to the continuous integration and deployment workflows
   for the Zer0-Mistakes theme.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-04-18 19:29:55+00:00
 layout: default
+mermaid: true
 permalink: /docs/development/ci-cd/
 prerequisites:
 - GitHub repository access
 - Understanding of GitHub Actions
+preview: /images/previews/ci-cd-pipeline.png
 sidebar:
   nav: docs
 source_file: ci-cd.md
@@ -180,6 +183,7 @@ required_status_checks:
 ### Jekyll Build Cache
 
 {% raw %}
+
 ```yaml
 - uses: actions/cache@v4
   with:
@@ -188,6 +192,7 @@ required_status_checks:
       _site
     key: jekyll-${{ hashFiles('_config.yml') }}
 ```
+
 {% endraw %}
 
 ## Artifacts
@@ -234,6 +239,7 @@ Configure notifications for workflow failures:
 ### Enable Debug Logging
 
 Set repository secrets:
+
 - `ACTIONS_RUNNER_DEBUG`: `true`
 - `ACTIONS_STEP_DEBUG`: `true`
 
@@ -300,3 +306,10 @@ permissions:
 - [Testing Guide](/docs/development/testing/)
 - [Version Bump](/docs/development/version-bump/)
 - [Release Management](/docs/development/release-management/)
+
+## See also
+
+- [[Development]]
+- [[Testing]]
+- [[Release Management]]
+- [[Security Scanning]]

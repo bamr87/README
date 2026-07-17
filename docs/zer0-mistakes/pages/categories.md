@@ -1,5 +1,6 @@
 ---
 description: Browse all categories and discover content by topic
+lastmod: 2026-04-18 19:30:22+00:00
 layout: default
 permalink: /categories/
 source_file: categories.md

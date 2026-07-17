@@ -28,7 +28,7 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 | [skills](cards/skills.md) | docs | active | 712 | Agent skills — prompts, MCP configurations, and AI development patterns. |
 | [barodybroject](cards/barodybroject.md) | app | active | 294 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
 | [bashcrawl](cards/bashcrawl.md) | game | active | 36 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 240 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 435 | Jekyll theme and software architecture patterns for GitHub Pages. |
 | [it-journey](cards/it-journey.md) | site | active | 540 | Educational IT platform with quests, blog posts, and technical documentation. |
 | [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 
@@ -68,13 +68,13 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 - Corpus: [`docs/bashcrawl/`](../docs/bashcrawl/) (36 documents)
 - Topics: bash, education, game
 
-### 🚀 zer0-mistakes
+### zer0-mistakes
 
 Jekyll theme and software architecture patterns for GitHub Pages.
 
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (240 documents)
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (435 documents)
 - Topics: jekyll, theme, github-pages
 
 ### IT-Journey

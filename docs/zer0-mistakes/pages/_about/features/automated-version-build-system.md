@@ -12,7 +12,7 @@ excerpt: Production-ready automation system implementing IT-Journey principles f
   semantic versioning, multi-environment testing, and automated gem publishing.
 lastmod: 2025-12-20 22:15:46.215000+00:00
 permalink: /about/features/automated-version-build-system/
-preview: null
+preview: /images/previews/automated-version-build-system.png
 snippet: null
 source_file: automated-version-build-system.md
 sub-title: Zero-click releases with comprehensive validation

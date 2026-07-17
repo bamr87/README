@@ -8,6 +8,7 @@ description: Discover the best AI-powered tools to supercharge your workflow and
 estimated_reading_time: 8 min
 featured: true
 image: /assets/images/posts/ai-productivity.jpg
+lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/10-ai-tools-that-will-transform-your-productivity-.png
 source_file: 2025-01-25-ai-tools-productivity.md

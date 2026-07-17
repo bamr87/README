@@ -5,9 +5,11 @@ categories:
 description: Floating button that appears on scroll, allowing users to quickly return
   to the top of the page.
 difficulty: beginner
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/back-to-top/
+preview: /images/previews/back-to-top-button.png
 sidebar:
   nav: docs
 source_file: back-to-top.md
@@ -21,6 +23,10 @@ title: Back to Top Button
 # Back to Top Button
 
 A floating button that appears when users scroll down, providing quick navigation back to the top of the page.
+
+![A documentation page scrolled partway down, with a circular back-to-top button floating in the lower corner](/assets/images/docs/features/back-to-top.png)
+
+The button stays hidden at the top of the page and fades in once you scroll past the first viewport, so it never gets in the way.
 
 ## Overview
 
@@ -253,3 +259,9 @@ Position to not interfere with mobile TOC button:
 
 - [Sidebar Navigation](/docs/features/sidebar-navigation/)
 - [Keyboard Navigation](/docs/features/keyboard-navigation/)
+
+## See also
+
+- [[Features]]
+- [[Keyboard Navigation]]
+- [[Mobile TOC Floating Action Button]]

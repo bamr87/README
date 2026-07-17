@@ -4,7 +4,8 @@ Provider-agnostic AI enrichment layer.
 The engine works fully offline; when an API key is present an AI provider
 can enrich cards and the apex with distilled prose. Providers:
 
-  - anthropic  Claude via the Messages API   (ANTHROPIC_API_KEY)
+  - anthropic  Claude via the Messages API   (ANTHROPIC_API_KEY, or Claude
+               Code OAuth via CLAUDE_CODE_OAUTH_TOKEN / ANTHROPIC_AUTH_TOKEN)
   - xai        Grok via chat/completions     (XAI_API_KEY / GROK_API_KEY)
   - mock       deterministic canned output   (tests / dry runs)
 
@@ -68,16 +69,51 @@ def _post_with_retry(url: str, headers: Dict, payload: Dict) -> Dict:
 
 
 class AnthropicProvider(BaseProvider):
-    """Claude via the Anthropic Messages API (raw HTTP, no SDK dependency)."""
+    """
+    Claude via the Anthropic Messages API (raw HTTP, no SDK dependency).
+
+    Two auth modes, resolved in this order:
+      1. API key      ANTHROPIC_API_KEY            -> x-api-key header
+      2. OAuth token  ANTHROPIC_AUTH_TOKEN or
+                      CLAUDE_CODE_OAUTH_TOKEN      -> Authorization: Bearer
+                                                      + oauth beta header
+
+    The OAuth path is how the engine wires into Claude Code locally:
+    `claude setup-token` mints a long-lived token to export as
+    CLAUDE_CODE_OAUTH_TOKEN (or use `ant auth login` + ANTHROPIC_AUTH_TOKEN).
+    """
 
     name = "anthropic"
     API_URL = "https://api.anthropic.com/v1/messages"
+    OAUTH_BETA = "oauth-2025-04-20"
 
-    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
+    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None,
+                 oauth_token: Optional[str] = None):
         self.api_key = api_key or os.getenv("ANTHROPIC_API_KEY")
-        if not self.api_key:
-            raise AIError("ANTHROPIC_API_KEY is not set")
+        self.oauth_token = oauth_token or os.getenv("ANTHROPIC_AUTH_TOKEN") \
+            or os.getenv("CLAUDE_CODE_OAUTH_TOKEN")
+        if not self.api_key and not self.oauth_token:
+            raise AIError(
+                "no Anthropic credential: set ANTHROPIC_API_KEY, or wire "
+                "Claude Code OAuth via CLAUDE_CODE_OAUTH_TOKEN "
+                "(`claude setup-token`) / ANTHROPIC_AUTH_TOKEN")
         self.model = model or os.getenv("CONTEXT_AI_MODEL", "claude-opus-4-8")
+
+    @property
+    def auth_mode(self) -> str:
+        return "api-key" if self.api_key else "oauth"
+
+    def _headers(self) -> Dict:
+        headers = {
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        }
+        if self.api_key:
+            headers["x-api-key"] = self.api_key
+        else:
+            headers["Authorization"] = f"Bearer {self.oauth_token}"
+            headers["anthropic-beta"] = self.OAUTH_BETA
+        return headers
 
     def complete(self, prompt: str, system: str = SYSTEM_PROMPT,
                  max_tokens: int = 700) -> str:
@@ -88,12 +124,7 @@ class AnthropicProvider(BaseProvider):
             "thinking": {"type": "adaptive"},
             "messages": [{"role": "user", "content": prompt}],
         }
-        headers = {
-            "x-api-key": self.api_key,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        }
-        data = _post_with_retry(self.API_URL, headers, payload)
+        data = _post_with_retry(self.API_URL, self._headers(), payload)
         if data.get("stop_reason") == "refusal":
             raise AIError("model declined the request (stop_reason: refusal)")
         text = "".join(block.get("text", "")
@@ -168,7 +199,8 @@ def get_provider(spec: str = "auto") -> Optional[BaseProvider]:
     if spec == "mock":
         return MockProvider()
     if spec == "auto":
-        if os.getenv("ANTHROPIC_API_KEY"):
+        if (os.getenv("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_AUTH_TOKEN")
+                or os.getenv("CLAUDE_CODE_OAUTH_TOKEN")):
             return AnthropicProvider()
         if os.getenv("XAI_API_KEY") or os.getenv("GROK_API_KEY"):
             return XAIProvider()

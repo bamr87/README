@@ -4,6 +4,7 @@ icon: bi-signpost-2
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/settings/navigation/
+preview: /images/previews/navigation-editor.png
 source_file: navigation.md
 title: Navigation
 ---

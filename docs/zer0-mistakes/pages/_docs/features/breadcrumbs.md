@@ -5,9 +5,11 @@ categories:
 description: Hierarchical breadcrumb navigation with Schema.org structured data for
   SEO and user orientation.
 difficulty: beginner
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/breadcrumbs/
+preview: /images/previews/breadcrumbs-navigation.png
 sidebar:
   nav: docs
 source_file: breadcrumbs.md
@@ -21,6 +23,10 @@ title: Breadcrumbs Navigation
 # Breadcrumbs Navigation
 
 Hierarchical breadcrumb navigation showing the current page's location within the site structure.
+
+![An admin page header with a breadcrumb trail reading "Home / About / Configuration Utility" above the page title](/assets/images/docs/features/admin-dashboard.png)
+
+The breadcrumb trail (e.g. **Home / About / Configuration Utility**) sits just above the page title, derived from the page's URL and collection so visitors always know where they are.
 
 ## Overview
 
@@ -270,6 +276,7 @@ breadcrumbs: false
 ### Schema Validation
 
 Test structured data at:
+
 - [Google Rich Results Test](https://search.google.com/test/rich-results)
 - [Schema.org Validator](https://validator.schema.org/)
 
@@ -284,3 +291,9 @@ Test structured data at:
 - [SEO Optimization](/docs/seo/meta-tags/)
 - [Navigation](/docs/customization/navigation/)
 - [Sidebar Navigation](/docs/features/sidebar-navigation/)
+
+## See also
+
+- [[Features]]
+- [[Sidebar Navigation System]]
+- [[Keyboard Navigation]]

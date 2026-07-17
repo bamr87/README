@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2026-01-25 03:38:33+00:00
+description: Set up a local Zer0-Mistakes development environment with Docker or a
+  native Ruby toolchain, then run the dev server and validate your changes.
+lastmod: 2026-05-25 19:58:49+00:00
 source_file: local-setup.md
+tags:
+- development
+- contributing
 title: Local Development Setup
 ---
 # Local Development Setup
@@ -37,6 +47,7 @@ docker-compose up
 ```
 
 **Benefits:**
+
 - No Ruby installation required
 - Consistent environment across machines
 - Matches production build environment

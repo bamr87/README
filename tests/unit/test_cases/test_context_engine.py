@@ -149,6 +149,29 @@ class TestExtractor(ContextEngineFixture):
         self.assertFalse(facts["corpus"]["present"])
         self.assertEqual(facts["key_docs"], [])
 
+    def test_rollups_match_documents_by_path_prefix(self):
+        # The corpus index's `repository` field is legacy (holds the
+        # project's subdirectory); rollups must attribute by path prefix.
+        docs_index = {"documents": [
+            {"path": "alpha/guides/x.md", "repository": "guides",
+             "word_count": 100, "tags": ["Python"], "category": "alpha",
+             "code_blocks": [{"language": "bash", "lines": 3}]},
+            {"path": "alpha/y.md", "repository": None, "word_count": 50,
+             "tags": ["automation"], "category": "alpha", "code_blocks": []},
+            {"path": "alphabet/z.md", "repository": "alpha",  # decoy
+             "word_count": 999, "tags": ["decoy"], "category": "alphabet",
+             "code_blocks": []},
+        ]}
+        alpha = self.registry.get("alpha")
+        facts = extractor.extract_facts(alpha, docs_dir=self.docs_dir,
+                                        docs_index=docs_index)
+        rollups = facts["rollups"]
+        self.assertEqual(rollups["indexed_documents"], 2)
+        self.assertEqual(rollups["total_words"], 150)
+        self.assertIn("python", rollups["top_tags"])
+        self.assertNotIn("decoy", rollups["top_tags"])
+        self.assertEqual(rollups["code_languages"], ["bash"])
+
 
 class TestSynthesizerAndAssembler(ContextEngineFixture):
     def _facts(self):
@@ -226,21 +249,55 @@ class TestIndexAndQuery(ContextEngineFixture):
         self.assertEqual(projects[0]["card"], "context/cards/alpha.md")
 
 
+AUTH_ENV_KEYS = ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN",
+                 "CLAUDE_CODE_OAUTH_TOKEN", "XAI_API_KEY", "GROK_API_KEY")
+
+
 class TestAIProviderSelection(unittest.TestCase):
+    def _clean_env(self, **values):
+        from unittest.mock import patch
+        env = {key: "" for key in AUTH_ENV_KEYS}
+        env.update(values)
+        # empty-string values behave as unset for os.getenv-or-chains
+        patcher = patch.dict("os.environ", env)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
     def test_off_and_mock(self):
         self.assertIsNone(get_provider("off"))
         self.assertIsInstance(get_provider("mock"), MockProvider)
 
     def test_auto_without_keys_is_none(self):
-        import os
-        saved = {k: os.environ.pop(k, None)
-                 for k in ("ANTHROPIC_API_KEY", "XAI_API_KEY", "GROK_API_KEY")}
-        try:
-            self.assertIsNone(get_provider("auto"))
-        finally:
-            for key, value in saved.items():
-                if value is not None:
-                    os.environ[key] = value
+        self._clean_env()
+        self.assertIsNone(get_provider("auto"))
+
+    def test_auto_picks_anthropic_on_oauth_token(self):
+        from scripts.context_engine.ai import AnthropicProvider
+        self._clean_env(CLAUDE_CODE_OAUTH_TOKEN="dummy-oauth-token")
+        provider = get_provider("auto")
+        self.assertIsInstance(provider, AnthropicProvider)
+        self.assertEqual(provider.auth_mode, "oauth")
+        headers = provider._headers()
+        self.assertEqual(headers["Authorization"], "Bearer dummy-oauth-token")
+        self.assertEqual(headers["anthropic-beta"], AnthropicProvider.OAUTH_BETA)
+        self.assertNotIn("x-api-key", headers)
+
+    def test_api_key_wins_over_oauth(self):
+        from scripts.context_engine.ai import AnthropicProvider
+        self._clean_env(ANTHROPIC_API_KEY="dummy-key",
+                        ANTHROPIC_AUTH_TOKEN="dummy-oauth-token")
+        provider = AnthropicProvider()
+        self.assertEqual(provider.auth_mode, "api-key")
+        headers = provider._headers()
+        self.assertEqual(headers["x-api-key"], "dummy-key")
+        self.assertNotIn("Authorization", headers)
+        self.assertNotIn("anthropic-beta", headers)
+
+    def test_anthropic_without_any_credential_raises(self):
+        from scripts.context_engine.ai import AIError, AnthropicProvider
+        self._clean_env()
+        with self.assertRaises(AIError):
+            AnthropicProvider()
 
 
 class TestSchemaLint(unittest.TestCase):

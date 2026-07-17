@@ -9,18 +9,9 @@ generated_by: context_engine 1.0.0
 enrichment: heuristic
 source_fingerprint: 1519dfd096a1715b
 tags:
-  - api
-  - architecture
   - bash
-  - development
-  - docker
-  - documentation
   - education
   - game
-  - javascript
-  - python
-  - setup
-  - testing
 ---
 
 # ⚔️ Bashcrawl: The Terminal Adventure Game
@@ -39,8 +30,8 @@ tags:
 ## Signals
 
 - keeps a changelog
-- ~18,674 words across 20 indexed documents
-- code samples in: bash, plaintext, markdown, text
+- ~55,242 words across 36 indexed documents
+- code samples in: bash, plaintext, json, yaml, python, text, markdown, gitignore
 
 ## Structure
 

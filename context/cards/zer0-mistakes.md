@@ -1,5 +1,5 @@
 ---
-title: "\ud83d\ude80 zer0-mistakes"
+title: "zer0-mistakes"
 repo: bamr87/zer0-mistakes
 category: project-card
 kind: theme
@@ -7,25 +7,25 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: d0046036d73e463a
+source_fingerprint: d1e68749b0cbe1b3
 tags:
-  - api
-  - architecture
-  - azure
-  - database
+  - ai
+  - automation
+  - bootstrap
   - development
   - docker
   - documentation
   - github-pages
-  - javascript
+  - installation
   - jekyll
-  - kubernetes
-  - python
+  - navigation
+  - setup
+  - styling
 ---
 
-# 🚀 zer0-mistakes
+# zer0-mistakes
 
-> Jekyll theme and software architecture patterns for GitHub Pages. GitHub Pages compatible • Bootstrap 5.3 • Privacy-compliant • Zero-configuration.
+> Jekyll theme and software architecture patterns for GitHub Pages. Free • Open source • Hosted on GitHub Pages for $0/month • Works on Mac, Windows, and Linux.
 
 | | |
 |---|---|
@@ -33,37 +33,40 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 240 docs |
+| Corpus | `docs/zer0-mistakes` - 435 docs |
 | External | no |
 
 ## Signals
 
+- has CLAUDE.md agent guidance
+- has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
-- ~80,985 words across 100 indexed documents
-- code samples in: bash, plaintext, html, yaml, markdown, shell, raw, liquid
+- has a security policy
+- ~387,793 words across 435 indexed documents
+- code samples in: bash, yaml, html, plaintext, liquid, text, markdown, javascript
 
 ## Structure
 
-- `pages/` (141 docs)
-- `docs/` (62 docs)
-- `.github/` (20 docs)
-- `.cursor/` (2 docs)
-- `_data/` (2 docs)
-- `_includes/` (2 docs)
-- `test/` (2 docs)
-- `_layouts/` (1 docs)
+- `pages/` (200 docs)
+- `docs/` (104 docs)
+- `.github/` (44 docs)
+- `test/` (24 docs)
+- `.claude/` (17 docs)
+- `templates/` (10 docs)
+- `.cursor/` (8 docs)
+- `scripts/` (8 docs)
 
 ## Key documents
 
 - [`README.md`](../../docs/zer0-mistakes/README.md)
+- [`CLAUDE.md`](../../docs/zer0-mistakes/CLAUDE.md)
+- [`AGENTS.md`](../../docs/zer0-mistakes/AGENTS.md)
 - [`CONTRIBUTING.md`](../../docs/zer0-mistakes/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/zer0-mistakes/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/zer0-mistakes/SECURITY.md)
 - [`CODE_OF_CONDUCT.md`](../../docs/zer0-mistakes/CODE_OF_CONDUCT.md)
-- [`.github/seed/seed.implementation.md`](../../docs/zer0-mistakes/.github/seed/seed.implementation.md)
-- [`.github/seed/seed.prompt.md`](../../docs/zer0-mistakes/.github/seed/seed.prompt.md)
-- [`pages/_quickstart/personalization.md`](../../docs/zer0-mistakes/pages/_quickstart/personalization.md)
-- [`.github/copilot-instructions.md`](../../docs/zer0-mistakes/.github/copilot-instructions.md)
+- [`docs/architecture/ui-components.md`](../../docs/zer0-mistakes/docs/architecture/ui-components.md)
 
 ## Query this context
 

@@ -12,7 +12,7 @@ excerpt: Production-ready automation system implementing IT-Journey principles f
   semantic versioning, multi-environment testing, and automated gem publishing.
 lastmod: 2025-12-20 22:15:46.245000+00:00
 permalink: /about/features/comprehensive-gem-automation-system/
-preview: null
+preview: /images/previews/comprehensive-gem-automation-system.png
 snippet: null
 source_file: comprehensive-gem-automation-system.md
 sub-title: Zero-click releases with comprehensive validation

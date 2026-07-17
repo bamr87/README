@@ -6,6 +6,12 @@ title: Zer0-Mistakes Copilot Instructions
 
 **Docker-First Jekyll Theme with Automated Release Management & Privacy-Compliant Analytics**
 
+> 🤖 **Other AI agents** (Codex, Cursor, Aider, Jules, Continue, Claude Code, …)
+> should start at the cross-tool entry point at [`AGENTS.md`](../AGENTS.md) in
+> the repo root, which links back here. This file is the canonical, detailed
+> guidance for GitHub Copilot and is the source of truth for project
+> conventions.
+
 ## 📖 Project Overview
 
 Zer0-Mistakes is a professional Jekyll theme designed for developers who value reliability, modern workflows, and AI-assisted development. Key features include:
@@ -21,35 +27,53 @@ Zer0-Mistakes is a professional Jekyll theme designed for developers who value r
 
 ```
 zer0-mistakes/
-├── .github/                 # GitHub configurations and workflows
+├── AGENTS.md                # Cross-tool AI agent entry point (Codex/Cursor/Aider/…)
+├── .github/                 # GitHub configurations and AI guidance
 │   ├── copilot-instructions.md  # Main Copilot instructions (this file)
-│   ├── instructions/        # File-specific instruction files
+│   ├── instructions/        # File-scoped instruction files (applyTo globs)
 │   │   ├── layouts.instructions.md
 │   │   ├── includes.instructions.md
 │   │   ├── scripts.instructions.md
 │   │   ├── testing.instructions.md
+│   │   ├── documentation.instructions.md
 │   │   └── version-control.instructions.md
+│   ├── prompts/             # Reusable agent/chat prompts (.prompt.md)
+│   ├── seed/                # "Seed" blueprint docs for full rebuilds
 │   ├── workflows/           # GitHub Actions CI/CD workflows
-│   └── actions/             # Custom GitHub Actions
+│   ├── actions/             # Custom composite GitHub Actions
+│   └── config/              # Linter configs (markdownlint, yamllint, …)
+├── .cursor/                 # Cursor IDE slash-commands (mirrors prompts/)
 ├── _layouts/                # Jekyll layout templates
 ├── _includes/               # Reusable Jekyll components
 ├── _sass/                   # Sass stylesheets
 ├── _data/                   # Data files (YAML, JSON)
-├── assets/                  # Static assets (CSS, JS, images)
+├── _plugins/                # Custom Jekyll plugins
+├── assets/                  # Static assets (CSS, JS, images, vendor/)
+├── lib/                     # Ruby library (jekyll-theme-zer0/version.rb)
 ├── pages/                   # Content pages and collections
-│   ├── _posts/              # Blog posts
-│   ├── _docs/               # Documentation
-│   └── _quests/             # Tutorial collections
-├── scripts/                 # Automation scripts
-│   ├── version.sh           # Version management
-│   ├── build.sh             # Build automation
-│   ├── test.sh              # Test execution
-│   └── release.sh           # Release workflow
+│   ├── _posts/              # Blog posts (layout: article)
+│   ├── _docs/               # Documentation pages
+│   ├── _about/              # About pages
+│   ├── _notebooks/          # Jupyter notebook content
+│   ├── _notes/              # Notes collection
+│   └── _quickstart/         # Tutorial / quickstart content
+├── scripts/                 # Automation scripts (library-based)
+│   ├── bin/                 # Canonical entry points
+│   │   ├── build            # Build the gem
+│   │   ├── release          # Full release pipeline (patch|minor|major)
+│   │   └── test             # Unified test runner
+│   ├── lib/                 # Shared shell modules (common, git, gem, version, …)
+│   ├── build, release, test # Backward-compat wrappers → scripts/bin/*
+│   ├── analyze-commits.sh   # Conventional-commit → version-bump analyzer
+│   └── vendor-install.sh    # Refresh local Bootstrap / icon assets
 ├── test/                    # Test suite
 │   ├── test_runner.sh       # Main test orchestrator
 │   ├── test_core.sh         # Core functionality tests
 │   ├── test_deployment.sh   # Deployment tests
-│   └── test_quality.sh      # Code quality tests
+│   ├── test_quality.sh      # Code quality tests
+│   └── test_installer.sh    # Modular installer tests
+├── templates/               # Reusable content templates
+├── docs/                    # Technical (MDX) documentation
 ├── _config.yml              # Production Jekyll configuration
 ├── _config_dev.yml          # Development configuration overrides
 ├── docker-compose.yml       # Docker development environment
@@ -73,18 +97,19 @@ docker-compose exec jekyll jekyll build
 bundle exec jekyll build
 
 # Run tests
-./test/test_runner.sh               # Run all tests
+./test/test_runner.sh               # Run all theme tests
 ./test/test_core.sh                 # Run core tests only
 ./test/test_runner.sh --verbose     # Verbose output
+./scripts/bin/test                  # Unified runner (lib + theme + integration)
 
-# Version management
-./scripts/version.sh patch          # Bump patch version (1.0.0 → 1.0.1)
-./scripts/version.sh minor          # Bump minor version (1.0.0 → 1.1.0)
-./scripts/version.sh major          # Bump major version (1.0.0 → 2.0.0)
+# Version & release (library-based; bin scripts are canonical)
+./scripts/bin/release patch         # Patch release (0.0.X) — full pipeline
+./scripts/bin/release minor         # Minor release (0.X.0)
+./scripts/bin/release major         # Major release (X.0.0)
+./scripts/bin/release patch --dry-run  # Preview without publishing
 
-# Release
-./scripts/release.sh                # Full release workflow
-./scripts/release.sh --dry-run      # Preview release
+# Build the gem only (no release)
+./scripts/bin/build
 ```
 
 ### Code Quality Commands
@@ -147,7 +172,7 @@ _includes/
 **Layout Hierarchy:**
 
 ```
-root.html (base) → default.html (main) → [journals.html, home.html, etc.]
+root.html (base) → default.html (main) → [article.html, home.html, etc.]
 ```
 
 ## 🚀 Critical Developer Workflows
@@ -164,8 +189,8 @@ docker-compose exec jekyll bash
 # Clean rebuild with dependency updates
 docker-compose down && docker-compose up --build
 
-# Test automated release system
-./scripts/gem-publish.sh patch --dry-run
+# Test automated release system (no publishing)
+./scripts/bin/release patch --dry-run
 ```
 
 ### Automated Release System
@@ -173,11 +198,11 @@ docker-compose down && docker-compose up --build
 The theme uses semantic versioning with automated commit analysis:
 
 ```bash
-# Publish patch release (0.5.1)
-./scripts/gem-publish.sh patch
+# Publish patch release (e.g. 0.22.15 → 0.22.16)
+./scripts/bin/release patch
 
-# Publish minor release (0.6.0)
-./scripts/gem-publish.sh minor
+# Publish minor release (e.g. 0.22.x → 0.23.0)
+./scripts/bin/release minor
 
 # Preview changelog generation
 ./scripts/analyze-commits.sh HEAD~5..HEAD
@@ -186,7 +211,8 @@ The theme uses semantic versioning with automated commit analysis:
 **Key Files:**
 
 - `lib/jekyll-theme-zer0/version.rb` - Single source of truth for version
-- `scripts/gem-publish.sh` - Full release workflow (changelog → version bump → test → publish)
+- `scripts/bin/release` - Full release workflow (changelog → version bump → test → build → tag → publish)
+- `scripts/lib/*.sh` - Shared shell modules used by `scripts/bin/*`
 - `scripts/analyze-commits.sh` - Analyzes commit messages for version bump type
 
 ## 📝 Content Creation Patterns
@@ -195,7 +221,7 @@ The theme uses semantic versioning with automated commit analysis:
 
 ```
 pages/
-├── _posts/         # Blog posts (layout: journals)
+├── _posts/         # Blog posts (layout: article)
 ├── _docs/          # Documentation (layout: default)
 ├── _about/         # About pages (custom layouts)
 └── _quickstart/    # Tutorial content (layout: default)
@@ -207,7 +233,7 @@ pages/
 ---
 title: "Your Post Title"
 description: "SEO description (150-160 chars)"
-layout: journals
+layout: article
 categories: [Category1, Subcategory]
 tags: [tag1, tag2]
 date: 2025-01-27T10:00:00.000Z
@@ -327,7 +353,7 @@ environment: { JEKYLL_ENV: development }
 
 ```bash
 # Full release workflow
-./scripts/gem-publish.sh patch  # Auto-detects version bump needed
+./scripts/bin/release patch  # Auto-detects version bump needed (or use minor/major)
 ```
 
 ---
@@ -367,7 +393,7 @@ sub-title: "From development to production with Docker containers"
 excerpt: "Master containerization for scalable web application deployment"
 snippet: "Containers transform how we build and deploy applications"
 author: "Zer0-Mistakes Development Team"
-layout: journals
+layout: article
 keywords:
   primary: ["docker containers", "web application deployment"]
   secondary: ["containerization", "production ready", "scalable architecture"]
@@ -519,7 +545,7 @@ curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.s
 
 - **Posts**: Create in `pages/_posts/` with comprehensive Jekyll front matter including AI content hints and technical requirements
 - **Pages**: Add to root or `pages/` with custom layouts documented via front matter component specifications
-- **Collections**: Use `pages/_quests/`, `pages/_docs/` with front matter defining content relationships and learning progressions
+- **Collections**: Use `pages/_quickstart/`, `pages/_docs/`, `pages/_notebooks/`, `pages/_notes/` with front matter defining content relationships and learning progressions
 - **Front Matter Standards**: Include complete metadata: `layout`, `title`, `date`, `categories`, `tags`, plus AI directives, SEO optimization, and performance hints
 
 ## 🎨 Bootstrap 5 Integration
@@ -652,7 +678,7 @@ date: 2025-01-27T10:00:00.000Z
 preview: "Social media preview text"
 tags: [tag1, tag2]
 categories: [Category1, Subcategory]
-layout: journals
+layout: article
 permalink: /custom-url/
 ---
 ```
@@ -978,6 +1004,9 @@ The `.github/instructions/` directory contains specialized guidelines for differ
 - **includes.instructions.md** (applies to `_includes/**`): Reusable component development
 - **scripts.instructions.md** (applies to `scripts/**`): Shell script automation standards
 - **testing.instructions.md** (applies to `test/**`): Testing guidelines and best practices
+- **features.instructions.md** (applies to the feature registry + its tooling): the
+  registry schema, provenance/tests requirements, and the `tag-features`
+  reverse-traceability gate — **read this whenever you add or change a feature**
 - **version-control.instructions.md** (applies to `**`): Git workflow and release management
 
 These instructions are automatically applied by GitHub Copilot based on the files you're working with.
@@ -991,6 +1020,12 @@ These instructions are automatically applied by GitHub Copilot based on the file
 3. **Follow existing patterns**: Match the style and structure of existing code
 4. **Test your changes**: Run relevant tests before committing
 5. **Document updates**: Update comments, docs, and CHANGELOG.md as needed
+6. **Register the feature**: If the change adds or materially alters a
+   user-visible feature (a new layout, include, plugin, script, or workflow),
+   add/update its `ZER0-NNN` entry in `_data/features.yml` (with `provenance` +
+   `tests`), then run `ruby scripts/tag-features --write` to tag the source
+   files. The `features` CI suite hard-fails otherwise. See
+   [`.github/instructions/features.instructions.md`](instructions/features.instructions.md).
 
 ### Common Tasks
 
@@ -1002,6 +1037,8 @@ These instructions are automatically applied by GitHub Copilot based on the file
 4. Ensure responsive design (mobile-first)
 5. Test across different content types
 6. Update layout documentation
+7. Register it: add a `ZER0-NNN` entry to `_data/features.yml` and run
+   `ruby scripts/tag-features --write` (see features.instructions.md)
 
 #### Adding a New Include
 

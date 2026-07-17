@@ -5,9 +5,11 @@ categories:
 description: Guide to the 70+ reusable include components organized by category for
   maximum flexibility.
 difficulty: intermediate
-estimated_time: 20 minutes
+estimated_reading_time: 20 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
 permalink: /docs/customization/includes/
+preview: /images/previews/include-components.png
 sidebar:
   nav: docs
 source_file: includes.md
@@ -24,7 +26,7 @@ The Zer0-Mistakes theme includes 70+ reusable components organized by category.
 
 ## Overview
 
-```
+```text
 _includes/
 ├── analytics/     # Analytics integrations
 ├── components/    # UI components
@@ -83,7 +85,7 @@ _includes/
 | `components/post-card.html` | Blog post card |
 | `components/preview-image.html` | Preview image handler |
 | `components/search-modal.html` | Search modal |
-| `components/searchbar.html` | Search input |
+| `components/searchbar.html` | Deprecated Algolia-style search stub (use `search-modal.html`) |
 | `components/theme-info.html` | Theme version modal |
 
 ### Post Card Example
@@ -162,16 +164,29 @@ _includes/
 | `navigation/nav_list.html` | Navigation list |
 | `navigation/nav-tree.html` | Tree navigation |
 | `navigation/navbar.html` | Main navbar |
-| `navigation/sidebar-categories.html` | Category sidebar |
-| `navigation/sidebar-folders.html` | Folder sidebar |
-| `navigation/sidebar-left.html` | Left sidebar |
+| `navigation/sidebar-config.html` | Resolves the effective sidebar mode/title/icon (page → collection → site) |
+| `navigation/sidebar-nav.html` | Renders the resolved sidebar mode |
+| `navigation/sidebar-categories.html` | Categories/tags sidebar (posts by taxonomy term) |
+| `navigation/sidebar-folders.html` | Collection sidebar (collapsible folder tree) |
+| `navigation/sidebar-left.html` | Left sidebar panel |
 | `navigation/sidebar-right.html` | Right sidebar (TOC) |
 
 ### Sidebar with Navigation
 
-```liquid
-{% raw %}{% include navigation/sidebar-left.html nav="docs" %}{% endraw %}
+The sidebar mode comes from the `sidebar.nav` front matter key (or a
+collection/site default), not an include parameter:
+
+```yaml
+sidebar:
+  nav: docs   # auto | collection | categories | tags | <_data/navigation file>
 ```
+
+```liquid
+{% raw %}{% include navigation/sidebar-left.html %}{% endraw %}
+```
+
+See [Sidebar Navigation](/docs/features/sidebar-navigation/) for the full
+mode and option reference.
 
 ## Landing Page Includes
 
@@ -303,5 +318,17 @@ bundle show jekyll-theme-zer0
 ## Related
 
 - [Layouts](/docs/customization/layouts/)
-- [Jekyll Liquid](/docs/jekyll/jekyll-liquid/)
+- [Jekyll Liquid](/docs/liquid/)
 - [Bootstrap Integration](/docs/bootstrap/)
+
+## Technical Reference
+
+For contributor-level details (component API reference, include parameters, extending the component library):
+
+- [Components → docs/ui/components.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/components.md)
+
+## See also
+
+- [[Customization]]
+- [[Layouts]]
+- [[Bootstrap Integration]]

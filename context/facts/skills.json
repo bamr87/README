@@ -50,7 +50,30 @@
     ],
     "url": "https://github.com/bamr87/skills"
   },
-  "rollups": {},
+  "rollups": {
+    "categories": {
+      "skills": 712
+    },
+    "code_languages": [
+      "python",
+      "java",
+      "typescript",
+      "csharp",
+      "bash",
+      "plaintext",
+      "rust",
+      "markdown"
+    ],
+    "indexed_documents": 712,
+    "top_tags": [
+      "learning",
+      "memory",
+      "reflection",
+      "productivity",
+      "featured"
+    ],
+    "total_words": 509370
+  },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": true,

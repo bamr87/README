@@ -1,5 +1,6 @@
 ---
 description: Browse all tags and discover content by topic
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /tags/
 source_file: tags.md

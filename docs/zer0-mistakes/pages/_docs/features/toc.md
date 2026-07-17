@@ -5,9 +5,11 @@ categories:
 description: Automatic table of contents generation from page headings with scroll
   spy and smooth scrolling.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/toc/
+preview: /images/previews/table-of-contents.png
 sidebar:
   nav: docs
 source_file: toc.md
@@ -21,6 +23,10 @@ title: Table of Contents
 # Table of Contents
 
 Automatic table of contents generation from page headings with active section highlighting.
+
+![A documentation page with the "On this page" table of contents in the right column, listing the page's headings; the current section is highlighted as you scroll](/assets/images/docs/features/docs-layout.png)
+
+The **On this page** panel on the right is the table of contents, built from the page's `h2`–`h6` headings.
 
 ## Overview
 
@@ -281,3 +287,9 @@ TOC in offcanvas (see [Mobile TOC](/docs/features/mobile-toc/)):
 - [Sidebar Navigation](/docs/features/sidebar-navigation/)
 - [Mobile TOC](/docs/features/mobile-toc/)
 - [Keyboard Navigation](/docs/features/keyboard-navigation/)
+
+## See also
+
+- [[Features]]
+- [[Mobile TOC Floating Action Button]]
+- [[Sidebar Navigation System]]

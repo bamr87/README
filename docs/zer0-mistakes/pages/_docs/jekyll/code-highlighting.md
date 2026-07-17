@@ -5,9 +5,11 @@ categories:
 description: Configure syntax highlighting for code blocks in Jekyll using Rouge and
   Kramdown.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-04-18 19:29:52+00:00
 layout: default
 permalink: /docs/jekyll/code-highlighting/
+preview: /images/previews/code-highlighting.png
 sidebar:
   nav: docs
 source_file: code-highlighting.md
@@ -133,6 +135,7 @@ Available themes: `base16`, `colorful`, `github`, `monokai`, `thankful_eyes`, an
 highlight.js supports 89+ styles. Browse themes at the [demo page](https://highlightjs.org/static/demo/).
 
 Popular themes:
+
 - `atom-one-light`
 - `atom-one-dark`
 - `github`
@@ -151,3 +154,9 @@ Popular themes:
 - [Rouge Documentation](https://github.com/rouge-ruby/rouge)
 - [Kramdown Syntax](https://kramdown.gettalong.org/syntax.html)
 - [highlight.js](https://highlightjs.org/)
+
+## See also
+
+- [[Jekyll]]
+- [[Syntax Highlighting]]
+- [[Code Copy Button]]

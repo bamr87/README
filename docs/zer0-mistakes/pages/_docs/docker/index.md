@@ -4,12 +4,13 @@ categories:
 - docker
 description: Docker-first workflow for developing and testing Zer0-Mistakes.
 difficulty: beginner
-estimated_time: 5 minutes
-lastmod: 2025-12-20 22:15:46.186000+00:00
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/docker/
 prerequisites:
 - Docker Desktop
+preview: /images/previews/docker.png
 sidebar:
   nav: docs
 source_file: index.md
@@ -17,7 +18,6 @@ tags:
 - docker
 - docker-compose
 title: Docker Development
-updated: 2025-12-20
 ---
 # Docker Development
 
@@ -117,6 +117,7 @@ docker-compose exec jekyll bundle update
 ## Troubleshooting
 
 **Port already in use:**
+
 ```bash
 # Find process using port 4000
 lsof -i :4000
@@ -125,6 +126,7 @@ docker-compose up -p 4001:4000
 ```
 
 **Container won't start:**
+
 ```bash
 # Check logs for errors
 docker-compose logs jekyll
@@ -137,4 +139,11 @@ docker-compose down -v && docker-compose up --build
 
 - [Installation Guide](/docs/installation/)
 - [Troubleshooting](/docs/troubleshooting/)
-- [Jekyll Configuration](/docs/jekyll/jekyll-config/)
+- [Jekyll Configuration](/docs/jekyll/)
+
+## See also
+
+- [[Jekyll]]
+- [[Ruby]]
+- [[Deployment]]
+- [[Installation]]

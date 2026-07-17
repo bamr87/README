@@ -8,6 +8,7 @@ description: Theme-specific Jekyll notes and links for Zer0-Mistakes development
 draft: false
 lastmod: 2025-12-20 22:15:46.302000+00:00
 permalink: /about/features/jekyll/
+preview: /images/previews/jekyll-technical-reference.png
 source_file: jekyll-technical-reference.md
 tags:
 - Jekyll

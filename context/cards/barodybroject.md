@@ -9,18 +9,18 @@ generated_by: context_engine 1.0.0
 enrichment: heuristic
 source_fingerprint: b2fbb3d5b336bc56
 tags:
-  - api
-  - architecture
-  - aws
+  - agricultural technology
   - azure
-  - database
-  - development
+  - corporate betrayal
+  - corporate ethics
+  - diasporic experience
   - django
-  - docker
-  - documentation
+  - erp systems
   - full-stack
-  - javascript
-  - kubernetes
+  - geopolitical subterfuge
+  - historical inequities.
+  - identity politics
+  - index
 ---
 
 # Parody News Generator
@@ -40,7 +40,7 @@ tags:
 
 - has a contribution guide
 - keeps a changelog
-- ~230,155 words across 301 indexed documents
+- ~231,244 words across 295 indexed documents
 - code samples in: bash, python, yaml, plaintext, django, markdown, html, javascript
 
 ## Structure

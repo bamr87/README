@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-11-29 05:33:55+00:00
+description: 'The zero-version-pin strategy: always use the latest compatible dependencies
+  while keeping reproducible builds via lockfiles and fail-fast checks.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: ZERO_PIN_STRATEGY.md
+tags:
+- systems
+- automation
 title: Zero Version Pin Strategy
 ---
 # Zero Version Pin Strategy
@@ -19,7 +29,7 @@ This is the pattern used internally by Shopify, GitHub, GitLab, and most large J
 
 ### Dependency Resolution Flow
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                         ZERO PIN DEPENDENCY FLOW                            │
 ├─────────────────────────────────────────────────────────────────────────────┤
@@ -60,7 +70,7 @@ This is the pattern used internally by Shopify, GitHub, GitLab, and most large J
 
 ## File Structure
 
-```
+```text
 zer0-mistakes/
 ├── docker/
 │   ├── Dockerfile                    # Multi-stage, zero version pins
@@ -220,6 +230,6 @@ If you're coming from a project with version pins:
 
 ## Related Documentation
 
-- [Docker Development Guide](../jekyll/docker-development.md)
-- [CI/CD Workflows](../systems/ci-cd.md)
-- [Release Process](../releases/release-process.md)
+- [Dependency Management](dependency-management.md)
+- [Ruby Version Management](ruby-version-management.md)
+- [Release Automation](release-automation.md)

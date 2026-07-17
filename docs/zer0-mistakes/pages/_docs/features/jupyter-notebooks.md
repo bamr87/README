@@ -5,12 +5,16 @@ categories:
 description: Full Jupyter notebook support with GitHub Pages compatibility, automated
   conversion, and responsive design.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
+mathjax: true
+mermaid: true
 permalink: /docs/features/jupyter-notebooks/
 prerequisites:
 - Docker Desktop
 - Jupyter notebooks to convert
+preview: /images/previews/jupyter-notebook-integration.png
 sidebar:
   nav: docs
 source_file: jupyter-notebooks.md
@@ -24,6 +28,8 @@ title: Jupyter Notebook Integration
 # Jupyter Notebook Integration
 
 The Zer0-Mistakes theme provides full Jupyter notebook support with GitHub Pages compatibility through automated pre-build conversion.
+
+![The Notebooks collection landing page: a category sidebar, a difficulty filter, and notebook cards rendered like the rest of the site](/assets/images/docs/features/jupyter-notebooks.png)
 
 ## Overview
 
@@ -56,13 +62,13 @@ graph LR
 
 1. Place `.ipynb` file in `pages/_notebooks/`:
 
-```
+```text
 pages/_notebooks/
 ├── data-analysis.ipynb
 └── machine-learning-intro.ipynb
 ```
 
-2. Convert notebooks:
+1. Convert notebooks:
 
 ```bash
 # Using Docker
@@ -72,7 +78,7 @@ docker-compose exec jekyll ./scripts/convert-notebooks.sh
 ./scripts/convert-notebooks.sh
 ```
 
-3. View at `/notebooks/your-notebook-name/`
+1. View at `/notebooks/your-notebook-name/`
 
 ## Conversion Script
 
@@ -178,11 +184,13 @@ defaults:
 Equations render automatically:
 
 **Inline Math**:
+
 ```latex
 The equation $E = mc^2$ is famous.
 ```
 
 **Block Math**:
+
 ```latex
 $$
 \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
@@ -239,11 +247,11 @@ defaults:
 ```makefile
 # Convert all notebooks
 convert-notebooks:
-	./scripts/convert-notebooks.sh
+ ./scripts/convert-notebooks.sh
 
 # Preview conversion
 convert-notebooks-dry-run:
-	./scripts/convert-notebooks.sh --dry-run
+ ./scripts/convert-notebooks.sh --dry-run
 ```
 
 ## Troubleshooting
@@ -251,9 +259,11 @@ convert-notebooks-dry-run:
 ### Conversion Fails
 
 1. Check nbconvert is installed:
+
    ```bash
    pip install nbconvert
    ```
+
 2. Verify notebook is valid JSON
 3. Check for special characters in path
 
@@ -272,6 +282,7 @@ convert-notebooks-dry-run:
 ### Tables Overflow
 
 Add responsive wrapper:
+
 ```html
 <div class="table-responsive">
   {{ table_content }}
@@ -283,3 +294,15 @@ Add responsive wrapper:
 - [MathJax Math](/docs/features/mathjax-math/)
 - [Code Highlighting](/docs/jekyll/code-highlighting/)
 - [Mermaid Diagrams](/docs/features/mermaid-diagrams/)
+
+## Technical Reference
+
+For implementation details (Docker conversion pipeline, nbconvert config, SCSS styling, GitHub Actions workflow):
+
+- [Jupyter Notebooks → docs/features/jupyter-notebooks.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/jupyter-notebooks.md)
+
+## See also
+
+- [[Features]]
+- [[Mermaid Diagrams]]
+- [[MathJax Math]]

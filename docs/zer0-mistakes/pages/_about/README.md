@@ -1,7 +1,9 @@
 ---
 description: Organization of the Zer0-Mistakes theme documentation and technical features
+draft: false
 lastmod: 2025-01-13 00:00:00+00:00
 permalink: /about/readme/
+preview: /images/previews/zer0-mistakes-about-section.png
 source_file: README.md
 title: Zer0-Mistakes Theme Documentation
 ---
@@ -74,7 +76,6 @@ The Zer0-Mistakes documentation focuses on:
 - MathJax (equations)
 - Mermaid (diagrams)
 - giscus (comments)
-- Algolia (search)
 - Google Analytics
 - Social sharing
 

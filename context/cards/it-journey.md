@@ -9,18 +9,18 @@ generated_by: context_engine 1.0.0
 enrichment: heuristic
 source_fingerprint: 93001959d2865ba3
 tags:
-  - api
-  - aws
-  - azure
-  - database
-  - development
+  - automation
+  - data-engineering
+  - devops
   - docker
   - documentation
   - education
-  - gcp
-  - javascript
+  - frontend
+  - gamified-learning
+  - git
+  - github-actions
+  - hands-on
   - jekyll
-  - kubernetes
 ---
 
 # IT-Journey
@@ -42,8 +42,8 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~449,620 words across 296 indexed documents
-- code samples in: plaintext, bash, markdown, yaml, powershell, python, mermaid, html
+- ~747,116 words across 540 indexed documents
+- code samples in: bash, plaintext, markdown, yaml, mermaid, powershell, python, html
 
 ## Structure
 

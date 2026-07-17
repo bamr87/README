@@ -5,9 +5,11 @@ categories:
 description: Implement previous/next navigation buttons and paginated post lists in
   your Jekyll site.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-04-18 19:29:50+00:00
 layout: default
 permalink: /docs/jekyll/pagination/
+preview: /images/previews/pagination.png
 sidebar:
   nav: docs
 source_file: pagination.md
@@ -178,3 +180,9 @@ Add CSS for pagination buttons:
 
 - [Jekyll Pagination Documentation](https://jekyllrb.com/docs/pagination/)
 - [Previous/Next Links in Collections](http://stories.upthebuzzard.com/jekyll_notes/2017-02-19-prev-and-next-within-a-jekyll-collection.html)
+
+## See also
+
+- [[Jekyll]]
+- [[Liquid]]
+- [[front-matter]]

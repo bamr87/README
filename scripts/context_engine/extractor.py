@@ -94,11 +94,19 @@ def load_docs_index(path: Path = DOCS_INDEX_PATH) -> Optional[Dict]:
 
 
 def _index_rollups(docs_index: Optional[Dict], name: str) -> Dict:
-    """Per-project rollups derived from the corpus index, when available."""
+    """
+    Per-project rollups derived from the corpus index, when available.
+
+    Documents are matched by path prefix (docs/<name>/...): the index's
+    `repository` field still reflects the legacy category-based layout
+    (it holds the project's *subdirectory* under the current repo-keyed
+    tree), so it cannot be trusted for project attribution.
+    """
     if not docs_index:
         return {}
+    prefix = f"{name}/"
     docs = [d for d in docs_index.get("documents", [])
-            if d.get("repository") == name]
+            if str(d.get("path", "")).startswith(prefix)]
     if not docs:
         return {}
     tags: Counter = Counter()

@@ -5,11 +5,13 @@ categories:
 description: Google Tag Manager integration for centralized tag management and marketing
   analytics.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-04-18 19:30:03+00:00
 layout: default
 permalink: /docs/analytics/google-tag-manager/
 prerequisites:
 - Google Tag Manager account
+preview: /images/previews/google-tag-manager.png
 sidebar:
   nav: docs
 source_file: google-tag-manager.md
@@ -132,6 +134,7 @@ dataLayer.push({
 ### Google Analytics 4
 
 In GTM:
+
 1. Add new tag → GA4 Configuration
 2. Enter Measurement ID
 3. Trigger: All Pages
@@ -178,6 +181,7 @@ In GTM: Create trigger for event name "formSubmit"
 ### Built-in Variables
 
 Enable in GTM:
+
 - Page URL
 - Page Hostname
 - Page Path
@@ -189,6 +193,7 @@ Enable in GTM:
 ### Data Layer Variables
 
 Access dataLayer values:
+
 1. Variables → New → Data Layer Variable
 2. Set variable name (e.g., `pageTitle`)
 
@@ -228,6 +233,7 @@ function updateConsent(analytics, ads) {
 ### Consent Mode Tags
 
 In GTM, configure tags to respect consent:
+
 - Tag Settings → Consent Settings
 - Require consent for firing
 
@@ -242,6 +248,7 @@ In GTM, configure tags to respect consent:
 ### Debug Panel
 
 Shows:
+
 - Tags fired
 - Variables values
 - DataLayer events
@@ -311,3 +318,9 @@ Shows:
 - [Google Analytics](/docs/analytics/google-analytics/)
 - [PostHog Analytics](/docs/features/posthog-analytics/)
 - [Cookie Consent](/docs/features/cookie-consent/)
+
+## See also
+
+- [[Analytics]]
+- [[Google Analytics]]
+- [[PostHog Analytics]]

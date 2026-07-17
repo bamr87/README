@@ -1,5 +1,14 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-10-26 19:20:20+00:00
+description: 'A reusable template for documenting a new Zer0-Mistakes feature: overview,
+  configuration, usage, developer notes, and links to related material.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: feature-documentation-template.md
+tags:
+- templates
 title: Feature Documentation Template
 ---
 # Feature Documentation Template
@@ -31,14 +40,14 @@ Brief description of what this feature does and why it was added.
 
 ### Files Added
 
-```
+```text
 path/to/new/file.html - Description
 path/to/another/file.css - Description
 ```
 
 ### Files Modified
 
-```
+```text
 existing/file.html - Changes made
 another/file.yml - Configuration updates
 ```

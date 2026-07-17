@@ -4,11 +4,12 @@ categories:
 - jekyll
 description: How to use front matter for Jekyll pages, posts, and collections.
 difficulty: beginner
-estimated_time: 10 minutes
-lastmod: 2025-12-20 22:15:46.744000+00:00
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/front-matter/
 prerequisites: []
+preview: /images/previews/front-matter.png
 sidebar:
   nav: docs
 source_file: front-matter.md
@@ -16,7 +17,6 @@ tags:
 - front-matter
 - yaml
 title: Front Matter
-updated: 2025-12-20
 ---
 # Front Matter
 
@@ -50,7 +50,7 @@ layout: default          # Required: Template to use from _layouts/
 ```yaml
 ---
 title: "Post Title"
-layout: journals
+layout: article
 date: 2025-01-15         # Required for posts: Publication date
 ---
 ```
@@ -63,7 +63,7 @@ date: 2025-01-15         # Required for posts: Publication date
 ---
 description: "A brief description for search engines (150-160 chars)"
 author: "Your Name"
-lastmod: 2025-01-20      # Last modified date
+lastmod: 2026-06-14T00:00:00.000Z
 keywords:
   primary: ["keyword1", "keyword2"]
   secondary: ["keyword3"]
@@ -89,7 +89,7 @@ permalink: /custom-url/   # Override default URL
 
 ```yaml
 ---
-preview: /images/preview.png    # Social sharing image
+preview: /images/previews/front-matter.png
 toc: true                       # Show table of contents
 comments: true                  # Enable comments (if configured)
 sidebar:
@@ -116,11 +116,11 @@ Available layouts in Zer0-Mistakes:
 ```yaml
 ---
 difficulty: beginner          # beginner, intermediate, advanced
-estimated_time: "10 minutes"
+estimated_reading_time: "10 minutes"
 prerequisites:
     - Docker installed
     - Basic Jekyll knowledge
-updated: 2025-01-15
+lastmod: 2026-06-14T00:00:00.000Z
 ---
 ```
 
@@ -129,7 +129,7 @@ updated: 2025-01-15
 ```yaml
 ---
 excerpt: "Custom excerpt for listings"
-preview: /images/post-preview.png
+preview: /images/previews/front-matter.png
 featured: true               # Feature on homepage
 ---
 ```
@@ -146,6 +146,7 @@ sidebar:
 ```
 
 Available navigation files:
+
 - `main` - Primary site navigation
 - `docs` - Documentation sidebar
 - `quickstart` - Quick start guide
@@ -167,10 +168,10 @@ tags:
     - docker
 permalink: /docs/installation/
 difficulty: beginner
-estimated_time: "10 minutes"
+estimated_reading_time: "10 minutes"
 prerequisites:
     - Docker Desktop
-updated: 2025-01-15
+lastmod: 2026-06-14T00:00:00.000Z
 sidebar:
     nav: docs
 ---
@@ -182,9 +183,9 @@ sidebar:
 ---
 title: "Getting Started with Jekyll"
 description: "Learn the basics of Jekyll static site generation"
-layout: journals
+layout: article
 date: 2025-01-15
-lastmod: 2025-01-20
+lastmod: 2026-06-14T00:00:00.000Z
 author: "Amr"
 categories:
     - tutorials
@@ -192,7 +193,7 @@ categories:
 tags:
     - jekyll
     - getting-started
-preview: /images/jekyll-tutorial.png
+preview: /images/previews/front-matter.png
 comments: true
 ---
 ```
@@ -200,5 +201,12 @@ comments: true
 ## Related
 
 - [Jekyll Guide](/docs/jekyll/)
-- [Jekyll Configuration](/docs/jekyll/jekyll-config/)
+- [Jekyll Configuration](/docs/jekyll/)
 - [Liquid Templating](/docs/liquid/)
+
+## See also
+
+- [[Jekyll]]
+- [[Liquid]]
+- [[SEO]]
+- [[Customization]]

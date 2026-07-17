@@ -5,10 +5,12 @@ categories:
 description: How third-party CSS and JavaScript are bundled under assets/vendor for
   GitHub Pages and how to refresh them.
 difficulty: intermediate
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-04-18 19:29:54+00:00
 layout: default
 permalink: /docs/development/vendor-assets/
 prerequisites: []
+preview: /images/previews/vendor-assets.png
 sidebar:
   nav: docs
 source_file: vendor-assets.md
@@ -63,3 +65,9 @@ After upgrading versions, update `package.json` / lockfile for Mermaid or the ma
 - `_includes/components/js-cdn.html` — jQuery, Bootstrap bundle
 - `_includes/components/mermaid.html` — Mermaid + Font Awesome (when `mermaid: true`)
 - `_config.yml` — `mermaid.src` points at the local `mermaid.min.js` path
+
+## See also
+
+- [[Development]]
+- [[Bootstrap Integration]]
+- [[Dependency Updates]]

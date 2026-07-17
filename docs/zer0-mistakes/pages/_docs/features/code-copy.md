@@ -5,9 +5,11 @@ categories:
 description: One-click copy functionality for code blocks with visual feedback and
   clipboard API integration.
 difficulty: beginner
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/code-copy/
+preview: /images/previews/code-copy-button.png
 sidebar:
   nav: docs
 source_file: code-copy.md
@@ -21,6 +23,10 @@ title: Code Copy Button
 # Code Copy Button
 
 Automatic copy buttons on all code blocks for easy clipboard copying.
+
+![A highlighted JavaScript code block with a "Copy" button in its top-right corner, as rendered across the docs](/assets/images/docs/features/code-copy.png)
+
+The button is injected automatically into every fenced code block — there's no front matter to set and nothing to import. Hover a block and click **Copy** to put its contents on the clipboard, with a brief "Copied!" confirmation.
 
 ## Overview
 
@@ -262,3 +268,8 @@ if (lang) {
 
 - [Code Highlighting](/docs/jekyll/code-highlighting/)
 - [Mermaid Diagrams](/docs/features/mermaid-diagrams/)
+
+## See also
+
+- [[Features]]
+- [[Code Highlighting]]

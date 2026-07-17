@@ -51,33 +51,21 @@
   },
   "rollups": {
     "categories": {
-      "api": 3,
-      "architecture": 1,
-      "development": 3,
-      "misc": 1,
-      "setup": 10,
-      "user-guides": 2
+      "bashcrawl": 36
     },
     "code_languages": [
       "bash",
       "plaintext",
-      "markdown",
-      "text"
-    ],
-    "indexed_documents": 20,
-    "top_tags": [
-      "api",
-      "testing",
-      "setup",
+      "json",
+      "yaml",
       "python",
-      "development",
-      "docker",
-      "user-guides",
-      "architecture",
-      "documentation",
-      "javascript"
+      "text",
+      "markdown",
+      "gitignore"
     ],
-    "total_words": 18674
+    "indexed_documents": 36,
+    "top_tags": [],
+    "total_words": 55242
   },
   "schema_version": "1.0",
   "signals": {

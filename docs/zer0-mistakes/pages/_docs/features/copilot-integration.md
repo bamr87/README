@@ -5,9 +5,11 @@ categories:
 description: Comprehensive AI development assistance with structured instructions
   for maximum productivity with the Zer0-Mistakes theme.
 difficulty: beginner
-estimated_time: 10 minutes
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/copilot-integration/
+preview: /images/previews/github-copilot-integration.png
 sidebar:
   nav: docs
 source_file: copilot-integration.md
@@ -46,16 +48,27 @@ This file provides:
 
 ### File-Specific Instructions
 
-Located in `.github/instructions/`:
+Located in `.github/instructions/`. Each file declares an `applyTo:` glob in
+its front matter; this is a representative subset (run
+`ls .github/instructions/` for the full list):
 
-| File | Applies To | Purpose |
+| File | Applies To (`applyTo:`) | Purpose |
 |------|------------|---------|
 | `layouts.instructions.md` | `_layouts/**` | Layout development |
 | `includes.instructions.md` | `_includes/**` | Component patterns |
 | `scripts.instructions.md` | `scripts/**` | Shell scripting |
 | `testing.instructions.md` | `test/**` | Test development |
-| `version-control.instructions.md` | Release files | Version management |
-| `documentation.instructions.md` | docs/** | Documentation style |
+| `version-control.instructions.md` | `CHANGELOG.md`, `**/version.*`, `**/*.gemspec`, … | Version management |
+| `documentation.instructions.md` | `docs/**`, `pages/_docs/**` | Documentation style |
+| `sass.instructions.md` | `_sass/**` | SCSS conventions |
+| `obsidian.instructions.md` | Obsidian vault content | Wiki-links and callouts |
+
+> [!NOTE]
+> The `.github/instructions/` directory ships several more file-scoped rule sets
+> (for example `ai-chat`, `backlog`, `content-review`, `features`, `install`).
+> The repo also carries a cross-tool entry point at `AGENTS.md` and reusable
+> multi-step workflows under `.github/prompts/` (mirrored as Cursor commands in
+> `.cursor/commands/`).
 
 ## How It Works
 
@@ -66,7 +79,9 @@ When you open a file, Copilot automatically loads relevant instructions based on
 ```yaml
 ---
 applyTo: "_layouts/**"
-description: "Layout development guidelines"
+description: "Jekyll layout development guidelines for Zer0-Mistakes theme"
+date: 2026-05-18T12:00:00.000Z
+lastmod: 2026-05-18T12:00:00.000Z
 ---
 ```
 
@@ -85,7 +100,7 @@ Copilot uses the instructions to provide:
 
 When working on layouts:
 
-```
+```text
 1. Open _layouts/default.html
 2. Copilot loads layouts.instructions.md
 3. Suggestions follow theme patterns
@@ -98,7 +113,7 @@ Copilot understands theme conventions:
 ```liquid
 {% raw %}{% comment %}
 Copilot suggests proper include patterns:
-{% include navigation/sidebar.html %}
+{% include navigation/sidebar-left.html %}
 
 With correct parameters:
 {% include components/post-card.html post=post %}
@@ -116,8 +131,8 @@ docker-compose up
 # Testing
 ./test/test_runner.sh
 
-# Release
-./scripts/release.sh
+# Release (canonical entry point; --dry-run previews)
+./scripts/bin/release patch
 ```
 
 ## Best Practices
@@ -149,6 +164,32 @@ Always verify Copilot suggestions:
 - Check for theme consistency
 - Verify Bootstrap class usage
 - Ensure accessibility compliance
+
+## How to verify
+
+Confirm the instruction files are present and that each declares an `applyTo`
+glob. From the repository root:
+
+```bash
+# Main instructions exist
+ls .github/copilot-instructions.md AGENTS.md
+
+# List every file-scoped rule set
+ls .github/instructions/
+
+# Confirm each instruction file declares an applyTo glob
+grep -m1 "applyTo:" .github/instructions/layouts.instructions.md
+```
+
+Expected output for the last command:
+
+```text
+applyTo: "_layouts/**"
+```
+
+Open `_layouts/default.html` in an editor with GitHub Copilot enabled — the
+matching `layouts.instructions.md` glob (`_layouts/**`) loads automatically, and
+suggestions follow the theme's include and layout patterns.
 
 ## Configuration
 
@@ -198,3 +239,8 @@ Recommended settings:
 - [Development Documentation](/docs/development/documentation/)
 - [Contributing Guide](https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBUTING.md)
 - [Scripts Guide](/docs/development/scripts/)
+
+## See also
+
+- [[Features]]
+- [[Development]]

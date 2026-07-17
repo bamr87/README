@@ -29,9 +29,9 @@ Full-stack application platform with infrastructure, testing, and deployment too
 
 Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(36 documents)*
 
-### [🚀 zer0-mistakes](zer0-mistakes/README.md)
+### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(240 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(435 documents)*
 
 ### [IT-Journey](it-journey/README.md)
 

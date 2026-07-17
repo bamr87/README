@@ -642,7 +642,7 @@ python3 -m scripts.context_engine status           # freshness manifest
 python3 -m scripts.context_engine projects         # fleet roster
 ```
 
-**AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when `ANTHROPIC_API_KEY` is set, else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API.
+**AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API.
 
 **Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, root README span, and `docs/index.md`. All generated — never hand-edit.
 

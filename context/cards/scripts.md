@@ -9,16 +9,9 @@ generated_by: context_engine 1.0.0
 enrichment: heuristic
 source_fingerprint: 583bc229e309e2b6
 tags:
-  - api
   - automation
-  - azure
   - bash
-  - docker
-  - javascript
-  - kubernetes
   - python
-  - setup
-  - testing
 ---
 
 # scripts directory
@@ -37,8 +30,8 @@ tags:
 ## Signals
 
 - no governance signal files detected in the corpus
-- ~10,217 words across 8 indexed documents
-- code samples in: bash, plaintext
+- ~16,570 words across 14 indexed documents
+- code samples in: bash, plaintext, yaml
 
 ## Structure
 

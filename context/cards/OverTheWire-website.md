@@ -30,6 +30,8 @@ tags:
 ## Signals
 
 - no governance signal files detected in the corpus
+- ~15,901 words across 232 indexed documents
+- code samples in: plaintext
 
 ## Structure
 

@@ -51,24 +51,16 @@
   },
   "rollups": {
     "categories": {
-      "setup": 8
+      "scripts": 14
     },
     "code_languages": [
       "bash",
-      "plaintext"
+      "plaintext",
+      "yaml"
     ],
-    "indexed_documents": 8,
-    "top_tags": [
-      "docker",
-      "javascript",
-      "setup",
-      "python",
-      "kubernetes",
-      "testing",
-      "api",
-      "azure"
-    ],
-    "total_words": 10217
+    "indexed_documents": 14,
+    "top_tags": [],
+    "total_words": 16570
   },
   "schema_version": "1.0",
   "signals": {

@@ -2,12 +2,14 @@
 categories:
 - docs
 - features
-description: Modern sidebar with Intersection Observer scroll spy, smooth scrolling,
-  keyboard shortcuts, and swipe gestures.
+description: Collection-aware sidebar with auto, collection, categories, tags, and
+  tree modes plus scroll spy, keyboard shortcuts, and swipe gestures.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-07-01 00:00:00+00:00
 layout: default
 permalink: /docs/features/sidebar-navigation/
+preview: /images/previews/sidebar-navigation-system.png
 sidebar:
   nav: docs
 source_file: sidebar-navigation.md
@@ -21,6 +23,10 @@ title: Enhanced Sidebar Navigation System
 # Enhanced Sidebar Navigation System
 
 The Zer0-Mistakes theme includes a modern sidebar navigation system with performance-optimized scroll tracking and accessibility features.
+
+![A documentation page showing the collapsible "Browse docs" sidebar on the left, the article in the center, and an "On this page" table of contents on the right](/assets/images/docs/features/docs-layout.png)
+
+The **Browse docs** sidebar on the left is the enhanced navigation system; the **On this page** panel on the right is the [table of contents](/docs/features/toc/).
 
 ## Overview
 
@@ -36,16 +42,121 @@ Key features:
 
 ### Left Sidebar
 
-Site-wide navigation with collapsible categories:
+Site-wide navigation panel rendered by the default layout:
 
 ```liquid
 {% raw %}{% include navigation/sidebar-left.html %}{% endraw %}
 ```
 
-Features:
-- Folder-based navigation
-- Category organization
-- Responsive collapse on mobile
+The panel resolves its content through two shared includes — used by the
+desktop sidebar, the mobile offcanvas, and the optional unified drawer, so
+they can never drift apart:
+
+| Include | Role |
+|---|---|
+| `navigation/sidebar-config.html` | Resolves the effective mode, title, and icon for the current page |
+| `navigation/sidebar-nav.html` | Renders the resolved mode |
+| `navigation/sidebar-folders.html` | `collection` mode — live folder tree of a collection |
+| `navigation/sidebar-categories.html` | `categories` / `tags` modes — posts grouped by taxonomy |
+| `navigation/nav-tree.html` | Curated `_data/navigation/*.yml` trees |
+
+## Navigation Modes
+
+Set the mode with the `sidebar.nav` front matter key (or a collection/site
+default — see [Configuration](#configuration)):
+
+| Mode | Renders | Best for |
+|---|---|---|
+| `auto` | The best mode for the page's collection (see below) | Zero-config defaults |
+| `collection` | Live, collapsible folder tree of the page's collection documents | Notes, notebooks, any growing collection |
+| `categories` | Posts grouped by category, with post counts | Blogs organized by category |
+| `tags` | Posts grouped by tag, with post counts | Tag-driven blogs |
+| any other value | `_data/navigation/<value>.yml` rendered as a curated tree | Hand-ordered docs (e.g. `nav: docs`) |
+
+### How `auto` resolves
+
+`auto` picks the most useful mode for the page, based on its collection:
+
+1. **Curated tree wins** — if `_data/navigation/<collection>.yml` exists
+   (e.g. `docs.yml` for the `docs` collection), it is rendered with
+   `nav-tree.html`.
+2. **Collection tree** — otherwise, a page inside a collection gets the live
+   `collection` folder tree.
+3. **Categories** — pages outside any collection fall back to post
+   categories (when the site has posts with categories).
+
+The left column is only rendered when the resolved mode actually has
+content, so a page never reserves an empty sidebar column.
+
+### Collection mode options
+
+`collection` mode groups the collection's documents by sub-folder into
+collapsible sections. A folder's `index.md` becomes the folder link itself;
+folder names are humanized (`getting-started` → "Getting started"); and the
+group containing the current page starts expanded. Options (all optional):
+
+```yaml
+sidebar:
+  nav: collection
+  collection: docs   # list a different collection than the page's own
+  sort: title        # path (default) | title | date
+  reverse: true      # reverse the sort (e.g. newest-first with sort: date)
+  expand: true       # expand every folder group (default: active group only)
+```
+
+Hide an individual document from the tree with `sidebar_exclude: true` in
+its front matter.
+
+### Categories / tags mode options
+
+```yaml
+sidebar:
+  nav: categories    # or tags
+  limit: 10          # max posts listed per term (default: all)
+```
+
+Note: Jekyll only indexes **posts** in `site.categories` / `site.tags`, so
+these modes list posts, not collection documents.
+
+## Configuration
+
+Settings resolve most-specific-first: **page front matter → collection
+metadata → site config → theme defaults**.
+
+### Page front matter
+
+```yaml
+sidebar:
+  nav: docs            # mode or _data/navigation file (see table above)
+  title: "Guides"      # panel heading override
+  icon: bi-book        # Bootstrap Icons class for the heading
+sidebar: false         # or: hide the sidebar (and TOC) entirely
+```
+
+### Collection metadata (`_config.yml`)
+
+```yaml
+collections:
+  notes:
+    output: true
+    title: Notes               # heading for the collection tree
+    icon: bi-journal-richtext  # Bootstrap Icons class
+    sidebar:
+      nav: collection          # default mode for pages in this collection
+```
+
+### Site defaults (`_config.yml`)
+
+```yaml
+sidebar:
+  title: "Browse docs"         # default panel heading
+  icon: "bi-journal-bookmark"  # default heading icon
+  nav: auto                    # optional site-wide fallback mode
+```
+
+Front-matter defaults remain the conventional way to assign modes per
+content path (this theme sets `nav: auto` for docs/about/quickstart and
+notes/notebooks in its own `_config.yml` `defaults:` block).
 
 ### Right Sidebar (Table of Contents)
 
@@ -56,6 +167,7 @@ Page-specific heading navigation:
 ```
 
 Features:
+
 - Auto-generated from headings
 - Scroll spy highlighting
 - Floating action button on mobile
@@ -288,3 +400,16 @@ Using Bootstrap Icons throughout:
 - [Keyboard Navigation](/docs/features/keyboard-navigation/)
 - [Mobile TOC Button](/docs/features/mobile-toc/)
 - [Table of Contents](/docs/features/toc/)
+
+## Technical Reference
+
+For implementation details (scroll spy, swipe gestures, keyboard shortcuts, ARIA improvements):
+
+- [Navigation Redesign → docs/implementation/navigation-redesign.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/navigation-redesign.md)
+- [Sidebar improvements → docs/implementation/feature-change-log.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/feature-change-log.md#sidebar-uiux-improvements-december-2025)
+
+## See also
+
+- [[Features]]
+- [[Breadcrumbs Navigation]]
+- [[Mobile TOC Floating Action Button]]

@@ -6,10 +6,30 @@ icon: bi-gear
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/config/
+preview: /images/previews/configuration-utility.png
 sidebar: false
 source_file: config.md
-title: Config
+title: Wraps the copy in Liquid raw markers so config comments that mention
 ---
+{% comment %}
+  Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML
+  tab and the hidden copy-source element use this capture, so the live
+  PostHog key (and any other secret-shaped line) never reaches the DOM in
+  either place. Pure Liquid line filter (works on GitHub Pages where the
+  sanitize_config_yaml plugin filter is a silent no-op) + the plugin filter
+  as defense-in-depth on plugin-enabled builds. cfg_nl captures exactly one
+  newline — keep both tags flush-left. Fail-closed: if the split degraded,
+  the whole config matches the probe and renders as one redaction marker.
+  Lines are HTML-escaped; copy buttons read textContent, which decodes
+  entities back to the original characters.
+{% endcomment %}
+{% capture cfg_full_raw %}{% include_relative _config.yml %}{% endcapture %}
+{% capture cfg_nl %}
+{% endcapture %}{% assign cfg_lines = cfg_full_raw | split: cfg_nl %}
+{% capture cfg_sanitized %}{% for cfg_line in cfg_lines %}{% assign cfg_probe = cfg_line | downcase %}{% if cfg_probe contains 'api_key' or cfg_probe contains 'secret' or cfg_probe contains 'password' or cfg_probe contains 'token' or cfg_probe contains 'phc_' %}# [redacted]{% else %}{{ cfg_line | sanitize_config_yaml | escape }}{% endif %}
+{% endfor %}{% endcapture %}
+
+
 <!-- Quick-reference cards -->
 <div class="row g-3 mb-4">
   <div class="col-6 col-lg-3">
@@ -94,7 +114,7 @@ title: Config
         <i class="bi bi-clipboard"></i> Copy
       </button>
     </div>
-    <pre class="bg-dark text-light p-3 rounded" style="max-height:600px;overflow:auto;font-size:.8rem"><code id="cfg-raw-yaml">{% include_relative _config.yml %}</code></pre>
+    <pre class="bg-dark text-light p-3 rounded" style="max-height:600px;overflow:auto;font-size:.8rem"><code id="cfg-raw-yaml">{{ cfg_sanitized }}</code></pre>
   </div>
 
   <!-- ═══════ Quick Actions Tab ═══════ -->
@@ -111,16 +131,21 @@ title: Config
             <h6 class="mt-3"><i class="bi bi-terminal me-1"></i> Bash</h6>
 ```bash
 cd ~/github/{{ site.local_repo }}
-cp {{ page.config-file }} {{ page.config-dir }}/{{ page.config-file }}
+# Wraps the copy in Liquid raw markers so config comments that mention
+# Liquid tags render literally (scripts/bin/validate checks for drift).
+# The awk string-splits keep this page itself Liquid-safe.
+awk 'BEGIN{print "{" "% raw %" "}"} {print} END{print "{" "% endraw %" "}"}' \
+  {{ page.config-file }} > {{ page.config-dir }}/{{ page.config-file }}
 ```
 
 <h6 class="mt-3"><i class="bi bi-windows me-1"></i> PowerShell</h6>
 
 ```powershell
 cd ~/github/{{ site.local_repo }}
-cp {{ page.config-file }} {{ page.config-dir }}/config-utf16.txt
-Get-Content {{ page.config-dir }}/config-utf16.txt |
-  Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }}
+$raw = "{" + "% raw %" + "}"; $end = "{" + "% endraw %" + "}"
+$body = Get-Content {{ page.config-file }} -Raw
+Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }} `
+  -Value ($raw + "`n" + $body + $end + "`n")
 ```
           </div>
         </div>
@@ -218,8 +243,9 @@ Get-Content {{ page.config-dir }}/config-utf16.txt |
   </div>
 </div>
 
-<!-- Hidden full YAML used by the viewer's "Copy Full Config" button -->
-<pre id="cfg-full-yaml" class="d-none">{% include_relative _config.yml %}</pre>
+<!-- Hidden full YAML used by the viewer's "Copy Full Config" button.
+     Same sanitized render as the Raw-YAML tab (see capture at page top). -->
+<pre id="cfg-full-yaml" class="d-none">{{ cfg_sanitized }}</pre>
 
 <!-- Config Utility JS (must load after DOM) -->
 <script src="{{ '/assets/js/config-utility.js' | relative_url }}" defer></script>

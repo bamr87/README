@@ -1,5 +1,6 @@
 ---
 description: Quick reference notes, cheatsheets, and command snippets for developers
+lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /notes/
 source_file: notes.md

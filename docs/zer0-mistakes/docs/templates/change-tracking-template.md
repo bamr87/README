@@ -1,5 +1,14 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-10-26 19:20:20+00:00
+description: 'A reusable template for tracking a single change: its identifier, type,
+  rationale, scope, and verification, when documenting work in Zer0-Mistakes.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: change-tracking-template.md
+tags:
+- templates
 title: Change Tracking Template
 ---
 # Change Tracking Template
@@ -34,7 +43,7 @@ Detailed description of how the change was implemented.
 
 ### Files Affected
 
-```
+```text
 path/to/file1.ext - Description of changes
 path/to/file2.ext - Description of changes
 path/to/file3.ext - Description of changes

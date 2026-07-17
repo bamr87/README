@@ -52,12 +52,7 @@
   },
   "rollups": {
     "categories": {
-      "api": 36,
-      "architecture": 4,
-      "development": 9,
-      "misc": 15,
-      "setup": 232,
-      "user-guides": 5
+      "barodybroject": 295
     },
     "code_languages": [
       "bash",
@@ -69,24 +64,25 @@
       "html",
       "javascript"
     ],
-    "indexed_documents": 301,
+    "indexed_documents": 295,
     "top_tags": [
-      "docker",
-      "python",
-      "api",
-      "setup",
-      "database",
-      "testing",
-      "azure",
-      "javascript",
-      "aws",
-      "development",
-      "documentation",
-      "user-guides",
-      "architecture",
-      "kubernetes"
+      "index",
+      "agricultural technology",
+      "corporate betrayal",
+      "corporate ethics",
+      "diasporic experience",
+      "erp systems",
+      "geopolitical subterfuge",
+      "historical inequities.",
+      "identity politics",
+      "institutional exclusion",
+      "labor exploitation",
+      "modern capitalism",
+      "post-colonialism",
+      "racial marginalization",
+      "socio-economic marginalization"
     ],
-    "total_words": 230155
+    "total_words": 231244
   },
   "schema_version": "1.0",
   "signals": {

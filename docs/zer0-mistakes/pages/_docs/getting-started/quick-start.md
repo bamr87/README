@@ -5,9 +5,11 @@ categories:
 description: Multiple installation methods for the Zer0-Mistakes Jekyll theme - from
   AI wizard to manual setup.
 difficulty: beginner
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-16 00:00:00+00:00
 layout: default
 permalink: /docs/getting-started/quick-start/
+preview: /images/previews/quick-start-guide.png
 sidebar:
   nav: docs
 source_file: quick-start.md
@@ -30,7 +32,7 @@ This guide covers all installation methods for the Zer0-Mistakes Jekyll theme.
 | **A** | AI Install Wizard | Creating a new site (recommended) |
 | **B** | GitHub Template Repo | One-click copy of the entire repo |
 | **C** | GitHub Codespaces | Zero-install cloud development |
-| **D** | Fork/Clone | Theme development & customization |
+| **D** | Fork/Clone | Personal site & theme customization |
 | **E** | Remote Theme | GitHub Pages without copying files |
 | **F** | Ruby Gem | Traditional Jekyll workflow |
 
@@ -39,10 +41,12 @@ This guide covers all installation methods for the Zer0-Mistakes Jekyll theme.
 ## Path A — AI Install Wizard (recommended)
 
 ### Prerequisites
+
 - Docker Desktop
 - Git (optional, but recommended)
 
 ### 1) Full install (default)
+
 Create a new folder and run the installer:
 
 ```bash
@@ -51,22 +55,67 @@ cd my-site
 curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.sh | bash -s -- --full
 ```
 
+A successful run ends with a summary and your next steps:
+
+```text
+[SUCCESS] Installation completed successfully!
+[INFO] Installation mode: full
+[INFO] Next steps:
+  1. cd my-site
+  2. Review and customize _config.yml
+  3. Run 'docker-compose up' or 'bundle install && bundle exec jekyll serve'
+  4. Visit http://localhost:4000 to see your site
+```
+
+The full install lays down the complete theme (~500 files: layouts, includes,
+Sass, assets, Docker config). The `--minimal` variant writes only the handful of
+config files below.
+
 Notes:
+
 - `--full` is the default; it installs the full theme structure, Docker config, and development overrides.
 - The installer runs in "remote mode" when it's executed via `curl` and downloads the theme files automatically.
 - The installer creates a project-local `INSTALLATION.md` inside the generated site folder.
 
 ### 2) Start the dev server (Docker)
+
 From inside your generated site folder:
 
 ```bash
-docker-compose up
+docker compose up        # or: docker-compose up (v1 syntax)
 ```
 
-Then open:
-- `http://localhost:4000`
+The first run builds the image and installs gems, so it takes a few minutes.
+When it's ready you'll see Jekyll's server line:
+
+```text
+       Jekyll Feed: Generating feed for posts
+                    done in 4.2 seconds.
+ Auto-regeneration: enabled for '/site'
+    Server address: http://0.0.0.0:4000
+  Server running... press ctrl-c to stop.
+```
+
+Then open **`http://localhost:4000`** — your site is live:
+
+![Zer0-Mistakes site running at localhost:4000](/assets/images/quickstart/site-running.png)
+
+#### Verify it worked
+
+- The homepage renders with the top navigation bar and a "Get Started" hero.
+- Editing any file under `pages/` and saving **live-reloads** the browser.
+- A quick build check (run in a second terminal) should exit cleanly:
+
+  ```bash
+  docker compose exec -T jekyll bundle exec jekyll build \
+    --config '_config.yml,_config_dev.yml'
+  ```
+
+> **Tip:** `docker compose` (v2, a space) and `docker-compose` (v1, a hyphen)
+> are interchangeable here. Use whichever your Docker install provides.
 
 ### 3) Minimal install (optional)
+
 If you want a barebones starting point:
 
 ```bash
@@ -128,28 +177,39 @@ Develop entirely in the cloud — no local Docker or Ruby required.
 
 ---
 
-## Path D — Fork/Clone (theme development)
+## Path D — Fork/Clone (personal site)
+
+Fork into `<your-username>.github.io` for a GitHub Pages user site that works out of the box.
 
 ### Prerequisites
-- Docker Desktop
 
-### 1) Clone (or fork) the repo
+- Docker Desktop
+- No existing `<your-username>.github.io` repository (one free user site per GitHub account)
+
+### 1) Fork the repo
+
+1. Go to [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes) → **Fork**
+2. Set **Repository name** to `<your-username>.github.io`
+3. Enable **Settings → Pages → Deploy from branch: `main`**
+4. Your site goes live at `https://<your-username>.github.io`
+
+### 2) Clone and configure locally
 
 ```bash
-git clone https://github.com/bamr87/zer0-mistakes.git
-cd zer0-mistakes
+git clone https://github.com/<your-username>/<your-username>.github.io.git
+cd <your-username>.github.io
+./scripts/fork-cleanup.sh   # interactive config wizard
 ```
 
-### 2) Start development (Docker)
+### 3) Start development (Docker)
 
 ```bash
 docker-compose up
 ```
 
-This uses both configs:
-- `_config.yml,_config_dev.yml`
+This uses both configs: `_config.yml,_config_dev.yml`
 
-### 3) Useful Docker commands
+### 4) Useful Docker commands
 
 ```bash
 # Rebuild when dependencies change
@@ -164,6 +224,8 @@ docker-compose stop
 # Remove containers + network
 docker-compose down
 ```
+
+See [docs/FORKING.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md) for the full fork → configure → personalize workflow.
 
 ---
 
@@ -180,6 +242,7 @@ plugins:
 ```
 
 Notes:
+
 - GitHub Pages has a plugin whitelist; keep custom plugins to a minimum.
 - Local development via Docker is usually simpler than trying to match GitHub Pages Ruby/Jekyll versions by hand.
 
@@ -215,31 +278,41 @@ bundle exec jekyll serve --config "_config.yml,_config_dev.yml"
 Most customization starts in `_config.yml` (production) and `_config_dev.yml` (development overrides).
 
 ### 1) Update your site identity (`_config.yml`)
+
 Common fields to change:
+
 - `title`, `subtitle`, `description`
 - `url` and `baseurl`
 - `author.*` / `name` / `email`
 - `logo` / `teaser` / `og_image`
 
 Important:
+
 - `_config.yml` changes are **not hot-reloaded** by Jekyll; restart your dev server after edits.
 
 ### 2) Disable or replace analytics (`_config.yml`)
+
 This repo ships with analytics settings (Google Analytics + PostHog). For your own site:
+
 - set `google_analytics: null` (or your own ID)
 - for PostHog, either set `posthog.enabled: false` or replace `posthog.api_key` + `posthog.api_host`
 
 In development, analytics are already disabled in `_config_dev.yml`.
 
 ### 3) Customize navigation
+
 Navigation data lives under:
+
 - `_data/navigation/`
 
 If you want to change menus/sidebars, start there, then check:
+
 - `_includes/navigation/`
 
 ### 4) Add/replace content
+
 Typical content locations:
+
 - `index.html` / `index.md` (homepage)
 - `pages/` (site pages)
 - `pages/_posts/` (blog posts, if you use posts)
@@ -250,6 +323,7 @@ Typical content locations:
 ## Troubleshooting
 
 ### Port already in use
+
 If `4000` is taken, change the host port mapping in `docker-compose.yml`:
 
 ```yaml
@@ -258,12 +332,15 @@ ports:
 ```
 
 ### Apple Silicon (M-series Macs)
+
 This repo's Docker config uses `platform: linux/amd64` for compatibility. If Docker warns, it's usually safe to proceed.
 
 ### Theme not found / remote theme issues
+
 For local Docker development, `_config_dev.yml` disables `remote_theme` to avoid requiring GitHub theme fetches.
 
 ### Config changes don't show up
+
 - `_config.yml` changes require restarting the Jekyll server.
 - Try:
 
@@ -280,3 +357,16 @@ docker-compose up
 - [Front Matter](/docs/front-matter/) — Configure page metadata
 - [Features](/docs/features/) — Enable Mermaid diagrams, comments, analytics
 - [Deployment](/docs/deployment/) — Publish your site
+
+## Technical Reference
+
+For contributor-level details (installer architecture, profile system, deploy target modules):
+
+- [Installation Guide → docs/installation/index.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/index.md)
+
+## See also
+
+- [[Getting Started]]
+- [[Installation]]
+- [[Docker]]
+- [[Customization]]

@@ -3,11 +3,11 @@ author: null
 categories: How-To
 date: 2023-03-09 00:15:05.278000+00:00
 description: 'How to Add a floating button that will scroll to the top of a page? '
-draft: draft
+draft: true
 excerpt: Steps to add a floating back-to-top button to a website.
 lastmod: 2025-12-20 22:15:46.273000+00:00
 permalink: /about/features/add-floating-back-to-top-button/
-preview: null
+preview: /images/previews/add-floating-back-to-top-button.png
 snippet: null
 source_file: add-floating-back-to-top-button.md
 sub-title: null

@@ -4,11 +4,12 @@ categories:
 - troubleshooting
 description: Common setup and build issues when running Zer0-Mistakes.
 difficulty: beginner
-estimated_time: 10 minutes
-lastmod: 2025-12-20 22:15:46.061000+00:00
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-14 00:00:00+00:00
 layout: default
 permalink: /docs/troubleshooting/
 prerequisites: []
+preview: /images/previews/troubleshooting.png
 sidebar:
   nav: docs
 source_file: troubleshooting.md
@@ -17,7 +18,6 @@ tags:
 - jekyll
 - docker
 title: Troubleshooting
-updated: 2025-12-20
 ---
 # Troubleshooting
 
@@ -65,6 +65,7 @@ docker-compose run -p 4001:4000 jekyll
 **Symptoms:** File changes take a long time to reflect.
 
 **Solutions:**
+
 - Enable "Use Rosetta for x86/amd64 emulation" in Docker Desktop settings
 - Use `docker-compose.yml` which includes performance optimizations
 
@@ -133,7 +134,7 @@ Ensure the layout exists in `_layouts/`:
 
 ```yaml
 ---
-layout: journals    # Must match a file in _layouts/
+layout: article    # Must match a file in _layouts/
 ---
 ```
 
@@ -171,4 +172,12 @@ docker-compose exec jekyll jekyll serve --config "_config.yml,_config_dev.yml"
 
 - [Installation Guide](/docs/installation/)
 - [Docker Guide](/docs/docker/)
-- [Jekyll Configuration](/docs/jekyll/jekyll-config/)
+- [Jekyll Configuration](/docs/jekyll/)
+
+## See also
+
+- [[Installation]]
+- [[Docker]]
+- [[Ruby]]
+- [[Jekyll]]
+- [[Obsidian Integration Troubleshooting]]

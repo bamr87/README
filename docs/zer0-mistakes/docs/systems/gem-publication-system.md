@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-09-28 22:17:52+00:00
+description: 'The gem publication system for jekyll-theme-zer0: scripted build, version
+  bump, changelog generation, VS Code integration, and RubyGems publishing.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: gem-publication-system.md
+tags:
+- systems
+- automation
 title: 🚀 Gem Publication System Documentation
 ---
 # 🚀 Gem Publication System Documentation
@@ -16,7 +26,7 @@ The new comprehensive script that handles the entire gem publication process:
 ./scripts/gem-publish.sh [patch|minor|major] [options]
 ```
 
-#### Key Features:
+#### Key Features
 
 - 📋 **Automatic Changelog Generation**: Analyzes commit history since last version
 - 🔢 **Semantic Versioning**: Handles patch, minor, and major version bumps
@@ -26,7 +36,7 @@ The new comprehensive script that handles the entire gem publication process:
 - 🏷️ **GitHub Releases**: Creates GitHub releases with assets
 - 🔄 **Git Integration**: Handles commits, tags, and repository synchronization
 
-#### Usage Examples:
+#### Usage Examples
 
 ```bash
 # Patch release (bug fixes)
@@ -65,7 +75,7 @@ New launch configurations in `.vscode/launch.json`:
 
 New tasks in `.vscode/tasks.json`:
 
-#### Gem Management Tasks:
+#### Gem Management Tasks
 
 - **🚀 Gem: Patch Release** - Full patch release workflow
 - **🚀 Gem: Minor Release** - Full minor release workflow

@@ -5,9 +5,12 @@ categories:
 description: GDPR/CCPA compliant cookie consent system with granular permissions and
   Bootstrap modal preferences.
 difficulty: intermediate
-estimated_time: 15 minutes
+estimated_reading_time: 15 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
+mermaid: true
 permalink: /docs/features/cookie-consent/
+preview: /images/previews/cookie-consent-management.png
 sidebar:
   nav: docs
 source_file: cookie-consent.md
@@ -22,6 +25,10 @@ title: Cookie Consent Management
 # Cookie Consent Management
 
 The Zer0-Mistakes theme includes a GDPR/CCPA compliant cookie consent system with granular permission controls.
+
+![The site with the cookie-consent banner pinned along the bottom — "We value your privacy" with Manage Cookies, Reject All, and Accept All actions](/assets/images/docs/features/cookie-consent.png)
+
+The banner appears until a visitor makes a choice; "Manage Cookies" opens a modal for granular analytics/marketing toggles. Consent gates analytics loading, so nothing tracks until the visitor opts in.
 
 ## Overview
 
@@ -261,3 +268,9 @@ categories:
 - [PostHog Analytics](/docs/features/posthog-analytics/)
 - [Privacy Policy](/privacy-policy/)
 - [Google Analytics](/docs/analytics/google-analytics/)
+
+## See also
+
+- [[Features]]
+- [[PostHog Analytics]]
+- [[Google Analytics]]

@@ -11,8 +11,13 @@ source_fingerprint: dd818354495728d6
 tags:
   - agents
   - ai
+  - featured
+  - learning
   - mcp
+  - memory
+  - productivity
   - prompts
+  - reflection
 ---
 
 # Agent Skills
@@ -32,6 +37,8 @@ tags:
 
 - has AGENTS.md operating manual
 - has a security policy
+- ~509,370 words across 712 indexed documents
+- code samples in: python, java, typescript, csharp, bash, plaintext, rust, markdown
 
 ## Structure
 

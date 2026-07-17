@@ -1,5 +1,15 @@
 ---
+author: bamr87
+categories:
+- docs
+date: 2025-11-16 17:04:56+00:00
+description: 'PostHog analytics in Zer0-Mistakes: privacy-first, consent-gated event
+  tracking with GDPR/CCPA compliance and a cookie banner, enabled in production.'
+lastmod: 2026-06-01 03:38:46+00:00
 source_file: posthog-analytics-integration.md
+tags:
+- implementation
+- changelog
 title: PostHog Analytics Integration
 ---
 # PostHog Analytics Integration
@@ -270,19 +280,19 @@ Update your privacy policy to include:
 
 ### Common Issues
 
-**Analytics not loading**
+#### Analytics not loading
 
 - Check `jekyll.environment` is set to "production"
 - Verify `site.posthog.enabled` is `true`
 - Ensure API key is correctly configured
 
-**Cookie banner not appearing**
+#### Cookie banner not appearing
 
 - Clear localStorage: `localStorage.removeItem('zer0-cookie-consent')`
 - Check browser console for JavaScript errors
 - Verify Bootstrap 5 is loaded
 
-**Events not tracking**
+#### Events not tracking
 
 - Check user has consented to analytics
 - Verify PostHog project is receiving data
@@ -343,3 +353,7 @@ For issues or questions about PostHog integration:
 ---
 
 _This integration provides a complete, privacy-compliant analytics solution for Jekyll sites with the flexibility to grow with your needs while respecting user privacy._
+
+---
+
+> **User guide**: For setup and configuration examples, see [PostHog Analytics](/docs/features/posthog-analytics/) in the user documentation.

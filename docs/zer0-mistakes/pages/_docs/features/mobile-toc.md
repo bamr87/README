@@ -5,9 +5,11 @@ categories:
 description: Redesigned mobile table of contents access with FAB pattern for better
   usability on touch devices.
 difficulty: beginner
-estimated_time: 5 minutes
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/mobile-toc/
+preview: /images/previews/mobile-toc-floating-action-button.png
 sidebar:
   nav: docs
 source_file: mobile-toc.md
@@ -21,6 +23,10 @@ title: Mobile TOC Floating Action Button
 # Mobile TOC Floating Action Button
 
 The Zer0-Mistakes theme features a redesigned mobile table of contents with a Floating Action Button (FAB) pattern.
+
+![A documentation page at a phone width, with floating action buttons stacked in the corners — the table-of-contents FAB, the back-to-top button, and the sidebar toggle](/assets/images/docs/features/mobile-toc.png)
+
+On narrow viewports the sidebar and table of contents collapse into tap-to-open offcanvas panels, reached from these FABs, so long pages stay readable on a phone.
 
 ## Overview
 
@@ -145,6 +151,7 @@ The button opens a Bootstrap offcanvas from the right:
 ### Screen Readers
 
 The button announces:
+
 1. "Open table of contents, button"
 2. On open: "Table of contents, dialog"
 
@@ -210,3 +217,9 @@ The button announces:
 - [Sidebar Navigation](/docs/features/sidebar-navigation/)
 - [Table of Contents](/docs/features/toc/)
 - [Keyboard Navigation](/docs/features/keyboard-navigation/)
+
+## See also
+
+- [[Features]]
+- [[Table of Contents]]
+- [[Sidebar Navigation System]]

@@ -12,6 +12,7 @@ This directory contains automation scripts for managing the `jekyll-theme-zer0` 
 scripts/
 ├── bin/                    # Entry point commands (use these!)
 │   ├── build              # Build gem without releasing
+│   ├── validate           # Preflight checks for local/CI validation
 │   ├── release            # Full release workflow
 │   └── test               # Run all test suites
 ├── lib/                   # Shared libraries (sourced, not executed)
@@ -21,9 +22,11 @@ scripts/
 │   ├── git.sh             # Git operations
 │   ├── changelog.sh       # Changelog generation
 │   ├── gem.sh             # Gem build/publish
-│   └── preview_generator.py  # Python preview image generator
+│   └── preview_generator.py  # Preview-image engine (Claude orchestrates; ZER0-004)
 ├── features/              # Feature-specific scripts
 │   ├── generate-preview-images     # AI preview image generator
+│   ├── pixelate-preview-images     # Shrink preview banners (pixelate + PNG-8)
+│   ├── pixelate_images.py          # Pure-stdlib pixelate/quantize engine
 │   ├── install-preview-generator   # Preview generator installer
 │   └── validate_preview_urls.py    # Preview URL validator
 ├── utils/                 # Utility scripts
@@ -43,6 +46,10 @@ scripts/
 # Build gem
 ./scripts/bin/build
 
+# Preflight validation
+./scripts/bin/validate --quick
+./scripts/bin/validate --start-docker
+
 # Full release workflow
 ./scripts/bin/release patch   # or minor/major
 
@@ -59,6 +66,23 @@ Build the gem without the full release workflow.
 
 ```bash
 ./scripts/bin/build [--dry-run] [--verbose]
+```
+
+#### `bin/validate`
+Run preflight validation before refactors, pull requests, and releases. The
+quick path validates repository files, version consistency, YAML parsing, active
+configuration contracts, config-file classification, and navigation data before
+the Docker/local build stages run.
+
+```bash
+./scripts/bin/validate [options]
+
+Options:
+  --quick             Host-only checks for CI fast feedback
+  --full              Include tests, Obsidian tests, and HTMLProofer
+  --start-docker      Start the jekyll Docker Compose service if needed
+  --docker            Require Docker Compose for Jekyll commands
+  --local             Require local bundle exec for Jekyll commands
 ```
 
 #### `bin/release`
@@ -95,15 +119,57 @@ Options:
   --dry-run           Preview without changes
   --collection TYPE   Generate for specific collection (posts, docs, etc.)
   -f, --file PATH     Process specific file
-  --provider PROVIDER Use specific AI provider (openai, stability, xai)
+  --provider PROVIDER Renderer (openai, xai, stability, gemini, local)
+  --prompt-engine ENG claude analyzes the article (default) | template
+  --review ENG        claude reviews the render (default) | none
   --assets-prefix     Custom assets path prefix (default: /assets)
   --no-auto-prefix    Disable automatic path prefixing
 
-AI Providers:
-  openai    - OpenAI DALL-E (requires OPENAI_API_KEY)
-  stability - Stability AI (requires STABILITY_API_KEY)
+Renderers (Claude orchestrates all of them — analysis + review via
+CLAUDE_CODE_OAUTH_TOKEN / ANTHROPIC_API_KEY / logged-in `claude` CLI):
+  openai    - OpenAI gpt-image-2 / DALL-E, default (requires OPENAI_API_KEY)
   xai       - xAI Grok image generation (requires XAI_API_KEY)
+  stability - Stability AI (requires STABILITY_API_KEY)
+  gemini    - Google Gemini (requires GEMINI_API_KEY)
+  local     - Deterministic template SVG/PNG (no API key)
 ```
+
+#### `pixelate-preview-images`
+Pixelate + palette-quantize the preview banners so they are dramatically smaller
+files while retaining the retro pixel-art look. Pure Python stdlib (no
+ImageMagick / Pillow / pngquant needed) — it downsamples the image and reduces
+it to an indexed PNG-8 palette. Typical savings on the AI-generated banners are
+~90% (e.g. a 2.7&nbsp;MB banner becomes ~230&nbsp;KB).
+
+```bash
+# Preview the savings for every banner (no changes), 4 workers:
+./scripts/features/pixelate-preview-images --dry-run -j 4
+
+# Optimize all banners in place:
+./scripts/features/pixelate-preview-images -j 4
+
+# Chunkier pixel-art look for one image:
+./scripts/features/pixelate-preview-images --block 6 --colors 64 \
+    assets/images/previews/about.png
+
+Options (forwarded to scripts/features/pixelate_images.py):
+  -n, --dry-run         Report savings without writing
+  --colors N            Palette size 2-256 (default: 256)
+  --bits N              Colour precision 1-8 while quantizing (default: 6)
+  --max-width N         Downscale so width <= N, keep aspect (default: 1024)
+  --scale F             Scale factor, e.g. 0.5
+  --block N             Average NxN source pixels per output pixel (chunky)
+  --filter nearest|box  Downsample filter (default: nearest)
+  --upscale             Keep original WxH (chunky pixels) instead of reduced
+  --backup              Keep <file>.orig when writing in place
+  --force               Write even if the result is not smaller
+  -j, --jobs N          Parallel worker processes (default: 1)
+```
+
+With no path argument it processes `preview_images.output_dir` from
+`_config.yml` (default `assets/images/previews`). Non-PNG and 16-bit/interlaced
+inputs are skipped gracefully. The engine has a built-in `--selftest`, exercised
+by `scripts/test/lib/test_pixelate_images.sh`.
 
 #### `install-preview-generator`
 Install the preview image generator feature.
@@ -117,6 +183,50 @@ Validate preview image URLs in frontmatter.
 
 ```bash
 python3 scripts/features/validate_preview_urls.py [--verbose] [--suggestions]
+```
+
+### Content Validation
+
+#### `lint-pages`
+Config-driven frontmatter validator for all Jekyll collections.
+
+```bash
+./scripts/lint-pages [options]
+
+Options:
+  --strict              Exit non-zero on any violation
+  --warn                Print warnings only (default)
+  --fix                 Auto-fix safe violations (dates, drafts, field renames)
+  --dry-run             Preview fixes without modifying files
+  --report              Output structured report summary
+  --verbose, -v         Detailed output
+  --collection NAME     Validate only the named collection
+  --schema PATH         Path to schema YAML (default: .github/config/frontmatter_schema.yml)
+  --rules PATH          Path to content rules YAML (default: .github/config/content_rules.yml)
+
+Environment Variables:
+  FRONTMATTER_SCHEMA_PATH   Alternate schema path
+  CONTENT_RULES_PATH        Alternate content rules path
+  FRONTMATTER_STRICT        Set to "true" for strict mode
+```
+
+**Configuration files:**
+- `.github/config/frontmatter_schema.yml` — Defines required/optional fields, layout constraints, field types, and canonical field mappings per collection.
+- `.github/config/content_rules.yml` — Behavioral rules such as strictness per environment, auto-fixable violation types, and template-to-collection mappings.
+
+**Examples:**
+```bash
+# Validate all pages (warn mode)
+./scripts/lint-pages
+
+# CI: fail on violations
+./scripts/lint-pages --strict
+
+# Preview auto-fixes without modifying files
+./scripts/lint-pages --fix --dry-run
+
+# Debug a specific collection
+./scripts/lint-pages --collection posts --verbose
 ```
 
 ### Utility Scripts (scripts/utils/)
@@ -147,12 +257,13 @@ Fix markdown formatting issues.
 These are sourced by other scripts, not executed directly:
 
 - `common.sh` - Logging utilities, colors, dry-run support
+- `frontmatter.sh` - Config-aware frontmatter extraction, validation, and fix helpers
 - `version.sh` - Version parsing, calculation, file updates
 - `validation.sh` - Environment and dependency validation
 - `git.sh` - Git operations (tags, commits, branches)
 - `changelog.sh` - Changelog generation from commits
 - `gem.sh` - Gem build/publish operations
-- `preview_generator.py` - Python preview image generator
+- `preview_generator.py` - Preview-image engine (Claude analyze/review + openai/xai/stability/gemini/local renderers)
 
 ### Test Suites (scripts/test/)
 
@@ -436,15 +547,16 @@ The script is designed to integrate with AI agents for automated content managem
 3. **Front Matter Updates**: Automatically updates the markdown file with the new preview path
 4. **Idempotent**: Won't regenerate images that already exist (unless `--force`)
 
-### Python Alternative
+### Engine
 
-A Python version is available at `scripts/lib/preview_generator.py` with additional features:
+All logic lives in the single-file Python engine `scripts/lib/preview_generator.py`
+(the shell entry points are thin wrappers around it):
 
 ```bash
-# Install dependencies
-pip install openai pyyaml requests
+# Install the one dependency
+pip3 install pyyaml
 
-# Run Python version
+# Run the engine directly (same flags as the wrapper)
 python3 scripts/lib/preview_generator.py --collection posts --dry-run
 ```
 

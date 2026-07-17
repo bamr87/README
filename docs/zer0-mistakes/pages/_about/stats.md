@@ -5,6 +5,7 @@ icon: bi-bar-chart-line
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/stats/
+preview: /images/previews/site-statistics-portal.png
 source_file: stats.md
 title: Stats
 ---

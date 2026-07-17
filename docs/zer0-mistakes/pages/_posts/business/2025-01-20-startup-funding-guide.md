@@ -8,6 +8,7 @@ description: Navigate the complex world of startup funding from seed rounds to S
 estimated_reading_time: 12 min
 featured: true
 image: /assets/images/posts/startup-funding.jpg
+lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/the-complete-guide-to-startup-funding-in-2025.png
 source_file: 2025-01-20-startup-funding-guide.md

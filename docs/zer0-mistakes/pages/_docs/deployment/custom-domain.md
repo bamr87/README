@@ -5,12 +5,14 @@ categories:
 description: Configure a custom domain for your Jekyll site hosted on GitHub Pages
   or Netlify.
 difficulty: intermediate
-estimated_time: 20 minutes
+estimated_reading_time: 20 minutes
+lastmod: 2026-04-18 19:30:01+00:00
 layout: default
 permalink: /docs/deployment/custom-domain/
 prerequisites:
 - Domain registrar account
 - GitHub Pages or Netlify hosting
+preview: /images/previews/custom-domain-setup.png
 sidebar:
   nav: docs
 source_file: custom-domain.md
@@ -136,7 +138,7 @@ Netlify uses Let's Encrypt for free SSL certificates.
 
 ### Apex Domain Only (example.com)
 
-```
+```text
 A     @     185.199.108.153
 A     @     185.199.109.153
 A     @     185.199.110.153
@@ -145,13 +147,13 @@ A     @     185.199.111.153
 
 ### www Only (www.example.com)
 
-```
+```text
 CNAME   www   username.github.io
 ```
 
 ### Both Apex and www
 
-```
+```text
 A       @     185.199.108.153
 A       @     185.199.109.153
 A       @     185.199.110.153
@@ -164,6 +166,7 @@ CNAME   www   username.github.io
 Configure a redirect in your hosting platform:
 
 **Netlify (`netlify.toml`):**
+
 ```toml
 [[redirects]]
   from = "https://www.example.com/*"
@@ -252,3 +255,9 @@ Configure a redirect in your hosting platform:
 
 - [GitHub Pages Guide](/docs/deployment/github-pages/)
 - [Netlify Guide](/docs/deployment/netlify/)
+
+## See also
+
+- [[Deployment]]
+- [[Deploy to GitHub Pages]]
+- [[Deploy to Netlify]]

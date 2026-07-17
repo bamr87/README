@@ -6,19 +6,52 @@ title: Copilot Instructions for Zer0-Mistakes
 
 This directory contains file-specific instructions for GitHub Copilot to provide context-aware assistance when working with different parts of the Zer0-Mistakes Jekyll theme codebase.
 
+> 🤖 **Working with another AI agent?** (Codex, Cursor, Aider, Jules, Continue, Claude Code, …) Start at [`AGENTS.md`](../../AGENTS.md) in the repository root — it is the cross-tool entry point and links into the layered guidance described below.
+
 ## 📂 Structure
 
 ```
 .github/
 ├── copilot-instructions.md          # Main project-wide instructions
-└── instructions/
-    ├── README.md                     # This file
-    ├── layouts.instructions.md       # Jekyll layout development
-    ├── includes.instructions.md      # Reusable component development
-    ├── scripts.instructions.md       # Shell script automation
-    ├── testing.instructions.md       # Testing guidelines
-    ├── documentation.instructions.md # Documentation development
-    └── version-control.instructions.md  # Git workflow and releases
+├── instructions/                    # File-scoped instructions (this directory)
+│   ├── README.md                     # This file
+│   ├── layouts.instructions.md       # Jekyll layout development
+│   ├── includes.instructions.md      # Reusable component development
+│   ├── scripts.instructions.md       # Shell script automation
+│   ├── install.instructions.md       # Modular installer (CLI, profiles, deploy plugins)
+│   ├── testing.instructions.md       # Testing guidelines
+│   ├── documentation.instructions.md # Documentation development
+│   ├── features.instructions.md      # Feature registry schema + sync contract
+│   ├── obsidian.instructions.md      # Obsidian vault integration (wiki-links, JS resolver, Ruby plugin)
+│   ├── sass.instructions.md          # Sass partials, Bootstrap overrides, CSS custom properties
+│   ├── version-control.instructions.md  # Git workflow and releases
+│   ├── backlog.instructions.md       # Tactical backlog schema + sync contract
+│   ├── content-review.instructions.md   # AI content reviewer: SEO/quality + resolution
+│   ├── ai-chat.instructions.md       # AI chat assistant + chat-proxy: auth, caps, safety
+│   └── visual-evidence.instructions.md  # Screenshots + regression tests as the norm for UI changes
+├── prompts/                         # Reusable agent/chat prompts (.prompt.md)
+│   ├── commit-publish.prompt.md      # Full release pipeline
+│   ├── frontmatter-maintainer.prompt.md  # Front matter audit / fix
+│   ├── content-review.prompt.md      # Content SEO/consistency/polish review
+│   ├── repo-audit.prompt.md          # Review repo + triage open issues → backlog
+│   ├── backlog-implement.prompt.md   # Implement next backlog task → PR
+│   ├── issue-implement.prompt.md     # Route one issue → loop-to-green → PR (human-dispatched)
+│   ├── issue-plan.prompt.md          # Planning committee → order-only roadmap_plan.yml
+│   └── seed.prompt.md                # Theme rebuild blueprint
+├── skills/                          # Operational workflow checklists (SKILL.md)
+│   ├── change-workflow/SKILL.md      # Branch → commit → PR for any change
+│   ├── validate-build/SKILL.md       # Pre-commit / pre-PR validation pipeline
+│   ├── content-review/SKILL.md       # Content SEO/consistency/polish review
+│   ├── visual-evidence/SKILL.md      # Regression test + before/after evidence for UI changes
+│   └── committee-plan/SKILL.md       # /issue-plan fan-out + order-only synthesis
+├── ../../_data/routing.yml          # area:* → executor lane (issue-implement routing)
+├── ../../.claude/agents/            # Specialized executor + plan-lens agents
+└── seed/                            # Deep architectural blueprint docs
+
+.cursor/
+└── commands/                        # Cursor IDE slash-commands (mirror of prompts/)
+
+AGENTS.md                            # Cross-tool agent entry point (repo root)
 ```
 
 ## 🎯 How It Works
@@ -33,7 +66,15 @@ GitHub Copilot automatically applies these instructions based on the files you'r
 | `scripts.instructions.md`         | `scripts/**`                       | Shell script standards, error handling             |
 | `testing.instructions.md`         | `test/**`                          | Test development, assertions, CI/CD                |
 | `documentation.instructions.md`   | `docs/**,pages/_docs/**,*docs*.md` | Documentation development guidelines               |
-| `version-control.instructions.md` | `**` (all files)                   | Git workflow, semantic versioning, releases        |
+| `features.instructions.md`        | `_data/features.yml`, `features/**`, `pages/features.md`, `_includes/components/feature-card.html` | Feature registry schema, sync contract, update-on-change rules |
+| `install.instructions.md`         | `scripts/lib/install/**`, `scripts/bin/install`, `install.sh`, `templates/{profiles,deploy,agents,ai}/**` | Modular installer architecture, profiles, deploy plugins, safety contracts |
+| `obsidian.instructions.md`        | `_plugins/obsidian_links.rb`, `assets/js/obsidian-*.js`, `assets/data/wiki-index.json`, `_includes/content/backlinks.html`, `pages/_docs/obsidian/**`, Obsidian tests | Wiki-link/embed/callout contract across Liquid index, JS resolver, and Ruby plugin |
+| `sass.instructions.md`            | `_sass/**`, `assets/css/**`        | Sass partial layering, Bootstrap variable overrides, no-double-Bootstrap rule |
+| `version-control.instructions.md` | `CHANGELOG.md`, `**/version.*`, `*.gemspec`, `package.json` | Git workflow, semantic versioning, releases        |
+| `backlog.instructions.md`         | `_data/backlog.yml`, `scripts/sync-backlog.*`, `.github/workflows/sync.yml` | Tactical backlog schema, sync contract, ownership rules |
+| `content-review.instructions.md`  | `pages/**/*.md`, `.github/config/content_review.yml`, `.claude/agents/content-reviewer.md`, `scripts/content-review.rb`, `.github/workflows/ai-content-review.yml` | AI content reviewer: per-collection SEO/quality targets, review resolution |
+| `ai-chat.instructions.md`         | `_includes/components/ai-chat.html`, `assets/js/ai-chat.js`, `templates/deploy/chat-proxy/**` | AI chat assistant + chat-proxy: auth modes, server caps, confirmation/safety contracts |
+| `visual-evidence.instructions.md` | `_sass/**`, `_includes/**`, `_layouts/**`, `assets/css/**`, `assets/js/**`, `test/visual/**` | Regression test + before/after evidence required for UI/behavioural changes; surfaced in release notes; enforced by `evidence-gate` |
 
 ## 📖 Main Instructions (copilot-instructions.md)
 
@@ -231,6 +272,68 @@ Documentation requirements
 
 _Closing notes or references_
 ```
+
+## 🧩 Extending Agent Capabilities
+
+The agent guidance system is designed to be **extendable**. Use these patterns when adding new capabilities:
+
+### Add a new file-scoped instruction set
+
+1. Create `.github/instructions/<area>.instructions.md` with the front matter template above.
+2. Cover overview, structure, standards, patterns, best practices, testing, and documentation (mirror existing files such as `layouts.instructions.md`).
+3. Add the file to the **Structure** diagram and table at the top of this README.
+4. Add a row to the file-scoped instruction map in [`AGENTS.md`](../../AGENTS.md) so non-Copilot agents can find it.
+
+### Add a reusable prompt / agent mode
+
+1. Create `.github/prompts/<task>.prompt.md` with this front matter:
+
+   ```yaml
+   ---
+   agent: agent
+   mode: agent
+   description: "Short description of the multi-step task"
+   tools: [optional, list, of, tool, names]
+   ---
+   ```
+
+2. Write the prompt as a numbered, checkable workflow (see `commit-publish.prompt.md` for the canonical pattern).
+3. To make it available as a Cursor slash-command, mirror the file into `.cursor/commands/<task>.md`.
+4. Add it to the prompts table in [`AGENTS.md`](../../AGENTS.md).
+
+### Add a workflow skill
+
+Skills are operational checklists an agent reads before performing a recurring
+action (validating, branching, reviewing). They differ from prompts: a prompt is
+a task you invoke; a skill is a reusable procedure referenced by prompts,
+agents, and `CLAUDE.md`.
+
+1. Create `.github/skills/<name>/SKILL.md` with this front matter (mirror
+   `change-workflow` / `validate-build`):
+
+   ```yaml
+   ---
+   name: <name>
+   description: "**WORKFLOW SKILL** — <what it does>. USE FOR: … INVOKES: … DO NOT USE FOR: …"
+   ---
+   ```
+
+2. Write it as a numbered, checkable procedure with a "When to use" section and a
+   "Reporting back to the user" section.
+3. Add it to the **Structure** diagram above and the workflow-skills table in
+   [`AGENTS.md`](../../AGENTS.md).
+4. If it governs how *all* changes are made, reference it from `CLAUDE.md` and
+   the relevant `*.instructions.md`.
+
+### Onboard a new AI tool / IDE
+
+When adding support for a new agent that uses its own config file, **do not duplicate** instruction content — point the new file at `AGENTS.md` and the layered guidance under `.github/`. Examples:
+
+- Claude Code: `CLAUDE.md` → "See `AGENTS.md`."
+- Aider: `.aider.conf.yml` with `read: [AGENTS.md, .github/copilot-instructions.md]`.
+- Continue: `.continuerc.json` referencing the same files.
+
+This keeps a single source of truth and prevents drift between tools.
 
 ## 🔄 Maintenance
 

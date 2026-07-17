@@ -51,40 +51,37 @@
   },
   "rollups": {
     "categories": {
-      "api": 42,
-      "development": 6,
-      "misc": 43,
-      "setup": 201,
-      "user-guides": 4
+      "it-journey": 540
     },
     "code_languages": [
-      "plaintext",
       "bash",
+      "plaintext",
       "markdown",
       "yaml",
+      "mermaid",
       "powershell",
       "python",
-      "mermaid",
       "html"
     ],
-    "indexed_documents": 296,
+    "indexed_documents": 540,
     "top_tags": [
-      "api",
-      "setup",
-      "testing",
+      "hands-on",
+      "gamified-learning",
+      "main_quest",
+      "jekyll",
+      "devops",
       "python",
-      "javascript",
+      "automation",
+      "github-actions",
+      "tutorial",
+      "frontend",
+      "data-engineering",
       "docker",
-      "aws",
-      "azure",
-      "documentation",
-      "database",
-      "kubernetes",
-      "development",
-      "gcp",
-      "user-guides"
+      "git",
+      "lvl-0001",
+      "documentation"
     ],
-    "total_words": 449620
+    "total_words": 747116
   },
   "schema_version": "1.0",
   "signals": {

@@ -1,4 +1,7 @@
 ---
+lastmod: 2025-01-27 00:00:00+00:00
+layout: default
+preview: /images/previews/stats-page-enhancement-summary.png
 source_file: STATS_ENHANCEMENT_SUMMARY.md
 title: Stats Page Enhancement Summary
 ---
