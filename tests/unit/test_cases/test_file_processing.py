@@ -90,15 +90,10 @@ class TestFrontMatterGeneration(unittest.TestCase):
 This document describes our REST API endpoints.
 """
         result = generate_front_matter(content, "api-docs.md")
-        
-        self.assertIn("title", result)
-        self.assertIn("summary", result)
-        self.assertIn("tags", result)
-        self.assertIn("category", result)
-        self.assertIn("source_file", result)
+
+        self.assertEqual(result["title"], "API Documentation")
         self.assertEqual(result["source_file"], "api-docs.md")
-        self.assertEqual(result["category"], "api")
-    
+
     def test_generate_front_matter_with_existing_front_matter(self):
         """Test front matter generation with existing front matter."""
         content = """---
@@ -111,21 +106,18 @@ author: "Test Author"
 This document describes our REST API endpoints.
 """
         result = generate_front_matter(content, "api-docs.md")
-        
-        # Should preserve existing fields and add new ones
+
+        # Title from the existing front matter wins over the H1
         self.assertEqual(result["title"], "Existing Title")
-        self.assertIn("summary", result)
-        self.assertIn("tags", result)
-        self.assertEqual(result["category"], "api")
-    
+        self.assertEqual(result["source_file"], "api-docs.md")
+
     def test_generate_front_matter_empty_content(self):
         """Test front matter generation with empty content."""
         result = generate_front_matter("", "empty.md")
-        
-        self.assertIn("title", result)
-        self.assertIn("summary", result)
-        self.assertIn("tags", result)
-        self.assertEqual(result["category"], "misc")
+
+        # Title falls back to the prettified filename stem
+        self.assertEqual(result["title"], "Empty")
+        self.assertEqual(result["source_file"], "empty.md")
 
 class TestFileProcessing(unittest.TestCase):
     """Test cases for file processing."""
@@ -154,16 +146,16 @@ This is a test document for API documentation.
         
         # Process the file
         process_markdown_file(test_file, self.dest_dir)
-        
-        # Check if file was created in correct location
-        expected_path = self.dest_dir / "api" / "test_repo" / "test.md"
+
+        # Check if file was created in correct location (docs/{repo_name}/...)
+        expected_path = self.dest_dir / "test_repo" / "test.md"
         self.assertTrue(expected_path.exists())
-        
+
         # Check content
         content = expected_path.read_text()
         self.assertIn("---", content)  # Should have front matter
-        self.assertIn("title:", content)
-        self.assertIn("category: api", content)
+        self.assertIn("title: Test Document", content)
+        self.assertIn("source_file: test.md", content)
         self.assertIn("# Test Document", content)
     
     def test_process_markdown_file_with_existing_front_matter(self):
@@ -182,15 +174,14 @@ This is a test document for API documentation.
         
         # Process the file
         process_markdown_file(test_file, self.dest_dir)
-        
-        # Check if file was created
-        expected_path = self.dest_dir / "api" / "test_repo" / "test.md"
+
+        # Check if file was created (docs/{repo_name}/...)
+        expected_path = self.dest_dir / "test_repo" / "test.md"
         self.assertTrue(expected_path.exists())
-        
+
         # Check that existing front matter was preserved
         content = expected_path.read_text()
         self.assertIn("author: Test Author", content)
-        self.assertIn("category: api", content)
         # The title should be updated to the H1 title, not the front matter title
         self.assertIn("title: Test Document", content)
     

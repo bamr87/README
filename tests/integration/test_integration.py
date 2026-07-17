@@ -20,15 +20,19 @@ class TestIntegration(unittest.TestCase):
     
     def setUp(self):
         """Set up test fixtures."""
+        self.orig_cwd = os.getcwd()
         self.temp_dir = tempfile.mkdtemp()
         self.raw_docs_dir = Path(self.temp_dir) / "raw_docs"
         self.docs_dir = Path(self.temp_dir) / "docs"
         self.raw_docs_dir.mkdir()
         self.docs_dir.mkdir()
-    
+
     def tearDown(self):
         """Clean up test fixtures."""
         import shutil
+        # Restore cwd — tests chdir into temp_dir; leaking it breaks
+        # later tests that rely on repo-relative paths.
+        os.chdir(self.orig_cwd)
         shutil.rmtree(self.temp_dir)
     
     def test_full_workflow_simple_repo(self):
@@ -52,8 +56,9 @@ class TestIntegration(unittest.TestCase):
         os.chdir(self.temp_dir)
         process_main()
         
-        # Check if organized files were created
-        organized_files = list(self.docs_dir.rglob("*.md"))
+        # Check if organized files were created (Hello-World ships a bare
+        # "README" with no .md extension; filenames are preserved)
+        organized_files = [p for p in self.docs_dir.rglob("*") if p.is_file()]
         self.assertGreater(len(organized_files), 0)
         
         # Check if files have front matter
@@ -61,7 +66,7 @@ class TestIntegration(unittest.TestCase):
             content = file_path.read_text()
             self.assertIn("---", content)  # Should have front matter
             self.assertIn("title:", content)
-            self.assertIn("category:", content)
+            self.assertIn("source_file:", content)
     
     def test_workflow_with_multiple_repos(self):
         """Test workflow with multiple repositories."""
@@ -92,8 +97,8 @@ class TestIntegration(unittest.TestCase):
         self.assertEqual(result['files_found'], 0)
         self.assertEqual(result['files_copied'], 0)
     
-    def test_file_organization_by_category(self):
-        """Test that files are organized correctly by category."""
+    def test_file_organization_by_repo(self):
+        """Test that files are organized under docs/{repo_name}/."""
         # Create test files with different content
         test_files = {
             "api-docs.md": "# API Reference\n\nThis is API documentation.",
@@ -101,33 +106,27 @@ class TestIntegration(unittest.TestCase):
             "installation.md": "# Installation\n\nHow to install the software.",
             "misc-doc.md": "# Random Document\n\nSome random content."
         }
-        
+
         # Create raw docs structure
         raw_repo_dir = self.raw_docs_dir / "test_repo"
         raw_repo_dir.mkdir()
-        
+
         for filename, content in test_files.items():
             (raw_repo_dir / filename).write_text(content)
-        
+
         # Process files
         os.chdir(self.temp_dir)
         process_main()
-        
-        # Check organization
-        expected_categories = {
-            "api-docs.md": "api",
-            "user-guide.md": "user-guides",
-            "installation.md": "setup",
-            "misc-doc.md": "misc"
-        }
-        
-        for filename, expected_category in expected_categories.items():
-            expected_path = self.docs_dir / expected_category / "test_repo" / filename
-            self.assertTrue(expected_path.exists(), f"File {filename} not found in {expected_category} category")
-            
+
+        # Check organization: docs/{repo_name}/{filename}
+        for filename in test_files:
+            expected_path = self.docs_dir / "test_repo" / filename
+            self.assertTrue(expected_path.exists(), f"File {filename} not found under test_repo")
+
             # Check front matter
             content = expected_path.read_text()
-            self.assertIn(f"category: {expected_category}", content)
+            self.assertIn("title:", content)
+            self.assertIn(f"source_file: {filename}", content)
     
     def test_front_matter_generation(self):
         """Test front matter generation for different content types."""
@@ -135,45 +134,37 @@ class TestIntegration(unittest.TestCase):
             {
                 "filename": "api-docs.md",
                 "content": "# API Documentation\n\nThis document describes our REST API endpoints.",
-                "expected_category": "api",
-                "expected_tags": ["api"]
+                "expected_title": "API Documentation"
             },
             {
                 "filename": "tutorial.md",
                 "content": "# Getting Started Tutorial\n\nThis tutorial will help you get started.",
-                "expected_category": "user-guides",
-                "expected_tags": ["user-guides"]
+                "expected_title": "Getting Started Tutorial"
             }
         ]
-        
+
         # Create test files
         raw_repo_dir = self.raw_docs_dir / "test_repo"
         raw_repo_dir.mkdir()
-        
+
         for case in test_cases:
             (raw_repo_dir / case["filename"]).write_text(case["content"])
-        
+
         # Process files
         os.chdir(self.temp_dir)
         process_main()
-        
+
         # Check results
         for case in test_cases:
-            expected_path = self.docs_dir / case["expected_category"] / "test_repo" / case["filename"]
+            expected_path = self.docs_dir / "test_repo" / case["filename"]
             self.assertTrue(expected_path.exists())
-            
+
             content = expected_path.read_text()
-            
+
             # Check front matter
             self.assertIn("---", content)
-            self.assertIn("title:", content)
-            self.assertIn("summary:", content)
-            self.assertIn("tags:", content)
-            self.assertIn(f"category: {case['expected_category']}", content)
-            
-            # Check specific tags
-            for tag in case["expected_tags"]:
-                self.assertIn(tag, content)
+            self.assertIn(f"title: {case['expected_title']}", content)
+            self.assertIn(f"source_file: {case['filename']}", content)
 
 if __name__ == "__main__":
     unittest.main()
