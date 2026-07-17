@@ -107,8 +107,7 @@ bash lib/reset.sh --dry    # Preview what would be reset
 
 ## Observatory Viewer
 
-The **Bashcrawl Observatory** is a web portal for browsing session logs,
-screenshots, and analytics collected while playing.
+The **Bashcrawl Observatory** is a web portal for browsing session logs, screenshots, and analytics collected while playing.
 
 ```bash
 # Install viewer dependencies (once)
@@ -123,10 +122,7 @@ See [docs/viewer.md](viewer.md) for the full user guide.
 
 ## AI Agent Tests
 
-The test suite includes an **AI agent** (powered by Claude) that plays through
-the game autonomously, checking progression, combat, error recovery, and help
-usage. You need an [Anthropic API key](https://console.anthropic.com/) to run
-these tests.
+The test suite includes an **AI agent** (powered by Claude) that plays through the game autonomously, checking progression, combat, error recovery, and help usage. You need an [Anthropic API key](https://console.anthropic.com/) to run these tests.
 
 ### Setup
 
@@ -158,8 +154,7 @@ pytest -m ai --timeout=120
 
 ### Watch progress live
 
-While AI tests run, open the Observatory Viewer in a second terminal to watch
-the agent play in real time:
+While AI tests run, open the Observatory Viewer in a second terminal to watch the agent play in real time:
 
 ```bash
 # Terminal 1 — start the viewer
@@ -169,18 +164,12 @@ python3 -m src.viewer
 cd test && pytest -m ai -s
 ```
 
-Then open **http://127.0.0.1:5000/live/agent** in your browser. The page
-tails `logs/live_agent.jsonl` via SSE and displays each command, its output,
-the agent's current room, inventory, and HP as the test progresses.
+Then open **http://127.0.0.1:5000/live/agent** in your browser. The page tails `logs/live_agent.jsonl` via SSE and displays each command, its output, the agent's current room, inventory, and HP as the test progresses.
 
-After the tests finish, completed sessions appear in
-**http://127.0.0.1:5000/sessions** (filter by mode `ai_test`) and any
-captured screenshots are in **http://127.0.0.1:5000/screenshots**.
+After the tests finish, completed sessions appear in **http://127.0.0.1:5000/sessions** (filter by mode `ai_test`) and any captured screenshots are in **http://127.0.0.1:5000/screenshots**.
 
-See [Advanced Topics](advanced.md#ai-agent-tests) for the full list of
-scenarios, cost estimates, and tips.
+See [Advanced Topics](advanced.md#ai-agent-tests) for the full list of scenarios, cost estimates, and tips.
 
 ## Next Steps
 
-Read the [Gameplay Guide](gameplay.md) for mechanics, or just `cat scroll` and follow
-the instructions. The game teaches you as you play.
+Read the [Gameplay Guide](gameplay.md) for mechanics, or just `cat scroll` and follow the instructions. The game teaches you as you play.

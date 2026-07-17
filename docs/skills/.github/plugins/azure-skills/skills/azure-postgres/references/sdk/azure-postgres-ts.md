@@ -9,8 +9,7 @@ title: PostgreSQL — TypeScript SDK Quick Reference
 > in the **azure-postgres-ts** plugin skill if installed.
 
 ## Install
-npm install pg @azure/identity
-npm install -D @types/pg
+npm install pg @azure/identity npm install -D @types/pg
 
 ## Quick Start
 ```typescript

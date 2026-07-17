@@ -53,9 +53,7 @@ Generate a landing page with project summary and a guide selector table linking 
 
 ## Step 2: Generate Contributor Guide
 
-**File**: `onboarding/contributor-guide.md`
-**Audience**: Engineers joining the project. Assumes proficiency in Python or JavaScript.
-**Length**: 1000–2500 lines. Progressive — each section builds on the last.
+**File**: `onboarding/contributor-guide.md` **Audience**: Engineers joining the project. Assumes proficiency in Python or JavaScript. **Length**: 1000–2500 lines. Progressive — each section builds on the last.
 
 ### Required Structure
 
@@ -92,9 +90,7 @@ Generate a landing page with project summary and a guide selector table linking 
 
 ## Step 3: Generate Staff Engineer Guide
 
-**File**: `onboarding/staff-engineer-guide.md`
-**Audience**: Staff/principal engineers. Deep systems experience, may not know this repo's language.
-**Length**: 800–1200 lines. Dense, opinionated, architectural.
+**File**: `onboarding/staff-engineer-guide.md` **Audience**: Staff/principal engineers. Deep systems experience, may not know this repo's language. **Length**: 800–1200 lines. Dense, opinionated, architectural.
 
 ### Required Sections
 
@@ -127,9 +123,7 @@ Generate a landing page with project summary and a guide selector table linking 
 
 ## Step 4: Generate Executive Guide
 
-**File**: `onboarding/executive-guide.md`
-**Audience**: VP/director of engineering. Needs capability overview, risk assessment, and investment context — NOT code-level details.
-**Length**: 400–800 lines. Strategic, concise, decision-oriented.
+**File**: `onboarding/executive-guide.md` **Audience**: VP/director of engineering. Needs capability overview, risk assessment, and investment context — NOT code-level details. **Length**: 400–800 lines. Strategic, concise, decision-oriented.
 
 ### Required Sections
 
@@ -156,9 +150,7 @@ Generate a landing page with project summary and a guide selector table linking 
 
 ## Step 5: Generate Product Manager Guide
 
-**File**: `onboarding/product-manager-guide.md`
-**Audience**: Product managers and non-engineering stakeholders. Needs to understand capabilities and boundaries — NOT implementation.
-**Length**: 400–800 lines. User-centric, feature-focused, constraint-aware.
+**File**: `onboarding/product-manager-guide.md` **Audience**: Product managers and non-engineering stakeholders. Needs to understand capabilities and boundaries — NOT implementation. **Length**: 400–800 lines. User-centric, feature-focused, constraint-aware.
 
 ### Required Sections
 

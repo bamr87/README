@@ -506,8 +506,7 @@ After creating the skill:
    ```bash
    cd docs-site && npx tsx scripts/extract-skills.ts
    ```
-   This updates `docs-site/src/data/skills.json` which feeds the Astro-based docs site.
-   Then rebuild the docs site:
+This updates `docs-site/src/data/skills.json` which feeds the Astro-based docs site. Then rebuild the docs site:
    ```bash
    cd docs-site && npm run build
    ```

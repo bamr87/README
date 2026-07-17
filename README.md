@@ -1,15 +1,8 @@
 # README — the bamr87 context engine
 
-The consolidated README of the [bamr87/bamr87](https://github.com/bamr87/bamr87)
-monorepo: a set of crawlers, distillers, and gates — with AI orchestration
-hooks and an MCP query surface — that continuously build and maintain the
-context describing every submodule in the fleet.
+The consolidated README of the [bamr87/bamr87](https://github.com/bamr87/bamr87) monorepo: a set of crawlers, distillers, and gates — with AI orchestration hooks and an MCP query surface — that continuously build and maintain the context describing every submodule in the fleet.
 
-Instead of hand-writing documentation *about* the fleet, this repo **grows
-it**: crawlers aggregate each project's markdown, the engine distills the
-corpus upward into a pyramid of context, and an MCP server makes the whole
-thing queryable by AI clients. The pyramid is regenerated on a schedule, so
-the context evolves as the fleet does.
+Instead of hand-writing documentation *about* the fleet, this repo **grows it**: crawlers aggregate each project's markdown, the engine distills the corpus upward into a pyramid of context, and an MCP server makes the whole thing queryable by AI clients. The pyramid is regenerated on a schedule, so the context evolves as the fleet does.
 
 ## The pyramid
 
@@ -21,11 +14,7 @@ the context evolves as the fleet does.
     ─────  query: context/index/ · CLI · MCP server (mcp/server.py)
 ```
 
-Every governed directory carries a `SCHEMA.md` (structure table + rules),
-mirroring the parent monorepo's pyramid protocol; `scripts/schema_lint.py
-check .` is the drift gate. Structural facts live in the registry
-(`_data/projects.yml`) — generated surfaces (`context/`, `docs/`,
-`repos.txt`, the span below) are regenerated, never hand-edited.
+Every governed directory carries a `SCHEMA.md` (structure table + rules), mirroring the parent monorepo's pyramid protocol; `scripts/schema_lint.py check .` is the drift gate. Structural facts live in the registry (`_data/projects.yml`) — generated surfaces (`context/`, `docs/`, `repos.txt`, the span below) are regenerated, never hand-edited.
 
 ## The fleet
 
@@ -42,8 +31,7 @@ check .` is the drift gate. Structural facts live in the registry
 | [OverTheWire-website](context/cards/OverTheWire-website.md) | site | active | 232 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 <!-- AUTO:projects:end -->
 
-Full picture: [context/README.md](context/README.md) — the consolidated
-README this repo exists to produce.
+Full picture: [context/README.md](context/README.md) — the consolidated README this repo exists to produce.
 
 ## Quick start
 
@@ -62,10 +50,7 @@ python3 -m scripts.context_engine card bashcrawl
 python3 -m scripts.context_engine status
 ```
 
-AI clients query the same pyramid through MCP — the server is registered in
-[`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this
-repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`,
-`get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
+AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
 
 ## How it works
 
@@ -78,23 +63,16 @@ repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`,
 | 5. Distill | corpus + registry | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
 | 6. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
 
-The engine (`scripts/context_engine/`) runs **extract → synthesize →
-assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at
-each stage. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or
-`XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key
-the build is fully heuristic and deterministic. Rebuilds are diff-stable —
-outputs carry corpus fingerprints, not timestamps.
+The engine (`scripts/context_engine/`) runs **extract → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or `XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
 ## Continuous evolution
 
 - **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds
-  the pyramid, and commits the result — the context grows without anyone
-  editing it.
+the pyramid, and commits the result — the context grows without anyone editing it.
 - **`docs-quality-check.yaml`** lints the corpus and runs the SCHEMA drift
   gate on every PR.
 - **`deploy-pages.yaml`** publishes `docs/` (whose home page is the
-  generated fleet overview) to
-  [bamr87.github.io/README](https://bamr87.github.io/README/).
+generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
 - **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every
   build — the freshness report and the schema gate ship as examples.
 
@@ -130,5 +108,4 @@ bash scripts/run_doc_checks.sh               # corpus quality checks
 
 ## License
 
-MIT for the machinery in this repository. Aggregated documentation under
-`docs/` retains the license of its source repository.
+MIT for the machinery in this repository. Aggregated documentation under `docs/` retains the license of its source repository.

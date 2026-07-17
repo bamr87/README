@@ -6,8 +6,7 @@ title: Contributing
 
 ## Reporting Issues
 
-Open an issue at [github.com/bamr87/bashcrawl/issues](https://github.com/bamr87/bashcrawl/issues)
-with steps to reproduce.
+Open an issue at [github.com/bamr87/bashcrawl/issues](https://github.com/bamr87/bashcrawl/issues) with steps to reproduce.
 
 ## Development Setup
 
@@ -38,8 +37,7 @@ Follow the [executable template](advanced.md#executable-encounter-template):
 
 ### Scroll Content
 
-See `.github/instructions/scrolls.instructions.md` for the full standard.
-Key rules:
+See `.github/instructions/scrolls.instructions.md` for the full standard. Key rules:
 - 80-character width, readable with `cat`
 - Level 1 (entrance): Pure ASCII with `===` dividers
 - Level 2 (intermediate): Unicode box-drawing, emoji, `####` headers

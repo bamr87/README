@@ -398,8 +398,7 @@ Output: Return only the classification label (POSITIVE/NEGATIVE/NEUTRAL)."
 - Specified exact output format (prevents verbosity)
 - Removed ambiguity ("classify" → specific labels)
 
-**Kaizen Exercise**:
-Take this vague zero-shot prompt:
+**Kaizen Exercise**: Take this vague zero-shot prompt:
 ```
 "Write a function to sort a list."
 ```
@@ -528,8 +527,7 @@ Step 5: What's the fix? [Add input validation]
 Solution: [AI provides corrected code with empty list check]"
 ```
 
-**CoT PDCA Application**:
-When using CoT, apply Kaizen to the reasoning steps themselves:
+**CoT PDCA Application**: When using CoT, apply Kaizen to the reasoning steps themselves:
 - **Plan**: Are the steps comprehensive?
 - **Do**: Run the CoT prompt
 - **Check**: Did the AI follow all steps? Did it skip any?

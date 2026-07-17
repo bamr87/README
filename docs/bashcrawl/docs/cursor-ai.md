@@ -82,8 +82,7 @@ This sets `BASHCRAWL_BROWSER_AUTOMATION=1` in the server process so child sessio
 
 ## Resetting game state
 
-To restore the repo to a fresh playable state (re-hide unlocked rooms, remove
-runtime artifacts, and clear save files), run:
+To restore the repo to a fresh playable state (re-hide unlocked rooms, remove runtime artifacts, and clear save files), run:
 
 ```bash
 bash lib/reset.sh

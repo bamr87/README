@@ -4,9 +4,7 @@ title: Azure AI Text Analytics SDK Acceptance Criteria
 ---
 # Azure AI Text Analytics SDK Acceptance Criteria
 
-**SDK**: `azure-ai-textanalytics`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-textanalytics` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

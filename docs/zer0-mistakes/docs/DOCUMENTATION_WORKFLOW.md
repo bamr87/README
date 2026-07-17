@@ -93,14 +93,7 @@ end
 ### File Organization
 
 ```
-/docs/
-├── systems/           # Infrastructure & automation
-├── features/          # Component implementation
-├── configuration/     # Development setup
-├── releases/          # Version management
-├── jekyll/           # Jekyll-specific technical docs
-├── templates/        # Documentation templates
-└── _includes/        # Reusable MDX components
+/docs/ ├── systems/           # Infrastructure & automation ├── features/          # Component implementation ├── configuration/     # Development setup ├── releases/          # Version management ├── jekyll/           # Jekyll-specific technical docs ├── templates/        # Documentation templates └── _includes/        # Reusable MDX components
 ```
 
 ## 📖 Public Documentation (`/pages/_docs/`)
@@ -121,11 +114,7 @@ Public documentation uses **standard Markdown** for Jekyll compatibility:
 
 ````markdown
 ---
-title: "Getting Started with Theme Customization"
-description: "Learn how to customize the Zer0-Mistakes theme"
-layout: default
-categories: [tutorials, customization]
-tags: [jekyll, theme, bootstrap]
+title: "Getting Started with Theme Customization" description: "Learn how to customize the Zer0-Mistakes theme" layout: default categories: [tutorials, customization] tags: [jekyll, theme, bootstrap]
 permalink: /docs/customization-guide/
 ---
 

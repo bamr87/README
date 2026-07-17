@@ -704,9 +704,7 @@ export const showWorkspaceStats = async () => {
 ### Common Issues and Solutions
 
 #### Issue 1: Extension Fails to Load in Development Host
-**Symptoms**: Extension Development Host opens but Front Matter commands don't appear
-**Causes**: Build errors, configuration issues, or dependency problems
-**Solutions**:
+**Symptoms**: Extension Development Host opens but Front Matter commands don't appear **Causes**: Build errors, configuration issues, or dependency problems **Solutions**:
 ```bash
 # Check for build errors
 npm run dev:ext
@@ -720,9 +718,7 @@ npm run build:ext
 ```
 
 #### Issue 2: Hot Reload Not Working
-**Symptoms**: Changes to code don't reflect in the running extension
-**Diagnosis**: Webpack watch mode issues or file permission problems
-**Resolution**:
+**Symptoms**: Changes to code don't reflect in the running extension **Diagnosis**: Webpack watch mode issues or file permission problems **Resolution**:
 ```bash
 # Restart the development server
 # Stop with Ctrl+C, then restart
@@ -736,9 +732,7 @@ ls -la src/
 ```
 
 #### Issue 3: Dashboard/Panel Not Loading
-**Symptoms**: Localhost:9000 or localhost:9001 show errors or won't load
-**Causes**: Port conflicts, webpack-dev-server issues, or build failures
-**Solutions**:
+**Symptoms**: Localhost:9000 or localhost:9001 show errors or won't load **Causes**: Port conflicts, webpack-dev-server issues, or build failures **Solutions**:
 ```bash
 # Check if ports are in use
 lsof -i :9000
@@ -752,9 +746,7 @@ npm run dev:ext
 ```
 
 #### Issue 4: TypeScript Compilation Errors
-**Symptoms**: Build fails with TypeScript errors
-**Causes**: Type mismatches, missing imports, or configuration issues
-**Resolution**:
+**Symptoms**: Build fails with TypeScript errors **Causes**: Type mismatches, missing imports, or configuration issues **Resolution**:
 ```bash
 # Run TypeScript compiler directly
 npx tsc --noEmit
@@ -767,9 +759,7 @@ cat tsconfig.json
 ```
 
 #### Issue 5: Git Remote Issues
-**Symptoms**: Cannot push to fork or sync with upstream
-**Causes**: Authentication problems or incorrect remote configuration
-**Solutions**:
+**Symptoms**: Cannot push to fork or sync with upstream **Causes**: Authentication problems or incorrect remote configuration **Solutions**:
 ```bash
 # Verify remote configuration
 git remote -v

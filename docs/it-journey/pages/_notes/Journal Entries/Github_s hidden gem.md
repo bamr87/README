@@ -5,8 +5,6 @@ source_file: Github_s hidden gem.md
 title: Github S Hidden Gem
 updated: 2024-02-14 19:49:49+00:00
 ---
-title: "github's hidden gem"
-description: 
-GPT Promt: 
+title: "github's hidden gem" description: GPT Promt:
 
 

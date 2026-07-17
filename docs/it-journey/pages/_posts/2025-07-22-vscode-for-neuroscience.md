@@ -321,10 +321,7 @@ plt.show()
 
 ### VS Code Features for Modeling
 
-**Interactive Development**: Use `# %%` cells to test model components
-**Debugging**: Set breakpoints to inspect model behavior step-by-step
-**Variable Inspector**: Monitor arrays and results in real-time
-**Integrated Plots**: See results immediately without switching applications
+**Interactive Development**: Use `# %%` cells to test model components **Debugging**: Set breakpoints to inspect model behavior step-by-step **Variable Inspector**: Monitor arrays and results in real-time **Integrated Plots**: See results immediately without switching applications
 
 *Reference: VS Code's [Data Science tutorial](https://code.visualstudio.com/docs/datascience/data-science-tutorial) covers advanced modeling workflows*
 

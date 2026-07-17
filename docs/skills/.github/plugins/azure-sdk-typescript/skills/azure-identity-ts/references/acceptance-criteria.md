@@ -4,10 +4,7 @@ title: Azure Identity SDK for TypeScript Acceptance Criteria
 ---
 # Azure Identity SDK for TypeScript Acceptance Criteria
 
-**SDK**: `@azure/identity`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/identity/identity
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/identity` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/identity/identity **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

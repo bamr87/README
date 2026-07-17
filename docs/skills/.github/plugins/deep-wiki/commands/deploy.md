@@ -156,9 +156,7 @@ After generating the workflow, output:
 
 1. **Commit the workflow file:**
    ```bash
-   git add .github/workflows/deploy-wiki.yml wiki/package-lock.json
-   git commit -m "ci: add GitHub Pages deployment for wiki"
-   git push
+git add .github/workflows/deploy-wiki.yml wiki/package-lock.json git commit -m "ci: add GitHub Pages deployment for wiki" git push
    ```
 
 2. **Enable GitHub Pages (REQUIRED — deployments will fail without this):**

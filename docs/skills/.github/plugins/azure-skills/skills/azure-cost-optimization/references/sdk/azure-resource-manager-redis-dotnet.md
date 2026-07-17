@@ -9,8 +9,7 @@ title: Redis Management — .NET SDK Quick Reference
 > in the **azure-resource-manager-redis-dotnet** plugin skill if installed.
 
 ## Install
-dotnet add package Azure.ResourceManager.Redis
-dotnet add package Azure.Identity
+dotnet add package Azure.ResourceManager.Redis dotnet add package Azure.Identity
 
 ## Quick Start
 ```csharp

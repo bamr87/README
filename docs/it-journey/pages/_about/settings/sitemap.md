@@ -77,8 +77,7 @@ find . -name "*.md" -o -name "*.html" | grep -v "_site\\|\\.git\\|node_modules" 
 
 # Create tree structure
 tree -a -I '.git|.github|_site|node_modules|vendor|.bundle|.sass-cache|*.gem' \\
-  --dirsfirst --charset ascii > tree.txt
-\`\`\`
+--dirsfirst --charset ascii > tree.txt \`\`\`
 
 ---
 

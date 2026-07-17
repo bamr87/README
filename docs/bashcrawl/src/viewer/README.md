@@ -4,8 +4,7 @@ title: Bashcrawl Observatory — `src/viewer/`
 ---
 # Bashcrawl Observatory — `src/viewer/`
 
-Self-contained Flask web application for browsing Bashcrawl session logs,
-screenshots, analytics, feedback reports, the dungeon map, and live sessions.
+Self-contained Flask web application for browsing Bashcrawl session logs, screenshots, analytics, feedback reports, the dungeon map, and live sessions.
 
 > **User guide:** [docs/viewer.md](../../docs/viewer.md)  
 > **Design reference:** [docs/viewer.md](../../docs/viewer.md)
@@ -119,9 +118,7 @@ SessionStore            →  AnalyticsEngine  →  /analytics, /map
                                             →  SSE stream → /live
 ```
 
-Sessions are loaded on startup and cached in memory. File modification times
-are polled; new `.jsonl` files are appended automatically. Analytics are
-cached for 60 seconds.
+Sessions are loaded on startup and cached in memory. File modification times are polled; new `.jsonl` files are appended automatically. Analytics are cached for 60 seconds.
 
 ## Dependencies
 

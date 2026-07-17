@@ -157,8 +157,7 @@ az ad app credential reset --id $APP_ID --end-date "2025-12-31"
 }
 ```
 
-**⚠️ Important:** Resetting Client credential will delete all existing credentials.
-**⚠️ Important:** The secret value is only shown once. Store it securely (e.g., Azure Key Vault).
+**⚠️ Important:** Resetting Client credential will delete all existing credentials. **⚠️ Important:** The secret value is only shown once. Store it securely (e.g., Azure Key Vault).
 
 ### List client credentials
 

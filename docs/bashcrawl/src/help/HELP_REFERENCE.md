@@ -45,8 +45,7 @@ bash help.sh merlin "how do I find hidden files?"
 bash help.sh ask "what does ls -F do?"
 ```
 
-Requires `ANTHROPIC_API_KEY` in your environment. Falls back to contextual
-static hints if the key is absent.
+Requires `ANTHROPIC_API_KEY` in your environment. Falls back to contextual static hints if the key is absent.
 
 ## Features
 
@@ -77,9 +76,7 @@ When using the Terminal Illness Textual TUI (`python -m ti`):
 | `merlin <question>` | Open panel and ask Merlin in one step |
 | `Escape` (in chat input) | Return focus to the game terminal |
 
-Merlin responds in character as a wizard guide, offering Socratic hints
-rather than direct answers. He proactively nudges you when you move to a
-new room, take damage, complete a quest, or appear stuck.
+Merlin responds in character as a wizard guide, offering Socratic hints rather than direct answers. He proactively nudges you when you move to a new room, take damage, complete a quest, or appear stuck.
 
 ## Integration
 

@@ -86,8 +86,7 @@ validation_criteria:
 
 ### 🏰 The Ancient Glyph Repository
 
-The sacred repository of Nerd Fonts can be found at:
-**<https://github.com/ryanoasis/nerd-fonts>**
+The sacred repository of Nerd Fonts can be found at: **<https://github.com/ryanoasis/nerd-fonts>**
 
 *This digital archive contains patched versions of popular fonts, enhanced with thousands of additional glyphs that bring your terminal to life.*
 

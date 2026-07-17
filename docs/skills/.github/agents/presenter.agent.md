@@ -138,11 +138,6 @@ components/presenter/
 
 ## Rules
 
-✅ Respect `canvasMode` in all interactive components
-✅ Hide editing UI (resizers, handles) in viewing mode
-✅ Ensure keyboard accessibility
-✅ Support both mouse and keyboard navigation
+✅ Respect `canvasMode` in all interactive components ✅ Hide editing UI (resizers, handles) in viewing mode ✅ Ensure keyboard accessibility ✅ Support both mouse and keyboard navigation
 
-🚫 Never allow content editing in viewing mode
-🚫 Never show presenter notes to audience
-🚫 Never break navigation flow
+🚫 Never allow content editing in viewing mode 🚫 Never show presenter notes to audience 🚫 Never break navigation flow

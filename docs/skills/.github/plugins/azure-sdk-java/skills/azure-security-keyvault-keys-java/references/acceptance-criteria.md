@@ -4,9 +4,7 @@ title: Azure Key Vault Keys SDK for Java Acceptance Criteria
 ---
 # Azure Key Vault Keys SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-security-keyvault-keys`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/keyvault-v2/azure-security-keyvault-keys
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-security-keyvault-keys` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/keyvault-v2/azure-security-keyvault-keys **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -4,9 +4,7 @@ title: Podcast Generation Acceptance Criteria
 ---
 # Podcast Generation Acceptance Criteria
 
-**Skill**: `podcast-generation`
-**Purpose**: Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model
-**Focus**: Script generation, text-to-speech, audio processing, WebSocket streaming
+**Skill**: `podcast-generation` **Purpose**: Generate AI-powered podcast-style audio narratives using Azure OpenAI's GPT Realtime Mini model **Focus**: Script generation, text-to-speech, audio processing, WebSocket streaming
 
 ---
 

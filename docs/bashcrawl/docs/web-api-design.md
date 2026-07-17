@@ -4,9 +4,7 @@ title: Web Frontend API Design (Phase 2 Proposal)
 ---
 # Web Frontend API Design (Phase 2 Proposal)
 
-Design specification for a future custom browser-based Bashcrawl frontend,
-decoupled from Textual. This is a proposal that would replace the current
-`textual-serve` proxy with a purpose-built WebSocket API and xterm.js frontend.
+Design specification for a future custom browser-based Bashcrawl frontend, decoupled from Textual. This is a proposal that would replace the current `textual-serve` proxy with a purpose-built WebSocket API and xterm.js frontend.
 
 ---
 
@@ -279,6 +277,4 @@ Current behavior is:
 ./main.sh --web              # Phase 1 textual-serve
 ```
 
-When Phase 2 is implemented, introduce a distinct opt-in flag first (for example
-`--web-api`) and keep `--web` mapped to the current behavior until the new
-frontend is stable.
+When Phase 2 is implemented, introduce a distinct opt-in flag first (for example `--web-api`) and keep `--web` mapped to the current behavior until the new frontend is stable.

@@ -56,16 +56,13 @@ The Python wrapper operates on the **real bashcrawl filesystem** — the same `e
 
 ### Merlin AI Chat Guide
 
-Press **F3** to open the Merlin chat panel — a side panel where an AI wizard
-guides you through the dungeon using Socratic hints and dungeon metaphors.
+Press **F3** to open the Merlin chat panel — a side panel where an AI wizard guides you through the dungeon using Socratic hints and dungeon metaphors.
 
 ```
 merlin how do I open the scroll?   # Open panel + ask in one command
 ```
 
-Merlin is powered by **Claude** (`anthropic` SDK) and requires
-`ANTHROPIC_API_KEY` in your environment. Without a key, Merlin falls back
-to static contextual hints.
+Merlin is powered by **Claude** (`anthropic` SDK) and requires `ANTHROPIC_API_KEY` in your environment. Without a key, Merlin falls back to static contextual hints.
 
 **Proactive nudges** — Merlin automatically offers guidance when:
 - You enter a new room
@@ -132,9 +129,7 @@ rm -f .ti_save.json
 
 ### Sound Effects & Music
 
-The TUI plays background music and sound effects powered by `miniaudio`.
-Audio is **fully optional** — if `miniaudio` is not installed or no audio
-device is available, the game runs silently with no errors.
+The TUI plays background music and sound effects powered by `miniaudio`. Audio is **fully optional** — if `miniaudio` is not installed or no audio device is available, the game runs silently with no errors.
 
 - **Background music** changes per dungeon area (entrance, cellar, armoury, etc.)
 - **Sound effects** fire on treasure pickup, combat, quests, potions, scrolls, etc.
@@ -157,6 +152,5 @@ cd src/terminal-illness
 python -c "from ti.audio.generate_placeholders import main; main()"
 ```
 
-Replace files in `ti/audio/assets/sfx/` and `ti/audio/assets/music/` with real
-assets. See `ti/audio/assets/README.md` for format details and AI generation guides.
+Replace files in `ti/audio/assets/sfx/` and `ti/audio/assets/music/` with real assets. See `ti/audio/assets/README.md` for format details and AI generation guides.
 

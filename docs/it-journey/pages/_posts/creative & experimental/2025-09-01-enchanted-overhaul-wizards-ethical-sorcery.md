@@ -145,19 +145,15 @@ In a twist of irony, former capitalist titans became converts. One anonymous hed
 
 ### Executive Perspectives
 
-**Maria Rodriguez, CEO of GreenTech Solutions:**
-"Fairwind's reforms forced us to confront our environmental impact head-on. The result? Our stock price tripled as consumers flocked to our sustainable products. Ethics isn't just good PR—it's good business."
+**Maria Rodriguez, CEO of GreenTech Solutions:** "Fairwind's reforms forced us to confront our environmental impact head-on. The result? Our stock price tripled as consumers flocked to our sustainable products. Ethics isn't just good PR—it's good business."
 
-**Dr. James Chen, Chief Economist at Global Finance Institute:**
-"The data is irrefutable. Fairwind's model has created the most stable economic environment in decades. We've seen productivity gains across all sectors, with innovation accelerating as companies focus on long-term value creation."
+**Dr. James Chen, Chief Economist at Global Finance Institute:** "The data is irrefutable. Fairwind's model has created the most stable economic environment in decades. We've seen productivity gains across all sectors, with innovation accelerating as companies focus on long-term value creation."
 
 ### Worker Testimonials
 
-**Sarah Johnson, Former Minimum-Wage Worker:**
-"I went from struggling to pay rent to owning my own home within six months of the reforms. The living wage mandate gave me dignity, and the profit-sharing program made me feel like a true partner in my company's success."
+**Sarah Johnson, Former Minimum-Wage Worker:** "I went from struggling to pay rent to owning my own home within six months of the reforms. The living wage mandate gave me dignity, and the profit-sharing program made me feel like a true partner in my company's success."
 
-**Marcus Thompson, Software Developer:**
-"The transparency requirements eliminated the toxic competition for raises. Now we collaborate openly, sharing knowledge because we all benefit from collective success."
+**Marcus Thompson, Software Developer:** "The transparency requirements eliminated the toxic competition for raises. Now we collaborate openly, sharing knowledge because we all benefit from collective success."
 
 ## Global Echoes and Ongoing Enchantments
 

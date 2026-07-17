@@ -764,17 +764,7 @@ graph TB
 ### Information Architecture
 
 ```
-Content Structure:
-├── Pages (Markdown files)
-│   ├── Collections (_posts, _quests, _docs)
-│   └── Standalone pages
-├── Layouts (HTML + Liquid templates)
-│   └── Inheritance hierarchy
-├── Includes (Reusable components)
-│   └── Modular template pieces
-├── Data Files (_data/)
-│   └── Structured content (YAML, JSON)
-└── Assets (Static files)
+Content Structure: ├── Pages (Markdown files) │   ├── Collections (_posts, _quests, _docs) │   └── Standalone pages ├── Layouts (HTML + Liquid templates) │   └── Inheritance hierarchy ├── Includes (Reusable components) │   └── Modular template pieces ├── Data Files (_data/) │   └── Structured content (YAML, JSON) └── Assets (Static files)
     ├── CSS stylesheets
     ├── JavaScript
     └── Images
@@ -786,8 +776,7 @@ Content Structure:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/bamr87/it-journey.git
-cd it-journey
+git clone https://github.com/bamr87/it-journey.git cd it-journey
 
 # 2. Start Docker environment
 docker-compose up -d
@@ -815,8 +804,7 @@ open http://localhost:4000
 
 **Development Container** (`docker-compose.yml`):
 ```yaml
-services:
-  jekyll:
+services: jekyll:
     image: jekyll/jekyll:latest
     ports:
       - "4000:4000"
@@ -860,10 +848,7 @@ graph LR
 gem "jekyll", "~> 4.3"
 
 # Jekyll Plugins
-gem "jekyll-feed", "~> 0.17"          # RSS feed generation
-gem "jekyll-seo-tag", "~> 2.8"        # SEO optimization
-gem "jekyll-sitemap", "~> 1.4"        # Sitemap generation
-gem "jekyll-paginate", "~> 1.1"       # Pagination support
+gem "jekyll-feed", "~> 0.17"          # RSS feed generation gem "jekyll-seo-tag", "~> 2.8"        # SEO optimization gem "jekyll-sitemap", "~> 1.4"        # Sitemap generation gem "jekyll-paginate", "~> 1.1"       # Pagination support
 
 # Theme
 gem "jekyll-theme-zer0", "~> 1.0"     # Custom theme
@@ -873,8 +858,7 @@ gem "jekyll-theme-zer0", "~> 1.0"     # Custom theme
 
 ```ruby
 # Testing and quality
-gem "rspec", "~> 3.12"                # Testing framework
-gem "rubocop", "~> 1.57"              # Ruby linter
+gem "rspec", "~> 3.12"                # Testing framework gem "rubocop", "~> 1.57"              # Ruby linter
 
 # Development tools
 gem "webrick", "~> 1.8"               # Local web server

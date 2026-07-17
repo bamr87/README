@@ -4,9 +4,7 @@ title: Agent Mode Protocol Specification
 ---
 # Agent Mode Protocol Specification
 
-Bashcrawl provides a headless **agent mode** that lets AI assistants (or any
-programmatic caller) drive the Textual TUI via stdin/stdout, with SVG screenshot
-capture after every command.
+Bashcrawl provides a headless **agent mode** that lets AI assistants (or any programmatic caller) drive the Textual TUI via stdin/stdout, with SVG screenshot capture after every command.
 
 ---
 
@@ -134,9 +132,7 @@ CMD> <original_input>
 
 ## Screenshots
 
-Screenshots are saved as SVG files using Textual's `App.save_screenshot()` method.
-Each SVG is a complete rendering of the TUI at that moment, including the sidebar
-(quests, inventory, room info) and the main terminal output area.
+Screenshots are saved as SVG files using Textual's `App.save_screenshot()` method. Each SVG is a complete rendering of the TUI at that moment, including the sidebar (quests, inventory, room info) and the main terminal output area.
 
 ### Session Directory Structure
 
@@ -154,9 +150,7 @@ logs/screenshots/
     └── manifest.json                # structured index
 ```
 
-This format is compatible with the Bashcrawl Observatory viewer
-(`python3 -m src.viewer`), which discovers screenshot sessions by scanning
-subdirectories under `logs/screenshots/`.
+This format is compatible with the Bashcrawl Observatory viewer (`python3 -m src.viewer`), which discovers screenshot sessions by scanning subdirectories under `logs/screenshots/`.
 
 ### Manifest
 
@@ -196,15 +190,13 @@ Auto-named screenshots use the format:
 {counter:03d}_{sanitized_command}.svg
 ```
 
-Where `sanitized_command` replaces non-alphanumeric characters with underscores
-and truncates to 40 characters.
+Where `sanitized_command` replaces non-alphanumeric characters with underscores and truncates to 40 characters.
 
 ---
 
 ## Bash-Only Agent Mode
 
-When Python or Textual is unavailable, `--agent` automatically falls back to a
-bash-only REPL. You can also request it explicitly with `--agent-bash`.
+When Python or Textual is unavailable, `--agent` automatically falls back to a bash-only REPL. You can also request it explicitly with `--agent-bash`.
 
 This mode provides the same `READY>` / `CMD>` protocol but without:
 - SVG screenshots
@@ -251,8 +243,7 @@ printf '%s\n' \
 
 ## Integration with AI Assistants
 
-The agent mode is designed for AI coding assistants (e.g., GitHub Copilot, Claude)
-that can run terminal commands but cannot interact with full-screen TUI applications.
+The agent mode is designed for AI coding assistants (e.g., GitHub Copilot, Claude) that can run terminal commands but cannot interact with full-screen TUI applications.
 
 ### Key Design Decisions
 

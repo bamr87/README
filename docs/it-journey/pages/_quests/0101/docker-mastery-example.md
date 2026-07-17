@@ -146,8 +146,7 @@ This 🟡 Medium quest expects:
 
 ### ☁️ Cloud Realms Path
 
-*[Cloud platform instructions for AWS, Azure, GCP when applicable]*
-*[Container-based approaches using Docker/Podman]*
+*[Cloud platform instructions for AWS, Azure, GCP when applicable]* *[Container-based approaches using Docker/Podman]*
 
 ```bash
 # Cloud platform commands and configurations

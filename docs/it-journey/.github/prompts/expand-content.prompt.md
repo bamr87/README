@@ -18,8 +18,7 @@ version: 1.0.0
 
 Expand the outline into full content with technical depth and practical examples.
 
-**Outline**: {{ inputs.outline }}
-**Target Audience**: {{ inputs.target_audience }}
+**Outline**: {{ inputs.outline }} **Target Audience**: {{ inputs.target_audience }}
 
 ## Requirements
 

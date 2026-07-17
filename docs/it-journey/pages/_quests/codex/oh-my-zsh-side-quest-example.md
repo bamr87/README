@@ -125,8 +125,7 @@ graph LR
     style Advanced fill:#98fb98
 ```
 
-**Relationship to Parent Quest**:
-This side quest enhances the Terminal Navigation Mastery main quest by adding:
+**Relationship to Parent Quest**: This side quest enhances the Terminal Navigation Mastery main quest by adding:
 - Visual improvements through themes and customization
 - Productivity enhancements via intelligent plugins
 - Workflow optimization for development tasks

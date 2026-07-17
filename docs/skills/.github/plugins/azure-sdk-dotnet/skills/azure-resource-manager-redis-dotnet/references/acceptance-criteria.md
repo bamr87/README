@@ -4,9 +4,7 @@ title: Azure.ResourceManager.Redis (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.Redis (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.Redis`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/redis/Azure.ResourceManager.Redis
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.Redis` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/redis/Azure.ResourceManager.Redis **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -281,8 +281,7 @@ This PR includes:
 
 ```bash
 # Commands run to validate changes
-./scripts/test-infrastructure.sh --verbose
-./scripts/test-init-setup.sh
+./scripts/test-infrastructure.sh --verbose ./scripts/test-init-setup.sh
 ```
 
 ### Test Results

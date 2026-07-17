@@ -198,8 +198,7 @@ docker run -d -p 8080:80 nginx
 - `-d` = Detached (run in background)
 - `-p 8080:80` = Map port 8080 on your machine to port 80 in container
 
-**Test it:**
-Open http://localhost:8080 in your browser
+**Test it:** Open http://localhost:8080 in your browser
 
 You should see "Welcome to nginx!"
 

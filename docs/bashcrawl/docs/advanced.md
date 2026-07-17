@@ -40,8 +40,7 @@ entrance/
 
 ## Scroll Format Standards
 
-Scrolls follow a depth-based format hierarchy defined in
-`.github/instructions/scrolls.instructions.md`:
+Scrolls follow a depth-based format hierarchy defined in `.github/instructions/scrolls.instructions.md`:
 
 ### Level 1 — Entrance (Pure ASCII)
 
@@ -143,10 +142,7 @@ python -m ti
 
 ## AI Agent Tests
 
-The test suite ships an **AI-driven agent** (powered by Claude via the
-Anthropic API) that plays through the game autonomously. It validates
-progression, combat mechanics, error recovery, and help system usage without
-human input.
+The test suite ships an **AI-driven agent** (powered by Claude via the Anthropic API) that plays through the game autonomously. It validates progression, combat mechanics, error recovery, and help system usage without human input.
 
 ### Prerequisites
 
@@ -160,8 +156,7 @@ export ANTHROPIC_API_KEY="sk-ant-..."
 
 ### Running the tests
 
-AI tests are skipped by default (`pytest.ini` excludes the `ai` marker).
-Pass `-m ai` to opt in:
+AI tests are skipped by default (`pytest.ini` excludes the `ai` marker). Pass `-m ai` to opt in:
 
 ```bash
 cd test
@@ -193,15 +188,11 @@ Each test class uses a predefined **scenario** from `test/ai/scenarios.py`:
 | `combat_stress` | 80 | medium, combat | Combat encounters with death, retry, and recovery |
 | `speed_run` | 40 | quick, speed | Minimum-command critical path, no detours |
 
-**Cost guidance** — one agent turn makes one Anthropic API call. A
-`new_player` or `speed_run` scenario (≤40 turns) is inexpensive. A
-`full_playthrough` at 150 turns costs proportionally more. Check
-[Anthropic pricing](https://www.anthropic.com/pricing) for current rates.
+**Cost guidance** — one agent turn makes one Anthropic API call. A `new_player` or `speed_run` scenario (≤40 turns) is inexpensive. A `full_playthrough` at 150 turns costs proportionally more. Check [Anthropic pricing](https://www.anthropic.com/pricing) for current rates.
 
 ### Watching a test live in the Observatory Viewer
 
-The agent writes every event to `logs/live_agent.jsonl` in real time. The
-Observatory Viewer tails this file and streams it to the browser via SSE.
+The agent writes every event to `logs/live_agent.jsonl` in real time. The Observatory Viewer tails this file and streams it to the browser via SSE.
 
 Open two terminals before starting a test run:
 
@@ -213,9 +204,7 @@ python3 -m src.viewer
 cd test && pytest -m ai -s
 ```
 
-Then open **http://127.0.0.1:5000/live/agent** in your browser. The page
-connects via SSE and displays each agent command, its output, the agent's
-current room, inventory, and HP as the test progresses — no manual refresh.
+Then open **http://127.0.0.1:5000/live/agent** in your browser. The page connects via SSE and displays each agent command, its output, the agent's current room, inventory, and HP as the test progresses — no manual refresh.
 
 The `/live/agent` page shows:
 
@@ -224,14 +213,11 @@ The `/live/agent` page shows:
 - Current room, inventory, and HP — updated after every command
 - Session end summary (exit reason, rooms visited, total turns, elapsed time)
 
-See [docs/viewer.md](viewer.md) for the full element reference and all live
-API endpoints (`/api/live/agent/stream`, `/api/live/agent/status`,
-`/api/live/agent/events`).
+See [docs/viewer.md](viewer.md) for the full element reference and all live API endpoints (`/api/live/agent/stream`, `/api/live/agent/status`, `/api/live/agent/events`).
 
 ### Viewing completed test results
 
-Closed sessions are retained in the JSONL log files and appear immediately in
-the viewer:
+Closed sessions are retained in the JSONL log files and appear immediately in the viewer:
 
 | Page | URL | What to look for |
 |------|-----|------------------|

@@ -18,8 +18,7 @@ version: 1.0.0
 
 Generate a comprehensive summary of the workflow execution.
 
-**Workflow**: {{ inputs.workflow_name }}
-**Execution ID**: {{ inputs.execution_id }}
+**Workflow**: {{ inputs.workflow_name }} **Execution ID**: {{ inputs.execution_id }}
 
 ## Summary Requirements
 

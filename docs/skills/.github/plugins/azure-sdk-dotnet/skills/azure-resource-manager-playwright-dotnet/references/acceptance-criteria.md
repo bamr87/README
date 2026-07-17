@@ -4,10 +4,7 @@ title: Azure.ResourceManager.Playwright SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.Playwright SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.Playwright`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/playwright/Azure.ResourceManager.Playwright
-**Package**: https://www.nuget.org/packages/Azure.ResourceManager.Playwright
-**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.Playwright` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/playwright/Azure.ResourceManager.Playwright **Package**: https://www.nuget.org/packages/Azure.ResourceManager.Playwright **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

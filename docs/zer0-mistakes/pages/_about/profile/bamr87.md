@@ -17,9 +17,7 @@ website: https://it-journey.dev
 ---
 # Amr Abdel-Motaleb
 
-IT Wizard, Software Architect, and Tech Enthusiast based in Denver, CO. Creator
-of the [Zer0-Mistakes](https://github.com/bamr87/zer0-mistakes) Jekyll theme and
-the [IT-Journey](https://it-journey.dev) learning platform.
+IT Wizard, Software Architect, and Tech Enthusiast based in Denver, CO. Creator of the [Zer0-Mistakes](https://github.com/bamr87/zer0-mistakes) Jekyll theme and the [IT-Journey](https://it-journey.dev) learning platform.
 
 - **GitHub:** [@bamr87](https://github.com/bamr87)
 - **LinkedIn:** [amrabdel](https://www.linkedin.com/in/amrabdel)
@@ -46,8 +44,7 @@ the [IT-Journey](https://it-journey.dev) learning platform.
 
 ## Maintaining this profile
 
-This page is synced from the standalone [`bamr87`](https://github.com/bamr87/bamr87)
-repository as a git subtree:
+This page is synced from the standalone [`bamr87`](https://github.com/bamr87/bamr87) repository as a git subtree:
 
 ```shell
 cd ~/github/it-journey

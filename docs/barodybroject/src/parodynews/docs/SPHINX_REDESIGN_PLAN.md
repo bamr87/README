@@ -152,8 +152,7 @@ docs/
 ### Documentation Content Plan
 
 #### 1. Getting Started Guide
-**Target Audience**: New users and developers
-**Content**:
+**Target Audience**: New users and developers **Content**:
 - Prerequisites (Python, Docker, OpenAI account)
 - Installation via Docker Compose
 - Initial configuration (environment variables, database setup)
@@ -163,8 +162,7 @@ docs/
 - Generating first piece of content
 
 #### 2. User Guide
-**Target Audience**: Content creators and administrators
-**Content**:
+**Target Audience**: Content creators and administrators **Content**:
 - Understanding AI assistants and assistant groups
 - Creating and configuring assistants
 - Managing OpenAI models
@@ -176,8 +174,7 @@ docs/
 - Using the Django admin interface
 
 #### 3. Developer Guide
-**Target Audience**: Developers contributing to the project
-**Content**:
+**Target Audience**: Developers contributing to the project **Content**:
 - System architecture overview
 - Django project structure
 - Development environment setup
@@ -191,8 +188,7 @@ docs/
 - CI/CD pipeline documentation
 
 #### 4. API Reference
-**Target Audience**: Developers and integrators
-**Content**:
+**Target Audience**: Developers and integrators **Content**:
 - Auto-generated from docstrings using sphinx.ext.autodoc
 - Django models with field descriptions
 - Views and their parameters
@@ -206,8 +202,7 @@ docs/
 - REST API endpoints with request/response examples
 
 #### 5. Integration Guides
-**Target Audience**: System integrators and DevOps
-**Content**:
+**Target Audience**: System integrators and DevOps **Content**:
 - OpenAI API integration patterns
 - Error handling and retry logic
 - Rate limiting strategies
@@ -221,8 +216,7 @@ docs/
 - Secrets management
 
 #### 6. Tutorials
-**Target Audience**: New developers and users
-**Content**:
+**Target Audience**: New developers and users **Content**:
 - Step-by-step guided tutorials
 - Building a basic assistant from scratch
 - Creating custom JSON schemas
@@ -231,8 +225,7 @@ docs/
 - Each tutorial with complete code examples
 
 #### 7. How-To Guides
-**Target Audience**: Users solving specific problems
-**Content**:
+**Target Audience**: Users solving specific problems **Content**:
 - Task-oriented guides
 - Customizing AI prompts
 - Managing API keys securely
@@ -243,8 +236,7 @@ docs/
 - Monitoring and logging
 
 #### 8. Reference Documentation
-**Target Audience**: All users needing quick lookup
-**Content**:
+**Target Audience**: All users needing quick lookup **Content**:
 - Complete Django settings reference
 - Environment variables catalog
 - Database schema diagrams
@@ -254,8 +246,7 @@ docs/
 - Glossary of terms
 
 #### 9. Changelog
-**Target Audience**: Users upgrading or tracking changes
-**Content**:
+**Target Audience**: Users upgrading or tracking changes **Content**:
 - Version history
 - Release notes
 - Migration guides

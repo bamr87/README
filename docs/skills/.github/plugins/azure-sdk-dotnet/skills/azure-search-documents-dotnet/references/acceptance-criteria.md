@@ -4,10 +4,7 @@ title: Azure Search Documents SDK Acceptance Criteria (.NET)
 ---
 # Azure Search Documents SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Search.Documents`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/search/Azure.Search.Documents
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Search.Documents` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/search/Azure.Search.Documents **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

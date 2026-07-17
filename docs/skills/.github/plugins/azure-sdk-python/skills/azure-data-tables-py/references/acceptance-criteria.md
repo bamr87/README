@@ -4,10 +4,7 @@ title: Azure Data Tables SDK Acceptance Criteria
 ---
 # Azure Data Tables SDK Acceptance Criteria
 
-**SDK**: `azure-data-tables`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-data-tables` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

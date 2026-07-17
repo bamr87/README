@@ -50,8 +50,7 @@ Building an intelligent content review system that leverages LLMs (like Gemini) 
 
 ## TODO
 
-{{ page.TODO }}
-{:.dev-settings .alert .alert-warning}
+{{ page.TODO }} {:.dev-settings .alert .alert-warning}
 
 ## Recent Additions
 
@@ -148,8 +147,7 @@ For those who are intermediate/advanced and want to work on a specific stack:
 5. Infrastructure (AWS, Azure, GCP, Linux)
 6. Solutions (LAMP, Jamstack, MERN, WINS)
 
-[Source](https://devopedia.org/full-stack-developer)
-[Wiki](https://en.wikipedia.org/wiki/Solution_stack)
+[Source](https://devopedia.org/full-stack-developer) [Wiki](https://en.wikipedia.org/wiki/Solution_stack)
 
 ### Specialization route
 
@@ -244,8 +242,7 @@ local_git_pc             : [ *home-win, 'github\' ]
 local_git_mac            : [ *home-mac, 'github/' ]
 ```
 
-NOTE: Replace `$HOME` with your home directory. Normally, it is the user id of the machine. Just type `echo $HOME` in the terminal.
-{: .alert .alert-primary }
+NOTE: Replace `$HOME` with your home directory. Normally, it is the user id of the machine. Just type `echo $HOME` in the terminal. {: .alert .alert-primary }
 
 ## Sitemap
 

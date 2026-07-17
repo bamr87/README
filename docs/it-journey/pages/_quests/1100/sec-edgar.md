@@ -68,22 +68,13 @@ validation_criteria:
 - Transformed output (CSV/JSON) suitable for analysis
 - Short write-up of insights learned
 ---
-*In the twilight of the Digital Realm, a stern monarch sits upon a throne of filings—King EDGAR,
-custodian of truths encoded in structured scrolls and cryptic XBRL sigils. His castle is vast, his
-archives deep, his sentinels polite but strict. You are summoned—not to plunder—but to liberate
-knowledge for the commons. Assemble your AI soldiers, pledge to the Code of Responsible Requesting,
-and let transparency reign.*
+*In the twilight of the Digital Realm, a stern monarch sits upon a throne of filings—King EDGAR, custodian of truths encoded in structured scrolls and cryptic XBRL sigils. His castle is vast, his archives deep, his sentinels polite but strict. You are summoned—not to plunder—but to liberate knowledge for the commons. Assemble your AI soldiers, pledge to the Code of Responsible Requesting, and let transparency reign.*
 
 ## 🌟 The Legend Behind This Quest
 
-For decades, markets have whispered secrets in footnotes and exhibits. EDGAR is no villain—merely a
-formidable warden. When approached with courtesy (and a proper User-Agent), EDGAR gladly opens the
-gates via JSON endpoints and structured documents so analysts, journalists, and citizens can
-understand the workings of the realm.
+For decades, markets have whispered secrets in footnotes and exhibits. EDGAR is no villain—merely a formidable warden. When approached with courtesy (and a proper User-Agent), EDGAR gladly opens the gates via JSON endpoints and structured documents so analysts, journalists, and citizens can understand the workings of the realm.
 
-This quest teaches you to: identify the gates (endpoints), approach with etiquette (headers and
-rate limits), marshal AI allies (parsers and summarizers), and transform filings into usable
-insights.
+This quest teaches you to: identify the gates (endpoints), approach with etiquette (headers and rate limits), marshal AI allies (parsers and summarizers), and transform filings into usable insights.
 
 ## 🎯 Quest Objectives
 
@@ -348,8 +339,7 @@ Bonus Points:
 
 ### 🏆 Master Challenge: The Archivist (🕐 60-90 minutes)
 
-Objective: Create a reusable module (Python/Node) that: fetches submissions, normalizes filings,
-optionally pulls one XBRL concept, and writes both CSV and JSON with a run log.
+Objective: Create a reusable module (Python/Node) that: fetches submissions, normalizes filings, optionally pulls one XBRL concept, and writes both CSV and JSON with a run log.
 
 Success Criteria:
 

@@ -74,8 +74,7 @@ title: Log & Screenshot Viewer — Design Reference
 
 - **Read-only.** The viewer never modifies log files. Pure read + watch.
 - **No database.** JSONL files are parsed on-demand and cached in memory. At
-  current scale (~244 sessions, 2K total events, 61 MB logs) this fits
-  comfortably in a single Python process.
+current scale (~244 sessions, 2K total events, 61 MB logs) this fits comfortably in a single Python process.
 - **No JS build step.** Vanilla JS modules (`<script type="module">`), CSS
   custom properties for theming. Chart.js loaded via CDN for analytics charts.
 - **Fantasy theme.** The UI uses the same dungeon/adventure aesthetic as the
@@ -134,10 +133,7 @@ class SessionStore:
     def refresh() -> None      # Re-scan for new files
 ```
 
-**Caching strategy:** Full load on startup (< 1 second for 244 files). A
-background `watchdog` or polling loop detects new `.jsonl` files and appends
-them. Individual session objects are cached; the JSONL files are only re-read
-when the file mtime changes.
+**Caching strategy:** Full load on startup (< 1 second for 244 files). A background `watchdog` or polling loop detects new `.jsonl` files and appends them. Individual session objects are cached; the JSONL files are only re-read when the file mtime changes.
 
 ### 2.2 Screenshot Loader (`loaders/screenshots.py`)
 
@@ -173,9 +169,7 @@ class ScreenshotStore:
     def find_by_session_sid(sid: str) -> list[ScreenshotSession]
 ```
 
-**Cross-referencing:** When a JSONL session contains `screenshot` events, the
-`screenshot_path` field links to files inside a screenshot directory. The loader
-builds a reverse index: `session SID → screenshot directory names`.
+**Cross-referencing:** When a JSONL session contains `screenshot` events, the `screenshot_path` field links to files inside a screenshot directory. The loader builds a reverse index: `session SID → screenshot directory names`.
 
 ### 2.3 Feedback Loader (`loaders/feedback.py`)
 
@@ -199,8 +193,7 @@ class FeedbackStore:
 
 ### 2.4 Analytics Engine (`analytics/engine.py`)
 
-Computes aggregate statistics across all sessions (mirrors `lib/analyze.sh` but
-richer).
+Computes aggregate statistics across all sessions (mirrors `lib/analyze.sh` but richer).
 
 ```python
 @dataclass
@@ -302,8 +295,7 @@ class AnalyticsEngine:
 
 #### SVG Rendering
 
-SVGs are served directly as `<img>` or inline `<object>` elements. Flask serves
-them from `logs/screenshots/` with correct `Content-Type: image/svg+xml`.
+SVGs are served directly as `<img>` or inline `<object>` elements. Flask serves them from `logs/screenshots/` with correct `Content-Type: image/svg+xml`.
 
 ### F3: Cross-Session Analytics Dashboard
 
@@ -385,9 +377,7 @@ An interactive SVG/canvas rendering of the full dungeon structure:
 | **Heatmap overlay** | Toggle color intensity based on visit frequency |
 | **Legend** | Color coding for room types (visible, hidden, unlocked) |
 
-**Implementation:** D3.js force-directed graph or hand-positioned SVG with JS
-interactivity. The room topology is static and can be hardcoded as a JSON
-adjacency list — it won't change often.
+**Implementation:** D3.js force-directed graph or hand-positioned SVG with JS interactivity. The room topology is static and can be hardcoded as a JSON adjacency list — it won't change often.
 
 ```python
 # src/viewer/data/dungeon_map.json
@@ -411,8 +401,7 @@ adjacency list — it won't change often.
 
 **Route:** `/live`
 
-Uses **Server-Sent Events (SSE)** to push updates to the browser as new log
-events arrive.
+Uses **Server-Sent Events (SSE)** to push updates to the browser as new log events arrive.
 
 | Element | Description |
 |---------|-------------|
@@ -754,9 +743,7 @@ watchdog>=4.0
 
 ### Test Data
 
-Use `lib/test_logging.sh` to generate sample session data, or create dedicated
-fixtures in `test/fixtures/viewer/` with known JSONL content for deterministic
-assertions.
+Use `lib/test_logging.sh` to generate sample session data, or create dedicated fixtures in `test/fixtures/viewer/` with known JSONL content for deterministic assertions.
 
 ---
 

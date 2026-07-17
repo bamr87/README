@@ -71,8 +71,7 @@ The IT-Journey now features **Guardian 2.0**, a comprehensive testing framework 
 | Reporting | GitHub Actions | Automated issues | Daily at 00:00 UTC |
 | Configuration | YAML + Environment | Flexible settings | Zero-downtime updates |
 
-**Q: Why does link health matter?**
-A: According to Ahrefs' 2024 SEO study, websites with broken links experience 23% lower search rankings. For educational platforms, dead links directly impact learning outcomes.
+**Q: Why does link health matter?** A: According to Ahrefs' 2024 SEO study, websites with broken links experience 23% lower search rankings. For educational platforms, dead links directly impact learning outcomes.
 
 > **Q: But isn't link checking simple?**
 > A: Basic link checking is simple, but intelligent analysis isn't. Link Health Guardian v3.0 goes beyond HTTP status codes—it categorizes failures, suggests fixes via AI, computes delta trends, and provides educational context. This transforms a maintenance task into a learning opportunity.
@@ -110,8 +109,7 @@ This provides a beautiful TUI (Text User Interface) to browse quests, docs, and 
 
 ### For Beginners
 
-**Q: Where should I start if I have zero coding experience?**
-A: Start with our Zero to Hero guide, which was designed specifically for absolute beginners:
+**Q: Where should I start if I have zero coding experience?** A: Start with our Zero to Hero guide, which was designed specifically for absolute beginners:
 
 1. **Start with Zero**: Follow our [Zero to Hero guide](zer0.md) 
 2. **Basic Quests**: Complete foundational [learning quests](pages/_quests/)
@@ -152,8 +150,7 @@ A: Start with our Zero to Hero guide, which was designed specifically for absolu
 
 Gamified learning experiences that transform technical tutorials into engaging adventures. According to a 2024 study by the American Educational Research Association, gamified learning increases knowledge retention by 40% compared to traditional instruction.
 
-**Q: What makes quests different from regular tutorials?**
-A: Quests combine narrative elements with practical exercises:
+**Q: What makes quests different from regular tutorials?** A: Quests combine narrative elements with practical exercises:
 
 - **Binary Level System**: Progressive skill development from Level 0000 (beginner) to Level 1111 (expert)
 - **Fantasy Themes**: RPG-style narratives make learning memorable
@@ -243,8 +240,7 @@ Research by Carnegie Mellon University's Human-Computer Interaction Institute sh
 | AI Integration | OpenAI GPT-4 Turbo | Environment secrets |
 | Container | Docker 24.0+ | `Dockerfile`, `docker-compose.yml` |
 
-**Q: Why Jekyll instead of newer alternatives like Astro or Next.js?**
-A: Jekyll offers native GitHub Pages integration with zero build configuration. For educational content that prioritizes accessibility over cutting-edge features, Jekyll's simplicity reduces maintenance overhead by approximately 60% compared to JavaScript-based alternatives.
+**Q: Why Jekyll instead of newer alternatives like Astro or Next.js?** A: Jekyll offers native GitHub Pages integration with zero build configuration. For educational content that prioritizes accessibility over cutting-edge features, Jekyll's simplicity reduces maintenance overhead by approximately 60% compared to JavaScript-based alternatives.
 
 ### Development Environment Comparison
 
@@ -299,37 +295,31 @@ After engaging with the IT-Journey platform, learners will have:
 
 ### Getting Started
 
-**Q: What are the system requirements to use IT-Journey?**
-A: You need a computer running macOS 12+ (Monterey), Windows 10/11, or Ubuntu 20.04+. Additionally, you'll need:
+**Q: What are the system requirements to use IT-Journey?** A: You need a computer running macOS 12+ (Monterey), Windows 10/11, or Ubuntu 20.04+. Additionally, you'll need:
 - 4GB RAM minimum (8GB recommended)
 - 10GB free disk space
 - Git 2.30+ installed
 - Internet connection for downloading dependencies
 
-**Q: How much time should I dedicate to learning?**
-A: Based on learner surveys conducted between March 2022 and December 2025:
+**Q: How much time should I dedicate to learning?** A: Based on learner surveys conducted between March 2022 and December 2025:
 - **Beginners**: 10-15 hours/week yields noticeable progress in 4-6 weeks
 - **Intermediate**: 8-12 hours/week for skill consolidation
 - **Advanced**: 5-10 hours/week for contribution and mentorship
 
-**Q: Is this suitable for complete beginners with no coding experience?**
-A: Yes! The Zero to Hero path was specifically designed for absolute beginners. Over 60% of our learner community started with zero programming experience.
+**Q: Is this suitable for complete beginners with no coding experience?** A: Yes! The Zero to Hero path was specifically designed for absolute beginners. Over 60% of our learner community started with zero programming experience.
 
 ### Technical Questions
 
-**Q: Which programming languages will I learn?**
-A: IT-Journey covers:
+**Q: Which programming languages will I learn?** A: IT-Journey covers:
 - **Bash/Shell**: System automation and scripting
 - **Python 3.10+**: General purpose programming, automation, data analysis
 - **JavaScript ES2023**: Web development and interactivity
 - **Ruby 3.2+**: Jekyll customization and plugins
 - **YAML**: Configuration and data serialization
 
-**Q: Can I use IT-Journey offline?**
-A: Yes, after initial setup. Clone the repository, install dependencies, and you can run `bundle exec jekyll serve` locally without internet access. Some features (AI analysis, external links) require connectivity.
+**Q: Can I use IT-Journey offline?** A: Yes, after initial setup. Clone the repository, install dependencies, and you can run `bundle exec jekyll serve` locally without internet access. Some features (AI analysis, external links) require connectivity.
 
-**Q: How do I troubleshoot build errors?**
-A: Common solutions:
+**Q: How do I troubleshoot build errors?** A: Common solutions:
 1. Run `bundle update` to update dependencies
 2. Check Ruby version: `ruby --version` (need 3.2.0+)
 3. Clear cache: `bundle exec jekyll clean`
@@ -337,18 +327,15 @@ A: Common solutions:
 
 ### Community & Contributing
 
-**Q: How can I contribute if I'm still learning?**
-A: Start with these beginner-friendly contributions:
+**Q: How can I contribute if I'm still learning?** A: Start with these beginner-friendly contributions:
 - Fix typos or improve documentation clarity
 - Add comments to code examples
 - Report issues you encounter
 - Answer questions in GitHub Discussions
 
-**Q: Are there any live sessions or meetups?**
-A: Currently, IT-Journey is primarily asynchronous. However, we host quarterly virtual office hours announced via GitHub Discussions. Join the community to stay informed!
+**Q: Are there any live sessions or meetups?** A: Currently, IT-Journey is primarily asynchronous. However, we host quarterly virtual office hours announced via GitHub Discussions. Join the community to stay informed!
 
-**Q: How do I get my contributions recognized?**
-A: All contributors are acknowledged in our [CHANGELOG.md](CHANGELOG.md). Significant contributions may be featured in our monthly newsletter and social media.
+**Q: How do I get my contributions recognized?** A: All contributors are acknowledged in our [CHANGELOG.md](CHANGELOG.md). Significant contributions may be featured in our monthly newsletter and social media.
 
 ---
 
@@ -416,8 +403,7 @@ We welcome contributions from learners and experts alike:
 
 ### Getting Help
 
-**Q: Where should I ask questions?**
-A: Use these channels based on your needs:
+**Q: Where should I ask questions?** A: Use these channels based on your needs:
 
 | Question Type | Best Channel | Response Time |
 |--------------|--------------|---------------|
@@ -474,8 +460,7 @@ The IT-Journey is built on fundamental principles that guide all development and
 - Automated monitoring and proactive issue detection
 - Clear recovery procedures and rollback capabilities
 
-**Q: Why "design for failure" instead of "prevent failures"?**
-A: Because systems will eventually fail. As documented by Google's Site Reliability Engineering team, accepting failure as inevitable leads to more resilient systems than attempting to prevent all failures.
+**Q: Why "design for failure" instead of "prevent failures"?** A: Because systems will eventually fail. As documented by Google's Site Reliability Engineering team, accepting failure as inevitable leads to more resilient systems than attempting to prevent all failures.
 
 ### Don't Repeat Yourself (DRY)
 - Reusable components and automated generation

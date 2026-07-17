@@ -5,11 +5,7 @@ level: 0
 source_file: blacksun0.md
 title: Blacksun0
 ---
-Level0 is a remote format string intended to get you started with
-blacksun. It is a remote format string bug with you being able to see
-the reply, with address space randomisation enabled. You'll need to use
-the direct parameter access method to analyse the stack and to
-manipulate it.
+Level0 is a remote format string intended to get you started with blacksun. It is a remote format string bug with you being able to see the reply, with address space randomisation enabled. You'll need to use the direct parameter access method to analyse the stack and to manipulate it.
 
 Once getting access to a shell, read /etc/motd for more information
 
@@ -22,7 +18,6 @@ Once getting access to a shell, read /etc/motd for more information
 |--------------------------------------------:+:------------------------------------------------|
 | Location:                                   | Connect to blacksun.overthewire.org on port 79 	|
 
-Alternatively, there is a debug version on port 78 if you need help
-understanding what you're seeing
+Alternatively, there is a debug version on port 78 if you need help understanding what you're seeing
 
 {% include showFile.html path="blacksun0.c" %}

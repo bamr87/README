@@ -11,11 +11,7 @@ source_file: components.md
 title: Components
 ---
 <p class="text-body-secondary">
-  Live render of <code>_includes/components/component-showcase.html</code> — the
-  reusable Bootstrap 5.3 pattern gallery. The breadcrumb and list-group entries
-  here are <strong>demo links only</strong>: they are intentionally inert
-  (<code>href="#"</code>) so this include never injects site-absolute paths that
-  would 404 on remote-theme consumers (issue #219).
+Live render of <code>_includes/components/component-showcase.html</code> — the reusable Bootstrap 5.3 pattern gallery. The breadcrumb and list-group entries here are <strong>demo links only</strong>: they are intentionally inert (<code>href="#"</code>) so this include never injects site-absolute paths that would 404 on remote-theme consumers (issue #219).
 </p>
 
 {% include components/component-showcase.html %}

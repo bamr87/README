@@ -469,8 +469,7 @@ With your character fully defined, you're ready to:
 
 *Your character is built, your quest log is ready, and your adventure awaits! Remember: every expert was once a beginner, but the difference between those who succeed and those who don't is the clarity of vision and consistency of action. You now have both.*
 
-**Ready to begin your specialization training? Your character awaits their first real challenge!** ⚔️✨
-A wise approach indeed! Building your character in the IT realm means equipping yourself with the right tools and environment. Let's shape your initial loadout:
+**Ready to begin your specialization training? Your character awaits their first real challenge!** ⚔️✨ A wise approach indeed! Building your character in the IT realm means equipping yourself with the right tools and environment. Let's shape your initial loadout:
 
 ### 1. **Choosing Your Operating System**
 

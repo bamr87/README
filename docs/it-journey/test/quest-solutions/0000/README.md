@@ -4,8 +4,7 @@ title: Level 0000 — Quest Solutions
 ---
 # Level 0000 — Quest Solutions
 
-**Level**: 0000 — Foundation & Init World
-**Quest Source**: [pages/_quests/0000/](../../pages/_quests/0000/)
+**Level**: 0000 — Foundation & Init World **Quest Source**: [pages/_quests/0000/](../../pages/_quests/0000/)
 
 ---
 

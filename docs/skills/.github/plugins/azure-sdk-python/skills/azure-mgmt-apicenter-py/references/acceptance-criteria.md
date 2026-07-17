@@ -4,10 +4,7 @@ title: Azure API Center Management SDK Acceptance Criteria
 ---
 # Azure API Center Management SDK Acceptance Criteria
 
-**SDK**: `azure-mgmt-apicenter`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Package**: `azure.mgmt.apicenter`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-mgmt-apicenter` **Repository**: https://github.com/Azure/azure-sdk-for-python **Package**: `azure.mgmt.apicenter` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

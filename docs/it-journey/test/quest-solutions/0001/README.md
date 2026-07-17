@@ -4,8 +4,7 @@ title: Level 0001 — Quest Solutions
 ---
 # Level 0001 — Quest Solutions
 
-**Level**: 0001 — Journeyman Challenges
-**Quest Source**: [pages/_quests/0001/](../../pages/_quests/0001/)
+**Level**: 0001 — Journeyman Challenges **Quest Source**: [pages/_quests/0001/](../../pages/_quests/0001/)
 
 ---
 

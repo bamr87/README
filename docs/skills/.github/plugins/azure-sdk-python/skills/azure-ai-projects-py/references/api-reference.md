@@ -1150,5 +1150,4 @@ from azure.ai.projects.models import (
 
 ---
 
-*Document generated from azure-ai-projects v2.0.0b4 source code analysis.*
-*Last updated: February 2026*
+*Document generated from azure-ai-projects v2.0.0b4 source code analysis.* *Last updated: February 2026*

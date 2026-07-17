@@ -3,8 +3,7 @@ source_file: ANALYSIS_SUMMARY.md
 title: IT-Journey Link Health Analysis - Executive Summary
 ---
 # IT-Journey Link Health Analysis - Executive Summary
-**Generated**: 2025-12-11
-**Analysis of**: Link check run on 2025-12-12T03:20:06Z
+**Generated**: 2025-12-11 **Analysis of**: Link check run on 2025-12-12T03:20:06Z
 
 ---
 

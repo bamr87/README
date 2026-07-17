@@ -4,8 +4,7 @@ title: Theme Benchmark — Expected Results
 ---
 # Theme Benchmark — Expected Results
 
-**Quest**: Terminal Enchantment — Challenge 2
-**Purpose**: Reference benchmark data for common Oh-My-Zsh themes
+**Quest**: Terminal Enchantment — Challenge 2 **Purpose**: Reference benchmark data for common Oh-My-Zsh themes
 
 ---
 

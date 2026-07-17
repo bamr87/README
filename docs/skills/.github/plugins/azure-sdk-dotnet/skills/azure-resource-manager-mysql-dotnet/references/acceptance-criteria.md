@@ -4,9 +4,7 @@ title: Azure.ResourceManager.MySql (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.MySql (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.MySql`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mysql/Azure.ResourceManager.MySql
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.MySql` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mysql/Azure.ResourceManager.MySql **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

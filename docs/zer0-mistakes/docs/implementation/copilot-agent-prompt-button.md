@@ -281,17 +281,12 @@ Wrap the dropdown `<div>` in a Liquid condition:
 
 ## FAQ
 
-**Q: Does this send any data to GitHub automatically?**
-No. The button opens a browser URL. The user sees the pre-filled issue form and must click "Submit new issue" themselves.
+**Q: Does this send any data to GitHub automatically?** No. The button opens a browser URL. The user sees the pre-filled issue form and must click "Submit new issue" themselves.
 
-**Q: Can I assign the issue to someone other than `@copilot`?**
-Yes. Change `assignees=copilot` in the `href` to any GitHub username, or leave it blank to let the user assign manually.
+**Q: Can I assign the issue to someone other than `@copilot`?** Yes. Change `assignees=copilot` in the `href` to any GitHub username, or leave it blank to let the user assign manually.
 
-**Q: Will this work on GitHub Pages?**
-Yes. All rendering happens in Jekyll at build time via Liquid. There is no JavaScript involved in building the URL.
+**Q: Will this work on GitHub Pages?** Yes. All rendering happens in Jekyll at build time via Liquid. There is no JavaScript involved in building the URL.
 
-**Q: What if a prompt body is very long?**
-GitHub's `body` query parameter has a practical limit (~8000 characters). Keep individual `body` values in `prompts.yml` under ~5000 characters to leave room for the context tables.
+**Q: What if a prompt body is very long?** GitHub's `body` query parameter has a practical limit (~8000 characters). Keep individual `body` values in `prompts.yml` under ~5000 characters to leave room for the context tables.
 
-**Q: Can I use this in the `it-journey` site?**
-Yes. Copy `_data/prompts.yml` to the target repo and merge the Copilot Agent dropdown block from `_includes/content/intro.html`. Since `it-journey` uses `zer0-mistakes` as a remote theme, creating a local override at `_includes/content/intro.html` (as demonstrated in PR #198) is the recommended approach.
+**Q: Can I use this in the `it-journey` site?** Yes. Copy `_data/prompts.yml` to the target repo and merge the Copilot Agent dropdown block from `_includes/content/intro.html`. Since `it-journey` uses `zer0-mistakes` as a remote theme, creating a local override at `_includes/content/intro.html` (as demonstrated in PR #198) is the recommended approach.

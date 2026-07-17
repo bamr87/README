@@ -4,9 +4,7 @@ title: Azure Monitor Ingestion SDK for Java Acceptance Criteria
 ---
 # Azure Monitor Ingestion SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-monitor-ingestion`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-ingestion
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-monitor-ingestion` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-ingestion **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

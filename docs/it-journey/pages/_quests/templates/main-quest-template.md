@@ -489,8 +489,7 @@ After completing this quest, validate your work using the **Quest Solutions Fram
 zsh test/quest-solutions/<LEVEL>/<quest-slug>/scripts/validate-*.sh
 ```
 
-**Solution materials** (answer keys, validation scripts, reference reports) are in:
-`test/quest-solutions/<LEVEL>/<quest-slug>/`
+**Solution materials** (answer keys, validation scripts, reference reports) are in: `test/quest-solutions/<LEVEL>/<quest-slug>/`
 
 > Complete the quest before consulting solutions. The learning is in the journey!
 

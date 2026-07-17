@@ -19,8 +19,7 @@ GitHub Agents are specialized automation tools that perform specific tasks, moni
 **Status:** ✅ Active  
 **Version:** 1.0.0
 
-**The Forbidden Gateway Theme:**
-This agent uses engaging, mystical language to make documentation compelling and irresistible. Rather than boring technical docs, it creates an experience that draws readers in with warnings, mystical symbols, and narrative hooks.
+**The Forbidden Gateway Theme:** This agent uses engaging, mystical language to make documentation compelling and irresistible. Rather than boring technical docs, it creates an experience that draws readers in with warnings, mystical symbols, and narrative hooks.
 
 **The 5 Mystical Powers:**
 - 📚 **Scanner Supreme** - Discovers all README files in the repository
@@ -263,8 +262,7 @@ Too many READMEs found (cache directories):
 ### Workflow Reviewer Agent
 
 **File:** `workflow-reviewer.md`  
-**Purpose:** Automated GitHub Actions workflow monitoring, failure analysis, and pull request generation with validated fixes.
-**Status:** ✅ Active
+**Purpose:** Automated GitHub Actions workflow monitoring, failure analysis, and pull request generation with validated fixes. **Status:** ✅ Active
 
 **Responsibilities:**
 - Monitor recent workflow runs for failures or performance issues.
@@ -556,8 +554,7 @@ If an agent is not functioning correctly:
 
 ### README Architect Agent - Full Details
 
-**Core Concept:**
-The README Architect Agent combines:
+**Core Concept:** The README Architect Agent combines:
 - **AI Agent Instruction** (`.github/agents/DONTREADME.md`) - Uses mystical "forbidden gateway" theme
 - **Bash Script** (`scripts/README.sh`) - Implements scan, analyze, validate, compile, index
 - **Quality Metrics** - 4-dimensional scoring system

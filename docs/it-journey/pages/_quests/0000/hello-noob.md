@@ -224,8 +224,7 @@ Think of GitHub as:
 
 ### 🔗 What is "Forking"?
 
-When you "fork" a repository (project), you're essentially saying:
-*"I like this project, and I want my own copy that I can experiment with!"*
+When you "fork" a repository (project), you're essentially saying: *"I like this project, and I want my own copy that I can experiment with!"*
 
 It's like photocopying a recipe so you can try your own variations without affecting the original.
 

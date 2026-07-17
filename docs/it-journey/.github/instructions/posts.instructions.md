@@ -336,9 +336,7 @@ function exampleImplementation(parameters) {
     return result;  // What we're returning and its format
 }
 
-// Usage example with realistic data
-const output = exampleImplementation(sampleData);
-console.log(output);  // Expected output format
+// Usage example with realistic data const output = exampleImplementation(sampleData); console.log(output);  // Expected output format
 ```
 
 **Expected Output**:

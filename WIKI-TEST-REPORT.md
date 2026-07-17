@@ -180,8 +180,7 @@ Database backup is valid and properly formatted.
 - Version: 2.5.308
 - All assets loading correctly
 
-**Expected Behavior:** 
-The application shows the setup wizard on first run. This is correct behavior requiring administrator to:
+**Expected Behavior:** The application shows the setup wizard on first run. This is correct behavior requiring administrator to:
 1. Configure admin email and password
 2. Set site URL
 3. Complete initial configuration

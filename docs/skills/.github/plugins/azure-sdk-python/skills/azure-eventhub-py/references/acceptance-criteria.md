@@ -4,10 +4,7 @@ title: Azure Event Hubs SDK Acceptance Criteria
 ---
 # Azure Event Hubs SDK Acceptance Criteria
 
-**SDK**: `azure-eventhub`
-**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-eventhub` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventhub/azure-eventhub **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -76,8 +76,7 @@ Load these files for context:
 | 🟡 MEDIUM + ⬜ TODO | Schedule for future |
 | 🟢 LOW + ⬜ TODO | Backlog |
 
-**Step 3: Define Success Criteria**
-Before starting any task:
+**Step 3: Define Success Criteria** Before starting any task:
 ```markdown
 ## Task: [Task Name]
 - **Objective**: [What will be accomplished]
@@ -284,8 +283,7 @@ Before starting any task:
 
 ### Suggested Commits
 ```bash
-git add [files]
-git commit -m "type(scope): description"
+git add [files] git commit -m "type(scope): description"
 ```
 ```
 

@@ -71,8 +71,7 @@ title: Theme Preview
 <script src="{{ '/assets/js/theme-customizer.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/theme-preview.js' | relative_url }}" defer></script>
 <script>
-  // Initialise Bootstrap tooltips and popovers in the preview section
-  document.addEventListener('DOMContentLoaded', function () {
+// Initialise Bootstrap tooltips and popovers in the preview section document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (el) {
       bootstrap.Tooltip.getOrCreateInstance(el);
     });

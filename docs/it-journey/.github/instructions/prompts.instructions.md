@@ -319,8 +319,7 @@ You are a [PLACEHOLDER: role description]
 ## 🛠️ Prompt Engineering Techniques Reference
 
 ### Zero-Shot Prompting
-**When to Use**: Simple, standard tasks with clear requirements.
-**Pattern**:
+**When to Use**: Simple, standard tasks with clear requirements. **Pattern**:
 ```
 Task: [Clear, specific instruction]
 Context: [Any necessary background]
@@ -333,8 +332,7 @@ Requirements: [What the output must include]
 - If yes: Document and reuse pattern
 
 ### Few-Shot Prompting
-**When to Use**: Custom formats, domain-specific patterns, quality inconsistency.
-**Pattern**:
+**When to Use**: Custom formats, domain-specific patterns, quality inconsistency. **Pattern**:
 ```
 [Instruction introducing the pattern]
 
@@ -351,8 +349,7 @@ Now apply to: [Your input]
 - Optimize: Remove redundant examples, add clarifying ones
 
 ### Chain-of-Thought (CoT)
-**When to Use**: Multi-step reasoning, complex logic, debugging.
-**Pattern**:
+**When to Use**: Multi-step reasoning, complex logic, debugging. **Pattern**:
 ```
 Problem: [State clearly]
 
@@ -370,8 +367,7 @@ Solution: [Answer]
 - Improve: Add verification step: "Check if this solution addresses [X]"
 
 ### ReAct (Reason + Act)
-**When to Use**: Tasks requiring external tools, research, multi-step actions.
-**Pattern**:
+**When to Use**: Tasks requiring external tools, research, multi-step actions. **Pattern**:
 ```
 You can use these tools: [tool1, tool2, tool3]
 
@@ -388,8 +384,7 @@ Repeat until task is complete.
 - Optimize: Are actions redundant? Can steps combine?
 
 ### Self-Consistency
-**When to Use**: High-stakes decisions, ambiguous problems.
-**Pattern**:
+**When to Use**: High-stakes decisions, ambiguous problems. **Pattern**:
 ```
 Generate 3 different solutions using different reasoning approaches:
 
@@ -477,32 +472,25 @@ Template Location: [path if yes]
 Apply Kaizen's waste elimination to prompts:
 
 ### 1. **Overproduction** - Prompts that generate more than needed
-**Example**: Asking for "comprehensive analysis" when summary suffices
-**Fix**: Be specific about scope: "Provide 3 key insights, 2 sentences each"
+**Example**: Asking for "comprehensive analysis" when summary suffices **Fix**: Be specific about scope: "Provide 3 key insights, 2 sentences each"
 
 ### 2. **Waiting** - Prompts requiring multiple rounds due to ambiguity
-**Example**: Vague prompt → clarification needed → re-prompt
-**Fix**: Front-load context and requirements in initial prompt
+**Example**: Vague prompt → clarification needed → re-prompt **Fix**: Front-load context and requirements in initial prompt
 
 ### 3. **Transportation** - Excessive copy-paste between prompts
-**Example**: Manually reformatting each output
-**Fix**: Specify output format in prompt: "Format as JSON with keys: [list]"
+**Example**: Manually reformatting each output **Fix**: Specify output format in prompt: "Format as JSON with keys: [list]"
 
 ### 4. **Over-Processing** - Unnecessarily complex prompts
-**Example**: 500-word prompt for simple task
-**Fix**: Simplify: Use zero-shot for standard tasks, few-shot only when needed
+**Example**: 500-word prompt for simple task **Fix**: Simplify: Use zero-shot for standard tasks, few-shot only when needed
 
 ### 5. **Inventory** - Unused prompt variations stockpiled
-**Example**: 20 similar prompts, unclear which works best
-**Fix**: Document best performing prompt, archive others
+**Example**: 20 similar prompts, unclear which works best **Fix**: Document best performing prompt, archive others
 
 ### 6. **Motion** - Inefficient prompt refinement process
-**Example**: Random changes without measurement
-**Fix**: Use PDCA cycle, change one thing at a time
+**Example**: Random changes without measurement **Fix**: Use PDCA cycle, change one thing at a time
 
 ### 7. **Defects** - Low-quality outputs requiring rework
-**Example**: Generic response doesn't meet requirements
-**Fix**: Add verification step: "Before responding, verify you've addressed [X, Y, Z]"
+**Example**: Generic response doesn't meet requirements **Fix**: Add verification step: "Before responding, verify you've addressed [X, Y, Z]"
 
 ## 🎯 VS Code Copilot Integration
 
