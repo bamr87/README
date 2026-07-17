@@ -160,14 +160,11 @@ Based on results:
 Format all responses using this structure:
 
 ### 📋 PLAN
-**Current Situation Analysis**:
-[Describe what you observe about the current state]
+**Current Situation Analysis**: [Describe what you observe about the current state]
 
-**Root Cause Identification**:
-[Identify the underlying cause, not just symptoms]
+**Root Cause Identification**: [Identify the underlying cause, not just symptoms]
 
-**Proposed Improvement**:
-[One small, specific improvement to make]
+**Proposed Improvement**: [One small, specific improvement to make]
 
 **Success Criteria**:
 - [ ] [Measurable criterion 1]
@@ -200,8 +197,7 @@ Format all responses using this structure:
 # Why: [Explanation of improvement]
 ```
 
-**What We're Changing and Why**:
-[Explain the improvement rationale]
+**What We're Changing and Why**: [Explain the improvement rationale]
 
 ### ✅ CHECK
 **Verification Steps**:
@@ -224,18 +220,15 @@ Format all responses using this structure:
 - [Anything surprising discovered]
 
 ### 🔄 ACT
-**Next Iteration**:
-[What's the next small improvement to make?]
+**Next Iteration**: [What's the next small improvement to make?]
 
 **Lessons Learned**:
 - [Key learning 1]
 - [Key learning 2]
 
-**When to Stop**:
-[Signs that we've reached diminishing returns]
+**When to Stop**: [Signs that we've reached diminishing returns]
 
-**Standardization Opportunity**:
-[How to make this improvement repeatable]
+**Standardization Opportunity**: [How to make this improvement repeatable]
 
 ## Kaizen Application Scenarios
 
@@ -683,10 +676,7 @@ When analyzing incidents or problems:
 Track these key metrics for continuous improvement:
 
 ### 1. Lead Time for Changes
-**Definition**: Time from code commit to production
-**Good**: <1 day
-**Better**: <1 hour
-**Best**: <15 minutes
+**Definition**: Time from code commit to production **Good**: <1 day **Better**: <1 hour **Best**: <15 minutes
 
 **How to Improve**:
 - Automate testing
@@ -694,10 +684,7 @@ Track these key metrics for continuous improvement:
 - Implement trunk-based development
 
 ### 2. Deployment Frequency
-**Definition**: How often you deploy to production
-**Good**: Weekly
-**Better**: Daily
-**Best**: Multiple per day
+**Definition**: How often you deploy to production **Good**: Weekly **Better**: Daily **Best**: Multiple per day
 
 **How to Improve**:
 - Smaller batch sizes
@@ -705,10 +692,7 @@ Track these key metrics for continuous improvement:
 - Automated deployments
 
 ### 3. Change Failure Rate
-**Definition**: % of deployments causing issues
-**Good**: <15%
-**Better**: <10%
-**Best**: <5%
+**Definition**: % of deployments causing issues **Good**: <15% **Better**: <10% **Best**: <5%
 
 **How to Improve**:
 - Better testing
@@ -716,10 +700,7 @@ Track these key metrics for continuous improvement:
 - Monitoring and alerts
 
 ### 4. Mean Time to Recovery (MTTR)
-**Definition**: Time to recover from failure
-**Good**: <1 day
-**Better**: <1 hour
-**Best**: <15 minutes
+**Definition**: Time to recover from failure **Good**: <1 day **Better**: <1 hour **Best**: <15 minutes
 
 **How to Improve**:
 - Better monitoring

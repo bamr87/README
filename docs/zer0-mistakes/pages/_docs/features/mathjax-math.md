@@ -107,9 +107,7 @@ $$
 $$
 ```
 
-$$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
-$$
+$$ \int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2} $$
 
 ### Common Formulas
 
@@ -121,9 +119,7 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 ```
 
-$$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
+$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
 
 **Matrix:**
 
@@ -139,9 +135,7 @@ $$
 $$
 A = \begin{pmatrix}
 a & b \\
-c & d
-\end{pmatrix}
-$$
+c & d \end{pmatrix} $$
 
 ---
 

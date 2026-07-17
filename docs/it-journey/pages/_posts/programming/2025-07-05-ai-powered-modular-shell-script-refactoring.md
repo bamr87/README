@@ -233,8 +233,7 @@ AI helped generate comprehensive documentation:
 
 1. **Add modular imports**:
    ```bash
-   PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-   source "$PROJECT_ROOT/src/lib/core/logger.sh"
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)" source "$PROJECT_ROOT/src/lib/core/logger.sh"
    ```
 
 2. **Replace inline logging**:

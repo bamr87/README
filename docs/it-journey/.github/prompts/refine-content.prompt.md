@@ -18,8 +18,7 @@ version: 1.0.0
 
 Enhance the quest with rich implementation details, visual diagrams, and validation.
 
-**Quest Outline**: {{ inputs.quest_outline }}
-**Related Article**: {{ inputs.article_content }}
+**Quest Outline**: {{ inputs.quest_outline }} **Related Article**: {{ inputs.article_content }}
 
 ## Requirements
 

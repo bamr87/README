@@ -4,8 +4,7 @@ title: '[Quest Title] — Solutions & Validation'
 ---
 # [Quest Title] — Solutions & Validation
 
-**Quest**: [Link to quest page]
-**Level**: [NNNN] — [Level Title]
+**Quest**: [Link to quest page] **Level**: [NNNN] — [Level Title]
 **Difficulty**: [🟢 Easy | 🟡 Medium | 🔴 Hard] | **Estimated Time**: [XX–YY minutes]
 
 ---

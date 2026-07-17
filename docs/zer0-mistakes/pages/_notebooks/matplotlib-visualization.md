@@ -16,16 +16,7 @@ tags:
 title: Data Visualization with Matplotlib
 ---
 ---
-title: "Data Visualization with Matplotlib"
-description: "Create professional charts and visualizations from weather data using Python's Matplotlib library"
-date: 2025-01-27
-lastmod: 2025-01-27
-author: "Zer0-Mistakes Team"
-layout: notebook
-difficulty: intermediate
-tags: [python, matplotlib, visualization, data-science, charts]
-categories: [Notebooks, Tutorials]
-toc: true
+title: "Data Visualization with Matplotlib" description: "Create professional charts and visualizations from weather data using Python's Matplotlib library" date: 2025-01-27 lastmod: 2025-01-27 author: "Zer0-Mistakes Team" layout: notebook difficulty: intermediate tags: [python, matplotlib, visualization, data-science, charts] categories: [Notebooks, Tutorials] toc: true
 comments: true
 ---
 

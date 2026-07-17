@@ -4,9 +4,7 @@ title: 📅 Content Freshness Report
 ---
 # 📅 Content Freshness Report
 
-**Generated**: 2025-12-20 15:18
-**Files Scanned**: 343
-**Average Age**: 249.1 days
+**Generated**: 2025-12-20 15:18 **Files Scanned**: 343 **Average Age**: 249.1 days
 
 ## 📈 Freshness Summary
 

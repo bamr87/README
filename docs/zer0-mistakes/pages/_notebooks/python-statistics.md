@@ -16,16 +16,7 @@ tags:
 title: Statistical Analysis with Python
 ---
 ---
-title: "Statistical Analysis with Python"
-description: "Learn statistical analysis using Python's scipy and pandas libraries with real survey data"
-date: 2025-01-27
-lastmod: 2025-01-27
-author: "Zer0-Mistakes Team"
-layout: notebook
-difficulty: intermediate
-tags: [python, statistics, scipy, data-analysis, surveys]
-categories: [Notebooks, Tutorials]
-toc: true
+title: "Statistical Analysis with Python" description: "Learn statistical analysis using Python's scipy and pandas libraries with real survey data" date: 2025-01-27 lastmod: 2025-01-27 author: "Zer0-Mistakes Team" layout: notebook difficulty: intermediate tags: [python, statistics, scipy, data-analysis, surveys] categories: [Notebooks, Tutorials] toc: true
 comments: true
 ---
 

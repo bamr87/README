@@ -4,8 +4,7 @@ title: Bashcrawl Documentation
 ---
 # Bashcrawl Documentation
 
-Learn terminal commands by exploring a fantasy dungeon. Directories are rooms, files
-are scrolls, and executables are encounters.
+Learn terminal commands by exploring a fantasy dungeon. Directories are rooms, files are scrolls, and executables are encounters.
 
 ## Contents
 

@@ -4,8 +4,7 @@ title: Bashcrawl Logging Framework Plan
 ---
 # Bashcrawl Logging Framework Plan
 
-Automatic gameplay telemetry to replace manual session logging and generate
-actionable improvement data.
+Automatic gameplay telemetry to replace manual session logging and generate actionable improvement data.
 
 ---
 
@@ -19,13 +18,9 @@ Three disconnected logging systems exist, each with a different format and scope
 | `ai_engine.sh` `log_action()` | `ts\|location\|action\|ctx` → `~/.bashcrawl_progress` | Help requests only | Only fires when player asks for help |
 | `main.sh` (emulator) | `ts - command [args]` → `.game_history` | Emulator commands | Only in emulator mode, not native |
 
-**Native play** (`cd entrance && cat scroll`) — the most common mode — has **zero
-instrumentation**. Game executables (`treasure`, `statue`, `monster`, etc.) perform
-critical state mutations (room unlocks, item destruction, deaths) without logging
-anything.
+**Native play** (`cd entrance && cat scroll`) — the most common mode — has **zero instrumentation**. Game executables (`treasure`, `statue`, `monster`, etc.) perform critical state mutations (room unlocks, item destruction, deaths) without logging anything.
 
-The `.gitignore` already reserves filenames for planned-but-never-built logs:
-`room-visits.log`, `command-history.log`, `treasure-collection.log`, `session-*.log`.
+The `.gitignore` already reserves filenames for planned-but-never-built logs: `room-visits.log`, `command-history.log`, `treasure-collection.log`, `session-*.log`.
 
 ---
 
@@ -69,8 +64,7 @@ The `.gitignore` already reserves filenames for planned-but-never-built logs:
 
 ### 1. `lib/log.sh` — Unified Logging Library
 
-Single sourceable file that every component uses. Replaces the three existing
-log functions with one consistent interface.
+Single sourceable file that every component uses. Replaces the three existing log functions with one consistent interface.
 
 **Key functions:**
 
@@ -140,8 +134,7 @@ _bc_track_room() {
 }
 ```
 
-**Installed by:** `bc_install_hooks` (called from `init_help.sh` or `main.sh
---native`). Also available manually: `source lib/log.sh && bc_install_hooks`.
+**Installed by:** `bc_install_hooks` (called from `init_help.sh` or `main.sh --native`). Also available manually: `source lib/log.sh && bc_install_hooks`.
 
 **Data captured:**
 - Every `cd` into a game directory
@@ -186,9 +179,7 @@ Then add `bc_log` at key decision points:
 | `stronghold/goblet` | `encounter type=puzzle outcome=solved\|hint item=goblet` |
 | `.functions` `gameover()` | `death room=$(basename $PWD) cause=$_BC_ENCOUNTER` |
 
-**Graceful degradation:** If `lib/log.sh` isn't sourced (player ran game without
-setup), `bc_log` is undefined and the `[ -f "$_BC_LIB" ] && . "$_BC_LIB"` guard
-means the executable works identically to today.
+**Graceful degradation:** If `lib/log.sh` isn't sourced (player ran game without setup), `bc_log` is undefined and the `[ -f "$_BC_LIB" ] && . "$_BC_LIB"` guard means the executable works identically to today.
 
 ---
 
@@ -262,8 +253,7 @@ entrance → cellar (2m) → armoury (1m) → chamber (3m) → chapel (30s) → 
 - Potion showed stale state — reset mechanism needed
 ```
 
-**Implementation:** Pure bash + `awk`/`sed`/`sort`/`uniq`. No external deps.
-Optionally supports `jq` for faster parsing if available.
+**Implementation:** Pure bash + `awk`/`sed`/`sort`/`uniq`. No external deps. Optionally supports `jq` for faster parsing if available.
 
 ---
 
@@ -372,34 +362,22 @@ _BC_LIB="${0%entrance*}lib/log.sh"
 ## Implementation Phases
 
 ### Phase 1: Core Library + Session Management
-**Effort:** ~150 lines of bash
-**Files:** Create `lib/log.sh`
-**Delivers:** `bc_log`, `bc_session_start`, `bc_session_end`, JSONL output
+**Effort:** ~150 lines of bash **Files:** Create `lib/log.sh` **Delivers:** `bc_log`, `bc_session_start`, `bc_session_end`, JSONL output
 
 ### Phase 2: Room Navigation Hooks
-**Effort:** ~30 lines added to `lib/log.sh`
-**Files:** Modify `src/help/init_help.sh`, `main.sh`
-**Delivers:** Automatic `room_enter` events via `PROMPT_COMMAND`/`chpwd`
+**Effort:** ~30 lines added to `lib/log.sh` **Files:** Modify `src/help/init_help.sh`, `main.sh` **Delivers:** Automatic `room_enter` events via `PROMPT_COMMAND`/`chpwd`
 
 ### Phase 3: Executable Instrumentation
-**Effort:** 2-6 lines per file, ~12 files
-**Files:** All executables under `entrance/`
-**Delivers:** Encounter/outcome/unlock/death events
+**Effort:** 2-6 lines per file, ~12 files **Files:** All executables under `entrance/` **Delivers:** Encounter/outcome/unlock/death events
 
 ### Phase 4: Report Generator
-**Effort:** ~200 lines of bash
-**Files:** Create `lib/report.sh`
-**Delivers:** Per-session Markdown feedback from `bash lib/report.sh latest`
+**Effort:** ~200 lines of bash **Files:** Create `lib/report.sh` **Delivers:** Per-session Markdown feedback from `bash lib/report.sh latest`
 
 ### Phase 5: Aggregate Analytics
-**Effort:** ~150 lines of bash
-**Files:** Create `lib/analyze.sh`
-**Delivers:** Cross-session metrics for game development
+**Effort:** ~150 lines of bash **Files:** Create `lib/analyze.sh` **Delivers:** Cross-session metrics for game development
 
 ### Phase 6: Retrofit Existing Systems
-**Effort:** Small edits
-**Files:** `main.sh`, `src/help/ai_engine.sh`
-**Delivers:** Unified logging across all entry points
+**Effort:** Small edits **Files:** `main.sh`, `src/help/ai_engine.sh` **Delivers:** Unified logging across all entry points
 
 ---
 

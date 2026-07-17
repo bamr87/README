@@ -1,15 +1,10 @@
 # MCP server — query the context engine
 
-`mcp/server.py` exposes the committed context pyramid (`context/`) over the
-[Model Context Protocol](https://modelcontextprotocol.io): stdio transport,
-newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it
-serves what the engine last built and reports staleness; regenerating is
-always an explicit `python3 -m scripts.context_engine build`.
+`mcp/server.py` exposes the committed context pyramid (`context/`) over the [Model Context Protocol](https://modelcontextprotocol.io): stdio transport, newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it serves what the engine last built and reports staleness; regenerating is always an explicit `python3 -m scripts.context_engine build`.
 
 ## Registration
 
-This repo ships a project-scope `.mcp.json`, so Claude Code picks the server
-up automatically when working in the repo:
+This repo ships a project-scope `.mcp.json`, so Claude Code picks the server up automatically when working in the repo:
 
 ```json
 {
@@ -22,8 +17,7 @@ up automatically when working in the repo:
 }
 ```
 
-Any other MCP client can launch it the same way (command `python3`,
-args `mcp/server.py`, cwd = repo root). No dependencies beyond Python 3.9+.
+Any other MCP client can launch it the same way (command `python3`, args `mcp/server.py`, cwd = repo root). No dependencies beyond Python 3.9+.
 
 ## Tools
 
@@ -38,8 +32,7 @@ args `mcp/server.py`, cwd = repo root). No dependencies beyond Python 3.9+.
 
 ## Resources
 
-`context://apex`, `context://index`, `context://manifest`,
-`context://cards/<name>`, `context://facts/<name>`.
+`context://apex`, `context://index`, `context://manifest`, `context://cards/<name>`, `context://facts/<name>`.
 
 ## Smoke test
 
@@ -54,8 +47,7 @@ printf '%s\n%s\n%s\n' \
 ## Design notes
 
 - The server reads `context/index/context_index.json` and the card/fact
-  files via `scripts/context_engine/query.py` — one code path for the CLI
-  and MCP surfaces.
+files via `scripts/context_engine/query.py` — one code path for the CLI and MCP surfaces.
 - Errors inside a tool return an `isError` tool result (per MCP), not a
   protocol error; unknown methods return JSON-RPC `-32601`.
 - If the pyramid has not been built yet, every tool answers with a hint to

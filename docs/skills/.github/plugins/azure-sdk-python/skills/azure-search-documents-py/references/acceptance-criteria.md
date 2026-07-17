@@ -4,9 +4,7 @@ title: Azure AI Search SDK Acceptance Criteria
 ---
 # Azure AI Search SDK Acceptance Criteria
 
-**SDK**: `azure-search-documents`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-search-documents` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

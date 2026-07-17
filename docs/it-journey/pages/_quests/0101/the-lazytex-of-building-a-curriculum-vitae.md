@@ -67,24 +67,13 @@ validation_criteria:
 ---
 ## 🧙‍♂️ Epic Introduction
 
-In the vast digital matrix where data flows like rivers of light, the guild calls you to forge your
-most enduring artifact: your Curriculum Vitae. This quest is a binary incantation at Level 0101
-(5)—a tool‑mastery adventure to craft a polished, ATS‑friendly CV using VS Code and LaTeX. Your
-primary artifact, the template `cv.tex`, awaits in your vault (e.g., `cv/cv.tex`). You will
-customize its runes (sections), compile it into a pristine PDF, and emerge with a battle‑ready
-professional codex.
+In the vast digital matrix where data flows like rivers of light, the guild calls you to forge your most enduring artifact: your Curriculum Vitae. This quest is a binary incantation at Level 0101 (5)—a tool‑mastery adventure to craft a polished, ATS‑friendly CV using VS Code and LaTeX. Your primary artifact, the template `cv.tex`, awaits in your vault (e.g., `cv/cv.tex`). You will customize its runes (sections), compile it into a pristine PDF, and emerge with a battle‑ready professional codex.
 
-You’ll master LaTeX Workshop in VS Code, install the proper TeX distribution for your realm,
-customize sections like Education, Professional Experience, Projects, and Skills, and verify
-clickable links and fonts. When the final spell completes, your CV will compile cleanly—ready to
-present to any council of hiring sages.
+You’ll master LaTeX Workshop in VS Code, install the proper TeX distribution for your realm, customize sections like Education, Professional Experience, Projects, and Skills, and verify clickable links and fonts. When the final spell completes, your CV will compile cleanly—ready to present to any council of hiring sages.
 
 ### 🌟 The Legend Behind This Quest
 
-Across realms, masters encode their journeys in machine‑readable scrolls that pass ATS trials.
-LaTeX transforms chaos into elegant structure and precise typography. With VS Code as your
-processing crystal, you’ll weave algorithmic layout spells into an artifact that compiles
-flawlessly on any platform.
+Across realms, masters encode their journeys in machine‑readable scrolls that pass ATS trials. LaTeX transforms chaos into elegant structure and precise typography. With VS Code as your processing crystal, you’ll weave algorithmic layout spells into an artifact that compiles flawlessly on any platform.
 
 ---
 
@@ -163,8 +152,7 @@ sudo apt-get install -y texlive-full
 
 ### 📱 Universal Web Path (Optional)
 
-If local toolchains are restricted, you can test in Overleaf, then return to VS Code to finalize.
-This quest focuses on local VS Code mastery.
+If local toolchains are restricted, you can test in Overleaf, then return to VS Code to finalize. This quest focuses on local VS Code mastery.
 
 ---
 
@@ -178,9 +166,7 @@ This quest focuses on local VS Code mastery.
 
 ### 🔧 Implementation: Verify the Forge
 
-Open VS Code → open the `cv/` folder → open `cv.tex`. Use the TeX sidebar (TeX icon) and run
-“Build LaTeX project”. If the build fails with missing packages, install them via your TeX package
-manager (`tlmgr` on macOS BasicTeX/TeX Live, MiKTeX on Windows).
+Open VS Code → open the `cv/` folder → open `cv.tex`. Use the TeX sidebar (TeX icon) and run “Build LaTeX project”. If the build fails with missing packages, install them via your TeX package manager (`tlmgr` on macOS BasicTeX/TeX Live, MiKTeX on Windows).
 
 Tip: LaTeX Workshop usually runs `latexmk -pdf`. You can also compile in a terminal:
 
@@ -217,8 +203,7 @@ Fill each school with `\\resumeSubheading{Institution}{Dates}{Degree}{Location}`
 
 ### Professional Experience
 
-For each role, use `\\resumeSubheading{Company}{Dates}{Title}{Location}` and add quantified bullets
-with `\\resumeItem{...}`. Keep 3–5 bullets per role.
+For each role, use `\\resumeSubheading{Company}{Dates}{Title}{Location}` and add quantified bullets with `\\resumeItem{...}`. Keep 3–5 bullets per role.
 
 ### Projects / Skills / Strengths
 
@@ -234,8 +219,7 @@ Example snippet (structure only):
   \\resumeItemListEnd
 ```
 
-ATS Tip: Keep graphics minimal, keep text selectable, and ensure links use `\\href{}`. The
-template already activates Unicode mapping.
+ATS Tip: Keep graphics minimal, keep text selectable, and ensure links use `\\href{}`. The template already activates Unicode mapping.
 
 ---
 

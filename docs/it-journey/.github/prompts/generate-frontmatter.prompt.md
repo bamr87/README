@@ -18,8 +18,7 @@ version: 1.0.0
 
 Create complete frontmatter for {{ inputs.content_type }} following IT-Journey standards.
 
-**Title**: {{ inputs.title }}
-**Description**: {{ inputs.description }}
+**Title**: {{ inputs.title }} **Description**: {{ inputs.description }}
 
 ## Frontmatter Requirements
 

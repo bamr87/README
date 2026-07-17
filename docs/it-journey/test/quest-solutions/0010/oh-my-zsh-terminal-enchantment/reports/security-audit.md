@@ -4,8 +4,7 @@ title: Oh-My-Zsh Install Script — Security Audit Report
 ---
 # Oh-My-Zsh Install Script — Security Audit Report
 
-**Quest**: Terminal Enchantment — Challenge 1
-**Purpose**: Reference audit findings for the official Oh-My-Zsh `install.sh`
+**Quest**: Terminal Enchantment — Challenge 1 **Purpose**: Reference audit findings for the official Oh-My-Zsh `install.sh`
 
 ---
 

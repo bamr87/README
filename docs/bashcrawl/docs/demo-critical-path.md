@@ -10,20 +10,11 @@ title: 'Bashcrawl: Complete Game Walkthrough'
 
 ---
 
-Bashcrawl is an educational text-based adventure game that teaches
-terminal (shell) commands through immersive fantasy gameplay.
-Directories are rooms, files named `scroll` are lessons, and
-executable scripts are interactive encounters with treasures,
-potions, monsters, and spells.
+Bashcrawl is an educational text-based adventure game that teaches terminal (shell) commands through immersive fantasy gameplay. Directories are rooms, files named `scroll` are lessons, and executable scripts are interactive encounters with treasures, potions, monsters, and spells.
 
-This walkthrough demonstrates a complete playthrough — every command
-a player would type, the terminal output they would see, and an
-explanation of what each command teaches.
+This walkthrough demonstrates a complete playthrough — every command a player would type, the terminal output they would see, and an explanation of what each command teaches.
 
-The output is captured from ``main.sh``'s interactive terminal
-emulator running in batch mode, so prompts, area context, quest
-completions, and game-script output appear exactly as a real player
-would see them.
+The output is captured from ``main.sh``'s interactive terminal emulator running in batch mode, so prompts, area context, quest completions, and game-script output appear exactly as a real player would see them.
 
 
 ## Table of Contents

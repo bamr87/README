@@ -195,6 +195,4 @@ This category grows with the web development ecosystem. Recent additions focus o
 
 ---
 
-**Last Updated**: 2025-11-24
-**Maintained by**: IT-Journey Team
-**Questions?** [Open an issue](https://github.com/bamr87/it-journey/issues) or [join discussions](https://github.com/bamr87/it-journey/discussions)
+**Last Updated**: 2025-11-24 **Maintained by**: IT-Journey Team **Questions?** [Open an issue](https://github.com/bamr87/it-journey/issues) or [join discussions](https://github.com/bamr87/it-journey/discussions)

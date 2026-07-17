@@ -4,19 +4,7 @@ title: 'Advanced frontmatter fields (see `.github/instructions/quest.instruction
   for structure):'
 ---
 ---
-title: "{{fm.title}}"
-description: "{{fm.description}}"
-date: {{fm.date}}
-preview: "{{fm.preview}}"
-level: "{{fm.level}}"
-difficulty: "{{fm.difficulty}}"
-estimated_time: "{{fm.estimated_time}}"
-primary_technology: "{{fm.primary_technology}}"
-quest_type: "{{fm.quest_type}}"
-skill_focus: "{{fm.skill_focus}}"
-learning_style: "{{fm.learning_style}}"
-quest_series: "{{fm.quest_series}}"
-fmContentType: quest
+title: "{{fm.title}}" description: "{{fm.description}}" date: {{fm.date}} preview: "{{fm.preview}}" level: "{{fm.level}}" difficulty: "{{fm.difficulty}}" estimated_time: "{{fm.estimated_time}}" primary_technology: "{{fm.primary_technology}}" quest_type: "{{fm.quest_type}}" skill_focus: "{{fm.skill_focus}}" learning_style: "{{fm.learning_style}}" quest_series: "{{fm.quest_series}}" fmContentType: quest
 # Advanced frontmatter fields (see `.github/instructions/quest.instructions.md` for structure):
 # - quest_line
 # - quest_arc
@@ -24,11 +12,7 @@ fmContentType: quest
 # - quest_relationships
 # - quest_mapping
 sub_title: "Level {{fm.level}} ({{fm.level | decimal}}) Quest: {{fm.quest_type | title}} - {{fm.primary_technology | title}}"
-excerpt: "{{fm.excerpt}}"
-snippet: "{{fm.snippet}}"
-author: "{{fm.author}}"
-layout: {{fm.layout}}
-tags:
+excerpt: "{{fm.excerpt}}" snippet: "{{fm.snippet}}" author: "{{fm.author}}" layout: {{fm.layout}} tags:
     - lvl-{{fm.level}}
     - {{fm.primary_technology}}
     - {{fm.quest_type}}
@@ -48,14 +32,7 @@ keywords:
         - gamified-learning
         - it-journey
         - quest-based-learning
-lastmod: {{fm.date}}
-permalink: /quests/level-{{fm.level}}-{{slug}}/
-attachments: ""
-comments: {{fm.comments}}
-prerequisites: {{fm.prerequisites}}
-rewards: {{fm.rewards}}
-related_quests: {{fm.related_quests}}
-validation_criteria: {{fm.validation_criteria}}
+lastmod: {{fm.date}} permalink: /quests/level-{{fm.level}}-{{slug}}/ attachments: "" comments: {{fm.comments}} prerequisites: {{fm.prerequisites}} rewards: {{fm.rewards}} related_quests: {{fm.related_quests}} validation_criteria: {{fm.validation_criteria}}
 draft: {{fm.draft}}
 ---
 
@@ -91,11 +68,9 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-{{#if fm.prerequisites}}
-{{#each fm.prerequisites}}
+{{#if fm.prerequisites}} {{#each fm.prerequisites}}
 - [ ] {{this}}
-{{/each}}
-{{else}}
+{{/each}} {{else}}
 - [ ] Basic understanding of {{fm.skill_focus}} concepts
 - [ ] Familiarity with command-line interface
 - [ ] Completion of foundational {{fm.primary_technology}} setup
@@ -143,8 +118,7 @@ This {{fm.difficulty}} quest expects:
 
 ### ☁️ Cloud Realms Path
 
-*[Cloud platform instructions for AWS, Azure, GCP when applicable]*
-*[Container-based approaches using Docker/Podman]*
+*[Cloud platform instructions for AWS, Azure, GCP when applicable]* *[Container-based approaches using Docker/Podman]*
 
 ```bash
 # Cloud platform commands and configurations

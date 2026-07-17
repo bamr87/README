@@ -7,8 +7,7 @@ title: Reading Material
 Reading material
 ================
 
-Below is a list of overall reading material which you may wish to read
-over before starting.
+Below is a list of overall reading material which you may wish to read over before starting.
 
 Bug class exploitation
 ----------------------
@@ -77,8 +76,7 @@ Secure computing
 Got some good additional papers?
 --------------------------------
 
-If you have some relevant papers that would be suitable for this site,
-please drop [me][] an email.
+If you have some relevant papers that would be suitable for this site, please drop [me][] an email.
 
   [Scut's formatstring paper]: papers/formatstring-1.2.tar.gz
   [Advances in format string exploitation]: papers/p59-0x07.txt

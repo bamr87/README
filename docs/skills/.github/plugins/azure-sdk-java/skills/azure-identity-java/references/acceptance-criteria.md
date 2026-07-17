@@ -4,9 +4,7 @@ title: Azure Identity Java SDK Acceptance Criteria
 ---
 # Azure Identity Java SDK Acceptance Criteria
 
-**SDK**: `com.azure:azure-identity`
-**Repository**: https://github.com/Azure/azure-sdk-for-java
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-identity` **Repository**: https://github.com/Azure/azure-sdk-for-java **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

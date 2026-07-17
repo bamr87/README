@@ -890,9 +890,7 @@ CMD ["node", "dist/server.js"]
 ### Common Issues and Solutions
 
 #### Issue 1: Cache Restored But Build Still Slow
-**Symptoms**: Cache shows as "restored" but dependencies still download
-**Causes**: Cache key collision, cache corruption, or wrong cache path
-**Solution**:
+**Symptoms**: Cache shows as "restored" but dependencies still download **Causes**: Cache key collision, cache corruption, or wrong cache path **Solution**:
 ```yaml
 # Add debug logging
 - name: Debug cache
@@ -904,9 +902,7 @@ CMD ["node", "dist/server.js"]
 **Prevention**: Use specific cache keys, validate cache after restore
 
 #### Issue 2: Disk Space Exhausted
-**Symptoms**: "No space left on device" errors
-**Causes**: Large caches, accumulating `work/` directories, Docker layer bloat
-**Solution**:
+**Symptoms**: "No space left on device" errors **Causes**: Large caches, accumulating `work/` directories, Docker layer bloat **Solution**:
 ```bash
 # Emergency cleanup
 find work/ -type f -mtime +1 -delete  # Delete files >1 day old
@@ -916,9 +912,7 @@ df -h                                 # Verify space freed
 **Prevention**: Add disk monitoring, set TTLs on caches, use cleanup jobs
 
 #### Issue 3: Flaky Builds After work/ Migration
-**Symptoms**: Tests pass locally, fail in CI, or vice versa
-**Causes**: Incorrect paths, missing environment variables, cache pollution
-**Diagnosis**:
+**Symptoms**: Tests pass locally, fail in CI, or vice versa **Causes**: Incorrect paths, missing environment variables, cache pollution **Diagnosis**:
 ```bash
 # Compare environments
 echo "=== Local ==="

@@ -67,9 +67,7 @@ Scan the repository for build files to determine the primary language for code e
 
 ## Guide 1: Contributor Guide
 
-**File**: `onboarding/contributor-guide.md`
-**Audience**: Engineers joining the project. Assumes proficiency in Python or JavaScript and general software engineering experience.
-**Length**: 1000–2500 lines. Progressive — each section builds on the last.
+**File**: `onboarding/contributor-guide.md` **Audience**: Engineers joining the project. Assumes proficiency in Python or JavaScript and general software engineering experience. **Length**: 1000–2500 lines. Progressive — each section builds on the last.
 
 ### Required Sections
 
@@ -108,9 +106,7 @@ Scan the repository for build files to determine the primary language for code e
 
 ## Guide 2: Staff Engineer Guide
 
-**File**: `onboarding/staff-engineer-guide.md`
-**Audience**: Staff/principal engineers who need the "why" behind every decision. Deep systems experience, may not know this repo's language.
-**Length**: 800–1200 lines. Dense, opinionated, architectural.
+**File**: `onboarding/staff-engineer-guide.md` **Audience**: Staff/principal engineers who need the "why" behind every decision. Deep systems experience, may not know this repo's language. **Length**: 800–1200 lines. Dense, opinionated, architectural.
 
 ### Required Sections
 
@@ -145,9 +141,7 @@ Scan the repository for build files to determine the primary language for code e
 
 ## Guide 3: Executive Guide
 
-**File**: `onboarding/executive-guide.md`
-**Audience**: VP/director of engineering. Needs capability overview, risk assessment, and investment context — NOT code-level details.
-**Length**: 400–800 lines. Strategic, concise, decision-oriented.
+**File**: `onboarding/executive-guide.md` **Audience**: VP/director of engineering. Needs capability overview, risk assessment, and investment context — NOT code-level details. **Length**: 400–800 lines. Strategic, concise, decision-oriented.
 
 ### Required Sections
 
@@ -176,9 +170,7 @@ Scan the repository for build files to determine the primary language for code e
 
 ## Guide 4: Product Manager Guide
 
-**File**: `onboarding/product-manager-guide.md`
-**Audience**: Product managers and non-engineering stakeholders. Needs to understand what the system does, what's possible, and where the boundaries are — NOT how it's built.
-**Length**: 400–800 lines. User-centric, feature-focused, constraint-aware.
+**File**: `onboarding/product-manager-guide.md` **Audience**: Product managers and non-engineering stakeholders. Needs to understand what the system does, what's possible, and where the boundaries are — NOT how it's built. **Length**: 400–800 lines. User-centric, feature-focused, constraint-aware.
 
 ### Required Sections
 

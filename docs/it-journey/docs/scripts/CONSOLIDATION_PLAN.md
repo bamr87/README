@@ -3,12 +3,7 @@ source_file: CONSOLIDATION_PLAN.md
 title: Script Directory Consolidation Plan
 ---
 <!--
-@file docs/script-consolidation-plan.md
-@description Comprehensive plan for consolidating and refactoring script directories
-@author IT-Journey Team <team@it-journey.org>
-@created 2025-07-07
-@lastModified 2025-07-07
-@version 1.0.0
+@file docs/script-consolidation-plan.md @description Comprehensive plan for consolidating and refactoring script directories @author IT-Journey Team <team@it-journey.org> @created 2025-07-07 @lastModified 2025-07-07 @version 1.0.0
 
 @relatedIssues 
   - Script directory cleanup and organization
@@ -22,9 +17,7 @@ title: Script Directory Consolidation Plan
 @changelog
   - 2025-07-07: Initial creation - ITJ
 
-@usage Reference document for script reorganization
-@notes Follows IT-Journey principles for organization
--->
+@usage Reference document for script reorganization @notes Follows IT-Journey principles for organization -->
 
 # Script Directory Consolidation Plan
 

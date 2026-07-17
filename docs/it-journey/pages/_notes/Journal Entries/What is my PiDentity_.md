@@ -8,10 +8,4 @@ source_file: What is my PiDentity_.md
 title: 'What Is My Pidentity '
 updated: 2024-02-14 23:13:57+00:00
 ---
-What is my PiDentity?
-3.14[id] 
-userName:
-email:
-github:
-X:
-phone:
+What is my PiDentity? 3.14[id] userName: email: github: X: phone:

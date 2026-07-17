@@ -123,8 +123,7 @@ This layer is responsible for **asking questions** and **showing results**. It s
 
 This layer does the heavy lifting. It should be **headless** and **non-interactive**. Ideally, these are standalone functions or scripts that take arguments and return exit codes.
 
-**Why separate it?**
-If your logic is mixed with your interface (e.g., `read -p "Enter name: " name` inside your deployment function), you can never automate that function. By keeping the core logic pure (accepting arguments), you can use it in CI/CD pipelines *and* your interactive frontend.
+**Why separate it?** If your logic is mixed with your interface (e.g., `read -p "Enter name: " name` inside your deployment function), you can never automate that function. By keeping the core logic pure (accepting arguments), you can use it in CI/CD pipelines *and* your interactive frontend.
 
 **Example Responsibility:**
 *   `git commit -m "$message"`

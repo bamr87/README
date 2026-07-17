@@ -3,16 +3,14 @@ source_file: index.md
 title: Index
 ---
 ---
-layout: default
-listgames: true
+layout: default listgames: true
 title: [RELEASED] Abraxas (HES2011)
 ---
 
 [RELEASED] Abraxas (HES2011)
 ============================
 
-This wargame was introduced at the [Hackito Ergo Sum (HES)][HES] 2011 conference in Paris and is centered around
-the **fictitious company dildosfromspace.com**
+This wargame was introduced at the [Hackito Ergo Sum (HES)][HES] 2011 conference in Paris and is centered around the **fictitious company dildosfromspace.com**
 
 The wargame has its own website with the entire backstory. You can find it [here][backstory].
 

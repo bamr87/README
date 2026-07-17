@@ -1261,8 +1261,7 @@ The IT-Journey stack is well-suited for its purpose and should continue evolving
 3. **Community feature additions** without major architectural changes
 4. **AI capability enhancements** as GPT models improve
 
-**Do NOT**: Attempt major stack rewrites or framework migrations
-**Do INSTEAD**: Focus on content quality, community building, and automation refinement
+**Do NOT**: Attempt major stack rewrites or framework migrations **Do INSTEAD**: Focus on content quality, community building, and automation refinement
 
 ---
 

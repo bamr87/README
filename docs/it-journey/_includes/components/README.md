@@ -23,8 +23,7 @@ Displays a "Powered by" section showing the technologies used to build the site.
 {% include components/powered-by.html %}
 ```
 
-**Data Source:**
-The component reads from `site.powered_by` array in `_config.yml`:
+**Data Source:** The component reads from `site.powered_by` array in `_config.yml`:
 
 ```yaml
 powered_by:

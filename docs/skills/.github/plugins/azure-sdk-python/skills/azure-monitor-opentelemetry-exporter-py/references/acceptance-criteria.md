@@ -4,10 +4,7 @@ title: Azure Monitor OpenTelemetry Exporter Acceptance Criteria
 ---
 # Azure Monitor OpenTelemetry Exporter Acceptance Criteria
 
-**SDK**: `azure-monitor-opentelemetry-exporter`
-**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry-exporter
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-monitor-opentelemetry-exporter` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry-exporter **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

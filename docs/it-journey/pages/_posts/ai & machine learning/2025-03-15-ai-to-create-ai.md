@@ -72,9 +72,7 @@ title: 2025 03 15 Ai To Create Ai
 }
 ```
 
-{
-  "name": "Diagram and Mind Map Assistant",
-  "schema": {
+{ "name": "Diagram and Mind Map Assistant", "schema": {
     "type": "object",
     "properties": {
       "description": {
@@ -237,6 +235,4 @@ title: 2025 03 15 Ai To Create Ai
       "example_output"
     ],
     "additionalProperties": false
-  },
-  "strict": true
-}
+}, "strict": true }

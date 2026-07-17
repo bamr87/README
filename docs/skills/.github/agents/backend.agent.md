@@ -180,11 +180,6 @@ uv run pytest                        # Run tests
 
 ## Rules
 
-✅ Use multi-model Pydantic pattern
-✅ Use camelCase aliases with `populate_by_name = True`
-✅ Use `Field(..., alias="camelCase")` for request/response
-✅ Use `from_attributes = True` for ORM compatibility
+✅ Use multi-model Pydantic pattern ✅ Use camelCase aliases with `populate_by_name = True` ✅ Use `Field(..., alias="camelCase")` for request/response ✅ Use `from_attributes = True` for ORM compatibility
 
-🚫 Never return raw dicts from endpoints
-🚫 Never use untyped function parameters
-🚫 Never commit secrets or connection strings
+🚫 Never return raw dicts from endpoints 🚫 Never use untyped function parameters 🚫 Never commit secrets or connection strings

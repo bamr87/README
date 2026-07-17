@@ -474,34 +474,26 @@ git push origin main
 ## 🎮 Implementation Challenges
 
 ### 🟢 Novice Challenge: Basic Portal
-**Goal**: Deploy a simple single-page website
-**Time**: 30 minutes
-**Success Criteria**:
+**Goal**: Deploy a simple single-page website **Time**: 30 minutes **Success Criteria**:
 - [ ] GitHub Pages enabled and accessible
 - [ ] Basic HTML structure with title and content
 - [ ] Proper meta tags for SEO
 
 ### 🟡 Apprentice Challenge: Styled Realm
-**Goal**: Add CSS styling and multiple sections
-**Time**: 1 hour
-**Success Criteria**:
+**Goal**: Add CSS styling and multiple sections **Time**: 1 hour **Success Criteria**:
 - [ ] Custom CSS with responsive design
 - [ ] Multiple content sections (About, Projects, Contact)
 - [ ] Professional appearance and navigation
 
 ### 🔴 Expert Challenge: Jekyll Mastery
-**Goal**: Implement full Jekyll site with themes
-**Time**: 2 hours
-**Success Criteria**:
+**Goal**: Implement full Jekyll site with themes **Time**: 2 hours **Success Criteria**:
 - [ ] Jekyll site with custom theme
 - [ ] Multiple pages with navigation
 - [ ] Blog functionality with posts
 - [ ] SEO optimization and performance
 
 ### ⚔️ Master Challenge: Custom Domain & CI/CD
-**Goal**: Add custom domain and automated deployment
-**Time**: 3 hours
-**Success Criteria**:
+**Goal**: Add custom domain and automated deployment **Time**: 3 hours **Success Criteria**:
 - [ ] Custom domain configured
 - [ ] GitHub Actions for automated deployment
 - [ ] HTTPS enabled with custom domain

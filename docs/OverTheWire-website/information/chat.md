@@ -7,9 +7,7 @@ title: Chat
 Need help?
 ==========
 
-It's normal to get stuck on a level from time to time, don't despair!<br>
-Before reaching out for help, make sure you have read the level's description and hints carefully.<br>
-If you are still stuck, you can ask for help in the chatrooms, but remember to follow the [rules].
+It's normal to get stuck on a level from time to time, don't despair!<br> Before reaching out for help, make sure you have read the level's description and hints carefully.<br> If you are still stuck, you can ask for help in the chatrooms, but remember to follow the [rules].
 
 You might want to read this [article] before asking for help. 
 

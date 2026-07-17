@@ -57,15 +57,13 @@ title: Init Setup Script Testing Summary
 **Severity:** High  
 **Impact:** Blocked setup on macOS systems
 
-**Problem:** 
-Original logic used OR condition, which failed when only `pip3` was available:
+**Problem:** Original logic used OR condition, which failed when only `pip3` was available:
 ```bash
 # ❌ WRONG - Fails if only pip3 exists
 if ! command_exists pip || ! command_exists pip3; then
 ```
 
-**Solution:**
-Changed to AND condition to check if BOTH are missing:
+**Solution:** Changed to AND condition to check if BOTH are missing:
 ```bash
 # ✅ CORRECT - Only fails if both are missing
 if ! command_exists pip3 && ! command_exists pip; then

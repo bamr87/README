@@ -173,8 +173,7 @@ _includes/
 
 ### Sidebar with Navigation
 
-The sidebar mode comes from the `sidebar.nav` front matter key (or a
-collection/site default), not an include parameter:
+The sidebar mode comes from the `sidebar.nav` front matter key (or a collection/site default), not an include parameter:
 
 ```yaml
 sidebar:
@@ -185,8 +184,7 @@ sidebar:
 {% raw %}{% include navigation/sidebar-left.html %}{% endraw %}
 ```
 
-See [Sidebar Navigation](/docs/features/sidebar-navigation/) for the full
-mode and option reference.
+See [Sidebar Navigation](/docs/features/sidebar-navigation/) for the full mode and option reference.
 
 ## Landing Page Includes
 

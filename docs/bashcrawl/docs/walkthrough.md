@@ -36,8 +36,7 @@ Launch the game using the main launcher:
 ./main.sh --agent            # Agent mode with SVG screenshots
 ```
 
-When the game starts, you are placed in the **bashcrawl lobby** — the root directory of the game
-world. Every directory is a room. Every file is an object. Every executable is an encounter.
+When the game starts, you are placed in the **bashcrawl lobby** — the root directory of the game world. Every directory is a room. Every file is an object. Every executable is an encounter.
 
 ![Initial game screen](../screenshots/000_initial.svg)
 
@@ -55,12 +54,9 @@ Bashcrawl's tutorial system guides new players through seven progressive quests,
 pwd
 ```
 
-**What it does:** `pwd` stands for "**p**rint **w**orking **d**irectory."
-It shows the full path to your current location in the filesystem.
+**What it does:** `pwd` stands for "**p**rint **w**orking **d**irectory." It shows the full path to your current location in the filesystem.
 
-**Real-world use:** When you open a terminal and aren't sure where you are, `pwd` tells you
-immediately. Essential when writing scripts, navigating deep directory trees, or debugging
-path issues.
+**Real-world use:** When you open a terminal and aren't sure where you are, `pwd` tells you immediately. Essential when writing scripts, navigating deep directory trees, or debugging path issues.
 
 ![pwd command](../screenshots/001_pwd.svg)
 
@@ -76,12 +72,9 @@ path issues.
 ls
 ```
 
-**What it does:** `ls` **l**i**s**ts the contents of the current directory —
-files, folders, and everything visible in this "room."
+**What it does:** `ls` **l**i**s**ts the contents of the current directory — files, folders, and everything visible in this "room."
 
-**Real-world use:** The first command you run in any new directory. Pair it with flags like
-`-a` (show hidden files), `-l` (detailed view), or `-F` (show file types) for deeper
-inspection.
+**Real-world use:** The first command you run in any new directory. Pair it with flags like `-a` (show hidden files), `-l` (detailed view), or `-F` (show file types) for deeper inspection.
 
 ![ls command](../screenshots/002_ls.svg)
 
@@ -97,11 +90,9 @@ inspection.
 cd entrance
 ```
 
-**What it does:** `cd` **c**hanges **d**irectory — it moves you from one room to another.
-`cd ..` goes back one level, `cd ~` goes home.
+**What it does:** `cd` **c**hanges **d**irectory — it moves you from one room to another. `cd ..` goes back one level, `cd ~` goes home.
 
-**Real-world use:** The primary navigation command in every terminal session. Used thousands
-of times a day by developers, sysadmins, and anyone working in a shell.
+**Real-world use:** The primary navigation command in every terminal session. Used thousands of times a day by developers, sysadmins, and anyone working in a shell.
 
 ![cd entrance](../screenshots/003_cd_entrance.svg)
 
@@ -138,8 +129,7 @@ touch notes.txt
 
 **What it does:** `touch` creates an empty file (or updates the timestamp of an existing file).
 
-**Real-world use:** Creating placeholder files, updating timestamps for build systems, creating lock files,
-initializing empty configuration files.
+**Real-world use:** Creating placeholder files, updating timestamps for build systems, creating lock files, initializing empty configuration files.
 
 ![touch notes.txt](../screenshots/006_touch_notes_txt.svg)
 
@@ -155,8 +145,7 @@ initializing empty configuration files.
 cat notes.txt
 ```
 
-**What it does:** `cat` con**cat**enates and displays file contents to the terminal. For the empty file,
-it shows nothing — but on scrolls throughout the game, it reveals crucial information.
+**What it does:** `cat` con**cat**enates and displays file contents to the terminal. For the empty file, it shows nothing — but on scrolls throughout the game, it reveals crucial information.
 
 **Real-world use:** Quick file inspection, piping file contents to other commands
 (`cat file | grep pattern`), combining files (`cat file1 file2 > combined`).
@@ -230,9 +219,7 @@ alias ls='ls -F'
 
 ![Cellar treasure](../screenshots/007___treasure.svg)
 
-**Real-world use:** `ls -F` instantly identifies file types at a glance. Shell aliases (`alias`) save
-keystrokes on commands you use hundreds of times daily — most developers have dozens in their
-`.bashrc` or `.zshrc`.
+**Real-world use:** `ls -F` instantly identifies file types at a glance. Shell aliases (`alias`) save keystrokes on commands you use hundreds of times daily — most developers have dozens in their `.bashrc` or `.zshrc`.
 
 ---
 
@@ -258,9 +245,7 @@ The `./` prefix means "run this file from the current directory." Without it, th
 
 ![Armoury potion](../screenshots/011___potion.svg)
 
-**Real-world use:** Understanding file permissions is critical for server administration, deploying
-applications, securing systems, and writing shell scripts. `chmod` is used daily by sysadmins
-and developers.
+**Real-world use:** Understanding file permissions is critical for server administration, deploying applications, securing systems, and writing shell scripts. `chmod` is used daily by sysadmins and developers.
 
 ---
 
@@ -290,9 +275,7 @@ Three encounters await:
 
 ![Chamber statue](../screenshots/017___statue.svg)
 
-**Real-world use:** Environment variables configure nearly every program on your system —
-`$PATH`, `$HOME`, `$USER`, database URLs, API keys. Understanding `export`, `echo $VAR`,
-and arithmetic expressions is essential for shell scripting and application configuration.
+**Real-world use:** Environment variables configure nearly every program on your system — `$PATH`, `$HOME`, `$USER`, database URLs, API keys. Understanding `export`, `echo $VAR`, and arithmetic expressions is essential for shell scripting and application configuration.
 
 ![Cellar path complete](../screenshots/cellar_path_done.svg)
 
@@ -314,15 +297,11 @@ cat scroll
 ls -a
 ```
 
-**Key lesson:** Files and directories starting with `.` are hidden from regular `ls`. Use `ls -a`
-to reveal them. The chapel also teaches **command history** — press UP/DOWN arrows to cycle
-through previous commands.
+**Key lesson:** Files and directories starting with `.` are hidden from regular `ls`. Use `ls -a` to reveal them. The chapel also teaches **command history** — press UP/DOWN arrows to cycle through previous commands.
 
 ![Chapel](../screenshots/002_cd__chapel.svg)
 
-**Real-world use:** Hidden dotfiles are everywhere — `.git/`, `.bashrc`, `.env`, `.ssh/`, `.config/`.
-Understanding hidden files is essential for configuring tools, managing git repos, and storing
-sensitive configuration.
+**Real-world use:** Hidden dotfiles are everywhere — `.git/`, `.bashrc`, `.env`, `.ssh/`, `.config/`. Understanding hidden files is essential for configuring tools, managing git repos, and storing sensitive configuration.
 
 ---
 
@@ -347,8 +326,7 @@ file rags        # Script? Text? Binary?
 
 ![Courtyard fountain](../screenshots/009___fountain.svg)
 
-**Real-world use:** `file` identifies file types without relying on extensions. Essential for
-inspecting unknown downloads, debugging binary vs. text issues, and forensic analysis.
+**Real-world use:** `file` identifies file types without relying on extensions. Essential for inspecting unknown downloads, debugging binary vs. text issues, and forensic analysis.
 
 ---
 
@@ -373,9 +351,7 @@ Result: cd hall
 
 ![Aviary penguin](../screenshots/014___penguin.svg)
 
-**Real-world use:** Tab completion is the single biggest productivity boost in the terminal.
-It prevents typos, discovers available options, and saves enormous amounts of typing.
-Works for filenames, commands, and even arguments in modern shells.
+**Real-world use:** Tab completion is the single biggest productivity boost in the terminal. It prevents typos, discovers available options, and saves enormous amounts of typing. Works for filenames, commands, and even arguments in modern shells.
 
 ---
 
@@ -397,9 +373,7 @@ grep sword <<< "$I"        # Test if you carry a sword
 
 ![Hall monster](../screenshots/019___monster.svg)
 
-**Real-world use:** `grep` with here-strings (`<<<`) or pipes is how scripts conditionally test
-values. This pattern appears in CI/CD pipelines, deployment scripts, and automation workflows
-constantly.
+**Real-world use:** `grep` with here-strings (`<<<`) or pipes is how scripts conditionally test values. This pattern appears in CI/CD pipelines, deployment scripts, and automation workflows constantly.
 
 ---
 
@@ -423,8 +397,7 @@ Inside `man` pages: SPACE for next page, `b` for previous, `/word` to search, `q
 
 ![Library tome](../screenshots/023___tome.svg)
 
-**Real-world use:** `man` pages are the definitive reference for every command on a UNIX system.
-Professional developers consult them constantly. `--help` flags provide quick reminders.
+**Real-world use:** `man` pages are the definitive reference for every command on a UNIX system. Professional developers consult them constantly. `--help` flags provide quick reminders.
 
 ![Chapel path complete](../screenshots/chapel_path_done.svg)
 
@@ -455,8 +428,7 @@ cd .mausoleum  # Enter the hidden tomb
 
 ![Graveyard padlock](../screenshots/006___padlock.svg)
 
-**Real-world use:** Hidden directories like `.git/`, `.ssh/`, `.config/` contain critical system
-and application data. Knowing they exist and how to find them is fundamental.
+**Real-world use:** Hidden directories like `.git/`, `.ssh/`, `.config/` contain critical system and application data. Knowing they exist and how to find them is fundamental.
 
 ---
 
@@ -532,9 +504,7 @@ unset VAR             # Forget a variable
 
 ![Vault glass](../screenshots/005___glass.svg)
 
-**Real-world use:** Environment variables configure everything — `$PATH` controls which programs
-you can run, `$HOME` defines your home directory, and application-specific variables like
-`DATABASE_URL` or `NODE_ENV` control software behavior.
+**Real-world use:** Environment variables configure everything — `$PATH` controls which programs you can run, `$HOME` defines your home directory, and application-specific variables like `DATABASE_URL` or `NODE_ENV` control software behavior.
 
 ---
 
@@ -556,8 +526,7 @@ ls -F              # Verify copies
 
 ![Stronghold goblet](../screenshots/009___goblet.svg)
 
-**Real-world use:** `cp` is fundamental — copying files, creating backups (`cp config.yml config.yml.bak`),
-duplicating templates, deploying assets.
+**Real-world use:** `cp` is fundamental — copying files, creating backups (`cp config.yml config.yml.bak`), duplicating templates, deploying assets.
 
 ---
 
@@ -580,9 +549,7 @@ find . -type f           # Find all files below
 
 ![Nursery spell](../screenshots/013___spell.svg)
 
-**Real-world use:** `find` locates files across complex directory trees. Essential for build systems,
-cleanup scripts, and searching codebases:
-`find . -name "*.log" -mtime +30 -delete` (delete logs older than 30 days).
+**Real-world use:** `find` locates files across complex directory trees. Essential for build systems, cleanup scripts, and searching codebases: `find . -name "*.log" -mtime +30 -delete` (delete logs older than 30 days).
 
 ---
 
@@ -638,9 +605,7 @@ rm portal                  # Remove the link (NOT the destination)
 
 ![Scrap area](../screenshots/002_cd__scrap.svg)
 
-**Real-world use:** Symlinks are used constantly in modern development — `node_modules/.bin/`,
-Python virtual environments, managing multiple versions of tools, linking configuration files
-from dotfile repos, Docker volume mounts.
+**Real-world use:** Symlinks are used constantly in modern development — `node_modules/.bin/`, Python virtual environments, managing multiple versions of tools, linking configuration files from dotfile repos, Docker volume mounts.
 
 ---
 
@@ -845,5 +810,4 @@ After completing the full playthrough:
 
 ---
 
-*Remember: Every command you learn in Bashcrawl works in real terminals too. These skills
-transfer directly to software development, system administration, and daily productivity.*
+*Remember: Every command you learn in Bashcrawl works in real terminals too. These skills transfer directly to software development, system administration, and daily productivity.*

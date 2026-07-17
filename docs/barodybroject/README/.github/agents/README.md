@@ -19,8 +19,7 @@ GitHub Agents are specialized automation tools that perform specific tasks, moni
 **Status:** ✅ Active  
 **Version:** 1.0.0
 
-**The Forbidden Gateway Theme:**
-This agent uses engaging, mystical language to make documentation compelling and irresistible. Rather than boring technical docs, it creates an experience that draws readers in with warnings, mystical symbols, and narrative hooks.
+**The Forbidden Gateway Theme:** This agent uses engaging, mystical language to make documentation compelling and irresistible. Rather than boring technical docs, it creates an experience that draws readers in with warnings, mystical symbols, and narrative hooks.
 
 **The 5 Mystical Powers:**
 - 📚 **Scanner Supreme** - Discovers all README files in the repository

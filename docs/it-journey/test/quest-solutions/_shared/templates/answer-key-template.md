@@ -4,8 +4,7 @@ title: '[Quest Title]: Answer Key & Expected Outputs'
 ---
 # [Quest Title]: Answer Key & Expected Outputs
 
-**Quest**: [Quest Title]
-**Purpose**: Reference answers for all challenges and expected validation outputs
+**Quest**: [Quest Title] **Purpose**: Reference answers for all challenges and expected validation outputs
 
 > **Spoiler Warning**: This file contains solutions. Attempt the quest yourself first!
 

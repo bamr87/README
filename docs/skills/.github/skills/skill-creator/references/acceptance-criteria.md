@@ -4,9 +4,7 @@ title: Skill Creator Acceptance Criteria
 ---
 # Skill Creator Acceptance Criteria
 
-**Skill**: `skill-creator`
-**Purpose**: Guide for creating effective skills for AI coding agents
-**Focus**: SKILL.md format, YAML frontmatter, bundled resources, Azure SDK patterns
+**Skill**: `skill-creator` **Purpose**: Guide for creating effective skills for AI coding agents **Focus**: SKILL.md format, YAML frontmatter, bundled resources, Azure SDK patterns
 
 ---
 

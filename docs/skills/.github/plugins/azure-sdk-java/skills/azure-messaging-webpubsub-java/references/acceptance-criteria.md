@@ -4,9 +4,7 @@ title: Azure Web PubSub SDK for Java Acceptance Criteria
 ---
 # Azure Web PubSub SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-messaging-webpubsub`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/webpubsub/azure-messaging-webpubsub
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-messaging-webpubsub` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/webpubsub/azure-messaging-webpubsub **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -4,9 +4,7 @@ title: Azure AI Translation SDK Acceptance Criteria (TypeScript)
 ---
 # Azure AI Translation SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure-rest/ai-translation-text`, `@azure-rest/ai-translation-document`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/translation
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure-rest/ai-translation-text`, `@azure-rest/ai-translation-document` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/translation **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -188,15 +188,13 @@ But why this gem for AI conquests? In an age where chats with Grok, ChatGPT, or 
 
 ### 🏗️ Building Your Knowledge Foundation
 
-**What is GitHub Pages?**
-GitHub Pages is a static site hosting service that takes files from your GitHub repository and publishes them as a website. It's free for public repositories and provides:
+**What is GitHub Pages?** GitHub Pages is a static site hosting service that takes files from your GitHub repository and publishes them as a website. It's free for public repositories and provides:
 - Automatic HTTPS encryption
 - Global CDN distribution
 - Custom domain support
 - Integration with Jekyll for enhanced functionality
 
-**Why Jekyll?**
-Jekyll is a static site generator that converts Markdown files into HTML websites. It provides:
+**Why Jekyll?** Jekyll is a static site generator that converts Markdown files into HTML websites. It provides:
 - Blog functionality with posts and pages
 - Theme support for professional appearance
 - Plugin system for extended features

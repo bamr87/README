@@ -379,13 +379,11 @@ bundle exec jekyll build && npx serve _site  # quick local check
 
 ### 404 on project pages
 
-Symptoms: Everything 404s after deploy to `user.github.io/repo`.
-Fix: Set `baseurl: "/repo"` and use `{{ site.baseurl }}`/`relative_url` filters.
+Symptoms: Everything 404s after deploy to `user.github.io/repo`. Fix: Set `baseurl: "/repo"` and use `{{ site.baseurl }}`/`relative_url` filters.
 
 ### Redirect loops
 
-Cause: Multiple conflicting redirect rules.
-Fix: Canonicalize one permalink per artifact; remove redundant redirect targets.
+Cause: Multiple conflicting redirect rules. Fix: Canonicalize one permalink per artifact; remove redundant redirect targets.
 
 ### External link flakes (429/timeout)
 

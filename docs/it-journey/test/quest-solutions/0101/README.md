@@ -4,8 +4,7 @@ title: Level 0101 — Quest Solutions
 ---
 # Level 0101 — Quest Solutions
 
-**Level**: 0101 — Advanced Docker & DevOps
-**Quest Source**: [pages/_quests/0101/](../../pages/_quests/0101/)
+**Level**: 0101 — Advanced Docker & DevOps **Quest Source**: [pages/_quests/0101/](../../pages/_quests/0101/)
 
 ---
 

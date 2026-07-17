@@ -36,8 +36,7 @@ If you need to manually regenerate the configuration files, use these commands:
 #### PowerShell (Windows)
 \`\`\`powershell
 # Regenerate Config File
-cd ~/github/{{ site.local_repo }}
-cp {{ page.config-file }} {{ page.config-dir }}/config-utf16.txt
+cd ~/github/{{ site.local_repo }} cp {{ page.config-file }} {{ page.config-dir }}/config-utf16.txt
 Get-Content {{ page.config-dir }}/config-utf16.txt | Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }}
 
 # Generate tree structure
@@ -48,19 +47,14 @@ Get-Content {{ page.config-dir }}/tree-utf16.txt -Encoding Unicode | Set-Content
 #### Bash (Linux/macOS)
 \`\`\`bash
 # Regenerate Config File
-cd ~/github/{{ site.local_repo }}
-cp {{ page.config-file }} {{ page.config-dir }}/{{ page.config-file }}
+cd ~/github/{{ site.local_repo }} cp {{ page.config-file }} {{ page.config-dir }}/{{ page.config-file }}
 
 # Generate tree structure (respecting .gitignore)
 # This will automatically exclude files/directories listed in .gitignore
-if command -v tree >/dev/null 2>&1; then
-  ignore_pattern=\$(generate_gitignore_pattern)
-  tree -a -I "\$ignore_pattern" --dirsfirst --charset ascii > {{ page.config-dir }}/tree.txt
-else
+if command -v tree >/dev/null 2>&1; then ignore_pattern=\$(generate_gitignore_pattern) tree -a -I "\$ignore_pattern" --dirsfirst --charset ascii > {{ page.config-dir }}/tree.txt else
   # Fallback for systems without tree command
   find . -type d | grep -v -E "(\$(generate_gitignore_pattern))" | sort > {{ page.config-dir }}/tree.txt
-fi
-\`\`\`
+fi \`\`\`
 
 ### Gitignore Integration
 
@@ -71,19 +65,7 @@ The tree structure and sitemap generation **automatically respect the \`.gitigno
 - Documentation remains clean and relevant
 - Sensitive or build artifacts are not included in public documentation
 
-**Current .gitignore patterns respected:**
-\`\`\`ignore
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-_algolia_api_key
-Gemfile.lock
-.obsidian
-pages/_notes/.DS_Store
-*.DS_Store
-.env
-\`\`\`
+**Current .gitignore patterns respected:** \`\`\`ignore _site .sass-cache .jekyll-cache .jekyll-metadata _algolia_api_key Gemfile.lock .obsidian pages/_notes/.DS_Store *.DS_Store .env \`\`\`
 
 ## Jekyll Configuration
 

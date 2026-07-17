@@ -170,9 +170,7 @@ def example():
 ### Issue: Missing Enhanced Fields
 **Fix**: Add quest hierarchy to frontmatter
 ```yaml
-quest_line: "Your Campaign Name"
-quest_arc: "Story Arc"
-quest_dependencies:
+quest_line: "Your Campaign Name" quest_arc: "Story Arc" quest_dependencies:
     recommended_quests:
         - "Prerequisite Quest"
 ```

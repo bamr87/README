@@ -174,8 +174,7 @@ git commit -m "<type>(<scope>): <summary>
 Version: <old> → <new>"
 ```
 
-**Commit Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-**Scopes**: `navigation`, `layouts`, `includes`, `sass`, `config`, `ci`, `scripts`
+**Commit Types**: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore` **Scopes**: `navigation`, `layouts`, `includes`, `sass`, `config`, `ci`, `scripts`
 
 ### 5.2 Sync with Remote
 

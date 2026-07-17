@@ -1236,14 +1236,11 @@ document.getElementById('chatbot-toggle')?.addEventListener('click', async () =>
 
 ### Integration Challenges and Solutions
 
-**Challenge**: Maintaining Jekyll's static site benefits while adding dynamic functionality
-**Solution**: Progressive enhancement pattern that works with JavaScript disabled
+**Challenge**: Maintaining Jekyll's static site benefits while adding dynamic functionality **Solution**: Progressive enhancement pattern that works with JavaScript disabled
 
-**Challenge**: Managing conversation context across page navigation
-**Solution**: Local storage integration with configurable retention policies
+**Challenge**: Managing conversation context across page navigation **Solution**: Local storage integration with configurable retention policies
 
-**Challenge**: Balancing AI response quality with performance
-**Solution**: Configurable token limits and response caching strategies
+**Challenge**: Balancing AI response quality with performance **Solution**: Configurable token limits and response caching strategies
 
 ## Troubleshooting Common Issues
 

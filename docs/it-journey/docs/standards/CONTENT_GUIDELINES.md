@@ -105,8 +105,7 @@ This is the third paragraph. It provides an example or conclusion.
 
 ### Lists
 
-**Unordered Lists:**
-Use `-` for consistency:
+**Unordered Lists:** Use `-` for consistency:
 ```markdown
 - First item
 - Second item
@@ -116,8 +115,7 @@ Use `-` for consistency:
 - Fourth item
 ```
 
-**Ordered Lists:**
-Use `1.` for all items (Markdown auto-numbers):
+**Ordered Lists:** Use `1.` for all items (Markdown auto-numbers):
 ```markdown
 1. First step
 1. Second step
@@ -127,8 +125,7 @@ Use `1.` for all items (Markdown auto-numbers):
 1. Fourth step
 ```
 
-**Task Lists:**
-For checklists and to-do items:
+**Task Lists:** For checklists and to-do items:
 ```markdown
 - [ ] Incomplete task
 - [x] Completed task
@@ -182,8 +179,7 @@ Check out [Jekyll docs][jekyll] and [GitHub Pages][gh-pages].
 
 ### Code Blocks
 
-**Inline Code:**
-Use backticks for commands, file names, and code snippets:
+**Inline Code:** Use backticks for commands, file names, and code snippets:
 ```markdown
 Run `bundle exec jekyll serve` to start the development server.
 
@@ -192,8 +188,7 @@ Edit the `_config.yml` file to change site settings.
 The `collections_dir` variable defines where collections are stored.
 ```
 
-**Fenced Code Blocks:**
-Always specify the language for syntax highlighting:
+**Fenced Code Blocks:** Always specify the language for syntax highlighting:
 
 ````markdown
 ```bash
@@ -217,8 +212,7 @@ def calculate_stats(links):
 ```
 ````
 
-**Supported Languages:**
-bash, python, ruby, javascript, yaml, json, markdown, html, css, scss, liquid, diff
+**Supported Languages:** bash, python, ruby, javascript, yaml, json, markdown, html, css, scss, liquid, diff
 
 **Code Block Best Practices:**
 - Always specify language for syntax highlighting
@@ -473,8 +467,7 @@ assets/
 
 ### Code Examples
 
-**Complete and Runnable:**
-Provide complete, working examples when possible:
+**Complete and Runnable:** Provide complete, working examples when possible:
 
 ```python
 # Complete example with context
@@ -494,8 +487,7 @@ def check_links(urls):
     return broken
 ```
 
-**Snippet with Context:**
-If showing partial code, indicate what's omitted:
+**Snippet with Context:** If showing partial code, indicate what's omitted:
 
 ```python
 # ... previous code ...
@@ -701,8 +693,7 @@ Show commands with context:
 To start the development server:
 
 ```bash
-cd it-journey
-bundle exec jekyll serve --config _config_dev.yml
+cd it-journey bundle exec jekyll serve --config _config_dev.yml
 ```
 
 This will start Jekyll on port 4002 (configured in `_config_dev.yml`).
@@ -721,11 +712,7 @@ python3 scripts/validation/link-checker.py --scope website
 
 Expected output:
 ```
-[INFO] Starting link health check...
-[INFO] Scope: website
-[INFO] Found 1,250 links to check
-[SUCCESS] Link checking completed
-[INFO] Results: 1,245 valid, 5 broken
+[INFO] Starting link health check... [INFO] Scope: website [INFO] Found 1,250 links to check [SUCCESS] Link checking completed [INFO] Results: 1,245 valid, 5 broken
 ```
 ```
 

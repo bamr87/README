@@ -2561,10 +2561,7 @@ graph TB
 
 ### Database Selection Criteria
 
-**PostgreSQL**: Best for complex queries, data integrity, JSON support
-**MySQL**: Best for read-heavy workloads, simple queries, wide hosting support
-**MongoDB**: Best for flexible schemas, document storage, rapid development
-**SQL Server**: Best for Microsoft ecosystem, business intelligence integration
+**PostgreSQL**: Best for complex queries, data integrity, JSON support **MySQL**: Best for read-heavy workloads, simple queries, wide hosting support **MongoDB**: Best for flexible schemas, document storage, rapid development **SQL Server**: Best for Microsoft ecosystem, business intelligence integration
 
 ```mermaid
 graph TB

@@ -145,8 +145,7 @@ npm install -g create-vite @vitejs/plugin-react
 
 #### 🔧 Implementation: C++ Generic Vector (compile-time template)
 
-**Purpose**: Demonstrate type-parametric reuse and inlineable performance.
-**Prerequisites**: A modern C++ compiler.
+**Purpose**: Demonstrate type-parametric reuse and inlineable performance. **Prerequisites**: A modern C++ compiler.
 
 ```cpp
 // Minimal illustrative example: a typed Box
@@ -166,8 +165,7 @@ struct Box {
 
 #### 🔧 Implementation: HTML with Jinja2 (render-time template)
 
-**Purpose**: Separate content from structure with inheritance and blocks.
-**Prerequisites**: Python 3 with Jinja2.
+**Purpose**: Separate content from structure with inheritance and blocks. **Prerequisites**: Python 3 with Jinja2.
 
 ```python
 # render.py
@@ -205,8 +203,7 @@ print(env.get_template('page.html').render(title='Temple of Templates', user={'n
 
 #### 🔧 Implementation: React Component Template (runtime component)
 
-**Purpose**: Compose UI with props and slots.
-**Prerequisites**: Node.js + a React starter.
+**Purpose**: Compose UI with props and slots. **Prerequisites**: Node.js + a React starter.
 
 ```jsx
 // Card.jsx
@@ -311,8 +308,7 @@ T max_of(T a, T b) { return a < b ? b : a; }
 
 ### Challenge 1: Temple Landing (🕐 25–35 min)
 
-**Objective**: Render a landing page from a base layout.
-**Requirements**:
+**Objective**: Render a landing page from a base layout. **Requirements**:
 
 - [ ] Base layout + page override (Jinja OR React)
 - [ ] One reusable partial/component (button/card)
@@ -325,8 +321,7 @@ T max_of(T a, T b) { return a < b ? b : a; }
 
 ### Challenge 2: Dual-Temple Build (🕐 25–35 min)
 
-**Objective**: Implement the same layout in a second stack.
-**Requirements**:
+**Objective**: Implement the same layout in a second stack. **Requirements**:
 
 - [ ] Mirror layout and content model
 - [ ] Note differences (props vs. context; server vs. client render)
@@ -399,8 +394,7 @@ T max_of(T a, T b) { return a < b ? b : a; }
 
 ## 🗺️ Quest Network Position
 
-**Quest Series**: Binary Function Crafting
-**Prerequisites**:
+**Quest Series**: Binary Function Crafting **Prerequisites**:
 
 - Level 0011: Programming Basics
 - Level 0100: Git Fundamentals

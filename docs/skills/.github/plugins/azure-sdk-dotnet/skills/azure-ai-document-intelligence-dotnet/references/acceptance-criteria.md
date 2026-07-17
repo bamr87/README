@@ -4,10 +4,7 @@ title: Azure Document Intelligence SDK Acceptance Criteria (.NET)
 ---
 # Azure Document Intelligence SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.AI.DocumentIntelligence`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence
-**NuGet Package**: https://www.nuget.org/packages/Azure.AI.DocumentIntelligence
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.AI.DocumentIntelligence` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/documentintelligence/Azure.AI.DocumentIntelligence **NuGet Package**: https://www.nuget.org/packages/Azure.AI.DocumentIntelligence **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

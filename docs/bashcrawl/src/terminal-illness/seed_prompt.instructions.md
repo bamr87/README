@@ -116,8 +116,7 @@ Quest:
 
 #### D. AI Agent System (Dynamic Mode)
 
-**Multi-Agent Architecture:**
-Five specialized AI agents work collaboratively:
+**Multi-Agent Architecture:** Five specialized AI agents work collaboratively:
 
 1. **Quest Generator Agent**
    - Creates personalized challenges

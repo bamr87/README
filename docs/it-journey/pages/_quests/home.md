@@ -1012,8 +1012,7 @@ When You're Stuck on a Quest
 
 Become a Quest Creator
 
-Interested in adding your own adventures to the quest system?
-Follow the [contribution guidelines](README.md#contributing-to-the-quest-realm) to:
+Interested in adding your own adventures to the quest system? Follow the [contribution guidelines](README.md#contributing-to-the-quest-realm) to:
 
 1. Share your learning journey
 2. Create new quest content
@@ -1035,17 +1034,14 @@ The quest system is one part of the IT-Journey platform. These collections compl
 
 ---
 
-*Remember, noble adventurer: This overworld map grows with your journey.
-Check back regularly to track your progress, plan new adventures, and celebrate your achievements.
-Every checkbox you mark is a step closer to IT mastery!*
+*Remember, noble adventurer: This overworld map grows with your journey. Check back regularly to track your progress, plan new adventures, and celebrate your achievements. Every checkbox you mark is a step closer to IT mastery!*
 
 **Ready to begin your next quest? Choose your path and let the adventure continue!** ⚔️✨
 
 ## 🧭 Quest Index (Auto-Generated)
 
 <!-- QUEST_INDEX:START -->
-_This section is auto-generated. Do not edit manually._
-_Last generated: 2026-01-15T20:39:18Z_
+_This section is auto-generated. Do not edit manually._ _Last generated: 2026-01-15T20:39:18Z_
 
 **Total quests:** 144
 

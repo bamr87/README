@@ -40,8 +40,7 @@ Microsoft Foundry offers two quota types:
 - Require consistent latency with performance SLA
 - High-volume production workloads with stable traffic patterns
 
-**Decision Guidance:**
-Compare your current pay-as-you-go costs with PTU pricing. PTU may be more economical when consistent usage justifies the monthly commitment.
+**Decision Guidance:** Compare your current pay-as-you-go costs with PTU pricing. PTU may be more economical when consistent usage justifies the monthly commitment.
 
 ## PTU Capacity Planning
 
@@ -127,8 +126,7 @@ PTU quota is separate from TPM quota and requires specific justification:
    - Explain workload characteristics (volume, latency requirements)
 6. Submit and monitor status
 
-**Processing Time:** Typically 3-5 business days (longer than standard quota requests)
-**Note:** PTU quota requests typically require stronger business justification due to commitment nature
+**Processing Time:** Typically 3-5 business days (longer than standard quota requests) **Note:** PTU quota requests typically require stronger business justification due to commitment nature
 
 **Alternative:** Deploy to different region with available PTU quota
 

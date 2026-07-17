@@ -8,9 +8,7 @@ title: '⚔️ Bashcrawl: The Terminal Adventure Game'
 
 ## Where Heroes Are Forged in the Fires of the Command Line
 
-Bashcrawl is an immersive text-based adventure game that teaches you the fundamentals of POSIX
-terminal navigation through epic dungeon exploration. Transform from a terminal novice into a
-command-line champion by battling monsters, collecting treasures, and mastering the command line.
+Bashcrawl is an immersive text-based adventure game that teaches you the fundamentals of POSIX terminal navigation through epic dungeon exploration. Transform from a terminal novice into a command-line champion by battling monsters, collecting treasures, and mastering the command line.
 
 - **Learn by doing** — real terminal commands in a dungeon-crawl setting
 - **Progressive difficulty** — skills build naturally as you explore deeper
@@ -112,8 +110,7 @@ Use your actual terminal environment:
 
 #### 🤖 Agent Mode (For AI Assistants)
 
-Headless mode for programmatic interaction — lets AI coding assistants play the game
-and capture SVG screenshots:
+Headless mode for programmatic interaction — lets AI coding assistants play the game and capture SVG screenshots:
 
 - **Textual TUI Agent**: Full visual rendering with automatic screenshots
 - **Bash Agent REPL**: Lightweight fallback (no Python required)
@@ -258,14 +255,11 @@ Launch in your browser via Binder (no install required):
 
 ## 🎬 Gameplay Screenshots
 
-The following screenshots were captured from a live end-to-end TUI session using the built-in
-agent mode (`./main.sh --agent`).  They show the core progression from the entrance all the way
-through the chamber.
+The following screenshots were captured from a live end-to-end TUI session using the built-in agent mode (`./main.sh --agent`).  They show the core progression from the entrance all the way through the chamber.
 
 ### 🚪 The Entrance — Know Thy Place (`pwd` & `ls`)
 
-Awaken in the dungeon entrance and learn your first two spells: `pwd` to reveal your location
-and `ls` to see what surrounds you.
+Awaken in the dungeon entrance and learn your first two spells: `pwd` to reveal your location and `ls` to see what surrounds you.
 
 ![Entrance — pwd](screenshots/gameplay/01_entrance_pwd.svg)
 
@@ -273,15 +267,13 @@ and `ls` to see what surrounds you.
 
 ### 📜 Reading the Ancient Scroll (`cat scroll`)
 
-Every room contains a `scroll` file packed with lore and instructions.  `cat scroll` is your
-most-used spell throughout the adventure.
+Every room contains a `scroll` file packed with lore and instructions.  `cat scroll` is your most-used spell throughout the adventure.
 
 ![Entrance scroll](screenshots/gameplay/03_entrance_cat_scroll.svg)
 
 ### 🏚️ Descending to the Cellar (`ls -F` & `./treasure`)
 
-Move deeper with `cd cellar`, use `ls -F` to distinguish directories from executables, then run
-`./treasure` to claim your first inventory item — the emerald amulet.
+Move deeper with `cd cellar`, use `ls -F` to distinguish directories from executables, then run `./treasure` to claim your first inventory item — the emerald amulet.
 
 ![Cellar — ls -F](screenshots/gameplay/06_cellar_ls_f.svg)
 
@@ -291,8 +283,7 @@ Move deeper with `cd cellar`, use `ls -F` to distinguish directories from execut
 
 ### 🗡️ The Armoury — Combat & Equipment
 
-The armoury teaches file permissions and executable scripts.  Collect the sword, drink the
-health potion, and prepare for battle.
+The armoury teaches file permissions and executable scripts.  Collect the sword, drink the health potion, and prepare for battle.
 
 ![Armoury scroll](screenshots/gameplay/10_armoury_scroll.svg)
 
@@ -302,8 +293,7 @@ health potion, and prepare for battle.
 
 ### 🏰 The Chamber — Boss Encounter
 
-Face the statue in the innermost chamber.  Victory requires the sword you claimed in the
-armoury and teaches arithmetic operators (`let`).
+Face the statue in the innermost chamber.  Victory requires the sword you claimed in the armoury and teaches arithmetic operators (`let`).
 
 ![Chamber scroll](screenshots/gameplay/16_chamber_scroll.svg)
 
@@ -313,8 +303,7 @@ armoury and teaches arithmetic operators (`let`).
 
 ### 📊 Adventure Status & Quest Tracker
 
-Use the built-in `status` and `quest` commands to see your collected inventory, health, XP, and
-active objectives at any time.
+Use the built-in `status` and `quest` commands to see your collected inventory, health, XP, and active objectives at any time.
 
 ![Status screen](screenshots/gameplay/19_status.svg)
 
@@ -762,9 +751,7 @@ Perfect for computer science education:
 cd entrance && cat scroll
 ```
 
-*Adventure awaits, brave terminal warrior. The catacombs test not just your memory of commands,
-but your ability to think like the system itself. May your paths be swift, your permissions
-correct, and your exit codes always zero.*
+*Adventure awaits, brave terminal warrior. The catacombs test not just your memory of commands, but your ability to think like the system itself. May your paths be swift, your permissions correct, and your exit codes always zero.*
 
 **Happy Hacking!** ⚡
 

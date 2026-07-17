@@ -331,7 +331,6 @@ The enhanced scroll now serves multiple audiences:
 
 ---
 
-*"In the depths of the cellar, sight becomes insight, and knowledge becomes power."*
-*~ Enhanced through AI-powered development and human creativity*
+*"In the depths of the cellar, sight becomes insight, and knowledge becomes power."* *~ Enhanced through AI-powered development and human creativity*
 
 This enhancement demonstrates how AI-assisted development can transform basic educational content into comprehensive learning experiences while maintaining the creative and engaging elements that make learning enjoyable. The key is balancing automated content generation with human oversight for educational effectiveness and creative consistency.

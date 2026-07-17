@@ -336,24 +336,19 @@ The canonical automation entrypoints live under `scripts/bin/*`, with small wrap
 ### Release (`scripts/bin/release`)
 
 ```bash
-./scripts/release patch --dry-run
-./scripts/release minor
-./scripts/release patch --skip-publish --no-github-release
+./scripts/release patch --dry-run ./scripts/release minor ./scripts/release patch --skip-publish --no-github-release
 ```
 
 ### Build (`scripts/bin/build`)
 
 ```bash
-./scripts/build
-./scripts/build --dry-run
+./scripts/build ./scripts/build --dry-run
 ```
 
 ### Tests (`scripts/bin/test`)
 
 ```bash
-./scripts/bin/test
-./scripts/bin/test --verbose
-./scripts/bin/test theme
+./scripts/bin/test ./scripts/bin/test --verbose ./scripts/bin/test theme
 ```
 
 ## 🎨 Jekyll Theme Components
@@ -462,9 +457,7 @@ layout: default
 ```html
 <!-- Bootstrap JS Bundle -->
 <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-  crossorigin="anonymous"
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
 ></script>
 
 <!-- Mermaid Diagrams -->
@@ -501,26 +494,13 @@ layout: default
 
 ```bash
 # Create project directory
-mkdir zer0-mistakes && cd zer0-mistakes
-git init
+mkdir zer0-mistakes && cd zer0-mistakes git init
 
 # Create .gitignore
-cat > .gitignore << 'EOF'
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
-.bundle/
-*.gem
-.DS_Store
-Gemfile.lock
-node_modules/
-EOF
+cat > .gitignore << 'EOF' _site/ .sass-cache/ .jekyll-cache/ .jekyll-metadata vendor/ .bundle/ *.gem .DS_Store Gemfile.lock node_modules/ EOF
 
 # Initial commit
-git add .gitignore
-git commit -m "chore: initialize repository"
+git add .gitignore git commit -m "chore: initialize repository"
 ```
 
 ### Phase 2: Ruby Gem Structure
@@ -533,10 +513,7 @@ mkdir -p lib/jekyll-theme-zer0
 cat > lib/jekyll-theme-zer0/version.rb << 'EOF'
 # frozen_string_literal: true
 
-module JekyllThemeZer0
-  VERSION = "0.1.0"
-end
-EOF
+module JekyllThemeZer0 VERSION = "0.1.0" end EOF
 
 # Create main library file
 cat > lib/jekyll-theme-zer0.rb << 'EOF'
@@ -546,11 +523,9 @@ require "jekyll-theme-zer0/version"
 
 module JekyllThemeZer0
   # Theme initialization
-end
-EOF
+end EOF
 
-git add lib/
-git commit -m "feat: add Ruby gem structure"
+git add lib/ git commit -m "feat: add Ruby gem structure"
 ```
 
 ### Phase 3: Gem Configuration
@@ -563,70 +538,36 @@ cat > jekyll-theme-zer0.gemspec << 'EOF'
 require_relative "lib/jekyll-theme-zer0/version"
 
 Gem::Specification.new do |s|
-  s.name          = "jekyll-theme-zer0"
-  s.version       = JekyllThemeZer0::VERSION
-  s.authors       = ["Amr Abdel"]
-  s.email         = ["amr@it-journey.dev"]
-  s.summary       = "Jekyll theme based on bootstrap and compatible with github pages"
-  s.homepage      = "https://github.com/bamr87/zer0-mistakes"
-  s.license       = "MIT"
+s.name          = "jekyll-theme-zer0" s.version       = JekyllThemeZer0::VERSION s.authors       = ["Amr Abdel"] s.email         = ["amr@it-journey.dev"] s.summary       = "Jekyll theme based on bootstrap and compatible with github pages" s.homepage      = "https://github.com/bamr87/zer0-mistakes" s.license       = "MIT"
 
   s.files = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r{^(assets|_(data|includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
 
-  s.required_ruby_version = ">= 2.7.0"
-  s.add_runtime_dependency "jekyll"
-end
-EOF
+s.required_ruby_version = ">= 2.7.0" s.add_runtime_dependency "jekyll" end EOF
 
 # Create Gemfile
-cat > Gemfile << 'EOF'
-source "https://rubygems.org"
-gemspec
+cat > Gemfile << 'EOF' source "https://rubygems.org" gemspec
 
 # GitHub Pages gem (Jekyll 3.x + common plugins)
 gem "github-pages", ">= 228", group: :jekyll_plugins
 
 # Runtime / build helpers
-gem "webrick"
-gem "ffi"
-gem "commonmarker"
-gem "jekyll-mermaid"
-gem "faraday-retry"
+gem "webrick" gem "ffi" gem "commonmarker" gem "jekyll-mermaid" gem "faraday-retry"
 
-group :development, :test do
-  gem "html-proofer"
-  gem "rspec"
-  gem "rake"
-  gem "rubocop"
-  gem "rubocop-rake"
-end
-EOF
+group :development, :test do gem "html-proofer" gem "rspec" gem "rake" gem "rubocop" gem "rubocop-rake" end EOF
 
 # Create package.json
-cat > package.json << 'EOF'
-{
-  "name": "zer0-mistakes",
-  "version": "0.15.1",
-  "description": "Bootstrap Jekyll theme for headless Github Pages CMS.",
-  "license": "MIT"
-}
-EOF
+cat > package.json << 'EOF' { "name": "zer0-mistakes", "version": "0.15.1", "description": "Bootstrap Jekyll theme for headless Github Pages CMS.", "license": "MIT" } EOF
 
-git add jekyll-theme-zer0.gemspec Gemfile package.json
-git commit -m "feat: add gem configuration files"
+git add jekyll-theme-zer0.gemspec Gemfile package.json git commit -m "feat: add gem configuration files"
 ```
 
 ### Phase 4: Jekyll Configuration
 
 ```bash
 # Create production config
-cat > _config.yml << 'EOF'
-remote_theme: "bamr87/zer0-mistakes"
-title: "zer0-mistakes"
-url: https://zer0-mistakes.com
-baseurl: ""
+cat > _config.yml << 'EOF' remote_theme: "bamr87/zer0-mistakes" title: "zer0-mistakes" url: https://zer0-mistakes.com baseurl: ""
 
 plugins:
   - jekyll-remote-theme
@@ -635,35 +576,24 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-markdown: kramdown
-permalink: pretty
+markdown: kramdown permalink: pretty
 
-collections_dir: pages
-collections:
-  posts:
+collections_dir: pages collections: posts:
     output: true
     permalink: /:collection/:year/:month/:day/:slug/
 EOF
 
 # Create development config
-cat > _config_dev.yml << 'EOF'
-url: "http://localhost:4000"
-remote_theme: false
-incremental: true
-livereload: true
-EOF
+cat > _config_dev.yml << 'EOF' url: "http://localhost:4000" remote_theme: false incremental: true livereload: true EOF
 
-git add _config.yml _config_dev.yml
-git commit -m "feat: add Jekyll configuration"
+git add _config.yml _config_dev.yml git commit -m "feat: add Jekyll configuration"
 ```
 
 ### Phase 5: Docker Environment
 
 ```bash
 # Create docker-compose.yml
-cat > docker-compose.yml << 'EOF'
-services:
-  jekyll:
+cat > docker-compose.yml << 'EOF' services: jekyll:
     build:
       context: .
       dockerfile: docker/Dockerfile
@@ -681,23 +611,18 @@ services:
       - JEKYLL_ENV=development
       - BUNDLE_PATH=/usr/local/bundle
 
-volumes:
-  bundle_cache:
+volumes: bundle_cache:
     driver: local
 EOF
 
-git add docker-compose.yml
-git commit -m "feat: add Docker development environment"
+git add docker-compose.yml git commit -m "feat: add Docker development environment"
 ```
 
 ### Phase 6: Theme Structure
 
 ```bash
 # Create directory structure
-mkdir -p _layouts _includes/{core,components,analytics,navigation}
-mkdir -p _sass assets/{css,js,images}
-mkdir -p pages/{_posts,_docs}
-mkdir -p scripts test
+mkdir -p _layouts _includes/{core,components,analytics,navigation} mkdir -p _sass assets/{css,js,images} mkdir -p pages/{_posts,_docs} mkdir -p scripts test
 
 # Create root layout
 cat > _layouts/root.html << 'EOF'
@@ -743,8 +668,7 @@ cat > _includes/core/scripts.html << 'EOF'
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 EOF
 
-git add _layouts/ _includes/
-git commit -m "feat: add theme layouts and includes"
+git add _layouts/ _includes/ git commit -m "feat: add theme layouts and includes"
 ```
 
 ### Phase 7: Automation Scripts (Modern)
@@ -767,17 +691,14 @@ git commit -m "feat: add theme layouts and includes"
 ### Phase 8: Makefile (Optional)
 
 ```bash
-cat > Makefile << 'EOF'
-.DEFAULT_GOAL := help
+cat > Makefile << 'EOF' .DEFAULT_GOAL := help
 
 setup:
 	@bundle install
 
-test:
-  @./scripts/bin/test
+test: @./scripts/bin/test
 
-build: test
-  @./scripts/build
+build: test @./scripts/build
 
 help:
 	@echo "make setup       - Install dependencies"
@@ -785,8 +706,7 @@ help:
 	@echo "make build       - Build gem"
 EOF
 
-git add Makefile
-git commit -m "feat: add Makefile interface"
+git add Makefile git commit -m "feat: add Makefile interface"
 ```
 
 ### Phase 9: Documentation
@@ -807,8 +727,7 @@ docker-compose up
 
 ## License
 
-MIT License
-EOF
+MIT License EOF
 
 # Create CHANGELOG
 
@@ -827,18 +746,13 @@ cat > CHANGELOG.md << 'EOF'
 
 # Create LICENSE
 
-cat > LICENSE << 'EOF'
-MIT License
+cat > LICENSE << 'EOF' MIT License
 
 Copyright (c) 2025 Amr Abdel-Motaleb
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-EOF
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction... EOF
 
-git add README.md CHANGELOG.md LICENSE
-git commit -m "docs: add project documentation"
+git add README.md CHANGELOG.md LICENSE git commit -m "docs: add project documentation"
 
 ````
 

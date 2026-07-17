@@ -824,8 +824,7 @@ Create a configuration file at `~/.script-name.conf`:
 
 ```bash
 # Example configuration
-SETTING_ONE="value"
-SETTING_TWO="another_value"
+SETTING_ONE="value" SETTING_TWO="another_value"
 ```
 
 ### Usage Examples
@@ -857,24 +856,16 @@ SETTING_TWO="another_value"
 Create `/etc/systemd/system/script-name.service`:
 
 ```ini
-[Unit]
-Description=Script Name Service
-After=network.target
+[Unit] Description=Script Name Service After=network.target
 
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/script-name.sh --yes
-StandardOutput=journal
-StandardError=journal
+[Service] Type=oneshot ExecStart=/usr/local/bin/script-name.sh --yes StandardOutput=journal StandardError=journal
 
-[Install]
-WantedBy=multi-user.target
+[Install] WantedBy=multi-user.target
 ```
 
 Enable and start:
 ```bash
-sudo systemctl enable script-name.service
-sudo systemctl start script-name.service
+sudo systemctl enable script-name.service sudo systemctl start script-name.service
 ```
 
 #### CI/CD Pipeline (GitHub Actions Example)

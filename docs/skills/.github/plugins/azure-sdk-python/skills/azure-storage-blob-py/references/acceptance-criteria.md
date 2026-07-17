@@ -4,10 +4,7 @@ title: Azure Storage Blob SDK Acceptance Criteria
 ---
 # Azure Storage Blob SDK Acceptance Criteria
 
-**SDK**: `azure-storage-blob`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Commit**: `e7b5fa81aa188011fb4323382d1a32b32f54d55b`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-storage-blob` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `e7b5fa81aa188011fb4323382d1a32b32f54d55b` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

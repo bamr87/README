@@ -4,9 +4,7 @@ title: Azure.ResourceManager.CosmosDB (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.CosmosDB (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.CosmosDB`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cosmosdb/Azure.ResourceManager.CosmosDB
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.CosmosDB` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/cosmosdb/Azure.ResourceManager.CosmosDB **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

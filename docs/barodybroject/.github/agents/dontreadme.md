@@ -316,10 +316,7 @@ ai_context: Additional context for AI agents
    ## Contents
    
    ```
-   directory/
-   ├── critical_file.py        # The heart of the operation
-   ├── support_file.py         # Supporting magic
-   └── subdirectory/           # Where the secrets hide
+directory/ ├── critical_file.py        # The heart of the operation ├── support_file.py         # Supporting magic └── subdirectory/           # Where the secrets hide
        └── README.md           # Journey deeper
    ```
    ```

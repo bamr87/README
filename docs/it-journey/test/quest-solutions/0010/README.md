@@ -4,8 +4,7 @@ title: Level 0010 — Quest Solutions
 ---
 # Level 0010 — Quest Solutions
 
-**Level**: 0010 — Terminal Enhancement & Shell Mastery
-**Quest Source**: [pages/_quests/0010/](../../pages/_quests/0010/)
+**Level**: 0010 — Terminal Enhancement & Shell Mastery **Quest Source**: [pages/_quests/0010/](../../pages/_quests/0010/)
 
 ---
 

@@ -501,9 +501,7 @@ Today I launched my first Jekyll site on GitHub Pages! Here's what I learned:
 
 ```ruby
 # Jekyll can highlight code automatically
-define greet(name)
-  puts "Hello, #{name}!"
-end
+define greet(name) puts "Hello, #{name}!" end
 
 greet("GitHub Pages")
 ```

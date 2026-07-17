@@ -4,9 +4,7 @@ title: Azure Event Hubs Java SDK Acceptance Criteria
 ---
 # Azure Event Hubs Java SDK Acceptance Criteria
 
-**SDK**: `com.azure:azure-messaging-eventhubs`
-**Repository**: https://github.com/Azure/azure-sdk-for-java
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-messaging-eventhubs` **Repository**: https://github.com/Azure/azure-sdk-for-java **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

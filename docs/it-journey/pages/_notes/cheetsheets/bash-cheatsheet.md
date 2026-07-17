@@ -38,8 +38,7 @@ title: This is an inline Bash comment.
 
 test
 
-Getting started
-{: .cols-3 }
+Getting started {: .cols-3 }
 
 ---------------
 

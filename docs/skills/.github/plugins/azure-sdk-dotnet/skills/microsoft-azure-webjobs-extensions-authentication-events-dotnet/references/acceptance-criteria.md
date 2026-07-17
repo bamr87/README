@@ -5,10 +5,7 @@ title: Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents SDK Acceptance Cr
 ---
 # Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents SDK Acceptance Criteria (.NET)
 
-**SDK**: `Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/entra/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents
-**Package**: https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents
-**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/entra/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents **Package**: https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

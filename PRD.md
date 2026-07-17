@@ -8,20 +8,11 @@
 
 ## 1. Problem
 
-The bamr87 monorepo manages a fleet of independent project repos. Knowledge
-about the fleet is scattered across dozens of READMEs and doc trees that
-drift, duplicate, and go stale. Humans can't hold the whole picture;
-AI agents working on any one repo lack cheap, current context about the
-others. Hand-maintaining a master README does not scale past a handful of
-projects.
+The bamr87 monorepo manages a fleet of independent project repos. Knowledge about the fleet is scattered across dozens of READMEs and doc trees that drift, duplicate, and go stale. Humans can't hold the whole picture; AI agents working on any one repo lack cheap, current context about the others. Hand-maintaining a master README does not scale past a handful of projects.
 
 ## 2. Vision
 
-A README that is **built, not written**. This repo crawls the fleet,
-distills what it finds into a pyramid of context, publishes the apex as the
-consolidated README, and serves the whole pyramid through query interfaces.
-Because the pipeline reruns on a schedule, the context grows and corrects
-itself as the fleet evolves.
+A README that is **built, not written**. This repo crawls the fleet, distills what it finds into a pyramid of context, publishes the apex as the consolidated README, and serves the whole pyramid through query interfaces. Because the pipeline reruns on a schedule, the context grows and corrects itself as the fleet evolves.
 
 ## 3. Architecture — the pyramid (per the monorepo SCHEMA protocol)
 
@@ -38,8 +29,7 @@ Supporting contracts:
 - **Registry as source of truth** — `_data/projects.yml`; `repos.txt` and
   every generated surface are regenerated from it, never hand-edited.
 - **SCHEMA.md pyramid** — every governed directory carries a SCHEMA.md
-  (structure table, placement, forbidden); `scripts/schema_lint.py check .`
-  is the drift gate, wired into CI, matching the parent monorepo protocol.
+(structure table, placement, forbidden); `scripts/schema_lint.py check .` is the drift gate, wired into CI, matching the parent monorepo protocol.
 - **Hooks** — `hooks.d/<stage>/` executables run at each engine stage, the
   extension point for AI orchestration around the pipeline.
 
@@ -48,19 +38,14 @@ Supporting contracts:
 1. **Crawl**: aggregate markdown from every active registry project
    (clone/pull, branch pins, external repos) — stages 1–3 (existing).
 2. **Extract**: derive per-project facts offline from the corpus: identity
-   (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md,
-   AGENTS.md, …), structure, rollups (tags/categories/languages/words),
-   key documents, and a corpus fingerprint for change detection.
+(title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md, AGENTS.md, …), structure, rollups (tags/categories/languages/words), key documents, and a corpus fingerprint for change detection.
 3. **Synthesize**: render facts into per-project cards with a frontmatter
    contract; optionally AI-enrich the essence paragraph.
 4. **Assemble**: build the consolidated apex README; inject the fleet table
-   into the root README `AUTO:projects` span; mirror the fleet overview to
-   the published site home (`docs/index.md`).
+into the root README `AUTO:projects` span; mirror the fleet overview to the published site home (`docs/index.md`).
 5. **Index**: build a term index + manifest so queries need no rescan.
 6. **Serve**: answer queries via CLI (`query/card/facts/apex/status/
-   projects`) and via MCP (`list_projects`, `get_project`,
-   `search_context`, `get_readme`, `get_schema`, `context_status` +
-   `context://` resources).
+projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status` + `context://` resources).
 7. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits;
    hooks allow agents to extend every build.
 

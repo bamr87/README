@@ -4,9 +4,7 @@ title: Azure Identity SDK for Rust Acceptance Criteria
 ---
 # Azure Identity SDK for Rust Acceptance Criteria
 
-**Crate**: `azure_identity`
-**Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/identity/azure_identity
-**Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
+**Crate**: `azure_identity` **Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/identity/azure_identity **Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
 
 ---
 

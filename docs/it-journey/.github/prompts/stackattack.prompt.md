@@ -319,10 +319,7 @@ Provide actionable recommendations in these categories:
 **Quick Setup**:
 ```bash
 # Step-by-step setup commands
-git clone [repo-url]
-cd [repo-name]
-[installation commands]
-[start commands]
+git clone [repo-url] cd [repo-name] [installation commands] [start commands]
 ```
 
 **Key Concepts to Understand**:
