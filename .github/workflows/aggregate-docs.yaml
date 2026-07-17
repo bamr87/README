@@ -2,12 +2,18 @@ name: Aggregate Documentation
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight
+    - cron: '0 3 * * 1'  # Weekly, Monday 03:00 UTC (off the congested midnight slot)
   workflow_dispatch:  # Manual trigger
+
+# The default GITHUB_TOKEN on this repo is read-only; the commit step needs
+# write access to push the aggregated docs back to main.
+permissions:
+  contents: write
 
 jobs:
   aggregate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout central repo
         uses: actions/checkout@v4

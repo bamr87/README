@@ -7,12 +7,29 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - '**.md'
+      - 'requirements.txt'
+      - '.github/workflows/docs-quality-check.yaml'
   workflow_dispatch: {}
+
+concurrency:
+  group: dqc-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   docs-quality:
     name: Docs Quality Check
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # The repo default GITHUB_TOKEN is read-only; the PR comment step needs
+    # issues: write (PR comments are issue comments).
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -21,6 +38,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
@@ -43,28 +61,32 @@ jobs:
         with:
           name: docs-quality-report
           path: docs/results/docs_quality_report.json
-      - name: Add a report comment to PR (if applicable)
+      # `body:` is never shell-expanded, so $(cat ...) would post literally.
+      # Build the comment body in a run step and hand it over via body-path.
+      - name: Build PR comment body
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          set -euo pipefail
+          report=docs/results/docs_quality_report.json
+          {
+            echo '## Docs Quality Report'
+            echo '```json'
+            cat "$report" 2>/dev/null || echo '{}'
+            echo '```'
+            echo
+            echo '## Top Lint Issues (first 20 files)'
+            echo '```json'
+            jq '.top_issues' "$report" 2>/dev/null || echo '[]'
+            echo '```'
+          } > docs/results/pr_comment.md
+
+      - name: Add report comment to PR
         if: ${{ github.event_name == 'pull_request' }}
         uses: peter-evans/create-or-update-comment@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            ## Docs Quality Report
-            ```json
-            $(cat docs/results/docs_quality_report.json 2>/dev/null || echo '{}')
-            ```
-      - name: Add a top-issues snippet to PR comment (if applicable)
-        if: ${{ github.event_name == 'pull_request' }}
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            ## Top Lint Issues (first 20 files):
-            ```json
-            $(jq '.top_issues' docs/results/docs_quality_report.json 2>/dev/null || echo '[]')
-            ```
+          body-path: docs/results/pr_comment.md
 
       - name: Show summary (optional)
         if: always()
