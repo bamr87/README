@@ -5,33 +5,26 @@ categories:
 - Community
 - Frontend
 comments: true
-date: 2026-03-20 00:00:00+00:00
-description: Extend the contributor stats panel with charts, graphs, and enhanced
-  data visualizations
+date: '2026-03-20T00:00:00.000Z'
+description: Upgrade your character sheet's stats panel with language bars, progress
+  rings, and contribution charts built in pure HTML, CSS, and Liquid.
 difficulty: 🟡 Medium
 draft: false
 estimated_time: 45-60 minutes
 excerpt: The Data Sage reveals deeper patterns in your contribution history.
 fmContentType: quest
 keywords:
-- stats dashboard
-- charts
-- data visualization
-- JavaScript
-lastmod: 2026-03-21 15:12:32.246000+00:00
-learning_paths:
-  character_classes:
-  - 🧙 Wizard
-  - 🗡️ Rogue
-  primary_paths:
-  - Frontend Developer
-  - Community Contributor
-  skill_trees:
-  - Frontend Development
-  - Data Visualization
+  primary:
+  - stats dashboard
+  - charts
+  secondary:
+  - data visualization
+  - JavaScript
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: project-based
 level: '0010'
-permalink: /quests/side-quest-stats-dashboard/
+permalink: /quests/0010/stats-dashboard/
 prerequisites:
   knowledge_requirements:
   - Completed Forge Your Character quest
@@ -44,24 +37,24 @@ primary_technology: javascript
 quest_arc: 'Act II: Mastering the Craft'
 quest_dependencies:
   recommended_quests:
-  - /quests/side-quest-badge-collector/
+  - /quests/0001/badge-collector/
   required_quests:
-  - /quests/forge-your-character/
+  - /quests/0001/forge-your-character/
   unlocks_quests:
-  - /quests/side-quest-contribution-calendar/
+  - /quests/0010/contribution-calendar/
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: side_quest
+redirect_from:
+- /quests/0010/side-quests/stats-dashboard/
 rewards:
   badges:
   - 📊 Data Sage — Enhanced stats visualization on character sheet
   progression_points: 100
-skill_focus:
-- frontend
-snippet: Numbers tell tales — learn to read the runes of data
+skill_focus: frontend
 source_file: side-quest-stats-dashboard.md
 tags:
-- lvl-0010
+- '0010'
 - contributor
 - stats
 - data-visualization
@@ -125,52 +118,52 @@ All of this is accessible in Liquid as `site.data.contributors.YOUR_USERNAME.sta
 Create `_includes/contributor/stats_dashboard.html`:
 
 ```html
-{% raw %}
-{% assign s = include.stats %}
-{% if s %}
+
+{% raw %}{% assign s = include.stats %}{% endraw %}
+{% raw %}{% if s %}{% endraw %}
 <div class="contributor-dashboard">
 
   <!-- Language Breakdown -->
-  {% if s.top_languages.size > 0 %}
+  {% raw %}{% if s.top_languages.size > 0 %}{% endraw %}
   <div class="dashboard-section">
     <h4>🔤 Languages</h4>
     <div class="language-bars">
-      {% for lang in s.top_languages %}
+      {% raw %}{% for lang in s.top_languages %}{% endraw %}
       <div class="lang-row">
-        <span class="lang-name">{{ lang.name }}</span>
+        <span class="lang-name">{% raw %}{{ lang.name }}{% endraw %}</span>
         <div class="lang-bar-track">
-          <div class="lang-bar-fill" style="width: {{ lang.percentage }}%">
-            {{ lang.percentage }}%
+          <div class="lang-bar-fill" style="width: {% raw %}{{ lang.percentage }}{% endraw %}%">
+            {% raw %}{{ lang.percentage }}{% endraw %}%
           </div>
         </div>
       </div>
-      {% endfor %}
+      {% raw %}{% endfor %}{% endraw %}
     </div>
   </div>
-  {% endif %}
+  {% raw %}{% endif %}{% endraw %}
 
   <!-- Lines of Code -->
-  {% if s.lines_added > 0 or s.lines_removed > 0 %}
+  {% raw %}{% if s.lines_added > 0 or s.lines_removed > 0 %}{% endraw %}
   <div class="dashboard-section">
     <h4>📝 Code Impact</h4>
-    {% assign total_lines = s.lines_added | plus: s.lines_removed %}
-    {% assign add_pct = s.lines_added | times: 100 | divided_by: total_lines %}
+    {% raw %}{% assign total_lines = s.lines_added | plus: s.lines_removed %}{% endraw %}
+    {% raw %}{% assign add_pct = s.lines_added | times: 100 | divided_by: total_lines %}{% endraw %}
     <div class="code-impact-bar">
-      <div class="impact-added" style="width: {{ add_pct }}%"
-           title="{{ s.lines_added }} lines added">
-        +{{ s.lines_added }}
+      <div class="impact-added" style="width: {% raw %}{{ add_pct }}{% endraw %}%"
+           title="{% raw %}{{ s.lines_added }}{% endraw %} lines added">
+        +{% raw %}{{ s.lines_added }}{% endraw %}
       </div>
-      <div class="impact-removed" style="width: {{ 100 | minus: add_pct }}%"
-           title="{{ s.lines_removed }} lines removed">
-        -{{ s.lines_removed }}
+      <div class="impact-removed" style="width: {% raw %}{{ 100 | minus: add_pct }}{% endraw %}%"
+           title="{% raw %}{{ s.lines_removed }}{% endraw %} lines removed">
+        -{% raw %}{{ s.lines_removed }}{% endraw %}
       </div>
     </div>
   </div>
-  {% endif %}
+  {% raw %}{% endif %}{% endraw %}
 
 </div>
-{% endif %}
-{% endraw %}
+{% raw %}{% endif %}{% endraw %}
+
 ```
 
 ### Step 3: Add CSS Styles
@@ -243,9 +236,9 @@ Add to `assets/css/contributor-profile.css`:
 Edit `_includes/contributor/character_sheet.html` and add after the stats panel:
 
 ```liquid
-{% raw %}
-{% include contributor/stats_dashboard.html stats=contributor.stats %}
-{% endraw %}
+
+{% raw %}{% include contributor/stats_dashboard.html stats=contributor.stats %}{% endraw %}
+
 ```
 
 ### Step 5: Verify
@@ -266,16 +259,16 @@ Check your profile page for the new visualizations.
 Add a category section to your dashboard for extra polish:
 
 ```html
-{% raw %}
-{% if s.top_categories.size > 0 %}
+
+{% raw %}{% if s.top_categories.size > 0 %}{% endraw %}
 <div class="dashboard-section">
   <h4>📂 Top Categories</h4>
-  {% for cat in s.top_categories %}
-  <span class="category-chip">{{ cat.name }} ({{ cat.count }})</span>
-  {% endfor %}
+  {% raw %}{% for cat in s.top_categories %}{% endraw %}
+  <span class="category-chip">{% raw %}{{ cat.name }}{% endraw %} ({% raw %}{{ cat.count }}{% endraw %})</span>
+  {% raw %}{% endfor %}{% endraw %}
 </div>
-{% endif %}
-{% endraw %}
+{% raw %}{% endif %}{% endraw %}
+
 ```
 
 ## 🏆 Reward: Data Sage Badge 📊
@@ -285,3 +278,10 @@ Once your enhanced stats dashboard renders on your profile, you've earned the **
 ---
 
 > *"You see beyond the numbers now. Welcome to the inner circle of data wielders."*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Badge Collector: Showcasing Your Achievements]] **Unlocks:** [[Contribution Calendar: Mapping Your Journey Through Time]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

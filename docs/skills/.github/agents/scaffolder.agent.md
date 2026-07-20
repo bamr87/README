@@ -275,6 +275,15 @@ azd deploy
 
 ## Rules
 
-✅ Use `remoteBuild: true` in azure.yaml for all services ✅ Use `DefaultAzureCredential` for Azure SDK authentication ✅ Use Fluent UI dark theme with custom brand tokens ✅ Use Pydantic v2 multi-model pattern for all API models ✅ Use async/await for all Azure SDK and database operations ✅ Include health check endpoint at `/api/health` ✅ Include CI workflow with lint, type check, and tests
+✅ Use `remoteBuild: true` in azure.yaml for all services
+✅ Use `DefaultAzureCredential` for Azure SDK authentication
+✅ Use Fluent UI dark theme with custom brand tokens
+✅ Use Pydantic v2 multi-model pattern for all API models
+✅ Use async/await for all Azure SDK and database operations
+✅ Include health check endpoint at `/api/health`
+✅ Include CI workflow with lint, type check, and tests
 
-🚫 Never hardcode credentials or endpoints 🚫 Never commit `.env` files 🚫 Never skip the verification step 🚫 Never use `localBuild` in azure.yaml (requires local Docker)
+🚫 Never hardcode credentials or endpoints
+🚫 Never commit `.env` files
+🚫 Never skip the verification step
+🚫 Never use `localBuild` in azure.yaml (requires local Docker)

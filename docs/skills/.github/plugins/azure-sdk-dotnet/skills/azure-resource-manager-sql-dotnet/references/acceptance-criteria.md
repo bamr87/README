@@ -4,7 +4,9 @@ title: Azure.ResourceManager.Sql (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.Sql (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.Sql` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/sqlmanagement/Azure.ResourceManager.Sql **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.Sql`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/sqlmanagement/Azure.ResourceManager.Sql
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

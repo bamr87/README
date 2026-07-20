@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 435,
-    "fingerprint": "d1e68749b0cbe1b3",
+    "file_count": 439,
+    "fingerprint": "00caec9735e310ba",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 3218366
+    "total_bytes": 3233889
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -51,7 +51,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 435
+      "zer0-mistakes": 439
     },
     "code_languages": [
       "bash",
@@ -63,7 +63,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 435,
+    "indexed_documents": 439,
     "top_tags": [
       "jekyll",
       "automation",
@@ -76,12 +76,12 @@
       "theme",
       "ai",
       "github-pages",
-      "installation",
       "systems",
+      "installation",
       "bootstrap",
       "styling"
     ],
-    "total_words": 387793
+    "total_words": 390138
   },
   "schema_version": "1.0",
   "signals": {
@@ -108,15 +108,15 @@
         "name": "pages"
       },
       {
-        "doc_count": 104,
+        "doc_count": 105,
         "name": "docs"
       },
       {
-        "doc_count": 44,
+        "doc_count": 45,
         "name": ".github"
       },
       {
-        "doc_count": 24,
+        "doc_count": 26,
         "name": "test"
       },
       {

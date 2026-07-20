@@ -1,38 +1,32 @@
 {
   "corpus": {
-    "file_count": 36,
-    "fingerprint": "1519dfd096a1715b",
+    "file_count": 40,
+    "fingerprint": "5aa44e46e3422d9c",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 498223
+    "total_bytes": 483838
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
-      "Where Heroes Are Forged in the Fires of the Command Line",
-      "\ud83c\udfae Getting Started",
-      "\ud83c\udf1f What Makes This Journey Special",
-      "\ud83d\ude80 Quick Start Your Adventure",
-      "\ud83c\udfac Gameplay Screenshots",
-      "\ud83d\udee1\ufe0f Interactive Terminal Emulator",
-      "\ud83c\udfaf Learning Path & Skills",
-      "\ud83e\udd16 Intelligent Help System",
-      "\ud83d\uddfa\ufe0f The Catacombs: Complete Adventure Map",
-      "\ud83c\udfae Gameplay Mechanics"
+      "\ud83c\udfae Play it",
+      "\ud83e\udded What's in the box",
+      "\ud83d\udd27 For developers",
+      "\ud83d\ude4f Lineage"
     ],
     "readme": "README.md",
-    "summary": "v3.0.0 \u2014 Textual TUI, quest system, agent mode, and more",
-    "title": "\u2694\ufe0f Bashcrawl: The Terminal Adventure Game"
+    "summary": "v3.1 \u2014 one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.",
+    "title": "\u2694\ufe0f Bashcrawl \u2014 learn the terminal by playing"
   },
   "key_docs": [
     "README.md",
+    "CLAUDE.md",
     "CHANGELOG.md",
     "docs/demo-walkthrough.md",
     ".github/instructions/scrolls.instructions.md",
     "docs/log-viewer-reference.md",
     "docs/demo-critical-path.md",
-    "docs/walkthrough.md",
-    ".github/instructions/rooms.instructions.md"
+    "docs/walkthrough.md"
   ],
   "project": {
     "branch": null,
@@ -51,7 +45,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 36
+      "bashcrawl": 40
     },
     "code_languages": [
       "bash",
@@ -63,15 +57,15 @@
       "markdown",
       "gitignore"
     ],
-    "indexed_documents": 36,
+    "indexed_documents": 40,
     "top_tags": [],
-    "total_words": 55242
+    "total_words": 53746
   },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": false,
     "has_changelog": true,
-    "has_claude_md": false,
+    "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
     "has_security_policy": false
@@ -79,11 +73,12 @@
   "structure": {
     "root_docs": [
       "CHANGELOG.md",
+      "CLAUDE.md",
       "README.md"
     ],
     "top_dirs": [
       {
-        "doc_count": 18,
+        "doc_count": 21,
         "name": "docs"
       },
       {

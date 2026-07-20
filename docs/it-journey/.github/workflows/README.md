@@ -1,256 +1,123 @@
 ---
 source_file: README.md
-title: AI-Powered Content Review and Frontmatter Management
+title: GitHub Actions Workflows
 ---
-# AI-Powered Content Review and Frontmatter Management
+# GitHub Actions Workflows
 
-This documentation describes the AI-powered workflows for automated content review and frontmatter management in the IT-Journey repository.
+This directory holds every CI/CD and automation workflow for IT-Journey. This README is the **inventory + map**; each workflow file has a header comment with its own rationale.
 
-## Overview
+> Keep this file in sync when you add, remove, or repurpose a workflow.
 
-The repository now includes two automated workflows that help maintain content quality and consistency:
+## Conventions (all workflows)
 
-1. **AI Content Review Workflow** - Analyzes content quality using AI and provides improvement suggestions
-2. **Frontmatter Validation Workflow** - Validates and automatically fixes frontmatter issues
-3. **Link Health Guardian Workflow** - Checks links and produces a summarized health report
-
-## AI Content Review Workflow
-
-### File: `.github/workflows/ai-content-review.yml`
-
-This workflow automatically reviews markdown files in the `pages/` directory using OpenAI's GPT-4 API whenever:
-- A pull request is opened or updated with markdown file changes
-- Changes are pushed to the main branch
-
-### Features
-
-- **Automatic Trigger**: Runs on PR creation/updates and pushes to main
-- **AI Analysis**: Uses GPT-4 to analyze content quality, SEO, and technical accuracy
-- **PR Comments**: Posts review results as comments on pull requests
-- **Issue Creation**: Creates improvement suggestion issues for main branch pushes
-- **Artifact Storage**: Saves review results for 30 days
-
-### Setup Requirements
-
-1. **OpenAI API Key**: Add `OPENAI_API_KEY` to repository secrets
-   - Go to Repository Settings > Secrets and Variables > Actions
-   - Add new repository secret: `OPENAI_API_KEY`
-   - Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
-
-2. **GitHub Token**: Uses built-in `GITHUB_TOKEN` (automatically available)
-
-### Review Criteria
-
-The AI reviews content based on:
-
-- **Frontmatter Completeness**: Checks required fields (title, description, date, author, categories, tags)
-- **Content Quality**: Assesses writing quality, structure, and technical accuracy
-- **SEO Optimization**: Suggests improvements for discoverability
-- **Accessibility**: Checks heading structure and alt text
-- **Technical Accuracy**: Reviews code examples and technical content
-
-### Output
-
-The workflow generates:
-- Overall quality score (1-10)
-- List of positive aspects
-- Priority action items
-- Frontmatter issues
-- Content suggestions
-- SEO improvements
-
-## Frontmatter Validation Workflow
-
-### File: `.github/workflows/frontmatter-validation.yml`
-
-This workflow validates frontmatter fields and can automatically fix common issues.
-
-### Triggers
-
-- **Pull Request**: Validates changed markdown files
-- **Manual Trigger**: Can be run manually with option to apply fixes
-  - Go to Actions > Frontmatter Validation > Run workflow
-  - Choose whether to apply automatic fixes
-
-### Features
-
-- **Validation**: Checks for missing required fields and formatting issues
-- **Auto-Fix**: Can automatically add missing fields like dates, authors, categories
-- **Reports**: Generates detailed validation reports
-- **Safe Operations**: Preview mode shows what would be changed before applying
-
-### Required Fields
-
-The workflow enforces these required frontmatter fields:
-- `title` - Post/page title
-- `description` - Meta description for SEO
-- `date` - Publication date (ISO 8601 format)
-- `author` - Content author
-- `categories` - Content categories (list)
-- `tags` - Content tags (list)
-
-### Recommended Fields
-
-Additional fields that improve content management:
-- `excerpt` - Short summary
-- `lastmod` - Last modification date
-- `draft` - Draft status (true/false)
-
-### Auto-Fix Capabilities
-
-When enabled, the workflow can automatically:
-- Extract dates from filenames (e.g., `2024-01-01-title.md`)
-- Generate descriptions from content
-- Infer categories from directory structure
-- Add default author information
-- Set appropriate draft status
-- Add modification timestamps
-
-## Usage Examples
-
-### Running Manual Frontmatter Validation
-
-1. Go to Actions tab in GitHub
-2. Select "Frontmatter Validation and Auto-Fix"
-3. Click "Run workflow"
-4. Choose "true" for `apply_fixes` to apply automatic fixes
-5. Review the results in the workflow run
-
-### Setting Up AI Review
-
-1. Obtain OpenAI API key
-2. Add to repository secrets as `OPENAI_API_KEY`
-3. Create a pull request with markdown changes
-4. Review the AI-generated feedback in PR comments
-
-### Interpreting Results
-
-#### Quality Scores
-- **8-10**: Excellent content, minimal improvements needed
-- **6-7**: Good content, some enhancements suggested
-- **4-5**: Fair content, several improvements recommended
-- **1-3**: Poor content, significant improvements required
-
-#### Common Issues and Fixes
-
-| Issue | Auto-Fix | Manual Action Required |
-|-------|----------|----------------------|
-| Missing date | ✅ Extracts from filename or uses file timestamp | - |
-| Missing author | ✅ Sets to default author | Update if incorrect |
-| Missing categories | ✅ Infers from directory structure | Review and refine |
-| Missing description | ✅ Generates from content | Review and improve |
-| Missing tags | ✅ Basic inference from content | Add relevant tags |
-| Content too short | ❌ | Expand with more details |
-| Missing headers | ❌ | Add section headers |
-| Broken links | ❌ | Fix or remove broken links |
-
-## Link Health Guardian Workflow
-
-### File: `.github/workflows/link-checker.yml`
-
-This workflow runs the Link Health Guardian to validate links across the site and generate a workflow summary, even when link checks fail.
-
-### Triggers
-
-- **Schedule**: Mondays at 6 AM UTC, Fridays at 6 PM UTC
-- **Manual Trigger**: Configurable scope, analysis level, timeouts, and AI analysis
-
-### Output
-
-- Link statistics exported via `statistics.env`
-- Markdown summary in the Actions run summary
-- Artifact archive under `link-check-results/`
-
-## Best Practices
-
-### For Content Creators
-
-1. **Use Descriptive Titles**: 30-60 characters for optimal SEO
-2. **Write Meta Descriptions**: 120-160 characters summarizing content
-3. **Structure Content**: Use headers (H1, H2, H3) to organize information
-4. **Add Alt Text**: Provide descriptive alt text for all images
-5. **Include Examples**: Add code examples and practical demonstrations
-6. **Link Appropriately**: Include relevant internal and external links
-
-### For Repository Maintainers
-
-1. **Monitor Workflow Runs**: Check for failures and address API issues
-2. **Review AI Suggestions**: Not all suggestions may be applicable
-3. **Update Required Fields**: Modify validation rules as needed
-4. **Manage API Costs**: Monitor OpenAI API usage
-5. **Train Contributors**: Help team members understand quality standards
-
-## Troubleshooting
-
-### Common Issues
-
-#### AI Review Not Working
-- Check if `OPENAI_API_KEY` secret is set correctly
-- Verify API key has sufficient credits
-- Check workflow logs for error messages
-
-#### Frontmatter Validation Fails
-- Ensure YAML syntax is correct in frontmatter
-- Check for special characters that need escaping
-- Verify file encoding is UTF-8
-
-#### Build Failures After Auto-Fix
-- Review changes made by auto-fix
-- Check Jekyll build logs for specific errors
-- Verify frontmatter follows Jekyll conventions
-
-### Getting Help
-
-1. Check workflow run logs in GitHub Actions
-2. Review generated reports and artifacts
-3. Create an issue with workflow logs if problems persist
-4. Refer to Jekyll and GitHub Actions documentation
-
-## Configuration
-
-### Customizing Validation Rules
-
-Edit `frontmatter-validation.yml` to modify:
-- Required fields list
-- Default values
-- Validation criteria
-- File selection patterns
-
-### Customizing AI Review
-
-Edit `ai-content-review.yml` to modify:
-- AI model used (currently GPT-4)
-- Review criteria prompts
-- Output format
-- Trigger conditions
-
-## Future Enhancements
-
-Planned improvements include:
-- Integration with additional AI providers
-- More sophisticated content analysis
-- Automated content improvement suggestions
-- Integration with content management tools
-- Performance optimization for large repositories
-
-## Related Documentation
-
-For comprehensive workflow documentation, see:
-- **[GitHub Actions Guide](../../docs/workflows/GITHUB_ACTIONS.md)** - Complete workflow documentation
-- **[Link Checker Resolution](../../docs/workflows/LINK_CHECKER_FIX_RESOLUTION.md)** - Link health fixes
-- **[Link Checker Validation](../../docs/workflows/LINK_CHECKER_VALIDATION.md)** - Validation results
-- **[Testing Frameworks](../../docs/testing/TESTING_FRAMEWORKS.md)** - Test infrastructure
-- **[Contributing Guide](../../docs/CONTRIBUTING_DEVELOPER.md)** - Contribution workflow
+- **Least privilege.** Default `permissions: contents: read`; write is granted
+  only on the job that needs it.
+- **Pinned actions.** Third-party actions are pinned to a full commit SHA;
+  [Dependabot](../dependabot.yml) keeps them current.
+- **Concurrency.** Each workflow declares a `concurrency:` group. Fast PR checks
+cancel in-progress runs; mutating/long jobs (auto-merge, CMS loop, contributor refresh) use `cancel-in-progress: false`.
+- **Untrusted input.** `github.event.*` values are passed through `env:`, never
+  interpolated directly into `run:`.
+- **AI is opt-in.** Every Claude-powered workflow gates on a `*_ENABLED` repo
+variable **and** the `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_API_KEY` secret, so nothing AI runs until both are present (see `scripts/ai/README.md`).
+
+## Inventory
+
+### Build & validation (PR gates)
+
+| Workflow | Triggers | What it does |
+|---|---|---|
+| `build-validation.yml` | PR + push on build inputs; dispatch | Jekyll build (CI-parity) on every relevant change. The **Docker build** and the **3-OS cross-platform matrix** only run when `Gemfile`/`Dockerfile`/`docker-compose.yml` change or on manual dispatch — a `detect-changes` job gates them so content-only pushes don't spin up Windows/macOS runners. |
+| `frontmatter-validation.yml` | PR on `pages/**/*.md`; dispatch | Validation-only gate. Runs the canonical `scripts/validation/frontmatter-validator.py` (same code as `make content-validate`) on changed **non-quest** pages, plus the Mermaid-flag check, and comments results on the PR. Mechanical auto-fixing lives in `cms-daily-loop.yml`, not here. |
+| `quest-validation.yml` | PR/push on `pages/_quests/**`; weekly; dispatch | Quest content scoring (≥70%), network integrity, and stale generated-data check (the weekly/push full audit runs the unified Docker audit = `make docker-validate`). |
+| `validate-solutions.yml` | PR/push on `test/quest-solutions/**` (main/master); dispatch | Structural validation of quest solution fixtures. |
+| `codeql-analysis.yml` | push/PR to main (code paths only); weekly | CodeQL security analysis (JavaScript, Python, Ruby). Push/PR runs skip content-only diffs (`pages/**`, `**/*.md`, `_data/**`, `assets/images/**`); the weekly cron always runs a full scan. |
+
+### Content quality & AI fleet (opt-in)
+
+These implement the AI-augmented CMS described in the root `CLAUDE.md` and `scripts/ai/README.md`.
+
+| Workflow | Triggers | What it does |
+|---|---|---|
+| `agent-plan-then-act.yml` | dispatch (gated) | **The GH-600 reference pipeline.** A deterministic plan job → `agent-approval` Environment (required-reviewer human gate) → execute job with an artifact-carried plan, a `scripts/ai/drift-guard.sh` verify, a threaded correlation ID, and an audit artifact (instruction → action → outcome). Teaching-grade demo of the control plane the whole fleet shares; no model call, no auth needed. OFF behind `AGENT_DEMO_ENABLED`. Mapped in `/notes/gh-600/implemented-in-it-journey/`. |
+| `content-quality.yml` | PR on content | Deterministic brand lint (`scripts/ci/brand_lint.py`). **Spelling drift fails** the check; hype terms warn. No AI, no cost. |
+| `content-review.yml` | PR on content (gated) | `content-reviewer` agent editorial pass; applies small on-brand fixes, posts bigger ideas as comments. Never merges. |
+| `content-factory.yml` | daily 08:00 UTC (gated) | `content-curator` improves one page per collection from the `.cms` worklist → one `auto:content` PR each. |
+| `content-auto-merge.yml` | labeled PR events (gated) | **The single label-routed auto-merge lane** (absorbed `issue-pr-auto-merge.yml` and `quest-report-auto-merge.yml`). Routes by label — `auto:content` (content-only diff, `CONTENT_AUTOMERGE_ENABLED`), `auto:issue` (same-repo + resolver scope, `ISSUE_AUTOMERGE_ENABLED`; merging closes the linked issues), `automated`+`quest-walkthrough` (report/ledger paths, `QUEST_REPORT_AUTOMERGE_ENABLED`) — then smuggle-guard (`scripts/ci/classify_changes.py`) + all checks green → squash-merge. |
+| `cms-daily-loop.yml` | daily 09:00 UTC; dispatch | **Lane A** deterministic normalization (`make content-normalize-apply`, free) → PR; **Lane B** (gated) agentic `cms-curator` pass → PR for review. |
+| `agentic-quest-review.yml` | dispatch; PR on quests; `agentic-review` label | Agentic quest review/execute (`test/quest-validator/agentic_validate.py`); spend-capped per run **and converged per PR**: a sticky-comment ledger skips quests whose last score ≥ `AGENTIC_REVIEW_SCORE_EXEMPT` (default 85) and stops after `AGENTIC_REVIEW_MAX_RUNS` automatic passes (default 3); the label/dispatch bypasses both. |
+| `quest-walkthrough.yml` | daily 10:00 UTC; dispatch (gated) | **End-to-end quest validation.** The `quest-walker` agent picks one linked (character, level) quest slice via `scripts/quest/walkthrough_plan.py`, plays it end-to-end in the runner sandbox as a learner (execute engine: `agentic_validate.py`), and opens one report PR (evidence/issues/reasoning) under `test/quest-validator/walkthroughs/`. Also uploads **session screenshots** (each walked quest's rendered page mobile+desktop + a terminal render of the recorded transcript, via `scripts/quest/walkthrough_screenshots.mjs`) as run artifacts. Read-only over content; never merges. OFF behind `QUEST_WALKTHROUGH_ENABLED`. |
+| `agent-audit.yml` | weekly; dispatch (gated) | `agent-auditor` checks the AI fleet (`.claude/agents`, skills, workflows) for drift; opens at most one tightening PR. |
+| `theme-scout.yml` | weekly Tue 06:00; dispatch (gated) | **Frontend canary.** A Playwright crawler (`scripts/frontend/crawl.mjs`) tests **it-journey.dev** (mobile + desktop); `triage_findings.py` classifies findings theme-vs-content + dedups; the `theme-scout` agent files **theme** bugs (site-wide / theme-injected, e.g. `/tags/` 404s) upstream to `bamr87/zer0-mistakes`. OFF behind `THEME_SCOUT_ENABLED` + `THEME_REPO_TOKEN` (cross-repo PAT). |
+| `quest-forge.yml` | issue labeled `epic-quest`; `/forge-quest` comment; dispatch (gated) | `quest-forge` agent reads an epic-quest **proposal issue**, collects it deterministically (`scripts/quest/forge_issue.py`), authors an `epic_quest` hub + `bonus_quest` chapters in `pages/_quests/codex/`, runs `make quest-audit`, and opens one `auto:content`+`auto:quest` PR. Never merges. |
+| `quest-perfection.yml` | daily; dispatch (gated) | **The autonomous quest-perfection orchestrator.** For every character path, selects the highest-priority not-yet-perfect (character, level) slice from the committed ledger (`scripts/quest/ledger.py select`), drives the walk arm (`quest-walkthrough.yml`) + fix arm (`quest-fix.yml`), and updates `.quests/ledger.json` + the generated `.quests/DASHBOARD.md` — repeating "until perfect" (a circuit breaker marks a slice `needs_human` after `max_fix_rounds`). OFF behind `QUEST_PERFECTION_ENABLED`. |
+| `quest-fix.yml` | reusable / dispatch (gated) | **The fix lane** (inverse of the walkthrough). The `quest-fix` agent repairs only a walkthrough's *verified* issues under a deterministic keep/revert gate (tier-1 score + `brand_lint` + sandbox commands — never the model's own grade), runs `make quest-data` (fails on uncommitted `_data/quests` drift), refuses vendored (`source_repo`/`source_url`) quests, and hard-fails without a PAT (`AUTO_PR_GITHUB_TOKEN`/`PAT_TOKEN`) so required checks fire. Opens one **content-only** fix PR (`auto:content` + `auto:quest-fix` + `automated`); the ledger never rides this PR. OFF behind `QUEST_FIX_ENABLED`. |
+
+### Scheduled maintenance & generation
+
+| Workflow | Triggers | What it does |
+|---|---|---|
+| `dependency-checker.yml` | push on `Gemfile*`; weekly; dispatch | **Security-only**: `bundler-audit`, outdated-gem report, workflow-YAML lint, and a single deduped tracking issue. Build/Docker compatibility is owned by `build-validation.yml`. |
+| `link-checker.yml` | PR on `*.md`/`*.html`; twice weekly; dispatch | Incremental link check on PRs; full Link Health Guardian sweep on schedule. |
+| `sync-github.yml` | daily; dispatch; on script change | Regenerates GitHub-derived site data (`scripts/generation/sync_github.py`). |
+| `update-contributor-profiles.yml` | **weekly** (Mon 05:00 UTC); dispatch | Refreshes `_data/contributors/*.yml`. (Previously ran on every push to main — now weekly, since the stats barely move per-commit.) |
+
+### Issue / PR automation
+
+| Workflow | Triggers | What it does |
+|---|---|---|
+| `issue-autopilot.yml` | daily 07:00 UTC; dispatch; `autopilot:go` label (gated) | **The issue autopilot loop.** Deterministic engine (`scripts/issues/triage.py`) classifies every open issue + groups into batches; `issue-triager` comments a plan, labels, and closes **bot-noise only** (never a human's issue, double-gated on `ISSUE_AUTOCLOSE_ENABLED`); `issue-resolver` turns one batch into one `auto:issue` PR (`Closes #N`), backpressured via `scripts/issues/dispatch.py` + `.issues/budget.yml`. OFF behind `ISSUE_AUTOPILOT_ENABLED` (+ `ISSUE_RESOLVE_ENABLED` for the PR lane). Green `auto:issue` PRs merge via the `auto:issue` policy in `content-auto-merge.yml`. |
+| `quest-forge.yml` | issue labeled `epic-quest`; `/forge-quest` comment; dispatch (gated) | Forges an epic-quest **proposal issue** into a quest-campaign PR (see the AI fleet table above). |
+| `dependabot-auto-merge.yml` | Dependabot PRs | Enables auto-merge for passing Dependabot PRs. |
+
+## Required vs advisory checks
+
+Mark these as **required status checks** in branch protection for `main` (Settings → Branches / Rulesets). They block merge:
+
+| Required check | Workflow (job) |
+|---|---|
+| Jekyll build (CI-parity) | `build-validation.yml` (`🏗️ Jekyll Build Test`) |
+| Quest content + network + stale-data | `quest-validation.yml` |
+| Frontmatter validation | `frontmatter-validation.yml` (`validate-frontmatter`) |
+| Content brand lint | `content-quality.yml` |
+| CodeQL | `codeql-analysis.yml` — **caveat:** now path-filtered to code diffs, so only mark it required if content-only PRs are exempted (a required check that never starts blocks the merge) |
+
+**Advisory** (run but non-blocking): `link-checker.yml` (PR incremental), `content-review.yml`, `agentic-quest-review.yml`, and the scheduled `dependency-checker.yml` security scan.
+
+Also enable **"Require review from Code Owners"** (see [CODEOWNERS](../CODEOWNERS)).
+
+## Deployment
+
+The production site (`it-journey.dev`) is served by **GitHub Pages** in legacy **"Deploy from a branch"** mode: Pages builds Jekyll from the **`gh-pages`** branch (source, not `_site`) and publishes it. That Pages build (shown as **"pages build and deployment"**) is the only thing that should ever run when `gh-pages` changes.
+
+`sync-gh-pages.yml` keeps `gh-pages` in sync automatically, replacing the old manual "Merge main into gh-pages" PRs:
+
+| Workflow | Triggers | What it does |
+|---|---|---|
+| `sync-gh-pages.yml` | 2×/day (02:20, 14:20 UTC); dispatch | **Routine deploy sync.** If `main` is ahead of `gh-pages` **and** main's latest commit is fully green (all check-runs + commit statuses passed), it opens a PR from `main` into `gh-pages` and merges it (merge commit). Pages then builds `gh-pages`. Reads main's already-finished CI — **no reruns, no waiting**. Does nothing if gh-pages is up to date or main is pending/red. |
+
+`gh-pages` is a pure mirror of `main` (kept in lockstep by this workflow), so the PR is always a clean, conflict-free merge. If the branches ever diverge, re-run the one-time reconciliation: merge `main` into `gh-pages` with `-X theirs` (main authoritative) so their trees match again.
+
+Guarantees behind "only the Pages build runs on a `gh-pages` update":
+
+1. Every push-triggered workflow is scoped to `main`/`master` (this is why
+   `validate-solutions.yml` — previously branchless — is now branch-guarded).
+2. The merge is performed with `GITHUB_TOKEN`, whose pushes do not start new
+Actions runs; the legacy Pages build is a Pages-service job, not an Actions workflow, so it still fires on the branch update.
+
+Operational notes:
+
+- Scheduled/dispatch runs resolve this file **from `main`**, so it only takes
+  effect once merged to `main`.
+- Trigger it on demand from the Actions tab (`workflow_dispatch`) to publish
+  immediately instead of waiting for the next scheduled tick (02:20/14:20 UTC).
+- **Prefer the default `GITHUB_TOKEN`** (used automatically): its pushes create
+no Actions runs at all, so the `gh-pages` update stays Pages-build-only. An optional `GH_PAGES_DEPLOY_TOKEN` secret (a PAT with `contents:write`) is used if present — only set it if the legacy Pages build ever fails to fire from a `GITHUB_TOKEN` push. A PAT push, unlike `GITHUB_TOKEN`, makes GitHub re-evaluate the workflow files now mirrored on `gh-pages`, which can log a harmless startup-failure for reusable-workflow files (e.g. `quest-perfection`); branch-scoping still keeps the real CI workflows from running.
+- If you migrate to "Deploy from GitHub Actions", replace this workflow with an
+  `actions/deploy-pages` workflow and update this section.
 
 ## Contributing
 
-To contribute improvements to these workflows:
-1. Test changes in a fork first
-2. Document any new configuration options
-3. Update relevant documentation in `docs/workflows/`
-4. Submit pull requests with clear descriptions
-5. Follow the [Developer Contributing Guide](../../docs/CONTRIBUTING_DEVELOPER.md)
-
----
-
-*This documentation is maintained as part of the IT-Journey project. For complete workflow documentation, see the [GitHub Actions Guide](../../docs/workflows/GITHUB_ACTIONS.md).*
+1. Test workflow changes in a fork or via `workflow_dispatch` first.
+2. Keep the least-privilege / SHA-pin / concurrency conventions above.
+3. Update this README's inventory in the same PR.

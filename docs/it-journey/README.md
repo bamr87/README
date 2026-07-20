@@ -2,20 +2,19 @@
 created: 2022-03-01 12:00:00+00:00
 date: 2020-07-30 10:19:45+00:00
 date-released: 2022-03-01
-description: IT-Journey - Your comprehensive learning platform with QuickStart tutorials,
-  gamified quests, documentation library, and personal notebooks.
-draft: in progress
-excerpt: IT-Journey combines quick tutorials, epic quests, comprehensive documentation,
-  and personal notebooks in an interconnected learning ecosystem
+description: IT-Journey is a gamified, open-source platform for learning IT and software
+  development through quests — progressive, hands-on adventures from zer0 to her0.
+draft: false
+excerpt: A gamified, open-source platform for learning IT and software development
+  through quests — progressive, hands-on adventures from zer0 to her0.
 keywords:
 - readme
 - it-journey
 - learning-platform
-- tutorials
 - quests
+- gamified-learning
 - documentation
-- jupyter-notebooks
-lastmod: 2025-12-28 00:00:00+00:00
+lastmod: 2026-06-25 00:00:00+00:00
 layout: home
 license: MIT
 permalink: /readme/
@@ -24,20 +23,21 @@ slug: readme
 source_file: README.md
 tags:
 - it-journey
-- readme
 - jekyll
-- learning-platform
 - gamified-learning
-- quickstart
+- learning-path
+- quests
 - documentation
 title: IT-Journey
 version: 0.0.1
 ---
 # IT-Journey
 
-Welcome to the **IT-Journey** repository - your guide through the ever-evolving landscape of information technology. According to the [GitHub Education Community](https://education.github.com/), open-source learning platforms like IT-Journey have helped over 100 million developers worldwide improve their skills since GitHub's founding in 2008. This repository serves as a comprehensive learning platform, combining educational content, practical tutorials, and automated quality assurance tools to help learners master modern IT skills.
+Welcome to **IT-Journey**, a gamified, open-source platform for learning IT and software development through **quests** — progressive, hands-on adventures that take you from **zer0 to her0**. The site is built around a single gamified learning path, supported by reference docs, quick-start guides, and curated notes. The repository is both a learning site and a working example of a Jekyll-based platform, with GitHub Actions, Docker, validation tooling, and AI-assisted workflows woven into the project.
 
-> **Why This Matters:** Research by Stack Overflow's 2024 Developer Survey shows that 87% of professional developers learned new skills through open-source projects and documentation. IT-Journey provides exactly this type of structured, community-driven learning experience.
+The project is organized around hands-on learning: start with the beginner-friendly Level 0000 quests, follow the binary-leveled path upward, use the docs and notes as a reference library, and contribute improvements as you grow.
+
+> Looking for the blog? Articles, reflections, and devops news now live at **[lifehacker.dev](https://lifehacker.dev)**.
 
 ---
 
@@ -50,36 +50,11 @@ Welcome to the **IT-Journey** repository - your guide through the ever-evolving 
 | **Real Projects** | ✅ Portfolio-Ready | ⚠️ Contrived Examples | ❌ None | ❌ None |
 | **Community Support** | ✅ GitHub Discussions | ⚠️ Paid Forums | ⚠️ Comments Only | ❌ Limited |
 | **Progression System** | ✅ Binary Levels (0000-1111) | ✅ Certificates | ❌ None | ❌ None |
-| **AI Integration** | ✅ GPT-4 Analysis | ⚠️ Limited | ❌ None | ❌ None |
+| **AI Integration** | ✅ Optional AI-assisted analysis | ⚠️ Limited | ❌ None | ❌ None |
 | **Multi-Platform** | ✅ macOS/Windows/Linux | ⚠️ Varies | ⚠️ Varies | ✅ Yes |
-| **Update Frequency** | Daily commits | Quarterly | Varies | Monthly |
+| **Update Frequency** | Repository-driven updates | Quarterly | Varies | Monthly |
 
-*This is important because* choosing the right learning platform directly impacts your career trajectory. Studies by LinkedIn Learning (2024) indicate that developers using project-based learning platforms achieve job-ready skills 40% faster than those using passive video courses alone.
-
----
-
-## 🔗 Guardian 2.0: Advanced Link Health Monitoring
-
-**Latest Enhancement (December 2025)**: Complete refactoring with improved architecture and AI-powered analysis!
-
-The IT-Journey now features **Guardian 2.0**, a comprehensive testing framework built with [Lychee v0.15.1](https://github.com/lycheeverse/lychee) and OpenAI's GPT-4 Turbo API:
-
-| Component | Technology | Purpose | Performance |
-|-----------|------------|---------|-------------|
-| Link Checker | Lychee v0.15.1 | URL validation | 1,000+ links/minute |
-| AI Analysis | OpenAI GPT-4 Turbo | Error categorization | ~3 second response |
-| Reporting | GitHub Actions | Automated issues | Daily at 00:00 UTC |
-| Configuration | YAML + Environment | Flexible settings | Zero-downtime updates |
-
-**Q: Why does link health matter?** A: According to Ahrefs' 2024 SEO study, websites with broken links experience 23% lower search rankings. For educational platforms, dead links directly impact learning outcomes.
-
-> **Q: But isn't link checking simple?**
-> A: Basic link checking is simple, but intelligent analysis isn't. Link Health Guardian v3.0 goes beyond HTTP status codes—it categorizes failures, suggests fixes via AI, computes delta trends, and provides educational context. This transforms a maintenance task into a learning opportunity.
-
-**Get Started**: 
-- **Tool**: [`scripts/validation/link-checker.py`](scripts/validation/link-checker.py) — Link Health Guardian v3.0
-- **CI/CD**: [`.github/workflows/link-checker.yml`](.github/workflows/link-checker.yml) — Automated PR & scheduled checks
-- **Quest**: [Hyperlink Guardian Quest](pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)
+Project-based learning matters because it turns reference material into practice. IT-Journey keeps the learning loop short: read, run, build, validate, and document what changed.
 
 ---
 
@@ -88,7 +63,7 @@ The IT-Journey now features **Guardian 2.0**, a comprehensive testing framework 
 Whether you're a complete beginner or looking to enhance your existing skills, the IT-Journey provides structured learning paths. According to educational research published by MIT OpenCourseWare (2023), structured pathways increase completion rates by 65% compared to unstructured learning.
 
 ### Quick Terminal Access
-**New!** Use our interactive terminal interface for easy navigation:
+Use the interactive terminal interface for easy navigation:
 
 ```bash
 # Install Charm tools (Gum & Glow)
@@ -111,9 +86,9 @@ This provides a beautiful TUI (Text User Interface) to browse quests, docs, and 
 
 **Q: Where should I start if I have zero coding experience?** A: Start with our Zero to Hero guide, which was designed specifically for absolute beginners:
 
-1. **Start with Zero**: Follow our [Zero to Hero guide](zer0.md) 
+1. **Begin Your Journey**: Follow [Begin your IT Journey](pages/_quests/0000/begin-your-it-journey.md)
 2. **Basic Quests**: Complete foundational [learning quests](pages/_quests/)
-3. **Hands-on Practice**: Work through [practical tutorials](pages/_posts/)
+3. **Hands-on Practice**: Work through the Level 0000–0011 [quest path](pages/_quests/)
 
 > **Q: How long until I can build real projects?**
 > A: Based on feedback from over 200 IT-Journey learners since March 2022, most beginners complete their first meaningful project within 6-8 weeks of consistent practice.
@@ -121,7 +96,7 @@ This provides a beautiful TUI (Text User Interface) to browse quests, docs, and 
 ### For Intermediate Learners
 
 1. **Advanced Quests**: Tackle complex [automation projects](pages/_quests/)
-2. **Real Projects**: Build [practical applications](pages/_notebooks/)
+2. **Real Projects**: Build portfolio-ready applications through the higher-level [quests](pages/_quests/)
 3. **DevOps Skills**: Learn [automation and monitoring](scripts/)
 
 ### For Advanced Users
@@ -140,11 +115,12 @@ This provides a beautiful TUI (Text User Interface) to browse quests, docs, and 
 
 | Content Type | Location | Best For | Format | Interactivity |
 |--------------|----------|----------|--------|---------------|
-| **Learning Quests** | `pages/_quests/` | Hands-on skills | Markdown + Scripts | ⭐⭐⭐⭐⭐ |
-| **Educational Posts** | `pages/_posts/` | Deep concepts | Markdown | ⭐⭐⭐ |
-| **Notebooks** | `pages/_notebooks/` | Data exploration | Jupyter (.ipynb) | ⭐⭐⭐⭐ |
-| **Automation Scripts** | `scripts/` | Production skills | Bash/Python | ⭐⭐⭐⭐⭐ |
-| **Documentation** | `docs/` | Reference | Markdown | ⭐⭐ |
+| **Learning Quests** | `pages/_quests/` | Hands-on, gamified skill-building | Markdown + supporting assets | ⭐⭐⭐⭐⭐ |
+| **Quickstart Guides** | `pages/_quickstart/` | Fast-track setup and onboarding | Markdown | ⭐⭐⭐ |
+| **Curated Notes** | `pages/_notes/` | Cheatsheets and quick reference | Markdown | ⭐⭐ |
+| **Learner Docs** | `pages/_docs/` | Tool and terminal references | Markdown | ⭐⭐ |
+| **Automation Scripts** | `scripts/` | Production-style tooling | Bash, Python, Ruby | ⭐⭐⭐⭐⭐ |
+| **Developer Docs** | `docs/` | Contributor reference | Markdown | ⭐⭐ |
 
 ### Learning Quests (`pages/_quests/`)
 
@@ -160,26 +136,25 @@ Gamified learning experiences that transform technical tutorials into engaging a
 > **Q: Why use a "binary" level system?**
 > A: The binary system (0000, 0001, 0010, etc.) teaches learners to think in computational terms from day one. It's a subtle introduction to how computers represent information, reinforcing core CS concepts through everyday use.
 
-### Educational Posts (`pages/_posts/`)
+### Quickstart Guides (`pages/_quickstart/`)
 
-In-depth articles, tutorials, and technical explorations covering topics from Python 3.12 fundamentals to advanced Kubernetes v1.29 orchestration:
+Fast-track guides that get you set up and oriented before diving into quests:
 
-- **Step-by-step Guides**: Detailed implementation instructions
-- **Case Studies**: Real-world problem-solving examples
-- **Technology Reviews**: Analysis of tools and platforms
-- **Learning Reflections**: Insights from the development journey
+- **Environment Setup**: Get your machine ready for the learning path
+- **Onboarding**: Understand how the quest system and binary levels work
+- **Tool Primers**: Short, focused introductions to core tools
 
-### Interactive Notebooks (`pages/_notebooks/`)
+### Curated Notes (`pages/_notes/`)
 
-Jupyter notebooks (compatible with JupyterLab 4.0+) for hands-on experimentation:
+A slim, quest-relevant reference core kept close to the learning path:
 
-- **Code Examples**: Runnable demonstrations
-- **Data Analysis**: Practical data science applications using pandas 2.0+, NumPy 1.26+
-- **Automation Scripts**: System administration examples
+- **Cheatsheets**: Quick reference for the shell, command line, and common tools
+- **Curriculum & Onboarding**: Maps and reference material for the journey
+- **Reference Set**: Supporting notes that back specific quests
 
 ### Automation Scripts (`scripts/`)
 
-Production-ready automation tools built with Bash 5.0+ and Python 3.10+:
+Production-style automation tools built primarily with Bash, Python, and Ruby:
 
 - **Hyperlink Guardian**: Complete link monitoring system
 - **Development Tools**: Environment setup and management
@@ -194,21 +169,21 @@ Production-ready automation tools built with Bash 5.0+ and Python 3.10+:
 
 | Layer | Technology | Version | Alternative Considered | Why We Chose It |
 |-------|------------|---------|----------------------|-----------------|
-| **Static Site Generator** | Jekyll | 4.3.3 | Hugo, Gatsby, 11ty | Ruby ecosystem, GitHub Pages native |
+| **Static Site Generator** | Jekyll via `github-pages` | Gem-managed | Hugo, Gatsby, 11ty | GitHub Pages compatibility |
 | **Hosting** | GitHub Pages | N/A | Netlify, Vercel, AWS | Free, GitHub integration |
-| **CI/CD** | GitHub Actions | v4 | CircleCI, Travis CI | Native integration, free tier |
-| **Link Checking** | Lychee | 0.15.1 | linkchecker, broken-link-checker | Speed (Rust), accuracy |
-| **AI Analysis** | OpenAI GPT-4 | Turbo | Claude, Gemini | API stability, context window |
-| **Containerization** | Docker | 24.0+ | Podman | Industry standard, community |
+| **CI/CD** | GitHub Actions | Workflow-managed | CircleCI, Travis CI | Native integration, free tier |
+| **Link Checking** | Lychee + Python | v3.0 guardian script | linkchecker, broken-link-checker | Speed, caching, structured output |
+| **AI Analysis** | OpenAI/Anthropic | Optional | Static reports only | Human-readable repair guidance |
+| **Containerization** | Docker Compose | Local service stack | Podman | Consistent local builds |
 
 ### Modern Development Practices
 
 *This is important because* modern development practices directly correlate with career success. According to JetBrains' 2024 Developer Ecosystem Report, 78% of job postings require CI/CD experience.
 
-- **AI-Enhanced Workflows**: Intelligent automation using OpenAI's GPT-4 Turbo
-- **GitHub Actions**: Comprehensive CI/CD pipelines (runs on Ubuntu 22.04 runners)
-- **Containerization**: Docker-based development environments (Docker v24.0+)
-- **Quality Assurance**: Guardian 2.0 testing framework with AI-powered analysis
+- **AI-Enhanced Workflows**: Optional AI analysis for link health and development documentation
+- **GitHub Actions**: Build, validation, statistics, link checking, and deployment workflows
+- **Containerization**: Docker Compose service stack for local Jekyll work
+- **Quality Assurance**: Link Health Guardian v3.0, quest validation, and frontmatter checks
 
 ### Educational Innovation
 
@@ -234,29 +209,70 @@ Research by Carnegie Mellon University's Human-Computer Interaction Institute sh
 
 | Component | Technology | Configuration |
 |-----------|------------|---------------|
-| Static Generator | Jekyll 4.3.3 | `_config.yml` |
+| Static Generator | Jekyll via GitHub Pages gem | `_config.yml`, `_config_dev.yml` |
 | Hosting | GitHub Pages | `gh-pages` branch |
 | CI/CD | GitHub Actions | `.github/workflows/` |
-| AI Integration | OpenAI GPT-4 Turbo | Environment secrets |
-| Container | Docker 24.0+ | `Dockerfile`, `docker-compose.yml` |
+| AI Integration | OpenAI or Anthropic, optional | Environment secrets |
+| Container | Docker Compose | `Dockerfile`, `docker-compose.yml` |
 
 **Q: Why Jekyll instead of newer alternatives like Astro or Next.js?** A: Jekyll offers native GitHub Pages integration with zero build configuration. For educational content that prioritizes accessibility over cutting-edge features, Jekyll's simplicity reduces maintenance overhead by approximately 60% compared to JavaScript-based alternatives.
 
-### Development Environment Comparison
+### Local Development Commands
 
-| Platform | Package Manager | Ruby Version | Jekyll Install Command | Build Time |
-|----------|-----------------|--------------|----------------------|------------|
-| **macOS Sonoma 14+** | Homebrew 4.2+ | 3.2.0+ | `brew install jekyll` | ~45 seconds |
-| **Windows 11** | Chocolatey 2.0+ | 3.2.0+ | `choco install jekyll` | ~60 seconds |
-| **Ubuntu 22.04 LTS** | apt + rbenv | 3.2.0+ | `gem install jekyll` | ~40 seconds |
-| **Docker** | Built-in | 3.2.0 | Pre-configured | ~30 seconds |
+```bash
+# Install Ruby dependencies
+bundle install
+
+# Serve locally using the same config pair as Docker Compose
+bundle exec jekyll serve --config _config.yml,_config_dev.yml --port 4002
+
+# Or run the containerized site
+docker-compose up
+
+# Build the site
+bundle exec jekyll build
+
+# Generate content statistics
+make stats
+
+# Check links locally
+python3 scripts/validation/link-checker.py --scope website
+
+# Validate quest content
+python3 test/quest-validator/quest_validator.py -d pages/_quests/
+```
 
 ### Quality Assurance
 
-- **Automated Link Testing**: Daily health monitoring with the Hyperlink Guardian (Lychee v0.15.1)
+- **Automated Link Testing**: PR and weekly health monitoring with Link Health Guardian v3.0
 - **Content Validation**: Frontmatter and format checking via custom validators
 - **Performance Monitoring**: Site speed tracking (target: <3s load time)
-- **AI-Powered Analysis**: Intelligent issue detection using GPT-4 Turbo
+- **AI-Powered Analysis**: Optional issue summaries using configured AI provider keys
+
+---
+
+## 🔗 Link Health Guardian v3.0
+
+The repository uses **Link Health Guardian v3.0** to keep educational links healthy without turning link checking into a maintenance maze.
+
+The current workflow combines [Lychee](https://github.com/lycheeverse/lychee), a Python analysis layer, cached results, and optional AI summaries through OpenAI or Anthropic keys:
+
+| Component | Technology | Purpose | Performance |
+|-----------|------------|---------|-------------|
+| Link Checker | Lychee + `.lychee.toml` | Fast URL validation | Cached, concurrent checks |
+| Analysis | Python 3.11 script | Delta reports and summaries | Reuses prior baselines |
+| AI Assistance | OpenAI or Anthropic, optional | Error grouping and recommendations | Disabled by default in CI |
+| Reporting | GitHub Actions | PR checks, scheduled scans, artifacts | Weekly full scan + manual dispatch |
+
+**Q: Why does link health matter?** A: According to Ahrefs' 2024 SEO study, websites with broken links experience 23% lower search rankings. For educational platforms, dead links directly impact learning outcomes.
+
+> **Q: But isn't link checking simple?**
+> A: Basic link checking is simple, but useful maintenance needs context. Link Health Guardian v3.0 compares failures against a baseline, summarizes what changed, and can generate AI-assisted repair guidance when keys are available.
+
+**Get Started**: 
+- **Tool**: [`scripts/validation/link-checker.py`](scripts/validation/link-checker.py) — Link Health Guardian v3.0
+- **CI/CD**: [`.github/workflows/link-checker.yml`](.github/workflows/link-checker.yml) — Automated PR & scheduled checks
+- **Quest**: [Hyperlink Guardian Quest](pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)
 
 ---
 
@@ -295,18 +311,19 @@ After engaging with the IT-Journey platform, learners will have:
 
 ### Getting Started
 
-**Q: What are the system requirements to use IT-Journey?** A: You need a computer running macOS 12+ (Monterey), Windows 10/11, or Ubuntu 20.04+. Additionally, you'll need:
+**Q: What are the system requirements to use IT-Journey?** A: You need a computer running macOS, Windows, or Linux. For local development, install:
 - 4GB RAM minimum (8GB recommended)
 - 10GB free disk space
 - Git 2.30+ installed
+- Ruby and Bundler for direct Jekyll work, or Docker for containerized work
 - Internet connection for downloading dependencies
 
-**Q: How much time should I dedicate to learning?** A: Based on learner surveys conducted between March 2022 and December 2025:
-- **Beginners**: 10-15 hours/week yields noticeable progress in 4-6 weeks
-- **Intermediate**: 8-12 hours/week for skill consolidation
-- **Advanced**: 5-10 hours/week for contribution and mentorship
+**Q: How much time should I dedicate to learning?** A: A steady rhythm matters more than marathon sessions:
+- **Beginners**: 3-5 focused sessions per week
+- **Intermediate**: 2-4 sessions per week for project work and review
+- **Advanced**: 1-3 sessions per week for contribution, mentoring, or deeper builds
 
-**Q: Is this suitable for complete beginners with no coding experience?** A: Yes! The Zero to Hero path was specifically designed for absolute beginners. Over 60% of our learner community started with zero programming experience.
+**Q: Is this suitable for complete beginners with no coding experience?** A: Yes. Start with [Begin your IT Journey](pages/_quests/0000/begin-your-it-journey.md), then move through the Level 0000 quests at your own pace.
 
 ### Technical Questions
 
@@ -317,7 +334,7 @@ After engaging with the IT-Journey platform, learners will have:
 - **Ruby 3.2+**: Jekyll customization and plugins
 - **YAML**: Configuration and data serialization
 
-**Q: Can I use IT-Journey offline?** A: Yes, after initial setup. Clone the repository, install dependencies, and you can run `bundle exec jekyll serve` locally without internet access. Some features (AI analysis, external links) require connectivity.
+**Q: Can I use IT-Journey offline?** A: Yes, after initial setup. Clone the repository, install dependencies, and run the Jekyll site locally. External links, dependency downloads, GitHub Actions, and AI analysis require connectivity.
 
 **Q: How do I troubleshoot build errors?** A: Common solutions:
 1. Run `bundle update` to update dependencies
@@ -425,17 +442,17 @@ We welcome contributions from learners and experts alike:
 
 ---
 
-## 🎯 Future Roadmap
+## 🎯 Current Roadmap
 
-### Planned Enhancements (2025-2026)
+### Active Priorities
 
-| Feature | Status | Target Date | Priority |
-|---------|--------|-------------|----------|
-| Advanced AI Integration | 🔄 In Progress | Q1 2025 | High |
-| Interactive Code Playgrounds | 📋 Planned | Q2 2025 | High |
-| Certification Tracking | 📋 Planned | Q3 2025 | Medium |
-| Mobile-Responsive Quests | 📋 Planned | Q2 2025 | Medium |
-| Community Mentorship Program | 📋 Planned | Q4 2025 | Medium |
+| Priority | Direction | Why It Matters |
+|----------|-----------|----------------|
+| Content freshness | Keep quests, posts, and docs aligned with current tooling | Learners need examples that still build and run |
+| Quest navigation | Improve level maps, prerequisites, and path selection | Beginners should know what to do next |
+| Validation tooling | Continue consolidating link, frontmatter, and quest checks | Maintenance should be repeatable and visible |
+| Local development | Keep Docker and direct Jekyll workflows documented | Contributors should be able to build quickly |
+| AI-assisted maintenance | Use AI for summaries, reviews, and repair suggestions where useful | Automation should support, not obscure, human review |
 
 ### Long-term Vision
 
@@ -488,14 +505,30 @@ The IT-Journey is built on fundamental principles that guide all development and
 
 | Metric | Value | Last Updated |
 |--------|-------|--------------|
-| **Total Quests** | 181+ | December 2025 |
-| **Blog Posts** | 118+ | December 2025 |
-| **Contributors** | Growing | Active |
-| **GitHub Stars** | Check repo | Live |
+| **Quest Markdown Files** | 204 | June 25, 2026 |
+| **Quest Levels** | 16 binary levels (0000–1111) | June 25, 2026 |
+| **Quickstart Guides** | 15 markdown files | June 25, 2026 |
+| **Curated Notes** | 16 markdown files | June 25, 2026 |
+| **Learner Docs** | 27 markdown files | June 25, 2026 |
+| **Developer Docs** | 27 markdown files | June 25, 2026 |
+| **Automation Scripts** | 72 files | June 25, 2026 |
+| **GitHub Workflows** | 16 workflows | June 25, 2026 |
 | **Active Since** | March 1, 2022 | - |
 
 ---
 
-*Ready to begin your journey? Start with the [Zero to Hero guide](zer0.md) or explore our [learning quests](pages/_quests/) to dive into hands-on IT education!*
+## 🔗 Related Projects
 
-**Last Updated:** December 28, 2025 | **Version:** 0.0.1 | **License:** MIT | **Repository:** [github.com/bamr87/it-journey](https://github.com/bamr87/it-journey)
+IT-Journey is the quest-focused core of a small family of open-source projects:
+
+| Project | Where | What |
+|---------|-------|------|
+| **Blog** | [lifehacker.dev](https://lifehacker.dev) | Articles, tutorials, reflections, and devops news that used to live here |
+| **Wargames** | [github.com/bamr87/wargames](https://github.com/bamr87/wargames) | The OverTheWire-style security wargame walkthroughs, extracted into their own repo |
+| **Zer0-Mistakes Theme** | [github.com/bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes) | The Jekyll remote theme that powers this site |
+
+---
+
+*Ready to begin your journey? Start with [Begin your IT Journey](pages/_quests/0000/begin-your-it-journey.md) or explore the full [learning quest index](pages/_quests/) to dive into hands-on IT education!*
+
+**Last Updated:** June 25, 2026 | **Version:** 0.0.1 | **License:** MIT | **Repository:** [github.com/bamr87/it-journey](https://github.com/bamr87/it-journey)

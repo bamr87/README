@@ -5,7 +5,7 @@ categories:
 - DevOps
 - Beginner
 comments: true
-date: 2025-11-29 22:51:57+00:00
+date: '2025-11-29T22:51:57.000Z'
 description: Master essential command line skills including navigation, file management,
   and basic shell commands across macOS, Linux, and Windows terminals.
 difficulty: 🟢 Easy
@@ -15,26 +15,19 @@ excerpt: Learn essential command line skills for navigating and managing files i
   any operating system.
 fmContentType: quest
 keywords:
-- lvl-0000
-- bash
-- main_quest
-- devops
-- hands-on
-- gamified-learning
-lastmod: 2025-12-20 00:00:00+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - Software Development
-  skill_trees:
-  - Terminal Navigation
-  - File Management
-  - Shell Basics
+  primary:
+  - '0000'
+  - bash
+  - main_quest
+  secondary:
+  - devops
+  - hands-on
+  - gamified-learning
+lastmod: '2026-04-25T19:27:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0000'
-permalink: /quests/level-0000-terminal-fundamentals/
+permalink: /quests/0000/terminal-fundamentals/
 prerequisites:
   knowledge_requirements:
   - Basic computer operation (files, folders, applications)
@@ -50,20 +43,10 @@ quest_arc: Terminal Mastery Arc
 quest_dependencies:
   recommended_quests: []
   required_quests: []
-  unlocks_quests: []
+  unlocks_quests:
+  - /quests/0000/bashcrawl/
+  - /quests/0010/bash-scripting/
 quest_line: Init World
-quest_mapping:
-  biome: Terminal
-  coordinates:
-  - 2
-  - 1
-  realm: Development
-  region: Foundation
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests: []
 quest_series: Terminal Arts
 quest_type: main_quest
 rewards:
@@ -77,12 +60,11 @@ rewards:
   unlocks_features:
   - Foundation for all scripting and development quests
   - Confident terminal usage across platforms
-skill_focus:
-- devops
+skill_focus: devops
 source_file: terminal-fundamentals.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Terminal'
 tags:
-- lvl-0000
+- '0000'
 - bash
 - main_quest
 - devops
@@ -101,7 +83,7 @@ validation_criteria:
   - Can use cd, ls, pwd, mkdir, cp, mv, rm confidently
   - Can redirect output and use pipes
 ---
-*Greetings, brave adventurer! Welcome to the Terminal Fundamentals quest — your gateway to the command line, the most powerful interface in any IT hero's arsenal. While graphical interfaces are comfortable, the terminal is where real power lives. This quest will transform you from a GUI-bound novice into a confident command-line navigator.*
+*Greetings, brave adventurer! Welcome to the Terminal Fundamentals quest — your gateway to the command line, where you type one instruction and get one result, then chain those instructions into scripts you can repeat and automate. While graphical interfaces are comfortable, the terminal is where real power lives. This quest will transform you from a GUI-bound novice into a confident command-line navigator.*
 
 ## 🎯 Quest Objectives
 
@@ -291,7 +273,7 @@ less long-file.txt
 
 ## 🧙‍♂️ Chapter 3: Command Mastery — Flags, Pipes, and Redirection
 
-*Now you'll learn the advanced incantations that chain simple commands into powerful spells.*
+*Now you'll learn the advanced incantations that pipe and redirect simple commands so the output of one feeds the next.*
 
 ### 🏳️ Understanding Command Structure
 
@@ -365,6 +347,20 @@ find . -mtime -1
 
 ---
 
+## 🎮 Practice Path: Enter Bashcrawl
+
+Once you can use `pwd`, `ls`, `cd`, and `cat`, reinforce those skills in [Bashcrawl Web](https://bamr87.github.io/bashcrawl/). The browser game gives you a safe terminal-inspired dungeon where:
+
+- `pwd` reveals your current room
+- `ls -F` shows directories, files, and executable encounters
+- `cat scroll` reads the lesson in each chamber
+- `cd cellar` moves you deeper into the adventure
+- `F1` opens in-game documentation when you need a hint
+
+After your first online run, continue with the [Bashcrawl Terminal Adventure Quest](/quests/0000/bashcrawl/) for the full quest checklist and then [Bash Scripting Mastery](/quests/0010/bash-scripting/) when you are ready to automate.
+
+---
+
 ## 🎮 Mastery Challenges
 
 ### 🟢 Novice Challenge: Directory Explorer
@@ -405,3 +401,12 @@ find . -mtime -1
 - [ExplainShell — Visualize Shell Commands](https://explainshell.com/)
 - [The Art of Command Line (GitHub)](https://github.com/jlevy/the-art-of-command-line)
 - [tldr pages — Simplified Man Pages](https://tldr.sh/)
+- [Bashcrawl Web](https://bamr87.github.io/bashcrawl/) - Browser-based terminal dungeon for practicing the commands in this quest
+- [Bashcrawl Repository](https://github.com/bamr87/bashcrawl/) - Full local game, scripts, docs, and contribution path
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

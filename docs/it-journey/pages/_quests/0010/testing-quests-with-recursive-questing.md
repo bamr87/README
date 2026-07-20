@@ -1,33 +1,32 @@
 ---
-attachments: ''
 author: Quest Master IT-Journey Team
 categories:
 - Quests
 - Development
 - Intermediate
 comments: true
-date: 2025-10-08 19:11:31+00:00
-description: Master recursion, unit testing, and AI integration by navigating self-replicating
-  code towers
+date: '2025-10-08T19:11:31.000Z'
+description: Master Python recursion, base cases, and call stacks while building pytest
+  suites, preventing stack overflows, and applying recursive thinking to AI design.
 difficulty: 🟡 Medium
 draft: false
 estimated_time: 90-120 minutes
 excerpt: Learn recursive problem-solving patterns and comprehensive unit testing
 fmContentType: quest
 keywords:
-- lvl-0010
-- python
-- language-learning
-- testing
-- hands-on
-- recursion
-lastmod: 2025-10-09 00:09:00.916000+00:00
-learning_paths:
-  primary_paths:
-  - Software Development
+  primary:
+  - '0010'
+  - python
+  - language-learning
+  secondary:
+  - testing
+  - hands-on
+  - recursion
+lastmod: '2025-10-09T00:09:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-recursive-realms-testing/
+permalink: /quests/0010/recursive-realms-testing/
 prerequisites:
   knowledge_requirements:
   - Basic Python syntax
@@ -42,26 +41,21 @@ quest_dependencies:
   recommended_quests: []
   unlocks_quests: []
 quest_line: Foundation Path
-quest_mapping:
-  biome: Testing
-  coordinates: '[10, 20]'
-  realm: Development
-  region: Foundation
 quest_series: Python Mastery Path
 quest_type: main_quest
+redirect_from:
+- /quests/0010/testing-quests-with-recursive-questing/
 rewards:
   badges:
   - 🏆 Recursive Realm Master
   progression_points: 150
   skills_unlocked:
   - Advanced Recursion Patterns
-skill_focus:
-- testing
-snippet: Beware the stack overflow curse—always define your base cases!
+skill_focus: fullstack
 source_file: testing-quests-with-recursive-questing.md
 sub_title: 'Level 0010 (2) Quest: Python Recursion & Testing'
 tags:
-- lvl-0010
+- '0010'
 - python
 - language-learning
 - testing
@@ -73,11 +67,11 @@ validation_criteria:
   - Implement 3 recursive functions
   - Create test suite with >90% coverage
 ---
-*Greetings, brave code wizard! Welcome to the **Recursive Realms** - a mystical 🟡 Medium journey where ancient towers stretch infinitely. In this quest, you'll master recursion, forge powerful unit tests, and summon AI guardians that think in layered patterns.*
+*Greetings, brave code wizard! Welcome to the **Recursive Realms** - a mystical 🟡 Medium journey where ancient towers stretch infinitely. In this quest, you'll master recursion, forge unit tests that catch infinite loops, and summon AI guardians that think in layered patterns.*
 
 ### 🌟 The Legend Behind This Quest
 
-*In the vast digital realm, recursion is one of the most powerful arts. Like an ancient tower containing smaller versions of itself, recursive functions elegantly solve complex problems.*
+*In the vast digital realm, recursion solves a problem by calling itself on a smaller version of that problem. Like an ancient tower containing smaller versions of itself, recursive functions elegantly solve complex problems.*
 
 *But beware! Without proper base cases and testing, recursive spells spiral into infinite chaos. This quest teaches you to harness recursion's power while avoiding its deadly pitfalls.*
 
@@ -85,14 +79,14 @@ validation_criteria:
 
 ### Primary Objectives (Required for Quest Completion)
 - [ ] **Recursion Fundamentals** - Understand base cases, recursive cases, and call stack management
-- [ ] **Comprehensive Unit Testing** - Build test suites that validate recursive functions  
+- [ ] **Unit Testing** - Build test suites that cover base cases, recursive cases, and invalid inputs  
 - [ ] **Stack Overflow Prevention** - Implement safeguards against infinite recursion
 - [ ] **AI Integration Patterns** - Apply recursive thinking to AI system design
 
 ### Mastery Indicators
 You'll know you've truly mastered this quest when you can:
 - [ ] Write recursive functions with proper base and recursive cases
-- [ ] Create comprehensive test suites for recursive algorithms
+- [ ] Create test suites covering base cases, recursive cases, and edge cases for recursive algorithms
 - [ ] Debug stack overflow errors efficiently
 - [ ] Apply recursive patterns to AI system design
 
@@ -234,7 +228,7 @@ pytest test_factorial.py --cov=factorial --cov-report=term-missing
 **Requirements**:
 - [ ] Create `fibonacci.py` with a recursive Fibonacci function
 - [ ] Handle base cases: fib(0) = 0, fib(1) = 1
-- [ ] Create `test_fibonacci.py` with comprehensive tests
+- [ ] Create `test_fibonacci.py` covering base cases, recursive cases, and invalid inputs
 - [ ] Test at least 10 different inputs
 
 **Success Criteria**:
@@ -314,3 +308,10 @@ def recursive_ai_query(prompt: str, depth: int, max_depth: int = 3) -> str:
 *Quest completed? Share your journey with the IT-Journey community!*
 
 **Remember**: The path to mastery is recursive - each challenge builds upon the last. Keep climbing, brave wizard! 🧙‍♂️✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

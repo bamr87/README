@@ -4,7 +4,9 @@ title: Azure Speech to Text REST API Acceptance Criteria
 ---
 # Azure Speech to Text REST API Acceptance Criteria
 
-**API**: Azure Speech to Text REST API for Short Audio **Documentation**: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text-short **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**API**: Azure Speech to Text REST API for Short Audio
+**Documentation**: https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-speech-to-text-short
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

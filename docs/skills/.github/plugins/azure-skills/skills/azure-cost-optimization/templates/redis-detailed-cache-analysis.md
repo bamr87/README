@@ -2,7 +2,9 @@
 source_file: redis-detailed-cache-analysis.md
 title: Redis Detailed Cache Analysis
 ---
-Redis Cost Optimization Report - Detailed Analysis Subscription: Example-Subscription (12345678-1234-1234-1234-123456789abc) Generated: January 26, 2026
+Redis Cost Optimization Report - Detailed Analysis
+Subscription: Example-Subscription (12345678-1234-1234-1234-123456789abc)
+Generated: January 26, 2026
 
 ═══════════════════════════════════════════════════════════════════
 
@@ -89,6 +91,10 @@ RECOMMENDED ACTIONS
 2. [This Week] Downgrade example-cache-002 to Standard
 3. [This Week] Confirm example-cache-003 still needed, delete if not
 
-Would you like me to: A. Generate Azure CLI commands for these actions B. Analyze another subscription C. Export full report to CSV D. Set up automated monitoring
+Would you like me to:
+  A. Generate Azure CLI commands for these actions
+  B. Analyze another subscription
+  C. Export full report to CSV
+  D. Set up automated monitoring
 
 Please select (A/B/C/D):

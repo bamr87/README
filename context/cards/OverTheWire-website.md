@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: de268d570885f669
+source_fingerprint: 8a95c989dbb45bc1
 tags:
   - ctf
   - security
@@ -30,7 +30,7 @@ tags:
 ## Signals
 
 - no governance signal files detected in the corpus
-- ~15,901 words across 232 indexed documents
+- ~16,263 words across 232 indexed documents
 - code samples in: plaintext
 
 ## Structure
@@ -47,9 +47,9 @@ tags:
 - [`wargames/krypton/krypton6.md`](../../docs/OverTheWire-website/wargames/krypton/krypton6.md)
 - [`information/sshinfra.md`](../../docs/OverTheWire-website/information/sshinfra.md)
 - [`wargames/drifter/drifter0.md`](../../docs/OverTheWire-website/wargames/drifter/drifter0.md)
-- [`wargames/bandit/index.md`](../../docs/OverTheWire-website/wargames/bandit/index.md)
 - [`rules/index.md`](../../docs/OverTheWire-website/rules/index.md)
-- [`wargames/blacksun/index.md`](../../docs/OverTheWire-website/wargames/blacksun/index.md)
+- [`wargames/bandit/index.md`](../../docs/OverTheWire-website/wargames/bandit/index.md)
+- [`wargames/leviathan/index.md`](../../docs/OverTheWire-website/wargames/leviathan/index.md)
 
 ## Query this context
 

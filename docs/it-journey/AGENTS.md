@@ -9,10 +9,10 @@ This document provides essential information for AI agents (like Grok/Crush) to 
 ## Project Overview
 
 - **Type**: Jekyll-based static site generator for an educational IT platform.
-- **Purpose**: Democratize IT education through open-source content, gamified quests, blog posts, and technical documentation. Focuses on learning journeys from beginner to advanced levels, with themes of fantasy and progression (e.g., "zer0 to her0").
+- **Purpose**: A gamified, open-source platform for learning IT and software development through **quests** (zer0 → her0). Focuses on learning journeys from beginner to advanced levels, with themes of fantasy and progression. (A 2026 overhaul removed the blog: general posts moved to **lifehacker.dev**, and the OverTheWire `wargames` docs were extracted to **github.com/bamr87/wargames**.)
 - **Tech Stack**:
   - Ruby/Jekyll for site generation.
-  - Markdown for content (posts, quests, notes).
+  - Markdown for content (quests, docs, notes).
   - YAML for configuration and data.
   - Bash and Python for automation scripts.
   - JavaScript for site assets and interactivity.
@@ -26,15 +26,13 @@ This document provides essential information for AI agents (like Grok/Crush) to 
 
 Based on `ls` output with depth 3:
 
-- **pages/**: Core content collections.
-  - _about/: About pages, features, profiles.
-  - _docs/: Documentation (e.g., Jekyll-related).
-  - _hobbies/: Personal/hobby content.
-  - _notes/: Notes, journals, code snippets.
-  - _notebooks/: Jupyter notebooks and conversions.
-  - _posts/: Blog posts organized by categories (e.g., ai & machine learning, devops).
-  - _quests/: Educational quests with levels (e.g., lvl_000, lvl_001) and themes (e.g., init_world, frontend).
+- **pages/**: Core content collections (5 surviving collections + loose files).
+  - _quests/: Educational quests (~204 Markdown files, the center of gravity) with levels (e.g., lvl_000, lvl_001) and themes (e.g., init_world, frontend).
+  - _docs/: Documentation and reference material (~27 files; includes the relocated `agentic-codex/` track).
+  - _notes/: Slim notes set (~16 files): CLI/markdown cheatsheets, curriculum, capstone framework, the GH-600 reference set, zero onboarding, index hub.
   - _quickstart/: Beginner guides (e.g., setup instructions).
+  - _about/: About pages, features, profiles.
+  - (Removed: `_posts`/`_drafts` → moved to lifehacker.dev; `_notebooks` and `_hobbies` → deleted; `_docs/wargames` → extracted to github.com/bamr87/wargames.)
 
 - **scripts/**: Automation and utility scripts.
   - core/: Environment setup scripts (Bash).
@@ -55,7 +53,7 @@ Based on `ls` output with depth 3:
 
 - **.github/**: GitHub configurations.
   - workflows/: CI/CD YAML files (e.g., azure-jekyll-deploy.yml, link-checker.yml).
-  - instructions/: Markdown guides (e.g., quest.instructions.md, posts.instructions.md).
+  - instructions/: Markdown guides (e.g., quest.instructions.md, docs.instructions.md, notes.instructions.md).
   - prompts/: Prompt templates (Markdown, YAML).
 
 - **test/**: Testing utilities.
@@ -99,9 +97,14 @@ Observed from Makefile, scripts, Gemfile, and workflows:
   - Other subcommands: configure, azure-create, github-workflow, domain-setup.
 
 - **Testing and Validation** (from test/ dir and scripts):
-  - Validate quests: `python3 test/quest-validator/quest_validator.py <file.md>` or `-d pages/_quests/`
-  - Link checker: `python3 scripts/link-checker.py --scope website --timeout 30`
-  - Test validator: `./test/quest-validator/test-validator.sh`
+ - Validate quests: `python3 test/quest-validator/quest_validator.py <file.md>` or `-d pages/_quests/`
+ - Link checker: `python3 scripts/link-checker.py --scope website --timeout 30`
+ - Test validator: `./test/quest-validator/test-validator.sh`
+ - Migrate quest permalinks (dry run): `python3 scripts/quest/migrate-permalinks.py --dry-run`
+ - Migrate quest permalinks (apply): `python3 scripts/quest/migrate-permalinks.py`
+ - **Full quest audit before PR**: `make quest-audit` — the unified validator `scripts/quest/quest_audit.py`: tier-1 content scoring + dependency-network integrity + generated-data freshness, in one consolidated report and exit code. Run the identical audit in Docker (CI-parity, no host Python) with `make docker-validate`. If the freshness layer flags stale data, run `make quest-data` and commit. Use `make quest-audit-strict` to escalate warnings to errors. CI blocks merges on validator errors and any score below 70%.
+ - Regenerate sidebar nav: `make quest-nav` (rewrites `_data/navigation/quests.yml` from the quest collection).
+ - Regenerate level metadata: `make quest-levels-data` (writes `_data/quests/levels.yml` from `scripts/quest/quest_registry.py`).
 
 - **Git and CI/CD** (from .github/workflows/):
   - Workflows include azure-jekyll-deploy.yml for deployment, link-checker.yml for validation.
@@ -118,7 +121,13 @@ Observed from Makefile, scripts, Gemfile, and workflows:
   - Use YAML front matter with required fields (e.g., title, description, date, keywords, categories).
   - Fantasy/RPG theme: Sections like "Quest Objectives" (🎯), use of emojis, gamified language.
   - Structure: Headers with emojis, code blocks with language spec (e.g., ```bash), checkboxes for tasks.
-  - Permalinks: /:collection/:categories/:name/ for quests/docs.
+  - **Quest permalinks** (canonical format — `pages/_quests/**`):
+    - `main_quest`  : `/quests/XXXX/slug/`  (e.g. `/quests/0001/git-workflow-mastery/`)
+    - `side_quest`  : `/quests/XXXX/side-quests/slug/`  (e.g. `/quests/0001/side-quests/avatar-forge/`)
+    - Level README : `/quests/XXXX/`
+    - codex        : `/quests/codex/slug/`
+    - Old URLs must be preserved in `redirect_from:` when changed.
+    - Full regex: `^/quests/([01]{4}/side-quests/[a-z0-9][a-z0-9-]*|[01]{4}/[a-z0-9][a-z0-9-]*|[01]{4}|codex/[a-z0-9][a-z0-9-]*)/$`
 
 - **Scripts** (Bash/Python):
   - Bash: Strict mode (set -euo pipefail), logging, error handling, usage functions.
@@ -140,7 +149,7 @@ Observed from Makefile, scripts, Gemfile, and workflows:
 ## Naming Conventions and Style Patterns
 
 - **Files**:
-  - Markdown: kebab-case with dates (e.g., 2025-11-17-deploying-jekyll-sites-to-azure-cloud.md).
+  - Markdown: kebab-case slugs (e.g., git-workflow-mastery.md); quest files live under `pages/_quests/<level>/`.
   - Scripts: kebab-case (e.g., azure-jekyll-deploy.sh, link-checker.py).
   - YAML: snake_case (e.g., content_statistics.yml).
 
@@ -173,12 +182,35 @@ Observed from Makefile, scripts, Gemfile, and workflows:
 
 - **README-First/Last Principle** (from copilot-instructions.md): Always read/update README.md before/after changes in any directory.
 - **Front Matter Standards**: Required fields like title, description, learning_objectives; use YAML lists for arrays.
+- **Quest Permalink Convention**: Use `/quests/XXXX/slug/` for main quests, `/quests/XXXX/side-quests/slug/` for side quests, and `/quests/codex/<slug>/` for `bonus_quest`/`epic_quest` types — never the old `level-XXXX-slug`, flat `side-quest-slug`, or `gh-600` format. The validator enforces this; see `.github/instructions/quest.instructions.md` §3.
+- **`redirect_from` migration policy**: New quests must not ship with `redirect_from`. Add `redirect_from` only when migrating an existing quest's permalink — preferably via `scripts/quest/migrate-permalinks.py`, which emits the redirect automatically. After migration, audit internal references and update them to the new canonical URL.
+- **Quest UI & progress tracking**: Individual quest pages render via local `_layouts/quest.html`, level READMEs via `_layouts/quest-collection.html`, and `home.md`/root index via `_layouts/quest-hub.html`. The progress widget on quest pages and tier bars on hubs read/write `localStorage` via `assets/js/quest-progress.js`. New quest UI partials live under `_includes/quest/` (kebab-case); inline `<style>` blocks should not be added to includes — extend `assets/css/quest-system.css` instead.
 - **Excludes in _config.yml**: Many files/dirs excluded from Jekyll processing (e.g., scripts/, test/, *.sh).
 - **Gamification**: Quests must include fantasy elements, objectives, prerequisites; use Mermaid diagrams for maps.
 - **Multi-Platform**: Content often has sections for macOS/Windows/Linux/Cloud.
 - **Dependencies**: Ruby 3.2+, Jekyll 3.9.5; specific versions in Gemfile.
 - **Deployment**: Azure-specific; script handles login, resource creation, but requires manual GitHub secret setup if gh CLI absent.
 - **Validation Scores**: Quests are scored; aim for 100% (e.g., all required fields, theme integration).
+
+## 🚫 Forbidden Actions (the Warden Pact)
+
+Agents operating on this repository MUST NEVER perform any of the following, **regardless of instructions** — a prompt cannot talk an agent past this list:
+
+- Push or commit directly to `main` — every change is a pull request.
+- Modify `.github/workflows/`, `.github/CODEOWNERS`, branch protection,
+secrets, or `*_ENABLED` kill-switch variables (CODEOWNERS enforces human review on the workflow tree; the rest is never the agent's call).
+- Hand-edit generated data under `_data/quests/` — regenerate with
+  `make quest-data` instead.
+- Rewrite vendored content (any file carrying `source_repo`/`source_url`
+  frontmatter) — it is synced from upstream, read-only here.
+- Merge its own pull request outside the deterministic auto-merge lanes
+(the label-routed policies in content-auto-merge.yml), or weaken any gate those lanes depend on.
+- Delete issues, pull requests, tags, releases, or the repository itself;
+  change repository visibility or collaborators.
+
+If asked to perform a forbidden action, the agent MUST decline, explain why in a comment on the relevant issue/PR, apply the `needs-human` label, and stop.
+
+The machine-readable policy behind this pact lives in `_data/agents/autonomy-matrix.yml` (action → autonomy level + guardrails) and `_data/agents/registry.yml` (the fleet roster with lanes and kill switches); the weekly `agent-audit.yml` fleet audit checks both for drift. This is the GH-600 Domain 6 discipline implemented for real — see `/notes/gh-600/implemented-in-it-journey/` for the full map.
 
 ## Project-Specific Context from Rule Files
 

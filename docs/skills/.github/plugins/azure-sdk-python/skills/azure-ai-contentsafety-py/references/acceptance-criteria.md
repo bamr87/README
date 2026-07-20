@@ -4,7 +4,10 @@ title: Azure AI Content Safety SDK Acceptance Criteria
 ---
 # Azure AI Content Safety SDK Acceptance Criteria
 
-**SDK**: `azure-ai-contentsafety` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-contentsafety`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

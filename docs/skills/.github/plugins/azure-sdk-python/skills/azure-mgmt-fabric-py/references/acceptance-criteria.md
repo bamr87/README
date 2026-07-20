@@ -4,7 +4,9 @@ title: Azure Fabric Management SDK Acceptance Criteria
 ---
 # Azure Fabric Management SDK Acceptance Criteria
 
-**SDK**: `azure-mgmt-fabric` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-mgmt-fabric`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

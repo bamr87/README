@@ -6,9 +6,9 @@ categories:
 - Frontend
 - Advanced
 comments: true
-date: 2026-03-20 00:00:00+00:00
-description: Create custom CSS theme variants for the contributor character profile
-  system
+date: '2026-03-20T00:00:00.000Z'
+description: Craft custom CSS theme variants for the contributor profile system using
+  custom properties, light and dark modes, and WCAG AA accessible color contrast.
 difficulty: 🔴 Hard
 draft: false
 estimated_time: 60-90 minutes
@@ -16,25 +16,18 @@ excerpt: The Style Sorcerer teaches the art of visual enchantment — bend color
   shapes to your will.
 fmContentType: quest
 keywords:
-- CSS themes
-- custom styling
-- profile customization
-- advanced CSS
-lastmod: 2026-03-21 15:12:32.263000+00:00
-learning_paths:
-  character_classes:
-  - 🎵 Bard
-  - 🗡️ Rogue
-  primary_paths:
-  - Frontend Developer
-  - UI/UX Designer
-  skill_trees:
-  - Frontend Development
-  - CSS Architecture
-  - Design Systems
+  primary:
+  - CSS themes
+  - custom styling
+  secondary:
+  - profile customization
+  - advanced CSS
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: project-based
 level: '0100'
-permalink: /quests/side-quest-profile-themes/
+mermaid: true
+permalink: /quests/0100/profile-themes/
 prerequisites:
   knowledge_requirements:
   - Completed Forge Your Character quest
@@ -49,24 +42,24 @@ primary_technology: css
 quest_arc: 'Act III: The Master''s Path'
 quest_dependencies:
   recommended_quests:
-  - /quests/side-quest-stats-dashboard/
-  - /quests/side-quest-contribution-calendar/
+  - /quests/0010/stats-dashboard/
+  - /quests/0010/contribution-calendar/
   required_quests:
-  - /quests/forge-your-character/
+  - /quests/0001/forge-your-character/
   unlocks_quests: []
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: side_quest
+redirect_from:
+- /quests/0100/side-quests/profile-themes/
 rewards:
   badges:
   - 🎭 Style Sorcerer — Created a custom profile theme
   progression_points: 150
-skill_focus:
-- frontend
-snippet: True mastery is not just function — it is form
+skill_focus: frontend
 source_file: side-quest-profile-themes.md
 tags:
-- lvl-0100
+- '0100'
 - contributor
 - css
 - themes
@@ -147,6 +140,8 @@ Choose a theme concept. Examples:
 | `sunset` | Warm gradients | `#ff6b35` | `#fff3e0` |
 | `terminal` | Green on black | `#33ff33` | `#1a1a1a` |
 
+> ⚠️ **Accent color ≠ text color.** These accent/background pairs are design *concepts*, not guaranteed-accessible text colors. The light pairings — `arctic` (`#00bcd4` on `#e3f2fd` ≈ 2.0:1) and `sunset` (`#ff6b35` on `#fff3e0` ≈ 2.6:1) — fall short of the 3:1 minimum you'll enforce in Step 4. When a themed accent is used for text or interactive elements, pair it with a separate, darker text-safe variant of that hue so it clears the contrast bar. Always validate your final colors against the Step 4 table before opening a PR.
+
 ### Step 3: Create the Theme CSS
 
 Create `assets/css/themes/contributor-theme-YOUR_THEME.css`:
@@ -217,25 +212,29 @@ profile:
 
 Update `_includes/contributor/character_sheet.html` to apply the theme class:
 
+> ⚠️ **Strip the Liquid `raw`/`endraw` wrapper tags before pasting.** They only exist here so this quest page can *display* the Liquid tags instead of running them. Copy the code into the real `.html` file **without** the `raw`/`endraw` lines — otherwise Jekyll renders the literal `{% raw %}{% if %}{% endraw %}`/`{% raw %}{{ theme_class }}{% endraw %}` markup as visible text instead of applying your theme.
+
 ```liquid
-{% raw %}
-{% if contributor.profile.theme %}
-  {% assign theme_class = "contributor-theme--" | append: contributor.profile.theme %}
-{% endif %}
-<div class="contributor-sheet {{ theme_class }}">
-{% endraw %}
+
+{% raw %}{% if contributor.profile.theme %}{% endraw %}
+  {% raw %}{% assign theme_class = "contributor-theme--" | append: contributor.profile.theme %}{% endraw %}
+{% raw %}{% endif %}{% endraw %}
+<div class="contributor-sheet {% raw %}{{ theme_class }}{% endraw %}">
+
 ```
 
 ### Step 6: Load the Theme CSS
 
 In your profile page (or in `character_sheet.html`):
 
+> ⚠️ **Same as Step 5 — remove the Liquid `raw`/`endraw` wrapper tags before pasting.** Paste only the Liquid between them; leaving the `raw`/`endraw` lines in produces a broken literal `<link>` tag (with visible `{% raw %}{{ ... }}{% endraw %}` markup) instead of loading your theme's stylesheet.
+
 ```liquid
-{% raw %}
-{% if contributor.profile.theme %}
-<link rel="stylesheet" href="{{ '/assets/css/themes/contributor-theme-' | append: contributor.profile.theme | append: '.css' | relative_url }}">
-{% endif %}
-{% endraw %}
+
+{% raw %}{% if contributor.profile.theme %}{% endraw %}
+<link rel="stylesheet" href="{% raw %}{{ '/assets/css/themes/contributor-theme-' | append: contributor.profile.theme | append: '.css' | relative_url }}{% endraw %}">
+{% raw %}{% endif %}{% endraw %}
+
 ```
 
 ### Step 7: Test & Screenshot
@@ -274,3 +273,10 @@ Once your theme PR is merged, you've earned the **Style Sorcerer** badge (+150 X
 ---
 
 > *"You have bent the very fabric of appearance to your will. The realm is more beautiful for it."*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Stats Dashboard: Enhancing Your Data Visualization]] · [[Contribution Calendar: Mapping Your Journey Through Time]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

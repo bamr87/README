@@ -1,57 +1,54 @@
 ---
-attachments: ''
 author: Quest Master
 categories:
 - Quests
 - Development
 - Intermediate
 comments: true
-date: 2025-08-24 18:46:40+00:00
-description: Embark on a fantasy-themed quest to master software templates and reusable
-  architectures across C++, HTML/Jinja, and React. Learn abstraction, type-safety,
-  inheritance, and composition patterns to forge scalable, maintainable systems.
+date: '2025-08-24T18:46:40.000Z'
+description: Enter a fantasy quest mastering software templates across C++, Jinja,
+  and React—abstraction, type-safety, inheritance, and composition for reuse.
 difficulty: 🟡 Medium
+draft: false
 estimated_time: 60-90 minutes
 excerpt: Master the sacred art of templates to build elegant, reusable systems across
   languages.
 fmContentType: quest
 keywords:
-- lvl-1100
-- templates
-- design-patterns
-- software-architecture
-- reusable-components
-- hands-on
-lastmod: 2025-08-25 00:43:51.189000+00:00
+  primary:
+  - '1100'
+  - templates
+  - design-patterns
+  secondary:
+  - software-architecture
+  - reusable-components
+  - hands-on
+lastmod: '2025-08-25T00:43:51.000Z'
+layout: quest
 learning_style: hands-on
 level: '1100'
-permalink: /quests/level-1100-temple-of-templates/
+mermaid: true
+permalink: /quests/1100/temple-of-templates/
 prerequisites:
 - Basic programming (variables, functions, modules)
 - Fundamentals of one templating approach (C++ templates, or HTML templating, or components)
 - Local dev environment with Node.js and Python
 preview: images/previews/the-temple-of-templates-binary-abstractions-and-re.png
-primary_technology: lvl-1100
+primary_technology: liquid
 quest_series: Binary Function Crafting
 quest_type: main_quest
-related_quests:
-- 'Level 0011: Programming Foundations'
-- 'Level 0100: Version Control with Git'
-- 'Level 1111: Testing and Verification Rites'
+redirect_from:
+- /quests/1100/the-temple-of-templates/
 rewards:
 - 🏆 Pattern Weaver – Reuse and Abstraction
 - ⚡ System Design Insight +1
 - 🛠️ Template Mastery (C++/Jinja/React)
 - '🎯 Portfolio artifact: multi-language template demo'
-skill_focus:
-- Quests
-- Development
-- Intermediate
-snippet: Blueprints in stone, patterns in code—reuse is the path through the labyrinth.
+skill_focus: fullstack
 source_file: the-temple-of-templates.md
-sub-title: 'Level 1100 (12) Quest: Function Crafting and Modular Abstractions'
+sub_title: 'Level 1100 (12) Quest: Function Crafting and Modular Abstractions'
 tags:
-- lvl-1100
+- '1100'
 - templates
 - design-patterns
 - software-architecture
@@ -178,21 +175,21 @@ print(env.get_template('page.html').render(title='Temple of Templates', user={'n
 <!-- templates/base.html -->
 <!doctype html>
 <html>
-  <head><title>{% raw %}{% block title %}Base{% endblock %}{% endraw %}</title></head>
+  <head><title>{% raw %}{% block title %}{% endraw %}Base{% raw %}{% endblock %}{% endraw %}</title></head>
   <body>
     <header>🏛️ {% raw %}{{ site_name | default('Temple') }}{% endraw %}</header>
-    <main>{% raw %}{% block content %}{% endblock %}{% endraw %}</main>
+    <main>{% raw %}{% block content %}{% endraw %}{% raw %}{% endblock %}{% endraw %}</main>
   </body>
   </html>
 ```
 
 ```html
 <!-- templates/page.html -->
-{% raw %}{% extends 'base.html' %}
-{% block title %}{{ title }}{% endblock %}
-{% block content %}
-  <h1>Hello {{ user.name }}!</h1>
-{% endblock %}{% endraw %}
+{% raw %}{% extends 'base.html' %}{% endraw %}
+{% raw %}{% block title %}{% endraw %}{% raw %}{{ title }}{% endraw %}{% raw %}{% endblock %}{% endraw %}
+{% raw %}{% block content %}{% endraw %}
+  <h1>Hello {% raw %}{{ user.name }}{% endraw %}!</h1>
+{% raw %}{% endblock %}{% endraw %}
 ```
 
 **Expected Output**:
@@ -248,10 +245,10 @@ export function Card({ title, children }) {
 
 ```html
 <!-- templates/page.html (extended) -->
-{% raw %}{% extends 'base.html' %}
-{% block content %}
-  {% include 'partials/button.html' with context %}
-{% endblock %}{% endraw %}
+{% raw %}{% extends 'base.html' %}{% endraw %}
+{% raw %}{% block content %}{% endraw %}
+  {% raw %}{% include 'partials/button.html' with context %}{% endraw %}
+{% raw %}{% endblock %}{% endraw %}
 ```
 
 #### 🔧 Implementation: React Composition
@@ -426,7 +423,7 @@ graph TD
 
 ---
 
-### 🧠 Knowledge Check (Comprehensive)
+### 🧠 Knowledge Check
 
 Before you depart the temple, ensure you can explain:
 
@@ -435,3 +432,10 @@ Before you depart the temple, ensure you can explain:
 - When to stop abstracting—what is “good enough” for today
 
 May your blueprints be clear, your APIs stable, and your sanctums extensible. 🏛️💡
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

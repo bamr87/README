@@ -4,7 +4,9 @@ title: Azure AI Transcription SDK Acceptance Criteria
 ---
 # Azure AI Transcription SDK Acceptance Criteria
 
-**SDK**: `azure-ai-transcription` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-transcription`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

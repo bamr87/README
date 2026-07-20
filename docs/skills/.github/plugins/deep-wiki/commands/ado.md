@@ -136,7 +136,8 @@ After generating the script, run it and verify:
 
 ### ADO Mermaid Supported Types
 
-✅ `sequenceDiagram`, `gantt`, `graph`, `classDiagram`, `stateDiagram`, `journey`, `pie`, `erDiagram`, `gitGraph`, `timeline` ❌ `flowchart` (use `graph`), `mindmap`, `sankey`, `quadrantChart`, `xychart`, `block`
+✅ `sequenceDiagram`, `gantt`, `graph`, `classDiagram`, `stateDiagram`, `journey`, `pie`, `erDiagram`, `gitGraph`, `timeline`
+❌ `flowchart` (use `graph`), `mindmap`, `sankey`, `quadrantChart`, `xychart`, `block`
 
 ## Index Page Generation (CRITICAL)
 

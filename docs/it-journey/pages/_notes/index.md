@@ -2,7 +2,7 @@
 author: bamr87
 categories:
 - notes
-date: 2021-11-07 17:20:34+00:00
+date: '2021-11-07T17:20:34.000Z'
 description: Working notes, code snippets, and quick references collected during development
   — PowerShell, Linux, macOS tips, and more.
 draft: false
@@ -16,10 +16,10 @@ keywords:
   - powershell reference
   - linux tips
   - development notes
-lastmod: 2026-04-02 03:24:28.798000+00:00
+lastmod: '2026-04-02T03:24:28.000Z'
 permalink: /notes/
-sidebar:
-  nav: docs
+redirect_from:
+- /docs/
 source_file: index.md
 tags:
 - notes
@@ -34,7 +34,7 @@ toc_sticky: true
 ---
 # Notes
 
-Working notes, code snippets, and quick references collected during IT-Journey development. These are informal — think scratch pad, not polished guide. For structured learning, see the [Quick Start Guide](/quickstart/) or [Docs Library](/docs/).
+Working notes, code snippets, and quick references collected during IT-Journey development. These are informal — think scratch pad, not polished guide. For structured learning, follow the [Quest Map](/quests/home/); for fast lookups, use the [Cheatsheets](/notes/cheatsheets/).
 
 ---
 
@@ -42,10 +42,10 @@ Working notes, code snippets, and quick references collected during IT-Journey d
 
 | Collection | What It Is |
 |------------|------------|
-| [📘 Quick Start Guide](/quickstart/) | Step-by-step setup — machine config, Jekyll, GitHub, VS Code, deployment, CI/CD |
-| [🏰 Quest Map](/quests/home/) | 144 gamified quests across 16 binary levels — from terminal basics to system architecture |
-| [📚 Docs Library](/docs/) | Reference documentation — terminal shortcuts, Bash, Jekyll config, Liquid, Mermaid, MathJax |
-| [📰 Blog Posts](/posts/) | Tutorials, AI development chronicles, and technical write-ups across 10 categories |
+| [🏰 Quest Map](/quests/home/) | Gamified quests across 16 binary levels — from terminal basics to system architecture, including the epic-quest campaigns |
+| [⚔️ The Codex](/quests/codex/) | The epic quests — multi-session campaigns that build a real system end to end |
+| [📑 Cheatsheets](/notes/cheatsheets/) | Quick-reference cards — Bash, PowerShell, Markdown, MathJax, terminal shortcuts |
+| [📰 Blog (lifehacker.dev)](https://lifehacker.dev) | Tutorials, AI development chronicles, and technical write-ups — now published on lifehacker.dev |
 
 ---
 
@@ -185,7 +185,7 @@ vscode://file/C:/Users/AmrAbdel-Motaleb/OneDrive/Documents/GitHub/{{ page.path}}
 ### Autoscale images
 
 
-### Render LaTeX from markdown
+### Render LaTeX from Markdown
 
 add script to head
 
@@ -283,7 +283,7 @@ p, img
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other Markdown pages, images and other files.
 
 # Icons with bootstrap
 
@@ -303,7 +303,7 @@ These instructions are pertinent to Mac users.
 
 These instructions are pertinent to Windows users.
 
-## Github Custom Domain
+## GitHub Custom Domain
 
 [docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 

@@ -3,7 +3,8 @@ author: Amr
 class: Wizard
 contributor_data: bamr87
 excerpt: IT Wizard, Software Architect, Tech Enthusiast.
-lastmod: 2026-03-21 15:12:32.206000+00:00
+lastmod: '2026-03-21T15:12:32.000Z'
+mermaid: true
 permalink: /contributors/bamr87/
 source_file: README.md
 title: Add the GitHub profile repository as a remote repository

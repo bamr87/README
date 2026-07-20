@@ -4,7 +4,10 @@ title: Azure Storage File Data Lake SDK Acceptance Criteria
 ---
 # Azure Storage File Data Lake SDK Acceptance Criteria
 
-**SDK**: `azure-storage-file-datalake` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-storage-file-datalake`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

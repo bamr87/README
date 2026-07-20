@@ -5,36 +5,29 @@ categories:
 - AI-Development
 - Tool-Mastery
 comments: true
-date: 2025-11-02 18:34:05+00:00
+date: '2025-11-02T18:34:05.000Z'
 description: Master prompt engineering to craft optimal AI instructions. Learn systematic
   design, iterative refinement, and structured patterns for language models.
 difficulty: 🟡 Medium
+draft: false
 estimated_time: 90-120 minutes
 excerpt: Transform from novice prompter to master prompt engineer, wielding the power
   to communicate with AI systems through precisely crafted instructions
 fmContentType: quest
 keywords:
-- lvl-0010
-- ai-development
-- prompt-engineering
-- language-models
-- ai-communication
-- tool-mastery
-lastmod: 2025-11-03 01:10:01.141000+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🤖 AI Engineer
-  primary_paths:
-  - AI Development
-  - Software Development
-  skill_trees:
-  - AI Development
-  - Prompt Engineering
-  - Language Models
+  primary:
+  - '0010'
+  - ai-development
+  - prompt-engineering
+  secondary:
+  - language-models
+  - ai-communication
+  - tool-mastery
+lastmod: '2025-11-03T01:10:01.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-prompt-engineering-mastery/
+permalink: /quests/0010/prompt-engineering-mastery/
 prerequisites:
   knowledge_requirements:
   - Basic understanding of AI and language models
@@ -46,23 +39,17 @@ prerequisites:
   - Access to an AI language model (ChatGPT, Claude, or similar)
   - Text editor for writing and testing prompts
 preview: images/previews/forging-the-prompt-crystal-master-ai-communication.png
-primary_technology: lvl-0010
+primary_technology: github-copilot
 quest_arc: Tool Mastery Arc
 quest_dependencies:
   recommended_quests: []
   required_quests: []
   unlocks_quests: []
 quest_line: Foundation Path
-quest_mapping:
-  biome: Communication
-  coordinates: '[2, 2]'
-  realm: AI-Enhanced
-  region: Foundation
-quest_relationships:
-  child_quests: []
-  sequel_quests: []
 quest_series: AI Development Mastery
 quest_type: main_quest
+redirect_from:
+- /quests/0010/prompt-engineering/
 rewards:
   badges:
   - 🏆 Prompt Crystal Forger - Master of AI Communication
@@ -74,15 +61,11 @@ rewards:
   unlocks_features:
   - Access to advanced AI agent development quests
   - Ability to create custom AI-powered tools
-skill_focus:
-- Quests
-- AI-Development
-- Tool-Mastery
-snippet: Words become code, instructions become reality - the way of the Prompt Alchemist
+skill_focus: fullstack
 source_file: prompt-engineering.md
-sub-title: 'Level 0010 (2) Quest: AI Communication and Prompt Design Mastery'
+sub_title: 'Level 0010 (2) Quest: AI Communication and Prompt Design Mastery'
 tags:
-- lvl-0010
+- '0010'
 - ai-development
 - prompt-engineering
 - language-models
@@ -155,12 +138,12 @@ You'll know you've truly mastered this quest when you can:
 **The Principle**: AI models respond best to explicit, unambiguous instructions. Vagueness leads to inconsistent results.
 
 **Bad Prompt** (Vague and Ambiguous):
-```
+```text
 Write something about Python.
 ```
 
 **Good Prompt** (Clear and Specific):
-```
+```text
 Write a 300-word technical blog post introduction explaining 
 why Python is popular for data science. Include three specific 
 advantages: library ecosystem, readability, and community support. 
@@ -185,15 +168,15 @@ Target audience: developers new to data science.
 **The Principle**: Organize prompts into clear sections that guide the AI through your requirements systematically.
 
 **Prompt Template Structure**:
-```
+```text
 [ROLE/PERSONA]
-You are a [specific role with relevant expertise].
+You are a senior Python developer with 10 years of API experience.
 
 [CONTEXT]
-The user is [situation/background information].
+The user is building a REST API and needs input validation.
 
 [TASK]
-Your task is to [specific action to perform].
+Your task is to write an email-validation function with tests.
 
 [CONSTRAINTS]
 - Constraint 1
@@ -202,7 +185,7 @@ Your task is to [specific action to perform].
 
 [OUTPUT FORMAT]
 Format the response as:
-- [specific structure]
+- Function code, then three example test cases
 
 [EXAMPLES] (if applicable)
 Example input: [sample]
@@ -210,7 +193,7 @@ Example output: [sample]
 ```
 
 **Example Application**:
-```
+```sql
 [ROLE]
 You are a senior Python developer reviewing code for security issues.
 
@@ -260,7 +243,7 @@ For each issue:
 - If mixed: analyze what aspects improved/degraded
 
 **Example Iteration**:
-```
+```markdown
 # Iteration 1 (Baseline)
 Prompt: "Explain neural networks."
 Issue: Too vague, output too technical
@@ -303,7 +286,7 @@ Result: Engaging, accessible, structured ✓
 | Confirmation bias | Prompt leads AI toward preconceived answer | Use neutral framing: "Analyze pros and cons" not "Why is X better" |
 
 **Anti-Pattern Example**:
-```
+```yaml
 Bad: "Why is Python better than JavaScript?"
 (Leads toward predetermined conclusion)
 
@@ -329,7 +312,7 @@ Provide balanced pros/cons for each."
 - **Pattern matching**: Excels at patterns seen in training, struggles with truly novel tasks
 
 **Optimization Strategies**:
-```
+```markdown
 # Token Efficiency
 Bad: "Please analyze this very long document..." [20,000 words]
 Good: "Summarize key points from this document..." [focused task]
@@ -374,12 +357,12 @@ Choose your prompt technique based on task complexity and available data:
 **When to Use**: Task is common, instructions are clear, no special format needed.
 
 **The Pattern**:
-```
+```text
 [CLEAR INSTRUCTION] + [CONTEXT] + [OUTPUT REQUIREMENT]
 ```
 
 **Example - Bad vs. Good**:
-```
+```text
 ❌ BAD:
 "Classify this text: 'The movie was disappointing and boring.'"
 
@@ -399,7 +382,7 @@ Output: Return only the classification label (POSITIVE/NEGATIVE/NEUTRAL)."
 - Removed ambiguity ("classify" → specific labels)
 
 **Kaizen Exercise**: Take this vague zero-shot prompt:
-```
+```javascript
 "Write a function to sort a list."
 ```
 
@@ -414,17 +397,17 @@ Apply the PDCA cycle to improve it:
 **When to Use**: Custom formats, unfamiliar domains, pattern recognition tasks, or when zero-shot quality is insufficient.
 
 **The Pattern**:
-```
+```text
 [INSTRUCTION] +
 Example 1: [INPUT] → [DESIRED OUTPUT]
 Example 2: [INPUT] → [DESIRED OUTPUT]
 Example 3: [INPUT] → [DESIRED OUTPUT]
 
-Now apply to: [YOUR INPUT]
+Now apply to: "Email: Can you add CSV export?" → Intent: FEATURE_REQUEST
 ```
 
 **Example - Email Intent Classification**:
-```
+```text
 Classify customer emails by intent: QUESTION, COMPLAINT, FEATURE_REQUEST, or PRAISE.
 
 Example 1:
@@ -461,7 +444,7 @@ Intent: [AI will respond with FEATURE_REQUEST]
 4. **Example Order**: Place most relevant example last (recency effect)
 
 **Kaizen Exercise - Few-Shot Optimization**:
-```
+```yaml
 Task: Improve this few-shot prompt's quality by 20%
 
 Current Prompt (Quality: 7/10):
@@ -483,26 +466,27 @@ PDCA It:
 **Two Variants**:
 
 **1. Zero-Shot CoT (Simplest)**:
-```
-Problem: [Your problem]
+```yaml
+Problem: A train travels 120 km in 2 hours, then 90 km in 1 hour.
+         What is its average speed?
 
 Let's solve this step-by-step:
 ```
 
 **2. Few-Shot CoT (More Accurate)**:
-```
-Problem: [Example problem]
+```yaml
+Problem: There are 3 boxes with 4 apples each. How many apples total?
 Let's think step by step:
-Step 1: [reasoning]
-Step 2: [reasoning]
-Answer: [result]
+Step 1: Count the boxes (3)
+Step 2: Multiply by apples per box (3 x 4)
+Answer: 12 apples
 
-Problem: [Your problem]
+Problem: A function processes 5 files, each taking 200ms. Total time?
 Let's think step by step:
 ```
 
 **Example - Debugging Code**:
-```
+```python
 ❌ Direct Prompt:
 "Why does this Python code fail?"
 
@@ -528,7 +512,7 @@ Solution: [AI provides corrected code with empty list check]"
 ```
 
 **CoT PDCA Application**: When using CoT, apply Kaizen to the reasoning steps themselves:
-- **Plan**: Are the steps comprehensive?
+- **Plan**: Do the steps cover every part of the problem?
 - **Do**: Run the CoT prompt
 - **Check**: Did the AI follow all steps? Did it skip any?
 - **Act**: Add missing steps or clarify vague ones
@@ -538,21 +522,21 @@ Solution: [AI provides corrected code with empty list check]"
 **When to Use**: Need specific expertise, tone, or perspective; domain-specific knowledge required.
 
 **The Pattern**:
-```
-You are a [specific role with relevant expertise].
+```text
+You are a senior database administrator with deep PostgreSQL expertise.
 
 Your characteristics:
-- [Key trait 1 relevant to task]
-- [Key trait 2 relevant to task]
-- [Communication style]
+- Obsessive about query performance and indexing
+- Explains trade-offs clearly to non-experts
+- Communicates concisely with concrete examples
 
-Task: [What to do]
+Task: Review this query and suggest indexing improvements.
 
-Context: [Situation details]
+Context: A 10-million-row orders table with slow customer lookups.
 ```
 
 **Example - Code Review**:
-```
+```python
 You are a senior security engineer with 15 years of experience in web application security.
 
 Your expertise:
@@ -574,7 +558,7 @@ Provide:
 ```
 
 **Kaizen Trap - Role Overload**:
-```
+```text
 ❌ TOO MUCH:
 "You are a senior engineer, mathematician, poet, chef, and philosopher..."
 
@@ -589,7 +573,7 @@ Provide:
 Apply these techniques to real scenarios:
 
 **Challenge 1: The Vague Request** (Zero-Shot Practice)
-```
+```text
 User asks: "Make the app faster"
 
 Your task: Create a zero-shot prompt to extract specific, actionable details:
@@ -602,7 +586,7 @@ Write the prompt, test it, apply PDCA.
 ```
 
 **Challenge 2: The Pattern Matcher** (Few-Shot Practice)
-```
+```sql
 You need to extract product information from messy user descriptions.
 
 Example inputs:
@@ -617,7 +601,7 @@ Test with: "Picked up the Puma RS-X in black/white, sz 10.5, $110"
 ```
 
 **Challenge 3: The Debugger** (CoT Practice)
-```
+```sql
 This SQL query is slow (5 seconds on 100K rows):
 
 SELECT * FROM orders 
@@ -653,7 +637,7 @@ Demonstrate mastery by explaining:
 **When to Use**: Complex problems with multiple solution approaches, strategic planning, creative tasks requiring exploration.
 
 **The Pattern**:
-```
+```yaml
 Problem: [Complex problem]
 
 Let's explore multiple solution paths:
@@ -675,7 +659,7 @@ Continue with selected approach.
 ```
 
 **Example - System Architecture Decision**:
-```
+```yaml
 Problem: Design data storage for a social media app expecting 1M users.
 
 Explore three architectural branches:
@@ -708,7 +692,7 @@ Next steps: [detailed implementation plan]
 **Critical for**: AI agents that need to search, calculate, or interact with external tools.
 
 **The Pattern**:
-```
+```yaml
 Thought: [What do I know? What do I need?]
 Action: [Tool to call: search/calculate/retrieve]
 Observation: [Result from action]
@@ -723,7 +707,7 @@ Answer: [Final response based on reasoning + observations]
 ```
 
 **Example - Research Assistant Agent**:
-```
+```yaml
 Query: "What's the current market cap of Apple Inc.?"
 
 Thought: I need current financial data. This requires a web search.
@@ -747,7 +731,7 @@ Answer: As of January 2025, Apple Inc.'s market capitalization is approximately 
 **When to Use**: High-stakes decisions, reducing hallucinations, improving reliability.
 
 **The Pattern**:
-```
+```text
 Generate 5 independent solutions:
 
 Solution 1: [reasoning path 1] → Answer: X
@@ -761,7 +745,7 @@ Confidence: 80% (4/5 agreement)
 ```
 
 **Example - Code Bug Diagnosis**:
-```
+```yaml
 Bug: Function returns wrong output for edge case.
 
 Generate 3 diagnostic paths:
@@ -782,7 +766,7 @@ Action: Restore null check validation
 **Concept**: After generating a response, prompt the AI to critique its own work and improve it.
 
 **The Two-Step Pattern**:
-```
+```text
 Step 1 - Initial Response:
 [AI generates first draft]
 
@@ -796,7 +780,7 @@ Then provide a refined version."
 ```
 
 **Example - Document Review**:
-```
+```text
 Initial Draft:
 "This contract is acceptable. Sign it."
 
@@ -830,12 +814,12 @@ Recommendation: Request revisions to sections 3, 7, and 12."
 **Concept**: Before generating, retrieve relevant information from external knowledge bases to ground responses in facts.
 
 **Architecture**:
-```
+```text
 Query → Retrieve relevant docs → Augment prompt with docs → Generate response
 ```
 
 **Example Pattern**:
-```
+```yaml
 Question: [User query]
 
 Retrieved Context:
@@ -865,7 +849,7 @@ If the context doesn't contain the answer, say "Information not found in knowled
 4. Use **Reflection** to critique the solution before presenting
 
 **Template to Complete**:
-```
+```bash
 System: You are a senior DevOps engineer debugging production issues.
 
 Available Tools:
@@ -873,13 +857,13 @@ Available Tools:
 - get_metrics(timeframe): Retrieve system metrics
 - retrieve_code(file): Get code from repository
 
-User Issue: [Describe the problem]
+User Issue: Checkout service returns 500 errors during peak traffic.
 
 Instructions:
-1. [Your ReAct loop here]
-2. [Your ToT exploration here]
-3. [Your self-consistency check here]
-4. [Your reflection step here]
+1. ReAct loop: Thought (need recent errors) -> Action search_logs("checkout 500") -> Observation, then repeat until cause is clear
+2. ToT exploration: branch on DB timeout, memory leak, and rate limit; score each 1-10 and pick the best
+3. Self-consistency check: generate 3 diagnoses and keep the one that 2+ paths agree on
+4. Reflection step: critique the fix for missing edge cases before presenting it
 
 Apply PDCA to refine this prompt:
 - Test with a real issue
@@ -903,14 +887,14 @@ Demonstrate mastery by:
 ### 📋 Template Pattern: The Reusable Prompt Structure
 
 **Universal Template**:
-```
+```markdown
 # [PROMPT NAME]
 ## Purpose: [One-sentence description]
 
 ## Template:
 ---
 [ROLE/PERSONA]
-You are a [specific role].
+You are a senior backend engineer specializing in API design.
 
 [CONTEXT]
 Context: [situational details]
@@ -941,7 +925,7 @@ Output: [example output]
 ### 🎯 Template Library: Five Essential Patterns
 
 **1. Code Review Template**
-```
+```text
 You are a senior software engineer conducting code review.
 
 Code to Review:
@@ -963,7 +947,7 @@ Priority: Focus on security and correctness first.
 ```
 
 **2. Documentation Generator Template**
-```
+```bash
 You are a technical writer creating developer documentation.
 
 Code/API to Document:
@@ -997,7 +981,7 @@ Generate documentation with:
 ```
 
 **3. Test Case Generator Template**
-```
+```text
 You are a QA engineer creating comprehensive test cases.
 
 Function to Test:
@@ -1026,7 +1010,7 @@ For each test, provide:
 ```
 
 **4. Debugging Assistant Template**
-```
+```text
 You are a senior developer debugging production issues.
 
 Problem Description:
@@ -1055,7 +1039,7 @@ Step 3: Hypothesis
 - Evidence: [supporting facts]
 
 Step 4: Solution
-- Fix: [specific code change]
+- Fix: Add an `if not numbers: return 0` guard before the division
 - Why it works: [reasoning]
 
 Step 5: Prevention
@@ -1064,7 +1048,7 @@ Step 5: Prevention
 ```
 
 **5. Requirements Clarifier Template**
-```
+```text
 You are a business analyst clarifying vague requirements.
 
 Vague Requirement:
@@ -1116,7 +1100,7 @@ Generate 5-7 specific questions that turn vague into actionable.
 - If iterations high: Clarify instructions
 
 **Example Kaizen Log**:
-```
+```yaml
 Template: Code Review
 Version: 1.0 → 1.1 → 1.2
 
@@ -1140,7 +1124,7 @@ v1.2 (Jan 2025):
 ### 📊 The Complete PDCA Prompt Development Cycle
 
 **Phase 1: PLAN (Before Writing)**
-```
+```javascript
 1. Define Success Criteria
    - What does "good" output look like?
    - How will I measure quality (0-10 scale)?
@@ -1162,7 +1146,7 @@ Gap: Missing edge cases, vague test names
 ```
 
 **Phase 2: DO (Implement Improvement)**
-```
+```text
 3. Apply One Technique at a Time
    - Iteration 1: Add Few-Shot examples → Measure
    - Iteration 2: Add CoT reasoning → Measure
@@ -1180,7 +1164,7 @@ Insight: Examples + format most impactful
 ```
 
 **Phase 3: CHECK (Validate Improvement)**
-```
+```text
 4. Measure Against Success Criteria
    - Quality score: Did it improve?
    - Consistency: Run 3 times, check variance
@@ -1202,7 +1186,7 @@ Edge case (empty input): 6/10 ❌ → Need to improve
 ```
 
 **Phase 4: ACT (Iterate or Standardize)**
-```
+```text
 6. Decision Point:
    - Quality ≥ 8/10 AND Consistent? → STANDARDIZE (add to template library)
    - Quality < 8/10? → ITERATE (return to Plan)
@@ -1254,7 +1238,7 @@ Next Actions:
 **Your Final Trial**: Apply the complete Kaizen workflow to a real-world problem.
 
 **The Challenge**:
-```
+```yaml
 Scenario: Your team needs to generate API documentation automatically from code.
 
 Your Task:
@@ -1343,14 +1327,14 @@ Confirm your mastery by demonstrating:
 **Build upon your Prompt Crystal mastery with these quests**:
 
 **Immediate Follow-Ups**:
-- 🤖 **AI Agent Development** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
-- ⚙️ **AI Workflow Automation** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
-- 📊 **Prompt Performance Monitoring** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
+- 🤖 **AI Agent Development** - Planned quest (see Quest Build Plan)
+- ⚙️ **AI Workflow Automation** - Planned quest (see Quest Build Plan)
+- 📊 **Prompt Performance Monitoring** - Planned quest (see Quest Build Plan)
 
 **Advanced Specializations**:
-- 🔬 **Advanced RAG Systems** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
-- 🧪 **Prompt Testing & Validation** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
-- 🏗️ **Multi-Agent Systems** - Planned quest (see [Quest Build Plan](../QUEST_BUILD_PLAN.md))
+- 🔬 **Advanced RAG Systems** - Planned quest (see Quest Build Plan)
+- 🧪 **Prompt Testing & Validation** - Planned quest (see Quest Build Plan)
+- 🏗️ **Multi-Agent Systems** - Planned quest (see Quest Build Plan)
 
 **Continuous Improvement**:
 - ♻️ **Kaizen Continuous Improvement** - Continue in [Kaizen](../0001/kaizen.md) for deeper practice
@@ -1358,7 +1342,7 @@ Confirm your mastery by demonstrating:
 ### 📚 Additional Resources
 
 **Prompt Engineering Research & Techniques**:
-- [Prompt Engineering Guide](https://www.promptingguide.ai/) - Comprehensive technique reference
+- [Prompt Engineering Guide](https://www.promptingguide.ai/) - Reference covering zero-shot, few-shot, CoT, and advanced techniques
 - [OpenAI Best Practices](https://platform.openai.com/docs/guides/prompt-engineering) - Official guidance from OpenAI
 - [Anthropic Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering) - Claude-specific techniques
 
@@ -1383,3 +1367,10 @@ Confirm your mastery by demonstrating:
 **Your Journey Continues**: The path of the Prompt Alchemist never truly ends. Each new AI interaction is an opportunity to refine your craft, build better templates, and achieve new levels of mastery. Share your knowledge with fellow travelers, contribute to the community's prompt library, and always remember: **Continuous improvement is the ultimate technique.**
 
 🎉 **Congratulations, Master Prompt Alchemist!** Now go forth and craft prompts that unlock the true potential of AI! 🎉
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

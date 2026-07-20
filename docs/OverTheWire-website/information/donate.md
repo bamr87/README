@@ -7,7 +7,9 @@ title: Donate
 Donating
 ========
 
-We gladly accept donations to keep our infrastructure running!<br> We prefer receiving monthly donations via Patreon, since this allows us to give perks to sponsors.<br> However, PayPal donations are also an option.
+We gladly accept donations to keep our infrastructure running!<br>
+We prefer receiving monthly donations via Patreon, since this allows us to give perks to sponsors.<br>
+However, PayPal donations are also an option.
 
 <div class="donations-container">
 

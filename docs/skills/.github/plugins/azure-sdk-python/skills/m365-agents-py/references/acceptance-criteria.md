@@ -4,7 +4,10 @@ title: Microsoft 365 Agents SDK Acceptance Criteria (Python)
 ---
 # Microsoft 365 Agents SDK Acceptance Criteria (Python)
 
-**SDK**: `microsoft-agents-hosting-core`, `microsoft-agents-hosting-aiohttp`, `microsoft-agents-activity`, `microsoft-agents-authentication-msal`, `microsoft-agents-copilotstudio-client` **Repository**: https://github.com/microsoft/Agents-for-python **PyPI Packages**: https://pypi.org/search/?q=microsoft-agents **Purpose**: Skill testing acceptance criteria for validating generated Python code correctness
+**SDK**: `microsoft-agents-hosting-core`, `microsoft-agents-hosting-aiohttp`, `microsoft-agents-activity`, `microsoft-agents-authentication-msal`, `microsoft-agents-copilotstudio-client`
+**Repository**: https://github.com/microsoft/Agents-for-python
+**PyPI Packages**: https://pypi.org/search/?q=microsoft-agents
+**Purpose**: Skill testing acceptance criteria for validating generated Python code correctness
 
 ---
 

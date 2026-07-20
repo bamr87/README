@@ -4,7 +4,10 @@ title: Azure.ResourceManager.Fabric SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.Fabric SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.Fabric` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/fabric/Azure.ResourceManager.Fabric **Package**: https://www.nuget.org/packages/Azure.ResourceManager.Fabric **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.Fabric`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/fabric/Azure.ResourceManager.Fabric
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.Fabric
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

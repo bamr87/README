@@ -5,9 +5,9 @@ categories:
 - Community
 - Frontend
 comments: true
-date: 2026-03-20 00:00:00+00:00
-description: Build a GitHub-style contribution heatmap for your character profile
-  using the 52-week calendar data
+date: '2026-03-20T00:00:00.000Z'
+description: Build a GitHub-style contribution heatmap for your character profile,
+  rendering 52 weeks of activity data with CSS Grid and Jekyll Liquid templates.
 difficulty: 🟡 Medium
 draft: false
 estimated_time: 45-60 minutes
@@ -15,24 +15,17 @@ excerpt: The Timekeeper reveals your patterns — a heatmap of dedication etched
   light.
 fmContentType: quest
 keywords:
-- contribution calendar
-- heatmap
-- CSS grid
-- data visualization
-lastmod: 2026-03-21 15:12:32.256000+00:00
-learning_paths:
-  character_classes:
-  - 🧙 Wizard
-  - 🏹 Ranger
-  primary_paths:
-  - Frontend Developer
-  - Community Contributor
-  skill_trees:
-  - Frontend Development
-  - CSS Layout
+  primary:
+  - contribution calendar
+  - heatmap
+  secondary:
+  - CSS grid
+  - data visualization
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: project-based
 level: '0010'
-permalink: /quests/side-quest-contribution-calendar/
+permalink: /quests/0010/contribution-calendar/
 prerequisites:
   knowledge_requirements:
   - Completed Forge Your Character quest
@@ -45,23 +38,23 @@ primary_technology: css
 quest_arc: 'Act II: Mastering the Craft'
 quest_dependencies:
   recommended_quests:
-  - /quests/side-quest-stats-dashboard/
+  - /quests/0010/stats-dashboard/
   required_quests:
-  - /quests/forge-your-character/
+  - /quests/0001/forge-your-character/
   unlocks_quests: []
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: side_quest
+redirect_from:
+- /quests/0010/side-quests/contribution-calendar/
 rewards:
   badges:
   - 📆 Timekeeper — Contribution calendar displayed on character sheet
   progression_points: 100
-skill_focus:
-- frontend
-snippet: Time is the truest measure of an adventurer's resolve
+skill_focus: frontend
 source_file: side-quest-contribution-calendar.md
 tags:
-- lvl-0010
+- '0010'
 - contributor
 - calendar
 - heatmap
@@ -113,11 +106,14 @@ This quest turns that data into a visual heatmap — similar to GitHub's contrib
 
 Create `_includes/contributor/contribution_calendar.html`:
 
+> The opening and closing Liquid `raw` / `endraw` guard lines inside the code block below are display-only — they stop Jekyll from executing the example so this page can show the Liquid literally. Copy only the markup *between* those two guard lines into the file.
+
 ```html
 {% raw %}
 {% assign calendar = include.calendar %}
 {% if calendar and calendar.size > 0 %}
-<div class="contributor-calendar">
+<div class="contributor-calendar" role="img"
+     aria-label="Contribution calendar heatmap: weekly commit activity over the past year">
   <h4>📆 Contribution History</h4>
   <div class="calendar-grid">
     {% for week in calendar %}
@@ -181,10 +177,10 @@ Add to `assets/css/contributor-profile.css`:
 .calendar-max    { background: var(--cal-max, #216e39); }
 
 /* Class-themed calendar colors */
-.contributor-card--wizard ~ .contributor-calendar .calendar-low    { background: #c4b5fd; }
-.contributor-card--wizard ~ .contributor-calendar .calendar-medium { background: #8b5cf6; }
-.contributor-card--wizard ~ .contributor-calendar .calendar-high   { background: #6d28d9; }
-.contributor-card--wizard ~ .contributor-calendar .calendar-max    { background: #4c1d95; }
+.contributor-card--wizard .contributor-calendar .calendar-low    { background: #c4b5fd; }
+.contributor-card--wizard .contributor-calendar .calendar-medium { background: #8b5cf6; }
+.contributor-card--wizard .contributor-calendar .calendar-high   { background: #6d28d9; }
+.contributor-card--wizard .contributor-calendar .calendar-max    { background: #4c1d95; }
 
 .calendar-legend {
   display: flex;
@@ -221,6 +217,8 @@ Edit `_includes/contributor/character_sheet.html` and add after the stats panel 
 
 ### Step 4: Verify
 
+> **Prerequisite:** This step needs the working Jekyll project and `Gemfile` you set up in the [Forge Your Character](/quests/0001/forge-your-character/) quest. Run this from that project's root — without it, `bundle exec jekyll serve` will fail with a missing bundler/Gemfile error.
+
 ```bash
 bundle exec jekyll serve
 ```
@@ -244,3 +242,10 @@ Once your contribution calendar renders on your profile, you've earned the **Tim
 ---
 
 > *"The passage of time reveals all. Your dedication is now written in light."*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

@@ -4,7 +4,10 @@ title: Azure Event Grid SDK Acceptance Criteria (.NET)
 ---
 # Azure Event Grid SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Messaging.EventGrid` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventgrid/Azure.Messaging.EventGrid **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Messaging.EventGrid`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventgrid/Azure.Messaging.EventGrid
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -1,5 +1,4 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - DevOps
@@ -8,13 +7,12 @@ categories:
 - CI/CD
 - Collaboration
 comments: false
-date: 2026-03-21 00:00:00+00:00
-description: Master advanced Git workflows including semantic versioning, branch strategies,
-  CI/CD automation, and pull request orchestration using real-world examples from
-  an active open-source project.
+date: '2026-03-21T00:00:00.000Z'
+description: 'Master advanced Git workflows: semantic versioning, branch strategies,
+  CI/CD automation, and pull request orchestration with real open-source examples.'
 difficulty: 🔴 Hard
+draft: false
 estimated_time: 4-6 hours
-excerpt: null
 fmContentType: quest
 keywords:
   primary:
@@ -26,22 +24,12 @@ keywords:
   - pull request orchestration
   - CI/CD pipelines
   - conventional commits
-lastmod: 2026-03-21 00:00:00+00:00
-layout: journals
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - Software Development
-  - DevOps Engineering
-  skill_trees:
-  - Version Control
-  - Release Management
-  - CI/CD Automation
+lastmod: '2026-03-21T00:00:00.000Z'
+layout: quest
 learning_style: project-based
 level: '1100'
-permalink: /quests/level-1100-mastering-version-control-workflows/
+mermaid: true
+permalink: /quests/1100/mastering-version-control-workflows/
 prerequisites:
   knowledge_requirements:
   - Solid understanding of branches and pull requests
@@ -59,26 +47,21 @@ primary_technology: git
 quest_arc: Version Control Mastery
 quest_dependencies:
   recommended_quests:
-  - /quests/level-0010-change-logs/
-  - /quests/level-0010-action-triggers/
+  - /quests/0010/change-logs/
+  - /quests/0010/action-triggers/
   required_quests:
-  - /quests/level-0010-branches-and-pull-requests/
-  - /quests/level-0010-commitments-to-clean-commits/
+  - /quests/0010/branches-and-pull-requests/
+  - /quests/0010/commitments-to-clean-commits/
   unlocks_quests:
-  - /quests/level-1110-cicd-pipeline-mastery/
+  - /quests/1100/data-warehousing/
+  - /quests/1100/stream-processing/
+  - /quests/1100/data-quality/
+  - /quests/1100/apache-spark/
+  - /quests/1100/conquer-king-edgar/
+  - /quests/1100/etl-pipeline-design/
+  - /quests/1100/temple-of-templates/
+  - /quests/1101/ml-fundamentals/
 quest_line: Development Mastery
-quest_mapping:
-  biome: Version Control
-  coordinates: '[6, 4]'
-  realm: Development
-  region: Intermediate
-quest_relationships:
-  child_quests: []
-  parallel_quests:
-  - /quests/level-0010-action-triggers/
-  parent_quest: null
-  sequel_quests:
-  - /quests/level-1110-cicd-pipeline-mastery/
 quest_series: Tools Collection
 quest_type: main_quest
 rewards:
@@ -92,17 +75,11 @@ rewards:
   unlocks_features:
   - Access to CI/CD pipeline mastery quests
   - Eligibility for open-source maintainer role
-skill_focus:
-- DevOps
-- Git
-- Version Control
-- CI/CD
-- Collaboration
-snippet: null
+skill_focus: devops
 source_file: mastering-version-control-workflows.md
-sub-title: 'Level 1100 (12) Quest: Main Quest - Advanced Git Mastery'
+sub_title: 'Level 1100 (12) Quest: Main Quest - Advanced Git Mastery'
 tags:
-- lvl-1100
+- '1100'
 - git
 - semantic-versioning
 - github-actions
@@ -159,8 +136,8 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completed [Branches and Pull Requests quest](/quests/level-0010-branches-and-pull-requests/)
-- [ ] Completed [Commitments to Clean Commits quest](/quests/level-0010-commitments-to-clean-commits/)
+- [ ] Completed [Branches and Pull Requests quest](/quests/0010/branches-and-pull-requests/)
+- [ ] Completed [Commitments to Clean Commits quest](/quests/0010/commitments-to-clean-commits/)
 - [ ] Comfortable with `git log`, `git diff`, and `git stash`
 
 ### 🛠️ System Requirements
@@ -462,7 +439,7 @@ You've just finished a feature that adds dark mode to the site. Write a complete
 
 ## 🧙‍♂️ Chapter 4: Release Orchestration — The Grand Ritual
 
-*The most powerful spell in the version control codex is the **release**. It transforms a stream of commits into a versioned artifact that the world can depend on.*
+*The final spell in the version control codex is the **release**. It transforms a stream of commits into a versioned artifact that the world can depend on.*
 
 ### ⚔️ The Release Lifecycle
 
@@ -891,3 +868,10 @@ Apply everything you've learned to the actual IT-Journey repository:
 - [Stack Overflow — Git tag](https://stackoverflow.com/questions/tagged/git) — Q&A archive
 
 *Go forth, architect. The branches await your command, the versions await your decree, and the changelog shall record your legend for all time.* ⚔️
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Mastering Branches and Pull Requests for Developers]] · [[Commitments to clean commits]] **Recommended:** [[Change Logs]] · [[Understanding Action Triggers in Depth]] **Sequel quests:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Parallel quests:** [[Understanding Action Triggers in Depth]] **Related quests:** [[Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] · [[Stream Processing: Real-Time Data with Apache Kafka & Flink]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] · [[The Siege of King EDGAR: Storming the SEC Data Castle]] · [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle]] · [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] · [[The Temple of Templates: Binary Abstractions and Reusable Realms]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

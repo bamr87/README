@@ -2,12 +2,12 @@
 author: IT-Journey Team
 categories:
 - about
-date: 2026-03-21 00:00:00+00:00
+date: '2026-03-21T00:00:00.000Z'
 description: A directory of all IT-Journey contributors — human and AI alike — with
   RPG-style character profiles, stats, and achievements.
 draft: false
 excerpt: Meet the adventurers who build and maintain IT-Journey
-lastmod: 2026-03-21 00:00:00+00:00
+lastmod: '2026-03-21T00:00:00.000Z'
 permalink: /about/contributors/
 source_file: index.md
 tags:
@@ -65,9 +65,9 @@ Welcome to the IT-Journey Contributor Guild Hall. Every contributor earns an RPG
     {% else %}{% assign tier_icon = "🌱" %}
   {% endcase %}
 
-<div class="contributor-card contributor-card--{{ p.class | downcase | default: 'warrior' }}" style="margin-bottom: 1.5rem; {% if p.banner_color %}--contributor-accent: {{ p.banner_color }};{% endif %}">
+<div class="contributor-card contributor-card--{{ p.class | downcase | default: 'warrior' }} contributor-card--compact" style="{% if p.banner_color %}--contributor-accent: {{ p.banner_color }};{% endif %}">
   <div class="contributor-card__banner" style="height: 6px;"></div>
-  <div class="contributor-card__body" style="padding: 1rem;">
+  <div class="contributor-card__body" style="padding: 1rem; margin-top: 0;">
     <div style="display: flex; align-items: center; gap: 1rem;">
       <div class="contributor-card__avatar-wrapper" style="flex-shrink: 0;">
         <img class="contributor-card__avatar" src="{{ avatar_url }}" alt="{{ p.display_name }}" style="width: 64px; height: 64px;">
@@ -87,7 +87,7 @@ Welcome to the IT-Journey Contributor Guild Hall. Every contributor earns an RPG
           💻 {{ data.stats.total_commits | default: 0 }} commits &middot;
           🔀 {{ data.stats.total_prs_merged | default: 0 }} PRs &middot;
           🏰 {{ data.stats.total_quests_authored | default: 0 }} quests &middot;
-          📝 {{ data.stats.total_posts_authored | default: 0 }} posts
+          ⭐ {{ data.stats.xp | default: 0 }} XP
         </p>
       </div>
     </div>
@@ -123,9 +123,9 @@ These AI agents assist in building, reviewing, and maintaining IT-Journey conten
     {% else %}{% assign ai_class_icon = "🤖" %}
   {% endcase %}
 
-<div class="contributor-card contributor-card--{{ p.class | downcase | default: 'bard' }}" style="margin-bottom: 1.5rem; {% if p.banner_color %}--contributor-accent: {{ p.banner_color }};{% endif %}">
+<div class="contributor-card contributor-card--{{ p.class | downcase | default: 'bard' }} contributor-card--compact" style="{% if p.banner_color %}--contributor-accent: {{ p.banner_color }};{% endif %}">
   <div class="contributor-card__banner" style="height: 6px;"></div>
-  <div class="contributor-card__body" style="padding: 1rem;">
+  <div class="contributor-card__body" style="padding: 1rem; margin-top: 0;">
     <div style="display: flex; align-items: center; gap: 1rem;">
       <div class="contributor-card__avatar-wrapper" style="flex-shrink: 0;">
         <img class="contributor-card__avatar" src="{{ ai_avatar }}" alt="{{ p.display_name }}" style="width: 64px; height: 64px;">
@@ -162,7 +162,7 @@ Every contributor gets a **Character Profile** — an RPG-style character sheet 
 3. Choose your **class**: Wizard, Warrior, Ranger, Rogue, Healer, Bard, or Paladin
 4. Submit a PR — the CI pipeline will auto-generate your stats on merge
 
-See the [Forge Your Character quest](/quests/forge-your-character/) for the full walkthrough.
+See the [Forge Your Character quest](/quests/0001/forge-your-character/) for the full walkthrough.
 
 ---
 

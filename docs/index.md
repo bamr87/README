@@ -7,33 +7,35 @@ generated: true
 
 # bamr87 documentation
 
-Aggregated, continuously refreshed documentation for every project in the [bamr87](https://github.com/bamr87) fleet. This page is generated from the fleet registry by the README context engine.
+Aggregated, continuously refreshed documentation for every project in
+the [bamr87](https://github.com/bamr87) fleet. This page is generated
+from the fleet registry by the README context engine.
 
 ## Documentation by project
 
 ### [scripts directory](scripts/README.md)
 
-Automation scripts for forking, linting, stashing, and project management across the fleet. *(14 documents)*
+Automation scripts for forking, linting, stashing, and project management across the fleet. *(15 documents)*
 
 ### [Agent Skills](skills/README.md)
 
 Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents)*
 
-### [Parody News Generator](barodybroject/README.md)
+### [Barodybroject](barodybroject/README.md)
 
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(294 documents)*
+Full-stack application platform with infrastructure, testing, and deployment tooling. *(303 documents)*
 
-### [⚔️ Bashcrawl: The Terminal Adventure Game](bashcrawl/README.md)
+### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(36 documents)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(40 documents)*
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(435 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(439 documents)*
 
 ### [IT-Journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(540 documents)*
+Educational IT platform with quests, blog posts, and technical documentation. *(883 documents)*
 
 ### [Wargames](OverTheWire-website/README.md)
 

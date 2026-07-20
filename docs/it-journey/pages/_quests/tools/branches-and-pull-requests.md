@@ -1,5 +1,4 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - Development
@@ -8,36 +7,32 @@ categories:
 - Version Control
 - Web Development
 comments: false
-date: 2025-04-18 13:43:43+00:00
-description: Learn how branches and pull requests streamline collaboration and enhance
-  code quality in software development.
+date: '2025-04-18T13:43:43.000Z'
+description: Master Git branch types and craft clear, reviewable pull requests with
+  templates, test plans, and review etiquette to keep your repo pristine.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-60 minutes
-excerpt: null
 fmContentType: quest
 keywords:
-- Collaboration
-- Git
-- GitHub
-- Pull Requests
-- Version Control
-lastmod: 2025-04-18 19:24:06.552000+00:00
+  primary:
+  - Collaboration
+  - Git
+  secondary:
+  - GitHub
+  - Pull Requests
+  - Version Control
+lastmod: '2025-04-18T19:24:06.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-branches-and-pull-requests/
+permalink: /quests/0010/branches-and-pull-requests/
 preview: images/previews/mastering-branches-and-pull-requests-for-developer.png
 primary_technology: Collaboration
 quest_series: Tools Collection
 quest_type: main_quest
-skill_focus:
-- Development
-- Git
-- Programming
-- Version Control
-- Web Development
-snippet: null
+skill_focus: devops
 source_file: branches-and-pull-requests.md
-sub-title: null
 tags:
 - Collaboration
 - Git
@@ -92,7 +87,7 @@ Think of a PR like a scroll you send to the council. It must be clear, complete,
 
 ### 🧪 Sample PR Template:
 
-```
+```markdown
 ## Description
 Added Frog-to-English translation in login wizard.
 
@@ -123,4 +118,10 @@ Resolves issue #456
 * * * *
 
 So next time you open a PR, channel your inner mage. Make it clear. Make it tested. And always, always remember: the main branch is sacred ground---don't walk on it with muddy boots.
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
 

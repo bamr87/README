@@ -1,12 +1,11 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - Quests
 - Web Deployment
 - Easy
 comments: true
-date: 2025-11-15 16:34:42+00:00
+date: '2025-11-15T16:34:42.000Z'
 description: Master the art of deploying static websites using GitHub Pages, transforming
   your code into live web experiences with no server required.
 difficulty: 🟢 Easy
@@ -16,16 +15,20 @@ excerpt: Transform your code into a live website using GitHub Pages - the free h
   solution for developers.
 fmContentType: quest
 keywords:
-- lvl-001
-- github-pages
-- main
-- web-deployment
-- hands-on
-- gamified-learning
-lastmod: 2025-11-15 04:27:16.771000+00:00
+  primary:
+  - 1
+  - github-pages
+  - main
+  secondary:
+  - web-deployment
+  - hands-on
+  - gamified-learning
+lastmod: '2025-11-15T04:27:16.000Z'
+layout: quest
 learning_style: hands-on
 level: '0001'
-permalink: /quests/level-001-github-pages-portal/
+mermaid: true
+permalink: /quests/0001/github-pages-portal/
 prerequisites:
 - GitHub account (free)
 - Basic Git knowledge (clone, commit, push)
@@ -34,40 +37,22 @@ preview: images/previews/the-github-pages-portal-forging-your-digital-realm.png
 primary_technology: github-pages
 quest_arc: Deployment
 quest_dependencies:
-  recommended:
-  - Basic Git knowledge
-  - GitHub account
-  required: []
+  recommended_quests: []
+  required_quests: []
+  unlocks_quests: []
 quest_line: Web Development
-quest_mapping:
-  binary_level: '001'
-  decimal_level: 1
-  skill_tree: Web Development
-quest_relationships:
-  related:
-  - 'Level 001: HTML Basics'
-  - 'Level 001: CSS Fundamentals'
-  unlocks:
-  - 'Level 010: Jekyll Mastery'
-  - 'Level 011: Static Site Generators'
 quest_series: Web Development Fundamentals
 quest_type: main_quest
-related_quests:
-- 'Level 001: HTML Basics'
-- 'Level 001: CSS Fundamentals'
-- 'Level 010: Jekyll Mastery'
 rewards:
 - GitHub Pages deployment badge
 - Live website portfolio piece
 - Understanding of static site hosting
 - Foundation for Jekyll and other SSGs
-skill_focus:
-- web-deployment
-snippet: 'From repository to website: Deploy with GitHub Pages!'
+skill_focus: devops
 source_file: github-pages-portal.md
 sub_title: 'Level 001 (1) Quest: Main - GitHub Pages'
 tags:
-- lvl-001
+- '1'
 - github-pages
 - main
 - web-deployment
@@ -362,7 +347,7 @@ git push origin main
 
 ## 🧙‍♂️ Chapter 3: Realm Enhancement - Adding Jekyll Magic
 
-*To truly master the portal, learn to wield Jekyll - the powerful static site generator that transforms markdown into magnificent websites!*
+*To truly master the portal, learn to wield Jekyll - the static site generator that transforms Markdown into magnificent websites!*
 
 ### ⚔️ Skills You'll Forge in This Chapter
 - Jekyll installation and setup
@@ -444,7 +429,7 @@ git push origin main
    ### Project 1: GitHub Pages Mastery
    - **Status**: ✅ Completed
    - **Technologies**: HTML, CSS, Jekyll
-   - **Live Demo**: [View Site]({{ site.url }})
+   - **Live Demo**: [View Site]({% raw %}{{ site.url }}{% endraw %})
    
    ### Project 2: Portfolio Foundation
    - **Status**: 🚧 In Progress
@@ -654,7 +639,7 @@ Based on your performance in this quest:
 
 ## 📓 AI Collaboration Log
 
-*This quest was developed with AI assistance to ensure comprehensive coverage of GitHub Pages deployment, multi-platform compatibility, and educational best practices. AI helped generate code examples, validate technical accuracy, and enhance the fantasy narrative while maintaining educational integrity.*
+*This quest was developed with AI assistance to cover GitHub Pages deployment, multi-platform compatibility, and educational best practices. AI helped generate code examples, validate technical accuracy, and enhance the fantasy narrative while maintaining educational integrity.*
 
 *Human oversight ensured:*
 - Technical accuracy of GitHub Pages workflows
@@ -667,9 +652,9 @@ Based on your performance in this quest:
 
 ### Key Takeaways from This Quest
 - **GitHub Pages democratizes web hosting** - No server management or hosting costs
-- **Static sites are powerful** - Fast, secure, and SEO-friendly by default
+- **Static sites are fast, secure, and SEO-friendly by default** - No server-side processing to slow them down or expose attack surface
 - **Git workflow integration** - Deployment becomes part of your development process
-- **Jekyll enhances productivity** - Markdown content with powerful templating
+- **Jekyll enhances productivity** - Write content in Markdown with reusable layouts and Liquid templating
 - **Custom domains add professionalism** - Transform GitHub URLs into branded sites
 
 ### Modern Web Development Context
@@ -733,5 +718,12 @@ GitHub Pages represents the evolution of web hosting from complex server managem
 ---
 
 **Quest Completed**: Level 001 - The GitHub Pages Portal  
-**Date Completed**: {{ "now" | date: "%Y-%m-%d" }}  
+**Date Completed**: {% raw %}{{ "now" | date: "%Y-%m-%d" }}{% endraw %}  
 **Next Recommended Quest**: Level 010: Jekyll Mastery
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

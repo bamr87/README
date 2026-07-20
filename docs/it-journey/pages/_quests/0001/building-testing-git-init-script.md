@@ -4,42 +4,62 @@ categories:
 - Quests
 - Development
 comments: true
-date: 2025-11-13 23:38:22+00:00
+date: '2025-11-13T23:38:22.000Z'
 description: Hands-on quest to build, extend, and test `git_init.sh` — an interactive
   and headless repo initializer with programmatic scaffolding.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 45-75 minutes
 excerpt: Add features, scaffolding, and tests to `git_init.sh` so it is safe and testable
   in both interactive and headless modes.
 fmContentType: quest
 keywords:
-- shell-scripting
-- testing
-- automation
-- bash
-lastmod: 2025-11-13 10:30:00+00:00
+  primary:
+  - shell-scripting
+  - testing
+  secondary:
+  - automation
+  - bash
+lastmod: '2025-11-13T10:30:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0001'
-permalink: /quests/level-0001-git-init-testing/
+permalink: /quests/0001/git-init-testing/
+prerequisites:
+  knowledge_requirements: []
+  system_requirements: []
 preview: images/previews/building-testing-the-git-init-script-headless-inte.png
 primary_technology: shell-scripting
+quest_arc: Tooling fundamentals
+quest_dependencies:
+  recommended_quests: []
+  required_quests: []
+  unlocks_quests: []
+quest_line: Git Mastery Series
 quest_series: Level 0001 Quest Line
 quest_type: main_quest
-skill_focus:
-- Quests
-- Development
+redirect_from:
+- /quests/0001/building-testing-git-init-script/
+rewards:
+  badges: []
+  progression_points: 0
+  skills_unlocked: []
+skill_focus: fullstack
 source_file: building-testing-git-init-script.md
-sub-title: 'Level 0001 (1) Quest: Shell Script Unit & Integration Testing'
+sub_title: 'Level 0001 (1) Quest: Shell Script Unit & Integration Testing'
 tags:
 - shell-scripting
 - testing
 - automation
 - bash
 title: install bats-core
+validation_criteria:
+  completion_requirements: []
+  skill_demonstrations: []
 ---
 ## The Challenge: Safe automation without surprises
 
-You have a powerful repository initializer — `scripts/git_init.sh` — that supports interactive prompts and programmatic `--headless` invocations. This quest will guide you through validating the script's behavior, adding tests, and ensuring it behaves well in CI.
+You have a repository initializer — `scripts/git_init.sh` — that supports interactive prompts and programmatic `--headless` invocations. This quest will guide you through validating the script's behavior, adding tests, and ensuring it behaves well in CI.
 
 Why this matters:
 - Scripts are often used in automation and CI; they must behave predictably and be testable.
@@ -107,6 +127,16 @@ bash scripts/git_init.sh --headless -n test-quest-sample --no-push --gitignore p
 
 ```bash
 # install bats-core
+
+## 🎯 Quest Objectives
+
+By the end of this quest, you will be able to:
+
+- [ ] Understand the core concepts introduced in this quest
+- [ ] Complete the hands-on exercises and verify the results
+- [ ] Apply what you learned to a follow-up scenario of your own design
+
+> *Note: objectives auto-seeded during framework alignment — authors should refine these to reflect this quest's specific skills.*
 brew install bats-core
 bats tests/bats
 ```
@@ -137,3 +167,10 @@ shellcheck scripts/git_init.sh
 Complete this quest to prove you can safely add features to a script and make it testable in automation.
 
 Good luck! 🛠️
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

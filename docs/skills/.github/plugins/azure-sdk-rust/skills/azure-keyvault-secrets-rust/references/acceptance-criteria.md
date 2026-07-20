@@ -4,7 +4,9 @@ title: Azure Key Vault Secrets SDK for Rust Acceptance Criteria
 ---
 # Azure Key Vault Secrets SDK for Rust Acceptance Criteria
 
-**Crate**: `azure_security_keyvault_secrets` **Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/keyvault/azure_security_keyvault_secrets **Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
+**Crate**: `azure_security_keyvault_secrets`
+**Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/keyvault/azure_security_keyvault_secrets
+**Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
 
 ---
 

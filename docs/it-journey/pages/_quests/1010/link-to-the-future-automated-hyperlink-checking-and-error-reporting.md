@@ -1,58 +1,54 @@
 ---
-attachments: ''
 author: Quest Master DevOps
 categories:
 - Quests
 - DevOps-Automation
 - Quality-Assurance
 comments: true
-date: 2025-08-12 22:51:06+00:00
+date: '2025-08-12T22:51:06.000Z'
 description: Master the computational arts of automated link testing and AI-powered
   analysis to protect your digital realm from broken hyperlink corruption
 difficulty: 🟡 Medium
+draft: false
 estimated_time: 120-180 minutes
 excerpt: Build an intelligent hyperlink guardian that automatically tests, analyzes,
   and reports on the health of your digital realm's connections
 fmContentType: quest
 keywords:
-- lvl-1010
-- github-actions
-- automated-testing
-- ai-analysis
-- devops-automation
-- link-validation
-lastmod: 2025-08-16 04:06:22.859000+00:00
+  primary:
+  - '1010'
+  - github-actions
+  - automated-testing
+  secondary:
+  - ai-analysis
+  - devops-automation
+  - link-validation
+lastmod: '2025-08-16T04:06:22.000Z'
+layout: quest
 learning_style: hands-on
 level: '1010'
-permalink: /quests/level-1010-automated-hyperlink-guardian/
+permalink: /quests/1010/automated-hyperlink-guardian/
 prerequisites:
 - 'Level 0100 (4): Git and GitHub fundamentals'
 - 'Level 0101 (5): Basic GitHub Actions workflow experience'
 - 'Level 1001 (9): Understanding of Jekyll site structure'
 - Familiarity with YAML configuration files
 preview: images/previews/link-to-the-future-automated-hyperlink-guardian-qu.png
-primary_technology: lvl-1010
+primary_technology: lychee
 quest_series: DevOps Automation Mastery Path
 quest_type: main_quest
-related_quests:
-- 'Level 1001 (9): Jekyll Site Deployment Automation'
-- 'Level 1011 (11): Advanced GitHub Actions Patterns'
-- 'Level 1100 (12): AI-Powered Code Review Systems'
+redirect_from:
+- /quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting/
 rewards:
 - 🏆 Hyperlink Guardian Badge - Master of Automated Link Protection
 - ⚡ CI/CD Automation Mastery - Advanced pipeline orchestration skills
 - 🛠️ AI Integration Proficiency - Intelligent analysis and reporting capabilities
 - 🎯 Site Quality Assurance Excellence - Proactive issue detection and resolution
-skill_focus:
-- Quests
-- DevOps-Automation
-- Quality-Assurance
-snippet: Even the most magnificent digital fortress is only as strong as its weakest
-  link
+skill_focus: devops
 source_file: link-to-the-future-automated-hyperlink-checking-and-error-reporting.md
-sub-title: 'Level 1010 (10) Quest: Advanced CI/CD Automation and AI Integration'
+sub_title: 'Level 1010 (10) Quest: Advanced CI/CD Automation and AI Integration'
 tags:
-- lvl-1010
+- '1010'
 - github-actions
 - automated-testing
 - ai-analysis
@@ -65,7 +61,7 @@ validation_criteria:
 - AI analysis component that provides meaningful insights
 - Automated issue creation with detailed reports and recommendations
 ---
-*In the vast digital realm of Jekyll-powered GitHub Pages, where content flows like rivers of markdown and links connect distant territories of knowledge, a silent corruption threatens the very foundation of your domain. Broken hyperlinks - those severed pathways between digital realms - can transform a magnificent knowledge fortress into a maze of frustration for visiting adventurers.*
+*In the vast digital realm of Jekyll-powered GitHub Pages, where content flows like rivers of Markdown and links connect distant territories of knowledge, a silent corruption threatens the very foundation of your domain. Broken hyperlinks - those severed pathways between digital realms - can transform a magnificent knowledge fortress into a maze of frustration for visiting adventurers.*
 
 *The ancient DevOps masters speak of a legendary guardian system: an intelligent sentinel that tirelessly patrols every corner of your digital domain, testing each hyperlink's integrity and summoning AI-powered analysis to root out the causes of corruption. This automated guardian not only detects the broken pathways but uses artificial intelligence to understand why they failed and how to prevent future breaks.*
 
@@ -94,7 +90,7 @@ By the time you complete this epic automation journey, you will have mastered:
 
 ### Mastery Indicators
 You'll know you've truly mastered this quest when you can:
-- [ ] Explain how automated testing fits into a comprehensive DevOps strategy
+- [ ] Explain how automated testing fits into a full CI/CD DevOps strategy
 - [ ] Customize the guardian system for different types of Jekyll sites and requirements
 - [ ] Troubleshoot and optimize the workflow for performance and reliability
 - [ ] Extend the AI analysis with additional intelligence and reporting capabilities
@@ -139,13 +135,13 @@ npm install -g markdown-link-check
 
 ### ⚔️ Skills You'll Forge in This Chapter
 - Understanding different types of links in Jekyll sites (internal, external, anchor links)
-- Building comprehensive link extraction algorithms
+- Building link extraction algorithms that cover Markdown, HTML, and reference-style links
 - Handling edge cases and complex URL patterns
 - Creating configurable and maintainable scanning logic
 
 ### 🏗️ Building Your Link Detection Foundation
 
-The first enchantment we'll craft is a powerful script that can discover every hyperlink hidden throughout your Jekyll domain. This isn't merely about finding obvious markdown links - we need to detect links in HTML, frontmatter, data files, and even dynamically generated content.
+The first enchantment we'll craft is a Bash script that can discover every hyperlink hidden throughout your Jekyll domain. This isn't merely about finding obvious Markdown links - we need to detect links in HTML, frontmatter, data files, and even dynamically generated content.
 
 ```bash
 #!/bin/bash
@@ -396,7 +392,7 @@ fi
 - [ ] How does parallel processing improve the efficiency of link testing?
 
 ### ⚡ Quick Wins and Checkpoints
-*You've successfully created a powerful link detection spell! Test it locally with a small subset of your site before deploying the full automation.*
+*You've successfully created a link detection spell that scans Markdown and HTML, normalizes URLs, and tests them in parallel! Test it locally with a small subset of your site before deploying the full automation.*
 
 ## 🧙‍♂️ Chapter 2: GitHub Actions Automation Orchestration
 
@@ -408,7 +404,7 @@ fi
 
 ### 🏗️ Building Your Automated Guardian Workflow
 
-Now we'll weave the automation spell that transforms your link testing script into a tireless guardian that watches over your digital realm. This GitHub Actions workflow will run daily, execute comprehensive scans, and prepare data for AI analysis.
+Now we'll weave the automation spell that transforms your link testing script into a tireless guardian that watches over your digital realm. This GitHub Actions workflow will run daily, scan every link across the site, and prepare data for AI analysis.
 
 ```yaml
 # .github/workflows/hyperlink-guardian.yml
@@ -427,7 +423,7 @@ on:
         type: boolean
 
 env:
-  SITE_URL: ${{ github.pages.url }}
+  SITE_URL: ${% raw %}{{ github.pages.url }}{% endraw %}
   OUTPUT_DIR: './link-check-results'
 
 jobs:
@@ -550,9 +546,9 @@ jobs:
     - name: 📁 Upload Scan Results as Artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: link-health-results-${{ github.run_number }}
+        name: link-health-results-${% raw %}{{ github.run_number }}{% endraw %}
         path: |
-          ${{ env.OUTPUT_DIR }}/
+          ${% raw %}{{ env.OUTPUT_DIR }}{% endraw %}/
         retention-days: 30
     
     - name: 🤖 Prepare AI Analysis Data
@@ -609,7 +605,7 @@ jobs:
         ls -la "$ANALYSIS_DIR"
     
     outputs:
-      broken_count: ${{ steps.prepare-analysis.outputs.broken_count }}
+      broken_count: ${% raw %}{{ steps.prepare-analysis.outputs.broken_count }}{% endraw %}
 
   ai-analysis:
     name: 🧠 AI-Powered Link Analysis
@@ -627,13 +623,13 @@ jobs:
     - name: 📥 Download Scan Results
       uses: actions/download-artifact@v4
       with:
-        name: link-health-results-${{ github.run_number }}
+        name: link-health-results-${% raw %}{{ github.run_number }}{% endraw %}
         path: ./analysis-input
     
     - name: 🧠 Execute AI Analysis
       id: ai-analysis
       env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        OPENAI_API_KEY: ${% raw %}{{ secrets.OPENAI_API_KEY }}{% endraw %}
       run: |
         # Create AI analysis script
         cat > ai_analyzer.py << 'PYTHON_EOF'
@@ -750,9 +746,9 @@ jobs:
         fi
     
     - name: 📋 Create GitHub Issue with Analysis
-      uses: actions/github-script@v7
+      uses: actions/GitHub-script@v7
       env:
-        ANALYSIS_FILE: ${{ steps.ai-analysis.outputs.analysis_file }}
+        ANALYSIS_FILE: ${% raw %}{{ steps.ai-analysis.outputs.analysis_file }}{% endraw %}
       with:
         script: |
           const fs = require('fs');
@@ -897,7 +893,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: 🗑️ Close Old Link Health Issues
-      uses: actions/github-script@v7
+      uses: actions/GitHub-script@v7
       with:
         script: |
           // Find and close old automated link health reports
@@ -1106,7 +1102,7 @@ class HyperlinkIntelligenceEngine:
         return patterns
     
     def generate_ai_analysis(self, scan_data: Dict) -> Dict:
-        """Generate comprehensive AI analysis of link health"""
+        """Generate AI analysis of link health across all broken-link categories"""
         
         # Prepare data for AI analysis
         broken_links = scan_data['summary'].get('broken_link_details', [])
@@ -1210,7 +1206,7 @@ class HyperlinkIntelligenceEngine:
                 # Try to parse as JSON
                 analysis_result = json.loads(ai_response)
             except json.JSONDecodeError:
-                # Fallback: extract JSON from response if it's wrapped in markdown
+                # Fallback: extract JSON from response if it's wrapped in Markdown
                 json_match = re.search(r'```json\s*(.*?)\s*```', ai_response, re.DOTALL)
                 if json_match:
                     analysis_result = json.loads(json_match.group(1))
@@ -1245,7 +1241,7 @@ class HyperlinkIntelligenceEngine:
             }
     
     def generate_actionable_report(self, analysis_result: Dict, scan_data: Dict) -> str:
-        """Generate a comprehensive, actionable report for GitHub issues"""
+        """Generate a detailed, actionable report for GitHub issues"""
         
         summary = scan_data['summary']
         repo_context = scan_data['repository_context']
@@ -1593,3 +1589,10 @@ if __name__ == "__main__":
 *With this quest complete, you now possess the knowledge to create sophisticated DevOps automation that leverages AI for intelligent analysis and reporting. Your guardian will serve as a template for building other automated quality assurance systems that enhance the reliability and user experience of digital platforms.*
 
 *May your links remain strong, your automation resilient, and your intelligence artificial yet wise! 🔗✨*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 1010 - Automation & Testing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

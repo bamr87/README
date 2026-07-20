@@ -4,7 +4,10 @@ title: Azure Key Vault Keys SDK Acceptance Criteria (.NET)
 ---
 # Azure Key Vault Keys SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Security.KeyVault.Keys` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/keyvault/Azure.Security.KeyVault.Keys **NuGet Package**: https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/ **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Security.KeyVault.Keys`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/keyvault/Azure.Security.KeyVault.Keys
+**NuGet Package**: https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

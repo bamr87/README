@@ -4,7 +4,10 @@ title: Agent Framework Azure AI Python Acceptance Criteria
 ---
 # Agent Framework Azure AI Python Acceptance Criteria
 
-**SDK**: `agent-framework-azure-ai` **Repository**: https://github.com/microsoft/agent-framework **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `agent-framework-azure-ai`
+**Repository**: https://github.com/microsoft/agent-framework
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

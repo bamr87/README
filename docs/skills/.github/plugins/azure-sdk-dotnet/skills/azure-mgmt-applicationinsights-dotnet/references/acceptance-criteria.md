@@ -4,7 +4,10 @@ title: Azure.ResourceManager.ApplicationInsights SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.ApplicationInsights SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.ApplicationInsights` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/applicationinsights/Azure.ResourceManager.ApplicationInsights **Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApplicationInsights **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.ApplicationInsights`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/applicationinsights/Azure.ResourceManager.ApplicationInsights
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApplicationInsights
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

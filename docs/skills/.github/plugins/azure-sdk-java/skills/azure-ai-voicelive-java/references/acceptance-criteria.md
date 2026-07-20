@@ -4,7 +4,9 @@ title: Azure AI VoiceLive SDK for Java Acceptance Criteria
 ---
 # Azure AI VoiceLive SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-voicelive` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/ai/azure-ai-voicelive **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-voicelive`
+**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/ai/azure-ai-voicelive
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

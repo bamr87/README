@@ -1,24 +1,21 @@
 ---
-category: content-creation
 date: 2025-11-22 16:10:21+00:00
-description: Expand content with detailed explanations, multi-platform code examples,
+description: Expand an article outline with multi-platform code examples, explanations,
   and hands-on exercises
-inputs:
-- outline
-- target_audience
-name: Expand Content
-outputs:
-- expanded_content
-- code_examples
+lastmod: 2026-05-18 12:00:00+00:00
+mode: agent
 source_file: expand-content.prompt.md
 title: Expand Content
-version: 1.0.0
 ---
 # Expand Content
 
 Expand the outline into full content with technical depth and practical examples.
 
-**Outline**: {{ inputs.outline }} **Target Audience**: {{ inputs.target_audience }}
+**Outline**: {{ inputs.outline }} **Target Audience**: {{ inputs.target_audience }} **Section guide**: {{ inputs.section_guide }} (optional — defaults to the post's folder)
+
+## Brand context
+
+Load the `brand-voice` skill for the resolved section (the `section_guide` input, or the post's `pages/_posts/<category>/` folder). Expand in that voice profile: honor the formality/emoji band, avoid the discouraged terms, use canonical spellings, and keep the section's required structure (e.g. a **Verify** step for devops/system-administration).
 
 ## Requirements
 
@@ -27,6 +24,7 @@ Expand the outline into full content with technical depth and practical examples
 3. **Hands-On Exercises**: Include step-by-step exercises readers can follow
 4. **Troubleshooting**: Add common issues and solutions
 5. **Best Practices**: Include security, performance, and production considerations
+6. **On-brand voice**: Match the resolved section profile (see `_data/brand/voice.md`)
 
 ## Output Format
 

@@ -7,25 +7,25 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 93001959d2865ba3
+source_fingerprint: 0e0095ae07a6ed73
 tags:
+  - agentic-ai
   - automation
-  - data-engineering
+  - ci-cd
   - devops
-  - docker
-  - documentation
   - education
-  - frontend
+  - fail
   - gamified-learning
-  - git
+  - gh-600
   - github-actions
   - hands-on
   - jekyll
+  - main_quest
 ---
 
 # IT-Journey
 
-> Educational IT platform with quests, blog posts, and technical documentation. Welcome to the IT-Journey repository - your guide through the ever-evolving landscape of information technology. According to the GitHub Education Community, open-source learning platforms like IT-Journey have helped over 100 million developers worldwide improve their skills since GitHub's founding in 2008. This repos….
+> Educational IT platform with quests, blog posts, and technical documentation. Welcome to IT-Journey, a gamified, open-source platform for learning IT and software development through quests — progressive, hands-on adventures that take you from zer0 to her0. The site is built around a single gamified learning path, supported by reference docs, quick-start guides, and curated notes. The repositor….
 
 | | |
 |---|---|
@@ -33,38 +33,39 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 540 docs |
+| Corpus | `docs/it-journey` - 883 docs |
 | External | no |
 
 ## Signals
 
+- has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~747,116 words across 540 indexed documents
-- code samples in: bash, plaintext, markdown, yaml, mermaid, powershell, python, html
+- ~1,409,070 words across 883 indexed documents
+- code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Structure
 
-- `pages/` (401 docs)
-- `.github/` (32 docs)
-- `docs/` (24 docs)
-- `test/` (21 docs)
-- `TODO/` (20 docs)
-- `scripts/` (11 docs)
-- `.crush/` (6 docs)
-- `.frontmatter/` (5 docs)
+- `pages/` (578 docs)
+- `test/` (94 docs)
+- `.github/` (43 docs)
+- `docs/` (31 docs)
+- `.claude/` (28 docs)
+- `.cms/` (27 docs)
+- `TODO/` (25 docs)
+- `scripts/` (12 docs)
 
 ## Key documents
 
 - [`README.md`](../../docs/it-journey/README.md)
+- [`CLAUDE.md`](../../docs/it-journey/CLAUDE.md)
 - [`AGENTS.md`](../../docs/it-journey/AGENTS.md)
 - [`CONTRIBUTING.md`](../../docs/it-journey/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/it-journey/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/it-journey/SECURITY.md)
 - [`CODE_OF_CONDUCT.md`](../../docs/it-journey/CODE_OF_CONDUCT.md)
-- [`.github/instructions/quest.instructions.md`](../../docs/it-journey/.github/instructions/quest.instructions.md)
 - [`.github/copilot-instructions.md`](../../docs/it-journey/.github/copilot-instructions.md)
 
 ## Query this context

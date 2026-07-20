@@ -4,7 +4,9 @@ title: Azure Event Hubs SDK for Rust Acceptance Criteria
 ---
 # Azure Event Hubs SDK for Rust Acceptance Criteria
 
-**Crate**: `azure_messaging_eventhubs` **Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/eventhubs/azure_messaging_eventhubs **Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
+**Crate**: `azure_messaging_eventhubs`
+**Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/eventhubs/azure_messaging_eventhubs
+**Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
 
 ---
 

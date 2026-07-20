@@ -1,0 +1,202 @@
+---
+author: IT-Journey Team
+categories:
+- Quests
+- Init-World
+- Cloud
+- Development-Environment
+date: '2026-01-14T22:23:32.000Z'
+description: 'Claim your first foothold in the Sky Realm: create a secured cloud account
+  with MFA, wield a cloud CLI, provision a resource, then banish it to avoid costs.'
+difficulty: ⚔️ Epic
+draft: false
+estimated_time: 120-180 minutes
+fmContentType: quest
+keywords:
+  primary:
+  - cloud
+  - account-setup
+  - cli
+  secondary:
+  - gcp
+  - aws
+  - azure
+lastmod: 2026-01-14
+layout: quest
+learning_style: hands-on
+level: '0000'
+permalink: /quests/0000/hello-cloud/
+prerequisites:
+  knowledge_requirements:
+  - Basic command-line usage
+  - Understanding of accounts and billing dashboards
+  skill_level_indicators:
+  - Comfortable installing CLI tools and following web-based setup guides
+  system_requirements:
+  - Stable internet connection
+  - Email and phone number for cloud signup
+  - Terminal access (bash or PowerShell)
+primary_technology: cloud
+quest_arc: Platform Mastery Arc
+quest_dependencies:
+  recommended_quests:
+  - /quests/0000/os-selection/
+  - /quests/0000/hello-windows/
+  - /quests/0000/hello-macos/
+  - /quests/0000/linux-fundamentals/
+  required_quests:
+  - /quests/0000/it-fundamentals/
+  unlocks_quests: []
+quest_line: Foundation Path
+quest_series: Init World - Platform Mastery
+quest_type: main_quest
+rewards:
+  badges:
+  - 🏆 Cloud Explorer Badge
+  - ⚡ Sky Realm Entry Achievement
+  progression_points: 100
+  skills_unlocked:
+  - 🛠️ Cloud CLI Proficiency
+  - 🎯 Resource Provisioning Basics
+  unlocks_features:
+  - Access to advanced cloud quests
+  - Foundation for infrastructure-as-code learning
+skill_focus: security
+source_file: hello-cloud.md
+tags:
+- cloud
+- aws
+- azure
+- gcp
+- cli
+- init-world
+title: Hello Cloud
+validation_criteria:
+  completion_requirements:
+  - Successfully create a cloud account with MFA enabled
+  - Install and authenticate a cloud CLI
+  - Deploy at least one cloud resource
+  - Tear down resources to avoid cost leaks
+  knowledge_checks:
+  - Understands free-tier limits and billing alerts
+  - Knows the difference between major cloud providers
+  skill_demonstrations:
+  - Can authenticate via cloud CLI
+  - Can provision and destroy basic cloud resources
+---
+*Welcome, skybound adventurer! You stand at the edge of the mortal realm, gazing up at the shimmering **Sky Realm** — a vast kingdom of infinite compute power, boundless storage vaults, and magical services that can scale from a whisper to a thunderclap. Today, you claim your first foothold in the clouds.*
+
+*But beware: the Sky Realm's resources carry a cost. Careless adventurers have been bankrupted by forgotten resources left running in the mist. This quest teaches you to explore safely, provision wisely, and always clean up after your experiments.*
+
+## 🎯 Quest Objectives
+
+### Primary Objectives (Required for Quest Completion)
+- [ ] **Claim Your Sky Realm Passport** — Create a cloud account with proper security wards (MFA)
+- [ ] **Forge Your Cloud Wand (CLI)** — Install and authenticate a cloud command-line interface
+- [ ] **Summon Your First Cloud Creature** — Provision a minimal VM or storage artifact
+- [ ] **Banish Your Creation** — Destroy all resources to prevent gold drain (cost leaks)
+
+### Bonus Objectives (Optional Achievements)
+- [ ] Activate protective wards: MFA and billing alerts
+- [ ] Scout the free-tier treasure map and catalog available services
+
+## 🗺️ Quest Prerequisites
+
+### 📋 Knowledge Requirements
+- [ ] Basic command-line incantations (terminal usage)
+- [ ] Familiarity with realm registries (accounts and billing dashboards)
+
+### 🛠️ System Requirements
+- [ ] Stable portal connection (internet)
+- [ ] Communication crystal (email + phone) for cloud signup
+
+## 🌍 Choose Your Sky Kingdom
+
+Each Sky Kingdom offers unique powers. Pick one for your first expedition — you can explore others later on your journey.
+
+| Kingdom | Strengths | Best For |
+|---------|-----------|----------|
+| **AWS** | Vast army of services, battle-tested | General-purpose cloud mastery |
+| **Azure** | Strong Microsoft alliance, enterprise fortifications | Windows-integrated workflows |
+| **GCP** | Elegant developer tools, BigQuery analytics | Data science and clean APIs |
+
+This quest includes GCP helper scrolls (scripts) for a low-friction first adventure.
+
+## 🧙‍♂️ Chapter 1: Account Setup & Protective Wards
+
+Every wise cloud mage secures their realm before summoning resources:
+
+1. **Create your account** with your chosen Sky Kingdom provider.
+2. **Enable MFA** — your first defensive ward against intruders.
+3. **Set a billing alert** — an alarm spell that warns you before gold is spent.
+4. **Review free-tier limits** — know what treasures you can summon without cost.
+
+## 🧰 Chapter 2: Forge Your Cloud Wand (CLI Installation)
+
+The Cloud CLI is your wand — the tool through which you channel commands to the Sky Realm.
+
+From this quest directory, review and run the helper scrolls (GCP example):
+
+```bash
+./gcp/gcp-start.sh
+./gcp/gcloud-cs.sh
+```
+
+Verify your wand is attuned (authenticated):
+
+```bash
+gcloud auth list
+gcloud config list
+```
+
+## ⚔️ Chapter 3: Summon Your First Cloud Creature
+
+Time to test your power! Summon a tiny VM using the provided incantation script:
+
+```bash
+./gcp/vm-startup.sh
+```
+
+Validate that your creature has materialized and is running in the Sky Realm.
+
+## 🧹 Chapter 4: Banish & Clean Up
+
+*A careless mage leaves creatures roaming the clouds, draining gold with every passing hour.* Always banish what you summon:
+
+```bash
+gcloud compute instances list
+gcloud compute instances delete <instance-name>
+```
+
+If you conjured other artifacts (storage buckets, networks), banish them now to avoid surprise charges.
+
+## 🏁 Quest Completion Checklist
+
+- [ ] Cloud account created with MFA ward activated
+- [ ] Billing alert spell configured
+- [ ] Cloud CLI wand forged and authenticated
+- [ ] Cloud creature summoned and then properly banished
+
+## 📚 References & Resources
+
+- [AWS Free Tier](https://aws.amazon.com/free/)
+- [Azure Free Account](https://azure.microsoft.com/free/)
+- [GCP Free Tier](https://cloud.google.com/free)
+- [Google Cloud CLI Documentation](https://cloud.google.com/sdk/docs)
+- [AWS CLI Getting Started](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [Azure CLI Documentation](https://learn.microsoft.com/en-us/cli/azure/)
+
+## 🔗 Related Quests
+
+- [Hello n00b](hello-noob.md)
+- [OS Selection](os-selection.md)
+- [Hello Windows](hello-win.md)
+- [Hello macOS](hello-mac.md)
+- [Hello Linux](linux-fundamentals.md)
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[IT Fundamentals]] **Recommended:** [[OS Selection]] **Parallel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

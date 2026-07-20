@@ -1,55 +1,53 @@
 ---
-attachments: ''
 author: Quest Master IT-Journey
 categories:
 - Quests
 - Web-Development
 - Intermediate
 comments: true
-date: 2025-08-31 18:32:58+00:00
+date: '2025-08-31T18:32:58.000Z'
 description: Banish 404s in Jekyll with permalink magic, redirect runes, CI link guardians,
   and living resource endpoints powered by GitHub.
 difficulty: 🟡 Medium
+draft: false
 estimated_time: 60-90 minutes
 excerpt: Hunt the 404 Specter with Jekyll permalink magic, redirect runes, CI hyperlink
   guardians, and organic resource endpoints.
 fmContentType: quest
 keywords:
-- lvl-1110
-- jekyll
-- github-actions
-- link-integrity
-- devops
-lastmod: 2025-08-31 23:16:16.119000+00:00
+  primary:
+  - '1110'
+  - jekyll
+  secondary:
+  - github-actions
+  - link-integrity
+  - devops
+lastmod: '2025-08-31T23:16:16.000Z'
+layout: quest
 learning_style: hands-on
 level: '1110'
-permalink: /quests/level-1110-404-hunting-quest/
+mermaid: true
+permalink: /quests/1110/404-hunting-quest/
 prerequisites:
 - GitHub account and a repository with GitHub Pages or Actions enabled
 - Git, Ruby 3.x, and Bundler installed
 - Basic terminal usage (cd, git add/commit/push)
 preview: images/previews/404-hunting-binary-wards-for-unbreakable-links.png
-primary_technology: lvl-1110
+primary_technology: jekyll
 quest_series: Site Reliability for Static Sites
 quest_type: main_quest
-related_quests:
-- 'Permalink Lore: Stable Slugs and Trails (Level 1100)'
-- 'CI Scribes: Automating Quality Trials (Level 1111)'
-- 'Content Gardens: Jekyll Collections (Level 10100)'
+redirect_from:
+- /quests/1110/404-hunting/
 rewards:
 - 🏆 Resource Guardian Badge
 - ⚡ Link Integrity +5
 - 🛠️ Jekyll Redirect Mastery
 - 🎯 CI Link Guardian Setup
-skill_focus:
-- Quests
-- Web-Development
-- Intermediate
-snippet: May your links never stray and your redirects never loop.
+skill_focus: fullstack
 source_file: 404-hunting.md
-sub-title: 'Level 1110 (14) Quest: Integration Spells for Link Integrity'
+sub_title: 'Level 1110 (14) Quest: Integration Spells for Link Integrity'
 tags:
-- lvl-1110
+- '1110'
 - jekyll
 - github-actions
 - link-integrity
@@ -145,6 +143,7 @@ plugins:
 
 Create an inviting `404.html`:
 
+{% raw %}
 ```html
 ---
 permalink: /404.html
@@ -166,6 +165,7 @@ permalink: /404.html
   <style>.not-found{max-width:720px;margin:3rem auto;padding:0 1rem}</style>
 </main>
 ```
+{% endraw %}
 
 ### 🔍 Knowledge Check: Paths
 
@@ -226,6 +226,7 @@ permalink: /legacy-path/
 
 Lychee (quick, generous):
 
+{% raw %}
 ```yaml
 name: Hyperlink Guardian
 on:
@@ -251,6 +252,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+{% endraw %}
 
 HTMLProofer (strict, post-build):
 
@@ -268,18 +270,19 @@ jobs:
           bundler-cache: true
       - name: Build Jekyll
         run: |
-          bundle install --path vendor/bundle
+          bundle config set --local path vendor/bundle
+          bundle install
           bundle exec jekyll build --trace
       - name: HTMLProofer
         run: |
-          gem install html-proofer
+          gem install html-proofer -v 5.2.1
           htmlproofer ./_site \
             --assume-extension \
             --check-external-hash \
             --enforce-https \
-            --typhoeus-config 'timeout:20' \
-            --url-ignore "^https://localhost,https://127.0.0.1" \
-            --http-status-ignore '0,429'
+            --typhoeus '{"timeout":20}' \
+            --ignore-urls "^https://localhost,https://127.0.0.1" \
+            --ignore-status-codes '0,429'
 ```
 
 ### 🔍 Knowledge Check: Guardians
@@ -324,9 +327,9 @@ Data-driven links via `_data/quests.yml`:
 Template snippet:
 
 ```liquid
-{% for quest in site.data.quests %}
-  <a href="/quests/{{ quest.name | slugify }}">{{ quest.name }}</a>
-{% endfor %}
+{% raw %}{% for quest in site.data.quests %}{% endraw %}
+  <a href="/quests/{% raw %}{{ quest.name | slugify }}{% endraw %}">{% raw %}{{ quest.name }}{% endraw %}</a>
+{% raw %}{% endfor %}{% endraw %}
 ```
 
 ### 🔍 Knowledge Check: Growth
@@ -381,10 +384,10 @@ Objective: Use guardian logs to create a minimal viable resource (MVR) or redire
 
 ## 📚 Quest Resource Codex
 
-- Companion Article: </posts/404-hunting-quest/>
+- Companion Article: <https://lifehacker.dev>
 - Jekyll Permalinks: <https://jekyllrb.com/docs/permalinks/>
-- jekyll-redirect-from: <https://github.com/jekyll/jekyll-redirect-from>
-- jekyll-sitemap: <https://github.com/jekyll/jekyll-sitemap>
+- Jekyll-redirect-from: <https://github.com/jekyll/jekyll-redirect-from>
+- Jekyll-sitemap: <https://github.com/jekyll/jekyll-sitemap>
 - HTMLProofer: <https://github.com/gjtorikian/html-proofer>
 - Lychee Action: <https://github.com/lycheeverse/lychee-action>
 - GitHub Pages 404s: <https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site>
@@ -426,3 +429,10 @@ Validation Recap:
 - [ ] Link checks pass on PR and scheduled runs
 - [ ] 404 page aids recovery and reporting
 - [ ] Redirects cover moved content without loops
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 1110 - Quality Assurance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

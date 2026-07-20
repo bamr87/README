@@ -4,7 +4,10 @@ title: Azure Maps Search SDK Acceptance Criteria (.NET)
 ---
 # Azure Maps Search SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Maps.Search` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/maps/Azure.Maps.Search **NuGet Package**: https://www.nuget.org/packages/Azure.Maps.Search **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Maps.Search`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/maps/Azure.Maps.Search
+**NuGet Package**: https://www.nuget.org/packages/Azure.Maps.Search
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

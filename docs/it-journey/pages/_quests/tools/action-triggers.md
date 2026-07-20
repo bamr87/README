@@ -1,5 +1,4 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - Automation
@@ -8,36 +7,32 @@ categories:
 - GitHub Actions
 - Programming
 comments: false
-date: 2025-04-18 13:43:43+00:00
+date: '2025-04-18T13:43:43.000Z'
 description: Unlock the power of automation with GitHub Actions! Streamline your workflows
   and enhance your CI/CD processes effortlessly.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-60 minutes
-excerpt: null
 fmContentType: quest
 keywords:
-- automation
-- CI/CD
-- GitHub Actions
-- workflows
-- YAML
-lastmod: 2026-03-20 22:23:36.683000+00:00
+  primary:
+  - automation
+  - CI/CD
+  secondary:
+  - GitHub Actions
+  - workflows
+  - YAML
+lastmod: '2026-03-20T22:23:36.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-action-triggers/
+permalink: /quests/0010/action-triggers/
 preview: images/previews/understanding-action-triggers-in-depth.png
 primary_technology: automation
 quest_series: Tools Collection
 quest_type: main_quest
-skill_focus:
-- Automation
-- CI/CD
-- Development
-- GitHub Actions
-- Programming
-snippet: null
+skill_focus: devops
 source_file: action-triggers.md
-sub-title: null
 tags:
 - automation
 - CI/CD
@@ -82,7 +77,7 @@ Oh child of continuous delivery, **anything**:
 **⚙️ Your First Magic Scroll: The CI/CD Pipeline**
 --------------------------------------------------
 
-```
+```markdown
 # .github/workflows/main.yml
 name: CI/CD Pipeline
 
@@ -114,7 +109,7 @@ jobs:
       with:
         config-name: release-drafter.yml
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${% raw %}{{ secrets.GITHUB_TOKEN }}{% endraw %}
 ```
 
 🧪 **Translation**: Every PR to main triggers tests. If those pass and you're on main, the release process begins. All while you sip coffee or battle CSS dragons.
@@ -128,11 +123,11 @@ Here are some handy enchantments to add to your arsenal:
 
 | **Spell Type** | **GitHub Action** |
 | --- |  --- |
-| 🧼 Linting | github/super-linter |
+| 🧼 Linting | GitHub/super-linter |
 | --- |  --- |
 | 🧪 Python Tests | actions/setup-python + pytest |
 | 🐍 Auto-Releases | release-drafter/release-drafter |
-| 🧪 Security | github/codeql-action |
+| 🧪 Security | GitHub/codeql-action |
 | 🧙‍♂️ AI Assist | Custom scripts using OpenAI API |
 
 * * * *
@@ -168,3 +163,10 @@ Here are some magical event triggers:
 With GitHub Actions, you don't just code---you **orchestrate an automated kingdom** of checks, releases, and deploys. All you need is a bit of YAML and a dream. 💫
 
 Shall we proceed to the final mystical chapter: **AI-Assisted Automation**? Because now we start teaching the machines to do even more for us... Shall I open that tome?
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

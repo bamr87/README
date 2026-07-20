@@ -4,7 +4,10 @@ title: Azure.ResourceManager.ApiCenter SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.ApiCenter SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.ApiCenter` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/apicenter/Azure.ResourceManager.ApiCenter **Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApiCenter **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.ApiCenter`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/apicenter/Azure.ResourceManager.ApiCenter
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApiCenter
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

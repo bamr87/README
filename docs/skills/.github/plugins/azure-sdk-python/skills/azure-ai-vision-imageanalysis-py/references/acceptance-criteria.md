@@ -4,7 +4,9 @@ title: Azure AI Vision Image Analysis Acceptance Criteria
 ---
 # Azure AI Vision Image Analysis Acceptance Criteria
 
-**SDK**: `azure-ai-vision-imageanalysis` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated image analysis code correctness
+**SDK**: `azure-ai-vision-imageanalysis`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated image analysis code correctness
 
 ---
 

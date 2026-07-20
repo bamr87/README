@@ -4,7 +4,10 @@ title: Azure.ResourceManager.ArizeAIObservabilityEval SDK Acceptance Criteria (.
 ---
 # Azure.ResourceManager.ArizeAIObservabilityEval SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.ArizeAIObservabilityEval` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/arizeaiobservabilityeval/Azure.ResourceManager.ArizeAIObservabilityEval **Package**: https://www.nuget.org/packages/Azure.ResourceManager.ArizeAIObservabilityEval **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.ArizeAIObservabilityEval`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/arizeaiobservabilityeval/Azure.ResourceManager.ArizeAIObservabilityEval
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.ArizeAIObservabilityEval
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

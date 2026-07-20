@@ -4,7 +4,9 @@ title: Azure Storage Queue SDK Acceptance Criteria (TypeScript)
 ---
 # Azure Storage Queue SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/storage-queue` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-queue **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/storage-queue`
+**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-queue
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

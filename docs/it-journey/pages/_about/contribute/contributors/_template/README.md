@@ -3,7 +3,7 @@ author: YOUR_NAME
 class: Apprentice
 contributor_data: YOUR_GITHUB_USERNAME
 excerpt: Your tagline — class, interests, etc.
-lastmod: 2026-03-21 15:12:32.212000+00:00
+lastmod: '2026-03-21T15:12:32.000Z'
 permalink: /contributors/YOUR_GITHUB_USERNAME/
 source_file: README.md
 title: Readme

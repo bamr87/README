@@ -4,7 +4,9 @@ title: Pydantic Models Acceptance Criteria
 ---
 # Pydantic Models Acceptance Criteria
 
-**SDK**: `pydantic` (v2) **Documentation**: https://docs.pydantic.dev/latest/ **Purpose**: Skill testing acceptance criteria for validating Pydantic model patterns
+**SDK**: `pydantic` (v2)
+**Documentation**: https://docs.pydantic.dev/latest/
+**Purpose**: Skill testing acceptance criteria for validating Pydantic model patterns
 
 ---
 

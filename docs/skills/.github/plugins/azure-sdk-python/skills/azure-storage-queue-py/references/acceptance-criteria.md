@@ -4,7 +4,10 @@ title: Azure Storage Queue SDK Acceptance Criteria
 ---
 # Azure Storage Queue SDK Acceptance Criteria
 
-**SDK**: `azure-storage-queue` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-storage-queue`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

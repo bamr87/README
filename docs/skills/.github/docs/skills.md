@@ -15,7 +15,8 @@ title: Agent Skills
 
 > A simple, open format for giving agents new capabilities and expertise.
 
-export const LogoCarousel = () => { const logos = [{
+export const LogoCarousel = () => {
+  const logos = [{
     name: "Gemini CLI",
     url: "https://geminicli.com",
     lightSrc: "/images/logos/gemini-cli/gemini-cli-logo_light.svg",
@@ -76,7 +77,9 @@ export const LogoCarousel = () => { const logos = [{
     url: "https://factory.ai/",
     lightSrc: "/images/logos/factory/factory-logo-light.svg",
     darkSrc: "/images/logos/factory/factory-logo-dark.svg"
-}]; const [shuffled, setShuffled] = useState(logos); useEffect(() => {
+  }];
+  const [shuffled, setShuffled] = useState(logos);
+  useEffect(() => {
     const shuffle = items => {
       const copy = [...items];
       for (let i = copy.length - 1; i > 0; i--) {
@@ -86,7 +89,12 @@ export const LogoCarousel = () => { const logos = [{
       return copy;
     };
     setShuffled(shuffle(logos));
-}, []); const row1 = shuffled.filter((_, i) => i % 2 === 0); const row2 = shuffled.filter((_, i) => i % 2 === 1); const row1Doubled = [...row1, ...row1]; const row2Doubled = [...row2, ...row2]; return <>
+  }, []);
+  const row1 = shuffled.filter((_, i) => i % 2 === 0);
+  const row2 = shuffled.filter((_, i) => i % 2 === 1);
+  const row1Doubled = [...row1, ...row1];
+  const row2Doubled = [...row2, ...row2];
+  return <>
       <div className="logo-carousel">
         <div className="logo-carousel-track" style={{
     animation: 'logo-scroll 50s linear infinite'

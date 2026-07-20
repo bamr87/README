@@ -9,9 +9,12 @@ Narnia
 
 ### We all have to start somewhere.
 
-Narnia is a wargame that has been rescued from the demise of **intruded.net**, previously hosted on narnia.intruded.net. **Big thanks to adc, morla and reth** for their help in resurrecting this game!
+Narnia is a wargame that has been rescued from the demise of
+**intruded.net**, previously hosted on narnia.intruded.net. **Big thanks
+to adc, morla and reth** for their help in resurrecting this game!
 
-What follows below is the original description of narnia, copied from intruded.net:
+What follows below is the original description of narnia, copied from
+intruded.net:
 
     Summary:
     Difficulty:     2/10
@@ -31,7 +34,8 @@ What follows below is the original description of narnia, copied from intruded.n
     difficulty of the game is somewhere between Leviathan and Behemoth, but some of the
     levels could be quite tricky.
 
-Narnia's levels are called **narnia0, narnia1, ... etc.** and can be accessed on **narnia.labs.overthewire.org** through SSH on port 2226.
+Narnia's levels are called **narnia0, narnia1, ... etc.** and can be
+accessed on **narnia.labs.overthewire.org** through SSH on port 2226.
 
 To login to the first level use:
 
@@ -40,7 +44,22 @@ To login to the first level use:
 
 Data for the levels can be found in **/narnia/**.
 
-Tools you may find useful to solve this wargame
+Concepts and tools you may find useful to solve this wargame
 -----------------------------------------------
 
-objdump, ghidra, pwntools, gcc, gdb
+Concepts:
+ * [Assembly language](https://primer.picoctf.org/#_assembly) - read & write!
+ * [Dynamic program analysis](https://en.wikipedia.org/wiki/Dynamic_program_analysis) - gdb is your best friend!
+
+Tools: gdb, gef, pwndbg, radare2, as, gcc, /etc/motd, pwntools, ghidra, python3
+
+This wargame requires you to analyze the given source/binary,
+find an exploit vector and then exploit it. 
+This will most certainly include x86 binary code. 
+Reading and writing x86 assembly skills are strongly recommended.
+The same applies for tools for static and dynamic analysis.
+Shellcode creation can be automated to some point with pwntools' shellcraft module.
+
+Note: You do not want to download and run random shellcode form the internet.
+It may erase your harddisk or worse. 
+It is recommended to write your own shellcode!

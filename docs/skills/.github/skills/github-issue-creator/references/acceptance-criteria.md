@@ -4,7 +4,9 @@ title: GitHub Issue Creator Acceptance Criteria
 ---
 # GitHub Issue Creator Acceptance Criteria
 
-**Skill**: `github-issue-creator` **Purpose**: Transform raw notes, error logs, voice dictation, or screenshots into structured GitHub issues **Focus**: Issue format, structured sections, appropriate severity classification
+**Skill**: `github-issue-creator`
+**Purpose**: Transform raw notes, error logs, voice dictation, or screenshots into structured GitHub issues
+**Focus**: Issue format, structured sections, appropriate severity classification
 
 ---
 
@@ -225,7 +227,10 @@ This is bad.
 ```markdown
 ## Error Details
 ```
-Error: PERMISSION_DENIED Code: 403 RequestId: abc-123-def-456 Timestamp: 2024-01-15T10:30:00Z
+Error: PERMISSION_DENIED
+Code: 403
+RequestId: abc-123-def-456
+Timestamp: 2024-01-15T10:30:00Z
 ```
 ```
 
@@ -234,7 +239,8 @@ Error: PERMISSION_DENIED Code: 403 RequestId: abc-123-def-456 Timestamp: 2024-01
 ```markdown
 ## Error Details
 ```python
-Traceback (most recent call last): File "agent.py", line 42, in create_agent
+Traceback (most recent call last):
+  File "agent.py", line 42, in create_agent
     response = client.agents.create(...)
 azure.core.exceptions.HttpResponseError: (403) Permission denied
 ```
@@ -313,7 +319,9 @@ Unknown
 ```markdown
 ## Error Details
 ```
-User ID: [USER_ID] API Key: [REDACTED] Project: [PROJECT_NAME]
+User ID: [USER_ID]
+API Key: [REDACTED]
+Project: [PROJECT_NAME]
 ```
 ```
 
@@ -418,7 +426,8 @@ Returns `PERMISSION_DENIED` with code 403
 
 ## Error Details
 ```
-Error: PERMISSION_DENIED Code: 403
+Error: PERMISSION_DENIED
+Code: 403
 ```
 
 ## Impact

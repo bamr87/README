@@ -4,7 +4,9 @@ title: Azure AI Agents Persistent SDK for Java Acceptance Criteria
 ---
 # Azure AI Agents Persistent SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-agents-persistent` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/ai/azure-ai-agents-persistent **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-agents-persistent`
+**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/ai/azure-ai-agents-persistent
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

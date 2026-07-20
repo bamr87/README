@@ -1,5 +1,4 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - AI Automation
@@ -8,36 +7,32 @@ categories:
 - Programming
 - Project Management
 comments: false
-date: 2025-04-18 13:43:43+00:00
+date: '2025-04-18T13:43:43.000Z'
 description: Discover how AI automation can transform your workflow, enhancing code
   reviews, documentation, and PR summaries for a smarter coding experience.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-60 minutes
-excerpt: null
 fmContentType: quest
 keywords:
-- AI Automation
-- Best Practices
-- Code Review
-- GitHub Copilot
-- OpenAI API
-lastmod: 2025-04-18 19:43:43.298000+00:00
+  primary:
+  - AI Automation
+  - Best Practices
+  secondary:
+  - Code Review
+  - GitHub Copilot
+  - OpenAI API
+lastmod: '2025-04-18T19:43:43.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-revolutionizing-work-with-ai-automation/
+permalink: /quests/0010/revolutionizing-work-with-ai-automation/
 preview: images/previews/revolutionizing-work-with-ai-automation.png
 primary_technology: AI Automation
 quest_series: Tools Collection
 quest_type: main_quest
-skill_focus:
-- AI Automation
-- Development
-- IT Consulting
-- Programming
-- Project Management
-snippet: null
+skill_focus: devops
 source_file: revolutionizing-work-with-ai-automation.md
-sub-title: null
 tags:
 - AI Automation
 - Best Practices
@@ -109,7 +104,7 @@ They just read the summary and say, "Approved, noble wizard."
 **🧙‍♂️ Pseudo Workflow: PR Summary with OpenAI**
 -------------------------------------------------
 
-```
+```bash
 name: AI PR Summarizer
 
 on:
@@ -125,7 +120,7 @@ jobs:
     - name: Call OpenAI
       run: |
         curl https://api.openai.com/v1/chat/completions\
-        -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}"\
+        -H "Authorization: Bearer ${% raw %}{{ secrets.OPENAI_API_KEY }}{% endraw %}"\
         -d '{
           "model": "gpt-4",
           "messages": [{"role": "user", "content": "Summarize this PR diff:\n$(cat pr.diff)"}]
@@ -161,3 +156,10 @@ jobs:
 And there you have it. You are now a **Cloud Dev Wizard of the 5th Circle**: branches organized, commits pristine, docs divine, workflows humming, and AI at your side. 🌩️
 
 Need a final summary scroll of your complete best practice workflow? Or perhaps a retro pixelated magical poster to hang above your CI pipeline? Say the word, and we'll conjure it.
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

@@ -5,7 +5,7 @@ categories:
 - Community
 - Getting Started
 comments: true
-date: 2026-03-20 00:00:00+00:00
+date: '2026-03-20T00:00:00.000Z'
 description: Create your contributor character profile with RPG-style stats, badges,
   and class identity — powered by your git history
 difficulty: 🟢 Easy
@@ -15,30 +15,19 @@ excerpt: Step into the Guild Hall and forge your identity. Every adventurer need
   a character sheet before embarking on their journey.
 fmContentType: quest
 keywords:
-- contributor profile
-- character sheet
-- git stats
-- RPG
-- open source
-lastmod: 2026-03-21 15:12:32.226000+00:00
-learning_paths:
-  character_classes:
-  - 🧙 Wizard
-  - ⚔️ Warrior
-  - 🏹 Ranger
-  - 🗡️ Rogue
-  - 💚 Healer
-  - 🎵 Bard
-  - 🛡️ Paladin
-  primary_paths:
-  - Community Contributor
-  - Open Source Developer
-  skill_trees:
-  - Community & Collaboration
-  - Git & Version Control
+  primary:
+  - contributor profile
+  - character sheet
+  secondary:
+  - git stats
+  - RPG
+  - open source
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: hands-on
 level: '0001'
-permalink: /quests/forge-your-character/
+mermaid: true
+permalink: /quests/0001/forge-your-character/
 prerequisites:
   knowledge_requirements:
   - Basic Git knowledge (clone, add, commit, push)
@@ -52,13 +41,13 @@ primary_technology: git
 quest_arc: 'Act I: Arrival at the Guild'
 quest_dependencies:
   recommended_quests:
-  - /quests/level-0001-terminal-mastery/
-  - /quests/level-0001-git-workflow-mastery/
+  - /quests/0001/terminal-mastery/
+  - /quests/0001/git-workflow-mastery/
   required_quests: []
   unlocks_quests:
-  - /quests/side-quest-avatar-forge/
-  - /quests/side-quest-badge-collector/
-  - /quests/side-quest-stats-dashboard/
+  - /quests/0001/avatar-forge/
+  - /quests/0001/badge-collector/
+  - /quests/0010/stats-dashboard/
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: main_quest
@@ -66,14 +55,10 @@ rewards:
   badges:
   - 🏆 Guild Member — Officially joined the Guild of Contributors
   progression_points: 200
-skill_focus:
-- devops
-- frontend
-snippet: The Guild Master beckons new adventurers to forge their identity in the Hall
-  of Contributors
+skill_focus: devops
 source_file: forge-your-character.md
 tags:
-- lvl-0001
+- '0001'
 - contributor
 - profile
 - git
@@ -246,7 +231,7 @@ permalink: /contributors/YOUR_USERNAME/
 lastmod: 2026-03-20T00:00:00.000Z
 ---
 
-{% raw %}<link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">{% endraw %}
+<link rel="stylesheet" href="{% raw %}{{ '/assets/css/contributor-profile.css' | relative_url }}{% endraw %}">
 
 {% raw %}{% include contributor/character_sheet.html username="YOUR_USERNAME" %}{% endraw %}
 
@@ -353,11 +338,11 @@ Your character sheet has room to grow. Unlock these side quests:
 
 | Side Quest | Level | Difficulty | Reward |
 |-----------|-------|------------|--------|
-| [Avatar Forge](/quests/side-quest-avatar-forge/) | 0001 | 🟢 Easy | Custom avatar on your profile |
-| [Badge Collector](/quests/side-quest-badge-collector/) | 0001 | 🟡 Medium | Pinned badges showcase |
-| [Stats Dashboard](/quests/side-quest-stats-dashboard/) | 0010 | 🟡 Medium | Enhanced stats visualization |
-| [Contribution Calendar](/quests/side-quest-contribution-calendar/) | 0010 | 🟡 Medium | Activity heatmap |
-| [Profile Themes](/quests/side-quest-profile-themes/) | 0100 | 🔴 Hard | Custom CSS themes |
+| [Avatar Forge](/quests/0001/side-quests/avatar-forge/) | 0001 | 🟢 Easy | Custom avatar on your profile |
+| [Badge Collector](/quests/0001/side-quests/badge-collector/) | 0001 | 🟡 Medium | Pinned badges showcase |
+| [Stats Dashboard](/quests/0010/side-quests/stats-dashboard/) | 0010 | 🟡 Medium | Enhanced stats visualization |
+| [Contribution Calendar](/quests/0010/side-quests/contribution-calendar/) | 0010 | 🟡 Medium | Activity heatmap |
+| [Profile Themes](/quests/0100/side-quests/profile-themes/) | 0100 | 🔴 Hard | Custom CSS themes |
 
 ### XP Formula
 
@@ -378,3 +363,10 @@ Your level is calculated from total XP:
 
 > *"Your name is now inscribed in the Guild's ledger. Go forth and contribute, adventurer — the realm of IT awaits your deeds."*
 > — The Guild Master
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Terminal Mastery: Conquering the Command-Line Realm]] · [[Git Workflow Mastery: Branches, Merging & Team Collaboration]] **Unlocks:** [[Avatar Forge: Crafting Your Digital Portrait]] · [[Badge Collector: Showcasing Your Achievements]] · [[Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

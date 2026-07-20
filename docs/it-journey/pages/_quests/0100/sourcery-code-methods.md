@@ -1,57 +1,54 @@
 ---
-attachments: ''
 author: Quest Master IT-Journey
 categories:
 - Quests
 - Development-Fundamentals
 - Tool-Mastery
 comments: true
-date: 2025-07-28 23:34:51+00:00
+date: '2025-07-28T23:34:51.000Z'
 description: Master the mystical powers of Git and GitHub workflows to become a legendary
   code guardian and collaboration wizard in the digital realm
 difficulty: 🟡 Medium
+draft: false
 estimated_time: 120-180 minutes
 excerpt: Transform from coding apprentice to git wizard by mastering the ancient arts
   of version control, branch sorcery, and collaborative development magic
 fmContentType: quest
 keywords:
-- lvl-0100
-- git
-- github
-- version-control
-- collaboration
-- workflow-mastery
-lastmod: 2025-07-29 05:15:57.715000+00:00
+  primary:
+  - '0100'
+  - git
+  - github
+  secondary:
+  - version-control
+  - collaboration
+  - workflow-mastery
+lastmod: '2025-07-29T05:15:57.000Z'
+layout: quest
 learning_style: hands-on
 level: '0100'
-permalink: /quests/level-0100-source-control-sorcery/
+permalink: /quests/0100/source-control-sorcery/
 prerequisites:
 - Basic command line familiarity
 - Fundamental programming knowledge
 - Git installed on your system
 - GitHub account created
 preview: images/previews/quest-mastering-the-ancient-arts-of-source-control.png
-primary_technology: lvl-0100
+primary_technology: git
 quest_series: Foundation Development Skills
 quest_type: main_quest
-related_quests:
-- Terminal Mastery Quest (Level 0001)
-- Development Environment Setup (Level 0101)
-- Code Quality Guardian Quest (Level 0110)
+redirect_from:
+- /quests/0100/sourcery-code-methods/
 rewards:
 - 🏆 Source Control Sorcerer Badge
 - ⚡ Advanced Git Workflow Mastery
 - 🛠️ GitHub Automation Expertise
 - 🎯 Professional Collaboration Skills
-skill_focus:
-- Quests
-- Development-Fundamentals
-- Tool-Mastery
-snippet: Every line of code tells a story - learn to chronicle your digital adventures
+skill_focus: fullstack
 source_file: sourcery-code-methods.md
-sub-title: 'Level 0100 (4) Quest: Source Control and Collaboration Mastery'
+sub_title: 'Level 0100 (4) Quest: Source Control and Collaboration Mastery'
 tags:
-- lvl-0100
+- '0100'
 - git
 - github
 - version-control
@@ -64,7 +61,7 @@ validation_criteria:
 - Implement automated GitHub Actions workflow
 - Execute complete feature development cycle using best practices
 ---
-*In the mystical realm of software development, there exists an ancient and powerful magic known as Source Control Sorcery. Long ago, master developers discovered the secrets of tracking every change, branching through parallel dimensions of code, and collaborating across vast digital territories without losing a single line of their precious creations. Today, you shall learn to wield these legendary powers, transforming from a simple code scribe into a true guardian of digital history.*
+*In the mystical realm of software development, there exists an ancient magic for tracking every change known as Source Control Sorcery. Long ago, master developers discovered the secrets of tracking every change, branching through parallel dimensions of code, and collaborating across vast digital territories without losing a single line of their precious creations. Today, you shall learn to wield these legendary powers, transforming from a simple code scribe into a true guardian of digital history.*
 
 *Through this epic quest, you will master the arcane arts of Git magic and GitHub collaboration spells. You'll learn to weave branches like a skilled enchanter, merge realities without creating chaos, and maintain the sacred chronicles of your code's evolution. By quest's end, you'll possess the power to collaborate with fellow developers across the world, automate your workflows with mystical GitHub Actions, and ensure that no code is ever lost to the void.*
 
@@ -93,6 +90,14 @@ You'll know you've truly mastered this quest when you can:
 - [ ] Confidently resolve merge conflicts and complex version control scenarios
 - [ ] Design and implement professional development workflows for teams
 - [ ] Troubleshoot version control issues and guide others through solutions
+
+## 🗺️ Quest Prerequisites
+
+Before you begin, make sure your realm is stocked with the tools this quest assumes:
+
+- **A GitHub account** — Chapter 1 pushes to a remote repository and later chapters wire up GitHub Actions. Sign up at [github.com](https://github.com/) if you don't have one.
+- **Git installed and configured** — the "Choose Your Adventure Platform" section below installs Git for your OS.
+- **Node.js installed** — the Chapter 4 GitHub Actions workflow runs `npm` scripts (test, lint, coverage), so a working Node.js/npm toolchain is required to follow that chapter against a real project. Grab it from [nodejs.org](https://nodejs.org/).
 
 ## 🌍 Choose Your Adventure Platform
 
@@ -180,6 +185,7 @@ Every source control journey begins with understanding the three mystical realms
 mkdir my-first-quest
 cd my-first-quest
 git init  # Initialize the repository with Git magic
+git branch -M main  # Name the default branch 'main' now, so it matches GitHub's default and the output below
 
 # Check the status of your realm
 git status  # Shows which files are tracked, modified, or staged
@@ -197,13 +203,22 @@ This marks the beginning of my source control journey.
 Created initial documentation for the project."
 
 # Connect to a remote GitHub repository
+# ⚠️ First create an EMPTY repo on GitHub (web UI, or `gh repo create my-first-quest --public`),
+# then swap `yourusername`/repo name below for your own — this URL is only a placeholder.
 git remote add origin https://github.com/yourusername/my-first-quest.git
-git branch -M main
 git push -u origin main
 ```
 
+> 🔑 **Heads-up — the push needs a real repo and authentication.** `git push` only
+> succeeds once `origin` points at a repository you actually created on GitHub **and**
+> you're signed in (a browser/credential-manager prompt, or a
+> [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
+> Against the placeholder URL above it fails with
+> `fatal: could not read Username for 'https://github.com'` — that's expected until you
+> substitute your own repo and credentials.
+
 **Expected Output**:
-```
+```text
 Initialized empty Git repository in /path/to/my-first-quest/.git/
 [main (root-commit) abc1234] feat: Add initial quest README
  1 file changed, 1 insertion(+)
@@ -277,10 +292,10 @@ git branch -d feature/user-authentication
 
 ## 🧙‍♂️ Chapter 3: GitHub Collaboration Magic - Working with Fellow Wizards
 
-*Master the art of collaborating with other developers through GitHub's powerful social coding platform.*
+*Master the art of collaborating with other developers through GitHub's pull requests, reviews, and issue tracking.*
 
 ### ⚔️ Skills You'll Forge in This Chapter
-- Create professional pull requests with comprehensive documentation
+- Create professional pull requests that document what changed, why, and how it was tested
 - Conduct thorough code reviews that improve team code quality
 - Implement issue tracking and project management workflows
 - Establish team coding standards and review processes
@@ -354,6 +369,29 @@ Screenshots will be added in a future update (UI artifacts in progress).
 
 ### 🏗️ Creating Your First GitHub Action
 
+Before the workflow can pass, your repo needs a project the pipeline can act on. The steps below reference `npm ci`, `npm test`, `npm run lint`, and `npm run coverage`, so scaffold a minimal `package.json` first — then run `npm install` once to generate the `package-lock.json` that `npm ci` requires:
+
+```json
+// package.json — minimal scaffold so the workflow's npm steps resolve
+{
+  "name": "my-first-quest",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"no tests yet\" && exit 0",
+    "lint": "echo \"no linter configured yet\" && exit 0",
+    "coverage": "echo \"no coverage configured yet\" && exit 0"
+  }
+}
+```
+
+```bash
+npm install   # generates package-lock.json so `npm ci` works in CI
+git add package.json package-lock.json
+git commit -m "chore: scaffold package.json for CI pipeline"
+```
+
+With those no-op scripts committed, the pipeline runs green end to end; swap each `echo` for a real test/lint/coverage tool as your project grows.
+
 Automation is the highest form of development magic:
 
 ```yaml
@@ -377,7 +415,7 @@ jobs:
     - name: 🧙‍♂️ Setup Node.js Magic
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
         
     - name: ⚡ Install Dependencies
@@ -428,12 +466,12 @@ jobs:
 **Success Criteria**:
 - [ ] Feature branch follows naming conventions
 - [ ] Commits follow conventional commit format
-- [ ] Pull request includes comprehensive description and testing plan
+- [ ] Pull request describes what changed and why, plus a testing plan
 - [ ] All automated checks pass
 
 **Bonus Points**:
 - [ ] Implement automated testing for your feature
-- [ ] Add comprehensive documentation
+- [ ] Add documentation covering setup and usage
 - [ ] Include security considerations in your review
 
 ### Challenge 2: Collaboration Simulation (🕐 Estimated Time: 60 minutes)
@@ -457,7 +495,7 @@ jobs:
 
 **Requirements**:
 - [ ] Set up a repository with proper branching strategy
-- [ ] Implement comprehensive GitHub Actions workflow
+- [ ] Implement a GitHub Actions workflow that tests, lints, and scans for security issues
 - [ ] Create pull request and issue templates
 - [ ] Set up automated testing, linting, and security scanning
 - [ ] Configure branch protection rules and review requirements
@@ -481,7 +519,7 @@ jobs:
 ### 🏆 Achievement Badges Earned
 - **Source Control Sorcerer** - Master of Git fundamentals and advanced techniques
 - **GitHub Collaboration Wizard** - Expert in team development workflows and code reviews
-- **Automation Enchanter** - Creator of powerful CI/CD pipelines and automated workflows
+- **Automation Enchanter** - Creator of CI/CD pipelines and automated workflows
 - **Code Guardian** - Protector of code quality and development standards
 
 ### ⚡ Skills and Abilities Unlocked
@@ -518,12 +556,12 @@ jobs:
 ## 📚 Quest Resource Codex
 
 ### 📖 Essential Documentation
-- [Git Official Documentation](https://git-scm.com/doc) - Comprehensive Git reference and tutorials
+- [Git Official Documentation](https://git-scm.com/doc) - Full Git command reference and tutorials
 - [GitHub Docs](https://docs.github.com/) - Complete GitHub platform documentation
 - [GitHub Actions Documentation](https://docs.github.com/en/actions) - Automation and workflow guides
 
 ### 🎥 Visual Learning Resources
-- [Git and GitHub Tutorial Series](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) - Comprehensive video tutorials
+- [Git and GitHub Tutorial Series](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) - Step-by-step video tutorials
 - [GitHub Skills](https://skills.github.com/) - Interactive learning courses
 - [Git Immersion](http://gitimmersion.com/) - Hands-on Git tutorial
 
@@ -554,3 +592,10 @@ jobs:
 *Remember: Every commit tells a story, every branch opens new possibilities, and every merge brings the community closer together. Use your newfound powers wisely, mentor other aspiring developers, and continue to expand your mastery of the ever-evolving arts of software development sorcery.*
 
 *May your repositories always be organized, your merges conflict-free, and your automation workflows forever reliable! 🚀✨*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

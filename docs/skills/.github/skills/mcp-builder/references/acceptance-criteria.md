@@ -4,7 +4,9 @@ title: MCP Server Builder Acceptance Criteria
 ---
 # MCP Server Builder Acceptance Criteria
 
-**Skill**: `mcp-builder` **Purpose**: Build high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services **Focus**: Tool definitions, server structure, transport configuration, Python/Node/C# implementations
+**Skill**: `mcp-builder`
+**Purpose**: Build high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services
+**Focus**: Tool definitions, server structure, transport configuration, Python/Node/C# implementations
 
 ---
 

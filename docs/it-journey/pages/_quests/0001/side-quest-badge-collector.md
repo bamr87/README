@@ -5,31 +5,26 @@ categories:
 - Community
 - Customization
 comments: true
-date: 2026-03-20 00:00:00+00:00
-description: Learn how badges are earned and pin your proudest achievements to your
-  character profile
+date: '2026-03-20T00:00:00.000Z'
+description: Discover how achievement badges are auto-earned from your contributions,
+  then pin your proudest three to the Featured section of your profile.
 difficulty: 🟡 Medium
 draft: false
 estimated_time: 30-45 minutes
 excerpt: The Trophy Hall awaits — curate your collection of hard-won badges.
 fmContentType: quest
 keywords:
-- badges
-- achievements
-- gamification
-- contributor profile
-lastmod: 2026-03-21 15:12:32.239000+00:00
-learning_paths:
-  character_classes:
-  - ⚔️ Warrior
-  - 🛡️ Paladin
-  primary_paths:
-  - Community Contributor
-  skill_trees:
-  - Community & Collaboration
+  primary:
+  - badges
+  - achievements
+  secondary:
+  - gamification
+  - contributor profile
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: hands-on
 level: '0001'
-permalink: /quests/side-quest-badge-collector/
+permalink: /quests/0001/badge-collector/
 prerequisites:
   knowledge_requirements:
   - Completed Forge Your Character quest
@@ -41,24 +36,23 @@ primary_technology: yaml
 quest_arc: 'Act I: Arrival at the Guild'
 quest_dependencies:
   recommended_quests:
-  - /quests/side-quest-avatar-forge/
+  - /quests/0001/avatar-forge/
   required_quests:
-  - /quests/forge-your-character/
+  - /quests/0001/forge-your-character/
   unlocks_quests: []
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: side_quest
+redirect_from:
+- /quests/0001/side-quests/badge-collector/
 rewards:
   badges:
   - 🏅 Badge Collector — Curated a pinned badge showcase
   progression_points: 75
-skill_focus:
-- devops
-- frontend
-snippet: Every achievement tells a story. Pin the ones that matter most.
+skill_focus: devops
 source_file: side-quest-badge-collector.md
 tags:
-- lvl-0001
+- '0001'
 - contributor
 - badges
 - achievements
@@ -109,7 +103,7 @@ Badges are **auto-earned** by the stats generator when you hit contribution mile
 
 The stats generator (`scripts/generation/generate_contributor_stats.rb`) checks thresholds after counting your contributions:
 
-```
+```text
 commits >= 1          → first_blood
 commits >= 100        → centurion
 commits >= 1000       → thousand_cuts
@@ -189,3 +183,10 @@ Once you've pinned at least one badge to your Featured section, you've earned th
 ---
 
 > *"A well-curated trophy wall speaks louder than a thousand commits."*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Avatar Forge: Crafting Your Digital Portrait]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

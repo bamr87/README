@@ -1,13 +1,24 @@
 ---
-categories: quests
-date: 2025-11-29 16:46:02+00:00
-description: Master AI-powered development tools, code search, and intelligent workflow
-  integration
-lastmod: 2025-11-29 23:41:31.768000+00:00
-level: 9
-permalink: /quests/level-0011/
+author: IT-Journey Team
+categories:
+- quests
+date: '2025-11-29T16:46:02.000Z'
+description: 'Master AI-powered development tools: GitHub Copilot pair programming,
+  advanced code search, and intelligent workflows that supercharge how you build software.'
+draft: false
+lastmod: '2025-11-29T23:41:31.000Z'
+layout: quest-collection
+level: '0011'
+mermaid: true
+permalink: /quests/0011/
 preview: images/previews/level-0011-development-tools-ai-integration.png
 source_file: README.md
+tags:
+- quests
+- '0011'
+- apprentice
+- ai-assisted
+- development
 title: 'Level 0011: Development Tools & AI Integration'
 ---
 # Level 0011: Development Tools & AI Integration
@@ -26,14 +37,14 @@ Level 0011 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Advanced Git Workflows: Master Rebase, Cherry-pick, and Stash Commands](/quests/level-0011-advanced-git-workflows/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Google Analytics for Jekyll: Complete User Tracking Integration Guide](/quests/level-0011-analytics-integration/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [Custom Domains for GitHub Pages: Professional Website Setup Guide](/quests/level-0011-custom-domains/) | 🟡 Medium | 30-45 minutes | main_quest | 🔮 Placeholder |
-| [The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms](/quests/level-0011-github-pages-hidden-gem/) | 🟢 Easy | 60-90 minutes | main_quest | 🔮 Placeholder |
-| [Jekyll Plugins: Essential Extensions for Powerful Static Sites](/quests/level-0011-jekyll-plugins/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [The PRD Codex: Mastering the Art of Product Reality Distillation](/quests/level-0011-prd-codex-mastery/) | 🟡 Medium | 45-60 minutes | main_quest | ✅ Complete |
-| [Forging the Prompt Crystal: VS Code Copilot Mastery Quest](/quests/level-0011-prompt-crystal-vscode-copilot/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
-| [SEO Optimization: Boost Search Engine Visibility for Jekyll Sites](/quests/level-0011-seo-optimization/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
+| Advanced Git Workflows: Master Rebase, Cherry-pick, and Stash Commands | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [Google Analytics for Jekyll: Complete User Tracking Integration Guide](/quests/0011/analytics-integration/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
+| Custom Domains for GitHub Pages: Professional Website Setup Guide | 🟡 Medium | 30-45 minutes | main_quest | 🔮 Placeholder |
+| [The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms](/quests/0011/github-pages-hidden-gem/) | 🟢 Easy | 60-90 minutes | main_quest | 🔮 Placeholder |
+| [Jekyll Plugins: Essential Extensions for Static Sites](/quests/0011/jekyll-plugins/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [The PRD Codex: Mastering the Art of Product Reality Distillation](/quests/0011/prd-codex-mastery/) | 🟡 Medium | 45-60 minutes | main_quest | ✅ Complete |
+| [Forging the Prompt Crystal: VS Code Copilot Mastery Quest](/quests/0011/prompt-crystal-vscode-copilot/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
+| [SEO Optimization: Boost Search Engine Visibility for Jekyll Sites](/quests/0011/seo-optimization/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 🤖 AI-Powered Development

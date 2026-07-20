@@ -4,7 +4,10 @@ title: Azure Service Bus SDK Acceptance Criteria
 ---
 # Azure Service Bus SDK Acceptance Criteria
 
-**SDK**: `azure-servicebus` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-servicebus`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

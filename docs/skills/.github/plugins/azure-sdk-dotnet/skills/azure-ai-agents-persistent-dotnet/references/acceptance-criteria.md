@@ -4,7 +4,10 @@ title: Azure.AI.Agents.Persistent SDK Acceptance Criteria (.NET)
 ---
 # Azure.AI.Agents.Persistent SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.AI.Agents.Persistent` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Agents.Persistent **Package**: https://www.nuget.org/packages/Azure.AI.Agents.Persistent **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.AI.Agents.Persistent`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Agents.Persistent
+**Package**: https://www.nuget.org/packages/Azure.AI.Agents.Persistent
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

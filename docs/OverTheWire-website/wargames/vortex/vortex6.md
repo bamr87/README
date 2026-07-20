@@ -7,7 +7,8 @@ title: Vortex6
 ---
 Generic Binary Exploitation
 ---------------------------
-You must disassemble this level's exploitable application in order to find the hole.
+You must disassemble this level's exploitable application in order
+to find the hole.
 
 Reading Material
 ----------------

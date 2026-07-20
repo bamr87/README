@@ -175,7 +175,9 @@ After all steps complete, output:
 
 1. **Commit everything:**
    ```bash
-git add wiki/ .github/workflows/ llms.txt AGENTS.md CLAUDE.md git commit -m "docs: add crisp wiki with VitePress site" git push
+   git add wiki/ .github/workflows/ llms.txt AGENTS.md CLAUDE.md
+   git commit -m "docs: add crisp wiki with VitePress site"
+   git push
    ```
 
 2. **Enable GitHub Pages:**

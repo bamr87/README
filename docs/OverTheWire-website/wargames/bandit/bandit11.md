@@ -7,7 +7,8 @@ title: Bandit11
 ---
 Level Goal
 ----------
-The password for the next level is stored in the file **data.txt**, which contains base64 encoded data
+The password for the next level is stored in the file **data.txt**,
+which contains base64 encoded data
 
 Commands you may need to solve this level
 -----------------------------------------

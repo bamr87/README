@@ -27,7 +27,8 @@ az account set --subscription <subscription-id>
 
 ## Phase 2: Get Current Project
 
-Read `PROJECT_RESOURCE_ID` from env or prompt user. Format: `/subscriptions/{sub-id}/resourceGroups/{rg}/providers/Microsoft.CognitiveServices/accounts/{account}/projects/{project}`
+Read `PROJECT_RESOURCE_ID` from env or prompt user. Format:
+`/subscriptions/{sub-id}/resourceGroups/{rg}/providers/Microsoft.CognitiveServices/accounts/{account}/projects/{project}`
 
 Parse ARM ID components:
 

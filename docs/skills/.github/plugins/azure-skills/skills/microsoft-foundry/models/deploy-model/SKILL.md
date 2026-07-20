@@ -70,7 +70,8 @@ User Prompt
 
 Some prompts require two modes in sequence:
 
-**Pattern: Capacity → Deploy** When a user specifies a capacity requirement AND wants deployment:
+**Pattern: Capacity → Deploy**
+When a user specifies a capacity requirement AND wants deployment:
 1. Run **Capacity Discovery** to find regions/projects with sufficient quota
 2. Present findings to user
 3. Ask: "Would you like to deploy with **quick defaults** or **customize settings**?"

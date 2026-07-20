@@ -4,7 +4,9 @@ title: Azure AI Text Translation SDK Acceptance Criteria
 ---
 # Azure AI Text Translation SDK Acceptance Criteria
 
-**SDK**: `azure-ai-translation-text` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-translation-text`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

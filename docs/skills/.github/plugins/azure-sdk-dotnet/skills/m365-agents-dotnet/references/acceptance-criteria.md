@@ -4,7 +4,10 @@ title: Microsoft 365 Agents SDK Acceptance Criteria (.NET)
 ---
 # Microsoft 365 Agents SDK Acceptance Criteria (.NET)
 
-**SDK**: `Microsoft.Agents.*` (Hosting.AspNetCore, Builder, Authentication.Msal, CopilotStudio.Client) **Repository**: https://github.com/microsoft/agents **NuGet Packages**: https://www.nuget.org/packages?q=Microsoft.Agents **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Microsoft.Agents.*` (Hosting.AspNetCore, Builder, Authentication.Msal, CopilotStudio.Client)
+**Repository**: https://github.com/microsoft/agents
+**NuGet Packages**: https://www.nuget.org/packages?q=Microsoft.Agents
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

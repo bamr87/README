@@ -1,19 +1,22 @@
 ---
+author: IT-Journey Team
 categories:
 - Quests
 - Level-0110
 - Data-Engineering
-date: 2025-12-20 20:02:51+00:00
-description: Master the arts of data storage, retrieval, and management through SQL
-  sorcery and NoSQL adventures
+date: '2025-12-20T20:02:51.000Z'
+description: Master data storage and retrieval through SQL sorcery and NoSQL adventures—design
+  schemas, optimize queries, secure databases, and tame backups.
 draft: false
 lastmod: 2025-12-20
-level: 72
+layout: quest-collection
+level: '0110'
+mermaid: true
 permalink: /quests/0110/
 preview: images/previews/level-0110-database-mastery.png
 source_file: README.md
 tags:
-- lvl-0110
+- '0110'
 - databases
 - sql
 - nosql
@@ -183,13 +186,13 @@ Upon completing all main quests:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Backup and Recovery: Data Protection Strategies for Databases](/quests/level-0110-backup-recovery/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Connection Pooling: Efficient Database Resource Management](/quests/level-0110-connection-pooling/) | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [Data Modeling: Schema Design and Database Relationships](/quests/level-0110-data-modeling/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Database Fundamentals: Data Storage and Retrieval](/quests/level-0110-database-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Database Migrations: Schema Evolution and Version Control](/quests/level-0110-database-migrations/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Database Security: Access Control and Data Encryption](/quests/level-0110-database-security/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Query Optimization: Performance Tuning for Fast Database Queries](/quests/level-0110-query-optimization/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [SQL Mastery: Query Language Proficiency for Data Professionals](/quests/level-0110-sql-mastery/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [Backup and Recovery: Data Protection Strategies for Databases](/quests/0110/backup-recovery/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [Connection Pooling: Efficient Database Resource Management](/quests/0110/connection-pooling/) | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
+| [Data Modeling: Schema Design and Database Relationships](/quests/0110/data-modeling/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [Database Fundamentals: Data Storage and Retrieval](/quests/0110/database-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [Database Migrations: Schema Evolution and Version Control](/quests/0110/database-migrations/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [Database Security: Access Control and Data Encryption](/quests/0110/database-security/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [Query Optimization: Performance Tuning for Fast Database Queries](/quests/0110/query-optimization/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [SQL Mastery: Query Language Proficiency for Data Professionals](/quests/0110/sql-mastery/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
 
 

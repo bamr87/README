@@ -1,28 +1,24 @@
 {
   "corpus": {
-    "file_count": 294,
-    "fingerprint": "b2fbb3d5b336bc56",
+    "file_count": 303,
+    "fingerprint": "d935ff046fd09e17",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 2076515
+    "total_bytes": 2017889
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
-      "Table of Contents",
-      "Features",
-      "Features",
-      "Technology Stack",
-      "Architecture & Design Patterns",
-      "Configuration & Environment",
-      "Project Structure",
-      "Prerequisites",
-      "Installation & Setup",
-      "Running the Application"
+      "Start Here",
+      "Current Stack",
+      "Repository Layout",
+      "Development Quick Start",
+      "Testing",
+      "Cleanup Status"
     ],
     "readme": "README.md",
-    "summary": "A Django-based web application integrated with OpenAI to generate AI-powered parody news content. This project combines modern web development practices with artificial intelligence to create a platform for generating and managing satirical news articles.",
-    "title": "Parody News Generator"
+    "summary": "Barodybroject is a Django 5.1 application for generating and managing parody news content with OpenAI. It runs against PostgreSQL, exposes Django REST Framework endpoints, includes a Jekyll static-site sidecar for published content, and deploys to Azure Container Apps with Bicep infrastructure.",
+    "title": "Barodybroject"
   },
   "key_docs": [
     "README.md",
@@ -31,8 +27,8 @@
     "PRD.md",
     ".github/instructions/test.instructions.md",
     "README/scripts/README.md",
-    "scripts/README.md",
-    ".github/instructions/languages.instructions.md"
+    ".github/instructions/languages.instructions.md",
+    "docs/SECURITY_DOCUMENTATION.md"
   ],
   "project": {
     "branch": null,
@@ -52,7 +48,7 @@
   },
   "rollups": {
     "categories": {
-      "barodybroject": 295
+      "barodybroject": 304
     },
     "code_languages": [
       "bash",
@@ -64,7 +60,7 @@
       "html",
       "javascript"
     ],
-    "indexed_documents": 295,
+    "indexed_documents": 304,
     "top_tags": [
       "index",
       "agricultural technology",
@@ -82,7 +78,7 @@
       "racial marginalization",
       "socio-economic marginalization"
     ],
-    "total_words": 231244
+    "total_words": 226006
   },
   "schema_version": "1.0",
   "signals": {
@@ -118,8 +114,12 @@
         "name": "docs"
       },
       {
-        "doc_count": 32,
+        "doc_count": 35,
         "name": ".github"
+      },
+      {
+        "doc_count": 6,
+        "name": ".vscode"
       },
       {
         "doc_count": 5,

@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 232,
-    "fingerprint": "de268d570885f669",
+    "fingerprint": "8a95c989dbb45bc1",
     "path": "docs/OverTheWire-website",
     "present": true,
-    "total_bytes": 126475
+    "total_bytes": 129025
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,9 +21,9 @@
     "wargames/krypton/krypton6.md",
     "information/sshinfra.md",
     "wargames/drifter/drifter0.md",
-    "wargames/bandit/index.md",
     "rules/index.md",
-    "wargames/blacksun/index.md"
+    "wargames/bandit/index.md",
+    "wargames/leviathan/index.md"
   ],
   "project": {
     "branch": "gh-pages",
@@ -49,7 +49,7 @@
     ],
     "indexed_documents": 232,
     "top_tags": [],
-    "total_words": 15901
+    "total_words": 16263
   },
   "schema_version": "1.0",
   "signals": {

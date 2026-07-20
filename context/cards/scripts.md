@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 583bc229e309e2b6
+source_fingerprint: 106ed54fca9c76e7
 tags:
   - automation
   - bash
@@ -24,13 +24,13 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/scripts` - 14 docs |
+| Corpus | `docs/scripts` - 15 docs |
 | External | no |
 
 ## Signals
 
-- no governance signal files detected in the corpus
-- ~16,570 words across 14 indexed documents
+- has CLAUDE.md agent guidance
+- ~16,757 words across 15 indexed documents
 - code samples in: bash, plaintext, yaml
 
 ## Structure
@@ -42,13 +42,13 @@ tags:
 ## Key documents
 
 - [`README.md`](../../docs/scripts/README.md)
+- [`CLAUDE.md`](../../docs/scripts/CLAUDE.md)
 - [`FORKME/FORKME.md`](../../docs/scripts/FORKME/FORKME.md)
 - [`FORKME/FORKME-IMPLEMENTATION-SUMMARY.md`](../../docs/scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md)
 - [`FORKME/FORKME-EXAMPLES.md`](../../docs/scripts/FORKME/FORKME-EXAMPLES.md)
 - [`FORKME/IMPROVEMENTS.md`](../../docs/scripts/FORKME/IMPROVEMENTS.md)
 - [`FORKME/REVIEW-SUMMARY.md`](../../docs/scripts/FORKME/REVIEW-SUMMARY.md)
 - [`STASHME/STASHME-EXAMPLES.md`](../../docs/scripts/STASHME/STASHME-EXAMPLES.md)
-- [`STASHME/STASHME.md`](../../docs/scripts/STASHME/STASHME.md)
 
 ## Query this context
 

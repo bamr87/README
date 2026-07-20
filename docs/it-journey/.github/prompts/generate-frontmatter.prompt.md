@@ -1,46 +1,131 @@
 ---
-category: content-creation
-date: 2025-11-22 16:10:21+00:00
-description: Generate Jekyll frontmatter for posts or quests following IT-Journey
-  standards
-inputs:
-- content_type
-- title
-- description
-name: Generate Frontmatter
-outputs:
-- frontmatter
+date: 2026-05-18 17:21:39+00:00
+description: Generate Jekyll frontmatter for posts, quests, docs, and READMEs that
+  passes IT-Journey CI validation
+lastmod: 2026-05-23 00:00:00+00:00
+mode: agent
 source_file: generate-frontmatter.prompt.md
-title: Generate Jekyll Frontmatter
-version: 1.0.0
+title: Generate Jekyll Frontmatter (validator-aligned)
 ---
-# Generate Jekyll Frontmatter
+# Generate Jekyll Frontmatter (validator-aligned)
 
-Create complete frontmatter for {{ inputs.content_type }} following IT-Journey standards.
+Return YAML frontmatter that passes CI on the first attempt. Constraints differ by content type — **do not apply post rules to quests**.
 
-**Title**: {{ inputs.title }} **Description**: {{ inputs.description }}
+## Hard Constraints — Posts, Docs, READMEs
 
-## Frontmatter Requirements
+Enforced by `.github/workflows/frontmatter-validation.yml`:
 
-### For Posts
-- title, description, date, lastmod
-- keywords (array of 5-10)
-- categories (array)
-- tags (array)
-- author, version
-- learning_objectives (array)
-- target_audience (object with skill_level, prerequisites)
+| Field | Rule |
+|---|---|
+| `title` | **30–60** chars |
+| `description` | **120–160** chars |
+| `date` | ISO 8601 `YYYY-MM-DDTHH:MM:SS.sssZ` |
+| `categories` | YAML **list** |
+| `tags` | YAML **list**, ≥ 3 entries |
+| `author` | non-empty string |
+| `draft` | `false` unless caller specifies otherwise |
 
-### For Quests
-- All post fields PLUS:
-- hierarchy (binary level path)
-- level (binary format)
-- quest_id
-- difficulty (enum)
-- estimated_time
-- prerequisites (array)
-- dependencies (array)
+Count `title` and `description` characters; state counts in a YAML comment. Fix and recount if out of bounds.
+
+**Optional brand keys (posts only):** `section_guide` — a slug from `_data/brand/sections/_registry.yml` (e.g. `devops`, `devops-news-muse`). Usually inferred from the post's folder, so include it only to override (e.g. a muse). `voice_profile` overrides the guide's profile; normally omit. Neither is CI-validated. See [`brand.instructions.md`](../instructions/brand.instructions.md).
+
+## Hard Constraints — Quests (`pages/_quests/**/*.md`)
+
+Enforced by `test/quest-validator/quest_validator.py`. Read [`.github/instructions/quest.instructions.md`](../instructions/quest.instructions.md) and `.frontmatter/templates/quests.md` — **do not invent fields**.
+
+| Field | Rule |
+|---|---|
+| `title` | **10–100** chars (quest rule — not the 30–60 post rule) |
+| `description` | **150–300** chars (quest rule — not the 120–160 post rule) |
+| `level` | quoted 4-digit binary: `"1100"` |
+| `difficulty` | exact emoji+label: `"🟢 Easy"`, `"🟡 Medium"`, `"🔴 Hard"`, `"⚔️ Epic"` |
+| `estimated_time` | `"X-X hours"` or `"X-X minutes"` |
+| `primary_technology` | lowercase string |
+| `quest_type` | `main_quest` \| `side_quest` \| `bonus_quest` \| `epic_quest` |
+| `skill_focus` | `frontend` \| `backend` \| `devops` \| `security` \| `data-engineering` \| `fullstack` |
+| `learning_style` | `hands-on` \| `conceptual` \| `project-based` |
+| `quest_series` | non-empty string |
+| `fmContentType` | `quest` (playable quests) |
+| `layout` | `quest` (playable quests) |
+| `permalink` | must match `quest_type` — see § Permalink below |
+| `keywords` | object with `primary` and `secondary` lists |
+
+**Recommended:** `quest_line`, `quest_arc`, `prerequisites`, `quest_dependencies`, `rewards`, `validation_criteria`, `lastmod`.
+
+**Level READMEs** (`pages/_quests/XXXX/README.md`): use `layout: quest-collection`, `permalink: /quests/XXXX/`, quoted `level`. Do **not** set `fmContentType: quest`.
+
+### Quest permalink by type
+
+| `quest_type` | `permalink` |
+|---|---|
+| `main_quest` | `/quests/XXXX/<slug>/` |
+| `side_quest` | `/quests/XXXX/side-quests/<slug>/` |
+| `bonus_quest` / `epic_quest` | `/quests/codex/<slug>/` |
+
+### Quest dependency URLs
+
+Use full canonical paths in `quest_dependencies` — never bare slugs:
+
+```yaml
+quest_dependencies:
+  required_quests:
+    - /quests/0000/terminal-fundamentals/
+  unlocks_quests:
+    - /quests/0010/next-quest/ # planned quest
+```
+
+### YAML quoting
+
+Quote 4-digit levels and numeric tags to avoid Jekyll `gsub` errors:
+
+```yaml
+level: "1100"
+tags: ["1100", docker, main_quest]
+```
+
+## Per-Type Summary
+
+| Type | Path | Extra rules |
+|---|---|---|
+| `post` | `pages/_posts/**` | Post title/description lengths; `learning_objectives` recommended |
+| `quest` | `pages/_quests/**` (not templates) | Quest title/description lengths; full quest field set above |
+| `doc` | `pages/_docs/**` | Post hard constraints; omit quest-only fields |
+| `readme` | `pages/**/README.md` | Post hard constraints for Jekyll-processed READMEs |
+| `note` | `pages/_notes/**` | Post hard constraints only |
 
 ## Output Format
 
-Return valid YAML frontmatter enclosed in triple dashes.
+Return valid YAML between `---` fences with a comment showing character counts:
+
+```yaml
+---
+# title=48 chars, description=172 chars — quest bounds OK
+title: "Docker Mastery: Container Orchestration Fundamentals"
+description: "Learn container orchestration with Docker Compose: multi-service networking, volume persistence, environment configuration, and production-ready local dev stacks for teams."
+date: 2026-05-18T17:21:39.000Z
+lastmod: 2026-05-18T17:21:39.000Z
+level: "1100"
+difficulty: "🔴 Hard"
+estimated_time: "6-8 hours"
+primary_technology: docker
+quest_type: main_quest
+skill_focus: devops
+learning_style: hands-on
+quest_series: "Container Mastery"
+author: IT-Journey Team
+fmContentType: quest
+layout: quest
+draft: false
+permalink: /quests/1100/docker-mastery/
+# ... remaining recommended fields
+---
+```
+
+## Self-Check
+
+- [ ] Used the correct title/description length band for the content type
+- [ ] Quest: `permalink` matches `quest_type`
+- [ ] Quest: `fmContentType: quest`, `layout: quest`, `draft: false`
+- [ ] Numeric tags and levels quoted in YAML lists
+- [ ] `categories` and `tags` are lists, not strings
+- [ ] No invented fields outside the template / instructions

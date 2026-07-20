@@ -3,24 +3,28 @@ author: IT-Journey Team
 categories:
 - Codex
 - Navigation
-date: 2024-05-28 15:23:32+00:00
-description: Your comprehensive guide to navigating the IT-Journey platform - quests,
-  documentation, tutorials, and learning paths.
+date: '2024-05-28T15:23:32.000Z'
+description: 'Your complete cartographical guide to navigating the IT-Journey realm:
+  explore quests, chronicles, documentation, and structured learning paths.'
 difficulty: 🟢 Easy
 draft: false
 estimated_time: Variable
 fmContentType: codex
 keywords:
-- navigation
-- site-map
-- world-map
-- it-journey
-- learning-paths
-lastmod: 2025-07-23 03:53:06.678000+00:00
+  primary:
+  - navigation
+  - site-map
+  secondary:
+  - world-map
+  - it-journey
+  - learning-paths
+lastmod: '2025-07-23T03:53:06.000Z'
+layout: default
 learning_style: reading
 level: '0000'
+mermaid: true
 permalink: /quests/codex/world-map/
-preview: images/previews/world-map-navigation-guide-to-the-it-journey-realm.png
+preview: /images/previews/world-map-navigation-guide-to-the-it-journey-realm.png
 primary_technology: reference
 quest_series: Codex Reference
 quest_type: side_quest
@@ -80,7 +84,7 @@ graph TD
 | Territory | Path | Description |
 |-----------|------|-------------|
 | **🔧 Master Setup** | `/quickstart/machine-setup/` | Essential development environment configuration |
-| **🛠️ Zer0-Mistakes Foundation** | `/quests/level-0010-epic-quest-zer0-to-her0-cmstyle/` | Core setup and fundamental tools |
+| **🛠️ Zer0-Mistakes Foundation** | `/quests/codex/zer0-to-her0-cmstyle/` | Core setup and fundamental tools |
 | **⚡ Essential Tools Arsenal** | `/quickstart/` | Critical software and utilities |
 | **👣 First Steps Ceremony** | `/quickstart/first-steps/` | Gentle introductions for newcomers |
 
@@ -88,7 +92,7 @@ graph TD
 
 - [Machine Setup Guide](/quickstart/machine-setup/) - Configure your development fortress
 - [Essential Tools](/quickstart/) - Arm yourself with the right weapons
-- [Zer0-Mistakes Starter](/quests/level-0010-epic-quest-zer0-to-her0-cmstyle/) - Foundation principles and practices
+- [Zer0-Mistakes Starter](/quests/codex/zer0-to-her0-cmstyle/) - Foundation principles and practices
 
 ## ⚔️ Journey Domain - The Epic Quest Realm
 
@@ -114,9 +118,9 @@ Battle-tested wisdom and real-world experiences from fellow code warriors who've
 
 #### 📅 Recent Chronicles (2024-2025)
 
-- [AI-Powered Development Workflows](/advanced-version-management-ai-implementation/) - Advanced automation techniques
-- [GitHub Actions Mastery](/debugging-github-actions-workflows-ai-assisted/) - CI/CD optimization
-- [Docker for IT-Journey](/posts/dockering-your-it-journey/) - Containerization strategies
+- [AI-Powered Development Workflows](https://lifehacker.dev) - Advanced automation techniques
+- [GitHub Actions Mastery](https://lifehacker.dev) - CI/CD optimization
+- [Docker for IT-Journey](https://lifehacker.dev) - Containerization strategies
 - Jekyll Theming & Bootstrap (planned) - Site customization
 
 ### ⚔️ Quests Territory (`/quests/`)
@@ -151,82 +155,82 @@ graph TD
 
 #### 🏰 Init World - Character Creation & Foundation
 
-**Location:** `/quests/init_world/`  
+**Location:** `/quests/0000/` (Init World)  
 **Purpose:** Begin your journey and establish your digital identity
 
 | Quest | Difficulty | Description |
 |-------|------------|-------------|
-| [Begin Your IT Journey](/quests/lvl_000/begin-your-it-journey/) | 🌱 n00b | The Hero's Call |
-| [Character Building](/quests/character-building/) | 🌱 n00b | Forge Your Identity |
-| [IT Fundamentals](/quests/lvl_000/it-fundamentals/) | 🌱 n00b | Learn the Ancient Arts |
-| [Character Selection](/quests/lvl_000/character-selection/) | 🟢 Easy | Choose Your Destiny |
-| [OS Selection](/quests/lvl_000/os-selection/) | 🟢 Easy | Pick Your Realm |
+| [Begin Your IT Journey](/quests/0000/begin-your-it-journey/) | 🌱 n00b | The Hero's Call |
+| [Character Building](/quests/0000/character-building/) | 🌱 n00b | Forge Your Identity |
+| [IT Fundamentals](/quests/0000/it-fundamentals/) | 🌱 n00b | Learn the Ancient Arts |
+| [Character Selection](/quests/0000/character-selection/) | 🟢 Easy | Choose Your Destiny |
+| [OS Selection](/quests/0000/os-selection/) | 🟢 Easy | Pick Your Realm |
 
 **Platform-Specific Quests:**
 
-- [Hello n00b](/quests/init_world/hello-noob/) - Your first steps into the digital realm
-- [Hello Windows](/quests/hello-windows/) - Mastering the Microsoft Kingdom
-- [Hello macOS](/quests/hello-macos/) - Conquering the Apple Empire
-- [Hello Linux](/quests/hello-linux/linux-fundamentals/) - Taming the Penguin's Domain
-- [Hello Cloud](/quests/hello-cloud/) - Ascending to the Digital Heavens
+- [Hello n00b](/quests/0000/hello-noob/) - Your first steps into the digital realm
+- [Hello Windows](/quests/0000/hello-windows/) - Mastering the Microsoft Kingdom
+- [Hello macOS](/quests/0000/hello-macos/) - Conquering the Apple Empire
+- [Hello Linux](/quests/0000/linux-fundamentals/) - Taming the Penguin's Domain
+- [Hello Cloud](/quests/0000/hello-cloud/) - Ascending to the Digital Heavens
 
 #### ⚡ Level Progression System
 
-**Level 000 - Apprentice Trials** (`/quests/lvl_000/`)  
+**Level 000 - Apprentice Trials** (`/quests/0000/`)  
 Basic scripting and automation magic
 
-- [Bash Fundamentals](/quests/lvl_000/bash-run/) - Learn the Terminal Incantations
+- [Bash Fundamentals](/quests/0000/side-quests/bash-run/) - Learn the Terminal Incantations
 - `bash_crawl.sh` - Your First Automation Spell
 - `calculator.sh` - Mathematical Magic Basics
 - `profile.sh` - Customize Your Digital Presence
 
-**Level 001 - Journeyman Challenges** (`/quests/lvl_001/`)  
+**Level 001 - Journeyman Challenges** (`/quests/0001/`)  
 Web technologies and advanced scripting
 
-- [Personal Site Creation](/quests/level-0001/personal-site/) - Build Your Digital Castle
+- [Personal Site Creation](/quests/0001/side-quests/personal-site/) - Build Your Digital Castle
 - `js-examples.js` - JavaScript Spell Components
 - `js_testing.js` - Test Your Magical Constructs
 - `python.py` - Pythonic Sorcery Basics
 
-**Level 010 - Master Tier Quests** (`/quests/lvl_0010/`)  
+**Level 010 - Master Tier Quests** (`/quests/0010/`)  
 Complex application development
 
 - Bookstore Application (planned) - Craft a Complete Magical Marketplace
 
-#### 🎨 Frontend Mastery Path (`/quests/frontend/`)
+#### 🎨 Frontend Mastery Path (`/quests/0100/frontend/`)
 
 Become a master of user interfaces and digital aesthetics
 
-- [Frontend Fundamentals](/quests/frontend/) - The Art of Digital Presentation
-- [Frontend Docker Adventures](/quests/frontend-docker/) - Containerized UI Magic
-- [Frontend Level Progression](/quests/level-0100-frontend-levels/) - Structured Learning Path
-- [Level 000 Frontend](/quests/level-0100/frontend-docker-level-000/) - Beginner Container Magic
-- [Level 001 Frontend](/quests/level-0100/frontend-docker-level-001/) - Intermediate UI Sorcery
-- [Level 010 Frontend](/quests/level-0100/frontend-docker-level-010/) - Advanced Interface Wizardry
+- [Frontend Fundamentals](/quests/0100/frontend/) - The Art of Digital Presentation
+- [Frontend Docker Adventures](/quests/0100/frontend-docker/) - Containerized UI Magic
+- [Frontend Level Progression](/quests/0100/frontend/) - Structured Learning Path
+- [Level 000 Frontend](/quests/0100/frontend-docker/) - Beginner Container Magic
+- [Level 001 Frontend](/quests/0100/frontend-docker/) - Intermediate UI Sorcery
+- [Level 010 Frontend](/quests/0100/frontend-docker/) - Advanced Interface Wizardry
 
 #### 📚 Quest Codex (`/quests/codex/`)
 
 Reference materials and navigation aids
 
-- [🗺️ World Map](/quests/codex/world-map/) - This comprehensive navigation guide
+- [🗺️ World Map](/quests/codex/world-map/) - This guide to every quest, doc, and learning path
 - [📖 Glossary](/quests/codex/glossary/) - Dictionary of Digital Spells and Terms
 
 #### 🕰️ Recent Quest Chronicles (2025)
 
-- [Django & Git Mastery](/quests/level-0010-django-and-git/) - Web Framework Sorcery
-- [Action Triggers](/quests/level-0010-action-triggers/) - Automation Spell Casting
-- [Branches & Pull Requests](/quests/level-0010-branches-and-pull-requests/) - Version Control Mastery
-- [Change Log Chronicles](/quests/level-0010-change-logs/) - Document Your Journey
-- [Clean Commit Commitments](/quests/level-0010-commitments-to-clean-commits/) - Perfect Your Git Ritual
-- [AI Automation Revolution](/quests/level-0010-revolutionizing-work-with-ai-automation/) - Summon AI Familiars
-- [Sourcery Code Methods](/quests/level-0100-source-control-sorcery/) - Advanced Coding Incantations
+- [Django & Git Mastery](/quests/0010/django-and-git/) - Web Framework Sorcery
+- [Action Triggers](/quests/0010/action-triggers/) - Automation Spell Casting
+- [Branches & Pull Requests](/quests/0010/branches-and-pull-requests/) - Version Control Mastery
+- [Change Log Chronicles](/quests/0010/change-logs/) - Document Your Journey
+- [Clean Commit Commitments](/quests/0010/commitments-to-clean-commits/) - Perfect Your Git Ritual
+- [AI Automation Revolution](/quests/0010/revolutionizing-work-with-ai-automation/) - Summon AI Familiars
+- [Sourcery Code Methods](/quests/0100/source-control-sorcery/) - Advanced Coding Incantations
 
 ## 📚 Library Domain - The Sacred Repository of Knowledge
 
-*Deep knowledge repositories and comprehensive documentation for when you need to go deeper.*
+*Reference docs and step-by-step guides for when you need to go deeper.*
 
 **Location:** `/docs/`  
-**Purpose:** Comprehensive guides, references, and architectural blueprints
+**Purpose:** Step-by-step guides, references, and architectural blueprints
 
 ### 🏛️ Library Collections
 
@@ -236,7 +240,7 @@ Reference materials and navigation aids
 | **🏗️ Architecture Guides** | `/docs/architecture/` | System Design | Blueprints and patterns |
 | **📋 Configuration Codex** | `/docs/config/` | Setup Guides | System and tool configurations |
 | **🔍 Reference Materials** | `/docs/reference/` | Quick Lookup | APIs, syntax, and commands |
-| **📖 Comprehensive Guides** | `/docs/guides/` | Deep Dives | Step-by-step tutorials |
+| **📖 Step-by-Step Guides** | `/docs/guides/` | Deep Dives | Step-by-step tutorials |
 
 ### 🗂️ Documentation Categories
 
@@ -259,7 +263,6 @@ Access all categories at `/categories/` to explore content by topic:
 
 | Section | Path | Tools | Purpose |
 |---------|------|-------|---------|
-| **💻 Jupyter Labs** | `/notes/jupyter/` | Interactive Notebooks | Code experimentation and analysis |
 | **📝 Personal Notes** | `/notes/` | Markdown Notes | Quick captures and reminders |
 | **🧩 Code Collections** | `/notes/snippets/` | Reusable Code | Curated examples and patterns |
 | **📊 Learning Logs** | `/notes/progress/` | Progress Tracking | Journey documentation |
@@ -281,15 +284,13 @@ it-journey/
 │   ├── _quickstart/          # Quick setup guides
 │   └── scripts/              # Automation scripts
 ├── ⚔️ Journey Content
-│   ├── pages/_posts/         # Chronicles (blog posts)
 │   ├── pages/_quests/        # Epic quests and challenges
 │   └── pages/_about/         # Platform information
 ├── 📚 Library Resources
 │   ├── pages/_docs/          # Documentation collection
 │   └── docs/                 # Additional guides
-├── 📔 Notebook Space
-│   ├── pages/_notes/         # Personal notes
-│   └── pages/_notebooks/     # Jupyter environments
+├── 📔 Notes Space
+│   └── pages/_notes/         # Personal notes
 ├── ⚙️ Site Configuration
 │   ├── _config.yml           # Main Jekyll config
 │   ├── _data/navigation/     # Site navigation
@@ -316,23 +317,21 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 
 - [🏛️ Main Portal](/) - Primary entrance to IT-Journey
 - [🏰 Quest Central](/quests/) - Complete quest index and navigation
-- [📜 Chronicle Archive](/posts/) - All chronicles and blog posts
+- [📜 Chronicle Archive](https://lifehacker.dev) - All chronicles and blog posts
 - [📚 Library Index](/docs/) - Documentation and guides
 - [📔 Personal Notebook](/notes/) - Your learning space
 
 #### 🔧 Platform Management
 
-- [⚙️ Site Configuration](/about/config/) - Jekyll and site settings
-- [🎨 Theme Customization](/about/theme/) - Visual customization guide
+- [🏰 The Self-Operating Website](/quests/codex/self-operating-website/) - Build & configure the site as an epic quest
 - [🤝 Contributing Guide](/about/contributing/) - How to contribute content
-- [🗺️ Complete Sitemap](/about/sitemap/) - Detailed site structure
 - [✨ Feature Overview](/about/features/) - Platform capabilities
 
 #### 🔍 Discovery Tools
 
 - [🔎 Site Search](/search/) - Find content across all domains
-- [🏷️ All Categories](/categories/) - Browse content by topic
-- [📊 Progress Tracking](/progress/) - Monitor your learning journey
+- [🏷️ All Categories](/quests/) - Browse content by topic
+- [📊 Progress Tracking](/quests/home/) - Monitor your learning journey
 
 ### 🛡️ Authentication & Access
 
@@ -345,23 +344,23 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 
 ### 🎯 For Complete Beginners
 
-1. **Start Here:** [Hello n00b Quest](/quests/init_world/hello-noob/)
+1. **Start Here:** [Hello n00b Quest](/quests/0000/hello-noob/)
 2. **Setup Environment:** [Machine Setup Guide](/quickstart/machine-setup/)
-3. **Choose Platform:** [OS Selection Quest](/quests/lvl_000/os-selection/)
-4. **Begin Journey:** [Character Creation](/quests/character-building/)
+3. **Choose Platform:** [OS Selection Quest](/quests/0000/os-selection/)
+4. **Begin Journey:** [Character Creation](/quests/0000/character-building/)
 
 ### ⚡ For Experienced Developers
 
 1. **Skill Assessment:** [Browse Quest Levels](/quests/#level-progression-system)
-2. **Specialization:** [Choose Frontend](/quests/frontend/) or [Backend Path](/quests/lvl_001/)
-3. **Advanced Challenges:** [Level 010 Quests](/quests/lvl_0010/)
+2. **Specialization:** [Choose Frontend](/quests/0100/frontend/) or [Backend Path](/quests/0001/)
+3. **Advanced Challenges:** [Level 010 Quests](/quests/0010/)
 4. **Contribute Content:** [Contributing Guide](/about/contributing/)
 
 ### 🔧 For System Administrators
 
-1. **Platform Setup:** [Configuration Guide](/about/config/)
-2. **Docker Environment:** [Container Setup](/posts/dockering-your-it-journey/)
-3. **CI/CD Integration:** [GitHub Actions](/debugging-github-actions-workflows-ai-assisted/)
+1. **Platform Setup:** [The Self-Operating Website epic](/quests/codex/self-operating-website/)
+2. **Docker Environment:** [Container Setup](https://lifehacker.dev)
+3. **CI/CD Integration:** [GitHub Actions](https://lifehacker.dev)
 4. **Monitoring:** [Site Analytics](/about/features/)
 
 ## 🌟 Hidden Treasures & Advanced Features
@@ -393,3 +392,10 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 - ⚔️ = Epic (expert-level challenges)
 
 *May your code compile, your deployments succeed, and your documentation actually match your implementation!* ⚡✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

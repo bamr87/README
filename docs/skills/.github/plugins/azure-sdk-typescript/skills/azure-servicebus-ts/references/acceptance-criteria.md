@@ -4,7 +4,10 @@ title: Azure Service Bus SDK for TypeScript Acceptance Criteria
 ---
 # Azure Service Bus SDK for TypeScript Acceptance Criteria
 
-**SDK**: `@azure/service-bus` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/servicebus/service-bus **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/service-bus`
+**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/servicebus/service-bus
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

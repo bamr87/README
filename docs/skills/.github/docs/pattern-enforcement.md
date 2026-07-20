@@ -20,9 +20,11 @@ The `azure-identity-py` skill contains:
 Always use `DefaultAzureCredential` for production code:
 
 ```python
-from azure.identity import DefaultAzureCredential from azure.cosmos import CosmosClient
+from azure.identity import DefaultAzureCredential
+from azure.cosmos import CosmosClient
 
-credential = DefaultAzureCredential() client = CosmosClient(url=endpoint, credential=credential)
+credential = DefaultAzureCredential()
+client = CosmosClient(url=endpoint, credential=credential)
 ```
 
 Never hardcode credentials or use connection strings in code.
@@ -130,7 +132,8 @@ logger.info("Operation completed", extra={
 Always use parameterized queries:
 ```python
 # CORRECT
-query = "SELECT * FROM c WHERE c.id = @id" params = [{"name": "@id", "value": user_id}]
+query = "SELECT * FROM c WHERE c.id = @id"
+params = [{"name": "@id", "value": user_id}]
 
 # WRONG - SQL injection risk
 query = f"SELECT * FROM c WHERE c.id = '{user_id}'"

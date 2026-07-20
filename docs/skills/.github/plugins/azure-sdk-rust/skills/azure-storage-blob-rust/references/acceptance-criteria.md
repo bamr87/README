@@ -4,7 +4,9 @@ title: Azure Blob Storage SDK for Rust Acceptance Criteria
 ---
 # Azure Blob Storage SDK for Rust Acceptance Criteria
 
-**Crate**: `azure_storage_blob` **Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/storage/azure_storage_blob **Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
+**Crate**: `azure_storage_blob`
+**Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/storage/azure_storage_blob
+**Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
 
 ---
 

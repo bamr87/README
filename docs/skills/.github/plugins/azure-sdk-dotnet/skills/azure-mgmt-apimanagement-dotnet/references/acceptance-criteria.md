@@ -4,7 +4,10 @@ title: Azure.ResourceManager.ApiManagement SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.ApiManagement SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.ApiManagement` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/apimanagement/Azure.ResourceManager.ApiManagement **Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApiManagement **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.ApiManagement`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/apimanagement/Azure.ResourceManager.ApiManagement
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.ApiManagement
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

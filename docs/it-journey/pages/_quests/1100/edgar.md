@@ -1,15 +1,13 @@
 ---
-attachments: ''
 author: Quest Master IT-Journey Team
 categories:
 - Quests
 - Development
 - Intermediate
 comments: true
-date: 2025-08-21 22:00:59+00:00
-description: Breach the SEC’s EDGAR fortress using public APIs, wrangle XBRL facts,
-  respect rate limits, and turn raw filings into usable insights with Python and AI
-  assistance.
+date: '2025-08-21T22:00:59.000Z'
+description: Breach the SEC EDGAR fortress with its public APIs, wrangle XBRL facts,
+  respect rate limits, and turn raw filings into insights using Python.
 difficulty: 🟡 Medium
 draft: false
 estimated_time: 60-180 minutes
@@ -17,44 +15,43 @@ excerpt: Raid King EDGAR’s data castle and transform SEC filings into structur
   analyzable datasets.
 fmContentType: quest
 keywords:
-- lvl-1100
-- python
-- api
-- sec-edgar
-- xbrl
-- data-engineering
-- project-based
-- gamified-learning
-lastmod: 2025-08-20 04:37:39.870000+00:00
+  primary:
+  - '1100'
+  - python
+  - api
+  - sec-edgar
+  secondary:
+  - xbrl
+  - data-engineering
+  - project-based
+  - gamified-learning
+lastmod: '2025-08-20T04:37:39.000Z'
+layout: quest
 learning_style: hands-on
 level: '1100'
-permalink: /quests/level-1100-conquer-king-edgar/
+mermaid: true
+permalink: /quests/1100/conquer-king-edgar/
 prerequisites:
 - Python 3.10+ and pip/venv (or language of choice)
 - Basic REST API knowledge and JSON handling
 - A User-Agent header string (e.g., 'DataDruidGuild questmaster@financea.com')
 preview: images/previews/quest-to-conquer-king-edgar-the-epic-siege-of-the-.png
-primary_technology: lvl-1100
+primary_technology: python
 quest_series: Data Realm Conquests
 quest_type: main_quest
-related_quests:
-- 'Level 1010: JSON Alchemy – From Chaos to Tables'
-- 'Level 1110: Testing Rituals – Resilience for Data Pipelines'
-- 'Level 10001: Data Vis – Charts and Dashboards'
+redirect_from:
+- /quests/1100/edgar/
+- /quests/1100/edgar/
 rewards:
 - 🏆 EDGAR Slayer Badge
 - ⚡ Stronger API + data wrangling skills
 - 🛠️ SEC XBRL and Frames API familiarity
 - 🎯 Reusable EDGAR data pipeline artifacts
-skill_focus:
-- Quests
-- Development
-- Intermediate
-snippet: Breach the SEC Data Castle and turn EDGAR’s scrolls into insight.
+skill_focus: fullstack
 source_file: edgar.md
-sub-title: 'Level 1100 (12) Quest: Epic API Data Extraction and Analysis'
+sub_title: 'Level 1100 (12) Quest: Epic API Data Extraction and Analysis'
 tags:
-- lvl-1100
+- '1100'
 - python
 - api
 - sec-edgar
@@ -405,3 +402,10 @@ graph TD
 ---
 
 🎉 Congratulations, Hero! You’ve humbled King EDGAR—not by theft, but by wisdom. Use these powers ethically, comply with SEC edicts, and share knowledge widely. Onward—may your APIs never 429! ⚔️📜✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

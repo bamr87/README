@@ -1,6 +1,8 @@
 ---
-date: 2021-12-29 10:19:09+00:00
-lastmod: 2024-05-11 22:54:10.783000+00:00
+date: '2021-12-29T10:19:09.000Z'
+description: The comprehension of our universe is constantly morphed by the information
+  available and what is considered to be true. That truth is the core of…
+lastmod: '2024-05-11T22:54:10.000Z'
 source_file: purpose.md
 title: Mission
 ---

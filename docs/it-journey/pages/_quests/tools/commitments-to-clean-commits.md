@@ -1,5 +1,4 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - Development
@@ -8,36 +7,32 @@ categories:
 - Programming
 - Project Management
 comments: false
-date: 2025-04-18 13:43:43+00:00
-description: Learn how to maintain clean commits in your projects for better collaboration
-  and version control efficiency.
+date: '2025-04-18T13:43:43.000Z'
+description: 'Master commit hygiene the wizardly way: write atomic commits, craft
+  clear conventional messages, dodge cursed habits, and tidy history with rebase.'
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-60 minutes
-excerpt: null
 fmContentType: quest
 keywords:
-- clean commits
-- Git
-- GitHub
-- tutorial
-- version control
-lastmod: 2025-04-18 19:27:42.681000+00:00
+  primary:
+  - clean commits
+  - Git
+  secondary:
+  - GitHub
+  - tutorial
+  - version control
+lastmod: '2025-04-18T19:27:42.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-commitments-to-clean-commits/
+permalink: /quests/0010/commitments-to-clean-commits/
 preview: images/previews/commitments-to-clean-commits.png
 primary_technology: clean commits
 quest_series: Tools Collection
 quest_type: main_quest
-skill_focus:
-- Development
-- Git Best Practices
-- IT Consulting
-- Programming
-- Project Management
-snippet: null
+skill_focus: devops
 source_file: commitments-to-clean-commits.md
-sub-title: null
 tags:
 - clean commits
 - Git
@@ -79,7 +74,7 @@ Commits should read like commands from an ancient book. Short, imperative, and f
 
 ### **✨ The Format:**
 
-```
+```text
 [type]: Brief, powerful description
 
 Optional: Details for fellow wizards.
@@ -106,7 +101,7 @@ Optional: Details for fellow wizards.
 **🧪 Example Commit Scrolls**
 -----------------------------
 
-```
+```yaml
 fix: Prevent unicorns from breaking login form
 
 Login page now properly handles magical input.
@@ -115,13 +110,13 @@ Login page now properly handles magical input.
 
 Fixes #99
 ```
-```
+```yaml
 feat: Summon dark mode theme toggle
 
 - Adds crescent moon toggle in navbar
 - Stores user preference in local storage
 ```
-```
+```bash
 chore: Update potion dependencies to latest brew
 ```
 
@@ -149,3 +144,10 @@ These are scrolls written in the ancient language of confusion. Burn them.
 Now go forth and cast tiny, purposeful commits that will echo through the halls of version control! 🏰
 
 Ready to open the next dusty tome? We'll be diving into **Changelogs & Documentation**, the sacred texts of any thriving code kingdom. Shall we?
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

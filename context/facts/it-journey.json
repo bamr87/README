@@ -1,37 +1,37 @@
 {
   "corpus": {
-    "file_count": 540,
-    "fingerprint": "93001959d2865ba3",
+    "file_count": 883,
+    "fingerprint": "0e0095ae07a6ed73",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 6541663
+    "total_bytes": 11330148
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
       "\ud83d\udcca Quick Comparison: IT-Journey vs Traditional Learning",
-      "\ud83d\udd17 Guardian 2.0: Advanced Link Health Monitoring",
       "\ud83d\ude80 Getting Started",
       "\ud83d\udcda Content Structure",
       "\ud83d\udee0\ufe0f Key Features",
       "\ud83d\udd27 Technical Implementation",
+      "\ud83d\udd17 Link Health Guardian v3.0",
       "\ud83d\udcc8 Learning Outcomes",
       "\u2753 Frequently Asked Questions",
       "\ud83d\udcd6 Documentation",
       "\ud83e\udd1d Contributing"
     ],
     "readme": "README.md",
-    "summary": "Welcome to the IT-Journey repository - your guide through the ever-evolving landscape of information technology. According to the GitHub Education Community, open-source learning platforms like IT-Journey have helped over 100 million developers worldwide improve their skills since GitHub's founding in 2008. This repos\u2026",
+    "summary": "Welcome to IT-Journey, a gamified, open-source platform for learning IT and software development through quests \u2014 progressive, hands-on adventures that take you from zer0 to her0. The site is built around a single gamified learning path, supported by reference docs, quick-start guides, and curated notes. The repositor\u2026",
     "title": "IT-Journey"
   },
   "key_docs": [
     "README.md",
+    "CLAUDE.md",
     "AGENTS.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
     "SECURITY.md",
     "CODE_OF_CONDUCT.md",
-    ".github/instructions/quest.instructions.md",
     ".github/copilot-instructions.md"
   ],
   "project": {
@@ -51,43 +51,43 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 540
+      "it-journey": 883
     },
     "code_languages": [
       "bash",
       "plaintext",
-      "markdown",
       "yaml",
-      "mermaid",
+      "markdown",
       "powershell",
       "python",
-      "html"
+      "mermaid",
+      "text"
     ],
-    "indexed_documents": 540,
+    "indexed_documents": 883,
     "top_tags": [
-      "hands-on",
-      "gamified-learning",
       "main_quest",
+      "gamified-learning",
+      "hands-on",
+      "walkthrough",
+      "quest-perfection",
       "jekyll",
-      "devops",
-      "python",
       "automation",
+      "devops",
+      "gh-600",
+      "warn",
+      "fail",
+      "agentic-ai",
+      "ci-cd",
       "github-actions",
-      "tutorial",
-      "frontend",
-      "data-engineering",
-      "docker",
-      "git",
-      "lvl-0001",
-      "documentation"
+      "terminal"
     ],
-    "total_words": 747116
+    "total_words": 1409070
   },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": true,
     "has_changelog": true,
-    "has_claude_md": false,
+    "has_claude_md": true,
     "has_contributing": true,
     "has_schema_md": false,
     "has_security_policy": true
@@ -96,6 +96,7 @@
     "root_docs": [
       "AGENTS.md",
       "CHANGELOG.md",
+      "CLAUDE.md",
       "CODE_OF_CONDUCT.md",
       "CONTRIBUTING.md",
       "PRD.md",
@@ -107,44 +108,44 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 401,
+        "doc_count": 578,
         "name": "pages"
       },
       {
-        "doc_count": 32,
-        "name": ".github"
-      },
-      {
-        "doc_count": 24,
-        "name": "docs"
-      },
-      {
-        "doc_count": 21,
+        "doc_count": 94,
         "name": "test"
       },
       {
-        "doc_count": 20,
+        "doc_count": 43,
+        "name": ".github"
+      },
+      {
+        "doc_count": 31,
+        "name": "docs"
+      },
+      {
+        "doc_count": 28,
+        "name": ".claude"
+      },
+      {
+        "doc_count": 27,
+        "name": ".cms"
+      },
+      {
+        "doc_count": 25,
         "name": "TODO"
       },
       {
-        "doc_count": 11,
+        "doc_count": 12,
         "name": "scripts"
+      },
+      {
+        "doc_count": 8,
+        "name": "_data"
       },
       {
         "doc_count": 6,
         "name": ".crush"
-      },
-      {
-        "doc_count": 5,
-        "name": ".frontmatter"
-      },
-      {
-        "doc_count": 3,
-        "name": "_data"
-      },
-      {
-        "doc_count": 3,
-        "name": "link-check-results"
       }
     ]
   }

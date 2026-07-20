@@ -93,7 +93,7 @@ title: 🔍 SEO Optimization Project
 ### Phase 3: Content Gap Filling (Week 3-4) ✅ COMPLETE
 **Target**: Create new content for high-demand topics
 
-- [x] Jekyll GitHub Pages deployment guide (EXISTS: /quests/level-001-github-pages-portal/)
+- [x] Jekyll GitHub Pages deployment guide (EXISTS: /quests/0001/github-pages-portal/)
 - [x] Terminal shortcuts cheat sheet (/docs/terminal-shortcuts-cheat-sheet/)
 - [x] Docker for beginners tutorial (/posts/docker-beginners-tutorial/)
 - [x] VS Code extensions guide (/posts/essential-vscode-extensions-developers/)

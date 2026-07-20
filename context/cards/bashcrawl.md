@@ -1,5 +1,5 @@
 ---
-title: "\u2694\ufe0f Bashcrawl: The Terminal Adventure Game"
+title: "\u2694\ufe0f Bashcrawl \u2014 learn the terminal by playing"
 repo: bamr87/bashcrawl
 category: project-card
 kind: game
@@ -7,16 +7,16 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 1519dfd096a1715b
+source_fingerprint: 5aa44e46e3422d9c
 tags:
   - bash
   - education
   - game
 ---
 
-# ⚔️ Bashcrawl: The Terminal Adventure Game
+# ⚔️ Bashcrawl — learn the terminal by playing
 
-> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. v3.0.0 — Textual TUI, quest system, agent mode, and more.
+> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. v3.1 — one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.
 
 | | |
 |---|---|
@@ -24,18 +24,19 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 36 docs |
+| Corpus | `docs/bashcrawl` - 40 docs |
 | External | no |
 
 ## Signals
 
+- has CLAUDE.md agent guidance
 - keeps a changelog
-- ~55,242 words across 36 indexed documents
+- ~53,746 words across 40 indexed documents
 - code samples in: bash, plaintext, json, yaml, python, text, markdown, gitignore
 
 ## Structure
 
-- `docs/` (18 docs)
+- `docs/` (21 docs)
 - `src/` (6 docs)
 - `.github/` (5 docs)
 - `entrance/` (3 docs)
@@ -45,13 +46,13 @@ tags:
 ## Key documents
 
 - [`README.md`](../../docs/bashcrawl/README.md)
+- [`CLAUDE.md`](../../docs/bashcrawl/CLAUDE.md)
 - [`CHANGELOG.md`](../../docs/bashcrawl/CHANGELOG.md)
 - [`docs/demo-walkthrough.md`](../../docs/bashcrawl/docs/demo-walkthrough.md)
 - [`.github/instructions/scrolls.instructions.md`](../../docs/bashcrawl/.github/instructions/scrolls.instructions.md)
 - [`docs/log-viewer-reference.md`](../../docs/bashcrawl/docs/log-viewer-reference.md)
 - [`docs/demo-critical-path.md`](../../docs/bashcrawl/docs/demo-critical-path.md)
 - [`docs/walkthrough.md`](../../docs/bashcrawl/docs/walkthrough.md)
-- [`.github/instructions/rooms.instructions.md`](../../docs/bashcrawl/.github/instructions/rooms.instructions.md)
 
 ## Query this context
 

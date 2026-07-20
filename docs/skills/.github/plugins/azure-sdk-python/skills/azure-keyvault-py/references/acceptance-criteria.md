@@ -4,7 +4,10 @@ title: Azure Key Vault SDK Acceptance Criteria
 ---
 # Azure Key Vault SDK Acceptance Criteria
 
-**SDK**: `azure-keyvault-secrets`, `azure-keyvault-keys`, `azure-keyvault-certificates` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/keyvault **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-keyvault-secrets`, `azure-keyvault-keys`, `azure-keyvault-certificates`
+**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/keyvault
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

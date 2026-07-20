@@ -177,7 +177,8 @@ resource staticWebApp 'Microsoft.Web/staticSites@2022-09-01' = {
 ### App Service
 
 ```yaml
-services: api:
+services:
+  api:
     project: ./src/api
     language: dotnet
     host: appservice
@@ -186,7 +187,8 @@ services: api:
 ## Hooks (Optional)
 
 ```yaml
-hooks: preprovision:
+hooks:
+  preprovision:
     shell: sh
     run: ./scripts/setup.sh
   postprovision:

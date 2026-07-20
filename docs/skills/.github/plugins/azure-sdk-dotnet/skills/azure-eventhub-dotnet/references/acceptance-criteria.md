@@ -4,7 +4,10 @@ title: Azure Event Hubs SDK Acceptance Criteria (.NET)
 ---
 # Azure Event Hubs SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Messaging.EventHubs` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventhub **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Messaging.EventHubs`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/eventhub
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

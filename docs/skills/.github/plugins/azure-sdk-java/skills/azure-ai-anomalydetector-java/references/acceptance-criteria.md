@@ -4,7 +4,9 @@ title: Azure AI Anomaly Detector SDK for Java Acceptance Criteria
 ---
 # Azure AI Anomaly Detector SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-anomalydetector` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/anomalydetector/azure-ai-anomalydetector **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-anomalydetector`
+**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/anomalydetector/azure-ai-anomalydetector
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

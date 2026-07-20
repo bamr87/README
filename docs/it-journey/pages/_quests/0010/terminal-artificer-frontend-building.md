@@ -1,41 +1,35 @@
 ---
-attachments: ''
 author: Quest Master Copilot
 categories:
 - Quests
 - Development
 - Foundation
 comments: true
-date: 2025-11-19 22:47:27+00:00
+date: '2025-11-19T22:47:27.000Z'
 description: Master the art of crafting beautiful, interactive frontends for your
   shell scripts using Gum, transforming raw command-line magic into elegant tools.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-45 minutes
 excerpt: Transform your raw shell scripts into interactive, user-friendly tools with
   menus, inputs, and beautiful styling.
 fmContentType: quest
 keywords:
-- lvl-0010
-- gum
-- shell-scripting
-- frontend
-- cli
-- tool-mastery
-- hands-on
-lastmod: 2025-11-29 01:07:17.270000+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - Software Development
-  - System Administration
-  skill_trees:
-  - Terminal Mastery
-  - DevOps Automation
+  primary:
+  - '0010'
+  - gum
+  - shell-scripting
+  secondary:
+  - frontend
+  - cli
+  - tool-mastery
+  - hands-on
+lastmod: '2025-11-29T01:07:17.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-terminal-artificer/
+mermaid: true
+permalink: /quests/0010/terminal-artificer-frontend-building/
 prerequisites:
   knowledge_requirements:
   - Basic understanding of shell scripting (variables, execution)
@@ -46,23 +40,19 @@ prerequisites:
   - A terminal emulator (iTerm2, Windows Terminal, Alacritty)
   - Package manager (Homebrew, Winget, Scoop, or Apt)
 preview: images/previews/terminal-artificer-forging-the-glass-interface.png
-primary_technology: lvl-0010
+primary_technology: bash
 quest_arc: Tool Mastery Arc
 quest_dependencies:
   recommended_quests: []
-  required_quests: []
+  required_quests:
+  - /quests/0001/terminal-mastery/
   unlocks_quests: []
 quest_line: Foundation Path
-quest_mapping:
-  biome: Terminal
-  coordinates: '[1, 2]'
-  realm: Development
-  region: Foundation
-quest_relationships:
-  parallel_quests: []
-  parent_quest: /quests/level-0010-terminal-mastery/
 quest_series: Terminal Mastery Path
 quest_type: side_quest
+redirect_from:
+- /quests/0010/side-quests/terminal-artificer/
+- /quests/0010/side-quests/terminal-artificer-frontend-building/
 rewards:
   badges:
   - 🏆 Glass Interface Artificer
@@ -73,15 +63,11 @@ rewards:
   - 🎯 CLI Design Patterns
   unlocks_features:
   - Ability to create user-friendly CLI tools
-skill_focus:
-- Quests
-- Development
-- Foundation
-snippet: Forge the glass interface between wizard and machine.
+skill_focus: fullstack
 source_file: terminal-artificer-frontend-building.md
-sub-title: 'Level 0010 (2) Quest: Terminal Frontend Building'
+sub_title: 'Level 0010 (2) Quest: Terminal Frontend Building'
 tags:
-- lvl-0010
+- '0010'
 - gum
 - shell-scripting
 - frontend
@@ -101,7 +87,7 @@ validation_criteria:
   - Build a multi-step interactive form
   - Implement a confirmation dialog
 ---
-*In the raw chaotic energy of the command line, powerful spells (scripts) are often cast with cryptic runes (arguments) and dangerous incantations. A single typo can spell disaster. As a Terminal Artificer, you have learned that power without control is chaos. You seek to forge a "Glass Interface"—a layer of elegance and order that allows even the uninitiated to wield powerful magic safely.*
+*In the raw chaotic energy of the command line, far-reaching spells (scripts) are often cast with cryptic runes (arguments) and dangerous incantations. A single typo can spell disaster. As a Terminal Artificer, you have learned that reach without control is chaos. You seek to forge a "Glass Interface"—a layer of elegance and order that allows even the uninitiated to wield destructive magic safely.*
 
 *Today, you will learn to craft these interfaces using **Gum**, a mystical artifact from the Charm realm that brings glamour and interactivity to your shell scripts.*
 
@@ -241,7 +227,7 @@ echo "Welcome, $NAME. Your secret is safe with me."
 
 ## 🧙‍♂️ Chapter 3: The Seal of Binding (Confirmation)
 
-*Powerful spells require safeguards. Before deleting a kingdom (or a file), an Artificer must ask: "Are you sure?"*
+*Destructive spells require safeguards. Before deleting a kingdom (or a file), an Artificer must ask: "Are you sure?"*
 
 ### ⚔️ Skills You'll Forge in This Chapter
 - Creating confirmation dialogs.
@@ -368,3 +354,10 @@ Now that you can build interfaces, consider:
 ---
 
 *May your prompts be clear, your inputs sanitized, and your interfaces forever shiny!* ⚔️✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

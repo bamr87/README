@@ -4,7 +4,9 @@ title: Azure App Configuration Acceptance Criteria
 ---
 # Azure App Configuration Acceptance Criteria
 
-**SDK**: `azure-appconfiguration` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-appconfiguration`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

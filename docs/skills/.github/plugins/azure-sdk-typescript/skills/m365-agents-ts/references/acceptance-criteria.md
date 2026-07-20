@@ -4,7 +4,9 @@ title: Microsoft 365 Agents SDK Acceptance Criteria (TypeScript)
 ---
 # Microsoft 365 Agents SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@microsoft/agents-hosting`, `@microsoft/agents-hosting-express`, `@microsoft/agents-activity`, `@microsoft/agents-copilotstudio-client` **Repository**: https://github.com/microsoft/Agents-for-js **Purpose**: Skill testing acceptance criteria for validating generated TypeScript code correctness
+**SDK**: `@microsoft/agents-hosting`, `@microsoft/agents-hosting-express`, `@microsoft/agents-activity`, `@microsoft/agents-copilotstudio-client`
+**Repository**: https://github.com/microsoft/Agents-for-js
+**Purpose**: Skill testing acceptance criteria for validating generated TypeScript code correctness
 
 ---
 

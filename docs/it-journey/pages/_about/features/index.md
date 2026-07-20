@@ -1,14 +1,14 @@
 ---
 categories:
 - about
-date: 2024-03-12 19:51:39+00:00
+date: '2024-03-12T19:51:39.000Z'
 description: User-facing features and educational tools available on IT-Journey platform.
-draft: published
+draft: false
 excerpt: Comprehensive list of learning features, educational tools, and community
   capabilities.
 inspiration:
 - features are the foundation of the future
-lastmod: 2025-10-13 22:52:35.526000+00:00
+lastmod: '2025-10-13T22:52:35.000Z'
 permalink: /about/features/
 preview: null
 quest: /quests/featured-future/
@@ -24,17 +24,16 @@ type: default
 ---
 ## Educational Features
 
-These are the learning-focused features that make IT-Journey a comprehensive educational platform.
+These are the learning-focused features that make IT-Journey an end-to-end educational platform, from interactive quests to documentation, search, and community tools.
 
 ### 🎓 Learning & Content Features
 
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature                                               | Status      | Description | Quest |
 | ----------------------------------------------------- | ----------- | ----------- | ----- |
-| **AI-Powered Learning Paths**                         | ✅ Active   | Personalized learning recommendations using AI | [AI Journey](/quests/ai-powered-learning/) |
+| **AI-Powered Learning Paths**                         | ✅ Active   | Personalized learning recommendations using AI | [AI Journey](/quests/) |
 | **Interactive Quests System**                         | ✅ Active   | Gamified learning challenges and exercises | [Quest System](/quests/) |
-| **Hands-on Notebooks**                                | ✅ Active   | Jupyter notebooks for practical coding | [Notebooks](/notebooks/) |
-| **Progressive Skill Levels**                          | ✅ Active   | Structured progression from zero to hero | [Levels](/quests/levels/) |
+| **Progressive Skill Levels**                          | ✅ Active   | Structured progression from zero to hero | [Levels](/quests/home/) |
 | **Community Discussions**                             | ✅ Active   | GitHub Discussions for peer learning | [Join Discussion](https://github.com/bamr87/it-journey/discussions) |
 | **Collaborative Learning**                            | ✅ Active   | Open-source contribution opportunities | [Contributing](/about/contributing/) |
 
@@ -43,7 +42,7 @@ These are the learning-focused features that make IT-Journey a comprehensive edu
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature                                               | Status      | Description |
 | ----------------------------------------------------- | ----------- | ----------- |
-| **Comprehensive Documentation**                       | ✅ Active   | Detailed guides and tutorials |
+| **Step-by-Step Documentation**                        | ✅ Active   | Detailed guides and tutorials |
 | **AI-Generated Documentation**                        | ✅ Active   | Automated content updates and summaries |
 | **Code Examples & Snippets**                          | ✅ Active   | Practical code demonstrations |
 | **Programming Language Cheat Sheets**                 | ✅ Active   | Quick reference guides |
@@ -65,7 +64,7 @@ These are the learning-focused features that make IT-Journey a comprehensive edu
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature                                               | Status      | Description |
 | ----------------------------------------------------- | ----------- | ----------- |
-| **Comment System (giscus)**                           | ✅ Active   | GitHub-based discussions on posts |
+| **Comment System (giscus)**                           | ✅ Active   | GitHub-based discussions on content pages |
 | **Contributor Profiles**                              | ✅ Active   | Showcase community contributors |
 | **GitHub Integration**                                | ✅ Active   | Direct editing and contributions |
 | **Progress Tracking**                                 | 🔄 Planned  | Track your learning journey |

@@ -4,7 +4,10 @@ title: Azure Storage File Share SDK Acceptance Criteria
 ---
 # Azure Storage File Share SDK Acceptance Criteria
 
-**SDK**: `azure-storage-file-share` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-file-share **Commit**: `azure-storage-file-share_12.24.0` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-storage-file-share`
+**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-file-share
+**Commit**: `azure-storage-file-share_12.24.0`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

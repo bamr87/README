@@ -1,0 +1,261 @@
+---
+author: IT-Journey Team
+categories:
+- Quests
+- Terminal
+- Bashcrawl
+date: '2026-05-22T00:00:00.000Z'
+description: Master file types with ls -F, create alias shortcuts, and discover the
+  emerald amulet in Bashcrawl's Cellar. Completing this chamber unlocks four deeper
+  areas.
+difficulty: 🟢 Easy
+draft: false
+estimated_time: 20-25 minutes
+excerpt: Use ls -F, file, and aliases to map cellar artifacts, collect the emerald
+  amulet, and unlock four branching dungeon paths.
+fmContentType: quest
+keywords:
+  primary:
+  - ls -F command
+  - bash alias
+  - file types terminal
+  - emerald amulet bashcrawl
+  secondary:
+  - shell shortcuts
+  - bash tutorial
+  - terminal navigation
+lastmod: '2026-05-23T02:30:23.000Z'
+layout: quest
+learning_style: hands-on
+level: '0000'
+permalink: /quests/0000/cellar/
+prerequisites:
+- Complete either the Entrance or Workshop side-quest
+primary_technology: bash
+quest_arc: Terminal Mastery Arc
+quest_dependencies:
+  recommended_quests: []
+  required_quests:
+  - /quests/0000/entrance/
+  - /quests/0000/bashcrawl/
+  unlocks_quests:
+  - /quests/0000/armoury/
+  - /quests/0000/hidden-chapel/
+  - /quests/0000/vault/
+  - /quests/0000/scrap/
+quest_line: Foundation Path
+quest_series: Bashcrawl Adventure Path
+quest_type: side_quest
+redirect_from:
+- /quests/0000/side-quests/cellar/
+rewards:
+- Emerald Amulet
+- Alias and file-type mastery
+skill_focus: fullstack
+source_file: cellar.md
+tags:
+- bashcrawl
+- terminal
+- bash
+- aliases
+- file-types
+- '0000'
+title: e.g. /home/yourname/bashcrawl/ENTRANCE/cellar  (the ... is your install path)
+validation_criteria:
+- Use ls -F and explain every symbol
+- Create and use at least one alias
+- Collect the emerald amulet
+- Identify four exit paths from the cellar
+---
+*The cellar reeks of wine and secrets. Barrels line the walls; cobwebs drape the ceiling. Four iron doors lead deeper into the dungeon — armoury, chapel, vault, scrap. But first you must find the emerald amulet.*
+
+## 🕹️ Play This Chamber
+
+This page is your **walkthrough and strategy guide** — play right here in the browser, then follow the steps below.
+
+> The `{% raw %}{% include %}{% endraw %}` tag below renders an interactive terminal on the published site; in the raw Markdown source it just looks like a macro.
+
+{% include bashcrawl-terminal.html room="Cellar" %}
+
+## 🎯 Quest Objectives
+
+- [ ] Identify every file type in the cellar using `ls -F`
+- [ ] Use the `file` command to interrogate items
+- [ ] Create a useful alias to speed up exploration
+- [ ] Find and collect the emerald amulet
+- [ ] Locate all four exits (armoury, chapel, vault, scrap)
+
+## 🗺️ Quest Prerequisites
+
+- [Entrance side-quest](/quests/0000/side-quests/entrance/) complete
+- Know how to use `ls`, `cd`, and `cat`
+
+## ⚡ Command Cheatsheet
+
+| Command | What It Does |
+|---------|-------------|
+| `ls -F` | List with type markers |
+| `ls -la` | Long listing, including hidden files |
+| `file filename` | Describe what type of file this is |
+| `alias name='cmd'` | Create a command shortcut |
+| `alias` | List all defined aliases |
+| `unalias name` | Remove an alias |
+| `type name` | Show how a name is resolved (builtin/alias/function/file) |
+
+### `ls -F` Symbol Key
+
+| Symbol | Meaning |
+|--------|---------|
+| `/` | Directory |
+| `*` | Executable file |
+| `@` | Symbolic link |
+| `=` | Socket |
+| `\|` | Named pipe (FIFO) |
+| *(none)* | Regular file |
+
+## 🗺️ Walkthrough
+
+### Step 0 — Enter the cellar
+
+First launch the game shell — this drops you *inside* the dungeon at an interactive prompt:
+
+```bash
+./main.sh --interactive
+```
+
+Once you see the game prompt, descend from the entrance into the CELLAR:
+
+```bash
+cd cellar
+pwd
+# e.g. /home/yourname/bashcrawl/ENTRANCE/cellar  (the ... is your install path)
+```
+
+If you arrived here straight from the [Entrance walkthrough](/quests/0000/side-quests/entrance/), you are already in the game shell — just `cd cellar`.
+
+### Step 1 — Survey the cellar
+
+```bash
+ls -F
+# Example output:
+# emerald_amulet  armoury/  chapel/  vault/  scrap/  dusty_scroll  recipe*
+```
+
+Notice the variety: a regular file (`emerald_amulet`), directories (`/`), and an executable (`recipe*`). The `*` after `recipe` is the executable marker `ls -F` adds — it is not part of the filename, and running the recipe is optional.
+
+### Step 2 — Investigate with `file`
+
+```bash
+file dusty_scroll
+# dusty_scroll: ASCII text
+
+file recipe
+# recipe: Bourne-Again shell script, ASCII text executable
+```
+
+`file` reads the file's magic bytes — much more reliable than guessing from the name.
+
+### Step 3 — Read the scroll
+
+```bash
+cat dusty_scroll
+```
+
+The scroll confirms the emerald amulet rests here in the cellar and warns about hidden traps in the deeper chambers.
+
+### Step 4 — Collect the amulet
+
+```bash
+cat emerald_amulet
+```
+
+Reading it adds it to your inventory. Verify with `inventory` — a special command the bashcrawl game environment provides (not a standard Unix command):
+
+```bash
+inventory
+# Shows: emerald amulet ✓
+```
+
+### Step 5 — Create a helpful alias
+
+```bash
+# Quick inventory check shortcut
+alias inv='inventory'
+
+# Quick navigation shortcut
+alias back='cd ..'
+
+# Verify
+alias
+```
+
+Curious how the shell resolves a name? `type` tells you whether it is a builtin, an alias, a function, or a file on disk:
+
+```bash
+type ls
+# On Debian/Ubuntu: ls is aliased to `ls --color=auto`
+# On a minimal system: ls is /bin/ls
+```
+
+Aliases last only for the current session unless added to `~/.bashrc` or `~/.bash_profile`.
+
+### Step 6 — Identify all four exits
+
+```bash
+ls -F
+# armoury/  chapel/  vault/  scrap/
+```
+
+The output above is abbreviated to highlight the four doorways — the regular files from Step 1 (`emerald_amulet`, `dusty_scroll`, `recipe*`) are still listed too. Each directory leads to a distinct area of the dungeon. You can tackle them in any order.
+
+## 💡 Common Pitfalls
+
+| Problem | Cause | Fix |
+|---------|-------|-----|
+| `alias: bad alias name` | Space in alias name | Use underscores: `alias my_cmd='...'` |
+| `inventory` not found | Not in game shell | Start with `./main.sh --interactive` |
+| Can't find emerald amulet | Wrong directory | `pwd`; make sure you are in CELLAR |
+| All four exits missing | Older game version | Run `./setup.sh --repair` |
+
+## ✅ Validation
+
+- [ ] You can explain every `ls -F` symbol from memory
+- [ ] You created and tested at least one alias
+- [ ] The emerald amulet is in your inventory
+- [ ] You know which four chambers you can enter next
+
+## ➡️ Next Steps
+
+Choose your next chamber — all four are unlocked:
+
+| Chamber | Skills | Link |
+|---------|--------|------|
+| ⚔️ Armoury | Permissions, `chmod`, combat | [Armoury](/quests/0000/side-quests/armoury/) |
+| ⛪ Hidden Chapel | Hidden files, `man` pages | [Chapel](/quests/0000/side-quests/hidden-chapel/) |
+| 🔒 Vault | Environment variables, `export` | [Vault](/quests/0000/side-quests/vault/) |
+| 🗑️ Scrap Heap | Symbolic links, `ln -s` | [Scrap](/quests/0000/side-quests/scrap/) |
+
+---
+
+{% include bashcrawl-play-local.html %}
+
+## 📚 External Resources
+
+Continue your terminal adventure with these resources:
+
+- [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
+- [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
+- [GNU Bash Manual](https://www.gnu.org/software/bash/manual/) — Official Bash reference for every hero
+- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [Bash Aliases Guide](https://tldp.org/LDP/abs/html/aliases.html) — Alias mastery for the brave adventurer
+
+---
+
+*Emerald amulet secured. Four doors, four paths. The dungeon deepens.* 🍷
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections. The `[[wiki-link]]` syntax below is Obsidian wiki-link notation — clickable in Obsidian, plain text elsewhere.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Entrance: Your First Terminal Commands]] **Unlocks:** [[Bashcrawl Armoury: File Permissions and Script Execution]] · [[Bashcrawl Hidden Chapel: Hidden Files and Man Pages]] · [[Bashcrawl Vault: Environment Variables and the Goblet Puzzle]] · [[Bashcrawl Scrap Heap: Symbolic Links and Portal Creation]] **Sequel quests:** [[Bashcrawl Armoury: File Permissions and Script Execution]] · [[Bashcrawl Hidden Chapel: Hidden Files and Man Pages]] · [[Bashcrawl Vault: Environment Variables and the Goblet Puzzle]] · [[Bashcrawl Scrap Heap: Symbolic Links and Portal Creation]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

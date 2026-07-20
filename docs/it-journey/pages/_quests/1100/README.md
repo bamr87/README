@@ -1,13 +1,24 @@
 ---
-categories: quests
-date: 2025-11-29 16:46:02+00:00
-description: Master data integration, financial APIs, and template systems for advanced
-  applications
-lastmod: 2025-12-02 04:46:12.249000+00:00
-level: 1100
-permalink: /quests/level-1100/
+author: IT-Journey Team
+categories:
+- quests
+date: '2025-11-29T16:46:02.000Z'
+description: Work with real-world data sources like SEC EDGAR, consume financial APIs,
+  and build reusable template systems for data-driven applications.
+draft: false
+lastmod: '2025-12-02T04:46:12.000Z'
+layout: quest-collection
+level: '1100'
+mermaid: true
+permalink: /quests/1100/
 preview: images/previews/level-1100-data-templates.png
 source_file: README.md
+tags:
+- quests
+- '1100'
+- master
+- data
+- engineering
 title: 'Level 1100: Data & Templates'
 ---
 # Level 1100: Data & Templates
@@ -26,14 +37,14 @@ Level 1100 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Apache Spark Mastery: Big Data Processing with PySpark & Scala](/quests/level-1100-apache-spark/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
-| [Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle](/quests/level-1100-conquer-king-edgar/) | 🟡 Medium | 60-180 minutes | main_quest | ✅ Complete |
-| [Data Quality Engineering: Testing, Validation & Monitoring Frameworks](/quests/level-1100-data-quality/) | 🔴 Hard | 3-4 hours | main_quest | 🔮 Placeholder |
-| [Data Warehousing: Design Star Schema & Build Modern Analytics Architecture](/quests/level-1100-data-warehousing/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [ETL Pipeline Design: Build Scalable Data Pipelines with Python](/quests/level-1100-etl-pipeline-design/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [The Siege of King EDGAR: Storming the SEC Data Castle](/quests/level-1100-sec-edgar-siege/) | 🟡 Medium | 90-150 minutes | main_quest | 🔮 Placeholder |
-| [Stream Processing: Real-Time Data with Apache Kafka & Flink](/quests/level-1100-stream-processing/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [The Temple of Templates: Binary Abstractions and Reusable Realms](/quests/level-1100-temple-of-templates/) | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
+| [Apache Spark Mastery: Big Data Processing with PySpark & Scala](/quests/1100/apache-spark/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle](/quests/1100/conquer-king-edgar/) | 🟡 Medium | 60-180 minutes | main_quest | ✅ Complete |
+| [Data Quality Engineering: Testing, Validation & Monitoring Frameworks](/quests/1100/data-quality/) | 🔴 Hard | 3-4 hours | main_quest | 🔮 Placeholder |
+| [Data Warehousing: Design Star Schema & Build Modern Analytics Architecture](/quests/1100/data-warehousing/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [ETL Pipeline Design: Build Scalable Data Pipelines with Python](/quests/1100/etl-pipeline-design/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| The Siege of King EDGAR: Storming the SEC Data Castle | 🟡 Medium | 90-150 minutes | main_quest | 🔮 Placeholder |
+| [Stream Processing: Real-Time Data with Apache Kafka & Flink](/quests/1100/stream-processing/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [The Temple of Templates: Binary Abstractions and Reusable Realms](/quests/1100/temple-of-templates/) | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 📊 Financial Data
@@ -53,7 +64,7 @@ Learn to access and process SEC EDGAR data. Build applications that consume fina
 
 ---
 
-#### [SEC EDGAR Deep Dive](sec-edgar.md)
+#### SEC EDGAR Deep Dive
 **Quest Type**: Side ⚔️ | **Difficulty**: 🔴 Hard | **Estimated Time**: 120-180 minutes
 
 Advanced SEC EDGAR techniques including bulk downloads, filing analysis, and financial statement extraction.
@@ -85,7 +96,7 @@ Master the art of creating reusable templates. Build template systems that scale
 
 ### For Financial Developers
 1. [EDGAR API Integration](edgar.md) - Foundation
-2. [SEC EDGAR Deep Dive](sec-edgar.md) - Advanced patterns
+2. SEC EDGAR Deep Dive - Advanced patterns
 3. Build financial applications
 
 ### For Platform Developers
@@ -120,7 +131,7 @@ Upon completing Level 1100 quests, you'll unlock:
 ## Next Level: Level 1110
 
 After Level 1100, advance to [Level 1110 - Quality Assurance](../1110/README.md) where you'll:
-- Build comprehensive testing systems
+- Build unit, integration, and end-to-end testing systems
 - Handle error scenarios gracefully
 - Create robust applications
 

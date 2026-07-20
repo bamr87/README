@@ -4,7 +4,9 @@ title: Azure Bot Service Management SDK Acceptance Criteria
 ---
 # Azure Bot Service Management SDK Acceptance Criteria
 
-**SDK**: `azure-mgmt-botservice` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-mgmt-botservice`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

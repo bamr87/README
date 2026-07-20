@@ -1,11 +1,24 @@
 ---
-date: 2025-11-29 16:46:02+00:00
-description: Quests focused on development tools, version control, CI/CD, and professional
-  workflows
-lastmod: 2025-11-29 23:41:31.777000+00:00
+author: IT-Journey Team
+categories:
+- quests
+- tools
+date: '2025-11-29T16:46:02.000Z'
+description: Master the tools and workflows professional developers use daily — version
+  control with Git, CI/CD with GitHub Actions, AI automation, and framework practices.
+draft: false
+lastmod: '2025-11-29T23:41:31.000Z'
+layout: default
+mermaid: true
 permalink: /quests/tools/
-preview: images/previews/tools-collection-development-tools-workflows.png
+preview: /images/previews/tools-collection-development-tools-workflows.png
 source_file: README.md
+tags:
+- quests
+- tools
+- git
+- version-control
+- workflows
 title: 'Tools Collection: Development Tools & Workflows'
 ---
 # Tools Collection: Development Tools & Workflows
@@ -130,10 +143,12 @@ Master Git workflows specifically for Django projects. Learn migration managemen
 
 ### 👑 Epic Adventures
 
-#### [Epic Quest: Zer0 to Her0 CMStyle](epic-quest-zer0-to-her0-cmstyle.md)
-**Quest Type**: Epic 👑 | **Difficulty**: ⚔️ Epic | **Estimated Time**: 4+ hours
+#### [Epic Quest: Zer0 to Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/)
+**Quest Type**: Epic 👑 | **Difficulty**: ⚔️ Epic | **Estimated Time**: 15-25 hours
 
-The ultimate journey from complete beginner to configuration management hero. A comprehensive multi-session quest covering all aspects of professional development workflows.
+> 🏰 This epic now lives in [the Codex](/quests/codex/) with the realm's other campaign hubs.
+
+The ultimate journey from complete beginner to configuration management hero. A multi-session quest covering environment setup, version control, CI/CD pipelines, and documentation.
 
 **Skills You'll Master:**
 - Complete development environment setup
@@ -157,7 +172,7 @@ The ultimate journey from complete beginner to configuration management hero. A 
 3. [Planting Seeds: Software Evolution](planting-seeds.md)
 
 ### For the Complete Journey
-1. [Epic Quest: Zer0 to Her0 CMStyle](epic-quest-zer0-to-her0-cmstyle.md) - Start here for the full experience!
+1. [Epic Quest: Zer0 to Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/) - Start here for the full experience!
 
 ## Collection Integration
 

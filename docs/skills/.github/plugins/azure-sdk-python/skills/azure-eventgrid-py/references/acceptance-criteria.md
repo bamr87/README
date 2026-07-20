@@ -4,7 +4,10 @@ title: Azure Event Grid SDK Acceptance Criteria
 ---
 # Azure Event Grid SDK Acceptance Criteria
 
-**SDK**: `azure-eventgrid` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventgrid/azure-eventgrid **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-eventgrid`
+**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/eventgrid/azure-eventgrid
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

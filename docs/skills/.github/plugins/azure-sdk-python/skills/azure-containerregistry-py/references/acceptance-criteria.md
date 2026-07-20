@@ -4,7 +4,10 @@ title: Azure Container Registry SDK Acceptance Criteria
 ---
 # Azure Container Registry SDK Acceptance Criteria
 
-**SDK**: `azure-containerregistry` **Repository**: https://github.com/Azure/azure-sdk-for-python **Package**: `azure-containerregistry` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-containerregistry`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Package**: `azure-containerregistry`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

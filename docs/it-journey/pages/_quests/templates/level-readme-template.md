@@ -4,22 +4,25 @@ categories:
 - Quests
 - Level-[LEVEL]
 - - Theme-Category
-date: 2025-11-29 22:51:57+00:00
-description: 'Reference: Level [BINARY] ([DECIMAL]) - [Level Name].'
+date: '2025-11-29T22:51:57.000Z'
+description: Reusable template for an IT-Journey level README, indexing main, side,
+  and bonus quests with learning objectives, prerequisites, and progression.
 difficulty: 🟢 Easy
 draft: false
 estimated_time: 10-20 minutes
 fmContentType: template
 keywords:
-- lvl-[BINARY]
+- - BINARY
 - '[''theme-tag'']'
 - '[''skill-area'']'
 - quest-collection
-lastmod: 2025-11-30 05:46:59.319000+00:00
+lastmod: '2025-11-30T05:46:59.000Z'
+layout: quest-collection
 learning_style: reading
 level: '0000'
+mermaid: true
 permalink: /quests/[LEVEL]/
-preview: images/previews/level-binary-decimal-level-name.png - Concise description
+preview: /images/previews/level-binary-decimal-level-name.png - Concise description
   of what this level covers and its role in the learning journey
 primary_technology: template
 quest_series: Quest Templates
@@ -28,7 +31,7 @@ skill_focus:
 - template
 source_file: level-readme-template.md
 tags:
-- lvl-[BINARY]
+- BINARY
 - theme-tag
 - skill-area
 - quest-collection
@@ -51,9 +54,9 @@ toc_sticky: true
 ```mermaid
 graph TB
     subgraph "Quest Progression"
-        PrevLevel[Level XXXX:<br/>[Previous Level]]
-        CurrentLevel[Level [BINARY]:<br/>[Current Level]]
-        NextLevel[Level XXXX:<br/>[Next Level]]
+        PrevLevel[Level XXXX<br/>Previous Level]
+        CurrentLevel[Level BINARY<br/>Current Level]
+        NextLevel[Level XXXX<br/>Next Level]
     end
     
     PrevLevel --> CurrentLevel
@@ -86,9 +89,9 @@ By completing this level, adventurers will master:
 ```mermaid
 graph TB
     subgraph "Main Quest Line"
-        MQ1[🎯 Main Quest 1:<br/>[Quest Name]]
-        MQ2[🎯 Main Quest 2:<br/>[Quest Name]]
-        MQ3[🎯 Main Quest 3:<br/>[Quest Name]]
+        MQ1[🎯 Main Quest 1:<br/>Quest Name]
+        MQ2[🎯 Main Quest 2:<br/>Quest Name]
+        MQ3[🎯 Main Quest 3:<br/>Quest Name]
     end
     
     subgraph "Side Quests"
@@ -371,7 +374,7 @@ Rate your confidence (1-5) in each area:
 
 **If you want more practice**:
 - Revisit quests with **higher difficulty** implementations
-- Complete all **side quests** for comprehensive mastery
+- Complete all **side quests** to cover every skill area in this level
 - Take on **bonus quests** for advanced challenges
 - Create your own **variant quests** to solidify learning
 

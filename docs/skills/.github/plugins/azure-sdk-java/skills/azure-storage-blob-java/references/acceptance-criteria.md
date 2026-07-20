@@ -4,7 +4,9 @@ title: Azure Storage Blob Java SDK Acceptance Criteria
 ---
 # Azure Storage Blob Java SDK Acceptance Criteria
 
-**SDK**: `com.azure:azure-storage-blob` **Repository**: https://github.com/Azure/azure-sdk-for-java **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-storage-blob`
+**Repository**: https://github.com/Azure/azure-sdk-for-java
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

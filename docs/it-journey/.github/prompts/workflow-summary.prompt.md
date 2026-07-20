@@ -1,18 +1,11 @@
 ---
-category: reporting
 date: 2025-11-22 16:10:21+00:00
-description: Generate comprehensive workflow execution summary
-inputs:
-- workflow_name
-- execution_id
-- all_outputs
-name: Workflow Summary
-outputs:
-- summary_report
-- next_steps
+description: Generate a comprehensive workflow execution summary with outputs and
+  next steps
+lastmod: 2026-05-18 12:00:00+00:00
+mode: agent
 source_file: workflow-summary.prompt.md
 title: Workflow Execution Summary
-version: 1.0.0
 ---
 # Workflow Execution Summary
 

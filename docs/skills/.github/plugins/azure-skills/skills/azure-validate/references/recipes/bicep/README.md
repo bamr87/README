@@ -20,7 +20,8 @@ Validation steps for standalone Bicep deployments.
 az bicep build --file ./infra/main.bicep
 ```
 
-**Pass:** No output (compiles cleanly) **Fail:** Shows line numbers and errors
+**Pass:** No output (compiles cleanly)
+**Fail:** Shows line numbers and errors
 
 ### 2. Template Validation
 

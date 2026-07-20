@@ -62,13 +62,17 @@ Creating a high-quality MCP server involves four main phases:
 
 #### 1.1 Understand Modern MCP Design
 
-**API Coverage vs. Workflow Tools:** Balance comprehensive API endpoint coverage with specialized workflow tools. Workflow tools can be more convenient for specific tasks, while comprehensive coverage gives agents flexibility to compose operations. Performance varies by client—some clients benefit from code execution that combines basic tools, while others work better with higher-level workflows. When uncertain, prioritize comprehensive API coverage.
+**API Coverage vs. Workflow Tools:**
+Balance comprehensive API endpoint coverage with specialized workflow tools. Workflow tools can be more convenient for specific tasks, while comprehensive coverage gives agents flexibility to compose operations. Performance varies by client—some clients benefit from code execution that combines basic tools, while others work better with higher-level workflows. When uncertain, prioritize comprehensive API coverage.
 
-**Tool Naming and Discoverability:** Clear, descriptive tool names help agents find the right tools quickly. Use consistent prefixes (e.g., `github_create_issue`, `github_list_repos`) and action-oriented naming.
+**Tool Naming and Discoverability:**
+Clear, descriptive tool names help agents find the right tools quickly. Use consistent prefixes (e.g., `github_create_issue`, `github_list_repos`) and action-oriented naming.
 
-**Context Management:** Agents benefit from concise tool descriptions and the ability to filter/paginate results. Design tools that return focused, relevant data. Some clients support code execution which can help agents filter and process data efficiently.
+**Context Management:**
+Agents benefit from concise tool descriptions and the ability to filter/paginate results. Design tools that return focused, relevant data. Some clients support code execution which can help agents filter and process data efficiently.
 
-**Actionable Error Messages:** Error messages should guide agents toward solutions with specific suggestions and next steps.
+**Actionable Error Messages:**
+Error messages should guide agents toward solutions with specific suggestions and next steps.
 
 #### 1.2 Study MCP Protocol Documentation
 
@@ -117,9 +121,11 @@ Key pages to review:
 
 #### 1.4 Plan Your Implementation
 
-**Understand the API:** Review the service's API documentation to identify key endpoints, authentication requirements, and data models. Use web search and WebFetch as needed.
+**Understand the API:**
+Review the service's API documentation to identify key endpoints, authentication requirements, and data models. Use web search and WebFetch as needed.
 
-**Tool Selection:** Prioritize comprehensive API coverage. List endpoints to implement, starting with the most common operations.
+**Tool Selection:**
+Prioritize comprehensive API coverage. List endpoints to implement, starting with the most common operations.
 
 ---
 

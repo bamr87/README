@@ -1,15 +1,13 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories:
 - Quests
 - Frontend
 - Hard
 comments: true
-date: 2025-12-01 21:51:02+00:00
-description: Master Jekyll's collection system by building a quest tracking interface
-  with dynamic filtering, statistics, and level-aware displays using Liquid templating
-  and frontmatter data
+date: '2025-12-01T21:51:02.000Z'
+description: Build a Jekyll quest-tracking interface with dynamic filtering, collection
+  stats, and level-aware displays using Liquid templating and frontmatter.
 difficulty: 🔴 Hard
 draft: false
 estimated_time: 4-6 hours
@@ -17,35 +15,26 @@ excerpt: Transform static Jekyll sites into dynamic quest-tracking portals using
   Liquid templating, and JavaScript filtering
 fmContentType: quest
 keywords:
-- lvl-0101
-- jekyll
-- liquid
-- collections
-- frontmatter
-- javascript
-- side_quest
-- frontend
-- hands-on
-- gamified-learning
-- static-sites
-- python-automation
-lastmod: 2026-03-08 02:48:58.441000+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🎨 Digital Artist
-  - 📊 Data Scientist
-  primary_paths:
-  - Frontend Development
-  - Static Site Engineering
-  skill_trees:
-  - Jekyll & Static Sites
-  - Templating Systems
-  - Frontend Automation
+  primary:
+  - '0101'
+  - jekyll
+  - liquid
+  - collections
+  - frontmatter
+  - javascript
+  secondary:
+  - side_quest
+  - frontend
+  - hands-on
+  - gamified-learning
+  - static-sites
+  - python-automation
+lastmod: '2026-03-08T02:48:58.000Z'
+layout: quest
 learning_style: hands-on
 level: '0101'
 mermaid: true
-permalink: /quests/level-0101-jekyll-quest-tracking/
+permalink: /quests/0101/jekyll-quest-tracking/
 prerequisites:
   knowledge_requirements:
   - Basic Jekyll site structure and configuration
@@ -69,18 +58,10 @@ quest_dependencies:
   required_quests: []
   unlocks_quests: []
 quest_line: Static Site Mastery
-quest_mapping:
-  biome: Web
-  coordinates: '[5, 3]'
-  realm: Development
-  region: Adventurer
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests: []
 quest_series: Static Site Mastery
 quest_type: side_quest
+redirect_from:
+- /quests/0101/side-quests/jekyll-quest-tracking/
 rewards:
   badges:
   - 🏆 Collection Architect
@@ -96,14 +77,11 @@ rewards:
   - Custom collection layouts
   - Dynamic filtering systems
   - Automated frontmatter management
-skill_focus:
-- frontend
-snippet: Learn to build interactive collection displays with filters, statistics,
-  and level-aware content using Jekyll's powerful templating system
+skill_focus: frontend
 source_file: jekyll-quest-tracking.md
 sub_title: 'Level 0101 (5) Quest: Side Quest - Jekyll Collections & Dynamic Layouts'
 tags:
-- lvl-0101
+- '0101'
 - jekyll
 - liquid
 - collections
@@ -135,13 +113,13 @@ validation_criteria:
   - Handle YAML frontmatter programmatically
   - Create responsive, accessible UI components
 ---
-*Greetings, intrepid static site architect! You stand before the great Hall of Collections—a mystical chamber where scattered content transforms into organized, filterable, and dynamic displays. In this quest, you shall master the ancient arts of Jekyll collections, forging powerful layouts that respond to frontmatter incantations and user interactions alike.*
+*Greetings, intrepid static site architect! You stand before the great Hall of Collections—a mystical chamber where scattered content transforms into organized, filterable, and dynamic displays. In this quest, you shall master the ancient arts of Jekyll collections, forging layouts that respond to frontmatter incantations and user interactions alike.*
 
 *The knowledge you gain here will allow you to build quest tracking systems, portfolio galleries, documentation hubs, and any content collection that demands organization and discovery. Whether you seek to catalog your own adventures or create portals for fellow travelers, this quest will arm you with the spells needed to succeed.*
 
 ## 📜 The Legend Behind This Quest
 
-In the realm of static site generators, Jekyll reigns as the venerable wizard-king—simple yet powerful, transforming markdown into magnificent web pages. But many who wield Jekyll's power never venture beyond basic posts and pages, missing the treasure trove of **collections**.
+In the realm of static site generators, Jekyll reigns as the venerable wizard-king—transforming plain Markdown into static HTML pages with no database or server to run. But many who wield Jekyll's power never venture beyond basic posts and pages, missing the treasure trove of **collections**.
 
 Collections are Jekyll's secret weapon for organizing related content: quests, products, team members, portfolio pieces—anything that shares a common structure. Combined with **Liquid templating** and **frontmatter metadata**, collections become the foundation for dynamic, data-driven interfaces that rival server-rendered applications.
 
@@ -319,7 +297,7 @@ defaults:
 
 ### 📁 Collection Directory Structure
 
-```
+```text
 pages/
 └── _quests/
     ├── README.md           # Collection index
@@ -338,22 +316,22 @@ pages/
 ### 🔍 Accessing Collection Data in Liquid
 
 ```liquid
-{% raw %}
-{%- comment -%} All quests in the collection {%- endcomment -%}
-{% assign all_quests = site.quests %}
 
-{%- comment -%} Filter quests with a specific attribute {%- endcomment -%}
-{% assign hard_quests = site.quests | where: "difficulty", "🔴 Hard" %}
+{% raw %}{%- comment -%}{% endraw %} All quests in the collection {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign all_quests = site.quests %}{% endraw %}
 
-{%- comment -%} Filter using expressions {%- endcomment -%}
-{% assign level_0101 = site.quests | where: "level", "0101" %}
+{% raw %}{%- comment -%}{% endraw %} Filter quests with a specific attribute {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign hard_quests = site.quests | where: "difficulty", "🔴 Hard" %}{% endraw %}
 
-{%- comment -%} Map to extract specific values {%- endcomment -%}
-{% assign all_levels = site.quests | map: "level" | compact | uniq | sort %}
+{% raw %}{%- comment -%}{% endraw %} Filter using expressions {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign level_0101 = site.quests | where: "level", "0101" %}{% endraw %}
 
-{%- comment -%} Count quests {%- endcomment -%}
-{% assign quest_count = site.quests | size %}
-{% endraw %}
+{% raw %}{%- comment -%}{% endraw %} Map to extract specific values {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign all_levels = site.quests | map: "level" | compact | uniq | sort %}{% endraw %}
+
+{% raw %}{%- comment -%}{% endraw %} Count quests {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign quest_count = site.quests | size %}{% endraw %}
+
 ```
 
 ### 🔮 Knowledge Check: Collection Fundamentals
@@ -364,7 +342,7 @@ pages/
 ### ⚡ Quick Wins
 - [ ] **Config Verified**: `_config.yml` has quests collection configured
 - [ ] **Structure Understood**: You can navigate the `_quests` directory hierarchy
-- [ ] **Data Access**: You can output `{{ site.quests | size }}` in a template
+- [ ] **Data Access**: You can output `{% raw %}{{ site.quests | size }}{% endraw %}` in a template
 
 ---
 
@@ -382,78 +360,78 @@ pages/
 Create `_layouts/quest-collection.html`:
 
 ```liquid
-{% raw %}
+
 ---
 ---
-{%- comment -%}
+{% raw %}{%- comment -%}{% endraw %}
 Quest Collection Layout
 Displays quests from the site.quests collection using frontmatter data.
 Supports filtering by level (pass level parameter to filter to specific level).
-{%- endcomment -%}
+{% raw %}{%- endcomment -%}{% endraw %}
 
 <div class="quest-collection">
   <header class="quest-collection-header">
-    <h1>{{ page.title | default: "Quest Collection" }}</h1>
-    {% if page.description %}
-    <p class="lead">{{ page.description }}</p>
-    {% endif %}
+    <h1>{% raw %}{{ page.title | default: "Quest Collection" }}{% endraw %}</h1>
+    {% raw %}{% if page.description %}{% endraw %}
+    <p class="lead">{% raw %}{{ page.description }}{% endraw %}</p>
+    {% raw %}{% endif %}{% endraw %}
   </header>
 
-  {%- comment -%} Quest Statistics {%- endcomment -%}
-  {% include quest-stats.html level=page.level %}
+  {% raw %}{%- comment -%}{% endraw %} Quest Statistics {% raw %}{%- endcomment -%}{% endraw %}
+  {% raw %}{% include quest-stats.html level=page.level %}{% endraw %}
 
-  {%- comment -%} Quest Filters {%- endcomment -%}
-  {% include quest-filters.html level=page.level %}
+  {% raw %}{%- comment -%}{% endraw %} Quest Filters {% raw %}{%- endcomment -%}{% endraw %}
+  {% raw %}{% include quest-filters.html level=page.level %}{% endraw %}
 
-  {%- comment -%} 
+  {% raw %}{%- comment -%}{% endraw %} 
   Determine which quests to display:
   - If page.level is set, filter to that level only
   - Otherwise show all quests
-  {%- endcomment -%}
+  {% raw %}{%- endcomment -%}{% endraw %}
   
-  {% if page.level %}
-    {% assign filtered_quests = site.quests | where: "level", page.level %}
-  {% else %}
-    {% assign filtered_quests = site.quests %}
-  {% endif %}
+  {% raw %}{% if page.level %}{% endraw %}
+    {% raw %}{% assign filtered_quests = site.quests | where: "level", page.level %}{% endraw %}
+  {% raw %}{% else %}{% endraw %}
+    {% raw %}{% assign filtered_quests = site.quests %}{% endraw %}
+  {% raw %}{% endif %}{% endraw %}
 
-  {%- comment -%} Group quests by level tier {%- endcomment -%}
-  {% assign level_0000 = filtered_quests | where: "level", "0000" %}
-  {% assign level_0001 = filtered_quests | where: "level", "0001" %}
-  {% assign level_0010 = filtered_quests | where: "level", "0010" %}
-  {% assign level_0011 = filtered_quests | where: "level", "0011" %}
+  {% raw %}{%- comment -%}{% endraw %} Group quests by level tier {% raw %}{%- endcomment -%}{% endraw %}
+  {% raw %}{% assign level_0000 = filtered_quests | where: "level", "0000" %}{% endraw %}
+  {% raw %}{% assign level_0001 = filtered_quests | where: "level", "0001" %}{% endraw %}
+  {% raw %}{% assign level_0010 = filtered_quests | where: "level", "0010" %}{% endraw %}
+  {% raw %}{% assign level_0011 = filtered_quests | where: "level", "0011" %}{% endraw %}
   
-  {%- comment -%} Continue for all 16 levels... {%- endcomment -%}
+  {% raw %}{%- comment -%}{% endraw %} Continue for all 16 levels... {% raw %}{%- endcomment -%}{% endraw %}
 
-  {%- comment -%} Apprentice Tier (0000-0011) {%- endcomment -%}
-  {% assign apprentice_quests = level_0000 | concat: level_0001 | concat: level_0010 | concat: level_0011 %}
-  {% if apprentice_quests.size > 0 and page.level == nil %}
+  {% raw %}{%- comment -%}{% endraw %} Apprentice Tier (0000-0011) {% raw %}{%- endcomment -%}{% endraw %}
+  {% raw %}{% assign apprentice_quests = level_0000 | concat: level_0001 | concat: level_0010 | concat: level_0011 %}{% endraw %}
+  {% raw %}{% if apprentice_quests.size > 0 and page.level == nil %}{% endraw %}
   <section class="quest-tier quest-tier-apprentice" data-tier="apprentice">
     <h2 class="tier-header">
       <span class="tier-icon">🌱</span>
       <span class="tier-name">Apprentice Tier</span>
       <span class="tier-levels">(Levels 0000-0011)</span>
-      <span class="tier-count">{{ apprentice_quests.size }} quests</span>
+      <span class="tier-count">{% raw %}{{ apprentice_quests.size }}{% endraw %} quests</span>
     </h2>
     <p class="tier-description">Foundation skills for beginning your IT journey.</p>
     <div class="quest-grid">
-      {% for quest in apprentice_quests %}
-        {% include quest-card.html quest=quest %}
-      {% endfor %}
+      {% raw %}{% for quest in apprentice_quests %}{% endraw %}
+        {% raw %}{% include quest-card.html quest=quest %}{% endraw %}
+      {% raw %}{% endfor %}{% endraw %}
     </div>
   </section>
-  {% endif %}
+  {% raw %}{% endif %}{% endraw %}
 
-  {%- comment -%} Repeat for Adventurer, Warrior, Master tiers... {%- endcomment -%}
+  {% raw %}{%- comment -%}{% endraw %} Repeat for Adventurer, Warrior, Master tiers... {% raw %}{%- endcomment -%}{% endraw %}
 
-  {%- comment -%} Page Content (for additional markdown content) {%- endcomment -%}
-  {% if content != "" %}
+  {% raw %}{%- comment -%}{% endraw %} Page Content (for additional markdown content) {% raw %}{%- endcomment -%}{% endraw %}
+  {% raw %}{% if content != "" %}{% endraw %}
   <section class="quest-collection-content">
-    {{ content }}
+    {% raw %}{{ content }}{% endraw %}
   </section>
-  {% endif %}
+  {% raw %}{% endif %}{% endraw %}
 </div>
-{% endraw %}
+
 ```
 
 ### 🎨 Tier Styling Magic
@@ -507,70 +485,70 @@ Supports filtering by level (pass level parameter to filter to specific level).
 Create `_includes/quest-card.html`:
 
 ```liquid
-{% raw %}
-{% comment %}
+
+{% raw %}{% comment %}{% endraw %}
   Quest Card Include
   
-  Usage: {% include quest-card.html quest=quest %}
+  Usage: {% raw %}{% include quest-card.html quest=quest %}{% endraw %}
   
   Required frontmatter in quest pages:
   - title, difficulty, estimated_time, quest_type, level, description
-{% endcomment %}
+{% raw %}{% endcomment %}{% endraw %}
 
-{% assign quest = include.quest %}
+{% raw %}{% assign quest = include.quest %}{% endraw %}
 
 <article class="quest-card" 
-         data-difficulty="{{ quest.difficulty | default: 'Unknown' }}"
-         data-quest-type="{{ quest.quest_type | default: 'main_quest' }}"
-         data-level="{{ quest.level | default: '0000' }}"
-         data-technology="{{ quest.primary_technology | default: '' }}"
-         data-skill-focus="{{ quest.skill_focus | default: '' }}"
-         data-title="{{ quest.title | escape }}"
-         data-description="{{ quest.description | default: '' | strip_html | escape }}">
+         data-difficulty="{% raw %}{{ quest.difficulty | default: 'Unknown' }}{% endraw %}"
+         data-quest-type="{% raw %}{{ quest.quest_type | default: 'main_quest' }}{% endraw %}"
+         data-level="{% raw %}{{ quest.level | default: '0000' }}{% endraw %}"
+         data-technology="{% raw %}{{ quest.primary_technology | default: '' }}{% endraw %}"
+         data-skill-focus="{% raw %}{{ quest.skill_focus | default: '' }}{% endraw %}"
+         data-title="{% raw %}{{ quest.title | escape }}{% endraw %}"
+         data-description="{% raw %}{{ quest.description | default: '' | strip_html | escape }}{% endraw %}">
   
   <div class="quest-card-header">
-    {% if quest.difficulty %}
-      {% assign diff = quest.difficulty | split: ' ' | first %}
-      <span class="quest-difficulty" title="{{ quest.difficulty }}">{{ diff }}</span>
-    {% endif %}
+    {% raw %}{% if quest.difficulty %}{% endraw %}
+      {% raw %}{% assign diff = quest.difficulty | split: ' ' | first %}{% endraw %}
+      <span class="quest-difficulty" title="{% raw %}{{ quest.difficulty }}{% endraw %}">{% raw %}{{ diff }}{% endraw %}</span>
+    {% raw %}{% endif %}{% endraw %}
     
-    {% if quest.quest_type %}
-      {% case quest.quest_type %}
-        {% when 'main_quest' %}
+    {% raw %}{% if quest.quest_type %}{% endraw %}
+      {% raw %}{% case quest.quest_type %}{% endraw %}
+        {% raw %}{% when 'main_quest' %}{% endraw %}
           <span class="quest-type quest-type-main" title="Main Quest">🏰</span>
-        {% when 'side_quest' %}
+        {% raw %}{% when 'side_quest' %}{% endraw %}
           <span class="quest-type quest-type-side" title="Side Quest">⚔️</span>
-        {% when 'bonus_quest' %}
+        {% raw %}{% when 'bonus_quest' %}{% endraw %}
           <span class="quest-type quest-type-bonus" title="Bonus Quest">🎁</span>
-        {% when 'epic_quest' %}
+        {% raw %}{% when 'epic_quest' %}{% endraw %}
           <span class="quest-type quest-type-epic" title="Epic Quest">👑</span>
-      {% endcase %}
-    {% endif %}
+      {% raw %}{% endcase %}{% endraw %}
+    {% raw %}{% endif %}{% endraw %}
   </div>
   
   <h3 class="quest-card-title">
-    <a href="{{ quest.url | relative_url }}">{{ quest.title | default: 'Untitled Quest' }}</a>
+    <a href="{% raw %}{{ quest.url | relative_url }}{% endraw %}">{% raw %}{{ quest.title | default: 'Untitled Quest' }}{% endraw %}</a>
   </h3>
   
-  {% if quest.description %}
-    <p class="quest-card-description">{{ quest.description | truncate: 120 }}</p>
-  {% endif %}
+  {% raw %}{% if quest.description %}{% endraw %}
+    <p class="quest-card-description">{% raw %}{{ quest.description | truncate: 120 }}{% endraw %}</p>
+  {% raw %}{% endif %}{% endraw %}
   
   <div class="quest-card-meta">
-    {% if quest.estimated_time %}
-      <span class="quest-time" title="Estimated Time">🕐 {{ quest.estimated_time }}</span>
-    {% endif %}
-    {% if quest.level %}
-      <span class="quest-level" title="Level {{ quest.level }}">📊 Lvl {{ quest.level }}</span>
-    {% endif %}
-    {% if quest.primary_technology %}
-      <span class="quest-tech" title="Primary Technology">🛠️ {{ quest.primary_technology }}</span>
-    {% endif %}
+    {% raw %}{% if quest.estimated_time %}{% endraw %}
+      <span class="quest-time" title="Estimated Time">🕐 {% raw %}{{ quest.estimated_time }}{% endraw %}</span>
+    {% raw %}{% endif %}{% endraw %}
+    {% raw %}{% if quest.level %}{% endraw %}
+      <span class="quest-level" title="Level {% raw %}{{ quest.level }}{% endraw %}">📊 Lvl {% raw %}{{ quest.level }}{% endraw %}</span>
+    {% raw %}{% endif %}{% endraw %}
+    {% raw %}{% if quest.primary_technology %}{% endraw %}
+      <span class="quest-tech" title="Primary Technology">🛠️ {% raw %}{{ quest.primary_technology }}{% endraw %}</span>
+    {% raw %}{% endif %}{% endraw %}
   </div>
   
-  <a href="{{ quest.url | relative_url }}" class="quest-card-link">Begin Quest →</a>
+  <a href="{% raw %}{{ quest.url | relative_url }}{% endraw %}" class="quest-card-link">Begin Quest →</a>
 </article>
-{% endraw %}
+
 ```
 
 ### 💡 The Power of Data Attributes
@@ -618,35 +596,35 @@ console.log(card.dataset.questType);   // "side_quest" (camelCase conversion)
 Create `_includes/quest-filters.html`:
 
 ```liquid
-{% raw %}
-{%- comment -%}
+
+{% raw %}{%- comment -%}{% endraw %}
 Quest Filters Include
 Provides interactive filtering UI for quest collections.
-{%- endcomment -%}
+{% raw %}{%- endcomment -%}{% endraw %}
 
-{%- comment -%} Collect unique values for filter dropdowns {%- endcomment -%}
-{% assign all_quests = site.quests | where_exp: "q", "q.title != nil" %}
-{%- if include.level and include.level != '' -%}
-  {% assign all_quests = all_quests | where: "level", include.level %}
-{%- endif -%}
+{% raw %}{%- comment -%}{% endraw %} Collect unique values for filter dropdowns {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign all_quests = site.quests | where_exp: "q", "q.title != nil" %}{% endraw %}
+{% raw %}{%- if include.level and include.level != '' -%}{% endraw %}
+  {% raw %}{% assign all_quests = all_quests | where: "level", include.level %}{% endraw %}
+{% raw %}{%- endif -%}{% endraw %}
 
-{%- comment -%} Get unique quest types {%- endcomment -%}
-{% assign quest_types = all_quests | map: "quest_type" | compact | uniq | sort %}
+{% raw %}{%- comment -%}{% endraw %} Get unique quest types {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign quest_types = all_quests | map: "quest_type" | compact | uniq | sort %}{% endraw %}
 
-{%- comment -%} Get unique difficulties {%- endcomment -%}
-{% assign difficulties = all_quests | map: "difficulty" | compact | uniq | sort %}
+{% raw %}{%- comment -%}{% endraw %} Get unique difficulties {% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign difficulties = all_quests | map: "difficulty" | compact | uniq | sort %}{% endraw %}
 
-{%- comment -%} 
+{% raw %}{%- comment -%}{% endraw %} 
 IMPORTANT: Level sorting edge case fix!
 Some frontmatter has level: 1100 (Integer), others level: "1100" (String).
 Liquid's sort filter fails on mixed types. We coerce all to strings.
-{%- endcomment -%}
-{% assign levels_raw = all_quests | map: "level" | compact | uniq %}
-{% assign levels_joined = "" %}
-{% for lval in levels_raw %}
-  {% assign levels_joined = levels_joined | append: lval | append: "," %}
-{% endfor %}
-{% assign levels = levels_joined | split: "," | uniq | sort %}
+{% raw %}{%- endcomment -%}{% endraw %}
+{% raw %}{% assign levels_raw = all_quests | map: "level" | compact | uniq %}{% endraw %}
+{% raw %}{% assign levels_joined = "" %}{% endraw %}
+{% raw %}{% for lval in levels_raw %}{% endraw %}
+  {% raw %}{% assign levels_joined = levels_joined | append: lval | append: "," %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+{% raw %}{% assign levels = levels_joined | split: "," | uniq | sort %}{% endraw %}
 
 <div class="quest-filters" id="quest-filters">
   <div class="filters-header">
@@ -657,27 +635,27 @@ Liquid's sort filter fails on mixed types. We coerce all to strings.
   </div>
   
   <div class="filters-grid">
-    {%- comment -%} Quest Type Filter {%- endcomment -%}
+    {% raw %}{%- comment -%}{% endraw %} Quest Type Filter {% raw %}{%- endcomment -%}{% endraw %}
     <div class="filter-group">
       <label for="filter-quest-type">Quest Type</label>
       <select id="filter-quest-type" onchange="applyFilters()">
         <option value="">All Types</option>
-        {% for type in quest_types %}
-        <option value="{{ type }}">
-          {% case type %}
-            {% when 'main_quest' %}🏰 Main Quest
-            {% when 'side_quest' %}⚔️ Side Quest
-            {% when 'bonus_quest' %}🎁 Bonus Quest
-            {% when 'epic_quest' %}👑 Epic Quest
-            {% else %}{{ type | replace: "_", " " | capitalize }}
-          {% endcase %}
+        {% raw %}{% for type in quest_types %}{% endraw %}
+        <option value="{% raw %}{{ type }}{% endraw %}">
+          {% raw %}{% case type %}{% endraw %}
+            {% raw %}{% when 'main_quest' %}{% endraw %}🏰 Main Quest
+            {% raw %}{% when 'side_quest' %}{% endraw %}⚔️ Side Quest
+            {% raw %}{% when 'bonus_quest' %}{% endraw %}🎁 Bonus Quest
+            {% raw %}{% when 'epic_quest' %}{% endraw %}👑 Epic Quest
+            {% raw %}{% else %}{% endraw %}{% raw %}{{ type | replace: "_", " " | capitalize }}{% endraw %}
+          {% raw %}{% endcase %}{% endraw %}
         </option>
-        {% endfor %}
+        {% raw %}{% endfor %}{% endraw %}
       </select>
     </div>
 
-    {%- comment -%} Additional filters: difficulty, level, technology, skill_focus, search {%- endcomment -%}
-    {%- comment -%} ... (similar pattern for each filter) ... {%- endcomment -%}
+    {% raw %}{%- comment -%}{% endraw %} Additional filters: difficulty, level, technology, skill_focus, search {% raw %}{%- endcomment -%}{% endraw %}
+    {% raw %}{%- comment -%}{% endraw %} ... (similar pattern for each filter) ... {% raw %}{%- endcomment -%}{% endraw %}
   </div>
 </div>
 
@@ -754,7 +732,7 @@ function resetAllFilters() {
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', applyFilters);
 </script>
-{% endraw %}
+
 ```
 
 ### ⚠️ The Integer/String Sorting Trap
@@ -764,14 +742,14 @@ document.addEventListener('DOMContentLoaded', applyFilters);
 **The Solution**: Coerce all values to strings using the join/split pattern:
 
 ```liquid
-{% raw %}
-{% assign levels_raw = all_quests | map: "level" | compact | uniq %}
-{% assign levels_joined = "" %}
-{% for lval in levels_raw %}
-  {% assign levels_joined = levels_joined | append: lval | append: "," %}
-{% endfor %}
-{% assign levels = levels_joined | split: "," | uniq | sort %}
-{% endraw %}
+
+{% raw %}{% assign levels_raw = all_quests | map: "level" | compact | uniq %}{% endraw %}
+{% raw %}{% assign levels_joined = "" %}{% endraw %}
+{% raw %}{% for lval in levels_raw %}{% endraw %}
+  {% raw %}{% assign levels_joined = levels_joined | append: lval | append: "," %}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
+{% raw %}{% assign levels = levels_joined | split: "," | uniq | sort %}{% endraw %}
+
 ```
 
 This forces all values through string concatenation, ensuring uniform types.
@@ -901,7 +879,7 @@ python scripts/development/update_level_readmes.py
 ```
 
 **Expected Output:**
-```
+```text
 Updated frontmatter for /Users/you/github/it-journey/pages/_quests/0000/README.md
 Updated frontmatter for /Users/you/github/it-journey/pages/_quests/0001/README.md
 No changes for /Users/you/github/it-journey/pages/_quests/0101/README.md
@@ -1083,7 +1061,7 @@ flowchart LR
 
 ## 🎉 Congratulations, Collection Architect!
 
-*You have successfully forged the Jekyll Quest Tracking system! Your mastery of collections, Liquid templating, and client-side filtering has created a powerful, reusable system for organizing and discovering content.*
+*You have successfully forged the Jekyll Quest Tracking system! Your mastery of collections, Liquid templating, and client-side filtering has created a reusable system for organizing and discovering content.*
 
 ### 🌟 What's Next?
 
@@ -1126,7 +1104,7 @@ This quest was developed through AI-assisted content generation:
 ## 🧠 Lessons & Next Steps
 
 ### Key Takeaways
-1. **Collections are powerful** - They transform Jekyll from a blog engine into a CMS
+1. **Collections turn Jekyll into a CMS** - They group related content (quests, products, team members) under shared layouts and queryable metadata
 2. **Data attributes bridge static/dynamic** - Server-render data, filter client-side
 3. **Automation saves time** - Batch frontmatter updates prevent manual errors
 4. **Edge cases matter** - The Integer/String issue only surfaces with mixed data
@@ -1178,3 +1156,10 @@ Before committing, verify:
 ---
 
 *May your collections be organized, your filters be fast, and your frontmatter be consistent! Ready for your next adventure? Check the [Quest Map](/quests/) for your next challenge!* ⚔️✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

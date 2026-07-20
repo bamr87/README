@@ -3,34 +3,25 @@ author: IT-Journey Team
 categories:
 - Quests
 - Init-World
-date: 2023-11-25 14:12:43+00:00
-description: Choose your operating system and understand the unique strengths of Windows,
-  macOS, and Linux for your IT journey
+date: '2023-11-25T14:12:43.000Z'
+description: Compare Windows, macOS, and Linux, match each platform to your IT career
+  goals, and try a second OS via a virtual machine or dual boot.
 difficulty: 🟢 Easy
 draft: false
 estimated_time: 30-45 minutes
 excerpt: Selecting the right operating system is a crucial first step in your IT adventure
 fmContentType: quest
 keywords:
-- lvl-0000
-- operating-systems
-- beginner
-lastmod: 2025-11-30 05:46:59.328000+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  - 🛡️ Security Specialist
-  primary_paths:
-  - Software Development
-  - System Administration
-  - Data Science
-  skill_trees:
-  - Operating Systems
-  - Platform Selection
+  primary:
+  - '0000'
+  secondary:
+  - operating-systems
+  - beginner
+lastmod: '2026-06-30T00:00:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0000'
-permalink: /quests/lvl_000/os-selection/
+permalink: /quests/0000/os-selection/
 prerequisites:
   knowledge_requirements:
   - Basic understanding of computer operation
@@ -41,27 +32,22 @@ prerequisites:
   - Computer with internet access for research
   - Optional: VirtualBox for trying different operating systems
 preview: images/previews/os-selection.png
-primary_technology: lvl-0000
+primary_technology: operating-system
 quest_arc: Character Creation Arc
 quest_dependencies:
   recommended_quests:
-  - /quests/lvl_000/it-fundamentals/
+  - /quests/0000/it-fundamentals/
+  - /quests/0000/character-selection/
   required_quests: []
   unlocks_quests:
-  - /quests/hello-windows/
-  - /quests/hello-macos/
-  - /quests/hello-linux/linux-fundamentals/
+  - /quests/0000/hello-windows/
+  - /quests/0000/hello-macos/
+  - /quests/0000/linux-fundamentals/
 quest_line: Foundation Path
-quest_relationships:
-  child_quests: []
-  parallel_quests:
-  - /quests/lvl_000/character-selection/
-  sequel_quests:
-  - /quests/hello-windows/
-  - /quests/hello-macos/
-  - /quests/hello-linux/linux-fundamentals/
 quest_series: Level 0000 Quest Line
 quest_type: main_quest
+redirect_from:
+- /quickstart/machine-setup/
 rewards:
   badges:
   - 🏆 Realm Selector Badge
@@ -73,16 +59,14 @@ rewards:
   unlocks_features:
   - Access to platform-specific Hello quests
   - Foundation for development environment setup
-skill_focus:
-- Quests
-- Init-World
+skill_focus: fullstack
 slug: os-selection
 source_file: os-selection.md
 tags:
-- lvl-0000
+- '0000'
 - operating-systems
 - beginner
-title: Os Selection
+title: Install Homebrew, the de facto package manager for macOS
 validation_criteria:
   completion_requirements:
   - Understand the strengths of Windows, macOS, and Linux
@@ -133,7 +117,7 @@ Choosing the right operating system (OS) is like selecting the right wand in the
 
 ### 2. **Linux**
 - **Pros**:
-  - **Powerful Command Line Interface (CLI)**: Ideal for programming and server management.
+  - **Scriptable Command Line Interface (CLI)**: Ideal for programming and server management.
   - **Open Source**: Free to use, modify, and distribute. Offers a variety of distributions (distros) like Ubuntu, Fedora, and Debian.
   - **Customization**: Highly customizable to suit different needs.
   - **Security and Privacy**: Generally considered more secure and privacy-focused.
@@ -164,6 +148,60 @@ Choosing the right operating system (OS) is like selecting the right wand in the
 
 Your choice of OS will lay the foundation for your IT journey. Each has its strengths and aligns with different career paths and personal preferences. It's not uncommon for IT professionals to be familiar with multiple operating systems, as each has unique advantages in certain scenarios. Choose the one that resonates with your current goals and interests, and remember, you can always explore others as you advance in your IT quest. 🖥️🌟🔍
 
+## 📦 Each Realm's Summoning Tool: Package Managers
+
+Before you can cast real spells, every realm gives you a **package manager** — the trusted gateway you'll use to summon software, resolve dependencies, and keep your tools updated. Knowing which one rules each realm is part of choosing wisely, because it shapes how you'll install everything from here on.
+
+### 🍎 macOS — Homebrew
+
+```zsh
+# Install Homebrew, the de facto package manager for macOS
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Then summon software with a single incantation
+brew install git
+```
+
+### 🪟 Windows — Winget
+
+```powershell
+# Winget ships with Windows 11 and recent Windows 10 builds
+winget --version
+
+# Summon software from Microsoft's curated catalog
+winget install Git.Git
+```
+
+### 🐧 Linux — APT (Debian/Ubuntu)
+
+```bash
+# Refresh the repository scrolls, then summon
+sudo apt update && sudo apt install -y git
+
+# Other realms speak different dialects:
+# Fedora/RHEL → sudo dnf install git
+# Arch        → sudo pacman -S git
+```
+
+> 🔮 **Lore note:** A package manager is "an app store for developers" — it verifies and signs packages, installs dependencies automatically, and lets you update everything with one command. You'll lean on it in nearly every future quest.
+
+## 🌉 The Bridge Between Realms: WSL
+
+You don't always have to *choose* between Windows and Linux. The **Windows Subsystem for Linux (WSL2)** runs a real Linux kernel *inside* Windows — letting you wield Linux's command-line power without leaving the Windows realm or dual-booting. It's the most popular way developers get the best of both worlds.
+
+### 🪟 Enable WSL2 on Windows
+
+```powershell
+# Run as Administrator to enable the bridge
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+# Make WSL2 the default, then install a Linux distro (e.g. Ubuntu) from the Microsoft Store
+wsl --set-default-version 2
+```
+
+> ⚡ Completing this satisfies the **Explore WSL** bonus objective above — a low-risk way to experience a second OS without touching your boot loader.
+
 ## 🏆 Quest Completion Validation
 
 ### Portfolio Artifacts Created
@@ -183,3 +221,10 @@ Your choice of OS will lay the foundation for your IT journey. Each has its stre
 - [WSL — Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install)
 - [Homebrew — macOS Package Manager](https://brew.sh/)
 - [DistroWatch — Compare Linux Distributions](https://distrowatch.com/)
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[IT Fundamentals]] **Unlocks:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Sequel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Parallel quests:** [[Character Selection]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

@@ -3,7 +3,7 @@ author: GitHub Copilot
 class: Wizard
 contributor_data: copilot
 excerpt: AI Pair-Programming Sorcerer — Wizard class, Code generation & documentation
-lastmod: 2026-03-21 00:00:00+00:00
+lastmod: '2026-03-21T00:00:00.000Z'
 permalink: /contributors/copilot/
 source_file: README.md
 title: Readme
@@ -28,7 +28,7 @@ username: copilot
 | Area | Contribution |
 |------|-------------|
 | **Code Generation** | Suggesting implementations, completing functions, generating boilerplate |
-| **Documentation** | Writing READMEs, quest content, blog post drafts, and inline comments |
+| **Documentation** | Writing READMEs, quest content, reference notes, and inline comments |
 | **Testing** | Generating test cases, suggesting edge cases, and validation logic |
 | **Debugging** | Identifying issues, suggesting fixes, and explaining error messages |
 | **Quest Design** | Helping structure educational quests with fantasy themes and learning objectives |

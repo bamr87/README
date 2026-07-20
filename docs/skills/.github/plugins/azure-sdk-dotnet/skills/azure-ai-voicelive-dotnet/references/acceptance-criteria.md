@@ -4,7 +4,10 @@ title: Azure VoiceLive SDK Acceptance Criteria (.NET)
 ---
 # Azure VoiceLive SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.AI.VoiceLive` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.VoiceLive **NuGet Package**: https://www.nuget.org/packages/Azure.AI.VoiceLive **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.AI.VoiceLive`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.VoiceLive
+**NuGet Package**: https://www.nuget.org/packages/Azure.AI.VoiceLive
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

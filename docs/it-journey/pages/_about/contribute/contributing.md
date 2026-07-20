@@ -2,16 +2,18 @@
 author: IT-Journey Team
 categories:
 - about
-date: 2024-05-11 16:54:12+00:00
-description: How to contribute to IT-Journey - a gamified learning platform for IT
-  education
+date: '2024-05-11T16:54:12.000Z'
+description: How to contribute to IT-Journey, the gamified open-source platform for
+  IT education — content, code, AI-agent workflows, and developer setup.
 draft: false
 excerpt: Join our community of learners, creators, and adventurers building the future
   of IT education
-lastmod: 2026-03-21 15:12:32.218000+00:00
+lastmod: '2026-06-30T00:00:00.000Z'
 meta:
   keywords: contributing, open source, IT education, community, collaboration
 permalink: /about/contributing/
+redirect_from:
+- /docs/contributing/contributing-developer/contributing-developer/
 snippet: Transform IT education through open-source collaboration
 source_file: contributing.md
 tags:
@@ -23,13 +25,13 @@ title: Contributing to IT-Journey
 ---
 # Contributing to IT-Journey
 
-Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether you're fixing a typo, creating epic quests, or building powerful tools, your contribution matters.
+Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether you're fixing a typo, creating epic quests, or building developer tools, your contribution matters.
 
 ## 🚀 Quick Start for New Contributors
 
 **Never contributed to open source before?** Perfect! Start here:
 
-1. **Read the Full Guide**: Check our comprehensive [Contributing Guide](https://github.com/bamr87/it-journey/blob/main/CONTRIBUTING.md) on GitHub
+1. **Read the Full Guide**: Check the end-to-end [Contributing Guide](https://github.com/bamr87/it-journey/blob/main/CONTRIBUTING.md) on GitHub — it walks the whole workflow from setup to merged PR
 2. **Pick Your Adventure**: Choose from content creation, code contributions, documentation, or community support
 3. **Setup Your Environment**: Follow our [Development Setup Guide](https://github.com/bamr87/it-journey/blob/main/docs/setup/DEVELOPMENT_ENVIRONMENT.md)
 4. **Make Your First Contribution**: Start with something small like fixing a typo or improving documentation
@@ -37,10 +39,11 @@ Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether
 ## 🎭 Types of Contributions
 
 ### 📝 Content Creation
+- **Propose a Quest**: Shape an idea in the [Quest Idea Forge](/quests/ideas/) — live duplicate radar and readiness scoring, then one-click submission for AI review
 - **Write Quests**: Create gamified learning experiences
-- **Author Posts**: Share knowledge through blog posts
-- **Develop Tutorials**: Build step-by-step guides
-- **Create Notebooks**: Contribute Jupyter notebooks
+- **Develop Tutorials**: Build step-by-step guides and quickstart paths
+- **Improve Docs & Notes**: Expand the reference docs and curated cheatsheets
+- **Refine Quest Paths**: Improve prerequisites, level maps, and walkthroughs
 
 ### 💻 Code Contributions  
 - **Build Features**: Implement new capabilities
@@ -59,6 +62,104 @@ Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether
 - **Review PRs**: Provide constructive feedback
 - **Mentor Others**: Share your expertise
 - **Spread the Word**: Tell others about IT-Journey
+
+## ⚔️ The Developer's Contribution Path
+
+Ready to commit code? This is the battle-tested workflow every developer (and AI agent) follows to land a change in the repo.
+
+### 🍴 Fork, Clone, and Sync
+
+```bash
+# Clone your fork, then point at the upstream repo
+git clone https://github.com/YOUR-USERNAME/it-journey.git
+cd it-journey
+git remote add upstream https://github.com/bamr87/it-journey.git
+
+# Sync before every new branch
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+```
+
+### 🌿 Branch with Intent
+
+Never commit to `main`. Branch with a type prefix that announces your quest:
+
+```bash
+git checkout -b feature/add-quest-validator   # new functionality
+git checkout -b fix/broken-link-in-docs       # bug fix
+git checkout -b docs/update-setup-guide        # documentation
+git checkout -b refactor/consolidate-scripts   # code refactoring
+```
+
+### 📜 Commit Like a Chronicler
+
+We follow [Conventional Commits](https://www.conventionalcommits.org/) — `<type>(<scope>): <subject>`. Types are `feat, fix, docs, style, refactor, test, chore`.
+
+```bash
+✅ feat(quest): add link guardian quest with AI analysis
+✅ fix(docs): correct broken links in setup guide
+✅ refactor(scripts): unify version management scripts
+
+❌ Update files
+❌ Fix bug
+❌ WIP
+```
+
+### 🔍 Verify Before You Push
+
+Run the local checks so CI doesn't surprise you:
+
+```bash
+make build-ci          # CI-parity Jekyll build
+make content-audit     # frontmatter + link validation
+make quest-audit       # only if you touched quests
+```
+
+CI re-runs build validation, frontmatter validation, internal link checking, and CodeQL on every pull request — green checks are required before merge.
+
+### 🎯 Open a Focused Pull Request
+
+Use a Conventional-Commits-style title (`feat(quest): add link guardian automation`) and a description that covers **what changed**, **why**, the **type of change**, a **testing checklist**, and any **related issues** (`Closes #123`). Keep each PR focused — one concern per PR makes review fast. A maintainer reviews (target: within 48 hours), then squash-and-merges once checks are green.
+
+## 🤖 Contributing with AI Agents
+
+IT-Journey embraces **AIPD** (AI-Powered Development) — AI is a force multiplier, not a replacement for human judgment. There are two supported paths.
+
+### 🛰️ Delegate an Issue to GitHub Copilot
+
+The [GitHub Copilot coding agent](https://docs.github.com/en/copilot/using-github-copilot/using-claude-sonnet-in-github-copilot) works directly inside the repo's CI environment:
+
+1. Open an issue, then in the **Assignees** panel assign **Copilot**.
+2. Copilot opens a PR on a new branch and posts progress as comments.
+3. Review the diff as you would any contributor's — agents can miss project conventions.
+4. Confirm CI is green, then **squash and merge**.
+
+A `copilot-setup-steps.yml` workflow pre-installs Ruby, Bundler, and dependencies automatically, so the agent's environment matches local development.
+
+### 🧙 Drive an AI Assistant Locally
+
+Use Claude, Copilot, Cursor, Continue.dev, or similar in your editor to draft changes, then verify and open the PR yourself. A few prompt strategies that work well here:
+
+| Task | Prompt strategy |
+|------|----------------|
+| **New doc page** | "Create a Jekyll Markdown file in `pages/_docs/<topic>/` with all required frontmatter fields." |
+| **Fix frontmatter** | "Audit this file's YAML frontmatter against the Frontmatter Standards and add missing fields." |
+| **Improve content** | "Review this for clarity, accuracy, and completeness; suggest additions for a contributor." |
+| **Update a guide** | "Update this to reflect [change], keep the existing voice, and bump `lastmod` to today." |
+
+**Agent do's and don'ts:**
+
+✅ Always bump `lastmod` when editing a file  
+✅ Run `make build-ci` to confirm the site compiles  
+✅ Write clear PR descriptions explaining what and why  
+✅ Follow Conventional Commits  
+
+❌ Never commit secrets, API keys, or credentials  
+❌ Don't touch CI workflow files unless asked  
+❌ Don't reorder or drop frontmatter fields without understanding the impact  
+❌ Don't hard-code absolute local paths or bypass branch protection  
 
 ## 🌟 Our Contributors
 
@@ -87,7 +188,7 @@ Every contributor gets a **Character Profile** — an RPG-style character sheet 
 4. Choose your **class**: Wizard, Warrior, Ranger, Rogue, Healer, Bard, or Paladin
 5. Commit + push — the GitHub Action will auto-generate your stats on the next push to `main`
 
-See the [Forge Your Character quest](/quests/forge-your-character/) for a full walkthrough.
+See the [Forge Your Character quest](/quests/0001/forge-your-character/) for a full walkthrough.
 
 **Alternative — Git Subtree Method:**
 
@@ -115,7 +216,8 @@ git subtree add --prefix=pages/_about/contributors/{{ page.username | default: '
 
 ### For Content Creators
 - **[Quest Creation Guide](https://github.com/bamr87/it-journey/blob/main/.github/instructions/quest.instructions.md)** - Build epic quests
-- **[Post Writing Guide](https://github.com/bamr87/it-journey/blob/main/.github/instructions/posts.instructions.md)** - Author blog posts
+- **[Notes Writing Guide](https://github.com/bamr87/it-journey/blob/main/.github/instructions/notes.instructions.md)** - Author cheatsheets and reference notes
+- **[Quickstart Guide](https://github.com/bamr87/it-journey/blob/main/.github/instructions/quickstart.instructions.md)** - Write fast-track onboarding guides
 - **[README Guidelines](https://github.com/bamr87/it-journey/blob/main/.github/instructions/README.instructions.md)** - Documentation standards
 
 ## 🎯 IT-Journey Principles
@@ -141,8 +243,8 @@ Not sure where to start? Try these:
 - Update a broken link
 
 ### Intermediate Contributions (1-2 hours)
-- Write a blog post about your learning journey
 - Create a beginner-level quest
+- Add a cheatsheet or reference note for a tool you use
 - Improve existing documentation
 - Add test coverage
 
@@ -166,7 +268,7 @@ Your contributions are valued and recognized through:
 
 - **Character Profile** with auto-calculated stats from your git history
 - **Achievement badges** unlocked by contribution milestones
-- **XP and leveling** — earn XP for commits, PRs, quests, and posts
+- **XP and leveling** — earn XP for commits, PRs, and completed quests
 - Contributor profile page on our website
 - Mentions in release notes
 - Recognition in the About page

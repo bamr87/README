@@ -4,7 +4,10 @@ title: Azure.ResourceManager.WeightsAndBiases SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.WeightsAndBiases SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.WeightsAndBiases` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/weightsandbiases/Azure.ResourceManager.WeightsAndBiases **Package**: https://www.nuget.org/packages/Azure.ResourceManager.WeightsAndBiases **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.WeightsAndBiases`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/weightsandbiases/Azure.ResourceManager.WeightsAndBiases
+**Package**: https://www.nuget.org/packages/Azure.ResourceManager.WeightsAndBiases
+**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

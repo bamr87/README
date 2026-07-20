@@ -4,7 +4,10 @@ title: Agent Skills
 ---
 # Agent Skills
 
-[![Evals & Tests](https://img.shields.io/github/actions/workflow/status/microsoft/skills/test-harness.yml?branch=main&label=Evals%20%26%20Tests)](https://github.com/microsoft/skills/actions/workflows/test-harness.yml) [![Copilot SDK Tests](https://img.shields.io/github/actions/workflow/status/microsoft/skills/skill-evaluation.yml?branch=main&label=Copilot%20SDK%20Tests)](https://github.com/microsoft/skills/actions/workflows/skill-evaluation.yml) [![Install via skills.sh](https://img.shields.io/badge/skills.sh-install-blue)](https://skills.sh/microsoft/skills) [![Documentation](https://img.shields.io/badge/docs-documentation-blue)](https://microsoft.github.io/skills/#documentation)
+[![Evals & Tests](https://img.shields.io/github/actions/workflow/status/microsoft/skills/test-harness.yml?branch=main&label=Evals%20%26%20Tests)](https://github.com/microsoft/skills/actions/workflows/test-harness.yml)
+[![Copilot SDK Tests](https://img.shields.io/github/actions/workflow/status/microsoft/skills/skill-evaluation.yml?branch=main&label=Copilot%20SDK%20Tests)](https://github.com/microsoft/skills/actions/workflows/skill-evaluation.yml)
+[![Install via skills.sh](https://img.shields.io/badge/skills.sh-install-blue)](https://skills.sh/microsoft/skills)
+[![Documentation](https://img.shields.io/badge/docs-documentation-blue)](https://microsoft.github.io/skills/#documentation)
 
 > [!NOTE]
 > **Work in Progress** — This repository is under active development. More skills are being added, existing skills are being updated to use the latest SDK patterns, and tests are being expanded to ensure quality. Contributions welcome!

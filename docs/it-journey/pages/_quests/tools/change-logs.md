@@ -1,30 +1,30 @@
 ---
-attachments: ''
 author: IT-Journey Team
 categories: []
 comments: false
-date: 2025-04-18 13:43:43+00:00
-description: Quest covering Change Logs.
+date: '2025-04-18T13:43:43.000Z'
+description: Master the Grand Book of CHANGELOG.md, semantic versioning, and automated
+  release notes with Release Drafter as you document your code realm.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 30-60 minutes
-excerpt: null
 fmContentType: quest
 keywords:
-- change
-- logs
-lastmod: 2025-04-18 19:43:43.286000+00:00
+  primary:
+  - change
+  secondary:
+  - logs
+lastmod: '2025-04-18T19:43:43.000Z'
+layout: quest
 learning_style: hands-on
 level: '0010'
-permalink: /quests/level-0010-change-logs/
+permalink: /quests/0010/change-logs/
 preview: /svg/penrose-gpt-vs-human.png
 primary_technology: General
 quest_series: Tools Collection
 quest_type: main_quest
-skill_focus:
-- Foundations
-snippet: null
+skill_focus: fullstack
 source_file: change-logs.md
-sub-title: null
 tags: []
 title: Change Logs
 ---
@@ -49,7 +49,7 @@ The changelog is your codebase's storybook. It should be clear enough for a newc
 
 ### **🧾 Changelog Format (The Spellbook Edition)**
 
-```
+```markdown
 ## [1.2.0] - 2025-04-18
 ### Added
 - OAuth login for wizards and mortals alike (#78)
@@ -124,4 +124,10 @@ If your codebase were a magical artifact, your docs would be the user manual etc
 So there you have it---your story, your spells, your saga, **all documented for the ages**. You're now the official historian of your repo realm. 🏛️
 
 Ready to step into the high tower of **Automation & GitHub Actions** next? The machines await your command. ⚙️✨ Shall we conjure Chapter 4?
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
 

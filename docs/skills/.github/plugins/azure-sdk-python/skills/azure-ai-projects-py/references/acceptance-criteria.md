@@ -4,7 +4,9 @@ title: Azure AI Projects SDK Acceptance Criteria
 ---
 # Azure AI Projects SDK Acceptance Criteria
 
-**SDK**: `azure-ai-projects` **Repository**: https://github.com/Azure/azure-sdk-for-python **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-projects`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

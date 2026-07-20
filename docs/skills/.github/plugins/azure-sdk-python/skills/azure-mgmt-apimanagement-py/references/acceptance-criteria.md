@@ -4,7 +4,10 @@ title: Azure API Management SDK Acceptance Criteria
 ---
 # Azure API Management SDK Acceptance Criteria
 
-**SDK**: `azure-mgmt-apimanagement` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: Latest stable v10.x **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-mgmt-apimanagement`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: Latest stable v10.x
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

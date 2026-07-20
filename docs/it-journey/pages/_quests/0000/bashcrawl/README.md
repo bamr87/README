@@ -5,323 +5,193 @@ categories:
 - Terminal
 - Gaming
 - Education
-date: 2025-07-05 12:12:17+00:00
-description: An interactive terminal-based adventure game that teaches command line
-  skills through exploration and puzzle-solving in a mystical dungeon
+date: '2025-07-05T12:12:17.000Z'
+description: Explore nine Bashcrawl chambers to master navigation, permissions, environment
+  variables, symlinks, and pipes in a gamified terminal RPG adventure.
 difficulty: 🟢 Easy
+draft: false
 estimated_time: 60-90 minutes
-excerpt: Embark on an epic terminal adventure that teaches command line skills through
-  interactive dungeon exploration and puzzle-solving
+excerpt: Embark on an epic terminal adventure that teaches Bash commands through nine
+  interconnected dungeon chambers, each a dedicated walkthrough side-quest
 fmContentType: quest
 keywords:
-- bash
-- terminal
-- command-line
-- adventure-game
-- learning
-- lvl-000
-lastmod: 2024-05-28 00:00:00+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - System Administration
-  - Software Development
-  skill_trees:
-  - Terminal Mastery
+  primary:
+  - bashcrawl
+  - terminal adventure
+  - bash commands
+  - command line learning
+  secondary:
+  - dungeon game
+  - shell scripting
+  - terminal navigation
+  - linux tutorial
+lastmod: '2026-05-23T02:30:23.000Z'
 learning_style: hands-on
 level: '0000'
-permalink: /quests/bashcrawl-terminal-adventure/
+mermaid: true
+permalink: /quests/0000/bashcrawl/
 prerequisites:
-- Basic computer navigation
-- Terminal access (bash/zsh shell)
-- Curiosity and sense of adventure
+  knowledge_requirements:
+  - Basic computer navigation
+  - Terminal application access
+  - Bash or compatible shell
 preview: images/previews/bashcrawl-quest-terminal-adventure-rpg.png
 primary_technology: bash
 quest_arc: Terminal Mastery Arc
 quest_dependencies:
   unlocks_quests:
-  - /quests/lvl_000/bash-run/
+  - /quests/0000/entrance/
+  - /quests/0000/workshop/
+  - /quests/0000/cellar/
+  - /quests/0000/armoury/
+  - /quests/0000/chamber/
+  - /quests/0000/hidden-chapel/
+  - /quests/0000/vault/
+  - /quests/0000/scrap/
+  - /quests/0000/rift/
+  - /quests/0000/agent-mode/
 quest_line: Foundation Path
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  sequel_quests:
-  - /quests/lvl_000/bash-run/
-quest_series: Level 000 - Foundation Skills
+quest_series: Bashcrawl Adventure Path
 quest_type: main_quest
-related_quests:
-- bash-run.md - Shell Scripting Fundamentals
-- hello-noob.md - Beginner's IT Journey Start
 rewards:
-- 🏆 Terminal Explorer Badge
-- ⚡ Command Line Navigation Skills
-- 🛠️ File System Understanding
-- 🎯 Shell Command Mastery
+  badges:
+  - 🏆 Terminal Explorer
+  - 🗝️ Dungeon Master
+  progression_points: 200
 skill_focus:
 - Terminal
 - Navigation
 - File System
-snippet: Learn bash through adventure - where every command is a spell and every directory
-  is a new realm to explore
 source_file: README.md
-sub-title: 'Level 000 Quest: Terminal Dungeon Adventure'
 tags:
 - bashcrawl
 - terminal
 - command-line
 - adventure-game
-- learning
 - bash
-- lvl-000
-title: Clone or download the bashcrawl adventure
+- '0000'
+title: Readme
 validation_criteria:
-- Complete the dungeon exploration
-- Demonstrate understanding of file navigation commands
-- Successfully solve terminal-based puzzles
+- Navigate through the entrance and read the first scroll
+- Navigate through at least five chambers
+- Defeat at least one combat encounter
+- Complete the Rift final boss
 ---
-*Welcome, brave adventurer, to the mystical realm of Bashcrawl! This is no ordinary quest - it's an interactive terminal-based adventure that will transform you from a command line novice into a seasoned digital explorer.*
+*Welcome to the Bashcrawl Catacombs — an interactive terminal dungeon where every command is a spell and every directory a new realm to explore. Nine interconnected chambers await, each a side-quest that teaches a core set of Bash skills through gameplay.*
 
-*In this epic journey, you'll navigate through mysterious dungeons, solve ancient puzzles, and discover hidden treasures, all while mastering the fundamental commands that every IT hero must know.*
+This hub is your **walkthrough and strategy guide** to the game. Play instantly in the browser below, use the nine chamber walkthroughs as your field manual, then graduate to the **advanced version** — [installing Bashcrawl](#play-locally) and playing it in a real shell.
 
-## 🎯 Quest Objectives
+## 🕹️ Play in Your Browser
 
-By completing this terminal adventure, you will master:
+The full game runs right here — no install required. Keep this guide open alongside it.
 
-### Primary Objectives (Required for Quest Completion)
-- [ ] **Terminal Navigation** - Master directory exploration with `cd`, `ls`, and `pwd`
-- [ ] **File Discovery** - Learn to identify and examine different file types
-- [ ] **Text Examination** - Use `cat`, `less`, and other text viewing commands
-- [ ] **Problem Solving** - Apply command line skills to solve adventure puzzles
+{% include bashcrawl-terminal.html %}
 
-### Secondary Objectives (Bonus Achievements)
-- [ ] **Advanced Navigation** - Discover hidden directories and secret passages
-- [ ] **Command Mastery** - Experiment with advanced options and flags
-- [ ] **Story Completion** - Uncover the complete narrative through exploration
+## 🗺️ Catacombs Map
 
-### Mastery Indicators
-You'll know you've truly conquered this quest when you can:
-- [ ] Navigate any terminal environment with confidence
-- [ ] Quickly identify file types and their purposes
-- [ ] Use text examination commands effectively
-- [ ] Solve new terminal-based challenges independently
-
-## 🗺️ Quest Prerequisites
-
-### 📋 Knowledge Requirements
-- [ ] Basic understanding of what a terminal/command line is
-- [ ] Familiarity with typing commands and pressing Enter
-- [ ] Understanding that commands are case-sensitive
-
-### 🛠️ System Requirements
-- [ ] Any Unix-like system (Linux, macOS, or Windows with WSL)
-- [ ] Terminal application access
-- [ ] Bash or compatible shell environment
-
-### 🧠 Skill Level Indicators
-- [ ] Comfortable opening a terminal application
-- [ ] Can type commands without fear of "breaking" something
-- [ ] Ready to learn through experimentation and exploration
-
-## 📚 Resource Codex
-
-To aid you in your quest, consult these ancient tomes of knowledge:
-- [The Spellbook: Bash Cheatsheet](/shell/) - Quick reference for essential commands and scripting techniques.
-- [The Grand Grimoire: Complete BASH Reference](/docs/bash-complete-reference/) - Exhaustive guide covering every aspect of GNU Bash.
-
-## 🌍 Adventure Setup Guide
-
-### 🐧 Linux Territory Setup
-```bash
-# Clone or download the bashcrawl adventure
-git clone https://github.com/bamr87/bashcrawl.git
-cd bashcrawl
-chmod +x entrance.sh
-./entrance.sh
+```mermaid
+flowchart TD
+    HUB([🏰 Bashcrawl Hub]) --> ENT[🚪 Entrance]
+    ENT --> WRK[🔨 Workshop]
+    ENT --> CEL[🍷 Cellar]
+    WRK --> CEL
+    CEL --> ARM[⚔️ Armoury]
+    CEL --> CHP[⛪ Hidden Chapel]
+    CEL --> VLT[🔒 Vault]
+    CEL --> SCR[🗑️ Scrap Heap]
+    ARM --> CHM[🐉 Chamber]
+    CHM --> RFT[🌀 The Rift]
+    CHP --> RFT
+    VLT --> RFT
+    SCR --> RFT
+    RFT --> AGT[🤖 Agent Mode]
+    click ENT "/quests/0000/side-quests/entrance/"
+    click WRK "/quests/0000/side-quests/workshop/"
+    click CEL "/quests/0000/side-quests/cellar/"
+    click ARM "/quests/0000/side-quests/armoury/"
+    click CHM "/quests/0000/side-quests/chamber/"
+    click CHP "/quests/0000/side-quests/hidden-chapel/"
+    click VLT "/quests/0000/side-quests/vault/"
+    click SCR "/quests/0000/side-quests/scrap/"
+    click RFT "/quests/0000/side-quests/rift/"
+    click AGT "/quests/0000/side-quests/agent-mode/"
 ```
 
-### 🍎 macOS Kingdom Setup
-```bash
-# Install via Homebrew (recommended)
-brew install bashcrawl
+## 📖 Chapter Guide
 
-# Or clone directly
-git clone https://github.com/bamr87/bashcrawl.git
-cd bashcrawl
-chmod +x entrance.sh
-./entrance.sh
-```
+| # | Chamber | Difficulty | Key Commands | Walkthrough |
+|---|---------|-----------|--------------|-------------|
+| 1 | 🚪 Entrance | 🟢 Easy | `pwd` `ls` `cd` `cat` | [Start Here](/quests/0000/side-quests/entrance/) |
+| 2 | 🔨 Workshop | 🟢 Easy | `mkdir` `touch` `rm` `echo >` | [Workshop](/quests/0000/side-quests/workshop/) |
+| 3 | 🍷 Cellar | 🟢 Easy | `ls -F` `alias` `file` | [Cellar](/quests/0000/side-quests/cellar/) |
+| 4 | ⚔️ Armoury | 🟡 Medium | `chmod` `./` permissions | [Armoury](/quests/0000/side-quests/armoury/) |
+| 5 | 🐉 Chamber | 🟡 Medium | `let` `$(( ))` arithmetic | [Chamber](/quests/0000/side-quests/chamber/) |
+| 6 | ⛪ Hidden Chapel | 🔴 Hard | `ls -a` `man` hidden dirs | [Chapel](/quests/0000/side-quests/hidden-chapel/) |
+| 7 | 🔒 Vault | 🟡 Medium | `export` `$VAR` `env` | [Vault](/quests/0000/side-quests/vault/) |
+| 8 | 🗑️ Scrap Heap | 🟡 Medium | `ln -s` `readlink` symlinks | [Scrap](/quests/0000/side-quests/scrap/) |
+| 9 | 🌀 The Rift | 🔴 Hard | pipes `\|` `&&` redirection | [Rift](/quests/0000/side-quests/rift/) |
+| ★ | 🤖 Agent Mode | 🔴 Hard | `--agent` `--batch` `--screenshot-dir` | [Agent](/quests/0000/side-quests/agent-mode/) |
 
-### 🪟 Windows Empire Setup (WSL)
-```powershell
-# First ensure WSL is installed
-wsl --install
+{% include bashcrawl-play-local.html %}
 
-# Then in WSL terminal:
-git clone https://github.com/bamr87/bashcrawl.git
-cd bashcrawl
-chmod +x entrance.sh
-./entrance.sh
-```
+## 🧙 In-Game Commands
 
-## 🧙‍♂️ Chapter 1: Entering the Digital Dungeon
+| Command | Effect |
+|---------|--------|
+| `quest` | Show current quest objectives |
+| `merlin` | Get a context-aware hint |
+| `status` or `hp` | Show health and progress |
+| `inventory` or `i` | List collected items |
+| `map` | Display the dungeon map |
+| `save` | Save current progress |
+| `load` | Restore last save |
+| `tutorial` | Toggle tutorial mode |
+| `commands` | List all game commands |
+| `help` | Show help screen |
+| `reset` | Reset to a fresh start |
 
-*As you approach the ancient digital dungeon, you see mysterious symbols carved into the virtual stone. These are not random markings - they are the sacred commands that will guide you through this realm.*
+## ⚔️ Combat Commands
 
-### ⚔️ Essential Terminal Spells
+| Script | Chamber | Encounter |
+|--------|---------|-----------|
+| `./statue` | Chamber | Solve arithmetic to defeat the stone guardian |
+| `./monster` | Chapel hall | Combat encounter — use weapon from Armoury |
+| `./ghost` | Vault lab | Ghost encounter — environment variable skills required |
+| `./goblet` | Vault stronghold | Solve the goblet puzzle; unlocks the path to the Rift |
 
-Before beginning your adventure, familiarize yourself with these magical incantations:
-
-| Command | Magic Effect | Adventure Use |
-|---------|-------------|---------------|
-| `ls` | Reveals contents of current location | Discover rooms and items |
-| `ls -F` | Shows file types with special symbols | Identify different entities |
-| `cd [directory]` | Transports you to new location | Move between dungeon rooms |
-| `pwd` | Reveals your current position | Know where you are |
-| `cat [file]` | Reads scrolls and documents | Examine clues and stories |
-| `less [file]` | Reads long texts page by page | Study detailed manuscripts |
-
-### 🔍 Understanding the Mystical Symbols
-
-When you cast `ls -F`, you'll see these magical markers:
-
-- **/** - Portals to other chambers (directories)
-- **\*** - Magical artifacts with power (executable files)
-- **@** - Mystical links to distant realms (symbolic links)
-- **(no symbol)** - Ancient scrolls and documents (regular files)
-
-## 🎮 Chapter 2: Beginning Your Adventure
-
-### 🏰 Step 1: Enter the Dungeon
-
-Start your journey by running the entrance script:
+## 🔧 Maintenance Commands
 
 ```bash
-./entrance.sh
+./setup.sh --verify        # Check installation health
+./setup.sh --repair        # Fix common permission/setup issues
+./main.sh --status         # Show current game progress
+./main.sh --reset          # Reset for a fresh run
 ```
 
-This will transport you to the beginning of your adventure!
+## 🧭 Learning Path Tips
 
-### 🗝️ Step 2: Read Everything Carefully
+- Start with **Entrance → Workshop → Cellar** to build confidence before branching.
+- Keep a command journal: capture one new command and one mistake after each chamber.
+- Replay one chamber in a different mode (Web, Classic, or Native) to reinforce transfer skills.
 
-The adventure provides narrative clues and hints. Pay attention to:
-- Story text that sets the scene
-- Hints about which commands to use
-- Descriptions of what you should look for
-- Clues about where to go next
+## 📚 External Resources
 
-### ⚡ Step 3: Experiment Fearlessly
+- [Bashcrawl — Play Online](https://bamr87.github.io/bashcrawl/)
+- [Bashcrawl GitHub Repository](https://github.com/bamr87/bashcrawl/)
+- [The Spellbook: Bash Cheatsheet](/notes/cheatsheets/bash-cheatsheet/)
+- [The Grand Grimoire: Complete Bash Reference](/docs/bash-complete-reference/)
+- [Original Upstream — GitLab slackermedia/bashcrawl](https://gitlab.com/slackermedia/bashcrawl)
 
-Remember: You cannot break anything in this virtual dungeon! Feel free to:
-- Try different command variations
-- Explore unexpected paths
-- Read all the files you discover
-- Take notes about interesting discoveries
+## 🗺️ Quest Network
 
-## 🧙‍♂️ Chapter 3: Advanced Exploration Techniques
+**Quest Series**: Bashcrawl Adventure Path
 
-### 🔮 Power-User Navigation
+**Prerequisites**: None — this hub is a perfect entry point.
 
-As you become more comfortable, try these advanced techniques:
+**Child Quests**: All nine chamber walkthroughs above (see Chapter Guide).
 
-```bash
-# View detailed file information
-ls -la
-
-# Navigate up one level quickly
-cd ..
-
-# Return to your home base
-cd ~
-
-# See command history
-history
-
-# Search for specific files
-find . -name "*.txt"
-```
-
-### 🛡️ Problem-Solving Strategies
-
-When you encounter challenges:
-
-1. **Read all available clues** - Every file might contain helpful information
-2. **Try different approaches** - If one command doesn't work, try variations
-3. **Pay attention to file names** - They often hint at their contents
-4. **Use tab completion** - Type part of a filename and press Tab
-5. **Don't give up** - The adventure is designed to teach through discovery
-
-## 🎮 Chapter 4: Quest Completion Challenges
-
-### 🟢 Novice Challenge: Basic Navigation
-- [ ] Successfully navigate through the first 3 chambers
-- [ ] Read at least 5 different files using `cat`
-- [ ] Identify all file types in each room using `ls -F`
-
-### 🟡 Adventurer Challenge: Exploration Mastery
-- [ ] Discover all hidden chambers and secret areas
-- [ ] Solve all puzzles without external help
-- [ ] Document your journey with notes about each discovery
-
-### 🔴 Expert Challenge: Command Mastery
-- [ ] Complete the entire adventure using advanced commands
-- [ ] Find alternative solutions to puzzles
-- [ ] Create your own mini-adventure for others
-
-## 🏆 Quest Completion Validation
-
-### Portfolio Artifacts Created
-- [ ] **Adventure Log**: Personal notes documenting your journey
-- [ ] **Command Reference**: List of commands learned with explanations
-- [ ] **Problem Solutions**: Documentation of how you solved each puzzle
-
-### Skills Demonstrated
-- [ ] **File Navigation**: Confidently move between directories
-- [ ] **Content Examination**: Effectively read and understand file contents
-- [ ] **Problem-Solving**: Apply terminal knowledge to new challenges
-
-### Knowledge Gained
-- [ ] **Terminal Confidence**: No longer intimidated by command line
-- [ ] **File System Understanding**: Clear mental model of directory structures
-- [ ] **Command Application**: Know when and how to use basic commands
-
-## 🗺️ Quest Network Position
-
-**Quest Series**: Level 000 - Foundation Skills
-
-**Prerequisite Quests**:
-- None - This is a perfect starting adventure!
-
-**Follow-Up Quests**:
-- [Bash Run Quest](../bash-run.md) - Shell Scripting Fundamentals
-- [Hello n00b Quest](../hello-noob.md) - Continuing Your IT Journey
-- [VS Code Mastery](../vscode-mastery.md) - Development Environment Setup
-
-**Parallel Quests** (can be completed in any order):
-- Character Building and IT Fundamentals quests
-- Basic development environment setup quests
-
-## 🎉 Congratulations, Terminal Explorer!
-
-*You have successfully completed the Bashcrawl Terminal Adventure! Your journey through the digital dungeons has equipped you with essential command line skills that will serve as the foundation for all your future IT adventures.*
-
-### 🌟 What's Next?
-
-Your newfound terminal mastery opens several exciting paths:
-
-- **Deepen Your Command Skills**: Explore advanced bash scripting
-- **Expand Your Toolkit**: Learn text processing tools like `grep`, `sed`, and `awk`
-- **Apply Your Skills**: Use terminal commands in real development projects
-- **Share Your Adventure**: Help others discover the magic of the command line
-
-### 📚 Additional Resources
-
-- **Official Bashcrawl Repository**: [GitLab](https://gitlab.com/slackermedia/bashcrawl)
-- **Command Line Learning**: [The Linux Command Line](http://linuxcommand.org/)
-- **Terminal Games**: [Other CLI adventure games](https://github.com/topics/terminal-game)
-- **Advanced Bash**: [Advanced Bash Scripting Guide](https://tldp.org/LDP/abs/html/)
+**Sequel Quest**: [Bash Run and Beyond](/quests/0000/side-quests/bash-run/) — extend the dungeon with custom scripting.
 
 ---
 
-*May your commands always execute successfully, your paths be clearly navigated, and your files be forever found! Ready for your next terminal adventure? The digital realm awaits!* ⚔️✨
+*Ready? Run `./bash_crawl.sh` or open [Bashcrawl Online](https://bamr87.github.io/bashcrawl/) and type your first command.* ⚔️✨

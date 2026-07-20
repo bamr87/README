@@ -4,7 +4,9 @@ title: Azure Web PubSub SDK Acceptance Criteria (TypeScript)
 ---
 # Azure Web PubSub SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/web-pubsub`, `@azure/web-pubsub-client` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/web-pubsub **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/web-pubsub`, `@azure/web-pubsub-client`
+**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/web-pubsub
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

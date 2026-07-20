@@ -33,7 +33,7 @@ Based on a full interactive playtest session (2026-02-16), this document catalog
 - **A) Use env vars instead of file mutation:** Replace the `perl` command with
 instructions for the player to `export I=diamonds,$I` directly. Remove `rm treasure` / `rm spell` from the loss path — instead set a file-based flag (e.g., `touch .statue_defeated`) and check it on re-entry.
 
-- **B) Copy-on-play:** At session start (in `setup.sh` or `main.sh`), snapshot
+- **B) Copy-on-play:** At session start (in `setup.sh`), snapshot
   mutable game files to a temp directory and restore on reset.
 
 **Files to change:**
@@ -45,7 +45,7 @@ instructions for the player to `export I=diamonds,$I` directly. Remove `rm treas
 
 ### 3. ~~No Game Reset Script~~ (RESOLVED)
 
-**Status:** Resolved. `lib/reset.sh` provides game state reset, and `main.sh --reset` exposes it via the CLI. The `state_reset` function in `lib/state.sh` handles the JSON state file.
+**Status:** Resolved. `lib/reset.sh` provides game state reset.
 
 ---
 
@@ -101,13 +101,13 @@ instructions for the player to `export I=diamonds,$I` directly. Remove `rm treas
 **Fix:** Either:
 
 - Check `$HP` directly: `if [ "${HP:-0}" -lt 15 ]; then` (assumes potion sets HP=15)
-- Delete `.potion_used` in `reset.sh` and document the reset requirement
+- Delete `.potion_used` in `lib/reset.sh` and document the reset requirement
 - Or combine both: check `.potion_used` but reset it when `$HP` is unset or zero
 
 **Files to change:**
 
 - `entrance/cellar/armoury/potion`
-- `reset.sh` (add `.potion_used` cleanup)
+- `lib/reset.sh` (add `.potion_used` cleanup)
 
 ---
 
@@ -176,7 +176,7 @@ The `scrolls.instructions.md` defines clear standards: Level 1 (entrance) uses A
 After implementing changes, validate with a clean playthrough:
 
 ```bash
-bash reset.sh                    # Start fresh
+bash lib/reset.sh                # Start fresh
 bash setup.sh                    # Configure permissions
 cd entrance && cat scroll        # Begin game
 export I="" HP=100               # Initialize state

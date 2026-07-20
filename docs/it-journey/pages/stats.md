@@ -1,8 +1,26 @@
 ---
-date: 2025-10-09 18:25:11+00:00
-description: Comprehensive analytics and metrics for the IT-Journey knowledge base
+author: IT-Journey Team
+categories:
+- meta
+- analytics
+date: '2025-10-09T18:25:11.000Z'
+description: Site analytics dashboard for IT-Journey — content totals, category breakdowns,
+  contributor counts, and the live numbers behind the navigation.
+draft: false
+keywords:
+- it-journey statistics
+- site analytics
+- content metrics
+- jekyll analytics
+- contributor stats
+lastmod: '2026-05-24T00:00:00.000Z'
 permalink: /stats/
 source_file: stats.md
+tags:
+- statistics
+- analytics
+- meta
+- content-metrics
 title: Stats
 ---
 <div class="container my-5">
@@ -12,7 +30,7 @@ title: Stats
         <i class="bi bi-graph-up"></i> Site Statistics Portal
       </h1>
       <p class="lead">
-        Comprehensive analytics and insights from the IT-Journey knowledge base
+        Content totals, category breakdowns, and tag counts from the IT-Journey knowledge base
       </p>
       
       {% if site.data.content_statistics %}

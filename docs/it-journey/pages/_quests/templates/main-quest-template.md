@@ -5,22 +5,22 @@ categories:
 - - Skill-Category
 - - Difficulty-Level
 comments: true
-date: 2025-11-29 22:51:57+00:00
-description: Complete description of what the quest teaches and accomplishes (150-300
-  characters for SEO)
+date: '2025-11-29T22:51:57.000Z'
+description: 'The master scaffold for authoring IT-Journey main quests: copy this
+  template, fill the frontmatter and gamified sections, and ship a complete adventure.'
 difficulty: 🟢 Easy
 draft: true
 estimated_time: 30-45 minutes
 excerpt: One-sentence summary of the quest's core learning objective
-fmContentType: template
+fmContentType: quest
 keywords:
-- lvl-XXXX
+- XXXX
 - '[''primary-technology'']'
 - main_quest
 - '[''skill-focus'']'
 - hands-on
 - gamified-learning
-lastmod: 2025-12-01 05:49:32.316000+00:00
+lastmod: '2025-12-01T05:49:32.000Z'
 learning_paths:
   character_classes:
   - 💻 Software Developer
@@ -32,7 +32,8 @@ learning_paths:
   - '[Secondary Skill Tree]'
 learning_style: hands-on
 level: XXXX
-permalink: /quests/level-XXXX-[quest-slug]/
+mermaid: true
+permalink: /quests/XXXX/quest-slug/
 prerequisites:
   knowledge_requirements:
   - Basic command line navigation
@@ -42,16 +43,13 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - '[Required software installed]'
-preview: images/previews/quest-title-descriptive-subtitle.png
+preview: /images/previews/quest-title-descriptive-subtitle.png
 primary_technology: '[main-tech]'
 quest_arc: '[Story arc or thematic grouping]'
 quest_dependencies:
-  recommended_quests:
-  - /quests/level-XXXX-helpful-quest/
-  required_quests:
-  - /quests/level-XXXX-prerequisite-quest/
-  unlocks_quests:
-  - /quests/level-XXXX-next-quest/
+  recommended_quests: []
+  required_quests: []
+  unlocks_quests: []
 quest_line: '[Campaign/storyline name]'
 quest_mapping:
   biome: Terminal
@@ -60,13 +58,13 @@ quest_mapping:
   region: Foundation
 quest_relationships:
   child_quests:
-  - /quests/level-XXXX-side-quest-1/
-  - /quests/level-XXXX-side-quest-2/
+  - /quests/XXXX/side-quests/side-quest-1/
+  - /quests/XXXX/side-quests/side-quest-2/
   parallel_quests:
-  - /quests/level-XXXX-alternative-path/
+  - /quests/XXXX/alternative-path/
   parent_quest: null
   sequel_quests:
-  - /quests/level-XXXX-continuation/
+  - /quests/XXXX/continuation/
 quest_series: '[series-name]'
 quest_type: main_quest
 rewards:
@@ -82,7 +80,7 @@ skill_focus:
 source_file: main-quest-template.md
 sub_title: 'Level XXXX (XX) Quest: Main Quest - [Technology]'
 tags:
-- lvl-XXXX
+- XXXX
 - primary-technology
 - main_quest
 - skill-focus
@@ -117,7 +115,7 @@ graph TB
     subgraph "Current Quest Chain"
         PreReq1[📍 Prerequisite Quest 1]
         PreReq2[📍 Prerequisite Quest 2]
-        Current[🎯 THIS QUEST<br/>[Quest Name]]
+        Current[🎯 THIS QUEST<br/>Quest Name]
         Side1[⭐ Side Quest 1]
         Side2[⭐ Side Quest 2]
         Next1[🔜 Unlocked Quest 1]
@@ -505,6 +503,14 @@ Before marking this quest as complete, ensure you've:
 - [ ] ✅ Completed at least one mastery challenge
 - [ ] ✅ Explored the resource library
 - [ ] ✅ Identified your next quest in the journey
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level {% raw %}{{fm.level}}{% endraw %} - ...]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Prerequisite Quest Title]] **Unlocks:** [[Follow-up Quest Title]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+
+> Run `python3 scripts/quest/add-obsidian-wiki-references.py` to regenerate wiki links from `quest_dependencies` after editing frontmatter.
 
 ---
 

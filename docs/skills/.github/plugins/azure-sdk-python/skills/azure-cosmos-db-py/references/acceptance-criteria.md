@@ -4,7 +4,10 @@ title: Azure Cosmos DB (FastAPI Patterns) Acceptance Criteria
 ---
 # Azure Cosmos DB (FastAPI Patterns) Acceptance Criteria
 
-**SDK**: `azure-cosmos` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `n/a` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-cosmos`
+**Repository**: https://github.com/Azure/azure-sdk-for-python
+**Commit**: `n/a`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

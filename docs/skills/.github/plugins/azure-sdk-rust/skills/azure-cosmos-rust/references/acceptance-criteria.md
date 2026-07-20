@@ -4,7 +4,9 @@ title: Azure Cosmos DB SDK for Rust Acceptance Criteria
 ---
 # Azure Cosmos DB SDK for Rust Acceptance Criteria
 
-**Crate**: `azure_data_cosmos` **Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/cosmos/azure_data_cosmos **Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
+**Crate**: `azure_data_cosmos`
+**Repository**: https://github.com/Azure/azure-sdk-for-rust/tree/main/sdk/cosmos/azure_data_cosmos
+**Purpose**: Skill testing acceptance criteria for validating generated Rust code correctness
 
 ---
 

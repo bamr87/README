@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 14,
-    "fingerprint": "583bc229e309e2b6",
+    "file_count": 15,
+    "fingerprint": "106ed54fca9c76e7",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 140088
+    "total_bytes": 141399
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -26,13 +26,13 @@
   },
   "key_docs": [
     "README.md",
+    "CLAUDE.md",
     "FORKME/FORKME.md",
     "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
     "FORKME/FORKME-EXAMPLES.md",
     "FORKME/IMPROVEMENTS.md",
     "FORKME/REVIEW-SUMMARY.md",
-    "STASHME/STASHME-EXAMPLES.md",
-    "STASHME/STASHME.md"
+    "STASHME/STASHME-EXAMPLES.md"
   ],
   "project": {
     "branch": null,
@@ -51,28 +51,29 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 14
+      "scripts": 15
     },
     "code_languages": [
       "bash",
       "plaintext",
       "yaml"
     ],
-    "indexed_documents": 14,
+    "indexed_documents": 15,
     "top_tags": [],
-    "total_words": 16570
+    "total_words": 16757
   },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": false,
     "has_changelog": false,
-    "has_claude_md": false,
+    "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
     "has_security_policy": false
   },
   "structure": {
     "root_docs": [
+      "CLAUDE.md",
       "README.md",
       "RENAME-DIRECTORY-QUICK-REFERENCE.md"
     ],

@@ -488,7 +488,8 @@ const client = new CopilotClient({
 });
 ```
 
-**Supported token types:** `gho_` (OAuth), `ghu_` (GitHub App), `github_pat_` (fine-grained PAT). **Not supported:** `ghp_` (classic PAT — deprecated).
+**Supported token types:** `gho_` (OAuth), `ghu_` (GitHub App), `github_pat_` (fine-grained PAT).
+**Not supported:** `ghp_` (classic PAT — deprecated).
 
 ### Disable Auto-Login
 

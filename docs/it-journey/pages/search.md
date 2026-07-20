@@ -3,10 +3,10 @@ author: bamr87
 categories:
 - search
 - navigation
-date: 2023-03-11 13:54:22+00:00
+date: '2023-03-11T13:54:22.000Z'
 description: Search functionality and sitemap index for the IT-Journey website
 draft: false
-lastmod: 2023-03-11 01:12:55.441000+00:00
+lastmod: '2023-03-11T01:12:55.000Z'
 layout: index
 permalink: /search/
 slug: search

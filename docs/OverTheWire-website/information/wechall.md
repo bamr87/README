@@ -7,7 +7,10 @@ title: Wechall
 WeChall Scoreboard
 ==================
 
-OverTheWire makes use of a scoreboard provided by [WeChall][] to allow players to track their own progress and promote some healthy competition between players. To make use of this scoreboard for OverTheWire games, you need to follow these steps:
+OverTheWire makes use of a scoreboard provided by [WeChall][] to allow
+players to track their own progress and promote some healthy competition
+between players. To make use of this scoreboard for OverTheWire games,
+you need to follow these steps:
 
 1.  First, go to [WeChall][] and register for an account.
 2.  Next, log in and retrieve your WeChall token and username. Your

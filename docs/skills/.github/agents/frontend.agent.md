@@ -150,6 +150,11 @@ pnpm test     # Run Vitest tests
 
 ## Rules
 
-✅ Use `memo()` + named function for all node components ✅ Use design tokens (`--frontier-*`, `--foundry-*`) ✅ Use barrel exports in component folders ✅ Run `pnpm lint && pnpm build` before completing
+✅ Use `memo()` + named function for all node components
+✅ Use design tokens (`--frontier-*`, `--foundry-*`)
+✅ Use barrel exports in component folders
+✅ Run `pnpm lint && pnpm build` before completing
 
-🚫 Never hardcode colors 🚫 Never use `any` type 🚫 Never use class components
+🚫 Never hardcode colors
+🚫 Never use `any` type
+🚫 Never use class components

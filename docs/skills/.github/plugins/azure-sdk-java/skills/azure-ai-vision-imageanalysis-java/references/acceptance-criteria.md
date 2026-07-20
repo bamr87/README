@@ -4,7 +4,9 @@ title: Azure AI Vision Image Analysis SDK for Java Acceptance Criteria
 ---
 # Azure AI Vision Image Analysis SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-vision-imageanalysis` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/vision/azure-ai-vision-imageanalysis **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-vision-imageanalysis`
+**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/vision/azure-ai-vision-imageanalysis
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

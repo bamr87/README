@@ -129,7 +129,8 @@ Returns `PERMISSION_DENIED` with code 403
 
 ## Error Details
 ```
-Error: PERMISSION_DENIED Code: 403
+Error: PERMISSION_DENIED
+Code: 403
 ```
 
 ## Impact

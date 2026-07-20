@@ -7,7 +7,9 @@ title: Chat
 Need help?
 ==========
 
-It's normal to get stuck on a level from time to time, don't despair!<br> Before reaching out for help, make sure you have read the level's description and hints carefully.<br> If you are still stuck, you can ask for help in the chatrooms, but remember to follow the [rules].
+It's normal to get stuck on a level from time to time, don't despair!<br>
+Before reaching out for help, make sure you have read the level's description and hints carefully.<br>
+If you are still stuck, you can ask for help in the chatrooms, but remember to follow the [rules].
 
 You might want to read this [article] before asking for help. 
 
@@ -36,6 +38,15 @@ If you don't know [how to use IRC][], use google to find out.
 		Port: 6667
 
 The channels used on IRC are the same as on Discord.
+
+The following IRC commands may be useful:
+
+```
+ /connect -ssl ircs.overthewire.org 6697
+ /msg nickserv register mypassword my@email.whatever
+ /msg nickserv identify mypassword
+ /join #wargames
+```
 
 [how to use IRC]: https://en.wikipedia.org/wiki/Wikipedia:IRC/Tutorial
 [article]: http://catb.org/~esr/faqs/smart-questions.html

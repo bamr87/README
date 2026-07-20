@@ -4,7 +4,7 @@ categories:
 - Quests
 - Init-World
 - Career-Development
-date: 2023-11-25 14:12:43+00:00
+date: '2023-11-25T14:12:43.000Z'
 description: Shape your digital persona and choose the tools, technologies, and specializations
   that will define your IT journey from novice to hero
 difficulty: 🟢 Easy
@@ -15,36 +15,23 @@ excerpt: Begin your transformation from IT novice to digital hero by building yo
   development environment
 fmContentType: quest
 keywords:
-- character-building
-- career-planning
-- development-environment
-- specialization
-- it-career
-- init-world
-- lvl-001
-lastmod: 2025-11-30 05:46:59.330000+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  - 🛡️ Security Specialist
-  - 📊 Data Scientist
-  - 🤝 DevOps Facilitator
-  primary_paths:
-  - Software Development
-  - System Administration
-  - Data Science
-  - Cybersecurity
-  skill_trees:
-  - Career Planning
-  - Development Environment
-  - Self-Assessment
+  primary:
+  - character-building
+  - career-planning
+  - development-environment
+  secondary:
+  - specialization
+  - it-career
+  - init-world
+  - 1
+lastmod: '2025-11-30T05:46:59.000Z'
+layout: quest
 learning_style: hands-on
 level: '0000'
 meta:
   quest_type: character_development
   skill_focus: career_planning
-permalink: /quests/character-building/
+permalink: /quests/0000/character-building/
 prerequisites:
   knowledge_requirements:
   - Completed hello-noob quest or basic GitHub familiarity
@@ -62,25 +49,15 @@ primary_technology: character-building
 quest_arc: Character Creation Arc
 quest_dependencies:
   recommended_quests:
-  - /quests/lvl_000/begin-your-it-journey/
+  - /quests/0000/begin-your-it-journey/
   required_quests:
-  - /quests/init_world/hello-noob/
+  - /quests/0000/hello-noob/
   unlocks_quests:
-  - /quests/lvl_000/character-selection/
-  - /quests/lvl_000/os-selection/
+  - /quests/0000/character-selection/
+  - /quests/0000/os-selection/
 quest_line: Foundation Path
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  sequel_quests:
-  - /quests/lvl_000/character-selection/
-  - /quests/lvl_000/os-selection/
 quest_series: Init World - Character Creation
 quest_type: main_quest
-related_quests:
-- hello-noob.md - First Steps into IT
-- character-selection.md - Choose Your IT Specialization
-- os-selection.md - Operating System Selection Guide
 rewards:
   badges:
   - 🏆 Character Identity Badge
@@ -92,14 +69,10 @@ rewards:
   unlocks_features:
   - Access to specialization-specific quests
   - Development environment configured
-skill_focus:
-- Quests
-- Init-World
-- Career-Development
+skill_focus: fullstack
 slug: character-building
-snippet: Every hero needs an origin story - craft yours with intention and purpose
 source_file: character-building.md
-sub-title: 'Level 001 Quest: Defining Your Digital Identity'
+sub_title: 'Level 001 Quest: Defining Your Digital Identity'
 tags:
 - character-building
 - career-planning
@@ -107,7 +80,7 @@ tags:
 - specialization
 - it-career
 - init-world
-- lvl-001
+- '1'
 title: Node.js and npm for JavaScript development
 validation_criteria:
   completion_requirements:
@@ -131,7 +104,7 @@ validation_criteria:
 Through this character-building adventure, you will:
 
 ### Primary Objectives (Required for Quest Completion)
-- [ ] **Define Your IT Persona** - Create a comprehensive character profile including strengths, interests, and goals
+- [ ] **Define Your IT Persona** - Create a character profile documenting your strengths, interests, and goals
 - [ ] **Choose Your Specialization Path** - Select primary and secondary areas of focus for your IT journey
 - [ ] **Design Your Development Environment** - Configure the tools and platforms that will support your growth
 - [ ] **Set Learning Milestones** - Establish clear, measurable goals for your advancement
@@ -238,7 +211,7 @@ Based on your responses, identify your primary IT archetype:
 **Strengths**:
 - Preferred in server and development environments
 - Open-source ecosystem with incredible customization
-- Powerful command-line tools and scripting capabilities
+- Scriptable command-line tools (bash, grep, sed, cron) for automation
 - Strong security and stability reputation
 
 **Best For**: Server administration, open-source development, DevOps, cybersecurity
@@ -250,7 +223,7 @@ Based on your responses, identify your primary IT archetype:
 - Unix-based environment with polished interface
 - Excellent for iOS and macOS development
 - Popular among creative professionals and developers
-- Seamless integration with Apple ecosystem
+- Handoff, AirDrop, and iCloud sync with other Apple devices
 
 **Best For**: Mobile app development, design work, content creation, full-stack development
 
@@ -325,7 +298,7 @@ Choose ONE secondary area to complement your primary focus:
 Choose your primary development environment:
 
 - **Visual Studio Code**: Versatile, extensible, great for web development
-- **IntelliJ IDEA**: Powerful for Java and enterprise development  
+- **IntelliJ IDEA**: Deep refactoring and debugging support for Java and enterprise development  
 - **PyCharm**: Specialized for Python development
 - **Sublime Text**: Lightweight and fast for various languages
 
@@ -405,7 +378,7 @@ Set up systems to monitor your advancement:
 ## 🏆 Quest Completion Validation
 
 ### Portfolio Artifacts Created
-- [ ] **Character Profile Document**: Comprehensive overview of your IT identity
+- [ ] **Character Profile Document**: A written overview of your IT identity covering strengths, interests, and goals
 - [ ] **Specialization Plan**: Detailed learning path with timelines and milestones
 - [ ] **Development Environment**: Fully configured and personalized workspace
 - [ ] **Goal Tracking System**: Framework for monitoring progress and achievements
@@ -530,3 +503,10 @@ With your character fully defined, you're ready to:
 **Action Step**: Dedicate a specific time for learning and practicing new skills.
 
 By preparing your environment and tools, you're setting the stage for a successful journey in IT. Each tool and skill you acquire is like adding a new spell to your spellbook, making you more prepared for the challenges ahead. Happy adventuring! 🧙‍♂️💻🔮
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Hello n00b: Your First Steps into the IT Journey]] **Recommended:** [[Begin your IT Journey]] **Unlocks:** [[Character Selection]] · [[OS Selection]] **Sequel quests:** [[Character Selection]] · [[OS Selection]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

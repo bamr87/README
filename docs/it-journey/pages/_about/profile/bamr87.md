@@ -1,10 +1,12 @@
 ---
 avatar: /assets/images/bamr-avatar.png
-date: 2024-05-09 22:24:22+00:00
+date: '2024-05-09T22:24:22.000Z'
+description: Profile page for the IT-Journey founder and maintainer — IT generalist
+  in Denver, lapsed banker, builder of the zer0-mistakes Jekyll theme.
 email: null
 excerpt: IT Wizard, Software Architect, Tech Enthusiast.
 github: bamr87
-lastmod: 2025-01-21 23:09:20.504000+00:00
+lastmod: '2025-01-21T23:09:20.000Z'
 linkedin: amrabdel
 location: Denver, CO
 name: Amr Abdel-Motaleb

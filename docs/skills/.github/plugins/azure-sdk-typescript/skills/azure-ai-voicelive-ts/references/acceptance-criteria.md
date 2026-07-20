@@ -4,7 +4,9 @@ title: Azure AI Voice Live SDK Acceptance Criteria (TypeScript)
 ---
 # Azure AI Voice Live SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/ai-voicelive` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/ai/ai-voicelive **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/ai-voicelive`
+**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/ai/ai-voicelive
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -5,7 +5,7 @@ categories:
 - Documentation
 - Beginner
 comments: true
-date: 2025-11-29 22:51:57+00:00
+date: '2025-11-29T22:51:57.000Z'
 description: Master Markdown syntax for creating rich documentation, blog posts, and
   technical content with proper formatting, links, images, and code blocks.
 difficulty: 🟢 Easy
@@ -15,25 +15,19 @@ excerpt: Learn essential Markdown syntax to create beautifully formatted documen
   and technical content.
 fmContentType: quest
 keywords:
-- lvl-0000
-- markdown
-- main_quest
-- documentation
-- hands-on
-- gamified-learning
-lastmod: 2025-12-20 00:00:00+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - Software Development
-  skill_trees:
-  - Documentation
-  - Content Creation
+  primary:
+  - '0000'
+  - markdown
+  - main_quest
+  secondary:
+  - documentation
+  - hands-on
+  - gamified-learning
+lastmod: '2026-06-30T00:00:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0000'
-permalink: /quests/level-0000-markdown-mastery/
+permalink: /quests/0000/markdown-mastery/
 prerequisites:
   knowledge_requirements:
   - Basic text editing skills
@@ -48,24 +42,14 @@ primary_technology: markdown
 quest_arc: Documentation Mastery Arc
 quest_dependencies:
   recommended_quests:
-  - /quests/level-0000-terminal-fundamentals/
+  - /quests/0000/terminal-fundamentals/
   required_quests: []
   unlocks_quests: []
 quest_line: Init World
-quest_mapping:
-  biome: Documentation
-  coordinates:
-  - 3
-  - 2
-  realm: Development
-  region: Foundation
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests: []
 quest_series: Content Creation Basics
 quest_type: main_quest
+redirect_from:
+- /quickstart/content-creation/
 rewards:
   badges:
   - 🏆 Documentation Scribe
@@ -76,12 +60,11 @@ rewards:
   unlocks_features:
   - README creation for projects
   - Blog post and quest authoring
-skill_focus:
-- documentation
+skill_focus: fullstack
 source_file: markdown-mastery.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Markdown'
 tags:
-- lvl-0000
+- '0000'
 - markdown
 - main_quest
 - documentation
@@ -253,15 +236,15 @@ Use the `git commit` command to save changes.
 ```python
 def hello():
     print("Hello, World!")
-```
+```text
 
 ```bash
 echo "Hello from the terminal"
-```
+```text
 
 ```javascript
 console.log("Hello, JavaScript!");
-```
+```text
 ````
 
 The language identifier enables syntax highlighting — always include it!
@@ -364,6 +347,57 @@ Hidden content goes here. Supports **Markdown** inside!
 
 ---
 
+## 🧙‍♂️ Chapter 4: Frontmatter — Metadata at the Top of the Scroll
+
+*When your Markdown lives inside a real site — a blog, a wiki, a docs platform like Jekyll, Hugo, or this very IT-Journey codex — a hidden block of metadata at the very top tells the engine how to render, title, and categorize the page. That block is called **frontmatter**, and it's the bridge between plain Markdown and a published page.*
+
+### 📜 The Frontmatter Block
+
+Frontmatter is **YAML** enclosed between two `---` fences, and it must be the very first thing in the file:
+
+```yaml
+---
+title: "Deploying Jekyll to Azure Cloud"
+description: "Step-by-step guide to deploying a Jekyll site on Azure Static Web Apps."
+date: 2026-03-31
+author: bamr87
+categories:
+  - devops
+tags:
+  - jekyll
+  - azure
+draft: false
+---
+```
+
+Everything below the closing `---` is your normal Markdown body. The engine reads the metadata, then renders the rest.
+
+### 🔑 Common Fields
+
+| Field | Purpose |
+|-------|---------|
+| `title` | Page title — drives SEO and navigation |
+| `description` | Short summary for search engines and previews |
+| `date` / `lastmod` | Publication and last-modified dates |
+| `categories` / `tags` | YAML lists that power filtering and discovery |
+| `draft` | `true` hides the page in production; `false` publishes it |
+| `layout` | Which template renders the page (e.g. `article`, `quest`, `default`) |
+
+**Rule of thumb**: `categories` and `tags` are YAML **lists** — each item on its own line prefixed with `-`. At minimum, always include `title` and `description`.
+
+### 🛠️ Frontmatter Best Practices
+- [ ] Always set a clear `title` and `description` — they drive SEO and link previews
+- [ ] Use `draft: true` while a page is a work in progress to keep it out of production
+- [ ] Keep `categories` and `tags` consistent across pages so filtering works
+- [ ] Bump `lastmod` when you revise a page so readers and search engines see freshness
+
+### ⚡ Quick Wins
+- [ ] Add a frontmatter block to your `practice.md` with `title` and `description`
+- [ ] Include a `tags` YAML list with at least two tags
+- [ ] Set `draft: true`, preview, then flip it to `false`
+
+---
+
 ## 🎮 Mastery Challenges
 
 ### 🟢 Novice Challenge: Personal Profile Page
@@ -401,9 +435,16 @@ Hidden content goes here. Supports **Markdown** inside!
 
 ## 📚 References & Resources
 
-- [Markdown Guide — Comprehensive Reference](https://www.markdownguide.org/)
+- [Markdown Guide — Syntax Reference with Basic and Extended Cheat Sheets](https://www.markdownguide.org/)
 - [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 - [CommonMark Specification](https://commonmark.org/)
 - [Dillinger — Online Markdown Editor](https://dillinger.io/)
 - [Markdown Tutorial — Interactive Practice](https://www.markdowntutorial.com/)
 - [VS Code Markdown Features](https://code.visualstudio.com/docs/languages/markdown)
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

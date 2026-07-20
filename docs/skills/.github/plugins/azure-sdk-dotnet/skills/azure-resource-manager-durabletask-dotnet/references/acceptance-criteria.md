@@ -4,7 +4,9 @@ title: Azure.ResourceManager.DurableTask (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.DurableTask (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.DurableTask` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/durabletask/Azure.ResourceManager.DurableTask **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.DurableTask`
+**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/durabletask/Azure.ResourceManager.DurableTask
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -1,0 +1,214 @@
+---
+author: IT-Journey Team
+categories:
+- Quests
+- Init-World
+- macOS
+- Development-Environment
+date: '2026-01-14T22:23:32.000Z'
+description: 'Transform your Mac into a professional dev workstation: install Xcode
+  Command Line Tools and Homebrew, configure iTerm2, and verify Git and SSH.'
+difficulty: 🟢 Easy
+draft: false
+estimated_time: 60-90 minutes
+fmContentType: quest
+keywords:
+  primary:
+  - macos
+  - homebrew
+  secondary:
+  - terminal
+  - developer-tools
+  - init-world
+lastmod: 2026-01-14
+layout: quest
+learning_style: hands-on
+level: '0000'
+permalink: /quests/0000/hello-macos/
+prerequisites:
+  knowledge_requirements:
+  - Comfortable using Finder and System Settings
+  - Basic understanding of command line usage
+  skill_level_indicators:
+  - Familiar with macOS basics and ready to learn developer tooling
+  system_requirements:
+  - macOS 12+ recommended
+  - Administrator access for installs
+  - Stable internet connection
+primary_technology: macOS
+quest_arc: Platform Mastery Arc
+quest_dependencies:
+  recommended_quests:
+  - /quests/0000/hello-noob/
+  - /quests/0000/os-selection/
+  - /quests/0000/hello-windows/
+  - /quests/0000/linux-fundamentals/
+  required_quests: []
+  unlocks_quests:
+  - /quests/0000/vscode-mastery/
+  - /quests/0000/terminal-fundamentals/
+quest_line: Foundation Path
+quest_series: Init World - Platform Mastery
+quest_type: main_quest
+redirect_from:
+- /quests/0000/hello-mac/
+rewards:
+  badges:
+  - 🏆 Apple Kingdom Badge
+  - ⚡ Homebrew Mastery Achievement
+  progression_points: 75
+  skills_unlocked:
+  - 🛠️ macOS Package Management
+  - 🎯 Terminal Configuration
+  unlocks_features:
+  - Access to VS Code Mastery quest
+  - Professional macOS development workflow
+skill_focus: fullstack
+source_file: hello-mac.md
+tags:
+- macos
+- homebrew
+- iterm2
+- terminal
+- developer-tools
+title: Hello Mac
+validation_criteria:
+  completion_requirements:
+  - Install Xcode Command Line Tools
+  - Install and verify Homebrew
+  - Configure a modern terminal (iTerm2 or similar)
+  - Verify Git, SSH, and common utilities
+  knowledge_checks:
+  - Understands the role of Xcode CLI tools
+  - Can explain what Homebrew does and why it is useful
+  skill_demonstrations:
+  - Can install packages via Homebrew
+  - Can navigate the terminal confidently
+---
+*Welcome, macOS adventurer! This quest transforms your Mac into a professional-grade development workstation. You'll install core tooling, tune your terminal, and validate a clean, repeatable setup.*
+
+## 🎯 Quest Objectives
+
+### Primary Objectives (Required for Quest Completion)
+- [ ] **Install Xcode Command Line Tools** - Unlock core developer tooling
+- [ ] **Install Homebrew** - Your macOS package manager
+- [ ] **Configure a Modern Terminal** - iTerm2 + shell enhancements
+- [ ] **Verify Your Toolchain** - Confirm Git, SSH, and common utilities
+
+### Bonus Objectives (Optional)
+- [ ] **Shell Customization** - Prompt themes, aliases, and quality-of-life tweaks
+- [ ] **Baseline Dev Tools** - VS Code, Node/Python toolchains, and git config
+
+## 🗺️ Quest Prerequisites
+
+### 📋 Knowledge Requirements
+- [ ] Comfortable using Finder and System Settings
+- [ ] Basic understanding of command line usage
+
+### 🛠️ System Requirements
+- [ ] macOS 12+ recommended
+- [ ] Administrator access for installs
+- [ ] Stable internet connection
+
+## 🌍 Choose Your Adventure Platform
+
+This quest is **macOS-only**. If you're on another OS, start with:
+- [Hello Windows](hello-win.md)
+- [Hello Linux](linux-fundamentals.md)
+- [Hello Cloud](hello-cloud.md)
+
+## 🧙‍♂️ Chapter 1: Install Core Tooling
+
+### ✅ Step 1: Xcode Command Line Tools
+
+```bash
+xcode-select --install
+```
+
+Verify after installation:
+
+```bash
+xcode-select -p
+```
+
+### ✅ Step 2: Install Homebrew
+
+Run the official installer:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Then validate:
+
+```bash
+brew --version
+brew doctor
+```
+
+### ✅ Step 3: Install Essentials via Scripts
+
+Use the provided helper scripts (review before running):
+
+```bash
+./hb-install.sh
+./hb-packages.sh
+```
+
+## 🧰 Chapter 2: Terminal & Workflow Enhancements
+
+### ✅ Step 4: Install iTerm2
+
+```bash
+./iterminate2.sh
+```
+
+### ✅ Step 5: Run the macOS setup helper
+
+```bash
+./hello-mac.sh
+```
+
+This script walks you through common dev tooling checks and config hints.
+
+## 🧪 Chapter 3: Validate Your Setup
+
+Run these checks to confirm your environment:
+
+```bash
+git --version
+ssh -V
+brew list
+```
+
+You should see valid versions for each command.
+
+## 🏁 Quest Completion Checklist
+
+- [ ] Xcode Command Line Tools installed
+- [ ] Homebrew installed and healthy (`brew doctor`)
+- [ ] Terminal upgraded (iTerm2 + shell config)
+- [ ] Git/SSH verified
+
+## 🔗 Related Quests
+
+- [Hello n00b](hello-noob.md)
+- [OS Selection](os-selection.md)
+- [VS Code Mastery Quest](vscode-mastery.md)
+
+## 📚 References & Resources
+
+- [Xcode Command Line Tools - Apple Developer](https://developer.apple.com/xcode/resources/)
+- [Homebrew - The Missing Package Manager for macOS](https://brew.sh/)
+- [iTerm2 - macOS Terminal Replacement](https://iterm2.com/)
+- [Oh My Zsh - Zsh Framework](https://ohmyz.sh/)
+- [Git Documentation](https://git-scm.com/doc)
+- [GitHub SSH Key Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+- [Apple macOS User Guide](https://support.apple.com/guide/mac-help/welcome/mac)
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Hello n00b: Your First Steps into the IT Journey]] · [[OS Selection]] **Unlocks:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] · [[Terminal Fundamentals: Command Line Navigation Quest]] **Sequel quests:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] **Parallel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Linux Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

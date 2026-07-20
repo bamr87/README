@@ -4,7 +4,9 @@ title: Azure Communication Common SDK for Java Acceptance Criteria
 ---
 # Azure Communication Common SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-communication-common` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-common **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-communication-common`
+**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-common
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

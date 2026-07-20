@@ -1,12 +1,11 @@
 ---
-attachments: ''
 author: Quest Master IT-Journey Team
 categories:
 - Quests
 - Devops
 - Medium
 comments: true
-date: 2025-09-28 14:23:01+00:00
+date: '2025-09-28T14:23:01.000Z'
 description: Master Docker containerization to build, deploy, and manage applications
   in isolated, portable environments with practical hands-on projects
 difficulty: 🟡 Medium
@@ -16,16 +15,19 @@ excerpt: Learn to containerize applications and manage Docker environments for c
   scalable deployments
 fmContentType: quest
 keywords:
-- lvl-0101
-- docker
-- tool-mastery
-- devops
-- hands-on
-- gamified-learning
-lastmod: 2025-09-28 18:49:08.719000+00:00
+  primary:
+  - '0101'
+  - docker
+  - tool-mastery
+  secondary:
+  - devops
+  - hands-on
+  - gamified-learning
+lastmod: '2025-09-28T18:49:08.000Z'
+layout: quest
 learning_style: hands-on
 level: '0101'
-permalink: /quests/level-0101-docker-mastery/
+permalink: /quests/0101/docker-mastery/
 prerequisites:
 - Basic command-line interface knowledge
 - Basic programming concepts
@@ -34,28 +36,18 @@ preview: images/previews/docker-containerization-mastery-level-0101-5-quest.png
 primary_technology: docker
 quest_series: DevOps Fundamentals
 quest_type: main_quest
-related_quests:
-  followups:
-  - 'Level 0110: Kubernetes Orchestration'
-  - 'Level 1000: CI/CD Pipeline Mastery'
-  parallel:
-  - 'Level 0101: Linux System Administration'
-  - 'Level 0100: Web Server Configuration'
-  prerequisites:
-  - 'Level 0001: Command Line Fundamentals'
-  - 'Level 0010: Git Version Control'
+redirect_from:
+- /quests/0101/docker-mastery-example/
 rewards:
   badge: Docker Container Architect
   capability: Scalable Application Deployment
   skill: Container Orchestration Mastery
   tool: Docker Development Environment
-skill_focus:
-- devops
-snippet: Master the art of digital containerization and unlock deployment freedom
+skill_focus: devops
 source_file: docker-mastery-example.md
 sub_title: 'Level 0101 (5) Quest: Tool-mastery - Docker'
 tags:
-- lvl-0101
+- '0101'
 - docker
 - tool-mastery
 - devops
@@ -179,15 +171,30 @@ Follow these step-by-step instructions to build your foundation:
 3. **First Implementation** - Create your first working example using hands-on techniques
 4. **Validation** - Verify your setup and understanding through practical exercises
 
-```docker
-# Docker example code will go here
-# This example demonstrates fundamental concepts
-# Expected output: [Describe what users should see]
+Create a file named `Dockerfile` (no extension) with the minimal, runnable image below. Every Dockerfile needs at least a `FROM` base image and an instruction to run:
 
-# Step-by-step implementation
-# 1. [First step explanation]
-# 2. [Second step explanation]
-# 3. [Third step explanation]
+```dockerfile
+# Dockerfile — a minimal, runnable image
+FROM alpine:3.20
+
+# Print a greeting when a container starts from this image
+CMD ["echo", "Hello from your first Docker container!"]
+```
+
+Build the image and run a container from it, in the same folder as the `Dockerfile`:
+
+```bash
+# Build an image tagged "my-first-image" from the current directory (.)
+docker build -t my-first-image .
+
+# Run a throwaway container from that image
+docker run --rm my-first-image
+```
+
+Expected output from the `docker run` command:
+
+```text
+Hello from your first Docker container!
 ```
 
 ### 🔍 Knowledge Check: Docker Fundamentals
@@ -226,7 +233,7 @@ Design and implement a devops solution that:
 - [ ] Solves a practical, real-world problem
 - [ ] Demonstrates advanced docker techniques
 - [ ] Incorporates security and scalability considerations
-- [ ] Includes comprehensive testing and documentation
+- [ ] Includes unit tests, integration tests, and setup documentation
 
 *Estimated time: Varies based on scope and complexity*
 
@@ -304,3 +311,10 @@ Your newfound docker powers open several paths:
 ---
 
 *May your code compile without errors, your deployments be swift and stable, and your learning journey be filled with discovery and joy! Ready for your next adventure? Check the [Quest Map](/quests/) for your next challenge!* ⚔️✨
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

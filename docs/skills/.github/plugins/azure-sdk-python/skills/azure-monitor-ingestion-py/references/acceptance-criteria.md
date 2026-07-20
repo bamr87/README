@@ -4,7 +4,10 @@ title: Azure Monitor Ingestion SDK Acceptance Criteria
 ---
 # Azure Monitor Ingestion SDK Acceptance Criteria
 
-**SDK**: `azure-monitor-ingestion` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-ingestion **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-monitor-ingestion`
+**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-ingestion
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

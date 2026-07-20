@@ -4,7 +4,9 @@ title: Azure Playwright Workspaces SDK Acceptance Criteria (TypeScript)
 ---
 # Azure Playwright Workspaces SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/playwright` **Repository**: https://github.com/Azure/playwright-workspaces **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/playwright`
+**Repository**: https://github.com/Azure/playwright-workspaces
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

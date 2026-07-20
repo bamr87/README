@@ -1,13 +1,24 @@
 ---
-categories: quests
-date: 2025-11-29 16:46:02+00:00
-description: Build automated testing pipelines, link validation systems, and CI/CD
-  workflows
-lastmod: 2025-11-29 23:41:31.772000+00:00
-level: 1010
-permalink: /quests/level-1010/
+author: IT-Journey Team
+categories:
+- quests
+date: '2025-11-29T16:46:02.000Z'
+description: Build automated test pipelines, link validators, and CI/CD workflows,
+  then add monitoring, alerting, and observability to ship code with confidence.
+draft: false
+lastmod: '2025-11-29T23:41:31.000Z'
+layout: quest-collection
+level: '1010'
+mermaid: true
+permalink: /quests/1010/
 preview: images/previews/level-1010-automation-testing.png
 source_file: README.md
+tags:
+- quests
+- '1010'
+- warrior
+- monitoring
+- observability
 title: 'Level 1010: Automation & Testing'
 ---
 # Level 1010: Automation & Testing
@@ -19,19 +30,19 @@ title: 'Level 1010: Automation & Testing'
 Level 1010 quests focus on:
 - **Automated Testing** - Build reliable test pipelines
 - **Link Validation** - Automated hyperlink checking systems
-- **Error Reporting** - Comprehensive monitoring and alerting
+- **Error Reporting** - Monitoring, logging, and alerting
 - **CI/CD Integration** - GitHub Actions and automation workflows
 
 ## Available Quests
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Alerting Systems: PagerDuty Integration & Incident Management Guide](/quests/level-1010-alerting-systems/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Link to the Future: Automated Hyperlink Guardian Quest](/quests/level-1010-automated-hyperlink-guardian/) | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
-| [Distributed Tracing: Jaeger & OpenTelemetry Implementation Guide](/quests/level-1010-distributed-tracing/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [ELK Stack Tutorial: Elasticsearch, Logstash & Kibana for Log Analysis](/quests/level-1010-elk-stack/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
-| [Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability](/quests/level-1010-monitoring-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Prometheus & Grafana: Complete Metrics Collection & Visualization Tutorial](/quests/level-1010-prometheus-grafana/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [Alerting Systems: PagerDuty Integration & Incident Management Guide](/quests/1010/alerting-systems/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [Link to the Future: Automated Hyperlink Guardian Quest](/quests/1010/automated-hyperlink-guardian/) | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
+| [Distributed Tracing: Jaeger & OpenTelemetry Implementation Guide](/quests/1010/distributed-tracing/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [ELK Stack Tutorial: Elasticsearch, Logstash & Kibana for Log Analysis](/quests/1010/elk-stack/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability](/quests/1010/monitoring-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [Prometheus & Grafana: Complete Metrics Collection & Visualization Tutorial](/quests/1010/prometheus-grafana/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 🔗 Automated Validation
@@ -54,7 +65,7 @@ Build an automated hyperlink validation system. Learn to create GitHub Actions w
 ### For Quality Assurance
 1. [Link to the Future](link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)
 2. Progress to Level 1011 for feature development
-3. Combine with Level 1110 for comprehensive QA
+3. Combine with Level 1110 for end-to-end QA
 
 ### For Documentation Teams
 1. [Link to the Future](link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)

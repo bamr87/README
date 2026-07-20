@@ -4,7 +4,10 @@ title: Azure Cosmos DB SDK for TypeScript Acceptance Criteria
 ---
 # Azure Cosmos DB SDK for TypeScript Acceptance Criteria
 
-**SDK**: `@azure/cosmos` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/cosmosdb/cosmos **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/cosmos`
+**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/cosmosdb/cosmos
+**Commit**: `main`
+**Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

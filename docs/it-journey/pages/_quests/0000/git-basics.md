@@ -5,7 +5,7 @@ categories:
 - DevOps
 - Beginner
 comments: true
-date: 2025-11-29 22:51:57+00:00
+date: '2025-11-29T22:51:57.000Z'
 description: Learn Git fundamentals including repositories, commits, branches, and
   basic workflow for tracking code changes and collaborating with developers.
 difficulty: 🟢 Easy
@@ -15,25 +15,20 @@ excerpt: Master Git fundamentals to track changes, manage versions, and collabor
   effectively with teams.
 fmContentType: quest
 keywords:
-- lvl-0000
-- git
-- main_quest
-- devops
-- hands-on
-- gamified-learning
-lastmod: 2026-02-14 00:00:00+00:00
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
-  primary_paths:
-  - Software Development
-  skill_trees:
-  - Version Control
-  - Collaboration Tools
+  primary:
+  - '0000'
+  - git
+  - main_quest
+  secondary:
+  - devops
+  - hands-on
+  - gamified-learning
+lastmod: '2026-06-30T00:00:00.000Z'
+layout: quest
 learning_style: hands-on
 level: '0000'
-permalink: /quests/level-0000-git-basics/
+mermaid: true
+permalink: /quests/0000/git-basics/
 prerequisites:
   knowledge_requirements:
   - Basic command line navigation (cd, ls, mkdir)
@@ -50,23 +45,14 @@ quest_arc: Version Control Arc
 quest_dependencies:
   recommended_quests: []
   required_quests:
-  - /quests/level-0000-terminal-fundamentals/
+  - /quests/0000/terminal-fundamentals/
   unlocks_quests: []
 quest_line: Init World
-quest_mapping:
-  biome: Version Control
-  coordinates:
-  - 3
-  - 1
-  realm: Development
-  region: Foundation
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests: []
 quest_series: Version Control Mastery
 quest_type: main_quest
+redirect_from:
+- /quickstart/github/
+- /quickstart/github-setup/
 rewards:
   badges:
   - 🏆 Version Control Initiate
@@ -77,12 +63,11 @@ rewards:
   unlocks_features:
   - Collaborative development workflows
   - Code review via pull requests
-skill_focus:
-- devops
+skill_focus: devops
 source_file: git-basics.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Git'
 tags:
-- lvl-0000
+- '0000'
 - git
 - main_quest
 - devops
@@ -404,7 +389,7 @@ git commit -m "fix: resolve merge conflict in greeting"
 
 ## 🧙‍♂️ Chapter 3: Remote Repositories — Connecting to the World
 
-*Local Git is powerful, but the real magic happens when you connect to a remote like GitHub. This enables collaboration, backup, and sharing.*
+*Local Git works fully offline, but the real magic happens when you connect to a remote like GitHub. This enables collaboration, backup, and sharing.*
 
 ### 🌐 Local ↔ Remote Sync Flow
 
@@ -572,6 +557,100 @@ git revert abc1234
 - [ ] Stage a file, then unstage it with `git restore --staged`
 - [ ] Make a commit, then undo it with `git reset --soft HEAD~1`
 - [ ] Use `git revert` to reverse a commit safely
+
+---
+
+## 🧙‍♂️ Chapter 5: The GitHub CLI — Summoning the Gateway
+
+*The GitHub web interface is fine, but true sorcerers never leave the terminal. The GitHub CLI (`gh`) lets you authenticate, fork, and open pull requests without breaking your command-line trance — and it makes the fork-and-PR flow in the challenges below far smoother.*
+
+### 🌍 Install the GitHub CLI
+
+#### 🍎 macOS
+
+```bash
+brew install gh
+```
+
+#### 🪟 Windows
+
+```powershell
+winget install GitHub.cli
+```
+
+#### 🐧 Linux (Ubuntu/Debian)
+
+```bash
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update && sudo apt install gh
+
+# Verify on any platform
+gh --version
+```
+
+### 🔐 Authenticate Once, Push Forever
+
+```bash
+# Login to GitHub (follow the interactive prompts — pick HTTPS, authenticate in browser)
+gh auth login
+
+# Confirm you're connected
+gh auth status
+```
+
+Authenticating with `gh` configures your Git credentials too, so `git push` to your repos just works — no personal access token juggling.
+
+### 🛡️ Protect Your Email with a Noreply Address
+
+GitHub can hide your real email from public commits. Use your GitHub-provided noreply address so your inbox stays private in the commit history:
+
+```bash
+# Replace <username> with your GitHub handle
+git config --global user.email "<username>@users.noreply.github.com"
+```
+
+### 🍴 Fork a Repository from the Terminal
+
+Forking creates your own copy of someone else's repo — the foundation of open-source contribution (and Challenge 3 below):
+
+```bash
+# Fork and clone in one step
+gh repo fork owner/repository --clone
+
+# This creates a fork under your account and clones it locally
+```
+
+### 🧩 Working with Submodules
+
+Some projects embed other Git repositories as **submodules** — repos nested inside repos:
+
+```bash
+# Add a submodule at a chosen path
+git submodule add https://github.com/owner/repository.git vendor/lib
+
+# After cloning a repo that uses submodules, populate them
+git submodule update --init
+```
+
+### ✅ Chapter 5 Checkpoint: Gateway Mastery
+
+**Validation — confirm each before proceeding:**
+
+- [ ] `gh --version` prints a version number
+- [ ] `gh auth status` reports you are logged in
+- [ ] You can fork a public repo with `gh repo fork`
+
+**🧠 Knowledge Check:**
+- [ ] Why does authenticating with `gh` remove the need to paste a personal access token on every push?
+- [ ] What is the difference between forking a repo and cloning it directly?
+- [ ] When would a project use a submodule instead of just copying files in?
+
+### ⚡ Quick Wins
+- [ ] Install `gh` and run `gh auth login`
+- [ ] Set your `user.email` to a GitHub noreply address
+- [ ] Fork any public repo with `gh repo fork owner/repo --clone`
 
 ---
 
@@ -889,7 +968,7 @@ Before claiming your reward, you should be able to answer:
 
 ### 📖 Essential Documentation
 - [Git Official Documentation](https://git-scm.com/doc) — Primary reference guide
-- [Pro Git Book (free)](https://git-scm.com/book/en/v2) — Comprehensive deep dive
+- [Pro Git Book (free)](https://git-scm.com/book/en/v2) — The full book, basics through internals
 - [GitHub Docs](https://docs.github.com/) — Remote collaboration reference
 
 ### 🎮 Interactive Learning
@@ -901,3 +980,10 @@ Before claiming your reward, you should be able to answer:
 - [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials) — Beginner to advanced guides
 - [Git Cheat Sheet (GitHub)](https://education.github.com/git-cheat-sheet-education.pdf) — Printable command reference
 - [Conventional Commits](https://www.conventionalcommits.org/) — Commit message standard
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

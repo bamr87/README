@@ -5,8 +5,9 @@ categories:
 - Community
 - Customization
 comments: true
-date: 2026-03-20 00:00:00+00:00
-description: Design and integrate a custom avatar for your contributor character profile
+date: '2026-03-20T00:00:00.000Z'
+description: Replace your default identicon by sourcing or creating a custom avatar,
+  hosting the image, and wiring it into your contributor data file to brand your profile.
 difficulty: 🟢 Easy
 draft: false
 estimated_time: 20-30 minutes
@@ -14,23 +15,17 @@ excerpt: Visit the Portrait Studio and commission a visual identity worthy of yo
   class.
 fmContentType: quest
 keywords:
-- avatar
-- profile image
-- contributor
-- customization
-lastmod: 2026-03-21 15:12:32.233000+00:00
-learning_paths:
-  character_classes:
-  - 🎵 Bard
-  - 💚 Healer
-  primary_paths:
-  - Community Contributor
-  skill_trees:
-  - Community & Collaboration
-  - Frontend Basics
+  primary:
+  - avatar
+  - profile image
+  secondary:
+  - contributor
+  - customization
+lastmod: '2026-03-21T15:12:32.000Z'
+layout: quest
 learning_style: hands-on
 level: '0001'
-permalink: /quests/side-quest-avatar-forge/
+permalink: /quests/0001/avatar-forge/
 prerequisites:
   knowledge_requirements:
   - Completed Forge Your Character quest
@@ -43,21 +38,21 @@ quest_arc: 'Act I: Arrival at the Guild'
 quest_dependencies:
   recommended_quests: []
   required_quests:
-  - /quests/forge-your-character/
+  - /quests/0001/forge-your-character/
   unlocks_quests: []
 quest_line: Contributor Chronicles
 quest_series: 'Contributor Path: Identity & Recognition'
 quest_type: side_quest
+redirect_from:
+- /quests/0001/side-quests/avatar-forge/
 rewards:
   badges:
   - 🎨 Portrait Artist — Custom avatar displayed on character sheet
   progression_points: 50
-skill_focus:
-- frontend
-snippet: The Portrait Artist awaits — every hero deserves a face
+skill_focus: frontend
 source_file: side-quest-avatar-forge.md
 tags:
-- lvl-0001
+- '0001'
 - contributor
 - avatar
 - profile
@@ -149,3 +144,10 @@ Once your avatar is live, you've earned the **Portrait Artist** badge (+50 XP).
 ---
 
 > *"Now the realm shall know your face. Go forth, adventurer."*
+
+## 🕸️ Knowledge Graph
+
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+
+**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+

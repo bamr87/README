@@ -170,6 +170,11 @@ azd status
 
 ## Rules
 
-✅ Use parameterized Bicep with defaults ✅ Use managed identity where possible ✅ Store secrets in Key Vault or Container App secrets ✅ Use resource tokens for unique naming
+✅ Use parameterized Bicep with defaults
+✅ Use managed identity where possible
+✅ Store secrets in Key Vault or Container App secrets
+✅ Use resource tokens for unique naming
 
-🚫 Never hardcode connection strings 🚫 Never commit `.env` files 🚫 Never use owner role when contributor suffices
+🚫 Never hardcode connection strings
+🚫 Never commit `.env` files
+🚫 Never use owner role when contributor suffices
