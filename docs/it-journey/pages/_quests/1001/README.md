@@ -11,6 +11,7 @@ draft: false
 lastmod: 2025-12-20
 layout: quest-collection
 level: '1001'
+local_graph: false
 mermaid: true
 permalink: /quests/1001/
 preview: images/previews/level-1001-kubernetes.png

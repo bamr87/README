@@ -4,28 +4,24 @@ title: Quest Perfection — ledger dashboard
 ---
 # Quest Perfection — ledger dashboard
 
-_Generated 2026-07-18T13:51:45+00:00. Source of truth: `.quests/ledger.json` (committed, generated)._
+_Generated 2026-07-24T13:56:57+00:00. Source of truth: `.quests/ledger.json` (committed, generated)._
 
-**0/27** slices perfect · **27** walked · **0** stuck (needs human) · **479** open issue(s) outstanding
+**0/27** slices perfect · **27** walked · **3** stuck (needs human) · **485** open issue(s) outstanding
 
 ## Slices (worst-first)
 
 | Slice | Theme | Verdict | Avg | Cov | Open | Perfect | Stuck | Last run | Report |
 | --- | --- | :-: | --: | :-: | --: | :-: | :-: | --- | --- |
-| `developer/0001` | Web Fundamentals | ❌ fail | 54.2 | 8/26 | 43 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
-| `digital-artist/0001` | Web Fundamentals | ❌ fail | 62.9 | 17/26 | 68 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
-| `data-scientist/1100` | Data Engineering | ❌ fail | 64.5 | 15/15 | 71 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
-| `data-scientist/0011` | AI-Assisted Development | ❌ fail | 65.8 | 4/4 | 18 |  |  | 2026-07-17 | [run](https://github.com/bamr87/it-journey/actions/runs/29577137232) |
-| `data-scientist/0110` | Database Mastery | ❌ fail | 66.3 | 3/8 | 16 |  |  | 2026-07-12 | [run](https://github.com/bamr87/it-journey/actions/runs/29190829265) |
-| `game-developer/0001` | Web Fundamentals | ❌ fail | 68.4 | 14/26 | 51 |  |  | 2026-07-16 | [run](https://github.com/bamr87/it-journey/actions/runs/29494904212) |
+| `developer/0001` | Web Fundamentals | ❌ fail | 64.2 | 18/26 | 72 |  |  | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
+| `game-developer/0001` | Web Fundamentals | ❌ fail | 64.8 | 18/26 | 68 |  |  | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
+| `digital-artist/0001` | Web Fundamentals | ❌ fail | 66.4 | 18/26 | 65 |  |  | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
 | `digital-artist/0111` | API Development | ❌ fail | 71.4 | 5/10 | 12 |  |  | 2026-07-13 | [run](https://github.com/bamr87/it-journey/actions/runs/29248386306) |
-| `system-engineer/0101` | CI/CD & DevOps | ❌ fail | 72.8 | 10/13 | 26 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
-| `security-specialist/1110` | Architecture & Design Patterns | ❌ fail | 73.2 | 5/10 | 10 |  |  | 2026-07-14 | [run](https://github.com/bamr87/it-journey/actions/runs/29329246935) |
-| `security-specialist/1011` | Security & Compliance | ❌ fail | 74.9 | 11/12 | 39 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
+| `data-scientist/0110` | Database Mastery | ❌ fail | 73.3 | 7/8 | 27 |  |  | 2026-07-23 | [run](https://github.com/bamr87/it-journey/actions/runs/30003953368) |
+| `security-specialist/1011` | Security & Compliance | ❌ fail | 74.3 | 11/12 | 30 |  |  | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
 | `game-developer/0111` | API Development | ❌ fail | 75.2 | 10/10 | 21 |  |  | 2026-07-18 | [run](https://github.com/bamr87/it-journey/actions/runs/29642483805) |
 | `developer/1110` | Architecture & Design Patterns | ❌ fail | 75.4 | 5/10 | 15 |  |  | 2026-07-15 | [run](https://github.com/bamr87/it-journey/actions/runs/29412020762) |
-| `system-engineer/1001` | Kubernetes Orchestration | ❌ fail | 75.4 | 5/9 | 14 |  |  | 2026-07-17 | [run](https://github.com/bamr87/it-journey/actions/runs/29577137232) |
 | `developer/0111` | API Development | ❌ fail | 77.4 | 5/10 | 9 |  |  | 2026-07-14 | [run](https://github.com/bamr87/it-journey/actions/runs/29329246935) |
+| `system-engineer/0101` | CI/CD & DevOps | ❌ fail | 79.7 | 12/13 | 16 |  |  | 2026-07-21 | [run](https://github.com/bamr87/it-journey/actions/runs/29826801543) |
 | `system-engineer/0010` | Terminal Mastery | ⚠️ warn | — | — | 0 |  |  | 2026-07-04 | [run](https://github.com/bamr87/it-journey/actions/runs/28703664065) |
 | `security-specialist/0010` | Terminal Mastery | ⚠️ warn | 62.0 | 1/16 | 4 |  |  | 2026-07-06 | [run](https://github.com/bamr87/it-journey/actions/runs/28791022929) |
 | `system-engineer/1010` | Monitoring & Observability | ⚠️ warn | 73.0 | 1/16 | 4 |  |  | 2026-07-14 | [run](https://github.com/bamr87/it-journey/actions/runs/29329246935) |
@@ -39,15 +35,19 @@ _Generated 2026-07-18T13:51:45+00:00. Source of truth: `.quests/ledger.json` (co
 | `digital-artist/1110` | Architecture & Design Patterns | ⚠️ warn | 85.5 | 4/10 | 9 |  |  | 2026-07-14 | [run](https://github.com/bamr87/it-journey/actions/runs/29329246935) |
 | `developer/0000` | Foundation & Init World | ⚠️ warn | 87.6 | — | 0 |  |  | 2026-07-03 | [run](https://github.com/bamr87/it-journey/actions/runs/28656175477) |
 | `digital-artist/0100` | Frontend & Containers | ✅ pass | 83.3 | 3/8 | 0 |  |  | 2026-07-12 | [run](https://github.com/bamr87/it-journey/actions/runs/29190829265) |
+| `security-specialist/1110` | Architecture & Design Patterns | ✅ pass | 93.0 | 5/10 | 0 |  |  | 2026-07-20 | [run](https://github.com/bamr87/it-journey/actions/runs/29740320814) |
+| `data-scientist/1100` | Data Engineering | ❌ fail | 66.5 | 15/15 | 54 |  | 🛑 | 2026-07-22 | [run](https://github.com/bamr87/it-journey/actions/runs/29916378064) |
+| `data-scientist/0011` | AI-Assisted Development | ❌ fail | 69.2 | 4/4 | 16 |  | 🛑 | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
+| `system-engineer/1001` | Kubernetes Orchestration | ⚠️ warn | 83.0 | 9/9 | 14 |  | 🛑 | 2026-07-24 | [run](https://github.com/bamr87/it-journey/actions/runs/30090038199) |
 
 ## Per-character roll-up
 
 | Character | Levels | Perfect | Stuck | Walked |
 | --- | --: | --: | --: | --: |
 | `developer` | 6 | 0 | 0 | 6 |
-| `system-engineer` | 5 | 0 | 0 | 5 |
+| `system-engineer` | 5 | 0 | 1 | 5 |
 | `security-specialist` | 4 | 0 | 0 | 4 |
-| `data-scientist` | 4 | 0 | 0 | 4 |
+| `data-scientist` | 4 | 0 | 2 | 4 |
 | `digital-artist` | 4 | 0 | 0 | 4 |
 | `game-developer` | 4 | 0 | 0 | 4 |
 

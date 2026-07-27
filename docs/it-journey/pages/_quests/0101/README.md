@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-12-02T04:46:12.000Z'
 layout: quest-collection
 level: '0101'
+local_graph: false
 mermaid: true
 permalink: /quests/0101/
 preview: images/previews/level-0101-advanced-docker-devops.png

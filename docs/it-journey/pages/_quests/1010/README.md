@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-11-29T23:41:31.000Z'
 layout: quest-collection
 level: '1010'
+local_graph: false
 mermaid: true
 permalink: /quests/1010/
 preview: images/previews/level-1010-automation-testing.png

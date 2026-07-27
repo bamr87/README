@@ -13,6 +13,7 @@ draft: false
 lastmod: '2025-12-01T04:36:39.000Z'
 layout: quest-collection
 level: '1101'
+local_graph: false
 mermaid: true
 permalink: /quests/1101/
 preview: images/previews/level-1101-machine-learning-ai.png

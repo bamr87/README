@@ -11,6 +11,7 @@ draft: false
 lastmod: 2025-12-20
 layout: quest-collection
 level: '0111'
+local_graph: false
 mermaid: true
 permalink: /quests/0111/
 preview: images/previews/level-0111-api-development.png

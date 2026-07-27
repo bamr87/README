@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-11-15T04:27:16.000Z'
 layout: quest-collection
 level: '0001'
+local_graph: false
 permalink: /quests/0001/
 preview: images/previews/level-001-journeyman-challenges.png
 source_file: README.md

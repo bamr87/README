@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-11-29T23:41:31.000Z'
 layout: quest-collection
 level: '1110'
+local_graph: false
 mermaid: true
 permalink: /quests/1110/
 preview: images/previews/level-1110-quality-assurance.png

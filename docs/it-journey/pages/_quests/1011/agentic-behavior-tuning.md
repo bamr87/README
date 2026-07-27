@@ -117,6 +117,8 @@ RUN_DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 
 echo "=== Agent Behaviour Baseline Measurement ==="
 
+RECORDED=0
+
 # For each test task, record:
 # - Did the agent open a PR? (success signal 1)
 # - Did all tests pass? (success signal 2)
@@ -127,8 +129,11 @@ echo "=== Agent Behaviour Baseline Measurement ==="
 for TASK_NUM in 1 2 3; do
     echo "Measuring task $TASK_NUM..."
     
-    # Get the latest agent run for this task (degrade gracefully if none exists yet)
-    RUN_ID=$(gh run list --workflow=agent-task.yml --limit=1 --json databaseId -q '.[0].databaseId' 2>/dev/null || true)
+    # Get the latest agent run for THIS task by matching its branch
+    # (copilot/issue-{N}-{slug}); a bare --limit=1 would return the same
+    # newest run for every task. Degrade gracefully if none exists yet.
+    RUN_ID=$(gh run list --workflow=agent-task.yml --limit=50 --json databaseId,headBranch \
+        -q "[.[] | select(.headBranch | startswith(\"copilot/issue-$TASK_NUM-\"))][0].databaseId" 2>/dev/null || true)
     if [ -z "$RUN_ID" ]; then
         echo "⚠️  No agent-task.yml run found for task $TASK_NUM — run the agent workflow at least once, then re-run this script."
         continue
@@ -140,9 +145,16 @@ for TASK_NUM in 1 2 3; do
     cat >> "$RESULTS_FILE" << EOF
 {"date":"$RUN_DATE","task":$TASK_NUM,"run_id":"$RUN_ID","pr_opened":$([ "$PR_OPENED" -gt 0 ] && echo true || echo false),"tests_passed":$([ "$TESTS_PASSED" = "success" ] && echo true || echo false)}
 EOF
+    RECORDED=$((RECORDED + 1))
 done
 
-echo "✅ Baseline recorded in $RESULTS_FILE"
+if [ "$RECORDED" -eq 0 ]; then
+    echo "❌ No tasks were recorded — no agent-task.yml runs exist yet, so $RESULTS_FILE was not created."
+    echo "   Trigger at least one agent run for tasks 1–3, then re-run this script."
+    exit 1
+fi
+
+echo "✅ Baseline recorded ($RECORDED task(s)) in $RESULTS_FILE"
 ```
 
 ---

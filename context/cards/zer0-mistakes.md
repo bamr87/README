@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 00caec9735e310ba
+source_fingerprint: 72ddafd289a36ee4
 tags:
   - ai
   - automation
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 439 docs |
+| Corpus | `docs/zer0-mistakes` - 451 docs |
 | External | no |
 
 ## Signals
@@ -43,15 +43,15 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~390,138 words across 439 indexed documents
+- ~395,602 words across 451 indexed documents
 - code samples in: bash, yaml, html, plaintext, liquid, text, markdown, javascript
 
 ## Structure
 
-- `pages/` (200 docs)
-- `docs/` (105 docs)
+- `pages/` (207 docs)
+- `docs/` (106 docs)
 - `.github/` (45 docs)
-- `test/` (26 docs)
+- `test/` (30 docs)
 - `.claude/` (17 docs)
 - `templates/` (10 docs)
 - `.cursor/` (8 docs)

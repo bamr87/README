@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-12-02T04:46:12.000Z'
 layout: quest-collection
 level: '1100'
+local_graph: false
 mermaid: true
 permalink: /quests/1100/
 preview: images/previews/level-1100-data-templates.png

@@ -9,6 +9,7 @@ draft: false
 lastmod: '2026-05-20T20:57:50.000Z'
 layout: quest-collection
 level: '0000'
+local_graph: false
 mermaid: true
 permalink: /quests/0000/
 preview: images/previews/level-0000-foundation-init-world.png

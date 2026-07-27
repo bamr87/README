@@ -11,6 +11,7 @@ draft: false
 lastmod: 2025-12-20
 layout: quest-collection
 level: '0110'
+local_graph: false
 mermaid: true
 permalink: /quests/0110/
 preview: images/previews/level-0110-database-mastery.png

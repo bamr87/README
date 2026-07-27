@@ -9,6 +9,125 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- **ABC board books (`book-abc` layout) — the "ABC & Language" series.** A new
+  immersive, single-scroll toddler alphabet layout (`_layouts/book-abc.html`)
+  driven entirely by an `alphabet:` front-matter list — one big letter, one
+  word, one picture per card, with A–Z quick-jump anchors and a cover hero.
+  The big letter is HTML typography (never baked into the art), and a card
+  whose plate is still `planned` shows a tinted "illustration coming soon"
+  placeholder so a book reads end-to-end before any art renders. New
+  `_includes/components/abc-letter.html` renders each card; `_sass/components/_book.scss`
+  gains `.abc-board` / `.abc-letter-*` styles plus a `.abc-style--<id>` skin per
+  shared art-style id. `components/bookshelf.html` now lists both `book` and
+  `book-abc` books, grouped into series shelves from `_data/series.yml`;
+  `book-card.html` shows a letter count for ABC books. Ships a demo book
+  (`pages/_books/abc-demo/`) + default series metadata (`_data/series.yml`).
+  Regression test [`test/visual/features/book-abc.spec.js`](test/visual/features/book-abc.spec.js)
+  and before/after evidence in
+  [`test/visual/evidence/book-abc/`](test/visual/evidence/book-abc/). Docs:
+  [`docs/features/abc-books.md`](docs/features/abc-books.md).
+- **`nav: pages` sidebar mode — auto-build the left tree from page URLs.** A new
+  sidebar mode (`_includes/navigation/sidebar-pagetree.html`) derives a
+  collapsible section tree purely from page permalinks under a `sidebar.base`
+  prefix — no curated `_data/navigation/*.yml` file to write or keep in sync.
+  Enable per page / collection / site with `sidebar: {nav: pages, base: /docs/,
+  order_by: nav_order, title: …}`. It covers plain pages (`site.html_pages`) and
+  collection documents (`site.documents`) alike, groups them by first path
+  segment, humanizes section labels from the URL (never leaking a generic
+  "Index" title), sorts each section by a numeric `order_by` (natural order),
+  supports per-page `sidebar_label` / `sidebar_exclude`, and marks only the
+  current page active with its section expanded server-side — pure Liquid, so
+  it is GitHub Pages / `remote_theme` safe. Documented at
+  `/docs/features/sidebar-page-tree/`.
+- **Claude Code OAuth in the AI installer** — the spec-driven installer
+  (`scripts/bin/install`) is now multi-provider. `scripts/install/ai/client.sh`
+  resolves a provider via `ZER0_AI_PROVIDER` (default `auto`), preferring the
+  logged-in `claude` CLI (**Claude Code OAuth** — zero key handling), then the
+  Anthropic Messages API (`CLAUDE_CODE_OAUTH_TOKEN` OAuth bearer or
+  `ANTHROPIC_API_KEY`), then OpenAI. `install doctor` reports the active
+  provider; `--ai-provider` / `--ai-model` / `ZER0_AI_MODEL` tune it; `--no-ai`
+  / `ZER0_NO_AI=1` disable it. User context is sanitized before every call.
+- **Config-file layer for the installer** — new `scripts/install/config.sh`
+  discovers and merges `~/.config/zer0/install.yml`, `<target>/zer0.install.yml`,
+  `<target>/.zer0/config.yml`, and `--config FILE` (precedence:
+  defaults < profile < config < env < flags). Recognises site / github / theme /
+  deploy / agents / tasks / ai keys; API keys stay environment-only.
+- **`install suggest`** subcommand — recommend a profile + deploy target
+  (AI-assisted with rule-based fallback) — plus `--yes` as an alias for
+  `--auto-accept`.
+- Installer regression matrix (`test/test_installer.sh`) now covers AI
+  provider resolution, text extraction across provider shapes, the config-file
+  layer + precedence, and the `doctor` AI check (all offline).
+
+### Changed
+
+- Installer spec default `ai.provider` is now `auto` (was `openai`); the AI
+  wizard records the provider that actually served the run.
+- **CI workflows now honor `CLAUDE_CODE_OAUTH_TOKEN`** — `ui-audit.yml`,
+  `ai-content-review.yml`, and `ci-self-repair.yml` previously gated their
+  Claude Code agent tier on `ANTHROPIC_API_KEY` alone, silently ignoring a
+  configured OAuth token. They now follow the same house convention as
+  `claude.yml` / `issue-autopilot.yml`: `CLAUDE_CODE_OAUTH_TOKEN` preferred,
+  `ANTHROPIC_API_KEY` used only when it's absent.
+
+### Fixed
+
+- **Left-sidebar nav highlighted every item as "active".** `nav-tree.html`
+  used `{% assign is_active = page.url == item.url %}`, but Liquid `assign`
+  does not evaluate `==` — it stored `page.url` (always truthy), so every link
+  rendered with the active style. Replaced the three broken assigns
+  (`is_active`, `child_active`, `gc_active`) with proper conditional assigns so
+  only the current page is marked active.
+- **`install deploy` no longer clobbers site content.** `spec_write` treated an
+  empty `SPEC_TASKS` as "use the full default task list", so a deploy-only run
+  re-ran `config`/`pages`/`nav` and overwrote a customised `_config.yml`,
+  `index.md`, and navigation. Empty now serialises to `[]`; `deploy` is
+  deploy-only and also skips agent-file rewrites.
+- **github-pages / remote profile emitted a broken `remote_theme`.** The remote
+  `_config.yml` template resolved `{{GITHUB_REPO}}` to the *site's* repo; it now
+  uses a dedicated `{{THEME_REMOTE}}` variable (default `bamr87/zer0-mistakes`,
+  overridable via `THEME_REMOTE`).
+- **Deploy workflow templates had unsubstituted variables.** Added
+  `{{DEFAULT_BRANCH}}`, `{{RUBY_VERSION}}`, and `{{SITE_NAME}}` to the template
+  renderer, so the generated `jekyll-gh-pages.yml` (and docker-prod/azure-swa
+  artifacts) no longer contain literal `{{…}}` tokens. Regression tests assert
+  no unresolved tokens survive in any deploy artifact.
+- **Agent files were written twice** when `agents` appeared in both the task
+  list and `SPEC_AGENTS`; `apply.sh` now runs the agents task at most once.
+- **The remote / github-pages Gemfile failed to build on Ruby 3.x.** It paired
+  the legacy `github-pages` gem with a standalone `jekyll-remote-theme`, which
+  bundler resolved to an ancient github-pages 170 (Jekyll 3.6 / kramdown 1.14,
+  `rexml` LoadError). The remote Gemfile now pins modern Jekyll +
+  `jekyll-remote-theme` + `webrick`, and both the Gemfile and the remote
+  `_config.yml` template add `jekyll-include-cache` (required by the theme's
+  layouts).
+
+## [1.27.0](https://github.com/bamr87/zer0-mistakes/compare/v1.26.0...v1.27.0) (2026-07-22)
+
+
+### Features
+
+* **analytics:** wire posthog.html into head.html ([#317](https://github.com/bamr87/zer0-mistakes/issues/317)) ([7977fe1](https://github.com/bamr87/zer0-mistakes/commit/7977fe189dec3b62eb9779feac56ec27e513f2c3))
+* **article:** show_hero front-matter flag opts standard posts into the hero image ([#309](https://github.com/bamr87/zer0-mistakes/issues/309)) ([6344473](https://github.com/bamr87/zer0-mistakes/commit/6344473c14c613825ab7ac9083b87f17a2a1e858))
+* **i18n:** AI-generated multilingual support with language toggle ([#316](https://github.com/bamr87/zer0-mistakes/issues/316)) ([72b2ab6](https://github.com/bamr87/zer0-mistakes/commit/72b2ab6980742e26305a22e3aff535f465ade084))
+* **scripts:** Claude-orchestrated preview images — Claude analyzes & reviews, image models render ([#296](https://github.com/bamr87/zer0-mistakes/issues/296)) ([acac205](https://github.com/bamr87/zer0-mistakes/commit/acac2051ec79a81c04efb1af76fb4031e106a852))
+
+
+### Bug Fixes
+
+* **a11y:** keep a single &lt;main&gt; landmark per page ([#310](https://github.com/bamr87/zer0-mistakes/issues/310)) ([fae920e](https://github.com/bamr87/zer0-mistakes/commit/fae920eb5c60b5e792e9842c9b112bd5eb60e391)), closes [#299](https://github.com/bamr87/zer0-mistakes/issues/299)
+* **author:** build avatar path with relative_url, never protocol-relative ([#306](https://github.com/bamr87/zer0-mistakes/issues/306)) ([ac597d2](https://github.com/bamr87/zer0-mistakes/commit/ac597d2c029157bb47da5a336812f764a3946da4))
+* **ci:** secret scan matches added lines only, not context/removals/hunk headers ([#301](https://github.com/bamr87/zer0-mistakes/issues/301)) ([1b7175d](https://github.com/bamr87/zer0-mistakes/commit/1b7175ddece3d95aefc406f3b59df682db9fd0f2))
+* **includes:** gate Quick Links Dev row on is_production ([#308](https://github.com/bamr87/zer0-mistakes/issues/308)) ([03b6877](https://github.com/bamr87/zer0-mistakes/commit/03b687713b8552c6ceb6b2ab30ac8caea0d6632d))
+* **obsidian:** graph reads OBSIDIAN_CONFIG.wikiIndexUrl that js-cdn.html emits ([#305](https://github.com/bamr87/zer0-mistakes/issues/305)) ([2875912](https://github.com/bamr87/zer0-mistakes/commit/28759128b7b352a054e642d153e5e38e16aa1e48))
+* **sass:** stack left-side FABs to prevent obsidian/feedback overlap ([#289](https://github.com/bamr87/zer0-mistakes/issues/289)) ([6cc4596](https://github.com/bamr87/zer0-mistakes/commit/6cc4596dff28d164386a16a6637420f84b4571bf))
+* **test:** repoint ZER0-003 to test_install_legacy_flags.sh after retirement ([#292](https://github.com/bamr87/zer0-mistakes/issues/292)) ([fd7a2ce](https://github.com/bamr87/zer0-mistakes/commit/fd7a2ce256e32d2f630bd82732227b54ba13d3dd))
+* **theme:** apply relative_url to preview_path exactly once ([#307](https://github.com/bamr87/zer0-mistakes/issues/307)) ([012e577](https://github.com/bamr87/zer0-mistakes/commit/012e577fe3131e0be42f7d33a6f5161dc666cc81))
+
 ## [1.26.0](https://github.com/bamr87/zer0-mistakes/compare/v1.25.0...v1.26.0) (2026-07-07)
 
 

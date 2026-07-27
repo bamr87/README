@@ -9,6 +9,7 @@ draft: false
 lastmod: '2025-11-29T23:41:31.000Z'
 layout: quest-collection
 level: '0011'
+local_graph: false
 mermaid: true
 permalink: /quests/0011/
 preview: images/previews/level-0011-development-tools-ai-integration.png

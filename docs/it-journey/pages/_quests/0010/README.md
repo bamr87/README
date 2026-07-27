@@ -9,6 +9,7 @@ draft: false
 lastmod: '2026-04-25T19:27:00.000Z'
 layout: quest-collection
 level: '0010'
+local_graph: false
 mermaid: true
 permalink: /quests/0010/
 preview: images/previews/level-0010-terminal-enhancement-shell-mastery.png
