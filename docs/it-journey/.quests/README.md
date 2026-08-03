@@ -50,20 +50,36 @@ python3 scripts/quest/ledger.py render
 
 # Self-check the ledger invariants:
 python3 scripts/quest/ledger.py selftest
+
+# Reconcile two divergent ledgers (report-PR conflict resolution — the newer
+# slice record wins wholesale, walk history unions, the breaker only tightens):
+python3 scripts/quest/ledger.py merge --ours A.json --theirs B.json --output A.json
 ```
+
+**Keeping an open report PR mergeable.** `ledger.json`, `DASHBOARD.md`, and `pages/_quest-reports/**` are rewritten wholesale by every run, so a report PR that misses its merge window conflicts with `main` the moment the next run lands. Git cannot line-merge them; the generators can:
+
+```bash
+# On the report branch — merge main and rebuild everything derived from it:
+scripts/quest/refresh_report_branch.sh origin/main
+```
+
+It refuses to touch conflicts outside that generated set, so a real content conflict still reaches a human. `pr-freshness.yml` runs it automatically.
 
 **Evidence** = the `report.aggregate()` JSON from `test/quest-validator/agentic_validate.py`: it carries `results[].quest{path,slug,level}`, `results[].verdict` (pass/warn/fail), `results[].overall`, `results[].verdict_obj{executed, commands[{command, status, detail}], recommendations[{priority, area, suggestion}], summary}`, and top-level `total / scored / errored / average / counts / truncated`.
 
 ## The loop (mirrors `cms-daily-loop` / `issue-autopilot`)
 
-Daily, for every character path: walk the highest-priority not-yet-perfect `(character, level)` slice → open a **separate content-only fix PR** addressing the walkthrough's VERIFIED issues → auto-merge when green → track progress in the committed ledger → repeat "until perfect".
+The loop runs as **two lanes on two cadences**, joined by this directory's committed ledger.
 
-1. **Plan** — `walkthrough_plan.py` picks the slice; `agentic_validate.py` plays
-   it end-to-end in the sandbox and emits `walk-evidence.json`.
-2. **Record** — `ledger.py update` merges the evidence, recomputes `perfect`,
-   and (on the walkthrough report PR) commits `ledger.json` + `DASHBOARD.md`.
-3. **Fix** — when not perfect and the budget allows, the fixer opens ONE
-   `auto:content` quest-fix PR addressing only VERIFIED issues.
+**Walk (measurement) — daily, `quest-perfection.yml`.** Walk THE single highest-priority not-yet-perfect `(character, level)` slice, record it, stop. Rotation covers the other paths over following days, because the ledger's selection key sorts by `last_run` ascending — a slice that just ran sorts last among its tier.
+
+**Fix (repair) — every 2 days, `quest-fix-loop.yml`.** Rank the ledger, open **separate content-only fix PRs** addressing VERIFIED issues, auto-merge when green, repeat "until perfect".
+
+These were one daily workflow that walked every path and fixed in the same run. Two things were wrong with that. The walk cost ~150 min/day (~75 h/month), and measurement showed it was almost entirely agentic engine rather than workflow overhead — setup, checkout and install were 3.9 min of a 158-minute run — so nothing but *asking for less AI work per run* could reduce it. Separately, the fix budget was recomputed on every walk only for backpressure to discard most of it, because patches were being generated far faster than one reviewer could read them. Split, measurement runs often and cheaply while repair stays paced to review speed.
+
+1. **Plan** — `walkthrough_plan.py` picks the slice; `agentic_validate.py` plays it end-to-end in the sandbox and emits `walk-evidence.json`.
+2. **Record** — `ledger.py update` merges the evidence, recomputes `perfect`, and (on the walkthrough report PR) commits `ledger.json` + `DASHBOARD.md`. The walk also uploads its sealed plan + evidence as an artifact.
+3. **Fix** — on its own schedule, when not perfect and the budget allows, the fixer opens ONE `auto:content` quest-fix PR addressing only VERIFIED issues. It reuses the walk's sealed evidence **by run id** instead of re-deriving it, so a fix costs minutes rather than a second execute-engine pass. Evidence older than `caps.max_evidence_age_days` is skipped — the content may have moved under it — and left for the walk lane to re-measure.
 4. **Merge** — `content-auto-merge.yml` squash-merges green content-only fix PRs.
 
 ### PR boundaries (M4)

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 2a73c37b31edd8cb
+source_fingerprint: 00f0728b6fdad07b
 tags:
   - agentic-ai
   - automation
@@ -17,9 +17,9 @@ tags:
   - fail
   - gamified-learning
   - gh-600
-  - github-actions
   - hands-on
   - jekyll
+  - level-0001
   - main_quest
 ---
 
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 950 docs |
+| Corpus | `docs/it-journey` - 1031 docs |
 | External | no |
 
 ## Signals
@@ -43,19 +43,19 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,551,407 words across 950 indexed documents
+- ~1,623,950 words across 1031 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Structure
 
-- `pages/` (604 docs)
-- `test/` (120 docs)
+- `pages/` (616 docs)
+- `test/` (132 docs)
+- `.cms/` (55 docs)
 - `.github/` (43 docs)
-- `.cms/` (41 docs)
+- `redirects/` (43 docs)
 - `docs/` (32 docs)
 - `.claude/` (28 docs)
 - `TODO/` (25 docs)
-- `scripts/` (12 docs)
 
 ## Key documents
 

@@ -12,7 +12,7 @@ excerpt: 'Digital Artist · Level 0001 — Web Fundamentals: an evidence-based q
 level: '0001'
 quest_count: 5
 render_with_liquid: false
-run_url: https://github.com/bamr87/it-journey/actions/runs/28791022929
+run_url: https://github.com/bamr87/it-journey/actions/runs/30355858267
 slice: digital-artist/0001
 source_file: 2026-07-06-digital-artist-0001.md
 source_report: test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md
@@ -31,7 +31,7 @@ walk_date: '2026-07-06'
 ---
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-06
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30355858267) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md)
 
 ---
 

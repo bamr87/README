@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 5aa44e46e3422d9c
+source_fingerprint: e9b52fd66f3a0919
 tags:
   - bash
   - education
@@ -24,24 +24,25 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 40 docs |
+| Corpus | `docs/bashcrawl` - 45 docs |
 | External | no |
 
 ## Signals
 
 - has CLAUDE.md agent guidance
 - keeps a changelog
-- ~53,746 words across 40 indexed documents
-- code samples in: bash, plaintext, json, yaml, python, text, markdown, gitignore
+- ~58,424 words across 45 indexed documents
+- code samples in: bash, plaintext, json, yaml, python, text, js, markdown
 
 ## Structure
 
-- `docs/` (21 docs)
+- `docs/` (25 docs)
 - `src/` (6 docs)
 - `.github/` (5 docs)
 - `entrance/` (3 docs)
 - `.archives/` (1 docs)
 - `logs/` (1 docs)
+- `termforge/` (1 docs)
 
 ## Key documents
 

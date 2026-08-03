@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 950,
-    "fingerprint": "2a73c37b31edd8cb",
+    "file_count": 1031,
+    "fingerprint": "00f0728b6fdad07b",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 12350331
+    "total_bytes": 12883682
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -51,7 +51,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 950
+      "it-journey": 1031
     },
     "code_languages": [
       "bash",
@@ -63,25 +63,25 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 950,
+    "indexed_documents": 1031,
     "top_tags": [
       "main_quest",
       "gamified-learning",
       "hands-on",
       "walkthrough",
       "quest-perfection",
-      "jekyll",
       "warn",
+      "jekyll",
       "automation",
       "fail",
       "devops",
       "gh-600",
       "agentic-ai",
       "ci-cd",
-      "github-actions",
-      "terminal"
+      "level-0001",
+      "web-fundamentals"
     ],
-    "total_words": 1551407
+    "total_words": 1623950
   },
   "schema_version": "1.0",
   "signals": {
@@ -108,20 +108,24 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 604,
+        "doc_count": 616,
         "name": "pages"
       },
       {
-        "doc_count": 120,
+        "doc_count": 132,
         "name": "test"
+      },
+      {
+        "doc_count": 55,
+        "name": ".cms"
       },
       {
         "doc_count": 43,
         "name": ".github"
       },
       {
-        "doc_count": 41,
-        "name": ".cms"
+        "doc_count": 43,
+        "name": "redirects"
       },
       {
         "doc_count": 32,
@@ -142,10 +146,6 @@
       {
         "doc_count": 8,
         "name": "_data"
-      },
-      {
-        "doc_count": 6,
-        "name": ".crush"
       }
     ]
   }

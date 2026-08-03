@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 40,
-    "fingerprint": "5aa44e46e3422d9c",
+    "file_count": 45,
+    "fingerprint": "e9b52fd66f3a0919",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 483838
+    "total_bytes": 518058
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -45,7 +45,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 40
+      "bashcrawl": 45
     },
     "code_languages": [
       "bash",
@@ -54,12 +54,12 @@
       "yaml",
       "python",
       "text",
-      "markdown",
-      "gitignore"
+      "js",
+      "markdown"
     ],
-    "indexed_documents": 40,
+    "indexed_documents": 45,
     "top_tags": [],
-    "total_words": 53746
+    "total_words": 58424
   },
   "schema_version": "1.0",
   "signals": {
@@ -78,7 +78,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 21,
+        "doc_count": 25,
         "name": "docs"
       },
       {
@@ -100,6 +100,10 @@
       {
         "doc_count": 1,
         "name": "logs"
+      },
+      {
+        "doc_count": 1,
+        "name": "termforge"
       }
     ]
   }
