@@ -51,7 +51,7 @@ jobs:
         run: python3 scripts/schema_lint.py check .
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Automated docs aggregation + context refresh"
           branch: main
