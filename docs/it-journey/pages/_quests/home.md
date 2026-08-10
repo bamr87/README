@@ -18,7 +18,7 @@ lastmod: '2026-06-26T00:00:00.000Z'
 layout: quest-hub
 level: '0000'
 permalink: /quests/home/
-preview: /images/previews/overworld-master-quest-map.png
+preview: /images/previews/overworld-master-quest-map.webp
 redirect_from:
 - /quickstart/
 sidebar:

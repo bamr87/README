@@ -12,7 +12,7 @@ level: '0011'
 local_graph: false
 mermaid: true
 permalink: /quests/0011/
-preview: images/previews/level-0011-development-tools-ai-integration.png
+preview: images/previews/level-0011-development-tools-ai-integration.webp
 source_file: README.md
 tags:
 - quests

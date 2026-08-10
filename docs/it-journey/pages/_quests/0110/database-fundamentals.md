@@ -38,7 +38,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ (or Docker to run it)
-preview: images/previews/database-fundamentals-data-storage-quest-title-ret.png
+preview: images/previews/database-fundamentals-data-storage-quest-title-ret.webp
 primary_technology: sql
 quest_arc: Foundations of the Relational Realm
 quest_dependencies:

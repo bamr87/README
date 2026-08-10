@@ -12,7 +12,7 @@ level: '0010'
 local_graph: false
 mermaid: true
 permalink: /quests/0010/
-preview: images/previews/level-0010-terminal-enhancement-shell-mastery.png
+preview: images/previews/level-0010-terminal-enhancement-shell-mastery.webp
 source_file: README.md
 tags:
 - quests

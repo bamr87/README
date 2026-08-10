@@ -32,7 +32,7 @@ permalink: /quests/0001/barodybroject-stack-analysis/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: /images/previews/technology-stack-analysis-barodybroject.png
+preview: /images/previews/technology-stack-analysis-barodybroject.webp
 primary_language: Python
 primary_technology: stack-analysis
 project_type: Web Application

@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 504,
-    "fingerprint": "67722ebc52445e72",
+    "file_count": 676,
+    "fingerprint": "d94fb4d01adb2bbf",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 3630239
+    "total_bytes": 4409854
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -51,37 +51,37 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 504
+      "zer0-mistakes": 676
     },
     "code_languages": [
       "bash",
       "yaml",
       "html",
-      "plaintext",
       "liquid",
+      "plaintext",
       "text",
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 504,
+    "indexed_documents": 676,
     "top_tags": [
       "jekyll",
       "automation",
       "docker",
+      "navigation",
       "ui",
       "documentation",
-      "ai",
-      "navigation",
       "development",
+      "github-pages",
+      "ai",
       "bootstrap",
       "setup",
-      "github-pages",
+      "deployment",
       "theme",
-      "systems",
-      "installation",
-      "deployment"
+      "accessibility",
+      "installation"
     ],
-    "total_words": 439712
+    "total_words": 528214
   },
   "schema_version": "1.0",
   "signals": {
@@ -108,23 +108,27 @@
         "name": "pages"
       },
       {
-        "doc_count": 107,
+        "doc_count": 165,
+        "name": "fr"
+      },
+      {
+        "doc_count": 108,
         "name": "docs"
       },
       {
-        "doc_count": 50,
-        "name": "fr"
+        "doc_count": 52,
+        "name": "examples"
       },
       {
         "doc_count": 45,
         "name": ".github"
       },
       {
-        "doc_count": 31,
+        "doc_count": 33,
         "name": "test"
       },
       {
-        "doc_count": 17,
+        "doc_count": 19,
         "name": ".claude"
       },
       {
@@ -138,10 +142,6 @@
       {
         "doc_count": 8,
         "name": "scripts"
-      },
-      {
-        "doc_count": 3,
-        "name": ".issues"
       }
     ]
   }

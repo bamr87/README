@@ -39,7 +39,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - Node.js 20+ and a text editor or IDE (VS Code recommended)
-preview: images/previews/testing-integration-automated-quality-assurance-de.png
+preview: images/previews/testing-integration-automated-quality-assurance-de.webp
 primary_technology: testing
 quest_arc: Gates of the Pipeline
 quest_dependencies:

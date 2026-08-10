@@ -16,7 +16,7 @@ level: '1111'
 local_graph: false
 mermaid: true
 permalink: /quests/1111/
-preview: images/previews/level-1111-leadership-innovation.png
+preview: images/previews/level-1111-leadership-innovation.webp
 sidebar:
   nav: quests
 source_file: README.md

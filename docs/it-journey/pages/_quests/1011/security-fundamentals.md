@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A terminal and a text editor or IDE (VS Code recommended)
   - Optional Docker for the hands-on lab
-preview: images/previews/security-fundamentals-cia-triad-quest-title-defens.png
+preview: images/previews/security-fundamentals-cia-triad-quest-title-defens.webp
 primary_technology: security
 quest_arc: Foundations of the Shieldwall
 quest_dependencies:

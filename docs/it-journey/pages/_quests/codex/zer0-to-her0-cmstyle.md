@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, or Linux)
   - A free GitHub account
   - Permission to install VS Code and Git on your machine
-preview: images/previews/epic-quest-zer0-to-her0-cmstyle.png
+preview: images/previews/epic-quest-zer0-to-her0-cmstyle.webp
 primary_technology: ai-integration
 quest_arc: From Zer0 to Living Castle
 quest_dependencies:

@@ -16,7 +16,7 @@ keywords:
 - tips
 - iTerm
 lastmod: '2025-01-17T02:11:14.000Z'
-preview: /assets/images/iTerm-shortcuts-2.png
+preview: /assets/images/iTerm-shortcuts-2.webp
 snippet: null
 source_file: 2025-01-16-iterm-tips-and-tricks.md
 sub-title: null
@@ -128,7 +128,7 @@ By customizing iTerm2, you'll:
 
 - **Optimize Tools**: Apply similar techniques in other terminal emulators or software environments.
 
-![iterm](/assets/images/iTerm-shortcuts-2.png)
+![iterm](/assets/images/iTerm-shortcuts-2.webp)
 
 **Conclusion**
 

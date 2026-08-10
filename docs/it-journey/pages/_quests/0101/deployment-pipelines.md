@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/deployment-pipelines-production-release-automation.png
+preview: images/previews/deployment-pipelines-production-release-automation.webp
 primary_technology: deployment
 quest_arc: Gates of the Pipeline
 quest_dependencies:

@@ -16,7 +16,7 @@ keywords:
 lastmod: '2026-05-20T20:57:50.000Z'
 layout: quest-hub
 permalink: /quests/
-preview: /images/previews/quests-index.png
+preview: /images/previews/quests-index.webp
 quest_browser: true
 quest_paths: true
 quest_progression: true

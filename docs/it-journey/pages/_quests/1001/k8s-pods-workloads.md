@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-pods-quest-title-workloads-deployments-.png
+preview: images/previews/kubernetes-pods-quest-title-workloads-deployments-.webp
 primary_technology: kubernetes
 quest_arc: Commanding the Workload Legions
 quest_dependencies:

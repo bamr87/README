@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM; a GPU helps but is not required for the small models here
-preview: images/previews/natural-language-processing-descriptive-subtitle.png
+preview: images/previews/natural-language-processing-descriptive-subtitle.webp
 primary_technology: huggingface
 quest_arc: The Tongue of Machines
 quest_dependencies:

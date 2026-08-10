@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A free GitHub account and a repository you can push to
   - Git installed locally
-preview: images/previews/github-actions-basics-workflow-automation-descript.png
+preview: images/previews/github-actions-basics-workflow-automation-descript.webp
 primary_technology: github-actions
 quest_arc: Wielding the Workflow
 quest_dependencies:

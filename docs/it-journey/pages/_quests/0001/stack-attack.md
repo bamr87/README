@@ -51,7 +51,7 @@ prerequisites:
   - Docker Desktop installed and running
   - Python 3.12+ and Node.js 20+
   - Git and GitHub account
-preview: images/previews/stack-attack-deciphering-the-technology-matrix.png
+preview: images/previews/stack-attack-deciphering-the-technology-matrix.webp
 primary_technology: Django + React
 quest_arc: Full-Stack Architecture Arc
 quest_dependencies:

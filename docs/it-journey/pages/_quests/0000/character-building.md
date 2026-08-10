@@ -44,7 +44,7 @@ prerequisites:
   - Computer with internet access for research and setup
   - Note-taking tools (digital or physical) for planning
   - Access to create online profiles (LinkedIn, GitHub, etc.)
-preview: images/previews/character-building-forge-your-it-identity-and-deve.png
+preview: images/previews/character-building-forge-your-it-identity-and-deve.webp
 primary_technology: character-building
 quest_arc: Character Creation Arc
 quest_dependencies:

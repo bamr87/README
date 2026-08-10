@@ -40,7 +40,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/javascript-fundamentals-interactive-web-elements-d.png
+preview: images/previews/javascript-fundamentals-interactive-web-elements-d.webp
 primary_technology: javascript
 quest_arc: Forging Your First Website
 quest_dependencies:

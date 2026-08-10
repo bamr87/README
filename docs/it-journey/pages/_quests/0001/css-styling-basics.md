@@ -41,7 +41,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/css-styling-basics-visual-design-fundamentals-desc.png
+preview: images/previews/css-styling-basics-visual-design-fundamentals-desc.webp
 primary_technology: css
 quest_arc: Forging Your First Website
 quest_dependencies:

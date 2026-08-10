@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker Engine or Docker Desktop with the Compose plugin
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/docker-compose-orchestration-multi-container-apps-.png
+preview: images/previews/docker-compose-orchestration-multi-container-apps-.webp
 primary_technology: docker-compose
 quest_arc: Containers of the Container Coast
 quest_dependencies:

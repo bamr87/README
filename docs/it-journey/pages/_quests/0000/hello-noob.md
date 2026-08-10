@@ -41,7 +41,7 @@ prerequisites:
   - Access to a computer with internet connection
   - Valid email address
   - Web browser (Chrome, Firefox, Safari, or Edge)
-preview: images/previews/hello-n00b-your-first-steps-into-the-it-journey.png
+preview: images/previews/hello-n00b-your-first-steps-into-the-it-journey.webp
 primary_technology: github
 quest_arc: Digital Awakening Arc
 quest_dependencies:
@@ -220,7 +220,7 @@ You'll see two options:
 - Click **[Sign up](https://github.com/signup)**
 - Continue with the account creation process below
 
-![GitHub Login Interface](/assets/images/github-login.png)
+![GitHub Login Interface](/assets/images/github-login.webp)
 
 ### ⚔️ Step 3: Create Your Account (New Users Only)
 
@@ -259,7 +259,7 @@ Or manually navigate:
 
 ### 🍴 Step 2: Create Your Fork
 
-![Fork Button Screenshot](/assets/images/github-fork-it-journey.png)
+![Fork Button Screenshot](/assets/images/github-fork-it-journey.webp)
 
 1. Click the **"Fork"** button
 2. Choose where to create the fork (usually your own account)

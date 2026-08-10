@@ -39,7 +39,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A Jekyll site (or any static HTML site) to edit
-preview: images/previews/seo-optimization-search-engine-visibility-descript.png
+preview: images/previews/seo-optimization-search-engine-visibility-descript.webp
 primary_technology: jekyll
 quest_arc: Publishing Your First Website
 quest_dependencies:

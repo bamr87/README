@@ -12,7 +12,7 @@ level: '0100'
 local_graph: false
 mermaid: true
 permalink: /quests/0100/
-preview: images/previews/level-0100-frontend-development-docker.png
+preview: images/previews/level-0100-frontend-development-docker.webp
 source_file: README.md
 tags:
 - quests

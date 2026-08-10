@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1031,
-    "fingerprint": "00f0728b6fdad07b",
+    "file_count": 1044,
+    "fingerprint": "b24b52fb93985659",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 12883682
+    "total_bytes": 12962242
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -51,7 +51,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1031
+      "it-journey": 1044
     },
     "code_languages": [
       "bash",
@@ -63,7 +63,7 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1031,
+    "indexed_documents": 1044,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -81,7 +81,7 @@
       "level-0001",
       "web-fundamentals"
     ],
-    "total_words": 1623950
+    "total_words": 1634393
   },
   "schema_version": "1.0",
   "signals": {
@@ -108,7 +108,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 616,
+        "doc_count": 615,
         "name": "pages"
       },
       {
@@ -116,7 +116,7 @@
         "name": "test"
       },
       {
-        "doc_count": 55,
+        "doc_count": 69,
         "name": ".cms"
       },
       {

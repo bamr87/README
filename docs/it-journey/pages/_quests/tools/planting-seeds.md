@@ -19,7 +19,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/planting-seeds/
-preview: images/previews/planting-seeds.png
+preview: images/previews/planting-seeds.webp
 primary_technology: General
 quest_series: Tools Collection
 quest_type: main_quest

@@ -35,7 +35,7 @@ prerequisites:
   - Basic computer navigation
   - Terminal application access
   - Bash or compatible shell
-preview: images/previews/bashcrawl-quest-terminal-adventure-rpg.png
+preview: images/previews/bashcrawl-quest-terminal-adventure-rpg.webp
 primary_technology: bash
 quest_arc: Terminal Mastery Arc
 quest_dependencies:

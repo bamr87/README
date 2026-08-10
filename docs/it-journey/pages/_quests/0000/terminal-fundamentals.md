@@ -37,7 +37,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, or Linux)
   - Terminal application (Terminal, PowerShell, or Windows Terminal)
-preview: images/previews/terminal-fundamentals-command-line-navigation-ques.png
+preview: images/previews/terminal-fundamentals-command-line-navigation-ques.webp
 primary_technology: bash
 quest_arc: Terminal Mastery Arc
 quest_dependencies:

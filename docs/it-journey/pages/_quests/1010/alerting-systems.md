@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose for the Prometheus + Alertmanager lab
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/alerting-systems-pagerduty-quest-title-incident-ma.png
+preview: images/previews/alerting-systems-pagerduty-quest-title-incident-ma.webp
 primary_technology: alertmanager
 quest_arc: From Signal to Response
 quest_dependencies:

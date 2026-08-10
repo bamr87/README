@@ -33,7 +33,7 @@ prerequisites:
 - Fundamental programming knowledge
 - Git installed on your system
 - GitHub account created
-preview: images/previews/quest-mastering-the-ancient-arts-of-source-control.png
+preview: images/previews/quest-mastering-the-ancient-arts-of-source-control.webp
 primary_technology: git
 quest_series: Foundation Development Skills
 quest_type: main_quest

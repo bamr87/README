@@ -42,7 +42,7 @@ prerequisites:
   - Administrator access to your Windows machine
   - Stable internet connection for downloads
   - 64-bit processor, 4GB+ RAM, 20GB+ free storage
-preview: /images/previews/hello-windows-mastering-the-windows-development-en.png
+preview: /images/previews/hello-windows-mastering-the-windows-development-en.webp
 primary_technology: windows
 quest_arc: Platform Mastery Arc
 quest_dependencies:

@@ -29,7 +29,7 @@ prerequisites:
   system_requirements:
   - Computer with internet access
   - Web browser
-preview: images/previews/begin-your-it-journey.png
+preview: images/previews/begin-your-it-journey.webp
 primary_technology: getting-started
 quest_arc: Digital Awakening Arc
 quest_dependencies:

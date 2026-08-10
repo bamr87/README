@@ -12,7 +12,7 @@ level: '1100'
 local_graph: false
 mermaid: true
 permalink: /quests/1100/
-preview: images/previews/level-1100-data-templates.png
+preview: images/previews/level-1100-data-templates.webp
 source_file: README.md
 tags:
 - quests

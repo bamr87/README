@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv, plus a JDK for Spark
   - 8 GB RAM recommended; Docker optional for a cluster
-preview: images/previews/apache-spark-mastery-descriptive-subtitle.png
+preview: images/previews/apache-spark-mastery-descriptive-subtitle.webp
 primary_technology: spark
 quest_arc: Taming Distributed Compute
 quest_dependencies:

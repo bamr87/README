@@ -39,7 +39,7 @@ prerequisites:
   system_requirements:
   - A terminal emulator (iTerm2, Windows Terminal, Alacritty)
   - Package manager (Homebrew, Winget, Scoop, or Apt)
-preview: images/previews/terminal-artificer-forging-the-glass-interface.png
+preview: images/previews/terminal-artificer-forging-the-glass-interface.webp
 primary_technology: bash
 quest_arc: Tool Mastery Arc
 quest_dependencies:
@@ -91,7 +91,7 @@ validation_criteria:
 
 *Today, you will learn to craft these interfaces using **Gum**, a mystical artifact from the Charm realm that brings glamour and interactivity to your shell scripts.*
 
-![Quest Preview: Terminal Artificer: Forging the Glass Interface](/assets/images/previews/terminal-artificer-forging-the-glass-interface.png)
+![Quest Preview: Terminal Artificer: Forging the Glass Interface](/assets/images/previews/terminal-artificer-forging-the-glass-interface.webp)
 
 ### 🌟 The Legend Behind This Quest
 For decades, wizards of the terminal have relied on `read` and arcane flags to gather intelligence from users. But the modern era demands more. We crave the tactile feedback of a menu, the safety of a confirmation dialog, and the clarity of a well-formatted prompt. Gum is the modern artificer's hammer, allowing you to build beautiful, composable CLIs with simple shell commands.

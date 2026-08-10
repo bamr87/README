@@ -12,7 +12,7 @@ level: '1011'
 local_graph: false
 mermaid: true
 permalink: /quests/1011/
-preview: images/previews/level-1011-feature-development.png
+preview: images/previews/level-1011-feature-development.webp
 source_file: README.md
 tags:
 - quests

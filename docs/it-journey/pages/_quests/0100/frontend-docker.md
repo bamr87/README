@@ -31,7 +31,7 @@ permalink: /quests/0100/frontend-docker/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/dockering-jekyll-with-bootstrap-5.png
+preview: images/previews/dockering-jekyll-with-bootstrap-5.webp
 primary_technology: General
 quest_arc: Docker on the web
 quest_dependencies:

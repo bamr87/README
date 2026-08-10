@@ -34,7 +34,7 @@ prerequisites:
   system_requirements:
   - Python 3.8+
   - Text editor or IDE
-preview: images/previews/recursive-realms-testing-infinite-loops-with-ai.png
+preview: images/previews/recursive-realms-testing-infinite-loops-with-ai.webp
 primary_technology: python
 quest_arc: Testing & Quality Assurance
 quest_dependencies:

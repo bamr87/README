@@ -50,7 +50,7 @@ prerequisites:
   - Text editor with YAML/Liquid support
   - Python 3.x for automation scripts
   - Git for version control
-preview: images/previews/jekyll-quest-tracking-building-dynamic-collection-.png
+preview: images/previews/jekyll-quest-tracking-building-dynamic-collection-.webp
 primary_technology: jekyll
 quest_arc: Dynamic Content Systems
 quest_dependencies:

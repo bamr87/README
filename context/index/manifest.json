@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-03T04:14:51+00:00",
+  "generated_at": "2026-08-10T03:36:32+00:00",
   "engine_version": "1.0.0",
   "enrichment": "heuristic",
   "project_count": 7,
   "fingerprints": {
-    "scripts": "106ed54fca9c76e7",
+    "scripts": "2b01e2e4e6e5320f",
     "skills": "dd818354495728d6",
-    "barodybroject": "d935ff046fd09e17",
+    "barodybroject": "638c7438b0e8aea6",
     "bashcrawl": "e9b52fd66f3a0919",
-    "zer0-mistakes": "67722ebc52445e72",
-    "it-journey": "00f0728b6fdad07b",
+    "zer0-mistakes": "d94fb4d01adb2bbf",
+    "it-journey": "b24b52fb93985659",
     "OverTheWire-website": "8a95c989dbb45bc1"
   },
   "corpus_index_present": true,
-  "corpus_index_generated_at": "2026-08-03T04:14:50.830932"
+  "corpus_index_generated_at": "2026-08-10T03:36:31.407914"
 }

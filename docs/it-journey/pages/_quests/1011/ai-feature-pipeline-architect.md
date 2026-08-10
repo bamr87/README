@@ -34,7 +34,7 @@ prerequisites:
 - Experience with at least one programming language
 - Basic knowledge of containerization (Docker) and cloud platforms
 - Completion of Level 1001 (Backend Development Track) quest recommended
-preview: images/previews/ai-feature-pipeline-architect-devsecops-mastery-qu.png
+preview: images/previews/ai-feature-pipeline-architect-devsecops-mastery-qu.webp
 primary_technology: github-actions
 quest_series: AI-Enhanced Development Mastery Path
 quest_type: main_quest

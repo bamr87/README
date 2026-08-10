@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - Docker installed for the container registry exercise
-preview: images/previews/artifact-management-build-output-quest-title-depen.png
+preview: images/previews/artifact-management-build-output-quest-title-depen.webp
 primary_technology: artifacts
 quest_arc: Gates of the Pipeline
 quest_dependencies:

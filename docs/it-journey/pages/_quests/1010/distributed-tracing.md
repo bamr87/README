@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv, plus Docker for Jaeger
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/distributed-tracing-jaeger-quest-title-opentelemet.png
+preview: images/previews/distributed-tracing-jaeger-quest-title-opentelemet.webp
 primary_technology: opentelemetry
 quest_arc: Mastering the Traces Pillar
 quest_dependencies:

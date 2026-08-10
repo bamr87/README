@@ -31,7 +31,7 @@ prerequisites:
   system_requirements:
   - Computer with internet access for research
   - Optional: VirtualBox for trying different operating systems
-preview: images/previews/os-selection.png
+preview: images/previews/os-selection.webp
 primary_technology: operating-system
 quest_arc: Character Creation Arc
 quest_dependencies:

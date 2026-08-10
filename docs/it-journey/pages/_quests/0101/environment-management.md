@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/environment-management-dev-staging-quest-title-pro.png
+preview: images/previews/environment-management-dev-staging-quest-title-pro.webp
 primary_technology: environments
 quest_arc: Gates of the Pipeline
 quest_dependencies:

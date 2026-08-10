@@ -27,7 +27,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/commitments-to-clean-commits/
-preview: images/previews/commitments-to-clean-commits.png
+preview: images/previews/commitments-to-clean-commits.webp
 primary_technology: clean commits
 quest_series: Tools Collection
 quest_type: main_quest

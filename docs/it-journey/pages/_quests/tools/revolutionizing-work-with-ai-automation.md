@@ -27,7 +27,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/revolutionizing-work-with-ai-automation/
-preview: images/previews/revolutionizing-work-with-ai-automation.png
+preview: images/previews/revolutionizing-work-with-ai-automation.webp
 primary_technology: AI Automation
 quest_series: Tools Collection
 quest_type: main_quest

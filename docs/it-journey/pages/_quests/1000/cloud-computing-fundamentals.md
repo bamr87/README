@@ -39,7 +39,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A web browser and a free-tier account with one cloud provider (optional but recommended)
-preview: images/previews/cloud-computing-fundamentals-iaas-paas-quest-title.png
+preview: images/previews/cloud-computing-fundamentals-iaas-paas-quest-title.webp
 primary_technology: cloud
 quest_arc: Foundations of the Cloud Realm
 quest_dependencies:

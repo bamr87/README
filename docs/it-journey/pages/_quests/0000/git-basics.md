@@ -39,7 +39,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed (git --version)
   - Text editor (VS Code recommended)
-preview: images/previews/git-basics-version-control-introduction-descriptiv.png
+preview: images/previews/git-basics-version-control-introduction-descriptiv.webp
 primary_technology: git
 quest_arc: Version Control Arc
 quest_dependencies:

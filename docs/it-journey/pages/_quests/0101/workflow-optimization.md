@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/workflow-optimization-caching-quest-title-parallel.png
+preview: images/previews/workflow-optimization-caching-quest-title-parallel.webp
 primary_technology: optimization
 quest_arc: Gates of the Pipeline
 quest_dependencies:

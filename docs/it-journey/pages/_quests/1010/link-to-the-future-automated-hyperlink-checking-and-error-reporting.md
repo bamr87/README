@@ -33,7 +33,7 @@ prerequisites:
 - 'Level 0101 (5): Basic GitHub Actions workflow experience'
 - 'Level 1001 (9): Understanding of Jekyll site structure'
 - Familiarity with YAML configuration files
-preview: images/previews/link-to-the-future-automated-hyperlink-guardian-qu.png
+preview: images/previews/link-to-the-future-automated-hyperlink-guardian-qu.webp
 primary_technology: lychee
 quest_series: DevOps Automation Mastery Path
 quest_type: main_quest

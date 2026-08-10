@@ -33,7 +33,7 @@ prerequisites:
 - Basic command-line familiarity
 - VS Code installed
 - Git installed (optional, recommended)
-preview: images/previews/forging-the-la-zy-tex-cv-binary-level-0101-5-quest.png
+preview: images/previews/forging-the-la-zy-tex-cv-binary-level-0101-5-quest.webp
 primary_technology: latex
 quest_series: Professional Identity Path
 quest_type: main_quest

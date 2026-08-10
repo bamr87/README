@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker Engine or Docker Desktop installed
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/container-fundamentals-isolation-quest-title-porta.png
+preview: images/previews/container-fundamentals-isolation-quest-title-porta.webp
 primary_technology: docker
 quest_arc: Containers of the Container Coast
 quest_dependencies:

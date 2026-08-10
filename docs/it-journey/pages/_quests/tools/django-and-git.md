@@ -27,7 +27,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/django-and-git/
-preview: /images/git-django.png
+preview: /images/git-django.webp
 primary_technology: Django
 quest_series: Tools Collection
 quest_type: main_quest

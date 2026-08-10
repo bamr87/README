@@ -11,7 +11,7 @@ lastmod: '2025-11-29T23:41:31.000Z'
 layout: default
 mermaid: true
 permalink: /quests/tools/
-preview: /images/previews/tools-collection-development-tools-workflows.png
+preview: /images/previews/tools-collection-development-tools-workflows.webp
 source_file: README.md
 tags:
 - quests

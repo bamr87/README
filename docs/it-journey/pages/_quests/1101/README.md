@@ -16,7 +16,7 @@ level: '1101'
 local_graph: false
 mermaid: true
 permalink: /quests/1101/
-preview: images/previews/level-1101-machine-learning-ai.png
+preview: images/previews/level-1101-machine-learning-ai.webp
 sidebar:
   nav: quests
 source_file: README.md

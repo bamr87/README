@@ -12,7 +12,7 @@ level: '1110'
 local_graph: false
 mermaid: true
 permalink: /quests/1110/
-preview: images/previews/level-1110-quality-assurance.png
+preview: images/previews/level-1110-quality-assurance.webp
 source_file: README.md
 tags:
 - quests

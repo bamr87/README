@@ -42,7 +42,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - A Jupyter environment or VS Code with the Python extension
-preview: images/previews/python-for-data-science-descriptive-subtitle.png
+preview: images/previews/python-for-data-science-descriptive-subtitle.webp
 primary_technology: pandas
 quest_arc: The Data Artisan's Toolkit
 quest_dependencies:

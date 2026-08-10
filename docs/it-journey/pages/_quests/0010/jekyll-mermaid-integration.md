@@ -38,7 +38,7 @@ prerequisites:
 - Git version control basics
 - 'Completed: [Hello n00b](../0000/hello-noob.md) quest'
 - 'Completed: [Bash Scripting](../0010/bash-scripting.md) quest (recommended)'
-preview: images/previews/the-diagrammatic-enchantment-jekyll-mermaid-integr.png
+preview: images/previews/the-diagrammatic-enchantment-jekyll-mermaid-integr.webp
 primary_technology: Jekyll
 quest_series: Jekyll Mastery
 quest_type: main_quest

@@ -28,7 +28,7 @@ permalink: /quests/0001/git-init-testing/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/building-testing-the-git-init-script-headless-inte.png
+preview: images/previews/building-testing-the-git-init-script-headless-inte.webp
 primary_technology: shell-scripting
 quest_arc: Tooling fundamentals
 quest_dependencies:

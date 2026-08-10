@@ -33,7 +33,7 @@ permalink: /quests/0001/it-journey-stack-analysis/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/stack-attack-analysis-it-journey.png
+preview: images/previews/stack-attack-analysis-it-journey.webp
 primary_language: Ruby
 primary_technology: stack-analysis
 project_type: Educational Platform / Static Site

@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/ci-cd-fundamentals-continuous-integration-quest-ti.png
+preview: images/previews/ci-cd-fundamentals-continuous-integration-quest-ti.webp
 primary_technology: cicd
 quest_arc: Foundations of the Pipeline
 quest_dependencies:

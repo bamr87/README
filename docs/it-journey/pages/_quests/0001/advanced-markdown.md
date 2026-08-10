@@ -40,7 +40,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A text editor or IDE with Markdown preview
-preview: images/previews/advanced-markdown-tables-footnotes-quest-title-ext.png
+preview: images/previews/advanced-markdown-tables-footnotes-quest-title-ext.webp
 primary_technology: markdown
 quest_arc: Forging Your First Website
 quest_dependencies:

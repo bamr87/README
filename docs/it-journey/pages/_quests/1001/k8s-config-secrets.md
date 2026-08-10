@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-configmaps-quest-title-secrets-configur.png
+preview: images/previews/kubernetes-configmaps-quest-title-secrets-configur.webp
 primary_technology: kubernetes
 quest_arc: The Vault and the Ledger
 quest_dependencies:

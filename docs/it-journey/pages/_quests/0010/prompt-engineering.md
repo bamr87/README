@@ -38,7 +38,7 @@ prerequisites:
   system_requirements:
   - Access to an AI language model (ChatGPT, Claude, or similar)
   - Text editor for writing and testing prompts
-preview: images/previews/forging-the-prompt-crystal-master-ai-communication.png
+preview: images/previews/forging-the-prompt-crystal-master-ai-communication.webp
 primary_technology: github-copilot
 quest_arc: Tool Mastery Arc
 quest_dependencies:

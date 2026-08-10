@@ -42,7 +42,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM recommended; GPU optional
-preview: images/previews/neural-networks-deep-dive-descriptive-subtitle.png
+preview: images/previews/neural-networks-deep-dive-descriptive-subtitle.webp
 primary_technology: pytorch
 quest_arc: The Living Network
 quest_dependencies:

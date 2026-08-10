@@ -35,7 +35,7 @@ prerequisites:
 - Text editor comfort (nano, vim, or VS Code)
 - Understanding of basic computing concepts
 - Recommended: play the no-install Bashcrawl web adventure before studying its scripts
-preview: images/previews/mastering-the-bash-incantations-binary-level-0010-.png
+preview: images/previews/mastering-the-bash-incantations-binary-level-0010-.webp
 primary_technology: bash
 quest_series: Foundation Binary Mastery Path
 quest_type: main_quest

@@ -39,7 +39,7 @@ prerequisites:
   system_requirements:
   - Unix/Linux terminal (or WSL on Windows)
   - Bash shell installed
-preview: images/previews/bashrun-and-beyond-building-an-advanced-terminal-g.png
+preview: images/previews/bashrun-and-beyond-building-an-advanced-terminal-g.webp
 primary_technology: bash
 quest_arc: Terminal Mastery Arc
 quest_dependencies:

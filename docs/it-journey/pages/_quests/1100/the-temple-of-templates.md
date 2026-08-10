@@ -33,7 +33,7 @@ prerequisites:
 - Basic programming (variables, functions, modules)
 - Fundamentals of one templating approach (C++ templates, or HTML templating, or components)
 - Local dev environment with Node.js and Python
-preview: images/previews/the-temple-of-templates-binary-abstractions-and-re.png
+preview: images/previews/the-temple-of-templates-binary-abstractions-and-re.webp
 primary_technology: liquid
 quest_series: Binary Function Crafting
 quest_type: main_quest

@@ -12,7 +12,7 @@ level: '0000'
 local_graph: false
 mermaid: true
 permalink: /quests/0000/
-preview: images/previews/level-0000-foundation-init-world.png
+preview: images/previews/level-0000-foundation-init-world.webp
 source_file: README.md
 tags:
 - quests

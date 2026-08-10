@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: d935ff046fd09e17
+source_fingerprint: 638c7438b0e8aea6
 tags:
   - agricultural technology
   - azure
@@ -33,14 +33,15 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 303 docs |
+| Corpus | `docs/barodybroject` - 304 docs |
 | External | no |
 
 ## Signals
 
+- has CLAUDE.md agent guidance
 - has a contribution guide
 - keeps a changelog
-- ~226,006 words across 304 indexed documents
+- ~226,445 words across 305 indexed documents
 - code samples in: bash, python, yaml, plaintext, django, markdown, html, javascript
 
 ## Structure
@@ -57,13 +58,13 @@ tags:
 ## Key documents
 
 - [`README.md`](../../docs/barodybroject/README.md)
+- [`CLAUDE.md`](../../docs/barodybroject/CLAUDE.md)
 - [`CONTRIBUTING.md`](../../docs/barodybroject/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/barodybroject/CHANGELOG.md)
 - [`PRD.md`](../../docs/barodybroject/PRD.md)
 - [`.github/instructions/test.instructions.md`](../../docs/barodybroject/.github/instructions/test.instructions.md)
 - [`README/scripts/README.md`](../../docs/barodybroject/README/scripts/README.md)
 - [`.github/instructions/languages.instructions.md`](../../docs/barodybroject/.github/instructions/languages.instructions.md)
-- [`docs/SECURITY_DOCUMENTATION.md`](../../docs/barodybroject/docs/SECURITY_DOCUMENTATION.md)
 
 ## Query this context
 

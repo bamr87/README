@@ -42,7 +42,7 @@ prerequisites:
   - GitHub account
   - Visual Studio Code installed
   - Internet connection for repository operations
-preview: images/previews/the-epic-quest-for-the-hidden-gem-unleashing-githu.png
+preview: images/previews/the-epic-quest-for-the-hidden-gem-unleashing-githu.webp
 primary_technology: github-pages
 quest_arc: Digital Creation Arc
 quest_dependencies:

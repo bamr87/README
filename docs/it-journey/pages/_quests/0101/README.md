@@ -12,7 +12,7 @@ level: '0101'
 local_graph: false
 mermaid: true
 permalink: /quests/0101/
-preview: images/previews/level-0101-advanced-docker-devops.png
+preview: images/previews/level-0101-advanced-docker-devops.webp
 source_file: README.md
 tags:
 - quests

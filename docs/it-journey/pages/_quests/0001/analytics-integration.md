@@ -40,7 +40,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A website (or Jekyll site) you can edit and publish
-preview: images/previews/analytics-integration-tracking-user-engagement-des.png
+preview: images/previews/analytics-integration-tracking-user-engagement-des.webp
 primary_technology: google-analytics
 quest_arc: Publishing Your First Website
 quest_dependencies:

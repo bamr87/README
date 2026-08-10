@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv
   - SQLite (bundled with Python) and a text editor or IDE
-preview: images/previews/etl-pipeline-design-descriptive-subtitle.png
+preview: images/previews/etl-pipeline-design-descriptive-subtitle.webp
 primary_technology: python
 quest_arc: Forging the Pipeline Foundations
 quest_dependencies:

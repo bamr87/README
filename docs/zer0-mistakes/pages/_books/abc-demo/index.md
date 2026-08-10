@@ -48,6 +48,7 @@ generator: A demo fixture for the book-abc layout (no illustrations rendered —
 layout: book-abc
 lettering: slab
 palette: bright-primary
+permalink: /books/abc-demo/
 series: abc-language
 source_file: index.md
 subtitle: A is for Anchor

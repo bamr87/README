@@ -24,7 +24,7 @@ layout: quest
 learning_style: hands-on
 level: '0100'
 permalink: /quests/0100/frontend/
-preview: /images/frontend-forests.png
+preview: /images/frontend-forests.webp
 primary_technology: General
 quest_series: Level 0100 Quest Line
 quest_type: main_quest

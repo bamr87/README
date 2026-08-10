@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose (8 GB RAM recommended for the stack)
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/elk-stack-elasticsearch-logstash-quest-title-kiban.png
+preview: images/previews/elk-stack-elasticsearch-logstash-quest-title-kiban.webp
 primary_technology: elasticsearch
 quest_arc: Mastering the Logs Pillar
 quest_dependencies:

@@ -11,7 +11,7 @@ layout: quest-collection
 level: '0001'
 local_graph: false
 permalink: /quests/0001/
-preview: images/previews/level-001-journeyman-challenges.png
+preview: images/previews/level-001-journeyman-challenges.webp
 source_file: README.md
 tags:
 - quests

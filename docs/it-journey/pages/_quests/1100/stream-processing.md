@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose for a local Kafka broker
   - Python 3.10+ with pip and venv
-preview: images/previews/stream-processing-descriptive-subtitle.png
+preview: images/previews/stream-processing-descriptive-subtitle.webp
 primary_technology: kafka
 quest_arc: Data That Never Stops
 quest_dependencies:

@@ -46,7 +46,7 @@ prerequisites:
   - Active GitHub Copilot subscription (individual or enterprise)
   - Text editor for prompt template development
   - Git repository for version-controlling your prompt library
-preview: images/previews/forging-the-prompt-crystal-vs-code-copilot-mastery.png
+preview: images/previews/forging-the-prompt-crystal-vs-code-copilot-mastery.webp
 primary_technology: prompt-engineering
 quest_arc: Tool Mastery Arc
 quest_dependencies:

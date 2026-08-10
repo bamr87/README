@@ -34,7 +34,7 @@ prerequisites:
   system_requirements:
   - Linux distribution installed (Ubuntu recommended) or WSL on Windows
   - Terminal access
-preview: /images/previews/linux-fundamentals.png
+preview: /images/previews/linux-fundamentals.webp
 primary_technology: linux
 quest_arc: Platform Mastery Arc
 quest_dependencies:

@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/data-quality-engineering-descriptive-subtitle.png
+preview: images/previews/data-quality-engineering-descriptive-subtitle.webp
 primary_technology: python
 quest_arc: Guardians of the Data
 quest_dependencies:

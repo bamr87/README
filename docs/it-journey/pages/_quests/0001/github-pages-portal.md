@@ -33,7 +33,7 @@ prerequisites:
 - GitHub account (free)
 - Basic Git knowledge (clone, commit, push)
 - Text editor (VS Code, Atom, or any editor)
-preview: images/previews/the-github-pages-portal-forging-your-digital-realm.png
+preview: images/previews/the-github-pages-portal-forging-your-digital-realm.webp
 primary_technology: github-pages
 quest_arc: Deployment
 quest_dependencies:

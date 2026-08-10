@@ -41,7 +41,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Ruby 3.x and a terminal
-preview: images/previews/jekyll-fundamentals-static-site-generation-descrip.png
+preview: images/previews/jekyll-fundamentals-static-site-generation-descrip.webp
 primary_technology: jekyll
 quest_arc: Forging Your First Website
 quest_dependencies:

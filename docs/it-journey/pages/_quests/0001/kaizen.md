@@ -39,7 +39,7 @@ prerequisites:
   system_requirements:
   - Access to development team processes or personal projects
   - Ability to implement small process changes
-preview: images/previews/kaizen-quest-the-path-of-continuous-improvement-in.png
+preview: images/previews/kaizen-quest-the-path-of-continuous-improvement-in.webp
 primary_technology: git
 quest_arc: Team Culture Development
 quest_dependencies:

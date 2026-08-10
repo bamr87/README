@@ -24,7 +24,7 @@ learning_style: reading
 level: '0000'
 mermaid: true
 permalink: /quests/codex/world-map/
-preview: /images/previews/world-map-navigation-guide-to-the-it-journey-realm.png
+preview: /images/previews/world-map-navigation-guide-to-the-it-journey-realm.webp
 primary_technology: reference
 quest_series: Codex Reference
 quest_type: side_quest

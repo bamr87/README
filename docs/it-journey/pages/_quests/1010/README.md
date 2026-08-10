@@ -12,7 +12,7 @@ level: '1010'
 local_graph: false
 mermaid: true
 permalink: /quests/1010/
-preview: images/previews/level-1010-automation-testing.png
+preview: images/previews/level-1010-automation-testing.webp
 source_file: README.md
 tags:
 - quests

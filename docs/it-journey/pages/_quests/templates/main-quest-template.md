@@ -43,7 +43,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - '[Required software installed]'
-preview: /images/previews/quest-title-descriptive-subtitle.png
+preview: /images/previews/quest-title-descriptive-subtitle.webp
 primary_technology: '[main-tech]'
 quest_arc: '[Story arc or thematic grouping]'
 quest_dependencies:

@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 4 GB RAM minimum; no GPU required for this quest
-preview: images/previews/machine-learning-fundamentals-descriptive-subtitle.png
+preview: images/previews/machine-learning-fundamentals-descriptive-subtitle.webp
 primary_technology: scikit-learn
 quest_arc: Foundations of Learning Machines
 quest_dependencies:

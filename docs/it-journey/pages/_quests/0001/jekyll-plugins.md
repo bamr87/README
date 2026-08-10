@@ -40,7 +40,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Ruby 3.x, Jekyll, and Bundler installed
-preview: images/previews/jekyll-plugins-extending-site-functionality-descri.png
+preview: images/previews/jekyll-plugins-extending-site-functionality-descri.webp
 primary_technology: jekyll
 quest_arc: Publishing Your First Website
 quest_dependencies:

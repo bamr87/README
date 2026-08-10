@@ -44,7 +44,7 @@ prerequisites:
   - Jekyll site running locally (Docker or native)
   - Text editor or IDE (VS Code recommended)
   - Web browser for testing
-preview: images/previews/forging-the-stats-portal-data-analytics-quest.png
+preview: images/previews/forging-the-stats-portal-data-analytics-quest.webp
 primary_technology: jekyll
 quest_arc: Data Analytics Arc
 quest_dependencies:

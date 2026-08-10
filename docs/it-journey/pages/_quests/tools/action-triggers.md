@@ -27,7 +27,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/action-triggers/
-preview: images/previews/understanding-action-triggers-in-depth.png
+preview: images/previews/understanding-action-triggers-in-depth.webp
 primary_technology: automation
 quest_series: Tools Collection
 quest_type: main_quest

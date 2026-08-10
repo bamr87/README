@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 106ed54fca9c76e7
+source_fingerprint: 2b01e2e4e6e5320f
 tags:
   - automation
   - bash
@@ -30,7 +30,7 @@ tags:
 ## Signals
 
 - has CLAUDE.md agent guidance
-- ~16,757 words across 15 indexed documents
+- ~17,311 words across 15 indexed documents
 - code samples in: bash, plaintext, yaml
 
 ## Structure

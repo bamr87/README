@@ -37,7 +37,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Text editor with Markdown preview (VS Code recommended)
-preview: images/previews/markdown-mastery-content-formatting-fundamentals-d.png
+preview: images/previews/markdown-mastery-content-formatting-fundamentals-d.webp
 primary_technology: markdown
 quest_arc: Documentation Mastery Arc
 quest_dependencies:

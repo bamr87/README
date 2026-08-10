@@ -26,7 +26,7 @@ permalink: /quests/0001/personal-site/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/personal-site.png
+preview: images/previews/personal-site.webp
 primary_technology: Personal Site
 quest_arc: Personal portfolio arc
 quest_dependencies:

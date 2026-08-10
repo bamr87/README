@@ -31,7 +31,7 @@ prerequisites:
   system_requirements:
   - Computer with internet access for research
   - Note-taking tool (digital or physical)
-preview: images/previews/character-selection.png
+preview: images/previews/character-selection.webp
 primary_technology: character-selection
 quest_arc: Character Creation Arc
 quest_dependencies:

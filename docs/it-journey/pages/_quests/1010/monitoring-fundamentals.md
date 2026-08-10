@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A terminal and a text editor or IDE (VS Code recommended)
   - Optional Docker for the hands-on lab
-preview: images/previews/monitoring-fundamentals-metrics-logs-quest-title-t.png
+preview: images/previews/monitoring-fundamentals-metrics-logs-quest-title-t.webp
 primary_technology: observability
 quest_arc: Eyes on the Realm
 quest_dependencies:

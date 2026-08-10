@@ -39,7 +39,7 @@ prerequisites:
 - Basic terminal/command-line knowledge
 - Internet connection for downloading fonts
 - Administrative privileges for font installation
-preview: images/previews/nerd-font-enchantment-terminal-icon-mastery.png
+preview: images/previews/nerd-font-enchantment-terminal-icon-mastery.webp
 primary_technology: binary-level-indicator
 quest_series: Terminal Mastery Path
 quest_type: side_quest

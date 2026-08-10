@@ -37,7 +37,7 @@ prerequisites:
 - Python fundamentals (file I/O, functions)
 - GitHub account with repository creation permissions
 - 'Completed: [Hello n00b](../0000/hello-noob.md) quest'
-preview: images/previews/the-knowledge-vault-building-an-automated-document.png
+preview: images/previews/the-knowledge-vault-building-an-automated-document.webp
 primary_technology: GitHub Actions
 quest_series: Automation Mastery
 quest_type: main_quest

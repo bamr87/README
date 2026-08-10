@@ -9,7 +9,7 @@ draft: false
 lastmod: '2026-05-23T00:00:00.000Z'
 layout: default
 permalink: /quests/inventory/
-preview: /images/previews/inventory-learner-collection-tracker.png
+preview: /images/previews/inventory-learner-collection-tracker.webp
 sidebar:
   nav: quests
 source_file: README.md

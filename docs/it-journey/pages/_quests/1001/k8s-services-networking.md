@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-services-quest-title-networking-ingress.png
+preview: images/previews/kubernetes-services-quest-title-networking-ingress.webp
 primary_technology: kubernetes
 quest_arc: Roads, Gates, and the Naming of Things
 quest_dependencies:

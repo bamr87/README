@@ -7,8 +7,9 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 67722ebc52445e72
+source_fingerprint: d94fb4d01adb2bbf
 tags:
+  - accessibility
   - ai
   - automation
   - bootstrap
@@ -20,7 +21,6 @@ tags:
   - installation
   - jekyll
   - navigation
-  - setup
 ---
 
 # zer0-mistakes
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 504 docs |
+| Corpus | `docs/zer0-mistakes` - 676 docs |
 | External | no |
 
 ## Signals
@@ -43,19 +43,19 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~439,712 words across 504 indexed documents
-- code samples in: bash, yaml, html, plaintext, liquid, text, markdown, javascript
+- ~528,214 words across 676 indexed documents
+- code samples in: bash, yaml, html, liquid, plaintext, text, markdown, javascript
 
 ## Structure
 
 - `pages/` (207 docs)
-- `docs/` (107 docs)
-- `fr/` (50 docs)
+- `fr/` (165 docs)
+- `docs/` (108 docs)
+- `examples/` (52 docs)
 - `.github/` (45 docs)
-- `test/` (31 docs)
-- `.claude/` (17 docs)
+- `test/` (33 docs)
+- `.claude/` (19 docs)
 - `templates/` (11 docs)
-- `.cursor/` (8 docs)
 
 ## Key documents
 

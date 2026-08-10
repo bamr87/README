@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - SQLite (bundled with Python) or DuckDB for the columnar demo
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/data-warehousing-descriptive-subtitle.png
+preview: images/previews/data-warehousing-descriptive-subtitle.webp
 primary_technology: sql
 quest_arc: Building the Analytical Citadel
 quest_dependencies:

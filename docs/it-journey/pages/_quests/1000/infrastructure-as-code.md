@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Terraform (or the OpenTofu drop-in) installed
   - A cloud account with credentials configured (AWS Free Tier works well)
-preview: images/previews/infrastructure-as-code-terraform-quest-title-cloud.png
+preview: images/previews/infrastructure-as-code-terraform-quest-title-cloud.webp
 primary_technology: terraform
 quest_arc: The Automation Forge
 quest_dependencies:

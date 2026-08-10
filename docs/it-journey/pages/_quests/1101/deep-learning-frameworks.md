@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM; a GPU is optional but speeds up training
-preview: images/previews/deep-learning-frameworks-descriptive-subtitle.png
+preview: images/previews/deep-learning-frameworks-descriptive-subtitle.webp
 primary_technology: pytorch
 quest_arc: Forging the Deep Engines
 quest_dependencies:

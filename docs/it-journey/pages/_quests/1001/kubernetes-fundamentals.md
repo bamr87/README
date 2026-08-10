@@ -41,7 +41,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker Desktop or a container runtime installed
   - kubectl and a local cluster tool (kind, minikube, or k3d)
-preview: images/previews/kubernetes-fundamentals-container-orchestration-de.png
+preview: images/previews/kubernetes-fundamentals-container-orchestration-de.webp
 primary_technology: kubernetes
 quest_arc: Foundations of the Cluster
 quest_dependencies:

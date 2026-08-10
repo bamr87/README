@@ -22,7 +22,7 @@ learning_style: reading
 level: '0000'
 mermaid: true
 permalink: /quests/[LEVEL]/
-preview: /images/previews/level-binary-decimal-level-name.png - Concise description
+preview: /images/previews/level-binary-decimal-level-name.webp - Concise description
   of what this level covers and its role in the learning journey
 primary_technology: template
 quest_series: Quest Templates

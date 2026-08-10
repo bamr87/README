@@ -41,7 +41,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/bootstrap-framework-responsive-design-toolkit-desc.png
+preview: images/previews/bootstrap-framework-responsive-design-toolkit-desc.webp
 primary_technology: bootstrap
 quest_arc: Forging Your First Website
 quest_dependencies:

@@ -27,7 +27,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/branches-and-pull-requests/
-preview: images/previews/mastering-branches-and-pull-requests-for-developer.png
+preview: images/previews/mastering-branches-and-pull-requests-for-developer.webp
 primary_technology: Collaboration
 quest_series: Tools Collection
 quest_type: main_quest

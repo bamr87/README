@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (Windows 10+, macOS 10.14+, or Linux)
   - Admin privileges on your system
   - Internet connection for extension downloads
-preview: images/previews/vs-code-mastery-quest-forge-your-ultimate-developm.png
+preview: images/previews/vs-code-mastery-quest-forge-your-ultimate-developm.webp
 primary_technology: vscode
 quest_arc: Tool Mastery Arc
 quest_dependencies:

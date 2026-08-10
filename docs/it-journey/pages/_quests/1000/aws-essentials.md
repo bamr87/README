@@ -40,7 +40,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - An AWS account (the Free Tier covers everything in this quest)
   - The AWS CLI v2 installed and configured
-preview: images/previews/aws-essentials-core-services-quest-title-architect.png
+preview: images/previews/aws-essentials-core-services-quest-title-architect.webp
 primary_technology: aws
 quest_arc: The AWS Citadel
 quest_dependencies:
