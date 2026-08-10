@@ -16,7 +16,7 @@ tags:
 
 # Wargames
 
-> OverTheWire wargame guides and security-challenge documentation (external reference corpus). The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
+> OverTheWire wargame guides and security-challenge documentation (external reference corpus; upstream of bamr87/wargames). The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
 
 | | |
 |---|---|

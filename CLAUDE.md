@@ -17,14 +17,17 @@ Everything flows left-to-right; each stage's output is the next stage's input. S
 | 1. Aggregate | `repos.txt` (generated from registry) | `temp/` → `raw_docs/` | `scripts/aggregate.sh` + `scripts/aggregate.py` |
 | 2. Process | `raw_docs/` | `docs/{project}/` + YAML frontmatter | `scripts/process.py` |
 | 3. Validate / fix | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` → `lint_docs.py`, `check_frontmatter.py`, `--apply` fixers |
-| 4. Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
+| 4. Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` (both **gitignored**) | `generate_docs_index.py`, `generate_docs_report.py` |
 | 5. Distill (engine) | corpus + `_data/projects.yml` | `context/` pyramid + README AUTO span + `docs/index.md` | `python3 -m scripts.context_engine build` |
 | 6. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
 
 ### Source of truth and generated surfaces
 
 - **`_data/projects.yml` is the fleet registry** — the only hand-edited definition of what the engine describes. `repos.txt` is *generated* from it (`context_engine sync`).
-- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md`), `repos.txt`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
+- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md`), `repos.txt`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild. The one exception is `docs/wargames/index.md`, a hand-written landing page nothing regenerates.
+- **Generated, and not committed**: `docs/docs_index.json` (was 11 MB of churn) and `docs/results/*.json`. CI regenerates them each run; `extractor.py` falls back to scanning the corpus when the index is absent.
+- **Aggregation fails loudly** (`scripts/aggregate.sh`): a dead clone URL, a zero-file result, or a corpus that shrinks below `COVERAGE_FLOOR_PCT` (default 50%) aborts the run before `docs/` is touched. Clone failures used to be swallowed — `bamr87/skills` 404'd for months while the workflow stayed green. Each successfully aggregated repo's `docs/<repo>/` is replaced wholesale, so upstream deletions propagate.
+- **Agent config is never aggregated**: `CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`, `.github/{instructions,prompts,agents}/**`, `.claude/**`. A stale second copy of another repo's agent instructions, published here, misdirects agents.
 - The pyramid: `docs/` (L3 corpus) → `context/facts/*.json` (L2) → `context/cards/*.md` (L1) → `context/README.md` (L0 apex, mirrored to `docs/index.md` for the published site).
 
 ### The context engine (`scripts/context_engine/`)

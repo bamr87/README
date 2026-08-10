@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 00f0728b6fdad07b
+source_fingerprint: 82037ae25cf106ec
 tags:
   - agentic-ai
   - automation
@@ -33,40 +33,38 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1031 docs |
+| Corpus | `docs/it-journey` - 963 docs |
 | External | no |
 
 ## Signals
 
-- has CLAUDE.md agent guidance
-- has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,623,950 words across 1031 indexed documents
-- code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
+- ~1,559,240 words across 963 indexed documents
+- code samples in: bash, plaintext, yaml, powershell, python, markdown, mermaid, text
 
 ## Structure
 
-- `pages/` (616 docs)
+- `pages/` (615 docs)
 - `test/` (132 docs)
 - `.cms/` (55 docs)
-- `.github/` (43 docs)
 - `redirects/` (43 docs)
 - `docs/` (32 docs)
-- `.claude/` (28 docs)
 - `TODO/` (25 docs)
+- `scripts/` (12 docs)
+- `_data/` (8 docs)
 
 ## Key documents
 
 - [`README.md`](../../docs/it-journey/README.md)
-- [`CLAUDE.md`](../../docs/it-journey/CLAUDE.md)
-- [`AGENTS.md`](../../docs/it-journey/AGENTS.md)
 - [`CONTRIBUTING.md`](../../docs/it-journey/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/it-journey/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/it-journey/SECURITY.md)
 - [`CODE_OF_CONDUCT.md`](../../docs/it-journey/CODE_OF_CONDUCT.md)
-- [`.github/copilot-instructions.md`](../../docs/it-journey/.github/copilot-instructions.md)
+- [`pages/_quests/NETWORK_REPORT.md`](../../docs/it-journey/pages/_quests/NETWORK_REPORT.md)
+- [`pages/_notes/html_md_doc_scrapper.md`](../../docs/it-journey/pages/_notes/html_md_doc_scrapper.md)
+- [`pages/_notebooks/html_md_doc_scrapper.md`](../../docs/it-journey/pages/_notebooks/html_md_doc_scrapper.md)
 
 ## Query this context
 

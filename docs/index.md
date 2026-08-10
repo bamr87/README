@@ -15,31 +15,31 @@ from the fleet registry by the README context engine.
 
 ### [scripts directory](scripts/README.md)
 
-Automation scripts for forking, linting, stashing, and project management across the fleet. *(15 documents)*
+Automation scripts for forking, linting, stashing, and project management across the fleet. *(14 documents)*
 
-### [Agent Skills](skills/README.md)
+### [skills](https://github.com/microsoft/skills)
 
-Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents)*
+Microsoft Agent Skills — reusable markdown skills, MCP servers, and custom agents used to ground coding agents across the fleet. *(not aggregated here — see the upstream repository)*
 
 ### [Barodybroject](barodybroject/README.md)
 
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(303 documents)*
+Full-stack application platform with infrastructure, testing, and deployment tooling. *(283 documents)*
 
 ### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45 documents)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(40 documents)*
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(504 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(455 documents)*
 
 ### [IT-Journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1031 documents)*
+Educational IT platform with quests, blog posts, and technical documentation. *(963 documents)*
 
 ### [Wargames](OverTheWire-website/README.md)
 
-OverTheWire wargame guides and security-challenge documentation (external reference corpus). *(232 documents)*
+OverTheWire wargame guides and security-challenge documentation (external reference corpus; upstream of bamr87/wargames). *(232 documents)*
 
 ---
 

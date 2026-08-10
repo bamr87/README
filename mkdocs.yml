@@ -108,7 +108,6 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Scripts: scripts/README.md
-  - Skills: skills/README.md
   - Barody Project: barodybroject/README.md
   - Bash Crawl: bashcrawl/README.md
   - Zer0 Mistakes: zer0-mistakes/README.md

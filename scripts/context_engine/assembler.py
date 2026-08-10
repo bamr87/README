@@ -128,8 +128,12 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
             + (f" (branch `{project.branch}`)" if project.branch else ""),
             f"- Card: [context/cards/{project.name}.md](cards/{project.name}.md)"
             f" · Facts: [context/facts/{project.name}.json](facts/{project.name}.json)",
-            f"- Corpus: [`docs/{project.name}/`](../docs/{project.name}/)"
-            f" ({corpus.get('file_count', 0)} documents)",
+            (
+                f"- Corpus: [`docs/{project.name}/`](../docs/{project.name}/)"
+                f" ({corpus.get('file_count', 0)} documents)"
+                if corpus.get("file_count")
+                else "- Corpus: not aggregated here (see the repository above)"
+            ),
         ]
         topics = (facts.get("project") or {}).get("topics") or project.topics
         if topics:
@@ -196,12 +200,20 @@ def build_site_index(registry: Registry, facts_by_name: Dict[str, Dict]) -> str:
         facts = facts_by_name.get(project.name, {})
         identity = facts.get("identity") or {}
         corpus = facts.get("corpus") or {}
-        target = f"{project.name}/{identity.get('readme', '')}".rstrip("/")
+        file_count = corpus.get("file_count", 0)
+        if file_count:
+            target = f"{project.name}/{identity.get('readme', '')}".rstrip("/")
+            note = f" *({file_count} documents)*"
+        else:
+            # Registered but not aggregated (`aggregate: false`, or not crawled
+            # yet). Link upstream: a docs/<name>/ link would be a dead link on
+            # the published site.
+            target = project.url
+            note = " *(not aggregated here — see the upstream repository)*"
         lines += [
             f"### [{identity.get('title') or project.name}]({target})",
             "",
-            (_short_summary(facts, 240) or "(no summary yet)")
-            + f" *({corpus.get('file_count', 0)} documents)*",
+            (_short_summary(facts, 240) or "(no summary yet)") + note,
             "",
         ]
     lines += [

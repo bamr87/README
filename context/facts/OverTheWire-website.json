@@ -30,7 +30,7 @@
     "external": true,
     "kind": "site",
     "name": "OverTheWire-website",
-    "registry_description": "OverTheWire wargame guides and security-challenge documentation (external reference corpus).",
+    "registry_description": "OverTheWire wargame guides and security-challenge documentation (external reference corpus; upstream of bamr87/wargames).",
     "repo": "OverTheWireOrg/OverTheWire-website",
     "status": "active",
     "topics": [

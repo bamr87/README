@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 303,
-    "fingerprint": "d935ff046fd09e17",
+    "file_count": 283,
+    "fingerprint": "d5f916eda1916a84",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 2017889
+    "total_bytes": 1740140
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -25,10 +25,10 @@
     "CONTRIBUTING.md",
     "CHANGELOG.md",
     "PRD.md",
-    ".github/instructions/test.instructions.md",
     "README/scripts/README.md",
-    ".github/instructions/languages.instructions.md",
-    "docs/SECURITY_DOCUMENTATION.md"
+    "docs/SECURITY_DOCUMENTATION.md",
+    "docs/configuration/settings-optimization.md",
+    "TODO.md"
   ],
   "project": {
     "branch": null,
@@ -48,19 +48,19 @@
   },
   "rollups": {
     "categories": {
-      "barodybroject": 304
+      "barodybroject": 284
     },
     "code_languages": [
       "bash",
       "python",
-      "yaml",
       "plaintext",
       "django",
-      "markdown",
+      "yaml",
       "html",
+      "text",
       "javascript"
     ],
-    "indexed_documents": 304,
+    "indexed_documents": 284,
     "top_tags": [
       "index",
       "agricultural technology",
@@ -78,7 +78,7 @@
       "racial marginalization",
       "socio-economic marginalization"
     ],
-    "total_words": 226006
+    "total_words": 195859
   },
   "schema_version": "1.0",
   "signals": {
@@ -102,11 +102,11 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 123,
+        "doc_count": 122,
         "name": "src"
       },
       {
-        "doc_count": 73,
+        "doc_count": 72,
         "name": "README"
       },
       {
@@ -114,7 +114,7 @@
         "name": "docs"
       },
       {
-        "doc_count": 35,
+        "doc_count": 17,
         "name": ".github"
       },
       {

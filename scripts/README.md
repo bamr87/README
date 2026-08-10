@@ -217,17 +217,26 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 **Features**:
 - Reads repository URLs from `repos.txt`
-- Clones new repositories or pulls updates for existing ones
+- Clones each repository shallowly (`--depth 1`) into a throwaway `temp/` checkout
 - Extracts markdown files while skipping `.git` directories
+- Skips agent-configuration files (see below)
+- Replaces each aggregated repo's corpus wholesale, so files deleted upstream stop being published
 - Sets up Python virtual environment with required dependencies
 - Invokes `process.py` for documentation processing
+
+**Fails loudly**: a repo that cannot be cloned, that yields zero files, or whose file count falls below `COVERAGE_FLOOR_PCT` (default 50) of the corpus already committed under `docs/<repo>/` is a hard error. The script exits non-zero *before* touching `docs/`, leaving the corpus at its last known-good state. This is deliberate: the previous version swallowed clone failures, so a source URL that had 404'd for months kept the workflow green while the site published a frozen copy of a repo that no longer existed.
+
+**Never aggregated**: `CLAUDE.md`, `AGENTS.md`, `.github/copilot-instructions.md`, and anything under `.github/instructions/`, `.github/prompts/`, `.github/agents/`, or `.claude/`. These are instructions addressed to agents working *in the source repo*; a second copy republished here — necessarily stale between runs — misdirects any agent that reads it.
 
 **Usage**:
 ```bash
 ./scripts/aggregate.sh
+
+# Loosen the coverage assertion for a repo that legitimately shrank
+COVERAGE_FLOOR_PCT=10 ./scripts/aggregate.sh
 ```
 
-**Input**: `repos.txt` (one repository URL per line, supports comments with `#`)
+**Input**: `repos.txt` (one repository URL per line, supports comments with `#`) — generated from `_data/projects.yml`; edit the registry and run `python3 -m scripts.context_engine sync`, never `repos.txt` itself
 
 **Output Directories**:
 - `temp/` - Temporary clone directory (cleaned up after processing)

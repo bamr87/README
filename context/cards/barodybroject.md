@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: d935ff046fd09e17
+source_fingerprint: d5f916eda1916a84
 tags:
   - agricultural technology
   - azure
@@ -33,22 +33,22 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 303 docs |
+| Corpus | `docs/barodybroject` - 283 docs |
 | External | no |
 
 ## Signals
 
 - has a contribution guide
 - keeps a changelog
-- ~226,006 words across 304 indexed documents
-- code samples in: bash, python, yaml, plaintext, django, markdown, html, javascript
+- ~195,859 words across 284 indexed documents
+- code samples in: bash, python, plaintext, django, yaml, html, text, javascript
 
 ## Structure
 
-- `src/` (123 docs)
-- `README/` (73 docs)
+- `src/` (122 docs)
+- `README/` (72 docs)
 - `docs/` (48 docs)
-- `.github/` (35 docs)
+- `.github/` (17 docs)
 - `.vscode/` (6 docs)
 - `infra/` (5 docs)
 - `scripts/` (2 docs)
@@ -60,10 +60,10 @@ tags:
 - [`CONTRIBUTING.md`](../../docs/barodybroject/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/barodybroject/CHANGELOG.md)
 - [`PRD.md`](../../docs/barodybroject/PRD.md)
-- [`.github/instructions/test.instructions.md`](../../docs/barodybroject/.github/instructions/test.instructions.md)
 - [`README/scripts/README.md`](../../docs/barodybroject/README/scripts/README.md)
-- [`.github/instructions/languages.instructions.md`](../../docs/barodybroject/.github/instructions/languages.instructions.md)
 - [`docs/SECURITY_DOCUMENTATION.md`](../../docs/barodybroject/docs/SECURITY_DOCUMENTATION.md)
+- [`docs/configuration/settings-optimization.md`](../../docs/barodybroject/docs/configuration/settings-optimization.md)
+- [`TODO.md`](../../docs/barodybroject/TODO.md)
 
 ## Query this context
 

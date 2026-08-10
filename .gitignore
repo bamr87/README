@@ -5,6 +5,15 @@ raw_docs/
 # MkDocs build output
 site/
 
+# Generated corpus artifacts. Rebuilt by the pipeline on every run
+# (generate_docs_index.py / generate_docs_report.py), so committing them only
+# churns the history -- docs_index.json alone was 11 MB of generated JSON.
+# Consumers treat them as optional: scripts/context_engine/extractor.py falls
+# back to scanning the corpus when the index is absent.
+docs/docs_index.json
+docs/results/*.json
+docs/results/pr_comment.md
+
 # Script output files
 output/temp/
 output/analysis/*.json

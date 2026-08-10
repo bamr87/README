@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1031,
-    "fingerprint": "00f0728b6fdad07b",
+    "file_count": 963,
+    "fingerprint": "82037ae25cf106ec",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 12883682
+    "total_bytes": 12382129
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -26,13 +26,13 @@
   },
   "key_docs": [
     "README.md",
-    "CLAUDE.md",
-    "AGENTS.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
     "SECURITY.md",
     "CODE_OF_CONDUCT.md",
-    ".github/copilot-instructions.md"
+    "pages/_quests/NETWORK_REPORT.md",
+    "pages/_notes/html_md_doc_scrapper.md",
+    "pages/_notebooks/html_md_doc_scrapper.md"
   ],
   "project": {
     "branch": null,
@@ -51,19 +51,19 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1031
+      "it-journey": 963
     },
     "code_languages": [
       "bash",
       "plaintext",
       "yaml",
-      "markdown",
       "powershell",
       "python",
+      "markdown",
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1031,
+    "indexed_documents": 963,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -81,22 +81,20 @@
       "level-0001",
       "web-fundamentals"
     ],
-    "total_words": 1623950
+    "total_words": 1559240
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": true,
+    "has_agents_md": false,
     "has_changelog": true,
-    "has_claude_md": true,
+    "has_claude_md": false,
     "has_contributing": true,
     "has_schema_md": false,
     "has_security_policy": true
   },
   "structure": {
     "root_docs": [
-      "AGENTS.md",
       "CHANGELOG.md",
-      "CLAUDE.md",
       "CODE_OF_CONDUCT.md",
       "CONTRIBUTING.md",
       "PRD.md",
@@ -108,7 +106,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 616,
+        "doc_count": 615,
         "name": "pages"
       },
       {
@@ -121,19 +119,11 @@
       },
       {
         "doc_count": 43,
-        "name": ".github"
-      },
-      {
-        "doc_count": 43,
         "name": "redirects"
       },
       {
         "doc_count": 32,
         "name": "docs"
-      },
-      {
-        "doc_count": 28,
-        "name": ".claude"
       },
       {
         "doc_count": 25,
@@ -146,6 +136,14 @@
       {
         "doc_count": 8,
         "name": "_data"
+      },
+      {
+        "doc_count": 6,
+        "name": ".crush"
+      },
+      {
+        "doc_count": 6,
+        "name": ".github"
       }
     ]
   }

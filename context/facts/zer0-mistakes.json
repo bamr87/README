@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 504,
-    "fingerprint": "67722ebc52445e72",
+    "file_count": 455,
+    "fingerprint": "38e9f2e037e1eb1d",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 3630239
+    "total_bytes": 3321526
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -26,13 +26,13 @@
   },
   "key_docs": [
     "README.md",
-    "CLAUDE.md",
-    "AGENTS.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
     "SECURITY.md",
     "CODE_OF_CONDUCT.md",
-    "docs/architecture/ui-components.md"
+    "docs/architecture/ui-components.md",
+    ".github/seed/seed.implementation.md",
+    ".github/seed/seed.prompt.md"
   ],
   "project": {
     "branch": null,
@@ -51,7 +51,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 504
+      "zer0-mistakes": 455
     },
     "code_languages": [
       "bash",
@@ -60,10 +60,10 @@
       "plaintext",
       "liquid",
       "text",
-      "markdown",
-      "javascript"
+      "javascript",
+      "markdown"
     ],
-    "indexed_documents": 504,
+    "indexed_documents": 455,
     "top_tags": [
       "jekyll",
       "automation",
@@ -81,22 +81,20 @@
       "installation",
       "deployment"
     ],
-    "total_words": 439712
+    "total_words": 401039
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": true,
+    "has_agents_md": false,
     "has_changelog": true,
-    "has_claude_md": true,
+    "has_claude_md": false,
     "has_contributing": true,
     "has_schema_md": false,
     "has_security_policy": true
   },
   "structure": {
     "root_docs": [
-      "AGENTS.md",
       "CHANGELOG.md",
-      "CLAUDE.md",
       "CODE_OF_CONDUCT.md",
       "CONTRIBUTING.md",
       "README.md",
@@ -116,16 +114,12 @@
         "name": "fr"
       },
       {
-        "doc_count": 45,
-        "name": ".github"
-      },
-      {
         "doc_count": 31,
         "name": "test"
       },
       {
         "doc_count": 17,
-        "name": ".claude"
+        "name": ".github"
       },
       {
         "doc_count": 11,
@@ -136,12 +130,16 @@
         "name": ".cursor"
       },
       {
-        "doc_count": 8,
+        "doc_count": 6,
         "name": "scripts"
       },
       {
         "doc_count": 3,
         "name": ".issues"
+      },
+      {
+        "doc_count": 3,
+        "name": "_includes"
       }
     ]
   }

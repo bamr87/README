@@ -10,7 +10,7 @@ tags:
 
 # Wargames & Security Challenges
 
-This section contains documentation aggregated from wargame and security challenge repositories.
+This is a hand-written landing page, not aggregated output — it is the one page under `docs/` the pipeline does not generate. The walkthroughs themselves live in the [OverTheWire](../OverTheWire-website/README.md) section, aggregated from the upstream [OverTheWireOrg/OverTheWire-website](https://github.com/OverTheWireOrg/OverTheWire-website) repository (`gh-pages` branch, MIT). That repo is registered in `_data/projects.yml` as an `external` reference corpus: the fleet's own `bamr87/wargames` repo vendors a curated subset of the same material, so the upstream is crawled here rather than the fork, and it is intentionally not one of the hub's submodules.
 
 ## OverTheWire Wargames
 
@@ -31,4 +31,4 @@ The [OverTheWire](https://overthewire.org/wargames/) wargames help you learn and
 | **Drifter** | Advanced Linux exploitation |
 | **FormulaOne** | Race condition exploitation |
 
-Browse the subdirectories for level-by-level documentation.
+Browse the [OverTheWire](../OverTheWire-website/README.md) section for the level-by-level documentation.

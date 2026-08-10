@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 45,
-    "fingerprint": "e9b52fd66f3a0919",
+    "file_count": 40,
+    "fingerprint": "d22c7133be98478c",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 518058
+    "total_bytes": 394271
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -20,13 +20,13 @@
   },
   "key_docs": [
     "README.md",
-    "CLAUDE.md",
     "CHANGELOG.md",
     "docs/demo-walkthrough.md",
-    ".github/instructions/scrolls.instructions.md",
     "docs/log-viewer-reference.md",
     "docs/demo-critical-path.md",
-    "docs/walkthrough.md"
+    "docs/walkthrough.md",
+    "docs/logging-framework-plan.md",
+    "docs/viewer.md"
   ],
   "project": {
     "branch": null,
@@ -45,27 +45,27 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 45
+      "bashcrawl": 40
     },
     "code_languages": [
       "bash",
       "plaintext",
       "json",
-      "yaml",
       "python",
       "text",
       "js",
-      "markdown"
+      "markdown",
+      "gitignore"
     ],
-    "indexed_documents": 45,
+    "indexed_documents": 40,
     "top_tags": [],
-    "total_words": 58424
+    "total_words": 47507
   },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": false,
     "has_changelog": true,
-    "has_claude_md": true,
+    "has_claude_md": false,
     "has_contributing": false,
     "has_schema_md": false,
     "has_security_policy": false
@@ -73,7 +73,6 @@
   "structure": {
     "root_docs": [
       "CHANGELOG.md",
-      "CLAUDE.md",
       "README.md"
     ],
     "top_dirs": [
@@ -86,16 +85,16 @@
         "name": "src"
       },
       {
-        "doc_count": 5,
-        "name": ".github"
-      },
-      {
         "doc_count": 3,
         "name": "entrance"
       },
       {
         "doc_count": 1,
         "name": ".archives"
+      },
+      {
+        "doc_count": 1,
+        "name": ".github"
       },
       {
         "doc_count": 1,

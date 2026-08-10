@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 67722ebc52445e72
+source_fingerprint: 38e9f2e037e1eb1d
 tags:
   - ai
   - automation
@@ -33,40 +33,38 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 504 docs |
+| Corpus | `docs/zer0-mistakes` - 455 docs |
 | External | no |
 
 ## Signals
 
-- has CLAUDE.md agent guidance
-- has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~439,712 words across 504 indexed documents
-- code samples in: bash, yaml, html, plaintext, liquid, text, markdown, javascript
+- ~401,039 words across 455 indexed documents
+- code samples in: bash, yaml, html, plaintext, liquid, text, javascript, markdown
 
 ## Structure
 
 - `pages/` (207 docs)
 - `docs/` (107 docs)
 - `fr/` (50 docs)
-- `.github/` (45 docs)
 - `test/` (31 docs)
-- `.claude/` (17 docs)
+- `.github/` (17 docs)
 - `templates/` (11 docs)
 - `.cursor/` (8 docs)
+- `scripts/` (6 docs)
 
 ## Key documents
 
 - [`README.md`](../../docs/zer0-mistakes/README.md)
-- [`CLAUDE.md`](../../docs/zer0-mistakes/CLAUDE.md)
-- [`AGENTS.md`](../../docs/zer0-mistakes/AGENTS.md)
 - [`CONTRIBUTING.md`](../../docs/zer0-mistakes/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/zer0-mistakes/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/zer0-mistakes/SECURITY.md)
 - [`CODE_OF_CONDUCT.md`](../../docs/zer0-mistakes/CODE_OF_CONDUCT.md)
 - [`docs/architecture/ui-components.md`](../../docs/zer0-mistakes/docs/architecture/ui-components.md)
+- [`.github/seed/seed.implementation.md`](../../docs/zer0-mistakes/.github/seed/seed.implementation.md)
+- [`.github/seed/seed.prompt.md`](../../docs/zer0-mistakes/.github/seed/seed.prompt.md)
 
 ## Query this context
 

@@ -47,13 +47,22 @@ projects:
       management across the fleet.
     topics: [automation, bash, python]
 
+  # `bamr87/skills` was a fork that has since been deleted; the URL 404'd for
+  # months while aggregation reported success and the site kept publishing a
+  # frozen copy of it. The fleet actually tracks the upstream microsoft/skills
+  # (see the hub registry), so the URL is corrected here — but the repo is not
+  # aggregated: its corpus is ~1,500 agent-instruction files authored by
+  # someone else, exactly the content a second, stale mirror makes misleading.
+  # The project stays registered so the context engine and MCP still list it.
   - name: skills
-    repo: bamr87/skills
-    url: https://github.com/bamr87/skills
+    repo: microsoft/skills
+    url: https://github.com/microsoft/skills
     kind: docs
+    external: true
+    aggregate: false
     description: >-
-      Agent skills — prompts, MCP configurations, and AI development
-      patterns.
+      Microsoft Agent Skills — reusable markdown skills, MCP servers, and
+      custom agents used to ground coding agents across the fleet.
     topics: [ai, agents, mcp, prompts]
 
   - name: barodybroject
@@ -91,6 +100,13 @@ projects:
       documentation.
     topics: [education, jekyll, quests]
 
+  # Deliberately aggregated, and deliberately NOT a hub submodule: this is the
+  # upstream, MIT-licensed source of the wargame walkthroughs that the fleet's
+  # own `bamr87/wargames` repo vendors a curated subset of. It is registered
+  # here (not in the hub's .gitmodules) because the hub tracks repos it works
+  # in, while this repo also crawls read-only reference corpora. Its published
+  # section is the `OverTheWire` nav entry; `docs/wargames/index.md` is the
+  # hand-written landing page that explains the relationship.
   - name: OverTheWire-website
     repo: OverTheWireOrg/OverTheWire-website
     url: https://github.com/OverTheWireOrg/OverTheWire-website
@@ -99,5 +115,5 @@ projects:
     external: true
     description: >-
       OverTheWire wargame guides and security-challenge documentation
-      (external reference corpus).
+      (external reference corpus; upstream of bamr87/wargames).
     topics: [security, wargames, ctf]
