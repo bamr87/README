@@ -31,6 +31,14 @@ jobs:
           python-version: "3.x"
       - name: Check one paragraph per line
         run: |
+          # docs/ and context/ are GENERATED surfaces in this repo (see SCHEMA.md:
+          # "No hand edits to generated surfaces: context/, docs/, repos.txt").
+          # docs/ is the L3 corpus aggregated from the repos in repos.txt — including
+          # the external OverTheWireOrg/OverTheWire-website — so unwrapping prose
+          # there would edit a build artifact, be reverted by the next aggregation
+          # run, and diverge this mirror from its upstream. The house one-paragraph-
+          # per-line rule applies to the prose this repo actually authors.
           python3 tools/unwrap-prose.py --check \
             --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$' \
+            --exclude '^docs/' --exclude '^context/' \
           || { echo "::error::Wrapped markdown prose found. Run: python3 tools/unwrap-prose.py --write"; exit 1; }
