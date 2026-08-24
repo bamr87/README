@@ -11,6 +11,16 @@ description: Master API authentication including API keys, sessions versus token
   APIs.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Learn API keys, sessions vs tokens, JWT, OAuth2 flows, and scopes for securing
   APIs
@@ -147,7 +157,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +172,7 @@ curl -s -H "Authorization: Bearer $GITHUB_TOKEN" https://api.github.com/user | h
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -177,7 +187,7 @@ curl.exe -s -H "Authorization: Bearer $env:GITHUB_TOKEN" https://api.github.com/
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -192,7 +202,7 @@ curl -s -H "Authorization: Bearer $GITHUB_TOKEN" https://api.github.com/user | h
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

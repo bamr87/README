@@ -10,6 +10,16 @@ description: 'Master API documentation using OpenAPI and Swagger: write a contra
   spec, add request and response examples, and render live docs.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Learn OpenAPI and Swagger, contract-first design, examples, and documentation
   tooling
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ redocly build-docs openapi.yaml -o docs.html   # static HTML (or: redocly previe
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -177,7 +187,7 @@ redocly build-docs openapi.yaml -o docs.html   # or: redocly preview for a live 
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -190,7 +200,7 @@ redocly lint openapi.yaml && redocly build-docs openapi.yaml -o docs.html
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,18 @@ description: Build a Jekyll quest-tracking interface with dynamic filtering, col
   stats, and level-aware displays using Liquid templating and frontmatter.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: github
 estimated_time: 4-6 hours
 excerpt: Transform static Jekyll sites into dynamic quest-tracking portals using collections,
   Liquid templating, and JavaScript filtering

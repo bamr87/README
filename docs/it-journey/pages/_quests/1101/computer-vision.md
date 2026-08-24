@@ -10,6 +10,16 @@ description: 'Build computer vision models in PyTorch: learn convolutions, train
   for image classification, and fine-tune pretrained models with transfer learning.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Build computer vision models with convolutions, CNNs, image classification,
   and transfer learning
@@ -146,7 +156,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +172,7 @@ python -c "import torch, torchvision; print('torch', torch.__version__, 'mps', t
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -178,7 +188,7 @@ python -c "import torch, torchvision; print('torch', torch.__version__, 'cuda', 
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -194,7 +204,7 @@ python -c "import torch, torchvision; print('torch', torch.__version__, 'cuda', 
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

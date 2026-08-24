@@ -10,6 +10,16 @@ description: Master Kubernetes networking with Services, Ingress, and cluster DN
   choosing between ClusterIP, NodePort, and LoadBalancer to expose workloads.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Configure Kubernetes networking with Services, Ingress, and DNS for scalable
   applications
@@ -141,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ kubectl wait --namespace ingress-nginx --for=condition=ready pod \
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ kubectl wait --namespace ingress-nginx --for=condition=ready pod --selector=app.
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -185,7 +195,7 @@ kubectl create deployment web --image=nginx:1.27 --replicas=3
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -11,6 +11,16 @@ description: 'Master Liquid, the templating language behind Jekyll: variables, f
   loops, conditionals, includes, and layouts that render dynamic pages at build time.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Create dynamic content in Jekyll with Liquid - master variables, filters,
   and control flow.
@@ -146,7 +156,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -159,7 +169,7 @@ bundle exec jekyll serve --livereload
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -172,7 +182,7 @@ bundle exec jekyll serve --livereload
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -185,7 +195,7 @@ bundle exec jekyll serve --livereload
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

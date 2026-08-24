@@ -1,13 +1,21 @@
 ---
 applyTo: pages/_docs/**/*.md
 date: 2026-05-24 00:00:00+00:00
-description: 'Author IT-Journey docs collection entries: technical reference, cheatsheets,
-  and certification study material'
-lastmod: 2026-06-22 00:00:00+00:00
+description: RETIRED — the pages/_docs collection was removed; kept as historical
+  reference for the docs authoring standards
+lastmod: 2026-08-18 00:00:00+00:00
 source_file: docs.instructions.md
-title: Docs Collection — `pages/_docs/**`
+title: ⚠️ RETIRED — Docs Collection (`pages/_docs/**`)
 ---
-# Docs Collection — `pages/_docs/**`
+# ⚠️ RETIRED — Docs Collection (`pages/_docs/**`)
+
+> **This instruction file is RETIRED and governs nothing.** The `pages/_docs/` collection no longer exists in this repository and `_config.yml` does not declare a `docs` collection. The `applyTo` glob above matches zero files.
+>
+> **Do not author new content against this file.** Reference material now belongs in **quests** (`pages/_quests/`, see [`quest.instructions.md`](quest.instructions.md)) or, for short cheatsheet-style entries, in **notes** (`pages/_notes/`, see [`notes.instructions.md`](notes.instructions.md)).
+>
+> It is kept in place rather than deleted because roughly a dozen sibling instruction files, prompts, and `copilot-instructions.md` still link to it; deleting it would break those cross-references. Everything below is preserved verbatim as a record of the standards the collection used, in case the collection is ever restored.
+
+---
 
 Published reference library at `/docs/...`. Distinct from the repo-root `docs/` directory, which is developer-only and excluded from the Jekyll build. Permalink default in `_config.yml` is `/docs/:categories/:name/`.
 

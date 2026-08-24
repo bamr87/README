@@ -6,6 +6,14 @@ description: 'Build core IT skills hands-on: file management, operating systems,
   basics, scripting, cloud, containers, and Git version control.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
+  - powershell
+  variables:
+    project_dir: scripts
 estimated_time: 60-90 minutes
 excerpt: Learn the core principles of IT infrastructure, networking, and computing
 fmContentType: quest

@@ -10,6 +10,15 @@ description: Forge an ATS-friendly CV from the cv.tex template using VS Code and
   the toolchain, customize sections, compile, and export a polished PDF.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Craft a professional CV from the cv.tex template using VS Code + LaTeX—install,
   customize, compile, and validate.

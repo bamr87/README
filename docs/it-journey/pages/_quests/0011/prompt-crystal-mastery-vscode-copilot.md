@@ -11,6 +11,16 @@ description: 'Master prompt engineering for VS Code Copilot: structured RCTF pat
   few-shot and Chain-of-Thought prompting, and PDCA-driven refinement.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Transform from a casual Copilot user into a Prompt Crystal Forger—wielding
   precision-crafted prompts that unlock consistent, high-quality AI assistance in

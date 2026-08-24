@@ -10,6 +10,18 @@ description: Navigate the major security compliance frameworks - SOC 2, ISO 2700
   GDPR, and PCI-DSS - learning controls mapping, audit evidence, and audit prep.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: compliance
 estimated_time: 90-120 minutes
 excerpt: Master SOC 2, ISO 27001, GDPR, and PCI-DSS - controls, audit evidence, and
   audit readiness
@@ -140,7 +152,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -154,7 +166,7 @@ open -a "Numbers" controls-matrix.csv 2>/dev/null || cat controls-matrix.csv
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -168,7 +180,7 @@ Get-Content "$HOME\compliance\controls-matrix.csv"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -182,7 +194,7 @@ git init -q && git add controls-matrix.csv
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

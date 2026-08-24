@@ -10,6 +10,16 @@ description: 'Deploy the ELK stack for centralized logging: Elasticsearch indexi
   Logstash and Beats pipelines, and Kibana dashboards for distributed systems.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-150 minutes
 excerpt: Build centralized logging with Elasticsearch, Logstash pipelines, Beats shippers,
   and Kibana visualization
@@ -144,7 +154,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ docker compose version
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -175,7 +185,7 @@ docker compose version
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -191,7 +201,7 @@ echo 'vm.max_map_count=262144' | sudo tee /etc/sysctl.d/99-elasticsearch.conf
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

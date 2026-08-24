@@ -10,6 +10,16 @@ description: Build robust deployment pipelines for production releases. Learn en
   promotion, blue-green and canary deployments, approvals, and automated rollbacks.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Design and implement production-grade deployment pipelines with automated
   release strategies
@@ -143,7 +153,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -159,7 +169,7 @@ gh api repos/:owner/:repo/environments || echo "create environments in repo sett
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -175,7 +185,7 @@ gh api repos/:owner/:repo/environments
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -191,7 +201,7 @@ gh api repos/:owner/:repo/environments
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 This snippet assumes a `Dockerfile` already exists in the repo root. If you are starting from an empty repo, create a minimal one first so the `docker build` below has something to build:

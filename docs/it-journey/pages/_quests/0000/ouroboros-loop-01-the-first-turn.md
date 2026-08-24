@@ -11,6 +11,15 @@ description: 'Build your first autonomous loop from scratch: a tiny repo of runn
   ledger — the observe→check→record cycle every larger engine grows from.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 fmContentType: quest
 keywords:

@@ -10,6 +10,18 @@ description: Master the ancient art of bash scripting and unlock the power of au
   through command-line incantations and shell magic.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: bash-quest
 estimated_time: 90-120 minutes
 excerpt: Transform from a terminal novice into a bash scripting wizard through hands-on
   automation magic and command-line mastery.

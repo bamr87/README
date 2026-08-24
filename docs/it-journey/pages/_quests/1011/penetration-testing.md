@@ -10,6 +10,16 @@ description: 'Learn authorized, ethical penetration testing: defining scope, rec
   nmap scanning, web testing with Burp Suite and ZAP, and clear reporting.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-150 minutes
 excerpt: Master authorized, ethical penetration testing - recon, nmap, Burp, ZAP,
   and professional reporting
@@ -144,7 +154,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ docker run --rm -d -p 3000:3000 bkimminich/juice-shop
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -178,7 +188,7 @@ docker run --rm -d -p 3000:3000 bkimminich/juice-shop
 
 ### 🐧 Linux Territory Path (Kali recommended)
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -194,7 +204,7 @@ sudo docker run --rm -d -p 3000:3000 bkimminich/juice-shop
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

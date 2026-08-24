@@ -10,6 +10,16 @@ description: 'Wield SQL like a battle-mage against a real PostgreSQL database: S
   JOIN, GROUP BY, subqueries, views, indexes, and transactions turning data into answers.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Master the SQL incantations that retrieve, combine, aggregate, and protect
   relational data.
@@ -139,7 +149,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +163,7 @@ psql query_codex
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -166,7 +176,7 @@ psql query_codex
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +190,7 @@ sudo -u postgres psql query_codex
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

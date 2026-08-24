@@ -10,6 +10,16 @@ description: Guard against data loss with logical and physical backups, point-in
   recovery, RTO/RPO targets, and the restore drills that prove a backup actually works.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Master backup types, point-in-time recovery, RTO/RPO targets, and tested
   restore drills.
@@ -139,7 +149,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +163,7 @@ psql restoration_vault -c "CREATE TABLE treasure(id serial primary key, name tex
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -166,7 +176,7 @@ psql restoration_vault -c "CREATE TABLE treasure(id serial primary key, name tex
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +190,7 @@ sudo -u postgres psql restoration_vault -c "CREATE TABLE treasure(id serial prim
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

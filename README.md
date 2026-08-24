@@ -24,10 +24,10 @@ Every governed directory carries a `SCHEMA.md` (structure table + rules), mirror
 |---|---|---|---|---|
 | [scripts](context/cards/scripts.md) | tooling | active | 15 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [skills](context/cards/skills.md) | docs | active | 712 | Agent skills — prompts, MCP configurations, and AI development patterns. |
-| [barodybroject](context/cards/barodybroject.md) | app | active | 304 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
+| [barodybroject](context/cards/barodybroject.md) | app | active | 305 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
 | [bashcrawl](context/cards/bashcrawl.md) | game | active | 45 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [zer0-mistakes](context/cards/zer0-mistakes.md) | theme | active | 695 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [it-journey](context/cards/it-journey.md) | site | active | 1072 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](context/cards/zer0-mistakes.md) | theme | active | 706 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [it-journey](context/cards/it-journey.md) | site | active | 1091 | Educational IT platform with quests, blog posts, and technical documentation. |
 | [OverTheWire-website](context/cards/OverTheWire-website.md) | site | active | 232 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 <!-- AUTO:projects:end -->
 

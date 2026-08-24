@@ -23,7 +23,7 @@ Agent skills — prompts, MCP configurations, and AI development patterns. *(712
 
 ### [Barodybroject](barodybroject/README.md)
 
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(304 documents)*
+Full-stack application platform with infrastructure, testing, and deployment tooling. *(305 documents)*
 
 ### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
 
@@ -31,11 +31,11 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(695 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(706 documents)*
 
 ### [IT-Journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1072 documents)*
+Educational IT platform with quests, blog posts, and technical documentation. *(1091 documents)*
 
 ### [Wargames](OverTheWire-website/README.md)
 

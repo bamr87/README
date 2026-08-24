@@ -9,6 +9,11 @@ description: 'Dissect the IT-Journey platform stack: Jekyll and Ruby frontend, P
   automation, Docker, GitHub Actions CI/CD, and AI-powered content analysis.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
 estimated_time: 60-90 minutes
 fmContentType: quest
 keywords:

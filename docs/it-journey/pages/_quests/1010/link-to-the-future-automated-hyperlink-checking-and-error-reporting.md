@@ -10,6 +10,16 @@ description: Master the computational arts of automated link testing and AI-powe
   analysis to protect your digital realm from broken hyperlink corruption
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-180 minutes
 excerpt: Build an intelligent hyperlink guardian that automatically tests, analyzes,
   and reports on the health of your digital realm's connections

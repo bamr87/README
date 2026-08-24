@@ -11,6 +11,11 @@ description: Repurpose a decade-old desktop into an always-available Docker host
   honest limits of old silicon.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
 estimated_time: 90-120 minutes
 excerpt: Raise a retired PC from the closet and put it on the second shift as a wake-on-demand
   Docker home server.

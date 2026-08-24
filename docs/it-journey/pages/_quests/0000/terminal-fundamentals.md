@@ -10,6 +10,15 @@ description: Master essential command line skills including navigation, file man
   and basic shell commands across macOS, Linux, and Windows terminals.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Learn essential command line skills for navigating and managing files in
   any operating system.

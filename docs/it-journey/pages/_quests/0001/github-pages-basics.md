@@ -11,6 +11,16 @@ description: 'Publish a Jekyll site to the world with GitHub Pages: repository s
   the _config.yml url and baseurl, deployment, and wiring a custom domain.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Take your Jekyll site live for free with GitHub Pages - repo setup, config,
   and custom domains.
@@ -147,7 +157,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -165,7 +175,7 @@ gh repo create my-castle --public --source=. --push
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -183,7 +193,7 @@ gh repo create my-castle --public --source=. --push
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -201,7 +211,7 @@ gh repo create my-castle --public --source=. --push
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

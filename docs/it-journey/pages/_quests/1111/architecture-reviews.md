@@ -10,6 +10,16 @@ description: Run effective architecture and design reviews. Learn to facilitate 
   discussions, write Architecture Decision Records, and lead reviews without ego.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 3-4 hours
 excerpt: Facilitate design reviews, write ADRs, and lead trade-off discussions well
 fmContentType: quest
@@ -141,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -155,7 +165,7 @@ adr new "Use PostgreSQL for the primary datastore"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +179,7 @@ git add docs\adr; git commit -m "docs: start ADR log"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +193,7 @@ echo "# ADR-0001: Record architecture decisions" > docs/adr/0001-record-architec
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

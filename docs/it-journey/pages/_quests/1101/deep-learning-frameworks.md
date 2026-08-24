@@ -10,6 +10,16 @@ description: 'Compare PyTorch and TensorFlow hands-on: master tensors, autograd,
   building, the training loop, and GPU acceleration for production deep learning.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Master PyTorch and TensorFlow for production deep learning with GPU acceleration
 fmContentType: quest
@@ -146,7 +156,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +173,7 @@ python -c "import torch; print('torch', torch.__version__, 'mps', torch.backends
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -181,7 +191,7 @@ python -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -197,7 +207,7 @@ python -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

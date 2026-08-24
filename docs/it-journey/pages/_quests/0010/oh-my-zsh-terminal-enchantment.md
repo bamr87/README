@@ -11,6 +11,15 @@ description: Install Oh-My-Zsh, then customize your terminal with themes, plugin
   and VS Code integration to supercharge your command-line development workflow.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-90 minutes
 excerpt: Master the ancient arts of Oh-My-Zsh to transform your terminal from a simple
   tool into a powerful development artifact

@@ -11,6 +11,16 @@ description: 'Master Jekyll static site generation: install Ruby and Jekyll, lea
   the project structure and collections, then build and serve a fast, secure site.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Build fast, secure static websites with Jekyll - no databases or servers
   required.
@@ -150,7 +160,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -177,7 +187,7 @@ jekyll --version
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -203,7 +213,7 @@ jekyll --version
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -230,7 +240,7 @@ jekyll --version
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

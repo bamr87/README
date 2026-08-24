@@ -10,6 +10,16 @@ description: Manage multiple deployment environments. Achieve dev/staging/prod p
   configure per-environment settings, and promote infrastructure changes safely.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Master multi-environment configuration and management for reliable software
   delivery
@@ -142,7 +152,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -156,7 +166,7 @@ echo "Running in: $APP_ENV against $DATABASE_URL"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ Write-Host "Running in: $($env:APP_ENV) against $($env:DATABASE_URL)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -184,7 +194,7 @@ printf 'Running in: %s against %s\n' "$APP_ENV" "$DATABASE_URL"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

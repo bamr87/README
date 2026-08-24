@@ -10,6 +10,16 @@ description: 'Evolve a live database safely: write versioned up/down migrations,
   Flyway, Liquibase, or Alembic, and ship zero-downtime schema changes.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Master versioned migrations, rollbacks, migration tools, and zero-downtime
   schema changes.
@@ -139,7 +149,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -154,7 +164,7 @@ pip install alembic psycopg2-binary
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -167,7 +177,7 @@ pip install alembic psycopg2-binary
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -184,7 +194,7 @@ pip install alembic psycopg2-binary
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

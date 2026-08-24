@@ -8,6 +8,16 @@ description: Compare Windows, macOS, and Linux, match each platform to your IT c
   goals, and try a second OS via a virtual machine or dual boot.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 30-45 minutes
 excerpt: Selecting the right operating system is a crucial first step in your IT adventure
 fmContentType: quest

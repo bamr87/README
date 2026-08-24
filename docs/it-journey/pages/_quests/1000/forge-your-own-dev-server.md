@@ -10,6 +10,18 @@ description: 'Turn a bare Debian box into a development server: packages, users,
   language toolchains, a container service stack, and a live monitoring dashboard.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: dev
 estimated_time: 240-300 minutes
 excerpt: Provision a bare Debian machine into a hardened, observable development server
   you actually own

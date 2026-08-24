@@ -10,6 +10,16 @@ description: Master information security fundamentals including the CIA triad, t
   OWASP Top 10, defense in depth, secure-by-design thinking, and practical risk management.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Learn foundational security concepts including the CIA triad, the OWASP Top
   10, defense in depth, and a security mindset
@@ -143,7 +153,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ open http://localhost:3000
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -179,7 +189,7 @@ start http://localhost:3000
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -198,7 +208,7 @@ xdg-open http://localhost:3000
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

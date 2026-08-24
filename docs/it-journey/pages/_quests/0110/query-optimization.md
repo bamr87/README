@@ -10,6 +10,16 @@ description: Read EXPLAIN plans, pick the right indexes, slay the N+1 query, and
   slow SQL to run in milliseconds on a real PostgreSQL database.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Diagnose slow queries with EXPLAIN, apply indexing strategy, and eliminate
   N+1 to make databases fast.
@@ -139,7 +149,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +163,7 @@ psql speed_sanctum
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -166,7 +176,7 @@ psql speed_sanctum
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +190,7 @@ sudo -u postgres psql speed_sanctum
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

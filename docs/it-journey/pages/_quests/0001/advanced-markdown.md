@@ -11,6 +11,18 @@ description: Go beyond basic Markdown with tables, footnotes, fenced code, callo
   Kramdown attributes, and YAML frontmatter that builds Jekyll pages.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: md-quest
 estimated_time: 45-60 minutes
 excerpt: Level up your Markdown with tables, footnotes, fenced code, callouts, and
   Kramdown power features.
@@ -143,7 +155,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +173,7 @@ code guide.md   # open in VS Code (or use any editor)
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -179,7 +191,7 @@ code guide.md
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -197,7 +209,7 @@ code guide.md   # or nano/vim if you prefer
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

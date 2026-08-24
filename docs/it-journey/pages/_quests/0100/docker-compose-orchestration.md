@@ -10,6 +10,16 @@ description: Master Docker Compose to orchestrate multi-container apps. Define s
   networks, volumes, depends_on, and environment variables in one YAML file.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Build and orchestrate multi-container applications with Docker Compose -
   services, networks, volumes, and environment configuration
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +173,7 @@ brew install docker-compose
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -182,7 +192,7 @@ wsl docker compose version
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -201,7 +211,7 @@ docker compose version
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

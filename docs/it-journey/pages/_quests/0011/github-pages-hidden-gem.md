@@ -10,6 +10,16 @@ description: Wield GitHub Pages and Jekyll to forge repositories into live websi
   then capture and immortalize AI conversations as published posts with VS Code.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Transform your GitHub repositories into powerful websites and learn to preserve
   AI conversations forever

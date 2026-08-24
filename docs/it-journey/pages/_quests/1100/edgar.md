@@ -10,6 +10,16 @@ description: Breach the SEC EDGAR fortress with its public APIs, wrangle XBRL fa
   respect rate limits, and turn raw filings into insights using Python.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-180 minutes
 excerpt: Raid King EDGAR’s data castle and transform SEC filings into structured,
   analyzable datasets.

@@ -10,6 +10,15 @@ description: Banish 404s in Jekyll with permalink magic, redirect runes, CI link
   and living resource endpoints powered by GitHub.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Hunt the 404 Specter with Jekyll permalink magic, redirect runes, CI hyperlink
   guardians, and organic resource endpoints.

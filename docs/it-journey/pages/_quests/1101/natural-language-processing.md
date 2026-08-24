@@ -10,6 +10,16 @@ description: 'Build NLP apps in Python with Hugging Face: master tokenization, e
   and the attention mechanism behind modern large language models.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Build NLP applications with tokenization, embeddings, transformers, and large
   language models
@@ -146,7 +156,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +172,7 @@ python -c "import transformers; print('transformers', transformers.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -178,7 +188,7 @@ python -c "import transformers; print('transformers', transformers.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -194,7 +204,7 @@ python -c "import transformers; print('transformers', transformers.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

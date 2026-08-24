@@ -10,6 +10,18 @@ description: Communicate technical ideas with impact. Learn technical writing, d
   docs and RFCs, structuring a conference talk, and persuading an audience to act.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: writing
 estimated_time: 3-4 hours
 excerpt: Write design docs and RFCs and give talks that move an audience to act
 fmContentType: quest
@@ -139,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +165,7 @@ echo "# RFC-001: <title>" > rfcs/rfc-001.md
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -167,7 +179,7 @@ git init
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +192,7 @@ echo "# RFC-001: <title>" > rfcs/rfc-001.md
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

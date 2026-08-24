@@ -10,6 +10,18 @@ description: Drive engineering innovation. Learn structured experimentation, the
   portfolio model, and how to manage risky technical bets responsibly.
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: rnd
 estimated_time: 4-6 hours
 excerpt: Drive innovation with structured experiments and a balanced portfolio of
   bets
@@ -141,7 +153,7 @@ This **⚔️ Epic** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -155,7 +167,7 @@ echo "# Experiment Brief: <title>" > experiments/exp-001.md
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +181,7 @@ git init
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -182,7 +194,7 @@ echo "# Experiment Brief: <title>" > experiments/exp-001.md
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

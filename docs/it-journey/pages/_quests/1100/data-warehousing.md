@@ -10,6 +10,16 @@ description: 'Build the Analytical Citadel: model OLTP vs OLAP, design star and 
   schemas, implement slowly changing dimensions, and explore columnar storage.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 5-6 hours
 excerpt: Design data warehouses with dimensional modeling, star schemas, slowly changing
   dimensions, and columnar storage
@@ -145,7 +155,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -159,7 +169,7 @@ sqlite3 --version
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -173,7 +183,7 @@ python -m pip install --upgrade pip duckdb
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -186,7 +196,7 @@ python -m pip install --upgrade pip duckdb
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

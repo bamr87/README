@@ -10,6 +10,16 @@ description: Handle CI secrets securely. Learn OIDC versus long-lived credential
   vault systems, least privilege, scoping, and rotation for pipelines and applications.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Implement secure secrets management practices for protecting sensitive credentials
   in your pipelines
@@ -142,7 +152,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -158,7 +168,7 @@ gh secret set DATABASE_URL
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -173,7 +183,7 @@ gh secret set DATABASE_URL
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -188,7 +198,7 @@ gh secret set DATABASE_URL
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

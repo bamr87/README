@@ -10,6 +10,12 @@ description: 'Master Kaizen for software teams: run PDCA cycles, eliminate the s
   wastes, map value streams, track DORA metrics, and build a blameless culture.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  shell:
+  - zsh
+  - bash
 estimated_time: 90-120 minutes
 excerpt: Embark on an epic journey to master Kaizen principles and forge a culture
   of continuous improvement in software development

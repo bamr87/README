@@ -10,6 +10,16 @@ description: 'Master scaling: vertical vs. horizontal growth, load balancing, ca
   layers, database replication and sharding, and the CAP theorem.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Scale systems with horizontal growth, load balancing, caching, sharding,
   and a working grasp of CAP
@@ -143,7 +153,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ docker run -d --name cache -p 6379:6379 redis:7-alpine
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ docker run -d --name cache -p 6379:6379 redis:7-alpine
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +193,7 @@ sudo docker run -d --name cache -p 6379:6379 redis:7-alpine
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

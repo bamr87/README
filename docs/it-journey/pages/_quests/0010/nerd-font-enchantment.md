@@ -11,6 +11,15 @@ description: Install Nerd Fonts on macOS, Linux, and Windows, then configure you
   terminal and VS Code so icons, glyphs, and Oh-My-Zsh themes render correctly.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 20-30 minutes
 excerpt: Install Nerd Fonts on macOS, Linux, and Windows to transform your terminal
   with beautiful icons, symbols, and glyphs. Complete guide with Oh-My-Zsh and VS

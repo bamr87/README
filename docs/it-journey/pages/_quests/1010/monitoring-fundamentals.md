@@ -10,6 +10,16 @@ description: Master the three pillars of observability—metrics, logs, and trac
   SLI/SLO/SLA, the RED and USE methods, and fighting alert fatigue.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Master the three pillars of observability—metrics, logs, and traces—for production-grade
   monitoring
@@ -143,7 +153,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +172,7 @@ curl -s http://localhost:9100/metrics | head -n 20
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -177,7 +187,7 @@ curl.exe -s http://localhost:9100/metrics | Select-Object -First 20
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -194,7 +204,7 @@ curl -s http://localhost:9100/metrics | head -n 20
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

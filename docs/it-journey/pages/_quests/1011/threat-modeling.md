@@ -10,6 +10,16 @@ description: Master threat modeling with STRIDE, data-flow diagrams, trust bound
   and attack trees to find security flaws systematically before attackers do.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Find security threats systematically using STRIDE, data-flow diagrams, trust
   boundaries, and attack trees
@@ -141,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ code --install-extension bierner.markdown-mermaid
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -172,7 +182,7 @@ winget install Microsoft.VisualStudioCode
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -186,7 +196,7 @@ code --install-extension bierner.markdown-mermaid
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

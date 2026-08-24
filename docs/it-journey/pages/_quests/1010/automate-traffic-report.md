@@ -11,6 +11,14 @@ description: Build a standalone analytics digest script and schedule it with lau
   or cron to post a weekly traffic report as a dated file and a GitHub issue.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
 estimated_time: 60-90 minutes
 excerpt: Turn an on-demand query into a hands-off weekly digest that shows up where
   you work.

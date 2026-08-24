@@ -10,6 +10,15 @@ description: Master the art of crafting beautiful, interactive frontends for you
   shell scripts using Gum, transforming raw command-line magic into elegant tools.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 30-45 minutes
 excerpt: Transform your raw shell scripts into interactive, user-friendly tools with
   menus, inputs, and beautiful styling.

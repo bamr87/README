@@ -10,6 +10,16 @@ description: 'Master supervised and unsupervised learning in Python: split data 
   fight overfitting, and evaluate scikit-learn models with honest metrics.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 3-4 hours
 excerpt: 'Master ML fundamentals with scikit-learn: classification, regression, clustering,
   and honest model evaluation'
@@ -146,7 +156,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -165,7 +175,7 @@ python -c "import sklearn; print('scikit-learn', sklearn.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -185,7 +195,7 @@ python -c "import sklearn; print('scikit-learn', sklearn.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -203,7 +213,7 @@ python -c "import sklearn; print('scikit-learn', sklearn.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

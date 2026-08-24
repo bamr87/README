@@ -10,6 +10,16 @@ description: 'Master REST constraints: resources, statelessness, the uniform int
   HATEOAS, and the Richardson Maturity Model to design clean web APIs.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Learn the REST constraints, resource modeling, statelessness, HATEOAS, and
   the Richardson Maturity Model
@@ -143,7 +153,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -156,7 +166,7 @@ curl -s https://api.github.com/repos/torvalds/linux | jq '{name, stargazers_coun
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +179,7 @@ curl.exe -s https://api.github.com/repos/torvalds/linux | jq "{name, stargazers_
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -182,7 +192,7 @@ curl -s https://api.github.com/repos/torvalds/linux | jq '{name, stargazers_coun
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

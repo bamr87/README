@@ -10,6 +10,16 @@ description: Master the art of deploying static websites using GitHub Pages, tra
   your code into live web experiences with no server required.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 2-4 hours
 excerpt: Transform your code into a live website using GitHub Pages - the free hosting
   solution for developers.

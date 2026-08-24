@@ -10,6 +10,16 @@ description: Take ML models from notebook to production with MLflow tracking, a 
   registry, FastAPI serving, drift monitoring, and CI/CD retraining pipelines.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Take ML models to production with experiment tracking, serving, drift monitoring,
   and CI/CD
@@ -145,7 +155,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +172,7 @@ python -c "import mlflow; print('mlflow', mlflow.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -179,7 +189,7 @@ python -c "import mlflow; print('mlflow', mlflow.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -195,7 +205,7 @@ python -c "import mlflow; print('mlflow', mlflow.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,16 @@ description: Build a neural network from scratch, then in PyTorch, mastering neu
   layers, activations, forward propagation, backpropagation, and gradient descent.
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 5-7 hours
 excerpt: Build a neural network from first principles, then in PyTorch, and understand
   backpropagation
@@ -146,7 +156,7 @@ This **⚔️ Epic** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ python -c "import torch; print('torch', torch.__version__, 'mps', torch.backends
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -176,7 +186,7 @@ python -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -191,7 +201,7 @@ python -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

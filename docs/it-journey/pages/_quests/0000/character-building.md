@@ -9,6 +9,16 @@ description: Shape your digital persona and choose the tools, technologies, and 
   that will define your IT journey from novice to hero
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Begin your transformation from IT novice to digital hero by building your
   character profile, choosing your specialization path, and configuring your ideal

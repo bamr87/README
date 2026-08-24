@@ -11,6 +11,16 @@ description: 'Forge the Data Artisan''s Toolkit: master NumPy vectorization, Pan
   model.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 4-5 hours
 excerpt: Master NumPy, Pandas, Matplotlib, and EDA for Python data science workflows
 fmContentType: quest
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -158,7 +168,7 @@ python -c "import pandas as pd; print('pandas', pd.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -173,7 +183,7 @@ python -c "import pandas as pd; print('pandas', pd.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -188,7 +198,7 @@ python -c "import pandas as pd; print('pandas', pd.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

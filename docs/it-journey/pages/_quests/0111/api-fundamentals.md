@@ -11,6 +11,16 @@ description: Master the fundamentals of web APIs including HTTP methods, status 
   API.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Learn what an API is, the HTTP request/response cycle, methods, status codes,
   and JSON
@@ -143,7 +153,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -161,7 +171,7 @@ curl https://jsonplaceholder.typicode.com/posts/1
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -179,7 +189,7 @@ curl.exe https://jsonplaceholder.typicode.com/posts/1
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -195,7 +205,7 @@ curl https://jsonplaceholder.typicode.com/posts/1
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,16 @@ description: 'Forge production alerting with Prometheus rules and Alertmanager: 
   grouping, silencing, inhibition, on-call escalation, and runbooks.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Turn signals into actionable pages with alert rules, Alertmanager routing,
   on-call, and runbooks
@@ -141,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -156,7 +166,7 @@ open http://localhost:9093   # Alertmanager
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ start http://localhost:9093   # Alertmanager
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -184,7 +194,7 @@ xdg-open http://localhost:9093   # Alertmanager
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

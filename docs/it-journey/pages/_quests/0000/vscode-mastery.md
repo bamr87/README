@@ -11,6 +11,16 @@ description: Master Visual Studio Code setup and configuration to create the ult
   development environment for any programming domain
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Learn to configure VS Code as your primary development weapon, mastering
   extensions, shortcuts, and specialized setups for maximum productivity

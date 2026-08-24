@@ -10,6 +10,16 @@ description: Learn a repeatable system design interview framework - clarify requ
   estimate capacity, apply RESHADED, and articulate trade-offs out loud.
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 5-6 hours
 excerpt: A repeatable framework for system design interviews - requirements, estimation,
   design, and trade-off articulation
@@ -143,7 +153,7 @@ This **⚔️ Epic** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ python3 -c "print('Ready to estimate at scale')"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +179,7 @@ python -c "print('Ready to estimate at scale')"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -182,7 +192,7 @@ python3 -c "print('Ready to estimate at scale')"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

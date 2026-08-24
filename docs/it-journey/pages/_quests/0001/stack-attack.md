@@ -12,6 +12,14 @@ description: Use AI agents to research, design, and scaffold a production-grade 
   ERP with a Django REST backend and a React TypeScript frontend.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
+  - powershell
+  variables:
+    project_dir: Library
 estimated_time: 3-5 hours
 excerpt: Harness AI agents to architect, analyze, and assemble an enterprise-grade
   ERP application using Django, React, PostgreSQL, Celery, and the best open-source

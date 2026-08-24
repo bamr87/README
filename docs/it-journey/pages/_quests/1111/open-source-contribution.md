@@ -10,6 +10,16 @@ description: Contribute to and maintain open source. Learn the contribution work
   community norms, reviewing and triaging issues, and the basics of software licensing.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 3-5 hours
 excerpt: Contribute and maintain open source with good etiquette and license basics
 fmContentType: quest
@@ -139,7 +149,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +163,7 @@ gh repo fork OWNER/REPO --clone    # fork + clone in one step
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -166,7 +176,7 @@ gh repo fork OWNER/REPO --clone
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +190,7 @@ gh repo fork OWNER/REPO --clone
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

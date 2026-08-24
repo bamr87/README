@@ -10,6 +10,12 @@ description: 'Transform your Mac into a professional dev workstation: install Xc
   Command Line Tools and Homebrew, configure iTerm2, and verify Git and SSH.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  shell:
+  - zsh
+  - bash
 estimated_time: 60-90 minutes
 fmContentType: quest
 keywords:

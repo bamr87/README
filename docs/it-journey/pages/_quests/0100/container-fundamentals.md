@@ -10,6 +10,16 @@ description: 'Master Docker container fundamentals: images versus containers, wr
   a Dockerfile, build and run workflows, image layers and caching, and registries.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Master Docker container fundamentals including images, the Dockerfile, layers,
   and registries for portable application deployment
@@ -146,7 +156,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -166,7 +176,7 @@ docker run --rm hello-world
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -186,7 +196,7 @@ docker run --rm hello-world
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -209,7 +219,7 @@ docker run --rm hello-world
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,18 @@ description: Master the ancient art of transforming scattered signals into livin
   Product Requirements Documents using automated tooling and CI/CD integration
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: github
 estimated_time: 45-60 minutes
 excerpt: Transform scattered repository signals into a living, breathing PRD that
   never goes stale

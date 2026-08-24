@@ -10,6 +10,16 @@ description: Understand the connection lifecycle, size a pool correctly, deploy 
   and hunt down the leaks that exhaust a healthy PostgreSQL database.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Master pool sizing, PgBouncer, the connection lifecycle, and finding connection
   leaks.
@@ -138,7 +148,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -152,7 +162,7 @@ createdb gatekeeper
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -165,7 +175,7 @@ createdb gatekeeper
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -179,7 +189,7 @@ sudo -u postgres createdb gatekeeper
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

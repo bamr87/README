@@ -10,6 +10,16 @@ description: 'Build responsible AI: measure bias and fairness, explain model dec
   protect privacy, and govern high-risk systems under the EU AI Act and NIST AI RMF.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 2-3 hours
 excerpt: Build responsible AI with bias detection, fairness metrics, explainability,
   and governance
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -160,7 +170,7 @@ python -c "import fairlearn; print('fairlearn', fairlearn.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -176,7 +186,7 @@ python -c "import fairlearn; print('fairlearn', fairlearn.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -192,7 +202,7 @@ python -c "import fairlearn; print('fairlearn', fairlearn.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

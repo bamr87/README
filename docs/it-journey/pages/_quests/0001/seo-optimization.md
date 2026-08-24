@@ -11,6 +11,18 @@ description: 'Master technical SEO for Jekyll: write meta tags, generate sitemap
   and robots.txt, add JSON-LD structured data, and automate it all with jekyll-seo-tag.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: my-site
 estimated_time: 45-60 minutes
 excerpt: Make your Jekyll site discoverable with meta tags, sitemaps, structured data,
   and jekyll-seo-tag.
@@ -145,7 +157,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -169,7 +181,7 @@ open http://127.0.0.1:4000/
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -192,7 +204,7 @@ Start-Process http://127.0.0.1:4000/
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -214,7 +226,7 @@ xdg-open http://127.0.0.1:4000/
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

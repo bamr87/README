@@ -10,6 +10,16 @@ description: Enter a fantasy quest mastering software templates across C++, Jinj
   and React—abstraction, type-safety, inheritance, and composition for reuse.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Master the sacred art of templates to build elegant, reusable systems across
   languages.

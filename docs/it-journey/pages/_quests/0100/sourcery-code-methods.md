@@ -10,6 +10,16 @@ description: Master the mystical powers of Git and GitHub workflows to become a 
   code guardian and collaboration wizard in the digital realm
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-180 minutes
 excerpt: Transform from coding apprentice to git wizard by mastering the ancient arts
   of version control, branch sorcery, and collaborative development magic

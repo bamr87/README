@@ -11,6 +11,16 @@ description: 'Master YAML for Jekyll: write front matter, configure _config.yml,
   _data files, and dodge the indentation, quoting, and type pitfalls beginners hit.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-60 minutes
 excerpt: Learn YAML syntax and Jekyll configuration to build and customize professional
   static websites.
@@ -148,7 +158,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +173,7 @@ yamllint _config.yml
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -178,7 +188,7 @@ yamllint _config.yml
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -193,7 +203,7 @@ yamllint _config.yml
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

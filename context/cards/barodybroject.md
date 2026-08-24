@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 638c7438b0e8aea6
+source_fingerprint: 6509281ac0bcba0c
 tags:
   - agricultural technology
   - azure
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 304 docs |
+| Corpus | `docs/barodybroject` - 305 docs |
 | External | no |
 
 ## Signals
@@ -41,14 +41,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has a contribution guide
 - keeps a changelog
-- ~226,445 words across 305 indexed documents
-- code samples in: bash, python, yaml, plaintext, django, markdown, html, javascript
+- ~227,530 words across 306 indexed documents
+- code samples in: bash, python, plaintext, yaml, django, markdown, html, javascript
 
 ## Structure
 
 - `src/` (123 docs)
 - `README/` (73 docs)
-- `docs/` (48 docs)
+- `docs/` (49 docs)
 - `.github/` (35 docs)
 - `.vscode/` (6 docs)
 - `infra/` (5 docs)

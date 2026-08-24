@@ -11,6 +11,16 @@ description: 'Master a clean Git workflow: feature branches, focused commits, pu
   requests, merge vs rebase, and calmly resolving conflicts to collaborate confidently.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Master Git branching strategies, merging techniques, and pull request workflows
   for effective team collaboration.
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +173,7 @@ git config --global init.defaultBranch main
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -180,7 +190,7 @@ git config --global init.defaultBranch main
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -197,7 +207,7 @@ git config --global init.defaultBranch main
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

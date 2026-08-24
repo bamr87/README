@@ -26,10 +26,10 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 |---|---|---|---|---|
 | [scripts](cards/scripts.md) | tooling | active | 15 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [skills](cards/skills.md) | docs | active | 712 | Agent skills — prompts, MCP configurations, and AI development patterns. |
-| [barodybroject](cards/barodybroject.md) | app | active | 304 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
+| [barodybroject](cards/barodybroject.md) | app | active | 305 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
 | [bashcrawl](cards/bashcrawl.md) | game | active | 45 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 695 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [it-journey](cards/it-journey.md) | site | active | 1072 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 706 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [it-journey](cards/it-journey.md) | site | active | 1091 | Educational IT platform with quests, blog posts, and technical documentation. |
 | [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 
 ### scripts directory
@@ -56,7 +56,7 @@ Full-stack application platform with infrastructure, testing, and deployment too
 
 - Repository: [bamr87/barodybroject](https://github.com/bamr87/barodybroject)
 - Card: [context/cards/barodybroject.md](cards/barodybroject.md) · Facts: [context/facts/barodybroject.json](facts/barodybroject.json)
-- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (304 documents)
+- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (305 documents)
 - Topics: python, django, azure, full-stack
 
 ### ⚔️ Bashcrawl — learn the terminal by playing
@@ -74,7 +74,7 @@ Jekyll theme and software architecture patterns for GitHub Pages.
 
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (695 documents)
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (706 documents)
 - Topics: jekyll, theme, github-pages
 
 ### IT-Journey
@@ -83,7 +83,7 @@ Educational IT platform with quests, blog posts, and technical documentation.
 
 - Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
 - Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
-- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1072 documents)
+- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1091 documents)
 - Topics: education, jekyll, quests
 
 ### Wargames

@@ -10,6 +10,16 @@ description: Master API versioning strategies including URI versus header versio
   backward compatibility, breaking versus non-breaking changes, and graceful deprecation.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Learn URI vs header versioning, backward compatibility, and how to deprecate
   an API gracefully
@@ -143,7 +153,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -159,7 +169,7 @@ curl -s -D - -o /dev/null \
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -172,7 +182,7 @@ curl.exe -s -H "X-GitHub-Api-Version: 2022-11-28" `
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -185,7 +195,7 @@ curl -s https://api.github.com/zen   # GitHub root; observe headers and shape
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

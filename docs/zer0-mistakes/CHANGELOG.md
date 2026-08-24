@@ -20,6 +20,49 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
 
 ### Added
 
+- **Cookbook & recipes collection (ZER0-084)** — a `recipes` collection that
+  renders structured front matter as a working recipe page: `layout: recipe`
+  builds a fact bar (prep/cook/rest/total, yield, difficulty, cuisine, oven),
+  a grouped ingredient checklist, a numbered method with per-step timings and
+  temperatures, a baker's-percentage ratio table computed at build time, a
+  per-serving nutrition panel, and one `schema.org/Recipe` JSON-LD block.
+  `assets/js/recipe-scaler.js` adds serving scaling and live US↔metric
+  conversion — including volume↔weight via `_data/ingredient_densities.yml`
+  — as progressive enhancement, so every amount is still rendered exactly as
+  authored with JavaScript disabled. `layout: cookbook` indexes recipes into
+  course sections from `_data/recipe_courses.yml`. Twelve new
+  `components/recipe-*.html` includes, `_sass/components/_recipe.scss` (with
+  print styles), a demo cookbook at `/recipes/`, and docs at
+  [Cookbook collection](pages/_docs/features/cookbook-collection.md). Regression
+  coverage: `test/visual/features/recipes.spec.js` (smoke tier) and "Cookbook
+  Recipe Collection" in `test/test_core.sh` (evidence:
+  [`test/visual/evidence/recipes-collection/`](test/visual/evidence/recipes-collection/README.md)
+  — 0px page overflow across 320–1440px; 1 cup butter → 227 g, 500 g flour →
+  4 cups; ratio percentages identical at 1× and 3×).
+
+- **Page-view counter (ZER0-083)** — the theme now tracks a view for the page
+  being read and displays the count in the article meta row, next to the
+  reading time (`👁 12 views`). Two providers, configured under `page_views:`
+  in `_config.yml`: `local` (the default — counts live in the visitor's
+  `localStorage`, so it works on GitHub Pages with no server, no network, and
+  no third party) and `remote` (counts come from an HTTP counter endpoint you
+  control, with `{path}` substitution, a configurable method, and a dotted
+  `count_key` for the response shape). Privacy gates mirror the `posthog:`
+  block — Do Not Track, Global Privacy Control, and an optional
+  `require_consent` tie-in to the cookie-consent "analytics" category — and
+  they suppress *recording* only, never the display of a count that is already
+  known; a view blocked pending consent is recorded when consent arrives.
+  `dedupe: session` counts one view per page per browser session so reloads do
+  not inflate it. The badge include (`components/page-views.html`) ships hidden
+  and is revealed only once a count exists, carrying its own leading separator
+  so a page with no data leaves no dangling bullet. New:
+  `_includes/components/page-views.html`,
+  `_includes/components/page-views-init.html`, `assets/js/page-views.js`,
+  `_sass/components/_page-views.scss`. Regression spec:
+  `test/visual/features/page-views.spec.js`. Docs:
+  [`docs/features/page-views.md`](docs/features/page-views.md)
+  (evidence: [`test/visual/evidence/page-views/`](test/visual/evidence/page-views/README.md)).
+
 - **Search shortcut affordances (ZER0-032)** — the navbar search button now
   advertises its keyboard shortcuts, matching the design-system navbar
   pattern: a quiet `/` kbd chip (xl-up), a hover title ("Search — press / or
@@ -58,6 +101,64 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
   entry had landed in the `_data` mirror only, which the registry validator
   rejects) and `docs/ui/components.md` gains a theme-source →
   design-system-twin map.
+
+### Fixed
+
+- **Section sidebars no longer emit dead sub-topic anchors** — the sidebar
+  produced `<a href="#tag">` for every tag, but the matching
+  `<section id="tag">` target exists only in the `magazine` branch of
+  `_layouts/section.html`, and only for the first 5 sub-categories that keep a
+  post once the featured hero is excluded. `grid` and `list` sections (and
+  `grid` is the default) therefore emitted one dead anchor per tag, and
+  `magazine` emitted them for tags 6–15 — 64 of them on this repo's own demo
+  site. Dead anchors are invalid markup, a dead click for keyboard/AT users,
+  and they left the sidebar scrollspy unable to activate. Anchors are now
+  emitted only where a target provably exists; every other style renders
+  `<button data-filter>`, which the layout's existing handler already wires to
+  the `[data-tags]` cards. The `list` branch gained the `data-tags` attribute
+  it was missing (without it those buttons would have been inert), and the
+  filter handler now applies pill colours only to actual pills, so the pills
+  and the sidebar stay in sync instead of fighting over each other's classes.
+  Regression cover: `test/visual/features/section-topic-controls.spec.js`
+- **Consumer homepages no longer claim to be this theme** — the
+  `SoftwareApplication` JSON-LD in `_includes/content/jsonld-software.html` is
+  now opt-in via `jsonld_software_application` (set on this site only). The
+  block hardcodes this theme's RubyGems URL, GitHub repository, MIT licence,
+  feature list and author, but was wired unconditionally into every consumer's
+  homepage — so a consulting firm's site was telling search engines it was a
+  free open-source Ruby gem. Consumers need no action: absent config is falsey.
+  Evidence: [`test/visual/evidence/jsonld-software-optin/`](test/visual/evidence/jsonld-software-optin/README.md).
+- **`audit-consumer` misread most consumers' theme mode** — `detect_consumer_mode()`
+  matched `^remote_theme:` with no tolerance for whitespace before the colon, so
+  the column-aligned YAML style that 6 of 9 fleet consumers use never matched and
+  every one of them was silently reported as `gem` mode. That skipped the plugin
+  checks entirely, with no warning that they had been skipped.
+- **`audit-consumer --format json` emitted unparseable JSON** — every entry
+  carried a trailing comma, so the array always closed on `},\n]}`. The
+  human-readable log lines also went to stdout, mixing into the payload. Entries
+  are now comma-separated correctly and logging moves to stderr under
+  `--format json`, so the output pipes straight into `jq`.
+- **`audit-consumer` ignored Jekyll's `source:`** — a consumer that relocates its
+  site tree (e.g. `source: pages`) was audited at the repo root, reporting a
+  falsely clean "no overrides, no unique files". It now follows `source:` for the
+  file scan while still reading config and `.theme-overrides.yml` from the root.
+- **The Obsidian plugin was demanded of consumers that cannot run it** — the
+  manifest listed `_plugins/obsidian_links.rb` as required for every
+  `remote_theme` consumer, contradicting `obsidian.instructions.md`, which
+  documents it as opt-in and "skipped under the `github-pages` gem". GitHub Pages
+  builds in safe mode and loads no local plugins, so nothing the theme ships is
+  mandatory; `required_plugin_paths` is now empty and the plugin is optional.
+
+### Changed
+
+- **`_data/consumers.yml` now covers the whole fleet** — added `zer0-pages`,
+  `irony-works`, `wargames` and `zer0-pages-remote`, which were unregistered and
+  therefore invisible to `propagate.rb` in both directions (no release dispatch,
+  never in the drift report). The `it-journey` risk note was corrected: its
+  "~55 shadowed files / ~75 lines of !important CSS working around #338" claim
+  is not supported by `audit-consumer` — only 2 files shadow a theme file, the
+  CSS is 31 lines in this theme's own documented `user_overrides` hook, and no
+  fix numbered #338 could be substantiated in that repo.
 
 ## [1.28.0](https://github.com/bamr87/zer0-mistakes/compare/v1.27.0...v1.28.0) (2026-08-09)
 

@@ -6,6 +6,9 @@ description: Explore eight RPG-styled IT character classes, from Developer to De
   Engineer, and choose the specialization and learning path that fits you.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - cloud
 estimated_time: 20-30 minutes
 excerpt: Select from six unique character classes, each with distinct skills and career
   paths

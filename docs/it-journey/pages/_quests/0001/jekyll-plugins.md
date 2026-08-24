@@ -11,6 +11,18 @@ description: 'Add Jekyll plugins safely: discover GitHub-Pages safe gems, config
   SEO and sitemap extensions, then write your own custom generator or filter.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: my-site
 estimated_time: 60-75 minutes
 excerpt: Extend Jekyll with plugins - GitHub Pages safe gems, common extensions, and
   your own generator.
@@ -144,7 +156,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +174,7 @@ bundle exec jekyll build --verbose
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -180,7 +192,7 @@ bundle exec jekyll build --verbose
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -198,7 +210,7 @@ bundle exec jekyll build --verbose
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

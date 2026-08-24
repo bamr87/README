@@ -9,6 +9,16 @@ description: Master terminal navigation and command-line tools to unlock develop
   productivity and system control powers in this hands-on quest
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 45-90 minutes
 excerpt: Transform from terminal novice to command-line champion through hands-on
   practice with essential shell commands and navigation techniques

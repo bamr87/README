@@ -10,6 +10,16 @@ description: Master the art of building AI-orchestrated feature pipelines from u
   request to deployment, combining DevSecOps practices with intelligent automation
 difficulty: 🔴 Hard
 draft: true
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 240-360 minutes
 excerpt: Transform feature requests into deployed applications using AI-assisted DevSecOps
   pipelines with dual-format artifacts for both humans and AI agents

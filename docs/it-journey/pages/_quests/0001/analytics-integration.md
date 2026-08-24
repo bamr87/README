@@ -11,6 +11,18 @@ description: 'Add privacy-aware analytics to your site: compare GA4 and lightwei
   alternatives, track custom events, respect consent, and read dashboards.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: my-site
 estimated_time: 45-60 minutes
 excerpt: Measure your site responsibly - GA4 vs privacy-first alternatives, custom
   events, and dashboards.
@@ -144,7 +156,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +175,7 @@ open http://127.0.0.1:4000/
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -182,7 +194,7 @@ Start-Process http://127.0.0.1:4000/
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -201,7 +213,7 @@ xdg-open http://127.0.0.1:4000/
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

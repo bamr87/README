@@ -10,6 +10,18 @@ description: Implement Factory, Strategy, Observer, Adapter, and Decorator, mast
   the five SOLID principles, and refactor brittle conditionals into clean patterns.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: patterns-quest
 estimated_time: 4-5 hours
 excerpt: Master the Gang of Four design patterns and the SOLID principles that underpin
   maintainable software
@@ -143,7 +155,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -162,7 +174,7 @@ python --version
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -180,7 +192,7 @@ python --version
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -199,7 +211,7 @@ python --version
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

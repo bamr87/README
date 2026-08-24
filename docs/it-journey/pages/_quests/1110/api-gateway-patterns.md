@@ -10,6 +10,16 @@ description: Master API gateway patterns - routing, authentication, rate limitin
   and response aggregation - plus the Backend-for-Frontend pattern for tailored clients.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 3-4 hours
 excerpt: Give many services one secure front door with routing, auth, rate limiting,
   aggregation, and the BFF pattern
@@ -144,7 +154,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ docker run -d -p 8080:80 -v "$PWD/nginx.conf:/etc/nginx/nginx.conf:ro" nginx:alp
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +179,7 @@ docker run -d -p 8080:80 -v "${PWD}/nginx.conf:/etc/nginx/nginx.conf:ro" nginx:a
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -182,7 +192,7 @@ sudo docker run -d -p 8080:80 -v "$PWD/nginx.conf:/etc/nginx/nginx.conf:ro" ngin
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -9,6 +9,11 @@ description: Journey into the Frontend Forests to run a Jekyll site in Docker on
   no Ruby install required, then style it with Bootstrap 5 from the CDN.
 difficulty: 🟡 Medium
 draft: true
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
 estimated_time: 90-120 minutes
 excerpt: Embark on a quest to build a Jekyll site using Bootstrap 5 for CSS and JavaScript
   in the Frontend Forests. This guide will navigate you through the enchanted woods,

@@ -10,6 +10,16 @@ description: Master Docker containerization to build, deploy, and manage applica
   in isolated, portable environments with practical hands-on projects
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-90 minutes
 excerpt: Learn to containerize applications and manage Docker environments for consistent,
   scalable deployments

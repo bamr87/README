@@ -10,6 +10,16 @@ description: 'Build data quality into your pipelines: master the six quality dim
   profiling, validation suites, data contracts, anomaly detection, and lineage.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 3-4 hours
 excerpt: Guard your pipelines with profiling, validation, data contracts, expectation
   suites, and lineage
@@ -141,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -155,7 +165,7 @@ python -c "import pandas, great_expectations; print('ready')"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +179,7 @@ python -c "import pandas, great_expectations; print('ready')"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +193,7 @@ python -c "import pandas, great_expectations; print('ready')"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1072,
-    "fingerprint": "5e8c2eabfdbdc11f",
+    "file_count": 1091,
+    "fingerprint": "debf00fa8feb0298",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 13303805
+    "total_bytes": 13447859
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -51,7 +51,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1072
+      "it-journey": 1091
     },
     "code_languages": [
       "bash",
@@ -63,7 +63,7 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1072,
+    "indexed_documents": 1091,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -81,7 +81,7 @@
       "agentic-ai",
       "ci-cd"
     ],
-    "total_words": 1681731
+    "total_words": 1699512
   },
   "schema_version": "1.0",
   "signals": {
@@ -108,7 +108,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 623,
+        "doc_count": 624,
         "name": "pages"
       },
       {
@@ -116,7 +116,7 @@
         "name": "test"
       },
       {
-        "doc_count": 83,
+        "doc_count": 97,
         "name": ".cms"
       },
       {
@@ -128,7 +128,7 @@
         "name": "redirects"
       },
       {
-        "doc_count": 32,
+        "doc_count": 36,
         "name": "docs"
       },
       {

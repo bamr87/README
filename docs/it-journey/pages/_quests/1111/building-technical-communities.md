@@ -10,6 +10,18 @@ description: Build thriving technical communities. Learn the membership lifecycl
   running events, governance and moderation, and designing for inclusion and belonging.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: community
 estimated_time: 3-5 hours
 excerpt: Grow a technical community with events, fair governance, and real inclusion
 fmContentType: quest
@@ -139,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -154,7 +166,7 @@ echo "# Governance Model" > governance/GOVERNANCE.md
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -169,7 +181,7 @@ git init
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +195,7 @@ echo "# Governance Model" > governance/GOVERNANCE.md
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

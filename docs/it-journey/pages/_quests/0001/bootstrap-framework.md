@@ -11,6 +11,18 @@ description: 'Master Bootstrap 5: use the 12-column grid, prebuilt components, a
   utility classes to build mobile-first responsive sites without custom CSS.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: bootstrap-quest
 estimated_time: 60-75 minutes
 excerpt: Build professional responsive websites quickly with Bootstrap's grid, components,
   and utilities.
@@ -146,7 +158,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -164,7 +176,7 @@ open index.html
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -182,7 +194,7 @@ Start-Process index.html
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -200,7 +212,7 @@ xdg-open index.html
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

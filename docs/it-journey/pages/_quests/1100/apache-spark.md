@@ -10,6 +10,16 @@ description: 'Master Apache Spark for distributed data: RDDs, DataFrames, transf
   vs actions, lazy evaluation, partitions, shuffles, and tuning with PySpark.'
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 6-8 hours
 excerpt: Process big data at scale with Spark RDDs, DataFrames, lazy evaluation, and
   partition-aware tuning
@@ -142,7 +152,7 @@ This **⚔️ Epic** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -156,7 +166,7 @@ python -c "import pyspark; print(pyspark.__version__)"
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ python -c "import pyspark; print(pyspark.__version__)"
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -184,7 +194,7 @@ python -c "import pyspark; print(pyspark.__version__)"
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

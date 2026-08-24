@@ -10,6 +10,16 @@ description: Master the Prometheus data model, write PromQL queries, run exporte
   and scrape targets, and build Grafana dashboards from raw time series.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 2-3 hours
 excerpt: Collect metrics with Prometheus and visualize them in Grafana dashboards
 fmContentType: quest
@@ -141,7 +151,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -156,7 +166,7 @@ brew install prometheus grafana
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -171,7 +181,7 @@ docker compose up -d
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -187,7 +197,7 @@ sudo docker compose up -d
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

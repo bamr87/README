@@ -10,6 +10,16 @@ description: Master API rate limiting with token and leaky bucket algorithms, th
   429 response, rate-limit headers, quotas, and client-side backoff throttling.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Learn rate limiting with token and leaky buckets, 429 responses, headers,
   and quotas
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ curl -s -D - -o /dev/null https://api.github.com/rate_limit | grep -i ratelimit
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ curl.exe -s -D - -o NUL https://api.github.com/rate_limit | Select-String -Patte
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +193,7 @@ curl -s https://api.github.com/rate_limit | jq '.rate'
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

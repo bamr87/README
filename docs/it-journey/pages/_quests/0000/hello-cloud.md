@@ -10,6 +10,13 @@ description: 'Claim your first foothold in the Sky Realm: create a secured cloud
   with MFA, wield a cloud CLI, provision a resource, then banish it to avoid costs.'
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - cloud
+  shell:
+  - zsh
+  - bash
 estimated_time: 120-180 minutes
 fmContentType: quest
 keywords:

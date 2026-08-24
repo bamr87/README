@@ -10,6 +10,16 @@ description: 'Master Kubernetes workloads: run Pods via ReplicaSets and Deployme
   scale and roll out updates, roll back, and choose StatefulSets or DaemonSets.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Deploy and manage resilient Kubernetes workloads with Deployments, StatefulSets,
   and DaemonSets
@@ -142,7 +152,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -158,7 +168,7 @@ kubectl config set-context --current --namespace=legions
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -173,7 +183,7 @@ kubectl config set-context --current --namespace=legions
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -187,7 +197,7 @@ kubectl config set-context --current --namespace=legions
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,16 @@ description: Get hands-on with the core AWS services - IAM, EC2, S3, and VPC net
   - plus the AWS CLI and the Well-Architected Framework pillars.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-150 minutes
 excerpt: Master the foundational AWS services - IAM, EC2, S3, VPC, and the AWS CLI
   - and the Well-Architected pillars
@@ -143,7 +153,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -163,7 +173,7 @@ aws configure
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -180,7 +190,7 @@ aws configure
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -196,7 +206,7 @@ aws configure   # enter key, secret, region us-east-1, json
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

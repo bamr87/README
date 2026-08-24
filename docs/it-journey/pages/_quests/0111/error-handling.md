@@ -10,6 +10,16 @@ description: Master API error handling including status code selection, the prob
   format, validation errors, idempotency keys, and safe retry strategies with backoff.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 75-90 minutes
 excerpt: Learn to design clear API errors with status codes, problem+json, idempotency,
   and retries
@@ -144,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -157,7 +167,7 @@ curl -s -o /dev/null -w "%{http_code}\n" https://httpbin.org/status/404
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -170,7 +180,7 @@ curl.exe -s -o NUL -w "%{http_code}`n" https://httpbin.org/status/503
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -183,7 +193,7 @@ curl -s -o /dev/null -w "%{http_code}\n" https://httpbin.org/status/429
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

@@ -10,6 +10,18 @@ description: 'Lead engineers without a title: set a technical vision, frame and 
   decisions under uncertainty, and delegate work with clear ownership.'
 difficulty: ⚔️ Epic
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: leadership
 estimated_time: 4-6 hours
 excerpt: Lead engineers without authority by setting vision, deciding well, and delegating
 fmContentType: quest
@@ -143,7 +155,7 @@ This **⚔️ Epic** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -158,7 +170,7 @@ echo "# Technical Vision" > vision/team-vision.md
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -174,7 +186,7 @@ git init
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -189,7 +201,7 @@ echo "# Technical Vision" > vision/team-vision.md
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

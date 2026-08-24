@@ -10,6 +10,17 @@ description: Master Python recursion, base cases, and call stacks while building
   suites, preventing stack overflows, and applying recursive thinking to AI design.
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: it-journey
 estimated_time: 90-120 minutes
 excerpt: Learn recursive problem-solving patterns and comprehensive unit testing
 fmContentType: quest

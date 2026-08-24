@@ -10,6 +10,15 @@ description: Learn Git fundamentals including repositories, commits, branches, a
   basic workflow for tracking code changes and collaborating with developers.
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 60-75 minutes
 excerpt: Master Git fundamentals to track changes, manage versions, and collaborate
   effectively with teams.

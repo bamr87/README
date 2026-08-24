@@ -10,6 +10,18 @@ description: 'Build effective engineering mentorship: learn mentoring models, fe
   that lands, growth frameworks, and how mentoring differs from sponsorship.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: mentoring
 estimated_time: 3-4 hours
 excerpt: Mentor and sponsor engineers with feedback models and structured growth plans
 fmContentType: quest
@@ -139,7 +151,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -153,7 +165,7 @@ echo "# Growth Plan: <mentee>" > growth-plans/template.md
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -167,7 +179,7 @@ git init
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -180,7 +192,7 @@ echo "# Growth Plan: <mentee>" > growth-plans/template.md
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

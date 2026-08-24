@@ -10,6 +10,14 @@ description: Set up a complete Windows development environment with WSL, PowerSh
   mastery, and essential development tools for the modern Windows developer
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - windows
+  - linux
+  - cloud
+  shell:
+  - bash
+  - powershell
 estimated_time: 90-120 minutes
 excerpt: Transform your Windows machine into a powerful development environment with
   WSL, modern PowerShell, and professional-grade tools

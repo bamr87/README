@@ -2,7 +2,7 @@
 date: 2026-01-14 22:23:32+00:00
 description: The single source of truth, schema, data pipeline, and tooling for IT-Journey
   quests.
-lastmod: 2026-06-14 00:00:00+00:00
+lastmod: 2026-08-19 00:00:00+00:00
 permalink: /scripts/quest/readme/
 source_file: README.md
 title: Quest Framework & Tooling
@@ -80,6 +80,12 @@ All four are regenerated from the registry + quest files by `make quest-data`:
 | `normalize-quest-frontmatter.py` | the ONE idempotent frontmatter normalizer |
 | `generate-placeholder-quest.sh` | scaffold a new placeholder quest |
 | `docker-entrypoint.sh` | runs `quest_audit.py` inside the `quest-audit` Docker service |
+| `walkthrough_plan.py` | deterministic walkthrough planner: one (character, level) slice → dependency-ordered quest list (`walk-plan.json`) |
+| `walkthrough_screenshots.mjs` | session screenshots: rendered quest pages (mobile + desktop) + a terminal render of the recorded transcript |
+| `walkthrough_video.mjs` | side-by-side walkthrough VIDEO: rendered quest page ⇄ animated terminal replay of the sealed evidence transcript, recorded with Playwright (the quest-video lane's renderer) |
+| `video_manifest.py` | deterministic quest-video arm: `build` composes the YouTube upload plan (title/description/chapters/tags); `apply` writes `walkthrough_video:` frontmatter + the `.quests/videos.yml` catalog (tests: `test_video_manifest.py`) |
+| `youtube_upload.py` | stdlib-only YouTube Data API v3 resumable uploader (catalog-idempotent; `--verify-only` checks credentials) |
+| `ledger.py` | the quest-perfection loop's deterministic ledger (`.quests/ledger.json` + dashboard) |
 
 Quest **content quality** is validated by [`test/quest-validator/quest_validator.py`](../../test/quest-validator/quest_validator.py), which imports its schema from the registry. An **optional Claude Code tier-2** (`test/quest-validator/agentic_validate.py`) reads/plays quests for a deeper quality verdict; it's advisory and opt-in (see that directory's README).
 

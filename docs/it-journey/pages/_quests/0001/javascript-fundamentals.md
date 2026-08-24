@@ -11,6 +11,18 @@ description: 'Learn JavaScript from zero: variables and types, functions, arrays
   objects, DOM manipulation, events, and fetch to make web pages interactive.'
 difficulty: 🟡 Medium
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: js-quest
 estimated_time: 75-90 minutes
 excerpt: Make web pages come alive with JavaScript - variables, functions, the DOM,
   events, and fetch.
@@ -145,7 +157,7 @@ This **🟡 Medium** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -165,7 +177,7 @@ open index.html
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -185,7 +197,7 @@ Start-Process index.html
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -205,7 +217,7 @@ xdg-open index.html
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

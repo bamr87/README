@@ -10,6 +10,11 @@ description: Configure AGENTS.md, a dev container, and secrets so a GitHub Copil
   agent runs predictably and identically in Codespaces and on your machine.
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - cloud
+  shell:
+  - bash
 estimated_time: 1-2 hours
 excerpt: An agent bound to a well-configured realm performs consistently. An agent
   cast into an unknown environment is dangerous. Write the binding spells that make

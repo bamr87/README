@@ -11,6 +11,18 @@ description: 'Master CSS fundamentals: selectors, the box model, flexbox and gri
   responsive media queries, and custom properties through hands-on examples.'
 difficulty: 🟢 Easy
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
+  variables:
+    project_dir: css-quest
 estimated_time: 60-75 minutes
 excerpt: Style and lay out web pages with CSS selectors, the box model, flexbox, grid,
   and variables.
@@ -147,7 +159,7 @@ This **🟢 Easy** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -165,7 +177,7 @@ open index.html
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -183,7 +195,7 @@ Start-Process index.html
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -201,7 +213,7 @@ xdg-open index.html
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash

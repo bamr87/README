@@ -10,6 +10,16 @@ description: 'Master Kubernetes basics: cluster architecture, the control plane 
   worker nodes, kubectl, and the declarative object model that orchestrates containers.'
 difficulty: 🔴 Hard
 draft: false
+environment:
+  os:
+  - macos
+  - windows
+  - linux
+  - cloud
+  shell:
+  - zsh
+  - bash
+  - powershell
 estimated_time: 120-150 minutes
 excerpt: Learn Kubernetes fundamentals - cluster architecture, the control plane,
   kubectl, and the declarative object model
@@ -145,7 +155,7 @@ This **🔴 Hard** quest expects:
 
 ### 🍎 macOS Kingdom Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand macOS instructions</summary>
 
 ```bash
@@ -169,7 +179,7 @@ kubectl get nodes
 
 ### 🪟 Windows Empire Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Windows instructions</summary>
 
 ```powershell
@@ -193,7 +203,7 @@ kubectl get nodes
 
 ### 🐧 Linux Territory Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Linux instructions</summary>
 
 ```bash
@@ -217,7 +227,7 @@ kubectl get nodes
 
 ### ☁️ Cloud Realms Path
 
-<details>
+<details markdown="1">
 <summary>Click to expand Cloud/Container instructions</summary>
 
 ```bash
