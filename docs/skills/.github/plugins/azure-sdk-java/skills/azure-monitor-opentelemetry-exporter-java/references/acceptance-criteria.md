@@ -4,9 +4,7 @@ title: Azure Monitor OpenTelemetry Exporter for Java Acceptance Criteria
 ---
 # Azure Monitor OpenTelemetry Exporter for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-monitor-opentelemetry-exporter` (DEPRECATED)
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-opentelemetry-exporter
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-monitor-opentelemetry-exporter` (DEPRECATED) **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-opentelemetry-exporter **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

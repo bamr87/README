@@ -49,8 +49,7 @@ Create an app registration in the Azure portal or using Azure CLI.
 3. Provide name, supported account types, and redirect URI
 4. Click "Register"
 
-**CLI Method:** See [references/cli-commands.md](references/cli-commands.md)
-**IaC Method:** See [references/BICEP-EXAMPLE.bicep](references/BICEP-EXAMPLE.bicep)
+**CLI Method:** See [references/cli-commands.md](references/cli-commands.md) **IaC Method:** See [references/BICEP-EXAMPLE.bicep](references/BICEP-EXAMPLE.bicep)
 
 It's highly recommended to use the IaC to manage Entra app registration if you already use IaC in your project, need a scalable solution for managing lots of app registrations or need fine-grained audit history of the configuration changes. 
 

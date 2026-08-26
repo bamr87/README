@@ -26,8 +26,7 @@ dotnet add package Azure.ResourceManager.DurableTask
 dotnet add package Azure.Identity
 ```
 
-**Current Versions**: Stable v1.0.0 (2025-11-03), Preview v1.0.0-beta.1 (2025-04-24)
-**API Version**: 2025-11-01
+**Current Versions**: Stable v1.0.0 (2025-11-03), Preview v1.0.0-beta.1 (2025-04-24) **API Version**: 2025-11-01
 
 ## Environment Variables
 

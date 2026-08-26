@@ -4,10 +4,7 @@ title: Azure.ResourceManager.BotService SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.BotService SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.BotService`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/botservice/Azure.ResourceManager.BotService
-**Package**: https://www.nuget.org/packages/Azure.ResourceManager.BotService
-**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.BotService` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/botservice/Azure.ResourceManager.BotService **Package**: https://www.nuget.org/packages/Azure.ResourceManager.BotService **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

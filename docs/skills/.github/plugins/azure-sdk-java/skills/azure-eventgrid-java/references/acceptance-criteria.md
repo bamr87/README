@@ -4,9 +4,7 @@ title: Azure Event Grid SDK for Java Acceptance Criteria
 ---
 # Azure Event Grid SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-messaging-eventgrid`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/eventgrid/azure-messaging-eventgrid
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-messaging-eventgrid` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/eventgrid/azure-messaging-eventgrid **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

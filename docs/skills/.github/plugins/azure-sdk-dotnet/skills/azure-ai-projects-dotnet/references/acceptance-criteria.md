@@ -4,10 +4,7 @@ title: Azure.AI.Projects SDK Acceptance Criteria (.NET)
 ---
 # Azure.AI.Projects SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.AI.Projects`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Projects
-**Package**: https://www.nuget.org/packages/Azure.AI.Projects
-**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.AI.Projects` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/ai/Azure.AI.Projects **Package**: https://www.nuget.org/packages/Azure.AI.Projects **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

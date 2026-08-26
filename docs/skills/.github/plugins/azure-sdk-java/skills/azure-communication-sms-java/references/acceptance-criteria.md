@@ -4,9 +4,7 @@ title: Azure Communication SMS SDK for Java Acceptance Criteria
 ---
 # Azure Communication SMS SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-communication-sms`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-sms
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-communication-sms` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-sms **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

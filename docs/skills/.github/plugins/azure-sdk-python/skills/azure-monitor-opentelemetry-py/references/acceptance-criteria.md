@@ -4,10 +4,7 @@ title: Azure Monitor OpenTelemetry Distro for Python Acceptance Criteria
 ---
 # Azure Monitor OpenTelemetry Distro for Python Acceptance Criteria
 
-**SDK**: `azure-monitor-opentelemetry`
-**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-monitor-opentelemetry` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/monitor/azure-monitor-opentelemetry **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

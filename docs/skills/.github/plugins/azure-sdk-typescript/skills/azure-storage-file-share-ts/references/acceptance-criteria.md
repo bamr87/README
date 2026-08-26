@@ -4,9 +4,7 @@ title: Azure Storage File Share SDK Acceptance Criteria (TypeScript)
 ---
 # Azure Storage File Share SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/storage-file-share`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-file-share
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/storage-file-share` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-file-share **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

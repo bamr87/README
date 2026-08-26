@@ -3,16 +3,7 @@ source_file: note-template.md
 title: Obsidian aliases map to Jekyll redirect_from (jekyll-redirect-from is enabled).
 ---
 ---
-title: "{{title}}"
-description: "Short summary used for SEO and previews (≤160 chars)."
-layout: note
-date: {{date}}
-lastmod: {{date}}
-categories: [Notes]
-tags: []
-author: "{{author}}"
-difficulty: beginner
-comments: true
+title: "{{title}}" description: "Short summary used for SEO and previews (≤160 chars)." layout: note date: {{date}} lastmod: {{date}} categories: [Notes] tags: [] author: "{{author}}" difficulty: beginner comments: true
 # Obsidian aliases map to Jekyll redirect_from (jekyll-redirect-from is enabled).
 aliases: []
 ---
