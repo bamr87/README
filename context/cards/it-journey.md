@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: debf00fa8feb0298
+source_fingerprint: 20568f9db4ed4713
 tags:
   - agentic-ai
   - automation
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1091 docs |
+| Corpus | `docs/it-journey` - 1122 docs |
 | External | no |
 
 ## Signals
@@ -43,18 +43,18 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,699,512 words across 1091 indexed documents
+- ~1,755,113 words across 1122 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Structure
 
-- `pages/` (624 docs)
-- `test/` (138 docs)
-- `.cms/` (97 docs)
+- `pages/` (629 docs)
+- `test/` (143 docs)
+- `.cms/` (111 docs)
 - `.github/` (43 docs)
 - `redirects/` (43 docs)
-- `docs/` (36 docs)
-- `.claude/` (28 docs)
+- `docs/` (37 docs)
+- `.claude/` (34 docs)
 - `TODO/` (25 docs)
 
 ## Key documents

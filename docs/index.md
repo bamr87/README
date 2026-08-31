@@ -31,11 +31,11 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(706 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(708 documents)*
 
 ### [IT-Journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1091 documents)*
+Educational IT platform with quests, blog posts, and technical documentation. *(1122 documents)*
 
 ### [Wargames](OverTheWire-website/README.md)
 
