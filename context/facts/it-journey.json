@@ -36,25 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/it-journey.md",
-    "fingerprint": "65a0d458320d5a45",
+    "fingerprint": "50565621728ed44b",
     "index": "it-journey/index.md",
     "max_depth": 7,
-    "pages": 1115,
+    "pages": 908,
     "present": true,
-    "sections": 111,
-    "skipped": 6,
+    "sections": 93,
+    "skipped": 16,
     "title": "IT Journey",
     "top_sections": [
       {
-        "index": "it-journey/.quests/README.md",
-        "pages": 2,
-        "path": ".quests",
-        "title": "Quests",
-        "type": "group"
-      },
-      {
-        "index": "it-journey/.cms/README.md",
-        "pages": 428,
+        "index": "it-journey/redirects/README.md",
+        "pages": 223,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"

@@ -9,15 +9,15 @@ generated: true
 
 # Content map
 
-**3,122** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**2,083** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 1,115 | 111 | Quests, Repository & tooling, Data, Documentation, Home, Includes |
-| [Zer0 Mistakes](zer0-mistakes.md) | 703 | 106 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
-| [Barody Project](barodybroject.md) | 298 | 63 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
-| [Bash Crawl](bashcrawl.md) | 44 | 12 | Repository & tooling, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
-| [Agent Skills](skills.md) | 712 | 254 | Skills, Agents, Prompts, Plugins, Documentation, Workflows, Repository & tooling |
+| [IT Journey](it-journey.md) | 908 | 93 | Repository & tooling, Data, Documentation, Home, Includes |
+| [Zer0 Mistakes](zer0-mistakes.md) | 626 | 95 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
+| [Barody Project](barodybroject.md) | 254 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
+| [Bash Crawl](bashcrawl.md) | 38 | 9 | Repository & tooling, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
+| [Agent Skills](skills.md) | 7 | 3 | Documentation, Repository & tooling |
 | [Scripts](scripts.md) | 15 | 2 | 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |
 | [OverTheWire](OverTheWire-website.md) | 232 | 17 | Includes, Index (wargames), Information |
 

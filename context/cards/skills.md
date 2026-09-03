@@ -42,15 +42,10 @@ tags:
 
 ## Navigation
 
-712 published pages in 254 sections (max depth 6) — [browse the full map](../../docs/browse/skills.md) · [tree as JSON](../nav/skills.json)
+7 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/skills.md) · [tree as JSON](../nav/skills.json)
 
-- **Skills** (35 pages)
-- **Agents** (6 pages)
-- **Prompts** (5 pages)
-- **Plugins** (652 pages)
-- **Documentation** (6 pages)
-- **Workflows** (1 pages)
-- **Repository & tooling** (4 pages)
+- **Documentation** (1 pages)
+- **Repository & tooling** (3 pages)
 
 ## Key documents
 

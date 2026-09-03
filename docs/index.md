@@ -15,31 +15,31 @@ The left sidebar mirrors each corpus's own folder hierarchy — see the [content
 
 ### [IT-Journey](it-journey/index.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1121 documents, 111 sections)*
+Educational IT platform with quests, blog posts, and technical documentation. *(1121 documents, 93 sections)*
 
 [Content map](browse/it-journey.md)
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(705 documents, 106 sections)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(705 documents, 95 sections)*
 
 [Content map](browse/zer0-mistakes.md)
 
 ### [Barodybroject](barodybroject/README.md)
 
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(299 documents, 63 sections)*
+Full-stack application platform with infrastructure, testing, and deployment tooling. *(299 documents, 56 sections)*
 
 [Content map](browse/barodybroject.md)
 
 ### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45 documents, 12 sections)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45 documents, 9 sections)*
 
 [Content map](browse/bashcrawl.md)
 
 ### [Agent Skills](skills/README.md)
 
-Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents, 254 sections)*
+Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents, 3 sections)*
 
 [Content map](browse/skills.md)
 

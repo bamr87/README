@@ -46,12 +46,12 @@ tags:
 
 ## Navigation
 
-298 published pages in 63 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
+254 published pages in 56 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
 
-- **Repository & tooling** (45 pages)
+- **Repository & tooling** (9 pages)
 - **Documentation** (49 pages)
-- **Source** (122 pages)
-- **📚 The Forbidden Library** (73 pages)
+- **Source** (121 pages)
+- **📚 The Forbidden Library** (66 pages)
 
 ## Key documents
 

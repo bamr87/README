@@ -656,8 +656,10 @@ python3 -m scripts.context_engine projects         # fleet roster
 | Surface | Consumer | Notes |
 |---|---|---|
 | `context/nav/<project>.json` + `context/nav/index.json` | any frontend, the CLI, MCP `get_nav` | nested `section`/`group`/`page` nodes with titles, paths, icons and page counts |
-| `nav.yml` | MkDocs (`mkdocs.yml` pulls it in with `INHERIT`) | the site `nav` **and** the `exclude_docs` rules that keep the published page set identical to the tree |
+| `nav.yml` | MkDocs (`mkdocs.yml` pulls it in with `INHERIT`) | the site `nav`, the `exclude_docs` rules that decide what is built, and the `not_in_nav` rules that declare what is built but deliberately unlisted |
 | `docs/browse/*.md` | readers | one content map per corpus plus a fleet index |
+
+Dot-directories are the one place published and navigable diverge: `publish_hidden` builds them, `navigate_hidden` (off) keeps them out of the sidebar because GitHub Pages 404s dot-prefixed URLs, and `not_in_nav` records the difference.
 
 Derivation rules: titles come from frontmatter `title` → first H1 → humanized filename (a section adopts its index page's title unless the registry names it); `index.md`/`README.md` become the section's landing page; ordering is landing page → pages → subsections, each by explicit frontmatter order (`nav_order`/`order`/`weight`/`sidebar_position`) then title; a folder holding a single page is collapsed into that page; pages below `max_depth` are flattened into the deepest allowed section rather than dropped; `nav_exclude: true` in a page's frontmatter keeps it out. Output carries a content fingerprint and no timestamps, so an unchanged corpus rebuilds to an empty diff.
 

@@ -48,9 +48,9 @@ tags:
 
 ## Navigation
 
-703 published pages in 106 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
+626 published pages in 95 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
 
-- **Repository & tooling** (125 pages)
+- **Repository & tooling** (48 pages)
 - **Data** (2 pages)
 - **Design System** (13 pages)
 - **Documentation** (110 pages)

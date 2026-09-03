@@ -57,6 +57,8 @@ projects:
       groups:
         - title: Repository
           match: [".github"]
+        - title: Deep Dive
+          match: ["deep"]
   - name: beta
     repo: owner/beta
     url: https://github.com/owner/beta
@@ -113,6 +115,9 @@ class ContextEngineFixture(unittest.TestCase):
         (alpha / ".github").mkdir()
         (alpha / ".github" / "WORKFLOW.md").write_text(
             "---\ntitle: Workflow\n---\n\n# Workflow\n", encoding="utf-8")
+        (alpha / "solo").mkdir()
+        (alpha / "solo" / "SKILL.md").write_text(
+            "---\ntitle: Skill\n---\n\n# Skill\n", encoding="utf-8")
         (alpha / "drafts").mkdir()
         (alpha / "drafts" / "wip.md").write_text("# WIP\n", encoding="utf-8")
         deep = alpha / "deep" / "one" / "two" / "three"
@@ -161,7 +166,7 @@ class TestExtractor(ContextEngineFixture):
         alpha = self.registry.get("alpha")
         facts = extractor.extract_facts(alpha, docs_dir=self.docs_dir)
         self.assertTrue(facts["corpus"]["present"])
-        self.assertEqual(facts["corpus"]["file_count"], 9)
+        self.assertEqual(facts["corpus"]["file_count"], 10)
         self.assertEqual(facts["identity"]["title"], "Alpha Tools")
         self.assertIn("toolkit for automating", facts["identity"]["summary"])
         self.assertTrue(facts["signals"]["has_schema_md"])
@@ -234,7 +239,8 @@ class TestNavigator(ContextEngineFixture):
         self.assertEqual(alpha.nav_title, "Alpha Tools")
         self.assertEqual(alpha.nav.order, 5)
         self.assertEqual(alpha.nav.exclude, ["drafts/**"])
-        self.assertEqual([g.title for g in alpha.nav.groups], ["Repository"])
+        self.assertEqual([g.title for g in alpha.nav.groups],
+                         ["Repository", "Deep Dive"])
         self.assertEqual(self.registry.navigation.max_depth, 3)
         self.assertEqual(self.registry.navigation.section_titles["guides"], "Guides")
         # nav_ordered puts an explicit order ahead of registry order
@@ -252,11 +258,24 @@ class TestNavigator(ContextEngineFixture):
         paths = set(self._pages(nav["tree"]))
         self.assertIn("alpha/README.md", paths)
         self.assertIn("alpha/guides/install.md", paths)
-        self.assertIn("alpha/.github/WORKFLOW.md", paths)   # publish_hidden
         self.assertIn("alpha/deep/one/two/three/buried.md", paths)  # past max_depth
+        # GitHub Pages 404s dot-paths, so hidden dirs stay out of the sidebar.
+        self.assertNotIn("alpha/.github/WORKFLOW.md", paths)
         self.assertNotIn("alpha/drafts/wip.md", paths)      # nav.exclude
         self.assertNotIn("alpha/guides/hidden.md", paths)   # nav_exclude frontmatter
         self.assertEqual(nav["counts"]["pages"], len(paths))
+
+    def test_hidden_dirs_enter_the_nav_only_when_asked(self):
+        defaults = self.registry.navigation
+        self.assertFalse(defaults.navigate_hidden)      # registry default
+        project = self.registry.get("alpha")
+        defaults.navigate_hidden = True
+        nav = navigator.build_project_nav(
+            "alpha", project.nav_title, project.nav, defaults,
+            docs_dir=self.docs_dir)
+        self.assertIn("alpha/.github/WORKFLOW.md", self._pages(nav["tree"]))
+        # ...and the group that targets it fires again.
+        self.assertEqual(nav["tree"]["children"][0]["title"], "Repository")
 
     def test_titles_and_index_pages(self):
         nav = self._nav()
@@ -278,9 +297,13 @@ class TestNavigator(ContextEngineFixture):
 
     def test_groups_lift_matching_paths_to_the_top(self):
         children = self._nav()["tree"]["children"]
-        self.assertEqual(children[0]["title"], "Repository")
+        # "Repository" targets .github, which is not navigated: an empty group
+        # is dropped rather than rendered as a dead section.
+        self.assertNotIn("Repository", [c["title"] for c in children])
+        self.assertEqual(children[0]["title"], "Deep Dive")
         self.assertEqual(children[0]["type"], "group")
-        self.assertEqual(self._pages(children[0]), ["alpha/.github/WORKFLOW.md"])
+        self.assertTrue(
+            all(p.startswith("alpha/deep/") for p in self._pages(children[0])))
 
     def test_depth_cap_flattens_instead_of_dropping(self):
         nav = self._nav()
@@ -291,10 +314,14 @@ class TestNavigator(ContextEngineFixture):
         self.assertEqual(len(buried), 1)
 
     def test_single_page_folder_is_collapsed(self):
-        # alpha/.github holds one page; it becomes an entry, not a click-through
-        group = self._nav()["tree"]["children"][0]
-        self.assertEqual(len(group["children"]), 1)
-        self.assertEqual(group["children"][0]["type"], "page")
+        # alpha/solo holds one generically-named page (SKILL.md): the folder
+        # becomes one entry titled after itself, not a click-through.
+        children = self._nav()["tree"]["children"]
+        solo = [c for c in children if c.get("path") == "alpha/solo/SKILL.md"]
+        self.assertEqual(len(solo), 1)
+        self.assertEqual(solo[0]["type"], "page")
+        self.assertEqual(solo[0]["title"], "Solo")
+        self.assertEqual(solo[0]["folder"], "solo")
 
     def test_readme_shadowed_by_index_is_skipped(self):
         # MkDocs drops README.md when a sibling index.md exists; so must we.
@@ -354,6 +381,21 @@ class TestNavigator(ContextEngineFixture):
         self.assertEqual(top[0], "Home")
         self.assertIn("Alpha Tools", top)
         self.assertIn("Browse", top)
+
+    def test_mkdocs_nav_declares_published_but_unlisted_pages(self):
+        import yaml as _yaml
+        fleet = navigator.build_fleet_nav(self.registry, docs_dir=self.docs_dir)
+        parsed = _yaml.safe_load(navigator.render_mkdocs_nav(fleet, self.registry))
+        # Built (exclude_docs re-includes them) but intentionally out of the
+        # nav, so MkDocs must be told rather than warning about orphan pages.
+        self.assertIn("!**/.*", parsed["exclude_docs"])
+        self.assertIn("**/.*", parsed["not_in_nav"])
+
+        self.registry.navigation.navigate_hidden = True
+        parsed = _yaml.safe_load(navigator.render_mkdocs_nav(
+            navigator.build_fleet_nav(self.registry, docs_dir=self.docs_dir),
+            self.registry))
+        self.assertNotIn("not_in_nav", parsed)   # nothing is unlisted now
 
     def test_every_nav_target_exists_on_disk(self):
         fleet = navigator.build_fleet_nav(self.registry, docs_dir=self.docs_dir)

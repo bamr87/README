@@ -5,145 +5,85 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 44,
-    "sections": 12,
-    "max_depth": 4,
-    "skipped": 1
+    "pages": 38,
+    "sections": 9,
+    "max_depth": 3,
+    "skipped": 3
   },
   "skipped": [
+    ".archives",
+    ".github",
     "logs/README.md"
   ],
-  "fingerprint": "16a6ed17ea199147",
+  "fingerprint": "fdbc0c73059689fd",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 44,
+    "pages": 38,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
+        "rel": "src",
         "order": 0.0,
-        "pages": 12,
+        "pages": 6,
         "children": [
           {
             "type": "page",
-            "title": "Archives",
-            "path": "bashcrawl/.archives/REFACTORING_SUMMARY.md",
-            "rel": ".archives/REFACTORING_SUMMARY.md",
-            "folder": ".archives"
+            "title": "Bashcrawl Observatory \u2014 src/viewer/",
+            "path": "bashcrawl/src/viewer/README.md",
+            "rel": "src/viewer/README.md",
+            "folder": "src/viewer"
           },
           {
             "type": "section",
-            "title": "GitHub",
-            "rel": ".github",
-            "pages": 5,
+            "title": "Bashcrawl Help System",
+            "rel": "src/help",
+            "index": "bashcrawl/src/help/README.md",
+            "pages": 2,
             "children": [
               {
                 "type": "page",
-                "title": "Bashcrawl Copilot Instructions",
-                "path": "bashcrawl/.github/copilot-instructions.md",
-                "rel": ".github/copilot-instructions.md"
+                "title": "Bashcrawl Help System",
+                "path": "bashcrawl/src/help/README.md",
+                "rel": "src/help/README.md",
+                "is_index": true
               },
               {
                 "type": "page",
-                "title": "Commit & Publish Workflow for Bashcrawl",
-                "path": "bashcrawl/.github/prompts/test-doc-commit-push.prompt.md",
-                "rel": ".github/prompts/test-doc-commit-push.prompt.md",
-                "folder": ".github/prompts"
-              },
-              {
-                "type": "page",
-                "title": "Pull Request Template",
-                "path": "bashcrawl/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md",
-                "rel": ".github/PULL_REQUEST_TEMPLATE/pull_request_template.md",
-                "folder": ".github/PULL_REQUEST_TEMPLATE"
-              },
-              {
-                "type": "section",
-                "title": "Instructions",
-                "rel": ".github/instructions",
-                "pages": 2,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "Bashcrawl Room Creation Instructions",
-                    "path": "bashcrawl/.github/instructions/rooms.instructions.md",
-                    "rel": ".github/instructions/rooms.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Bashcrawl Scroll Instructions",
-                    "path": "bashcrawl/.github/instructions/scrolls.instructions.md",
-                    "rel": ".github/instructions/scrolls.instructions.md"
-                  }
-                ]
+                "title": "\ud83c\udfaf Bashcrawl Help System Quick Reference",
+                "path": "bashcrawl/src/help/HELP_REFERENCE.md",
+                "rel": "src/help/HELP_REFERENCE.md"
               }
             ]
           },
           {
             "type": "section",
-            "title": "Source",
-            "rel": "src",
-            "pages": 6,
+            "title": "Readme",
+            "rel": "src/terminal-illness",
+            "index": "bashcrawl/src/terminal-illness/README.md",
+            "pages": 3,
             "children": [
               {
                 "type": "page",
-                "title": "Bashcrawl Observatory \u2014 src/viewer/",
-                "path": "bashcrawl/src/viewer/README.md",
-                "rel": "src/viewer/README.md",
-                "folder": "src/viewer"
-              },
-              {
-                "type": "section",
-                "title": "Bashcrawl Help System",
-                "rel": "src/help",
-                "index": "bashcrawl/src/help/README.md",
-                "pages": 2,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "Bashcrawl Help System",
-                    "path": "bashcrawl/src/help/README.md",
-                    "rel": "src/help/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "\ud83c\udfaf Bashcrawl Help System Quick Reference",
-                    "path": "bashcrawl/src/help/HELP_REFERENCE.md",
-                    "rel": "src/help/HELP_REFERENCE.md"
-                  }
-                ]
-              },
-              {
-                "type": "section",
                 "title": "Readme",
-                "rel": "src/terminal-illness",
-                "index": "bashcrawl/src/terminal-illness/README.md",
-                "pages": 3,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "Readme",
-                    "path": "bashcrawl/src/terminal-illness/README.md",
-                    "rel": "src/terminal-illness/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "AI Prompt: Fantasy Terminal Learning Game Architecture",
-                    "path": "bashcrawl/src/terminal-illness/seed_prompt.instructions.md",
-                    "rel": "src/terminal-illness/seed_prompt.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Ti",
-                    "path": "bashcrawl/src/terminal-illness/ti/audio/assets/README.md",
-                    "rel": "src/terminal-illness/ti/audio/assets/README.md",
-                    "folder": "src/terminal-illness/ti"
-                  }
-                ]
+                "path": "bashcrawl/src/terminal-illness/README.md",
+                "rel": "src/terminal-illness/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "AI Prompt: Fantasy Terminal Learning Game Architecture",
+                "path": "bashcrawl/src/terminal-illness/seed_prompt.instructions.md",
+                "rel": "src/terminal-illness/seed_prompt.instructions.md"
+              },
+              {
+                "type": "page",
+                "title": "Ti",
+                "path": "bashcrawl/src/terminal-illness/ti/audio/assets/README.md",
+                "rel": "src/terminal-illness/ti/audio/assets/README.md",
+                "folder": "src/terminal-illness/ti"
               }
             ]
           }

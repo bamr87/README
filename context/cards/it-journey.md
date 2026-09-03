@@ -48,10 +48,9 @@ tags:
 
 ## Navigation
 
-1115 published pages in 111 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
+908 published pages in 93 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
 
-- **Quests** (2 pages)
-- **Repository & tooling** (428 pages)
+- **Repository & tooling** (223 pages)
 - **Data** (8 pages)
 - **Documentation** (37 pages)
 - **Home** (628 pages)

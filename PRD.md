@@ -43,7 +43,7 @@ Supporting contracts:
 2. **Extract**: derive per-project facts offline from the corpus: identity
 (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md, AGENTS.md, …), structure, rollups (tags/categories/languages/words), key documents, and a corpus fingerprint for change detection.
 3. **Navigate**: turn each corpus's folder hierarchy into one canonical
-navigation tree — sections from folders, landing pages from `index.md`/`README.md`, labels from frontmatter titles, ordering from frontmatter and the registry, grouping from `nav.groups` — and render it to three surfaces: `context/nav/*.json` (frontend-agnostic), `nav.yml` (the MkDocs sidebar plus the matching `exclude_docs`), and `docs/browse/*.md` (human content maps). Every published page must have exactly one sidebar entry, and no sidebar entry may point at a page the site does not build.
+navigation tree — sections from folders, landing pages from `index.md`/`README.md`, labels from frontmatter titles, ordering from frontmatter and the registry, grouping from `nav.groups` — and render it to three surfaces: `context/nav/*.json` (frontend-agnostic), `nav.yml` (the MkDocs sidebar plus the matching `exclude_docs`), and `docs/browse/*.md` (human content maps). No sidebar entry may point at a page the reader cannot open, and any published page deliberately left out of the sidebar must be declared as such (`not_in_nav`) rather than silently orphaned.
 4. **Synthesize**: render facts into per-project cards with a frontmatter
    contract; optionally AI-enrich the essence paragraph.
 5. **Assemble**: build the consolidated apex README; inject the fleet table

@@ -9,26 +9,17 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **44 pages** across **12 sections** (max depth 4).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **38 pages** across **9 sections** (max depth 3).
 
-- **Repository & tooling** <small>(12)</small>
-  - [Archives](../bashcrawl/.archives/REFACTORING_SUMMARY.md)
-  - **GitHub** <small>(5)</small>
-    - [Bashcrawl Copilot Instructions](../bashcrawl/.github/copilot-instructions.md)
-    - [Commit & Publish Workflow for Bashcrawl](../bashcrawl/.github/prompts/test-doc-commit-push.prompt.md)
-    - [Pull Request Template](../bashcrawl/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md)
-    - **Instructions** <small>(2)</small>
-      - [Bashcrawl Room Creation Instructions](../bashcrawl/.github/instructions/rooms.instructions.md)
-      - [Bashcrawl Scroll Instructions](../bashcrawl/.github/instructions/scrolls.instructions.md)
-  - **Source** <small>(6)</small>
-    - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
-    - **[Bashcrawl Help System](../bashcrawl/src/help/README.md)** <small>(2)</small>
-      - [Bashcrawl Help System](../bashcrawl/src/help/README.md)
-      - [🎯 Bashcrawl Help System Quick Reference](../bashcrawl/src/help/HELP_REFERENCE.md)
-    - **[Readme](../bashcrawl/src/terminal-illness/README.md)** <small>(3)</small>
-      - [Readme](../bashcrawl/src/terminal-illness/README.md)
-      - [AI Prompt: Fantasy Terminal Learning Game Architecture](../bashcrawl/src/terminal-illness/seed_prompt.instructions.md)
-      - [Ti](../bashcrawl/src/terminal-illness/ti/audio/assets/README.md)
+- **Repository & tooling** <small>(6)</small>
+  - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
+  - **[Bashcrawl Help System](../bashcrawl/src/help/README.md)** <small>(2)</small>
+    - [Bashcrawl Help System](../bashcrawl/src/help/README.md)
+    - [🎯 Bashcrawl Help System Quick Reference](../bashcrawl/src/help/HELP_REFERENCE.md)
+  - **[Readme](../bashcrawl/src/terminal-illness/README.md)** <small>(3)</small>
+    - [Readme](../bashcrawl/src/terminal-illness/README.md)
+    - [AI Prompt: Fantasy Terminal Learning Game Architecture](../bashcrawl/src/terminal-illness/seed_prompt.instructions.md)
+    - [Ti](../bashcrawl/src/terminal-illness/ti/audio/assets/README.md)
 - [⚔️ Bashcrawl — learn the terminal by playing](../bashcrawl/README.md)
 - [Changelog](../bashcrawl/CHANGELOG.md)
 - [CLAUDE.md](../bashcrawl/CLAUDE.md)

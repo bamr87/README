@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T02:41:26+00:00",
+  "generated_at": "2026-09-03T03:14:11+00:00",
   "engine_version": "1.0.0",
   "enrichment": "heuristic",
   "project_count": 7,
@@ -15,14 +15,14 @@
   "corpus_index_present": true,
   "corpus_index_generated_at": "2026-08-31T03:13:11.911936",
   "navigation": {
-    "pages": 3122,
+    "pages": 2083,
     "corpora": 7,
     "fingerprints": {
-      "it-journey": "65a0d458320d5a45",
-      "zer0-mistakes": "6f39bea50aa45b36",
-      "barodybroject": "46d78858872bdcb1",
-      "bashcrawl": "16a6ed17ea199147",
-      "skills": "62d0fa4f2d628db9",
+      "it-journey": "50565621728ed44b",
+      "zer0-mistakes": "b0e819af564bfb64",
+      "barodybroject": "6d2b47b73533b2af",
+      "bashcrawl": "fdbc0c73059689fd",
+      "skills": "292f000a4ab20ef9",
       "scripts": "ecb49a40e48b28a2",
       "OverTheWire-website": "ceab543eb82ca094"
     }

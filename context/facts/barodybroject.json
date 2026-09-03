@@ -32,18 +32,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/barodybroject.md",
-    "fingerprint": "46d78858872bdcb1",
+    "fingerprint": "6d2b47b73533b2af",
     "index": "barodybroject/README.md",
     "max_depth": 7,
-    "pages": 298,
+    "pages": 254,
     "present": true,
-    "sections": 63,
-    "skipped": 1,
+    "sections": 56,
+    "skipped": 6,
     "title": "Barody Project",
     "top_sections": [
       {
-        "index": "barodybroject/.github/README.md",
-        "pages": 45,
+        "index": "barodybroject/infra/README.md",
+        "pages": 9,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -57,14 +57,14 @@
       },
       {
         "index": "barodybroject/src/index.md",
-        "pages": 122,
+        "pages": 121,
         "path": "src",
         "title": "Source",
         "type": "section"
       },
       {
         "index": "barodybroject/README/README.md",
-        "pages": 73,
+        "pages": 66,
         "path": "README",
         "title": "\ud83d\udcda The Forbidden Library",
         "type": "section"

@@ -25,11 +25,11 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 
 | Project | Kind | Status | Docs | Sections | What it is |
 |---|---|---|---|---|---|
-| [it-journey](cards/it-journey.md) | site | active | 1121 | 111 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 705 | 106 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [barodybroject](cards/barodybroject.md) | app | active | 299 | 63 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
-| [bashcrawl](cards/bashcrawl.md) | game | active | 45 | 12 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [skills](cards/skills.md) | docs | active | 712 | 254 | Agent skills — prompts, MCP configurations, and AI development patterns. |
+| [it-journey](cards/it-journey.md) | site | active | 1121 | 93 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 705 | 95 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [barodybroject](cards/barodybroject.md) | app | active | 299 | 56 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
+| [bashcrawl](cards/bashcrawl.md) | game | active | 45 | 9 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
+| [skills](cards/skills.md) | docs | active | 712 | 3 | Agent skills — prompts, MCP configurations, and AI development patterns. |
 | [scripts](cards/scripts.md) | tooling | active | 15 | 2 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 
@@ -40,7 +40,7 @@ Educational IT platform with quests, blog posts, and technical documentation.
 - Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
 - Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
 - Corpus: [`docs/it-journey/`](../docs/it-journey/) (1121 documents)
-- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 1115 pages in 111 sections
+- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 908 pages in 93 sections
 - Topics: education, jekyll, quests
 
 ### zer0-mistakes
@@ -50,7 +50,7 @@ Jekyll theme and software architecture patterns for GitHub Pages.
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
 - Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (705 documents)
-- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 703 pages in 106 sections
+- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 626 pages in 95 sections
 - Topics: jekyll, theme, github-pages
 
 ### Barodybroject
@@ -60,7 +60,7 @@ Full-stack application platform with infrastructure, testing, and deployment too
 - Repository: [bamr87/barodybroject](https://github.com/bamr87/barodybroject)
 - Card: [context/cards/barodybroject.md](cards/barodybroject.md) · Facts: [context/facts/barodybroject.json](facts/barodybroject.json)
 - Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (299 documents)
-- Navigation: [tree](nav/barodybroject.json) · [content map](../docs/browse/barodybroject.md) — 298 pages in 63 sections
+- Navigation: [tree](nav/barodybroject.json) · [content map](../docs/browse/barodybroject.md) — 254 pages in 56 sections
 - Topics: python, django, azure, full-stack
 
 ### ⚔️ Bashcrawl — learn the terminal by playing
@@ -70,7 +70,7 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 - Repository: [bamr87/bashcrawl](https://github.com/bamr87/bashcrawl)
 - Card: [context/cards/bashcrawl.md](cards/bashcrawl.md) · Facts: [context/facts/bashcrawl.json](facts/bashcrawl.json)
 - Corpus: [`docs/bashcrawl/`](../docs/bashcrawl/) (45 documents)
-- Navigation: [tree](nav/bashcrawl.json) · [content map](../docs/browse/bashcrawl.md) — 44 pages in 12 sections
+- Navigation: [tree](nav/bashcrawl.json) · [content map](../docs/browse/bashcrawl.md) — 38 pages in 9 sections
 - Topics: bash, education, game
 
 ### Agent Skills
@@ -80,7 +80,7 @@ Agent skills — prompts, MCP configurations, and AI development patterns.
 - Repository: [bamr87/skills](https://github.com/bamr87/skills)
 - Card: [context/cards/skills.md](cards/skills.md) · Facts: [context/facts/skills.json](facts/skills.json)
 - Corpus: [`docs/skills/`](../docs/skills/) (712 documents)
-- Navigation: [tree](nav/skills.json) · [content map](../docs/browse/skills.md) — 712 pages in 254 sections
+- Navigation: [tree](nav/skills.json) · [content map](../docs/browse/skills.md) — 7 pages in 3 sections
 - Topics: ai, agents, mcp, prompts
 
 ### scripts directory
