@@ -158,9 +158,9 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
         "python3 -m scripts.context_engine status           # freshness manifest",
         "```",
         "",
-        "AI clients connect through the MCP server (`mcp/server.py`, registered",
-        "in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,",
-        "`get_readme`, `get_nav`, `get_schema`, `context_status`.",
+        "AI clients connect through the MCP server (`mcp/server.py`, registered in"
+        " `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,"
+        " `get_readme`, `get_nav`, `get_schema`, `context_status`.",
         "",
     ]
     return "\n".join(lines)
@@ -198,12 +198,12 @@ def build_site_index(registry: Registry, facts_by_name: Dict[str, Dict]) -> str:
         "",
         "# bamr87 documentation",
         "",
-        "Aggregated, continuously refreshed documentation for every project in",
-        "the [bamr87](https://github.com/bamr87) fleet. This page is generated",
-        "from the fleet registry by the README context engine.",
+        "Aggregated, continuously refreshed documentation for every project in the"
+        " [bamr87](https://github.com/bamr87) fleet. This page is generated from"
+        " the fleet registry by the README context engine.",
         "",
-        "The left sidebar mirrors each corpus's own folder hierarchy — see the",
-        "[content map](browse/index.md) to browse any project in full.",
+        "The left sidebar mirrors each corpus's own folder hierarchy — see the"
+        " [content map](browse/index.md) to browse any project in full.",
         "",
         "## Documentation by project",
         "",

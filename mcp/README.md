@@ -50,9 +50,7 @@ printf '%s\n%s\n%s\n' \
 - The server reads `context/index/context_index.json` and the card/fact/nav
 files via `scripts/context_engine/query.py` — one code path for the CLI and MCP surfaces.
 - `get_nav` is the cheap way to locate a document: it answers "what does this
-  corpus contain, and where does it live" from one JSON tree instead of a
-  directory crawl. Section titles are indexed too, so `search_context` ranks
-  the navigation trees alongside cards and facts.
+corpus contain, and where does it live" from one JSON tree instead of a directory crawl. Section titles are indexed too, so `search_context` ranks the navigation trees alongside cards and facts.
 - Errors inside a tool return an `isError` tool result (per MCP), not a
   protocol error; unknown methods return JSON-RPC `-32601`.
 - If the pyramid has not been built yet, every tool answers with a hint to

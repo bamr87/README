@@ -703,7 +703,13 @@ def render_browse_project(nav: Dict) -> str:
 
 
 def render_browse_index(fleet: Dict, registry: Registry) -> str:
-    """docs/browse/index.md - the fleet content map."""
+    """
+    docs/browse/index.md - the fleet content map.
+
+    Prose paragraphs are emitted as single lines: the repo enforces one
+    paragraph per line and its CI gate rewrites offenders in place, which
+    would leave this file no longer matching what this function renders.
+    """
     lines = [
         "---",
         "title: Content map",
@@ -752,10 +758,10 @@ def render_browse_index(fleet: Dict, registry: Registry) -> str:
     lines += [
         "## How this is built",
         "",
-        "`_data/projects.yml` carries the navigation contract (grouping, depth,",
-        "exclusions); `scripts/context_engine/navigator.py` walks the corpus and",
-        "renders it to `nav.yml` (this site), `context/nav/*.json` (any other",
-        "frontend), and these maps. Rebuild with:",
+        "`_data/projects.yml` carries the navigation contract (grouping, depth,"
+        " exclusions); `scripts/context_engine/navigator.py` walks the corpus and"
+        " renders it to `nav.yml` (this site), `context/nav/*.json` (any other"
+        " frontend), and these maps. Rebuild with:",
         "",
         "```bash",
         "python3 -m scripts.context_engine build",

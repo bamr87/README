@@ -31,10 +31,7 @@ Corpora published from `docs/` that no registry entry claims — they navigate u
 
 ## How this is built
 
-`_data/projects.yml` carries the navigation contract (grouping, depth,
-exclusions); `scripts/context_engine/navigator.py` walks the corpus and
-renders it to `nav.yml` (this site), `context/nav/*.json` (any other
-frontend), and these maps. Rebuild with:
+`_data/projects.yml` carries the navigation contract (grouping, depth, exclusions); `scripts/context_engine/navigator.py` walks the corpus and renders it to `nav.yml` (this site), `context/nav/*.json` (any other frontend), and these maps. Rebuild with:
 
 ```bash
 python3 -m scripts.context_engine build

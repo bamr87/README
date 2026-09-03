@@ -4,9 +4,7 @@ title: Azure Communication CallingServer SDK for Java Acceptance Criteria
 ---
 # Azure Communication CallingServer SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-communication-callingserver` (DEPRECATED)
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-callingserver
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-communication-callingserver` (DEPRECATED) **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-callingserver **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

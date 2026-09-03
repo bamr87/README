@@ -26,7 +26,7 @@
       "kind": "docs",
       "status": "active",
       "corpus_files": 712,
-      "fingerprint": "dd818354495728d6",
+      "fingerprint": "a7046c49c6e5b26e",
       "card": "context/cards/skills.md",
       "facts": "context/facts/skills.json",
       "nav": "context/nav/skills.json",
@@ -78,7 +78,7 @@
       "kind": "site",
       "status": "active",
       "corpus_files": 1121,
-      "fingerprint": "104344f8f1009f62",
+      "fingerprint": "7f3b30fb94702328",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
@@ -91,7 +91,7 @@
       "kind": "site",
       "status": "active",
       "corpus_files": 232,
-      "fingerprint": "8a95c989dbb45bc1",
+      "fingerprint": "430a761accf7d02a",
       "card": "context/cards/OverTheWire-website.md",
       "facts": "context/facts/OverTheWire-website.json",
       "nav": "context/nav/OverTheWire-website.json",
@@ -413,9 +413,6 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "104344f8f1009f62": {
-      "card:it-journey": 2
-    },
     "106": {
       "apex": 2,
       "card:zer0-mistakes": 2
@@ -466,10 +463,10 @@
     "125": {
       "card:zer0-mistakes": 2
     },
-    "129025": {
+    "129002": {
       "card:OverTheWire-website": 1
     },
-    "13834767": {
+    "13832461": {
       "card:it-journey": 1
     },
     "143": {
@@ -559,6 +556,9 @@
     "428": {
       "card:it-journey": 2
     },
+    "430a761accf7d02a": {
+      "card:OverTheWire-website": 2
+    },
     "4569972": {
       "card:zer0-mistakes": 1
     },
@@ -568,7 +568,7 @@
     "5.1": {
       "card:barodybroject": 2
     },
-    "5003998": {
+    "5003918": {
       "card:skills": 1
     },
     "509": {
@@ -632,11 +632,14 @@
     "755": {
       "card:it-journey": 1
     },
-    "8a95c989dbb45bc1": {
-      "card:OverTheWire-website": 2
+    "7f3b30fb94702328": {
+      "card:it-journey": 2
     },
     "98598caa36af12d8": {
       "card:zer0-mistakes": 2
+    },
+    "a7046c49c6e5b26e": {
+      "card:skills": 2
     },
     "about": {
       "card:barodybroject": 1,
@@ -1472,9 +1475,6 @@
     "datalake": {
       "card:skills": 1,
       "nav:skills": 1
-    },
-    "dd818354495728d6": {
-      "card:skills": 2
     },
     "deep": {
       "card:skills": 1,

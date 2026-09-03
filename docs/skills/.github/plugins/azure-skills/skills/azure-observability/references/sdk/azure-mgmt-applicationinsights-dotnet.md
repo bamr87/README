@@ -9,8 +9,7 @@ title: Application Insights Management — .NET SDK Quick Reference
 > in the **azure-mgmt-applicationinsights-dotnet** plugin skill if installed.
 
 ## Install
-dotnet add package Azure.ResourceManager.ApplicationInsights
-dotnet add package Azure.Identity
+dotnet add package Azure.ResourceManager.ApplicationInsights dotnet add package Azure.Identity
 
 ## Quick Start
 ```csharp

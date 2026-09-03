@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 232,
-    "fingerprint": "8a95c989dbb45bc1",
+    "fingerprint": "430a761accf7d02a",
     "path": "docs/OverTheWire-website",
     "present": true,
-    "total_bytes": 129025
+    "total_bytes": 129002
   },
   "engine_version": "1.0.0",
   "identity": {

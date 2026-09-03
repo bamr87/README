@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: dd818354495728d6
+source_fingerprint: a7046c49c6e5b26e
 tags:
   - agents
   - ai

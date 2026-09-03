@@ -4,10 +4,7 @@ title: Azure Identity SDK Acceptance Criteria
 ---
 # Azure Identity SDK Acceptance Criteria
 
-**SDK**: `azure-identity`
-**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-identity` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

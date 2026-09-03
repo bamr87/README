@@ -4,10 +4,7 @@ title: Azure Cosmos DB SDK Acceptance Criteria
 ---
 # Azure Cosmos DB SDK Acceptance Criteria
 
-**SDK**: `azure-cosmos`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Commit**: `5c5d6eb014da472e71937aceddbf2f19fdb9aa40`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-cosmos` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `5c5d6eb014da472e71937aceddbf2f19fdb9aa40` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

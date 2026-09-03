@@ -9,8 +9,7 @@ title: PostgreSQL Management — .NET SDK Quick Reference
 > in the **azure-resource-manager-postgresql-dotnet** plugin skill if installed.
 
 ## Install
-dotnet add package Azure.ResourceManager.PostgreSql
-dotnet add package Azure.Identity
+dotnet add package Azure.ResourceManager.PostgreSql dotnet add package Azure.Identity
 
 ## Quick Start
 ```csharp

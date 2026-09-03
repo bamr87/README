@@ -4,10 +4,7 @@ title: Azure Storage Blob SDK for TypeScript Acceptance Criteria
 ---
 # Azure Storage Blob SDK for TypeScript Acceptance Criteria
 
-**SDK**: `@azure/storage-blob`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-blob
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/storage-blob` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/storage/storage-blob **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

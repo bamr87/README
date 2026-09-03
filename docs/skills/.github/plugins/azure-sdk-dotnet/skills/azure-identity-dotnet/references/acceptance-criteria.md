@@ -4,10 +4,7 @@ title: Azure Identity SDK Acceptance Criteria (.NET)
 ---
 # Azure Identity SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Identity`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Identity` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/identity/Azure.Identity **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

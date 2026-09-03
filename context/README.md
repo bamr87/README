@@ -112,6 +112,4 @@ python3 -m scripts.context_engine nav <project>    # navigation tree
 python3 -m scripts.context_engine status           # freshness manifest
 ```
 
-AI clients connect through the MCP server (`mcp/server.py`, registered
-in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,
-`get_readme`, `get_nav`, `get_schema`, `context_status`.
+AI clients connect through the MCP server (`mcp/server.py`, registered in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`.

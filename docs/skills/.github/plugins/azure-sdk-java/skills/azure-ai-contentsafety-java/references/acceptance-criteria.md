@@ -4,9 +4,7 @@ title: Azure AI Content Safety SDK for Java Acceptance Criteria
 ---
 # Azure AI Content Safety SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-contentsafety`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/contentsafety/azure-ai-contentsafety
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-contentsafety` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/contentsafety/azure-ai-contentsafety **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

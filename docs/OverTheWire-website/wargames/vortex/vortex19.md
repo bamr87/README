@@ -7,5 +7,4 @@ title: Vortex19
 ---
 Key Generation
 --------------
-This level requires you to "keygen" the level, with a minor obstacle
-of a weak form of binary encryption in place.
+This level requires you to "keygen" the level, with a minor obstacle of a weak form of binary encryption in place.

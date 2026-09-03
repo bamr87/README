@@ -4,10 +4,7 @@ title: Azure Service Bus SDK Acceptance Criteria (.NET)
 ---
 # Azure Service Bus SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.Messaging.ServiceBus`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/servicebus/Azure.Messaging.ServiceBus
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.Messaging.ServiceBus` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/servicebus/Azure.Messaging.ServiceBus **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

@@ -7,12 +7,9 @@ generated: true
 
 # bamr87 documentation
 
-Aggregated, continuously refreshed documentation for every project in
-the [bamr87](https://github.com/bamr87) fleet. This page is generated
-from the fleet registry by the README context engine.
+Aggregated, continuously refreshed documentation for every project in the [bamr87](https://github.com/bamr87) fleet. This page is generated from the fleet registry by the README context engine.
 
-The left sidebar mirrors each corpus's own folder hierarchy — see the
-[content map](browse/index.md) to browse any project in full.
+The left sidebar mirrors each corpus's own folder hierarchy — see the [content map](browse/index.md) to browse any project in full.
 
 ## Documentation by project
 

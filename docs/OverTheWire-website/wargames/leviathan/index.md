@@ -9,13 +9,9 @@ Leviathan
 
 ### Dare you face the lord of the oceans?
 
-Leviathan is a wargame that has been rescued from the demise of
-**intruded.net**, previously hosted on leviathan.intruded.net. **Big
-thanks to adc, morla and reth** for their help in resurrecting this
-game!
+Leviathan is a wargame that has been rescued from the demise of **intruded.net**, previously hosted on leviathan.intruded.net. **Big thanks to adc, morla and reth** for their help in resurrecting this game!
 
-What follows below is the original description of leviathan, copied from
-intruded.net:
+What follows below is the original description of leviathan, copied from intruded.net:
 
     Summary:
     Difficulty:     1/10
@@ -35,16 +31,14 @@ intruded.net:
     hard to make an interesting wargame that wouldn't require programming abilities from 
     the players. Hopefully we made an interesting challenge for the new ones.
 
-Leviathan's levels are called **leviathan0, leviathan1, ... etc.** and
-can be accessed on **leviathan.labs.overthewire.org** through SSH on port 2223.
+Leviathan's levels are called **leviathan0, leviathan1, ... etc.** and can be accessed on **leviathan.labs.overthewire.org** through SSH on port 2223.
 
 To login to the first level use:
 
     Username: leviathan0
     Password: leviathan0
 
-Data for the levels can be found in **the homedirectories**. You can look
-at **/etc/leviathan_pass** for the various level passwords.
+Data for the levels can be found in **the homedirectories**. You can look at **/etc/leviathan_pass** for the various level passwords.
 
 Concepts and tools you may find useful to solve this wargame
 -----------------------------------------------
@@ -59,11 +53,6 @@ Tools:
  * Tools for advanced dynamic (and static) analysis: gdb, gef, pwndbg, radare2
  * Tools for static analysis: strings, hexdump, objdump, ghidra
 
-A note on further progression through OverTheWire wargames:
-While Leviathan can be solved by pure dynamic analysis, i.e.
-by just running the programs in some way, and without
-looking at the insides and the execution in the machine
-(involving assembly language), those skills are useful for
-the wargames following Leviathan - be sure to learn them here!
+A note on further progression through OverTheWire wargames: While Leviathan can be solved by pure dynamic analysis, i.e. by just running the programs in some way, and without looking at the insides and the execution in the machine (involving assembly language), those skills are useful for the wargames following Leviathan - be sure to learn them here!
 
 Think about analyzing malware - you wouldn't want to run that either.

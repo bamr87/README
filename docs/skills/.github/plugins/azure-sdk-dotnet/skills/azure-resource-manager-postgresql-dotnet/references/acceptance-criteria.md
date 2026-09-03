@@ -4,9 +4,7 @@ title: Azure.ResourceManager.PostgreSql (.NET) Acceptance Criteria
 ---
 # Azure.ResourceManager.PostgreSql (.NET) Acceptance Criteria
 
-**SDK**: `Azure.ResourceManager.PostgreSql`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/postgresql/Azure.ResourceManager.PostgreSql
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.ResourceManager.PostgreSql` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/postgresql/Azure.ResourceManager.PostgreSql **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

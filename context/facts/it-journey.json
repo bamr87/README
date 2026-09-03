@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 1121,
-    "fingerprint": "104344f8f1009f62",
+    "fingerprint": "7f3b30fb94702328",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 13834767
+    "total_bytes": 13832461
   },
   "engine_version": "1.0.0",
   "identity": {

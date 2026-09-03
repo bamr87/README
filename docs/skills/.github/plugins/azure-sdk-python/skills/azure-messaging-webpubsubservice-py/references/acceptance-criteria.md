@@ -4,10 +4,7 @@ title: Azure Web PubSub Service SDK Acceptance Criteria
 ---
 # Azure Web PubSub Service SDK Acceptance Criteria
 
-**SDK**: `azure-messaging-webpubsubservice`
-**Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/webpubsub/azure-messaging-webpubsubservice
-**Commit**: `main`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-messaging-webpubsubservice` **Repository**: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/webpubsub/azure-messaging-webpubsubservice **Commit**: `main` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

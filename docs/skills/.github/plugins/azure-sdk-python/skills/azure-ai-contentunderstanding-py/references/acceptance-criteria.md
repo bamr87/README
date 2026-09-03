@@ -4,10 +4,7 @@ title: Azure AI Content Understanding SDK Acceptance Criteria
 ---
 # Azure AI Content Understanding SDK Acceptance Criteria
 
-**SDK**: `azure-ai-contentunderstanding`
-**Repository**: https://github.com/Azure/azure-sdk-for-python
-**Commit**: `azure-ai-contentunderstanding_1.0.0b1`
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `azure-ai-contentunderstanding` **Repository**: https://github.com/Azure/azure-sdk-for-python **Commit**: `azure-ai-contentunderstanding_1.0.0b1` **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

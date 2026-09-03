@@ -32,9 +32,7 @@ Supporting contracts:
 - **SCHEMA.md pyramid** — every governed directory carries a SCHEMA.md
 (structure table, placement, forbidden); `scripts/schema_lint.py check .` is the drift gate, wired into CI, matching the parent monorepo protocol.
 - **Navigation contract** — the `navigation:` block in `_data/projects.yml`
-  (grouping, section labels, depth cap, exclusions) plus each corpus's own
-  folder hierarchy. The sidebar is *derived* from these two; it is never
-  curated by hand, so it cannot drift from what is published.
+(grouping, section labels, depth cap, exclusions) plus each corpus's own folder hierarchy. The sidebar is *derived* from these two; it is never curated by hand, so it cannot drift from what is published.
 - **Hooks** — `hooks.d/<stage>/` executables run at each engine stage, the
   extension point for AI orchestration around the pipeline.
 
@@ -70,8 +68,7 @@ projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_r
 - **Gate-friendly**: schema lint and unit suite run in the standard CI
   gate; failures block merges, not the cron.
 - **Navigable by construction**: a page that cannot be placed in a
-  navigation entry is a corpus defect, not a nav exception. Frontmatter that
-  breaks nav rendering (an unresolvable `icon:`) is normalized at ingest.
+navigation entry is a corpus defect, not a nav exception. Frontmatter that breaks nav rendering (an unresolvable `icon:`) is normalized at ingest.
 
 ## 6. Interfaces
 
@@ -94,8 +91,7 @@ python3 mcp/server.py        # stdio MCP; registered in .mcp.json
   rather than silently accumulating.
 - The published site home and the root README never need hand edits.
 - Every published page is reachable from the sidebar in at most `max_depth`
-  clicks, and the sidebar needs no hand edits when a corpus gains or loses
-  folders — `mkdocs build` reports no "pages not included in the nav".
+clicks, and the sidebar needs no hand edits when a corpus gains or loses folders — `mkdocs build` reports no "pages not included in the nav".
 
 ## 8. Future work
 
