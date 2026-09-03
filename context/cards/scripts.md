@@ -33,11 +33,12 @@ tags:
 - ~17,311 words across 15 indexed documents
 - code samples in: bash, plaintext, yaml
 
-## Structure
+## Navigation
 
-- `FORKME/` (7 docs)
-- `STASHME/` (4 docs)
-- `linting/` (1 docs)
+15 published pages in 2 sections (max depth 2) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
+
+- **🍴 ForkMe - Advanced GitHub Repository Forking Utility** (7 pages)
+- **💾 StashMe - Multi-Repository Cloud Stash Utility** (4 pages)
 
 ## Key documents
 
@@ -55,6 +56,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query scripts
 python3 -m scripts.context_engine facts scripts
+python3 -m scripts.context_engine nav scripts
 ```
 
 MCP: `get_project` with `{"name": "scripts"}` (server: `mcp/server.py`, registered in `.mcp.json`).

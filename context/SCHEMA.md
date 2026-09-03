@@ -17,6 +17,7 @@ coverage: full
 | `SCHEMA.md` | file | This file | generated |
 | `cards/` | dir | L1 - one distilled card per project | generated |
 | `facts/` | dir | L2 - structured facts per project | generated |
+| `nav/` | dir | Navigation trees per corpus + the fleet manifest | generated |
 | `index/` | dir | Query layer - context_index.json + manifest.json | generated |
 
 ## Forbidden

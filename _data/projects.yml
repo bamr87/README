@@ -21,6 +21,7 @@
 #   topics      - seed topic tags merged with tags mined from the corpus
 #   aggregate   - include in the docs/ corpus aggregation (default true)
 #   external    - true when the project is not owned by the bamr87 org
+#   nav         - navigation overrides (see the `navigation:` block below)
 
 version: 1
 
@@ -31,6 +32,63 @@ hub:
   description: >-
     Monorepo dash — control plane for the project fleet: registry, gates,
     seeds, and site. This README repo is its consolidated-context submodule.
+
+# ---------------------------------------------------------------------------
+# navigation - the contract between the corpus folder hierarchy and the
+# published left sidebar. `scripts/context_engine/navigator.py` is the only
+# consumer: it walks docs/<project>/, applies these rules, and emits
+# context/nav/*.json (frontend-agnostic), nav.yml (MkDocs `nav` +
+# `exclude_docs`), and docs/browse/ (human content maps).
+#
+# Fleet-wide keys:
+#   max_depth      - how deep sections may nest before deeper pages are
+#                    flattened into the deepest allowed section (never dropped)
+#   index_names    - filenames treated as a section's landing page, in order
+#   exclude        - glob patterns removed from navigation *and* from the site
+#   publish_hidden - publish dot-directories (.github, .claude, ...) that
+#                    MkDocs excludes by default; without this the fleet's
+#                    skills/agents/quests corpora would be unreachable
+#   section_titles - directory name -> sidebar label (an index page's own
+#                    frontmatter title still wins)
+#
+# Per-project `nav:` keys: title, order, max_depth, exclude, groups.
+# A group lifts matching paths into a curated top-level section; patterns are
+# matched against project-relative paths (`*` stays inside one path segment,
+# `**` spans segments) and matching a directory moves its whole subtree.
+navigation:
+  max_depth: 6
+  index_names: [index.md, README.md, readme.md, home.md]
+  publish_hidden: true
+  exclude:
+    - "**/node_modules/**"
+    - "**/.git/**"
+  section_titles:
+    .archives: Archives
+    .claude: Claude
+    .cms: CMS
+    .crush: Crush
+    .cursor: Cursor
+    .devcontainer: Dev Container
+    .frontend: Frontend
+    .frontmatter: Frontmatter
+    .github: GitHub
+    .issues: Issues
+    .obsidian: Obsidian
+    .quests: Quests
+    _data: Data
+    _design-system: Design System
+    _includes: Includes
+    _layouts: Layouts
+    _posts: Posts
+    _quests: Quests
+    api: API
+    docs: Documentation
+    faq: FAQ
+    fr: Français
+    infra: Infrastructure
+    src: Source
+    ui: UI
+
 
 defaults:
   status: active
@@ -46,6 +104,9 @@ projects:
       Automation scripts for forking, linting, stashing, and project
       management across the fleet.
     topics: [automation, bash, python]
+    nav:
+      title: Scripts
+      order: 60
 
   - name: skills
     repo: bamr87/skills
@@ -55,6 +116,27 @@ projects:
       Agent skills — prompts, MCP configurations, and AI development
       patterns.
     topics: [ai, agents, mcp, prompts]
+    nav:
+      title: Agent Skills
+      order: 50
+      max_depth: 7
+      # Everything of substance lives under .github/, so lift its children
+      # to the top of the sidebar instead of burying them one level down.
+      groups:
+        - title: Skills
+          match: [".github/skills"]
+        - title: Agents
+          match: [".github/agents"]
+        - title: Prompts
+          match: [".github/prompts"]
+        - title: Plugins
+          match: [".github/plugins"]
+        - title: Documentation
+          match: [".github/docs", "docs-site"]
+        - title: Workflows
+          match: [".github/workflows"]
+        - title: Repository & tooling
+          match: [".github", "hooks", "tests"]
 
   - name: barodybroject
     repo: bamr87/barodybroject
@@ -64,6 +146,13 @@ projects:
       Full-stack application platform with infrastructure, testing, and
       deployment tooling.
     topics: [python, django, azure, full-stack]
+    nav:
+      title: Barody Project
+      order: 30
+      max_depth: 7
+      groups:
+        - title: Repository & tooling
+          match: [".devcontainer", ".github", "infra", "scripts", "test"]
 
   - name: bashcrawl
     repo: bamr87/bashcrawl
@@ -73,6 +162,13 @@ projects:
       Interactive shell-scripting tutorial — learn Bash by exploring a
       dungeon.
     topics: [bash, education, game]
+    nav:
+      title: Bash Crawl
+      order: 40
+      exclude: ["logs/**"]
+      groups:
+        - title: Repository & tooling
+          match: [".archives", ".github", "src"]
 
   - name: zer0-mistakes
     repo: bamr87/zer0-mistakes
@@ -81,6 +177,21 @@ projects:
     description: >-
       Jekyll theme and software architecture patterns for GitHub Pages.
     topics: [jekyll, theme, github-pages]
+    nav:
+      title: Zer0 Mistakes
+      order: 20
+      groups:
+        - title: Repository & tooling
+          match:
+            - ".claude"
+            - ".cursor"
+            - ".devcontainer"
+            - ".github"
+            - ".issues"
+            - ".obsidian"
+            - "docker"
+            - "scripts"
+            - "test"
 
   - name: it-journey
     repo: bamr87/it-journey
@@ -90,6 +201,28 @@ projects:
       Educational IT platform with quests, blog posts, and technical
       documentation.
     topics: [education, jekyll, quests]
+    nav:
+      title: IT Journey
+      order: 10
+      exclude: ["link-check-results/**"]
+      groups:
+        - title: Quests
+          match: [".quests"]
+        - title: Repository & tooling
+          match:
+            - ".claude"
+            - ".cms"
+            - ".crush"
+            - ".cursor"
+            - ".devcontainer"
+            - ".frontend"
+            - ".frontmatter"
+            - ".github"
+            - ".issues"
+            - "TODO"
+            - "redirects"
+            - "scripts"
+            - "test"
 
   - name: OverTheWire-website
     repo: OverTheWireOrg/OverTheWire-website
@@ -101,3 +234,6 @@ projects:
       OverTheWire wargame guides and security-challenge documentation
       (external reference corpus).
     topics: [security, wargames, ctf]
+    nav:
+      title: OverTheWire
+      order: 70

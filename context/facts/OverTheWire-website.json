@@ -25,6 +25,41 @@
     "wargames/bandit/index.md",
     "wargames/leviathan/index.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/OverTheWire-website.md",
+    "fingerprint": "ceab543eb82ca094",
+    "index": "OverTheWire-website/README.md",
+    "max_depth": 3,
+    "pages": 232,
+    "present": true,
+    "sections": 17,
+    "skipped": 0,
+    "title": "OverTheWire",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 3,
+        "path": "_includes",
+        "title": "Includes",
+        "type": "section"
+      },
+      {
+        "index": "OverTheWire-website/wargames/index.md",
+        "pages": 219,
+        "path": "wargames",
+        "title": "Index (wargames)",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 8,
+        "path": "information",
+        "title": "Information",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/OverTheWire-website.json"
+  },
   "project": {
     "branch": "gh-pages",
     "external": true,

@@ -1,7 +1,8 @@
 ---
 excerpt: Configuration analytique PostHog, conformité en matière de confidentialité
   et état du suivi.
-icon: bi-graph-up
+icon: material/chart-line
+source_icon: bi-graph-up
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

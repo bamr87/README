@@ -17,38 +17,41 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
        ▲▲  L1  context/cards/      - one distilled card per project
       ▲▲▲  L2  context/facts/      - structured facts (machine layer)
      ▲▲▲▲  L3  docs/               - aggregated markdown corpus (base)
-    ─────  query: context/index/ · CLI `query` · MCP server (mcp/server.py)
+    ─────  navigate: context/nav/ · nav.yml (site) · docs/browse/ (maps)
+    ─────  query:    context/index/ · CLI `query` · MCP server (mcp/server.py)
 ```
 
 ## The fleet
 
-| Project | Kind | Status | Docs | What it is |
-|---|---|---|---|---|
-| [scripts](cards/scripts.md) | tooling | active | 15 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
-| [skills](cards/skills.md) | docs | active | 712 | Agent skills — prompts, MCP configurations, and AI development patterns. |
-| [barodybroject](cards/barodybroject.md) | app | active | 305 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
-| [bashcrawl](cards/bashcrawl.md) | game | active | 45 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 708 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [it-journey](cards/it-journey.md) | site | active | 1122 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
+| Project | Kind | Status | Docs | Sections | What it is |
+|---|---|---|---|---|---|
+| [it-journey](cards/it-journey.md) | site | active | 1121 | 111 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 705 | 106 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [barodybroject](cards/barodybroject.md) | app | active | 299 | 63 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
+| [bashcrawl](cards/bashcrawl.md) | game | active | 45 | 12 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
+| [skills](cards/skills.md) | docs | active | 712 | 254 | Agent skills — prompts, MCP configurations, and AI development patterns. |
+| [scripts](cards/scripts.md) | tooling | active | 15 | 2 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
+| [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 
-### scripts directory
+### IT-Journey
 
-Automation scripts for forking, linting, stashing, and project management across the fleet.
+Educational IT platform with quests, blog posts, and technical documentation.
 
-- Repository: [bamr87/scripts](https://github.com/bamr87/scripts)
-- Card: [context/cards/scripts.md](cards/scripts.md) · Facts: [context/facts/scripts.json](facts/scripts.json)
-- Corpus: [`docs/scripts/`](../docs/scripts/) (15 documents)
-- Topics: automation, bash, python
+- Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
+- Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
+- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1121 documents)
+- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 1115 pages in 111 sections
+- Topics: education, jekyll, quests
 
-### Agent Skills
+### zer0-mistakes
 
-Agent skills — prompts, MCP configurations, and AI development patterns.
+Jekyll theme and software architecture patterns for GitHub Pages.
 
-- Repository: [bamr87/skills](https://github.com/bamr87/skills)
-- Card: [context/cards/skills.md](cards/skills.md) · Facts: [context/facts/skills.json](facts/skills.json)
-- Corpus: [`docs/skills/`](../docs/skills/) (712 documents)
-- Topics: ai, agents, mcp, prompts
+- Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
+- Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (705 documents)
+- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 703 pages in 106 sections
+- Topics: jekyll, theme, github-pages
 
 ### Barodybroject
 
@@ -56,7 +59,8 @@ Full-stack application platform with infrastructure, testing, and deployment too
 
 - Repository: [bamr87/barodybroject](https://github.com/bamr87/barodybroject)
 - Card: [context/cards/barodybroject.md](cards/barodybroject.md) · Facts: [context/facts/barodybroject.json](facts/barodybroject.json)
-- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (305 documents)
+- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (299 documents)
+- Navigation: [tree](nav/barodybroject.json) · [content map](../docs/browse/barodybroject.md) — 298 pages in 63 sections
 - Topics: python, django, azure, full-stack
 
 ### ⚔️ Bashcrawl — learn the terminal by playing
@@ -66,25 +70,28 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 - Repository: [bamr87/bashcrawl](https://github.com/bamr87/bashcrawl)
 - Card: [context/cards/bashcrawl.md](cards/bashcrawl.md) · Facts: [context/facts/bashcrawl.json](facts/bashcrawl.json)
 - Corpus: [`docs/bashcrawl/`](../docs/bashcrawl/) (45 documents)
+- Navigation: [tree](nav/bashcrawl.json) · [content map](../docs/browse/bashcrawl.md) — 44 pages in 12 sections
 - Topics: bash, education, game
 
-### zer0-mistakes
+### Agent Skills
 
-Jekyll theme and software architecture patterns for GitHub Pages.
+Agent skills — prompts, MCP configurations, and AI development patterns.
 
-- Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
-- Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (708 documents)
-- Topics: jekyll, theme, github-pages
+- Repository: [bamr87/skills](https://github.com/bamr87/skills)
+- Card: [context/cards/skills.md](cards/skills.md) · Facts: [context/facts/skills.json](facts/skills.json)
+- Corpus: [`docs/skills/`](../docs/skills/) (712 documents)
+- Navigation: [tree](nav/skills.json) · [content map](../docs/browse/skills.md) — 712 pages in 254 sections
+- Topics: ai, agents, mcp, prompts
 
-### IT-Journey
+### scripts directory
 
-Educational IT platform with quests, blog posts, and technical documentation.
+Automation scripts for forking, linting, stashing, and project management across the fleet.
 
-- Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
-- Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
-- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1122 documents)
-- Topics: education, jekyll, quests
+- Repository: [bamr87/scripts](https://github.com/bamr87/scripts)
+- Card: [context/cards/scripts.md](cards/scripts.md) · Facts: [context/facts/scripts.json](facts/scripts.json)
+- Corpus: [`docs/scripts/`](../docs/scripts/) (15 documents)
+- Navigation: [tree](nav/scripts.json) · [content map](../docs/browse/scripts.md) — 15 pages in 2 sections
+- Topics: automation, bash, python
 
 ### Wargames
 
@@ -93,6 +100,7 @@ OverTheWire wargame guides and security-challenge documentation (external refere
 - Repository: [OverTheWireOrg/OverTheWire-website](https://github.com/OverTheWireOrg/OverTheWire-website) (branch `gh-pages`)
 - Card: [context/cards/OverTheWire-website.md](cards/OverTheWire-website.md) · Facts: [context/facts/OverTheWire-website.json](facts/OverTheWire-website.json)
 - Corpus: [`docs/OverTheWire-website/`](../docs/OverTheWire-website/) (232 documents)
+- Navigation: [tree](nav/OverTheWire-website.json) · [content map](../docs/browse/OverTheWire-website.md) — 232 pages in 17 sections
 - Topics: security, wargames, ctf
 
 ## Query this context
@@ -100,9 +108,10 @@ OverTheWire wargame guides and security-challenge documentation (external refere
 ```bash
 python3 -m scripts.context_engine query <term>     # search the pyramid
 python3 -m scripts.context_engine card <project>   # print a card
+python3 -m scripts.context_engine nav <project>    # navigation tree
 python3 -m scripts.context_engine status           # freshness manifest
 ```
 
 AI clients connect through the MCP server (`mcp/server.py`, registered
 in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,
-`get_readme`, `get_schema`, `context_status`.
+`get_readme`, `get_nav`, `get_schema`, `context_status`.

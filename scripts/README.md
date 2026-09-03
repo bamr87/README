@@ -46,10 +46,11 @@ The documentation processing pipeline automates the following tasks:
 2. **Processing**: Categorize, add frontmatter, and organize documentation
 3. **Validation**: Check for missing metadata, formatting issues, and consistency
 4. **Cleanup**: Normalize tags, fix whitespace, and standardize structure
-5. **Context distillation**: Build the context pyramid (facts → cards → apex README) from the corpus and the fleet registry (`scripts/context_engine/`)
-6. **Serving**: Answer queries over the pyramid via CLI and the MCP server (`mcp/server.py`)
-7. **Schema gate**: Validate the repo's SCHEMA.md structure pyramid (`schema_lint.py`)
-8. **AI Harmonization** (optional/legacy): Intelligent corpus reorganization using the Grok API
+5. **Navigation**: Turn the corpus folder hierarchy into the published sidebar — grouped, titled and ordered per the registry's `navigation:` contract (`scripts/context_engine/navigator.py`)
+6. **Context distillation**: Build the context pyramid (facts → cards → apex README) from the corpus and the fleet registry (`scripts/context_engine/`)
+7. **Serving**: Answer queries and navigation trees over the pyramid via CLI and the MCP server (`mcp/server.py`)
+8. **Schema gate**: Validate the repo's SCHEMA.md structure pyramid (`schema_lint.py`)
+9. **AI Harmonization** (optional/legacy): Intelligent corpus reorganization using the Grok API
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
@@ -85,6 +86,7 @@ scripts/
 ├── process.py              # Documentation processing pipeline
 ├── check_frontmatter.py    # YAML frontmatter validator
 ├── clean_frontmatter.py    # Frontmatter normalizer
+├── fix_frontmatter_icons.py # Navigation gate: icon: frontmatter normalizer
 ├── fix_h1.py               # H1 heading fixer
 ├── fix_whitespace.py       # Trailing whitespace remover
 ├── generate_docs_index.py  # Comprehensive JSON index generator
@@ -123,10 +125,11 @@ scripts/
 | 2. Processing | `raw_docs/` | `docs/` | `process.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
-| 5. Distillation | `docs/` + registry | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
-| 6. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
-| 7. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
-| 8. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
+| 5. Navigation | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `context_engine/navigator.py` |
+| 6. Distillation | `docs/` + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
+| 7. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
+| 8. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
+| 9. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
 
 ---
 
@@ -627,7 +630,7 @@ python3 scripts/generate_docs_index.py --output custom/path/index.json
 
 **Purpose**: Distill the aggregated corpus into the context pyramid — the machinery behind the repo's identity as the monorepo's consolidated README. See `PRD.md` for the product spec and `CLAUDE.md` for architecture notes.
 
-**Pipeline** (one `build` run): `registry` → `extractor` (facts, L2) → `synthesizer` (cards, L1) → `assembler` (apex + root README `AUTO:projects` span + `docs/index.md`, L0) → `indexer` (query index + manifest), with `hooks.d/<stage>/` executables fired between stages.
+**Pipeline** (one `build` run): `registry` → `extractor` (facts, L2) → `navigator` (navigation tree + published surfaces) → `synthesizer` (cards, L1) → `assembler` (apex + root README `AUTO:projects` span + `docs/index.md`, L0) → `indexer` (query index + manifest), with `hooks.d/<stage>/` executables fired between stages.
 
 **Usage**:
 ```bash
@@ -637,6 +640,8 @@ python3 -m scripts.context_engine sync             # _data/projects.yml -> repos
 python3 -m scripts.context_engine query mcp agent  # search the pyramid
 python3 -m scripts.context_engine card bashcrawl   # print one project card
 python3 -m scripts.context_engine facts bashcrawl  # print one fact sheet (JSON)
+python3 -m scripts.context_engine nav              # list every navigable corpus
+python3 -m scripts.context_engine nav it-journey --depth 3   # print a nav tree
 python3 -m scripts.context_engine apex             # print the consolidated README
 python3 -m scripts.context_engine status           # freshness manifest
 python3 -m scripts.context_engine projects         # fleet roster
@@ -644,9 +649,34 @@ python3 -m scripts.context_engine projects         # fleet roster
 
 **AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API.
 
-**Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, root README span, and `docs/index.md`. All generated — never hand-edit.
+**Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/nav/*.json`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, `nav.yml`, `docs/browse/`, root README span, and `docs/index.md`. All generated — never hand-edit.
 
-**Query surfaces**: the same `query.py` API backs the CLI and the MCP server (`../mcp/server.py`, registered in `../.mcp.json` with tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`).
+**Navigation** (`navigator.py`): the stage that makes the published corpus browsable. It walks `docs/<project>/**`, applies the `navigation:` contract from `_data/projects.yml` (grouping, section labels, depth cap, exclusions), and renders one tree onto three surfaces:
+
+| Surface | Consumer | Notes |
+|---|---|---|
+| `context/nav/<project>.json` + `context/nav/index.json` | any frontend, the CLI, MCP `get_nav` | nested `section`/`group`/`page` nodes with titles, paths, icons and page counts |
+| `nav.yml` | MkDocs (`mkdocs.yml` pulls it in with `INHERIT`) | the site `nav` **and** the `exclude_docs` rules that keep the published page set identical to the tree |
+| `docs/browse/*.md` | readers | one content map per corpus plus a fleet index |
+
+Derivation rules: titles come from frontmatter `title` → first H1 → humanized filename (a section adopts its index page's title unless the registry names it); `index.md`/`README.md` become the section's landing page; ordering is landing page → pages → subsections, each by explicit frontmatter order (`nav_order`/`order`/`weight`/`sidebar_position`) then title; a folder holding a single page is collapsed into that page; pages below `max_depth` are flattened into the deepest allowed section rather than dropped; `nav_exclude: true` in a page's frontmatter keeps it out. Output carries a content fingerprint and no timestamps, so an unchanged corpus rebuilds to an empty diff.
+
+**Query surfaces**: the same `query.py` API backs the CLI and the MCP server (`../mcp/server.py`, registered in `../.mcp.json` with tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`).
+
+---
+
+### `fix_frontmatter_icons.py`
+
+**Purpose**: Navigation gate. MkDocs Material resolves `page.meta.icon` as a bundled SVG for **every navigation entry**, so a page carrying an upstream icon vocabulary (Bootstrap Icons across this fleet: `icon: bi-gear`) raises `TemplateNotFound` and fails the whole site build the moment it appears in the nav. That is why the site's navigation used to be hand-curated. This normalizer maps known Bootstrap names onto Material equivalents, drops the rest, and preserves the original as `source_icon` so upstream intent survives the round trip.
+
+**Usage**:
+```bash
+python3 scripts/fix_frontmatter_icons.py                    # report (exit 1 if any remain)
+python3 scripts/fix_frontmatter_icons.py --apply            # rewrite in place
+python3 scripts/fix_frontmatter_icons.py --root docs/skills --apply
+```
+
+Runs automatically in two places: `process.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.
 
 ---
 

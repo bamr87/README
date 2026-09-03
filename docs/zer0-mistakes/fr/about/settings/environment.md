@@ -1,7 +1,8 @@
 ---
 excerpt: Environnement Jekyll, détails du build, version de Ruby, informations sur
   le thème et liste des plugins.
-icon: bi-hdd-network
+icon: material/server-network
+source_icon: bi-hdd-network
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

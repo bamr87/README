@@ -10,7 +10,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from .config import (
-    APEX_PATH, CARDS_DIR, CONTEXT_INDEX_PATH, FACTS_DIR, MANIFEST_PATH, ROOT,
+    APEX_PATH, CARDS_DIR, CONTEXT_INDEX_PATH, FACTS_DIR, MANIFEST_PATH,
+    NAV_DIR, NAV_FLEET_PATH, ROOT,
 )
 
 
@@ -40,6 +41,35 @@ def get_card(name: str) -> str:
 
 def get_facts(name: str) -> Dict:
     return json.loads(_require(FACTS_DIR / f"{name}.json").read_text(encoding="utf-8"))
+
+
+def get_nav(name: Optional[str] = None) -> Dict:
+    """Navigation tree for one corpus, or the fleet navigation manifest."""
+    path = NAV_FLEET_PATH if not name else NAV_DIR / f"{name}.json"
+    return json.loads(_require(path).read_text(encoding="utf-8"))
+
+
+def list_nav(index: Optional[Dict] = None) -> List[Dict]:
+    """Every navigable corpus with its page/section counts, in sidebar order."""
+    fleet = get_nav()
+    projects = fleet.get("projects", {})
+    ordered = [n for n in fleet.get("order", []) if n in projects]
+    ordered += [n for n in projects if n not in ordered]
+    return [{"name": name, **projects[name]} for name in ordered]
+
+
+def nav_paths(node: Dict, out: Optional[List[Dict]] = None,
+              trail: Optional[List[str]] = None) -> List[Dict]:
+    """Flatten a navigation tree into `{path, title, breadcrumb}` rows."""
+    out = [] if out is None else out
+    trail = trail or []
+    for child in node.get("children") or []:
+        if child.get("type") == "page":
+            out.append({"path": child.get("path"), "title": child.get("title"),
+                        "breadcrumb": trail + [child.get("title", "")]})
+        else:
+            nav_paths(child, out, trail + [child.get("title", "")])
+    return out
 
 
 def get_manifest() -> Dict:

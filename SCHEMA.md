@@ -17,6 +17,11 @@ coverage: listed
 - The context pyramid distills upward: `docs/` corpus (L3) → `context/facts/`
   (L2) → `context/cards/` (L1) → `context/README.md` apex (L0). Rebuild with
   `python3 -m scripts.context_engine build`.
+- Navigation is derived, never curated: the corpus folder hierarchy plus the
+  `navigation:` contract in `_data/projects.yml` is rendered by the engine's
+  navigator into `context/nav/` (frontend-agnostic), `nav.yml` (the site's
+  sidebar), and `docs/browse/` (human content maps). Regroup a sidebar by
+  editing the registry, never the nav.
 - `docs/*` mirrors independent repos: the pyramid stops at their boundary
   (`terminal`); each fleet project carries its own pyramid in its own repo.
 - Validate with `python3 scripts/schema_lint.py check .` — wired into the
@@ -47,7 +52,8 @@ coverage: listed
 | `WIKI-TEST-REPORT.md` | file | Wiki.js integration test report | |
 | `WIKIJS-QUICKSTART.md` | file | Wiki.js quickstart guide | |
 | `docker-compose.yml` | file | Wiki.js + Postgres stack (mounts docs/ read-only) | |
-| `mkdocs.yml` | file | MkDocs Material config for the published site | required |
+| `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT` | required |
+| `nav.yml` | file | Published navigation: MkDocs `nav` + `exclude_docs`, rendered by the engine's navigator | generated |
 | `repos.txt` | file | Aggregation input — regenerated from _data/projects.yml | generated |
 | `requirements-docs.txt` | file | Python deps for the MkDocs build | |
 | `requirements.txt` | file | Python deps for pipeline + engine | |
@@ -59,11 +65,14 @@ coverage: listed
 - New engine build hook → `hooks.d/<stage>/NN-name` (executable), stages listed in `hooks.d/SCHEMA.md`
 - New MCP tool → `mcp/server.py` + `mcp/README.md`
 - New registry → `_data/`, registered in `_data/SCHEMA.md`
+- New sidebar grouping → a project's `nav.groups` in `_data/projects.yml`, then rebuild
 
 ## Forbidden
 
 - No hand edits to generated surfaces: `context/`, `docs/`, `repos.txt`,
-  `site/`, or the README `AUTO:projects` span — fix the registry, the source
-  repo, or the engine instead.
+  `nav.yml`, `site/`, or the README `AUTO:projects` span — fix the registry,
+  the source repo, or the engine instead.
+- No `nav:` key in `mkdocs.yml` — it would shadow the generated one and the
+  sidebar would silently stop tracking the corpus.
 - No fleet-project source code here — it belongs in the project's own repo;
   this repo only carries distilled context about it.

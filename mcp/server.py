@@ -12,9 +12,10 @@ Run directly (registered for Claude Code in .mcp.json):
     python3 mcp/server.py
 
 Tools:    list_projects, get_project, search_context, get_readme,
-          get_schema, context_status
+          get_nav, get_schema, context_status
 Resources: context://apex, context://index, context://manifest,
-           context://cards/<name>, context://facts/<name>
+           context://cards/<name>, context://facts/<name>,
+           context://nav, context://nav/<name>
 """
 
 import json
@@ -27,8 +28,8 @@ sys.path.insert(0, str(ROOT))
 
 from scripts.context_engine import ENGINE_VERSION                    # noqa: E402
 from scripts.context_engine.query import (                           # noqa: E402
-    ContextMissing, get_apex, get_card, get_facts, get_manifest,
-    list_projects, load_index, search,
+    ContextMissing, get_apex, get_card, get_facts, get_manifest, get_nav,
+    list_nav, list_projects, load_index, nav_paths, search,
 )
 
 SERVER_INFO = {"name": "readme-context-engine", "version": ENGINE_VERSION}
@@ -74,6 +75,26 @@ TOOLS: List[Dict[str, Any]] = [
                        "pyramid) describing the whole fleet.",
         "inputSchema": {"type": "object", "properties": {},
                         "additionalProperties": False},
+    },
+    {
+        "name": "get_nav",
+        "description": "Navigation tree for a documentation corpus: the "
+                       "grouped section/page hierarchy published in the site "
+                       "sidebar. Omit `name` to list every navigable corpus. "
+                       "Use `flat` to get every page as a path plus its "
+                       "breadcrumb instead of the nested tree.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string",
+                         "description": "Corpus name from list_projects or get_nav"},
+                "depth": {"type": "integer", "minimum": 1, "maximum": 10,
+                          "description": "Section levels to return (default: 3)"},
+                "flat": {"type": "boolean",
+                         "description": "Return a flat page list with breadcrumbs"},
+            },
+            "additionalProperties": False,
+        },
     },
     {
         "name": "get_schema",
@@ -130,6 +151,37 @@ def _tool_get_readme(_args: Dict) -> Dict:
     return _text_result(get_apex())
 
 
+def _prune_depth(node: Dict, depth: int) -> Dict:
+    """Trim a navigation tree to `depth` section levels."""
+    trimmed = {k: v for k, v in node.items() if k != "children"}
+    children = node.get("children") or []
+    if depth <= 0:
+        if children:
+            trimmed["children_omitted"] = len(children)
+        return trimmed
+    trimmed["children"] = [
+        child if child.get("type") == "page" else _prune_depth(child, depth - 1)
+        for child in children
+    ]
+    return trimmed
+
+
+def _tool_get_nav(args: Dict) -> Dict:
+    name = str(args.get("name", "")).strip()
+    if not name:
+        return _text_result(json.dumps(list_nav(), indent=2))
+    nav = get_nav(name)
+    if args.get("flat"):
+        return _text_result(json.dumps({
+            "project": nav["project"], "title": nav["title"],
+            "counts": nav["counts"],
+            "pages": nav_paths(nav["tree"]),
+        }, indent=2))
+    depth = int(args.get("depth", 3))
+    nav = {**nav, "tree": _prune_depth(nav["tree"], depth)}
+    return _text_result(json.dumps(nav, indent=2))
+
+
 def _tool_get_schema(args: Dict) -> Dict:
     rel = str(args.get("path", "")).strip().strip("/")
     target = (ROOT / rel / "SCHEMA.md").resolve()
@@ -147,6 +199,7 @@ TOOL_HANDLERS = {
     "get_project": _tool_get_project,
     "search_context": _tool_search_context,
     "get_readme": _tool_get_readme,
+    "get_nav": _tool_get_nav,
     "get_schema": _tool_get_schema,
     "context_status": _tool_context_status,
 }
@@ -160,6 +213,9 @@ def _resource_catalog() -> List[Dict]:
          "description": "Query index over the pyramid", "mimeType": "application/json"},
         {"uri": "context://manifest", "name": "Freshness manifest",
          "description": "Generation metadata and fingerprints", "mimeType": "application/json"},
+        {"uri": "context://nav", "name": "Fleet navigation",
+         "description": "Every navigable corpus with page and section counts",
+         "mimeType": "application/json"},
     ]
     try:
         for project in list_projects():
@@ -171,6 +227,10 @@ def _resource_catalog() -> List[Dict]:
             resources.append({
                 "uri": f"context://facts/{name}", "name": f"{name} facts",
                 "description": f"Structured facts for {name}",
+                "mimeType": "application/json"})
+            resources.append({
+                "uri": f"context://nav/{name}", "name": f"{name} navigation",
+                "description": f"Published section/page hierarchy for {name}",
                 "mimeType": "application/json"})
     except ContextMissing:
         pass
@@ -186,6 +246,12 @@ def _read_resource(uri: str) -> Dict:
     if uri == "context://manifest":
         return {"uri": uri, "mimeType": "application/json",
                 "text": json.dumps(get_manifest(), indent=2)}
+    if uri == "context://nav":
+        return {"uri": uri, "mimeType": "application/json",
+                "text": json.dumps(list_nav(), indent=2)}
+    if uri.startswith("context://nav/"):
+        return {"uri": uri, "mimeType": "application/json",
+                "text": json.dumps(get_nav(uri.rsplit("/", 1)[1]), indent=2)}
     if uri.startswith("context://cards/"):
         return {"uri": uri, "mimeType": "text/markdown",
                 "text": get_card(uri.rsplit("/", 1)[1])}
@@ -220,8 +286,10 @@ def handle_request(request: Dict) -> Optional[Dict]:
             "instructions": (
                 "Read-only context engine for the bamr87 fleet. Start with "
                 "list_projects or search_context; get_readme returns the "
-                "consolidated fleet README. If context_status reports stale "
-                "data, rebuild with `python3 -m scripts.context_engine build`."),
+                "consolidated fleet README and get_nav returns a corpus's "
+                "published section/page hierarchy (use it to locate a document "
+                "before reading it). If context_status reports stale data, "
+                "rebuild with `python3 -m scripts.context_engine build`."),
         })
     if method == "ping":
         return result({})

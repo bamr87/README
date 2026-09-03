@@ -1,0 +1,2530 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "barodybroject",
+  "title": "Barody Project",
+  "corpus": "docs/barodybroject",
+  "counts": {
+    "pages": 298,
+    "sections": 63,
+    "max_depth": 7,
+    "skipped": 1
+  },
+  "skipped": [
+    "src/README.md"
+  ],
+  "fingerprint": "46d78858872bdcb1",
+  "tree": {
+    "type": "section",
+    "title": "Barody Project",
+    "index": "barodybroject/README.md",
+    "pages": 298,
+    "children": [
+      {
+        "type": "group",
+        "title": "Repository & tooling",
+        "order": 0.0,
+        "index": "barodybroject/.github/README.md",
+        "pages": 45,
+        "children": [
+          {
+            "type": "page",
+            "title": "Dev Container",
+            "path": "barodybroject/.devcontainer/README.md",
+            "rel": ".devcontainer/README.md",
+            "folder": ".devcontainer"
+          },
+          {
+            "type": "section",
+            "title": "GitHub",
+            "rel": ".github",
+            "index": "barodybroject/.github/README.md",
+            "pages": 35,
+            "children": [
+              {
+                "type": "page",
+                "title": "Parody News Generator - Developer Guide",
+                "path": "barodybroject/.github/README.md",
+                "rel": ".github/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Barodybroject \u2014 Agent Instructions",
+                "path": "barodybroject/.github/copilot-instructions.md",
+                "rel": ".github/copilot-instructions.md"
+              },
+              {
+                "type": "page",
+                "title": "Commit & Publish Workflow",
+                "path": "barodybroject/.github/prompts/commit-publish.prompt.md",
+                "rel": ".github/prompts/commit-publish.prompt.md",
+                "folder": ".github/prompts"
+              },
+              {
+                "type": "page",
+                "title": "Skills",
+                "path": "barodybroject/.github/skills/azure-deploy/SKILL.md",
+                "rel": ".github/skills/azure-deploy/SKILL.md",
+                "folder": ".github/skills"
+              },
+              {
+                "type": "page",
+                "title": "Workflow Scripts",
+                "path": "barodybroject/.github/scripts/README.md",
+                "rel": ".github/scripts/README.md",
+                "folder": ".github/scripts"
+              },
+              {
+                "type": "section",
+                "title": "GitHub Actions Workflows",
+                "rel": ".github/workflows",
+                "index": "barodybroject/.github/workflows/README.md",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "GitHub Actions Workflows",
+                    "path": "barodybroject/.github/workflows/README.md",
+                    "rel": ".github/workflows/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Archived Workflows",
+                    "path": "barodybroject/.github/workflows/archive/README.md",
+                    "rel": ".github/workflows/archive/README.md",
+                    "folder": ".github/workflows/archive"
+                  },
+                  {
+                    "type": "page",
+                    "title": "GitHub Actions Workflow Fixes and Improvements",
+                    "path": "barodybroject/.github/workflows/WORKFLOW_FIXES.md",
+                    "rel": ".github/workflows/WORKFLOW_FIXES.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Workflow Changes Summary",
+                    "path": "barodybroject/.github/workflows/CHANGES_SUMMARY.md",
+                    "rel": ".github/workflows/CHANGES_SUMMARY.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "GitHub Agents",
+                "rel": ".github/agents",
+                "index": "barodybroject/.github/agents/README.md",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "GitHub Agents",
+                    "path": "barodybroject/.github/agents/README.md",
+                    "rel": ".github/agents/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Example Infrastructure Test PR",
+                    "path": "barodybroject/.github/agents/examples/infra-test-example-pr.md",
+                    "rel": ".github/agents/examples/infra-test-example-pr.md",
+                    "folder": ".github/agents/examples"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Grokme",
+                    "path": "barodybroject/.github/agents/grokme.md",
+                    "rel": ".github/agents/grokme.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Infrastructure Tester Agent",
+                    "path": "barodybroject/.github/agents/infra-tester.md",
+                    "rel": ".github/agents/infra-tester.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Workflow Reviewer Agent",
+                    "path": "barodybroject/.github/agents/workflow-reviewer.md",
+                    "rel": ".github/agents/workflow-reviewer.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "\ud83d\udcda DONTREADME.md: The Forbidden Librarian's Grimoire",
+                    "path": "barodybroject/.github/agents/dontreadme.md",
+                    "rel": ".github/agents/dontreadme.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Instructions Directory",
+                "rel": ".github/instructions",
+                "index": "barodybroject/.github/instructions/README.md",
+                "pages": 10,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Instructions Directory",
+                    "path": "barodybroject/.github/instructions/README.md",
+                    "rel": ".github/instructions/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Content Creation Instructions for Barodybroject",
+                    "path": "barodybroject/.github/instructions/posts.instructions.md",
+                    "rel": ".github/instructions/posts.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Documentation Standards",
+                    "path": "barodybroject/.github/instructions/documentation.instructions.md",
+                    "rel": ".github/instructions/documentation.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Development Pipeline for Barodybroject",
+                    "path": "barodybroject/.github/instructions/features.instructions.md",
+                    "rel": ".github/instructions/features.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "GitHub Actions Workflow Standards",
+                    "path": "barodybroject/.github/instructions/workflows.instructions.md",
+                    "rel": ".github/instructions/workflows.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Language-Specific Coding Standards",
+                    "path": "barodybroject/.github/instructions/languages.instructions.md",
+                    "rel": ".github/instructions/languages.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Project-Specific Facts (Source of Truth)",
+                    "path": "barodybroject/.github/instructions/project.instructions.md",
+                    "rel": ".github/instructions/project.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Testing Standards",
+                    "path": "barodybroject/.github/instructions/test.instructions.md",
+                    "rel": ".github/instructions/test.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Unified Frontmatter Standards",
+                    "path": "barodybroject/.github/instructions/frontmatter.standards.md",
+                    "rel": ".github/instructions/frontmatter.standards.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Workspace Organization Guidelines for Barodybroject",
+                    "path": "barodybroject/.github/instructions/space.instructions.md",
+                    "rel": ".github/instructions/space.instructions.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "ISSUETEMPLATE Directory",
+                "rel": ".github/ISSUE_TEMPLATE",
+                "index": "barodybroject/.github/ISSUE_TEMPLATE/README.md",
+                "pages": 10,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "ISSUETEMPLATE Directory",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/README.md",
+                    "rel": ".github/ISSUE_TEMPLATE/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bug Report",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/bug_report.md",
+                    "rel": ".github/ISSUE_TEMPLATE/bug_report.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Custom",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/custom.md",
+                    "rel": ".github/ISSUE_TEMPLATE/custom.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Request",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request.md",
+                    "rel": ".github/ISSUE_TEMPLATE/feature_request.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Request Functional Requirements",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_requirements.md",
+                    "rel": ".github/ISSUE_TEMPLATE/feature_request_functional_requirements.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Request Functional Test",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_test.md",
+                    "rel": ".github/ISSUE_TEMPLATE/feature_request_functional_test.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Request Technical Requirements",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_requirements.md",
+                    "rel": ".github/ISSUE_TEMPLATE/feature_request_technical_requirements.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature Request Technical Tests",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_tests.md",
+                    "rel": ".github/ISSUE_TEMPLATE/feature_request_technical_tests.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Issue Detail Template",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/issue_detail_template.md",
+                    "rel": ".github/ISSUE_TEMPLATE/issue_detail_template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Issue Template",
+                    "path": "barodybroject/.github/ISSUE_TEMPLATE/issue_template.md",
+                    "rel": ".github/ISSUE_TEMPLATE/issue_template.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Infrastructure",
+            "rel": "infra",
+            "index": "barodybroject/infra/README.md",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "infra/ Directory",
+                "path": "barodybroject/infra/README.md",
+                "rel": "infra/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "app Directory",
+                "path": "barodybroject/infra/app/README.md",
+                "rel": "infra/app/README.md",
+                "folder": "infra/app"
+              },
+              {
+                "type": "page",
+                "title": "Minimal Cost Infrastructure Migration",
+                "path": "barodybroject/infra/MIGRATION-MINIMAL-COST.md",
+                "rel": "infra/MIGRATION-MINIMAL-COST.md"
+              },
+              {
+                "type": "page",
+                "title": "modules Directory",
+                "path": "barodybroject/infra/modules/README.md",
+                "rel": "infra/modules/README.md",
+                "folder": "infra/modules"
+              },
+              {
+                "type": "page",
+                "title": "shared Directory",
+                "path": "barodybroject/infra/shared/README.md",
+                "rel": "infra/shared/README.md",
+                "folder": "infra/shared"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Scripts",
+            "rel": "scripts",
+            "index": "barodybroject/scripts/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Scripts",
+                "path": "barodybroject/scripts/README.md",
+                "rel": "scripts/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Azure Deployment Setup Examples",
+                "path": "barodybroject/scripts/setup-examples.md",
+                "rel": "scripts/setup-examples.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Test Suite for Installation Wizard",
+            "rel": "test",
+            "index": "barodybroject/test/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Test Suite for Installation Wizard",
+                "path": "barodybroject/test/README.md",
+                "rel": "test/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Installation Wizard Test Infrastructure",
+                "path": "barodybroject/test/TEST_INFRASTRUCTURE.md",
+                "rel": "test/TEST_INFRASTRUCTURE.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "title": "Barodybroject",
+        "path": "barodybroject/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "barodybroject/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "CLAUDE.md",
+        "path": "barodybroject/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributing to Parody News Generator",
+        "path": "barodybroject/CONTRIBUTING.md",
+        "rel": "CONTRIBUTING.md"
+      },
+      {
+        "type": "page",
+        "title": "DONTREADME.md - The Forbidden Knowledge Vault",
+        "path": "barodybroject/DONTREADME.md",
+        "rel": "DONTREADME.md"
+      },
+      {
+        "type": "page",
+        "title": "Implementation Summary: Automatic Django Admin Credentials",
+        "path": "barodybroject/IMPLEMENTATION_SUMMARY.md",
+        "rel": "IMPLEMENTATION_SUMMARY.md"
+      },
+      {
+        "type": "page",
+        "title": "Product Requirements Document (PRD)",
+        "path": "barodybroject/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "TODO: Project Issues and Enhancements",
+        "path": "barodybroject/TODO.md",
+        "rel": "TODO.md"
+      },
+      {
+        "type": "page",
+        "title": "\ud83d\udd10 Admin Credentials Quick Start",
+        "path": "barodybroject/ADMIN_CREDENTIALS_QUICKSTART.md",
+        "rel": "ADMIN_CREDENTIALS_QUICKSTART.md"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "barodybroject/docs/README.md",
+        "pages": 49,
+        "children": [
+          {
+            "type": "page",
+            "title": "Documentation",
+            "path": "barodybroject/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Admin Credentials Auto-Setup - Implementation Summary",
+            "path": "barodybroject/docs/ADMIN_CREDENTIALS_SETUP.md",
+            "rel": "docs/ADMIN_CREDENTIALS_SETUP.md"
+          },
+          {
+            "type": "page",
+            "title": "Barodybroject Quick Reference Card",
+            "path": "barodybroject/docs/QUICK_REFERENCE.md",
+            "rel": "docs/QUICK_REFERENCE.md"
+          },
+          {
+            "type": "page",
+            "title": "Barodybroject Security Documentation",
+            "path": "barodybroject/docs/SECURITY_DOCUMENTATION.md",
+            "rel": "docs/SECURITY_DOCUMENTATION.md"
+          },
+          {
+            "type": "page",
+            "title": "CI/CD Pipeline Documentation",
+            "path": "barodybroject/docs/ci-cd-pipeline.md",
+            "rel": "docs/ci-cd-pipeline.md"
+          },
+          {
+            "type": "page",
+            "title": "Django-Bootstrap5 Migration Summary",
+            "path": "barodybroject/docs/DJANGO_BOOTSTRAP5_MIGRATION.md",
+            "rel": "docs/DJANGO_BOOTSTRAP5_MIGRATION.md"
+          },
+          {
+            "type": "page",
+            "title": "Documentation Refactoring Summary",
+            "path": "barodybroject/docs/REFACTORING_SUMMARY.md",
+            "rel": "docs/REFACTORING_SUMMARY.md"
+          },
+          {
+            "type": "page",
+            "title": "Infrastructure Test Report - October 31, 2024",
+            "path": "barodybroject/docs/infrastructure-test-report-20251031.md",
+            "rel": "docs/infrastructure-test-report-20251031.md"
+          },
+          {
+            "type": "page",
+            "title": "Infrastructure Testing Documentation",
+            "path": "barodybroject/docs/INFRASTRUCTURE_TESTING.md",
+            "rel": "docs/INFRASTRUCTURE_TESTING.md"
+          },
+          {
+            "type": "page",
+            "title": "Init Setup Script Test Results",
+            "path": "barodybroject/docs/INIT_SETUP_TEST_RESULTS.md",
+            "rel": "docs/INIT_SETUP_TEST_RESULTS.md"
+          },
+          {
+            "type": "page",
+            "title": "Init Setup Script Testing Summary",
+            "path": "barodybroject/docs/TEST_SUMMARY.md",
+            "rel": "docs/TEST_SUMMARY.md"
+          },
+          {
+            "type": "page",
+            "title": "Installation Wizard Documentation",
+            "path": "barodybroject/docs/installation-wizard.md",
+            "rel": "docs/installation-wizard.md"
+          },
+          {
+            "type": "page",
+            "title": "Setup System Enhancement Summary",
+            "path": "barodybroject/docs/SETUP_SYSTEM_ENHANCEMENT_SUMMARY.md",
+            "rel": "docs/SETUP_SYSTEM_ENHANCEMENT_SUMMARY.md"
+          },
+          {
+            "type": "page",
+            "title": "Workflow Review Complete \u2705",
+            "path": "barodybroject/docs/WORKFLOW_REVIEW_COMPLETE.md",
+            "rel": "docs/WORKFLOW_REVIEW_COMPLETE.md"
+          },
+          {
+            "type": "section",
+            "title": "Barodybroject Features Documentation",
+            "rel": "docs/features",
+            "index": "barodybroject/docs/features/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Barodybroject Features Documentation",
+                "path": "barodybroject/docs/features/README.md",
+                "rel": "docs/features/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Ecosystem Integration Features",
+                "path": "barodybroject/docs/features/ecosystem-integration.md",
+                "rel": "docs/features/ecosystem-integration.md"
+              },
+              {
+                "type": "page",
+                "title": "Instruction File Harmonization Features",
+                "path": "barodybroject/docs/features/instruction-harmonization.md",
+                "rel": "docs/features/instruction-harmonization.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Changelog Documentation System",
+            "rel": "docs/changelog",
+            "index": "barodybroject/docs/changelog/README.md",
+            "pages": 19,
+            "children": [
+              {
+                "type": "page",
+                "title": "Changelog Documentation System",
+                "path": "barodybroject/docs/changelog/README.md",
+                "rel": "docs/changelog/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Changelog",
+                "path": "barodybroject/docs/changelog/CHANGELOG.md",
+                "rel": "docs/changelog/CHANGELOG.md"
+              },
+              {
+                "type": "page",
+                "title": "Contributing Changes Documentation",
+                "path": "barodybroject/docs/changelog/CONTRIBUTING_CHANGES.md",
+                "rel": "docs/changelog/CONTRIBUTING_CHANGES.md"
+              },
+              {
+                "type": "section",
+                "title": "Archive",
+                "rel": "docs/changelog/archive",
+                "pages": 5,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "CHANGELOG - Template Improvements & Testing",
+                    "path": "barodybroject/docs/changelog/archive/CHANGELOG_SUMMARY.md",
+                    "rel": "docs/changelog/archive/CHANGELOG_SUMMARY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Docker Debugging Setup for Barodybroject",
+                    "path": "barodybroject/docs/changelog/archive/DEBUG_READY.md",
+                    "rel": "docs/changelog/archive/DEBUG_READY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Docker Simplification Summary",
+                    "path": "barodybroject/docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md",
+                    "rel": "docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Framework Simplification Summary",
+                    "path": "barodybroject/docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md",
+                    "rel": "docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Template Improvements - Quick Reference",
+                    "path": "barodybroject/docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md",
+                    "rel": "docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Releases",
+                "rel": "docs/changelog/releases",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "section",
+                    "title": "Release v1.0.0 Documentation Index",
+                    "rel": "docs/changelog/releases/v1.0.0",
+                    "index": "barodybroject/docs/changelog/releases/v1.0.0/README.md",
+                    "pages": 4,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Release v1.0.0 Documentation Index",
+                        "path": "barodybroject/docs/changelog/releases/v1.0.0/README.md",
+                        "rel": "docs/changelog/releases/v1.0.0/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "Migration Guide: v0.1.0 \u2192 v1.0.0",
+                        "path": "barodybroject/docs/changelog/releases/v1.0.0/migration-guide.md",
+                        "rel": "docs/changelog/releases/v1.0.0/migration-guide.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Release v1.0.0 - Django Settings Optimization",
+                        "path": "barodybroject/docs/changelog/releases/v1.0.0/release-summary.md",
+                        "rel": "docs/changelog/releases/v1.0.0/release-summary.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Technical Implementation Details - v1.0.0",
+                        "path": "barodybroject/docs/changelog/releases/v1.0.0/technical-details.md",
+                        "rel": "docs/changelog/releases/v1.0.0/technical-details.md"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Summaries",
+                "rel": "docs/changelog/summaries",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Bug Fix: Thread message delete raised TypeError, and deleted locally\u2026",
+                    "path": "barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md",
+                    "rel": "docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Docker Configuration Consolidation Change Documentation",
+                    "path": "barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md",
+                    "rel": "docs/changelog/summaries/2025-10-26-docker-consolidation.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Templates",
+                "rel": "docs/changelog/templates",
+                "pages": 5,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Breaking Change: [Breaking Change Title]",
+                    "path": "barodybroject/docs/changelog/templates/breaking-template.md",
+                    "rel": "docs/changelog/templates/breaking-template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bug Fix: [Bug Title]",
+                    "path": "barodybroject/docs/changelog/templates/bugfix-template.md",
+                    "rel": "docs/changelog/templates/bugfix-template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Feature: [Feature Name]",
+                    "path": "barodybroject/docs/changelog/templates/feature-template.md",
+                    "rel": "docs/changelog/templates/feature-template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Improvement: [Improvement Title]",
+                    "path": "barodybroject/docs/changelog/templates/improvement-template.md",
+                    "rel": "docs/changelog/templates/improvement-template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Security Update: [Security Issue Title]",
+                    "path": "barodybroject/docs/changelog/templates/security-template.md",
+                    "rel": "docs/changelog/templates/security-template.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Deployment Documentation",
+            "rel": "docs/deployment",
+            "index": "barodybroject/docs/deployment/README.md",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Deployment Documentation",
+                "path": "barodybroject/docs/deployment/README.md",
+                "rel": "docs/deployment/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Infrastructure Changes Documentation",
+                "path": "barodybroject/docs/deployment/INFRASTRUCTURE_CHANGES.md",
+                "rel": "docs/deployment/INFRASTRUCTURE_CHANGES.md"
+              },
+              {
+                "type": "page",
+                "title": "\u2705 Successful Azure Container Apps Deployment",
+                "path": "barodybroject/docs/deployment/DEPLOYMENT-SUCCESS.md",
+                "rel": "docs/deployment/DEPLOYMENT-SUCCESS.md"
+              },
+              {
+                "type": "page",
+                "title": "\ud83d\ude80 Quick Deployment Guide - Minimal Cost Setup",
+                "path": "barodybroject/docs/deployment/DEPLOYMENT-GUIDE-MINIMAL.md",
+                "rel": "docs/deployment/DEPLOYMENT-GUIDE-MINIMAL.md"
+              },
+              {
+                "type": "page",
+                "title": "\ud83d\udea8 Azure Subscription Quota Issue - Solutions",
+                "path": "barodybroject/docs/deployment/QUOTA_ISSUE_SOLUTIONS.md",
+                "rel": "docs/deployment/QUOTA_ISSUE_SOLUTIONS.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Django Configuration Documentation",
+            "rel": "docs/configuration",
+            "index": "barodybroject/docs/configuration/README.md",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Django Configuration Documentation",
+                "path": "barodybroject/docs/configuration/README.md",
+                "rel": "docs/configuration/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Django Admin Credentials Configuration",
+                "path": "barodybroject/docs/configuration/admin-credentials.md",
+                "rel": "docs/configuration/admin-credentials.md"
+              },
+              {
+                "type": "page",
+                "title": "Django Settings Optimization Guide",
+                "path": "barodybroject/docs/configuration/settings-optimization.md",
+                "rel": "docs/configuration/settings-optimization.md"
+              },
+              {
+                "type": "page",
+                "title": "Ecosystem Integration Configuration",
+                "path": "barodybroject/docs/configuration/ecosystem-integration-config.md",
+                "rel": "docs/configuration/ecosystem-integration-config.md"
+              },
+              {
+                "type": "page",
+                "title": "Environment Configuration Guide",
+                "path": "barodybroject/docs/configuration/environment-config.md",
+                "rel": "docs/configuration/environment-config.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Migration Documentation",
+            "rel": "docs/migration",
+            "index": "barodybroject/docs/migration/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Migration Documentation",
+                "path": "barodybroject/docs/migration/README.md",
+                "rel": "docs/migration/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Django CMS Removal Guide",
+                "path": "barodybroject/docs/migration/CMS_REMOVAL_GUIDE.md",
+                "rel": "docs/migration/CMS_REMOVAL_GUIDE.md"
+              },
+              {
+                "type": "page",
+                "title": "Migration Documentation - v0.2.0",
+                "path": "barodybroject/docs/migration/MIGRATION_GUIDE.md",
+                "rel": "docs/migration/MIGRATION_GUIDE.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Source",
+        "rel": "src",
+        "index": "barodybroject/src/index.md",
+        "pages": 122,
+        "children": [
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "barodybroject/src/index.md",
+            "rel": "src/index.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "barodybroject Directory",
+            "path": "barodybroject/src/barodybroject/README.md",
+            "rel": "src/barodybroject/README.md",
+            "folder": "src/barodybroject"
+          },
+          {
+            "type": "page",
+            "title": "Installation Wizard Setup Guide",
+            "path": "barodybroject/src/setup/README.md",
+            "rel": "src/setup/README.md",
+            "folder": "src/setup"
+          },
+          {
+            "type": "page",
+            "title": "scripts Directory",
+            "path": "barodybroject/src/scripts/README.md",
+            "rel": "src/scripts/README.md",
+            "folder": "src/scripts"
+          },
+          {
+            "type": "section",
+            "title": "assets Directory",
+            "rel": "src/assets",
+            "index": "barodybroject/src/assets/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "assets Directory",
+                "path": "barodybroject/src/assets/README.md",
+                "rel": "src/assets/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "images Directory",
+                "path": "barodybroject/src/assets/images/README.md",
+                "rel": "src/assets/images/README.md",
+                "folder": "src/assets/images"
+              },
+              {
+                "type": "page",
+                "title": "js Directory",
+                "path": "barodybroject/src/assets/js/README.md",
+                "rel": "src/assets/js/README.md",
+                "folder": "src/assets/js"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "pages Directory",
+            "rel": "src/pages",
+            "index": "barodybroject/src/pages/README.md",
+            "pages": 66,
+            "children": [
+              {
+                "type": "page",
+                "title": "pages Directory",
+                "path": "barodybroject/src/pages/README.md",
+                "rel": "src/pages/README.md",
+                "is_index": true
+              },
+              {
+                "type": "section",
+                "title": "about Directory",
+                "rel": "src/pages/_about",
+                "index": "barodybroject/src/pages/_about/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "about Directory",
+                    "path": "barodybroject/src/pages/_about/README.md",
+                    "rel": "src/pages/_about/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "About",
+                    "path": "barodybroject/src/pages/_about/about.md",
+                    "rel": "src/pages/_about/about.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Data",
+                "rel": "src/pages/_data",
+                "index": "barodybroject/src/pages/_data/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Readme",
+                    "path": "barodybroject/src/pages/_data/README.md",
+                    "rel": "src/pages/_data/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "navigation Directory",
+                    "path": "barodybroject/src/pages/_data/navigation/README.md",
+                    "rel": "src/pages/_data/navigation/README.md",
+                    "folder": "src/pages/_data/navigation"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "docs Directory",
+                "rel": "src/pages/_docs",
+                "index": "barodybroject/src/pages/_docs/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "docs Directory",
+                    "path": "barodybroject/src/pages/_docs/README.md",
+                    "rel": "src/pages/_docs/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Django Forms Update",
+                    "path": "barodybroject/src/pages/_docs/django-forms-update.md",
+                    "rel": "src/pages/_docs/django-forms-update.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Posts",
+                "rel": "src/pages/_posts",
+                "index": "barodybroject/src/pages/_posts/README.md",
+                "pages": 59,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "posts Directory",
+                    "path": "barodybroject/src/pages/_posts/README.md",
+                    "rel": "src/pages/_posts/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "2000 01 01 Index",
+                    "path": "barodybroject/src/pages/_posts/2000-01-01-index.md",
+                    "rel": "src/pages/_posts/2000-01-01-index.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 06 17 Wizard Topples Capitalist Dominance Ingeniously",
+                    "path": "barodybroject/src/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md",
+                    "rel": "src/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 07 31 Generated Title",
+                    "path": "barodybroject/src/pages/_posts/2024-07-31-Generated Title.md",
+                    "rel": "src/pages/_posts/2024-07-31-Generated Title.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 08 07 Generated Title",
+                    "path": "barodybroject/src/pages/_posts/2024-08-07-generated-title.md",
+                    "rel": "src/pages/_posts/2024-08-07-generated-title.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 19 Accountants Humor Unique Numbers",
+                    "path": "barodybroject/src/pages/_posts/2024-09-19-accountants-humor-unique-numbers.md",
+                    "rel": "src/pages/_posts/2024-09-19-accountants-humor-unique-numbers.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 19 Blizzard Of 1987 Dekalb Illinois",
+                    "path": "barodybroject/src/pages/_posts/2024-09-19-blizzard-of-1987-dekalb-illinois.md",
+                    "rel": "src/pages/_posts/2024-09-19-blizzard-of-1987-dekalb-illinois.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 19 Hilarious Accountancy Jokes",
+                    "path": "barodybroject/src/pages/_posts/2024-09-19-hilarious-accountancy-jokes.md",
+                    "rel": "src/pages/_posts/2024-09-19-hilarious-accountancy-jokes.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 19 Slug",
+                    "path": "barodybroject/src/pages/_posts/2024-09-19-slug.md",
+                    "rel": "src/pages/_posts/2024-09-19-slug.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 23 Cheeseman Park Exploration",
+                    "path": "barodybroject/src/pages/_posts/2024-09-23-cheeseman-park-exploration.md",
+                    "rel": "src/pages/_posts/2024-09-23-cheeseman-park-exploration.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 25 Flotilla Raid Un Report Debate",
+                    "path": "barodybroject/src/pages/_posts/2024-09-25-flotilla-raid-un-report-debate.md",
+                    "rel": "src/pages/_posts/2024-09-25-flotilla-raid-un-report-debate.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 25 Wheat Prices Global Egypt Perspective",
+                    "path": "barodybroject/src/pages/_posts/2024-09-25-wheat-prices-global-egypt-perspective.md",
+                    "rel": "src/pages/_posts/2024-09-25-wheat-prices-global-egypt-perspective.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 09 26 Bonsai Trees Timeless Wonders",
+                    "path": "barodybroject/src/pages/_posts/2024-09-26-bonsai-trees-timeless-wonders.md",
+                    "rel": "src/pages/_posts/2024-09-26-bonsai-trees-timeless-wonders.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 10 12 Creamy Egyptian Macaroni Bechamel",
+                    "path": "barodybroject/src/pages/_posts/2024-10-12-creamy-egyptian-macaroni-bechamel.md",
+                    "rel": "src/pages/_posts/2024-10-12-creamy-egyptian-macaroni-bechamel.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 10 12 Decoding Modesty Hijab Misinterpretation",
+                    "path": "barodybroject/src/pages/_posts/2024-10-12-decoding-modesty-hijab-misinterpretation.md",
+                    "rel": "src/pages/_posts/2024-10-12-decoding-modesty-hijab-misinterpretation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 10 13 Cosmic Karaoke Americas Next Top Signal",
+                    "path": "barodybroject/src/pages/_posts/2024-10-13-cosmic-karaoke-americas-next-top-signal.md",
+                    "rel": "src/pages/_posts/2024-10-13-cosmic-karaoke-americas-next-top-signal.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 10 22 Ancient Armenia Birthplace Of Wine",
+                    "path": "barodybroject/src/pages/_posts/2024-10-22-ancient-armenia-birthplace-of-wine.md",
+                    "rel": "src/pages/_posts/2024-10-22-ancient-armenia-birthplace-of-wine.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 11 27 Testing Content Wild Experiment",
+                    "path": "barodybroject/src/pages/_posts/2024-11-27-testing-content-wild-experiment.md",
+                    "rel": "src/pages/_posts/2024-11-27-testing-content-wild-experiment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 12 16 Benjamin Franklin Parody Almanack Ai",
+                    "path": "barodybroject/src/pages/_posts/2024-12-16-benjamin-franklin-parody-almanack-ai.md",
+                    "rel": "src/pages/_posts/2024-12-16-benjamin-franklin-parody-almanack-ai.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 12 21 Nile River Longest River",
+                    "path": "barodybroject/src/pages/_posts/2024-12-21-nile-river-longest-river.md",
+                    "rel": "src/pages/_posts/2024-12-21-nile-river-longest-river.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2024 12 28 Ultimate Cat Care App Features",
+                    "path": "barodybroject/src/pages/_posts/2024-12-28-ultimate-cat-care-app-features.md",
+                    "rel": "src/pages/_posts/2024-12-28-ultimate-cat-care-app-features.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 01 02 Sisi Egypt Leadership Analysis",
+                    "path": "barodybroject/src/pages/_posts/2025-01-02-sisi-egypt-leadership-analysis.md",
+                    "rel": "src/pages/_posts/2025-01-02-sisi-egypt-leadership-analysis.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 02 21 Bob Dole Presidential Defeats",
+                    "path": "barodybroject/src/pages/_posts/2025-02-21-bob-dole-presidential-defeats.md",
+                    "rel": "src/pages/_posts/2025-02-21-bob-dole-presidential-defeats.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 13 Ai Landscape Opportunities Challenges",
+                    "path": "barodybroject/src/pages/_posts/2025-03-13-ai-landscape-opportunities-challenges.md",
+                    "rel": "src/pages/_posts/2025-03-13-ai-landscape-opportunities-challenges.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 14 Balancing The Books It Glitch",
+                    "path": "barodybroject/src/pages/_posts/2025-03-14-balancing-the-books-it-glitch.md",
+                    "rel": "src/pages/_posts/2025-03-14-balancing-the-books-it-glitch.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 15 Parents To Grandparents Humor",
+                    "path": "barodybroject/src/pages/_posts/2025-03-15-parents-to-grandparents-humor.md",
+                    "rel": "src/pages/_posts/2025-03-15-parents-to-grandparents-humor.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 16 Ai Revolutionizes Tuition",
+                    "path": "barodybroject/src/pages/_posts/2025-03-16-ai-revolutionizes-tuition.md",
+                    "rel": "src/pages/_posts/2025-03-16-ai-revolutionizes-tuition.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 16 Campus 2 0 Ai College Tuition",
+                    "path": "barodybroject/src/pages/_posts/2025-03-16-campus-2-0-ai-college-tuition.md",
+                    "rel": "src/pages/_posts/2025-03-16-campus-2-0-ai-college-tuition.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 16 Ledgers Of Logic Blockchain As The Guardian Of Ai Truths",
+                    "path": "barodybroject/src/pages/_posts/2025-03-16-ledgers-of-logic-blockchain-as-the-guardian-of-ai-truths.md",
+                    "rel": "src/pages/_posts/2025-03-16-ledgers-of-logic-blockchain-as-the-guardian-of-ai-truths.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 17 Blockchain Ai Integrity",
+                    "path": "barodybroject/src/pages/_posts/2025-03-17-blockchain-ai-integrity.md",
+                    "rel": "src/pages/_posts/2025-03-17-blockchain-ai-integrity.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 18 Laughter Ledger Satire",
+                    "path": "barodybroject/src/pages/_posts/2025-03-18-laughter-ledger-satire.md",
+                    "rel": "src/pages/_posts/2025-03-18-laughter-ledger-satire.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 22 The Resourceful Journey",
+                    "path": "barodybroject/src/pages/_posts/2025-03-22-the-resourceful-journey.md",
+                    "rel": "src/pages/_posts/2025-03-22-the-resourceful-journey.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 30 Humorous Incrementalism Ancients",
+                    "path": "barodybroject/src/pages/_posts/2025-03-30-humorous-incrementalism-ancients.md",
+                    "rel": "src/pages/_posts/2025-03-30-humorous-incrementalism-ancients.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 03 30 Kaizen Cd Ci Devops",
+                    "path": "barodybroject/src/pages/_posts/2025-03-30-kaizen-cd-ci-devops.md",
+                    "rel": "src/pages/_posts/2025-03-30-kaizen-cd-ci-devops.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 04 02 Decoding The Data Deluge",
+                    "path": "barodybroject/src/pages/_posts/2025-04-02-decoding-the-data-deluge.md",
+                    "rel": "src/pages/_posts/2025-04-02-decoding-the-data-deluge.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 04 05 Ai Django Documentation Automation",
+                    "path": "barodybroject/src/pages/_posts/2025-04-05-ai-django-documentation-automation.md",
+                    "rel": "src/pages/_posts/2025-04-05-ai-django-documentation-automation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 04 05 Bugs In Ai Testing",
+                    "path": "barodybroject/src/pages/_posts/2025-04-05-bugs-in-ai-testing.md",
+                    "rel": "src/pages/_posts/2025-04-05-bugs-in-ai-testing.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 04 06 Erp Transformation Satirical Guide",
+                    "path": "barodybroject/src/pages/_posts/2025-04-06-erp-transformation-satirical-guide.md",
+                    "rel": "src/pages/_posts/2025-04-06-erp-transformation-satirical-guide.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 04 12 Make Or Buy Erp Decision Making",
+                    "path": "barodybroject/src/pages/_posts/2025-04-12-make-or-buy-erp-decision-making.md",
+                    "rel": "src/pages/_posts/2025-04-12-make-or-buy-erp-decision-making.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 05 18 Microsoft Windows Tech Literacy Irony",
+                    "path": "barodybroject/src/pages/_posts/2025-05-18-microsoft-windows-tech-literacy-irony.md",
+                    "rel": "src/pages/_posts/2025-05-18-microsoft-windows-tech-literacy-irony.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "2025 05 18 Windows Raising Afraid Generation",
+                    "path": "barodybroject/src/pages/_posts/2025-05-18-windows-raising-afraid-generation.md",
+                    "rel": "src/pages/_posts/2025-05-18-windows-raising-afraid-generation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Blockchain as Truthkeeper: Leveraging Immutable Ledgers for Verifiable\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-03-17-blockchain-ai-trust-verify.md",
+                    "rel": "src/pages/_posts/2025-03-17-blockchain-ai-trust-verify.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "BREAKING NEWS: Unveiling the Latest Tech Sensation - The iToaster!",
+                    "path": "barodybroject/src/pages/_posts/2025-04-15-managing-features-updates-python-github.md",
+                    "rel": "src/pages/_posts/2025-04-15-managing-features-updates-python-github.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Digging Through the Digital: Unveiling \"Artifacts\" in Software Testing\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-03-19-artifacts-in-software-testing.md",
+                    "rel": "src/pages/_posts/2025-03-19-artifacts-in-software-testing.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "ERP Systems as the Engine of Modern Economic Design: A Satirical\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-05-02-erp-systems-economic-design.md",
+                    "rel": "src/pages/_posts/2025-05-02-erp-systems-economic-design.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "From Excel Expert to Programmer: Unleashing the Untapped Potential of\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-03-13-excel-to-programming.md",
+                    "rel": "src/pages/_posts/2025-03-13-excel-to-programming.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Headline (2024-08-07-Generated Title)",
+                    "path": "barodybroject/src/pages/_posts/2024-08-07-Generated Title.md",
+                    "rel": "src/pages/_posts/2024-08-07-Generated Title.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Headline (2024-08-07-Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By Mainstream Media)",
+                    "path": "barodybroject/src/pages/_posts/2024-08-07-Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By Mainstream Media.md",
+                    "rel": "src/pages/_posts/2024-08-07-Itsy Bitsy Spider's Climatic Climb Deemed Suicidal Stunt By Mainstream Media.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Headline (2024-08-07-local-man-discovers-quantum-nonexistence-of-god,-still-attends-church-for-social-snacks)",
+                    "path": "barodybroject/src/pages/_posts/2024-08-07-local-man-discovers-quantum-nonexistence-of-god,-still-attends-church-for-social-snacks.md",
+                    "rel": "src/pages/_posts/2024-08-07-local-man-discovers-quantum-nonexistence-of-god,-still-attends-church-for-social-snacks.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Headline (2024-08-09-quantum-nonexistence-of-god)",
+                    "path": "barodybroject/src/pages/_posts/2024-08-09-quantum-nonexistence-of-god.md",
+                    "rel": "src/pages/_posts/2024-08-09-quantum-nonexistence-of-god.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Headline (2024-08-09-slug)",
+                    "path": "barodybroject/src/pages/_posts/2024-08-09-slug.md",
+                    "rel": "src/pages/_posts/2024-08-09-slug.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Introduction",
+                    "path": "barodybroject/src/pages/_posts/2024-07-31-New Yorkers Can't Stop Complaining About NYC (But Will Never Leave).md",
+                    "rel": "src/pages/_posts/2024-07-31-New Yorkers Can't Stop Complaining About NYC (But Will Never Leave).md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Manufactured Dispossession: A Case Study in Corporate Betrayal, Racial\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-05-02-injustices.md",
+                    "rel": "src/pages/_posts/2025-05-02-injustices.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Tech Company Unveils Smartphone That Can Tell If You\u2019re a Cat or a\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-05-01-manufactured-dispossession.md",
+                    "rel": "src/pages/_posts/2025-05-01-manufactured-dispossession.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Temple of Templates: Architectural Wonders in Code and Commerce",
+                    "path": "barodybroject/src/pages/_posts/2025-04-02-temple-of-templates-architectural-wonders-in-code-and-commerce.md",
+                    "rel": "src/pages/_posts/2025-04-02-temple-of-templates-architectural-wonders-in-code-and-commerce.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The Excel to Programming Pipeline: Unlocking Technological Potential",
+                    "path": "barodybroject/src/pages/_posts/2025-03-13-unlock-programming-with-excel.md",
+                    "rel": "src/pages/_posts/2025-03-13-unlock-programming-with-excel.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The Glamorous World of GitHub Branches: Fashioning Order from Digital\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-04-18-glamorous-world-of-github-branches.md",
+                    "rel": "src/pages/_posts/2025-04-18-glamorous-world-of-github-branches.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The Rise of the Framework: A Satirical Examination of Coding's Cultural\u2026",
+                    "path": "barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md",
+                    "rel": "src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The Sorcery of Coding: Unleashing \"Sourcery\" in Software",
+                    "path": "barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md",
+                    "rel": "src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "parodynews Directory",
+            "rel": "src/parodynews",
+            "index": "barodybroject/src/parodynews/README.md",
+            "pages": 46,
+            "children": [
+              {
+                "type": "page",
+                "title": "parodynews Directory",
+                "path": "barodybroject/src/parodynews/README.md",
+                "rel": "src/parodynews/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "migrations Directory",
+                "path": "barodybroject/src/parodynews/migrations/README.md",
+                "rel": "src/parodynews/migrations/README.md",
+                "folder": "src/parodynews/migrations"
+              },
+              {
+                "type": "page",
+                "title": "Parodynews Models Package",
+                "path": "barodybroject/src/parodynews/models/README.md",
+                "rel": "src/parodynews/models/README.md",
+                "folder": "src/parodynews/models"
+              },
+              {
+                "type": "page",
+                "title": "scripts Directory",
+                "path": "barodybroject/src/parodynews/scripts/README.md",
+                "rel": "src/parodynews/scripts/README.md",
+                "folder": "src/parodynews/scripts"
+              },
+              {
+                "type": "page",
+                "title": "templatetags Directory",
+                "path": "barodybroject/src/parodynews/templatetags/README.md",
+                "rel": "src/parodynews/templatetags/README.md",
+                "folder": "src/parodynews/templatetags"
+              },
+              {
+                "type": "page",
+                "title": "utils Directory",
+                "path": "barodybroject/src/parodynews/utils/README.md",
+                "rel": "src/parodynews/utils/README.md",
+                "folder": "src/parodynews/utils"
+              },
+              {
+                "type": "section",
+                "title": "Documentation",
+                "rel": "src/parodynews/docs",
+                "index": "barodybroject/src/parodynews/docs/README.md",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Parodynews Sphinx Docs",
+                    "path": "barodybroject/src/parodynews/docs/README.md",
+                    "rel": "src/parodynews/docs/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "docs Directory",
+                    "path": "barodybroject/src/parodynews/docs/README.old.md",
+                    "rel": "src/parodynews/docs/README.old.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "source Directory",
+                    "path": "barodybroject/src/parodynews/docs/source/README.md",
+                    "rel": "src/parodynews/docs/source/README.md",
+                    "folder": "src/parodynews/docs/source"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Sphinx Documentation Deployment",
+                    "path": "barodybroject/src/parodynews/docs/DEPLOYMENT.md",
+                    "rel": "src/parodynews/docs/DEPLOYMENT.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Sphinx Documentation Implementation Summary",
+                    "path": "barodybroject/src/parodynews/docs/IMPLEMENTATION_SUMMARY.md",
+                    "rel": "src/parodynews/docs/IMPLEMENTATION_SUMMARY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Sphinx Documentation Redesign Plan for Parodynews",
+                    "path": "barodybroject/src/parodynews/docs/SPHINX_REDESIGN_PLAN.md",
+                    "rel": "src/parodynews/docs/SPHINX_REDESIGN_PLAN.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "management Directory",
+                "rel": "src/parodynews/management",
+                "index": "barodybroject/src/parodynews/management/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "management Directory",
+                    "path": "barodybroject/src/parodynews/management/README.md",
+                    "rel": "src/parodynews/management/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "commands Directory",
+                    "path": "barodybroject/src/parodynews/management/commands/README.md",
+                    "rel": "src/parodynews/management/commands/README.md",
+                    "folder": "src/parodynews/management/commands"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "schema Directory",
+                "rel": "src/parodynews/schema",
+                "index": "barodybroject/src/parodynews/schema/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "schema Directory",
+                    "path": "barodybroject/src/parodynews/schema/README.md",
+                    "rel": "src/parodynews/schema/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Parody Prompt",
+                    "path": "barodybroject/src/parodynews/schema/parody_prompt.md",
+                    "rel": "src/parodynews/schema/parody_prompt.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "templates Directory",
+                "rel": "src/parodynews/templates",
+                "index": "barodybroject/src/parodynews/templates/README.md",
+                "pages": 26,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "templates Directory",
+                    "path": "barodybroject/src/parodynews/templates/README.md",
+                    "rel": "src/parodynews/templates/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Django Admin Templates Directory",
+                    "path": "barodybroject/src/parodynews/templates/admin/README.md",
+                    "rel": "src/parodynews/templates/admin/README.md",
+                    "folder": "src/parodynews/templates/admin"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Menu Templates Directory",
+                    "path": "barodybroject/src/parodynews/templates/menu/README.md",
+                    "rel": "src/parodynews/templates/menu/README.md",
+                    "folder": "src/parodynews/templates/menu"
+                  },
+                  {
+                    "type": "page",
+                    "title": "parodynews Directory",
+                    "path": "barodybroject/src/parodynews/templates/parodynews/README.md",
+                    "rel": "src/parodynews/templates/parodynews/README.md",
+                    "folder": "src/parodynews/templates/parodynews"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Registration Templates Directory",
+                    "path": "barodybroject/src/parodynews/templates/registration/README.md",
+                    "rel": "src/parodynews/templates/registration/README.md",
+                    "folder": "src/parodynews/templates/registration"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Template Includes Directory",
+                    "path": "barodybroject/src/parodynews/templates/includes/README.md",
+                    "rel": "src/parodynews/templates/includes/README.md",
+                    "folder": "src/parodynews/templates/includes"
+                  },
+                  {
+                    "type": "section",
+                    "title": "account Directory",
+                    "rel": "src/parodynews/templates/account",
+                    "index": "barodybroject/src/parodynews/templates/account/README.md",
+                    "pages": 4,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "account Directory",
+                        "path": "barodybroject/src/parodynews/templates/account/README.md",
+                        "rel": "src/parodynews/templates/account/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "Account Email Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/account/email/README.md",
+                        "rel": "src/parodynews/templates/account/email/README.md",
+                        "folder": "src/parodynews/templates/account/email"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Account Messages Directory",
+                        "path": "barodybroject/src/parodynews/templates/account/messages/README.md",
+                        "rel": "src/parodynews/templates/account/messages/README.md",
+                        "folder": "src/parodynews/templates/account/messages"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Account Snippets Directory",
+                        "path": "barodybroject/src/parodynews/templates/account/snippets/README.md",
+                        "rel": "src/parodynews/templates/account/snippets/README.md",
+                        "folder": "src/parodynews/templates/account/snippets"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "allauth Directory",
+                    "rel": "src/parodynews/templates/allauth",
+                    "index": "barodybroject/src/parodynews/templates/allauth/README.md",
+                    "pages": 3,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "allauth Directory",
+                        "path": "barodybroject/src/parodynews/templates/allauth/README.md",
+                        "rel": "src/parodynews/templates/allauth/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "elements Directory",
+                        "path": "barodybroject/src/parodynews/templates/allauth/elements/README.md",
+                        "rel": "src/parodynews/templates/allauth/elements/README.md",
+                        "folder": "src/parodynews/templates/allauth/elements"
+                      },
+                      {
+                        "type": "page",
+                        "title": "layouts Directory",
+                        "path": "barodybroject/src/parodynews/templates/allauth/layouts/README.md",
+                        "rel": "src/parodynews/templates/allauth/layouts/README.md",
+                        "folder": "src/parodynews/templates/allauth/layouts"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "Multi-Factor Authentication (MFA) Templates Directory",
+                    "rel": "src/parodynews/templates/mfa",
+                    "index": "barodybroject/src/parodynews/templates/mfa/README.md",
+                    "pages": 7,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Multi-Factor Authentication (MFA) Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/mfa/README.md",
+                        "rel": "src/parodynews/templates/mfa/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "MFA Email Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/mfa/email/README.md",
+                        "rel": "src/parodynews/templates/mfa/email/README.md",
+                        "folder": "src/parodynews/templates/mfa/email"
+                      },
+                      {
+                        "type": "page",
+                        "title": "MFA Messages Directory",
+                        "path": "barodybroject/src/parodynews/templates/mfa/messages/README.md",
+                        "rel": "src/parodynews/templates/mfa/messages/README.md",
+                        "folder": "src/parodynews/templates/mfa/messages"
+                      },
+                      {
+                        "type": "page",
+                        "title": "MFA Recovery Codes Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/mfa/recovery_codes/README.md",
+                        "rel": "src/parodynews/templates/mfa/recovery_codes/README.md",
+                        "folder": "src/parodynews/templates/mfa/recovery_codes"
+                      },
+                      {
+                        "type": "page",
+                        "title": "TOTP Authentication Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/mfa/totp/README.md",
+                        "rel": "src/parodynews/templates/mfa/totp/README.md",
+                        "folder": "src/parodynews/templates/mfa/totp"
+                      },
+                      {
+                        "type": "section",
+                        "title": "WebAuthn Templates Directory",
+                        "rel": "src/parodynews/templates/mfa/webauthn",
+                        "index": "barodybroject/src/parodynews/templates/mfa/webauthn/README.md",
+                        "pages": 2,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "WebAuthn Templates Directory",
+                            "path": "barodybroject/src/parodynews/templates/mfa/webauthn/README.md",
+                            "rel": "src/parodynews/templates/mfa/webauthn/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "WebAuthn Snippets Directory",
+                            "path": "barodybroject/src/parodynews/templates/mfa/webauthn/snippets/README.md",
+                            "rel": "src/parodynews/templates/mfa/webauthn/snippets/README.md",
+                            "folder": "src/parodynews/templates/mfa/webauthn/snippets"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "Social Account Templates Directory",
+                    "rel": "src/parodynews/templates/socialaccount",
+                    "index": "barodybroject/src/parodynews/templates/socialaccount/README.md",
+                    "pages": 4,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Social Account Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/socialaccount/README.md",
+                        "rel": "src/parodynews/templates/socialaccount/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "Social Account Email Templates Directory",
+                        "path": "barodybroject/src/parodynews/templates/socialaccount/email/README.md",
+                        "rel": "src/parodynews/templates/socialaccount/email/README.md",
+                        "folder": "src/parodynews/templates/socialaccount/email"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Social Account Messages Directory",
+                        "path": "barodybroject/src/parodynews/templates/socialaccount/messages/README.md",
+                        "rel": "src/parodynews/templates/socialaccount/messages/README.md",
+                        "folder": "src/parodynews/templates/socialaccount/messages"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Social Account Snippets Directory",
+                        "path": "barodybroject/src/parodynews/templates/socialaccount/snippets/README.md",
+                        "rel": "src/parodynews/templates/socialaccount/snippets/README.md",
+                        "folder": "src/parodynews/templates/socialaccount/snippets"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "usersessions Directory",
+                    "rel": "src/parodynews/templates/usersessions",
+                    "index": "barodybroject/src/parodynews/templates/usersessions/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "usersessions Directory",
+                        "path": "barodybroject/src/parodynews/templates/usersessions/README.md",
+                        "rel": "src/parodynews/templates/usersessions/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "messages Directory",
+                        "path": "barodybroject/src/parodynews/templates/usersessions/messages/README.md",
+                        "rel": "src/parodynews/templates/usersessions/messages/README.md",
+                        "folder": "src/parodynews/templates/usersessions/messages"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "tests Directory",
+                "rel": "src/parodynews/tests",
+                "index": "barodybroject/src/parodynews/tests/README.md",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "tests Directory",
+                    "path": "barodybroject/src/parodynews/tests/README.md",
+                    "rel": "src/parodynews/tests/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "data Directory",
+                    "path": "barodybroject/src/parodynews/tests/data/README.md",
+                    "rel": "src/parodynews/tests/data/README.md",
+                    "folder": "src/parodynews/tests/data"
+                  },
+                  {
+                    "type": "section",
+                    "title": "scripts Directory",
+                    "rel": "src/parodynews/tests/scripts",
+                    "index": "barodybroject/src/parodynews/tests/scripts/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "scripts Directory",
+                        "path": "barodybroject/src/parodynews/tests/scripts/README.md",
+                        "rel": "src/parodynews/tests/scripts/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "functions Directory",
+                        "path": "barodybroject/src/parodynews/tests/scripts/functions/README.md",
+                        "rel": "src/parodynews/tests/scripts/functions/README.md",
+                        "folder": "src/parodynews/tests/scripts/functions"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "PostHog Docker Deployment",
+            "rel": "src/posthog",
+            "index": "barodybroject/src/posthog/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "PostHog Docker Deployment",
+                "path": "barodybroject/src/posthog/README.md",
+                "rel": "src/posthog/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Deployment Summary",
+                "path": "barodybroject/src/posthog/DEPLOYMENT_SUMMARY.md",
+                "rel": "src/posthog/DEPLOYMENT_SUMMARY.md"
+              },
+              {
+                "type": "page",
+                "title": "GitHub",
+                "path": "barodybroject/src/posthog/.github/copilot-instructions.md",
+                "rel": "src/posthog/.github/copilot-instructions.md",
+                "folder": "src/posthog/.github"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "\ud83d\udcda The Forbidden Library",
+        "rel": "README",
+        "index": "barodybroject/README/README.md",
+        "pages": 73,
+        "children": [
+          {
+            "type": "page",
+            "title": "\ud83d\udcda The Forbidden Library",
+            "path": "barodybroject/README/README.md",
+            "rel": "README/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Dev Container",
+            "path": "barodybroject/README/.devcontainer/README.md",
+            "rel": "README/.devcontainer/README.md",
+            "folder": "README/.devcontainer"
+          },
+          {
+            "type": "page",
+            "title": "Scripts Directory",
+            "path": "barodybroject/README/scripts/README.md",
+            "rel": "README/scripts/README.md",
+            "folder": "README/scripts"
+          },
+          {
+            "type": "page",
+            "title": "Test Suite for Installation Wizard",
+            "path": "barodybroject/README/test/README.md",
+            "rel": "README/test/README.md",
+            "folder": "README/test"
+          },
+          {
+            "type": "section",
+            "title": "Documentation",
+            "rel": "README/docs",
+            "index": "barodybroject/README/docs/README.md",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Barodybroject Documentation",
+                "path": "barodybroject/README/docs/README.md",
+                "rel": "README/docs/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Barodybroject Features Documentation",
+                "path": "barodybroject/README/docs/features/README.md",
+                "rel": "README/docs/features/README.md",
+                "folder": "README/docs/features"
+              },
+              {
+                "type": "page",
+                "title": "Django Configuration Documentation",
+                "path": "barodybroject/README/docs/configuration/README.md",
+                "rel": "README/docs/configuration/README.md",
+                "folder": "README/docs/configuration"
+              },
+              {
+                "type": "section",
+                "title": "Changelog Documentation System",
+                "rel": "README/docs/changelog",
+                "index": "barodybroject/README/docs/changelog/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Changelog Documentation System",
+                    "path": "barodybroject/README/docs/changelog/README.md",
+                    "rel": "README/docs/changelog/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Releases",
+                    "path": "barodybroject/README/docs/changelog/releases/v1.0.0/README.md",
+                    "rel": "README/docs/changelog/releases/v1.0.0/README.md",
+                    "folder": "README/docs/changelog/releases"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "GitHub",
+            "rel": "README/.github",
+            "index": "barodybroject/README/.github/README.md",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Parody News Generator - Developer Guide",
+                "path": "barodybroject/README/.github/README.md",
+                "rel": "README/.github/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "GitHub Agents Directory",
+                "path": "barodybroject/README/.github/agents/README.md",
+                "rel": "README/.github/agents/README.md",
+                "folder": "README/.github/agents"
+              },
+              {
+                "type": "page",
+                "title": "Instructions Directory",
+                "path": "barodybroject/README/.github/instructions/README.md",
+                "rel": "README/.github/instructions/README.md",
+                "folder": "README/.github/instructions"
+              },
+              {
+                "type": "page",
+                "title": "ISSUETEMPLATE Directory",
+                "path": "barodybroject/README/.github/ISSUE_TEMPLATE/README.md",
+                "rel": "README/.github/ISSUE_TEMPLATE/README.md",
+                "folder": "README/.github/ISSUE_TEMPLATE"
+              },
+              {
+                "type": "section",
+                "title": "GitHub Actions Workflows",
+                "rel": "README/.github/workflows",
+                "index": "barodybroject/README/.github/workflows/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "GitHub Actions Workflows",
+                    "path": "barodybroject/README/.github/workflows/README.md",
+                    "rel": "README/.github/workflows/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Archived Workflows",
+                    "path": "barodybroject/README/.github/workflows/archive/README.md",
+                    "rel": "README/.github/workflows/archive/README.md",
+                    "folder": "README/.github/workflows/archive"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Infrastructure",
+            "rel": "README/infra",
+            "index": "barodybroject/README/infra/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "infra/ Directory",
+                "path": "barodybroject/README/infra/README.md",
+                "rel": "README/infra/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "app Directory",
+                "path": "barodybroject/README/infra/app/README.md",
+                "rel": "README/infra/app/README.md",
+                "folder": "README/infra/app"
+              },
+              {
+                "type": "page",
+                "title": "modules Directory",
+                "path": "barodybroject/README/infra/modules/README.md",
+                "rel": "README/infra/modules/README.md",
+                "folder": "README/infra/modules"
+              },
+              {
+                "type": "page",
+                "title": "shared Directory",
+                "path": "barodybroject/README/infra/shared/README.md",
+                "rel": "README/infra/shared/README.md",
+                "folder": "README/infra/shared"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Source",
+            "rel": "README/src",
+            "index": "barodybroject/README/src/README.md",
+            "pages": 54,
+            "children": [
+              {
+                "type": "page",
+                "title": "src/ Directory",
+                "path": "barodybroject/README/src/README.md",
+                "rel": "README/src/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "barodybroject Directory",
+                "path": "barodybroject/README/src/barodybroject/README.md",
+                "rel": "README/src/barodybroject/README.md",
+                "folder": "README/src/barodybroject"
+              },
+              {
+                "type": "page",
+                "title": "Documentation",
+                "path": "barodybroject/README/src/docs/README.md",
+                "rel": "README/src/docs/README.md",
+                "folder": "README/src/docs"
+              },
+              {
+                "type": "page",
+                "title": "Installation Wizard Setup Guide",
+                "path": "barodybroject/README/src/setup/README.md",
+                "rel": "README/src/setup/README.md",
+                "folder": "README/src/setup"
+              },
+              {
+                "type": "page",
+                "title": "scripts Directory",
+                "path": "barodybroject/README/src/scripts/README.md",
+                "rel": "README/src/scripts/README.md",
+                "folder": "README/src/scripts"
+              },
+              {
+                "type": "section",
+                "title": "assets Directory",
+                "rel": "README/src/assets",
+                "index": "barodybroject/README/src/assets/README.md",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "assets Directory",
+                    "path": "barodybroject/README/src/assets/README.md",
+                    "rel": "README/src/assets/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "images Directory",
+                    "path": "barodybroject/README/src/assets/images/README.md",
+                    "rel": "README/src/assets/images/README.md",
+                    "folder": "README/src/assets/images"
+                  },
+                  {
+                    "type": "page",
+                    "title": "js Directory",
+                    "path": "barodybroject/README/src/assets/js/README.md",
+                    "rel": "README/src/assets/js/README.md",
+                    "folder": "README/src/assets/js"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "pages Directory",
+                "rel": "README/src/pages",
+                "index": "barodybroject/README/src/pages/README.md",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "pages Directory",
+                    "path": "barodybroject/README/src/pages/README.md",
+                    "rel": "README/src/pages/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "about Directory",
+                    "path": "barodybroject/README/src/pages/_about/README.md",
+                    "rel": "README/src/pages/_about/README.md",
+                    "folder": "README/src/pages/_about"
+                  },
+                  {
+                    "type": "page",
+                    "title": "docs Directory",
+                    "path": "barodybroject/README/src/pages/_docs/README.md",
+                    "rel": "README/src/pages/_docs/README.md",
+                    "folder": "README/src/pages/_docs"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Posts",
+                    "path": "barodybroject/README/src/pages/_posts/README.md",
+                    "rel": "README/src/pages/_posts/README.md",
+                    "folder": "README/src/pages/_posts"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Data",
+                    "rel": "README/src/pages/_data",
+                    "index": "barodybroject/README/src/pages/_data/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Readme",
+                        "path": "barodybroject/README/src/pages/_data/README.md",
+                        "rel": "README/src/pages/_data/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "navigation Directory",
+                        "path": "barodybroject/README/src/pages/_data/navigation/README.md",
+                        "rel": "README/src/pages/_data/navigation/README.md",
+                        "folder": "README/src/pages/_data/navigation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "parodynews Directory",
+                "rel": "README/src/parodynews",
+                "index": "barodybroject/README/src/parodynews/README.md",
+                "pages": 40,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "parodynews Directory",
+                    "path": "barodybroject/README/src/parodynews/README.md",
+                    "rel": "README/src/parodynews/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "migrations Directory",
+                    "path": "barodybroject/README/src/parodynews/migrations/README.md",
+                    "rel": "README/src/parodynews/migrations/README.md",
+                    "folder": "README/src/parodynews/migrations"
+                  },
+                  {
+                    "type": "page",
+                    "title": "schema Directory",
+                    "path": "barodybroject/README/src/parodynews/schema/README.md",
+                    "rel": "README/src/parodynews/schema/README.md",
+                    "folder": "README/src/parodynews/schema"
+                  },
+                  {
+                    "type": "page",
+                    "title": "scripts Directory",
+                    "path": "barodybroject/README/src/parodynews/scripts/README.md",
+                    "rel": "README/src/parodynews/scripts/README.md",
+                    "folder": "README/src/parodynews/scripts"
+                  },
+                  {
+                    "type": "page",
+                    "title": "templatetags Directory",
+                    "path": "barodybroject/README/src/parodynews/templatetags/README.md",
+                    "rel": "README/src/parodynews/templatetags/README.md",
+                    "folder": "README/src/parodynews/templatetags"
+                  },
+                  {
+                    "type": "page",
+                    "title": "utils Directory",
+                    "path": "barodybroject/README/src/parodynews/utils/README.md",
+                    "rel": "README/src/parodynews/utils/README.md",
+                    "folder": "README/src/parodynews/utils"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Documentation",
+                    "rel": "README/src/parodynews/docs",
+                    "index": "barodybroject/README/src/parodynews/docs/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "docs Directory",
+                        "path": "barodybroject/README/src/parodynews/docs/README.md",
+                        "rel": "README/src/parodynews/docs/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "source Directory",
+                        "path": "barodybroject/README/src/parodynews/docs/source/README.md",
+                        "rel": "README/src/parodynews/docs/source/README.md",
+                        "folder": "README/src/parodynews/docs/source"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "management Directory",
+                    "rel": "README/src/parodynews/management",
+                    "index": "barodybroject/README/src/parodynews/management/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "management Directory",
+                        "path": "barodybroject/README/src/parodynews/management/README.md",
+                        "rel": "README/src/parodynews/management/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "commands Directory",
+                        "path": "barodybroject/README/src/parodynews/management/commands/README.md",
+                        "rel": "README/src/parodynews/management/commands/README.md",
+                        "folder": "README/src/parodynews/management/commands"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "templates Directory",
+                    "rel": "README/src/parodynews/templates",
+                    "index": "barodybroject/README/src/parodynews/templates/README.md",
+                    "pages": 26,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "templates Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/README.md",
+                        "rel": "README/src/parodynews/templates/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "Django Admin Templates Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/admin/README.md",
+                        "rel": "README/src/parodynews/templates/admin/README.md",
+                        "folder": "README/src/parodynews/templates/admin"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Menu Templates Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/menu/README.md",
+                        "rel": "README/src/parodynews/templates/menu/README.md",
+                        "folder": "README/src/parodynews/templates/menu"
+                      },
+                      {
+                        "type": "page",
+                        "title": "parodynews Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/parodynews/README.md",
+                        "rel": "README/src/parodynews/templates/parodynews/README.md",
+                        "folder": "README/src/parodynews/templates/parodynews"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Registration Templates Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/registration/README.md",
+                        "rel": "README/src/parodynews/templates/registration/README.md",
+                        "folder": "README/src/parodynews/templates/registration"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Template Includes Directory",
+                        "path": "barodybroject/README/src/parodynews/templates/includes/README.md",
+                        "rel": "README/src/parodynews/templates/includes/README.md",
+                        "folder": "README/src/parodynews/templates/includes"
+                      },
+                      {
+                        "type": "section",
+                        "title": "account Directory",
+                        "rel": "README/src/parodynews/templates/account",
+                        "index": "barodybroject/README/src/parodynews/templates/account/README.md",
+                        "pages": 4,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "account Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/account/README.md",
+                            "rel": "README/src/parodynews/templates/account/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "Account Email Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/account/email/README.md",
+                            "rel": "README/src/parodynews/templates/account/email/README.md",
+                            "folder": "README/src/parodynews/templates/account/email"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Account Messages Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/account/messages/README.md",
+                            "rel": "README/src/parodynews/templates/account/messages/README.md",
+                            "folder": "README/src/parodynews/templates/account/messages"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Account Snippets Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/account/snippets/README.md",
+                            "rel": "README/src/parodynews/templates/account/snippets/README.md",
+                            "folder": "README/src/parodynews/templates/account/snippets"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "section",
+                        "title": "allauth Directory",
+                        "rel": "README/src/parodynews/templates/allauth",
+                        "index": "barodybroject/README/src/parodynews/templates/allauth/README.md",
+                        "pages": 3,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "allauth Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/allauth/README.md",
+                            "rel": "README/src/parodynews/templates/allauth/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "elements Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/allauth/elements/README.md",
+                            "rel": "README/src/parodynews/templates/allauth/elements/README.md",
+                            "folder": "README/src/parodynews/templates/allauth/elements"
+                          },
+                          {
+                            "type": "page",
+                            "title": "layouts Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/allauth/layouts/README.md",
+                            "rel": "README/src/parodynews/templates/allauth/layouts/README.md",
+                            "folder": "README/src/parodynews/templates/allauth/layouts"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "section",
+                        "title": "Multi-Factor Authentication (MFA) Templates Directory",
+                        "rel": "README/src/parodynews/templates/mfa",
+                        "index": "barodybroject/README/src/parodynews/templates/mfa/README.md",
+                        "pages": 7,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "Multi-Factor Authentication (MFA) Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/mfa/README.md",
+                            "rel": "README/src/parodynews/templates/mfa/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "MFA Email Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/mfa/email/README.md",
+                            "rel": "README/src/parodynews/templates/mfa/email/README.md",
+                            "folder": "README/src/parodynews/templates/mfa/email"
+                          },
+                          {
+                            "type": "page",
+                            "title": "MFA Messages Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/mfa/messages/README.md",
+                            "rel": "README/src/parodynews/templates/mfa/messages/README.md",
+                            "folder": "README/src/parodynews/templates/mfa/messages"
+                          },
+                          {
+                            "type": "page",
+                            "title": "MFA Recovery Codes Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/mfa/recovery_codes/README.md",
+                            "rel": "README/src/parodynews/templates/mfa/recovery_codes/README.md",
+                            "folder": "README/src/parodynews/templates/mfa/recovery_codes"
+                          },
+                          {
+                            "type": "page",
+                            "title": "TOTP Authentication Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/mfa/totp/README.md",
+                            "rel": "README/src/parodynews/templates/mfa/totp/README.md",
+                            "folder": "README/src/parodynews/templates/mfa/totp"
+                          },
+                          {
+                            "type": "section",
+                            "title": "WebAuthn Templates Directory",
+                            "rel": "README/src/parodynews/templates/mfa/webauthn",
+                            "index": "barodybroject/README/src/parodynews/templates/mfa/webauthn/README.md",
+                            "pages": 2,
+                            "children": [
+                              {
+                                "type": "page",
+                                "title": "WebAuthn Templates Directory",
+                                "path": "barodybroject/README/src/parodynews/templates/mfa/webauthn/README.md",
+                                "rel": "README/src/parodynews/templates/mfa/webauthn/README.md",
+                                "is_index": true
+                              },
+                              {
+                                "type": "page",
+                                "title": "snippets \u203a WebAuthn Snippets Directory",
+                                "path": "barodybroject/README/src/parodynews/templates/mfa/webauthn/snippets/README.md",
+                                "rel": "README/src/parodynews/templates/mfa/webauthn/snippets/README.md",
+                                "folder": "README/src/parodynews/templates/mfa/webauthn/snippets"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "section",
+                        "title": "Social Account Templates Directory",
+                        "rel": "README/src/parodynews/templates/socialaccount",
+                        "index": "barodybroject/README/src/parodynews/templates/socialaccount/README.md",
+                        "pages": 4,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "Social Account Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/socialaccount/README.md",
+                            "rel": "README/src/parodynews/templates/socialaccount/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "Social Account Email Templates Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/socialaccount/email/README.md",
+                            "rel": "README/src/parodynews/templates/socialaccount/email/README.md",
+                            "folder": "README/src/parodynews/templates/socialaccount/email"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Social Account Messages Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/socialaccount/messages/README.md",
+                            "rel": "README/src/parodynews/templates/socialaccount/messages/README.md",
+                            "folder": "README/src/parodynews/templates/socialaccount/messages"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Social Account Snippets Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/socialaccount/snippets/README.md",
+                            "rel": "README/src/parodynews/templates/socialaccount/snippets/README.md",
+                            "folder": "README/src/parodynews/templates/socialaccount/snippets"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "section",
+                        "title": "usersessions Directory",
+                        "rel": "README/src/parodynews/templates/usersessions",
+                        "index": "barodybroject/README/src/parodynews/templates/usersessions/README.md",
+                        "pages": 2,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "usersessions Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/usersessions/README.md",
+                            "rel": "README/src/parodynews/templates/usersessions/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "messages Directory",
+                            "path": "barodybroject/README/src/parodynews/templates/usersessions/messages/README.md",
+                            "rel": "README/src/parodynews/templates/usersessions/messages/README.md",
+                            "folder": "README/src/parodynews/templates/usersessions/messages"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "tests Directory",
+                    "rel": "README/src/parodynews/tests",
+                    "index": "barodybroject/README/src/parodynews/tests/README.md",
+                    "pages": 4,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "tests Directory",
+                        "path": "barodybroject/README/src/parodynews/tests/README.md",
+                        "rel": "README/src/parodynews/tests/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "data Directory",
+                        "path": "barodybroject/README/src/parodynews/tests/data/README.md",
+                        "rel": "README/src/parodynews/tests/data/README.md",
+                        "folder": "README/src/parodynews/tests/data"
+                      },
+                      {
+                        "type": "section",
+                        "title": "scripts Directory",
+                        "rel": "README/src/parodynews/tests/scripts",
+                        "index": "barodybroject/README/src/parodynews/tests/scripts/README.md",
+                        "pages": 2,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "scripts Directory",
+                            "path": "barodybroject/README/src/parodynews/tests/scripts/README.md",
+                            "rel": "README/src/parodynews/tests/scripts/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "functions Directory",
+                            "path": "barodybroject/README/src/parodynews/tests/scripts/functions/README.md",
+                            "rel": "README/src/parodynews/tests/scripts/functions/README.md",
+                            "folder": "README/src/parodynews/tests/scripts/functions"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

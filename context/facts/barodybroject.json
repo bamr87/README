@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 305,
-    "fingerprint": "6509281ac0bcba0c",
+    "file_count": 299,
+    "fingerprint": "063ced09c9164668",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 2029713
+    "total_bytes": 1968158
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -30,6 +30,48 @@
     "README/scripts/README.md",
     ".github/instructions/languages.instructions.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/barodybroject.md",
+    "fingerprint": "46d78858872bdcb1",
+    "index": "barodybroject/README.md",
+    "max_depth": 7,
+    "pages": 298,
+    "present": true,
+    "sections": 63,
+    "skipped": 1,
+    "title": "Barody Project",
+    "top_sections": [
+      {
+        "index": "barodybroject/.github/README.md",
+        "pages": 45,
+        "path": null,
+        "title": "Repository & tooling",
+        "type": "group"
+      },
+      {
+        "index": "barodybroject/docs/README.md",
+        "pages": 49,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "barodybroject/src/index.md",
+        "pages": 122,
+        "path": "src",
+        "title": "Source",
+        "type": "section"
+      },
+      {
+        "index": "barodybroject/README/README.md",
+        "pages": 73,
+        "path": "README",
+        "title": "\ud83d\udcda The Forbidden Library",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/barodybroject.json"
+  },
   "project": {
     "branch": null,
     "external": false,
@@ -117,10 +159,6 @@
       {
         "doc_count": 35,
         "name": ".github"
-      },
-      {
-        "doc_count": 6,
-        "name": ".vscode"
       },
       {
         "doc_count": 5,

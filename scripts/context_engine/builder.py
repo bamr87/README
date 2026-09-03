@@ -1,6 +1,11 @@
 """
-Build orchestration: registry -> extract -> synthesize -> assemble -> index,
-with lifecycle hooks between stages.
+Build orchestration: registry -> extract -> navigate -> synthesize -> assemble
+-> index, with lifecycle hooks between stages.
+
+`navigate` sits between extraction and synthesis because the navigation tree
+is both an output (nav.yml, context/nav/, docs/browse/) and an input: cards
+and facts describe a project's structure using the same sections the sidebar
+shows, so the two can never drift.
 """
 
 from typing import Dict, Optional
@@ -10,16 +15,18 @@ from .assembler import (
     build_apex, fleet_table, inject_auto_span, write_context_tree,
     write_site_index,
 )
-from .extractor import extract_facts, load_docs_index
+from .extractor import attach_nav_facts, extract_facts, load_docs_index
 from .hooks import run_hooks
 from .indexer import build_index, write_index
+from .navigator import navigate
 from .registry import Registry, load_registry, sync_repos_txt
 from .synthesizer import build_card
 
 
 def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
               run_stage_hooks: bool = True, sync: bool = True,
-              update_readme: bool = True, update_site_index: bool = True) -> Dict:
+              update_readme: bool = True, update_site_index: bool = True,
+              update_nav: bool = True) -> Dict:
     """Run the full pipeline; returns a summary dict."""
     registry = registry or load_registry()
     provider: Optional[BaseProvider] = get_provider(ai_spec)
@@ -44,6 +51,15 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
           f"(corpus index: {'present' if docs_index else 'absent'})")
     hooks("post_extract")
 
+    fleet_nav = navigate(registry, write_mkdocs=update_nav, write_browse=update_nav)
+    for name, facts in facts_by_name.items():
+        attach_nav_facts(facts, fleet_nav["projects"].get(name))
+    print(f"[navigate] {fleet_nav['counts']['pages']} pages across "
+          f"{fleet_nav['counts']['projects']} corpora"
+          + (f" (+{len(fleet_nav['extras'])} unregistered)" if fleet_nav["extras"] else "")
+          + ("" if update_nav else "; nav.yml/browse skipped"))
+    hooks("post_navigate")
+
     cards = {name: build_card(facts, ai=provider)
              for name, facts in facts_by_name.items()}
     print(f"[synthesize] {len(cards)} cards ({enrichment})")
@@ -59,8 +75,9 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     print("[assemble] context/ tree written")
     hooks("post_assemble")
 
-    index = build_index(registry, facts_by_name, cards, apex_md, enrichment)
-    write_index(index, docs_index)
+    index = build_index(registry, facts_by_name, cards, apex_md, enrichment,
+                        fleet_nav=fleet_nav)
+    write_index(index, docs_index, fleet_nav=fleet_nav)
     print(f"[index] {len(index['terms'])} terms across {len(index['documents'])} documents")
     hooks("post_index")
 
@@ -69,4 +86,5 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
         "projects": len(facts_by_name),
         "enrichment": enrichment,
         "terms": len(index["terms"]),
+        "nav_pages": fleet_nav["counts"]["pages"],
     }

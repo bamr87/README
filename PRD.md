@@ -22,6 +22,7 @@ A README that is **built, not written**. This repo crawls the fleet, distills wh
 | L1 cards | `context/cards/<project>.md` | humans + agents needing one project's essence | synthesizer |
 | L2 facts | `context/facts/<project>.json` | machines, diffing, enrichment prompts | extractor |
 | L3 corpus | `docs/<project>/**` + `docs/docs_index.json` | deep dives, full-text search | aggregation stages 1–4 |
+| Navigation | `context/nav/<project>.json` + `nav.yml` + `docs/browse/**` | readers browsing the site, and any other frontend | navigator |
 | Query | `context/index/` + CLI + MCP server | everyone | indexer + `mcp/server.py` |
 
 Supporting contracts:
@@ -30,6 +31,10 @@ Supporting contracts:
   every generated surface are regenerated from it, never hand-edited.
 - **SCHEMA.md pyramid** — every governed directory carries a SCHEMA.md
 (structure table, placement, forbidden); `scripts/schema_lint.py check .` is the drift gate, wired into CI, matching the parent monorepo protocol.
+- **Navigation contract** — the `navigation:` block in `_data/projects.yml`
+  (grouping, section labels, depth cap, exclusions) plus each corpus's own
+  folder hierarchy. The sidebar is *derived* from these two; it is never
+  curated by hand, so it cannot drift from what is published.
 - **Hooks** — `hooks.d/<stage>/` executables run at each engine stage, the
   extension point for AI orchestration around the pipeline.
 
@@ -39,14 +44,17 @@ Supporting contracts:
    (clone/pull, branch pins, external repos) — stages 1–3 (existing).
 2. **Extract**: derive per-project facts offline from the corpus: identity
 (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md, AGENTS.md, …), structure, rollups (tags/categories/languages/words), key documents, and a corpus fingerprint for change detection.
-3. **Synthesize**: render facts into per-project cards with a frontmatter
+3. **Navigate**: turn each corpus's folder hierarchy into one canonical
+navigation tree — sections from folders, landing pages from `index.md`/`README.md`, labels from frontmatter titles, ordering from frontmatter and the registry, grouping from `nav.groups` — and render it to three surfaces: `context/nav/*.json` (frontend-agnostic), `nav.yml` (the MkDocs sidebar plus the matching `exclude_docs`), and `docs/browse/*.md` (human content maps). Every published page must have exactly one sidebar entry, and no sidebar entry may point at a page the site does not build.
+4. **Synthesize**: render facts into per-project cards with a frontmatter
    contract; optionally AI-enrich the essence paragraph.
-4. **Assemble**: build the consolidated apex README; inject the fleet table
+5. **Assemble**: build the consolidated apex README; inject the fleet table
 into the root README `AUTO:projects` span; mirror the fleet overview to the published site home (`docs/index.md`).
-5. **Index**: build a term index + manifest so queries need no rescan.
-6. **Serve**: answer queries via CLI (`query/card/facts/apex/status/
-projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status` + `context://` resources).
-7. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits;
+6. **Index**: build a term index + manifest so queries need no rescan;
+   navigation section titles are indexed alongside cards and facts.
+7. **Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/
+projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status` + `context://` resources).
+8. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits;
    hooks allow agents to extend every build.
 
 ## 5. Non-functional requirements
@@ -61,6 +69,9 @@ projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_r
   interface with a mock for tests; keys via environment only.
 - **Gate-friendly**: schema lint and unit suite run in the standard CI
   gate; failures block merges, not the cron.
+- **Navigable by construction**: a page that cannot be placed in a
+  navigation entry is a corpus defect, not a nav exception. Frontmatter that
+  breaks nav rendering (an unresolvable `icon:`) is normalized at ingest.
 
 ## 6. Interfaces
 
@@ -68,6 +79,7 @@ projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_r
 python3 -m scripts.context_engine build [--ai auto|off|anthropic|xai|mock]
 python3 -m scripts.context_engine sync|status|projects
 python3 -m scripts.context_engine query <terms> | card <name> | facts <name> | apex
+python3 -m scripts.context_engine nav [<name>] [--depth N] [--json]
 python3 scripts/schema_lint.py check .
 python3 mcp/server.py        # stdio MCP; registered in .mcp.json
 ```
@@ -81,6 +93,9 @@ python3 mcp/server.py        # stdio MCP; registered in .mcp.json
 - Drift (structure vs SCHEMA.md, registry vs surfaces) fails the gate
   rather than silently accumulating.
 - The published site home and the root README never need hand edits.
+- Every published page is reachable from the sidebar in at most `max_depth`
+  clicks, and the sidebar needs no hand edits when a corpus gains or loses
+  folders — `mkdocs build` reports no "pages not included in the nav".
 
 ## 8. Future work
 
@@ -88,5 +103,7 @@ python3 mcp/server.py        # stdio MCP; registered in .mcp.json
   the aggregation window, not just the markdown mirror.
 - Embedding-based retrieval behind the same `search_context` contract.
 - Cross-project relationship graph (shared topics/links) as an L2 artifact.
+- A second frontend over `context/nav/*.json` (the trees are renderer-
+  agnostic on purpose) — e.g. the Wiki.js stack or a static SPA.
 - Fold the harmonize (Grok) corpus-reorganization system onto the same
   provider-agnostic AI layer.

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 20568f9db4ed4713
+source_fingerprint: 104344f8f1009f62
 tags:
   - agentic-ai
   - automation
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1122 docs |
+| Corpus | `docs/it-journey` - 1121 docs |
 | External | no |
 
 ## Signals
@@ -46,16 +46,16 @@ tags:
 - ~1,755,113 words across 1122 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
-## Structure
+## Navigation
 
-- `pages/` (629 docs)
-- `test/` (143 docs)
-- `.cms/` (111 docs)
-- `.github/` (43 docs)
-- `redirects/` (43 docs)
-- `docs/` (37 docs)
-- `.claude/` (34 docs)
-- `TODO/` (25 docs)
+1115 published pages in 111 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
+
+- **Quests** (2 pages)
+- **Repository & tooling** (428 pages)
+- **Data** (8 pages)
+- **Documentation** (37 pages)
+- **Home** (628 pages)
+- **Includes** (2 pages)
 
 ## Key documents
 
@@ -73,6 +73,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query it-journey
 python3 -m scripts.context_engine facts it-journey
+python3 -m scripts.context_engine nav it-journey
 ```
 
 MCP: `get_project` with `{"name": "it-journey"}` (server: `mcp/server.py`, registered in `.mcp.json`).

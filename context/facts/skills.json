@@ -34,6 +34,69 @@
     ".github/copilot-instructions.md",
     ".github/agents/scaffolder.agent.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/skills.md",
+    "fingerprint": "62d0fa4f2d628db9",
+    "index": "skills/README.md",
+    "max_depth": 6,
+    "pages": 712,
+    "present": true,
+    "sections": 254,
+    "skipped": 0,
+    "title": "Agent Skills",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 35,
+        "path": ".github/skills",
+        "title": "Skills",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 6,
+        "path": ".github/agents",
+        "title": "Agents",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 5,
+        "path": ".github/prompts",
+        "title": "Prompts",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 652,
+        "path": ".github/plugins",
+        "title": "Plugins",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 6,
+        "path": null,
+        "title": "Documentation",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 1,
+        "path": null,
+        "title": "Workflows",
+        "type": "group"
+      },
+      {
+        "index": "skills/tests/README.md",
+        "pages": 4,
+        "path": null,
+        "title": "Repository & tooling",
+        "type": "group"
+      }
+    ],
+    "tree": "context/nav/skills.json"
+  },
   "project": {
     "branch": null,
     "external": false,

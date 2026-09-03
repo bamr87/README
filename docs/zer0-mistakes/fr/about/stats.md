@@ -1,7 +1,8 @@
 ---
 description: Analyses et métriques complètes pour la base de connaissances Zer0-Mistakes
 excerpt: Analyses et métriques complètes pour le contenu de votre site.
-icon: bi-bar-chart-line
+icon: material/chart-bar
+source_icon: bi-bar-chart-line
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

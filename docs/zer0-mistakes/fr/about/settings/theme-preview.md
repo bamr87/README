@@ -7,7 +7,8 @@ admin_actions:
 admin_section: Theme Preview
 excerpt: Guide de style en direct — prévisualisez les thèmes, les modes de couleur
   et la couverture des composants en un seul endroit.
-icon: bi-easel
+icon: material/presentation
+source_icon: bi-easel
 lang: fr
 lastmod: 2026-05-24 00:00:00+00:00
 layout: admin

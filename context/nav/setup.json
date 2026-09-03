@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "setup",
+  "title": "Setup",
+  "corpus": "docs/setup",
+  "counts": {
+    "pages": 1,
+    "sections": 0,
+    "max_depth": 1,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "93f840c5df19c31c",
+  "tree": {
+    "type": "section",
+    "title": "Setup",
+    "index": "setup/wikijs-setup.md",
+    "pages": 1,
+    "children": [
+      {
+        "type": "page",
+        "title": "Wiki.js Integration Guide",
+        "path": "setup/wikijs-setup.md",
+        "rel": "wikijs-setup.md"
+      }
+    ]
+  },
+  "registered": false
+}

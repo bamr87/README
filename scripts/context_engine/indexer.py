@@ -2,8 +2,10 @@
 Query layer: builds context/index/context_index.json and manifest.json.
 
 The index carries a compact inverted term index over the context layer
-(cards + apex + facts) so the CLI and the MCP server can answer searches
-without re-reading the tree.
+(cards + apex + facts + the navigation trees) so the CLI and the MCP server
+can answer searches without re-reading the tree. Indexing section titles
+means a search lands on the part of the sidebar that holds the answer, not
+just on the project that owns it.
 """
 
 import json
@@ -33,9 +35,19 @@ def _tokens(text: str) -> Counter:
     return counts
 
 
+def _section_terms(node: Dict, out: List[str]) -> List[str]:
+    """Every section title in a navigation tree, for the term index."""
+    for child in node.get("children") or []:
+        if child.get("type") != "page":
+            out.append(str(child.get("title", "")))
+            _section_terms(child, out)
+    return out
+
+
 def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
                 cards: Dict[str, str], apex_md: str,
-                enrichment: str = "heuristic") -> Dict:
+                enrichment: str = "heuristic",
+                fleet_nav: Optional[Dict] = None) -> Dict:
     documents: List[Dict] = []
     term_index: Dict[str, Dict[str, int]] = defaultdict(dict)
 
@@ -51,10 +63,23 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
         "project": None,
     }, apex_md)
 
-    for project in registry.active():
+    navs = (fleet_nav or {}).get("projects") or {}
+    for project in registry.nav_ordered():
         facts = facts_by_name.get(project.name, {})
         identity = facts.get("identity") or {}
         card_text = cards.get(project.name, "")
+        nav = navs.get(project.name) or {}
+        sections = _section_terms(nav.get("tree") or {}, [])
+        if nav:
+            add_document(f"nav:{project.name}", {
+                "type": "nav",
+                "path": f"context/nav/{project.name}.json",
+                "title": f"{nav.get('title', project.name)} navigation",
+                "project": project.name,
+                "summary": f"{nav['counts']['pages']} pages in "
+                           f"{nav['counts']['sections']} sections",
+                "browse": f"docs/browse/{project.name}.md",
+            }, "\n".join(sections))
         add_document(f"card:{project.name}", {
             "type": "card",
             "path": f"context/cards/{project.name}.md",
@@ -64,7 +89,7 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
             "kind": project.kind,
             "topics": project.topics,
             "key_docs": [f"docs/{project.name}/{d}" for d in facts.get("key_docs") or []],
-        }, card_text + "\n" + json.dumps(facts))
+        }, card_text + "\n" + json.dumps(facts) + "\n" + "\n".join(sections))
 
     index = {
         "metadata": {
@@ -73,6 +98,7 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
             "enrichment": enrichment,
             "project_count": len(registry.active()),
             "corpus_index": "docs/docs_index.json",
+            "nav_manifest": "context/nav/index.json",
         },
         "projects": {
             name: {
@@ -83,6 +109,10 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
                 "fingerprint": (facts.get("corpus") or {}).get("fingerprint"),
                 "card": f"context/cards/{name}.md",
                 "facts": f"context/facts/{name}.json",
+                "nav": f"context/nav/{name}.json",
+                "browse": f"docs/browse/{name}.md",
+                "nav_pages": (facts.get("navigation") or {}).get("pages", 0),
+                "nav_sections": (facts.get("navigation") or {}).get("sections", 0),
             }
             for name, facts in facts_by_name.items()
         },
@@ -93,7 +123,8 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
     return index
 
 
-def write_index(index: Dict, docs_index: Optional[Dict] = None) -> None:
+def write_index(index: Dict, docs_index: Optional[Dict] = None,
+                fleet_nav: Optional[Dict] = None) -> None:
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
     CONTEXT_INDEX_PATH.write_text(
         json.dumps(index, indent=2, sort_keys=False) + "\n", encoding="utf-8")
@@ -107,6 +138,14 @@ def write_index(index: Dict, docs_index: Optional[Dict] = None) -> None:
                          for name, info in index["projects"].items()},
         "corpus_index_present": docs_index is not None,
         "corpus_index_generated_at": (docs_index or {}).get("metadata", {}).get("generated_at"),
+        "navigation": {
+            "pages": (fleet_nav or {}).get("counts", {}).get("pages", 0),
+            "corpora": (fleet_nav or {}).get("counts", {}).get("projects", 0),
+            "fingerprints": {
+                name: nav.get("fingerprint")
+                for name, nav in ((fleet_nav or {}).get("projects") or {}).items()
+            },
+        },
     }
     MANIFEST_PATH.write_text(
         json.dumps(manifest, indent=2, sort_keys=False) + "\n", encoding="utf-8")

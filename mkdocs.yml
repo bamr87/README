@@ -98,25 +98,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Navigation
-# Curated top-level sections, each pointing at its repo's index page. We do
-# NOT auto-generate the full tree: docs/ is generated aggregation output that
-# carries upstream Jekyll frontmatter (e.g. `icon: <bootstrap-name>`), which
-# Material tries to resolve as an SVG icon when a page is a nav entry and
-# fails the build. Pointing nav at the index files keeps those pages out of
-# the nav while MkDocs still builds and indexes every page for full-text
-# search. Don't hand-edit the generated docs to "fix" this — see CLAUDE.md.
-nav:
-  - Home: index.md
-  - Scripts: scripts/README.md
-  - Skills: skills/README.md
-  - Barody Project: barodybroject/README.md
-  - Bash Crawl: bashcrawl/README.md
-  - Zer0 Mistakes: zer0-mistakes/README.md
-  - IT Journey: it-journey/index.md
-  - OverTheWire: OverTheWire-website/README.md
-  - Wargames: wargames/index.md
-  - Results: results/index.md
-  - Sitemap: sitemap.md
+# GENERATED, not curated: nav.yml carries the `nav` tree and the matching
+# `exclude_docs` rules, both rendered by the context engine's navigator from
+# the docs/ folder hierarchy and the navigation contract in
+# _data/projects.yml. INHERIT merges it in, so the left sidebar always
+# mirrors the published corpus. Rebuild with:
+#   python3 -m scripts.context_engine build
+# Do not add a `nav:` key here - it would override the generated one.
+INHERIT: ./nav.yml
 
 # Extra
 extra:

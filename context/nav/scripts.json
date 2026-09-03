@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "scripts",
+  "title": "Scripts",
+  "corpus": "docs/scripts",
+  "counts": {
+    "pages": 15,
+    "sections": 2,
+    "max_depth": 2,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "ecb49a40e48b28a2",
+  "tree": {
+    "type": "section",
+    "title": "Scripts",
+    "index": "scripts/README.md",
+    "pages": 15,
+    "children": [
+      {
+        "type": "page",
+        "title": "scripts directory",
+        "path": "scripts/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "CLAUDE.md",
+        "path": "scripts/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "Linting Configuration Management",
+        "path": "scripts/linting/README.md",
+        "rel": "linting/README.md",
+        "folder": "linting"
+      },
+      {
+        "type": "page",
+        "title": "Rename Directory Utility - Quick Reference",
+        "path": "scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md",
+        "rel": "RENAME-DIRECTORY-QUICK-REFERENCE.md"
+      },
+      {
+        "type": "section",
+        "title": "\ud83c\udf74 ForkMe - Advanced GitHub Repository Forking Utility",
+        "rel": "FORKME",
+        "index": "scripts/FORKME/README.md",
+        "pages": 7,
+        "children": [
+          {
+            "type": "page",
+            "title": "\ud83c\udf74 ForkMe - Advanced GitHub Repository Forking Utility",
+            "path": "scripts/FORKME/README.md",
+            "rel": "FORKME/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "ForkMe - Advanced GitHub Repository Forking Utility",
+            "path": "scripts/FORKME/FORKME.md",
+            "rel": "FORKME/FORKME.md"
+          },
+          {
+            "type": "page",
+            "title": "ForkMe Implementation Summary",
+            "path": "scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
+            "rel": "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md"
+          },
+          {
+            "type": "page",
+            "title": "ForkMe Improvements Summary",
+            "path": "scripts/FORKME/IMPROVEMENTS.md",
+            "rel": "FORKME/IMPROVEMENTS.md"
+          },
+          {
+            "type": "page",
+            "title": "ForkMe Quick Reference Card",
+            "path": "scripts/FORKME/FORKME-QUICK-REFERENCE.md",
+            "rel": "FORKME/FORKME-QUICK-REFERENCE.md"
+          },
+          {
+            "type": "page",
+            "title": "ForkMe Real-World Examples",
+            "path": "scripts/FORKME/FORKME-EXAMPLES.md",
+            "rel": "FORKME/FORKME-EXAMPLES.md"
+          },
+          {
+            "type": "page",
+            "title": "ForkMe Review & Improvements - Complete Summary",
+            "path": "scripts/FORKME/REVIEW-SUMMARY.md",
+            "rel": "FORKME/REVIEW-SUMMARY.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "\ud83d\udcbe StashMe - Multi-Repository Cloud Stash Utility",
+        "rel": "STASHME",
+        "index": "scripts/STASHME/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "\ud83d\udcbe StashMe - Multi-Repository Cloud Stash Utility",
+            "path": "scripts/STASHME/README.md",
+            "rel": "STASHME/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "\ud83d\udcbe StashMe - Complete Documentation",
+            "path": "scripts/STASHME/STASHME.md",
+            "rel": "STASHME/STASHME.md"
+          },
+          {
+            "type": "page",
+            "title": "\ud83d\udccb StashMe Quick Reference Card",
+            "path": "scripts/STASHME/STASHME-QUICK-REFERENCE.md",
+            "rel": "STASHME/STASHME-QUICK-REFERENCE.md"
+          },
+          {
+            "type": "page",
+            "title": "\ud83d\udcda StashMe - Real-World Examples",
+            "path": "scripts/STASHME/STASHME-EXAMPLES.md",
+            "rel": "STASHME/STASHME-EXAMPLES.md"
+          }
+        ]
+      }
+    ]
+  }
+}

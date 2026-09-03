@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## The pipeline (core architecture)
 
-Everything flows left-to-right; each stage's output is the next stage's input. Stages 1–4 build the corpus (unchanged from the original aggregator); stages 5–6 are the context engine.
+Everything flows left-to-right; each stage's output is the next stage's input. Stages 1–4 build the corpus (unchanged from the original aggregator); stages 5–7 are the context engine.
 
 | Stage | Input | Output | Entry point |
 |-------|-------|--------|-------------|
@@ -18,22 +18,24 @@ Everything flows left-to-right; each stage's output is the next stage's input. S
 | 2. Process | `raw_docs/` | `docs/{project}/` + YAML frontmatter | `scripts/process.py` |
 | 3. Validate / fix | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` → `lint_docs.py`, `check_frontmatter.py`, `--apply` fixers |
 | 4. Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
-| 5. Distill (engine) | corpus + `_data/projects.yml` | `context/` pyramid + README AUTO span + `docs/index.md` | `python3 -m scripts.context_engine build` |
-| 6. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
+| 5. Navigate (engine) | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `scripts/context_engine/navigator.py` |
+| 6. Distill (engine) | corpus + registry + nav | `context/` pyramid + README AUTO span + `docs/index.md` | `python3 -m scripts.context_engine build` |
+| 7. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
 
 ### Source of truth and generated surfaces
 
 - **`_data/projects.yml` is the fleet registry** — the only hand-edited definition of what the engine describes. `repos.txt` is *generated* from it (`context_engine sync`).
-- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md`), `repos.txt`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
+- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md` and `docs/browse/`), `repos.txt`, `nav.yml`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
 - The pyramid: `docs/` (L3 corpus) → `context/facts/*.json` (L2) → `context/cards/*.md` (L1) → `context/README.md` (L0 apex, mirrored to `docs/index.md` for the published site).
+- **Navigation is derived, never curated.** The corpus folder hierarchy plus the registry's `navigation:` contract is the only input; `nav.yml`, `context/nav/*.json` and `docs/browse/*.md` are all rendered from it. To change the sidebar, edit `_data/projects.yml` (a project's `nav.groups`, `nav.exclude`, `nav.order`, `navigation.section_titles`) and rebuild — never the nav files, and never add a `nav:` key to `mkdocs.yml` (it would shadow the `INHERIT`ed one).
 
 ### The context engine (`scripts/context_engine/`)
 
-Package layout: `registry.py` (load/validate registry, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
+Package layout: `registry.py` (load/validate registry + the navigation contract, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `navigator.py` (corpus hierarchy + contract → one nav tree, rendered to `context/nav/`, `nav.yml` and `docs/browse/`; also folded back into the facts so cards and the sidebar describe the same sections) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest; section titles are indexed so searches land on the right part of the sidebar) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
 
 ### The MCP server (`mcp/server.py`)
 
-Stdlib-only, stdio, newline-delimited JSON-RPC; registered in `.mcp.json` (project scope, so Claude Code auto-discovers it here). Read-only by design: tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`; resources `context://...`. It reads through `scripts/context_engine/query.py` — one code path for CLI and MCP. Never add write/mutate tools.
+Stdlib-only, stdio, newline-delimited JSON-RPC; registered in `.mcp.json` (project scope, so Claude Code auto-discovers it here). Read-only by design: tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`; resources `context://...`. It reads through `scripts/context_engine/query.py` — one code path for CLI and MCP. Never add write/mutate tools.
 
 ### The AI harmonization subsystem (`scripts/harmonize/`)
 
@@ -55,6 +57,7 @@ python3 scripts/generate_docs_index.py
 python3 -m scripts.context_engine build          # full pyramid rebuild (--ai auto|off|anthropic|xai|mock)
 python3 -m scripts.context_engine sync           # registry -> repos.txt
 python3 -m scripts.context_engine query <terms>  # search; also: card/facts/apex/status/projects
+python3 -m scripts.context_engine nav [project]  # navigation tree (--depth N, --json)
 
 # Drift gate (run before committing structural changes)
 python3 scripts/schema_lint.py check .
@@ -87,8 +90,10 @@ Unit tests live in `tests/unit/test_cases/` (unittest discovery; `tests/unit/tes
 
 ## Conventions specific to this repo
 
-- **Registry first**: adding/removing a fleet project = edit `_data/projects.yml`, run `sync`, rebuild. Never edit `repos.txt` by hand.
+- **Registry first**: adding/removing a fleet project = edit `_data/projects.yml`, run `sync`, rebuild. Never edit `repos.txt` by hand. The same file owns the navigation contract — sidebar grouping, section labels, depth caps and exclusions live there, not in `mkdocs.yml`.
+- **Corpus layout is the navigation contract**: `process.py` preserves each upstream repo's directory structure under `docs/{repo}/` precisely because the navigator turns that hierarchy straight into the published sidebar. Don't flatten or re-bucket the corpus.
+- **Every page must be safe to put in the nav**: Material resolves `page.meta.icon` as a bundled SVG for each nav entry, so an upstream `icon: bi-gear` fails the whole site build. `scripts/fix_frontmatter_icons.py` normalizes those at ingest (`process.py`) and in the quality gate (`run_doc_checks.sh --apply`).
 - **SCHEMA protocol**: structural changes (new top-level entry, new script, new registry) require updating the governing `SCHEMA.md` table in the same change; the lint gate enforces existence and, where `coverage: full`, exact listings (`scripts/`, `_data/`, `mcp/`).
 - Frontmatter is the corpus contract (`title`, `tags`, `category`, dates); processing scripts stay frontmatter-aware and idempotent (the `--apply` fixers run repeatedly in CI). Cards/facts have their own frontmatter/JSON contracts — change them in `synthesizer.py`/`extractor.py`, not by editing outputs.
 - New utility scripts belong under `scripts/`, must fit a pipeline stage, and get a row in `scripts/SCHEMA.md` + a section in `scripts/README.md` (README-First/README-Last house rule from the parent repo).
-- `PRD.md` is the context-engine product spec (v2; the v1 aggregator MVP is in git history). `MKDOCS.md` documents the site build. This repo has its **own** `mkdocs.yml` (`docs_dir: docs`) deployed by `deploy-pages.yaml`; the parent monorepo separately builds the same `docs/` tree under its root `mkdocs.yml`.
+- `PRD.md` is the context-engine product spec (v2; the v1 aggregator MVP is in git history). `MKDOCS.md` documents the site build **and the generated navigation**. This repo has its **own** `mkdocs.yml` (`docs_dir: docs`, `INHERIT: ./nav.yml`) deployed by `deploy-pages.yaml`; the parent monorepo separately builds the same `docs/` tree under its root `mkdocs.yml`.

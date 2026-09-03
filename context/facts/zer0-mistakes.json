@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 708,
-    "fingerprint": "99210c0dbf8408ad",
+    "file_count": 705,
+    "fingerprint": "98598caa36af12d8",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4583171
+    "total_bytes": 4569972
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -34,6 +34,83 @@
     "CODE_OF_CONDUCT.md",
     "docs/architecture/ui-components.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/zer0-mistakes.md",
+    "fingerprint": "6f39bea50aa45b36",
+    "index": "zer0-mistakes/README.md",
+    "max_depth": 6,
+    "pages": 703,
+    "present": true,
+    "sections": 106,
+    "skipped": 2,
+    "title": "Zer0 Mistakes",
+    "top_sections": [
+      {
+        "index": "zer0-mistakes/test/README.md",
+        "pages": 125,
+        "path": null,
+        "title": "Repository & tooling",
+        "type": "group"
+      },
+      {
+        "index": "zer0-mistakes/_data/README.md",
+        "pages": 2,
+        "path": "_data",
+        "title": "Data",
+        "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/_design-system/readme.md",
+        "pages": 13,
+        "path": "_design-system",
+        "title": "Design System",
+        "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/docs/README.md",
+        "pages": 110,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/examples/README.md",
+        "pages": 52,
+        "path": "examples",
+        "title": "Examples",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 166,
+        "path": "fr",
+        "title": "Fran\u00e7ais",
+        "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/_includes/README.md",
+        "pages": 3,
+        "path": "_includes",
+        "title": "Includes",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 212,
+        "path": "pages",
+        "title": "Pages",
+        "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/templates/README.md",
+        "pages": 11,
+        "path": "templates",
+        "title": "Templates Directory",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/zer0-mistakes.json"
+  },
   "project": {
     "branch": null,
     "external": false,

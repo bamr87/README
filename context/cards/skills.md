@@ -40,12 +40,17 @@ tags:
 - ~509,370 words across 712 indexed documents
 - code samples in: python, java, typescript, csharp, bash, plaintext, rust, markdown
 
-## Structure
+## Navigation
 
-- `.github/` (705 docs)
-- `tests/` (2 docs)
-- `docs-site/` (1 docs)
-- `hooks/` (1 docs)
+712 published pages in 254 sections (max depth 6) — [browse the full map](../../docs/browse/skills.md) · [tree as JSON](../nav/skills.json)
+
+- **Skills** (35 pages)
+- **Agents** (6 pages)
+- **Prompts** (5 pages)
+- **Plugins** (652 pages)
+- **Documentation** (6 pages)
+- **Workflows** (1 pages)
+- **Repository & tooling** (4 pages)
 
 ## Key documents
 
@@ -63,6 +68,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query skills
 python3 -m scripts.context_engine facts skills
+python3 -m scripts.context_engine nav skills
 ```
 
 MCP: `get_project` with `{"name": "skills"}` (server: `mcp/server.py`, registered in `.mcp.json`).

@@ -7,7 +7,8 @@ admin_actions:
 admin_section: Theme Preview
 excerpt: Live style guide — preview skins, color modes, and component coverage in
   one place.
-icon: bi-easel
+icon: material/presentation
+source_icon: bi-easel
 lastmod: 2026-05-24 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme-preview/

@@ -1,7 +1,8 @@
 ---
 excerpt: Preview theme skins, generate palettes, customize CSS variables, and export
   YAML configuration.
-icon: bi-palette
+icon: material/palette
+source_icon: bi-palette
 lastmod: 2026-04-05 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme/

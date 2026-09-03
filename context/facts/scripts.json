@@ -34,6 +34,34 @@
     "FORKME/REVIEW-SUMMARY.md",
     "STASHME/STASHME-EXAMPLES.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/scripts.md",
+    "fingerprint": "ecb49a40e48b28a2",
+    "index": "scripts/README.md",
+    "max_depth": 2,
+    "pages": 15,
+    "present": true,
+    "sections": 2,
+    "skipped": 0,
+    "title": "Scripts",
+    "top_sections": [
+      {
+        "index": "scripts/FORKME/README.md",
+        "pages": 7,
+        "path": "FORKME",
+        "title": "\ud83c\udf74 ForkMe - Advanced GitHub Repository Forking Utility",
+        "type": "section"
+      },
+      {
+        "index": "scripts/STASHME/README.md",
+        "pages": 4,
+        "path": "STASHME",
+        "title": "\ud83d\udcbe StashMe - Multi-Repository Cloud Stash Utility",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/scripts.json"
+  },
   "project": {
     "branch": null,
     "external": false,

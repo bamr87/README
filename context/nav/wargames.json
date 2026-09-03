@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "wargames",
+  "title": "Wargames",
+  "corpus": "docs/wargames",
+  "counts": {
+    "pages": 1,
+    "sections": 0,
+    "max_depth": 1,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "8ea08f48ee56b48e",
+  "tree": {
+    "type": "section",
+    "title": "Wargames",
+    "index": "wargames/index.md",
+    "pages": 1,
+    "children": [
+      {
+        "type": "page",
+        "title": "Wargames & Security Challenges",
+        "path": "wargames/index.md",
+        "rel": "index.md"
+      }
+    ]
+  },
+  "registered": false
+}
