@@ -4,9 +4,7 @@ title: Cloud Solution Architect Acceptance Criteria
 ---
 # Cloud Solution Architect Acceptance Criteria
 
-**Skill**: `cloud-solution-architect`
-**Purpose**: Produce architecture reviews, design pattern recommendations, and technology decisions aligned with Azure Well-Architected Framework
-**Focus**: WAF pillar alignment, design patterns, technology justification, mission-critical design, performance antipatterns, ADRs
+**Skill**: `cloud-solution-architect` **Purpose**: Produce architecture reviews, design pattern recommendations, and technology decisions aligned with Azure Well-Architected Framework **Focus**: WAF pillar alignment, design patterns, technology justification, mission-critical design, performance antipatterns, ADRs
 
 ---
 

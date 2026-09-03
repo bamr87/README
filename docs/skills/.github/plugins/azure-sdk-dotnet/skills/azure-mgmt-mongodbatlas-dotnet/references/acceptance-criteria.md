@@ -4,10 +4,7 @@ title: Azure.ResourceManager.MongoDBAtlas SDK Acceptance Criteria (.NET)
 ---
 # Azure.ResourceManager.MongoDBAtlas SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.ResourceManager.MongoDBAtlas`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mongodbatlas/Azure.ResourceManager.MongoDBAtlas
-**Package**: https://www.nuget.org/packages/Azure.ResourceManager.MongoDBAtlas
-**Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
+**SDK**: `Azure.ResourceManager.MongoDBAtlas` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/mongodbatlas/Azure.ResourceManager.MongoDBAtlas **Package**: https://www.nuget.org/packages/Azure.ResourceManager.MongoDBAtlas **Purpose**: Skill testing acceptance criteria for validating generated C# code correctness
 
 ---
 

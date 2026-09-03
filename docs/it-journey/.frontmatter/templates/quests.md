@@ -4,19 +4,7 @@ title: 'Advanced frontmatter fields (see `.github/instructions/quest.instruction
   for structure):'
 ---
 ---
-title: "{{fm.title}}"
-description: "{{fm.description}}"
-date: {{fm.date}}
-preview: "{{fm.preview}}"
-level: "{{fm.level}}"
-difficulty: "{{fm.difficulty}}"
-estimated_time: "{{fm.estimated_time}}"
-primary_technology: "{{fm.primary_technology}}"
-quest_type: "{{fm.quest_type}}"
-skill_focus: "{{fm.skill_focus}}"
-learning_style: "{{fm.learning_style}}"
-quest_series: "{{fm.quest_series}}"
-fmContentType: quest
+title: "{{fm.title}}" description: "{{fm.description}}" date: {{fm.date}} preview: "{{fm.preview}}" level: "{{fm.level}}" difficulty: "{{fm.difficulty}}" estimated_time: "{{fm.estimated_time}}" primary_technology: "{{fm.primary_technology}}" quest_type: "{{fm.quest_type}}" skill_focus: "{{fm.skill_focus}}" learning_style: "{{fm.learning_style}}" quest_series: "{{fm.quest_series}}" fmContentType: quest
 # Advanced frontmatter fields (see `.github/instructions/quest.instructions.md` for structure):
 # - quest_line
 # - quest_arc
@@ -24,10 +12,7 @@ fmContentType: quest
 # - quest_relationships
 # - quest_mapping
 sub_title: "Level {{fm.level}} ({{fm.level | decimal}}) Quest: {{fm.quest_type | title}} - {{fm.primary_technology | title}}"
-excerpt: "{{fm.excerpt}}"
-snippet: "{{fm.snippet}}"
-author: "{{fm.author}}"
-tags:
+excerpt: "{{fm.excerpt}}" snippet: "{{fm.snippet}}" author: "{{fm.author}}" tags:
     - {{fm.level}}
     - {{fm.primary_technology}}
     - {{fm.quest_type}}
@@ -47,14 +32,7 @@ keywords:
         - gamified-learning
         - it-journey
         - quest-based-learning
-lastmod: {{fm.date}}
-permalink: /quests/{{fm.level}}/{{slug}}/
-attachments: ""
-comments: {{fm.comments}}
-prerequisites: {{fm.prerequisites}}
-rewards: {{fm.rewards}}
-related_quests: {{fm.related_quests}}
-validation_criteria: {{fm.validation_criteria}}
+lastmod: {{fm.date}} permalink: /quests/{{fm.level}}/{{slug}}/ attachments: "" comments: {{fm.comments}} prerequisites: {{fm.prerequisites}} rewards: {{fm.rewards}} related_quests: {{fm.related_quests}} validation_criteria: {{fm.validation_criteria}}
 draft: {{fm.draft}}
 ---
 

@@ -103,6 +103,4 @@ python3 -m scripts.context_engine card <project>   # print a card
 python3 -m scripts.context_engine status           # freshness manifest
 ```
 
-AI clients connect through the MCP server (`mcp/server.py`, registered
-in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,
-`get_readme`, `get_schema`, `context_status`.
+AI clients connect through the MCP server (`mcp/server.py`, registered in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`.

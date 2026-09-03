@@ -4,9 +4,7 @@ title: Azure Monitor Query SDK for Java Acceptance Criteria
 ---
 # Azure Monitor Query SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-monitor-query`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-query
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-monitor-query` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/monitor/azure-monitor-query **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

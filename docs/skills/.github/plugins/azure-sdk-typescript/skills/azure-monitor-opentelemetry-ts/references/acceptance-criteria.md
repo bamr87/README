@@ -4,9 +4,7 @@ title: Azure Monitor OpenTelemetry SDK Acceptance Criteria (TypeScript)
 ---
 # Azure Monitor OpenTelemetry SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/monitor-opentelemetry`, `@azure/monitor-opentelemetry-exporter`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/monitor
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/monitor-opentelemetry`, `@azure/monitor-opentelemetry-exporter` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/monitor **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

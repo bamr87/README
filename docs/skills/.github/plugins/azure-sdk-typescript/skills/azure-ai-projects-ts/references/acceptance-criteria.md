@@ -4,9 +4,7 @@ title: Azure AI Projects SDK Acceptance Criteria (TypeScript)
 ---
 # Azure AI Projects SDK Acceptance Criteria (TypeScript)
 
-**SDK**: `@azure/ai-projects`
-**Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/ai/ai-projects
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `@azure/ai-projects` **Repository**: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/ai/ai-projects **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

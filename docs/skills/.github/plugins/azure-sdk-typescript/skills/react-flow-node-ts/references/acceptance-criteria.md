@@ -4,8 +4,7 @@ title: React Flow Node Acceptance Criteria (TypeScript)
 ---
 # React Flow Node Acceptance Criteria (TypeScript)
 
-**Library**: React Flow, @xyflow/react
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**Library**: React Flow, @xyflow/react **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

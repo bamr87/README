@@ -4,10 +4,7 @@ title: Azure OpenAI SDK Acceptance Criteria (.NET)
 ---
 # Azure OpenAI SDK Acceptance Criteria (.NET)
 
-**SDK**: `Azure.AI.OpenAI`
-**Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/openai/Azure.AI.OpenAI
-**NuGet Package**: https://www.nuget.org/packages/Azure.AI.OpenAI
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `Azure.AI.OpenAI` **Repository**: https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/openai/Azure.AI.OpenAI **NuGet Package**: https://www.nuget.org/packages/Azure.AI.OpenAI **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

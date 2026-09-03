@@ -4,9 +4,7 @@ title: Azure Communication Chat SDK for Java Acceptance Criteria
 ---
 # Azure Communication Chat SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-communication-chat`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-chat
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-communication-chat` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/communication/azure-communication-chat **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

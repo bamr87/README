@@ -4,8 +4,7 @@ title: Frontend UI Dark Theme Acceptance Criteria (TypeScript)
 ---
 # Frontend UI Dark Theme Acceptance Criteria (TypeScript)
 
-**Stack**: React, Tailwind CSS, Framer Motion, Vite
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**Stack**: React, Tailwind CSS, Framer Motion, Vite **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

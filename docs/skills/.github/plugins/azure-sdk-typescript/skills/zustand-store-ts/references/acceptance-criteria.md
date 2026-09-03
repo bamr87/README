@@ -4,8 +4,7 @@ title: Zustand Store Acceptance Criteria (TypeScript)
 ---
 # Zustand Store Acceptance Criteria (TypeScript)
 
-**Library**: Zustand
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**Library**: Zustand **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

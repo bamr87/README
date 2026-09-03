@@ -4,9 +4,7 @@ title: Azure Data Tables Java SDK Acceptance Criteria
 ---
 # Azure Data Tables Java SDK Acceptance Criteria
 
-**SDK**: `com.azure:azure-data-tables`
-**Repository**: https://github.com/Azure/azure-sdk-for-java
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-data-tables` **Repository**: https://github.com/Azure/azure-sdk-for-java **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 

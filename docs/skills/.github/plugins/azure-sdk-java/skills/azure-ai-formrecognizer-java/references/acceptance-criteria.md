@@ -4,9 +4,7 @@ title: Azure Document Intelligence (Form Recognizer) SDK for Java Acceptance Cri
 ---
 # Azure Document Intelligence (Form Recognizer) SDK for Java Acceptance Criteria
 
-**SDK**: `com.azure:azure-ai-formrecognizer`
-**Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/formrecognizer/azure-ai-formrecognizer
-**Purpose**: Skill testing acceptance criteria for validating generated code correctness
+**SDK**: `com.azure:azure-ai-formrecognizer` **Repository**: https://github.com/Azure/azure-sdk-for-java/tree/main/sdk/formrecognizer/azure-ai-formrecognizer **Purpose**: Skill testing acceptance criteria for validating generated code correctness
 
 ---
 
