@@ -4,7 +4,8 @@ categories:
 description: The zer0-mistakes design system, live — tokens, foundation specimens,
   component twins, and the Claude Design round-trip that keeps them in lockstep with
   the theme.
-icon: bi-palette2
+icon: material/palette-outline
+source_icon: bi-palette2
 lastmod: 2026-08-14 00:00:00+00:00
 layout: default
 permalink: /design/

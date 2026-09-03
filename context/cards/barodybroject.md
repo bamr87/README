@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 6509281ac0bcba0c
+source_fingerprint: 063ced09c9164668
 tags:
   - agricultural technology
   - azure
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 305 docs |
+| Corpus | `docs/barodybroject` - 299 docs |
 | External | no |
 
 ## Signals
@@ -44,16 +44,14 @@ tags:
 - ~227,530 words across 306 indexed documents
 - code samples in: bash, python, plaintext, yaml, django, markdown, html, javascript
 
-## Structure
+## Navigation
 
-- `src/` (123 docs)
-- `README/` (73 docs)
-- `docs/` (49 docs)
-- `.github/` (35 docs)
-- `.vscode/` (6 docs)
-- `infra/` (5 docs)
-- `scripts/` (2 docs)
-- `test/` (2 docs)
+298 published pages in 63 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
+
+- **Repository & tooling** (45 pages)
+- **Documentation** (49 pages)
+- **Source** (122 pages)
+- **📚 The Forbidden Library** (73 pages)
 
 ## Key documents
 
@@ -71,6 +69,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query barodybroject
 python3 -m scripts.context_engine facts barodybroject
+python3 -m scripts.context_engine nav barodybroject
 ```
 
 MCP: `get_project` with `{"name": "barodybroject"}` (server: `mcp/server.py`, registered in `.mcp.json`).

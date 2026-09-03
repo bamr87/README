@@ -1,6 +1,7 @@
 ---
 excerpt: Overview of all Jekyll collections, their configuration, and content counts.
-icon: bi-collection
+icon: material/folder-multiple
+source_icon: bi-collection
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/settings/collections/

@@ -27,12 +27,13 @@ Any other MCP client can launch it the same way (command `python3`, args `mcp/se
 | `get_project` | `name` | The project's card (markdown) + facts (JSON) |
 | `search_context` | `query`, `limit?` | Ranked matches across cards/facts/apex, with pointers into `docs/` |
 | `get_readme` | — | The consolidated fleet README (L0 apex) |
+| `get_nav` | `name?`, `depth?`, `flat?` | A corpus's published section/page hierarchy — omit `name` to list every navigable corpus, `flat: true` for every page with its breadcrumb |
 | `get_schema` | `path?` | A `SCHEMA.md` from the structure pyramid (default: root) |
 | `context_status` | — | Freshness manifest: generation time, enrichment, fingerprints |
 
 ## Resources
 
-`context://apex`, `context://index`, `context://manifest`, `context://cards/<name>`, `context://facts/<name>`.
+`context://apex`, `context://index`, `context://manifest`, `context://nav`, `context://cards/<name>`, `context://facts/<name>`, `context://nav/<name>`.
 
 ## Smoke test
 
@@ -46,8 +47,10 @@ printf '%s\n%s\n%s\n' \
 
 ## Design notes
 
-- The server reads `context/index/context_index.json` and the card/fact
+- The server reads `context/index/context_index.json` and the card/fact/nav
 files via `scripts/context_engine/query.py` — one code path for the CLI and MCP surfaces.
+- `get_nav` is the cheap way to locate a document: it answers "what does this
+corpus contain, and where does it live" from one JSON tree instead of a directory crawl. Section titles are indexed too, so `search_context` ranks the navigation trees alongside cards and facts.
 - Errors inside a tool return an `isError` tool result (per MCP), not a
   protocol error; unknown methods return JSON-RPC `-32601`.
 - If the pyramid has not been built yet, every tool answers with a hint to

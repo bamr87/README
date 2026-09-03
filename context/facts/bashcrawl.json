@@ -28,6 +28,41 @@
     "docs/demo-critical-path.md",
     "docs/walkthrough.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/bashcrawl.md",
+    "fingerprint": "16a6ed17ea199147",
+    "index": "bashcrawl/README.md",
+    "max_depth": 4,
+    "pages": 44,
+    "present": true,
+    "sections": 12,
+    "skipped": 1,
+    "title": "Bash Crawl",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 12,
+        "path": null,
+        "title": "Repository & tooling",
+        "type": "group"
+      },
+      {
+        "index": "bashcrawl/docs/index.md",
+        "pages": 25,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "bashcrawl/entrance/README.md",
+        "pages": 3,
+        "path": "entrance",
+        "title": "\ud83d\udeaa Welcome to the Entrance - Your Terminal Adventure Begins Here",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/bashcrawl.json"
+  },
   "project": {
     "branch": null,
     "external": false,

@@ -9,39 +9,55 @@ generated: true
 
 Aggregated, continuously refreshed documentation for every project in the [bamr87](https://github.com/bamr87) fleet. This page is generated from the fleet registry by the README context engine.
 
+The left sidebar mirrors each corpus's own folder hierarchy — see the [content map](browse/index.md) to browse any project in full.
+
 ## Documentation by project
 
-### [scripts directory](scripts/README.md)
+### [IT-Journey](it-journey/index.md)
 
-Automation scripts for forking, linting, stashing, and project management across the fleet. *(15 documents)*
+Educational IT platform with quests, blog posts, and technical documentation. *(1121 documents, 111 sections)*
 
-### [Agent Skills](skills/README.md)
-
-Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents)*
-
-### [Barodybroject](barodybroject/README.md)
-
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(305 documents)*
-
-### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
-
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45 documents)*
+[Content map](browse/it-journey.md)
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(708 documents)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(705 documents, 106 sections)*
 
-### [IT-Journey](it-journey/README.md)
+[Content map](browse/zer0-mistakes.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1122 documents)*
+### [Barodybroject](barodybroject/README.md)
+
+Full-stack application platform with infrastructure, testing, and deployment tooling. *(299 documents, 63 sections)*
+
+[Content map](browse/barodybroject.md)
+
+### [⚔️ Bashcrawl — learn the terminal by playing](bashcrawl/README.md)
+
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(45 documents, 12 sections)*
+
+[Content map](browse/bashcrawl.md)
+
+### [Agent Skills](skills/README.md)
+
+Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents, 254 sections)*
+
+[Content map](browse/skills.md)
+
+### [scripts directory](scripts/README.md)
+
+Automation scripts for forking, linting, stashing, and project management across the fleet. *(15 documents, 2 sections)*
+
+[Content map](browse/scripts.md)
 
 ### [Wargames](OverTheWire-website/README.md)
 
-OverTheWire wargame guides and security-challenge documentation (external reference corpus). *(232 documents)*
+OverTheWire wargame guides and security-challenge documentation (external reference corpus). *(232 documents, 17 sections)*
+
+[Content map](browse/OverTheWire-website.md)
 
 ---
 
-## Reports
+## Browse and reports
 
+- [Content map — every corpus, section by section](browse/index.md)
 - [Quality and analysis results](results/index.md)
-- [Sitemap](sitemap.md)

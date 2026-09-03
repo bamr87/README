@@ -1,6 +1,7 @@
 ---
 excerpt: Afficher et exporter les structures des menus de navigation.
-icon: bi-signpost-2
+icon: material/sign-direction
+source_icon: bi-signpost-2
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

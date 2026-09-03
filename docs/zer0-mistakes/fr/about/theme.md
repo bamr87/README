@@ -1,7 +1,8 @@
 ---
 admin_section: Theme Customizer
 excerpt: Aperçu des composants et exemples du thème Bootstrap 5.
-icon: bi-palette
+icon: material/palette
+source_icon: bi-palette
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

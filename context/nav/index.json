@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "order": [
+    "it-journey",
+    "zer0-mistakes",
+    "barodybroject",
+    "bashcrawl",
+    "skills",
+    "scripts",
+    "OverTheWire-website"
+  ],
+  "counts": {
+    "projects": 7,
+    "pages": 3122
+  },
+  "projects": {
+    "it-journey": {
+      "title": "IT Journey",
+      "corpus": "docs/it-journey",
+      "tree": "context/nav/it-journey.json",
+      "browse": "docs/browse/it-journey.md",
+      "registered": true,
+      "pages": 1115,
+      "sections": 111,
+      "max_depth": 7,
+      "skipped": 6,
+      "fingerprint": "65a0d458320d5a45"
+    },
+    "zer0-mistakes": {
+      "title": "Zer0 Mistakes",
+      "corpus": "docs/zer0-mistakes",
+      "tree": "context/nav/zer0-mistakes.json",
+      "browse": "docs/browse/zer0-mistakes.md",
+      "registered": true,
+      "pages": 703,
+      "sections": 106,
+      "max_depth": 6,
+      "skipped": 2,
+      "fingerprint": "6f39bea50aa45b36"
+    },
+    "barodybroject": {
+      "title": "Barody Project",
+      "corpus": "docs/barodybroject",
+      "tree": "context/nav/barodybroject.json",
+      "browse": "docs/browse/barodybroject.md",
+      "registered": true,
+      "pages": 298,
+      "sections": 63,
+      "max_depth": 7,
+      "skipped": 1,
+      "fingerprint": "46d78858872bdcb1"
+    },
+    "bashcrawl": {
+      "title": "Bash Crawl",
+      "corpus": "docs/bashcrawl",
+      "tree": "context/nav/bashcrawl.json",
+      "browse": "docs/browse/bashcrawl.md",
+      "registered": true,
+      "pages": 44,
+      "sections": 12,
+      "max_depth": 4,
+      "skipped": 1,
+      "fingerprint": "16a6ed17ea199147"
+    },
+    "skills": {
+      "title": "Agent Skills",
+      "corpus": "docs/skills",
+      "tree": "context/nav/skills.json",
+      "browse": "docs/browse/skills.md",
+      "registered": true,
+      "pages": 712,
+      "sections": 254,
+      "max_depth": 6,
+      "skipped": 0,
+      "fingerprint": "62d0fa4f2d628db9"
+    },
+    "scripts": {
+      "title": "Scripts",
+      "corpus": "docs/scripts",
+      "tree": "context/nav/scripts.json",
+      "browse": "docs/browse/scripts.md",
+      "registered": true,
+      "pages": 15,
+      "sections": 2,
+      "max_depth": 2,
+      "skipped": 0,
+      "fingerprint": "ecb49a40e48b28a2"
+    },
+    "OverTheWire-website": {
+      "title": "OverTheWire",
+      "corpus": "docs/OverTheWire-website",
+      "tree": "context/nav/OverTheWire-website.json",
+      "browse": "docs/browse/OverTheWire-website.md",
+      "registered": true,
+      "pages": 232,
+      "sections": 17,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "ceab543eb82ca094"
+    },
+    "results": {
+      "title": "Results",
+      "corpus": "docs/results",
+      "tree": "context/nav/results.json",
+      "browse": "docs/browse/results.md",
+      "registered": false,
+      "pages": 1,
+      "sections": 0,
+      "max_depth": 1,
+      "skipped": 0,
+      "fingerprint": "3d844c313814d0de"
+    },
+    "setup": {
+      "title": "Setup",
+      "corpus": "docs/setup",
+      "tree": "context/nav/setup.json",
+      "browse": "docs/browse/setup.md",
+      "registered": false,
+      "pages": 1,
+      "sections": 0,
+      "max_depth": 1,
+      "skipped": 0,
+      "fingerprint": "93f840c5df19c31c"
+    },
+    "wargames": {
+      "title": "Wargames",
+      "corpus": "docs/wargames",
+      "tree": "context/nav/wargames.json",
+      "browse": "docs/browse/wargames.md",
+      "registered": false,
+      "pages": 1,
+      "sections": 0,
+      "max_depth": 1,
+      "skipped": 0,
+      "fingerprint": "8ea08f48ee56b48e"
+    }
+  }
+}

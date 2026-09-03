@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 8a95c989dbb45bc1
+source_fingerprint: 430a761accf7d02a
 tags:
   - ctf
   - security
@@ -33,12 +33,13 @@ tags:
 - ~16,263 words across 232 indexed documents
 - code samples in: plaintext
 
-## Structure
+## Navigation
 
-- `wargames/` (219 docs)
-- `information/` (8 docs)
-- `_includes/` (3 docs)
-- `rules/` (1 docs)
+232 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/OverTheWire-website.md) · [tree as JSON](../nav/OverTheWire-website.json)
+
+- **Includes** (3 pages)
+- **Index (wargames)** (219 pages)
+- **Information** (8 pages)
 
 ## Key documents
 
@@ -56,6 +57,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query OverTheWire-website
 python3 -m scripts.context_engine facts OverTheWire-website
+python3 -m scripts.context_engine nav OverTheWire-website
 ```
 
 MCP: `get_project` with `{"name": "OverTheWire-website"}` (server: `mcp/server.py`, registered in `.mcp.json`).

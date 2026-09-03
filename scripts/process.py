@@ -3,14 +3,23 @@
 Documentation processing script for the centralized docs aggregator.
 Copies markdown files from raw_docs into docs/{repo_name}/ preserving
 the original directory structure, and adds YAML front matter.
+
+The preserved directory structure is the navigation contract: the context
+engine's navigator turns docs/{repo_name}/** straight into the published
+sidebar, so this stage must keep the upstream hierarchy intact and leave
+every page safe to place in a navigation entry.
 """
 
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Dict, Optional
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from fix_frontmatter_icons import normalize_frontmatter  # noqa: E402
 
 # Configuration
 RAW_DIR = 'raw_docs'
@@ -89,6 +98,10 @@ def process_markdown_file(src_path: Path, dest_base: Path) -> None:
 
         # Merge with existing front matter (new takes precedence)
         updated_fm = {**existing_fm, **new_fm}
+
+        # Upstream icon vocabularies (Bootstrap Icons here) crash Material's
+        # nav rendering; map them onto bundled icons, keeping the original.
+        updated_fm, _ = normalize_frontmatter(updated_fm)
 
         # Normalize tags: MkDocs requires tags to be a list
         if 'tags' in updated_fm:

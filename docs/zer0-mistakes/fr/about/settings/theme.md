@@ -1,7 +1,8 @@
 ---
 excerpt: Prévisualisez les skins du thème, générez des palettes, personnalisez les
   variables CSS et exportez la configuration YAML.
-icon: bi-palette
+icon: material/palette
+source_icon: bi-palette
 lang: fr
 lastmod: 2026-04-05 00:00:00+00:00
 layout: admin

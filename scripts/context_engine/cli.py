@@ -7,9 +7,10 @@ from typing import List
 
 from . import ENGINE_VERSION
 from .builder import build_all
+from .navigator import check_nav
 from .query import (
-    ContextMissing, get_apex, get_card, get_facts, get_manifest,
-    list_projects, search,
+    ContextMissing, get_apex, get_card, get_facts, get_manifest, get_nav,
+    list_nav, list_projects, search,
 )
 from .registry import RegistryError, load_registry, sync_repos_txt
 
@@ -58,6 +59,52 @@ def _cmd_card(args: argparse.Namespace) -> int:
 def _cmd_facts(args: argparse.Namespace) -> int:
     print(json.dumps(get_facts(args.name), indent=2, sort_keys=True))
     return 0
+
+
+def _print_nav(nodes, depth: int, limit: int, prefix: str = "") -> None:
+    for node in nodes:
+        marker = "-" if node["type"] == "page" else "+"
+        target = node.get("path") or node.get("index") or ""
+        count = "" if node["type"] == "page" else f"  ({node.get('pages', 0)} pages)"
+        print(f"{prefix}{marker} {node['title']}{count}"
+              + (f"    {target}" if target else ""))
+        if node["type"] != "page" and depth < limit:
+            _print_nav(node.get("children") or [], depth + 1, limit, prefix + "  ")
+
+
+def _cmd_nav(args: argparse.Namespace) -> int:
+    if args.name is None:
+        rows = list_nav()
+        if args.json:
+            print(json.dumps(rows, indent=2))
+            return 0
+        for row in rows:
+            flag = "" if row.get("registered", True) else "  (unregistered)"
+            print(f"{row['name']:<24} {row['pages']:>5} pages  "
+                  f"{row['sections']:>4} sections  depth {row['max_depth']}{flag}")
+        return 0
+    nav = get_nav(args.name)
+    if args.json:
+        print(json.dumps(nav, indent=2))
+        return 0
+    counts = nav["counts"]
+    print(f"{nav['title']}  —  {counts['pages']} pages, "
+          f"{counts['sections']} sections, depth {counts['max_depth']}")
+    print(f"corpus: {nav['corpus']}  fingerprint: {nav['fingerprint']}\n")
+    _print_nav(nav["tree"].get("children") or [], 1, args.depth)
+    return 0
+
+
+def _cmd_navcheck(_args: argparse.Namespace) -> int:
+    drifted = check_nav(load_registry())
+    if not drifted:
+        print("navigation surfaces are in sync with the corpus")
+        return 0
+    print("navigation drift detected — run "
+          "`python3 -m scripts.context_engine build`:", file=sys.stderr)
+    for entry in drifted:
+        print(f"  {entry}", file=sys.stderr)
+    return 1
 
 
 def _cmd_apex(_args: argparse.Namespace) -> int:
@@ -117,6 +164,17 @@ def build_parser() -> argparse.ArgumentParser:
     facts = sub.add_parser("facts", help="print a project fact sheet")
     facts.add_argument("name")
     facts.set_defaults(func=_cmd_facts)
+
+    nav = sub.add_parser("nav", help="print a navigation tree (or list corpora)")
+    nav.add_argument("name", nargs="?", help="corpus name (omit to list all)")
+    nav.add_argument("--depth", type=int, default=2,
+                     help="section levels to print (default: 2)")
+    nav.add_argument("--json", action="store_true")
+    nav.set_defaults(func=_cmd_nav)
+
+    navcheck = sub.add_parser(
+        "navcheck", help="fail when the generated navigation is out of sync")
+    navcheck.set_defaults(func=_cmd_navcheck)
 
     apex = sub.add_parser("apex", help="print the consolidated README")
     apex.set_defaults(func=_cmd_apex)

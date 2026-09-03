@@ -17,6 +17,8 @@ on:
       - '.mcp.json'
       - '**.md'
       - 'requirements.txt'
+      - 'nav.yml'
+      - 'mkdocs.yml'
       - '.github/workflows/docs-quality-check.yaml'
   workflow_dispatch: {}
 
@@ -52,6 +54,19 @@ jobs:
 
       - name: Validate SCHEMA pyramid (drift gate)
         run: python3 scripts/schema_lint.py check .
+
+      # Every published page has to be safe to place in a navigation entry:
+      # an unresolvable `icon:` fails the whole Material site build.
+      - name: Check navigation-safe frontmatter
+        run: python3 scripts/fix_frontmatter_icons.py
+
+      # The sidebar is generated from docs/ + the registry contract. If a PR
+      # changes either without rebuilding, the published nav would drift away
+      # from the published content - regenerate and diff to catch that.
+      - name: Validate navigation is in sync
+        run: |
+          set -euo pipefail
+          python3 -m scripts.context_engine navcheck
 
       - name: Run doc lint and frontmatter checks
         run: |

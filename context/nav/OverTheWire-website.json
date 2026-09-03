@@ -1,0 +1,1587 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "OverTheWire-website",
+  "title": "OverTheWire",
+  "corpus": "docs/OverTheWire-website",
+  "counts": {
+    "pages": 232,
+    "sections": 17,
+    "max_depth": 3,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "ceab543eb82ca094",
+  "tree": {
+    "type": "section",
+    "title": "OverTheWire",
+    "index": "OverTheWire-website/README.md",
+    "pages": 232,
+    "children": [
+      {
+        "type": "page",
+        "title": "Wargames",
+        "path": "OverTheWire-website/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Index",
+        "path": "OverTheWire-website/rules/index.md",
+        "rel": "rules/index.md",
+        "folder": "rules"
+      },
+      {
+        "type": "section",
+        "title": "Includes",
+        "rel": "_includes",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "Games",
+            "path": "OverTheWire-website/_includes/games.md",
+            "rel": "_includes/games.md"
+          },
+          {
+            "type": "page",
+            "title": "Information",
+            "path": "OverTheWire-website/_includes/information.md",
+            "rel": "_includes/information.md"
+          },
+          {
+            "type": "page",
+            "title": "Patreonlist",
+            "path": "OverTheWire-website/_includes/patreonlist.md",
+            "rel": "_includes/patreonlist.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Index (wargames)",
+        "rel": "wargames",
+        "index": "OverTheWire-website/wargames/index.md",
+        "pages": 219,
+        "children": [
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "OverTheWire-website/wargames/index.md",
+            "rel": "wargames/index.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "OverTheWire-website/wargames/abraxas/index.md",
+            "rel": "wargames/abraxas/index.md",
+            "folder": "wargames/abraxas"
+          },
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "OverTheWire-website/wargames/hes2010/index.md",
+            "rel": "wargames/hes2010/index.md",
+            "folder": "wargames/hes2010"
+          },
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "OverTheWire-website/wargames/kishi/index.md",
+            "rel": "wargames/kishi/index.md",
+            "folder": "wargames/kishi"
+          },
+          {
+            "type": "page",
+            "title": "Index",
+            "path": "OverTheWire-website/wargames/monxla/index.md",
+            "rel": "wargames/monxla/index.md",
+            "folder": "wargames/monxla"
+          },
+          {
+            "type": "section",
+            "title": "Index (bandit)",
+            "rel": "wargames/bandit",
+            "index": "OverTheWire-website/wargames/bandit/index.md",
+            "pages": 36,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/bandit/index.md",
+                "rel": "wargames/bandit/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Bandit0",
+                "path": "OverTheWire-website/wargames/bandit/bandit0.md",
+                "rel": "wargames/bandit/bandit0.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit1",
+                "path": "OverTheWire-website/wargames/bandit/bandit1.md",
+                "rel": "wargames/bandit/bandit1.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit10",
+                "path": "OverTheWire-website/wargames/bandit/bandit10.md",
+                "rel": "wargames/bandit/bandit10.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit11",
+                "path": "OverTheWire-website/wargames/bandit/bandit11.md",
+                "rel": "wargames/bandit/bandit11.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit12",
+                "path": "OverTheWire-website/wargames/bandit/bandit12.md",
+                "rel": "wargames/bandit/bandit12.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit13",
+                "path": "OverTheWire-website/wargames/bandit/bandit13.md",
+                "rel": "wargames/bandit/bandit13.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit14",
+                "path": "OverTheWire-website/wargames/bandit/bandit14.md",
+                "rel": "wargames/bandit/bandit14.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit15",
+                "path": "OverTheWire-website/wargames/bandit/bandit15.md",
+                "rel": "wargames/bandit/bandit15.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit16",
+                "path": "OverTheWire-website/wargames/bandit/bandit16.md",
+                "rel": "wargames/bandit/bandit16.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit17",
+                "path": "OverTheWire-website/wargames/bandit/bandit17.md",
+                "rel": "wargames/bandit/bandit17.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit18",
+                "path": "OverTheWire-website/wargames/bandit/bandit18.md",
+                "rel": "wargames/bandit/bandit18.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit19",
+                "path": "OverTheWire-website/wargames/bandit/bandit19.md",
+                "rel": "wargames/bandit/bandit19.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit2",
+                "path": "OverTheWire-website/wargames/bandit/bandit2.md",
+                "rel": "wargames/bandit/bandit2.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit20",
+                "path": "OverTheWire-website/wargames/bandit/bandit20.md",
+                "rel": "wargames/bandit/bandit20.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit21",
+                "path": "OverTheWire-website/wargames/bandit/bandit21.md",
+                "rel": "wargames/bandit/bandit21.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit22",
+                "path": "OverTheWire-website/wargames/bandit/bandit22.md",
+                "rel": "wargames/bandit/bandit22.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit23",
+                "path": "OverTheWire-website/wargames/bandit/bandit23.md",
+                "rel": "wargames/bandit/bandit23.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit24",
+                "path": "OverTheWire-website/wargames/bandit/bandit24.md",
+                "rel": "wargames/bandit/bandit24.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit25",
+                "path": "OverTheWire-website/wargames/bandit/bandit25.md",
+                "rel": "wargames/bandit/bandit25.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit26",
+                "path": "OverTheWire-website/wargames/bandit/bandit26.md",
+                "rel": "wargames/bandit/bandit26.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit27",
+                "path": "OverTheWire-website/wargames/bandit/bandit27.md",
+                "rel": "wargames/bandit/bandit27.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit28",
+                "path": "OverTheWire-website/wargames/bandit/bandit28.md",
+                "rel": "wargames/bandit/bandit28.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit29",
+                "path": "OverTheWire-website/wargames/bandit/bandit29.md",
+                "rel": "wargames/bandit/bandit29.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit3",
+                "path": "OverTheWire-website/wargames/bandit/bandit3.md",
+                "rel": "wargames/bandit/bandit3.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit30",
+                "path": "OverTheWire-website/wargames/bandit/bandit30.md",
+                "rel": "wargames/bandit/bandit30.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit31",
+                "path": "OverTheWire-website/wargames/bandit/bandit31.md",
+                "rel": "wargames/bandit/bandit31.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit32",
+                "path": "OverTheWire-website/wargames/bandit/bandit32.md",
+                "rel": "wargames/bandit/bandit32.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit33",
+                "path": "OverTheWire-website/wargames/bandit/bandit33.md",
+                "rel": "wargames/bandit/bandit33.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit34",
+                "path": "OverTheWire-website/wargames/bandit/bandit34.md",
+                "rel": "wargames/bandit/bandit34.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit4",
+                "path": "OverTheWire-website/wargames/bandit/bandit4.md",
+                "rel": "wargames/bandit/bandit4.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit5",
+                "path": "OverTheWire-website/wargames/bandit/bandit5.md",
+                "rel": "wargames/bandit/bandit5.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit6",
+                "path": "OverTheWire-website/wargames/bandit/bandit6.md",
+                "rel": "wargames/bandit/bandit6.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit7",
+                "path": "OverTheWire-website/wargames/bandit/bandit7.md",
+                "rel": "wargames/bandit/bandit7.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit8",
+                "path": "OverTheWire-website/wargames/bandit/bandit8.md",
+                "rel": "wargames/bandit/bandit8.md"
+              },
+              {
+                "type": "page",
+                "title": "Bandit9",
+                "path": "OverTheWire-website/wargames/bandit/bandit9.md",
+                "rel": "wargames/bandit/bandit9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (behemoth)",
+            "rel": "wargames/behemoth",
+            "index": "OverTheWire-website/wargames/behemoth/index.md",
+            "pages": 10,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/behemoth/index.md",
+                "rel": "wargames/behemoth/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Behemoth0",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth0.md",
+                "rel": "wargames/behemoth/behemoth0.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth1",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth1.md",
+                "rel": "wargames/behemoth/behemoth1.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth2",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth2.md",
+                "rel": "wargames/behemoth/behemoth2.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth3",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth3.md",
+                "rel": "wargames/behemoth/behemoth3.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth4",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth4.md",
+                "rel": "wargames/behemoth/behemoth4.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth5",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth5.md",
+                "rel": "wargames/behemoth/behemoth5.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth6",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth6.md",
+                "rel": "wargames/behemoth/behemoth6.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth7",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth7.md",
+                "rel": "wargames/behemoth/behemoth7.md"
+              },
+              {
+                "type": "page",
+                "title": "Behemoth8",
+                "path": "OverTheWire-website/wargames/behemoth/behemoth8.md",
+                "rel": "wargames/behemoth/behemoth8.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (blacksun)",
+            "rel": "wargames/blacksun",
+            "index": "OverTheWire-website/wargames/blacksun/index.md",
+            "pages": 7,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/blacksun/index.md",
+                "rel": "wargames/blacksun/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Blacksun0",
+                "path": "OverTheWire-website/wargames/blacksun/blacksun0.md",
+                "rel": "wargames/blacksun/blacksun0.md"
+              },
+              {
+                "type": "page",
+                "title": "Blacksun1",
+                "path": "OverTheWire-website/wargames/blacksun/blacksun1.md",
+                "rel": "wargames/blacksun/blacksun1.md"
+              },
+              {
+                "type": "page",
+                "title": "Blacksun2",
+                "path": "OverTheWire-website/wargames/blacksun/blacksun2.md",
+                "rel": "wargames/blacksun/blacksun2.md"
+              },
+              {
+                "type": "page",
+                "title": "Blacksun3",
+                "path": "OverTheWire-website/wargames/blacksun/blacksun3.md",
+                "rel": "wargames/blacksun/blacksun3.md"
+              },
+              {
+                "type": "page",
+                "title": "Blacksun4",
+                "path": "OverTheWire-website/wargames/blacksun/blacksun4.md",
+                "rel": "wargames/blacksun/blacksun4.md"
+              },
+              {
+                "type": "page",
+                "title": "Reading Material",
+                "path": "OverTheWire-website/wargames/blacksun/reading_material.md",
+                "rel": "wargames/blacksun/reading_material.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (drifter)",
+            "rel": "wargames/drifter",
+            "index": "OverTheWire-website/wargames/drifter/index.md",
+            "pages": 17,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/drifter/index.md",
+                "rel": "wargames/drifter/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Drifter0",
+                "path": "OverTheWire-website/wargames/drifter/drifter0.md",
+                "rel": "wargames/drifter/drifter0.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter1",
+                "path": "OverTheWire-website/wargames/drifter/drifter1.md",
+                "rel": "wargames/drifter/drifter1.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter10",
+                "path": "OverTheWire-website/wargames/drifter/drifter10.md",
+                "rel": "wargames/drifter/drifter10.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter11",
+                "path": "OverTheWire-website/wargames/drifter/drifter11.md",
+                "rel": "wargames/drifter/drifter11.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter12",
+                "path": "OverTheWire-website/wargames/drifter/drifter12.md",
+                "rel": "wargames/drifter/drifter12.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter13",
+                "path": "OverTheWire-website/wargames/drifter/drifter13.md",
+                "rel": "wargames/drifter/drifter13.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter14",
+                "path": "OverTheWire-website/wargames/drifter/drifter14.md",
+                "rel": "wargames/drifter/drifter14.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter15",
+                "path": "OverTheWire-website/wargames/drifter/drifter15.md",
+                "rel": "wargames/drifter/drifter15.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter2",
+                "path": "OverTheWire-website/wargames/drifter/drifter2.md",
+                "rel": "wargames/drifter/drifter2.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter3",
+                "path": "OverTheWire-website/wargames/drifter/drifter3.md",
+                "rel": "wargames/drifter/drifter3.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter4",
+                "path": "OverTheWire-website/wargames/drifter/drifter4.md",
+                "rel": "wargames/drifter/drifter4.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter5",
+                "path": "OverTheWire-website/wargames/drifter/drifter5.md",
+                "rel": "wargames/drifter/drifter5.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter6",
+                "path": "OverTheWire-website/wargames/drifter/drifter6.md",
+                "rel": "wargames/drifter/drifter6.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter7",
+                "path": "OverTheWire-website/wargames/drifter/drifter7.md",
+                "rel": "wargames/drifter/drifter7.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter8",
+                "path": "OverTheWire-website/wargames/drifter/drifter8.md",
+                "rel": "wargames/drifter/drifter8.md"
+              },
+              {
+                "type": "page",
+                "title": "Drifter9",
+                "path": "OverTheWire-website/wargames/drifter/drifter9.md",
+                "rel": "wargames/drifter/drifter9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (formulaone)",
+            "rel": "wargames/formulaone",
+            "index": "OverTheWire-website/wargames/formulaone/index.md",
+            "pages": 8,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/formulaone/index.md",
+                "rel": "wargames/formulaone/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Formulaone0",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone0.md",
+                "rel": "wargames/formulaone/formulaone0.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone1",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone1.md",
+                "rel": "wargames/formulaone/formulaone1.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone2",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone2.md",
+                "rel": "wargames/formulaone/formulaone2.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone3",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone3.md",
+                "rel": "wargames/formulaone/formulaone3.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone4",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone4.md",
+                "rel": "wargames/formulaone/formulaone4.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone5",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone5.md",
+                "rel": "wargames/formulaone/formulaone5.md"
+              },
+              {
+                "type": "page",
+                "title": "Formulaone6",
+                "path": "OverTheWire-website/wargames/formulaone/formulaone6.md",
+                "rel": "wargames/formulaone/formulaone6.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (krypton)",
+            "rel": "wargames/krypton",
+            "index": "OverTheWire-website/wargames/krypton/index.md",
+            "pages": 8,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/krypton/index.md",
+                "rel": "wargames/krypton/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Krypton0",
+                "path": "OverTheWire-website/wargames/krypton/krypton0.md",
+                "rel": "wargames/krypton/krypton0.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton1",
+                "path": "OverTheWire-website/wargames/krypton/krypton1.md",
+                "rel": "wargames/krypton/krypton1.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton2",
+                "path": "OverTheWire-website/wargames/krypton/krypton2.md",
+                "rel": "wargames/krypton/krypton2.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton3",
+                "path": "OverTheWire-website/wargames/krypton/krypton3.md",
+                "rel": "wargames/krypton/krypton3.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton4",
+                "path": "OverTheWire-website/wargames/krypton/krypton4.md",
+                "rel": "wargames/krypton/krypton4.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton5",
+                "path": "OverTheWire-website/wargames/krypton/krypton5.md",
+                "rel": "wargames/krypton/krypton5.md"
+              },
+              {
+                "type": "page",
+                "title": "Krypton6",
+                "path": "OverTheWire-website/wargames/krypton/krypton6.md",
+                "rel": "wargames/krypton/krypton6.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (leviathan)",
+            "rel": "wargames/leviathan",
+            "index": "OverTheWire-website/wargames/leviathan/index.md",
+            "pages": 9,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/leviathan/index.md",
+                "rel": "wargames/leviathan/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Leviathan0",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan0.md",
+                "rel": "wargames/leviathan/leviathan0.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan1",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan1.md",
+                "rel": "wargames/leviathan/leviathan1.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan2",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan2.md",
+                "rel": "wargames/leviathan/leviathan2.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan3",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan3.md",
+                "rel": "wargames/leviathan/leviathan3.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan4",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan4.md",
+                "rel": "wargames/leviathan/leviathan4.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan5",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan5.md",
+                "rel": "wargames/leviathan/leviathan5.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan6",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan6.md",
+                "rel": "wargames/leviathan/leviathan6.md"
+              },
+              {
+                "type": "page",
+                "title": "Leviathan7",
+                "path": "OverTheWire-website/wargames/leviathan/leviathan7.md",
+                "rel": "wargames/leviathan/leviathan7.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (manpage)",
+            "rel": "wargames/manpage",
+            "index": "OverTheWire-website/wargames/manpage/index.md",
+            "pages": 9,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/manpage/index.md",
+                "rel": "wargames/manpage/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Manpage0",
+                "path": "OverTheWire-website/wargames/manpage/manpage0.md",
+                "rel": "wargames/manpage/manpage0.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage1",
+                "path": "OverTheWire-website/wargames/manpage/manpage1.md",
+                "rel": "wargames/manpage/manpage1.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage2",
+                "path": "OverTheWire-website/wargames/manpage/manpage2.md",
+                "rel": "wargames/manpage/manpage2.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage3",
+                "path": "OverTheWire-website/wargames/manpage/manpage3.md",
+                "rel": "wargames/manpage/manpage3.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage4",
+                "path": "OverTheWire-website/wargames/manpage/manpage4.md",
+                "rel": "wargames/manpage/manpage4.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage5",
+                "path": "OverTheWire-website/wargames/manpage/manpage5.md",
+                "rel": "wargames/manpage/manpage5.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage6",
+                "path": "OverTheWire-website/wargames/manpage/manpage6.md",
+                "rel": "wargames/manpage/manpage6.md"
+              },
+              {
+                "type": "page",
+                "title": "Manpage7",
+                "path": "OverTheWire-website/wargames/manpage/manpage7.md",
+                "rel": "wargames/manpage/manpage7.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (maze)",
+            "rel": "wargames/maze",
+            "index": "OverTheWire-website/wargames/maze/index.md",
+            "pages": 11,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/maze/index.md",
+                "rel": "wargames/maze/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Maze0",
+                "path": "OverTheWire-website/wargames/maze/maze0.md",
+                "rel": "wargames/maze/maze0.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze1",
+                "path": "OverTheWire-website/wargames/maze/maze1.md",
+                "rel": "wargames/maze/maze1.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze2",
+                "path": "OverTheWire-website/wargames/maze/maze2.md",
+                "rel": "wargames/maze/maze2.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze3",
+                "path": "OverTheWire-website/wargames/maze/maze3.md",
+                "rel": "wargames/maze/maze3.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze4",
+                "path": "OverTheWire-website/wargames/maze/maze4.md",
+                "rel": "wargames/maze/maze4.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze5",
+                "path": "OverTheWire-website/wargames/maze/maze5.md",
+                "rel": "wargames/maze/maze5.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze6",
+                "path": "OverTheWire-website/wargames/maze/maze6.md",
+                "rel": "wargames/maze/maze6.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze7",
+                "path": "OverTheWire-website/wargames/maze/maze7.md",
+                "rel": "wargames/maze/maze7.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze8",
+                "path": "OverTheWire-website/wargames/maze/maze8.md",
+                "rel": "wargames/maze/maze8.md"
+              },
+              {
+                "type": "page",
+                "title": "Maze9",
+                "path": "OverTheWire-website/wargames/maze/maze9.md",
+                "rel": "wargames/maze/maze9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (narnia)",
+            "rel": "wargames/narnia",
+            "index": "OverTheWire-website/wargames/narnia/index.md",
+            "pages": 11,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/narnia/index.md",
+                "rel": "wargames/narnia/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Narnia0",
+                "path": "OverTheWire-website/wargames/narnia/narnia0.md",
+                "rel": "wargames/narnia/narnia0.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia1",
+                "path": "OverTheWire-website/wargames/narnia/narnia1.md",
+                "rel": "wargames/narnia/narnia1.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia2",
+                "path": "OverTheWire-website/wargames/narnia/narnia2.md",
+                "rel": "wargames/narnia/narnia2.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia3",
+                "path": "OverTheWire-website/wargames/narnia/narnia3.md",
+                "rel": "wargames/narnia/narnia3.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia4",
+                "path": "OverTheWire-website/wargames/narnia/narnia4.md",
+                "rel": "wargames/narnia/narnia4.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia5",
+                "path": "OverTheWire-website/wargames/narnia/narnia5.md",
+                "rel": "wargames/narnia/narnia5.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia6",
+                "path": "OverTheWire-website/wargames/narnia/narnia6.md",
+                "rel": "wargames/narnia/narnia6.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia7",
+                "path": "OverTheWire-website/wargames/narnia/narnia7.md",
+                "rel": "wargames/narnia/narnia7.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia8",
+                "path": "OverTheWire-website/wargames/narnia/narnia8.md",
+                "rel": "wargames/narnia/narnia8.md"
+              },
+              {
+                "type": "page",
+                "title": "Narnia9",
+                "path": "OverTheWire-website/wargames/narnia/narnia9.md",
+                "rel": "wargames/narnia/narnia9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (natas)",
+            "rel": "wargames/natas",
+            "index": "OverTheWire-website/wargames/natas/index.md",
+            "pages": 36,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/natas/index.md",
+                "rel": "wargames/natas/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Natas0",
+                "path": "OverTheWire-website/wargames/natas/natas0.md",
+                "rel": "wargames/natas/natas0.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas1",
+                "path": "OverTheWire-website/wargames/natas/natas1.md",
+                "rel": "wargames/natas/natas1.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas10",
+                "path": "OverTheWire-website/wargames/natas/natas10.md",
+                "rel": "wargames/natas/natas10.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas11",
+                "path": "OverTheWire-website/wargames/natas/natas11.md",
+                "rel": "wargames/natas/natas11.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas12",
+                "path": "OverTheWire-website/wargames/natas/natas12.md",
+                "rel": "wargames/natas/natas12.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas13",
+                "path": "OverTheWire-website/wargames/natas/natas13.md",
+                "rel": "wargames/natas/natas13.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas14",
+                "path": "OverTheWire-website/wargames/natas/natas14.md",
+                "rel": "wargames/natas/natas14.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas15",
+                "path": "OverTheWire-website/wargames/natas/natas15.md",
+                "rel": "wargames/natas/natas15.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas16",
+                "path": "OverTheWire-website/wargames/natas/natas16.md",
+                "rel": "wargames/natas/natas16.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas17",
+                "path": "OverTheWire-website/wargames/natas/natas17.md",
+                "rel": "wargames/natas/natas17.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas18",
+                "path": "OverTheWire-website/wargames/natas/natas18.md",
+                "rel": "wargames/natas/natas18.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas19",
+                "path": "OverTheWire-website/wargames/natas/natas19.md",
+                "rel": "wargames/natas/natas19.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas2",
+                "path": "OverTheWire-website/wargames/natas/natas2.md",
+                "rel": "wargames/natas/natas2.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas20",
+                "path": "OverTheWire-website/wargames/natas/natas20.md",
+                "rel": "wargames/natas/natas20.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas21",
+                "path": "OverTheWire-website/wargames/natas/natas21.md",
+                "rel": "wargames/natas/natas21.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas22",
+                "path": "OverTheWire-website/wargames/natas/natas22.md",
+                "rel": "wargames/natas/natas22.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas23",
+                "path": "OverTheWire-website/wargames/natas/natas23.md",
+                "rel": "wargames/natas/natas23.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas24",
+                "path": "OverTheWire-website/wargames/natas/natas24.md",
+                "rel": "wargames/natas/natas24.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas25",
+                "path": "OverTheWire-website/wargames/natas/natas25.md",
+                "rel": "wargames/natas/natas25.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas26",
+                "path": "OverTheWire-website/wargames/natas/natas26.md",
+                "rel": "wargames/natas/natas26.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas27",
+                "path": "OverTheWire-website/wargames/natas/natas27.md",
+                "rel": "wargames/natas/natas27.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas28",
+                "path": "OverTheWire-website/wargames/natas/natas28.md",
+                "rel": "wargames/natas/natas28.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas29",
+                "path": "OverTheWire-website/wargames/natas/natas29.md",
+                "rel": "wargames/natas/natas29.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas3",
+                "path": "OverTheWire-website/wargames/natas/natas3.md",
+                "rel": "wargames/natas/natas3.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas30",
+                "path": "OverTheWire-website/wargames/natas/natas30.md",
+                "rel": "wargames/natas/natas30.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas31",
+                "path": "OverTheWire-website/wargames/natas/natas31.md",
+                "rel": "wargames/natas/natas31.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas32",
+                "path": "OverTheWire-website/wargames/natas/natas32.md",
+                "rel": "wargames/natas/natas32.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas33",
+                "path": "OverTheWire-website/wargames/natas/natas33.md",
+                "rel": "wargames/natas/natas33.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas34",
+                "path": "OverTheWire-website/wargames/natas/natas34.md",
+                "rel": "wargames/natas/natas34.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas4",
+                "path": "OverTheWire-website/wargames/natas/natas4.md",
+                "rel": "wargames/natas/natas4.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas5",
+                "path": "OverTheWire-website/wargames/natas/natas5.md",
+                "rel": "wargames/natas/natas5.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas6",
+                "path": "OverTheWire-website/wargames/natas/natas6.md",
+                "rel": "wargames/natas/natas6.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas7",
+                "path": "OverTheWire-website/wargames/natas/natas7.md",
+                "rel": "wargames/natas/natas7.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas8",
+                "path": "OverTheWire-website/wargames/natas/natas8.md",
+                "rel": "wargames/natas/natas8.md"
+              },
+              {
+                "type": "page",
+                "title": "Natas9",
+                "path": "OverTheWire-website/wargames/natas/natas9.md",
+                "rel": "wargames/natas/natas9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (semtex)",
+            "rel": "wargames/semtex",
+            "index": "OverTheWire-website/wargames/semtex/index.md",
+            "pages": 14,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/semtex/index.md",
+                "rel": "wargames/semtex/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Semtex0",
+                "path": "OverTheWire-website/wargames/semtex/semtex0.md",
+                "rel": "wargames/semtex/semtex0.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex1",
+                "path": "OverTheWire-website/wargames/semtex/semtex1.md",
+                "rel": "wargames/semtex/semtex1.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex10",
+                "path": "OverTheWire-website/wargames/semtex/semtex10.md",
+                "rel": "wargames/semtex/semtex10.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex11",
+                "path": "OverTheWire-website/wargames/semtex/semtex11.md",
+                "rel": "wargames/semtex/semtex11.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex12",
+                "path": "OverTheWire-website/wargames/semtex/semtex12.md",
+                "rel": "wargames/semtex/semtex12.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex2",
+                "path": "OverTheWire-website/wargames/semtex/semtex2.md",
+                "rel": "wargames/semtex/semtex2.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex3",
+                "path": "OverTheWire-website/wargames/semtex/semtex3.md",
+                "rel": "wargames/semtex/semtex3.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex4",
+                "path": "OverTheWire-website/wargames/semtex/semtex4.md",
+                "rel": "wargames/semtex/semtex4.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex5",
+                "path": "OverTheWire-website/wargames/semtex/semtex5.md",
+                "rel": "wargames/semtex/semtex5.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex6",
+                "path": "OverTheWire-website/wargames/semtex/semtex6.md",
+                "rel": "wargames/semtex/semtex6.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex7",
+                "path": "OverTheWire-website/wargames/semtex/semtex7.md",
+                "rel": "wargames/semtex/semtex7.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex8",
+                "path": "OverTheWire-website/wargames/semtex/semtex8.md",
+                "rel": "wargames/semtex/semtex8.md"
+              },
+              {
+                "type": "page",
+                "title": "Semtex9",
+                "path": "OverTheWire-website/wargames/semtex/semtex9.md",
+                "rel": "wargames/semtex/semtex9.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (utumno)",
+            "rel": "wargames/utumno",
+            "index": "OverTheWire-website/wargames/utumno/index.md",
+            "pages": 10,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/utumno/index.md",
+                "rel": "wargames/utumno/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Utumno0",
+                "path": "OverTheWire-website/wargames/utumno/utumno0.md",
+                "rel": "wargames/utumno/utumno0.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno1",
+                "path": "OverTheWire-website/wargames/utumno/utumno1.md",
+                "rel": "wargames/utumno/utumno1.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno2",
+                "path": "OverTheWire-website/wargames/utumno/utumno2.md",
+                "rel": "wargames/utumno/utumno2.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno3",
+                "path": "OverTheWire-website/wargames/utumno/utumno3.md",
+                "rel": "wargames/utumno/utumno3.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno4",
+                "path": "OverTheWire-website/wargames/utumno/utumno4.md",
+                "rel": "wargames/utumno/utumno4.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno5",
+                "path": "OverTheWire-website/wargames/utumno/utumno5.md",
+                "rel": "wargames/utumno/utumno5.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno6",
+                "path": "OverTheWire-website/wargames/utumno/utumno6.md",
+                "rel": "wargames/utumno/utumno6.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno7",
+                "path": "OverTheWire-website/wargames/utumno/utumno7.md",
+                "rel": "wargames/utumno/utumno7.md"
+              },
+              {
+                "type": "page",
+                "title": "Utumno8",
+                "path": "OverTheWire-website/wargames/utumno/utumno8.md",
+                "rel": "wargames/utumno/utumno8.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (vortex)",
+            "rel": "wargames/vortex",
+            "index": "OverTheWire-website/wargames/vortex/index.md",
+            "pages": 28,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "OverTheWire-website/wargames/vortex/index.md",
+                "rel": "wargames/vortex/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Vortex0",
+                "path": "OverTheWire-website/wargames/vortex/vortex0.md",
+                "rel": "wargames/vortex/vortex0.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex1",
+                "path": "OverTheWire-website/wargames/vortex/vortex1.md",
+                "rel": "wargames/vortex/vortex1.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex10",
+                "path": "OverTheWire-website/wargames/vortex/vortex10.md",
+                "rel": "wargames/vortex/vortex10.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex11",
+                "path": "OverTheWire-website/wargames/vortex/vortex11.md",
+                "rel": "wargames/vortex/vortex11.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex12",
+                "path": "OverTheWire-website/wargames/vortex/vortex12.md",
+                "rel": "wargames/vortex/vortex12.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex13",
+                "path": "OverTheWire-website/wargames/vortex/vortex13.md",
+                "rel": "wargames/vortex/vortex13.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex14",
+                "path": "OverTheWire-website/wargames/vortex/vortex14.md",
+                "rel": "wargames/vortex/vortex14.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex15",
+                "path": "OverTheWire-website/wargames/vortex/vortex15.md",
+                "rel": "wargames/vortex/vortex15.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex16",
+                "path": "OverTheWire-website/wargames/vortex/vortex16.md",
+                "rel": "wargames/vortex/vortex16.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex17",
+                "path": "OverTheWire-website/wargames/vortex/vortex17.md",
+                "rel": "wargames/vortex/vortex17.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex18",
+                "path": "OverTheWire-website/wargames/vortex/vortex18.md",
+                "rel": "wargames/vortex/vortex18.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex19",
+                "path": "OverTheWire-website/wargames/vortex/vortex19.md",
+                "rel": "wargames/vortex/vortex19.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex2",
+                "path": "OverTheWire-website/wargames/vortex/vortex2.md",
+                "rel": "wargames/vortex/vortex2.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex20",
+                "path": "OverTheWire-website/wargames/vortex/vortex20.md",
+                "rel": "wargames/vortex/vortex20.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex21",
+                "path": "OverTheWire-website/wargames/vortex/vortex21.md",
+                "rel": "wargames/vortex/vortex21.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex22",
+                "path": "OverTheWire-website/wargames/vortex/vortex22.md",
+                "rel": "wargames/vortex/vortex22.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex23",
+                "path": "OverTheWire-website/wargames/vortex/vortex23.md",
+                "rel": "wargames/vortex/vortex23.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex24",
+                "path": "OverTheWire-website/wargames/vortex/vortex24.md",
+                "rel": "wargames/vortex/vortex24.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex25",
+                "path": "OverTheWire-website/wargames/vortex/vortex25.md",
+                "rel": "wargames/vortex/vortex25.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex26",
+                "path": "OverTheWire-website/wargames/vortex/vortex26.md",
+                "rel": "wargames/vortex/vortex26.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex3",
+                "path": "OverTheWire-website/wargames/vortex/vortex3.md",
+                "rel": "wargames/vortex/vortex3.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex4",
+                "path": "OverTheWire-website/wargames/vortex/vortex4.md",
+                "rel": "wargames/vortex/vortex4.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex5",
+                "path": "OverTheWire-website/wargames/vortex/vortex5.md",
+                "rel": "wargames/vortex/vortex5.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex6",
+                "path": "OverTheWire-website/wargames/vortex/vortex6.md",
+                "rel": "wargames/vortex/vortex6.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex7",
+                "path": "OverTheWire-website/wargames/vortex/vortex7.md",
+                "rel": "wargames/vortex/vortex7.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex8",
+                "path": "OverTheWire-website/wargames/vortex/vortex8.md",
+                "rel": "wargames/vortex/vortex8.md"
+              },
+              {
+                "type": "page",
+                "title": "Vortex9",
+                "path": "OverTheWire-website/wargames/vortex/vortex9.md",
+                "rel": "wargames/vortex/vortex9.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Information",
+        "rel": "information",
+        "pages": 8,
+        "children": [
+          {
+            "type": "page",
+            "title": "Alumni",
+            "path": "OverTheWire-website/information/alumni.md",
+            "rel": "information/alumni.md"
+          },
+          {
+            "type": "page",
+            "title": "Chat",
+            "path": "OverTheWire-website/information/chat.md",
+            "rel": "information/chat.md"
+          },
+          {
+            "type": "page",
+            "title": "Donate",
+            "path": "OverTheWire-website/information/donate.md",
+            "rel": "information/donate.md"
+          },
+          {
+            "type": "page",
+            "title": "Sshinfra",
+            "path": "OverTheWire-website/information/sshinfra.md",
+            "rel": "information/sshinfra.md"
+          },
+          {
+            "type": "page",
+            "title": "Staff",
+            "path": "OverTheWire-website/information/staff.md",
+            "rel": "information/staff.md"
+          },
+          {
+            "type": "page",
+            "title": "Userdata",
+            "path": "OverTheWire-website/information/userdata.md",
+            "rel": "information/userdata.md"
+          },
+          {
+            "type": "page",
+            "title": "Website",
+            "path": "OverTheWire-website/information/website.md",
+            "rel": "information/website.md"
+          },
+          {
+            "type": "page",
+            "title": "Wechall",
+            "path": "OverTheWire-website/information/wechall.md",
+            "rel": "information/wechall.md"
+          }
+        ]
+      }
+    ]
+  }
+}

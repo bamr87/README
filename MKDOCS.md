@@ -8,7 +8,8 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 
 | File | Purpose |
 |------|---------|
-| [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `nav`, `docs_dir: docs`, `site_url` |
+| [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
+| [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
 | [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`) |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
 | [`docs/`](docs/) | Source content (generated; one folder per aggregated repo) |
@@ -32,9 +33,11 @@ To serve without the base-path redirect during quick edits, point `mkdocs serve`
 
 ## Build behavior (read this before "fixing" warnings)
 
-- **The build is intentionally non-strict.** `mkdocs build` exits 0 but prints ~580 `WARNING` lines about broken links and missing anchors. These are inherent to aggregating Markdown from many independent repos (relative links point at files that weren't aggregated). They are expected — do **not** add `--strict` to the deploy, and don't hand-edit `docs/` to chase them.
-- **Navigation is curated, not auto-generated.** `mkdocs.yml` lists each repo's index page explicitly under `nav:` rather than auto-building the tree. This is deliberate: some aggregated pages carry upstream Jekyll frontmatter like `icon: <bootstrap-name>` (e.g. `icon: globe`, `icon: robot`). When such a page is a **nav entry**, Material tries to resolve that value as an SVG icon (`.icons/<name>.svg`) and **fails the entire build**. Keeping those pages out of `nav` avoids the failure while MkDocs still builds and **full-text indexes every page** — so all content remains reachable via search and in-page links.
-- Adding a new aggregated repo? Add one `nav:` line pointing at its index (`{repo}/README.md` or `{repo}/index.md`, whichever exists). Don't point a nav entry at a bare folder (`{repo}/`) — that does not resolve and warns.
+- **The build is intentionally non-strict.** `mkdocs build` exits 0 but prints several hundred `WARNING` lines about broken links and missing anchors. These are inherent to aggregating Markdown from many independent repos (relative links point at files that weren't aggregated). They are expected — do **not** add `--strict` to the deploy, and don't hand-edit `docs/` to chase them.
+- **Navigation is generated, not curated.** `mkdocs.yml` carries no `nav:` key; it pulls `nav.yml` in with `INHERIT`, and the context engine's navigator renders that file from the `docs/` folder hierarchy plus the `navigation:` contract in `_data/projects.yml`. Every published page has a sidebar entry. Never hand-edit `nav.yml` and never add a `nav:` key to `mkdocs.yml` — it would shadow the generated tree and the sidebar would silently stop tracking the corpus.
+- **`nav.yml` also carries `exclude_docs`.** It re-includes the dot-directories MkDocs drops by default (`.github/`, `.claude/`, `.quests/` — where most of the fleet's skills, agents and quest content actually lives) and drops what the registry excludes. That keeps the site's page set identical to the navigation tree, so there are no orphan pages and no nav entries pointing at pages the site didn't build.
+- **Upstream `icon:` frontmatter is normalized at ingest.** Material resolves `page.meta.icon` as a bundled SVG for every nav entry, so a Jekyll value like `icon: globe` used to fail the whole build — which is why the nav was hand-curated before. `scripts/fix_frontmatter_icons.py` now maps those onto Material icons (keeping the original as `source_icon`), so every page is safe to place in the nav.
+- Adding a new aggregated repo? Add it to `_data/projects.yml` and rebuild — `python3 -m scripts.context_engine build` regenerates `nav.yml`, `context/nav/` and `docs/browse/`. There is nothing to add here by hand.
 
 ## Deployment (GitHub Pages)
 
@@ -49,7 +52,7 @@ Deployment is automated by [`.github/workflows/deploy-pages.yaml`](.github/workf
 
 - **Material theme** with light/dark palette toggle.
 - **Search** across all aggregated docs (client-side).
-- **Navigation:** tabs, sections, `navigation.indexes` (folder `README.md`/`index.md` acts as the section landing page), `navigation.prune`, back-to-top.
+- **Navigation:** tabs (one per corpus), sections, `navigation.indexes` (a folder's `README.md`/`index.md` acts as the section landing page — the navigator emits it as the section's first child), `navigation.prune` (only the active branch is rendered, which is what keeps a 3,100-page nav fast), back-to-top.
 - **Markdown extensions:** admonitions, footnotes, `pymdownx.superfences` (incl. Mermaid), tabbed content, task lists, syntax highlighting with copy button, emoji.
 
 ## Authoring conventions
@@ -78,7 +81,14 @@ tags:
 ---
 ```
 
-MkDocs ignores Jekyll/Hugo keys like `layout:`, `permalink:`, `nav_order:`. Note the `icon:` caveat above — a Jekyll `icon:` value that isn't a valid Material icon path will break the build if that page is placed in `nav`.
+MkDocs ignores Jekyll/Hugo keys like `layout:` and `permalink:`, but the navigator reads a few:
+
+| Key | Effect on the sidebar |
+|---|---|
+| `title` | The entry's label (falls back to the first H1, then the humanized filename) |
+| `nav_order` / `order` / `weight` / `sidebar_position` | Pins the entry's position within its section |
+| `nav_exclude: true` | Keeps the page out of the sidebar |
+| `icon` | Shown next to the entry — normalized to a bundled Material icon at ingest, original kept as `source_icon` |
 
 ### Anchors
 
@@ -86,7 +96,11 @@ Headings become anchors automatically: lowercased, spaces → hyphens, special c
 
 ## Troubleshooting
 
-**Build fails with `'.icons/<name>.svg' not found`** — an aggregated page with Jekyll `icon:` frontmatter ended up in the nav. Keep it out of `nav` (see *Build behavior* above), or normalize the frontmatter in the processing step.
+**Build fails with `'.icons/<name>.svg' not found`** — an aggregated page carries an `icon:` value Material can't resolve. Run `python3 scripts/fix_frontmatter_icons.py --apply` (or `bash scripts/run_doc_checks.sh --apply`), then rebuild. If the value is a vocabulary the mapping doesn't know yet, add it to `BOOTSTRAP_TO_MATERIAL` in that script.
+
+**A page exists but has no sidebar entry** — MkDocs logs "pages exist in the docs directory, but are not included in the nav". The nav and the site's page set are generated together, so this means the two drifted: rebuild with `python3 -m scripts.context_engine build`. If it persists, the page is being excluded by a `navigation.exclude` / `nav.exclude` glob in `_data/projects.yml` while still being published — fix the glob, not the nav.
+
+**The sidebar is missing a whole folder** — folders starting with `.` are excluded by MkDocs by default; `nav.yml`'s generated `exclude_docs` re-includes them only when `navigation.publish_hidden` is true in the registry.
 
 **Port already in use** — `mkdocs serve -a localhost:8001`.
 

@@ -111,11 +111,25 @@ def build_card(facts: Dict, ai: Optional[BaseProvider] = None) -> str:
             lines.append(f"- code samples in: {', '.join(languages)}")
     lines.append("")
 
-    top_dirs = (facts.get("structure") or {}).get("top_dirs") or []
-    if top_dirs:
-        lines += ["## Structure", ""]
-        lines += [f"- `{d['name']}/` ({d['doc_count']} docs)" for d in top_dirs[:8]]
+    navigation = facts.get("navigation") or {}
+    if navigation.get("present"):
+        lines += ["## Navigation", ""]
+        lines.append(
+            f"{navigation['pages']} published pages in "
+            f"{navigation['sections']} sections "
+            f"(max depth {navigation['max_depth']}) — "
+            f"[browse the full map](../../{navigation['browse']}) · "
+            f"[tree as JSON](../nav/{name}.json)")
         lines.append("")
+        for section in navigation.get("top_sections") or []:
+            lines.append(f"- **{section['title']}** ({section['pages']} pages)")
+        lines.append("")
+    else:
+        top_dirs = (facts.get("structure") or {}).get("top_dirs") or []
+        if top_dirs:
+            lines += ["## Structure", ""]
+            lines += [f"- `{d['name']}/` ({d['doc_count']} docs)" for d in top_dirs[:8]]
+            lines.append("")
 
     key_docs = facts.get("key_docs") or []
     if key_docs:
@@ -129,6 +143,7 @@ def build_card(facts: Dict, ai: Optional[BaseProvider] = None) -> str:
         "```bash",
         f"python3 -m scripts.context_engine query {name}",
         f"python3 -m scripts.context_engine facts {name}",
+        f"python3 -m scripts.context_engine nav {name}",
         "```",
         "",
         f"MCP: `get_project` with `{{\"name\": \"{name}\"}}` "

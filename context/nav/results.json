@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "results",
+  "title": "Results",
+  "corpus": "docs/results",
+  "counts": {
+    "pages": 1,
+    "sections": 0,
+    "max_depth": 1,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "3d844c313814d0de",
+  "tree": {
+    "type": "section",
+    "title": "Results",
+    "index": "results/index.md",
+    "pages": 1,
+    "children": [
+      {
+        "type": "page",
+        "title": "Analysis & Quality Reports",
+        "path": "results/index.md",
+        "rel": "index.md"
+      }
+    ]
+  },
+  "registered": false
+}

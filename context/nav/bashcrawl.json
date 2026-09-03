@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "bashcrawl",
+  "title": "Bash Crawl",
+  "corpus": "docs/bashcrawl",
+  "counts": {
+    "pages": 44,
+    "sections": 12,
+    "max_depth": 4,
+    "skipped": 1
+  },
+  "skipped": [
+    "logs/README.md"
+  ],
+  "fingerprint": "16a6ed17ea199147",
+  "tree": {
+    "type": "section",
+    "title": "Bash Crawl",
+    "index": "bashcrawl/README.md",
+    "pages": 44,
+    "children": [
+      {
+        "type": "group",
+        "title": "Repository & tooling",
+        "order": 0.0,
+        "pages": 12,
+        "children": [
+          {
+            "type": "page",
+            "title": "Archives",
+            "path": "bashcrawl/.archives/REFACTORING_SUMMARY.md",
+            "rel": ".archives/REFACTORING_SUMMARY.md",
+            "folder": ".archives"
+          },
+          {
+            "type": "section",
+            "title": "GitHub",
+            "rel": ".github",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Bashcrawl Copilot Instructions",
+                "path": "bashcrawl/.github/copilot-instructions.md",
+                "rel": ".github/copilot-instructions.md"
+              },
+              {
+                "type": "page",
+                "title": "Commit & Publish Workflow for Bashcrawl",
+                "path": "bashcrawl/.github/prompts/test-doc-commit-push.prompt.md",
+                "rel": ".github/prompts/test-doc-commit-push.prompt.md",
+                "folder": ".github/prompts"
+              },
+              {
+                "type": "page",
+                "title": "Pull Request Template",
+                "path": "bashcrawl/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md",
+                "rel": ".github/PULL_REQUEST_TEMPLATE/pull_request_template.md",
+                "folder": ".github/PULL_REQUEST_TEMPLATE"
+              },
+              {
+                "type": "section",
+                "title": "Instructions",
+                "rel": ".github/instructions",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Bashcrawl Room Creation Instructions",
+                    "path": "bashcrawl/.github/instructions/rooms.instructions.md",
+                    "rel": ".github/instructions/rooms.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bashcrawl Scroll Instructions",
+                    "path": "bashcrawl/.github/instructions/scrolls.instructions.md",
+                    "rel": ".github/instructions/scrolls.instructions.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Source",
+            "rel": "src",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Bashcrawl Observatory \u2014 src/viewer/",
+                "path": "bashcrawl/src/viewer/README.md",
+                "rel": "src/viewer/README.md",
+                "folder": "src/viewer"
+              },
+              {
+                "type": "section",
+                "title": "Bashcrawl Help System",
+                "rel": "src/help",
+                "index": "bashcrawl/src/help/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Bashcrawl Help System",
+                    "path": "bashcrawl/src/help/README.md",
+                    "rel": "src/help/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "\ud83c\udfaf Bashcrawl Help System Quick Reference",
+                    "path": "bashcrawl/src/help/HELP_REFERENCE.md",
+                    "rel": "src/help/HELP_REFERENCE.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Readme",
+                "rel": "src/terminal-illness",
+                "index": "bashcrawl/src/terminal-illness/README.md",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Readme",
+                    "path": "bashcrawl/src/terminal-illness/README.md",
+                    "rel": "src/terminal-illness/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "AI Prompt: Fantasy Terminal Learning Game Architecture",
+                    "path": "bashcrawl/src/terminal-illness/seed_prompt.instructions.md",
+                    "rel": "src/terminal-illness/seed_prompt.instructions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Ti",
+                    "path": "bashcrawl/src/terminal-illness/ti/audio/assets/README.md",
+                    "rel": "src/terminal-illness/ti/audio/assets/README.md",
+                    "folder": "src/terminal-illness/ti"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "title": "\u2694\ufe0f Bashcrawl \u2014 learn the terminal by playing",
+        "path": "bashcrawl/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "bashcrawl/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "CLAUDE.md",
+        "path": "bashcrawl/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "TermForge",
+        "path": "bashcrawl/termforge/README.md",
+        "rel": "termforge/README.md",
+        "folder": "termforge"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "bashcrawl/docs/index.md",
+        "pages": 25,
+        "children": [
+          {
+            "type": "page",
+            "title": "Bashcrawl Documentation",
+            "path": "bashcrawl/docs/index.md",
+            "rel": "docs/index.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Advanced Topics",
+            "path": "bashcrawl/docs/advanced.md",
+            "rel": "docs/advanced.md"
+          },
+          {
+            "type": "page",
+            "title": "Agent Mode Protocol Specification",
+            "path": "bashcrawl/docs/agent-protocol.md",
+            "rel": "docs/agent-protocol.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl Agent Playtest Report & Recommendations",
+            "path": "bashcrawl/docs/agent-playtest-report.md",
+            "rel": "docs/agent-playtest-report.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl Improvement Plan",
+            "path": "bashcrawl/docs/improvement-plan.md",
+            "rel": "docs/improvement-plan.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl Logging Framework Plan",
+            "path": "bashcrawl/docs/logging-framework-plan.md",
+            "rel": "docs/logging-framework-plan.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl Observatory \u2014 Log & Screenshot Viewer",
+            "path": "bashcrawl/docs/viewer.md",
+            "rel": "docs/viewer.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl: Complete Game Walkthrough (demo-critical-path)",
+            "path": "bashcrawl/docs/demo-critical-path.md",
+            "rel": "docs/demo-critical-path.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl: Complete Game Walkthrough (demo-walkthrough)",
+            "path": "bashcrawl/docs/demo-walkthrough.md",
+            "rel": "docs/demo-walkthrough.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl: Complete Walkthrough",
+            "path": "bashcrawl/docs/walkthrough.md",
+            "rel": "docs/walkthrough.md"
+          },
+          {
+            "type": "page",
+            "title": "Contributing",
+            "path": "bashcrawl/docs/contributing.md",
+            "rel": "docs/contributing.md"
+          },
+          {
+            "type": "page",
+            "title": "Cursor AI and automation",
+            "path": "bashcrawl/docs/cursor-ai.md",
+            "rel": "docs/cursor-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "Gameplay Guide",
+            "path": "bashcrawl/docs/gameplay.md",
+            "rel": "docs/gameplay.md"
+          },
+          {
+            "type": "page",
+            "title": "Getting Started",
+            "path": "bashcrawl/docs/getting-started.md",
+            "rel": "docs/getting-started.md"
+          },
+          {
+            "type": "page",
+            "title": "Log & Screenshot Viewer \u2014 Design Reference",
+            "path": "bashcrawl/docs/log-viewer-reference.md",
+            "rel": "docs/log-viewer-reference.md"
+          },
+          {
+            "type": "page",
+            "title": "Runtime Architecture",
+            "path": "bashcrawl/docs/architecture-runtime.md",
+            "rel": "docs/architecture-runtime.md"
+          },
+          {
+            "type": "page",
+            "title": "Web Frontend API Design (Phase 2 Proposal)",
+            "path": "bashcrawl/docs/web-api-design.md",
+            "rel": "docs/web-api-design.md"
+          },
+          {
+            "type": "section",
+            "title": "Generated",
+            "rel": "docs/generated",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Quest Index",
+                "path": "bashcrawl/docs/generated/quests.md",
+                "rel": "docs/generated/quests.md"
+              },
+              {
+                "type": "page",
+                "title": "Rooms Index",
+                "path": "bashcrawl/docs/generated/rooms.md",
+                "rel": "docs/generated/rooms.md"
+              },
+              {
+                "type": "page",
+                "title": "Runtime Commands",
+                "path": "bashcrawl/docs/generated/runtime-commands.md",
+                "rel": "docs/generated/runtime-commands.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Schemas",
+            "rel": "docs/schemas",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Content Registry Contract (v1)",
+                "path": "bashcrawl/docs/schemas/content-registries.v1.md",
+                "rel": "docs/schemas/content-registries.v1.md"
+              },
+              {
+                "type": "page",
+                "title": "Terminal Protocol v1",
+                "path": "bashcrawl/docs/schemas/terminal-protocol.v1.md",
+                "rel": "docs/schemas/terminal-protocol.v1.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Termforge",
+            "rel": "docs/termforge",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Authoring TermForge Apps",
+                "path": "bashcrawl/docs/termforge/authoring-apps.md",
+                "rel": "docs/termforge/authoring-apps.md"
+              },
+              {
+                "type": "page",
+                "title": "TermForge Architecture",
+                "path": "bashcrawl/docs/termforge/architecture.md",
+                "rel": "docs/termforge/architecture.md"
+              },
+              {
+                "type": "page",
+                "title": "TermForge Telnet Host",
+                "path": "bashcrawl/docs/termforge/telnet-host.md",
+                "rel": "docs/termforge/telnet-host.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "\ud83d\udeaa Welcome to the Entrance - Your Terminal Adventure Begins Here",
+        "rel": "entrance",
+        "index": "bashcrawl/entrance/README.md",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "\ud83d\udeaa Welcome to the Entrance - Your Terminal Adventure Begins Here",
+            "path": "bashcrawl/entrance/README.md",
+            "rel": "entrance/README.md",
+            "is_index": true
+          },
+          {
+            "type": "section",
+            "title": "\ud83c\udf1f The Cellar of True Sight",
+            "rel": "entrance/cellar",
+            "index": "bashcrawl/entrance/cellar/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "\ud83c\udf1f The Cellar of True Sight",
+                "path": "bashcrawl/entrance/cellar/README.md",
+                "rel": "entrance/cellar/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "\ud83d\udde1\ufe0f The Grand Armoury",
+                "path": "bashcrawl/entrance/cellar/armoury/README.md",
+                "rel": "entrance/cellar/armoury/README.md",
+                "folder": "entrance/cellar/armoury"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

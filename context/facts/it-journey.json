@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1122,
-    "fingerprint": "20568f9db4ed4713",
+    "file_count": 1121,
+    "fingerprint": "7f3b30fb94702328",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 13841397
+    "total_bytes": 13832461
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -34,6 +34,62 @@
     "CODE_OF_CONDUCT.md",
     ".github/copilot-instructions.md"
   ],
+  "navigation": {
+    "browse": "docs/browse/it-journey.md",
+    "fingerprint": "65a0d458320d5a45",
+    "index": "it-journey/index.md",
+    "max_depth": 7,
+    "pages": 1115,
+    "present": true,
+    "sections": 111,
+    "skipped": 6,
+    "title": "IT Journey",
+    "top_sections": [
+      {
+        "index": "it-journey/.quests/README.md",
+        "pages": 2,
+        "path": ".quests",
+        "title": "Quests",
+        "type": "group"
+      },
+      {
+        "index": "it-journey/.cms/README.md",
+        "pages": 428,
+        "path": null,
+        "title": "Repository & tooling",
+        "type": "group"
+      },
+      {
+        "index": "it-journey/_data/README.md",
+        "pages": 8,
+        "path": "_data",
+        "title": "Data",
+        "type": "section"
+      },
+      {
+        "index": "it-journey/docs/README.md",
+        "pages": 37,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "it-journey/pages/home.md",
+        "pages": 628,
+        "path": "pages",
+        "title": "Home",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 2,
+        "path": "_includes",
+        "title": "Includes",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/it-journey.json"
+  },
   "project": {
     "branch": null,
     "external": false,

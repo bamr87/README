@@ -1,7 +1,8 @@
 ---
 admin_section: Theme Customizer
 excerpt: Preview Bootstrap 5 theme components and examples.
-icon: bi-palette
+icon: material/palette
+source_icon: bi-palette
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/theme/

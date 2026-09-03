@@ -1,7 +1,8 @@
 ---
 excerpt: Aperçu de toutes les collections Jekyll, de leur configuration et du nombre
   de contenus.
-icon: bi-collection
+icon: material/folder-multiple
+source_icon: bi-collection
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin

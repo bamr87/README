@@ -4,7 +4,8 @@ categories:
 description: Le design system zer0-mistakes, en direct — tokens, spécimens de fondation,
   jumeaux de composants et l'aller-retour Claude Design qui les maintient synchronisés
   avec le thème.
-icon: bi-palette2
+icon: material/palette-outline
+source_icon: bi-palette2
 lang: fr
 lastmod: 2026-08-14 00:00:00+00:00
 layout: default

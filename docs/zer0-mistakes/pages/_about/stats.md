@@ -1,7 +1,8 @@
 ---
 description: Comprehensive analytics and metrics for the Zer0-Mistakes knowledge base
 excerpt: Comprehensive analytics and metrics for your site content.
-icon: bi-bar-chart-line
+icon: material/chart-bar
+source_icon: bi-bar-chart-line
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/stats/

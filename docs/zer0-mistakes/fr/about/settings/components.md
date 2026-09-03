@@ -2,7 +2,8 @@
 admin_section: Component Showcase
 excerpt: Galerie en direct des motifs de composants réutilisables Bootstrap 5 rendus
   par l'include component-showcase.
-icon: bi-grid-3x3-gap
+icon: material/view-grid
+source_icon: bi-grid-3x3-gap
 lang: fr
 lastmod: 2026-06-26 00:00:00+00:00
 layout: admin

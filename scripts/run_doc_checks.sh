@@ -29,6 +29,11 @@ if ! python3 scripts/lint_docs.py; then
 	fi
 fi
 
+echo "Checking navigation icons..."
+# Unresolvable `icon:` frontmatter breaks Material's nav rendering, so this is
+# a navigability gate, not cosmetics - see scripts/fix_frontmatter_icons.py.
+python3 scripts/fix_frontmatter_icons.py --quiet || true
+
 echo "Checking frontmatter..."
 if [ "$QUIET" = true ]; then
 	python3 scripts/check_frontmatter.py --quiet || true
@@ -46,6 +51,8 @@ if [ "$APPLY_CHANGES" = true ]; then
 	python3 scripts/fix_h1.py || true
 	# normalize frontmatter
 	python3 scripts/clean_frontmatter.py || true
+	# make every page safe to put in the navigation
+	python3 scripts/fix_frontmatter_icons.py --apply --quiet || true
 else
 	echo "Skipped clean frontmatter. Run with --apply to apply normalization changes."
 fi

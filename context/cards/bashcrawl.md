@@ -34,15 +34,13 @@ tags:
 - ~58,701 words across 45 indexed documents
 - code samples in: bash, plaintext, json, yaml, python, text, js, markdown
 
-## Structure
+## Navigation
 
-- `docs/` (25 docs)
-- `src/` (6 docs)
-- `.github/` (5 docs)
-- `entrance/` (3 docs)
-- `.archives/` (1 docs)
-- `logs/` (1 docs)
-- `termforge/` (1 docs)
+44 published pages in 12 sections (max depth 4) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+
+- **Repository & tooling** (12 pages)
+- **Documentation** (25 pages)
+- **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents
 
@@ -60,6 +58,7 @@ tags:
 ```bash
 python3 -m scripts.context_engine query bashcrawl
 python3 -m scripts.context_engine facts bashcrawl
+python3 -m scripts.context_engine nav bashcrawl
 ```
 
 MCP: `get_project` with `{"name": "bashcrawl"}` (server: `mcp/server.py`, registered in `.mcp.json`).

@@ -5,6 +5,10 @@ Distills each project's aggregated corpus (docs/<name>/) plus its registry
 entry into a structured, machine-readable fact sheet. Works entirely
 offline from the committed corpus; when docs/docs_index.json is present its
 per-document metadata is folded into the rollups.
+
+`attach_nav_facts` folds the navigator's tree in afterwards, so a project's
+facts describe its structure with the same sections the published sidebar
+shows - one shape, not two.
 """
 
 import hashlib
@@ -156,6 +160,7 @@ def extract_facts(project: Project, docs_dir: Path = DOCS_DIR,
         "identity": {},
         "signals": {},
         "structure": {},
+        "navigation": {"present": False},
         "rollups": {},
         "key_docs": [],
     }
@@ -230,4 +235,38 @@ def extract_facts(project: Project, docs_dir: Path = DOCS_DIR,
     facts["key_docs"] = key_docs[:8]
 
     facts["rollups"] = _index_rollups(docs_index, project.name)
+    return facts
+
+
+def attach_nav_facts(facts: Dict, nav: Optional[Dict]) -> Dict:
+    """Fold one project's navigation tree into its fact sheet."""
+    if not nav:
+        facts["navigation"] = {"present": False}
+        return facts
+    counts = nav.get("counts") or {}
+    sections = [
+        {
+            "title": child.get("title"),
+            "type": child.get("type"),
+            "pages": child.get("pages", 0),
+            "path": child.get("rel") or child.get("folder"),
+            "index": child.get("index"),
+        }
+        for child in (nav.get("tree") or {}).get("children") or []
+        if child.get("type") != "page"
+    ]
+    facts["navigation"] = {
+        "present": True,
+        "title": nav.get("title"),
+        "pages": counts.get("pages", 0),
+        "sections": counts.get("sections", 0),
+        "max_depth": counts.get("max_depth", 0),
+        "skipped": counts.get("skipped", 0),
+        "fingerprint": nav.get("fingerprint"),
+        "index": ((nav.get("tree") or {}).get("index")
+                  or (nav.get("tree") or {}).get("children", [{}])[0].get("path")),
+        "tree": f"context/nav/{nav.get('project')}.json",
+        "browse": f"docs/browse/{nav.get('project')}.md",
+        "top_sections": sections[:12],
+    }
     return facts

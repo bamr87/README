@@ -2,7 +2,8 @@
 config-dir: pages/_about/settings
 config-file: _config.yml
 excerpt: View, manage, and update your Jekyll theme configuration from one place.
-icon: bi-gear
+icon: material/cog
+source_icon: bi-gear
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/config/

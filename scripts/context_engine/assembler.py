@@ -7,6 +7,9 @@ Produces:
   - docs/index.md          MkDocs site home mirrored from the apex
   - context/SCHEMA.md      schema for the generated context tree
 
+The navigation surfaces (nav.yml, context/nav/, docs/browse/) are written by
+navigator.py; this module only links to them.
+
 Generated surfaces carry no timestamps so re-runs are diff-stable unless
 the underlying facts changed.
 """
@@ -28,7 +31,8 @@ PYRAMID_DIAGRAM = """```
        ▲▲  L1  context/cards/      - one distilled card per project
       ▲▲▲  L2  context/facts/      - structured facts (machine layer)
      ▲▲▲▲  L3  docs/               - aggregated markdown corpus (base)
-    ─────  query: context/index/ · CLI `query` · MCP server (mcp/server.py)
+    ─────  navigate: context/nav/ · nav.yml (site) · docs/browse/ (maps)
+    ─────  query:    context/index/ · CLI `query` · MCP server (mcp/server.py)
 ```"""
 
 
@@ -44,17 +48,19 @@ def fleet_table(registry: Registry, facts_by_name: Dict[str, Dict],
                 card_base: str = "context/cards/") -> str:
     """Fleet table used in both the apex and the root README AUTO span."""
     rows = [
-        "| Project | Kind | Status | Docs | What it is |",
-        "|---|---|---|---|---|",
+        "| Project | Kind | Status | Docs | Sections | What it is |",
+        "|---|---|---|---|---|---|",
     ]
-    for project in registry.active():
+    for project in registry.nav_ordered():
         facts = facts_by_name.get(project.name, {})
         corpus = facts.get("corpus") or {}
+        navigation = facts.get("navigation") or {}
         card_link = f"{card_base}{project.name}.md"
         rows.append(
             f"| [{project.name}]({card_link}) "
             f"| {project.kind} | {project.status} "
             f"| {corpus.get('file_count', 0)} "
+            f"| {navigation.get('sections', '—') if navigation.get('present') else '—'} "
             f"| {_short_summary(facts)} |"
         )
     return "\n".join(rows)
@@ -115,7 +121,7 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
         fleet_table(registry, facts_by_name, card_base="cards/"),
         "",
     ]
-    for project in registry.active():
+    for project in registry.nav_ordered():
         facts = facts_by_name.get(project.name, {})
         identity = facts.get("identity") or {}
         corpus = facts.get("corpus") or {}
@@ -131,6 +137,12 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
             f"- Corpus: [`docs/{project.name}/`](../docs/{project.name}/)"
             f" ({corpus.get('file_count', 0)} documents)",
         ]
+        navigation = facts.get("navigation") or {}
+        if navigation.get("present"):
+            lines.append(
+                f"- Navigation: [tree](nav/{project.name}.json) ·"
+                f" [content map](../docs/browse/{project.name}.md) —"
+                f" {navigation['pages']} pages in {navigation['sections']} sections")
         topics = (facts.get("project") or {}).get("topics") or project.topics
         if topics:
             lines.append(f"- Topics: {', '.join(topics)}")
@@ -142,12 +154,13 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
         "```bash",
         "python3 -m scripts.context_engine query <term>     # search the pyramid",
         "python3 -m scripts.context_engine card <project>   # print a card",
+        "python3 -m scripts.context_engine nav <project>    # navigation tree",
         "python3 -m scripts.context_engine status           # freshness manifest",
         "```",
         "",
-        "AI clients connect through the MCP server (`mcp/server.py`, registered",
-        "in `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,",
-        "`get_readme`, `get_schema`, `context_status`.",
+        "AI clients connect through the MCP server (`mcp/server.py`, registered in"
+        " `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,"
+        " `get_readme`, `get_nav`, `get_schema`, `context_status`.",
         "",
     ]
     return "\n".join(lines)
@@ -185,32 +198,44 @@ def build_site_index(registry: Registry, facts_by_name: Dict[str, Dict]) -> str:
         "",
         "# bamr87 documentation",
         "",
-        "Aggregated, continuously refreshed documentation for every project in",
-        "the [bamr87](https://github.com/bamr87) fleet. This page is generated",
-        "from the fleet registry by the README context engine.",
+        "Aggregated, continuously refreshed documentation for every project in the"
+        " [bamr87](https://github.com/bamr87) fleet. This page is generated from"
+        " the fleet registry by the README context engine.",
+        "",
+        "The left sidebar mirrors each corpus's own folder hierarchy — see the"
+        " [content map](browse/index.md) to browse any project in full.",
         "",
         "## Documentation by project",
         "",
     ]
-    for project in registry.active():
+    for project in registry.nav_ordered():
         facts = facts_by_name.get(project.name, {})
         identity = facts.get("identity") or {}
         corpus = facts.get("corpus") or {}
-        target = f"{project.name}/{identity.get('readme', '')}".rstrip("/")
+        navigation = facts.get("navigation") or {}
+        # Prefer the navigator's landing page: it is the page the site actually
+        # builds (MkDocs drops a README.md shadowed by a sibling index.md).
+        target = navigation.get("index") or (
+            f"{project.name}/{identity.get('readme', '')}".rstrip("/"))
+        detail = f"*({corpus.get('file_count', 0)} documents"
+        if navigation.get("present"):
+            detail += f", {navigation['sections']} sections"
+        detail += ")*"
         lines += [
             f"### [{identity.get('title') or project.name}]({target})",
             "",
-            (_short_summary(facts, 240) or "(no summary yet)")
-            + f" *({corpus.get('file_count', 0)} documents)*",
+            (_short_summary(facts, 240) or "(no summary yet)") + " " + detail,
             "",
         ]
+        if navigation.get("present"):
+            lines += [f"[Content map](browse/{project.name}.md)", ""]
     lines += [
         "---",
         "",
-        "## Reports",
+        "## Browse and reports",
         "",
+        "- [Content map — every corpus, section by section](browse/index.md)",
         "- [Quality and analysis results](results/index.md)",
-        "- [Sitemap](sitemap.md)",
         "",
     ]
     return "\n".join(lines)
@@ -238,6 +263,7 @@ def build_context_schema() -> str:
         "| `SCHEMA.md` | file | This file | generated |",
         "| `cards/` | dir | L1 - one distilled card per project | generated |",
         "| `facts/` | dir | L2 - structured facts per project | generated |",
+        "| `nav/` | dir | Navigation trees per corpus + the fleet manifest | generated |",
         "| `index/` | dir | Query layer - context_index.json + manifest.json | generated |",
         "",
         "## Forbidden",
