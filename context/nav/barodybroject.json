@@ -5,300 +5,33 @@
   "title": "Barody Project",
   "corpus": "docs/barodybroject",
   "counts": {
-    "pages": 298,
-    "sections": 63,
+    "pages": 254,
+    "sections": 56,
     "max_depth": 7,
-    "skipped": 1
+    "skipped": 6
   },
   "skipped": [
-    "src/README.md"
+    ".devcontainer",
+    ".github",
+    "README/.devcontainer",
+    "README/.github",
+    "src/README.md",
+    "src/posthog/.github"
   ],
-  "fingerprint": "46d78858872bdcb1",
+  "fingerprint": "6d2b47b73533b2af",
   "tree": {
     "type": "section",
     "title": "Barody Project",
     "index": "barodybroject/README.md",
-    "pages": 298,
+    "pages": 254,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
-        "index": "barodybroject/.github/README.md",
-        "pages": 45,
+        "index": "barodybroject/infra/README.md",
+        "pages": 9,
         "children": [
-          {
-            "type": "page",
-            "title": "Dev Container",
-            "path": "barodybroject/.devcontainer/README.md",
-            "rel": ".devcontainer/README.md",
-            "folder": ".devcontainer"
-          },
-          {
-            "type": "section",
-            "title": "GitHub",
-            "rel": ".github",
-            "index": "barodybroject/.github/README.md",
-            "pages": 35,
-            "children": [
-              {
-                "type": "page",
-                "title": "Parody News Generator - Developer Guide",
-                "path": "barodybroject/.github/README.md",
-                "rel": ".github/README.md",
-                "is_index": true
-              },
-              {
-                "type": "page",
-                "title": "Barodybroject \u2014 Agent Instructions",
-                "path": "barodybroject/.github/copilot-instructions.md",
-                "rel": ".github/copilot-instructions.md"
-              },
-              {
-                "type": "page",
-                "title": "Commit & Publish Workflow",
-                "path": "barodybroject/.github/prompts/commit-publish.prompt.md",
-                "rel": ".github/prompts/commit-publish.prompt.md",
-                "folder": ".github/prompts"
-              },
-              {
-                "type": "page",
-                "title": "Skills",
-                "path": "barodybroject/.github/skills/azure-deploy/SKILL.md",
-                "rel": ".github/skills/azure-deploy/SKILL.md",
-                "folder": ".github/skills"
-              },
-              {
-                "type": "page",
-                "title": "Workflow Scripts",
-                "path": "barodybroject/.github/scripts/README.md",
-                "rel": ".github/scripts/README.md",
-                "folder": ".github/scripts"
-              },
-              {
-                "type": "section",
-                "title": "GitHub Actions Workflows",
-                "rel": ".github/workflows",
-                "index": "barodybroject/.github/workflows/README.md",
-                "pages": 4,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "GitHub Actions Workflows",
-                    "path": "barodybroject/.github/workflows/README.md",
-                    "rel": ".github/workflows/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "Archived Workflows",
-                    "path": "barodybroject/.github/workflows/archive/README.md",
-                    "rel": ".github/workflows/archive/README.md",
-                    "folder": ".github/workflows/archive"
-                  },
-                  {
-                    "type": "page",
-                    "title": "GitHub Actions Workflow Fixes and Improvements",
-                    "path": "barodybroject/.github/workflows/WORKFLOW_FIXES.md",
-                    "rel": ".github/workflows/WORKFLOW_FIXES.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Workflow Changes Summary",
-                    "path": "barodybroject/.github/workflows/CHANGES_SUMMARY.md",
-                    "rel": ".github/workflows/CHANGES_SUMMARY.md"
-                  }
-                ]
-              },
-              {
-                "type": "section",
-                "title": "GitHub Agents",
-                "rel": ".github/agents",
-                "index": "barodybroject/.github/agents/README.md",
-                "pages": 6,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "GitHub Agents",
-                    "path": "barodybroject/.github/agents/README.md",
-                    "rel": ".github/agents/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "Example Infrastructure Test PR",
-                    "path": "barodybroject/.github/agents/examples/infra-test-example-pr.md",
-                    "rel": ".github/agents/examples/infra-test-example-pr.md",
-                    "folder": ".github/agents/examples"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Grokme",
-                    "path": "barodybroject/.github/agents/grokme.md",
-                    "rel": ".github/agents/grokme.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Infrastructure Tester Agent",
-                    "path": "barodybroject/.github/agents/infra-tester.md",
-                    "rel": ".github/agents/infra-tester.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Workflow Reviewer Agent",
-                    "path": "barodybroject/.github/agents/workflow-reviewer.md",
-                    "rel": ".github/agents/workflow-reviewer.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "\ud83d\udcda DONTREADME.md: The Forbidden Librarian's Grimoire",
-                    "path": "barodybroject/.github/agents/dontreadme.md",
-                    "rel": ".github/agents/dontreadme.md"
-                  }
-                ]
-              },
-              {
-                "type": "section",
-                "title": "Instructions Directory",
-                "rel": ".github/instructions",
-                "index": "barodybroject/.github/instructions/README.md",
-                "pages": 10,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "Instructions Directory",
-                    "path": "barodybroject/.github/instructions/README.md",
-                    "rel": ".github/instructions/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "Content Creation Instructions for Barodybroject",
-                    "path": "barodybroject/.github/instructions/posts.instructions.md",
-                    "rel": ".github/instructions/posts.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Documentation Standards",
-                    "path": "barodybroject/.github/instructions/documentation.instructions.md",
-                    "rel": ".github/instructions/documentation.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Development Pipeline for Barodybroject",
-                    "path": "barodybroject/.github/instructions/features.instructions.md",
-                    "rel": ".github/instructions/features.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "GitHub Actions Workflow Standards",
-                    "path": "barodybroject/.github/instructions/workflows.instructions.md",
-                    "rel": ".github/instructions/workflows.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Language-Specific Coding Standards",
-                    "path": "barodybroject/.github/instructions/languages.instructions.md",
-                    "rel": ".github/instructions/languages.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Project-Specific Facts (Source of Truth)",
-                    "path": "barodybroject/.github/instructions/project.instructions.md",
-                    "rel": ".github/instructions/project.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Testing Standards",
-                    "path": "barodybroject/.github/instructions/test.instructions.md",
-                    "rel": ".github/instructions/test.instructions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Unified Frontmatter Standards",
-                    "path": "barodybroject/.github/instructions/frontmatter.standards.md",
-                    "rel": ".github/instructions/frontmatter.standards.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Workspace Organization Guidelines for Barodybroject",
-                    "path": "barodybroject/.github/instructions/space.instructions.md",
-                    "rel": ".github/instructions/space.instructions.md"
-                  }
-                ]
-              },
-              {
-                "type": "section",
-                "title": "ISSUETEMPLATE Directory",
-                "rel": ".github/ISSUE_TEMPLATE",
-                "index": "barodybroject/.github/ISSUE_TEMPLATE/README.md",
-                "pages": 10,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "ISSUETEMPLATE Directory",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/README.md",
-                    "rel": ".github/ISSUE_TEMPLATE/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "Bug Report",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/bug_report.md",
-                    "rel": ".github/ISSUE_TEMPLATE/bug_report.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Custom",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/custom.md",
-                    "rel": ".github/ISSUE_TEMPLATE/custom.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Request",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request.md",
-                    "rel": ".github/ISSUE_TEMPLATE/feature_request.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Request Functional Requirements",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_requirements.md",
-                    "rel": ".github/ISSUE_TEMPLATE/feature_request_functional_requirements.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Request Functional Test",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_test.md",
-                    "rel": ".github/ISSUE_TEMPLATE/feature_request_functional_test.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Request Technical Requirements",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_requirements.md",
-                    "rel": ".github/ISSUE_TEMPLATE/feature_request_technical_requirements.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Feature Request Technical Tests",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_tests.md",
-                    "rel": ".github/ISSUE_TEMPLATE/feature_request_technical_tests.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Issue Detail Template",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/issue_detail_template.md",
-                    "rel": ".github/ISSUE_TEMPLATE/issue_detail_template.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "Issue Template",
-                    "path": "barodybroject/.github/ISSUE_TEMPLATE/issue_template.md",
-                    "rel": ".github/ISSUE_TEMPLATE/issue_template.md"
-                  }
-                ]
-              }
-            ]
-          },
           {
             "type": "section",
             "title": "Infrastructure",
@@ -844,7 +577,7 @@
         "title": "Source",
         "rel": "src",
         "index": "barodybroject/src/index.md",
-        "pages": 122,
+        "pages": 121,
         "children": [
           {
             "type": "page",
@@ -1790,7 +1523,7 @@
             "title": "PostHog Docker Deployment",
             "rel": "src/posthog",
             "index": "barodybroject/src/posthog/README.md",
-            "pages": 3,
+            "pages": 2,
             "children": [
               {
                 "type": "page",
@@ -1804,13 +1537,6 @@
                 "title": "Deployment Summary",
                 "path": "barodybroject/src/posthog/DEPLOYMENT_SUMMARY.md",
                 "rel": "src/posthog/DEPLOYMENT_SUMMARY.md"
-              },
-              {
-                "type": "page",
-                "title": "GitHub",
-                "path": "barodybroject/src/posthog/.github/copilot-instructions.md",
-                "rel": "src/posthog/.github/copilot-instructions.md",
-                "folder": "src/posthog/.github"
               }
             ]
           }
@@ -1821,7 +1547,7 @@
         "title": "\ud83d\udcda The Forbidden Library",
         "rel": "README",
         "index": "barodybroject/README/README.md",
-        "pages": 73,
+        "pages": 66,
         "children": [
           {
             "type": "page",
@@ -1829,13 +1555,6 @@
             "path": "barodybroject/README/README.md",
             "rel": "README/README.md",
             "is_index": true
-          },
-          {
-            "type": "page",
-            "title": "Dev Container",
-            "path": "barodybroject/README/.devcontainer/README.md",
-            "rel": "README/.devcontainer/README.md",
-            "folder": "README/.devcontainer"
           },
           {
             "type": "page",
@@ -1899,66 +1618,6 @@
                     "path": "barodybroject/README/docs/changelog/releases/v1.0.0/README.md",
                     "rel": "README/docs/changelog/releases/v1.0.0/README.md",
                     "folder": "README/docs/changelog/releases"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "section",
-            "title": "GitHub",
-            "rel": "README/.github",
-            "index": "barodybroject/README/.github/README.md",
-            "pages": 6,
-            "children": [
-              {
-                "type": "page",
-                "title": "Parody News Generator - Developer Guide",
-                "path": "barodybroject/README/.github/README.md",
-                "rel": "README/.github/README.md",
-                "is_index": true
-              },
-              {
-                "type": "page",
-                "title": "GitHub Agents Directory",
-                "path": "barodybroject/README/.github/agents/README.md",
-                "rel": "README/.github/agents/README.md",
-                "folder": "README/.github/agents"
-              },
-              {
-                "type": "page",
-                "title": "Instructions Directory",
-                "path": "barodybroject/README/.github/instructions/README.md",
-                "rel": "README/.github/instructions/README.md",
-                "folder": "README/.github/instructions"
-              },
-              {
-                "type": "page",
-                "title": "ISSUETEMPLATE Directory",
-                "path": "barodybroject/README/.github/ISSUE_TEMPLATE/README.md",
-                "rel": "README/.github/ISSUE_TEMPLATE/README.md",
-                "folder": "README/.github/ISSUE_TEMPLATE"
-              },
-              {
-                "type": "section",
-                "title": "GitHub Actions Workflows",
-                "rel": "README/.github/workflows",
-                "index": "barodybroject/README/.github/workflows/README.md",
-                "pages": 2,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "GitHub Actions Workflows",
-                    "path": "barodybroject/README/.github/workflows/README.md",
-                    "rel": "README/.github/workflows/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "Archived Workflows",
-                    "path": "barodybroject/README/.github/workflows/archive/README.md",
-                    "rel": "README/.github/workflows/archive/README.md",
-                    "folder": "README/.github/workflows/archive"
                   }
                 ]
               }

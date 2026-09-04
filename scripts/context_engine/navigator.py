@@ -30,8 +30,12 @@ The tree is derived from the folder hierarchy, never hand-written:
   depth       pages below ``max_depth`` are flattened into the deepest
               allowed section (with a path-qualified title) rather than
               dropped - the sidebar always reaches every published page
-  exclusions  registry globs, plus MkDocs' own rules (dot files, and a
-              ``README.md`` shadowed by a sibling ``index.md``)
+  exclusions  registry globs, plus MkDocs' own rules (a ``README.md``
+              shadowed by a sibling ``index.md``). Dot-directories are a
+              special case: GitHub Pages does not serve a path with a
+              dot-prefixed segment, so ``navigate_hidden`` keeps them out of
+              the sidebar (no dead links) while ``publish_hidden`` still
+              builds them into the site.
 
 Output carries a content fingerprint and no timestamps, so rebuilding over
 an unchanged corpus produces an empty diff.
@@ -294,7 +298,7 @@ class NavContext:
     section_titles: Dict[str, str]
     excludes: GlobSet
     max_depth: int
-    publish_hidden: bool
+    navigate_hidden: bool
     skipped: List[str] = field(default_factory=list)
 
 
@@ -342,7 +346,7 @@ def _scan(directory: Path, rel: str, ctx: NavContext, depth: int) -> Optional[Na
     subdirs: List[Path] = []
     for entry in entries:
         entry_rel = f"{rel}/{entry.name}" if rel else entry.name
-        if _hidden(entry.name) and not ctx.publish_hidden:
+        if _hidden(entry.name) and not ctx.navigate_hidden:
             ctx.skipped.append(entry_rel)
             continue
         if ctx.excludes.matches(entry_rel):
@@ -500,7 +504,7 @@ def build_project_nav(name: str, title: str, spec: NavSpec,
         section_titles=defaults.section_titles,
         excludes=GlobSet(list(defaults.exclude) + list(spec.exclude)),
         max_depth=spec.max_depth or defaults.max_depth,
-        publish_hidden=defaults.publish_hidden,
+        navigate_hidden=defaults.navigate_hidden,
     )
     root = _scan(corpus, "", ctx, 1) if corpus.is_dir() else None
     if root is None:
@@ -609,10 +613,9 @@ def render_mkdocs_nav(fleet: Dict, registry: Registry,
         "# mkdocs.yml pulls this in with `INHERIT`, so the published sidebar is",
         "# always the folder hierarchy of docs/ as the registry groups it.",
         "",
-        "# Keep the site's page set identical to the navigation tree: re-include",
-        "# the dot-directories MkDocs drops by default (the fleet's skills,",
-        "# agents and quests corpora live in them) and drop what the registry",
-        "# excludes, so no page is published without a way to navigate to it.",
+        "# What the site builds. `exclude_docs` drops what the registry excludes;",
+        "# with publish_hidden it also re-includes the dot-directories MkDocs skips",
+        "# by default (the fleet's skills, agents and quests corpora live in them).",
         "exclude_docs: |",
     ]
     if registry.navigation.publish_hidden:
@@ -625,6 +628,18 @@ def render_mkdocs_nav(fleet: Dict, registry: Registry,
             excluded.append(f"{project.name}/{pattern}")
     for pattern in sorted(set(excluded)):
         lines.append(f"  {pattern}")
+
+    if registry.navigation.publish_hidden and not registry.navigation.navigate_hidden:
+        lines += [
+            "",
+            "# Built, but deliberately absent from the sidebar. GitHub Pages does",
+            "# not serve a URL containing a dot-prefixed segment, so a nav entry",
+            "# for one of these pages would be a dead link. `not_in_nav` is how",
+            "# MkDocs is told the omission is intentional (no orphan-page warning).",
+            "not_in_nav: |",
+            "  **/.*",
+            "  **/.*/**",
+        ]
 
     lines += ["", "nav:", '  - "Home": index.md']
     for name in fleet["order"]:

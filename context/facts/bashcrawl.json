@@ -30,19 +30,19 @@
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "16a6ed17ea199147",
+    "fingerprint": "fdbc0c73059689fd",
     "index": "bashcrawl/README.md",
-    "max_depth": 4,
-    "pages": 44,
+    "max_depth": 3,
+    "pages": 38,
     "present": true,
-    "sections": 12,
-    "skipped": 1,
+    "sections": 9,
+    "skipped": 3,
     "title": "Bash Crawl",
     "top_sections": [
       {
         "index": null,
-        "pages": 12,
-        "path": null,
+        "pages": 6,
+        "path": "src",
         "title": "Repository & tooling",
         "type": "group"
       },

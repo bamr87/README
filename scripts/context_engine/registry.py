@@ -82,6 +82,7 @@ class NavDefaults:
     index_names: List[str] = field(default_factory=lambda: list(DEFAULT_INDEX_NAMES))
     exclude: List[str] = field(default_factory=list)
     publish_hidden: bool = True
+    navigate_hidden: bool = False
     section_titles: Dict[str, str] = field(
         default_factory=lambda: dict(DEFAULT_SECTION_TITLES))
 
@@ -152,6 +153,8 @@ def _parse_nav_defaults(raw: Any) -> NavDefaults:
         defaults.exclude = [str(p) for p in raw["exclude"]]
     if raw.get("publish_hidden") is not None:
         defaults.publish_hidden = bool(raw["publish_hidden"])
+    if raw.get("navigate_hidden") is not None:
+        defaults.navigate_hidden = bool(raw["navigate_hidden"])
     if raw.get("section_titles") is not None:
         if not isinstance(raw["section_titles"], dict):
             raise RegistryError("`navigation.section_titles` must be a mapping")

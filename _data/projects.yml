@@ -45,9 +45,14 @@ hub:
 #                    flattened into the deepest allowed section (never dropped)
 #   index_names    - filenames treated as a section's landing page, in order
 #   exclude        - glob patterns removed from navigation *and* from the site
-#   publish_hidden - publish dot-directories (.github, .claude, ...) that
-#                    MkDocs excludes by default; without this the fleet's
-#                    skills/agents/quests corpora would be unreachable
+#   publish_hidden - build dot-directories (.github, .claude, ...) into the
+#                    site; MkDocs excludes them by default
+#   navigate_hidden - put those dot-directories in the sidebar too. Left off:
+#                    GitHub Pages does not serve a URL containing a
+#                    dot-prefixed segment (verified - `_underscore` and plain
+#                    paths return 200, every `/.dot/` path returns 404), so a
+#                    sidebar entry for one would be a dead link. They stay in
+#                    the build and are declared `not_in_nav` instead.
 #   section_titles - directory name -> sidebar label (an index page's own
 #                    frontmatter title still wins)
 #
@@ -59,6 +64,7 @@ navigation:
   max_depth: 6
   index_names: [index.md, README.md, readme.md, home.md]
   publish_hidden: true
+  navigate_hidden: false
   exclude:
     - "**/node_modules/**"
     - "**/.git/**"
@@ -120,8 +126,11 @@ projects:
       title: Agent Skills
       order: 50
       max_depth: 7
-      # Everything of substance lives under .github/, so lift its children
-      # to the top of the sidebar instead of burying them one level down.
+      # Almost all of this corpus lives under .github/, which GitHub Pages
+      # cannot serve, so navigate_hidden keeps it out of the sidebar and only
+      # the handful of top-level pages are navigable today. These groups are
+      # kept because they are what the sidebar should look like the moment
+      # that content becomes servable (see navigate_hidden above).
       groups:
         - title: Skills
           match: [".github/skills"]

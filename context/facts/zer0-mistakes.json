@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "6f39bea50aa45b36",
+    "fingerprint": "b0e819af564bfb64",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 703,
+    "pages": 626,
     "present": true,
-    "sections": 106,
-    "skipped": 2,
+    "sections": 95,
+    "skipped": 8,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 125,
+        "pages": 48,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"

@@ -28,6 +28,7 @@ Everything flows left-to-right; each stage's output is the next stage's input. S
 - **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md` and `docs/browse/`), `repos.txt`, `nav.yml`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
 - The pyramid: `docs/` (L3 corpus) → `context/facts/*.json` (L2) → `context/cards/*.md` (L1) → `context/README.md` (L0 apex, mirrored to `docs/index.md` for the published site).
 - **Navigation is derived, never curated.** The corpus folder hierarchy plus the registry's `navigation:` contract is the only input; `nav.yml`, `context/nav/*.json` and `docs/browse/*.md` are all rendered from it. To change the sidebar, edit `_data/projects.yml` (a project's `nav.groups`, `nav.exclude`, `nav.order`, `navigation.section_titles`) and rebuild — never the nav files, and never add a `nav:` key to `mkdocs.yml` (it would shadow the `INHERIT`ed one).
+- **Published ≠ navigable, and the gap is declared.** GitHub Pages 404s any URL with a dot-prefixed segment, so `navigation.publish_hidden: true` builds the dot-directory corpora while `navigation.navigate_hidden: false` keeps them out of the sidebar; the navigator emits `not_in_nav` in `nav.yml` so MkDocs knows the omission is intentional. Everything the sidebar links to is a page the site actually serves.
 
 ### The context engine (`scripts/context_engine/`)
 

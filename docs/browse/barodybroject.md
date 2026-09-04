@@ -9,50 +9,9 @@ nav_exclude: true
 
 # Barody Project - content map
 
-Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **298 pages** across **63 sections** (max depth 7).
+Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **254 pages** across **56 sections** (max depth 7).
 
-- **[Repository & tooling](../barodybroject/.github/README.md)** <small>(45)</small>
-  - [Dev Container](../barodybroject/.devcontainer/README.md)
-  - **[GitHub](../barodybroject/.github/README.md)** <small>(35)</small>
-    - [Parody News Generator - Developer Guide](../barodybroject/.github/README.md)
-    - [Barodybroject — Agent Instructions](../barodybroject/.github/copilot-instructions.md)
-    - [Commit & Publish Workflow](../barodybroject/.github/prompts/commit-publish.prompt.md)
-    - [Skills](../barodybroject/.github/skills/azure-deploy/SKILL.md)
-    - [Workflow Scripts](../barodybroject/.github/scripts/README.md)
-    - **[GitHub Actions Workflows](../barodybroject/.github/workflows/README.md)** <small>(4)</small>
-      - [GitHub Actions Workflows](../barodybroject/.github/workflows/README.md)
-      - [Archived Workflows](../barodybroject/.github/workflows/archive/README.md)
-      - [GitHub Actions Workflow Fixes and Improvements](../barodybroject/.github/workflows/WORKFLOW_FIXES.md)
-      - [Workflow Changes Summary](../barodybroject/.github/workflows/CHANGES_SUMMARY.md)
-    - **[GitHub Agents](../barodybroject/.github/agents/README.md)** <small>(6)</small>
-      - [GitHub Agents](../barodybroject/.github/agents/README.md)
-      - [Example Infrastructure Test PR](../barodybroject/.github/agents/examples/infra-test-example-pr.md)
-      - [Grokme](../barodybroject/.github/agents/grokme.md)
-      - [Infrastructure Tester Agent](../barodybroject/.github/agents/infra-tester.md)
-      - [Workflow Reviewer Agent](../barodybroject/.github/agents/workflow-reviewer.md)
-      - [📚 DONTREADME.md: The Forbidden Librarian's Grimoire](../barodybroject/.github/agents/dontreadme.md)
-    - **[Instructions Directory](../barodybroject/.github/instructions/README.md)** <small>(10)</small>
-      - [Instructions Directory](../barodybroject/.github/instructions/README.md)
-      - [Content Creation Instructions for Barodybroject](../barodybroject/.github/instructions/posts.instructions.md)
-      - [Documentation Standards](../barodybroject/.github/instructions/documentation.instructions.md)
-      - [Feature Development Pipeline for Barodybroject](../barodybroject/.github/instructions/features.instructions.md)
-      - [GitHub Actions Workflow Standards](../barodybroject/.github/instructions/workflows.instructions.md)
-      - [Language-Specific Coding Standards](../barodybroject/.github/instructions/languages.instructions.md)
-      - [Project-Specific Facts (Source of Truth)](../barodybroject/.github/instructions/project.instructions.md)
-      - [Testing Standards](../barodybroject/.github/instructions/test.instructions.md)
-      - [Unified Frontmatter Standards](../barodybroject/.github/instructions/frontmatter.standards.md)
-      - [Workspace Organization Guidelines for Barodybroject](../barodybroject/.github/instructions/space.instructions.md)
-    - **[ISSUETEMPLATE Directory](../barodybroject/.github/ISSUE_TEMPLATE/README.md)** <small>(10)</small>
-      - [ISSUETEMPLATE Directory](../barodybroject/.github/ISSUE_TEMPLATE/README.md)
-      - [Bug Report](../barodybroject/.github/ISSUE_TEMPLATE/bug_report.md)
-      - [Custom](../barodybroject/.github/ISSUE_TEMPLATE/custom.md)
-      - [Feature Request](../barodybroject/.github/ISSUE_TEMPLATE/feature_request.md)
-      - [Feature Request Functional Requirements](../barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_requirements.md)
-      - [Feature Request Functional Test](../barodybroject/.github/ISSUE_TEMPLATE/feature_request_functional_test.md)
-      - [Feature Request Technical Requirements](../barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_requirements.md)
-      - [Feature Request Technical Tests](../barodybroject/.github/ISSUE_TEMPLATE/feature_request_technical_tests.md)
-      - [Issue Detail Template](../barodybroject/.github/ISSUE_TEMPLATE/issue_detail_template.md)
-      - [Issue Template](../barodybroject/.github/ISSUE_TEMPLATE/issue_template.md)
+- **[Repository & tooling](../barodybroject/infra/README.md)** <small>(9)</small>
   - **[Infrastructure](../barodybroject/infra/README.md)** <small>(5)</small>
     - [infra/ Directory](../barodybroject/infra/README.md)
     - [app Directory](../barodybroject/infra/app/README.md)
@@ -134,7 +93,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - [Migration Documentation](../barodybroject/docs/migration/README.md)
     - [Django CMS Removal Guide](../barodybroject/docs/migration/CMS_REMOVAL_GUIDE.md)
     - [Migration Documentation - v0.2.0](../barodybroject/docs/migration/MIGRATION_GUIDE.md)
-- **[Source](../barodybroject/src/index.md)** <small>(122)</small>
+- **[Source](../barodybroject/src/index.md)** <small>(121)</small>
   - [Index](../barodybroject/src/index.md)
   - [barodybroject Directory](../barodybroject/src/barodybroject/README.md)
   - [Installation Wizard Setup Guide](../barodybroject/src/setup/README.md)
@@ -273,13 +232,11 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
       - **[scripts Directory](../barodybroject/src/parodynews/tests/scripts/README.md)** <small>(2)</small>
         - [scripts Directory](../barodybroject/src/parodynews/tests/scripts/README.md)
         - [functions Directory](../barodybroject/src/parodynews/tests/scripts/functions/README.md)
-  - **[PostHog Docker Deployment](../barodybroject/src/posthog/README.md)** <small>(3)</small>
+  - **[PostHog Docker Deployment](../barodybroject/src/posthog/README.md)** <small>(2)</small>
     - [PostHog Docker Deployment](../barodybroject/src/posthog/README.md)
     - [Deployment Summary](../barodybroject/src/posthog/DEPLOYMENT_SUMMARY.md)
-    - [GitHub](../barodybroject/src/posthog/.github/copilot-instructions.md)
-- **[📚 The Forbidden Library](../barodybroject/README/README.md)** <small>(73)</small>
+- **[📚 The Forbidden Library](../barodybroject/README/README.md)** <small>(66)</small>
   - [📚 The Forbidden Library](../barodybroject/README/README.md)
-  - [Dev Container](../barodybroject/README/.devcontainer/README.md)
   - [Scripts Directory](../barodybroject/README/scripts/README.md)
   - [Test Suite for Installation Wizard](../barodybroject/README/test/README.md)
   - **[Documentation](../barodybroject/README/docs/README.md)** <small>(5)</small>
@@ -289,14 +246,6 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - **[Changelog Documentation System](../barodybroject/README/docs/changelog/README.md)** <small>(2)</small>
       - [Changelog Documentation System](../barodybroject/README/docs/changelog/README.md)
       - [Releases](../barodybroject/README/docs/changelog/releases/v1.0.0/README.md)
-  - **[GitHub](../barodybroject/README/.github/README.md)** <small>(6)</small>
-    - [Parody News Generator - Developer Guide](../barodybroject/README/.github/README.md)
-    - [GitHub Agents Directory](../barodybroject/README/.github/agents/README.md)
-    - [Instructions Directory](../barodybroject/README/.github/instructions/README.md)
-    - [ISSUETEMPLATE Directory](../barodybroject/README/.github/ISSUE_TEMPLATE/README.md)
-    - **[GitHub Actions Workflows](../barodybroject/README/.github/workflows/README.md)** <small>(2)</small>
-      - [GitHub Actions Workflows](../barodybroject/README/.github/workflows/README.md)
-      - [Archived Workflows](../barodybroject/README/.github/workflows/archive/README.md)
   - **[Infrastructure](../barodybroject/README/infra/README.md)** <small>(4)</small>
     - [infra/ Directory](../barodybroject/README/infra/README.md)
     - [app Directory](../barodybroject/README/infra/app/README.md)

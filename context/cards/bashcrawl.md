@@ -36,9 +36,9 @@ tags:
 
 ## Navigation
 
-44 published pages in 12 sections (max depth 4) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+38 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
-- **Repository & tooling** (12 pages)
+- **Repository & tooling** (6 pages)
 - **Documentation** (25 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 

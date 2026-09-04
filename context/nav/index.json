@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 3122
+    "pages": 2083
   },
   "projects": {
     "it-journey": {
@@ -21,11 +21,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 1115,
-      "sections": 111,
+      "pages": 908,
+      "sections": 93,
       "max_depth": 7,
-      "skipped": 6,
-      "fingerprint": "65a0d458320d5a45"
+      "skipped": 16,
+      "fingerprint": "50565621728ed44b"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 703,
-      "sections": 106,
+      "pages": 626,
+      "sections": 95,
       "max_depth": 6,
-      "skipped": 2,
-      "fingerprint": "6f39bea50aa45b36"
+      "skipped": 8,
+      "fingerprint": "b0e819af564bfb64"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -45,11 +45,11 @@
       "tree": "context/nav/barodybroject.json",
       "browse": "docs/browse/barodybroject.md",
       "registered": true,
-      "pages": 298,
-      "sections": 63,
+      "pages": 254,
+      "sections": 56,
       "max_depth": 7,
-      "skipped": 1,
-      "fingerprint": "46d78858872bdcb1"
+      "skipped": 6,
+      "fingerprint": "6d2b47b73533b2af"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -57,11 +57,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 44,
-      "sections": 12,
-      "max_depth": 4,
-      "skipped": 1,
-      "fingerprint": "16a6ed17ea199147"
+      "pages": 38,
+      "sections": 9,
+      "max_depth": 3,
+      "skipped": 3,
+      "fingerprint": "fdbc0c73059689fd"
     },
     "skills": {
       "title": "Agent Skills",
@@ -69,11 +69,11 @@
       "tree": "context/nav/skills.json",
       "browse": "docs/browse/skills.md",
       "registered": true,
-      "pages": 712,
-      "sections": 254,
-      "max_depth": 6,
-      "skipped": 0,
-      "fingerprint": "62d0fa4f2d628db9"
+      "pages": 7,
+      "sections": 3,
+      "max_depth": 3,
+      "skipped": 1,
+      "fingerprint": "292f000a4ab20ef9"
     },
     "scripts": {
       "title": "Scripts",
