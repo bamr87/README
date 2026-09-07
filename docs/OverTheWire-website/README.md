@@ -12,12 +12,9 @@ If you have a problem, a question or a suggestion, you can join us via [chat](ht
 
 ## Contributing to this website
 
-You can clone the repository and make changes to the website by issuing pull requests.
-To verify that your edits are looking like they should, you can host a local copy of this
-website using [jekyll][].
+You can clone the repository and make changes to the website by issuing pull requests. To verify that your edits are looking like they should, you can host a local copy of this website using [jekyll][].
 
-After installing jekyll, use the following command in the same directory as this README file,
-to start a local webserver:
+After installing jekyll, use the following command in the same directory as this README file, to start a local webserver:
 
 ```
 jekyll serve
