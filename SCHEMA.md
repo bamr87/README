@@ -39,6 +39,7 @@ coverage: listed
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
+| `tools/` | dir | Hub-vendored tooling, fanned out from `bamr87/bamr87` — fix upstream, not here | terminal |
 | `.editorconfig` | file | Editor defaults (standardization baseline) | |
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
 | `.gitignore` | file | Ignore rules for temp/, raw_docs/, site/, venvs | |
@@ -66,6 +67,7 @@ coverage: listed
 - New MCP tool → `mcp/server.py` + `mcp/README.md`
 - New registry → `_data/`, registered in `_data/SCHEMA.md`
 - New sidebar grouping → a project's `nav.groups` in `_data/projects.yml`, then rebuild
+- New shared fleet tool → author it in the hub and fan it out into `tools/`; a tool that only serves this pipeline belongs in `scripts/` instead
 
 ## Forbidden
 

@@ -36,7 +36,7 @@ Full picture: [context/README.md](context/README.md) — the consolidated README
 ## Quick start
 
 ```bash
-pip install -r requirements.txt        # pyyaml, requests (+ test/site deps)
+pip install -r requirements.txt        # pipeline + engine; requirements-docs.txt is the site build
 
 # 1. Aggregate the corpus (clones every repo in the registry)
 bash scripts/aggregate.sh
@@ -50,20 +50,21 @@ python3 -m scripts.context_engine card bashcrawl
 python3 -m scripts.context_engine status
 ```
 
-AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
+AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
 
 ## How it works
 
 | Stage | Input | Output | Entry point |
 |---|---|---|---|
-| 1. Aggregate | `_data/projects.yml` → `repos.txt` | `docs/` corpus (L3) | `scripts/aggregate.sh` |
-| 2. Process | `raw_docs/` | `docs/{project}/` + frontmatter | `scripts/process.py` |
+| 1. Aggregate | `_data/projects.yml` → `repos.txt` | `raw_docs/` | `scripts/aggregate.sh` |
+| 2. Process | `raw_docs/` | `docs/{project}/` (L3) + frontmatter | `scripts/process.py` (run by `aggregate.sh`) |
 | 3. Validate | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` |
 | 4. Index | `docs/` | `docs/docs_index.json` | `scripts/generate_docs_index.py` |
-| 5. Distill | corpus + registry | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
-| 6. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
+| 5. Navigate | `docs/` + registry `navigation:` | `nav.yml`, `context/nav/`, `docs/browse/` | `python3 -m scripts.context_engine build` |
+| 6. Distill | corpus + registry + nav | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
+| 7. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
 
-The engine (`scripts/context_engine/`) runs **extract → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or `XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
+The engine (`scripts/context_engine/`) runs **extract → navigate → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. `navigate` sits in the middle on purpose: the sidebar it derives from the corpus hierarchy is folded back into the facts, so the cards and the published navigation describe the same sections. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or `XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
 ## Continuous evolution
 
@@ -94,6 +95,8 @@ generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/
 | `docs/` | **Generated** aggregated corpus + MkDocs site content |
 | `mcp/` | MCP query server |
 | `hooks.d/` | Build lifecycle hooks |
+| `tools/` | Hub-vendored tooling (fanned out from `bamr87/bamr87` — fix it there) |
+| `nav.yml` | **Generated** sidebar, pulled into `mkdocs.yml` with `INHERIT` ([MKDOCS.md](MKDOCS.md)) |
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
 | `SCHEMA.md` | Root of this repo's structure pyramid |
 | `PRD.md` | Product spec for the context engine |
@@ -101,9 +104,10 @@ generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/
 ## Testing
 
 ```bash
-python tests/test_runner.py --type quick     # unit suite
-python3 scripts/schema_lint.py check .       # structure drift gate
-bash scripts/run_doc_checks.sh               # corpus quality checks
+python tests/test_runner.py --type quick        # unit suite
+python3 scripts/schema_lint.py check .          # structure drift gate
+python3 -m scripts.context_engine navcheck      # navigation drift gate
+bash scripts/run_doc_checks.sh                  # corpus quality checks
 ```
 
 ## License

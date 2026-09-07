@@ -121,7 +121,7 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
+| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh` (`aggregate.py` is the same loop as an importable module, driven by the tests) |
 | 2. Processing | `raw_docs/` | `docs/` | `process.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
@@ -252,6 +252,8 @@ https://github.com/owner/repo2.git
 #### `aggregate.py`
 
 **Purpose**: Python module providing core repository operations for the aggregation pipeline.
+
+**Who calls it**: the test harness, not the cron. `aggregate.sh` implements the same clone/find/copy loop in shell and never imports this module; `process_repository()` is the entry point the integration tests (`tests/integration/`) and `tests/unit/test_cases/test_repo_operations.py` drive. Keep the two implementations in step — a change here is only exercised by the tests.
 
 **Functions**:
 
