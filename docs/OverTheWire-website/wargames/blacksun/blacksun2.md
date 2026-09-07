@@ -5,7 +5,9 @@ level: 2
 source_file: blacksun2.md
 title: Blacksun2
 ---
-Level2 is a test application from a [pop3 library][] that's pretty buggy. The idea is to write a pop3 server to trigger a vulnerability (pick any you like :p) in the code and get a shell.
+Level2 is a test application from a [pop3 library][] that's pretty
+buggy. The idea is to write a pop3 server to trigger a vulnerability
+(pick any you like :p) in the code and get a shell.
 
 **Notes**
 

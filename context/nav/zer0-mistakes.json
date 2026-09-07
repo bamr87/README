@@ -5,8 +5,8 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 626,
-    "sections": 95,
+    "pages": 643,
+    "sections": 97,
     "max_depth": 6,
     "skipped": 8
   },
@@ -20,19 +20,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "b0e819af564bfb64",
+  "fingerprint": "3857492f542bcef6",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 626,
+    "pages": 643,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 48,
+        "pages": 61,
         "children": [
           {
             "type": "page",
@@ -46,7 +46,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 42,
+            "pages": 52,
             "children": [
               {
                 "type": "page",
@@ -72,14 +72,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 39,
+                "pages": 49,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 39,
+                    "pages": 49,
                     "children": [
                       {
                         "type": "page",
@@ -94,6 +94,20 @@
                         "path": "zer0-mistakes/test/visual/evidence/book-abc/README.md",
                         "rel": "test/visual/evidence/book-abc/README.md",
                         "folder": "test/visual/evidence/book-abc"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Dangling aria-controls (#373)",
+                        "path": "zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md",
+                        "rel": "test/visual/evidence/dangling-aria-controls/README.md",
+                        "folder": "test/visual/evidence/dangling-aria-controls"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Developer doc banners (#375)",
+                        "path": "zer0-mistakes/test/visual/evidence/developer-doc-banners/README.md",
+                        "rel": "test/visual/evidence/developer-doc-banners/README.md",
+                        "folder": "test/visual/evidence/developer-doc-banners"
                       },
                       {
                         "type": "page",
@@ -188,10 +202,24 @@
                       },
                       {
                         "type": "page",
+                        "title": "Evidence \u2014 footer in-page toggles are <button>, not <a href=\"#\"> (issue\u2026",
+                        "path": "zer0-mistakes/test/visual/evidence/footer-button-semantics/README.md",
+                        "rel": "test/visual/evidence/footer-button-semantics/README.md",
+                        "folder": "test/visual/evidence/footer-button-semantics"
+                      },
+                      {
+                        "type": "page",
                         "title": "Evidence \u2014 Giscus comments gate fix (PR #214, issue #201)",
                         "path": "zer0-mistakes/test/visual/evidence/giscus-comments/README.md",
                         "rel": "test/visual/evidence/giscus-comments/README.md",
                         "folder": "test/visual/evidence/giscus-comments"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence \u2014 icon-only language trigger and a compact, positive menu\u2026",
+                        "path": "zer0-mistakes/test/visual/evidence/language-menu/README.md",
+                        "rel": "test/visual/evidence/language-menu/README.md",
+                        "folder": "test/visual/evidence/language-menu"
                       },
                       {
                         "type": "page",
@@ -220,6 +248,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/language-toggle-fr/README.md",
                         "rel": "test/visual/evidence/language-toggle-fr/README.md",
                         "folder": "test/visual/evidence/language-toggle-fr"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence \u2014 Mermaid diagram figures (ZER0-013)",
+                        "path": "zer0-mistakes/test/visual/evidence/mermaid/README.md",
+                        "rel": "test/visual/evidence/mermaid/README.md",
+                        "folder": "test/visual/evidence/mermaid"
                       },
                       {
                         "type": "page",
@@ -314,6 +349,13 @@
                       },
                       {
                         "type": "page",
+                        "title": "Evidence \u2014 setup wizard Back/Next stay put (#408, PR #432)",
+                        "path": "zer0-mistakes/test/visual/evidence/setup-wizard-nav-alignment/README.md",
+                        "rel": "test/visual/evidence/setup-wizard-nav-alignment/README.md",
+                        "folder": "test/visual/evidence/setup-wizard-nav-alignment"
+                      },
+                      {
+                        "type": "page",
                         "title": "Evidence \u2014 showhero front-matter flag opts standard posts into the\u2026",
                         "path": "zer0-mistakes/test/visual/evidence/show-hero/README.md",
                         "rel": "test/visual/evidence/show-hero/README.md",
@@ -335,6 +377,27 @@
                       },
                       {
                         "type": "page",
+                        "title": "Evidence \u2014 the Claude-guided Site Builder (ZER0-086, extends ZER0-067)",
+                        "path": "zer0-mistakes/test/visual/evidence/site-builder/README.md",
+                        "rel": "test/visual/evidence/site-builder/README.md",
+                        "folder": "test/visual/evidence/site-builder"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence \u2014 TOC scroll spy tracks the section being read",
+                        "path": "zer0-mistakes/test/visual/evidence/scroll-spy/README.md",
+                        "rel": "test/visual/evidence/scroll-spy/README.md",
+                        "folder": "test/visual/evidence/scroll-spy"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Heading-level skips (#436)",
+                        "path": "zer0-mistakes/test/visual/evidence/heading-level-skips/README.md",
+                        "rel": "test/visual/evidence/heading-level-skips/README.md",
+                        "folder": "test/visual/evidence/heading-level-skips"
+                      },
+                      {
+                        "type": "page",
                         "title": "Mobile navigation panel collapsed to a 60px sliver",
                         "path": "zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md",
                         "rel": "test/visual/evidence/mobile-nav-containing-block/README.md",
@@ -353,6 +416,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/section-topic-filter/README.md",
                         "rel": "test/visual/evidence/section-topic-filter/README.md",
                         "folder": "test/visual/evidence/section-topic-filter"
+                      },
+                      {
+                        "type": "page",
+                        "title": "theme-color (#281)",
+                        "path": "zer0-mistakes/test/visual/evidence/theme-color-surface/README.md",
+                        "rel": "test/visual/evidence/theme-color-surface/README.md",
+                        "folder": "test/visual/evidence/theme-color-surface"
                       }
                     ]
                   }
@@ -365,7 +435,7 @@
             "title": "Gem Automation Scripts",
             "rel": "scripts",
             "index": "zer0-mistakes/scripts/README.md",
-            "pages": 5,
+            "pages": 8,
             "children": [
               {
                 "type": "page",
@@ -373,6 +443,45 @@
                 "path": "zer0-mistakes/scripts/README.md",
                 "rel": "scripts/README.md",
                 "is_index": true
+              },
+              {
+                "type": "section",
+                "title": "Release Script Libraries",
+                "rel": "scripts/lib",
+                "index": "zer0-mistakes/scripts/lib/README.md",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Release Script Libraries",
+                    "path": "zer0-mistakes/scripts/lib/README.md",
+                    "rel": "scripts/lib/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "section",
+                    "title": "scripts/lib/install/ \u2014 Installer Library Modules",
+                    "rel": "scripts/lib/install",
+                    "index": "zer0-mistakes/scripts/lib/install/README.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "scripts/lib/install/ \u2014 Installer Library Modules",
+                        "path": "zer0-mistakes/scripts/lib/install/README.md",
+                        "rel": "scripts/lib/install/README.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "scripts/lib/install/deploy/",
+                        "path": "zer0-mistakes/scripts/lib/install/deploy/README.md",
+                        "rel": "scripts/lib/install/deploy/README.md",
+                        "folder": "scripts/lib/install/deploy"
+                      }
+                    ]
+                  }
+                ]
               },
               {
                 "type": "section",
@@ -1834,7 +1943,7 @@
         "type": "section",
         "title": "Fran\u00e7ais",
         "rel": "fr",
-        "pages": 166,
+        "pages": 168,
         "children": [
           {
             "type": "section",
@@ -2053,7 +2162,7 @@
             "title": "Documentation",
             "rel": "fr/docs",
             "index": "zer0-mistakes/fr/docs/index.md",
-            "pages": 92,
+            "pages": 93,
             "children": [
               {
                 "type": "page",
@@ -2293,7 +2402,7 @@
                 "title": "Fonctionnalit\u00e9s",
                 "rel": "fr/docs/features",
                 "index": "zer0-mistakes/fr/docs/features/index.md",
-                "pages": 32,
+                "pages": 33,
                 "children": [
                   {
                     "type": "page",
@@ -2361,6 +2470,12 @@
                     "title": "Bouton Retour en haut",
                     "path": "zer0-mistakes/fr/docs/features/back-to-top.md",
                     "rel": "fr/docs/features/back-to-top.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Collection Cookbook",
+                    "path": "zer0-mistakes/fr/docs/features/cookbook-collection.md",
+                    "rel": "fr/docs/features/cookbook-collection.md"
                   },
                   {
                     "type": "page",
@@ -2796,7 +2911,7 @@
             "type": "section",
             "title": "Posts",
             "rel": "fr/posts",
-            "pages": 37,
+            "pages": 38,
             "children": [
               {
                 "type": "page",
@@ -3012,7 +3127,7 @@
                 "type": "section",
                 "title": "Tutorial",
                 "rel": "fr/posts/tutorial",
-                "pages": 4,
+                "pages": 5,
                 "children": [
                   {
                     "type": "page",
@@ -3038,6 +3153,12 @@
                     "title": "2026 04 28 Responsive Documentation Card Grid",
                     "path": "zer0-mistakes/fr/posts/tutorial/2026-04-28-responsive-documentation-card-grid.md",
                     "rel": "fr/posts/tutorial/2026-04-28-responsive-documentation-card-grid.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "on the server, once",
+                    "path": "zer0-mistakes/fr/posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md",
+                    "rel": "fr/posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md"
                   }
                 ]
               },
@@ -3112,7 +3233,7 @@
         "type": "section",
         "title": "Pages",
         "rel": "pages",
-        "pages": 212,
+        "pages": 214,
         "children": [
           {
             "type": "page",
@@ -3890,7 +4011,7 @@
             "title": "Quick Start Guide",
             "rel": "pages/_quickstart",
             "index": "zer0-mistakes/pages/_quickstart/index.md",
-            "pages": 7,
+            "pages": 8,
             "children": [
               {
                 "type": "page",
@@ -3901,7 +4022,7 @@
               },
               {
                 "type": "page",
-                "title": "GitHub Setup & Deployment",
+                "title": "GitHub Setup",
                 "path": "zer0-mistakes/pages/_quickstart/github-setup.md",
                 "rel": "pages/_quickstart/github-setup.md"
               },
@@ -3925,15 +4046,21 @@
               },
               {
                 "type": "page",
-                "title": "Winget Setup",
-                "path": "zer0-mistakes/pages/_quickstart/winget.md",
-                "rel": "pages/_quickstart/winget.md"
+                "title": "Site Builder",
+                "path": "zer0-mistakes/pages/_quickstart/site-builder.md",
+                "rel": "pages/_quickstart/site-builder.md"
               },
               {
                 "type": "page",
-                "title": "\ud83c\udfa8 Site Personalization & Configuration",
+                "title": "Site Personalization & Configuration",
                 "path": "zer0-mistakes/pages/_quickstart/personalization.md",
                 "rel": "pages/_quickstart/personalization.md"
+              },
+              {
+                "type": "page",
+                "title": "Winget Setup",
+                "path": "zer0-mistakes/pages/_quickstart/winget.md",
+                "rel": "pages/_quickstart/winget.md"
               }
             ]
           },
@@ -3942,7 +4069,7 @@
             "title": "Zer0-Mistakes Documentation",
             "rel": "pages/_docs",
             "index": "zer0-mistakes/pages/_docs/index.md",
-            "pages": 103,
+            "pages": 104,
             "children": [
               {
                 "type": "page",
@@ -4228,7 +4355,7 @@
                 "title": "Features",
                 "rel": "pages/_docs/features",
                 "index": "zer0-mistakes/pages/_docs/features/index.md",
-                "pages": 33,
+                "pages": 34,
                 "children": [
                   {
                     "type": "page",
@@ -4359,7 +4486,7 @@
                   },
                   {
                     "type": "page",
-                    "title": "Mermaid Diagrams",
+                    "title": "Mermaid Diagrams for Jekyll Sites",
                     "path": "zer0-mistakes/pages/_docs/features/mermaid-diagrams.md",
                     "rel": "pages/_docs/features/mermaid-diagrams.md"
                   },
@@ -4386,6 +4513,12 @@
                     "title": "PostHog Analytics",
                     "path": "zer0-mistakes/pages/_docs/features/posthog-analytics.md",
                     "rel": "pages/_docs/features/posthog-analytics.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Site Builder",
+                    "path": "zer0-mistakes/pages/_docs/features/site-builder.md",
+                    "rel": "pages/_docs/features/site-builder.md"
                   },
                   {
                     "type": "page",

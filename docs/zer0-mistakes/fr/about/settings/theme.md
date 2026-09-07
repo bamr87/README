@@ -2,7 +2,6 @@
 excerpt: Prévisualisez les skins du thème, générez des palettes, personnalisez les
   variables CSS et exportez la configuration YAML.
 icon: material/palette
-source_icon: bi-palette
 lang: fr
 lastmod: 2026-04-05 00:00:00+00:00
 layout: admin
@@ -10,6 +9,7 @@ machine_translated: true
 permalink: /fr/about/settings/theme/
 preview: /images/previews/theme-customizer.png
 source_file: theme.md
+source_icon: bi-palette
 title: Theme
 translated_from_sha: 227959a1fb26
 translation_of: pages/_about/settings/theme.md

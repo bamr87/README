@@ -6,7 +6,7 @@ description: Guide to the 70+ reusable include components organized by category 
   maximum flexibility.
 difficulty: intermediate
 estimated_reading_time: 20 minutes
-lastmod: 2026-06-16 00:00:00+00:00
+lastmod: 2026-09-03 00:00:00+00:00
 layout: default
 permalink: /docs/customization/includes/
 preview: /images/previews/include-components.png
@@ -84,6 +84,7 @@ _includes/
 | `components/mermaid.html` | Mermaid diagram loader |
 | `components/post-card.html` | Blog post card |
 | `components/preview-image.html` | Preview image handler |
+| `components/background-image.html` | Cover art as a CSS background, with `role="img"` + `aria-label` or `aria-hidden` |
 | `components/search-modal.html` | Search modal |
 | `components/searchbar.html` | Deprecated Algolia-style search stub (use `search-modal.html`) |
 | `components/theme-info.html` | Theme version modal |
@@ -329,4 +330,4 @@ For contributor-level details (component API reference, include parameters, exte
 
 - [[Customization]]
 - [[Layouts]]
-- [[Bootstrap Integration]]
+- [[Bootstrap 5 Integration in Zer0-Mistakes|Bootstrap 5 Integration]]

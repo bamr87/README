@@ -3,13 +3,13 @@ config-dir: pages/_about/settings
 config-file: _config.yml
 excerpt: View, manage, and update your Jekyll theme configuration from one place.
 icon: material/cog
-source_icon: bi-gear
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/config/
 preview: /images/previews/configuration-utility.png
 sidebar: false
 source_file: config.md
+source_icon: bi-gear
 title: Wraps the copy in Liquid raw markers so config comments that mention
 ---
 {% comment %}

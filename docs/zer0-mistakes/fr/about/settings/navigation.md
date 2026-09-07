@@ -1,7 +1,6 @@
 ---
 excerpt: Afficher et exporter les structures des menus de navigation.
 icon: material/sign-direction
-source_icon: bi-signpost-2
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
@@ -9,6 +8,7 @@ machine_translated: true
 permalink: /fr/about/settings/navigation/
 preview: /images/previews/navigation-editor.png
 source_file: navigation.md
+source_icon: bi-signpost-2
 title: Navigation
 translated_from_sha: b10d3f9a2491
 translation_of: pages/_about/settings/navigation.md

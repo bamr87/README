@@ -5,11 +5,11 @@ description: The zer0-mistakes design system, live — tokens, foundation specim
   component twins, and the Claude Design round-trip that keeps them in lockstep with
   the theme.
 icon: material/palette-outline
-source_icon: bi-palette2
 lastmod: 2026-08-14 00:00:00+00:00
 layout: default
 permalink: /design/
 source_file: design.md
+source_icon: bi-palette2
 tags:
 - design-system
 - tokens

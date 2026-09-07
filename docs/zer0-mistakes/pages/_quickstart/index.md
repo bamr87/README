@@ -3,17 +3,16 @@ author: Zer0-Mistakes Development Team
 categories:
 - Documentation
 - Quick Start
+date: 2025-07-01 00:00:00+00:00
 description: Complete setup guide for the Zer0-Mistakes Jekyll theme featuring Docker-first
-  development, AI-powered installation, and cross-platform compatibility
+  development, AI-powered installation, and cross-platform compatibility.
 keywords:
-  primary:
-  - jekyll theme setup
-  - docker development
-  secondary:
-  - ai installation
-  - cross-platform
-  - bootstrap 5
-lastmod: 2026-06-15 00:00:00+00:00
+- jekyll theme setup
+- docker development
+- ai installation
+- cross-platform
+- bootstrap 5
+lastmod: 2026-09-05 00:00:00+00:00
 layout: default
 mermaid: true
 permalink: /quickstart/
@@ -41,7 +40,7 @@ flowchart TD
     B --> E[Add theme to existing repo]
     B --> F[Zero-install / cloud]
 
-    C --> C1["Option A: Install wizard\ncurl … | bash + docker-compose up"]
+    C --> C1["Option A: Install wizard\ncurl … | bash + docker compose up"]
     C --> C2["Option B: GitHub Template\ngh repo create --template"]
     D --> D1["Option D: Fork/Clone\ngh repo fork + fork-cleanup.sh"]
     E --> E1["Option E: Remote theme\nremote_theme: bamr87/zer0-mistakes"]
@@ -49,17 +48,19 @@ flowchart TD
     F --> F1["Option C: Codespaces\nOne click, browser-based"]
 ```
 
-## ⚡ Fastest Start (1 Command) {#fastest-start-1-command}
+## Fastest Start (1 command) {#fastest-start-1-command}
 
 ```bash
 mkdir my-site && cd my-site
 curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.sh | bash
-docker-compose up
+docker compose up
 ```
 
 Your site will be live at `http://localhost:4000`.
 
 ![Install wizard running in terminal](/assets/images/quickstart/install-oneliner.png)
+
+Prefer a browser over a terminal? The **[Site Builder](/quickstart/site-builder/)** walks you through the same result step by step, with Claude checking your machine, drafting your configuration and content, and starting Docker for you.
 
 ## What You Get
 
@@ -85,20 +86,20 @@ Your site will be live at `http://localhost:4000`.
 ```bash
 mkdir my-site && cd my-site
 curl -fsSL https://raw.githubusercontent.com/bamr87/zer0-mistakes/main/install.sh | bash
-docker-compose up
+docker compose up
 ```
 
 ### Option B — GitHub Template
 
 1. Go to [github.com/bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 2. Click **Use this template** → **Create a new repository**
-3. Clone your new repo and run `docker-compose up`
+3. Clone your new repo and run `docker compose up`
 
 Or via CLI:
 
 ```bash
 gh repo create my-site --template bamr87/zer0-mistakes --clone
-cd my-site && docker-compose up
+cd my-site && docker compose up
 ```
 
 ### Option C — GitHub Codespaces
@@ -115,12 +116,12 @@ Fork into `<your-username>.github.io` to get your own GitHub Pages site:
 gh repo fork bamr87/zer0-mistakes --clone
 cd zer0-mistakes
 ./scripts/fork-cleanup.sh   # interactive config wizard
-docker-compose up
+docker compose up
 ```
 
 Enable Pages: **Settings → Pages → Branch: main → Save**.
 
-See [docs/FORKING.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md) for the full fork → configure → personalize guide.
+See [docs/installation/forking.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md) for the full fork → configure → personalize guide.
 
 ### Option E — Remote Theme
 
@@ -153,6 +154,7 @@ bundle install && bundle exec jekyll serve
 
 | Guide | Purpose | Time | Difficulty |
 |-------|---------|------|------------|
+| **[Site Builder](/quickstart/site-builder/)** | Guided wizard with Claude: prerequisites → configuration → running site | 15 min | Beginner |
 | **[Machine Setup](/quickstart/machine-setup/)** | Install Docker, Git, GitHub CLI | 10 min | Beginner |
 | **[Jekyll Setup](/quickstart/jekyll-setup/)** | Run the dev server, create content | 5 min | Beginner |
 | **[GitHub Setup](/quickstart/github-setup/)** | Fork, deploy to GitHub Pages | 10 min | Intermediate |
@@ -164,25 +166,25 @@ bundle install && bundle exec jekyll serve
 
 ```bash
 lsof -i :4000          # see what's running
-docker-compose down    # stop any existing containers
-docker-compose up      # restart
+docker compose down    # stop any existing containers
+docker compose up      # restart
 ```
 
 **Docker platform warnings (Apple Silicon)**
 
-This is expected — `docker-compose.yml` already sets `platform: linux/amd64`. The site works normally.
+No `platform:` pin is set — Docker builds your native architecture by default, which is what you want. Forcing `linux/amd64` runs the image under QEMU emulation and costs 3–10× on installs and native gem builds. If a third-party tool prints this warning, it is safe to ignore. Export `DOCKER_DEFAULT_PLATFORM=linux/amd64` only when you need explicit x86 parity with production.
 
 **Jekyll build errors**
 
 ```bash
-docker-compose exec jekyll bundle exec jekyll doctor
-docker-compose exec jekyll bundle exec jekyll build --trace
+docker compose exec jekyll bundle exec jekyll doctor
+docker compose exec jekyll bundle exec jekyll build --trace
 ```
 
 **Validate your setup:**
 
 ```bash
-docker-compose exec -T jekyll bundle exec jekyll build \
+docker compose exec -T jekyll bundle exec jekyll build \
   --config '_config.yml,_config_dev.yml'
 ```
 

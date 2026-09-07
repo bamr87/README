@@ -5,13 +5,13 @@ description: Le design system zer0-mistakes, en direct — tokens, spécimens de
   jumeaux de composants et l'aller-retour Claude Design qui les maintient synchronisés
   avec le thème.
 icon: material/palette-outline
-source_icon: bi-palette2
 lang: fr
 lastmod: 2026-08-14 00:00:00+00:00
 layout: default
 machine_translated: true
 permalink: /fr/design/
 source_file: design.md
+source_icon: bi-palette2
 tags:
 - design-system
 - tokens

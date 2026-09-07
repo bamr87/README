@@ -3,7 +3,8 @@ source_file: index.md
 title: Index
 ---
 ---
-layout: default listgames: true
+layout: default
+listgames: true
 title: [RELEASED] Monxla (HES2012)
 ---
 

@@ -5,7 +5,9 @@ level: 1
 source_file: blacksun1.md
 title: Blacksun1
 ---
-Level1 is a trivial stack buffer overflow. Note that you'll probably find it easier to use the compiled version than compiling it from source.
+Level1 is a trivial stack buffer overflow. Note that you'll probably
+find it easier to use the compiled version than compiling it from
+source.
 
 ### Binary information
 

@@ -2,7 +2,6 @@
 admin_section: Theme Customizer
 excerpt: Aperçu des composants et exemples du thème Bootstrap 5.
 icon: material/palette
-source_icon: bi-palette
 lang: fr
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
@@ -11,6 +10,7 @@ permalink: /fr/about/theme/
 preview: /images/previews/bootstrap-theme-examples.png
 source: https://getbootstrap.com/docs/5.3/examples/cheatsheet/
 source_file: theme.md
+source_icon: bi-palette
 title: Theme
 translated_from_sha: f1e267f28ce1
 translation_of: pages/_about/theme.md

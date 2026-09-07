@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1121,
-    "fingerprint": "7f3b30fb94702328",
+    "file_count": 1148,
+    "fingerprint": "b1cff06d87e32cf7",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 13832461
+    "total_bytes": 14232991
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/it-journey.md",
-    "fingerprint": "50565621728ed44b",
+    "fingerprint": "0240908e0eb4653d",
     "index": "it-journey/index.md",
     "max_depth": 7,
-    "pages": 908,
+    "pages": 920,
     "present": true,
     "sections": 93,
-    "skipped": 16,
+    "skipped": 17,
     "title": "IT Journey",
     "top_sections": [
       {
         "index": "it-journey/redirects/README.md",
-        "pages": 223,
+        "pages": 229,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -68,7 +68,7 @@
       },
       {
         "index": "it-journey/pages/home.md",
-        "pages": 628,
+        "pages": 634,
         "path": "pages",
         "title": "Home",
         "type": "section"
@@ -100,7 +100,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1122
+      "it-journey": 1148
     },
     "code_languages": [
       "bash",
@@ -112,25 +112,25 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1122,
+    "indexed_documents": 1148,
     "top_tags": [
       "main_quest",
-      "gamified-learning",
       "walkthrough",
       "quest-perfection",
+      "gamified-learning",
       "hands-on",
       "warn",
       "jekyll",
       "fail",
-      "automation",
-      "devops",
       "level-0001",
       "web-fundamentals",
+      "automation",
+      "devops",
       "gh-600",
       "agentic-ai",
       "ci-cd"
     ],
-    "total_words": 1755113
+    "total_words": 1810269
   },
   "schema_version": "1.0",
   "signals": {
@@ -157,15 +157,15 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 629,
+        "doc_count": 635,
         "name": "pages"
       },
       {
-        "doc_count": 143,
+        "doc_count": 149,
         "name": "test"
       },
       {
-        "doc_count": 111,
+        "doc_count": 125,
         "name": ".cms"
       },
       {

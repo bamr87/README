@@ -5,7 +5,7 @@ categories:
 date: 2026-05-31 20:54:58+00:00
 description: 'The public JavaScript API of Zer0-Mistakes: the navigation, background,
   and UI surfaces intended for consumers, plus their stability expectations.'
-lastmod: 2026-05-31 20:54:58+00:00
+lastmod: 2026-09-05 00:00:00+00:00
 source_file: js-api.md
 tags:
 - ui
@@ -171,7 +171,8 @@ These are page-scoped; they do not expose a global namespace.
 import { config, isBelowBreakpoint, syncBreakpointsFromCss } from './config.js';
 
 config.selectors.toc;                    // '#TableOfContents'
-config.scrollSpy.rootMargin;             // '-80px 0px -80px 0px'
+config.scrollSpy.offset;                 // null → derive from scroll-padding-top
+config.scrollSpy.tolerance;              // 4 (px slack at the reading line)
 config.keyboard.keys.search;             // '/'
 config.breakpoints.lg;                   // 992
 

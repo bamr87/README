@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 705,
-    "fingerprint": "98598caa36af12d8",
+    "file_count": 723,
+    "fingerprint": "467438bac759f757",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4569972
+    "total_bytes": 4798975
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "b0e819af564bfb64",
+    "fingerprint": "3857492f542bcef6",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 626,
+    "pages": 643,
     "present": true,
-    "sections": 95,
+    "sections": 97,
     "skipped": 8,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 48,
+        "pages": 61,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -82,7 +82,7 @@
       },
       {
         "index": null,
-        "pages": 166,
+        "pages": 168,
         "path": "fr",
         "title": "Fran\u00e7ais",
         "type": "section"
@@ -96,7 +96,7 @@
       },
       {
         "index": null,
-        "pages": 212,
+        "pages": 214,
         "path": "pages",
         "title": "Pages",
         "type": "section"
@@ -128,7 +128,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 708
+      "zer0-mistakes": 723
     },
     "code_languages": [
       "bash",
@@ -140,25 +140,25 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 708,
+    "indexed_documents": 723,
     "top_tags": [
       "jekyll",
-      "automation",
       "docker",
+      "automation",
       "navigation",
       "ui",
       "documentation",
+      "ai",
       "development",
       "github-pages",
-      "ai",
-      "bootstrap",
       "setup",
+      "bootstrap",
       "deployment",
       "theme",
       "accessibility",
       "installation"
     ],
-    "total_words": 551352
+    "total_words": 582784
   },
   "schema_version": "1.0",
   "signals": {
@@ -181,11 +181,11 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 214,
+        "doc_count": 216,
         "name": "pages"
       },
       {
-        "doc_count": 166,
+        "doc_count": 168,
         "name": "fr"
       },
       {
@@ -197,15 +197,15 @@
         "name": "examples"
       },
       {
+        "doc_count": 52,
+        "name": "test"
+      },
+      {
         "doc_count": 45,
         "name": ".github"
       },
       {
-        "doc_count": 42,
-        "name": "test"
-      },
-      {
-        "doc_count": 19,
+        "doc_count": 20,
         "name": ".claude"
       },
       {

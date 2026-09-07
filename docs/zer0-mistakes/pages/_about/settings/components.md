@@ -3,12 +3,12 @@ admin_section: Component Showcase
 excerpt: Live gallery of the reusable Bootstrap 5 component patterns rendered by the
   component-showcase include.
 icon: material/view-grid
-source_icon: bi-grid-3x3-gap
 lastmod: 2026-06-26 00:00:00+00:00
 layout: admin
 permalink: /about/settings/components/
 preview: /images/previews/theme-preview.png
 source_file: components.md
+source_icon: bi-grid-3x3-gap
 title: Components
 ---
 <p class="text-body-secondary">

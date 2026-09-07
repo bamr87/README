@@ -9,18 +9,20 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **626 pages** across **95 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **643 pages** across **97 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(48)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(61)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(42)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(52)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(39)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(39)</small>
+    - **Visual** <small>(49)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(49)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [book-abc layout — visual evidence (ZER0-081)](../zer0-mistakes/test/visual/evidence/book-abc/README.md)
+        - [Dangling aria-controls (#373)](../zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md)
+        - [Developer doc banners (#375)](../zer0-mistakes/test/visual/evidence/developer-doc-banners/README.md)
         - [Evidence — /authors/ breadcrumb is existence-gated (issue #204)](../zer0-mistakes/test/visual/evidence/authors-breadcrumb/README.md)
         - [Evidence — author avatars never render protocol-relative //assets/……](../zer0-mistakes/test/visual/evidence/author-avatar-url/README.md)
         - [Evidence — books collection (ZER0-080)](../zer0-mistakes/test/visual/evidence/books-collection/README.md)
@@ -34,11 +36,14 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — feature card HTML-escape fix (ZER0-061 card swallowing)](../zer0-mistakes/test/visual/evidence/features-card-escape/README.md)
         - [Evidence — feature registry provenance on /features/ (PR B)](../zer0-mistakes/test/visual/evidence/features-provenance/README.md)
         - [Evidence — foldable Obsidian callouts are accessible disclosures (PR…](../zer0-mistakes/test/visual/evidence/obsidian-callouts/README.md)
+        - [Evidence — footer in-page toggles are <button>, not <a href="#"> (issue…](../zer0-mistakes/test/visual/evidence/footer-button-semantics/README.md)
         - [Evidence — Giscus comments gate fix (PR #214, issue #201)](../zer0-mistakes/test/visual/evidence/giscus-comments/README.md)
+        - [Evidence — icon-only language trigger and a compact, positive menu…](../zer0-mistakes/test/visual/evidence/language-menu/README.md)
         - [Evidence — intro hero banner applies relativeurl exactly once (issue…](../zer0-mistakes/test/visual/evidence/intro-banner-baseurl/README.md)
         - [Evidence — language toggle in the navbar (ZER0-078)](../zer0-mistakes/test/visual/evidence/language-toggle/README.md)
         - [Evidence — left-side FAB stack (no overlap)](../zer0-mistakes/test/visual/evidence/fab-stack/README.md)
         - [Evidence — machine-generated French page (ZER0-078)](../zer0-mistakes/test/visual/evidence/language-toggle-fr/README.md)
+        - [Evidence — Mermaid diagram figures (ZER0-013)](../zer0-mistakes/test/visual/evidence/mermaid/README.md)
         - [Evidence — mobile overlay stacking fix (.zer0-bg-body)](../zer0-mistakes/test/visual/evidence/mobile-overlay-stacking/README.md)
         - [Evidence — nav: pages builds the sidebar tree from page URLs (no data…](../zer0-mistakes/test/visual/evidence/sidebar-page-tree/README.md)
         - [Evidence — navbar fit, full-bleed bar, and Settings stacking](../zer0-mistakes/test/visual/evidence/navbar-fit/README.md)
@@ -52,14 +57,24 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — search-modal form action existence-gate (issue #202)](../zer0-mistakes/test/visual/evidence/sitemap-action-gate/README.md)
         - [Evidence — section sidebar topic controls](../zer0-mistakes/test/visual/evidence/section-topic-controls/README.md)
         - [Evidence — settings panel rebuild (Appearance / Site / Developer)](../zer0-mistakes/test/visual/evidence/settings-panel/README.md)
+        - [Evidence — setup wizard Back/Next stay put (#408, PR #432)](../zer0-mistakes/test/visual/evidence/setup-wizard-nav-alignment/README.md)
         - [Evidence — showhero front-matter flag opts standard posts into the…](../zer0-mistakes/test/visual/evidence/show-hero/README.md)
         - [Evidence — sidebar nav-tree marks only the current page active (not…](../zer0-mistakes/test/visual/evidence/nav-tree-active/README.md)
         - [Evidence — SoftwareApplication JSON-LD is now opt-in (2026-08 fleet…](../zer0-mistakes/test/visual/evidence/jsonld-software-optin/README.md)
+        - [Evidence — the Claude-guided Site Builder (ZER0-086, extends ZER0-067)](../zer0-mistakes/test/visual/evidence/site-builder/README.md)
+        - [Evidence — TOC scroll spy tracks the section being read](../zer0-mistakes/test/visual/evidence/scroll-spy/README.md)
+        - [Heading-level skips (#436)](../zer0-mistakes/test/visual/evidence/heading-level-skips/README.md)
         - [Mobile navigation panel collapsed to a 60px sliver](../zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md)
         - [Mobile responsive audit — evidence](../zer0-mistakes/test/visual/evidence/mobile-responsive/README.md)
         - [Section topic filter — whole-tag matching](../zer0-mistakes/test/visual/evidence/section-topic-filter/README.md)
-  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(5)</small>
+        - [theme-color (#281)](../zer0-mistakes/test/visual/evidence/theme-color-surface/README.md)
+  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(8)</small>
     - [Gem Automation Scripts](../zer0-mistakes/scripts/README.md)
+    - **[Release Script Libraries](../zer0-mistakes/scripts/lib/README.md)** <small>(3)</small>
+      - [Release Script Libraries](../zer0-mistakes/scripts/lib/README.md)
+      - **[scripts/lib/install/ — Installer Library Modules](../zer0-mistakes/scripts/lib/install/README.md)** <small>(2)</small>
+        - [scripts/lib/install/ — Installer Library Modules](../zer0-mistakes/scripts/lib/install/README.md)
+        - [scripts/lib/install/deploy/](../zer0-mistakes/scripts/lib/install/deploy/README.md)
     - **[scripts/install/ — Modular Installer v2](../zer0-mistakes/scripts/install/README.md)** <small>(4)</small>
       - [scripts/install/ — Modular Installer v2](../zer0-mistakes/scripts/install/README.md)
       - **AI** <small>(3)</small>
@@ -281,7 +296,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
           - [08-lestrygonians › 096 0 Lestrygonians Wip](../zer0-mistakes/examples/swerve-of-shore/pages/_series/ulysses/08-lestrygonians/096-0-lestrygonians-wip.md)
           - [09-scylla-and-charybdis › 097 0 11 Scylla Charybdis](../zer0-mistakes/examples/swerve-of-shore/pages/_series/ulysses/09-scylla-and-charybdis/097-0-11-scylla-charybdis.md)
           - [10-wandering-rocks › 098 0 The Wandering Rocks Wip](../zer0-mistakes/examples/swerve-of-shore/pages/_series/ulysses/10-wandering-rocks/098-0-the-wandering-rocks-wip.md)
-- **Français** <small>(166)</small>
+- **Français** <small>(168)</small>
   - **[1. AI-powered one-line install (creates a new site in ./my-site)](../zer0-mistakes/fr/about/index.md)** <small>(27)</small>
     - [1. AI-powered one-line install (creates a new site in ./my-site)](../zer0-mistakes/fr/about/index.md)
     - [Amr Abdel-Motaleb](../zer0-mistakes/fr/about/profile/bamr87.md)
@@ -313,7 +328,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Semantic versioning with validation (comprehensive-gem-automation-system)](../zer0-mistakes/fr/about/features/comprehensive-gem-automation-system.md)
       - [🗺️ Fonctionnalité de plan de site amélioré](../zer0-mistakes/fr/about/features/sitemap.md)
       - [🤖 Développement assisté par IA avec Zer0-Mistakes](../zer0-mistakes/fr/about/features/ai-development-guide.md)
-  - **[Documentation](../zer0-mistakes/fr/docs/index.md)** <small>(92)</small>
+  - **[Documentation](../zer0-mistakes/fr/docs/index.md)** <small>(93)</small>
     - [Documentation Zer0-Mistakes](../zer0-mistakes/fr/docs/index.md)
     - [Dépannage](../zer0-mistakes/fr/docs/troubleshooting.md)
     - [Développement avec Docker](../zer0-mistakes/fr/docs/docker/index.md)
@@ -350,7 +365,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Déployer sur Netlify](../zer0-mistakes/fr/docs/deployment/netlify.md)
       - [Liste de vérification pour le consommateur de Remote-Theme](../zer0-mistakes/fr/docs/deployment/remote-theme-checklist.md)
       - [Superposition de build en mode sécurisé](../zer0-mistakes/fr/docs/deployment/build-overlay.md)
-    - **[Fonctionnalités](../zer0-mistakes/fr/docs/features/index.md)** <small>(32)</small>
+    - **[Fonctionnalités](../zer0-mistakes/fr/docs/features/index.md)** <small>(33)</small>
       - [Fonctionnalités](../zer0-mistakes/fr/docs/features/index.md)
       - [404 intelligente et détection de la configuration du site](../zer0-mistakes/fr/docs/features/smart-404.md)
       - [Analytics PostHog](../zer0-mistakes/fr/docs/features/posthog-analytics.md)
@@ -362,6 +377,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Bouton d'action flottant du sommaire mobile](../zer0-mistakes/fr/docs/features/mobile-toc.md)
       - [Bouton de copie de code](../zer0-mistakes/fr/docs/features/code-copy.md)
       - [Bouton Retour en haut](../zer0-mistakes/fr/docs/features/back-to-top.md)
+      - [Collection Cookbook](../zer0-mistakes/fr/docs/features/cookbook-collection.md)
       - [Collection Livres](../zer0-mistakes/fr/docs/features/book-collection.md)
       - [Commentaires Giscus](../zer0-mistakes/fr/docs/features/giscus-comments.md)
       - [Diagrammes Mermaid](../zer0-mistakes/fr/docs/features/mermaid-diagrams.md)
@@ -428,7 +444,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
     - [Initialize a new repository](../zer0-mistakes/fr/notes/git-cheatsheet.md)
     - [Run container from image](../zer0-mistakes/fr/notes/docker-commands.md)
     - [Use arrow keys + Ctrl for word jumping](../zer0-mistakes/fr/notes/bash-shortcuts.md)
-  - **Posts** <small>(37)</small>
+  - **Posts** <small>(38)</small>
     - [2025 01 01 Getting Started Jekyll](../zer0-mistakes/fr/posts/2025-01-01-getting-started-jekyll.md)
     - [2025 01 05 Web Accessibility Guide](../zer0-mistakes/fr/posts/2025-01-05-web-accessibility-guide.md)
     - [2025 01 10 Bootstrap 5 Components](../zer0-mistakes/fr/posts/2025-01-10-bootstrap-5-components.md)
@@ -462,11 +478,12 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [2026 04 28 Building Ai Ready Knowledge Base](../zer0-mistakes/fr/posts/technology/2026-04-28-building-ai-ready-knowledge-base.md)
       - [2026 04 28 Edge Ai Practical Patterns](../zer0-mistakes/fr/posts/technology/2026-04-28-edge-ai-practical-patterns.md)
       - [Just write a comment describing what you want](../zer0-mistakes/fr/posts/technology/2025-01-25-ai-tools-productivity.md)
-    - **Tutorial** <small>(4)</small>
+    - **Tutorial** <small>(5)</small>
       - [2000 01 01 Index](../zer0-mistakes/fr/posts/tutorial/2000-01-01-index.md)
       - [2025 01 23 Css Grid Mastery](../zer0-mistakes/fr/posts/tutorial/2025-01-23-css-grid-mastery.md)
       - [2026 04 28 Accessible Form Patterns](../zer0-mistakes/fr/posts/tutorial/2026-04-28-accessible-form-patterns.md)
       - [2026 04 28 Responsive Documentation Card Grid](../zer0-mistakes/fr/posts/tutorial/2026-04-28-responsive-documentation-card-grid.md)
+      - [on the server, once](../zer0-mistakes/fr/posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md)
     - **World** <small>(4)</small>
       - [2000 01 01 Index](../zer0-mistakes/fr/posts/world/2000-01-01-index.md)
       - [2025 01 21 Remote Work Revolution](../zer0-mistakes/fr/posts/world/2025-01-21-remote-work-revolution.md)
@@ -476,7 +493,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
   - [\includes Directory Organization](../zer0-mistakes/_includes/README.md)
   - [Components](../zer0-mistakes/_includes/components/README.md)
   - [Statistics Layout Documentation](../zer0-mistakes/_includes/stats/README.md)
-- **Pages** <small>(212)</small>
+- **Pages** <small>(214)</small>
   - [Archives](../zer0-mistakes/pages/archives.md)
   - [Categories](../zer0-mistakes/pages/categories.md)
   - [Contact](../zer0-mistakes/pages/contact.md)
@@ -595,15 +612,16 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [2025 01 21 Remote Work Revolution](../zer0-mistakes/pages/_posts/world/2025-01-21-remote-work-revolution.md)
       - [2026 04 28 Local Resilience Networks](../zer0-mistakes/pages/_posts/world/2026-04-28-local-resilience-networks.md)
       - [2026 04 28 Urban Resilience Extreme Heat](../zer0-mistakes/pages/_posts/world/2026-04-28-urban-resilience-extreme-heat.md)
-  - **[Quick Start Guide](../zer0-mistakes/pages/_quickstart/index.md)** <small>(7)</small>
+  - **[Quick Start Guide](../zer0-mistakes/pages/_quickstart/index.md)** <small>(8)</small>
     - [Quick Start Guide](../zer0-mistakes/pages/_quickstart/index.md)
-    - [GitHub Setup & Deployment](../zer0-mistakes/pages/_quickstart/github-setup.md)
+    - [GitHub Setup](../zer0-mistakes/pages/_quickstart/github-setup.md)
     - [Homebrew Setup](../zer0-mistakes/pages/_quickstart/homebrew.md)
     - [Jekyll Setup](../zer0-mistakes/pages/_quickstart/jekyll-setup.md)
     - [Machine Setup](../zer0-mistakes/pages/_quickstart/machine-setup.md)
+    - [Site Builder](../zer0-mistakes/pages/_quickstart/site-builder.md)
+    - [Site Personalization & Configuration](../zer0-mistakes/pages/_quickstart/personalization.md)
     - [Winget Setup](../zer0-mistakes/pages/_quickstart/winget.md)
-    - [🎨 Site Personalization & Configuration](../zer0-mistakes/pages/_quickstart/personalization.md)
-  - **[Zer0-Mistakes Documentation](../zer0-mistakes/pages/_docs/index.md)** <small>(103)</small>
+  - **[Zer0-Mistakes Documentation](../zer0-mistakes/pages/_docs/index.md)** <small>(104)</small>
     - [Zer0-Mistakes Documentation](../zer0-mistakes/pages/_docs/index.md)
     - [Bootstrap 5.3.3 Integration](../zer0-mistakes/pages/_docs/bootstrap/index.md)
     - [Docker Development](../zer0-mistakes/pages/_docs/docker/index.md)
@@ -647,7 +665,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Deploy to Netlify](../zer0-mistakes/pages/_docs/deployment/netlify.md)
       - [Remote-Theme Consumer Checklist](../zer0-mistakes/pages/_docs/deployment/remote-theme-checklist.md)
       - [Safe-Mode Build Overlay](../zer0-mistakes/pages/_docs/deployment/build-overlay.md)
-    - **[Features](../zer0-mistakes/pages/_docs/features/index.md)** <small>(33)</small>
+    - **[Features](../zer0-mistakes/pages/_docs/features/index.md)** <small>(34)</small>
       - [Features](../zer0-mistakes/pages/_docs/features/index.md)
       - [Admin Layout & Configuration Dashboards](../zer0-mistakes/pages/_docs/features/admin-dashboard.md)
       - [AI Chat Assistant](../zer0-mistakes/pages/_docs/features/ai-chat-assistant.md)
@@ -669,11 +687,12 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Jupyter Notebook Integration](../zer0-mistakes/pages/_docs/features/jupyter-notebooks.md)
       - [Keyboard Navigation](../zer0-mistakes/pages/_docs/features/keyboard-navigation.md)
       - [MathJax Math](../zer0-mistakes/pages/_docs/features/mathjax-math.md)
-      - [Mermaid Diagrams](../zer0-mistakes/pages/_docs/features/mermaid-diagrams.md)
+      - [Mermaid Diagrams for Jekyll Sites](../zer0-mistakes/pages/_docs/features/mermaid-diagrams.md)
       - [Mobile TOC Floating Action Button](../zer0-mistakes/pages/_docs/features/mobile-toc.md)
       - [Page-tree sidebar (nav: pages)](../zer0-mistakes/pages/_docs/features/sidebar-page-tree.md)
       - [Particles Background](../zer0-mistakes/pages/_docs/features/particles-background.md)
       - [PostHog Analytics](../zer0-mistakes/pages/_docs/features/posthog-analytics.md)
+      - [Site Builder](../zer0-mistakes/pages/_docs/features/site-builder.md)
       - [Site Search](../zer0-mistakes/pages/_docs/features/site-search.md)
       - [Skip-to-Content Accessibility Link](../zer0-mistakes/pages/_docs/features/skip-to-content.md)
       - [Smart 404 & Site Configuration Detection](../zer0-mistakes/pages/_docs/features/smart-404.md)

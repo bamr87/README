@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 299,
-    "fingerprint": "063ced09c9164668",
+    "file_count": 305,
+    "fingerprint": "6509281ac0bcba0c",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 1968158
+    "total_bytes": 2029713
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -38,7 +38,7 @@
     "pages": 254,
     "present": true,
     "sections": 56,
-    "skipped": 6,
+    "skipped": 7,
     "title": "Barody Project",
     "top_sections": [
       {
@@ -159,6 +159,10 @@
       {
         "doc_count": 35,
         "name": ".github"
+      },
+      {
+        "doc_count": 6,
+        "name": ".vscode"
       },
       {
         "doc_count": 5,

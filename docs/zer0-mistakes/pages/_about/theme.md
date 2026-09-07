@@ -2,13 +2,13 @@
 admin_section: Theme Customizer
 excerpt: Preview Bootstrap 5 theme components and examples.
 icon: material/palette
-source_icon: bi-palette
 lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/theme/
 preview: /images/previews/bootstrap-theme-examples.png
 source: https://getbootstrap.com/docs/5.3/examples/cheatsheet/
 source_file: theme.md
+source_icon: bi-palette
 title: Theme
 ---
 ## Bootstrap Cheatsheet

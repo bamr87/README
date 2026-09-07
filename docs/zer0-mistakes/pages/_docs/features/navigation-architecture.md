@@ -6,7 +6,14 @@ description: The zer0-mistakes navigation system as ES6 modules — hover dropdo
   keyboard accessibility, smooth scroll, sidebar persistence, and graceful degradation.
 difficulty: intermediate
 estimated_reading_time: 10 minutes
-lastmod: 2026-06-15 00:00:00+00:00
+keywords:
+- navigation architecture
+- es6 modules
+- scroll spy
+- keyboard navigation
+- sidebar state
+- jekyll theme
+lastmod: 2026-09-05 00:00:00+00:00
 layout: default
 permalink: /docs/features/navigation-architecture/
 preview: /images/previews/es6-modular-navigation-architecture.png
@@ -56,11 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ### Hover Dropdowns
 
-Desktop navbar dropdowns open on hover with a short delay to prevent accidental triggers. Defined in `config.js`:
+Desktop navbar dropdowns open on hover with a short delay to prevent accidental triggers. The delay is a module-local constant in `navbar.js`; the `lg` breakpoint that gates hover behaviour comes from `config.breakpoints`, which `syncBreakpointsFromCss()` refreshes at runtime from the `--zer0-bp-*` custom properties so the SCSS tokens stay the single source of truth:
 
 ```javascript
-export const TOOLTIP_DELAY = { show: 400, hide: 100 };
-export const MOBILE_BREAKPOINT = 992; // px — Bootstrap lg breakpoint
+// assets/js/modules/navigation/navbar.js
+const TOOLTIP_DELAY = { show: 400, hide: 100 };
+
+// assets/js/modules/navigation/config.js
+breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 }
 ```
 
 ### Keyboard Navigation
@@ -79,21 +89,22 @@ export const MOBILE_BREAKPOINT = 992; // px — Bootstrap lg breakpoint
 `sidebar-state.js` saves which sidebar sections are expanded to `localStorage` so the state survives page reloads:
 
 ```javascript
-// Key format: zer0-sidebar-<section-id>
-localStorage.setItem(`zer0-sidebar-${sectionId}`, 'expanded');
+// One key holds every expanded node: `state.storagePrefix` + `state.keys.expandedNodes`
+localStorage.setItem('zer0-nav-expanded-nodes', JSON.stringify([...expandedNodeIds]));
 ```
 
 ### Scroll Spy
 
-`scroll-spy.js` highlights the current section in the sidebar table-of-contents as the user scrolls, using `IntersectionObserver` for performance.
+`scroll-spy.js` highlights the current section in the table-of-contents as the user scrolls. The active entry is the last heading whose top has crossed the reading line (`scroll-padding-top` below the viewport top), recomputed on each animation frame from cached heading offsets. See [Table of Contents](/docs/features/toc/#scroll-spy).
 
 ### Graceful Degradation
 
-All navigation features are wrapped in feature detection:
+Optional browser APIs are feature-detected, so a module degrades instead of throwing. The scroll spy needs nothing beyond `scrollY` — it only reaches for `ResizeObserver` to re-measure heading offsets when content reflows:
 
 ```javascript
-if ('IntersectionObserver' in window) {
-  initScrollSpy();
+if (typeof ResizeObserver !== 'undefined') {
+  this._resizeObserver = new ResizeObserver(this._onReflow);
+  this._resizeObserver.observe(content);
 }
 ```
 
@@ -111,22 +122,22 @@ The navbar include renders the Bootstrap 5 navbar, populates links from `_data/n
 
 1. Create `assets/js/modules/navigation/my-feature.js`:
 
-```javascript
-export function initMyFeature() {
-  // implementation
-}
-```
+   ```javascript
+   export function initMyFeature() {
+     // implementation
+   }
+   ```
 
-1. Import and call it from `index.js`:
+2. Import and call it from `index.js`:
 
-```javascript
-import { initMyFeature } from './my-feature.js';
+   ```javascript
+   import { initMyFeature } from './my-feature.js';
 
-export function initNavigation() {
-  // … existing init calls …
-  initMyFeature();
-}
-```
+   export function initNavigation() {
+     // … existing init calls …
+     initMyFeature();
+   }
+   ```
 
 ## Related
 
@@ -137,5 +148,5 @@ export function initNavigation() {
 ## See also
 
 - [[Navigation]]
-- [[JavaScript]]
+- [[Keyboard Navigation]]
 - [[Features]]

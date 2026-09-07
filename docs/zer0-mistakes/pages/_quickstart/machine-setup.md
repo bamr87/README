@@ -3,19 +3,18 @@ author: Zer0-Mistakes Development Team
 categories:
 - Documentation
 - Quick Start
+date: 2025-07-01 00:00:00+00:00
 description: Install Docker, Git, and essential development tools for the Zer0-Mistakes
   Jekyll theme. Cross-platform setup for macOS, Windows, and Linux.
 draft: false
 keywords:
-  primary:
-  - docker installation
-  - development environment setup
-  secondary:
-  - homebrew
-  - winget
-  - git configuration
-  - vs code
-lastmod: 2026-05-30 00:00:00+00:00
+- docker installation
+- development environment setup
+- homebrew
+- winget
+- git configuration
+- vs code
+lastmod: 2026-09-05 00:00:00+00:00
 layout: default
 mermaid: true
 permalink: /quickstart/machine-setup/
@@ -38,6 +37,8 @@ title: Machine Setup
 # Machine Setup
 
 Install the tools you need before starting Jekyll development. This guide covers **macOS**, **Windows**, and **Linux**.
+
+> **Prefer a guided setup?** The [Site Builder](/quickstart/site-builder/) runs these same checks live on your machine, shows the install command for your OS, and then walks you through configuring and launching a complete site with Claude alongside. This page is the manual reference behind its Prerequisites step.
 
 ```mermaid
 flowchart LR
@@ -235,6 +236,15 @@ Ensure Hyper-V or WSL 2 is enabled. Run `wsl --install` in an elevated PowerShel
 lsof -i :4000          # find the PID
 kill <PID>             # free the port
 ```
+
+## Related
+
+- [Site Builder](/quickstart/site-builder/) — the guided path that runs these
+  prerequisite checks for you.
+- [Site Builder reference](/docs/features/site-builder/) — what the wizard
+  generates, the tools it exposes, and its safety boundaries.
+- [Jekyll Setup](/quickstart/jekyll-setup/) — the next step once these tools
+  are installed.
 
 ---
 

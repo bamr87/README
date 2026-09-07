@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 45,
-    "fingerprint": "27587e08b3d98ad1",
+    "fingerprint": "641caf54c3c7d5be",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 519992
+    "total_bytes": 520277
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -94,7 +94,7 @@
     ],
     "indexed_documents": 45,
     "top_tags": [],
-    "total_words": 58701
+    "total_words": 58747
   },
   "schema_version": "1.0",
   "signals": {

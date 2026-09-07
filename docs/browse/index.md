@@ -9,12 +9,12 @@ generated: true
 
 # Content map
 
-**2,083** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**2,112** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 908 | 93 | Repository & tooling, Data, Documentation, Home, Includes |
-| [Zer0 Mistakes](zer0-mistakes.md) | 626 | 95 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
+| [IT Journey](it-journey.md) | 920 | 93 | Repository & tooling, Data, Documentation, Home, Includes |
+| [Zer0 Mistakes](zer0-mistakes.md) | 643 | 97 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
 | [Barody Project](barodybroject.md) | 254 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
 | [Bash Crawl](bashcrawl.md) | 38 | 9 | Repository & tooling, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
 | [Agent Skills](skills.md) | 7 | 3 | Documentation, Repository & tooling |

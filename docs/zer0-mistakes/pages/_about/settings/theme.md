@@ -2,12 +2,12 @@
 excerpt: Preview theme skins, generate palettes, customize CSS variables, and export
   YAML configuration.
 icon: material/palette
-source_icon: bi-palette
 lastmod: 2026-04-05 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme/
 preview: /images/previews/theme-customizer.png
 source_file: theme.md
+source_icon: bi-palette
 title: Theme
 ---
 <!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->

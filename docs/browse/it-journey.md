@@ -9,9 +9,9 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **908 pages** across **93 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **920 pages** across **93 sections** (max depth 7).
 
-- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(223)</small>
+- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(229)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
     - [redirects/](../it-journey/redirects/README.md)
     - **Posts** <small>(42)</small>
@@ -72,7 +72,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - **[Development Scripts](../it-journey/scripts/development/README.md)** <small>(2)</small>
       - [Development Scripts](../it-journey/scripts/development/README.md)
       - [Post Organizer Utility](../it-journey/scripts/development/content/README.md)
-  - **[Test Directory](../it-journey/test/README.md)** <small>(143)</small>
+  - **[Test Directory](../it-journey/test/README.md)** <small>(149)</small>
     - [Test Directory](../it-journey/test/README.md)
     - **[Quest Solutions Framework](../it-journey/test/quest-solutions/README.md)** <small>(14)</small>
       - [Quest Solutions Framework](../it-journey/test/quest-solutions/README.md)
@@ -94,14 +94,14 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - **Templates** <small>(2)</small>
           - [[Quest Title] — Solutions & Validation](../it-journey/test/quest-solutions/_shared/templates/quest-solution-readme-template.md)
           - [[Quest Title]: Answer Key & Expected Outputs](../it-journey/test/quest-solutions/_shared/templates/answer-key-template.md)
-    - **[Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)** <small>(128)</small>
+    - **[Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)** <small>(134)</small>
       - [Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)
       - [Quest Quality Checklist - Quick Reference](../it-journey/test/quest-validator/CHECKLIST.md)
       - [Quest Testing Framework - Docker Implementation Summary](../it-journey/test/quest-validator/IMPLEMENTATION_SUMMARY.md)
       - [Quest Testing Framework - Docker Migration Complete](../it-journey/test/quest-validator/DOCKER_MIGRATION_SUMMARY.md)
       - [Quest Update & Testing Framework Summary](../it-journey/test/quest-validator/SUMMARY.md)
       - [✅ Docker Quest Testing Framework - Implementation Complete](../it-journey/test/quest-validator/COMPLETION_SUMMARY.md)
-      - **[Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)** <small>(122)</small>
+      - **[Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)** <small>(128)</small>
         - [Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)
         - [2026 06 29 Developer 0000](../it-journey/test/quest-validator/walkthroughs/2026-06-29-developer-0000.md)
         - [2026 06 29 Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-06-29-developer-0001.md)
@@ -223,6 +223,12 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - [2026 08 27 Game Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md)
         - [2026 08 28 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md)
         - [2026 08 29 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md)
+        - [2026 08 31 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-08-31-digital-artist-0001.md)
+        - [2026 09 01 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md)
+        - [2026 09 02 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-02-digital-artist-0001.md)
+        - [2026 09 03 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-03-digital-artist-0001.md)
+        - [2026 09 04 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-04-digital-artist-0001.md)
+        - [2026 09 05 Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-05-developer-0001.md)
         - [📆 Quest Walkthrough — Security Specialist · Level 0010](../it-journey/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
   - **[📁 IT-Journey TODO Hub](../it-journey/TODO/README.md)** <small>(25)</small>
     - [📁 IT-Journey TODO Hub](../it-journey/TODO/README.md)
@@ -324,7 +330,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Link Checker Workflow Test Results](../it-journey/docs/workflows/LINK_CHECKER_VALIDATION.md)
     - [Link Health Guardian Consolidation Summary](../it-journey/docs/workflows/LINK_CONSOLIDATION_SUMMARY.md)
     - [Organize Posts Weekly Workflow Documentation](../it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md)
-- **[Home](../it-journey/pages/home.md)** <small>(628)</small>
+- **[Home](../it-journey/pages/home.md)** <small>(634)</small>
   - [Home](../it-journey/pages/home.md)
   - [Home](../it-journey/pages/_hobbies/home.md)
   - [IT-Journey Blog Posts](../it-journey/pages/posts.md)
@@ -664,10 +670,10 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Edit your site's head/include where the analytics snippet will go](../it-journey/pages/_quests/0001/analytics-integration.md)
       - [Ensure Git is installed](../it-journey/pages/_quests/0001/github-pages-portal.md)
       - [Example: Add simple linting to CI pipeline](../it-journey/pages/_quests/0001/kaizen.md)
+      - [gitinit.sh — interactive and headless repository initializer.](../it-journey/pages/_quests/0001/building-testing-git-init-script.md)
       - [In an existing Jekyll site, add the SEO and sitemap plugins](../it-journey/pages/_quests/0001/seo-optimization.md)
       - [In your Jekyll site, add a couple of safe plugins](../it-journey/pages/_quests/0001/jekyll-plugins.md)
       - [Install a modern Ruby with Homebrew (the system Ruby is too old)](../it-journey/pages/_quests/0001/jekyll-fundamentals.md)
-      - [install bats-core (macOS)](../it-journey/pages/_quests/0001/building-testing-git-init-script.md)
       - [Install Git and the GitHub CLI](../it-journey/pages/_quests/0001/git-workflow-mastery.md)
       - [Install yamllint to validate your YAML](../it-journey/pages/_quests/0001/yaml-configuration.md)
       - [Make a project folder with an HTML and a CSS file](../it-journey/pages/_quests/0001/css-styling-basics.md)
@@ -886,7 +892,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Styling Navigation](../it-journey/pages/_quickstart/styling-navigation.md)
     - [Theme Architecture](../it-journey/pages/_quickstart/theme-architecture.md)
     - [Vscode Setup](../it-journey/pages/_quickstart/vscode-setup.md)
-  - **[♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)** <small>(122)</small>
+  - **[♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)** <small>(128)</small>
     - [♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)
     - [2026 06 29 Developer 0000](../it-journey/pages/_quest-reports/2026-06-29-developer-0000.md)
     - [2026 06 29 Developer 0001](../it-journey/pages/_quest-reports/2026-06-29-developer-0001.md)
@@ -1008,6 +1014,12 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [2026 08 27 Game Developer 0001](../it-journey/pages/_quest-reports/2026-08-27-game-developer-0001.md)
     - [2026 08 28 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-08-28-digital-artist-0001.md)
     - [2026 08 29 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-08-29-digital-artist-0001.md)
+    - [2026 08 31 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-08-31-digital-artist-0001.md)
+    - [2026 09 01 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-01-digital-artist-0001.md)
+    - [2026 09 02 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-02-digital-artist-0001.md)
+    - [2026 09 03 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-03-digital-artist-0001.md)
+    - [2026 09 04 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-04-digital-artist-0001.md)
+    - [2026 09 05 Developer 0001](../it-journey/pages/_quest-reports/2026-09-05-developer-0001.md)
     - [📆 Quest Walkthrough — Security Specialist · Level 0010](../it-journey/pages/_quest-reports/2026-07-06-security-specialist-0010.md)
 - **Includes** <small>(2)</small>
   - [Contributor Profile Includes](../it-journey/_includes/contributor/README.md)

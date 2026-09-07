@@ -14,6 +14,7 @@ This directory contains the CI/CD workflows for the zer0-mistakes Jekyll theme.
 ├───────────────────────────────────────────────────────────────────────┤
 │                                                                       │
 │  Pull request ──────► ci.yml, evidence-gate.yml, secret-scan.yml,    │
+│                       visual-evidence-autogen.yml (same-repo UI PRs),│
 │                       ai-content-review.yml*, codeql.yml*,           │
 │                       install-matrix.yml*, sync.yml* (path-filtered*)│
 │                                                                       │
@@ -63,7 +64,13 @@ The `quality-checks` job must ALWAYS run (`if: always() && …`) — it is the s
 
 Requires any PR that touches UI paths (`_sass/`, `_includes/`, `_layouts/`,
 `assets/css|js/`) to also ship a regression test (`test/visual/*.spec.js`) and
-before/after evidence (`test/visual/evidence/`). Opt out with the `skip-evidence` / `no-visual-change` label. Always reports a status so it can be a required check. See `.github/skills/visual-evidence/SKILL.md`.
+**generated** before/after evidence (`metrics.json` or montage PNGs under `test/visual/evidence/<slug>/` — a README alone does not pass). Opt out with the `skip-evidence` / `no-visual-change` label. Always reports a status so it can be a required check. See `.github/skills/visual-evidence/SKILL.md`. It only verifies; `visual-evidence-autogen.yml` (below) is what produces the evidence.
+
+### `visual-evidence-autogen.yml` — Visual evidence autogen
+
+**Triggers:** Pull Requests from this repo (never forks)
+
+The **producer** behind the evidence gate and the pixel tier. A Python orchestrator (`scripts/ci/visual_evidence_autogen.py`) plans from the PR's diff, brings Jekyll up with `docker compose`, runs the PR's own `test/visual/<slug>-evidence.mjs` generators — or the generic base-vs-head generator `test/visual/pr-evidence.mjs`, which renders the base branch and the head side by side — and verifies the 9-skin baselines, all inside the same jammy Playwright image `ci.yml` compares with. The `visual-evidence-reviewer` agent then views the expected | actual | diff montage and writes a verdict; **only an `intentional` verdict lets code regenerate the baselines** (#417: a blessed regression and a green check are indistinguishable). Generated folders and, when blessed, `test/visual/snapshots/` are committed to the PR branch with a `[visual-autogen]` marker; one sticky comment shows the images. Loop guard + three-commit budget per PR; kill switch `VISUAL_EVIDENCE_AUTOGEN_ENABLED=false`; per-PR opt-out via the gate's labels. Born from PR #454, which sat red with nine legitimately stale baselines that no Docker-less agent could refresh. `ci-self-repair.yml` stands down when `Visual Snapshots` is the only red job.
 
 ### `secret-scan.yml` — Secret scan
 
@@ -142,6 +149,8 @@ Deploys the AI-chat Cloudflare Worker via `wrangler-action`. Requires `CLOUDFLAR
 
 Two tiers plus docs validation: (1) deterministic SEO/quality checks (`scripts/content-review.rb`, fork-safe, posts a sticky comment); (2) the Claude Code content-reviewer agent (only when a Claude credential — `CLAUDE_CODE_OAUTH_TOKEN` preferred, `ANTHROPIC_API_KEY` as fallback — is set and content actually changed); (3) front-matter, internal-link, and markdownlint jobs (formerly `docs-validate.yml`).
 
+**The credential gate checks presence, not validity** — a revoked token is still a non-empty string, so it cannot tell a live credential from a dead one. Validity is established by the API call itself: `scripts/ci/agent_review_result.py` classifies the agent's result and **fails the job** with a `::error::` annotation when the review did not actually run, instead of posting the CLI's error as if it were the review. That swallow (issue #418) hid a week-long outage behind five green checks — a non-zero exit alone would not have caught it, because the CLI reports auth failures on stdout. The sticky comment still posts (`if: always()`), carrying an explicit failure notice.
+
 ### `issue-autopilot.yml` — Issue autopilot
 
 **Triggers:** Weekly schedule, Manual dispatch, `autopilot:go` label
@@ -164,13 +173,23 @@ Enables GitHub native auto-merge for PRs labeled `auto-merge`, after a denylist 
 
 **Triggers:** `workflow_run` completion of the Comprehensive CI Pipeline
 
-For failed PR runs where the PR opted in via the `auto-fix` label: runs Claude Code headless to diagnose and push a fix, bounded by a retry budget; otherwise drafts the PR with `agent-hold`. Never touches CODEOWNERS-protected paths.
+For failed PR runs where the PR opted in via the `auto-fix` label: runs Claude Code headless to diagnose and push a fix, bounded by a retry budget; otherwise drafts the PR with `agent-hold`. Never touches CODEOWNERS-protected paths. Stands down when the only red job is `Visual Snapshots` — stale baselines are producible artifacts that `visual-evidence-autogen.yml` owns.
 
 ### `milestone-assign.yml` — Milestone assignment
 
 **Triggers:** `pull_request_target` (closed)
 
 Assigns merged PRs to the milestone when exactly one is open; otherwise no-op.
+
+### `ui-audit.yml` — Weekly UI/UX audit
+
+**Triggers:** Weekly schedule (Mon 07:23 UTC), Manual dispatch
+
+Two tiers: (1) a deterministic Playwright sweep (`test/ui-audit/sweep.mjs`) over 6 routes × 3 viewports capturing screenshots, axe violations, console errors, overflow and broken internal links; (2) the read-only Claude Code `ui-auditor` agent, gated on a Claude credential. Findings land in one sticky issue labeled `source:ui-audit`.
+
+**The serve step must not use `--detach`.** It disables Jekyll's watch thread, which the LiveReload reactor rides on — leaving `livereload_port: 35729` bound but silent while pages still load `livereload.js`. The hanging subresource blocks `load`, so every `page.goto(..., waitUntil: 'load')` times out. The `curl -sf` readiness gate cannot detect this (it never requests a subresource), which is how the audit captured **zero** evidence for six weeks while reporting success ([#321](https://github.com/bamr87/zer0-mistakes/issues/321)). Keep the invocation in step with `test/test_playwright.sh:69-74`: background it with `&`, and stop it in an `always()` step.
+
+The job goes **red** when the sweep captures nothing — enforced twice, by `sweep.mjs`'s own exit code and by the `Assert the sweep captured evidence` step — and the sticky issue says "captured nothing" rather than presenting timeouts as UI findings. Guarded by `test/ui-audit/check-audit-serve.sh`.
 
 ### `giscus-digest.yml` — Giscus comment digest
 
@@ -192,11 +211,13 @@ Every quality gate a contributor can run locally must be enforced somewhere in C
 | Playwright smoke tier | `./test/test_runner.sh --suites playwright` | `ci.yml` → `test` | PR + push (code changes) |
 | Playwright snapshot tier | `./test/test_runner.sh --suites playwright_snapshots` | `ci.yml` → `snapshots` | PR + push (styling changes) |
 | Visual evidence for UI changes | `.github/skills/visual-evidence/` | `evidence-gate.yml` | PR (always; self-scoping) |
+| Visual evidence + pixel baselines — **produced**, not just checked | `python3 scripts/ci/visual_evidence_autogen.py all` (any Docker host) | `visual-evidence-autogen.yml` | PR (same-repo; UI/styling changes) |
 | Gem build + install | `./scripts/build` | `ci.yml` → `build` | PR + push (code changes) |
 | Docker boot + critical pages | `docker compose up` | `ci.yml` → `integration` | PR + push (code or docker changes) |
 | Roadmap ↔ README ↔ version consistency | `ruby scripts/generate-roadmap.rb --check` | `sync.yml` → `roadmap` | PR (check) + push to main (regenerate) |
 | Backlog schema | `ruby scripts/sync-backlog.rb --check` | `sync.yml` → `backlog` | PR (check) + push to main (sync issues) |
 | Docs front matter + internal links + markdownlint | `scripts/docs/lint-frontmatter.sh` / `check-links.sh` / `markdownlint` | `ai-content-review.yml` | PR (docs/content changes) |
+| Claude review actually ran (no silent-green non-review) | `python3 scripts/ci/test_agent_review_result.py` | `ai-content-review.yml` (guard) · `ci.yml` → `test` (its tests) | PR (docs/content changes) |
 | Secret shapes in diff/PR body | — | `secret-scan.yml` | PR (always) |
 | Workflow definitions (actionlint + invariants) | `actionlint` | `lint-workflows.yml` | PR + push (workflow changes) |
 | Latest-dependency canary (unpinned build + HTMLProofer) | — | `test-latest.yml` | Daily schedule + push to main |
@@ -220,6 +241,9 @@ CLOUDFLARE_ACCOUNT_ID   # Chat proxy deploy
 # Opt-in repository variables (autonomous pipeline, all default OFF)
 ISSUE_AUTOPILOT_ENABLED / ISSUE_RESOLVE_ENABLED / ISSUE_AUTOCLOSE_ENABLED /
 ISSUE_VERIFY_CLOSE_ENABLED / ISSUE_AUTOMERGE_ENABLED
+
+# Kill switch (default ON — set to `false` to stop the lane)
+VISUAL_EVIDENCE_AUTOGEN_ENABLED   # visual-evidence-autogen.yml
 ```
 
 ## Composite Actions Used

@@ -14,7 +14,7 @@ keywords:
 - remote_theme setup
 - deployment troubleshooting
 - jekyll-theme-zer0
-lastmod: 2026-07-13 00:00:00+00:00
+lastmod: 2026-09-03 00:00:00+00:00
 layout: default
 permalink: /docs/deployment/remote-theme-checklist/
 prerequisites:
@@ -66,6 +66,8 @@ plugins:
 ### 2. Re-declare structure in your `_config.yml`
 
 None of these are inherited from the theme — declare your own: `collections`, `defaults`, `permalink`, `theme_skin`, `theme_color`, `theme_background`.
+
+The `favicon:` block, by contrast, is entirely optional: `favicon.theme_color_light` / `favicon.theme_color_dark` fall back to the theme's surface colors (`#ffffff` / `#212529`), and the `theme-color` tags are emitted even when you declare nothing.
 
 ### 3. ⚠️ Do not copy the theme's `_config.yml` wholesale
 

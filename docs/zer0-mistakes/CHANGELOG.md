@@ -16,7 +16,488 @@ hand-written prose covering the same releases in more depth; they sit below
 their version because release-please inserts each new release at the top of the
 file. Only `## [Unreleased]` describes work that has not shipped yet.
 
+## [1.29.0](https://github.com/bamr87/zer0-mistakes/compare/v1.28.0...v1.29.0) (2026-09-01)
+
+
+### Features
+
+* **analytics:** track and display per-page view counts ([#413](https://github.com/bamr87/zer0-mistakes/issues/413)) ([e488c4c](https://github.com/bamr87/zer0-mistakes/commit/e488c4c3101da78e98eecbf8299ce7c8705ed281))
+* **design:** fill Fab, PostCard, Skeleton + motion/layers gaps in the design-system mirror ([#391](https://github.com/bamr87/zer0-mistakes/issues/391)) ([3b49741](https://github.com/bamr87/zer0-mistakes/commit/3b497417564b4c5e3d71eaa113cb136d2cdaf15c))
+* **includes:** icon-only language trigger and a compact, positive menu ([#431](https://github.com/bamr87/zer0-mistakes/issues/431)) ([353bfa5](https://github.com/bamr87/zer0-mistakes/commit/353bfa5f3a8dd949ca6e513213a155d648218642)), closes [#406](https://github.com/bamr87/zer0-mistakes/issues/406)
+* **includes:** live preview, vertical stepper and draft persistence in the setup wizard ([#432](https://github.com/bamr87/zer0-mistakes/issues/432)) ([73bdc55](https://github.com/bamr87/zer0-mistakes/commit/73bdc5547350c448e1617ec6cf5b9f49b10d65fb)), closes [#408](https://github.com/bamr87/zer0-mistakes/issues/408)
+* **layouts:** add cookbook collection with recipe scaling and unit conversion ([#414](https://github.com/bamr87/zer0-mistakes/issues/414)) ([bb8eefa](https://github.com/bamr87/zer0-mistakes/commit/bb8eefa2beea0104fec28d173a1e57f369acada8))
+* **pages:** publish the design system and page canvas on the live site ([#392](https://github.com/bamr87/zer0-mistakes/issues/392)) ([6cf73cd](https://github.com/bamr87/zer0-mistakes/commit/6cf73cdf2cca9ec02394b6ae1ba7e39c19969134))
+* **sass:** align design tokens with the Claude Design system ([#389](https://github.com/bamr87/zer0-mistakes/issues/389)) ([7fc2fe0](https://github.com/bamr87/zer0-mistakes/commit/7fc2fe02683d652c0326536158bd48b3690df51f))
+
+
+### Bug Fixes
+
+* **a11y:** dialog titles use a bare &lt;h5&gt;, skipping heading levels ([#387](https://github.com/bamr87/zer0-mistakes/issues/387)) ([98fd6f9](https://github.com/bamr87/zer0-mistakes/commit/98fd6f9e63dfb75c58efc3b15a642fb3e4c4095b))
+* **ci:** fail the content review when it did not actually run ([#424](https://github.com/bamr87/zer0-mistakes/issues/424)) ([f048cb2](https://github.com/bamr87/zer0-mistakes/commit/f048cb22e565b3122d6682c026e13521b6fe52d9)), closes [#418](https://github.com/bamr87/zer0-mistakes/issues/418)
+* **ci:** fail the Pages build on Liquid errors, unmangle two live pages ([#439](https://github.com/bamr87/zer0-mistakes/issues/439)) ([afd2ec8](https://github.com/bamr87/zer0-mistakes/commit/afd2ec83879a793d77dfac21b41d74d5204126c4))
+* **ci:** make the pixel gate see the data files that move pixels ([#425](https://github.com/bamr87/zer0-mistakes/issues/425)) ([02ea639](https://github.com/bamr87/zer0-mistakes/commit/02ea639b3152900682ca298bd172925133d10dea)), closes [#417](https://github.com/bamr87/zer0-mistakes/issues/417)
+* **ci:** stop discarding good translations when one page fails ([#388](https://github.com/bamr87/zer0-mistakes/issues/388)) ([19cea46](https://github.com/bamr87/zer0-mistakes/commit/19cea462a7822d6db536fc9c23218abd4a13d830))
+* **ci:** wait past the cold bundle install for Jekyll in the snapshot gate ([#426](https://github.com/bamr87/zer0-mistakes/issues/426)) ([de1d1ca](https://github.com/bamr87/zer0-mistakes/commit/de1d1ca426ce7a25d5a8548c4a696c0002877200))
+* **cookie-consent:** text-dark on bg-body made privacy rights invisible in dark mode ([#386](https://github.com/bamr87/zer0-mistakes/issues/386)) ([9bde7df](https://github.com/bamr87/zer0-mistakes/commit/9bde7dfa13f426908e00e53f8e4013a049fd928d))
+* **giscus:** comments were broken sitewide — add an end-to-end health check and correct the docs ([#378](https://github.com/bamr87/zer0-mistakes/issues/378)) ([45e222c](https://github.com/bamr87/zer0-mistakes/commit/45e222c3c2c5b7c507af4df2f5f0b48bc783801e))
+* **includes:** footer Info/Cookie Preferences are buttons, not anchors ([#427](https://github.com/bamr87/zer0-mistakes/issues/427)) ([f9041b9](https://github.com/bamr87/zer0-mistakes/commit/f9041b98b8a267be59f560724821fd941090f52d)), closes [#320](https://github.com/bamr87/zer0-mistakes/issues/320)
+* **layouts:** match section topic filters on whole tags, not substrings ([#420](https://github.com/bamr87/zer0-mistakes/issues/420)) ([338ad1d](https://github.com/bamr87/zer0-mistakes/commit/338ad1ddfb71c8d1dd9c48b36fb4634daf93f2de))
+* **layouts:** move keyboard focus to the skip-link target (tabindex="-1") ([#395](https://github.com/bamr87/zer0-mistakes/issues/395)) ([f5db650](https://github.com/bamr87/zer0-mistakes/commit/f5db65048e48ca71eedebc04d02d051e0b3152a6)), closes [#278](https://github.com/bamr87/zer0-mistakes/issues/278)
+* **layouts:** stop emitting dead sub-topic anchors in section sidebars ([#402](https://github.com/bamr87/zer0-mistakes/issues/402)) ([f50e790](https://github.com/bamr87/zer0-mistakes/commit/f50e790c4bfd56fefa4a74d7876de90c9776c689))
+* **layouts:** upgrade the no-js class to "js" so the hook works ([#428](https://github.com/bamr87/zer0-mistakes/issues/428)) ([a2d31f5](https://github.com/bamr87/zer0-mistakes/commit/a2d31f5533a4fb4793042e32326c1a78c9954268)), closes [#319](https://github.com/bamr87/zer0-mistakes/issues/319)
+* **navigation:** fit all nav items, full-bleed bar, language into Settings ([#423](https://github.com/bamr87/zer0-mistakes/issues/423)) ([689006e](https://github.com/bamr87/zer0-mistakes/commit/689006e7654e900a4509c30539fcf12bd7f397c6))
+* **scripts:** correct consumer auditor, plugin contract, and JSON-LD scope ([#400](https://github.com/bamr87/zer0-mistakes/issues/400)) ([b466cad](https://github.com/bamr87/zer0-mistakes/commit/b466cad526501e7e7a0eef5f24a12c5bbd181dc7))
+* **scripts:** recover from a rejected Anthropic credential, and link the cookbook ([#419](https://github.com/bamr87/zer0-mistakes/issues/419)) ([fac6bee](https://github.com/bamr87/zer0-mistakes/commit/fac6beeb7af7dcae96f727bf0cf581b080e95f15))
+* **ui-audit:** serve without --detach so the sweep can capture, and fail loudly when it cannot ([#434](https://github.com/bamr87/zer0-mistakes/issues/434)) ([fac6415](https://github.com/bamr87/zer0-mistakes/commit/fac641574c951b2887d94f8b39561fb8b6f8fe8c)), closes [#321](https://github.com/bamr87/zer0-mistakes/issues/321)
+
 ## [Unreleased]
+
+### Added
+
+- **CI now produces a UI pull request's visual artifacts instead of only
+  checking for them (ZER0-085)** — `visual-evidence-autogen.yml` renders every
+  same-repo PR in the same jammy Playwright image the snapshot gate uses, runs
+  the PR's `test/visual/*-evidence.mjs` generators (or the new generic
+  base-vs-head generator `test/visual/pr-evidence.mjs`, which renders the base
+  branch and the head side by side), verifies the 9-skin baselines, and pushes
+  the montages + `metrics.json` to the branch. Stale baselines are refreshed
+  **only** when the new `visual-evidence-reviewer` agent, having viewed the
+  expected | actual | diff montage, judges the diff to be the change the PR
+  describes — a code step disposes, the model only proposes ([#417](https://github.com/bamr87/zer0-mistakes/issues/417)
+  is why). The evidence gate now requires generated proof (a README alone no
+  longer passes), `ci-self-repair` leaves a red `Visual Snapshots` job to this
+  lane, and `test/update-snapshots.sh` gained `PRE_TEST_SCRIPT` /
+  `POST_TEST_SCRIPT` / `SKIP_PLAYWRIGHT` hooks. Closes the gap that kept
+  [#454](https://github.com/bamr87/zer0-mistakes/pull/454) red: its authoring
+  agents ran where Docker was gated, and nothing in CI could render what they
+  could not. Kill switch: repo variable `VISUAL_EVIDENCE_AUTOGEN_ENABLED=false`.
+  The lane restores its own tooling from the base branch before it runs, so it
+  works on branches cut before it shipped: without that its first real run on
+  #454 died in 20 seconds (that branch has no copy of the orchestrator), and a
+  branch carrying an older `update-snapshots.sh` would have silently generated
+  nothing at all.
+- **Site Builder — a Claude-guided setup wizard that ends with a running site
+  (ZER0-086, extends ZER0-067)** — `/setup/` (and the `welcome` layout) grew
+  from a five-step `_config.yml` form into a nine-step builder: Connect →
+  Prerequisites → Identity → URLs → Structure → Appearance → Voice →
+  Integrations → Build. An embedded Claude session rides alongside every step
+  through the local dev proxy (Claude Code OAuth, `claude setup-token`; the
+  token never reaches the page). It sees the whole wizard state on every turn
+  and acts on it with tools: fill in fields, override a generated file, run
+  live prerequisite checks (Docker, Git, gh, VS Code, Node, Claude CLI — a
+  fixed command table), read the theme's real source and search the docs,
+  resolve a project folder, write the generated project, run `docker compose
+  up|ps|logs|down`, and check the new site answers — each mutation behind a
+  confirmation card. The form half still works with no proxy at all (GitHub
+  Pages included): it generates `_config.yml`, `_config_dev.yml`, `Gemfile`,
+  `docker-compose.yml`, `index.md`, navigation, about page, welcome post, one
+  index page per collection, `.gitignore`, `zer0.install.yml`, `.env.example`
+  and `README.md`, with per-file download and a self-extracting bash bundle.
+  Forms gained a site brief, a URL **Suggest** button, a site-type quick-pick,
+  a navigation row editor, skin cards with a live **Preview on this page**
+  toggle, tone/audience pickers, integration switches with conditional
+  sub-fields, a copy button on every command, and a toast for feedback. New:
+  `_data/site_builder.yml` (steps, prerequisites mirroring
+  `machine-setup.md`, catalogs, framework brief),
+  `templates/deploy/chat-proxy/wizard-store.mjs` (the dev-only sandbox behind
+  `/api/wizard/*`), `assets/js/site-builder.js`, `_includes/setup/{claude-
+  session,prereq-checklist}.html`, the `site_builder:` config block, a
+  quickstart page and a feature reference. (evidence:
+  [`test/visual/evidence/site-builder/`](test/visual/evidence/site-builder/README.md))
+  A first recorded end-to-end run then shaped the build half: the generated
+  `docker-compose.yml` publishes LiveReload on the site's port + 1 (a fixed
+  35729 collided with the theme's own dev container and the new site never
+  started) and shares one gem cache across generated sites; every enabled
+  collection now ships a valid starter document (a doc, a quickstart step, a
+  note with a wiki-link, a structured recipe) and the cookbook index uses the
+  theme's `cookbook` layout over the real `recipes` collection; `_config.yml`
+  sets `collections_dir: pages` (without it every collection but posts was
+  invisible to Jekyll); each site gets its own `assets/images/logo.svg`
+  monogram and gem-based sites turn the SVG background layers off, because
+  the published gem ships no theme images; a revoked Claude credential now
+  says so and names the fix. Validation is a scenario
+  runner, `test/visual/site-builder-walkthrough.mjs`, that samples random
+  briefs per site type (`test/visual/site-builder-scenarios.mjs`), drives the
+  wizard on video, builds the site with Docker and asserts its routes, title
+  and skin — replayable by seed.
+  The builder then gained a **schema-driven site plan**: `plan_schema` in
+  `_data/site_builder.yml` (a JSON-Schema subset validated in the browser)
+  describes what the agent may produce — a landing page (five templates,
+  nine section types, hero + CTAs), navigation shape (flat or grouped
+  dropdowns, sidebar none/auto/docs tree), theme overrides (nine palettes or
+  custom colours, seven font pairings, three corner radii) and up to twelve
+  example pages with Markdown bodies — and the generators turn it into
+  `index.md` (a Liquid landing engine) + `_data/landing.yml`,
+  `_data/navigation/main.yml` and `docs.yml`, `assets/css/user-overrides.css`
+  + `_includes/custom/head.html`, and one file per page. Claude submits plans
+  with `set_site_plan` behind a confirmation card; the Structure and
+  Appearance steps expose the same choices as controls, with a page planner
+  and a **Preview on this page** toggle that applies the generated overrides
+  to the wizard itself. The scenario runner randomises the plan too and
+  asserts the built site's landing template, palette colour, web fonts and
+  planned routes.
+- **Mermaid diagrams are now accessible figures with a toolbar (ZER0-013)** —
+  every ```` ```mermaid ```` fence (and legacy `<div class="mermaid">`) renders
+  as a `<figure>` with a rendered SVG and a small toolbar: zoom out / in / reset
+  (50–400 %, real layout — the SVG is resized, so the frame scrolls and
+  drag-to-pan, `Ctrl`+wheel and the `+` / `-` / `0` keys all work), **View
+  fullscreen** (a native `<dialog>` — the fix for a wide diagram shrunk to
+  illegibility on a phone; `Esc` closes it and focus returns to the opener),
+  **Copy diagram source**, and **Download as SVG** (page background baked in so
+  a dark-mode export stays readable). On pointer devices the toolbar floats over
+  the top-right corner on hover/focus; on touch devices it is a static row above
+  the diagram so it never covers it. `accTitle` becomes the visible
+  `<figcaption>` and the diagram's accessible name, `accDescr` its `<desc>`,
+  and the scrollable frame is a focusable, labelled region. A syntax error no
+  longer blanks the block: the figure shows the parse message, a hint, and the
+  source in a `<details>`, with *copy* still enabled. Colours are **derived from
+  the live design tokens** (`--bs-primary`, `--bs-body-bg`, `--zer0-color-*`)
+  through Mermaid's `base` theme, so diagrams follow the colour mode, the
+  selected skin and any `theme_color` override, and re-render in place when
+  those change; dark mode is decided by background luminance, so wizard mode and
+  dark skins get legible ink, and a contrast guard keeps nodes visible when the
+  brand equals the page colour. Pie slices, git branches and mind-map branches
+  get a 12-colour series fanned out from the brand hue. `securityLevel` now
+  defaults to `strict` (`mermaid.security_level: loose` restores `click`
+  callbacks / HTML labels); `mermaid.toolbar`, `fullscreen` and `download` can
+  switch the controls off. Implemented as `_includes/components/mermaid.html`
+  (loader: config JSON + two `defer` scripts — the 3.3 MB bundle used to load
+  synchronously in `<head>`) + `assets/js/mermaid-diagrams.js` +
+  `_sass/components/_mermaid.scss`, replacing ~400 lines of inline
+  `<script>`/`<style>` in the include; the `!important` SVG overrides that
+  flattened `classDef`/`style` colours and pie slices are gone. Toolbar strings
+  are `diagram_*` keys in `_data/ui-text.yml`. The docs page
+  (`/docs/features/mermaid-diagrams/`) now renders a live example of every
+  diagram type, the caption directive, per-node styling and the error state.
+  Guarded by `test/visual/features/mermaid.spec.js` (12 tests, smoke tier)
+  (evidence: [`test/visual/evidence/mermaid/`](test/visual/evidence/mermaid/README.md)
+  — dark-mode toggle keeps the SVG (before: SVG lost, stylesheet text on
+  screen); page overflow 0px at 320/390px; 11/12 docs diagrams rendered, 1
+  shown as an error card with its source kept).
+
+### Fixed
+
+- **Switching colour mode destroyed every Mermaid diagram** — the old include's
+  `MutationObserver` re-render emptied each `.mermaid` div and refilled it with
+  the div's *current* text, which after the first render is the SVG's own
+  stylesheet, and never cleared Mermaid's `data-processed` flag, so
+  `mermaid.run()` skipped the div. Toggling dark mode on `/quickstart/`,
+  `/about/` or `/docs/ruby-101/` replaced the diagram with a wall of
+  `#mermaid-… {font-family: …}` text and a permanent "Loading diagram…" label
+  (reproduced headlessly on `main`: `svgs: 1 → 0` after the toggle). Sources are
+  now kept per figure and every render goes through `mermaid.render()`, so a
+  mode or skin change re-renders from the original definition — asserted by the
+  regression test in `test/visual/features/mermaid.spec.js`.
+- **The Obsidian wiki-link resolver rewrote the inside of inline SVGs** —
+  `assets/js/obsidian-wiki-links.js` skips text under `CODE`/`PRE`/`A`/
+  `SCRIPT`/`STYLE` by comparing `nodeName`, but elements in the SVG namespace
+  report it in lower case (`style`, `text`), so a Mermaid diagram's own
+  `<style>` was walked and every `#id` selector in it was turned into a
+  `<a class="obsidian-tag">` link. The stylesheet lost its scoping: one
+  diagram's `#arrowhead path { fill }` became a bare `path { fill }` for the
+  whole page, and pie slices rendered dark grey while their legend showed the
+  right colours. The old include escaped it only because the resolver
+  special-cases the `.mermaid` class. The name check is now case-insensitive
+  and any `<svg>` subtree (graphics, never prose) is skipped, with
+  `.zer0-diagram` added to the class exemptions. `test/test_resolver.js` gains
+  a fixture with a lower-case `style`/`text` inside `<svg>`, and the Mermaid
+  spec asserts a pie slice's computed fill equals its own attribute and that no
+  unscoped `path` rule exists on the page.
+
+### Changed
+
+- **TOC scroll spy now bolds the section you are actually reading** — the
+  highlighted entry in the right-hand Table of Contents jumped around and sat
+  one to three sections ahead of the viewport. Measured on `/docs/features/toc/`
+  at 1280×820, the wrong entry was bolded at **19–23 of 25 scroll positions**
+  — the count moves between runs because which implementation won depended on
+  callback timing, which is the bug in one sentence.
+
+  Three implementations were toggling `.active` on the same
+  `#TableOfContents a` links, so whichever fired last won. Bootstrap's native
+  ScrollSpy was wired up twice — `data-bs-spy="scroll"
+  data-bs-target="#TableOfContents"` on `<body>` in `_layouts/root.html` *and*
+  on `.bd-main` in `_layouts/default.html` (whose `data-bs-offset="100"` had
+  been dead since Bootstrap 5.2 replaced that option with
+  `data-bs-root-margin`). `assets/js/ui-enhancements.js` ran a third observer
+  over *every* `a[href^="#"]` on the page, clearing `.active` from all of them
+  each time a `section[id]` intersected. Both Bootstrap hooks are removed —
+  the `<body>` one was also stripping server-rendered `.active` classes off
+  admin sidebar links, which `fixtures.gotoBeforeScrollSpy` exists to work
+  around — and the `ui-enhancements.js` observer is now scoped away from TOC
+  and sidebar links.
+
+  The theme's own spy (`assets/js/modules/navigation/scroll-spy.js`) was wrong
+  on its own terms too: it asked IntersectionObserver for the "most visible"
+  heading, but headings are a few pixels tall, so every heading inside the
+  observer band reports the same `intersectionRatio` — the winner was whichever
+  entry happened to be in that callback's batch, and a heading scrolling *out*
+  of the band triggered no re-evaluation at all. It now applies a positional
+  rule: the active heading is the last one whose top has crossed the reading
+  line (the document's `scroll-padding-top`, the same offset anchor navigation
+  uses), with the last heading winning once the page is scrolled to the bottom
+  so trailing sections shorter than the viewport are still reachable. The
+  answer is recomputed from scratch on each rAF-throttled scroll frame from
+  cached heading offsets, re-measured on resize and content reflow
+  (`ResizeObserver`), so it cannot drift out of sync.
+
+  Two smaller fixes ride along. Clicking a TOC entry now holds that entry
+  active while the smooth scroll animates, instead of flashing every heading
+  passed on the way. And keeping the active entry visible inside the TOC no
+  longer calls `scrollIntoView()`, which bubbles up and scrolls the *page* —
+  feeding straight back into the spy; it adjusts the TOC container's own
+  `scrollTop`, resolving that container at call time (`.bd-toc` on desktop,
+  `.offcanvas-body` on mobile) rather than assuming one. The active link also
+  carries `aria-current="true"`.
+
+  `config.scrollSpy.rootMargin`/`threshold` are replaced by
+  `config.scrollSpy.offset` (`null` = derive from `scroll-padding-top`) and
+  `tolerance`. Guarded by `test/visual/features/scroll-spy.spec.js` (smoke
+  tier), which is 5 failed / 1 passed against the pre-fix theme and 6 passed
+  with the fix. (evidence:
+  [`test/visual/evidence/scroll-spy/`](test/visual/evidence/scroll-spy/README.md)
+  — wrong TOC highlight at 19/25 scroll positions → 0)
+- **Navbar controls no longer flicker under a stationary pointer (#404)** —
+  `.nav-link:hover`, the Search/Settings utility buttons and the two sidebar/TOC
+  FABs applied `transform: translateY(-1px)`. A 1px lift moves the element out
+  from under a pointer parked on the row it vacates, so hover exits, the element
+  drops back under the pointer, and hover re-enters — an infinite flicker with
+  no pointer movement at all. Nav items are thin enough for a 1px lift to
+  reliably do it.
+
+  Deleting those declarations was **not sufficient**, and the reason is the
+  substantive finding here: `_sass/components/_ui-enhancements.scss` applies
+  `transform: translateY(-2px)` to `.btn:hover` — *every* button in the theme.
+  The utility buttons and both FABs are `.btn`s, so with the navbar's own 1px
+  lift removed the buttons kept flickering on the inherited 2px one — measured
+  on the built site, the Settings button lost and regained hover 14 times in
+  800ms with the pointer completely still. The fix therefore cancels it
+  explicitly with `transform: none`, the corrective pattern this repo already
+  uses in `_post-navigation.scss` and its `prefers-reduced-motion` blocks. The
+  FABs get the same treatment by the same reasoning — they are the same kind of
+  `.btn` with the same lift — but they were not rendered at any viewport reached
+  during verification, so that half is reasoned, not observed.
+
+  Background, colour and shadow transitions are untouched, and the controls keep
+  a pressed cue as `:active { transform: translateY(1px) }` — safe, because
+  `:active` only holds while the button is held down, so the pointer cannot
+  leave and re-enter in a loop.
+
+  Three corrections to the issue as filed. The vacated row is the **bottom**
+  edge, not the top — a probe parked on the top edge passes without exercising
+  the bug at all. Only a transform on the **hovered element's own box** can
+  flicker: `&:hover i { transform: scale(1.1) }` moves a child and never shrinks
+  the parent's hit box, so those went for consistency, not as causes. And
+  `.nav-link:hover`, named as the primary culprit, was **dead code** — its lift
+  sat inside `@media (min-width: 992px) { @container navbar-main (max-width:
+  75rem) }`, and measured on the built site at 1040/1140/1200/1280px its
+  computed hover transform is `none` at every width, on `main` too. Every
+  flicker actually observed was on the utility buttons.
+
+  Guarded by `test/visual/core/hover-stability.spec.js`: with the pointer on the
+  control's centre the border box must be byte-identical to its resting box and
+  the computed transform must be `none`; with the pointer held half a pixel
+  inside the bottom edge for 800ms, `mouseleave` must stay at zero. The verdict
+  is the *computed* value rather than "no matching rule exists", because
+  `.btn:hover` does still match these controls and always will — it is
+  overridden, not deleted. `mouseleave`, not `mouseout`: the latter also fires
+  when the pointer crosses onto a descendant, which is not the element losing
+  hover, and it produces a false positive on every `.nav-hover-dropdown` parent.
+  Against `main` the spec is 4 failed / 1 passed; with the fix, 5 passed.
+  Evidence in `test/visual/evidence/hover-flicker/` — the Settings button lost
+  hover 14 times in 800ms before, 0 after.
+
+  Scoped to the navbar. The issue's original acceptance criterion — *no
+  transform in any `:hover` rule under `_sass/`* — is 42 rules across ~15 files
+  (card lifts, book-cover tilts, recipe and author hovers) and a visual redesign
+  of a published theme rather than a defect fix; it also flagged
+  `transform: none`, which is the corrective pattern this repo already uses in
+  `_post-navigation.scss` and its `prefers-reduced-motion` blocks. A theme-wide
+  motion policy belongs in its own task.
+- **Mobile browser chrome now tracks the page surface (#281)** — `theme-color`
+  drives the iOS Safari address bar and the Chrome/Android task-switcher card.
+  It fell back to `theme_color.main`, which is the brand **accent** (`#007bff`
+  here), so a dark-first theme advertised a bright blue address bar; and being
+  config-gated it emitted **nothing at all** on `remote_theme` consumers, which
+  do not inherit this repo's `_config.yml` — the case the issue was originally
+  filed about. The include now emits scheme-aware tags sourced from
+  `--bs-body-bg` (light `#ffffff`, dark `#212529`, Bootstrap 5.3.3's own
+  surfaces) **with no configuration required**, and honors new optional
+  `favicon.theme_color_light` / `theme_color_dark` keys. A site that pins its
+  mode (`color_mode_default: dark`/`light`, or `color_mode_lock: true`) gets a
+  single unconditional tag instead, because `media="(prefers-color-scheme: …)"`
+  keys off the OS and a pair would hand light chrome to an OS-light visitor
+  reading a page the site renders dark. `favicon.theme_color` still pins one
+  color for both schemes, so existing consumer config is unchanged. Guarded by
+  four `@critical` tests in `test/visual/core/head-contract.spec.js` that
+  compare each value against the page's computed `--bs-body-bg` rather than a
+  constant, plus `test_theme_color_fallback_without_config` covering the
+  no-config consumer case.
+
+
+- **Consumers no longer inherit the theme's own navigation (#332)** — `install.sh`
+  copied the theme's entire `_data/` into every consumer, so each site's *own*
+  `_data/navigation/*.yml` was a verbatim copy of the theme's and carried the
+  theme's page taxonomy. Measured on a real install: **106 of 129 seeded
+  navigation URLs pointed at pages the installer does not create** — ~47 per
+  doc page from `docs.yml` alone, which htmlproofer on a consumer counted as
+  ~1,598 broken internal links across ~34 docs, none of them removable from
+  consumer content. `_data/navigation/` is now held back from the theme copy
+  and seeded from `templates/data/navigation-*.yml.template`, whose links
+  resolve against the pages the installer actually creates: **0 of 26
+  unresolvable**. All seven files are covered, not just `docs.yml`. Because
+  `create_from_template` skips a file that already exists, a re-run or upgrade
+  preserves navigation a consumer has edited. The sidebar renderer is
+  unchanged — `nav: tree` → `auto` → `page.collection` was always correct, it
+  was being handed the wrong data. Existing consumers are not fixed
+  retroactively (`_data` is not part of Jekyll's theme payload); see
+  [Migrating already-seeded navigation data](docs/systems/theme-propagation.md).
+  Guarded by `test/test_install_navigation_seed.sh`, which fails on the old
+  installer naming all 51 seeded dead links.
+
+- **Translation placeholders leaked into published French pages** — before a
+  line is sent to the model, `scripts/translate.rb` masks every non-translatable
+  span as a `⟦N⟧` token and restores it afterwards. The patterns run in order,
+  coarse first, so a span can be masked **twice**: a Liquid expression inside a
+  link destination becomes `](⟦3⟧)` and is then masked again as a whole, and the
+  same happens to Liquid inside an inline code span. `unmask` used a single
+  `gsub`, and `gsub` never rescans its own replacement text — so the outer span
+  came back and the inner token was stranded as a literal `⟦3⟧` on the page.
+  That is 107 tokens across 23 generated pages on `main` today, and where the
+  masked span was a URL it is a dead link: `[couleurs](⟦3⟧)` in
+  `fr/about/design.md`, `href="⟦24⟧"` in the same file, the whole Liquid
+  variable table in `fr/docs/customization/layouts.md`. `unmask` now substitutes
+  until the text stops changing, and refuses to return anything still holding a
+  placeholder — a corrupt page fails its own job (counted, logged, run exits
+  non-zero) rather than shipping. The existing "no placeholder tokens leak"
+  assertions in `test/test_i18n.sh` were correct but toothless: no fixture line
+  nested a mask. Both shapes are now in the fixture, so the guard fails without
+  the fix.
+
+  The already-generated pages are not repaired by this change. Staleness is
+  decided by source SHA alone, so a masker fix does not make an unchanged page
+  stale; repairing them needs a `--full` re-translation.
+- **`components/background-image.html` — cover art painted as a CSS background,
+  announced correctly (#401)** — the theme had a solid convention for art
+  rendered as {% raw %}`<img>`{% endraw %} (`preview-image.html` always emits an escaped `alt`)
+  and none for art painted as a **background**. A background image is invisible
+  to assistive technology, so such a box announces nothing at all. The correct
+  pattern already existed by hand in three places (`abc-letter.html`, the
+  article rating stars, `theme-customizer.html`) without being a named
+  convention; this generalizes it. Two branches: a real image gets
+  `role="img"` with an escaped `aria-label`, a decorative one gets
+  `aria-hidden="true"` and **neither** `role` nor `aria-label` — combining them
+  announces a graphic and then hides it, which is worse than either alone.
+  Decorative is the **default**, and the real-image branch must earn it with
+  both a `src` and a non-empty `alt`. Path handling follows
+  `preview-image.html`. Purely additive: no in-theme call site, no CSS, no
+  layout change, and `content/intro.html` is deliberately untouched — it paints
+  a background *and* wraps the page `<h1>`, so `role="img"` there would delete
+  the heading from the accessibility tree. Guarded by
+  `test_background_image_include_contract`, which renders the include and
+  checks both branches, the escaping and all three path cases.
+- **Heading outlines no longer skip levels in theme chrome (#436)** — several
+  components picked a heading element for its default **font-size** rather than
+  its position in the document, so an article read
+  `h1 → h2 → h6 → h2 → h5 → h3 → h6` to anyone navigating by heading. Measured
+  across a 415-page build: **391 of 415 pages carried at least one skip, 1,060
+  in total**; now 66 and 173. Size and level are decoupled — `<h3 class="h6">`
+  keeps the small type and states the real depth — in the cookie dialog, the
+  settings offcanvas, the language panel, the author card and the related-posts
+  region. The language panel was not in the report and was doing the same thing
+  on every page. `author-card.html` renders under twelve different call sites,
+  so its level is now `heading_level` (default `5`, unchanged for callers that
+  do not pass it) rather than a guess. Fails **WCAG 1.3.1**. Nothing moves
+  visually. Guarded by `test/visual/core/heading-outline.spec.js`. One offender
+  is injected at **runtime** by `assets/js/modules/theme/appearance.js`, so no
+  grep over `_includes`/`_layouts` could find it — only a rendered assertion
+  does. Still open, deliberately: 66 pages with inline card markup in the news
+  and section index layouts, plus the `palette-generator` and `skin-editor`
+  admin tools — see the evidence bundle.
+
+- **Liquid written as documentation was being executed, not displayed** — Liquid
+  runs before Markdown, so backticks and code fences never escaped it; they only
+  changed how its *output* was displayed. Two pages leaked as a result. The
+  CHANGELOG page carried a **second full copy of `<head>` inside its body**
+  (Bootstrap CSS, Bootstrap Icons and `X-UA-Compatible` all emitted twice, and
+  the Google Tag Manager snippet a second time on a production build) because an
+  {% raw %}`{% include core/head.html %}`{% endraw %} in prose was run rather than shown. The
+  Layout Variables table in `/docs/customization/layouts/` documented nothing:
+  {% raw %}`{{ content }}`{% endraw %} injected the whole rendered page into a table cell and
+  {% raw %}`{{ page.title }}`{% endraw %} rendered as the literal word "Layouts", leaving
+  196 KB of leaked layout output where a five-line code sample belonged. Both are
+  now wrapped in Liquid raw blocks, the idiom the same files already used
+  elsewhere. A `test_content_liquid_is_raw_protected` guard in
+  `test/test_core.sh` fails if injecting Liquid appears unprotected inside a code
+  fence or code span again. The layouts doc also had its layout **names** and
+  **hierarchy** corrected against `_layouts/`: `journals` has not existed since
+  the v1.0 rename to `article`, and three of the four children in the
+  inheritance diagram were wrong — `home` and `landing` inherit `root`, not
+  `default`, which decides whether a layout renders the sidebar and TOC at all.
+
+- **Developer doc banners no longer ship to visitors (#375)** — the 1,065
+  multi-line {% raw %}`<!-- ... -->`{% endraw %} banners documenting `_includes/**` and
+  `_layouts/**` (file paths, dependency lists, design rationale) are now Liquid
+  {% raw %}`{% comment %}`{% endraw %} blocks, which Jekyll strips at build time. The
+  in-source documentation is unchanged; only the delimiters moved. Across a
+  415-page build the delivered HTML drops from 91.5 MB to 71.6 MB — **21.7%** —
+  because an include's banner is re-emitted at every call site, not once:
+  `/authors/default/` alone carried 130,840 bytes of it from `post-card.html`
+  rendering 1,100 times. Per page: 47,898 comment bytes in 344 blocks → 111
+  bytes in 3. The four boundary markers inside Google's own copy-paste
+  analytics snippets are kept verbatim, and comments inside
+  `<script>`, `<style>`, `<pre>` or a Liquid raw block are untouched. A new
+  `test_developer_doc_banners_are_liquid` guard in `test/test_core.sh` fails if
+  any reappear. Two side effects worth knowing: reading-time estimates were
+  counting the banners and are now correct (`/docs/` claimed 63 minutes, really
+  24), and three pages that leak unescaped Liquid emit less as a result — those
+  leaks are pre-existing and filed separately.
+
+- **Setup wizard: live preview, vertical stepper, draft persistence (T-040, #408)** —
+  the `_config.yml` preview is now a **persistent sticky panel** shown at every
+  step rather than an element inside step 5, regenerated on every keystroke,
+  with Copy and Download always enabled. The nav-pills tab row is replaced by a
+  left **vertical stepper** with done/active/upcoming state: a step is locked
+  until every earlier step validates, and Back is always allowed. The form is
+  mirrored to `localStorage` under `zer0-setup-draft` (debounced 300ms),
+  restored on load with a "Draft saved" chip, and cleared once the file is
+  downloaded. Email and URL fields are validated **on blur** with `is-invalid`
+  and an explanatory message, cleared as soon as you retype; the Review step
+  lists any unfilled recommended fields as warnings. Every step pane shares one
+  CSS grid cell, so the container is always as tall as the tallest step, and the
+  nav row is pinned to the bottom — **Back/Next no longer move vertically**
+  between steps. New
+  `_sass/components/_setup-wizard.scss`, and the wizard gains its first
+  automated coverage in `test/visual/features/setup-wizard.spec.js`.
+
+  Holding the container's height turned out to be only half of "Back/Next no
+  longer move": the nav row's own height still varied. Step 1's row was a block
+  box, so its button sat on a baseline and rode ~2px high, and in the real
+  ~270px middle column `Review & Download` wrapped to a second line, pushing
+  that button's top up a further 16px. The row is now always a flex box and its
+  buttons never wrap. Draft persistence gained a matching fix: the 300ms
+  debounce meant the last edit before a reload was still only a queued timer and
+  was lost, so a pending write is now flushed on `pagehide` and on a hidden
+  `visibilitychange`. Before/after measurements are in
+  `test/visual/evidence/setup-wizard-nav-alignment/`.
+
+- **Language switcher: icon-only trigger and a compact, positive menu (T-038, #406)** —
+  the navbar trigger drops its `EN` text span and the Bootstrap caret for a
+  38px square icon button, with `title` and `aria-label` carrying the language
+  name. In the menu (both the navbar dropdown and the Settings panel variant),
+  the current language is now marked with a tint and a check icon instead of
+  Bootstrap's `.active` primary fill, which read as a selected nav item rather
+  than "you are here". **Untranslated languages are no longer disabled rows** —
+  they link to the source page and still record the `zer0-lang` preference, so
+  the menu has no dead ends. Machine-generated translations carry a small
+  `auto` chip, and the per-row "(Not yet translated)" text — the main driver of
+  menu width — collapses into one footnote under a divider, referenced from
+  each marked row via `aria-describedby`. The dropdown menu is capped at 220px.
+  New `ui` keys `lang_machine_translated`, `lang_machine_translated_title` and
+  `lang_untranslated_note` in `_data/ui-text.yml`; each use carries a literal
+  fallback, because `core/i18n.html` replaces the `ui` map wholesale on a
+  translated page and `_data/i18n/<lang>.yml` will not have them until
+  `scripts/translate.rb` next runs.
 
 ### Added
 
@@ -117,6 +598,148 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
   was updated to exercise it through the Settings panel.
 
 ### Fixed
+
+- **Finished work kept reopening its own issues** — `scripts/sync-backlog.rb`
+treats `_data/backlog.yml` as the source of truth and **reopens** any issue whose
+task is not `done`. T-038, T-040 and T-045 shipped in v1.29.0 (#431, #432, #425)
+and their `Closes #NNN` commits duly closed #406, #408 and #417 — then the next
+sync reopened all three, because the backlog still said `open`. Marked done with
+their PR links, which is the only thing that actually closes them.
+- **The nightly sticky issue could be raised but never cleared (#326)** —
+`nightly-extended.yml` files and updates a sticky issue on failure and does
+nothing on recovery, so a fixed failure stayed open indefinitely. #326 sat open
+five days past its own fix, carrying a P1 into every triage pass. A
+`report-recovery` job now comments and closes it when the tier goes green. It is
+gated on `preflight.outputs.go == 'true'` as well as both jobs succeeding: the
+preflight short-circuits on an unchanged `main` and reports `skipped`, so a bare
+`success()` would close the issue on a night that tested nothing.
+- **37 pages shipped dead controls with dangling ARIA references (#373)** —
+`#bdSidebar` and `#tocContents` are emitted by `_layouts/default.html` alone,
+but their toggles live in `core/header.html` and `core/footer-fabs.html`, which
+`_layouts/root.html` includes on **every** layout. On any layout inheriting
+`root` directly (admin, stats, 404, section, home, book-*) the toggle rendered
+pointing at an offcanvas that was never in the document: clicking did nothing,
+and assistive tech followed `aria-controls` to a missing element. Measured
+across a 415-page build: **19 pages with a dangling `#bdSidebar`** (the French
+`/about/**` tree) and **18 with a dangling `#tocContents`** (404, CHANGELOG,
+`_design-system/**`) — **0 after**. `navigation/sidebar-config.html` now
+publishes `sidebar_offcanvas_rendered`, and both controls are gated on it.
+`footer-fabs.html`'s previous **denylist** of layouts to skip is replaced by
+that positive gate: a denylist fails open, and this one had already fallen
+behind (`404` and the `book-*` layouts were missing). The layout list is pinned
+against the real inheritance graph by
+`test/test_core.sh :: test_sidebar_offcanvas_layout_gate`, which walks every
+`_layouts/*.html` and fails if the two disagree in either direction.
+
+- **Seven footer links had no accessible name on mobile (#435)** — the "Follow
+Us" social links and the RSS link render an `<i>` that is `aria-hidden="true"`
+beside a `<span class="d-none d-md-inline">` label. Below the `md` breakpoint
+the span is `display:none`, so it leaves the accessibility tree too and the link
+was announced as a bare "link" — measured: **7 nameless links at 375px**. Each
+now carries an `aria-label` matching its visible text exactly, so the name is
+correct on mobile and still contains the visible label at `md`+ (WCAG 2.5.3
+Label in Name). Covered by `test/visual/core/accessible-names.spec.js`, which
+asserts at **mobile** width — the same assertions pass at desktop on the
+unfixed code, which is why the bug survived the existing suite.
+- **Search results were never announced to screen readers (#279)** — the modal
+rewrites its results container without moving focus, so assistive tech had no
+signal that anything had happened. A visually-hidden `role="status"`
+`aria-live="polite"` region now announces a concise count ("7 results for
+jekyll", or "12 of 40 results…" when the list is truncated), and "No results
+found." The **results list itself is deliberately not live**: announcing eight
+titles and their snippets on every keystroke would be unusable. `aria-atomic`
+keeps the summary a single message, and a repeated string is cleared first so an
+unchanged announcement is not swallowed as a no-op.
+
+- **`<meta charset>` shipped ~26 KB into the document, past the spec's 1024-byte
+window (#372)** — the HTML spec only scans the first 1024 bytes for the
+character-encoding declaration. The tag sat in `_includes/core/head.html` below
+Google Tag Manager, console-capture, page-views, mermaid and nanobar — and below
+two multi-line HTML doc banners that shipped verbatim to production — so a
+served page declared its encoding at byte **26058**. Past the limit a browser
+stops looking and decodes with its locale default, mangling every non-ASCII byte
+until it re-parses; this theme ships UTF-8 throughout (`fr/**` translations,
+em-dashes, curly quotes), so that is a live corruption risk rather than a lint
+nit. The tag now sits at the very top of `_layouts/root.html` — measured at byte
+**318**, verified across all 400 built pages — and `root.html`'s own banner is a
+Liquid comment (stripped at build) rather than an HTML one, which is what freed
+the budget. Regression coverage in `test/visual/core/head-contract.spec.js`
+measures the **served bytes**, since a source-order assertion would have passed
+both before and after.
+- **The Atom feed was undiscoverable (#371)** — `jekyll-feed` generates
+`/feed.xml` but emits no autodiscovery `<link>` unless `feed_meta` is called,
+which the theme never did, so readers and crawlers could not find the feed even
+though the footer linked it. `<head>` now carries
+`<link rel="alternate" type="application/atom+xml">`, honouring `site.feed.path`.
+Written out directly rather than via `feed_meta` so a consumer site that has not
+enabled the plugin does not hard-fail with `Unknown tag`. A test asserts the
+advertised URL actually returns a feed — a discoverable link to a 404 would be
+worse than none.
+
+- **Footer "Info" and "Cookie Preferences" are buttons, not links (#320)** —
+  both controls open in-page UI (the `#info-section` offcanvas and the
+  `#cookieSettingsModal` modal) but shipped as `<a href="#" data-bs-toggle>`, so
+  assistive tech announced them as links — WCAG 4.1.2 Name, Role, Value — and
+  whenever Bootstrap's toggle did not fire the browser followed `href="#"` and
+  jumped the page to the top. All three occurrences are now
+  `<button type="button">`: the Info trigger is emitted **twice** by
+  `_includes/core/footer.html`, once in each branch of the powered-by loop, and
+  a site with no `powered_by` credits configured renders the branch a
+  single-site fix would have missed. `.powered-by-link` is now element-agnostic
+  (it already styled `<a>`, `<span>` and now `<button>`) and carries the
+  `<button>` reset Bootstrap Reboot does not supply — `appearance`,
+  `background`, `border`, `colour` — with the new `.footer-inline-button` doing
+  the same for a button in running text, so the swap is visually inert. The
+  back-to-top control keeps its `<a href="#">`: scrolling to the top is its
+  actual behaviour, not a side effect. Regression coverage: "Accessibility —
+  footer in-page toggles are buttons" in
+  `test/visual/core/accessibility.spec.js`, which asserts the element identity
+  directly — axe-core has no rule that fires on an anchor used as a button, so
+  an axe-based assertion passes on the broken markup too. "powered-by credits
+  are real links" in `test/visual/core/layout-chrome.spec.js` already banned
+  `href="#"` but sampled only the first five links, and `site.powered_by` pushed
+  the offending Info anchor past index 4; it now checks every credit link.
+  (evidence:
+  [`test/visual/evidence/footer-button-semantics/`](test/visual/evidence/footer-button-semantics/README.md)
+  — shipped vs. reset-stripped at 1280px, footer overflow 0px at 375/768/1280)
+
+- **`<html class="no-js">` is upgraded to `js` again (#319)** — `_layouts/root.html`
+  shipped the standard progressive-enhancement hook but nothing ever swapped
+  it: the string `no-js` occurred in exactly one file in the repository, and in
+  no SCSS, JS, test or doc. Every page on every downstream site permanently
+  carried `no-js` with JavaScript fully enabled, so a consumer writing
+  `html.no-js .foo {…}` / `html.js .foo {…}` got the no-JS branch for everyone
+  — the class advertised a capability the theme did not deliver. An inline
+  script is now the **first child of `<head>`**, above
+  {% raw %}`{% include core/head.html %}`{% endraw %} (which opens with Google Tag
+  Manager, so
+  "first in that include" is not "first in `<head>`") and deliberately neither
+  `defer` nor `async`, since it has to run before the first stylesheet is
+  fetched or `html.js` rules would flash. The served HTML still carries
+  `class="no-js"`, so the JS-disabled branch stays correct and the change is
+  purely additive for consumers already styling against the served markup.
+  Regression coverage: `test/visual/core/progressive-enhancement.spec.js`
+  (smoke tier) pins both directions of the contract — `js` with scripts on,
+  `no-js` with them off — plus the delivery mechanism, because a fix that
+  simply deleted `class="no-js"` would satisfy a naive one-sided assertion
+  while removing the hook entirely.
+
+- **Pages build: Liquid errors no longer ship mangled pages silently.** The
+  `github-pages` gem renders every non-excluded Markdown file through Liquid, so
+  prose that merely *looks* like a template is executed as one. Jekyll 3 reports
+  that as a `Liquid Warning`, drops the expression, and still exits 0 — so the
+  Pages workflow stayed green while publishing damaged pages. Two were live:
+  `/CHANGELOG/` rendered "Added `,,` and to the template renderer" because
+  `{% raw %}{{DEFAULT_BRANCH}}{% endraw %}` and its siblings were evaluated to
+  nothing, and `/_design-system/components/feedback/Skeleton.prompt/` rendered
+  `<div style=>` because the JSX `style={% raw %}{{ … }}{% endraw %}` was a
+  Liquid syntax error. A third defect was invisible: a literal
+  `{% raw %}{% raw %}{% endraw %}` written as prose in a changelog entry opened a
+  real block that swallowed the next 945 lines of the published page. All the
+  affected spans are now escaped, `pages.yml` fails the build on
+  `Liquid Warning`/`Liquid Exception` for both the theme and the example site,
+  and `scripts/lint-liquid-raw.rb` (wired into the `quality` suite) catches the
+  silent half — an unbalanced raw block never raises a warning to gate on.
 
 - **Navbar: every top-level item now fits, at every desktop width** — the bar
   was pinned inside a centred `.container-xl` (max 1140–1320px), so the menubar
@@ -294,6 +917,8 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
 
 ### Fixed
 
+- **The skip link never moved keyboard focus (#278)** — `_layouts/root.html`
+rendered `<main id="main-content">` with no `tabindex`, and `<main>` is not natively focusable, so activating "Skip to main content" scrolled the page while focus stayed on `<body>`: the next `Tab` returned the user to the header nav they had just skipped. That defeats WCAG 2.4.1 (Bypass Blocks) on every consuming site, and the theme's own docs already prescribed the fix (`skip-to-content.md` → *Focus Not Moving* → "Add `tabindex=\"-1\"` to target") while the shipped layout omitted it. Now `<main id="main-content" tabindex="-1">`, paired with `#main-content:focus { outline: none; }` in `_sass/utilities/_focus.scss` so the container does not paint a ring — descendants keep theirs, and the rule is safe only because `-1` keeps the container out of the sequential `Tab` order. Measured across all three engines: focus lands on `#main-content` in Chromium, Firefox **and WebKit** (the engine the report named), where before it moved in none of them. The stale `<div id="main-content">` example in the English and French docs now matches the shipped markup.
 - **Seven theme dialogs labelled themselves with a bare `<h5>`** — the search
 modal, cookie settings modal, statistics help modal and the settings / background / section / admin offcanvases each opened with `<h5 class="modal-title">` or `<h5 class="offcanvas-title">`, so anyone navigating by heading met a level-5 heading as the dialog's title, skipping h3 and h4. Six other dialogs already used the correct `<h2 class="…-title h5">` form, so the theme contradicted itself half the time. All seven now match. `.h5` reproduces the exact sizing, so the change is visually inert. `_includes/docs/bootstrap-docs.html` and the docs prose examples are deliberately untouched — they reproduce upstream Bootstrap's own markup and should keep doing so. (evidence: [`test/visual/evidence/dialog-heading-levels/`](test/visual/evidence/dialog-heading-levels/README.md) — heading walk h2 → h5 becomes h2 → h2 on all six live dialogs, renders byte-identical)
 - **Cookie modal's "Your Privacy Rights" list was invisible in dark mode** — the
@@ -642,13 +1267,13 @@ feature docs with captured screenshots of both the broken widget and the giscus.
   `index.md`, and navigation. Empty now serialises to `[]`; `deploy` is
   deploy-only and also skips agent-file rewrites.
 - **github-pages / remote profile emitted a broken `remote_theme`.** The remote
-  `_config.yml` template resolved `{{GITHUB_REPO}}` to the *site's* repo; it now
-  uses a dedicated `{{THEME_REMOTE}}` variable (default `bamr87/zer0-mistakes`,
+  `_config.yml` template resolved `{% raw %}{{GITHUB_REPO}}{% endraw %}` to the *site's* repo; it now
+  uses a dedicated `{% raw %}{{THEME_REMOTE}}{% endraw %}` variable (default `bamr87/zer0-mistakes`,
   overridable via `THEME_REMOTE`).
 - **Deploy workflow templates had unsubstituted variables.** Added
-  `{{DEFAULT_BRANCH}}`, `{{RUBY_VERSION}}`, and `{{SITE_NAME}}` to the template
+  `{% raw %}{{DEFAULT_BRANCH}}{% endraw %}`, `{% raw %}{{RUBY_VERSION}}{% endraw %}`, and `{% raw %}{{SITE_NAME}}{% endraw %}` to the template
   renderer, so the generated `jekyll-gh-pages.yml` (and docker-prod/azure-swa
-  artifacts) no longer contain literal `{{…}}` tokens. Regression tests assert
+  artifacts) no longer contain literal `{% raw %}{{…}}{% endraw %}` tokens. Regression tests assert
   no unresolved tokens survive in any deploy artifact.
 - **Agent files were written twice** when `agents` appeared in both the task
   list and `SPEC_AGENTS`; `apply.sh` now runs the agents task at most once.
@@ -795,7 +1420,7 @@ feature docs with captured screenshots of both the broken widget and the giscus.
 - **Author avatars never render as protocol-relative `//assets/…` URLs** —
   `author-avatar-url.html` now builds the relative-path branch in a capture,
   collapses doubled slashes, and applies `relative_url` exactly once, instead
-  of the manual `{{ site.baseurl }}/{{ site.public_folder }}{{ avatar }}`
+  of the manual `{% raw %}{{ site.baseurl }}/{{ site.public_folder }}{{ avatar }}{% endraw %}`
   concatenation that produced `src="//assets/…"` (a URL browsers resolve
   against a host named `assets`) on consumer sites where `public_folder` is
   unset or carries a leading slash
@@ -1341,7 +1966,7 @@ feature docs with captured screenshots of both the broken widget and the giscus.
   to it from the Bootstrap, Layouts, and Styles docs.
 - **Bylines now use the shared author component.** The `article`, `note`,
   `notebook`, `news`, and `section` layouts plus `components/post-card.html`
-  previously printed `{{ page.author }}` as bare text; they now render
+  previously printed `{% raw %}{{ page.author }}{% endraw %}` as bare text; they now render
   `components/author-card.html` (`inline`), so a known author key resolves to a
   display name, avatar, and a link to their profile page. The inline
   "About the Author" block that was hard-coded in `_layouts/article.html` was
@@ -1488,7 +2113,7 @@ feature docs with captured screenshots of both the broken widget and the giscus.
 - Version bump: patch release
 
 ### Commits in this release
-- ae76a61f fix(content-review): correct code-fence detection (closing fences + {% raw %}) (#155)
+- ae76a61f fix(content-review): correct code-fence detection (closing fences + {% raw %}{% raw %}{% endraw %}) (#155)
 - f00fb654 docs(seo): strengthen SEO docs index metadata + fix agent-tier workflow (#154)
 
 ### Fixed
@@ -1498,10 +2123,10 @@ feature docs with captured screenshots of both the broken widget and the giscus.
   a file's score (e.g. `pages/_about/features/jekyll.md` scored 0/100 almost
   entirely from this false positive). The check now tracks fence open/close state
   and only validates opening fences.
-- **content-review: ignore Liquid `{% raw %}` blocks** in the quality and style
-  checks. Code fences, headings, images, and terminology inside `{% raw %}…
-  {% endraw %}` are literal display examples, not page structure, and were being
-  counted as real findings.
+- **content-review: ignore Liquid `{% raw %}{% raw %}{% endraw %}` blocks** in the quality and style
+  checks. Code fences, headings, images, and terminology inside a Liquid
+  `{% raw %}{% raw %}{% endraw %}` block are literal display examples, not page
+  structure, and were being counted as real findings.
 
 ## [1.18.0] - 2026-06-13
 
@@ -1929,7 +2554,7 @@ feature docs with captured screenshots of both the broken widget and the giscus.
 - **Sidebar collapse — VS Code style**: Left sidebar (`#bdSidebar`) and right TOC (`#tocContents`) now collapse to a slim 36 px rail (`--zer0-sidebar-rail-width`) instead of being fully hidden on desktop. The visibility toggle icon (`bi-layout-sidebar-inset` / `bi-layout-sidebar-inset-reverse`) stays mounted on the rail so users can re-expand the panel with a single click — the floating action buttons (`.bd-sidebar-fab`, `.bd-toc-fab`) are now hidden at `≥992 px` since the rail toggle replaces them. `_sass/core/_docs-layout.scss`, `_sass/layouts/_navbar-extras.scss`.
 - **Smooth transitions**: `.bd-layout` and `.bd-main` now animate `grid-template-columns` and `gap` over `--zer0-motion-duration-base` (0.3 s) with `--zer0-motion-ease-standard`; sidebar contents cross-fade via `opacity` + delayed `visibility`. Honors `@media (prefers-reduced-motion: reduce)` by disabling all related transitions.
 - **Toggle behavior**: `sidebar-visibility.js` and `toc-visibility.js` no longer set `button.hidden = true` on the rail toggle when collapsed, keeping it interactive in the collapsed state. Aria labels (`Hide…` / `Show…`) update on each toggle.
-- **Cache-bust**: Added `?v={{ site.time | date: '%s' }}` to the navigation ES-module `<script type="module">` tag in `_includes/components/js-cdn.html` to force re-fetch on rebuild (browsers cache ES modules indefinitely by URL).
+- **Cache-bust**: Added `{% raw %}?v={{ site.time | date: '%s' }}{% endraw %}` to the navigation ES-module `<script type="module">` tag in `_includes/components/js-cdn.html` to force re-fetch on rebuild (browsers cache ES modules indefinitely by URL).
 - **Navbar dropdown**: Dropdown toggle button set to `align-self: stretch` so it spans the full navbar height, making it easier to invoke on touch/small screens; chevron icon `font-size` increased to `1em` for better legibility. `_sass/core/_navbar.scss`.
 - **Syntax highlighting**: Dual-palette system — `_sass/core/_syntax.scss` now uses a GitHub Light palette for `.highlight` (light mode) and scopes the Material Dark base16 palette to `[data-bs-theme="dark"] .highlight`, fixing near-invisible token colors on light backgrounds.
 - **Theme preview gallery**: Expanded to 20 sections with 6 new components: Callouts (5 types), Accordion, Progress & Spinners, Breadcrumb & Pagination, Tooltips & Popovers, and Icons showcase. TOC updated accordingly; Bootstrap tooltip/popover JS initializer added. `_includes/components/theme-preview-gallery.html`, `pages/_about/settings/theme-preview.md`.
@@ -2974,7 +3599,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
 - **Troubleshooting Guide**: Added sections for Docker issues, Jekyll build errors, front matter problems, performance optimization
 - **Jekyll Guide**: Added directory structure, configuration files, content collections, essential commands, topic index
 - **Bootstrap Guide**: Added CDN loading patterns, key components, responsive breakpoints, custom styles, icons
-- **Liquid Guide**: Added syntax examples with `{% raw %}` tags, filters, control flow, includes
+- **Liquid Guide**: Added syntax examples with `{% raw %}{% raw %}{% endraw %}` tags, filters, control flow, includes
 - **Ruby Guide**: Added version commands, common commands, key files, Docker usage, troubleshooting
 - **Front Matter Guide**: Added required/optional fields, layout options, collection-specific fields, complete examples
 - All documentation pages now include `sidebar: nav: docs` for consistent navigation

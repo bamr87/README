@@ -5,10 +5,10 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 908,
+    "pages": 920,
     "sections": 93,
     "max_depth": 7,
-    "skipped": 16
+    "skipped": 17
   },
   "skipped": [
     ".claude",
@@ -21,6 +21,7 @@
     ".github",
     ".issues",
     ".quests",
+    ".vscode",
     "README.md",
     "link-check-results/ai_analysis.md",
     "link-check-results/detailed_analysis.md",
@@ -28,19 +29,19 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "50565621728ed44b",
+  "fingerprint": "0240908e0eb4653d",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 908,
+    "pages": 920,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 1.0,
         "index": "it-journey/redirects/README.md",
-        "pages": 223,
+        "pages": 229,
         "children": [
           {
             "type": "section",
@@ -430,7 +431,7 @@
             "title": "Test Directory",
             "rel": "test",
             "index": "it-journey/test/README.md",
-            "pages": 143,
+            "pages": 149,
             "children": [
               {
                 "type": "page",
@@ -587,7 +588,7 @@
                 "title": "Quest Validator - IT-Journey Quest Testing Framework",
                 "rel": "test/quest-validator",
                 "index": "it-journey/test/quest-validator/README.md",
-                "pages": 128,
+                "pages": 134,
                 "children": [
                   {
                     "type": "page",
@@ -631,7 +632,7 @@
                     "title": "Quest walkthrough session reports",
                     "rel": "test/quest-validator/walkthroughs",
                     "index": "it-journey/test/quest-validator/walkthroughs/README.md",
-                    "pages": 122,
+                    "pages": 128,
                     "children": [
                       {
                         "type": "page",
@@ -1362,6 +1363,42 @@
                       },
                       {
                         "type": "page",
+                        "title": "2026 08 31 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-08-31-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-08-31-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 01 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 02 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-02-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-02-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 03 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-03-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-03-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 04 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-04-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-04-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 05 Developer 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-05-developer-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-05-developer-0001.md"
+                      },
+                      {
+                        "type": "page",
                         "title": "\ud83d\udcc6 Quest Walkthrough \u2014 Security Specialist \u00b7 Level 0010",
                         "path": "it-journey/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md",
                         "rel": "test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md"
@@ -2040,7 +2077,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 628,
+        "pages": 634,
         "children": [
           {
             "type": "page",
@@ -4208,6 +4245,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "gitinit.sh \u2014 interactive and headless repository initializer.",
+                    "path": "it-journey/pages/_quests/0001/building-testing-git-init-script.md",
+                    "rel": "pages/_quests/0001/building-testing-git-init-script.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "In an existing Jekyll site, add the SEO and sitemap plugins",
                     "path": "it-journey/pages/_quests/0001/seo-optimization.md",
                     "rel": "pages/_quests/0001/seo-optimization.md"
@@ -4223,12 +4266,6 @@
                     "title": "Install a modern Ruby with Homebrew (the system Ruby is too old)",
                     "path": "it-journey/pages/_quests/0001/jekyll-fundamentals.md",
                     "rel": "pages/_quests/0001/jekyll-fundamentals.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "install bats-core (macOS)",
-                    "path": "it-journey/pages/_quests/0001/building-testing-git-init-script.md",
-                    "rel": "pages/_quests/0001/building-testing-git-init-script.md"
                   },
                   {
                     "type": "page",
@@ -5615,7 +5652,7 @@
             "title": "\u267e\ufe0f Quest Perfection Dashboard",
             "rel": "pages/_quest-reports",
             "index": "it-journey/pages/_quest-reports/index.md",
-            "pages": 122,
+            "pages": 128,
             "children": [
               {
                 "type": "page",
@@ -6343,6 +6380,42 @@
                 "title": "2026 08 29 Digital Artist 0001",
                 "path": "it-journey/pages/_quest-reports/2026-08-29-digital-artist-0001.md",
                 "rel": "pages/_quest-reports/2026-08-29-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 08 31 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-08-31-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-08-31-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 01 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-01-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-09-01-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 02 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-02-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-09-02-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 03 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-03-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-09-03-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 04 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-04-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-09-04-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 05 Developer 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-05-developer-0001.md",
+                "rel": "pages/_quest-reports/2026-09-05-developer-0001.md"
               },
               {
                 "type": "page",
