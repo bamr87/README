@@ -7,8 +7,7 @@ title: Vortex11
 ---
 Chunk Corruption
 ----------------
-You must corrupt the heap in order to gain arbitrary control of this
-program. Do recall, the application is using phkmalloc.
+You must corrupt the heap in order to gain arbitrary control of this program. Do recall, the application is using phkmalloc.
 
 Reading Material
 ----------------
