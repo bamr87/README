@@ -18,7 +18,7 @@ What is missing is everything around the core that turns "a generated README" in
 
 - **Provenance.** No document knows which upstream commit it came from, so nothing can say "this is 40 days stale" or link a claim back to its source.
 - **Analysis.** The only drift the platform detects is drift of its *own* generated surfaces. It does not detect stale corpora, dead links, missing governance files, undocumented directories, stub pages, or fleet-wide inconsistencies.
-- **Gates that the automation itself obeys.** The weekly cron commits straight to `main`, bypassing the very gates it enforces on humans. `main` is drifted today because of it (Section 1.2).
+- **Gates that the automation itself obeys.** The weekly cron commits straight to `main`, bypassing the very gates it enforces on humans. `main` is drifted today because of it (Section 1.2). Its commits also trigger no downstream workflow, so the site has never been redeployed after a refresh.
 - **Distribution beyond one README.** No `llms.txt`, no token-budgeted context packs, no reports, no change digest, no way for a fleet repo to display its own documentation health.
 - **A loop.** Findings are printed to CI logs and forgotten. Nothing turns them into tracked issues, proposals, or trends.
 
@@ -65,6 +65,8 @@ Two adjacent defects surfaced in the same audit:
 
 4. **Upstream deletions never propagate.** `process.py` only writes and `aggregate.sh` only copies; across the entire history, the automated commits have deleted **zero** corpus files. Renames and removals upstream leave ghosts. `barodybroject` already carries a 73-document ghost tree under `docs/barodybroject/README/**`, 56 of them byte-identical to siblings elsewhere in its corpus; fleet-wide, 152 documents sit in 73 identical-content groups.
 5. **The quality report measures the wrong things.** `lint_docs.py` flags 30,761 "line too long" issues, which is exactly what the house rule *one paragraph per line* (`markdown-oneline.yml`) mandates. `check_frontmatter.py` demands `tags` and `category` on every aggregated page, which upstream content cannot satisfy. The PR comment therefore reports issues by the tens of thousands (40,370 on today's corpus; the committed `docs/results/docs_quality_report.json` still says 8,564 from an older 2,749-file corpus) that nobody can or should act on, which trains readers to ignore it.
+6. **The cron's commits trigger nothing downstream.** `git-auto-commit-action` pushes with the default `GITHUB_TOKEN`, and GitHub fires no workflow events for such pushes. None of the eight automated refresh commits since July (2026-07-20 through 2026-09-07) started `deploy-pages.yaml`, `markdown-oneline.yml` or `ci.yml`. The site was last deployed on 2026-09-04 by a human merge, so the published site has never shown a refresh the cron made until a person happened to touch `docs/**`. The only check the cron meets is the `schema_lint` step it runs in-line.
+7. **Two automations fight over the corpus.** The house rule *one paragraph per line* is meant to cover the corpus (the owner's #19 unwrapped 307 corpus files), but every crawl brings upstream prose back in wrapped, and per item 6 the cron's commit never meets the prose gate. The next pull request that touches any markdown then receives a bot commit that unwraps the whole corpus: on the PR carrying this plan, `9c8b99de` rewrote 143 files under `docs/` (117 OverTheWire, 25 it-journey, 1 zer0-mistakes). After the merge, the next crawl re-wraps them and the cycle repeats. The rule has to be applied at ingest, by `process.py`, so the corpus the cron commits is already compliant.
 
 ### 1.3 Other findings
 
@@ -226,6 +228,7 @@ Class *drift* = generated or synced surfaces disagree with their source. Class *
 | D7 | Ghosts: corpus files whose upstream path no longer exists; identical-content duplicates within a project | drift | no | 1 | 152 documents today |
 | D8 | Link health: internal broken (target absent upstream), internal-to-code (target exists upstream but is not a doc), cross-project, external (optional HEAD probe, cached, weekly) | drift | no | 2 | Separates the "expected" MkDocs warnings from real 404s |
 | D9 | Metadata drift: `lastmod` older than the file's last commit; `version:` in README disagrees with the CHANGELOG head | drift | no | 2 | |
+| D10 | Deploy drift: the commit the published site was built from is behind `main` (or the last refresh) | drift | no | 1 | Reads the Pages deployment API or a build stamp written into the site |
 | G1 | Governance files per profile (README, LICENSE, CONTRIBUTING, CHANGELOG, SECURITY, CODE_OF_CONDUCT, CLAUDE.md or AGENTS.md, SCHEMA.md) | gap | no | 2 | Profiles by `kind` in the registry |
 | G2 | README section coverage against `readme_sections` (heading matcher with synonyms) | gap | no | 2 | Root README and every directory README |
 | G3 | Undocumented directories: upstream top-level (and second-level) directories with no README or index | gap | no | 2 | Uses the full file tree from the source manifest |
@@ -269,7 +272,8 @@ The Wiki.js stack is retired from the default path (Decision 3): GitHub Pages pl
 | `refresh.yaml` | daily schedule + manual | gather → organize → analyze → summarize → distribute → `engine check --gate`; opens or updates one rolling PR `automated/context-refresh` labelled `auto-merge` | `aggregate-docs.yaml` |
 | `auto-merge.yaml` | check suites on the rolling PR | Merges when every check is green **and** the diff touches only generated paths (allowlist: `docs/**`, `context/**`, `nav.yml`, `repos.txt`, the README AUTO span) | new |
 | `findings-sync.yaml` | push to `main` touching `context/reports/findings.json` | Creates, updates, closes the rolling issues | new |
-| `deploy-pages.yaml`, `ci.yml`, `claude.yml`, `markdown-oneline.yml` | unchanged | | |
+| `deploy-pages.yaml` | push to `main` as today, plus a `workflow_run` trigger on the refresh until the rolling PR makes every refresh an ordinary push | Builds and deploys the site after every refresh, not only after human pushes | |
+| `ci.yml`, `claude.yml`, `markdown-oneline.yml` | unchanged | | |
 
 Why a rolling PR instead of a direct commit: branch protection then enforces the gates on the automation exactly as on humans, the refresh has an audit trail, and `main` cannot go red the way it did on 2026-09-07. If the owner prefers direct commits (Decision 1), the minimum is to run `engine check --gate` *after* `git add -A` and before the commit.
 
@@ -282,6 +286,7 @@ Why a rolling PR instead of a direct commit: branch protection then enforces the
 | Coverage | every registered project has facts, card, nav, report; every corpus directory is registered | D3 |
 | Health | score ≥ 70 for every active non-external project, or an open rolling issue tracks it | `health.json` |
 | Determinism | rebuild over an unchanged corpus is an empty diff | Q3 |
+| Publication | the deployed site is built from `main`'s head after every refresh | D10 |
 | Gate latency | `quality-gate` finishes in under 2 minutes | Actions timing |
 | Loop closure | a drift finding fixed upstream disappears from the report within one refresh | `changes.json` |
 
@@ -304,6 +309,8 @@ Effort is in pull requests, each independently mergeable and gated. Dates assume
 | 0.3 | Prune ghosts: `organize --prune` removes corpus files absent from the gather manifest; delete `docs/setup`, `docs/wargames`; move `docs/results` to generated `docs/reports`; add D3 | 0 unregistered corpora; the `barodybroject/README/**` duplicate tree is gone |
 | 0.4 | Replace `lint_docs.py` rules with Q1 (no long-line rule) and the blanket frontmatter rule with G6; make the PR comment report only actionable findings | The quality report on a clean PR shows 0 issues |
 | 0.5 | Document the seventh hook stage; fold PR #23's step-summary diagnostics into the gate | `hooks.d/SCHEMA.md` matches `HOOK_STAGES` |
+| 0.6 | Apply `tools/unwrap-prose.py` at ingest (`process.py`, and `run_doc_checks.sh --apply`) and add the prose check to the refresh gate, so the corpus the cron commits is already one-paragraph-per-line and the PR bot has nothing left to rewrite under `docs/` | A crawl followed by `unwrap-prose.py --check` reports nothing |
+| 0.7 | Make the refresh's output trigger downstream workflows: the rolling PR of 0.2 does this by construction (its merge is an ordinary push); until then, chain `deploy-pages.yaml` and the prose gate to the aggregation workflow with `workflow_run`, or push with a GitHub App token | The site deploys after every refresh and the deployed commit equals `main`'s head |
 
 ### Phase 1 — Gather and Organize v2 (weeks 1–3)
 
@@ -441,6 +448,8 @@ python3 scripts/lint_docs.py | grep -c "Line too long"          # 30761 (of 40,3
 | Documents without `description` / without `tags` | 1,713 / 2,230 |
 | Size: `docs/` / `.git` / `docs_index.json` / `nav.yml` | 50 MB / 23 MB / 13.1 MB / 240 KB |
 | Engine hook stages: code / documented | 7 / 6 |
+| Pages deploy runs in the repo's history / runs triggered by the eight automated refresh commits | 9 / 0 (last deploy 2026-09-04, last refresh 2026-09-07) |
+| Corpus files rewritten by the prose bot on the first markdown PR after the refresh | 143 |
 | Unit tests / integration fixtures | 80 passing / clones of `facebook/react` and `microsoft/vscode` |
 
 ## Appendix B — Glossary

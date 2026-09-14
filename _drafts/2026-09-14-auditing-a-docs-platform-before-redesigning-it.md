@@ -49,6 +49,8 @@ The second finding compounded the first: the pipeline had never deleted a corpus
 
 The third finding was about the gates themselves. The cron committed straight to `main` and ran only one of the two drift checks. Every pull request branched from `main` then failed the check the cron had skipped, whatever the branch touched. The owner's most recent PR was, understandably, a change to make that failure message clearer. It was a good change. It also was not the bug.
 
+A fourth surfaced only after the plan was pushed. The pull request carrying it received a commit from a bot: the repo's one-paragraph-per-line fixer, which runs on any PR that touches markdown, rewrote 143 aggregated files that the weekly crawl had brought in wrapped. The crawl's own commits are pushed with the default Actions token, and GitHub fires no workflow events for those pushes, so they never meet the prose gate and never trigger the Pages deploy either. The site had not been republished after any of the eight automated refreshes since July. Two automations, each correct on its own, were fighting over the same files, and the last mile of "continuous evolution" was silently disconnected.
+
 ## What a drift gate has to compare against
 
 The general lesson is worth stating plainly, because it applies to any generated artifact: a drift check must compare the generated surface against **what will be committed**, not against what is on disk. A working tree in CI contains everything the build produced, including files the repository will never accept. If the check runs before the ignore rules are applied, it validates a fiction.
@@ -82,6 +84,7 @@ The loop closes with proposals: a finding with a mechanical remedy (a missing SE
 - **Have it read the code paths that produce the artifacts, not just the artifacts.** The no-prune bug was visible in two functions; no amount of staring at `docs/` would have shown it.
 - **Give findings IDs and a class.** D5, G3, A1. It forces each check to be specific enough to test, and it lets the plan reference them without re-explaining.
 - **Ground every claim the model writes.** The same rule the redesign applies to AI-generated cards applies to AI-generated plans: every number in the document came from a command that is listed in an appendix.
+- **Check what your automation's commits trigger.** A push made with the default Actions token fires no workflows. If a scheduled job commits to `main`, every gate and every deploy that waits for a push event is skipped, and nothing tells you.
 - **Separate the live defect from the roadmap.** Phase 0 of the plan is three small pull requests that make `main` green again. Everything ambitious waits behind them, because a platform for detecting drift should not itself be drifted.
 - **Keep the repo's own conventions in the loop.** The house rule of one paragraph per line, the schema protocol that requires every new top-level file to be registered, the read-only MCP rule: an AI pair will follow them if they are in the project instructions, and violate them if they are only in someone's head.
 
