@@ -16,6 +16,10 @@
 # a fork PR (read-only token) and a direct push to the default branch (never
 # end a workflow in a bare push to a protected branch — a house rule).
 #
+# LOCAL DIVERGENCE from the seeded kit: this repo excludes `docs/` (its
+# generated L3 corpus, mirrored from other repos). Re-apply it after any
+# `tools/fanout.sh --kit prose --upgrade` — see the step comment for why.
+#
 # Fix locally:  python3 tools/unwrap-prose.py --write
 # Or never think about it again: run tools/install-prose-hook.sh from the
 # bamr87 hub once, and a global git pre-commit hook fixes it in every repo.
@@ -52,8 +56,19 @@ jobs:
       - name: Unwrap soft-wrapped prose
         id: fix
         run: |
+          # `docs/` is NOT this repo's prose. SCHEMA.md marks it `generated` and
+          # CLAUDE.md "never hand-edit": it is the L3 corpus that aggregate.sh
+          # mirrors out of every fleet repo, rewritten wholesale by the weekly
+          # `aggregate-docs.yaml` auto-commit to main. Policing it here fails on
+          # two counts — the gate cannot self-heal a push to the default branch,
+          # so it just goes red; and any repair it did make would be an edit to
+          # a build artifact, reverted by the next aggregation run. Upstream
+          # prose is the upstream repo's own markdown-oneline gate to enforce.
+          # `context/**` is deliberately still covered: it is generated too, but
+          # by THIS repo's engine, so wrapped prose there is a real bug here.
           python3 tools/unwrap-prose.py --write \
-            --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$'
+            --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$' \
+            --exclude '^docs/'
           if git diff --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
