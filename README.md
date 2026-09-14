@@ -97,6 +97,7 @@ generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
 | `SCHEMA.md` | Root of this repo's structure pyramid |
 | `PRD.md` | Product spec for the context engine |
+| `PLAN.md` | Redesign plan (v3): audit, target architecture, check catalogue, roadmap |
 
 ## Testing
 
