@@ -7,9 +7,7 @@ title: Vortex4
 ---
 To exec or not to exec
 ----------------------
-This is the common format string bug, exploit it with care though as
-a check is made with argc. What is the layout of a process's memory?
-How are programs executed?
+This is the common format string bug, exploit it with care though as a check is made with argc. What is the layout of a process's memory? How are programs executed?
 
 Reading Material
 ----------------
