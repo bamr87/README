@@ -50,7 +50,7 @@ python3 -m scripts.context_engine card bashcrawl
 python3 -m scripts.context_engine status
 ```
 
-AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
+AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
 
 ## How it works
 
@@ -62,6 +62,8 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 | 4. Index | `docs/` | `docs/docs_index.json` | `scripts/generate_docs_index.py` |
 | 5. Distill | corpus + registry | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
 | 6. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
+
+Ingest normalizes as it writes: upstream `icon:` frontmatter is mapped onto bundled Material icons (`scripts/fix_frontmatter_icons.py`) and soft-wrapped prose is unwrapped (`tools/unwrap-prose.py`), so each crawled page lands in a state the navigation and the `markdown-oneline` gate already accept.
 
 The engine (`scripts/context_engine/`) runs **extract → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or `XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
@@ -94,6 +96,7 @@ generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/
 | `docs/` | **Generated** aggregated corpus + MkDocs site content |
 | `mcp/` | MCP query server |
 | `hooks.d/` | Build lifecycle hooks |
+| `tools/` | Vendored hub kit — `unwrap-prose.py`, the one-paragraph-per-line prose gate |
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
 | `SCHEMA.md` | Root of this repo's structure pyramid |
 | `PRD.md` | Product spec for the context engine |
