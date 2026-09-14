@@ -9,18 +9,19 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **643 pages** across **97 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **647 pages** across **98 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(61)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(65)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(52)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(55)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(49)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(49)</small>
+    - **Visual** <small>(52)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(52)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [book-abc layout — visual evidence (ZER0-081)](../zer0-mistakes/test/visual/evidence/book-abc/README.md)
+        - [claude-universal-frontend-feedback-gnnzua — visual evidence](../zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md)
         - [Dangling aria-controls (#373)](../zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md)
         - [Developer doc banners (#375)](../zer0-mistakes/test/visual/evidence/developer-doc-banners/README.md)
         - [Evidence — /authors/ breadcrumb is existence-gated (issue #204)](../zer0-mistakes/test/visual/evidence/authors-breadcrumb/README.md)
@@ -68,8 +69,12 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Mobile responsive audit — evidence](../zer0-mistakes/test/visual/evidence/mobile-responsive/README.md)
         - [Section topic filter — whole-tag matching](../zer0-mistakes/test/visual/evidence/section-topic-filter/README.md)
         - [theme-color (#281)](../zer0-mistakes/test/visual/evidence/theme-color-surface/README.md)
-  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(8)</small>
+        - **[Evidence: Site Builder — bring your own AI provider (Claude or Grok)…](../zer0-mistakes/test/visual/evidence/site-builder-providers/README.md)** <small>(2)</small>
+          - [Evidence: Site Builder — bring your own AI provider (Claude or Grok)…](../zer0-mistakes/test/visual/evidence/site-builder-providers/README.md)
+          - [A site the Grok path actually built, from an empty folder](../zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md)
+  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(9)</small>
     - [Gem Automation Scripts](../zer0-mistakes/scripts/README.md)
+    - [scripts/ai — companions to the fleet's ai-runner kit](../zer0-mistakes/scripts/ai/README.md)
     - **[Release Script Libraries](../zer0-mistakes/scripts/lib/README.md)** <small>(3)</small>
       - [Release Script Libraries](../zer0-mistakes/scripts/lib/README.md)
       - **[scripts/lib/install/ — Installer Library Modules](../zer0-mistakes/scripts/lib/install/README.md)** <small>(2)</small>

@@ -9,13 +9,13 @@ generated: true
 
 # Content map
 
-**2,112** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**2,124** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 920 | 93 | Repository & tooling, Data, Documentation, Home, Includes |
-| [Zer0 Mistakes](zer0-mistakes.md) | 643 | 97 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
-| [Barody Project](barodybroject.md) | 254 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
+| [IT Journey](it-journey.md) | 926 | 93 | Repository & tooling, Data, Documentation, Home, Includes |
+| [Zer0 Mistakes](zer0-mistakes.md) | 647 | 98 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory |
+| [Barody Project](barodybroject.md) | 256 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
 | [Bash Crawl](bashcrawl.md) | 38 | 9 | Repository & tooling, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
 | [Agent Skills](skills.md) | 7 | 3 | Documentation, Repository & tooling |
 | [Scripts](scripts.md) | 15 | 2 | 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |

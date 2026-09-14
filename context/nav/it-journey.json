@@ -5,7 +5,7 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 920,
+    "pages": 926,
     "sections": 93,
     "max_depth": 7,
     "skipped": 17
@@ -29,19 +29,19 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "0240908e0eb4653d",
+  "fingerprint": "4c8cfb295252e0e1",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 920,
+    "pages": 926,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 1.0,
         "index": "it-journey/redirects/README.md",
-        "pages": 229,
+        "pages": 232,
         "children": [
           {
             "type": "section",
@@ -431,7 +431,7 @@
             "title": "Test Directory",
             "rel": "test",
             "index": "it-journey/test/README.md",
-            "pages": 149,
+            "pages": 152,
             "children": [
               {
                 "type": "page",
@@ -588,7 +588,7 @@
                 "title": "Quest Validator - IT-Journey Quest Testing Framework",
                 "rel": "test/quest-validator",
                 "index": "it-journey/test/quest-validator/README.md",
-                "pages": 134,
+                "pages": 137,
                 "children": [
                   {
                     "type": "page",
@@ -632,7 +632,7 @@
                     "title": "Quest walkthrough session reports",
                     "rel": "test/quest-validator/walkthroughs",
                     "index": "it-journey/test/quest-validator/walkthroughs/README.md",
-                    "pages": 128,
+                    "pages": 131,
                     "children": [
                       {
                         "type": "page",
@@ -1399,6 +1399,24 @@
                       },
                       {
                         "type": "page",
+                        "title": "2026 09 07 Digital Artist 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 08 Game Developer 0001",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "2026 09 09 Digital Artist 0111",
+                        "path": "it-journey/test/quest-validator/walkthroughs/2026-09-09-digital-artist-0111.md",
+                        "rel": "test/quest-validator/walkthroughs/2026-09-09-digital-artist-0111.md"
+                      },
+                      {
+                        "type": "page",
                         "title": "\ud83d\udcc6 Quest Walkthrough \u2014 Security Specialist \u00b7 Level 0010",
                         "path": "it-journey/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md",
                         "rel": "test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md"
@@ -1626,7 +1644,7 @@
       },
       {
         "type": "page",
-        "title": "AGENTS.md: Guide for AI Agents Working in IT-Journey Repository",
+        "title": "AGENTS.md",
         "path": "it-journey/AGENTS.md",
         "rel": "AGENTS.md"
       },
@@ -2077,7 +2095,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 634,
+        "pages": 637,
         "children": [
           {
             "type": "page",
@@ -5485,12 +5503,6 @@
                   },
                   {
                     "type": "page",
-                    "title": "1. Authenticate the GitHub CLI and confirm Copilot is available to you",
-                    "path": "it-journey/pages/_quests/codex/agentic-codex.md",
-                    "rel": "pages/_quests/codex/agentic-codex.md"
-                  },
-                  {
-                    "type": "page",
                     "title": "1. Install the holy trinity: Git, VS Code, and the GitHub CLI",
                     "path": "it-journey/pages/_quests/codex/zer0-to-her0-cmstyle.md",
                     "rel": "pages/_quests/codex/zer0-to-her0-cmstyle.md"
@@ -5506,6 +5518,12 @@
                     "title": "1. On a machine logged into Claude, mint a Code OAuth token",
                     "path": "it-journey/pages/_quests/codex/self-operating-website.md",
                     "rel": "pages/_quests/codex/self-operating-website.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Agentic Codex",
+                    "path": "it-journey/pages/_quests/codex/agentic-codex.md",
+                    "rel": "pages/_quests/codex/agentic-codex.md"
                   },
                   {
                     "type": "page",
@@ -5652,7 +5670,7 @@
             "title": "\u267e\ufe0f Quest Perfection Dashboard",
             "rel": "pages/_quest-reports",
             "index": "it-journey/pages/_quest-reports/index.md",
-            "pages": 128,
+            "pages": 131,
             "children": [
               {
                 "type": "page",
@@ -6416,6 +6434,24 @@
                 "title": "2026 09 05 Developer 0001",
                 "path": "it-journey/pages/_quest-reports/2026-09-05-developer-0001.md",
                 "rel": "pages/_quest-reports/2026-09-05-developer-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 07 Digital Artist 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-07-digital-artist-0001.md",
+                "rel": "pages/_quest-reports/2026-09-07-digital-artist-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 08 Game Developer 0001",
+                "path": "it-journey/pages/_quest-reports/2026-09-08-game-developer-0001.md",
+                "rel": "pages/_quest-reports/2026-09-08-game-developer-0001.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 09 Digital Artist 0111",
+                "path": "it-journey/pages/_quest-reports/2026-09-09-digital-artist-0111.md",
+                "rel": "pages/_quest-reports/2026-09-09-digital-artist-0111.md"
               },
               {
                 "type": "page",

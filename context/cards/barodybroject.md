@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 6509281ac0bcba0c
+source_fingerprint: a068beb9f3d3446e
 tags:
   - agricultural technology
   - azure
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 305 docs |
+| Corpus | `docs/barodybroject` - 307 docs |
 | External | no |
 
 ## Signals
@@ -41,15 +41,15 @@ tags:
 - has CLAUDE.md agent guidance
 - has a contribution guide
 - keeps a changelog
-- ~227,530 words across 306 indexed documents
+- ~229,993 words across 308 indexed documents
 - code samples in: bash, python, plaintext, yaml, django, markdown, html, javascript
 
 ## Navigation
 
-254 published pages in 56 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
+256 published pages in 56 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
 
 - **Repository & tooling** (9 pages)
-- **Documentation** (49 pages)
+- **Documentation** (51 pages)
 - **Source** (121 pages)
 - **📚 The Forbidden Library** (66 pages)
 

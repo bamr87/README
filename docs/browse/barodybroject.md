@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Barody Project - content map
 
-Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **254 pages** across **56 sections** (max depth 7).
+Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **256 pages** across **56 sections** (max depth 7).
 
 - **[Repository & tooling](../barodybroject/infra/README.md)** <small>(9)</small>
   - **[Infrastructure](../barodybroject/infra/README.md)** <small>(5)</small>
@@ -33,7 +33,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
 - [Product Requirements Document (PRD)](../barodybroject/PRD.md)
 - [TODO: Project Issues and Enhancements](../barodybroject/TODO.md)
 - [🔐 Admin Credentials Quick Start](../barodybroject/ADMIN_CREDENTIALS_QUICKSTART.md)
-- **[Documentation](../barodybroject/docs/README.md)** <small>(49)</small>
+- **[Documentation](../barodybroject/docs/README.md)** <small>(51)</small>
   - [Documentation](../barodybroject/docs/README.md)
   - [Admin Credentials Auto-Setup - Implementation Summary](../barodybroject/docs/ADMIN_CREDENTIALS_SETUP.md)
   - [Barodybroject Quick Reference Card](../barodybroject/docs/QUICK_REFERENCE.md)
@@ -52,7 +52,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - [Barodybroject Features Documentation](../barodybroject/docs/features/README.md)
     - [Ecosystem Integration Features](../barodybroject/docs/features/ecosystem-integration.md)
     - [Instruction File Harmonization Features](../barodybroject/docs/features/instruction-harmonization.md)
-  - **[Changelog Documentation System](../barodybroject/docs/changelog/README.md)** <small>(19)</small>
+  - **[Changelog Documentation System](../barodybroject/docs/changelog/README.md)** <small>(21)</small>
     - [Changelog Documentation System](../barodybroject/docs/changelog/README.md)
     - [Changelog](../barodybroject/docs/changelog/CHANGELOG.md)
     - [Contributing Changes Documentation](../barodybroject/docs/changelog/CONTRIBUTING_CHANGES.md)
@@ -68,9 +68,11 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
         - [Migration Guide: v0.1.0 → v1.0.0](../barodybroject/docs/changelog/releases/v1.0.0/migration-guide.md)
         - [Release v1.0.0 - Django Settings Optimization](../barodybroject/docs/changelog/releases/v1.0.0/release-summary.md)
         - [Technical Implementation Details - v1.0.0](../barodybroject/docs/changelog/releases/v1.0.0/technical-details.md)
-    - **Summaries** <small>(2)</small>
+    - **Summaries** <small>(4)</small>
+      - [Bug Fix: filtering a model table to zero matches emptied it with no…](../barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md)
       - [Bug Fix: Thread message delete raised TypeError, and deleted locally…](../barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md)
       - [Docker Configuration Consolidation Change Documentation](../barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md)
+      - [Improvement: model unit tests, from 3 of 17 models covered to all of…](../barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md)
     - **Templates** <small>(5)</small>
       - [Breaking Change: [Breaking Change Title]](../barodybroject/docs/changelog/templates/breaking-template.md)
       - [Bug Fix: [Bug Title]](../barodybroject/docs/changelog/templates/bugfix-template.md)

@@ -38,13 +38,13 @@
       "repo": "bamr87/barodybroject",
       "kind": "app",
       "status": "active",
-      "corpus_files": 305,
-      "fingerprint": "6509281ac0bcba0c",
+      "corpus_files": 307,
+      "fingerprint": "a068beb9f3d3446e",
       "card": "context/cards/barodybroject.md",
       "facts": "context/facts/barodybroject.json",
       "nav": "context/nav/barodybroject.json",
       "browse": "docs/browse/barodybroject.md",
-      "nav_pages": 254,
+      "nav_pages": 256,
       "nav_sections": 56
     },
     "bashcrawl": {
@@ -64,26 +64,26 @@
       "repo": "bamr87/zer0-mistakes",
       "kind": "theme",
       "status": "active",
-      "corpus_files": 723,
-      "fingerprint": "467438bac759f757",
+      "corpus_files": 727,
+      "fingerprint": "3ee8dbf5c7704551",
       "card": "context/cards/zer0-mistakes.md",
       "facts": "context/facts/zer0-mistakes.json",
       "nav": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
-      "nav_pages": 643,
-      "nav_sections": 97
+      "nav_pages": 647,
+      "nav_sections": 98
     },
     "it-journey": {
       "repo": "bamr87/it-journey",
       "kind": "site",
       "status": "active",
-      "corpus_files": 1148,
-      "fingerprint": "b1cff06d87e32cf7",
+      "corpus_files": 1167,
+      "fingerprint": "e74d1ec8bdf0eeb4",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
-      "nav_pages": 920,
+      "nav_pages": 926,
       "nav_sections": 93
     },
     "OverTheWire-website": {
@@ -114,7 +114,7 @@
       "path": "context/nav/it-journey.json",
       "title": "IT Journey navigation",
       "project": "it-journey",
-      "summary": "920 pages in 93 sections",
+      "summary": "926 pages in 93 sections",
       "browse": "docs/browse/it-journey.md"
     },
     {
@@ -147,7 +147,7 @@
       "path": "context/nav/zer0-mistakes.json",
       "title": "Zer0 Mistakes navigation",
       "project": "zer0-mistakes",
-      "summary": "643 pages in 97 sections",
+      "summary": "647 pages in 98 sections",
       "browse": "docs/browse/zer0-mistakes.md"
     },
     {
@@ -180,7 +180,7 @@
       "path": "context/nav/barodybroject.json",
       "title": "Barody Project navigation",
       "project": "barodybroject",
-      "summary": "254 pages in 56 sections",
+      "summary": "256 pages in 56 sections",
       "browse": "docs/browse/barodybroject.md"
     },
     {
@@ -375,8 +375,11 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "0240908e0eb4653d": {
+    "028": {
       "card:it-journey": 1
+    },
+    "065": {
+      "card:zer0-mistakes": 1
     },
     "1.0": {
       "card:OverTheWire-website": 1,
@@ -432,7 +435,7 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "1148": {
+    "1167": {
       "apex": 2,
       "card:it-journey": 5
     },
@@ -442,19 +445,19 @@
     "123": {
       "card:barodybroject": 1
     },
-    "125": {
-      "card:it-journey": 1
-    },
     "129025": {
       "card:OverTheWire-website": 1
     },
-    "14232991": {
+    "137": {
+      "card:it-journey": 1
+    },
+    "14456852": {
       "card:it-journey": 1
     },
     "145157": {
       "card:scripts": 1
     },
-    "149": {
+    "152": {
       "card:it-journey": 1
     },
     "16263": {
@@ -466,14 +469,14 @@
     "17311": {
       "card:scripts": 1
     },
-    "1810269": {
+    "1842028": {
       "card:it-journey": 1
     },
     "2025": {
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "2029713": {
+    "2047912": {
       "card:barodybroject": 1
     },
     "214": {
@@ -489,28 +492,23 @@
     "219": {
       "card:OverTheWire-website": 3
     },
-    "227": {
-      "card:barodybroject": 1
-    },
-    "227530": {
-      "card:barodybroject": 1
-    },
     "229": {
-      "card:it-journey": 2
+      "card:barodybroject": 1
+    },
+    "229993": {
+      "card:barodybroject": 1
     },
     "232": {
       "apex": 3,
-      "card:OverTheWire-website": 7
+      "card:OverTheWire-website": 7,
+      "card:it-journey": 2
     },
-    "254": {
+    "256": {
       "apex": 1,
       "card:barodybroject": 2
     },
     "263": {
       "card:OverTheWire-website": 1
-    },
-    "269": {
-      "card:it-journey": 1
     },
     "292f000a4ab20ef9": {
       "card:skills": 1
@@ -518,27 +516,30 @@
     "2b01e2e4e6e5320f": {
       "card:scripts": 2
     },
-    "305": {
+    "307": {
       "apex": 2,
       "card:barodybroject": 2
     },
-    "306": {
+    "308": {
       "card:barodybroject": 3
     },
     "311": {
       "card:scripts": 1
     },
+    "346f30cf6e0d6733": {
+      "card:barodybroject": 1
+    },
     "370": {
       "card:skills": 1
     },
-    "3857492f542bcef6": {
-      "card:zer0-mistakes": 1
-    },
-    "467438bac759f757": {
+    "3ee8dbf5c7704551": {
       "card:zer0-mistakes": 2
     },
-    "4798975": {
+    "4861045": {
       "card:zer0-mistakes": 1
+    },
+    "4c8cfb295252e0e1": {
+      "card:it-journey": 1
     },
     "5.1": {
       "card:barodybroject": 2
@@ -555,36 +556,27 @@
     "520277": {
       "card:bashcrawl": 1
     },
-    "530": {
-      "card:barodybroject": 1
-    },
-    "582": {
-      "card:zer0-mistakes": 1
-    },
-    "582784": {
-      "card:zer0-mistakes": 1
-    },
     "58747": {
       "card:bashcrawl": 1
     },
-    "634": {
+    "592": {
+      "card:zer0-mistakes": 1
+    },
+    "592065": {
+      "card:zer0-mistakes": 1
+    },
+    "637": {
       "card:it-journey": 2
     },
-    "635": {
+    "638": {
       "card:it-journey": 1
     },
     "641caf54c3c7d5be": {
       "card:bashcrawl": 2
     },
-    "643": {
+    "647": {
       "apex": 1,
       "card:zer0-mistakes": 2
-    },
-    "6509281ac0bcba0c": {
-      "card:barodybroject": 2
-    },
-    "6d2b47b73533b2af": {
-      "card:barodybroject": 1
     },
     "705": {
       "card:skills": 1
@@ -593,25 +585,31 @@
       "apex": 2,
       "card:skills": 5
     },
-    "723": {
+    "727": {
       "apex": 2,
       "card:zer0-mistakes": 5
     },
     "747": {
       "card:bashcrawl": 1
     },
-    "784": {
-      "card:zer0-mistakes": 1
-    },
-    "810": {
+    "842": {
       "card:it-journey": 1
     },
     "8a95c989dbb45bc1": {
       "card:OverTheWire-website": 2
     },
-    "920": {
+    "926": {
       "apex": 1,
       "card:it-journey": 2
+    },
+    "993": {
+      "card:barodybroject": 1
+    },
+    "9e76fd61f4dea36f": {
+      "card:zer0-mistakes": 1
+    },
+    "a068beb9f3d3446e": {
+      "card:barodybroject": 2
     },
     "a7046c49c6e5b26e": {
       "card:skills": 2
@@ -801,9 +799,6 @@
       "apex": 1,
       "card:barodybroject": 4
     },
-    "b1cff06d87e32cf7": {
-      "card:it-journey": 2
-    },
     "bamr87": {
       "apex": 18,
       "card:barodybroject": 5,
@@ -915,6 +910,10 @@
       "card:it-journey": 2,
       "nav:it-journey": 2
     },
+    "bring": {
+      "card:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 1
+    },
     "browse": {
       "apex": 8,
       "card:OverTheWire-website": 4,
@@ -930,6 +929,10 @@
     },
     "build": {
       "apex": 2
+    },
+    "builder": {
+      "card:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 1
     },
     "built": {
       "card:bashcrawl": 2,
@@ -1018,7 +1021,8 @@
     },
     "claude": {
       "card:it-journey": 1,
-      "card:zer0-mistakes": 1
+      "card:zer0-mistakes": 2,
+      "nav:zer0-mistakes": 1
     },
     "claude.md": {
       "card:barodybroject": 5,
@@ -1241,9 +1245,6 @@
     "current": {
       "card:barodybroject": 1
     },
-    "cursor": {
-      "card:zer0-mistakes": 1
-    },
     "customization": {
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
@@ -1415,6 +1416,9 @@
       "apex": 2,
       "card:bashcrawl": 4
     },
+    "e74d1ec8bdf0eeb4": {
+      "card:it-journey": 2
+    },
     "ecb49a40e48b28a2": {
       "card:scripts": 1
     },
@@ -1484,8 +1488,8 @@
       "nav:skills": 1
     },
     "evidence": {
-      "card:zer0-mistakes": 1,
-      "nav:zer0-mistakes": 1
+      "card:zer0-mistakes": 2,
+      "nav:zer0-mistakes": 2
     },
     "example": {
       "card:zer0-mistakes": 1,
@@ -1795,6 +1799,10 @@
       "nav:it-journey": 1
     },
     "gration": {
+      "card:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 1
+    },
+    "grok": {
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
     },
@@ -2621,6 +2629,10 @@
     "overview": {
       "card:scripts": 2
     },
+    "own": {
+      "card:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 1
+    },
     "page": {
       "apex": 1
     },
@@ -2800,6 +2812,10 @@
       "card:skills": 7,
       "card:zer0-mistakes": 2,
       "nav:zer0-mistakes": 2
+    },
+    "provider": {
+      "card:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 1
     },
     "published": {
       "card:OverTheWire-website": 1,
@@ -3103,7 +3119,7 @@
       "card:barodybroject": 7,
       "card:it-journey": 4,
       "card:scripts": 32,
-      "card:zer0-mistakes": 3,
+      "card:zer0-mistakes": 4,
       "nav:barodybroject": 3,
       "nav:it-journey": 3,
       "nav:zer0-mistakes": 3
@@ -3275,8 +3291,8 @@
       "apex": 4,
       "card:OverTheWire-website": 3,
       "card:it-journey": 5,
-      "card:zer0-mistakes": 2,
-      "nav:zer0-mistakes": 2
+      "card:zer0-mistakes": 3,
+      "nav:zer0-mistakes": 3
     },
     "skill": {
       "card:skills": 2,

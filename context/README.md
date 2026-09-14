@@ -25,9 +25,9 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 
 | Project | Kind | Status | Docs | Sections | What it is |
 |---|---|---|---|---|---|
-| [it-journey](cards/it-journey.md) | site | active | 1148 | 93 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 723 | 97 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [barodybroject](cards/barodybroject.md) | app | active | 305 | 56 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
+| [it-journey](cards/it-journey.md) | site | active | 1167 | 93 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 727 | 98 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [barodybroject](cards/barodybroject.md) | app | active | 307 | 56 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
 | [bashcrawl](cards/bashcrawl.md) | game | active | 45 | 9 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
 | [skills](cards/skills.md) | docs | active | 712 | 3 | Agent skills — prompts, MCP configurations, and AI development patterns. |
 | [scripts](cards/scripts.md) | tooling | active | 15 | 2 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
@@ -39,8 +39,8 @@ Educational IT platform with quests, blog posts, and technical documentation.
 
 - Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
 - Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
-- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1148 documents)
-- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 920 pages in 93 sections
+- Corpus: [`docs/it-journey/`](../docs/it-journey/) (1167 documents)
+- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 926 pages in 93 sections
 - Topics: education, jekyll, quests
 
 ### zer0-mistakes
@@ -49,8 +49,8 @@ Jekyll theme and software architecture patterns for GitHub Pages.
 
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (723 documents)
-- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 643 pages in 97 sections
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (727 documents)
+- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 647 pages in 98 sections
 - Topics: jekyll, theme, github-pages
 
 ### Barodybroject
@@ -59,8 +59,8 @@ Full-stack application platform with infrastructure, testing, and deployment too
 
 - Repository: [bamr87/barodybroject](https://github.com/bamr87/barodybroject)
 - Card: [context/cards/barodybroject.md](cards/barodybroject.md) · Facts: [context/facts/barodybroject.json](facts/barodybroject.json)
-- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (305 documents)
-- Navigation: [tree](nav/barodybroject.json) · [content map](../docs/browse/barodybroject.md) — 254 pages in 56 sections
+- Corpus: [`docs/barodybroject/`](../docs/barodybroject/) (307 documents)
+- Navigation: [tree](nav/barodybroject.json) · [content map](../docs/browse/barodybroject.md) — 256 pages in 56 sections
 - Topics: python, django, azure, full-stack
 
 ### ⚔️ Bashcrawl — learn the terminal by playing

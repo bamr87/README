@@ -5,8 +5,8 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 643,
-    "sections": 97,
+    "pages": 647,
+    "sections": 98,
     "max_depth": 6,
     "skipped": 8
   },
@@ -20,19 +20,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "3857492f542bcef6",
+  "fingerprint": "9e76fd61f4dea36f",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 643,
+    "pages": 647,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 61,
+        "pages": 65,
         "children": [
           {
             "type": "page",
@@ -46,7 +46,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 52,
+            "pages": 55,
             "children": [
               {
                 "type": "page",
@@ -72,14 +72,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 49,
+                "pages": 52,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 49,
+                    "pages": 52,
                     "children": [
                       {
                         "type": "page",
@@ -94,6 +94,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/book-abc/README.md",
                         "rel": "test/visual/evidence/book-abc/README.md",
                         "folder": "test/visual/evidence/book-abc"
+                      },
+                      {
+                        "type": "page",
+                        "title": "claude-universal-frontend-feedback-gnnzua \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md",
+                        "rel": "test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md",
+                        "folder": "test/visual/evidence/claude-universal-frontend-feedback-gnnzua"
                       },
                       {
                         "type": "page",
@@ -423,6 +430,29 @@
                         "path": "zer0-mistakes/test/visual/evidence/theme-color-surface/README.md",
                         "rel": "test/visual/evidence/theme-color-surface/README.md",
                         "folder": "test/visual/evidence/theme-color-surface"
+                      },
+                      {
+                        "type": "section",
+                        "title": "Evidence: Site Builder \u2014 bring your own AI provider (Claude or Grok)\u2026",
+                        "rel": "test/visual/evidence/site-builder-providers",
+                        "index": "zer0-mistakes/test/visual/evidence/site-builder-providers/README.md",
+                        "pages": 2,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "Evidence: Site Builder \u2014 bring your own AI provider (Claude or Grok)\u2026",
+                            "path": "zer0-mistakes/test/visual/evidence/site-builder-providers/README.md",
+                            "rel": "test/visual/evidence/site-builder-providers/README.md",
+                            "is_index": true
+                          },
+                          {
+                            "type": "page",
+                            "title": "A site the Grok path actually built, from an empty folder",
+                            "path": "zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md",
+                            "rel": "test/visual/evidence/site-builder-providers/built-site/README.md",
+                            "folder": "test/visual/evidence/site-builder-providers/built-site"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -435,7 +465,7 @@
             "title": "Gem Automation Scripts",
             "rel": "scripts",
             "index": "zer0-mistakes/scripts/README.md",
-            "pages": 8,
+            "pages": 9,
             "children": [
               {
                 "type": "page",
@@ -443,6 +473,13 @@
                 "path": "zer0-mistakes/scripts/README.md",
                 "rel": "scripts/README.md",
                 "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "scripts/ai \u2014 companions to the fleet's ai-runner kit",
+                "path": "zer0-mistakes/scripts/ai/README.md",
+                "rel": "scripts/ai/README.md",
+                "folder": "scripts/ai"
               },
               {
                 "type": "section",

@@ -92,8 +92,12 @@ By the end of this quest, you will be able to:
 > & Quality Assessment's "Known Vulnerabilities" claims** — they reflect a scan
 > taken on the Analysis Date, not a live guarantee; run `pip-audit` yourself
 > (see Quick Setup) against the current `main` before trusting them, since new
-> CVEs are disclosed continuously. Always re-verify against the current
-> repository before relying on any specific figure here.
+> CVEs are disclosed continuously. The same drift also applies to figures not
+> called out individually below, such as the README's line count, the
+> `requires-python` floor, the static-asset path, and the exact
+> `.github/workflows/` file list — treat every specific number or path in this
+> document as a claim to re-verify, not a live guarantee. Always re-verify
+> against the current repository before relying on any specific figure here.
 
 ## ✅ Do This (Hands-On Walkthrough)
 
@@ -105,6 +109,15 @@ Work these four steps in order — each maps directly to a Quest Objective above
 4. **Pick any row** in a Detailed Stack Analysis table and open its "Configuration Location" in the cloned repo to confirm the mapping is still accurate (Objective 4).
 
 **Quest complete when:** you can list at least one confirmed-accurate claim and one confirmed-stale claim from this document, backed by what you actually saw in the live repo — check off each objective above as you go.
+
+> **Reading map.** The four steps above are the entire hands-on walkthrough. Everything
+> from Executive Summary through Detailed Stack Analysis, Dependency Analysis, and
+> Security & Quality Assessment is reference material the steps point into. The
+> Recommendations, Educational Value, Modernization Opportunities, Comparative Analysis,
+> Strategic Recommendations, Innovation Highlights, and Stack Maturity Assessment sections
+> further below are optional deep-dive reading, generated at Analysis Date as
+> forward-looking commentary — skip straight to them only if you want more context after
+> completing the four steps.
 
 ## 📊 Executive Summary
 
@@ -199,7 +212,7 @@ graph TB
 
 | Technology | Version | Purpose | Configuration Location |
 |------------|---------|---------|------------------------|
-| Bootstrap | 5.3.3 | Responsive UI framework | CDN, templates |
+| Bootstrap | 5.3.3 | Responsive UI framework | `django-bootstrap5` template tags in `base.html` (only `bootstrap-icons` is CDN-sourced) |
 | Django Templates | 4.2.20 | Server-side rendering | src/parodynews/templates/ |
 | jQuery | Optional | DOM manipulation | Optional inclusion |
 | Static Assets | N/A | CSS, JS, images | src/static/ |
@@ -287,6 +300,9 @@ def generate_parody_content(prompt: str, model: str = "gpt-4") -> str:
 
 **Database Configuration Strategy**:
 ```python
+# excerpt — assumes env, IS_PRODUCTION, BASE_DIR already exist earlier in
+# settings.py; not a standalone snippet, so running it verbatim raises
+# NameError: name 'env' is not defined.
 # settings.py - Intelligent database selection
 DB_CHOICE = env.str("DB_CHOICE", default="postgres")
 
@@ -736,6 +752,9 @@ python manage.py createsuperuser
 **Performance Optimization**:
 1. ⚠️ **Enable Caching**: Configure Redis for production caching
    ```python
+   # excerpt — assumes env, IS_PRODUCTION, BASE_DIR from settings.py; not a
+   # standalone snippet, so running it verbatim raises
+   # NameError: name 'env' is not defined.
    # Add to settings.py
    CACHES = {
        'default': {

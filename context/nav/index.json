@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2112
+    "pages": 2124
   },
   "projects": {
     "it-journey": {
@@ -21,11 +21,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 920,
+      "pages": 926,
       "sections": 93,
       "max_depth": 7,
       "skipped": 17,
-      "fingerprint": "0240908e0eb4653d"
+      "fingerprint": "4c8cfb295252e0e1"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 643,
-      "sections": 97,
+      "pages": 647,
+      "sections": 98,
       "max_depth": 6,
       "skipped": 8,
-      "fingerprint": "3857492f542bcef6"
+      "fingerprint": "9e76fd61f4dea36f"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -45,11 +45,11 @@
       "tree": "context/nav/barodybroject.json",
       "browse": "docs/browse/barodybroject.md",
       "registered": true,
-      "pages": 254,
+      "pages": 256,
       "sections": 56,
       "max_depth": 7,
       "skipped": 7,
-      "fingerprint": "6d2b47b73533b2af"
+      "fingerprint": "346f30cf6e0d6733"
     },
     "bashcrawl": {
       "title": "Bash Crawl",

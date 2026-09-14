@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 305,
-    "fingerprint": "6509281ac0bcba0c",
+    "file_count": 307,
+    "fingerprint": "a068beb9f3d3446e",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 2029713
+    "total_bytes": 2047912
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -32,10 +32,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/barodybroject.md",
-    "fingerprint": "6d2b47b73533b2af",
+    "fingerprint": "346f30cf6e0d6733",
     "index": "barodybroject/README.md",
     "max_depth": 7,
-    "pages": 254,
+    "pages": 256,
     "present": true,
     "sections": 56,
     "skipped": 7,
@@ -50,7 +50,7 @@
       },
       {
         "index": "barodybroject/docs/README.md",
-        "pages": 49,
+        "pages": 51,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -90,7 +90,7 @@
   },
   "rollups": {
     "categories": {
-      "barodybroject": 306
+      "barodybroject": 308
     },
     "code_languages": [
       "bash",
@@ -102,7 +102,7 @@
       "html",
       "javascript"
     ],
-    "indexed_documents": 306,
+    "indexed_documents": 308,
     "top_tags": [
       "index",
       "agricultural technology",
@@ -120,7 +120,7 @@
       "racial marginalization",
       "socio-economic marginalization"
     ],
-    "total_words": 227530
+    "total_words": 229993
   },
   "schema_version": "1.0",
   "signals": {
@@ -153,7 +153,7 @@
         "name": "README"
       },
       {
-        "doc_count": 49,
+        "doc_count": 51,
         "name": "docs"
       },
       {

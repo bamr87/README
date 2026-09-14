@@ -5,7 +5,7 @@
   "title": "Barody Project",
   "corpus": "docs/barodybroject",
   "counts": {
-    "pages": 254,
+    "pages": 256,
     "sections": 56,
     "max_depth": 7,
     "skipped": 7
@@ -19,12 +19,12 @@
     "src/README.md",
     "src/posthog/.github"
   ],
-  "fingerprint": "6d2b47b73533b2af",
+  "fingerprint": "346f30cf6e0d6733",
   "tree": {
     "type": "section",
     "title": "Barody Project",
     "index": "barodybroject/README.md",
-    "pages": 254,
+    "pages": 256,
     "children": [
       {
         "type": "group",
@@ -182,7 +182,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "barodybroject/docs/README.md",
-        "pages": 49,
+        "pages": 51,
         "children": [
           {
             "type": "page",
@@ -302,7 +302,7 @@
             "title": "Changelog Documentation System",
             "rel": "docs/changelog",
             "index": "barodybroject/docs/changelog/README.md",
-            "pages": 19,
+            "pages": 21,
             "children": [
               {
                 "type": "page",
@@ -407,8 +407,14 @@
                 "type": "section",
                 "title": "Summaries",
                 "rel": "docs/changelog/summaries",
-                "pages": 2,
+                "pages": 4,
                 "children": [
+                  {
+                    "type": "page",
+                    "title": "Bug Fix: filtering a model table to zero matches emptied it with no\u2026",
+                    "path": "barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md",
+                    "rel": "docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md"
+                  },
                   {
                     "type": "page",
                     "title": "Bug Fix: Thread message delete raised TypeError, and deleted locally\u2026",
@@ -420,6 +426,12 @@
                     "title": "Docker Configuration Consolidation Change Documentation",
                     "path": "barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md",
                     "rel": "docs/changelog/summaries/2025-10-26-docker-consolidation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Improvement: model unit tests, from 3 of 17 models covered to all of\u2026",
+                    "path": "barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md",
+                    "rel": "docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md"
                   }
                 ]
               },

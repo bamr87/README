@@ -246,6 +246,9 @@ nav:
                       - "2026 09 03 Digital Artist 0001": it-journey/test/quest-validator/walkthroughs/2026-09-03-digital-artist-0001.md
                       - "2026 09 04 Digital Artist 0001": it-journey/test/quest-validator/walkthroughs/2026-09-04-digital-artist-0001.md
                       - "2026 09 05 Developer 0001": it-journey/test/quest-validator/walkthroughs/2026-09-05-developer-0001.md
+                      - "2026 09 07 Digital Artist 0001": it-journey/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md
+                      - "2026 09 08 Game Developer 0001": it-journey/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md
+                      - "2026 09 09 Digital Artist 0111": it-journey/test/quest-validator/walkthroughs/2026-09-09-digital-artist-0111.md
                       - "📆 Quest Walkthrough — Security Specialist · Level 0010": it-journey/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md
           - "📁 IT-Journey TODO Hub":
               - "📁 IT-Journey TODO Hub": it-journey/TODO/README.md
@@ -279,7 +282,7 @@ nav:
                       - "Weekly SEO Review: Dec 15 - Dec 21, 2025": it-journey/TODO/seo/reports/weekly-review-2025-12-20.md
                       - "📅 Content Freshness Report": it-journey/TODO/seo/reports/content-freshness-2025-12-20.md
       - "Welcome to IT-Journey.dev: Where Heroes are Made! 🧙‍♂️⚔️": it-journey/index.md
-      - "AGENTS.md: Guide for AI Agents Working in IT-Journey Repository": it-journey/AGENTS.md
+      - "AGENTS.md": it-journey/AGENTS.md
       - "Changelog": it-journey/CHANGELOG.md
       - "Citizen Code of Conduct": it-journey/CODE_OF_CONDUCT.md
       - "CLAUDE.md — Claude Code guide for IT-Journey": it-journey/CLAUDE.md
@@ -883,10 +886,10 @@ nav:
                   - "Store ADRs in the repo; adr-tools automates numbering and templating": it-journey/pages/_quests/1111/architecture-reviews.md
               - "📜 The Codex":
                   - "📜 The Codex": it-journey/pages/_quests/codex/index.md
-                  - "1. Authenticate the GitHub CLI and confirm Copilot is available to you": it-journey/pages/_quests/codex/agentic-codex.md
                   - "1. Install the holy trinity: Git, VS Code, and the GitHub CLI": it-journey/pages/_quests/codex/zer0-to-her0-cmstyle.md
                   - "1. On a machine logged into Claude Code, mint an OAuth token": it-journey/pages/_quests/codex/ouroboros-loop.md
                   - "1. On a machine logged into Claude, mint a Code OAuth token": it-journey/pages/_quests/codex/self-operating-website.md
+                  - "Agentic Codex": it-journey/pages/_quests/codex/agentic-codex.md
                   - "Download and examine the installation script": it-journey/pages/_quests/codex/oh-my-zsh-side-quest-example.md
                   - "Full Stack Portfolio Epic Example": it-journey/pages/_quests/codex/full-stack-portfolio-epic-example.md
                   - "Glossary": it-journey/pages/_quests/codex/glossary.md
@@ -1037,6 +1040,9 @@ nav:
               - "2026 09 03 Digital Artist 0001": it-journey/pages/_quest-reports/2026-09-03-digital-artist-0001.md
               - "2026 09 04 Digital Artist 0001": it-journey/pages/_quest-reports/2026-09-04-digital-artist-0001.md
               - "2026 09 05 Developer 0001": it-journey/pages/_quest-reports/2026-09-05-developer-0001.md
+              - "2026 09 07 Digital Artist 0001": it-journey/pages/_quest-reports/2026-09-07-digital-artist-0001.md
+              - "2026 09 08 Game Developer 0001": it-journey/pages/_quest-reports/2026-09-08-game-developer-0001.md
+              - "2026 09 09 Digital Artist 0111": it-journey/pages/_quest-reports/2026-09-09-digital-artist-0111.md
               - "📆 Quest Walkthrough — Security Specialist · Level 0010": it-journey/pages/_quest-reports/2026-07-06-security-specialist-0010.md
       - "Includes":
           - "Contributor Profile Includes": it-journey/_includes/contributor/README.md
@@ -1052,6 +1058,7 @@ nav:
                   - "Navbar responsiveness — evidence (PR #215)":
                       - "Navbar responsiveness — evidence (PR #215)": zer0-mistakes/test/visual/evidence/README.md
                       - "book-abc layout — visual evidence (ZER0-081)": zer0-mistakes/test/visual/evidence/book-abc/README.md
+                      - "claude-universal-frontend-feedback-gnnzua — visual evidence": zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md
                       - "Dangling aria-controls (#373)": zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md
                       - "Developer doc banners (#375)": zer0-mistakes/test/visual/evidence/developer-doc-banners/README.md
                       - "Evidence — /authors/ breadcrumb is existence-gated (issue #204)": zer0-mistakes/test/visual/evidence/authors-breadcrumb/README.md
@@ -1099,8 +1106,12 @@ nav:
                       - "Mobile responsive audit — evidence": zer0-mistakes/test/visual/evidence/mobile-responsive/README.md
                       - "Section topic filter — whole-tag matching": zer0-mistakes/test/visual/evidence/section-topic-filter/README.md
                       - "theme-color (#281)": zer0-mistakes/test/visual/evidence/theme-color-surface/README.md
+                      - "Evidence: Site Builder — bring your own AI provider (Claude or Grok)…":
+                          - "Evidence: Site Builder — bring your own AI provider (Claude or Grok)…": zer0-mistakes/test/visual/evidence/site-builder-providers/README.md
+                          - "A site the Grok path actually built, from an empty folder": zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md
           - "Gem Automation Scripts":
               - "Gem Automation Scripts": zer0-mistakes/scripts/README.md
+              - "scripts/ai — companions to the fleet's ai-runner kit": zer0-mistakes/scripts/ai/README.md
               - "Release Script Libraries":
                   - "Release Script Libraries": zer0-mistakes/scripts/lib/README.md
                   - "scripts/lib/install/ — Installer Library Modules":
@@ -1841,8 +1852,10 @@ nav:
                       - "Release v1.0.0 - Django Settings Optimization": barodybroject/docs/changelog/releases/v1.0.0/release-summary.md
                       - "Technical Implementation Details - v1.0.0": barodybroject/docs/changelog/releases/v1.0.0/technical-details.md
               - "Summaries":
+                  - "Bug Fix: filtering a model table to zero matches emptied it with no…": barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md
                   - "Bug Fix: Thread message delete raised TypeError, and deleted locally…": barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md
                   - "Docker Configuration Consolidation Change Documentation": barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md
+                  - "Improvement: model unit tests, from 3 of 17 models covered to all of…": barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md
               - "Templates":
                   - "Breaking Change: [Breaking Change Title]": barodybroject/docs/changelog/templates/breaking-template.md
                   - "Bug Fix: [Bug Title]": barodybroject/docs/changelog/templates/bugfix-template.md

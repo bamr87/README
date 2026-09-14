@@ -9,9 +9,9 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **920 pages** across **93 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **926 pages** across **93 sections** (max depth 7).
 
-- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(229)</small>
+- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(232)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
     - [redirects/](../it-journey/redirects/README.md)
     - **Posts** <small>(42)</small>
@@ -72,7 +72,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - **[Development Scripts](../it-journey/scripts/development/README.md)** <small>(2)</small>
       - [Development Scripts](../it-journey/scripts/development/README.md)
       - [Post Organizer Utility](../it-journey/scripts/development/content/README.md)
-  - **[Test Directory](../it-journey/test/README.md)** <small>(149)</small>
+  - **[Test Directory](../it-journey/test/README.md)** <small>(152)</small>
     - [Test Directory](../it-journey/test/README.md)
     - **[Quest Solutions Framework](../it-journey/test/quest-solutions/README.md)** <small>(14)</small>
       - [Quest Solutions Framework](../it-journey/test/quest-solutions/README.md)
@@ -94,14 +94,14 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - **Templates** <small>(2)</small>
           - [[Quest Title] — Solutions & Validation](../it-journey/test/quest-solutions/_shared/templates/quest-solution-readme-template.md)
           - [[Quest Title]: Answer Key & Expected Outputs](../it-journey/test/quest-solutions/_shared/templates/answer-key-template.md)
-    - **[Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)** <small>(134)</small>
+    - **[Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)** <small>(137)</small>
       - [Quest Validator - IT-Journey Quest Testing Framework](../it-journey/test/quest-validator/README.md)
       - [Quest Quality Checklist - Quick Reference](../it-journey/test/quest-validator/CHECKLIST.md)
       - [Quest Testing Framework - Docker Implementation Summary](../it-journey/test/quest-validator/IMPLEMENTATION_SUMMARY.md)
       - [Quest Testing Framework - Docker Migration Complete](../it-journey/test/quest-validator/DOCKER_MIGRATION_SUMMARY.md)
       - [Quest Update & Testing Framework Summary](../it-journey/test/quest-validator/SUMMARY.md)
       - [✅ Docker Quest Testing Framework - Implementation Complete](../it-journey/test/quest-validator/COMPLETION_SUMMARY.md)
-      - **[Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)** <small>(128)</small>
+      - **[Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)** <small>(131)</small>
         - [Quest walkthrough session reports](../it-journey/test/quest-validator/walkthroughs/README.md)
         - [2026 06 29 Developer 0000](../it-journey/test/quest-validator/walkthroughs/2026-06-29-developer-0000.md)
         - [2026 06 29 Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-06-29-developer-0001.md)
@@ -229,6 +229,9 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - [2026 09 03 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-03-digital-artist-0001.md)
         - [2026 09 04 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-04-digital-artist-0001.md)
         - [2026 09 05 Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-05-developer-0001.md)
+        - [2026 09 07 Digital Artist 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md)
+        - [2026 09 08 Game Developer 0001](../it-journey/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md)
+        - [2026 09 09 Digital Artist 0111](../it-journey/test/quest-validator/walkthroughs/2026-09-09-digital-artist-0111.md)
         - [📆 Quest Walkthrough — Security Specialist · Level 0010](../it-journey/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
   - **[📁 IT-Journey TODO Hub](../it-journey/TODO/README.md)** <small>(25)</small>
     - [📁 IT-Journey TODO Hub](../it-journey/TODO/README.md)
@@ -262,7 +265,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - [Weekly SEO Review: Dec 15 - Dec 21, 2025](../it-journey/TODO/seo/reports/weekly-review-2025-12-20.md)
         - [📅 Content Freshness Report](../it-journey/TODO/seo/reports/content-freshness-2025-12-20.md)
 - [Welcome to IT-Journey.dev: Where Heroes are Made! 🧙‍♂️⚔️](../it-journey/index.md)
-- [AGENTS.md: Guide for AI Agents Working in IT-Journey Repository](../it-journey/AGENTS.md)
+- [AGENTS.md](../it-journey/AGENTS.md)
 - [Changelog](../it-journey/CHANGELOG.md)
 - [Citizen Code of Conduct](../it-journey/CODE_OF_CONDUCT.md)
 - [CLAUDE.md — Claude Code guide for IT-Journey](../it-journey/CLAUDE.md)
@@ -330,7 +333,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Link Checker Workflow Test Results](../it-journey/docs/workflows/LINK_CHECKER_VALIDATION.md)
     - [Link Health Guardian Consolidation Summary](../it-journey/docs/workflows/LINK_CONSOLIDATION_SUMMARY.md)
     - [Organize Posts Weekly Workflow Documentation](../it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md)
-- **[Home](../it-journey/pages/home.md)** <small>(634)</small>
+- **[Home](../it-journey/pages/home.md)** <small>(637)</small>
   - [Home](../it-journey/pages/home.md)
   - [Home](../it-journey/pages/_hobbies/home.md)
   - [IT-Journey Blog Posts](../it-journey/pages/posts.md)
@@ -866,10 +869,10 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Store ADRs in the repo; adr-tools automates numbering and templating](../it-journey/pages/_quests/1111/architecture-reviews.md)
     - **[📜 The Codex](../it-journey/pages/_quests/codex/index.md)** <small>(12)</small>
       - [📜 The Codex](../it-journey/pages/_quests/codex/index.md)
-      - [1. Authenticate the GitHub CLI and confirm Copilot is available to you](../it-journey/pages/_quests/codex/agentic-codex.md)
       - [1. Install the holy trinity: Git, VS Code, and the GitHub CLI](../it-journey/pages/_quests/codex/zer0-to-her0-cmstyle.md)
       - [1. On a machine logged into Claude Code, mint an OAuth token](../it-journey/pages/_quests/codex/ouroboros-loop.md)
       - [1. On a machine logged into Claude, mint a Code OAuth token](../it-journey/pages/_quests/codex/self-operating-website.md)
+      - [Agentic Codex](../it-journey/pages/_quests/codex/agentic-codex.md)
       - [Download and examine the installation script](../it-journey/pages/_quests/codex/oh-my-zsh-side-quest-example.md)
       - [Full Stack Portfolio Epic Example](../it-journey/pages/_quests/codex/full-stack-portfolio-epic-example.md)
       - [Glossary](../it-journey/pages/_quests/codex/glossary.md)
@@ -892,7 +895,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Styling Navigation](../it-journey/pages/_quickstart/styling-navigation.md)
     - [Theme Architecture](../it-journey/pages/_quickstart/theme-architecture.md)
     - [Vscode Setup](../it-journey/pages/_quickstart/vscode-setup.md)
-  - **[♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)** <small>(128)</small>
+  - **[♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)** <small>(131)</small>
     - [♾️ Quest Perfection Dashboard](../it-journey/pages/_quest-reports/index.md)
     - [2026 06 29 Developer 0000](../it-journey/pages/_quest-reports/2026-06-29-developer-0000.md)
     - [2026 06 29 Developer 0001](../it-journey/pages/_quest-reports/2026-06-29-developer-0001.md)
@@ -1020,6 +1023,9 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [2026 09 03 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-03-digital-artist-0001.md)
     - [2026 09 04 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-04-digital-artist-0001.md)
     - [2026 09 05 Developer 0001](../it-journey/pages/_quest-reports/2026-09-05-developer-0001.md)
+    - [2026 09 07 Digital Artist 0001](../it-journey/pages/_quest-reports/2026-09-07-digital-artist-0001.md)
+    - [2026 09 08 Game Developer 0001](../it-journey/pages/_quest-reports/2026-09-08-game-developer-0001.md)
+    - [2026 09 09 Digital Artist 0111](../it-journey/pages/_quest-reports/2026-09-09-digital-artist-0111.md)
     - [📆 Quest Walkthrough — Security Specialist · Level 0010](../it-journey/pages/_quest-reports/2026-07-06-security-specialist-0010.md)
 - **Includes** <small>(2)</small>
   - [Contributor Profile Includes](../it-journey/_includes/contributor/README.md)

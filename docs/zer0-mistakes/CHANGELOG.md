@@ -16,6 +16,114 @@ hand-written prose covering the same releases in more depth; they sit below
 their version because release-please inserts each new release at the top of the
 file. Only `## [Unreleased]` describes work that has not shipped yet.
 
+## [1.30.0](https://github.com/bamr87/zer0-mistakes/compare/v1.29.0...v1.30.0) (2026-09-12)
+
+
+### Features
+
+* **ci:** produce visual evidence and baselines on PRs, not just verify them ([#462](https://github.com/bamr87/zer0-mistakes/issues/462)) ([a377fae](https://github.com/bamr87/zer0-mistakes/commit/a377fae6ea31a0bb015479dea6d1a7c41e141c3f))
+* **includes:** add background-image.html for CSS-painted cover art ([#451](https://github.com/bamr87/zer0-mistakes/issues/451)) ([9b15a67](https://github.com/bamr87/zer0-mistakes/commit/9b15a673f57b8f7f1f9dae9262191742d99d8080))
+* **includes:** Claude or Grok sessions in the Site Builder ([#473](https://github.com/bamr87/zer0-mistakes/issues/473)) ([e1c5753](https://github.com/bamr87/zer0-mistakes/commit/e1c57531fc23be8d071757cd1941e1ae15285da7))
+* **includes:** file the fleet issue contract from the feedback widget ([#472](https://github.com/bamr87/zer0-mistakes/issues/472)) ([24d4e2c](https://github.com/bamr87/zer0-mistakes/commit/24d4e2c6380541a894e9e671f0f0b0b859a29b05))
+* **includes:** make theme-color track the page surface, not the accent ([#447](https://github.com/bamr87/zer0-mistakes/issues/447)) ([f1fda85](https://github.com/bamr87/zer0-mistakes/commit/f1fda857bb0cf5bd64bebfc1215ba0a906f05e5c))
+* **includes:** themed Mermaid figures + toolbar ([#455](https://github.com/bamr87/zer0-mistakes/issues/455)) ([96776fa](https://github.com/bamr87/zer0-mistakes/commit/96776fa48bbe7b63058d1d246962019c745d7b93))
+* **scripts:** adopt the shared ai-runner kit for claude-run; consumers registry fixes; hub baseline ([#475](https://github.com/bamr87/zer0-mistakes/issues/475)) ([feb4133](https://github.com/bamr87/zer0-mistakes/commit/feb41332eb15d2c13fe0c0f6d15b61007e14daa3))
+
+
+### Bug Fixes
+
+* **a11y:** decouple heading size from heading level in theme chrome ([#450](https://github.com/bamr87/zer0-mistakes/issues/450)) ([bb92eb5](https://github.com/bamr87/zer0-mistakes/commit/bb92eb583c955e76339a9c7ab98532b35e226b36))
+* **a11y:** give footer icon links an accessible name, announce search results ([#441](https://github.com/bamr87/zer0-mistakes/issues/441)) ([a1811e8](https://github.com/bamr87/zer0-mistakes/commit/a1811e81ac0c17b0836994be7c48eba51252bae7))
+* **a11y:** stop emitting sidebar/TOC controls on layouts that render no offcanvas ([#443](https://github.com/bamr87/zer0-mistakes/issues/443)) ([619322d](https://github.com/bamr87/zer0-mistakes/commit/619322d8fd7c6e2a700ba154e065bf65caf67461))
+* **ci:** run the autogen lane's tooling from the base branch, not the PR ([#464](https://github.com/bamr87/zer0-mistakes/issues/464)) ([8473050](https://github.com/bamr87/zer0-mistakes/commit/8473050be2b4ddfd994c7bea8a8c35e37a66b7f8))
+* **ci:** stop the UI audit reporting a measurement blackout as a clean run ([#471](https://github.com/bamr87/zer0-mistakes/issues/471)) ([ab92619](https://github.com/bamr87/zer0-mistakes/commit/ab9261946e088417dabe4291590da1c7a964d4fa))
+* **content:** raw-protect Liquid that is written as documentation ([#446](https://github.com/bamr87/zer0-mistakes/issues/446)) ([6123c1f](https://github.com/bamr87/zer0-mistakes/commit/6123c1f1e6ffd167376d4ef421b0a9f78af3985e))
+* **includes:** declare charset inside the 1024-byte window, make the feed discoverable ([#440](https://github.com/bamr87/zer0-mistakes/issues/440)) ([4025205](https://github.com/bamr87/zer0-mistakes/commit/40252050ec21c70aa1d84820fdcde6d564e03478)), closes [#372](https://github.com/bamr87/zer0-mistakes/issues/372) [#371](https://github.com/bamr87/zer0-mistakes/issues/371)
+* **includes:** expose skin-button selected state via aria-pressed ([#469](https://github.com/bamr87/zer0-mistakes/issues/469)) ([6579b16](https://github.com/bamr87/zer0-mistakes/commit/6579b1621a5eff147e224977633728aadc960505)), closes [#467](https://github.com/bamr87/zer0-mistakes/issues/467)
+* **install:** stop seeding the theme's own navigation into consumers ([#449](https://github.com/bamr87/zer0-mistakes/issues/449)) ([232857c](https://github.com/bamr87/zer0-mistakes/commit/232857c66d7c3abccb166b5151a7f80a74dd17ca))
+* **navigation:** scroll spy bolds the section actually being read ([#456](https://github.com/bamr87/zer0-mistakes/issues/456)) ([5ff38bf](https://github.com/bamr87/zer0-mistakes/commit/5ff38bf98faf96cdc3bf63ea3f0e7b10e21f3aab))
+* **sass:** stop navbar controls flickering under a stationary pointer ([#453](https://github.com/bamr87/zer0-mistakes/issues/453)) ([fc84b9a](https://github.com/bamr87/zer0-mistakes/commit/fc84b9a4c714f8e04b8a0f940bed9e3795c144bc)), closes [#404](https://github.com/bamr87/zer0-mistakes/issues/404)
+* **scripts:** restore nested translation placeholders instead of leaking them ([#452](https://github.com/bamr87/zer0-mistakes/issues/452)) ([00cab73](https://github.com/bamr87/zer0-mistakes/commit/00cab73d915f4e116040ef6ca4c0381669ae4eb2))
+
+
+### Performance Improvements
+
+* **ci:** run the critical PR gate on 3 workers instead of 1 ([#481](https://github.com/bamr87/zer0-mistakes/issues/481)) ([b3fcbc7](https://github.com/bamr87/zer0-mistakes/commit/b3fcbc76a1af2a3a5e43eb28fbff7b3057751de6))
+* **includes:** strip developer doc banners from delivered HTML ([#445](https://github.com/bamr87/zer0-mistakes/issues/445)) ([89b10f1](https://github.com/bamr87/zer0-mistakes/commit/89b10f1ff361c919fd631d0e7e664ed6d7c28a14))
+
+## [Unreleased]
+
+### Changed
+
+- **`claude-run` is now the fleet's shared `ai-runner` kit.** The composite
+  action and its new `scripts/ai/run.sh` are byte-identical copies of
+  lifehacker.dev's (the kit source of truth) instead of a hand-rolled variant.
+  What changes for the two callers (`issue-autopilot.yml`,
+  `visual-evidence-autogen.yml`): an AI call that was attempted and rejected —
+  revoked credential, exhausted quota, `is_error` payload, CLI install failure
+  — now fails the step with the reason as a `::error::` annotation, where the
+  old action exited 0 and a dead run read green; the OAuth-first rule is
+  enforced with `env -u ANTHROPIC_API_KEY`; the model override is the canonical
+  `AI_MODEL` (or the new `model` input) rather than `ZER0_AI_MODEL`, and
+  `max-turns` is a new input. Metering (`scripts/ai/usage.rb`,
+  `usage_report.rb`, prices in `_data/ai_pricing.yml`) and the Claude API
+  fallback (`scripts/ai/api_call.rb`) ride along as optional companions. The
+  exit-code contract is pinned by `scripts/ci/test_ai_runner.sh`, wired into
+  `./scripts/bin/test`. The action's six existing inputs are unchanged.
+- **`claude-run` is consumed by reference from the hub.** `issue-autopilot.yml` and `visual-evidence-autogen.yml` now call `bamr87/bamr87/.github/actions/claude-run@main` (identical inputs) instead of a vendored `./.github/actions/claude-run`; the local action, `scripts/ai/run.sh`, and the vendored contract test (`scripts/ci/test_ai_runner.sh` + its `scripts/test/lib/` bridge) are deleted, while the consumer companions the hub runner probes for — `scripts/ai/usage.rb`, `usage_report.rb`, `api_call.rb`, `_data/ai.yml`, `_data/ai_pricing.yml`, `tools/unwrap-prose.py` — stay ([bamr87/bamr87#254](https://github.com/bamr87/bamr87/pull/254)).
+- **Consumer registry corrections.** `ai-world-view/ai-world-view.github.io`
+  is `remote_theme_floating` (both its `_config.yml` and `hub.yml` pins are
+  untagged), not `remote_theme_pinned`; `amr-bash/bash-365.com` is registered
+  as a consumer (floating `remote_theme`, unconstrained gem on Azure, path gem
+  for dev).
+
+### Fixed
+
+- **Every navbar link emitted invalid HTML — attributes glued together with no
+  separating whitespace (#465)** — the Liquid whitespace-trim markers around the
+  conditional `aria-current` in `_includes/navigation/navbar.html` ate the
+  newlines that separated the surrounding attributes, so the primary nav
+  rendered `aria-label="News"aria-current="page"title="News"` (the WHATWG
+  `missing-whitespace-between-attributes` parse error). The leading {% raw %}`{%-`{% endraw %}
+  stripped the newline after `aria-label` and the trailing {% raw %}`-%}`{% endraw %} the whitespace
+  before `title`, which means **two of the four sites were broken on every page,
+  not just the current one**: where the conditional sits between two
+  unconditional attributes both markers fire even when the `if` emits nothing.
+  Parsers recover, so nothing looked broken — but the attributes affected are
+  exactly `aria-label`, `aria-current` and `title`, and a stricter parser is
+  entitled to drop the "you are here" announcement for screen-reader users. All
+  four sites now use the non-trimming {% raw %}`{% if %}`{% endraw %} form already present at line 26
+  of the same file, with the separator outside the tag. Two guards in
+  `test/test_core.sh`: `test_navbar_attribute_whitespace` renders the real
+  include through Liquid across both `aria-current` branches and both nav modes
+  (6 of 8 rendered variants were invalid before the fix), and
+  `test_attribute_whitespace_in_markup` models the trim rules over every include
+  and layout with no gem dependency — it found a second live instance, a literal
+  missing space in `components/theme-preview-gallery.html`, fixed here too.
+  `test_jekyll_build` re-checks the delivered `_site` bytes. No visual change.
+- **The weekly UI/UX audit was blind, and reported it as clean.** `sweep.mjs`
+  built its pages with `browser.newPage()`, which `@axe-core/playwright`
+  refuses; the throw was caught by a single per-route `try` that also discarded
+  the overflow, console-error and link-collection data already gathered for
+  that route. Screenshots still succeeded, so the harness looked alive while
+  every accessibility, console, overflow and broken-link result on every route
+  was silently dropped — and the report rendered the absence as "0 axe
+  violations / 0 broken links". Pages are now built from `browser.newContext()`,
+  each measurement fails independently, a scan that errored is reported as
+  UNKNOWN rather than clean, and a measurement that fails on every route turns
+  the sweep red the way a total capture failure already did. On the demo site
+  the sweep goes from 18/21 captured with 21 blackout entries to **21/21
+  captured, 0 harness errors, 191 links crawled and 8 genuinely broken links
+  found** ([#468](https://github.com/bamr87/zer0-mistakes/issues/468)).
+- **Theme-skin buttons now announce which skin is applied.** The Theme Skin
+  group in Settings → Appearance conveyed selection only through the Bootstrap
+  `.active` class, which carries no accessibility semantics, so screen readers
+  announced nine identical unlabelled buttons — WCAG 2.1 SC 4.1.2 (Name, Role,
+  Value). Each button now ships `aria-pressed`, and the click and "Reset
+  background" handlers keep it in sync with `.active` through one shared
+  helper, matching the sibling color-mode group
+  ([#467](https://github.com/bamr87/zer0-mistakes/issues/467)).
+
 ## [1.29.0](https://github.com/bamr87/zer0-mistakes/compare/v1.28.0...v1.29.0) (2026-09-01)
 
 
@@ -54,6 +162,28 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
 
 ### Added
 
+- **Bring your own AI provider — Claude or Grok — and an open, coding-session-style
+  Site Builder (ZER0-087)** — the chat proxy gains a provider layer
+  (`templates/deploy/chat-proxy/providers.js`): xAI's Grok is a first-class
+  provider (`XAI_API_KEY`, `CHAT_PROVIDER`, `XAI_CHAT_MODEL`) for the chat
+  widget, the feedback triage and the Site Builder, translated server-side to
+  and from the Anthropic Messages dialect so no client changed. The Site
+  Builder's Connect step shows which providers the local dev proxy already has
+  keys for (masked), takes a token for the session (sent once to localhost,
+  kept in the proxy's memory, optionally saved to `.env` with mode 600), offers
+  the model catalog, an image renderer (Grok Imagine / OpenAI Images) and two
+  session modes: the guided nine steps, or an open session that can open an
+  existing site under the target root, read/edit/write/delete its files, run
+  `git status`/`diff`/`log`, generate images into `assets/`, run `jekyll build`
+  inside the container and stop a long tool run. Generated sites are
+  pre-configured for the chosen provider (`ai_chat.provider`, `preview_images`,
+  `.env.example`). The dev proxy now starts without a credential. Also fixes a
+  pre-existing 162px horizontal overflow of the whole `/setup/` page at phone
+  widths (the Connect step's command boxes could not shrink). (evidence:
+  [`test/visual/evidence/site-builder-providers/`](test/visual/evidence/site-builder-providers/README.md)
+  — Connect step: 2 provider cards, 2 session modes, token field is a password
+  input inert offline; mocked proxy: "needs a token" → "Grok connected"; Build:
+  existing sites listed, Open sets the target; mobile overflow 162px → 0px)
 - **CI now produces a UI pull request's visual artifacts instead of only
   checking for them (ZER0-085)** — `visual-evidence-autogen.yml` renders every
   same-repo PR in the same jammy Playwright image the snapshot gate uses, runs
@@ -177,6 +307,71 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
 
 ### Fixed
 
+- **Generated posts and notes were invisible on GitHub Pages** — every dated
+  document the wizard wrote was stamped `T09:00:00.000Z` on the day it was
+  generated. Jekyll refuses to publish future-dated documents unless
+  `future: true`, and GitHub Pages builds with the default, so a site generated
+  before 09:00 UTC went live with its posts and notes missing: linked from the
+  collection index and listed in the sitemap, but 404 when clicked. Generated
+  content is now stamped with the actual moment it was written, and a
+  regression test fails if any generated document carries a future date.
+  Found by publishing two example sites and clicking the links.
+- **Every page of every generated site 404'd on `user-overrides.js`** — the
+  Site Builder writes `user_overrides: true` so the theme loads the palette and
+  font overrides it generates, but that same flag also makes the theme load
+  `assets/js/user-overrides.js`, which the wizard never created. Generated
+  sites now ship a commented stub, so the request resolves and site owners have
+  an obvious place to put their own JavaScript. Found while publishing example
+  sites built by the wizard.
+- **Every generated landing page shipped an invisible button** —
+  `components/cta-button.html` mapped `variant: outline` to `btn-outline-light`,
+  which is white text on a white border, and the Site Builder's own default
+  call to action uses `outline` on a light hero. `outline` is now an outlined
+  *primary* button; `outline-light` is the explicit variant for a dark surface,
+  and the generated landing engine picks between them from `hero.variant`.
+  The theme's own homepage hero is `bg-primary text-white`, so its two
+  outlined buttons moved to `outline-light` and render exactly as before —
+  a consumer who copied `_data/landing.yml` into a site with a dark hero
+  should make the same one-word change.
+- **A planned `landing.hero.image` was accepted and then thrown away** — the
+  site plan's schema has offered `landing.hero.image` since the Site Builder
+  shipped, but the landing engine it generates never rendered it, so an agent
+  (or a human) could set a hero image, see it validated, watch it land in
+  `_data/landing.yml`, and get a landing page with no picture. `index.md` now
+  renders it inside the hero, decorative (empty `alt`) so a screen reader does
+  not hear the headline twice. Found by building a site end to end through the
+  new Grok path, where the "Hero image with …" shortcut pointed straight at the
+  dead field.
+- **A partial hero patch silently wiped the rest of the hero** —
+  `set_site_plan` replaced `landing.hero` wholesale, so the natural agent move
+  of "write the copy now, add the artwork two turns later"
+  (`{landing: {hero: {image}}}`) discarded the headline, subheadline and every
+  call to action, and the landing page quietly reverted to the site title and
+  the default buttons. The hero now merges field by field; `sections`,
+  `navigation.items` and `pages` still replace, because a shorter list has to
+  mean a shorter list. The tool description says so, and the regression test
+  pins both halves.
+
+- **A new post appeared at its own URL but on no index** — the generated
+  `_config_dev.yml` turned on Jekyll's experimental incremental regeneration,
+  which rebuilds only documents whose own source changed. Adding a post left
+  the collection index, the home page's latest-posts list and the feed showing
+  the old set, with the post reachable only by typing its URL. New sites are
+  now generated with `incremental: false`; a full rebuild of a fresh site takes
+  about a second and is always right.
+
+- **The 15-second status poll handed the composer back mid-turn** — the Site
+  Builder's proxy poll rebuilt the panel's enabled state from the connection
+  alone, so during a long action (a Docker build, an image render) the input
+  and Send button re-enabled themselves and the Stop button vanished, while
+  tools were still running. A second message could then interleave with the
+  first. The poll now respects the busy state.
+- **A newly added post never appeared on the running site** — Jekyll's
+  `--watch` only tracks collection documents that existed when `serve` started,
+  so a page or post the assistant added to a running project stayed invisible
+  with no explanation. `write_project_file` now says so in its result and
+  offers a restart, and `run_compose` gained a `restart` action.
+
 - **Switching colour mode destroyed every Mermaid diagram** — the old include's
   `MutationObserver` re-render emptied each `.mermaid` div and refilled it with
   the div's *current* text, which after the first render is the SVG's own
@@ -203,6 +398,69 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
   a fixture with a lower-case `style`/`text` inside `<svg>`, and the Mermaid
   spec asserts a pie slice's computed fill equals its own attribute and that no
   unscoped `path` rule exists on the page.
+
+### Changed
+
+- **The page-feedback widget now files the fleet's issue contract, not its own
+  (UPS-FB).** The theme built its own issue body, its own escaping, and its own
+  URL-length trimming — and so did the 404 page and the AI chat, three builders
+  in one repo with three different behaviours. All three now go through
+  `FleetFeedbackCore` in `assets/js/fleet-feedback.js`, vendored byte-identically
+  from the fleet kit (`bamr87/bamr87` `templates/feedback/`, held to the hub's
+  copy by the drift gate). It is the same builder the fleet's `<fleet-feedback>`
+  web component uses, so an issue filed from a page here and one filed from a
+  React app elsewhere are byte-identical to the pipeline that triages them.
+
+  What that adds to every filed issue: sections in a fixed order, a
+  `<!-- fleet-feedback v1 type=... -->` marker the issue pipeline reads to
+  recognise an already-structured report, and a real over-budget path. The AI
+  chat in particular used to `.slice(0, 6000)` its body — silently dropping
+  whatever Claude had written past that point — and now trims by section and
+  hands the full text to the clipboard.
+
+  The theme keeps its Bootstrap modal and its AI triage step; only the body
+  assembly moved. Two UIs, one contract.
+
+- **Request-type labels map onto the fleet issue-pipeline taxonomy.**
+  `enhancement`/`documentation` become `feature`/`docs`; `area:docs`/`area:feat`
+  drop out. Every label the widget applies exists in this repo (GitHub silently
+  drops the ones that do not), and a widget-filed issue is now pipeline-eligible
+  on the next scan. The zero-`_data` fallback taxonomy carries them too, so
+  `remote_theme` consumers benefit the moment those labels exist in their repo.
+
+- **Captured console lines are redacted before they enter the buffer.** Bearer
+  tokens, API keys, JWTs, GitHub tokens and email addresses are masked on the
+  way in, so a secret cannot be previewed, copied, or filed even by accident.
+  Credentials reach the console more often than anyone expects — an
+  `Authorization` header logged by a fetch wrapper, a signed URL in a 403.
+
+- **The capture buffer hooks `console.warn` and `console.error` only.**
+  Previously `log`, `info` and `debug` were captured too. At a 40-entry ring,
+  debug chatter evicts the one line that explains the failure — which is the
+  line a report exists to carry. `_includes/core/console-capture.html` is now a
+  two-line loader for the vendored buffer rather than 60 lines of inline script,
+  which also *shrinks* `<head>` and buys back room for the charset meta that has
+  to land in the first 1024 bytes (#372).
+
+### Fixed
+
+- **The 404 page files a report a maintainer can act on.** "Submit an Issue on
+  GitHub" opened a hand-built form containing two sentences of boilerplate — no
+  page context, no environment, no captured errors. It now opens the feedback
+  widget pre-typed as `fix-page` with the URL that failed (and the page that
+  linked to it) already in the description.
+
+- **The feedback FAB survives its script failing to load.** It was a `<button>`
+  whose only behaviour came from JavaScript; with the widget now depending on a
+  second script, a 404 on either one would have left a decorative circle in the
+  corner. It is an anchor to the issue form, upgraded in place when the script
+  runs — the same progressive enhancement the inline "Improve" link already had.
+
+- **The page-feedback Playwright spec dismisses the cookie-consent banner.** The
+  banner is a full-width bar on a layer above the FAB stack, so it swallowed
+  every click aimed at the FAB. Every other spec that touches lower-screen chrome
+  already seeded the consent choice through the shared fixture; this one never
+  did.
 
 ### Changed
 

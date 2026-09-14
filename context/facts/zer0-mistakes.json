@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 723,
-    "fingerprint": "467438bac759f757",
+    "file_count": 727,
+    "fingerprint": "3ee8dbf5c7704551",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4798975
+    "total_bytes": 4861045
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "3857492f542bcef6",
+    "fingerprint": "9e76fd61f4dea36f",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 643,
+    "pages": 647,
     "present": true,
-    "sections": 97,
+    "sections": 98,
     "skipped": 8,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 61,
+        "pages": 65,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -128,7 +128,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 723
+      "zer0-mistakes": 727
     },
     "code_languages": [
       "bash",
@@ -140,7 +140,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 723,
+    "indexed_documents": 727,
     "top_tags": [
       "jekyll",
       "docker",
@@ -158,7 +158,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 582784
+    "total_words": 592065
   },
   "schema_version": "1.0",
   "signals": {
@@ -193,12 +193,12 @@
         "name": "docs"
       },
       {
-        "doc_count": 52,
-        "name": "examples"
+        "doc_count": 55,
+        "name": "test"
       },
       {
         "doc_count": 52,
-        "name": "test"
+        "name": "examples"
       },
       {
         "doc_count": 45,
@@ -217,8 +217,8 @@
         "name": "templates"
       },
       {
-        "doc_count": 8,
-        "name": ".cursor"
+        "doc_count": 9,
+        "name": "scripts"
       }
     ]
   }
