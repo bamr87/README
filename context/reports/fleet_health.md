@@ -9,13 +9,12 @@ generated: true
 
 # Fleet documentation health
 
-**30** repositories surveyed, **328** findings (0 error, 120 warn, 208 info). Mean health **88.6**.
+**30** repositories surveyed, **297** findings (0 error, 90 warn, 207 info). Mean health **89.2**.
 
 Scores are 100 minus the weighted penalty of each component: governance 20, readme 25, links 15, structure 15, metadata 10, quality 10, agent 5.
 
 | Repository | Score | Grade | Errors | Warnings | Info | Docs | Stack |
 |---|---:|:---:|---:|---:|---:|---:|---|
-| [barodybroject](https://github.com/bamr87/barodybroject) | 75 | C | 0 | 30 | 7 | 339 | python, docker |
 | [irony-works](https://github.com/bamr87/irony-works) | 75 | C | 0 | 4 | 29 | 93 | jekyll |
 | [it-journey](https://github.com/bamr87/it-journey) | 79 | C | 0 | 24 | 10 | 932 | ruby, docker, jekyll, make |
 | [zer0-pages](https://github.com/bamr87/zer0-pages) | 81 | B | 0 | 6 | 8 | 237 | ruby, docker, jekyll |
@@ -38,6 +37,7 @@ Scores are 100 minus the weighted penalty of each component: governance 20, read
 | [zer0-demo-garden](https://github.com/bamr87/zer0-demo-garden) | 91 | A | 0 | 1 | 7 | 13 | ruby, docker, jekyll |
 | [lawmode](https://github.com/bamr87/lawmode) | 92 | A | 0 | 1 | 6 | 17 | python, docker, make |
 | [ai-seed](https://github.com/bamr87/ai-seed) | 94 | A | 0 | 2 | 4 | 40 | python, docker, mkdocs |
+| [barodybroject](https://github.com/bamr87/barodybroject) | 94 | A | 0 | 0 | 6 | 339 | python, docker |
 | [bashos](https://github.com/bamr87/bashos) | 94 | A | 0 | 1 | 6 | 21 | python, docker, make |
 | [wargames](https://github.com/bamr87/wargames) | 94 | A | 0 | 1 | 5 | 227 | ruby, jekyll |
 | [wtd](https://github.com/bamr87/wtd) | 94 | A | 0 | 1 | 4 | 13 | python, docker |
@@ -50,33 +50,16 @@ Scores are 100 minus the weighted penalty of each component: governance 20, read
 
 | Check | Findings |
 |---|---:|
-| D8 | 74 |
+| D8 | 45 |
 | G1 | 55 |
 | G10 | 48 |
-| G2 | 63 |
+| G2 | 62 |
 | G3 | 10 |
 | G5 | 33 |
 | G8 | 4 |
-| Q1 | 41 |
+| Q1 | 40 |
 
 ## Per repository
-
-### barodybroject — 75 (C)
-
-Weakest components: links 0.0/15, readme 18.1/25, governance 18.0/20
-
-| Severity | Check | Finding |
-|---|---|---|
-| warn | D8 | `CHANGELOG.md` links to `./docs/deployment/minimal-guide.md`, which is not in the repository |
-| warn | D8 | `CHANGELOG.md` links to `./docs/infrastructure/v0.2.0-changes.md`, which is not in the repository |
-| warn | D8 | `CHANGELOG.md` links to `./docs/migration/cms-removal.md`, which is not in the repository |
-| warn | D8 | `CHANGELOG.md` links to `./docs/migration/v0.2.0-guide.md`, which is not in the repository |
-| warn | D8 | `CHANGELOG.md` links to `./docs/troubleshooting/azure-quota.md`, which is not in the repository |
-| warn | D8 | `CONTRIBUTING.md` links to `CODE_OF_CONDUCT.md`, which is not in the repository |
-| warn | D8 | `docs/changelog/CHANGELOG.md` links to `./CONTRIBUTING.md`, which is not in the repository |
-| warn | D8 | `docs/changelog/CHANGELOG.md` links to `./docs/changelog/CONTRIBUTING_CHANGES.md`, which is not in the repository |
-| warn | D8 | `docs/changelog/CHANGELOG.md` links to `./docs/changelog/README.md`, which is not in the repository |
-| warn | D8 | `docs/changelog/CHANGELOG.md` links to `./docs/changelog/archive/`, which is not in the repository |
 
 ### irony-works — 75 (C)
 
@@ -301,6 +284,10 @@ Weakest components: governance 18.0/20, links 13.1/15, metadata 8.2/10
 |---|---|---|
 | warn | D8 | `docs/index.md` links to `LICENSE`, which is not in the repository |
 | warn | G10 | GitHub repository description is empty |
+
+### barodybroject — 94 (A)
+
+Weakest components: readme 21.2/25, governance 18.0/20, quality 9.5/10
 
 ### bashos — 94 (A)
 

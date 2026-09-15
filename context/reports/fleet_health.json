@@ -5,23 +5,23 @@
   "summary": {
     "repositories": 30,
     "gathered": 30,
-    "findings": 328,
+    "findings": 297,
     "by_severity": {
       "error": 0,
-      "warn": 120,
-      "info": 208
+      "warn": 90,
+      "info": 207
     },
     "by_check": {
-      "D8": 74,
+      "D8": 45,
       "G1": 55,
       "G10": 48,
-      "G2": 63,
+      "G2": 62,
       "G3": 10,
       "G5": 33,
       "G8": 4,
-      "Q1": 41
+      "Q1": 40
     },
-    "mean_score": 88.6,
+    "mean_score": 89.2,
     "weights": {
       "governance": 20,
       "readme": 25,
@@ -33,7 +33,6 @@
     }
   },
   "ranking": [
-    "barodybroject",
     "irony-works",
     "it-journey",
     "zer0-pages",
@@ -56,6 +55,7 @@
     "zer0-demo-garden",
     "lawmode",
     "ai-seed",
+    "barodybroject",
     "bashos",
     "wargames",
     "wtd",
@@ -1592,8 +1592,8 @@
       "url": "https://github.com/bamr87/bamr87.github.io",
       "kind": "site",
       "head": {
-        "sha": "a3107eeabdea9eb422629ee30714f21c37d36722",
-        "date": "2026-09-14T02:22:26+00:00"
+        "sha": "a734891b3f46ffea62b8dc47d9af97bf5cc017ae",
+        "date": "2026-09-15T02:20:37+00:00"
       },
       "counts": {
         "files": 265,
@@ -1858,8 +1858,8 @@
       "url": "https://github.com/bamr87/barodybroject",
       "kind": "app",
       "head": {
-        "sha": "ba1ed08317f5b7a741bf2d9cded0933bb5506968",
-        "date": "2026-09-12T20:01:15-06:00"
+        "sha": "e61c7b8a9f6d5464e9eabce58381fbe384a363f8",
+        "date": "2026-09-14T20:30:17-06:00"
       },
       "counts": {
         "files": 680,
@@ -1871,8 +1871,8 @@
         "docker"
       ],
       "health": {
-        "score": 75,
-        "grade": "C",
+        "score": 94,
+        "grade": "A",
         "components": {
           "governance": {
             "weight": 20,
@@ -1882,15 +1882,15 @@
           },
           "readme": {
             "weight": 25,
-            "score": 18.1,
-            "findings": 4,
-            "penalty": 6.9
+            "score": 21.2,
+            "findings": 3,
+            "penalty": 3.8
           },
           "links": {
             "weight": 15,
-            "score": 0.0,
-            "findings": 29,
-            "penalty": 15.0
+            "score": 15.0,
+            "findings": 0,
+            "penalty": 0.0
           },
           "structure": {
             "weight": 15,
@@ -1906,9 +1906,9 @@
           },
           "quality": {
             "weight": 10,
-            "score": 9.0,
-            "findings": 2,
-            "penalty": 1.0
+            "score": 9.5,
+            "findings": 1,
+            "penalty": 0.5
           },
           "agent": {
             "weight": 5,
@@ -1919,464 +1919,6 @@
         }
       },
       "findings": [
-        {
-          "key": "D8:barodybroject:CHANGELOG.md->./docs/deployment/minimal-guide.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CHANGELOG.md->./docs/deployment/minimal-guide.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `./docs/deployment/minimal-guide.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/deployment/minimal-guide.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:CHANGELOG.md->./docs/infrastructure/v0.2.0-changes.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CHANGELOG.md->./docs/infrastructure/v0.2.0-changes.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `./docs/infrastructure/v0.2.0-changes.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/infrastructure/v0.2.0-changes.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:CHANGELOG.md->./docs/migration/cms-removal.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CHANGELOG.md->./docs/migration/cms-removal.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `./docs/migration/cms-removal.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/migration/cms-removal.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:CHANGELOG.md->./docs/migration/v0.2.0-guide.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CHANGELOG.md->./docs/migration/v0.2.0-guide.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `./docs/migration/v0.2.0-guide.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/migration/v0.2.0-guide.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:CHANGELOG.md->./docs/troubleshooting/azure-quota.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CHANGELOG.md->./docs/troubleshooting/azure-quota.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `./docs/troubleshooting/azure-quota.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/troubleshooting/azure-quota.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:CONTRIBUTING.md->CODE_OF_CONDUCT.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "CONTRIBUTING.md->CODE_OF_CONDUCT.md",
-          "path": "CONTRIBUTING.md",
-          "message": "`CONTRIBUTING.md` links to `CODE_OF_CONDUCT.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "CODE_OF_CONDUCT.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./CONTRIBUTING.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./CONTRIBUTING.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./CONTRIBUTING.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./CONTRIBUTING.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/CONTRIBUTING_CHANGES.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/CONTRIBUTING_CHANGES.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/CONTRIBUTING_CHANGES.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/CONTRIBUTING_CHANGES.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/README.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/README.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/archive/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/archive/",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/archive/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/archive/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/archive/DOCKER_SIMPLIFICATION_SUMMARY.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/archive/FRAMEWORK_SIMPLIFICATION_SUMMARY.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/archive/TEMPLATE_IMPROVEMENTS.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/summaries/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/summaries/",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/summaries/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/summaries/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/summaries/2025-01-27-template-improvements/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/summaries/2025-01-27-template-improvements/",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/summaries/2025-01-27-template-improvements/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/summaries/2025-01-27-template-improvements/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/changelog/templates/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/changelog/templates/",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/changelog/templates/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/changelog/templates/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/configuration/environment-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/configuration/environment-config.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/configuration/environment-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/configuration/environment-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/CHANGELOG.md->./docs/configuration/performance-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/CHANGELOG.md->./docs/configuration/performance-config.md",
-          "path": "docs/changelog/CHANGELOG.md",
-          "message": "`docs/changelog/CHANGELOG.md` links to `./docs/configuration/performance-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./docs/configuration/performance-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/README.md->../api/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/README.md->../api/",
-          "path": "docs/changelog/README.md",
-          "message": "`docs/changelog/README.md` links to `../api/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "../api/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/changelog/README.md->../development/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/changelog/README.md->../development/",
-          "path": "docs/changelog/README.md",
-          "message": "`docs/changelog/README.md` links to `../development/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "../development/"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/configuration/README.md->./database-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/configuration/README.md->./database-config.md",
-          "path": "docs/configuration/README.md",
-          "message": "`docs/configuration/README.md` links to `./database-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./database-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/configuration/README.md->./deployment-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/configuration/README.md->./deployment-config.md",
-          "path": "docs/configuration/README.md",
-          "message": "`docs/configuration/README.md` links to `./deployment-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./deployment-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/configuration/README.md->./performance-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/configuration/README.md->./performance-config.md",
-          "path": "docs/configuration/README.md",
-          "message": "`docs/configuration/README.md` links to `./performance-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./performance-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:docs/configuration/README.md->./security-config.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "docs/configuration/README.md->./security-config.md",
-          "path": "docs/configuration/README.md",
-          "message": "`docs/configuration/README.md` links to `./security-config.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "./security-config.md"
-          }
-        },
-        {
-          "key": "D8:barodybroject:src/pages/_data/README.md->url",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "src/pages/_data/README.md->url",
-          "path": "src/pages/_data/README.md",
-          "message": "`src/pages/_data/README.md` links to `url`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "url"
-          }
-        },
-        {
-          "key": "D8:barodybroject:src/setup/README.md->.devcontainer/docker-compose_dev.yml",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "src/setup/README.md->.devcontainer/docker-compose_dev.yml",
-          "path": "src/setup/README.md",
-          "message": "`src/setup/README.md` links to `.devcontainer/docker-compose_dev.yml`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": ".devcontainer/docker-compose_dev.yml"
-          }
-        },
-        {
-          "key": "D8:barodybroject:src/setup/README.md->.env.example",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "src/setup/README.md->.env.example",
-          "path": "src/setup/README.md",
-          "message": "`src/setup/README.md` links to `.env.example`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": ".env.example"
-          }
-        },
-        {
-          "key": "D8:barodybroject:src/setup/README.md->docker-compose.yml",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "src/setup/README.md->docker-compose.yml",
-          "path": "src/setup/README.md",
-          "message": "`src/setup/README.md` links to `docker-compose.yml`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "docker-compose.yml"
-          }
-        },
-        {
-          "key": "D8:barodybroject:src/setup/README.md->docs/installation-wizard.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "src/setup/README.md->docs/installation-wizard.md",
-          "path": "src/setup/README.md",
-          "message": "`src/setup/README.md` links to `docs/installation-wizard.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "docs/installation-wizard.md"
-          }
-        },
-        {
-          "key": "G2:barodybroject:usage",
-          "check": "G2",
-          "class": "gap",
-          "severity": "warn",
-          "repo": "barodybroject",
-          "subject": "usage",
-          "path": "README.md",
-          "message": "README has no usage section",
-          "remedy": "Add a 'Usage' section to README.md.",
-          "component": "",
-          "evidence": {
-            "headings": [
-              "barodybroject",
-              "start here",
-              "current stack",
-              "repository layout",
-              "development quick start",
-              "testing",
-              "cleanup status"
-            ]
-          }
-        },
         {
           "key": "G1:barodybroject:CODE_OF_CONDUCT.md",
           "check": "G1",
@@ -2427,6 +1969,7 @@
               "current stack",
               "repository layout",
               "development quick start",
+              "using the application",
               "testing",
               "cleanup status"
             ]
@@ -2450,6 +1993,7 @@
               "current stack",
               "repository layout",
               "development quick start",
+              "using the application",
               "testing",
               "cleanup status"
             ]
@@ -2481,19 +2025,6 @@
           "subject": "src/index.md#h1",
           "path": "src/index.md",
           "message": "`src/index.md` has no H1 heading",
-          "remedy": "Give the page a single top-level heading.",
-          "component": "",
-          "evidence": {}
-        },
-        {
-          "key": "Q1:barodybroject:src/pages/_data/README.md#h1",
-          "check": "Q1",
-          "class": "quality",
-          "severity": "info",
-          "repo": "barodybroject",
-          "subject": "src/pages/_data/README.md#h1",
-          "path": "src/pages/_data/README.md",
-          "message": "`src/pages/_data/README.md` has no H1 heading",
           "remedy": "Give the page a single top-level heading.",
           "component": "",
           "evidence": {}
