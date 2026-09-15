@@ -6,3 +6,4 @@ Draft blog posts written at the end of each Claude Code session in this repo, pe
 |---|---|---|
 | `2026-09-14-auditing-a-docs-platform-before-redesigning-it.md` | PLAN.md (v3 redesign plan) | Auditing a context engine, finding drift the gates missed, and planning a documentation platform with AI |
 | `2026-09-14-necessary-not-just-safe-auto-merging-docs.md` | PLAN.md §7 (autonomous review and merge) | Defining "necessary" so a machine can check it, stage-gated autonomy, and an AI reviewer that can veto but not authorize |
+| `2026-09-15-auditing-your-own-auditor.md` | The fleet survey and barodybroject#182 | Building a 30-repo documentation scanner, finding 623 false positives in its own output, and closing the loop on a real fix |
