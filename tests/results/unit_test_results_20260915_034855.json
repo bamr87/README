@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-15T03:48:54.290872",
+  "test_type": "unit",
+  "total_tests": 124,
+  "passed": 123,
+  "failed": 1,
+  "errors": 0,
+  "test_results": [
+    {
+      "test_name": "test_ingest_excludes_match_the_prose_gate (test_file_processing.TestIngestProseNormalization.test_ingest_excludes_match_the_prose_gate)",
+      "status": "failed",
+      "error": "Traceback (most recent call last):\n  File \"/home/user/README/tests/unit/test_cases/test_file_processing.py\", line 232, in test_ingest_excludes_match_the_prose_gate\n    self.assertEqual(self._excludes(self.aggregate), gate_excludes)\nAssertionError: Items in the second set but not the first:\n'^docs/'\n"
+    }
+  ]
+}

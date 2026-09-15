@@ -50,6 +50,17 @@ jobs:
       - name: Validate SCHEMA pyramid
         run: python3 scripts/schema_lint.py check .
 
+      # The gates the pull-request workflow enforces on humans, run here
+      # BEFORE the commit. Without this the cron could - and on 2026-09-07
+      # did - commit drifted navigation to main, which then failed the gate
+      # on every branch cut from it.
+      - name: Validate navigation is in sync
+        run: python3 -m scripts.context_engine navcheck
+
+      # Every path a generated surface names must be a file git will accept.
+      - name: Validate generated surfaces reference tracked files
+        run: python3 scripts/check_tracked_surfaces.py
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:

@@ -16,36 +16,43 @@ output/recommendations/*.json
 !output/recommendations/.gitkeep
 
 # Python
+# These are ANCHORED to the repository root on purpose. Un-anchored, a bare
+# `lib/` or `.vscode/` matches at any depth, which silently swallowed
+# aggregated corpus files such as docs/zer0-mistakes/scripts/lib/** - the
+# navigator indexed them, the facts counted them, and the commit dropped
+# them, leaving nav.yml pointing at pages that were never committed.
+# Corpus exclusions belong in the navigation contract in _data/projects.yml,
+# never here.
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
 # Virtual environments
-venv/
-env/
-ENV/
-.venv/
+/venv/
+/env/
+/ENV/
+/.venv/
 
 # IDE
-.vscode/
-.idea/
+/.vscode/
+/.idea/
 *.swp
 *.swo
 

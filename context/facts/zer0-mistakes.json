@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 727,
-    "fingerprint": "3ee8dbf5c7704551",
+    "file_count": 724,
+    "fingerprint": "c76fbea349777b8e",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4861045
+    "total_bytes": 4846784
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "9e76fd61f4dea36f",
+    "fingerprint": "796a5f1407231046",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 647,
+    "pages": 644,
     "present": true,
-    "sections": 98,
+    "sections": 96,
     "skipped": 8,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 65,
+        "pages": 62,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -217,8 +217,8 @@
         "name": "templates"
       },
       {
-        "doc_count": 9,
-        "name": "scripts"
+        "doc_count": 8,
+        "name": ".cursor"
       }
     ]
   }

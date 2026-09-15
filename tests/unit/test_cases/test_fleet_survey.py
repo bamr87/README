@@ -300,3 +300,44 @@ class TestCheckRegistry(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestTrackedSurfaces(unittest.TestCase):
+    """
+    The integrity gate that closes the defect which left `main` drifted:
+    a generated surface naming a page git will not keep.
+    """
+
+    def setUp(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location(
+            "check_tracked_surfaces", ROOT / "scripts" / "check_tracked_surfaces.py")
+        self.mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(self.mod)
+
+    def test_nav_targets_are_extracted_from_every_nesting_level(self):
+        import tempfile
+        import yaml as _yaml
+        nav = {"nav": [
+            {"Corpus": [
+                {"Page": "demo/a.md"},
+                {"Section": [{"Deep": "demo/sub/b.md"}]},
+            ]},
+        ]}
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "nav.yml"
+            path.write_text(_yaml.safe_dump(nav))
+            original = self.mod.NAV_YML
+            try:
+                self.mod.NAV_YML = path
+                self.assertEqual(sorted(self.mod.nav_targets()),
+                                 ["demo/a.md", "demo/sub/b.md"])
+            finally:
+                self.mod.NAV_YML = original
+
+    def test_this_repository_passes_the_gate(self):
+        # The invariant itself: no surface in this repo may name an
+        # untracked page, and no corpus path may be gitignored.
+        result = self.mod.check()
+        self.assertEqual(result["problems"], [],
+                         "\n".join(p["message"] for p in result["problems"]))

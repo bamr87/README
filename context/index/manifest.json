@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-09-14T03:13:18+00:00",
+  "generated_at": "2026-09-15T03:48:30+00:00",
   "engine_version": "1.0.0",
   "enrichment": "heuristic",
   "project_count": 7,
   "fingerprints": {
     "scripts": "2b01e2e4e6e5320f",
     "skills": "a7046c49c6e5b26e",
-    "barodybroject": "a068beb9f3d3446e",
+    "barodybroject": "967e857a31ff765f",
     "bashcrawl": "641caf54c3c7d5be",
-    "zer0-mistakes": "3ee8dbf5c7704551",
-    "it-journey": "e74d1ec8bdf0eeb4",
-    "OverTheWire-website": "8a95c989dbb45bc1"
+    "zer0-mistakes": "c76fbea349777b8e",
+    "it-journey": "74976f081a14db6d",
+    "OverTheWire-website": "430a761accf7d02a"
   },
   "corpus_index_present": true,
   "corpus_index_generated_at": "2026-09-14T03:13:14.850055",
   "navigation": {
-    "pages": 2124,
+    "pages": 2121,
     "corpora": 7,
     "fingerprints": {
       "it-journey": "4c8cfb295252e0e1",
-      "zer0-mistakes": "9e76fd61f4dea36f",
+      "zer0-mistakes": "796a5f1407231046",
       "barodybroject": "346f30cf6e0d6733",
       "bashcrawl": "fdbc0c73059689fd",
       "skills": "292f000a4ab20ef9",

@@ -19,6 +19,7 @@ coverage: full
 | `aggregate_mkdocs.py` | file | Alternative category-bucketing aggregator (MkDocsAggregator) | |
 | `analyze_doc_structure.py` | file | Corpus structure analysis utility | |
 | `check_frontmatter.py` | file | Frontmatter validator (+ --fix) | required |
+| `check_tracked_surfaces.py` | file | Integrity gate: every path a generated surface names is a git-tracked file, and no corpus path is gitignored | required |
 | `clean_frontmatter.py` | file | Frontmatter normalizer | |
 | `cleanup_docs.py` | file | Corpus cleanup utility | |
 | `context_engine/` | dir | Stages 5-7: the context engine package (extract→navigate→synthesize→assemble→index), plus the fleet survey (gather→analyze→report) | required terminal |

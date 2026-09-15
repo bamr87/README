@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1167,
-    "fingerprint": "e74d1ec8bdf0eeb4",
+    "file_count": 1166,
+    "fingerprint": "74976f081a14db6d",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 14456852
+    "total_bytes": 14451803
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -42,7 +42,7 @@
     "pages": 926,
     "present": true,
     "sections": 93,
-    "skipped": 17,
+    "skipped": 16,
     "title": "IT Journey",
     "top_sections": [
       {

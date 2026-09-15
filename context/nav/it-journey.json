@@ -8,7 +8,7 @@
     "pages": 926,
     "sections": 93,
     "max_depth": 7,
-    "skipped": 17
+    "skipped": 16
   },
   "skipped": [
     ".claude",
@@ -21,7 +21,6 @@
     ".github",
     ".issues",
     ".quests",
-    ".vscode",
     "README.md",
     "link-check-results/ai_analysis.md",
     "link-check-results/detailed_analysis.md",
