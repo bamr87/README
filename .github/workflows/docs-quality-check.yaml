@@ -63,10 +63,41 @@ jobs:
       # The sidebar is generated from docs/ + the registry contract. If a PR
       # changes either without rebuilding, the published nav would drift away
       # from the published content - regenerate and diff to catch that.
+      # navcheck names the drifted surfaces and the one-command remedy on *stderr*,
+      # but failing here skips every step below — including the PR comment — so the
+      # author saw a bare red X and had to open the raw log to find it. Mirror it
+      # into the job summary instead; the gate itself still fails on drift.
       - name: Validate navigation is in sync
         run: |
-          set -euo pipefail
-          python3 -m scripts.context_engine navcheck
+          set -uo pipefail
+          log="$RUNNER_TEMP/navcheck.log"
+          if python3 -m scripts.context_engine navcheck >"$log" 2>&1; then
+            cat "$log"
+            exit 0
+          fi
+          cat "$log"
+          {
+            echo '### Navigation is out of sync'
+            echo
+            echo 'The sidebar is derived from the `docs/` hierarchy plus the registry'
+            echo 'navigation contract — it is never hand-curated. This branch changed one'
+            echo 'of those without rebuilding, so regenerate and commit the result:'
+            echo
+            echo '```sh'
+            echo 'python3 -m scripts.context_engine build'
+            echo '```'
+            echo
+            echo 'That rewrites `nav.yml`, `context/nav/*.json` and `docs/browse/`.'
+            echo
+            echo '<details><summary>navcheck output</summary>'
+            echo
+            echo '```'
+            cat "$log"
+            echo '```'
+            echo
+            echo '</details>'
+          } >>"$GITHUB_STEP_SUMMARY"
+          exit 1
 
       - name: Run doc lint and frontmatter checks
         run: |
