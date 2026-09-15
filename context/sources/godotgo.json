@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "godotgo",
+  "repo": "bamr87/godotgo",
+  "url": "https://github.com/bamr87/godotgo",
+  "default_branch": "main",
+  "head": {
+    "sha": "57668a00d0c3307b1ad822eb1f6f4bef499ca414",
+    "date": "2026-09-11T13:29:56-06:00"
+  },
+  "fingerprint": "00654774d2fcbff1",
+  "counts": {
+    "files": 379,
+    "docs": 32,
+    "top_dirs": 9
+  },
+  "stack": [
+    "mcp"
+  ],
+  "top_dirs": [
+    ".claude",
+    ".github",
+    ".vscode",
+    "docker",
+    "docs",
+    "framework",
+    "games",
+    "templates",
+    "tools"
+  ],
+  "docs": [
+    ".claude/agents/gdscript-reviewer.md",
+    ".claude/agents/godot-qa.md",
+    ".claude/skills/framework/SKILL.md",
+    ".claude/skills/godot-ai/SKILL.md",
+    ".claude/skills/mm-export/SKILL.md",
+    ".claude/skills/new-game/SKILL.md",
+    ".claude/skills/new-scene/SKILL.md",
+    ".claude/skills/run-godotgo/SKILL.md",
+    ".claude/skills/verify/SKILL.md",
+    ".github/copilot-instructions.md",
+    "CLAUDE.md",
+    "LICENSE",
+    "README.md",
+    "docs/ai-development.md",
+    "docs/authoring-games.md",
+    "docs/framework.md",
+    "docs/material-maker.md",
+    "docs/verification.md",
+    "framework/addons/godotgo/README.md",
+    "framework/tests/fixtures/levels/sample.txt",
+    "games/leap/README.md",
+    "games/leap/levels/level_1.txt",
+    "games/orb-run/README.md",
+    "games/orb-run/materials/metal/README.md",
+    "games/orb-run/materials/starter/README.md",
+    "games/shift/README.md",
+    "games/shift/levels/level_1.txt",
+    "games/shift/levels/level_2.txt",
+    "games/shift/levels/level_3.txt",
+    "games/shift/levels/level_4.txt",
+    "games/swarm/README.md",
+    "templates/blank/README.md"
+  ],
+  "github": {
+    "description": "A workspace for building Godot 4 games: one reusable framework, five sample games that exercise it, and tooling that treats every project identically.",
+    "language": "GDScript",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 10877,
+    "stars": 0,
+    "created": "2026-09-11",
+    "pushed": "2026-09-11"
+  },
+  "error": ""
+}

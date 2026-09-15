@@ -2,6 +2,9 @@
 temp/
 raw_docs/
 
+# Shallow clones the fleet survey keeps between runs
+.cache/
+
 # MkDocs build output
 site/
 

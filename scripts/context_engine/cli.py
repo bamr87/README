@@ -13,6 +13,7 @@ from .query import (
     list_nav, list_projects, search,
 )
 from .registry import RegistryError, load_registry, sync_repos_txt
+from .survey import FleetError, load_fleet, summarize, survey, survey_local
 
 
 def _cmd_build(args: argparse.Namespace) -> int:
@@ -107,6 +108,44 @@ def _cmd_navcheck(_args: argparse.Namespace) -> int:
     return 1
 
 
+def _cmd_survey(args: argparse.Namespace) -> int:
+    if args.local:
+        report = survey_local(args.local, name=args.name, kind=args.kind)
+        if args.json:
+            print(json.dumps(report, indent=2))
+            return 0
+        print(summarize(report))
+        name = report["ranking"][0]
+        for finding in report["repositories"][name]["findings"]:
+            if finding["severity"] in ("error", "warn"):
+                print(f"  [{finding['severity']}] {finding['check']} {finding['message']}")
+        return 0
+    report = survey(names=args.repo or None, write=not args.no_write,
+                    progress=not args.json)
+    if args.json:
+        print(json.dumps(report, indent=2))
+        return 0
+    print()
+    print(summarize(report))
+    if not args.no_write:
+        print("\nwrote context/reports/fleet_health.json and .md")
+    return 0
+
+
+def _cmd_fleet(args: argparse.Namespace) -> int:
+    entries = load_fleet()
+    if args.json:
+        print(json.dumps(entries, indent=2))
+        return 0
+    for entry in entries:
+        flag = "" if entry.get("survey", True) else "   (not surveyed)"
+        print(f"{entry['name']:<24} {entry.get('kind', 'default'):<10} "
+              f"{entry['repo']}{flag}")
+    print(f"\n{len(entries)} repositories, "
+          f"{sum(1 for e in entries if e.get('survey', True))} surveyed")
+    return 0
+
+
 def _cmd_apex(_args: argparse.Namespace) -> int:
     print(get_apex())
     return 0
@@ -176,6 +215,24 @@ def build_parser() -> argparse.ArgumentParser:
         "navcheck", help="fail when the generated navigation is out of sync")
     navcheck.set_defaults(func=_cmd_navcheck)
 
+    survey_cmd = sub.add_parser(
+        "survey", help="survey the fleet's documentation health (_data/fleet.yml)")
+    survey_cmd.add_argument("repo", nargs="*",
+                            help="repository names (default: the whole fleet)")
+    survey_cmd.add_argument("--json", action="store_true")
+    survey_cmd.add_argument("--no-write", action="store_true",
+                            help="report to stdout without writing context/")
+    survey_cmd.add_argument("--local", metavar="PATH",
+                            help="check a working tree instead of cloning "
+                                 "(see a change's effect before pushing)")
+    survey_cmd.add_argument("--name", help="fleet name of a --local tree")
+    survey_cmd.add_argument("--kind", help="override the governance profile")
+    survey_cmd.set_defaults(func=_cmd_survey)
+
+    fleet = sub.add_parser("fleet", help="list the fleet inventory")
+    fleet.add_argument("--json", action="store_true")
+    fleet.set_defaults(func=_cmd_fleet)
+
     apex = sub.add_parser("apex", help="print the consolidated README")
     apex.set_defaults(func=_cmd_apex)
 
@@ -193,6 +250,6 @@ def main(argv: List[str]) -> int:
     args = build_parser().parse_args(argv)
     try:
         return args.func(args)
-    except (ContextMissing, RegistryError, ValueError) as exc:
+    except (ContextMissing, RegistryError, FleetError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "chui",
+  "repo": "bamr87/chui",
+  "url": "https://github.com/bamr87/chui",
+  "default_branch": "main",
+  "head": {
+    "sha": "e06e554dde9d82233de2ee3bdeb07490d64ce29f",
+    "date": "2026-09-09T20:50:33-06:00"
+  },
+  "fingerprint": "872c5199ec47278f",
+  "counts": {
+    "files": 17,
+    "docs": 4,
+    "top_dirs": 3
+  },
+  "stack": [
+    "make"
+  ],
+  "top_dirs": [
+    "config",
+    "custom",
+    "docs"
+  ],
+  "docs": [
+    "LICENSE",
+    "README.md",
+    "custom/plugins.txt",
+    "docs/REBUILD.md"
+  ],
+  "github": {
+    "description": "Rebuildable macOS terminal CHUI: Oh My Zsh + Powerlevel10k + Zellij",
+    "language": "Shell",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 31,
+    "stars": 0,
+    "created": "2026-09-10",
+    "pushed": "2026-09-10"
+  },
+  "error": ""
+}

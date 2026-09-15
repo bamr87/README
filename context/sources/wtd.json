@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "wtd",
+  "repo": "bamr87/wtd",
+  "url": "https://github.com/bamr87/wtd",
+  "default_branch": "main",
+  "head": {
+    "sha": "b3e5b58a931a237809adb357f96e371ad04c83ff",
+    "date": "2026-09-12T20:01:14-06:00"
+  },
+  "fingerprint": "fc2cb3f5719dacd0",
+  "counts": {
+    "files": 100,
+    "docs": 13,
+    "top_dirs": 6
+  },
+  "stack": [
+    "python",
+    "docker"
+  ],
+  "top_dirs": [
+    ".github",
+    "TODO",
+    "docs",
+    "tests",
+    "tools",
+    "wtd"
+  ],
+  "docs": [
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "LICENSE",
+    "PRD.md",
+    "README.md",
+    "RELEASE_NOTES_0.1.1.md",
+    "TODO/README.md",
+    "TODO/alpha-release.md",
+    "TODO/bugs.md",
+    "TODO/routines.md",
+    "docs/FLEET-SPEC.md",
+    "docs/FLEET.md",
+    "requirements.txt"
+  ],
+  "github": {
+    "description": "WTD \u2013 What To Do: The Ultimate Recursive TODO Engine. Turn every TODO into a self-replicating, AI-orchestrated action factory.",
+    "language": "Python",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 390,
+    "stars": 0,
+    "created": "2025-12-20",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}

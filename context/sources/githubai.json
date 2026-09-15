@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "githubai",
+  "repo": "bamr87/githubai",
+  "url": "https://github.com/bamr87/githubai",
+  "default_branch": "main",
+  "head": {
+    "sha": "c93b40b73417e5a2901e29e7a46e8a602c253499",
+    "date": "2026-09-12T20:01:05-06:00"
+  },
+  "fingerprint": "6cc3283eb1f17830",
+  "counts": {
+    "files": 101,
+    "docs": 29,
+    "top_dirs": 10
+  },
+  "stack": [
+    "python"
+  ],
+  "top_dirs": [
+    ".claude",
+    ".github",
+    "actions",
+    "app",
+    "docs",
+    "profiles",
+    "setup",
+    "template",
+    "tests",
+    "tools"
+  ],
+  "docs": [
+    ".claude/commands/adopt.md",
+    ".claude/commands/implement.md",
+    ".claude/commands/maintain.md",
+    ".claude/commands/merge-check.md",
+    ".claude/commands/release-notes.md",
+    ".claude/commands/review.md",
+    ".claude/commands/triage.md",
+    ".github/copilot-instructions.md",
+    ".github/pull_request_template.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "LICENSE",
+    "PRD.md",
+    "README.md",
+    "app/DATA-HANDLING.md",
+    "app/MARKETPLACE.md",
+    "app/OPERATIONS.md",
+    "app/README.md",
+    "docs/README.md",
+    "docs/architecture.md",
+    "docs/configuration.md",
+    "docs/getting-started.md",
+    "docs/migration-v0.md",
+    "docs/security.md",
+    "docs/workflows.md",
+    "profiles/README.md",
+    "requirements-dev.txt",
+    "template/CLAUDE.md",
+    "template/README.md"
+  ],
+  "github": {
+    "description": "",
+    "language": "JavaScript",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 1057,
+    "stars": 1,
+    "created": "2025-03-20",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}

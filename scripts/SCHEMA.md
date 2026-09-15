@@ -21,7 +21,7 @@ coverage: full
 | `check_frontmatter.py` | file | Frontmatter validator (+ --fix) | required |
 | `clean_frontmatter.py` | file | Frontmatter normalizer | |
 | `cleanup_docs.py` | file | Corpus cleanup utility | |
-| `context_engine/` | dir | Stages 5-6: the context engine package (extract→navigate→synthesize→assemble→index) | required terminal |
+| `context_engine/` | dir | Stages 5-7: the context engine package (extract→navigate→synthesize→assemble→index), plus the fleet survey (gather→analyze→report) | required terminal |
 | `fix_frontmatter_icons.py` | file | Navigation gate: maps upstream `icon:` frontmatter onto bundled Material icons | required |
 | `fix_h1.py` | file | H1 heading fixer | |
 | `fix_mkdocs_links.py` | file | MkDocs link converter/validator | |

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "lawmode",
+  "repo": "bamr87/lawmode",
+  "url": "https://github.com/bamr87/lawmode",
+  "default_branch": "main",
+  "head": {
+    "sha": "d3468869632e1a41d0a91be6b8c3dccc1cb3c644",
+    "date": "2026-09-12T20:01:06-06:00"
+  },
+  "fingerprint": "e6800a4b81c38de7",
+  "counts": {
+    "files": 91,
+    "docs": 17,
+    "top_dirs": 8
+  },
+  "stack": [
+    "python",
+    "docker",
+    "make"
+  ],
+  "top_dirs": [
+    ".github",
+    ".lawmode",
+    ".vscode",
+    "examples",
+    "lawmode",
+    "tests",
+    "tools",
+    "vscode-extension"
+  ],
+  "docs": [
+    ".lawmode/DISCLAIMER.md",
+    ".lawmode/LAWYER_MODE_IS_ALWAYS_ON.md",
+    ".lawmode/mitigations.md",
+    ".vscode/debugging-guide.md",
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "DISCLAIMER.md",
+    "IMPLEMENTATION.md",
+    "INSTALL.md",
+    "LICENSE",
+    "PRD.md",
+    "QUICKSTART.md",
+    "README.md",
+    "requirements.txt",
+    "tests/integration/README.md",
+    "vscode-extension/README.md",
+    "vscode-extension/test-extension.md"
+  ],
+  "github": {
+    "description": "Always-on AI lawyer for developers",
+    "language": "Python",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 958,
+    "stars": 1,
+    "created": "2025-12-09",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}
