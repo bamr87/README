@@ -221,15 +221,33 @@ class TestIngestProseNormalization(unittest.TestCase):
             "the unwrap step must run after process.py writes docs/",
         )
 
-    def test_ingest_excludes_match_the_prose_gate(self):
-        """Ingest and markdown-oneline.yml must skip the same files.
+    CORPUS_BOUNDARY = "^docs/"
 
-        If they diverge, the crawl and the gate rewrite each other's work on
-        every refresh - the flip-flop this step exists to end.
+    def test_the_gate_leaves_the_corpus_to_ingest(self):
+        """Only one side may rewrite docs/, or the two undo each other.
+
+        The crawl re-imports upstream prose wrapped and unwraps it on the way
+        in; the pull-request gate must therefore skip docs/ entirely. When
+        both covered it, every refresh handed the next markdown PR a
+        whole-corpus rewrite that the following crawl undid.
+        """
+        self.assertIn(self.CORPUS_BOUNDARY, self._excludes(self.workflow),
+                      "markdown-oneline.yml must exclude ^docs/: the corpus is "
+                      "normalized at ingest by aggregate.sh")
+        self.assertIn("tools/unwrap-prose.py --write docs", self.aggregate,
+                      "aggregate.sh must be the side that normalizes docs/")
+
+    def test_ingest_and_gate_agree_outside_the_corpus(self):
+        """Where both sides can touch a file, they must skip the same ones.
+
+        The two differ only by the corpus boundary above: everything else -
+        SCHEMA.md, CHANGELOG.md - has to match, or a file one side unwraps
+        is a file the other re-wraps.
         """
         gate_excludes = self._excludes(self.workflow)
         self.assertTrue(gate_excludes, "no --exclude found in markdown-oneline.yml")
-        self.assertEqual(self._excludes(self.aggregate), gate_excludes)
+        self.assertEqual(self._excludes(self.aggregate),
+                         gate_excludes - {self.CORPUS_BOUNDARY})
 
 
 if __name__ == "__main__":

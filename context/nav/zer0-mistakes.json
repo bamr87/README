@@ -5,8 +5,8 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 647,
-    "sections": 98,
+    "pages": 644,
+    "sections": 96,
     "max_depth": 6,
     "skipped": 8
   },
@@ -20,19 +20,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "9e76fd61f4dea36f",
+  "fingerprint": "796a5f1407231046",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 647,
+    "pages": 644,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 65,
+        "pages": 62,
         "children": [
           {
             "type": "page",
@@ -465,7 +465,7 @@
             "title": "Gem Automation Scripts",
             "rel": "scripts",
             "index": "zer0-mistakes/scripts/README.md",
-            "pages": 9,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -480,45 +480,6 @@
                 "path": "zer0-mistakes/scripts/ai/README.md",
                 "rel": "scripts/ai/README.md",
                 "folder": "scripts/ai"
-              },
-              {
-                "type": "section",
-                "title": "Release Script Libraries",
-                "rel": "scripts/lib",
-                "index": "zer0-mistakes/scripts/lib/README.md",
-                "pages": 3,
-                "children": [
-                  {
-                    "type": "page",
-                    "title": "Release Script Libraries",
-                    "path": "zer0-mistakes/scripts/lib/README.md",
-                    "rel": "scripts/lib/README.md",
-                    "is_index": true
-                  },
-                  {
-                    "type": "section",
-                    "title": "scripts/lib/install/ \u2014 Installer Library Modules",
-                    "rel": "scripts/lib/install",
-                    "index": "zer0-mistakes/scripts/lib/install/README.md",
-                    "pages": 2,
-                    "children": [
-                      {
-                        "type": "page",
-                        "title": "scripts/lib/install/ \u2014 Installer Library Modules",
-                        "path": "zer0-mistakes/scripts/lib/install/README.md",
-                        "rel": "scripts/lib/install/README.md",
-                        "is_index": true
-                      },
-                      {
-                        "type": "page",
-                        "title": "scripts/lib/install/deploy/",
-                        "path": "zer0-mistakes/scripts/lib/install/deploy/README.md",
-                        "rel": "scripts/lib/install/deploy/README.md",
-                        "folder": "scripts/lib/install/deploy"
-                      }
-                    ]
-                  }
-                ]
               },
               {
                 "type": "section",

@@ -95,6 +95,7 @@ scripts/
 ├── normalize_tags.py       # Tag normalization utility
 ├── run_doc_checks.sh       # Quality check orchestrator
 ├── schema_lint.py          # SCHEMA.md pyramid drift gate
+├── check_tracked_surfaces.py # Integrity gate: surfaces reference tracked files
 ├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
 │   ├── extractor.py        # Corpus -> structured facts (L2)
@@ -132,6 +133,7 @@ scripts/
 | 6. Distillation | `docs/` + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
 | 7. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
 | 8. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
+| 8b. Integrity gate | `nav.yml`, `context/nav/`, `context/facts/` | untracked-reference report (exit code) | `check_tracked_surfaces.py` |
 | 9. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
 | 10. Fleet survey | `_data/fleet.yml` | `context/sources/`, `context/reports/fleet_health.{json,md}` | `context_engine/{gather,analyze}`, `context_engine/survey.py` |
 

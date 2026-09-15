@@ -514,18 +514,18 @@ The design assumes that and does not rely on the model resisting it:
 
 Effort is in pull requests, each independently mergeable and gated. Dates assume one contributor with AI assistance; phases can overlap after Phase 1.
 
-> **Status, 2026-09-15.** A first slice of Phases 1 and 2 has shipped ahead of Phase 0: `engine survey` gathers every public repository in `_data/fleet.yml` with shallow blobless clones and scores its documentation against nine checks. The first fleet-wide run is in `context/reports/fleet_health.md`. Phase 0 is still the next thing to do — `main` remains drifted.
+> **Status, 2026-09-15.** A first slice of Phases 1 and 2 shipped ahead of Phase 0: `engine survey` gathers every public repository in `_data/fleet.yml` with shallow blobless clones and scores its documentation against nine checks; the fleet-wide run is in `context/reports/fleet_health.md`. Phase 0.1 and 0.2 have since landed, so `main` is no longer drifted: the `.gitignore` patterns are anchored, the derived surfaces match the tracked corpus, `scripts/check_tracked_surfaces.py` is the D5 gate, and the aggregation cron runs both gates before it commits. Phase 0.6 (unwrap prose at ingest) landed separately in #26.
 
 ### Phase 0 — Stabilize (this week)
 
 | PR | Change | Exit criterion |
 |---|---|---|
-| 0.1 | Anchor the venv patterns in `.gitignore` to the repo root (`/lib/`, `/build/`, …) or narrow them to `.venv/`; add the D5 tracked-integrity check; rebuild; commit the swallowed corpus files | `engine check --gate` passes on `main`; `navcheck` clean; fact counts equal tracked counts |
-| 0.2 | Run the gates inside the cron before committing; switch to the rolling PR (Decision 1) | The next scheduled refresh cannot leave `main` red |
+| 0.1 | Anchor the venv patterns in `.gitignore` to the repo root (`/lib/`, `/build/`, …) or narrow them to `.venv/`; add the D5 tracked-integrity check; rebuild; commit the swallowed corpus files | **Shipped.** Patterns anchored; `scripts/check_tracked_surfaces.py` is the D5 gate; surfaces rebuilt. `navcheck` clean, 0 untracked references, fact counts equal tracked counts. The three swallowed pages return on the next crawl, which `.gitignore` no longer blocks |
+| 0.2 | Run the gates inside the cron before committing; switch to the rolling PR (Decision 1) | **Shipped (partial):** `aggregate-docs.yaml` runs `navcheck` and the integrity gate before the commit step, so the refresh fails loudly instead of committing drift. The rolling PR (Decision 1) is not done |
 | 0.3 | Prune ghosts: `organize --prune` removes corpus files absent from the gather manifest; delete `docs/setup`, `docs/wargames`; move `docs/results` to generated `docs/reports`; add D3 | 0 unregistered corpora; the `barodybroject/README/**` duplicate tree is gone |
 | 0.4 | Replace `lint_docs.py` rules with Q1 (no long-line rule) and the blanket frontmatter rule with G6; make the PR comment report only actionable findings | The quality report on a clean PR shows 0 issues |
 | 0.5 | Document the seventh hook stage; fold PR #23's step-summary diagnostics into the gate | `hooks.d/SCHEMA.md` matches `HOOK_STAGES` |
-| 0.6 | Apply `tools/unwrap-prose.py` at ingest (`process.py`, and `run_doc_checks.sh --apply`) and add the prose check to the refresh gate, so the corpus the cron commits is already one-paragraph-per-line and the PR bot has nothing left to rewrite under `docs/` | A crawl followed by `unwrap-prose.py --check` reports nothing |
+| 0.6 | Apply `tools/unwrap-prose.py` at ingest (`process.py`, and `run_doc_checks.sh --apply`) and add the prose check to the refresh gate, so the corpus the cron commits is already one-paragraph-per-line and the PR bot has nothing left to rewrite under `docs/` | **Shipped in #26:** `aggregate.sh` unwraps `docs/` after `process.py`, and `markdown-oneline.yml` excludes `^docs/`. The two sides are complementary, not identical — the test asserting they match exactly was corrected to say so |
 | 0.7 | Make the refresh's output trigger downstream workflows: the rolling PR of 0.2 does this by construction (its merge is an ordinary push); until then, chain `deploy-pages.yaml` and the prose gate to the aggregation workflow with `workflow_run`, or push with a GitHub App token | The site deploys after every refresh and the deployed commit equals `main`'s head |
 
 ### Phase 1 — Gather and Organize v2 (weeks 1–3)

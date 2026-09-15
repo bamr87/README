@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: e74d1ec8bdf0eeb4
+source_fingerprint: 74976f081a14db6d
 tags:
   - agentic-ai
   - automation
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1167 docs |
+| Corpus | `docs/it-journey` - 1166 docs |
 | External | no |
 
 ## Signals
