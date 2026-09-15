@@ -2,6 +2,7 @@
 Unit tests for file processing functionality.
 """
 
+import re
 import sys
 import tempfile
 import unittest
@@ -195,6 +196,41 @@ This is a test document for API documentation.
             process_markdown_file(invalid_file, self.dest_dir)
         except Exception as e:
             self.fail(f"File processing should handle errors gracefully: {e}")
+
+class TestIngestProseNormalization(unittest.TestCase):
+    """The crawl must leave the corpus in the state the prose gate expects."""
+
+    REPO_ROOT = Path(__file__).resolve().parents[3]
+
+    def setUp(self):
+        self.aggregate = (self.REPO_ROOT / "scripts" / "aggregate.sh").read_text()
+        self.workflow = (
+            self.REPO_ROOT / ".github" / "workflows" / "markdown-oneline.yml"
+        ).read_text()
+
+    @staticmethod
+    def _excludes(text):
+        return set(re.findall(r"--exclude '([^']+)'", text))
+
+    def test_aggregate_unwraps_the_corpus_after_processing(self):
+        """aggregate.sh unwraps docs/ once process.py has written it."""
+        self.assertIn("tools/unwrap-prose.py --write docs", self.aggregate)
+        self.assertLess(
+            self.aggregate.index("scripts/process.py"),
+            self.aggregate.index("tools/unwrap-prose.py"),
+            "the unwrap step must run after process.py writes docs/",
+        )
+
+    def test_ingest_excludes_match_the_prose_gate(self):
+        """Ingest and markdown-oneline.yml must skip the same files.
+
+        If they diverge, the crawl and the gate rewrite each other's work on
+        every refresh - the flip-flop this step exists to end.
+        """
+        gate_excludes = self._excludes(self.workflow)
+        self.assertTrue(gate_excludes, "no --exclude found in markdown-oneline.yml")
+        self.assertEqual(self._excludes(self.aggregate), gate_excludes)
+
 
 if __name__ == "__main__":
     unittest.main()

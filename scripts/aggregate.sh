@@ -96,6 +96,15 @@ fi
 # Use $PYTHON_CMD chosen earlier (or python if within venv)
 ${PYTHON_CMD:-python} scripts/process.py
 
+# Upstream repos hard-wrap their prose; this repo's markdown-oneline gate does
+# not allow it. Normalizing at ingest - with the same exclusions the gate uses -
+# keeps the crawl and the gate from rewriting each other's work on every
+# refresh. Same idea as the icon normalizer in process.py: leave every page in
+# a state the downstream gates accept.
+echo "Unwrapping soft-wrapped prose (one paragraph per line)..."
+${PYTHON_CMD:-python} tools/unwrap-prose.py --write docs \
+  --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$'
+
 echo "Cleaning up temporary files..."
 # Clean up temp
 rm -rf temp/

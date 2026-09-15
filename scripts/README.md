@@ -122,7 +122,7 @@ scripts/
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
 | 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
-| 2. Processing | `raw_docs/` | `docs/` | `process.py` |
+| 2. Processing | `raw_docs/` | `docs/` | `process.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
 | 5. Navigation | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `context_engine/navigator.py` |
@@ -224,6 +224,7 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 - Extracts markdown files while skipping `.git` directories
 - Sets up Python virtual environment with required dependencies
 - Invokes `process.py` for documentation processing
+- Unwraps soft-wrapped prose in the freshly written corpus (`../tools/unwrap-prose.py --write docs`, excluding `SCHEMA.md` and `CHANGELOG.md` exactly as the `markdown-oneline` workflow does) so the crawl and that gate stop rewriting each other's work
 
 **Usage**:
 ```bash

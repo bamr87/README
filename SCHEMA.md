@@ -40,6 +40,7 @@ coverage: listed
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
+| `tools/` | dir | Vendored hub kit: `unwrap-prose.py`, the one-paragraph-per-line prose gate run by CI and at ingest | required terminal |
 | `.editorconfig` | file | Editor defaults (standardization baseline) | |
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
 | `.gitignore` | file | Ignore rules for temp/, raw_docs/, site/, venvs | |
@@ -76,5 +77,8 @@ coverage: listed
   the source repo, or the engine instead.
 - No `nav:` key in `mkdocs.yml` — it would shadow the generated one and the
   sidebar would silently stop tracking the corpus.
+- No local edits to `tools/` — it is vendored verbatim from the hub
+  (`tools/fanout.sh --kit prose`); fix it there and re-fan it out, or the
+  conformance checker reports the copy as drifted.
 - No fleet-project source code here — it belongs in the project's own repo;
   this repo only carries distilled context about it.
