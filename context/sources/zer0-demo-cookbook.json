@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "zer0-demo-cookbook",
+  "repo": "bamr87/zer0-demo-cookbook",
+  "url": "https://github.com/bamr87/zer0-demo-cookbook",
+  "default_branch": "main",
+  "head": {
+    "sha": "655f9fc37a8fbbfafa8b88b62f2fd5e3e51ee393",
+    "date": "2026-09-07T19:00:40-06:00"
+  },
+  "fingerprint": "41256538a56ad438",
+  "counts": {
+    "files": 25,
+    "docs": 12,
+    "top_dirs": 4
+  },
+  "stack": [
+    "ruby",
+    "docker",
+    "jekyll"
+  ],
+  "top_dirs": [
+    "_data",
+    "_includes",
+    "assets",
+    "pages"
+  ],
+  "docs": [
+    "README.md",
+    "index.md",
+    "pages/_about/index.md",
+    "pages/_posts/2026-09-08-the-pot-matters-more-than-the-recipe.md",
+    "pages/_posts/2026-09-08-welcome.md",
+    "pages/_posts/2026-09-08-what-braising-actually-does.md",
+    "pages/_recipes/beef-shin-ragu.md",
+    "pages/_recipes/chicken-preserved-lemon.md",
+    "pages/_recipes/starter-recipe.md",
+    "pages/_recipes/white-beans-fennel.md",
+    "pages/posts.md",
+    "pages/recipes.md"
+  ],
+  "github": {
+    "description": "The Sunday Braise \u2014 A small cookbook of braises, stews and slow-cooked one-pot food, with scalable quantities and timings you can trust.",
+    "language": "CSS",
+    "license": null,
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "https://bamr87.github.io/zer0-demo-cookbook/",
+    "topics": [
+      "cookbook",
+      "example-site",
+      "github-pages",
+      "jekyll",
+      "jekyll-theme",
+      "zer0-mistakes"
+    ],
+    "size_kb": 20,
+    "stars": 0,
+    "created": "2026-09-08",
+    "pushed": "2026-09-08"
+  },
+  "error": ""
+}

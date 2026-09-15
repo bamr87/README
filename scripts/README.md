@@ -95,7 +95,7 @@ scripts/
 ├── normalize_tags.py       # Tag normalization utility
 ├── run_doc_checks.sh       # Quality check orchestrator
 ├── schema_lint.py          # SCHEMA.md pyramid drift gate
-├── context_engine/         # Context engine package (stages 5-6)
+├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
 │   ├── extractor.py        # Corpus -> structured facts (L2)
 │   ├── synthesizer.py      # Facts -> project cards (L1)
@@ -105,6 +105,9 @@ scripts/
 │   ├── ai.py               # Provider-agnostic enrichment (Anthropic/xAI/mock)
 │   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner
 │   ├── builder.py + cli.py # Orchestration + command-line interface
+│   ├── gather/             # Shallow blobless clones -> source manifests
+│   ├── analyze/            # Checks -> findings -> health score
+│   ├── survey.py           # Fleet documentation survey (`survey` command)
 │   └── __main__.py         # `python3 -m scripts.context_engine`
 ├── harmonize_docs.py       # AI harmonization CLI
 ├── harmonize/              # AI harmonization package
@@ -130,6 +133,7 @@ scripts/
 | 7. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
 | 8. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
 | 9. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
+| 10. Fleet survey | `_data/fleet.yml` | `context/sources/`, `context/reports/fleet_health.{json,md}` | `context_engine/{gather,analyze}`, `context_engine/survey.py` |
 
 ---
 

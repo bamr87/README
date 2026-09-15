@@ -514,6 +514,8 @@ The design assumes that and does not rely on the model resisting it:
 
 Effort is in pull requests, each independently mergeable and gated. Dates assume one contributor with AI assistance; phases can overlap after Phase 1.
 
+> **Status, 2026-09-15.** A first slice of Phases 1 and 2 has shipped ahead of Phase 0: `engine survey` gathers every public repository in `_data/fleet.yml` with shallow blobless clones and scores its documentation against nine checks. The first fleet-wide run is in `context/reports/fleet_health.md`. Phase 0 is still the next thing to do — `main` remains drifted.
+
 ### Phase 0 — Stabilize (this week)
 
 | PR | Change | Exit criterion |
@@ -530,7 +532,7 @@ Effort is in pull requests, each independently mergeable and gated. Dates assume
 
 | PR | Change | Exit criterion |
 |---|---|---|
-| 1.1 | `gather/` package: `git` adapter with `--filter=blob:none` partial clones, per-file last-commit dates, full file tree, license and manifest detection; `local` adapter for the monorepo checkout and tests; `aggregate.sh` becomes a thin wrapper | `context/sources/<project>.json` for every project; fixture repo test (`git init` in a temp dir) |
+| 1.1 | `gather/` package: `git` adapter with `--filter=blob:none` partial clones, per-file last-commit dates, full file tree, license and manifest detection; `local` adapter for the monorepo checkout and tests; `aggregate.sh` becomes a thin wrapper | **Shipped (partial):** the `git` and `local` adapters and `context/sources/<name>.json` exist; per-file commit dates and the `aggregate.sh` rewrite do not |
 | 1.2 | Organize v2: provenance frontmatter, `doc_type` classifier, prune, sharded corpus index at `context/corpus/`; `docs/docs_index.json` kept for one release as a compatibility build | Every corpus page has `source_sha`, `source_date`, `source_url`; index out of `docs/` |
 | 1.3 | D4 freshness and D7 ghost checks; Q3 determinism check in CI | `freshness.json` published |
 | 1.4 | Non-markdown inputs for facts only (`.rst`, `.adoc`, `.txt` counted; manifests parsed) | `facts.manifests` populated |
@@ -540,9 +542,9 @@ Effort is in pull requests, each independently mergeable and gated. Dates assume
 
 | PR | Change | Exit criterion |
 |---|---|---|
-| 2.1 | Check framework, finding schema, `engine check`/`analyze`/`findings`/`report`; migrate D1–D3, D5, Q1, Q2 onto it | `navcheck` is an alias; old scripts removed from the gate |
+| 2.1 | Check framework, finding schema, `engine check`/`analyze`/`findings`/`report`; migrate D1–D3, D5, Q1, Q2 onto it | **Shipped (partial):** the framework, the `Finding` contract with stable keys, and checks G1/G2/G3/G5/G8/G10/Q1/Q4/D8 run over the fleet via `engine survey`; the corpus-side checks and `engine check --gate` do not |
 | 2.2 | Link graph and D8, G4; `context/graph/fleet.json` | Broken-link report distinguishes code targets from missing targets |
-| 2.3 | Governance profiles in the registry; G1, G2, G3, G5, G6, G8, D9, A1 | Reports for every project; health score and `health.json` |
+| 2.3 | Governance profiles in the registry; G1, G2, G3, G5, G6, G8, D9, A1 | **Shipped (partial):** profiles, the health score and `context/reports/fleet_health.{json,md}` exist for all 30 public repositories; G6, D9 and A1 do not |
 | 2.4 | D6 self-consistency and hub alignment (register `bamr87/bamr87` as a `hub` source) | Registry vs `.gitmodules` diff is a finding |
 
 ### Phase 3 — Summarize v2 (weeks 6–8)

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "csv-vscoode",
+  "repo": "bamr87/csv-vscoode",
+  "url": "https://github.com/bamr87/csv-vscoode",
+  "default_branch": "main",
+  "head": {
+    "sha": "029d2782988ae4703d5c5b6f65b007cf6d1a4f19",
+    "date": "2026-09-12T22:35:45-06:00"
+  },
+  "fingerprint": "f987f254cb314bd7",
+  "counts": {
+    "files": 145,
+    "docs": 21,
+    "top_dirs": 12
+  },
+  "stack": [
+    "node"
+  ],
+  "top_dirs": [
+    ".github",
+    ".vscode",
+    "docs",
+    "media",
+    "samples",
+    "schemas",
+    "scripts",
+    "site",
+    "src",
+    "test",
+    "tools",
+    "webview"
+  ],
+  "docs": [
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "PUBLISHING.md",
+    "README.md",
+    "docs/FEATURE-PARITY.md",
+    "docs/README.md",
+    "docs/RELEASING.md",
+    "docs/analysis.md",
+    "docs/filtering-and-search.md",
+    "docs/getting-started.md",
+    "docs/grid-editor.md",
+    "docs/keyboard-shortcuts.md",
+    "docs/pipelines.md",
+    "docs/review/pr28-truncation/before-after-repro.txt",
+    "docs/review/pr28-truncation/test-verbose.txt",
+    "docs/review/pr29-editor-priority/evidence.txt",
+    "docs/settings.md",
+    "docs/troubleshooting.md",
+    "site/README.md"
+  ],
+  "github": {
+    "description": "",
+    "language": "TypeScript",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "http://apps.bash-365.com/",
+    "topics": [],
+    "size_kb": 8933,
+    "stars": 0,
+    "created": "2026-04-12",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}

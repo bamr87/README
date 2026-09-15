@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "bashos",
+  "repo": "bamr87/bashos",
+  "url": "https://github.com/bamr87/bashos",
+  "default_branch": "main",
+  "head": {
+    "sha": "e14753956e06be76d99a5232ddaa1c808901ad29",
+    "date": "2026-08-22T22:53:59-06:00"
+  },
+  "fingerprint": "b6ef9bb21b5ca716",
+  "counts": {
+    "files": 76,
+    "docs": 21,
+    "top_dirs": 7
+  },
+  "stack": [
+    "python",
+    "docker",
+    "make"
+  ],
+  "top_dirs": [
+    ".claude",
+    ".github",
+    "bin",
+    "docker",
+    "docs",
+    "src",
+    "tests"
+  ],
+  "docs": [
+    ".claude/commands/audit.md",
+    ".claude/commands/cron.md",
+    ".claude/commands/dash.md",
+    ".claude/commands/debug.md",
+    ".claude/commands/explain.md",
+    ".claude/commands/health.md",
+    ".claude/commands/pipe.md",
+    ".claude/commands/port.md",
+    ".claude/commands/regex.md",
+    ".claude/commands/script.md",
+    ".claude/commands/sh.md",
+    ".claude/commands/sys.md",
+    "CLAUDE.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "bashOS-architecture.md",
+    "docs/FORGE.md",
+    "docs/HARNESS.md",
+    "docs/OPENCODE.md",
+    "docs/SERVICES.md"
+  ],
+  "github": {
+    "description": "",
+    "language": "Python",
+    "license": "MIT",
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 217,
+    "stars": 0,
+    "created": "2026-08-12",
+    "pushed": "2026-09-15"
+  },
+  "error": ""
+}

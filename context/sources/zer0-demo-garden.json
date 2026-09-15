@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "zer0-demo-garden",
+  "repo": "bamr87/zer0-demo-garden",
+  "url": "https://github.com/bamr87/zer0-demo-garden",
+  "default_branch": "main",
+  "head": {
+    "sha": "c05b270a13dda15a3cf0dd8c00f1b7c387238318",
+    "date": "2026-09-07T19:00:42-06:00"
+  },
+  "fingerprint": "fd52eea78c715641",
+  "counts": {
+    "files": 26,
+    "docs": 13,
+    "top_dirs": 4
+  },
+  "stack": [
+    "ruby",
+    "docker",
+    "jekyll"
+  ],
+  "top_dirs": [
+    "_data",
+    "_includes",
+    "assets",
+    "pages"
+  ],
+  "docs": [
+    "README.md",
+    "index.md",
+    "pages/_about/index.md",
+    "pages/_notes/backlinks-change-what-you-write.md",
+    "pages/_notes/evergreen-notes.md",
+    "pages/_notes/notes-should-be-atomic.md",
+    "pages/_notes/posts-and-notes-do-different-jobs.md",
+    "pages/_notes/welcome-note.md",
+    "pages/_notes/why-gardens-beat-blogs.md",
+    "pages/_posts/2026-09-08-six-months-of-gardening.md",
+    "pages/_posts/2026-09-08-welcome.md",
+    "pages/notes.md",
+    "pages/posts.md"
+  ],
+  "github": {
+    "description": "Marginalia \u2014 A public digital garden about reading, note-taking and how ideas connect \u2014 written in the open and revised in place.",
+    "language": "CSS",
+    "license": null,
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "https://bamr87.github.io/zer0-demo-garden/",
+    "topics": [
+      "digital-garden",
+      "example-site",
+      "github-pages",
+      "jekyll",
+      "jekyll-theme",
+      "obsidian",
+      "zer0-mistakes"
+    ],
+    "size_kb": 18,
+    "stars": 0,
+    "created": "2026-09-08",
+    "pushed": "2026-09-08"
+  },
+  "error": ""
+}

@@ -1,0 +1,189 @@
+# _data/fleet.yml - the fleet inventory.
+#
+# Every public repository under the bamr87 account, and what kind of thing
+# each one is. This is the input to the documentation survey
+# (`python3 -m scripts.context_engine survey`), which clones each entry
+# shallowly, runs the checks in scripts/context_engine/analyze/, and writes
+# context/reports/fleet_health.{json,md}.
+#
+# It is deliberately SEPARATE from _data/projects.yml: that registry says
+# which projects are aggregated into the docs/ corpus, a much smaller set.
+# A repository can be surveyed without being crawled.
+#
+# Hand-maintained. Seeded from a GitHub inventory on 2026-09-15; add a repo
+# here when it is created and set its kind. `kind` selects the governance
+# profile in scripts/context_engine/analyze/checks.py (PROFILES).
+#
+# GitHub-side metadata (description, topics, detected license) is a separate,
+# generated snapshot at context/sources/github.json - it is what check G10
+# reads, and it goes stale until refreshed.
+
+version: 1
+
+defaults:
+  kind: default
+  visibility: public
+  fork: false
+  survey: true
+
+repos:
+  - name: .github
+    repo: bamr87/.github
+    url: https://github.com/bamr87/.github
+    kind: docs
+    note: "Org-level community health files and reusable workflows"
+  - name: "1987"
+    repo: bamr87/1987
+    url: https://github.com/bamr87/1987
+    kind: site
+    note: "Self-growing knowledge base about 1987"
+  - name: ai-seed
+    repo: bamr87/ai-seed
+    url: https://github.com/bamr87/ai-seed
+    kind: tooling
+  - name: aieo
+    repo: bamr87/aieo
+    url: https://github.com/bamr87/aieo
+    kind: tooling
+    note: "AI engine optimization"
+  - name: bamr87
+    repo: bamr87/bamr87
+    url: https://github.com/bamr87/bamr87
+    kind: hub
+    note: "The monorepo control plane"
+  - name: bamr87.github.io
+    repo: bamr87/bamr87.github.io
+    url: https://github.com/bamr87/bamr87.github.io
+    kind: site
+    note: "Personal GitHub Pages site"
+  - name: barodybroject
+    repo: bamr87/barodybroject
+    url: https://github.com/bamr87/barodybroject
+    kind: app
+    note: "Full-stack web application"
+  - name: bashcrawl
+    repo: bamr87/bashcrawl
+    url: https://github.com/bamr87/bashcrawl
+    kind: game
+    note: "Terminal teaching game"
+  - name: bashos
+    repo: bamr87/bashos
+    url: https://github.com/bamr87/bashos
+    kind: tooling
+  - name: chui
+    repo: bamr87/chui
+    url: https://github.com/bamr87/chui
+    kind: tooling
+    note: "macOS terminal environment"
+  - name: csv-vscoode
+    repo: bamr87/csv-vscoode
+    url: https://github.com/bamr87/csv-vscoode
+    kind: tooling
+    note: "VS Code extension"
+  - name: djangoerp
+    repo: bamr87/djangoerp
+    url: https://github.com/bamr87/djangoerp
+    kind: app
+  - name: fredgar-ai
+    repo: bamr87/fredgar-ai
+    url: https://github.com/bamr87/fredgar-ai
+    kind: app
+  - name: githubai
+    repo: bamr87/githubai
+    url: https://github.com/bamr87/githubai
+    kind: tooling
+  - name: godotgo
+    repo: bamr87/godotgo
+    url: https://github.com/bamr87/godotgo
+    kind: game
+    note: "Godot 4 game workspace"
+  - name: irony-works
+    repo: bamr87/irony-works
+    url: https://github.com/bamr87/irony-works
+    kind: app
+  - name: it-journey
+    repo: bamr87/it-journey
+    url: https://github.com/bamr87/it-journey
+    kind: site
+    note: "Educational IT platform"
+  - name: lawmode
+    repo: bamr87/lawmode
+    url: https://github.com/bamr87/lawmode
+    kind: app
+    note: "AI legal assistant"
+  - name: lifehacker.dev
+    repo: bamr87/lifehacker.dev
+    url: https://github.com/bamr87/lifehacker.dev
+    kind: site
+    note: "Personal site on the zer0-mistakes theme"
+  - name: README
+    repo: bamr87/README
+    url: https://github.com/bamr87/README
+    kind: tooling
+    note: "This repository: the fleet context engine"
+    # docs/ is an aggregated copy of other repositories' markdown. Its
+    # relative links resolved in their source repos and cannot resolve here,
+    # which is expected and documented in MKDOCS.md - so link findings there
+    # are not this repository's to fix.
+    link_exclude: ["docs/"]
+  - name: rewind-arcade
+    repo: bamr87/rewind-arcade
+    url: https://github.com/bamr87/rewind-arcade
+    kind: game
+    note: "Retro arcade portal"
+  - name: SCHEMA
+    repo: bamr87/SCHEMA
+    url: https://github.com/bamr87/SCHEMA
+    kind: tooling
+    note: "The SCHEMA protocol"
+  - name: scripts
+    repo: bamr87/scripts
+    url: https://github.com/bamr87/scripts
+    kind: tooling
+    note: "Fleet automation scripts"
+  - name: vs-sonic-pi
+    repo: bamr87/vs-sonic-pi
+    url: https://github.com/bamr87/vs-sonic-pi
+    kind: tooling
+    note: "VS Code extension"
+  - name: wargames
+    repo: bamr87/wargames
+    url: https://github.com/bamr87/wargames
+    kind: docs
+    note: "Vendored OverTheWire wargame guides"
+  - name: wtd
+    repo: bamr87/wtd
+    url: https://github.com/bamr87/wtd
+    kind: app
+    note: "Autonomous agent fleet platform"
+  - name: zer0-demo-cookbook
+    repo: bamr87/zer0-demo-cookbook
+    url: https://github.com/bamr87/zer0-demo-cookbook
+    kind: demo
+    note: "Theme demo"
+  - name: zer0-demo-garden
+    repo: bamr87/zer0-demo-garden
+    url: https://github.com/bamr87/zer0-demo-garden
+    kind: demo
+    note: "Theme demo"
+  - name: zer0-mistakes
+    repo: bamr87/zer0-mistakes
+    url: https://github.com/bamr87/zer0-mistakes
+    kind: theme
+    note: "Jekyll theme"
+  - name: zer0-pages
+    repo: bamr87/zer0-pages
+    url: https://github.com/bamr87/zer0-pages
+    kind: site
+  - name: bashconsultants
+    repo: bamr87/bashconsultants
+    url: https://github.com/bamr87/bashconsultants
+    kind: site
+    fork: true
+    survey: false   # upstream's documentation, not the fleet's
+  - name: zer0-CMS
+    repo: bamr87/zer0-CMS
+    url: https://github.com/bamr87/zer0-CMS
+    kind: app
+    fork: true
+    survey: false   # upstream's documentation, not the fleet's

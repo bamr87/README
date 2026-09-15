@@ -13,12 +13,14 @@ coverage: full
 | entry | kind | purpose | rules |
 |---|---|---|---|
 | `SCHEMA.md` | file | This file | required |
+| `fleet.yml` | file | Fleet inventory — every public repository and its kind, the input to the documentation survey | required |
 | `projects.yml` | file | Fleet registry — one entry per submodule, plus the `navigation:` contract that shapes the published sidebar | required |
 
 ## Placement
 
 - New registry → a new `*.yml` here, documented in this table and consumed
   via `scripts/context_engine/registry.py`.
+- A repository joins the survey by being added to `fleet.yml`; joining the aggregated corpus is a separate decision, made in `projects.yml`.
 - New sidebar grouping, section label, depth cap or exclusion → the
   `navigation:` block or a project's `nav:` in `projects.yml`. These are
   inputs, not outputs: `nav.yml`, `context/nav/` and `docs/browse/` are all

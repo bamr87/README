@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "rewind-arcade",
+  "repo": "bamr87/rewind-arcade",
+  "url": "https://github.com/bamr87/rewind-arcade",
+  "default_branch": "main",
+  "head": {
+    "sha": "e512cefef12724ba0d02415d502160fb61b4c2df",
+    "date": "2026-09-12T20:01:14-06:00"
+  },
+  "fingerprint": "2f0e48ca8fdbfd07",
+  "counts": {
+    "files": 31,
+    "docs": 2,
+    "top_dirs": 3
+  },
+  "stack": [
+    "node"
+  ],
+  "top_dirs": [
+    ".github",
+    "legacy",
+    "src"
+  ],
+  "docs": [
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "github": {
+    "description": "A client-side retro arcade portal. Pluggable game engine \u2014 JezzBall and Snake included.",
+    "language": "TypeScript",
+    "license": null,
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 105,
+    "stars": 0,
+    "created": "2026-09-07",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}

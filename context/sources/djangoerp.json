@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "name": "djangoerp",
+  "repo": "bamr87/djangoerp",
+  "url": "https://github.com/bamr87/djangoerp",
+  "default_branch": "main",
+  "head": {
+    "sha": "5c0fc9b1975c12632ac25d47b1bf5f891e87c845",
+    "date": "2026-09-12T20:01:05-06:00"
+  },
+  "fingerprint": "c9542ad38dbbd860",
+  "counts": {
+    "files": 199,
+    "docs": 4,
+    "top_dirs": 20
+  },
+  "stack": [
+    "python",
+    "docker"
+  ],
+  "top_dirs": [
+    ".github",
+    ".vscode",
+    "accounts",
+    "coa",
+    "company",
+    "core",
+    "djangoerp",
+    "docker",
+    "docs",
+    "inventory",
+    "invoices",
+    "journal",
+    "manufacturing",
+    "mrp",
+    "partners",
+    "products",
+    "purchasing",
+    "reports",
+    "sales",
+    "tools"
+  ],
+  "docs": [
+    "CLAUDE.md",
+    "README.md",
+    "docs/ARCHITECTURE.md",
+    "requirements.txt"
+  ],
+  "github": {
+    "description": "",
+    "language": "Python",
+    "license": null,
+    "default_branch": "main",
+    "archived": false,
+    "fork": false,
+    "homepage": "",
+    "topics": [],
+    "size_kb": 291,
+    "stars": 0,
+    "created": "2025-03-08",
+    "pushed": "2026-09-13"
+  },
+  "error": ""
+}
