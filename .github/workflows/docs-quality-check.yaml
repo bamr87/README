@@ -99,6 +99,17 @@ jobs:
           } >>"$GITHUB_STEP_SUMMARY"
           exit 1
 
+      # navcheck proves the surfaces match the corpus *on this runner*. It
+      # cannot see the failure that actually broke main: a corpus path git
+      # refuses to commit, so the surfaces are self-consistent here and name
+      # pages that never reach the repository. Until now that invariant was
+      # enforced only by the weekly aggregate-docs run, which meant a PR could
+      # re-introduce an over-broad .gitignore rule, pass this gate, merge, and
+      # surface as a red cron days later. Same check, same script, on the side
+      # where the rule is actually changed.
+      - name: Validate generated surfaces reference tracked files
+        run: python3 scripts/check_tracked_surfaces.py
+
       - name: Run doc lint and frontmatter checks
         run: |
           set -euo pipefail
