@@ -27,7 +27,7 @@ services:
       - wiki-network
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/healthz"]
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:3000/healthz"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -35,15 +35,14 @@ services:
 
   # PostgreSQL Database
   db:
-    image: postgres:15-alpine
-    container_name: bamr87-wiki-db
+    image: postgres:18-alpine
     environment:
       POSTGRES_DB: ${WIKI_DB_NAME:-wiki}
       POSTGRES_USER: ${WIKI_DB_USER:-wikijs}
       POSTGRES_PASSWORD: ${WIKI_DB_PASS:-wikijsrocks}
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql
       # Optional: Custom PostgreSQL configuration
       # - ./config/postgresql.conf:/etc/postgresql/postgresql.conf
     networks:
@@ -58,7 +57,6 @@ services:
   # Optional: pgAdmin for database management
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: bamr87-wiki-pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@example.com}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
