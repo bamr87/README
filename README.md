@@ -36,7 +36,8 @@ Full picture: [context/README.md](context/README.md) — the consolidated README
 ## Quick start
 
 ```bash
-pip install -r requirements.txt        # pyyaml, requests (+ test/site deps)
+pip install -r requirements.txt        # pyyaml, requests, nltk, pytest
+pip install -r requirements-docs.txt   # optional: MkDocs site build
 
 # 1. Aggregate the corpus (clones every repo in the registry)
 bash scripts/aggregate.sh
@@ -47,6 +48,7 @@ python3 -m scripts.context_engine build
 # 3. Query it
 python3 -m scripts.context_engine query jekyll theme
 python3 -m scripts.context_engine card bashcrawl
+python3 -m scripts.context_engine nav bashcrawl --depth 2
 python3 -m scripts.context_engine status
 ```
 
@@ -60,31 +62,26 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 | 2. Process | `raw_docs/` | `docs/{project}/` + frontmatter | `scripts/process.py` |
 | 3. Validate | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` |
 | 4. Index | `docs/` | `docs/docs_index.json` | `scripts/generate_docs_index.py` |
-| 5. Distill | corpus + registry | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
-| 6. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
+| 5. Navigate | `docs/` + registry `navigation:` | `nav.yml`, `context/nav/`, `docs/browse/` | `scripts/context_engine/navigator.py` |
+| 6. Distill | corpus + registry + nav | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
+| 7. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
 
 Ingest normalizes as it writes: upstream `icon:` frontmatter is mapped onto bundled Material icons (`scripts/fix_frontmatter_icons.py`) and soft-wrapped prose is unwrapped (`tools/unwrap-prose.py`), so each crawled page lands in a state the navigation and the `markdown-oneline` gate already accept.
 
-The engine (`scripts/context_engine/`) runs **extract → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with `ANTHROPIC_API_KEY` or `XAI_API_KEY` set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
+The engine (`scripts/context_engine/`) runs **extract → navigate → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with an Anthropic credential (`ANTHROPIC_API_KEY`, or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN` / `ANTHROPIC_AUTH_TOKEN`) or an xAI one (`XAI_API_KEY` / `GROK_API_KEY`) set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
 ## Continuous evolution
 
-- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds
-the pyramid, and commits the result — the context grows without anyone editing it.
-- **`docs-quality-check.yaml`** lints the corpus and runs the SCHEMA drift
-  gate on every PR.
-- **`deploy-pages.yaml`** publishes `docs/` (whose home page is the
-generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
-- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every
-  build — the freshness report and the schema gate ship as examples.
+- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it.
+- **`docs-quality-check.yaml`** lints the corpus and runs the SCHEMA drift gate on every PR.
+- **`deploy-pages.yaml`** publishes `docs/` (whose home page is the generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
+- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples.
 
 ## Growing the fleet
 
-1. Add the project to [`_data/projects.yml`](_data/projects.yml) (name,
-   repo, url, seed description, topics).
+1. Add the project to [`_data/projects.yml`](_data/projects.yml) (name, repo, url, seed description, topics; optionally a `nav:` block for sidebar grouping).
 2. `python3 -m scripts.context_engine sync` — regenerates `repos.txt`.
-3. `bash scripts/aggregate.sh && python3 -m scripts.context_engine build`
-   — or just wait for the scheduled workflow.
+3. `bash scripts/aggregate.sh && python3 -m scripts.context_engine build` — or just wait for the scheduled workflow.
 
 ## Repository map
 
