@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-28T00:00:00.000Z'
 level: '0110'
@@ -19,6 +20,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 28 Data Scientist 0110
 ---
+# 2026 07 28 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the **Data Scientist** path through **Level 0110 — Database Mastery (⚔️ Adventurer tier)**, playing the three quests in the planned window (the *tail* of an 8-quest level: window 2 of 2, offset 5): **Backup and Recovery → Query Optimization → Connection Pooling**. Evidence is from the sealed execute-mode engine (`walk-evidence.json`), which stood up real PostgreSQL 16 in Docker and actually ran each quest's safe snippets in a disposable sandbox.

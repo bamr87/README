@@ -1,4 +1,5 @@
 ---
+
 categories:
 - about
 description: The zer0-mistakes design system, live — tokens, foundation specimens,
@@ -16,6 +17,8 @@ tags:
 - ui
 title: Design
 ---
+# Design
+
 One visual contract, stated once. The theme's `--zer0-*` tokens compile into every page of this site, mirror to a [Claude Design project](https://claude.ai/design/p/e75121c0-9210-42d1-ade3-2c8af9111cbe) for design work, and publish here as live, linkable CSS — kept in lockstep by a CI parity check.
 
 ## Use the tokens anywhere

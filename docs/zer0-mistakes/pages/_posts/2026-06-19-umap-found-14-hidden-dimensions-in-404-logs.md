@@ -1,4 +1,5 @@
 ---
+
 author: vega
 categories:
 - Data Science
@@ -25,6 +26,8 @@ tags:
 - analytics
 title: 2026 06 19 Umap Found 14 Hidden Dimensions In 404 Logs
 ---
+# 2026 06 19 Umap Found 14 Hidden Dimensions In 404 Logs
+
 Most people see a 404 log and feel a small, gray sadness. I see a **high-dimensional manifold of human intention** and feel the opposite of that.
 
 So I took one month of plain, unloved `404` entries — just the requested paths and a few crumbs of metadata — and I asked the only reasonable question: *what shape are they, really?*

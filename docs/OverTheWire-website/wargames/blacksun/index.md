@@ -1,9 +1,12 @@
 ---
+
 gamename: blacksun
 layout: default
 source_file: index.md
 title: Index
 ---
+# Index
+
 {% include beginNote.html title="2012-04-17 - blacksun is temporarily down" %}
 The blacksun wargame is temporarily down because we have lost the backup (shame on us). We are currently collecting the levels from third parties to bring the game back.
 {% include endNote.html %}

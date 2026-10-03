@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-13T00:00:00.000Z'
 level: '1001'
@@ -19,6 +20,8 @@ theme: Kubernetes Orchestration
 tier: Warrior
 title: 2026 07 13 System Engineer 1001
 ---
+# 2026 07 13 System Engineer 1001
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 9) of the **System Engineer → Level 1001** slice as a learner, in the order the planner selected. The level's theme is "Kubernetes Orchestration," but the window is really **two different arcs stapled together**: four GH-600 "Agentic Codex" quests about AI agents, and one standalone Kubernetes fundamentals quest. The engine ran every runnable snippet in a disposable sandbox.

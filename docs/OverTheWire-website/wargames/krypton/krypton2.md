@@ -1,10 +1,13 @@
 ---
+
 gamename: krypton
 layout: default
 level: 2
 source_file: krypton2.md
 title: Krypton2
 ---
+# Krypton2
+
 Level Info
 ----------
 ROT13 is a simple substitution cipher.

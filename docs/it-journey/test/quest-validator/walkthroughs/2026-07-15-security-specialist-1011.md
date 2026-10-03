@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: 2026-07-15 13:20:00+00:00
 level: '1011'
@@ -24,6 +25,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 15 Security Specialist 1011
 ---
+# 2026 07 15 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the **Security Specialist → Level 1011 (Warrior 🔥 · "Security & Compliance")** slice as a learner would. This is a **windowed** slice: the planner selected the first 5 of 12 level-1011 quests (window 0 of 3), all `main_quest`. The machine evidence was sealed by the workflow's execute-mode engine (I consumed `walk-evidence.json`/`.md` verbatim — I did not run the engine); I then read each quest source and reasoned about them as a linked path.

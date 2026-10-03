@@ -77,7 +77,7 @@ Measures logical flow and consistency of the response.
 }
 ```
 
-**Inputs:** query, response  
+**Inputs:** query, response
 **Output:** Score 1-5 (5 = highly coherent)
 
 ### builtin.fluency
@@ -94,7 +94,7 @@ Measures grammatical correctness and natural language quality.
 }
 ```
 
-**Inputs:** query, response  
+**Inputs:** query, response
 **Output:** Score 1-5 (5 = perfectly fluent)
 
 ### builtin.relevance
@@ -115,7 +115,7 @@ Measures how well the response addresses the query given context.
 }
 ```
 
-**Inputs:** query, response, context  
+**Inputs:** query, response, context
 **Output:** Score 1-5 (5 = highly relevant)
 
 ### builtin.groundedness
@@ -136,7 +136,7 @@ Measures whether the response is factually grounded in the provided context.
 }
 ```
 
-**Inputs:** query, response, context  
+**Inputs:** query, response, context
 **Output:** Score 1-5 (5 = fully grounded)
 
 ### builtin.response_completeness
@@ -153,7 +153,7 @@ Measures whether the response fully addresses all aspects of the query.
 }
 ```
 
-**Inputs:** query, response  
+**Inputs:** query, response
 **Output:** Score 1-5
 
 ## Safety Evaluators
@@ -173,7 +173,7 @@ Detects violent content.
 }
 ```
 
-**Inputs:** query, response  
+**Inputs:** query, response
 **Output:** pass/fail with severity score
 
 ### builtin.sexual

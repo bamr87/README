@@ -181,7 +181,7 @@ jobs:
             --registry _data/agents.yml \
             --filter-status active \
             --output active-agents.json
-          
+
           AGENTS=$(cat active-agents.json | jq -c '[.[].id]')
           echo "agents=$AGENTS" >> "$GITHUB_OUTPUT"
 
@@ -198,12 +198,12 @@ jobs:
           script: |
             const fs = require('fs');
             const report = JSON.parse(fs.readFileSync('health-report.json'));
-            
+
             if (report.unhealthy_agents.length > 0) {
               const body = `## 🚨 Agent Health Alert\n\n` +
                 `The following agents have not run successfully in 48 hours:\n\n` +
                 report.unhealthy_agents.map(a => `- **${a.name}** (${a.id}): last success ${a.last_success}`).join('\n');
-              
+
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,

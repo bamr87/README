@@ -4,8 +4,8 @@ title: 'Phase 2 Complete: Simplified Commands & Deprecation Wrappers'
 ---
 # Phase 2 Complete: Simplified Commands & Deprecation Wrappers
 
-**Status:** ✅ Complete  
-**Date:** 2025-01-27  
+**Status:** ✅ Complete
+**Date:** 2025-01-27
 **Phase:** 2 of 3 (from RELEASE_WORKFLOW_IMPROVEMENTS.md)
 
 ## Overview
@@ -298,7 +298,7 @@ The deprecation wrappers ensure existing scripts and workflows continue to work,
 
 ---
 
-**Date Completed:** 2025-01-27  
-**Total Time:** Phase 1 + Phase 2 development  
-**Lines of Code**: +4,436 insertions, -1,213 deletions (25 files changed)  
+**Date Completed:** 2025-01-27
+**Total Time:** Phase 1 + Phase 2 development
+**Lines of Code**: +4,436 insertions, -1,213 deletions (25 files changed)
 **Commits:** 1 comprehensive commit for both phases

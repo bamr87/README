@@ -121,7 +121,7 @@ foreach (var eventData in events)
         // Batch is full - send it and create a new one
         await producer.SendAsync(batch);
         batch = await producer.CreateBatchAsync();
-        
+
         if (!batch.TryAdd(eventData))
         {
             throw new Exception("Event too large for empty batch");
@@ -217,7 +217,7 @@ processor.ProcessEventAsync += async args =>
 {
     Console.WriteLine($"Partition: {args.Partition.PartitionId}");
     Console.WriteLine($"Data: {args.Data.EventBody}");
-    
+
     // Checkpoint after processing
     await args.UpdateCheckpointAsync();
 };
@@ -325,7 +325,7 @@ private int _eventCount = 0;
 processor.ProcessEventAsync += async args =>
 {
     // Process event...
-    
+
     _eventCount++;
     if (_eventCount >= 100)
     {
@@ -371,7 +371,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddEventHubProducerClient(
         builder.Configuration["EventHub:FullyQualifiedNamespace"],
         builder.Configuration["EventHub:Name"]);
-    
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 });
 
@@ -379,12 +379,12 @@ builder.Services.AddAzureClients(clientBuilder =>
 public class EventService
 {
     private readonly EventHubProducerClient _producer;
-    
+
     public EventService(EventHubProducerClient producer)
     {
         _producer = producer;
     }
-    
+
     public async Task SendAsync(string message)
     {
         using var batch = await _producer.CreateBatchAsync();
@@ -459,7 +459,7 @@ await using var producer = new EventHubProducerClient(
 public class EventHubService : IAsyncDisposable
 {
     private readonly EventHubProducerClient _producer;
-    
+
     public EventHubService(string fullyQualifiedNamespace, string eventHubName)
     {
         _producer = new EventHubProducerClient(
@@ -467,14 +467,14 @@ public class EventHubService : IAsyncDisposable
             eventHubName,
             new DefaultAzureCredential());
     }
-    
+
     public async Task SendAsync(string message)
     {
         using var batch = await _producer.CreateBatchAsync();
         batch.TryAdd(new EventData(message));
         await _producer.SendAsync(batch);
     }
-    
+
     public async ValueTask DisposeAsync()
     {
         await _producer.DisposeAsync();

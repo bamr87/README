@@ -864,7 +864,7 @@ IFS=',' read -ra parts <<< "a,b,c,d"
 echo "${parts[1]}"             # => b
 
 # Trim whitespace
-trim() { 
+trim() {
     local var="$*"
     var="${var#"${var%%[![:space:]]*}"}"
     var="${var%"${var##*[![:space:]]}"}"
@@ -3727,10 +3727,10 @@ parse_args() {
             *)            break ;;
         esac
     done
-    
+
     # Remaining arguments
     files=("$@")
-    
+
     # Validate
     [[ ${#files[@]} -eq 0 ]] && die "No files specified. Use -h for help."
 }
@@ -3738,15 +3738,15 @@ parse_args() {
 # Main logic
 main() {
     parse_args "$@"
-    
+
     log_info "Starting $SCRIPT_NAME v$VERSION"
-    
+
     for file in "${files[@]}"; do
         [[ -f "$file" ]] || die "File not found: $file"
         log_info "Processing: $file"
         # ... do work ...
     done
-    
+
     log_info "Done!"
 }
 
@@ -3843,7 +3843,7 @@ retry() {
     local delay="${2:-1}"
     local command="${@:3}"
     local attempt=1
-    
+
     while [[ $attempt -le $max_attempts ]]; do
         if eval "$command"; then
             return 0
@@ -3852,7 +3852,7 @@ retry() {
         sleep "$delay"
         ((attempt++))
     done
-    
+
     log_error "All $max_attempts attempts failed"
     return 1
 }
@@ -4009,7 +4009,7 @@ pids=()
 for file in *.dat; do
     process "$file" &
     pids+=($!)
-    
+
     # Limit concurrency
     while (( ${#pids[@]} >= max_procs )); do
         wait -n  # Wait for any to finish (Bash 4.3+)
@@ -4491,7 +4491,7 @@ progress_bar() {
     local percent=$((current * 100 / total))
     local filled=$((current * width / total))
     local empty=$((width - filled))
-    
+
     printf "\r["
     printf "%${filled}s" | tr ' ' '#'
     printf "%${empty}s" | tr ' ' '-'

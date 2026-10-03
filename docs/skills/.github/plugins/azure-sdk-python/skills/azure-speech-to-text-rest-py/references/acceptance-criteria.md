@@ -52,9 +52,9 @@ headers = {
 def get_access_token() -> str:
     region = os.environ["AZURE_SPEECH_REGION"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    
+
     token_url = f"https://{region}.api.cognitive.microsoft.com/sts/v1.0/issueToken"
-    
+
     response = requests.post(
         token_url,
         headers={
@@ -153,20 +153,20 @@ import requests
 def transcribe_audio(audio_file_path: str, language: str = "en-US") -> dict:
     region = os.environ["AZURE_SPEECH_REGION"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    
+
     url = f"https://{region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
-    
+
     headers = {
         "Ocp-Apim-Subscription-Key": api_key,
         "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000",
         "Accept": "application/json"
     }
-    
+
     params = {"language": language, "format": "detailed"}
-    
+
     with open(audio_file_path, "rb") as audio_file:
         response = requests.post(url, headers=headers, params=params, data=audio_file)
-    
+
     response.raise_for_status()
     return response.json()
 ```
@@ -180,12 +180,12 @@ def transcribe_chunked(audio_file_path: str) -> dict:
         "Transfer-Encoding": "chunked",
         "Expect": "100-continue"
     }
-    
+
     def generate_chunks(file_path: str, chunk_size: int = 1024):
         with open(file_path, "rb") as f:
             while chunk := f.read(chunk_size):
                 yield chunk
-    
+
     response = requests.post(url, headers=headers, params=params, data=generate_chunks(audio_file_path))
     return response.json()
 ```
@@ -261,21 +261,21 @@ import asyncio
 async def transcribe_async(audio_file_path: str, language: str = "en-US") -> dict:
     region = os.environ["AZURE_SPEECH_REGION"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    
+
     url = f"https://{region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
-    
+
     headers = {
         "Ocp-Apim-Subscription-Key": api_key,
         "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000",
         "Accept": "application/json"
     }
-    
+
     params = {"language": language, "format": "detailed"}
-    
+
     async with aiohttp.ClientSession() as session:
         with open(audio_file_path, "rb") as f:
             audio_data = f.read()
-        
+
         async with session.post(url, headers=headers, params=params, data=audio_data) as response:
             response.raise_for_status()
             return await response.json()
@@ -296,7 +296,7 @@ async def transcribe_wrong():
 ```python
 try:
     response = requests.post(url, headers=headers, params=params, data=audio_file)
-    
+
     if response.status_code == 200:
         result = response.json()
         if result.get("RecognitionStatus") == "Success":
@@ -309,7 +309,7 @@ try:
         print("Unauthorized: Check API key")
     elif response.status_code == 403:
         print("Forbidden: Missing authorization header")
-        
+
 except requests.exceptions.RequestException as e:
     print(f"Request failed: {e}")
 ```

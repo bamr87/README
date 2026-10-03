@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 644,
+    "pages": 645,
     "sections": 96,
     "max_depth": 6,
     "skipped": 8
@@ -20,19 +20,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "796a5f1407231046",
+  "fingerprint": "6bfbc6dd72c5ae64",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 644,
+    "pages": 645,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 62,
+        "pages": 63,
         "children": [
           {
             "type": "page",
@@ -465,7 +465,7 @@
             "title": "Gem Automation Scripts",
             "rel": "scripts",
             "index": "zer0-mistakes/scripts/README.md",
-            "pages": 6,
+            "pages": 7,
             "children": [
               {
                 "type": "page",
@@ -473,6 +473,13 @@
                 "path": "zer0-mistakes/scripts/README.md",
                 "rel": "scripts/README.md",
                 "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Release Script Libraries",
+                "path": "zer0-mistakes/scripts/lib/README.md",
+                "rel": "scripts/lib/README.md",
+                "folder": "scripts/lib"
               },
               {
                 "type": "page",

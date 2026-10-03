@@ -1,10 +1,13 @@
 ---
+
 author: Generated Author
 description: Generated Description
 published_at: '2024-08-07'
 source_file: 2024-08-07-generated-title.md
 title: 2024 08 07 Generated Title
 ---
+# 2024 08 07 Generated Title
+
 A spider daring a historic climb, Brought news anchors to over-the-top rhyme. Its act of fearlessness they spun, As a suicidal, assassin run.
 
 Headlines screamed of eight-legged plots, Ignoring simpler spider thoughts. Studies show these arachnid types, Climb for food, not for hype.

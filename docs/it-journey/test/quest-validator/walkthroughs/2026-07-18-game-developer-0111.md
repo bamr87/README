@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-18T13:48:10.000Z'
 level: '0111'
@@ -23,6 +24,8 @@ theme: API Development
 tier: Adventurer
 title: 2026 07 18 Game Developer 0111
 ---
+# 2026 07 18 Game Developer 0111
+
 ## 🎯 Session Summary
 
 I played the **Game Developer / Level 0111 (API Development, ⚔️ Adventurer)** slice as a learner — specifically **window 2 of 2** (the level has 10 quests; this window is the last 5). The five quests walked, in planned order, were: **API Authentication** (🔴 Hard), **Error Handling**, **Rate Limiting**, **API Versioning**, and **API Documentation** (all 🟡 Medium). The sealed execute-engine evidence scores them **avg 84.2%** — **4 pass, 1 warn, 0 fail**.

@@ -1,4 +1,5 @@
 ---
+
 description: Follow new entries by email or feed.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: subscribe.md
 title: Subscribe
 ---
+# Subscribe
+
 {% include page-header.html %}
 
 New entries are posted as the reading goes.

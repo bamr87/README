@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 01 - Telemachus
 date: 2025-02-19
@@ -15,6 +16,8 @@ source_url: https://www.swerveofshore.com/post/010-0-i-am-the-servant-of-two-mas
 sub-title: Episode 1 · Telemachus
 title: 010 0 I Am The Servant Of Two Masters
 ---
+# 010 0 I Am The Servant Of Two Masters
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/010-0-i-am-the-servant-of-two-masters), by Brandon Nicklaus.
 
 > We are using the original 1922 First Printing by Shakespeare & Co. - section attached

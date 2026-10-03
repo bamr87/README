@@ -30,7 +30,7 @@ Follow Red-Green-Refactor:
 @pytest.mark.asyncio
 async def test_create_project_generates_unique_id(mock_cosmos, project_create_data):
     result = await project_service.create(project_create_data, author_id="user-1")
-    
+
     assert result.id is not None
     assert len(result.id) == 36  # UUID format
 
@@ -76,15 +76,15 @@ from app.models.project import ProjectCreate, ProjectUpdate
 
 class TestProjectServiceCreate:
     """Tests for ProjectService.create()"""
-    
+
     @pytest.mark.asyncio
     async def test_create_returns_project_with_generated_id(self, mock_cosmos):
         ...
-    
+
     @pytest.mark.asyncio
     async def test_create_sets_timestamps(self, mock_cosmos):
         ...
-    
+
     @pytest.mark.asyncio
     async def test_create_generates_unique_slug(self, mock_cosmos):
         ...
@@ -92,15 +92,15 @@ class TestProjectServiceCreate:
 
 class TestProjectServiceGetById:
     """Tests for ProjectService.get_by_id()"""
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_project_when_found(self, mock_cosmos):
         ...
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_none_when_not_found(self, mock_cosmos):
         ...
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_none_when_cosmos_unavailable(self):
         ...
@@ -122,13 +122,13 @@ from datetime import datetime, timezone
 def mock_cosmos_container():
     """Mock Cosmos container with common operations."""
     container = MagicMock()
-    
+
     # Default behaviors
     container.read_item.return_value = None
     container.upsert_item.return_value = {}
     container.delete_item.return_value = None
     container.query_items.return_value = iter([])
-    
+
     return container
 
 
@@ -189,23 +189,23 @@ def mock_cosmos_async(mock_cosmos_container, mocker):
     """Mock the async wrapper functions."""
     async def mock_upsert(doc, partition_key):
         return mock_cosmos_container.upsert_item(doc)
-    
+
     async def mock_get(doc_id, partition_key):
         return mock_cosmos_container.read_item(item=doc_id, partition_key=partition_key)
-    
+
     async def mock_delete(doc_id, partition_key):
         mock_cosmos_container.delete_item(item=doc_id, partition_key=partition_key)
         return True
-    
+
     async def mock_query(doc_type, partition_key=None, extra_filter=None, parameters=None):
         return list(mock_cosmos_container.query_items())
-    
+
     mocker.patch("app.db.cosmos.upsert_document", side_effect=mock_upsert)
     mocker.patch("app.db.cosmos.get_document", side_effect=mock_get)
     mocker.patch("app.db.cosmos.delete_document", side_effect=mock_delete)
     mocker.patch("app.db.cosmos.query_documents", side_effect=mock_query)
     mocker.patch("app.db.cosmos.get_container", return_value=mock_cosmos_container)
-    
+
     return mock_cosmos_container
 ```
 
@@ -217,37 +217,37 @@ def mock_cosmos_async(mock_cosmos_container, mocker):
 
 ```python
 class TestProjectServiceCreate:
-    
+
     @pytest.mark.asyncio
     async def test_create_persists_document_with_correct_structure(
         self, mock_cosmos_async, project_create_data
     ):
         # Act
         result = await project_service.create(project_create_data, author_id="user-1")
-        
+
         # Assert - verify upsert was called
         mock_cosmos_async.upsert_item.assert_called_once()
         persisted_doc = mock_cosmos_async.upsert_item.call_args[0][0]
-        
+
         assert persisted_doc["name"] == "New Project"
         assert persisted_doc["workspaceId"] == "ws-456"
         assert persisted_doc["authorId"] == "user-1"
         assert persisted_doc["docType"] == "project"
-    
+
     @pytest.mark.asyncio
     async def test_create_generates_uuid_id(self, mock_cosmos_async, project_create_data):
         result = await project_service.create(project_create_data, author_id="user-1")
-        
+
         # UUID format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
         assert len(result.id) == 36
         assert result.id.count("-") == 4
-    
+
     @pytest.mark.asyncio
     async def test_create_sets_created_at_to_now(self, mock_cosmos_async, project_create_data):
         before = datetime.now(timezone.utc)
         result = await project_service.create(project_create_data, author_id="user-1")
         after = datetime.now(timezone.utc)
-        
+
         assert before <= result.created_at <= after
 ```
 
@@ -255,36 +255,36 @@ class TestProjectServiceCreate:
 
 ```python
 class TestProjectServiceGetById:
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_project_when_found(
         self, mock_cosmos_async, sample_project_doc
     ):
         mock_cosmos_async.read_item.return_value = sample_project_doc
-        
+
         result = await project_service.get_by_id("proj-123", workspace_id="ws-456")
-        
+
         assert result is not None
         assert result.id == "proj-123"
         assert result.name == "Test Project"
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_none_when_not_found(self, mock_cosmos_async):
         from azure.cosmos.exceptions import CosmosResourceNotFoundError
         mock_cosmos_async.read_item.side_effect = CosmosResourceNotFoundError(
             status_code=404, message="Not found"
         )
-        
+
         result = await project_service.get_by_id("nonexistent", workspace_id="ws-456")
-        
+
         assert result is None
-    
+
     @pytest.mark.asyncio
     async def test_get_by_id_returns_none_when_cosmos_unavailable(
         self, mock_cosmos_unavailable
     ):
         result = await project_service.get_by_id("proj-123", workspace_id="ws-456")
-        
+
         assert result is None
 ```
 
@@ -292,29 +292,29 @@ class TestProjectServiceGetById:
 
 ```python
 class TestProjectServiceUpdate:
-    
+
     @pytest.mark.asyncio
     async def test_update_modifies_only_provided_fields(
         self, mock_cosmos_async, sample_project_doc
     ):
         mock_cosmos_async.read_item.return_value = sample_project_doc
-        
+
         update_data = ProjectUpdate(name="Updated Name")
         result = await project_service.update("proj-123", "ws-456", update_data)
-        
+
         assert result.name == "Updated Name"
         assert result.description == "A test project"  # Unchanged
-    
+
     @pytest.mark.asyncio
     async def test_update_sets_updated_at(self, mock_cosmos_async, sample_project_doc):
         mock_cosmos_async.read_item.return_value = sample_project_doc
-        
+
         before = datetime.now(timezone.utc)
         result = await project_service.update(
             "proj-123", "ws-456", ProjectUpdate(name="New")
         )
         after = datetime.now(timezone.utc)
-        
+
         assert result.updated_at is not None
         assert before <= result.updated_at <= after
 ```
@@ -323,23 +323,23 @@ class TestProjectServiceUpdate:
 
 ```python
 class TestProjectServiceDelete:
-    
+
     @pytest.mark.asyncio
     async def test_delete_returns_true_on_success(self, mock_cosmos_async):
         result = await project_service.delete("proj-123", workspace_id="ws-456")
-        
+
         assert result is True
         mock_cosmos_async.delete_item.assert_called_once()
-    
+
     @pytest.mark.asyncio
     async def test_delete_returns_false_when_not_found(self, mock_cosmos_async):
         from azure.cosmos.exceptions import CosmosResourceNotFoundError
         mock_cosmos_async.delete_item.side_effect = CosmosResourceNotFoundError(
             status_code=404, message="Not found"
         )
-        
+
         result = await project_service.delete("nonexistent", workspace_id="ws-456")
-        
+
         assert result is False
 ```
 
@@ -347,7 +347,7 @@ class TestProjectServiceDelete:
 
 ```python
 class TestProjectServiceList:
-    
+
     @pytest.mark.asyncio
     async def test_list_returns_all_projects_in_workspace(
         self, mock_cosmos_async, sample_project_doc
@@ -356,19 +356,19 @@ class TestProjectServiceList:
             sample_project_doc,
             {**sample_project_doc, "id": "proj-456", "name": "Second Project"},
         ])
-        
+
         results = await project_service.list_by_workspace("ws-456")
-        
+
         assert len(results) == 2
         assert results[0].id == "proj-123"
         assert results[1].id == "proj-456"
-    
+
     @pytest.mark.asyncio
     async def test_list_returns_empty_when_no_projects(self, mock_cosmos_async):
         mock_cosmos_async.query_items.return_value = iter([])
-        
+
         results = await project_service.list_by_workspace("ws-456")
-        
+
         assert results == []
 ```
 
@@ -412,7 +412,7 @@ def cleanup_test_docs(cosmos_container):
 
 
 class TestProjectServiceIntegration:
-    
+
     @pytest.mark.asyncio
     async def test_create_and_retrieve_roundtrip(self, cleanup_test_docs):
         # Create
@@ -422,10 +422,10 @@ class TestProjectServiceIntegration:
         )
         project = await project_service.create(data, author_id="test-user")
         cleanup_test_docs.append((project.id, "test-workspace"))
-        
+
         # Retrieve
         retrieved = await project_service.get_by_id(project.id, "test-workspace")
-        
+
         assert retrieved is not None
         assert retrieved.name == "Integration Test Project"
 ```
@@ -445,7 +445,7 @@ import uuid
 @dataclass
 class ProjectFactory:
     """Factory for creating test project data."""
-    
+
     id: str = field(default_factory=lambda: str(uuid.uuid4()))
     name: str = "Test Project"
     description: str = "Test description"
@@ -455,7 +455,7 @@ class ProjectFactory:
     visibility: str = "public"
     tags: list = field(default_factory=list)
     created_at: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
-    
+
     def to_doc(self) -> dict:
         """Convert to Cosmos document format."""
         return {
@@ -471,7 +471,7 @@ class ProjectFactory:
             "updatedAt": None,
             "docType": "project",
         }
-    
+
     def to_create(self) -> ProjectCreate:
         """Convert to ProjectCreate model."""
         return ProjectCreate(
@@ -487,7 +487,7 @@ class ProjectFactory:
 def test_with_factory(mock_cosmos_async):
     factory = ProjectFactory(name="Custom Name", tags=["important"])
     mock_cosmos_async.read_item.return_value = factory.to_doc()
-    
+
     result = await project_service.get_by_id(factory.id, factory.workspace_id)
     assert result.name == "Custom Name"
 ```

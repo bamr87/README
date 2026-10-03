@@ -56,7 +56,7 @@ bundle exec jekyll serve
 ## Key Files
 
 | File | Purpose |
-|------|---------|  
+|------|---------|
 | `Gemfile` | Lists Ruby gem dependencies |
 | `Gemfile.lock` | Locks exact versions |
 | `jekyll-theme-zer0.gemspec` | Theme gem specification |

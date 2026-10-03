@@ -72,7 +72,7 @@ for doc in result:
         print(f"Scores: pos={doc.confidence_scores.positive:.2f}, "
               f"neg={doc.confidence_scores.negative:.2f}, "
               f"neu={doc.confidence_scores.neutral:.2f}")
-        
+
         # Opinion mining (aspect-based sentiment)
         for sentence in doc.sentences:
             for opinion in sentence.mined_opinions:
@@ -151,7 +151,7 @@ for doc in result:
             print(f"Entity: {entity.text}")
             print(f"  Category: {entity.category}")
             print(f"  Normalized: {entity.normalized_text}")
-            
+
             # Entity links (UMLS, etc.)
             for link in entity.data_sources:
                 print(f"  Link: {link.name} - {link.entity_id}")

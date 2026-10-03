@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-09 00:00:00+00:00
 level: '0100'
@@ -21,6 +22,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 09 Digital Artist 0100
 ---
+# 2026 07 09 Digital Artist 0100
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 8 quests) of the **Digital Artist → Level 0100 "Frontend & Containers"** (Adventurer ⚔️) slice as a learner, consuming the workflow-sealed execute-engine evidence (`walk-evidence.json`) and reading each quest source in plan order. The slice splits into two sub-journeys: a **Docker core** (`container-fundamentals` → `docker-compose-orchestration`) and a **Jekyll + Bootstrap** trio (`frontend-docker`, `frontend`, `jekyll-component-refactoring`).

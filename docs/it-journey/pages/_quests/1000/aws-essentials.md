@@ -462,8 +462,8 @@ AWS distills good design into six pillars. Use them as a checklist for any archi
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
-**🏗️ System Engineer**: Deepen VPC and networking mastery before [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
+**💻 Software Developer**: Continue to [Infrastructure as Code](/quests/1000/infrastructure-as-code/)
+**🏗️ System Engineer**: Deepen VPC and networking mastery before [Infrastructure as Code](/quests/1000/infrastructure-as-code/)
 **🛡️ Security Specialist**: Audit your IAM policies against least privilege
 
 ## 📚 Resources

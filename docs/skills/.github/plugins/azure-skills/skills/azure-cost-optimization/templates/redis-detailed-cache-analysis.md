@@ -1,7 +1,10 @@
 ---
+
 source_file: redis-detailed-cache-analysis.md
 title: Redis Detailed Cache Analysis
 ---
+# Redis Detailed Cache Analysis
+
 Redis Cost Optimization Report - Detailed Analysis Subscription: Example-Subscription (12345678-1234-1234-1234-123456789abc) Generated: January 26, 2026
 
 ═══════════════════════════════════════════════════════════════════
@@ -21,11 +24,11 @@ CRITICAL ISSUES (🔴 Immediate Action)
     Age: 12 days
     Cost: $300/month
     Tags: environment=dev, owner=user1@example.com
-    
+
     ❌ Problem: Cache in Failed state for 12 days
     💡 Recommendation: Delete immediately
     💰 Savings: $300/month
-    
+
     Action: az redis delete --name example-cache-001 --resource-group dev-rg
 
 [2] example-cache-002
@@ -35,11 +38,11 @@ CRITICAL ISSUES (🔴 Immediate Action)
     Age: 120 days
     Cost: $300/month
     Tags: environment=dev, owner=user2@example.com
-    
+
     ⚠️ Problem: Premium tier in dev environment
     💡 Recommendation: Downgrade to Standard C3 (6GB)
     💰 Savings: $175/month
-    
+
     Next Steps:
     1. Verify with owner: user2@example.com
     2. Schedule maintenance window
@@ -54,11 +57,11 @@ HIGH PRIORITY (🟠 Review This Week)
     Age: 180 days
     Cost: $100/month
     Tags: purpose=test, temporary=true, created=2025-07-15
-    
+
     ⚠️ Problem: Temporary test cache running for 6 months
     💡 Recommendation: Delete if no longer needed
     💰 Savings: $100/month
-    
+
     Action: Confirm with team, then delete
 
 HEALTHY CACHES (🟢 No Action Needed)

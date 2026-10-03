@@ -9,9 +9,9 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **644 pages** across **96 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **645 pages** across **96 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(62)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(63)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
   - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(55)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
@@ -72,8 +72,9 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - **[Evidence: Site Builder — bring your own AI provider (Claude or Grok)…](../zer0-mistakes/test/visual/evidence/site-builder-providers/README.md)** <small>(2)</small>
           - [Evidence: Site Builder — bring your own AI provider (Claude or Grok)…](../zer0-mistakes/test/visual/evidence/site-builder-providers/README.md)
           - [A site the Grok path actually built, from an empty folder](../zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md)
-  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(6)</small>
+  - **[Gem Automation Scripts](../zer0-mistakes/scripts/README.md)** <small>(7)</small>
     - [Gem Automation Scripts](../zer0-mistakes/scripts/README.md)
+    - [Release Script Libraries](../zer0-mistakes/scripts/lib/README.md)
     - [scripts/ai — companions to the fleet's ai-runner kit](../zer0-mistakes/scripts/ai/README.md)
     - **[scripts/install/ — Modular Installer v2](../zer0-mistakes/scripts/install/README.md)** <small>(4)</small>
       - [scripts/install/ — Modular Installer v2](../zer0-mistakes/scripts/install/README.md)

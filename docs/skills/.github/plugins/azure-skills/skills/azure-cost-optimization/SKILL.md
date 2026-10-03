@@ -162,7 +162,7 @@ Create `temp/cost-query.json` with:
   "type": "ActualCost",
   "timeframe": "Custom",
   "timePeriod": {
-    "from": "<START_DATE>",  
+    "from": "<START_DATE>",
     "to": "<END_DATE>"
   },
   "dataset": {

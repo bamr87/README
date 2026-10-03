@@ -208,38 +208,38 @@ if (result.isAnomaly()) {
 
 ```java
 public class StreamingAnomalyDetector {
-    
+
     private final UnivariateClient client;
     private final List<TimeSeriesPoint> buffer;
     private final int windowSize;
-    
+
     public StreamingAnomalyDetector(UnivariateClient client, int windowSize) {
         this.client = client;
         this.buffer = new ArrayList<>();
         this.windowSize = windowSize;
     }
-    
+
     public boolean processDataPoint(OffsetDateTime timestamp, double value) {
         // Add new point
         buffer.add(new TimeSeriesPoint(timestamp, value));
-        
+
         // Keep window size manageable
         if (buffer.size() > windowSize) {
             buffer.remove(0);
         }
-        
+
         // Need minimum 12 points for detection
         if (buffer.size() < 12) {
             return false;
         }
-        
+
         // Detect anomaly
         UnivariateDetectionOptions options = new UnivariateDetectionOptions(buffer)
             .setGranularity(TimeGranularity.MINUTELY)
             .setSensitivity(90);
-        
+
         UnivariateLastDetectionResult result = client.detectUnivariateLastPoint(options);
-        
+
         return result.isAnomaly();
     }
 }
@@ -250,10 +250,10 @@ public class StreamingAnomalyDetector {
 Detect trend changes in time series data.
 
 ```java
-UnivariateChangePointDetectionOptions changeOptions = 
+UnivariateChangePointDetectionOptions changeOptions =
     new UnivariateChangePointDetectionOptions(series, TimeGranularity.DAILY);
 
-UnivariateChangePointDetectionResult result = 
+UnivariateChangePointDetectionResult result =
     univariateClient.detectUnivariateChangePoint(changeOptions);
 
 System.out.println("=== Change Point Detection ===");
@@ -325,7 +325,7 @@ do {
     Thread.sleep(10000); // Wait 10 seconds
     model = multivariateClient.getMultivariateModel(modelId);
     System.out.println("Training status: " + model.getModelInfo().getStatus());
-} while (model.getModelInfo().getStatus() == ModelStatus.CREATED 
+} while (model.getModelInfo().getStatus() == ModelStatus.CREATED
       || model.getModelInfo().getStatus() == ModelStatus.RUNNING);
 
 if (model.getModelInfo().getStatus() == ModelStatus.READY) {
@@ -350,7 +350,7 @@ MultivariateBatchDetectionOptions detectionOptions = new MultivariateBatchDetect
     .setTopContributorCount(10);  // Top contributing variables to show
 
 // Start batch detection
-MultivariateDetectionResult detectionResult = 
+MultivariateDetectionResult detectionResult =
     multivariateClient.detectMultivariateBatchAnomaly(modelId, detectionOptions);
 
 String resultId = detectionResult.getResultId();
@@ -368,7 +368,7 @@ do {
 // Process results
 if (result.getSummary().getStatus() == MultivariateBatchDetectionStatus.READY) {
     System.out.println("=== Multivariate Anomaly Detection Results ===");
-    
+
     int anomalyCount = 0;
     for (AnomalyState state : result.getResults()) {
         if (state.getValue().isAnomaly()) {
@@ -376,7 +376,7 @@ if (result.getSummary().getStatus() == MultivariateBatchDetectionStatus.READY) {
             System.out.printf("Anomaly at %s, severity: %.4f%n",
                 state.getTimestamp(),
                 state.getValue().getSeverity());
-            
+
             // Show contributing variables
             if (state.getValue().getInterpretation() != null) {
                 System.out.println("  Contributing variables:");
@@ -401,14 +401,14 @@ import java.util.Arrays;
 
 // Prepare latest data point for each variable
 List<VariableValues> variables = Arrays.asList(
-    new VariableValues("temperature", 
-        Arrays.asList("2023-07-15T12:00:00Z"), 
+    new VariableValues("temperature",
+        Arrays.asList("2023-07-15T12:00:00Z"),
         Arrays.asList(85.5f)),
-    new VariableValues("pressure", 
-        Arrays.asList("2023-07-15T12:00:00Z"), 
+    new VariableValues("pressure",
+        Arrays.asList("2023-07-15T12:00:00Z"),
         Arrays.asList(1013.2f)),
-    new VariableValues("humidity", 
-        Arrays.asList("2023-07-15T12:00:00Z"), 
+    new VariableValues("humidity",
+        Arrays.asList("2023-07-15T12:00:00Z"),
         Arrays.asList(65.0f))
 );
 
@@ -416,7 +416,7 @@ MultivariateLastDetectionOptions lastOptions = new MultivariateLastDetectionOpti
     .setVariables(variables)
     .setTopContributorCount(5);
 
-MultivariateLastDetectionResult lastResult = 
+MultivariateLastDetectionResult lastResult =
     multivariateClient.detectMultivariateLastAnomaly(modelId, lastOptions);
 
 System.out.println("=== Multivariate Last Point Detection ===");
@@ -492,14 +492,14 @@ import com.azure.core.exception.HttpResponseException;
 try {
     UnivariateDetectionOptions options = new UnivariateDetectionOptions(series)
         .setGranularity(TimeGranularity.DAILY);
-    
+
     univariateClient.detectUnivariateEntireSeries(options);
-    
+
 } catch (HttpResponseException e) {
     int statusCode = e.getResponse().getStatusCode();
     System.err.println("HTTP Status: " + statusCode);
     System.err.println("Error: " + e.getMessage());
-    
+
     switch (statusCode) {
         case 400:
             System.err.println("Bad request - check data format and minimum points (12 required)");
@@ -534,10 +534,10 @@ import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 public class MetricsAnomalyDetector {
-    
+
     private final UnivariateClient client;
     private final int sensitivity;
-    
+
     public MetricsAnomalyDetector(int sensitivity) {
         this.client = new AnomalyDetectorClientBuilder()
             .endpoint(System.getenv("AZURE_ANOMALY_DETECTOR_ENDPOINT"))
@@ -545,21 +545,21 @@ public class MetricsAnomalyDetector {
             .buildUnivariateClient();
         this.sensitivity = sensitivity;
     }
-    
+
     public List<AnomalyResult> detectAnomalies(List<MetricDataPoint> metrics) {
         // Convert to time series points
         List<TimeSeriesPoint> series = new ArrayList<>();
         for (MetricDataPoint metric : metrics) {
             series.add(new TimeSeriesPoint(metric.timestamp, metric.value));
         }
-        
+
         // Detect anomalies
         UnivariateDetectionOptions options = new UnivariateDetectionOptions(series)
             .setGranularity(TimeGranularity.MINUTELY)
             .setSensitivity(sensitivity);
-        
+
         UnivariateEntireDetectionResult result = client.detectUnivariateEntireSeries(options);
-        
+
         // Build results
         List<AnomalyResult> anomalies = new ArrayList<>();
         for (int i = 0; i < result.getIsAnomaly().size(); i++) {
@@ -574,35 +574,35 @@ public class MetricsAnomalyDetector {
                 ));
             }
         }
-        
+
         return anomalies;
     }
-    
+
     public boolean isLatestPointAnomaly(List<MetricDataPoint> metrics) {
         List<TimeSeriesPoint> series = new ArrayList<>();
         for (MetricDataPoint metric : metrics) {
             series.add(new TimeSeriesPoint(metric.timestamp, metric.value));
         }
-        
+
         UnivariateDetectionOptions options = new UnivariateDetectionOptions(series)
             .setGranularity(TimeGranularity.MINUTELY)
             .setSensitivity(sensitivity);
-        
+
         UnivariateLastDetectionResult result = client.detectUnivariateLastPoint(options);
         return result.isAnomaly();
     }
-    
+
     // Data classes
     public static class MetricDataPoint {
         public final OffsetDateTime timestamp;
         public final double value;
-        
+
         public MetricDataPoint(OffsetDateTime timestamp, double value) {
             this.timestamp = timestamp;
             this.value = value;
         }
     }
-    
+
     public static class AnomalyResult {
         public final OffsetDateTime timestamp;
         public final double actualValue;
@@ -610,9 +610,9 @@ public class MetricsAnomalyDetector {
         public final double upperBound;
         public final double lowerBound;
         public final String type;
-        
-        public AnomalyResult(OffsetDateTime timestamp, double actualValue, 
-                           double expectedValue, double upperBound, 
+
+        public AnomalyResult(OffsetDateTime timestamp, double actualValue,
+                           double expectedValue, double upperBound,
                            double lowerBound, String type) {
             this.timestamp = timestamp;
             this.actualValue = actualValue;
@@ -621,44 +621,44 @@ public class MetricsAnomalyDetector {
             this.lowerBound = lowerBound;
             this.type = type;
         }
-        
+
         @Override
         public String toString() {
             return String.format("[%s] %s: actual=%.2f, expected=%.2f (bounds: %.2f - %.2f)",
                 timestamp, type, actualValue, expectedValue, lowerBound, upperBound);
         }
     }
-    
+
     public static void main(String[] args) {
         MetricsAnomalyDetector detector = new MetricsAnomalyDetector(90);
-        
+
         // Generate sample data with an anomaly
         List<MetricDataPoint> metrics = new ArrayList<>();
         OffsetDateTime baseTime = OffsetDateTime.now().minusHours(1);
         Random random = new Random();
-        
+
         for (int i = 0; i < 60; i++) {
             double value = 100 + random.nextGaussian() * 5;
-            
+
             // Inject anomaly at minute 45
             if (i == 45) {
                 value = 200;
             }
-            
+
             metrics.add(new MetricDataPoint(
                 baseTime.plus(i, ChronoUnit.MINUTES),
                 value
             ));
         }
-        
+
         // Detect anomalies
         List<AnomalyResult> anomalies = detector.detectAnomalies(metrics);
-        
+
         System.out.println("=== Detected Anomalies ===");
         for (AnomalyResult anomaly : anomalies) {
             System.out.println(anomaly);
         }
-        
+
         // Check latest point
         boolean isLatestAnomaly = detector.isLatestPointAnomaly(metrics);
         System.out.println("\nLatest point is anomaly: " + isLatestAnomaly);

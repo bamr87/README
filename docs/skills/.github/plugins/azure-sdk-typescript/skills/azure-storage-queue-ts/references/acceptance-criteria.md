@@ -176,7 +176,7 @@ for (const message of response.receivedMessageItems) {
   console.log("Content:", message.messageText);
   console.log("Dequeue Count:", message.dequeueCount);
   console.log("Pop Receipt:", message.popReceipt);
-  
+
   // Delete after processing
   await queueClient.deleteMessage(message.messageId, message.popReceipt);
 }
@@ -206,7 +206,7 @@ if (message) {
     "Updated content",
     60
   );
-  
+
   console.log("New pop receipt:", updateResponse.popReceipt);
 }
 ```

@@ -39,8 +39,8 @@ for await (const connection of client.connections.list()) {
 }
 
 // Filter by category
-for await (const conn of client.connections.list({ 
-  category: "AzureOpenAI" 
+for await (const conn of client.connections.list({
+  category: "AzureOpenAI"
 })) {
   console.log(`OpenAI Connection: ${conn.name}`);
 }
@@ -93,16 +93,16 @@ console.log(`Search Endpoint: ${defaultSearch.target}`);
 interface Connection {
   /** Connection name */
   name: string;
-  
+
   /** Connection type (e.g., "AzureOpenAI", "AzureAISearch") */
   type: string;
-  
+
   /** Target endpoint URL */
   target: string;
-  
+
   /** Authentication type */
   authType: "ApiKey" | "AAD" | "SAS" | "CustomKeys";
-  
+
   /** Additional metadata */
   metadata?: Record<string, string>;
 }
@@ -156,12 +156,12 @@ import { AzureOpenAI } from "openai";
 
 const openAIClient = new AzureOpenAI({
   endpoint: openAIConn.target,
-  apiKey: openAIConn.credentials.type === "ApiKey" 
-    ? openAIConn.credentials.key 
+  apiKey: openAIConn.credentials.type === "ApiKey"
+    ? openAIConn.credentials.key
     : undefined,
   // Or use credential for AAD
   azureADTokenProvider: openAIConn.credentials.type === "AAD"
-    ? () => getAccessToken() 
+    ? () => getAccessToken()
     : undefined,
 });
 

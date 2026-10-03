@@ -136,7 +136,7 @@ jobs:
           set +e  # Don't fail immediately — capture outcome
           python3 work/gh-600/scripts/subtask.py --task analysis
           EXIT_CODE=$?
-          
+
           if [ $EXIT_CODE -eq 0 ]; then
             echo "status=success" >> "$GITHUB_OUTPUT"
           else
@@ -163,7 +163,7 @@ jobs:
       - name: Run with awareness of upstream status
         run: |
           UPSTREAM_STATUS="${% raw %}{{ needs.sub-agent-1.outputs.status }}{% endraw %}"
-          
+
           if [ "$UPSTREAM_STATUS" = "failure" ]; then
             echo "⚠️ Sub-agent 1 failed — running in degraded mode"
             python3 work/gh-600/scripts/subtask.py \
@@ -243,17 +243,17 @@ def assess_and_recover(
     output_file: str
 ) -> dict:
     """Assess the state of a multi-agent run and produce a recovery plan."""
-    
+
     results = {}
     for result_file in Path(results_dir).rglob("*.json"):
         with open(result_file) as f:
             # Key by the artifact directory (e.g. "subtask1-result"), which
             # matches the upload-artifact name used in the workflow above.
             results[result_file.parent.name] = json.load(f)
-    
+
     failed_agents = [k for k, v in agent_statuses.items() if v == "failure"]
     succeeded_agents = [k for k, v in agent_statuses.items() if v == "success"]
-    
+
     recovery_plan = {
         "task_id": task_id,
         "failed_agents": failed_agents,
@@ -261,7 +261,7 @@ def assess_and_recover(
         "partial_results_preserved": len(results),
         "recovery_actions": []
     }
-    
+
     for agent_id in failed_agents:
         # Determine recovery strategy based on what's available.
         # Map the orchestrator agent id (e.g. "sub-agent-1") to the artifact
@@ -269,7 +269,7 @@ def assess_and_recover(
         # detection actually finds the preserved partial results.
         subtask_name = agent_id.replace("sub-agent-", "subtask")
         agent_result = results.get(f"{subtask_name}-result")
-        
+
         if agent_result and agent_result.get("checkpoint_available"):
             recovery_plan["recovery_actions"].append({
                 "agent": agent_id,
@@ -282,13 +282,13 @@ def assess_and_recover(
                 "strategy": "redelegate",
                 "task": agent_result.get("original_task") if agent_result else "unknown"
             })
-    
+
     with open(output_file, "w") as f:
         json.dump(recovery_plan, f, indent=2)
-    
+
     print(f"Recovery plan: {len(failed_agents)} failed, {len(succeeded_agents)} succeeded")
     print(f"Recovery actions: {len(recovery_plan['recovery_actions'])}")
-    
+
     # Set GitHub Actions outputs via $GITHUB_OUTPUT (the `::set-output`
     # workflow command was deprecated and no longer works on hosted runners).
     needs_redelegation = any(
@@ -302,7 +302,7 @@ def assess_and_recover(
             # Emit the failed agents so the workflow's re-delegate step can read
             # `steps.assess.outputs.failed_tasks` (passed to --failed-tasks).
             gh_out.write(f"failed_tasks={','.join(failed_agents)}\n")
-    
+
     return recovery_plan
 
 
@@ -314,7 +314,7 @@ if __name__ == "__main__":
     parser.add_argument("--agent2-status", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
-    
+
     statuses = {
         "sub-agent-1": args.agent1_status,
         "sub-agent-2": args.agent2_status

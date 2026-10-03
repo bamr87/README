@@ -32,7 +32,7 @@ Copy the template from [assets/template.py](assets/template.py) and replace plac
 class MyModel(BaseModel):
     workspace_id: str = Field(..., alias="workspaceId")
     created_at: datetime = Field(..., alias="createdAt")
-    
+
     class Config:
         populate_by_name = True  # Accept both snake_case and camelCase
 ```

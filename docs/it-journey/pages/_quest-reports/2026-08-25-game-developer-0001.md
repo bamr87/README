@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 08 25 Game Developer 0001
 verdict: fail
 walk_date: '2026-08-25'
 ---
+# 2026 08 25 Game Developer 0001
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 52.0%) · **Walked** 2026-08-25
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/32854817203) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md)

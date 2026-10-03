@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-20T00:00:00.000Z'
 level: '1100'
@@ -20,6 +21,8 @@ theme: Data Engineering
 tier: Master
 title: 2026 07 20 Data Scientist 1100
 ---
+# 2026 07 20 Data Scientist 1100
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window (window 2 of 3)** of the **Data Scientist → Level 1100** slice as a learner would, consuming the sealed execute-engine evidence and reading every quest source in plan order. The window is **not one learning path** — it splices two unrelated tracks that happen to share the `1100` level code: the **GH-600 "Agentic Codex" arc** (Warden's Pact → Grand Capstone) and the **Data Engineering Mastery arc** (Apache Spark → Stream Processing → Data Quality). A data-scientist reading top-to-bottom would whiplash between GitHub governance and PySpark.

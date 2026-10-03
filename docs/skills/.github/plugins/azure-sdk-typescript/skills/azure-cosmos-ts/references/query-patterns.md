@@ -60,9 +60,9 @@ const { resources } = await container.items
 // Multiple parameters
 const rangeQuery: SqlQuerySpec = {
   query: `
-    SELECT * FROM c 
-    WHERE c.category = @category 
-      AND c.price >= @minPrice 
+    SELECT * FROM c
+    WHERE c.category = @category
+      AND c.price >= @minPrice
       AND c.price <= @maxPrice
       AND c.inStock = @inStock
   `,
@@ -139,7 +139,7 @@ async function* queryAll<T>(
   querySpec: SqlQuerySpec
 ): AsyncGenerator<T> {
   const queryIterator = container.items.query<T>(querySpec);
-  
+
   while (queryIterator.hasMoreResults()) {
     const { resources } = await queryIterator.fetchNext();
     if (resources) {
@@ -210,7 +210,7 @@ const { resources } = await container.items
 // Computed properties
 const computedQuery: SqlQuerySpec = {
   query: `
-    SELECT 
+    SELECT
       c.id,
       c.name,
       c.price,
@@ -239,7 +239,7 @@ interface OrderItem {
 // Query items within arrays
 const arrayQuery: SqlQuerySpec = {
   query: `
-    SELECT 
+    SELECT
       o.id AS orderId,
       o.customerId,
       i.productId,
@@ -255,7 +255,7 @@ const arrayQuery: SqlQuerySpec = {
 // Check if array contains value
 const containsQuery: SqlQuerySpec = {
   query: `
-    SELECT * FROM c 
+    SELECT * FROM c
     WHERE ARRAY_CONTAINS(c.tags, @tag)
   `,
   parameters: [{ name: "@tag", value: "featured" }]
@@ -271,7 +271,7 @@ const countQuery = { query: "SELECT VALUE COUNT(1) FROM c" };
 // SUM, AVG, MIN, MAX
 const statsQuery: SqlQuerySpec = {
   query: `
-    SELECT 
+    SELECT
       COUNT(1) AS totalProducts,
       SUM(c.price) AS totalValue,
       AVG(c.price) AS averagePrice,
@@ -363,22 +363,22 @@ const caseInsensitiveQuery: SqlQuerySpec = {
 interface FeedOptions {
   /** Max items per page */
   maxItemCount?: number;
-  
+
   /** Continuation token from previous page */
   continuationToken?: string;
-  
+
   /** Enable cross-partition queries */
   enableCrossPartitionQuery?: boolean;
-  
+
   /** Max parallelism for cross-partition queries */
   maxDegreeOfParallelism?: number;
-  
+
   /** Partition key for scoped queries */
   partitionKey?: PartitionKey;
-  
+
   /** Enable scan in queries (avoid if possible) */
   enableScanInQuery?: boolean;
-  
+
   /** Populate index metrics in response */
   populateIndexMetrics?: boolean;
 }

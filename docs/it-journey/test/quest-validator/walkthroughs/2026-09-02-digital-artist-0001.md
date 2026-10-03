@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-09-02T11:28:26.000Z'
 level: '0001'
@@ -22,6 +23,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 09 02 Digital Artist 0001
 ---
+# 2026 09 02 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked **window 2 of 6** of the **Digital Artist (UI/UX) → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path, backed by the workflow's sealed execute-mode engine evidence — real commands run for real in a disposable sandbox, not model assertions. The window covers 5 quests, all sharing the same `quest_series: Static Site Mastery`, `quest_line: The Web Fundamentals Codex`, `quest_arc: Forging Your First Website`: *GitHub Pages Basics*, *Jekyll Fundamentals*, *YAML Configuration*, *Git Workflow Mastery*, and *Liquid Templating*.

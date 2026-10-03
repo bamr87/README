@@ -136,25 +136,25 @@ graph TB
     subgraph "Prerequisites"
         Terminal["🌱 Level 0001: Terminal Fundamentals"]
     end
-    
+
     subgraph "Current Quest"
         Main["🏰 Oh-My-Zsh Mastery"]
         Side1["⚔️ Nerd Font Enchantment"]
     end
-    
+
     subgraph "Unlocked Adventures"
         Bash["🏰 Bash Scripting"]
         Advanced["🏰 Advanced Shell Scripting"]
         Markdown["⚔️ Advanced Markdown"]
     end
-    
+
     Terminal --> Main
     Main --> Side1
     Main --> Bash
     Side1 --> Bash
     Bash --> Advanced
     Main --> Markdown
-    
+
     style Main fill:#ffd700,stroke:#333,stroke-width:3px
     style Terminal fill:#87ceeb
     style Side1 fill:#ffa500
@@ -513,7 +513,7 @@ d run -it ubuntu  # Quick container launch
 // Add these settings to your VS Code settings.json
 {
   "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.shell.linux": "/bin/zsh", 
+  "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 14,
@@ -705,7 +705,7 @@ echo "|-------|---------------------|--------|" >> "$RESULTS_FILE"
 for theme in "${THEMES[@]}"; do
     # Temporarily set the theme
     export ZSH_THEME="$theme"
-    
+
     # Measure prompt rendering (5 iterations)
     total=0
     for i in {1..5}; do
@@ -876,19 +876,19 @@ gantt
     title Implementation Challenge Progress
     dateFormat X
     axisFormat %s
-    
+
     section Security
     Script Audit           :done, ch1, 0, 15
-    
+
     section Themes
     Theme Benchmarking     :active, ch2, 15, 35
-    
+
     section Plugins
     Plugin Ecosystem       :ch3, 35, 60
-    
+
     section Integration
     VS Code Harmony         :ch4, 60, 80
-    
+
     section Boss Battle
     Terminal Fortress       :crit, boss, 80, 120
 ```
@@ -994,28 +994,28 @@ flowchart LR
         A1["Script runs without errors"] --> A2["Pre-flight checks pass"]
         A2 --> A3["Rollback works"]
     end
-    
+
     subgraph "Phase 2: Enchantment"
         B1["Theme renders correctly"] --> B2["7+ plugins active"]
         B2 --> B3["5+ aliases work"]
         B3 --> B4["2+ custom functions"]
     end
-    
+
     subgraph "Phase 3: Integration"
         C1["VS Code settings valid"] --> C2["Tasks.json works"]
         C2 --> C3["Health check passes"]
     end
-    
+
     subgraph "Phase 4: Documentation"
         D1["README complete"] --> D2["Troubleshooting guide"]
         D2 --> D3["Quick reference card"]
     end
-    
+
     A3 --> B1
     B4 --> C1
     C3 --> D1
     D3 --> Victory["🐉 Boss Defeated!"]
-    
+
     style Victory fill:#ffd700,stroke:#333,stroke-width:3px
 ```
 
@@ -1041,7 +1041,7 @@ score=0
 # Phase 1: Foundation
 test -x ~/setup-terminal.sh && { echo "✅ Setup script exists and is executable"; ((score+=5)); } || echo "❌ Setup script missing"
 grep -q 'set -euo pipefail' ~/setup-terminal.sh 2>/dev/null && { echo "✅ Strict mode enabled"; ((score+=5)); } || echo "❌ No strict mode"
-grep -q 'backup' ~/setup-terminal.sh 2>/dev/null && { echo "✅ Backup mechanism included"; ((score+=5)); } || echo "❌ No backup logic" 
+grep -q 'backup' ~/setup-terminal.sh 2>/dev/null && { echo "✅ Backup mechanism included"; ((score+=5)); } || echo "❌ No backup logic"
 grep -q 'rollback\|restore' ~/setup-terminal.sh 2>/dev/null && { echo "✅ Rollback capability"; ((score+=10)); } || echo "❌ No rollback"
 
 # Phase 2: Enchantment
@@ -1211,22 +1211,22 @@ graph LR
     subgraph "Level 1: Apprentice"
         S1["Install OMZ"] --> S2["Default Config"]
     end
-    
+
     subgraph "Level 2: Journeyman"
         S2 --> S3["Custom Theme"]
         S3 --> S4["5+ Plugins"]
     end
-    
+
     subgraph "Level 3: Expert"
         S4 --> S5["Custom Functions"]
         S5 --> S6["VS Code Integration"]
     end
-    
+
     subgraph "Level 4: Master"
         S6 --> S7["Automation Scripts"]
         S7 --> S8["Onboarding Package"]
     end
-    
+
     style S1 fill:#90EE90
     style S2 fill:#90EE90
     style S3 fill:#FFD700
@@ -1338,7 +1338,7 @@ graph LR
     C -->|"Level 0010"| D["⚔️ Bash Scripting"]
     D -->|"Level 0100"| E["🔥 Advanced Shell"]
     E -->|"Level 1000"| F["👑 DevOps<br>Automation"]
-    
+
     style C fill:#ffd700,stroke:#333,stroke-width:3px
     style A fill:#90EE90
     style B fill:#87ceeb

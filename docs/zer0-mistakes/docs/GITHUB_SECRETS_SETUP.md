@@ -154,7 +154,7 @@ You can also publish Docker images locally using your `.env` file.
    ```bash
    # Copy example and edit
    cp .env.example .env
-   
+
    # Add your Docker Hub credentials
    DOCKER_USERNAME=yourusername
    DOCKER_TOKEN=dckr_pat_your_token_here

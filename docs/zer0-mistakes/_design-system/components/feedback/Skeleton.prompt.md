@@ -1,7 +1,10 @@
 ---
+
 source_file: Skeleton.prompt.md
 title: Skeleton.Prompt
 ---
+# Skeleton.Prompt
+
 Shimmer loading placeholder for zer0-mistakes — use while cards, search results, or images are loading, composed into the shape of the content it replaces.
 
 {% raw %}

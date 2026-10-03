@@ -107,22 +107,22 @@ graph TB
     subgraph "Prerequisites"
         Terminal["🌱 Terminal Fundamentals"]
     end
-    
+
     subgraph "Current Quest"
         Main["🏰 Git Basics: Version Control"]
     end
-    
+
     subgraph "Unlocked Adventures"
         GitAdv["🏰 Advanced Git Workflows"]
         GitHub["🏰 GitHub Collaboration"]
         CICD["⚔️ CI/CD Pipelines"]
     end
-    
+
     Terminal --> Main
     Main --> GitAdv
     Main --> GitHub
     GitHub --> CICD
-    
+
     style Main fill:#ffd700,stroke:#333,stroke-width:2px
     style Terminal fill:#87ceeb
     style GitAdv fill:#98fb98
@@ -259,7 +259,7 @@ flowchart LR
     SA -->|git commit| REPO["🏛️ Repository\n(.git history)"]
     REPO -->|git restore| WD
     SA -->|git restore --staged| WD
-    
+
     style WD fill:#ffcccc,stroke:#cc0000
     style SA fill:#fff3cd,stroke:#cc9900
     style REPO fill:#d4edda,stroke:#28a745
@@ -268,7 +268,7 @@ flowchart LR
 ```text
 Working Directory    →    Staging Area    →    Repository
    (your files)          (git add)           (git commit)
-   
+
    Edit files here      Preview what        Permanent snapshot
                          will be committed   in project history
 ```
@@ -407,13 +407,13 @@ sequenceDiagram
     participant WD as 💻 Working Directory
     participant LOCAL as 🏛️ Local Repo
     participant REMOTE as ☁️ GitHub (Remote)
-    
+
     WD->>LOCAL: git commit
     LOCAL->>REMOTE: git push
     REMOTE->>LOCAL: git fetch
     LOCAL->>WD: git merge / git pull
     REMOTE-->>WD: git pull (fetch + merge)
-    
+
     Note over WD,REMOTE: git clone creates LOCAL + WD from REMOTE
 ```
 
@@ -525,7 +525,7 @@ flowchart TD
     A -->|"Undo last commit\n(keep changes)"| D["git reset --soft HEAD~1"]
     A -->|"Undo last commit\n(discard changes)"| E["git reset --hard HEAD~1"]
     A -->|"Create a new commit\nthat reverses a previous one"| F["git revert <commit-hash>"]
-    
+
     style B fill:#d4edda,stroke:#28a745
     style C fill:#ffcccc,stroke:#cc0000
     style D fill:#fff3cd,stroke:#cc9900
@@ -900,7 +900,7 @@ flowchart TD
     BOSS -->|Victory| REWARDS["🎁 Quest Rewards"]
     BOSS -->|Defeat| CHALLENGES
     REWARDS --> NEXT["🔮 Next Adventures"]
-    
+
     style START fill:#6c5ce7,color:#fff
     style BOSS fill:#e17055,color:#fff,stroke-width:3px
     style REWARDS fill:#00b894,color:#fff

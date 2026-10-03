@@ -430,8 +430,8 @@ annotations:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
-**🏗️ System Engineer**: Explore [Prometheus & Grafana](/quests/1010/prometheus-grafana/)  
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
+**🏗️ System Engineer**: Explore [Prometheus & Grafana](/quests/1010/prometheus-grafana/)
 **🛡️ Security Specialist**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)
 
 ## 📚 Resources

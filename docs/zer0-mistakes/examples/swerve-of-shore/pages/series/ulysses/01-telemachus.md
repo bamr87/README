@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 1 of Ulysses — Telemachus (8am, the Martello tower at
   Sandycove).
 hide_intro: true
@@ -11,6 +12,8 @@ sidebar:
 source_file: 01-telemachus.md
 title: 01 Telemachus
 ---
+# 01 Telemachus
+
 {% include page-header.html %}
 
 Episode 1 of *Ulysses*. 8am, the Martello tower at Sandycove.

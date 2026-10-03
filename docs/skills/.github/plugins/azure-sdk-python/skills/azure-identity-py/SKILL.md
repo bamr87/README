@@ -175,14 +175,14 @@ from azure.storage.blob.aio import BlobServiceClient
 
 async def main():
     credential = DefaultAzureCredential()
-    
+
     async with BlobServiceClient(
         account_url="https://<account>.blob.core.windows.net",
         credential=credential
     ) as client:
         # ... async operations
         pass
-    
+
     await credential.close()
 ```
 

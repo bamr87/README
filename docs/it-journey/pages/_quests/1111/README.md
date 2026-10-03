@@ -74,17 +74,17 @@ graph TB
         BTC[Building Communities]
         CA[Career Advancement]
     end
-    
+
     subgraph "Prerequisites (Level 1110)"
         ARCH[Architecture & Design]
     end
-    
+
     subgraph "Achievements"
         LEGEND[🏆 Legendary Status]
         LEADER[👑 Community Leader]
         MENTOR[🎓 Master Mentor]
     end
-    
+
     ARCH --> TL
     ARCH --> OSS
     TL --> TSW

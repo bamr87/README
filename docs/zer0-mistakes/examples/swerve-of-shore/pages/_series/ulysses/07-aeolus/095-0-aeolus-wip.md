@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 07 - Aelous
 date: 2025-02-10
@@ -17,6 +18,8 @@ sub-title: Episode 7 · Aeolus
 title: 095 0 Aeolus Wip
 wip: true
 ---
+# 095 0 Aeolus Wip
+
 An in-progress entry in the *Episode 7 · Aeolus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/095-0-aeolus-wip), by Brandon Nicklaus.
 
 > Red Murray: This character was based on Joyce’s maternal uncle - John “Red” Murray. Red Murray worked in accounts for the Freemans Journal

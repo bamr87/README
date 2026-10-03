@@ -228,12 +228,12 @@ document.querySelectorAll('.toc-link').forEach((link) => {
     const target = document.getElementById(targetId);
     const headerOffset = 80;
     const position = target.offsetTop - headerOffset;
-    
+
     window.scrollTo({
       top: position,
       behavior: 'smooth'
     });
-    
+
     history.pushState(null, '', `#${targetId}`);
   });
 });
@@ -266,7 +266,7 @@ TOC in offcanvas (see [Mobile TOC](/docs/features/mobile-toc/)):
 ### ARIA Attributes
 
 ```html
-<nav id="TableOfContents" 
+<nav id="TableOfContents"
      aria-label="Table of contents"
      role="navigation">
 ```

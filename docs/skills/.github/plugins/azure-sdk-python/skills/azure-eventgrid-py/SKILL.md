@@ -129,7 +129,7 @@ from azure.identity.aio import DefaultAzureCredential
 
 async def publish_events():
     credential = DefaultAzureCredential()
-    
+
     async with EventGridPublisherClient(endpoint, credential) as client:
         event = CloudEvent(
             type="MyApp.Events.Test",

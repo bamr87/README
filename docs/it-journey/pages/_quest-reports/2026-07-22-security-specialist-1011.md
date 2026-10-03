@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -29,6 +30,8 @@ title: 2026 07 22 Security Specialist 1011
 verdict: fail
 walk_date: '2026-07-22'
 ---
+# 2026 07 22 Security Specialist 1011
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-22
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29916378064) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-22-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-22-security-specialist-1011.md)

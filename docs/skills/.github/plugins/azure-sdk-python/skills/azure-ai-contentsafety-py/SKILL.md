@@ -68,9 +68,9 @@ request = AnalyzeTextOptions(text="Your text content to analyze")
 response = client.analyze_text(request)
 
 # Check each category
-for category in [TextCategory.HATE, TextCategory.SELF_HARM, 
+for category in [TextCategory.HATE, TextCategory.SELF_HARM,
                  TextCategory.SEXUAL, TextCategory.VIOLENCE]:
-    result = next((r for r in response.categories_analysis 
+    result = next((r for r in response.categories_analysis
                    if r.category == category), None)
     if result:
         print(f"{category}: severity {result.severity}")

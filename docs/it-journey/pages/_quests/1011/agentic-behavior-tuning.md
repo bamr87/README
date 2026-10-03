@@ -144,7 +144,7 @@ RECORDED=0
 
 for TASK_NUM in 1 2 3; do
     echo "Measuring task $TASK_NUM..."
-    
+
     # Get the latest agent run for THIS task by matching its branch
     # (copilot/issue-{N}-{slug}); a bare --limit=1 would return the same
     # newest run for every task. Degrade gracefully if none exists yet.
@@ -154,10 +154,10 @@ for TASK_NUM in 1 2 3; do
         echo "⚠️  No agent-task.yml run found for task $TASK_NUM — run the agent workflow at least once, then re-run this script."
         continue
     fi
-    
+
     PR_OPENED=$(gh pr list --state all --search "is:pr in:title issue-$TASK_NUM" --json number -q 'length')
     TESTS_PASSED=$(gh run view "$RUN_ID" --json conclusion -q '.conclusion')
-    
+
     cat >> "$RESULTS_FILE" << EOF
 {"date":"$RUN_DATE","task":$TASK_NUM,"run_id":"$RUN_ID","pr_opened":$([ "$PR_OPENED" -gt 0 ] && echo true || echo false),"tests_passed":$([ "$TESTS_PASSED" = "success" ] && echo true || echo false)}
 EOF

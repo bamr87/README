@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-22T13:08:29.000Z'
 level: '1100'
@@ -17,6 +18,8 @@ theme: Data Engineering
 tier: Master
 title: 2026 07 22 Data Scientist 1100
 ---
+# 2026 07 22 Data Scientist 1100
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 1 of 3; the full Level 1100 slice holds 15 quests) of the **Data Scientist** path at **Level 1100 — Data Engineering (Master ⚡)**, playing each quest as a learner in a disposable Linux sandbox. The machine evidence was pre-computed and sealed by the workflow's execute-engine step (`--mode execute`); I consumed `walk-evidence.json` as-is and reasoned about the linked journey on top of it.

@@ -1,10 +1,13 @@
 ---
+
 gamename: drifter
 layout: default
 level: 7
 source_file: drifter7.md
 title: Drifter7
 ---
+# Drifter7
+
 Gentleman, start your disassemblers
 
 **Material:**

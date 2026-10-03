@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 2 of Ulysses — Nestor (10am, Mr Deasy's school in Dalkey).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 02-nestor.md
 title: 02 Nestor
 ---
+# 02 Nestor
+
 {% include page-header.html %}
 
 Episode 2 of *Ulysses*. 10am, Mr Deasy's school in Dalkey.

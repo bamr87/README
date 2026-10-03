@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-14 00:00:00+00:00
 level: '1110'
@@ -20,6 +21,8 @@ theme: Architecture & Design Patterns
 tier: Master
 title: 2026 07 14 Digital Artist 1110
 ---
+# 2026 07 14 Digital Artist 1110
+
 ## 🎯 Session Summary
 
 Walked the second window (quests 6–10) of the **Digital Artist → Level 1110 "Architecture & Design Patterns" (Master ⚡)** slice — five `main_quest` pages, three 🔴 Hard and two ⚔️ Epic — as a learner, driven by the sealed execute-engine evidence in `walk-evidence.json` (I did **not** re-run the engine). Headline: **warn**. Four of the five quests are technically strong — the two Epic capstones scored **94** and **97** with every runnable snippet passing against real tooling, and the two Hard middle quests (**74**, **77**) run their actual teaching code correctly against live Redis/Redpanda containers. The blocking result is **quest 1, "API Gateway Patterns"**: its Chapter 2 lab is unrunnable as written, and the engine burned its full 40-turn budget trying to make the gateway serve a request before erroring out with no score.

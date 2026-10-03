@@ -404,8 +404,8 @@ GRANT SELECT ON shop.products TO 'app_user'@'10.0.%';
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Threat Modeling](/quests/1011/threat-modeling/)  
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
+**🏗️ System Engineer**: Explore [Threat Modeling](/quests/1011/threat-modeling/)
 **🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
 
 ## 📚 Resources

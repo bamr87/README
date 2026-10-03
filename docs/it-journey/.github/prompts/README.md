@@ -76,5 +76,5 @@ When adding a new agent protocol:
 - [`README.instructions.md`](../instructions/README.instructions.md) – Required workflow for maintaining this file
 
 ---
-**Maintained by:** IT-Journey Automation Guild  
+**Maintained by:** IT-Journey Automation Guild
 **Questions?** [Open an issue](https://github.com/bamr87/it-journey/issues)

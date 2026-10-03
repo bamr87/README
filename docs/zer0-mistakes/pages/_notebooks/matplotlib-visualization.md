@@ -56,7 +56,7 @@ print(f"Matplotlib version: {plt.matplotlib.__version__}")
 
 ```python
 # Load the weather dataset
-weather = pd.read_csv('/Users/bamr87/github/zer0-mistakes/assets/data/notebooks/weather_data.csv', 
+weather = pd.read_csv('/Users/bamr87/github/zer0-mistakes/assets/data/notebooks/weather_data.csv',
                       parse_dates=['date'])
 
 print("🌤️ Weather Data Preview:")
@@ -77,7 +77,7 @@ colors = ['#e63946', '#457b9d', '#2a9d8f', '#e9c46a', '#264653']
 
 for i, city in enumerate(cities):
     city_data = weather[weather['city'] == city]
-    ax.plot(city_data['date'], city_data['temperature_f'], 
+    ax.plot(city_data['date'], city_data['temperature_f'],
             label=city, color=colors[i], linewidth=2, marker='o', markersize=4)
 
 # Customize the chart
@@ -106,7 +106,7 @@ bars = ax.barh(avg_temp.index, avg_temp.values, color=colors[:len(avg_temp)])
 
 # Add value labels on bars
 for bar, temp in zip(bars, avg_temp.values):
-    ax.text(bar.get_width() + 1, bar.get_y() + bar.get_height()/2, 
+    ax.text(bar.get_width() + 1, bar.get_y() + bar.get_height()/2,
             f'{temp:.1f}°F', va='center', fontsize=11)
 
 ax.set_xlabel('Average Temperature (°F)', fontsize=12)
@@ -151,7 +151,7 @@ fig.suptitle('Weather Analysis Dashboard', fontsize=16, fontweight='bold', y=1.0
 # 1. Temperature distribution (histogram)
 ax1 = axes[0, 0]
 ax1.hist(weather['temperature_f'], bins=15, color='#e63946', edgecolor='white', alpha=0.7)
-ax1.axvline(weather['temperature_f'].mean(), color='#264653', linestyle='--', 
+ax1.axvline(weather['temperature_f'].mean(), color='#264653', linestyle='--',
             linewidth=2, label=f'Mean: {weather["temperature_f"].mean():.1f}°F')
 ax1.set_xlabel('Temperature (°F)')
 ax1.set_ylabel('Frequency')
@@ -215,7 +215,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 # Group data by city and calculate daily averages
 for i, city in enumerate(cities):
     city_data = weather[weather['city'] == city]
-    ax.plot(city_data['date'], city_data['temperature_c'], 
+    ax.plot(city_data['date'], city_data['temperature_c'],
             label=city, color=colors[i], linewidth=2.5)
 
 ax.set_xlabel('Date', fontsize=12)

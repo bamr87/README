@@ -1,4 +1,5 @@
 ---
+
 categories: gpt
 date: 2024-06-18 16:17:02+00:00
 lastmod: 2024-06-18 17:08:00.151000+00:00
@@ -6,6 +7,8 @@ section: Creative & Experimental
 source_file: 2024-06-16-enchanted-baking-unicorn-delights.md
 title: 2024 06 16 Enchanted Baking Unicorn Delights
 ---
+# 2024 06 16 Enchanted Baking Unicorn Delights
+
 Episode 1: Rainbow Cupcake Extravaganza
 
 [Opening shot of a beautiful enchanted forest with a sparkling rainbow in the background. The camera pans to a cozy cottage where three unicorn chefs, Sparkle, Rainbow, and Stardust, are gathered in the kitchen, surrounded by an array of colorful ingredients.]

@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 15 of Ulysses — Circe (midnight, Nighttown).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 15-circe.md
 title: 15 Circe
 ---
+# 15 Circe
+
 {% include page-header.html %}
 
 Episode 15 of *Ulysses*. Midnight, Nighttown.

@@ -420,8 +420,8 @@ For every decision, say the alternative and its cost: SQL vs. NoSQL (consistency
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Technical Leadership](/quests/1111/technical-leadership/)  
-**🏗️ System Engineer**: Practice more prompts from the System Design Primer  
+**💻 Software Developer**: Continue to [Technical Leadership](/quests/1111/technical-leadership/)
+**🏗️ System Engineer**: Practice more prompts from the System Design Primer
 **📊 Data Scientist**: Apply the framework to data-pipeline design prompts
 
 ## 📚 Resources

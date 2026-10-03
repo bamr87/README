@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -77,6 +78,8 @@ validation_criteria:
 - Defeat at least one combat encounter
 - Complete the Rift final boss
 ---
+# Readme
+
 *Welcome to the Bashcrawl Catacombs — an interactive terminal dungeon where every command is a spell and every directory a new realm to explore. Nine interconnected chambers await, each a side-quest that teaches a core set of Bash skills through gameplay.*
 
 This hub is your **walkthrough and strategy guide** to the game. Play instantly in the browser below, use the nine chamber walkthroughs as your field manual, then graduate to the **advanced version** — [installing Bashcrawl](#play-locally) and playing it in a real shell.

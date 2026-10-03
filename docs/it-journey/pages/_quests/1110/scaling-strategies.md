@@ -410,8 +410,8 @@ There is no "CA" system in the real world, because partitions are not optional -
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [System Design Interviews](/quests/1110/system-design-interviews/)  
-**🏗️ System Engineer**: Deepen auto-scaling and capacity planning  
+**💻 Software Developer**: Continue to [System Design Interviews](/quests/1110/system-design-interviews/)
+**🏗️ System Engineer**: Deepen auto-scaling and capacity planning
 **📊 Data Scientist**: Note how sharding shapes analytical query design
 
 ## 📚 Resources

@@ -38,7 +38,7 @@ grep -rc '```mermaid' --include="*.md" wiki/ | grep -v ':0$'
 # Find flowchart keyword usage
 grep -rn '^\s*flowchart ' --include="*.md" wiki/
 
-# Find <br> tags in mermaid labels  
+# Find <br> tags in mermaid labels
 grep -rn '<br>' --include="*.md" wiki/ | head -20
 
 # Count YAML front matter files

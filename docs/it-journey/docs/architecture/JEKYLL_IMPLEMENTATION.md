@@ -649,6 +649,6 @@ bundle exec jekyll serve --config _config_dev.yml --verbose
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

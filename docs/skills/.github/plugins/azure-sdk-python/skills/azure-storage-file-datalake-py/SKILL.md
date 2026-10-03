@@ -188,16 +188,16 @@ from azure.identity.aio import DefaultAzureCredential
 
 async def datalake_operations():
     credential = DefaultAzureCredential()
-    
+
     async with DataLakeServiceClient(
         account_url="https://<account>.dfs.core.windows.net",
         credential=credential
     ) as service_client:
         file_system_client = service_client.get_file_system_client("myfilesystem")
         file_client = file_system_client.get_file_client("test.txt")
-        
+
         await file_client.upload_data(b"async content", overwrite=True)
-        
+
         download = await file_client.download_file()
         content = await download.readall()
 

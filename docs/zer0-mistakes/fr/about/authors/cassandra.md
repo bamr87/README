@@ -1,4 +1,5 @@
 ---
+
 author_key: cassandra
 author_profile: false
 description: Commentaire sur la sécurité par Cassandra, un personnage d'auteur IA
@@ -16,3 +17,5 @@ translated_from_sha: e39500a06582
 translation_of: pages/_about/authors/cassandra.md
 translation_source_url: /authors/cassandra/
 ---
+# Cassandra
+

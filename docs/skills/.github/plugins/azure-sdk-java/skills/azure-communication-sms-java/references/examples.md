@@ -138,8 +138,8 @@ for (SmsSendResult result : results) {
     if (result.isSuccessful()) {
         System.out.printf("✓ Sent to %s: %s%n", result.getTo(), result.getMessageId());
     } else {
-        System.out.printf("✗ Failed to %s: %s (HTTP %d)%n", 
-            result.getTo(), 
+        System.out.printf("✗ Failed to %s: %s (HTTP %d)%n",
+            result.getTo(),
             result.getErrorMessage(),
             result.getHttpStatusCode());
     }
@@ -155,31 +155,31 @@ import java.util.List;
 public class SmsBatchSender {
     private final SmsClient smsClient;
     private final String fromNumber;
-    
+
     public SmsBatchSender(SmsClient smsClient, String fromNumber) {
         this.smsClient = smsClient;
         this.fromNumber = fromNumber;
     }
-    
+
     public List<SmsSendResult> sendBatch(List<String> recipients, String message) {
         List<SmsSendResult> allResults = new ArrayList<>();
         List<String> failedRecipients = new ArrayList<>();
-        
+
         SmsSendOptions options = new SmsSendOptions()
             .setDeliveryReportEnabled(true);
-        
+
         // First attempt
         Iterable<SmsSendResult> results = smsClient.sendWithResponse(
             fromNumber, recipients, message, options, Context.NONE
         ).getValue();
-        
+
         for (SmsSendResult result : results) {
             allResults.add(result);
             if (!result.isSuccessful() && result.getHttpStatusCode() == 429) {
                 failedRecipients.add(result.getTo());
             }
         }
-        
+
         // Retry rate-limited messages after delay
         if (!failedRecipients.isEmpty()) {
             try {
@@ -187,7 +187,7 @@ public class SmsBatchSender {
                 Iterable<SmsSendResult> retryResults = smsClient.sendWithResponse(
                     fromNumber, failedRecipients, message, options, Context.NONE
                 ).getValue();
-                
+
                 for (SmsSendResult result : retryResults) {
                     allResults.add(result);
                 }
@@ -195,7 +195,7 @@ public class SmsBatchSender {
                 Thread.currentThread().interrupt();
             }
         }
-        
+
         return allResults;
     }
 }
@@ -214,24 +214,24 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class SmsDeliveryReportHandler {
     private final ObjectMapper objectMapper = new ObjectMapper();
-    
+
     public void handleDeliveryReport(String eventJson) throws Exception {
         List<EventGridEvent> events = EventGridEvent.fromString(eventJson);
-        
+
         for (EventGridEvent event : events) {
             if ("Microsoft.Communication.SMSDeliveryReportReceived".equals(event.getEventType())) {
                 JsonNode data = objectMapper.readTree(event.getData().toString());
-                
+
                 String messageId = data.get("messageId").asText();
                 String from = data.get("from").asText();
                 String to = data.get("to").asText();
                 String deliveryStatus = data.get("deliveryStatus").asText();
                 String deliveryStatusDetails = data.get("deliveryStatusDetails").asText();
                 String tag = data.has("tag") ? data.get("tag").asText() : null;
-                
+
                 System.out.printf("Delivery Report - MessageId: %s, To: %s, Status: %s%n",
                     messageId, to, deliveryStatus);
-                
+
                 // Update your database or trigger actions based on status
                 switch (deliveryStatus) {
                     case "Delivered":
@@ -244,13 +244,13 @@ public class SmsDeliveryReportHandler {
             }
         }
     }
-    
+
     private void onMessageDelivered(String messageId, String to, String tag) {
         System.out.printf("Message %s delivered to %s (tag: %s)%n", messageId, to, tag);
     }
-    
+
     private void onMessageFailed(String messageId, String to, String reason, String tag) {
-        System.out.printf("Message %s failed to %s: %s (tag: %s)%n", 
+        System.out.printf("Message %s failed to %s: %s (tag: %s)%n",
             messageId, to, reason, tag);
     }
 }
@@ -314,25 +314,25 @@ import com.azure.core.exception.HttpResponseException;
 public class SmsService {
     private final SmsClient smsClient;
     private final String fromNumber;
-    
+
     public SmsService(SmsClient smsClient, String fromNumber) {
         this.smsClient = smsClient;
         this.fromNumber = fromNumber;
     }
-    
+
     public SmsSendResult sendSms(String to, String message) {
         try {
             SmsSendResult result = smsClient.send(fromNumber, to, message);
-            
+
             if (!result.isSuccessful()) {
                 handleMessageError(result);
             }
-            
+
             return result;
-            
+
         } catch (HttpResponseException e) {
             // Request-level failures (auth, network, etc.)
-            System.err.printf("HTTP Error %d: %s%n", 
+            System.err.printf("HTTP Error %d: %s%n",
                 e.getResponse().getStatusCode(), e.getMessage());
             throw new RuntimeException("Failed to send SMS", e);
         } catch (RuntimeException e) {
@@ -340,12 +340,12 @@ public class SmsService {
             throw e;
         }
     }
-    
+
     private void handleMessageError(SmsSendResult result) {
         int status = result.getHttpStatusCode();
         String to = result.getTo();
         String error = result.getErrorMessage();
-        
+
         switch (status) {
             case 400:
                 System.err.printf("Invalid phone number: %s%n", to);
@@ -386,28 +386,28 @@ public class OtpSmsService {
     private final String fromNumber;
     private final Map<String, OtpEntry> otpStore = new ConcurrentHashMap<>();
     private final SecureRandom random = new SecureRandom();
-    
+
     public OtpSmsService(String connectionString, String fromNumber) {
         this.smsClient = new SmsClientBuilder()
             .connectionString(connectionString)
             .buildClient();
         this.fromNumber = fromNumber;
     }
-    
+
     public String sendOtp(String phoneNumber) {
         // Generate 6-digit OTP
         String otp = String.format("%06d", random.nextInt(1000000));
-        
+
         // Store OTP with expiry
         otpStore.put(phoneNumber, new OtpEntry(otp, System.currentTimeMillis() + 300000));
-        
+
         // Send SMS
         String message = String.format("Your verification code is %s. Valid for 5 minutes.", otp);
-        
+
         SmsSendOptions options = new SmsSendOptions()
             .setDeliveryReportEnabled(true)
             .setTag("otp-" + phoneNumber);
-        
+
         SmsSendResult result = smsClient.sendWithResponse(
             fromNumber,
             Collections.singletonList(phoneNumber),
@@ -415,7 +415,7 @@ public class OtpSmsService {
             options,
             Context.NONE
         ).getValue().iterator().next();
-        
+
         if (result.isSuccessful()) {
             System.out.printf("OTP sent to %s: %s%n", phoneNumber, result.getMessageId());
             return result.getMessageId();
@@ -423,31 +423,31 @@ public class OtpSmsService {
             throw new RuntimeException("Failed to send OTP: " + result.getErrorMessage());
         }
     }
-    
+
     public boolean verifyOtp(String phoneNumber, String otp) {
         OtpEntry entry = otpStore.get(phoneNumber);
-        
+
         if (entry == null) {
             return false;
         }
-        
+
         if (System.currentTimeMillis() > entry.expiryTime) {
             otpStore.remove(phoneNumber);
             return false;
         }
-        
+
         if (entry.otp.equals(otp)) {
             otpStore.remove(phoneNumber);
             return true;
         }
-        
+
         return false;
     }
-    
+
     private static class OtpEntry {
         final String otp;
         final long expiryTime;
-        
+
         OtpEntry(String otp, long expiryTime) {
             this.otp = otp;
             this.expiryTime = expiryTime;
@@ -463,13 +463,13 @@ public class Main {
     public static void main(String[] args) {
         String connectionString = System.getenv("AZURE_COMMUNICATION_CONNECTION_STRING");
         String fromNumber = System.getenv("SMS_FROM_NUMBER");
-        
+
         OtpSmsService otpService = new OtpSmsService(connectionString, fromNumber);
-        
+
         // Send OTP
         String messageId = otpService.sendOtp("+14255551234");
         System.out.println("OTP sent with message ID: " + messageId);
-        
+
         // Verify OTP (user enters code)
         boolean verified = otpService.verifyOtp("+14255551234", "123456");
         System.out.println("OTP verified: " + verified);

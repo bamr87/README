@@ -1,4 +1,5 @@
 ---
+
 description: Eighteen episodes, read in order, from the 1922 first printing.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: ulysses.md
 title: Ulysses
 ---
+# Ulysses
+
 {% include page-header.html %}
 
 The main sequence: eighteen episodes covering a single day in Dublin, 16 June 1904, read in order from the 1922 first printing by Shakespeare & Co.

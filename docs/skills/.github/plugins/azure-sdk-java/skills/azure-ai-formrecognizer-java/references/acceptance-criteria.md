@@ -119,7 +119,7 @@ import com.azure.core.util.polling.SyncPoller;
 File document = new File("document.pdf");
 BinaryData documentData = BinaryData.fromFile(document.toPath());
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocument("prebuilt-layout", documentData);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -136,7 +136,7 @@ for (DocumentPage page : result.getPages()) {
 ```java
 String documentUrl = "https://example.com/invoice.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-invoice", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -144,14 +144,14 @@ AnalyzeResult result = poller.getFinalResult();
 
 ### 3.3 ✅ CORRECT: Extract Fields from Receipt
 ```java
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-receipt", receiptUrl);
 
 AnalyzeResult result = poller.getFinalResult();
 
 for (AnalyzedDocument doc : result.getDocuments()) {
     Map<String, DocumentField> fields = doc.getFields();
-    
+
     DocumentField merchantName = fields.get("MerchantName");
     if (merchantName != null && merchantName.getType() == DocumentFieldType.STRING) {
         System.out.printf("Merchant: %s%n", merchantName.getValueAsString());
@@ -165,7 +165,7 @@ for (DocumentTable table : result.getTables()) {
     System.out.printf("Table: %d rows x %d columns%n",
         table.getRowCount(),
         table.getColumnCount());
-    
+
     for (DocumentTableCell cell : table.getCells()) {
         System.out.printf("Cell[%d,%d]: %s%n",
             cell.getRowIndex(),

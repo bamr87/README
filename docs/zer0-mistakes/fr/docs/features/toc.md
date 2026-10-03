@@ -178,7 +178,7 @@ toc:
 function initScrollSpy() {
   const headings = document.querySelectorAll('h2[id], h3[id], h4[id]');
   const tocLinks = document.querySelectorAll('.toc-link');
-  
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -193,7 +193,7 @@ function initScrollSpy() {
     },
     { rootMargin: '-20% 0% -70% 0%' }
   );
-  
+
   headings.forEach((heading) => observer.observe(heading));
 }
 ```
@@ -218,12 +218,12 @@ document.querySelectorAll('.toc-link').forEach((link) => {
     const target = document.getElementById(targetId);
     const headerOffset = 80;
     const position = target.offsetTop - headerOffset;
-    
+
     window.scrollTo({
       top: position,
       behavior: 'smooth'
     });
-    
+
     history.pushState(null, '', `#${targetId}`);
   });
 });
@@ -256,7 +256,7 @@ TOC en offcanvas (voir [Mobile TOC](/docs/features/mobile-toc/)) :
 ### Attributs ARIA
 
 ```html
-<nav id="TableOfContents" 
+<nav id="TableOfContents"
      aria-label="Table of contents"
      role="navigation">
 ```

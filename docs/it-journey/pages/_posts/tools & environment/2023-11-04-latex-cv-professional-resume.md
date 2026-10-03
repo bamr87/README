@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - Posts
@@ -40,6 +41,8 @@ tags:
 title: 2023 11 04 Latex Cv Professional Resume
 type: Article
 ---
+# 2023 11 04 Latex Cv Professional Resume
+
 Installing LaTeX on a Mac, integrating it with Visual Studio Code, and using GitHub for source control involves several steps. Below is a comprehensive manual detailing each step in the process.
 
 Installing LaTeX on macOS using Terminal Install Homebrew: If you don't have Homebrew installed, open Terminal and run the following command:

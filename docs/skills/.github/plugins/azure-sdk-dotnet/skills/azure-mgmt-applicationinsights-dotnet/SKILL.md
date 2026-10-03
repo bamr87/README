@@ -22,7 +22,7 @@ dotnet add package Azure.ResourceManager.ApplicationInsights
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0 (GA)  
+**Current Version**: v1.0.0 (GA)
 **API Version**: 2022-06-15
 
 ## Environment Variables
@@ -175,12 +175,12 @@ WebTestData urlPingTest = new WebTestData(AzureLocation.EastUS)
     Configuration = new WebTestConfiguration
     {
         WebTest = """
-            <WebTest Name="Homepage" Enabled="True" Timeout="120" 
+            <WebTest Name="Homepage" Enabled="True" Timeout="120"
                      xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
                 <Items>
-                    <Request Method="GET" Version="1.1" Url="https://myapp.example.com" 
-                             ThinkTime="0" Timeout="120" ParseDependentRequests="False" 
-                             FollowRedirects="True" RecordResult="True" Cache="False" 
+                    <Request Method="GET" Version="1.1" Url="https://myapp.example.com"
+                             ThinkTime="0" Timeout="120" ParseDependentRequests="False"
+                             FollowRedirects="True" RecordResult="True" Cache="False"
                              ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="200" />
                 </Items>
             </WebTest>
@@ -223,9 +223,9 @@ WebTestData multiStepTest = new WebTestData(AzureLocation.EastUS)
             <WebTest Name="LoginFlow" Enabled="True" Timeout="300"
                      xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
                 <Items>
-                    <Request Method="GET" Version="1.1" Url="https://myapp.example.com/login" 
+                    <Request Method="GET" Version="1.1" Url="https://myapp.example.com/login"
                              ThinkTime="0" Timeout="60" />
-                    <Request Method="POST" Version="1.1" Url="https://myapp.example.com/api/auth" 
+                    <Request Method="POST" Version="1.1" Url="https://myapp.example.com/api/auth"
                              ThinkTime="0" Timeout="60">
                         <Headers>
                             <Header Name="Content-Type" Value="application/json" />
@@ -324,7 +324,7 @@ ArmOperation<ComponentLinkedStorageAccountResource> operation = await linkedStor
 
 ```csharp
 // List all Application Insights components in resource group
-await foreach (ApplicationInsightsComponentResource component in 
+await foreach (ApplicationInsightsComponentResource component in
     resourceGroup.GetApplicationInsightsComponents())
 {
     Console.WriteLine($"Component: {component.Data.Name}");

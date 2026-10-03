@@ -1,4 +1,5 @@
 ---
+
 author_key: guest
 author_profile: false
 description: Comment contribuer des articles et devenir un auteur crédité sur zer0-mistakes
@@ -17,6 +18,8 @@ translated_from_sha: cd27b030744f
 translation_of: pages/_about/authors/guest.md
 translation_source_url: /authors/guest/
 ---
+# Guest
+
 L'**Auteur invité** crédite les contributions ponctuelles et les premières participations. Tout le monde peut écrire pour zer0-mistakes — cette page est votre point de départ, d'un simple article invité jusqu'à votre propre profil d'auteur.
 
 ## Contribuer à un article

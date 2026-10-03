@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -27,6 +28,8 @@ translated_from_sha: 25bbccc4ae7f
 translation_of: pages/_posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
 translation_source_url: /posts/2026/04/07/ai-adoption-from-awareness-to-action/
 ---
+# 2026 04 07 Ai Adoption From Awareness To Action
+
 Chaque PDG et dirigeant avec qui nous avons échangé sur le paysage de l'adoption de l'IA nous répond par la même question : « Nous sommes d'accord. Et maintenant ? Nous n'avons ni les personnes, ni les compétences, ni la capacité de le faire nous-mêmes. »
 
 Cette réponse n'est pas un signe de faiblesse. C'est un diagnostic exact de la situation. L'enquête RSM 2025 sur l'IA a révélé que les trois principaux obstacles à la mise en œuvre de l'IA sur le marché intermédiaire sont :

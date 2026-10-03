@@ -300,11 +300,11 @@ posthog:
   ===================================================================
   COMPONENT NAME - Brief Description
   ===================================================================
-  
+
   File: filename.html
   Path: _includes/category/filename.html
   Purpose: What this component does and why it exists
-  
+
   Dependencies: Required configs, other includes, external libraries
   Performance: Loading considerations, mobile responsiveness
   ===================================================================

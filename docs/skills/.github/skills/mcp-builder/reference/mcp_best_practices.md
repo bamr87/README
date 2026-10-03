@@ -349,7 +349,7 @@ Tool descriptions must:
 
 **Good:**
 ```
-"List all storage containers in an Azure Storage account. Returns container names, 
+"List all storage containers in an Azure Storage account. Returns container names,
 last modified dates, and public access levels. Requires storage account name."
 ```
 

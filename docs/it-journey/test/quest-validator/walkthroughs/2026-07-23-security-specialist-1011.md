@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-23T00:00:00.000Z'
 level: '1011'
@@ -21,6 +22,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 23 Security Specialist 1011
 ---
+# 2026 07 23 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the **Security Specialist · Level 1011 (Security & Compliance, 🔥 Warrior tier)** slice as a learner — window **2 of 3** of a 12-quest level, two `main_quest` files in dependency order: **Penetration Testing** (🔴 Hard) → **Compliance Standards** (🟡 Medium). Mode was **execute** (sealed engine evidence).

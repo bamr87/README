@@ -114,8 +114,8 @@ Creates only if setting doesn't exist:
 import com.azure.data.appconfiguration.models.ConfigurationSetting;
 
 ConfigurationSetting setting = configClient.addConfigurationSetting(
-    "app/database/connection", 
-    "Production", 
+    "app/database/connection",
+    "Production",
     "Server=prod.db.com;Database=myapp"
 );
 ```
@@ -126,8 +126,8 @@ Creates or overwrites:
 
 ```java
 ConfigurationSetting setting = configClient.setConfigurationSetting(
-    "app/cache/enabled", 
-    "Production", 
+    "app/cache/enabled",
+    "Production",
     "true"
 );
 ```
@@ -136,7 +136,7 @@ ConfigurationSetting setting = configClient.setConfigurationSetting(
 
 ```java
 ConfigurationSetting setting = configClient.getConfigurationSetting(
-    "app/database/connection", 
+    "app/database/connection",
     "Production"
 );
 System.out.println("Value: " + setting.getValue());
@@ -168,8 +168,8 @@ if (response.getStatusCode() == 304) {
 
 ```java
 ConfigurationSetting updated = configClient.setConfigurationSetting(
-    "app/cache/enabled", 
-    "Production", 
+    "app/cache/enabled",
+    "Production",
     "false"
 );
 ```
@@ -189,7 +189,7 @@ Response<ConfigurationSetting> response = configClient.setConfigurationSettingWi
 
 ```java
 ConfigurationSetting deleted = configClient.deleteConfigurationSetting(
-    "app/cache/enabled", 
+    "app/cache/enabled",
     "Production"
 );
 ```
@@ -322,8 +322,8 @@ System.out.println("Secret URI: " + ref.getSecretId());
 
 ```java
 ConfigurationSetting readOnly = configClient.setReadOnly(
-    "app/critical/setting", 
-    "Production", 
+    "app/critical/setting",
+    "Production",
     true
 );
 ```
@@ -332,8 +332,8 @@ ConfigurationSetting readOnly = configClient.setReadOnly(
 
 ```java
 ConfigurationSetting writable = configClient.setReadOnly(
-    "app/critical/setting", 
-    "Production", 
+    "app/critical/setting",
+    "Production",
     false
 );
 ```
@@ -374,7 +374,7 @@ System.out.println("Items: " + snapshot.getItemCount());
 ### List Settings in Snapshot
 
 ```java
-PagedIterable<ConfigurationSetting> settings = 
+PagedIterable<ConfigurationSetting> settings =
     configClient.listConfigurationSettingsForSnapshot("release-v1.0");
 
 for (ConfigurationSetting setting : settings) {

@@ -33,7 +33,7 @@ title: IT-Journey Link Health Analysis - Executive Summary
 1. **Navigation menu** (~20 links × 721 pages = ~14,000 instances)
 2. **Social share buttons** (~3 links/page × 721 pages = ~2,100 instances)
    - LinkedIn share button
-   - Reddit share button  
+   - Reddit share button
    - GitHub.dev edit link
 3. **Footer links** (~10 links × 721 pages = ~7,000 instances)
 4. **Sidebar navigation** (varies by page)
@@ -180,15 +180,15 @@ python scripts/link-checker.py --scope website --exclude-path "_site/preview/" -
 
 ## 💡 Key Takeaways
 
-✅ **The 152K count is NORMAL** - it's counting link instances, not unique URLs  
-✅ **Most errors are in preview builds**, not production  
-✅ **Real issues**: ~353 local dev URLs + ~1,500 missing pages  
-✅ **Quick wins**: Fix social buttons, clean up preview, ignore rate limits  
-✅ **Expected outcome**: 98% success rate after fixes  
+✅ **The 152K count is NORMAL** - it's counting link instances, not unique URLs
+✅ **Most errors are in preview builds**, not production
+✅ **Real issues**: ~353 local dev URLs + ~1,500 missing pages
+✅ **Quick wins**: Fix social buttons, clean up preview, ignore rate limits
+✅ **Expected outcome**: 98% success rate after fixes
 
 ---
 
-**Next Steps**: 
+**Next Steps**:
 1. Fix social share buttons to use `{{ site.url }}`
 2. Exclude or fix preview build
 3. Remove references to non-existent pages

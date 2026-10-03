@@ -336,7 +336,7 @@ Wrap-up or next steps.
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 ```
 
@@ -473,10 +473,10 @@ assets/
 # Complete example with context
 def check_links(urls):
     """Check a list of URLs and return broken links.
-    
+
     Args:
         urls: List of URLs to check
-        
+
     Returns:
         List of broken URL dictionaries
     """
@@ -725,6 +725,6 @@ Expected output:
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

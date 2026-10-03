@@ -99,7 +99,7 @@ Output each edit as a fenced block of the form:
 
 ````markdown
 #### Edit 1 — `.github/copilot-instructions.md`
-**Section:** Validated Frontmatter Constraints  
+**Section:** Validated Frontmatter Constraints
 **Rationale:** Lesson #1; conversation turn 4; root cause of PR #267.
 
 ```diff
@@ -179,5 +179,5 @@ Do **not** produce a retrospective when:
 
 ---
 
-**Invocation:** `/retrospective` (optionally with `conversation_source: pr:<N>` or `path:<file>`).  
+**Invocation:** `/retrospective` (optionally with `conversation_source: pr:<N>` or `path:<file>`).
 **Cadence:** Run after any AI session that produced ≥ 1 correction loop, after every multi-PR rework sweep, and on a standing weekly schedule for active repos.

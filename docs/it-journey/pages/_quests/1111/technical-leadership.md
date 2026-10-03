@@ -401,8 +401,8 @@ Delegate the outcome, not the steps. Set the guardrails ("must ship by Friday, m
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Mentorship Programs](/quests/1111/mentorship-programs/)  
-**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)  
+**💻 Software Developer**: Continue to [Mentorship Programs](/quests/1111/mentorship-programs/)
+**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)
 **🛡️ Security Specialist**: Advance to [Career Advancement](/quests/1111/career-advancement/)
 
 ## 📚 Resources

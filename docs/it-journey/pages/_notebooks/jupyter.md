@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - notebooks
@@ -10,6 +11,8 @@ permalink: /notes/jupyter/
 source_file: jupyter.md
 title: Jupyter
 ---
+# Jupyter
+
 here are some notes on Jupyter
 
 ```python

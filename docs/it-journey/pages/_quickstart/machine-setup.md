@@ -10,7 +10,7 @@ comments: true
 date: 2021-12-05 18:52:20+00:00
 description: Step-by-step guide to setting up Jekyll development environment across
   Windows, macOS, and Linux with automation scripts.
-difficulty: 🟡 Medium
+difficulty: "\U0001F7E1 Medium"
 draft: false
 estimatedTime: 60-90 minutes
 excerpt: Master the complete setup process for Jekyll development across all major
@@ -50,10 +50,10 @@ slug: machine-setup
 source_file: machine-setup.md
 tags:
 - development
-- Jekyll
+- jekyll
 - machine-setup
-- Ruby
-- Visual-Studio-Code
+- ruby
+- visual-studio-code
 - cross-platform
 - automation
 title: Install Homebrew (copy and paste this entire command)
@@ -72,8 +72,8 @@ Welcome to your journey in setting up a professional Jekyll development environm
 - ✅ Create your first Jekyll project
 - ✅ Establish automated backup and deployment workflows
 
-**Time Investment:** 60-90 minutes for complete setup  
-**Skill Level:** Beginner to Intermediate  
+**Time Investment:** 60-90 minutes for complete setup
+**Skill Level:** Beginner to Intermediate
 **End Result:** A fully functional Jekyll development environment ready for professional web development
 
 ## 📋 Table of Contents

@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-13T13:41:06.000Z'
 level: '0111'
@@ -16,6 +17,8 @@ theme: API Development
 tier: Adventurer
 title: 2026 07 13 Digital Artist 0111
 ---
+# 2026 07 13 Digital Artist 0111
+
 ## 🎯 Session Summary
 
 Walking the first window (5 of 10 quests) of the **Digital Artist ⚔️ Adventurer** level 0111 "API Development" slice, played end-to-end in the runner sandbox by the agentic execute engine and then reasoned about as a linked learner journey. The window is not one line but **two interleaved quest lines**: the *API Design Mastery / Gatekeeper's Road* thread (`api-fundamentals` → `rest-principles`) and the *Agentic Codex / gh-600* thread (`agentic-codex-01-agents-in-the-sdlc`, `agentic-sdlc-integration` → `agentic-plan-vs-action-boundaries`).

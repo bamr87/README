@@ -453,8 +453,8 @@ A runbook turns a panicked guess into a checklist. After the incident, a blamele
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Security Fundamentals](/quests/1011/security-fundamentals/)  
-**🏗️ System Engineer**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) to tighten SLOs  
+**💻 Software Developer**: Continue to [Security Fundamentals](/quests/1011/security-fundamentals/)
+**🏗️ System Engineer**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) to tighten SLOs
 **🛡️ Security Specialist**: Advance to [Security Fundamentals](/quests/1011/security-fundamentals/)
 
 ## 📚 Resources

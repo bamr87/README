@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 8
 source_file: vortex8.md
 title: Vortex8
 ---
+# Vortex8
+
 Some simple reverse engineering
 -------------------------------
 Disassemble this dynamically linked executable.

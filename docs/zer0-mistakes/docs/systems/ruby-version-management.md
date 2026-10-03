@@ -57,7 +57,7 @@ Result: Docker build failures in test-latest workflow
 
 ```dockerfile
 # Before: FROM ruby:slim AS base
-# After: 
+# After:
 FROM ruby:3.3-slim AS base
 ```
 
@@ -73,8 +73,8 @@ FROM ruby:3.3-slim AS base
 - name: Update Dependencies to Latest
   run: |
     docker run --rm -v "$PWD:/site" -w /site ruby:3.3-slim bash -c '
-      apt-get update -qq && apt-get install -y build-essential git && 
-      gem install bundler -v "~> 2.3" && 
+      apt-get update -qq && apt-get install -y build-essential git &&
+      gem install bundler -v "~> 2.3" &&
       bundle update --all
     '
 ```
@@ -125,7 +125,7 @@ bundle install --verbose
 ```dockerfile
 # Only after CI passes with new Ruby version
 FROM ruby:3.4-slim AS base
-# ... 
+# ...
 FROM ruby:3.4-slim AS production
 ```
 
@@ -244,6 +244,6 @@ gem '<gem-name>', '~> X.Y'
 
 ---
 
-**Last Updated**: December 2025  
-**Ruby Version**: 3.3  
+**Last Updated**: December 2025
+**Ruby Version**: 3.3
 **Status**: Active

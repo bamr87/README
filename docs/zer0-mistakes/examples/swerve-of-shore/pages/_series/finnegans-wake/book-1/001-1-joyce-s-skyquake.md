@@ -1,4 +1,5 @@
 ---
+
 categories:
 - FW - 01 - Book 1
 date: 2025-02-13
@@ -16,6 +17,8 @@ source_url: https://www.swerveofshore.com/post/001-1-joyce-s-skyquake
 sub-title: Finnegans Wake · Book 1
 title: 001 1 Joyce S Skyquake
 ---
+# 001 1 Joyce S Skyquake
+
 From the *Finnegans Wake · Book 1* thread on [Swerve of Shore](https://www.swerveofshore.com/post/001-1-joyce-s-skyquake), by Brandon Nicklaus.
 
 > We are using the 1999 Penguin Classics edition of Finnegans Wake, with an introduction by John Bishop.

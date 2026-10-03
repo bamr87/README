@@ -228,17 +228,17 @@ from azure.identity.aio import DefaultAzureCredential
 
 async def cosmos_operations():
     credential = DefaultAzureCredential()
-    
+
     async with CosmosClient(endpoint, credential=credential) as client:
         database = client.get_database_client("mydb")
         container = database.get_container_client("mycontainer")
-        
+
         # Create
         await container.create_item(body={"id": "1", "pk": "test"})
-        
+
         # Read
         item = await container.read_item(item="1", partition_key="test")
-        
+
         # Query
         async for item in container.query_items(
             query="SELECT * FROM c",

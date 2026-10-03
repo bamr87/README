@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 7
 source_file: semtex7.md
 title: Semtex7
 ---
+# Semtex7
+
 Multi-vitamin
 -------------
 Getting out of the restricted shell shouldn't take you more than

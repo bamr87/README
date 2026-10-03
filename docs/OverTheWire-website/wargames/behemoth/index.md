@@ -1,9 +1,12 @@
 ---
+
 gamename: behemoth
 layout: default
 source_file: index.md
 title: Index
 ---
+# Index
+
 Behemoth
 ========
 
@@ -24,9 +27,9 @@ What follows below is the original description of behemoth, copied from intruded
     Special Thanks:
 
     Description:
-    This wargame deals with a lot of regular vulnerabilities found commonly 'out 
+    This wargame deals with a lot of regular vulnerabilities found commonly 'out
     in the wild'. While the game makes no attempts at emulating a real environment
-    it will teach you how to exploit several of the most common coding mistakes 
+    it will teach you how to exploit several of the most common coding mistakes
     including buffer overflows, race conditions and privilege escalation.
 
 Behemoth's levels are called **behemoth0, behemoth1, ... etc.** and can be accessed on **behemoth.labs.overthewire.org** through SSH on port 2221.

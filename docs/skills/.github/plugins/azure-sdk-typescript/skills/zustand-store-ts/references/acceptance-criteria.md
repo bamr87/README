@@ -162,7 +162,7 @@ const increment = useMyStore((state) => state.increment);
 function MyComponent() {
   const count = useMyStore((state) => state.count);
   const increment = useMyStore((state) => state.increment);
-  
+
   return <button onClick={increment}>{count}</button>;
 }
 ```

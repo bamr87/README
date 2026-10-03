@@ -400,8 +400,8 @@ In production, limiters usually live in a shared store like **Redis** so that ev
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)  
-**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)  
+**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)
+**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

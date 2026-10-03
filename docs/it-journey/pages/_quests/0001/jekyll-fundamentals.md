@@ -539,8 +539,8 @@ docker-compose up -d
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
+**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)
+**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)
 **🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
 
 ## 📚 Resources

@@ -1,4 +1,5 @@
 ---
+
 excerpt: Overview of all Jekyll collections, their configuration, and content counts.
 icon: material/folder-multiple
 lastmod: 2026-04-04 00:00:00+00:00
@@ -9,4 +10,6 @@ source_file: collections.md
 source_icon: bi-collection
 title: Collections
 ---
+# Collections
+
 {% include components/collection-manager.html %}

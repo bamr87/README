@@ -1,4 +1,5 @@
 ---
+
 categories:
 - documentation
 date: 2026-03-28 00:00:00+00:00
@@ -84,6 +85,8 @@ tags:
 - support
 title: Faq
 ---
+# Faq
+
 Find answers to common questions about the **zer0-mistakes** Jekyll theme below. Can't find what you're looking for? [Open a discussion](https://github.com/bamr87/zer0-mistakes/discussions) or [file an issue](https://github.com/bamr87/zer0-mistakes/issues).
 
 ---

@@ -87,16 +87,16 @@ We can visualize this architecture in three distinct layers:
 ```mermaid
 graph TD
     User((👤 User))
-    
+
     subgraph "The Glass Interface"
         Interface[🖥️ Interface Layer\n(Gum, FZF, Dialog)]
         Orchestrator[⚙️ Orchestration Layer\n(Main Script)]
     end
-    
+
     subgraph "The Core"
         Logic[🔧 Core Logic Layer\n(AWS CLI, Docker, Git, Raw Scripts)]
     end
-    
+
     User -->|Interacts with| Interface
     Interface -->|Returns Selection/Input| Orchestrator
     Orchestrator -->|Executes| Logic
@@ -147,11 +147,11 @@ Let's look at a practical example using **Gum**. We'll build a simple frontend f
 deploy_app() {
     local env=$1
     local version=$2
-    
+
     echo "🚀 Deploying version $version to $env..."
     # Simulate work
     sleep 2
-    
+
     if [[ "$env" == "prod" ]]; then
         # Simulate a check
         return 0

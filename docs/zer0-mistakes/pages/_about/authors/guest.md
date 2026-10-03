@@ -1,4 +1,5 @@
 ---
+
 author_key: guest
 author_profile: false
 description: How to contribute articles and become a credited author on zer0-mistakes
@@ -11,6 +12,8 @@ sidebar: false
 source_file: guest.md
 title: Guest
 ---
+# Guest
+
 The **Guest Author** credits one-off and first-time contributions. Anyone can write for zer0-mistakes — this page is your starting point, from a single guest post all the way to your own author profile.
 
 ## Contribute an article

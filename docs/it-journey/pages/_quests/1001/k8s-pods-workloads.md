@@ -537,8 +537,8 @@ kubectl logs job/migrate
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Services and Networking](/quests/1001/k8s-services-networking/)  
-**🏗️ System Engineer**: Explore [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
+**💻 Software Developer**: Continue to [Services and Networking](/quests/1001/k8s-services-networking/)
+**🏗️ System Engineer**: Explore [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
 **🛡️ Security Specialist**: Revisit [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
 
 ## 📚 Resources

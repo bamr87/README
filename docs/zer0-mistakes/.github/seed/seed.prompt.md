@@ -164,11 +164,11 @@ image: jekyll/jekyll:latest # Official Jekyll Docker image
 
 # Command
 command: >
-  jekyll serve 
-  --watch 
-  --force_polling 
-  --config "_config.yml,_config_dev.yml" 
-  --host 0.0.0.0 
+  jekyll serve
+  --watch
+  --force_polling
+  --config "_config.yml,_config_dev.yml"
+  --host 0.0.0.0
   --port 4000
 
 # Volume Mounting

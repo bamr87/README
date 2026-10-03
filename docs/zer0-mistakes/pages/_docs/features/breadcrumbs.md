@@ -91,10 +91,10 @@ breadcrumbs: true
       </a>
       <meta itemprop="position" content="1">
     </li>
-    
+
     {% assign crumbs = page.url | remove: '/index.html' | split: '/' %}
     {% assign position = 2 %}
-    
+
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.last %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">

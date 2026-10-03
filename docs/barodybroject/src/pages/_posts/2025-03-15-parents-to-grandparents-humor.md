@@ -1,4 +1,5 @@
 ---
+
 author: Jane Doe
 description: Exploring the humorous shift from parent to grandparents.
 published_at: '2025-03-15'
@@ -6,6 +7,8 @@ slug: parents-to-grandparents-humor
 source_file: 2025-03-15-parents-to-grandparents-humor.md
 title: 2025 03 15 Parents To Grandparents Humor
 ---
+# 2025 03 15 Parents To Grandparents Humor
+
 **From Parents to Grandparents: Navigating the Transition with Humor and Grace**
 
 ---

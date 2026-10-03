@@ -219,7 +219,7 @@ System.out.println("Name: " + blocklist.getName());
 ### List Block Items
 
 ```java
-PagedIterable<TextBlocklistItem> items = 
+PagedIterable<TextBlocklistItem> items =
     blocklistClient.listTextBlocklistItems("my-blocklist");
 
 for (TextBlocklistItem item : items) {

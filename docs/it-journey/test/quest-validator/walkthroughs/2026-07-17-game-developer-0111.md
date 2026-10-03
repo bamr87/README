@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-17T00:00:00.000Z'
 level: '0111'
@@ -17,6 +18,8 @@ theme: API Development
 tier: Adventurer
 title: 2026 07 17 Game Developer 0111
 ---
+# 2026 07 17 Game Developer 0111
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 10 quests) of the **Game Developer → Level 0111 (API Development, Adventurer ⚔️)** slice as a learner, consuming the workflow-sealed execute-mode evidence and reading every quest source in plan order to reason about the linked journey. The headline verdict is **fail**: the engine averaged **66.2%** with **2 pass, 1 warn, 2 fail**, and the two failing quests are broken in ways a real beginner would hit within the first five minutes of the hands-on work.

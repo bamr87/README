@@ -1,4 +1,5 @@
 ---
+
 categories:
 - FW - 01 - Book 1
 date: 2025-02-14
@@ -16,6 +17,8 @@ source_url: https://www.swerveofshore.com/post/001-2-finnegan-erse-solid-man
 sub-title: Finnegans Wake · Book 1
 title: 001 2 Finnegan Erse Solid Man
 ---
+# 001 2 Finnegan Erse Solid Man
+
 From the *Finnegans Wake · Book 1* thread on [Swerve of Shore](https://www.swerveofshore.com/post/001-2-finnegan-erse-solid-man), by Brandon Nicklaus.
 
 > We are using the 1999 Penguin Classics edition of Finnegans Wake, with an introduction by John Bishop.

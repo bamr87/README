@@ -87,7 +87,7 @@ for (const message of messages) {
   try {
     const order = message.body;
     console.log(`Processing order: ${order.orderId}`);
-    
+
     // Process successfully - remove from queue
     await receiver.completeMessage(message);
   } catch (error) {
@@ -112,7 +112,7 @@ const subscription = receiver.subscribe({
   processError: async (args) => {
     console.error(`Error source: ${args.errorSource}`);
     console.error(`Error: ${args.error.message}`);
-    
+
     if (args.error.code === "MessageLockLost") {
       console.log("Message lock expired - will be redelivered");
     }

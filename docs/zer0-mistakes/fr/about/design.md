@@ -1,4 +1,5 @@
 ---
+
 categories:
 - about
 description: Le design system zer0-mistakes, en direct — tokens, spécimens de fondation,
@@ -21,6 +22,8 @@ translated_from_sha: 1603b6e4656c
 translation_of: pages/_about/design.md
 translation_source_url: /design/
 ---
+# Design
+
 Un contrat visuel unique, énoncé une seule fois. Les tokens `--zer0-*` du thème se compilent dans chaque page de ce site, se reflètent dans un [projet Claude Design](https://claude.ai/design/p/e75121c0-9210-42d1-ade3-2c8af9111cbe) pour le travail de conception, et sont publiés ici sous forme de CSS vivant et liable — maintenus synchronisés par une vérification de parité en CI.
 
 ## Utilisez les tokens partout

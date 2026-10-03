@@ -285,7 +285,7 @@ agent = project_client.agents.create_version(
     agent_name="enterprise-search-agent",
     definition=PromptAgentDefinition(
         model=os.environ["AZURE_AI_MODEL_DEPLOYMENT_NAME"],
-        instructions="""You are a helpful assistant. Always provide citations 
+        instructions="""You are a helpful assistant. Always provide citations
         using format: [message_idx:search_idx source].""",
         tools=[
             AzureAISearchAgentTool(

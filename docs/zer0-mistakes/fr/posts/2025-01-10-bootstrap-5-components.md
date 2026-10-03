@@ -1,4 +1,5 @@
 ---
+
 author: Zer0-Mistakes Team
 categories:
 - Technology
@@ -25,6 +26,8 @@ translated_from_sha: 24af55442ab5
 translation_of: pages/_posts/2025-01-10-bootstrap-5-components.md
 translation_source_url: /posts/2025/01/10/bootstrap-5-components/
 ---
+# 2025 01 10 Bootstrap 5 Components
+
 Bootstrap 5 est le compagnon idéal des thèmes Jekyll. Dans cet article, nous explorerons les composants Bootstrap les plus utiles pour créer des sites Jekyll modernes et responsives.
 
 ## L'avantage de Bootstrap 5

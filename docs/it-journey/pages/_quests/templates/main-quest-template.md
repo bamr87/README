@@ -8,7 +8,7 @@ comments: true
 date: '2025-11-29T22:51:57.000Z'
 description: 'The master scaffold for authoring IT-Journey main quests: copy this
   template, fill the frontmatter and gamified sections, and ship a complete adventure.'
-difficulty: 🟢 Easy
+difficulty: "\U0001F7E2 Easy"
 draft: true
 estimated_time: 30-45 minutes
 excerpt: One-sentence summary of the quest's core learning objective
@@ -23,8 +23,8 @@ keywords:
 lastmod: '2025-12-01T05:49:32.000Z'
 learning_paths:
   character_classes:
-  - 💻 Software Developer
-  - 🏗️ System Engineer
+  - "\U0001F4BB Software Developer"
+  - "\U0001F3D7\uFE0F System Engineer"
   primary_paths:
   - Software Development
   skill_trees:
@@ -69,10 +69,10 @@ quest_series: '[series-name]'
 quest_type: main_quest
 rewards:
   badges:
-  - 🏆 [Achievement Badge Name]
+  - "\U0001F3C6 [Achievement Badge Name]"
   progression_points: 50
   skills_unlocked:
-  - 🛠️ [Tool or Technology Mastery]
+  - "\U0001F6E0\uFE0F [Tool or Technology Mastery]"
   unlocks_features:
   - '[Feature or capability unlocked]'
 skill_focus:
@@ -80,7 +80,7 @@ skill_focus:
 source_file: main-quest-template.md
 sub_title: 'Level XXXX (XX) Quest: Main Quest - [Technology]'
 tags:
-- XXXX
+- xxxx
 - primary-technology
 - main_quest
 - skill-focus
@@ -121,14 +121,14 @@ graph TB
         Next1[🔜 Unlocked Quest 1]
         Next2[🔜 Unlocked Quest 2]
     end
-    
+
     PreReq1 --> Current
     PreReq2 --> Current
     Current --> Side1
     Current --> Side2
     Current --> Next1
     Current --> Next2
-    
+
     style Current fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
     style PreReq1 fill:#2196F3,stroke:#1565C0,stroke-width:2px
     style PreReq2 fill:#2196F3,stroke:#1565C0,stroke-width:2px
@@ -450,9 +450,9 @@ docker run -it [image-name] [command]
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Suggested Quest]  
-**🏗️ System Engineer**: Explore [Suggested Quest]  
-**🛡️ Security Specialist**: Check out [Suggested Quest]  
+**💻 Software Developer**: Continue to [Suggested Quest]
+**🏗️ System Engineer**: Explore [Suggested Quest]
+**🛡️ Security Specialist**: Check out [Suggested Quest]
 **📊 Data Scientist**: Advance to [Suggested Quest]
 
 ## 📚 Resource Library
@@ -516,6 +516,6 @@ Before marking this quest as complete, ensure you've:
 
 *Congratulations, brave adventurer! You've completed the **[Quest Name]** quest and gained valuable [technology/skill] mastery. Your journey through the IT realm continues - choose your next adventure wisely!*
 
-**Quest Status**: 🔮 Placeholder (Content to be developed)  
-**Last Updated**: 2025-11-29  
+**Quest Status**: 🔮 Placeholder (Content to be developed)
+**Last Updated**: 2025-11-29
 **Version**: 1.0.0

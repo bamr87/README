@@ -306,7 +306,7 @@ var message = await subReceiver.ReceiveMessageAsync();
 ### 11.1 ✅ CORRECT: Create Queue
 ```csharp
 var adminClient = new ServiceBusAdministrationClient(
-    fullyQualifiedNamespace, 
+    fullyQualifiedNamespace,
     new DefaultAzureCredential());
 
 var options = new CreateQueueOptions("my-queue")
@@ -412,13 +412,13 @@ public class MessageService
 {
     private readonly ServiceBusClient _client;
     private readonly ServiceBusSender _sender;
-    
+
     public MessageService(string fullyQualifiedNamespace)
     {
         _client = new ServiceBusClient(fullyQualifiedNamespace, new DefaultAzureCredential());
         _sender = _client.CreateSender("my-queue");
     }
-    
+
     public async Task SendAsync(string message)
     {
         await _sender.SendMessageAsync(new ServiceBusMessage(message));

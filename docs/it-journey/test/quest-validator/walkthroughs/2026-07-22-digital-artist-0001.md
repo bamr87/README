@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-22T13:37:17.000Z'
 level: '0001'
@@ -20,6 +21,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 22 Digital Artist 0001
 ---
+# 2026 07 22 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked the **Digital Artist (🎨 UI/UX)** path through **Level 0001 — Web Fundamentals (Apprentice 🌱)**, the first data-rotated window (1 of 6) of a 26-quest level: five `main_quest`s in the planner's order — **GitHub Pages Basics → Jekyll Fundamentals → YAML Configuration → Git Workflow Mastery → Liquid Templating**. The sealed execute engine produced real, in-sandbox verdicts for only **two** of the five: **Git Workflow Mastery passed at 89** (15/10 runnable snippets executed, every one green) and **GitHub Pages Basics warned at 74** (9 snippets executed, all green, but a reproducible `master`-vs-`main` branch-naming gap). The other **three — Jekyll Fundamentals, YAML Configuration, Liquid Templating — did not complete in the engine**: each child validator exhausted its 40-turn budget (`terminal_reason: max_turns`) mid-walkthrough, so they carry **no machine verdict** and I could only reason about them statically from their source.

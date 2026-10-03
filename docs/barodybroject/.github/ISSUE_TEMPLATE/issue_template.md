@@ -1,10 +1,13 @@
 ---
+
 about: Issue Template for the repository
 labels: ai-assist
 name: Issue Template
 source_file: issue_template.md
 title: Issue Template
 ---
+# Issue Template
+
 <!-- template: issue_detail_template.md -->
 
 ## Describe the issue

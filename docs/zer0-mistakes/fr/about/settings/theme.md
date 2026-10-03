@@ -1,4 +1,5 @@
 ---
+
 excerpt: Prévisualisez les skins du thème, générez des palettes, personnalisez les
   variables CSS et exportez la configuration YAML.
 icon: material/palette
@@ -15,6 +16,8 @@ translated_from_sha: 227959a1fb26
 translation_of: pages/_about/settings/theme.md
 translation_source_url: /about/settings/theme/
 ---
+# Theme
+
 <!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->
 <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
 

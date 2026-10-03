@@ -191,7 +191,7 @@ KeyVaultKey restoredKey = await client.RestoreKeyBackupAsync(backupData);
 // From KeyClient
 KeyVaultKey key = await client.GetKeyAsync("my-rsa-key");
 CryptographyClient cryptoClient = client.GetCryptographyClient(
-    key.Name, 
+    key.Name,
     key.Properties.Version);
 
 // Or create directly with key ID
@@ -207,13 +207,13 @@ byte[] plaintext = Encoding.UTF8.GetBytes("Secret message to encrypt");
 
 // Encrypt
 EncryptResult encryptResult = await cryptoClient.EncryptAsync(
-    EncryptionAlgorithm.RsaOaep256, 
+    EncryptionAlgorithm.RsaOaep256,
     plaintext);
 Console.WriteLine($"Encrypted: {Convert.ToBase64String(encryptResult.Ciphertext)}");
 
 // Decrypt
 DecryptResult decryptResult = await cryptoClient.DecryptAsync(
-    EncryptionAlgorithm.RsaOaep256, 
+    EncryptionAlgorithm.RsaOaep256,
     encryptResult.Ciphertext);
 string decrypted = Encoding.UTF8.GetString(decryptResult.Plaintext);
 Console.WriteLine($"Decrypted: {decrypted}");
@@ -228,12 +228,12 @@ RandomNumberGenerator.Fill(keyToWrap);
 
 // Wrap key
 WrapResult wrapResult = await cryptoClient.WrapKeyAsync(
-    KeyWrapAlgorithm.RsaOaep256, 
+    KeyWrapAlgorithm.RsaOaep256,
     keyToWrap);
 
 // Unwrap key
 UnwrapResult unwrapResult = await cryptoClient.UnwrapKeyAsync(
-    KeyWrapAlgorithm.RsaOaep256, 
+    KeyWrapAlgorithm.RsaOaep256,
     wrapResult.EncryptedKey);
 ```
 
@@ -245,13 +245,13 @@ byte[] data = Encoding.UTF8.GetBytes("Data to sign");
 
 // Sign data (computes hash internally)
 SignResult signResult = await cryptoClient.SignDataAsync(
-    SignatureAlgorithm.RS256, 
+    SignatureAlgorithm.RS256,
     data);
 
 // Verify signature
 VerifyResult verifyResult = await cryptoClient.VerifyDataAsync(
-    SignatureAlgorithm.RS256, 
-    data, 
+    SignatureAlgorithm.RS256,
+    data,
     signResult.Signature);
 Console.WriteLine($"Signature valid: {verifyResult.IsValid}");
 
@@ -260,7 +260,7 @@ using var sha256 = SHA256.Create();
 byte[] hash = sha256.ComputeHash(data);
 
 SignResult signHashResult = await cryptoClient.SignAsync(
-    SignatureAlgorithm.RS256, 
+    SignatureAlgorithm.RS256,
     hash);
 ```
 
@@ -277,7 +277,7 @@ CryptographyClient cryptoClient = await resolver.ResolveAsync(
 
 // Use for encryption
 EncryptResult result = await cryptoClient.EncryptAsync(
-    EncryptionAlgorithm.RsaOaep256, 
+    EncryptionAlgorithm.RsaOaep256,
     plaintext);
 ```
 

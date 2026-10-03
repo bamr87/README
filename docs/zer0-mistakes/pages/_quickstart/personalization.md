@@ -396,7 +396,7 @@ Set up privacy-friendly analytics to understand your audience.
           <input type="text" class="form-control" id="cfg-ga-id" placeholder="G-XXXXXXXXXX">
           <div class="form-text">Google Analytics 4 measurement ID</div>
         </div>
-        
+
         <!-- PostHog Analytics -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-speedometer"></i> PostHog Analytics (Privacy-Friendly)</h6>
@@ -699,13 +699,13 @@ document.addEventListener('DOMContentLoaded', function() { // Configuration stat
     const baseurl = getValue('cfg-baseurl');
     const locale = getValue('cfg-locale', 'en-US');
     const titleSeparator = getValue('cfg-title-separator', '|');
-    
+
     const authorName = getValue('cfg-author-name', 'Site Owner');
     const email = getValue('cfg-email');
     const bio = getValue('cfg-bio');
     const location = getValue('cfg-location');
     const avatar = getValue('cfg-avatar');
-    
+
     const github = getValue('cfg-github');
     const twitter = getValue('cfg-twitter');
     const linkedin = getValue('cfg-linkedin');
@@ -714,7 +714,7 @@ document.addEventListener('DOMContentLoaded', function() { // Configuration stat
     const mastodon = getValue('cfg-mastodon');
     const bluesky = getValue('cfg-bluesky');
     const discord = getValue('cfg-discord');
-    
+
     const themeSkin = getValue('cfg-theme-skin', 'air');
     const primaryColor = getValue('cfg-primary-color', '#007bff');
     const logo = getValue('cfg-logo');
@@ -722,7 +722,7 @@ document.addEventListener('DOMContentLoaded', function() { // Configuration stat
     const teaser = getValue('cfg-teaser');
     const wpm = getValue('cfg-wpm', '200');
     const breadcrumbs = getValue('cfg-breadcrumbs', true);
-    
+
     const gaId = getValue('cfg-ga-id');
     const posthogEnabled = getValue('cfg-posthog-enabled', false);
     const posthogKey = getValue('cfg-posthog-key');
@@ -732,7 +732,7 @@ document.addEventListener('DOMContentLoaded', function() { // Configuration stat
     const posthogSession = getValue('cfg-posthog-session', false);
     const googleVerify = getValue('cfg-google-verify');
     const bingVerify = getValue('cfg-bing-verify');
-    
+
     const giscusEnabled = getValue('cfg-giscus-enabled', false);
     const giscusRepoId = getValue('cfg-giscus-repo-id');
     const giscusCategoryId = getValue('cfg-giscus-category-id');
@@ -759,7 +759,7 @@ remote_theme: "bamr87/zer0-mistakes"
 title: "${escapeYaml(title)}"`;
 
     if (subtitle) yaml += `\nsubtitle: "${escapeYaml(subtitle)}"`;
-    
+
     yaml += `
 title_separator: "${titleSeparator}" description: >- ${escapeYaml(description)} locale: "${locale}"`;
 
@@ -821,7 +821,7 @@ words_per_minute: ${wpm}`;
 # Analytics
 # -------------------------------------------------------------------------`;
       if (gaId) yaml += `\ngoogle_analytics: "${escapeYaml(gaId)}"`;
-      
+
       if (posthogEnabled && posthogKey) {
         yaml += `
 
@@ -947,7 +947,7 @@ plugins:
         if (el.id && el.id.startsWith('cfg-')) {
           if (el.type === 'checkbox') {
             // Reset checkboxes based on their data-default or standard defaults
-            el.checked = ['cfg-breadcrumbs', 'cfg-posthog-dnt', 'cfg-posthog-autocapture', 
+            el.checked = ['cfg-breadcrumbs', 'cfg-posthog-dnt', 'cfg-posthog-autocapture',
                          'cfg-mermaid', 'cfg-mathjax', 'cfg-search'].includes(el.id);
           } else if (el.tagName === 'SELECT') {
             el.selectedIndex = 0;
@@ -969,9 +969,9 @@ plugins:
       document.getElementById('cfg-cr-year').value = new Date().getFullYear();
       document.getElementById('cfg-markdown').value = 'kramdown';
       document.getElementById('cfg-cr-license').value = 'MIT';
-      
+
       if (charCount) charCount.textContent = '0';
-      
+
       localStorage.removeItem('zer0-personalization-config');
       generateConfig();
     }
@@ -980,13 +980,13 @@ plugins:
 // Copy config to clipboard function copyConfig() {
     const config = document.getElementById('generated-config').textContent;
     const btn = document.getElementById('copy-config-btn');
-    
+
     navigator.clipboard.writeText(config).then(() => {
       const originalHTML = btn.innerHTML;
       btn.innerHTML = '<i class="bi bi-check"></i> Copied!';
       btn.classList.remove('btn-success');
       btn.classList.add('btn-primary');
-      
+
       setTimeout(() => {
         btn.innerHTML = originalHTML;
         btn.classList.remove('btn-primary');
@@ -1006,7 +1006,7 @@ plugins:
   });
 
 // Button event listeners const resetBtn = document.getElementById('reset-all-btn'); if (resetBtn) resetBtn.addEventListener('click', resetAll);
-  
+
 const copyBtn = document.getElementById('copy-config-btn'); if (copyBtn) copyBtn.addEventListener('click', copyConfig);
 
 // Initialize loadConfig(); });
@@ -1038,7 +1038,7 @@ const copyBtn = document.getElementById('copy-config-btn'); if (copyBtn) copyBtn
 /* Responsive adjustments */ @media (max-width: 768px) { .card-body {
     padding: 1rem;
   }
-  
+
   #generated-config {
     font-size: 0.75rem;
 } }

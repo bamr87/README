@@ -460,9 +460,9 @@ Finally, define a **goal**: the one action that means a visit succeeded - a news
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
-**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)  
-**📊 Data Specialist**: Master your provider's reporting and goals  
+**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)
+**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)
+**📊 Data Specialist**: Master your provider's reporting and goals
 
 ## 📚 Resources
 

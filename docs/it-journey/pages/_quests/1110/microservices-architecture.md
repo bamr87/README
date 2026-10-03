@@ -418,8 +418,8 @@ Pair circuit breakers with **timeouts** (never wait forever) and **bounded retri
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Gateway Patterns](/quests/1110/api-gateway-patterns/)  
-**🏗️ System Engineer**: Explore [Scaling Strategies](/quests/1110/scaling-strategies/)  
+**💻 Software Developer**: Continue to [API Gateway Patterns](/quests/1110/api-gateway-patterns/)
+**🏗️ System Engineer**: Explore [Scaling Strategies](/quests/1110/scaling-strategies/)
 **🛡️ Security Specialist**: Note how a gateway centralizes auth across services
 
 ## 📚 Resources

@@ -8,7 +8,7 @@ title: 'Acceptance Criteria: azure-search-documents-ts'
 
 This document defines the acceptance criteria for code generated using the `@azure/search-documents` SDK for TypeScript/JavaScript.
 
-**Package:** `@azure/search-documents`  
+**Package:** `@azure/search-documents`
 **Repository:** https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/search/search-documents
 
 ---

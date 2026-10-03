@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-23T00:00:00.000Z'
 level: '0001'
@@ -20,6 +21,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 23 Game Developer 0001
 ---
+# 2026 07 23 Game Developer 0001
+
 ## 🎯 Session Summary
 
 Playing the **Game Developer** path at **Level 0001 · Web Fundamentals (🌱 Apprentice)**, I walked a **5-quest window** (window 2 of 6; the full level holds 26 quests) as a beginner would: enable GitHub Pages → understand the platform stack → build a personal site → summon a self-operating Jekyll site → optimize it for SEO. The sealed execute-engine evidence scores the slice at **avg 54.0% (0 pass · 3 warn · 2 fail)**, and my linked-journey read agrees: this window does **not** hold together as a clean learning path.

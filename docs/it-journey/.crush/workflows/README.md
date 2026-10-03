@@ -242,7 +242,7 @@ state:
     - after: "generate_article_frontmatter"
     - after: "generate_quest_frontmatter"
     - after: "improvement_loop"
-  
+
 # Error Handling
 error_handling:
   retry_on_failure: true
@@ -401,7 +401,7 @@ run_workflow_menu() {
     "🔄 Resume Workflow" \
     "📊 View Executions" \
     "🔙 Back")
-  
+
   case "$workflow_choice" in
     "📝 Article + Quest Creation")
       .crush/workflows/engine.sh run --interactive templates/article-quest-creation.yml
@@ -597,8 +597,8 @@ To add new workflows:
 
 ---
 
-**Version**: 1.0.0  
-**Last Modified**: 2025-11-20  
+**Version**: 1.0.0
+**Last Modified**: 2025-11-20
 **Maintained by**: IT-Journey Automation Guild
 
 **Questions?** [Open an issue](https://github.com/bamr87/it-journey/issues)

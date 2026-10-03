@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - Posts
@@ -38,6 +39,8 @@ tags:
 title: 2023 03 17 Penrose Triangle Impossible Geometry
 type: Article
 ---
+# 2023 03 17 Penrose Triangle Impossible Geometry
+
 Symbol of impossibility [Wiki](https://en.wikipedia.org/wiki/Penrose_triangle)
 
 Inkscape

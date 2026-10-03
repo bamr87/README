@@ -145,7 +145,7 @@ sequenceDiagram
     participant User
     participant Browser
     participant Server
-    
+
     User->>Browser: Click button
     Browser->>Server: API request
     Server-->>Browser: JSON response
@@ -176,13 +176,13 @@ classDiagram
         +build()
         +serve()
     }
-    
+
     class Page {
         +String content
         +Hash frontMatter
         +render()
     }
-    
+
     JekyllSite --> Page : contains
 ```
 ````

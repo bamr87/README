@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: 2026-07-12 00:00:00+00:00
 level: '1000'
@@ -24,6 +25,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 12 System Engineer 1000
 ---
+# 2026 07 12 System Engineer 1000
+
 ## 🎯 Session Summary
 
 I walked the **System Engineer** path through **Level 1000 (Cloud Computing, Warrior tier 🔥)** — the second and final window of the level (4 of the level's 9 quests; the planner already swept window 1). This window is the level's **cloud provisioning arc plus one detour**: `AWS Essentials` → `Infrastructure as Code` form a tight linear pair, `Azure Ascension` is a side-branch alternate-cloud deploy, and `The War Machine` is Chapter III of an unrelated automation campaign that happens to live at this level.

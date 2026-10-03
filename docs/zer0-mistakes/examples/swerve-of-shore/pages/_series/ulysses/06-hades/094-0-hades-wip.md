@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 06 - Hades
 date: 2025-02-10
@@ -19,6 +20,8 @@ sub-title: Episode 6 · Hades
 title: 094 0 Hades Wip
 wip: true
 ---
+# 094 0 Hades Wip
+
 An in-progress entry in the *Episode 6 · Hades* thread on [Swerve of Shore](https://www.swerveofshore.com/post/094-0-hades-wip), by Brandon Nicklaus.
 
 > Jack Power: Mr. Power is first seen in “Grace” in Dubliners. It is let known that he doesn’t “relish the use of his Christian name.” Mr. Power ran into drunken Tom Kernan after he fell down the stairs and got him home. He initiates the plot to help Kernan find god and get sober. Mr. Power is a younger man, employed in the Royal Irish Constabulary office in Dublin castle. He was rising in the social class as Kernan was falling.

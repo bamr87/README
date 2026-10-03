@@ -395,12 +395,12 @@ Supports filtering by level (pass level parameter to filter to specific level).
   {% raw %}{%- comment -%}{% endraw %} Quest Filters {% raw %}{%- endcomment -%}{% endraw %}
   {% raw %}{% include quest-filters.html level=page.level %}{% endraw %}
 
-  {% raw %}{%- comment -%}{% endraw %} 
+  {% raw %}{%- comment -%}{% endraw %}
   Determine which quests to display:
   - If page.level is set, filter to that level only
   - Otherwise show all quests
   {% raw %}{%- endcomment -%}{% endraw %}
-  
+
   {% raw %}{% if page.level %}{% endraw %}
     {% raw %}{% assign filtered_quests = site.quests | where: "level", page.level %}{% endraw %}
   {% raw %}{% else %}{% endraw %}
@@ -412,7 +412,7 @@ Supports filtering by level (pass level parameter to filter to specific level).
   {% raw %}{% assign level_0001 = filtered_quests | where: "level", "0001" %}{% endraw %}
   {% raw %}{% assign level_0010 = filtered_quests | where: "level", "0010" %}{% endraw %}
   {% raw %}{% assign level_0011 = filtered_quests | where: "level", "0011" %}{% endraw %}
-  
+
   {% raw %}{%- comment -%}{% endraw %} Continue for all 16 levels... {% raw %}{%- endcomment -%}{% endraw %}
 
   {% raw %}{%- comment -%}{% endraw %} Apprentice Tier (0000-0011) {% raw %}{%- endcomment -%}{% endraw %}
@@ -500,16 +500,16 @@ Create `_includes/quest-card.html`:
 
 {% raw %}{% comment %}{% endraw %}
   Quest Card Include
-  
+
   Usage: {% raw %}{% include quest-card.html quest=quest %}{% endraw %}
-  
+
   Required frontmatter in quest pages:
   - title, difficulty, estimated_time, quest_type, level, description
 {% raw %}{% endcomment %}{% endraw %}
 
 {% raw %}{% assign quest = include.quest %}{% endraw %}
 
-<article class="quest-card" 
+<article class="quest-card"
          data-difficulty="{% raw %}{{ quest.difficulty | default: 'Unknown' }}{% endraw %}"
          data-quest-type="{% raw %}{{ quest.quest_type | default: 'main_quest' }}{% endraw %}"
          data-level="{% raw %}{{ quest.level | default: '0000' }}{% endraw %}"
@@ -517,13 +517,13 @@ Create `_includes/quest-card.html`:
          data-skill-focus="{% raw %}{{ quest.skill_focus | default: '' }}{% endraw %}"
          data-title="{% raw %}{{ quest.title | escape }}{% endraw %}"
          data-description="{% raw %}{{ quest.description | default: '' | strip_html | escape }}{% endraw %}">
-  
+
   <div class="quest-card-header">
     {% raw %}{% if quest.difficulty %}{% endraw %}
       {% raw %}{% assign diff = quest.difficulty | split: ' ' | first %}{% endraw %}
       <span class="quest-difficulty" title="{% raw %}{{ quest.difficulty }}{% endraw %}">{% raw %}{{ diff }}{% endraw %}</span>
     {% raw %}{% endif %}{% endraw %}
-    
+
     {% raw %}{% if quest.quest_type %}{% endraw %}
       {% raw %}{% case quest.quest_type %}{% endraw %}
         {% raw %}{% when 'main_quest' %}{% endraw %}
@@ -537,15 +537,15 @@ Create `_includes/quest-card.html`:
       {% raw %}{% endcase %}{% endraw %}
     {% raw %}{% endif %}{% endraw %}
   </div>
-  
+
   <h3 class="quest-card-title">
     <a href="{% raw %}{{ quest.url | relative_url }}{% endraw %}">{% raw %}{{ quest.title | default: 'Untitled Quest' }}{% endraw %}</a>
   </h3>
-  
+
   {% raw %}{% if quest.description %}{% endraw %}
     <p class="quest-card-description">{% raw %}{{ quest.description | truncate: 120 }}{% endraw %}</p>
   {% raw %}{% endif %}{% endraw %}
-  
+
   <div class="quest-card-meta">
     {% raw %}{% if quest.estimated_time %}{% endraw %}
       <span class="quest-time" title="Estimated Time">🕐 {% raw %}{{ quest.estimated_time }}{% endraw %}</span>
@@ -557,7 +557,7 @@ Create `_includes/quest-card.html`:
       <span class="quest-tech" title="Primary Technology">🛠️ {% raw %}{{ quest.primary_technology }}{% endraw %}</span>
     {% raw %}{% endif %}{% endraw %}
   </div>
-  
+
   <a href="{% raw %}{{ quest.url | relative_url }}{% endraw %}" class="quest-card-link">Begin Quest →</a>
 </article>
 
@@ -568,7 +568,7 @@ Create `_includes/quest-card.html`:
 Data attributes (`data-*`) are the bridge between server-rendered HTML and client-side JavaScript:
 
 ```html
-<article class="quest-card" 
+<article class="quest-card"
          data-difficulty="🔴 Hard"
          data-quest-type="side_quest"
          data-level="0101"
@@ -626,7 +626,7 @@ Provides interactive filtering UI for quest collections.
 {% raw %}{%- comment -%}{% endraw %} Get unique difficulties {% raw %}{%- endcomment -%}{% endraw %}
 {% raw %}{% assign difficulties = all_quests | map: "difficulty" | compact | uniq | sort %}{% endraw %}
 
-{% raw %}{%- comment -%}{% endraw %} 
+{% raw %}{%- comment -%}{% endraw %}
 IMPORTANT: Level sorting edge case fix!
 Some frontmatter has level: 1100 (Integer), others level: "1100" (String).
 Liquid's sort filter fails on mixed types. We coerce all to strings.
@@ -645,7 +645,7 @@ Liquid's sort filter fails on mixed types. We coerce all to strings.
       Reset All
     </button>
   </div>
-  
+
   <div class="filters-grid">
     {% raw %}{%- comment -%}{% endraw %} Quest Type Filter {% raw %}{%- endcomment -%}{% endraw %}
     <div class="filter-group">
@@ -701,7 +701,7 @@ function applyFilters() {
     if (show && technology && !cardTechnology.includes(technology)) show = false;
     if (show && skillFocus && !cardSkillFocus.includes(skillFocus)) show = false;
     if (show && searchTerm) {
-      const matchesSearch = cardTitle.includes(searchTerm) || 
+      const matchesSearch = cardTitle.includes(searchTerm) ||
                            cardDescription.includes(searchTerm) ||
                            cardTechnology.includes(searchTerm);
       if (!matchesSearch) show = false;
@@ -717,9 +717,9 @@ function applyFilters() {
 
   // Update tier visibility
   updateTierVisibility();
-  
+
   // Update results count
-  document.getElementById('results-count').textContent = 
+  document.getElementById('results-count').textContent =
     `Showing ${visibleCount} of ${questCards.length} quests`;
 }
 
@@ -818,7 +818,7 @@ LEVEL_DIR_RE = re.compile(r'^[01]{4}$')
 def process_readme(path: Path, level: str):
     """Update a README.md with required frontmatter fields."""
     text = path.read_text(encoding='utf-8')
-    
+
     # Check for frontmatter
     if not text.startswith('---'):
         print(f"Skipping {path}: no frontmatter detected")
@@ -840,7 +840,7 @@ def process_readme(path: Path, level: str):
     # Append missing keys
     new_lines = lines.copy()
     appended = False
-    
+
     if not has_layout:
         new_lines.append('layout: quest-collection')
         appended = True
@@ -1007,22 +1007,22 @@ graph TB
         C[Level 0001: GitHub Pages] -.-> B
         D[Level 0010: Terminal Enhancement] -.-> B
     end
-    
+
     subgraph Current
         B[Level 0101: Jekyll Quest Tracking]
     end
-    
+
     subgraph Unlocks
         B --> E[Level 1010: Automation & Testing]
         B --> F[Level 1011: Feature Development]
         B --> G[Level 1010: Hyperlink Guardian]
     end
-    
+
     subgraph Parallel
         B ~~~ H[Level 0101: Docker Mastery]
         B ~~~ I[Level 0101: LazyTeX CV]
     end
-    
+
     style B fill:#6f42c1,color:#fff
     style A fill:#28a745,color:#fff
     style E fill:#dc3545,color:#fff
@@ -1039,30 +1039,30 @@ flowchart LR
         A[Quest Markdown Files] --> B[YAML Frontmatter]
         B --> C[site.quests Collection]
     end
-    
+
     subgraph Template Layer
         C --> D[quest-collection.html Layout]
         D --> E[quest-stats.html Include]
         D --> F[quest-filters.html Include]
         D --> G[quest-card.html Include]
     end
-    
+
     subgraph Output Layer
         E --> H[Statistics Display]
         F --> I[Filter Dropdowns]
         G --> J[Quest Cards with Data Attrs]
     end
-    
+
     subgraph Client Layer
         I --> K[JavaScript applyFilters]
         J --> K
         K --> L[Filtered Quest Display]
     end
-    
+
     subgraph Automation
         M[Python Script] --> B
     end
-    
+
     style A fill:#0d6efd,color:#fff
     style D fill:#6f42c1,color:#fff
     style K fill:#28a745,color:#fff

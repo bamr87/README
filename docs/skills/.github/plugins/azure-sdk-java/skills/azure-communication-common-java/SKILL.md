@@ -107,7 +107,7 @@ List<String> scopes = Arrays.asList(
     "https://auth.msft.communication.azure.com/TeamsExtension.ManageCalls"
 );
 
-EntraCommunicationTokenCredentialOptions entraOptions = 
+EntraCommunicationTokenCredentialOptions entraOptions =
     new EntraCommunicationTokenCredentialOptions(entraCredential, resourceEndpoint)
         .setScopes(scopes);
 
@@ -194,16 +194,16 @@ public void processIdentifier(CommunicationIdentifier identifier) {
     if (identifier instanceof CommunicationUserIdentifier) {
         CommunicationUserIdentifier user = (CommunicationUserIdentifier) identifier;
         System.out.println("ACS User: " + user.getId());
-        
+
     } else if (identifier instanceof PhoneNumberIdentifier) {
         PhoneNumberIdentifier phone = (PhoneNumberIdentifier) identifier;
         System.out.println("Phone: " + phone.getPhoneNumber());
-        
+
     } else if (identifier instanceof MicrosoftTeamsUserIdentifier) {
         MicrosoftTeamsUserIdentifier teams = (MicrosoftTeamsUserIdentifier) identifier;
         System.out.println("Teams User: " + teams.getUserId());
         System.out.println("Anonymous: " + teams.isAnonymous());
-        
+
     } else if (identifier instanceof UnknownIdentifier) {
         UnknownIdentifier unknown = (UnknownIdentifier) identifier;
         System.out.println("Unknown: " + unknown.getId());
@@ -279,14 +279,14 @@ AZURE_COMMUNICATION_USER_TOKEN=<user-access-token>
 ```java
 // Pattern: Create credential for Chat/Calling client
 public ChatClient createChatClient(String token, String endpoint) {
-    CommunicationTokenRefreshOptions refreshOptions = 
+    CommunicationTokenRefreshOptions refreshOptions =
         new CommunicationTokenRefreshOptions(this::refreshToken)
             .setRefreshProactively(true)
             .setInitialToken(token);
-    
-    CommunicationTokenCredential credential = 
+
+    CommunicationTokenCredential credential =
         new CommunicationTokenCredential(refreshOptions);
-    
+
     return new ChatClientBuilder()
         .endpoint(endpoint)
         .credential(credential)

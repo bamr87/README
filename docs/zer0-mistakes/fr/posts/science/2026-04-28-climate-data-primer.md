@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -25,6 +26,8 @@ translated_from_sha: 90f6bb8478b6
 translation_of: pages/_posts/science/2026-04-28-climate-data-primer.md
 translation_source_url: /posts/2026/04/28/climate-data-primer/
 ---
+# 2026 04 28 Climate Data Primer
+
 Les données climatiques sont faciles à mal interpréter, car les chiffres décrivent souvent des tendances à long terme, et non la météo de la veille. Une seule tempête, canicule ou vague de froid peut être spectaculaire, mais les tendances climatiques émergent de nombreuses mesures réalisées sur de nombreuses années.
 
 Ce guide d'introduction présente les concepts qui rendent les jeux de données climatiques plus faciles à lire.

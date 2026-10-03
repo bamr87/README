@@ -268,9 +268,9 @@ print(f"Created vector store, ID: {vector_store.id}")
 with project_client:
     agent = project_client.agents.create_agent(...)
     thread = project_client.agents.threads.create()
-    
+
     # ... use agent
-    
+
     # Clean up
     project_client.agents.delete_agent(agent.id)
 

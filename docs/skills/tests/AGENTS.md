@@ -377,7 +377,7 @@ response = client.analyze_image(request)  # <-- The actual error
 Code: from azure.ai.contentsafety.models import AnalyzeTextOptions
       request = AnalyzeTextOptions(text="Hello")
       response = client.analyze_text(request)  # CORRECT usage!
-      
+
 Result: ❌ FALSE POSITIVE - flagged as incorrect because the import appears
         in an incorrect pattern, even though the misuse isn't present
 ```
@@ -387,7 +387,7 @@ Result: ❌ FALSE POSITIVE - flagged as incorrect because the import appears
 Code: from azure.ai.contentsafety.models import AnalyzeTextOptions
       request = AnalyzeTextOptions(text="Hello")
       response = client.analyze_text(request)  # CORRECT usage!
-      
+
 Result: ✅ PASSES - the import is only flagged when used incorrectly
         (e.g., with analyze_image instead of analyze_text)
 ```

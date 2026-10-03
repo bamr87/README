@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -23,6 +24,8 @@ tags:
 - supply-chain
 title: 2026 04 07 Ai Adoption Map Function By Function
 ---
+# 2026 04 07 Ai Adoption Map Function By Function
+
 Not every department will adopt AI at the same pace, and the reasons have less to do with technology than with people and organizational dynamics. This article walks through each major business function in a mid-market manufacturer or distributor and answers three questions: Where will AI augment your existing people? Where will it eventually replace certain roles or tasks? And what does the adoption timeline look like?
 
 We use a simple framework throughout:

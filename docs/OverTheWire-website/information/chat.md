@@ -1,22 +1,25 @@
 ---
+
 layout: default
 listinformation: true
 source_file: chat.md
 title: Chat
 ---
+# Chat
+
 Need help?
 ==========
 
 It's normal to get stuck on a level from time to time, don't despair!<br> Before reaching out for help, make sure you have read the level's description and hints carefully.<br> If you are still stuck, you can ask for help in the chatrooms, but remember to follow the [rules].
 
-You might want to read this [article] before asking for help. 
+You might want to read this [article] before asking for help.
 
 Discord
 -------
 
 You can find our Discord server at <https://discord.gg/CPDYM3G>
 
-	Channels: 
+	Channels:
 		#wargames 	(for talk related to the games)
 		#social 	(for general talk)
 

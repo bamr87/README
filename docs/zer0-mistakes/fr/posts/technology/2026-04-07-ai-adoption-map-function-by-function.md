@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -29,6 +30,8 @@ translated_from_sha: ec766a3a58a9
 translation_of: pages/_posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
 translation_source_url: /posts/2026/04/07/ai-adoption-map-function-by-function/
 ---
+# 2026 04 07 Ai Adoption Map Function By Function
+
 Tous les services n'adopteront pas l'IA au même rythme, et les raisons tiennent moins à la technologie qu'aux personnes et aux dynamiques organisationnelles. Cet article passe en revue chaque grande fonction de l'entreprise chez un fabricant ou distributeur de taille intermédiaire et répond à trois questions : où l'IA viendra-t-elle augmenter vos collaborateurs actuels ? Où finira-t-elle par remplacer certains rôles ou certaines tâches ? Et à quoi ressemble le calendrier d'adoption ?
 
 Nous utilisons un cadre simple tout au long de cet article :

@@ -213,6 +213,6 @@ title: 📊 TODO Status Dashboard
 
 ---
 
-**Dashboard Owner**: IT-Journey Team  
-**Review Schedule**: Weekly (Sundays)  
+**Dashboard Owner**: IT-Journey Team
+**Review Schedule**: Weekly (Sundays)
 **Next Review**: 2025-12-22

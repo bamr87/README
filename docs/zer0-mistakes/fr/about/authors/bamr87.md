@@ -1,4 +1,5 @@
 ---
+
 author_key: bamr87
 author_profile: false
 description: Articles, documentation et notes par Amr Abdel-Motaleb, créateur de zer0-mistakes.
@@ -15,3 +16,5 @@ translated_from_sha: f6b87c0064c8
 translation_of: pages/_about/authors/bamr87.md
 translation_source_url: /authors/bamr87/
 ---
+# Bamr87
+

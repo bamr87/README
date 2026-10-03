@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-07T00:00:00.000Z'
 level: '0110'
@@ -22,6 +23,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 07 Data Scientist 0110
 ---
+# 2026 07 07 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the **Data Scientist** path's first window of **Level 0110 — Database Mastery** (⚔️ Adventurer tier): five main quests played in dependency order — **Database Fundamentals → Data Modeling → SQL Mastery → Database Migrations → Database Security**. This is **window 1 of 2** the planner carved from the level's 8 quests; the remaining three (query-optimization, backup-recovery, connection-pooling) are out of scope for this run.

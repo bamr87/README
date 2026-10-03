@@ -1,10 +1,13 @@
 ---
+
 gamename: drifter
 layout: default
 level: 1
 source_file: drifter1.md
 title: Drifter1
 ---
+# Drifter1
+
 Level 1 is a file parsing / heap corruption bug, with C++ classes.
 
 There is no need to mess around with heap exploitation, and C++ lends itself to relatively straight forward exploitation.

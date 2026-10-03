@@ -249,10 +249,10 @@ var operation = await configurations.CreateOrUpdateAsync(
 
 ### ✅ CORRECT: Common PostgreSQL Parameters
 ```csharp
-string[] commonParams = { 
-    "max_connections", 
-    "shared_buffers", 
-    "work_mem", 
+string[] commonParams = {
+    "max_connections",
+    "shared_buffers",
+    "work_mem",
     "maintenance_work_mem",
     "effective_cache_size",
     "log_min_duration_statement"

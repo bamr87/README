@@ -115,7 +115,7 @@ HEADER_STYLE='foreground 212 border-foreground 212 border double margin 1 paddin
 # Main Loop
 while true; do
     clear
-    
+
     # Header
     gum style \
         --border double \
@@ -147,7 +147,7 @@ while true; do
                 glow "$QUEST" -p
             fi
             ;;
-            
+
         "📖 Read Quickstarts")
             DOC_FILES=$(find pages/_quickstart -name "*.md" 2>/dev/null)
             if [[ -z "$DOC_FILES" ]]; then
@@ -171,7 +171,7 @@ while true; do
                 glow "$POST" -p
             fi
             ;;
-            
+
         "📊 View Statistics")
             gum style --border rounded --padding "1 2" \
                 "Quests: $(find pages/_quests -name "*.md" 2>/dev/null | wc -l | xargs)" \
@@ -187,15 +187,15 @@ while true; do
             fi
             ACTION=$(gum choose "Up (Detached)" "Down" "Logs" "Back")
             case "$ACTION" in
-                "Up (Detached)") 
+                "Up (Detached)")
                     gum style --foreground green "Starting containers..."
                     docker-compose up -d && gum style --foreground green "Containers started!" || gum style --foreground red "Failed to start containers."
                     ;;
-                "Down") 
+                "Down")
                     gum style --foreground yellow "Stopping containers..."
                     docker-compose down && gum style --foreground green "Containers stopped!" || gum style --foreground red "Failed to stop containers."
                     ;;
-                "Logs") 
+                "Logs")
                     gum style --foreground blue "Showing logs (press Ctrl+C to exit)..."
                     docker-compose logs -f
                     ;;
@@ -203,7 +203,7 @@ while true; do
             esac
             [[ "$ACTION" != "Logs" ]] && gum confirm "Return to menu?" && continue || break
             ;;
-            
+
         "🚪 Exit")
             gum style --foreground 212 "Safe travels, adventurer!"
             break
@@ -246,7 +246,7 @@ The `journey.sh` script provides:
 - Render markdown with syntax highlighting using Glow
 - Navigate the educational content easily
 
-### 📖 Read Quickstarts  
+### 📖 Read Quickstarts
 - Access all quickstart guides in the terminal
 - Perfect for reference while working
 - Beautiful markdown rendering

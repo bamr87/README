@@ -205,7 +205,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Deploy Jekyll to Azure
         run: |
           chmod +x scripts/deployment/azure-jekyll-deploy.sh

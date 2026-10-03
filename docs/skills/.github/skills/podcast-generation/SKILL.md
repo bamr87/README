@@ -55,16 +55,16 @@ async with client.realtime.connect(model="gpt-realtime-mini") as conn:
         "output_modalities": ["audio"],
         "instructions": "You are a narrator. Speak naturally."
     })
-    
+
     # Send text to narrate
     await conn.conversation.item.create(item={
         "type": "message",
         "role": "user",
         "content": [{"type": "input_text", "text": prompt}]
     })
-    
+
     await conn.response.create()
-    
+
     # Collect streaming events
     async for event in conn:
         if event.type == "response.output_audio.delta":

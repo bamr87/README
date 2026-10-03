@@ -170,13 +170,13 @@ import com.azure.core.credential.KeyCredential;
 import com.azure.core.util.Configuration;
 
 public class HandleAnalysisResults {
-    
+
     // Severity thresholds for content moderation decisions
     private static final int SEVERITY_SAFE = 0;
     private static final int SEVERITY_LOW = 2;
     private static final int SEVERITY_MEDIUM = 4;
     private static final int SEVERITY_HIGH = 6;
-    
+
     public static void main(String[] args) {
         String endpoint = Configuration.getGlobalConfiguration().get("CONTENT_SAFETY_ENDPOINT");
         String key = Configuration.getGlobalConfiguration().get("CONTENT_SAFETY_KEY");
@@ -187,34 +187,34 @@ public class HandleAnalysisResults {
             .buildClient();
 
         String textToAnalyze = "Sample text to analyze for harmful content";
-        
+
         AnalyzeTextResult result = client.analyzeText(new AnalyzeTextOptions(textToAnalyze));
-        
+
         // Process each harm category
         for (TextCategoriesAnalysis categoryResult : result.getCategoriesAnalysis()) {
             TextCategory category = categoryResult.getCategory();
             Integer severity = categoryResult.getSeverity();
-            
+
             System.out.println("Category: " + category);
             System.out.println("Severity: " + severity);
-            
+
             // Make moderation decisions based on severity
             // Categories: HATE, SEXUAL, VIOLENCE, SELF_HARM
             String action = determineModerationAction(severity);
             System.out.println("Recommended Action: " + action);
             System.out.println("---");
         }
-        
+
         // Check if content should be blocked
         boolean shouldBlock = shouldBlockContent(result);
         System.out.println("Block Content: " + shouldBlock);
     }
-    
+
     private static String determineModerationAction(Integer severity) {
         if (severity == null) {
             return "UNKNOWN";
         }
-        
+
         if (severity <= SEVERITY_SAFE) {
             return "ALLOW - Content is safe";
         } else if (severity <= SEVERITY_LOW) {
@@ -225,7 +225,7 @@ public class HandleAnalysisResults {
             return "BLOCK - High severity, should be blocked";
         }
     }
-    
+
     private static boolean shouldBlockContent(AnalyzeTextResult result) {
         for (TextCategoriesAnalysis categoryResult : result.getCategoriesAnalysis()) {
             Integer severity = categoryResult.getSeverity();
@@ -304,8 +304,8 @@ AddOrUpdateTextBlocklistItemsResult addedBlockItems = blocklistClient.addOrUpdat
 if (addedBlockItems != null && addedBlockItems.getBlocklistItems() != null) {
     System.out.println("BlockItems added:");
     for (TextBlocklistItem addedBlockItem : addedBlockItems.getBlocklistItems()) {
-        System.out.println("BlockItemId: " + addedBlockItem.getBlocklistItemId() 
-            + ", Text: " + addedBlockItem.getText() 
+        System.out.println("BlockItemId: " + addedBlockItem.getBlocklistItemId()
+            + ", Text: " + addedBlockItem.getText()
             + ", Description: " + addedBlockItem.getDescription());
     }
 }
@@ -455,7 +455,7 @@ public class ContentSafetyErrorHandling {
             int statusCode = e.getResponse().getStatusCode();
             System.err.println("HTTP Status: " + statusCode);
             System.err.println("Error: " + e.getMessage());
-            
+
             switch (statusCode) {
                 case 400:
                     System.err.println("Bad request - check input parameters");

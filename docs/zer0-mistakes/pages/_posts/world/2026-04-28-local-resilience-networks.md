@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - World
@@ -19,6 +20,8 @@ tags:
 - civic-infrastructure
 title: 2026 04 28 Local Resilience Networks
 ---
+# 2026 04 28 Local Resilience Networks
+
 Resilience is often discussed after a crisis, but the strongest communities build coordination habits before they need them. A local resilience network is a practical way for neighbors, small organizations, public agencies, and businesses to share information and resources when normal systems are strained.
 
 ## Map the Everyday Network

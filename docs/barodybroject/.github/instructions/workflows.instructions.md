@@ -79,35 +79,35 @@ jobs:
   lint:
     name: Lint Code
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install black flake8 pylint
-      
+
       - name: Run Black
         run: black --check src/
-      
+
       - name: Run Flake8
         run: flake8 src/ --max-line-length=100
-      
+
       - name: Run Pylint
         run: pylint src/parodynews/ --disable=all --enable=E,F
 
   test:
     name: Run Tests
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:15
@@ -122,29 +122,29 @@ jobs:
           --health-retries 5
         ports:
           - 5432:5432
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
-      
+
       - name: Run migrations
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
         run: |
           cd src
           python manage.py migrate --noinput
-      
+
       - name: Run tests
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
@@ -152,7 +152,7 @@ jobs:
         run: |
           cd src
           pytest --cov=parodynews --cov-report=xml --cov-report=term
-      
+
       - name: Upload coverage
         uses: codecov/codecov-action@v3
         with:
@@ -163,14 +163,14 @@ jobs:
     name: Build Docker Image
     runs-on: ubuntu-latest
     needs: [lint, test]
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      
+
       - name: Build image
         uses: docker/build-push-action@v5
         with:
@@ -204,21 +204,21 @@ permissions:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      
+
       - name: Log in to Container Registry
         uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Extract metadata
         id: meta
         uses: docker/metadata-action@v5
@@ -231,7 +231,7 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=sha,prefix={{branch}}-
             type=raw,value=latest,enable={{is_default_branch}}
-      
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
@@ -278,47 +278,47 @@ jobs:
     environment:
       name: ${{ inputs.environment || 'production' }}
       url: ${{ steps.deploy.outputs.url }}
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Install Azure CLI
         uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-      
+
       - name: Install Azure Developer CLI
         run: |
           curl -fsSL https://aka.ms/install-azd.sh | bash
-      
+
       - name: Azure Developer CLI login
         run: |
           azd auth login \
             --client-id ${{ secrets.AZURE_CLIENT_ID }} \
             --client-secret ${{ secrets.AZURE_CLIENT_SECRET }} \
             --tenant-id ${{ secrets.AZURE_TENANT_ID }}
-      
+
       - name: Provision infrastructure
         id: deploy
         run: |
           azd provision --no-prompt
           azd deploy --no-prompt
-          
+
           # Get the deployed URL
           url=$(azd env get-values | grep CONTAINER_APP_URL | cut -d'=' -f2)
           echo "url=$url" >> $GITHUB_OUTPUT
-      
+
       - name: Run smoke tests
         run: |
           # Wait for deployment to be ready
           sleep 30
-          
+
           # Basic health check
           curl -f ${{ steps.deploy.outputs.url }}/health || exit 1
-      
+
       - name: Notify deployment
         if: success()
         run: |
@@ -347,28 +347,28 @@ jobs:
   dependency-scan:
     name: Dependency Security Scan
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.8'
-      
+
       - name: Install Safety
         run: pip install safety
-      
+
       - name: Run Safety check
         run: |
           safety check --file requirements.txt --json || true
-      
+
       - name: Run Bandit security linter
         run: |
           pip install bandit
           bandit -r src/parodynews/ -f json -o bandit-report.json || true
-      
+
       - name: Upload security reports
         uses: actions/upload-artifact@v3
         if: always()
@@ -380,22 +380,22 @@ jobs:
   container-scan:
     name: Container Security Scan
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Build image for scanning
         run: |
           docker build -t barodybroject:scan .
-      
+
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: barodybroject:scan
           format: 'sarif'
           output: 'trivy-results.sarif'
-      
+
       - name: Upload Trivy results
         uses: github/codeql-action/upload-sarif@v2
         with:
@@ -411,23 +411,23 @@ jobs:
   test-matrix:
     name: Test Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         python-version: ['3.8', '3.9', '3.10', '3.11']
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-      
+
       - name: Run tests
         run: |
           cd src
@@ -472,7 +472,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment: production
-    
+
     steps:
       - name: Deploy application
         env:
@@ -516,11 +516,11 @@ jobs:
   run: |
     echo "=== Environment Variables ==="
     env | grep -E '^(GITHUB|RUNNER|PYTHON|NODE)_' | sort
-    
+
     echo "=== Working Directory ==="
     pwd
     ls -la
-    
+
     echo "=== Docker Info ==="
     docker --version
     docker-compose --version
@@ -581,22 +581,22 @@ jobs:
     environment:
       name: ${{ inputs.environment }}
       url: ${{ steps.get-url.outputs.url }}
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Deploy to ${{ inputs.environment }}
         run: |
           chmod +x ./scripts/deploy.sh
           ./scripts/deploy.sh ${{ inputs.environment }}
-      
+
       - name: Get deployment URL
         id: get-url
         run: |
           url=$(azd env get-values | grep APP_URL | cut -d'=' -f2)
           echo "url=$url" >> $GITHUB_OUTPUT
-      
+
       - name: Health check
         run: |
           sleep 30
@@ -610,21 +610,21 @@ jobs:
   publish:
     name: Publish to Container Registry
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-      
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
@@ -654,25 +654,25 @@ jobs:
   unit-tests:
     name: Unit Tests
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.8'
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           pip install -r requirements-dev.txt
-      
+
       - name: Run unit tests
         run: |
           cd src
           pytest tests/unit/ -v --junitxml=junit.xml
-      
+
       - name: Publish test results
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
@@ -682,7 +682,7 @@ jobs:
   integration-tests:
     name: Integration Tests
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:15
@@ -693,20 +693,20 @@ jobs:
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.8'
           cache: 'pip'
-      
+
       - name: Install dependencies
         run: |
           pip install -r requirements-dev.txt
-      
+
       - name: Run migrations
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
@@ -714,7 +714,7 @@ jobs:
         run: |
           cd src
           python manage.py migrate
-      
+
       - name: Run integration tests
         env:
           DATABASE_URL: postgresql://test_user:test_password@localhost:5432/test_db
@@ -768,10 +768,10 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Validate PR title
         run: |
           pr_title="${{ github.event.pull_request.title }}"
@@ -779,7 +779,7 @@ jobs:
             echo "PR title must start with a type: feat|fix|docs|style|refactor|test|chore"
             exit 1
           fi
-      
+
       - name: Check for CHANGELOG entry
         run: |
           if ! git diff --name-only origin/main... | grep -q CHANGELOG.md; then
@@ -801,32 +801,32 @@ on:
 jobs:
   dependency-update:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Update pip dependencies
         run: |
           pip install pip-tools
           pip-compile requirements.in > requirements.txt
           pip-compile requirements-dev.in > requirements-dev.txt
-      
+
       - name: Create PR if changes
         run: |
           if git diff --quiet requirements*.txt; then
             echo "No dependency updates"
             exit 0
           fi
-          
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           branch="automated/dependency-update-$(date +%Y%m%d)"
           git checkout -b "$branch"
           git add requirements*.txt
           git commit -m "chore: update dependencies"
           git push origin "$branch"
-          
+
           gh pr create \
             --title "chore: automated dependency update" \
             --body "Automated dependency updates from weekly maintenance" \

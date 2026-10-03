@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 1
 source_file: vortex1.md
 title: Vortex1
 ---
+# Vortex1
+
 Canary Values
 -------------
 We are looking for a specific value in ptr. You may need to consider how bash handles EOF..

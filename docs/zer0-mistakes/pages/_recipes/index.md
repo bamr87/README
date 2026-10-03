@@ -1,4 +1,5 @@
 ---
+
 author: The zer0-mistakes theme
 cookbook: zer0-kitchen
 description: 'Three worked recipes that exercise the whole cookbook collection: structured
@@ -11,6 +12,8 @@ source_file: index.md
 subtitle: A demo cookbook for the recipes collection
 title: Index
 ---
+# Index
+
 **The Zer0 Kitchen** ships with the theme so you can see the `recipes` collection end to end before writing a recipe of your own. Each one below is deliberately different:
 
 - **[No-Knead Focaccia](/recipes/no-knead-focaccia/)** is written in grams, so it shows the ratio table doing what it is for — every ingredient as a percentage of the flour — and converts *down* to cups when you ask for US units.

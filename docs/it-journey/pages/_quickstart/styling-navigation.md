@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - quickstart
@@ -36,6 +37,8 @@ tags:
 - sidebar
 title: Styling Navigation
 ---
+# Styling Navigation
+
 This guide covers **Phases 9 and 10** of the [Quick Start](/quickstart/) — styling your site with skins, colors, and CSS, then setting up navigation, sidebars, search, and comments.
 
 ---

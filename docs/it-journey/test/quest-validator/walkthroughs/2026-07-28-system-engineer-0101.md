@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-28T00:00:00.000Z'
 level: '0101'
@@ -17,6 +18,8 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 28 System Engineer 0101
 ---
+# 2026 07 28 System Engineer 0101
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 1 of 3; the full 0101 level holds 13 quests) of the **System Engineer / Level 0101 — CI/CD & DevOps (Adventurer ⚔️)** slice as a learner, consuming the workflow-sealed execute-engine evidence and reading every quest source in plan order. The headline verdict is **warn**: the engine returned **2 pass · 3 warn · 0 fail**, average **76.8%**, every quest actually executed in the sandbox. Nothing in the slice is unsafe or broken beyond repair, but three of the five quests carry **concrete, hands-on-order bugs** — commands that fail exactly when a learner is told they should work (a missing `test/unit` folder, a Node flag-ordering error, a `docker build` with no Dockerfile) plus a real methodological flaw in the Cartographer's isolation script. The four "Gates of the Pipeline" quests form a genuinely coherent, dependency-sorted CI/CD arc; the one outlier is **The Cartographer**, a chapter grafted in from a *different* campaign whose prerequisites and Ruby/Jekyll toolchain don't match the rest of the slice — a maintainer should note it reads as an interloper when walked first.

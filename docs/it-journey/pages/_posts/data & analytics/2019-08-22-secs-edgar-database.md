@@ -1,4 +1,5 @@
 ---
+
 author: Amr and ChatGPT
 categories: []
 date: 2024-04-16 22:40:14+00:00
@@ -15,6 +16,8 @@ source_file: 2019-08-22-secs-edgar-database.md
 tags: []
 title: 2019 08 22 Secs Edgar Database
 ---
+# 2019 08 22 Secs Edgar Database
+
 ### Exploring the Edgar Database: Types of Data and Their Importance
 
 #### 1. **Types of Filings**

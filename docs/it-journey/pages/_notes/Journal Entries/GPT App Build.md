@@ -1,4 +1,5 @@
 ---
+
 altitude: 0.0
 created: 2024-02-13 20:21:38+00:00
 date: 2024-02-20 09:39:19+00:00
@@ -11,6 +12,8 @@ tags:
 title: Gpt App Build
 updated: 2024-02-14 19:43:18+00:00
 ---
+# Gpt App Build
+
 Title:
 
 
@@ -24,9 +27,9 @@ Prompt: I want to build an online app that publishes these conversations.
 Journalized progression of a application build completely genereated by GPT.
 - Zero to Hero GPT
 	- Easy/Medium/Hard
-	- Stack 
-	- Machine 
+	- Stack
+	- Machine
 	- Offline first but cloud ready
-- Quest 
+- Quest
 
-Extentions: VS Code, Front Matter, 
+Extentions: VS Code, Front Matter,

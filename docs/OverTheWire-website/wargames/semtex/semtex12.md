@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 12
 source_file: semtex12.md
 title: Semtex12
 ---
+# Semtex12
+
 Authentication Daemon
 ---------------------
 There is an authentication daemon waiting on brebera port 24012. You connect to it, supply your password and get authenticated. The semtex 12 password will give you user access, the admin password will give you administrator access...

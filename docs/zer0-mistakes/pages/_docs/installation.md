@@ -81,7 +81,7 @@ For native Ruby: [Jekyll Windows Installation](https://jekyllrb.com/docs/install
 sudo apt-get update
 sudo apt-get install docker.io docker-compose
 
-# Or install Ruby natively  
+# Or install Ruby natively
 sudo apt-get install ruby-full build-essential
 gem install bundler jekyll
 ```

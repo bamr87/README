@@ -34,9 +34,9 @@ The tables below list the available settings for Jekyll, and the various `option
 # Destination folders are cleaned on site builds
 
 The contents of `<destination>` are automatically cleaned, by default, when the site is built. Files or folders that are not created by your site will be removed. Some files could be retained by specifying them within the `<keep_files>` configuration directive.
- 
+
 Do not use an important location for `<destination>`; instead, use it as a staging area and copy files from there to your web server.
- 
+
 # Build Command Options
 
 | Setting | Options and Flags |
@@ -84,4 +84,4 @@ In addition to the options below, the `serve` sub-command can accept any of the 
 # Do not use tabs in configuration files
 
 This will either lead to parsing errors, or Jekyll will revert to the default settings. Use spaces instead.
- 
+

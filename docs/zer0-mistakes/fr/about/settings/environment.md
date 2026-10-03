@@ -1,4 +1,5 @@
 ---
+
 excerpt: Environnement Jekyll, détails du build, version de Ruby, informations sur
   le thème et liste des plugins.
 icon: material/server-network
@@ -15,4 +16,6 @@ translated_from_sha: d549e2c4bc76
 translation_of: pages/_about/settings/environment.md
 translation_source_url: /about/settings/environment/
 ---
+# Environment
+
 {% include components/env-dashboard.html %}

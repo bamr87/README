@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 09 - Scylla & Charybdis
 date: 2025-02-10
@@ -18,6 +19,8 @@ source_url: https://www.swerveofshore.com/post/097-0-11-scylla-charybdis
 sub-title: Episode 9 · Scylla & Charybdis
 title: 097 0 11 Scylla Charybdis
 ---
+# 097 0 11 Scylla Charybdis
+
 From the *Episode 9 · Scylla & Charybdis* thread on [Swerve of Shore](https://www.swerveofshore.com/post/097-0-11-scylla-charybdis), by Brandon Nicklaus.
 
 > Thomas William Lyster: Director of National Library of Dublin 1895-1920 regarded as the “quaker librarian”. He was known for being the editor of the translation of “Life of Goethe”.

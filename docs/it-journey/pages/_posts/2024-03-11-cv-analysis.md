@@ -1,4 +1,5 @@
 ---
+
 author: ChatGPT
 categories:
 - Finance
@@ -12,15 +13,17 @@ section: Data & Analytics
 snippet: null
 source_file: 2024-03-11-cv-analysis.md
 tags:
-- IT Consulting
-- Enterprise Systems
-- ERP Systems
-- Data Analytics
-- Project Management
-- CV
-- GPT-4
+- it consulting
+- enterprise systems
+- erp systems
+- data analytics
+- project management
+- cv
+- gpt-4
 title: 2024 03 11 Cv Analysis
 ---
+# 2024 03 11 Cv Analysis
+
 ## CV Analysis
 
 Your CV is comprehensive and showcases a strong background in finance, IT consulting, and enterprise systems, with a significant emphasis on ERP systems, data analytics, and project management across various industries. Here's an analysis based on the main sections of your CV:

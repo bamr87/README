@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 18 of Ulysses — Penelope (the small hours, Molly awake).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 18-penelope.md
 title: 18 Penelope
 ---
+# 18 Penelope
+
 {% include page-header.html %}
 
 Episode 18 of *Ulysses*. The small hours, Molly awake.

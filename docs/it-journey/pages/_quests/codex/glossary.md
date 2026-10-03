@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Codex
@@ -43,6 +44,8 @@ title: Glossary
 toc: true
 toc_sticky: true
 ---
+# Glossary
+
 *Every realm keeps a codex — the book its scribes consult so that a dragon in one tale is not a lizard in the next. This is ours: the shared dictionary that maps the fantasy of IT-Journey onto the technology it teaches. Met a strange word mid-quest? Look it up here. Writing a quest? Take your words from here. For where things **are**, see the [World Map](/quests/codex/world-map/); for what things are **called**, you're home.*
 
 ## 🧭 How to Read This Codex

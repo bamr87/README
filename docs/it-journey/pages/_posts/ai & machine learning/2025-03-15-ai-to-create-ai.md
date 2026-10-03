@@ -1,4 +1,5 @@
 ---
+
 attachments: ''
 author: ''
 categories: []
@@ -17,6 +18,8 @@ sub-title: null
 tags: []
 title: 2025 03 15 Ai To Create Ai
 ---
+# 2025 03 15 Ai To Create Ai
+
 ```json
 {
   "name": "Diagram and Mind Map Assistant",

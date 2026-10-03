@@ -98,13 +98,13 @@ AnalyzeResult result = operation.Value;
 for (int i = 0; i < result.Documents.Count; i++)
 {
     AnalyzedDocument document = result.Documents[i];
-    
+
     if (document.Fields.TryGetValue("VendorName", out DocumentField vendorField)
         && vendorField.FieldType == DocumentFieldType.String)
     {
         Console.WriteLine($"Vendor: {vendorField.ValueString}");
     }
-    
+
     if (document.Fields.TryGetValue("InvoiceTotal", out DocumentField totalField)
         && totalField.FieldType == DocumentFieldType.Currency)
     {
@@ -186,12 +186,12 @@ var operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, "prebuilt
 foreach (DocumentPage page in result.Pages)
 {
     Console.WriteLine($"Page {page.PageNumber}:");
-    
+
     for (int i = 0; i < page.Lines.Count; i++)
     {
         DocumentLine line = page.Lines[i];
         Console.WriteLine($"  Line {i}: '{line.Content}'");
-        
+
         // Get bounding polygon
         Console.Write("    Bounding polygon:");
         for (int j = 0; j < line.Polygon.Count; j += 2)
@@ -200,7 +200,7 @@ foreach (DocumentPage page in result.Pages)
         }
         Console.WriteLine();
     }
-    
+
     foreach (DocumentWord word in page.Words)
     {
         Console.WriteLine($"  Word: '{word.Content}' (confidence: {word.Confidence})");
@@ -214,7 +214,7 @@ for (int i = 0; i < result.Tables.Count; i++)
 {
     DocumentTable table = result.Tables[i];
     Console.WriteLine($"Table {i} has {table.RowCount} rows and {table.ColumnCount} columns");
-    
+
     foreach (DocumentTableCell cell in table.Cells)
     {
         Console.WriteLine($"  Cell ({cell.RowIndex}, {cell.ColumnIndex}): '{cell.Content}'");
@@ -242,7 +242,7 @@ for (int i = 0; i < result.Paragraphs.Count; i++)
 {
     DocumentParagraph paragraph = result.Paragraphs[i];
     Console.WriteLine($"Paragraph {i}: {paragraph.Content}");
-    
+
     if (paragraph.Role != null)
     {
         Console.WriteLine($"  Role: {paragraph.Role}");
@@ -293,12 +293,12 @@ if (document.Fields.TryGetValue("Items", out DocumentField itemsField)
         if (itemField.FieldType == DocumentFieldType.Dictionary)
         {
             IReadOnlyDictionary<string, DocumentField> item = itemField.ValueDictionary;
-            
+
             if (item.TryGetValue("Description", out DocumentField descField))
             {
                 Console.WriteLine($"  Description: {descField.ValueString}");
             }
-            
+
             if (item.TryGetValue("Amount", out DocumentField amountField)
                 && amountField.FieldType == DocumentFieldType.Currency)
             {
@@ -351,7 +351,7 @@ AnalyzeResult result = operation.Value;
 foreach (AnalyzedDocument document in result.Documents)
 {
     Console.WriteLine($"Document type: {document.DocumentType}");
-    
+
     foreach (var field in document.Fields)
     {
         Console.WriteLine($"Field '{field.Key}': {field.Value.Content}");
@@ -508,14 +508,14 @@ catch { }
 public class DocumentAnalysisService
 {
     private readonly DocumentIntelligenceClient _client;
-    
+
     public DocumentAnalysisService(string endpoint)
     {
         _client = new DocumentIntelligenceClient(
             new Uri(endpoint),
             new DefaultAzureCredential());
     }
-    
+
     public async Task<AnalyzeResult> AnalyzeInvoiceAsync(Uri documentUri)
     {
         var operation = await _client.AnalyzeDocumentAsync(

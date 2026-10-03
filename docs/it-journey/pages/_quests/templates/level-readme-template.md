@@ -7,7 +7,7 @@ categories:
 date: '2025-11-29T22:51:57.000Z'
 description: Reusable template for an IT-Journey level README, indexing main, side,
   and bonus quests with learning objectives, prerequisites, and progression.
-difficulty: 🟢 Easy
+difficulty: "\U0001F7E2 Easy"
 draft: false
 estimated_time: 10-20 minutes
 fmContentType: template
@@ -31,7 +31,7 @@ skill_focus:
 - template
 source_file: level-readme-template.md
 tags:
-- BINARY
+- binary
 - theme-tag
 - skill-area
 - quest-collection
@@ -58,10 +58,10 @@ graph TB
         CurrentLevel[Level BINARY<br/>Current Level]
         NextLevel[Level XXXX<br/>Next Level]
     end
-    
+
     PrevLevel --> CurrentLevel
     CurrentLevel --> NextLevel
-    
+
     style CurrentLevel fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
 ```
 
@@ -93,18 +93,18 @@ graph TB
         MQ2[🎯 Main Quest 2:<br/>Quest Name]
         MQ3[🎯 Main Quest 3:<br/>Quest Name]
     end
-    
+
     subgraph "Side Quests"
         SQ1[⭐ Side Quest 1]
         SQ2[⭐ Side Quest 2]
         SQ3[⭐ Side Quest 3]
     end
-    
+
     subgraph "Bonus Content"
         BQ1[💎 Bonus Quest 1]
         BQ2[💎 Bonus Quest 2]
     end
-    
+
     MQ1 --> MQ2
     MQ2 --> MQ3
     MQ1 --> SQ1
@@ -112,7 +112,7 @@ graph TB
     MQ3 --> SQ3
     MQ2 --> BQ1
     MQ3 --> BQ2
-    
+
     style MQ1 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ2 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ3 fill:#2196F3,stroke:#1565C0,stroke-width:3px
@@ -414,7 +414,7 @@ Rate your confidence (1-5) in each area:
 
 *Your adventure through **Level [BINARY]** awaits, brave learner! Choose your first quest and begin your journey toward mastery.*
 
-**Level Status**: [Complete/In Development/Planned]  
-**Last Updated**: 2025-11-29  
-**Maintainers**: IT-Journey Team  
+**Level Status**: [Complete/In Development/Planned]
+**Last Updated**: 2025-11-29
+**Maintainers**: IT-Journey Team
 **Contributors**: [List or link to contributors]

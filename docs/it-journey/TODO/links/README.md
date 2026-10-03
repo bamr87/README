@@ -143,7 +143,7 @@ python3 scripts/validation/link-checker.py --scope website --timeout 15
 
 ---
 
-**Project Owner**: IT-Journey Team  
-**Created**: 2026-01-17  
-**Last Updated**: 2026-01-17  
+**Project Owner**: IT-Journey Team
+**Created**: 2026-01-17
+**Last Updated**: 2026-01-17
 **Status**: Active

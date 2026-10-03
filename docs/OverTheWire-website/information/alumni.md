@@ -1,9 +1,12 @@
 ---
+
 layout: default
 listinformation: true
 source_file: alumni.md
 title: Alumni
 ---
+# Alumni
+
 OverTheWire Alumni
 ==================
 

@@ -91,7 +91,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         new Uri("https://myaccount.blob.core.windows.net"));
     clientBuilder.AddSecretClient(
         new Uri("https://myvault.vault.azure.net"));
-    
+
     // Uses DefaultAzureCredential by default
     clientBuilder.UseCredential(new DefaultAzureCredential());
 });

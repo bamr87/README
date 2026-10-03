@@ -1,4 +1,5 @@
 ---
+
 altitude: 0.0
 created: 2024-02-03 19:42:48+00:00
 date: 2024-02-20 09:39:19+00:00
@@ -8,6 +9,8 @@ source_file: Take good notes.md
 title: Take Good Notes
 updated: 2024-02-03 22:33:35+00:00
 ---
+# Take Good Notes
+
 Notes are thoughts to be materialized
 
 Centralize them everywhere using Joplin/Github/Jekyll

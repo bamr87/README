@@ -101,7 +101,7 @@ public class PublishCloudEventsToTopic {
         User newUser = new User("John2", "James");
         CloudEvent cloudEventModel = new CloudEvent("https://com.example.myapp", "User.Created.Object",
             BinaryData.fromObject(newUser), CloudEventDataFormat.JSON, "application/json");
-        
+
         // CloudEvent with bytes data
         byte[] byteSample = "FirstName: John3, LastName: James".getBytes(StandardCharsets.UTF_8);
         CloudEvent cloudEventBytes = new CloudEvent("https://com.example.myapp", "User.Created.Binary",
@@ -116,7 +116,7 @@ public class PublishCloudEventsToTopic {
         events.add(cloudEventModel);
         events.add(cloudEventBytes);
         events.add(cloudEventWithExtension);
-        
+
         publisherClient.sendEvents(events);
     }
 }
@@ -149,7 +149,7 @@ public class PublishEventGridEventsToTopic {
             BinaryData.fromObject(str),    // data
             "0.1"                          // dataVersion
         );
-        
+
         // EventGridEvent with Object data
         User newUser = new User("John2", "James");
         EventGridEvent eventModelClass = new EventGridEvent(
@@ -203,7 +203,7 @@ public class PublishCustomEvents {
                 put("dataVersion", "0.1");
             }
         }));
-        
+
         customEventClient.sendEvents(events);
     }
 }
@@ -279,11 +279,11 @@ public class PublishEventGridEventsAsynchronously {
             .buildEventGridEventPublisherAsyncClient();
 
         String str = "FirstName: John1, LastName: James";
-        EventGridEvent eventJson = new EventGridEvent("com/example/MyApp", "User.Created.Text", 
+        EventGridEvent eventJson = new EventGridEvent("com/example/MyApp", "User.Created.Text",
             BinaryData.fromObject(str), "0.1");
-        
+
         User newUser = new User("John2", "James");
-        EventGridEvent eventModelClass = new EventGridEvent("com/example/MyApp", "User.Created.Object", 
+        EventGridEvent eventModelClass = new EventGridEvent("com/example/MyApp", "User.Created.Object",
             BinaryData.fromObject(newUser), "0.1");
 
         List<EventGridEvent> events = new ArrayList<>();
@@ -334,13 +334,13 @@ import com.azure.messaging.eventgrid.EventGridPublisherClient;
 public class EventGridErrorHandling {
     public static void main(String[] args) {
         EventGridPublisherClient<CloudEvent> client = /* create client */;
-        
+
         try {
             client.sendEvents(events);
         } catch (HttpResponseException e) {
             System.err.println("HTTP Status Code: " + e.getResponse().getStatusCode());
             System.err.println("Error Message: " + e.getMessage());
-            
+
             // Handle specific status codes
             int statusCode = e.getResponse().getStatusCode();
             if (statusCode == 401 || statusCode == 403) {

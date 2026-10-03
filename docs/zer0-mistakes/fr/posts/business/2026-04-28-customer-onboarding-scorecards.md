@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Business
@@ -25,6 +26,8 @@ translated_from_sha: b8028c5a07d3
 translation_of: pages/_posts/business/2026-04-28-customer-onboarding-scorecards.md
 translation_source_url: /posts/2026/04/28/customer-onboarding-scorecards/
 ---
+# 2026 04 28 Customer Onboarding Scorecards
+
 L'intégration des clients, c'est le moment où une vente devient une relation. C'est aussi là que des transferts mal maîtrisés, des attentes floues et des données manquantes se transforment discrètement en risque d'attrition. Un tableau de bord donne aux équipes un moyen partagé de repérer ce risque tôt.
 
 Les meilleurs tableaux de bord sont assez simples pour être mis à jour chaque semaine et assez précis pour déclencher l'action. Ils n'ont pas besoin de prédire l'avenir parfaitement. Ils doivent rendre l'état actuel visible.

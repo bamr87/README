@@ -362,27 +362,27 @@ switch (run.getStatus()) {
 ```java
 private void handleRequiredActions(ThreadRun run) {
     RequiredAction requiredAction = run.getRequiredAction();
-    
+
     if (requiredAction instanceof SubmitToolOutputsAction) {
         SubmitToolOutputsAction submitAction = (SubmitToolOutputsAction) requiredAction;
         List<RequiredToolCall> toolCalls = submitAction.getSubmitToolOutputs().getToolCalls();
-        
+
         List<ToolOutput> outputs = new ArrayList<>();
-        
+
         for (RequiredToolCall toolCall : toolCalls) {
             if (toolCall instanceof RequiredFunctionToolCall) {
                 RequiredFunctionToolCall funcCall = (RequiredFunctionToolCall) toolCall;
-                
+
                 String functionName = funcCall.getFunction().getName();
                 String arguments = funcCall.getFunction().getArguments();
-                
+
                 // Execute function
                 String result = executeFunction(functionName, arguments);
-                
+
                 outputs.add(new ToolOutput(toolCall.getId(), result));
             }
         }
-        
+
         // Submit tool outputs
         run = client.submitToolOutputsToRun(threadId, run.getId(), outputs);
     }
@@ -479,7 +479,7 @@ PersistentAgent agent = client.createAgent(options);
 
 // Create thread and message
 PersistentAgentThread thread = client.createThread();
-client.createMessage(thread.getId(), MessageRole.USER, 
+client.createMessage(thread.getId(), MessageRole.USER,
     "Calculate the first 10 Fibonacci numbers");
 
 // Run and wait
@@ -511,7 +511,7 @@ VectorStore vectorStore = client.createVectorStore(
 );
 
 // Upload files to vector store
-client.uploadFileToVectorStore(vectorStore.getId(), 
+client.uploadFileToVectorStore(vectorStore.getId(),
     BinaryData.fromFile(new File("document.pdf").toPath()));
 
 // Create agent with file search
@@ -577,10 +577,10 @@ try {
     );
 } catch (HttpResponseException e) {
     int statusCode = e.getResponse().getStatusCode();
-    
+
     System.err.println("HTTP Status: " + statusCode);
     System.err.println("Error: " + e.getMessage());
-    
+
     switch (statusCode) {
         case 400:
             System.err.println("Bad request - check parameters");
@@ -614,11 +614,11 @@ import com.azure.identity.DefaultAzureCredentialBuilder;
 import java.util.*;
 
 public class MathTutorBot {
-    
+
     private final PersistentAgentsClient client;
     private final String modelDeploymentName;
     private PersistentAgent agent;
-    
+
     public MathTutorBot() {
         this.client = new PersistentAgentsClientBuilder()
             .endpoint(System.getenv("PROJECT_ENDPOINT"))
@@ -626,7 +626,7 @@ public class MathTutorBot {
             .buildClient();
         this.modelDeploymentName = System.getenv("MODEL_DEPLOYMENT_NAME");
     }
-    
+
     public void initialize() {
         // Create agent with code interpreter for math calculations
         CreateAgentOptions options = new CreateAgentOptions(modelDeploymentName)
@@ -640,27 +640,27 @@ public class MathTutorBot {
                 """)
             .setTools(Arrays.asList(new CodeInterpreterToolDefinition()))
             .setTemperature(0.7);
-        
+
         this.agent = client.createAgent(options);
         System.out.println("Math Tutor initialized: " + agent.getId());
     }
-    
+
     public String chat(String threadId, String userMessage) {
         // Create message
         client.createMessage(threadId, MessageRole.USER, userMessage);
-        
+
         // Create and wait for run
         ThreadRun run = client.createRun(threadId, agent.getId());
         run = waitForCompletion(threadId, run.getId());
-        
+
         if (run.getStatus() != RunStatus.COMPLETED) {
             return "I encountered an error. Please try again.";
         }
-        
+
         // Get assistant response
         return getLatestAssistantMessage(threadId);
     }
-    
+
     private ThreadRun waitForCompletion(String threadId, String runId) {
         ThreadRun run;
         do {
@@ -671,13 +671,13 @@ public class MathTutorBot {
             }
             run = client.getRun(threadId, runId);
         } while (run.getStatus() == RunStatus.QUEUED || run.getStatus() == RunStatus.IN_PROGRESS);
-        
+
         return run;
     }
-    
+
     private String getLatestAssistantMessage(String threadId) {
         PagedIterable<PersistentThreadMessage> messages = client.listMessages(threadId);
-        
+
         for (PersistentThreadMessage msg : messages) {
             if (msg.getRole() == MessageRole.ASSISTANT) {
                 StringBuilder response = new StringBuilder();
@@ -689,15 +689,15 @@ public class MathTutorBot {
                 return response.toString();
             }
         }
-        
+
         return "No response available.";
     }
-    
+
     public String createConversation() {
         PersistentAgentThread thread = client.createThread();
         return thread.getId();
     }
-    
+
     public void cleanup(String threadId) {
         try {
             client.deleteThread(threadId);
@@ -705,7 +705,7 @@ public class MathTutorBot {
             System.err.println("Failed to delete thread: " + e.getMessage());
         }
     }
-    
+
     public void shutdown() {
         if (agent != null) {
             try {
@@ -716,41 +716,41 @@ public class MathTutorBot {
             }
         }
     }
-    
+
     public static void main(String[] args) {
         MathTutorBot bot = new MathTutorBot();
-        
+
         try {
             // Initialize
             bot.initialize();
-            
+
             // Create conversation
             String threadId = bot.createConversation();
             System.out.println("Conversation started: " + threadId);
-            
+
             // Chat
             Scanner scanner = new Scanner(System.in);
             System.out.println("\nMath Tutor ready! Type 'quit' to exit.\n");
-            
+
             while (true) {
                 System.out.print("You: ");
                 String input = scanner.nextLine().trim();
-                
+
                 if ("quit".equalsIgnoreCase(input)) {
                     break;
                 }
-                
+
                 if (input.isEmpty()) {
                     continue;
                 }
-                
+
                 String response = bot.chat(threadId, input);
                 System.out.println("\nTutor: " + response + "\n");
             }
-            
+
             // Cleanup
             bot.cleanup(threadId);
-            
+
         } finally {
             bot.shutdown();
         }

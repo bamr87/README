@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-11 00:00:00+00:00
 level: '0100'
@@ -21,6 +22,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 11 Digital Artist 0100
 ---
+# 2026 07 11 Digital Artist 0100
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 8 quests) of the **Digital Artist → Level 0100 (Frontend & Containers, Adventurer tier)** slice as a learner, in the dependency order the planner fixed. The two **Docker infrastructure** quests are excellent and largely verified end-to-end in the sandbox; the two **frontend / Bootstrap** quests — the ones a UI/UX-focused digital artist actually comes here for — are **broken at nearly every runnable step and are still `draft: true`**; the side quest is sound but has one hard `touch` failure and a missing Sass-wiring step.

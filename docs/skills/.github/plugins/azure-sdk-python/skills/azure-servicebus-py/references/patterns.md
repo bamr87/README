@@ -18,23 +18,23 @@ from azure.identity.aio import DefaultAzureCredential
 async def worker(worker_id: int, namespace: str, queue_name: str):
     """Worker that processes messages from a shared queue."""
     credential = DefaultAzureCredential()
-    
+
     async with ServiceBusClient(
         fully_qualified_namespace=namespace,
         credential=credential
     ) as client:
         receiver = client.get_queue_receiver(queue_name=queue_name)
-        
+
         async with receiver:
             while True:
                 messages = await receiver.receive_messages(
                     max_message_count=10,
                     max_wait_time=5
                 )
-                
+
                 if not messages:
                     continue
-                
+
                 for msg in messages:
                     try:
                         print(f"Worker {worker_id}: Processing {str(msg)}")
@@ -83,18 +83,18 @@ async def process_order_session(client, queue_name: str):
         session_id=NEXT_AVAILABLE_SESSION,
         max_wait_time=30
     )
-    
+
     async with receiver:
         session = receiver.session
         print(f"Processing session: {session.session_id}")
-        
+
         # Set session state (for checkpointing)
         await session.set_state(b"processing")
-        
+
         async for msg in receiver:
             print(f"  Item: {str(msg)}")
             await receiver.complete_message(msg)
-        
+
         # Mark session complete
         await session.set_state(b"completed")
         print(f"Session {session.session_id} completed")
@@ -122,9 +122,9 @@ async def process_with_retry_tracking(receiver, msg):
     """Process message with delivery count awareness."""
     delivery_count = msg.delivery_count
     max_retries = 5  # Should match queue's maxDeliveryCount
-    
+
     print(f"Processing message (attempt {delivery_count}/{max_retries})")
-    
+
     try:
         await process_message(msg)
         await receiver.complete_message(msg)
@@ -157,7 +157,7 @@ async def process_with_backoff(client, receiver, msg):
     """Retry with exponential backoff using scheduled messages."""
     retry_count = int(msg.application_properties.get("retry_count", 0))
     max_retries = 5
-    
+
     try:
         await process_message(msg)
         await receiver.complete_message(msg)
@@ -169,11 +169,11 @@ async def process_with_backoff(client, receiver, msg):
                 error_description=f"Failed after {retry_count} retries"
             )
             return
-        
+
         # Calculate backoff: 2^retry seconds (1, 2, 4, 8, 16 seconds)
         backoff_seconds = 2 ** retry_count
         retry_time = datetime.now(timezone.utc) + timedelta(seconds=backoff_seconds)
-        
+
         # Create retry message with incremented count
         retry_message = ServiceBusMessage(
             body=msg.body,
@@ -183,14 +183,14 @@ async def process_with_backoff(client, receiver, msg):
                 "original_enqueue_time": str(msg.enqueued_time_utc)
             }
         )
-        
+
         # Complete original and schedule retry
         await receiver.complete_message(msg)
-        
+
         sender = client.get_queue_sender(queue_name=receiver.entity_path)
         async with sender:
             await sender.schedule_messages(retry_message, retry_time)
-        
+
         print(f"Scheduled retry {retry_count + 1} for {retry_time}")
 ```
 
@@ -204,19 +204,19 @@ from asyncio import Event, wait_for
 
 class RequestResponseClient:
     """Send requests and wait for correlated responses."""
-    
+
     def __init__(self, client, request_queue: str, response_queue: str):
         self.client = client
         self.request_queue = request_queue
         self.response_queue = response_queue
         self.pending_requests: dict[str, tuple[Event, dict]] = {}
-    
+
     async def start_response_listener(self):
         """Background task to receive responses."""
         receiver = self.client.get_queue_receiver(
             queue_name=self.response_queue
         )
-        
+
         async with receiver:
             async for msg in receiver:
                 correlation_id = msg.correlation_id
@@ -225,14 +225,14 @@ class RequestResponseClient:
                     result["response"] = msg.body
                     event.set()
                 await receiver.complete_message(msg)
-    
+
     async def send_request(self, body: str, timeout: float = 30.0) -> bytes:
         """Send request and wait for response."""
         message_id = str(uuid.uuid4())
         event = Event()
         result = {}
         self.pending_requests[message_id] = (event, result)
-        
+
         try:
             # Send request with reply-to
             message = ServiceBusMessage(
@@ -240,11 +240,11 @@ class RequestResponseClient:
                 message_id=message_id,
                 reply_to=self.response_queue
             )
-            
+
             sender = self.client.get_queue_sender(self.request_queue)
             async with sender:
                 await sender.send_messages(message)
-            
+
             # Wait for response
             await wait_for(event.wait(), timeout=timeout)
             return result["response"]
@@ -255,23 +255,23 @@ class RequestResponseClient:
 async def process_requests(client, request_queue: str):
     """Process requests and send responses."""
     receiver = client.get_queue_receiver(queue_name=request_queue)
-    
+
     async with receiver:
         async for msg in receiver:
             # Process request
             response_body = f"Processed: {str(msg.body)}"
-            
+
             # Send response to reply_to queue
             if msg.reply_to:
                 response = ServiceBusMessage(
                     body=response_body,
                     correlation_id=msg.message_id
                 )
-                
+
                 sender = client.get_queue_sender(queue_name=msg.reply_to)
                 async with sender:
                     await sender.send_messages(response)
-            
+
             await receiver.complete_message(msg)
 ```
 
@@ -296,7 +296,7 @@ async def publish_events(sender, events: list[dict]):
 
 # Subscribers receive filtered messages
 # (Filters configured via Azure Portal or Management SDK)
-# 
+#
 # Subscription "high-priority": SqlFilter("priority = 'high'")
 # Subscription "us-region": SqlFilter("region = 'us'")
 # Subscription "orders": CorrelationFilter(label='order')
@@ -307,7 +307,7 @@ async def subscribe_high_priority(client, topic: str):
         topic_name=topic,
         subscription_name="high-priority"
     )
-    
+
     async with receiver:
         async for msg in receiver:
             print(f"High priority: {str(msg)}")
@@ -325,13 +325,13 @@ async def transactional_receive_and_forward(client, source_queue: str, dest_queu
     """Receive from one queue and send to another atomically."""
     receiver = client.get_queue_receiver(queue_name=source_queue)
     sender = client.get_queue_sender(queue_name=dest_queue)
-    
+
     async with receiver, sender:
         messages = await receiver.receive_messages(max_message_count=1)
-        
+
         if messages:
             msg = messages[0]
-            
+
             # Start transaction
             async with receiver.transaction_scope() as txn:
                 # Transform message
@@ -339,11 +339,11 @@ async def transactional_receive_and_forward(client, source_queue: str, dest_queu
                     body=f"Forwarded: {str(msg.body)}",
                     application_properties={"original_id": msg.message_id}
                 )
-                
+
                 # Both operations in same transaction
                 await sender.send_messages(new_msg, transaction=txn)
                 await receiver.complete_message(msg, transaction=txn)
-                
+
                 # Transaction commits when context exits without error
 ```
 
@@ -358,20 +358,20 @@ async def batch_processor(client, queue_name: str, batch_size: int = 100):
         queue_name=queue_name,
         prefetch_count=batch_size * 2  # Prefetch 2x batch size
     )
-    
+
     async with receiver:
         while True:
             messages = await receiver.receive_messages(
                 max_message_count=batch_size,
                 max_wait_time=5
             )
-            
+
             if not messages:
                 continue
-            
+
             # Process batch
             results = await process_batch([str(m.body) for m in messages])
-            
+
             # Complete successful, abandon failed
             for msg, success in zip(messages, results):
                 if success:

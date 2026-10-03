@@ -46,12 +46,12 @@ const indexClient = new SearchIndexClient(endpoint, credential);
 interface VectorSearchOptions {
   /** Vector queries to execute */
   queries?: VectorQuery[];
-  
+
   /** Filter mode for vector queries */
   filterMode?: VectorFilterMode; // "preFilter" | "postFilter"
 }
 
-type VectorQuery = 
+type VectorQuery =
   | VectorizedQuery      // Pre-computed vector
   | VectorizableTextQuery // Text to be vectorized
   | VectorizableImageUrlQuery
@@ -131,7 +131,7 @@ Combine keyword search with vector search for better results:
 const results = await searchClient.search("running shoes", {
   // Keyword search component
   searchFields: ["name", "description"],
-  
+
   // Vector search component
   vectorSearchOptions: {
     queries: [
@@ -143,7 +143,7 @@ const results = await searchClient.search("running shoes", {
       },
     ],
   },
-  
+
   // Return top 10 after RRF fusion
   top: 10,
   select: ["id", "name", "description"],
@@ -404,7 +404,7 @@ async function hybridSearch(query: string, category?: string) {
   });
 
   const items: Array<{ document: Product; score: number }> = [];
-  
+
   for await (const result of results.results) {
     items.push({
       document: result.document,

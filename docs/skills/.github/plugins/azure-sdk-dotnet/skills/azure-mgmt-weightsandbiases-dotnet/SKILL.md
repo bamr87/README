@@ -22,7 +22,7 @@ dotnet add package Azure.ResourceManager.WeightsAndBiases --prerelease
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0-beta.1 (preview)  
+**Current Version**: v1.0.0-beta.1 (preview)
 **API Version**: 2024-09-18-preview
 
 ## Environment Variables
@@ -139,7 +139,7 @@ if (instance.Data.Properties.PartnerProperties != null)
 
 ```csharp
 // List in resource group
-await foreach (WeightsAndBiasesInstanceResource instance in 
+await foreach (WeightsAndBiasesInstanceResource instance in
     resourceGroup.GetWeightsAndBiasesInstances())
 {
     Console.WriteLine($"Instance: {instance.Data.Name}");
@@ -149,7 +149,7 @@ await foreach (WeightsAndBiasesInstanceResource instance in
 
 // List in subscription
 SubscriptionResource subscription = await client.GetDefaultSubscriptionAsync();
-await foreach (WeightsAndBiasesInstanceResource instance in 
+await foreach (WeightsAndBiasesInstanceResource instance in
     subscription.GetWeightsAndBiasesInstancesAsync())
 {
     Console.WriteLine($"{instance.Data.Name} in {instance.Id.ResourceGroupName}");

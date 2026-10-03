@@ -103,13 +103,13 @@ def vector_search(client, query_vector: list[float], k: int = 10):
         k_nearest_neighbors=k,
         fields="content_vector"
     )
-    
+
     results = client.search(
         search_text=None,
         vector_queries=[vector_query],
         select=["id", "title", "content"]
     )
-    
+
     return list(results)
 ```
 
@@ -138,7 +138,7 @@ def multi_vector_search(client, title_vector: list[float], content_vector: list[
         ],
         select=["id", "title", "content"]
     )
-    
+
     return list(results)
 ```
 
@@ -159,14 +159,14 @@ def filtered_vector_search(
         k_nearest_neighbors=10,
         fields="content_vector"
     )
-    
+
     results = client.search(
         search_text=None,
         vector_queries=[vector_query],
         filter=f"category eq '{category}' and rating ge {min_rating}",
         select=["id", "title", "content", "category", "rating"]
     )
-    
+
     return list(results)
 ```
 
@@ -244,17 +244,17 @@ async def async_vector_search(client: SearchClient, query_vector: list[float]):
         k_nearest_neighbors=10,
         fields="content_vector"
     )
-    
+
     results = client.search(
         search_text=None,
         vector_queries=[vector_query],
         select=["id", "title", "content"]
     )
-    
+
     docs = []
     async for result in results:
         docs.append(result)
-    
+
     return docs
 ```
 

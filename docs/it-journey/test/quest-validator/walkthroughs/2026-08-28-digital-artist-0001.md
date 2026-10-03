@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-08-28T15:20:56.000Z'
 level: '0001'
@@ -18,6 +19,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 28 Digital Artist 0001
 ---
+# 2026 08 28 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked **window 2 of 6** of the **Digital Artist (UI/UX) → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path — 5 of the level's 26 quests, in the planner's dependency-sorted order — backed by the workflow's sealed execute-mode engine evidence (real commands run in a disposable sandbox, not model assertions): *The GitHub Pages Portal*, *Stack Attack Analysis: IT-Journey*, *Build a Personal Website with GitHub Pages*, *The Summoning: Raise the Site and Give It a Voice*, and *SEO Optimization*.

@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - World
@@ -25,6 +26,8 @@ translated_from_sha: 0b6a7b5e1636
 translation_of: pages/_posts/world/2026-04-28-local-resilience-networks.md
 translation_source_url: /posts/2026/04/28/local-resilience-networks/
 ---
+# 2026 04 28 Local Resilience Networks
+
 La résilience est souvent évoquée après une crise, mais les communautés les plus solides développent des habitudes de coordination avant d'en avoir besoin. Un réseau de résilience locale est un moyen concret pour les voisins, les petites organisations, les agences publiques et les entreprises de partager informations et ressources lorsque les systèmes habituels sont mis à rude épreuve.
 
 ## Cartographier le réseau du quotidien

@@ -472,8 +472,8 @@ The operational playbook: **detect** by re-running failures, **quarantine** a kn
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
+**💻 Software Developer**: Continue to [Deployment Pipelines](/quests/0101/deployment-pipelines/)
+**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

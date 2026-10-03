@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-15T13:33:36.000Z'
 level: '0001'
@@ -28,6 +29,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 15 Digital Artist 0001
 ---
+# 2026 07 15 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked the **first 5-quest window** (window 1 of 6, offset 0) of the **Digital Artist → Level 0001 "Web Fundamentals" (🌱 Apprentice)** slice as a learner — a 26-quest level swept 5 at a time. The sealed execute-engine evidence graded **4 of 5** quests (1 pass · 2 warn · 1 fail) and **errored on 1** (max-turns), averaging **63.8%**.

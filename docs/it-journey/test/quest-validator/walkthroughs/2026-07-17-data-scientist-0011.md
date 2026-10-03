@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-17T00:00:00.000Z'
 level: '0011'
@@ -17,6 +18,8 @@ theme: AI-Assisted Development
 tier: Apprentice
 title: 2026 07 17 Data Scientist 0011
 ---
+# 2026 07 17 Data Scientist 0011
+
 ## 🎯 Session Summary
 
 I walked the full **Data Scientist · Level 0011 (AI-Assisted Development, 🌱 Apprentice)** slice — all **4** main quests the planner selected, in plan order — as a learner would, using the workflow-sealed execute-mode evidence plus a close read of each quest source. Headline: **warn — the slice is mostly usable, but it is not a clean linear path and it contains one hard, blocking failure.**

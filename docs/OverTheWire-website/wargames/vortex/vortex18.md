@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 18
 source_file: vortex18.md
 title: Vortex18
 ---
+# Vortex18
+
 urandom seeds
 -------------
 Take advantage of the application's urandom dependency.

@@ -387,8 +387,8 @@ The biggest mistake is anchoring against yourself - discounting your number befo
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
+**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)
+**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)
 **🛡️ Security Specialist**: Advance to [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/)
 
 ## 📚 Resources

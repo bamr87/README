@@ -445,8 +445,8 @@ Cache only what you reuse; caching everything wastes memory and can slow you dow
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Stream Processing](/quests/1100/stream-processing/)  
-**🏗️ System Engineer**: Revisit [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) to scale your pipeline  
+**💻 Software Developer**: Continue to [Stream Processing](/quests/1100/stream-processing/)
+**🏗️ System Engineer**: Revisit [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) to scale your pipeline
 **📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
 
 ## 📚 Resources

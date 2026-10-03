@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 22 Data Scientist 1100
 verdict: warn
 walk_date: '2026-07-22'
 ---
+# 2026 07 22 Data Scientist 1100
+
 > **Slice** `data-scientist/1100` · **Level** 1100 (Data Engineering) · **Master tier** · **Engine verdict** ⚠️ warn (avg 66.6%) · **Walked** 2026-07-22
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29916378064) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-22-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-22-data-scientist-1100.md)

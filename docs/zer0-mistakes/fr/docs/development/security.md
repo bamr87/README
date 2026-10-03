@@ -75,7 +75,7 @@ jobs:
       packages: read
       actions: read
       contents: read
-    
+
     strategy:
       matrix:
         include:

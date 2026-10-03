@@ -61,7 +61,7 @@ bundle exec jekyll serve
 ## Fichiers clés
 
 | Fichier | Rôle |
-|------|---------|  
+|------|---------|
 | `Gemfile` | Liste les dépendances des gems Ruby |
 | `Gemfile.lock` | Verrouille les versions exactes |
 | `jekyll-theme-zer0.gemspec` | Spécification du gem du thème |

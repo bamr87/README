@@ -682,6 +682,6 @@ find scripts -name "*.sh" -exec shellcheck {} \;
 
 ---
 
-**Last Updated**: 2025-10-13  
+**Last Updated**: 2025-10-13
 **Version**: 1.0.0
 

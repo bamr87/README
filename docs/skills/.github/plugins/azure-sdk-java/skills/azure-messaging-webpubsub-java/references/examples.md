@@ -301,54 +301,54 @@ public class ChatService {
     private final WebPubSubServiceClient client;
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final Map<String, Set<String>> userRooms = new ConcurrentHashMap<>();
-    
+
     public ChatService(String connectionString) {
         this.client = new WebPubSubServiceClientBuilder()
             .connectionString(connectionString)
             .hub("chat")
             .buildClient();
     }
-    
+
     public WebPubSubClientAccessToken connectUser(String userId, List<String> initialRooms) {
         GetClientAccessTokenOptions options = new GetClientAccessTokenOptions()
             .setUserId(userId)
             .addRole("webpubsub.joinLeaveGroup")
             .addRole("webpubsub.sendToGroup")
             .setExpiresAfter(Duration.ofHours(24));
-        
+
         // Add initial rooms
         for (String room : initialRooms) {
             options.addGroup(room);
         }
-        
+
         userRooms.put(userId, new HashSet<>(initialRooms));
-        
+
         return client.getClientAccessToken(options);
     }
-    
+
     public void joinRoom(String userId, String roomId) {
         client.addUserToGroup(roomId, userId);
         userRooms.computeIfAbsent(userId, k -> new HashSet<>()).add(roomId);
-        
+
         broadcastToRoom(roomId, new ChatEvent("user_joined", userId, roomId, null));
     }
-    
+
     public void leaveRoom(String userId, String roomId) {
         client.removeUserFromGroup(roomId, userId);
-        
+
         Set<String> rooms = userRooms.get(userId);
         if (rooms != null) {
             rooms.remove(roomId);
         }
-        
+
         broadcastToRoom(roomId, new ChatEvent("user_left", userId, roomId, null));
     }
-    
+
     public void sendMessage(String userId, String roomId, String message) {
         ChatEvent event = new ChatEvent("message", userId, roomId, message);
         broadcastToRoom(roomId, event);
     }
-    
+
     public void sendDirectMessage(String fromUserId, String toUserId, String message) {
         ChatEvent event = new ChatEvent("direct_message", fromUserId, null, message);
         try {
@@ -358,7 +358,7 @@ public class ChatService {
             throw new RuntimeException("Failed to send direct message", e);
         }
     }
-    
+
     public void broadcastSystemMessage(String message) {
         ChatEvent event = new ChatEvent("system", "system", null, message);
         try {
@@ -368,16 +368,16 @@ public class ChatService {
             throw new RuntimeException("Failed to broadcast", e);
         }
     }
-    
+
     public boolean isUserOnline(String userId) {
         return client.userExists(userId);
     }
-    
+
     public void disconnectUser(String userId) {
         client.closeUserConnections(userId);
         userRooms.remove(userId);
     }
-    
+
     private void broadcastToRoom(String roomId, ChatEvent event) {
         try {
             String json = objectMapper.writeValueAsString(event);
@@ -386,14 +386,14 @@ public class ChatService {
             throw new RuntimeException("Failed to broadcast to room", e);
         }
     }
-    
+
     static class ChatEvent {
         public String type;
         public String userId;
         public String roomId;
         public String message;
         public long timestamp;
-        
+
         ChatEvent(String type, String userId, String roomId, String message) {
             this.type = type;
             this.userId = userId;
@@ -412,20 +412,20 @@ public class Main {
     public static void main(String[] args) {
         String connectionString = System.getenv("WEB_PUBSUB_CONNECTION_STRING");
         ChatService chatService = new ChatService(connectionString);
-        
+
         // Connect a user
         WebPubSubClientAccessToken token = chatService.connectUser(
-            "user1", 
+            "user1",
             Arrays.asList("general", "support")
         );
         System.out.println("WebSocket URL: " + token.getUrl());
-        
+
         // Send a message
         chatService.sendMessage("user1", "general", "Hello everyone!");
-        
+
         // Send direct message
         chatService.sendDirectMessage("user1", "user2", "Hey, private message!");
-        
+
         // Broadcast system message
         chatService.broadcastSystemMessage("Server maintenance in 10 minutes");
     }

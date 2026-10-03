@@ -1,4 +1,5 @@
 ---
+
 description: A Portrait of the Artist as a Young Man.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: apota.md
 title: Apota
 ---
+# Apota
+
 {% include page-header.html %}
 
 *A Portrait of the Artist as a Young Man* — the earlier novel, and the Stephen Dedalus who walks back into *Ulysses* a few years later with the departure undone.

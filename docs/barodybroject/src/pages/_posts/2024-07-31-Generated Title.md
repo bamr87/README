@@ -1,10 +1,13 @@
 ---
+
 author: Generated Author
 description: Generated Description
 published_at: '2024-07-31'
 source_file: 2024-07-31-Generated Title.md
 title: 2024 07 31 Generated Title
 ---
+# 2024 07 31 Generated Title
+
 ### Braving the Chaos: The New York City Experience
 
 Ah, New York City—a place where dreams converge amidst towering skyscrapers and streets festooned with more trash bags than trees. Here, every local's complicated affection for the city manifests in perpetual grumbling about the rancid summer aromas and brazen, maze-solving rats who have upgraded from pests to quasi-roommates. Yet, when challenged, they'd defend their city's honor to their last breath.

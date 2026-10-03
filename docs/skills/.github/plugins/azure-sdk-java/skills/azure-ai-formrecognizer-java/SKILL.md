@@ -84,7 +84,7 @@ import java.io.File;
 File document = new File("document.pdf");
 BinaryData documentData = BinaryData.fromFile(document.toPath());
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocument("prebuilt-layout", documentData);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -96,12 +96,12 @@ for (DocumentPage page : result.getPages()) {
         page.getWidth(),
         page.getHeight(),
         page.getUnit());
-    
+
     // Lines
     for (DocumentLine line : page.getLines()) {
         System.out.println("Line: " + line.getContent());
     }
-    
+
     // Selection marks (checkboxes)
     for (DocumentSelectionMark mark : page.getSelectionMarks()) {
         System.out.printf("Checkbox: %s (confidence: %.2f)%n",
@@ -115,7 +115,7 @@ for (DocumentTable table : result.getTables()) {
     System.out.printf("Table: %d rows x %d columns%n",
         table.getRowCount(),
         table.getColumnCount());
-    
+
     for (DocumentTableCell cell : table.getCells()) {
         System.out.printf("Cell[%d,%d]: %s%n",
             cell.getRowIndex(),
@@ -130,7 +130,7 @@ for (DocumentTable table : result.getTables()) {
 ```java
 String documentUrl = "https://example.com/invoice.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-invoice", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -139,26 +139,26 @@ AnalyzeResult result = poller.getFinalResult();
 ### Analyze Receipt
 
 ```java
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-receipt", receiptUrl);
 
 AnalyzeResult result = poller.getFinalResult();
 
 for (AnalyzedDocument doc : result.getDocuments()) {
     Map<String, DocumentField> fields = doc.getFields();
-    
+
     DocumentField merchantName = fields.get("MerchantName");
     if (merchantName != null && merchantName.getType() == DocumentFieldType.STRING) {
         System.out.printf("Merchant: %s (confidence: %.2f)%n",
             merchantName.getValueAsString(),
             merchantName.getConfidence());
     }
-    
+
     DocumentField transactionDate = fields.get("TransactionDate");
     if (transactionDate != null && transactionDate.getType() == DocumentFieldType.DATE) {
         System.out.printf("Date: %s%n", transactionDate.getValueAsDate());
     }
-    
+
     DocumentField items = fields.get("Items");
     if (items != null && items.getType() == DocumentFieldType.LIST) {
         for (DocumentField item : items.getValueAsList()) {
@@ -174,7 +174,7 @@ for (AnalyzedDocument doc : result.getDocuments()) {
 ### General Document Analysis
 
 ```java
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-document", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -222,7 +222,7 @@ model.getDocumentTypes().forEach((docType, details) -> {
 ### Analyze with Custom Model
 
 ```java
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("my-custom-model", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -231,7 +231,7 @@ for (AnalyzedDocument doc : result.getDocuments()) {
     System.out.printf("Document type: %s (confidence: %.2f)%n",
         doc.getDocType(),
         doc.getConfidence());
-    
+
     doc.getFields().forEach((name, field) -> {
         System.out.printf("Field '%s': %s (confidence: %.2f)%n",
             name,
@@ -246,7 +246,7 @@ for (AnalyzedDocument doc : result.getDocuments()) {
 ```java
 List<String> modelIds = Arrays.asList("model-1", "model-2", "model-3");
 
-SyncPoller<OperationResult, DocumentModelDetails> poller = 
+SyncPoller<OperationResult, DocumentModelDetails> poller =
     adminClient.beginComposeDocumentModel(
         modelIds,
         new ComposeDocumentModelOptions()
@@ -291,7 +291,7 @@ docTypes.put("invoice", new ClassifierDocumentTypeDetails()
 docTypes.put("receipt", new ClassifierDocumentTypeDetails()
     .setAzureBlobSource(new AzureBlobContentSource(containerUrl).setPrefix("receipts/")));
 
-SyncPoller<OperationResult, DocumentClassifierDetails> poller = 
+SyncPoller<OperationResult, DocumentClassifierDetails> poller =
     adminClient.beginBuildDocumentClassifier(docTypes,
         new BuildDocumentClassifierOptions().setClassifierId("my-classifier"));
 
@@ -301,7 +301,7 @@ DocumentClassifierDetails classifier = poller.getFinalResult();
 ### Classify Document
 
 ```java
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginClassifyDocumentFromUrl("my-classifier", documentUrl, Context.NONE);
 
 AnalyzeResult result = poller.getFinalResult();

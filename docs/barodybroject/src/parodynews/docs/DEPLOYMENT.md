@@ -307,6 +307,6 @@ parodynews/docs/
 
 ---
 
-**Version**: 1.0.0  
-**Last Updated**: 2025-11-25  
+**Version**: 1.0.0
+**Last Updated**: 2025-11-25
 **Maintainer**: Barodybroject Team

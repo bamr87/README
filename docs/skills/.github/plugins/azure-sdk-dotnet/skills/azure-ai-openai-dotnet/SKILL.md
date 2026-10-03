@@ -130,7 +130,7 @@ Console.WriteLine($"Tokens used: {completion.Usage.TotalTokenCount}");
 ### Streaming Chat
 
 ```csharp
-await foreach (StreamingChatCompletionUpdate update 
+await foreach (StreamingChatCompletionUpdate update
     in chatClient.CompleteChatStreamingAsync(messages))
 {
     if (update.ContentUpdate.Count > 0)

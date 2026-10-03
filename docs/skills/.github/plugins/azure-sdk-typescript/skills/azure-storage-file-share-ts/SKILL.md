@@ -21,7 +21,7 @@ SDK for Azure File Share operations — SMB file shares, directories, and file o
 npm install @azure/storage-file-share @azure/identity
 ```
 
-**Current Version**: 12.x  
+**Current Version**: 12.x
 **Node.js**: >= 18.0.0
 
 ## Environment Variables

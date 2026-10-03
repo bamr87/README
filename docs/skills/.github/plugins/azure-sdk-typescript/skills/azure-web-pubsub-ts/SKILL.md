@@ -232,7 +232,7 @@ const app = express();
 
 const handler = new WebPubSubEventHandler("chat", {
   path: "/api/webpubsub/hubs/chat/",
-  
+
   // Blocking: approve/reject connection
   handleConnect: (req, res) => {
     if (!req.claims?.sub) {
@@ -245,18 +245,18 @@ const handler = new WebPubSubEventHandler("chat", {
       roles: ["webpubsub.sendToGroup"],
     });
   },
-  
+
   // Blocking: handle custom events
   handleUserEvent: (req, res) => {
     console.log(`Event from ${req.context.userId}:`, req.data);
     res.success(`Received: ${req.data}`, "text");
   },
-  
+
   // Non-blocking
   onConnected: (req) => {
     console.log(`Client connected: ${req.context.connectionId}`);
   },
-  
+
   onDisconnected: (req) => {
     console.log(`Client disconnected: ${req.context.connectionId}`);
   },

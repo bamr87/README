@@ -1,4 +1,5 @@
 ---
+
 author: bamr87 and grok
 categories:
 - jekyll
@@ -24,6 +25,8 @@ tags:
 title: 2024 05 16 Groking Journey
 type: posts
 ---
+# 2024 05 16 Groking Journey
+
 ## Groking About IT Journey
 
 Based on the information provided, the website built using Jekyll and Bootstrap is a personal blog with a focus on IT and software development. The site incorporates a clean and simple design, making use of Bootstrap for responsive layout and styling.

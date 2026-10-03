@@ -23,7 +23,7 @@ Documentation is built using Sphinx with support for multiple output formats:
 # Build HTML documentation
 make html
 
-# Build PDF documentation  
+# Build PDF documentation
 make latexpdf
 
 # Clean previous builds
@@ -50,7 +50,7 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex` 
+* :ref:`modindex`
 * :ref:`search`
 ```
 

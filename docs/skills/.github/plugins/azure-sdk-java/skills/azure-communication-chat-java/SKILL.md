@@ -124,7 +124,7 @@ for (ChatMessage message : messages) {
     System.out.println("Content: " + message.getContent().getMessage());
     System.out.println("Sender: " + message.getSenderDisplayName());
     System.out.println("Created: " + message.getCreatedOn());
-    
+
     // Check if edited or deleted
     if (message.getEditedOn() != null) {
         System.out.println("Edited: " + message.getEditedOn());
@@ -158,7 +158,7 @@ threadClient.deleteMessage(messageId);
 PagedIterable<ChatParticipant> participants = threadClient.listParticipants();
 
 for (ChatParticipant participant : participants) {
-    CommunicationUserIdentifier user = 
+    CommunicationUserIdentifier user =
         (CommunicationUserIdentifier) participant.getCommunicationIdentifier();
     System.out.println("User: " + user.getId());
     System.out.println("Display Name: " + participant.getDisplayName());
@@ -251,7 +251,7 @@ PagedIterable<ChatMessage> pagedMessages = threadClient.listMessages(listOptions
 
 pagedMessages.iterableByPage().forEach(page -> {
     System.out.println("Page status code: " + page.getStatusCode());
-    page.getElements().forEach(msg -> 
+    page.getElements().forEach(msg ->
         System.out.println("Message: " + msg.getContent().getMessage()));
 });
 ```

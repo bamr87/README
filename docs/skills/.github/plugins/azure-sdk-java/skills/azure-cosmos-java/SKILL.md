@@ -242,7 +242,7 @@ try {
     System.err.println("Status: " + e.getStatusCode());
     System.err.println("Message: " + e.getMessage());
     System.err.println("Request charge: " + e.getRequestCharge());
-    
+
     if (e.getStatusCode() == 409) {
         System.err.println("Item already exists");
     } else if (e.getStatusCode() == 429) {

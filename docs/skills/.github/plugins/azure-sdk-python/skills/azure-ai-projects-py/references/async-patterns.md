@@ -43,7 +43,7 @@ async with AIProjectClient(
         instructions="You are helpful.",
     )
     print(f"Created agent: {agent.id}")
-    
+
     # Clean up
     await client.agents.delete_agent(agent.id)
 ```
@@ -70,30 +70,30 @@ async def async_conversation():
             name="async-agent",
             instructions="You are a helpful assistant.",
         )
-        
+
         # Create thread
         thread = await client.agents.threads.create()
-        
+
         # Add message
         await client.agents.messages.create(
             thread_id=thread.id,
             role="user",
             content="What is the capital of Japan?",
         )
-        
+
         # Create and process run
         run = await client.agents.runs.create_and_process(
             thread_id=thread.id,
             agent_id=agent.id,
         )
-        
+
         # Get messages
         if run.status == "completed":
             messages = await client.agents.messages.list(thread_id=thread.id)
             async for msg in messages:
                 if msg.role == "assistant":
                     print(f"Response: {msg.content[0].text.value}")
-        
+
         # Clean up
         await client.agents.delete_agent(agent.id)
 
@@ -111,7 +111,7 @@ async with AIProjectClient(...) as client:
         file_path="./data/document.pdf",
         purpose=FilePurpose.AGENTS,
     )
-    
+
     # Create vector store
     vector_store = await client.agents.vector_stores.create_and_poll(
         file_ids=[file.id],
@@ -127,7 +127,7 @@ async with AIProjectClient(...) as client:
     connections = client.connections.list()
     async for conn in connections:
         print(f"Connection: {conn.name}")
-    
+
     # List deployments
     deployments = client.deployments.list()
     async for deployment in deployments:
@@ -143,7 +143,7 @@ class AsyncHandler(AsyncAgentEventHandler):
     async def on_message_delta(self, delta):
         if delta.text:
             print(delta.text.value, end="", flush=True)
-    
+
     async def on_error(self, data):
         print(f"Error: {data}")
 
@@ -163,7 +163,7 @@ import asyncio
 
 async def process_multiple_queries(client, agent_id, queries):
     """Process multiple queries concurrently."""
-    
+
     async def process_query(query):
         thread = await client.agents.threads.create()
         await client.agents.messages.create(
@@ -181,7 +181,7 @@ async def process_multiple_queries(client, agent_id, queries):
                 if msg.role == "assistant":
                     return msg.content[0].text.value
         return None
-    
+
     # Process all queries concurrently
     results = await asyncio.gather(*[process_query(q) for q in queries])
     return results

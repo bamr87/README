@@ -222,7 +222,7 @@ def generate_injection_prompt(handoff: dict) -> str:
         f"  - {h['surface']} ({h['timestamp'][:10]}): {h['outcome']}"
         for h in handoff["history"]
     ])
-    
+
     return f"""# Cross-Surface Context Injection
 
 You are continuing a task that was started in a previous session/surface.
@@ -254,16 +254,16 @@ if __name__ == "__main__":
 
     handoff = load_handoff(handoff_path)
     handoff = update_handoff(handoff, stage, outcome)
-    
+
     with open(handoff_path, "w") as f:
         json.dump(handoff, f, indent=2)
-    
+
     prompt = generate_injection_prompt(handoff)
     print(prompt)
-    
+
     with open(".agent-memory/injection-prompt.md", "w") as f:
         f.write(prompt)
-    
+
     print(f"\n✅ Context handoff updated and injection prompt written")
 ```
 

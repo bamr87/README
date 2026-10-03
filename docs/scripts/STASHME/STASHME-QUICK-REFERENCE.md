@@ -133,9 +133,9 @@ stashme.sh --cleanup -i
 
 ```
 ~/github/           ← Default search location
-├── repo-a/         
-├── repo-b/         
-└── subfolder/      
+├── repo-a/
+├── repo-b/
+└── subfolder/
     └── repo-c/     ← Found with --max-depth 2+
 ```
 

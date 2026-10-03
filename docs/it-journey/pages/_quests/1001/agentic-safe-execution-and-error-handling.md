@@ -145,7 +145,7 @@ jobs:
         run: |
           for attempt in $(seq 1 $RETRY_MAX); do
             echo "=== Attempt $attempt of $RETRY_MAX ==="
-            
+
             if python3 work/gh-600/scripts/run_agent_task.py \
                 --issue "${{ github.event.issue.number }}" \
                 --output agent-result.json; then
@@ -153,7 +153,7 @@ jobs:
               echo "succeeded=true" >> "$GITHUB_OUTPUT"
               exit 0
             fi
-            
+
             # Check if error is retryable
             ERROR_CODE=$(jq -r '.error_code // "unknown"' agent-result.json 2>/dev/null)
             if [[ "$ERROR_CODE" == "auth_error" || "$ERROR_CODE" == "scope_ambiguous" ]]; then
@@ -162,14 +162,14 @@ jobs:
               echo "error_code=$ERROR_CODE" >> "$GITHUB_OUTPUT"
               exit 1
             fi
-            
+
             if [ "$attempt" -lt "$RETRY_MAX" ]; then
               DELAY=$((RETRY_DELAY * (2 ** (attempt - 1))))  # exponential backoff
               echo "⏳ Retryable error. Waiting ${DELAY}s before retry..."
               sleep "$DELAY"
             fi
           done
-          
+
           echo "succeeded=false" >> "$GITHUB_OUTPUT"
           echo "error_code=max_retries_exceeded" >> "$GITHUB_OUTPUT"
           exit 1
@@ -181,7 +181,7 @@ jobs:
           script: |
             const errorCode = '${{ steps.agent_task.outputs.error_code }}' || 'unknown';
             const runUrl = `https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}`;
-            
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -228,7 +228,7 @@ Level 4 — Timeout:              Hard stop + comment + disable agent label
                 description: 'Agent requires human intervention'
               });
             } catch (e) { /* label already exists */ }
-            
+
             // Apply label to issue
             await github.rest.issues.addLabels({
               owner: context.repo.owner,

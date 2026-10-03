@@ -270,7 +270,7 @@ The SDK provides extension methods on `SubscriptionResource` and `ResourceGroupR
 subscription.GetDurableTaskSchedulers();           // List all in subscription
 subscription.GetDurableTaskSchedulersAsync();      // Async enumerable
 
-// On ResourceGroupResource  
+// On ResourceGroupResource
 resourceGroup.GetDurableTaskSchedulers();          // Get collection
 resourceGroup.GetDurableTaskSchedulerAsync(name);  // Get by name
 

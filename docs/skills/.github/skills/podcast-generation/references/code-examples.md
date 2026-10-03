@@ -16,11 +16,11 @@ async def generate_audio_narrative(
     style: str = "podcast"
 ) -> Dict[str, Any]:
     """Generate podcast-style audio using gpt-realtime-mini"""
-    
+
     # 1. Validate configuration
     if not settings.azure_openai_audio_api_key:
         raise ValueError("AZURE_OPENAI_AUDIO_API_KEY not configured")
-    
+
     # 2. Gather content based on source
     if source_type == "tag":
         tag = await db.get_tag(source_id)
@@ -33,7 +33,7 @@ async def generate_audio_narrative(
     else:  # custom
         bookmarks = await db.get_recent_bookmarks(limit=10)
         title = f"Research Summary: {custom_query[:50]}"
-    
+
     # 3. Build prompt with style
     content = "\n".join([f"**{b.title}**\n{b.summary}" for b in bookmarks[:10]])
     prompt = f"""Create a {style} narrative from these sources:
@@ -41,27 +41,27 @@ async def generate_audio_narrative(
 
 {STYLE_INSTRUCTIONS[style]}
 Make it 1-2 minutes (150-250 words). Speak naturally."""
-    
+
     # 4. Connect to Realtime API
     ws_url = settings.azure_openai_audio_endpoint.replace("https://", "wss://") + "/openai/v1"
     client = AsyncOpenAI(websocket_base_url=ws_url, api_key=settings.azure_openai_audio_api_key)
-    
+
     audio_chunks, transcript_parts = [], []
-    
+
     async with client.realtime.connect(model=settings.azure_openai_audio_deployment) as conn:
         await conn.session.update(session={
             "output_modalities": ["audio"],
             "instructions": f"Narrator creating {style}-style content. Speak naturally, don't ask questions."
         })
-        
+
         await conn.conversation.item.create(item={
             "type": "message",
-            "role": "user", 
+            "role": "user",
             "content": [{"type": "input_text", "text": prompt}]
         })
-        
+
         await conn.response.create()
-        
+
         async for event in conn:
             if event.type == "response.output_audio.delta":
                 audio_chunks.append(base64.b64decode(event.delta))
@@ -71,13 +71,13 @@ Make it 1-2 minutes (150-250 words). Speak naturally."""
                 break
             elif event.type == "error":
                 raise ValueError(f"Realtime API error: {event.error.message}")
-    
+
     # 5. Process audio
     pcm_audio = b''.join(audio_chunks)
     wav_audio = pcm_to_wav(pcm_audio, sample_rate=24000)
     audio_base64 = base64.b64encode(wav_audio).decode('utf-8')
     duration = len(pcm_audio) // (24000 * 2)  # 24kHz, 16-bit
-    
+
     # 6. Save and return
     narrative = AudioNarrative(
         source_type=source_type,
@@ -89,7 +89,7 @@ Make it 1-2 minutes (150-250 words). Speak naturally."""
     )
     db.add(narrative)
     await db.commit()
-    
+
     return {
         "id": narrative.id,
         "title": title,
@@ -122,7 +122,7 @@ async def stream_audio(narrative_id: int, db: AsyncSession = Depends(get_db)):
     narrative = await ai_service.get_audio_narrative_by_id(narrative_id)
     if not narrative:
         raise HTTPException(404, "Not found")
-    
+
     audio_bytes = base64.b64decode(narrative["audio_data"])
     return Response(
         content=audio_bytes,
@@ -149,10 +149,10 @@ function AudioPlayer({ sourceType, sourceId }) {
 
   const play = () => {
     if (!narrative?.audio_data) return;
-    
+
     const blob = base64ToBlob(narrative.audio_data, 'audio/wav');
     const url = URL.createObjectURL(blob);
-    
+
     if (!audioRef.current) audioRef.current = new Audio();
     audioRef.current.src = url;
     audioRef.current.onended = () => setIsPlaying(false);
@@ -178,7 +178,7 @@ function AudioPlayer({ sourceType, sourceId }) {
 
 ```javascript
 export const aiAPI = {
-  generateAudio: (sourceType, sourceId = null, customQuery = null, 
+  generateAudio: (sourceType, sourceId = null, customQuery = null,
                   voiceName = 'alloy', style = 'podcast') =>
     api.post('/ai/audio', {
       source_type: sourceType,
@@ -187,7 +187,7 @@ export const aiAPI = {
       voice_name: voiceName,
       style
     }),
-  
+
   listAudioNarratives: (limit = 10) => api.get(`/ai/audio?limit=${limit}`),
 };
 ```

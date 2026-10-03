@@ -1,4 +1,5 @@
 ---
+
 book: zer0-tales
 chapter: 2
 chapter_label: Story Two
@@ -15,6 +16,8 @@ preview: /assets/images/zer0-checkpoint-1.png
 source_file: 02-the-checkpoint.md
 title: 02 The Checkpoint
 ---
+# 02 The Checkpoint
+
 On the far side of the tallest heading stood a little checkpoint hut, its windows glowing with friendly UI runes.
 
 Zer0 knocked. The door opened all by itself, the way doors do in well-tested code.

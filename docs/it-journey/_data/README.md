@@ -87,7 +87,7 @@ generated_at: timestamp
 total_posts: number
 published: number
 drafts: number
-categories: 
+categories:
   category_name: count
 tags:
   tag_name: count
@@ -171,7 +171,7 @@ Create custom templates in `_includes/content_statistics/`:
 
 #### Common Issues
 
-1. **Ruby not found**: Install Ruby 2.6+ 
+1. **Ruby not found**: Install Ruby 2.6+
 2. **YAML parsing errors**: Check post frontmatter syntax
 3. **File permissions**: Ensure scripts are executable
 4. **Missing content**: Verify the content collections under `pages/` exist (`pages/_quests`, `pages/_docs`, …)

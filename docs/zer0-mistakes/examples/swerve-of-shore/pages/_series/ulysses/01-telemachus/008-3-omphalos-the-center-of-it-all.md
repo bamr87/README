@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 01 - Telemachus
 date: 2025-02-02
@@ -16,6 +17,8 @@ source_url: https://www.swerveofshore.com/post/008-3-omphalos-the-center-of-it-a
 sub-title: Episode 1 · Telemachus
 title: 008 3 Omphalos The Center Of It All
 ---
+# 008 3 Omphalos The Center Of It All
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/008-3-omphalos-the-center-of-it-all), by Brandon Nicklaus.
 
 > The term “omphalos” appears twice in the first episode of Ulysses, each time adding layers to the novel’s themes of history, identity, and intellectual rebellion.

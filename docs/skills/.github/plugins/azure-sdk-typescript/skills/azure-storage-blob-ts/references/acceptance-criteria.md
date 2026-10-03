@@ -13,7 +13,7 @@ title: Azure Storage Blob SDK for TypeScript Acceptance Criteria
 ### 1.1 ✅ CORRECT: ESM Imports
 
 ```typescript
-import { 
+import {
   BlobServiceClient,
   ContainerClient,
   BlobClient,
@@ -24,7 +24,7 @@ import {
 ### 1.2 ✅ CORRECT: Type Imports
 
 ```typescript
-import type { 
+import type {
   BlobDownloadResponseParsed,
   BlobUploadCommonResponse,
   ContainerCreateResponse,

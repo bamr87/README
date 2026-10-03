@@ -186,25 +186,25 @@ def write_trace(
         "run_id": os.environ.get("GITHUB_RUN_ID", "local"),
         "details": details or {}
     }
-    
+
     print(f"[TRACE] {correlation_id} | {agent_id} | {action} | {status}")
-    
+
     if output_file:
         # Append to JSONL trace file
         with open(output_file, "a") as f:
             f.write(json.dumps(entry) + "\n")
-    
+
     return entry
 
 
 # Usage example
 if __name__ == "__main__":
     cid = os.environ.get("CORRELATION_ID", "local-test")
-    
+
     write_trace(cid, "analysis-agent", "read-issue", "completed",
                 {"issue_number": 42, "files_found": 5},
                 f"trace-{cid}.jsonl")
-    
+
     write_trace(cid, "analysis-agent", "write-report", "completed",
                 {"report_path": "analysis-report.json"},
                 f"trace-{cid}.jsonl")
@@ -261,10 +261,10 @@ from pathlib import Path
 def aggregate_traces(traces_dir: str, output_file: str, correlation_id: str) -> None:
     """Read all trace files and produce a unified, time-sorted audit log."""
     all_entries = []
-    
+
     trace_files = list(Path(traces_dir).rglob("*.jsonl"))
     print(f"Found {len(trace_files)} trace files")
-    
+
     for trace_file in trace_files:
         with open(trace_file) as f:
             for line in f:
@@ -277,22 +277,22 @@ def aggregate_traces(traces_dir: str, output_file: str, correlation_id: str) -> 
                         all_entries.append(entry)
                 except json.JSONDecodeError:
                     print(f"Warning: Could not parse trace entry: {line[:100]}")
-    
+
     # Sort by timestamp
     all_entries.sort(key=lambda x: x.get("timestamp", ""))
-    
+
     audit_log = {
         "correlation_id": correlation_id,
         "total_events": len(all_entries),
         "agents_involved": list({e["agent_id"] for e in all_entries}),
         "timeline": all_entries
     }
-    
+
     with open(output_file, "w") as f:
         json.dump(audit_log, f, indent=2)
-    
+
     print(f"✅ Unified audit log written: {len(all_entries)} events across {len(audit_log['agents_involved'])} agents")
-    
+
     # Check for failures
     failures = [e for e in all_entries if e["status"] == "failed"]
     if failures:
@@ -309,7 +309,7 @@ if __name__ == "__main__":
     parser.add_argument("--output", required=True)
     parser.add_argument("--correlation-id", required=True)
     args = parser.parse_args()
-    
+
     aggregate_traces(args.traces_dir, args.output, args.correlation_id)
 ```
 

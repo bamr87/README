@@ -1,7 +1,10 @@
 ---
+
 source_file: aspnetcore.md
 title: Aspnetcore
 ---
+# Aspnetcore
+
 ## Modify code
 
 Make these necessary changes to the app.

@@ -10,17 +10,17 @@ updated: 2024-02-13 19:30:25+00:00
 ---
 # Mission
 
-Every project should be accessible to the world audiance and designed with self preservation in mind.  
+Every project should be accessible to the world audiance and designed with self preservation in mind.
 
 ## Empowerment\Community\Duality
  - Lead
-	 - Mission statement 
+	 - Mission statement
  - Contribute
 	 - gain knowledge
-	 - zero check sum game	
+	 - zero check sum game
 
  - Share
-	 - give feedback 
+	 - give feedback
 	 - collective not for profit
 
 ## Knowledge\Transparency

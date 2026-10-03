@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 8
 source_file: bandit8.md
 title: Bandit8
 ---
+# Bandit8
+
 Level Goal
 ----------
 The password for the next level is stored in the file **data.txt** next to the word **millionth**

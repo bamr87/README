@@ -470,8 +470,8 @@ terraform output bucket_arn
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)  
-**🏗️ System Engineer**: Master modules and remote state for team workflows  
+**💻 Software Developer**: Continue to [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
+**🏗️ System Engineer**: Master modules and remote state for team workflows
 **🛡️ Security Specialist**: Audit state handling and secret management in your pipelines
 
 ## 📚 Resources

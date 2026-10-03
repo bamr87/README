@@ -69,4 +69,4 @@ title: 🔗 Hyperlink Guardian Report
 
 ---
 
-*Automated by IT-Journey Hyperlink Guardian v1.0.0 🤖* 
+*Automated by IT-Journey Hyperlink Guardian v1.0.0 🤖*

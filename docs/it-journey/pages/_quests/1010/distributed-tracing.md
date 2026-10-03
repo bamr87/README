@@ -451,8 +451,8 @@ processors:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Alerting Systems](/quests/1010/alerting-systems/)  
-**🏗️ System Engineer**: Explore [ELK Stack](/quests/1010/elk-stack/)  
+**💻 Software Developer**: Continue to [Alerting Systems](/quests/1010/alerting-systems/)
+**🏗️ System Engineer**: Explore [ELK Stack](/quests/1010/elk-stack/)
 **🛡️ Security Specialist**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) for SLO grounding
 
 ## 📚 Resources

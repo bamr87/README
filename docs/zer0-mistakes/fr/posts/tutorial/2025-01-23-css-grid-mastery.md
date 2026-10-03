@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Tutorial
@@ -35,6 +36,8 @@ translated_from_sha: bdc8ce77df05
 translation_of: pages/_posts/tutorial/2025-01-23-css-grid-mastery.md
 translation_source_url: /posts/2025/01/23/css-grid-mastery/
 ---
+# 2025 01 23 Css Grid Mastery
+
 CSS Grid est le système de mise en page le plus puissant de CSS. Ce tutoriel vous accompagne depuis votre première grille jusqu'à des mises en page complexes et concrètes — et chaque concept s'accompagne d'une **démo interactive que vous pouvez voir rendue directement ici dans le navigateur**, à côté du code qui la produit. Redimensionnez la fenêtre ou ouvrez l'inspecteur de grille de votre navigateur pour observer la réaction de chaque exemple.
 
 <style>

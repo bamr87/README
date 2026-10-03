@@ -10,7 +10,7 @@ Contains reusable Django template components designed to eliminate code duplicat
 
 ## Contents
 - `crud_buttons.html` - Standardized Save/Delete/Create button groups
-- `model_table.html` - Dynamic sortable/filterable tables  
+- `model_table.html` - Dynamic sortable/filterable tables
 - `form_wrapper.html` - Bootstrap 5 form with error handling
 - `status_badge.html` - Status indicator badges
 - `confirm_modal.html` - Confirmation dialog for destructive actions
@@ -51,7 +51,7 @@ The filter-empty row lives here, in the template, rather than being built as a s
         <a class="navbar-brand" href="{% url 'home' %}">
             Barody Broject
         </a>
-        
+
         {% if user.is_authenticated %}
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -122,7 +122,7 @@ The filter-empty row lives here, in the template, rather than being built as a s
 
 ## Container Configuration
 - **Runtime**: Django template engine with include resolution
-- **Dependencies**: 
+- **Dependencies**:
   - Django template system
   - Static file handling
   - Template context processors
@@ -130,12 +130,12 @@ The filter-empty row lives here, in the template, rather than being built as a s
 - **Environment**: Supports template inheritance and composition
 
 ## Related Paths
-- **Incoming**: 
+- **Incoming**:
   - Base templates (`base.html`, `layout.html`)
   - Page-specific templates across the application
   - Form templates and wizard steps
   - Email templates requiring common elements
-- **Outgoing**: 
+- **Outgoing**:
   - Static CSS and JavaScript files
   - Template context variables and filters
   - URL routing and reverse lookups

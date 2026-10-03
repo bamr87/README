@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 14 of Ulysses — Oxen of the Sun (10pm, the maternity
   hospital).
 hide_intro: true
@@ -11,6 +12,8 @@ sidebar:
 source_file: 14-oxen-of-the-sun.md
 title: 14 Oxen Of The Sun
 ---
+# 14 Oxen Of The Sun
+
 {% include page-header.html %}
 
 Episode 14 of *Ulysses*. 10pm, the maternity hospital.

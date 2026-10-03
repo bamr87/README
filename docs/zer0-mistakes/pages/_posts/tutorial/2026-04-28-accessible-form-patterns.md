@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Tutorial
@@ -19,6 +20,8 @@ tags:
 - frontend
 title: 2026 04 28 Accessible Form Patterns
 ---
+# 2026 04 28 Accessible Form Patterns
+
 Accessible forms are easier for everyone to complete. They help screen reader users, keyboard users, people on small screens, and anyone moving quickly through a task.
 
 This tutorial covers a few patterns that make forms more reliable without adding much complexity.

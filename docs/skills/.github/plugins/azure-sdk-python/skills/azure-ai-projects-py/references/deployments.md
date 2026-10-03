@@ -80,7 +80,7 @@ gpt4_deployments = [
 
 if gpt4_deployments:
     deployment_name = gpt4_deployments[0].name
-    
+
     agent = project_client.agents.create_agent(
         model=deployment_name,
         name="dynamic-agent",
@@ -97,7 +97,7 @@ deployment = project_client.deployments.get("my-deployment")
 if deployment.capabilities:
     supports_vision = deployment.capabilities.get("vision", False)
     supports_functions = deployment.capabilities.get("function_calling", False)
-    
+
     print(f"Vision: {supports_vision}")
     print(f"Function Calling: {supports_functions}")
 ```

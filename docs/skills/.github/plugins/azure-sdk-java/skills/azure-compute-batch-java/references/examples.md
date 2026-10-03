@@ -347,7 +347,7 @@ System.out.println("Task created: task1");
 ```java
 import java.util.Arrays;
 
-BatchTaskCreateParameters task = new BatchTaskCreateParameters("processDataTask", 
+BatchTaskCreateParameters task = new BatchTaskCreateParameters("processDataTask",
     "python3 process.py input.csv output.csv")
     .setResourceFiles(Arrays.asList(
         new ResourceFile()
@@ -422,7 +422,7 @@ import java.util.ArrayList;
 
 List<BatchTaskCreateParameters> tasks = new ArrayList<>();
 for (int i = 0; i < 1000; i++) {
-    tasks.add(new BatchTaskCreateParameters("task" + i, 
+    tasks.add(new BatchTaskCreateParameters("task" + i,
         String.format("python3 process.py --partition %d", i)));
 }
 
@@ -459,7 +459,7 @@ if (task.getExecutionInfo() != null) {
     System.out.println("Exit Code: " + task.getExecutionInfo().getExitCode());
     System.out.println("Start Time: " + task.getExecutionInfo().getStartTime());
     System.out.println("End Time: " + task.getExecutionInfo().getEndTime());
-    
+
     if (task.getExecutionInfo().getFailureInfo() != null) {
         System.out.println("Failure: " + task.getExecutionInfo().getFailureInfo().getMessage());
     }
@@ -557,7 +557,7 @@ System.out.println("Running Tasks: " + node.getRunningTasksCount());
 BatchNodeRebootParameters rebootParams = new BatchNodeRebootParameters()
     .setNodeRebootOption(BatchNodeRebootOption.TASK_COMPLETION);
 
-SyncPoller<BatchNode, BatchNode> rebootPoller = 
+SyncPoller<BatchNode, BatchNode> rebootPoller =
     batchClient.beginRebootNode("myPoolId", "nodeId", rebootParams);
 rebootPoller.waitForCompletion();
 System.out.println("Node rebooted");
@@ -673,11 +673,11 @@ try {
     BatchPool pool = batchClient.getPool("nonexistent-pool");
 } catch (BatchErrorException e) {
     BatchError error = e.getValue();
-    
+
     System.err.println("=== Batch Error ===");
     System.err.println("Error code: " + error.getCode());
     System.err.println("Message: " + error.getMessage().getValue());
-    
+
     // Handle specific errors
     switch (error.getCode()) {
         case "PoolNotFound":
@@ -698,7 +698,7 @@ try {
         default:
             System.err.println("Unexpected error: " + error.getCode());
     }
-    
+
     // Show additional details if available
     if (error.getValues() != null) {
         for (var detail : error.getValues()) {
@@ -723,10 +723,10 @@ import java.time.Duration;
 import java.util.*;
 
 public class BatchJobRunner {
-    
+
     private final BatchClient client;
     private final String poolId;
-    
+
     public BatchJobRunner(String poolId) {
         this.client = new BatchClientBuilder()
             .endpoint(System.getenv("AZURE_BATCH_ENDPOINT"))
@@ -734,7 +734,7 @@ public class BatchJobRunner {
             .buildClient();
         this.poolId = poolId;
     }
-    
+
     public void ensurePoolExists() {
         try {
             BatchPool pool = client.getPool(poolId);
@@ -747,10 +747,10 @@ public class BatchJobRunner {
             }
         }
     }
-    
+
     private void createPool() {
         System.out.println("Creating pool: " + poolId);
-        
+
         client.createPool(new BatchPoolCreateParameters(poolId, "STANDARD_D2s_v3")
             .setVirtualMachineConfiguration(
                 new VirtualMachineConfiguration(
@@ -762,16 +762,16 @@ public class BatchJobRunner {
                     "batch.node.ubuntu 22.04"))
             .setTargetDedicatedNodes(2)
             .setTaskSlotsPerNode(4), null);
-        
+
         // Wait for pool to be ready
         waitForPoolReady();
     }
-    
+
     private void waitForPoolReady() {
         System.out.println("Waiting for pool to be ready...");
         while (true) {
             BatchPool pool = client.getPool(poolId);
-            if (pool.getAllocationState() == AllocationState.STEADY 
+            if (pool.getAllocationState() == AllocationState.STEADY
                 && pool.getCurrentDedicatedNodes() > 0) {
                 System.out.println("Pool is ready with " + pool.getCurrentDedicatedNodes() + " nodes");
                 break;
@@ -784,51 +784,51 @@ public class BatchJobRunner {
             }
         }
     }
-    
+
     public String runJob(String jobId, List<String> commands) {
         // Create job
         client.createJob(
             new BatchJobCreateParameters(jobId, new BatchPoolInfo().setPoolId(poolId))
                 .setOnAllTasksComplete(OnAllBatchTasksComplete.TERMINATE_JOB),
             null);
-        
+
         System.out.println("Job created: " + jobId);
-        
+
         // Create tasks
         List<BatchTaskCreateParameters> tasks = new ArrayList<>();
         for (int i = 0; i < commands.size(); i++) {
             tasks.add(new BatchTaskCreateParameters("task" + i, commands.get(i)));
         }
-        
+
         client.createTasks(jobId, tasks);
         System.out.println("Created " + tasks.size() + " tasks");
-        
+
         // Wait for completion
         waitForJobComplete(jobId);
-        
+
         return jobId;
     }
-    
+
     private void waitForJobComplete(String jobId) {
         System.out.println("Waiting for job to complete...");
         while (true) {
             BatchJob job = client.getJob(jobId, null, null);
-            
+
             if (job.getState() == BatchJobState.COMPLETED) {
                 System.out.println("Job completed");
                 break;
-            } else if (job.getState() == BatchJobState.DISABLED 
+            } else if (job.getState() == BatchJobState.DISABLED
                     || job.getState() == BatchJobState.TERMINATING) {
                 throw new RuntimeException("Job failed or was terminated");
             }
-            
+
             // Show progress
             BatchTaskCountsResult counts = client.getJobTaskCounts(jobId);
             System.out.printf("Progress: %d/%d tasks completed%n",
                 counts.getTaskCounts().getCompleted(),
-                counts.getTaskCounts().getActive() + counts.getTaskCounts().getRunning() 
+                counts.getTaskCounts().getActive() + counts.getTaskCounts().getRunning()
                     + counts.getTaskCounts().getCompleted());
-            
+
             try {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
@@ -837,10 +837,10 @@ public class BatchJobRunner {
             }
         }
     }
-    
+
     public Map<String, String> getTaskOutputs(String jobId) {
         Map<String, String> outputs = new HashMap<>();
-        
+
         PagedIterable<BatchTask> tasks = client.listTasks(jobId);
         for (BatchTask task : tasks) {
             try {
@@ -850,10 +850,10 @@ public class BatchJobRunner {
                 outputs.put(task.getId(), "Error: " + e.getMessage());
             }
         }
-        
+
         return outputs;
     }
-    
+
     public void cleanup(String jobId) {
         try {
             client.beginDeleteJob(jobId).waitForCompletion();
@@ -862,14 +862,14 @@ public class BatchJobRunner {
             System.err.println("Failed to delete job: " + e.getMessage());
         }
     }
-    
+
     public static void main(String[] args) {
         BatchJobRunner runner = new BatchJobRunner("my-batch-pool");
-        
+
         try {
             // Ensure pool exists
             runner.ensurePoolExists();
-            
+
             // Run job with tasks
             List<String> commands = Arrays.asList(
                 "echo 'Processing partition 1' && sleep 5",
@@ -877,21 +877,21 @@ public class BatchJobRunner {
                 "echo 'Processing partition 3' && sleep 5",
                 "echo 'Processing partition 4' && sleep 5"
             );
-            
+
             String jobId = "job-" + System.currentTimeMillis();
             runner.runJob(jobId, commands);
-            
+
             // Get outputs
             Map<String, String> outputs = runner.getTaskOutputs(jobId);
-            
+
             System.out.println("\n=== Task Outputs ===");
             outputs.forEach((taskId, output) -> {
                 System.out.printf("%s: %s%n", taskId, output.trim());
             });
-            
+
             // Cleanup
             runner.cleanup(jobId);
-            
+
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());
             e.printStackTrace();

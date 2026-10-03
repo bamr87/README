@@ -66,14 +66,14 @@ var client = new ChatCompletionsClient(endpoint, credential);
 ```csharp
 var endpoint = Environment.GetEnvironmentVariable("PROJECT_ENDPOINT");
 AIProjectClient projectClient = new AIProjectClient(
-    new Uri(endpoint), 
+    new Uri(endpoint),
     new DefaultAzureCredential());
 ```
 
 ### 2.2 ✅ CORRECT: Get Persistent Agents Client
 ```csharp
 AIProjectClient projectClient = new AIProjectClient(
-    new Uri(endpoint), 
+    new Uri(endpoint),
     new DefaultAzureCredential());
 
 PersistentAgentsClient agentsClient = projectClient.GetPersistentAgentsClient();
@@ -114,7 +114,7 @@ foreach (AIProjectConnection connection in projectClient.Connections.GetConnecti
 ### 3.2 ✅ CORRECT: Get Specific Connection
 ```csharp
 AIProjectConnection connection = projectClient.Connections.GetConnection(
-    connectionName, 
+    connectionName,
     includeCredentials: true);
 
 Console.WriteLine($"Name: {connection.Name}");
@@ -136,7 +136,7 @@ await foreach (AIProjectConnection connection in projectClient.Connections.GetCo
 }
 
 AIProjectConnection conn = await projectClient.Connections.GetConnectionAsync(
-    connectionName, 
+    connectionName,
     includeCredentials: true);
 ```
 
@@ -279,9 +279,9 @@ evaluatorConfig.InitParams.Add("deployment_name", BinaryData.FromObjectAsJson("g
 // Create evaluation
 Evaluation evaluation = new Evaluation(
     data: new InputDataset("<dataset_id>"),
-    evaluators: new Dictionary<string, EvaluatorConfiguration> 
-    { 
-        { "relevance", evaluatorConfig } 
+    evaluators: new Dictionary<string, EvaluatorConfiguration>
+    {
+        { "relevance", evaluatorConfig }
     }
 )
 {
@@ -345,8 +345,8 @@ PersistentAgentThread thread = await agentsClient.Threads.CreateThreadAsync();
 
 // Add message
 await agentsClient.Messages.CreateMessageAsync(
-    thread.Id, 
-    MessageRole.User, 
+    thread.Id,
+    MessageRole.User,
     "Solve 3x + 11 = 14");
 
 // Create run
@@ -482,7 +482,7 @@ try
 catch (RequestFailedException ex)
 {
     Console.WriteLine($"Error: {ex.Status} - {ex.ErrorCode}: {ex.Message}");
-    
+
     switch (ex.Status)
     {
         case 404:

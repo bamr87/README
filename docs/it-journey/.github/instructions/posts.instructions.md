@@ -327,12 +327,12 @@ command --parameter value  # What this parameter does and why
 function exampleImplementation(parameters) {
     // Step-by-step explanation of the logic
     const result = processData(parameters);  // Why this processing is needed
-    
+
     // Error handling with explanation
     if (!result) {
         throw new Error('Specific error message');  // When this might occur
     }
-    
+
     return result;  // What we're returning and its format
 }
 

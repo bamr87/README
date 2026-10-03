@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -25,6 +26,8 @@ translated_from_sha: 7df0af9b5ebf
 translation_of: pages/_posts/science/2025-01-18-quantum-computing-explained.md
 translation_source_url: /posts/2025/01/18/quantum-computing-explained/
 ---
+# 2025 01 18 Quantum Computing Explained
+
 L'informatique quantique représente l'une des avancées technologiques les plus significatives de notre époque. Cet article décompose ces concepts complexes en éléments compréhensibles.
 
 ## Qu'est-ce que l'informatique quantique ?

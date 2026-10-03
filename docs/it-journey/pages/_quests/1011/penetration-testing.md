@@ -409,8 +409,8 @@ A report's value is measured by how easily a developer can act on it - clear sev
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
+**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)
 **🛡️ Security Specialist**: Advance to [Threat Modeling](/quests/1011/threat-modeling/)
 
 ## 📚 Resources

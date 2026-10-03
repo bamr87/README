@@ -24,7 +24,7 @@ Data plane SDK for Azure Cosmos DB NoSQL API operations — CRUD on documents, q
 npm install @azure/cosmos @azure/identity
 ```
 
-**Current Version**: 4.9.0  
+**Current Version**: 4.9.0
 **Node.js**: >= 20.0.0
 
 ## Environment Variables
@@ -360,7 +360,7 @@ const { resource, etag } = await container
 
 if (resource && etag) {
   resource.price = 899.99;
-  
+
   try {
     // Replace only if ETag matches
     await container.item("product-1", "electronics").replace(resource, {
@@ -384,27 +384,27 @@ import {
   Container,
   Item,
   Items,
-  
+
   // Operations
   OperationInput,
   BulkOperationType,
   PatchOperation,
-  
+
   // Queries
   SqlQuerySpec,
   SqlParameter,
   FeedOptions,
-  
+
   // Partition Keys
   PartitionKeyDefinition,
   PartitionKeyDefinitionVersion,
   PartitionKeyKind,
-  
+
   // Responses
   ItemResponse,
   FeedResponse,
   ResourceResponse,
-  
+
   // Errors
   ErrorResponse,
 } from "@azure/cosmos";

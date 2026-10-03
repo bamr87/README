@@ -116,10 +116,10 @@ This directory contains IT-Journey's collection of web development articles, tut
 
 ### Frontend Development Progression
 
-1. **Foundation** 
+1. **Foundation**
    - JavaScript fundamentals and testing
    - Basic HTML/CSS knowledge
-   
+
 2. **Static Sites**
    - Jekyll and GitHub Pages basics
    - Site structure and navigation

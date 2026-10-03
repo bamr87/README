@@ -1,10 +1,13 @@
 ---
+
 gamename: blacksun
 layout: default
 level: 4
 source_file: blacksun4.md
 title: Blacksun4
 ---
+# Blacksun4
+
 level4 is an installation of Apache and PHP with an introduced heap vulnerability.
 
 The introduced vulnerability is as follows:

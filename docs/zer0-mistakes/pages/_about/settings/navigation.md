@@ -1,4 +1,5 @@
 ---
+
 excerpt: View and export navigation menu structures.
 icon: material/sign-direction
 lastmod: 2026-04-04 00:00:00+00:00
@@ -9,6 +10,8 @@ source_file: navigation.md
 source_icon: bi-signpost-2
 title: Navigation
 ---
+# Navigation
+
 <ul class="nav nav-tabs" id="navTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#pane-overview" type="button" role="tab" aria-controls="pane-overview" aria-selected="true">

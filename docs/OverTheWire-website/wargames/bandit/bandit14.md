@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 14
 source_file: bandit14.md
 title: Bandit14
 ---
+# Bandit14
+
 Level Goal
 ----------
 The password for the next level is stored in
@@ -12,9 +15,9 @@ The password for the next level is stored in
 bandit14**. For this level, you don't get the next password, but you
 get a private SSH key that can be used to log into the next level.
 Look at the commands that logged you into previous bandit levels,
-and find out how to use the key for this level.  
-If you need help with this level: a hint file can be found in the home directory.  
-Make sure to read the error messages as they are informative.  
+and find out how to use the key for this level.
+If you need help with this level: a hint file can be found in the home directory.
+Make sure to read the error messages as they are informative.
 
 Commands you may need to solve this level
 -----------------------------------------

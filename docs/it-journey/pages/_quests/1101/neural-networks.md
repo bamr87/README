@@ -428,8 +428,8 @@ print("Predictions:", model(X).detach().round().ravel().tolist())
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [Computer Vision](/quests/1101/computer-vision/)
 
 ## 📚 Resources

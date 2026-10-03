@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Development
@@ -25,6 +26,8 @@ translated_from_sha: 74c542fe7384
 translation_of: pages/_posts/development/2026-04-28-observability-for-small-apps.md
 translation_source_url: /posts/2026/04/28/observability-for-small-apps/
 ---
+# 2026 04 28 Observability For Small Apps
+
 L'observabilité peut ressembler à un projet d'ingénierie de plateforme, mais les petites applications en ont besoin aussi. La différence, c'est l'ampleur. Une petite application n'a pas besoin d'un programme de télémétrie gigantesque dès le premier jour. Elle a besoin d'une visibilité suffisante pour répondre rapidement à trois questions.
 
 1. L'application fonctionne-t-elle ?

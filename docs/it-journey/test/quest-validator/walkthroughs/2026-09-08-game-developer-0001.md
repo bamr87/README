@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-09-08T00:00:00.000Z'
 level: '0001'
@@ -24,6 +25,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 09 08 Game Developer 0001
 ---
+# 2026 09 08 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked **window 2 of 6** of the **🎮 Game Developer → Level 0001 "Web Fundamentals" (🌱 Apprentice)** path — 5 of the level's 26 quests, in the exact order `walk-plan.json` gave me — against the workflow's **sealed** execute-mode engine evidence (real commands run in a disposable sandbox, not model assertions): *GitHub Pages Basics*, *Jekyll Fundamentals*, *YAML Configuration*, *Git Workflow Mastery*, and *Liquid Templating*.

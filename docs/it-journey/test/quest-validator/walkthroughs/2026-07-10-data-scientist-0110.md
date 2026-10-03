@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-10T00:00:00.000Z'
 level: '0110'
@@ -24,6 +25,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 10 Data Scientist 0110
 ---
+# 2026 07 10 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the **closing window of the Data Scientist "Database Mastery" (0110) Adventurer** level as a learner: quests **6–8 of 8** — *Backup and Recovery*, *Query Optimization*, and *Connection Pooling* — in dependency order. Evidence is the workflow-sealed **execute-mode** run of the agentic engine, which provisioned a live PostgreSQL 16 sandbox and ran each quest's safe commands for real; I then re-read all three quests in plan order and reasoned about the linked journey.

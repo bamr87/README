@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-24T00:00:00.000Z'
 level: '1011'
@@ -14,6 +15,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 24 Security Specialist 1011
 ---
+# 2026 07 24 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I played the first 5 of the 12 level-1011 quests on the **Security Specialist** path (Warrior tier, theme *Security & Compliance*), walking them in the planner's order as a learner would, and reasoning about the chain while consuming the workflow-sealed execute-engine evidence. The engine actually ran each quest's safe snippets in a disposable sandbox: **2 pass · 3 warn · 0 fail**, average **72.8%**.

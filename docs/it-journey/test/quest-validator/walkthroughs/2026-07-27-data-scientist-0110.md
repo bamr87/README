@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-27T13:31:17.000Z'
 level: '0110'
@@ -21,6 +22,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 27 Data Scientist 0110
 ---
+# 2026 07 27 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the first window of the **Data Scientist → Level 0110 "Database Mastery"** arc — 5 of the level's 8 quests, in the dependency-sorted order the planner fixed: **Database Fundamentals → Data Modeling → SQL Mastery → Database Migrations → Database Security**. Evidence is the sealed `walk-evidence.json` the workflow pre-computed with the execute engine (real commands run against a live **PostgreSQL 16** container in the disposable sandbox); I consumed it as-is and then re-read every quest source to reason about the linked journey.

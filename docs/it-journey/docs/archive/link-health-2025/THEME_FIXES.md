@@ -57,9 +57,9 @@ This caused link health checks to report 353 broken URLs for social sharing butt
 
 ## Pull Request
 
-**Repository:** bamr87/zer0-mistakes  
-**Branch:** fix/social-button-urls  
-**PR:** https://github.com/bamr87/zer0-mistakes/pull/15  
+**Repository:** bamr87/zer0-mistakes
+**Branch:** fix/social-button-urls
+**PR:** https://github.com/bamr87/zer0-mistakes/pull/15
 **Commit:** 866e26b
 
 ## Impact
@@ -128,7 +128,7 @@ This caused link health checks to report 353 broken URLs for social sharing butt
 
 ---
 
-**Version:** 1.0  
-**Date:** 2025-12-12  
-**Author:** bamr87  
+**Version:** 1.0
+**Date:** 2025-12-12
+**Author:** bamr87
 **Status:** Complete (PR created, awaiting merge)

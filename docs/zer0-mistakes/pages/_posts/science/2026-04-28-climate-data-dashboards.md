@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -19,6 +20,8 @@ tags:
 - decision-science
 title: 2026 04 28 Climate Data Dashboards
 ---
+# 2026 04 28 Climate Data Dashboards
+
 Climate data is abundant, but abundance does not automatically create insight. Sensor networks, satellite products, field reports, and historical records often live in separate systems. A useful dashboard turns that scattered evidence into a decision people can make today.
 
 The challenge is not only technical. It is editorial. A dashboard has to decide what matters, what can be hidden, and what needs attention now.

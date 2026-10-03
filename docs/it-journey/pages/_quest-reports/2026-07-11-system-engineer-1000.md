@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 11 System Engineer 1000
 verdict: fail
 walk_date: '2026-07-11'
 ---
+# 2026 07 11 System Engineer 1000
+
 > **Slice** `system-engineer/1000` · **Level** 1000 (Cloud Computing) · **Warrior tier** · **Engine verdict** ❌ fail (avg 48.5%) · **Walked** 2026-07-11
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-11-system-engineer-1000.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-11-system-engineer-1000.md)

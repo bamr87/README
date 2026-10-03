@@ -891,7 +891,7 @@ layout: default
 /* ============================================================
    Zer0-Mistakes Jekyll Theme - Main Stylesheet
    ============================================================
-   
+
    Purpose: Custom styles for zer0-mistakes theme
    Dependencies: Bootstrap 5.3.3, Bootstrap Icons 1.10.3
    Author: Amr Abdel-Motaleb

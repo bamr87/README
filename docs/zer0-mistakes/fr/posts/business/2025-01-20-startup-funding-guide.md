@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Business
@@ -25,6 +26,8 @@ translated_from_sha: 827630eab154
 translation_of: pages/_posts/business/2025-01-20-startup-funding-guide.md
 translation_source_url: /posts/2025/01/20/startup-funding-guide/
 ---
+# 2025 01 20 Startup Funding Guide
+
 Créer une entreprise est passionnant, mais obtenir un financement peut être l'un des aspects les plus difficiles de l'entrepreneuriat. Ce guide complet vous accompagnera à travers les différentes étapes du financement de startup et vous aidera à comprendre quelles options conviennent le mieux à votre entreprise.
 
 ## Comprendre les étapes de financement

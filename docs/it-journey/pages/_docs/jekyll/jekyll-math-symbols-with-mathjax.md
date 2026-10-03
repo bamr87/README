@@ -1,4 +1,5 @@
 ---
+
 date: 2022-06-05 13:48:57+00:00
 index: 8126
 key: tutorial
@@ -7,10 +8,12 @@ mathjax: true
 source_file: jekyll-math-symbols-with-mathjax.md
 subcategory: jekyll
 tags:
-- MathJax
-- Mathematic
+- mathjax
+- mathematic
 title: Jekyll Math Symbols With Mathjax
 ---
+# Jekyll Math Symbols With Mathjax
+
 > Display mathematical notation in web pages with MathJax.
 
 ## 1. Math Symbols

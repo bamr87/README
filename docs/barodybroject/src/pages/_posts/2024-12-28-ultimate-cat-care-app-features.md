@@ -1,4 +1,5 @@
 ---
+
 author: mariam (cat enthusiast)
 description: Explore essential features for a cat care app that caters to cat owners
   and enthusiasts, ensuring comprehensive resources related to cat care, health, and
@@ -8,6 +9,8 @@ slug: ultimate-cat-care-app-features
 source_file: 2024-12-28-ultimate-cat-care-app-features.md
 title: 2024 12 28 Ultimate Cat Care App Features
 ---
+# 2024 12 28 Ultimate Cat Care App Features
+
 That sounds like a fantastic idea! Creating an app dedicated to cats can be a valuable resource for cat owners and enthusiasts alike. Here are some key features and content ideas that you could incorporate into your app:
 
 ### Key Features

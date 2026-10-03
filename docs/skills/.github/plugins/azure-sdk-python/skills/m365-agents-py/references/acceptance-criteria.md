@@ -244,7 +244,7 @@ async def on_poem_message(context: TurnContext, _state: TurnState):
         messages=[...],
         stream=True,
     )
-    
+
     try:
         async for chunk in streamed_response:
             if chunk.choices and chunk.choices[0].delta.content:

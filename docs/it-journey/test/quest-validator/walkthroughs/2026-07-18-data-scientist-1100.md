@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-18T00:00:00.000Z'
 level: '1100'
@@ -19,6 +20,8 @@ theme: Data Engineering
 tier: Master ⚡
 title: 2026 07 18 Data Scientist 1100
 ---
+# 2026 07 18 Data Scientist 1100
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 15 quests) of the **Data Scientist → Level 1100 "Data Engineering" (Master ⚡)** slice as a learner, driving the agentic execute engine over each quest in a disposable sandbox and then reasoning about the linked journey by reading each quest's source. **Headline verdict: `warn`** — average **68.8%**, with **1 pass, 3 warn, 1 fail**. Every quest's *conceptual* content is sound and everything ran **safely** (safety scored 5/5 across all five), but **four of the five quests contain at least one concrete, reproducible defect that stops a learner cold if they copy-paste literally** — a Jinja `{% raw %}` escaping leak, a broken watermark SQL column, BSD-only `sed`/default-branch assumptions, a mismatched "Expected" output line, and missing setup steps.

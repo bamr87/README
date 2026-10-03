@@ -8,7 +8,7 @@ title: 'Acceptance Criteria: azure-ai-contentsafety-ts'
 
 This document defines the acceptance criteria for code generated using the `@azure-rest/ai-content-safety` SDK for TypeScript/JavaScript.
 
-**Package:** `@azure-rest/ai-content-safety`  
+**Package:** `@azure-rest/ai-content-safety`
 **Repository:** https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/contentsafety/ai-content-safety-rest
 
 > **Note:** This is a REST client library. Please refer to [REST client docs](https://github.com/Azure/azure-sdk-for-js/blob/main/documentation/rest-clients.md).

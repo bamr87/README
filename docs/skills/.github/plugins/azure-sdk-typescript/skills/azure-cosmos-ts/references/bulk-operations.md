@@ -72,7 +72,7 @@ interface PatchOperationInput {
   };
 }
 
-type OperationInput = 
+type OperationInput =
   | CreateOperationInput
   | UpsertOperationInput
   | ReadOperationInput
@@ -84,11 +84,11 @@ type OperationInput =
 ## Basic Bulk Operations
 
 ```typescript
-import { 
-  CosmosClient, 
-  BulkOperationType, 
+import {
+  CosmosClient,
+  BulkOperationType,
   OperationInput,
-  BulkOperationResponse 
+  BulkOperationResponse
 } from "@azure/cosmos";
 
 const client = new CosmosClient({ endpoint, key });
@@ -99,9 +99,9 @@ const operations: OperationInput[] = [
   // Create
   {
     operationType: BulkOperationType.Create,
-    resourceBody: { 
-      id: "item-1", 
-      partitionKey: "category-a", 
+    resourceBody: {
+      id: "item-1",
+      partitionKey: "category-a",
       name: "Item 1",
       price: 10.99
     }
@@ -109,9 +109,9 @@ const operations: OperationInput[] = [
   // Upsert
   {
     operationType: BulkOperationType.Upsert,
-    resourceBody: { 
-      id: "item-2", 
-      partitionKey: "category-a", 
+    resourceBody: {
+      id: "item-2",
+      partitionKey: "category-a",
       name: "Item 2",
       price: 20.99
     }
@@ -127,9 +127,9 @@ const operations: OperationInput[] = [
     operationType: BulkOperationType.Replace,
     id: "item-4",
     partitionKey: "category-b",
-    resourceBody: { 
-      id: "item-4", 
-      partitionKey: "category-b", 
+    resourceBody: {
+      id: "item-4",
+      partitionKey: "category-b",
       name: "Updated Item 4",
       price: 15.99
     }
@@ -341,7 +341,7 @@ async function bulkOperationsChunked<T extends Record<string, unknown>>(
   // Process in chunks
   for (let i = 0; i < items.length; i += chunkSize) {
     const chunk = items.slice(i, i + chunkSize);
-    
+
     const operations: OperationInput[] = chunk.map(item => ({
       operationType,
       resourceBody: item
@@ -376,13 +376,13 @@ interface BulkOperationResponse extends Array<OperationResponse> {}
 interface OperationResponse {
   /** HTTP status code */
   statusCode: number;
-  
+
   /** Request charge (RUs) for this operation */
   requestCharge: number;
-  
+
   /** ETag of the resource (for successful operations) */
   eTag?: string;
-  
+
   /** Resource body (for read/create/upsert/replace) */
   resourceBody?: Record<string, unknown>;
 }
@@ -426,14 +426,14 @@ async function bulkWithRetry(
     }
 
     console.log(`Retrying ${failedOps.length} rate-limited operations...`);
-    
+
     // Exponential backoff
-    await new Promise(resolve => 
+    await new Promise(resolve =>
       setTimeout(resolve, Math.pow(2, retryCount) * 1000)
     );
 
     const retryResponse = await container.items.bulk(failedOps);
-    
+
     // Update original response with retry results
     retryResponse.forEach((result, i) => {
       response[failedIndices[i]] = result;

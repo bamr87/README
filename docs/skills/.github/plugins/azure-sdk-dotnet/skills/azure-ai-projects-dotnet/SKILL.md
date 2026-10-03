@@ -47,7 +47,7 @@ using Azure.AI.Projects;
 
 var endpoint = Environment.GetEnvironmentVariable("PROJECT_ENDPOINT");
 AIProjectClient projectClient = new AIProjectClient(
-    new Uri(endpoint), 
+    new Uri(endpoint),
     new DefaultAzureCredential());
 ```
 
@@ -155,7 +155,7 @@ foreach (AIProjectConnection connection in projectClient.Connections.GetConnecti
 
 // Get specific connection
 AIProjectConnection conn = projectClient.Connections.GetConnection(
-    connectionName, 
+    connectionName,
     includeCredentials: true);
 
 // Get default connection
@@ -241,9 +241,9 @@ evaluatorConfig.InitParams.Add("deployment_name", BinaryData.FromObjectAsJson("g
 // Create evaluation
 Evaluation evaluation = new Evaluation(
     data: new InputDataset("<dataset_id>"),
-    evaluators: new Dictionary<string, EvaluatorConfiguration> 
-    { 
-        { "relevance", evaluatorConfig } 
+    evaluators: new Dictionary<string, EvaluatorConfiguration>
+    {
+        { "relevance", evaluatorConfig }
     }
 )
 {

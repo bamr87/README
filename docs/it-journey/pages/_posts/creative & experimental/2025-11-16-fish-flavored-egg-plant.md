@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories:
 - Posts
@@ -12,6 +13,8 @@ sidebar:
 source_file: 2025-11-16-fish-flavored-egg-plant.md
 title: 2025 11 16 Fish Flavored Egg Plant
 ---
+# 2025 11 16 Fish Flavored Egg Plant
+
 ## Ingredients
 
 | Qty   |  UM  | Ingredient                    | Notes                               |

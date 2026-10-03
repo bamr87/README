@@ -1,4 +1,5 @@
 ---
+
 author: Quest Master IT-Journey Team
 categories:
 - Quests
@@ -78,6 +79,8 @@ validation_criteria:
 - Respect rate limits (no 429s in final run) and implement basic backoff
 - Write a short readme summarizing findings
 ---
+# Edgar
+
 🌟 Welcome, Brave Data Sorcerer! 🌟
 
 In the fog-shrouded realms of Financea, where gold flows like enchanted rivers and secrets are hoarded in towering vaults, stands the impregnable Data Castle ruled by the tyrannical King EDGAR. This ancient monarch, Sovereign of Electronic Data Gathering, Analysis, and Retrieval, guards the sacred scrolls of corporate filings—balance sheets that shimmer like dragon scales, income statements pulsing with the lifeblood of profits, and trends that whisper prophecies of market booms and busts.

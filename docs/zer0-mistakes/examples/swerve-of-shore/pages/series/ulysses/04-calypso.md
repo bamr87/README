@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 4 of Ulysses — Calypso (8am again, this time at 7 Eccles
   Street).
 hide_intro: true
@@ -11,6 +12,8 @@ sidebar:
 source_file: 04-calypso.md
 title: 04 Calypso
 ---
+# 04 Calypso
+
 {% include page-header.html %}
 
 Episode 4 of *Ulysses*. 8am again, this time at 7 Eccles Street.

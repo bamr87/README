@@ -381,7 +381,7 @@ catch { }
 public class MapsService
 {
     private readonly MapsSearchClient _client;
-    
+
     public MapsService()
     {
         var credential = new AzureKeyCredential(
@@ -389,13 +389,13 @@ public class MapsService
             ?? throw new InvalidOperationException("AZURE_MAPS_SUBSCRIPTION_KEY not set"));
         _client = new MapsSearchClient(credential);
     }
-    
+
     public async Task<GeocodingResponse> GeocodeAddressAsync(string address)
     {
         var result = await _client.GetGeocodingAsync(address);
         return result.Value;
     }
-    
+
     public async Task<GeocodingResponse> ReverseGeocodeAsync(double longitude, double latitude)
     {
         var result = await _client.GetReverseGeocodingAsync(new GeoPosition(longitude, latitude));
@@ -411,7 +411,7 @@ public async Task<List<GeoPosition>> GeocodeMultipleAsync(List<string> addresses
 {
     var queries = addresses.Select(a => new GeocodingQuery { Query = a }).ToList();
     var results = await _client.GetGeocodingBatchAsync(queries);
-    
+
     return results.Value.BatchItems
         .SelectMany(item => item.Features)
         .Select(f => new GeoPosition(f.Geometry.Coordinates[0], f.Geometry.Coordinates[1]))
@@ -463,7 +463,7 @@ Response<GeocodingResponse> result = await client.GetGeocodingAsync("1 Microsoft
 foreach (var feature in result.Value.Features)
 {
     var address = feature.Properties.Address;
-    
+
     Console.WriteLine($"Street: {address.AddressLine}");
     Console.WriteLine($"City: {address.Locality}");
     Console.WriteLine($"State: {address.AdminDistrict}");

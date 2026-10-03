@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-21T00:00:00.000Z'
 level: '1011'
@@ -16,6 +17,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 21 Security Specialist 1011
 ---
+# 2026 07 21 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 - **Character / path:** 🛡️ Security Specialist

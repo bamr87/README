@@ -1,4 +1,5 @@
 ---
+
 author: Digital Visionary
 description: A look into how AI could transform tuition fees into subscription services,
   making education more accessible.
@@ -7,6 +8,8 @@ slug: ai-revolutionizes-tuition
 source_file: 2025-03-16-ai-revolutionizes-tuition.md
 title: 2025 03 16 Ai Revolutionizes Tuition
 ---
+# 2025 03 16 Ai Revolutionizes Tuition
+
 **LinkedIn Post Content:**
 
 🌐🎓 **Navigating the Digital Dawn: AI Meets Academia!**

@@ -127,29 +127,29 @@ graph TB
     subgraph "Development Environment"
         A[Jekyll Site<br/>Local Development] --> B[Git Push<br/>to Repository]
     end
-    
+
     subgraph "CI/CD Pipeline"
         B --> C[GitHub Actions<br/>Trigger]
         C --> D[Build Jekyll Site<br/>npm/bundler]
         D --> E[Generate Static Files<br/>HTML/CSS/JS]
         E --> F[Deploy to Staging<br/>Preview Environment]
     end
-    
+
     subgraph "Azure Cloud Infrastructure"
         F --> G[Azure Static Web Apps<br/>Production Environment]
         G --> H[Azure CDN<br/>Global Distribution]
         H --> I[Custom Domain<br/>SSL Certificate]
     end
-    
+
     subgraph "User Access"
         I --> J[Global Users<br/>HTTPS Access]
     end
-    
+
     subgraph "Monitoring & Management"
         G --> K[Azure Monitor<br/>Performance Metrics]
         K --> L[Azure Portal<br/>Management Dashboard]
     end
-    
+
     style A fill:#e1f5fe
     style G fill:#c8e6c9
     style J fill:#fff3e0
@@ -357,19 +357,19 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-      
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      
+
       - name: Install dependencies
         run: bundle install
-      
+
       - name: Build Jekyll site
         run: bundle exec jekyll build --config _config.yml,_config_dev.yml
-      
+
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

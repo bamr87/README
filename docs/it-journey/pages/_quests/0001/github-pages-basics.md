@@ -470,8 +470,8 @@ Before you summon your site to a live URL, walk this final checklist:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Git Workflow Mastery](/quests/0001/git-workflow-mastery/)  
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
+**💻 Software Developer**: Continue to [Git Workflow Mastery](/quests/0001/git-workflow-mastery/)
+**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)
 **🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
 
 ## 📚 Resources

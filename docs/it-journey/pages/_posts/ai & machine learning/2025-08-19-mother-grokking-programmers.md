@@ -8,9 +8,9 @@ comments: false
 date: 2025-08-21 22:00:59+00:00
 description: A satirical take on the evolution of programmers from being programmed
   to grokking off all day.
-excerpt: In the grand theater of technological evolution, programmers have danced
-  a peculiar jig—from rigid automatons to frantic coders, and now, to blissful grokkers
-  who might just be one prompt away from obsolescence.
+excerpt: "In the grand theater of technological evolution, programmers have danced\
+  \ a peculiar jig\u2014from rigid automatons to frantic coders, and now, to blissful\
+  \ grokkers who might just be one prompt away from obsolescence."
 keywords: {}
 lastmod: 2025-08-19 21:42:52.468000+00:00
 permalink: null
@@ -22,7 +22,7 @@ sub-title: null
 tags:
 - satire
 - programming
-- AI
+- ai
 - future-tech
 title: 'Mother Grokking Programmers: The Evolution of Code Monkeys'
 ---

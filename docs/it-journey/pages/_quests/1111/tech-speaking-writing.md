@@ -403,8 +403,8 @@ The most common talk failure is *too much content*. Cut ruthlessly: a talk that 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Open Source Contribution](/quests/1111/open-source-contribution/)  
-**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)  
+**💻 Software Developer**: Continue to [Open Source Contribution](/quests/1111/open-source-contribution/)
+**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)
 **🛡️ Security Specialist**: Advance to [Building Technical Communities](/quests/1111/building-technical-communities/)
 
 ## 📚 Resources

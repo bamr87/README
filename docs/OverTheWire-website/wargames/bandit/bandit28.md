@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 28
 source_file: bandit28.md
 title: Bandit28
 ---
+# Bandit28
+
 Level Goal
 ----------
 There is a git repository at `ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo` via the port `2220`. The password for the user `bandit27-git` is the same as for the user `bandit27`.

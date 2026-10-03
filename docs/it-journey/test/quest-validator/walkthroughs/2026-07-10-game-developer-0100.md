@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-10 00:00:00+00:00
 level: '0100'
@@ -20,6 +21,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 10 Game Developer 0100
 ---
+# 2026 07 10 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked the planned **3-quest window** (window 2 of 2, offset 5) of the **Game Developer → Level 0100 (Frontend & Containers, Adventurer ⚔️)** slice as a learner would, in plan order, backed by the workflow's sealed execute-engine evidence (`walk-evidence.json`). Level 0100 holds **8 quests total**; this window covers 3 of them.

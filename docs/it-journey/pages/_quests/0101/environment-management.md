@@ -391,8 +391,8 @@ Because the definition is identical, staging genuinely rehearses what production
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secrets Management](/quests/0101/secrets-management/)  
-**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)  
+**💻 Software Developer**: Continue to [Secrets Management](/quests/0101/secrets-management/)
+**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

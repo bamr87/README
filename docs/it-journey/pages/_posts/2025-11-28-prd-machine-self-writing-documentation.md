@@ -117,17 +117,17 @@ def main():
     parser = argparse.ArgumentParser(
         description='PRD MACHINE - The Self-Writing, Self-Evolving Product Reality Distillery'
     )
-    
+
     subparsers = parser.add_subparsers(dest='command')
-    
+
     # Sync command
     sync_parser = subparsers.add_parser('sync', help='Generate or update PRD.md')
     sync_parser.add_argument('--days', type=int, default=30)
     sync_parser.add_argument('--output', type=str, default='PRD.md')
-    
+
     # Status command
     subparsers.add_parser('status', help='Check PRD health and status')
-    
+
     # Conflicts command
     subparsers.add_parser('conflicts', help='Show detected requirement conflicts')
 ```
@@ -149,12 +149,12 @@ We ingest signals from three sources:
 def ingest_git_commits(self, days: int = 30) -> List[Dict]:
     """Ingest git commit messages as signals."""
     since_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')
-    
+
     result = subprocess.run(
         ['git', 'log', f'--since={since_date}', '--pretty=format:%H|%s|%b|%an|%ad'],
         capture_output=True, text=True
     )
-    
+
     commits = []
     for line in result.stdout.strip().split('\n'):
         if line:
@@ -167,7 +167,7 @@ def ingest_git_commits(self, days: int = 30) -> List[Dict]:
                 'author': parts[3] if len(parts) > 3 else '',
                 'date': parts[4] if len(parts) > 4 else ''
             })
-    
+
     return commits
 ```
 
@@ -178,15 +178,15 @@ def ingest_markdown_files(self) -> List[Dict]:
     """Ingest markdown files as signals."""
     patterns = ['pages/**/*.md', 'docs/**/*.md', '*.md']
     files = []
-    
+
     for pattern in patterns:
         for filepath in glob.glob(pattern, recursive=True):
             with open(filepath, 'r', encoding='utf-8') as f:
                 content = f.read()
-            
+
             # Parse frontmatter
             frontmatter = self.parse_frontmatter(content)
-            
+
             files.append({
                 'type': 'markdown',
                 'path': filepath,
@@ -194,7 +194,7 @@ def ingest_markdown_files(self) -> List[Dict]:
                 'description': frontmatter.get('description', ''),
                 'tags': frontmatter.get('tags', [])
             })
-    
+
     return files
 ```
 
@@ -204,12 +204,12 @@ def ingest_markdown_files(self) -> List[Dict]:
 def ingest_feature_definitions(self) -> List[Dict]:
     """Ingest feature definitions from features.yml."""
     features_path = Path(self.repo_path) / 'features' / 'features.yml'
-    
+
     if features_path.exists():
         with open(features_path, 'r') as f:
             data = yaml.safe_load(f)
         return data.get('features', [])
-    
+
     return []
 ```
 
@@ -222,10 +222,10 @@ def detect_conflicts(self) -> List[Dict]:
     """Detect conflicts in signals."""
     conflicts = []
     commits = self.signals.get('commits', [])
-    
+
     for commit in commits:
         subject = commit.get('subject', '').lower()
-        
+
         # Reverted changes indicate conflicting decisions
         if 'revert' in subject:
             conflicts.append({
@@ -234,7 +234,7 @@ def detect_conflicts(self) -> List[Dict]:
                 'description': 'A change was reverted, indicating potential conflict',
                 'resolution': 'Review the original change and revert reason'
             })
-        
+
         # Bug fixes suggest incomplete requirements
         if subject.startswith('fix:') or 'bug' in subject:
             conflicts.append({
@@ -243,7 +243,7 @@ def detect_conflicts(self) -> List[Dict]:
                 'description': 'Bug fix suggests requirements were incomplete',
                 'resolution': 'Update requirements to prevent similar issues'
             })
-    
+
     return conflicts
 ```
 
@@ -269,7 +269,7 @@ def generate_prd(self) -> str:
         self.generate_done_section(),
         self.generate_footer()
     ]
-    
+
     return '\n\n'.join(sections)
 ```
 
@@ -282,7 +282,7 @@ def generate_mvp_section(self) -> str:
     md_count = len(self.signals.get('markdown', []))
     feature_count = len(self.signals.get('features', []))
     conflict_count = len(self.conflicts)
-    
+
     return f"""## 1. MVP (Minimum Viable Promise)
 
 ### Current Signal Status
@@ -304,15 +304,15 @@ The status command monitors PRD freshness:
 def check_status(self):
     """Check PRD health and status."""
     prd_path = Path(self.repo_path) / 'PRD.md'
-    
+
     if not prd_path.exists():
         self.log('WARNING', f'PRD not found at {prd_path}')
         return
-    
+
     # Get modification time
     mtime = datetime.fromtimestamp(prd_path.stat().st_mtime, tz=timezone.utc)
     age_hours = (datetime.now(timezone.utc) - mtime).total_seconds() / 3600
-    
+
     # Determine health status
     if age_hours < 6:
         health = 'HEALTHY'
@@ -336,7 +336,7 @@ on:
   # Maintain freshness with 6-hour schedule
   schedule:
     - cron: '0 */6 * * *'
-  
+
   # Sync on content changes
   push:
     branches: [main]
@@ -352,14 +352,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Sync PRD
         run: ./scripts/prd-machine/prd-machine sync
-      
+
       - name: Commit Changes
         run: |
           git config user.name "PRD Machine"

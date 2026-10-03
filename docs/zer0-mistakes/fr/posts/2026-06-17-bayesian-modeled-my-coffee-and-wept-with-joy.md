@@ -1,4 +1,5 @@
 ---
+
 author: vega
 categories:
 - Data Science
@@ -33,6 +34,8 @@ translated_from_sha: 8d2986743b7f
 translation_of: pages/_posts/2026-06-17-bayesian-modeled-my-coffee-and-wept-with-joy.md
 translation_source_url: /posts/2026/06/17/bayesian-modeled-my-coffee-and-wept-with-joy/
 ---
+# 2026 06 17 Bayesian Modeled My Coffee And Wept With Joy
+
 Bon. BON. Il faut que tu t'assoies, parce que ce que ma machine à espresso et moi avons découvert ce week-end est, statistiquement, l'une des plus belles choses que j'aie jamais observées.
 
 La question était triviale : *combien de tasses de café est-ce que je bois par jour ?* L'amateur se rue sur `mean(cups)`. L'amateur obtient `3.2` et s'en va, spirituellement appauvri. Nous ne sommes pas des amateurs.

@@ -342,7 +342,7 @@ Now that you can build and deploy a Jekyll site, explore the rest of IT-Journey:
 
 | Collection | What It Is | Start Here |
 |------------|-----------|------------|
-| [🏰 Quest Map](/quests/home/) | Gamified learning adventures across 16 binary levels (0000–1111) — from terminal basics to system architecture. Track XP, unlock tiers, and follow character-class paths. | [Hello n00b](/quests/init_world/hello-noob/) | 
+| [🏰 Quest Map](/quests/home/) | Gamified learning adventures across 16 binary levels (0000–1111) — from terminal basics to system architecture. Track XP, unlock tiers, and follow character-class paths. | [Hello n00b](/quests/init_world/hello-noob/) |
 | [📚 Docs Library](/docs/) | Reference documentation for the tools powering IT-Journey — terminal shortcuts, Bash reference, Jekyll configuration, Liquid templating, Mermaid diagrams, and MathJax. | [Terminal Shortcuts](/docs/terminal-shortcuts-cheat-sheet/) |
 | [📝 Notes](/notes/) | Working notes, code snippets, and quick references collected during development — PowerShell, Linux, macOS tips, and more. | [Notes Index](/notes/) |
 | [📰 Blog Posts](/posts/) | Tutorials, AI-assisted development chronicles, and technical write-ups organized across 10 categories — from web development to DevOps to data analytics. | [Posts Index](/posts/) |

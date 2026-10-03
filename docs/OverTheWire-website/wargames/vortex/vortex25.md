@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 25
 source_file: vortex25.md
 title: Vortex25
 ---
+# Vortex25
+
 Crackploit
 ----------
 {% include beginNote.html title="Vortex 25 &rarr; 26 is missing" %}

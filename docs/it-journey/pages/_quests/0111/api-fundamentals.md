@@ -436,8 +436,8 @@ curl -s https://jsonplaceholder.typicode.com/posts/1 | jq '.title'
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [REST Principles](/quests/0111/rest-principles/)  
-**🏗️ System Engineer**: Explore [API Authentication](/quests/0111/api-authentication/)  
+**💻 Software Developer**: Continue to [REST Principles](/quests/0111/rest-principles/)
+**🏗️ System Engineer**: Explore [API Authentication](/quests/0111/api-authentication/)
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

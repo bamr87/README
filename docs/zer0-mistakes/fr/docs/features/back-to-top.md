@@ -45,7 +45,7 @@ Le bouton reste masqué en haut de la page et apparaît en fondu dès que vous d
 ### Balisage HTML
 
 ```html
-<button id="backToTopBtn" 
+<button id="backToTopBtn"
         class="btn btn-primary rounded-circle position-fixed"
         aria-label="Back to top"
         style="bottom: 20px; right: 20px; display: none; z-index: 1000;">

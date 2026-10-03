@@ -5,7 +5,7 @@ title: Script Directory Consolidation Plan
 <!--
 @file docs/script-consolidation-plan.md @description Comprehensive plan for consolidating and refactoring script directories @author IT-Journey Team <team@it-journey.org> @created 2025-07-07 @lastModified 2025-07-07 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Script directory cleanup and organization
 
 @relatedEvolutions

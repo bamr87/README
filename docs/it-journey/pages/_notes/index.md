@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - notes
@@ -33,6 +34,8 @@ tags:
 title: Index
 toc: false
 ---
+# Index
+
 Two kinds of notes live here. **Public notes** are the cheatsheets and references kept in this repository — the same for everyone, and the ones listed in the library below. **Your notes** are whatever you write or clip while you are here; they stay in this browser, and nothing is uploaded anywhere.
 
 The scissors button beside any code block on this site clips it to your board, along with a link back to the exact section it came from. Select a paragraph anywhere and the same option appears. Pin a page you keep returning to, drag the cards into an order that suits you, and the board will look the same when you come back.

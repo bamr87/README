@@ -379,8 +379,8 @@ Skipping a one-on-one quietly tells someone they don't matter. Protect the slot 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Career Advancement](/quests/1111/career-advancement/)  
-**🏗️ System Engineer**: Explore [Building Technical Communities](/quests/1111/building-technical-communities/)  
+**💻 Software Developer**: Continue to [Career Advancement](/quests/1111/career-advancement/)
+**🏗️ System Engineer**: Explore [Building Technical Communities](/quests/1111/building-technical-communities/)
 **🛡️ Security Specialist**: Advance to [Technical Leadership](/quests/1111/technical-leadership/)
 
 ## 📚 Resources

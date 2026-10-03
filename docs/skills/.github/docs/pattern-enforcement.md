@@ -75,7 +75,7 @@ Teams can enforce consistent patterns by sharing the same skill set:
 team-skills/
 ├── .github/skills/
 │   ├── azure-identity-py/      # Auth patterns
-│   ├── azure-cosmos-db-py/     # Data layer patterns  
+│   ├── azure-cosmos-db-py/     # Data layer patterns
 │   ├── fastapi-router-py/      # API patterns
 │   └── team-conventions/       # Custom team rules
 ```
@@ -152,7 +152,7 @@ repos:
         name: Type checking
         entry: mypy src/
         language: system
-        
+
       - id: lint
         name: Linting
         entry: ruff check src/
@@ -187,7 +187,7 @@ Skills provide implicit review criteria:
 class UserService:
     def __init__(self, client: CosmosClient, database: str, container: str):
         self.container = client.get_database_client(database).get_container_client(container)
-    
+
     async def get_user(self, user_id: str, partition_key: str) -> User:
         query = "SELECT * FROM c WHERE c.id = @id"
         params = [{"name": "@id", "value": user_id}]

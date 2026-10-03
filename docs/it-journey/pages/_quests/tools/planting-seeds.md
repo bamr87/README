@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories: []
 comments: false
@@ -28,6 +29,8 @@ source_file: planting-seeds.md
 tags: []
 title: Planting Seeds
 ---
+# Planting Seeds
+
 ## 🕸️ Knowledge Graph
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*

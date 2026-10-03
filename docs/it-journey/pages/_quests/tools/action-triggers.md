@@ -10,7 +10,7 @@ comments: false
 date: '2025-04-18T13:43:43.000Z'
 description: Unlock the power of automation with GitHub Actions! Streamline your workflows
   and enhance your CI/CD processes effortlessly.
-difficulty: 🟢 Easy
+difficulty: "\U0001F7E2 Easy"
 draft: false
 estimated_time: 30-60 minutes
 fmContentType: quest
@@ -35,10 +35,10 @@ skill_focus: devops
 source_file: action-triggers.md
 tags:
 - automation
-- CI/CD
-- GitHub Actions
+- ci/cd
+- github actions
 - workflows
-- YAML
+- yaml
 title: .github/workflows/main.yml
 ---
 **Ah yes, the winds of automation are calling!** You've chronicled your changelogs and blessed your docs, but now it's time to awaken the ancient machinery of your kingdom: **GitHub Actions.** This, dear dev-sorcerer, is where the magic truly begins to automate itself.

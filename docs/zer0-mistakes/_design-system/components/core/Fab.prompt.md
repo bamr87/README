@@ -1,7 +1,10 @@
 ---
+
 source_file: Fab.prompt.md
 title: Fab.Prompt
 ---
+# Fab.Prompt
+
 Circular floating action button for the zer0-mistakes bottom-right utility stack (back-to-top, chat, table-of-contents, local-graph). Sized by `--zer0-space-fab-size`, shadowed by `--zer0-shadow-fab`, layered by `--zer0-layer-fab-*`.
 
 ```jsx

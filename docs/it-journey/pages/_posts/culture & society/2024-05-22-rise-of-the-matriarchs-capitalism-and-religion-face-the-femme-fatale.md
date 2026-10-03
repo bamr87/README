@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - posts
@@ -10,7 +11,9 @@ section: Culture & Society
 source_file: 2024-05-22-rise-of-the-matriarchs-capitalism-and-religion-face-the-femme-fatale.md
 title: 2024 05 22 Rise Of The Matriarchs Capitalism And Religion Face The Femme Fatale
 ---
-Title: 
+# 2024 05 22 Rise Of The Matriarchs Capitalism And Religion Face The Femme Fatale
+
+Title:
 
 In a shocking turn of events, the rise of women in power has sent shockwaves through the seemingly unshakable pillars of modern society: capitalism and religion. As women ascend to the top of the corporate ladder and take the reins of religious institutions, the old boys' club is left reeling, desperately trying to maintain its grip on power.
 

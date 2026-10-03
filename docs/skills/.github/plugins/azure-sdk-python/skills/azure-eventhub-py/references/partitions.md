@@ -31,7 +31,7 @@ with producer:
     print(f"Event Hub: {eh_props['name']}")
     print(f"Partitions: {eh_props['partition_ids']}")
     print(f"Created: {eh_props['created_at']}")
-    
+
     # Get individual partition properties
     for partition_id in eh_props['partition_ids']:
         props = producer.get_partition_properties(partition_id)
@@ -131,7 +131,7 @@ When multiple consumers share a consumer group with a checkpoint store, partitio
 
 ```
 Consumer 1: Partitions 0, 1, 2
-Consumer 2: Partitions 3, 4, 5  
+Consumer 2: Partitions 3, 4, 5
 Consumer 3: Partitions 6, 7
 ```
 
@@ -170,7 +170,7 @@ async def on_event(partition_context, event):
     print(f"Consumer Group: {partition_context.consumer_group}")
     print(f"Event Hub: {partition_context.eventhub_name}")
     print(f"Namespace: {partition_context.fully_qualified_namespace}")
-    
+
     # Last enqueued event (if tracking enabled)
     if partition_context.last_enqueued_event_properties:
         props = partition_context.last_enqueued_event_properties
@@ -184,13 +184,13 @@ async def on_event(partition_context, event):
 ```python
 async def on_event(partition_context, event):
     props = partition_context.last_enqueued_event_properties
-    
+
     if props:
         # Calculate lag
         current_seq = event.sequence_number
         last_seq = props.sequence_number
         lag = last_seq - current_seq
-        
+
         if lag > 1000:
             print(f"WARNING: Partition {partition_context.partition_id} lag: {lag}")
 ```
@@ -206,7 +206,7 @@ async def process_partition(consumer, partition_id: str):
     async def on_event(partition_context, event):
         await process_event(event)
         await partition_context.update_checkpoint(event)
-    
+
     await consumer.receive(
         on_event=on_event,
         partition_id=partition_id
@@ -214,17 +214,17 @@ async def process_partition(consumer, partition_id: str):
 
 async def parallel_consume():
     consumer = EventHubConsumerClient(...)
-    
+
     async with consumer:
         # Get all partitions
         props = await consumer.get_eventhub_properties()
-        
+
         # Start parallel tasks for each partition
         tasks = [
             process_partition(consumer, pid)
             for pid in props['partition_ids']
         ]
-        
+
         await asyncio.gather(*tasks)
 ```
 
@@ -233,17 +233,17 @@ async def parallel_consume():
 ```python
 class PartitionBatcher:
     """Batch events by partition for efficient sending."""
-    
+
     def __init__(self, producer):
         self.producer = producer
         self.batches: dict[str, any] = {}
-    
+
     async def add(self, event: EventData, partition_key: str):
         if partition_key not in self.batches:
             self.batches[partition_key] = await self.producer.create_batch(
                 partition_key=partition_key
             )
-        
+
         try:
             self.batches[partition_key].add(event)
         except ValueError:
@@ -253,7 +253,7 @@ class PartitionBatcher:
                 partition_key=partition_key
             )
             self.batches[partition_key].add(event)
-    
+
     async def flush(self):
         for batch in self.batches.values():
             if batch:
@@ -310,19 +310,19 @@ class PartitionMonitor:
     def __init__(self):
         self.owned_partitions: set[str] = set()
         self.event_counts: dict[str, int] = {}
-    
+
     async def on_partition_initialize(self, partition_context):
         self.owned_partitions.add(partition_context.partition_id)
         print(f"Now own partitions: {self.owned_partitions}")
-    
+
     async def on_partition_close(self, partition_context, reason):
         self.owned_partitions.discard(partition_context.partition_id)
         print(f"Released {partition_context.partition_id}: {reason}")
-    
+
     async def on_event(self, partition_context, event):
         pid = partition_context.partition_id
         self.event_counts[pid] = self.event_counts.get(pid, 0) + 1
-        
+
         # Log distribution every 1000 events
         total = sum(self.event_counts.values())
         if total % 1000 == 0:

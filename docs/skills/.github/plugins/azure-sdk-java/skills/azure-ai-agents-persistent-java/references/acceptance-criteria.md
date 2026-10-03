@@ -377,25 +377,25 @@ ThreadRun run = client.createRun(threadId, options);
 ```java
 if (run.getStatus() == RunStatus.REQUIRES_ACTION) {
     RequiredAction requiredAction = run.getRequiredAction();
-    
+
     if (requiredAction instanceof SubmitToolOutputsAction) {
         SubmitToolOutputsAction submitAction = (SubmitToolOutputsAction) requiredAction;
         List<RequiredToolCall> toolCalls = submitAction.getSubmitToolOutputs().getToolCalls();
-        
+
         List<ToolOutput> outputs = new ArrayList<>();
-        
+
         for (RequiredToolCall toolCall : toolCalls) {
             if (toolCall instanceof RequiredFunctionToolCall) {
                 RequiredFunctionToolCall funcCall = (RequiredFunctionToolCall) toolCall;
                 String functionName = funcCall.getFunction().getName();
                 String arguments = funcCall.getFunction().getArguments();
-                
+
                 // Execute function and get result
                 String result = executeFunction(functionName, arguments);
                 outputs.add(new ToolOutput(toolCall.getId(), result));
             }
         }
-        
+
         // Submit tool outputs
         run = client.submitToolOutputsToRun(threadId, run.getId(), outputs);
     }
@@ -545,7 +545,7 @@ try {
     int statusCode = e.getResponse().getStatusCode();
     System.err.println("HTTP Status: " + statusCode);
     System.err.println("Error: " + e.getMessage());
-    
+
     switch (statusCode) {
         case 400: System.err.println("Bad request"); break;
         case 401: System.err.println("Unauthorized"); break;

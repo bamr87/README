@@ -420,8 +420,8 @@ When drift fires, you investigate and often **retrain**. This is where **CI/CD f
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [AI Ethics](/quests/1101/ai-ethics/)  
-**🏗️ System Engineer**: Explore [AI Ethics](/quests/1101/ai-ethics/)  
+**💻 Software Developer**: Continue to [AI Ethics](/quests/1101/ai-ethics/)
+**🏗️ System Engineer**: Explore [AI Ethics](/quests/1101/ai-ethics/)
 **📊 Data Scientist**: Advance to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)
 
 ## 📚 Resources

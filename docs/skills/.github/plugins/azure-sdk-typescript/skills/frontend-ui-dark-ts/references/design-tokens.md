@@ -329,7 +329,7 @@ Add these to your `globals.css` under `@layer components`:
 
   /* Glass input field */
   .glass-input {
-    @apply backdrop-blur-sm bg-white/5 border border-white/10 
+    @apply backdrop-blur-sm bg-white/5 border border-white/10
            placeholder:text-text-muted
            focus:border-brand focus:bg-white/[0.08] focus:outline-none
            transition-colors duration-200;
@@ -420,16 +420,16 @@ export const timing = {
 export const easing = {
   // Standard ease for most animations
   default: [0.25, 0.1, 0.25, 1],
-  
+
   // Ease out for entering elements
   easeOut: [0, 0, 0.2, 1],
-  
+
   // Ease in for exiting elements
   easeIn: [0.4, 0, 1, 1],
-  
+
   // Spring-like bounce
   spring: [0.34, 1.56, 0.64, 1],
-  
+
   // Smooth deceleration
   decelerate: [0, 0.7, 0.3, 1],
 };

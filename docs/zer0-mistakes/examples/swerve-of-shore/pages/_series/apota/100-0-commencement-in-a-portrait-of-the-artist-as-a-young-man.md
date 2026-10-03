@@ -1,4 +1,5 @@
 ---
+
 categories:
 - APOTA
 date: 2025-11-28
@@ -18,6 +19,8 @@ source_url: https://www.swerveofshore.com/post/100-0-commencement-in-a-portrait-
 sub-title: A Portrait of the Artist as a Young Man
 title: 100 0 Commencement In A Portrait Of The Artist As A Young Man
 ---
+# 100 0 Commencement In A Portrait Of The Artist As A Young Man
+
 From the *A Portrait of the Artist as a Young Man* thread on [Swerve of Shore](https://www.swerveofshore.com/post/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man), by Brandon Nicklaus.
 
 > One quiet evening, sunk into the corner of a soft couch with the fire throwing little gold flickers across the room, I was doing the usual—aimlessly scrolling through social media—when a small announcement stopped me in my tracks: The James Joyce Centre was offering a course on A Portrait of the Artist as a Young Man. Intriguing. Impulsive click. It felt like an invitation. I clicked. I signed up. And just like that, six weeks of Joyce, Dublin, and Dedalus awaited me.

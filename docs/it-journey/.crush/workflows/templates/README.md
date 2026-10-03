@@ -9,10 +9,10 @@ This directory contains reusable workflow definitions for content creation, refi
 ## Available Templates
 
 ### 1. article-quest-creation.yml ✅
-**Status**: Fully Defined  
-**Purpose**: Complete content creation pipeline  
-**Steps**: Draft article → Create quest → Expand → Refine → Improve (3x) → Validate → Publish  
-**Duration**: ~60 minutes  
+**Status**: Fully Defined
+**Purpose**: Complete content creation pipeline
+**Steps**: Draft article → Create quest → Expand → Refine → Improve (3x) → Validate → Publish
+**Duration**: ~60 minutes
 **Use When**: Creating new educational content with complementary quest
 
 **Inputs Required**:
@@ -28,24 +28,24 @@ This directory contains reusable workflow definitions for content creation, refi
 - README update instructions
 
 ### 2. quest-only.yml ⏳
-**Status**: Planned (Template Pending)  
-**Purpose**: Standalone quest creation  
-**Steps**: Draft quest → Frontmatter → Challenges → Diagrams → Validate → Publish  
-**Duration**: ~30 minutes  
+**Status**: Planned (Template Pending)
+**Purpose**: Standalone quest creation
+**Steps**: Draft quest → Frontmatter → Challenges → Diagrams → Validate → Publish
+**Duration**: ~30 minutes
 **Use When**: Creating a quest without an accompanying article
 
 ### 3. article-only.yml ⏳
-**Status**: Planned (Template Pending)  
-**Purpose**: Standalone article creation  
-**Steps**: Draft → Expand → Code examples → Validate → Publish  
-**Duration**: ~30 minutes  
+**Status**: Planned (Template Pending)
+**Purpose**: Standalone article creation
+**Steps**: Draft → Expand → Code examples → Validate → Publish
+**Duration**: ~30 minutes
 **Use When**: Writing articles that don't need a related quest
 
 ### 4. iterative-refinement.yml ⏳
-**Status**: Planned (Template Pending)  
-**Purpose**: Improve existing content  
-**Steps**: Load → Analyze (Kaizen) → Improve → Expand → Refine → Repeat  
-**Duration**: ~20 minutes  
+**Status**: Planned (Template Pending)
+**Purpose**: Improve existing content
+**Steps**: Load → Analyze (Kaizen) → Improve → Expand → Refine → Repeat
+**Duration**: ~20 minutes
 **Use When**: Enhancing or updating existing articles/quests
 
 ## Creating New Templates
@@ -88,7 +88,7 @@ workflow:
   name: "Descriptive Name"
   version: "1.0.0"
   description: "What this workflow accomplishes"
-  
+
 inputs:
   required: [...]
   optional: [...]
@@ -101,11 +101,11 @@ steps:
     outputs: [...]
     on_success: "next_step"
     on_failure: "abort"
-    
+
 state:
   persistence: "file"
   checkpoints: [...]
-  
+
 error_handling:
   retry_on_failure: true
   max_retries: 2
@@ -135,5 +135,5 @@ Workflows are accessible through the Journey.sh TUI menu:
 
 ---
 
-**Last Updated**: 2025-11-20  
+**Last Updated**: 2025-11-20
 **Maintained by**: IT-Journey Automation Guild

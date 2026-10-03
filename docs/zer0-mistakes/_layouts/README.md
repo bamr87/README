@@ -4,8 +4,8 @@ title: Layout Files Documentation
 ---
 # Layout Files Documentation
 
-This directory contains the Jekyll layout templates for the Zer0-Pages theme.  
-Each layout has been organized with comprehensive comments explaining the template logic,  
+This directory contains the Jekyll layout templates for the Zer0-Pages theme.
+Each layout has been organized with comprehensive comments explaining the template logic,
 structure, and usage patterns.
 
 ## Layout Hierarchy
@@ -169,17 +169,17 @@ Each layout file now includes:
   ===================================================================
   LAYOUT NAME - Brief description
   ===================================================================
-  
+
   File: filename.html
   Path: _layouts/filename.html
   Inherits: parent-layout.html
   Purpose: Detailed purpose explanation
-  
+
   Template Logic:
   - Key functionality points
   - Responsive behavior
   - Content organization
-  
+
   Dependencies:
   - Include files used
   - External libraries
@@ -263,5 +263,5 @@ Each layout file now includes:
 
 ---
 
-_These layouts follow the Zer0-Mistakes theme standards for maintainable,  
+_These layouts follow the Zer0-Mistakes theme standards for maintainable,
 documented, and responsive Jekyll templates._

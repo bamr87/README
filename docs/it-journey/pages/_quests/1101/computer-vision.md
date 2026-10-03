@@ -423,8 +423,8 @@ Because ResNet's early layers already know edges, textures, and shapes that gene
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
 
 ## 📚 Resources

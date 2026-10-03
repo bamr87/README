@@ -134,7 +134,7 @@ async def main():
     async with <Service>Client(endpoint, credential) as client:
         # Async operations
         item = await client.get_<noun>(item_id)
-        
+
         # Async pagination
         async for item in client.list_<nouns>():
             print(item.name)

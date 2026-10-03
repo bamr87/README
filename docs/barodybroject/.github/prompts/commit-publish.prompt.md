@@ -46,7 +46,7 @@ Execute the complete release pipeline for the current changes in the repository.
    ```bash
    # Run Django tests in development container
    docker-compose -f .devcontainer/docker-compose_dev.yml exec python python manage.py test
-   
+
    # Run pytest with coverage
    docker-compose -f .devcontainer/docker-compose_dev.yml exec python python -m pytest --cov=parodynews
    ```
@@ -82,22 +82,22 @@ Execute the complete release pipeline for the current changes in the repository.
 2. **Add Changelog Entry** following Keep a Changelog format:
    ```markdown
    ## [X.Y.Z] - YYYY-MM-DD
-   
+
    ### Added
    - New features
-   
+
    ### Changed
    - Changes to existing functionality
-   
+
    ### Deprecated
    - Features marked for removal
-   
+
    ### Removed
    - Removed features
-   
+
    ### Fixed
    - Bug fixes
-   
+
    ### Security
    - Security updates
    ```
@@ -127,7 +127,7 @@ Execute the complete release pipeline for the current changes in the repository.
 
 2. **Create Semantic Commit Message**:
    Format: `<type>(<scope>): <description>`
-   
+
    Types:
    - `feat`: New feature
    - `fix`: Bug fix

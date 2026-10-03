@@ -48,10 +48,10 @@ graph TB
         CurrentLevel[Level 0111:<br/>API Development]
         NextLevel[Level 1000:<br/>Cloud Computing]
     end
-    
+
     PrevLevel --> CurrentLevel
     CurrentLevel --> NextLevel
-    
+
     style CurrentLevel fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
 ```
 
@@ -83,24 +83,24 @@ graph TB
         MQ2[🎯 REST Principles:<br/>RESTful API Design]
         MQ3[🎯 API Authentication:<br/>OAuth, JWT & API Keys]
     end
-    
+
     subgraph "Advanced Quests"
         AQ1[⚡ Rate Limiting:<br/>API Traffic Control]
         AQ2[⚡ API Versioning:<br/>Managing API Evolution]
         AQ3[⚡ Error Handling:<br/>Response & Status Codes]
     end
-    
+
     subgraph "Documentation"
         DQ1[📖 API Documentation:<br/>OpenAPI & Developer Experience]
     end
-    
+
     MQ1 --> MQ2
     MQ2 --> MQ3
     MQ2 --> AQ1
     MQ3 --> AQ2
     MQ2 --> AQ3
     MQ3 --> DQ1
-    
+
     style MQ1 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ2 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ3 fill:#2196F3,stroke:#1565C0,stroke-width:3px

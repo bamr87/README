@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Development
@@ -10,7 +11,7 @@ comments: false
 date: '2025-04-18T13:43:43.000Z'
 description: 'Master commit hygiene the wizardly way: write atomic commits, craft
   clear conventional messages, dodge cursed habits, and tidy history with rebase.'
-difficulty: 🟢 Easy
+difficulty: "\U0001F7E2 Easy"
 draft: false
 estimated_time: 30-60 minutes
 fmContentType: quest
@@ -35,12 +36,14 @@ skill_focus: devops
 source_file: commitments-to-clean-commits.md
 tags:
 - clean commits
-- Git
-- GitHub
+- git
+- github
 - tutorial
 - version control
 title: Commitments To Clean Commits
 ---
+# Commitments To Clean Commits
+
 **Ah, brave adventurer!** You've mastered the sacred art of branching and the scroll-writing ritual known as the Pull Request. Now, prepare thyself for the next enchanted trial:
 
 * * * *

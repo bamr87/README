@@ -400,8 +400,8 @@ print(ner("Hugging Face is based in New York and Paris."))
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [AI Ethics](/quests/1101/ai-ethics/)
 
 ## 📚 Resources

@@ -437,8 +437,8 @@ A chart without axis labels is a riddle. Always title it and label both axes.
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)
 
 ## 📚 Resources

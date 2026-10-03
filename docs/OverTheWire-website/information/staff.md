@@ -1,9 +1,12 @@
 ---
+
 layout: default
 listinformation: true
 source_file: staff.md
 title: Staff
 ---
+# Staff
+
 Staff
 =====
 

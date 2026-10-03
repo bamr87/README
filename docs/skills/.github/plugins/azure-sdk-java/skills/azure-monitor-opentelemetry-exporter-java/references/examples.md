@@ -87,7 +87,7 @@ try (Scope scope = span.makeCurrent()) {
     // Your application logic
     span.setAttribute("order.id", "12345");
     span.setAttribute("customer.tier", "premium");
-    
+
     processOrder();
 } catch (Throwable t) {
     span.recordException(t);
@@ -147,7 +147,7 @@ AutoConfiguredOpenTelemetrySdkBuilder sdkBuilder = AutoConfiguredOpenTelemetrySd
 AzureMonitorExporter.customize(sdkBuilder);
 
 sdkBuilder.addTracerProviderCustomizer(
-    (sdkTracerProviderBuilder, configProperties) -> 
+    (sdkTracerProviderBuilder, configProperties) ->
         sdkTracerProviderBuilder.addSpanProcessor(customProcessor)
 );
 

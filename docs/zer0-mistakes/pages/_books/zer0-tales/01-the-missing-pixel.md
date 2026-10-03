@@ -1,4 +1,5 @@
 ---
+
 book: zer0-tales
 chapter: 1
 chapter_label: Story One
@@ -15,6 +16,8 @@ preview: /assets/images/wizard-on-journey.png
 source_file: 01-the-missing-pixel.md
 title: 01 The Missing Pixel
 ---
+# 01 The Missing Pixel
+
 Once upon a build, in a website tucked behind a friendly green checkmark, there lived a careful little wizard named Zer0.
 
 Zer0 counted everything. Every heading, every link, every semicolon — twice on Fridays.

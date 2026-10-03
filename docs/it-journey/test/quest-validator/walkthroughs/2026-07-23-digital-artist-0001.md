@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-23T13:30:07.000Z'
 level: '0001'
@@ -23,6 +24,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 23 Digital Artist 0001
 ---
+# 2026 07 23 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window (quests 11–15 of 26)** of the **Digital Artist → Level 0001 "Web Fundamentals" (🌱 Apprentice)** path, as a beginner UI/UX learner would, using the sealed execute-mode evidence the workflow pre-computed. The window is a mixed bag: **2 quests genuinely pass** (`self-operating-website-01-the-summoning` 94%, `seo-optimization` 81%), **2 fail on real, evidenced content defects** (`it-journey-stack-analysis` 54%, `personal-site` 17%), and **the flagship main quest of the window — `github-pages-portal` — produced NO verdict**: the execute engine burned all 40 turns curling a resource link and exited with an error, so I have zero machine evidence for it and reason about it statically only.

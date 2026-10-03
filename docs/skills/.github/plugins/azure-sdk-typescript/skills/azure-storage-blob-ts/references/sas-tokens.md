@@ -246,7 +246,7 @@ const sasToken = generateBlobSASQueryParameters(
     blobName: "document.pdf",
     permissions: BlobSASPermissions.parse("r"),
     expiresOn: new Date(Date.now() + 3600 * 1000),
-    
+
     // Override response headers
     contentDisposition: "attachment; filename=download.pdf",
     contentType: "application/pdf",
@@ -269,10 +269,10 @@ const sasToken = generateBlobSASQueryParameters(
     blobName: "my-blob.txt",
     permissions: BlobSASPermissions.parse("r"),
     expiresOn: new Date(Date.now() + 3600 * 1000),
-    
+
     // Single IP
     ipRange: { start: "168.1.5.60" },
-    
+
     // IP range
     // ipRange: { start: "168.1.5.60", end: "168.1.5.70" },
   },
@@ -311,10 +311,10 @@ const sasToken = generateBlobSASQueryParameters(
     blobName: "my-blob.txt",
     permissions: BlobSASPermissions.parse("r"),
     expiresOn: new Date(Date.now() + 3600 * 1000),
-    
+
     // For snapshots
     snapshotTime: "2023-01-15T10:30:00.0000000Z",
-    
+
     // For versions
     // versionId: "2023-01-15T10:30:00.0000000Z",
   },
@@ -377,22 +377,22 @@ import { DefaultAzureCredential } from "@azure/identity";
 async function generateSasTokens() {
   const accountName = process.env["STORAGE_ACCOUNT_NAME"]!;
   const accountKey = process.env["STORAGE_ACCOUNT_KEY"]!;
-  
+
   // Method 1: User Delegation SAS (recommended)
   const credential = new DefaultAzureCredential();
   const blobServiceClient = new BlobServiceClient(
     `https://${accountName}.blob.core.windows.net`,
     credential
   );
-  
+
   const startsOn = new Date();
   const expiresOn = new Date(startsOn.valueOf() + 3600 * 1000);
-  
+
   const userDelegationKey = await blobServiceClient.getUserDelegationKey(
     startsOn,
     expiresOn
   );
-  
+
   const userDelegationSas = generateBlobSASQueryParameters(
     {
       containerName: "uploads",
@@ -405,16 +405,16 @@ async function generateSasTokens() {
     userDelegationKey,
     accountName
   ).toString();
-  
+
   console.log("User Delegation SAS URL:");
   console.log(`https://${accountName}.blob.core.windows.net/uploads/user-file.txt?${userDelegationSas}`);
-  
+
   // Method 2: Service SAS with account key
   const sharedKeyCredential = new StorageSharedKeyCredential(
     accountName,
     accountKey
   );
-  
+
   // Read-only SAS for download
   const readSas = generateBlobSASQueryParameters(
     {
@@ -427,10 +427,10 @@ async function generateSasTokens() {
     },
     sharedKeyCredential
   ).toString();
-  
+
   console.log("\nRead SAS URL:");
   console.log(`https://${accountName}.blob.core.windows.net/public-files/document.pdf?${readSas}`);
-  
+
   // Write SAS for upload
   const writeSas = generateBlobSASQueryParameters(
     {
@@ -442,10 +442,10 @@ async function generateSasTokens() {
     },
     sharedKeyCredential
   ).toString();
-  
+
   console.log("\nWrite SAS URL:");
   console.log(`https://${accountName}.blob.core.windows.net/uploads/new-upload.txt?${writeSas}`);
-  
+
   // Container list SAS
   const listSas = generateBlobSASQueryParameters(
     {
@@ -456,7 +456,7 @@ async function generateSasTokens() {
     },
     sharedKeyCredential
   ).toString();
-  
+
   console.log("\nContainer List SAS URL:");
   console.log(`https://${accountName}.blob.core.windows.net/public-files?${listSas}`);
 }

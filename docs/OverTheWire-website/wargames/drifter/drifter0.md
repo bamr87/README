@@ -1,10 +1,13 @@
 ---
+
 gamename: drifter
 layout: default
 level: 0
 source_file: drifter0.md
 title: Drifter0
 ---
+# Drifter0
+
 Drifter can be accessed on drifter.labs.overthewire.org via SSH on port 2230. Level 0 listens on port 1111.
 
 Level0 is an extremely trivial, encrypted, remote syscall proxy. Your aim is to read the contents of a file called "drifter0.password" to get the password for user drifter0.

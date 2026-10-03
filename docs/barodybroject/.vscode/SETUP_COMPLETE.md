@@ -24,7 +24,7 @@ python -m debugpy --listen 0.0.0.0:5678 --wait-for-client manage.py runserver 0.
 - Set breakpoints in VS Code, debug in Docker
 - Production-like environment while developing
 
-#### 2. Launch Configurations Reorganized  
+#### 2. Launch Configurations Reorganized
 
 **File:** `.vscode/launch.json`
 
@@ -186,7 +186,7 @@ System check identified no issues (0 silenced).
 ### Test 4: VS Code Debugger
 
 1. **Start debugging:** F5 → `🐳 Django: Docker Debug`
-2. **Check:** "CALL STACK" panel shows "Remote (debugpy)" 
+2. **Check:** "CALL STACK" panel shows "Remote (debugpy)"
 3. **Open:** http://localhost:8000
 4. **Expected:** Page loads, no errors
 
@@ -357,7 +357,7 @@ docker-compose -f .devcontainer/docker-compose_dev.yml exec python python manage
 
 ✅ **Full Python Debugging** - Set breakpoints anywhere in Docker
 ✅ **No Local Setup** - PostgreSQL and Python all in Docker
-✅ **Production Parity** - Develop in environment similar to production  
+✅ **Production Parity** - Develop in environment similar to production
 ✅ **Easy Testing** - Run tests with debugging support
 ✅ **Hot Reload** - Restart container to see changes
 ✅ **Task Integration** - Run Django commands via VS Code tasks

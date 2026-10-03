@@ -201,7 +201,7 @@ EventProcessorClient processor = new EventProcessorClientBuilder()
     .processEvent(eventContext -> {
         EventData event = eventContext.getEventData();
         System.out.println("Processing: " + event.getBodyAsString());
-        
+
         // Checkpoint after processing
         eventContext.updateCheckpoint();
     })
@@ -231,12 +231,12 @@ EventProcessorClient processor = new EventProcessorClientBuilder()
     .processEventBatch(eventBatchContext -> {
         List<EventData> events = eventBatchContext.getEvents();
         System.out.printf("Received %d events%n", events.size());
-        
+
         for (EventData event : events) {
             // Process each event
             System.out.println(event.getBodyAsString());
         }
-        
+
         // Checkpoint after batch
         eventBatchContext.updateCheckpoint();
     }, 50) // maxBatchSize
@@ -302,14 +302,14 @@ import com.azure.messaging.eventhubs.models.ErrorContext;
 .processError(errorContext -> {
     Throwable error = errorContext.getThrowable();
     String partitionId = errorContext.getPartitionContext().getPartitionId();
-    
+
     if (error instanceof AmqpException) {
         AmqpException amqpError = (AmqpException) error;
         if (amqpError.isTransient()) {
             System.out.println("Transient error, will retry");
         }
     }
-    
+
     System.err.printf("Error on partition %s: %s%n", partitionId, error.getMessage());
 })
 ```

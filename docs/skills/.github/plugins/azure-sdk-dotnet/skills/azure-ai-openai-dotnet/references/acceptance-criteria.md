@@ -166,7 +166,7 @@ foreach (StreamingChatCompletionUpdate update in completionUpdates)
 
 ### 4.2 ✅ CORRECT: Async Streaming
 ```csharp
-AsyncCollectionResult<StreamingChatCompletionUpdate> completionUpdates = 
+AsyncCollectionResult<StreamingChatCompletionUpdate> completionUpdates =
     chatClient.CompleteChatStreamingAsync(
         [
             new SystemChatMessage("You are a helpful assistant."),
@@ -236,16 +236,16 @@ if (completion.FinishReason == ChatFinishReason.ToolCalls)
 {
     // Add the assistant message with tool calls to history
     messages.Add(new AssistantChatMessage(completion));
-    
+
     foreach (ChatToolCall toolCall in completion.ToolCalls)
     {
         // Process the tool call and get result
         string result = ProcessToolCall(toolCall);
-        
+
         // Add tool result to messages
         messages.Add(new ToolChatMessage(toolCall.Id, result));
     }
-    
+
     // Continue the conversation with tool results
     completion = chatClient.CompleteChat(messages, options);
 }
@@ -262,7 +262,7 @@ foreach (StreamingChatCompletionUpdate update in chatClient.CompleteChatStreamin
     {
         contentBuilder.Append(contentPart.Text);
     }
-    
+
     foreach (StreamingChatToolCallUpdate toolCallUpdate in update.ToolCallUpdates)
     {
         toolCallsBuilder.Append(toolCallUpdate);
@@ -458,7 +458,7 @@ catch { }
 public class OpenAIService
 {
     private readonly ChatClient _chatClient;
-    
+
     public OpenAIService(string endpoint, string deployment)
     {
         var azureClient = new AzureOpenAIClient(
@@ -466,7 +466,7 @@ public class OpenAIService
             new DefaultAzureCredential());
         _chatClient = azureClient.GetChatClient(deployment);
     }
-    
+
     public async Task<string> GetCompletionAsync(string prompt)
     {
         var completion = await _chatClient.CompleteChatAsync([new UserChatMessage(prompt)]);

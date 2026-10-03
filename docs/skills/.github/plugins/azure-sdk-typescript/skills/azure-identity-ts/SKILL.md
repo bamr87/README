@@ -123,7 +123,7 @@ const credential = new ClientCertificateCredential(
 const credentialWithPwd = new ClientCertificateCredential(
   "<tenant-id>",
   "<client-id>",
-  { 
+  {
     certificatePath: "/path/to/cert.pem",
     certificatePassword: "<password>"
   }
@@ -162,7 +162,7 @@ const credential = new DeviceCodeCredential({
 ## Custom Credential Chain
 
 ```typescript
-import { 
+import {
   ChainedTokenCredential,
   ManagedIdentityCredential,
   AzureCliCredential
@@ -242,10 +242,10 @@ const token = await getAccessToken();
 ## Key Types
 
 ```typescript
-import type { 
-  TokenCredential, 
-  AccessToken, 
-  GetTokenOptions 
+import type {
+  TokenCredential,
+  AccessToken,
+  GetTokenOptions
 } from "@azure/core-auth";
 
 import {

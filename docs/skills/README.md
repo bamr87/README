@@ -73,7 +73,7 @@ Coding agents like [Copilot CLI](https://github.com/features/copilot/cli) and [G
 
 > 132 skills in `.github/skills/` — flat structure with language suffixes for automatic discovery
 
-| Language | Count | Suffix | 
+| Language | Count | Suffix |
 |----------|-------|--------|
 | [Core](#core) | 8 | — |
 | [Python](#python) | 41 | `-py` |
@@ -691,7 +691,7 @@ New skills must follow the full workflow to ensure quality and discoverability:
    cd skills/python/foundry
    ln -s ../../../.github/skills/azure-ai-projects-py projects
    ```
-   
+
    Categories: `foundry`, `data`, `messaging`, `monitoring`, `entra`, `integration`, `compute`, `m365`, `general`
 
 3. **Create acceptance criteria** in `.github/skills/<skill>/references/acceptance-criteria.md`

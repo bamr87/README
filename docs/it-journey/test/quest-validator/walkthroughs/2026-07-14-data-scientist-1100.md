@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: 2026-07-14 12:53:49+00:00
 level: '1100'
@@ -19,6 +20,8 @@ theme: Data Engineering
 tier: Master
 title: 2026 07 14 Data Scientist 1100
 ---
+# 2026 07 14 Data Scientist 1100
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 2 of 3) of the **Data Scientist · Level 1100 (Data Engineering, Master)** slice, in the exact order the planner selected, as a learner would. The machine evidence was sealed by the workflow in `--mode execute` (disposable sandbox, commands run for real); I consumed `walk-evidence.json` / `walk-evidence.md` as-is and reasoned about the linked journey against the five quest sources.

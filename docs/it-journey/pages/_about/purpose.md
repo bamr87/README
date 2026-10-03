@@ -37,10 +37,10 @@ Parady News with LLM
 # Mission
 Equalize the imbalance between the have and havenots by educating and empowering the public with tools that are designed with grassroot potential. This can only be achieved with open sourced
 
-All/any financial procedes are to be deposited to into the not for profit collective, and only critical maintenance costs. The master production environment should be designed to operate in perpetuity, and decentralized. 
+All/any financial procedes are to be deposited to into the not for profit collective, and only critical maintenance costs. The master production environment should be designed to operate in perpetuity, and decentralized.
 
 
-minimum 
+minimum
 
 Hooded Robin
 

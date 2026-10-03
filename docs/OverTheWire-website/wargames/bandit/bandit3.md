@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 3
 source_file: bandit3.md
 title: Bandit3
 ---
+# Bandit3
+
 Level Goal
 ----------
 The password for the next level is stored in a file called `--spaces in this filename--` located in the home directory

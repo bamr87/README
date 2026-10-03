@@ -466,9 +466,9 @@ The CSS-variable route needs no build step and is perfect for this tier. The Sas
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
-**🏗️ System Engineer**: Explore [CSS Styling Basics](/quests/0001/css-styling-basics/)  
-**🎨 Frontend Specialist**: Master [CSS Styling Basics](/quests/0001/css-styling-basics/)  
+**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)
+**🏗️ System Engineer**: Explore [CSS Styling Basics](/quests/0001/css-styling-basics/)
+**🎨 Frontend Specialist**: Master [CSS Styling Basics](/quests/0001/css-styling-basics/)
 
 ## 📚 Resources
 

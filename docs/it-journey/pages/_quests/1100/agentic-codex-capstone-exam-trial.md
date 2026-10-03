@@ -109,9 +109,9 @@ graph TD
     D5["Domain 5: Multi-Agent"]
     D6["Domain 6: Governance"]
     CAP["🏆 CAPSTONE: Agentic Codex Master"]
-    
+
     D1 --> D2 --> D3 --> D4 --> D5 --> D6 --> CAP
-    
+
     style CAP fill:#FFD700,stroke:#B8860B,stroke-width:4px,color:#000
     style D1 fill:#4CAF50,stroke:#2E7D32,color:#fff
     style D2 fill:#4CAF50,stroke:#2E7D32,color:#fff

@@ -374,8 +374,8 @@ The drill answers three questions a real outage will ask: Does the backup restor
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)  
-**🏗️ System Engineer**: Explore [Database Security](/quests/0110/database-security/)  
+**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)
+**🏗️ System Engineer**: Explore [Database Security](/quests/0110/database-security/)
 **📊 Data Scientist**: Advance to [Database Migrations](/quests/0110/database-migrations/)
 
 ## 📚 Resources

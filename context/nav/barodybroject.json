@@ -8,13 +8,15 @@
     "pages": 256,
     "sections": 56,
     "max_depth": 7,
-    "skipped": 6
+    "skipped": 8
   },
   "skipped": [
     ".devcontainer",
     ".github",
+    ".vscode",
     "README/.devcontainer",
     "README/.github",
+    "README/.vscode",
     "src/README.md",
     "src/posthog/.github"
   ],

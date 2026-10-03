@@ -52,7 +52,7 @@ async def get_document(doc_id: str, partition_key: str) -> dict | None:
     container = get_container()
     if container is None:
         return None
-    
+
     try:
         result = await run_in_threadpool(
             container.read_item,
@@ -74,7 +74,7 @@ async def delete_document(doc_id: str, partition_key: str) -> bool:
     container = get_container()
     if container is None:
         return False
-    
+
     try:
         await run_in_threadpool(
             container.delete_item,
@@ -92,7 +92,7 @@ async def upsert_document(doc: dict, partition_key: str) -> dict:
     container = get_container()
     if container is None:
         raise RuntimeError("Cosmos DB not initialized")
-    
+
     try:
         result = await run_in_threadpool(container.upsert_item, doc)
         return result
@@ -121,36 +121,36 @@ Services interpret client results and apply business logic:
 
 ```python
 class ProjectService:
-    
+
     async def get_by_id(self, project_id: str, workspace_id: str) -> Project | None:
         """Get project. Returns None if not found or unavailable."""
         if not self._use_cosmos():
             return None
-        
+
         doc = await get_document(project_id, partition_key=workspace_id)
         if doc is None:
             return None
-        
+
         return self._doc_to_model(doc)
-    
+
     async def create(self, data: ProjectCreate, author_id: str) -> Project:
         """Create project. Raises RuntimeError if Cosmos unavailable."""
         if not self._use_cosmos():
             raise RuntimeError("Database unavailable")
-        
+
         # ... create logic ...
-    
+
     async def update(
         self, project_id: str, workspace_id: str, data: ProjectUpdate
     ) -> Project | None:
         """Update project. Returns None if not found."""
         if not self._use_cosmos():
             return None
-        
+
         doc = await get_document(project_id, partition_key=workspace_id)
         if doc is None:
             return None  # Not found
-        
+
         # ... update logic ...
 ```
 
@@ -165,7 +165,7 @@ async def list_projects(self, workspace_id: str) -> list[Project]:
     """List projects. Returns empty list if unavailable."""
     if not self._use_cosmos():
         return []  # Graceful empty response
-    
+
     docs = await query_documents(
         doc_type="project",
         partition_key=workspace_id,
@@ -193,13 +193,13 @@ async def get_project(
 ) -> Project:
     """Get project by ID."""
     project = await project_service.get_by_id(project_id, workspace_id)
-    
+
     if project is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Project not found",
         )
-    
+
     return project
 
 
@@ -227,13 +227,13 @@ async def update_project(
 ) -> Project:
     """Update project."""
     project = await project_service.update(project_id, workspace_id, data)
-    
+
     if project is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Project not found",
         )
-    
+
     return project
 
 
@@ -245,7 +245,7 @@ async def delete_project(
 ) -> None:
     """Delete project."""
     deleted = await project_service.delete(project_id, workspace_id)
-    
+
     if not deleted:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -279,18 +279,18 @@ logger = logging.getLogger(__name__)
 
 def get_container() -> ContainerProxy | None:
     global _cosmos_container, _init_attempted
-    
+
     if _init_attempted:
         return _cosmos_container
-    
+
     _init_attempted = True
-    
+
     try:
         client = _create_client(settings)
         database = client.get_database_client(settings.cosmos_database_name)
         _cosmos_container = database.get_container_client(settings.cosmos_container_id)
         _cosmos_container.read()  # Verify connection
-        
+
         logger.info(
             "Cosmos DB connected",
             extra={
@@ -299,7 +299,7 @@ def get_container() -> ContainerProxy | None:
                 "endpoint": settings.cosmos_endpoint[:30] + "...",
             }
         )
-        
+
     except Exception as e:
         logger.error(
             "Cosmos DB connection failed",
@@ -311,7 +311,7 @@ def get_container() -> ContainerProxy | None:
             exc_info=True,  # Include stack trace
         )
         _cosmos_container = None
-    
+
     return _cosmos_container
 ```
 
@@ -362,7 +362,7 @@ async def with_retry(
 ) -> T:
     """Execute operation with exponential backoff retry."""
     last_error = None
-    
+
     for attempt in range(max_retries + 1):
         try:
             return await operation()
@@ -374,7 +374,7 @@ async def with_retry(
                 await asyncio.sleep(delay)
             else:
                 raise
-    
+
     raise last_error
 
 

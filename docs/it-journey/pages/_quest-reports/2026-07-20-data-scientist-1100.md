@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 20 Data Scientist 1100
 verdict: fail
 walk_date: '2026-07-20'
 ---
+# 2026 07 20 Data Scientist 1100
+
 > **Slice** `data-scientist/1100` · **Level** 1100 (Data Engineering) · **Master tier** · **Engine verdict** ❌ fail (avg 64.0%) · **Walked** 2026-07-20
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29740320814) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-20-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-20-data-scientist-1100.md)

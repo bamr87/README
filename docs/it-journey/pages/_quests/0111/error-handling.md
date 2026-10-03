@@ -406,8 +406,8 @@ Never retry a `400` or `422` - the request is wrong and will fail forever. Alway
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Rate Limiting](/quests/0111/rate-limiting/)  
-**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)  
+**💻 Software Developer**: Continue to [Rate Limiting](/quests/0111/rate-limiting/)
+**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

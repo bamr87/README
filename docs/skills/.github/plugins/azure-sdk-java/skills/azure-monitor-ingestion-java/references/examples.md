@@ -118,7 +118,7 @@ try {
     System.out.println("Logs uploaded successfully");
 } catch (LogsUploadException e) {
     System.out.println("Failed to upload logs");
-    e.getLogsUploadErrors().forEach(error -> 
+    e.getLogsUploadErrors().forEach(error ->
         System.out.println(error.getMessage()));
 }
 ```
@@ -137,7 +137,7 @@ class CustomLogEntry {
     private String message;
     private int severity;
 
-    public CustomLogEntry(OffsetDateTime timeGenerated, String computer, 
+    public CustomLogEntry(OffsetDateTime timeGenerated, String computer,
                           String message, int severity) {
         this.timeGenerated = timeGenerated;
         this.computer = computer;
@@ -203,9 +203,9 @@ LogsUploadOptions options = new LogsUploadOptions()
         // Log error details
         System.out.println("Error: " + error.getResponseException().getMessage());
         System.out.println("Failed logs: " + error.getFailedLogs().size());
-        
+
         // Access failed logs for retry
-        error.getFailedLogs().forEach(log -> 
+        error.getFailedLogs().forEach(log ->
             System.out.println("Failed: " + log));
 
         // Option 1: Continue with remaining logs (default)
@@ -230,7 +230,7 @@ try {
     System.out.println("Some logs failed");
     e.getLogsUploadErrors().forEach(error -> {
         System.out.println("Error: " + error.getMessage());
-        System.out.println("Status: " + 
+        System.out.println("Status: " +
             error.getResponseException().getResponse().getStatusCode());
     });
 }

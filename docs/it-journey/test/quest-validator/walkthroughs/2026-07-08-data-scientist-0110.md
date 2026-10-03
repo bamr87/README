@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-08T00:00:00.000Z'
 level: '0110'
@@ -19,6 +20,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 08 Data Scientist 0110
 ---
+# 2026 07 08 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the **Data Scientist** path through the tail window of **Level 0110 — Database Mastery** (⚔️ Adventurer tier): three linked main quests, in planner order **Backup & Recovery → Query Optimization → Connection Pooling**. This is window **2 of 2** of an 8-quest level (offset 5), so the four foundational quests (database-fundamentals, sql-mastery, data-modeling, database-security) were swept in a prior window and were **not** re-walked here.

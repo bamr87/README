@@ -167,20 +167,20 @@ graph TB
         PromptBasics[🏰 Prompt Engineering Basics]
         Kaizen[⚔️ Kaizen Continuous Improvement]
     end
-    
+
     subgraph "Current Quest"
         Main[🏰 VS Code Copilot<br/>Prompt Crystal Quest]
         Side1[⚔️ Workspace Configuration]
         Side2[⚔️ Template Library Building]
         Bonus[🎁 Team Prompt Standards]
     end
-    
+
     subgraph "Unlocked Adventures"
         AgentDev[🏰 AI Agent Development]
         MCPPatterns[🏰 MCP Server Prompt Patterns]
         MultiAgent[👑 Multi-Agent Systems Epic]
     end
-    
+
     Hello --> PromptBasics
     PromptBasics --> Main
     Kaizen -.-> Main
@@ -191,7 +191,7 @@ graph TB
     Side1 --> MCPPatterns
     Side2 --> MCPPatterns
     Bonus --> MultiAgent
-    
+
     style Main fill:#ffd700,stroke:#333,stroke-width:3px
     style PromptBasics fill:#87ceeb
     style AgentDev fill:#98fb98
@@ -308,9 +308,9 @@ The difference between vague and structured prompts is dramatic:
 
 ```javascript
 Vague ←─────────────────────────────────→ Precise
-"Help me code"          "Generate a Python function that validates 
-                         email addresses using regex, handles edge 
-                         cases (empty, special chars), returns 
+"Help me code"          "Generate a Python function that validates
+                         email addresses using regex, handles edge
+                         cases (empty, special chars), returns
                          tuple(bool, str), includes docstring"
 ```
 
@@ -556,7 +556,7 @@ Let's think step by step:
 ```markdown
 [ROLE] You are a DevOps engineer specializing in CI/CD pipelines.
 
-[CONTEXT] Migrating a monorepo from Jenkins to GitHub Actions. 
+[CONTEXT] Migrating a monorepo from Jenkins to GitHub Actions.
 The repo has 3 services: API (Node.js), Web (React), Worker (Python).
 
 [TASK] Design the GitHub Actions workflow structure.
@@ -648,7 +648,7 @@ Create `.github/copilot-instructions.md` to give Copilot persistent, project-wid
 
 ## Architecture
 - Services: `src/services/` - Business logic
-- Components: `src/components/` - React components  
+- Components: `src/components/` - React components
 - Utils: `src/utils/` - Pure helper functions
 - Types: `src/types/` - TypeScript interfaces
 
@@ -809,7 +809,7 @@ inputs:
 
 [ROLE] You are a senior software engineer conducting code review.
 
-[CONTEXT] 
+[CONTEXT]
 Reviewing code with focus on {% raw %}{{ inputs.focus_area }}{% endraw %}.
 This is for a production application requiring enterprise-level quality.
 
@@ -941,11 +941,11 @@ describe('[Function Name]', () => {
       // Assert
     });
   });
-  
+
   describe('Edge Cases', () => {
     // Edge case tests
   });
-  
+
   describe('Error Cases', () => {
     // Error handling tests
   });
@@ -1131,33 +1131,33 @@ flowchart TD
     B -->|Windows| C2[🪟 Install Copilot Extensions]
     B -->|Linux| C3[🐧 Install Copilot Extensions]
     B -->|Cloud| C4[☁️ Verify Extensions]
-    
+
     C1 --> D[📁 Create .github/prompts/]
     C2 --> D
     C3 --> D
     C4 --> D
-    
+
     D --> E[📝 Write copilot-instructions.md]
     E --> F[🎯 Learn RCTF Pattern]
-    
+
     F --> G[⚡ Master Techniques]
     G --> G1[Zero-Shot]
     G --> G2[Few-Shot]
     G --> G3[Chain-of-Thought]
-    
+
     G1 --> H[📚 Build Template Library]
     G2 --> H
     G3 --> H
-    
+
     H --> I[🔄 Apply PDCA Cycle]
     I --> J{📊 Score ≥ 8?}
-    
+
     J -->|Yes| K[✅ Template & Document]
     J -->|No| L[🔧 Iterate & Improve]
     L --> I
-    
+
     K --> M[🏆 Quest Complete!]
-    
+
     style A fill:#ffd700,stroke:#333
     style M fill:#98fb98,stroke:#333
     style J fill:#ffb6c1,stroke:#333

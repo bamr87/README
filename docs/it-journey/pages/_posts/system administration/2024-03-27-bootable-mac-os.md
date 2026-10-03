@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories: []
 date: 2024-03-27 16:53:55+00:00
@@ -15,6 +16,8 @@ source_file: 2024-03-27-bootable-mac-os.md
 tags: []
 title: 2024 03 27 Bootable Mac Os
 ---
+# 2024 03 27 Bootable Mac Os
+
 Create a bootable installer for macOS
 =====================================
 

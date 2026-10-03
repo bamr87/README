@@ -251,10 +251,10 @@ docker-compose -f .devcontainer/docker-compose_dev.yml up -d
 
 ## ✨ Summary
 
-✅ Docker containers running  
-✅ Debugpy waiting for VS Code  
-✅ PostgreSQL accessible  
-✅ Ready to debug!  
+✅ Docker containers running
+✅ Debugpy waiting for VS Code
+✅ PostgreSQL accessible
+✅ Ready to debug!
 
 **Next:** Press `F5` → Select `🐳 Django: Docker Debug` → Start coding! 🚀
 

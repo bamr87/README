@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 14
 source_file: vortex14.md
 title: Vortex14
 ---
+# Vortex14
+
 Bad Encryption
 --------------
 Based on something seen in the "real world", it has weak encryption usage, used over a TCP/IP connection. This level requires you to apply some logic to the challenge at hand. You must login to [vortex.labs.overthewire.org][] to complete this level.

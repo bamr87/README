@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories:
 - posts
@@ -15,6 +16,8 @@ tags:
 - article
 title: 2025 11 16 Dual Boot Win Linux
 ---
+# 2025 11 16 Dual Boot Win Linux
+
 ## VS Code install
 
 ```shell

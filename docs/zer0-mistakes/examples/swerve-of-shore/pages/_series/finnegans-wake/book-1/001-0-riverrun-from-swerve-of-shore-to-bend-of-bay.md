@@ -1,4 +1,5 @@
 ---
+
 categories:
 - FW - 01 - Book 1
 date: 2025-02-02
@@ -16,6 +17,8 @@ source_url: https://www.swerveofshore.com/post/001-0-riverrun-from-swerve-of-sho
 sub-title: Finnegans Wake · Book 1
 title: 001 0 Riverrun From Swerve Of Shore To Bend Of Bay
 ---
+# 001 0 Riverrun From Swerve Of Shore To Bend Of Bay
+
 From the *Finnegans Wake · Book 1* thread on [Swerve of Shore](https://www.swerveofshore.com/post/001-0-riverrun-from-swerve-of-shore-to-bend-of-bay), by Brandon Nicklaus.
 
 > We are using the 1999 Penguin Classics edition of Finnegans Wake, with an introduction by John Bishop.

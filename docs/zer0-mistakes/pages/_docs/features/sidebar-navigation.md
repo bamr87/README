@@ -212,7 +212,7 @@ function scrollToSection(id) {
   const headerOffset = 80; // Fixed header height
   const elementPosition = element.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.scrollY - headerOffset;
-  
+
   window.scrollTo({
     top: offsetPosition,
     behavior: 'smooth'
@@ -245,7 +245,7 @@ history.pushState(null, '', `#${sectionId}`);
 document.addEventListener('keydown', (e) => {
   // Only when not in input
   if (e.target.matches('input, textarea')) return;
-  
+
   if (e.key === '[') navigateToPrevSection();
   if (e.key === ']') navigateToNextSection();
 });

@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-21T13:32:40.000Z'
 level: '0001'
@@ -17,6 +18,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 21 Digital Artist 0001
 ---
+# 2026 07 21 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 26 quests) of the **Digital Artist (UI/UX)** path at **Level 0001 — Web Fundamentals (🌱 Apprentice)** end-to-end as a learner, consuming the sealed execute-engine evidence (`walk-evidence.json`) and reading every quest source in plan order. The **design-relevant spine of this slice is genuinely strong**: *Advanced Markdown* (89), *CSS Styling Basics* (86), and *Bootstrap Framework* (80) each had their snippets written to disk and rendered/compiled for real (Jekyll+Kramdown, headless Chromium, compiled Bootstrap 5.3) and behaved as taught. Those three are exactly the quests a UI/UX learner needs, and they deliver.

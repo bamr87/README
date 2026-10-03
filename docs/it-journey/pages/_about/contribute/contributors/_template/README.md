@@ -1,4 +1,5 @@
 ---
+
 author: YOUR_NAME
 class: Apprentice
 contributor_data: YOUR_GITHUB_USERNAME
@@ -9,6 +10,8 @@ source_file: README.md
 title: Readme
 username: YOUR_GITHUB_USERNAME
 ---
+# Readme
+
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">
 
 {% include contributor/character_sheet.html username="YOUR_GITHUB_USERNAME" %}

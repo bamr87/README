@@ -89,10 +89,10 @@ var botData = new BotData(AzureLocation.WestUS2)
 
 // Create or update the bot
 ArmOperation<BotResource> operation = await botCollection.CreateOrUpdateAsync(
-    WaitUntil.Completed, 
-    "myBotName", 
+    WaitUntil.Completed,
+    "myBotName",
     botData);
-    
+
 BotResource bot = operation.Value;
 Console.WriteLine($"Bot created: {bot.Data.Name}");
 ```
@@ -113,7 +113,7 @@ var channelData = new BotChannelData(AzureLocation.WestUS2)
     {
         Properties = new DirectLineChannelProperties()
         {
-            Sites = 
+            Sites =
             {
                 new DirectLineSite("Default Site")
                 {
@@ -307,8 +307,8 @@ using Azure;
 try
 {
     var operation = await botCollection.CreateOrUpdateAsync(
-        WaitUntil.Completed, 
-        botName, 
+        WaitUntil.Completed,
+        botName,
         botData);
 }
 catch (RequestFailedException ex) when (ex.Status == 409)

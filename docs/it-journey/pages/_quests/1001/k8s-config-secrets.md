@@ -451,8 +451,8 @@ kubectl rollout restart deployment/app   # required for env vars to refresh
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Advance to [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/)  
-**🏗️ System Engineer**: Revisit [Services and Networking](/quests/1001/k8s-services-networking/)  
+**💻 Software Developer**: Advance to [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/)
+**🏗️ System Engineer**: Revisit [Services and Networking](/quests/1001/k8s-services-networking/)
 **🛡️ Security Specialist**: Study the Secret hardening notes above closely
 
 ## 📚 Resources

@@ -454,8 +454,8 @@ The "elbow method" - plotting inertia against k - helps choose how many clusters
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Neural Networks Deep Dive](/quests/1101/neural-networks/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [Neural Networks Deep Dive](/quests/1101/neural-networks/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [Python for Data Science](/quests/1101/python-data-science/)
 
 ## 📚 Resources

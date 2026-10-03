@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Tutorial
@@ -25,6 +26,8 @@ translated_from_sha: eae6827443ed
 translation_of: pages/_posts/tutorial/2026-04-28-accessible-form-patterns.md
 translation_source_url: /posts/2026/04/28/accessible-form-patterns/
 ---
+# 2026 04 28 Accessible Form Patterns
+
 Les formulaires accessibles sont plus faciles à remplir pour tout le monde. Ils aident les utilisateurs de lecteurs d'écran, les utilisateurs du clavier, les personnes sur petits écrans et toute personne qui accomplit une tâche rapidement.
 
 Ce tutoriel couvre quelques modèles qui rendent les formulaires plus fiables sans ajouter beaucoup de complexité.

@@ -160,7 +160,7 @@ public interface IAreaSetup
 {
     string Name { get; }           // e.g., "storage", "keyvault"
     string Title { get; }          // e.g., "Azure Storage", "Azure Key Vault"
-    
+
     void ConfigureServices(IServiceCollection services);
     void RegisterCommands(CommandGroup rootGroup);
 }
@@ -183,14 +183,14 @@ public class StorageSetup : IAreaSetup
     public void RegisterCommands(CommandGroup rootGroup)
     {
         var storageGroup = rootGroup.AddGroup("storage", "Azure Storage operations");
-        
+
         // Blob operations
         var blobGroup = storageGroup.AddGroup("blob", "Blob storage operations");
         blobGroup.AddCommand<ListBlobsCommand>("list", "List blobs in a container");
         blobGroup.AddCommand<GetBlobCommand>("get", "Get blob content");
         blobGroup.AddCommand<UploadBlobCommand>("upload", "Upload a blob");
         blobGroup.AddCommand<DeleteBlobCommand>("delete", "Delete a blob");
-        
+
         // Container operations
         var containerGroup = storageGroup.AddGroup("container", "Container operations");
         containerGroup.AddCommand<ListContainersCommand>("list", "List containers");
@@ -206,13 +206,13 @@ public class ListBlobsCommand : ICommand
 {
     [Option("--account", "Storage account name")]
     public string AccountName { get; set; } = string.Empty;
-    
+
     [Option("--container", "Container name")]
     public string ContainerName { get; set; } = string.Empty;
-    
+
     [Option("--prefix", "Blob name prefix filter")]
     public string? Prefix { get; set; }
-    
+
     [Option("--limit", "Maximum number of results")]
     public int Limit { get; set; } = 100;
 
@@ -230,14 +230,14 @@ public class ListBlobsCommand : ICommand
         var factory = services.GetRequiredService<BlobServiceClientFactory>();
         var client = factory.CreateClient(AccountName);
         var container = client.GetBlobContainerClient(ContainerName);
-        
+
         var blobs = new List<BlobItem>();
         await foreach (var blob in container.GetBlobsAsync(prefix: Prefix, cancellationToken: cancellationToken))
         {
             blobs.Add(blob);
             if (blobs.Count >= Limit) break;
         }
-        
+
         return CommandResponse.Success(new
         {
             account = AccountName,
@@ -311,7 +311,7 @@ public class AzureCredentialProvider
     public TokenCredential GetCredential()
     {
         var credentialType = Environment.GetEnvironmentVariable("AZURE_TOKEN_CREDENTIALS");
-        
+
         return credentialType?.ToLower() switch
         {
             "environment" => new EnvironmentCredential(),
@@ -341,23 +341,23 @@ public static CommandResponse HandleAzureError(RequestFailedException ex)
         404 => CommandResponse.Error(
             $"Resource not found. Verify the resource exists and you have access. " +
             $"Details: {ex.Message}"),
-        
+
         403 => CommandResponse.Error(
             $"Access denied. Check your permissions and ensure your credentials " +
             $"have the required role assignments. Details: {ex.Message}"),
-        
+
         401 => CommandResponse.Error(
             $"Authentication failed. Run 'az login' or check your credentials. " +
             $"Details: {ex.Message}"),
-        
+
         409 => CommandResponse.Error(
             $"Conflict: Resource already exists or is in a conflicting state. " +
             $"Details: {ex.Message}"),
-        
+
         429 => CommandResponse.Error(
             $"Rate limit exceeded. Wait and retry. " +
             $"Details: {ex.Message}"),
-        
+
         _ => CommandResponse.Error(
             $"Azure API error (HTTP {ex.Status}): {ex.Message}")
     };
@@ -372,11 +372,11 @@ public class CommandResponse
     public bool IsSuccess { get; init; }
     public object? Data { get; init; }
     public string? Error { get; init; }
-    
-    public static CommandResponse Success(object data) => 
+
+    public static CommandResponse Success(object data) =>
         new() { IsSuccess = true, Data = data };
-    
-    public static CommandResponse Error(string message) => 
+
+    public static CommandResponse Error(string message) =>
         new() { IsSuccess = false, Error = message };
 }
 ```
@@ -406,31 +406,31 @@ public class ToolMetadata
     /// Clients should confirm before execution.
     /// </summary>
     public bool Destructive { get; init; }
-    
+
     /// <summary>
     /// Tool only reads data, no side effects.
     /// Safe to call without confirmation.
     /// </summary>
     public bool ReadOnly { get; init; }
-    
+
     /// <summary>
     /// Repeated calls with same arguments produce same result.
     /// Safe to retry on failure.
     /// </summary>
     public bool Idempotent { get; init; }
-    
+
     /// <summary>
     /// Tool interacts with external systems (Azure APIs).
     /// May have latency or availability concerns.
     /// </summary>
     public bool OpenWorld { get; init; }
-    
+
     /// <summary>
     /// Tool handles sensitive data (secrets, keys, credentials).
     /// Output should be treated as confidential.
     /// </summary>
     public bool Secret { get; init; }
-    
+
     /// <summary>
     /// Tool requires local resources (file system, environment).
     /// May not work in all execution contexts.
@@ -449,7 +449,7 @@ public class ToolMetadata
 # Python
 azd init --template remote-mcp-functions-python -e mcpserver-python
 
-# TypeScript  
+# TypeScript
 azd init --template remote-mcp-functions-typescript -e mcpserver-ts
 
 # .NET
@@ -462,14 +462,14 @@ azd init --template remote-mcp-functions-dotnet -e mcpserver-dotnet
 import { app, InvocationContext } from '@azure/functions';
 
 export async function mcpToolStorageList(
-    _toolArguments: unknown, 
+    _toolArguments: unknown,
     context: InvocationContext
 ): Promise<string> {
-    const args = context.triggerMetadata.mcptoolargs as { 
+    const args = context.triggerMetadata.mcptoolargs as {
         accountName: string;
         prefix?: string;
     };
-    
+
     // Implementation
     const containers = await listContainers(args.accountName, args.prefix);
     return JSON.stringify(containers);
@@ -526,13 +526,13 @@ public class StorageContainerListCommandTests
         // Arrange
         var mockClient = new Mock<BlobServiceClient>();
         var command = new StorageContainerListCommand(mockClient.Object);
-        
+
         // Act
         var result = await command.ExecuteAsync(new StorageContainerListOptions
         {
             AccountName = "teststorage"
         });
-        
+
         // Assert
         Assert.IsNotNull(result);
     }
@@ -641,7 +641,7 @@ agent = project_client.agents.create_version(
 PromptAgentDefinition agentDefinition = new(model: "gpt-4o-mini")
 {
     Instructions = "Help users manage Azure Storage",
-    Tools = { 
+    Tools = {
         ResponseTool.CreateMcpTool(
             serverLabel: "azure-storage",
             serverUri: new Uri("https://{app}.azurewebsites.net/runtime/webhooks/mcp"),
@@ -660,9 +660,9 @@ for item in response.output:
     if item.type == "mcp_approval_request" and item.id:
         print(f"Tool: {getattr(item, 'name', '<unknown>')}")
         print(f"Arguments: {json.dumps(getattr(item, 'arguments', None), indent=2)}")
-        
+
         should_approve = input("Approve? (y/N): ").strip().lower() == "y"
-        
+
         input_list.append(McpApprovalResponse(
             type="mcp_approval_response",
             approve=should_approve,

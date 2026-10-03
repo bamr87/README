@@ -1,7 +1,10 @@
 ---
+
 source_file: games.md
 title: Games
 ---
+# Games
+
 <div id="sidemenu">
     <ul>
         <li><sh>Online</sh></li>

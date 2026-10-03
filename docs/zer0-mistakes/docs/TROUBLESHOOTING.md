@@ -4,8 +4,8 @@ title: 'Troubleshooting Guide: Release Automation System'
 ---
 # Troubleshooting Guide: Release Automation System
 
-**Last Updated:** 2025-11-25  
-**Applies To:** Release automation scripts (v0.6.0+)  
+**Last Updated:** 2025-11-25
+**Applies To:** Release automation scripts (v0.6.0+)
 **Related:** [Release Automation System](systems/release-automation.md), [Contributing Guidelines](../CONTRIBUTING.md)
 
 ## Quick Reference

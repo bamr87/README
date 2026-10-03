@@ -1,4 +1,5 @@
 ---
+
 cookbook: zer0-kitchen
 course: mains
 cuisine: Italian
@@ -95,4 +96,6 @@ yield:
   singular: serving
   unit: servings
 ---
+# Weeknight Tomato Butter Pasta
+
 Marcella Hazan's tomato sauce, in the form most people actually cook it: straight into a bowl of pasta on a Tuesday. It is the best argument in this cookbook for leaving a recipe alone — three ingredients and forty minutes of low heat do something that no amount of technique does faster.

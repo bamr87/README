@@ -460,8 +460,8 @@ Now an author who moves countries is updated in exactly one row. No anomalies, n
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
+**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
 **📊 Data Scientist**: Advance to [Data Modeling](/quests/0110/data-modeling/)
 
 ## 📚 Resources

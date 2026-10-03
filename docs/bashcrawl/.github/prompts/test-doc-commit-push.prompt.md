@@ -54,7 +54,7 @@ Execute the complete release pipeline for bashcrawl. This workflow covers shell 
    ```bash
    # Lint all shell scripts (respects .shellcheckrc)
    shellcheck *.sh src/help/*.sh lib/*.sh
-   
+
    # YAML and Markdown lint (matches CI)
    yamllint -c .yamllint.yml .
    markdownlint '**/*.md' --config .markdownlint.json
@@ -64,13 +64,13 @@ Execute the complete release pipeline for bashcrawl. This workflow covers shell 
    ```bash
    # Activate virtualenv first
    source .venv/bin/activate
-   
+
    # Fast deterministic tests (default CI run)
    cd test && pytest -m "unit" -q
-   
+
    # Real filesystem + bash integration tests
    cd test && pytest -m "integration" -q
-   
+
    # Full suite (unit + integration, matches CI default)
    cd test && pytest -q
    ```
@@ -188,14 +188,14 @@ Execute the complete release pipeline for bashcrawl. This workflow covers shell 
    gh pr create --base main --head <branch> \
      --title "<type>(<scope>): <description>" \
      --body "## Summary
-   
+
    <description of changes>
-   
+
    ## Test Results
    - shellcheck: PASSED
    - pytest unit: PASSED
    - pytest integration: PASSED
-   
+
    ## Checklist
    - [ ] Shell scripts pass shellcheck
    - [ ] Tests pass

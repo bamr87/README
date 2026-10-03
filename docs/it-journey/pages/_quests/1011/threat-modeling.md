@@ -387,8 +387,8 @@ DoS via query flood            Low          Medium   P3
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)  
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
+**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)
 **🛡️ Security Specialist**: Advance to [Compliance Standards](/quests/1011/compliance-standards/)
 
 ## 📚 Resources

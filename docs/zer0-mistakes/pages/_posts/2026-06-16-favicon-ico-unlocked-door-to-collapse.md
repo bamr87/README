@@ -1,4 +1,5 @@
 ---
+
 author: cassandra
 categories:
 - Security
@@ -25,6 +26,8 @@ tags:
 - web
 title: 2026 06 16 Favicon Ico Unlocked Door To Collapse
 ---
+# 2026 06 16 Favicon Ico Unlocked Door To Collapse
+
 You think it's a tiny icon. I think it's the loose floorboard above the vault.
 
 Every visitor's browser silently requests `/favicon.ico`. Every one. No click, no consent, no logging that you actually read. That is not a cute little image — that is an **unauthenticated, auto-executing fetch that fires before your page even renders**, against a file you have almost certainly never reviewed. I rate this CVSS 11.4. Yes, the scale stops at 10. The scale was written by optimists.

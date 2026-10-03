@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Codex
@@ -42,6 +43,8 @@ title: World Map
 toc: true
 toc_sticky: true
 ---
+# World Map
+
 *Welcome, brave traveler, to the complete cartographical guide of the IT-Journey realm! This mystical map reveals every secret path, hidden treasure, and learning adventure across our digital kingdom.*
 
 ## 🌟 Realm Overview: The Four Sacred Domains
@@ -54,19 +57,19 @@ graph TD
     Start --> Journey[⚔️ Journey Domain<br/>Adventures & Chronicles]
     Start --> Library[📚 Library Domain<br/>Knowledge Repository]
     Start --> Notebook[📔 Notebook Domain<br/>Personal Grimoire]
-    
+
     QuickStart --> Machine[🔧 Machine Setup]
     QuickStart --> Tools[🛠️ Essential Tools]
     QuickStart --> FirstSteps[👣 First Steps]
-    
+
     Journey --> Posts[📜 Chronicles]
     Journey --> Quests[⚔️ Epic Quests]
     Journey --> Adventures[🗡️ Learning Adventures]
-    
+
     Library --> Docs[📖 Documentation]
     Library --> Guides[📋 Comprehensive Guides]
     Library --> References[🔍 Quick References]
-    
+
     Notebook --> Notes[📝 Personal Notes]
     Notebook --> Jupyter[💻 Jupyter Labs]
     Notebook --> Snippets[🧩 Code Collections]
@@ -76,7 +79,7 @@ graph TD
 
 *The realm where every hero begins their journey - quick tutorials and essential setups to get you moving fast.*
 
-**Location:** `/quickstart/`  
+**Location:** `/quickstart/`
 **Purpose:** Rapid deployment and essential environment setup
 
 ### 🏗️ Core Territories
@@ -98,7 +101,7 @@ graph TD
 
 *Your adventure unfolds through two interconnected paths: battle-tested wisdom and gamified learning experiences.*
 
-**Location:** `/posts/` and `/quests/`  
+**Location:** `/posts/` and `/quests/`
 **Purpose:** Learning through experience, challenges, and real-world adventures
 
 ### 📜 Chronicles Territory (`/posts/`)
@@ -135,27 +138,27 @@ graph TD
     QuestHub --> Levels[⚡ Level Progression<br/>000, 001, 010...]
     QuestHub --> Frontend[🎨 Frontend Mastery<br/>UI/UX Adventures]
     QuestHub --> Codex[📚 Quest Codex<br/>Reference Materials]
-    
+
     InitWorld --> HelloNoob[👶 Hello n00b]
     InitWorld --> HelloWin[🪟 Hello Windows]
     InitWorld --> HelloMac[🍎 Hello macOS]
     InitWorld --> HelloLinux[🐧 Hello Linux]
     InitWorld --> HelloCloud[☁️ Hello Cloud]
-    
+
     Levels --> Lvl000[📝 Level 000<br/>Bash & Scripting]
     Levels --> Lvl001[🌐 Level 001<br/>Web Technologies]
     Levels --> Lvl010[🏗️ Level 010<br/>Complex Applications]
-    
+
     Frontend --> FrontendDocker[🐳 Frontend Docker]
     Frontend --> FrontendLevels[📊 Frontend Progression]
-    
+
     Codex --> WorldMap[🗺️ World Map]
     Codex --> Glossary[📖 Glossary]
 ```
 
 #### 🏰 Init World - Character Creation & Foundation
 
-**Location:** `/quests/0000/` (Init World)  
+**Location:** `/quests/0000/` (Init World)
 **Purpose:** Begin your journey and establish your digital identity
 
 | Quest | Difficulty | Description |
@@ -176,7 +179,7 @@ graph TD
 
 #### ⚡ Level Progression System
 
-**Level 000 - Apprentice Trials** (`/quests/0000/`)  
+**Level 000 - Apprentice Trials** (`/quests/0000/`)
 Basic scripting and automation magic
 
 - [Bash Fundamentals](/quests/0000/side-quests/bash-run/) - Learn the Terminal Incantations
@@ -184,7 +187,7 @@ Basic scripting and automation magic
 - `calculator.sh` - Mathematical Magic Basics
 - `profile.sh` - Customize Your Digital Presence
 
-**Level 001 - Journeyman Challenges** (`/quests/0001/`)  
+**Level 001 - Journeyman Challenges** (`/quests/0001/`)
 Web technologies and advanced scripting
 
 - [Personal Site Creation](/quests/0001/side-quests/personal-site/) - Build Your Digital Castle
@@ -192,7 +195,7 @@ Web technologies and advanced scripting
 - `js_testing.js` - Test Your Magical Constructs
 - `python.py` - Pythonic Sorcery Basics
 
-**Level 010 - Master Tier Quests** (`/quests/0010/`)  
+**Level 010 - Master Tier Quests** (`/quests/0010/`)
 Complex application development
 
 - Bookstore Application (planned) - Craft a Complete Magical Marketplace
@@ -229,7 +232,7 @@ Reference materials and navigation aids
 
 *Reference docs and step-by-step guides for when you need to go deeper.*
 
-**Location:** `/docs/`  
+**Location:** `/docs/`
 **Purpose:** Step-by-step guides, references, and architectural blueprints
 
 ### 🏛️ Library Collections
@@ -256,7 +259,7 @@ Access all categories at `/categories/` to explore content by topic:
 
 *Your growing collection of interactive code environments, notes, and personal discoveries.*
 
-**Location:** `/notes/`  
+**Location:** `/notes/`
 **Purpose:** Personal learning space and code experimentation
 
 ### 🧪 Laboratory Sections
@@ -306,7 +309,7 @@ it-journey/
 Site navigation is managed through YAML files in `_data/navigation/`:
 
 - `main.yml` - Primary navigation menu
-- `quickstart.yml` - QuickStart section navigation  
+- `quickstart.yml` - QuickStart section navigation
 - `posts.yml` - Journey/Chronicles navigation
 - `docs.yml` - Library documentation navigation
 - `about.yml` - Platform information navigation
@@ -385,9 +388,9 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 
 **Legend:**
 
-- 🌱 = n00b (absolute beginner)  
+- 🌱 = n00b (absolute beginner)
 - 🟢 = Easy (basic knowledge required)
-- 🟡 = Medium (some experience helpful)  
+- 🟡 = Medium (some experience helpful)
 - 🔴 = Hard (advanced skills needed)
 - ⚔️ = Epic (expert-level challenges)
 

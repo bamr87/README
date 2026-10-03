@@ -102,11 +102,11 @@ deletePoller.waitForCompletion();
 ```java
 public void rotateSecret(String secretName, String newValue) {
     KeyVaultSecret current = secretClient.getSecret(secretName);
-    
+
     // Disable old version
     current.getProperties().setEnabled(false);
     secretClient.updateSecretProperties(current.getProperties());
-    
+
     // Create new version
     KeyVaultSecret newSecret = secretClient.setSecret(secretName, newValue);
     System.out.println("Rotated to version: " + newSecret.getProperties().getVersion());

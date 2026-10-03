@@ -283,5 +283,5 @@ When creating new templates or improving existing ones:
 
 ---
 
-**Last Updated**: 2025-11-29  
+**Last Updated**: 2025-11-29
 **Maintainers**: IT-Journey Team

@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 11 of Ulysses — Sirens (4pm, the Ormond Hotel bar).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 11-sirens.md
 title: 11 Sirens
 ---
+# 11 Sirens
+
 {% include page-header.html %}
 
 Episode 11 of *Ulysses*. 4pm, the Ormond Hotel bar.

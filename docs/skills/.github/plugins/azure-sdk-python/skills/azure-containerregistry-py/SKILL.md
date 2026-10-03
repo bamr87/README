@@ -209,10 +209,10 @@ from azure.identity.aio import DefaultAzureCredential
 async def list_repos():
     credential = DefaultAzureCredential()
     client = ContainerRegistryClient(endpoint, credential)
-    
+
     async for repo in client.list_repository_names():
         print(repo)
-    
+
     await client.close()
     await credential.close()
 ```

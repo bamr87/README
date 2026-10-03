@@ -199,14 +199,14 @@ jobs:
         id: create-pr
         run: |
           git checkout -b "copilot/issue-${% raw %}{{ github.event.issue.number }}{% endraw %}-implementation"
-          
+
           # Agent performs the implementation
           # ... (agent work here)
-          
+
           git add .
           git commit -m "feat: implement #${% raw %}{{ github.event.issue.number }}{% endraw %}"
           git push origin HEAD
-          
+
           # Always create as DRAFT at L2 — agent cannot mark as ready
           gh pr create \
             --draft \
@@ -238,14 +238,14 @@ jq -r '.[] | "\(.databaseId) \(.conclusion) \(.displayTitle)"' |
 while read RUN_ID CONCLUSION TITLE; do
     echo ""
     echo "--- Run: $TITLE ($RUN_ID) ---"
-    
+
     # Check if PR was created as draft (L2+ compliance)
     PR_NUM=$(gh pr list --search "head:copilot/" --json number,isDraft -q '.[0].number')
     IS_DRAFT=$(gh pr view "$PR_NUM" --json isDraft -q '.isDraft' 2>/dev/null || echo "no-pr")
-    
+
     echo "  Conclusion: $CONCLUSION"
     echo "  PR draft: $IS_DRAFT"
-    
+
     if [ "$IS_DRAFT" = "true" ]; then
         echo "  ✅ L2+ controls applied (draft PR)"
     elif [ "$IS_DRAFT" = "false" ]; then

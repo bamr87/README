@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Joyce in the World
 date: 2025-02-10
@@ -18,6 +19,8 @@ source_url: https://www.swerveofshore.com/post/james-joyce-charles-dickens-paral
 sub-title: Joyce in the World
 title: James Joyce Charles Dickens Parallels Martin Chuzzlewit
 ---
+# James Joyce Charles Dickens Parallels Martin Chuzzlewit
+
 From the *Joyce in the World* thread on [Swerve of Shore](https://www.swerveofshore.com/post/james-joyce-charles-dickens-parallels-martin-chuzzlewit), by Brandon Nicklaus.
 
 > In Martin Chuzzlewit, Mr. Pecksniff, the master of self-serving morality, reflects on his higher status, contrasting himself with a beggar he saw on the way to London. With seemingly insincere tears, he tells his daughters:

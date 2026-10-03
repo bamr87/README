@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 08 28 Digital Artist 0001
 verdict: fail
 walk_date: '2026-08-28'
 ---
+# 2026 08 28 Digital Artist 0001
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 56.6%) · **Walked** 2026-08-28
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33183081731) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md)

@@ -1,7 +1,10 @@
 ---
+
 source_file: Input.prompt.md
 title: Input.Prompt
 ---
+# Input.Prompt
+
 Labelled text field for forms, search, and the config wizard.
 
 ```jsx

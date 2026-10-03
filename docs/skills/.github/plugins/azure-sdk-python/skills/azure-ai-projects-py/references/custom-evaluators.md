@@ -95,12 +95,12 @@ evaluator = project_client.evaluators.create_version(
 def grade(sample, item) -> dict:
     response = item.get("response", "").lower()
     required_keywords = ["disclaimer", "not financial advice", "consult a professional"]
-    
+
     found = [kw for kw in required_keywords if kw in response]
     missing = [kw for kw in required_keywords if kw not in response]
-    
+
     score = len(found) / len(required_keywords) if required_keywords else 1.0
-    
+
     return {
         "compliance_score": score,
         "missing_disclaimers": ", ".join(missing) if missing else "none",
@@ -143,23 +143,23 @@ import json
 def grade(sample, item) -> dict:
     response = item.get("response", "")
     required_fields = item.get("required_fields", [])
-    
+
     try:
         parsed = json.loads(response)
         is_valid_json = True
-        
+
         if required_fields:
             missing = [f for f in required_fields if f not in parsed]
             has_required_fields = len(missing) == 0
         else:
             has_required_fields = True
             missing = []
-            
+
     except json.JSONDecodeError:
         is_valid_json = False
         has_required_fields = False
         missing = required_fields
-    
+
     return {
         "is_valid_json": is_valid_json,
         "has_required_fields": has_required_fields,

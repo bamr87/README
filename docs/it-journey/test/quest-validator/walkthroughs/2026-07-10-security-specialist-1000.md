@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-10T00:00:00.000Z'
 level: '1000'
@@ -20,6 +21,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 10 Security Specialist 1000
 ---
+# 2026 07 10 Security Specialist 1000
+
 ## 🎯 Session Summary
 
 I walked the second window (4 quests) of the **Security Specialist → Level 1000 (Cloud Computing / Warrior 🔥)** slice as a learner, driving the sealed agentic **execute-mode** evidence and then reading each quest's source in plan order to reason about the linked journey. The technical core of this slice is strong: the **Infrastructure as Code** (87, pass) and **The War Machine** (97, pass) quests were *executed for real* in the sandbox and every documented command/output matched; **AWS Essentials** (71, warn) is technically sound but incomplete on its own cleanup promise; **Azure Ascension** could **not be scored** — the engine reached its 40-turn ceiling while probing the deploy script, so it is recorded as a `fail` (0) that is really an *unscored* result, not a proven content defect.

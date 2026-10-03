@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 5
 source_file: vortex5.md
 title: Vortex5
 ---
+# Vortex5
+
 MD5 Brute Force
 ---------------
 A password is required for the next level. vortex5.c and md5.h. a-z,A-Z,0-9 is the search space. The password length is 5 chars long, it was originally 7 chars long.

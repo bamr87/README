@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 14 Game Developer 1101
 verdict: warn
 walk_date: '2026-07-14'
 ---
+# 2026 07 14 Game Developer 1101
+
 > **Slice** `game-developer/1101` · **Level** 1101 (Machine Learning & AI) · **Master tier** · **Engine verdict** ⚠️ warn (avg 84.2%) · **Walked** 2026-07-14
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md)

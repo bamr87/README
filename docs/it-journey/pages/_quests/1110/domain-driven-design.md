@@ -438,8 +438,8 @@ A **context map** documents the relationships between contexts - shared kernel, 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Microservices Architecture](/quests/1110/microservices-architecture/)  
-**🏗️ System Engineer**: Explore [Event-Driven Design](/quests/1110/event-driven-design/)  
+**💻 Software Developer**: Continue to [Microservices Architecture](/quests/1110/microservices-architecture/)
+**🏗️ System Engineer**: Explore [Event-Driven Design](/quests/1110/event-driven-design/)
 **📊 Data Scientist**: Note how bounded contexts clarify which data is authoritative where
 
 ## 📚 Resources

@@ -1,4 +1,5 @@
 ---
+
 categories:
 - about
 date: '2024-03-12T19:51:39.000Z'
@@ -22,6 +23,8 @@ tags:
 title: Index
 type: default
 ---
+# Index
+
 ## Educational Features
 
 These are the learning-focused features that make IT-Journey an end-to-end educational platform, from interactive quests to documentation, search, and community tools.

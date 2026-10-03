@@ -533,8 +533,8 @@ You now have a reproducible, version-controlled, multi-service environment that 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Advance toward CI/CD pipelines for your stacks  
-**🏗️ System Engineer**: Study networks, health checks, and resource limits in depth  
+**💻 Software Developer**: Advance toward CI/CD pipelines for your stacks
+**🏗️ System Engineer**: Study networks, health checks, and resource limits in depth
 **🛡️ Security Specialist**: Explore secrets management and network segmentation
 
 ## 📚 Resources

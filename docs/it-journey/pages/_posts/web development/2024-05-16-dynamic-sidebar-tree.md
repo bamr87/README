@@ -1,4 +1,5 @@
 ---
+
 FIXME: need code blocks to be raw liquid maybe vscode plugin?
 author: null
 categories: []
@@ -24,10 +25,12 @@ tags:
 title: 2024 05 16 Dynamic Sidebar Tree
 type: posts
 ---
+# 2024 05 16 Dynamic Sidebar Tree
+
 {% raw %}
 bamr87: help me update this code to display a the sub-folder and files.
 
-GitHub Copilot: The existing code already displays sub-folders and files. However, it does not differentiate between them. To make it clear which are folders and which are files, you can add a class to the `<li>` elements. 
+GitHub Copilot: The existing code already displays sub-folders and files. However, it does not differentiate between them. To make it clear which are folders and which are files, you can add a class to the `<li>` elements.
 
 Here's how you can modify the code:
 
@@ -85,7 +88,7 @@ Here's how you can modify the code:
 
 In this code, I've added a variable `current_path` to keep track of the current folder path. This path is compared with the previous path (`prev_path`), and a new list item is only created when the path changes. This prevents the repetition of the root and sub-folders.
 
-bamr87: the root folder does not repeat anymore but the sub-folder does. 
+bamr87: the root folder does not repeat anymore but the sub-folder does.
 
 GitHub Copilot: The issue is that the current_path is being reset for each document, which causes the sub-folders to repeat. To fix this, you need to keep track of the current path outside of the document loop.
 

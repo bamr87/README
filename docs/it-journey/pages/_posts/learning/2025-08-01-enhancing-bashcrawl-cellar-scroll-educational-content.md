@@ -46,7 +46,7 @@ When encountering the original Bashcrawl cellar scroll, I found a functional but
 
 The original scroll contained:
 - Basic `ls -F` introduction
-- Simple alias explanation  
+- Simple alias explanation
 - Fantasy theme consistency
 - Minimal interactive guidance
 
@@ -196,7 +196,7 @@ This enchantment adds **color coding**:
 ### ✅ Required Tasks
 
 1. **Cast Enhanced Sight**: Use `ls -F` to see the true nature of this cellar
-2. **Create Permanent Enhancement**: Set up the `alias ls='ls -F'` enchantment  
+2. **Create Permanent Enhancement**: Set up the `alias ls='ls -F'` enchantment
 3. **Test Your Magic**: Verify that plain `ls` now shows file type indicators
 4. **Explore Thoroughly**: Use your enhanced sight to identify all chambers and encounters
 5. **Find the Treasure**: Locate and examine the treasure file in this room
@@ -230,7 +230,7 @@ Enhanced connections to other areas:
 After claiming your treasure and mastering the sight spells, new paths will open:
 
 - **🗡️ The Armoury**: Learn combat skills and file manipulation
-- **⛪ Hidden Chapel**: Discover secret commands and advanced techniques  
+- **⛪ Hidden Chapel**: Discover secret commands and advanced techniques
 - **💰 The Vault**: Master inventory management and environment variables
 - **🔧 The Scrap**: Explore system information and debugging
 ```

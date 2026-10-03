@@ -123,14 +123,14 @@ async def query_documents(
 ) -> list[dict]:
     """Query documents, optionally across partitions."""
     container = get_container()
-    
+
     query = "SELECT * FROM c WHERE c.docType = @docType"
     query_params = [{"name": "@docType", "value": doc_type}]
-    
+
     if extra_filter:
         query += f" {extra_filter}"
         query_params.extend(parameters or [])
-    
+
     if partition_key:
         # Efficient single-partition query
         items = container.query_items(
@@ -145,7 +145,7 @@ async def query_documents(
             parameters=query_params,
             enable_cross_partition_query=True,
         )
-    
+
     return await run_in_threadpool(list, items)
 ```
 
@@ -182,19 +182,19 @@ async def move_project_to_workspace(
     doc = await get_document(project_id, partition_key=old_workspace_id)
     if doc is None:
         return None
-    
+
     # 2. Update partition key value
     model_in_db = self._doc_to_model_in_db(doc)
     model_in_db.workspace_id = new_workspace_id
     model_in_db.updated_at = datetime.now(timezone.utc)
-    
+
     # 3. Insert into new partition
     new_doc = self._model_in_db_to_doc(model_in_db)
     await upsert_document(new_doc, partition_key=new_workspace_id)
-    
+
     # 4. Delete from old partition
     await delete_document(project_id, partition_key=old_workspace_id)
-    
+
     return self._model_in_db_to_model(model_in_db)
 ```
 

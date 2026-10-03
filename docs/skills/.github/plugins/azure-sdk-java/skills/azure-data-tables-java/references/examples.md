@@ -64,7 +64,7 @@ TableServiceClient tableServiceClient = new TableServiceClientBuilder()
 import com.azure.core.credential.AzureNamedKeyCredential;
 
 AzureNamedKeyCredential credential = new AzureNamedKeyCredential(
-    "<your-account-name>", 
+    "<your-account-name>",
     "<account-access-key>"
 );
 TableServiceClient tableServiceClient = new TableServiceClientBuilder()
@@ -135,12 +135,12 @@ import com.azure.core.util.Context;
 import java.time.Duration;
 
 Response<TableClient> response = tableServiceClient.createTableWithResponse(
-    "myTable", 
-    Duration.ofSeconds(5), 
+    "myTable",
+    Duration.ofSeconds(5),
     new Context("key1", "value1")
 );
-System.out.printf("Status: %d, Table: %s%n", 
-    response.getStatusCode(), 
+System.out.printf("Status: %d, Table: %s%n",
+    response.getStatusCode(),
     response.getValue().getTableName());
 ```
 
@@ -174,8 +174,8 @@ System.out.printf("Created entity: %s/%s%n", partitionKey, rowKey);
 
 ```java
 Response<Void> response = tableClient.createEntityWithResponse(
-    entity, 
-    Duration.ofSeconds(5), 
+    entity,
+    Duration.ofSeconds(5),
     new Context("key1", "value1")
 );
 System.out.printf("Status: %d%n", response.getStatusCode());
@@ -185,8 +185,8 @@ System.out.printf("Status: %d%n", response.getStatusCode());
 
 ```java
 TableEntity retrievedEntity = tableClient.getEntity(partitionKey, rowKey);
-System.out.printf("Retrieved: %s/%s%n", 
-    retrievedEntity.getPartitionKey(), 
+System.out.printf("Retrieved: %s/%s%n",
+    retrievedEntity.getPartitionKey(),
     retrievedEntity.getRowKey());
 
 // Access properties
@@ -203,10 +203,10 @@ import java.util.List;
 List<String> propertiesToSelect = Arrays.asList("Product", "Price");
 
 Response<TableEntity> response = tableClient.getEntityWithResponse(
-    partitionKey, 
-    rowKey, 
-    propertiesToSelect, 
-    Duration.ofSeconds(5), 
+    partitionKey,
+    rowKey,
+    propertiesToSelect,
+    Duration.ofSeconds(5),
     new Context("key1", "value1")
 );
 
@@ -242,10 +242,10 @@ tableClient.updateEntity(entityForUpdate, TableEntityUpdateMode.REPLACE);
 
 ```java
 Response<Void> response = tableClient.updateEntityWithResponse(
-    entityForUpdate, 
-    TableEntityUpdateMode.REPLACE, 
+    entityForUpdate,
+    TableEntityUpdateMode.REPLACE,
     true,  // ifUnchanged - use ETag
-    Duration.ofSeconds(5), 
+    Duration.ofSeconds(5),
     new Context("key1", "value1")
 );
 ```
@@ -272,9 +272,9 @@ tableClient.deleteEntity(entity);
 
 // With response
 Response<Void> response = tableClient.deleteEntityWithResponse(
-    entity, 
+    entity,
     true,  // ifUnchanged - use ETag
-    Duration.ofSeconds(5), 
+    Duration.ofSeconds(5),
     new Context("key1", "value1")
 );
 ```
@@ -289,8 +289,8 @@ import com.azure.core.http.rest.PagedIterable;
 PagedIterable<TableEntity> entities = tableClient.listEntities();
 
 entities.forEach(entity ->
-    System.out.printf("Entity: %s/%s%n", 
-        entity.getPartitionKey(), 
+    System.out.printf("Entity: %s/%s%n",
+        entity.getPartitionKey(),
         entity.getRowKey()));
 ```
 
@@ -307,8 +307,8 @@ ListEntitiesOptions options = new ListEntitiesOptions()
     .setSelect(propertiesToSelect);
 
 for (TableEntity entity : tableClient.listEntities(options, null, null)) {
-    System.out.printf("%s: %.2f%n", 
-        entity.getProperty("Product"), 
+    System.out.printf("%s: %.2f%n",
+        entity.getProperty("Product"),
         entity.getProperty("Price"));
 }
 ```
@@ -323,13 +323,13 @@ ListEntitiesOptions options = new ListEntitiesOptions()
 
 PagedIterable<TableEntity> entities = tableClient.listEntities(
     options,
-    Duration.ofSeconds(5), 
+    Duration.ofSeconds(5),
     null
 );
 
 entities.forEach(entity -> {
-    System.out.printf("Entity: %s/%s%n", 
-        entity.getPartitionKey(), 
+    System.out.printf("Entity: %s/%s%n",
+        entity.getPartitionKey(),
         entity.getRowKey());
     entity.getProperties().forEach((key, value) ->
         System.out.printf("  %s: %s%n", key, value));
@@ -405,7 +405,7 @@ TableEntity firstEntity = new TableEntity(partitionKey, "m001")
     .addProperty("Type", "Dry")
     .addProperty("Color", "Red");
 transactionActions.add(new TableTransactionAction(
-    TableTransactionActionType.CREATE, 
+    TableTransactionActionType.CREATE,
     firstEntity
 ));
 
@@ -414,7 +414,7 @@ TableEntity secondEntity = new TableEntity(partitionKey, "m002")
     .addProperty("Type", "Wet")
     .addProperty("Color", "Blue");
 transactionActions.add(new TableTransactionAction(
-    TableTransactionActionType.CREATE, 
+    TableTransactionActionType.CREATE,
     secondEntity
 ));
 
@@ -423,14 +423,14 @@ TableEntity entityToUpdate = new TableEntity(partitionKey, "m003")
     .addProperty("Brand", "Crayola")
     .addProperty("Color", "Blue");
 transactionActions.add(new TableTransactionAction(
-    TableTransactionActionType.UPDATE_MERGE, 
+    TableTransactionActionType.UPDATE_MERGE,
     entityToUpdate
 ));
 
 // DELETE action
 TableEntity entityToDelete = new TableEntity(partitionKey, "m004");
 transactionActions.add(new TableTransactionAction(
-    TableTransactionActionType.DELETE, 
+    TableTransactionActionType.DELETE,
     entityToDelete
 ));
 
@@ -491,8 +491,8 @@ asyncTableClient.createEntity(entity)
 ```java
 asyncTableClient.listEntities()
     .subscribe(
-        entity -> System.out.printf("Entity: %s/%s%n", 
-            entity.getPartitionKey(), 
+        entity -> System.out.printf("Entity: %s/%s%n",
+            entity.getPartitionKey(),
             entity.getRowKey()),
         error -> System.err.println("Error: " + error.getMessage())
     );

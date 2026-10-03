@@ -99,7 +99,7 @@ The following categories of variables are configured:
    ```bash
    # Generate SECRET_KEY
    openssl rand -hex 32
-   
+
    # Generate ENCRYPTION_KEYS
    openssl rand -base64 32
    ```
@@ -120,7 +120,7 @@ The following categories of variables are configured:
    ```bash
    # All services
    docker-compose logs -f
-   
+
    # Specific service
    docker-compose logs -f web
    ```

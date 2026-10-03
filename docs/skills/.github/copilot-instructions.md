@@ -248,7 +248,7 @@ Before completing any code change:
 service = ProjectService()
 expected = Project(id="123", name="test")
 
-# Act  
+# Act
 result = await service.get_project("123")
 
 # Assert

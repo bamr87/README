@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -19,6 +20,8 @@ tags:
 - research
 title: 2026 04 28 Climate Data Primer
 ---
+# 2026 04 28 Climate Data Primer
+
 Climate data is easy to misunderstand because the numbers often describe long-term patterns, not yesterday's weather. A single storm, heat wave, or cold snap can be dramatic, but climate trends emerge from many measurements over many years.
 
 This primer introduces the concepts that make climate datasets easier to read.

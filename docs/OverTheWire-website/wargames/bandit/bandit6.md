@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 6
 source_file: bandit6.md
 title: Bandit6
 ---
+# Bandit6
+
 Level Goal
 ----------
 The password for the next level is stored in a file somewhere under the **inhere** directory and has all of the following properties:

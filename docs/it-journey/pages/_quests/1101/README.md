@@ -73,15 +73,15 @@ graph TB
         MLOPS[MLOps Engineering]
         ETHICS[AI Ethics]
     end
-    
+
     subgraph "Prerequisites (Level 1100)"
         DE[Data Engineering]
     end
-    
+
     subgraph "Unlocks (Level 1110)"
         ARCH[Architecture & Design]
     end
-    
+
     DE --> ML
     DE --> PY
     ML --> NN

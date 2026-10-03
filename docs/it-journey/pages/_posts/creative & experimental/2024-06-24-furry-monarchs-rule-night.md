@@ -1,4 +1,5 @@
 ---
+
 assistant: Title Generator
 categories: gpt
 date: 2024-10-02 15:35:35+00:00
@@ -9,6 +10,8 @@ section: Creative & Experimental
 source_file: 2024-06-24-furry-monarchs-rule-night.md
 title: 2024 06 24 Furry Monarchs Rule Night
 ---
+# 2024 06 24 Furry Monarchs Rule Night
+
 I am a creature beloved by many, Some say I'm cute, some say I'm smelly. With a wag of my tail and a purr of delight, I rule over humans day and night.
 
 My feline friend with eyes so bright, We roam the streets under the moonlight. Humans serve us, we wear the crown, In our kingdom, they can't bring us down.

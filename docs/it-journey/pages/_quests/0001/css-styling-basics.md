@@ -549,9 +549,9 @@ The same idea scales: a `--space` scale, a `--radius`, and a handful of color to
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
-**🏗️ System Engineer**: Explore [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
-**🎨 Frontend Specialist**: Master [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
+**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)
+**🏗️ System Engineer**: Explore [Bootstrap Framework](/quests/0001/bootstrap-framework/)
+**🎨 Frontend Specialist**: Master [Bootstrap Framework](/quests/0001/bootstrap-framework/)
 
 ## 📚 Resources
 

@@ -1,4 +1,5 @@
 ---
+
 author: Zer0-Mistakes Team
 categories:
 - Tutorial
@@ -26,6 +27,8 @@ translated_from_sha: 8d3fbba92fb2
 translation_of: pages/_posts/2025-01-01-getting-started-jekyll.md
 translation_source_url: /posts/2025/01/01/getting-started-jekyll/
 ---
+# 2025 01 01 Getting Started Jekyll
+
 Bienvenue dans Jekyll ! Ce tutoriel vous guidera dans la création de votre premier site web statique avec Jekyll, le générateur de sites statiques populaire.
 
 ## Qu'est-ce que Jekyll ?

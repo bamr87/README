@@ -407,8 +407,8 @@ curl -s -X POST https://auth.example.com/token \
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Error Handling](/quests/0111/error-handling/)  
-**🏗️ System Engineer**: Explore [Rate Limiting](/quests/0111/rate-limiting/)  
+**💻 Software Developer**: Continue to [Error Handling](/quests/0111/error-handling/)
+**🏗️ System Engineer**: Explore [Rate Limiting](/quests/0111/rate-limiting/)
 **🛡️ Security Specialist**: Advance to [Error Handling](/quests/0111/error-handling/)
 
 ## 📚 Resources

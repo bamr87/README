@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 6
 source_file: semtex6.md
 title: Semtex6
 ---
+# Semtex6
+
 ICMP forging
 ------------
 Send a special ICMP packet to an unknown host. Add the correct payload to it, to make sure you can receive the password. Spoof your origin address and make semtex believe, the packet is really coming from some government server (\*.gov) Make sure this server you are sending from has a reverse DNS entry, otherwise you will not receive an answer.

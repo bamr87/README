@@ -1,4 +1,5 @@
 ---
+
 about: Suggest a new feature for this site/project
 assignees: bamr87
 date: 2021-09-03 18:10:54+00:00
@@ -7,6 +8,8 @@ name: Feature request
 source_file: feature_request.md
 title: Feature Request
 ---
+# Feature Request
+
 **Description**: Please add a new feature to ...
 
 **Benefit(s)/Reason(s)**: This feature is important because ...

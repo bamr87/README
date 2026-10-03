@@ -454,8 +454,8 @@ The trade-off: BFFs eliminate one-size-fits-none compromises but multiply the nu
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)  
-**🏗️ System Engineer**: Explore running the gateway in high availability  
+**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)
+**🏗️ System Engineer**: Explore running the gateway in high availability
 **🛡️ Security Specialist**: Deepen edge authentication and TLS termination
 
 ## 📚 Resources

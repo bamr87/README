@@ -106,7 +106,7 @@ const subscription = consumerClient.subscribe({
     for (const event of events) {
       await processEvent(event);
     }
-    
+
     // Checkpoint after successful processing
     if (events.length > 0) {
       await context.updateCheckpoint(events[events.length - 1]);
@@ -160,7 +160,7 @@ const subscription = consumerClient.subscribe({
     for (const event of events) {
       await processEvent(event);
     }
-    
+
     // Checkpoint after every batch
     if (events.length > 0) {
       await context.updateCheckpoint(events[events.length - 1]);
@@ -183,7 +183,7 @@ const subscription = consumerClient.subscribe({
     for (const event of events) {
       await processEvent(event);
       processedCount++;
-      
+
       // Checkpoint every N events
       if (processedCount % checkpointInterval === 0) {
         await context.updateCheckpoint(event);
@@ -210,7 +210,7 @@ const subscription = consumerClient.subscribe({
       await processEvent(event);
       lastEvent = event;
     }
-    
+
     // Checkpoint based on time
     const now = Date.now();
     if (lastEvent && (now - lastCheckpointTime) >= checkpointIntervalMs) {
@@ -233,7 +233,7 @@ const subscription = consumerClient.subscribe({
     const results = await Promise.allSettled(
       events.map(event => processEvent(event))
     );
-    
+
     // Find last successfully processed event
     let lastSuccessIndex = -1;
     for (let i = results.length - 1; i >= 0; i--) {
@@ -242,12 +242,12 @@ const subscription = consumerClient.subscribe({
         break;
       }
     }
-    
+
     // Only checkpoint up to last success
     if (lastSuccessIndex >= 0) {
       await context.updateCheckpoint(events[lastSuccessIndex]);
     }
-    
+
     // Log failures
     const failures = results.filter(r => r.status === "rejected");
     if (failures.length > 0) {
@@ -345,7 +345,7 @@ const subscription = consumerClient.subscribe({
       for (const event of events) {
         await processEvent(event);
       }
-      
+
       if (events.length > 0) {
         await context.updateCheckpoint(events[events.length - 1]);
       }
@@ -355,11 +355,11 @@ const subscription = consumerClient.subscribe({
       // Optionally: send to dead letter, alert, etc.
     }
   },
-  
+
   processError: async (err, context) => {
     // SDK-level errors (connection, auth, etc.)
     console.error(`SDK error on partition ${context.partitionId}:`, err.message);
-    
+
     // The SDK handles reconnection automatically
     // Consider alerting for persistent errors
   }
@@ -377,7 +377,7 @@ const subscription = consumerClient.subscribe({
       await processEvent(event);
       lastProcessedEvent.set(context.partitionId, event);
     }
-    
+
     // Regular checkpointing
     if (events.length > 0) {
       await context.updateCheckpoint(events[events.length - 1]);
@@ -391,13 +391,13 @@ const subscription = consumerClient.subscribe({
 // Graceful shutdown
 process.on("SIGTERM", async () => {
   console.log("Shutting down gracefully...");
-  
+
   // Close subscription (stops receiving)
   await subscription.close();
-  
+
   // Close consumer client
   await consumerClient.close();
-  
+
   console.log("Shutdown complete");
   process.exit(0);
 });

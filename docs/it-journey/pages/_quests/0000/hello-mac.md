@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -91,6 +92,8 @@ validation_criteria:
   - Can install packages via Homebrew
   - Can navigate the terminal confidently
 ---
+# Hello Mac
+
 *Welcome, macOS adventurer! This quest transforms your Mac into a professional-grade development workstation. You'll install core tooling, tune your terminal, and validate a clean, repeatable setup.*
 
 ## 🎯 Quest Objectives

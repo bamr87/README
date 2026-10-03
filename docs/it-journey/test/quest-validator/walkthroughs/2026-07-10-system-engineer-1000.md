@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-10T00:00:00.000Z'
 level: '1000'
@@ -18,6 +19,8 @@ theme: Cloud Computing
 tier: Warrior 🔥
 title: 2026 07 10 System Engineer 1000
 ---
+# 2026 07 10 System Engineer 1000
+
 ## 🎯 Session Summary
 
 I walked the **System Engineer** path at **Level 1000 (Cloud Computing, Warrior 🔥)** as a learner, playing the 4 quests the planner selected for window 2-of-2 of this level (`aws-essentials` → `azure-ascension-jekyll-deployment` → `infrastructure-as-code` → `self-operating-website-03-the-war-machine`). Evidence is the **sealed execute-mode engine run** (`walk-evidence.json`), which sandboxed each quest and ran its safe commands for real; I consumed it as-is and reasoned about the linked journey by reading each quest source in plan order.

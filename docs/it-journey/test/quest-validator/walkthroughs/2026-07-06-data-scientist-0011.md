@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: 2026-07-06 13:18:22+00:00
 level: '0011'
@@ -22,6 +23,8 @@ theme: AI-Assisted Development
 tier: Apprentice
 title: 2026 07 06 Data Scientist 0011
 ---
+# 2026 07 06 Data Scientist 0011
+
 ## 🎯 Session Summary
 
 I walked the **Data Scientist → Level 0011 (Apprentice · "AI-Assisted Development")** slice as a learner would: three `main_quest` pages in planner order — the PRD Codex, the GitHub Pages Hidden Gem, and the Prompt Crystal (VS Code Copilot). The machine evidence was sealed by the workflow's execute-mode engine (I consumed `walk-evidence.json` verbatim — I did not re-run the engine); I then read each quest source and reasoned about them as one linked path.

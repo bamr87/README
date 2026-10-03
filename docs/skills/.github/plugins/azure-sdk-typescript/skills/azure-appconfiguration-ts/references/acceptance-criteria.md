@@ -8,7 +8,7 @@ title: 'Acceptance Criteria: azure-appconfiguration-ts'
 
 This document defines the acceptance criteria for code generated using the `@azure/app-configuration` SDK for TypeScript/JavaScript.
 
-**Package:** `@azure/app-configuration`  
+**Package:** `@azure/app-configuration`
 **Repository:** https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/appconfiguration/app-configuration
 
 ---

@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-27T00:00:00.000Z'
 level: '0001'
@@ -14,6 +15,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 27 Game Developer 0001
 ---
+# 2026 07 27 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 26 quests) of the **Game Developer → Level 0001 "Web Fundamentals" (🌱 Apprentice)** slice, in the dependency-sorted order the planner selected, as a beginner of this character class would. Evidence is the workflow-sealed `walk-evidence.json` from the agentic **execute** engine — each quest was sandboxed in a disposable temp dir and its safe snippets were actually run.

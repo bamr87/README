@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Posts
@@ -18,4 +19,6 @@ tags:
 title: 2024 08 24 Test Post Organization
 toc_sticky: true
 ---
+# 2024 08 24 Test Post Organization
+
 This is a test post to verify our organization script works correctly.

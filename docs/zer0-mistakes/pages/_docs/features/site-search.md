@@ -99,8 +99,8 @@ layout: null
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <input type="search" 
-               class="form-control" 
+        <input type="search"
+               class="form-control"
                data-search-input
                placeholder="Search documentation..."
                autofocus>
@@ -147,7 +147,7 @@ function initSearchModal() {
   // Perform search
   function search(query) {
     if (!searchIndex || !query) return [];
-    
+
     const terms = query.toLowerCase().split(' ');
     return searchIndex.filter(item => {
       const content = `${item.title} ${item.content}`.toLowerCase();
@@ -161,7 +161,7 @@ function initSearchModal() {
       resultsContainer.innerHTML = '<p class="text-muted">No results found.</p>';
       return;
     }
-    
+
     resultsContainer.innerHTML = results.map(item => `
       <a href="${item.url}" class="search-result d-block p-2 rounded">
         <strong>${item.title}</strong>
@@ -186,7 +186,7 @@ function initSearchModal() {
 document.addEventListener('keydown', (e) => {
   // Skip if typing in input
   if (e.target.matches('input, textarea')) return;
-  
+
   if (e.key === '/') {
     e.preventDefault();
     const modal = bootstrap.Modal.getOrCreateInstance(
@@ -246,7 +246,7 @@ Control what's indexed:
 searchInput.addEventListener('keydown', (e) => {
   const results = resultsContainer.querySelectorAll('.search-result');
   const active = resultsContainer.querySelector('.search-result.active');
-  
+
   if (e.key === 'ArrowDown') {
     e.preventDefault();
     const next = active ? active.nextElementSibling : results[0];
@@ -255,7 +255,7 @@ searchInput.addEventListener('keydown', (e) => {
       next.classList.add('active');
     }
   }
-  
+
   if (e.key === 'Enter' && active) {
     window.location.href = active.href;
   }

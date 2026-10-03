@@ -116,7 +116,7 @@ import java.io.File;
 File document = new File("document.pdf");
 BinaryData documentData = BinaryData.fromFile(document.toPath());
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocument("prebuilt-layout", documentData);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -128,19 +128,19 @@ for (DocumentPage page : result.getPages()) {
         page.getWidth(),
         page.getHeight(),
         page.getUnit());
-    
+
     // Extract lines
     for (DocumentLine line : page.getLines()) {
         System.out.println("Line: " + line.getContent());
     }
-    
+
     // Extract words with confidence
     for (DocumentWord word : page.getWords()) {
         System.out.printf("Word: '%s' (confidence: %.2f)%n",
             word.getContent(),
             word.getConfidence());
     }
-    
+
     // Selection marks (checkboxes)
     for (DocumentSelectionMark mark : page.getSelectionMarks()) {
         System.out.printf("Checkbox: %s (confidence: %.2f)%n",
@@ -154,7 +154,7 @@ for (DocumentTable table : result.getTables()) {
     System.out.printf("Table: %d rows x %d columns%n",
         table.getRowCount(),
         table.getColumnCount());
-    
+
     for (DocumentTableCell cell : table.getCells()) {
         System.out.printf("Cell[%d,%d]: %s%n",
             cell.getRowIndex(),
@@ -169,7 +169,7 @@ for (DocumentTable table : result.getTables()) {
 ```java
 String documentUrl = "https://example.com/document.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-layout", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -180,14 +180,14 @@ AnalyzeResult result = poller.getFinalResult();
 ```java
 String receiptUrl = "https://example.com/receipt.jpg";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-receipt", receiptUrl);
 
 AnalyzeResult result = poller.getFinalResult();
 
 for (AnalyzedDocument doc : result.getDocuments()) {
     Map<String, DocumentField> fields = doc.getFields();
-    
+
     // Merchant name
     DocumentField merchantName = fields.get("MerchantName");
     if (merchantName != null && merchantName.getType() == DocumentFieldType.STRING) {
@@ -195,30 +195,30 @@ for (AnalyzedDocument doc : result.getDocuments()) {
             merchantName.getValueAsString(),
             merchantName.getConfidence());
     }
-    
+
     // Transaction date
     DocumentField transactionDate = fields.get("TransactionDate");
     if (transactionDate != null && transactionDate.getType() == DocumentFieldType.DATE) {
         System.out.printf("Date: %s%n", transactionDate.getValueAsDate());
     }
-    
+
     // Total amount
     DocumentField total = fields.get("Total");
     if (total != null && total.getType() == DocumentFieldType.DOUBLE) {
         System.out.printf("Total: $%.2f%n", total.getValueAsDouble());
     }
-    
+
     // Line items
     DocumentField items = fields.get("Items");
     if (items != null && items.getType() == DocumentFieldType.LIST) {
         System.out.println("Items:");
         for (DocumentField item : items.getValueAsList()) {
             Map<String, DocumentField> itemFields = item.getValueAsMap();
-            
+
             DocumentField name = itemFields.get("Name");
             DocumentField price = itemFields.get("Price");
             DocumentField quantity = itemFields.get("Quantity");
-            
+
             System.out.printf("  - %s x%s: $%.2f%n",
                 name != null ? name.getValueAsString() : "Unknown",
                 quantity != null ? quantity.getValueAsDouble().intValue() : 1,
@@ -233,18 +233,18 @@ for (AnalyzedDocument doc : result.getDocuments()) {
 ```java
 String invoiceUrl = "https://example.com/invoice.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-invoice", invoiceUrl);
 
 AnalyzeResult result = poller.getFinalResult();
 
 for (AnalyzedDocument invoice : result.getDocuments()) {
     Map<String, DocumentField> fields = invoice.getFields();
-    
+
     // Vendor information
     DocumentField vendorName = fields.get("VendorName");
     DocumentField vendorAddress = fields.get("VendorAddress");
-    
+
     System.out.println("=== Vendor ===");
     if (vendorName != null) {
         System.out.println("Name: " + vendorName.getValueAsString());
@@ -252,21 +252,21 @@ for (AnalyzedDocument invoice : result.getDocuments()) {
     if (vendorAddress != null) {
         System.out.println("Address: " + vendorAddress.getContent());
     }
-    
+
     // Customer information
     DocumentField customerName = fields.get("CustomerName");
     DocumentField customerAddress = fields.get("CustomerAddress");
-    
+
     System.out.println("=== Customer ===");
     if (customerName != null) {
         System.out.println("Name: " + customerName.getValueAsString());
     }
-    
+
     // Invoice details
     DocumentField invoiceId = fields.get("InvoiceId");
     DocumentField invoiceDate = fields.get("InvoiceDate");
     DocumentField dueDate = fields.get("DueDate");
-    
+
     System.out.println("=== Invoice Details ===");
     if (invoiceId != null) {
         System.out.println("Invoice ID: " + invoiceId.getValueAsString());
@@ -277,13 +277,13 @@ for (AnalyzedDocument invoice : result.getDocuments()) {
     if (dueDate != null) {
         System.out.println("Due Date: " + dueDate.getValueAsDate());
     }
-    
+
     // Amounts
     DocumentField subTotal = fields.get("SubTotal");
     DocumentField totalTax = fields.get("TotalTax");
     DocumentField invoiceTotal = fields.get("InvoiceTotal");
     DocumentField amountDue = fields.get("AmountDue");
-    
+
     System.out.println("=== Amounts ===");
     if (subTotal != null) {
         System.out.printf("Subtotal: $%.2f%n", subTotal.getValueAsDouble());
@@ -294,19 +294,19 @@ for (AnalyzedDocument invoice : result.getDocuments()) {
     if (invoiceTotal != null) {
         System.out.printf("Total: $%.2f%n", invoiceTotal.getValueAsDouble());
     }
-    
+
     // Line items
     DocumentField items = fields.get("Items");
     if (items != null && items.getType() == DocumentFieldType.LIST) {
         System.out.println("=== Line Items ===");
         for (DocumentField item : items.getValueAsList()) {
             Map<String, DocumentField> itemFields = item.getValueAsMap();
-            
+
             String description = getStringValue(itemFields.get("Description"));
             Double quantity = getDoubleValue(itemFields.get("Quantity"));
             Double unitPrice = getDoubleValue(itemFields.get("UnitPrice"));
             Double amount = getDoubleValue(itemFields.get("Amount"));
-            
+
             System.out.printf("  %s | Qty: %.0f | Unit: $%.2f | Amount: $%.2f%n",
                 description, quantity, unitPrice, amount);
         }
@@ -328,36 +328,36 @@ private static Double getDoubleValue(DocumentField field) {
 ```java
 String idDocumentUrl = "https://example.com/drivers-license.jpg";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("prebuilt-idDocument", idDocumentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
 
 for (AnalyzedDocument idDoc : result.getDocuments()) {
     Map<String, DocumentField> fields = idDoc.getFields();
-    
+
     // Document type
     System.out.println("Document Type: " + idDoc.getDocType());
-    
+
     // Personal information
     DocumentField firstName = fields.get("FirstName");
     DocumentField lastName = fields.get("LastName");
     DocumentField dateOfBirth = fields.get("DateOfBirth");
     DocumentField sex = fields.get("Sex");
-    
+
     System.out.println("=== Personal Information ===");
     if (firstName != null) System.out.println("First Name: " + firstName.getValueAsString());
     if (lastName != null) System.out.println("Last Name: " + lastName.getValueAsString());
     if (dateOfBirth != null) System.out.println("DOB: " + dateOfBirth.getValueAsDate());
     if (sex != null) System.out.println("Sex: " + sex.getValueAsString());
-    
+
     // Document information
     DocumentField documentNumber = fields.get("DocumentNumber");
     DocumentField expirationDate = fields.get("DateOfExpiration");
     DocumentField address = fields.get("Address");
     DocumentField region = fields.get("Region");
     DocumentField country = fields.get("CountryRegion");
-    
+
     System.out.println("=== Document Information ===");
     if (documentNumber != null) System.out.println("Document #: " + documentNumber.getValueAsString());
     if (expirationDate != null) System.out.println("Expires: " + expirationDate.getValueAsDate());
@@ -407,7 +407,7 @@ model.getDocumentTypes().forEach((docType, details) -> {
 ```java
 String documentUrl = "https://example.com/new-invoice.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyzeDocumentFromUrl("my-custom-invoice-model", documentUrl);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -416,7 +416,7 @@ for (AnalyzedDocument doc : result.getDocuments()) {
     System.out.printf("Document type: %s (confidence: %.2f)%n",
         doc.getDocType(),
         doc.getConfidence());
-    
+
     doc.getFields().forEach((name, field) -> {
         System.out.printf("Field '%s': %s (confidence: %.2f)%n",
             name,
@@ -438,7 +438,7 @@ List<String> modelIds = Arrays.asList(
     "receipt-model"
 );
 
-SyncPoller<OperationResult, DocumentModelDetails> poller = 
+SyncPoller<OperationResult, DocumentModelDetails> poller =
     adminClient.beginComposeDocumentModel(
         modelIds,
         new ComposeDocumentModelOptions()
@@ -473,7 +473,7 @@ docTypes.put("purchase-order", new ClassifierDocumentTypeDetails()
     .setAzureBlobSource(new AzureBlobContentSource(containerUrl)
         .setPrefix("purchase-orders/")));
 
-SyncPoller<OperationResult, DocumentClassifierDetails> poller = 
+SyncPoller<OperationResult, DocumentClassifierDetails> poller =
     adminClient.beginBuildDocumentClassifier(
         docTypes,
         new BuildDocumentClassifierOptions()
@@ -490,7 +490,7 @@ System.out.println("Document types: " + classifier.getDocumentTypes().keySet());
 ```java
 String documentUrl = "https://example.com/unknown-document.pdf";
 
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginClassifyDocumentFromUrl("financial-doc-classifier", documentUrl, Context.NONE);
 
 AnalyzeResult result = poller.getFinalResult();
@@ -499,7 +499,7 @@ for (AnalyzedDocument doc : result.getDocuments()) {
     System.out.printf("Classified as: %s (confidence: %.2f)%n",
         doc.getDocType(),
         doc.getConfidence());
-    
+
     // Get bounding regions for the classified content
     if (doc.getBoundingRegions() != null) {
         for (BoundingRegion region : doc.getBoundingRegions()) {
@@ -625,7 +625,7 @@ Flux.fromIterable(documentUrls)
 class DocumentResult {
     String url;
     AnalyzeResult result;
-    
+
     DocumentResult(String url, AnalyzeResult result) {
         this.url = url;
         this.result = result;
@@ -639,13 +639,13 @@ class DocumentResult {
 import com.azure.core.exception.HttpResponseException;
 
 try {
-    SyncPoller<OperationResult, AnalyzeResult> poller = 
+    SyncPoller<OperationResult, AnalyzeResult> poller =
         client.beginAnalyzeDocumentFromUrl("prebuilt-receipt", "invalid-url");
     poller.getFinalResult();
 } catch (HttpResponseException e) {
     System.err.println("HTTP Status: " + e.getResponse().getStatusCode());
     System.err.println("Error Message: " + e.getMessage());
-    
+
     // Handle specific errors
     int statusCode = e.getResponse().getStatusCode();
     if (statusCode == 400) {
@@ -674,29 +674,29 @@ import com.azure.identity.DefaultAzureCredentialBuilder;
 import java.util.Map;
 
 public class InvoiceProcessor {
-    
+
     private final DocumentAnalysisClient client;
-    
+
     public InvoiceProcessor() {
         this.client = new DocumentAnalysisClientBuilder()
             .endpoint(System.getenv("FORM_RECOGNIZER_ENDPOINT"))
             .credential(new DefaultAzureCredentialBuilder().build())
             .buildClient();
     }
-    
+
     public InvoiceData processInvoice(String invoiceUrl) {
-        SyncPoller<OperationResult, AnalyzeResult> poller = 
+        SyncPoller<OperationResult, AnalyzeResult> poller =
             client.beginAnalyzeDocumentFromUrl("prebuilt-invoice", invoiceUrl);
-        
+
         AnalyzeResult result = poller.getFinalResult();
-        
+
         if (result.getDocuments().isEmpty()) {
             throw new RuntimeException("No invoice found in document");
         }
-        
+
         AnalyzedDocument invoice = result.getDocuments().get(0);
         Map<String, DocumentField> fields = invoice.getFields();
-        
+
         return new InvoiceData(
             getStringField(fields, "InvoiceId"),
             getStringField(fields, "VendorName"),
@@ -709,22 +709,22 @@ public class InvoiceProcessor {
             invoice.getConfidence()
         );
     }
-    
+
     private String getStringField(Map<String, DocumentField> fields, String name) {
         DocumentField field = fields.get(name);
         return field != null ? field.getValueAsString() : null;
     }
-    
+
     private java.time.LocalDate getDateField(Map<String, DocumentField> fields, String name) {
         DocumentField field = fields.get(name);
         return field != null ? field.getValueAsDate() : null;
     }
-    
+
     private Double getDoubleField(Map<String, DocumentField> fields, String name) {
         DocumentField field = fields.get(name);
         return field != null ? field.getValueAsDouble() : null;
     }
-    
+
     // Data class for invoice
     public static class InvoiceData {
         public final String invoiceId;
@@ -736,7 +736,7 @@ public class InvoiceProcessor {
         public final Double tax;
         public final Double total;
         public final double confidence;
-        
+
         public InvoiceData(String invoiceId, String vendorName, String customerName,
                           java.time.LocalDate invoiceDate, java.time.LocalDate dueDate,
                           Double subTotal, Double tax, Double total, double confidence) {
@@ -750,7 +750,7 @@ public class InvoiceProcessor {
             this.total = total;
             this.confidence = confidence;
         }
-        
+
         @Override
         public String toString() {
             return String.format(
@@ -759,12 +759,12 @@ public class InvoiceProcessor {
             );
         }
     }
-    
+
     public static void main(String[] args) {
         InvoiceProcessor processor = new InvoiceProcessor();
-        
+
         String invoiceUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/sample-invoice.pdf";
-        
+
         try {
             InvoiceData invoice = processor.processInvoice(invoiceUrl);
             System.out.println(invoice);

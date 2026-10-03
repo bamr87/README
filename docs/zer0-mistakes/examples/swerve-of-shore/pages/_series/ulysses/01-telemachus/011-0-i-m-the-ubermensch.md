@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Episode 1 · Telemachus
 date: 2025-02-22
@@ -15,6 +16,8 @@ source_url: https://www.swerveofshore.com/post/011-0-i-m-the-%C3%BCbermensch
 sub-title: Episode 1 · Telemachus
 title: 011 0 I M The Ubermensch
 ---
+# 011 0 I M The Ubermensch
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/011-0-i-m-the-%C3%BCbermensch), by Brandon Nicklaus.
 
 > We are using the original 1922 First Printing by Shakespeare & Co. - section attached

@@ -82,19 +82,19 @@ strategy:
 ```yaml
 steps:
   - uses: actions/checkout@v4
-  
+
   - name: Set up Ruby
     uses: ruby/setup-ruby@v1
     with:
       ruby-version: ${{ matrix.ruby-version }}
       bundler-cache: true
-  
+
   - name: Run tests
     run: ./test/test_runner.sh
-  
+
   - name: Build Jekyll site
     run: bundle exec jekyll build
-  
+
   - name: Build gem
     run: gem build jekyll-theme-zer0.gemspec
 ```

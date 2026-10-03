@@ -501,7 +501,7 @@ async def main():
         credential=credential,
         subscription_id=os.environ["AZURE_SUBSCRIPTION_ID"]
     )
-    
+
     async with client:
         capacity = await client.fabric_capacities.get(
             resource_group_name=resource_group,

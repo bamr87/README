@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 10 of Ulysses — Wandering Rocks (3pm, nineteen short
   scenes across the city).
 hide_intro: true
@@ -11,6 +12,8 @@ sidebar:
 source_file: 10-wandering-rocks.md
 title: 10 Wandering Rocks
 ---
+# 10 Wandering Rocks
+
 {% include page-header.html %}
 
 Episode 10 of *Ulysses*. 3pm, nineteen short scenes across the city.

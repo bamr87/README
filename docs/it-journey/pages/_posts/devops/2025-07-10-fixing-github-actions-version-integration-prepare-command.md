@@ -176,19 +176,19 @@ prepare)
 Commands:
   integrate [trigger] [description] [scope] [dry_run]
     Integrate version management with specified trigger
-    
+
   evolution [description] [dry_run]
     Handle version management for evolution cycles
-    
+
   prepare
     Prepare version management system for evolution cycle
-    
+
   version
     Get current version
-    
+
   status
     Show version status
-    
+
   scan
     Scan files for version updates needed
 ```
@@ -221,7 +221,7 @@ GitHub Actions workflows need reliable, predictable script interfaces.
 # Test the help command
 ./scripts/version-integration.sh help
 
-# Test the new prepare command  
+# Test the new prepare command
 ./scripts/version-integration.sh prepare
 
 # Verify script permissions

@@ -658,14 +658,14 @@ def main():
         credential=DefaultAzureCredential(),
         subscription_id=os.environ["AZURE_SUBSCRIPTION_ID"]
     )
-    
+
     # Create API Center
     api_center = client.services.create_or_update(
         resource_group_name="my-rg",
         service_name="my-api-center",
         resource=Service(location="eastus")
     )
-    
+
     # Register API
     api = client.apis.create_or_update(
         resource_group_name="my-rg",
@@ -678,7 +678,7 @@ def main():
             lifecycle_stage=LifecycleStage.PRODUCTION
         )
     )
-    
+
     # Create API Version
     version = client.api_versions.create_or_update(
         resource_group_name="my-rg",
@@ -691,7 +691,7 @@ def main():
             lifecycle_stage=LifecycleStage.PRODUCTION
         )
     )
-    
+
     # Add API Definition
     definition = client.api_definitions.create_or_update(
         resource_group_name="my-rg",
@@ -702,7 +702,7 @@ def main():
         definition_name="openapi",
         resource=ApiDefinition(title="OpenAPI Definition")
     )
-    
+
     # Create Environment
     environment = client.environments.create_or_update(
         resource_group_name="my-rg",
@@ -714,7 +714,7 @@ def main():
             kind=EnvironmentKind.PRODUCTION
         )
     )
-    
+
     # Create Deployment
     deployment = client.deployments.create_or_update(
         resource_group_name="my-rg",
@@ -729,7 +729,7 @@ def main():
             definition_id=definition.id
         )
     )
-    
+
     print(f"Created API Center: {api_center.name}")
     print(f"Registered API: {api.title}")
     print(f"Deployment state: {deployment.state}")

@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-15T14:03:10.000Z'
 level: '0001'
@@ -19,6 +20,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 15 Game Developer 0001
 ---
+# 2026 07 15 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the first window of the **Game Developer → Level 0001 (Web Fundamentals, 🌱 Apprentice)** slice as a learner: **5 linked quests** (4 main, 1 side) out of the level's 26 total, selected deterministically by `walk-plan.json` (window 1 of 6). Each quest was scored in isolation by the sealed agentic **execute** engine (`walk-evidence.json`), which actually ran the safe snippets in a disposable sandbox; I then read all five sources in plan order and reasoned about the journey as one path.

@@ -273,13 +273,13 @@ await foreach (SessionUpdate serverEvent in session.GetUpdatesAsync())
             // Parse arguments
             var args = JsonSerializer.Deserialize<Dictionary<string, string>>(functionCall.Arguments);
             string location = args?["location"] ?? "unknown";
-            
+
             // Call external service and get result
             string weatherResult = await GetWeatherAsync(location);
-            
+
             // Send function response back
             await session.AddItemAsync(new FunctionCallOutputItem(functionCall.CallId, weatherResult));
-            
+
             // Continue the conversation
             await session.StartResponseAsync();
         }
@@ -351,7 +351,7 @@ VoiceLiveClient client = new VoiceLiveClient(endpoint, credential, options);
 try
 {
     VoiceLiveSession session = await client.StartSessionAsync(model);
-    
+
     await foreach (SessionUpdate update in session.GetUpdatesAsync())
     {
         if (update is SessionUpdateError error)
@@ -387,19 +387,19 @@ catch { }
 public class VoiceAssistant
 {
     private readonly VoiceLiveClient _client;
-    
+
     public VoiceAssistant(string endpoint)
     {
         _client = new VoiceLiveClient(
             new Uri(endpoint),
             new DefaultAzureCredential());
     }
-    
+
     public async Task StartConversationAsync()
     {
         var model = "gpt-4o-mini-realtime-preview";
         VoiceLiveSession session = await _client.StartSessionAsync(model);
-        
+
         VoiceLiveSessionOptions options = new()
         {
             Model = model,
@@ -413,13 +413,13 @@ public class VoiceAssistant
             InputAudioFormat = InputAudioFormat.Pcm16,
             OutputAudioFormat = OutputAudioFormat.Pcm16
         };
-        
+
         options.Modalities.Clear();
         options.Modalities.Add(InteractionModality.Text);
         options.Modalities.Add(InteractionModality.Audio);
-        
+
         await session.ConfigureSessionAsync(options);
-        
+
         await foreach (SessionUpdate update in session.GetUpdatesAsync())
         {
             switch (update)
@@ -433,7 +433,7 @@ public class VoiceAssistant
             }
         }
     }
-    
+
     private Task ProcessAudioAsync(byte[] audio)
     {
         // Audio playback logic
@@ -448,12 +448,12 @@ public class VoiceAssistant
 public class VoiceLiveService
 {
     private readonly VoiceLiveClient _client;
-    
+
     public VoiceLiveService(string endpoint)
     {
         _client = new VoiceLiveClient(new Uri(endpoint), new DefaultAzureCredential());
     }
-    
+
     public Task<VoiceLiveSession> CreateSessionAsync(string model) =>
         _client.StartSessionAsync(model);
 }

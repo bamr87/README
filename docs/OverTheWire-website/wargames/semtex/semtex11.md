@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 11
 source_file: semtex11.md
 title: Semtex11
 ---
+# Semtex11
+
 Deja vue
 --------
 /rdx/vl1b is vortex semtex1 with a slight modification to make things a little bit harder.

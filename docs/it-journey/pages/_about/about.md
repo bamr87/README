@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - about
@@ -23,6 +24,8 @@ tags:
 title: About
 toc: true
 ---
+# About
+
 <style>
 .itj-about-hero { margin: 0.5rem 0 2.5rem; padding: 3rem 1.5rem; border: 1px solid var(--zer0-color-border, rgba(168,85,247,0.35)); border-radius: 1rem; text-align: center; background:
     radial-gradient(1200px 400px at 50% -20%, rgba(168,85,247,0.22), transparent 70%),

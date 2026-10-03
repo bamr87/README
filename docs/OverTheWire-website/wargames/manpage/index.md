@@ -1,9 +1,12 @@
 ---
+
 gamename: manpage
 layout: default
 source_file: index.md
 title: Index
 ---
+# Index
+
 Manpage
 =======
 
@@ -25,7 +28,7 @@ What follows below is the original description of manpage, copied from intruded.
 
     Description:
     This game is about breaking some common linux c-programming misconceptions. A good
-    tactic when beginning to audit code for the first time is to read the manpages for pitfalls and 
+    tactic when beginning to audit code for the first time is to read the manpages for pitfalls and
     unusual behavior. Many of these levels were inspired by the famous work of Ilja.
 
 Manpage's levels are called **manpage0, manpage1, ... etc.** and can be accessed on **manpage.labs.overthewire.org** through SSH on port 2224.

@@ -1,7 +1,10 @@
 ---
+
 source_file: README.md
 title: Readme
 ---
+# Readme
+
 ### Terminal Illness — Bashcrawl Python Wrapper
 
 A rich Python terminal interface that wraps the real bashcrawl game directories, adding quest tracking, styled output, tab completion, AI-powered Merlin chat, sound effects & music, and save/load on top of the actual dungeon rooms.

@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-24 13:54:34+00:00
 level: '0001'
@@ -22,6 +23,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 24 Game Developer 0001
 ---
+# 2026 07 24 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked a **date-rotated window (3 of 6)** of the **Game Developer → Level 0001 "Web Fundamentals" (Apprentice)** track: 5 linked quests out of the level's 26, in planner order. The slice is really **two disjoint threads** stitched together by level, not one narrative arc — a Foundation/Jekyll pair (`stating-the-stats`, `terminal-mastery`) and the tightly-coupled **Contributor Identity sub-arc** (`forge-your-character` → `avatar-forge` → `badge-collector`).

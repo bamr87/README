@@ -89,6 +89,6 @@ This documentation is automatically generated as part of the release process:
 
 ---
 
-**Maintained By**: Zer0-Mistakes Release Team  
-**Last Updated**: April 11, 2026  
+**Maintained By**: Zer0-Mistakes Release Team
+**Last Updated**: April 11, 2026
 **Next Review**: With next release

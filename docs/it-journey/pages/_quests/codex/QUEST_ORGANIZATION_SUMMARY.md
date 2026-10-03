@@ -38,7 +38,7 @@ title: Quest Organization Enhancement Summary
 - **Characteristics**: Comprehensive skill development, unlock new capabilities
 - **Examples**: "Terminal Navigation Mastery", "Git Version Control Fundamentals"
 
-#### ⚔️ Side Quests  
+#### ⚔️ Side Quests
 - **Purpose**: Focused enhancements (15-60 minutes)
 - **Characteristics**: Complement main quests, quality-of-life improvements
 - **Examples**: "Oh-My-Zsh Setup", "Nerd Font Installation"

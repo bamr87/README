@@ -356,7 +356,7 @@ async def analyze_file():
     ) as client:
         with open("image.jpg", "rb") as f:
             image_data = f.read()
-        
+
         result = await client.analyze(
             image_data=image_data,
             visual_features=[VisualFeatures.CAPTION]

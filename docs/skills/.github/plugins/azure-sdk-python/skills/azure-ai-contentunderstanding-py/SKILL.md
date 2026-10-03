@@ -223,7 +223,7 @@ from azure.identity.aio import DefaultAzureCredential
 async def analyze_document():
     endpoint = os.environ["CONTENTUNDERSTANDING_ENDPOINT"]
     credential = DefaultAzureCredential()
-    
+
     async with ContentUnderstandingClient(
         endpoint=endpoint,
         credential=credential

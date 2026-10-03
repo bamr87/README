@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -25,6 +26,8 @@ translated_from_sha: c10375efe992
 translation_of: pages/_posts/science/2026-04-28-climate-data-dashboards.md
 translation_source_url: /posts/2026/04/28/climate-data-dashboards/
 ---
+# 2026 04 28 Climate Data Dashboards
+
 Les données climatiques sont abondantes, mais l'abondance ne crée pas automatiquement de la compréhension. Les réseaux de capteurs, les produits satellitaires, les rapports de terrain et les archives historiques résident souvent dans des systèmes séparés. Un tableau de bord utile transforme ces preuves dispersées en une décision que les gens peuvent prendre dès aujourd'hui.
 
 Le défi n'est pas seulement technique. Il est éditorial. Un tableau de bord doit décider de ce qui compte, de ce qui peut être masqué et de ce qui nécessite une attention immédiate.

@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Science
@@ -19,6 +20,8 @@ tags:
 - future
 title: 2025 01 18 Quantum Computing Explained
 ---
+# 2025 01 18 Quantum Computing Explained
+
 Quantum computing represents one of the most significant technological advances of our time. This article breaks down the complex concepts into understandable pieces.
 
 ## What is Quantum Computing?

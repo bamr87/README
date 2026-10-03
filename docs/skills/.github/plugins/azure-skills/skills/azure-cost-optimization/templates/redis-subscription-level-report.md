@@ -1,7 +1,10 @@
 ---
+
 source_file: redis-subscription-level-report.md
 title: Redis Subscription Level Report
 ---
+# Redis Subscription Level Report
+
 Redis Cost Optimization Report Tenant: Contoso Corp Generated: January 26, 2026 Subscriptions Analyzed: 3 (filtered by prefix "CacheTeam -")
 
 ═══════════════════════════════════════════════════════════════════

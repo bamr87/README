@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-07 00:00:00+00:00
 level: '0100'
@@ -20,6 +21,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 07 Game Developer 0100
 ---
+# 2026 07 07 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked the **first window (5 of 8 quests)** of the **Game Developer → Level 0100 "Frontend & Containers" (Adventurer ⚔️)** slice, in the dependency-sorted order the planner fixed: Docker Container Fundamentals → Docker Compose Orchestration → Dockering Jekyll with Bootstrap 5 → Frontend Forests → The Artisan's Forge (Jekyll component refactoring). Evidence is the workflow-sealed agentic **execute** run (`walk-evidence.json`): each quest sandboxed in a disposable temp dir with its safe commands actually run.

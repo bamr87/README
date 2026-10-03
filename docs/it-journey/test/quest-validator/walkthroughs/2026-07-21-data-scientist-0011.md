@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-21T13:03:14.000Z'
 level: '0011'
@@ -17,6 +18,8 @@ theme: AI-Assisted Development
 tier: Apprentice
 title: 2026 07 21 Data Scientist 0011
 ---
+# 2026 07 21 Data Scientist 0011
+
 ## 🎯 Session Summary
 
 I walked the **Data Scientist → Level `0011` (AI-Assisted Development, 🌱 Apprentice)** slice — 4 main quests, the full level in one window — as a learner would, driving the sealed execute-engine evidence and reading every quest source in plan order. The headline is **warn**: two quests are technically sound and learner-ready with cosmetic cleanup needed, one (`Summon the Golem`) is a strong design/config quest that verified cleanly, and **one (`The PRD Codex`) fails outright** — every hands-on `docker compose … prd-machine` command in it errors in a fresh sandbox because the quest never provides a repo URL, `docker-compose.yml`, `Dockerfile`, or the tool itself.

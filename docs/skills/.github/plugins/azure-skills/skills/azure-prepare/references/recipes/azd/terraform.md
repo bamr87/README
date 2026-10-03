@@ -49,7 +49,7 @@ services:
     host: containerapp
     docker:
       path: ./src/api/Dockerfile
-  
+
   web:
     project: ./src/web
     language: js
@@ -155,24 +155,24 @@ output "WEB_URL" {
 resource "azurerm_container_app" "api" {
   name                = "ca-${var.environment_name}-api"
   resource_group_name = azurerm_resource_group.main.name
-  
+
   # Required for azd deploy to find this resource
   tags = merge(var.tags, {
     "azd-service-name" = "api"  # Matches service name in azure.yaml
   })
-  
+
   # ... rest of configuration
 }
 
 resource "azurerm_static_web_app" "web" {
   name                = "swa-${var.environment_name}-web"
   resource_group_name = azurerm_resource_group.main.name
-  
+
   # Required for azd deploy to find this resource
   tags = merge(var.tags, {
     "azd-service-name" = "web"  # Matches service name in azure.yaml
   })
-  
+
   # ... rest of configuration
 }
 ```
@@ -187,7 +187,7 @@ Tag the resource group with environment name:
 resource "azurerm_resource_group" "main" {
   name     = "rg-${var.environment_name}"
   location = var.location
-  
+
   tags = {
     "azd-env-name" = var.environment_name
   }

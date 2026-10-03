@@ -55,13 +55,13 @@ repos=(
 
 for repo in "${repos[@]}"; do
     echo "Auditing: $repo"
-    
+
     ./forkme.sh --strategy analysis \
         --sparse-paths "src/,*.config,Dockerfile" \
         --no-fork \
         --target "./audit/$(basename $repo)" \
         "$repo"
-    
+
     # Run security tools
     cd "./audit/$(basename $repo)"
     # npm audit, bandit, safety, etc.
@@ -179,7 +179,7 @@ mkdir -p ./framework-docs
 
 for repo in "${repos[@]}"; do
     framework=$(basename $repo)
-    
+
     ./forkme.sh --strategy filetype \
         --file-types "md,txt,rst" \
         --target "./framework-docs/$framework" \
@@ -245,13 +245,13 @@ mkdir -p ./framework-comparison
 
 for framework in "${frameworks[@]}"; do
     name=$(basename $framework)
-    
+
     ./forkme.sh --strategy filetype \
         --file-types "js,json" \
         --target "./framework-comparison/$name" \
         --no-fork \
         "$framework"
-    
+
     # Generate statistics
     cd "./framework-comparison/$name"
     cloc . > "../${name}-stats.txt"
@@ -404,13 +404,13 @@ mkdir -p org-audit
 
 for repo in $repos; do
     echo "Processing: $repo"
-    
+
     ./forkme.sh --strategy analysis \
         --sparse-paths "package.json,requirements.txt,go.mod" \
         --target "./org-audit/$(basename $repo)" \
         --no-fork \
         "$repo"
-    
+
     # Extract dependency info
     # Run security scans
 done
@@ -438,13 +438,13 @@ for repo in "${repos[@]}"; do
         --target "./temp-$(basename $repo)" \
         --no-fork \
         "$repo"
-    
+
     cd "./temp-$(basename $repo)"
     node_version=$(jq -r '.engines.node // "N/A"' package.json)
     react_version=$(jq -r '.dependencies.react // "N/A"' package.json)
     echo "$repo,$node_version,$react_version" >> ../survey.csv
     cd ..
-    
+
     rm -rf "./temp-$(basename $repo)"
 done
 

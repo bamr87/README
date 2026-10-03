@@ -1,4 +1,5 @@
 ---
+
 description: Reading order, archive, and feeds.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: more.md
 title: More
 ---
+# More
+
 {% include page-header.html %}
 
 The overflow menu, mirroring the reference site's "More" item.

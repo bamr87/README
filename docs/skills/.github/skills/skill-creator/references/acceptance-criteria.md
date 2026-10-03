@@ -383,7 +383,7 @@ For streaming patterns, see [references/streaming.md](references/streaming.md)
 ```markdown
 # Azure AI Agents SDK
 
-[800+ lines of content including every tool, every pattern, 
+[800+ lines of content including every tool, every pattern,
 every edge case, making the skill too large to be useful]
 ```
 

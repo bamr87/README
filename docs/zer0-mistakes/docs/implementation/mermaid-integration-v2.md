@@ -4,9 +4,9 @@ title: 'Changelog: Mermaid Integration v2.0'
 ---
 # Changelog: Mermaid Integration v2.0
 
-**Issue**: [#6](https://github.com/bamr87/zer0-mistakes/issues/6)  
-**Branch**: `feature/mermaid-integration-v2`  
-**Target Version**: v0.3.0  
+**Issue**: [#6](https://github.com/bamr87/zer0-mistakes/issues/6)
+**Branch**: `feature/mermaid-integration-v2`
+**Target Version**: v0.3.0
 **Date**: January 27, 2025
 
 ---

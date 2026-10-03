@@ -153,9 +153,9 @@ Pass parameters to includes:
 {% raw %}
 
 ```liquid
-{% include card.html 
-   title="My Card" 
-   content="Card content here" 
+{% include card.html
+   title="My Card"
+   content="Card content here"
 %}
 ```
 

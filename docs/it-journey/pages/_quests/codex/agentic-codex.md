@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -95,6 +96,8 @@ validation_criteria:
   - Can configure an MCP server, a least-privilege permissions block, and an autonomy
     gate
 ---
+# Agentic Codex
+
 Six chapters. Six GH-600 domains. Build, tool, remember, evaluate, coordinate, and govern agents on GitHub-native rails — then prove it in the Grand Capstone.
 
 This campaign is exam prep for **[GH-600: Developing in Agentic AI Systems](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600)**. Domain weights below are **ranges from Microsoft Learn** ("Skills at a glance") — Learn does not publish fixed percents. Passing score: **700 or greater**. Certification renews annually via a free Learn assessment.
