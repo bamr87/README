@@ -139,14 +139,14 @@ import com.azure.cosmos.models.CosmosContainerResponse;
 import com.azure.cosmos.models.ThroughputProperties;
 
 // Create container with partition key and throughput
-CosmosContainerProperties containerProperties = 
+CosmosContainerProperties containerProperties =
     new CosmosContainerProperties("FamilyContainer", "/lastName");
 
 // Manual throughput (400 RU/s)
 ThroughputProperties throughputProperties = ThroughputProperties.createManualThroughput(400);
 
 CosmosContainerResponse containerResponse = database.createContainerIfNotExists(
-    containerProperties, 
+    containerProperties,
     throughputProperties
 );
 
@@ -179,13 +179,13 @@ family.setRegistered(true);
 
 CosmosItemRequestOptions options = new CosmosItemRequestOptions();
 CosmosItemResponse<Family> createResponse = container.createItem(
-    family, 
-    new PartitionKey(family.getLastName()), 
+    family,
+    new PartitionKey(family.getLastName()),
     options
 );
 
 System.out.printf("Created item with request charge of %.2f within duration %s%n",
-    createResponse.getRequestCharge(), 
+    createResponse.getRequestCharge(),
     createResponse.getDuration());
 
 // ============ READ (Point Read) ============
@@ -195,16 +195,16 @@ try {
         new PartitionKey("Andersen"),        // partition key
         Family.class
     );
-    
+
     Family readFamily = readResponse.getItem();
     double requestCharge = readResponse.getRequestCharge();
     Duration requestLatency = readResponse.getDuration();
-    
+
     System.out.printf("Read item id=%s with charge=%.2f, latency=%s%n",
         readFamily.getId(), requestCharge, requestLatency);
-        
+
 } catch (CosmosException e) {
-    System.err.printf("Read failed with status code %d: %s%n", 
+    System.err.printf("Read failed with status code %d: %s%n",
         e.getStatusCode(), e.getMessage());
 }
 
@@ -227,7 +227,7 @@ family.setRegistered(false);
 CosmosItemResponse<Family> upsertResponse = container.upsertItem(family);
 
 System.out.printf("Upserted item with charge=%.2f within duration %s%n",
-    upsertResponse.getRequestCharge(), 
+    upsertResponse.getRequestCharge(),
     upsertResponse.getDuration());
 
 // ============ DELETE ============
@@ -251,7 +251,7 @@ import reactor.core.publisher.Flux;
 Mono<CosmosItemResponse<Family>> createMono = cosmosAsyncContainer.createItem(family);
 
 createMono.subscribe(response -> {
-    System.out.printf("Created item with request charge of %.2f%n", 
+    System.out.printf("Created item with request charge of %.2f%n",
         response.getRequestCharge());
 });
 
@@ -262,7 +262,7 @@ cosmosAsyncContainer.createItem(new Family("carla.davis@outlook.com", "Carla Dav
         // Read that item
         return cosmosAsyncContainer.readItem(
             response.getItem().getId(),
-            new PartitionKey(response.getItem().getLastName()), 
+            new PartitionKey(response.getItem().getLastName()),
             Family.class
         );
     })
@@ -272,7 +272,7 @@ cosmosAsyncContainer.createItem(new Family("carla.davis@outlook.com", "Carla Dav
         Family p = response.getItem();
         p.setDistrict("SFO");
         return cosmosAsyncContainer.replaceItem(
-            p, 
+            p,
             response.getItem().getId(),
             new PartitionKey(response.getItem().getLastName())
         );
@@ -318,8 +318,8 @@ queryOptions.setQueryMetricsEnabled(true);
 
 // Query all documents
 CosmosPagedIterable<Family> families = container.queryItems(
-    "SELECT * FROM c", 
-    queryOptions, 
+    "SELECT * FROM c",
+    queryOptions,
     Family.class
 );
 
@@ -330,8 +330,8 @@ for (Family family : families) {
 // Query with WHERE clause
 String query = "SELECT * FROM Family WHERE Family.lastName IN ('Andersen', 'Wakefield', 'Johnson')";
 CosmosPagedIterable<Family> filteredFamilies = container.queryItems(
-    query, 
-    queryOptions, 
+    query,
+    queryOptions,
     Family.class
 );
 ```
@@ -353,8 +353,8 @@ SqlQuerySpec querySpec = new SqlQuerySpec(
 );
 
 CosmosPagedIterable<Family> families = container.queryItems(
-    querySpec, 
-    new CosmosQueryRequestOptions(), 
+    querySpec,
+    new CosmosQueryRequestOptions(),
     Family.class
 );
 
@@ -369,8 +369,8 @@ querySpec = new SqlQuerySpec(
 );
 
 CosmosPagedIterable<Family> result = container.queryItems(
-    querySpec, 
-    new CosmosQueryRequestOptions(), 
+    querySpec,
+    new CosmosQueryRequestOptions(),
     Family.class
 );
 ```
@@ -387,23 +387,23 @@ double totalRequestCharge = 0.0;
 
 do {
     CosmosQueryRequestOptions queryOptions = new CosmosQueryRequestOptions();
-    
+
     Iterable<FeedResponse<Family>> feedResponseIterator = container
         .queryItems(query, queryOptions, Family.class)
         .iterableByPage(continuationToken, pageSize);
 
     for (FeedResponse<Family> page : feedResponseIterator) {
-        System.out.printf("Page with %d items, charge: %.2f%n", 
+        System.out.printf("Page with %d items, charge: %.2f%n",
             page.getResults().size(),
             page.getRequestCharge());
-        
+
         totalRequestCharge += page.getRequestCharge();
-        
+
         // Process items in this page
         for (Family family : page.getResults()) {
             System.out.println("  - " + family.getId());
         }
-        
+
         // Get continuation token for next page
         continuationToken = page.getContinuationToken();
     }

@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-16T13:51:30.000Z'
 level: '0001'
@@ -16,6 +17,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 16 Game Developer 0001
 ---
+# 2026 07 16 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** of the **Game Developer → Level 0001 (Web Fundamentals, 🌱 Apprentice)** path as a learner would: publish a site (GitHub Pages), build the site engine (Jekyll), configure it (YAML), version it (Git), and template it (Liquid). This is window **1 of 6** over the level's full 26 quests, so the ledger will sweep the rest across later runs.

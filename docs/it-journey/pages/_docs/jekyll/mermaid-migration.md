@@ -4,10 +4,10 @@ lastmod: 2025-01-27 18:30:00+00:00
 source_file: mermaid-migration.md
 subcategory: jekyll
 tags:
-- Mermaid
-- Migration
-- Auto-Detection
-- Theme-Update
+- mermaid
+- migration
+- auto-detection
+- theme-update
 title: Mermaid Auto-Detection Migration Guide
 ---
 # Mermaid Auto-Detection Migration Guide

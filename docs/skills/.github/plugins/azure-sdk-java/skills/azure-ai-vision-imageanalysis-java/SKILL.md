@@ -119,7 +119,7 @@ for (DetectedTextBlock block : result.getRead().getBlocks()) {
     for (DetectedTextLine line : block.getLines()) {
         System.out.printf("Line: '%s'%n", line.getText());
         System.out.printf("  Bounding polygon: %s%n", line.getBoundingPolygon());
-        
+
         for (DetectedTextWord word : line.getWords()) {
             System.out.printf("  Word: '%s' (confidence: %.4f)%n",
                 word.getText(),
@@ -141,7 +141,7 @@ for (DetectedObject obj : result.getObjects()) {
     System.out.printf("Object: %s (confidence: %.4f)%n",
         obj.getTags().get(0).getName(),
         obj.getTags().get(0).getConfidence());
-    
+
     ImageBoundingBox box = obj.getBoundingBox();
     System.out.printf("  Location: x=%d, y=%d, w=%d, h=%d%n",
         box.getX(), box.getY(), box.getWidth(), box.getHeight());

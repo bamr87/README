@@ -435,8 +435,8 @@ groups:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
-**🏗️ System Engineer**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)  
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
+**🏗️ System Engineer**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)
 **🛡️ Security Specialist**: Explore [ELK Stack](/quests/1010/elk-stack/)
 
 ## 📚 Resources

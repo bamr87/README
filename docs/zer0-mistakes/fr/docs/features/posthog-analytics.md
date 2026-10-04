@@ -139,7 +139,7 @@ document.addEventListener('click', function(e) {
     var href = target.href.toLowerCase();
     var downloadExts = ['.pdf', '.zip', '.doc', '.xlsx'];
     var isDownload = downloadExts.some(ext => href.includes(ext));
-    
+
     if (isDownload) {
       posthog.capture('file_download', {
         'file_url': target.href,
@@ -178,7 +178,7 @@ window.addEventListener('scroll', function() {
   var scrollPercent = Math.round(
     (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
   );
-  
+
   scrollDepths.forEach(function(depth) {
     if (scrollPercent >= depth && !triggeredDepths.includes(depth)) {
       triggeredDepths.push(depth);

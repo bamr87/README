@@ -11,7 +11,7 @@ This project uses **Docker-first development** for consistency, reliability, and
 ### Why Docker First?
 
 ✅ **Consistent Environment** - Everyone uses the same Python, PostgreSQL, and dependencies
-✅ **No Local Setup** - No need to install PostgreSQL, Python packages, etc. locally  
+✅ **No Local Setup** - No need to install PostgreSQL, Python packages, etc. locally
 ✅ **Production Parity** - Develop in an environment similar to production
 ✅ **Easy Onboarding** - New developers: install Docker and go
 ✅ **No Conflicts** - Isolated from your local Python/PostgreSQL installations

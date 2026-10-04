@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 12 Game Developer 0100
 verdict: warn
 walk_date: '2026-07-12'
 ---
+# 2026 07 12 Game Developer 0100
+
 > **Slice** `game-developer/0100` · **Level** 0100 (Frontend & Containers) · **Adventurer tier** · **Engine verdict** ⚠️ warn (avg 81.3%) · **Walked** 2026-07-12
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-12-game-developer-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-12-game-developer-0100.md)

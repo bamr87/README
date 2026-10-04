@@ -45,7 +45,7 @@ title: Architecture Reference
 ```python
 class AudioNarrative(Base):
     __tablename__ = "audio_narratives"
-    
+
     id: int                          # Primary key
     source_type: str                 # "tag", "bookmark", "custom"
     source_id: Optional[int]         # Reference to source

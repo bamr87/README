@@ -1,9 +1,12 @@
 ---
+
 gamename: leviathan
 layout: default
 source_file: index.md
 title: Index
 ---
+# Index
+
 Leviathan
 =========
 
@@ -28,7 +31,7 @@ What follows below is the original description of leviathan, copied from intrude
     Description:
     This wargame doesn't require any knowledge about programming - just a bit of common
     sense and some knowledge about basic *nix commands. We had no idea that it'd be this
-    hard to make an interesting wargame that wouldn't require programming abilities from 
+    hard to make an interesting wargame that wouldn't require programming abilities from
     the players. Hopefully we made an interesting challenge for the new ones.
 
 Leviathan's levels are called **leviathan0, leviathan1, ... etc.** and can be accessed on **leviathan.labs.overthewire.org** through SSH on port 2223.
@@ -48,7 +51,7 @@ Concepts:
  * [Static program analysis](https://en.wikipedia.org/wiki/Static_program_analysis) - redo from here
  * [Assembly language](https://primer.picoctf.org/#_assembly) - use as foundation
 
-Tools: 
+Tools:
  * Tools for starting dynamic analysis: ltrace, strace
  * Tools for advanced dynamic (and static) analysis: gdb, gef, pwndbg, radare2
  * Tools for static analysis: strings, hexdump, objdump, ghidra

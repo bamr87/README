@@ -98,8 +98,8 @@ ConfigurationAsyncClient asyncClient = new ConfigurationClientBuilder()
 ### 3.1 ✅ CORRECT: Add Configuration Setting
 ```java
 ConfigurationSetting setting = client.addConfigurationSetting(
-    "app/database/connection", 
-    "Production", 
+    "app/database/connection",
+    "Production",
     "Server=prod.db.com;Database=myapp"
 );
 ```
@@ -107,8 +107,8 @@ ConfigurationSetting setting = client.addConfigurationSetting(
 ### 3.2 ✅ CORRECT: Set (Create or Update) Configuration Setting
 ```java
 ConfigurationSetting setting = client.setConfigurationSetting(
-    "app/cache/enabled", 
-    "Production", 
+    "app/cache/enabled",
+    "Production",
     "true"
 );
 ```
@@ -116,7 +116,7 @@ ConfigurationSetting setting = client.setConfigurationSetting(
 ### 3.3 ✅ CORRECT: Get Configuration Setting
 ```java
 ConfigurationSetting setting = client.getConfigurationSetting(
-    "app/database/connection", 
+    "app/database/connection",
     "Production"
 );
 System.out.println("Value: " + setting.getValue());
@@ -126,7 +126,7 @@ System.out.println("Last Modified: " + setting.getLastModified());
 ### 3.4 ✅ CORRECT: Delete Configuration Setting
 ```java
 ConfigurationSetting deleted = client.deleteConfigurationSetting(
-    "app/cache/enabled", 
+    "app/cache/enabled",
     "Production"
 );
 ```
@@ -236,7 +236,7 @@ System.out.println("Snapshot: " + snapshot.getName());
 
 ### 7.2 ✅ CORRECT: List Settings in Snapshot
 ```java
-PagedIterable<ConfigurationSetting> settings = 
+PagedIterable<ConfigurationSetting> settings =
     client.listConfigurationSettingsForSnapshot("release-v1.0");
 
 for (ConfigurationSetting setting : settings) {

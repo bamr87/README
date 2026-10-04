@@ -57,10 +57,10 @@ const credential = new DefaultAzureCredential({
   // Exclude specific credentials
   excludeAzureCliCredential: true,
   excludeAzurePowerShellCredential: true,
-  
+
   // For user-assigned managed identity
   managedIdentityClientId: "<client-id>",
-  
+
   // Tenant hint for multi-tenant
   tenantId: "<tenant-id>",
 });
@@ -312,7 +312,7 @@ class CustomCredential implements TokenCredential {
   ): Promise<AccessToken | null> {
     // Custom token acquisition logic
     const token = await fetchTokenFromCustomSource(scopes);
-    
+
     return {
       token: token.accessToken,
       expiresOnTimestamp: token.expiresOn.getTime()
@@ -324,9 +324,9 @@ class CustomCredential implements TokenCredential {
 ## Sovereign Clouds
 
 ```typescript
-import { 
-  ClientSecretCredential, 
-  AzureAuthorityHosts 
+import {
+  ClientSecretCredential,
+  AzureAuthorityHosts
 } from "@azure/identity";
 
 // Azure Government

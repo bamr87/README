@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - notes
@@ -28,6 +29,8 @@ tags:
 title: Powershell Profile
 toc: true
 ---
+# Powershell Profile
+
 Your PowerShell profile is the script that runs every time a session starts. Keeping it in a gist means a new machine is one download away from feeling like your own.
 
 ## Open PowerShell as administrator

@@ -1,4 +1,5 @@
 ---
+
 author: GPT and bamr87
 date: 2024-05-28 15:23:32+00:00
 description: Verify Docker installation on macOS for building Jekyll sites with Bootstrap
@@ -39,6 +40,8 @@ tags:
 - bootstrap
 title: Frontend Docker Level 000
 ---
+# Frontend Docker Level 000
+
 ## Intro
 
 As you begin your journey through the Frontend Forests, imagine Docker Desktop as your magical backpack. It's filled with everything you need to build, deploy, and run your mystical projects. The Terminal is your enchanted wand, allowing you to cast spells (commands) to interact with Docker spirits. By verifying the Docker installation, you ensure that your backpack and wand are in perfect condition, ready to assist you on your quest.

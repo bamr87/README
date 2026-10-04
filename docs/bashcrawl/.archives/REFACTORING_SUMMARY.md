@@ -40,7 +40,7 @@ Successfully refactored the Bashcrawl project to have a cleaner, more maintainab
 The following files were moved to `.legacy_launchers/` with timestamps:
 
 - `start-adventure.sh` → `.legacy_launchers/start-adventure.sh.TIMESTAMP`
-- `demo-terminal.sh` → `.legacy_launchers/demo-terminal.sh.TIMESTAMP`  
+- `demo-terminal.sh` → `.legacy_launchers/demo-terminal.sh.TIMESTAMP`
 - `help.sh` → `.legacy_launchers/help.sh.TIMESTAMP`
 
 ### 📚 Documentation Updates
@@ -130,7 +130,7 @@ The following files were moved to `.legacy_launchers/` with timestamps:
 ```
 bashcrawl/
 ├── main.sh              # 🎮 Main game launcher
-├── setup.sh             # ⚙️ Setup and configuration  
+├── setup.sh             # ⚙️ Setup and configuration
 ├── bashcrawl-terminal.sh # 💻 Interactive terminal emulator
 ├── cleanup_refactor.sh  # 🧹 Migration utility
 ├── .legacy_launchers/   # 📦 Archived old files

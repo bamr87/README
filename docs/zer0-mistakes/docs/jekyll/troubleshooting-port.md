@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Jekyll
 - Troubleshooting
@@ -17,6 +18,8 @@ tags:
 - docker
 title: Troubleshooting Port
 ---
+# Troubleshooting Port
+
 > Handle error 'Address Already in Use' when starting Jekyll.
 
 ## 1. Issue of 'Address Already in Use'
@@ -27,7 +30,7 @@ I've set up my [GitHub Page website](http://{{ site.github_user }}.github.io/) l
 jekyll 3.5.2 | Error:  Address already in use - bind(2) for 127.0.0.1:4000
 ```
 
-Port 4000 has already been occupied. To solve this issue, kill the process that is using this port.  
+Port 4000 has already been occupied. To solve this issue, kill the process that is using this port.
 Find the process which is using port 4000.
 
 ```raw
@@ -56,7 +59,7 @@ nxd     11199   nx    4u  IPv6 0x2fad2a115cded5bd      0t0  TCP *:terabase (LIST
 ```
 
 Killing the thread won't work, because NoMachine's nxd process will keep restarting, with a new PID. Either you have to change the port for your app. Or, change the service port for NoMachine. NoMachine->Preferences->Connection preferences.
-![image](/assets/images/jekyll/8105/nomachine_preferences.png){:width="700px"}  
+![image](/assets/images/jekyll/8105/nomachine_preferences.png){:width="700px"}
 ![image](/assets/images/jekyll/8105/nomachine_port.png){:width="700px"}
 
 We can also shutdown NoMachine and disable the automatic start at next boot via command line.

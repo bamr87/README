@@ -75,7 +75,7 @@ CallIntelligenceOptions callIntelligenceOptions = new CallIntelligenceOptions()
 createCallOptions.setCallIntelligenceOptions(callIntelligenceOptions);
 
 Response<CreateCallResult> result = callAutomationClient.createCallWithResponse(
-    createCallOptions, 
+    createCallOptions,
     Context.NONE
 );
 String callConnectionId = result.getValue().getCallConnectionProperties().getCallConnectionId();
@@ -98,7 +98,7 @@ CreateGroupCallOptions groupCallOptions = new CreateGroupCallOptions(targets, ca
 groupCallOptions.setSourceCallIdNumber(callerIdNumber);
 
 Response<CreateCallResult> response = callAutomationClient.createGroupCallWithResponse(
-    groupCallOptions, 
+    groupCallOptions,
     Context.NONE
 );
 ```
@@ -115,7 +115,7 @@ String callbackUri = "https://<myendpoint>/Events";
 
 AnswerCallOptions answerCallOptions = new AnswerCallOptions(incomingCallContext, callbackUri);
 Response<AnswerCallResult> response = callAutomationClient.answerCallWithResponse(
-    answerCallOptions, 
+    answerCallOptions,
     Context.NONE
 );
 ```
@@ -130,7 +130,7 @@ AnswerCallOptions answerCallOptions = new AnswerCallOptions(incomingCallContext,
     .setCallIntelligenceOptions(callIntelligenceOptions);
 
 Response<AnswerCallResult> response = callAutomationClient.answerCallWithResponse(
-    answerCallOptions, 
+    answerCallOptions,
     Context.NONE
 );
 ```
@@ -215,7 +215,7 @@ TextSource playSource = new TextSource()
     .setVoiceName("en-US-ElizabethNeural");
 
 CallMediaRecognizeDtmfOptions recognizeOptions = new CallMediaRecognizeDtmfOptions(
-    targetParticipant, 
+    targetParticipant,
     maxTonesToCollect
 )
     .setInitialSilenceTimeout(Duration.ofSeconds(30))
@@ -232,10 +232,10 @@ callAutomationClient.getCallConnection(callConnectionId)
 ### Speech or DTMF Recognition
 
 ```java
-CallMediaRecognizeSpeechOrDtmfOptions recognizeOptions = 
+CallMediaRecognizeSpeechOrDtmfOptions recognizeOptions =
     new CallMediaRecognizeSpeechOrDtmfOptions(
-        targetParticipant, 
-        maxTonesToCollect, 
+        targetParticipant,
+        maxTonesToCollect,
         Duration.ofMillis(1000)
     )
     .setPlayPrompt(playSource)
@@ -269,7 +269,7 @@ TextSource playSource = new TextSource()
     .setVoiceName("en-US-ElizabethNeural");
 
 CallMediaRecognizeChoiceOptions recognizeOptions = new CallMediaRecognizeChoiceOptions(
-    targetParticipant, 
+    targetParticipant,
     choices
 )
     .setInterruptPrompt(true)
@@ -286,14 +286,14 @@ callAutomationClient.getCallConnection(callConnectionId)
 
 ```java
 List<DtmfTone> tones = Arrays.asList(
-    DtmfTone.ONE, 
-    DtmfTone.TWO, 
-    DtmfTone.THREE, 
+    DtmfTone.ONE,
+    DtmfTone.TWO,
+    DtmfTone.THREE,
     DtmfTone.POUND
 );
 
 SendDtmfTonesOptions options = new SendDtmfTonesOptions(
-    tones, 
+    tones,
     new PhoneNumberIdentifier(targetPhoneNumber)
 );
 options.setOperationContext("dtmfs-to-ivr");
@@ -320,7 +320,7 @@ StartRecordingOptions startRecordingOptions = new StartRecordingOptions(
     .setRecordingFormat(RecordingFormat.MP4);
 
 Response<RecordingStateResult> response = callRecording.startWithResponse(
-    startRecordingOptions, 
+    startRecordingOptions,
     Context.NONE
 );
 
@@ -420,7 +420,7 @@ ListParticipantsResult participants = callAutomationClient
     .getCallConnection(callConnectionId)
     .listParticipants();
 
-participants.getValues().forEach(p -> 
+participants.getValues().forEach(p ->
     System.out.println("Participant: " + p.getIdentifier().getRawId()));
 ```
 
@@ -439,10 +439,10 @@ public class CallbackController {
     @PostMapping("/Events")
     public ResponseEntity<String> handleCallEvents(@RequestBody String requestBody) {
         List<CallAutomationEventBase> events = CallAutomationEventParser.parseEvents(requestBody);
-        
+
         for (CallAutomationEventBase event : events) {
             String callConnectionId = event.getCallConnectionId();
-            
+
             if (event instanceof CallConnected) {
                 handleCallConnected((CallConnected) event);
             } else if (event instanceof RecognizeCompleted) {
@@ -455,14 +455,14 @@ public class CallbackController {
                 handleCallDisconnected((CallDisconnected) event);
             }
         }
-        
+
         return ResponseEntity.ok("");
     }
-    
+
     private void handleCallConnected(CallConnected event) {
         System.out.println("Call connected: " + event.getCallConnectionId());
     }
-    
+
     private void handleRecognizeCompleted(RecognizeCompleted event) {
         CollectTonesResult result = (CollectTonesResult) event.getRecognizeResult();
         String tones = result.getTones().stream()
@@ -470,15 +470,15 @@ public class CallbackController {
             .collect(Collectors.joining());
         System.out.println("DTMF tones received: " + tones);
     }
-    
+
     private void handleRecognizeFailed(RecognizeFailed event) {
         System.out.println("Recognition failed: " + event.getResultInformation().getMessage());
     }
-    
+
     private void handlePlayCompleted(PlayCompleted event) {
         System.out.println("Play completed: " + event.getOperationContext());
     }
-    
+
     private void handleCallDisconnected(CallDisconnected event) {
         System.out.println("Call disconnected: " + event.getCallConnectionId());
     }
@@ -492,7 +492,7 @@ public class CallbackController {
 ```java
 asyncClient.createCall(callInvite, callbackUri)
     .subscribe(
-        result -> System.out.println("Call ID: " + 
+        result -> System.out.println("Call ID: " +
             result.getCallConnectionProperties().getCallConnectionId()),
         error -> System.err.println("Error: " + error.getMessage())
     );
@@ -531,7 +531,7 @@ import com.azure.core.exception.HttpResponseException;
 
 try {
     Response<CreateCallResult> result = callAutomationClient.createCallWithResponse(
-        createCallOptions, 
+        createCallOptions,
         Context.NONE
     );
 } catch (HttpResponseException e) {

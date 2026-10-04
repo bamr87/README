@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-08T00:00:00.000Z'
 level: '0100'
@@ -18,6 +19,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 08 Digital Artist 0100
 ---
+# 2026 07 08 Digital Artist 0100
+
 ## 🎯 Session Summary
 
 I walked the **second window** of the Digital Artist (UI/UX) path at **Level 0100 — Frontend & Containers (Adventurer ⚔️)**: three quests selected by `walk-plan.json` in order — *The Proving Grounds* (main), *Source Control Sorcery* (main), *Profile Themes* (side). This window is `2 of 2` of an 8-quest level.

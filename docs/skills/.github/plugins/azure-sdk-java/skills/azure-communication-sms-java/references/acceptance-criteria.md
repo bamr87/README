@@ -139,7 +139,7 @@ SmsSendResult result = smsClient.send(from, to, message);
 if (!result.isSuccessful()) {
     int status = result.getHttpStatusCode();
     String error = result.getErrorMessage();
-    
+
     if (status == 400) {
         System.out.println("Invalid phone number: " + result.getTo());
     } else if (status == 429) {

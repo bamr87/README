@@ -48,10 +48,10 @@ graph TB
         CurrentLevel[Level 0110:<br/>Database Mastery]
         NextLevel[Level 0111:<br/>API Development]
     end
-    
+
     PrevLevel --> CurrentLevel
     CurrentLevel --> NextLevel
-    
+
     style CurrentLevel fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
 ```
 
@@ -84,17 +84,17 @@ graph TB
         MQ3[🎯 Data Modeling:<br/>Schema Design & Relationships]
         MQ4[🎯 Query Optimization:<br/>Performance Tuning]
     end
-    
+
     subgraph "Operations Quests"
         OQ1[⚙️ Database Migrations:<br/>Schema Evolution]
         OQ2[⚙️ Backup & Recovery:<br/>Data Protection]
         OQ3[⚙️ Connection Pooling:<br/>Resource Management]
     end
-    
+
     subgraph "Security Quest"
         SQ1[🔒 Database Security:<br/>Access Control & Encryption]
     end
-    
+
     MQ1 --> MQ2
     MQ2 --> MQ3
     MQ3 --> MQ4
@@ -102,7 +102,7 @@ graph TB
     MQ3 --> OQ2
     MQ4 --> OQ3
     MQ3 --> SQ1
-    
+
     style MQ1 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ2 fill:#2196F3,stroke:#1565C0,stroke-width:3px
     style MQ3 fill:#2196F3,stroke:#1565C0,stroke-width:3px

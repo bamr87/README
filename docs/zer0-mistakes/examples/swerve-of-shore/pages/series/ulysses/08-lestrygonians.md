@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 8 of Ulysses — Lestrygonians (1pm, lunch and the walk
   to it).
 hide_intro: true
@@ -11,6 +12,8 @@ sidebar:
 source_file: 08-lestrygonians.md
 title: 08 Lestrygonians
 ---
+# 08 Lestrygonians
+
 {% include page-header.html %}
 
 Episode 8 of *Ulysses*. 1pm, lunch and the walk to it.

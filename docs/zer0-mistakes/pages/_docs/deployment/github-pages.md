@@ -159,16 +159,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
           bundler-cache: true
-          
+
       - name: Build site
         run: bundle exec jekyll build
-        
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

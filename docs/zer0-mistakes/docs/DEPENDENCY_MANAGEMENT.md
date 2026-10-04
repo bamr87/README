@@ -20,7 +20,7 @@ This project follows a **Zero Pin + Lockfile + Automated Updates** strategy:
 - **Secondary**: Manual trigger via GitHub Actions UI
 
 ### Process
-1. Workflow runs `bundle update` 
+1. Workflow runs `bundle update`
 2. Creates PR with updated `Gemfile.lock`
 3. CI validates compatibility:
    - Build succeeds
@@ -105,7 +105,7 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 - Keep `Gemfile.lock` committed to git
 - Monitor GitHub security alerts
 
-### ❌ DON'T  
+### ❌ DON'T
 - Pin versions in `Gemfile` unless absolutely necessary
 - Ignore failing update PRs (they indicate problems)
 - Delete `Gemfile.lock` from git (breaks reproducibility)
@@ -114,23 +114,23 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 ## Troubleshooting
 
 ### Issue: Update PR Created But No Changes
-**Cause**: Already on latest versions  
+**Cause**: Already on latest versions
 **Action**: Close PR, no action needed
 
 ### Issue: Update Fails to Create PR
-**Cause**: Workflow error or permissions issue  
+**Cause**: Workflow error or permissions issue
 **Action**: Check workflow run logs, verify GitHub token permissions
 
 ### Issue: Docker Build Fails After Update
-**Cause**: Incompatible gem versions  
-**Action**: 
+**Cause**: Incompatible gem versions
+**Action**:
 1. Check `docker/Dockerfile` for version constraints
 2. Verify Bundler version compatibility
 3. Review gem compilation errors (native extensions)
 
 ### Issue: Tests Pass Locally But Fail in CI
-**Cause**: Environment differences (Ruby version, OS)  
-**Action**: 
+**Cause**: Environment differences (Ruby version, OS)
+**Action**:
 1. Match Ruby version with CI (`ruby-version` in workflow)
 2. Check platform-specific gems in `Gemfile.lock`
 3. Rebuild Docker container: `docker-compose up --build`

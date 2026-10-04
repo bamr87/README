@@ -229,7 +229,7 @@ batchClient.createTask("myJobId", task);
 batchClient.createTask("myJobId", new BatchTaskCreateParameters("task2", "cmd /c exit 3")
     .setExitConditions(new ExitConditions()
         .setExitCodeRanges(Arrays.asList(
-            new ExitCodeRangeMapping(2, 4, 
+            new ExitCodeRangeMapping(2, 4,
                 new ExitOptions().setJobAction(BatchJobActionKind.TERMINATE)))))
     .setUserIdentity(new UserIdentity()
         .setAutoUser(new AutoUserSpecification()
@@ -352,7 +352,7 @@ try {
     BatchError error = e.getValue();
     System.err.println("Error code: " + error.getCode());
     System.err.println("Message: " + error.getMessage().getValue());
-    
+
     if ("PoolNotFound".equals(error.getCode())) {
         System.err.println("The specified pool does not exist.");
     }

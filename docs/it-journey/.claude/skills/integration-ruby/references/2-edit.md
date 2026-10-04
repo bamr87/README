@@ -1,9 +1,12 @@
 ---
+
 description: Implement PostHog event tracking in the identified files, following best
   practices and the example project
 source_file: 2-edit.md
 title: 2 Edit
 ---
+# 2 Edit
+
 For each of the files and events noted in .posthog-events.json, make edits to capture events using PostHog. Make sure to set up any helper files needed. Carefully examine the included example project code: your implementation should match it as closely as possible. Do not spawn subagents.
 
 Use environment variables for PostHog keys. Do not hardcode PostHog keys.
@@ -14,7 +17,7 @@ For each event, add useful properties, and use your access to the PostHog source
 
 Remember that you can find the source code for any dependency in the node_modules directory. This may be necessary to properly populate property names. There are also example project code files available via the PostHog MCP; use these for reference.
 
-Where possible, add calls for PostHog's identify() function on the client side upon events like logins and signups. Use the contents of login and signup forms to identify users on submit. If there is server-side code, pass the client-side session and distinct ID to the server-side code to identify the user. On the server side, make sure events have a matching distinct ID where relevant. 
+Where possible, add calls for PostHog's identify() function on the client side upon events like logins and signups. Use the contents of login and signup forms to identify users on submit. If there is server-side code, pass the client-side session and distinct ID to the server-side code to identify the user. On the server side, make sure events have a matching distinct ID where relevant.
 
 It's essential to do this in both client code and server code, so that user behavior from both domains is easy to correlate.
 

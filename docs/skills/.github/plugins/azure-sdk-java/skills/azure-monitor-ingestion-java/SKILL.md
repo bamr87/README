@@ -142,7 +142,7 @@ LogsUploadOptions options = new LogsUploadOptions()
     .setLogsUploadErrorConsumer(uploadError -> {
         System.err.println("Upload error: " + uploadError.getResponseException().getMessage());
         System.err.println("Failed logs count: " + uploadError.getFailedLogs().size());
-        
+
         // Option 1: Log and continue
         // Option 2: Throw to abort remaining uploads
         // throw uploadError.getResponseException();
@@ -171,13 +171,13 @@ public class MyLogEntry {
     private String timeGenerated;
     private String level;
     private String message;
-    
+
     public MyLogEntry(String timeGenerated, String level, String message) {
         this.timeGenerated = timeGenerated;
         this.level = level;
         this.message = message;
     }
-    
+
     // Getters required for JSON serialization
     public String getTimeGenerated() { return timeGenerated; }
     public String getLevel() { return level; }
@@ -195,7 +195,7 @@ try {
 } catch (HttpResponseException e) {
     System.err.println("HTTP Status: " + e.getResponse().getStatusCode());
     System.err.println("Error: " + e.getMessage());
-    
+
     if (e.getResponse().getStatusCode() == 403) {
         System.err.println("Check DCR permissions and managed identity");
     } else if (e.getResponse().getStatusCode() == 404) {

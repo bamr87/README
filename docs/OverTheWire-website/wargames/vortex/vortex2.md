@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 2
 source_file: vortex2.md
 title: Vortex2
 ---
+# Vortex2
+
 Level Goal
 ----------
 Create a special tar file

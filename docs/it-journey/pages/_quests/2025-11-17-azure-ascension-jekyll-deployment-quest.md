@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -38,6 +39,8 @@ tags:
 - ci-cd
 title: 2025 11 17 Azure Ascension Jekyll Deployment Quest
 ---
+# 2025 11 17 Azure Ascension Jekyll Deployment Quest
+
 *Rise, cloud wanderer! This quest guides you through deploying the IT-Journey Jekyll site to Azure Static Web Apps, wiring up CI/CD, and verifying a clean production build.*
 
 ## 🎯 Quest Objectives

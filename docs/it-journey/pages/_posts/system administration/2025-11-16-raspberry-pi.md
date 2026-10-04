@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories:
 - notes
@@ -15,4 +16,6 @@ tags:
 - raspberrypi
 title: 2025 11 16 Raspberry Pi
 ---
-[Specs](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf) 
+# 2025 11 16 Raspberry Pi
+
+[Specs](https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-product-brief.pdf)

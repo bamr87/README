@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 8
 source_file: semtex8.md
 title: Semtex8
 ---
+# Semtex8
+
 Non-sniffable data
 ------------------
 This level is about some very simple covert channel, about transferring information that cannot possibly be sniffed. There is a socket file in /rdx/nature. It is a local Unix socket. Receive data from it until EOF and save it to a file.

@@ -389,8 +389,8 @@ Each network round trip to the database costs a fixed overhead (often a millisec
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
+**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
 **📊 Data Scientist**: Advance to [Database Migrations](/quests/0110/database-migrations/)
 
 ## 📚 Resources

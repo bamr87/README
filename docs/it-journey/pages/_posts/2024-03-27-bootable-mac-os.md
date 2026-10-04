@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - tutorials
@@ -42,6 +43,8 @@ tags:
 - system-administration
 title: 2024 03 27 Bootable Mac Os
 ---
+# 2024 03 27 Bootable Mac Os
+
 Create a bootable installer for macOS
 =====================================
 

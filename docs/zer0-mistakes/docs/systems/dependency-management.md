@@ -128,7 +128,7 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 - Keep `Gemfile.lock` committed to git
 - Monitor GitHub security alerts
 
-### ❌ DON'T  
+### ❌ DON'T
 
 - Pin versions in `Gemfile` unless absolutely necessary
 - Ignore failing update PRs (they indicate problems)
@@ -139,17 +139,17 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 
 ### Issue: Update PR Created But No Changes
 
-**Cause**: Already on latest versions  
+**Cause**: Already on latest versions
 **Action**: Close PR, no action needed
 
 ### Issue: Update Fails to Create PR
 
-**Cause**: Workflow error or permissions issue  
+**Cause**: Workflow error or permissions issue
 **Action**: Check workflow run logs, verify GitHub token permissions
 
 ### Issue: Docker Build Fails After Update
 
-**Cause**: Incompatible gem versions  
+**Cause**: Incompatible gem versions
 **Action**:
 
 1. Check `docker/Dockerfile` for version constraints
@@ -158,7 +158,7 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 
 ### Issue: Tests Pass Locally But Fail in CI
 
-**Cause**: Environment differences (Ruby version, OS)  
+**Cause**: Environment differences (Ruby version, OS)
 **Action**:
 
 1. Match Ruby version with CI (`ruby-version` in workflow)

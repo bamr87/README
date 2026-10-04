@@ -47,29 +47,29 @@ async def voice_assistant():
                 "model": "whisper-1"
             }
         })
-        
+
         # Start microphone input (pseudo-code)
         mic_task = asyncio.create_task(stream_microphone(conn))
-        
+
         # Process events
         async for event in conn:
             match event.type:
                 case "session.created":
                     print("Session ready")
-                
+
                 case "input_audio_buffer.speech_started":
                     print("🎤 Listening...")
-                
+
                 case "conversation.item.input_audio_transcription.completed":
                     print(f"You: {event.transcript}")
-                
+
                 case "response.audio.delta":
                     audio = base64.b64decode(event.delta)
                     await play_audio(audio)
-                
+
                 case "response.audio_transcript.done":
                     print(f"Assistant: {event.transcript}")
-                
+
                 case "error":
                     print(f"Error: {event.error.message}")
                     break
@@ -137,7 +137,7 @@ TOOLS = [
 def handle_function_call(name: str, arguments: str) -> dict:
     """Execute function and return result."""
     args = json.loads(arguments)
-    
+
     if name == "get_weather":
         # Mock weather API
         return {
@@ -165,27 +165,27 @@ async def function_calling_assistant():
             "tools": TOOLS,
             "tool_choice": "auto"
         })
-        
+
         async for event in conn:
             match event.type:
                 case "response.function_call_arguments.done":
                     # Execute the function
                     result = handle_function_call(event.name, event.arguments)
-                    
+
                     # Send result back
                     await conn.conversation.item.create(item={
                         "type": "function_call_output",
                         "call_id": event.call_id,
                         "output": json.dumps(result)
                     })
-                    
+
                     # Continue the conversation
                     await conn.response.create()
-                
+
                 case "response.audio.delta":
                     audio = base64.b64decode(event.delta)
                     await play_audio(audio)
-                
+
                 case "response.done":
                     if event.response.status == "completed":
                         print("Response complete")
@@ -218,23 +218,23 @@ async def push_to_talk():
             "voice": "alloy",
             "turn_detection": None  # Disable VAD
         })
-        
+
         # Simulate push-to-talk
         while True:
             input("Press Enter to start recording...")
-            
+
             # Record audio (simulate with chunks)
             chunks = await record_audio_until_release()
-            
+
             # Send all audio
             for chunk in chunks:
                 b64 = base64.b64encode(chunk).decode()
                 await conn.input_audio_buffer.append(audio=b64)
-            
+
             # Commit and request response
             await conn.input_audio_buffer.commit()
             await conn.response.create()
-            
+
             # Wait for response
             async for event in conn:
                 if event.type == "response.audio.delta":
@@ -272,26 +272,26 @@ async def process_audio_file(audio_path: str):
             "turn_detection": None,
             "input_audio_transcription": {"model": "whisper-1"}
         })
-        
+
         # Read and send audio file
         audio_data = Path(audio_path).read_bytes()
-        
+
         # Send in chunks (24kHz * 2 bytes * 0.1s = 4800 bytes)
         chunk_size = 4800
         for i in range(0, len(audio_data), chunk_size):
             chunk = audio_data[i:i + chunk_size]
             b64 = base64.b64encode(chunk).decode()
             await conn.input_audio_buffer.append(audio=b64)
-        
+
         # Commit and request response
         await conn.input_audio_buffer.commit()
         await conn.response.create()
-        
+
         # Collect response
         response_audio = bytearray()
         response_text = ""
         user_transcript = ""
-        
+
         async for event in conn:
             match event.type:
                 case "conversation.item.input_audio_transcription.completed":
@@ -302,7 +302,7 @@ async def process_audio_file(audio_path: str):
                     response_text = event.transcript
                 case "response.done":
                     break
-        
+
         return {
             "user_said": user_transcript,
             "assistant_said": response_text,
@@ -343,24 +343,24 @@ async def interruptible_assistant():
                 "silence_duration_ms": 500
             }
         })
-        
+
         is_responding = False
-        
+
         async for event in conn:
             match event.type:
                 case "response.created":
                     is_responding = True
-                
+
                 case "response.done":
                     is_responding = False
-                
+
                 case "input_audio_buffer.speech_started":
                     if is_responding:
                         # User interrupted - stop current response
                         print("🛑 Interrupt detected!")
                         await conn.response.cancel()
                         await conn.output_audio_buffer.clear()
-                
+
                 case "response.audio.delta":
                     if is_responding:
                         audio = base64.b64decode(event.delta)
@@ -393,24 +393,24 @@ async def multimodal_assistant():
             "voice": "alloy",
             "turn_detection": None
         })
-        
+
         # Add context via text
         await conn.conversation.item.create(item={
             "type": "message",
             "role": "system",
             "content": [{"type": "input_text", "text": "The user's name is Alice."}]
         })
-        
+
         # Add user message as text
         await conn.conversation.item.create(item={
             "type": "message",
             "role": "user",
             "content": [{"type": "input_text", "text": "What's my name?"}]
         })
-        
+
         # Request audio response
         await conn.response.create()
-        
+
         async for event in conn:
             if event.type == "response.audio.delta":
                 audio = base64.b64decode(event.delta)
@@ -448,7 +448,7 @@ async def azure_voice_assistant():
                 name="en-US-JennyNeural"
             )
         })
-        
+
         # Or use custom voice
         # await conn.session.update(session={
         #     "voice": AzureCustomVoice(
@@ -457,7 +457,7 @@ async def azure_voice_assistant():
         #         name="YourCustomVoice"
         #     )
         # })
-        
+
         async for event in conn:
             # ... handle events
             pass
@@ -492,19 +492,19 @@ async def avatar_assistant():
                 "output_protocol": "webrtc"
             }
         })
-        
+
         # Connect avatar
         await conn.send({
             "type": "session.avatar.connect"
         })
-        
+
         async for event in conn:
             match event.type:
                 case "session.avatar.connecting":
                     ice_servers = event.ice_servers
                     # Use ice_servers for WebRTC connection
                     print(f"Avatar connecting with {len(ice_servers)} ICE servers")
-                
+
                 case "response.audio.delta":
                     # Audio is streamed via WebRTC, not this event
                     pass
@@ -541,21 +541,21 @@ async def transcription_only():
                 "model": "whisper-1"
             }
         })
-        
+
         # Stream microphone
         mic_task = asyncio.create_task(stream_microphone(conn))
-        
+
         transcripts = []
-        
+
         async for event in conn:
             match event.type:
                 case "conversation.item.input_audio_transcription.delta":
                     print(event.delta, end="", flush=True)
-                
+
                 case "conversation.item.input_audio_transcription.completed":
                     print()  # Newline
                     transcripts.append(event.transcript)
-        
+
         return transcripts
 
 asyncio.run(transcription_only())

@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 16 of Ulysses — Eumaeus (1am, the cabman's shelter).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 16-eumaeus.md
 title: 16 Eumaeus
 ---
+# 16 Eumaeus
+
 {% include page-header.html %}
 
 Episode 16 of *Ulysses*. 1am, the cabman's shelter.

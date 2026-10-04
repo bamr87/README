@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 backlink: /
 categories:
@@ -31,6 +32,8 @@ title: Roadmap
 toc: true
 toc_sticky: true
 ---
+# Roadmap
+
 Go [Home]({{ page.backlink }}) {: .btn .btn-purple .border}
 
 > *"Every expert was once a beginner who refused to give up after their first segmentation fault."*
@@ -50,23 +53,23 @@ graph TB
     Start --> Journey[⚔️ Journey<br/>Quests & Posts]
     Start --> Library[📚 Library<br/>Documentation]
     Start --> Notebook[📔 Notebooks<br/>Interactive Labs]
-    
+
     QuickStart --> QS1[Machine Setup]
     QuickStart --> QS2[GitHub Setup]
     QuickStart --> QS3[Jekyll Setup]
-    
+
     Journey --> J1[46+ Quests]
     Journey --> J2[Chronicles/Posts]
     Journey --> J3[Learning Paths]
-    
+
     Library --> L1[Docs & Guides]
     Library --> L2[Best Practices]
     Library --> L3[References]
-    
+
     Notebook --> N1[Jupyter Labs]
     Notebook --> N2[Code Snippets]
     Notebook --> N3[Experiments]
-    
+
     style Start fill:#9370DB
     style QuickStart fill:#32CD32
     style Journey fill:#FF6347
@@ -81,7 +84,7 @@ Your entry point into digital mastery - rapid deployment tutorials to get you st
 **Current State:** Active development with foundational tutorials
 
 * ✅ [Machine Setup Guide](/quickstart/machine-setup/) - Complete development environment
-* ✅ [GitHub Setup](/quickstart/github-setup/) - Version control fundamentals  
+* ✅ [GitHub Setup](/quickstart/github-setup/) - Version control fundamentals
 * ✅ [Jekyll Setup](/quickstart/jekyll-setup/) - Static site generation
 * ✅ [Django & Git Setup](/quickstart/2025-03-08-setting-up-django-and-git/) - Web framework integration
 * 🔄 [VS Code for Neuroscience](/quickstart/2025-07-22-vscode-for-neuroscience/) - (In Progress)
@@ -326,7 +329,7 @@ graph LR
     D --> E[VS Code Mastery<br/>Editor Setup]
     E --> F[Bash Basics<br/>Terminal Skills]
     F --> G[First Project<br/>Personal Site]
-    
+
     style A fill:#90EE90
     style B fill:#98FB98
     style C fill:#98FB98
@@ -364,7 +367,7 @@ graph LR
     C --> D[Database Skills<br/>Data Storage]
     D --> E[CI/CD Pipeline<br/>Automation]
     E --> F[Cloud Deploy<br/>Production]
-    
+
     style A fill:#98FB98
     style B fill:#F0E68C
     style C fill:#FFB6C1
@@ -402,11 +405,11 @@ graph TB
     B --> C[Security<br/>Best Practices]
     C --> D[Performance<br/>Optimization]
     D --> E[Leadership<br/>Mentoring]
-    
+
     A --> F[Specialized<br/>Domain]
     F --> G[Portfolio<br/>Projects]
     G --> H[Community<br/>Contribution]
-    
+
     style A fill:#FFB6C1
     style B fill:#DDA0DD
     style C fill:#DDA0DD
@@ -466,7 +469,7 @@ graph LR
     C --> D[Frontend<br/>Frameworks]
     D --> E[Full Stack<br/>Projects]
     E --> F[Production<br/>Deployment]
-    
+
     style A fill:#90EE90
     style B fill:#98FB98
     style C fill:#F0E68C
@@ -516,7 +519,7 @@ graph LR
     C --> D[Cloud<br/>Deploy]
     D --> E[IaC<br/>Terraform]
     E --> F[Orchestration<br/>K8s]
-    
+
     style A fill:#90EE90
     style B fill:#98FB98
     style C fill:#F0E68C
@@ -572,7 +575,7 @@ graph LR
     C --> D[Model<br/>Integration]
     D --> E[MLOps<br/>Deployment]
     E --> F[AI Products<br/>Production]
-    
+
     style A fill:#90EE90
     style B fill:#98FB98
     style C fill:#F0E68C
@@ -789,7 +792,7 @@ gantt
 Ready to begin your adventure? Choose your starting path:
 
 * 🚀 **[QuickStart](/quickstart/)** - Get up and running fast
-* ⚔️ **[Quests](/quests/)** - Begin your epic learning adventure  
+* ⚔️ **[Quests](/quests/)** - Begin your epic learning adventure
 * 📚 **[Library](/docs/)** - Dive deep into comprehensive guides
 * 📔 **[Notebook](/notebooks/)** - Explore interactive learning environments
 

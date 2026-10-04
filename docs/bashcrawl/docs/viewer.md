@@ -6,7 +6,7 @@ title: Bashcrawl Observatory — Log & Screenshot Viewer
 
 The **Bashcrawl Observatory** is a self-contained Flask web app that lets you browse session logs, view screenshots, explore cross-session analytics, read feedback reports, and watch live game sessions — all through a browser.
 
-> **Location:** `src/viewer/`  
+> **Location:** `src/viewer/`
 > **Requires:** Python 3.10+, Flask 3.x (see [Installation](#installation))
 
 ---
@@ -386,20 +386,20 @@ Session data is loaded on startup and cached in memory. At current scale (~250 s
 
 ## Troubleshooting
 
-**`Error: Could not auto-detect game root`**  
+**`Error: Could not auto-detect game root`**
 Run from within the repo, or pass `--game-root /path/to/bashcrawl`.
 
-**Port already in use**  
+**Port already in use**
 Use `--port 8080` (or any free port).
 
-**`ModuleNotFoundError: flask`**  
+**`ModuleNotFoundError: flask`**
 Run `pip install -r src/viewer/requirements.txt` first.
 
-**Screenshots not showing**  
+**Screenshots not showing**
 SVGs are served directly from `logs/screenshots/`. Ensure the directory exists and contains subdirectories with `.svg` files.
 
-**Analytics charts blank**  
+**Analytics charts blank**
 Chart.js is loaded from CDN — an internet connection is required the first time the analytics page loads. After that, your browser caches the library.
 
-**Stale session data**  
+**Stale session data**
 Click the **Refresh** button on the analytics or session list pages, or restart the viewer to force a full reload.

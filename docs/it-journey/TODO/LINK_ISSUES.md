@@ -76,5 +76,5 @@ _Run a scan to see prioritized issues._
 
 ---
 
-**Project**: [Link Health Management](./links/README.md)  
+**Project**: [Link Health Management](./links/README.md)
 **Last Updated**: 2026-01-17

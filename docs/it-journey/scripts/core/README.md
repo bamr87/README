@@ -5,7 +5,7 @@ title: Core Utility Scripts
 <!--
 @file scripts/core/README.md @description Documentation for core utility scripts @author IT-Journey Team <team@it-journey.org> @created 2025-07-07 @lastModified 2025-07-07 @version 1.0.0
 
-@relatedIssues 
+@relatedIssues
   - Script consolidation: Document core utilities
 
 @relatedEvolutions

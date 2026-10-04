@@ -63,7 +63,7 @@ title: "Docker"
 title: "How to use Docker"
 title: "My Docker Tutorial"
 
-# ✅ Good Examples  
+# ✅ Good Examples
 title: "Docker for Beginners: Complete Container Tutorial"
 title: "Install Docker on macOS: Step-by-Step Guide"
 title: "Docker Compose Tutorial: Multi-Container Applications"
@@ -177,9 +177,9 @@ The first 100-150 words are crucial:
 In this tutorial, we'll look at Docker.
 
 # ✅ Good Opening
-Learn how to **install and configure Docker** on macOS, Linux, and Windows 
-with this step-by-step beginner's guide. By the end of this tutorial, you'll 
-understand containers, images, and Docker Compose—essential skills for modern 
+Learn how to **install and configure Docker** on macOS, Linux, and Windows
+with this step-by-step beginner's guide. By the end of this tutorial, you'll
+understand containers, images, and Docker Compose—essential skills for modern
 development and DevOps workflows.
 ```
 
@@ -207,7 +207,7 @@ docker run hello-world
 
 **Benefits**:
 - Syntax highlighting
-- Better accessibility  
+- Better accessibility
 - Potential for rich snippets
 
 ### Internal Linking
@@ -219,9 +219,9 @@ Link to related content naturally:
 Learn about containers in this tutorial.
 
 # ✅ With internal links
-After completing this Docker tutorial, continue with our 
-[Docker Compose Quest](/quests/docker-compose/) to learn multi-container 
-applications, or review [Terminal Fundamentals](/quests/terminal-basics/) 
+After completing this Docker tutorial, continue with our
+[Docker Compose Quest](/quests/docker-compose/) to learn multi-container
+applications, or review [Terminal Fundamentals](/quests/terminal-basics/)
 if you need a refresher.
 ```
 
@@ -375,7 +375,7 @@ When time is limited, prioritize:
 
 ---
 
-**Document Version**: 1.0.0  
-**Created**: 2025-12-19  
-**Last Updated**: 2025-12-19  
+**Document Version**: 1.0.0
+**Created**: 2025-12-19
+**Last Updated**: 2025-12-19
 **Owner**: IT-Journey Team

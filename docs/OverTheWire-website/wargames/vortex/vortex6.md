@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 6
 source_file: vortex6.md
 title: Vortex6
 ---
+# Vortex6
+
 Generic Binary Exploitation
 ---------------------------
 You must disassemble this level's exploitable application in order to find the hole.

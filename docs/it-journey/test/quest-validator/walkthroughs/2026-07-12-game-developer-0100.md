@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-12T00:00:00.000Z'
 level: '0100'
@@ -20,6 +21,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 12 Game Developer 0100
 ---
+# 2026 07 12 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked the **Game Developer** path at **Level 0100 — Frontend & Containers** (Adventurer tier ⚔️), playing the **second and final window** of the level: 3 of the level's 8 quests (`walk-plan.json` window 2/2, offset 5). This slice is two `main_quest`s and one `🔴 Hard` `side_quest`. Machine evidence came pre-sealed by the workflow in `walk-evidence.json` (execute mode, real commands run in a disposable sandbox); I consumed it as-is and added the linked-journey reasoning below.

@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -93,6 +94,8 @@ validation_criteria:
   - Can draw an ER diagram for a given domain
   - Can implement a many-to-many relationship with a junction table
 ---
+# Data Modeling
+
 *Greetings, brave adventurer! Before you can query a kingdom's data, someone must first **draw its map**. That mapmaker is you. This quest, **Data Modeling**, teaches the discipline of turning vague human requirements - "we need to track students, courses, and who enrolled in what" - into a precise, normalized schema that the database can enforce forever.*
 
 *A good data model is invisible when it works and catastrophic when it doesn't. Get the relationships right and your application glides; get them wrong and you will fight your own schema for years. This is the cartographer's craft.*
@@ -389,8 +392,8 @@ The result is exactly the four tables from Chapter 2. Normalization is not acade
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)  
-**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)  
+**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)
+**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)
 **📊 Data Scientist**: Advance to [Query Optimization](/quests/0110/query-optimization/)
 
 ## 📚 Resources

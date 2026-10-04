@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-17T00:00:00.000Z'
 level: '1011'
@@ -22,6 +23,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 17 Security Specialist 1011
 ---
+# 2026 07 17 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the **window 2 of 3** slice of the **Security Specialist → Level 1011 (Security & Compliance, 🔥 Warrior)** path: two `main_quest` pages — **Penetration Testing** (🔴 Hard) and **Compliance Standards** (🟡 Medium) — in the order the planner sorted them. The full level holds 12 quests; this rotating window covered the last two.

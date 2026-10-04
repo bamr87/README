@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-18T00:00:00.000Z'
 level: '1011'
@@ -25,6 +26,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 18 Security Specialist 1011
 ---
+# 2026 07 18 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 12 quests) of the **Security Specialist → Level 1011 "Security & Compliance" (Warrior tier)** slice as a learner, driving the sealed execute-mode engine evidence plus my own read of every quest in plan order. The headline verdict is **warn**: the slice is technically sound and its verified hands-on artifacts genuinely work (OWASP Juice Shop lab, SQL GRANT least-privilege examples, the trace-writer/aggregator/jq observability pipeline all ran clean in the sandbox), but **completeness gaps and a recurring copy-paste hazard** run through the agentic quests, and one quest never finished evaluating.

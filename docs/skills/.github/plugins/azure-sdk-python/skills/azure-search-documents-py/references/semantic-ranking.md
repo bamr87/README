@@ -61,7 +61,7 @@ def semantic_search(client, query: str):
         semantic_configuration_name="my-semantic-config",
         select=["id", "title", "content"]
     )
-    
+
     return list(results)
 ```
 
@@ -81,12 +81,12 @@ def semantic_search_with_captions(client, query: str):
         query_caption=QueryCaptionType.EXTRACTIVE,
         select=["id", "title", "content"]
     )
-    
+
     for result in results:
         print(f"Title: {result['title']}")
         print(f"Score: {result['@search.score']}")
         print(f"Reranker Score: {result.get('@search.reranker_score', 'N/A')}")
-        
+
         # Extract captions
         captions = result.get("@search.captions", [])
         for caption in captions:
@@ -112,7 +112,7 @@ def semantic_search_with_answers(client, query: str):
         query_answer_count=3,  # Request up to 3 answers
         select=["id", "title", "content"]
     )
-    
+
     # Get semantic answers (top-level, not per-document)
     answers = results.get_answers()
     if answers:
@@ -121,7 +121,7 @@ def semantic_search_with_answers(client, query: str):
             print(f"Highlights: {answer.highlights}")
             print(f"Score: {answer.score}")
             print(f"Key: {answer.key}")
-    
+
     # Process documents
     for result in results:
         print(f"Document: {result['title']}")
@@ -150,7 +150,7 @@ def hybrid_semantic_search(
         k_nearest_neighbors=50,  # Over-fetch for re-ranking
         fields="content_vector"
     )
-    
+
     results = client.search(
         search_text=query,
         vector_queries=[vector_query],
@@ -160,7 +160,7 @@ def hybrid_semantic_search(
         top=top,
         select=["id", "title", "content"]
     )
-    
+
     return list(results)
 ```
 

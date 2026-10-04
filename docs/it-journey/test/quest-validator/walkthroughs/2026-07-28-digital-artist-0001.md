@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-28T00:00:00.000Z'
 level: '0001'
@@ -16,6 +17,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 28 Digital Artist 0001
 ---
+# 2026 07 28 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 **Character:** 🎨 Digital Artist (UI/UX) · **Level:** `0001` — Web Fundamentals (🌱 Apprentice) · **Quests walked:** 5 (a rotating window — window 2 of 6 — of the level's 26 quests) · **Mode:** execute (sealed engine evidence) · **Headline verdict:** ⚠️ warn.

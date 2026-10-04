@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - home
@@ -23,4 +24,6 @@ tags:
 - github
 title: Home
 ---
+# Home
+
 Welcome to my corner of the journey — a desktop of widgets I actually use. Drag a window by its title bar to rearrange, use the ⤢ button to resize or the lights to minimize/close, hit **⌘K** to jump anywhere, and pick an accent in the dock (it re-themes the whole site). Everything is configurable and saved in your browser; the GitHub widgets sync automatically via a daily Action.

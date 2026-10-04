@@ -49,10 +49,10 @@ graph TB
         CurrentLevel[Level 1000:<br/>Cloud Computing]
         NextLevel[Level 1001:<br/>Kubernetes]
     end
-    
+
     PrevLevel --> CurrentLevel
     CurrentLevel --> NextLevel
-    
+
     style CurrentLevel fill:#FF5722,stroke:#E64A19,stroke-width:4px,color:#fff
 ```
 
@@ -83,14 +83,14 @@ graph TB
         MQ1[🎯 Cloud Computing Fundamentals:<br/>IaaS, PaaS & SaaS]
         MQ2[🎯 AWS Essentials:<br/>Core Services & Architecture]
     end
-    
+
     subgraph "Infrastructure as Code"
         IaC[🏗️ Infrastructure as Code:<br/>Terraform & CloudFormation]
     end
-    
+
     MQ1 --> MQ2
     MQ2 --> IaC
-    
+
     style MQ1 fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
     style MQ2 fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
     style IaC fill:#2196F3,stroke:#1565C0,stroke-width:3px

@@ -1,4 +1,5 @@
 ---
+
 description: Browse all categories and discover content by topic
 lastmod: 2026-04-18 19:30:22+00:00
 layout: default
@@ -6,6 +7,8 @@ permalink: /categories/
 source_file: categories.md
 title: Categories
 ---
+# Categories
+
 <!--
   ===================================================================
   CATEGORIES INDEX PAGE - Browse all categories
@@ -60,7 +63,7 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
       {% else %}
         {% assign badge_class = "" %}
       {% endif %}
-      <a href="#{{ category | slugify }}" 
+      <a href="#{{ category | slugify }}"
          class="badge bg-success text-decoration-none {{ badge_class }}">
         {{ category }}
         <span class="badge bg-secondary text-body ms-1">{{ count }}</span>
@@ -76,10 +79,10 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
   <h2 class="h4 mb-4 pb-2 border-bottom">
     <i class="bi bi-list-ul me-2"></i>All Categories ({{ unique_categories.size }})
   </h2>
-  
+
   {% for category in unique_categories %}
     {% assign categorized_posts = category_sources | where_exp: "post", "post.categories contains category" %}
-    
+
     <article class="category-section mb-5" id="{{ category | slugify }}">
       <!-- Category Header -->
       <div class="d-flex align-items-center mb-3">
@@ -91,7 +94,7 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
           <i class="bi bi-arrow-up"></i> top
         </a>
       </div>
-      
+
       <!-- Posts in this category -->
       <ul class="list-group list-group-flush">
         {% for post in categorized_posts %}
@@ -113,7 +116,7 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
       </ul>
     </article>
   {% endfor %}
-  
+
   {% if unique_categories.size == 0 %}
     <!-- Empty state -->
     <div class="text-center py-5">

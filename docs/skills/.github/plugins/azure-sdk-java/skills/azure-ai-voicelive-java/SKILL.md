@@ -83,14 +83,14 @@ import reactor.core.publisher.Mono;
 client.startSession("gpt-4o-realtime-preview")
     .flatMap(session -> {
         System.out.println("Session started");
-        
+
         // Subscribe to events
         session.receiveEvents()
             .subscribe(
                 event -> System.out.println("Event: " + event.getType()),
                 error -> System.err.println("Error: " + error.getMessage())
             );
-        
+
         return Mono.just(session);
     })
     .block();
@@ -142,7 +142,7 @@ session.sendInputAudio(BinaryData.fromBytes(audioData)).subscribe();
 ```java
 session.receiveEvents().subscribe(event -> {
     ServerEventType eventType = event.getType();
-    
+
     if (ServerEventType.SESSION_CREATED.equals(eventType)) {
         System.out.println("Session created");
     } else if (ServerEventType.INPUT_AUDIO_BUFFER_SPEECH_STARTED.equals(eventType)) {

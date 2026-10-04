@@ -159,10 +159,10 @@ ReadResult readResult = result.getRead();
 System.out.println("=== Extracted Text ===");
 for (DetectedTextBlock block : readResult.getBlocks()) {
     System.out.println("Block:");
-    
+
     for (DetectedTextLine line : block.getLines()) {
         System.out.printf("  Line: '%s'%n", line.getText());
-        
+
         // Get bounding polygon
         List<ImagePoint> polygon = line.getBoundingPolygon();
         System.out.printf("    Bounding polygon: [");
@@ -170,7 +170,7 @@ for (DetectedTextBlock block : readResult.getBlocks()) {
             System.out.printf("(%d,%d) ", point.getX(), point.getY());
         }
         System.out.println("]");
-        
+
         // Get individual words
         for (DetectedTextWord word : line.getWords()) {
             System.out.printf("    Word: '%s' (confidence: %.4f)%n",
@@ -217,16 +217,16 @@ System.out.println("=== Detected Objects ===");
 for (DetectedObject obj : result.getObjects()) {
     // Get the primary tag (highest confidence)
     DetectedTag primaryTag = obj.getTags().get(0);
-    
+
     System.out.printf("Object: %s (confidence: %.4f)%n",
         primaryTag.getName(),
         primaryTag.getConfidence());
-    
+
     // Get bounding box
     ImageBoundingBox box = obj.getBoundingBox();
     System.out.printf("  Location: x=%d, y=%d, width=%d, height=%d%n",
         box.getX(), box.getY(), box.getWidth(), box.getHeight());
-    
+
     // Additional tags for this object
     if (obj.getTags().size() > 1) {
         System.out.println("  Additional tags:");
@@ -287,12 +287,12 @@ System.out.printf("Number of people: %d%n", result.getPeople().size());
 int personIndex = 1;
 for (DetectedPerson person : result.getPeople()) {
     ImageBoundingBox box = person.getBoundingBox();
-    
+
     System.out.printf("Person %d:%n", personIndex++);
     System.out.printf("  Confidence: %.4f%n", person.getConfidence());
     System.out.printf("  Location: x=%d, y=%d, width=%d, height=%d%n",
         box.getX(), box.getY(), box.getWidth(), box.getHeight());
-    
+
     // Calculate center point
     int centerX = box.getX() + box.getWidth() / 2;
     int centerY = box.getY() + box.getHeight() / 2;
@@ -315,7 +315,7 @@ ImageAnalysisResult result = client.analyzeFromUrl(
 System.out.println("=== Smart Crop Regions ===");
 for (CropRegion crop : result.getSmartCrops()) {
     ImageBoundingBox box = crop.getBoundingBox();
-    
+
     System.out.printf("Aspect ratio: %.2f%n", crop.getAspectRatio());
     System.out.printf("  Region: x=%d, y=%d, width=%d, height=%d%n",
         box.getX(), box.getY(), box.getWidth(), box.getHeight());
@@ -354,7 +354,7 @@ System.out.println("=== Dense Captions ===");
 int regionIndex = 1;
 for (DenseCaption caption : result.getDenseCaptions()) {
     ImageBoundingBox box = caption.getBoundingBox();
-    
+
     System.out.printf("Region %d:%n", regionIndex++);
     System.out.printf("  Caption: \"%s\"%n", caption.getText());
     System.out.printf("  Confidence: %.4f%n", caption.getConfidence());
@@ -471,7 +471,7 @@ Flux.fromIterable(imageUrls)
         null)
         .map(result -> new ImageResult(url, result.getCaption().getText())))
     .subscribe(
-        imageResult -> System.out.printf("%s: %s%n", 
+        imageResult -> System.out.printf("%s: %s%n",
             imageResult.url, imageResult.caption),
         error -> System.err.println("Error: " + error.getMessage())
     );
@@ -480,7 +480,7 @@ Flux.fromIterable(imageUrls)
 class ImageResult {
     String url;
     String caption;
-    
+
     ImageResult(String url, String caption) {
         this.url = url;
         this.caption = caption;
@@ -498,12 +498,12 @@ try {
         "invalid-url",
         Arrays.asList(VisualFeatures.CAPTION),
         null);
-        
+
 } catch (HttpResponseException e) {
     int statusCode = e.getResponse().getStatusCode();
     System.err.println("HTTP Status: " + statusCode);
     System.err.println("Error: " + e.getMessage());
-    
+
     switch (statusCode) {
         case 400:
             System.err.println("Bad request - check image URL or format");
@@ -541,20 +541,20 @@ import java.io.File;
 import java.util.*;
 
 public class ImageAnalyzer {
-    
+
     private final ImageAnalysisClient client;
-    
+
     public ImageAnalyzer() {
         this.client = new ImageAnalysisClientBuilder()
             .endpoint(System.getenv("VISION_ENDPOINT"))
             .credential(new DefaultAzureCredentialBuilder().build())
             .buildClient();
     }
-    
+
     public ImageAnalysisReport analyzeImage(String imagePath) {
         File imageFile = new File(imagePath);
         BinaryData imageData = BinaryData.fromFile(imageFile.toPath());
-        
+
         ImageAnalysisResult result = client.analyze(
             imageData,
             Arrays.asList(
@@ -566,10 +566,10 @@ public class ImageAnalyzer {
             new ImageAnalysisOptions()
                 .setGenderNeutralCaption(true)
                 .setLanguage("en"));
-        
+
         return buildReport(imagePath, result);
     }
-    
+
     public ImageAnalysisReport analyzeImageUrl(String imageUrl) {
         ImageAnalysisResult result = client.analyzeFromUrl(
             imageUrl,
@@ -582,15 +582,15 @@ public class ImageAnalyzer {
             new ImageAnalysisOptions()
                 .setGenderNeutralCaption(true)
                 .setLanguage("en"));
-        
+
         return buildReport(imageUrl, result);
     }
-    
+
     private ImageAnalysisReport buildReport(String source, ImageAnalysisResult result) {
         // Extract caption
         String caption = result.getCaption().getText();
         double captionConfidence = result.getCaption().getConfidence();
-        
+
         // Extract high-confidence tags
         List<String> tags = new ArrayList<>();
         for (DetectedTag tag : result.getTags()) {
@@ -598,16 +598,16 @@ public class ImageAnalyzer {
                 tags.add(tag.getName());
             }
         }
-        
+
         // Extract objects
         List<String> objects = new ArrayList<>();
         for (DetectedObject obj : result.getObjects()) {
             objects.add(obj.getTags().get(0).getName());
         }
-        
+
         // Count people
         int peopleCount = result.getPeople().size();
-        
+
         // Extract text
         StringBuilder extractedText = new StringBuilder();
         for (DetectedTextBlock block : result.getRead().getBlocks()) {
@@ -615,7 +615,7 @@ public class ImageAnalyzer {
                 extractedText.append(line.getText()).append("\n");
             }
         }
-        
+
         return new ImageAnalysisReport(
             source,
             caption,
@@ -628,7 +628,7 @@ public class ImageAnalyzer {
             result.getMetadata().getHeight()
         );
     }
-    
+
     // Report class
     public static class ImageAnalysisReport {
         public final String source;
@@ -640,7 +640,7 @@ public class ImageAnalyzer {
         public final String extractedText;
         public final int width;
         public final int height;
-        
+
         public ImageAnalysisReport(String source, String caption, double captionConfidence,
                                    List<String> tags, List<String> objects, int peopleCount,
                                    String extractedText, int width, int height) {
@@ -654,7 +654,7 @@ public class ImageAnalyzer {
             this.width = width;
             this.height = height;
         }
-        
+
         @Override
         public String toString() {
             StringBuilder sb = new StringBuilder();
@@ -671,13 +671,13 @@ public class ImageAnalyzer {
             return sb.toString();
         }
     }
-    
+
     public static void main(String[] args) {
         ImageAnalyzer analyzer = new ImageAnalyzer();
-        
+
         // Analyze from URL
         String imageUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-sample-data-files/master/ComputerVision/Images/landmark.jpg";
-        
+
         try {
             ImageAnalysisReport report = analyzer.analyzeImageUrl(imageUrl);
             System.out.println(report);

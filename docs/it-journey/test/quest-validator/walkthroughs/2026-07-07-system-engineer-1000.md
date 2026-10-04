@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-07T00:00:00.000Z'
 level: '1000'
@@ -21,6 +22,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 07 System Engineer 1000
 ---
+# 2026 07 07 System Engineer 1000
+
 ## 🎯 Session Summary
 
 I walked the **first window (5 of 9 quests)** of the System Engineer path's Level **1000 — Cloud Computing (Warrior tier)** as a learner would, driving the sandboxed **execute** engine over each quest and then reasoning about the chain as one journey. The headline verdict is **FAIL**: of the five quests, **0 passed, 3 warned, 2 failed** (one of those a 600-second engine timeout), average score **61.2%**.

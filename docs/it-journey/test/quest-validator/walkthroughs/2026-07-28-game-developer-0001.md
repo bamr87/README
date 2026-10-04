@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-28T14:05:02.000Z'
 level: '0001'
@@ -18,6 +19,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 28 Game Developer 0001
 ---
+# 2026 07 28 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** of the **Game Developer → Level 0001 (Web Fundamentals, Apprentice 🌱)** slice as a beginner learner: *GitHub Pages Basics → Jekyll Fundamentals → YAML Configuration → Git Workflow Mastery → Liquid Templating*. This is window **1 of 6** over a 26-quest level, so this is a partial sweep — the ledger accumulates the rest across later runs. The sealed execute-engine evidence (`walk-evidence.json`) scored **3 of 5** quests (2 pass, 1 warn) at a **77.0% average**; the other **2 quests (YAML Configuration, Liquid Templating) produced NO verdict** because the engine hit its 40-turn ceiling mid-execution (`terminal_reason: max_turns`) — that is an engine-budget abort, **not** evidence that those quests are broken.

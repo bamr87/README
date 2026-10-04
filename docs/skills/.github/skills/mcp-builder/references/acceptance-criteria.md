@@ -20,10 +20,10 @@ mcp = FastMCP("my-server")
 @mcp.tool()
 def get_data(query: str) -> str:
     """Fetch data based on query.
-    
+
     Args:
         query: Search query string
-    
+
     Returns:
         Matching data results
     """
@@ -102,12 +102,12 @@ def search_documents(
     include_metadata: bool = False
 ) -> str:
     """Search for documents matching the query.
-    
+
     Args:
         query: The search query string
         limit: Maximum number of results (default: 10)
         include_metadata: Whether to include document metadata
-    
+
     Returns:
         JSON string with matching documents
     """
@@ -124,19 +124,19 @@ server.registerTool({
   inputSchema: {
     type: "object",
     properties: {
-      query: { 
-        type: "string", 
-        description: "The search query string" 
+      query: {
+        type: "string",
+        description: "The search query string"
       },
-      limit: { 
-        type: "integer", 
+      limit: {
+        type: "integer",
         description: "Maximum number of results",
-        default: 10 
+        default: 10
       },
-      include_metadata: { 
-        type: "boolean", 
+      include_metadata: {
+        type: "boolean",
         description: "Whether to include document metadata",
-        default: false 
+        default: false
       }
     },
     required: ["query"]
@@ -243,10 +243,10 @@ def close(repo: str, issue: int) -> str:  # Too generic
 @mcp.tool()
 def get_document(doc_id: str) -> str:
     """Retrieve a document by ID.
-    
+
     Args:
         doc_id: The document identifier
-    
+
     Returns:
         Document content as JSON
     """
@@ -288,10 +288,10 @@ def get_document(doc_id: str) -> str:
 @mcp.tool()
 def search_users(query: str) -> str:
     """Search for users by name or email.
-    
+
     Args:
         query: Search query
-    
+
     Returns:
         JSON with matching users
     """
@@ -308,10 +308,10 @@ def search_users(query: str) -> str:
 @mcp.tool()
 def get_user_profile(user_id: str) -> str:
     """Get detailed user profile.
-    
+
     Args:
         user_id: The user identifier
-    
+
     Returns:
         Markdown formatted user profile
     """
@@ -456,10 +456,10 @@ server.registerTool({
 @mcp.tool()
 async def fetch_data(url: str) -> str:
     """Fetch data from URL asynchronously.
-    
+
     Args:
         url: The URL to fetch
-    
+
     Returns:
         Response content
     """

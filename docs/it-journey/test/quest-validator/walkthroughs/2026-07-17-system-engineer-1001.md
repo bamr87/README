@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-17T00:00:00.000Z'
 level: '1001'
@@ -16,6 +17,8 @@ theme: Kubernetes Orchestration
 tier: Warrior
 title: 2026 07 17 System Engineer 1001
 ---
+# 2026 07 17 System Engineer 1001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 1 of 2; the level holds 9 quests total) of the **System Engineer** path at **Level 1001 — "Kubernetes Orchestration" (Warrior 🔥)**, as a learner following each quest end-to-end. Evidence comes from the sealed execute-mode engine run (`walk-evidence.json`), which sandboxed each quest and ran its safe snippets for real; my value-add is reasoning about the five as one linked journey.

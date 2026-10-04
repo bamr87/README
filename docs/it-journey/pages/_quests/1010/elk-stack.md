@@ -529,8 +529,8 @@ not status : 200
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
-**🏗️ System Engineer**: Explore [Alerting Systems](/quests/1010/alerting-systems/)  
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
+**🏗️ System Engineer**: Explore [Alerting Systems](/quests/1010/alerting-systems/)
 **🛡️ Security Specialist**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) for SLO grounding
 
 ## 📚 Resources

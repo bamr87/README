@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: 2026-07-04 00:00:00+00:00
 level: '0010'
@@ -24,6 +25,8 @@ theme: Terminal Mastery
 tier: Apprentice 🌱
 title: 2026 07 04 System Engineer 0010
 ---
+# 2026 07 04 System Engineer 0010
+
 ## 🎯 Session Summary
 
 I walked the **System Engineer · Level 0010 (Terminal Mastery, Apprentice 🌱)** slice the planner selected — five 🟢 Easy `main_quest`s from the *Tools Collection*, in plan (alphabetical) order: **Action Triggers → Branches & Pull Requests → Changelogs → Commit Hygiene → Django & Git**. Four are conceptual Git/GitHub reference chapters; one (*Django & Git*) is genuinely hands-on, so I played its full happy path end-to-end in a disposable sandbox and syntax/runtime-checked the code the others teach.

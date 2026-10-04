@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-06T12:54:14.000Z'
 level: '0101'
@@ -23,6 +24,8 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 06 System Engineer 0101
 ---
+# 2026 07 06 System Engineer 0101
+
 ## 🎯 Session Summary
 
 I walked the **System Engineer · Level 0101 (CI/CD & DevOps, Adventurer tier)** slice as a learner: five `🟡 Medium` main quests, in the order `walk-plan.json` selected. This is **window 1 of 3** over a 12-quest level, so it is a rotating sample, not the whole level.

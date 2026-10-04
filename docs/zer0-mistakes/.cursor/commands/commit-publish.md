@@ -61,7 +61,7 @@ Classify each changed file into ONE primary category:
 
 ```
 MAJOR (X.0.0): Any breaking change exists
-MINOR (0.X.0): New features/enhancements, no breaking changes  
+MINOR (0.X.0): New features/enhancements, no breaking changes
 PATCH (0.0.X): Fixes, docs, chores only
 ```
 
@@ -226,7 +226,7 @@ Provide this summary after completion:
 | Gemspec | ✅ Valid |
 
 ### Publication
-- **Commit**: `<hash>` 
+- **Commit**: `<hash>`
 - **Tag**: `vX.Y.Z`
 - **RubyGems**: https://rubygems.org/gems/jekyll-theme-zer0/versions/X.Y.Z
 ```

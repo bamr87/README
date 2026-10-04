@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - quickstart
@@ -33,6 +34,8 @@ tags:
 - ide
 title: Vscode Setup
 ---
+# Vscode Setup
+
 This guide covers **Phase 6** of the [Quick Start](/quickstart/) — turning VS Code into a full Jekyll development and content management environment with Front Matter CMS.
 
 ---

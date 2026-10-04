@@ -479,8 +479,8 @@ The secret is injected into the job's environment but never written to the log o
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Actions Basics](/quests/0101/github-actions-basics/)  
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
+**💻 Software Developer**: Continue to [GitHub Actions Basics](/quests/0101/github-actions-basics/)
+**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

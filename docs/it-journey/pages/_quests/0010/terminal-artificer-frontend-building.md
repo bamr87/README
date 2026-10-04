@@ -293,16 +293,16 @@ graph TB
         Term[🌱 Terminal Basics]
         Script[🏰 Shell Scripting]
     end
-    
+
     subgraph "Current Quest"
         Gum[🏰 Terminal Artificer]
     end
-    
+
     subgraph "Unlocked Quests"
         AdvScript[⚔️ Advanced Scripting]
         Auto[👑 Automation Epic]
     end
-    
+
     Term --> Gum
     Script --> Gum
     Gum --> AdvScript

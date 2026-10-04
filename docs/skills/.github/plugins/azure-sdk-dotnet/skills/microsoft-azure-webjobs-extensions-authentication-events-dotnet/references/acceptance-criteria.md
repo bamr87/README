@@ -50,7 +50,7 @@ public static WebJobsAuthenticationEventResponse Run(
     ILogger log)
 {
     var response = new WebJobsTokenIssuanceStartResponse();
-    
+
     response.Actions.Add(new WebJobsProvideClaimsForToken
     {
         Claims = new Dictionary<string, string>

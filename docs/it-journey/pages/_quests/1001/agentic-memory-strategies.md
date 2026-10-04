@@ -180,24 +180,24 @@ jobs:
         run: |
           echo "Agent reading session memory..."
           cat .agent-memory/session.json
-          
+
           # Agent would update memory here — add completed step
           python3 - << 'EOF'
           import json
           from datetime import datetime, timezone
-          
+
           with open('.agent-memory/session.json', 'r') as f:
               memory = json.load(f)
-          
+
           memory['completed_steps'].append({
               'step': 'initial-analysis',
               'timestamp': datetime.now(timezone.utc).isoformat(),
               'outcome': 'Task scope identified'
           })
-          
+
           with open('.agent-memory/session.json', 'w') as f:
               json.dump(memory, f, indent=2)
-          
+
           print("✅ Session memory updated")
           EOF
 
@@ -261,11 +261,11 @@ from previous agent runs that should inform future decisions.
 1. **Ephemeral** (this session):
    - Issue or PR body
    - Referenced files in the issue
-   
+
 2. **Session** (this multi-step task):
    - `.agent-memory/session.json` if it exists
    - Review completed steps to avoid re-doing work
-   
+
 3. **Persistent** (all prior knowledge):
    - `docs/agent-memory/learned-patterns.md`
    - `docs/agent-memory/architectural-decisions.md`

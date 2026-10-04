@@ -221,9 +221,9 @@ await client.path("/text/blocklists/{blocklistName}", "my-blocklist").delete();
 ## Content Moderation Helper
 
 ```typescript
-import ContentSafetyClient, { 
-  isUnexpected, 
-  TextCategoriesAnalysisOutput 
+import ContentSafetyClient, {
+  isUnexpected,
+  TextCategoriesAnalysisOutput
 } from "@azure-rest/ai-content-safety";
 
 interface ModerationResult {

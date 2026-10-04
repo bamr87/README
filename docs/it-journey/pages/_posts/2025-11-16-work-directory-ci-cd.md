@@ -172,23 +172,23 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     env:
       WORK_DIR: {% raw %}${{ github.workspace }}/work{% endraw %}
       CACHE_DIR: {% raw %}${{ github.workspace }}/work/cache{% endraw %}
       BUILD_DIR: {% raw %}${{ github.workspace }}/work/build{% endraw %}
-      
+
     steps:
       # 1. Checkout repository
       - uses: actions/checkout@v4
-      
+
       # 2. Initialize work/ structure
       - name: Setup work directory
         run: |
           mkdir -p work/{cache/{npm,pip,maven},build/{dist,reports},runtime,temp}
           echo "Work directory structure:"
           tree -L 2 work/ || ls -R work/
-      
+
       # 3. Restore dependency cache (only work/cache/)
       - name: Restore dependency cache
         uses: actions/cache@v4
@@ -197,20 +197,20 @@ jobs:
           key: {% raw %}${{ runner.os }}-deps-${{ hashFiles('**/package-lock.json', '**/requirements.txt', '**/pom.xml') }}{% endraw %}
           restore-keys: |
             {% raw %}${{ runner.os }}-deps-{% endraw %}
-      
+
       # 4. Install dependencies (cached)
       - name: Install dependencies
         run: |
           npm install --cache $CACHE_DIR/npm --prefer-offline
           pip install -r requirements.txt --cache-dir $CACHE_DIR/pip
-      
+
       # 5. Build → work/build/
       - name: Build application
         run: |
           npm run build -- --output-path=$BUILD_DIR/dist
           echo "Build artifacts:"
           du -sh $BUILD_DIR/dist
-      
+
       # 6. Run tests → work/build/reports/
       - name: Run tests
         run: |
@@ -218,7 +218,7 @@ jobs:
             --cache-dir=$CACHE_DIR/pytest \
             --junitxml=$BUILD_DIR/reports/junit.xml \
             --cov --cov-report=xml:$BUILD_DIR/reports/coverage.xml
-      
+
       # 7. Upload test reports as artifacts
       - name: Upload test reports
         if: always()
@@ -227,7 +227,7 @@ jobs:
           name: test-reports
           path: work/build/reports/
           retention-days: 7
-      
+
       # 8. Upload build artifacts (for deployment)
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -235,7 +235,7 @@ jobs:
           name: dist
           path: work/build/dist/
           retention-days: 30
-      
+
       # 9. Cleanup disposable directories
       - name: Cleanup
         if: always()
@@ -324,44 +324,44 @@ jobs:
   build-and-test:
     docker:
       - image: cimg/node:18.0
-    
+
     environment:
       WORK_DIR: ~/work
       CACHE_DIR: ~/work/cache
       BUILD_DIR: ~/work/build
-    
+
     steps:
       - checkout
-      
+
       - run:
           name: Setup work directory
           command: mkdir -p work/{cache/npm,build/{dist,reports},temp}
-      
+
       - restore_cache:
           keys:
             - {% raw %}v1-deps-{{ checksum "package-lock.json" }}{% endraw %}
             - v1-deps-
-      
+
       - run:
           name: Install dependencies
           command: npm install --cache $CACHE_DIR/npm
-      
+
       - save_cache:
           key: {% raw %}v1-deps-{{ checksum "package-lock.json" }}{% endraw %}
           paths:
             - work/cache/npm
-      
+
       - run:
           name: Build
           command: npm run build -- --output-path=$BUILD_DIR/dist
-      
+
       - run:
           name: Test
           command: npm test -- --outputFile=$BUILD_DIR/reports/junit.xml
-      
+
       - store_test_results:
           path: work/build/reports/
-      
+
       - store_artifacts:
           path: work/build/dist/
 
@@ -479,13 +479,13 @@ Split large projects into parallel build partitions:
 - name: Parallel build
   run: |
     mkdir -p work/build/partitions/{frontend,backend,api}
-    
+
     npm run build:frontend -- --output-path=work/build/partitions/frontend &
     npm run build:backend -- --output-path=work/build/partitions/backend &
     npm run build:api -- --output-path=work/build/partitions/api &
-    
+
     wait
-    
+
     # Merge artifacts
     cp -r work/build/partitions/* work/build/dist/
 ```
@@ -506,7 +506,7 @@ jobs:
         with:
           path: work/cache/npm
           key: {% raw %}npm-${{ hashFiles('package-lock.json') }}{% endraw %}
-  
+
   build:
     needs: setup-cache
     runs-on: ubuntu-latest
@@ -534,14 +534,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Verify work/ is gitignored
         run: |
           if ! grep -q "^work/$" .gitignore; then
             echo "ERROR: work/ must be in .gitignore"
             exit 1
           fi
-      
+
       - name: Fail if work/ in commit
         run: |
           if git diff --cached --name-only | grep -q "^work/"; then
@@ -560,7 +560,7 @@ Prevent disk exhaustion:
   run: |
     df -h
     du -sh work/ || echo "work/ already cleaned"
-    
+
     # Auto-cleanup old caches if disk > 90% full
     if [ $(df / | tail -1 | awk '{print $5}' | sed 's/%//') -gt 90 ]; then
       echo "Disk usage > 90%, cleaning old caches..."
@@ -577,10 +577,10 @@ Ensure your cache strategy works:
   run: |
     # Bust the cache by modifying package-lock.json
     echo "# cache-buster" >> package-lock.json
-    
+
     # Verify cache miss on next run
     npm install --cache work/cache/npm --verbose | tee install.log
-    
+
     if grep -q "cache hit" install.log; then
       echo "ERROR: Cache should have been invalidated"
       exit 1
@@ -611,10 +611,10 @@ def optimize_cache_strategy(pipeline_history):
     for job in pipeline_history:
         if job.cache_restore_time > 60:  # seconds
             suggest_partition_cache_by_language(job)
-        
+
         if job.cache_hit_rate < 0.5:
             suggest_refine_cache_key(job)
-        
+
         if job.build_time > job.cache_restore_time * 5:
             suggest_ram_disk_mount(job)
 ```
@@ -675,54 +675,54 @@ Run this before and after implementing the `work/` pattern to quantify improveme
 ```groovy
 pipeline {
     agent any
-    
+
     environment {
         WORK_DIR = "${WORKSPACE}/work"
         CACHE_DIR = "${WORKSPACE}/work/cache"
         BUILD_DIR = "${WORKSPACE}/work/build"
     }
-    
+
     stages {
         stage('Setup') {
             steps {
                 sh 'mkdir -p work/{cache/npm,build/dist,temp}'
             }
         }
-        
+
         stage('Restore Cache') {
             steps {
                 // Jenkins uses stash/unstash
                 unstash 'npm-cache'
             }
         }
-        
+
         stage('Build') {
             steps {
                 sh 'npm install --cache $CACHE_DIR/npm'
                 sh 'npm run build -- --output-path=$BUILD_DIR/dist'
             }
         }
-        
+
         stage('Test') {
             steps {
                 sh 'npm test -- --outputFile=$BUILD_DIR/reports/junit.xml'
             }
         }
-        
+
         stage('Archive') {
             steps {
                 archiveArtifacts artifacts: 'work/build/dist/**', fingerprint: true
                 junit 'work/build/reports/junit.xml'
             }
         }
-        
+
         stage('Save Cache') {
             steps {
                 stash name: 'npm-cache', includes: 'work/cache/npm/**'
             }
         }
     }
-    
+
     post {
         always {
             sh 'rm -rf work/{temp,runtime,build}'

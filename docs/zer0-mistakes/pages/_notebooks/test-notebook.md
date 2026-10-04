@@ -177,9 +177,9 @@ print("Plot generated successfully!")
 ```
 
 
-    
+
 ![png](/assets/images/notebooks/test-notebook_files/test-notebook_4_0.png)
-    
+
 
 
     Plot generated successfully!
@@ -316,12 +316,12 @@ for i, num in enumerate(fib_sequence, 1):
 
 This test notebook demonstrates the key features of Jupyter notebook rendering in Jekyll:
 
-✅ **Markdown formatting** with headers, lists, and emphasis  
-✅ **LaTeX equations** for mathematical notation  
-✅ **Code cells** with syntax highlighting  
-✅ **Data visualization** with matplotlib plots  
-✅ **Data tables** with pandas DataFrames  
-✅ **Rich output** from code execution  
+✅ **Markdown formatting** with headers, lists, and emphasis
+✅ **LaTeX equations** for mathematical notation
+✅ **Code cells** with syntax highlighting
+✅ **Data visualization** with matplotlib plots
+✅ **Data tables** with pandas DataFrames
+✅ **Rich output** from code execution
 
 The notebook conversion system:
 1. Converts `.ipynb` files to Jekyll-compatible Markdown

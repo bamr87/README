@@ -207,7 +207,7 @@ def detect_drift(intent_file: str, checkpoint_file: str, threshold: float) -> bo
     current_task_summary = checkpoint.get("task_summary", "")
 
     score = similarity(original_task, current_task_summary)
-    
+
     print(f"Drift detection report:")
     print(f"  Original task length: {len(original_task)} chars")
     print(f"  Current summary length: {len(current_task_summary)} chars")

@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-08-26T00:00:00.000Z'
 level: '0001'
@@ -18,6 +19,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 26 Game Developer 0001
 ---
+# 2026 08 26 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the **first window (1 of 6)** of the **Game Developer → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path — 5 of the level's 26 quests, in the planner's dependency-sorted order — backed by the workflow's sealed execute-mode engine evidence (real commands run in a disposable sandbox, not model assertions).

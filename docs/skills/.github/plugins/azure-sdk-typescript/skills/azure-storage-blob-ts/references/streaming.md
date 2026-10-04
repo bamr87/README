@@ -119,27 +119,27 @@ await blobClient.uploadStream(fileStream, fileSize, 4, {
 await blobClient.uploadStream(fileStream, fileSize, 4, {
   // Number of concurrent upload operations
   concurrency: 4,
-  
+
   // Size of each block (4MB default, max 4000MB)
   bufferSize: 4 * 1024 * 1024,
-  
+
   // Progress tracking
   onProgress: (progress) => {
     console.log(`Uploaded: ${progress.loadedBytes} bytes`);
   },
-  
+
   // HTTP headers
   blobHTTPHeaders: {
     blobContentType: "application/zip",
     blobContentEncoding: "gzip",
   },
-  
+
   // Custom metadata
   metadata: {
     uploadedBy: "my-app",
     version: "1.0",
   },
-  
+
   // Access tier
   tier: "Cool",
 });
@@ -163,40 +163,40 @@ async function uploadLargeFile(
   const fileHandle = await fs.promises.open(filePath, "r");
   const fileStats = await fileHandle.stat();
   const fileSize = fileStats.size;
-  
+
   const blockIds: string[] = [];
   let offset = 0;
   let blockIndex = 0;
-  
+
   try {
     while (offset < fileSize) {
       const chunkSize = Math.min(blockSize, fileSize - offset);
       const buffer = Buffer.alloc(chunkSize);
-      
+
       await fileHandle.read(buffer, 0, chunkSize, offset);
-      
+
       // Generate block ID (must be base64 encoded, same length)
       const blockId = Buffer.from(
         blockIndex.toString().padStart(6, "0")
       ).toString("base64");
-      
+
       // Stage the block
       await blobClient.stageBlock(blockId, buffer, buffer.length);
-      
+
       blockIds.push(blockId);
       offset += chunkSize;
       blockIndex++;
-      
+
       console.log(`Staged block ${blockIndex}, offset: ${offset}/${fileSize}`);
     }
-    
+
     // Commit all blocks
     await blobClient.commitBlockList(blockIds, {
       blobHTTPHeaders: {
         blobContentType: "application/octet-stream",
       },
     });
-    
+
     console.log("Upload complete!");
   } finally {
     await fileHandle.close();
@@ -217,10 +217,10 @@ import { BlobClient } from "@azure/storage-blob";
 await blobClient.downloadToFile("./local-file.zip", 0, undefined, {
   // Chunk size for parallel download
   blockSize: 4 * 1024 * 1024,
-  
+
   // Number of parallel downloads
   concurrency: 4,
-  
+
   onProgress: (progress) => {
     console.log(`Downloaded: ${progress.loadedBytes} bytes`);
   },
@@ -234,14 +234,14 @@ await blobClient.downloadToFile("./local-file.zip", 0, undefined, {
 await blobClient.uploadFile("./large-file.zip", {
   // Chunk size
   blockSize: 4 * 1024 * 1024,
-  
+
   // Parallel uploads
   concurrency: 4,
-  
+
   onProgress: (progress) => {
     console.log(`Uploaded: ${progress.loadedBytes} bytes`);
   },
-  
+
   blobHTTPHeaders: {
     blobContentType: "application/zip",
   },

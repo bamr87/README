@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-24 00:00:00+00:00
 level: '0001'
@@ -23,6 +24,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 24 Digital Artist 0001
 ---
+# 2026 07 24 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 3 of 6, quests 16–20 of the 26-quest level) of the **Digital Artist → Level 0001 "Web Fundamentals" (Apprentice)** slice, as a learner would, using the sealed execute-engine evidence in `walk-evidence.json` plus a static read of every quest source in plan order. **Headline verdict: fail** — 0 pass, 1 warn, 4 fail, average **59.2%**, with the pivotal quest in the chain (**Forge Your Character**) returning **no machine evidence at all** (the engine process exited 1 after hitting its turn cap).

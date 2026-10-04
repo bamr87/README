@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-21T00:00:00.000Z'
 level: '0101'
@@ -24,6 +25,8 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 21 System Engineer 0101
 ---
+# 2026 07 21 System Engineer 0101
+
 ## 🎯 Session Summary
 
 I walked the **first window (5 of 13 quests)** of the **System Engineer → Level 0101 · CI/CD & DevOps (Adventurer ⚔️)** slice as a learner, driving the sealed execute-engine evidence and reading each quest's source in plan order. **Headline verdict: WARN** — the slice teaches solid, mostly-accurate CI/CD fundamentals (avg **75.0%**, 2 pass / 2 warn / 1 fail), but it does not yet hold together as a *coherent linked journey* for this character.

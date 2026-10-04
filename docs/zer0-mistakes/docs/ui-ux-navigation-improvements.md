@@ -241,7 +241,7 @@ All interactive elements meet or exceed WCAG guidelines:
 .dropdown-menu {
   transform: translateY(-0.5rem);
   opacity: 0;
-  
+
   &.show {
     transform: translateY(0);
     opacity: 1;
@@ -266,7 +266,7 @@ All interactive elements meet or exceed WCAG guidelines:
 .dropdown-menu {
   max-height: 0;
   transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   &.show {
     max-height: 600px;
   }
@@ -410,6 +410,6 @@ offcanvasEl.addEventListener('shown.bs.offcanvas', () => {
 
 ---
 
-**Last Updated**: 2025-02-03  
-**Author**: GitHub Copilot AI Assistant  
+**Last Updated**: 2025-02-03
+**Author**: GitHub Copilot AI Assistant
 **Contributors**: bamr87

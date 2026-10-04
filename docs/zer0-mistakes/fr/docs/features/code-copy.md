@@ -49,21 +49,21 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('pre.highlight, pre code').forEach(function(pre) {
     // Skip if already has button
     if (pre.querySelector('.copy')) return;
-    
+
     var preElement = pre.tagName === 'PRE' ? pre : pre.closest('pre');
     if (!preElement) return;
-    
+
     var button = document.createElement('button');
     button.className = 'copy';
     button.type = 'button';
     button.setAttribute('aria-label', 'Copy code to clipboard');
     button.innerHTML = '<i class="bi bi-clipboard me-1"></i>Copy';
-    
+
     button.addEventListener('click', function(e) {
       e.preventDefault();
       var code = preElement.querySelector('code');
       if (!code) return;
-      
+
       navigator.clipboard.writeText(code.textContent).then(function() {
         button.innerHTML = '<i class="bi bi-check me-1"></i>Copied!';
         setTimeout(function() {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
       });
     });
-    
+
     preElement.appendChild(button);
   });
 });
@@ -180,7 +180,7 @@ function copyToClipboard(text) {
   if (navigator.clipboard) {
     return navigator.clipboard.writeText(text);
   }
-  
+
   // Fallback
   var textarea = document.createElement('textarea');
   textarea.value = text;

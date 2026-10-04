@@ -223,7 +223,7 @@ var senderClient = new EventGridSenderClient(
     new AzureKeyCredential(topicKey));
 
 // Send single event
-CloudEvent cloudEvent = new("employee_source", "Employee.Created", 
+CloudEvent cloudEvent = new("employee_source", "Employee.Created",
     new { Name = "John", Age = 30 });
 await senderClient.SendAsync(cloudEvent);
 
@@ -254,7 +254,7 @@ foreach (ReceiveDetails detail in result.Details)
 {
     CloudEvent cloudEvent = detail.Event;
     string lockToken = detail.BrokerProperties.LockToken;
-    
+
     try
     {
         // Process the event

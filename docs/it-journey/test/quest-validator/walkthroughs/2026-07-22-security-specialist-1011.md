@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-22T00:00:00.000Z'
 level: '1011'
@@ -18,6 +19,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 22 Security Specialist 1011
 ---
+# 2026 07 22 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the **Security Specialist · Level 1011 (Security & Compliance, Warrior tier)** slice — a **window of 5 of the level's 12 quests** (window 1 of 3, offset 5), all `main_quest` / 🔴 Hard. The machine evidence in `./walk-evidence.json` was minted and sealed by the workflow's deterministic execute-engine step; I consumed it verbatim and added the linked-journey reasoning a real learner would need.

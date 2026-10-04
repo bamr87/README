@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-18T12:11:40.000Z'
 level: '0101'
@@ -22,6 +23,8 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 18 System Engineer 0101
 ---
+# 2026 07 18 System Engineer 0101
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 1 of 3; the full level holds 13 quests) of the **System Engineer** path at **Level 0101 — CI/CD & DevOps (Adventurer tier)**, as a learner would, in the runner's disposable sandbox using the sealed **execute-mode** evidence the workflow pre-computed. Four quests scored (avg **67.2%**, 0 pass / 3 warn / 2 fail); the fifth (the LaTeX CV quest) **errored out** in the engine (hit the 40-turn limit after its toolchain installs were denied network/sudo), so it carries **no machine verdict** and I could only reason statically about it.

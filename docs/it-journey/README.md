@@ -269,7 +269,7 @@ The current workflow combines [Lychee](https://github.com/lycheeverse/lychee), a
 > **Q: But isn't link checking simple?**
 > A: Basic link checking is simple, but useful maintenance needs context. Link Health Guardian v3.0 compares failures against a baseline, summarizes what changed, and can generate AI-assisted repair guidance when keys are available.
 
-**Get Started**: 
+**Get Started**:
 - **Tool**: [`scripts/validation/link-checker.py`](scripts/validation/link-checker.py) — Link Health Guardian v3.0
 - **CI/CD**: [`.github/workflows/link-checker.yml`](.github/workflows/link-checker.yml) — Automated PR & scheduled checks
 - **Quest**: [Hyperlink Guardian Quest](pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md)

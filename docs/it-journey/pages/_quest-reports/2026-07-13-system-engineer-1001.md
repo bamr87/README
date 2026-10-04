@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -29,6 +30,8 @@ title: 2026 07 13 System Engineer 1001
 verdict: fail
 walk_date: '2026-07-13'
 ---
+# 2026 07 13 System Engineer 1001
+
 > **Slice** `system-engineer/1001` · **Level** 1001 (Kubernetes Orchestration) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-13
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md)

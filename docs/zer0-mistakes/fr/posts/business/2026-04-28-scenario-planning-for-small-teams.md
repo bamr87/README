@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Business
@@ -25,6 +26,8 @@ translated_from_sha: db318c3417b1
 translation_of: pages/_posts/business/2026-04-28-scenario-planning-for-small-teams.md
 translation_source_url: /posts/2026/04/28/scenario-planning-for-small-teams/
 ---
+# 2026 04 28 Scenario Planning For Small Teams
+
 Les petites équipes ont rarement le luxe de disposer d'un service stratégie dédié, mais elles ont tout de même besoin d'une méthode fiable pour prendre des décisions lorsque le marché devient agité. La planification par scénarios est utile car elle crée un langage commun face à l'incertitude sans exiger une présentation de 40 pages.
 
 L'objectif n'est pas de prédire l'avenir parfaitement. L'objectif est de repérer le changement suffisamment tôt pour que l'équipe puisse réagir tant que les options restent peu coûteuses.

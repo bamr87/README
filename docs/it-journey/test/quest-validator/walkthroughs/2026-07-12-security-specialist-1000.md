@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-12T00:00:00.000Z'
 level: '1000'
@@ -21,6 +22,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 12 Security Specialist 1000
 ---
+# 2026 07 12 Security Specialist 1000
+
 ## 🎯 Session Summary
 
 I walked the **Security Specialist** path through **Level 1000 — Cloud Computing (Warrior 🔥)**, playing the planner-selected window of **4 main quests** (window 1 of 2; the full level holds 9): `aws-essentials` → `azure-ascension-jekyll-deployment` → `infrastructure-as-code` → `self-operating-website-03-the-war-machine`.

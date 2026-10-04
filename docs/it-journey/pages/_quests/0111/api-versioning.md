@@ -394,8 +394,8 @@ Throughout, **backward compatibility** within a version is sacred: once `v1` is 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Documentation](/quests/0111/api-documentation/)  
-**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)  
+**💻 Software Developer**: Continue to [API Documentation](/quests/0111/api-documentation/)
+**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

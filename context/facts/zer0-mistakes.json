@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 724,
-    "fingerprint": "c76fbea349777b8e",
+    "file_count": 725,
+    "fingerprint": "9ba5e87d1afac497",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4846784
+    "total_bytes": 4853461
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "796a5f1407231046",
+    "fingerprint": "6bfbc6dd72c5ae64",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 644,
+    "pages": 645,
     "present": true,
     "sections": 96,
     "skipped": 8,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 62,
+        "pages": 63,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"

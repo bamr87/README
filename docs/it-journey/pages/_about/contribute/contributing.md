@@ -45,7 +45,7 @@ Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether
 - **Improve Docs & Notes**: Expand the reference docs and curated cheatsheets
 - **Refine Quest Paths**: Improve prerequisites, level maps, and walkthroughs
 
-### 💻 Code Contributions  
+### 💻 Code Contributions
 - **Build Features**: Implement new capabilities
 - **Fix Bugs**: Squash those pesky issues
 - **Improve Scripts**: Enhance automation
@@ -151,15 +151,15 @@ Use Claude, Copilot, Cursor, Continue.dev, or similar in your editor to draft ch
 
 **Agent do's and don'ts:**
 
-✅ Always bump `lastmod` when editing a file  
-✅ Run `make build-ci` to confirm the site compiles  
-✅ Write clear PR descriptions explaining what and why  
-✅ Follow Conventional Commits  
+✅ Always bump `lastmod` when editing a file
+✅ Run `make build-ci` to confirm the site compiles
+✅ Write clear PR descriptions explaining what and why
+✅ Follow Conventional Commits
 
-❌ Never commit secrets, API keys, or credentials  
-❌ Don't touch CI workflow files unless asked  
-❌ Don't reorder or drop frontmatter fields without understanding the impact  
-❌ Don't hard-code absolute local paths or bypass branch protection  
+❌ Never commit secrets, API keys, or credentials
+❌ Don't touch CI workflow files unless asked
+❌ Don't reorder or drop frontmatter fields without understanding the impact
+❌ Don't hard-code absolute local paths or bypass branch protection
 
 ## 🌟 Our Contributors
 

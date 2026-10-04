@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-07T00:00:00.000Z'
 level: '1000'
@@ -19,6 +20,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 07 Security Specialist 1000
 ---
+# 2026 07 07 Security Specialist 1000
+
 ## 🎯 Session Summary
 
 Walking the **Security Specialist** path at **Level 1000 (Cloud Computing, Warrior 🔥)**, this session played the first window (5 of 9 quests) of the level in the planner's order. Four of the five quests belong to the **GH-600 "Agentic Codex"** sub-line (agent observability, tool permissions, the Domain-2 field guide, and MCP servers); the fifth, **Cloud Computing Fundamentals**, is a conceptual primer from a *different* quest series that happens to share the level.

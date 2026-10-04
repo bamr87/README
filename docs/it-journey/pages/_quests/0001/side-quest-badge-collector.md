@@ -156,9 +156,9 @@ profile:
     - marathon_runner
 ```
 
-> **Rules**: 
-> - Maximum 3 pinned badges  
-> - Must be badges you've actually earned  
+> **Rules**:
+> - Maximum 3 pinned badges
+> - Must be badges you've actually earned
 > - Order matters — first badge is displayed most prominently
 
 ### Step 3: Verify the Display

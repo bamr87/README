@@ -52,7 +52,7 @@ export const ${NODE_NAME} = memo(function ${NODE_NAME}({
 }: ${NODE_NAME}Props) {
   const updateNode = useAppStore((state) => state.updateNode);
   const canvasMode = useAppStore((state) => state.canvasMode);
-  
+
   return (
     <>
       {canvasMode === 'editing' && (

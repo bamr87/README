@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 10
 source_file: semtex10.md
 title: Semtex10
 ---
+# Semtex10
+
 Hacking szene
 -------------
 **Thanks to zaphod and Mush for finding a bugs in this level**

@@ -1,4 +1,5 @@
 ---
+
 attachments: ''
 author: Amr
 categories:
@@ -22,12 +23,14 @@ source_file: 2025-01-16-iterm-tips-and-tricks.md
 sub-title: null
 tags:
 - customization
-- iTerm2
-- macOS
+- iterm2
+- macos
 - productivity
 - terminal
 title: 2025 01 16 Iterm Tips And Tricks
 ---
+# 2025 01 16 Iterm Tips And Tricks
+
 **How to Customize iTerm2 for Efficiency: Keybindings to Delete Words and Navigate Text**
 
 **iTerm2**, a scriptable terminal emulator for macOS, lets you remap keys, set escape sequences, and define custom actions that speed up your work in the terminal. In this guide, we'll walk through setting up keybindings to delete words and navigate text efficiently, and explore the benefits of mastering such customizations.

@@ -1,4 +1,5 @@
 ---
+
 cookbook: zer0-kitchen
 course: breads
 cuisine: Italian
@@ -124,4 +125,6 @@ yield:
   singular: piece
   unit: pieces
 ---
+# No Knead Focaccia
+
 Focaccia is the recipe that proves ratios are worth learning. There is nothing in it but flour, water, salt, yeast and oil — the whole character of the bread lives in the proportions, and in leaving it alone long enough. Once you can read the table at the bottom of this page, you can rebuild this bread at any size, in any pan, without a recipe at all.

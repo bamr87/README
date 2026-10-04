@@ -1,4 +1,5 @@
 ---
+
 description: How the entry numbering works and where to start.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: reading-order.md
 title: Reading Order
 ---
+# Reading Order
+
 {% include page-header.html %}
 
 Entries are numbered rather than dated, because a serialized reading does not arrive in the order it is meant to be read.

@@ -116,5 +116,5 @@ __pycache__
 For production settings specific to each runtime:
 
 | Runtime | Reference |
-|---------|-----------| 
+|---------|-----------|
 | Node.js/Express | [runtimes/nodejs.md](../../runtimes/nodejs.md) |

@@ -9,7 +9,7 @@ title: Mission
 updated: 2024-02-13 20:20:58+00:00
 ---
 # Mission
-Projects must be well documented and designged with self preservation in mind. 
+Projects must be well documented and designged with self preservation in mind.
 
 Build with a co-pilot (real or digital).
 
@@ -24,4 +24,4 @@ Knowledge
 - Journal/CMS
 
 Power
-- 
+-

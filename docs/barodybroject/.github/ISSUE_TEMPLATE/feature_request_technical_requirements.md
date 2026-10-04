@@ -1,4 +1,5 @@
 ---
+
 about: Template for specifying technical requirements for a new feature
 assignees: ''
 labels: enhancement, technical
@@ -6,6 +7,8 @@ name: 'Feature Request: Technical Requirements'
 source_file: feature_request_technical_requirements.md
 title: Feature Request Technical Requirements
 ---
+# Feature Request Technical Requirements
+
 ## Summary
 Provide a brief summary of the feature and its purpose. Include any references to relevant documentation or design specifications.
 

@@ -223,10 +223,10 @@ async def main():
         base_url=endpoint,
         credential=credential
     )
-    
+
     setting = await client.get_configuration_setting(key="app:message")
     print(setting.value)
-    
+
     await client.close()
     await credential.close()
 ```

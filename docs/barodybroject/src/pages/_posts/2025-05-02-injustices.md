@@ -11,27 +11,27 @@ categories:
 - Socio-Economic Marginalization
 - Systemic Exclusion
 date: 2025-05-02 00:01:30.311000+00:00
-description: Explore the complex narrative of corporate betrayal and racial marginalization
-  in 'Manufactured Dispossession'—a case study of systemic exclusion.
+description: "Explore the complex narrative of corporate betrayal and racial marginalization\
+  \ in 'Manufactured Dispossession'\u2014a case study of systemic exclusion."
 lastmod: 2025-05-02 00:02:32.339000+00:00
 preview: ''
 source_file: 2025-05-02-injustices.md
 tags:
-- Agricultural Technology
-- Corporate Betrayal
-- Corporate Ethics
-- Diasporic Experience
-- ERP Systems
-- Geopolitical Subterfuge
-- Historical Inequities.
-- Identity Politics
-- Institutional Exclusion
-- Labor Exploitation
-- Modern Capitalism
-- Post-Colonialism
-- Racial Marginalization
-- Socio-Economic Marginalization
-- Systemic Erasure
+- agricultural technology
+- corporate betrayal
+- corporate ethics
+- diasporic experience
+- erp systems
+- geopolitical subterfuge
+- historical inequities.
+- identity politics
+- institutional exclusion
+- labor exploitation
+- modern capitalism
+- post-colonialism
+- racial marginalization
+- socio-economic marginalization
+- systemic erasure
 title: 'Manufactured Dispossession: A Case Study in Corporate Betrayal, Racial Marginalization,
   and Geopolitical Subterfuge'
 ---

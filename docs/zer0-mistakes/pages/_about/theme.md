@@ -1,4 +1,5 @@
 ---
+
 admin_section: Theme Customizer
 excerpt: Preview Bootstrap 5 theme components and examples.
 icon: material/palette
@@ -11,6 +12,8 @@ source_file: theme.md
 source_icon: bi-palette
 title: Theme
 ---
+# Theme
+
 ## Bootstrap Cheatsheet
 
 The following iframe loads Bootstrap's official cheatsheet for quick reference on available components, utilities, and helpers.

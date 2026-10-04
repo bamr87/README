@@ -29,7 +29,7 @@ title: 🚀 SEO Quick Action Items
 **Status**: ✅ COMPLETE (2025-12-19)
 
 #### 2. Bootable macOS Critical Fix
-**File**: `/pages/_posts/2024-03-27-bootable-mac-os.md`  
+**File**: `/pages/_posts/2024-03-27-bootable-mac-os.md`
 - [x] Change title to: "Create Bootable macOS Installer: Complete Guide for Recovery & Installation"
 - [x] Add description: "Step-by-step tutorial to create bootable macOS installers using Terminal. Includes commands for Sonoma, Ventura, Monterey & older versions. Perfect for system recovery and clean installs."
 - [x] Remove `draft: true` status
@@ -65,7 +65,7 @@ title: 🚀 SEO Quick Action Items
 
 ### Priority Content Gaps
 1. [ ] "Deploy Jekyll to GitHub Pages: Complete Guide"
-2. [ ] "Essential Terminal Shortcuts Cheat Sheet"  
+2. [ ] "Essential Terminal Shortcuts Cheat Sheet"
 3. [ ] "Docker for Beginners: Complete Tutorial"
 4. [ ] "Essential VS Code Extensions for Developers"
 
@@ -77,7 +77,7 @@ title: 🚀 SEO Quick Action Items
 - [ ] Google Search Console error review
 - [ ] Traffic anomaly monitoring
 
-### Weekly Reviews (30 minutes)  
+### Weekly Reviews (30 minutes)
 - [ ] CTR improvement tracking
 - [ ] Search position changes
 - [ ] New content performance
@@ -89,16 +89,16 @@ title: 🚀 SEO Quick Action Items
 
 **Primary Goals**:
 - 15-30% CTR improvement on optimized pages
-- 20% increase in search impressions  
+- 20% increase in search impressions
 - 25% organic traffic growth over 3 months
 
 **Quick Win Indicators**:
-- Nerd Font CTR: 0.7% → 1.5%+ 
+- Nerd Font CTR: 0.7% → 1.5%+
 - Bootable macOS CTR: 0.5% → 1.2%+
 - Zero-CTR pages: 0% → 0.8%+
 
 ---
 
-**Next Action**: Start with Bootable macOS emergency fix (highest impact/lowest effort)  
-**Time Estimate**: 2-3 hours for all Week 1 priorities  
+**Next Action**: Start with Bootable macOS emergency fix (highest impact/lowest effort)
+**Time Estimate**: 2-3 hours for all Week 1 priorities
 **Expected Result**: Immediate CTR improvements within 7-14 days

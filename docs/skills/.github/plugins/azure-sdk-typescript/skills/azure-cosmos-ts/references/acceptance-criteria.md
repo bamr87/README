@@ -14,7 +14,7 @@ title: Azure Cosmos DB SDK for TypeScript Acceptance Criteria
 
 ```typescript
 import { CosmosClient } from "@azure/cosmos";
-import { 
+import {
   CosmosClient,
   Database,
   Container,
@@ -28,7 +28,7 @@ import {
 ### 1.2 ✅ CORRECT: Type Imports
 
 ```typescript
-import type { 
+import type {
   ItemResponse,
   FeedResponse,
   ResourceResponse,
@@ -401,7 +401,7 @@ const { resource, etag } = await container
 
 if (resource && etag) {
   resource.price = 899.99;
-  
+
   try {
     await container.item("product-1", "electronics").replace(resource, {
       accessCondition: { type: "IfMatch", condition: etag },

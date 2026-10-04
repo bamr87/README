@@ -100,7 +100,7 @@ module.exports = async function (context, message) {
 ```csharp
 [Function("ServiceBusProcessor")]
 public void Run(
-    [ServiceBusTrigger("orders", Connection = "SERVICEBUS")] 
+    [ServiceBusTrigger("orders", Connection = "SERVICEBUS")]
     ServiceBusReceivedMessage message,
     FunctionContext context)
 {

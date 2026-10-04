@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 26
 source_file: vortex26.md
 title: Vortex26
 ---
+# Vortex26
+
 Create your own challenges
 --------------------------
 {% include beginNote.html title="Vortex is complete" %}

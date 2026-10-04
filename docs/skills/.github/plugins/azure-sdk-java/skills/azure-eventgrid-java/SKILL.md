@@ -95,9 +95,9 @@ client.sendEvent(event);
 
 ```java
 List<EventGridEvent> events = Arrays.asList(
-    new EventGridEvent("orders/1", "Order.Created", 
+    new EventGridEvent("orders/1", "Order.Created",
         BinaryData.fromObject(order1), "1.0"),
-    new EventGridEvent("orders/2", "Order.Created", 
+    new EventGridEvent("orders/2", "Order.Created",
         BinaryData.fromObject(order2), "1.0")
 );
 
@@ -156,12 +156,12 @@ public class OrderData {
     private String orderId;
     private double amount;
     private String customerId;
-    
+
     public OrderData(String orderId, double amount) {
         this.orderId = orderId;
         this.amount = amount;
     }
-    
+
     // Getters and setters
 }
 
@@ -190,7 +190,7 @@ for (EventGridEvent event : events) {
     System.out.println("Event Type: " + event.getEventType());
     System.out.println("Subject: " + event.getSubject());
     System.out.println("Event Time: " + event.getEventTime());
-    
+
     // Get data
     BinaryData data = event.getData();
     OrderData orderData = data.toObject(OrderData.class);
@@ -209,7 +209,7 @@ for (CloudEvent event : cloudEvents) {
     System.out.println("Type: " + event.getType());
     System.out.println("Source: " + event.getSource());
     System.out.println("ID: " + event.getId());
-    
+
     MyEventData data = event.getData().toObject(MyEventData.class);
 }
 ```
@@ -221,7 +221,7 @@ import com.azure.messaging.eventgrid.systemevents.*;
 
 for (EventGridEvent event : events) {
     if (event.getEventType().equals("Microsoft.Storage.BlobCreated")) {
-        StorageBlobCreatedEventData blobData = 
+        StorageBlobCreatedEventData blobData =
             event.getData().toObject(StorageBlobCreatedEventData.class);
         System.out.println("Blob URL: " + blobData.getUrl());
     }
@@ -250,7 +250,7 @@ ReceiveResult result = receiverClient.receive(10, Duration.ofSeconds(30));
 for (ReceiveDetails detail : result.getValue()) {
     CloudEvent event = detail.getEvent();
     System.out.println("Event: " + event.getType());
-    
+
     // Acknowledge the event
     receiverClient.acknowledge(Arrays.asList(detail.getBrokerProperties().getLockToken()));
 }
@@ -266,7 +266,7 @@ receiverClient.reject(Arrays.asList(lockToken));
 receiverClient.release(Arrays.asList(lockToken));
 
 // Release with delay
-receiverClient.release(Arrays.asList(lockToken), 
+receiverClient.release(Arrays.asList(lockToken),
     new ReleaseOptions().setDelay(ReleaseDelay.BY_60_SECONDS));
 ```
 

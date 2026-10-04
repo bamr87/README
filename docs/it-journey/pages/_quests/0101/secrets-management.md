@@ -423,8 +423,8 @@ The overlap window in step 1 means rotation causes zero downtime: nothing breaks
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Artifact Management](/quests/0101/artifact-management/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
+**💻 Software Developer**: Continue to [Artifact Management](/quests/0101/artifact-management/)
+**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)
 **🛡️ Security Specialist**: Advance to [Artifact Management](/quests/0101/artifact-management/)
 
 ## 📚 Resources

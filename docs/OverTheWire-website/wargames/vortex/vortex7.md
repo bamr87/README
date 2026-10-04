@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 7
 source_file: vortex7.md
 title: Vortex7
 ---
+# Vortex7
+
 Checksum Fun
 ------------
 This level requires CRC\_32(argv[1], strlen(argv[1])) to be 0xe1ca95ee. You might need to extract the crc tables from the program.

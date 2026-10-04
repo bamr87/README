@@ -95,9 +95,9 @@ The difference between vague and structured prompts is dramatic:
 
 ```
 Vague ←─────────────────────────────────→ Precise
-"Help me code"          "Generate a Python function that validates 
-                         email addresses using regex, handles edge 
-                         cases (empty, special chars), returns 
+"Help me code"          "Generate a Python function that validates
+                         email addresses using regex, handles edge
+                         cases (empty, special chars), returns
                          tuple(bool, str), includes docstring"
 ```
 
@@ -236,7 +236,7 @@ For each step, explain your reasoning before moving to the next.
 ```markdown
 [ROLE] You are a DevOps engineer specializing in CI/CD pipelines.
 
-[CONTEXT] Migrating a monorepo from Jenkins to GitHub Actions. 
+[CONTEXT] Migrating a monorepo from Jenkins to GitHub Actions.
 The repo has 3 services: API (Node.js), Web (React), Worker (Python).
 
 [TASK] Design the GitHub Actions workflow structure.
@@ -581,7 +581,7 @@ Input: "invalid" → None
 
 **Objective**: Experience the improvement cycle firsthand
 
-**Challenge**: 
+**Challenge**:
 1. Start with this vague prompt: "Help me write better code"
 2. Iterate 3 times, scoring each version
 3. Document what changed and why

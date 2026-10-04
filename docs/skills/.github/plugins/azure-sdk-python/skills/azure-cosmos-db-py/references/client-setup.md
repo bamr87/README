@@ -70,27 +70,27 @@ _init_attempted: bool = False
 def get_container() -> Optional[ContainerProxy]:
     """Get Cosmos container, initializing on first call."""
     global _cosmos_container, _init_attempted
-    
+
     if _init_attempted:
         return _cosmos_container
-    
+
     _init_attempted = True
-    
+
     try:
         client = _create_client(settings)
         database = client.get_database_client(settings.cosmos_database_name)
         _cosmos_container = database.get_container_client(settings.cosmos_container_id)
-        
+
         # Verify connection with a lightweight operation
         _cosmos_container.read()
         logger.info(f"✅ Connected to Cosmos DB: {settings.cosmos_database_name}/{settings.cosmos_container_id}")
-        
+
     except Exception as e:
         logger.error(f"❌ Failed to initialize Cosmos DB: {type(e).__name__}: {e}")
         import traceback
         logger.error(traceback.format_exc())
         _cosmos_container = None
-    
+
     return _cosmos_container
 ```
 
@@ -114,7 +114,7 @@ async def upsert_document(doc: dict, partition_key: str) -> dict:
     container = get_container()
     if container is None:
         raise RuntimeError("Cosmos DB not initialized")
-    
+
     result = await run_in_threadpool(
         container.upsert_item,
         doc
@@ -126,7 +126,7 @@ async def get_document(doc_id: str, partition_key: str) -> Optional[dict]:
     container = get_container()
     if container is None:
         return None
-    
+
     try:
         result = await run_in_threadpool(
             container.read_item,
@@ -142,7 +142,7 @@ async def delete_document(doc_id: str, partition_key: str) -> bool:
     container = get_container()
     if container is None:
         return False
-    
+
     try:
         await run_in_threadpool(
             container.delete_item,
@@ -166,16 +166,16 @@ from pydantic import model_validator
 
 class Settings(BaseSettings):
     environment: str = "local"
-    
+
     cosmos_endpoint: str = ""
     cosmos_key: str = ""  # Only for emulator
     cosmos_database_name: str = "my-database"
     cosmos_container_id: str = "my-container"
-    
+
     class Config:
         env_file = ".env"
         extra = "ignore"
-    
+
     @model_validator(mode="after")
     def configure_for_environment(self) -> "Settings":
         """Set defaults based on environment."""

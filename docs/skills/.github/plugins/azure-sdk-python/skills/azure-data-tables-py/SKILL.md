@@ -204,7 +204,7 @@ from azure.identity.aio import DefaultAzureCredential
 
 async def table_operations():
     credential = DefaultAzureCredential()
-    
+
     async with TableClient(
         endpoint="https://<account>.table.core.windows.net",
         table_name="mytable",
@@ -216,7 +216,7 @@ async def table_operations():
             "RowKey": "1",
             "data": "test"
         })
-        
+
         # Query
         async for entity in client.query_entities("PartitionKey eq 'async'"):
             print(entity)

@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Episode 1 · Telemachus
 date: 2025-02-16
@@ -15,6 +16,8 @@ source_url: https://www.swerveofshore.com/post/009-0-the-ballad-of-joking-jesus
 sub-title: Episode 1 · Telemachus
 title: 009 0 The Ballad Of Joking Jesus
 ---
+# 009 0 The Ballad Of Joking Jesus
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/009-0-the-ballad-of-joking-jesus), by Brandon Nicklaus.
 
 > We are using the original 1922 First Printing by Shakespeare & Co. - section attached

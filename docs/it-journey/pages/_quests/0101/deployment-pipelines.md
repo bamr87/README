@@ -418,8 +418,8 @@ The cardinal rule: **a deploy you cannot undo is not a deploy, it's a gamble.** 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Environment Management](/quests/0101/environment-management/)  
-**🏗️ System Engineer**: Explore [Secrets Management](/quests/0101/secrets-management/)  
+**💻 Software Developer**: Continue to [Environment Management](/quests/0101/environment-management/)
+**🏗️ System Engineer**: Explore [Secrets Management](/quests/0101/secrets-management/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

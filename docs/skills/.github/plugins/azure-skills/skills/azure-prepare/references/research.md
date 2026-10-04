@@ -100,7 +100,7 @@ Add research findings to `.azure/plan.md`:
 
 ### Container Apps
 - **Source**: services/container-apps/README.md, scaling.md, health-probes.md
-- **Key Insights**: 
+- **Key Insights**:
   - Use min replicas: 1 for APIs to avoid cold starts
   - Configure health probes for liveness and readiness
   - Use queue-based scaling for workers

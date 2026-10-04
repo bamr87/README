@@ -25,8 +25,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🔧 Core Test Suite (`test_core.sh`)
 
-**Purpose:** Fundamental functionality validation  
-**Runtime:** ~2-3 minutes  
+**Purpose:** Fundamental functionality validation
+**Runtime:** ~2-3 minutes
 **Focus Areas:**
 
 - **Unit Tests**: File structure, YAML syntax, gemspec validity, version consistency
@@ -46,8 +46,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🚀 Deployment Test Suite (`test_deployment.sh`)
 
-**Purpose:** Installation and deployment validation  
-**Runtime:** ~5-8 minutes  
+**Purpose:** Installation and deployment validation
+**Runtime:** ~5-8 minutes
 **Focus Areas:**
 
 - **Installation Tests**: Local full/minimal installation, remote installation
@@ -70,8 +70,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🏆 Quality Test Suite (`test_quality.sh`)
 
-**Purpose:** Security, accessibility, and performance validation  
-**Runtime:** ~4-6 minutes  
+**Purpose:** Security, accessibility, and performance validation
+**Runtime:** ~4-6 minutes
 **Focus Areas:**
 
 - **Security Tests**: Vulnerability scanning, sensitive files, hardcoded secrets
@@ -89,8 +89,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🔧 Site Generation Test Suite (`test_site_generation.sh`)
 
-**Purpose:** Configuration matrix site building and validation  
-**Runtime:** ~5-10 minutes  
+**Purpose:** Configuration matrix site building and validation
+**Runtime:** ~5-10 minutes
 **Focus Areas:**
 
 - **Full Mode**: Complete theme installation with all files
@@ -587,6 +587,6 @@ The consolidated testing framework is working correctly when:
 
 ---
 
-**Test Framework Version**: 3.0 (Extended with Installation & Visual Tests)  
-**Last Updated**: January 2026  
+**Test Framework Version**: 3.0 (Extended with Installation & Visual Tests)
+**Last Updated**: January 2026
 **Compatibility**: Jekyll 4.0+, Ruby 3.0+, Node.js 18+, Docker (optional), Playwright (for visual tests)

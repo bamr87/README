@@ -4,9 +4,9 @@ title: Azure AI Projects SDK - Complete API Reference
 ---
 # Azure AI Projects SDK - Complete API Reference
 
-**Package**: `azure-ai-projects` v2.0.0b4  
-**Repository**: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)  
-**Path**: `sdk/ai/azure-ai-projects/`  
+**Package**: `azure-ai-projects` v2.0.0b4
+**Repository**: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
+**Path**: `sdk/ai/azure-ai-projects/`
 **Commit**: `7e86ab0076297173aae290c11fa14660bed2b125`
 
 ---
@@ -478,24 +478,24 @@ from azure.ai.projects.models import (
     EvaluatorVersion,
     EvaluatorMetric,
     EvalResult,
-    
+
     # Rules and actions
     EvaluationRule,
     EvaluationRuleAction,
     ContinuousEvaluationRuleAction,
     HumanEvaluationRuleAction,
-    
+
     # Comparison reports
     EvalCompareReport,
     EvalRunResultComparison,
     EvalRunResultSummary,
     EvalRunResultCompareItem,
     EvaluationResultSample,
-    
+
     # Evaluator definitions
     CodeBasedEvaluatorDefinition,
     PromptBasedEvaluatorDefinition,
-    
+
     # Taxonomy
     EvaluationTaxonomy,
     EvaluationTaxonomyInput,
@@ -536,19 +536,19 @@ from azure.ai.projects.models import (
     MemoryItem,
     ChatSummaryMemoryItem,
     UserProfileMemoryItem,
-    
+
     # Memory stores
     MemoryStoreDefinition,
     MemoryStoreDefaultDefinition,
     MemoryStoreDefaultOptions,
     MemoryStoreDetails,
-    
+
     # Memory operations
     MemoryOperation,
     MemorySearchItem,
     MemorySearchOptions,
     MemorySearchPreviewTool,
-    
+
     # Results
     MemoryStoreSearchResult,
     MemoryStoreUpdateResult,
@@ -878,10 +878,10 @@ from azure.ai.projects.models import (
     InsightSummary,
     InsightsMetadata,
     InsightSample,
-    
+
     # Model configuration
     InsightModelConfiguration,
-    
+
     # Specialized results
     ClusterInsightResult,
     ClusterTokenUsage,
@@ -967,11 +967,11 @@ from azure.ai.projects.models import (
     OutputMessageContent,
     OutputMessageContentOutputTextContent,
     OutputMessageContentRefusalContent,
-    
+
     # Usage details
     ResponseUsageInputTokensDetails,
     ResponseUsageOutputTokensDetails,
-    
+
     # Delete responses
     DeleteAgentResponse,
     DeleteAgentVersionResponse,

@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 13 of Ulysses — Nausicaa (8pm, Sandymount Strand again).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 13-nausicaa.md
 title: 13 Nausicaa
 ---
+# 13 Nausicaa
+
 {% include page-header.html %}
 
 Episode 13 of *Ulysses*. 8pm, Sandymount Strand again.

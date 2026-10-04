@@ -22,7 +22,7 @@ dotnet add package Azure.ResourceManager.PostgreSql
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.2.0 (GA)  
+**Current Version**: v1.2.0 (GA)
 **API Version**: 2023-12-01-preview
 
 > **Note**: This skill focuses on PostgreSQL Flexible Server. Single Server is deprecated and scheduled for retirement.
@@ -178,10 +178,10 @@ ArmOperation<PostgreSqlFlexibleServerConfigurationResource> operation = await co
     .CreateOrUpdateAsync(WaitUntil.Completed, "max_connections", configData);
 
 // Common PostgreSQL configurations to tune
-string[] commonParams = { 
-    "max_connections", 
-    "shared_buffers", 
-    "work_mem", 
+string[] commonParams = {
+    "max_connections",
+    "shared_buffers",
+    "work_mem",
     "maintenance_work_mem",
     "effective_cache_size",
     "log_min_duration_statement"
@@ -191,10 +191,10 @@ string[] commonParams = {
 ### 5. Configure Entra ID Administrator
 
 ```csharp
-PostgreSqlFlexibleServerActiveDirectoryAdministratorCollection admins = 
+PostgreSqlFlexibleServerActiveDirectoryAdministratorCollection admins =
     server.GetPostgreSqlFlexibleServerActiveDirectoryAdministrators();
 
-PostgreSqlFlexibleServerActiveDirectoryAdministratorData adminData = 
+PostgreSqlFlexibleServerActiveDirectoryAdministratorData adminData =
     new PostgreSqlFlexibleServerActiveDirectoryAdministratorData
 {
     PrincipalType = PostgreSqlFlexibleServerPrincipalType.User,

@@ -1,10 +1,13 @@
 ---
+
 gamename: krypton
 layout: default
 level: 3
 source_file: krypton3.md
 title: Krypton3
 ---
+# Krypton3
+
 Level Info
 ----------
 Well done. You've moved past an easy substitution cipher.

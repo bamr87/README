@@ -158,10 +158,10 @@ jobs:
           # Get all files changed in this PR
           CHANGED_FILES=$(gh pr view "${% raw %}{{ github.event.pull_request.number }}{% endraw %}" \
             --json files -q '.files[].path')
-          
+
           echo "Files changed:"
           echo "$CHANGED_FILES"
-          
+
           # Check for forbidden paths (agent should not touch these)
           FORBIDDEN_PATTERNS=(
             "src/auth/"
@@ -169,7 +169,7 @@ jobs:
             ".github/workflows/"
             "database/migrations/"
           )
-          
+
           for PATTERN in "${FORBIDDEN_PATTERNS[@]}"; do
             if echo "$CHANGED_FILES" | grep -q "^$PATTERN"; then
               echo "::error::Agent PR touches forbidden path: $PATTERN"
@@ -177,7 +177,7 @@ jobs:
               exit 1
             fi
           done
-          
+
           echo "✅ File scope check passed"
           echo "scope_violation=false" >> "$GITHUB_OUTPUT"
 
@@ -271,7 +271,7 @@ jobs:
           AUDIT_DATE=$(date -u +%Y-%m-%d)
           AUDIT_FILE="work/gh-600/audit/audit-${AUDIT_DATE}.jsonl"
           mkdir -p "$(dirname "$AUDIT_FILE")"
-          
+
           cat >> "$AUDIT_FILE" << EOF
           {
             "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
@@ -284,7 +284,7 @@ jobs:
             "head_sha": "${% raw %}{{ github.event.workflow_run.head_sha }}{% endraw %}"
           }
           EOF
-          
+
           echo "Audit entry written to $AUDIT_FILE"
 
       - name: Commit audit log

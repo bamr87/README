@@ -1,4 +1,5 @@
 ---
+
 about: Issue Template for the repository
 base_template: issue_template.md
 labels: ai-assist
@@ -19,6 +20,8 @@ prompt: 'You are tasked with elaborating this issue.
 source_file: issue_detail_template.md
 title: Issue Detail Template
 ---
+# Issue Detail Template
+
 ## Summary
 Provide a brief summary of the issue.
 

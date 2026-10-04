@@ -239,12 +239,12 @@ chatThreadClient.listMessages().forEach(message -> {
     if (message.getDeletedOn() != null) {
         System.out.println("Deleted at: " + message.getDeletedOn());
     }
-    
+
     // Check if edited
     if (message.getEditedOn() != null) {
         System.out.println("Edited at: " + message.getEditedOn());
     }
-    
+
     // Message type
     System.out.println("Type: " + message.getType());
 });

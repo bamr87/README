@@ -812,8 +812,8 @@ git push --tags         # Trigger CI/CD
 
 ## 🚀 Deployment
 
-**GitHub Pages**: Automatic on push to `main`  
-**RubyGems**: `gem push jekyll-theme-zer0-X.Y.Z.gem`  
+**GitHub Pages**: Automatic on push to `main`
+**RubyGems**: `gem push jekyll-theme-zer0-X.Y.Z.gem`
 **Docker Hub**: Optional containerized distribution
 
 ---
@@ -953,28 +953,28 @@ graph LR
     E --> F[Future: Headless CMS]
 ```
 
-**Version 0.1.0** → Basic Jekyll layouts + Bootstrap  
-**Version 0.3.0** → Docker environment + GitHub Pages  
-**Version 0.4.0** → Automation scripts + version management  
-**Version 0.5.0** → CI/CD pipeline + automated releases  
-**Version 0.6.0** → AI integration + privacy compliance  
+**Version 0.1.0** → Basic Jekyll layouts + Bootstrap
+**Version 0.3.0** → Docker environment + GitHub Pages
+**Version 0.4.0** → Automation scripts + version management
+**Version 0.5.0** → CI/CD pipeline + automated releases
+**Version 0.6.0** → AI integration + privacy compliance
 **Future (0.7.0+)** → Headless CMS + content API + visual editor
 
 ### Alternative Approaches Considered & Rejected
 
-**Alternative 1**: Local Ruby development only  
+**Alternative 1**: Local Ruby development only
 **Rejected Because**: Too many environment-specific failures, poor contributor onboarding
 
-**Alternative 2**: GitHub-hosted runners for everything  
+**Alternative 2**: GitHub-hosted runners for everything
 **Rejected Because**: Slow iteration cycles, debugging difficulty, cost at scale
 
-**Alternative 3**: Pre-compiled assets instead of CDN  
+**Alternative 3**: Pre-compiled assets instead of CDN
 **Rejected Because**: Larger repository size, slower updates, compilation complexity
 
-**Alternative 4**: Google Analytics instead of PostHog  
+**Alternative 4**: Google Analytics instead of PostHog
 **Rejected Because**: Privacy concerns, limited GDPR compliance, less developer control
 
-**Alternative 5**: Manual version management  
+**Alternative 5**: Manual version management
 **Rejected Because**: Human error prone, version drift inevitable, slows releases
 
 ### Lessons Learned

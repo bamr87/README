@@ -391,8 +391,8 @@ Mature teams pursue **continuous compliance** - automating evidence collection (
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)  
+**💻 Software Developer**: Revisit [Secure Coding Practices](/quests/1011/secure-coding/)
+**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)
 **🛡️ Security Specialist**: Deepen [Threat Modeling](/quests/1011/threat-modeling/)
 
 ## 📚 Resources

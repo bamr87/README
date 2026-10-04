@@ -250,22 +250,22 @@ Not every SDLC step should be handed to an agent. Use this decision grid:
 Every agent task must have three things before it runs:
 
 **1. Inputs** — what the agent reads or receives
-- GitHub issue body  
-- PR diff  
-- Specific file paths  
-- Environment variables  
+- GitHub issue body
+- PR diff
+- Specific file paths
+- Environment variables
 
 **2. Outputs** — what the agent produces
-- Code changes committed to a branch  
-- A draft PR with a description  
-- A JSON report artifact  
-- A GitHub issue comment  
+- Code changes committed to a branch
+- A draft PR with a description
+- A JSON report artifact
+- A GitHub issue comment
 
 **3. Success Criteria** — how you know it worked
-- All CI checks pass  
-- Specific strings appear in the output  
-- Human reviewer approves without requesting changes  
-- Metric is within acceptable range  
+- All CI checks pass
+- Specific strings appear in the output
+- Human reviewer approves without requesting changes
+- Metric is within acceptable range
 
 > **Exercise 1.3:** Using the template below, write an agent task card for a "dependency update checker" agent that reads your `package.json`, identifies outdated packages, and opens a draft PR with the updates.
 
@@ -301,19 +301,19 @@ success_criteria:
 
 The Guild's Hall of Shame displays the five most destructive agent anti-patterns. Learn them so you never repeat them.
 
-**Anti-Pattern 1: The Infinite Reasoner 🌀**  
+**Anti-Pattern 1: The Infinite Reasoner 🌀**
 Agent loops forever refining a plan without producing output. *Fix: add a max-iteration limit and a forced-output gate.*
 
-**Anti-Pattern 2: The Scope Creep Sorcerer 🕷️**  
+**Anti-Pattern 2: The Scope Creep Sorcerer 🕷️**
 Agent modifies files outside its stated scope because the task description was vague. *Fix: always specify exact file paths or glob patterns as inputs.*
 
-**Anti-Pattern 3: The Silent Destroyer 💀**  
+**Anti-Pattern 3: The Silent Destroyer 💀**
 Agent takes irreversible actions (deletes branches, merges PRs) with no audit trail. *Fix: every action must produce a traceable artifact; irreversible actions require explicit authorization.*
 
-**Anti-Pattern 4: The Hallucinating Herald 🎭**  
+**Anti-Pattern 4: The Hallucinating Herald 🎭**
 Agent reports success when it silently failed or produced garbage output. *Fix: define machine-verifiable success criteria; never rely only on the agent's self-report.*
 
-**Anti-Pattern 5: The Context Amnesiac 🧊**  
+**Anti-Pattern 5: The Context Amnesiac 🧊**
 Agent repeats work it already did because it has no memory of prior steps. *Fix: use durable state artifacts (covered in Domain 3 quests).*
 
 > **Exercise 1.4:** Look at the `dependency-updater.yml` task card you wrote in Exercise 1.3. Which anti-patterns could it fall into? Add a `mitigations:` section to the YAML listing at least three.

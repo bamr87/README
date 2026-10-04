@@ -1,10 +1,13 @@
 ---
+
 date: 2021-11-06 10:42:04+00:00
 description: Collection of programming languages notes
 lastmod: '2022-01-02T03:39:23.888Z'
 source_file: programming.md
 title: Programming
 ---
+# Programming
+
 ## python
 
 ```python
@@ -35,16 +38,16 @@ document.write('Hello, world!');
 ```
 
 ```c
-#include 
- 
+#include
+
 int main(void)
 {
     puts("Hello, world!");
 }
 ```
 ```c++
-#include 
- 
+#include
+
 int main()
 {
     std::cout << "Hello, world!

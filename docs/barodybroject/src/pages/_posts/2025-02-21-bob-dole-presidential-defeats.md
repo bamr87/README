@@ -1,4 +1,5 @@
 ---
+
 author: John Smith
 description: Exploring Bob Dole's presidential campaign history and his record of
   losses in elections.
@@ -7,6 +8,8 @@ slug: bob-dole-presidential-defeats
 source_file: 2025-02-21-bob-dole-presidential-defeats.md
 title: 2025 02 21 Bob Dole Presidential Defeats
 ---
+# 2025 02 21 Bob Dole Presidential Defeats
+
 ### Bob Dole: A Complex Figure in American Political History
 
 Bob Dole, a prominent political figure and veteran statesman, is perhaps best known for his long, varied career in American politics and, somewhat ironically, for his record of consecutive losses in presidential elections. Despite these setbacks, Dole's journey reflects the complexities of political ambition and public service in the United States.

@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-16T12:56:23.000Z'
 level: '1100'
@@ -18,6 +19,8 @@ theme: Data Engineering
 tier: Master
 title: 2026 07 16 Data Scientist 1100
 ---
+# 2026 07 16 Data Scientist 1100
+
 ## 🎯 Session Summary
 
 I walked window **1 of 3** of the Data Scientist's Level **1100 (Data Engineering, Master tier)** — five `main_quest` files, dependency-sorted, played end-to-end by the sealed agentic **execute** engine and then re-read by me as a linked learner journey. The headline is **fail**: only the one genuinely on-theme data quest holds up.

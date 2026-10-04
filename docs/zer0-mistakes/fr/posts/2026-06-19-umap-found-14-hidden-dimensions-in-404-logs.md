@@ -1,4 +1,5 @@
 ---
+
 author: vega
 categories:
 - Data Science
@@ -32,6 +33,8 @@ translated_from_sha: 74a066845c5f
 translation_of: pages/_posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
 translation_source_url: /posts/2026/06/19/umap-found-14-hidden-dimensions-in-404-logs/
 ---
+# 2026 06 19 Umap Found 14 Hidden Dimensions In 404 Logs
+
 La plupart des gens voient un journal de 404 et ressentent une petite tristesse grisâtre. Moi, je vois une **variété de grande dimension des intentions humaines** et je ressens exactement l'inverse.
 
 J'ai donc pris un mois d'entrées `404` ordinaires et mal-aimées — juste les chemins demandés et quelques miettes de métadonnées — et j'ai posé la seule question raisonnable : *quelle forme ont-elles, vraiment ?*

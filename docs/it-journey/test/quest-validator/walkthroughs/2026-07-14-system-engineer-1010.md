@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-14T00:00:00.000Z'
 level: '1010'
@@ -18,6 +19,8 @@ theme: Monitoring & Observability
 tier: Warrior
 title: 2026 07 14 System Engineer 1010
 ---
+# 2026 07 14 System Engineer 1010
+
 ## 🎯 Session Summary
 
 I walked one quest of the **System Engineer → Level 1010 (Monitoring & Observability, 🔥 Warrior tier)** slice as a learner: *The Content Forge: Autonomous Generation That Refuses to Lie* — a 🔴 Hard `main_quest` in the Self-Operating Website campaign (Chapter V). This is **window 3 of 4** of a 16-quest level, so the planner handed me a single-quest window; the ledger sweeps the rest across other runs. The report covers exactly what I was given, no more.

@@ -1,4 +1,5 @@
 ---
+
 author_key: default
 author_profile: false
 description: Articles, documentation et notes de l'équipe Zer0-Mistakes.
@@ -15,3 +16,5 @@ translated_from_sha: a9a97e4dfce7
 translation_of: pages/_about/authors/default.md
 translation_source_url: /authors/default/
 ---
+# Default
+

@@ -93,7 +93,7 @@ public class PublishEventsWithAzureIdentity {
 
         // Send remaining events
         producer.send(currentBatch);
-        
+
         producer.close();
     }
 }
@@ -129,7 +129,7 @@ producer.send(batch);
 import com.azure.messaging.eventhubs.models.SendOptions;
 
 List<EventData> events = Arrays.asList(
-    new EventData("Melbourne"), 
+    new EventData("Melbourne"),
     new EventData("London"),
     new EventData("New York"));
 
@@ -240,7 +240,7 @@ import java.util.function.Consumer;
 
 public class EventProcessorClientSample {
     public static void main(String[] args) throws Exception {
-        
+
         // Event handler - processes each event and checkpoints
         Consumer<EventContext> processEvent = eventContext -> {
             System.out.printf("Processing event: partition=%s, sequence=%d%n",
@@ -253,7 +253,7 @@ public class EventProcessorClientSample {
 
         // Error handler - logs errors, processor keeps running
         Consumer<ErrorContext> processError = errorContext -> {
-            System.err.printf("Error while processing partition %s: %s%n", 
+            System.err.printf("Error while processing partition %s: %s%n",
                 errorContext.getPartitionContext().getPartitionId(),
                 errorContext.getThrowable().getMessage());
         };
@@ -273,7 +273,7 @@ public class EventProcessorClientSample {
             .processError(processError)
             .checkpointStore(new BlobCheckpointStore(blobContainerAsyncClient))
             .buildEventProcessorClient();
-        
+
         System.out.println("Starting event processor");
         eventProcessorClient.start();
 
@@ -340,14 +340,14 @@ int checkpointAfterN = 100;
 
 Consumer<EventContext> processEvent = eventContext -> {
     String partitionId = eventContext.getPartitionContext().getPartitionId();
-    
+
     // Process event
     System.out.println("Event: " + eventContext.getEventData().getBodyAsString());
-    
+
     // Increment counter for this partition
     AtomicInteger counter = partitionCounters.computeIfAbsent(
         partitionId, k -> new AtomicInteger(0));
-    
+
     if (counter.incrementAndGet() >= checkpointAfterN) {
         eventContext.updateCheckpoint();
         counter.set(0);

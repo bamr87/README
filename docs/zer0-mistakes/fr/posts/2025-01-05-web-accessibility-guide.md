@@ -1,4 +1,5 @@
 ---
+
 author: Zer0-Mistakes Team
 categories:
 - Development
@@ -26,6 +27,8 @@ translated_from_sha: 9e36acbd9ad4
 translation_of: pages/_posts/2025-01-05-web-accessibility-guide.md
 translation_source_url: /posts/2025/01/05/web-accessibility-guide/
 ---
+# 2025 01 05 Web Accessibility Guide
+
 L'accessibilité web n'est pas seulement une exigence légale — il s'agit de créer des expériences inclusives pour tous. Ce guide couvre les pratiques d'accessibilité essentielles pour le développement web moderne.
 
 ## Pourquoi l'accessibilité est importante

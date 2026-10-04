@@ -1,12 +1,12 @@
 ---
-abstract: The article explores the paradoxical phenomenon in financial modeling where
-  Excel workbooks become so complex they encounter circular reference errors. Rather
-  than indicating mere computational mishaps, these errors metaphorically represent
-  algorithms approaching an abstract infinity, signaling hidden arbitrage opportunities
-  or gaps in modern economic systems. Ironically, this computational barrier—often
-  dismissed as user error—could hold the key to uncovering lucrative market inefficiencies.
-  Yet, humorously, only Microsoft itself possesses the limitless computational power
-  required to decipher and capitalize upon these opportunities.
+abstract: "The article explores the paradoxical phenomenon in financial modeling where\
+  \ Excel workbooks become so complex they encounter circular reference errors. Rather\
+  \ than indicating mere computational mishaps, these errors metaphorically represent\
+  \ algorithms approaching an abstract infinity, signaling hidden arbitrage opportunities\
+  \ or gaps in modern economic systems. Ironically, this computational barrier\u2014\
+  often dismissed as user error\u2014could hold the key to uncovering lucrative market\
+  \ inefficiencies. Yet, humorously, only Microsoft itself possesses the limitless\
+  \ computational power required to decipher and capitalize upon these opportunities."
 aiPrompt: I want to explore an article topic around the idea of discovering a formula
   for financial modeling that is abstractly integrated into modern forms of economic
   activity. This formula can be juxtaposed with using Microsoft Excel, such as the
@@ -54,10 +54,10 @@ sub-title: null
 tags:
 - arbitrage
 - complexity
-- Excel
+- excel
 - financial
 - modeling
-- GPT-4
+- gpt-4
 target-audience: analysts, financial modelers, economists, tech enthusiasts
 title: Define the schema defaults for the article
 topic: FinTech
@@ -256,7 +256,7 @@ prompt: "Generate an outline for the introduction of this article in a structure
        1. Hook
        2. Background Information
        3. Thesis Statement
-       4. Overview of Key Points 
+       4. Overview of Key Points
    - **Customizable Attributes:**
      - **Style:** (Options: Formal, Informal, Academic, Conversational)
      - **Tone:** (Options: Serious, Light-hearted, Professional, Engaging)

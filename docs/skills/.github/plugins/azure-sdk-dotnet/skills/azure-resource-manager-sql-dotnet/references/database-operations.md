@@ -114,7 +114,7 @@ var deletedDatabases = server.GetRestorableDroppedDatabases();
 await foreach (var deleted in deletedDatabases)
 {
     Console.WriteLine($"Deleted: {deleted.Data.DatabaseName} at {deleted.Data.DeletionOn}");
-    
+
     // Restore the deleted database
     var restoreData = new SqlDatabaseData(AzureLocation.EastUS)
     {
@@ -122,12 +122,12 @@ await foreach (var deleted in deletedDatabases)
         RestorableDroppedDatabaseId = deleted.Id,
         Sku = new SqlSku("S0") { Tier = "Standard" }
     };
-    
+
     await databaseCollection.CreateOrUpdateAsync(
         WaitUntil.Completed,
         "restored-deleted-db",
         restoreData);
-    
+
     break; // Restore first one
 }
 ```
@@ -146,12 +146,12 @@ await foreach (var recoverable in recoverableDatabases)
         RecoverableDatabaseId = recoverable.Id,
         Sku = new SqlSku("S0") { Tier = "Standard" }
     };
-    
+
     await targetDatabaseCollection.CreateOrUpdateAsync(
         WaitUntil.Completed,
         "geo-restored-db",
         restoreData);
-    
+
     break;
 }
 ```

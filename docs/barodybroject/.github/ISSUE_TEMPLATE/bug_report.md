@@ -1,4 +1,5 @@
 ---
+
 about: Bug report of a specific issue or glitch
 assignees: bamr87
 labels:
@@ -8,6 +9,8 @@ name: Bug report
 source_file: bug_report.md
 title: Bug Report
 ---
+# Bug Report
+
 **Describe the bug** - A clear and concise description of what the bug is.
 
 Getting an error when ...

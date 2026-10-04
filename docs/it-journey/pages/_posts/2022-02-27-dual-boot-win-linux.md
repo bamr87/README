@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories:
 - posts
@@ -15,6 +16,8 @@ tags:
 - article
 title: 2022 02 27 Dual Boot Win Linux
 ---
+# 2022 02 27 Dual Boot Win Linux
+
 ## VS Code install
 
 ```shell

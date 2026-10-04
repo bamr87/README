@@ -1,7 +1,10 @@
 ---
+
 source_file: sql-functions.md
 title: Sql Functions
 ---
+# Sql Functions
+
 -- ============================================================================= -- SQL Functions for Azure PostgreSQL Entra ID Authentication -- Run these commands after connecting as an Entra admin -- =============================================================================
 
 -- ============================================================================= -- CREATE ROLES -- =============================================================================

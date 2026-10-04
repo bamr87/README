@@ -1,10 +1,13 @@
 ---
+
 gamename: semtex
 layout: default
 level: 0
 source_file: semtex0.md
 title: Semtex0
 ---
+# Semtex0
+
 Get a shell
 -----------
 semtex.labs.overthewire.org

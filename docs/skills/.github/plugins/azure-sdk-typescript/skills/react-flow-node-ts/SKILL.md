@@ -34,7 +34,7 @@ export const MyNode = memo(function MyNode({
 }: MyNodeProps) {
   const updateNode = useAppStore((state) => state.updateNode);
   const canvasMode = useAppStore((state) => state.canvasMode);
-  
+
   return (
     <>
       <NodeResizer isVisible={selected && canvasMode === 'editing'} />

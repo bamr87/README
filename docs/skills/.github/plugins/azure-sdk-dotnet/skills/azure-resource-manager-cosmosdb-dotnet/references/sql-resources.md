@@ -122,20 +122,20 @@ var containerData = new CosmosDBSqlContainerCreateOrUpdateContent(
         {
             Automatic = true,
             IndexingMode = CosmosDBIndexingMode.Consistent,
-            
+
             // Include paths
             IncludedPaths =
             {
                 new CosmosDBIncludedPath { Path = "/*" }
             },
-            
+
             // Exclude paths
             ExcludedPaths =
             {
                 new CosmosDBExcludedPath { Path = "/largeTextField/*" },
                 new CosmosDBExcludedPath { Path = "/_etag/?" }
             },
-            
+
             // Composite indexes for ORDER BY on multiple fields
             CompositeIndexes =
             {
@@ -145,7 +145,7 @@ var containerData = new CosmosDBSqlContainerCreateOrUpdateContent(
                     new() { Path = "/timestamp", Order = CompositePathSortOrder.Descending }
                 }
             },
-            
+
             // Spatial indexes
             SpatialIndexes =
             {
@@ -255,7 +255,7 @@ function bulkDelete(query) {
     var container = context.getCollection();
     var response = context.getResponse();
     var deleted = 0;
-    
+
     var accepted = container.queryDocuments(
         container.getSelfLink(),
         query,
@@ -268,7 +268,7 @@ function bulkDelete(query) {
             response.setBody({ deleted: deleted });
         }
     );
-    
+
     if (!accepted) {
         response.setBody({ deleted: deleted, continuation: true });
     }
@@ -304,11 +304,11 @@ function validateDocument() {
     var context = getContext();
     var request = context.getRequest();
     var doc = request.getBody();
-    
+
     if (!doc.createdAt) {
         doc.createdAt = new Date().toISOString();
     }
-    
+
     request.setBody(doc);
 }",
         TriggerType = CosmosDBSqlTriggerType.Pre,

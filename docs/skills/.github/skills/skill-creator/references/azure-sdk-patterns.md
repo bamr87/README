@@ -183,7 +183,7 @@ namespace Azure.Data.Configuration
 {
     // Service client with Client suffix
     public class ConfigurationClient { }
-    
+
     // Options class
     public class ConfigurationClientOptions : ClientOptions { }
 }
@@ -245,7 +245,7 @@ public class ConfigurationClient
 {
     // Protected parameterless constructor for mocking
     protected ConfigurationClient() { }
-    
+
     // Virtual methods for mocking
     public virtual Response<ConfigurationSetting> GetSetting(string key);
 }
@@ -320,7 +320,7 @@ client.listSettings()
 
 ```java
 // Sync
-SyncPoller<OperationResult, AnalyzeResult> poller = 
+SyncPoller<OperationResult, AnalyzeResult> poller =
     client.beginAnalyze(document);
 poller.waitForCompletion();
 AnalyzeResult result = poller.getFinalResult();
@@ -346,10 +346,10 @@ client.beginAnalyze(document)
 ```java
 @ServiceClient(builder = ConfigurationClientBuilder.class)
 public final class ConfigurationClient {
-    
+
     @ServiceMethod(returns = ReturnType.SINGLE)
     public ConfigurationSetting getSetting(String key) { }
-    
+
     @ServiceMethod(returns = ReturnType.COLLECTION)
     public PagedIterable<ConfigurationSetting> listSettings() { }
 }

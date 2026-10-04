@@ -282,8 +282,8 @@ The instructions embody IT-Journey's core development principles:
 
 ---
 
-**Created**: 2025-11-18  
-**Author**: IT-Journey AI Assistant (Bash-It)  
+**Created**: 2025-11-18
+**Author**: IT-Journey AI Assistant (Bash-It)
 **Purpose**: Document the creation and usage of comprehensive scripts standards
 
 

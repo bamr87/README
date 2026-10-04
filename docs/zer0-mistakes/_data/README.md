@@ -246,11 +246,11 @@ en:
   skip_links: "Skip to main content"
   menu_label: "Menu"
   search_label: "Search"
-  
+
   # Content
   read_more: "Read more"
   table_of_contents: "Table of Contents"
-  
+
   # Statistics
   stats_total_posts: "Total Posts"
   stats_published: "Published"
@@ -278,7 +278,7 @@ Defines prerequisites for tutorials and educational content.
   description: "Understanding commits, branches, and basic git workflow"
   level: beginner
   category: version-control
-  
+
 - id: docker-fundamentals
   title: "Docker Container Fundamentals"
   description: "Understanding containers, images, and Docker CLI"

@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - notes
@@ -24,6 +25,8 @@ tags:
 title: 2024 05 14 Side Bar Folders
 type: default
 ---
+# 2024 05 14 Side Bar Folders
+
 ## All Notes Section
 
 {% assign root_folder = site.collections | where: "label", page.collection | first %}

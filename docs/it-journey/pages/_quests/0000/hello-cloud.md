@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -91,6 +92,8 @@ validation_criteria:
   - Can authenticate via cloud CLI
   - Can provision and destroy basic cloud resources
 ---
+# Hello Cloud
+
 *Welcome, skybound adventurer! You stand at the edge of the mortal realm, gazing up at the shimmering **Sky Realm** — a vast kingdom of infinite compute power, boundless storage vaults, and magical services that can scale from a whisper to a thunderclap. Today, you claim your first foothold in the clouds.*
 
 *But beware: the Sky Realm's resources carry a cost. Careless adventurers have been bankrupted by forgotten resources left running in the mist. This quest teaches you to explore safely, provision wisely, and always clean up after your experiments.*

@@ -17,7 +17,7 @@ title: ⚡ [Category] Quick Actions
 ---
 # ⚡ [Category] Quick Actions
 
-> **Total Time Investment**: [estimate] | **Expected Impact**: [outcome]  
+> **Total Time Investment**: [estimate] | **Expected Impact**: [outcome]
 > **Target Completion**: [date]
 
 ---
@@ -188,9 +188,9 @@ title: ⚡ [Category] Quick Actions
 
 ---
 
-**Next Action**: Start with Task #1 - [Task Name]  
-**Estimated Completion**: [date]  
-**Owner**: IT-Journey Team  
+**Next Action**: Start with Task #1 - [Task Name]
+**Estimated Completion**: [date]
+**Owner**: IT-Journey Team
 **Last Updated**: YYYY-MM-DD
 
 ---

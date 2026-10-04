@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-22T00:00:00.000Z'
 level: '1001'
@@ -16,6 +17,8 @@ theme: Kubernetes Orchestration
 tier: Warrior
 title: 2026 07 22 System Engineer 1001
 ---
+# 2026 07 22 System Engineer 1001
+
 ## 🎯 Session Summary
 
 I walked the second window (quests 6–9) of the **System Engineer · Level 1001 "Kubernetes Orchestration"** slice as a learner: four `main_quest` pages, three 🔴 Hard and one 🟡 Medium. The machine evidence (execute mode, real `kubectl` against a live `kind` cluster) landed at **avg 71.8%** — **2 pass, 2 fail**. The conceptual teaching across the whole slice is genuinely strong (safety scored 5/5 everywhere, content accuracy 3–5), but **both Hard Kubernetes quests fail on their own advertised "prove it" commands**, and a linear beginner *will* get stuck at them without fixes.

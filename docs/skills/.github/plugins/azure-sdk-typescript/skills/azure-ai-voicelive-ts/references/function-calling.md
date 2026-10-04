@@ -117,7 +117,7 @@ const subscription = session.subscribe({
 
     // Execute function based on name
     let result: string;
-    
+
     switch (event.name) {
       case "get_weather":
         result = await getWeather(args.location, args.unit ?? "celsius");
@@ -281,7 +281,7 @@ async function startAssistant() {
   const subscription = session.subscribe({
     onResponseFunctionCallArgumentsDone: async (event, context) => {
       console.log(`Executing: ${event.name}`);
-      
+
       try {
         const args = JSON.parse(event.arguments);
         const result = await handleFunctionCall(event.name, args);
@@ -328,11 +328,11 @@ const subscription = session.subscribe({
   // Arguments arrive in chunks
   onResponseFunctionCallArgumentsDelta: async (event, context) => {
     const callId = event.callId;
-    
+
     if (!pendingCalls.has(callId)) {
       pendingCalls.set(callId, { name: event.name ?? "", arguments: "" });
     }
-    
+
     const pending = pendingCalls.get(callId)!;
     if (event.name) {
       pending.name = event.name;
@@ -379,7 +379,7 @@ let pendingCount = 0;
 const subscription = session.subscribe({
   onResponseFunctionCallArgumentsDone: async (event, context) => {
     pendingCount++;
-    
+
     // Start function execution (don't await)
     const resultPromise = handleFunctionCall(
       event.name,
@@ -403,7 +403,7 @@ const subscription = session.subscribe({
     }
 
     pendingCalls.clear();
-    
+
     // Trigger response generation after all results sent
     await session.sendEvent({ type: "response.create" });
   },
@@ -427,7 +427,7 @@ const subscription = session.subscribe({
     } catch (error) {
       // Send error message so assistant can respond appropriately
       const errorMessage = error instanceof Error ? error.message : String(error);
-      
+
       await session.addConversationItem({
         type: "function_call_output",
         callId: event.callId,

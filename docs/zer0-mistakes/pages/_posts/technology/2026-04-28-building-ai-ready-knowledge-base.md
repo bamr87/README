@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -19,6 +20,8 @@ tags:
 - search
 title: 2026 04 28 Building Ai Ready Knowledge Base
 ---
+# 2026 04 28 Building Ai Ready Knowledge Base
+
 AI tools become more useful when they can retrieve accurate, current, well-structured information. Most organizations already have the raw material: PDFs, wiki pages, support tickets, manuals, spreadsheets, and chat threads. The hard part is turning that material into a knowledge base an AI system can trust.
 
 ## Start With Questions, Not Files

@@ -166,7 +166,7 @@ The AI analysis provides:
 The v3.0 tool at `scripts/validation/link-checker.py` is designed for extensibility:
 
 **Custom Engines**: Add new link checking engines beyond lychee/curl
-**Enhanced AI Analysis**: Extend OpenAI/Anthropic prompts and analysis categories  
+**Enhanced AI Analysis**: Extend OpenAI/Anthropic prompts and analysis categories
 **Additional Outputs**: Create new report formats and destinations **Integration Points**: Connect with external monitoring systems
 
 ### Local Development
@@ -291,4 +291,4 @@ Testing improvements are always welcome:
 
 ---
 
-*The test directory embodies the IT-Journey commitment to quality, education, and automation - ensuring that every learner has access to reliable, up-to-date educational resources while providing real-world examples of modern testing practices.* 
+*The test directory embodies the IT-Journey commitment to quality, education, and automation - ensuring that every learner has access to reliable, up-to-date educational resources while providing real-world examples of modern testing practices.*

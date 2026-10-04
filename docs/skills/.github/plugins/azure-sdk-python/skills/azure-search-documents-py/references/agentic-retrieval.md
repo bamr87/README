@@ -185,12 +185,12 @@ def ask(question: str) -> str:
     request = KnowledgeBaseRetrievalRequest(
         intents=[KnowledgeRetrievalSemanticIntent(search=question)]
     )
-    
+
     result = client.retrieve(
         knowledge_base_name="my-knowledge-base",
         retrieval_request=request,
     )
-    
+
     # Extract response
     response_text = "\n\n".join(
         content.text
@@ -198,7 +198,7 @@ def ask(question: str) -> str:
         for content in (resp.content or [])
         if hasattr(content, "text")
     )
-    
+
     return response_text
 ```
 

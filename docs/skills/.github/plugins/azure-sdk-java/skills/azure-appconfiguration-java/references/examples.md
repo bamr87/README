@@ -572,7 +572,7 @@ System.out.println("Retention: " + snapshot.getRetentionPeriod());
 ### List Settings in Snapshot
 
 ```java
-PagedIterable<ConfigurationSetting> settings = 
+PagedIterable<ConfigurationSetting> settings =
     client.listConfigurationSettingsForSnapshot("release-v1.0");
 
 System.out.println("=== Settings in Snapshot ===");
@@ -678,7 +678,7 @@ try {
     System.err.println("Setting not found");
 } catch (HttpResponseException e) {
     int statusCode = e.getResponse().getStatusCode();
-    
+
     switch (statusCode) {
         case 401:
             System.err.println("Unauthorized - check credentials");
@@ -713,10 +713,10 @@ import com.azure.identity.DefaultAzureCredentialBuilder;
 import java.util.*;
 
 public class AppConfigurationManager {
-    
+
     private final ConfigurationClient client;
     private final String environment;
-    
+
     public AppConfigurationManager(String environment) {
         this.client = new ConfigurationClientBuilder()
             .endpoint(System.getenv("AZURE_APPCONFIG_ENDPOINT"))
@@ -724,7 +724,7 @@ public class AppConfigurationManager {
             .buildClient();
         this.environment = environment;
     }
-    
+
     public String getSetting(String key) {
         try {
             ConfigurationSetting setting = client.getConfigurationSetting(key, environment);
@@ -739,20 +739,20 @@ public class AppConfigurationManager {
             }
         }
     }
-    
+
     public void setSetting(String key, String value) {
         client.setConfigurationSetting(key, environment, value);
     }
-    
+
     public boolean isFeatureEnabled(String featureId) {
         try {
             String key = ".appconfig.featureflag/" + featureId;
             ConfigurationSetting setting = client.getConfigurationSetting(key, environment);
-            
+
             if (setting instanceof FeatureFlagConfigurationSetting) {
                 return ((FeatureFlagConfigurationSetting) setting).isEnabled();
             }
-            
+
             // Try without label
             setting = client.getConfigurationSetting(key, null);
             if (setting instanceof FeatureFlagConfigurationSetting) {
@@ -763,10 +763,10 @@ public class AppConfigurationManager {
         }
         return false;
     }
-    
+
     public void setFeatureEnabled(String featureId, boolean enabled) {
         String key = ".appconfig.featureflag/" + featureId;
-        
+
         try {
             FeatureFlagConfigurationSetting flag = (FeatureFlagConfigurationSetting)
                 client.getConfigurationSetting(key, environment);
@@ -779,63 +779,63 @@ public class AppConfigurationManager {
             client.addConfigurationSetting(newFlag);
         }
     }
-    
+
     public Map<String, String> getAllSettings(String prefix) {
         Map<String, String> result = new HashMap<>();
-        
+
         SettingSelector selector = new SettingSelector()
             .setKeyFilter(prefix + "*")
             .setLabelFilter(environment);
-        
+
         PagedIterable<ConfigurationSetting> settings = client.listConfigurationSettings(selector);
-        
+
         for (ConfigurationSetting setting : settings) {
-            if (!(setting instanceof FeatureFlagConfigurationSetting) 
+            if (!(setting instanceof FeatureFlagConfigurationSetting)
                 && !(setting instanceof SecretReferenceConfigurationSetting)) {
                 result.put(setting.getKey(), setting.getValue());
             }
         }
-        
+
         return result;
     }
-    
+
     public void createSnapshot(String snapshotName, String keyPrefix) {
         List<ConfigurationSettingsFilter> filters = new ArrayList<>();
         filters.add(new ConfigurationSettingsFilter(keyPrefix + "*")
             .setLabel(environment));
-        
+
         var poller = client.beginCreateSnapshot(snapshotName, new ConfigurationSnapshot(filters), null);
         poller.waitForCompletion();
-        
+
         ConfigurationSnapshot snapshot = poller.getFinalResult();
-        System.out.printf("Snapshot '%s' created with %d items%n", 
+        System.out.printf("Snapshot '%s' created with %d items%n",
             snapshot.getName(), snapshot.getItemCount());
     }
-    
+
     public static void main(String[] args) {
         AppConfigurationManager config = new AppConfigurationManager("Production");
-        
+
         // Set some configuration
         config.setSetting("app/database/timeout", "30000");
         config.setSetting("app/cache/ttl", "3600");
-        
+
         // Get configuration
         String timeout = config.getSetting("app/database/timeout");
         System.out.println("Database timeout: " + timeout);
-        
+
         // Feature flags
         config.setFeatureEnabled("dark-mode", true);
-        
+
         if (config.isFeatureEnabled("dark-mode")) {
             System.out.println("Dark mode is enabled");
         }
-        
+
         // Get all app settings
         Map<String, String> appSettings = config.getAllSettings("app/");
         System.out.println("\n=== All App Settings ===");
-        appSettings.forEach((key, value) -> 
+        appSettings.forEach((key, value) ->
             System.out.printf("%s = %s%n", key, value));
-        
+
         // Create a snapshot for release
         config.createSnapshot("release-" + System.currentTimeMillis(), "app/");
     }

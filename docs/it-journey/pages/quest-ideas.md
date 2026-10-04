@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - quests
@@ -25,6 +26,8 @@ tags:
 title: Quest Ideas
 toc: false
 ---
+# Quest Ideas
+
 <link rel="stylesheet" href="{{ '/assets/css/quest-idea-portal.css' | relative_url }}">
 
 <div id="quest-idea-portal" class="container my-4"

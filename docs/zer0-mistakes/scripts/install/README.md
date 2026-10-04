@@ -79,7 +79,7 @@ The spec schema is defined in `ai/prompts/spec.schema.json`. The AI is constrain
 
 This installer runs on macOS's `/bin/bash` (3.2). Restrictions:
 - No `declare -A` (associative arrays)
-- No `=~` capture groups  
+- No `=~` capture groups
 - No `mapfile`/`readarray`
 - Source guards (`[[ -n "${_HAS_FOO:-}" ]] && return 0`) on every module
 - Modules do not `set -euo pipefail` or call `exit` (caller does)

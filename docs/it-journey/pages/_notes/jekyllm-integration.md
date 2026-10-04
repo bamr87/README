@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - notes
@@ -21,6 +22,8 @@ tags:
 - ai-integration
 title: Jekyllm Integration
 ---
+# Jekyllm Integration
+
 Let's dive deeper into how you might implement some of these ideas:
 
 1. **Automated Content Generation**:

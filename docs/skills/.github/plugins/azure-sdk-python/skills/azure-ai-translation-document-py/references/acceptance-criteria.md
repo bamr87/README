@@ -371,7 +371,7 @@ async def translate_documents():
                 )
             ]
         )
-        
+
         result = await poller.result()
         return result
 

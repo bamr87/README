@@ -1111,6 +1111,7 @@ nav:
                           - "A site the Grok path actually built, from an empty folder": zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md
           - "Gem Automation Scripts":
               - "Gem Automation Scripts": zer0-mistakes/scripts/README.md
+              - "Release Script Libraries": zer0-mistakes/scripts/lib/README.md
               - "scripts/ai — companions to the fleet's ai-runner kit": zer0-mistakes/scripts/ai/README.md
               - "scripts/install/ — Modular Installer v2":
                   - "scripts/install/ — Modular Installer v2": zer0-mistakes/scripts/install/README.md

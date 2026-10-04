@@ -270,15 +270,15 @@ Practical tutorials, deep-dive technical articles, AI-assisted development chron
 
 {% assign stats = site.data.content_statistics %}
 {% if stats %}
-**Total Posts:** {{ stats.total_posts | default: "70+" }} articles  
-**Categories:** {{ stats.category_count | default: "10+" }} major domains  
-**Published:** {{ stats.published | default: "50+" }} posts  
-**Date Range:** {{ stats.date_range.earliest | default: "2021" }}-{{ stats.date_range.latest | default: "2025" }}  
+**Total Posts:** {{ stats.total_posts | default: "70+" }} articles
+**Categories:** {{ stats.category_count | default: "10+" }} major domains
+**Published:** {{ stats.published | default: "50+" }} posts
+**Date Range:** {{ stats.date_range.earliest | default: "2021" }}-{{ stats.date_range.latest | default: "2025" }}
 
 *Last updated: {{ stats.generated_at | date: "%B %d, %Y" | default: "Recently" }}*
 {% else %}
 - **Total Posts**: 70+ technical articles
-- **Categories**: 10+ major domains  
+- **Categories**: 10+ major domains
 - **Date Range**: 2021-2025
 - **Platforms**: macOS, Windows, Linux coverage
 {% endif %}

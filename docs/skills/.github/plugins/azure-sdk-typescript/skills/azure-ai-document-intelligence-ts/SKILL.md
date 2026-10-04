@@ -160,7 +160,7 @@ const receipt = result.analyzeResult?.documents?.[0];
 if (receipt) {
   console.log("Merchant:", receipt.fields?.MerchantName?.content);
   console.log("Total:", receipt.fields?.Total?.content);
-  
+
   for (const item of receipt.fields?.Items?.values || []) {
     console.log("Item:", item.properties?.Description?.content);
     console.log("Price:", item.properties?.TotalPrice?.content);

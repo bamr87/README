@@ -236,23 +236,23 @@ df.info()
 
     📋 Dataset Information:
     Shape: 98 rows × 8 columns
-    
+
     Column names: ['date', 'product', 'category', 'quantity', 'unit_price', 'revenue', 'region', 'salesperson']
-    
+
     ============================================================
     <class 'pandas.DataFrame'>
     RangeIndex: 98 entries, 0 to 97
     Data columns (total 8 columns):
-     #   Column       Non-Null Count  Dtype         
-    ---  ------       --------------  -----         
+     #   Column       Non-Null Count  Dtype
+    ---  ------       --------------  -----
      0   date         98 non-null     datetime64[us]
-     1   product      98 non-null     str           
-     2   category     98 non-null     str           
-     3   quantity     98 non-null     int64         
-     4   unit_price   98 non-null     float64       
-     5   revenue      98 non-null     float64       
-     6   region       98 non-null     str           
-     7   salesperson  98 non-null     str           
+     1   product      98 non-null     str
+     2   category     98 non-null     str
+     3   quantity     98 non-null     int64
+     4   unit_price   98 non-null     float64
+     5   revenue      98 non-null     float64
+     6   region       98 non-null     str
+     7   salesperson  98 non-null     str
     dtypes: datetime64[us](1), float64(2), int64(1), str(4)
     memory usage: 6.3 KB
 
@@ -1226,16 +1226,16 @@ print("=" * 60)
     ============================================================
     📊 SALES ANALYSIS SUMMARY
     ============================================================
-    
+
     💰 Total Revenue: $278,323.78
     📦 Total Units Sold: 1,622
     🧾 Number of Transactions: 98
     💵 Average Transaction Value: $2,840.04
-    
+
     🏆 Best Selling Product: Laptop Pro
     🌍 Top Region: North
     ⭐ Top Salesperson: Eve Martinez
-    
+
     📅 Date Range: 2025-01-05 to 2025-09-10
     ============================================================
 

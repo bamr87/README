@@ -20,7 +20,7 @@ try {
     console.log(`Code: ${error.code}`);
     console.log(`Message: ${error.message}`);
     console.log(`Retryable: ${error.retryable}`);
-    
+
     handleServiceBusError(error);
   }
 }
@@ -54,22 +54,22 @@ function handleServiceBusError(error: ServiceBusError): void {
       console.error(`Entity not found: ${error.message}`);
       // Create entity or fix configuration
       break;
-      
+
     case "MessageLockLost":
       console.warn("Message lock lost - will be redelivered");
       // No action needed, message returns to queue
       break;
-      
+
     case "MessageSizeExceeded":
       console.error("Message too large - use claim check pattern");
       // Store payload in blob, send reference
       break;
-      
+
     case "QuotaExceeded":
       console.error("Quota exceeded - namespace is full");
       // Alert ops team, consider cleanup or upgrade
       break;
-      
+
     case "ServiceBusy":
     case "ServiceTimeout":
     case "ServiceCommunicationProblem":
@@ -78,22 +78,22 @@ function handleServiceBusError(error: ServiceBusError): void {
         // SDK handles retry automatically
       }
       break;
-      
+
     case "SessionCannotBeLocked":
       console.warn("Session busy - trying another session");
       // Use acceptNextSession() instead
       break;
-      
+
     case "SessionLockLost":
       console.warn("Session lock lost - re-accepting session");
       // Re-accept the session
       break;
-      
+
     case "UnauthorizedAccess":
       console.error("Authorization failed - check credentials");
       // Verify RBAC roles or connection string
       break;
-      
+
     default:
       console.error(`Unexpected error: ${error.code} - ${error.message}`);
   }
@@ -115,18 +115,18 @@ receiver.subscribe({
     console.error(`Error source: ${args.errorSource}`);
     console.error(`Entity path: ${args.entityPath}`);
     console.error(`Namespace: ${args.fullyQualifiedNamespace}`);
-    
+
     if (args.error instanceof ServiceBusError) {
       console.error(`Code: ${args.error.code}`);
       console.error(`Retryable: ${args.error.retryable}`);
     }
-    
+
     // Error sources:
     // - "receive" - Error receiving messages
     // - "processMessageCallback" - Error in your processMessage handler
     // - "renewLock" - Error renewing message lock
     // - "complete" / "abandon" / "deadLetter" - Settlement errors
-    
+
     switch (args.errorSource) {
       case "receive":
         console.log("Connection issue - SDK will reconnect");
@@ -161,7 +161,7 @@ for (const message of deadLetters) {
   console.log(`Original body: ${JSON.stringify(message.body)}`);
   console.log(`Delivery count: ${message.deliveryCount}`);
   console.log(`Enqueued time: ${message.enqueuedTimeUtc}`);
-  
+
   // Analyze and fix the issue
   if (canReprocess(message)) {
     // Resend to main queue
@@ -169,7 +169,7 @@ for (const message of deadLetters) {
     await sender.sendMessages({ body: message.body });
     await sender.close();
   }
-  
+
   // Remove from DLQ
   await dlqReceiver.completeMessage(message);
 }
@@ -213,19 +213,19 @@ const subscription = receiver.subscribe({
 // Graceful shutdown handler
 async function shutdown(): Promise<void> {
   console.log("Shutting down...");
-  
+
   // 1. Stop receiving new messages
   await subscription.close();
-  
+
   // 2. Close receiver (waits for in-flight messages)
   await receiver.close();
-  
+
   // 3. Close sender (waits for pending sends)
   await sender.close();
-  
+
   // 4. Close client last
   await client.close();
-  
+
   console.log("Shutdown complete");
 }
 
@@ -335,16 +335,16 @@ Design for at-least-once delivery:
 receiver.subscribe({
   processMessage: async (message) => {
     const messageId = message.messageId;
-    
+
     // Check if already processed (use database, Redis, etc.)
     if (await isAlreadyProcessed(messageId)) {
       console.log(`Duplicate message: ${messageId}`);
       return; // Message will be completed
     }
-    
+
     // Process message
     await processOrder(message.body);
-    
+
     // Mark as processed
     await markAsProcessed(messageId);
   },
@@ -362,7 +362,7 @@ receiver.subscribe({
     // Check delivery count
     if (message.deliveryCount > 5) {
       console.warn(`Message ${message.messageId} failed ${message.deliveryCount} times`);
-      
+
       // Dead letter with reason
       await receiver.deadLetterMessage(message, {
         deadLetterReason: "MaxRetriesExceeded",
@@ -370,7 +370,7 @@ receiver.subscribe({
       });
       return;
     }
-    
+
     try {
       await processMessage(message.body);
     } catch (error) {

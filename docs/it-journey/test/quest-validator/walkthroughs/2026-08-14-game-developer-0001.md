@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-08-14T00:00:00.000Z'
 level: '0001'
@@ -16,6 +17,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 14 Game Developer 0001
 ---
+# 2026 08 14 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 26 quests) of the **Game Developer → Level 0001 "Web Fundamentals" (🌱 Apprentice)** slice as a beginner learner would, in plan order, using the sealed execute-engine evidence (`walk-evidence.json`) plus a close read of every quest source. The window is a mixed bag that trends downward: two genuinely strong quests (**Bootstrap 94%**, **CSS Styling Basics 82%**), one flawed-but-usable quest (**Advanced Markdown 63%**), and **two failing quests** (**Barodybroject Stack Analysis 46%**, **Building & Testing the Git Init Shell Script 25%**). Engine average **62.0%**.

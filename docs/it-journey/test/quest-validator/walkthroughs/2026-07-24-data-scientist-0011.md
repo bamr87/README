@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-24T13:05:28.000Z'
 level: '0011'
@@ -20,6 +21,8 @@ theme: AI-Assisted Development
 tier: Apprentice
 title: 2026 07 24 Data Scientist 0011
 ---
+# 2026 07 24 Data Scientist 0011
+
 ## 🎯 Session Summary
 
 Walked the four **Level 0011 (AI-Assisted Development)** main quests assigned to the **Data Scientist 📊** path, in planner order, from the sealed execute-mode evidence the workflow gathered (`walk-evidence.json`). Three quests received real per-dimension verdicts (avg **77.3%**): **Summon the Golem** passed cleanly (88), while **Hidden Gem** (67) and **Prompt Crystal** (77) both warn on fixable authoring defects. The fourth, **The PRD Codex**, **was not scored at all** — the engine reached its 40-turn limit mid-run and exited 1, so there is no content verdict to report for it (honest gap, not a fail-on-merit).

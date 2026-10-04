@@ -52,10 +52,10 @@ Agent workflow:
 1. FIRST: Query microsoft-docs MCP
    → Search: "Azure AI Search vector index Python SDK"
    → Get: Current API signatures, required parameters
-   
+
 2. THEN: Load relevant skill
    → azure-search-documents-py
-   
+
 3. FINALLY: Implement
    → Use patterns from skill + current API from docs
 ```
@@ -128,7 +128,7 @@ MCP servers are configured in `.vscode/mcp.json`:
       "args": ["-y", "@anthropic/microsoft-docs-mcp"]
     },
     "context7": {
-      "type": "stdio", 
+      "type": "stdio",
       "command": "npx",
       "args": ["-y", "@anthropic/context7-mcp"]
     },

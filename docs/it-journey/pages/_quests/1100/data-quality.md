@@ -453,8 +453,8 @@ The same idea applies to null rates, value distributions, and freshness - watch 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Bring data-testing discipline back to [ETL Pipeline Design](/quests/1100/etl-pipeline-design/)  
-**🏗️ System Engineer**: Scale checks with [Apache Spark](/quests/1100/apache-spark/)  
+**💻 Software Developer**: Bring data-testing discipline back to [ETL Pipeline Design](/quests/1100/etl-pipeline-design/)
+**🏗️ System Engineer**: Scale checks with [Apache Spark](/quests/1100/apache-spark/)
 **📊 Data Scientist**: Guard model inputs, then advance toward the Machine Learning tier
 
 ## 📚 Resources

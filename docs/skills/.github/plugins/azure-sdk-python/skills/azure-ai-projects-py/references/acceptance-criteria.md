@@ -621,7 +621,7 @@ gpt4_deployments = [
 
 if gpt4_deployments:
     deployment_name = gpt4_deployments[0].name
-    
+
     agent = project_client.agents.create_agent(
         model=deployment_name,
         name="dynamic-agent",
@@ -963,7 +963,7 @@ agent = project_client.agents.create_version(
     agent_name="enterprise-search-agent",
     definition=PromptAgentDefinition(
         model=os.environ["AZURE_AI_MODEL_DEPLOYMENT_NAME"],
-        instructions="""You are a helpful assistant. Always provide citations 
+        instructions="""You are a helpful assistant. Always provide citations
         using format: [message_idx:search_idx source].""",
         tools=[
             AzureAISearchAgentTool(
@@ -1162,7 +1162,7 @@ async def main():
             instructions="You are helpful.",
         )
         print(f"Created agent: {agent.id}")
-        
+
         # Clean up
         await client.agents.delete_agent(agent.id)
 
@@ -1190,30 +1190,30 @@ async def async_conversation():
             name="async-agent",
             instructions="You are a helpful assistant.",
         )
-        
+
         # Create thread
         thread = await client.agents.threads.create()
-        
+
         # Add message
         await client.agents.messages.create(
             thread_id=thread.id,
             role="user",
             content="What is the capital of Japan?",
         )
-        
+
         # Create and process run
         run = await client.agents.runs.create_and_process(
             thread_id=thread.id,
             agent_id=agent.id,
         )
-        
+
         # Get messages
         if run.status == "completed":
             messages = await client.agents.messages.list(thread_id=thread.id)
             async for msg in messages:
                 if msg.role == "assistant":
                     print(f"Response: {msg.content[0].text.value}")
-        
+
         # Clean up
         await client.agents.delete_agent(agent.id)
 
@@ -1227,7 +1227,7 @@ async with AIProjectClient(...) as client:
     connections = client.connections.list()
     async for conn in connections:
         print(f"Connection: {conn.name}")
-    
+
     # List deployments
     deployments = client.deployments.list()
     async for deployment in deployments:
@@ -1242,7 +1242,7 @@ class AsyncHandler(AsyncAgentEventHandler):
     async def on_message_delta(self, delta):
         if delta.text:
             print(delta.text.value, end="", flush=True)
-    
+
     async def on_error(self, data):
         print(f"Error: {data}")
 
@@ -1261,7 +1261,7 @@ import asyncio
 
 async def process_multiple_queries(client, agent_id, queries):
     """Process multiple queries concurrently."""
-    
+
     async def process_query(query):
         thread = await client.agents.threads.create()
         await client.agents.messages.create(
@@ -1279,7 +1279,7 @@ async def process_multiple_queries(client, agent_id, queries):
                 if msg.role == "assistant":
                     return msg.content[0].text.value
         return None
-    
+
     # Process all queries concurrently
     results = await asyncio.gather(*[process_query(q) for q in queries])
     return results
@@ -1558,10 +1558,10 @@ with project_client:
         file_path="./data/sales_data.csv",
         purpose=FilePurpose.AGENTS,
     )
-    
+
     # Create agent with code interpreter
     code_interpreter = CodeInterpreterTool()
-    
+
     agent = project_client.agents.create_version(
         agent_name="data-analyst",
         definition=PromptAgentDefinition(
@@ -1572,7 +1572,7 @@ with project_client:
         ),
         version_label="v1.0",
     )
-    
+
     # Create thread and add message
     thread = project_client.agents.threads.create()
     project_client.agents.messages.create(
@@ -1580,13 +1580,13 @@ with project_client:
         role="user",
         content="Analyze the sales data and create a summary with key insights.",
     )
-    
+
     # Run agent
     run = project_client.agents.runs.create_and_process(
         thread_id=thread.id,
         agent_id=agent.id,
     )
-    
+
     # Get response
     if run.status == "completed":
         messages = project_client.agents.messages.list(thread_id=thread.id)
@@ -1597,7 +1597,7 @@ with project_client:
                         print(content.text.value)
     elif run.status == "failed":
         print(f"Run failed: {run.last_error}")
-    
+
     # Clean up
     project_client.agents.delete_agent(agent.id)
 ```

@@ -180,54 +180,54 @@ jobs:
               console.log('No PR associated with this event — skipping');
               return;
             }
-            
+
             const signals = [];
             let allPassed = true;
-            
+
             // Signal 1: PR body references an issue
             const closesPattern = /closes\s+#\d+/i;
             const refersPattern = /issue\s+#\d+/i;
             const hasRef = closesPattern.test(pr.body || '') || refersPattern.test(pr.body || '');
             signals.push({ name: 'Issue reference in PR body', passed: hasRef });
             if (!hasRef) allPassed = false;
-            
+
             // Signal 2: PR is not a draft
             const notDraft = !pr.draft;
             signals.push({ name: 'PR is ready for review (not draft)', passed: notDraft });
             if (!notDraft) allPassed = false;
-            
+
             // Signal 3: Check required status checks
             const { data: checks } = await github.rest.checks.listForRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
               ref: pr.head.sha,
             });
-            
+
             const testCheck = checks.check_runs.find(c => c.name === 'test');
             const testPassed = testCheck?.conclusion === 'success';
             signals.push({ name: 'Test suite passes', passed: testPassed ?? false });
             if (!testPassed) allPassed = false;
-            
+
             // Report results
-            const statusLines = signals.map(s => 
+            const statusLines = signals.map(s =>
               `${s.passed ? '✅' : '❌'} ${s.name}`
             ).join('\n');
-            
+
             const comment = allPassed
               ? `## 🎉 Task Complete\n\nAll success signals verified:\n${statusLines}`
               : `## ⏳ Task In Progress\n\nSuccess signal status:\n${statusLines}\n\n_Checks will re-run automatically as the task progresses._`;
-            
+
             // Add or update completion comment
             const comments = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: pr.number,
             });
-            
-            const existing = comments.data.find(c => 
+
+            const existing = comments.data.find(c =>
               c.body.includes('Task Complete') || c.body.includes('Task In Progress')
             );
-            
+
             if (existing) {
               await github.rest.issues.updateComment({
                 owner: context.repo.owner,
@@ -243,7 +243,7 @@ jobs:
                 body: comment,
               });
             }
-            
+
             core.setOutput('all_passed', allPassed);
 ```
 

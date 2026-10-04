@@ -27,8 +27,8 @@ dotnet add package Azure.ResourceManager.Redis
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: 1.5.1 (Stable)  
-**API Version**: 2024-11-01  
+**Current Version**: 1.5.1 (Stable)
+**API Version**: 2024-11-01
 **Target Frameworks**: .NET 8.0, .NET Standard 2.0
 
 ## Environment Variables

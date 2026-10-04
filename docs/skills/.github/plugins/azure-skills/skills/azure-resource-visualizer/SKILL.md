@@ -110,7 +110,7 @@ Use [template-architecture.md](./assets/template-architecture.md) as a template 
 
 ### Tool Usage Patterns
 
-1. **Azure MCP Search**: 
+1. **Azure MCP Search**:
    - Use `intent="list resource groups"` to discover resource groups
    - Use `intent="list resources in group"` with group name to get all resources
    - Use `intent="get resource details"` for individual resource analysis

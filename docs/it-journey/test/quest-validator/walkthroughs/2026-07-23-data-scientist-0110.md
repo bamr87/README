@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-23T00:00:00.000Z'
 level: '0110'
@@ -17,6 +18,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 23 Data Scientist 0110
 ---
+# 2026 07 23 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I walked the first window of the **Data Scientist → Level 0110 "Database Mastery"** arc as a learner: five linked `main_quest`s (Database Fundamentals → Data Modeling → SQL Mastery → Database Migrations → Database Security), all built on a single PostgreSQL 16 spine. The sealed execute-engine evidence scored **4 of 5** quests (2 pass, 2 warn) at an average **78.5%**; the fifth, **Database Migrations**, produced **no verdict** — the engine hit the sandbox's `sudo`/`docker` permission walls plus a `rm -rf` denial and ran out of turns (harness limitation, *not* a proven content failure).

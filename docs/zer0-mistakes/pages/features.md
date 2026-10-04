@@ -41,7 +41,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.references %}
       <div class="mt-3">
         <h6 class="text-muted small">References:</h6>
@@ -60,7 +60,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </ul>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -102,7 +102,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.providers %}
       <div class="mt-3">
         <h6 class="text-muted small">Providers:</h6>
@@ -113,7 +113,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </ul>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -157,7 +157,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.features %}
       <div class="mt-3">
         <h6 class="text-muted small">Key Features:</h6>
@@ -168,7 +168,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </ul>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -213,7 +213,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.shortcuts %}
       <div class="mt-3">
         <h6 class="text-muted small">Keyboard Shortcuts:</h6>
@@ -224,7 +224,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </ul>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -269,7 +269,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.diagram_types %}
       <div class="mt-3">
         <h6 class="text-muted small">Supported Diagram Types:</h6>
@@ -280,7 +280,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </div>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -326,7 +326,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         {{ feature.title }}
       </h5>
       <p class="card-text">{{ feature.description | escape }}</p>
-      
+
       {% if feature.features %}
       <div class="mt-3">
         <h6 class="text-muted small">Features:</h6>
@@ -337,7 +337,7 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
         </ul>
       </div>
       {% endif %}
-      
+
       <div class="mt-3">
         <span class="badge bg-primary">{{ feature.id }}</span>
         <span class="badge bg-secondary">v{{ feature.version }}</span>
@@ -513,6 +513,6 @@ Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.f
 
 <div class="alert alert-info mt-5" role="alert">
   <i class="bi bi-info-circle me-2"></i>
-  <strong>Note:</strong> This feature list is automatically generated from <code>_data/features.yml</code>. 
+  <strong>Note:</strong> This feature list is automatically generated from <code>_data/features.yml</code>.
   For the most up-to-date information, see the <a href="https://github.com/bamr87/zer0-mistakes/blob/main/features/features.yml" class="alert-link">features registry on GitHub</a>.
 </div>

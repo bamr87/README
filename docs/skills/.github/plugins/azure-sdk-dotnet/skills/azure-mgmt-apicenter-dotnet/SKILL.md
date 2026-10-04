@@ -22,7 +22,7 @@ dotnet add package Azure.ResourceManager.ApiCenter
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0 (GA)  
+**Current Version**: v1.0.0 (GA)
 **API Version**: 2024-03-01
 
 ## Environment Variables
@@ -116,7 +116,7 @@ ApiCenterApiData apiData = new ApiCenterApiData
     {
         Uri = new Uri("https://example.com/terms")
     },
-    ExternalDocumentation = 
+    ExternalDocumentation =
     {
         new ApiExternalDocumentation
         {
@@ -249,7 +249,7 @@ ResourceIdentifier envResourceId = ApiCenterEnvironmentResource.CreateResourceId
 
 // Get API definition resource ID
 ResourceIdentifier definitionResourceId = ApiCenterApiDefinitionResource.CreateResourceIdentifier(
-    subscriptionId, resourceGroupName, serviceName, workspaceName, 
+    subscriptionId, resourceGroupName, serviceName, workspaceName,
     "orders-api", "v1-0-0", "openapi");
 
 ApiCenterDeploymentData deploymentData = new ApiCenterDeploymentData
@@ -326,7 +326,7 @@ await foreach (ApiCenterApiResource api in workspace.GetApiCenterApis())
     Console.WriteLine($"API: {api.Data.Title}");
     Console.WriteLine($"  Kind: {api.Data.Kind}");
     Console.WriteLine($"  Stage: {api.Data.LifecycleStage}");
-    
+
     // List versions
     await foreach (ApiCenterApiVersionResource version in api.GetApiCenterApiVersions())
     {

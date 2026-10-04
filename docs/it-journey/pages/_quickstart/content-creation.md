@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - quickstart
@@ -36,6 +37,8 @@ tags:
 - markdown
 title: Content Creation
 ---
+# Content Creation
+
 This guide covers **Phase 8** of the [Quick Start](/quickstart/) — creating content across all IT-Journey collection types with proper frontmatter, naming, and organization.
 
 ---

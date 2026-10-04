@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 15
 source_file: bandit15.md
 title: Bandit15
 ---
+# Bandit15
+
 Level Goal
 ----------
 The password for the next level can be retrieved by submitting the password of the current level to **port 30000 on localhost**.

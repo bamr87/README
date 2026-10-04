@@ -10,7 +10,7 @@ comments: false
 date: '2025-03-13T14:00:43.000Z'
 description: Learn how to efficiently set up Django with Git for seamless version
   control and project management in your web development journey.
-difficulty: 🟢 Easy
+difficulty: "\U0001F7E2 Easy"
 draft: false
 estimated_time: 30-60 minutes
 fmContentType: quest
@@ -34,8 +34,8 @@ quest_type: main_quest
 skill_focus: devops
 source_file: django-and-git.md
 tags:
-- Django
-- Git
+- django
+- git
 - how-to
 - python
 - tutorial

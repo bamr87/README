@@ -35,7 +35,7 @@ bamr87/bamr87 is a ✨ special ✨ repository because its `README.md` (this file
 
 <summary>Add this repo as a sub-tree</summary>
 <details>
-   
+
 </details>
 
 ```shell
@@ -124,7 +124,7 @@ graph TD;
 }
 ```
 
-## 3D Model 
+## 3D Model
 
 ```stl
 solid cube_corner

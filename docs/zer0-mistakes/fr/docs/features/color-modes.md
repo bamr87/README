@@ -58,9 +58,9 @@ Bootstrap 5.3+ ajuste automatiquement toutes les couleurs des composants en fonc
 const getPreferredTheme = () => {
   const stored = localStorage.getItem('theme');
   if (stored) return stored;
-  
-  return window.matchMedia('(prefers-color-scheme: dark)').matches 
-    ? 'dark' 
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
     : 'light';
 };
 ```
@@ -79,8 +79,8 @@ const getPreferredTheme = () => {
   const getPreferredTheme = () => {
     const storedTheme = getStoredTheme();
     if (storedTheme) return storedTheme;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches 
-      ? 'dark' 
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
       : 'light';
   };
 

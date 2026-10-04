@@ -135,9 +135,9 @@ try {
   span.setAttribute("component", "worker");
   span.setAttribute("operation.id", "42");
   span.addEvent("processing started");
-  
+
   // Your work here
-  
+
 } catch (error) {
   span.recordException(error as Error);
   span.setStatus({ code: 2, message: (error as Error).message });
@@ -248,10 +248,10 @@ class FilteringSpanProcessor implements SpanProcessor {
   forceFlush(): Promise<void> { return Promise.resolve(); }
   shutdown(): Promise<void> { return Promise.resolve(); }
   onStart(span: Span, context: Context): void {}
-  
+
   onEnd(span: ReadableSpan): void {
     span.attributes["CustomDimension"] = "value";
-    
+
     if (span.kind === SpanKind.INTERNAL) {
       span.spanContext().traceFlags = TraceFlags.NONE;
     }

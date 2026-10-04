@@ -24,28 +24,28 @@ npm install @azure/search-documents @azure/identity
 interface SemanticSearchOptions {
   /** Name of the semantic configuration to use */
   configurationName?: string;
-  
+
   /** Error handling mode: "partial" or "fail" */
   errorMode?: SemanticErrorMode;
-  
+
   /** Max wait time for semantic processing (ms) */
   maxWaitInMilliseconds?: number;
-  
+
   /** Extract answers from documents */
   answers?: QueryAnswer;
-  
+
   /** Extract captions with highlighting */
   captions?: QueryCaption;
-  
+
   /** AI-generated query rewrites */
   queryRewrites?: QueryRewrites;
-  
+
   /** Separate query for semantic reranking */
   semanticQuery?: string;
-  
+
   /** Fields for semantic search */
   semanticFields?: string[];
-  
+
   /** Enable debug info */
   debugMode?: QueryDebugMode;
 }
@@ -109,7 +109,7 @@ const results = await client.search("renewable energy benefits", {
 
 for await (const result of results.results) {
   console.log(`Title: ${result.document.title}`);
-  
+
   // Access captions
   result.captions?.forEach((caption) => {
     console.log(`Caption: ${caption.text}`);
@@ -124,7 +124,7 @@ for await (const result of results.results) {
 interface QueryCaption {
   /** Caption type: "extractive" | "none" */
   captionType: QueryCaptionType;
-  
+
   /** Include highlighting with <em> tags */
   highlight?: boolean;
 }
@@ -167,10 +167,10 @@ if (results.answers && results.answers.length > 0) {
 interface QueryAnswer {
   /** Answer type: "extractive" | "none" */
   answerType: QueryAnswerType;
-  
+
   /** Number of answers to return (1-10) */
   count?: number;
-  
+
   /** Minimum confidence threshold (0-1) */
   threshold?: number;
 }
@@ -218,7 +218,7 @@ const results = await client.search("climate change solutions", {
     captions: { captionType: "extractive", highlight: true },
     answers: { answerType: "extractive", count: 3 },
   },
-  
+
   // Add vector search
   vectorSearchOptions: {
     queries: [
@@ -230,10 +230,10 @@ const results = await client.search("climate change solutions", {
       },
     ],
   },
-  
+
   // Keyword search fields
   searchFields: ["title", "content"],
-  
+
   top: 10,
   select: ["id", "title", "content", "category"],
 });
@@ -296,11 +296,11 @@ const results = await client.search("complex query here", {
   queryType: "semantic",
   semanticSearchOptions: {
     configurationName: "my-config",
-    
+
     // "partial" - Return results without semantic enrichment on failure
     // "fail" - Return error if semantic processing fails
     errorMode: "partial",
-    
+
     // Timeout for semantic processing
     maxWaitInMilliseconds: 5000,
   },

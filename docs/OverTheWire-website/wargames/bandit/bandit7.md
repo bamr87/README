@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 7
 source_file: bandit7.md
 title: Bandit7
 ---
+# Bandit7
+
 Level Goal
 ----------
 The password for the next level is stored **somewhere on the server** and has all of the following properties:

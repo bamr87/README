@@ -104,9 +104,9 @@ _includes/
 ### Carte d'auteur
 
 ```liquid
-{% raw %}{% include components/author-card.html 
-   name=page.author 
-   avatar="/assets/images/avatar.png" 
+{% raw %}{% include components/author-card.html
+   name=page.author
+   avatar="/assets/images/avatar.png"
 %}{% endraw %}
 ```
 
@@ -230,9 +230,9 @@ Consultez [Navigation par barre latérale](/docs/features/sidebar-navigation/) p
 ### Avec paramètres
 
 ```liquid
-{% raw %}{% include components/custom.html 
-   title="My Title" 
-   content="My content" 
+{% raw %}{% include components/custom.html
+   title="My Title"
+   content="My content"
 %}{% endraw %}
 ```
 

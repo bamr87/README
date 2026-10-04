@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-18 00:00:00+00:00
 level: '0001'
@@ -20,6 +21,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 18 Digital Artist 0001
 ---
+# 2026 07 18 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 3 of 6, offset 15) of the **Digital Artist → Level 0001 "Web Fundamentals" (🌱 Apprentice)** path, as sealed by `walk-plan.json`, and read every quest in plan order while consuming the pre-computed execute-mode evidence in `walk-evidence.json`. The engine ran the quests' safe commands for real in a disposable sandbox; I reasoned about the *linked journey* on top of that.

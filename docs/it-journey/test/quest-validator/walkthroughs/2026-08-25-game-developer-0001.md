@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-08-25T00:00:00.000Z'
 level: '0001'
@@ -18,6 +19,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 25 Game Developer 0001
 ---
+# 2026 08 25 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the **last window (5 of 6)** of the **Game Developer → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path, backed by the workflow's sealed execute-mode engine evidence. The level holds **26 quests**; the planner's dependency-sorted window for this slot resolves to exactly **one** quest — `stack-attack` — so this session is a single-quest walkthrough by design, not a curtailed multi-quest run.

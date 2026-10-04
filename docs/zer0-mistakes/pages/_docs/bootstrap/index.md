@@ -129,8 +129,8 @@ If you prefer a public CDN instead of committed vendor files, you can swap the l
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="/">Brand</a>
-    <button class="navbar-toggler" type="button" 
-            data-bs-toggle="collapse" 
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
             data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -162,8 +162,8 @@ If you prefer a public CDN instead of committed vendor files, you can swap the l
 
 ```html
 <!-- Button trigger -->
-<button type="button" class="btn btn-primary" 
-        data-bs-toggle="modal" 
+<button type="button" class="btn btn-primary"
+        data-bs-toggle="modal"
         data-bs-target="#exampleModal">
   Launch demo modal
 </button>
@@ -192,8 +192,8 @@ If you prefer a public CDN instead of committed vendor files, you can swap the l
 
 ```html
 <!-- Button -->
-<button class="btn btn-primary" 
-        data-bs-toggle="offcanvas" 
+<button class="btn btn-primary"
+        data-bs-toggle="offcanvas"
         data-bs-target="#sidebar">
   Open Sidebar
 </button>

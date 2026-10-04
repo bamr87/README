@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-27T00:00:00.000Z'
 level: '1011'
@@ -20,6 +21,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 27 Security Specialist 1011
 ---
+# 2026 07 27 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window (1 of 3, covering 5 of the 12 quests)** of the **Security Specialist** path at **Level 1011 — Security & Compliance (Warrior 🔥)**, in **execute mode** against sealed engine evidence the workflow pre-computed. Two quests pass cleanly (avg **80.4%**, **2 pass / 3 warn / 0 fail**), and the sandbox ran real commands for every quest — the headline verdict is **warn**, not fail: the individual artifacts are largely sound, but three of the five quests have gaps that would stop a real learner from completing the quest's *own* validation.

@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-13T13:11:26.000Z'
 level: '1011'
@@ -18,6 +19,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 13 Security Specialist 1011
 ---
+# 2026 07 13 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 1 of 3, offset 5) of the Security Specialist's Level **1011 — Security & Compliance (Warrior tier)** as a learner, using the sealed machine evidence the workflow pre-computed in `--mode execute` (I did **not** re-run the engine). The window is a bimodal slice: the genuine security line (**Secure Coding**, 82% ✅ and **Threat Modeling**, 91% ✅) is technically sound and its runnable snippets behave as claimed, but the three AI/agentic quests that share the `1011` level code — **Multi-Agent Failure Recovery** (50% ❌), **AI Feature Pipeline Architect** (30% ❌, and `draft: true`), and **The Sealed Evidence** (77% ⚠️) — range from partially-broken to almost-entirely-non-functional when their code is actually executed.

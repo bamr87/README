@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - Quests
@@ -86,6 +87,8 @@ validation_criteria:
   - Demonstrate understanding of GitHub's basic functionality
   - Show ability to interact with repositories and community features
 ---
+# Hello Noob
+
 *Welcome, brave n00b, to the beginning of your legendary IT journey! You stand at the threshold of an incredible adventure where code becomes magic, problems transform into puzzles, and you'll develop superpowers that would seem impossible to your past self.*
 
 *This quest is specifically designed for absolute beginners - those who might not even know what GitHub is yet. That's perfectly okay! Every expert started exactly where you are now.*
@@ -97,20 +100,20 @@ graph TB
     subgraph "Entry Point"
         Start[🌟 Begin Your Journey]
     end
-    
+
     subgraph "Hello n00b Main Quest"
         Main[🏰 Hello n00b]
         Profile[⚔️ GitHub Profile Setup]
         Explore[⚔️ Repository Explorer]
     end
-    
+
     subgraph "Foundation Path Unlocked"
         Character[🏰 Character Building]
         OS[🏰 Operating System Selection]
         Terminal[🏰 Terminal Navigation]
         Computer[🏰 Computer Literacy]
     end
-    
+
     Start --> Main
     Main --> Profile
     Main --> Explore
@@ -118,7 +121,7 @@ graph TB
     Main --> OS
     Main --> Terminal
     Main --> Computer
-    
+
     style Main fill:#87ceeb
     style Profile fill:#ffd700
     style Explore fill:#ffd700
@@ -134,7 +137,7 @@ graph LR
         C --> D[🏰 Development Environment]
         D --> E[🏰 First Project]
     end
-    
+
     style A fill:#87ceeb
     style B fill:#87ceeb
     style C fill:#87ceeb
@@ -211,8 +214,8 @@ Open your web browser and go to: **[github.com](https://github.com)**
 
 You'll see two options:
 
-**Already have an account?** 
-- Click **[Sign in](https://github.com/login)** 
+**Already have an account?**
+- Click **[Sign in](https://github.com/login)**
 - Log in with your existing credentials
 - Skip to Chapter 3
 

@@ -401,8 +401,8 @@ Belonging is the goal beyond diversity: people stay where they feel their contri
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Innovation and R&D](/quests/1111/innovation-rnd/)  
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
+**💻 Software Developer**: Continue to [Innovation and R&D](/quests/1111/innovation-rnd/)
+**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)
 **🛡️ Security Specialist**: Advance to [Career Advancement](/quests/1111/career-advancement/)
 
 ## 📚 Resources

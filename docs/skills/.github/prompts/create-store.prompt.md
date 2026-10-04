@@ -41,8 +41,8 @@ export interface ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Acti
 }
 
 // Combined store type
-export type ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store = 
-  ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}State & 
+export type ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store =
+  ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}State &
   ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Actions;
 
 // Initial state
@@ -56,13 +56,13 @@ const initialState: ${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}S
 export const use${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store = create<${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store>()(
   subscribeWithSelector((set, get) => ({
     ...initialState,
-    
+
     // Add action implementations
-    
+
     setLoading: (loading) => set({ isLoading: loading }),
-    
+
     setError: (error) => set({ error }),
-    
+
     reset: () => set(initialState),
   }))
 );
@@ -90,13 +90,13 @@ function MyComponent() {
   // Select specific state (prevents unnecessary re-renders)
   const value = use${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store((state) => state.value);
   const action = use${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store((state) => state.action);
-  
+
   // Or use multiple selectors
   const { value, action } = use${STORE_NAME.charAt(0).toUpperCase() + STORE_NAME.slice(1)}Store((state) => ({
     value: state.value,
     action: state.action,
   }));
-  
+
   return <button onClick={() => action(newValue)}>Update</button>;
 }
 ```

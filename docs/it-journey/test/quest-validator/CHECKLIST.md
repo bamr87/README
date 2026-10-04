@@ -62,7 +62,7 @@ title: Quest Quality Checklist - Quick Reference
   ```python
   # Good - has "python" specification
   ```
-  
+
   ```
   # Bad - no language specification
   ```

@@ -4,8 +4,8 @@ title: Migration Documentation - v0.2.0
 ---
 # Migration Documentation - v0.2.0
 
-**Version**: 0.2.0  
-**Date**: January 27, 2025  
+**Version**: 0.2.0
+**Date**: January 27, 2025
 **Migration Type**: CMS Removal and Infrastructure Modernization
 
 ## Overview
@@ -74,7 +74,7 @@ python manage.py showmigrations
 #  [X] 0001_initial
 #  [X] 0002_alter_post_content
 #  ...
-# 
+#
 # Note: CMS-related migrations not shown (apps disabled)
 ```
 
@@ -103,9 +103,9 @@ SELECT COUNT(*) FROM parodynews_category;  -- Should match expected categories
 SELECT COUNT(*) FROM auth_user;  -- Should match expected users
 
 -- Check for any broken foreign key constraints
-SELECT 
-    tc.table_name, 
-    tc.constraint_name, 
+SELECT
+    tc.table_name,
+    tc.constraint_name,
     tc.constraint_type
 FROM information_schema.table_constraints tc
 WHERE tc.constraint_type = 'FOREIGN KEY'
@@ -170,13 +170,13 @@ src/parodynews/templates/
     <nav>
         {% show_menu 0 1 100 100 "menu.html" %}
     </nav>
-    
+
     <main>
         {% block content %}
             {% placeholder "content" %}
         {% endblock %}
     </main>
-    
+
     {% render_block "js" %}
 </body>
 </html>
@@ -192,12 +192,12 @@ src/parodynews/templates/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Parody News Generator{% endblock %}</title>
     <meta name="description" content="{% block description %}AI-powered parody news generation{% endblock %}">
-    
+
     <!-- Bootstrap 5.3.3 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    
+
     {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -236,7 +236,7 @@ src/parodynews/templates/
             </div>
         </div>
     </nav>
-    
+
     <!-- Main Content -->
     <main class="container my-4">
         {% if messages %}
@@ -247,10 +247,10 @@ src/parodynews/templates/
                 </div>
             {% endfor %}
         {% endif %}
-        
+
         {% block content %}{% endblock %}
     </main>
-    
+
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container">
@@ -265,7 +265,7 @@ src/parodynews/templates/
             </div>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     {% block extra_js %}{% endblock %}
@@ -318,7 +318,7 @@ src/parodynews/templates/
                         Azure Container Apps deployment active
                     </li>
                 </ul>
-                
+
                 <h4>🎯 Next Steps</h4>
                 <ul>
                     <li>Visit <a href="{% url 'admin:index' %}">Django Admin</a> to manage content</li>
@@ -655,7 +655,7 @@ def health_check(request):
         'static_files': check_static_file_serving(),
         'api': check_api_endpoints(),
     }
-    
+
     if all(status.values()):
         return JsonResponse({'status': 'healthy', 'details': status})
     else:

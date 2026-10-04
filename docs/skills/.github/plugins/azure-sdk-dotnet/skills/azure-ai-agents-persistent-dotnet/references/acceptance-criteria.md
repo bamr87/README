@@ -64,7 +64,7 @@ using Azure.AI.Agents.Persistent;
 using Azure.Identity;
 
 AIProjectClient projectClient = new AIProjectClient(
-    new Uri(endpoint), 
+    new Uri(endpoint),
     new DefaultAzureCredential());
 
 PersistentAgentsClient client = projectClient.GetPersistentAgentsClient();
@@ -223,7 +223,7 @@ await client.Messages.CreateMessageAsync(
 ### 5.2 ✅ CORRECT: List Messages
 ```csharp
 await foreach (PersistentThreadMessage message in client.Messages.GetMessagesAsync(
-    threadId: thread.Id, 
+    threadId: thread.Id,
     order: ListSortOrder.Ascending))
 {
     Console.Write($"{message.Role}: ");
@@ -335,7 +335,7 @@ while (run.Status == RunStatus.Queued || run.Status == RunStatus.InProgress)
 ### 7.1 ✅ CORRECT: Basic Streaming
 ```csharp
 AsyncCollectionResult<StreamingUpdate> stream = client.Runs.CreateRunStreamingAsync(
-    thread.Id, 
+    thread.Id,
     agent.Id
 );
 
@@ -359,7 +359,7 @@ await foreach (StreamingUpdate update in stream)
 ### 7.2 ✅ CORRECT: Streaming with All Update Types
 ```csharp
 AsyncCollectionResult<StreamingUpdate> stream = client.Runs.CreateRunStreamingAsync(
-    thread.Id, 
+    thread.Id,
     agent.Id
 );
 
@@ -438,7 +438,7 @@ do
     await Task.Delay(500);
     run = await client.Runs.GetRunAsync(thread.Id, run.Id);
 
-    if (run.Status == RunStatus.RequiresAction 
+    if (run.Status == RunStatus.RequiresAction
         && run.RequiredAction is SubmitToolOutputsAction submitAction)
     {
         List<ToolOutput> outputs = [];
@@ -454,8 +454,8 @@ do
         run = await client.Runs.SubmitToolOutputsToRunAsync(run, outputs, toolApprovals: null);
     }
 }
-while (run.Status == RunStatus.Queued 
-    || run.Status == RunStatus.InProgress 
+while (run.Status == RunStatus.Queued
+    || run.Status == RunStatus.InProgress
     || run.Status == RunStatus.RequiresAction);
 ```
 

@@ -59,7 +59,7 @@ ForkMe provides flexible forking and cloning options for GitHub repositories, go
 ./forkme.sh --analyze-only owner/repo
 ```
 
-**→ [Full ForkMe Documentation](FORKME/FORKME.md)**  
+**→ [Full ForkMe Documentation](FORKME/FORKME.md)**
 **→ [Quick Reference Card](FORKME/FORKME-QUICK-REFERENCE.md)**
 
 ---
@@ -113,7 +113,7 @@ StashMe saves uncommitted changes across multiple git repositories to remote bac
 | Recover saved work | `./stashme.sh --restore` |
 | Clean up old backups | `./stashme.sh --cleanup` |
 
-**→ [Full StashMe Documentation](STASHME/STASHME.md)**  
+**→ [Full StashMe Documentation](STASHME/STASHME.md)**
 **→ [Quick Reference Card](STASHME/STASHME-QUICK-REFERENCE.md)**
 
 ---

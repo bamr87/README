@@ -63,7 +63,7 @@ var options = new SearchOptions
 };
 
 var results = await searchClient.SearchAsync<Article>(
-    "What are the best practices for cloud security?", 
+    "What are the best practices for cloud security?",
     options);
 
 await foreach (var result in results.Value.GetResultsAsync())
@@ -95,7 +95,7 @@ var results = await searchClient.SearchAsync<Article>("cloud security best pract
 await foreach (var result in results.Value.GetResultsAsync())
 {
     Console.WriteLine($"Title: {result.Document.Title}");
-    
+
     if (result.SemanticSearch?.Captions != null)
     {
         foreach (var caption in result.SemanticSearch.Captions)
@@ -128,7 +128,7 @@ var options = new SearchOptions
 };
 
 var results = await searchClient.SearchAsync<Article>(
-    "What is zero trust security?", 
+    "What is zero trust security?",
     options);
 
 // Check for semantic answers (appear before documents)
@@ -180,7 +180,7 @@ var options = new SearchOptions
 
 // Keyword search + vector search + semantic reranking
 var results = await searchClient.SearchAsync<Article>(
-    "best practices for securing cloud infrastructure", 
+    "best practices for securing cloud infrastructure",
     options);
 ```
 

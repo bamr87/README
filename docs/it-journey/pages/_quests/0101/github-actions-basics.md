@@ -430,8 +430,8 @@ A 2 × 3 grid is six jobs; the `exclude:` above drops one, leaving **five parall
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Testing Integration](/quests/0101/testing-integration/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
+**💻 Software Developer**: Continue to [Testing Integration](/quests/0101/testing-integration/)
+**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

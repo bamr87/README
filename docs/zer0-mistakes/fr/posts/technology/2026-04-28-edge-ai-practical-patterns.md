@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -26,6 +27,8 @@ translated_from_sha: 8a96393b25f7
 translation_of: pages/_posts/technology/2026-04-28-edge-ai-practical-patterns.md
 translation_source_url: /posts/2026/04/28/edge-ai-practical-patterns/
 ---
+# 2026 04 28 Edge Ai Practical Patterns
+
 Toutes les charges de travail d'IA n'ont pas leur place dans un centre de données cloud. Certaines décisions doivent se prendre au plus près du capteur, de la machine, du véhicule ou de la personne. C'est là que l'IA embarquée trouve sa raison d'être.
 
 L'IA embarquée consiste à exécuter des modèles sur des appareils locaux plutôt que d'envoyer chaque requête à une API distante. Le modèle peut être plus petit, mais le produit peut être plus rapide, plus respectueux de la vie privée et plus résilient.

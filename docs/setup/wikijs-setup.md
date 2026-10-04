@@ -277,7 +277,7 @@ The `docs/` directory is mounted as read-only. To integrate:
    ```bash
    # Option 1: Use Wiki.js Git sync
    # Configure in Admin UI
-   
+
    # Option 2: Manual import via API
    # Use Wiki.js GraphQL API for bulk import
    ```
@@ -416,7 +416,7 @@ Install plugins from **Administration** > **Extensions**:
 server {
     listen 80;
     server_name wiki.example.com;
-    
+
     location / {
         proxy_pass http://localhost:3000;
         proxy_set_header Host $host;
@@ -457,6 +457,6 @@ For high-traffic scenarios:
 
 ---
 
-**Version:** 1.0.0  
-**Last Updated:** 2025-12-17  
+**Version:** 1.0.0
+**Last Updated:** 2025-12-17
 **Maintainer:** bamr87

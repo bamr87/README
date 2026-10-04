@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-16T00:00:00.000Z'
 level: '1011'
@@ -20,6 +21,8 @@ theme: Security & Compliance
 tier: Warrior
 title: 2026 07 16 Security Specialist 1011
 ---
+# 2026 07 16 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked a **5-quest rotating window** (window 1 of 3, quests 1–5 of the 12 in `security-specialist` / level `1011` — *Security & Compliance*, Warrior tier 🔥) as a learner, in the dependency-sorted order the planner fixed. Evidence comes from the sealed agentic **execute** engine (commands actually run in a disposable sandbox); I layered the linked-journey reasoning on top by reading each quest source in order.

@@ -161,7 +161,7 @@ var revision = await service.GetApis()
     .CreateOrUpdateAsync(WaitUntil.Completed, "my-api;rev=2", revisionData);
 
 // Make revision current
-await revision.Value.UpdateAsync(WaitUntil.Completed, 
+await revision.Value.UpdateAsync(WaitUntil.Completed,
     new ApiCreateOrUpdateContent { IsCurrent = true });
 ```
 

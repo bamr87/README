@@ -165,7 +165,7 @@ if result.read:
         for line in block.lines:
             print(f"Line: {line.text}")
             print(f"  Bounding polygon: {line.bounding_polygon}")
-            
+
             # Word-level details
             for word in line.words:
                 print(f"  Word: {word.text} (confidence: {word.confidence:.2f})")

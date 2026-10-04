@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Development
@@ -26,6 +27,8 @@ translated_from_sha: af96deac5ec7
 translation_of: pages/_posts/development/2026-04-28-feature-flags-continuous-delivery.md
 translation_source_url: /posts/2026/04/28/feature-flags-continuous-delivery/
 ---
+# 2026 04 28 Feature Flags Continuous Delivery
+
 Les feature flags permettent aux équipes de dissocier le déploiement de la mise en production. Le code peut atteindre la production avant que chaque utilisateur ne le voie, ce qui rend les mises en production plus petites, les déploiements plus sereins et la récupération plus rapide en cas de problème.
 
 Le principe est simple : encapsuler un nouveau comportement derrière une décision à l'exécution, déployer le code en toute sécurité, puis l'activer pour le bon public lorsque l'équipe est prête.

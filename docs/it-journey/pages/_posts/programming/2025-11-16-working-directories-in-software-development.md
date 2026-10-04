@@ -1,4 +1,5 @@
 ---
+
 attachments: ''
 author: IT-Journey Team
 categories:
@@ -51,6 +52,8 @@ validation_methods:
 - Refactor an existing build script to be directory-agnostic and compare behavior.
 - Run the same build pipeline locally and in CI to confirm consistent results.
 ---
+# 2025 11 16 Working Directories In Software Development
+
 ## Introduction
 
 If you ask developers where their app "runs," many will talk about servers, containers, or cloud regions. Far fewer will mention the quiet constant that shapes nearly every command: the **working directory**.

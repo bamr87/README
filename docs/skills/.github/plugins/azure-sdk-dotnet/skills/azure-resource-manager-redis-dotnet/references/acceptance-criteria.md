@@ -395,7 +395,7 @@ var connectionString = $"{cache.Value.Data.HostName}:{cache.Value.Data.SslPort},
     $"password={keys.Value.PrimaryKey}," +
     "ssl=True," +
     "abortConnect=False";
-    
+
 var connection = ConnectionMultiplexer.Connect(connectionString);
 var db = connection.GetDatabase();
 

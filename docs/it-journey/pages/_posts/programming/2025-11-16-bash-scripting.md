@@ -1,4 +1,5 @@
 ---
+
 author: null
 categories:
 - posts
@@ -15,6 +16,8 @@ tags:
 - article
 title: 2025 11 16 Bash Scripting
 ---
+# 2025 11 16 Bash Scripting
+
 ## What is Bash Scripting?
 
 Bash scripting is a method of programming using the Bash shell, which is a Unix shell and command language that runs on the command-line interface (CLI) of many operating systems, including Linux and macOS.

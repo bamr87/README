@@ -1,4 +1,5 @@
 ---
+
 attachments: ''
 author: bamr87
 categories: []
@@ -18,6 +19,8 @@ tags: []
 title: 2024 05 16 Fight With Tools
 type: posts
 ---
+# 2024 05 16 Fight With Tools
+
 ## Fight with Tools
 
 Here is an original set of lyrics inspired by the themes and messages of "Fight With Tools" by Flobots:

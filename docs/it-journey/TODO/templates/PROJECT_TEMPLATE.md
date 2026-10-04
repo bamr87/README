@@ -58,8 +58,8 @@ title: 📁 [Project Name]
 
 ## 🚀 Phase 1: [Phase Name] (Week X)
 
-> **Target**: [What this phase accomplishes]  
-> **Effort**: [time estimate]  
+> **Target**: [What this phase accomplishes]
+> **Effort**: [time estimate]
 > **Status**: 📋 PLANNING
 
 ### 🔴 Critical Tasks
@@ -88,8 +88,8 @@ title: 📁 [Project Name]
 
 ## 🚀 Phase 2: [Phase Name] (Week X)
 
-> **Target**: [What this phase accomplishes]  
-> **Effort**: [time estimate]  
+> **Target**: [What this phase accomplishes]
+> **Effort**: [time estimate]
 > **Status**: ⏳ PENDING
 
 ### Tasks
@@ -107,8 +107,8 @@ title: 📁 [Project Name]
 
 ## 🚀 Phase 3: [Phase Name] (Week X)
 
-> **Target**: [What this phase accomplishes]  
-> **Effort**: [time estimate]  
+> **Target**: [What this phase accomplishes]
+> **Effort**: [time estimate]
 > **Status**: ⏳ PENDING
 
 ### Tasks
@@ -230,10 +230,10 @@ _To be filled as project progresses_
 
 ---
 
-**Status**: 📋 PLANNING  
-**Next Action**: [Specific next step to take]  
-**Owner**: IT-Journey Team  
-**Review Schedule**: [Weekly/Bi-weekly]  
+**Status**: 📋 PLANNING
+**Next Action**: [Specific next step to take]
+**Owner**: IT-Journey Team
+**Review Schedule**: [Weekly/Bi-weekly]
 **Last Updated**: YYYY-MM-DD
 
 ---

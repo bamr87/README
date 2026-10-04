@@ -43,7 +43,7 @@ const blobClient = new BlobServiceClient(
 Your Azure AD app registration needs:
 
 1. **Platform:** Single-page application (SPA)
-2. **Redirect URIs:** 
+2. **Redirect URIs:**
    - `http://localhost:3000` (development)
    - `https://yourapp.com` (production)
 3. **API Permissions:** Configure based on services you're accessing
@@ -110,25 +110,25 @@ try {
 interface InteractiveBrowserCredentialNodeOptions {
   /** Application client ID */
   clientId: string;
-  
+
   /** Azure AD tenant ID */
   tenantId?: string;
-  
+
   /** Redirect URI (must match app registration) */
   redirectUri?: string;
-  
+
   /** Login style: "popup" or "redirect" */
   loginStyle?: "popup" | "redirect";
-  
+
   /** Pre-fill username hint */
   loginHint?: string;
-  
+
   /** Force re-authentication */
   disableAutomaticAuthentication?: boolean;
-  
+
   /** Authority host for sovereign clouds */
   authorityHost?: string;
-  
+
   /** Custom browser customization */
   browserCustomizationOptions?: BrowserCustomizationOptions;
 }
@@ -231,7 +231,7 @@ import { getCredential, login } from "./auth";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
+
   const handleLogin = async () => {
     try {
       await login();
@@ -240,19 +240,19 @@ function App() {
       console.error("Login failed:", error);
     }
   };
-  
+
   const listBlobs = async () => {
     const credential = getCredential();
     const client = new BlobServiceClient(
       "https://myaccount.blob.core.windows.net",
       credential
     );
-    
+
     for await (const container of client.listContainers()) {
       console.log(container.name);
     }
   };
-  
+
   return (
     <div>
       {!isAuthenticated ? (
@@ -268,7 +268,7 @@ function App() {
 ## Error Handling
 
 ```typescript
-import { 
+import {
   InteractiveBrowserCredential,
   AuthenticationRequiredError,
   CredentialUnavailableError
@@ -306,7 +306,7 @@ function logout() {
     `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/logout`
   );
   logoutUrl.searchParams.set("post_logout_redirect_uri", window.location.origin);
-  
+
   window.location.href = logoutUrl.toString();
 }
 ```
@@ -314,9 +314,9 @@ function logout() {
 ## Sovereign Clouds
 
 ```typescript
-import { 
-  InteractiveBrowserCredential, 
-  AzureAuthorityHosts 
+import {
+  InteractiveBrowserCredential,
+  AzureAuthorityHosts
 } from "@azure/identity";
 
 // Azure Government

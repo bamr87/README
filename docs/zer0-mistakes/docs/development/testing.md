@@ -271,10 +271,10 @@ GitHub Actions runs tests on:
 test_something() {
     # Arrange
     local expected="value"
-    
+
     # Act
     local result=$(some_command)
-    
+
     # Assert
     if [[ "$result" == "$expected" ]]; then
         echo "[PASS] Test description"

@@ -211,12 +211,12 @@ from azure.identity.aio import DefaultAzureCredential
 async def upload_file():
     credential = DefaultAzureCredential()
     service = ShareServiceClient(account_url, credential=credential)
-    
+
     share = service.get_share_client("my-share")
     file_client = share.get_file_client("test.txt")
-    
+
     await file_client.upload_file("Hello!")
-    
+
     await service.close()
     await credential.close()
 ```

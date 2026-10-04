@@ -8,7 +8,7 @@ title: 'Acceptance Criteria: azure-keyvault-keys-ts'
 
 This document defines the acceptance criteria for code generated using the `@azure/keyvault-keys` SDK for TypeScript/JavaScript.
 
-**Package:** `@azure/keyvault-keys`  
+**Package:** `@azure/keyvault-keys`
 **Repository:** https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/keyvault/keyvault-keys
 
 ---

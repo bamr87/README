@@ -187,17 +187,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Build site
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
       - run: bundle exec jekyll build
-      
+
       - name: Check links
         run: python3 scripts/link-checker.py --scope website --timeout 30
-      
+
       - name: Lint markdown
         run: |
           npm install -g markdownlint-cli

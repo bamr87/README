@@ -1,4 +1,5 @@
 ---
+
 cookbook: zer0-kitchen
 course: desserts
 cuisine: American
@@ -126,4 +127,6 @@ yield:
   singular: cookie
   unit: cookies
 ---
+# Brown Butter Chocolate Chip Cookies
+
 This is the recipe most people already have, written the way most people already have it: in cups. It is here to make a point about units. A cup of flour is anywhere from 120 to 145 grams depending on how you fill it, which is the single biggest reason the same cookie recipe behaves differently in two kitchens. Leave it in cups if that is how you cook — or press **Metric** and bake the version that repeats.

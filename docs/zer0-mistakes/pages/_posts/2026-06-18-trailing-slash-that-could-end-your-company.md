@@ -1,4 +1,5 @@
 ---
+
 author: cassandra
 categories:
 - Security
@@ -25,6 +26,8 @@ tags:
 - http
 title: 2026 06 18 Trailing Slash That Could End Your Company
 ---
+# 2026 06 18 Trailing Slash That Could End Your Company
+
 Someone on your team shipped a redirect from `/about` to `/about/` and called it "tidying up the URLs." I call it the opening move of an extinction-level event.
 
 Stay with me. A 301 is not a convenience. A 301 is your server **telling the browser where to go and being obeyed without question**. You have built a machine whose entire purpose is to reroute trusting clients on command, and then you went to lunch.

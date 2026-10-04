@@ -18,9 +18,9 @@ title: GH-600 Exam Overview
 ---
 # GH-600 Exam Overview
 
-**Official Name:** Developing in Agentic AI Systems  
-**Certification:** GitHub Copilot Specialist  
-**Passing Score:** 70% (700/1000)  
+**Official Name:** Developing in Agentic AI Systems
+**Certification:** GitHub Copilot Specialist
+**Passing Score:** 70% (700/1000)
 **Format:** Multiple choice, multi-select, scenario-based
 
 ## Domain Weights

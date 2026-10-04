@@ -479,8 +479,8 @@ spec:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
-**🏗️ System Engineer**: Revisit [Pods and Workloads](/quests/1001/k8s-pods-workloads/)  
+**💻 Software Developer**: Continue to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
+**🏗️ System Engineer**: Revisit [Pods and Workloads](/quests/1001/k8s-pods-workloads/)
 **🛡️ Security Specialist**: Study the NetworkPolicy section above closely
 
 ## 📚 Resources

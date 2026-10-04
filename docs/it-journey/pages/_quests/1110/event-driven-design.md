@@ -435,8 +435,8 @@ Choose a key that matches the entity whose order matters (a `user_id`, an `order
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)  
-**🏗️ System Engineer**: Revisit [Microservices Architecture](/quests/1110/microservices-architecture/) with events in mind  
+**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)
+**🏗️ System Engineer**: Revisit [Microservices Architecture](/quests/1110/microservices-architecture/) with events in mind
 **📊 Data Scientist**: Note how an event log is a ready-made stream for analytics
 
 ## 📚 Resources

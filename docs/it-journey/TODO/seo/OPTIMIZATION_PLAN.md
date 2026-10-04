@@ -23,7 +23,7 @@ title: 🚀 IT-Journey SEO Optimization Plan
 
 ## 📊 **Analysis Summary**
 
-**Data Period**: Oct 17 - Nov 13, 2025  
+**Data Period**: Oct 17 - Nov 13, 2025
 **Key Findings**:
 - **Top Performers**: Bashcrawl quest (1.4% CTR), Django Pi guide (2.2% CTR), Jekyll Mermaid docs (1.5% CTR)
 - **High Opportunities**: Nerd Font quest (755 impressions, 0.7% CTR), Bootable macOS (557 impressions, 0.5% CTR)
@@ -46,7 +46,7 @@ title: 🚀 IT-Journey SEO Optimization Plan
 - [ ] **Enhance keywords section**
 - [ ] **Update excerpt for better hook**
 
-#### A2. Bootable macOS Guide (557 impressions, 0.5% CTR) 
+#### A2. Bootable macOS Guide (557 impressions, 0.5% CTR)
 - [ ] **Complete frontmatter overhaul**
   - **File**: `/pages/_posts/2024-03-27-bootable-mac-os.md`
   - **Current**: Minimal frontmatter, null descriptions
@@ -128,7 +128,7 @@ lastmod: [current-date]
   - **Content**: Step-by-step deployment, custom domains, troubleshooting
   - **Estimated Time**: 2 hours to write
 
-#### C1.2 Terminal & Command Line Content  
+#### C1.2 Terminal & Command Line Content
 - [ ] **"Essential Terminal Shortcuts: macOS, Linux & Windows Cheat Sheet"**
   - **File**: `/pages/_docs/terminal/terminal-shortcuts-cheat-sheet.md`
   - **Target Keywords**: "terminal shortcuts", "command line shortcuts", "bash shortcuts"
@@ -163,7 +163,7 @@ lastmod: [current-date]
 - [ ] **Set up Google Search Console** monitoring
 - [ ] **Create SEO dashboard** with key metrics:
   - Click-through rates by page
-  - Average search positions  
+  - Average search positions
   - Impression growth
   - Keyword ranking improvements
 - [ ] **Weekly performance reviews** with data-driven adjustments
@@ -190,7 +190,7 @@ lastmod: [current-date]
 - [ ] Document SEO guidelines
 - [ ] Set up tracking systems
 
-### Week 2: Standardization  
+### Week 2: Standardization
 - [ ] Apply new frontmatter standards to top 20 pages
 - [ ] Complete technical SEO audit
 - [ ] Begin content creation for gaps
@@ -201,7 +201,7 @@ lastmod: [current-date]
 - [ ] Monitor initial performance changes
 
 ### Week 4: Expansion
-- [ ] Complete remaining 2 gap-filling articles  
+- [ ] Complete remaining 2 gap-filling articles
 - [ ] Optimize additional underperforming pages
 - [ ] Analyze early results and adjust strategy
 
@@ -221,7 +221,7 @@ lastmod: [current-date]
 - **Average Position**: Improve by 2-3 positions for target keywords
 - **Organic Traffic**: Target 25% increase over 3-month period
 
-### Secondary KPIs  
+### Secondary KPIs
 - **Time on Page**: Increase by 20% from better title/description alignment
 - **Bounce Rate**: Decrease by 15% from improved user intent matching
 - **Pages per Session**: Increase through better internal linking
@@ -239,7 +239,7 @@ lastmod: [current-date]
 
 ### Required Tools
 - [ ] **Google Search Console** - Performance monitoring
-- [ ] **Google Analytics** - User behavior analysis  
+- [ ] **Google Analytics** - User behavior analysis
 - [ ] **Screaming Frog** - Technical SEO auditing
 - [ ] **Ahrefs/SEMrush** - Keyword research (if available)
 - [ ] **PageSpeed Insights** - Performance monitoring
@@ -257,14 +257,14 @@ lastmod: [current-date]
 ### Potential Issues & Solutions
 - **Risk**: Changes negatively impact existing rankings
   - **Mitigation**: Monitor closely, have rollback plan, make incremental changes
-- **Risk**: Time investment doesn't yield expected returns  
+- **Risk**: Time investment doesn't yield expected returns
   - **Mitigation**: Focus on highest-impact pages first, track ROI per page
 - **Risk**: Content creation quality suffers from speed focus
   - **Mitigation**: Maintain quality standards, use successful content as templates
 
 ### Backup Plans
 - [ ] **Content rollback procedures** for any negative impacts
-- [ ] **Alternative keyword strategies** if primary targets don't perform  
+- [ ] **Alternative keyword strategies** if primary targets don't perform
 - [ ] **Resource reallocation plan** if certain phases take longer than expected
 
 ---
@@ -277,7 +277,7 @@ lastmod: [current-date]
 - **Reduced bounce rates** from better title/description alignment
 - **Increased user engagement** from more targeted content
 
-### Medium-term (3-6 months)  
+### Medium-term (3-6 months)
 - **New content ranking** for target keywords
 - **Domain authority improvements** from enhanced user signals
 - **Featured snippet opportunities** from structured content
@@ -291,8 +291,8 @@ lastmod: [current-date]
 
 ---
 
-**Status**: 📋 PLANNING  
-**Next Action**: Begin Phase 1 optimizations  
-**Owner**: IT-Journey Team  
-**Review Schedule**: Weekly during implementation, monthly thereafter  
+**Status**: 📋 PLANNING
+**Next Action**: Begin Phase 1 optimizations
+**Owner**: IT-Journey Team
+**Review Schedule**: Weekly during implementation, monthly thereafter
 **Last Updated**: 2025-11-14

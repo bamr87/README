@@ -61,10 +61,10 @@ var botData = new BotData(AzureLocation.WestUS2)
 };
 
 ArmOperation<BotResource> operation = await botCollection.CreateOrUpdateAsync(
-    WaitUntil.Completed, 
-    "myBotName", 
+    WaitUntil.Completed,
+    "myBotName",
     botData);
-    
+
 BotResource bot = operation.Value;
 ```
 
@@ -91,7 +91,7 @@ var channelData = new BotChannelData(AzureLocation.WestUS2)
     {
         Properties = new DirectLineChannelProperties()
         {
-            Sites = 
+            Sites =
             {
                 new DirectLineSite("Default Site")
                 {
@@ -140,8 +140,8 @@ await channels.CreateOrUpdateAsync(
 try
 {
     var operation = await botCollection.CreateOrUpdateAsync(
-        WaitUntil.Completed, 
-        botName, 
+        WaitUntil.Completed,
+        botName,
         botData);
 }
 catch (RequestFailedException ex) when (ex.Status == 409)

@@ -29,33 +29,33 @@ title: Rename Directory Utility - Quick Reference
 
 ## Pre-Flight Checklist
 
-✅ Source directory exists  
-✅ Target directory doesn't exist  
-✅ Parent directory has write permissions  
-✅ Related Docker containers are identified  
-✅ Git repository status is checked  
-✅ Uncommitted changes are reviewed  
+✅ Source directory exists
+✅ Target directory doesn't exist
+✅ Parent directory has write permissions
+✅ Related Docker containers are identified
+✅ Git repository status is checked
+✅ Uncommitted changes are reviewed
 
 ## Interactive Prompts
 
 1. **Stop Docker containers?** (if found)
    - Recommended: `yes`
-   
+
 2. **Continue with uncommitted changes?** (if found)
    - Review changes first
    - Commit or stash changes if possible
-   
+
 3. **Create backup?**
    - Recommended: `yes` (especially for important projects)
    - Backup location: `<source>-backup-YYYYMMDD-HHMMSS`
 
 ## What Gets Preserved
 
-✅ Git repository and history  
-✅ File permissions and ownership  
-✅ Directory structure  
-✅ All file contents  
-✅ Hidden files (`.git`, `.env`, etc.)  
+✅ Git repository and history
+✅ File permissions and ownership
+✅ Directory structure
+✅ All file contents
+✅ Hidden files (`.git`, `.env`, etc.)
 
 ## Post-Rename Actions
 
@@ -127,12 +127,12 @@ mv <backup-directory> <source-path>
 
 ## Safety Features
 
-🔒 Won't overwrite existing directories  
-🔒 Checks permissions before proceeding  
-🔒 Preserves git history and configuration  
-🔒 Stops Docker containers to prevent conflicts  
-🔒 Warns about uncommitted changes  
-🔒 Verifies successful rename  
+🔒 Won't overwrite existing directories
+🔒 Checks permissions before proceeding
+🔒 Preserves git history and configuration
+🔒 Stops Docker containers to prevent conflicts
+🔒 Warns about uncommitted changes
+🔒 Verifies successful rename
 
 ## Tips
 

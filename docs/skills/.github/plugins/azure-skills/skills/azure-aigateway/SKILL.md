@@ -134,9 +134,9 @@ Cache similar prompts to reduce costs and latency.
     <inbound>
         <base />
         <!-- Cache lookup with 0.8 similarity threshold -->
-        <azure-openai-semantic-cache-lookup 
-            score-threshold="0.8" 
-            embeddings-backend-id="embeddings-backend" 
+        <azure-openai-semantic-cache-lookup
+            score-threshold="0.8"
+            embeddings-backend-id="embeddings-backend"
             embeddings-backend-auth="system-assigned" />
         <set-backend-service backend-id="{backend-id}" />
     </inbound>
@@ -164,10 +164,10 @@ Limit tokens per minute to control costs and prevent abuse.
         <base />
         <set-backend-service backend-id="{backend-id}" />
         <!-- Limit to 500 tokens per minute per subscription -->
-        <azure-openai-token-limit 
+        <azure-openai-token-limit
             counter-key="@(context.Subscription.Id)"
-            tokens-per-minute="500" 
-            estimate-prompt-tokens="false" 
+            tokens-per-minute="500"
+            estimate-prompt-tokens="false"
             remaining-tokens-variable-name="remainingTokens" />
     </inbound>
 </policies>
@@ -220,10 +220,10 @@ Protect MCP servers and tools with request rate limiting.
     <inbound>
         <base />
         <!-- 10 calls per 60 seconds per IP -->
-        <rate-limit-by-key 
-            calls="10" 
-            renewal-period="60" 
-            counter-key="@(context.Request.IpAddress)" 
+        <rate-limit-by-key
+            calls="10"
+            renewal-period="60"
+            counter-key="@(context.Request.IpAddress)"
             remaining-calls-variable-name="remainingCalls" />
     </inbound>
     <outbound>
@@ -244,9 +244,9 @@ Secure backend access with managed identity instead of API keys.
     <inbound>
         <base />
         <!-- Managed identity auth to Azure OpenAI -->
-        <authentication-managed-identity 
-            resource="https://cognitiveservices.azure.com" 
-            output-token-variable-name="managed-id-access-token" 
+        <authentication-managed-identity
+            resource="https://cognitiveservices.azure.com"
+            output-token-variable-name="managed-id-access-token"
             ignore-error="false" />
         <set-header name="Authorization" exists-action="override">
             <value>@("Bearer " + (string)context.Variables["managed-id-access-token"])</value>
@@ -274,7 +274,7 @@ Distribute load across multiple backends with automatic failover.
     </inbound>
     <backend>
         <!-- Retry on 429 (rate limit) or 503 (service unavailable) -->
-        <retry count="2" interval="0" first-fast-retry="true" 
+        <retry count="2" interval="0" first-fast-retry="true"
             condition="@(context.Response.StatusCode == 429 || context.Response.StatusCode == 503)">
             <set-backend-service backend-id="{backend-pool-id}" />
             <forward-request buffer-request-body="true" />
@@ -479,9 +479,9 @@ az apim api update \
         <base />
         <set-backend-service backend-id="{backend-id}" />
         <!-- Add rate limiting -->
-        <rate-limit-by-key 
-            calls="100" 
-            renewal-period="60" 
+        <rate-limit-by-key
+            calls="100"
+            renewal-period="60"
             counter-key="@(context.Request.IpAddress)" />
     </inbound>
     <outbound>

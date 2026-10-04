@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-13 00:00:00+00:00
 level: '0111'
@@ -17,6 +18,8 @@ theme: API Development
 tier: Adventurer
 title: 2026 07 13 Game Developer 0111
 ---
+# 2026 07 13 Game Developer 0111
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 10 quests) of the **Game Developer → Level 0111 — API Development (⚔️ Adventurer)** slice as a learner, driving the planned quests in dependency order through the sandboxed agentic **execute** engine (evidence sealed by the workflow) and then reasoning about the chain from each quest's source.

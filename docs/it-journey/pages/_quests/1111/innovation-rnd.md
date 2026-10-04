@@ -387,8 +387,8 @@ The hardest leadership act here is **killing a project well**: thanking the team
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🏗️ System Engineer**: Explore [Career Advancement](/quests/1111/career-advancement/)  
+**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)
+**🏗️ System Engineer**: Explore [Career Advancement](/quests/1111/career-advancement/)
 **🛡️ Security Specialist**: Advance to [Technical Leadership](/quests/1111/technical-leadership/)
 
 ## 📚 Resources

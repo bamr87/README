@@ -218,10 +218,10 @@ byte[] md5 = MessageDigest.getInstance("MD5").digest(data.getBytes(StandardChars
 
 try (InputStream dataStream = new ByteArrayInputStream(data.getBytes(StandardCharsets.UTF_8))) {
     blockBlobClient.uploadWithResponse(
-        dataStream, 
-        data.length(), 
-        headers, 
-        metadata, 
+        dataStream,
+        data.length(),
+        headers,
+        metadata,
         null,  // tier
         md5,   // content MD5
         null,  // request conditions
@@ -403,7 +403,7 @@ public class BasicExample {
         }
 
         // List blobs
-        containerClient.listBlobs().forEach(blobItem -> 
+        containerClient.listBlobs().forEach(blobItem ->
             System.out.println("Blob: " + blobItem.getName()));
 
         // Cleanup

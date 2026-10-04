@@ -167,7 +167,7 @@ Answer these questions honestly to begin shaping your IT identity:
 - **What subjects have you always enjoyed?** (Math, art, writing, science, psychology)
 - **What technologies fascinate you most?** (Web development, mobile apps, AI/ML, cybersecurity, cloud computing)
 
-#### Learning Style Recognition  
+#### Learning Style Recognition
 - **How do you learn best?** (Hands-on projects, structured courses, mentorship, self-directed research)
 - **What motivates you to persist through challenges?** (Clear goals, community support, visible progress, real-world impact)
 
@@ -181,7 +181,7 @@ Based on your responses, identify your primary IT archetype:
 - **Personality**: Creative problem-solver, enjoys seeing ideas become reality
 
 #### The Guardian 🛡️
-- **Focus**: Protecting systems, data, and digital infrastructure  
+- **Focus**: Protecting systems, data, and digital infrastructure
 - **Specializations**: Cybersecurity, Network Administration, Compliance
 - **Personality**: Detail-oriented, strategic thinker, proactive protector
 
@@ -217,7 +217,7 @@ Based on your responses, identify your primary IT archetype:
 
 **Character Types**: Builders focused on enterprise solutions, Guardians in corporate environments
 
-#### 🐧 Linux Territory  
+#### 🐧 Linux Territory
 **Strengths**:
 - Preferred in server and development environments
 - Open-source ecosystem with incredible customization
@@ -243,7 +243,7 @@ Based on your responses, identify your primary IT archetype:
 
 **Action Step**: Select your primary operating system based on:
 1. Your chosen IT archetype and specialization
-2. Your comfort level and learning preferences  
+2. Your comfort level and learning preferences
 3. The types of projects you want to work on
 4. Budget and hardware considerations
 
@@ -308,7 +308,7 @@ Choose ONE secondary area to complement your primary focus:
 Choose your primary development environment:
 
 - **Visual Studio Code**: Versatile, extensible, great for web development
-- **IntelliJ IDEA**: Deep refactoring and debugging support for Java and enterprise development  
+- **IntelliJ IDEA**: Deep refactoring and debugging support for Java and enterprise development
 - **PyCharm**: Specialized for Python development
 - **Sublime Text**: Lightweight and fast for various languages
 
@@ -413,7 +413,7 @@ Set up systems to monitor your advancement:
 - [Hello n00b](hello-noob.md) - First steps into IT community
 
 **Follow-Up Quests**:
-- [Character Selection](character-selection.md) - Detailed specialization guidance  
+- [Character Selection](character-selection.md) - Detailed specialization guidance
 - [OS Selection](os-selection.md) - Deep dive into operating system setup
 - [Begin Your IT Journey](begin-your-it-journey.md) - Official journey kickoff
 

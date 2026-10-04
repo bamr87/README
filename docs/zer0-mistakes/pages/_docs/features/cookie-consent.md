@@ -231,8 +231,8 @@ Never require consent for:
 categories:
   analytics:
     description: |
-      We use analytics cookies to understand how you use our site. 
-      This helps us improve your experience. We use PostHog, which 
+      We use analytics cookies to understand how you use our site.
+      This helps us improve your experience. We use PostHog, which
       is privacy-focused and GDPR compliant.
 ```
 

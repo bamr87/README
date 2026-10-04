@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $primary;
   text-decoration: none;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -211,7 +211,7 @@ pre, code {
 .card {
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  
+
   &:hover {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
@@ -234,11 +234,11 @@ Use Bootstrap's breakpoints:
 // Mobile first approach
 .element {
   padding: 1rem;
-  
+
   @include media-breakpoint-up(md) {
     padding: 2rem;
   }
-  
+
   @include media-breakpoint-up(lg) {
     padding: 3rem;
   }

@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - climate adaptation
@@ -28,6 +29,8 @@ tags:
 - infrastructure
 title: 2026 04 28 Urban Resilience Extreme Heat
 ---
+# 2026 04 28 Urban Resilience Extreme Heat
+
 Extreme heat is one of the most immediate climate risks for cities. It strains power grids, increases health emergencies, reduces worker productivity, and affects neighborhoods unevenly.
 
 Urban resilience is the work of preparing before the hottest week of the year arrives.

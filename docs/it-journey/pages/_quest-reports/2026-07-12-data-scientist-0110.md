@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -29,6 +30,8 @@ title: 2026 07 12 Data Scientist 0110
 verdict: warn
 walk_date: '2026-07-12'
 ---
+# 2026 07 12 Data Scientist 0110
+
 > **Slice** `data-scientist/0110` · **Level** 0110 (Database Mastery) · **Adventurer tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-12
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-12-data-scientist-0110.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-12-data-scientist-0110.md)

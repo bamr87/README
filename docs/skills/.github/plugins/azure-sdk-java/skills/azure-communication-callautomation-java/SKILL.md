@@ -192,7 +192,7 @@ import com.azure.communication.callautomation.models.events.*;
 // In your webhook endpoint
 public void handleCallback(String requestBody) {
     List<CallAutomationEventBase> events = CallAutomationEventParser.parseEvents(requestBody);
-    
+
     for (CallAutomationEventBase event : events) {
         if (event instanceof CallConnected) {
             CallConnected connected = (CallConnected) event;

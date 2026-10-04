@@ -133,10 +133,10 @@ def create_item_with_synthetic_key(container, item: dict, num_buckets: int = 10)
     """Add synthetic partition key for better distribution."""
     # Generate bucket from item ID
     bucket = int(hashlib.md5(item["id"].encode()).hexdigest(), 16) % num_buckets
-    
+
     # Combine natural key with bucket
     item["pk"] = f"{item['category']}_{bucket}"
-    
+
     return container.create_item(body=item)
 
 # Example: Distribute "electronics" category across 10 partitions
@@ -158,9 +158,9 @@ def create_event_with_time_bucket(container, event: dict):
     """Partition by device with hourly buckets."""
     timestamp = event.get("timestamp", datetime.utcnow())
     hour_bucket = timestamp.strftime("%Y%m%d%H")
-    
+
     event["pk"] = f"{event['device_id']}_{hour_bucket}"
-    
+
     return container.create_item(body=event)
 
 # Distributes writes across time-based partitions
@@ -186,26 +186,26 @@ def check_partition_metrics(container):
     # Get container properties
     properties = container.read()
     print(f"Container ID: {properties['id']}")
-    
+
     # Get current throughput
     try:
         offer = container.read_offer()
         print(f"Provisioned throughput: {offer.offer_throughput} RU/s")
     except Exception:
         print("Using serverless or database-level throughput")
-    
+
     # Query to check partition key distribution
     query = """
-    SELECT COUNT(1) as count, c.pk 
-    FROM c 
+    SELECT COUNT(1) as count, c.pk
+    FROM c
     GROUP BY c.pk
     """
-    
+
     partition_counts = list(container.query_items(
         query=query,
         enable_cross_partition_query=True
     ))
-    
+
     if partition_counts:
         total = sum(p['count'] for p in partition_counts)
         print(f"\nPartition distribution ({len(partition_counts)} partitions):")
@@ -325,16 +325,16 @@ container = database.create_container_if_not_exists(
 async def post_activity(container, author_id: str, follower_ids: list[str], activity: dict):
     """Fan-out activity to author and all followers."""
     tasks = []
-    
+
     # Author's partition
     author_activity = {**activity, "user_id": author_id, "id": f"{activity['id']}_author"}
     tasks.append(container.create_item(body=author_activity))
-    
+
     # Each follower's partition
     for follower_id in follower_ids:
         follower_activity = {**activity, "user_id": follower_id, "id": f"{activity['id']}_{follower_id}"}
         tasks.append(container.create_item(body=follower_activity))
-    
+
     await asyncio.gather(*tasks)
 ```
 

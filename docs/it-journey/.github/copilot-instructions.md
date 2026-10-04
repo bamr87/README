@@ -310,7 +310,7 @@ learning_objectives:
   - "Apply security best practices for containerized applications"
 target_audience:
   skill_level: "intermediate"
-  prerequisites: 
+  prerequisites:
     - "Basic command line knowledge"
     - "Understanding of software development lifecycle"
     - "Familiarity with version control (Git)"
@@ -357,7 +357,7 @@ Learning Objectives:
   - Configure deployment pipelines
   - Handle secrets and environment variables
 Target Audience: intermediate developers
-Prerequisites: 
+Prerequisites:
   - Git/GitHub experience
   - Basic testing knowledge
   - Understanding of web applications
@@ -778,7 +778,7 @@ main ← feature/login ← (work here)
 6. Merge into `main` via PR
 7. Delete branch after merge
 
-**Pros**: Simple, fast, CI/CD friendly, ideal for continuous deployment  
+**Pros**: Simple, fast, CI/CD friendly, ideal for continuous deployment
 **Cons**: Not ideal for versioned releases (use Git Flow if needed)
 
 **Branch Naming Conventions:**
@@ -1356,19 +1356,19 @@ git cz
 **Complete Lifecycle: From Commit → Deploy → Release**
 
 ```
-[Code Change] 
+[Code Change]
     ↓
-[Branch + Commit] 
+[Branch + Commit]
     ↓
-[PR + Review + CI] 
+[PR + Review + CI]
     ↓
-[Merge → main] 
+[Merge → main]
     ↓
-[Auto Changelog + Version Bump] 
+[Auto Changelog + Version Bump]
     ↓
-[Tag + Release] 
+[Tag + Release]
     ↓
-[Deploy (Staging → Prod)] 
+[Deploy (Staging → Prod)]
     ↓
 [Monitor + Hotfix if needed]
 ```
@@ -1729,28 +1729,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Check for broken links
         run: |
           npm install -g markdown-link-check
           find . -name "*.md" -exec markdown-link-check {} \;
-      
+
       - name: Spell check
         run: |
           npm install -g cspell
           cspell "**/*.md"
-      
+
       - name: Validate OpenAPI
         if: contains(github.event.pull_request.changed_files, 'openapi.yaml')
         run: |
           npm install -g @apidevtools/swagger-cli
           swagger-cli validate docs/api/openapi.yaml
-      
+
       - name: Build Jekyll site
         run: |
           bundle install
           bundle exec jekyll build
-      
+
       - name: Check README frontmatter
         run: |
           python scripts/validate_frontmatter.py
@@ -1834,74 +1834,74 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Lint commit messages
         if: github.event_name == 'pull_request'
         run: |
           npm install -g @commitlint/cli @commitlint/config-conventional
           npx commitlint --from=${{ github.event.pull_request.base.sha }}
-      
+
       - name: Lint code
         run: |
           npm ci
           npm run lint
-      
+
       - name: Check documentation
         run: |
           npm install -g markdown-link-check
           find . -name "*.md" -exec markdown-link-check {} \;
-  
+
   # Job 2: Run tests
   test:
     runs-on: ubuntu-latest
     needs: lint
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Run unit tests
         run: npm test
-      
+
       - name: Run integration tests
         run: npm run test:integration
-      
+
       - name: Upload coverage
         uses: codecov/codecov-action@v3
         with:
           file: ./coverage/coverage-final.json
-  
+
   # Job 3: Build Jekyll site
   build:
     runs-on: ubuntu-latest
     needs: test
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ env.RUBY_VERSION }}
           bundler-cache: true
-      
+
       - name: Build Jekyll site
         run: |
           bundle install
           bundle exec jekyll build
-      
+
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
           name: jekyll-site
           path: _site/
-  
+
   # Job 4: Release (only on main)
   release:
     runs-on: ubuntu-latest
@@ -1911,26 +1911,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Need full history for changelog
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+
       - name: Run standard-version
         run: |
           npm install -g standard-version
           npx standard-version
-      
+
       - name: Push changes and tags
         run: |
           git push --follow-tags origin main
-      
+
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -1938,7 +1938,7 @@ jobs:
           gh release create $(git describe --tags --abbrev=0) \
             --title "$(git describe --tags --abbrev=0)" \
             --notes-file CHANGELOG.md
-  
+
   # Job 5: Deploy (only on main after release)
   deploy:
     runs-on: ubuntu-latest
@@ -1946,13 +1946,13 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: jekyll-site
           path: _site/
-      
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -1979,7 +1979,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Lint commits
         run: |
           npm install -g @commitlint/cli @commitlint/config-conventional
@@ -1998,18 +1998,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Check if docs updated
         run: |
           # Get changed files
           FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
-          
+
           # Check if code changed
           CODE_CHANGED=$(echo "$FILES" | grep -E '\.(js|ts|py|rb)$' || true)
-          
+
           # Check if docs changed
           DOCS_CHANGED=$(echo "$FILES" | grep -E '\.(md|mdx)$|^docs/' || true)
-          
+
           # If code changed but docs didn't, fail
           if [ -n "$CODE_CHANGED" ] && [ -z "$DOCS_CHANGED" ]; then
             echo "::error::Code changed but documentation not updated"

@@ -4,8 +4,8 @@ title: Crush Workflow System Implementation Summary
 ---
 # Crush Workflow System Implementation Summary
 
-**Created**: 2025-11-20  
-**Status**: Functional Core Complete  
+**Created**: 2025-11-20
+**Status**: Functional Core Complete
 **Version**: 1.0.0
 
 ## 🎯 What Was Built
@@ -270,7 +270,7 @@ The workflow system integrates seamlessly with:
 
 1. **Prompt Runner is Mock**: Currently creates placeholder outputs instead of calling Crush AI
    - **Resolution**: Integrate actual Crush API when available
-   
+
 2. **Template Variables Not Fully Resolved**: Simple string replacement only
    - **Resolution**: Implement proper jq/yq-based template engine
 
@@ -381,7 +381,7 @@ This workflow system enables:
 
 ---
 
-**Status**: Core system functional, ready for real-world testing and iteration.  
+**Status**: Core system functional, ready for real-world testing and iteration.
 **Next Milestone**: Integrate real Crush AI execution and test full pipeline end-to-end.
 
 **Questions?** [Open an issue](https://github.com/bamr87/it-journey/issues)

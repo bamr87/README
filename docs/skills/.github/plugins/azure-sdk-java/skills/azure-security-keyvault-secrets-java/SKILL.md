@@ -112,7 +112,7 @@ for (SecretProperties secretProps : secretClient.listPropertiesOfSecrets()) {
     System.out.println("  Enabled: " + secretProps.isEnabled());
     System.out.println("  Created: " + secretProps.getCreatedOn());
     System.out.println("  Content-Type: " + secretProps.getContentType());
-    
+
     // Get value if needed
     if (secretProps.isEnabled()) {
         KeyVaultSecret fullSecret = secretClient.getSecret(secretProps.getName());
@@ -221,14 +221,14 @@ asyncClient.listPropertiesOfSecrets()
 ```java
 public class ConfigLoader {
     private final SecretClient client;
-    
+
     public ConfigLoader(String vaultUrl) {
         this.client = new SecretClientBuilder()
             .vaultUrl(vaultUrl)
             .credential(new DefaultAzureCredentialBuilder().build())
             .buildClient();
     }
-    
+
     public Map<String, String> loadSecrets(List<String> secretNames) {
         Map<String, String> secrets = new HashMap<>();
         for (String name : secretNames) {
@@ -256,11 +256,11 @@ Map<String, String> config = loader.loadSecrets(
 public void rotateSecret(String secretName, String newValue) {
     // Get current secret
     KeyVaultSecret current = secretClient.getSecret(secretName);
-    
+
     // Disable old version
     current.getProperties().setEnabled(false);
     secretClient.updateSecretProperties(current.getProperties());
-    
+
     // Create new version with new value
     KeyVaultSecret newSecret = secretClient.setSecret(secretName, newValue);
     System.out.println("Rotated to version: " + newSecret.getProperties().getVersion());
@@ -326,7 +326,7 @@ AZURE_KEYVAULT_URL=https://<vault-name>.vault.azure.net
 
 ```java
 // Database connection string
-secretClient.setSecret(new KeyVaultSecret("db-connection", 
+secretClient.setSecret(new KeyVaultSecret("db-connection",
     "Server=myserver.database.windows.net;Database=mydb;...")
     .setProperties(new SecretProperties()
         .setContentType("text/plain")
@@ -339,7 +339,7 @@ secretClient.setSecret(new KeyVaultSecret("stripe-api-key", "sk_live_...")
         .setExpiresOn(OffsetDateTime.now().plusYears(1))));
 
 // JSON configuration
-secretClient.setSecret(new KeyVaultSecret("app-config", 
+secretClient.setSecret(new KeyVaultSecret("app-config",
     "{\"endpoint\":\"https://...\",\"key\":\"...\"}")
     .setProperties(new SecretProperties()
         .setContentType("application/json")));

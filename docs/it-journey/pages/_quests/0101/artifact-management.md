@@ -415,8 +415,8 @@ Now a consumer can verify provenance before deploying, closing the door on suppl
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Workflow Optimization](/quests/0101/workflow-optimization/)  
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
+**💻 Software Developer**: Continue to [Workflow Optimization](/quests/0101/workflow-optimization/)
+**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

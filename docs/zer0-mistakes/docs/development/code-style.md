@@ -95,10 +95,10 @@ Coding conventions and best practices for contributing to the Zer0-Mistakes them
 
 ```liquid
 {% raw %}<!-- Pass parameters explicitly -->
-{% include components/alert.html 
-   type="warning" 
-   title="Note" 
-   message="Important information" 
+{% include components/alert.html
+   type="warning"
+   title="Note"
+   message="Important information"
 %}
 
 <!-- In the include, provide defaults -->
@@ -135,11 +135,11 @@ $font-size-small: 0.875rem;
 // Good: Low specificity, reusable classes
 .card {
   padding: $spacing-medium;
-  
+
   &-header {
     font-weight: bold;
   }
-  
+
   &-body {
     margin-top: $spacing-small;
   }
@@ -157,11 +157,11 @@ div.container > section.main article.post .card-header {
 // Mobile-first approach
 .element {
   padding: 1rem;
-  
+
   @include media-breakpoint-up(md) {
     padding: 2rem;
   }
-  
+
   @include media-breakpoint-up(lg) {
     padding: 3rem;
   }
@@ -206,7 +206,7 @@ comments: true
 navigation:
   - title: "Home"
     url: /
-    
+
   - title: "Documentation"
     url: /docs/
     children:
@@ -279,12 +279,12 @@ set -euo pipefail
 #   0 on success, 1 on failure
 do_something() {
     local arg1="$1"
-    
+
     if [[ -z "$arg1" ]]; then
         echo "Error: Missing argument" >&2
         return 1
     fi
-    
+
     # Implementation
     return 0
 }

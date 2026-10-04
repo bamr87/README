@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - hobbies
@@ -12,6 +13,8 @@ sort_by: date
 source_file: home.md
 title: Home
 ---
+# Home
+
 ## Art
 
 ## Cooking

@@ -233,12 +233,12 @@ from azure.ai.projects.models import (
 
 def create_hosted_agent():
     """Create a hosted agent with custom container image."""
-    
+
     client = AIProjectClient(
         endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],
         credential=DefaultAzureCredential()
     )
-    
+
     agent = client.agents.create_version(
         agent_name="data-processor-agent",
         definition=ImageBasedHostedAgentDefinition(
@@ -262,11 +262,11 @@ def create_hosted_agent():
             }
         )
     )
-    
+
     print(f"Created hosted agent: {agent.name}")
     print(f"Version: {agent.version}")
     print(f"State: {agent.state}")
-    
+
     return agent
 
 if __name__ == "__main__":
@@ -287,7 +287,7 @@ from azure.ai.projects.models import (
 
 async def create_hosted_agent_async():
     """Create a hosted agent asynchronously."""
-    
+
     async with DefaultAzureCredential() as credential:
         async with AIProjectClient(
             endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],

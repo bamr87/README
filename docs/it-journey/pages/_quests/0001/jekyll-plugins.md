@@ -460,9 +460,9 @@ After a build, visit `/stats.html` - a page that did not exist as a source file,
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)  
-**🏗️ System Engineer**: Explore building beyond the whitelist with Actions  
-**🎨 Frontend Specialist**: Revisit [SEO Optimization](/quests/0001/seo-optimization/)  
+**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)
+**🏗️ System Engineer**: Explore building beyond the whitelist with Actions
+**🎨 Frontend Specialist**: Revisit [SEO Optimization](/quests/0001/seo-optimization/)
 
 ## 📚 Resources
 

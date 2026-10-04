@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - Posts
@@ -35,6 +36,8 @@ tags:
 title: 2023 12 04 Robots Txt Jekyll
 type: Article
 ---
+# 2023 12 04 Robots Txt Jekyll
+
 A `robots.txt` file is used to instruct web robots (typically search engine robots) which pages on your website to crawl and which not to. Here's an example of a `robots.txt` file that you might use for a Jekyll site:
 
 ```plaintext

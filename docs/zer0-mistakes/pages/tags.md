@@ -1,4 +1,5 @@
 ---
+
 description: Browse all tags and discover content by topic
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
@@ -6,6 +7,8 @@ permalink: /tags/
 source_file: tags.md
 title: Tags
 ---
+# Tags
+
 <!--
   ===================================================================
   TAGS INDEX PAGE - Browse all tags
@@ -60,7 +63,7 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
       {% else %}
         {% assign badge_class = "" %}
       {% endif %}
-      <a href="#{{ tag | slugify }}" 
+      <a href="#{{ tag | slugify }}"
          class="badge bg-primary text-decoration-none {{ badge_class }}">
         {{ tag }}
         <span class="badge bg-secondary text-body ms-1">{{ count }}</span>
@@ -76,10 +79,10 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
   <h2 class="h4 mb-4 pb-2 border-bottom">
     <i class="bi bi-list-ul me-2"></i>All Tags ({{ unique_tags.size }})
   </h2>
-  
+
   {% for tag in unique_tags %}
     {% assign tagged_posts = tag_sources | where_exp: "post", "post.tags contains tag" %}
-    
+
     <article class="tag-section mb-5" id="{{ tag | slugify }}">
       <!-- Tag Header -->
       <div class="d-flex align-items-center mb-3">
@@ -91,7 +94,7 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
           <i class="bi bi-arrow-up"></i> top
         </a>
       </div>
-      
+
       <!-- Posts with this tag -->
       <ul class="list-group list-group-flush">
         {% for post in tagged_posts %}

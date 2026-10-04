@@ -19,7 +19,7 @@ tags:
 title: Overview
 ---
 # Overview
- 
+
 Jekyll compiles your website into a `_site` available for FTP to your web server. This can be automated if your source code is already on GitHub.
 
 Travis CI is a free Continuous Integration service for testing and deploying your open source GitHub projects. A config file `.travis.yml` stored in the root directory of your project will instruct Travis CI when you push your code or merge a pull request on GitHub. Travis CI can then build your Jekyll site in a VM and deploys your code as per the settings in the config.

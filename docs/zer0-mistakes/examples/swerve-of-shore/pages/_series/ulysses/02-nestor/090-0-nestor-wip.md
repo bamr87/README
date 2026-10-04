@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 02 - Nestor
 date: 2025-02-10
@@ -19,6 +20,8 @@ sub-title: Episode 2 · Nestor
 title: 090 0 Nestor Wip
 wip: true
 ---
+# 090 0 Nestor Wip
+
 An in-progress entry in the *Episode 2 · Nestor* thread on [Swerve of Shore](https://www.swerveofshore.com/post/090-0-nestor-wip), by Brandon Nicklaus.
 
 > Mr Deasy: Is modeled after Francis Irwin who James Joyce worked for for some time. He was the headmaster of the Clifton School in Dalkey. He has an angry white mustache and an illdyed head. This is Stephen’s boss which could be looked at like a father figure. An unwanted father figure. Deasy tries to give Stephen advice and press his views onto him. He is pro-British and anti-free thinker. Opposite of Stephen.

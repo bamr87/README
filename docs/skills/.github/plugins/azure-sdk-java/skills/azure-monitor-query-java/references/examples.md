@@ -104,7 +104,7 @@ LogsQueryResult result = logsQueryClient.queryWorkspace(
 
 for (LogsTableRow row : result.getTable().getRows()) {
     System.out.println(
-        row.getColumnValue("OperationName") + " " + 
+        row.getColumnValue("OperationName") + " " +
         row.getColumnValue("ResourceGroup")
     );
 }
@@ -177,7 +177,7 @@ Response<MetricsQueryResult> response = metricsQueryClient.queryResourceWithResp
     new MetricsQueryOptions()
         .setGranularity(Duration.ofHours(1))
         .setAggregations(Arrays.asList(
-            AggregationType.AVERAGE, 
+            AggregationType.AVERAGE,
             AggregationType.COUNT
         )),
     Context.NONE
@@ -195,11 +195,11 @@ import com.azure.monitor.query.models.LogsBatchQueryResultCollection;
 import com.azure.monitor.query.models.LogsQueryResultStatus;
 
 LogsBatchQuery batchQuery = new LogsBatchQuery();
-String q1 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-1}", 
+String q1 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-1}",
     new QueryTimeInterval(Duration.ofDays(2)));
-String q2 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-2}", 
+String q2 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-2}",
     new QueryTimeInterval(Duration.ofDays(30)));
-String q3 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-3}", 
+String q3 = batchQuery.addWorkspaceQuery("{workspace-id}", "{query-3}",
     new QueryTimeInterval(Duration.ofDays(10)));
 
 LogsBatchQueryResultCollection results = logsQueryClient
@@ -380,7 +380,7 @@ import com.azure.monitor.query.models.LogsQueryResultStatus;
 
 try {
     LogsQueryResult result = logsQueryClient.queryWorkspace(...);
-    
+
     // Check for partial errors
     if (result.getQueryResultStatus() == LogsQueryResultStatus.PARTIAL_FAILURE) {
         System.out.println("Warning: " + result.getError().getMessage());

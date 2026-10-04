@@ -16,7 +16,7 @@ title: Phase 6 Implementation Summary
 ---
 # Phase 6 Implementation Summary
 
-**Date**: January 27, 2025  
+**Date**: January 27, 2025
 **Status**: Automation scripts created, initial fixes applied
 
 ## Overview
@@ -170,7 +170,7 @@ python3 scripts/quest/fix-quest-types.py
    ```bash
    # Preview first
    python3 scripts/quest/remove-placeholder-deps.py --dry-run
-   
+
    # Then apply
    python3 scripts/quest/remove-placeholder-deps.py
    ```
@@ -179,7 +179,7 @@ python3 scripts/quest/fix-quest-types.py
    ```bash
    # Check for invalid quest types
    python3 scripts/quest/fix-quest-types.py --dry-run
-   
+
    # Fix if needed
    python3 scripts/quest/fix-quest-types.py
    ```
@@ -193,7 +193,7 @@ python3 scripts/quest/fix-quest-types.py
    ```bash
    # Preview changes
    python3 scripts/quest/update-quest-links.py --dry-run
-   
+
    # Apply changes
    python3 scripts/quest/update-quest-links.py
    ```
@@ -249,5 +249,5 @@ Before running scripts on the full quest directory:
 
 ---
 
-**Status**: 🚀 Automation scripts ready for use  
+**Status**: 🚀 Automation scripts ready for use
 **Next Review**: After placeholder cleanup execution

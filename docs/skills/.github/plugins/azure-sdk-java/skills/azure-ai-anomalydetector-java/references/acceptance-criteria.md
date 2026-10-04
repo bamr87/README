@@ -161,10 +161,10 @@ if (result.isAnomaly()) {
 
 ### 3.3 ✅ CORRECT: Change Point Detection
 ```java
-UnivariateChangePointDetectionOptions changeOptions = 
+UnivariateChangePointDetectionOptions changeOptions =
     new UnivariateChangePointDetectionOptions(series, TimeGranularity.DAILY);
 
-UnivariateChangePointDetectionResult result = 
+UnivariateChangePointDetectionResult result =
     univariateClient.detectUnivariateChangePoint(changeOptions);
 
 for (int i = 0; i < result.getIsChangePoint().size(); i++) {
@@ -210,7 +210,7 @@ MultivariateBatchDetectionOptions detectionOptions = new MultivariateBatchDetect
     .setEndTime(OffsetDateTime.parse("2023-07-31T00:00:00Z"))
     .setTopContributorCount(10);
 
-MultivariateDetectionResult result = 
+MultivariateDetectionResult result =
     multivariateClient.detectMultivariateBatchAnomaly(modelId, detectionOptions);
 ```
 
@@ -223,7 +223,7 @@ MultivariateLastDetectionOptions lastOptions = new MultivariateLastDetectionOpti
     ))
     .setTopContributorCount(5);
 
-MultivariateLastDetectionResult result = 
+MultivariateLastDetectionResult result =
     multivariateClient.detectMultivariateLastAnomaly(modelId, lastOptions);
 ```
 

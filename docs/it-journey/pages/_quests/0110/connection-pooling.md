@@ -379,8 +379,8 @@ Connections piling up as `idle in transaction` are the classic fingerprint of a 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to Level 0111: API Development  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
+**💻 Software Developer**: Continue to Level 0111: API Development
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
 **📊 Data Scientist**: Revisit [Query Optimization](/quests/0110/query-optimization/)
 
 ## 📚 Resources

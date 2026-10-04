@@ -432,8 +432,8 @@ git merge --abort      # or: git rebase --abort
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)  
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**💻 Software Developer**: Continue to [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)
+**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)
 **🛠️ DevOps Specialist**: Take this workflow into CI/CD in the Adventurer tier
 
 ## 📚 Resources

@@ -44,7 +44,7 @@ export class SimpleAudioCapture {
   private mediaStream?: MediaStream;
   private scriptProcessor?: ScriptProcessorNode;
   private dataCallback: (data: ArrayBuffer) => void;
-  
+
   private readonly targetSampleRate = 24000;
 
   constructor(onData: (data: ArrayBuffer) => void) {
@@ -64,15 +64,15 @@ export class SimpleAudioCapture {
 
     // Create audio context at target sample rate
     this.audioContext = new AudioContext({ sampleRate: this.targetSampleRate });
-    
+
     // Create processing chain
     const source = this.audioContext.createMediaStreamSource(this.mediaStream);
     this.scriptProcessor = this.audioContext.createScriptProcessor(4096, 1, 1);
-    
+
     // Connect nodes
     source.connect(this.scriptProcessor);
     this.scriptProcessor.connect(this.audioContext.destination);
-    
+
     // Process audio data
     this.scriptProcessor.onaudioprocess = (event) => {
       const inputData = event.inputBuffer.getChannelData(0);
@@ -247,7 +247,7 @@ export class Pcm16Player {
   enqueuePcm16(bytes: Uint8Array): void {
     // Convert PCM16 bytes to Float32 for Web Audio API
     const floatData = this.pcm16BytesToFloat32(bytes);
-    
+
     // Create audio buffer
     const buffer = this.audioContext.createBuffer(1, floatData.length, this.sampleRate);
     buffer.getChannelData(0).set(floatData);

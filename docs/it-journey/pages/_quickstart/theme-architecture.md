@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - quickstart
@@ -36,6 +37,8 @@ tags:
 - theme
 title: Theme Architecture
 ---
+# Theme Architecture
+
 This guide covers **Phase 7** of the [Quick Start](/quickstart/) — how the zer0-mistakes theme assembles pages from layouts, includes, Liquid templates, and data files.
 
 ---

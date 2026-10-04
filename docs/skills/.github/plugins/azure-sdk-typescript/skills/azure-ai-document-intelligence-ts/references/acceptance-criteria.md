@@ -8,7 +8,7 @@ title: 'Acceptance Criteria: azure-ai-document-intelligence-ts'
 
 This document defines the acceptance criteria for code generated using the `@azure-rest/ai-document-intelligence` SDK for TypeScript/JavaScript.
 
-**Package:** `@azure-rest/ai-document-intelligence`  
+**Package:** `@azure-rest/ai-document-intelligence`
 **Repository:** https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/documentintelligence/ai-document-intelligence-rest
 
 > **Note:** This is a REST client library. Form Recognizer has been rebranded to Document Intelligence.

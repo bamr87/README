@@ -36,7 +36,7 @@ toc_sticky: true
 
 *The Scrollmaster's Prescribed Curriculum — for those who prefer a map over wandering.*
 
-**Total estimated time:** ~40 hours over 6 weeks (~7 hours/week)  
+**Total estimated time:** ~40 hours over 6 weeks (~7 hours/week)
 **Assumed background:** Comfortable with GitHub Actions, basic Python or JS, VS Code, and basic AI-tool usage.
 
 > **Choose your pace:** [6-week standard track](#week-1) (default) · [2-week sprint](#two-week-sprint) (experience required) · [micro-learning track](#micro-learning-15-minday) (busy schedules)

@@ -1,10 +1,13 @@
 ---
+
 gamename: krypton
 layout: default
 level: 4
 source_file: krypton4.md
 title: Krypton4
 ---
+# Krypton4
+
 Level Info
 ----------
 Good job!

@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-24T12:19:36.000Z'
 level: '1001'
@@ -19,6 +20,8 @@ theme: Kubernetes Orchestration
 tier: Warrior
 title: 2026 07 24 System Engineer 1001
 ---
+# 2026 07 24 System Engineer 1001
+
 ## 🎯 Session Summary
 
 I walked the **second window (4 quests) of the 9-quest System Engineer / Level 1001 "Kubernetes Orchestration" slice** as a Warrior-tier learner would: Pods & Workloads → Services & Networking → ConfigMaps & Secrets → The Sigils of Trust. The machine evidence was pre-sealed by the workflow's `--mode execute` engine run against a **real kind cluster (k8s v1.36.1)**, so command outcomes below are witnessed, not asserted. Three quests pass cleanly (86 / 82 / 91) and one warns (77); engine average **84.0%**.

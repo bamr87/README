@@ -476,7 +476,7 @@ async def main():
             body=["Hello, world!"],
             to=["es", "fr"]
         )
-        
+
         for item in result:
             for translation in item.translations:
                 print(f"{translation.to}: {translation.text}")
@@ -495,7 +495,7 @@ async def translate_batch(texts, target_lang):
             body=texts,
             to=[target_lang]
         )
-        
+
         translations = []
         for item in result:
             translations.append(item.translations[0].text)

@@ -193,10 +193,10 @@ Components are loaded conditionally based on:
 Includes can accept parameters:
 
 ```html
-{% include components/alert.html 
-   type="warning" 
-   title="Important" 
-   message="This is a warning message." 
+{% include components/alert.html
+   type="warning"
+   title="Important"
+   message="This is a warning message."
 %}
 ```
 

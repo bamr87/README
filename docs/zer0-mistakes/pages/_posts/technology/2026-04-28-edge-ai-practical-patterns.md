@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Technology
@@ -19,6 +20,8 @@ tags:
 - privacy
 title: 2026 04 28 Edge Ai Practical Patterns
 ---
+# 2026 04 28 Edge Ai Practical Patterns
+
 Not every AI workload belongs in a cloud data center. Some decisions need to happen near the sensor, the machine, the vehicle, or the person. That is where edge AI earns its place.
 
 Edge AI means running models on local devices rather than sending every request to a remote API. The model may be smaller, but the product can be faster, more private, and more resilient.

@@ -383,8 +383,8 @@ The big distinction: **permissive** licenses (MIT, Apache) let anyone do almost 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Building Technical Communities](/quests/1111/building-technical-communities/)  
-**🏗️ System Engineer**: Explore [Innovation and R&D](/quests/1111/innovation-rnd/)  
+**💻 Software Developer**: Continue to [Building Technical Communities](/quests/1111/building-technical-communities/)
+**🏗️ System Engineer**: Explore [Innovation and R&D](/quests/1111/innovation-rnd/)
 **🛡️ Security Specialist**: Advance to [Architecture Reviews](/quests/1111/architecture-reviews/)
 
 ## 📚 Resources

@@ -49,10 +49,10 @@ graph TB
         CurrentLevel[Level 1001:<br/>Kubernetes]
         NextLevel[Level 1010:<br/>Monitoring & Observability]
     end
-    
+
     PrevLevel --> CurrentLevel
     CurrentLevel --> NextLevel
-    
+
     style CurrentLevel fill:#FF5722,stroke:#E64A19,stroke-width:4px,color:#fff
 ```
 
@@ -83,16 +83,16 @@ graph TB
         MQ1[🎯 Kubernetes Fundamentals:<br/>Container Orchestration]
         MQ2[🎯 Pods & Workloads:<br/>Deployments & StatefulSets]
     end
-    
+
     subgraph "Networking & Config"
         NQ1[🌐 Services & Networking:<br/>Ingress & DNS]
         CQ1[⚙️ ConfigMaps & Secrets:<br/>Configuration Management]
     end
-    
+
     MQ1 --> MQ2
     MQ2 --> NQ1
     MQ2 --> CQ1
-    
+
     style MQ1 fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
     style MQ2 fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
     style NQ1 fill:#2196F3,stroke:#1565C0,stroke-width:3px

@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 3
 source_file: vortex3.md
 title: Vortex3
 ---
+# Vortex3
+
 A Stack Overflow with a Difference
 ----------------------------------
 This level is pretty straight forward. Just sit down and understand what the code is doing. Your shellcode will require a setuid(LEVEL4\_UID) since bash drops effective privileges. You could alternatively write a quick setuid(geteuid()) wrapper around bash.

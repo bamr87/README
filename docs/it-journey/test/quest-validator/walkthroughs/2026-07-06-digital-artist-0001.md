@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-06T00:00:00.000Z'
 level: '0001'
@@ -26,6 +27,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 06 Digital Artist 0001
 ---
+# 2026 07 06 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 3 of 6, offset 15) of the **Digital Artist → Level 0001 · Web Fundamentals** slice — 3 main quests and 2 side quests, played in dependency order in the disposable runner sandbox via the sealed execute-engine evidence. **Headline verdict: FAIL.** The two core, fully-scored main quests both fail on `commands_work` (Stats Portal **48%**, Terminal Mastery **44%**) because their centerpiece commands crash or silently no-op when a learner runs them verbatim; the third main quest (**Forge Your Character**), which is the *linchpin prerequisite* for both side quests, produced **no verdict at all** (engine hit max-turns), so the chain's most load-bearing quest is unverified. The two side quests (Avatar Forge **79% warn**, Badge Collector **66% warn**) are structurally sound but both silently assume a cloned, `bundle install`ed repo with a generated contributor data file that no quest in the slice actually walks the learner through.

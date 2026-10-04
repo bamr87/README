@@ -13,7 +13,7 @@ title: Azure Service Bus SDK for TypeScript Acceptance Criteria
 ### 1.1 ✅ CORRECT: ESM Imports
 
 ```typescript
-import { 
+import {
   ServiceBusClient,
   ServiceBusSender,
   ServiceBusReceiver,
@@ -24,7 +24,7 @@ import {
 ### 1.2 ✅ CORRECT: Type Imports
 
 ```typescript
-import type { 
+import type {
   ServiceBusMessage,
   ServiceBusReceivedMessage,
   ProcessMessageCallback,
@@ -118,7 +118,7 @@ for (const msg of messages) {
     // Batch is full, send and create new
     await sender.sendMessages(batch);
     batch = await sender.createMessageBatch();
-    
+
     if (!batch.tryAddMessage({ body: msg })) {
       throw new Error("Message too large for batch");
     }
@@ -426,7 +426,7 @@ if (messages.length > 0) {
   await receiver.abandonMessage(messages[0]);    // Return to queue
   // or
   await receiver.deferMessage(messages[0]);      // Defer
-  // or  
+  // or
   await receiver.deadLetterMessage(messages[0]); // Move to DLQ
 }
 ```

@@ -1,4 +1,5 @@
 ---
+
 author: IT-Journey Team
 categories:
 - home
@@ -32,4 +33,6 @@ tags:
 title: Home
 toc: false
 ---
+# Home
+
 > **The whole game, in one place.** Everything on this dashboard is generated from the quest registry — pick a tier on the realm map, follow a class path, or jump back into your next quest. Hit **Customize** to choose what's shown and set your accent; your progress and preferences are saved in this browser and carry across the site.

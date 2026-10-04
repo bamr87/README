@@ -1,7 +1,10 @@
 ---
+
 source_file: azure-redis.md
 title: Azure Redis
 ---
+# Azure Redis
+
 ## Azure Redis Cost Optimization
 
 Reference guide for identifying cost savings opportunities in Azure Redis deployments through analysis and targeted scans.

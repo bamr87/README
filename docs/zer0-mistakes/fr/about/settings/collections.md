@@ -1,4 +1,5 @@
 ---
+
 excerpt: Aperçu de toutes les collections Jekyll, de leur configuration et du nombre
   de contenus.
 icon: material/folder-multiple
@@ -15,4 +16,6 @@ translated_from_sha: 9a33715b85d8
 translation_of: pages/_about/settings/collections.md
 translation_source_url: /about/settings/collections/
 ---
+# Collections
+
 {% include components/collection-manager.html %}

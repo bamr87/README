@@ -138,7 +138,7 @@ jobs:
             --issue "${{ github.event.issue.number }}" \
             --max-subtasks 4 \
             --output partition.json
-          
+
           SUBTASKS=$(cat partition.json | jq -c '.subtasks')
           echo "subtasks=$SUBTASKS" >> "$GITHUB_OUTPUT"
 
@@ -157,7 +157,7 @@ jobs:
         run: |
           echo "=== Sub-Agent executing: ${{ matrix.subtask.id }} ==="
           echo "Task: ${{ matrix.subtask.description }}"
-          
+
           python3 work/gh-600/scripts/run_subtask.py \
             --subtask-id "${{ matrix.subtask.id }}" \
             --description "${{ matrix.subtask.description }}" \

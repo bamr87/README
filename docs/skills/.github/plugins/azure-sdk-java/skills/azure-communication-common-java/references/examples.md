@@ -68,33 +68,33 @@ public class TokenService {
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final String tokenEndpoint;
     private final String userId;
-    
+
     public TokenService(String tokenEndpoint, String userId) {
         this.tokenEndpoint = tokenEndpoint;
         this.userId = userId;
     }
-    
+
     public String fetchToken() throws Exception {
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create(tokenEndpoint + "/api/token?userId=" + userId))
             .GET()
             .build();
-        
-        HttpResponse<String> response = httpClient.send(request, 
+
+        HttpResponse<String> response = httpClient.send(request,
             HttpResponse.BodyHandlers.ofString());
-        
+
         if (response.statusCode() == 200) {
             JsonNode json = objectMapper.readTree(response.body());
             return json.get("token").asText();
         }
         throw new RuntimeException("Failed to fetch token: " + response.statusCode());
     }
-    
+
     public CommunicationTokenCredential createCredential(String initialToken) {
         CommunicationTokenRefreshOptions options = new CommunicationTokenRefreshOptions(this::fetchToken)
             .setRefreshProactively(true)
             .setInitialToken(initialToken);
-        
+
         return new CommunicationTokenCredential(options);
     }
 }
@@ -144,7 +144,7 @@ MicrosoftTeamsUserIdentifier anonymousTeamsUser = new MicrosoftTeamsUserIdentifi
 import com.azure.communication.common.*;
 
 public class IdentifierParser {
-    
+
     public CommunicationIdentifier parseIdentifier(String rawId) {
         if (rawId.startsWith("8:acs:")) {
             return new CommunicationUserIdentifier(rawId);
@@ -158,21 +158,21 @@ public class IdentifierParser {
             return new UnknownIdentifier(rawId);
         }
     }
-    
+
     public void processIdentifier(CommunicationIdentifier identifier) {
         if (identifier instanceof CommunicationUserIdentifier) {
             CommunicationUserIdentifier user = (CommunicationUserIdentifier) identifier;
             System.out.println("ACS User: " + user.getId());
-            
+
         } else if (identifier instanceof PhoneNumberIdentifier) {
             PhoneNumberIdentifier phone = (PhoneNumberIdentifier) identifier;
             System.out.println("Phone: " + phone.getPhoneNumber());
-            
+
         } else if (identifier instanceof MicrosoftTeamsUserIdentifier) {
             MicrosoftTeamsUserIdentifier teams = (MicrosoftTeamsUserIdentifier) identifier;
             System.out.println("Teams User: " + teams.getUserId());
             System.out.println("Anonymous: " + teams.isAnonymous());
-            
+
         } else if (identifier instanceof UnknownIdentifier) {
             UnknownIdentifier unknown = (UnknownIdentifier) identifier;
             System.out.println("Unknown: " + unknown.getId());
@@ -189,7 +189,7 @@ public class IdentifierParser {
 import java.util.concurrent.CompletableFuture;
 
 public class AsyncTokenService {
-    
+
     public CompletableFuture<String> fetchTokenAsync() {
         return CompletableFuture.supplyAsync(() -> {
             try {
@@ -202,16 +202,16 @@ public class AsyncTokenService {
             }
         });
     }
-    
+
     public CommunicationTokenCredential createCredential() {
         Callable<String> asyncRefresher = () -> {
             CompletableFuture<String> future = fetchTokenAsync();
             return future.get();
         };
-        
+
         CommunicationTokenRefreshOptions options = new CommunicationTokenRefreshOptions(asyncRefresher)
             .setRefreshProactively(true);
-        
+
         return new CommunicationTokenCredential(options);
     }
 }
@@ -225,15 +225,15 @@ import java.util.concurrent.Callable;
 public class ResilientTokenService {
     private final String tokenEndpoint;
     private final int maxRetries;
-    
+
     public ResilientTokenService(String tokenEndpoint, int maxRetries) {
         this.tokenEndpoint = tokenEndpoint;
         this.maxRetries = maxRetries;
     }
-    
+
     public String fetchTokenWithRetry() throws Exception {
         Exception lastException = null;
-        
+
         for (int attempt = 0; attempt < maxRetries; attempt++) {
             try {
                 return fetchToken();
@@ -245,20 +245,20 @@ public class ResilientTokenService {
                 }
             }
         }
-        
+
         throw new RuntimeException("Failed to fetch token after " + maxRetries + " attempts", lastException);
     }
-    
+
     private String fetchToken() throws Exception {
         // HTTP call to token endpoint
         return "token-value";
     }
-    
+
     public CommunicationTokenCredential createCredential(String initialToken) {
         CommunicationTokenRefreshOptions options = new CommunicationTokenRefreshOptions(this::fetchTokenWithRetry)
             .setRefreshProactively(true)
             .setInitialToken(initialToken);
-        
+
         return new CommunicationTokenCredential(options);
     }
 }
@@ -286,7 +286,7 @@ List<String> scopes = Arrays.asList(
     "https://auth.msft.communication.azure.com/TeamsExtension.ManageCalls"
 );
 
-EntraCommunicationTokenCredentialOptions entraOptions = 
+EntraCommunicationTokenCredentialOptions entraOptions =
     new EntraCommunicationTokenCredentialOptions(entraCredential, resourceEndpoint)
         .setScopes(scopes);
 
@@ -309,40 +309,40 @@ public class ChatClientFactory {
     private final String endpoint;
     private final TokenService tokenService;
     private final Map<String, CommunicationTokenCredential> credentialCache = new ConcurrentHashMap<>();
-    
+
     public ChatClientFactory(String endpoint, TokenService tokenService) {
         this.endpoint = endpoint;
         this.tokenService = tokenService;
     }
-    
+
     public ChatClient createChatClient(String userId, String initialToken) {
         CommunicationTokenCredential credential = getOrCreateCredential(userId, initialToken);
-        
+
         return new ChatClientBuilder()
             .endpoint(endpoint)
             .credential(credential)
             .buildClient();
     }
-    
+
     private CommunicationTokenCredential getOrCreateCredential(String userId, String initialToken) {
         return credentialCache.computeIfAbsent(userId, id -> {
             Callable<String> refresher = () -> tokenService.fetchTokenForUser(id);
-            
+
             CommunicationTokenRefreshOptions options = new CommunicationTokenRefreshOptions(refresher)
                 .setRefreshProactively(true)
                 .setInitialToken(initialToken);
-            
+
             return new CommunicationTokenCredential(options);
         });
     }
-    
+
     public void removeCredential(String userId) {
         CommunicationTokenCredential credential = credentialCache.remove(userId);
         if (credential != null) {
             credential.close();
         }
     }
-    
+
     public void close() {
         credentialCache.values().forEach(CommunicationTokenCredential::close);
         credentialCache.clear();
@@ -366,49 +366,49 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class MultiTenantCommunicationService {
     private final Map<String, TenantContext> tenantContexts = new ConcurrentHashMap<>();
-    
+
     public void registerTenant(String tenantId, String endpoint, String connectionString) {
         TenantContext context = new TenantContext(tenantId, endpoint, connectionString);
         tenantContexts.put(tenantId, context);
     }
-    
+
     public CommunicationTokenCredential getCredentialForUser(String tenantId, String userId, String token) {
         TenantContext context = tenantContexts.get(tenantId);
         if (context == null) {
             throw new IllegalArgumentException("Unknown tenant: " + tenantId);
         }
-        
+
         return context.getOrCreateCredential(userId, token);
     }
-    
+
     public CommunicationUserIdentifier createUserIdentifier(String tenantId, String userId) {
         // Format: 8:acs:resourceId_userId
         TenantContext context = tenantContexts.get(tenantId);
         String rawId = "8:acs:" + context.getResourceId() + "_" + userId;
         return new CommunicationUserIdentifier(rawId);
     }
-    
+
     private static class TenantContext {
         private final String tenantId;
         private final String endpoint;
         private final String resourceId;
         private final Map<String, CommunicationTokenCredential> userCredentials = new ConcurrentHashMap<>();
-        
+
         TenantContext(String tenantId, String endpoint, String connectionString) {
             this.tenantId = tenantId;
             this.endpoint = endpoint;
             this.resourceId = extractResourceId(endpoint);
         }
-        
+
         String getResourceId() {
             return resourceId;
         }
-        
+
         CommunicationTokenCredential getOrCreateCredential(String userId, String token) {
-            return userCredentials.computeIfAbsent(userId, id -> 
+            return userCredentials.computeIfAbsent(userId, id ->
                 new CommunicationTokenCredential(token));
         }
-        
+
         private String extractResourceId(String endpoint) {
             // Extract resource ID from endpoint URL
             return endpoint.replace("https://", "").replace(".communication.azure.com", "");

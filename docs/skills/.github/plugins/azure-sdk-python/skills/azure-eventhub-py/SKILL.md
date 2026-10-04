@@ -81,7 +81,7 @@ producer = EventHubProducerClient(
 with producer:
     # Create batch (handles size limits)
     event_data_batch = producer.create_batch()
-    
+
     for i in range(10):
         try:
             event_data_batch.add(EventData(f"Event {i}"))
@@ -90,7 +90,7 @@ with producer:
             producer.send_batch(event_data_batch)
             event_data_batch = producer.create_batch()
             event_data_batch.add(EventData(f"Event {i}"))
-    
+
     # Send remaining
     producer.send_batch(event_data_batch)
 ```
@@ -170,7 +170,7 @@ import asyncio
 
 async def send_events():
     credential = DefaultAzureCredential()
-    
+
     async with EventHubProducerClient(
         fully_qualified_namespace="<namespace>.servicebus.windows.net",
         eventhub_name="my-eventhub",
@@ -184,7 +184,7 @@ async def receive_events():
     async def on_event(partition_context, event):
         print(event.body_as_str())
         await partition_context.update_checkpoint(event)
-    
+
     async with EventHubConsumerClient(
         fully_qualified_namespace="<namespace>.servicebus.windows.net",
         eventhub_name="my-eventhub",
@@ -220,7 +220,7 @@ with producer:
     info = producer.get_eventhub_properties()
     print(f"Name: {info['name']}")
     print(f"Partitions: {info['partition_ids']}")
-    
+
     for partition_id in info['partition_ids']:
         partition_info = producer.get_partition_properties(partition_id)
         print(f"Partition {partition_id}: {partition_info['last_enqueued_sequence_number']}")

@@ -272,21 +272,21 @@ for event in stream:
 def generate_subtitles(job_result):
     """Convert transcription results to subtitle format."""
     subtitles = []
-    
+
     for phrase in job_result.results:
         if hasattr(phrase, "offset") and hasattr(phrase, "duration"):
             # Convert from 100-nanosecond units to seconds
             start_ms = (phrase.offset / 10_000_000) * 1000
             duration_ms = (phrase.duration / 10_000_000) * 1000
             end_ms = start_ms + duration_ms
-            
+
             subtitle = {
                 "start": format_timestamp(start_ms),
                 "end": format_timestamp(end_ms),
                 "text": phrase.text
             }
             subtitles.append(subtitle)
-    
+
     return subtitles
 
 def format_timestamp(milliseconds):
@@ -351,7 +351,7 @@ if result.status == "succeeded":
     for phrase in result.results:
         speaker_id = getattr(phrase, "speaker", None)
         text = phrase.text
-        
+
         if speaker_id is not None:
             print(f"Speaker {speaker_id}: {text}")
         else:
@@ -363,7 +363,7 @@ if result.status == "succeeded":
 for phrase in result.results:
     speaker = getattr(phrase, "speaker", None)
     confidence = getattr(phrase, "speaker_confidence", None)
-    
+
     if speaker is not None and confidence is not None:
         print(f"Speaker {speaker} (confidence: {confidence:.2%}): {phrase.text}")
     else:
@@ -469,7 +469,7 @@ try:
     stream = client.begin_stream_transcription(locale="en-US")
     stream.send_audio(audio_data)
     stream.stop()
-    
+
     for event in stream:
         if event.error:
             print(f"Stream error: {event.error}")

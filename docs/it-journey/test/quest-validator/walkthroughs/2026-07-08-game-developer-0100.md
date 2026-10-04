@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-08T12:44:31.000Z'
 level: '0100'
@@ -18,6 +19,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 08 Game Developer 0100
 ---
+# 2026 07 08 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked the **game-developer / 0100 (Frontend & Containers, ⚔️ Adventurer)** slice that `walk-plan.json` selected — a 3-quest window (window 1 of 2) of an 8-quest level. The sealed machine evidence (`walk-evidence.json`) **only covers the first quest**: the engine recorded `evaluated: 1, requested: 3, auth_truncated: true`, so it stopped after *The Proving Grounds* when the OAuth token hit its rate limit. I did **not** re-run the engine (its child processes can't authenticate from my Bash tool) and did **not** touch the evidence files. Quests 2 and 3 are therefore **reasoned only** — read end-to-end as a learner and cross-checked against host-repo file existence (read-only), but **never executed in a sandbox**.

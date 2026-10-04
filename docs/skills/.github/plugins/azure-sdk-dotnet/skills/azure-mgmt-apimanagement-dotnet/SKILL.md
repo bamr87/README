@@ -99,7 +99,7 @@ var resourceGroup = await subscription
 var serviceData = new ApiManagementServiceData(
     location: AzureLocation.EastUS,
     sku: new ApiManagementServiceSkuProperties(
-        ApiManagementServiceSkuType.Developer, 
+        ApiManagementServiceSkuType.Developer,
         capacity: 1),
     publisherEmail: "admin@contoso.com",
     publisherName: "Contoso");

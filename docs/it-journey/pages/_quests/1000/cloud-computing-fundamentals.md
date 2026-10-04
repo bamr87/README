@@ -411,8 +411,8 @@ Once you can name the category a service belongs to, you can learn any new produ
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [AWS Essentials](/quests/1000/aws-essentials/)  
-**🏗️ System Engineer**: Explore [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
+**💻 Software Developer**: Continue to [AWS Essentials](/quests/1000/aws-essentials/)
+**🏗️ System Engineer**: Explore [Infrastructure as Code](/quests/1000/infrastructure-as-code/)
 **🛡️ Security Specialist**: Revisit the shared responsibility model before [AWS Essentials](/quests/1000/aws-essentials/)
 
 ## 📚 Resources

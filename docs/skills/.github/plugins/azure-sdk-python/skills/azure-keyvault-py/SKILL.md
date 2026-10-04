@@ -216,7 +216,7 @@ from azure.keyvault.secrets.aio import SecretClient
 async def get_secret():
     credential = DefaultAzureCredential()
     client = SecretClient(vault_url=vault_url, credential=credential)
-    
+
     async with client:
         secret = await client.get_secret("my-secret")
         print(secret.value)

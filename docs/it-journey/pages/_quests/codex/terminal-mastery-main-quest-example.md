@@ -123,21 +123,21 @@ graph TB
         Hello[🌱 Hello n00b]
         Computer[🏰 Computer Literacy]
     end
-    
+
     subgraph "Terminal Mastery Main Quest"
         Main[🏰 Terminal Navigation Mastery]
         Side1[⚔️ Oh-My-Zsh Setup]
         Side2[⚔️ Nerd Font Enchantment]
         Bonus[🎁 Productivity Hacks]
     end
-    
+
     subgraph "Unlocked Adventures"
         Shell[🏰 Advanced Shell Scripting]
         Git[🏰 Version Control Fundamentals]
         SysAdmin[🏰 System Administration]
         Editor[🏰 Text Editor Mastery]
     end
-    
+
     Hello --> Main
     Computer --> Main
     Main --> Side1
@@ -148,7 +148,7 @@ graph TB
     Main --> SysAdmin
     Side1 --> Shell
     Side2 --> Editor
-    
+
     style Main fill:#87ceeb
     style Side1 fill:#ffd700
     style Side2 fill:#ffd700
@@ -166,7 +166,7 @@ graph LR
         D --> E
         E --> F[👑 Terminal Automation Epic]
     end
-    
+
     style B fill:#87ceeb
     style C fill:#ffd700
     style D fill:#ffd700
@@ -208,7 +208,7 @@ echo $SHELL  # Should show /bin/zsh
 brew install tree htop fzf
 ```
 
-### 🐧 Linux Territory Path  
+### 🐧 Linux Territory Path
 ```bash
 # Native terminal environment with full command support
 sudo apt update && sudo apt install -y tree htop
@@ -348,11 +348,11 @@ ls *.tmp | xargs rm                # Remove multiple files safely
 
 **Requirements**:
 - [ ] Create a multi-level directory structure
-- [ ] Hide "treasure" files in various locations  
+- [ ] Hide "treasure" files in various locations
 - [ ] Use only terminal commands to explore and find treasures
 - [ ] Document your discoveries in a treasure map file
 
-### Challenge 2: Development Workspace Setup (🕐 30 minutes)  
+### Challenge 2: Development Workspace Setup (🕐 30 minutes)
 **Objective**: Create an organized development workspace using terminal commands
 
 **Requirements**:
@@ -400,7 +400,7 @@ ls *.tmp | xargs rm                # Remove multiple files safely
 ### 🌐 Quest Network Connections
 This foundational quest connects to multiple learning paths:
 - **Software Development**: Essential for all coding activities
-- **System Administration**: Foundation for server and infrastructure management  
+- **System Administration**: Foundation for server and infrastructure management
 - **DevOps Engineering**: Required for deployment and automation workflows
 - **Security Operations**: Necessary for system analysis and protection
 
@@ -430,5 +430,5 @@ This foundational quest connects to multiple learning paths:
 
 *This main quest unlocks multiple side quests that will enhance your terminal experience and several advanced main quests that build upon these foundational skills. Choose your next adventure based on your interests and career goals - the digital realm awaits your exploration!*
 
-**Achievement Unlocked: Terminal Navigation Master** 🏆  
+**Achievement Unlocked: Terminal Navigation Master** 🏆
 *Continue your adventure with related side quests or advance to the next main quest in your chosen learning path!*

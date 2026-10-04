@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-28T00:00:00.000Z'
 level: '1011'
@@ -17,6 +18,8 @@ theme: Security & Compliance
 tier: Warrior 🔥
 title: 2026 07 28 Security Specialist 1011
 ---
+# 2026 07 28 Security Specialist 1011
+
 ## 🎯 Session Summary
 
 I walked the first **window of 5 quests (of 12)** in the Security Specialist's Level `1011` — "Security & Compliance," the Warrior tier — as a learner would, driving the sealed execute-mode evidence the workflow minted for me and reading every quest's source in plan order to reason about the linked journey.

@@ -4,8 +4,8 @@ title: Script Testing Report
 ---
 # Script Testing Report
 
-**Date:** $(date +%Y-%m-%d)  
-**Test Environment:** Local + Docker (isolated)  
+**Date:** $(date +%Y-%m-%d)
+**Test Environment:** Local + Docker (isolated)
 **Total Scripts Tested:** $(find /Users/bamr87/github/it-journey/scripts -type f \( -name "*.sh" -o -name "*.py" -o -name "*.rb" \) | wc -l)
 
 ## Test Summary

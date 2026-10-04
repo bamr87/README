@@ -1,10 +1,13 @@
 ---
+
 gamename: krypton
 layout: default
 level: 6
 source_file: krypton6.md
 title: Krypton6
 ---
+# Krypton6
+
 Level Info
 ----------
 Hopefully by now its obvious that encryption using repeating keys is a bad idea. Frequency analysis can destroy repeating/fixed key substitution crypto.

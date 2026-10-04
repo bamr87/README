@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Tutorial
@@ -28,6 +29,8 @@ tags:
 - frontend
 title: 2025 01 23 Css Grid Mastery
 ---
+# 2025 01 23 Css Grid Mastery
+
 CSS Grid is the most powerful layout system in CSS. This tutorial takes you from your first grid to complex, real-world layouts — and every concept comes with a **live demo you can see rendered right here in the browser**, sitting next to the code that produces it. Resize the window or open your browser's grid inspector to watch each example respond.
 
 <style>

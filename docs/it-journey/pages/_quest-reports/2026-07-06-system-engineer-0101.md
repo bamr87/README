@@ -1,4 +1,5 @@
 ---
+
 author: Quest Perfection Loop
 categories:
 - Quest Reports
@@ -30,6 +31,8 @@ title: 2026 07 06 System Engineer 0101
 verdict: fail
 walk_date: '2026-07-06'
 ---
+# 2026 07 06 System Engineer 0101
+
 > **Slice** `system-engineer/0101` · **Level** 0101 (CI/CD & DevOps) · **Adventurer tier** · **Engine verdict** ❌ fail (avg 53.5%) · **Walked** 2026-07-06
 >
 > 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-system-engineer-0101.md)

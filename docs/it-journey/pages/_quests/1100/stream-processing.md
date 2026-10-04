@@ -473,8 +473,8 @@ A practical complement: make your **consumer idempotent** too - key writes on a 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Data Quality Engineering](/quests/1100/data-quality/)  
-**🏗️ System Engineer**: Revisit [Apache Spark](/quests/1100/apache-spark/) for Structured Streaming  
+**💻 Software Developer**: Continue to [Data Quality Engineering](/quests/1100/data-quality/)
+**🏗️ System Engineer**: Revisit [Apache Spark](/quests/1100/apache-spark/) for Structured Streaming
 **📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
 
 ## 📚 Resources

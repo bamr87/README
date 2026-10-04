@@ -182,7 +182,7 @@ for (LogsTableRow row : result.getTable().getRows()) {
 public class ActivityLog {
     private String resourceGroup;
     private String operationName;
-    
+
     public String getResourceGroup() { return resourceGroup; }
     public String getOperationName() { return operationName; }
 }
@@ -390,7 +390,7 @@ import com.azure.monitor.query.models.LogsQueryResultStatus;
 
 try {
     LogsQueryResult result = logsClient.queryWorkspace(workspaceId, query, timeInterval);
-    
+
     // Check partial failure
     if (result.getStatus() == LogsQueryResultStatus.PARTIAL_FAILURE) {
         System.err.println("Partial failure: " + result.getError().getMessage());

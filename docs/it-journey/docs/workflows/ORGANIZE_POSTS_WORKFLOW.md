@@ -214,10 +214,10 @@ Both scripts work correctly with the PR-based workflow.
 
 ## Technical Reference
 
-**Workflow File:** `.github/workflows/organize-posts-weekly.yml`  
-**Script Location:** `scripts/development/content/organize-posts.sh`  
-**Python Script:** `scripts/development/content/organize-posts.py`  
-**Schedule:** `0 2 * * 0` (Every Sunday at 2 AM UTC)  
+**Workflow File:** `.github/workflows/organize-posts-weekly.yml`
+**Script Location:** `scripts/development/content/organize-posts.sh`
+**Python Script:** `scripts/development/content/organize-posts.py`
+**Schedule:** `0 2 * * 0` (Every Sunday at 2 AM UTC)
 **Permissions Required:**
 - `contents: write` (for creating branches and commits)
 - `pull-requests: write` (for creating PRs)

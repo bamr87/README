@@ -7,8 +7,8 @@ title: Log & Screenshot Viewer — Design Reference
 > **Status:** Implemented. This document is the original design plan and serves
 > as an architectural reference.
 >
-> **User guide:** [docs/viewer.md](viewer.md)  
-> **Source code:** [`src/viewer/`](../src/viewer/)  
+> **User guide:** [docs/viewer.md](viewer.md)
+> **Source code:** [`src/viewer/`](../src/viewer/)
 > **Launch:** `python3 -m src.viewer` (see [viewer.md](viewer.md) for all options)
 >
 > **Stack:** Python 3.10+ / Flask / Jinja2 / vanilla JS + CSS (no build toolchain)
@@ -118,7 +118,7 @@ class Session:
 class SessionStore:
     """In-memory cache of all parsed sessions."""
     sessions: dict[str, Session]
-    
+
     def load_all() -> None
     def get(sid: str) -> Session | None
     def list(
@@ -162,7 +162,7 @@ class ScreenshotSession:
 
 class ScreenshotStore:
     sessions: dict[str, ScreenshotSession]
-    
+
     def load_all() -> None
     def get(dir_name: str) -> ScreenshotSession | None
     def list(test_name: str | None, date: date | None) -> list[ScreenshotSession]
@@ -185,7 +185,7 @@ class FeedbackReport:
 
 class FeedbackStore:
     reports: dict[str, FeedbackReport]
-    
+
     def load_all() -> None
     def get(sid: str) -> FeedbackReport | None
     def list() -> list[FeedbackReport]
@@ -203,25 +203,25 @@ class AnalyticsSummary:
     total_events: int
     sessions_by_mode: dict[str, int]
     sessions_by_date: dict[str, int]       # For timeline chart
-    
+
     # Room analytics
     top_rooms: list[tuple[str, int]]
     room_visit_heatmap: dict[str, int]
-    
+
     # Encounter analytics
     encounter_outcomes: dict[str, dict[str, int]]  # type → outcome → count
     items_collected: dict[str, int]
-    
+
     # Death analytics
     death_causes: dict[str, int]
     death_rate: float                      # deaths / sessions
-    
+
     # Duration analytics
     duration_min: int
     duration_max: int
     duration_avg: float
     duration_histogram: list[tuple[str, int]]  # bucket → count
-    
+
     # Progression analytics
     completion_rate: float                 # Sessions reaching chamber
     avg_rooms_per_session: float
@@ -418,11 +418,11 @@ Uses **Server-Sent Events (SSE)** to push updates to the browser as new log even
 # File watcher using watchdog or polling
 class SessionWatcher:
     """Watches logs/sessions/ for new lines in JSONL files."""
-    
+
     def __init__(self, log_dir: Path):
         self.log_dir = log_dir
         self.file_positions: dict[Path, int] = {}  # Track read position per file
-    
+
     def poll(self) -> list[LogEvent]:
         """Return new events since last poll."""
         new_events = []

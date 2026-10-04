@@ -426,8 +426,8 @@ The golden rule is to keep the spec and the implementation in sync. Contract-fir
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Advance to Level 1000 - Cloud Computing  
-**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)  
+**💻 Software Developer**: Advance to Level 1000 - Cloud Computing
+**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)
 **🛡️ Security Specialist**: Revisit [API Authentication](/quests/0111/api-authentication/) and document its security schemes
 
 ## 📚 Resources

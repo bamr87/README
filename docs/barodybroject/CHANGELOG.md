@@ -110,7 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added keyboard navigation support with `onkeydown` handlers
   - Added `tabindex` and `role="link"` for clickable table rows
   - Added proper `scope="col"` to table headers
-  
+
 - **Form Structure**: Fixed HTML validation issues
   - Removed nested forms by separating action buttons from main forms
   - Improved button styling with consistent `w-100` class
@@ -159,7 +159,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **PyYAML**: Unpinned → 6.0.2
   - **jsonschema**: Unpinned → 4.23.0
   - **martor**: Unpinned → 1.6.44
-  
+
 - **Development Dependencies**: Upgraded all development tools to latest versions
   - **pytest**: Unpinned → 8.3.4
   - **pytest-django**: Unpinned → 4.9.0

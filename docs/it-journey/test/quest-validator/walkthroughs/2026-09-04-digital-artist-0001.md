@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-09-04T00:00:00.000Z'
 level: '0001'
@@ -23,6 +24,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 09 04 Digital Artist 0001
 ---
+# 2026 09 04 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 I walked **window 3 of 6** of the **Digital Artist (UI/UX) → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path, backed by the workflow's sealed execute-mode engine evidence — real commands run for real in a disposable sandbox, not model assertions. The window covers 5 quests: *Forging the Stats Portal* (data analytics), *Terminal Mastery*, *Forge Your Character*, *Avatar Forge*, and *Badge Collector* — the last four form a genuine, frontmatter-declared contributor-identity arc; the first stands alone.

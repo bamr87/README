@@ -3972,26 +3972,26 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Added `docs/PRD.md` with complete product specifications
   - Includes vision statement, key differentiators, and metrics
   - Documents AI-powered features and privacy-first principles
-  
+
 - **Documentation: Sidebar Improvements Summary** - Complete implementation documentation for sidebar enhancements
   - Added `docs/SIDEBAR_IMPROVEMENTS.md` documenting UI/UX modernization
   - Details scroll spy fixes, mobile TOC button positioning
   - Documents responsive design improvements and accessibility features
-  
+
 - **Documentation: Theme Version Implementation** - Theme version display system documentation
-  - Added `docs/THEME_VERSION_IMPLEMENTATION.md` 
+  - Added `docs/THEME_VERSION_IMPLEMENTATION.md`
   - Documents automatic version extraction from gem specification
   - Explains modal integration and footer access points
-  
+
 - **Content: Privacy Policy Page** - GDPR/CCPA compliant privacy policy
   - Added `pages/privacy-policy.md` with comprehensive privacy documentation
   - Details PostHog analytics data collection practices
   - Explains user rights and data protection measures
-  
+
 - **Content: Terms of Service Page** - Legal terms for site usage
-  - Added `pages/terms-of-service.md` 
+  - Added `pages/terms-of-service.md`
   - Provides basic terms framework for site operators
-  
+
 - **Testing: Notebook Conversion Test Script** - Automated testing for Jupyter notebook conversion
   - Added `test/test-notebook-conversion.sh` for notebook workflow testing
   - Validates Python/nbconvert installation in Docker
@@ -4233,7 +4233,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Consistent handling of absolute paths and external URLs
   - Supports custom classes, styles, and lazy loading
   - Eliminates duplicated image rendering logic across layouts
-  
+
 - **New Script: `validate_preview_urls.py`** (`scripts/lib/validate_preview_urls.py`, 400+ lines)
   - Python-based validation for preview image URLs in frontmatter
   - Checks URL format (must start with `/`)
@@ -4242,7 +4242,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Detects empty, null, or malformed preview values
   - JSON output support for CI integration
   - Standalone CLI tool with `--verbose`, `--suggestions`, `--list-missing` options
-  
+
 - **New Test Category: Content Quality Tests** in Quality Assurance Suite
   - Added `test_preview_image_urls()` function to `test/test_quality.sh`
   - Validates all preview URLs in content frontmatter during test runs
@@ -4293,7 +4293,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - Schema.org TechArticle markup for SEO
     - Download original `.ipynb` link
     - Giscus comments integration
-    
+
   - **New Stylesheet: `notebooks.scss`** (`_sass/notebooks.scss`, 450+ lines)
     - Code cell styling with execution counts
     - Output area formatting (text, images, tables, errors)
@@ -4301,7 +4301,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - Responsive design with mobile breakpoints (@media max-width: 768px)
     - Dark mode support
     - Bootstrap 5 variable integration
-    
+
   - **New Conversion Script: `convert-notebooks.sh`** (`scripts/convert-notebooks.sh`, 408 lines)
     - Converts `.ipynb` files to Jekyll-compatible Markdown
     - Extracts images to `/assets/images/notebooks/`
@@ -4309,21 +4309,21 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - JSON-based metadata parsing to avoid delimiter issues
     - CLI options: `--force`, `--dry-run`, `--list`, `--clean`, `--verbose`
     - Follows project script patterns with colored logging
-    
+
   - **New GitHub Actions Workflow** (`.github/workflows/convert-notebooks.yml`, 220+ lines)
     - Triggers on push/PR to `pages/_notebooks/**.ipynb`
     - Dry-run mode for pull requests
     - Automatic conversion and commit on main/develop branches
     - Validation job checks markdown and image references
     - Commits with `[skip ci]` to prevent loops
-    
+
   - **New Documentation** (`docs/JUPYTER_NOTEBOOKS.md`)
     - Complete feature documentation
     - Usage examples and workflow
     - Troubleshooting guide
     - Architecture explanation
     - File manifest
-    
+
   - **New Test Suite** (`test-notebook-conversion.sh`, 150+ lines)
     - 8-step automated validation
     - Docker status, Python/nbconvert checks

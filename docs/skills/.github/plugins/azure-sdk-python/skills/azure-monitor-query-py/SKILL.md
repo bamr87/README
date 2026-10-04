@@ -203,13 +203,13 @@ from azure.identity.aio import DefaultAzureCredential
 async def query_logs():
     credential = DefaultAzureCredential()
     client = LogsQueryClient(credential)
-    
+
     response = await client.query_workspace(
         workspace_id=workspace_id,
         query="AppRequests | take 10",
         timespan=timedelta(hours=1)
     )
-    
+
     await client.close()
     await credential.close()
     return response

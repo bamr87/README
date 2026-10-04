@@ -267,7 +267,7 @@ nofollow: false               # Don't follow links
 ---
 sidebar:
   nav: docs                   # Use named navigation from _data/navigation/
-  
+
 # OR auto-generate based on content
 sidebar:
   nav: auto
@@ -364,7 +364,7 @@ defaults:
       comments: true
       share: true
 
-  # Notes collection  
+  # Notes collection
   - scope:
       path: pages/_notes
       type: notes

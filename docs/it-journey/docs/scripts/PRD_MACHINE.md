@@ -6,9 +6,9 @@ title: PRD MACHINE Documentation
 
 *The Self-Writing, Self-Evolving Product Reality Distillery*
 
-**Version:** 1.0.0  
-**Last Updated:** 2025-11-28  
-**Status:** Active  
+**Version:** 1.0.0
+**Last Updated:** 2025-11-28
+**Status:** Active
 **Location:** `scripts/prd-machine/`
 
 ---
@@ -333,7 +333,7 @@ on:
   # Sync every 6 hours for freshness
   schedule:
     - cron: '0 */6 * * *'
-  
+
   # Sync on content changes
   push:
     branches: [main, master]
@@ -342,7 +342,7 @@ on:
       - 'pages/_posts/**'
       - 'features/**'
       - 'docs/**'
-  
+
   # Manual trigger
   workflow_dispatch:
 ```
@@ -365,14 +365,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Full history for signal ingestion
-      
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Sync PRD
         run: ./scripts/prd-machine/prd-machine sync
-      
+
       - name: Commit Changes
         run: |
           git config user.name "PRD Machine"
@@ -414,7 +414,7 @@ signals:
 
 output:
   path: "PRD.md"
-  
+
 automation:
   conflict_threshold: 3
   auto_issue: true
@@ -584,16 +584,16 @@ Main class for PRD generation.
 
 ## FAQ
 
-**Q: How often should I run `prd-machine sync`?**  
+**Q: How often should I run `prd-machine sync`?**
 A: The GitHub Actions workflow runs every 6 hours automatically. Manual sync is only needed for immediate updates.
 
-**Q: Can PRD Machine replace my PM?**  
+**Q: Can PRD Machine replace my PM?**
 A: No. PRD Machine distills existing signals into documentation. Product sense and strategy still require human insight.
 
-**Q: What happens if there are conflicts?**  
+**Q: What happens if there are conflicts?**
 A: Conflicts are reported via `prd-machine conflicts` and can create GitHub issues in CI/CD. Humans resolve conflicts manually.
 
-**Q: Can I customize the PRD format?**  
+**Q: Can I customize the PRD format?**
 A: Currently, the format is fixed. Custom templates are planned for v2.0.
 
 ---

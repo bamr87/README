@@ -70,7 +70,7 @@ defaults:
     values:
       layout: article
       author: default
-      
+
   # Documentation
   - scope:
       path: "pages/_docs"
@@ -79,7 +79,7 @@ defaults:
       layout: default
       sidebar:
         nav: docs
-        
+
   # Notebooks
   - scope:
       path: "pages/_notebooks"

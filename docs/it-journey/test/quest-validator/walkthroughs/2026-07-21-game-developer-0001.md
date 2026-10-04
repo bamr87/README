@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-21 00:00:00+00:00
 level: '0001'
@@ -20,6 +21,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 21 Game Developer 0001
 ---
+# 2026 07 21 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 26 quests) of the **Game Developer → Level 0001 "Web Fundamentals" (🌱 Apprentice)** slice as a learner would, in the dependency-sorted order the planner chose. Evidence was sealed by the workflow's deterministic execute engine (`--mode execute`); I consumed `walk-evidence.json`/`.md` as-is and did not re-run the engine.

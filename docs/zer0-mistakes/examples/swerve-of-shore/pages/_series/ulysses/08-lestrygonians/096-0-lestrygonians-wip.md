@@ -1,4 +1,5 @@
 ---
+
 categories:
 - Ulysses - 08 - Lestrygonians
 date: 2025-02-10
@@ -15,6 +16,8 @@ sub-title: Episode 8 · Lestrygonians
 title: 096 0 Lestrygonians Wip
 wip: true
 ---
+# 096 0 Lestrygonians Wip
+
 An in-progress entry in the *Episode 8 · Lestrygonians* thread on [Swerve of Shore](https://www.swerveofshore.com/post/096-0-lestrygonians-wip), by Brandon Nicklaus.
 
 > Ben Dollard: A well known tenor - “He has legs like barrels” “Big Ben””Barreltone”

@@ -90,11 +90,11 @@ layout: default
       <span class="time">{{ page.estimated_time }}</span>
     </div>
   </header>
-  
+
   <div class="tutorial-content">
     {{ content }}
   </div>
-  
+
   {% if page.next_tutorial %}
   <footer class="tutorial-footer">
     <a href="{{ page.next_tutorial }}">Next Tutorial →</a>

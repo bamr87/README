@@ -5,8 +5,8 @@ title: Product Requirements Document (PRD)
 # Product Requirements Document (PRD)
 ## Parody News Generator - Barodybroject
 
-**Version:** 0.4.0  
-**Last Updated:** 2025-12-20  
+**Version:** 0.4.0
+**Last Updated:** 2025-12-20
 **Status:** Production (Deployed on Azure Container Apps)
 
 ---
@@ -1268,7 +1268,7 @@ The Parody News Generator follows a three-tier architecture:
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: January 2025  
+**Document Version**: 1.0
+**Last Updated**: January 2025
 **Next Review**: April 2025
 

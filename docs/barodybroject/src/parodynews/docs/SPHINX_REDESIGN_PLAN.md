@@ -298,7 +298,7 @@ extensions = [
     'sphinx.ext.doctest',           # Test code examples
     'sphinx.ext.duration',          # Build time measurement
     'sphinx.ext.githubpages',       # GitHub Pages integration
-    
+
     # Third-party extensions
     'sphinx_rtd_theme',             # Read the Docs theme
     'sphinx_copybutton',            # Copy button for code blocks
@@ -340,7 +340,7 @@ autodoc_typehints_format = 'short'
 # Intersphinx mapping (link to other docs)
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
-    'django': ('https://docs.djangoproject.com/en/stable/', 
+    'django': ('https://docs.djangoproject.com/en/stable/',
                'https://docs.djangoproject.com/en/stable/_objects/'),
     'drf': ('https://www.django-rest-framework.org/', None),
     'openai': ('https://platform.openai.com/docs/', None),
@@ -693,30 +693,30 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-    
+
     - name: Install dependencies
       run: |
         pip install -r src/parodynews/docs/requirements.txt
-    
+
     - name: Build documentation
       run: |
         cd src/parodynews/docs
         make clean
         make html
-    
+
     - name: Check documentation coverage
       run: |
         cd src/parodynews/docs
         make coverage
-    
+
     - name: Deploy to GitHub Pages
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3

@@ -571,8 +571,8 @@ This is your on-ramp to the next quest, where Compose wires *several* containers
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)  
-**🏗️ System Engineer**: Explore image hardening and registries in depth  
+**💻 Software Developer**: Continue to [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)
+**🏗️ System Engineer**: Explore image hardening and registries in depth
 **🛡️ Security Specialist**: Study minimal base images and image scanning
 
 ## 📚 Resources

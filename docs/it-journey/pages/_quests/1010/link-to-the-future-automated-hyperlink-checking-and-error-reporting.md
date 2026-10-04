@@ -132,7 +132,7 @@ sudo apt update
 sudo apt install nodejs npm curl jq
 npm install -g markdown-link-check
 
-# CentOS/RHEL/Fedora installation  
+# CentOS/RHEL/Fedora installation
 sudo dnf install nodejs npm curl jq
 npm install -g markdown-link-check
 ```
@@ -207,7 +207,7 @@ normalize_url() {
     if [[ -z "$url" || "$url" =~ ^# || "$url" =~ ^mailto: ]]; then
         return 1
     fi
-    
+
     # Convert relative URLs to absolute
     if [[ "$url" =~ ^/ ]]; then
         echo "${SITE_URL}${url}"
@@ -222,11 +222,11 @@ normalize_url() {
 test_url() {
     local url="$1"
     local output_file="$2"
-    
+
     local status_code
     local response_time
     local error_message=""
-    
+
     # Use curl to test the URL
     if response=$(curl -s -o /dev/null -w "%{http_code}|%{time_total}" \
                       --max-time "$TIMEOUT" \
@@ -239,16 +239,16 @@ test_url() {
         response_time="0"
         error_message="$response"
     fi
-    
+
     # Determine if link is broken
     local status="PASS"
     if [[ "$status_code" == "ERROR" ]] || [[ "$status_code" -ge 400 ]]; then
         status="FAIL"
     fi
-    
+
     # Output result in structured format
     echo "$(date -u +"%Y-%m-%d %H:%M:%S")|$url|$status_code|$response_time|$status|$error_message" >> "$output_file"
-    
+
     if [[ "$status" == "FAIL" ]]; then
         echo "❌ BROKEN: $url (Status: $status_code)"
     else
@@ -261,59 +261,59 @@ scan_site_links() {
     local all_links_file="$OUTPUT_DIR/all_links.txt"
     local unique_links_file="$OUTPUT_DIR/unique_links.txt"
     local results_file="$OUTPUT_DIR/test_results.csv"
-    
+
     echo "🔍 Extracting links from markdown files..."
     > "$all_links_file"  # Clear file
-    
+
     while IFS= read -r file; do
         echo "Scanning: $file"
         extract_markdown_links "$file" >> "$all_links_file"
     done < <(find_markdown_files)
-    
+
     echo "🔍 Extracting links from HTML files..."
     while IFS= read -r file; do
         echo "Scanning: $file"
         extract_html_links "$file" >> "$all_links_file"
     done < <(find_html_files)
-    
+
     echo "🔧 Normalizing and deduplicating URLs..."
     > "$unique_links_file"  # Clear file
-    
+
     while IFS= read -r url; do
         if normalized_url=$(normalize_url "$url"); then
             echo "$normalized_url" >> "$unique_links_file"
         fi
     done < "$all_links_file"
-    
+
     sort "$unique_links_file" | uniq > "$unique_links_file.tmp"
     mv "$unique_links_file.tmp" "$unique_links_file"
-    
+
     local total_links
     total_links=$(wc -l < "$unique_links_file")
     echo "📊 Found $total_links unique links to test"
-    
+
     # Initialize results file with header
     echo "timestamp|url|status_code|response_time|status|error_message" > "$results_file"
-    
+
     echo "🧪 Testing links (max $MAX_PARALLEL parallel)..."
-    
+
     # Test URLs in parallel batches
     local count=0
     while IFS= read -r url; do
         ((count++))
         echo "[$count/$total_links] Testing: $url"
-        
+
         # Run in background for parallel processing
         test_url "$url" "$results_file" &
-        
+
         # Limit parallel processes
         if (( count % MAX_PARALLEL == 0 )); then
             wait  # Wait for current batch to complete
         fi
     done < "$unique_links_file"
-    
+
     wait  # Wait for any remaining background processes
-    
+
     echo "✅ Link testing complete! Results saved to $results_file"
 }
 
@@ -321,21 +321,21 @@ scan_site_links() {
 generate_summary() {
     local results_file="$OUTPUT_DIR/test_results.csv"
     local summary_file="$OUTPUT_DIR/summary.json"
-    
+
     if [[ ! -f "$results_file" ]]; then
         echo "❌ Results file not found: $results_file"
         return 1
     fi
-    
+
     # Skip header line and calculate statistics
     local total_links
     local broken_links
     local working_links
-    
+
     total_links=$(tail -n +2 "$results_file" | wc -l)
     broken_links=$(tail -n +2 "$results_file" | grep -c "|FAIL|" || echo "0")
     working_links=$((total_links - broken_links))
-    
+
     # Create JSON summary for AI analysis
     cat > "$summary_file" << EOF
 {
@@ -347,7 +347,7 @@ generate_summary() {
   "success_rate": $(echo "scale=2; $working_links * 100 / $total_links" | bc -l 2>/dev/null || echo "0"),
   "broken_link_details": [
 EOF
-    
+
     # Add broken link details
     local first=true
     while IFS='|' read -r timestamp url status_code response_time status error_message; do
@@ -366,13 +366,13 @@ EOF
     }EOF
         fi
     done < <(tail -n +2 "$results_file")
-    
+
     cat >> "$summary_file" << EOF
 
   ]
 }
 EOF
-    
+
     echo "📊 Summary generated: $summary_file"
     echo "📈 Statistics:"
     echo "   Total Links: $total_links"
@@ -385,7 +385,7 @@ EOF
 main() {
     scan_site_links
     generate_summary
-    
+
     echo "🎉 Hyperlink Guardian scan complete!"
     echo "📁 Results available in: $OUTPUT_DIR"
 }
@@ -443,55 +443,55 @@ jobs:
     permissions:
       contents: read
       issues: write
-    
+
     steps:
     - name: 🏰 Checkout Repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0  # Full history for change detection
-    
+
     - name: 🔧 Setup Node.js Environment
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-    
+
     - name: 📦 Install Dependencies
       run: |
         npm install -g markdown-link-check
         sudo apt-get update
         sudo apt-get install -y curl jq bc
-    
+
     - name: 🛠️ Prepare Hyperlink Guardian Script
       run: |
         # Create the link checking script
         cat > hyperlink-guardian.sh << 'SCRIPT_EOF'
         #!/bin/bash
         set -euo pipefail
-        
+
         # Configuration
         SITE_URL="${SITE_URL:-https://bamr87.github.io/it-journey}"
         OUTPUT_DIR="${OUTPUT_DIR:-./link-check-results}"
         MAX_PARALLEL="${MAX_PARALLEL:-10}"
         TIMEOUT="${TIMEOUT:-30}"
-        
+
         mkdir -p "$OUTPUT_DIR"
-        
+
         echo "🔍 Hyperlink Guardian: Beginning domain scan..."
         echo "Target domain: $SITE_URL"
         echo "Timestamp: $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
-        
+
         # Function definitions from Chapter 1 script...
         # [Include all the functions from the previous script here]
-        
+
         # Main execution
         scan_site_links() {
             # Implement the scanning logic here
             # This is a simplified version - use the full implementation from Chapter 1
-            
+
             local results_file="$OUTPUT_DIR/test_results.csv"
             echo "timestamp|url|status_code|response_time|status|error_message" > "$results_file"
-            
+
             # Find all markdown files and extract links
             find . -name "*.md" -o -name "*.markdown" | grep -v node_modules | grep -v .git | while read file; do
                 echo "Scanning: $file"
@@ -508,15 +508,15 @@ jobs:
                 done
             done
         }
-        
+
         generate_summary() {
             local results_file="$OUTPUT_DIR/test_results.csv"
             local summary_file="$OUTPUT_DIR/summary.json"
-            
+
             local total_links=$(tail -n +2 "$results_file" | wc -l)
             local broken_links=$(tail -n +2 "$results_file" | grep -c "|FAIL|" || echo "0")
             local working_links=$((total_links - broken_links))
-            
+
             cat > "$summary_file" << EOF
         {
           "scan_timestamp": "$(date -u +"%Y-%m-%d %H:%M:%S UTC")",
@@ -531,28 +531,28 @@ jobs:
         }
         EOF
         }
-        
+
         main() {
             scan_site_links
             generate_summary
             echo "🎉 Hyperlink Guardian scan complete!"
         }
-        
+
         main "$@"
         SCRIPT_EOF
-        
+
         chmod +x hyperlink-guardian.sh
-    
+
     - name: 🔍 Execute Hyperlink Guardian Scan
       run: |
         echo "🚀 Starting comprehensive link health check..."
         ./hyperlink-guardian.sh
-        
+
         echo "📊 Scan Results:"
         if [[ -f "$OUTPUT_DIR/summary.json" ]]; then
           cat "$OUTPUT_DIR/summary.json" | jq '.'
         fi
-    
+
     - name: 📁 Upload Scan Results as Artifacts
       uses: actions/upload-artifact@v4
       with:
@@ -560,17 +560,17 @@ jobs:
         path: |
           ${% raw %}{{ env.OUTPUT_DIR }}{% endraw %}/
         retention-days: 30
-    
+
     - name: 🤖 Prepare AI Analysis Data
       id: prepare-analysis
       run: |
         # Create a comprehensive data package for AI analysis
         ANALYSIS_DIR="./ai-analysis-input"
         mkdir -p "$ANALYSIS_DIR"
-        
+
         # Copy scan results
         cp -r "$OUTPUT_DIR"/* "$ANALYSIS_DIR/"
-        
+
         # Add repository context
         cat > "$ANALYSIS_DIR/repository_context.json" << EOF
         {
@@ -582,23 +582,23 @@ jobs:
           "site_url": "$SITE_URL"
         }
         EOF
-        
+
         # Add recent commit history for context
         git log --oneline -10 > "$ANALYSIS_DIR/recent_commits.txt"
-        
+
         # Check if there are broken links
         BROKEN_COUNT=$(jq -r '.broken_links' "$OUTPUT_DIR/summary.json" 2>/dev/null || echo "0")
         echo "broken_count=$BROKEN_COUNT" >> $GITHUB_OUTPUT
-        
+
         # Create analysis prompt
         cat > "$ANALYSIS_DIR/analysis_prompt.txt" << EOF
         Please analyze the hyperlink health scan results for the IT-Journey repository.
-        
+
         Context:
         - This is a Jekyll-based GitHub Pages educational site
         - The site contains technical documentation, tutorials, and learning quests
         - Links may be to external documentation, GitHub repositories, tools, or internal content
-        
+
         Analysis Requirements:
         1. Summarize the overall link health status
         2. Categorize broken links by type (external sites, GitHub repos, documentation, etc.)
@@ -607,13 +607,13 @@ jobs:
         5. Suggest specific remediation actions for each broken link
         6. Recommend preventive measures to avoid future link rot
         7. Assess the impact on user experience and learning outcomes
-        
+
         Please provide actionable insights that help maintain the educational value of this learning platform.
         EOF
-        
+
         echo "🤖 AI analysis data prepared in $ANALYSIS_DIR"
         ls -la "$ANALYSIS_DIR"
-    
+
     outputs:
       broken_count: ${% raw %}{{ steps.prepare-analysis.outputs.broken_count }}{% endraw %}
 
@@ -625,17 +625,17 @@ jobs:
     permissions:
       contents: read
       issues: write
-    
+
     steps:
     - name: 🏰 Checkout Repository
       uses: actions/checkout@v4
-    
+
     - name: 📥 Download Scan Results
       uses: actions/download-artifact@v4
       with:
         name: link-health-results-${% raw %}{{ github.run_number }}{% endraw %}
         path: ./analysis-input
-    
+
     - name: 🧠 Execute AI Analysis
       id: ai-analysis
       env:
@@ -647,47 +647,47 @@ jobs:
         import os
         import sys
         from datetime import datetime
-        
+
         try:
             import openai
         except ImportError:
             print("Installing OpenAI library...")
             os.system("pip install openai")
             import openai
-        
+
         def analyze_link_health():
             # Load scan results
             with open('./analysis-input/summary.json', 'r') as f:
                 summary = json.load(f)
-            
+
             # Load repository context
             with open('./analysis-input/repository_context.json', 'r') as f:
                 repo_context = json.load(f)
-            
+
             # Load analysis prompt
             with open('./analysis-input/analysis_prompt.txt', 'r') as f:
                 base_prompt = f.read()
-            
+
             # Prepare data for AI analysis
             analysis_data = {
                 "scan_summary": summary,
                 "repository_context": repo_context,
                 "analysis_prompt": base_prompt
             }
-            
+
             # Configure OpenAI client
             client = openai.OpenAI(api_key=os.environ['OPENAI_API_KEY'])
-            
+
             # Create analysis prompt
             prompt = f"""
             {base_prompt}
-            
+
             Scan Results Summary:
             {json.dumps(summary, indent=2)}
-            
+
             Repository Context:
             {json.dumps(repo_context, indent=2)}
-            
+
             Please provide a comprehensive analysis in JSON format with the following structure:
             ```json
             {
@@ -709,7 +709,7 @@ jobs:
               "impact_assessment": "description of impact on users"
             }}
             """
-            
+
             # Make API call
             response = client.chat.completions.create(
                 model="gpt-4",
@@ -719,10 +719,10 @@ jobs:
                 ],
                 max_tokens=2000
             )
-            
+
             # Extract and save analysis
             analysis_result = response.choices[0].message.content
-            
+
             # Try to parse as JSON, fallback to text if needed
             try:
                 analysis_json = json.loads(analysis_result)
@@ -733,9 +733,9 @@ jobs:
                 with open('./ai_analysis_result.txt', 'w') as f:
                     f.write(analysis_result)
                 analysis_json = {"raw_analysis": analysis_result}
-            
+
             return analysis_json
-        
+
         if __name__ == "__main__":
             try:
                 result = analyze_link_health()
@@ -745,16 +745,16 @@ jobs:
                 print(f"❌ AI analysis failed: {str(e)}")
                 sys.exit(1)
         PYTHON_EOF
-        
+
         python ai_analyzer.py
-        
+
         # Set output for next step
         if [[ -f "./ai_analysis_result.json" ]]; then
           echo "analysis_file=ai_analysis_result.json" >> $GITHUB_OUTPUT
         else
           echo "analysis_file=ai_analysis_result.txt" >> $GITHUB_OUTPUT
         fi
-    
+
     - name: 📋 Create GitHub Issue with Analysis
       uses: actions/GitHub-script@v7
       env:
@@ -763,10 +763,10 @@ jobs:
         script: |
           const fs = require('fs');
           const path = require('path');
-          
+
           // Load scan summary
           const summary = JSON.parse(fs.readFileSync('./analysis-input/summary.json', 'utf8'));
-          
+
           // Load AI analysis
           let aiAnalysis;
           const analysisPath = `./${process.env.ANALYSIS_FILE}`;
@@ -775,36 +775,36 @@ jobs:
           } else {
             aiAnalysis = { raw_analysis: fs.readFileSync(analysisPath, 'utf8') };
           }
-          
+
           // Create issue body
           let issueBody = `# 🔗 Hyperlink Guardian Report
-          
+
           **Scan Date**: ${summary.scan_timestamp}
           **Repository**: ${summary.repository || context.repo.owner + '/' + context.repo.repo}
           **Site URL**: ${summary.site_url}
-          
+
           ## 📊 Summary Statistics
-          
+
           - **Total Links Tested**: ${summary.total_links}
           - **Working Links**: ${summary.working_links}
           - **Broken Links**: ${summary.broken_links}
           - **Success Rate**: ${summary.success_rate}%
-          
+
           `;
-          
+
           if (summary.broken_links > 0) {
             issueBody += `## ❌ Broken Links Detected
-          
+
           `;
-            
+
             if (aiAnalysis.broken_links_analysis) {
               issueBody += `### 🧠 AI Analysis & Recommendations
-          
+
           **Executive Summary**: ${aiAnalysis.executive_summary || 'Analysis completed'}
-          
+
           #### Broken Link Details:
           `;
-              
+
               aiAnalysis.broken_links_analysis.forEach((link, index) => {
                 issueBody += `
           **${index + 1}. ${link.url}**
@@ -812,72 +812,72 @@ jobs:
           - **Root Cause**: ${link.root_cause || 'Analysis pending'}
           - **Recommended Action**: ${link.recommended_action || 'Manual review required'}
           - **Priority**: ${link.priority || 'Medium'}
-          
+
           `;
               });
-              
+
               if (aiAnalysis.patterns_identified && aiAnalysis.patterns_identified.length > 0) {
                 issueBody += `#### 🔍 Patterns Identified:
           ${aiAnalysis.patterns_identified.map(pattern => `- ${pattern}`).join('\n')}
-          
+
           `;
               }
-              
+
               if (aiAnalysis.preventive_measures && aiAnalysis.preventive_measures.length > 0) {
                 issueBody += `#### 🛡️ Preventive Measures:
           ${aiAnalysis.preventive_measures.map(measure => `- ${measure}`).join('\n')}
-          
+
           `;
               }
-              
+
               if (aiAnalysis.overall_recommendations && aiAnalysis.overall_recommendations.length > 0) {
                 issueBody += `#### 💡 Overall Recommendations:
           ${aiAnalysis.overall_recommendations.map(rec => `- ${rec}`).join('\n')}
-          
+
           `;
               }
-              
+
               if (aiAnalysis.impact_assessment) {
                 issueBody += `#### 📈 Impact Assessment:
           ${aiAnalysis.impact_assessment}
-          
+
           `;
               }
             } else if (aiAnalysis.raw_analysis) {
               issueBody += `### 🧠 AI Analysis:
-          
+
           ${aiAnalysis.raw_analysis}
           `;
             }
-            
+
             if (summary.broken_link_details && summary.broken_link_details.length > 0) {
               issueBody += `### 📋 Raw Link Test Results:
-          
+
           | URL | Status Code | Error Message |
           |-----|-------------|---------------|
           `;
-              
+
               summary.broken_link_details.forEach(link => {
                 issueBody += `| ${link.url} | ${link.status_code} | ${link.error_message || 'N/A'} |\n`;
               });
             }
           } else {
             issueBody += `## ✅ All Links Healthy
-          
+
           Great news! All ${summary.total_links} links are working correctly.
           `;
           }
-          
+
           issueBody += `
-          
+
           ---
-          
+
           **Workflow Run**: [#${context.runNumber}](${context.payload.repository.html_url}/actions/runs/${context.runId})
           **Commit**: ${context.sha.substring(0, 7)}
-          
+
           This issue was automatically created by the Hyperlink Guardian workflow. 🤖
           `;
-          
+
           // Create the issue
           const issue = await github.rest.issues.create({
             owner: context.repo.owner,
@@ -886,7 +886,7 @@ jobs:
             body: issueBody,
             labels: summary.broken_links > 0 ? ['bug', 'links', 'automated-report'] : ['maintenance', 'links', 'automated-report']
           });
-          
+
           console.log(`Created issue: ${issue.data.html_url}`);
 
   cleanup:
@@ -897,11 +897,11 @@ jobs:
     permissions:
       contents: read
       issues: write
-    
+
     steps:
     - name: 🏰 Checkout Repository
       uses: actions/checkout@v4
-    
+
     - name: 🗑️ Close Old Link Health Issues
       uses: actions/GitHub-script@v7
       with:
@@ -913,10 +913,10 @@ jobs:
             labels: 'automated-report,links',
             state: 'open'
           });
-          
+
           // Close issues older than 7 days
           const oneWeekAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-          
+
           for (const issue of issues) {
             const issueDate = new Date(issue.created_at);
             if (issueDate < oneWeekAgo) {
@@ -926,14 +926,14 @@ jobs:
                 issue_number: issue.number,
                 state: 'closed'
               });
-              
+
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
                 body: 'Automatically closed by Hyperlink Guardian - report is more than 7 days old. 🤖'
               });
-              
+
               console.log(`Closed old issue: #${issue.number}`);
             }
           }
@@ -988,22 +988,22 @@ class HyperlinkIntelligenceEngine:
     """
     Advanced AI-powered analysis engine for hyperlink health intelligence
     """
-    
+
     def __init__(self, api_key: str):
         self.client = openai.OpenAI(api_key=api_key)
         self.analysis_timestamp = datetime.utcnow().isoformat()
-    
+
     def load_scan_data(self, input_dir: str) -> Dict:
         """Load all scan data and context for analysis"""
         try:
             # Load primary scan results
             with open(f"{input_dir}/summary.json", 'r') as f:
                 summary = json.load(f)
-            
+
             # Load repository context
             with open(f"{input_dir}/repository_context.json", 'r') as f:
                 repo_context = json.load(f)
-            
+
             # Load detailed test results if available
             detailed_results = []
             results_file = f"{input_dir}/test_results.csv"
@@ -1021,18 +1021,18 @@ class HyperlinkIntelligenceEngine:
                                 'status': parts[4],
                                 'error_message': parts[5] if len(parts) > 5 else ''
                             })
-            
+
             return {
                 'summary': summary,
                 'repository_context': repo_context,
                 'detailed_results': detailed_results,
                 'analysis_timestamp': self.analysis_timestamp
             }
-            
+
         except Exception as e:
             logger.error(f"Failed to load scan data: {str(e)}")
             raise
-    
+
     def categorize_broken_links(self, broken_links: List[Dict]) -> Dict[str, List[Dict]]:
         """Categorize broken links by type and domain for pattern analysis"""
         categories = {
@@ -1045,16 +1045,16 @@ class HyperlinkIntelligenceEngine:
             'temporary_failures': [],
             'unknown': []
         }
-        
+
         for link in broken_links:
             url = link.get('url', '')
             status_code = link.get('status_code', '')
             error_message = link.get('error_message', '')
-            
+
             # Parse URL for analysis
             parsed = urlparse(url)
             domain = parsed.netloc.lower()
-            
+
             # Categorization logic
             if 'github.com' in domain or 'gitlab.com' in domain:
                 categories['github_repositories'].append(link)
@@ -1073,52 +1073,52 @@ class HyperlinkIntelligenceEngine:
                 categories['deprecated_services'].append(link)
             else:
                 categories['unknown'].append(link)
-        
+
         # Remove empty categories
         return {k: v for k, v in categories.items() if v}
-    
+
     def identify_patterns(self, scan_data: Dict) -> List[str]:
         """Identify patterns in link failures"""
         patterns = []
         broken_links = scan_data['summary'].get('broken_link_details', [])
-        
+
         if not broken_links:
             return patterns
-        
+
         # Domain pattern analysis
         domains = {}
         for link in broken_links:
             domain = urlparse(link.get('url', '')).netloc
             domains[domain] = domains.get(domain, 0) + 1
-        
+
         # Check for domain-specific issues
         for domain, count in domains.items():
             if count > 1:
                 patterns.append(f"Multiple failures from domain: {domain} ({count} links)")
-        
+
         # Status code pattern analysis
         status_codes = {}
         for link in broken_links:
             code = link.get('status_code', '')
             status_codes[code] = status_codes.get(code, 0) + 1
-        
+
         for code, count in status_codes.items():
             if count > 2:
                 patterns.append(f"Frequent {code} errors ({count} occurrences)")
-        
+
         # Time-based patterns (if we had historical data)
         # This could be enhanced with trend analysis
-        
+
         return patterns
-    
+
     def generate_ai_analysis(self, scan_data: Dict) -> Dict:
         """Generate AI analysis of link health across all broken-link categories"""
-        
+
         # Prepare data for AI analysis
         broken_links = scan_data['summary'].get('broken_link_details', [])
         categorized_links = self.categorize_broken_links(broken_links)
         identified_patterns = self.identify_patterns(scan_data)
-        
+
         # Create detailed analysis prompt
         analysis_prompt = f"""
         As an expert DevOps engineer and technical content strategist, analyze this hyperlink health report for an educational IT platform.
@@ -1190,28 +1190,28 @@ class HyperlinkIntelligenceEngine:
         }
         ```
         """
-        
+
         try:
             # Make API call to AI service
             response = self.client.chat.completions.create(
                 model="gpt-4",
                 messages=[
                     {
-                        "role": "system", 
+                        "role": "system",
                         "content": "You are an expert DevOps engineer, technical writer, and educational content strategist with deep expertise in maintaining high-quality learning platforms. Provide actionable, specific, and technically sound recommendations."
                     },
                     {
-                        "role": "user", 
+                        "role": "user",
                         "content": analysis_prompt
                     }
                 ],
                 max_tokens=3000,
                 temperature=0.3  # Lower temperature for more focused, technical responses
             )
-            
+
             # Parse AI response
             ai_response = response.choices[0].message.content
-            
+
             try:
                 # Try to parse as JSON
                 analysis_result = json.loads(ai_response)
@@ -1227,7 +1227,7 @@ class HyperlinkIntelligenceEngine:
                         "raw_analysis": ai_response,
                         "analysis_status": "partial"
                     }
-            
+
             # Add metadata
             analysis_result['ai_analysis_metadata'] = {
                 'model_used': 'gpt-4',
@@ -1235,9 +1235,9 @@ class HyperlinkIntelligenceEngine:
                 'tokens_used': response.usage.total_tokens if hasattr(response, 'usage') else 'unknown',
                 'broken_links_analyzed': len(broken_links)
             }
-            
+
             return analysis_result
-            
+
         except Exception as e:
             logger.error(f"AI analysis failed: {str(e)}")
             # Return fallback analysis
@@ -1249,13 +1249,13 @@ class HyperlinkIntelligenceEngine:
                 "categories_identified": list(categorized_links.keys()),
                 "patterns_identified": identified_patterns
             }
-    
+
     def generate_actionable_report(self, analysis_result: Dict, scan_data: Dict) -> str:
         """Generate a detailed, actionable report for GitHub issues"""
-        
+
         summary = scan_data['summary']
         repo_context = scan_data['repository_context']
-        
+
         report = f"""# 🔗 Hyperlink Guardian Intelligence Report
 
 ## 📊 Executive Dashboard
@@ -1272,14 +1272,14 @@ class HyperlinkIntelligenceEngine:
 - 📈 **Success Rate**: {summary.get('success_rate', 0):.1f}%
 
 """
-        
+
         if analysis_result.get('executive_summary'):
             report += f"""## 🧠 AI Analysis Summary
 
 {analysis_result['executive_summary']}
 
 """
-        
+
         # Priority Actions Section
         if analysis_result.get('priority_actions'):
             report += f"""## 🎯 Priority Actions
@@ -1288,7 +1288,7 @@ class HyperlinkIntelligenceEngine:
             for i, action in enumerate(analysis_result['priority_actions'], 1):
                 priority_emoji = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(action.get('priority', 'medium'), "🟡")
                 effort_emoji = {"low": "⚡", "medium": "⚙️", "high": "🏗️"}.get(action.get('effort', 'medium'), "⚙️")
-                
+
                 report += f"""### {i}. {action.get('action', 'Action needed')}
 - **Priority**: {priority_emoji} {action.get('priority', 'Medium').title()}
 - **Effort**: {effort_emoji} {action.get('effort', 'Medium').title()}
@@ -1296,7 +1296,7 @@ class HyperlinkIntelligenceEngine:
 - **Timeline**: {action.get('timeline', 'Unknown')}
 
 """
-        
+
         # Category Analysis
         if analysis_result.get('category_analysis'):
             report += f"""## 📂 Broken Link Category Analysis
@@ -1304,7 +1304,7 @@ class HyperlinkIntelligenceEngine:
 """
             for category, details in analysis_result['category_analysis'].items():
                 impact_emoji = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(details.get('impact', 'medium'), "🟡")
-                
+
                 report += f"""### {category.replace('_', ' ').title()}
 - **Impact**: {impact_emoji} {details.get('impact', 'Medium').title()}
 - **Root Cause**: {details.get('root_cause', 'Analysis needed')}
@@ -1314,9 +1314,9 @@ class HyperlinkIntelligenceEngine:
 """
                 for action in details.get('recommended_actions', []):
                     report += f"- {action}\n"
-                
+
                 report += "\n"
-        
+
         # Technical Recommendations
         if analysis_result.get('technical_recommendations'):
             report += f"""## 🔧 Technical Recommendations
@@ -1324,13 +1324,13 @@ class HyperlinkIntelligenceEngine:
 """
             for i, rec in enumerate(analysis_result['technical_recommendations'], 1):
                 complexity_emoji = {"low": "🟢", "medium": "🟡", "high": "🔴"}.get(rec.get('implementation_complexity', 'medium'), "🟡")
-                
+
                 report += f"""### {i}. {rec.get('recommendation', 'Recommendation')}
 - **Complexity**: {complexity_emoji} {rec.get('implementation_complexity', 'Medium').title()}
 - **Justification**: {rec.get('justification', 'Details needed')}
 
 """
-        
+
         # Preventive Measures
         if analysis_result.get('preventive_measures'):
             report += f"""## 🛡️ Preventive Measures
@@ -1342,7 +1342,7 @@ class HyperlinkIntelligenceEngine:
 **Automation Potential**: {measure.get('automation_potential', 'Assessment needed')}
 
 """
-        
+
         # Educational Impact
         if analysis_result.get('educational_impact'):
             report += f"""## 📚 Educational Impact Assessment
@@ -1350,7 +1350,7 @@ class HyperlinkIntelligenceEngine:
 {analysis_result['educational_impact']}
 
 """
-        
+
         # Monitoring Suggestions
         if analysis_result.get('monitoring_suggestions'):
             report += f"""## 📊 Enhanced Monitoring Recommendations
@@ -1358,7 +1358,7 @@ class HyperlinkIntelligenceEngine:
 """
             for suggestion in analysis_result['monitoring_suggestions']:
                 report += f"- {suggestion}\n"
-        
+
         # Raw Data Section
         if summary.get('broken_link_details'):
             report += f"""## 📋 Detailed Link Test Results
@@ -1371,10 +1371,10 @@ class HyperlinkIntelligenceEngine:
                 status = link.get('status_code', 'Unknown')
                 error = link.get('error_message', 'N/A')[:50] + ('...' if len(link.get('error_message', '')) > 50 else '')
                 report += f"| {url} | {status} | {error} |\n"
-            
+
             if len(summary['broken_link_details']) > 20:
                 report += f"\n*Showing first 20 of {len(summary['broken_link_details'])} broken links*\n"
-        
+
         # Metadata footer
         report += f"""
 ---
@@ -1387,55 +1387,55 @@ class HyperlinkIntelligenceEngine:
 
 *This report was automatically generated by the Hyperlink Guardian with AI-powered analysis.*
 """
-        
+
         return report
 
 def main():
     """Main execution function for AI analysis"""
-    
+
     # Configuration
     input_dir = "./analysis-input"
     output_file = "./ai_analysis_result.json"
     report_file = "./analysis_report.md"
-    
+
     # Check for required environment variables
     api_key = os.environ.get('OPENAI_API_KEY')
     if not api_key:
         logger.error("OPENAI_API_KEY environment variable is required")
         sys.exit(1)
-    
+
     try:
         # Initialize AI engine
         logger.info("🧠 Initializing Hyperlink Intelligence Engine...")
         ai_engine = HyperlinkIntelligenceEngine(api_key)
-        
+
         # Load scan data
         logger.info("📂 Loading scan data...")
         scan_data = ai_engine.load_scan_data(input_dir)
-        
+
         # Generate AI analysis
         logger.info("🔍 Generating AI analysis...")
         analysis_result = ai_engine.generate_ai_analysis(scan_data)
-        
+
         # Save analysis result
         with open(output_file, 'w') as f:
             json.dump(analysis_result, f, indent=2)
         logger.info(f"💾 Analysis saved to {output_file}")
-        
+
         # Generate actionable report
         logger.info("📝 Generating actionable report...")
         report = ai_engine.generate_actionable_report(analysis_result, scan_data)
-        
+
         with open(report_file, 'w') as f:
             f.write(report)
         logger.info(f"📋 Report saved to {report_file}")
-        
+
         # Output summary for GitHub Actions
         broken_count = scan_data['summary'].get('broken_links', 0)
         logger.info(f"✅ Analysis complete! Found {broken_count} broken links.")
-        
+
         return analysis_result
-        
+
     except Exception as e:
         logger.error(f"❌ Analysis failed: {str(e)}")
         sys.exit(1)

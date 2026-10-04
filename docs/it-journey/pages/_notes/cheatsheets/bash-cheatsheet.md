@@ -107,7 +107,7 @@ in bash
 
 Multi-line comments use `:'` to open and `'` to close
 
-### Arguments 
+### Arguments
 {: .row-span-2 }
 
 | Expression  | Description                           |
@@ -257,7 +257,7 @@ SRC="/path/to/foo.cpp"
 ```
 
 ```bash
-BASEPATH=${SRC##*/}   
+BASEPATH=${SRC##*/}
 echo $BASEPATH  # => "foo.cpp"
 
 
@@ -694,10 +694,10 @@ set -o noclobber
 
 # Used to exit upon error
 # avoiding cascading errors
-set -o errexit   
+set -o errexit
 
 # Unveils hidden failures
-set -o pipefail  
+set -o pipefail
 
 # Exposes unset variables
 set -o nounset
@@ -706,23 +706,23 @@ set -o nounset
 ### Glob options
 
 ```bash
-# Non-matching globs are removed  
+# Non-matching globs are removed
 # ('*.foo' => '')
-shopt -s nullglob   
+shopt -s nullglob
 
 # Non-matching globs throw errors
-shopt -s failglob  
+shopt -s failglob
 
 # Case insensitive globs
-shopt -s nocaseglob 
+shopt -s nocaseglob
 
-# Wildcards match dotfiles 
+# Wildcards match dotfiles
 # ("*.sh" => ".foo.sh")
-shopt -s dotglob    
+shopt -s dotglob
 
-# Allow ** for recursive matches 
+# Allow ** for recursive matches
 # ('lib/**/*.rb' => 'lib/a/b/c.rb')
-shopt -s globstar   
+shopt -s globstar
 ```
 
 Bash History {.cols-2}
@@ -941,7 +941,7 @@ fi
 
 Escape these special characters with backslash `\` ok
 
-![](../assets/images/bash-fix.webp)  
+![](../assets/images/bash-fix.webp)
 
 ### Heredoc
 

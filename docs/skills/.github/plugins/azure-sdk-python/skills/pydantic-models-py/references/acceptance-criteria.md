@@ -35,7 +35,7 @@ from pydantic import BaseModel, field_validator, model_validator
 ```python
 class MyModel(BaseModel):
     name: str
-    
+
     class Config:  # v1 pattern - should use ConfigDict
         orm_mode = True
 ```
@@ -65,10 +65,10 @@ from typing import Optional
 
 class ProjectBase(BaseModel):
     """Base model with common fields."""
-    
+
     name: str = Field(..., min_length=1, max_length=200)
     description: Optional[str] = Field(None, max_length=2000)
-    
+
     class Config:
         populate_by_name = True  # Accept both snake_case and camelCase
 ```
@@ -77,11 +77,11 @@ class ProjectBase(BaseModel):
 ```python
 class ProjectBase(BaseModel):
     """Base model with camelCase aliases."""
-    
+
     name: str = Field(..., description="Project name")
     owner_id: str = Field(..., alias="ownerId")
     created_at: datetime = Field(..., alias="createdAt")
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -92,9 +92,9 @@ from pydantic import BaseModel, ConfigDict
 
 class ProjectBase(BaseModel):
     """Using ConfigDict for Pydantic v2."""
-    
+
     model_config = ConfigDict(populate_by_name=True)
-    
+
     name: str = Field(...)
 ```
 
@@ -120,7 +120,7 @@ class MyModel(BaseModel):
 # WRONG - mixing v1 and v2 styles
 class MyModel(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
-    
+
     class Config:  # Don't mix styles
         orm_mode = True
 ```
@@ -133,7 +133,7 @@ class MyModel(BaseModel):
 ```python
 class ProjectCreate(ProjectBase):
     """Request model for creating a project."""
-    
+
     workspace_id: str = Field(..., alias="workspaceId")
     tags: Optional[list[str]] = Field(None, min_items=1)
 ```
@@ -142,7 +142,7 @@ class ProjectCreate(ProjectBase):
 ```python
 class ProjectCreate(ProjectBase):
     """Create inherits common fields, adds specific ones."""
-    
+
     workspace_id: str = Field(..., description="Parent workspace ID")
     visibility: str = Field("private", pattern="^(private|public)$")
 ```
@@ -151,11 +151,11 @@ class ProjectCreate(ProjectBase):
 ```python
 class ProjectCreate(BaseModel):
     """Can inherit directly from BaseModel if needed."""
-    
+
     name: str = Field(..., min_length=1, max_length=200)
     description: Optional[str] = None
     workspace_id: str = Field(...)
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -188,11 +188,11 @@ from typing import Optional
 
 class ProjectUpdate(BaseModel):
     """All fields optional for PATCH requests."""
-    
+
     name: Optional[str] = Field(None, min_length=1, max_length=200)
     description: Optional[str] = Field(None, max_length=2000)
     visibility: Optional[str] = Field(None, pattern="^(private|public)$")
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -201,10 +201,10 @@ class ProjectUpdate(BaseModel):
 ```python
 class ProjectUpdate(BaseModel):
     """Update with constraints on optional fields."""
-    
+
     name: Optional[str] = Field(None, min_length=1, max_length=200)
     tags: Optional[list[str]] = Field(None, min_items=1, max_items=10)
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -213,11 +213,11 @@ class ProjectUpdate(BaseModel):
 ```python
 class ProjectUpdate(BaseModel):
     """Update - excludes id and timestamps."""
-    
+
     name: Optional[str] = None
     description: Optional[str] = None
     # Note: id, created_at, updated_at are NOT included (immutable)
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -257,16 +257,16 @@ from datetime import datetime
 
 class Project(ProjectBase):
     """Response model with all fields.
-    
+
     Returned from API GET endpoints.
     """
-    
+
     id: str = Field(..., description="Unique identifier")
     workspace_id: str = Field(..., alias="workspaceId")
     author_id: str = Field(..., alias="authorId")
     created_at: datetime = Field(..., alias="createdAt")
     updated_at: Optional[datetime] = Field(None, alias="updatedAt")
-    
+
     class Config:
         from_attributes = True  # Enable ORM mode
         populate_by_name = True
@@ -276,11 +276,11 @@ class Project(ProjectBase):
 ```python
 class Project(ProjectBase):
     """Response with ORM mode for SQLAlchemy objects."""
-    
+
     id: str
     created_at: datetime = Field(..., alias="createdAt")
     updated_at: Optional[datetime] = Field(None, alias="updatedAt")
-    
+
     class Config:
         from_attributes = True
         populate_by_name = True
@@ -295,11 +295,11 @@ class WorkspaceRef(BaseModel):
 
 class Project(ProjectBase):
     """Response with nested model."""
-    
+
     id: str
     workspace: WorkspaceRef
     created_at: datetime = Field(..., alias="createdAt")
-    
+
     class Config:
         populate_by_name = True
 ```
@@ -338,10 +338,10 @@ class Project(ProjectBase):
 ```python
 class ProjectInDB(Project):
     """Database document model.
-    
+
     Includes doc_type for Cosmos DB partitioning and queries.
     """
-    
+
     doc_type: str = "project"
 ```
 
@@ -350,7 +350,7 @@ class ProjectInDB(Project):
 # Inheritance: ProjectInDB -> Project -> ProjectBase
 class ProjectInDB(Project):
     """Database model inherits all fields from Response."""
-    
+
     doc_type: str = "project"
     # Automatically includes: id, name, description, created_at, etc.
 ```
@@ -359,7 +359,7 @@ class ProjectInDB(Project):
 ```python
 class ProjectInDB(Project):
     """Database model with storage-specific fields."""
-    
+
     doc_type: str = "project"
     _partition_key: str = Field(..., description="Cosmos DB partition key")
     _etag: Optional[str] = None  # For optimistic concurrency
@@ -397,7 +397,7 @@ class ProjectInDB(Project):
 ```python
 class Project(BaseModel):
     """Model with various field constraints."""
-    
+
     name: str = Field(..., min_length=1, max_length=200)
     email: str = Field(..., pattern=r"^[\w\.-]+@[\w\.-]+\.\w+$")
     age: int = Field(..., ge=0, le=150)
@@ -411,7 +411,7 @@ from pydantic import field_validator
 
 class Project(BaseModel):
     name: str
-    
+
     @field_validator('name')
     @classmethod
     def name_not_empty(cls, v):
@@ -427,7 +427,7 @@ from pydantic import model_validator
 class Project(BaseModel):
     start_date: datetime
     end_date: datetime
-    
+
     @model_validator(mode='after')
     def validate_dates(self):
         if self.start_date >= self.end_date:
@@ -444,7 +444,7 @@ from pydantic import validator
 
 class Project(BaseModel):
     name: str
-    
+
     @validator('name')  # v1 decorator
     def validate_name(cls, v):
         return v
@@ -627,7 +627,7 @@ class Project(BaseModel):
         from_attributes=True,
         str_strip_whitespace=True,
     )
-    
+
     name: str
 ```
 
@@ -635,7 +635,7 @@ class Project(BaseModel):
 ```python
 class Project(BaseModel):
     name: str
-    
+
     class Config:
         populate_by_name = True
         from_attributes = True
@@ -654,7 +654,7 @@ from pydantic import field_validator, ValidationInfo
 class Project(BaseModel):
     name: str
     owner_id: str
-    
+
     @field_validator('owner_id')
     @classmethod
     def validate_owner(cls, v, info: ValidationInfo):

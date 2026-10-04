@@ -117,7 +117,7 @@ For bash 3.2 compatibility, I created helper functions that work without associa
 # Helper function to get validation rule (compatibility with bash 3.2)
 get_validation_rule() {
     local rule="$1"
-    
+
     if [[ "$VALIDATION_USE_ARRAYS" == "true" ]]; then
         echo "${VALIDATION_RULES[$rule]:-}"
     else
@@ -148,16 +148,16 @@ validate_argument() {
     local arg_name="$1"
     local value="$2"
     local allowed_values="$3"
-    
+
     # Convert pipe-separated values to array for checking
     IFS='|' read -ra allowed_array <<< "$allowed_values"
-    
+
     for allowed in "${allowed_array[@]}"; do
         if [[ "$value" == "$allowed" ]]; then
             return 0
         fi
     done
-    
+
     log_error "Invalid value for $arg_name: '$value'. Allowed values: $allowed_values"
     return 1
 }
@@ -173,11 +173,11 @@ BASH_VERSION_MAJOR=$(bash --version | head -1 | grep -oE '[0-9]+\.[0-9]+' | cut 
 
 if [[ "${BASH_VERSION_MAJOR:-3}" -lt 4 ]]; then
     echo "Bash version $BASH_VERSION_MAJOR detected - using compatibility mode" >&2
-    
+
     # Fall back to simple version
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     SIMPLE_SCRIPT="$SCRIPT_DIR/analyze-repository-health-simple.sh"
-    
+
     if [[ -f "$SIMPLE_SCRIPT" ]]; then
         echo "Falling back to simple health analysis script..." >&2
         exec "$SIMPLE_SCRIPT" "$@"
@@ -240,7 +240,7 @@ docker run --rm -v $(pwd):/work -w /work bash:3.2 ./script.sh
    ```bash
    # ❌ Doesn't work in bash 3.2
    declare -A my_array=([key]="value")
-   
+
    # ✅ Compatibility alternative
    case "$key" in
        option1) value="value1" ;;
@@ -253,7 +253,7 @@ docker run --rm -v $(pwd):/work -w /work bash:3.2 ./script.sh
    ```bash
    # ❌ Doesn't work in bash 3.2
    declare -g GLOBAL_VAR="value"
-   
+
    # ✅ Compatibility alternative
    GLOBAL_VAR="value"
    ```
@@ -263,7 +263,7 @@ docker run --rm -v $(pwd):/work -w /work bash:3.2 ./script.sh
    ```bash
    # ❌ Doesn't work in bash 3.2
    lower_value="${value,,}"
-   
+
    # ✅ Compatibility alternative
    lower_value=$(echo "$value" | tr '[:upper:]' '[:lower:]')
    ```

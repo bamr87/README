@@ -40,7 +40,7 @@ The button stays hidden at the top of the page and fades in once you scroll past
 ### HTML Markup
 
 ```html
-<button id="backToTopBtn" 
+<button id="backToTopBtn"
         class="btn btn-primary rounded-circle position-fixed"
         aria-label="Back to top"
         style="bottom: 20px; right: 20px; display: none; z-index: 1000;">

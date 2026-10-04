@@ -16,11 +16,11 @@ slug: null
 snippet: null
 source_file: 2019-08-22-deploy-django-on-aws-lambda-with-sam-a-step-by-step-guide.md
 tags:
-- AWS
-- Django
-- Serverless
-- Lambda
-- SAM
+- aws
+- django
+- serverless
+- lambda
+- sam
 title: Add your project directory to the system path
 ---
 ## **How AWS SAM Fits into the Architecture**

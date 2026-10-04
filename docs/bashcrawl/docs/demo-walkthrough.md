@@ -1124,7 +1124,7 @@ closer.
 Do you get closer? y/n  You take a step forward, and the bird rushes toward you, its
 mouth open wide.
 
-Do you happen to have a fish? y/n  
+Do you happen to have a fish? y/n
 You toss the fish at the penguin,  which catches the fish
 mid-air and gobbles it down.
 
@@ -1488,12 +1488,12 @@ The scroll teaches ``touch`` — creating empty files. We need to create a file 
 # line its walls, some with long burnt-out candles, others
 # with worn inscriptions and small tokens of remembrance.
 #
-# Many have distinctive symbols on their front. Maybe you 
+# Many have distinctive symbols on their front. Maybe you
 # can find one that is helpful.
 #
 # If you think you have found the right niche, you can touch
 # it with the following command:
-# 
+#
 # touch <number of niche>
 #
 # This creates an empty file in the current room (directory).
@@ -1521,8 +1521,8 @@ The niche reveals the number **2712** — the first of three codes needed to unl
 
 ```bash
 📍 columbarium [exploring] ⚔️./open
-You open the niche, revealing a hidden plaque with a number etched 
-into its surface. The quiet of the graveyard thickens as the number 
+You open the niche, revealing a hidden plaque with a number etched
+into its surface. The quiet of the graveyard thickens as the number
 **2712** emerges from the shadows.
 
 Remember the number by adding it to your inventory:
@@ -1575,7 +1575,7 @@ This scroll teaches the ``sort`` command — it arranges lines of text in alphab
 #
 # sort gravestones
 #
-# Once you do this, look for a familiar name and take 
+# Once you do this, look for a familiar name and take
 # note of the year of death. Add the year to your Inventory:
 #
 # export I=<year of death>,$I
@@ -1672,7 +1672,7 @@ Weathered marble, cracked tombs, stone angels and lions — the royal tombs are 
 # A few of the grandest tombs have cracked open, iron gates rusted
 # and askew. The stone angels and lions, meant to stand as vigilant
 # guardians, are more forlorn than proud. It is quiet here, save for
-# an occasional rustle of dry leaves and the distant call of a crow 
+# an occasional rustle of dry leaves and the distant call of a crow
 # echoing through the stillness.
 ```
 
@@ -1689,10 +1689,10 @@ The statues encounter checks our inventory for the crown. We need to choose the 
 Standing in front of the statues, you are thinking about the symbols
 on the padlock. Do you have an item in your inventory that looks familiar?
 
-Do you have the item? y/n  
+Do you have the item? y/n
 You hold the crown in your hands, pondering where to place it.
 
-Enter the number of the statue where you want to place the crown:  
+Enter the number of the statue where you want to place the crown:
 You come upon a solitary grave marked by a grand statue of a king,
 his once-majestic figure now weathered and worn. The crown
 that once adorned his head is missing. Vines climb the statue's base,
@@ -1761,13 +1761,13 @@ The old padlock features three dials, each adorned with a distinct
 symbol:
   an amulet
   a crown
-  a tombstone with the initials F.K. 
+  a tombstone with the initials F.K.
 
 The dials are worn and scratched, their numbers barely visible beneath
 layers of rust and grime. The intricate symbols, though faded, hint at
 the lock's connection to ancient, enigmatic lore.
 
-have you found the numbers? y/n  
+have you found the numbers? y/n
 The old crumbling mausoleum stands silent and imposing, its weathered
 stone facade adorned with creeping ivy and shattered stained glass
 windows. The heavy, rusted padlock on the large, ornately carved wooden
@@ -1799,13 +1799,13 @@ The mausoleum scroll teaches ``cat`` on specific files and hints at using ``./lo
 # Inside the decayed mausoleum, you catch glimpses of
 # tarnished silver urns, rusted candlesticks, and ornate chests
 # scattered among the debris. The grand chamber is filled with
-# relics of a bygone era, half-buried and cloaked in dust. 
+# relics of a bygone era, half-buried and cloaked in dust.
 #
 # It would be unwise to sift through the loot, for there are
 # often traps protecting the belongings of the dead.
 #
 # Check the contents of the room with:
-# 
+#
 # cat room
 #
 # Once you have found the number of the correct item, pick it up
@@ -1891,7 +1891,7 @@ This spell teaches piping: ``sort room | uniq``. The pipe (``|``) sends the outp
 # chest. Ignoring the other trinkets, you pull it free, revealing
 # faded runes scratched onto the fragile parchment. Unfurling the
 # scroll, you recognize it as a spell of aid:
-# 
+#
 # In decayed rooms where shadows stay,
 # 'uniq' will charm the clones away.
 #
@@ -1934,7 +1934,7 @@ pull toward one in particular.
 
 What is the number of your choice?  As you pry it open, a soft creak reveals its contents. You find a
 trove of ancient **gold coins**, a jewel-encrusted **bracelet**
-with a large emerald, and a set of **silver keys** engraved with 
+with a large emerald, and a set of **silver keys** engraved with
 mysterious runes. The treasures glimmer with a hint of long-
 forgotten wealth and secrets.
 
@@ -2435,7 +2435,7 @@ A metal box sits upon the ground.  It appears to be
 illuminated from within.  There is a window in the box. The
 window is black, but there is luminescent writing.
 
-Do you want to read the writing? y/n  
+Do you want to read the writing? y/n
 .--------------------------------,
 |       Welcome to POSIX         |
 |   Enter your username:         |

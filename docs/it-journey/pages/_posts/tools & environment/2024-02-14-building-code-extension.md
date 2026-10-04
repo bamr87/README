@@ -12,10 +12,10 @@ section: Tools & Environment
 slug: building-code-extension
 source_file: 2024-02-14-building-code-extension.md
 tags:
-- VS Code
-- Extension
-- GitHub Copilot
-- Markdown
+- vs code
+- extension
+- github copilot
+- markdown
 title: User
 type: Article
 ---
@@ -187,7 +187,7 @@ Replace `'YOUR_GITHUB_TOKEN'`, `'YOUR_GITHUB_USERNAME'`, and `'YOUR_REPOSITORY_N
 
 Remember to secure your GitHub token and don't expose it in your client-side code.
 
-bamr87: the form handling and the server application should be the vscode. From within VS Code, i would like the option to save/publish/export the co-pilot conversation as an markdown file that can be pushed into a github repository. 
+bamr87: the form handling and the server application should be the vscode. From within VS Code, i would like the option to save/publish/export the co-pilot conversation as an markdown file that can be pushed into a github repository.
 
 GitHub Copilot: To save/publish/export the Copilot conversation as a markdown file from within VS Code, you can follow these steps:
 

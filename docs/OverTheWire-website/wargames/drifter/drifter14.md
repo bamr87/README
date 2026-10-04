@@ -1,10 +1,13 @@
 ---
+
 gamename: drifter
 layout: default
 level: 14
 source_file: drifter14.md
 title: Drifter14
 ---
+# Drifter14
+
 This level utilises code from several places. The main vulnerable code lies in a 3rd party library. The other code present may allow you to more easily gain code execution.
 
 The library code can be found in /drifter/drifter14_src/

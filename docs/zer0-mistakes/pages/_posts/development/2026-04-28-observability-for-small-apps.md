@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Development
@@ -19,6 +20,8 @@ tags:
 - reliability
 title: 2026 04 28 Observability For Small Apps
 ---
+# 2026 04 28 Observability For Small Apps
+
 Observability can sound like a platform engineering project, but small applications need it too. The difference is scope. A small app does not need a giant telemetry program on day one. It needs enough visibility to answer three questions quickly.
 
 1. Is the app working?

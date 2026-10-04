@@ -4,9 +4,9 @@ title: Link Health Summary
 ---
 # Link Health Summary
 
-**Date**: 2026-03-07 22:55 UTC  
-**Total**: 71  
-**Broken**: 4  
+**Date**: 2026-03-07 22:55 UTC
+**Total**: 71
+**Broken**: 4
 **Success rate**: 94.4%
 
 ## Failures by file

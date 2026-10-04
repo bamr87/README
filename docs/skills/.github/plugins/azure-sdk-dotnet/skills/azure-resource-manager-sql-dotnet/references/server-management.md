@@ -17,7 +17,7 @@ var serverData = new SqlServerData(AzureLocation.EastUS)
     // SQL authentication (optional, can be disabled)
     AdministratorLogin = "sqladmin",
     AdministratorLoginPassword = "YourSecurePassword123!",
-    
+
     // Azure AD authentication
     Administrators = new ServerExternalAdministrator
     {
@@ -27,7 +27,7 @@ var serverData = new SqlServerData(AzureLocation.EastUS)
         TenantId = Guid.Parse("<azure-ad-tenant-id>"),
         AzureADOnlyAuthentication = false // Set true to disable SQL auth
     },
-    
+
     Version = "12.0",
     MinimalTlsVersion = SqlMinimalTlsVersion.Tls1_2
 };
@@ -68,10 +68,10 @@ var serverData = new SqlServerData(AzureLocation.EastUS)
 {
     AdministratorLogin = "sqladmin",
     AdministratorLoginPassword = "YourSecurePassword123!",
-    
+
     // Disable public access (use private endpoints only)
     PublicNetworkAccess = ServerNetworkAccessFlag.Disabled,
-    
+
     // Or enable with restrictions
     // PublicNetworkAccess = ServerNetworkAccessFlag.Enabled,
     // RestrictOutboundNetworkAccess = ServerNetworkAccessFlag.Enabled
@@ -154,7 +154,7 @@ await foreach (var connection in privateEndpointConnections)
         var approvalData = connection.Data;
         approvalData.PrivateLinkServiceConnectionState.Status = "Approved";
         approvalData.PrivateLinkServiceConnectionState.Description = "Approved by admin";
-        
+
         await privateEndpointConnections.CreateOrUpdateAsync(
             WaitUntil.Completed,
             connection.Data.Name,

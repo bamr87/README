@@ -134,7 +134,7 @@ var serviceData = new ApiManagementServiceData(...)
     {
         UserAssignedIdentities =
         {
-            [new ResourceIdentifier("/subscriptions/.../userAssignedIdentities/my-identity")] = 
+            [new ResourceIdentifier("/subscriptions/.../userAssignedIdentities/my-identity")] =
                 new UserAssignedIdentity()
         }
     }

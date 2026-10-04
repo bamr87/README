@@ -1,7 +1,10 @@
 ---
+
 source_file: SECURITY.md
 title: Security
 ---
+# Security
+
 <!-- BEGIN MICROSOFT SECURITY.MD V1.0.0 BLOCK -->
 
 ## Security

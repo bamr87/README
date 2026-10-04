@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-11 00:00:00+00:00
 level: '0100'
@@ -20,6 +21,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 11 Game Developer 0100
 ---
+# 2026 07 11 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked a **window of 5 quests (1–5 of 8)** from the **Game Developer** path at **Level 0100 — Frontend & Containers** (Adventurer ⚔️), in plan order, as a learner would: two Docker main quests, then two Jekyll+Bootstrap main quests, then one Jekyll refactoring side quest. Evidence came from the workflow-sealed execute engine (`walk-evidence.json`), which I consumed as-is.

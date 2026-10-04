@@ -14,32 +14,32 @@ graph TB
         A[Journey.sh TUI]
         B[Command Line]
     end
-    
+
     subgraph "Workflow Engine (.crush/workflows/)"
         C[engine.sh<br/>Main Orchestrator]
         D[state-manager.sh<br/>State Persistence]
         E[prompt-runner.sh<br/>AI Execution]
     end
-    
+
     subgraph "Workflow Definitions"
         F[YAML Templates<br/>templates/*.yml]
     end
-    
+
     subgraph "AI Prompts"
         G[Prompt Catalog<br/>.github/prompts/*.md]
     end
-    
+
     subgraph "State Storage"
         H[Execution State<br/>work/workflows/]
         I[Checkpoints]
         J[Outputs]
         K[Logs]
     end
-    
+
     subgraph "AI Engine"
         L[Crush<br/>AI Prompt Execution]
     end
-    
+
     A --> C
     B --> C
     C --> F
@@ -52,7 +52,7 @@ graph TB
     H --> I
     H --> J
     H --> K
-    
+
     style A fill:#e1f5ff
     style C fill:#fff3e0
     style H fill:#e8f5e9
@@ -70,12 +70,12 @@ sequenceDiagram
     participant Prompt Runner
     participant Crush AI
     participant File System
-    
+
     User->>Journey.sh: Select "Run Workflow"
     Journey.sh->>Engine: Execute workflow.yml
     Engine->>State Manager: Initialize execution
     State Manager->>File System: Create work/workflows/exec-ID/
-    
+
     loop For Each Step
         Engine->>Engine: Parse step definition
         Engine->>State Manager: Update step status = running
@@ -86,12 +86,12 @@ sequenceDiagram
         Prompt Runner-->>Engine: Step completed
         Engine->>State Manager: Update step status = completed
         Engine->>State Manager: Save outputs to state
-        
+
         alt Checkpoint
             State Manager->>File System: Save checkpoint
         end
     end
-    
+
     Engine->>State Manager: Mark workflow complete
     State Manager->>File System: Update state.json
     Engine-->>Journey.sh: Workflow finished
@@ -107,18 +107,18 @@ graph LR
         B --> C[Create Quest<br/>Outline]
         C --> D[Generate<br/>Quest FM]
     end
-    
+
     subgraph "Phase 2: Expansion"
         D --> E[Expand Article<br/>with Examples]
         E --> F[Refine Quest<br/>with Challenges]
     end
-    
+
     subgraph "Phase 3: Improvement"
         F --> G[Kaizen Loop<br/>Iteration 1]
         G --> H[Kaizen Loop<br/>Iteration 2]
         H --> I[Kaizen Loop<br/>Iteration 3]
     end
-    
+
     subgraph "Phase 4: Publishing"
         I --> J[Validate<br/>Content]
         J --> K{Pass?}
@@ -126,7 +126,7 @@ graph LR
         K -->|No| G
         L --> M[Complete &<br/>Summarize]
     end
-    
+
     style A fill:#e3f2fd
     style B fill:#e3f2fd
     style C fill:#e3f2fd
@@ -146,61 +146,61 @@ graph LR
 ```mermaid
 graph TD
     A[User Inputs<br/>topic, level, difficulty] --> B[Draft Article]
-    
+
     B --> C[article_outline]
     B --> D[learning_objectives]
     B --> E[target_audience]
-    
+
     C --> F[Generate Article Frontmatter]
     D --> F
     E --> F
-    
+
     F --> G[article_frontmatter]
-    
+
     C --> H[Create Quest Outline]
     D --> H
     A --> H
-    
+
     H --> I[quest_outline]
     H --> J[quest_objectives]
-    
+
     I --> K[Generate Quest Frontmatter]
     J --> K
-    
+
     K --> L[quest_frontmatter]
-    
+
     C --> M[Expand Article]
     G --> M
-    
+
     M --> N[expanded_article]
-    
+
     I --> O[Refine Quest]
     L --> O
     N --> O
-    
+
     O --> P[refined_quest]
-    
+
     N --> Q[Improvement Loop]
     P --> Q
-    
+
     Q --> R[improved_article]
     Q --> S[improved_quest]
-    
+
     R --> T[Validate]
     S --> T
     G --> T
     L --> T
-    
+
     T --> U[validation_report]
-    
+
     R --> V[Prepare Publishing]
     S --> V
     G --> V
     L --> V
-    
+
     V --> W[Final Article<br/>pages/_posts/]
     V --> X[Final Quest<br/>pages/_quests/]
-    
+
     style A fill:#e1f5ff
     style W fill:#e8f5e9
     style X fill:#e8f5e9
@@ -219,7 +219,7 @@ graph TB
         D --> F[Complete/Fail]
         E --> F
     end
-    
+
     subgraph "File System: work/workflows/"
         G[article-quest-creation/]
         G --> H[execution-20251120-143022/]
@@ -228,24 +228,24 @@ graph TB
         H --> K[outputs/]
         H --> L[checkpoints/]
         H --> M[logs/]
-        
+
         K --> N[draft_article/]
         K --> O[generate_article_frontmatter/]
         K --> P[create_quest_outline/]
         K --> Q[...]
-        
+
         L --> R[checkpoint-1.json]
         L --> S[checkpoint-2.json]
-        
+
         M --> T[workflow.log]
         M --> U[steps/]
     end
-    
+
     B -.-> I
     C -.-> K
     D -.-> L
     C -.-> M
-    
+
     style A fill:#e1f5ff
     style H fill:#fff3e0
     style I fill:#e8f5e9
@@ -268,7 +268,7 @@ graph TD
     F -->|False| H[Exit Loop]
     B -->|No| H
     H --> I[Proceed to<br/>Next Step]
-    
+
     style A fill:#e1f5ff
     style D fill:#fff3e0
     style E fill:#e8f5e9
@@ -284,9 +284,9 @@ sequenceDiagram
     participant Engine
     participant Gum TUI
     participant Workflow YAML
-    
+
     Engine->>Workflow YAML: Read inputs.required
-    
+
     loop For Each Required Input
         Engine->>Gum TUI: Show input prompt
         Gum TUI->>User: Display description & example
@@ -294,13 +294,13 @@ sequenceDiagram
         Gum TUI->>Engine: Return input value
         Engine->>Engine: Validate input
     end
-    
+
     Engine->>Workflow YAML: Read inputs.optional
-    
+
     loop For Each Optional Input
         Engine->>Engine: Use default value or<br/>prompt if interactive
     end
-    
+
     Engine->>Engine: Build inputs JSON object
     Engine->>State: Save inputs.json
 ```
@@ -318,18 +318,18 @@ graph TD
     G --> A
     E -->|No| H[Check on_failure]
     D -->|No| H
-    
+
     H --> I{Strategy}
     I -->|abort| J[Stop Workflow]
     I -->|skip| K[Continue to Next]
     I -->|alternate_step| L[Execute Fallback]
-    
+
     C --> M[Continue Workflow]
     K --> M
     L --> M
     J --> N[Save Error State]
     N --> O[Cleanup if Configured]
-    
+
     style A fill:#e1f5ff
     style C fill:#e8f5e9
     style J fill:#ffebee
@@ -379,25 +379,25 @@ graph LR
         E[Iterations]
         F[Checkpoints]
     end
-    
+
     subgraph "Quality Metrics"
         G[Validation Score]
         H[Success Rate]
         I[Retry Count]
         J[Error Rate]
     end
-    
+
     subgraph "Resource Metrics"
         K[AI Tokens Used]
         L[Output Size]
         M[Memory Usage]
         N[Disk Usage]
     end
-    
+
     subgraph "State File: state.json"
         O[metrics: {...}]
     end
-    
+
     A --> O
     B --> O
     C --> O
@@ -412,7 +412,7 @@ graph LR
     L --> O
     M --> O
     N --> O
-    
+
     style O fill:#e8f5e9
 ```
 

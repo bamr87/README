@@ -531,8 +531,8 @@ strict_front_matter: true
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Liquid Templating](/quests/0001/liquid-templating/)  
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**💻 Software Developer**: Continue to [Liquid Templating](/quests/0001/liquid-templating/)
+**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)
 **🎨 Frontend Specialist**: Model richer data files for your theme
 
 ## 📚 Resources

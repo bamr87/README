@@ -13,9 +13,9 @@ title: Release Notes Template
 ---
 # Release Notes Template
 
-**Version**: vX.Y.Z  
-**Release Date**: [Date]  
-**Release Type**: [Major/Minor/Patch]  
+**Version**: vX.Y.Z
+**Release Date**: [Date]
+**Release Type**: [Major/Minor/Patch]
 **Previous Version**: vX.Y.Z-1
 
 ## 🎯 Release Overview
@@ -218,7 +218,7 @@ updated_setting: new_value
 
 ---
 
-**Release Manager**: [Name]  
-**Quality Assurance**: [Team]  
-**Documentation**: [Team]  
+**Release Manager**: [Name]
+**Quality Assurance**: [Team]
+**Documentation**: [Team]
 **Publication**: [Date and Time]

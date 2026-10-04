@@ -90,7 +90,7 @@ validation_criteria:
 
 ### Primary Objectives (Required for Quest Completion)
 - [ ] **Recursion Fundamentals** - Understand base cases, recursive cases, and call stack management
-- [ ] **Unit Testing** - Build test suites that cover base cases, recursive cases, and invalid inputs  
+- [ ] **Unit Testing** - Build test suites that cover base cases, recursive cases, and invalid inputs
 - [ ] **Stack Overflow Prevention** - Implement safeguards against infinite recursion
 - [ ] **AI Integration Patterns** - Apply recursive thinking to AI system design
 
@@ -176,7 +176,7 @@ def factorial(n: int) -> int:
         raise ValueError("Factorial not defined for negative numbers")
     if n == 0:
         return 1
-    
+
     # Recursive case: n! = n * (n-1)!
     return n * factorial(n - 1)
 
@@ -201,16 +201,16 @@ from factorial import factorial
 
 class TestFactorial(unittest.TestCase):
     """Comprehensive test suite for factorial function"""
-    
+
     def test_base_case_zero(self):
         """Test base case: 0! = 1"""
         self.assertEqual(factorial(0), 1)
-    
+
     def test_recursive_case(self):
         """Test recursive cases"""
         self.assertEqual(factorial(5), 120)
         self.assertEqual(factorial(10), 3628800)
-    
+
     def test_negative_input(self):
         """Test that negative inputs raise ValueError"""
         with self.assertRaises(ValueError):
@@ -273,7 +273,7 @@ def recursive_ai_query(prompt: str, depth: int, max_depth: int = 3) -> str:
     """Recursively refine AI queries"""
     if depth >= max_depth:
         return f"Final answer for: {prompt}"
-    
+
     # Recursive case
     refined_prompt = f"{prompt} (refinement {depth+1})"
     return recursive_ai_query(refined_prompt, depth + 1, max_depth)

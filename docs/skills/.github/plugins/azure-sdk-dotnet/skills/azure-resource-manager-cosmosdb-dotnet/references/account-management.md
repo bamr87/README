@@ -32,33 +32,33 @@ var accountData = new CosmosDBAccountCreateOrUpdateContent(
     })
 {
     Kind = CosmosDBAccountKind.GlobalDocumentDB,
-    
+
     // Consistency
     ConsistencyPolicy = new ConsistencyPolicy(DefaultConsistencyLevel.BoundedStaleness)
     {
         MaxStalenessPrefix = 100000,
         MaxIntervalInSeconds = 300
     },
-    
+
     // High availability
     EnableAutomaticFailover = true,
     EnableMultipleWriteLocations = false,
-    
+
     // Backup
     BackupPolicy = new ContinuousModeBackupPolicy
     {
         ContinuousModeTier = ContinuousModeTier.Continuous7Days
     },
-    
+
     // Networking
     PublicNetworkAccess = CosmosDBPublicNetworkAccess.Enabled,
     IsVirtualNetworkFilterEnabled = false,
-    
+
     // Features
     EnableFreeTier = false,
     EnableAnalyticalStorage = true,
     AnalyticalStorageSchemaType = AnalyticalStorageSchemaType.WellDefined,
-    
+
     // Tags
     Tags =
     {

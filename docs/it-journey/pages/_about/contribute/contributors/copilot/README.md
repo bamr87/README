@@ -1,4 +1,5 @@
 ---
+
 author: GitHub Copilot
 class: Wizard
 contributor_data: copilot
@@ -9,6 +10,8 @@ source_file: README.md
 title: Readme
 username: copilot
 ---
+# Readme
+
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">
 
 {% include contributor/character_sheet.html username="copilot" %}

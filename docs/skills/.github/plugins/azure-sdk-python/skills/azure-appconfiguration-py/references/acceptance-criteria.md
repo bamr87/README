@@ -388,14 +388,14 @@ from azure.identity.aio import DefaultAzureCredential
 
 async def main():
     credential = DefaultAzureCredential()
-    
+
     async with AzureAppConfigurationClient(
         base_url=os.environ["AZURE_APPCONFIGURATION_ENDPOINT"],
         credential=credential
     ) as client:
         setting = await client.get_configuration_setting(key="app:message")
         print(setting.value)
-        
+
         # Async iteration
         async for setting in await client.list_configuration_settings():
             print(f"{setting.key} = {setting.value}")

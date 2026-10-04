@@ -31,10 +31,10 @@ Skills provide **knowledge**. Prompts provide **structure**.
 ```
 1. Agent loads fastapi-router-py skill
    → Learns: Router patterns, dependency injection, response models
-   
+
 2. Agent loads pydantic-models-py skill
    → Learns: Base/Create/Update/Response model pattern
-   
+
 3. Agent uses add-endpoint.prompt.md structure:
    → Step 1: Define Pydantic models (UserUpdate, UserResponse)
    → Step 2: Create router with PUT handler
@@ -56,13 +56,13 @@ Skills provide **knowledge**. Prompts provide **structure**.
 ```
 1. Agent loads azure-identity-py skill
    → Establishes: Use DefaultAzureCredential, never hardcode credentials
-   
+
 2. Agent loads azure-cosmos-db-py skill
    → Learns: Service layer pattern, partition key strategy, parameterized queries
-   
+
 3. Agent loads pydantic-models-py skill
    → Learns: Model variant pattern (Base, Create, Update, Response, InDB)
-   
+
 4. Agent implements:
    → DocumentBase, DocumentCreate, DocumentResponse models
    → DocumentService class with CRUD operations
@@ -84,10 +84,10 @@ Skills provide **knowledge**. Prompts provide **structure**.
 ```
 1. Agent uses create-store.prompt.md with zustand-store-ts skill
    → Creates: workflowStore with nodes, edges, actions
-   
+
 2. Agent uses create-node.prompt.md with react-flow-node-ts skill
    → Creates: Custom node components with handles, TypeScript types
-   
+
 3. Agent integrates components
    → Connects store to React Flow canvas
    → Adds drag-drop functionality

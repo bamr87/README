@@ -220,7 +220,7 @@ Before publishing, verify:
 
 ### Keyword Placement Priority
 1. **Title** - Most important
-2. **Description** - Second most important  
+2. **Description** - Second most important
 3. **H1/H2 Headers** - In content
 4. **First paragraph** - Early in body
 5. **Keywords field** - For internal tracking
@@ -252,6 +252,6 @@ Always include platform when relevant:
 
 ---
 
-**Template Version**: 1.0.0  
-**Created**: 2025-12-19  
+**Template Version**: 1.0.0
+**Created**: 2025-12-19
 **Usage**: Copy relevant section when creating new content

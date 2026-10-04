@@ -401,19 +401,19 @@ Add these to your `settings.json` for the best experience:
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  
+
   // Files
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  
+
   // Terminal
   "terminal.integrated.fontSize": 13,
-  
+
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
-  
+
   // Extension-specific
   "prettier.singleQuote": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",

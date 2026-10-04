@@ -70,7 +70,7 @@ survey.head(10)
 
     📊 Survey Data Preview:
     Shape: 75 respondents × 13 questions
-    
+
 
 
 
@@ -302,7 +302,7 @@ for col in numeric_cols:
 
     📈 Descriptive Statistics for Survey Responses:
     ======================================================================
-    
+
     AGE:
       Mean:     38.28
       Median:   37.00
@@ -311,7 +311,7 @@ for col in numeric_cols:
       Variance: 126.31
       Range:    20 - 62
       IQR:      18.00
-    
+
     PRODUCT SATISFACTION:
       Mean:     4.16
       Median:   4.00
@@ -320,7 +320,7 @@ for col in numeric_cols:
       Variance: 0.54
       Range:    2 - 5
       IQR:      1.00
-    
+
     SERVICE RATING:
       Mean:     4.07
       Median:   4.00
@@ -329,7 +329,7 @@ for col in numeric_cols:
       Variance: 0.74
       Range:    2 - 5
       IQR:      1.00
-    
+
     FEEDBACK LENGTH:
       Mean:     130.56
       Median:   112.00
@@ -382,36 +382,36 @@ for col1, col2 in pairs:
 
     🔗 Correlation Matrix (Pearson):
                           product_satisfaction  service_rating  feedback_length  \
-    product_satisfaction                 1.000           0.709           -0.309   
-    service_rating                       0.709           1.000           -0.233   
-    feedback_length                     -0.309          -0.233            1.000   
-    age                                 -0.218          -0.005            0.647   
-    
-                            age  
-    product_satisfaction -0.218  
-    service_rating       -0.005  
-    feedback_length       0.647  
-    age                   1.000  
-    
-    
+    product_satisfaction                 1.000           0.709           -0.309
+    service_rating                       0.709           1.000           -0.233
+    feedback_length                     -0.309          -0.233            1.000
+    age                                 -0.218          -0.005            0.647
+
+                            age
+    product_satisfaction -0.218
+    service_rating       -0.005
+    feedback_length       0.647
+    age                   1.000
+
+
     📊 Detailed Correlation Analysis:
     ============================================================
-    
+
     product_satisfaction vs service_rating:
       Pearson r = 0.7093 (***)
       p-value   = 0.0000
       → Strong positive correlation
-    
+
     age vs product_satisfaction:
       Pearson r = -0.2179 (ns)
       p-value   = 0.0604
       → Weak negative correlation
-    
+
     age vs service_rating:
       Pearson r = -0.0048 (ns)
       p-value   = 0.9677
       → Weak negative correlation
-    
+
     feedback_length vs product_satisfaction:
       Pearson r = -0.3092 (**)
       p-value   = 0.0069
@@ -447,15 +447,15 @@ else:
 
     🧪 Independent Samples T-Test: Product Satisfaction by Gender
     ============================================================
-    
+
     Group Statistics:
       Male   (n=35):   M = 4.00, SD = 0.77
       Female (n=36): M = 4.28, SD = 0.70
-    
+
     Test Results:
       t-statistic = -1.5932
       p-value     = 0.1157
-    
+
     Conclusion at α = 0.05:
       ✗ FAIL TO REJECT null hypothesis - no significant difference
 
@@ -491,21 +491,21 @@ else:
 
     📋 Contingency Table: Purchase Frequency × Category Preference
     category_preference  Electronics  Furniture
-    purchase_frequency                         
+    purchase_frequency
     Monthly                       23         19
     Quarterly                      4          8
     Rarely                         3          4
     Weekly                        14          0
-    
-    
+
+
     🧪 Chi-Square Test of Independence
     ============================================================
-    
+
     Results:
       Chi-square statistic = 14.0252
       Degrees of freedom   = 3
       p-value             = 0.0029
-    
+
     Conclusion at α = 0.05:
       ✓ REJECT null hypothesis - variables are DEPENDENT
       → Purchase frequency IS associated with category preference
@@ -551,19 +551,19 @@ else:
 
     📐 Normality Tests for Product Satisfaction Scores
     ============================================================
-    
+
     1. Shapiro-Wilk Test:
        W-statistic = 0.8159
        p-value     = 0.0000
-    
+
     2. D'Agostino-Pearson Test:
        K² statistic = 3.1266
        p-value      = 0.2094
-    
+
     3. Distribution Shape:
        Skewness = -0.4623 (left-skewed)
        Kurtosis = -0.3638 (platykurtic)
-    
+
     📊 Conclusion:
        Data deviates significantly from normal distribution (p < 0.05)
 
@@ -604,25 +604,25 @@ for name, data in metrics.items():
 
     📏 95% Confidence Intervals
     ============================================================
-    
+
     Product Satisfaction:
       Sample Mean: 4.16
       95% CI: [3.99, 4.33]
       → We are 95% confident the true population mean
         falls between 3.99 and 4.33
-    
+
     Service Rating:
       Sample Mean: 4.07
       95% CI: [3.87, 4.26]
       → We are 95% confident the true population mean
         falls between 3.87 and 4.26
-    
+
     Feedback Length:
       Sample Mean: 130.56
       95% CI: [114.02, 147.10]
       → We are 95% confident the true population mean
         falls between 114.02 and 147.10
-    
+
     Age:
       Sample Mean: 38.28
       95% CI: [35.69, 40.87]
@@ -670,27 +670,27 @@ print("\n" + "=" * 70)
 
     📊 SURVEY ANALYSIS SUMMARY
     ======================================================================
-    
+
     📋 Dataset Overview:
        Total Respondents: 75
        Average Age: 38.3 years
        Gender Distribution: {'Female': np.int64(36), 'Male': np.int64(35), 'Non-binary': np.int64(4)}
-    
+
     🎯 Key Satisfaction Metrics:
        Product Satisfaction: 4.16/5
        Service Rating: 4.07/5
        Would Recommend: 58/75 (77.3%)
-    
+
     💻 Category Preferences:
        Electronics: 44 (58.7%)
        Furniture: 31 (41.3%)
-    
+
     ⏱️ Purchase Frequency:
        Monthly: 42 (56.0%)
        Weekly: 14 (18.7%)
        Quarterly: 12 (16.0%)
        Rarely: 7 (9.3%)
-    
+
     ======================================================================
 
 

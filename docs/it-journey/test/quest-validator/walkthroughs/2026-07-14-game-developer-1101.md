@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: 2026-07-14 00:00:00+00:00
 level: '1101'
@@ -27,6 +28,8 @@ theme: Machine Learning & AI
 tier: Master
 title: 2026 07 14 Game Developer 1101
 ---
+# 2026 07 14 Game Developer 1101
+
 ## 🎯 Session Summary
 
 I walked a **5-quest window (window 1 of 2)** of the **Game Developer** path at **Level 1101 · Machine Learning & AI (Master)**, in the planner's order: Deep Learning Frameworks → Computer Vision → Natural Language Processing → MLOps → AI Ethics. Evidence came from the sealed execute-mode engine run (`walk-evidence.json` / `walk-evidence.md`) — I consumed it as-is and did **not** re-run the engine or edit any quest.

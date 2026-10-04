@@ -1,4 +1,5 @@
 ---
+
 author: Zer0-Mistakes Team
 categories:
 - Development
@@ -27,6 +28,8 @@ translated_from_sha: f41e406ffb3c
 translation_of: pages/_posts/2025-01-15-docker-jekyll-guide.md
 translation_source_url: /posts/2025/01/15/docker-jekyll-guide/
 ---
+# 2025 01 15 Docker Jekyll Guide
+
 Docker a révolutionné la façon dont les développeurs travaillent avec les sites Jekyll. Ce guide complet vous accompagnera dans la mise en place d'un environnement de développement Docker optimisé pour vos projets Jekyll.
 
 ## Pourquoi utiliser Docker pour Jekyll ?

@@ -1,7 +1,10 @@
 ---
+
 source_file: python.md
 title: Python
 ---
+# Python
+
 ## Modify code
 
 Make these necessary changes to the app.

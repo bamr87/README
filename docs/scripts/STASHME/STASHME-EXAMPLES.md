@@ -256,7 +256,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Run StashMe
         run: |
           ./scripts/STASHME/stashme.sh \
@@ -275,7 +275,7 @@ jobs:
 # Backup only frontend projects
 ./stashme.sh ~/projects/frontend --prefix frontend-wip
 
-# Backup only backend projects  
+# Backup only backend projects
 ./stashme.sh ~/projects/backend --prefix backend-wip
 
 # Backup personal vs work separately

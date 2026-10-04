@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Business
@@ -19,6 +20,8 @@ tags:
 - operations
 title: 2026 04 28 Customer Onboarding Scorecards
 ---
+# 2026 04 28 Customer Onboarding Scorecards
+
 Customer onboarding is where a sale becomes a relationship. It is also where weak handoffs, unclear expectations, and missing data quietly turn into churn risk. A scorecard gives teams a shared way to see that risk early.
 
 The best scorecards are simple enough to update every week and specific enough to trigger action. They do not need to predict the future perfectly. They need to make the current state visible.

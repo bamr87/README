@@ -22,7 +22,7 @@ source_file: 2025-05-01-exploring-the-roots-of-injustice.md
 sub-title: null
 tags:
 - corporate betrayal
-- Injustice
+- injustice
 - post-colonialism.
 - racial marginalization
 - socio-economic issues

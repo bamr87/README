@@ -359,7 +359,7 @@ cd username.github.io
 
 **Expected Result**: A new public repository with your GitHub Pages URL
 
-**Troubleshooting**: 
+**Troubleshooting**:
 - Repository must be public for free GitHub Pages
 - Repository name must exactly match `username.github.io` for user sites
 - For project sites, any repository name works
@@ -564,7 +564,7 @@ Before proceeding, ensure you understand:
 #### Exercise 1: Create Your First Site
 **Objective**: Set up a basic GitHub Pages site with custom content
 
-**Challenge**: 
+**Challenge**:
 1. Create a `username.github.io` repository
 2. Add an `index.html` or `index.md` file with personal information
 3. Verify the site loads at your GitHub Pages URL

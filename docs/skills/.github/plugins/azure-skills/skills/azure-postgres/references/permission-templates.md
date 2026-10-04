@@ -39,9 +39,9 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO "<role-na
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO "<role-name>";
 
 -- Grant permissions on future tables
-ALTER DEFAULT PRIVILEGES IN SCHEMA public 
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
   GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO "<role-name>";
-ALTER DEFAULT PRIVILEGES IN SCHEMA public 
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
   GRANT USAGE, SELECT ON SEQUENCES TO "<role-name>";
 ```
 
@@ -102,9 +102,9 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA <schema-name> TO "<
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA <schema-name> TO "<role-name>";
 
 -- Future tables in that schema
-ALTER DEFAULT PRIVILEGES IN SCHEMA <schema-name> 
+ALTER DEFAULT PRIVILEGES IN SCHEMA <schema-name>
   GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO "<role-name>";
-ALTER DEFAULT PRIVILEGES IN SCHEMA <schema-name> 
+ALTER DEFAULT PRIVILEGES IN SCHEMA <schema-name>
   GRANT USAGE, SELECT ON SEQUENCES TO "<role-name>";
 ```
 
@@ -190,12 +190,12 @@ DROP ROLE "<role-name>";
 \du
 
 -- Show grants for a specific role
-SELECT 
+SELECT
   grantee,
   table_schema,
   table_name,
   privilege_type
-FROM information_schema.role_table_grants 
+FROM information_schema.role_table_grants
 WHERE grantee = '<role-name>';
 
 -- Show database-level permissions

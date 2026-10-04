@@ -186,8 +186,8 @@ import com.azure.core.http.rest.Response;
 import com.azure.core.util.Context;
 
 Response<KeyVaultKey> getKeyResponse = keyClient.getKeyWithResponse(
-    "myKey", 
-    keyVersion, 
+    "myKey",
+    keyVersion,
     new Context("key1", "value1")
 );
 
@@ -220,8 +220,8 @@ keyClient.listPropertiesOfKeys().iterableByPage().forEach(pagedResponse -> {
 ```java
 for (KeyProperties keyProperties : keyClient.listPropertiesOfKeyVersions("myKey")) {
     KeyVaultKey key = keyClient.getKey(keyProperties.getName(), keyProperties.getVersion());
-    System.out.printf("Version: %s, Created: %s%n", 
-        key.getProperties().getVersion(), 
+    System.out.printf("Version: %s, Created: %s%n",
+        key.getProperties().getVersion(),
         key.getProperties().getCreatedOn());
 }
 ```
@@ -239,8 +239,8 @@ key.getProperties().setExpiresOn(OffsetDateTime.now().plusDays(60));
 
 // Update with allowed operations
 KeyVaultKey updatedKey = keyClient.updateKeyProperties(
-    key.getProperties(), 
-    KeyOperation.ENCRYPT, 
+    key.getProperties(),
+    KeyOperation.ENCRYPT,
     KeyOperation.DECRYPT
 );
 
@@ -251,9 +251,9 @@ System.out.printf("Updated key: %s%n", updatedKey.getName());
 
 ```java
 Response<KeyVaultKey> updateKeyResponse = keyClient.updateKeyPropertiesWithResponse(
-    key.getProperties(), 
+    key.getProperties(),
     new Context("key1", "value1"),
-    KeyOperation.ENCRYPT, 
+    KeyOperation.ENCRYPT,
     KeyOperation.DECRYPT
 );
 
@@ -293,8 +293,8 @@ System.out.printf("Recovery ID: %s%n", deletedKey.getRecoveryId());
 
 ```java
 for (DeletedKey deletedKey : keyClient.listDeletedKeys()) {
-    System.out.printf("Deleted key: %s, Recovery ID: %s%n", 
-        deletedKey.getName(), 
+    System.out.printf("Deleted key: %s, Recovery ID: %s%n",
+        deletedKey.getName(),
         deletedKey.getRecoveryId());
 }
 ```
@@ -367,7 +367,7 @@ byte[] plaintext = "Hello, World!".getBytes();
 
 // Encrypt
 EncryptResult encryptResult = cryptographyClient.encrypt(
-    EncryptionAlgorithm.RSA_OAEP, 
+    EncryptionAlgorithm.RSA_OAEP,
     plaintext
 );
 byte[] ciphertext = encryptResult.getCipherText();
@@ -375,7 +375,7 @@ System.out.printf("Encrypted: %d bytes%n", ciphertext.length);
 
 // Decrypt
 DecryptResult decryptResult = cryptographyClient.decrypt(
-    EncryptionAlgorithm.RSA_OAEP, 
+    EncryptionAlgorithm.RSA_OAEP,
     ciphertext
 );
 String decryptedText = new String(decryptResult.getPlainText());
@@ -396,7 +396,7 @@ byte[] digest = md.digest(data);
 
 // Sign
 SignResult signResult = cryptographyClient.sign(
-    SignatureAlgorithm.RS256, 
+    SignatureAlgorithm.RS256,
     digest
 );
 byte[] signature = signResult.getSignature();
@@ -404,8 +404,8 @@ System.out.printf("Signature: %d bytes%n", signature.length);
 
 // Verify
 VerifyResult verifyResult = cryptographyClient.verify(
-    SignatureAlgorithm.RS256, 
-    digest, 
+    SignatureAlgorithm.RS256,
+    digest,
     signature
 );
 System.out.printf("Signature valid: %s%n", verifyResult.isValid());
@@ -423,7 +423,7 @@ new java.security.SecureRandom().nextBytes(keyToWrap);
 
 // Wrap
 WrapResult wrapResult = cryptographyClient.wrapKey(
-    KeyWrapAlgorithm.RSA_OAEP, 
+    KeyWrapAlgorithm.RSA_OAEP,
     keyToWrap
 );
 byte[] wrappedKey = wrapResult.getEncryptedKey();
@@ -431,7 +431,7 @@ System.out.printf("Wrapped key: %d bytes%n", wrappedKey.length);
 
 // Unwrap
 UnwrapResult unwrapResult = cryptographyClient.unwrapKey(
-    KeyWrapAlgorithm.RSA_OAEP, 
+    KeyWrapAlgorithm.RSA_OAEP,
     wrappedKey
 );
 byte[] unwrappedKey = unwrapResult.getKey();
@@ -469,12 +469,12 @@ cryptographyAsyncClient.encrypt(EncryptionAlgorithm.RSA_OAEP, plaintext)
     .flatMap(encryptResult -> {
         System.out.printf("Encrypted: %d bytes%n", encryptResult.getCipherText().length);
         return cryptographyAsyncClient.decrypt(
-            EncryptionAlgorithm.RSA_OAEP, 
+            EncryptionAlgorithm.RSA_OAEP,
             encryptResult.getCipherText()
         );
     })
     .subscribe(
-        decryptResult -> System.out.printf("Decrypted: %s%n", 
+        decryptResult -> System.out.printf("Decrypted: %s%n",
             new String(decryptResult.getPlainText())),
         error -> System.err.println("Error: " + error.getMessage())
     );

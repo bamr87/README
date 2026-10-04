@@ -423,8 +423,8 @@ PyTorch shows you the loop; Keras hides it. PyTorch is favored in research for t
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Computer Vision Mastery](/quests/1101/computer-vision/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
+**💻 Software Developer**: Continue to [Computer Vision Mastery](/quests/1101/computer-vision/)
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
 **📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
 
 ## 📚 Resources

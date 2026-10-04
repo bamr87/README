@@ -29,7 +29,7 @@ var subscription = armClient.GetSubscriptionResource(
 // WRONG - never hardcode credentials
 var credential = new ClientSecretCredential(
     "tenant-id",
-    "client-id", 
+    "client-id",
     "hardcoded-secret");
 var armClient = new ArmClient(credential);
 ```

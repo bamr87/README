@@ -100,9 +100,9 @@ _includes/
 ### Author Card
 
 ```liquid
-{% raw %}{% include components/author-card.html 
-   name=page.author 
-   avatar="/assets/images/avatar.png" 
+{% raw %}{% include components/author-card.html
+   name=page.author
+   avatar="/assets/images/avatar.png"
 %}{% endraw %}
 ```
 
@@ -226,9 +226,9 @@ See [Sidebar Navigation](/docs/features/sidebar-navigation/) for the full mode a
 ### With Parameters
 
 ```liquid
-{% raw %}{% include components/custom.html 
-   title="My Title" 
-   content="My content" 
+{% raw %}{% include components/custom.html
+   title="My Title"
+   content="My content"
 %}{% endraw %}
 ```
 

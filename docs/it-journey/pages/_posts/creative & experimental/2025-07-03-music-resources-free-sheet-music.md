@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - Hobbies
@@ -38,6 +39,8 @@ tags:
 - music-resources
 title: 2025 07 03 Music Resources Free Sheet Music
 ---
+# 2025 07 03 Music Resources Free Sheet Music
+
 Libraries are a great place to find free sheet music, especially large city libraries and university libraries. For example, the [Boston Public Library](http://www.bpl.org/research/music/aboutmusic.htm "Home page of Boston Public Library music department") houses one of the finest music libraries in the world, with over 150,000 volumes. If sheet music is in the public domain and in good condition, photocopying is allowed. So ... check your local library.
 
 Indiana University offers a helpful [list of music libraries](https://libraries.indiana.edu/cook "Indiana University Cook Music Library"), sorted by location. You might be able to find a music library near you.

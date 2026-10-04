@@ -4,8 +4,8 @@ title: FastAPI Router Acceptance Criteria
 ---
 # FastAPI Router Acceptance Criteria
 
-**Skill**: `fastapi-router-py`  
-**Purpose**: Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models  
+**Skill**: `fastapi-router-py`
+**Purpose**: Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models
 **Template**: [template.py](../assets/template.py)
 
 ---
@@ -121,7 +121,7 @@ class ItemResponse(BaseModel):
     name: str
     description: Optional[str] = None
     created_at: str
-    
+
     class Config:
         from_attributes = True
 
@@ -262,13 +262,13 @@ async def update_item(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Item not found",
         )
-    
+
     if existing.owner_id != current_user.id:
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Not authorized to update this item",
         )
-    
+
     return await service.update_item(item_id, data)
 ```
 

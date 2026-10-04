@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-27T00:00:00.000Z'
 level: '0101'
@@ -25,6 +26,8 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 27 System Engineer 0101
 ---
+# 2026 07 27 System Engineer 0101
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 13 quests) of the **System Engineer** path at **Level 0101 — CI/CD & DevOps (Adventurer tier)**, playing each quest as a learner would while consuming the sealed execute-engine evidence. **Headline verdict: warn.** The two "spine" quests of the CI/CD line — *CI/CD Fundamentals* (83) and *The Warden's Gate* (89) — are accurate, safe, and hold together well; but *Docker Mastery* (63) and *GitHub Actions Basics* (77) each ship a defect a copy-pasting beginner will hit, and *LaTeX CV* could not be scored because the engine ran out of turns (heavy TeX toolchain + a network-restricted sandbox), so it stands only on my static reading.

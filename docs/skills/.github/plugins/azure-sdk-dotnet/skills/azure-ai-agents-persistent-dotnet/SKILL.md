@@ -104,7 +104,7 @@ while (run.Status == RunStatus.Queued || run.Status == RunStatus.InProgress);
 
 // Retrieve messages
 await foreach (PersistentThreadMessage message in client.Messages.GetMessagesAsync(
-    threadId: thread.Id, 
+    threadId: thread.Id,
     order: ListSortOrder.Ascending))
 {
     Console.Write($"{message.Role}: ");
@@ -120,7 +120,7 @@ await foreach (PersistentThreadMessage message in client.Messages.GetMessagesAsy
 
 ```csharp
 AsyncCollectionResult<StreamingUpdate> stream = client.Runs.CreateRunStreamingAsync(
-    thread.Id, 
+    thread.Id,
     agent.Id
 );
 
@@ -174,7 +174,7 @@ do
     await Task.Delay(500);
     run = await client.Runs.GetRunAsync(thread.Id, run.Id);
 
-    if (run.Status == RunStatus.RequiresAction 
+    if (run.Status == RunStatus.RequiresAction
         && run.RequiredAction is SubmitToolOutputsAction submitAction)
     {
         List<ToolOutput> outputs = [];

@@ -1,4 +1,5 @@
 ---
+
 categories: []
 date: 2024-05-09 22:24:22+00:00
 description: null
@@ -10,3 +11,5 @@ tags: []
 title: 2024 05 09 Bootstrap Your Theme And Character
 type: default
 ---
+# 2024 05 09 Bootstrap Your Theme And Character
+

@@ -85,7 +85,7 @@ String modelDeployment = "gpt-4o-realtime-preview";
 client.startSession(modelDeployment)
     .flatMap(session -> {
         System.out.println("Session started successfully");
-        
+
         // Subscribe to events
         session.receiveEvents()
             .subscribe(
@@ -93,7 +93,7 @@ client.startSession(modelDeployment)
                 error -> System.err.println("Error: " + error.getMessage()),
                 () -> System.out.println("Session ended")
             );
-        
+
         return Mono.just(session);
     })
     .subscribe();
@@ -112,7 +112,7 @@ client.startSession("gpt-4o-realtime-preview")
         // 2. Start receiving events
         session.receiveEvents()
             .subscribe(event -> processEvent(event));
-        
+
         // 3. Send audio
         return sendAudioStream(session);
     })
@@ -209,39 +209,39 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public void streamFromMicrophone(VoiceLiveSessionAsyncClient session) {
     AtomicBoolean recording = new AtomicBoolean(true);
-    
+
     // Audio format: 24kHz, 16-bit, mono, signed, little-endian
     AudioFormat format = new AudioFormat(24000, 16, 1, true, false);
-    
+
     try {
         DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
         TargetDataLine microphone = (TargetDataLine) AudioSystem.getLine(info);
         microphone.open(format);
         microphone.start();
-        
+
         // Stream in chunks
         byte[] buffer = new byte[4800];  // 100ms of audio at 24kHz
-        
+
         Thread audioThread = new Thread(() -> {
             while (recording.get()) {
                 int bytesRead = microphone.read(buffer, 0, buffer.length);
                 if (bytesRead > 0) {
                     byte[] audioChunk = new byte[bytesRead];
                     System.arraycopy(buffer, 0, audioChunk, 0, bytesRead);
-                    
+
                     session.sendInputAudio(BinaryData.fromBytes(audioChunk))
                         .subscribe();
                 }
             }
             microphone.close();
         });
-        
+
         audioThread.start();
-        
+
         // Stop after some time or user action
         Thread.sleep(30000);
         recording.set(false);
-        
+
     } catch (Exception e) {
         System.err.println("Error streaming audio: " + e.getMessage());
     }
@@ -275,56 +275,56 @@ import com.azure.ai.voicelive.models.*;
 
 private void handleEvent(ServerEvent event) {
     ServerEventType eventType = event.getType();
-    
+
     switch (eventType) {
         case SESSION_CREATED:
             handleSessionCreated((SessionCreatedEvent) event);
             break;
-            
+
         case SESSION_UPDATED:
             System.out.println("Session configuration updated");
             break;
-            
+
         case INPUT_AUDIO_BUFFER_SPEECH_STARTED:
             System.out.println("User started speaking");
             break;
-            
+
         case INPUT_AUDIO_BUFFER_SPEECH_STOPPED:
             System.out.println("User stopped speaking");
             break;
-            
+
         case INPUT_AUDIO_BUFFER_COMMITTED:
             System.out.println("Audio buffer committed");
             break;
-            
+
         case CONVERSATION_ITEM_CREATED:
             handleConversationItemCreated(event);
             break;
-            
+
         case RESPONSE_CREATED:
             System.out.println("Response generation started");
             break;
-            
+
         case RESPONSE_AUDIO_DELTA:
             handleAudioDelta(event);
             break;
-            
+
         case RESPONSE_AUDIO_TRANSCRIPT_DELTA:
             handleTranscriptDelta(event);
             break;
-            
+
         case RESPONSE_TEXT_DELTA:
             handleTextDelta(event);
             break;
-            
+
         case RESPONSE_DONE:
             System.out.println("Response complete");
             break;
-            
+
         case ERROR:
             handleError(event);
             break;
-            
+
         default:
             System.out.println("Event: " + eventType);
     }
@@ -338,7 +338,7 @@ private void handleAudioDelta(ServerEvent event) {
     if (event instanceof ResponseAudioDeltaEvent) {
         ResponseAudioDeltaEvent audioEvent = (ResponseAudioDeltaEvent) event;
         byte[] audioData = audioEvent.getDelta();
-        
+
         // Play audio through speakers
         playAudio(audioData);
     }
@@ -427,7 +427,7 @@ options.setVoice(BinaryData.fromObject(customVoice));
 
 // Azure Personal Voice
 AzurePersonalVoice personalVoice = new AzurePersonalVoice(
-    "speakerProfileId", 
+    "speakerProfileId",
     PersonalVoiceModels.PHOENIX_LATEST_NEURAL
 );
 options.setVoice(BinaryData.fromObject(personalVoice));
@@ -472,25 +472,25 @@ VoiceLiveSessionOptions options = new VoiceLiveSessionOptions()
 ```java
 private void handleFunctionCall(ServerEvent event) {
     if (event instanceof ResponseFunctionCallArgumentsDoneEvent) {
-        ResponseFunctionCallArgumentsDoneEvent funcEvent = 
+        ResponseFunctionCallArgumentsDoneEvent funcEvent =
             (ResponseFunctionCallArgumentsDoneEvent) event;
-        
+
         String functionName = funcEvent.getName();
         String arguments = funcEvent.getArguments();
         String callId = funcEvent.getCallId();
-        
+
         System.out.println("Function call: " + functionName);
         System.out.println("Arguments: " + arguments);
-        
+
         // Execute function and get result
         String result = executeFunction(functionName, arguments);
-        
+
         // Send result back
         ConversationItemFunctionCallOutput output = new ConversationItemFunctionCallOutput(
             callId,
             result
         );
-        
+
         session.sendEvent(new ClientEventConversationItemCreate(output))
             .then(session.sendEvent(new ClientEventResponseCreate()))
             .subscribe();
@@ -514,7 +514,7 @@ private String executeFunction(String name, String arguments) {
 session.receiveEvents()
     .doOnError(error -> {
         System.err.println("Connection error: " + error.getMessage());
-        
+
         if (error instanceof java.net.SocketException) {
             System.err.println("Network disconnected - attempting reconnect");
             reconnect();
@@ -534,11 +534,11 @@ private void handleError(ServerEvent event) {
     if (event instanceof ErrorEvent) {
         ErrorEvent errorEvent = (ErrorEvent) event;
         ErrorDetails error = errorEvent.getError();
-        
+
         System.err.println("Error type: " + error.getType());
         System.err.println("Error message: " + error.getMessage());
         System.err.println("Error code: " + error.getCode());
-        
+
         // Handle specific errors
         String errorType = error.getType();
         if ("invalid_request_error".equals(errorType)) {
@@ -569,28 +569,28 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class VoiceAssistant {
-    
+
     private final VoiceLiveAsyncClient client;
     private VoiceLiveSessionAsyncClient session;
     private SourceDataLine speakerLine;
     private TargetDataLine microphoneLine;
     private AtomicBoolean running = new AtomicBoolean(false);
     private CountDownLatch sessionLatch;
-    
+
     public VoiceAssistant() {
         this.client = new VoiceLiveClientBuilder()
             .endpoint(System.getenv("AZURE_VOICELIVE_ENDPOINT"))
             .credential(new DefaultAzureCredentialBuilder().build())
             .buildAsyncClient();
     }
-    
+
     public void start() throws Exception {
         sessionLatch = new CountDownLatch(1);
         running.set(true);
-        
+
         // Initialize audio
         initializeAudio();
-        
+
         // Start session
         client.startSession("gpt-4o-realtime-preview")
             .doOnNext(s -> {
@@ -613,7 +613,7 @@ public class VoiceAssistant {
                                 sessionLatch.countDown();
                             }
                         );
-                    
+
                     // Start microphone streaming
                     startMicrophoneStream();
                 },
@@ -622,20 +622,20 @@ public class VoiceAssistant {
                     sessionLatch.countDown();
                 }
             );
-        
+
         System.out.println("Voice assistant started. Speak into the microphone...");
         System.out.println("Press Enter to stop.");
-        
+
         // Wait for user to press Enter
         System.in.read();
         stop();
-        
+
         sessionLatch.await();
     }
-    
+
     private reactor.core.publisher.Mono<VoiceLiveSessionAsyncClient> configureSession(
             VoiceLiveSessionAsyncClient session) {
-        
+
         ServerVadTurnDetection turnDetection = new ServerVadTurnDetection()
             .setThreshold(0.5)
             .setPrefixPaddingMs(300)
@@ -643,7 +643,7 @@ public class VoiceAssistant {
             .setInterruptResponse(true)
             .setAutoTruncate(true)
             .setCreateResponse(true);
-        
+
         VoiceLiveSessionOptions options = new VoiceLiveSessionOptions()
             .setInstructions("You are a helpful voice assistant. Keep responses concise.")
             .setVoice(BinaryData.fromObject(new OpenAIVoice(OpenAIVoiceName.ALLOY)))
@@ -654,31 +654,31 @@ public class VoiceAssistant {
             .setInputAudioTranscription(new AudioInputTranscriptionOptions(
                 AudioInputTranscriptionOptionsModel.WHISPER_1))
             .setTurnDetection(turnDetection);
-        
+
         return session.sendEvent(new ClientEventSessionUpdate(options))
             .thenReturn(session);
     }
-    
+
     private void initializeAudio() throws LineUnavailableException {
         AudioFormat format = new AudioFormat(24000, 16, 1, true, false);
-        
+
         // Speaker
         DataLine.Info speakerInfo = new DataLine.Info(SourceDataLine.class, format);
         speakerLine = (SourceDataLine) AudioSystem.getLine(speakerInfo);
         speakerLine.open(format);
         speakerLine.start();
-        
+
         // Microphone
         DataLine.Info micInfo = new DataLine.Info(TargetDataLine.class, format);
         microphoneLine = (TargetDataLine) AudioSystem.getLine(micInfo);
         microphoneLine.open(format);
         microphoneLine.start();
     }
-    
+
     private void startMicrophoneStream() {
         Thread micThread = new Thread(() -> {
             byte[] buffer = new byte[4800];  // 100ms chunks
-            
+
             while (running.get()) {
                 int bytesRead = microphoneLine.read(buffer, 0, buffer.length);
                 if (bytesRead > 0 && session != null) {
@@ -691,63 +691,63 @@ public class VoiceAssistant {
         micThread.setDaemon(true);
         micThread.start();
     }
-    
+
     private void handleEvent(ServerEvent event) {
         switch (event.getType()) {
             case INPUT_AUDIO_BUFFER_SPEECH_STARTED:
                 System.out.println("\n[You are speaking...]");
                 break;
-                
+
             case INPUT_AUDIO_BUFFER_SPEECH_STOPPED:
                 System.out.println("[Processing...]");
                 break;
-                
+
             case RESPONSE_AUDIO_DELTA:
                 if (event instanceof ResponseAudioDeltaEvent) {
                     byte[] audio = ((ResponseAudioDeltaEvent) event).getDelta();
                     speakerLine.write(audio, 0, audio.length);
                 }
                 break;
-                
+
             case RESPONSE_AUDIO_TRANSCRIPT_DELTA:
                 if (event instanceof ResponseAudioTranscriptDeltaEvent) {
                     System.out.print(((ResponseAudioTranscriptDeltaEvent) event).getDelta());
                 }
                 break;
-                
+
             case RESPONSE_DONE:
                 System.out.println("\n");
                 break;
-                
+
             case ERROR:
                 if (event instanceof ErrorEvent) {
                     System.err.println("Error: " + ((ErrorEvent) event).getError().getMessage());
                 }
                 break;
-                
+
             default:
                 // Ignore other events
                 break;
         }
     }
-    
+
     public void stop() {
         running.set(false);
-        
+
         if (microphoneLine != null) {
             microphoneLine.stop();
             microphoneLine.close();
         }
-        
+
         if (speakerLine != null) {
             speakerLine.drain();
             speakerLine.stop();
             speakerLine.close();
         }
-        
+
         System.out.println("Voice assistant stopped");
     }
-    
+
     public static void main(String[] args) {
         try {
             VoiceAssistant assistant = new VoiceAssistant();

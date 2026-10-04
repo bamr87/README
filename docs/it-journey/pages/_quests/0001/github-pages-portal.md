@@ -285,17 +285,17 @@ git push origin main
            <h1>🌟 Welcome to My Digital Realm!</h1>
            <p>Deployed with GitHub Pages - The Magic Portal</p>
        </div>
-       
+
        <h2>About This Quest</h2>
-       <p>This website was created as part of the IT-Journey GitHub Pages quest. 
+       <p>This website was created as part of the IT-Journey GitHub Pages quest.
        Here you'll find information about my learning journey and projects.</p>
-       
+
        <h2>Projects</h2>
        <ul>
            <li><a href="#project1">Project 1: Coming Soon</a></li>
            <li><a href="#project2">Project 2: Coming Soon</a></li>
        </ul>
-       
+
        <footer style="text-align: center; margin-top: 50px; color: #666;">
            <p>© 2025 My Digital Realm | Powered by GitHub Pages</p>
        </footer>
@@ -373,7 +373,7 @@ git push origin main
    # macOS: brew install ruby
    # Ubuntu: sudo apt-get install ruby-full
    # Windows: Download from rubyinstaller.org
-   
+
    # Install Jekyll and Bundler
    # On a standard Linux install, a bare `gem install` hits
    # Gem::FilePermissionError (no write access to the system gem dir).
@@ -399,9 +399,9 @@ git push origin main
    Create `Gemfile`:
    ```ruby
    source 'https://rubygems.org'
-   
+
    gem 'github-pages', group: :jekyll_plugins
-   
+
    group :jekyll_plugins do
      gem 'jekyll-feed'
      gem 'jekyll-sitemap'
@@ -415,7 +415,7 @@ git push origin main
    description: A GitHub Pages site created during IT-Journey
    url: "https://yourusername.github.io"  # Update with your URL
    baseurl: ""  # Leave empty for user/org sites, or "/repo-name" for project sites
-   
+
    # Build settings
    markdown: kramdown
    plugins:
@@ -431,26 +431,26 @@ git push origin main
    layout: default
    title: Home
    ---
-   
+
    # 🌟 Welcome to My Digital Realm!
-   
+
    This website was forged using **GitHub Pages** and **Jekyll** during the IT-Journey quest.
-   
+
    ## About This Quest
-   
+
    Through this adventure, I've learned to:
    - Deploy websites using GitHub Pages
    - Use Jekyll for static site generation
    - Configure custom domains
    - Apply modern web development practices
-   
+
    ## Projects
-   
+
    ### Project 1: GitHub Pages Mastery
    - **Status**: ✅ Completed
    - **Technologies**: HTML, CSS, Jekyll
    - **Live Demo**: [View Site](https://yourusername.github.io/)
-   
+
    ### Project 2: Portfolio Foundation
    - **Status**: 🚧 In Progress
    - **Technologies**: Jekyll, Liquid templating
@@ -517,13 +517,13 @@ graph TD
     A --> C[Level 011: Static Site Generators]
     A --> D[Level 001: HTML Basics]
     A --> E[Level 001: CSS Fundamentals]
-    
+
     D --> A
     E --> A
-    
+
     B --> F[Level 100: Advanced Web Development]
     C --> F
-    
+
     style A fill:#e1f5fe
 ```
 
@@ -553,35 +553,35 @@ flowchart TD
     B --> C[Choose Repository Type]
     C --> D[User/Org Site<br/>yourusername.github.io]
     C --> E[Project Site<br/>yourusername.github.io/repo-name]
-    
+
     D --> F[Create index.html]
     E --> F
-    
+
     F --> G[Commit & Push]
     G --> H[Enable GitHub Pages<br/>in Settings]
     H --> I[Configure Source Branch]
     I --> J[Wait for Deployment<br/>1-3 minutes]
     J --> K{Success?}
-    
+
     K --> L[Site Live!<br/>Access via GitHub URL]
     K --> M[Troubleshoot Issues]
     M --> N[Check Repository Settings]
     N --> O[Verify Branch & Folder]
     O --> P[Check Build Logs]
     P --> J
-    
+
     L --> Q{Optional: Jekyll?}
     Q --> R[Install Jekyll]
     R --> S[Configure Gemfile<br/>& _config.yml]
     S --> T[Create Jekyll Content]
     T --> U[Test Locally]
     U --> V[Deploy to GitHub Pages]
-    
+
     V --> W{Optional: Custom Domain?}
     W --> X[Configure DNS]
     X --> Y[Update GitHub Settings]
     Y --> Z[Enable HTTPS]
-    
+
     Z --> AA[Quest Complete! 🎉]
     V --> AA
     L --> AA
@@ -742,8 +742,8 @@ GitHub Pages represents the evolution of web hosting from complex server managem
 
 ---
 
-**Quest Completed**: Level 001 - The GitHub Pages Portal  
-**Date Completed**: {% raw %}{{ "now" | date: "%Y-%m-%d" }}{% endraw %}  
+**Quest Completed**: Level 001 - The GitHub Pages Portal
+**Date Completed**: {% raw %}{{ "now" | date: "%Y-%m-%d" }}{% endraw %}
 **Next Recommended Quest**: Level 010: Jekyll Mastery
 
 ## 🕸️ Knowledge Graph

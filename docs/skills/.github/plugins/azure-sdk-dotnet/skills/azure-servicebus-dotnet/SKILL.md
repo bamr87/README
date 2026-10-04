@@ -232,7 +232,7 @@ var message = await subReceiver.ReceiveMessageAsync();
 
 ```csharp
 var adminClient = new ServiceBusAdministrationClient(
-    fullyQualifiedNamespace, 
+    fullyQualifiedNamespace,
     new DefaultAzureCredential());
 
 // Create queue

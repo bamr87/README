@@ -451,7 +451,7 @@ scenarios:
       import os
       from azure.identity import DefaultAzureCredential
       from azure.ai.mymodule import MyClient
-      
+
       credential = DefaultAzureCredential()
       client = MyClient(
           endpoint=os.environ["AZURE_ENDPOINT"],

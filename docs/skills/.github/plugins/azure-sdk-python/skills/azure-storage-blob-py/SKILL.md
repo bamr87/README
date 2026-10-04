@@ -197,10 +197,10 @@ from azure.storage.blob.aio import BlobServiceClient
 
 async def upload_async():
     credential = DefaultAzureCredential()
-    
+
     async with BlobServiceClient(account_url, credential=credential) as client:
         blob_client = client.get_blob_client("mycontainer", "sample.txt")
-        
+
         with open("./file.txt", "rb") as data:
             await blob_client.upload_blob(data, overwrite=True)
 
@@ -208,7 +208,7 @@ async def upload_async():
 async def download_async():
     async with BlobServiceClient(account_url, credential=credential) as client:
         blob_client = client.get_blob_client("mycontainer", "sample.txt")
-        
+
         stream = await blob_client.download_blob()
         data = await stream.readall()
 ```

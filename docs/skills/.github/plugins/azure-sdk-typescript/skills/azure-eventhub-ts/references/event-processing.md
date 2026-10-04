@@ -137,7 +137,7 @@ const subscription = client.subscribe({
     }
 
     console.log(`Received ${events.length} events from partition ${context.partitionId}`);
-    
+
     for (const event of events) {
       // Process each event
       await processEvent(event, context);
@@ -195,10 +195,10 @@ const subscription = client.subscribe(
 ## Start Position Options
 
 ```typescript
-import { 
-  earliestEventPosition, 
+import {
+  earliestEventPosition,
   latestEventPosition,
-  EventPosition 
+  EventPosition
 } from "@azure/event-hubs";
 
 // Start from beginning (all historical events)
@@ -238,16 +238,16 @@ const perPartition: SubscribeOptions = {
 interface SubscribeOptions {
   /** Starting position for reading events */
   startPosition?: EventPosition | Record<string, EventPosition>;
-  
+
   /** Max events per batch (default: varies) */
   maxBatchSize?: number;
-  
+
   /** Max wait time in seconds for a batch */
   maxWaitTimeInSeconds?: number;
-  
+
   /** Track last enqueued event info (for lag monitoring) */
   trackLastEnqueuedEventProperties?: boolean;
-  
+
   /** Owner level for exclusive access */
   ownerLevel?: number;
 }
@@ -280,7 +280,7 @@ const subscription = client.subscribe({
     await Promise.all(
       events.map(event => processEventAsync(event))
     );
-    
+
     // Checkpoint after all complete
     if (events.length > 0) {
       await context.updateCheckpoint(events[events.length - 1]);
@@ -300,13 +300,13 @@ const subscription = client.subscribe({
     const results = await Promise.allSettled(
       events.map(event => processEvent(event))
     );
-    
+
     const failures = results.filter(r => r.status === "rejected");
     if (failures.length > 0) {
       console.error(`${failures.length} events failed processing`);
       // Decide: checkpoint anyway or skip?
     }
-    
+
     // Checkpoint even with some failures (at-least-once)
     if (events.length > 0) {
       await context.updateCheckpoint(events[events.length - 1]);
@@ -326,14 +326,14 @@ const subscription = client.subscribe({
     // Check lag if tracking enabled
     if (context.lastEnqueuedEventProperties) {
       const lastEnqueued = context.lastEnqueuedEventProperties.sequenceNumber;
-      const lastProcessed = events.length > 0 
-        ? events[events.length - 1].sequenceNumber 
+      const lastProcessed = events.length > 0
+        ? events[events.length - 1].sequenceNumber
         : 0;
-      
+
       const lag = lastEnqueued - lastProcessed;
       console.log(`Partition ${context.partitionId} lag: ${lag} events`);
     }
-    
+
     // Process events...
   },
   processError: async (err, context) => {
@@ -356,18 +356,18 @@ const subscription = client.subscribe({
       console.log(`Sequence Number: ${event.sequenceNumber}`);
       console.log(`Offset: ${event.offset}`);
       console.log(`Enqueued Time: ${event.enqueuedTimeUtc}`);
-      
+
       // Custom properties (set by producer)
       if (event.properties) {
         console.log(`Event Type: ${event.properties.eventType}`);
         console.log(`Device ID: ${event.properties.deviceId}`);
       }
-      
+
       // System properties
       if (event.systemProperties) {
         console.log(`System Props: ${JSON.stringify(event.systemProperties)}`);
       }
-      
+
       // Content type
       if (event.contentType) {
         console.log(`Content Type: ${event.contentType}`);

@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-16T00:00:00.000Z'
 level: '0001'
@@ -18,6 +19,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 16 Digital Artist 0001
 ---
+# 2026 07 16 Digital Artist 0001
+
 ## 🎯 Session Summary
 
 Walked a **5-quest window** (window 1 of 6; the full Level 0001 slice is 26 quests) of the **Digital Artist (UI/UX)** path at level **0001 — Web Fundamentals** as a learner, using the sealed execute-mode evidence the workflow pre-computed. The three quests the engine scored are **technically solid**: every locally-runnable command in GitHub Pages Basics (82), Jekyll Fundamentals (88), and Git Workflow Mastery (80) was actually executed in a disposable Jekyll sandbox and behaved as documented — no broken commands, no unsafe steps. Average score across the scored quests is **83.3%**.

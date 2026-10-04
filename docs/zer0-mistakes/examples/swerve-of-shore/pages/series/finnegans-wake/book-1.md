@@ -1,4 +1,5 @@
 ---
+
 description: Notes on Finnegans Wake, Book 1.
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: book-1.md
 title: Book 1
 ---
+# Book 1
+
 {% include page-header.html %}
 
 *Finnegans Wake*, Book 1 — starting on page 3 and going slowly. Read aloud where you can.

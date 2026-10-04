@@ -120,14 +120,14 @@ graph TB
         Next1[🔜 Unlocked Quest 1]
         Next2[🔜 Unlocked Quest 2]
     end
-    
+
     PreReq1 --> Current
     PreReq2 --> Current
     Current --> Side1
     Current --> Side2
     Current --> Next1
     Current --> Next2
-    
+
     style Current fill:#4CAF50,stroke:#2E7D32,stroke-width:4px,color:#fff
     style PreReq1 fill:#2196F3,stroke:#1565C0,stroke-width:2px
     style PreReq2 fill:#2196F3,stroke:#1565C0,stroke-width:2px
@@ -449,9 +449,9 @@ docker run -it [image-name] [command]
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Suggested Quest]  
-**🏗️ System Engineer**: Explore [Suggested Quest]  
-**🛡️ Security Specialist**: Check out [Suggested Quest]  
+**💻 Software Developer**: Continue to [Suggested Quest]
+**🏗️ System Engineer**: Explore [Suggested Quest]
+**🛡️ Security Specialist**: Check out [Suggested Quest]
 **📊 Data Scientist**: Advance to [Suggested Quest]
 
 ## 📚 Resource Library
@@ -489,6 +489,6 @@ Before marking this quest as complete, ensure you've:
 
 *Congratulations, brave adventurer! You've completed the **[Quest Name]** quest and gained valuable [technology/skill] mastery. Your journey through the IT realm continues - choose your next adventure wisely!*
 
-**Quest Status**: 🔮 Placeholder (Content to be developed)  
-**Last Updated**: 2025-11-29  
+**Quest Status**: 🔮 Placeholder (Content to be developed)
+**Last Updated**: 2025-11-29
 **Version**: 1.0.0

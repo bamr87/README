@@ -1,7 +1,10 @@
 ---
+
 source_file: Button.prompt.md
 title: Button.Prompt
 ---
+# Button.Prompt
+
 Themed Bootstrap 5.3 button for zer0-mistakes — use for every CTA, form submit, and toolbar action.
 
 ```jsx

@@ -39,14 +39,14 @@ title: 'Weekly SEO Review: Dec 15 - Dec 21, 2025'
 ## Insights & Actions
 
 ### Wins 🎉
-- 
+-
 
 ### Issues 🔴
-- 
+-
 
 ### Next Week Actions 📋
-- [ ] 
-- [ ] 
+- [ ]
+- [ ]
 
 ---
 *Report generated: 2025-12-20 14:23*

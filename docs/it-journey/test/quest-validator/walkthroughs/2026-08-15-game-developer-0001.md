@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-08-15T11:27:05.000Z'
 level: '0001'
@@ -17,6 +18,8 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 15 Game Developer 0001
 ---
+# 2026 08 15 Game Developer 0001
+
 ## 🎯 Session Summary
 
 I walked the **Game Developer → Level 0001 (Web Fundamentals, Apprentice 🌱)** slice — a **rotating window of 5 quests (window 1 of 6, offset 5)** out of the level's **26** total. The evidence was pre-computed and sealed by the workflow's deterministic execute-engine step (`walk-evidence.json`); I consumed it as-is and did not re-run the engine.

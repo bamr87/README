@@ -29,9 +29,9 @@ def transcribe_with_pronunciation_assessment(
     """Transcribe with pronunciation assessment."""
     region = os.environ["AZURE_SPEECH_REGION"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    
+
     url = f"https://{region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
-    
+
     # Build pronunciation assessment parameters
     pron_params = {
         "ReferenceText": reference_text,
@@ -40,24 +40,24 @@ def transcribe_with_pronunciation_assessment(
         "Dimension": "Comprehensive",
         "EnableProsodyAssessment": True
     }
-    
+
     # Base64 encode the JSON
     pron_header = base64.b64encode(
         json.dumps(pron_params).encode("utf-8")
     ).decode("utf-8")
-    
+
     headers = {
         "Ocp-Apim-Subscription-Key": api_key,
         "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000",
         "Accept": "application/json",
         "Pronunciation-Assessment": pron_header
     }
-    
+
     params = {"language": language, "format": "detailed"}
-    
+
     with open(audio_file_path, "rb") as audio_file:
         response = requests.post(url, headers=headers, params=params, data=audio_file)
-    
+
     response.raise_for_status()
     return response.json()
 
@@ -217,9 +217,9 @@ def full_pronunciation_assessment(
     """Full pronunciation assessment with detailed output."""
     region = os.environ["AZURE_SPEECH_REGION"]
     api_key = os.environ["AZURE_SPEECH_KEY"]
-    
+
     url = f"https://{region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
-    
+
     pron_params = {
         "ReferenceText": reference_text,
         "GradingSystem": "HundredMark",
@@ -228,18 +228,18 @@ def full_pronunciation_assessment(
         "EnableMiscue": True,
         "EnableProsodyAssessment": True
     }
-    
+
     pron_header = base64.b64encode(
         json.dumps(pron_params).encode()
     ).decode()
-    
+
     headers = {
         "Ocp-Apim-Subscription-Key": api_key,
         "Content-Type": "audio/wav; codecs=audio/pcm; samplerate=16000",
         "Accept": "application/json",
         "Pronunciation-Assessment": pron_header
     }
-    
+
     with open(audio_path, "rb") as f:
         response = requests.post(
             url,
@@ -247,23 +247,23 @@ def full_pronunciation_assessment(
             params={"language": language, "format": "detailed"},
             data=f
         )
-    
+
     response.raise_for_status()
     result = response.json()
-    
+
     if result["RecognitionStatus"] != "Success":
         print(f"Recognition failed: {result['RecognitionStatus']}")
         return
-    
+
     nbest = result["NBest"][0]
-    
+
     print(f"\n=== Overall Scores ===")
     print(f"Accuracy:     {nbest['AccuracyScore']:.1f}")
     print(f"Fluency:      {nbest['FluencyScore']:.1f}")
     print(f"Prosody:      {nbest.get('ProsodyScore', 'N/A')}")
     print(f"Completeness: {nbest['CompletenessScore']:.1f}")
     print(f"Overall:      {nbest['PronScore']:.1f}")
-    
+
     print(f"\n=== Word-Level Analysis ===")
     for word in nbest["Words"]:
         error = word.get("ErrorType", "None")

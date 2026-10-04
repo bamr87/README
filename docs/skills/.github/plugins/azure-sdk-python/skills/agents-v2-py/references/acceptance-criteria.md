@@ -4,8 +4,8 @@ title: 'Acceptance Criteria: hosted-agents-v2-py'
 ---
 # Acceptance Criteria: hosted-agents-v2-py
 
-**SDK**: `azure-ai-projects`  
-**Minimum Version**: `>=2.0.0b3`  
+**SDK**: `azure-ai-projects`
+**Minimum Version**: `>=2.0.0b3`
 **Repository**: https://github.com/Azure/azure-sdk-for-python
 
 ---

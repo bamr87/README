@@ -70,7 +70,7 @@ SecretAsyncClient secretAsyncClient = new SecretClientBuilder()
 import com.azure.security.keyvault.secrets.models.KeyVaultSecret;
 
 KeyVaultSecret secret = secretClient.setSecret("<secret-name>", "<secret-value>");
-System.out.printf("Secret created with name \"%s\" and value \"%s\"%n", 
+System.out.printf("Secret created with name \"%s\" and value \"%s\"%n",
     secret.getName(), secret.getValue());
 ```
 
@@ -84,7 +84,7 @@ KeyVaultSecret newSecret = new KeyVaultSecret("secretName", "secretValue")
     .setProperties(new SecretProperties().setExpiresOn(OffsetDateTime.now().plusDays(60)));
 
 KeyVaultSecret returnedSecret = secretClient.setSecret(newSecret);
-System.out.printf("Secret created with name %s and value %s%n", 
+System.out.printf("Secret created with name %s and value %s%n",
     returnedSecret.getName(), returnedSecret.getValue());
 ```
 
@@ -127,7 +127,7 @@ import com.azure.core.util.Context;
 
 String secretVersion = "6A385B124DEF4096AF1361A85B16C204";
 KeyVaultSecret secret = secretClient.getSecretWithResponse(
-    "secretName", 
+    "secretName",
     secretVersion,
     new Context("key1", "value1")
 ).getValue();
@@ -144,11 +144,11 @@ import com.azure.security.keyvault.secrets.models.SecretProperties;
 // Note: List operations don't return secret values - call getSecret for each
 for (SecretProperties secretProps : secretClient.listPropertiesOfSecrets()) {
     KeyVaultSecret secretWithValue = secretClient.getSecret(
-        secretProps.getName(), 
+        secretProps.getName(),
         secretProps.getVersion()
     );
-    System.out.printf("Secret: %s = %s%n", 
-        secretWithValue.getName(), 
+    System.out.printf("Secret: %s = %s%n",
+        secretWithValue.getName(),
         secretWithValue.getValue());
 }
 ```
@@ -157,13 +157,13 @@ for (SecretProperties secretProps : secretClient.listPropertiesOfSecrets()) {
 
 ```java
 secretClient.listPropertiesOfSecrets().iterableByPage().forEach(page -> {
-    System.out.printf("Status code: %d, URL: %s%n", 
-        page.getStatusCode(), 
+    System.out.printf("Status code: %d, URL: %s%n",
+        page.getStatusCode(),
         page.getRequest().getUrl());
-    
+
     page.getItems().forEach(secretProps -> {
         KeyVaultSecret secret = secretClient.getSecret(
-            secretProps.getName(), 
+            secretProps.getName(),
             secretProps.getVersion()
         );
         System.out.printf("Secret: %s%n", secret.getName());
@@ -176,11 +176,11 @@ secretClient.listPropertiesOfSecrets().iterableByPage().forEach(page -> {
 ```java
 for (SecretProperties secretProps : secretClient.listPropertiesOfSecretVersions("secretName")) {
     KeyVaultSecret secret = secretClient.getSecret(
-        secretProps.getName(), 
+        secretProps.getName(),
         secretProps.getVersion()
     );
-    System.out.printf("Version: %s, Value: %s%n", 
-        secretProps.getVersion(), 
+    System.out.printf("Version: %s, Value: %s%n",
+        secretProps.getVersion(),
         secret.getValue());
 }
 ```
@@ -197,7 +197,7 @@ SecretProperties updatedProperties = secretClient.updateSecretProperties(secretP
 
 // Get the updated secret
 KeyVaultSecret updatedSecret = secretClient.getSecret(updatedProperties.getName());
-System.out.printf("Updated secret expires: %s%n", 
+System.out.printf("Updated secret expires: %s%n",
     updatedSecret.getProperties().getExpiresOn());
 ```
 
@@ -236,7 +236,7 @@ System.out.printf("Recovery Id: %s%n", deletedSecret.getRecoveryId());
 
 ```java
 for (DeletedSecret deletedSecret : secretClient.listDeletedSecrets()) {
-    System.out.printf("Deleted secret: %s, Recovery Id: %s%n", 
+    System.out.printf("Deleted secret: %s, Recovery Id: %s%n",
         deletedSecret.getName(),
         deletedSecret.getRecoveryId());
 }
@@ -245,7 +245,7 @@ for (DeletedSecret deletedSecret : secretClient.listDeletedSecrets()) {
 ### Recover Deleted Secret
 
 ```java
-SyncPoller<KeyVaultSecret, Void> recoverPoller = 
+SyncPoller<KeyVaultSecret, Void> recoverPoller =
     secretClient.beginRecoverDeletedSecret("deletedSecretName");
 
 // Recovered secret accessible as soon as polling begins
@@ -311,7 +311,7 @@ secretAsyncClient.getSecret("secretName")
 ```java
 secretAsyncClient.listPropertiesOfSecrets()
     .flatMap(secretProps -> secretAsyncClient.getSecret(
-        secretProps.getName(), 
+        secretProps.getName(),
         secretProps.getVersion()
     ))
     .subscribe(

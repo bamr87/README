@@ -1,4 +1,5 @@
 ---
+
 author: default
 categories:
 - Business
@@ -19,6 +20,8 @@ tags:
 - decision-making
 title: 2026 04 28 Scenario Planning For Small Teams
 ---
+# 2026 04 28 Scenario Planning For Small Teams
+
 Small teams rarely have the luxury of dedicated strategy departments, but they still need a reliable way to make decisions when the market gets noisy. Scenario planning is useful because it creates a shared language for uncertainty without requiring a 40-page deck.
 
 The goal is not to predict the future perfectly. The goal is to notice change early enough that the team can respond while options are still inexpensive.

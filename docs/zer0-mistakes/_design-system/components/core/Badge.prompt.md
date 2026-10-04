@@ -1,7 +1,10 @@
 ---
+
 source_file: Badge.prompt.md
 title: Badge.Prompt
 ---
+# Badge.Prompt
+
 Small status/label pill — categories, tags, version chips, and counts.
 
 ```jsx

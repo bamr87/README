@@ -144,11 +144,11 @@ for (Connection connection : connections) {
 ### 3.2 ✅ CORRECT: List Connections with Filter
 ```java
 // Filter by type
-Iterable<Connection> azureOpenAIConnections = 
+Iterable<Connection> azureOpenAIConnections =
     connectionsClient.listConnections(ConnectionType.AZURE_OPEN_AI, null);
 
 // Filter by default connections
-Iterable<Connection> defaultConnections = 
+Iterable<Connection> defaultConnections =
     connectionsClient.listConnections(null, true);
 ```
 

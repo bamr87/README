@@ -461,8 +461,8 @@ bandit -r ./src --severity-level medium
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Threat Modeling](/quests/1011/threat-modeling/)  
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
+**💻 Software Developer**: Continue to [Threat Modeling](/quests/1011/threat-modeling/)
+**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)
 **🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
 
 ## 📚 Resources

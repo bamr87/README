@@ -301,7 +301,7 @@ const backup = await secretClient.backupSecret("MySecret");
 if (backup) {
   // Store backup securely (e.g., blob storage, local file)
   console.log(`Backup size: ${backup.length} bytes`);
-  
+
   // Save to file
   import { writeFileSync } from "node:fs";
   writeFileSync("secret-backup.bin", backup);
@@ -377,7 +377,7 @@ async function getSecretSafely(name: string): Promise<KeyVaultSecret | null> {
 async function rotateSecret(name: string, newValue: string): Promise<KeyVaultSecret> {
   // Get current secret to preserve metadata
   const current = await secretClient.getSecret(name);
-  
+
   // Disable old version
   await secretClient.updateSecretProperties(name, current.properties.version!, {
     enabled: false,
@@ -387,7 +387,7 @@ async function rotateSecret(name: string, newValue: string): Promise<KeyVaultSec
       status: "rotated"
     }
   });
-  
+
   // Create new version with same settings
   const newSecret = await secretClient.setSecret(name, newValue, {
     enabled: true,
@@ -399,7 +399,7 @@ async function rotateSecret(name: string, newValue: string): Promise<KeyVaultSec
       createdOn: new Date().toISOString()
     }
   });
-  
+
   return newSecret;
 }
 ```
@@ -409,7 +409,7 @@ async function rotateSecret(name: string, newValue: string): Promise<KeyVaultSec
 ```typescript
 async function exportAllSecrets(): Promise<Map<string, string>> {
   const secrets = new Map<string, string>();
-  
+
   for await (const properties of secretClient.listPropertiesOfSecrets()) {
     if (properties.enabled) {
       const secret = await secretClient.getSecret(properties.name);
@@ -418,7 +418,7 @@ async function exportAllSecrets(): Promise<Map<string, string>> {
       }
     }
   }
-  
+
   return secrets;
 }
 
@@ -436,13 +436,13 @@ async function importSecrets(secrets: Map<string, string>, tags?: Record<string,
 async function getExpiringSecrets(daysThreshold: number = 30): Promise<SecretProperties[]> {
   const expiringSecrets: SecretProperties[] = [];
   const thresholdDate = new Date(Date.now() + daysThreshold * 24 * 60 * 60 * 1000);
-  
+
   for await (const secret of secretClient.listPropertiesOfSecrets()) {
     if (secret.enabled && secret.expiresOn && secret.expiresOn <= thresholdDate) {
       expiringSecrets.push(secret);
     }
   }
-  
+
   return expiringSecrets;
 }
 ```

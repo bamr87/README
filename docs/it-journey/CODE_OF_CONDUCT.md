@@ -85,7 +85,7 @@ If you need to contact the maintainers or file a report, please use the reposito
 
 ## 11. License and attribution
 
-The Citizen Code of Conduct is distributed by [Stumptown Syndicate](https://stumptownsyndicate.org) under a [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/3.0/). 
+The Citizen Code of Conduct is distributed by [Stumptown Syndicate](https://stumptownsyndicate.org) under a [Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/3.0/).
 
 Portions of text derived from the [Django Code of Conduct](https://www.djangoproject.com/conduct/) and the [Geek Feminism Anti-Harassment Policy](https://geekfeminism.fandom.com/wiki/Conference_anti-harassment/Policy).
 

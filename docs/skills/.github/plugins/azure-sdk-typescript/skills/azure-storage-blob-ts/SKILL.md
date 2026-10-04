@@ -21,7 +21,7 @@ SDK for Azure Blob Storage operations — upload, download, list, and manage blo
 npm install @azure/storage-blob @azure/identity
 ```
 
-**Current Version**: 12.x  
+**Current Version**: 12.x
 **Node.js**: >= 18.0.0
 
 ## Environment Variables

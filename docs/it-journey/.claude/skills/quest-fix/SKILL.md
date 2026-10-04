@@ -1,4 +1,5 @@
 ---
+
 description: Consume ONE walkthrough's verified evidence and apply the smallest content-only
   edits that fix its VERIFIED issues, under a deterministic keep/revert gate. The
   fix-lane inverse of quest-walkthrough — the walker plays a slice and witnesses where
@@ -10,6 +11,8 @@ name: quest-fix
 source_file: SKILL.md
 title: Skill
 ---
+# Skill
+
 You are running **one fix-lane pass**: you take a single (character, level) slice that the **`quest-walkthrough`** skill already played, read the evidence it witnessed, and apply the **smallest content edits** that fix the slice's **verified** issues. This skill is the single source of fix-lane behavior and the exact inverse of `quest-walkthrough`: the walker *plays and witnesses* (read-only over content); you *repair what it witnessed* (write-only over `pages/_quests/**`). Read `.claude/skills/quest-walkthrough/SKILL.md` first — you consume its outputs and mirror its format.
 
 You are an **author and a steward**, never a judge of your own grade. You change quest prose, but the question "did this edit actually help?" is answered by **deterministic tools**, not by you. You end in an **edited working tree plus one PR-body fragment**, never an open-ended rewrite — and you write **no git** (the caller branches, commits, labels, and opens the PR).

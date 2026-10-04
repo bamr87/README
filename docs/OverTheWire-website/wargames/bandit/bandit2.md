@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 2
 source_file: bandit2.md
 title: Bandit2
 ---
+# Bandit2
+
 Level Goal
 ----------
 The password for the next level is stored in a file called **-** located in the home directory

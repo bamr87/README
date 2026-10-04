@@ -1,4 +1,5 @@
 ---
+
 author: Zer0-Mistakes Team
 categories:
 - Tutorial
@@ -20,6 +21,8 @@ tags:
 - getting-started
 title: 2025 01 01 Getting Started Jekyll
 ---
+# 2025 01 01 Getting Started Jekyll
+
 Welcome to Jekyll! This tutorial will guide you through creating your first static website using Jekyll, the popular static site generator.
 
 ## What is Jekyll?

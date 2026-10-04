@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-20T00:00:00.000Z'
 level: '1110'
@@ -17,6 +18,8 @@ theme: Architecture & Design Patterns
 tier: Master
 title: 2026 07 20 Security Specialist 1110
 ---
+# 2026 07 20 Security Specialist 1110
+
 ## 🎯 Session Summary
 
 Walked the **second window (5 of 10 quests)** of the Security Specialist's Master-tier level `1110` — *Architecture & Design Patterns* — end to end as a learner, consuming the sealed execute-mode evidence the workflow minted (I did **not** re-run the engine). All five quests **passed** (engine average **93.0%**, 5 pass / 0 warn / 0 fail), and I independently read each quest's source in plan order to judge the *linked journey*.

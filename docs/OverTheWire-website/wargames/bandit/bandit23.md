@@ -1,10 +1,13 @@
 ---
+
 gamename: bandit
 layout: default
 level: 23
 source_file: bandit23.md
 title: Bandit23
 ---
+# Bandit23
+
 Level Goal
 ----------
 A program is running automatically at regular intervals from **cron**, the time-based job scheduler. Look in **/etc/cron.d/** for the configuration and see what command is being executed.

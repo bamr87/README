@@ -1781,7 +1781,7 @@ gh repo clone saleor/saleor
 # Python tooling for Django ERP development
 pip install \
   django-debug-toolbar \     # SQL query profiler
-  django-silk \              # Request/response profiler  
+  django-silk \              # Request/response profiler
   factory-boy \              # Test data fixtures
   pytest-django \            # Django test runner
   coverage \                 # Code coverage
@@ -1836,11 +1836,11 @@ license type, maintenance status. Recommend updates.
 
 You have completed the Stack Attack enterprise quest and earned the title of **Open-Source ERP Architect**. You now wield the power to:
 
-⚙️ Design enterprise Django applications with multi-tenancy and RBAC  
-⚛️ Build React TypeScript frontends with fully-typed, auto-generated API contracts  
-🤖 Deploy AI agents as research accelerators for technology decisions  
-🐳 Orchestrate entire enterprise service topologies with Docker Compose  
-📋 Model complex ERP domains with Django's battle-tested ORM  
+⚙️ Design enterprise Django applications with multi-tenancy and RBAC
+⚛️ Build React TypeScript frontends with fully-typed, auto-generated API contracts
+🤖 Deploy AI agents as research accelerators for technology decisions
+🐳 Orchestrate entire enterprise service topologies with Docker Compose
+📋 Model complex ERP domains with Django's battle-tested ORM
 🔄 Process business operations asynchronously with Celery and Redis
 
 The open-source ERP landscape is vast — ERPNext, Odoo, and dozens of specialized tools exist. But now you understand **why** the Django + React stack gives you the most architectural freedom, the cleanest API surface, and the deepest Python ecosystem at your command.
@@ -1851,9 +1851,9 @@ The open-source ERP landscape is vast — ERPNext, Odoo, and dozens of specializ
 
 ---
 
-**Quest Completed**: 2026-04-13  
-**Architecture Badge**: Enterprise ERP Architect  
-**Stack Mastered**: Django 5 + DRF + Celery + PostgreSQL + Redis + React 18 + TypeScript + Vite + TanStack + shadcn/ui  
+**Quest Completed**: 2026-04-13
+**Architecture Badge**: Enterprise ERP Architect
+**Stack Mastered**: Django 5 + DRF + Celery + PostgreSQL + Redis + React 18 + TypeScript + Vite + TanStack + shadcn/ui
 
 *Achievement Unlocked: Guardian of the Enterprise Fortress* 🏆
 

@@ -64,7 +64,7 @@ public class ClientInitializationSample {
         InsightsClient insightsClient = builder.buildInsightsClient();
         RedTeamsClient redTeamsClient = builder.buildRedTeamsClient();
         SchedulesClient schedulesClient = builder.buildSchedulesClient();
-        
+
         // For async clients, use the async builder methods
         ConnectionsAsyncClient connectionsAsyncClient = builder.buildConnectionsAsyncClient();
         DatasetsAsyncClient datasetsAsyncClient = builder.buildDatasetsAsyncClient();
@@ -114,9 +114,9 @@ public class ConnectionsSample {
     // Filter connections by type
     public static void listConnectionsWithFilters() {
         // List only Azure OpenAI connections
-        Iterable<Connection> azureOpenAIConnections = 
+        Iterable<Connection> azureOpenAIConnections =
             connectionsClient.listConnections(ConnectionType.AZURE_OPEN_AI, null);
-        
+
         azureOpenAIConnections.forEach(connection -> {
             System.out.println("Azure OpenAI Connection: " + connection.getName());
         });
@@ -185,8 +185,8 @@ public class DatasetsSample {
         Path filePath = Path.of("product_info.md");
 
         FileDatasetVersion createdDatasetVersion = datasetsClient.createDatasetWithFile(
-            datasetName, 
-            datasetVersionString, 
+            datasetName,
+            datasetVersionString,
             filePath
         );
 
@@ -248,8 +248,8 @@ public class DatasetsSample {
 
         // Create or update the dataset
         FileDatasetVersion createdDataset = (FileDatasetVersion) datasetsClient.createOrUpdateVersion(
-            datasetName, 
-            datasetVersion, 
+            datasetName,
+            datasetVersion,
             fileDataset
         );
 

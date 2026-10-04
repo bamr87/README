@@ -1,4 +1,5 @@
 ---
+
 character: game-developer
 date: '2026-07-09T14:09:23.000Z'
 level: '0100'
@@ -20,6 +21,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 09 Game Developer 0100
 ---
+# 2026 07 09 Game Developer 0100
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 8 quests) of the **Game Developer → Level 0100 (Frontend & Containers, Adventurer tier)** slice as a learner, in **execute mode**, consuming the workflow-sealed evidence in `./walk-evidence.json`. The slice splits cleanly into two arcs: a **container spine** (`container-fundamentals` → `docker-compose-orchestration`) and a weaker **Jekyll/frontend cluster** (`frontend-docker`, `frontend`, `jekyll-component-refactoring`).

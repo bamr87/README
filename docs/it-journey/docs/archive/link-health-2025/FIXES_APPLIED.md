@@ -23,7 +23,7 @@ title: Link Issues Fixed - Summary
 - Added `--exclude 'https://github.com/.*/blob/.*'` to skip GitHub file links (rate limited)
 - Added `--exclude 'https://reddit.com/submit.*'` to skip Reddit share buttons (rate limited)
 
-**Impact**: 
+**Impact**:
 - Eliminates ~15,000 false positives from preview builds
 - Eliminates ~2,000 false positives from rate-limited social sharing URLs
 - Reduces noise in link checking reports by ~85%
@@ -65,7 +65,7 @@ The fix must be made in the **remote theme repository** (`bamr87/zer0-mistakes`)
    ```liquid
    <!-- BEFORE (broken) -->
    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | url_encode }}">
-   
+
    <!-- AFTER (fixed) -->
    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url | append: page.url | url_encode }}">
    ```
@@ -94,7 +94,7 @@ Until the theme is fixed, the link checker will exclude these URLs to reduce noi
 
 ### Breakdown of Improvements
 - ✅ Removed preview build errors: -15,000 errors
-- ✅ Excluded rate-limited URLs: -2,000 errors  
+- ✅ Excluded rate-limited URLs: -2,000 errors
 - ✅ Fixed broken internal refs: -2 unique URLs
 - ⏳ Theme social buttons: -1,770 errors (pending theme fix)
 - 📌 Remaining: ~100 legitimate external link issues

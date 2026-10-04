@@ -178,7 +178,7 @@ result = client.analyze_sentiment(documents, show_opinion_mining=True)
 for doc in result:
     if not doc.is_error:
         print(f"Document sentiment: {doc.sentiment}")
-        
+
         for sentence in doc.sentences:
             for opinion in sentence.mined_opinions:
                 target = opinion.target
@@ -391,7 +391,7 @@ for doc in result:
             print(f"Entity: {entity.text}")
             print(f"  Category: {entity.category}")
             print(f"  Normalized: {entity.normalized_text}")
-            
+
             if entity.data_sources:
                 for source in entity.data_sources:
                     print(f"  Source: {source.name} - ID: {source.entity_id}")
@@ -500,7 +500,7 @@ async def main():
         credential=DefaultAzureCredential()
     ) as client:
         documents = ["This is a test."]
-        
+
         result = await client.analyze_sentiment(documents)
         for doc in result:
             if not doc.is_error:
@@ -517,10 +517,10 @@ async def analyze_healthcare():
         credential=DefaultAzureCredential()
     ) as client:
         documents = ["Patient diagnosed with type 2 diabetes."]
-        
+
         poller = await client.begin_analyze_healthcare_entities(documents)
         result = await poller.result()
-        
+
         for doc in result:
             if not doc.is_error:
                 for entity in doc.entities:

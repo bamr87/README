@@ -1,4 +1,5 @@
 ---
+
 description: Notes on episode 12 of Ulysses — Cyclops (5pm, Barney Kiernan's pub).
 hide_intro: true
 layout: default
@@ -10,6 +11,8 @@ sidebar:
 source_file: 12-cyclops.md
 title: 12 Cyclops
 ---
+# 12 Cyclops
+
 {% include page-header.html %}
 
 Episode 12 of *Ulysses*. 5pm, Barney Kiernan's pub.

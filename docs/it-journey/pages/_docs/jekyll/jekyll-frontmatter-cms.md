@@ -1,4 +1,5 @@
 ---
+
 author: bamr87
 categories:
 - docs
@@ -17,6 +18,8 @@ tags:
 - static-site
 title: Jekyll Frontmatter Cms
 ---
+# Jekyll Frontmatter Cms
+
 This is a comprehensive guide on how to use Jekyll and Frontmatter to build a powerful Content Management System (CMS).
 
 ## What is Jekyll Frontmatter?

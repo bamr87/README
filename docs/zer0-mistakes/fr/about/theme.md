@@ -1,4 +1,5 @@
 ---
+
 admin_section: Theme Customizer
 excerpt: Aperçu des composants et exemples du thème Bootstrap 5.
 icon: material/palette
@@ -16,6 +17,8 @@ translated_from_sha: f1e267f28ce1
 translation_of: pages/_about/theme.md
 translation_source_url: /about/theme/
 ---
+# Theme
+
 ## Aide-mémoire Bootstrap
 
 L'iframe suivant charge l'aide-mémoire officiel de Bootstrap pour une référence rapide sur les composants, utilitaires et assistants disponibles.

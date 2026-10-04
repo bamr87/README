@@ -1,4 +1,5 @@
 ---
+
 character: system-engineer
 date: '2026-07-11T11:56:34.000Z'
 level: '1000'
@@ -24,6 +25,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 11 System Engineer 1000
 ---
+# 2026 07 11 System Engineer 1000
+
 ## 🎯 Session Summary
 
 I walked the **System Engineer → Level 1000 (Cloud Computing, 🔥 Warrior tier)** slice as a learner. The planner selected a **window of 5 quests out of the level's 9** (window 1 of 2), and the pre-sealed engine evidence (`walk-evidence.json`) covers **only the first 2** of those five — the execute run stopped with `auth_truncated: true` after ~$1.28 of spend, so quests 3–5 were **never executed**. I read all five in plan order and reason about the linked journey below.

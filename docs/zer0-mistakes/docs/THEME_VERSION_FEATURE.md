@@ -147,11 +147,11 @@ Then display in template:
 
 ## Benefits
 
-✅ **No Hardcoding**: Version is extracted automatically during build  
-✅ **Always Accurate**: Reflects actual installed/remote theme version  
-✅ **User-Friendly**: Easy access from any page via header/footer  
-✅ **Comprehensive**: Shows full system and environment details  
-✅ **Helpful**: Links to docs, changelog, and support resources  
+✅ **No Hardcoding**: Version is extracted automatically during build
+✅ **Always Accurate**: Reflects actual installed/remote theme version
+✅ **User-Friendly**: Easy access from any page via header/footer
+✅ **Comprehensive**: Shows full system and environment details
+✅ **Helpful**: Links to docs, changelog, and support resources
 ✅ **Maintainable**: Single source of truth (gemspec version)
 
 ## Troubleshooting

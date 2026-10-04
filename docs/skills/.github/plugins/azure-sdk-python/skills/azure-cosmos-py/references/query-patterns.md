@@ -93,7 +93,7 @@ def paginated_query(
     """Paginate through query results using continuation tokens."""
     continuation_token = None
     page_number = 0
-    
+
     while True:
         # Create query iterable with pagination
         query_iterable = container.query_items(
@@ -103,14 +103,14 @@ def paginated_query(
             max_item_count=page_size,
             continuation_token=continuation_token
         )
-        
+
         # Get page of results
         page = list(query_iterable.by_page().__next__())
         page_number += 1
-        
+
         print(f"Page {page_number}: {len(page)} items")
         yield page
-        
+
         # Get continuation token for next page
         continuation_token = query_iterable.continuation_token
         if not continuation_token:
@@ -192,7 +192,7 @@ query = "SELECT * FROM c WHERE ARRAY_CONTAINS(c.tags, 'urgent')"
 
 # Check if array contains object with property
 query = """
-SELECT * FROM c 
+SELECT * FROM c
 WHERE ARRAY_CONTAINS(c.items, {'product_id': @product_id}, true)
 """
 
@@ -220,7 +220,7 @@ query = "SELECT * FROM c WHERE CONTAINS(c.name, @substring)"  # Full scan
 
 # String manipulation
 query = """
-SELECT 
+SELECT
     c.id,
     CONCAT(c.first_name, ' ', c.last_name) as full_name,
     LENGTH(c.description) as desc_length
@@ -233,7 +233,7 @@ FROM c
 ```python
 # EXISTS subquery
 query = """
-SELECT * FROM c 
+SELECT * FROM c
 WHERE EXISTS(
     SELECT VALUE item FROM item IN c.items WHERE item.status = 'pending'
 )
@@ -241,7 +241,7 @@ WHERE EXISTS(
 
 # Scalar subquery
 query = """
-SELECT 
+SELECT
     c.id,
     c.name,
     (SELECT VALUE COUNT(1) FROM item IN c.items) as item_count
@@ -271,30 +271,30 @@ from azure.cosmos import TransactionalBatch
 
 def transfer_funds(container, from_account_id: str, to_account_id: str, amount: float, partition_key: str):
     """Transfer funds between accounts atomically."""
-    
+
     # Read current balances
     from_account = container.read_item(item=from_account_id, partition_key=partition_key)
     to_account = container.read_item(item=to_account_id, partition_key=partition_key)
-    
+
     if from_account["balance"] < amount:
         raise ValueError("Insufficient funds")
-    
+
     # Update balances
     from_account["balance"] -= amount
     to_account["balance"] += amount
-    
+
     # Execute as transaction
     batch = TransactionalBatch(partition_key=partition_key)
     batch.replace_item(item=from_account_id, body=from_account)
     batch.replace_item(item=to_account_id, body=to_account)
-    
+
     results = container.execute_transactional_batch(batch=batch)
-    
+
     # Check results
     for result in results:
         if result["statusCode"] >= 400:
             raise Exception(f"Transaction failed: {result}")
-    
+
     return results
 ```
 
@@ -306,15 +306,15 @@ from azure.cosmos import TransactionalBatch
 def batch_create_items(container, items: list[dict], partition_key: str):
     """Create multiple items in a single batch (max 100 operations)."""
     batch = TransactionalBatch(partition_key=partition_key)
-    
+
     for item in items[:100]:  # Max 100 operations per batch
         batch.create_item(body=item)
-    
+
     results = container.execute_transactional_batch(batch=batch)
-    
+
     successful = sum(1 for r in results if r["statusCode"] < 400)
     print(f"Created {successful}/{len(items)} items")
-    
+
     return results
 
 # Usage
@@ -332,18 +332,18 @@ Process changes to documents in order:
 ```python
 def process_change_feed(container, partition_key: str | None = None):
     """Process change feed for a container."""
-    
+
     # Start from beginning
     change_feed = container.query_items_change_feed(
         partition_key=partition_key,  # None for all partitions
         start_time="Beginning"
     )
-    
+
     for change in change_feed:
         print(f"Changed document: {change['id']}")
         # Process the change
         process_document(change)
-    
+
     # Get continuation token for next run
     continuation = change_feed.continuation_token
     return continuation
@@ -353,10 +353,10 @@ def process_change_feed_incremental(container, continuation_token: str):
     change_feed = container.query_items_change_feed(
         continuation_token=continuation_token
     )
-    
+
     for change in change_feed:
         process_document(change)
-    
+
     return change_feed.continuation_token
 ```
 
@@ -378,22 +378,22 @@ def process_change_feed_incremental(container, continuation_token: str):
 ```python
 def estimate_query_cost(container, query: str, partition_key: str, parameters: list | None = None):
     """Execute query and return RU cost."""
-    
+
     query_iterable = container.query_items(
         query=query,
         parameters=parameters or [],
         partition_key=partition_key,
         populate_query_metrics=True
     )
-    
+
     items = list(query_iterable)
-    
+
     # Get request charge from response headers
     request_charge = query_iterable.get_response_headers().get("x-ms-request-charge", 0)
-    
+
     print(f"Query returned {len(items)} items")
     print(f"Total RU cost: {request_charge}")
     print(f"RU per item: {float(request_charge) / len(items) if items else 0:.2f}")
-    
+
     return items, float(request_charge)
 ```

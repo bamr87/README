@@ -1,4 +1,5 @@
 ---
+
 excerpt: Afficher et exporter les structures des menus de navigation.
 icon: material/sign-direction
 lang: fr
@@ -14,6 +15,8 @@ translated_from_sha: b10d3f9a2491
 translation_of: pages/_about/settings/navigation.md
 translation_source_url: /about/settings/navigation/
 ---
+# Navigation
+
 <ul class="nav nav-tabs" id="navTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#pane-overview" type="button" role="tab" aria-controls="pane-overview" aria-selected="true">

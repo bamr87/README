@@ -470,18 +470,18 @@ flowchart TD
         MD[📄 Markdown Files]
         FEAT[⚙️ features.yml]
     end
-    
+
     subgraph "PRD Machine Processing"
         INGEST[Signal Ingestion]
         PARSE[Frontmatter Parsing]
         CONFLICT[Conflict Detection]
         GEN[PRD Generation]
     end
-    
+
     subgraph "Output"
         PRD[📜 PRD.md]
     end
-    
+
     GIT --> INGEST
     MD --> INGEST
     FEAT --> INGEST
@@ -635,21 +635,21 @@ flowchart LR
         A[lvl-0001<br>Docs in a Row]
         B[lvl-0010<br>Jekyll Mermaid]
     end
-    
+
     subgraph "Current Quest"
         C[lvl-0011<br>PRD Codex]
     end
-    
+
     subgraph "Unlocks"
         D[lvl-0100<br>Advanced Automation]
         E[lvl-0101<br>CI/CD Mastery]
     end
-    
+
     A --> C
     B --> C
     C --> D
     C --> E
-    
+
     style C fill:#gold,stroke:#333,stroke-width:3px
 ```
 

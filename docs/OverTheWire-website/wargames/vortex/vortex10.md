@@ -1,10 +1,13 @@
 ---
+
 gamename: vortex
 layout: default
 level: 10
 source_file: vortex10.md
 title: Vortex10
 ---
+# Vortex10
+
 Random?
 -------
 Read in 20 integers and write the seed used to generate those numbers in unsigned little endian format. You have a time limit of 30 seconds to do this. You must login to [vortex.labs.overthewire.org][]

@@ -1,9 +1,12 @@
 ---
+
 description: Start the event tracking setup process by analyzing the project and creating
   an event tracking plan
 source_file: 1-begin.md
 title: 1 Begin
 ---
+# 1 Begin
+
 We're making an event tracking plan for this project.
 
 This is the first of several phases — plan the events, implement them, revise and validate changes, then conclude by creating a dashboard and writing a setup report.

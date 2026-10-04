@@ -101,13 +101,13 @@ public class MyLogEntry {
     private String timeGenerated;
     private String level;
     private String message;
-    
+
     public MyLogEntry(String timeGenerated, String level, String message) {
         this.timeGenerated = timeGenerated;
         this.level = level;
         this.message = message;
     }
-    
+
     public String getTimeGenerated() { return timeGenerated; }
     public String getLevel() { return level; }
     public String getMessage() { return message; }

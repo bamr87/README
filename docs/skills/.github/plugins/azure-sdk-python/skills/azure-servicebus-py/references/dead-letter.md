@@ -36,7 +36,7 @@ from azure.identity.aio import DefaultAzureCredential
 async def receive_dead_letters(namespace: str, queue_name: str):
     """Receive messages from dead-letter queue."""
     credential = DefaultAzureCredential()
-    
+
     async with ServiceBusClient(
         fully_qualified_namespace=namespace,
         credential=credential
@@ -46,20 +46,20 @@ async def receive_dead_letters(namespace: str, queue_name: str):
             queue_name=queue_name,
             sub_queue=ServiceBusSubQueue.DEAD_LETTER
         )
-        
+
         async with dlq_receiver:
             messages = await dlq_receiver.receive_messages(
                 max_message_count=10,
                 max_wait_time=5
             )
-            
+
             for msg in messages:
                 print(f"Dead-letter message: {str(msg)}")
                 print(f"  Reason: {msg.dead_letter_reason}")
                 print(f"  Description: {msg.dead_letter_error_description}")
                 print(f"  Enqueued: {msg.enqueued_time_utc}")
                 print(f"  Delivery count: {msg.delivery_count}")
-                
+
                 # Process or complete
                 await dlq_receiver.complete_message(msg)
 ```
@@ -75,7 +75,7 @@ async def process_with_dead_letter(receiver, msg):
         result = await process_message(msg)
         await receiver.complete_message(msg)
         return result
-        
+
     except ValidationError as e:
         # Invalid message format - don't retry
         await receiver.dead_letter_message(
@@ -83,7 +83,7 @@ async def process_with_dead_letter(receiver, msg):
             reason="ValidationFailed",
             error_description=f"Invalid format: {e}"
         )
-        
+
     except DuplicateError as e:
         # Already processed - dead-letter with context
         await receiver.dead_letter_message(
@@ -91,11 +91,11 @@ async def process_with_dead_letter(receiver, msg):
             reason="DuplicateDetected",
             error_description=f"Message already processed: {e}"
         )
-        
+
     except ExternalServiceUnavailable:
         # Temporary - abandon for retry
         await receiver.abandon_message(msg)
-        
+
     except Exception as e:
         # Unknown error - dead-letter with full context
         await receiver.dead_letter_message(
@@ -115,51 +115,51 @@ from datetime import datetime, timezone
 
 class DeadLetterProcessor:
     """Process and analyze dead-lettered messages."""
-    
+
     def __init__(self, client, queue_name: str):
         self.client = client
         self.queue_name = queue_name
-    
+
     async def process_dlq(self, handler_map: dict = None):
         """Process DLQ messages with reason-specific handlers."""
         handler_map = handler_map or {}
-        
+
         receiver = self.client.get_queue_receiver(
             queue_name=self.queue_name,
             sub_queue=ServiceBusSubQueue.DEAD_LETTER
         )
-        
+
         async with receiver:
             while True:
                 messages = await receiver.receive_messages(
                     max_message_count=10,
                     max_wait_time=5
                 )
-                
+
                 if not messages:
                     break
-                
+
                 for msg in messages:
                     reason = msg.dead_letter_reason or "Unknown"
                     handler = handler_map.get(reason, self.default_handler)
-                    
+
                     try:
                         await handler(msg, receiver)
                     except Exception as e:
                         print(f"Error handling DLQ message: {e}")
                         # Leave message in DLQ for manual review
-    
+
     async def default_handler(self, msg, receiver):
         """Default: log and complete."""
         print(f"DLQ Message: {msg.message_id}")
         print(f"  Reason: {msg.dead_letter_reason}")
         print(f"  Body: {str(msg.body)[:100]}...")
         await receiver.complete_message(msg)
-    
+
     async def retry_handler(self, msg, receiver):
         """Retry message by sending back to main queue."""
         sender = self.client.get_queue_sender(queue_name=self.queue_name)
-        
+
         async with sender:
             # Create new message from DLQ message
             retry_msg = ServiceBusMessage(
@@ -172,10 +172,10 @@ class DeadLetterProcessor:
                 }
             )
             await sender.send_messages(retry_msg)
-        
+
         await receiver.complete_message(msg)
         print(f"Retried message: {msg.message_id}")
-    
+
     async def archive_handler(self, msg, receiver):
         """Archive message to storage for analysis."""
         archive_data = {
@@ -187,7 +187,7 @@ class DeadLetterProcessor:
             "delivery_count": msg.delivery_count,
             "application_properties": dict(msg.application_properties or {})
         }
-        
+
         # Save to blob storage, database, etc.
         await archive_to_storage(archive_data)
         await receiver.complete_message(msg)
@@ -210,26 +210,26 @@ from datetime import datetime, timedelta, timezone
 async def retry_recent_messages(client, queue_name: str, max_age_hours: int = 24):
     """Retry only recently dead-lettered messages."""
     cutoff_time = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
-    
+
     dlq_receiver = client.get_queue_receiver(
         queue_name=queue_name,
         sub_queue=ServiceBusSubQueue.DEAD_LETTER
     )
     sender = client.get_queue_sender(queue_name=queue_name)
-    
+
     retried = 0
     expired = 0
-    
+
     async with dlq_receiver, sender:
         while True:
             messages = await dlq_receiver.receive_messages(
                 max_message_count=50,
                 max_wait_time=5
             )
-            
+
             if not messages:
                 break
-            
+
             for msg in messages:
                 if msg.enqueued_time_utc > cutoff_time:
                     # Recent enough to retry
@@ -239,9 +239,9 @@ async def retry_recent_messages(client, queue_name: str, max_age_hours: int = 24
                 else:
                     # Too old - just complete (discard)
                     expired += 1
-                
+
                 await dlq_receiver.complete_message(msg)
-    
+
     print(f"Retried: {retried}, Expired: {expired}")
 ```
 
@@ -255,15 +255,15 @@ async def retry_with_transform(client, queue_name: str, transformer):
         sub_queue=ServiceBusSubQueue.DEAD_LETTER
     )
     sender = client.get_queue_sender(queue_name=queue_name)
-    
+
     async with dlq_receiver, sender:
         messages = await dlq_receiver.receive_messages(max_message_count=100)
-        
+
         for msg in messages:
             try:
                 # Transform/fix the message
                 fixed_body = transformer(msg.body)
-                
+
                 retry_msg = ServiceBusMessage(
                     body=fixed_body,
                     application_properties={
@@ -273,7 +273,7 @@ async def retry_with_transform(client, queue_name: str, transformer):
                 )
                 await sender.send_messages(retry_msg)
                 await dlq_receiver.complete_message(msg)
-                
+
             except Exception as e:
                 print(f"Could not fix message {msg.message_id}: {e}")
                 # Leave in DLQ
@@ -300,7 +300,7 @@ async def get_dlq_count(namespace: str, queue_name: str) -> int:
         fully_qualified_namespace=namespace,
         credential=DefaultAzureCredential()
     )
-    
+
     async with admin_client:
         runtime_props = await admin_client.get_queue_runtime_properties(queue_name)
         return runtime_props.dead_letter_message_count
@@ -322,28 +322,28 @@ async def analyze_dlq(client, queue_name: str) -> dict:
         "oldest": None,
         "newest": None
     }
-    
+
     dlq_receiver = client.get_queue_receiver(
         queue_name=queue_name,
         sub_queue=ServiceBusSubQueue.DEAD_LETTER,
         receive_mode=ServiceBusReceiveMode.PEEK_LOCK
     )
-    
+
     async with dlq_receiver:
         # Peek without removing
         messages = await dlq_receiver.peek_messages(max_message_count=1000)
-        
+
         for msg in messages:
             analysis["total"] += 1
-            
+
             reason = msg.dead_letter_reason or "Unknown"
             analysis["by_reason"][reason] = analysis["by_reason"].get(reason, 0) + 1
-            
+
             if analysis["oldest"] is None or msg.enqueued_time_utc < analysis["oldest"]:
                 analysis["oldest"] = msg.enqueued_time_utc
             if analysis["newest"] is None or msg.enqueued_time_utc > analysis["newest"]:
                 analysis["newest"] = msg.enqueued_time_utc
-    
+
     return analysis
 
 # Generate report
@@ -370,7 +370,7 @@ async def increase_max_delivery(namespace: str, queue_name: str, max_count: int)
         fully_qualified_namespace=namespace,
         credential=DefaultAzureCredential()
     )
-    
+
     async with admin_client:
         queue = await admin_client.get_queue(queue_name)
         queue.max_delivery_count = max_count
@@ -386,15 +386,15 @@ async def resilient_processor(receiver, msg):
     try:
         await process_message(msg)
         await receiver.complete_message(msg)
-        
+
     except (ConnectionError, TimeoutError):
         # Transient - safe to retry
         await receiver.abandon_message(msg)
-        
+
     except ValidationError:
         # Bad data - don't retry, dead-letter
         await receiver.dead_letter_message(msg, reason="ValidationError")
-        
+
     except Exception as e:
         # Unknown - check delivery count
         if msg.delivery_count >= 3:

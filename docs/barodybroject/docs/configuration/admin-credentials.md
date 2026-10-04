@@ -103,10 +103,10 @@ For production deployments on Azure:
    ```bash
    az keyvault secret set --vault-name <vault-name> \
      --name django-superuser-username --value "admin"
-   
+
    az keyvault secret set --vault-name <vault-name> \
      --name django-superuser-email --value "admin@example.com"
-   
+
    az keyvault secret set --vault-name <vault-name> \
      --name django-superuser-password --value "SecurePassword123!"
    ```
@@ -266,7 +266,7 @@ Or set in docker-compose command override.
    docker-compose exec web-prod python manage.py shell -c \
      "from django.contrib.auth import get_user_model; \
       get_user_model().objects.filter(username='admin').delete()"
-   
+
    # Recreate
    docker-compose exec web-prod python manage.py ensure_admin
    ```
@@ -344,7 +344,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Deploy to Azure
         env:
           DJANGO_SUPERUSER_USERNAME: ${{ secrets.DJANGO_SUPERUSER_USERNAME }}

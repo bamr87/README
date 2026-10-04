@@ -111,7 +111,7 @@ foreach (var eventData in events)
         // Batch is full - send it and create a new one
         await producer.SendAsync(batch);
         batch = await producer.CreateBatchAsync();
-        
+
         if (!batch.TryAdd(eventData))
         {
             throw new Exception("Event too large for empty batch");
@@ -194,7 +194,7 @@ processor.ProcessEventAsync += async args =>
 {
     Console.WriteLine($"Partition: {args.Partition.PartitionId}");
     Console.WriteLine($"Data: {args.Data.EventBody}");
-    
+
     // Checkpoint after processing (or batch checkpoints)
     await args.UpdateCheckpointAsync();
 };
@@ -272,7 +272,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddEventHubProducerClient(
         builder.Configuration["EventHub:FullyQualifiedNamespace"],
         builder.Configuration["EventHub:Name"]);
-    
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 });
 
@@ -280,12 +280,12 @@ builder.Services.AddAzureClients(clientBuilder =>
 public class EventService
 {
     private readonly EventHubProducerClient _producer;
-    
+
     public EventService(EventHubProducerClient producer)
     {
         _producer = producer;
     }
-    
+
     public async Task SendAsync(string message)
     {
         using var batch = await _producer.CreateBatchAsync();
@@ -348,7 +348,7 @@ private int _eventCount = 0;
 processor.ProcessEventAsync += async args =>
 {
     // Process event...
-    
+
     _eventCount++;
     if (_eventCount >= 100)
     {

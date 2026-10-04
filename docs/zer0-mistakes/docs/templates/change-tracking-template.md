@@ -13,10 +13,10 @@ title: Change Tracking Template
 ---
 # Change Tracking Template
 
-**Change ID**: [Unique identifier]  
-**Type**: [Feature/Bug Fix/Enhancement/Configuration/Documentation]  
-**Priority**: [High/Medium/Low]  
-**Status**: [Planned/In Progress/Testing/Completed]  
+**Change ID**: [Unique identifier]
+**Type**: [Feature/Bug Fix/Enhancement/Configuration/Documentation]
+**Priority**: [High/Medium/Low]
+**Status**: [Planned/In Progress/Testing/Completed]
 **Date**: [Change date]
 
 ## 📋 Change Summary
@@ -184,7 +184,7 @@ Conditions that would require rolling back this change:
 
 ---
 
-**Change Owner**: [Name]  
-**Implementation Date**: [Date]  
-**Review Date**: [Date]  
+**Change Owner**: [Name]
+**Implementation Date**: [Date]
+**Review Date**: [Date]
 **Next Review**: [Date]

@@ -397,8 +397,8 @@ CREATE INDEX CONCURRENTLY idx_users_handle ON users(handle);
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)  
-**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)  
+**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)
+**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)
 **📊 Data Scientist**: Advance to [Query Optimization](/quests/0110/query-optimization/)
 
 ## 📚 Resources

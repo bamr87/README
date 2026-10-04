@@ -24,7 +24,7 @@ tags:
 - countdown
 - future trends
 - generational shift
-- Millennials
+- millennials
 title: 'Consulting in the AI Era: Why Full-Stack Developers Armed with AI Are Replacing
   New Grads and Revolutionizing the Industry'
 ---

@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: 2026-07-07 00:00:00+00:00
 level: '0100'
@@ -16,6 +17,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 07 Digital Artist 0100
 ---
+# 2026 07 07 Digital Artist 0100
+
 ## 🎯 Session Summary
 
 I walked the first window (5 of 8 quests) of the **Digital Artist → Level 0100 "Frontend & Containers" (Adventurer ⚔️)** slice as a learner, driving the sealed agentic **execute** engine evidence (`walk-evidence.json`) and reading every quest source in plan order. The slice splits cleanly into two personalities: a genuinely strong, dependency-linked **Docker Mastery** pair (container-fundamentals → docker-compose-orchestration) whose core teaching is verified end-to-end, and a weaker, unlinked **Frontend Forests** pair (frontend-docker, frontend) — both still `draft: true`, both carrying auto-seeded placeholder objectives, overlapping heavily in topic, and neither wired into the level's dependency graph. The side quest (jekyll-component-refactoring) is pedagogically sound with small fixable snags.

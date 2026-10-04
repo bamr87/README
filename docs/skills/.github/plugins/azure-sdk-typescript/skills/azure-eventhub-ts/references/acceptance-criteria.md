@@ -13,8 +13,8 @@ title: Azure Event Hubs SDK for TypeScript Acceptance Criteria
 ### 1.1 ✅ CORRECT: ESM Imports
 
 ```typescript
-import { 
-  EventHubProducerClient, 
+import {
+  EventHubProducerClient,
   EventHubConsumerClient,
   earliestEventPosition,
   latestEventPosition,
@@ -24,7 +24,7 @@ import {
 ### 1.2 ✅ CORRECT: Type Imports
 
 ```typescript
-import type { 
+import type {
   EventData,
   ReceivedEventData,
   PartitionContext,
@@ -67,8 +67,8 @@ const credential = new DefaultAzureCredential();
 
 // Producer
 const producer = new EventHubProducerClient(
-  fullyQualifiedNamespace, 
-  eventHubName, 
+  fullyQualifiedNamespace,
+  eventHubName,
   credential
 );
 
@@ -163,7 +163,7 @@ for (const event of events) {
     // Batch is full, send it and create a new one
     await producer.sendBatch(batch);
     batch = await producer.createBatch();
-    
+
     if (!batch.tryAdd({ body: event })) {
       throw new Error("Event too large for a batch");
     }

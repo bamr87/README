@@ -442,8 +442,8 @@ The mindset: **fast feedback and low cost are the same goal** - both come from d
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Testing Integration](/quests/0101/testing-integration/) and shard your slow suites  
-**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)  
+**💻 Software Developer**: Revisit [Testing Integration](/quests/0101/testing-integration/) and shard your slow suites
+**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

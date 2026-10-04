@@ -4,7 +4,7 @@ title: Crush Workflow System - Testing Report
 ---
 # Crush Workflow System - Testing Report
 
-**Date**: 2025-11-20  
+**Date**: 2025-11-20
 **Status**: ✅ WORKING (with minor issues)
 
 ## Test Results
@@ -109,5 +109,5 @@ bash .crush/workflows/engine.sh run \
 --input-file /dev/stdin
 ```
 
-**Expected**: All 10 steps complete with mock outputs  
+**Expected**: All 10 steps complete with mock outputs
 **Actual**: ✅ Working as expected

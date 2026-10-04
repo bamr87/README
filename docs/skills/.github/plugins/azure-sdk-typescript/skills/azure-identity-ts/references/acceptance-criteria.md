@@ -14,7 +14,7 @@ title: Azure Identity SDK for TypeScript Acceptance Criteria
 
 ```typescript
 import { DefaultAzureCredential } from "@azure/identity";
-import { 
+import {
   ManagedIdentityCredential,
   ClientSecretCredential,
   InteractiveBrowserCredential,
@@ -191,7 +191,7 @@ import { ClientCertificateCredential } from "@azure/identity";
 const credential = new ClientCertificateCredential(
   process.env.AZURE_TENANT_ID!,
   process.env.AZURE_CLIENT_ID!,
-  { 
+  {
     certificatePath: "/path/to/cert.pem",
     certificatePassword: process.env.CERTIFICATE_PASSWORD
   }
@@ -235,7 +235,7 @@ const credential = new DeviceCodeCredential({
 ### 7.1 ✅ CORRECT: Custom Credential Chain
 
 ```typescript
-import { 
+import {
   ChainedTokenCredential,
   ManagedIdentityCredential,
   AzureCliCredential

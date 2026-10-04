@@ -1,4 +1,5 @@
 ---
+
 about: Create a report to help us improve
 assignees: bamr87
 date: 2021-09-03 18:10:54+00:00
@@ -7,6 +8,8 @@ name: Bug report
 source_file: bug_report.md
 title: Bug Report
 ---
+# Bug Report
+
 **Describe the bug** A clear and concise description of what the bug is.
 
 **To Reproduce** Steps to reproduce the behavior:

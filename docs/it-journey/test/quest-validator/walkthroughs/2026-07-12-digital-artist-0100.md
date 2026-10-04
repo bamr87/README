@@ -1,4 +1,5 @@
 ---
+
 character: digital-artist
 date: '2026-07-12T00:00:00.000Z'
 level: '0100'
@@ -17,6 +18,8 @@ theme: Frontend & Containers
 tier: Adventurer
 title: 2026 07 12 Digital Artist 0100
 ---
+# 2026 07 12 Digital Artist 0100
+
 ## 🎯 Session Summary
 
 I walked the **second (final) window** of the Digital Artist path's **Level 0100 (Frontend & Containers, ⚔️ Adventurer)** — 3 of the level's 8 quests, in the data-chosen plan order: **The Proving Grounds** (CI gate, main), **Source Control Sorcery** (Git/GitHub, main), and **Profile Themes** (CSS theming, side, 🔴 Hard). The workflow pre-ran the agentic **execute** engine and sealed the evidence; I consumed `walk-evidence.json` as-is and reasoned about the chain as a learner.

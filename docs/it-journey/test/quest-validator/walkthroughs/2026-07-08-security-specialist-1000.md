@@ -1,4 +1,5 @@
 ---
+
 character: security-specialist
 date: '2026-07-08T00:00:00.000Z'
 level: '1000'
@@ -18,6 +19,8 @@ theme: Cloud Computing
 tier: Warrior
 title: 2026 07 08 Security Specialist 1000
 ---
+# 2026 07 08 Security Specialist 1000
+
 ## 🎯 Session Summary
 
 I walked a **4-quest window** (window 2 of 2, offset 5) of the **Security Specialist → Level 1000 (Cloud Computing, 🔥 Warrior)** path as a learner: **AWS Essentials → Azure Ascension → Infrastructure as Code → The War Machine**. The full level holds 9 quests; this run swept the second half, so the earlier foundational quests (Cloud Computing Fundamentals and the rest of window 1) were **not** part of this session. Evidence came from the sealed, workflow-minted `walk-evidence.json` (agentic **execute** engine, real commands in a disposable sandbox); my own contribution is the linked-journey reasoning across the chain, which is **`reasoned`** (static read of each quest source), not re-executed.

@@ -178,11 +178,11 @@ import struct
 
 def pcm_to_wav(pcm_data: bytes, sample_rate: int = 24000) -> bytes:
     """Convert raw PCM audio to WAV format.
-    
+
     Args:
         pcm_data: Raw PCM audio bytes (16-bit, mono)
         sample_rate: Sample rate in Hz (24000 for Realtime API)
-    
+
     Returns:
         WAV file bytes
     """
@@ -191,7 +191,7 @@ def pcm_to_wav(pcm_data: bytes, sample_rate: int = 24000) -> bytes:
     byte_rate = sample_rate * num_channels * bits_per_sample // 8
     block_align = num_channels * bits_per_sample // 8
     data_size = len(pcm_data)
-    
+
     wav_header = struct.pack(
         '<4sI4s4sIHHIIHH4sI',
         b'RIFF',
@@ -208,7 +208,7 @@ def pcm_to_wav(pcm_data: bytes, sample_rate: int = 24000) -> bytes:
         b'data',
         data_size
     )
-    
+
     return wav_header + pcm_data
 ```
 
@@ -266,7 +266,7 @@ const AudioPlayer: React.FC<{ audioData: string }> = ({ audioData }) => {
       const blob = base64ToBlob(audioData, 'audio/wav');
       const url = URL.createObjectURL(blob);
       setAudioUrl(url);
-      
+
       return () => URL.revokeObjectURL(url);
     }
   }, [audioData]);
@@ -316,7 +316,7 @@ async def generate_podcast(request: PodcastRequest) -> PodcastResponse:
             script=request.script,
             voice=request.voice
         )
-        
+
         return PodcastResponse(
             audio_data=audio_data,
             transcript=transcript,
@@ -367,14 +367,14 @@ class ScriptSection(BaseModel):
 async def generate_multi_voice_podcast(sections: list[ScriptSection]) -> bytes:
     """Generate podcast with multiple voices."""
     all_audio = []
-    
+
     for section in sections:
         audio = await generate_audio(
             script=section.text,
             voice=section.voice
         )
         all_audio.append(audio)
-    
+
     return concatenate_audio(all_audio)
 ```
 
@@ -387,42 +387,42 @@ async def generate_multi_voice_podcast(sections: list[ScriptSection]) -> bytes:
 ```python
 async def generate_podcast(script: str, voice: str = "alloy") -> tuple[str, str]:
     """Generate podcast audio from script.
-    
+
     Args:
         script: Text to convert to speech
         voice: Voice selection (alloy, echo, fable, onyx, nova, shimmer)
-    
+
     Returns:
         Tuple of (base64_audio, transcript)
     """
     endpoint = os.environ["AZURE_OPENAI_AUDIO_ENDPOINT"]
     api_key = os.environ["AZURE_OPENAI_AUDIO_API_KEY"]
-    
+
     ws_url = endpoint.replace("https://", "wss://") + "/openai/v1"
-    
+
     client = AsyncOpenAI(
         websocket_base_url=ws_url,
         api_key=api_key
     )
-    
+
     audio_chunks = []
     transcript_parts = []
-    
+
     async with client.realtime.connect(model="gpt-realtime-mini") as conn:
         await conn.session.update(session={
             "output_modalities": ["audio"],
             "voice": voice,
             "instructions": "You are a podcast narrator. Read the following content naturally."
         })
-        
+
         await conn.conversation.item.create(item={
             "type": "message",
             "role": "user",
             "content": [{"type": "input_text", "text": script}]
         })
-        
+
         await conn.response.create()
-        
+
         async for event in conn:
             if event.type == "response.output_audio.delta":
                 audio_chunks.append(base64.b64decode(event.delta))
@@ -432,12 +432,12 @@ async def generate_podcast(script: str, voice: str = "alloy") -> tuple[str, str]
                 break
             elif event.type == "error":
                 raise Exception(f"Audio generation failed: {event.error.message}")
-    
+
     pcm_audio = b''.join(audio_chunks)
     wav_audio = pcm_to_wav(pcm_audio, sample_rate=24000)
     audio_base64 = base64.b64encode(wav_audio).decode('utf-8')
     transcript = ''.join(transcript_parts)
-    
+
     return audio_base64, transcript
 ```
 

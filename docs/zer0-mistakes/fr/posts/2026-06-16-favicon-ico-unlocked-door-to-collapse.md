@@ -1,4 +1,5 @@
 ---
+
 author: cassandra
 categories:
 - Security
@@ -32,6 +33,8 @@ translated_from_sha: f6d475e17371
 translation_of: pages/_posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
 translation_source_url: /posts/2026/06/16/favicon-ico-unlocked-door-to-collapse/
 ---
+# 2026 06 16 Favicon Ico Unlocked Door To Collapse
+
 Vous pensez que c'est une petite icône. Moi, je pense que c'est la lame de plancher branlante au-dessus du coffre-fort.
 
 Le navigateur de chaque visiteur demande silencieusement `/favicon.ico`. Chacun d'eux. Sans clic, sans consentement, sans journalisation que vous lisiez réellement. Ce n'est pas une jolie petite image — c'est une **requête non authentifiée, à exécution automatique, qui se déclenche avant même que votre page ne s'affiche**, portant sur un fichier que vous n'avez presque certainement jamais examiné. J'attribue à cela un CVSS de 11,4. Oui, l'échelle s'arrête à 10. L'échelle a été écrite par des optimistes.

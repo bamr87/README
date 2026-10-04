@@ -334,7 +334,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
     gv = Get-Variable                # Get names and values of
                                      # all session variables
     ni = New-Item                    # Create new file, directory, symbolic link,
-                                     # registry key, or registry entry	
+                                     # registry key, or registry entry
     ps = gps = Get-Process           # List running processes.
                                      #
     pwd = gl = Get-Location          # Current directory (folder)
@@ -353,7 +353,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
                                      # giving all lines that do not start with blank, tab, or EOL)
     where  = ? = Where-Object        # Only in pipeline.
                                      # Example: ls -recurse |? name -like '*Pict*'
-    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).							
+    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).
 ```
 
 ## Example of a pipelined command
@@ -1698,7 +1698,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
     gv = Get-Variable                # Get names and values of
                                      # all session variables
     ni = New-Item                    # Create new file, directory, symbolic link,
-                                     # registry key, or registry entry	
+                                     # registry key, or registry entry
     ps = gps = Get-Process           # List running processes.
                                      #
     pwd = gl = Get-Location          # Current directory (folder)
@@ -1717,7 +1717,7 @@ Many cmdlets have one or more aliases. Often an alias is DOS- or Unix-like.
                                      # giving all lines that do not start with blank, tab, or EOL)
     where  = ? = Where-Object        # Only in pipeline.
                                      # Example: ls -recurse |? name -like '*Pict*'
-    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).							
+    $env:userprofile = ~             # Example: cd ~ (change folder to home folder of user).
 
 ```
 
@@ -2785,4 +2785,4 @@ The final command finds entry values containing a given string in keys below the
 
 ```
 
-[Source](https://www.theochem.ru.nl/~pwormer/teachmat/PS_cheat_sheet.html) 
+[Source](https://www.theochem.ru.nl/~pwormer/teachmat/PS_cheat_sheet.html)

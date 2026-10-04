@@ -1,4 +1,5 @@
 ---
+
 character: data-scientist
 date: '2026-07-12T00:00:00.000Z'
 level: '0110'
@@ -18,6 +19,8 @@ theme: Database Mastery
 tier: Adventurer
 title: 2026 07 12 Data Scientist 0110
 ---
+# 2026 07 12 Data Scientist 0110
+
 ## 🎯 Session Summary
 
 I played the **Data Scientist** path's **Level 0110 — Database Mastery** (Adventurer ⚔️) slice as a learner: the second and final rotating window of the level, covering its last three main quests — **Backup and Recovery**, **Query Optimization**, and **Connection Pooling**. All three were executed for real by the sealed agentic engine in a disposable sandbox against a live PostgreSQL 16 (and PgBouncer 1.22.0) instance; I then read each quest source in plan order and reasoned about the linked journey.

@@ -1,10 +1,13 @@
 ---
+
 gamename: drifter
 layout: default
 level: 6
 source_file: drifter6.md
 title: Drifter6
 ---
+# Drifter6
+
 Level 6 is a simple remote daemon with a particular vulnerability. In what I intended for this level, it is running in a vulnerable state :P
 
 **Reading material:**
