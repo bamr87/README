@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-30T04:16:00.053577",
+  "test_suite": "documentation_aggregator",
+  "unit_tests": {
+    "timestamp": "2026-09-30T04:16:00.053615",
+    "test_type": "unit",
+    "total_tests": 135,
+    "passed": 134,
+    "failed": 1,
+    "errors": 0,
+    "test_results": [
+      {
+        "test_name": "test_this_repository_passes_the_gate (test_fleet_survey.TestTrackedSurfaces.test_this_repository_passes_the_gate)",
+        "status": "failed",
+        "error": "Traceback (most recent call last):\n  File \"/home/runner/work/bamr87/bamr87/tests/unit/test_cases/test_fleet_survey.py\", line 342, in test_this_repository_passes_the_gate\n    self.assertEqual(result[\"problems\"], [],\nAssertionError: Lists differ: [{'kind': 'fact-count-mismatch', 'surface'[477 chars]25'}] != []\n\nFirst list contains 3 additional elements.\nFirst extra element 0:\n{'kind': 'fact-count-mismatch', 'surface': 'context/facts/barodybroject.json', 'target': 'barodybroject', 'message': 'barodybroject facts claim 301 documents, git tracks 308'}\n\n+ []\n- [{'kind': 'fact-count-mismatch',\n-   'message': 'barodybroject facts claim 301 documents, git tracks 308',\n-   'surface': 'context/facts/barodybroject.json',\n-   'target': 'barodybroject'},\n-  {'kind': 'fact-count-mismatch',\n-   'message': 'it-journey facts claim 1166 documents, git tracks 1167',\n-   'surface': 'context/facts/it-journey.json',\n-   'target': 'it-journey'},\n-  {'kind': 'fact-count-mismatch',\n-   'message': 'zer0-mistakes facts claim 724 documents, git tracks 725',\n-   'surface': 'context/facts/zer0-mistakes.json',\n-   'target': 'zer0-mistakes'}] : barodybroject facts claim 301 documents, git tracks 308\nit-journey facts claim 1166 documents, git tracks 1167\nzer0-mistakes facts claim 724 documents, git tracks 725\n"
+      }
+    ]
+  },
+  "integration_tests": null,
+  "overall_success": false
+}
