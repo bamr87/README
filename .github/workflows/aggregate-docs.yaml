@@ -58,6 +58,12 @@ jobs:
         run: python3 -m scripts.context_engine navcheck
 
       # Every path a generated surface names must be a file git will accept.
+      # The check reads `git ls-files`, so stage the corpus first: a page the
+      # crawl just added is otherwise "untracked" and fails the gate every
+      # week new docs arrive. `git add` honours .gitignore, so an ignored
+      # corpus path is still caught here.
+      - name: Stage the refreshed corpus
+        run: git add -A docs
       - name: Validate generated surfaces reference tracked files
         run: python3 scripts/check_tracked_surfaces.py
 
