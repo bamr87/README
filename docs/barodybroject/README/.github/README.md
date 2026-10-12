@@ -10,12 +10,7 @@ AI-powered Django application for generating parody news content using OpenAI AP
 
 ## Tech Stack
 
-**Backend**: Django 4.2 • Python 3.8+ • Django CMS • DRF
-**Database**: PostgreSQL
-**Infrastructure**: Docker • Azure Container Apps • Azure Bicep
-**AI**: OpenAI API • Custom Assistants
-**Testing**: Pytest • Playwright • Selenium
-**Frontend**: Bootstrap • CKEditor • Jekyll
+**Backend**: Django 4.2 • Python 3.8+ • Django CMS • DRF **Database**: PostgreSQL **Infrastructure**: Docker • Azure Container Apps • Azure Bicep **AI**: OpenAI API • Custom Assistants **Testing**: Pytest • Playwright • Selenium **Frontend**: Bootstrap • CKEditor • Jekyll
 
 ## Quick Start
 

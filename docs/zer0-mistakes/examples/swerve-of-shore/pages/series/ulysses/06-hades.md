@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 6 of Ulysses — Hades (11am, the funeral procession to
   Glasnevin).
 hide_intro: true
@@ -12,8 +11,6 @@ sidebar:
 source_file: 06-hades.md
 title: 06 Hades
 ---
-# 06 Hades
-
 {% include page-header.html %}
 
 Episode 6 of *Ulysses*. 11am, the funeral procession to Glasnevin.

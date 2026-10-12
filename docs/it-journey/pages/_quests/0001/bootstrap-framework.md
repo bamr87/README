@@ -53,7 +53,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/bootstrap-framework-responsive-design-toolkit-desc.webp
+preview: /images/previews/bootstrap-framework-responsive-design-toolkit-desc.webp
 primary_technology: bootstrap
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -466,9 +466,9 @@ The CSS-variable route needs no build step and is perfect for this tier. The Sas
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)
-**🏗️ System Engineer**: Explore [CSS Styling Basics](/quests/0001/css-styling-basics/)
-**🎨 Frontend Specialist**: Master [CSS Styling Basics](/quests/0001/css-styling-basics/)
+**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
+**🏗️ System Engineer**: Explore [CSS Styling Basics](/quests/0001/css-styling-basics/)  
+**🎨 Frontend Specialist**: Master [CSS Styling Basics](/quests/0001/css-styling-basics/)  
 
 ## 📚 Resources
 

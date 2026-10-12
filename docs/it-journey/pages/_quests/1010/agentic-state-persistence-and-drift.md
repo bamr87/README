@@ -35,7 +35,7 @@ prerequisites:
   - Understanding of LLM context windows
   system_requirements:
   - GitHub account with Actions and Artifacts enabled
-preview: images/previews/agentic-state-persistence-and-drift.png
+preview: /images/previews/agentic-state-persistence-and-drift.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:
@@ -207,7 +207,7 @@ def detect_drift(intent_file: str, checkpoint_file: str, threshold: float) -> bo
     current_task_summary = checkpoint.get("task_summary", "")
 
     score = similarity(original_task, current_task_summary)
-
+    
     print(f"Drift detection report:")
     print(f"  Original task length: {len(original_task)} chars")
     print(f"  Current summary length: {len(current_task_summary)} chars")

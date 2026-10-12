@@ -1,5 +1,4 @@
 ---
-
 categories:
 - contact
 - support
@@ -15,8 +14,6 @@ tags:
 - support
 title: Contact
 ---
-# Contact
-
 We’d love to hear from you.
 
 - Email: {% if site.email %}[{{ site.email }}](mailto:{{ site.email }}){% else %}Not set{% endif %}

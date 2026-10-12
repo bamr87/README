@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 4 GB RAM; no GPU required
-preview: images/previews/ai-ethics-descriptive-subtitle.png
+preview: /images/previews/ai-ethics-descriptive-subtitle.png
 primary_technology: fairlearn
 quest_arc: The Conscience of the Machine
 quest_dependencies:
@@ -408,8 +408,8 @@ MODEL CARD — Loan Default Classifier v2.1
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [MLOps Engineering](/quests/1101/mlops/) with governance in mind
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/) for oversight tooling
+**💻 Software Developer**: Revisit [MLOps Engineering](/quests/1101/mlops/) with governance in mind  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/) for oversight tooling  
 **📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
 
 ## 📚 Resources

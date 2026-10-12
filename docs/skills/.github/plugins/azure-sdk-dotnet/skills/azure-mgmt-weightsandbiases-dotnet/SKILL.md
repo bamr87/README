@@ -22,8 +22,7 @@ dotnet add package Azure.ResourceManager.WeightsAndBiases --prerelease
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0-beta.1 (preview)
-**API Version**: 2024-09-18-preview
+**Current Version**: v1.0.0-beta.1 (preview) **API Version**: 2024-09-18-preview
 
 ## Environment Variables
 

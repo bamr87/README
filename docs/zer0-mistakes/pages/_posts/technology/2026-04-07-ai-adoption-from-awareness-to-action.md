@@ -1,5 +1,4 @@
 ---
-
 author: default
 categories:
 - Technology
@@ -22,8 +21,6 @@ tags:
 - content-operations
 title: 2026 04 07 Ai Adoption From Awareness To Action
 ---
-# 2026 04 07 Ai Adoption From Awareness To Action
-
 Every CEO and owner we have spoken with about the AI adoption landscape responds with the same question: "We agree. Now what? We don't have the people, the skills, or the bandwidth to do this ourselves."
 
 That response is not a sign of weakness. It is an accurate diagnosis of the situation. The RSM 2025 AI Survey found that the top three barriers to AI implementation in the middle market are:

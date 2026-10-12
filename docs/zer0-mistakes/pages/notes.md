@@ -1,5 +1,4 @@
 ---
-
 description: Quick reference notes, cheatsheets, and command snippets for developers
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
@@ -7,8 +6,6 @@ permalink: /notes/
 source_file: notes.md
 title: Notes
 ---
-# Notes
-
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">
@@ -18,7 +15,7 @@ title: Notes
   </div>
 
   {% if site.notes and site.notes.size > 0 %}
-
+  
   <!-- Tag Filter -->
   <div class="row mb-4">
     <div class="col">
@@ -60,11 +57,11 @@ title: Notes
             </span>
             {% endif %}
           </div>
-
+          
           {% if note.description %}
           <p class="card-text text-muted small">{{ note.description | truncate: 120 }}</p>
           {% endif %}
-
+          
           {% if note.tags and note.tags.size > 0 %}
           <div class="mt-auto">
             {% for tag in note.tags limit: 4 %}
@@ -89,7 +86,7 @@ title: Notes
     </div>
     {% endfor %}
   </div>
-
+  
   {% else %}
   <div class="row">
     <div class="col">
@@ -104,15 +101,15 @@ title: Notes
 
 <script>
 document.addEventListener('DOMContentLoaded', function() { const filterButtons = document.querySelectorAll('[data-filter]'); const noteCards = document.querySelectorAll('.note-card');
-
+  
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {
       const filter = this.getAttribute('data-filter');
-
+      
       // Update active button
       filterButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
-
+      
       // Filter cards
       noteCards.forEach(card => {
         const tags = card.getAttribute('data-tags') || '';

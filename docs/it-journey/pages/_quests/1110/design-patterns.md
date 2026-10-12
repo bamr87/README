@@ -53,7 +53,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ and a text editor or IDE (VS Code recommended)
   - A terminal for running examples
-preview: images/previews/software-design-patterns-gang-of-four-modern.png
+preview: /images/previews/software-design-patterns-gang-of-four-modern.png
 primary_technology: python
 quest_arc: Blueprints of the Master
 quest_dependencies:
@@ -478,8 +478,8 @@ The Strategy pattern from Chapter 2 is the Open/Closed Principle made concrete: 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Domain-Driven Design](/quests/1110/domain-driven-design/)
-**🏗️ System Engineer**: Explore [Microservices Architecture](/quests/1110/microservices-architecture/)
+**💻 Software Developer**: Continue to [Domain-Driven Design](/quests/1110/domain-driven-design/)  
+**🏗️ System Engineer**: Explore [Microservices Architecture](/quests/1110/microservices-architecture/)  
 **🛡️ Security Specialist**: Revisit how Dependency Inversion eases secure dependency swaps
 
 ## 📚 Resources

@@ -1,5 +1,4 @@
 ---
-
 attachments: ''
 author: bamr87
 categories: []
@@ -20,5 +19,3 @@ sub-title: null
 tags: []
 title: Poem
 ---
-# Poem
-

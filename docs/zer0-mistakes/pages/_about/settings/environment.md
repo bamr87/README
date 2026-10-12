@@ -1,5 +1,4 @@
 ---
-
 excerpt: Jekyll environment, build details, Ruby version, theme info, and plugin list.
 icon: material/server-network
 lastmod: 2026-04-04 00:00:00+00:00
@@ -10,6 +9,4 @@ source_file: environment.md
 source_icon: bi-hdd-network
 title: Environment
 ---
-# Environment
-
 {% include components/env-dashboard.html %}

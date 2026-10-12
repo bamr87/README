@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ (or Docker to run it)
-preview: images/previews/database-security-access-control-quest-title-and.png
+preview: /images/previews/database-security-access-control-quest-title-and.png
 primary_technology: sql
 quest_arc: The Warded Vault
 quest_dependencies:
@@ -376,8 +376,8 @@ SELECT pgp_sym_decrypt(payload, 'encryption-key') FROM secrets WHERE label = 'ap
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)
-**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)
+**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)  
+**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)  
 **🛡️ Security Specialist**: Advance to [Security Fundamentals](/quests/1011/security-fundamentals/)
 
 ## 📚 Resources

@@ -1,5 +1,4 @@
 ---
-
 author: Jane Doe
 categories:
 - breaking
@@ -13,8 +12,6 @@ slug: wheat-prices-global-egypt-perspective
 source_file: 2024-09-25-wheat-prices-global-egypt-perspective.md
 title: 2024 09 25 Wheat Prices Global Egypt Perspective
 ---
-# 2024 09 25 Wheat Prices Global Egypt Perspective
-
 ### Introduction
 
 Over the past decade (2013–2023), wheat prices have experienced significant fluctuations due to various factors such as weather events, geopolitical tensions, and shifts in global supply and demand. For Egypt, one of the world's largest importers of wheat, these price movements have had substantial implications for its economy and food security policies.

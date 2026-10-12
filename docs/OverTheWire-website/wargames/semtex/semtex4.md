@@ -1,13 +1,10 @@
 ---
-
 gamename: semtex
 layout: default
 level: 4
 source_file: semtex4.md
 title: Semtex4
 ---
-# Semtex4
-
 Ptrace your way
 ---------------
 

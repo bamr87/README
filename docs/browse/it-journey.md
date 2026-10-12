@@ -9,9 +9,9 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **926 pages** across **93 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **945 pages** across **95 sections** (max depth 7).
 
-- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(232)</small>
+- **[Repository & tooling](../it-journey/redirects/README.md)** <small>(233)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
     - [redirects/](../it-journey/redirects/README.md)
     - **Posts** <small>(42)</small>
@@ -57,9 +57,10 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [2026 06 14 Ai Assisted Analytics Seo Audit](../it-journey/redirects/posts/2026-06-14-ai-assisted-analytics-seo-audit.md)
       - [2026 06 22 Fix Local Jekyll Docker Yanked Ffi](../it-journey/redirects/posts/2026-06-22-fix-local-jekyll-docker-yanked-ffi.md)
       - [2026 06 23 Embedding Giscus Comments Zer0 Mistakes](../it-journey/redirects/posts/2026-06-23-embedding-giscus-comments-zer0-mistakes.md)
-  - **[Scripts Directory](../it-journey/scripts/README.md)** <small>(12)</small>
+  - **[Scripts Directory](../it-journey/scripts/README.md)** <small>(13)</small>
     - [Scripts Directory](../it-journey/scripts/README.md)
     - [Core Utility Scripts](../it-journey/scripts/core/README.md)
+    - [Dig scripts](../it-journey/scripts/digs/README.md)
     - [Generated Zer0-to-Hero Script](../it-journey/scripts/generation/zer0-to-hero-generated-README.md)
     - [IT-Journey AI runner & content fleet](../it-journey/scripts/ai/README.md)
     - [PRD MACHINE v2](../it-journey/scripts/prd-machine/README.md)
@@ -274,18 +275,19 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
 - [PRD Machine Requirement Conflicts - Resolution Report](../it-journey/RESOLUTION_REPORT.md)
 - [Roadmap](../it-journey/roadmap.md)
 - [Security Policy](../it-journey/SECURITY.md)
-- **[Data](../it-journey/_data/README.md)** <small>(8)</small>
+- **[Data](../it-journey/_data/README.md)** <small>(9)</small>
   - [IT-Journey Data Directory](../it-journey/_data/README.md)
   - [Contributor Data Directory](../it-journey/_data/contributors/README.md)
   - [Navigation Data Schema Documentation](../it-journey/_data/navigation/README.md)
-  - **[data/brand/ — IT-Journey brand store](../it-journey/_data/brand/README.md)** <small>(5)</small>
+  - **[data/brand/ — IT-Journey brand store](../it-journey/_data/brand/README.md)** <small>(6)</small>
     - [data/brand/ — IT-Journey brand store](../it-journey/_data/brand/README.md)
     - [IT-Journey — Prose & Formatting Style](../it-journey/_data/brand/style.md)
     - [IT-Journey — Voice & Tone](../it-journey/_data/brand/voice.md)
-    - **Sections** <small>(2)</small>
+    - **Sections** <small>(3)</small>
+      - [Digs — Section Guide](../it-journey/_data/brand/sections/dig.md)
       - [Docs — Section Guide](../it-journey/_data/brand/sections/docs.md)
       - [Quests — Section Guide](../it-journey/_data/brand/sections/quest.md)
-- **[Documentation](../it-journey/docs/README.md)** <small>(37)</small>
+- **[Documentation](../it-journey/docs/README.md)** <small>(39)</small>
   - [IT-Journey Developer Documentation](../it-journey/docs/README.md)
   - [Developer Contribution Guide](../it-journey/docs/CONTRIBUTING_DEVELOPER.md)
   - [Notes Workbench — the design](../it-journey/docs/notes/WORKBENCH.md)
@@ -307,6 +309,9 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
   - **CMS** <small>(2)</small>
     - [IT-Journey CMS — VS Code extension design & contract](../it-journey/docs/cms/EXTENSION_DESIGN.md)
     - [IT-Journey — Branding & Content-Governance System (plan)](../it-journey/docs/cms/BRANDING_GOVERNANCE_PLAN.md)
+  - **[Git archaeology](../it-journey/docs/git-archaeology/README.md)** <small>(2)</small>
+    - [Git archaeology](../it-journey/docs/git-archaeology/README.md)
+    - [First steps](../it-journey/docs/git-archaeology/000-first-steps/report.md)
   - **Quests** <small>(5)</small>
     - [Character Skills — per-path voices and exercises for the…](../it-journey/docs/quests/CHARACTER_SKILLS.md)
     - [Perfection loop vs. the video it produces — a side-by-side run](../it-journey/docs/quests/LOOP_VS_VIDEO.md)
@@ -333,21 +338,29 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Link Checker Workflow Test Results](../it-journey/docs/workflows/LINK_CHECKER_VALIDATION.md)
     - [Link Health Guardian Consolidation Summary](../it-journey/docs/workflows/LINK_CONSOLIDATION_SUMMARY.md)
     - [Organize Posts Weekly Workflow Documentation](../it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md)
-- **[Home](../it-journey/pages/home.md)** <small>(637)</small>
+- **[Home](../it-journey/pages/home.md)** <small>(652)</small>
   - [Home](../it-journey/pages/home.md)
+  - [Categories](../it-journey/pages/categories.md)
   - [Home](../it-journey/pages/_hobbies/home.md)
   - [IT-Journey Blog Posts](../it-journey/pages/posts.md)
   - [Quest Ideas](../it-journey/pages/quest-ideas.md)
-  - [Search](../it-journey/pages/search.md)
+  - [Search Index and Sitemap](../it-journey/pages/search.md)
   - [Sitemap](../it-journey/pages/sitemap.md)
   - [Stats](../it-journey/pages/stats.md)
-  - **[Index](../it-journey/pages/_notes/index.md)** <small>(57)</small>
+  - [Tags](../it-journey/pages/tags.md)
+  - **[Index (_digs)](../it-journey/pages/_digs/index.md)** <small>(4)</small>
+    - [Index](../it-journey/pages/_digs/index.md)
+    - [2020 07 30 First Steps](../it-journey/pages/_digs/2020-07-30-first-steps.md)
+    - [2020 08 01 The Outline Moves](../it-journey/pages/_digs/2020-08-01-the-outline-moves.md)
+    - [2020 08 23 Two Branches One Equals Sign](../it-journey/pages/_digs/2020-08-23-two-branches-one-equals-sign.md)
+  - **[Index (_notes)](../it-journey/pages/_notes/index.md)** <small>(58)</small>
     - [Index](../it-journey/pages/_notes/index.md)
     - [2025 01 16 Iterm Tips And Tricks](../it-journey/pages/_notes/2025-01-16-iterm-tips-and-tricks.md)
     - [2025 01 16 Mastering Iterm Shortcuts For Efficiency](../it-journey/pages/_notes/2025-01-16-mastering-iterm-shortcuts-for-efficiency.md)
     - [2025 01 23 Sass Mixins](../it-journey/pages/_notes/2025-01-23-sass-mixins.md)
     - [2025 01 24 Set Up Azure For Jekyll Contact Us Form](../it-journey/pages/_notes/2025-01-24-set-up-azure-for-jekyll-contact-us-form.md)
     - [2025 01 24 Using Jekyll Lambda And Ses For Efficient Web Solutions](../it-journey/pages/_notes/2025-01-24-using-jekyll-lambda-and-ses-for-efficient-web-solutions.md)
+    - [2026 09 26 First Steps Of The Repository](../it-journey/pages/_notes/2026-09-26-first-steps-of-the-repository.md)
     - [Example usage](../it-journey/pages/_notes/html_md_doc_scrapper.md)
     - [Final Summary](../it-journey/pages/_notes/2025-02-05-host-django-on-raspberry-pi-a-complete-guide.md)
     - [Front Matter Preview Configuration](../it-journey/pages/_notes/frontmatter-preview-solution.md)
@@ -585,7 +598,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Perfect for showcasing open-source projects](../it-journey/pages/_posts/web development/2025-11-15-github-pages-hidden-gem.md)
       - [Recommended: rbenv + Bundler](../it-journey/pages/_posts/web development/2025-08-31-404-hunting-quest.md)
       - [🎉 Interactive JavaScript & Jekyll Layout Integration Demo](../it-journey/pages/_posts/web development/2025-11-16-javascript-jekyll-interactive-demo.md)
-  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(272)</small>
+  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(280)</small>
     - [Readme](../it-journey/pages/_quests/README.md)
     - [2025 11 17 Azure Ascension Jekyll Deployment Quest](../it-journey/pages/_quests/2025-11-17-azure-ascension-jekyll-deployment-quest.md)
     - [Home](../it-journey/pages/_quests/home.md)
@@ -651,9 +664,10 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [📆 Contribution Calendar: Mapping Your Journey Through Time](../it-journey/pages/_quests/0010/side-quest-contribution-calendar.md)
       - [📊 Stats Dashboard: Enhancing Your Data Visualization](../it-journey/pages/_quests/0010/side-quest-stats-dashboard.md)
       - [🧙‍♂️ The Diagrammatic Enchantment: Jekyll-Mermaid Integration Quest](../it-journey/pages/_quests/0010/jekyll-mermaid-integration.md)
-    - **[Level 0011: Development Tools & AI Integration](../it-journey/pages/_quests/0011/README.md)** <small>(10)</small>
+    - **[Level 0011: Development Tools & AI Integration](../it-journey/pages/_quests/0011/README.md)** <small>(11)</small>
       - [Level 0011: Development Tools & AI Integration](../it-journey/pages/_quests/0011/README.md)
       - [.github/actions/claude-run/action.yml](../it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md)
+      - [cobc (GnuCOBOL) 3.1.2.0](../it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site.md)
       - [Install VS Code Copilot extensions via CLI](../it-journey/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot.md)
       - [macOS-specific commands and setup (advanced-git-workflows)](../it-journey/pages/_quests/0011/advanced-git-workflows.md)
       - [macOS-specific commands and setup (analytics-integration)](../it-journey/pages/_quests/0011/analytics-integration.md)
@@ -708,7 +722,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Install Git using Homebrew (the macOS package enchantment)](../it-journey/pages/_quests/0100/sourcery-code-methods.md)
       - [scripts/ci/verify.py — the FROZEN findings contract (emitter half)](../it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds.md)
       - [🎭 Profile Themes: Unleashing the Style Sorcerer](../it-journey/pages/_quests/0100/side-quest-profile-themes.md)
-    - **[Level 0101: Advanced Docker & DevOps](../it-journey/pages/_quests/0101/README.md)** <small>(15)</small>
+    - **[Level 0101: Advanced Docker & DevOps](../it-journey/pages/_quests/0101/README.md)** <small>(16)</small>
       - [Level 0101: Advanced Docker & DevOps](../it-journey/pages/_quests/0101/README.md)
       - [.github/workflows/first-turn.yml (additions)](../it-journey/pages/_quests/0101/ouroboros-loop-02-the-wardens-gate.md)
       - [docker-compose.override.yml](../it-journey/pages/_quests/0101/second-shift-server-resurrection.md)
@@ -722,19 +736,21 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Install VS Code extension](../it-journey/pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae.md)
       - [Set and read an environment variable in zsh/bash](../it-journey/pages/_quests/0101/environment-management.md)
       - [Start Jekyll development environment](../it-journey/pages/_quests/0101/jekyll-quest-tracking.md)
+      - [The summoning circle: the relic runs identically in every world.](../it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md)
       - [Time your local build so you have a baseline to optimize against](../it-journey/pages/_quests/0101/workflow-optimization.md)
       - [triage.sh — does the bug live in MY repo or the THEME?](../it-journey/pages/_quests/0101/self-operating-website-08-the-cartographer.md)
-    - **[Level 0110 (6) - Database Mastery](../it-journey/pages/_quests/0110/README.md)** <small>(9)</small>
+    - **[Level 0110 (6) - Database Mastery](../it-journey/pages/_quests/0110/README.md)** <small>(10)</small>
       - [Level 0110 (6) - Database Mastery](../it-journey/pages/_quests/0110/README.md)
       - [Data Modeling](../it-journey/pages/_quests/0110/data-modeling.md)
       - [Install Alembic (Python migration tool)](../it-journey/pages/_quests/0110/database-migrations.md)
       - [Install PostgreSQL with Homebrew](../it-journey/pages/_quests/0110/database-fundamentals.md)
       - [Logical backup: a portable file that can recreate the database anywhere.](../it-journey/pages/_quests/0110/backup-recovery.md)
       - [PgBouncer config lives at /opt/homebrew/etc/pgbouncer.ini](../it-journey/pages/_quests/0110/connection-pooling.md)
+      - [Relic Raisers 02 The Strata](../it-journey/pages/_quests/0110/relic-raisers-02-the-strata.md)
       - [Sql Mastery](../it-journey/pages/_quests/0110/sql-mastery.md)
       - [❌ N+1: one query for users, then one query PER user for their events.](../it-journey/pages/_quests/0110/query-optimization.md)
       - [❌ VULNERABLE: user input is glued directly into the SQL string.](../it-journey/pages/_quests/0110/database-security.md)
-    - **[Level 0111 (7) - API Development](../it-journey/pages/_quests/0111/README.md)** <small>(11)</small>
+    - **[Level 0111 (7) - API Development](../it-journey/pages/_quests/0111/README.md)** <small>(12)</small>
       - [Level 0111 (7) - API Development](../it-journey/pages/_quests/0111/README.md)
       - [A bounded-agent task contract (paste the body into a Copilot-assigned…](../it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc.md)
       - [Clone the starter sandbox](../it-journey/pages/_quests/0111/agentic-sdlc-integration.md)
@@ -745,6 +761,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [httpbin lets you request any status code on demand](../it-journey/pages/_quests/0111/error-handling.md)
       - [Inspect GitHub's rate-limit headers (works unauthenticated, lower limit)](../it-journey/pages/_quests/0111/rate-limiting.md)
       - [Install the Redocly CLI to lint and preview OpenAPI docs](../it-journey/pages/_quests/0111/api-documentation.md)
+      - [port 11050.00 2100.50](../it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md)
       - [Python ships with macOS; install the JWT library for the lab](../it-journey/pages/_quests/0111/api-authentication.md)
     - **[Level 1000 (8) - Cloud Computing Fundamentals](../it-journey/pages/_quests/1000/README.md)** <small>(11)</small>
       - [Level 1000 (8) - Cloud Computing Fundamentals](../it-journey/pages/_quests/1000/README.md)
@@ -801,11 +818,12 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Tools](../it-journey/pages/_quests/1011/penetration-testing.md)
       - [Use VS Code with a Mermaid preview extension to diagram in plain text](../it-journey/pages/_quests/1011/threat-modeling.md)
       - [work/gh-600/scripts/measureagentbaseline.sh](../it-journey/pages/_quests/1011/agentic-behavior-tuning.md)
-    - **[Level 1100: Data & Templates](../it-journey/pages/_quests/1100/README.md)** <small>(16)</small>
+    - **[Level 1100: Data & Templates](../it-journey/pages/_quests/1100/README.md)** <small>(17)</small>
       - [Level 1100: Data & Templates](../it-journey/pages/_quests/1100/README.md)
       - [.github/agent-autonomy.yml — the action → level map the gate reads](../it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability.md)
       - [.github/CODEOWNERS](../it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop.md)
       - [.github/workflows/bard-forge.yml (in the SOURCE repo)](../it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge.md)
+      - [0.30000000000000004](../it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md)
       - [A ready-made Spark + Jupyter image, great for a Codespace or container…](../it-journey/pages/_quests/1100/apache-spark.md)
       - [Any Codespace or container with Python works.](../it-journey/pages/_quests/1100/data-quality.md)
       - [Any Codespace or container with Python works. For the Airflow chapter](../it-journey/pages/_quests/1100/etl-pipeline-design.md)
@@ -818,7 +836,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Our Agentic SDLC](../it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial.md)
       - [Prereqs (optional if already installed)](../it-journey/pages/_quests/1100/the-temple-of-templates.md)
       - [scripts/ai/run.sh <role> — drive one Claude Code agent non-interactively](../it-journey/pages/_quests/1100/self-operating-website-06-the-editors-eye.md)
-    - **[Level 1110: Quality Assurance](../it-journey/pages/_quests/1110/README.md)** <small>(11)</small>
+    - **[Level 1110: Quality Assurance](../it-journey/pages/_quests/1110/README.md)** <small>(12)</small>
       - [Level 1110: Quality Assurance](../it-journey/pages/_quests/1110/README.md)
       - [.claude/hooks/chronicle.sh — SessionEnd hook: enqueue, do not process.](../it-journey/pages/_quests/1110/self-operating-website-09-the-chronicle.md)
       - [.github/workflows/auto-merge.yml](../it-journey/pages/_quests/1110/ouroboros-loop-07-weaving-the-whole.md)
@@ -826,6 +844,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Excalidraw runs in the browser; or install draw.io desktop](../it-journey/pages/_quests/1110/system-design-interviews.md)
       - [Python ships with modern macOS, but a Homebrew install is cleaner](../it-journey/pages/_quests/1110/design-patterns.md)
       - [Redpanda is a lightweight, Kafka-compatible broker for local use](../it-journey/pages/_quests/1110/event-driven-design.md)
+      - [Restart the gate with the relic answering. Nothing else changes.](../it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md)
       - [Run NGINX with a custom config you will write below](../it-journey/pages/_quests/1110/api-gateway-patterns.md)
       - [Use WSL2 Ubuntu and follow Linux steps](../it-journey/pages/_quests/1110/404-hunting.md)
       - [Verify the engine is running](../it-journey/pages/_quests/1110/microservices-architecture.md)
@@ -857,22 +876,24 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Verify MLflow, then launch its tracking UI on http://localhost:5000](../it-journey/pages/_quests/1101/mlops.md)
       - [Verify the fairness toolkit loads](../it-journey/pages/_quests/1101/ai-ethics.md)
       - [Verify the transformers library loads](../it-journey/pages/_quests/1101/natural-language-processing.md)
-    - **[👑 Level 1111: Leadership & Innovation](../it-journey/pages/_quests/1111/README.md)** <small>(9)</small>
+    - **[👑 Level 1111: Leadership & Innovation](../it-journey/pages/_quests/1111/README.md)** <small>(10)</small>
       - [👑 Level 1111: Leadership & Innovation](../it-journey/pages/_quests/1111/README.md)
       - [A private, append-only brag doc is the single best career habit](../it-journey/pages/_quests/1111/career-advancement.md)
       - [A private, versioned mentoring journal protects continuity](../it-journey/pages/_quests/1111/mentorship-programs.md)
       - [A versioned lab notebook keeps every experiment honest and reviewable](../it-journey/pages/_quests/1111/innovation-rnd.md)
       - [A versioned writing folder makes your drafts reviewable and reusable](../it-journey/pages/_quests/1111/tech-speaking-writing.md)
+      - [Elders of ARAGE01](../it-journey/pages/_quests/1111/relic-raisers-03-the-elders.md)
       - [Install Git and the GitHub CLI for a smooth contribution flow](../it-journey/pages/_quests/1111/open-source-contribution.md)
       - [Keep governance docs in a public repo so the community can see and…](../it-journey/pages/_quests/1111/building-technical-communities.md)
       - [Keep your leadership artifacts in a versioned, plain-text vault](../it-journey/pages/_quests/1111/technical-leadership.md)
       - [Store ADRs in the repo; adr-tools automates numbering and templating](../it-journey/pages/_quests/1111/architecture-reviews.md)
-    - **[📜 The Codex](../it-journey/pages/_quests/codex/index.md)** <small>(12)</small>
+    - **[📜 The Codex](../it-journey/pages/_quests/codex/index.md)** <small>(13)</small>
       - [📜 The Codex](../it-journey/pages/_quests/codex/index.md)
       - [1. Install the holy trinity: Git, VS Code, and the GitHub CLI](../it-journey/pages/_quests/codex/zer0-to-her0-cmstyle.md)
       - [1. On a machine logged into Claude Code, mint an OAuth token](../it-journey/pages/_quests/codex/ouroboros-loop.md)
       - [1. On a machine logged into Claude, mint a Code OAuth token](../it-journey/pages/_quests/codex/self-operating-website.md)
       - [Agentic Codex](../it-journey/pages/_quests/codex/agentic-codex.md)
+      - [cobc (GnuCOBOL) 3.1.2.0](../it-journey/pages/_quests/codex/relic-raisers.md)
       - [Download and examine the installation script](../it-journey/pages/_quests/codex/oh-my-zsh-side-quest-example.md)
       - [Full Stack Portfolio Epic Example](../it-journey/pages/_quests/codex/full-stack-portfolio-epic-example.md)
       - [Glossary](../it-journey/pages/_quests/codex/glossary.md)

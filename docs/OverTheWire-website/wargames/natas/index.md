@@ -1,12 +1,9 @@
 ---
-
 gamename: natas
 layout: default
 source_file: index.md
 title: Index
 ---
-# Index
-
 Natas
 =====
 

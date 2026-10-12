@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ and one migration tool (Flyway, Liquibase, or Alembic)
-preview: images/previews/database-migrations-schema-evolution-quest-title.png
+preview: /images/previews/database-migrations-schema-evolution-quest-title.png
 primary_technology: sql
 quest_arc: The Living Schema
 quest_dependencies:
@@ -397,8 +397,8 @@ CREATE INDEX CONCURRENTLY idx_users_handle ON users(handle);
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)
-**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)
+**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)  
+**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)  
 **📊 Data Scientist**: Advance to [Query Optimization](/quests/0110/query-optimization/)
 
 ## 📚 Resources

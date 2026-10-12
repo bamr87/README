@@ -53,7 +53,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ and a text editor or IDE
   - A terminal for running examples
-preview: images/previews/domain-driven-design-modeling-business-in-code.png
+preview: /images/previews/domain-driven-design-modeling-business-in-code.png
 primary_technology: python
 quest_arc: Blueprints of the Master
 quest_dependencies:
@@ -438,8 +438,8 @@ A **context map** documents the relationships between contexts - shared kernel, 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Microservices Architecture](/quests/1110/microservices-architecture/)
-**🏗️ System Engineer**: Explore [Event-Driven Design](/quests/1110/event-driven-design/)
+**💻 Software Developer**: Continue to [Microservices Architecture](/quests/1110/microservices-architecture/)  
+**🏗️ System Engineer**: Explore [Event-Driven Design](/quests/1110/event-driven-design/)  
 **📊 Data Scientist**: Note how bounded contexts clarify which data is authoritative where
 
 ## 📚 Resources

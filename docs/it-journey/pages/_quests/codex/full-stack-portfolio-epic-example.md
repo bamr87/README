@@ -329,5 +329,4 @@ timeline
 
 *The knowledge, skills, and confidence gained through this epic quest will serve you throughout your entire IT career. You have proven your ability to manage complex projects, integrate multiple technologies, and deliver production-ready solutions.*
 
-**Epic Quest Mastered: Digital Portfolio Fortress** 👑🏰
-*Your legend begins here - continue to even greater adventures!*
+**Epic Quest Mastered: Digital Portfolio Fortress** 👑🏰 *Your legend begins here - continue to even greater adventures!*

@@ -1,5 +1,4 @@
 ---
-
 character: digital-artist
 date: 2026-07-27 00:00:00+00:00
 level: '0001'
@@ -17,8 +16,6 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 27 Digital Artist 0001
 ---
-# 2026 07 27 Digital Artist 0001
-
 ## 🎯 Session Summary
 
 I walked the first window (5 of 26 quests) of the **Digital Artist (UI/UX)** path at **Level 0001 · Web Fundamentals (🌱 Apprentice)** as a learner would, consuming the sealed execute-engine evidence and reading each quest source in plan order. The window mixes strong foundational front-end content with two hard blockers and one un-scored quest, so the slice **fails** as a continuous learning path today.

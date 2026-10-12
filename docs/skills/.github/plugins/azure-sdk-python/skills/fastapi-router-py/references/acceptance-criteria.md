@@ -4,9 +4,7 @@ title: FastAPI Router Acceptance Criteria
 ---
 # FastAPI Router Acceptance Criteria
 
-**Skill**: `fastapi-router-py`
-**Purpose**: Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models
-**Template**: [template.py](../assets/template.py)
+**Skill**: `fastapi-router-py` **Purpose**: Create FastAPI routers with CRUD operations, authentication dependencies, and proper response models **Template**: [template.py](../assets/template.py)
 
 ---
 

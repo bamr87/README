@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker Engine or Docker Desktop installed
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/container-fundamentals-isolation-quest-title-porta.webp
+preview: /images/previews/container-fundamentals-isolation-quest-title-porta.webp
 primary_technology: docker
 quest_arc: Containers of the Container Coast
 quest_dependencies:
@@ -571,8 +571,8 @@ This is your on-ramp to the next quest, where Compose wires *several* containers
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)
-**🏗️ System Engineer**: Explore image hardening and registries in depth
+**💻 Software Developer**: Continue to [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)  
+**🏗️ System Engineer**: Explore image hardening and registries in depth  
 **🛡️ Security Specialist**: Study minimal base images and image scanning
 
 ## 📚 Resources

@@ -1,5 +1,4 @@
 ---
-
 character: data-scientist
 date: '2026-07-15T13:04:24.000Z'
 level: '1101'
@@ -18,8 +17,6 @@ theme: Machine Learning & AI
 tier: Master
 title: 2026 07 15 Data Scientist 1101
 ---
-# 2026 07 15 Data Scientist 1101
-
 ## 🎯 Session Summary
 
 Walked the first date-rotated **window (5 of 10)** of the Data Scientist Master level `1101` end-to-end in the runner sandbox, in the planner's dependency-sorted order. The machine-checked execute engine scored **4 pass, 1 warn, avg 85.0%** and I read every quest source as a learner would to judge the *linked journey*.

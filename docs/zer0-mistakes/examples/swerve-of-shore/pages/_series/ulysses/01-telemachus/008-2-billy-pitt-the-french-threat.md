@@ -1,5 +1,4 @@
 ---
-
 categories:
 - Ulysses - 01 - Telemachus
 date: 2025-02-02
@@ -17,8 +16,6 @@ source_url: https://www.swerveofshore.com/post/008-2-billy-pitt-the-french-threa
 sub-title: Episode 1 · Telemachus
 title: 008 2 Billy Pitt The French Threat
 ---
-# 008 2 Billy Pitt The French Threat
-
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/008-2-billy-pitt-the-french-threat), by Brandon Nicklaus.
 
 > What is Buck talking about when he states "Billy Pitt had them built". Let's dive in a bit:

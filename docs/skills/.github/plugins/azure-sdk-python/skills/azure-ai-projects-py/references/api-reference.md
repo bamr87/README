@@ -4,10 +4,7 @@ title: Azure AI Projects SDK - Complete API Reference
 ---
 # Azure AI Projects SDK - Complete API Reference
 
-**Package**: `azure-ai-projects` v2.0.0b4
-**Repository**: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)
-**Path**: `sdk/ai/azure-ai-projects/`
-**Commit**: `7e86ab0076297173aae290c11fa14660bed2b125`
+**Package**: `azure-ai-projects` v2.0.0b4 **Repository**: [Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python) **Path**: `sdk/ai/azure-ai-projects/` **Commit**: `7e86ab0076297173aae290c11fa14660bed2b125`
 
 ---
 

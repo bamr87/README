@@ -1,5 +1,4 @@
 ---
-
 author: GitHub Actions Bot
 class: Ranger
 contributor_data: github-actions-bot
@@ -23,8 +22,6 @@ tags:
 title: Readme
 username: github-actions-bot
 ---
-# Readme
-
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">
 
 {% include contributor/character_sheet.html username="GitHub-actions-bot" %}

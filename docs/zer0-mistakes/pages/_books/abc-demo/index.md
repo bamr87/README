@@ -1,5 +1,4 @@
 ---
-
 alphabet:
 - alt: A friendly anchor resting on the seabed.
   image: /assets/images/books/abc-demo/a-anchor.png
@@ -55,6 +54,4 @@ source_file: index.md
 subtitle: A is for Anchor
 title: Index
 ---
-# Index
-
 A demo of the **book-abc** board-book layout — one big friendly letter per card, a word to say out loud, and a picture to point at. Every plate here is in its `planned` state, so the cards show the "illustration coming soon" placeholder.

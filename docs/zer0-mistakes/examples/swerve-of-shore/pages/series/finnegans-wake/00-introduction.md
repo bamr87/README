@@ -1,5 +1,4 @@
 ---
-
 description: Where the Wake reading starts, and which edition it works from.
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: 00-introduction.md
 title: 00 Introduction
 ---
-# 00 Introduction
-
 {% include page-header.html %}
 
 Opening notes on *Finnegans Wake*, before Book 1. The reading works from the 1999 Penguin Classics edition, with John Bishop's introduction.

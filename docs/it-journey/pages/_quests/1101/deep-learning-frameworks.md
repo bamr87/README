@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM; a GPU is optional but speeds up training
-preview: images/previews/deep-learning-frameworks-descriptive-subtitle.webp
+preview: /images/previews/deep-learning-frameworks-descriptive-subtitle.webp
 primary_technology: pytorch
 quest_arc: Forging the Deep Engines
 quest_dependencies:
@@ -423,8 +423,8 @@ PyTorch shows you the loop; Keras hides it. PyTorch is favored in research for t
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Computer Vision Mastery](/quests/1101/computer-vision/)
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
+**💻 Software Developer**: Continue to [Computer Vision Mastery](/quests/1101/computer-vision/)  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
 **📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
 
 ## 📚 Resources

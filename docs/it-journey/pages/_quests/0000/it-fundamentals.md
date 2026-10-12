@@ -37,7 +37,7 @@ prerequisites:
   system_requirements:
   - Computer with internet access
   - Any operating system (Windows, macOS, or Linux)
-preview: images/previews/it-fundamentals.webp
+preview: /images/previews/it-fundamentals.webp
 primary_technology: fundamentals
 quest_arc: Digital Awakening Arc
 quest_dependencies:

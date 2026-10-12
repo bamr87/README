@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-services-quest-title-networking-ingress.webp
+preview: /images/previews/kubernetes-services-quest-title-networking-ingress.webp
 primary_technology: kubernetes
 quest_arc: Roads, Gates, and the Naming of Things
 quest_dependencies:
@@ -479,8 +479,8 @@ spec:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
-**🏗️ System Engineer**: Revisit [Pods and Workloads](/quests/1001/k8s-pods-workloads/)
+**💻 Software Developer**: Continue to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
+**🏗️ System Engineer**: Revisit [Pods and Workloads](/quests/1001/k8s-pods-workloads/)  
 **🛡️ Security Specialist**: Study the NetworkPolicy section above closely
 
 ## 📚 Resources

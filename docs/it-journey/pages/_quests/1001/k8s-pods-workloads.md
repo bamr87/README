@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-pods-quest-title-workloads-deployments-.webp
+preview: /images/previews/kubernetes-pods-quest-title-workloads-deployments-.webp
 primary_technology: kubernetes
 quest_arc: Commanding the Workload Legions
 quest_dependencies:
@@ -537,8 +537,8 @@ kubectl logs job/migrate
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Services and Networking](/quests/1001/k8s-services-networking/)
-**🏗️ System Engineer**: Explore [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
+**💻 Software Developer**: Continue to [Services and Networking](/quests/1001/k8s-services-networking/)  
+**🏗️ System Engineer**: Explore [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
 **🛡️ Security Specialist**: Revisit [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
 
 ## 📚 Resources

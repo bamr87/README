@@ -1,5 +1,4 @@
 ---
-
 author: null
 categories: []
 date: 2021-09-21 13:25:50+00:00
@@ -15,5 +14,3 @@ source_file: article.md
 tags: []
 title: Article
 ---
-# Article
-

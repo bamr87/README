@@ -42,7 +42,7 @@ prerequisites:
   - Git 2.30+ installed
   - GitHub account with repository access
   - GitHub CLI (gh) installed
-preview: images/previews/mastering-version-control-workflows.png
+preview: /images/previews/mastering-version-control-workflows.png
 primary_technology: git
 quest_arc: Version Control Mastery
 quest_dependencies:

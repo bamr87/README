@@ -44,7 +44,7 @@ prerequisites:
 - Basic computer literacy and file system understanding
 - Access to a Unix-like terminal (macOS, Linux, or WSL on Windows)
 - Willingness to embrace the power of text-based interfaces
-preview: images/previews/terminal-mastery-conquering-the-command-line-realm.webp
+preview: /images/previews/terminal-mastery-conquering-the-command-line-realm.webp
 primary_technology: bash
 quest_series: 'Foundation Path: Digital Literacy Mastery'
 quest_type: main_quest
@@ -211,7 +211,7 @@ First, open your terminal application. This is your gateway to the command realm
 ```bash
 # Once your terminal is open, you'll see a prompt
 # It usually shows your username, computer name, and current directory
-# Example: username@computer:~$
+# Example: username@computer:~$ 
 
 # Your first spell - identify yourself to the system
 whoami

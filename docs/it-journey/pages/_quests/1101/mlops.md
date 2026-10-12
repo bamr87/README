@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - Docker installed for the serving section (optional but recommended)
-preview: images/previews/mlops-descriptive-subtitle.png
+preview: /images/previews/mlops-descriptive-subtitle.png
 primary_technology: mlflow
 quest_arc: From Notebook to Production
 quest_dependencies:
@@ -420,8 +420,8 @@ When drift fires, you investigate and often **retrain**. This is where **CI/CD f
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [AI Ethics](/quests/1101/ai-ethics/)
-**🏗️ System Engineer**: Explore [AI Ethics](/quests/1101/ai-ethics/)
+**💻 Software Developer**: Continue to [AI Ethics](/quests/1101/ai-ethics/)  
+**🏗️ System Engineer**: Explore [AI Ethics](/quests/1101/ai-ethics/)  
 **📊 Data Scientist**: Advance to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)
 
 ## 📚 Resources

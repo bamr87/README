@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - A terminal emulator (iTerm2, Windows Terminal, Alacritty)
   - Package manager (Homebrew, Winget, Scoop, or Apt)
-preview: images/previews/terminal-artificer-forging-the-glass-interface.webp
+preview: /images/previews/terminal-artificer-forging-the-glass-interface.webp
 primary_technology: bash
 quest_arc: Tool Mastery Arc
 quest_dependencies:
@@ -293,16 +293,16 @@ graph TB
         Term[🌱 Terminal Basics]
         Script[🏰 Shell Scripting]
     end
-
+    
     subgraph "Current Quest"
         Gum[🏰 Terminal Artificer]
     end
-
+    
     subgraph "Unlocked Quests"
         AdvScript[⚔️ Advanced Scripting]
         Auto[👑 Automation Epic]
     end
-
+    
     Term --> Gum
     Script --> Gum
     Gum --> AdvScript

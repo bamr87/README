@@ -77,6 +77,7 @@ nav:
           - "Scripts Directory":
               - "Scripts Directory": it-journey/scripts/README.md
               - "Core Utility Scripts": it-journey/scripts/core/README.md
+              - "Dig scripts": it-journey/scripts/digs/README.md
               - "Generated Zer0-to-Hero Script": it-journey/scripts/generation/zer0-to-hero-generated-README.md
               - "IT-Journey AI runner & content fleet": it-journey/scripts/ai/README.md
               - "PRD MACHINE v2": it-journey/scripts/prd-machine/README.md
@@ -300,6 +301,7 @@ nav:
               - "IT-Journey — Prose & Formatting Style": it-journey/_data/brand/style.md
               - "IT-Journey — Voice & Tone": it-journey/_data/brand/voice.md
               - "Sections":
+                  - "Digs — Section Guide": it-journey/_data/brand/sections/dig.md
                   - "Docs — Section Guide": it-journey/_data/brand/sections/docs.md
                   - "Quests — Section Guide": it-journey/_data/brand/sections/quest.md
       - "Documentation":
@@ -324,6 +326,9 @@ nav:
           - "CMS":
               - "IT-Journey CMS — VS Code extension design & contract": it-journey/docs/cms/EXTENSION_DESIGN.md
               - "IT-Journey — Branding & Content-Governance System (plan)": it-journey/docs/cms/BRANDING_GOVERNANCE_PLAN.md
+          - "Git archaeology":
+              - "Git archaeology": it-journey/docs/git-archaeology/README.md
+              - "First steps": it-journey/docs/git-archaeology/000-first-steps/report.md
           - "Quests":
               - "Character Skills — per-path voices and exercises for the…": it-journey/docs/quests/CHARACTER_SKILLS.md
               - "Perfection loop vs. the video it produces — a side-by-side run": it-journey/docs/quests/LOOP_VS_VIDEO.md
@@ -352,19 +357,27 @@ nav:
               - "Organize Posts Weekly Workflow Documentation": it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md
       - "Home":
           - "Home": it-journey/pages/home.md
+          - "Categories": it-journey/pages/categories.md
           - "Home": it-journey/pages/_hobbies/home.md
           - "IT-Journey Blog Posts": it-journey/pages/posts.md
           - "Quest Ideas": it-journey/pages/quest-ideas.md
-          - "Search": it-journey/pages/search.md
+          - "Search Index and Sitemap": it-journey/pages/search.md
           - "Sitemap": it-journey/pages/sitemap.md
           - "Stats": it-journey/pages/stats.md
-          - "Index":
+          - "Tags": it-journey/pages/tags.md
+          - "Index (_digs)":
+              - "Index": it-journey/pages/_digs/index.md
+              - "2020 07 30 First Steps": it-journey/pages/_digs/2020-07-30-first-steps.md
+              - "2020 08 01 The Outline Moves": it-journey/pages/_digs/2020-08-01-the-outline-moves.md
+              - "2020 08 23 Two Branches One Equals Sign": it-journey/pages/_digs/2020-08-23-two-branches-one-equals-sign.md
+          - "Index (_notes)":
               - "Index": it-journey/pages/_notes/index.md
               - "2025 01 16 Iterm Tips And Tricks": it-journey/pages/_notes/2025-01-16-iterm-tips-and-tricks.md
               - "2025 01 16 Mastering Iterm Shortcuts For Efficiency": it-journey/pages/_notes/2025-01-16-mastering-iterm-shortcuts-for-efficiency.md
               - "2025 01 23 Sass Mixins": it-journey/pages/_notes/2025-01-23-sass-mixins.md
               - "2025 01 24 Set Up Azure For Jekyll Contact Us Form": it-journey/pages/_notes/2025-01-24-set-up-azure-for-jekyll-contact-us-form.md
               - "2025 01 24 Using Jekyll Lambda And Ses For Efficient Web Solutions": it-journey/pages/_notes/2025-01-24-using-jekyll-lambda-and-ses-for-efficient-web-solutions.md
+              - "2026 09 26 First Steps Of The Repository": it-journey/pages/_notes/2026-09-26-first-steps-of-the-repository.md
               - "Example usage": it-journey/pages/_notes/html_md_doc_scrapper.md
               - "Final Summary": it-journey/pages/_notes/2025-02-05-host-django-on-raspberry-pi-a-complete-guide.md
               - "Front Matter Preview Configuration": it-journey/pages/_notes/frontmatter-preview-solution.md
@@ -671,6 +684,7 @@ nav:
               - "Level 0011: Development Tools & AI Integration":
                   - "Level 0011: Development Tools & AI Integration": it-journey/pages/_quests/0011/README.md
                   - ".github/actions/claude-run/action.yml": it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md
+                  - "cobc (GnuCOBOL) 3.1.2.0": it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site.md
                   - "Install VS Code Copilot extensions via CLI": it-journey/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot.md
                   - "macOS-specific commands and setup (advanced-git-workflows)": it-journey/pages/_quests/0011/advanced-git-workflows.md
                   - "macOS-specific commands and setup (analytics-integration)": it-journey/pages/_quests/0011/analytics-integration.md
@@ -739,6 +753,7 @@ nav:
                   - "Install VS Code extension": it-journey/pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae.md
                   - "Set and read an environment variable in zsh/bash": it-journey/pages/_quests/0101/environment-management.md
                   - "Start Jekyll development environment": it-journey/pages/_quests/0101/jekyll-quest-tracking.md
+                  - "The summoning circle: the relic runs identically in every world.": it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md
                   - "Time your local build so you have a baseline to optimize against": it-journey/pages/_quests/0101/workflow-optimization.md
                   - "triage.sh — does the bug live in MY repo or the THEME?": it-journey/pages/_quests/0101/self-operating-website-08-the-cartographer.md
               - "Level 0110 (6) - Database Mastery":
@@ -748,6 +763,7 @@ nav:
                   - "Install PostgreSQL with Homebrew": it-journey/pages/_quests/0110/database-fundamentals.md
                   - "Logical backup: a portable file that can recreate the database anywhere.": it-journey/pages/_quests/0110/backup-recovery.md
                   - "PgBouncer config lives at /opt/homebrew/etc/pgbouncer.ini": it-journey/pages/_quests/0110/connection-pooling.md
+                  - "Relic Raisers 02 The Strata": it-journey/pages/_quests/0110/relic-raisers-02-the-strata.md
                   - "Sql Mastery": it-journey/pages/_quests/0110/sql-mastery.md
                   - "❌ N+1: one query for users, then one query PER user for their events.": it-journey/pages/_quests/0110/query-optimization.md
                   - "❌ VULNERABLE: user input is glued directly into the SQL string.": it-journey/pages/_quests/0110/database-security.md
@@ -762,6 +778,7 @@ nav:
                   - "httpbin lets you request any status code on demand": it-journey/pages/_quests/0111/error-handling.md
                   - "Inspect GitHub's rate-limit headers (works unauthenticated, lower limit)": it-journey/pages/_quests/0111/rate-limiting.md
                   - "Install the Redocly CLI to lint and preview OpenAPI docs": it-journey/pages/_quests/0111/api-documentation.md
+                  - "port 11050.00 2100.50": it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md
                   - "Python ships with macOS; install the JWT library for the lab": it-journey/pages/_quests/0111/api-authentication.md
               - "Level 1000 (8) - Cloud Computing Fundamentals":
                   - "Level 1000 (8) - Cloud Computing Fundamentals": it-journey/pages/_quests/1000/README.md
@@ -823,6 +840,7 @@ nav:
                   - ".github/agent-autonomy.yml — the action → level map the gate reads": it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability.md
                   - ".github/CODEOWNERS": it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop.md
                   - ".github/workflows/bard-forge.yml (in the SOURCE repo)": it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge.md
+                  - "0.30000000000000004": it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md
                   - "A ready-made Spark + Jupyter image, great for a Codespace or container…": it-journey/pages/_quests/1100/apache-spark.md
                   - "Any Codespace or container with Python works.": it-journey/pages/_quests/1100/data-quality.md
                   - "Any Codespace or container with Python works. For the Airflow chapter": it-journey/pages/_quests/1100/etl-pipeline-design.md
@@ -843,6 +861,7 @@ nav:
                   - "Excalidraw runs in the browser; or install draw.io desktop": it-journey/pages/_quests/1110/system-design-interviews.md
                   - "Python ships with modern macOS, but a Homebrew install is cleaner": it-journey/pages/_quests/1110/design-patterns.md
                   - "Redpanda is a lightweight, Kafka-compatible broker for local use": it-journey/pages/_quests/1110/event-driven-design.md
+                  - "Restart the gate with the relic answering. Nothing else changes.": it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md
                   - "Run NGINX with a custom config you will write below": it-journey/pages/_quests/1110/api-gateway-patterns.md
                   - "Use WSL2 Ubuntu and follow Linux steps": it-journey/pages/_quests/1110/404-hunting.md
                   - "Verify the engine is running": it-journey/pages/_quests/1110/microservices-architecture.md
@@ -880,6 +899,7 @@ nav:
                   - "A private, versioned mentoring journal protects continuity": it-journey/pages/_quests/1111/mentorship-programs.md
                   - "A versioned lab notebook keeps every experiment honest and reviewable": it-journey/pages/_quests/1111/innovation-rnd.md
                   - "A versioned writing folder makes your drafts reviewable and reusable": it-journey/pages/_quests/1111/tech-speaking-writing.md
+                  - "Elders of ARAGE01": it-journey/pages/_quests/1111/relic-raisers-03-the-elders.md
                   - "Install Git and the GitHub CLI for a smooth contribution flow": it-journey/pages/_quests/1111/open-source-contribution.md
                   - "Keep governance docs in a public repo so the community can see and…": it-journey/pages/_quests/1111/building-technical-communities.md
                   - "Keep your leadership artifacts in a versioned, plain-text vault": it-journey/pages/_quests/1111/technical-leadership.md
@@ -890,6 +910,7 @@ nav:
                   - "1. On a machine logged into Claude Code, mint an OAuth token": it-journey/pages/_quests/codex/ouroboros-loop.md
                   - "1. On a machine logged into Claude, mint a Code OAuth token": it-journey/pages/_quests/codex/self-operating-website.md
                   - "Agentic Codex": it-journey/pages/_quests/codex/agentic-codex.md
+                  - "cobc (GnuCOBOL) 3.1.2.0": it-journey/pages/_quests/codex/relic-raisers.md
                   - "Download and examine the installation script": it-journey/pages/_quests/codex/oh-my-zsh-side-quest-example.md
                   - "Full Stack Portfolio Epic Example": it-journey/pages/_quests/codex/full-stack-portfolio-epic-example.md
                   - "Glossary": it-journey/pages/_quests/codex/glossary.md
@@ -1057,11 +1078,16 @@ nav:
               - "Visual":
                   - "Navbar responsiveness — evidence (PR #215)":
                       - "Navbar responsiveness — evidence (PR #215)": zer0-mistakes/test/visual/evidence/README.md
+                      - "agent-issue-265 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-265/README.md
+                      - "agent-issue-412 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-412/README.md
+                      - "agent-issue-459 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-459/README.md
+                      - "agent-issue-484 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-484/README.md
                       - "book-abc layout — visual evidence (ZER0-081)": zer0-mistakes/test/visual/evidence/book-abc/README.md
                       - "claude-universal-frontend-feedback-gnnzua — visual evidence": zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md
                       - "Dangling aria-controls (#373)": zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md
                       - "Developer doc banners (#375)": zer0-mistakes/test/visual/evidence/developer-doc-banners/README.md
                       - "Evidence — /authors/ breadcrumb is existence-gated (issue #204)": zer0-mistakes/test/visual/evidence/authors-breadcrumb/README.md
+                      - "Evidence — article hero: eager LCP load + reserved box (#485)": zer0-mistakes/test/visual/evidence/hero-lcp/README.md
                       - "Evidence — author avatars never render protocol-relative //assets/……": zer0-mistakes/test/visual/evidence/author-avatar-url/README.md
                       - "Evidence — books collection (ZER0-080)": zer0-mistakes/test/visual/evidence/books-collection/README.md
                       - "Evidence — category badges are existence-gated (issue #204)": zer0-mistakes/test/visual/evidence/category-badges/README.md
@@ -1101,9 +1127,15 @@ nav:
                       - "Evidence — SoftwareApplication JSON-LD is now opt-in (2026-08 fleet…": zer0-mistakes/test/visual/evidence/jsonld-software-optin/README.md
                       - "Evidence — the Claude-guided Site Builder (ZER0-086, extends ZER0-067)": zer0-mistakes/test/visual/evidence/site-builder/README.md
                       - "Evidence — TOC scroll spy tracks the section being read": zer0-mistakes/test/visual/evidence/scroll-spy/README.md
+                      - "fix-a11y-intro-actions-nav-toggle-badges — visual evidence": zer0-mistakes/test/visual/evidence/fix-a11y-intro-actions-nav-toggle-badges/README.md
+                      - "fix-cookie-banner-compact — visual evidence": zer0-mistakes/test/visual/evidence/fix-cookie-banner-compact/README.md
+                      - "fix-includes-preview-path-join — visual evidence": zer0-mistakes/test/visual/evidence/fix-includes-preview-path-join/README.md
+                      - "fix-perf-lazy-mermaid-graph-posthog-nav — visual evidence": zer0-mistakes/test/visual/evidence/fix-perf-lazy-mermaid-graph-posthog-nav/README.md
+                      - "fix-search-page-sitemap — visual evidence": zer0-mistakes/test/visual/evidence/fix-search-page-sitemap/README.md
                       - "Heading-level skips (#436)": zer0-mistakes/test/visual/evidence/heading-level-skips/README.md
                       - "Mobile navigation panel collapsed to a 60px sliver": zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md
                       - "Mobile responsive audit — evidence": zer0-mistakes/test/visual/evidence/mobile-responsive/README.md
+                      - "Navbar label tiers, merged chevron, centred grid — evidence (#405)": zer0-mistakes/test/visual/evidence/navbar-tiers-405/README.md
                       - "Section topic filter — whole-tag matching": zer0-mistakes/test/visual/evidence/section-topic-filter/README.md
                       - "theme-color (#281)": zer0-mistakes/test/visual/evidence/theme-color-surface/README.md
                       - "Evidence: Site Builder — bring your own AI provider (Claude or Grok)…":
@@ -1111,8 +1143,12 @@ nav:
                           - "A site the Grok path actually built, from an empty folder": zer0-mistakes/test/visual/evidence/site-builder-providers/built-site/README.md
           - "Gem Automation Scripts":
               - "Gem Automation Scripts": zer0-mistakes/scripts/README.md
-              - "Release Script Libraries": zer0-mistakes/scripts/lib/README.md
               - "scripts/ai — companions to the fleet's ai-runner kit": zer0-mistakes/scripts/ai/README.md
+              - "Release Script Libraries":
+                  - "Release Script Libraries": zer0-mistakes/scripts/lib/README.md
+                  - "scripts/lib/install/ — Installer Library Modules":
+                      - "scripts/lib/install/ — Installer Library Modules": zer0-mistakes/scripts/lib/install/README.md
+                      - "scripts/lib/install/deploy/": zer0-mistakes/scripts/lib/install/deploy/README.md
               - "scripts/install/ — Modular Installer v2":
                   - "scripts/install/ — Modular Installer v2": zer0-mistakes/scripts/install/README.md
                   - "AI":
@@ -1184,6 +1220,7 @@ nav:
               - "Development Documentation": zer0-mistakes/docs/development/README.md
               - "Code Style Guide": zer0-mistakes/docs/development/code-style.md
               - "Documentation Workflow": zer0-mistakes/docs/development/documentation-workflow.md
+              - "Extension Points": zer0-mistakes/docs/development/extension-points.md
               - "Local Development Setup": zer0-mistakes/docs/development/local-setup.md
               - "Test Coverage Baseline — 2026-06-12": zer0-mistakes/docs/development/coverage-baseline.md
               - "Testing": zer0-mistakes/docs/development/testing.md
@@ -1401,7 +1438,7 @@ nav:
                   - "Configuration d'un domaine personnalisé": zer0-mistakes/fr/docs/deployment/custom-domain.md
                   - "Déployer sur GitHub Pages": zer0-mistakes/fr/docs/deployment/github-pages.md
                   - "Déployer sur Netlify": zer0-mistakes/fr/docs/deployment/netlify.md
-                  - "Liste de vérification pour le consommateur de Remote-Theme": zer0-mistakes/fr/docs/deployment/remote-theme-checklist.md
+                  - "Liste de contrôle pour les consommateurs de Remote-Theme": zer0-mistakes/fr/docs/deployment/remote-theme-checklist.md
                   - "Superposition de build en mode sécurisé": zer0-mistakes/fr/docs/deployment/build-overlay.md
               - "Fonctionnalités":
                   - "Fonctionnalités": zer0-mistakes/fr/docs/features/index.md
@@ -1418,10 +1455,11 @@ nav:
                   - "Collection Cookbook": zer0-mistakes/fr/docs/features/cookbook-collection.md
                   - "Collection Livres": zer0-mistakes/fr/docs/features/book-collection.md
                   - "Commentaires Giscus": zer0-mistakes/fr/docs/features/giscus-comments.md
-                  - "Diagrammes Mermaid": zer0-mistakes/fr/docs/features/mermaid-diagrams.md
-                  - "Favicon et identité de navigateur": zer0-mistakes/fr/docs/features/favicon.md
+                  - "Diagrammes Mermaid pour les sites Jekyll": zer0-mistakes/fr/docs/features/mermaid-diagrams.md
+                  - "Favicon et identité du navigateur": zer0-mistakes/fr/docs/features/favicon.md
                   - "Gestion du consentement aux cookies": zer0-mistakes/fr/docs/features/cookie-consent.md
                   - "Générateur d'images d'aperçu par IA": zer0-mistakes/fr/docs/features/preview-image-generator.md
+                  - "Générateur de site": zer0-mistakes/fr/docs/features/site-builder.md
                   - "Intégration de GitHub Copilot": zer0-mistakes/fr/docs/features/copilot-integration.md
                   - "Intégration des notebooks Jupyter": zer0-mistakes/fr/docs/features/jupyter-notebooks.md
                   - "Lien d'accessibilité « Aller au contenu »": zer0-mistakes/fr/docs/features/skip-to-content.md
@@ -1462,7 +1500,7 @@ nav:
               - "Personnalisation":
                   - "Personnalisation": zer0-mistakes/fr/docs/customization/index.md
                   - "Author Profiles": zer0-mistakes/fr/docs/customization/author-profiles.md
-                  - "Composants Include": zer0-mistakes/fr/docs/customization/includes.md
+                  - "Composants d'inclusion": zer0-mistakes/fr/docs/customization/includes.md
                   - "Mises en page": zer0-mistakes/fr/docs/customization/layouts.md
                   - "Navigation": zer0-mistakes/fr/docs/customization/navigation.md
                   - "Styles": zer0-mistakes/fr/docs/customization/styles.md
@@ -1474,8 +1512,9 @@ nav:
               - "Guide de démarrage rapide": zer0-mistakes/fr/quickstart/index.md
               - "Configuration de Jekyll": zer0-mistakes/fr/quickstart/jekyll-setup.md
               - "Configuration de la machine": zer0-mistakes/fr/quickstart/machine-setup.md
-              - "Configuration GitHub et déploiement": zer0-mistakes/fr/quickstart/github-setup.md
-              - "🎨 Personnalisation et configuration du site": zer0-mistakes/fr/quickstart/personalization.md
+              - "Configuration GitHub": zer0-mistakes/fr/quickstart/github-setup.md
+              - "Générateur de site": zer0-mistakes/fr/quickstart/site-builder.md
+              - "Personnalisation et configuration du site": zer0-mistakes/fr/quickstart/personalization.md
           - "Notes":
               - "Article-specific": zer0-mistakes/fr/notes/jekyll-front-matter.md
               - "Heading 1": zer0-mistakes/fr/notes/markdown-tips.md
@@ -1692,6 +1731,7 @@ nav:
               - "Customization":
                   - "Customization": zer0-mistakes/pages/_docs/customization/index.md
                   - "Author Profiles": zer0-mistakes/pages/_docs/customization/author-profiles.md
+                  - "Extension Points": zer0-mistakes/pages/_docs/customization/extension-points.md
                   - "Include Components": zer0-mistakes/pages/_docs/customization/includes.md
                   - "Layouts": zer0-mistakes/pages/_docs/customization/layouts.md
                   - "Navigation": zer0-mistakes/pages/_docs/customization/navigation.md
@@ -1848,10 +1888,15 @@ nav:
                       - "Release v1.0.0 - Django Settings Optimization": barodybroject/docs/changelog/releases/v1.0.0/release-summary.md
                       - "Technical Implementation Details - v1.0.0": barodybroject/docs/changelog/releases/v1.0.0/technical-details.md
               - "Summaries":
+                  - "Breaking Change: the AI layer is provider-agnostic and the UI is React": barodybroject/docs/changelog/summaries/2026-09-15-provider-agnostic-ai-and-react-frontend.md
+                  - "Bug Fix: every error during publication is now communicated to the user": barodybroject/docs/changelog/summaries/2026-09-13-publication-error-reporting.md
                   - "Bug Fix: filtering a model table to zero matches emptied it with no…": barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md
+                  - "Bug Fix: the dependency gate audited the scanners instead of the…": barodybroject/docs/changelog/summaries/2026-09-11-dependency-scan-scope.md
                   - "Bug Fix: Thread message delete raised TypeError, and deleted locally…": barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md
                   - "Docker Configuration Consolidation Change Documentation": barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md
+                  - "Feature: unhandled exceptions can be filed as deduplicated GitHub issues": barodybroject/docs/changelog/summaries/2026-08-30-github-issue-error-reporting.md
                   - "Improvement: model unit tests, from 3 of 17 models covered to all of…": barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md
+                  - "Test: the assistant select cannot regress to seeding a random assistant": barodybroject/docs/changelog/summaries/2026-09-13-content-item-form-assistant-seeding.md
               - "Templates":
                   - "Breaking Change: [Breaking Change Title]": barodybroject/docs/changelog/templates/breaking-template.md
                   - "Bug Fix: [Bug Title]": barodybroject/docs/changelog/templates/bugfix-template.md
@@ -1866,6 +1911,7 @@ nav:
               - "🚨 Azure Subscription Quota Issue - Solutions": barodybroject/docs/deployment/QUOTA_ISSUE_SOLUTIONS.md
           - "Django Configuration Documentation":
               - "Django Configuration Documentation": barodybroject/docs/configuration/README.md
+              - "Automatic GitHub issue reporting": barodybroject/docs/configuration/error-reporting.md
               - "Django Admin Credentials Configuration": barodybroject/docs/configuration/admin-credentials.md
               - "Django Settings Optimization Guide": barodybroject/docs/configuration/settings-optimization.md
               - "Ecosystem Integration Configuration": barodybroject/docs/configuration/ecosystem-integration-config.md
@@ -1877,8 +1923,10 @@ nav:
       - "Source":
           - "Index": barodybroject/src/index.md
           - "barodybroject Directory": barodybroject/src/barodybroject/README.md
+          - "Frontend": barodybroject/src/frontend/README.md
           - "Installation Wizard Setup Guide": barodybroject/src/setup/README.md
           - "scripts Directory": barodybroject/src/scripts/README.md
+          - "tests Directory": barodybroject/src/tests/README.md
           - "assets Directory":
               - "assets Directory": barodybroject/src/assets/README.md
               - "images Directory": barodybroject/src/assets/images/README.md
@@ -1889,7 +1937,7 @@ nav:
                   - "about Directory": barodybroject/src/pages/_about/README.md
                   - "About": barodybroject/src/pages/_about/about.md
               - "Data":
-                  - "Readme": barodybroject/src/pages/_data/README.md
+                  - "Jekyll site data": barodybroject/src/pages/_data/README.md
                   - "navigation Directory": barodybroject/src/pages/_data/navigation/README.md
               - "docs Directory":
                   - "docs Directory": barodybroject/src/pages/_docs/README.md
@@ -1954,11 +2002,14 @@ nav:
                   - "The Glamorous World of GitHub Branches: Fashioning Order from Digital…": barodybroject/src/pages/_posts/2025-04-18-glamorous-world-of-github-branches.md
                   - "The Rise of the Framework: A Satirical Examination of Coding's Cultural…": barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md
                   - "The Sorcery of Coding: Unleashing \"Sourcery\" in Software": barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md
-          - "parodynews Directory":
-              - "parodynews Directory": barodybroject/src/parodynews/README.md
+          - "parodynews":
+              - "parodynews": barodybroject/src/parodynews/README.md
+              - "AI Provider Layer": barodybroject/src/parodynews/ai/README.md
+              - "API": barodybroject/src/parodynews/api/README.md
               - "migrations Directory": barodybroject/src/parodynews/migrations/README.md
               - "Parodynews Models Package": barodybroject/src/parodynews/models/README.md
               - "scripts Directory": barodybroject/src/parodynews/scripts/README.md
+              - "Services": barodybroject/src/parodynews/services/README.md
               - "templatetags Directory": barodybroject/src/parodynews/templatetags/README.md
               - "utils Directory": barodybroject/src/parodynews/utils/README.md
               - "Documentation":
@@ -1974,8 +2025,8 @@ nav:
               - "schema Directory":
                   - "schema Directory": barodybroject/src/parodynews/schema/README.md
                   - "Parody Prompt": barodybroject/src/parodynews/schema/parody_prompt.md
-              - "templates Directory":
-                  - "templates Directory": barodybroject/src/parodynews/templates/README.md
+              - "templates":
+                  - "templates": barodybroject/src/parodynews/templates/README.md
                   - "Django Admin Templates Directory": barodybroject/src/parodynews/templates/admin/README.md
                   - "Menu Templates Directory": barodybroject/src/parodynews/templates/menu/README.md
                   - "parodynews Directory": barodybroject/src/parodynews/templates/parodynews/README.md
@@ -2007,8 +2058,8 @@ nav:
                   - "usersessions Directory":
                       - "usersessions Directory": barodybroject/src/parodynews/templates/usersessions/README.md
                       - "messages Directory": barodybroject/src/parodynews/templates/usersessions/messages/README.md
-              - "tests Directory":
-                  - "tests Directory": barodybroject/src/parodynews/tests/README.md
+              - "tests":
+                  - "tests": barodybroject/src/parodynews/tests/README.md
                   - "data Directory": barodybroject/src/parodynews/tests/data/README.md
                   - "scripts Directory":
                       - "scripts Directory": barodybroject/src/parodynews/tests/scripts/README.md
@@ -2113,6 +2164,7 @@ nav:
               - "AI Prompt: Fantasy Terminal Learning Game Architecture": bashcrawl/src/terminal-illness/seed_prompt.instructions.md
               - "Ti": bashcrawl/src/terminal-illness/ti/audio/assets/README.md
       - "⚔️ Bashcrawl — learn the terminal by playing": bashcrawl/README.md
+      - "AGENTS.md": bashcrawl/AGENTS.md
       - "Changelog": bashcrawl/CHANGELOG.md
       - "CLAUDE.md": bashcrawl/CLAUDE.md
       - "TermForge": bashcrawl/termforge/README.md
@@ -2141,8 +2193,10 @@ nav:
           - "Schemas":
               - "Content Registry Contract (v1)": bashcrawl/docs/schemas/content-registries.v1.md
               - "Terminal Protocol v1": bashcrawl/docs/schemas/terminal-protocol.v1.md
+              - "Terminal Protocol v2": bashcrawl/docs/schemas/terminal-protocol.v2.md
           - "Termforge":
               - "Authoring TermForge Apps": bashcrawl/docs/termforge/authoring-apps.md
+              - "Hidden Gem — DAEMON STORM": bashcrawl/docs/termforge/hidden-gem.md
               - "TermForge Architecture": bashcrawl/docs/termforge/architecture.md
               - "TermForge Telnet Host": bashcrawl/docs/termforge/telnet-host.md
       - "🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here":
@@ -2162,10 +2216,11 @@ nav:
       - "Agent Skills (Agents)": skills/Agents.md
       - "Security": skills/SECURITY.md
   - "Scripts":
-      - "scripts directory": scripts/README.md
+      - "🛠️ scripts": scripts/README.md
       - "CLAUDE.md": scripts/CLAUDE.md
       - "Linting Configuration Management": scripts/linting/README.md
       - "Rename Directory Utility - Quick Reference": scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md
+      - "Security Policy": scripts/SECURITY.md
       - "🍴 ForkMe - Advanced GitHub Repository Forking Utility":
           - "🍴 ForkMe - Advanced GitHub Repository Forking Utility": scripts/FORKME/README.md
           - "ForkMe - Advanced GitHub Repository Forking Utility": scripts/FORKME/FORKME.md

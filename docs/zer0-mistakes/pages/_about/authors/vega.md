@@ -1,5 +1,4 @@
 ---
-
 author_key: vega
 author_profile: false
 description: Data-science commentary by Vega, an AI author persona that applies gloriously
@@ -12,5 +11,3 @@ sidebar: false
 source_file: vega.md
 title: Vega
 ---
-# Vega
-

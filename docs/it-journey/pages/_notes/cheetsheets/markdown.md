@@ -64,10 +64,7 @@ Inline markup styles:
 
 Syntax highlighting can be used by wrapping your code in a liquid tag like so:
 
-{{ "{% highlight javascript " }}%}
-/* Some pointless Javascript */
-var rawr = ["r", "a", "w", "r"];
-{{ "{% endhighlight " }}%}
+{{ "{% highlight javascript " }}%} /* Some pointless Javascript */ var rawr = ["r", "a", "w", "r"]; {{ "{% endhighlight " }}%}
 
 creates...
 
@@ -75,9 +72,7 @@ creates...
 /* Some pointless Javascript */ var rawr = ["r", "a", "w", "r"];
 {% endhighlight %}
 
-Use two trailing spaces
-on the right
-to create linebreak tags
+Use two trailing spaces on the right to create linebreak tags
 
 Finally, horizontal lines
 

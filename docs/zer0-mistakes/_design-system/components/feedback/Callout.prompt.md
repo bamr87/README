@@ -1,10 +1,7 @@
 ---
-
 source_file: Callout.prompt.md
 title: Callout.Prompt
 ---
-# Callout.Prompt
-
 Inline notice for docs and posts — the rendered form of Obsidian `> [!note]` callouts.
 
 ```jsx

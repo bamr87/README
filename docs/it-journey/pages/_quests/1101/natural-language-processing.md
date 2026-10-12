@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM; a GPU helps but is not required for the small models here
-preview: images/previews/natural-language-processing-descriptive-subtitle.webp
+preview: /images/previews/natural-language-processing-descriptive-subtitle.webp
 primary_technology: huggingface
 quest_arc: The Tongue of Machines
 quest_dependencies:
@@ -400,8 +400,8 @@ print(ner("Hugging Face is based in New York and Paris."))
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
+**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
 **📊 Data Scientist**: Advance to [AI Ethics](/quests/1101/ai-ethics/)
 
 ## 📚 Resources

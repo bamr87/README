@@ -114,23 +114,19 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 ## Troubleshooting
 
 ### Issue: Update PR Created But No Changes
-**Cause**: Already on latest versions
-**Action**: Close PR, no action needed
+**Cause**: Already on latest versions **Action**: Close PR, no action needed
 
 ### Issue: Update Fails to Create PR
-**Cause**: Workflow error or permissions issue
-**Action**: Check workflow run logs, verify GitHub token permissions
+**Cause**: Workflow error or permissions issue **Action**: Check workflow run logs, verify GitHub token permissions
 
 ### Issue: Docker Build Fails After Update
-**Cause**: Incompatible gem versions
-**Action**:
+**Cause**: Incompatible gem versions **Action**:
 1. Check `docker/Dockerfile` for version constraints
 2. Verify Bundler version compatibility
 3. Review gem compilation errors (native extensions)
 
 ### Issue: Tests Pass Locally But Fail in CI
-**Cause**: Environment differences (Ruby version, OS)
-**Action**:
+**Cause**: Environment differences (Ruby version, OS) **Action**:
 1. Match Ruby version with CI (`ruby-version` in workflow)
 2. Check platform-specific gems in `Gemfile.lock`
 3. Rebuild Docker container: `docker-compose up --build`

@@ -1,13 +1,10 @@
 ---
-
 gamename: vortex
 layout: default
 level: 11
 source_file: vortex11.md
 title: Vortex11
 ---
-# Vortex11
-
 Chunk Corruption
 ----------------
 You must corrupt the heap in order to gain arbitrary control of this program. Do recall, the application is using phkmalloc.

@@ -1,5 +1,4 @@
 ---
-
 attachments: ''
 author: Quest Master IT-Journey
 categories:
@@ -113,8 +112,6 @@ validation_criteria:
   - Name the five GA MCP tools and when to use each
   - Explain the difference between a dimension and a metric
 ---
-# Query Traffic With Mcp
-
 ## 📖 The Legend Behind This Quest
 
 Your agent can reach Google Analytics now — but a connection without good questions is just a faster way to be confused. In this quest you'll learn the **five tools** the MCP server exposes, the GA4 vocabulary of **dimensions and metrics**, and how to turn "how's traffic?" into a precise, repeatable report.

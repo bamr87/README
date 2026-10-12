@@ -4,10 +4,7 @@ title: 'Azure Architecture: [Resource Group Name]'
 ---
 # Azure Architecture: [Resource Group Name]
 
-**Subscription**: [subscription-name]
-**Region**: [primary-region]
-**Resource Count**: [count]
-**Generated**: [date]
+**Subscription**: [subscription-name] **Region**: [primary-region] **Resource Count**: [count] **Generated**: [date]
 
 ## Overview
 

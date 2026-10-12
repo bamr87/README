@@ -21,8 +21,7 @@ SDK for Azure Queue Storage operations — send, receive, peek, and manage messa
 npm install @azure/storage-queue @azure/identity
 ```
 
-**Current Version**: 12.x
-**Node.js**: >= 18.0.0
+**Current Version**: 12.x **Node.js**: >= 18.0.0
 
 ## Environment Variables
 

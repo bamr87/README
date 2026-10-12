@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 7 of Ulysses — Aeolus (noon, the newspaper offices).
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: 07-aeolus.md
 title: 07 Aeolus
 ---
-# 07 Aeolus
-
 {% include page-header.html %}
 
 Episode 7 of *Ulysses*. Noon, the newspaper offices.

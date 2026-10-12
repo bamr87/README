@@ -4,7 +4,7 @@ title: AGENTS.md
 ---
 # AGENTS.md
 
-IT-Journey is a GitHub Pages Jekyll site (`it-journey.dev`): gamified IT learning through **quests** (zer0 → her0). Theme is unpinned `remote_theme: "bamr87/zer0-mistakes"` — there is **no** theme gem in the Gemfile. Resolved stack lives in `Gemfile.lock` (`github-pages` 232 → Jekyll 3.10.0). CI/Docker pin Ruby 3.2 (`Dockerfile` is 3.2.3).
+IT-Journey is a GitHub Pages Jekyll site (`it-journey.dev`): gamified IT learning through **quests** (zer0 → her0). Theme is unpinned `remote_theme: "bamr87/zer0-mistakes"` — there is **no** theme gem in the Gemfile. `Gemfile.lock` is gitignored and never committed (fleet dependency policy) — every install resolves the newest `github-pages` (232+ → Jekyll 3.10.x). CI/Docker pin Ruby 3.2 (`Dockerfile` is 3.2.3).
 
 Trust executable sources over prose. If docs conflict, `scripts/quest/quest_registry.py` and `test/quest-validator/quest_validator.py` win.
 
@@ -41,7 +41,7 @@ Do not use `make test` — it still looks for removed `pages/_posts/`.
 
 ## Content map
 
-Live collections under `pages/`: `_quests`, `_quest-reports` (generated — do not hand-author), `_notes`, `_about`.
+Live collections under `pages/`: `_quests`, `_quest-reports` (generated — do not hand-author), `_digs`, `_notes`, `_about`.
 
 Do **not** create `pages/_posts/`, `_drafts/`, `_docs/`, `_quickstart/`, `_notebooks/`, or `_hobbies`. Blog content lives at lifehacker.dev; OverTheWire wargames at github.com/bamr87/wargames.
 

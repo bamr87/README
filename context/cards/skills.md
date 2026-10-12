@@ -6,8 +6,8 @@ kind: docs
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: heuristic
-source_fingerprint: a7046c49c6e5b26e
+enrichment: ai:anthropic
+source_fingerprint: a595ab0372a11167
 tags:
   - agents
   - ai
@@ -22,7 +22,7 @@ tags:
 
 # Agent Skills
 
-> Agent skills — prompts, MCP configurations, and AI development patterns. [!NOTE] Work in Progress — This repository is under active development. More skills are being added, existing skills are being updated to use the latest SDK patterns, and tests are being expanded to ensure quality. Contributions welcome!.
+> Agent Skills is an active, work-in-progress repository collecting reusable AI development building blocks—prompts, MCP server configurations, and agent patterns—organized as a browsable skill catalog across 712 documents and multiple languages including Python, TypeScript, Java, and Rust. It ships a scaffolding workflow, security policy, and test suite, with skills spanning themes like learning, memory, reflection, and productivity. Open it to find ready-made skills and SDK patterns for building agents, or to contribute new ones to the growing collection.
 
 | | |
 |---|---|
@@ -37,7 +37,7 @@ tags:
 
 - has AGENTS.md operating manual
 - has a security policy
-- ~509,370 words across 712 indexed documents
+- ~509,396 words across 712 indexed documents
 - code samples in: python, java, typescript, csharp, bash, plaintext, rust, markdown
 
 ## Navigation

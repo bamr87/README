@@ -22,8 +22,7 @@ dotnet add package Azure.ResourceManager.ApiCenter
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0 (GA)
-**API Version**: 2024-03-01
+**Current Version**: v1.0.0 (GA) **API Version**: 2024-03-01
 
 ## Environment Variables
 

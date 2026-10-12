@@ -1,5 +1,4 @@
 ---
-
 backlinks: false
 categories:
 - Documentation
@@ -18,6 +17,4 @@ tags:
 - navigation
 title: Graph
 ---
-# Graph
-
 {% include obsidian/full-graph.html %}

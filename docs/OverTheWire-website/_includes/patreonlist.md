@@ -1,10 +1,7 @@
 ---
-
 source_file: patreonlist.md
 title: Patreonlist
 ---
-# Patreonlist
-
 {% raw %}
 <div id="patreoncontainer">
 </div>

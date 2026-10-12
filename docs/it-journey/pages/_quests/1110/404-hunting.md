@@ -41,7 +41,7 @@ prerequisites:
 - GitHub account and a repository with GitHub Pages or Actions enabled
 - Git, Ruby 3.x, and Bundler installed
 - Basic terminal usage (cd, git add/commit/push)
-preview: images/previews/404-hunting-binary-wards-for-unbreakable-links.webp
+preview: /images/previews/404-hunting-binary-wards-for-unbreakable-links.webp
 primary_technology: jekyll
 quest_series: Site Reliability for Static Sites
 quest_type: main_quest

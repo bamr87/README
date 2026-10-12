@@ -1,10 +1,7 @@
 ---
-
 source_file: FeatureCard.prompt.md
 title: Featurecard.Prompt
 ---
-# Featurecard.Prompt
-
 The landing-page marketing card — a circular tinted Bootstrap-icon chip above a title and one-line description.
 
 ```jsx

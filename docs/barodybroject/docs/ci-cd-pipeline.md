@@ -27,9 +27,9 @@ The Barodybroject CI/CD pipeline provides a comprehensive, foundational workflow
 
 ### 1. Continuous Integration (ci.yml)
 
-**Purpose**: Primary testing and validation pipeline
-**Trigger**: Push/PR to main/develop
-**Duration**: ~8-12 minutes
+**Purpose**: Primary testing and validation pipeline  
+**Trigger**: Push/PR to main/develop  
+**Duration**: ~8-12 minutes  
 
 **Execution Flow**:
 ```mermaid
@@ -74,9 +74,9 @@ graph TD
 
 ### 2. Code Quality Pipeline (quality.yml)
 
-**Purpose**: Automated code quality and security enforcement
-**Trigger**: Push/PR (excluding documentation)
-**Duration**: ~5-8 minutes
+**Purpose**: Automated code quality and security enforcement  
+**Trigger**: Push/PR (excluding documentation)  
+**Duration**: ~5-8 minutes  
 
 **Quality Gates**:
 
@@ -88,9 +88,13 @@ graph TD
 
 2. **Security Analysis**
    - Bandit: Python security issue detection
-   - Safety: Known vulnerability scanning
-   - pip-audit: Dependency vulnerability audit
+   - Safety: Known vulnerability scanning, scoped to `src/requirements.txt`
+   - pip-audit: Dependency vulnerability audit, scoped to `src/requirements.txt`
    - TruffleHog: Secret detection in code/history
+
+   Both dependency scanners are invoked with `-r requirements.txt`, so the gate audits the dependencies this project **declares** rather than whatever is installed in the CI interpreter. Dev and CI-toolchain packages (linters, the scanners themselves and their transitive dependencies) are out of scope: an advisory against them is not a risk to what this project ships and must not block a merge.
+
+   `pip-audit` resolves the declared set's own transitive tree, so a shipped indirect dependency is in scope too. When one of those is flagged, the fix is usually to lift the cap that holds it back rather than to pin it directly — `fido2 1.2.0` declaring `cryptography<45`, and `martor <1.7` declaring `Markdown<3.6`, are the two worked examples in this repository's history (see `docs/changelog/summaries/2026-09-11-dependency-scan-scope.md`).
 
 3. **Container Security**
    - Trivy: Container image vulnerability scanning
@@ -110,9 +114,9 @@ graph TD
 
 ### 3. Container Management (container.yml)
 
-**Purpose**: Build, test, and publish container images
-**Trigger**: Push to main, tags, releases
-**Duration**: ~10-15 minutes
+**Purpose**: Build, test, and publish container images  
+**Trigger**: Push to main, tags, releases  
+**Duration**: ~10-15 minutes  
 
 **Build Strategy**:
 ```dockerfile
@@ -151,9 +155,9 @@ FROM base AS production   # Minimal production image
 
 ### 4. Azure Deployment (deploy.yml)
 
-**Purpose**: Automated Azure Container Apps deployment
-**Trigger**: Successful CI + Container workflows, manual dispatch
-**Duration**: ~8-12 minutes
+**Purpose**: Automated Azure Container Apps deployment  
+**Trigger**: Successful CI + Container workflows, manual dispatch  
+**Duration**: ~8-12 minutes  
 
 **Deployment Flow**:
 ```mermaid
@@ -196,9 +200,9 @@ graph LR
 
 ### 5. Environment Maintenance (environment.yml)
 
-**Purpose**: Automated environment health and dependency management
-**Trigger**: Weekly schedule, manual dispatch
-**Duration**: ~15-20 minutes
+**Purpose**: Automated environment health and dependency management  
+**Trigger**: Weekly schedule, manual dispatch  
+**Duration**: ~15-20 minutes  
 
 **Health Monitoring**:
 1. **Dependency Auditing**
@@ -286,7 +290,7 @@ services:
 
 ### Benchmark Targets
 - **CI Pipeline**: Complete in under 10 minutes
-- **Quality Pipeline**: Complete in under 8 minutes
+- **Quality Pipeline**: Complete in under 8 minutes  
 - **Container Build**: Complete in under 15 minutes
 - **Deployment**: Complete in under 12 minutes
 - **Environment Check**: Complete in under 20 minutes
@@ -307,7 +311,7 @@ services:
 
 ### Multi-Layer Security
 1. **Code Level**: Bandit, secret detection, import analysis
-2. **Dependency Level**: Safety, pip-audit, known vulnerability scanning
+2. **Dependency Level**: Safety and pip-audit over `src/requirements.txt` — the declared runtime dependencies, and the only set that can block a merge
 3. **Container Level**: Trivy image scanning, base image validation
 4. **Infrastructure Level**: Azure security best practices
 5. **Runtime Level**: Application monitoring and anomaly detection
@@ -347,9 +351,12 @@ black src/
 isort src/
 ruff check src/
 
-# Security scan locally
+# Security scan locally — mirror CI exactly: scan the DECLARED dependencies.
+# Without -r both scanners audit your whole interpreter, which reports
+# advisories against your own tooling and misses the ones that matter.
 bandit -r src/
-safety check
+(cd src && safety check -r requirements.txt)
+(cd src && pip-audit --desc -r requirements.txt)
 ```
 
 **Container Build Problems**:

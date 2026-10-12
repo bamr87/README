@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM; a GPU greatly speeds up training but is optional
-preview: images/previews/computer-vision-descriptive-subtitle.png
+preview: /images/previews/computer-vision-descriptive-subtitle.png
 primary_technology: pytorch
 quest_arc: The Eye of the Machine
 quest_dependencies:
@@ -423,8 +423,8 @@ Because ResNet's early layers already know edges, textures, and shapes that gene
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
+**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
 **📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
 
 ## 📚 Resources

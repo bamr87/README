@@ -42,7 +42,7 @@ prerequisites:
 - Basic command-line interface knowledge
 - Basic programming concepts
 - Text editor or IDE familiarity
-preview: images/previews/docker-containerization-mastery-level-0101-5-quest.webp
+preview: /images/previews/docker-containerization-mastery-level-0101-5-quest.webp
 primary_technology: docker
 quest_series: DevOps Fundamentals
 quest_type: main_quest

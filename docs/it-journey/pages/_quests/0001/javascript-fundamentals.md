@@ -52,7 +52,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/javascript-fundamentals-interactive-web-elements-d.webp
+preview: /images/previews/javascript-fundamentals-interactive-web-elements-d.webp
 primary_technology: javascript
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -486,9 +486,9 @@ Three ideas you just used:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)
-**🏗️ System Engineer**: Explore [Jekyll Plugins](/quests/0001/jekyll-plugins/)
-**🎨 Frontend Specialist**: Revisit [CSS Styling Basics](/quests/0001/css-styling-basics/)
+**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)  
+**🏗️ System Engineer**: Explore [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
+**🎨 Frontend Specialist**: Revisit [CSS Styling Basics](/quests/0001/css-styling-basics/)  
 
 ## 📚 Resources
 

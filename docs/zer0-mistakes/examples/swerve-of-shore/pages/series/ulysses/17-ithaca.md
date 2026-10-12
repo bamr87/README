@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 17 of Ulysses — Ithaca (2am, back at Eccles Street).
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: 17-ithaca.md
 title: 17 Ithaca
 ---
-# 17 Ithaca
-
 {% include page-header.html %}
 
 Episode 17 of *Ulysses*. 2am, back at Eccles Street.

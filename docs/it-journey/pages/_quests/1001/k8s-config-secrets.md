@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A running local cluster (kind, minikube, or k3d)
   - kubectl configured against that cluster
-preview: images/previews/kubernetes-configmaps-quest-title-secrets-configur.webp
+preview: /images/previews/kubernetes-configmaps-quest-title-secrets-configur.webp
 primary_technology: kubernetes
 quest_arc: The Vault and the Ledger
 quest_dependencies:
@@ -451,8 +451,8 @@ kubectl rollout restart deployment/app   # required for env vars to refresh
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Advance to [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/)
-**🏗️ System Engineer**: Revisit [Services and Networking](/quests/1001/k8s-services-networking/)
+**💻 Software Developer**: Advance to [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/)  
+**🏗️ System Engineer**: Revisit [Services and Networking](/quests/1001/k8s-services-networking/)  
 **🛡️ Security Specialist**: Study the Secret hardening notes above closely
 
 ## 📚 Resources

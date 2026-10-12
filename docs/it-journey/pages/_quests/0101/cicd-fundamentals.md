@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/ci-cd-fundamentals-continuous-integration-quest-ti.webp
+preview: /images/previews/ci-cd-fundamentals-continuous-integration-quest-ti.webp
 primary_technology: cicd
 quest_arc: Foundations of the Pipeline
 quest_dependencies:
@@ -479,8 +479,8 @@ The secret is injected into the job's environment but never written to the log o
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Actions Basics](/quests/0101/github-actions-basics/)
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)
+**💻 Software Developer**: Continue to [GitHub Actions Basics](/quests/0101/github-actions-basics/)  
+**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

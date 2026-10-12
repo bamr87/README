@@ -210,6 +210,4 @@ gem '<gem-name>', '~> X.Y'
 
 ---
 
-**Last Updated**: December 2025
-**Ruby Version**: 3.3
-**Status**: Active
+**Last Updated**: December 2025 **Ruby Version**: 3.3 **Status**: Active

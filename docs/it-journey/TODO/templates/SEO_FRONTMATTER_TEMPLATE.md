@@ -80,7 +80,7 @@ description: "[Action-oriented description with platform mentions]. [Time estima
 
 date: YYYY-MM-DDTHH:MM:SS.000Z
 lastmod: YYYY-MM-DDTHH:MM:SS.000Z
-preview: images/previews/[slug].png
+preview: /images/previews/[slug].png
 
 tags:
   - [level-tag]              # e.g., lvl-0010, binary-level-indicator
@@ -220,7 +220,7 @@ Before publishing, verify:
 
 ### Keyword Placement Priority
 1. **Title** - Most important
-2. **Description** - Second most important
+2. **Description** - Second most important  
 3. **H1/H2 Headers** - In content
 4. **First paragraph** - Early in body
 5. **Keywords field** - For internal tracking
@@ -252,6 +252,6 @@ Always include platform when relevant:
 
 ---
 
-**Template Version**: 1.0.0
-**Created**: 2025-12-19
+**Template Version**: 1.0.0  
+**Created**: 2025-12-19  
 **Usage**: Copy relevant section when creating new content

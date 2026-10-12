@@ -410,6 +410,4 @@ offcanvasEl.addEventListener('shown.bs.offcanvas', () => {
 
 ---
 
-**Last Updated**: 2025-02-03
-**Author**: GitHub Copilot AI Assistant
-**Contributors**: bamr87
+**Last Updated**: 2025-02-03 **Author**: GitHub Copilot AI Assistant **Contributors**: bamr87

@@ -1,5 +1,4 @@
 ---
-
 backlinks: false
 categories:
 - Documentation
@@ -23,6 +22,4 @@ translated_from_sha: f8d79a65ff41
 translation_of: pages/_docs/obsidian/graph.md
 translation_source_url: /docs/obsidian/graph/
 ---
-# Graph
-
 {% include obsidian/full-graph.html %}

@@ -52,7 +52,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Ruby 3.x, Jekyll, and Bundler installed
-preview: images/previews/jekyll-plugins-extending-site-functionality-descri.webp
+preview: /images/previews/jekyll-plugins-extending-site-functionality-descri.webp
 primary_technology: jekyll
 quest_arc: Publishing Your First Website
 quest_dependencies:
@@ -460,9 +460,9 @@ After a build, visit `/stats.html` - a page that did not exist as a source file,
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)
-**🏗️ System Engineer**: Explore building beyond the whitelist with Actions
-**🎨 Frontend Specialist**: Revisit [SEO Optimization](/quests/0001/seo-optimization/)
+**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)  
+**🏗️ System Engineer**: Explore building beyond the whitelist with Actions  
+**🎨 Frontend Specialist**: Revisit [SEO Optimization](/quests/0001/seo-optimization/)  
 
 ## 📚 Resources
 

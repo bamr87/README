@@ -1,5 +1,4 @@
 ---
-
 character: digital-artist
 date: 2026-07-17 00:00:00+00:00
 level: '0001'
@@ -20,8 +19,6 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 17 Digital Artist 0001
 ---
-# 2026 07 17 Digital Artist 0001
-
 ## 🎯 Session Summary
 
 Walked a **5-quest window (2 of 6)** of the **Digital Artist → Level 0001 "Web Fundamentals" (🌱 Apprentice)** path, in the dependency-sorted order the planner selected, as a UI/UX-leaning beginner would. Evidence is the workflow-sealed execute-mode engine run (`walk-evidence.json`); I read all five quest sources and reasoned about them as one linked journey.

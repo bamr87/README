@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ and PgBouncer (or Docker to run both)
-preview: images/previews/connection-pooling-efficient-resource-quest-title.png
+preview: /images/previews/connection-pooling-efficient-resource-quest-title.png
 primary_technology: postgresql
 quest_arc: The Gatekeeper's Discipline
 quest_dependencies:
@@ -379,8 +379,8 @@ Connections piling up as `idle in transaction` are the classic fingerprint of a 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to Level 0111: API Development
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
+**💻 Software Developer**: Continue to Level 0111: API Development  
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
 **📊 Data Scientist**: Revisit [Query Optimization](/quests/0110/query-optimization/)
 
 ## 📚 Resources

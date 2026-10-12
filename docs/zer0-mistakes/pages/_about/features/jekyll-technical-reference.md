@@ -11,8 +11,8 @@ permalink: /about/features/jekyll/
 preview: /images/previews/jekyll-technical-reference.png
 source_file: jekyll-technical-reference.md
 tags:
-- jekyll
-- documentation
+- Jekyll
+- Documentation
 title: Jekyll Technical Reference
 ---
 # Jekyll Technical Reference

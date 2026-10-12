@@ -1,5 +1,4 @@
 ---
-
 author: default
 categories:
 - Tutorial
@@ -20,8 +19,6 @@ tags:
 - responsive-design
 title: 2026 04 28 Responsive Documentation Card Grid
 ---
-# 2026 04 28 Responsive Documentation Card Grid
-
 Documentation indexes need to be scannable. A responsive card grid is a good fit when readers need to compare guides, jump into a topic, or discover related resources.
 
 This tutorial builds a simple grid that works with plain HTML and CSS, then shows how to adapt it to Bootstrap utilities.

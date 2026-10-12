@@ -1,5 +1,4 @@
 ---
-
 author: bamr87
 categories:
 - jekyll
@@ -31,8 +30,6 @@ tags:
 - latex
 title: Mathjax Symbols
 ---
-# Mathjax Symbols
-
 > Display mathematical notation in web pages with MathJax.
 
 ## 1. Math Symbols

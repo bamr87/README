@@ -1,10 +1,7 @@
 ---
-
 source_file: pull_request_template.md
 title: Pull Request Template
 ---
-# Pull Request Template
-
 ## 📋 Description
 
 Brief description of the changes made in this PR.

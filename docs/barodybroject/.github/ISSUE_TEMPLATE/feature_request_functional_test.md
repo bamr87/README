@@ -1,5 +1,4 @@
 ---
-
 about: Template for outlining a test plan for the functional requirements of a new
   feature
 assignees: ''
@@ -8,8 +7,6 @@ name: 'Test Plan: Functional Requirements'
 source_file: feature_request_functional_test.md
 title: Feature Request Functional Test
 ---
-# Feature Request Functional Test
-
 ## Summary
 Provide a brief summary of the feature and the purpose of this test plan.
 

@@ -52,7 +52,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - A Jupyter environment or VS Code with the Python extension
-preview: images/previews/python-for-data-science-descriptive-subtitle.webp
+preview: /images/previews/python-for-data-science-descriptive-subtitle.webp
 primary_technology: pandas
 quest_arc: The Data Artisan's Toolkit
 quest_dependencies:
@@ -437,8 +437,8 @@ A chart without axis labels is a riddle. Always title it and label both axes.
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
+**💻 Software Developer**: Continue to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
 **📊 Data Scientist**: Advance to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)
 
 ## 📚 Resources

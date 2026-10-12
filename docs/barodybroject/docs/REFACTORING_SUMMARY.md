@@ -4,8 +4,7 @@ title: Documentation Refactoring Summary
 ---
 # Documentation Refactoring Summary
 
-**Date**: October 28, 2025
-**Action**: Moved ecosystem integration content from `.github/instructions/` to `docs/` section
+**Date**: October 28, 2025 **Action**: Moved ecosystem integration content from `.github/instructions/` to `docs/` section
 
 ## 🔄 Content Migration Summary
 

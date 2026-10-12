@@ -1,12 +1,9 @@
 ---
-
 layout: default
 listinformation: true
 source_file: wechall.md
 title: Wechall
 ---
-# Wechall
-
 WeChall Scoreboard
 ==================
 

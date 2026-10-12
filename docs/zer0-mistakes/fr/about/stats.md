@@ -1,5 +1,4 @@
 ---
-
 description: Analyses et métriques complètes pour la base de connaissances Zer0-Mistakes
 excerpt: Analyses et métriques complètes pour le contenu de votre site.
 icon: material/chart-bar
@@ -16,8 +15,6 @@ translated_from_sha: 06c9f7519562
 translation_of: pages/_about/stats.md
 translation_source_url: /about/stats/
 ---
-# Stats
-
 {% include stats/stats-header.html %}
 
 {% if site.data.content_statistics %}

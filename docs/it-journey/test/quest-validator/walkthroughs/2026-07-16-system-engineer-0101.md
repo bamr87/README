@@ -1,5 +1,4 @@
 ---
-
 character: system-engineer
 date: '2026-07-16T00:00:00.000Z'
 level: '0101'
@@ -20,8 +19,6 @@ theme: CI/CD & DevOps
 tier: Adventurer ⚔️
 title: 2026 07 16 System Engineer 0101
 ---
-# 2026 07 16 System Engineer 0101
-
 ## 🎯 Session Summary
 
 I walked the **System Engineer**, **Level 0101 (CI/CD & DevOps, Adventurer ⚔️)** slice — a **windowed** run covering **5 of the level's 13 quests** (window 1 of 3), in the dependency-sorted order the planner selected. The sandboxed execute engine scored the five at an **83.6% average (4 pass · 1 warn · 0 fail)**; I read every quest as a learner would and reason about the chain below.

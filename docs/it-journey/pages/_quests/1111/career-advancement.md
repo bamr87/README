@@ -49,7 +49,7 @@ prerequisites:
   system_requirements:
   - A document tool for a brag doc and a promotion case
   - Access to your company's leveling rubric if one exists
-preview: images/previews/career-advancement-ic-management-leveling.png
+preview: /images/previews/career-advancement-ic-management-leveling.png
 primary_technology: leadership
 quest_arc: The Architect-King's Ascension
 quest_dependencies:
@@ -387,8 +387,8 @@ The biggest mistake is anchoring against yourself - discounting your number befo
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)
+**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)  
+**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
 **🛡️ Security Specialist**: Advance to [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/)
 
 ## 📚 Resources

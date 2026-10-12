@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A terminal and a text editor or IDE (VS Code recommended)
   - Optional Docker for the hands-on lab
-preview: images/previews/monitoring-fundamentals-metrics-logs-quest-title-t.webp
+preview: /images/previews/monitoring-fundamentals-metrics-logs-quest-title-t.webp
 primary_technology: observability
 quest_arc: Eyes on the Realm
 quest_dependencies:
@@ -430,8 +430,8 @@ annotations:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
-**🏗️ System Engineer**: Explore [Prometheus & Grafana](/quests/1010/prometheus-grafana/)
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
+**🏗️ System Engineer**: Explore [Prometheus & Grafana](/quests/1010/prometheus-grafana/)  
 **🛡️ Security Specialist**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)
 
 ## 📚 Resources

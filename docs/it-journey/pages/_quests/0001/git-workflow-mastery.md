@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a GitHub account
-preview: images/previews/git-workflow-mastery-branches-merging-quest-desc.png
+preview: /images/previews/git-workflow-mastery-branches-merging-quest-desc.png
 primary_technology: git
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -432,8 +432,8 @@ git merge --abort      # or: git rebase --abort
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)
+**💻 Software Developer**: Continue to [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)  
+**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
 **🛠️ DevOps Specialist**: Take this workflow into CI/CD in the Adventurer tier
 
 ## 📚 Resources

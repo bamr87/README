@@ -1,12 +1,9 @@
 ---
-
 layout: default
 listinformation: true
 source_file: donate.md
 title: Donate
 ---
-# Donate
-
 Donating
 ========
 

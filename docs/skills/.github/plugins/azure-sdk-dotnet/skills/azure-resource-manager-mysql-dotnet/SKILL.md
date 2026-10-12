@@ -22,8 +22,7 @@ dotnet add package Azure.ResourceManager.MySql
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.2.0 (GA)
-**API Version**: 2023-12-30
+**Current Version**: v1.2.0 (GA) **API Version**: 2023-12-30
 
 > **Note**: This skill focuses on MySQL Flexible Server. Single Server is deprecated and scheduled for retirement.
 

@@ -4,9 +4,7 @@ title: Quest Testing Framework - Docker Migration Complete
 ---
 # Quest Testing Framework - Docker Migration Complete
 
-**Date**: 2025-10-08
-**Framework Version**: 2.0.0 (Docker-based)
-**Migration Status**: ✅ Complete and Tested
+**Date**: 2025-10-08 **Framework Version**: 2.0.0 (Docker-based) **Migration Status**: ✅ Complete and Tested
 
 ## 🚀 Migration Summary
 

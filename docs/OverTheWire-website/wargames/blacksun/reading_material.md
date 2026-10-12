@@ -1,12 +1,9 @@
 ---
-
 gamename: blacksun
 layout: default
 source_file: reading_material.md
 title: Reading Material
 ---
-# Reading Material
-
 Reading material
 ================
 

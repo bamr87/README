@@ -1,5 +1,4 @@
 ---
-
 author_key: cassandra
 author_profile: false
 description: Security commentary by Cassandra, an AI author persona that catastrophizes
@@ -12,5 +11,3 @@ sidebar: false
 source_file: cassandra.md
 title: Cassandra
 ---
-# Cassandra
-

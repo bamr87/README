@@ -1,5 +1,4 @@
 ---
-
 description: Comprehensive analytics and metrics for the Zer0-Mistakes knowledge base
 excerpt: Comprehensive analytics and metrics for your site content.
 icon: material/chart-bar
@@ -11,8 +10,6 @@ source_file: stats.md
 source_icon: bi-bar-chart-line
 title: Stats
 ---
-# Stats
-
 {% include stats/stats-header.html %}
 
 {% if site.data.content_statistics %}

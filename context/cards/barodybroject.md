@@ -6,8 +6,8 @@ kind: app
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: heuristic
-source_fingerprint: 54c951cb292cb578
+enrichment: ai:anthropic
+source_fingerprint: e1cd012d36114277
 tags:
   - agricultural technology
   - azure
@@ -25,7 +25,7 @@ tags:
 
 # Barodybroject
 
-> Full-stack application platform with infrastructure, testing, and deployment tooling. Barodybroject is a Django 5.1 application for generating and managing parody news content with OpenAI. It runs against PostgreSQL, exposes Django REST Framework endpoints, includes a Jekyll static-site sidecar for published content, and deploys to Azure Container Apps with Bicep infrastructure.
+> Barodybroject is an active full-stack Django 5.2 application for generating and managing AI-powered parody news content, backed by PostgreSQL and serving a React frontend through a Django REST Framework API. Its documentation corpus spans 319 files across source, infrastructure, and extensive guides, covering a Jekyll static-site sidecar for published content and deployment to Azure Container Apps via Bicep. Open it to understand the development quick start, testing workflow, and deployment tooling for a complete AI content platform.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/barodybroject` - 308 docs |
+| Corpus | `docs/barodybroject` - 319 docs |
 | External | no |
 
 ## Signals
@@ -41,16 +41,16 @@ tags:
 - has CLAUDE.md agent guidance
 - has a contribution guide
 - keeps a changelog
-- ~229,993 words across 308 indexed documents
+- ~241,345 words across 320 indexed documents
 - code samples in: bash, python, plaintext, yaml, django, markdown, html, javascript
 
 ## Navigation
 
-256 published pages in 56 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
+267 published pages in 56 sections (max depth 7) — [browse the full map](../../docs/browse/barodybroject.md) · [tree as JSON](../nav/barodybroject.json)
 
 - **Repository & tooling** (9 pages)
-- **Documentation** (51 pages)
-- **Source** (121 pages)
+- **Documentation** (57 pages)
+- **Source** (126 pages)
 - **📚 The Forbidden Library** (66 pages)
 
 ## Key documents

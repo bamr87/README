@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 3 of Ulysses — Proteus (11am, Sandymount Strand).
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: 03-proteus.md
 title: 03 Proteus
 ---
-# 03 Proteus
-
 {% include page-header.html %}
 
 Episode 3 of *Ulysses*. 11am, Sandymount Strand.

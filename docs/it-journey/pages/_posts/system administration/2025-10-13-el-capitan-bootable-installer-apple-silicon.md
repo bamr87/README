@@ -1133,6 +1133,4 @@ Continue your legacy Mac journey:
 
 ---
 
-*Article last updated: October 13, 2025*
-*Tested on: MacBook Pro (M3, 2024) running macOS Sequoia 15.0*
-*Target hardware: MacBook (Late 2009, Early 2010)*
+*Article last updated: October 13, 2025* *Tested on: MacBook Pro (M3, 2024) running macOS Sequoia 15.0* *Target hardware: MacBook (Late 2009, Early 2010)*

@@ -451,10 +451,7 @@ docker run -it [image-name] [command]
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Suggested Quest]
-**🏗️ System Engineer**: Explore [Suggested Quest]
-**🛡️ Security Specialist**: Check out [Suggested Quest]
-**📊 Data Scientist**: Advance to [Suggested Quest]
+**💻 Software Developer**: Continue to [Suggested Quest] **🏗️ System Engineer**: Explore [Suggested Quest] **🛡️ Security Specialist**: Check out [Suggested Quest] **📊 Data Scientist**: Advance to [Suggested Quest]
 
 ## 📚 Resource Library
 
@@ -491,6 +488,4 @@ Before marking this quest as complete, ensure you've:
 
 *Congratulations, brave adventurer! You've completed the **[Quest Name]** quest and gained valuable [technology/skill] mastery. Your journey through the IT realm continues - choose your next adventure wisely!*
 
-**Quest Status**: 🔮 Placeholder (Content to be developed)
-**Last Updated**: 2025-11-29
-**Version**: 1.0.0
+**Quest Status**: 🔮 Placeholder (Content to be developed) **Last Updated**: 2025-11-29 **Version**: 1.0.0

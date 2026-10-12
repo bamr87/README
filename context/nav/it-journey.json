@@ -5,8 +5,8 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 926,
-    "sections": 93,
+    "pages": 945,
+    "sections": 95,
     "max_depth": 7,
     "skipped": 17
   },
@@ -29,19 +29,19 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "4c8cfb295252e0e1",
+  "fingerprint": "197f709f5b4f72b6",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 926,
+    "pages": 945,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 1.0,
         "index": "it-journey/redirects/README.md",
-        "pages": 232,
+        "pages": 233,
         "children": [
           {
             "type": "section",
@@ -324,7 +324,7 @@
             "title": "Scripts Directory",
             "rel": "scripts",
             "index": "it-journey/scripts/README.md",
-            "pages": 12,
+            "pages": 13,
             "children": [
               {
                 "type": "page",
@@ -339,6 +339,13 @@
                 "path": "it-journey/scripts/core/README.md",
                 "rel": "scripts/core/README.md",
                 "folder": "scripts/core"
+              },
+              {
+                "type": "page",
+                "title": "Dig scripts",
+                "path": "it-journey/scripts/digs/README.md",
+                "rel": "scripts/digs/README.md",
+                "folder": "scripts/digs"
               },
               {
                 "type": "page",
@@ -1701,7 +1708,7 @@
         "title": "Data",
         "rel": "_data",
         "index": "it-journey/_data/README.md",
-        "pages": 8,
+        "pages": 9,
         "children": [
           {
             "type": "page",
@@ -1729,7 +1736,7 @@
             "title": "data/brand/ \u2014 IT-Journey brand store",
             "rel": "_data/brand",
             "index": "it-journey/_data/brand/README.md",
-            "pages": 5,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -1754,8 +1761,14 @@
                 "type": "section",
                 "title": "Sections",
                 "rel": "_data/brand/sections",
-                "pages": 2,
+                "pages": 3,
                 "children": [
+                  {
+                    "type": "page",
+                    "title": "Digs \u2014 Section Guide",
+                    "path": "it-journey/_data/brand/sections/dig.md",
+                    "rel": "_data/brand/sections/dig.md"
+                  },
                   {
                     "type": "page",
                     "title": "Docs \u2014 Section Guide",
@@ -1779,7 +1792,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "it-journey/docs/README.md",
-        "pages": 37,
+        "pages": 39,
         "children": [
           {
             "type": "page",
@@ -1919,6 +1932,29 @@
                 "title": "IT-Journey \u2014 Branding & Content-Governance System (plan)",
                 "path": "it-journey/docs/cms/BRANDING_GOVERNANCE_PLAN.md",
                 "rel": "docs/cms/BRANDING_GOVERNANCE_PLAN.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Git archaeology",
+            "rel": "docs/git-archaeology",
+            "index": "it-journey/docs/git-archaeology/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Git archaeology",
+                "path": "it-journey/docs/git-archaeology/README.md",
+                "rel": "docs/git-archaeology/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "First steps",
+                "path": "it-journey/docs/git-archaeology/000-first-steps/report.md",
+                "rel": "docs/git-archaeology/000-first-steps/report.md",
+                "folder": "docs/git-archaeology/000-first-steps"
               }
             ]
           },
@@ -2095,7 +2131,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 637,
+        "pages": 652,
         "children": [
           {
             "type": "page",
@@ -2103,6 +2139,12 @@
             "path": "it-journey/pages/home.md",
             "rel": "pages/home.md",
             "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Categories",
+            "path": "it-journey/pages/categories.md",
+            "rel": "pages/categories.md"
           },
           {
             "type": "page",
@@ -2125,7 +2167,7 @@
           },
           {
             "type": "page",
-            "title": "Search",
+            "title": "Search Index and Sitemap",
             "path": "it-journey/pages/search.md",
             "rel": "pages/search.md"
           },
@@ -2142,11 +2184,51 @@
             "rel": "pages/stats.md"
           },
           {
+            "type": "page",
+            "title": "Tags",
+            "path": "it-journey/pages/tags.md",
+            "rel": "pages/tags.md"
+          },
+          {
             "type": "section",
-            "title": "Index",
+            "title": "Index (_digs)",
+            "rel": "pages/_digs",
+            "index": "it-journey/pages/_digs/index.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Index",
+                "path": "it-journey/pages/_digs/index.md",
+                "rel": "pages/_digs/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "2020 07 30 First Steps",
+                "path": "it-journey/pages/_digs/2020-07-30-first-steps.md",
+                "rel": "pages/_digs/2020-07-30-first-steps.md"
+              },
+              {
+                "type": "page",
+                "title": "2020 08 01 The Outline Moves",
+                "path": "it-journey/pages/_digs/2020-08-01-the-outline-moves.md",
+                "rel": "pages/_digs/2020-08-01-the-outline-moves.md"
+              },
+              {
+                "type": "page",
+                "title": "2020 08 23 Two Branches One Equals Sign",
+                "path": "it-journey/pages/_digs/2020-08-23-two-branches-one-equals-sign.md",
+                "rel": "pages/_digs/2020-08-23-two-branches-one-equals-sign.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Index (_notes)",
             "rel": "pages/_notes",
             "index": "it-journey/pages/_notes/index.md",
-            "pages": 57,
+            "pages": 58,
             "children": [
               {
                 "type": "page",
@@ -2184,6 +2266,12 @@
                 "title": "2025 01 24 Using Jekyll Lambda And Ses For Efficient Web Solutions",
                 "path": "it-journey/pages/_notes/2025-01-24-using-jekyll-lambda-and-ses-for-efficient-web-solutions.md",
                 "rel": "pages/_notes/2025-01-24-using-jekyll-lambda-and-ses-for-efficient-web-solutions.md"
+              },
+              {
+                "type": "page",
+                "title": "2026 09 26 First Steps Of The Repository",
+                "path": "it-journey/pages/_notes/2026-09-26-first-steps-of-the-repository.md",
+                "rel": "pages/_notes/2026-09-26-first-steps-of-the-repository.md"
               },
               {
                 "type": "page",
@@ -3711,7 +3799,7 @@
             "title": "Quests",
             "rel": "pages/_quests",
             "index": "it-journey/pages/_quests/README.md",
-            "pages": 272,
+            "pages": 280,
             "children": [
               {
                 "type": "page",
@@ -4128,7 +4216,7 @@
                 "title": "Level 0011: Development Tools & AI Integration",
                 "rel": "pages/_quests/0011",
                 "index": "it-journey/pages/_quests/0011/README.md",
-                "pages": 10,
+                "pages": 11,
                 "children": [
                   {
                     "type": "page",
@@ -4142,6 +4230,12 @@
                     "title": ".github/actions/claude-run/action.yml",
                     "path": "it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md",
                     "rel": "pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "cobc (GnuCOBOL) 3.1.2.0",
+                    "path": "it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site.md",
+                    "rel": "pages/_quests/0011/relic-raisers-01-the-dig-site.md"
                   },
                   {
                     "type": "page",
@@ -4486,7 +4580,7 @@
                 "title": "Level 0101: Advanced Docker & DevOps",
                 "rel": "pages/_quests/0101",
                 "index": "it-journey/pages/_quests/0101/README.md",
-                "pages": 15,
+                "pages": 16,
                 "children": [
                   {
                     "type": "page",
@@ -4569,6 +4663,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "The summoning circle: the relic runs identically in every world.",
+                    "path": "it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md",
+                    "rel": "pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "Time your local build so you have a baseline to optimize against",
                     "path": "it-journey/pages/_quests/0101/workflow-optimization.md",
                     "rel": "pages/_quests/0101/workflow-optimization.md"
@@ -4586,7 +4686,7 @@
                 "title": "Level 0110 (6) - Database Mastery",
                 "rel": "pages/_quests/0110",
                 "index": "it-journey/pages/_quests/0110/README.md",
-                "pages": 9,
+                "pages": 10,
                 "children": [
                   {
                     "type": "page",
@@ -4627,6 +4727,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "Relic Raisers 02 The Strata",
+                    "path": "it-journey/pages/_quests/0110/relic-raisers-02-the-strata.md",
+                    "rel": "pages/_quests/0110/relic-raisers-02-the-strata.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "Sql Mastery",
                     "path": "it-journey/pages/_quests/0110/sql-mastery.md",
                     "rel": "pages/_quests/0110/sql-mastery.md"
@@ -4650,7 +4756,7 @@
                 "title": "Level 0111 (7) - API Development",
                 "rel": "pages/_quests/0111",
                 "index": "it-journey/pages/_quests/0111/README.md",
-                "pages": 11,
+                "pages": 12,
                 "children": [
                   {
                     "type": "page",
@@ -4712,6 +4818,12 @@
                     "title": "Install the Redocly CLI to lint and preview OpenAPI docs",
                     "path": "it-journey/pages/_quests/0111/api-documentation.md",
                     "rel": "pages/_quests/0111/api-documentation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "port 11050.00 2100.50",
+                    "path": "it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md",
+                    "rel": "pages/_quests/0111/relic-raisers-06-the-strangler-fig.md"
                   },
                   {
                     "type": "page",
@@ -5072,7 +5184,7 @@
                 "title": "Level 1100: Data & Templates",
                 "rel": "pages/_quests/1100",
                 "index": "it-journey/pages/_quests/1100/README.md",
-                "pages": 16,
+                "pages": 17,
                 "children": [
                   {
                     "type": "page",
@@ -5098,6 +5210,12 @@
                     "title": ".github/workflows/bard-forge.yml (in the SOURCE repo)",
                     "path": "it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge.md",
                     "rel": "pages/_quests/1100/self-operating-website-10-the-bard-forge.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "0.30000000000000004",
+                    "path": "it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md",
+                    "rel": "pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md"
                   },
                   {
                     "type": "page",
@@ -5178,7 +5296,7 @@
                 "title": "Level 1110: Quality Assurance",
                 "rel": "pages/_quests/1110",
                 "index": "it-journey/pages/_quests/1110/README.md",
-                "pages": 11,
+                "pages": 12,
                 "children": [
                   {
                     "type": "page",
@@ -5222,6 +5340,12 @@
                     "title": "Redpanda is a lightweight, Kafka-compatible broker for local use",
                     "path": "it-journey/pages/_quests/1110/event-driven-design.md",
                     "rel": "pages/_quests/1110/event-driven-design.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Restart the gate with the relic answering. Nothing else changes.",
+                    "path": "it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md",
+                    "rel": "pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md"
                   },
                   {
                     "type": "page",
@@ -5428,7 +5552,7 @@
                 "title": "\ud83d\udc51 Level 1111: Leadership & Innovation",
                 "rel": "pages/_quests/1111",
                 "index": "it-journey/pages/_quests/1111/README.md",
-                "pages": 9,
+                "pages": 10,
                 "children": [
                   {
                     "type": "page",
@@ -5463,6 +5587,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "Elders of ARAGE01",
+                    "path": "it-journey/pages/_quests/1111/relic-raisers-03-the-elders.md",
+                    "rel": "pages/_quests/1111/relic-raisers-03-the-elders.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "Install Git and the GitHub CLI for a smooth contribution flow",
                     "path": "it-journey/pages/_quests/1111/open-source-contribution.md",
                     "rel": "pages/_quests/1111/open-source-contribution.md"
@@ -5492,7 +5622,7 @@
                 "title": "\ud83d\udcdc The Codex",
                 "rel": "pages/_quests/codex",
                 "index": "it-journey/pages/_quests/codex/index.md",
-                "pages": 12,
+                "pages": 13,
                 "children": [
                   {
                     "type": "page",
@@ -5524,6 +5654,12 @@
                     "title": "Agentic Codex",
                     "path": "it-journey/pages/_quests/codex/agentic-codex.md",
                     "rel": "pages/_quests/codex/agentic-codex.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "cobc (GnuCOBOL) 3.1.2.0",
+                    "path": "it-journey/pages/_quests/codex/relic-raisers.md",
+                    "rel": "pages/_quests/codex/relic-raisers.md"
                   },
                   {
                     "type": "page",

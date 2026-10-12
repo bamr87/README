@@ -18,7 +18,7 @@ keywords:
   secondary:
   - quest campaigns
   - reference
-lastmod: '2026-06-30T00:00:00.000Z'
+lastmod: '2026-09-14T00:00:00.000Z'
 layout: default
 learning_style: reading
 level: '0000'
@@ -50,6 +50,7 @@ The **Codex** is the home of IT-Journey's **epic quests** — long, multi-sessio
 |---|---|---|---|
 | 🤖 **[The Agentic Codex](/quests/codex/agentic-codex/)** | A GH-600-ready command of autonomous AI agents on GitHub — six exam domains, hands-on | ⚔️ Epic | [Begin →](/quests/codex/agentic-codex/) |
 | 🏰 **[The Self-Operating Website](/quests/codex/self-operating-website/)** | A Jekyll site that drafts content, files bugs, and reviews its own PRs behind a human gate | ⚔️ Epic | [Begin →](/quests/codex/self-operating-website/) |
+| 🏺 **[The Relic Raisers](/quests/codex/relic-raisers/)** | A COBOL relic read with AI familiars, pinned by trials, translated and proven by a ledger, then revived behind a strangler-fig gate | ⚔️ Epic | [Begin →](/quests/codex/relic-raisers/) |
 | 🌱 **[Zer0-to-Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/)** | Your first AI-powered open-source CMS, from nothing to a live site | ⚔️ Epic | [Begin →](/quests/codex/zer0-to-her0-cmstyle/) |
 
 > 💡 New here? Start with **Zer0-to-Her0 CMStyle** to build your first site, then

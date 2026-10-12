@@ -1,5 +1,4 @@
 ---
-
 character: system-engineer
 date: '2026-07-15T12:13:59.000Z'
 level: '0101'
@@ -18,8 +17,6 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 15 System Engineer 0101
 ---
-# 2026 07 15 System Engineer 0101
-
 ## 🎯 Session Summary
 
 - **Character / class:** 🏗️ System Engineer (Adventurer tier ⚔️)

@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - SQLite (bundled with Python) or DuckDB for the columnar demo
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/data-warehousing-descriptive-subtitle.webp
+preview: /images/previews/data-warehousing-descriptive-subtitle.webp
 primary_technology: sql
 quest_arc: Building the Analytical Citadel
 quest_dependencies:
@@ -453,8 +453,8 @@ This is why Snowflake, BigQuery, Redshift, Parquet files, and DuckDB are all col
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Apache Spark](/quests/1100/apache-spark/)
-**🏗️ System Engineer**: Explore [Stream Processing](/quests/1100/stream-processing/)
+**💻 Software Developer**: Continue to [Apache Spark](/quests/1100/apache-spark/)  
+**🏗️ System Engineer**: Explore [Stream Processing](/quests/1100/stream-processing/)  
 **📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
 
 ## 📚 Resources

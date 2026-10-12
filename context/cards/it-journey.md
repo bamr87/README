@@ -6,8 +6,8 @@ kind: site
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: heuristic
-source_fingerprint: acb834227d69ed94
+enrichment: ai:anthropic
+source_fingerprint: 5c64da038343f3bd
 tags:
   - agentic-ai
   - automation
@@ -25,7 +25,7 @@ tags:
 
 # IT-Journey
 
-> Educational IT platform with quests, blog posts, and technical documentation. Welcome to IT-Journey, a gamified, open-source platform for learning IT and software development through quests — progressive, hands-on adventures that take you from zer0 to her0. The site is built around a single gamified learning path, supported by reference docs, quick-start guides, and curated notes. The repositor….
+> IT-Journey is an active, Jekyll-based educational platform that teaches IT and software development through gamified quests—progressive, hands-on adventures that take learners from "zer0 to her0." The repository spans roughly 1,246 indexed documents and nearly two million words, organized around a gamified learning path backed by reference docs, quick-start guides, blog posts, and curated notes, with supporting tooling like the Link Health Guardian. Open it if you want a structured, quest-driven curriculum covering web fundamentals, Jekyll, DevOps, CI/CD, and automation.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1167 docs |
+| Corpus | `docs/it-journey` - 1246 docs |
 | External | no |
 
 ## Signals
@@ -43,17 +43,17 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,842,028 words across 1167 indexed documents
+- ~1,916,327 words across 1246 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Navigation
 
-926 published pages in 93 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
+945 published pages in 95 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
 
-- **Repository & tooling** (232 pages)
-- **Data** (8 pages)
-- **Documentation** (37 pages)
-- **Home** (637 pages)
+- **Repository & tooling** (233 pages)
+- **Data** (9 pages)
+- **Documentation** (39 pages)
+- **Home** (652 pages)
 - **Includes** (2 pages)
 
 ## Key documents

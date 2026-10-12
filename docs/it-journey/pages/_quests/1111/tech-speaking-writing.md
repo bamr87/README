@@ -49,7 +49,7 @@ prerequisites:
   system_requirements:
   - A Markdown editor for design docs and RFCs
   - Slides tool and a way to record yourself (optional but recommended)
-preview: images/previews/tech-speaking-and-writing-rfcs-and-talks.png
+preview: /images/previews/tech-speaking-and-writing-rfcs-and-talks.png
 primary_technology: markdown
 quest_arc: The Architect-King's Ascension
 quest_dependencies:
@@ -403,8 +403,8 @@ The most common talk failure is *too much content*. Cut ruthlessly: a talk that 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Open Source Contribution](/quests/1111/open-source-contribution/)
-**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)
+**💻 Software Developer**: Continue to [Open Source Contribution](/quests/1111/open-source-contribution/)  
+**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)  
 **🛡️ Security Specialist**: Advance to [Building Technical Communities](/quests/1111/building-technical-communities/)
 
 ## 📚 Resources

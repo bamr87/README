@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv
   - SQLite (bundled with Python) and a text editor or IDE
-preview: images/previews/etl-pipeline-design-descriptive-subtitle.webp
+preview: /images/previews/etl-pipeline-design-descriptive-subtitle.webp
 primary_technology: python
 quest_arc: Forging the Pipeline Foundations
 quest_dependencies:
@@ -509,8 +509,8 @@ The `>>` operator declares dependencies: `load` cannot start until `transform` s
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Data Warehousing](/quests/1100/data-warehousing/)
-**🏗️ System Engineer**: Explore [Apache Spark](/quests/1100/apache-spark/)
+**💻 Software Developer**: Continue to [Data Warehousing](/quests/1100/data-warehousing/)  
+**🏗️ System Engineer**: Explore [Apache Spark](/quests/1100/apache-spark/)  
 **📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
 
 ## 📚 Resources

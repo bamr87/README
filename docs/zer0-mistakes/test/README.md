@@ -25,8 +25,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🔧 Core Test Suite (`test_core.sh`)
 
-**Purpose:** Fundamental functionality validation
-**Runtime:** ~2-3 minutes
+**Purpose:** Fundamental functionality validation  
+**Runtime:** ~2-3 minutes  
 **Focus Areas:**
 
 - **Unit Tests**: File structure, YAML syntax, gemspec validity, version consistency
@@ -44,10 +44,23 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 ./test/test_core.sh --format json
 ```
 
+#### Meta-specs (`test_core_checks.sh`)
+
+Some of the checks above are grep-and-exit-code assertions, and two of them silently could not fail: the Liquid nested-tag check swallowed its `return 1`
+inside a `find | while` subshell, and the gem-content check ran `tar -tzf` on a
+`.gem` (an *uncompressed* tar) and fell through to a warning on both branches (issue #460). `test_core_checks.sh` sources `test_core.sh` — which only runs its suite when executed directly, not when sourced — and drives `test_liquid_templates` and `check_gem_contents` against known-good and known-bad fixtures, so a check that can no longer fail is itself a test failure.
+
+The layout balance check is line-based (lines containing `{%` vs lines containing `%}`) and blanks Liquid `comment` blocks first, since Liquid never evaluates them — prose in a comment that quotes a delimiter is not a tag.
+
+```bash
+# Run the meta-specs on their own (also runs inside test_core.sh)
+./test/test_core_checks.sh
+```
+
 ### 🚀 Deployment Test Suite (`test_deployment.sh`)
 
-**Purpose:** Installation and deployment validation
-**Runtime:** ~5-8 minutes
+**Purpose:** Installation and deployment validation  
+**Runtime:** ~5-8 minutes  
 **Focus Areas:**
 
 - **Installation Tests**: Local full/minimal installation, remote installation
@@ -70,8 +83,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🏆 Quality Test Suite (`test_quality.sh`)
 
-**Purpose:** Security, accessibility, and performance validation
-**Runtime:** ~4-6 minutes
+**Purpose:** Security, accessibility, and performance validation  
+**Runtime:** ~4-6 minutes  
 **Focus Areas:**
 
 - **Security Tests**: Vulnerability scanning, sensitive files, hardcoded secrets
@@ -89,8 +102,8 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 
 ### 🔧 Site Generation Test Suite (`test_site_generation.sh`)
 
-**Purpose:** Configuration matrix site building and validation
-**Runtime:** ~5-10 minutes
+**Purpose:** Configuration matrix site building and validation  
+**Runtime:** ~5-10 minutes  
 **Focus Areas:**
 
 - **Full Mode**: Complete theme installation with all files
@@ -115,7 +128,7 @@ The zer0-mistakes testing framework provides **6 comprehensive test suites** for
 Spec files live in exactly two sections under `test/visual/`, orthogonal to the execution tiers below:
 
 - **`core/`** — cross-cutting quality/a11y/security/responsive baseline that
-applies regardless of feature (accessibility, security, styling, responsive, layout-chrome, features-registry). Bare, non-negotiable expectations.
+applies regardless of feature (accessibility, landmarks, security, styling, responsive, layout-chrome, features-registry). Bare, non-negotiable expectations.
 - **`features/`** — one file per feature or tightly-scoped feature cluster,
 matching the feature registry (`_data/features.yml`'s `tests:` links) — e.g. `search.spec.js`, `admin.spec.js`, `appearance.spec.js`, `navbar.spec.js`.
 
@@ -587,6 +600,6 @@ The consolidated testing framework is working correctly when:
 
 ---
 
-**Test Framework Version**: 3.0 (Extended with Installation & Visual Tests)
-**Last Updated**: January 2026
+**Test Framework Version**: 3.0 (Extended with Installation & Visual Tests)  
+**Last Updated**: January 2026  
 **Compatibility**: Jekyll 4.0+, Ruby 3.0+, Node.js 18+, Docker (optional), Playwright (for visual tests)

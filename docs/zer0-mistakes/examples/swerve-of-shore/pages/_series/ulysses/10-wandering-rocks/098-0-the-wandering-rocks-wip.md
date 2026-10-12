@@ -1,5 +1,4 @@
 ---
-
 categories:
 - Ulysses - 10 - Wandering Rocks
 date: 2025-02-10
@@ -16,8 +15,6 @@ sub-title: Episode 10 · Wandering Rocks
 title: 098 0 The Wandering Rocks Wip
 wip: true
 ---
-# 098 0 The Wandering Rocks Wip
-
 An in-progress entry in the *Episode 10 · Wandering Rocks* thread on [Swerve of Shore](https://www.swerveofshore.com/post/098-0-the-wandering-rocks-wip), by Brandon Nicklaus.
 
 > John Conmee S.J John Stephen Conmee SJ (- Reverend of Saint Francis Xavier’s Church

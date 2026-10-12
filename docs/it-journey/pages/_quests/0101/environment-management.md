@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/environment-management-dev-staging-quest-title-pro.webp
+preview: /images/previews/environment-management-dev-staging-quest-title-pro.webp
 primary_technology: environments
 quest_arc: Gates of the Pipeline
 quest_dependencies:
@@ -391,8 +391,8 @@ Because the definition is identical, staging genuinely rehearses what production
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secrets Management](/quests/0101/secrets-management/)
-**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)
+**💻 Software Developer**: Continue to [Secrets Management](/quests/0101/secrets-management/)  
+**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)  
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

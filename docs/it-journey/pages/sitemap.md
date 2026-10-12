@@ -1,5 +1,4 @@
 ---
-
 author: bamr87
 categories:
 - search
@@ -20,7 +19,5 @@ tags:
 title: Sitemap
 ---
 # Sitemap
-
-## Sitemap
 
 {% include content/sitemap.html %}

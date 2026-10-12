@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2122
+    "pages": 2173
   },
   "projects": {
     "it-journey": {
@@ -21,11 +21,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 926,
-      "sections": 93,
+      "pages": 945,
+      "sections": 95,
       "max_depth": 7,
       "skipped": 17,
-      "fingerprint": "4c8cfb295252e0e1"
+      "fingerprint": "197f709f5b4f72b6"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 645,
-      "sections": 96,
+      "pages": 662,
+      "sections": 98,
       "max_depth": 6,
-      "skipped": 8,
-      "fingerprint": "6bfbc6dd72c5ae64"
+      "skipped": 9,
+      "fingerprint": "1849674bde49fbc2"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -45,11 +45,11 @@
       "tree": "context/nav/barodybroject.json",
       "browse": "docs/browse/barodybroject.md",
       "registered": true,
-      "pages": 256,
+      "pages": 267,
       "sections": 56,
       "max_depth": 7,
       "skipped": 8,
-      "fingerprint": "346f30cf6e0d6733"
+      "fingerprint": "1ab32dbfdd0f48bc"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -57,11 +57,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 38,
+      "pages": 41,
       "sections": 9,
       "max_depth": 3,
       "skipped": 3,
-      "fingerprint": "fdbc0c73059689fd"
+      "fingerprint": "b8e09498674a0618"
     },
     "skills": {
       "title": "Agent Skills",
@@ -81,11 +81,11 @@
       "tree": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
       "registered": true,
-      "pages": 15,
+      "pages": 16,
       "sections": 2,
       "max_depth": 2,
       "skipped": 0,
-      "fingerprint": "ecb49a40e48b28a2"
+      "fingerprint": "09fcd3b2365b6268"
     },
     "OverTheWire-website": {
       "title": "OverTheWire",

@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - Docker installed for the container registry exercise
-preview: images/previews/artifact-management-build-output-quest-title-depen.webp
+preview: /images/previews/artifact-management-build-output-quest-title-depen.webp
 primary_technology: artifacts
 quest_arc: Gates of the Pipeline
 quest_dependencies:
@@ -415,8 +415,8 @@ Now a consumer can verify provenance before deploying, closing the door on suppl
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Workflow Optimization](/quests/0101/workflow-optimization/)
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)
+**💻 Software Developer**: Continue to [Workflow Optimization](/quests/0101/workflow-optimization/)  
+**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

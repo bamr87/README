@@ -52,7 +52,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A text editor or IDE with Markdown preview
-preview: images/previews/advanced-markdown-tables-footnotes-quest-title-ext.webp
+preview: /images/previews/advanced-markdown-tables-footnotes-quest-title-ext.webp
 primary_technology: markdown
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -432,9 +432,9 @@ The `raw` / `endraw` fence tells Jekyll "print these tags as text, do not execut
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)
-**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)
-**🎨 Frontend Specialist**: Advance to [CSS Styling Basics](/quests/0001/css-styling-basics/)
+**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
+**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)  
+**🎨 Frontend Specialist**: Advance to [CSS Styling Basics](/quests/0001/css-styling-basics/)  
 
 ## 📚 Resources
 

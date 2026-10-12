@@ -1,10 +1,7 @@
 ---
-
 source_file: Card.prompt.md
 title: Card.Prompt
 ---
-# Card.Prompt
-
 Generic content surface — wrap any grouped content (post previews, panels, stats).
 
 ```jsx

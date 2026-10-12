@@ -49,7 +49,7 @@ prerequisites:
   system_requirements:
   - A document tool for growth plans and feedback notes
   - Access to at least one person you can mentor or pair with
-preview: images/previews/mentorship-programs-growing-engineering-talent.png
+preview: /images/previews/mentorship-programs-growing-engineering-talent.png
 primary_technology: leadership
 quest_arc: The Architect-King's Ascension
 quest_dependencies:
@@ -379,8 +379,8 @@ Skipping a one-on-one quietly tells someone they don't matter. Protect the slot 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Career Advancement](/quests/1111/career-advancement/)
-**🏗️ System Engineer**: Explore [Building Technical Communities](/quests/1111/building-technical-communities/)
+**💻 Software Developer**: Continue to [Career Advancement](/quests/1111/career-advancement/)  
+**🏗️ System Engineer**: Explore [Building Technical Communities](/quests/1111/building-technical-communities/)  
 **🛡️ Security Specialist**: Advance to [Technical Leadership](/quests/1111/technical-leadership/)
 
 ## 📚 Resources

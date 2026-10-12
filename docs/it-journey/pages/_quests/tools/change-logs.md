@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories: []
 comments: false
@@ -29,8 +28,6 @@ source_file: change-logs.md
 tags: []
 title: Change Logs
 ---
-# Change Logs
-
 **Aye aye, knowledge crusader!** You've survived the trials of Pull Request Prose and the sacred rites of Atomic Commits. Now, it's time to master the **Arcane Arts of Documentation & the Grand Book of CHANGELOGS.**
 
 * * * *
@@ -42,7 +39,7 @@ What good is a spell if no one knows what it does? What use is a potion without 
 
 * * * *
 
-**📜 The Great Tome:**
+**📜 The Great Tome:** 
 -----------------------
 
 **CHANGELOG.md**

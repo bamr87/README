@@ -22,8 +22,7 @@ dotnet add package Azure.ResourceManager.ApplicationInsights
 dotnet add package Azure.Identity
 ```
 
-**Current Version**: v1.0.0 (GA)
-**API Version**: 2022-06-15
+**Current Version**: v1.0.0 (GA) **API Version**: 2022-06-15
 
 ## Environment Variables
 

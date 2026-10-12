@@ -37,7 +37,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Copilot access (includes MCP support where available)
   - Node.js 18+ for running MCP servers locally (optional)
-preview: images/previews/agentic-mcp-server-mastery.png
+preview: /images/previews/agentic-mcp-server-mastery.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

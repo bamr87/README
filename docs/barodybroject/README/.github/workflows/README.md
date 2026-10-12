@@ -27,8 +27,7 @@ graph LR
 ## Core Workflows
 
 ### 1. **ci.yml** - Main CI Pipeline
-**Trigger**: Push/PR to main/develop branches
-**Purpose**: Core testing and validation
+**Trigger**: Push/PR to main/develop branches **Purpose**: Core testing and validation
 
 **Stages**:
 - **Pre-checks**: Fast configuration validation and migration checks
@@ -45,8 +44,7 @@ graph LR
 - Health endpoint verification
 
 ### 2. **quality.yml** - Code Quality and Security
-**Trigger**: Push/PR (excluding docs)
-**Purpose**: Enforce code standards and security
+**Trigger**: Push/PR (excluding docs) **Purpose**: Enforce code standards and security
 
 **Quality Gates**:
 - **Formatting**: Black, isort, Ruff, Flake8
@@ -61,8 +59,7 @@ graph LR
 - Vulnerability assessments
 
 ### 3. **container.yml** - Container Build and Registry
-**Trigger**: Push to main, tags, releases
-**Purpose**: Build, test, and publish container images
+**Trigger**: Push to main, tags, releases **Purpose**: Build, test, and publish container images
 
 **Features**:
 - **Multi-architecture**: linux/amd64, linux/arm64
@@ -77,8 +74,7 @@ graph LR
 - Production container verification
 
 ### 4. **deploy.yml** - Azure Deployment Automation
-**Trigger**: Successful CI/Container workflows, manual dispatch
-**Purpose**: Streamlined Azure Container Apps deployment
+**Trigger**: Successful CI/Container workflows, manual dispatch **Purpose**: Streamlined Azure Container Apps deployment
 
 **Deployment Stages**:
 - **Pre-deployment**: Environment validation and configuration
@@ -92,8 +88,7 @@ graph LR
 - **Staging/Production**: Manual triggers with approval gates
 
 ### 5. **environment.yml** - Environment and Dependencies
-**Trigger**: Weekly schedule, manual dispatch
-**Purpose**: Maintain environment health and dependencies
+**Trigger**: Weekly schedule, manual dispatch **Purpose**: Maintain environment health and dependencies
 
 **Health Checks**:
 - **Dependency Auditing**: Outdated packages and security vulnerabilities

@@ -340,6 +340,4 @@ bundle exec jekyll serve --trace
 
 ---
 
-**Maintained By**: Zer0-Mistakes Configuration Team
-**Last Updated**: October 26, 2025
-**Next Review**: Quarterly configuration review
+**Maintained By**: Zer0-Mistakes Configuration Team **Last Updated**: October 26, 2025 **Next Review**: Quarterly configuration review

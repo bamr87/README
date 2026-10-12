@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker Desktop or a container runtime installed
   - kubectl and a local cluster tool (kind, minikube, or k3d)
-preview: images/previews/kubernetes-fundamentals-container-orchestration-de.webp
+preview: /images/previews/kubernetes-fundamentals-container-orchestration-de.webp
 primary_technology: kubernetes
 quest_arc: Foundations of the Cluster
 quest_dependencies:
@@ -519,8 +519,8 @@ kubectl get events --sort-by=.lastTimestamp
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Pods and Workloads](/quests/1001/k8s-pods-workloads/)
-**🏗️ System Engineer**: Explore [Services and Networking](/quests/1001/k8s-services-networking/)
+**💻 Software Developer**: Continue to [Pods and Workloads](/quests/1001/k8s-pods-workloads/)  
+**🏗️ System Engineer**: Explore [Services and Networking](/quests/1001/k8s-services-networking/)  
 **🛡️ Security Specialist**: Advance to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
 
 ## 📚 Resources

@@ -46,7 +46,7 @@ prerequisites:
   - A retired desktop or tower PC (2010s-era is fine) with a wired NIC
   - Any laptop on the same LAN to act as your command seat
   - A USB stick for a Linux installer
-preview: images/previews/second-shift-server-resurrection-quest.png
+preview: /images/previews/second-shift-server-resurrection-quest.png
 primary_technology: docker
 quest_arc: The Second Shift
 quest_dependencies:

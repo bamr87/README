@@ -1,12 +1,9 @@
 ---
-
 layout: default
 listinformation: true
 source_file: website.md
 title: Website
 ---
-# Website
-
 Editing this website
 ====================
 

@@ -35,7 +35,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Copilot access
   - GitHub Actions enabled on a repository
-preview: images/previews/agentic-observability-and-control.png
+preview: /images/previews/agentic-observability-and-control.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

@@ -1,5 +1,4 @@
 ---
-
 author: null
 categories:
 - notes
@@ -15,5 +14,3 @@ tags:
 - notes
 title: Notes
 ---
-# Notes
-

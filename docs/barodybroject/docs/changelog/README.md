@@ -209,14 +209,14 @@ breaking: true|false
 
 - [Main Project README](../../README.md)
 - [Contributing Guidelines](../../CONTRIBUTING.md)
-- [Development Documentation](../development/)
-- [API Documentation](../api/)
+- [Documentation Index](../README.md)
+- [Configuration Documentation](../configuration/README.md)
 - [Deployment Documentation](../deployment/)
 
 ---
 
-**Last Updated**: January 27, 2025
-**Version**: 1.0.0
+**Last Updated**: January 27, 2025  
+**Version**: 1.0.0  
 **Maintainer**: Barodybroject Team
 
 For questions about the changelog system, please open an issue or contact the maintainers.

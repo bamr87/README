@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Terraform (or the OpenTofu drop-in) installed
   - A cloud account with credentials configured (AWS Free Tier works well)
-preview: images/previews/infrastructure-as-code-terraform-quest-title-cloud.webp
+preview: /images/previews/infrastructure-as-code-terraform-quest-title-cloud.webp
 primary_technology: terraform
 quest_arc: The Automation Forge
 quest_dependencies:
@@ -470,8 +470,8 @@ terraform output bucket_arn
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
-**🏗️ System Engineer**: Master modules and remote state for team workflows
+**💻 Software Developer**: Continue to [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)  
+**🏗️ System Engineer**: Master modules and remote state for team workflows  
 **🛡️ Security Specialist**: Audit state handling and secret management in your pipelines
 
 ## 📚 Resources

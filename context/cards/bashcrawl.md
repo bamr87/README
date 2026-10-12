@@ -6,8 +6,8 @@ kind: game
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: heuristic
-source_fingerprint: 641caf54c3c7d5be
+enrichment: ai:anthropic
+source_fingerprint: 401ff9b8176b89db
 tags:
   - bash
   - education
@@ -16,7 +16,7 @@ tags:
 
 # ⚔️ Bashcrawl — learn the terminal by playing
 
-> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. v3.1 — one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.
+> Bashcrawl is an educational game (v3.1) that teaches the terminal by playing, offering two doors into the same content: a classic filesystem dungeon you explore from your terminal and a free browser trainer with mini-games and cheatsheets. Its corpus spans 48 documents across entrance scrolls, extensive docs, and supporting tooling in bash, Python, and JavaScript. Open it to learn Bash hands-on through exploration, or to work on the dungeon content and browser trainer that share a common source.
 
 | | |
 |---|---|
@@ -24,34 +24,35 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 45 docs |
+| Corpus | `docs/bashcrawl` - 48 docs |
 | External | no |
 
 ## Signals
 
 - has CLAUDE.md agent guidance
+- has AGENTS.md operating manual
 - keeps a changelog
-- ~58,747 words across 45 indexed documents
+- ~62,454 words across 48 indexed documents
 - code samples in: bash, plaintext, json, yaml, python, text, js, markdown
 
 ## Navigation
 
-38 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+41 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (6 pages)
-- **Documentation** (25 pages)
+- **Documentation** (27 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents
 
 - [`README.md`](../../docs/bashcrawl/README.md)
 - [`CLAUDE.md`](../../docs/bashcrawl/CLAUDE.md)
+- [`AGENTS.md`](../../docs/bashcrawl/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/bashcrawl/CHANGELOG.md)
 - [`docs/demo-walkthrough.md`](../../docs/bashcrawl/docs/demo-walkthrough.md)
 - [`.github/instructions/scrolls.instructions.md`](../../docs/bashcrawl/.github/instructions/scrolls.instructions.md)
 - [`docs/log-viewer-reference.md`](../../docs/bashcrawl/docs/log-viewer-reference.md)
 - [`docs/demo-critical-path.md`](../../docs/bashcrawl/docs/demo-critical-path.md)
-- [`docs/walkthrough.md`](../../docs/bashcrawl/docs/walkthrough.md)
 
 ## Query this context
 

@@ -1,5 +1,4 @@
 ---
-
 description: Longer work growing out of the numbered entries.
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: publications.md
 title: Publications
 ---
-# Publications
-
 {% include page-header.html %}
 
 The original site keeps a Publications section for work that outgrows a single numbered entry.

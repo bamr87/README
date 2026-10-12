@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - curl installed
   - Optional jq for inspecting responses
-preview: images/previews/api-versioning-uri-headers-compatibility.png
+preview: /images/previews/api-versioning-uri-headers-compatibility.png
 primary_technology: rest
 quest_arc: Stewards of the Interface
 quest_dependencies:
@@ -394,8 +394,8 @@ Throughout, **backward compatibility** within a version is sacred: once `v1` is 
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Documentation](/quests/0111/api-documentation/)
-**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)
+**💻 Software Developer**: Continue to [API Documentation](/quests/0111/api-documentation/)  
+**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)  
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

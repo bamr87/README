@@ -37,7 +37,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Actions enabled
   - Copilot coding agent access
-preview: images/previews/agentic-multi-agent-orchestration-patterns.png
+preview: /images/previews/agentic-multi-agent-orchestration-patterns.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:
@@ -138,7 +138,7 @@ jobs:
             --issue "${{ github.event.issue.number }}" \
             --max-subtasks 4 \
             --output partition.json
-
+          
           SUBTASKS=$(cat partition.json | jq -c '.subtasks')
           echo "subtasks=$SUBTASKS" >> "$GITHUB_OUTPUT"
 
@@ -157,7 +157,7 @@ jobs:
         run: |
           echo "=== Sub-Agent executing: ${{ matrix.subtask.id }} ==="
           echo "Task: ${{ matrix.subtask.description }}"
-
+          
           python3 work/gh-600/scripts/run_subtask.py \
             --subtask-id "${{ matrix.subtask.id }}" \
             --description "${{ matrix.subtask.description }}" \

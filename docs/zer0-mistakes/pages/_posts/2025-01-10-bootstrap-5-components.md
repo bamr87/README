@@ -1,5 +1,4 @@
 ---
-
 author: Zer0-Mistakes Team
 categories:
 - Technology
@@ -20,8 +19,6 @@ tags:
 - responsive
 title: 2025 01 10 Bootstrap 5 Components
 ---
-# 2025 01 10 Bootstrap 5 Components
-
 Bootstrap 5 is the perfect companion for Jekyll themes. In this article, we'll explore the most useful Bootstrap components for creating modern, responsive Jekyll sites.
 
 ## The Bootstrap 5 Advantage

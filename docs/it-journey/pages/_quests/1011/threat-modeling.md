@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A diagramming tool or pen and paper (Mermaid examples included)
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/threat-modeling-stride-framework-and-attack-trees.png
+preview: /images/previews/threat-modeling-stride-framework-and-attack-trees.png
 primary_technology: security
 quest_arc: The Cartographer of Threats
 quest_dependencies:
@@ -387,8 +387,8 @@ DoS via query flood            Low          Medium   P3
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
-**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
+**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)  
 **🛡️ Security Specialist**: Advance to [Compliance Standards](/quests/1011/compliance-standards/)
 
 ## 📚 Resources

@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories: []
 comments: false
@@ -20,7 +19,7 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/planting-seeds/
-preview: images/previews/planting-seeds.webp
+preview: /images/previews/planting-seeds.webp
 primary_technology: General
 quest_series: Tools Collection
 quest_type: main_quest
@@ -29,8 +28,6 @@ source_file: planting-seeds.md
 tags: []
 title: Planting Seeds
 ---
-# Planting Seeds
-
 ## 🕸️ Knowledge Graph
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*

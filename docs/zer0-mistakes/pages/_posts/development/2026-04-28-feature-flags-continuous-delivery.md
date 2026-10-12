@@ -1,5 +1,4 @@
 ---
-
 author: default
 categories:
 - Development
@@ -20,8 +19,6 @@ tags:
 - devops
 title: 2026 04 28 Feature Flags Continuous Delivery
 ---
-# 2026 04 28 Feature Flags Continuous Delivery
-
 Feature flags let teams separate deployment from release. Code can reach production before every user sees it, which makes releases smaller, rollouts calmer, and recovery faster when something goes wrong.
 
 The pattern is simple: wrap new behavior behind a runtime decision, deploy the code safely, and turn it on for the right audience when the team is ready.

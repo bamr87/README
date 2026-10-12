@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
-preview: images/previews/github-pages-basics-free-hosting-quest-descriptio.png
+preview: /images/previews/github-pages-basics-free-hosting-quest-descriptio.png
 primary_technology: github-pages
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -470,8 +470,8 @@ Before you summon your site to a live URL, walk this final checklist:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Git Workflow Mastery](/quests/0001/git-workflow-mastery/)
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)
+**💻 Software Developer**: Continue to [Git Workflow Mastery](/quests/0001/git-workflow-mastery/)  
+**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
 **🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
 
 ## 📚 Resources

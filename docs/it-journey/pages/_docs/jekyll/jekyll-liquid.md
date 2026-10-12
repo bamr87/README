@@ -27,8 +27,7 @@ Jekyll uses the `Liquid` templating language to process templates.
 Generally in Liquid you output content using two curly braces e.g. `{%- raw -%}{{ variable }}{% endraw %}` and perform logic statements by surrounding them in a curly brace percentage sign e.g. `{%- raw -%}{% if statement %}{% endraw %}`. To learn more about Liquid, check out the [official Liquid Documentation](https://shopify.github.io/liquid/).
 
 ## 1. Comment
-Allows you to leave un-rendered code inside a Liquid template. Any text within the opening and closing comment blocks will not be output, and any Liquid code within will not be executed.
-Input:
+Allows you to leave un-rendered code inside a Liquid template. Any text within the opening and closing comment blocks will not be output, and any Liquid code within will not be executed. Input:
 ```
 {%- raw -%}
 Anything you put between {% comment %} and {% endcomment %} tags
@@ -42,8 +41,7 @@ is turned into a comment.
 ```
 
 ## 2. Raw
-Raw temporarily disables tag processing. This is useful for generating content (eg, Mustache, Handlebars) which uses conflicting syntax.
-Input:
+Raw temporarily disables tag processing. This is useful for generating content (eg, Mustache, Handlebars) which uses conflicting syntax. Input:
 <div class="highlighter-rouge"><pre class="highlight"><code>&#123;&#37; raw &#37;&#125;
 In Handlebars, {% raw %} {{ this }} {% endraw %}will be HTML-escaped, but {% raw %}{{{ that }}}{% endraw %} will not. &#123;&#37; endraw &#37;&#125;
 </code></pre>
@@ -104,9 +102,7 @@ tomato
 {% endraw %}
 ```
 
-`limit`
-Limits the loop to the specified number of iterations.
-Input:
+`limit` Limits the loop to the specified number of iterations. Input:
 ```html
 {%- raw -%}
 <!-- if array = [1,2,3,4,5,6] -->

@@ -1,10 +1,7 @@
 ---
-
 source_file: information.md
 title: Information
 ---
-# Information
-
 <div id="sidemenu">
     <ul>
 {% include menu_item.html link="/information/donate.html" name="Donate!" %}

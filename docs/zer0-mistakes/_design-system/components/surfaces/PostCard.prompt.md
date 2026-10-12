@@ -1,10 +1,7 @@
 ---
-
 source_file: PostCard.prompt.md
 title: Postcard.Prompt
 ---
-# Postcard.Prompt
-
 Blog preview card for zer0-mistakes — use wherever posts, docs, or articles are listed (news grids, section indexes, archives, "related posts").
 
 ```jsx

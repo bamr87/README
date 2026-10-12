@@ -1,5 +1,4 @@
 ---
-
 excerpt: Configuration analytique PostHog, conformité en matière de confidentialité
   et état du suivi.
 icon: material/chart-line
@@ -16,6 +15,4 @@ translated_from_sha: f1b35afd03f8
 translation_of: pages/_about/settings/analytics.md
 translation_source_url: /about/settings/analytics/
 ---
-# Analytics
-
 {% include components/analytics-dashboard.html %}

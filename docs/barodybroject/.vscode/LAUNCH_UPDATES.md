@@ -48,7 +48,7 @@ Comprehensive update to `.vscode/launch.json` to provide better debugging capabi
 ```json
 {
   "env": {
-    "DJANGO_SETTINGS_MODULE": "barodybroject.settings",
+    "DJANGO_SETTINGS_MODULE": "barodybroject.settings.development",
     "DEBUG": "True",
     "RUNNING_IN_PRODUCTION": "False",
     "DB_CHOICE": "sqlite"  // ❌ SQLite not supported
@@ -60,7 +60,7 @@ Comprehensive update to `.vscode/launch.json` to provide better debugging capabi
 ```json
 {
   "env": {
-    "DJANGO_SETTINGS_MODULE": "barodybroject.settings",
+    "DJANGO_SETTINGS_MODULE": "barodybroject.settings.development",
     "DEBUG": "True",
     "RUNNING_IN_PRODUCTION": "False",
     "DB_HOST": "localhost",
@@ -160,7 +160,7 @@ All local configurations now use consistent environment variables:
 
 ```json
 {
-  "DJANGO_SETTINGS_MODULE": "barodybroject.settings",
+  "DJANGO_SETTINGS_MODULE": "barodybroject.settings.development",
   "DEBUG": "True",
   "RUNNING_IN_PRODUCTION": "False",
   "DB_HOST": "localhost",
@@ -199,14 +199,13 @@ Added comprehensive documentation:
 - `🐍 Python/Django in Docker (Development)`
 - `🧪 Python Tests in Docker (Development)`
 
-**Reason:**
+**Reason:** 
 - These configurations attempted to attach to debugpy on port 5678
 - The docker-compose configuration doesn't start debugpy server
 - Local development provides better debugging experience
 - If needed in future, docker-compose needs updating first
 
-**Migration Path:**
-Use local development configurations instead:
+**Migration Path:** Use local development configurations instead:
 - `🐍 Django: Run Server (Local)` → Better than Docker attach
 - `🧪 Django: Run All Tests (Local)` → Better than Docker tests
 
@@ -362,18 +361,13 @@ F5 → 🧪 Django: Run All Tests (Local)
 
 ### If you were using:
 
-**"🐳 Debug Django App (Development)"**
-→ Use: `🌐 Open Django App (Dev - Port 8000)` (same functionality, clearer name)
+**"🐳 Debug Django App (Development)"** → Use: `🌐 Open Django App (Dev - Port 8000)` (same functionality, clearer name)
 
-**"🐍 Python/Django in Docker (Development)"**
-→ Use: `🐍 Django: Run Server (Local)` (better debugging, same functionality)
+**"🐍 Python/Django in Docker (Development)"** → Use: `🐍 Django: Run Server (Local)` (better debugging, same functionality)
 
-**"🧪 Python Tests in Docker (Development)"**
-→ Use: `🧪 Django: Run All Tests (Local)` (faster, better debugging)
+**"🧪 Python Tests in Docker (Development)"** → Use: `🧪 Django: Run All Tests (Local)` (faster, better debugging)
 
-**Local SQLite setup**
-→ Start PostgreSQL: `docker-compose up barodydb -d`
-→ Then use any local configuration
+**Local SQLite setup** → Start PostgreSQL: `docker-compose up barodydb -d` → Then use any local configuration
 
 ## Future Enhancements
 
@@ -423,8 +417,6 @@ If you have questions about:
 
 ---
 
-**Updated:** 2025-12-20
-**Author:** AI Assistant via Cursor
-**Review Status:** ✅ Complete
+**Updated:** 2025-12-20 **Author:** AI Assistant via Cursor **Review Status:** ✅ Complete
 
 

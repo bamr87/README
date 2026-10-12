@@ -24,8 +24,7 @@ Data plane SDK for Azure Cosmos DB NoSQL API operations — CRUD on documents, q
 npm install @azure/cosmos @azure/identity
 ```
 
-**Current Version**: 4.9.0
-**Node.js**: >= 20.0.0
+**Current Version**: 4.9.0 **Node.js**: >= 20.0.0
 
 ## Environment Variables
 

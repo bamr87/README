@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 308,
-    "fingerprint": "54c951cb292cb578",
+    "file_count": 319,
+    "fingerprint": "e1cd012d36114277",
     "path": "docs/barodybroject",
     "present": true,
-    "total_bytes": 2049725
+    "total_bytes": 2126736
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -13,11 +13,12 @@
       "Current Stack",
       "Repository Layout",
       "Development Quick Start",
+      "Using the Application",
       "Testing",
       "Cleanup Status"
     ],
     "readme": "README.md",
-    "summary": "Barodybroject is a Django 5.1 application for generating and managing parody news content with OpenAI. It runs against PostgreSQL, exposes Django REST Framework endpoints, includes a Jekyll static-site sidecar for published content, and deploys to Azure Container Apps with Bicep infrastructure.",
+    "summary": "Barodybroject is a Django 5.2 application for generating and managing parody news content with AI. It runs against PostgreSQL, serves a React frontend over a Django REST Framework API, includes a Jekyll static-site sidecar for published content, and deploys to Azure Container Apps with Bicep infrastructure.",
     "title": "Barodybroject"
   },
   "key_docs": [
@@ -32,10 +33,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/barodybroject.md",
-    "fingerprint": "346f30cf6e0d6733",
+    "fingerprint": "1ab32dbfdd0f48bc",
     "index": "barodybroject/README.md",
     "max_depth": 7,
-    "pages": 256,
+    "pages": 267,
     "present": true,
     "sections": 56,
     "skipped": 8,
@@ -50,14 +51,14 @@
       },
       {
         "index": "barodybroject/docs/README.md",
-        "pages": 51,
+        "pages": 57,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
       },
       {
         "index": "barodybroject/src/index.md",
-        "pages": 121,
+        "pages": 126,
         "path": "src",
         "title": "Source",
         "type": "section"
@@ -90,7 +91,7 @@
   },
   "rollups": {
     "categories": {
-      "barodybroject": 308
+      "barodybroject": 320
     },
     "code_languages": [
       "bash",
@@ -102,7 +103,7 @@
       "html",
       "javascript"
     ],
-    "indexed_documents": 308,
+    "indexed_documents": 320,
     "top_tags": [
       "index",
       "agricultural technology",
@@ -120,7 +121,7 @@
       "racial marginalization",
       "socio-economic marginalization"
     ],
-    "total_words": 229993
+    "total_words": 241345
   },
   "schema_version": "1.0",
   "signals": {
@@ -145,7 +146,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 123,
+        "doc_count": 128,
         "name": "src"
       },
       {
@@ -153,7 +154,7 @@
         "name": "README"
       },
       {
-        "doc_count": 51,
+        "doc_count": 57,
         "name": "docs"
       },
       {

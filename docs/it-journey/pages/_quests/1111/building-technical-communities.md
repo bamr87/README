@@ -49,7 +49,7 @@ prerequisites:
   system_requirements:
   - Access to a community platform (Discord, Slack, forum, or meetup tooling)
   - A document tool for a code of conduct and governance docs
-preview: images/previews/building-technical-communities-events-governance.png
+preview: /images/previews/building-technical-communities-events-governance.png
 primary_technology: leadership
 quest_arc: The Architect-King's Ascension
 quest_dependencies:
@@ -401,8 +401,8 @@ Belonging is the goal beyond diversity: people stay where they feel their contri
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Innovation and R&D](/quests/1111/innovation-rnd/)
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)
+**💻 Software Developer**: Continue to [Innovation and R&D](/quests/1111/innovation-rnd/)  
+**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
 **🛡️ Security Specialist**: Advance to [Career Advancement](/quests/1111/career-advancement/)
 
 ## 📚 Resources

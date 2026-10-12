@@ -1,5 +1,4 @@
 ---
-
 author: bamr87
 categories:
 - Learning
@@ -26,8 +25,6 @@ tags:
 title: Curriculum
 updated: 2026-06-13 00:00:00+00:00
 ---
-# Curriculum
-
 You don't know what you can't teach.
 
 That's the governing constraint. If you cannot explain a concept clearly enough for someone else to act on it, you don't actually understand it — you've just memorized enough to get through the task.

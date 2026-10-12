@@ -1,5 +1,4 @@
 ---
-
 about: Request a new feature (generic)
 labels:
 - feature-request
@@ -8,8 +7,6 @@ name: Feature Request
 source_file: feature_request.md
 title: Feature Request
 ---
-# Feature Request
-
 <!-- template: feature_request_functional_requirements.md -->
 
 ## Describe your feature request clearly.

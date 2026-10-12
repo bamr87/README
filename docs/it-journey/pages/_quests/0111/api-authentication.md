@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - curl installed
   - Optional Python 3 with the PyJWT library for the token lab
-preview: images/previews/api-authentication-keys-tokens-oauth2-jwt.png
+preview: /images/previews/api-authentication-keys-tokens-oauth2-jwt.png
 primary_technology: oauth2
 quest_arc: Guardians of the Interface
 quest_dependencies:
@@ -407,8 +407,8 @@ curl -s -X POST https://auth.example.com/token \
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Error Handling](/quests/0111/error-handling/)
-**🏗️ System Engineer**: Explore [Rate Limiting](/quests/0111/rate-limiting/)
+**💻 Software Developer**: Continue to [Error Handling](/quests/0111/error-handling/)  
+**🏗️ System Engineer**: Explore [Rate Limiting](/quests/0111/rate-limiting/)  
 **🛡️ Security Specialist**: Advance to [Error Handling](/quests/0111/error-handling/)
 
 ## 📚 Resources

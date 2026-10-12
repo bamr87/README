@@ -52,7 +52,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip or conda
   - 8 GB RAM recommended; GPU optional
-preview: images/previews/neural-networks-deep-dive-descriptive-subtitle.webp
+preview: /images/previews/neural-networks-deep-dive-descriptive-subtitle.webp
 primary_technology: pytorch
 quest_arc: The Living Network
 quest_dependencies:
@@ -428,8 +428,8 @@ print("Predictions:", model(X).detach().round().ravel().tolist())
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)
+**💻 Software Developer**: Continue to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)  
+**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
 **📊 Data Scientist**: Advance to [Computer Vision](/quests/1101/computer-vision/)
 
 ## 📚 Resources

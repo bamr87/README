@@ -1,10 +1,7 @@
 ---
-
 source_file: index.md
 title: Index
 ---
-# Index
-
 ---
 layout: default listgames: true
 title: [RELEASED] Kishi (HES2013 and NSC2013)

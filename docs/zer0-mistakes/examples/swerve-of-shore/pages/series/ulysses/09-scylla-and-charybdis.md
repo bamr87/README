@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 9 of Ulysses — Scylla & Charybdis (2pm, the National
   Library).
 hide_intro: true
@@ -12,8 +11,6 @@ sidebar:
 source_file: 09-scylla-and-charybdis.md
 title: 09 Scylla And Charybdis
 ---
-# 09 Scylla And Charybdis
-
 {% include page-header.html %}
 
 Episode 9 of *Ulysses*. 2pm, the National Library.

@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 725,
-    "fingerprint": "9ba5e87d1afac497",
+    "file_count": 743,
+    "fingerprint": "93b486e94e95d7b2",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4853461
+    "total_bytes": 5008124
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "6bfbc6dd72c5ae64",
+    "fingerprint": "1849674bde49fbc2",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 645,
+    "pages": 662,
     "present": true,
-    "sections": 96,
-    "skipped": 8,
+    "sections": 98,
+    "skipped": 9,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 63,
+        "pages": 76,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -68,7 +68,7 @@
       },
       {
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 110,
+        "pages": 111,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -82,7 +82,7 @@
       },
       {
         "index": null,
-        "pages": 168,
+        "pages": 170,
         "path": "fr",
         "title": "Fran\u00e7ais",
         "type": "section"
@@ -96,7 +96,7 @@
       },
       {
         "index": null,
-        "pages": 214,
+        "pages": 215,
         "path": "pages",
         "title": "Pages",
         "type": "section"
@@ -128,7 +128,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 727
+      "zer0-mistakes": 743
     },
     "code_languages": [
       "bash",
@@ -140,7 +140,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 727,
+    "indexed_documents": 743,
     "top_tags": [
       "jekyll",
       "docker",
@@ -149,16 +149,16 @@
       "ui",
       "documentation",
       "ai",
+      "setup",
       "development",
       "github-pages",
-      "setup",
       "bootstrap",
       "deployment",
       "theme",
       "accessibility",
       "installation"
     ],
-    "total_words": 592065
+    "total_words": 613615
   },
   "schema_version": "1.0",
   "signals": {
@@ -181,19 +181,19 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 216,
+        "doc_count": 217,
         "name": "pages"
       },
       {
-        "doc_count": 168,
+        "doc_count": 170,
         "name": "fr"
       },
       {
-        "doc_count": 110,
+        "doc_count": 111,
         "name": "docs"
       },
       {
-        "doc_count": 55,
+        "doc_count": 66,
         "name": "test"
       },
       {
@@ -217,8 +217,8 @@
         "name": "templates"
       },
       {
-        "doc_count": 8,
-        "name": ".cursor"
+        "doc_count": 9,
+        "name": "scripts"
       }
     ]
   }

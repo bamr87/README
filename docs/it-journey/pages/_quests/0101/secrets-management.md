@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - A text editor or IDE (VS Code recommended)
-preview: images/previews/secrets-management-secure-configuration-handling-d.webp
+preview: /images/previews/secrets-management-secure-configuration-handling-d.webp
 primary_technology: security
 quest_arc: Gates of the Pipeline
 quest_dependencies:
@@ -423,8 +423,8 @@ The overlap window in step 1 means rotation causes zero downtime: nothing breaks
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Artifact Management](/quests/0101/artifact-management/)
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)
+**💻 Software Developer**: Continue to [Artifact Management](/quests/0101/artifact-management/)  
+**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
 **🛡️ Security Specialist**: Advance to [Artifact Management](/quests/0101/artifact-management/)
 
 ## 📚 Resources

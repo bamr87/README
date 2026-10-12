@@ -1,5 +1,4 @@
 ---
-
 excerpt: Preview theme skins, generate palettes, customize CSS variables, and export
   YAML configuration.
 icon: material/palette
@@ -11,8 +10,6 @@ source_file: theme.md
 source_icon: bi-palette
 title: Theme
 ---
-# Theme
-
 <!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->
 <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
 

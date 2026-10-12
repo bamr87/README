@@ -1,5 +1,4 @@
 ---
-
 character: system-engineer
 date: '2026-07-20T00:00:00.000Z'
 level: '0101'
@@ -17,8 +16,6 @@ theme: CI/CD & DevOps
 tier: Adventurer
 title: 2026 07 20 System Engineer 0101
 ---
-# 2026 07 20 System Engineer 0101
-
 ## 🎯 Session Summary
 
 Walked a **windowed** slice of the System Engineer path at Level **0101 — CI/CD & DevOps** (Adventurer tier): the last 3 of the level's 13 quests (window 2 of 3, offset 10). The slice is **two CI/CD main quests** — *Artifact Management* and *Workflow Optimization* — plus one thematically-adjacent Hard **side quest**, *Jekyll Quest Tracking*.

@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - curl installed (ships with macOS and most Linux distributions)
   - Optional Python 3 or Node.js for the scripted examples
-preview: images/previews/api-fundamentals-http-requests-json.png
+preview: /images/previews/api-fundamentals-http-requests-json.png
 primary_technology: http
 quest_arc: Foundations of the Interface
 quest_dependencies:
@@ -436,8 +436,8 @@ curl -s https://jsonplaceholder.typicode.com/posts/1 | jq '.title'
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [REST Principles](/quests/0111/rest-principles/)
-**🏗️ System Engineer**: Explore [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [REST Principles](/quests/0111/rest-principles/)  
+**🏗️ System Engineer**: Explore [API Authentication](/quests/0111/api-authentication/)  
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

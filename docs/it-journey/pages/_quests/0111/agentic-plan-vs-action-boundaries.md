@@ -36,7 +36,7 @@ prerequisites:
   - GitHub account with Copilot access
   - VS Code with GitHub Copilot extension
   - Git installed locally or GitHub Codespaces
-preview: images/previews/agentic-plan-vs-action-boundaries.png
+preview: /images/previews/agentic-plan-vs-action-boundaries.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

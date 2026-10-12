@@ -1,5 +1,4 @@
 ---
-
 description: Interactive Jupyter notebooks with tutorials and data analysis examples
 lastmod: 2026-04-18 19:30:20+00:00
 layout: default
@@ -7,8 +6,6 @@ permalink: /notebooks/
 source_file: notebooks.md
 title: Notebooks
 ---
-# Notebooks
-
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">
@@ -18,7 +15,7 @@ title: Notebooks
   </div>
 
   {% if site.notebooks and site.notebooks.size > 0 %}
-
+  
   <!-- Difficulty Filter -->
   <div class="row mb-4">
     <div class="col">
@@ -60,11 +57,11 @@ title: Notebooks
               {{ nb.title | default: nb.name }}
             </a>
           </h5>
-
+          
           {% if nb.description %}
           <p class="card-text text-muted">{{ nb.description | truncate: 150 }}</p>
           {% endif %}
-
+          
           {% if nb.tags and nb.tags.size > 0 %}
           <div class="mb-3">
             {% for tag in nb.tags limit: 5 %}
@@ -80,7 +77,7 @@ title: Notebooks
             </small>
             <div>
               {% assign ipynb_path = nb.path | replace: '.md', '.ipynb' %}
-              <a href="{{ '/pages/_notebooks/' | append: nb.name | append: '.ipynb' | relative_url }}"
+              <a href="{{ '/pages/_notebooks/' | append: nb.name | append: '.ipynb' | relative_url }}" 
                  class="btn btn-sm btn-outline-secondary position-relative"
                  onclick="event.stopPropagation();">
                 <i class="bi bi-download me-1"></i>.ipynb
@@ -93,7 +90,7 @@ title: Notebooks
     {% endunless %}
     {% endfor %}
   </div>
-
+  
   {% else %}
   <div class="row">
     <div class="col">
@@ -108,15 +105,15 @@ title: Notebooks
 
 <script>
 document.addEventListener('DOMContentLoaded', function() { const filterButtons = document.querySelectorAll('[data-filter]'); const notebookCards = document.querySelectorAll('.notebook-card');
-
+  
   filterButtons.forEach(button => {
     button.addEventListener('click', function() {
       const filter = this.getAttribute('data-filter');
-
+      
       // Update active button
       filterButtons.forEach(btn => btn.classList.remove('active'));
       this.classList.add('active');
-
+      
       // Filter cards
       notebookCards.forEach(card => {
         const difficulty = card.getAttribute('data-difficulty') || 'intermediate';

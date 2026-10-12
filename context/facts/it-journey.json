@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1167,
-    "fingerprint": "acb834227d69ed94",
+    "file_count": 1246,
+    "fingerprint": "5c64da038343f3bd",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 14458823
+    "total_bytes": 15004557
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,39 +36,39 @@
   ],
   "navigation": {
     "browse": "docs/browse/it-journey.md",
-    "fingerprint": "4c8cfb295252e0e1",
+    "fingerprint": "197f709f5b4f72b6",
     "index": "it-journey/index.md",
     "max_depth": 7,
-    "pages": 926,
+    "pages": 945,
     "present": true,
-    "sections": 93,
+    "sections": 95,
     "skipped": 17,
     "title": "IT Journey",
     "top_sections": [
       {
         "index": "it-journey/redirects/README.md",
-        "pages": 232,
+        "pages": 233,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
       },
       {
         "index": "it-journey/_data/README.md",
-        "pages": 8,
+        "pages": 9,
         "path": "_data",
         "title": "Data",
         "type": "section"
       },
       {
         "index": "it-journey/docs/README.md",
-        "pages": 37,
+        "pages": 39,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
       },
       {
         "index": "it-journey/pages/home.md",
-        "pages": 637,
+        "pages": 652,
         "path": "pages",
         "title": "Home",
         "type": "section"
@@ -100,7 +100,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1167
+      "it-journey": 1246
     },
     "code_languages": [
       "bash",
@@ -112,12 +112,12 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1167,
+    "indexed_documents": 1246,
     "top_tags": [
       "main_quest",
+      "gamified-learning",
       "walkthrough",
       "quest-perfection",
-      "gamified-learning",
       "hands-on",
       "warn",
       "jekyll",
@@ -127,10 +127,10 @@
       "automation",
       "devops",
       "gh-600",
-      "agentic-ai",
-      "ci-cd"
+      "ci-cd",
+      "agentic-ai"
     ],
-    "total_words": 1842028
+    "total_words": 1916327
   },
   "schema_version": "1.0",
   "signals": {
@@ -157,19 +157,19 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 638,
+        "doc_count": 653,
         "name": "pages"
+      },
+      {
+        "doc_count": 193,
+        "name": ".cms"
       },
       {
         "doc_count": 152,
         "name": "test"
       },
       {
-        "doc_count": 137,
-        "name": ".cms"
-      },
-      {
-        "doc_count": 43,
+        "doc_count": 45,
         "name": ".github"
       },
       {
@@ -177,11 +177,11 @@
         "name": "redirects"
       },
       {
-        "doc_count": 37,
+        "doc_count": 39,
         "name": "docs"
       },
       {
-        "doc_count": 35,
+        "doc_count": 36,
         "name": ".claude"
       },
       {
@@ -189,11 +189,11 @@
         "name": "TODO"
       },
       {
-        "doc_count": 12,
+        "doc_count": 13,
         "name": "scripts"
       },
       {
-        "doc_count": 8,
+        "doc_count": 9,
         "name": "_data"
       }
     ]

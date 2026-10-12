@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A text editor and a working Jekyll site
-preview: images/previews/yaml-configuration-site-settings-quest-descripti.png
+preview: /images/previews/yaml-configuration-site-settings-quest-descripti.png
 primary_technology: yaml
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -531,8 +531,8 @@ strict_front_matter: true
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Liquid Templating](/quests/0001/liquid-templating/)
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)
+**💻 Software Developer**: Continue to [Liquid Templating](/quests/0001/liquid-templating/)  
+**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
 **🎨 Frontend Specialist**: Model richer data files for your theme
 
 ## 📚 Resources

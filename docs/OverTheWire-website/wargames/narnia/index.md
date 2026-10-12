@@ -1,12 +1,9 @@
 ---
-
 gamename: narnia
 layout: default
 source_file: index.md
 title: Index
 ---
-# Index
-
 Narnia
 ======
 

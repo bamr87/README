@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 712,
-    "fingerprint": "a7046c49c6e5b26e",
+    "fingerprint": "a595ab0372a11167",
     "path": "docs/skills",
     "present": true,
-    "total_bytes": 5003918
+    "total_bytes": 4994377
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -100,7 +100,7 @@
       "productivity",
       "featured"
     ],
-    "total_words": 509370
+    "total_words": 509396
   },
   "schema_version": "1.0",
   "signals": {

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Barody Project - content map
 
-Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **256 pages** across **56 sections** (max depth 7).
+Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears in the sidebar: **267 pages** across **56 sections** (max depth 7).
 
 - **[Repository & tooling](../barodybroject/infra/README.md)** <small>(9)</small>
   - **[Infrastructure](../barodybroject/infra/README.md)** <small>(5)</small>
@@ -33,7 +33,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
 - [Product Requirements Document (PRD)](../barodybroject/PRD.md)
 - [TODO: Project Issues and Enhancements](../barodybroject/TODO.md)
 - [🔐 Admin Credentials Quick Start](../barodybroject/ADMIN_CREDENTIALS_QUICKSTART.md)
-- **[Documentation](../barodybroject/docs/README.md)** <small>(51)</small>
+- **[Documentation](../barodybroject/docs/README.md)** <small>(57)</small>
   - [Documentation](../barodybroject/docs/README.md)
   - [Admin Credentials Auto-Setup - Implementation Summary](../barodybroject/docs/ADMIN_CREDENTIALS_SETUP.md)
   - [Barodybroject Quick Reference Card](../barodybroject/docs/QUICK_REFERENCE.md)
@@ -52,7 +52,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - [Barodybroject Features Documentation](../barodybroject/docs/features/README.md)
     - [Ecosystem Integration Features](../barodybroject/docs/features/ecosystem-integration.md)
     - [Instruction File Harmonization Features](../barodybroject/docs/features/instruction-harmonization.md)
-  - **[Changelog Documentation System](../barodybroject/docs/changelog/README.md)** <small>(21)</small>
+  - **[Changelog Documentation System](../barodybroject/docs/changelog/README.md)** <small>(26)</small>
     - [Changelog Documentation System](../barodybroject/docs/changelog/README.md)
     - [Changelog](../barodybroject/docs/changelog/CHANGELOG.md)
     - [Contributing Changes Documentation](../barodybroject/docs/changelog/CONTRIBUTING_CHANGES.md)
@@ -68,11 +68,16 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
         - [Migration Guide: v0.1.0 → v1.0.0](../barodybroject/docs/changelog/releases/v1.0.0/migration-guide.md)
         - [Release v1.0.0 - Django Settings Optimization](../barodybroject/docs/changelog/releases/v1.0.0/release-summary.md)
         - [Technical Implementation Details - v1.0.0](../barodybroject/docs/changelog/releases/v1.0.0/technical-details.md)
-    - **Summaries** <small>(4)</small>
+    - **Summaries** <small>(9)</small>
+      - [Breaking Change: the AI layer is provider-agnostic and the UI is React](../barodybroject/docs/changelog/summaries/2026-09-15-provider-agnostic-ai-and-react-frontend.md)
+      - [Bug Fix: every error during publication is now communicated to the user](../barodybroject/docs/changelog/summaries/2026-09-13-publication-error-reporting.md)
       - [Bug Fix: filtering a model table to zero matches emptied it with no…](../barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md)
+      - [Bug Fix: the dependency gate audited the scanners instead of the…](../barodybroject/docs/changelog/summaries/2026-09-11-dependency-scan-scope.md)
       - [Bug Fix: Thread message delete raised TypeError, and deleted locally…](../barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md)
       - [Docker Configuration Consolidation Change Documentation](../barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md)
+      - [Feature: unhandled exceptions can be filed as deduplicated GitHub issues](../barodybroject/docs/changelog/summaries/2026-08-30-github-issue-error-reporting.md)
       - [Improvement: model unit tests, from 3 of 17 models covered to all of…](../barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md)
+      - [Test: the assistant select cannot regress to seeding a random assistant](../barodybroject/docs/changelog/summaries/2026-09-13-content-item-form-assistant-seeding.md)
     - **Templates** <small>(5)</small>
       - [Breaking Change: [Breaking Change Title]](../barodybroject/docs/changelog/templates/breaking-template.md)
       - [Bug Fix: [Bug Title]](../barodybroject/docs/changelog/templates/bugfix-template.md)
@@ -85,8 +90,9 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - [✅ Successful Azure Container Apps Deployment](../barodybroject/docs/deployment/DEPLOYMENT-SUCCESS.md)
     - [🚀 Quick Deployment Guide - Minimal Cost Setup](../barodybroject/docs/deployment/DEPLOYMENT-GUIDE-MINIMAL.md)
     - [🚨 Azure Subscription Quota Issue - Solutions](../barodybroject/docs/deployment/QUOTA_ISSUE_SOLUTIONS.md)
-  - **[Django Configuration Documentation](../barodybroject/docs/configuration/README.md)** <small>(5)</small>
+  - **[Django Configuration Documentation](../barodybroject/docs/configuration/README.md)** <small>(6)</small>
     - [Django Configuration Documentation](../barodybroject/docs/configuration/README.md)
+    - [Automatic GitHub issue reporting](../barodybroject/docs/configuration/error-reporting.md)
     - [Django Admin Credentials Configuration](../barodybroject/docs/configuration/admin-credentials.md)
     - [Django Settings Optimization Guide](../barodybroject/docs/configuration/settings-optimization.md)
     - [Ecosystem Integration Configuration](../barodybroject/docs/configuration/ecosystem-integration-config.md)
@@ -95,11 +101,13 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - [Migration Documentation](../barodybroject/docs/migration/README.md)
     - [Django CMS Removal Guide](../barodybroject/docs/migration/CMS_REMOVAL_GUIDE.md)
     - [Migration Documentation - v0.2.0](../barodybroject/docs/migration/MIGRATION_GUIDE.md)
-- **[Source](../barodybroject/src/index.md)** <small>(121)</small>
+- **[Source](../barodybroject/src/index.md)** <small>(126)</small>
   - [Index](../barodybroject/src/index.md)
   - [barodybroject Directory](../barodybroject/src/barodybroject/README.md)
+  - [Frontend](../barodybroject/src/frontend/README.md)
   - [Installation Wizard Setup Guide](../barodybroject/src/setup/README.md)
   - [scripts Directory](../barodybroject/src/scripts/README.md)
+  - [tests Directory](../barodybroject/src/tests/README.md)
   - **[assets Directory](../barodybroject/src/assets/README.md)** <small>(3)</small>
     - [assets Directory](../barodybroject/src/assets/README.md)
     - [images Directory](../barodybroject/src/assets/images/README.md)
@@ -110,7 +118,7 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
       - [about Directory](../barodybroject/src/pages/_about/README.md)
       - [About](../barodybroject/src/pages/_about/about.md)
     - **[Data](../barodybroject/src/pages/_data/README.md)** <small>(2)</small>
-      - [Readme](../barodybroject/src/pages/_data/README.md)
+      - [Jekyll site data](../barodybroject/src/pages/_data/README.md)
       - [navigation Directory](../barodybroject/src/pages/_data/navigation/README.md)
     - **[docs Directory](../barodybroject/src/pages/_docs/README.md)** <small>(2)</small>
       - [docs Directory](../barodybroject/src/pages/_docs/README.md)
@@ -175,11 +183,14 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
       - [The Glamorous World of GitHub Branches: Fashioning Order from Digital…](../barodybroject/src/pages/_posts/2025-04-18-glamorous-world-of-github-branches.md)
       - [The Rise of the Framework: A Satirical Examination of Coding's Cultural…](../barodybroject/src/pages/_posts/2025-04-30-rise-of-frameworks-satire.md)
       - [The Sorcery of Coding: Unleashing "Sourcery" in Software](../barodybroject/src/pages/_posts/2025-04-13-coding-with-charms-sourcery.md)
-  - **[parodynews Directory](../barodybroject/src/parodynews/README.md)** <small>(46)</small>
-    - [parodynews Directory](../barodybroject/src/parodynews/README.md)
+  - **[parodynews](../barodybroject/src/parodynews/README.md)** <small>(49)</small>
+    - [parodynews](../barodybroject/src/parodynews/README.md)
+    - [AI Provider Layer](../barodybroject/src/parodynews/ai/README.md)
+    - [API](../barodybroject/src/parodynews/api/README.md)
     - [migrations Directory](../barodybroject/src/parodynews/migrations/README.md)
     - [Parodynews Models Package](../barodybroject/src/parodynews/models/README.md)
     - [scripts Directory](../barodybroject/src/parodynews/scripts/README.md)
+    - [Services](../barodybroject/src/parodynews/services/README.md)
     - [templatetags Directory](../barodybroject/src/parodynews/templatetags/README.md)
     - [utils Directory](../barodybroject/src/parodynews/utils/README.md)
     - **[Documentation](../barodybroject/src/parodynews/docs/README.md)** <small>(6)</small>
@@ -195,8 +206,8 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
     - **[schema Directory](../barodybroject/src/parodynews/schema/README.md)** <small>(2)</small>
       - [schema Directory](../barodybroject/src/parodynews/schema/README.md)
       - [Parody Prompt](../barodybroject/src/parodynews/schema/parody_prompt.md)
-    - **[templates Directory](../barodybroject/src/parodynews/templates/README.md)** <small>(26)</small>
-      - [templates Directory](../barodybroject/src/parodynews/templates/README.md)
+    - **[templates](../barodybroject/src/parodynews/templates/README.md)** <small>(26)</small>
+      - [templates](../barodybroject/src/parodynews/templates/README.md)
       - [Django Admin Templates Directory](../barodybroject/src/parodynews/templates/admin/README.md)
       - [Menu Templates Directory](../barodybroject/src/parodynews/templates/menu/README.md)
       - [parodynews Directory](../barodybroject/src/parodynews/templates/parodynews/README.md)
@@ -228,8 +239,8 @@ Every published page in [`docs/barodybroject/`](../barodybroject/) as it appears
       - **[usersessions Directory](../barodybroject/src/parodynews/templates/usersessions/README.md)** <small>(2)</small>
         - [usersessions Directory](../barodybroject/src/parodynews/templates/usersessions/README.md)
         - [messages Directory](../barodybroject/src/parodynews/templates/usersessions/messages/README.md)
-    - **[tests Directory](../barodybroject/src/parodynews/tests/README.md)** <small>(4)</small>
-      - [tests Directory](../barodybroject/src/parodynews/tests/README.md)
+    - **[tests](../barodybroject/src/parodynews/tests/README.md)** <small>(4)</small>
+      - [tests](../barodybroject/src/parodynews/tests/README.md)
       - [data Directory](../barodybroject/src/parodynews/tests/data/README.md)
       - **[scripts Directory](../barodybroject/src/parodynews/tests/scripts/README.md)** <small>(2)</small>
         - [scripts Directory](../barodybroject/src/parodynews/tests/scripts/README.md)

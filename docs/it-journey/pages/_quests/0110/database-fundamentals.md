@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ (or Docker to run it)
-preview: images/previews/database-fundamentals-data-storage-quest-title-ret.webp
+preview: /images/previews/database-fundamentals-data-storage-quest-title-ret.webp
 primary_technology: sql
 quest_arc: Foundations of the Relational Realm
 quest_dependencies:
@@ -460,8 +460,8 @@ Now an author who moves countries is updated in exactly one row. No anomalies, n
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
+**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)  
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
 **📊 Data Scientist**: Advance to [Data Modeling](/quests/0110/data-modeling/)
 
 ## 📚 Resources

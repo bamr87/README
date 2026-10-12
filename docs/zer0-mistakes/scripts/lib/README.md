@@ -51,6 +51,18 @@ source "$(dirname "$0")/lib/validation.sh"
 validate_environment false false  # skip_publish=false, require_gh=false
 ```
 
+### ✅ `scripts/bin/validate` - Preflight Validation
+
+Canonical command for local and CI preflight checks. It composes the release validation helpers with project-specific checks for version consistency, YAML configuration/data files, active configuration contracts, config-file classification, navigation data shape, Jekyll build/doctor, compiled assets, and optional test suites.
+
+**Usage:**
+
+```bash
+./scripts/bin/validate --quick          # Host-only CI fast checks
+./scripts/bin/validate --start-docker   # Build + doctor via Docker Compose
+./scripts/bin/validate --full           # Include tests, Obsidian, HTMLProofer
+```
+
 ### 📝 `version.sh` - Version Management
 
 Read, calculate, and update semantic versions.
@@ -144,6 +156,18 @@ run_tests
 publish_gem "1.2.0"
 create_github_release "1.2.0"
 ```
+
+### 🖼️ `preview_generator.py` - Preview Image Engine
+
+The Python engine behind `scripts/generate-preview-images.sh`. Renderer defaults when `preview_images.model` is empty:
+
+| provider | default model | credential |
+| --- | --- | --- |
+| `openai` (default) | `gpt-image-2` | `OPENAI_API_KEY` |
+| `xai` | `grok-imagine-image-2.0` | `XAI_API_KEY` |
+| `gemini` | `gemini-2.5-flash-image` | `GEMINI_API_KEY` |
+
+Unit specs: `python3 test/test_preview_generator.py`.
 
 ## Testing
 
@@ -291,5 +315,5 @@ When adding new functionality:
 
 ---
 
-**Phase 1 Complete** ✅
+**Phase 1 Complete** ✅  
 All libraries extracted with comprehensive test coverage.

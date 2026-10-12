@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 45,
-    "fingerprint": "641caf54c3c7d5be",
+    "file_count": 48,
+    "fingerprint": "401ff9b8176b89db",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 520277
+    "total_bytes": 545474
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,19 +21,19 @@
   "key_docs": [
     "README.md",
     "CLAUDE.md",
+    "AGENTS.md",
     "CHANGELOG.md",
     "docs/demo-walkthrough.md",
     ".github/instructions/scrolls.instructions.md",
     "docs/log-viewer-reference.md",
-    "docs/demo-critical-path.md",
-    "docs/walkthrough.md"
+    "docs/demo-critical-path.md"
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "fdbc0c73059689fd",
+    "fingerprint": "b8e09498674a0618",
     "index": "bashcrawl/README.md",
     "max_depth": 3,
-    "pages": 38,
+    "pages": 41,
     "present": true,
     "sections": 9,
     "skipped": 3,
@@ -48,7 +48,7 @@
       },
       {
         "index": "bashcrawl/docs/index.md",
-        "pages": 25,
+        "pages": 27,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -80,7 +80,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 45
+      "bashcrawl": 48
     },
     "code_languages": [
       "bash",
@@ -92,13 +92,13 @@
       "js",
       "markdown"
     ],
-    "indexed_documents": 45,
+    "indexed_documents": 48,
     "top_tags": [],
-    "total_words": 58747
+    "total_words": 62454
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": false,
+    "has_agents_md": true,
     "has_changelog": true,
     "has_claude_md": true,
     "has_contributing": false,
@@ -107,13 +107,14 @@
   },
   "structure": {
     "root_docs": [
+      "AGENTS.md",
       "CHANGELOG.md",
       "CLAUDE.md",
       "README.md"
     ],
     "top_dirs": [
       {
-        "doc_count": 25,
+        "doc_count": 27,
         "name": "docs"
       },
       {

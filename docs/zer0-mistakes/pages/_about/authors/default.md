@@ -1,5 +1,4 @@
 ---
-
 author_key: default
 author_profile: false
 description: Articles, docs, and notes from the Zer0-Mistakes team.
@@ -11,5 +10,3 @@ sidebar: false
 source_file: default.md
 title: Default
 ---
-# Default
-

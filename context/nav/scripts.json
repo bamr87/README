@@ -5,22 +5,22 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 15,
+    "pages": 16,
     "sections": 2,
     "max_depth": 2,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "ecb49a40e48b28a2",
+  "fingerprint": "09fcd3b2365b6268",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 15,
+    "pages": 16,
     "children": [
       {
         "type": "page",
-        "title": "scripts directory",
+        "title": "\ud83d\udee0\ufe0f scripts",
         "path": "scripts/README.md",
         "rel": "README.md",
         "is_index": true
@@ -43,6 +43,12 @@
         "title": "Rename Directory Utility - Quick Reference",
         "path": "scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md",
         "rel": "RENAME-DIRECTORY-QUICK-REFERENCE.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "scripts/SECURITY.md",
+        "rel": "SECURITY.md"
       },
       {
         "type": "section",

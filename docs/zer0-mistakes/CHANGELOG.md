@@ -16,6 +16,136 @@ hand-written prose covering the same releases in more depth; they sit below
 their version because release-please inserts each new release at the top of the
 file. Only `## [Unreleased]` describes work that has not shipped yet.
 
+## [1.31.0](https://github.com/bamr87/zer0-mistakes/compare/v1.30.0...v1.31.0) (2026-10-07)
+
+
+### Features
+
+* **navigation:** two clean navbar label tiers, merged chevron, centred grid ([#495](https://github.com/bamr87/zer0-mistakes/issues/495)) ([9ebb29a](https://github.com/bamr87/zer0-mistakes/commit/9ebb29a4662fbc4c62d3fdd8df9c282bdd181204))
+* **theme:** four consumer extension points for notes/knowledge-base builds ([#492](https://github.com/bamr87/zer0-mistakes/issues/492)) ([1e2b228](https://github.com/bamr87/zer0-mistakes/commit/1e2b2283303012b28b9e81209fb66d0344aa0597))
+
+
+### Bug Fixes
+
+* **article:** eager-load the hero LCP image and reserve its box ([#498](https://github.com/bamr87/zer0-mistakes/issues/498)) ([529b84b](https://github.com/bamr87/zer0-mistakes/commit/529b84bd0f5ea8e79b7711187b52b2bb80c5b134)), closes [#485](https://github.com/bamr87/zer0-mistakes/issues/485)
+* **ci:** keep a LiveReload push from crashing the generic evidence generator ([#500](https://github.com/bamr87/zer0-mistakes/issues/500)) ([eb1b5ae](https://github.com/bamr87/zer0-mistakes/commit/eb1b5ae201ed0829e0c3fac05e629e55a6ea1040))
+* **ci:** Playwright 1.58 attachment names, docs front matter, test race ([#497](https://github.com/bamr87/zer0-mistakes/issues/497)) ([f1bdc7e](https://github.com/bamr87/zer0-mistakes/commit/f1bdc7ef22091f0506617b11a95e357c439cfa94))
+* **ci:** stop auto-merge guard failing on Dependabot Actions bumps ([#503](https://github.com/bamr87/zer0-mistakes/issues/503)) ([a998b2d](https://github.com/bamr87/zer0-mistakes/commit/a998b2dd9cf96bb1fd09ac3a95644908713afc37))
+* **features:** escape `<en-url>` in the translation card so the Features page renders ([#505](https://github.com/bamr87/zer0-mistakes/issues/505)) ([8e4345f](https://github.com/bamr87/zer0-mistakes/commit/8e4345f28dfc675b5efe95ba66ec72af613cbcf5))
+* **includes:** join preview paths without a leading slash under assets_prefix ([#509](https://github.com/bamr87/zer0-mistakes/issues/509)) ([406250c](https://github.com/bamr87/zer0-mistakes/commit/406250c2b5b94469cae9a0b6f93e8782cb8509f9))
+* **includes:** stop the draft chip shifting the Site Builder on first save ([#489](https://github.com/bamr87/zer0-mistakes/issues/489)) ([d472aa2](https://github.com/bamr87/zer0-mistakes/commit/d472aa267e164212cf8b844e701cfcdad08e4d8d))
+* **layouts:** one main landmark per page on post, notebook and note ([#487](https://github.com/bamr87/zer0-mistakes/issues/487)) ([78b0910](https://github.com/bamr87/zer0-mistakes/commit/78b0910fb2258591eab9ba13efb5ac037eee80c5))
+* **navigation:** stop Liquid whitespace-trim gluing navbar attributes ([#477](https://github.com/bamr87/zer0-mistakes/issues/477)) ([4349ea1](https://github.com/bamr87/zer0-mistakes/commit/4349ea17d690e5e6b8585f1d3a33b3ea4d3bf4fe))
+* **scripts:** default xAI preview renderer to grok-imagine-image-2.0 ([#499](https://github.com/bamr87/zer0-mistakes/issues/499)) ([95cebdb](https://github.com/bamr87/zer0-mistakes/commit/95cebdb535799544f05ed5929e528a074448ef63)), closes [#474](https://github.com/bamr87/zer0-mistakes/issues/474)
+* **tests:** make the Liquid nested-tag and gem-content checks able to fail ([#478](https://github.com/bamr87/zer0-mistakes/issues/478)) ([8510d08](https://github.com/bamr87/zer0-mistakes/commit/8510d0824f79823f66f765f12db9be9b67fff3ae))
+* **tokens:** let the active skin win over site theme_color for skin-owned tokens ([#502](https://github.com/bamr87/zer0-mistakes/issues/502)) ([af468e0](https://github.com/bamr87/zer0-mistakes/commit/af468e072543a448e7be80230f3d3a246b5e758e))
+* **ui:** make the cookie consent banner a compact bottom bar ([#510](https://github.com/bamr87/zer0-mistakes/issues/510)) ([2d7d0db](https://github.com/bamr87/zer0-mistakes/commit/2d7d0db7f9f6b1433b63d8be76103cce2fd7fb05))
+
+
+### Performance Improvements
+
+* **js:** lazy-load Mermaid and cytoscape, defer PostHog, stop nav reflows ([#508](https://github.com/bamr87/zer0-mistakes/issues/508)) ([702789c](https://github.com/bamr87/zer0-mistakes/commit/702789cecf93d8e9b9f7013168ca47f0294064eb))
+* **sitemap:** keep one page of the index in the DOM and build cards lazily ([#511](https://github.com/bamr87/zer0-mistakes/issues/511)) ([9e42fcb](https://github.com/bamr87/zer0-mistakes/commit/9e42fcbd9421a994fd22a347bbef95573ce340a9))
+
+## [Unreleased]
+
+### Added
+
+- **Four consumer extension points** ([#412](https://github.com/bamr87/zer0-mistakes/issues/412)), documented at [`/docs/customization/extension-points/`](pages/_docs/customization/extension-points.md) and [`docs/development/extension-points.md`](docs/development/extension-points.md):
+  - `zer0:code-block-ready` — a bubbling `CustomEvent` dispatched once per code block carrying `{ wrapper, header, pre, code, lang }`, plus `window.zer0OnCodeBlock(fn)`, which **replays** already-decorated blocks before subscribing, and `window.__zer0CodeBlocks`. This replaces the `MutationObserver` and wrapper-shape guessing a consumer previously needed — the guess is what silently rendered two buttons on every block downstream.
+  - `styles:` / `scripts:` frontmatter — per-page CSS and JS resolved through `relative_url`, with `scripts:` deferred after the theme bundle. A page that declares neither emits nothing at all.
+  - `lastmod` and `description` on every `/assets/data/wiki-index.json` entry — ISO-8601 and the authored subtitle, always defined (`null` when the document has neither), no new traversal.
+
+### Changed
+
+- **Navbar label tiers reduced from three to two** ([#405](https://github.com/bamr87/zer0-mistakes/issues/405)).
+  Top-level nav items now render as icon + full label above 51rem of centre
+  track and icon-only below it; `text-overflow: ellipsis` is gone, so a label
+  is never cut to "Quicksta…". Icons now survive in **both** tiers — the old
+  41–50.99rem tier dropped them to buy width for bare labels. **Behaviour
+  change:** centre-track widths between 41rem and 51rem (roughly 992–1200px
+  viewports) previously showed bare labels and now show icons, with the
+  existing `.nav-tooltip` carrying the name on hover.
+- **Dropdown chevrons merged into their parent row** ([#405](https://github.com/bamr87/zer0-mistakes/issues/405)).
+  The split toggle is now absolutely positioned inside padding the parent link
+  reserves, and hover applies to the whole row, so there is no dead zone
+  between the label and its chevron. It remains a real `<button>` with
+  `aria-expanded`, `aria-haspopup` and its visually-hidden label unchanged.
+  (evidence: [`test/visual/evidence/navbar-tiers-405/`](test/visual/evidence/navbar-tiers-405/README.md) — chevron dead zone up to 4px → overlapping; 0 truncated labels across 6 widths)
+- **The navbar carries logo + title only** ([#405](https://github.com/bamr87/zer0-mistakes/issues/405)).
+  `site.subtitle` moved out of `_includes/core/branding.html` and onto the home
+  hero (`_layouts/home.html`), returning its width to the menubar. It renders
+  under the page heading on pages that use the `home` layout, and is hidden
+  with it by `hide_title` or `hide_intro`. A homepage on another layout, such
+  as `landing`, no longer shows the subtitle at all; add `site.subtitle` to
+  that layout's hero to keep it.
+- **The below-`lg` menu toggle is labelled "Menu"** ([#405](https://github.com/bamr87/zer0-mistakes/issues/405)),
+  so it is distinguishable from the sidebar hamburger beside it. Override the
+  string with `ui.nav_menu_toggle_label`.
+- The desktop navbar grid gives its two side tracks a shared minimum
+  (`--zer0-navbar-side-min`, default `9rem`) so the menubar is optically
+  centred in the bar rather than only within its own track.
+
+### Fixed
+
+- **Intro action buttons keep their names on phones, nav chevrons meet the 24px target, and badge links are legible on every skin.** Below 576px the Share button and "Edit on GitHub" link in `_includes/content/intro.html` showed only an icon, so axe reported `button-name`/`link-name`; both now carry an `aria-label` matching their visible text. The edit and "View source" URLs no longer contain a double slash (`blob/main//pages/tags.md`) for pages outside a collection. The merged desktop split-toggle chevron (`_sass/core/_navbar.scss`) grows from 20px to 24px wide (WCAG 2.2 SC 2.5.8 `target-size`). Skin link colours (`_sass/theme/_skins.scss`) no longer apply to `a.badge`, which had turned tag/category chips purple-on-purple on neon (1.45:1, now 5.61:1). Regression test: `test/visual/features/intro-actions-a11y.spec.js`.
+- **Closing the search modal returns focus to where it came from.** The modal is opened from code ("/", Ctrl/Cmd+K, the toggle's click handler), so Bootstrap's data-api focus restore never ran and Escape left focus on `<body>` (WCAG 2.4.3). `assets/js/search-modal.js` now remembers the opener (the clicked Search button, or the focused element) and falls back to the visible `[data-search-toggle]` when a shortcut opened it from the document. Two new tests in `test/visual/features/search.spec.js`.
+- **The navbar brand title no longer truncates on phones.** Next to the sidebar toggle, logo, search and the labelled Menu toggle, a 14-character title at the 20px `.navbar-brand` size lost its tail ("Lifehacker.dev" → "Lifehacker…" on lifehacker.dev post pages at 400px: 121px for 133px of text). Below 576px `#navbar .site-title-text` steps down to 1rem (0.9375rem below 375px), and the logo drops Bootstrap's 1rem `margin-end`, which stacked on the brand group's 0.5rem gap. That title now fits from 375px up on pages with the sidebar toggle and from 320px up without it. Two new tests in `test/visual/features/intro-actions-a11y.spec.js`.
+- **The cookie banner no longer covers the first screen.** Below 768px `components/cookie-consent.html` stacked a heading, a long sentence and three full-width buttons (the shim in `_sass/core/_sidebar-extras.scss`): 324px of an 850px-tall 400px viewport on it-journey.dev and lifehacker.dev, hiding most of the hero or article; on desktop it was 94px and sat over the lower hero copy. It is now a compact bar: a two-line summary over one row of three equal buttons on phones, and a single row from 768px up. The layout lives in `_sass/components/_cookie-banner.scss` and the stacking shim is gone. The banner is a labelled `region` ("Cookie consent"), and the button ids, the modal and the consent logic are unchanged. Height at 400px drops from 324px to 107px, and at 1366px from 94px to 48px. Pinned by `test/visual/features/cookie-banner-compact.spec.js`.
+- **The active skin now moves the whole `--zer0-color-*` layer, not just Bootstrap's** ([#459](https://github.com/bamr87/zer0-mistakes/issues/459)). `_includes/core/tokens-inline.html` re-set `--zer0-color-primary`, `-link` and `-accent` from `theme_color` on `:root` after `main.css`. `:root` and `[data-theme-skin]` have the same specificity, so the config value won on source order. On any site that sets `theme_color`, components reading the theme layer therefore kept the config color in every skin, and `--zer0-color-primary` disagreed with its own `-rgb` companion. The skin now wins: those three keys are emitted only when no palette skin is active, as with `dark` and `contrast`. `theme_color` still sets `secondary`, `danger`, `warning`, `success` and `info`, and the Appearance-panel override still beats both. The rule is documented in [`docs/ui/design-tokens.md`](docs/ui/design-tokens.md#precedence-skin-vs-theme_color) and checked by `test/visual/features/appearance.spec.js` (evidence: [`test/visual/evidence/agent-issue-459/`](test/visual/evidence/agent-issue-459/README.md) — page overflow 0px at six widths; the nine skin baselines are unchanged).
+- **A preview path without a leading slash no longer 404s.** `preview: images/previews/x.webp` was appended straight onto `assets_prefix`, so `components/preview-image.html`, `components/background-image.html`, `content/intro.html` and `content/seo.html` emitted `/assetsimages/previews/x.webp` for the card image, the hero background and `og:image` (165 it-journey content files use that form). All four now prepend `/` to a site-relative path before joining; URLs and `data:` URIs are left alone, and already-slashed or `/assets/`-prefixed paths render byte-identically. `preview-image.html` also gained optional `width`/`height` parameters (emitted only when passed); the article layout's related-post cards pass 1536×1024 so their box is reserved before the lazy image arrives (0px → 217px at 1366px). Pinned by the `Preview Path Join` unit test in `test/test_core.sh` and `test/visual/features/preview-path-join.spec.js`.
+- **The sitemap index no longer puts every page in the DOM twice.** `content/sitemap.html` (the `/sitemap/` page, the search modal's "View all results" target, and it-journey.dev's `/search/`) kept all rows attached. Its script also eagerly built a second copy of every row as a card for the hidden card view: about 19,900 elements on it-journey's `/search/` (431 entries), with Lighthouse mobile TBT at 9.7 s. Rows are still rendered server-side, so the page works without JS and with `?q=`. The script now keeps only one page of 50 matches in the document and appends the next page with **Show more**. Search, filters and sorting work across every row, and cards are built on the first switch to card view, one page at a time. Card text is set through `textContent` rather than interpolated HTML. On the theme's own `/sitemap/` (386 entries), elements after load drop from 23,063 to 8,086, and local Lighthouse mobile TBT drops from 1,662 ms to 181 ms. Badge contrast is fixed too: the collection pill is `text-bg-info` (was white on `#0dcaf0`, 1.96:1), tag chips use `--bs-primary-text-emphasis`, and `+N` overflow chips (white on transparent) get body text and a border. Pinned by `test/visual/features/sitemap-pagination.spec.js`.
+- **The xAI preview-image renderer defaults to `grok-imagine-image-2.0`** ([#474](https://github.com/bamr87/zer0-mistakes/issues/474)). `XAIProvider.default_model()` in `scripts/lib/preview_generator.py` still returned the retired `grok-2-image`, so a site with `preview_images.provider: xai` and no explicit `model:` sent a retired model upstream. An explicitly configured `grok-2-image` is still accepted as an xAI-family model.
+- **A code-copy partial no longer restyles every button on the site** ([#412](https://github.com/bamr87/zer0-mistakes/issues/412)). `_sass/core/code-copy.scss` shipped a bare `.button, button:not(.copy)` rule — an element selector at specificity (0,1,1) that out-ranked `.btn` and any consumer's own class, applying `padding: 0 20px`, `font-size: 11px` and a hardcoded `#bbb` border site-wide. It is scoped to `.code-block-header` / `pre.highlight` now and uses `--zer0-*` tokens, so `#bbb` is gone from the compiled stylesheet. Every button on the site — the theme's own chrome included — gets its intended metrics back (evidence: [`test/visual/evidence/agent-issue-412/`](test/visual/evidence/agent-issue-412/README.md) — page overflow 0px at six widths; the nine skin baselines moved, and every red region in their diffs is a `<button>`).
+- **The article hero no longer lazy-loads its LCP image or shoves the article down when it arrives** ([#485](https://github.com/bamr87/zer0-mistakes/issues/485)). `figure.featured-hero` inherited `components/preview-image.html`'s `loading="lazy"` default and had no reserved box. It now passes `loading="eager" fetchpriority="high" decoding="async"`, and its box is pinned by `.featured-hero img { aspect-ratio: 3 / 2 }`. The box is set in CSS rather than with `width`/`height` attributes, because preview assets vary in shape and `object-fit: cover` crops a portrait instead of stretching it. `preview-image.html` gained optional `fetchpriority`/`decoding` parameters that are emitted only when passed, so every other consumer renders byte-identically (evidence: [`test/visual/evidence/hero-lcp/`](test/visual/evidence/hero-lcp/README.md) — hero loading lazy → eager + fetchpriority=high; content shift when the hero lands 476px → 0px across 2 widths × landscape/portrait).
+- **Mermaid, cytoscape and PostHog no longer load up front, and the auto-hide navbar stops forcing reflows.** `assets/js/mermaid-diagrams.js` now converts fences into figures straight away but injects the ~1 MB Mermaid bundle only when a diagram exists and the first one comes within 400px of the viewport (IntersectionObserver); `components/mermaid.html` passes the bundle URL as `window.zer0MermaidSrc` (a script global, not DOM text, and only http(s) URLs are injected) instead of a `<script defer>`. The local-graph panel loads cytoscape on first open instead of on every indexed page. `analytics/posthog.html` keeps the queueing stub but fetches `array.js` after `load` + idle, and `core/head.html` no longer includes it a second time (`root.html` already did, so every production page called `posthog.init()` twice). `auto-hide-nav.js` measures the navbar with a ResizeObserver (rAF read/next-frame write fallback) and caches the height instead of reading `offsetHeight` at DOMContentLoaded and on resize. Lighthouse mobile, local static build: home TBT 1,705 → 651 ms and weight 5,581 → 2,327 KiB; `/docs/features/mermaid-diagrams/` TBT 2,017 → 243 ms; `auto-hide-nav.js` gone from forced-reflow. New lazy-load test in `test/visual/features/mermaid.spec.js`.
+### Fixed
+
+- **The Site Builder no longer jumps the first time it saves a draft.**
+  `showDraftChip()` cleared the "Draft saved" chip's `hidden` attribute, and the
+  2s timer that follows only removes `is-visible` — an opacity class — so the
+  first debounced save moved the chip from `display: none` into layout *for
+  good*. Its box is 26px against the 19px "Start over" button beside it, so
+  `.wizard-header` grew and took `#wizardTabContent` and every Back/Next row
+  below it down with it: 7px where the header's right-hand block had already
+  wrapped, a whole wrapped line where those 7px were what tipped it over. The
+  chip now holds its box from first paint and is hidden with `visibility`,
+  which is what `_setup-wizard.scss` said it did all along ("Kept in the layout
+  (no display toggling) so its appearance never shifts the header") and still
+  keeps it out of the accessibility tree when it has nothing to say. This is
+  what failed the `@critical` stable-height spec on every push to `main`
+  (`2029, 2036, 2036, …`), and with it the retry that spec's failure forced
+  ([bamr87/bamr87#265](https://github.com/bamr87/bamr87/issues/265)) (evidence:
+  [`test/visual/evidence/agent-issue-265/`](test/visual/evidence/agent-issue-265/README.md)
+  — first draft save moved the wizard 42px on the base branch, 0px here).
+
+### Changed
+
+- The stable-height spec now walks Connect **first and last** and records
+  `#wizardTabContent`'s document-y **top** beside each Back/Next offset. The
+  contract itself (`spread ≤ 1`) is unchanged; what is new is that a shift
+  *above* the panes now fails as a shift above the panes instead of looking
+  like one step with bad CSS. The companion `heights` assertion keeps a comment
+  saying it is step-invariant by construction, so it is never again read as
+  evidence about anything above the container.
+- **Exactly one `main` landmark again on post, notebook and note pages.**
+  `_layouts/{article,notebook,note}.html` each rendered
+  `<article id="main" role="main">` *inside* root.html's
+  `<main id="main-content">`, so every such page exposed two `main` landmarks —
+  ambiguous "skip to main content" and landmark-rotor navigation in
+  NVDA/JAWS/VoiceOver (WCAG 2.1 SC 1.3.1) — and the `role` additionally
+  overrode the element's native `article` landmark, so the post was no longer
+  announced as an article. This is the same class of defect as #299, arriving on
+  a `role` attribute instead of a nested `<main>` element. The generic
+  `id="main"` is gone with it: nothing in the theme referenced it, and the skip
+  link targets `#main-content`. Microdata (`h-entry`, `itemscope`,
+  `BlogPosting`/`TechArticle`/`Article`) is unchanged, and the rendered pixels
+  are identical. Pinned by `test/visual/core/landmarks.spec.js`
+  ([#484](https://github.com/bamr87/zer0-mistakes/issues/484)) (evidence:
+  [`test/visual/evidence/agent-issue-484/`](test/visual/evidence/agent-issue-484/README.md)
+  — base vs head on a post and a note page, page overflow 0px → 0px across 6
+  widths, 9 pixel baselines unchanged).
+
 ## [1.30.0](https://github.com/bamr87/zer0-mistakes/compare/v1.29.0...v1.30.0) (2026-09-12)
 
 
@@ -79,6 +209,28 @@ file. Only `## [Unreleased]` describes work that has not shipped yet.
 
 ### Fixed
 
+- **Two `test_core.sh` checks could never fail, and one shouted on every clean
+  run (#460).** The Liquid nested-tag check grepped for
+  {% raw %}`{{.*{{`{% endraw %}, which matches
+  any two *sibling* output tags on one line — it flagged 64 of the theme's
+  includes, starting with `navigation/sidebar-pagetree.html`'s valid
+  {% raw %}`{{ _base }}{{ _section }}`{% endraw %} — and its `return 1` sat inside a `find | while`
+  pipeline, i.e. a subshell, so the function printed `[ERROR]` and then reported
+  the check as passed. The gem-content check ran `tar -tzf` on the built `.gem`,
+  but a gem is an *uncompressed* tar wrapping `metadata.gz`, `data.tar.gz` and
+  `checksums.yaml.gz`, so gzip printed `stdin: not in gzip format` four times
+  and both branches fell through to "Gem may not contain…" without ever
+  inspecting the payload — a gem shipped with no `_layouts/` would have passed.
+  The nested-tag pattern is now {% raw %}`{{[^}]*{{`{% endraw %} (cannot cross the first `}`, so
+  siblings do not match), both loops read from a process substitution so a
+  failure propagates, and the gem check extracts `data.tar.gz` and asserts
+  `_layouts/` and `assets/` are really in it. The layout balance check, now
+  live, blanks Liquid comment bodies before counting, so prose in a comment that
+  quotes a closing delimiter (as `_layouts/root.html`'s per-page-scripts note
+  does) is no longer read as an unbalanced tag. New `test/test_core_checks.sh`
+  drives both checks against known-good and known-bad fixtures, so a check that
+  stops being able to fail is itself a test failure. `./test/test_core.sh` now
+  runs clean: 26/26, no `[ERROR]` line, no gzip/tar noise.
 - **Every navbar link emitted invalid HTML — attributes glued together with no
   separating whitespace (#465)** — the Liquid whitespace-trim markers around the
   conditional `aria-current` in `_includes/navigation/navbar.html` ate the
@@ -3972,26 +4124,26 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Added `docs/PRD.md` with complete product specifications
   - Includes vision statement, key differentiators, and metrics
   - Documents AI-powered features and privacy-first principles
-
+  
 - **Documentation: Sidebar Improvements Summary** - Complete implementation documentation for sidebar enhancements
   - Added `docs/SIDEBAR_IMPROVEMENTS.md` documenting UI/UX modernization
   - Details scroll spy fixes, mobile TOC button positioning
   - Documents responsive design improvements and accessibility features
-
+  
 - **Documentation: Theme Version Implementation** - Theme version display system documentation
-  - Added `docs/THEME_VERSION_IMPLEMENTATION.md`
+  - Added `docs/THEME_VERSION_IMPLEMENTATION.md` 
   - Documents automatic version extraction from gem specification
   - Explains modal integration and footer access points
-
+  
 - **Content: Privacy Policy Page** - GDPR/CCPA compliant privacy policy
   - Added `pages/privacy-policy.md` with comprehensive privacy documentation
   - Details PostHog analytics data collection practices
   - Explains user rights and data protection measures
-
+  
 - **Content: Terms of Service Page** - Legal terms for site usage
-  - Added `pages/terms-of-service.md`
+  - Added `pages/terms-of-service.md` 
   - Provides basic terms framework for site operators
-
+  
 - **Testing: Notebook Conversion Test Script** - Automated testing for Jupyter notebook conversion
   - Added `test/test-notebook-conversion.sh` for notebook workflow testing
   - Validates Python/nbconvert installation in Docker
@@ -4233,7 +4385,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Consistent handling of absolute paths and external URLs
   - Supports custom classes, styles, and lazy loading
   - Eliminates duplicated image rendering logic across layouts
-
+  
 - **New Script: `validate_preview_urls.py`** (`scripts/lib/validate_preview_urls.py`, 400+ lines)
   - Python-based validation for preview image URLs in frontmatter
   - Checks URL format (must start with `/`)
@@ -4242,7 +4394,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
   - Detects empty, null, or malformed preview values
   - JSON output support for CI integration
   - Standalone CLI tool with `--verbose`, `--suggestions`, `--list-missing` options
-
+  
 - **New Test Category: Content Quality Tests** in Quality Assurance Suite
   - Added `test_preview_image_urls()` function to `test/test_quality.sh`
   - Validates all preview URLs in content frontmatter during test runs
@@ -4293,7 +4445,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - Schema.org TechArticle markup for SEO
     - Download original `.ipynb` link
     - Giscus comments integration
-
+    
   - **New Stylesheet: `notebooks.scss`** (`_sass/notebooks.scss`, 450+ lines)
     - Code cell styling with execution counts
     - Output area formatting (text, images, tables, errors)
@@ -4301,7 +4453,7 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - Responsive design with mobile breakpoints (@media max-width: 768px)
     - Dark mode support
     - Bootstrap 5 variable integration
-
+    
   - **New Conversion Script: `convert-notebooks.sh`** (`scripts/convert-notebooks.sh`, 408 lines)
     - Converts `.ipynb` files to Jekyll-compatible Markdown
     - Extracts images to `/assets/images/notebooks/`
@@ -4309,21 +4461,21 @@ See [`docs/installation/migration-from-0.x.md`](docs/installation/migration-from
     - JSON-based metadata parsing to avoid delimiter issues
     - CLI options: `--force`, `--dry-run`, `--list`, `--clean`, `--verbose`
     - Follows project script patterns with colored logging
-
+    
   - **New GitHub Actions Workflow** (`.github/workflows/convert-notebooks.yml`, 220+ lines)
     - Triggers on push/PR to `pages/_notebooks/**.ipynb`
     - Dry-run mode for pull requests
     - Automatic conversion and commit on main/develop branches
     - Validation job checks markdown and image references
     - Commits with `[skip ci]` to prevent loops
-
+    
   - **New Documentation** (`docs/JUPYTER_NOTEBOOKS.md`)
     - Complete feature documentation
     - Usage examples and workflow
     - Troubleshooting guide
     - Architecture explanation
     - File manifest
-
+    
   - **New Test Suite** (`test-notebook-conversion.sh`, 150+ lines)
     - 8-step automated validation
     - Docker status, Python/nbconvert checks

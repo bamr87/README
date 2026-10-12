@@ -1,5 +1,4 @@
 ---
-
 author: GPT and bamr87
 categories:
 - Quests
@@ -37,7 +36,7 @@ permalink: /quests/0100/frontend-docker/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/dockering-jekyll-with-bootstrap-5.webp
+preview: /images/previews/dockering-jekyll-with-bootstrap-5.webp
 primary_technology: General
 quest_arc: Docker on the web
 quest_dependencies:
@@ -64,8 +63,6 @@ validation_criteria:
   completion_requirements: []
   skill_demonstrations: []
 ---
-# Frontend Docker
-
 ## 🎯 Quest Objectives
 
 By the end of this quest, you will be able to:
@@ -152,9 +149,9 @@ Replace the `xxx` with the appropriate integrity values from the Bootstrap CDN s
    <head>
      <meta charset="UTF-8">
      <title>My Jekyll Site</title>
-
+    
     {% raw %}{% include head.html %}{% endraw %}
-
+    
    </head>
    <body>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -188,9 +185,9 @@ Replace the `xxx` with the appropriate integrity values from the Bootstrap CDN s
          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
        </div>
      </div>
-
+     
      {% raw %}{% include footer.html %}{% endraw %}
-
+     
    </body>
    </html>
    ```

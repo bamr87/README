@@ -36,7 +36,7 @@ prerequisites:
   system_requirements:
   - GitHub repository with Copilot, Actions, and Environments fully configured
   - All tools and workflows from prior quests present and operational
-preview: images/previews/agentic-codex-capstone-exam-trial.png
+preview: /images/previews/agentic-codex-capstone-exam-trial.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:
@@ -109,9 +109,9 @@ graph TD
     D5["Domain 5: Multi-Agent"]
     D6["Domain 6: Governance"]
     CAP["🏆 CAPSTONE: Agentic Codex Master"]
-
+    
     D1 --> D2 --> D3 --> D4 --> D5 --> D6 --> CAP
-
+    
     style CAP fill:#FFD700,stroke:#B8860B,stroke-width:4px,color:#000
     style D1 fill:#4CAF50,stroke:#2E7D32,color:#fff
     style D2 fill:#4CAF50,stroke:#2E7D32,color:#fff

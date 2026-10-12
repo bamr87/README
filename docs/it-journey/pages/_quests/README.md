@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories:
 - quests
@@ -31,8 +30,6 @@ title: Readme
 toc: true
 toc_sticky: true
 ---
-# Readme
-
 *Ah, brave adventurer! You've reached the mystical realm of IT knowledge — where code flows like magic, systems rise like castles, and every bug is but a dragon to be slain.*
 
 Use the **Tier Map**, **class paths**, and **Browse All Quests** above to chart your journey. The references below help you go deeper, get set up, and contribute back to the realm.

@@ -5,7 +5,7 @@
   "title": "Barody Project",
   "corpus": "docs/barodybroject",
   "counts": {
-    "pages": 256,
+    "pages": 267,
     "sections": 56,
     "max_depth": 7,
     "skipped": 8
@@ -20,12 +20,12 @@
     "src/README.md",
     "src/posthog/.github"
   ],
-  "fingerprint": "346f30cf6e0d6733",
+  "fingerprint": "1ab32dbfdd0f48bc",
   "tree": {
     "type": "section",
     "title": "Barody Project",
     "index": "barodybroject/README.md",
-    "pages": 256,
+    "pages": 267,
     "children": [
       {
         "type": "group",
@@ -183,7 +183,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "barodybroject/docs/README.md",
-        "pages": 51,
+        "pages": 57,
         "children": [
           {
             "type": "page",
@@ -303,7 +303,7 @@
             "title": "Changelog Documentation System",
             "rel": "docs/changelog",
             "index": "barodybroject/docs/changelog/README.md",
-            "pages": 21,
+            "pages": 26,
             "children": [
               {
                 "type": "page",
@@ -408,13 +408,31 @@
                 "type": "section",
                 "title": "Summaries",
                 "rel": "docs/changelog/summaries",
-                "pages": 4,
+                "pages": 9,
                 "children": [
+                  {
+                    "type": "page",
+                    "title": "Breaking Change: the AI layer is provider-agnostic and the UI is React",
+                    "path": "barodybroject/docs/changelog/summaries/2026-09-15-provider-agnostic-ai-and-react-frontend.md",
+                    "rel": "docs/changelog/summaries/2026-09-15-provider-agnostic-ai-and-react-frontend.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bug Fix: every error during publication is now communicated to the user",
+                    "path": "barodybroject/docs/changelog/summaries/2026-09-13-publication-error-reporting.md",
+                    "rel": "docs/changelog/summaries/2026-09-13-publication-error-reporting.md"
+                  },
                   {
                     "type": "page",
                     "title": "Bug Fix: filtering a model table to zero matches emptied it with no\u2026",
                     "path": "barodybroject/docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md",
                     "rel": "docs/changelog/summaries/2026-08-31-model-table-filter-empty-state.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bug Fix: the dependency gate audited the scanners instead of the\u2026",
+                    "path": "barodybroject/docs/changelog/summaries/2026-09-11-dependency-scan-scope.md",
+                    "rel": "docs/changelog/summaries/2026-09-11-dependency-scan-scope.md"
                   },
                   {
                     "type": "page",
@@ -430,9 +448,21 @@
                   },
                   {
                     "type": "page",
+                    "title": "Feature: unhandled exceptions can be filed as deduplicated GitHub issues",
+                    "path": "barodybroject/docs/changelog/summaries/2026-08-30-github-issue-error-reporting.md",
+                    "rel": "docs/changelog/summaries/2026-08-30-github-issue-error-reporting.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "Improvement: model unit tests, from 3 of 17 models covered to all of\u2026",
                     "path": "barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md",
                     "rel": "docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Test: the assistant select cannot regress to seeding a random assistant",
+                    "path": "barodybroject/docs/changelog/summaries/2026-09-13-content-item-form-assistant-seeding.md",
+                    "rel": "docs/changelog/summaries/2026-09-13-content-item-form-assistant-seeding.md"
                   }
                 ]
               },
@@ -521,7 +551,7 @@
             "title": "Django Configuration Documentation",
             "rel": "docs/configuration",
             "index": "barodybroject/docs/configuration/README.md",
-            "pages": 5,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -529,6 +559,12 @@
                 "path": "barodybroject/docs/configuration/README.md",
                 "rel": "docs/configuration/README.md",
                 "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Automatic GitHub issue reporting",
+                "path": "barodybroject/docs/configuration/error-reporting.md",
+                "rel": "docs/configuration/error-reporting.md"
               },
               {
                 "type": "page",
@@ -591,7 +627,7 @@
         "title": "Source",
         "rel": "src",
         "index": "barodybroject/src/index.md",
-        "pages": 121,
+        "pages": 126,
         "children": [
           {
             "type": "page",
@@ -609,6 +645,13 @@
           },
           {
             "type": "page",
+            "title": "Frontend",
+            "path": "barodybroject/src/frontend/README.md",
+            "rel": "src/frontend/README.md",
+            "folder": "src/frontend"
+          },
+          {
+            "type": "page",
             "title": "Installation Wizard Setup Guide",
             "path": "barodybroject/src/setup/README.md",
             "rel": "src/setup/README.md",
@@ -620,6 +663,13 @@
             "path": "barodybroject/src/scripts/README.md",
             "rel": "src/scripts/README.md",
             "folder": "src/scripts"
+          },
+          {
+            "type": "page",
+            "title": "tests Directory",
+            "path": "barodybroject/src/tests/README.md",
+            "rel": "src/tests/README.md",
+            "folder": "src/tests"
           },
           {
             "type": "section",
@@ -696,7 +746,7 @@
                 "children": [
                   {
                     "type": "page",
-                    "title": "Readme",
+                    "title": "Jekyll site data",
                     "path": "barodybroject/src/pages/_data/README.md",
                     "rel": "src/pages/_data/README.md",
                     "is_index": true
@@ -1100,17 +1150,31 @@
           },
           {
             "type": "section",
-            "title": "parodynews Directory",
+            "title": "parodynews",
             "rel": "src/parodynews",
             "index": "barodybroject/src/parodynews/README.md",
-            "pages": 46,
+            "pages": 49,
             "children": [
               {
                 "type": "page",
-                "title": "parodynews Directory",
+                "title": "parodynews",
                 "path": "barodybroject/src/parodynews/README.md",
                 "rel": "src/parodynews/README.md",
                 "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "AI Provider Layer",
+                "path": "barodybroject/src/parodynews/ai/README.md",
+                "rel": "src/parodynews/ai/README.md",
+                "folder": "src/parodynews/ai"
+              },
+              {
+                "type": "page",
+                "title": "API",
+                "path": "barodybroject/src/parodynews/api/README.md",
+                "rel": "src/parodynews/api/README.md",
+                "folder": "src/parodynews/api"
               },
               {
                 "type": "page",
@@ -1132,6 +1196,13 @@
                 "path": "barodybroject/src/parodynews/scripts/README.md",
                 "rel": "src/parodynews/scripts/README.md",
                 "folder": "src/parodynews/scripts"
+              },
+              {
+                "type": "page",
+                "title": "Services",
+                "path": "barodybroject/src/parodynews/services/README.md",
+                "rel": "src/parodynews/services/README.md",
+                "folder": "src/parodynews/services"
               },
               {
                 "type": "page",
@@ -1241,14 +1312,14 @@
               },
               {
                 "type": "section",
-                "title": "templates Directory",
+                "title": "templates",
                 "rel": "src/parodynews/templates",
                 "index": "barodybroject/src/parodynews/templates/README.md",
                 "pages": 26,
                 "children": [
                   {
                     "type": "page",
-                    "title": "templates Directory",
+                    "title": "templates",
                     "path": "barodybroject/src/parodynews/templates/README.md",
                     "rel": "src/parodynews/templates/README.md",
                     "is_index": true
@@ -1486,14 +1557,14 @@
               },
               {
                 "type": "section",
-                "title": "tests Directory",
+                "title": "tests",
                 "rel": "src/parodynews/tests",
                 "index": "barodybroject/src/parodynews/tests/README.md",
                 "pages": 4,
                 "children": [
                   {
                     "type": "page",
-                    "title": "tests Directory",
+                    "title": "tests",
                     "path": "barodybroject/src/parodynews/tests/README.md",
                     "rel": "src/parodynews/tests/README.md",
                     "is_index": true

@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - Ruby 3.x and a terminal
-preview: images/previews/jekyll-fundamentals-static-site-generation-descrip.webp
+preview: /images/previews/jekyll-fundamentals-static-site-generation-descrip.webp
 primary_technology: jekyll
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -539,8 +539,8 @@ docker-compose up -d
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)
+**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
 **🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
 
 ## 📚 Resources

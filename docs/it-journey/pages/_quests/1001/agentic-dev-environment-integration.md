@@ -42,7 +42,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Codespaces access (or Docker locally)
   - Repository with Actions enabled
-preview: images/previews/agentic-dev-environment-integration.png
+preview: /images/previews/agentic-dev-environment-integration.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

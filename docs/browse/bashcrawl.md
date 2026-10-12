@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **38 pages** across **9 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **41 pages** across **9 sections** (max depth 3).
 
 - **Repository & tooling** <small>(6)</small>
   - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
@@ -21,10 +21,11 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [AI Prompt: Fantasy Terminal Learning Game Architecture](../bashcrawl/src/terminal-illness/seed_prompt.instructions.md)
     - [Ti](../bashcrawl/src/terminal-illness/ti/audio/assets/README.md)
 - [⚔️ Bashcrawl — learn the terminal by playing](../bashcrawl/README.md)
+- [AGENTS.md](../bashcrawl/AGENTS.md)
 - [Changelog](../bashcrawl/CHANGELOG.md)
 - [CLAUDE.md](../bashcrawl/CLAUDE.md)
 - [TermForge](../bashcrawl/termforge/README.md)
-- **[Documentation](../bashcrawl/docs/index.md)** <small>(25)</small>
+- **[Documentation](../bashcrawl/docs/index.md)** <small>(27)</small>
   - [Bashcrawl Documentation](../bashcrawl/docs/index.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Agent Mode Protocol Specification](../bashcrawl/docs/agent-protocol.md)
@@ -46,11 +47,13 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Quest Index](../bashcrawl/docs/generated/quests.md)
     - [Rooms Index](../bashcrawl/docs/generated/rooms.md)
     - [Runtime Commands](../bashcrawl/docs/generated/runtime-commands.md)
-  - **Schemas** <small>(2)</small>
+  - **Schemas** <small>(3)</small>
     - [Content Registry Contract (v1)](../bashcrawl/docs/schemas/content-registries.v1.md)
     - [Terminal Protocol v1](../bashcrawl/docs/schemas/terminal-protocol.v1.md)
-  - **Termforge** <small>(3)</small>
+    - [Terminal Protocol v2](../bashcrawl/docs/schemas/terminal-protocol.v2.md)
+  - **Termforge** <small>(4)</small>
     - [Authoring TermForge Apps](../bashcrawl/docs/termforge/authoring-apps.md)
+    - [Hidden Gem — DAEMON STORM](../bashcrawl/docs/termforge/hidden-gem.md)
     - [TermForge Architecture](../bashcrawl/docs/termforge/architecture.md)
     - [TermForge Telnet Host](../bashcrawl/docs/termforge/telnet-host.md)
 - **[🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here](../bashcrawl/entrance/README.md)** <small>(3)</small>

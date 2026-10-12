@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv, plus Docker for Jaeger
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/distributed-tracing-jaeger-quest-title-opentelemet.webp
+preview: /images/previews/distributed-tracing-jaeger-quest-title-opentelemet.webp
 primary_technology: opentelemetry
 quest_arc: Mastering the Traces Pillar
 quest_dependencies:
@@ -451,8 +451,8 @@ processors:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Alerting Systems](/quests/1010/alerting-systems/)
-**🏗️ System Engineer**: Explore [ELK Stack](/quests/1010/elk-stack/)
+**💻 Software Developer**: Continue to [Alerting Systems](/quests/1010/alerting-systems/)  
+**🏗️ System Engineer**: Explore [ELK Stack](/quests/1010/elk-stack/)  
 **🛡️ Security Specialist**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) for SLO grounding
 
 ## 📚 Resources

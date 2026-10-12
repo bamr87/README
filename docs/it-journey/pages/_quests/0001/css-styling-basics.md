@@ -53,7 +53,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A modern web browser with developer tools
-preview: images/previews/css-styling-basics-visual-design-fundamentals-desc.webp
+preview: /images/previews/css-styling-basics-visual-design-fundamentals-desc.webp
 primary_technology: css
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -549,9 +549,9 @@ The same idea scales: a `--space` scale, a `--radius`, and a handful of color to
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)
-**🏗️ System Engineer**: Explore [Bootstrap Framework](/quests/0001/bootstrap-framework/)
-**🎨 Frontend Specialist**: Master [Bootstrap Framework](/quests/0001/bootstrap-framework/)
+**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
+**🏗️ System Engineer**: Explore [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
+**🎨 Frontend Specialist**: Master [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
 
 ## 📚 Resources
 

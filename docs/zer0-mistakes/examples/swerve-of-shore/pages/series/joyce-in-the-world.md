@@ -1,5 +1,4 @@
 ---
-
 description: Joyce read against his contemporaries and the writers behind him.
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: joyce-in-the-world.md
 title: Joyce In The World
 ---
-# Joyce In The World
-
 {% include page-header.html %}
 
 Essays outside the numbered sequence: Joyce set against the writers he read, the ones he was read against, and the world the books came out of.

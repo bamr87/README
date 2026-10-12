@@ -1,5 +1,4 @@
 ---
-
 author: GPT and bamr87
 categories: []
 date: '2024-03-12T19:51:39.000Z'
@@ -38,8 +37,6 @@ tags: []
 title: Frontend
 type: default
 ---
-# Frontend
-
 ## 🎯 Quest Objectives
 
 By the end of this quest, you will be able to:

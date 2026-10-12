@@ -1,5 +1,4 @@
 ---
-
 character: game-developer
 date: 2026-07-06 00:00:00+00:00
 level: '0001'
@@ -20,8 +19,6 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 07 06 Game Developer 0001
 ---
-# 2026 07 06 Game Developer 0001
-
 ## 🎯 Session Summary
 
 I walked a **5-quest window** (window 3 of 6) of the **Game Developer → Level 0001 (Web Fundamentals, Apprentice 🌱)** slice as a learner would, in plan order, backed by the workflow's sealed execute-engine evidence (`walk-evidence.json`). The window is **26 quests deep in total**; this run covers 5 of them, so the level is not yet fully swept.

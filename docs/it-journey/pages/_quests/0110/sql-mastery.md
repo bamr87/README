@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories:
 - Quests
@@ -49,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ (or Docker to run it)
-preview: images/previews/sql-mastery-query-language-proficiency-quest-titl.png
+preview: /images/previews/sql-mastery-query-language-proficiency-quest-titl.png
 primary_technology: sql
 quest_arc: The Query Codex
 quest_dependencies:
@@ -94,8 +93,6 @@ validation_criteria:
   - Can write INNER and LEFT JOINs correctly
   - Can aggregate with GROUP BY and filter with HAVING
 ---
-# Sql Mastery
-
 *Greetings, brave adventurer! You have learned to **store** data; now you will learn to **summon** it. SQL - the Structured Query Language - is the spellbook of the relational realm, and this quest, **SQL Mastery**, teaches you to chant the incantations that join, group, and nest data. By the end you will pull precise answers from a sprawling, multi-table database the way a battle-mage pulls fire from the air.*
 
 *SQL is declarative: you describe *what* you want, and the database's query planner decides *how* to fetch it. That single shift - from "how" to "what" - is what makes SQL feel like magic and what makes mastering it a genuine power-up for any developer.*
@@ -446,8 +443,8 @@ COMMIT;   -- both inserts land together; ROLLBACK would undo both
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Query Optimization](/quests/0110/query-optimization/)
-**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)
+**💻 Software Developer**: Continue to [Query Optimization](/quests/0110/query-optimization/)  
+**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)  
 **🛡️ Security Specialist**: Advance to [Database Security](/quests/0110/database-security/)
 
 ## 📚 Resources

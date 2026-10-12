@@ -1,5 +1,4 @@
 ---
-
 admin_actions:
 - icon: bi-palette
   label: Theme Customizer
@@ -22,8 +21,6 @@ translated_from_sha: e283d9e761c8
 translation_of: pages/_about/settings/theme-preview.md
 translation_source_url: /about/settings/theme-preview/
 ---
-# Theme Preview
-
 {% include components/theme-controls-bar.html show_status=true %}
 
 <div class="row g-4">

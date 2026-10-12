@@ -1,5 +1,4 @@
 ---
-
 author: Zer0-Mistakes Team
 categories:
 - Development
@@ -21,8 +20,6 @@ tags:
 - inclusive-design
 title: 2025 01 05 Web Accessibility Guide
 ---
-# 2025 01 05 Web Accessibility Guide
-
 Web accessibility isn't just a legal requirement—it's about creating inclusive experiences for everyone. This guide covers essential accessibility practices for modern web development.
 
 ## Why Accessibility Matters

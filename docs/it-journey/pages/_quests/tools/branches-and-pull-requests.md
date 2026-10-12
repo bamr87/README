@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories:
 - Development
@@ -11,7 +10,7 @@ comments: false
 date: '2025-04-18T13:43:43.000Z'
 description: Master Git branch types and craft clear, reviewable pull requests with
   templates, test plans, and review etiquette to keep your repo pristine.
-difficulty: "\U0001F7E2 Easy"
+difficulty: 🟢 Easy
 draft: false
 estimated_time: 30-60 minutes
 fmContentType: quest
@@ -28,22 +27,20 @@ layout: quest
 learning_style: hands-on
 level: '0010'
 permalink: /quests/0010/branches-and-pull-requests/
-preview: images/previews/mastering-branches-and-pull-requests-for-developer.webp
+preview: /images/previews/mastering-branches-and-pull-requests-for-developer.webp
 primary_technology: Collaboration
 quest_series: Tools Collection
 quest_type: main_quest
 skill_focus: devops
 source_file: branches-and-pull-requests.md
 tags:
-- collaboration
-- git
-- github
-- pull requests
-- version control
+- Collaboration
+- Git
+- GitHub
+- Pull Requests
+- Version Control
 title: Branches And Pull Requests
 ---
-# Branches And Pull Requests
-
 * * * *
 
 🧙‍♂️ Branch Like a Wizard: GitHub PR Sorcery 101

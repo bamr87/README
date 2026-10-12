@@ -49,7 +49,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose installed
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/prometheus-grafana-metrics-collection-quest-title.png
+preview: /images/previews/prometheus-grafana-metrics-collection-quest-title.png
 primary_technology: prometheus
 quest_arc: Eyes on the Realm
 quest_dependencies:
@@ -435,8 +435,8 @@ groups:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
-**🏗️ System Engineer**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
+**🏗️ System Engineer**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)  
 **🛡️ Security Specialist**: Explore [ELK Stack](/quests/1010/elk-stack/)
 
 ## 📚 Resources

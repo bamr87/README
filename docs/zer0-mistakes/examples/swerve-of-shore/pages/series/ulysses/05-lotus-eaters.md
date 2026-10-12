@@ -1,5 +1,4 @@
 ---
-
 description: Notes on episode 5 of Ulysses — Lotus Eaters (10am, the bath house and
   the post office).
 hide_intro: true
@@ -12,8 +11,6 @@ sidebar:
 source_file: 05-lotus-eaters.md
 title: 05 Lotus Eaters
 ---
-# 05 Lotus Eaters
-
 {% include page-header.html %}
 
 Episode 5 of *Ulysses*. 10am, the bath house and the post office.

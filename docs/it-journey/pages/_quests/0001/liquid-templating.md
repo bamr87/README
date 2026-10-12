@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A working Jekyll site to experiment in
-preview: images/previews/liquid-templating-dynamic-content-jekyll-quest-de.png
+preview: /images/previews/liquid-templating-dynamic-content-jekyll-quest-de.png
 primary_technology: liquid
 quest_arc: Forging Your First Website
 quest_dependencies:
@@ -502,8 +502,8 @@ The dashes on every `for`/`unless`/`endfor` tag matter here - without them, each
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)
+**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
 **🎨 Frontend Specialist**: Deepen your theming with custom layouts
 
 ## 📚 Resources

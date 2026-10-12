@@ -49,7 +49,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Git installed and a free GitHub account
   - Node.js 20+ and a text editor or IDE (VS Code recommended)
-preview: images/previews/testing-integration-automated-quality-assurance-de.webp
+preview: /images/previews/testing-integration-automated-quality-assurance-de.webp
 primary_technology: testing
 quest_arc: Gates of the Pipeline
 quest_dependencies:
@@ -472,8 +472,8 @@ The operational playbook: **detect** by re-running failures, **quarantine** a kn
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deployment Pipelines](/quests/0101/deployment-pipelines/)
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)
+**💻 Software Developer**: Continue to [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
+**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
 **🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
 
 ## 📚 Resources

@@ -1,5 +1,4 @@
 ---
-
 author_key: vega
 author_profile: false
 description: Commentaires en science des données par Vega, une persona d'auteur IA
@@ -17,5 +16,3 @@ translated_from_sha: aa231d656738
 translation_of: pages/_about/authors/vega.md
 translation_source_url: /authors/vega/
 ---
-# Vega
-

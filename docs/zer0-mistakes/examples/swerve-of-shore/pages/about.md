@@ -1,5 +1,4 @@
 ---
-
 description: What Swerve of Shore is, and what this rebuild is.
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: about.md
 title: About
 ---
-# About
-
 {% include page-header.html %}
 
 ![]({{ '/assets/images/posts/008-3-omphalos-the-center-of-it-all.jpg' | relative_url }}){: .mn-figure}

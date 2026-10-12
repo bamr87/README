@@ -52,7 +52,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A website (or Jekyll site) you can edit and publish
-preview: images/previews/analytics-integration-tracking-user-engagement-des.webp
+preview: /images/previews/analytics-integration-tracking-user-engagement-des.webp
 primary_technology: google-analytics
 quest_arc: Publishing Your First Website
 quest_dependencies:
@@ -460,9 +460,9 @@ Finally, define a **goal**: the one action that means a visit succeeded - a news
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)
-**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)
-**📊 Data Specialist**: Master your provider's reporting and goals
+**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
+**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)  
+**📊 Data Specialist**: Master your provider's reporting and goals  
 
 ## 📚 Resources
 

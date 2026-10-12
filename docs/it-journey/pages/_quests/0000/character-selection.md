@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories: []
 date: '2023-11-25T14:12:43.000Z'
@@ -35,7 +34,7 @@ prerequisites:
   system_requirements:
   - Computer with internet access for research
   - Note-taking tool (digital or physical)
-preview: images/previews/character-selection.webp
+preview: /images/previews/character-selection.webp
 primary_technology: character-selection
 quest_arc: Character Creation Arc
 quest_dependencies:
@@ -79,8 +78,6 @@ validation_criteria:
   - Can describe different IT career roles and their focuses
   - Can explain which character class best matches your interests
 ---
-# Character Selection
-
 *Welcome to the Character Selection chamber, brave adventurer! Just as every RPG hero must choose their class before venturing into the world, you must select your IT specialization to focus your training and skills. Each character class offers a unique path through the digital realm.*
 
 ## 🎯 Quest Objectives

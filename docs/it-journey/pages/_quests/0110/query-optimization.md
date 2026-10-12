@@ -48,7 +48,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - PostgreSQL 14+ (or Docker to run it)
-preview: images/previews/query-optimization-performance-tuning-quest-titl.png
+preview: /images/previews/query-optimization-performance-tuning-quest-titl.png
 primary_technology: sql
 quest_arc: The Speed Sanctum
 quest_dependencies:
@@ -389,8 +389,8 @@ Each network round trip to the database costs a fixed overhead (often a millisec
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)
+**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)  
+**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
 **📊 Data Scientist**: Advance to [Database Migrations](/quests/0110/database-migrations/)
 
 ## 📚 Resources

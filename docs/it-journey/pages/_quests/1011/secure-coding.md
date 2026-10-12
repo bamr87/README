@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A code editor or IDE (VS Code recommended)
   - A language runtime such as Python 3.10+ or Node.js 18+
-preview: images/previews/secure-coding-practices-owasp-top-10-vulnerability.png
+preview: /images/previews/secure-coding-practices-owasp-top-10-vulnerability.png
 primary_technology: security
 quest_arc: Forging the Hardened Codebase
 quest_dependencies:
@@ -461,8 +461,8 @@ bandit -r ./src --severity-level medium
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Threat Modeling](/quests/1011/threat-modeling/)
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)
+**💻 Software Developer**: Continue to [Threat Modeling](/quests/1011/threat-modeling/)  
+**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
 **🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
 
 ## 📚 Resources

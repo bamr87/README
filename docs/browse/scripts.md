@@ -9,12 +9,13 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **15 pages** across **2 sections** (max depth 2).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **16 pages** across **2 sections** (max depth 2).
 
-- [scripts directory](../scripts/README.md)
+- [🛠️ scripts](../scripts/README.md)
 - [CLAUDE.md](../scripts/CLAUDE.md)
 - [Linting Configuration Management](../scripts/linting/README.md)
 - [Rename Directory Utility - Quick Reference](../scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md)
+- [Security Policy](../scripts/SECURITY.md)
 - **[🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)** <small>(7)</small>
   - [🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)
   - [ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/FORKME.md)

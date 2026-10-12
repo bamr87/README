@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - A terminal and a text editor or IDE (VS Code recommended)
   - Optional Docker for the hands-on lab
-preview: images/previews/security-fundamentals-cia-triad-quest-title-defens.webp
+preview: /images/previews/security-fundamentals-cia-triad-quest-title-defens.webp
 primary_technology: security
 quest_arc: Foundations of the Shieldwall
 quest_dependencies:
@@ -404,8 +404,8 @@ GRANT SELECT ON shop.products TO 'app_user'@'10.0.%';
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
-**🏗️ System Engineer**: Explore [Threat Modeling](/quests/1011/threat-modeling/)
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
+**🏗️ System Engineer**: Explore [Threat Modeling](/quests/1011/threat-modeling/)  
 **🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
 
 ## 📚 Resources

@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Python 3.10+ with pip and venv, plus a JDK for Spark
   - 8 GB RAM recommended; Docker optional for a cluster
-preview: images/previews/apache-spark-mastery-descriptive-subtitle.webp
+preview: /images/previews/apache-spark-mastery-descriptive-subtitle.webp
 primary_technology: spark
 quest_arc: Taming Distributed Compute
 quest_dependencies:
@@ -445,8 +445,8 @@ Cache only what you reuse; caching everything wastes memory and can slow you dow
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Stream Processing](/quests/1100/stream-processing/)
-**🏗️ System Engineer**: Revisit [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) to scale your pipeline
+**💻 Software Developer**: Continue to [Stream Processing](/quests/1100/stream-processing/)  
+**🏗️ System Engineer**: Revisit [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) to scale your pipeline  
 **📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
 
 ## 📚 Resources

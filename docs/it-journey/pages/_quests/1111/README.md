@@ -16,7 +16,7 @@ level: '1111'
 local_graph: false
 mermaid: true
 permalink: /quests/1111/
-preview: images/previews/level-1111-leadership-innovation.webp
+preview: /images/previews/level-1111-leadership-innovation.webp
 sidebar:
   nav: quests
 source_file: README.md
@@ -74,17 +74,17 @@ graph TB
         BTC[Building Communities]
         CA[Career Advancement]
     end
-
+    
     subgraph "Prerequisites (Level 1110)"
         ARCH[Architecture & Design]
     end
-
+    
     subgraph "Achievements"
         LEGEND[🏆 Legendary Status]
         LEADER[👑 Community Leader]
         MENTOR[🎓 Master Mentor]
     end
-
+    
     ARCH --> TL
     ARCH --> OSS
     TL --> TSW

@@ -1,5 +1,4 @@
 ---
-
 description: Where the reading starts, and which edition it works from.
 hide_intro: true
 layout: default
@@ -11,8 +10,6 @@ sidebar:
 source_file: 00-introduction.md
 title: 00 Introduction
 ---
-# 00 Introduction
-
 {% include page-header.html %}
 
 Opening notes, before the first episode. The reading works from the 1922 first printing by Shakespeare & Co.

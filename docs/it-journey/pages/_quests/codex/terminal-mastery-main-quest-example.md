@@ -430,5 +430,4 @@ This foundational quest connects to multiple learning paths:
 
 *This main quest unlocks multiple side quests that will enhance your terminal experience and several advanced main quests that build upon these foundational skills. Choose your next adventure based on your interests and career goals - the digital realm awaits your exploration!*
 
-**Achievement Unlocked: Terminal Navigation Master** 🏆
-*Continue your adventure with related side quests or advance to the next main quest in your chosen learning path!*
+**Achievement Unlocked: Terminal Navigation Master** 🏆 *Continue your adventure with related side quests or advance to the next main quest in your chosen learning path!*

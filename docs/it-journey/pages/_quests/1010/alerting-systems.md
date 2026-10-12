@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose for the Prometheus + Alertmanager lab
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/alerting-systems-pagerduty-quest-title-incident-ma.webp
+preview: /images/previews/alerting-systems-pagerduty-quest-title-incident-ma.webp
 primary_technology: alertmanager
 quest_arc: From Signal to Response
 quest_dependencies:
@@ -453,8 +453,8 @@ A runbook turns a panicked guess into a checklist. After the incident, a blamele
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Security Fundamentals](/quests/1011/security-fundamentals/)
-**🏗️ System Engineer**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) to tighten SLOs
+**💻 Software Developer**: Continue to [Security Fundamentals](/quests/1011/security-fundamentals/)  
+**🏗️ System Engineer**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) to tighten SLOs  
 **🛡️ Security Specialist**: Advance to [Security Fundamentals](/quests/1011/security-fundamentals/)
 
 ## 📚 Resources

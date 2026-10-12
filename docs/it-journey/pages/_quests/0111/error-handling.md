@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - curl installed
   - Optional Python 3 for the retry lab
-preview: images/previews/error-handling-status-codes-problem-details.png
+preview: /images/previews/error-handling-status-codes-problem-details.png
 primary_technology: http
 quest_arc: Guardians of the Interface
 quest_dependencies:
@@ -406,8 +406,8 @@ Never retry a `400` or `422` - the request is wrong and will fail forever. Alway
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Rate Limiting](/quests/0111/rate-limiting/)
-**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)
+**💻 Software Developer**: Continue to [Rate Limiting](/quests/0111/rate-limiting/)  
+**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)  
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

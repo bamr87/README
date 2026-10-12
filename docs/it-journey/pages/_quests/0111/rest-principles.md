@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - curl installed
   - Optional jq for inspecting JSON
-preview: images/previews/rest-principles-resources-statelessness-maturity.png
+preview: /images/previews/rest-principles-resources-statelessness-maturity.png
 primary_technology: rest
 quest_arc: Foundations of the Interface
 quest_dependencies:
@@ -380,8 +380,8 @@ curl -s https://api.github.com/repos/torvalds/linux | jq 'keys | map(select(test
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)
-**🏗️ System Engineer**: Explore [API Documentation](/quests/0111/api-documentation/)
+**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)  
+**🏗️ System Engineer**: Explore [API Documentation](/quests/0111/api-documentation/)  
 **🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
 
 ## 📚 Resources

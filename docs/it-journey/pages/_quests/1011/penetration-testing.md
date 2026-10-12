@@ -50,7 +50,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux) - Kali Linux recommended for tooling
   - Permission to use an isolated lab target (never a system you do not own)
   - nmap, and Burp Suite or OWASP ZAP installed
-preview: images/previews/penetration-testing-tools-and-ethical-hacking-meth.png
+preview: /images/previews/penetration-testing-tools-and-ethical-hacking-meth.png
 primary_technology: security
 quest_arc: The Sanctioned Siege
 quest_dependencies:
@@ -409,8 +409,8 @@ A report's value is measured by how easily a developer can act on it - clear sev
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)
+**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
+**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
 **🛡️ Security Specialist**: Advance to [Threat Modeling](/quests/1011/threat-modeling/)
 
 ## 📚 Resources

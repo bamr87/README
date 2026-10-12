@@ -1,5 +1,4 @@
 ---
-
 character: game-developer
 date: '2026-08-16T00:00:00.000Z'
 level: '0001'
@@ -19,8 +18,6 @@ theme: Web Fundamentals
 tier: Apprentice
 title: 2026 08 16 Game Developer 0001
 ---
-# 2026 08 16 Game Developer 0001
-
 ## 🎯 Session Summary
 
 I walked a **5-quest window (2 of 6)** of the **Game Developer → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path as a first-time learner, backed by the workflow's sealed execute-mode engine evidence. The level holds **26 quests**; this run swept quests 11–15 in dependency order, so coverage of the level is partial by design (the perfection ledger accumulates the rest across runs).

@@ -25,7 +25,7 @@ This directory contains the CI/CD workflows for the zer0-mistakes Jekyll theme.
 │  Schedules ─────────► test-latest.yml (daily canary),                │
 │                       update-dependencies.yml, install-matrix.yml,   │
 │                       codeql.yml, issue-autopilot.yml,               │
-│                       giscus-digest.yml (weekly)                     │
+│                       giscus-digest.yml, zer0-doctor.yml (weekly)    │
 │                                                                       │
 └───────────────────────────────────────────────────────────────────────┘
 ```
@@ -68,7 +68,7 @@ Requires any PR that touches UI paths (`_sass/`, `_includes/`, `_layouts/`,
 
 ### `visual-evidence-autogen.yml` — Visual evidence autogen
 
-**Triggers:** Pull Requests from this repo (never forks)
+**Triggers:** Pull Requests from this repo (never forks) — `opened`, `synchronize`, `reopened`, `ready_for_review`, and `unlabeled` (only when the label removed is `skip-evidence` / `no-visual-change`). Deliberately **not** `labeled`: adding a label can only suppress this lane, so a `labeled` event has no work to do, and each one used to start a run that cancelled the render already in flight.
 
 The **producer** behind the evidence gate and the pixel tier. A Python orchestrator (`scripts/ci/visual_evidence_autogen.py`) plans from the PR's diff, brings Jekyll up with `docker compose`, runs the PR's own `test/visual/<slug>-evidence.mjs` generators — or the generic base-vs-head generator `test/visual/pr-evidence.mjs`, which renders the base branch and the head side by side — and verifies the 9-skin baselines, all inside the same jammy Playwright image `ci.yml` compares with. The `visual-evidence-reviewer` agent then views the expected | actual | diff montage and writes a verdict; **only an `intentional` verdict lets code regenerate the baselines** (#417: a blessed regression and a green check are indistinguishable). Generated folders and, when blessed, `test/visual/snapshots/` are committed to the PR branch with a `[visual-autogen]` marker; one sticky comment shows the images. Loop guard + three-commit budget per PR; kill switch `VISUAL_EVIDENCE_AUTOGEN_ENABLED=false`; per-PR opt-out via the gate's labels. Born from PR #454, which sat red with nine legitimately stale baselines that no Docker-less agent could refresh. `ci-self-repair.yml` stands down when `Visual Snapshots` is the only red job.
 
@@ -196,6 +196,12 @@ The job goes **red** when the sweep captures nothing — enforced twice, by `swe
 **Triggers:** Weekly schedule, Manual dispatch
 
 Read-only digest of Giscus-backed GitHub Discussions to the job summary.
+
+### `zer0-doctor.yml` — zer0 stack contract check (report-only)
+
+**Triggers:** Weekly schedule (Wed 05:43 UTC), Manual dispatch
+
+A thin caller of the reusable `bamr87/zer0-CMS/.github/workflows/zer0-doctor.yml@main` with `fail-on-error: false`: it reports whether the docs site is aligned with the zer0 stack (theme, image generator gem + `preview_images:`, `zer0.json`, `fleet.manifest.yml`, front-matter required keys) and never fails. It is deliberately not on `pull_request`/`push`, so it cannot redden a PR — it stays inert until zer0-CMS ships the reusable workflow. No model, no secrets, `contents: read`; the job has no `timeout-minutes` because GitHub does not allow the key on a job that calls a reusable workflow (the called workflow bounds itself). The same file is shipped to consumer sites as `templates/consumer/zer0-doctor.yml`.
 
 ## Gate Coverage — What Enforces What
 

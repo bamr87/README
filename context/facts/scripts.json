@@ -1,45 +1,42 @@
 {
   "corpus": {
-    "file_count": 15,
-    "fingerprint": "2b01e2e4e6e5320f",
+    "file_count": 16,
+    "fingerprint": "fa01eba870a14872",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 145157
+    "total_bytes": 142099
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
-      "\ud83d\udce6 Available Tools",
-      "\ud83c\udf74 ForkMe - Quick Overview",
-      "\ud83d\udcbe StashMe - Quick Overview",
-      "\ud83d\udcc1 Rename Directory Utility",
-      "\ufffd\ud83d\ude80 Project Initialization Wizard",
-      "\u2728 Features",
-      "\ud83d\ude80 Quick Start",
-      "\ud83d\udccb Configuration",
-      "\ud83d\udee0\ufe0f Project Type Details",
-      "\ud83d\udc33 Docker Integration"
+      "\ud83d\udce6 Tool index",
+      "\ud83d\ude80 Installation",
+      "\ud83c\udfaf Quick start",
+      "\ud83d\udd12 Prerequisites",
+      "\u2705 Development",
+      "\ud83e\udded Fleet context",
+      "\ud83d\udcc4 License"
     ],
     "readme": "README.md",
-    "summary": "This directory contains project scripts used for automation and development tasks. It is intentionally tracked in the repository so collaborators can run and maintain these utilities.",
-    "title": "scripts directory"
+    "summary": "A standalone collection of Bash command-line utilities (plus one Python tool) for project bootstrapping, GitHub repository management, and multi-repo maintenance.",
+    "title": "\ud83d\udee0\ufe0f scripts"
   },
   "key_docs": [
     "README.md",
     "CLAUDE.md",
+    "SECURITY.md",
     "FORKME/FORKME.md",
     "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
     "FORKME/FORKME-EXAMPLES.md",
     "FORKME/IMPROVEMENTS.md",
-    "FORKME/REVIEW-SUMMARY.md",
-    "STASHME/STASHME-EXAMPLES.md"
+    "FORKME/REVIEW-SUMMARY.md"
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "ecb49a40e48b28a2",
+    "fingerprint": "09fcd3b2365b6268",
     "index": "scripts/README.md",
     "max_depth": 2,
-    "pages": 15,
+    "pages": 16,
     "present": true,
     "sections": 2,
     "skipped": 0,
@@ -79,16 +76,17 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 15
+      "scripts": 16
     },
     "code_languages": [
       "bash",
       "plaintext",
-      "yaml"
+      "yaml",
+      "text"
     ],
-    "indexed_documents": 15,
+    "indexed_documents": 16,
     "top_tags": [],
-    "total_words": 17311
+    "total_words": 17120
   },
   "schema_version": "1.0",
   "signals": {
@@ -97,13 +95,14 @@
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
       "CLAUDE.md",
       "README.md",
-      "RENAME-DIRECTORY-QUICK-REFERENCE.md"
+      "RENAME-DIRECTORY-QUICK-REFERENCE.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {

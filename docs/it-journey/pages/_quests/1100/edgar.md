@@ -1,5 +1,4 @@
 ---
-
 author: Quest Master IT-Journey Team
 categories:
 - Quests
@@ -46,7 +45,7 @@ prerequisites:
 - Python 3.10+ and pip/venv (or language of choice)
 - Basic REST API knowledge and JSON handling
 - A User-Agent header string (e.g., 'DataDruidGuild questmaster@financea.com')
-preview: images/previews/quest-to-conquer-king-edgar-the-epic-siege-of-the-.webp
+preview: /images/previews/quest-to-conquer-king-edgar-the-epic-siege-of-the-.webp
 primary_technology: python
 quest_series: Data Realm Conquests
 quest_type: main_quest
@@ -79,8 +78,6 @@ validation_criteria:
 - Respect rate limits (no 429s in final run) and implement basic backoff
 - Write a short readme summarizing findings
 ---
-# Edgar
-
 🌟 Welcome, Brave Data Sorcerer! 🌟
 
 In the fog-shrouded realms of Financea, where gold flows like enchanted rivers and secrets are hoarded in towering vaults, stands the impregnable Data Castle ruled by the tyrannical King EDGAR. This ancient monarch, Sovereign of Electronic Data Gathering, Analysis, and Retrieval, guards the sacred scrolls of corporate filings—balance sheets that shimmer like dragon scales, income statements pulsing with the lifeblood of profits, and trends that whisper prophecies of market booms and busts.

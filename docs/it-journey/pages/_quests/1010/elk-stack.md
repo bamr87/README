@@ -51,7 +51,7 @@ prerequisites:
   - Modern OS (macOS, Windows 10+, Linux)
   - Docker and Docker Compose (8 GB RAM recommended for the stack)
   - A terminal and a text editor or IDE (VS Code recommended)
-preview: images/previews/elk-stack-elasticsearch-logstash-quest-title-kiban.webp
+preview: /images/previews/elk-stack-elasticsearch-logstash-quest-title-kiban.webp
 primary_technology: elasticsearch
 quest_arc: Mastering the Logs Pillar
 quest_dependencies:
@@ -529,8 +529,8 @@ not status : 200
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)
-**🏗️ System Engineer**: Explore [Alerting Systems](/quests/1010/alerting-systems/)
+**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
+**🏗️ System Engineer**: Explore [Alerting Systems](/quests/1010/alerting-systems/)  
 **🛡️ Security Specialist**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) for SLO grounding
 
 ## 📚 Resources

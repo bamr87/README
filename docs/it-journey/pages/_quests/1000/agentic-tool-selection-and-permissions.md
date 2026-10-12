@@ -35,7 +35,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Copilot access
   - VS Code with GitHub Copilot extension
-preview: images/previews/agentic-tool-selection-and-permissions.png
+preview: /images/previews/agentic-tool-selection-and-permissions.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

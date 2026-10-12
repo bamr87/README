@@ -47,7 +47,7 @@ prerequisites:
   system_requirements:
   - A Markdown editor for ADRs and review notes
   - A real or recent design to review
-preview: images/previews/architecture-reviews-adrs-trade-off-facilitation.png
+preview: /images/previews/architecture-reviews-adrs-trade-off-facilitation.png
 primary_technology: architecture
 quest_arc: The Architect-King's Ascension
 quest_dependencies:
@@ -406,8 +406,8 @@ Then connect it back to the vision and the reversibility rule from earlier quest
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Innovation and R&D](/quests/1111/innovation-rnd/) to pressure-test new bets
-**🏗️ System Engineer**: Return to [Technical Leadership](/quests/1111/technical-leadership/) to lead design forums
+**💻 Software Developer**: Revisit [Innovation and R&D](/quests/1111/innovation-rnd/) to pressure-test new bets  
+**🏗️ System Engineer**: Return to [Technical Leadership](/quests/1111/technical-leadership/) to lead design forums  
 **🛡️ Security Specialist**: Apply reviews to [Security Fundamentals](/quests/1011/security-fundamentals/) threat models
 
 ## 📚 Resources

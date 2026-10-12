@@ -1,5 +1,4 @@
 ---
-
 admin_actions:
 - icon: bi-palette
   label: Theme Customizer
@@ -17,8 +16,6 @@ source_file: theme-preview.md
 source_icon: bi-easel
 title: Theme Preview
 ---
-# Theme Preview
-
 {% include components/theme-controls-bar.html show_status=true %}
 
 <div class="row g-4">

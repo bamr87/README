@@ -55,6 +55,5 @@ See [Ecosystem Integration Configuration](./ecosystem-integration-config.md) for
 
 ---
 
-**Last Updated**: October 28, 2025
-**Maintainer**: Barodybroject Team
+**Last Updated**: October 28, 2025 **Maintainer**: Barodybroject Team
 **Related**: [Features](../features/README.md) | [Changelog](../changelog/CHANGELOG.md) | [Project README](../../README.md)

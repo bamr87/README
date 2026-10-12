@@ -386,20 +386,14 @@ Session data is loaded on startup and cached in memory. At current scale (~250 s
 
 ## Troubleshooting
 
-**`Error: Could not auto-detect game root`**
-Run from within the repo, or pass `--game-root /path/to/bashcrawl`.
+**`Error: Could not auto-detect game root`** Run from within the repo, or pass `--game-root /path/to/bashcrawl`.
 
-**Port already in use**
-Use `--port 8080` (or any free port).
+**Port already in use** Use `--port 8080` (or any free port).
 
-**`ModuleNotFoundError: flask`**
-Run `pip install -r src/viewer/requirements.txt` first.
+**`ModuleNotFoundError: flask`** Run `pip install -r src/viewer/requirements.txt` first.
 
-**Screenshots not showing**
-SVGs are served directly from `logs/screenshots/`. Ensure the directory exists and contains subdirectories with `.svg` files.
+**Screenshots not showing** SVGs are served directly from `logs/screenshots/`. Ensure the directory exists and contains subdirectories with `.svg` files.
 
-**Analytics charts blank**
-Chart.js is loaded from CDN — an internet connection is required the first time the analytics page loads. After that, your browser caches the library.
+**Analytics charts blank** Chart.js is loaded from CDN — an internet connection is required the first time the analytics page loads. After that, your browser caches the library.
 
-**Stale session data**
-Click the **Refresh** button on the analytics or session list pages, or restart the viewer to force a full reload.
+**Stale session data** Click the **Refresh** button on the analytics or session list pages, or restart the viewer to force a full reload.

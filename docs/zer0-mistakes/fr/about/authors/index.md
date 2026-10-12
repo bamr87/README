@@ -1,5 +1,4 @@
 ---
-
 author_profile: false
 description: Découvrez les personnes derrière le contenu.
 hide_intro: true
@@ -15,5 +14,3 @@ translated_from_sha: 85960b87208d
 translation_of: pages/_about/authors/index.md
 translation_source_url: /authors/
 ---
-# Index
-

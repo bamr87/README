@@ -1,5 +1,4 @@
 ---
-
 author: IT-Journey Team
 categories:
 - Quests
@@ -7,7 +6,7 @@ categories:
 date: '2023-12-03T01:47:51.000Z'
 description: Discover the services and tools behind a personal website built on GitHub
   Pages, from Jekyll hosting and CDN to analytics, search, and comments.
-difficulty: "\U0001F7E2 Easy"
+difficulty: 🟢 Easy
 draft: false
 estimated_time: 45-60 minutes
 fmContentType: quest
@@ -27,7 +26,7 @@ permalink: /quests/0001/personal-site/
 prerequisites:
   knowledge_requirements: []
   system_requirements: []
-preview: images/previews/personal-site.webp
+preview: /images/previews/personal-site.webp
 primary_technology: Personal Site
 quest_arc: Personal portfolio arc
 quest_dependencies:
@@ -47,7 +46,7 @@ skill_focus: devops
 source_file: personal-site.md
 subcategory: jekyll
 tags:
-- personal site
+- Personal Site
 - '0001'
 - github-pages
 title: Personal Site
@@ -55,8 +54,6 @@ validation_criteria:
   completion_requirements: []
   skill_demonstrations: []
 ---
-# Personal Site
-
 ## 🎯 Quest Objectives
 
 By the end of this quest, you will be able to:

@@ -36,7 +36,7 @@ prerequisites:
   system_requirements:
   - GitHub account with Actions enabled
   - Access to download and inspect Actions artifacts
-preview: images/previews/agentic-failure-root-cause-analysis.png
+preview: /images/previews/agentic-failure-root-cause-analysis.png
 primary_technology: github-copilot
 quest_arc: The Agentic Codex
 quest_dependencies:

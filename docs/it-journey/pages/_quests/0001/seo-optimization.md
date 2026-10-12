@@ -51,7 +51,7 @@ prerequisites:
   system_requirements:
   - Modern OS (macOS, Windows 10+, Linux)
   - A Jekyll site (or any static HTML site) to edit
-preview: images/previews/seo-optimization-search-engine-visibility-descript.webp
+preview: /images/previews/seo-optimization-search-engine-visibility-descript.webp
 primary_technology: jekyll
 quest_arc: Publishing Your First Website
 quest_dependencies:
@@ -524,9 +524,9 @@ Verify with a dedicated checker beyond Lighthouse:
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)
-**🏗️ System Engineer**: Explore [Analytics Integration](/quests/0001/analytics-integration/)
-**🎨 Frontend Specialist**: Advance to [Analytics Integration](/quests/0001/analytics-integration/)
+**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
+**🏗️ System Engineer**: Explore [Analytics Integration](/quests/0001/analytics-integration/)  
+**🎨 Frontend Specialist**: Advance to [Analytics Integration](/quests/0001/analytics-integration/)  
 
 ## 📚 Resources
 

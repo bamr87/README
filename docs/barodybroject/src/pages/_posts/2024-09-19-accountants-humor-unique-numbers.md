@@ -1,5 +1,4 @@
 ---
-
 author: Jane Doe
 description: A dive into the unique humor of accountants, showcasing how their profession
   lends itself to clever jokes and wit.
@@ -8,8 +7,6 @@ slug: accountants-humor-unique-numbers
 source_file: 2024-09-19-accountants-humor-unique-numbers.md
 title: 2024 09 19 Accountants Humor Unique Numbers
 ---
-# 2024 09 19 Accountants Humor Unique Numbers
-
 ### The Hilarious World of Accountancy: Why Number Crunchers Need Humor Too
 
 #### Exploring the Unique Sense of Humor Among Accountants and What Makes It So Special
