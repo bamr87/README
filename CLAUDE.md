@@ -32,7 +32,7 @@ Everything flows left-to-right; each stage's output is the next stage's input. S
 
 ### The context engine (`scripts/context_engine/`)
 
-Package layout: `registry.py` (load/validate registry + the navigation contract, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `navigator.py` (corpus hierarchy + contract → one nav tree, rendered to `context/nav/`, `nav.yml` and `docs/browse/`; also folded back into the facts so cards and the sidebar describe the same sections) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest; section titles are indexed so searches land on the right part of the sidebar) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
+Package layout: `registry.py` (load/validate registry + the navigation contract, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `navigator.py` (corpus hierarchy + contract → one nav tree, rendered to `context/nav/`, `nav.yml` and `docs/browse/`; also folded back into the facts so cards and the sidebar describe the same sections) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest; section titles are indexed so searches land on the right part of the sidebar) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `survey.py` + `gather/` + `analyze/` are a separate fleet documentation survey (input `_data/fleet.yml`, the full public-repo inventory, not the corpus registry; output `context/sources/*.json` and `context/reports/fleet_health.{json,md}`). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
 
 ### The MCP server (`mcp/server.py`)
 
@@ -59,9 +59,12 @@ python3 -m scripts.context_engine build          # full pyramid rebuild (--ai au
 python3 -m scripts.context_engine sync           # registry -> repos.txt
 python3 -m scripts.context_engine query <terms>  # search; also: card/facts/apex/status/projects
 python3 -m scripts.context_engine nav [project]  # navigation tree (--depth N, --json)
+python3 -m scripts.context_engine survey [repo]  # fleet doc-health survey from _data/fleet.yml (clones; --local PATH, --no-write)
 
-# Drift gate (run before committing structural changes)
-python3 scripts/schema_lint.py check .
+# Gates (PR CI and the cron both run these three)
+python3 scripts/schema_lint.py check .           # SCHEMA drift (run before committing structural changes)
+python3 -m scripts.context_engine navcheck       # nav.yml / context/nav / docs/browse match the corpus; fix = rebuild
+python3 scripts/check_tracked_surfaces.py        # surfaces reference only git-tracked files
 ```
 
 Dependencies: `pip install -r requirements.txt` (pyyaml, requests, nltk, pytest). A `.venv/` may exist in-tree — `source .venv/bin/activate`.
@@ -81,7 +84,7 @@ Unit tests live in `tests/unit/test_cases/` (unittest discovery; `tests/unit/tes
 ## CI workflows (`.github/workflows/`)
 
 - `aggregate-docs.yaml` — weekly cron (+ manual): registry sync → `aggregate.sh` → corpus index → **context engine build** (AI enrichment auto-enables when `ANTHROPIC_API_KEY`/`XAI_API_KEY` secrets exist) → schema lint → auto-commit to `main`. This is why `docs/`, `context/`, and the README span churn on their own; treat them as build artifacts.
-- `docs-quality-check.yaml` — PRs to `main` and `quality/*` pushes: **schema lint drift gate**, then doc lint + frontmatter checks, report artifact + PR comment.
+- `docs-quality-check.yaml` — PRs to `main` and `quality/*` pushes: **schema lint drift gate**, **`navcheck`** (fails if any branch touches `docs/**` without rebuilding the nav surfaces) and **`check_tracked_surfaces.py`**, then doc lint + frontmatter checks, report artifact + PR comment.
 - `ci.yml` — thin caller of the parent's shared `standard-ci.yml` gate; don't edit the logic here.
 - `deploy-pages.yaml` — pushes to `main` touching `docs/**`: builds the MkDocs Material site (**not** `--strict`; aggregated docs carry expected broken cross-references) and publishes to GitHub Pages. `docs/index.md` (the site home) is generated by the engine.
 

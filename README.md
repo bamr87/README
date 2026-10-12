@@ -73,7 +73,7 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 ## Continuous evolution
 
 - **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it.
-- **`docs-quality-check.yaml`** lints the corpus and runs the SCHEMA drift gate on every PR.
+- **`docs-quality-check.yaml`** runs on every PR: the SCHEMA drift gate, the navigation drift gate (`context_engine navcheck`), and the tracked-surfaces integrity gate (`scripts/check_tracked_surfaces.py`), then lints the corpus and posts a report. The cron runs the same three gates before it commits.
 - **`deploy-pages.yaml`** publishes `docs/` (whose home page is the generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
 - **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples.
 
@@ -88,6 +88,7 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 | Path | What it is |
 |---|---|
 | `_data/projects.yml` | Fleet registry — the source of truth |
+| `_data/fleet.yml` | Fleet inventory (every public repo + kind) — input to `python3 -m scripts.context_engine survey`, which writes `context/reports/fleet_health.{json,md}`; separate from the aggregated corpus |
 | `scripts/` | Pipeline stages, context engine, gates ([scripts/README.md](scripts/README.md)) |
 | `context/` | **Generated** context pyramid (facts, cards, apex, index) |
 | `docs/` | **Generated** aggregated corpus + MkDocs site content |
@@ -104,8 +105,12 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 ```bash
 python tests/test_runner.py --type quick     # unit suite
 python3 scripts/schema_lint.py check .       # structure drift gate
+python3 -m scripts.context_engine navcheck   # nav.yml / context/nav / docs/browse match the corpus
+python3 scripts/check_tracked_surfaces.py    # every surface names only git-tracked files
 bash scripts/run_doc_checks.sh               # corpus quality checks
 ```
+
+If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit the regenerated surfaces. Don't edit them by hand.
 
 ## License
 
