@@ -1,8 +1,22 @@
 # README — the bamr87 context engine
 
+> Context engine for the bamr87 fleet: crawlers and distillers that build queryable docs for every project, incl. MCP.
+
+[![CI](https://github.com/bamr87/README/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/README/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/README)](LICENSE) [![Live site](https://img.shields.io/badge/live-bamr87.github.io%2FREADME-2ea44f)](https://bamr87.github.io/README/)
+
+## Overview
+
 The consolidated README of the [bamr87/bamr87](https://github.com/bamr87/bamr87) monorepo: a set of crawlers, distillers, and gates — with AI orchestration hooks and an MCP query surface — that continuously build and maintain the context describing every submodule in the fleet.
 
 Instead of hand-writing documentation *about* the fleet, this repo **grows it**: crawlers aggregate each project's markdown, the engine distills the corpus upward into a pyramid of context, and an MCP server makes the whole thing queryable by AI clients. The pyramid is regenerated on a schedule, so the context evolves as the fleet does.
+
+## Features
+
+- Crawlers that aggregate each fleet project's markdown into `docs/`
+- A distiller that builds a context pyramid: a fleet README, one card per project and structured facts
+- A queryable index with a CLI and an MCP server (`mcp/server.py`) for AI clients
+- Scheduled regeneration so the context evolves with the fleet
+- Every governed directory carries a `SCHEMA.md` structure contract
 
 ## The pyramid
 
@@ -83,8 +97,7 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 2. `python3 -m scripts.context_engine sync` — regenerates `repos.txt`.
 3. `bash scripts/aggregate.sh && python3 -m scripts.context_engine build` — or just wait for the scheduled workflow.
 
-## Repository map
-
+## Project structure
 | Path | What it is |
 |---|---|
 | `_data/projects.yml` | Fleet registry — the source of truth |
@@ -112,6 +125,19 @@ bash scripts/run_doc_checks.sh               # corpus quality checks
 
 If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit the regenerated surfaces. Don't edit them by hand.
 
+## Contributing
+
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents should start with [CLAUDE.md](CLAUDE.md).
+
+## Changelog
+
+There is no CHANGELOG.md yet; changes are tracked in the [commit history](https://github.com/bamr87/README/commits/main).
+
 ## License
 
 MIT for the machinery in this repository. Aggregated documentation under `docs/` retains the license of its source repository.
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).
