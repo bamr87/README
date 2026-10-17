@@ -47,6 +47,7 @@ coverage: listed
 | `.mcp.json` | file | MCP server registration for Claude Code and other clients | required |
 | `CLAUDE.md` | file | Claude Code guidance, including the SCHEMA protocol | required |
 | `LICENSE` | file | MIT license | |
+| `CHANGELOG.md` | file | Notable changes, in Keep a Changelog format | |
 | `MKDOCS.md` | file | Site build documentation | |
 | `PLAN.md` | file | v3 redesign plan — five-stage platform, check catalogue, roadmap | |
 | `PRD.md` | file | Product requirements — context engine spec (v2) | |
