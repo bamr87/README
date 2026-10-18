@@ -97,7 +97,7 @@ class AnthropicProvider(BaseProvider):
                 "no Anthropic credential: set ANTHROPIC_API_KEY, or wire "
                 "Claude Code OAuth via CLAUDE_CODE_OAUTH_TOKEN "
                 "(`claude setup-token`) / ANTHROPIC_AUTH_TOKEN")
-        self.model = model or os.getenv("CONTEXT_AI_MODEL", "claude-opus-4-8")
+        self.model = model or os.getenv("CONTEXT_AI_MODEL", "claude-opus-5-5")
 
     @property
     def auth_mode(self) -> str:
