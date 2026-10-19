@@ -16,21 +16,27 @@ The testing framework provides:
 
 ```
 tests/
-├── unit/                    # Unit tests
-│   ├── test_cases/         # Individual test case files
-│   │   ├── test_categorization.py
+├── unit/                          # Unit tests
+│   ├── test_cases/                # unittest modules (discovered by the runner)
+│   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, schema lint, MCP
 │   │   ├── test_file_processing.py
-│   │   └── test_repo_operations.py
-│   └── test_runner.py      # Unit test runner
-├── integration/            # Integration tests
-│   ├── test_integration.py # Integration test cases
-│   └── test_repo_runner.py # Repository test runner
-├── fixtures/              # Test fixtures and sample data
-│   └── sample_docs.py     # Sample documentation files
-├── results/               # Test results storage
-├── config.py              # Test configuration
-├── test_runner.py         # Main test runner
-└── README.md              # This file
+│   │   ├── test_fleet_survey.py   # fleet survey checks + health report
+│   │   ├── test_repo_operations.py
+│   │   └── test_tracked_surfaces.py
+│   ├── test_docs_tools.py         # pytest-style; NOT run by the harness (see below)
+│   └── test_runner.py             # Unit test runner (--module/--class/--method)
+├── integration/                   # Integration tests
+│   ├── test_integration.py        # Integration test cases
+│   └── test_repo_runner.py        # Repository test runner
+├── fixtures/                      # Test fixtures and sample data
+│   └── sample_docs.py             # Sample documentation files
+├── test-docs/                     # Sample markdown fixtures
+├── results/                       # Test results storage (generated)
+├── config.py                      # Test configuration
+├── test_runner.py                 # Main test runner
+├── TESTING_FRAMEWORK.md           # Framework architecture notes
+├── SCHEMA.md                      # Structure contract for this directory
+└── README.md                      # This file
 ```
 
 ## Quick Start
@@ -64,11 +70,15 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 
 ### Unit Tests
 
-Unit tests verify individual components in isolation:
+Unit tests verify individual components in isolation. The runner discovers every `tests/unit/test_cases/test_*.py` module:
 
-- **Categorization Tests**: Test content categorization logic
-- **File Processing Tests**: Test markdown file processing
-- **Repository Operations Tests**: Test git operations and file discovery
+- **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
+- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory
+- **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
+- **File processing** (`test_file_processing.py`): title extraction, front matter generation, ingest prose normalization
+- **Repository operations** (`test_repo_operations.py`): git operations and file discovery
+
+`tests/unit/test_docs_tools.py` sits outside `test_cases/` and uses bare pytest functions, so the custom harness does not run it; run it with `python -m pytest tests/unit/test_docs_tools.py`.
 
 ### Integration Tests
 
@@ -192,13 +202,12 @@ python tests/test_runner.py --output /path/to/results
 
 ```python
 import unittest
-from scripts.process import categorize_content
+from scripts.process import extract_title_from_content
 
-class TestCategorization(unittest.TestCase):
-    def test_api_categorization(self):
+class TestTitleExtraction(unittest.TestCase):
+    def test_h1_becomes_title(self):
         content = "# API Reference\n\nThis is API documentation."
-        result = categorize_content(content)
-        self.assertEqual(result, "api")
+        self.assertEqual(extract_title_from_content(content), "API Reference")
 ```
 
 ### Integration Test Example
@@ -218,26 +227,10 @@ class TestIntegration(unittest.TestCase):
 
 ### GitHub Actions
 
-Add to `.github/workflows/test.yml`:
+There is no dedicated test workflow in this repo. `.github/workflows/ci.yml` is a thin caller of the hub's shared `standard-ci.yml` gate (`bamr87/bamr87`), and `docs-quality-check.yaml` runs the schema, navigation and tracked-surfaces gates on PRs. Before pushing, run the same fast path locally:
 
-```yaml
-name: Tests
-
-on: [push, pull_request]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Run tests
-        run: python tests/test_runner.py --type quick
+```bash
+python tests/test_runner.py --type quick
 ```
 
 ## Troubleshooting
@@ -260,11 +253,11 @@ python -m pytest tests/ -v
 ### Test Specific Components
 
 ```bash
-# Test only categorization
-python tests/unit/test_runner.py --module test_categorization
+# Test only the context engine
+python tests/unit/test_runner.py --module test_context_engine
 
 # Test specific test class
-python tests/unit/test_runner.py --module test_categorization --class TestCategorization
+python tests/unit/test_runner.py --module test_context_engine --class TestNavigator
 ```
 
 ## Contributing
