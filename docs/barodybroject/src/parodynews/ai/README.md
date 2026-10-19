@@ -56,6 +56,14 @@ Every provider takes the same `json_schema` and is held to the same standard: pa
 
 This is also why the `mock` provider builds its canned responses with `schema_stub.build_example()` rather than returning a fixed blob: the test double is held to the same contract as the real thing.
 
+## Model catalogue
+
+`static_models()` is the curated list a provider knows works. A provider that can ask its vendor sets `supports_model_discovery = True` and implements `discover_models()`, which returns the live list, returns `None` when there is nothing to ask (no credential), and **raises** when the vendor call fails. `catalogue()` turns that into `(models, live)`, falling back to the static list with `live=False`; `list_models()` is its first half.
+
+The distinction matters to `services.assistants.sync_models()`: only a **live** catalogue retires models. Active `AIModel` rows a live catalogue no longer lists are set `is_active=False` (never deleted — `Assistant.model` is `SET_NULL`), except the provider's default model. A failed discovery falls back to the static list and changes no `is_active` flag, so a vendor outage cannot empty the picker.
+
+OpenAI's `/v1/models` lists the whole account catalogue with no capability field, while `OpenAIProvider` only calls chat completions. `providers/openai.py` therefore keeps a discovered id only when it starts with one of `CHAT_MODEL_PREFIXES` and contains none of `EXCLUDED_MODEL_MARKERS` (image, audio, realtime, embedding, instruct, …), and a discovered id that matches a `STATIC_MODELS` entry keeps that entry's name and description.
+
 ## Credentials
 
 `registry.py` resolves credentials in this order, first hit wins:

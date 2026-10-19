@@ -9,21 +9,23 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **662 pages** across **98 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **665 pages** across **98 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(76)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(79)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(66)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(69)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(63)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(63)</small>
+    - **Visual** <small>(66)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(66)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [agent-issue-265 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-265/README.md)
         - [agent-issue-412 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-412/README.md)
         - [agent-issue-459 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-459/README.md)
         - [agent-issue-484 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-484/README.md)
+        - [agent-issue-521 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-521/README.md)
+        - [agent-issue-522 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-522/README.md)
         - [book-abc layout — visual evidence (ZER0-081)](../zer0-mistakes/test/visual/evidence/book-abc/README.md)
         - [claude-universal-frontend-feedback-gnnzua — visual evidence](../zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md)
         - [Dangling aria-controls (#373)](../zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md)
@@ -32,6 +34,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — article hero: eager LCP load + reserved box (#485)](../zer0-mistakes/test/visual/evidence/hero-lcp/README.md)
         - [Evidence — author avatars never render protocol-relative //assets/……](../zer0-mistakes/test/visual/evidence/author-avatar-url/README.md)
         - [Evidence — books collection (ZER0-080)](../zer0-mistakes/test/visual/evidence/books-collection/README.md)
+        - [Evidence — breadcrumb BreadcrumbList validity (#512)](../zer0-mistakes/test/visual/evidence/breadcrumbs/README.md)
         - [Evidence — category badges are existence-gated (issue #204)](../zer0-mistakes/test/visual/evidence/category-badges/README.md)
         - [Evidence — collection-aware sidebar modes (PR #273)](../zer0-mistakes/test/visual/evidence/sidebar-modes/README.md)
         - [Evidence — colormodedefault config knob (issue #241)](../zer0-mistakes/test/visual/evidence/color-mode-default/README.md)

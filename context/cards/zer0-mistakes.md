@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: ai:anthropic
-source_fingerprint: 93b486e94e95d7b2
+source_fingerprint: b52e7b861661bf6b
 tags:
   - accessibility
   - ai
@@ -25,7 +25,7 @@ tags:
 
 # zer0-mistakes
 
-> zer0-mistakes is an active Jekyll theme for GitHub Pages that packages software architecture patterns alongside an AI-native workflow, hosted for $0/month and working across Mac, Windows, and Linux. The corpus spans 743 documents including a bare-minimum three-file starter, a design system, templates, examples, and extensive documentation (with a French translation under fr), plus contributor-facing files like CONTRIBUTING, SECURITY, CLAUDE.md, and AGENTS.md. Open it if you want a Docker-backed, Bootstrap-based Jekyll starter that gets a site running in minutes while offering advanced features for power users.
+> zer0-mistakes is an active, AI-native, Docker-first Jekyll theme for GitHub Pages sites, built on Bootstrap 5 and published as a Ruby gem. Its 746-document corpus includes 217 site pages, a 170-page French section, 111 documentation pages, 52 examples, a design system, templates, and test and tooling docs, along with AGENTS.md and CLAUDE.md guidance for AI-assisted work. Open it to start a GitHub Pages site from the three-file, zero-install starter, explore its advanced features and architecture, or contribute to the theme itself.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 743 docs |
+| Corpus | `docs/zer0-mistakes` - 746 docs |
 | External | no |
 
 ## Signals
@@ -43,14 +43,14 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~613,615 words across 743 indexed documents
+- ~615,774 words across 746 indexed documents
 - code samples in: bash, yaml, html, liquid, plaintext, text, markdown, javascript
 
 ## Navigation
 
-662 published pages in 98 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
+665 published pages in 98 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
 
-- **Repository & tooling** (76 pages)
+- **Repository & tooling** (79 pages)
 - **Data** (2 pages)
 - **Design System** (13 pages)
 - **Documentation** (111 pages)

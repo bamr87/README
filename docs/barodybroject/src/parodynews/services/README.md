@@ -45,7 +45,7 @@ The one rule to preserve when touching `push_to_github_and_create_pr()`: **a 404
 
 ## assistants.py
 
-`sync_models()` asks the configured provider for its catalogue and reconciles the `AIModel` table, returning a `SyncReport` (created / updated / deactivated). Providers that cannot enumerate models report `supports_model_discovery = False` and are skipped rather than failing.
+`sync_models()` asks the configured provider for its catalogue and reconciles the `AIModel` table, returning a `SyncReport` (created / updated / deactivated). It reads `provider.catalogue()`, which says whether the list is **live** or the static fallback. Only a live catalogue retires anything: this provider's active rows it no longer lists are set `is_active=False` — never deleted, because `Assistant.model` is `SET_NULL` — except the provider's default model. A static fallback (no credential, a failed discovery, or a provider without discovery) upserts the static list and deactivates nothing.
 
 ## Conventions
 

@@ -16,7 +16,7 @@ tags:
 
 # Wargames
 
-> OverTheWire-website is an external reference corpus mirroring the OverTheWire community's website, an active site built on the gh-pages branch that documents wargames designed to teach and practice security concepts through fun-filled games. It contains 232 documents, the bulk of them across 219 pages in the wargames section covering challenges like Bandit, Krypton, Leviathan, and Drifter, alongside supporting information on SSH infrastructure and site rules. Open it to study security and CTF-style challenge guides or to reference walkthrough material for specific wargame levels.
+> OverTheWire-website is an external reference corpus mirroring the OverTheWire community's site (OverTheWireOrg/OverTheWire-website, gh-pages branch), whose wargames help you learn and practice security concepts through fun-filled games. Of its 232 Markdown pages, 219 live under wargames, covering per-level guides for games such as Bandit, Leviathan, Krypton, Drifter and Blacksun. A smaller information section documents the SSH infrastructure, and a rules page sits alongside it. Open it when you need the level-by-level challenge text, game reading material, or connection details for these security and CTF-style exercises.
 
 | | |
 |---|---|

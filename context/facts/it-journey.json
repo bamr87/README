@@ -1,14 +1,15 @@
 {
   "corpus": {
-    "file_count": 1246,
-    "fingerprint": "5c64da038343f3bd",
+    "file_count": 1260,
+    "fingerprint": "21f1a12d63ec4c61",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 15004557
+    "total_bytes": 15085845
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
+      "Overview",
       "\ud83d\udcca Quick Comparison: IT-Journey vs Traditional Learning",
       "\ud83d\ude80 Getting Started",
       "\ud83d\udcda Content Structure",
@@ -17,11 +18,10 @@
       "\ud83d\udd17 Link Health Guardian v3.0",
       "\ud83d\udcc8 Learning Outcomes",
       "\u2753 Frequently Asked Questions",
-      "\ud83d\udcd6 Documentation",
-      "\ud83e\udd1d Contributing"
+      "\ud83d\udcd6 Documentation"
     ],
     "readme": "README.md",
-    "summary": "Welcome to IT-Journey, a gamified, open-source platform for learning IT and software development through quests \u2014 progressive, hands-on adventures that take you from zer0 to her0. The site is built around a single gamified learning path, supported by reference docs, quick-start guides, and curated notes. The repositor\u2026",
+    "summary": "Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.",
     "title": "IT-Journey"
   },
   "key_docs": [
@@ -100,7 +100,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1246
+      "it-journey": 1260
     },
     "code_languages": [
       "bash",
@@ -112,7 +112,7 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1246,
+    "indexed_documents": 1260,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -130,7 +130,7 @@
       "ci-cd",
       "agentic-ai"
     ],
-    "total_words": 1916327
+    "total_words": 1927154
   },
   "schema_version": "1.0",
   "signals": {
@@ -161,7 +161,7 @@
         "name": "pages"
       },
       {
-        "doc_count": 193,
+        "doc_count": 207,
         "name": ".cms"
       },
       {

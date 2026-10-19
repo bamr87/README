@@ -20,7 +20,7 @@ Django management commands are executed from the project root:
 python manage.py generate_field_defaults
 python manage.py reset_db
 python manage.py refreshmigrations
-python manage.py fetch_models
+python manage.py sync_models [--provider X] [--all]
 
 # List all available commands
 python manage.py help

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: ai:anthropic
-source_fingerprint: 401ff9b8176b89db
+source_fingerprint: 527c292123a3dcad
 tags:
   - bash
   - education
@@ -16,7 +16,7 @@ tags:
 
 # ⚔️ Bashcrawl — learn the terminal by playing
 
-> Bashcrawl is an educational game (v3.1) that teaches the terminal by playing, offering two doors into the same content: a classic filesystem dungeon you explore from your terminal and a free browser trainer with mini-games and cheatsheets. Its corpus spans 48 documents across entrance scrolls, extensive docs, and supporting tooling in bash, Python, and JavaScript. Open it to learn Bash hands-on through exploration, or to work on the dungeon content and browser trainer that share a common source.
+> Bashcrawl (v3.1, active) is an interactive game for learning Bash and the terminal by exploring a dungeon, offered two ways from the same content: the classic filesystem dungeon you play in your own shell starting from the entrance directory, and a free browser trainer with mini-games and cheatsheets. The repo includes the playable dungeon, repository tooling under src, and a 29-page docs section with a demo walkthrough, a demo critical path, and a log viewer reference, plus AGENTS.md, CLAUDE.md, and a CHANGELOG for contributors and coding agents
 
 | | |
 |---|---|
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 48 docs |
+| Corpus | `docs/bashcrawl` - 51 docs |
 | External | no |
 
 ## Signals
@@ -32,15 +32,15 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~62,454 words across 48 indexed documents
+- ~66,187 words across 51 indexed documents
 - code samples in: bash, plaintext, json, yaml, python, text, js, markdown
 
 ## Navigation
 
-41 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+44 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (6 pages)
-- **Documentation** (27 pages)
+- **Documentation** (29 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents

@@ -1,42 +1,45 @@
 {
   "corpus": {
-    "file_count": 16,
-    "fingerprint": "fa01eba870a14872",
+    "file_count": 17,
+    "fingerprint": "3a15e2a411867948",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 142099
+    "total_bytes": 145453
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
+      "Overview",
       "\ud83d\udce6 Tool index",
       "\ud83d\ude80 Installation",
       "\ud83c\udfaf Quick start",
       "\ud83d\udd12 Prerequisites",
+      "Project structure",
       "\u2705 Development",
       "\ud83e\udded Fleet context",
-      "\ud83d\udcc4 License"
+      "Contributing",
+      "Changelog"
     ],
     "readme": "README.md",
-    "summary": "A standalone collection of Bash command-line utilities (plus one Python tool) for project bootstrapping, GitHub repository management, and multi-repo maintenance.",
+    "summary": "Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.",
     "title": "\ud83d\udee0\ufe0f scripts"
   },
   "key_docs": [
     "README.md",
     "CLAUDE.md",
+    "CHANGELOG.md",
     "SECURITY.md",
     "FORKME/FORKME.md",
     "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
     "FORKME/FORKME-EXAMPLES.md",
-    "FORKME/IMPROVEMENTS.md",
-    "FORKME/REVIEW-SUMMARY.md"
+    "FORKME/IMPROVEMENTS.md"
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "09fcd3b2365b6268",
+    "fingerprint": "c719dd1841f8e626",
     "index": "scripts/README.md",
     "max_depth": 2,
-    "pages": 16,
+    "pages": 17,
     "present": true,
     "sections": 2,
     "skipped": 0,
@@ -76,7 +79,7 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 16
+      "scripts": 17
     },
     "code_languages": [
       "bash",
@@ -84,14 +87,14 @@
       "yaml",
       "text"
     ],
-    "indexed_documents": 16,
+    "indexed_documents": 17,
     "top_tags": [],
-    "total_words": 17120
+    "total_words": 17624
   },
   "schema_version": "1.0",
   "signals": {
     "has_agents_md": false,
-    "has_changelog": false,
+    "has_changelog": true,
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
@@ -99,6 +102,7 @@
   },
   "structure": {
     "root_docs": [
+      "CHANGELOG.md",
       "CLAUDE.md",
       "README.md",
       "RENAME-DIRECTORY-QUICK-REFERENCE.md",

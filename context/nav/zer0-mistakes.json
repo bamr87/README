@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 662,
+    "pages": 665,
     "sections": 98,
     "max_depth": 6,
     "skipped": 9
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "1849674bde49fbc2",
+  "fingerprint": "4af53796123d349d",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 662,
+    "pages": 665,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 76,
+        "pages": 79,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 66,
+            "pages": 69,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 63,
+                "pages": 66,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 63,
+                    "pages": 66,
                     "children": [
                       {
                         "type": "page",
@@ -116,6 +116,20 @@
                         "path": "zer0-mistakes/test/visual/evidence/agent-issue-484/README.md",
                         "rel": "test/visual/evidence/agent-issue-484/README.md",
                         "folder": "test/visual/evidence/agent-issue-484"
+                      },
+                      {
+                        "type": "page",
+                        "title": "agent-issue-521 \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/agent-issue-521/README.md",
+                        "rel": "test/visual/evidence/agent-issue-521/README.md",
+                        "folder": "test/visual/evidence/agent-issue-521"
+                      },
+                      {
+                        "type": "page",
+                        "title": "agent-issue-522 \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/agent-issue-522/README.md",
+                        "rel": "test/visual/evidence/agent-issue-522/README.md",
+                        "folder": "test/visual/evidence/agent-issue-522"
                       },
                       {
                         "type": "page",
@@ -172,6 +186,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/books-collection/README.md",
                         "rel": "test/visual/evidence/books-collection/README.md",
                         "folder": "test/visual/evidence/books-collection"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence \u2014 breadcrumb BreadcrumbList validity (#512)",
+                        "path": "zer0-mistakes/test/visual/evidence/breadcrumbs/README.md",
+                        "rel": "test/visual/evidence/breadcrumbs/README.md",
+                        "folder": "test/visual/evidence/breadcrumbs"
                       },
                       {
                         "type": "page",

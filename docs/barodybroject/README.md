@@ -4,9 +4,23 @@ title: Barodybroject
 ---
 # Barodybroject
 
+> Django + React web app that generates and publishes AI-written parody news, with a Jekyll site and Azure deploy.
+
+[![CI](https://github.com/bamr87/barodybroject/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/barodybroject/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/barodybroject)](LICENSE) [![Live site](https://img.shields.io/badge/live-bamr87.github.io%2Fbarodybroject-2ea44f)](https://bamr87.github.io/barodybroject/)
+
+## Overview
+
 Barodybroject is a Django 5.2 application for generating and managing parody news content with AI. It runs against PostgreSQL, serves a React frontend over a Django REST Framework API, includes a Jekyll static-site sidecar for published content, and deploys to Azure Container Apps with Bicep infrastructure.
 
 The AI layer is **provider-agnostic**: no application code imports a vendor SDK. Claude Code is the default provider, driven by a `CLAUDE_CODE_OAUTH_TOKEN`; Anthropic and OpenAI are built in, and adding another is one class plus a registry entry. Switching providers is a configuration change.
+
+## Features
+
+- Generates and manages parody news content with AI
+- Provider-agnostic AI layer: Claude Code by default, with Anthropic and OpenAI built in and switchable by configuration
+- React 19 + TypeScript frontend served over a Django REST Framework API
+- A Jekyll static-site sidecar for published content
+- Azure Container Apps deployment with Bicep infrastructure
 
 ## Start Here
 
@@ -42,8 +56,7 @@ The AI layer is **provider-agnostic**: no application code imports a vendor SDK.
 - Azure Container Apps, Azure Developer CLI, and Bicep
 - Pytest, Playwright, Vitest, Ruff, Black, and Sphinx
 
-## Repository Layout
-
+## Project structure
 ```text
 barodybroject/
 ├── .devcontainer/        # Development compose stack used by VS Code tasks
@@ -127,3 +140,20 @@ Tests never reach a real AI vendor: the testing settings resolve the provider re
 ## Cleanup Status
 
 This repository previously contained generated README mirrors, one-shot AI implementation reports, disabled Django CMS shims, and placeholder models. Those artifacts have been removed so the codebase reflects the current Django/React/Azure application.
+
+## Contributing
+
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow. AI agents should start with [CLAUDE.md](CLAUDE.md).
+
+## Changelog
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

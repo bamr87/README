@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: ai:anthropic
-source_fingerprint: 5c64da038343f3bd
+source_fingerprint: 21f1a12d63ec4c61
 tags:
   - agentic-ai
   - automation
@@ -25,7 +25,7 @@ tags:
 
 # IT-Journey
 
-> IT-Journey is an active, Jekyll-based educational platform that teaches IT and software development through gamified quests—progressive, hands-on adventures that take learners from "zer0 to her0." The repository spans roughly 1,246 indexed documents and nearly two million words, organized around a gamified learning path backed by reference docs, quick-start guides, blog posts, and curated notes, with supporting tooling like the Link Health Guardian. Open it if you want a structured, quest-driven curriculum covering web fundamentals, Jekyll, DevOps, CI/CD, and automation.
+> IT-Journey is an active, open-source Jekyll site that teaches IT and software development through gamified, hands-on quests, taking learners from "zer0 to her0." Its corpus of 1,260 documents (about 1.9 million words) is mostly the 652-page pages section of quests, blog posts, and walkthroughs. Those pages cover topics such as web fundamentals, automation, DevOps, CI/CD, and agentic AI, alongside project documentation, data files, and repository tooling. Open it to work through structured learning quests or to contribute content, using its CONTRIBUTING, AGENTS, and CLAUDE guides.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1246 docs |
+| Corpus | `docs/it-journey` - 1260 docs |
 | External | no |
 
 ## Signals
@@ -43,7 +43,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,916,327 words across 1246 indexed documents
+- ~1,927,154 words across 1260 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Navigation

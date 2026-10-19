@@ -5,18 +5,18 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 16,
+    "pages": 17,
     "sections": 2,
     "max_depth": 2,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "09fcd3b2365b6268",
+  "fingerprint": "c719dd1841f8e626",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 16,
+    "pages": 17,
     "children": [
       {
         "type": "page",
@@ -24,6 +24,12 @@
         "path": "scripts/README.md",
         "rel": "README.md",
         "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "scripts/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
       },
       {
         "type": "page",

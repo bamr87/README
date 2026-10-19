@@ -4,6 +4,12 @@ title: 🛠️ scripts
 ---
 # 🛠️ scripts
 
+> Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.
+
+[![CI](https://github.com/bamr87/scripts/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/scripts/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/scripts)](LICENSE)
+
+## Overview
+
 A standalone collection of Bash command-line utilities (plus one Python tool) for project bootstrapping, GitHub repository management, and multi-repo maintenance.
 
 There is no application to build and no dependency install — every script is self-contained and runs directly. This repo is also vendored as a submodule of the [bamr87/bamr87 dash](https://github.com/bamr87/bamr87), which installs several of these scripts as named CLI commands (see [Installation](#-installation)).
@@ -124,13 +130,13 @@ Forking and cloning strategies that go beyond `git clone` — shallow and sparse
 Saves uncommitted changes across every git repo under a directory tree to timestamped remote backup branches (`stashme/2026-02-03-143021`). It never modifies your working branch:
 
 ```bash
-./stashme.sh                                    # stash all repos in ~/github
-./STASHME/stashme.sh ~/projects                 # a specific tree
-./stashme.sh --list                             # repos with uncommitted changes
-./stashme.sh --dry-run                          # preview
-./stashme.sh -m "WIP: saving before vacation"   # custom message
-./stashme.sh --restore                          # recover stashed changes
-./stashme.sh --cleanup                          # remove old stashme branches
+./STASHME/stashme.sh                                    # stash all repos in ~/github
+./STASHME/stashme.sh ~/projects                         # a specific tree
+./STASHME/stashme.sh --list                             # repos with uncommitted changes
+./STASHME/stashme.sh --dry-run                          # preview
+./STASHME/stashme.sh -m "WIP: saving before vacation"   # custom message
+./STASHME/stashme.sh --restore                          # recover stashed changes
+./STASHME/stashme.sh --cleanup                          # remove old stashme branches
 ```
 
 → [Full StashMe documentation](STASHME/STASHME.md) · [Quick reference](STASHME/STASHME-QUICK-REFERENCE.md)
@@ -170,6 +176,10 @@ Renames a directory with pre-flight validation — checks source/target paths an
 
 **Optional, depending on the tool**: GitHub CLI (`gh`) for repository creation and forking, `curl` for gitignore.io lookups, `rsync` for `create_package.sh`, Docker for `rename-directory.sh` container handling, and the language toolchains (Python 3.8+, Node 16+, Rust/Cargo, Go 1.21+) matching whatever `project-init.sh` scaffolds.
 
+## Project structure
+
+Each script sits at the root (or in its own folder, such as `FORKME/` and `STASHME/`); see the [Tool index](#-tool-index) for what each one does. `tools/` holds repo maintenance scripts.
+
 ## ✅ Development
 
 There is no test suite. The gates are ShellCheck and the markdown one-paragraph-per-line rule:
@@ -194,6 +204,19 @@ This repo is one of ~40 managed by the [bamr87/bamr87 dash](https://github.com/b
 
 Because it is vendored as a submodule, changes are committed and pushed **here** first; the hub only bumps its pointer afterwards.
 
+## Contributing
+
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents should start with [CLAUDE.md](CLAUDE.md).
+
+## Changelog
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md); the full record is in the [commit history](https://github.com/bamr87/scripts/commits/main).
+
 ## 📄 License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

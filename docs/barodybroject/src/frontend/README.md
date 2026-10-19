@@ -12,7 +12,7 @@ React 19 + TypeScript + Vite. This is the application's user interface; the Djan
 frontend/
 ├── src/
 │   ├── api/          # client.ts (fetch + CSRF), endpoints.ts, types.ts
-│   ├── components/   # DataTable, Layout, Markdown, RequireAuth, ui primitives
+│   ├── components/   # DataTable, FeedbackButton, Layout, Markdown, RequireAuth, ui primitives
 │   ├── hooks/        # useAsync, useTheme
 │   ├── pages/        # One component per route
 │   ├── App.tsx       # Routes
@@ -53,6 +53,19 @@ The upshot is that a deploy is still one container, and the asset hashes come fr
 
 Session cookies. The SPA does not implement login — `/accounts/login/` is a server-rendered allauth page — so there is no token to store or refresh. `api/client.ts` reads the CSRF token from the `csrf` meta tag and attaches it to writes; a 403 with an authentication error redirects to the login page.
 
+## Feedback widget
+
+Every route shows an **Improve this page** button. It opens a dialog where a user can pick a type (problem, improvement, **feature request**, accessibility, question, …), and it then opens a prefilled GitHub issue carrying the route, the environment and recently captured console errors. It is the bamr87 fleet's feedback kit (v0.2.0, `templates/feedback/` in bamr87/bamr87):
+
+- `components/FeedbackButton.tsx` is the kit's React adapter, copied unchanged. `Layout` mounts it
+**once**, only when `site.github_issue_repo` is set (`GITHUB_ISSUE_REPO`, default `bamr87/barodybroject`). `assignee=""` is set because this repo's issue pipeline is label-driven.
+- The widget script and its capture buffer are vendored into `src/assets/js/` and served by Django at
+`/static/js/…`. That path works the same with the Vite dev server and with the built bundle. The capture buffer loads first, in `<head>` of `spa/index.html`.
+- The default `mode="url"` ships no credential: the user submits the issue under their own GitHub
+session. The footer's "Report an issue" link opens the same form without JavaScript (`.github/ISSUE_TEMPLATE/page_feedback.yml`).
+- `openFeedback({ type, extra })` and `breadcrumb(level, message)` from `FeedbackButton.tsx` are
+  available when a screen needs to open the dialog pre-typed, or to record a failed API call.
+
 ## `DataTable`
 
 Worth knowing about because it carries a contract forward. The Django UI had a `table_utils.js` that gave every table sortable headers, per-column filters that combine, and — importantly — two *different* empty states:
@@ -76,6 +89,8 @@ Some specs exist to pin behaviour the Django UI got **wrong**, so the component 
 | `pages/Content.test.tsx` | The assistant select: an existing item with no assistant pre-selects **nothing** and saves `null`, rather than being given an arbitrary one (issue #3) |
 
 They pass on arrival — that is the point. Each was checked by reintroducing the original defect and confirming it fails.
+
+`components/Layout.test.tsx` pins the feedback widget (issue #42): it is mounted once, files into `site.github_issue_repo`, and is absent without one, and the footer link opens `page_feedback.yml`.
 
 ## Conventions
 

@@ -1,14 +1,15 @@
 {
   "corpus": {
-    "file_count": 743,
-    "fingerprint": "93b486e94e95d7b2",
+    "file_count": 746,
+    "fingerprint": "b52e7b861661bf6b",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 5008124
+    "total_bytes": 5022684
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
+      "Overview",
       "\u2728 What You Get",
       "\ud83d\udc65 Who It's For",
       "\ud83d\ude80 Get Started in 5 Minutes",
@@ -17,11 +18,10 @@
       "\ud83e\uddf0 Advanced Features for Power Users",
       "\ud83e\udd16 AI-Native Workflow",
       "\ud83c\udfd7 Architecture",
-      "\u2728 Key Features",
-      "\ud83d\udce6 Installation Methods \u2014 Reference Card"
+      "\u2728 Key Features"
     ],
     "readme": "README.md",
-    "summary": "Free \u2022 Open source \u2022 Hosted on GitHub Pages for $0/month \u2022 Works on Mac, Windows, and Linux",
+    "summary": "AI-native, Docker-first Jekyll theme for GitHub Pages sites, built on Bootstrap 5 and published as a Ruby gem.",
     "title": "zer0-mistakes"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "1849674bde49fbc2",
+    "fingerprint": "4af53796123d349d",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 662,
+    "pages": 665,
     "present": true,
     "sections": 98,
     "skipped": 9,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 76,
+        "pages": 79,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -128,7 +128,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 743
+      "zer0-mistakes": 746
     },
     "code_languages": [
       "bash",
@@ -140,7 +140,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 743,
+    "indexed_documents": 746,
     "top_tags": [
       "jekyll",
       "docker",
@@ -158,7 +158,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 613615
+    "total_words": 615774
   },
   "schema_version": "1.0",
   "signals": {
@@ -193,7 +193,7 @@
         "name": "docs"
       },
       {
-        "doc_count": 66,
+        "doc_count": 69,
         "name": "test"
       },
       {

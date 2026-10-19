@@ -9,9 +9,10 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **16 pages** across **2 sections** (max depth 2).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **17 pages** across **2 sections** (max depth 2).
 
 - [🛠️ scripts](../scripts/README.md)
+- [Changelog](../scripts/CHANGELOG.md)
 - [CLAUDE.md](../scripts/CLAUDE.md)
 - [Linting Configuration Management](../scripts/linting/README.md)
 - [Rename Directory Utility - Quick Reference](../scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md)

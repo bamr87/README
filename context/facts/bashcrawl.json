@@ -1,18 +1,22 @@
 {
   "corpus": {
-    "file_count": 48,
-    "fingerprint": "401ff9b8176b89db",
+    "file_count": 51,
+    "fingerprint": "527c292123a3dcad",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 545474
+    "total_bytes": 571575
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
+      "Overview",
       "\ud83c\udfae Play it",
       "\ud83e\udded What's in the box",
       "\ud83d\udd27 For developers",
-      "\ud83d\ude4f Lineage"
+      "\ud83d\ude4f Lineage",
+      "Contributing",
+      "Changelog",
+      "License"
     ],
     "readme": "README.md",
     "summary": "v3.1 \u2014 one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.",
@@ -30,10 +34,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "b8e09498674a0618",
+    "fingerprint": "9543236af17fa153",
     "index": "bashcrawl/README.md",
     "max_depth": 3,
-    "pages": 41,
+    "pages": 44,
     "present": true,
     "sections": 9,
     "skipped": 3,
@@ -48,7 +52,7 @@
       },
       {
         "index": "bashcrawl/docs/index.md",
-        "pages": 27,
+        "pages": 29,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -80,7 +84,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 48
+      "bashcrawl": 51
     },
     "code_languages": [
       "bash",
@@ -92,9 +96,9 @@
       "js",
       "markdown"
     ],
-    "indexed_documents": 48,
+    "indexed_documents": 51,
     "top_tags": [],
-    "total_words": 62454
+    "total_words": 66187
   },
   "schema_version": "1.0",
   "signals": {
@@ -114,7 +118,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 27,
+        "doc_count": 29,
         "name": "docs"
       },
       {
@@ -136,6 +140,10 @@
       {
         "doc_count": 1,
         "name": "logs"
+      },
+      {
+        "doc_count": 1,
+        "name": "motion"
       },
       {
         "doc_count": 1,

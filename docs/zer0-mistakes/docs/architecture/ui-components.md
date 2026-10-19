@@ -70,7 +70,7 @@ Every catalogued component, its primary implementation file, primary test, and c
 | Navbar Mobile Quicklinks (tablet chips) | `_includes/navigation/navbar-mobile-quicklinks.html` | `features/navbar.spec.js` | 🟡 partial |
 | Head (document head / asset pipeline) | `_includes/core/head.html` | `core/styling.spec.js`, `test/test_quality.sh` | 🟡 partial |
 | Footer | `_includes/core/footer.html` | `core/layout-chrome.spec.js`, `core/responsive.spec.js` | 🟡 partial |
-| Breadcrumbs | `_includes/navigation/breadcrumbs.html` | `features/layouts.spec.js` | 🟡 partial |
+| Breadcrumbs | `_includes/navigation/breadcrumbs.html` | `features/layouts.spec.js`, `features/breadcrumbs.spec.js` | 🟡 partial |
 | Back-to-Top FAB | `_includes/core/footer.html` | — | 🔴 none |
 | Auto-Hide Navbar | `assets/js/auto-hide-nav.js` | — | 🔴 none |
 | Nanobar (scroll/load progress bar) | `_includes/components/nanobar.html` | — | 🔴 none |
@@ -292,14 +292,14 @@ The fixed top header (brand, primary menubar, utility controls, mobile/tablet sh
 ### Breadcrumbs
 
 - **Purpose:** Accessible breadcrumb trail with Schema.org `BreadcrumbList` microdata for rich results, rendered on non-home pages when `site.breadcrumbs` is enabled.
-- **Capabilities:** Rendered only when `page.url != "/"` and `site.breadcrumbs`; i18n root label from `site.data.ui-text`; special handling for known sections (`posts,notebooks,notes,docs`) to avoid linking intermediate dirs lacking index pages; folder icon kept outside the `<ol>` for HTML validity; `aria-current="page"` on the leaf; `itemprop`/`itemscope` microdata throughout.
+- **Capabilities:** Rendered only when `page.url != "/"` and `site.breadcrumbs`; i18n root label from `site.data.ui-text`; special handling for known sections (`posts,notebooks,notes,docs`) to avoid linking intermediate dirs lacking index pages; folder icon kept outside the `<ol>` for HTML validity; `aria-current="page"` on the leaf; `itemprop`/`itemscope` microdata on linked crumbs and the leaf — an unlinked crumb is visible text only and left out of the `BreadcrumbList`, with `position` renumbered 1..n, because a non-final `ListItem` without `item` invalidates the list (#512).
 - **Source:**
   - SCSS: — (uses Bootstrap `.breadcrumb`)
   - Markup: `_includes/navigation/breadcrumbs.html`
   - Plugin/data: `site.data.ui-text` (`breadcrumbs_root`, `breadcrumbs_aria`)
 - **API surface:** classes `.breadcrumbs`, `.breadcrumb`, `.breadcrumb-item`; ARIA `aria-label`, `aria-current="page"`; microdata `https://schema.org/BreadcrumbList` / `ListItem`, `itemprop="position|name|item"`
-- **Tests:** `test/visual/layouts.spec.js` — "breadcrumbs `<nav>` exposes aria-label" (on `/about/`); "breadcrumbs are `<ol>` with `<li>` children (no orphan `<i>`)" (asserts the folder icon is not a direct `<ol>` child).
-- **Gaps / improvement ideas:** The Schema.org microdata (`itemprop`/`position` sequencing) is not validated. The known-section special path (`/posts/YYYY/...` collapsing to Home › Posts › leaf) is untested. No test confirms breadcrumbs are suppressed on `/` or when `site.breadcrumbs` is off.
+- **Tests:** `test/visual/layouts.spec.js` — "breadcrumbs `<nav>` exposes aria-label" (on `/about/`); "breadcrumbs are `<ol>` with `<li>` children (no orphan `<i>`)" (asserts the folder icon is not a direct `<ol>` child). `test/visual/features/breadcrumbs.spec.js` — every non-final `ListItem` has an `item`, positions run 1..n, structured items are exactly the linked crumbs + leaf, and each `item` resolves; covers a post (known-section path) and `/about/settings/theme/` (unlinked middle crumb).
+- **Gaps / improvement ideas:** No test confirms breadcrumbs are suppressed on `/` or when `site.breadcrumbs` is off.
 
 ### Back-to-Top FAB
 
@@ -842,7 +842,7 @@ The theme's appearance is a four-layer system: a `--zer0-*` design-token base (a
   - Markup: `_includes/components/halfmoon.html` (light/dark/auto segmented control), `assets/js/mermaid-diagrams.js` (palette derived from the live tokens; wizard → dark by luminance)
   - JS: `assets/js/halfmoon.js`, `assets/js/modules/theme/appearance.js` (renders its own light/dark/auto group only on explicit `[data-appearance-panel-host]` mounts; in the settings panel it renders the primary-color picker only)
 - **API surface:** attributes `data-bs-theme="light|dark|wizard"`, `data-bs-theme-value`; localStorage `theme`; class `.bd-theme-switch`; CSS vars `--bd-{purple,violet,accent,violet-rgb,accent-rgb,pink-rgb,teal-rgb,violet-bg,toc-color,sidebar-link-bg,callout-link,callout-code-color,pre-bg}`, plus `--bs-body-*`/`--bs-dropdown-*`/`--bs-btn-*` under wizard
-- **Tests:** `test/visual/settings-panel.spec.js` asserts clicking light/dark buttons flips `data-bs-theme` and syncs `.active`/`aria-pressed`; `features/appearance.spec.js` and the dark/contrast snapshots exercise dark surfaces.
+- **Tests:** `test/visual/settings-panel.spec.js` asserts clicking light/dark buttons flips `data-bs-theme` and syncs `.active`/`aria-pressed`, and pins the initial selected state (configured mode on first visit and without JS, stored preference for returning visitors — #521); `features/appearance.spec.js` and the dark/contrast snapshots exercise dark surfaces.
 - **Gaps / improvement ideas:** Wizard mode is defined in SCSS and handled by the Mermaid palette but is **not selectable from any UI** (halfmoon offers only light/dark/auto) — either expose it or document it as config-only. `--bd-callout-link` is an RGB triple in light/dark but consumed inconsistently.
 
 ### Named Skins (the 9 `data-theme-skin` palettes)
@@ -1560,7 +1560,7 @@ Floating/embedded widgets and third-party integrations layered onto the theme: t
   - Markup: `_includes/components/halfmoon.html` (segmented control; included by `info-section.html`, `theme-controls-bar.html`)
   - JS: `assets/js/halfmoon.js` (loaded in `_includes/core/head.html:42`)
 - **API surface:** class `.bd-theme-switch`; data-attribute `data-bs-theme-value` (`light`/`dark`/`auto`); attribute set `data-bs-theme`; storage key `theme`; SVG sprite refs `#sun-fill`/`#moon-stars-fill`/`#circle-half`; legacy-supported ids `#bd-theme`/`#bd-theme-text` + `.theme-icon-active` (consumer-overridden dropdown markup keeps working)
-- **Tests:** `test/visual/settings-panel.spec.js` — clicking dark/light flips `data-bs-theme` and updates `.active`/`aria-pressed`. Theme-color/skin specs (`features/appearance.spec.js`, `features/appearance.spec.js`) exercise color modes.
+- **Tests:** `test/visual/settings-panel.spec.js` — clicking dark/light flips `data-bs-theme` and updates `.active`/`aria-pressed`; the initial selected state is pinned with and without JS (#521). Theme-color/skin specs (`features/appearance.spec.js`, `features/appearance.spec.js`) exercise color modes.
 - **Gaps / improvement ideas:** The static markup ships all buttons inactive — active state appears when `showActiveTheme()` runs on `DOMContentLoaded` (brief unmarked state, no wrong-marked state). `keyboard.js`/mermaid treat a `wizard` theme value as dark, but this switcher only offers light/dark/auto — document the `wizard` mode's origin.
 
 ### Misc Widgets (powered-by, component-showcase, js-cdn, svg)
@@ -1747,7 +1747,7 @@ Assert structure but miss key interactions/states.
 - **Navbar Mobile Quicklinks (tablet chips)** — In-window visibility tested; limit:5 truncation, scroll overflow, and md-/lg+ hiding untested.
 - **Head (document head / asset pipeline)** — CSS 200s, main.css link, no-CDN asserted; token cascade order and prod-only analytics gating untested.
 - **Footer** — Powered-by links + tablet columns tested; quick-link auto-detect, policy gating, and subscribe-form a11y untested.
-- **Breadcrumbs** — aria-label + valid `<ol>` structure tested; Schema.org microdata and known-section special path unverified.
+- **Breadcrumbs** — aria-label + valid `<ol>` structure tested; `BreadcrumbList` validity and the known-section path tested by `features/breadcrumbs.spec.js`.
 - **Offcanvas Sidebars & Unified Drawer** — Presence of ToC/toggles asserted; unified-drawer tabs, 3 sidebar nav modes, and FOUC-guard path untested.
 - **Navbar Extras / FAB Stacking** — FAB presence on mobile asserted; non-overlap stacking math never verified despite available boxesOverlap helper.
 - **Navigation Orchestrator (index.js + config.js)** — --zer0-bp-lg token (read by syncBreakpointsFromCss) asserted; window.zer0Navigation init and navigation:ready event untested.
@@ -1786,7 +1786,7 @@ Assert structure but miss key interactions/states.
 - **Analytics Dashboard** — Config mirror only (no live PostHog data); raw true/false text vs badge styling inconsistent; field rendering not asserted.
 - **Statistics Dashboard** — Expand toggles/tag-cloud/no-data branch untested; stats.css has duplicated keyframes + dead classes; progress bars 0% without JS.
 - **PostHog Analytics** — Secret-pattern guard only; consent gate + DNT logic untested (production-only render); console.log left in.
-- **Halfmoon Theme Switcher** — Tokens-load asserted but toggle behavior/persistence/aria-pressed untested; markup hard-codes dark active.
+- **Halfmoon Theme Switcher** — Toggle `aria-pressed`/`.active` (initial and on click) covered by `settings-panel.spec.js`; persistence across navigation still untested.
 - **Misc Widgets (powered-by, showcase, js-cdn, svg)** — No-CDN posture checked for CSS only (not <script>); no SVG symbol/use integrity or showcase render test.
 
 ---

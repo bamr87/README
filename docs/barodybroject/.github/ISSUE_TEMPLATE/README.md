@@ -18,6 +18,8 @@ This directory contains GitHub issue templates that standardize the process of r
 - `feature_request_technical_tests.md`: Template for technical testing requirements and acceptance criteria
 - `issue_detail_template.md`: Comprehensive issue template with detailed information gathering
 - `issue_template.md`: Basic issue template for general problem reporting
+- `page_feedback.yml`: Page feedback form (fix, improve, feature request, accessibility, …). It is the
+no-JS twin of the in-app **Improve this page** dialog and the target of the footer's "Report an issue" link. Vendored from the bamr87/bamr87 feedback kit (`templates/feedback/`, v0.2.0)
 
 ## Usage
 Templates are automatically presented when creating new GitHub issues:

@@ -1082,6 +1082,8 @@ nav:
                       - "agent-issue-412 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-412/README.md
                       - "agent-issue-459 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-459/README.md
                       - "agent-issue-484 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-484/README.md
+                      - "agent-issue-521 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-521/README.md
+                      - "agent-issue-522 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-522/README.md
                       - "book-abc layout — visual evidence (ZER0-081)": zer0-mistakes/test/visual/evidence/book-abc/README.md
                       - "claude-universal-frontend-feedback-gnnzua — visual evidence": zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md
                       - "Dangling aria-controls (#373)": zer0-mistakes/test/visual/evidence/dangling-aria-controls/README.md
@@ -1090,6 +1092,7 @@ nav:
                       - "Evidence — article hero: eager LCP load + reserved box (#485)": zer0-mistakes/test/visual/evidence/hero-lcp/README.md
                       - "Evidence — author avatars never render protocol-relative //assets/……": zer0-mistakes/test/visual/evidence/author-avatar-url/README.md
                       - "Evidence — books collection (ZER0-080)": zer0-mistakes/test/visual/evidence/books-collection/README.md
+                      - "Evidence — breadcrumb BreadcrumbList validity (#512)": zer0-mistakes/test/visual/evidence/breadcrumbs/README.md
                       - "Evidence — category badges are existence-gated (issue #204)": zer0-mistakes/test/visual/evidence/category-badges/README.md
                       - "Evidence — collection-aware sidebar modes (PR #273)": zer0-mistakes/test/visual/evidence/sidebar-modes/README.md
                       - "Evidence — colormodedefault config knob (issue #241)": zer0-mistakes/test/visual/evidence/color-mode-default/README.md
@@ -1894,7 +1897,9 @@ nav:
                   - "Bug Fix: the dependency gate audited the scanners instead of the…": barodybroject/docs/changelog/summaries/2026-09-11-dependency-scan-scope.md
                   - "Bug Fix: Thread message delete raised TypeError, and deleted locally…": barodybroject/docs/changelog/summaries/2026-08-13-thread-message-delete-regression.md
                   - "Docker Configuration Consolidation Change Documentation": barodybroject/docs/changelog/summaries/2025-10-26-docker-consolidation.md
+                  - "Feature: \"Improve this page\" on every route": barodybroject/docs/changelog/summaries/2026-10-11-page-feedback-widget.md
                   - "Feature: unhandled exceptions can be filed as deduplicated GitHub issues": barodybroject/docs/changelog/summaries/2026-08-30-github-issue-error-reporting.md
+                  - "Improvement: a live model sync is filtered, curated, and retires stale…": barodybroject/docs/changelog/summaries/2026-10-11-model-sync-filter-and-retirement.md
                   - "Improvement: model unit tests, from 3 of 17 models covered to all of…": barodybroject/docs/changelog/summaries/2026-09-11-model-unit-test-coverage.md
                   - "Test: the assistant select cannot regress to seeding a random assistant": barodybroject/docs/changelog/summaries/2026-09-13-content-item-form-assistant-seeding.md
               - "Templates":
@@ -2167,6 +2172,7 @@ nav:
       - "AGENTS.md": bashcrawl/AGENTS.md
       - "Changelog": bashcrawl/CHANGELOG.md
       - "CLAUDE.md": bashcrawl/CLAUDE.md
+      - "motion/": bashcrawl/motion/README.md
       - "TermForge": bashcrawl/termforge/README.md
       - "Documentation":
           - "Bashcrawl Documentation": bashcrawl/docs/index.md
@@ -2187,6 +2193,7 @@ nav:
           - "Runtime Architecture": bashcrawl/docs/architecture-runtime.md
           - "Web Frontend API Design (Phase 2 Proposal)": bashcrawl/docs/web-api-design.md
           - "Generated":
+              - "Motion Clips and Art": bashcrawl/docs/generated/motion.md
               - "Quest Index": bashcrawl/docs/generated/quests.md
               - "Rooms Index": bashcrawl/docs/generated/rooms.md
               - "Runtime Commands": bashcrawl/docs/generated/runtime-commands.md
@@ -2195,6 +2202,7 @@ nav:
               - "Terminal Protocol v1": bashcrawl/docs/schemas/terminal-protocol.v1.md
               - "Terminal Protocol v2": bashcrawl/docs/schemas/terminal-protocol.v2.md
           - "Termforge":
+              - "ASCII Motion in TermForge": bashcrawl/docs/termforge/ascii-motion.md
               - "Authoring TermForge Apps": bashcrawl/docs/termforge/authoring-apps.md
               - "Hidden Gem — DAEMON STORM": bashcrawl/docs/termforge/hidden-gem.md
               - "TermForge Architecture": bashcrawl/docs/termforge/architecture.md
@@ -2217,6 +2225,7 @@ nav:
       - "Security": skills/SECURITY.md
   - "Scripts":
       - "🛠️ scripts": scripts/README.md
+      - "Changelog": scripts/CHANGELOG.md
       - "CLAUDE.md": scripts/CLAUDE.md
       - "Linting Configuration Management": scripts/linting/README.md
       - "Rename Directory Utility - Quick Reference": scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md

@@ -10,7 +10,7 @@ This directory contains Django management commands that provide administrative a
 
 ## Contents
 - `__init__.py`: Python package initialization file
-- `sync_models.py`: Refresh the `AIModel` catalogue from a provider. Replaces the OpenAI-only `fetch_models`
+- `sync_models.py`: Refresh the `AIModel` catalogue from a provider, deactivating models a live catalogue no longer lists. Replaces the OpenAI-only command of the same purpose
 - `ensure_admin.py` / `ensure_e2e_user.py`: Create the admin and end-to-end test users
 - `generate_field_defaults.py`: Django command to generate FieldDefaults records with base templates of model defaults
 - `refreshmigrations.py`: Django command for refreshing database migrations
@@ -44,8 +44,8 @@ python manage.py refreshmigrations
 These commands run within the Django application container:
 - Executed via `python manage.py <command_name>`
 - Require access to Django settings and database connections
-- `sync_models` needs a working credential for the provider it queries. Providers
-that cannot enumerate their models report `supports_model_discovery = False` and are skipped rather than failing
+- `sync_models` needs a working credential to read a provider's live catalogue. Without one (or when
+discovery fails, or the provider reports `supports_model_discovery = False`) it upserts the provider's static list and deactivates nothing
 - Can be run during container initialization or as maintenance tasks
 
 ## Related Paths

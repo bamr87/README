@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2173
+    "pages": 2182
   },
   "projects": {
     "it-journey": {
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 662,
+      "pages": 665,
       "sections": 98,
       "max_depth": 6,
       "skipped": 9,
-      "fingerprint": "1849674bde49fbc2"
+      "fingerprint": "4af53796123d349d"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -45,11 +45,11 @@
       "tree": "context/nav/barodybroject.json",
       "browse": "docs/browse/barodybroject.md",
       "registered": true,
-      "pages": 267,
+      "pages": 269,
       "sections": 56,
       "max_depth": 7,
       "skipped": 8,
-      "fingerprint": "1ab32dbfdd0f48bc"
+      "fingerprint": "ba6ba8ee5ae0cefe"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -57,11 +57,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 41,
+      "pages": 44,
       "sections": 9,
       "max_depth": 3,
       "skipped": 3,
-      "fingerprint": "b8e09498674a0618"
+      "fingerprint": "9543236af17fa153"
     },
     "skills": {
       "title": "Agent Skills",
@@ -81,11 +81,11 @@
       "tree": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
       "registered": true,
-      "pages": 16,
+      "pages": 17,
       "sections": 2,
       "max_depth": 2,
       "skipped": 0,
-      "fingerprint": "09fcd3b2365b6268"
+      "fingerprint": "c719dd1841f8e626"
     },
     "OverTheWire-website": {
       "title": "OverTheWire",

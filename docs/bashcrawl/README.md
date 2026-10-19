@@ -7,6 +7,12 @@ title: ⚔️ Bashcrawl — learn the terminal by playing
 > **v3.1** — one game, two doors: the classic filesystem dungeon in your terminal,
 > and a free browser trainer with mini-games and cheatsheets built from the same content.
 
+[![CI](https://github.com/bamr87/bashcrawl/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/bashcrawl/actions/workflows/ci.yml) [![License: GPL-3.0-only](https://img.shields.io/badge/license-GPL--3.0--only-blue)](LICENSE) [![Live site](https://img.shields.io/badge/live-bamr87.github.io%2Fbashcrawl-2ea44f)](https://bamr87.github.io/bashcrawl/)
+
+> Based on [**bashcrawl** by Seth Kenlon](https://gitlab.com/slackermedia/bashcrawl) (GPLv3). This project is a derivative of the original and is distributed under the same license, GPL-3.0-only. See [Lineage](#-lineage) and [NOTICE](NOTICE).
+
+## Overview
+
 Bashcrawl teaches real POSIX terminal skills through a fantasy dungeon crawl. The core idea: **the filesystem is the game.** Directories are rooms, files named `scroll` are the story and the lessons, and executable scripts are the encounters. Every command you learn — `pwd`, `ls`, `cd`, `cat`, `grep`, `find`, pipes, variables, permissions — is the real thing, usable on any Linux/macOS machine forever.
 
 ## 🎮 Play it
@@ -90,6 +96,25 @@ bash scripts/playtest.sh                        # full loop: N blind runs + gap 
 
 ## 🙏 Lineage
 
-Bashcrawl was created by [Seth Kenlon](https://gitlab.com/slackermedia/bashcrawl) as a pure-filesystem game for teaching GNU/Linux basics. This fork keeps that soul — the terminal game is still just directories, scrolls, and bash — and adds the browser trainer generated from the same content.
+Bashcrawl was created by [Seth Kenlon](https://gitlab.com/slackermedia/bashcrawl) (with many upstream contributors) as a pure-filesystem game for teaching GNU/Linux basics, released under the GNU GPL v3. This project is a derivative of that original: it keeps that soul — the terminal game is still just directories, scrolls, and bash — and adds the browser trainer generated from the same content.
 
 Contributions welcome — read [docs/contributing.md](docs/contributing.md) first.
+
+## Contributing
+
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents should start with [AGENTS.md](AGENTS.md) (with [CLAUDE.md](CLAUDE.md) for Claude Code).
+
+## Changelog
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md).
+
+## License
+
+Copyright (C) 2019-2026 Seth Kenlon and the upstream bashcrawl contributors (original game). Copyright (C) 2025-2026 Amr Abdel-Motaleb (modifications).
+
+Bashcrawl is a derivative of [the original bashcrawl](https://gitlab.com/slackermedia/bashcrawl) and, like it, is free software released under the [GNU General Public License v3.0](LICENSE) (`GPL-3.0-only`). See [NOTICE](NOTICE) for full attribution and the third-party components it includes. Contributions are accepted under the same license.
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

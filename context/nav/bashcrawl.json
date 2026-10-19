@@ -5,7 +5,7 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 41,
+    "pages": 44,
     "sections": 9,
     "max_depth": 3,
     "skipped": 3
@@ -15,12 +15,12 @@
     ".github",
     "logs/README.md"
   ],
-  "fingerprint": "b8e09498674a0618",
+  "fingerprint": "9543236af17fa153",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 41,
+    "pages": 44,
     "children": [
       {
         "type": "group",
@@ -116,6 +116,13 @@
       },
       {
         "type": "page",
+        "title": "motion/",
+        "path": "bashcrawl/motion/README.md",
+        "rel": "motion/README.md",
+        "folder": "motion"
+      },
+      {
+        "type": "page",
         "title": "TermForge",
         "path": "bashcrawl/termforge/README.md",
         "rel": "termforge/README.md",
@@ -126,7 +133,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bashcrawl/docs/index.md",
-        "pages": 27,
+        "pages": 29,
         "children": [
           {
             "type": "page",
@@ -235,8 +242,14 @@
             "type": "section",
             "title": "Generated",
             "rel": "docs/generated",
-            "pages": 3,
+            "pages": 4,
             "children": [
+              {
+                "type": "page",
+                "title": "Motion Clips and Art",
+                "path": "bashcrawl/docs/generated/motion.md",
+                "rel": "docs/generated/motion.md"
+              },
               {
                 "type": "page",
                 "title": "Quest Index",
@@ -287,8 +300,14 @@
             "type": "section",
             "title": "Termforge",
             "rel": "docs/termforge",
-            "pages": 4,
+            "pages": 5,
             "children": [
+              {
+                "type": "page",
+                "title": "ASCII Motion in TermForge",
+                "path": "bashcrawl/docs/termforge/ascii-motion.md",
+                "rel": "docs/termforge/ascii-motion.md"
+              },
               {
                 "type": "page",
                 "title": "Authoring TermForge Apps",

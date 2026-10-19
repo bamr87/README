@@ -52,6 +52,12 @@ version: 1.19.1
 
 # zer0-mistakes
 
+> AI-native, Docker-first Jekyll theme for GitHub Pages sites, built on Bootstrap 5 and published as a Ruby gem.
+
+[![CI](https://github.com/bamr87/zer0-mistakes/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/zer0-mistakes/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/zer0-mistakes)](LICENSE) [![Live site](https://img.shields.io/badge/live-zer0--mistakes.com-2ea44f)](https://zer0-mistakes.com/)
+
+## Overview
+
 ### A modern website theme that just works — for blogs, docs, portfolios, and more
 
 **Free • Open source • Hosted on GitHub Pages for $0/month • Works on Mac, Windows, and Linux**
@@ -61,8 +67,6 @@ version: 1.19.1
 If you already know Jekyll, Ruby, Docker, or AI coding agents: the same theme grows with you into a fully programmable platform with self-healing install scripts, multi-agent guidance for Copilot / Cursor / Claude, AI-generated preview images, and automated semantic releases to RubyGems. Beginners can skip those parts entirely.
 
 [Get Started in 5 Minutes](#-get-started-in-5-minutes) • [What You Get](#-what-you-get) • [Who It's For](#-who-its-for) • [Advanced & AI Features](#-advanced-features-for-power-users) • [Live Demo](https://zer0-mistakes.com/)
-
----
 
 ## ✨ What You Get
 
@@ -967,4 +971,15 @@ And these AI partners that make zer0-mistakes truly AI-native:
 
 **v1.19.1** • [Changelog](CHANGELOG.md) • [License](LICENSE) • [Contributing](CONTRIBUTING.md) • [AI Agent Guide](AGENTS.md)
 
+## Changelog
 
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md). Tagged versions are on the [releases page](https://github.com/bamr87/zer0-mistakes/releases).
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

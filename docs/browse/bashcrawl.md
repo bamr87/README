@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **41 pages** across **9 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **44 pages** across **9 sections** (max depth 3).
 
 - **Repository & tooling** <small>(6)</small>
   - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
@@ -24,8 +24,9 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
 - [AGENTS.md](../bashcrawl/AGENTS.md)
 - [Changelog](../bashcrawl/CHANGELOG.md)
 - [CLAUDE.md](../bashcrawl/CLAUDE.md)
+- [motion/](../bashcrawl/motion/README.md)
 - [TermForge](../bashcrawl/termforge/README.md)
-- **[Documentation](../bashcrawl/docs/index.md)** <small>(27)</small>
+- **[Documentation](../bashcrawl/docs/index.md)** <small>(29)</small>
   - [Bashcrawl Documentation](../bashcrawl/docs/index.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Agent Mode Protocol Specification](../bashcrawl/docs/agent-protocol.md)
@@ -43,7 +44,8 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
   - [Log & Screenshot Viewer — Design Reference](../bashcrawl/docs/log-viewer-reference.md)
   - [Runtime Architecture](../bashcrawl/docs/architecture-runtime.md)
   - [Web Frontend API Design (Phase 2 Proposal)](../bashcrawl/docs/web-api-design.md)
-  - **Generated** <small>(3)</small>
+  - **Generated** <small>(4)</small>
+    - [Motion Clips and Art](../bashcrawl/docs/generated/motion.md)
     - [Quest Index](../bashcrawl/docs/generated/quests.md)
     - [Rooms Index](../bashcrawl/docs/generated/rooms.md)
     - [Runtime Commands](../bashcrawl/docs/generated/runtime-commands.md)
@@ -51,7 +53,8 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Content Registry Contract (v1)](../bashcrawl/docs/schemas/content-registries.v1.md)
     - [Terminal Protocol v1](../bashcrawl/docs/schemas/terminal-protocol.v1.md)
     - [Terminal Protocol v2](../bashcrawl/docs/schemas/terminal-protocol.v2.md)
-  - **Termforge** <small>(4)</small>
+  - **Termforge** <small>(5)</small>
+    - [ASCII Motion in TermForge](../bashcrawl/docs/termforge/ascii-motion.md)
     - [Authoring TermForge Apps](../bashcrawl/docs/termforge/authoring-apps.md)
     - [Hidden Gem — DAEMON STORM](../bashcrawl/docs/termforge/hidden-gem.md)
     - [TermForge Architecture](../bashcrawl/docs/termforge/architecture.md)
