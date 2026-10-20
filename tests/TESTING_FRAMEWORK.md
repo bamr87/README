@@ -7,8 +7,10 @@ This testing framework provides comprehensive testing capabilities for the docum
 ## Framework Components
 
 ### 1. Unit Tests (`tests/unit/`)
-- **Test Cases**: Individual test files for specific functionality
-  - `test_categorization.py` - Content categorization logic
+- **Test Cases** (`tests/unit/test_cases/`, discovered as `test_*.py`): Individual test files for specific functionality
+  - `test_context_engine.py` - Context engine stages, schema lint, MCP dispatch
+  - `test_fleet_survey.py` - Fleet documentation survey checks and report
+  - `test_tracked_surfaces.py` - Tracked-surfaces integrity gate
   - `test_file_processing.py` - Markdown file processing
   - `test_repo_operations.py` - Repository operations
 - **Test Runner**: `test_runner.py` - Executes unit tests and stores results
@@ -175,11 +177,11 @@ python -m pytest tests/ -v
 
 ### Test Specific Components
 ```bash
-# Test only categorization
-python tests/unit/test_runner.py --module test_categorization
+# Test only the context engine
+python tests/unit/test_runner.py --module test_context_engine
 
 # Test specific test class
-python tests/unit/test_runner.py --module test_categorization --class TestCategorization
+python tests/unit/test_runner.py --module test_context_engine --class TestNavigator
 ```
 
 ## Framework Features
@@ -227,7 +229,7 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 python tests/test_runner.py --output /path/to/results
 
 # Run specific test module
-python tests/unit/test_runner.py --module test_categorization
+python tests/unit/test_runner.py --module test_file_processing
 ```
 
 ## Conclusion
