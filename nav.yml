@@ -2494,6 +2494,10 @@ nav:
           - "Website": OverTheWire-website/information/website.md
           - "Wechall": OverTheWire-website/information/wechall.md
   - "Reference":
+      - "Adr":
+          - "Architecture Decision Records": adr/README.md
+          - "ADR 0001 — Record architecture decisions": adr/0001-record-architecture-decisions.md
+          - "ADR NNNN — Title in sentence case": adr/0000-template.md
       - "Results": results/index.md
       - "Setup": setup/wikijs-setup.md
       - "Wargames": wargames/index.md
@@ -2506,6 +2510,7 @@ nav:
       - "Agent Skills": browse/skills.md
       - "Scripts": browse/scripts.md
       - "OverTheWire": browse/OverTheWire-website.md
+      - "Adr": browse/adr.md
       - "Results": browse/results.md
       - "Setup": browse/setup.md
       - "Wargames": browse/wargames.md

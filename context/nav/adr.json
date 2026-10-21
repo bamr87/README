@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "adr",
+  "title": "Adr",
+  "corpus": "docs/adr",
+  "counts": {
+    "pages": 3,
+    "sections": 0,
+    "max_depth": 1,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "4a1e5aee1763e8ad",
+  "tree": {
+    "type": "section",
+    "title": "Adr",
+    "index": "adr/README.md",
+    "pages": 3,
+    "children": [
+      {
+        "type": "page",
+        "title": "Architecture Decision Records",
+        "path": "adr/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "ADR 0001 \u2014 Record architecture decisions",
+        "path": "adr/0001-record-architecture-decisions.md",
+        "rel": "0001-record-architecture-decisions.md"
+      },
+      {
+        "type": "page",
+        "title": "ADR NNNN \u2014 Title in sentence case",
+        "path": "adr/0000-template.md",
+        "rel": "0000-template.md"
+      }
+    ]
+  },
+  "registered": false
+}

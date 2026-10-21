@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2182
+    "pages": 2185
   },
   "projects": {
     "it-journey": {
@@ -98,6 +98,18 @@
       "max_depth": 3,
       "skipped": 0,
       "fingerprint": "ceab543eb82ca094"
+    },
+    "adr": {
+      "title": "Adr",
+      "corpus": "docs/adr",
+      "tree": "context/nav/adr.json",
+      "browse": "docs/browse/adr.md",
+      "registered": false,
+      "pages": 3,
+      "sections": 0,
+      "max_depth": 1,
+      "skipped": 0,
+      "fingerprint": "4a1e5aee1763e8ad"
     },
     "results": {
       "title": "Results",
