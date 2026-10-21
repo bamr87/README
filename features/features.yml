@@ -40,15 +40,40 @@ schema: features/v1
 repo: bamr87/README
 
 features:
-  - id: TODO-001
-    title: "TODO: the first thing a user does here"
-    description: "TODO: replace with the primary user-facing capability of README."
+  - id: README-001
+    title: "Published fleet documentation site"
+    description: "Browse the aggregated fleet corpus on bamr87.github.io/README: the generated fleet overview is the home page and the sidebar is derived from each project's folder hierarchy."
     implemented: true
     surface: ui
     link: /
-    docs: README.md
-    tags: [todo]
-    tests: []
+    docs: MKDOCS.md
+    tags: [site, mkdocs, navigation]
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
     scenarios:
       - verify/scenarios/smoke-home.yml
+    evidence: []
+  - id: README-002
+    title: "Context engine CLI"
+    description: "Build the context pyramid and query it from the shell: `python3 -m scripts.context_engine build|query|card|nav|status`."
+    implemented: true
+    surface: cli
+    link: scripts/context_engine/cli.py
+    docs: scripts/README.md
+    tags: [context-engine, cli]
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
+    scenarios: []
+    evidence: []
+  - id: README-003
+    title: "MCP query server"
+    description: "AI clients query the pyramid read-only over MCP (stdio JSON-RPC): list_projects, get_project, search_context, get_readme, get_nav, get_schema, context_status."
+    implemented: true
+    surface: api
+    link: mcp/server.py
+    docs: mcp/README.md
+    tags: [mcp, context-engine]
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
+    scenarios: []
     evidence: []

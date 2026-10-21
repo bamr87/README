@@ -25,9 +25,11 @@ app:
   # Leave empty and set `static_dir` to serve a built directory instead.
   start: ""
   # Optional one-shot build before `start` / before serving `static_dir`.
-  build: ""
+  # Same command deploy-pages.yaml publishes with (not --strict: the
+  # aggregated corpus carries expected broken cross-references).
+  build: "mkdocs build --site-dir site"
   # Directory to serve statically when `start` is empty (e.g. _site, dist, build).
-  static_dir: ""
+  static_dir: site
   # Base URL the scenarios navigate against.
   url: http://127.0.0.1:4000
   # Path polled until it answers 200 before any scenario runs.
@@ -37,7 +39,8 @@ app:
   # Optional install step (CI runs `npm install` / `bundle install` /
   # `pip install -r requirements.txt` automatically when the manifest exists;
   # set this to override).
-  install: ""
+  # requirements.txt is the pipeline's; the site needs the MkDocs deps.
+  install: "pip install -r requirements-docs.txt"
 
 # Named viewports scenarios can reference by name.
 viewports:

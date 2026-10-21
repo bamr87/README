@@ -109,9 +109,15 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 | `hooks.d/` | Build lifecycle hooks |
 | `tools/` | Vendored hub kit — `unwrap-prose.py`, the one-paragraph-per-line prose gate |
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
+| `features/`, `verify/` | Hub verify kit — feature index and Playwright user scenarios run by `.github/workflows/verify.yml` |
+| `_includes/custom/`, `assets/js/` | Hub page-feedback widget kit (Jekyll-shaped; not yet wired into the MkDocs theme) |
+| `_drafts/` | Session hand-off posts drafted for bamr87/it-journey |
+| `docker-compose.yml` | Optional Wiki.js + Postgres stack serving `docs/` ([WIKIJS-QUICKSTART.md](WIKIJS-QUICKSTART.md)) |
+| `AGENTS.md` | Canonical agent instructions (`CLAUDE.md` imports it) |
 | `SCHEMA.md` | Root of this repo's structure pyramid |
 | `PRD.md` | Product spec for the context engine |
 | `PLAN.md` | Redesign plan (v3): audit, target architecture, check catalogue, roadmap |
+| `MKDOCS.md` | Site build and generated-navigation documentation |
 
 ## Testing
 
@@ -127,7 +133,7 @@ If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit th
 
 ## Contributing
 
-Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents should start with [CLAUDE.md](CLAUDE.md).
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents should start with [AGENTS.md](AGENTS.md) (the canonical agent instructions; `CLAUDE.md` imports it).
 
 ## Changelog
 
