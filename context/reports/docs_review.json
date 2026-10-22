@@ -4,8 +4,8 @@
   "scope": "local working trees (each on the branch shown)",
   "summary": {
     "repositories": 24,
-    "documents": 418,
-    "words": 643264,
+    "documents": 419,
+    "words": 645435,
     "conformant": 24,
     "failing_by_row": {
       "DOC-09": 0,
@@ -86,11 +86,11 @@
       "kind": "tooling",
       "branch": "docs/fleet-docs-framework",
       "doc_base": "",
-      "head": "ecd4fa2123c9",
+      "head": "9067f635c86e",
       "error": "",
       "sizes": {
         "AGENTS.md": 989,
-        "README.md": 1078,
+        "README.md": 1101,
         "CLAUDE.md lines": 4
       },
       "framework": {
@@ -3354,11 +3354,11 @@
       "kind": "app",
       "branch": "docs/harmonize-docs",
       "doc_base": "",
-      "head": "de44af945665",
+      "head": "77061575ec39",
       "error": "",
       "sizes": {
-        "AGENTS.md": 1998,
-        "README.md": 1741,
+        "AGENTS.md": 2086,
+        "README.md": 1846,
         "CLAUDE.md lines": 4
       },
       "framework": {
@@ -3367,7 +3367,7 @@
         "DOC-02": "✓",
         "DOC-03": "✓",
         "DOC-04": "✓",
-        "DOC-08": "✓",
+        "DOC-08": "~",
         "DOC-01": "✓"
       },
       "findings": [
@@ -3565,21 +3565,6 @@
           }
         },
         {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/test/README.md->../docs/systems/testing-framework.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/test/README.md->../docs/systems/testing-framework.md",
-          "path": "packages/zer0-mistakes/test/README.md",
-          "message": "`packages/zer0-mistakes/test/README.md` links to `../docs/systems/testing-framework.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "../docs/systems/testing-framework.md"
-          }
-        },
-        {
           "key": "D8:zer0-CMS:sites/2005/README.md->seed.md",
           "check": "D8",
           "class": "drift",
@@ -3653,13 +3638,28 @@
           "evidence": {
             "target": "./zer0-mistakes-prd.md"
           }
+        },
+        {
+          "key": "DOC-08:zer0-CMS:budget-AGENTS.md",
+          "check": "DOC-08",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "zer0-CMS",
+          "subject": "budget-AGENTS.md",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md is 2086 words (budget 2000) (waived under Standard deviations)",
+          "remedy": "Move deep dives into docs/ and link them.",
+          "component": "",
+          "evidence": {
+            "words": 2086
+          }
         }
       ],
       "docs": [
         {
           "path": "AGENTS.md",
-          "words": 1998,
-          "summary": "How to work in zer0-CMS, the zer0 stack's agent-native headless CMS and monorepo: commands, layout, conventions, the plane boundary and the invariants the build enforces.",
+          "words": 2086,
+          "summary": "How to work in zer0-CMS, the zer0 stack's agent-native headless CMS and monorepo: commands, layout, conventions, the platform boundary and the invariants the build enforces.",
           "source": "blockquote"
         },
         {
@@ -3687,6 +3687,12 @@
           "source": "blockquote"
         },
         {
+          "path": "SECURITY.md",
+          "words": 388,
+          "summary": "Supported versions and how to report a vulnerability privately.",
+          "source": "well-known"
+        },
+        {
           "path": "docs/ARCHITECTURE.md",
           "words": 6078,
           "summary": "The design decisions D1–D17 and why the code follows them: the `src/core` layer boundary, the five bundles, the webview contract, the ledger, the Fleet console's guards, and the shared-files boundary with the Rails CMS.",
@@ -3694,7 +3700,7 @@
         },
         {
           "path": "docs/CICD.md",
-          "words": 1800,
+          "words": 1803,
           "summary": "Every workflow and what its green means, the reusable doctor, the commands to run before a PR, and the specs CI actually pins.",
           "source": "blockquote"
         },
@@ -3712,7 +3718,7 @@
         },
         {
           "path": "docs/MONOREPO.md",
-          "words": 2331,
+          "words": 2362,
           "summary": "Every project under `packages/`, `sites/` and `apps/`, how `workspace.yml` and `bin/zer0` manage them as one repository, how they were imported with their history, and what still runs from the originals.",
           "source": "blockquote"
         },
@@ -3736,13 +3742,13 @@
         },
         {
           "path": "docs/adr/README.md",
-          "words": 235,
+          "words": 291,
           "summary": "The architecture decision records, one per decision that changes how the repository is put together — from ADR 0001's content plane, experience plane and clients onward.",
           "source": "blockquote"
         },
         {
           "path": "docs/plan/PLAN.md",
-          "words": 5955,
+          "words": 7445,
           "summary": "The build plan for the agent-native headless CMS: milestones M0–M20 and the cutover steps, with what is done, what is blocked, and the open decisions.",
           "source": "blockquote"
         },
@@ -3754,7 +3760,7 @@
         },
         {
           "path": "src/README.md",
-          "words": 1550,
+          "words": 1553,
           "summary": "The VS Code extension's layers — the pure core, the MCP server, the webviews and the `vscode` shell — the shell's files, and the five things in it that are easy to get wrong.",
           "source": "blockquote"
         },
@@ -3766,8 +3772,8 @@
         },
         {
           "path": "content/README.md",
-          "words": 530,
-          "summary": "The Django 5.2 + Wagtail 7.4 content plane — pages and revisions, the agent harness and tool registry, suggestions, the graph, the outbox, and its GraphQL, REST and MCP surfaces — and how to run it.",
+          "words": 642,
+          "summary": "The Django 5.2 + Wagtail 7.4 platform — pages and revisions, the agent harness and tool registry, suggestions, the graph, the outbox, the operational baseline, and its GraphQL, REST and MCP surfaces — and how to run it.",
           "source": "blockquote"
         },
         {
@@ -3798,11 +3804,11 @@
     },
     "zer0-mistakes": {
       "repo": "bamr87/zer0-mistakes",
-      "url": "https://github.com/bamr87/zer0-CMS/tree/docs/harmonize-zer0-mistakes/packages/zer0-mistakes",
+      "url": "https://github.com/bamr87/zer0-CMS/tree/main/packages/zer0-mistakes",
       "kind": "theme",
-      "branch": "docs/harmonize-zer0-mistakes",
-      "doc_base": "https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes",
-      "head": "fa111bd8789c",
+      "branch": "main",
+      "doc_base": "https://github.com/bamr87/zer0-CMS/blob/main/packages/zer0-mistakes",
+      "head": "fc871ea3c0cf",
       "error": "",
       "sizes": {
         "AGENTS.md": 1703,
