@@ -35,6 +35,7 @@ README_SECTIONS = (
     ("Contributing", r"contribut"),
     ("License", r"licen[cs]e"),
 )
+README_REQUIRED = ("Quick start", "License")
 ROOT_RECORDS = {
     "README.md", "AGENTS.md", "CLAUDE.md", "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md",
     "CODE_OF_CONDUCT.md", "SCHEMA.md", "PRD.md", "BACKLOG.md", "ATTRIBUTION.md",
@@ -157,16 +158,22 @@ def check_readme_skeleton(source, ctx) -> List[Finding]:
     out: List[Finding] = []
     joined = " | ".join(h2s(text)).lower()
     missing = [name for name, rx in README_SECTIONS if not re.search(rx, joined)]
-    if missing:
-        out.append(_finding("DOC-10", source, "readme-sections",
-                            "README lacks " + ", ".join(missing),
+    # The skeleton lets a section that does not apply go, except License; and
+    # the Quick start is what UPS-REPO-11 holds equal to AGENTS.md.
+    required = [m for m in missing if m in README_REQUIRED]
+    advisory = [m for m in missing if m not in README_REQUIRED]
+    if required:
+        out.append(_finding("DOC-10", source, "readme-sections", "README lacks " + ", ".join(required),
                             "Follow the portfolio skeleton (bamr87/bamr87 docs/PORTFOLIO.md §4).",
-                            path="README.md", evidence={"missing": missing}, row="UPS-DOC-10"))
+                            path="README.md", evidence={"missing": required}))
+    if advisory:
+        out.append(_finding("DOC-10", source, "readme-skeleton",
+                            "README has no " + ", ".join(advisory) + " section", "Add them where they apply.",
+                            severity="info", path="README.md", evidence={"missing": advisory}))
     has_docs = any(p.startswith("docs/") for p in source.tree)
     if has_docs and not re.search(r"\]\((\./)?docs/(README\.md)?(#[^)]*)?\)", text):
         out.append(_finding("DOC-10", source, "readme-docs-link", "README does not link docs/README.md",
-                            "Link the docs index from a `## Documentation` section.", path="README.md",
-                            row="UPS-DOC-10"))
+                            "Link the docs index from a `## Documentation` section.", path="README.md"))
     return out
 
 

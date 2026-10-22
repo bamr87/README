@@ -423,8 +423,9 @@ class TestDocsFramework(unittest.TestCase):
                          ["budget-README.md"])
 
     def test_readme_without_skeleton_or_docs_link(self):
-        found = self._checks(self._clean(**{"README.md": "# demo\n\n## Usage\n\nx\n"}), "DOC-10")
-        self.assertEqual({f.subject for f in found}, {"readme-sections", "readme-docs-link"})
+        found = self._checks(self._clean(**{"README.md": "# demo\n\n## Overview\n\nx\n"}), "DOC-10")
+        self.assertEqual({f.subject: f.severity for f in found},
+                         {"readme-sections": "warn", "readme-skeleton": "info", "readme-docs-link": "warn"})
 
     def test_a_paragraph_said_twice_is_reported_once(self):
         para = " ".join(["repeated"] + ["words"] * 30) + "\n"
