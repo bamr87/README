@@ -4,16 +4,16 @@
   "scope": "local working trees (each on the branch shown)",
   "summary": {
     "repositories": 24,
-    "documents": 419,
-    "words": 645435,
-    "conformant": 24,
+    "documents": 380,
+    "words": 583237,
+    "conformant": 23,
     "failing_by_row": {
-      "DOC-09": 0,
+      "DOC-09": 1,
       "DOC-10": 0,
-      "DOC-02": 0,
-      "DOC-03": 0,
+      "DOC-02": 1,
+      "DOC-03": 1,
       "DOC-04": 0,
-      "DOC-08": 0,
+      "DOC-08": 1,
       "DOC-01": 0
     }
   },
@@ -86,7 +86,7 @@
       "kind": "tooling",
       "branch": "docs/fleet-docs-framework",
       "doc_base": "",
-      "head": "9067f635c86e",
+      "head": "c52afb65886c",
       "error": "",
       "sizes": {
         "AGENTS.md": 989,
@@ -3354,11 +3354,11 @@
       "kind": "app",
       "branch": "docs/harmonize-docs",
       "doc_base": "",
-      "head": "77061575ec39",
+      "head": "12daad4f527a",
       "error": "",
       "sizes": {
-        "AGENTS.md": 2086,
-        "README.md": 1846,
+        "AGENTS.md": 3293,
+        "README.md": 2000,
         "CLAUDE.md lines": 4
       },
       "framework": {
@@ -3368,7 +3368,7 @@
         "DOC-03": "✓",
         "DOC-04": "✓",
         "DOC-08": "~",
-        "DOC-01": "✓"
+        "DOC-01": "~"
       },
       "findings": [
         {
@@ -3383,186 +3383,6 @@
           "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
           "component": "",
           "evidence": {}
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-265/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-265/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/agent-issue-265/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/agent-issue-265/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-412/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-412/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/agent-issue-412/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/agent-issue-412/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-459/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-459/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/agent-issue-459/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/agent-issue-459/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-484/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/agent-issue-484/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/agent-issue-484/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/agent-issue-484/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/author-avatar-url/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/author-avatar-url/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/author-avatar-url/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/author-avatar-url/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/book-abc/",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/book-abc/",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/book-abc/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/book-abc/"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/breadcrumbs/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/breadcrumbs/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/breadcrumbs/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/breadcrumbs/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/color-mode-default/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/color-mode-default/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/color-mode-default/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/color-mode-default/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/component-showcase/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/component-showcase/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/component-showcase/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/component-showcase/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/cookie-consent-contrast/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/cookie-consent-contrast/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/cookie-consent-contrast/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/cookie-consent-contrast/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/dialog-heading-levels/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/dialog-heading-levels/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/dialog-heading-levels/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/dialog-heading-levels/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-CMS:packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/env-switcher-prod/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-CMS",
-          "subject": "packages/zer0-mistakes/CHANGELOG.md->test/visual/evidence/env-switcher-prod/README.md",
-          "path": "packages/zer0-mistakes/CHANGELOG.md",
-          "message": "`packages/zer0-mistakes/CHANGELOG.md` links to `test/visual/evidence/env-switcher-prod/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/env-switcher-prod/README.md"
-          }
         },
         {
           "key": "D8:zer0-CMS:sites/2005/README.md->seed.md",
@@ -3647,19 +3467,38 @@
           "repo": "zer0-CMS",
           "subject": "budget-AGENTS.md",
           "path": "AGENTS.md",
-          "message": "AGENTS.md is 2086 words (budget 2000) (waived under Standard deviations)",
+          "message": "AGENTS.md is 3293 words (budget 2000) (waived under Standard deviations)",
           "remedy": "Move deep dives into docs/ and link them.",
           "component": "",
           "evidence": {
-            "words": 2086
+            "words": 3293
+          }
+        },
+        {
+          "key": "DOC-01:zer0-CMS:repeat-05ed252e54ed",
+          "check": "DOC-01",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "zer0-CMS",
+          "subject": "repeat-05ed252e54ed",
+          "path": null,
+          "message": "The same paragraph appears in AGENTS.md, docs/adr/0006-one-python-platform.md",
+          "remedy": "Keep it in its one home and link to it from the others.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "AGENTS.md",
+              "docs/adr/0006-one-python-platform.md"
+            ],
+            "excerpt": "Hand-edit a generated file tree (a site's exported source, a book's `library/<slug>/`) as if it were the source. Edit in the platform; the files are regenerated"
           }
         }
       ],
       "docs": [
         {
           "path": "AGENTS.md",
-          "words": 2086,
-          "summary": "How to work in zer0-CMS, the zer0 stack's agent-native headless CMS and monorepo: commands, layout, conventions, the platform boundary and the invariants the build enforces.",
+          "words": 3293,
+          "summary": "How to work in zer0-CMS while it becomes one Python platform with a React frontend (ADR 0006): the target and what an agent must not do, the commands, the layout, the conventions, the platform boundary and the invariants today's build…",
           "source": "blockquote"
         },
         {
@@ -3688,7 +3527,7 @@
         },
         {
           "path": "SECURITY.md",
-          "words": 388,
+          "words": 387,
           "summary": "Supported versions and how to report a vulnerability privately.",
           "source": "well-known"
         },
@@ -3700,7 +3539,7 @@
         },
         {
           "path": "docs/CICD.md",
-          "words": 1803,
+          "words": 1695,
           "summary": "Every workflow and what its green means, the reusable doctor, the commands to run before a PR, and the specs CI actually pins.",
           "source": "blockquote"
         },
@@ -3718,8 +3557,8 @@
         },
         {
           "path": "docs/MONOREPO.md",
-          "words": 2362,
-          "summary": "Every project under `packages/`, `sites/` and `apps/`, how `workspace.yml` and `bin/zer0` manage them as one repository, how they were imported with their history, and what still runs from the originals.",
+          "words": 2273,
+          "summary": "Every project under `packages/`, `sites/` and `apps/` — the sources the platform is absorbing (ADR 0006) — how `workspace.yml` and `bin/zer0` manage them as one repository, how they were imported with their history, and what still runs…",
           "source": "blockquote"
         },
         {
@@ -3742,14 +3581,20 @@
         },
         {
           "path": "docs/adr/README.md",
-          "words": 291,
-          "summary": "The architecture decision records, one per decision that changes how the repository is put together — from ADR 0001's content plane, experience plane and clients onward.",
+          "words": 429,
+          "summary": "The architecture decision records, 0001–0006, one per decision that changes how the repository is put together; ADR 0006 (one Python platform with a React frontend, every merged repository absorbed, no Ruby) is the current target.",
           "source": "blockquote"
         },
         {
           "path": "docs/plan/PLAN.md",
-          "words": 7445,
-          "summary": "The build plan for the agent-native headless CMS: milestones M0–M20 and the cutover steps, with what is done, what is blocked, and the open decisions.",
+          "words": 11209,
+          "summary": "The build plan: ADR 0006's order of work (§ 3), every milestone and phase with what is done, what is blocked and what overtook it, and the open decisions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/plan/TARGET.md",
+          "words": 3620,
+          "summary": "A comprehensive application for writing articles, creating content, brainstorming ideas, gathering information, operating a news site and writing books — a robust React frontend over a Python and Postgres backend, with AI integrations and…",
           "source": "blockquote"
         },
         {
@@ -3762,12 +3607,6 @@
           "path": "src/README.md",
           "words": 1553,
           "summary": "The VS Code extension's layers — the pure core, the MCP server, the webviews and the `vscode` shell — the shell's files, and the five things in it that are easy to get wrong.",
-          "source": "blockquote"
-        },
-        {
-          "path": "rails/README.md",
-          "words": 1309,
-          "summary": "The fleet CMS half of zer0-CMS — a Rails app that indexes, edits and previews every zer0-themed Jekyll site — and the stdlib-only ABC book generator with its CLI.",
           "source": "blockquote"
         },
         {
@@ -3796,7 +3635,7 @@
         },
         {
           "path": "tools/workspace/README.md",
-          "words": 802,
+          "words": 803,
           "summary": "The tooling behind `bin/zer0`: every command, the contract `bin/zer0 check` enforces, ownership of files, and the library's layout.",
           "source": "blockquote"
         }
@@ -3804,24 +3643,24 @@
     },
     "zer0-mistakes": {
       "repo": "bamr87/zer0-mistakes",
-      "url": "https://github.com/bamr87/zer0-CMS/tree/main/packages/zer0-mistakes",
+      "url": "https://github.com/bamr87/zer0-mistakes",
       "kind": "theme",
       "branch": "main",
-      "doc_base": "https://github.com/bamr87/zer0-CMS/blob/main/packages/zer0-mistakes",
-      "head": "fc871ea3c0cf",
+      "doc_base": "",
+      "head": "98e978d21f2d",
       "error": "",
       "sizes": {
-        "AGENTS.md": 1703,
-        "README.md": 1997,
-        "CLAUDE.md lines": 4
+        "AGENTS.md": 1346,
+        "README.md": 5743,
+        "CLAUDE.md lines": 112
       },
       "framework": {
-        "DOC-09": "✓",
+        "DOC-09": "✗",
         "DOC-10": "✓",
-        "DOC-02": "✓",
-        "DOC-03": "✓",
+        "DOC-02": "✗",
+        "DOC-03": "✗",
         "DOC-04": "✓",
-        "DOC-08": "✓",
+        "DOC-08": "✗",
         "DOC-01": "✓"
       },
       "findings": [
@@ -3841,204 +3680,202 @@
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/agent-issue-265/README.md",
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../implementation/copilot-agent-prompt-button.md",
           "check": "D8",
           "class": "drift",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/agent-issue-265/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/agent-issue-265/README.md`, which is not in the repository",
+          "subject": "docs/templates/README.md->../implementation/copilot-agent-prompt-button.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../implementation/copilot-agent-prompt-button.md`, which is not in the repository",
           "remedy": "Fix the path or remove the link.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/agent-issue-265/README.md"
+            "target": "../implementation/copilot-agent-prompt-button.md"
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/agent-issue-412/README.md",
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../implementation/lint-pages-fixes.md",
           "check": "D8",
           "class": "drift",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/agent-issue-412/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/agent-issue-412/README.md`, which is not in the repository",
+          "subject": "docs/templates/README.md->../implementation/lint-pages-fixes.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../implementation/lint-pages-fixes.md`, which is not in the repository",
           "remedy": "Fix the path or remove the link.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/agent-issue-412/README.md"
+            "target": "../implementation/lint-pages-fixes.md"
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/agent-issue-459/README.md",
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../releases/v0.3.0-release-notes.md",
           "check": "D8",
           "class": "drift",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/agent-issue-459/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/agent-issue-459/README.md`, which is not in the repository",
+          "subject": "docs/templates/README.md->../releases/v0.3.0-release-notes.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../releases/v0.3.0-release-notes.md`, which is not in the repository",
           "remedy": "Fix the path or remove the link.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/agent-issue-459/README.md"
+            "target": "../releases/v0.3.0-release-notes.md"
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/agent-issue-484/README.md",
+          "key": "D8:zer0-mistakes:test/README.md->../docs/systems/testing-framework.md",
           "check": "D8",
           "class": "drift",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/agent-issue-484/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/agent-issue-484/README.md`, which is not in the repository",
+          "subject": "test/README.md->../docs/systems/testing-framework.md",
+          "path": "test/README.md",
+          "message": "`test/README.md` links to `../docs/systems/testing-framework.md`, which is not in the repository",
           "remedy": "Fix the path or remove the link.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/agent-issue-484/README.md"
+            "target": "../docs/systems/testing-framework.md"
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/author-avatar-url/README.md",
+          "key": "D8:zer0-mistakes:test/visual/evidence/README.md->../navbar-responsive.spec.js",
           "check": "D8",
           "class": "drift",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/author-avatar-url/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/author-avatar-url/README.md`, which is not in the repository",
+          "subject": "test/visual/evidence/README.md->../navbar-responsive.spec.js",
+          "path": "test/visual/evidence/README.md",
+          "message": "`test/visual/evidence/README.md` links to `../navbar-responsive.spec.js`, which is not in the repository",
           "remedy": "Fix the path or remove the link.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/author-avatar-url/README.md"
+            "target": "../navbar-responsive.spec.js"
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/book-abc/",
-          "check": "D8",
-          "class": "drift",
+          "key": "DOC-09:zer0-mistakes:agents-title",
+          "check": "DOC-09",
+          "class": "alignment",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/book-abc/",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/book-abc/`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
+          "subject": "agents-title",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md is titled `# AGENTS.md — AI Agent Guide for zer0-mistakes`",
+          "remedy": "Title it with the repository's name.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "DOC-09:zer0-mistakes:agents-headings",
+          "check": "DOC-09",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "agents-headings",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md lacks `## What this repo is`, `## Stack & commands`, `## Layout`, `## Conventions`, `## Fleet context`, `## Standard deviations`",
+          "remedy": "Use the six UPS-AGENT-07 headings.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/book-abc/"
+            "missing": [
+              "What this repo is",
+              "Stack & commands",
+              "Layout",
+              "Conventions",
+              "Fleet context",
+              "Standard deviations"
+            ]
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/breadcrumbs/README.md",
-          "check": "D8",
-          "class": "drift",
+          "key": "DOC-09:zer0-mistakes:claude-pointer",
+          "check": "DOC-09",
+          "class": "alignment",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/breadcrumbs/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/breadcrumbs/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
+          "subject": "claude-pointer",
+          "path": "CLAUDE.md",
+          "message": "CLAUDE.md is not the pointer (112 non-blank lines, no `@AGENTS.md` import)",
+          "remedy": "Move its rules into AGENTS.md and replace it with the kit pointer.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/breadcrumbs/README.md"
+            "lines": 112
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/color-mode-default/README.md",
-          "check": "D8",
-          "class": "drift",
+          "key": "DOC-02:zer0-mistakes:summaries",
+          "check": "DOC-02",
+          "class": "alignment",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/color-mode-default/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/color-mode-default/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
+          "subject": "summaries",
+          "path": null,
+          "message": "9 of 14 documents have no summary line",
+          "remedy": "Add `> one sentence` under each H1 (or `description:` in front matter); `python3 tools/docs_index.py --lint` lists them.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/color-mode-default/README.md"
+            "paths": [
+              "docs/architecture/README.md",
+              "docs/archive/README.md",
+              "docs/development/README.md",
+              "docs/features/README.md",
+              "docs/implementation/README.md",
+              "docs/releases/README.md",
+              "docs/systems/README.md",
+              "docs/templates/README.md",
+              "docs/ui/README.md"
+            ]
           }
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/component-showcase/README.md",
-          "check": "D8",
-          "class": "drift",
+          "key": "DOC-03:zer0-mistakes:index",
+          "check": "DOC-03",
+          "class": "alignment",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/component-showcase/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/component-showcase/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
+          "subject": "index",
+          "path": "docs/README.md",
+          "message": "docs/README.md has no `AUTO:docs-index` span",
+          "remedy": "Vendor tools/docs_index.py and run `python3 tools/docs_index.py --write`.",
           "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/component-showcase/README.md"
-          }
+          "evidence": {}
         },
         {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/cookie-consent-contrast/README.md",
-          "check": "D8",
-          "class": "drift",
+          "key": "DOC-08:zer0-mistakes:budget-README.md",
+          "check": "DOC-08",
+          "class": "alignment",
           "severity": "warn",
           "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/cookie-consent-contrast/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/cookie-consent-contrast/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
+          "subject": "budget-README.md",
+          "path": "README.md",
+          "message": "README.md is 5743 words (budget 2000)",
+          "remedy": "Move deep dives into docs/ and link them.",
           "component": "",
           "evidence": {
-            "target": "test/visual/evidence/cookie-consent-contrast/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/dialog-heading-levels/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/dialog-heading-levels/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/dialog-heading-levels/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/dialog-heading-levels/README.md"
-          }
-        },
-        {
-          "key": "D8:zer0-mistakes:CHANGELOG.md->test/visual/evidence/env-switcher-prod/README.md",
-          "check": "D8",
-          "class": "drift",
-          "severity": "warn",
-          "repo": "zer0-mistakes",
-          "subject": "CHANGELOG.md->test/visual/evidence/env-switcher-prod/README.md",
-          "path": "CHANGELOG.md",
-          "message": "`CHANGELOG.md` links to `test/visual/evidence/env-switcher-prod/README.md`, which is not in the repository",
-          "remedy": "Fix the path or remove the link.",
-          "component": "",
-          "evidence": {
-            "target": "test/visual/evidence/env-switcher-prod/README.md"
+            "words": 5743
           }
         }
       ],
       "docs": [
         {
           "path": "AGENTS.md",
-          "words": 1703,
-          "summary": "The Jekyll theme published as the `jekyll-theme-zer0` gem — layouts, includes, Sass and vendored assets — with the zer0-mistakes.com docs site that runs on it, the self-healing installer, and the release and theme-propagation tooling.",
+          "words": 1346,
+          "summary": "**Cross-tool entry point** for AI coding agents working in this repository (GitHub Copilot, OpenAI Codex, Cursor, Aider, Jules, Continue, Claude Code, and any future agent that follows the [agents.md](https://agents.md/) convention).",
           "source": "blockquote"
         },
         {
           "path": "CHANGELOG.md",
-          "words": 43842,
+          "words": 44616,
           "summary": "Release history: the notable changes in each version, newest first.",
           "source": "well-known"
         },
         {
           "path": "CODE_OF_CONDUCT.md",
-          "words": 1015,
-          "summary": "The standards of behaviour for everyone taking part in zer0-mistakes, people and AI agents alike, how they are enforced, and how to report a breach.",
-          "source": "blockquote"
+          "words": 989,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
         },
         {
           "path": "SECURITY.md",
@@ -4047,298 +3884,64 @@
           "source": "well-known"
         },
         {
-          "path": "docs/architecture/build-system.md",
-          "words": 474,
-          "summary": "How the Zer0-Mistakes theme builds: the Jekyll pipeline, Docker configuration, vendored Bootstrap assets, and the GitHub Pages deployment flow.",
-          "source": "front-matter"
+          "path": "docs/architecture/README.md",
+          "words": 336,
+          "summary": "Technical architecture documentation for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
         },
         {
-          "path": "docs/architecture/layouts-includes.md",
-          "words": 588,
-          "summary": "How Jekyll layouts inherit from each other (root → default → article/collection/landing) and how the _includes/ component system is organized.",
-          "source": "front-matter"
+          "path": "docs/archive/README.md",
+          "words": 99,
+          "summary": "This directory contains historical documentation from the **Release Automation Modernization Project** (November 2025).",
+          "source": "fallback"
         },
         {
-          "path": "docs/architecture/prd-requirements.md",
-          "words": 2385,
-          "summary": "Full PRD for the zer0-mistakes Jekyll theme: vision, user personas, feature requirements, technical architecture, and design specifications.",
-          "source": "front-matter"
+          "path": "docs/development/README.md",
+          "words": 180,
+          "summary": "Guides for setting up a development environment and contributing to the Zer0-Mistakes theme.",
+          "source": "fallback"
         },
         {
-          "path": "docs/architecture/prd-roadmap.md",
-          "words": 1583,
-          "summary": "Success metrics, release roadmap, security and compliance requirements, stakeholder needs, and acceptance criteria for the zer0-mistakes theme.",
-          "source": "front-matter"
+          "path": "docs/features/README.md",
+          "words": 128,
+          "summary": "Per-feature design notes and implementation details for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
         },
         {
-          "path": "docs/architecture/project-structure.md",
-          "words": 186,
-          "summary": "A tour of the Zer0-Mistakes theme repository: directory layout, key files, content collections, and where layouts, includes, and scripts live.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/architecture/ui-components.md",
-          "words": 30965,
-          "summary": "Single source of truth for every front-end UI/UX component in the zer0-mistakes theme — what it does, the files that implement it (SCSS / includes / layouts / JS / plugins), its API surface…",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/code-style.md",
-          "words": 265,
-          "summary": "Coding conventions for contributing to Zer0-Mistakes: naming, formatting, Liquid and SCSS idioms, and the consistency rules enforced in review.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/coverage-baseline.md",
-          "words": 728,
-          "summary": "Structural coverage baseline recorded as part of T-005. Identifies the lowest-covered subsystems and links to the follow-up backlog tasks.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/documentation-workflow.md",
-          "words": 274,
-          "summary": "Contributor guide to the dual docs architecture: when to write in docs/ vs pages/_docs/, front matter requirements, and the review pipeline.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/extension-points.md",
-          "words": 907,
-          "summary": "The four extension points this theme guarantees consumers — a code-block-ready event, asset frontmatter, the wiki index shape, and _includes/custom overrides.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/local-setup.md",
-          "words": 291,
-          "summary": "Set up a local Zer0-Mistakes development environment with Docker or a native Ruby toolchain, then run the dev server and validate your changes.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/testing.md",
-          "words": 827,
-          "summary": "How to run the Zer0-Mistakes test suites and validators locally, and which checks to run before opening a pull request to keep CI green.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/development/troubleshooting.md",
-          "words": 1074,
-          "summary": "Diagnose and fix common failures in the Zer0-Mistakes release automation scripts: version bumps, gem builds, tagging, and RubyGems publishing.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/features/abc-books.md",
-          "words": 393,
-          "summary": "The book-abc layout: a single-scroll toddler alphabet board book driven by an alphabet front-matter list, with per-style CSS skins and series-grouped shelves.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/features/jupyter-notebooks.md",
-          "words": 1108,
-          "summary": "How Zer0-Mistakes converts Jupyter notebooks to Jekyll Markdown at build time for GitHub Pages, preserving code, outputs, and math without plugins.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/features/nanobar-component.md",
-          "words": 708,
-          "summary": "Technical implementation of the config-driven page loading progress bar",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/features/page-views.md",
-          "words": 893,
-          "summary": "How the theme tracks a page view and renders the count, with a local-first provider and an optional counter endpoint",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/features/theme-version.md",
-          "words": 656,
-          "summary": "The zer0-mistakes automatic version display system: how it works, how to access it via gear icon or footer button, and implementation details.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/implementation/ai-chat-assistant.md",
-          "words": 1220,
-          "summary": "Technical implementation details for the Claude-powered, proxy-first AI chat with GitHub tool use in Zer0-Mistakes.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/implementation/feature-change-log.md",
-          "words": 709,
-          "summary": "Implementation notes for Mermaid v2 integration, sidebar improvements, frontmatter validator bug fixes, and the Copilot Agent prompt button.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/implementation/navigation-redesign.md",
-          "words": 596,
-          "summary": "Comprehensive UI/UX redesign of the Zer0-Mistakes navigation system: responsive design, WCAG 2.1 AA accessibility, animations, and keyboard navigation.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/implementation/posthog-analytics-integration.md",
-          "words": 969,
-          "summary": "PostHog analytics in Zer0-Mistakes: privacy-first, consent-gated event tracking with GDPR/CCPA compliance and a cookie banner, enabled in production.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/implementation/preview-image-generator.md",
-          "words": 1328,
-          "summary": "Generate AI-powered preview images for Jekyll posts — Claude analyzes the article and reviews the result; OpenAI, xAI, Stability, Gemini, or a local template renders it.",
-          "source": "front-matter"
+          "path": "docs/implementation/README.md",
+          "words": 194,
+          "summary": "Technical implementation details and changelogs for theme features.",
+          "source": "fallback"
         },
         {
           "path": "docs/installation/index.md",
-          "words": 376,
+          "words": 369,
           "summary": "Overview of the modular, profile-driven Zer0-Mistakes installer CLI, the classic install.sh one-liner, and how to choose the right install path.",
           "source": "front-matter"
         },
         {
-          "path": "docs/reference/agent-guidance.md",
-          "words": 2689,
-          "summary": "Every file-scoped instruction set with its applyTo globs, every reusable prompt, skill and Claude Code subagent, generated from their front matter.",
-          "source": "front-matter"
+          "path": "docs/releases/README.md",
+          "words": 536,
+          "summary": "This directory contains comprehensive release documentation for all versions of the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
         },
         {
-          "path": "docs/reference/commands.md",
-          "words": 1091,
-          "summary": "Every scripts/bin entry point, test suite, Make target, Rake task and npm script in the theme, generated from the files that define them.",
-          "source": "front-matter"
+          "path": "docs/systems/README.md",
+          "words": 151,
+          "summary": "Infrastructure, CI/CD, release automation, and dependency management for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
         },
         {
-          "path": "docs/reference/installer.md",
-          "words": 526,
-          "summary": "Every subcommand, global option and example of the modular installer, generated from the help text in scripts/install/cli.sh.",
-          "source": "front-matter"
+          "path": "docs/templates/README.md",
+          "words": 190,
+          "summary": "Reusable templates for consistent documentation across the Zer0-Mistakes project.",
+          "source": "fallback"
         },
         {
-          "path": "docs/reference/workflows.md",
-          "words": 556,
-          "summary": "Every GitHub Actions workflow the theme carries, with its name, triggers and jobs, generated from the workflow files themselves.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/ZERO_PIN_STRATEGY.md",
-          "words": 484,
-          "summary": "The zero-version-pin strategy: always use the latest compatible dependencies while keeping reproducible builds via lockfiles and fail-fast checks.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/automated-version-system.md",
-          "words": 593,
-          "summary": "How the automated version-bump system analyzes commits on main and performs the matching semantic version bump and release without manual steps.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/continuous-evolution.md",
-          "words": 2372,
-          "summary": "The continuous-evolution loop that lets scheduled AI agents audit this repo into a backlog and implement the highest-priority tasks via PRs.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/dependency-management.md",
-          "words": 482,
-          "summary": "The Zero Pin plus lockfile plus automated-updates dependency strategy: flexible Gemfiles with reproducible, regularly refreshed lockfiles for the theme.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/github-secrets-setup.md",
-          "words": 778,
-          "summary": "How to configure the GitHub Actions secrets and variables the Zer0-Mistakes workflows need for releases, gem publishing, and scheduled automation.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/multilingual-translation.md",
-          "words": 1216,
-          "summary": "Build-time AI translation pipeline: English stays the only human-maintained language while scripts/translate.rb (Claude Code OAuth) generates alternate-language pages, UI strings, and the manifest behind the language toggle.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/release-automation.md",
-          "words": 1030,
-          "summary": "The v2.0 modular release automation system for Zer0-Mistakes: its architecture, scripts, and the end-to-end flow from version bump to publish.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/ruby-version-management.md",
-          "words": 731,
-          "summary": "The Zer0-Mistakes Ruby version strategy: why Docker pins a specific Ruby, how CI selects versions, and how to upgrade Ruby safely across the toolchain.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/theme-canary-contract.md",
-          "words": 1315,
-          "summary": "The canonical upstream bug-intake protocol every downstream theme-scout must follow when filing zer0-mistakes theme defects: labels, deterministic dedupe key, pre-filing search, per-run cap, and evidence format.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/systems/theme-propagation.md",
-          "words": 1167,
-          "summary": "How a zer0-mistakes release reaches the downstream sites built on it — the consumer registry, the release fan-out, and the manifest contract underneath both.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/templates/feature-documentation-template.md",
-          "words": 416,
-          "summary": "A reusable template for documenting a new Zer0-Mistakes feature: overview, configuration, usage, developer notes, and links to related material.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/code-blocks.md",
-          "words": 509,
-          "summary": "Syntax highlighting, language headers, line numbers, and copy-to-clipboard for code blocks in the Zer0-Mistakes theme, including notebook code cells.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/components.md",
-          "words": 1231,
-          "summary": "The reusable Liquid component library in _includes/components for Zer0-Mistakes, how components consume design tokens, and how to add new ones.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/configuration.md",
-          "words": 508,
-          "summary": "Styling and UI keys in _config.yml for Zer0-Mistakes: what each controls, example values, and why Jekyll must be restarted after editing config.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/customization.md",
-          "words": 442,
-          "summary": "Supported ways to change the look and behavior of Zer0-Mistakes without forking the whole theme, layered from smallest tweak to deepest override.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/design-system.md",
-          "words": 1052,
-          "summary": "The Zer0-Mistakes design system: Bootstrap 5.3.3, the semantic --zer0-* token layer, decomposed SCSS partials, and runtime config-driven overrides.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/design-tokens.md",
-          "words": 816,
-          "summary": "Quick reference for the semantic --zer0-* CSS custom properties used across Zer0-Mistakes, with pointers to the full design-system architecture.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/extending.md",
-          "words": 440,
-          "summary": "Minimal copy-paste recipes for extending Zer0-Mistakes: adding layouts, components, skins, and other building blocks on top of the design system.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/js-api.md",
-          "words": 480,
-          "summary": "The public JavaScript API of Zer0-Mistakes: the navigation, background, and UI surfaces intended for consumers, plus their stability expectations.",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/layouts-and-navigation.md",
-          "words": 814,
-          "summary": "How Zer0-Mistakes structures pages: the layout hierarchy, sidebars, table of contents, the navbar, and floating action buttons (FABs).",
-          "source": "front-matter"
-        },
-        {
-          "path": "docs/ui/theming.md",
-          "words": 897,
-          "summary": "Theming in Zer0-Mistakes: separating color mode (light/dark/auto) from skin (palette plus SVG backgrounds), set at build time and adjusted at runtime.",
-          "source": "front-matter"
+          "path": "docs/ui/README.md",
+          "words": 143,
+          "summary": "Core theme styling and component documentation for contributors and maintainers.",
+          "source": "fallback"
         }
       ]
     },
