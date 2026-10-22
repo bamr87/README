@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "amendments",
+  "title": "Amendments",
+  "corpus": "docs/amendments",
+  "counts": {
+    "pages": 3,
+    "sections": 0,
+    "max_depth": 1,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "a763036fe9f9e13b",
+  "tree": {
+    "type": "section",
+    "title": "Amendments",
+    "index": "amendments/README.md",
+    "pages": 3,
+    "children": [
+      {
+        "type": "page",
+        "title": "Amendments \u2014 README",
+        "path": "amendments/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "0001 \u2014 Ratify the constitution",
+        "path": "amendments/0001-ratify-constitution.md",
+        "rel": "0001-ratify-constitution.md"
+      },
+      {
+        "type": "page",
+        "title": "NNNN \u2014 Title of the amendment",
+        "path": "amendments/0000-template.md",
+        "rel": "0000-template.md"
+      }
+    ]
+  },
+  "registered": false
+}
