@@ -80,6 +80,11 @@ repos:
     url: https://github.com/bamr87/csv-vscoode
     kind: tooling
     note: "VS Code extension"
+  - name: cv-pro
+    repo: bamr87/cv-pro
+    url: https://github.com/bamr87/cv-pro
+    kind: app
+    note: "The CV as code and the CV Builder Pro app"
   - name: djangoerp
     repo: bamr87/djangoerp
     url: https://github.com/bamr87/djangoerp
@@ -92,6 +97,11 @@ repos:
     repo: bamr87/githubai
     url: https://github.com/bamr87/githubai
     kind: tooling
+  - name: gitorio
+    repo: bamr87/gitorio
+    url: https://github.com/bamr87/gitorio
+    kind: app
+    note: "GitFactory: a factory builder that compiles to GitHub Actions"
   - name: godotgo
     repo: bamr87/godotgo
     url: https://github.com/bamr87/godotgo
@@ -106,6 +116,11 @@ repos:
     url: https://github.com/bamr87/it-journey
     kind: site
     note: "Educational IT platform"
+  - name: law-ai
+    repo: bamr87/law-ai
+    url: https://github.com/bamr87/law-ai
+    kind: app
+    note: "Agent-orchestrated legal intelligence platform"
   - name: lawmode
     repo: bamr87/lawmode
     url: https://github.com/bamr87/lawmode
@@ -116,6 +131,16 @@ repos:
     url: https://github.com/bamr87/lifehacker.dev
     kind: site
     note: "Personal site on the zer0-mistakes theme"
+  - name: ocrmd
+    repo: bamr87/ocrmd
+    url: https://github.com/bamr87/ocrmd
+    kind: tooling
+    note: "Webcam and image to cross-checked Markdown"
+  - name: outbox
+    repo: bamr87/outbox
+    url: https://github.com/bamr87/outbox
+    kind: tooling
+    note: "Multi-agent coordination harness"
   - name: README
     repo: bamr87/README
     url: https://github.com/bamr87/README
@@ -185,5 +210,11 @@ repos:
     repo: bamr87/zer0-CMS
     url: https://github.com/bamr87/zer0-CMS
     kind: app
-    fork: true
-    survey: false   # upstream's documentation, not the fleet's
+    fork: true      # GitHub's flag: it began as a Front Matter fork
+    note: "The zer0 stack's home: CMS planes, the VS Code extension, the theme and the imported sites (ADR 0002)"
+
+  - name: zpl-viewer
+    repo: bamr87/zpl-viewer
+    url: https://github.com/bamr87/zpl-viewer
+    kind: tooling
+    note: "Label Studio: a VS Code extension for ZPL and EPL labels"

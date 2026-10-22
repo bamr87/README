@@ -1,104 +1,83 @@
-# CLAUDE.md
+<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+# README
+
+> The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework.
 
 ## What this repo is
 
-`bamr87/README` (branch `main`) — the **consolidated README / context engine** of the bamr87 monorepo. It crawls the fleet of project repos listed in the registry, aggregates their Markdown into a corpus, distills that corpus upward into a **context pyramid** (facts → cards → consolidated apex README), builds a query index, and serves the whole thing to AI clients over **MCP**. Scheduled CI reruns the pipeline, so the context continuously evolves with the fleet.
+`bamr87/README` (branch `main`) is the fleet's documentation engine. It aggregates the Markdown of the projects in `_data/projects.yml` into a corpus, distills it upward (facts → cards → the apex README), builds a query index, and serves it to AI clients over MCP. Its survey reads every repository in `_data/fleet.yml` and writes two reports: `fleet_health` (scores) and `docs_review` (every repository's documents in one place, checked against the hub's documentation framework, [specs/DOCS.md](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md)). A scheduled workflow reruns the pipeline, so the context follows the fleet.
 
-> This is one submodule of the `bamr87/bamr87` monorepo. Commit here, push to `bamr87/README`, *then* bump the pointer in the parent — see the parent `../CLAUDE.md` for the submodule workflow. This repo follows the parent's **SCHEMA protocol**: every governed directory carries a `SCHEMA.md`, and `python3 scripts/schema_lint.py check .` is the drift gate (run it before committing structural changes).
+A change is done when `python tests/test_runner.py --type quick`, `python3 scripts/schema_lint.py check .`, `python3 -m scripts.context_engine navcheck` and `python3 scripts/check_tracked_surfaces.py` all pass, and the nearest `README.md` says what changed.
 
-## The pipeline (core architecture)
+## Stack & commands
 
-Everything flows left-to-right; each stage's output is the next stage's input. Stages 1–4 build the corpus (unchanged from the original aggregator); stages 5–7 are the context engine.
+Python 3 (stdlib + PyYAML, requests, nltk, pytest); MkDocs Material for the site; a stdlib MCP server.
+
+```bash
+pip install -r requirements.txt                     # pip install -r requirements-docs.txt for the site
+bash scripts/aggregate.sh                           # crawl the registry's repos into docs/ (self-bootstraps .venv)
+python3 -m scripts.context_engine build             # rebuild the pyramid (--ai auto|off|anthropic|xai|mock)
+python3 -m scripts.context_engine sync              # registry -> repos.txt
+python3 -m scripts.context_engine query <terms>     # also: card / facts / apex / status / projects / nav
+python3 -m scripts.context_engine survey [repo]     # fleet survey of default branches -> fleet_health + docs_review
+python3 -m scripts.context_engine survey --workspace ~/github   # review local checkouts -> docs_review only
+python3 -m scripts.context_engine survey --local PATH           # one working tree, nothing written
+python tests/test_runner.py --type quick            # unit suite (the CI gate)
+python3 scripts/schema_lint.py check .              # SCHEMA drift gate
+python3 -m scripts.context_engine navcheck          # nav surfaces match the corpus (fix: rebuild)
+python3 scripts/check_tracked_surfaces.py           # surfaces name only git-tracked files
+bash scripts/run_doc_checks.sh [--apply]            # corpus quality checks / fixers
+python3 tools/unwrap-prose.py --check               # one paragraph per line
+python3 tools/docs_index.py --check                 # docs/README.md index is fresh
+```
+
+## Layout
+
+See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline, left to right:
 
 | Stage | Input | Output | Entry point |
-|-------|-------|--------|-------------|
-| 1. Aggregate | `repos.txt` (generated from registry) | `temp/` → `raw_docs/` | `scripts/aggregate.sh` + `scripts/aggregate.py` |
-| 2. Process | `raw_docs/` | `docs/{project}/` + YAML frontmatter | `scripts/process.py` |
-| 3. Validate / fix | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` → `lint_docs.py`, `check_frontmatter.py`, `--apply` fixers |
-| 4. Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
-| 5. Navigate (engine) | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `scripts/context_engine/navigator.py` |
-| 6. Distill (engine) | corpus + registry + nav | `context/` pyramid + README AUTO span + `docs/index.md` | `python3 -m scripts.context_engine build` |
-| 7. Serve | `context/` | CLI + MCP answers | `scripts/context_engine/cli.py`, `mcp/server.py` |
+| --- | --- | --- | --- |
+| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh`, `aggregate.py` |
+| Process | `raw_docs/` | `docs/{project}/` + front matter | `scripts/process.py` |
+| Validate | `docs/` | reports, in-place fixes | `scripts/run_doc_checks.sh` |
+| Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
+| Navigate | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `scripts/context_engine/navigator.py` |
+| Distill | corpus + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `python3 -m scripts.context_engine build` |
+| Survey | `_data/fleet.yml` or local checkouts | `context/sources/`, `context/reports/{fleet_health,docs_review}.*` | `survey.py`, `gather/`, `analyze/` |
+| Serve | `context/` | CLI and MCP answers | `cli.py`, `mcp/server.py` |
 
-### Source of truth and generated surfaces
+Engine modules (`scripts/context_engine/`): `registry` (registry + navigation contract) → `extractor` (facts) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
 
-- **`_data/projects.yml` is the fleet registry** — the only hand-edited definition of what the engine describes. `repos.txt` is *generated* from it (`context_engine sync`).
-- **Generated surfaces — never hand-edit**: `context/**`, `docs/**` (including `docs/index.md` and `docs/browse/`), `repos.txt`, `nav.yml`, and the `AUTO:projects` span in the root `README.md`. Fix the registry, the upstream repo, or the engine, then rebuild.
-- The pyramid: `docs/` (L3 corpus) → `context/facts/*.json` (L2) → `context/cards/*.md` (L1) → `context/README.md` (L0 apex, mirrored to `docs/index.md` for the published site).
-- **Navigation is derived, never curated.** The corpus folder hierarchy plus the registry's `navigation:` contract is the only input; `nav.yml`, `context/nav/*.json` and `docs/browse/*.md` are all rendered from it. To change the sidebar, edit `_data/projects.yml` (a project's `nav.groups`, `nav.exclude`, `nav.order`, `navigation.section_titles`) and rebuild — never the nav files, and never add a `nav:` key to `mkdocs.yml` (it would shadow the `INHERIT`ed one).
-- **Published ≠ navigable, and the gap is declared.** GitHub Pages 404s any URL with a dot-prefixed segment, so `navigation.publish_hidden: true` builds the dot-directory corpora while `navigation.navigate_hidden: false` keeps them out of the sidebar; the navigator emits `not_in_nav` in `nav.yml` so MkDocs knows the omission is intentional. Everything the sidebar links to is a page the site actually serves.
+## Conventions
 
-### The context engine (`scripts/context_engine/`)
+- **Backlog of record:** GitHub Issues with the fleet labels. **Definition of Done:** `.github/pull_request_template.md`. **Decisions:** `docs/adr/`.
+- **Commits:** Conventional Commits. **Branches:** `feature/`, `fix/`, `docs/`, `refactor/`, `test/`, `chore/` off `main`. `CHANGELOG.md` is release-please's.
+- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`.
+- **Generated surfaces are never hand-edited:** `context/**`, `docs/**` (the corpus, `docs/index.md`, `docs/browse/`), `repos.txt`, `nav.yml`, and the README `AUTO:projects` span. Fix the registry, the upstream repo or the engine, then rebuild. Never add a `nav:` key to `mkdocs.yml` (it would shadow the inherited one).
+- **Builds succeed with no key** (heuristic mode) and are diff-stable: outputs carry corpus fingerprints, not timestamps. Keep it that way.
+- **The corpus layout is the navigation contract.** `process.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.
+- **Every page must be safe in the nav:** `scripts/fix_frontmatter_icons.py` normalizes upstream `icon:` values at ingest and in `run_doc_checks.sh --apply`.
+- **The MCP server is read-only**; never add write tools. It reads through `query.py`.
+- **Front matter is the corpus contract** (`title`, `tags`, `category`, dates): processing scripts stay front-matter-aware and idempotent, because the `--apply` fixers run repeatedly in CI. Card and fact contracts change in `synthesizer.py`/`extractor.py`, never in their outputs.
+- **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`.
+- **Tests:** unit tests in `tests/unit/test_cases/` (unittest discovery); `test_context_engine.py` covers the engine, schema lint and MCP dispatch and `test_fleet_survey.py` the survey and the docs framework checks — extend them with the code. Integration tests (`--type integration`) clone real repos and need the network.
+- **One paragraph per line** (`tools/unwrap-prose.py`, vendored — never edit it here). The crawl unwraps the corpus at ingest, because a push to `main` can only fail the prose gate.
+- **SCHEMA protocol:** a structural change updates the governing `SCHEMA.md` in the same commit; `scripts/`, `_data/` and `mcp/` are `coverage: full`. New scripts fit a pipeline stage and get a row in `scripts/SCHEMA.md` and a section in `scripts/README.md`.
+- **Never:** push to `main`, commit lockfiles or secrets, suppress type errors, leave empty exception handlers, or edit generated files by hand.
+- `PRD.md` is the engine's product spec (v2); [`PLAN.md`](PLAN.md) is the v3 redesign (check catalogue, roadmap) — read it before structural work and update its roadmap when a phase ships. [`MKDOCS.md`](MKDOCS.md) documents the site and its generated navigation.
 
-Package layout: `registry.py` (load/validate registry + the navigation contract, sync repos.txt) → `extractor.py` (corpus → facts; reuses `docs_index.json` rollups) → `navigator.py` (corpus hierarchy + contract → one nav tree, rendered to `context/nav/`, `nav.yml` and `docs/browse/`; also folded back into the facts so cards and the sidebar describe the same sections) → `synthesizer.py` (facts → cards) → `assembler.py` (apex, AUTO span injection, site index, context SCHEMA) → `indexer.py` (term index + manifest; section titles are indexed so searches land on the right part of the sidebar) → `query.py` (read-side API shared by CLI and MCP) → `builder.py`/`cli.py` (orchestration + CLI). `ai.py` is the provider-agnostic enrichment layer (Anthropic via `ANTHROPIC_API_KEY` or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN`/`ANTHROPIC_AUTH_TOKEN`, xAI via `XAI_API_KEY`/`GROK_API_KEY`, `mock` for tests); builds **must always succeed with no key** (heuristic mode). `survey.py` + `gather/` + `analyze/` are a separate fleet documentation survey (input `_data/fleet.yml`, the full public-repo inventory, not the corpus registry; output `context/sources/*.json` and `context/reports/fleet_health.{json,md}`). `hooks.py` runs `hooks.d/<stage>/` executables at each stage (non-fatal unless `CONTEXT_HOOKS_STRICT=1`). Generated markdown carries corpus fingerprints, not timestamps — reruns over an unchanged corpus produce empty diffs (keep it that way).
+## CI and the site
 
-### The MCP server (`mcp/server.py`)
+- `aggregate-docs.yaml` (weekly + manual): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
+- `docs-quality-check.yaml` (PRs, `quality/*`): schema lint, `navcheck`, `check_tracked_surfaces.py`, then doc lint and front matter checks.
+- `deploy-pages.yaml`: builds MkDocs Material (not `--strict`; aggregated pages carry expected broken cross-references) and publishes `docs/` to Pages. `ci.yml` calls the hub's `standard-ci.yml`.
+- `docker-compose.yml` runs Wiki.js + Postgres (`scripts/wiki-manage.sh`, [`WIKIJS-QUICKSTART.md`](WIKIJS-QUICKSTART.md)); copy `.env.example` to `.env` first.
 
-Stdlib-only, stdio, newline-delimited JSON-RPC; registered in `.mcp.json` (project scope, so Claude Code auto-discovers it here). Read-only by design: tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`; resources `context://...`. It reads through `scripts/context_engine/query.py` — one code path for CLI and MCP. Never add write/mutate tools.
+## Fleet context
 
-### The AI harmonization subsystem (`scripts/harmonize/`)
+A submodule of [bamr87/bamr87](https://github.com/bamr87/bamr87): commit and push here first, then the hub bumps its pointer. The hub owns the standards this repo checks (`specs/`, including the documentation framework), and the tools it vendors (`tools/unwrap-prose.py`, `tools/docs_index.py`) stay byte-identical to the hub's copies. The fleet-pulse doctor and the hub's issue pipeline act on this repo like any other.
 
-Legacy-but-functional corpus reorganization package calling **xAI's Grok API** directly (predates `context_engine/ai.py`). CLI `harmonize_docs.py`, session-based (`--scope`, `--resume`, `--apply --dry-run`, `--mock`). Optional and gated off the main pipeline; requires a Grok key.
+## Standard deviations
 
-## Commands
-
-```bash
-# Full crawl (clones every registry repo; self-bootstraps .venv if needed)
-bash scripts/aggregate.sh
-
-# Corpus quality: read-only checks; --apply auto-fixes whitespace/tags/h1/frontmatter
-bash scripts/run_doc_checks.sh [--apply]
-
-# Corpus index consumed by the engine and the site
-python3 scripts/generate_docs_index.py
-
-# Context engine (stage 5-6)
-python3 -m scripts.context_engine build          # full pyramid rebuild (--ai auto|off|anthropic|xai|mock)
-python3 -m scripts.context_engine sync           # registry -> repos.txt
-python3 -m scripts.context_engine query <terms>  # search; also: card/facts/apex/status/projects
-python3 -m scripts.context_engine nav [project]  # navigation tree (--depth N, --json)
-python3 -m scripts.context_engine survey [repo]  # fleet doc-health survey from _data/fleet.yml (clones; --local PATH, --no-write)
-
-# Gates (PR CI and the cron both run these three)
-python3 scripts/schema_lint.py check .           # SCHEMA drift (run before committing structural changes)
-python3 -m scripts.context_engine navcheck       # nav.yml / context/nav / docs/browse match the corpus; fix = rebuild
-python3 scripts/check_tracked_surfaces.py        # surfaces reference only git-tracked files
-```
-
-Dependencies: `pip install -r requirements.txt` (pyyaml, requests, nltk, pytest). A `.venv/` may exist in-tree — `source .venv/bin/activate`.
-
-### Tests
-
-The intended runner is the **custom harness**, not bare pytest:
-
-```bash
-python tests/test_runner.py                 # unit + integration
-python tests/test_runner.py --type quick    # fast path (unit only) — the CI gate
-python tests/test_runner.py --type integration --repos https://github.com/octocat/Hello-World
-```
-
-Unit tests live in `tests/unit/test_cases/` (unittest discovery; `tests/unit/test_cases/test_context_engine.py` covers the engine, schema lint, and MCP dispatch against fixtures — extend it when touching those). Integration tests **clone real GitHub repos** (`tests/config.py`), need network, and are slow. Results land in `tests/results/` (generated).
-
-## CI workflows (`.github/workflows/`)
-
-- `aggregate-docs.yaml` — weekly cron (+ manual): registry sync → `aggregate.sh` → corpus index → **context engine build** (AI enrichment auto-enables when `ANTHROPIC_API_KEY`/`XAI_API_KEY` secrets exist) → schema lint → auto-commit to `main`. This is why `docs/`, `context/`, and the README span churn on their own; treat them as build artifacts.
-- `docs-quality-check.yaml` — PRs to `main` and `quality/*` pushes: **schema lint drift gate**, **`navcheck`** (fails if any branch touches `docs/**` without rebuilding the nav surfaces) and **`check_tracked_surfaces.py`**, then doc lint + frontmatter checks, report artifact + PR comment.
-- `ci.yml` — thin caller of the parent's shared `standard-ci.yml` gate; don't edit the logic here.
-- `deploy-pages.yaml` — pushes to `main` touching `docs/**`: builds the MkDocs Material site (**not** `--strict`; aggregated docs carry expected broken cross-references) and publishes to GitHub Pages. `docs/index.md` (the site home) is generated by the engine.
-
-## Wiki.js / Docker
-
-`docker-compose.yml` runs a **Wiki.js + Postgres** stack (distinct from the parent monorepo's compose). It mounts `./docs` read-only into the wiki container. `scripts/wiki-manage.sh {start|stop|backup|...}` is the wrapper. Copy `.env.example` → `.env` first. Ports: wiki `3000`, pgAdmin `5050` (profile `admin`).
-
-## Conventions specific to this repo
-
-- **Registry first**: adding/removing a fleet project = edit `_data/projects.yml`, run `sync`, rebuild. Never edit `repos.txt` by hand. The same file owns the navigation contract — sidebar grouping, section labels, depth caps and exclusions live there, not in `mkdocs.yml`.
-- **Corpus layout is the navigation contract**: `process.py` preserves each upstream repo's directory structure under `docs/{repo}/` precisely because the navigator turns that hierarchy straight into the published sidebar. Don't flatten or re-bucket the corpus.
-- **Every page must be safe to put in the nav**: Material resolves `page.meta.icon` as a bundled SVG for each nav entry, so an upstream `icon: bi-gear` fails the whole site build. `scripts/fix_frontmatter_icons.py` normalizes those at ingest (`process.py`) and in the quality gate (`run_doc_checks.sh --apply`).
-- **One paragraph per line**: `.github/workflows/markdown-oneline.yml` enforces the fleet's prose rule with `tools/unwrap-prose.py` (vendored verbatim from the hub — never edit it here). It self-heals a PR by pushing the unwrap back to the branch, but a push to `main` can only fail, so the crawl unwraps the corpus at ingest (`scripts/aggregate.sh`, same exclusions: `SCHEMA.md`, `CHANGELOG.md`). Check your own edits with `python3 tools/unwrap-prose.py --check`.
-- **SCHEMA protocol**: structural changes (new top-level entry, new script, new registry) require updating the governing `SCHEMA.md` table in the same change; the lint gate enforces existence and, where `coverage: full`, exact listings (`scripts/`, `_data/`, `mcp/`).
-- Frontmatter is the corpus contract (`title`, `tags`, `category`, dates); processing scripts stay frontmatter-aware and idempotent (the `--apply` fixers run repeatedly in CI). Cards/facts have their own frontmatter/JSON contracts — change them in `synthesizer.py`/`extractor.py`, not by editing outputs.
-- New utility scripts belong under `scripts/`, must fit a pipeline stage, and get a row in `scripts/SCHEMA.md` + a section in `scripts/README.md` (README-First/README-Last house rule from the parent repo).
-- `PRD.md` is the context-engine product spec (v2; the v1 aggregator MVP is in git history). `PLAN.md` is the v3 redesign plan (audit findings, five-stage architecture, check catalogue D*/G*/Q*/A*, phased roadmap) — consult it before structural work, and update its roadmap status when a phase ships. `MKDOCS.md` documents the site build **and the generated navigation**. This repo has its **own** `mkdocs.yml` (`docs_dir: docs`, `INHERIT: ./nav.yml`) deployed by `deploy-pages.yaml`; the parent monorepo separately builds the same `docs/` tree under its root `mkdocs.yml`.
+- UPS-DOC-04: `docs/` is the generated MkDocs corpus, so this repository's own operator docs (`PLAN.md`, `MKDOCS.md`, `WIKIJS-QUICKSTART.md`) stay at the root. Its docs index covers the root and `docs/adr/` only.

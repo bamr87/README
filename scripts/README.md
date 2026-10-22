@@ -107,7 +107,7 @@ scripts/
 │   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner
 │   ├── builder.py + cli.py # Orchestration + command-line interface
 │   ├── gather/             # Shallow blobless clones -> source manifests
-│   ├── analyze/            # Checks -> findings -> health score
+│   ├── analyze/            # Checks -> findings -> health score; framework.py = UPS-DOC rows, review.py = docs review
 │   ├── survey.py           # Fleet documentation survey (`survey` command)
 │   └── __main__.py         # `python3 -m scripts.context_engine`
 ├── harmonize_docs.py       # AI harmonization CLI
@@ -135,7 +135,8 @@ scripts/
 | 8. Schema gate | repo tree | drift report (exit code) | `schema_lint.py` |
 | 8b. Integrity gate | `nav.yml`, `context/nav/`, `context/facts/` | untracked-reference report (exit code) | `check_tracked_surfaces.py` |
 | 9. Harmonization (optional) | `docs/` | Reorganized docs | `harmonize_docs.py` |
-| 10. Fleet survey | `_data/fleet.yml` | `context/sources/`, `context/reports/fleet_health.{json,md}` | `context_engine/{gather,analyze}`, `context_engine/survey.py` |
+| 10. Fleet survey | `_data/fleet.yml` | `context/sources/`, `context/reports/fleet_health.{json,md}`, `docs_review.{json,md}` | `context_engine/{gather,analyze}`, `context_engine/survey.py` |
+| 10b. Docs review | local checkouts (`survey --workspace DIR`) | `context/reports/docs_review.{json,md}` | `context_engine/analyze/{framework,review}.py`, `../tools/docs_index.py` |
 
 ---
 
@@ -1179,7 +1180,6 @@ python3 scripts/lint_docs.py 2>&1 | tee lint_output.log
 
 - [Parent README](../README.md) - Main project documentation
 - [Testing Framework](../tests/TESTING_FRAMEWORK.md) - Test suite documentation
-- [Documentation Checks](../README_DOCS_CHECKS.md) - Quality check standards
 
 ---
 

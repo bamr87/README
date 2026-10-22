@@ -20,6 +20,8 @@ import yaml
 
 from . import ENGINE_VERSION
 from .analyze import build_report, render_markdown, run_checks, score_repo
+from .analyze.framework import inventory
+from .analyze.review import build_review, render_review, sizes
 from .config import CONTEXT_DIR, DATA_DIR, ROOT
 from .gather import CACHE_DIR, gather_local, gather_repo
 
@@ -29,6 +31,8 @@ REPORTS_DIR = CONTEXT_DIR / "reports"
 GITHUB_SNAPSHOT = SOURCES_DIR / "github.json"
 REPORT_JSON = REPORTS_DIR / "fleet_health.json"
 REPORT_MD = REPORTS_DIR / "fleet_health.md"
+REVIEW_JSON = REPORTS_DIR / "docs_review.json"
+REVIEW_MD = REPORTS_DIR / "docs_review.md"
 
 
 class FleetError(ValueError):
@@ -99,6 +103,8 @@ def survey(names: Optional[List[str]] = None, cache_dir: Path = CACHE_DIR,
             "name": name, "repo": entry["repo"], "url": entry["url"],
             "kind": ctx["kind"], "manifest": source.manifest(),
             "findings": findings, "health": health,
+            "docs": inventory(source) if source.ok else [],
+            "sizes": sizes(source) if source.ok else {},
         })
         if progress:
             if source.ok:
@@ -113,6 +119,7 @@ def survey(names: Optional[List[str]] = None, cache_dir: Path = CACHE_DIR,
     report = build_report(results)
     if write:
         write_report(report, results)
+        write_review(build_review(results, "the default branch of every surveyed repository"))
     return report
 
 
@@ -137,6 +144,83 @@ def survey_local(path: Path, name: Optional[str] = None,
         "url": entry.get("url", str(path)), "kind": ctx["kind"],
         "manifest": source.manifest(), "findings": findings, "health": health,
     }])
+
+
+def _origin_slug(path: Path) -> str:
+    """`owner/name` of a checkout's origin remote, or "" when it has none."""
+    import subprocess
+    try:
+        url = subprocess.run(["git", "-C", str(path), "remote", "get-url", "origin"],
+                             capture_output=True, text=True, timeout=30).stdout.strip()
+    except (OSError, subprocess.TimeoutExpired):
+        return ""
+    url = url[:-4] if url.endswith(".git") else url
+    parts = url.replace(":", "/").rstrip("/").split("/")
+    return "/".join(parts[-2:]) if len(parts) >= 2 else ""
+
+
+def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool = True,
+                     progress: bool = True) -> Dict:
+    """
+    Review every checkout under `root` - the fleet's working trees, on whatever
+    branch each is on - and write the consolidated documentation review.
+
+    A checkout is matched to its fleet entry by origin slug, then by directory
+    name; one the inventory does not know is reviewed under its directory name
+    with the default profile. Only `docs_review.*` is written: `fleet_health`
+    stays the record of the default branches, which a workspace is not.
+    """
+    root = Path(root).resolve()
+    fleet = load_fleet()
+    by_repo = {e["repo"].lower(): e for e in fleet}
+    by_name = {e["name"]: e for e in fleet}
+    snapshot = load_github_snapshot()
+    checkouts = [p for p in sorted(root.iterdir(), key=lambda p: p.name.lower())
+                 if (p / ".git").exists()]
+    results: List[Dict] = []
+    for i, path in enumerate(checkouts, 1):
+        slug = _origin_slug(path)
+        entry = by_repo.get(slug.lower()) or by_name.get(path.name) or {}
+        name = entry.get("name") or path.name
+        if any(r["name"] == name for r in results):  # a second worktree of one repo
+            name = path.name
+        if names and name not in names and path.name not in names:
+            continue
+        source = gather_local(path, name=name, repo=entry.get("repo") or slug or name,
+                              url=entry.get("url") or (f"https://github.com/{slug}" if slug else str(path)),
+                              meta=snapshot.get(name, {}))
+        ctx = {"kind": entry.get("kind", "default"), "entry": entry,
+               "link_exclude": tuple(entry.get("link_exclude") or ())}
+        findings = run_checks(source, ctx) if source.ok else []
+        results.append({
+            "name": name, "repo": source.repo, "url": source.url, "kind": ctx["kind"],
+            "manifest": source.manifest(), "findings": findings,
+            "health": score_repo(findings) if source.ok else {},
+            "docs": inventory(source) if source.ok else [], "sizes": sizes(source) if source.ok else {},
+        })
+        if progress:
+            bad = sum(1 for f in findings if f.check.startswith("DOC-") and f.severity != "info")
+            print(f"[{i:>2}/{len(checkouts)}] {name:<22} {source.default_branch or '-':<28} "
+                  f"{len(results[-1]['docs']):>4} docs  {bad} framework finding(s)")
+    review = build_review(results, "local working trees (each on the branch shown)")
+    if write:
+        write_review(review)
+    return review
+
+
+def write_review(review: Dict) -> None:
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    REVIEW_JSON.write_text(json.dumps(review, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    REVIEW_MD.write_text(render_review(review), encoding="utf-8")
+
+
+def summarize_review(review: Dict) -> str:
+    s = review["summary"]
+    lines = [f"docs review: {s['repositories']} repositories, {s['documents']} documents, "
+             f"{s['conformant']} meet every framework row"]
+    for row, count in s["failing_by_row"].items():
+        lines.append(f"  {row:<7} failing in {count}")
+    return "\n".join(lines)
 
 
 def write_report(report: Dict, results: List[Dict]) -> None:
