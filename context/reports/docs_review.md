@@ -11,7 +11,7 @@ generated: true
 
 > Every repository's documents in one place — what each one covers, how large the files every agent session loads are, and where each repository stands against the [documentation framework](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md).
 
-Scope: local working trees (each on the branch shown). **24** repositories, **379** indexed documents, **573,843** words. **23** repositories meet every framework row.
+Scope: local working trees (each on the branch shown). **24** repositories, **418** indexed documents, **643,264** words. **24** repositories meet every framework row.
 
 ## Framework conformance
 
@@ -19,18 +19,18 @@ Scope: local working trees (each on the branch shown). **24** repositories, **37
 
 | Row | Requirement | Repositories failing |
 |---|---|---:|
-| UPS-DOC-09 | AGENTS.md canonical, CLAUDE.md a pointer | 1 |
+| UPS-DOC-09 | AGENTS.md canonical, CLAUDE.md a pointer | 0 |
 | UPS-DOC-10 | README portfolio skeleton | 0 |
-| UPS-DOC-02 | one H1 and a summary line per document | 1 |
-| UPS-DOC-03 | generated docs index | 1 |
+| UPS-DOC-02 | one H1 and a summary line per document | 0 |
+| UPS-DOC-03 | generated docs index | 0 |
 | UPS-DOC-04 | docs of record only at the root | 0 |
-| UPS-DOC-08 | AGENTS.md / README.md within budget | 1 |
+| UPS-DOC-08 | AGENTS.md / README.md within budget | 0 |
 | UPS-DOC-01 | no paragraph said twice | 0 |
 
 | Repository | Ref | Docs | AGENTS.md words | README.md words | CLAUDE.md lines | DOC-09 | DOC-10 | DOC-02 | DOC-03 | DOC-04 | DOC-08 | DOC-01 |
 |---|---|---:|---:|---:|---:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | [.github](https://github.com/bamr87/.github) | `docs/harmonize-docs` @ `39940e7` | 6 | 576 | 957 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [README](https://github.com/bamr87/README) | `docs/fleet-docs-framework` @ `027ccd5` | 8 | 989 | 1078 | 4 | ✓ | ✓ | ✓ | ✓ | ~ | ✓ | ~ |
+| [README](https://github.com/bamr87/README) | `docs/fleet-docs-framework` @ `ecd4fa2` | 8 | 989 | 1078 | 4 | ✓ | ✓ | ✓ | ✓ | ~ | ✓ | ~ |
 | [SCHEMA](https://github.com/bamr87/SCHEMA) | `docs/harmonize-docs` @ `89a13d2` | 8 | 863 | 820 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [bamr87](https://github.com/bamr87/bamr87) | `docs/fleet-docs-framework` @ `798c824` | 41 | 1830 | 1592 | 4 | ✓ | ~ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [bamr87.github.io](https://github.com/bamr87/bamr87.github.io) | `docs/harmonize-docs` @ `2fb03d0` | 7 | 1144 | 2253 | 4 | ✓ | ~ | ✓ | ✓ | ✓ | ~ | ✓ |
@@ -51,7 +51,7 @@ Scope: local working trees (each on the branch shown). **24** repositories, **37
 | [scripts](https://github.com/bamr87/scripts) | `docs/harmonize-docs` @ `7a5db87` | 9 | 773 | 1153 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [vs-sonic-pi](https://github.com/bamr87/vs-sonic-pi) | `docs/harmonize-docs` @ `0e182e2` | 20 | 897 | 1196 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [zer0-CMS](https://github.com/bamr87/zer0-CMS) | `docs/harmonize-docs` @ `de44af9` | 23 | 1998 | 1741 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [zer0-mistakes](https://github.com/bamr87/zer0-mistakes) | `main` @ `98e978d` | 14 | 1346 | 5743 | 112 | ✗ | ✓ | ✗ | ✗ | ✓ | ✗ | ✓ |
+| [zer0-mistakes](https://github.com/bamr87/zer0-CMS/tree/docs/harmonize-zer0-mistakes/packages/zer0-mistakes) | `docs/harmonize-zer0-mistakes` @ `fa111bd` | 53 | 1703 | 1997 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | [zpl-viewer](https://github.com/bamr87/zpl-viewer) | `docs/harmonize-docs` @ `bc9b7ae` | 10 | 1017 | 1819 | 4 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Repositories
@@ -76,7 +76,6 @@ Scope: local working trees (each on the branch shown). **24** repositories, **37
 | Severity | Check | Finding |
 |---|---|---|
 | warn | G10 | GitHub repository description is empty |
-| warn | D8 | `README.md` links to `context/reports/docs_review.md`, which is not in the repository |
 
 | Document | Words | What it covers |
 |---|---:|---|
@@ -670,39 +669,79 @@ Scope: local working trees (each on the branch shown). **24** repositories, **37
 
 ### zer0-mistakes
 
-[bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes) · theme · 14 documents
+[bamr87/zer0-mistakes](https://github.com/bamr87/zer0-CMS/tree/docs/harmonize-zer0-mistakes/packages/zer0-mistakes) · theme · 53 documents
 
 | Severity | Check | Finding |
 |---|---|---|
 | warn | D8 | `.github/seed/README.md` links to `../.seed.md`, which is not in the repository |
-| warn | D8 | `docs/templates/README.md` links to `../implementation/copilot-agent-prompt-button.md`, which is not in the repository |
-| warn | D8 | `docs/templates/README.md` links to `../implementation/lint-pages-fixes.md`, which is not in the repository |
-| warn | D8 | `docs/templates/README.md` links to `../releases/v0.3.0-release-notes.md`, which is not in the repository |
-| warn | D8 | `test/README.md` links to `../docs/systems/testing-framework.md`, which is not in the repository |
-| warn | D8 | `test/visual/evidence/README.md` links to `../navbar-responsive.spec.js`, which is not in the repository |
-| warn | DOC-09 | AGENTS.md is titled `# AGENTS.md — AI Agent Guide for zer0-mistakes` |
-| warn | DOC-09 | AGENTS.md lacks `## What this repo is`, `## Stack & commands`, `## Layout`, `## Conventions`, `## Fleet context`, `## Standard deviations` |
-| warn | DOC-09 | CLAUDE.md is not the pointer (112 non-blank lines, no `@AGENTS.md` import) |
-| warn | DOC-02 | 9 of 14 documents have no summary line |
-| warn | DOC-03 | docs/README.md has no `AUTO:docs-index` span |
-| warn | DOC-08 | README.md is 5743 words (budget 2000) |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/agent-issue-265/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/agent-issue-412/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/agent-issue-459/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/agent-issue-484/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/author-avatar-url/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/book-abc/`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/breadcrumbs/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/color-mode-default/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/component-showcase/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/cookie-consent-contrast/README.md`, which is not in the repository |
+| warn | D8 | `CHANGELOG.md` links to `test/visual/evidence/dialog-heading-levels/README.md`, which is not in the repository |
+| … | | 1 more in docs_review.json |
 
 | Document | Words | What it covers |
 |---|---:|---|
-| [`AGENTS.md`](https://github.com/bamr87/zer0-mistakes/blob/main/AGENTS.md) | 1346 | **Cross-tool entry point** for AI coding agents working in this repository (GitHub Copilot, OpenAI Codex, Cursor, Aider, Jules, Continue, Claude Code, and any future agent that follows the [agents.md](https://agents.md/) convention). |
-| [`CHANGELOG.md`](https://github.com/bamr87/zer0-mistakes/blob/main/CHANGELOG.md) | 44616 | Release history: the notable changes in each version, newest first. |
-| [`CODE_OF_CONDUCT.md`](https://github.com/bamr87/zer0-mistakes/blob/main/CODE_OF_CONDUCT.md) | 989 | The standards of behaviour for everyone taking part. |
-| [`SECURITY.md`](https://github.com/bamr87/zer0-mistakes/blob/main/SECURITY.md) | 100 | Supported versions and how to report a vulnerability privately. |
-| [`docs/architecture/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/README.md) | 336 | _no summary line_ — Technical architecture documentation for the Zer0-Mistakes Jekyll theme. |
-| [`docs/archive/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/archive/README.md) | 99 | _no summary line_ — This directory contains historical documentation from the **Release Automation Modernization Project** (November 2025). |
-| [`docs/development/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/README.md) | 180 | _no summary line_ — Guides for setting up a development environment and contributing to the Zer0-Mistakes theme. |
-| [`docs/features/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/README.md) | 128 | _no summary line_ — Per-feature design notes and implementation details for the Zer0-Mistakes Jekyll theme. |
-| [`docs/implementation/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/README.md) | 194 | _no summary line_ — Technical implementation details and changelogs for theme features. |
-| [`docs/installation/index.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/index.md) | 369 | Overview of the modular, profile-driven Zer0-Mistakes installer CLI, the classic install.sh one-liner, and how to choose the right install path. |
-| [`docs/releases/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/releases/README.md) | 536 | _no summary line_ — This directory contains comprehensive release documentation for all versions of the Zer0-Mistakes Jekyll theme. |
-| [`docs/systems/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/README.md) | 151 | _no summary line_ — Infrastructure, CI/CD, release automation, and dependency management for the Zer0-Mistakes Jekyll theme. |
-| [`docs/templates/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/templates/README.md) | 190 | _no summary line_ — Reusable templates for consistent documentation across the Zer0-Mistakes project. |
-| [`docs/ui/README.md`](https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/README.md) | 143 | _no summary line_ — Core theme styling and component documentation for contributors and maintainers. |
+| [`AGENTS.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/AGENTS.md) | 1703 | The Jekyll theme published as the `jekyll-theme-zer0` gem — layouts, includes, Sass and vendored assets — with the zer0-mistakes.com docs site that runs on it, the self-healing installer, and the release and theme-propagation tooling. |
+| [`CHANGELOG.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/CHANGELOG.md) | 43842 | Release history: the notable changes in each version, newest first. |
+| [`CODE_OF_CONDUCT.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/CODE_OF_CONDUCT.md) | 1015 | The standards of behaviour for everyone taking part in zer0-mistakes, people and AI agents alike, how they are enforced, and how to report a breach. |
+| [`SECURITY.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/SECURITY.md) | 100 | Supported versions and how to report a vulnerability privately. |
+| [`docs/architecture/build-system.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/build-system.md) | 474 | How the Zer0-Mistakes theme builds: the Jekyll pipeline, Docker configuration, vendored Bootstrap assets, and the GitHub Pages deployment flow. |
+| [`docs/architecture/layouts-includes.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/layouts-includes.md) | 588 | How Jekyll layouts inherit from each other (root → default → article/collection/landing) and how the _includes/ component system is organized. |
+| [`docs/architecture/prd-requirements.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/prd-requirements.md) | 2385 | Full PRD for the zer0-mistakes Jekyll theme: vision, user personas, feature requirements, technical architecture, and design specifications. |
+| [`docs/architecture/prd-roadmap.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/prd-roadmap.md) | 1583 | Success metrics, release roadmap, security and compliance requirements, stakeholder needs, and acceptance criteria for the zer0-mistakes theme. |
+| [`docs/architecture/project-structure.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/project-structure.md) | 186 | A tour of the Zer0-Mistakes theme repository: directory layout, key files, content collections, and where layouts, includes, and scripts live. |
+| [`docs/architecture/ui-components.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/architecture/ui-components.md) | 30965 | Single source of truth for every front-end UI/UX component in the zer0-mistakes theme — what it does, the files that implement it (SCSS / includes / layouts / JS / plugins), its API surface… |
+| [`docs/development/code-style.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/code-style.md) | 265 | Coding conventions for contributing to Zer0-Mistakes: naming, formatting, Liquid and SCSS idioms, and the consistency rules enforced in review. |
+| [`docs/development/coverage-baseline.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/coverage-baseline.md) | 728 | Structural coverage baseline recorded as part of T-005. Identifies the lowest-covered subsystems and links to the follow-up backlog tasks. |
+| [`docs/development/documentation-workflow.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/documentation-workflow.md) | 274 | Contributor guide to the dual docs architecture: when to write in docs/ vs pages/_docs/, front matter requirements, and the review pipeline. |
+| [`docs/development/extension-points.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/extension-points.md) | 907 | The four extension points this theme guarantees consumers — a code-block-ready event, asset frontmatter, the wiki index shape, and _includes/custom overrides. |
+| [`docs/development/local-setup.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/local-setup.md) | 291 | Set up a local Zer0-Mistakes development environment with Docker or a native Ruby toolchain, then run the dev server and validate your changes. |
+| [`docs/development/testing.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/testing.md) | 827 | How to run the Zer0-Mistakes test suites and validators locally, and which checks to run before opening a pull request to keep CI green. |
+| [`docs/development/troubleshooting.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/development/troubleshooting.md) | 1074 | Diagnose and fix common failures in the Zer0-Mistakes release automation scripts: version bumps, gem builds, tagging, and RubyGems publishing. |
+| [`docs/features/abc-books.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/features/abc-books.md) | 393 | The book-abc layout: a single-scroll toddler alphabet board book driven by an alphabet front-matter list, with per-style CSS skins and series-grouped shelves. |
+| [`docs/features/jupyter-notebooks.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/features/jupyter-notebooks.md) | 1108 | How Zer0-Mistakes converts Jupyter notebooks to Jekyll Markdown at build time for GitHub Pages, preserving code, outputs, and math without plugins. |
+| [`docs/features/nanobar-component.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/features/nanobar-component.md) | 708 | Technical implementation of the config-driven page loading progress bar |
+| [`docs/features/page-views.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/features/page-views.md) | 893 | How the theme tracks a page view and renders the count, with a local-first provider and an optional counter endpoint |
+| [`docs/features/theme-version.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/features/theme-version.md) | 656 | The zer0-mistakes automatic version display system: how it works, how to access it via gear icon or footer button, and implementation details. |
+| [`docs/implementation/ai-chat-assistant.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/implementation/ai-chat-assistant.md) | 1220 | Technical implementation details for the Claude-powered, proxy-first AI chat with GitHub tool use in Zer0-Mistakes. |
+| [`docs/implementation/feature-change-log.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/implementation/feature-change-log.md) | 709 | Implementation notes for Mermaid v2 integration, sidebar improvements, frontmatter validator bug fixes, and the Copilot Agent prompt button. |
+| [`docs/implementation/navigation-redesign.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/implementation/navigation-redesign.md) | 596 | Comprehensive UI/UX redesign of the Zer0-Mistakes navigation system: responsive design, WCAG 2.1 AA accessibility, animations, and keyboard navigation. |
+| [`docs/implementation/posthog-analytics-integration.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/implementation/posthog-analytics-integration.md) | 969 | PostHog analytics in Zer0-Mistakes: privacy-first, consent-gated event tracking with GDPR/CCPA compliance and a cookie banner, enabled in production. |
+| [`docs/implementation/preview-image-generator.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/implementation/preview-image-generator.md) | 1328 | Generate AI-powered preview images for Jekyll posts — Claude analyzes the article and reviews the result; OpenAI, xAI, Stability, Gemini, or a local template renders it. |
+| [`docs/installation/index.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/installation/index.md) | 376 | Overview of the modular, profile-driven Zer0-Mistakes installer CLI, the classic install.sh one-liner, and how to choose the right install path. |
+| [`docs/reference/agent-guidance.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/reference/agent-guidance.md) | 2689 | Every file-scoped instruction set with its applyTo globs, every reusable prompt, skill and Claude Code subagent, generated from their front matter. |
+| [`docs/reference/commands.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/reference/commands.md) | 1091 | Every scripts/bin entry point, test suite, Make target, Rake task and npm script in the theme, generated from the files that define them. |
+| [`docs/reference/installer.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/reference/installer.md) | 526 | Every subcommand, global option and example of the modular installer, generated from the help text in scripts/install/cli.sh. |
+| [`docs/reference/workflows.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/reference/workflows.md) | 556 | Every GitHub Actions workflow the theme carries, with its name, triggers and jobs, generated from the workflow files themselves. |
+| [`docs/systems/ZERO_PIN_STRATEGY.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/ZERO_PIN_STRATEGY.md) | 484 | The zero-version-pin strategy: always use the latest compatible dependencies while keeping reproducible builds via lockfiles and fail-fast checks. |
+| [`docs/systems/automated-version-system.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/automated-version-system.md) | 593 | How the automated version-bump system analyzes commits on main and performs the matching semantic version bump and release without manual steps. |
+| [`docs/systems/continuous-evolution.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/continuous-evolution.md) | 2372 | The continuous-evolution loop that lets scheduled AI agents audit this repo into a backlog and implement the highest-priority tasks via PRs. |
+| [`docs/systems/dependency-management.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/dependency-management.md) | 482 | The Zero Pin plus lockfile plus automated-updates dependency strategy: flexible Gemfiles with reproducible, regularly refreshed lockfiles for the theme. |
+| [`docs/systems/github-secrets-setup.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/github-secrets-setup.md) | 778 | How to configure the GitHub Actions secrets and variables the Zer0-Mistakes workflows need for releases, gem publishing, and scheduled automation. |
+| [`docs/systems/multilingual-translation.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/multilingual-translation.md) | 1216 | Build-time AI translation pipeline: English stays the only human-maintained language while scripts/translate.rb (Claude Code OAuth) generates alternate-language pages, UI strings, and the manifest behind the language toggle. |
+| [`docs/systems/release-automation.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/release-automation.md) | 1030 | The v2.0 modular release automation system for Zer0-Mistakes: its architecture, scripts, and the end-to-end flow from version bump to publish. |
+| [`docs/systems/ruby-version-management.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/ruby-version-management.md) | 731 | The Zer0-Mistakes Ruby version strategy: why Docker pins a specific Ruby, how CI selects versions, and how to upgrade Ruby safely across the toolchain. |
+| [`docs/systems/theme-canary-contract.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/theme-canary-contract.md) | 1315 | The canonical upstream bug-intake protocol every downstream theme-scout must follow when filing zer0-mistakes theme defects: labels, deterministic dedupe key, pre-filing search, per-run cap, and evidence format. |
+| [`docs/systems/theme-propagation.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/systems/theme-propagation.md) | 1167 | How a zer0-mistakes release reaches the downstream sites built on it — the consumer registry, the release fan-out, and the manifest contract underneath both. |
+| [`docs/templates/feature-documentation-template.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/templates/feature-documentation-template.md) | 416 | A reusable template for documenting a new Zer0-Mistakes feature: overview, configuration, usage, developer notes, and links to related material. |
+| [`docs/ui/code-blocks.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/code-blocks.md) | 509 | Syntax highlighting, language headers, line numbers, and copy-to-clipboard for code blocks in the Zer0-Mistakes theme, including notebook code cells. |
+| [`docs/ui/components.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/components.md) | 1231 | The reusable Liquid component library in _includes/components for Zer0-Mistakes, how components consume design tokens, and how to add new ones. |
+| [`docs/ui/configuration.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/configuration.md) | 508 | Styling and UI keys in _config.yml for Zer0-Mistakes: what each controls, example values, and why Jekyll must be restarted after editing config. |
+| [`docs/ui/customization.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/customization.md) | 442 | Supported ways to change the look and behavior of Zer0-Mistakes without forking the whole theme, layered from smallest tweak to deepest override. |
+| [`docs/ui/design-system.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/design-system.md) | 1052 | The Zer0-Mistakes design system: Bootstrap 5.3.3, the semantic --zer0-* token layer, decomposed SCSS partials, and runtime config-driven overrides. |
+| [`docs/ui/design-tokens.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/design-tokens.md) | 816 | Quick reference for the semantic --zer0-* CSS custom properties used across Zer0-Mistakes, with pointers to the full design-system architecture. |
+| [`docs/ui/extending.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/extending.md) | 440 | Minimal copy-paste recipes for extending Zer0-Mistakes: adding layouts, components, skins, and other building blocks on top of the design system. |
+| [`docs/ui/js-api.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/js-api.md) | 480 | The public JavaScript API of Zer0-Mistakes: the navigation, background, and UI surfaces intended for consumers, plus their stability expectations. |
+| [`docs/ui/layouts-and-navigation.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/layouts-and-navigation.md) | 814 | How Zer0-Mistakes structures pages: the layout hierarchy, sidebars, table of contents, the navbar, and floating action buttons (FABs). |
+| [`docs/ui/theming.md`](https://github.com/bamr87/zer0-CMS/blob/docs/harmonize-zer0-mistakes/packages/zer0-mistakes/docs/ui/theming.md) | 897 | Theming in Zer0-Mistakes: separating color mode (light/dark/auto) from skin (palette plus SVG backgrounds), set at build time and adjusted at runtime. |
 
 ### zpl-viewer
 
