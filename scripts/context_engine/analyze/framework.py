@@ -62,7 +62,8 @@ def docs_index():
 
 def words(text: str) -> int:
     """Prose words: generated spans, code fences and comments do not count."""
-    text = re.sub(r"<!-- AUTO:([\w-]+):start.*?<!-- AUTO:\1:end -->", " ", text or "", flags=re.S)
+    text = re.sub(r"<!-- AUTO:([\w-]+)[: ](?:start|begin)\b.*?<!-- AUTO:\1[: ]end\b.*?-->", " ",
+                  text or "", flags=re.S | re.I)
     text = re.sub(r"^\s*(`{3,}|~{3,}).*?^\s*\1", " ", text, flags=re.S | re.M)
     text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
     return len(text.split())

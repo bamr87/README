@@ -423,7 +423,9 @@ def check_injection(source, ctx) -> List[Finding]:
 def check_links(source, ctx) -> List[Finding]:
     tree = source.tree_set
     lowered = {p.lower(): p for p in tree}
-    dirs = {p.rsplit("/", 1)[0] for p in tree if "/" in p}
+    # Every ancestor directory exists, not only a file's immediate parent:
+    # a link to `frontend/__tests__/` resolves when only its subfolders hold files.
+    dirs = {"/".join(p.split("/")[:k]) for p in tree for k in range(1, p.count("/") + 1)}
     skip = tuple(ctx.get("link_exclude") or ())
     out: List[Finding] = []
     for path, text in sorted(source.bodies.items()):

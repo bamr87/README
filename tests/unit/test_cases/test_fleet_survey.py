@@ -104,6 +104,14 @@ class TestLinksInCode(unittest.TestCase):
         self.assertEqual([f.evidence["target"] for f in found], ["missing.md"])
 
 
+class TestNestedDirectoryLinks(unittest.TestCase):
+
+    def test_a_directory_that_only_holds_subdirectories_resolves(self):
+        source = make_source(tree=["tests/README.md", "frontend/__tests__/lib/a.test.ts"], bodies={
+            "tests/README.md": "# t\n\nSee [the frontend tests](../frontend/__tests__).\n"})
+        self.assertEqual(run_checks(source, {"kind": "default"}, only=["D8"]), [])
+
+
 class TestGovernanceCheck(unittest.TestCase):
 
     def test_missing_readme_is_an_error(self):
