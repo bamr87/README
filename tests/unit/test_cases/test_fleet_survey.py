@@ -460,3 +460,43 @@ class TestDocsReview(unittest.TestCase):
         first = render_review(review)
         self.assertEqual(first, render_review(build_review([result], "test")))
         self.assertIn("| [`docs/A.md`](https://github.com/bamr87/demo/blob/main/docs/A.md) | 10 |", first)
+
+
+class TestWorkspacePackages(unittest.TestCase):
+    """A monorepo package is reviewed in place, on its checkout's branch."""
+
+    def test_a_symlinked_package_is_reviewed_and_linked_to_its_folder(self):
+        import os
+        import subprocess
+        from scripts.context_engine.survey import survey_workspace
+
+        def git(*args, cwd):
+            subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            mono = Path(tmp) / "mono"
+            pkg = mono / "packages" / "widget"
+            pkg.mkdir(parents=True)
+            (mono / "README.md").write_text("# mono\n\n> The monorepo root.\n")
+            (pkg / "README.md").write_text("# widget\n\n> A package inside the monorepo.\n")
+            (pkg / "docs").mkdir()
+            (pkg / "docs" / "guide.md").write_text("# Guide\n\n> How the widget is used.\n")
+            git("init", "-q", "-b", "feature/x", cwd=mono)
+            git("remote", "add", "origin", "https://github.com/acme/mono.git", cwd=mono)
+            git("add", ".", cwd=mono)
+            git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-q", "-m", "init", cwd=mono)
+            ws = Path(tmp) / "ws"
+            ws.mkdir()
+            os.symlink(pkg, ws / "widget")
+            (ws / "not-a-checkout").mkdir()
+
+            review = survey_workspace(ws, write=False, progress=False)
+
+        self.assertEqual(sorted(review["repositories"]), ["widget"])
+        entry = review["repositories"]["widget"]
+        self.assertEqual(entry["branch"], "feature/x")
+        self.assertEqual(entry["url"], "https://github.com/acme/mono/tree/feature/x/packages/widget")
+        self.assertEqual([d["path"] for d in entry["docs"]], ["docs/guide.md"])
+        from scripts.context_engine.analyze.review import render_review
+        self.assertIn("(https://github.com/acme/mono/blob/feature/x/packages/widget/docs/guide.md)",
+                      render_review(review))

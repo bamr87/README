@@ -23,7 +23,7 @@ from .analyze import build_report, render_markdown, run_checks, score_repo
 from .analyze.framework import inventory
 from .analyze.review import build_review, render_review, sizes
 from .config import CONTEXT_DIR, DATA_DIR, ROOT
-from .gather import CACHE_DIR, gather_local, gather_repo
+from .gather import CACHE_DIR, gather_local, gather_repo, work_tree_root
 
 FLEET_PATH = DATA_DIR / "fleet.yml"
 SOURCES_DIR = CONTEXT_DIR / "sources"
@@ -159,6 +159,16 @@ def _origin_slug(path: Path) -> str:
     return "/".join(parts[-2:]) if len(parts) >= 2 else ""
 
 
+def _current_branch(path: Path) -> str:
+    import subprocess
+    try:
+        out = subprocess.run(["git", "-C", str(path), "rev-parse", "--abbrev-ref", "HEAD"],
+                             capture_output=True, text=True, timeout=30).stdout.strip()
+    except (OSError, subprocess.TimeoutExpired):
+        return "HEAD"
+    return out or "HEAD"
+
+
 def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool = True,
                      progress: bool = True) -> Dict:
     """
@@ -167,28 +177,48 @@ def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool 
 
     A checkout is matched to its fleet entry by origin slug, then by directory
     name; one the inventory does not know is reviewed under its directory name
-    with the default profile. Only `docs_review.*` is written: `fleet_health`
-    stays the record of the default branches, which a workspace is not.
+    with the default profile. An entry may also be a monorepo package - a
+    symlink to a directory inside another checkout, such as zer0-CMS's
+    `packages/zer0-mistakes/` - which is matched by its name, reviewed on the
+    containing checkout's branch and linked to its folder there. Only
+    `docs_review.*` is written: `fleet_health` stays the record of the default
+    branches, which a workspace is not.
     """
     root = Path(root).resolve()
     fleet = load_fleet()
     by_repo = {e["repo"].lower(): e for e in fleet}
     by_name = {e["name"]: e for e in fleet}
     snapshot = load_github_snapshot()
-    checkouts = [p for p in sorted(root.iterdir(), key=lambda p: p.name.lower())
-                 if (p / ".git").exists()]
+    # A directory sharing the workspace's own git tree (an empty submodule
+    # mount, a stray folder) is not a checkout.
+    outer = work_tree_root(root)
+    checkouts = []
+    for p in sorted(root.iterdir(), key=lambda p: p.name.lower()):
+        top = work_tree_root(p) if p.is_dir() else None
+        if top is not None and top != outer:
+            checkouts.append((p, top))
     results: List[Dict] = []
-    for i, path in enumerate(checkouts, 1):
+    for i, (path, top) in enumerate(checkouts, 1):
         slug = _origin_slug(path)
-        entry = by_repo.get(slug.lower()) or by_name.get(path.name) or {}
+        package = path.resolve().relative_to(top).as_posix() if path.resolve() != top else ""
+        if package:
+            entry = by_name.get(path.name) or {}
+        else:
+            entry = by_repo.get(slug.lower()) or by_name.get(path.name) or {}
         name = entry.get("name") or path.name
         if any(r["name"] == name for r in results):  # a second worktree of one repo
             name = path.name
         if names and name not in names and path.name not in names:
             continue
+        doc_base = None
+        if package:
+            branch = _current_branch(path)
+            url = f"https://github.com/{slug}/tree/{branch}/{package}" if slug else str(path)
+            doc_base = f"https://github.com/{slug}/blob/{branch}/{package}" if slug else None
+        else:
+            url = entry.get("url") or (f"https://github.com/{slug}" if slug else str(path))
         source = gather_local(path, name=name, repo=entry.get("repo") or slug or name,
-                              url=entry.get("url") or (f"https://github.com/{slug}" if slug else str(path)),
-                              meta=snapshot.get(name, {}))
+                              url=url, meta=snapshot.get(name, {}))
         ctx = {"kind": entry.get("kind", "default"), "entry": entry,
                "link_exclude": tuple(entry.get("link_exclude") or ())}
         findings = run_checks(source, ctx) if source.ok else []
@@ -197,6 +227,7 @@ def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool 
             "manifest": source.manifest(), "findings": findings,
             "health": score_repo(findings) if source.ok else {},
             "docs": inventory(source) if source.ok else [], "sizes": sizes(source) if source.ok else {},
+            "doc_base": doc_base,
         })
         if progress:
             bad = sum(1 for f in findings if f.check.startswith("DOC-") and f.severity != "info")

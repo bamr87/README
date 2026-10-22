@@ -53,6 +53,7 @@ def build_review(results: List[Dict], scope: str) -> Dict:
         repos[r["name"]] = {
             "repo": r["repo"], "url": r["url"], "kind": r.get("kind", "default"),
             "branch": manifest.get("default_branch", ""),
+            "doc_base": r.get("doc_base") or "",
             "head": (manifest.get("head") or {}).get("sha", "")[:12],
             "error": manifest.get("error", ""),
             "sizes": r.get("sizes", {}),
@@ -154,7 +155,8 @@ def render_review(review: Dict) -> str:
                 summary = d["summary"] or "—"
                 if d["source"] in ("fallback", "none"):
                     summary = f"_no summary line_ — {summary}" if d["summary"] else "_no summary line_"
-                link = f"{e['url']}/blob/{e['branch'] or 'main'}/{d['path']}"
+                base = e.get("doc_base") or f"{e['url']}/blob/{e['branch'] or 'main'}"
+                link = f"{base}/{d['path']}"
                 lines.append(f"| [`{d['path']}`]({link}) | {d['words']} | {summary} |")
             lines.append("")
     return "\n".join(lines).rstrip() + "\n"
