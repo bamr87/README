@@ -265,7 +265,7 @@ def build_context_schema() -> str:
         "| `facts/` | dir | L2 - structured facts per project | generated |",
         "| `nav/` | dir | Navigation trees per corpus + the fleet manifest | generated |",
         "| `index/` | dir | Query layer - context_index.json + manifest.json | generated |",
-        "| `reports/` | dir | Analysis reports - fleet documentation health | generated |",
+        "| `reports/` | dir | Analysis reports - fleet documentation health and the fleet documentation review | generated |",
         "| `sources/` | dir | Source manifests, one per surveyed repository | generated |",
         "",
         "## Forbidden",

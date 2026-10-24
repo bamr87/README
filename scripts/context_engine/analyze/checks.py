@@ -423,7 +423,9 @@ def check_injection(source, ctx) -> List[Finding]:
 def check_links(source, ctx) -> List[Finding]:
     tree = source.tree_set
     lowered = {p.lower(): p for p in tree}
-    dirs = {p.rsplit("/", 1)[0] for p in tree if "/" in p}
+    # Every ancestor directory exists, not only a file's immediate parent:
+    # a link to `frontend/__tests__/` resolves when only its subfolders hold files.
+    dirs = {"/".join(p.split("/")[:k]) for p in tree for k in range(1, p.count("/") + 1)}
     skip = tuple(ctx.get("link_exclude") or ())
     out: List[Finding] = []
     for path, text in sorted(source.bodies.items()):
@@ -433,7 +435,9 @@ def check_links(source, ctx) -> List[Finding]:
             continue
         base = path.rsplit("/", 1)[0] if "/" in path else ""
         broken: List[str] = []
-        for raw in MD_LINK.findall(text or ""):
+        # A link inside fenced code is an example, not a link.
+        prose = re.sub(r"^\s{0,3}(`{3,}|~{3,}).*?^\s{0,3}\1", "", text or "", flags=re.S | re.M)
+        for raw in MD_LINK.findall(prose):
             target = resolve_link(base, raw)
             if target is None or link_exists(target, tree, lowered, dirs):
                 continue
@@ -505,3 +509,8 @@ def run_checks(source, ctx: Optional[Dict] = None,
             continue
         findings.extend(spec.fn(source, ctx))
     return findings
+
+
+# The documentation framework rows (UPS-DOC) live in their own module; importing
+# it registers them in CHECKS beside the catalogue above.
+from . import framework  # noqa: E402,F401

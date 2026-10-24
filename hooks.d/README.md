@@ -20,7 +20,6 @@ Executable files in `hooks.d/<stage>/` run at that stage of every `python3 -m sc
 
 - `post_index/50-freshness-report.py` — renders `context/index/freshness.md`
 from the manifest so humans (and agents) can see at a glance when each layer was last regenerated.
-- `post_build/90-schema-lint.sh` — runs the SCHEMA.md pyramid drift gate
-  over the repo after every build.
+- `post_build/90-schema-lint.sh` — runs the SCHEMA.md pyramid drift gate over the repo after every build.
 
 Skipping hooks: `python3 -m scripts.context_engine build --no-hooks`.

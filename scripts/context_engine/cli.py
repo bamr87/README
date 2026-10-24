@@ -1,6 +1,7 @@
 """Command-line interface for the context engine."""
 
 import argparse
+from pathlib import Path
 import json
 import sys
 from typing import List
@@ -13,7 +14,8 @@ from .query import (
     list_nav, list_projects, search,
 )
 from .registry import RegistryError, load_registry, sync_repos_txt
-from .survey import FleetError, load_fleet, summarize, survey, survey_local
+from .survey import (FleetError, load_fleet, summarize, summarize_review, survey,
+                     survey_local, survey_workspace)
 
 
 def _cmd_build(args: argparse.Namespace) -> int:
@@ -109,6 +111,17 @@ def _cmd_navcheck(_args: argparse.Namespace) -> int:
 
 
 def _cmd_survey(args: argparse.Namespace) -> int:
+    if args.workspace:
+        review = survey_workspace(Path(args.workspace), names=args.repo or None,
+                                  write=not args.no_write, progress=not args.json)
+        if args.json:
+            print(json.dumps(review, indent=2, ensure_ascii=False))
+            return 0
+        print()
+        print(summarize_review(review))
+        if not args.no_write:
+            print("\nwrote context/reports/docs_review.json and .md")
+        return 0
     if args.local:
         report = survey_local(args.local, name=args.name, kind=args.kind)
         if args.json:
@@ -225,6 +238,9 @@ def build_parser() -> argparse.ArgumentParser:
     survey_cmd.add_argument("--local", metavar="PATH",
                             help="check a working tree instead of cloning "
                                  "(see a change's effect before pushing)")
+    survey_cmd.add_argument("--workspace", metavar="DIR",
+                            help="review every checkout under DIR (each on its current branch) "
+                                 "and write context/reports/docs_review.{json,md}")
     survey_cmd.add_argument("--name", help="fleet name of a --local tree")
     survey_cmd.add_argument("--kind", help="override the governance profile")
     survey_cmd.set_defaults(func=_cmd_survey)

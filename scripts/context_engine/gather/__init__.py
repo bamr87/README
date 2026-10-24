@@ -13,5 +13,5 @@ stays in the cache directory and is what link checks read.
 """
 
 from .adapters import (  # noqa: F401
-    CACHE_DIR, GatherError, RepoSource, gather_local, gather_repo, gather_fleet,
+    CACHE_DIR, GatherError, RepoSource, gather_local, gather_repo, gather_fleet, work_tree_root,
 )
