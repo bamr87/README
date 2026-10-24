@@ -1,49 +1,102 @@
 # =============================================================================
-# features/features.yml — THE FEATURE INDEX for README
+# features/features.yml — THE FEATURE INDEX for bamr87/README
 # =============================================================================
-# kit: verify v0.1.0 (seeded from bamr87/bamr87 templates/verify/)
+# kit: verify v0.1.0 · governance v0.1.0 (bamr87/bamr87 templates/verify/, templates/governance/)
 #
-# One entry per user-facing capability. This file is what an AI agent reads to
-# know what the product DOES, where it lives, how it is documented, which tests
-# and user scenarios prove it, and what evidence exists that it works. The hub
-# aggregates every repo's copy into its fleet features index
-# (bamr87/bamr87 _data/features_index.yml → /features/) and grades coverage:
-#
-#   covered    ≥1 of `tests` / `scenarios` exists on disk
-#   evidenced  ≥1 `evidence` bundle exists (README + screenshots + report)
-#   verified   `verified.date` is set (by an agent, a human, or CI)
-#
-# Schema: features/v1 — a strict SUPERSET of the shape zer0-mistakes,
-# it-journey, and barodybroject already use, so legacy files validate as-is.
-# Validate: python3 <hub>/tools/features_index.py check .
-#
-# Per feature:
-#   id            required  STABLE id, `^[A-Z0-9]+-[0-9]+$` (prefix per repo, e.g. ZER0-001)
-#   title         required  short name
-#   description   required  one or two sentences — what the user can do
-#   implemented   required  true|false (planned features are welcome — they show as gaps)
-#   surface       optional  ui | api | cli | docs | content | infra (default: ui when `link`
-#                           is a route starting with `/`, else infra)
-#   link          optional  the route (`/settings/`) or file that IS the feature
-#   docs          optional  where it is explained (path or URL)
-#   tags          optional  list
-#   date          optional  YYYY-MM-DD introduced
-#   provenance    optional  { introduced_in, pr, commit, issue }
-#   tests         optional  automated test files that pin it (paths)
-#   scenarios     optional  declarative user scenarios (verify/scenarios/*.yml)
-#   evidence      optional  evidence bundle dirs (test/evidence/<slug>/)
-#   screenshots   optional  direct image paths, when a bundle is overkill
-#   verified      optional  { date, by: agent|human|ci, run: <url> } — last verification
-#   deviations    optional  free text: why a MUST row is waived for this feature
+# One entry per user-facing capability, grounded in this repo's PRD, README and
+# code: what it does, where it lives (`link`), where it is explained (`docs`),
+# its `status` (shipped | partial | planned | deprecated | tbd) and the PRD
+# requirements it serves (`prd:`; TBD = not yet traced). Ids are STABLE: never
+# renumber or reuse one. The PRD's "Feature catalog" block is generated from
+# this file — edit here, then run:
+#   python3 <bamr87/bamr87>/tools/governance_lint.py prd-sync . --write
+# Validate: python3 <hub>/tools/governance_lint.py check .  ·  <hub>/tools/features_index.py check .
+# Schema: features/v1 (field reference: bamr87/bamr87 templates/verify/features.template.yml)
 # =============================================================================
 schema: features/v1
 repo: bamr87/README
 
 features:
   - id: README-001
+    title: "Crawl"
+    description: "Aggregate markdown from every active registry project (clone/pull, branch pins, external repos)."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "scripts"
+    docs: "PRD.md"
+  - id: README-002
+    title: "Extract"
+    description: "Derive per-project facts offline: identity, governance signals, structure, rollups, key documents, corpus fingerprint."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "context"
+    docs: "PRD.md"
+  - id: README-003
+    title: "Navigate"
+    description: "Turn each corpus's folder hierarchy into one canonical navigation tree."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "context"
+    docs: "PRD.md"
+  - id: README-004
+    title: "Synthesize"
+    description: "Render facts into per-project cards with a frontmatter contract; optional AI essence."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "context"
+    docs: "PRD.md"
+  - id: README-005
+    title: "Assemble"
+    description: "Build the apex README, inject the fleet table into the root README AUTO:projects span, mirror to docs/index.md."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "context"
+    docs: "PRD.md"
+  - id: README-006
+    title: "Index"
+    description: "Build a term index + manifest so queries need no rescan."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "context"
+    docs: "PRD.md"
+  - id: README-007
+    title: "Serve"
+    description: "Answer queries via CLI (query/card/facts/nav/apex/status/projects) and MCP tools/resources."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: api
+    link: "mcp"
+    docs: "PRD.md"
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
+  - id: README-008
+    title: "Evolve"
+    description: "Scheduled CI re-crawls, rebuilds, schema-lints and commits; hooks let agents extend builds."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: infra
+    link: "hooks.d"
+    docs: "PRD.md"
+  - id: README-009
     title: "Published fleet documentation site"
     description: "Browse the aggregated fleet corpus on bamr87.github.io/README: the generated fleet overview is the home page and the sidebar is derived from each project's folder hierarchy."
     implemented: true
+    status: shipped
+    prd: [TBD]
     surface: ui
     link: /
     docs: MKDOCS.md
@@ -52,28 +105,4 @@ features:
       - tests/unit/test_cases/test_context_engine.py
     scenarios:
       - verify/scenarios/smoke-home.yml
-    evidence: []
-  - id: README-002
-    title: "Context engine CLI"
-    description: "Build the context pyramid and query it from the shell: `python3 -m scripts.context_engine build|query|card|nav|status`."
-    implemented: true
-    surface: cli
-    link: scripts/context_engine/cli.py
-    docs: scripts/README.md
-    tags: [context-engine, cli]
-    tests:
-      - tests/unit/test_cases/test_context_engine.py
-    scenarios: []
-    evidence: []
-  - id: README-003
-    title: "MCP query server"
-    description: "AI clients query the pyramid read-only over MCP (stdio JSON-RPC): list_projects, get_project, search_context, get_readme, get_nav, get_schema, context_status."
-    implemented: true
-    surface: api
-    link: mcp/server.py
-    docs: mcp/README.md
-    tags: [mcp, context-engine]
-    tests:
-      - tests/unit/test_cases/test_context_engine.py
-    scenarios: []
     evidence: []
