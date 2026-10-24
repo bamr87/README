@@ -80,6 +80,8 @@ features:
     surface: api
     link: "mcp"
     docs: "PRD.md"
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
   - id: README-008
     title: "Evolve"
     description: "Scheduled CI re-crawls, rebuilds, schema-lints and commits; hooks let agents extend builds."
@@ -89,3 +91,18 @@ features:
     surface: infra
     link: "hooks.d"
     docs: "PRD.md"
+  - id: README-009
+    title: "Published fleet documentation site"
+    description: "Browse the aggregated fleet corpus on bamr87.github.io/README: the generated fleet overview is the home page and the sidebar is derived from each project's folder hierarchy."
+    implemented: true
+    status: shipped
+    prd: [TBD]
+    surface: ui
+    link: /
+    docs: MKDOCS.md
+    tags: [site, mkdocs, navigation]
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
+    scenarios:
+      - verify/scenarios/smoke-home.yml
+    evidence: []
