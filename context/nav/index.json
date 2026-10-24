@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2185
+    "pages": 2188
   },
   "projects": {
     "it-journey": {
@@ -110,6 +110,18 @@
       "max_depth": 1,
       "skipped": 0,
       "fingerprint": "4a1e5aee1763e8ad"
+    },
+    "amendments": {
+      "title": "Amendments",
+      "corpus": "docs/amendments",
+      "tree": "context/nav/amendments.json",
+      "browse": "docs/browse/amendments.md",
+      "registered": false,
+      "pages": 3,
+      "sections": 0,
+      "max_depth": 1,
+      "skipped": 0,
+      "fingerprint": "a763036fe9f9e13b"
     },
     "results": {
       "title": "Results",

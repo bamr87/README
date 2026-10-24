@@ -81,3 +81,7 @@ A submodule of [bamr87/bamr87](https://github.com/bamr87/bamr87): commit and pus
 ## Standard deviations
 
 - UPS-DOC-04: `docs/` is the generated MkDocs corpus, so this repository's own operator docs (`PLAN.md`, `MKDOCS.md`, `WIKIJS-QUICKSTART.md`) stay at the root. Its docs index covers the root and `docs/adr/` only.
+
+## Governance
+
+Read [`docs/constitution.md`](docs/constitution.md) before changing anything: it is the highest-precedence rule set here and wins over this file when they disagree. It changes only through a numbered record in [`docs/amendments/`](docs/amendments/), ratified by the maintainer merging the PR; agents propose, never merge. Every user-facing feature has a stable id in [`features/features.yml`](features/features.yml) with `status`, location and the PRD requirement ids it serves; the PRD's "Feature catalog" block is generated from it (`python3 <bamr87/bamr87>/tools/governance_lint.py prd-sync . --write`; check with `… check .`). Never hand-edit that block or `CHANGELOG.md`.
