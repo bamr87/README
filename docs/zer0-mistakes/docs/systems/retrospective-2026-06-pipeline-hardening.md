@@ -28,8 +28,7 @@ in the publish job because release-please bumped `version.rb` without re-locking
 accumulator, CODEOWNERS gates protected paths, squash-only, a PAT (`RELEASE_PLEASE_TOKEN`) so release PRs trigger CI. Branch protection is wired but deliberately left **inert** (owner's call).
 - **Autonomous issue pipeline built and merged** (Phases 0–5, PRs #223–#227):
 prompt-injection fences, a required secret-scan gate, a widened auto-merge denylist, issue **adoption** in `sync-backlog.rb`, issue intake folded into `/repo-audit`, `/issue-implement` routing, a read-only planning committee, and a roster of executor agents. Phase 6 (CI self-repair, #237) followed.
-- **Four open PRs made green honestly** — #237, #234, #236, #235 — without
-  weakening a single gate. Two latent bugs were found and fixed along the way.
+- **Four open PRs made green honestly** — #237, #234, #236, #235 — without weakening a single gate. Two latent bugs were found and fixed along the way.
 
 ## Timeline
 
@@ -48,10 +47,8 @@ prompt-injection fences, a required secret-scan gate, a widened auto-merge denyl
 
 The publish job ran `bundle install` in frozen/deployment mode. release-please bumps `lib/jekyll-theme-zer0/version.rb` on its release PR, but the gemspec reads that version, so `Gemfile.lock` (which pins `jekyll-theme-zer0 (X.Y.Z)`) no longer matched — frozen install aborts with exit 16. The fix had two parts:
 
-- In `publish.yml`, stop using a frozen cache for the gem job and run a normal
-  `bundle install` so the lock can re-resolve the path gem.
-- Add a `relock` job to `release-please.yml` that re-locks **both**
-  `Gemfile.lock` and `package-lock.json` on the release PR branch.
+- In `publish.yml`, stop using a frozen cache for the gem job and run a normal `bundle install` so the lock can re-resolve the path gem.
+- Add a `relock` job to `release-please.yml` that re-locks **both** `Gemfile.lock` and `package-lock.json` on the release PR branch.
 
 **Invariant that came out of it:** any `version.rb` bump MUST re-lock `Gemfile.lock` *and* `package-lock.json` in the same change. CI guards the version.rb↔Gemfile.lock pairing; the publish job is the thing that breaks if it drifts.
 
@@ -93,8 +90,7 @@ generated (no `[Unreleased]` section) and protected; manual edits would collide 
 
 - **Reproducing the genuine pre-fix state** (via `git show` + `page.route`, or a
 double-render) makes "before/after" evidence trustworthy instead of a hand-drawn mock.
-- **Scoping evidence to the kind of change** (runtime interception vs.
-  double-render vs. shell grep) rather than forcing one pattern.
+- **Scoping evidence to the kind of change** (runtime interception vs. double-render vs. shell grep) rather than forcing one pattern.
 - **The classifier as a backstop** against well-intentioned gate-bypassing.
 
 ## What didn't (and the fixes)
@@ -109,14 +105,10 @@ unrendered code, the choices are "add a surface" or "justified opt-out" — the 
 ## Follow-ups / open items
 
 - [ ] Owner decision: enable branch protection (activates the wired auto-merge).
-- [ ] Owner decision: go-live the cloud `/schedule` routines (audit+intake
-      weekly; committee planning) — `/issue-implement` stays human-dispatched.
-- [ ] Existence-gate or inert-ize the admin-layout chrome links
-      (`/categories/`, `/tags/`, `/docs/`) — the #204 umbrella, surfaced here.
-- [ ] Backlog hygiene: 7 resolved-but-open issues whose backlog tasks weren't
-      marked done (#203, #152, #166, #167, #168, #147, #126).
-- [ ] Consider a living component-gallery page (the showcase smoke test the repo
-      audit asked for) now that the include renders.
+- [ ] Owner decision: go-live the cloud `/schedule` routines (audit+intake weekly; committee planning) — `/issue-implement` stays human-dispatched.
+- [ ] Existence-gate or inert-ize the admin-layout chrome links (`/categories/`, `/tags/`, `/docs/`) — the #204 umbrella, surfaced here.
+- [ ] Backlog hygiene: 7 resolved-but-open issues whose backlog tasks weren't marked done (#203, #152, #166, #167, #168, #147, #126).
+- [ ] Consider a living component-gallery page (the showcase smoke test the repo audit asked for) now that the include renders.
 
 ## PR index
 

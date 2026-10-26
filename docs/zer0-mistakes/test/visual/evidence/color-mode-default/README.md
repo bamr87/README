@@ -23,10 +23,8 @@ default `auto`) controls Bootstrap's `data-bs-theme` attribute both server-side 
 
 ## Backward compatibility
 
-- Sites that did not set `color_mode_default` get `auto`, which follows
-  `prefers-color-scheme` — the same behaviour the theme had implicitly.
-- The `data-bs-theme="dark"` that was previously hardcoded in `root.html` is
-  now the server-side fallback for the `auto` case (corrected before paint).
+- Sites that did not set `color_mode_default` get `auto`, which follows `prefers-color-scheme` — the same behaviour the theme had implicitly.
+- The `data-bs-theme="dark"` that was previously hardcoded in `root.html` is now the server-side fallback for the `auto` case (corrected before paint).
 
 ## How to regenerate evidence
 
@@ -37,13 +35,9 @@ BASE_URL=http://localhost:4000 node test/visual/color-mode-default-evidence.mjs
 
 ## What each screenshot shows
 
-- `01-*-auto-dark-*.png` — `color_mode_default: auto`, browser prefers-dark, no
-  localStorage; resolved to `data-bs-theme="dark"`.
-- `02-*-auto-light-*.png` — `color_mode_default: auto`, browser prefers-light;
-  resolved to `data-bs-theme="light"`.
-- `03-*-override-light-*.png` — `localStorage["theme"]="light"` overrides the
-  dark OS preference; result is `data-bs-theme="light"`.
-- `04-*-override-dark-*.png` — `localStorage["theme"]="dark"` overrides a light
-  OS preference; result is `data-bs-theme="dark"`.
+- `01-*-auto-dark-*.png` — `color_mode_default: auto`, browser prefers-dark, no localStorage; resolved to `data-bs-theme="dark"`.
+- `02-*-auto-light-*.png` — `color_mode_default: auto`, browser prefers-light; resolved to `data-bs-theme="light"`.
+- `03-*-override-light-*.png` — `localStorage["theme"]="light"` overrides the dark OS preference; result is `data-bs-theme="light"`.
+- `04-*-override-dark-*.png` — `localStorage["theme"]="dark"` overrides a light OS preference; result is `data-bs-theme="dark"`.
 
 Regression test: [`../../color-mode-default.spec.js`](../../color-mode-default.spec.js) (smoke tier — 5 assertions covering server-render, FOUC prevention, localStorage override, and cross-page persistence).

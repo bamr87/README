@@ -12,8 +12,7 @@ The article layout renders a `#comments` section (the Giscus widget, backed by G
 
 1. `enabled: true` + fix gate → comments render (normal operation).
 2. `enabled: false` + fix gate (`site.giscus.enabled`) → comments **hidden** ✅.
-3. `enabled: false` + the **actual pre-fix** gate (`site.giscus`) → comments
-   **shown** ❌ — the bug.
+3. `enabled: false` + the **actual pre-fix** gate (`site.giscus`) → comments **shown** ❌ — the bug.
 
 The dev config sets `incremental: true`, which serves stale pages after a config change, so the script forces `incremental: false` and clears Jekyll's caches between states to get a faithful rebuild.
 
@@ -28,8 +27,7 @@ BASE_URL=http://localhost:4000 node test/visual/giscus-comments-evidence.mjs
 pre-fix gate leaves the "Comments" section on the page (bug); the fix removes it.
 - **`02-enabled-render.png`** — `enabled: true`: the post renders the `#comments`
 section and the Giscus `<script>` wired from `_config.yml` (`data-repo`, `data-repo-id`, `data-category-id`). The widget's "giscus is not installed on this repository" text is a **localhost-origin artifact** of the giscus.app embed check, not the theme — the served site loads it normally.
-- **`metrics.json`** — the measured `commentsPresent` / `giscusScript` flags for
-  each state.
+- **`metrics.json`** — the measured `commentsPresent` / `giscusScript` flags for each state.
 
 ## Measured states (from `metrics.json`)
 

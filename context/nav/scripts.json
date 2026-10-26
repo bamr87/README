@@ -5,18 +5,20 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 17,
-    "sections": 2,
-    "max_depth": 2,
-    "skipped": 0
+    "pages": 28,
+    "sections": 5,
+    "max_depth": 3,
+    "skipped": 1
   },
-  "skipped": [],
-  "fingerprint": "c719dd1841f8e626",
+  "skipped": [
+    ".claude"
+  ],
+  "fingerprint": "d7e0e72808aa396e",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 17,
+    "pages": 28,
     "children": [
       {
         "type": "page",
@@ -34,8 +36,8 @@
       {
         "type": "page",
         "title": "CLAUDE.md",
-        "path": "scripts/CLAUDE.md",
-        "rel": "CLAUDE.md"
+        "path": "scripts/AGENTS.md",
+        "rel": "AGENTS.md"
       },
       {
         "type": "page",
@@ -46,15 +48,112 @@
       },
       {
         "type": "page",
+        "title": "PRD \u2014 scripts",
+        "path": "scripts/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
         "title": "Rename Directory Utility - Quick Reference",
         "path": "scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md",
         "rel": "RENAME-DIRECTORY-QUICK-REFERENCE.md"
       },
       {
         "type": "page",
+        "title": "scripts",
+        "path": "scripts/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "scripts tools",
+        "path": "scripts/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
         "title": "Security Policy",
         "path": "scripts/SECURITY.md",
         "rel": "SECURITY.md"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "scripts/docs/README.md",
+        "pages": 8,
+        "children": [
+          {
+            "type": "page",
+            "title": "scripts documentation",
+            "path": "scripts/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "scripts \u2014 Constitution",
+            "path": "scripts/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 scripts",
+            "rel": "docs/amendments",
+            "index": "scripts/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 scripts",
+                "path": "scripts/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "scripts/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "scripts/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "scripts/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "scripts/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "scripts/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "scripts/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "section",

@@ -63,8 +63,7 @@ Maps to `<div class="alert alert-… obsidian-callout obsidian-callout-…">`. T
 Fold markers turn the callout into an **accessible disclosure**: the title becomes a keyboard-operable `<button aria-expanded>` with a chevron, and the body shows/hides on click (Enter/Space).
 
 - `> [!warning]+` — foldable, **expanded** by default.
-- `> [!warning]-` — foldable, **collapsed** by default (`data-collapsed="true"`
-  and the body is `hidden` until toggled).
+- `> [!warning]-` — foldable, **collapsed** by default (`data-collapsed="true"` and the body is `hidden` until toggled).
 
 A callout **without** a fold marker renders as a static heading (not a button). Unknown types fall back to the `note` variant, never silently dropped.
 

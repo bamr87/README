@@ -63,8 +63,7 @@ Every route shows an **Improve this page** button. It opens a dialog where a use
 `/static/js/…`. That path works the same with the Vite dev server and with the built bundle. The capture buffer loads first, in `<head>` of `spa/index.html`.
 - The default `mode="url"` ships no credential: the user submits the issue under their own GitHub
 session. The footer's "Report an issue" link opens the same form without JavaScript (`.github/ISSUE_TEMPLATE/page_feedback.yml`).
-- `openFeedback({ type, extra })` and `breadcrumb(level, message)` from `FeedbackButton.tsx` are
-  available when a screen needs to open the dialog pre-typed, or to record a failed API call.
+- `openFeedback({ type, extra })` and `breadcrumb(level, message)` from `FeedbackButton.tsx` are available when a screen needs to open the dialog pre-typed, or to record a failed API call.
 
 ## `DataTable`
 

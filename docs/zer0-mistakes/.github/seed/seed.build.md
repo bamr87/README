@@ -1186,8 +1186,7 @@ MIT License - see [LICENSE](LICENSE)
 
 - [Documentation](https://bamr87.github.io/zer0-mistakes/)
 - [Issues](https://github.com/bamr87/zer0-mistakes/issues)
-- [Discussions](https://github.com/bamr87/zer0-mistakes/discussions)
-  EOF
+- [Discussions](https://github.com/bamr87/zer0-mistakes/discussions) EOF
 
 git add README.md git commit -m "docs: add comprehensive README"
 

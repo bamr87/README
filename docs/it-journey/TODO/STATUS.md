@@ -208,7 +208,7 @@ title: 📊 TODO Status Dashboard
 - **[TODO Hub](./README.md)** - Central TODO directory
 - **[AI Instructions](./todo.instructions.md)** - Agent guidelines
 - **[SEO Project](./seo/README.md)** - SEO optimization details
-- **[Roadmap](/roadmap/)** - Project roadmap
+- **[Roadmap](../docs/ROADMAP.md)** - Project roadmap
 - **[PRD](/PRD.md)** - Product requirements
 
 ---

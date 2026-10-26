@@ -6,8 +6,8 @@ kind: tooling
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: 3a15e2a411867948
+enrichment: heuristic
+source_fingerprint: c554a5c09b9d8ea3
 tags:
   - automation
   - bash
@@ -16,7 +16,7 @@ tags:
 
 # 🛠️ scripts
 
-> The scripts project (bamr87/scripts) is an active collection of standalone Bash utilities for project scaffolding, GitHub repository management, and multi-repo maintenance across the fleet. Its two main tools are ForkMe, an advanced GitHub repository forking utility with its own examples and implementation notes, and StashMe, a multi-repository cloud stash utility, alongside a linting area and a quick reference for renaming directories, all covered by 17 documentation pages with a changelog and security policy. Open it when you need to fork, stash, lint, or otherwise automate housekeeping across many repositories at once rather than doing it by hand.
+> Automation scripts for forking, linting, stashing, and project management across the fleet. Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.
 
 | | |
 |---|---|
@@ -24,21 +24,23 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/scripts` - 17 docs |
+| Corpus | `docs/scripts` - 30 docs |
 | External | no |
 
 ## Signals
 
 - has CLAUDE.md agent guidance
+- has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~17,624 words across 17 indexed documents
+- ~21,448 words across 30 indexed documents
 - code samples in: bash, plaintext, yaml, text
 
 ## Navigation
 
-17 published pages in 2 sections (max depth 2) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
+28 published pages in 5 sections (max depth 3) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
 
+- **Documentation** (8 pages)
 - **🍴 ForkMe - Advanced GitHub Repository Forking Utility** (7 pages)
 - **💾 StashMe - Multi-Repository Cloud Stash Utility** (4 pages)
 
@@ -46,12 +48,12 @@ tags:
 
 - [`README.md`](../../docs/scripts/README.md)
 - [`CLAUDE.md`](../../docs/scripts/CLAUDE.md)
+- [`AGENTS.md`](../../docs/scripts/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/scripts/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/scripts/SECURITY.md)
 - [`FORKME/FORKME.md`](../../docs/scripts/FORKME/FORKME.md)
 - [`FORKME/FORKME-IMPLEMENTATION-SUMMARY.md`](../../docs/scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md)
 - [`FORKME/FORKME-EXAMPLES.md`](../../docs/scripts/FORKME/FORKME-EXAMPLES.md)
-- [`FORKME/IMPROVEMENTS.md`](../../docs/scripts/FORKME/IMPROVEMENTS.md)
 
 ## Query this context
 

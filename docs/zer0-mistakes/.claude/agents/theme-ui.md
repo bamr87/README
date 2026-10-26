@@ -16,8 +16,7 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 
 ## Universal executor rules (every lane inherits these)
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or
-  credentials; never run `env`/`printenv` or read dotfiles.
+- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or credentials; never run `env`/`printenv` or read dotfiles.
 - **CODEOWNERS is a wall.** Never edit `version.rb`, the gemspec, `Gemfile*`,
   `package*.json`, `CHANGELOG.md`, release configs, `.github/workflows|actions/`,
   `_plugins/`, or `scripts/bin|lib/`. If the task needs one → **STOP**.

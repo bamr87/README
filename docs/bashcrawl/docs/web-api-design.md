@@ -250,8 +250,7 @@ Mirrors the Textual TUI layout:
 
 ### Key Behaviors
 
-- **Tab completion**: On Tab keypress, send `tab` message, display candidates
-  inline or as a popup
+- **Tab completion**: On Tab keypress, send `tab` message, display candidates inline or as a popup
 - **Command history**: Maintained client-side, Up/Down arrow navigation
 - **Responsive**: Sidebar collapses on narrow viewports
 - **Mobile**: Touch-friendly command input, virtual keyboard support

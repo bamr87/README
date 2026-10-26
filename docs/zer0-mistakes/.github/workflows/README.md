@@ -124,10 +124,8 @@ Runs `bundle update` and opens an automated PR for review. Complements `.github/
 
 **Triggers:** Push to `main` / PRs touching `_data/backlog.yml`, `_data/roadmap.yml`, or their scripts
 
-- `backlog`: `_data/backlog.yml` → GitHub Issues (`scripts/sync-backlog.rb`);
-  PRs validate the schema only.
-- `roadmap`: `_data/roadmap.yml` → README roadmap section; PRs fail if stale,
-  pushes regenerate via an automated PR.
+- `backlog`: `_data/backlog.yml` → GitHub Issues (`scripts/sync-backlog.rb`); PRs validate the schema only.
+- `roadmap`: `_data/roadmap.yml` → README roadmap section; PRs fail if stale, pushes regenerate via an automated PR.
 
 ### `convert-notebooks.yml` — Notebook conversion
 

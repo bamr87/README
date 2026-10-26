@@ -44,8 +44,7 @@ All outcomes below are from commands the execute engine actually ran in the sand
 *passed*: "dump was 5314 bytes, restore succeeded, and `SELECT count(*) FROM treasure` on restored_vault returned 3, matching the 3 inserted rows."
 - ✅ **`pg_basebackup -D /backups/base -Ft -z -P`** — *passed*, producing
 `base.tar.gz`, `pg_wal.tar.gz`, `backup_manifest` — **but only after** manually granting `host replication postgres all trust` in `pg_hba.conf`; the default `postgres:16` image blocks replication and the quest never mentions this.
-- ✅ **Chapter 3 restore-drill script** (`createdb drill_$(date …); pg_restore …; psql … count`)
-  — *passed*, "created drill_20260712, restored the dump, and returned count=3."
+- ✅ **Chapter 3 restore-drill script** (`createdb drill_$(date …); pg_restore …; psql … count`) — *passed*, "created drill_20260712, restored the dump, and returned count=3."
 - ❌ **`docker exec -it restoration psql …`** — *failed* (`the input device is not a TTY`,
 a sandbox artifact) — but critically the Cloud path "never creates the `treasure` table (only the other 3 platform paths do)."
 - ❌ **`pg_dump -Fc restoration_vault > vault_backup.dump`** (bare, Docker setup) —
@@ -54,24 +53,20 @@ a sandbox artifact) — but critically the Cloud path "never creates the `treasu
 WAL-archiving and recovery snippets (config-only; GUC names verified real against a live PG16), and the RTO/RPO prose.
 
 ### 2. Query Optimization — 74% ⚠️ · ran 4/9 runnable snippets (3✓ / 1✗), 4 skipped, 2 reasoned
-- ✅ **Seed script** (`CREATE TABLE events …; INSERT … generate_series(1,100000); ANALYZE`)
-  — *passed*: "CREATE TABLE / INSERT 0 100000 / ANALYZE — exactly as expected."
+- ✅ **Seed script** (`CREATE TABLE events …; INSERT … generate_series(1,100000); ANALYZE`) — *passed*: "CREATE TABLE / INSERT 0 100000 / ANALYZE — exactly as expected."
 - ✅ **Baseline `EXPLAIN ANALYZE … WHERE user_id = 42`** — *passed*: "`Seq Scan on
 events … Rows Removed by Filter: 99983 … Execution Time: 5.716 ms`" (the illustrative 49.1 ms is just an example, acceptable).
-- ✅ **Composite index** `(user_id, action)` — *passed*: used for `user_id=… AND action=…`,
-  correctly **not** used for `action` alone (fell back to Seq Scan) — exactly as claimed.
+- ✅ **Composite index** `(user_id, action)` — *passed*: used for `user_id=… AND action=…`, correctly **not** used for `action` alone (fell back to Seq Scan) — exactly as claimed.
 - ❌ **`CREATE INDEX idx_events_user_id …; EXPLAIN ANALYZE …`** — *failed against the
 quest's stated output*: the index worked and time dropped 5.7 ms → 0.13 ms, "BUT the actual plan was `Bitmap Heap Scan` + `Bitmap Index Scan`, not the `Index Scan using idx_events_user_id on events` claimed in the quest's inline comment. Reproduced across 4 different user_id values; only `SET enable_bitmapscan=off` produced the plain Index Scan the quest describes." This is quest source line 265.
-- `skipped`: the four per-OS setup blocks (no macOS/Windows; sudo denied; port 5432
-  already bound) — equivalent functionality was verified via native PG16 binaries.
+- `skipped`: the four per-OS setup blocks (no macOS/Windows; sudo denied; port 5432 already bound) — equivalent functionality was verified via native PG16 binaries.
 - `reasoned`: the illustrative sample-output text block and the `db.query(...)` N+1
 **pseudocode** (its embedded SQL was extracted and run successfully; the wrapper API matches no real Python driver).
 
 ### 3. Connection Pooling — 52% ❌ · ran 6/6 runnable snippets (2✓ / 4✗), 1 skipped, 2 reasoned
 - ✅ **Leak-hunt query** (`SELECT … FROM pg_stat_activity WHERE datname='gatekeeper'`) —
 *passed*: returned expected columns, "a leaked (idle in transaction) connection reproduced by a Python script correctly showed up."
-- ✅ **Pooled psycopg3 pattern** (`with pool.connection() as conn: … conn.execute`) —
-  *passed* when adapted with `psycopg_pool.ConnectionPool` — matches psycopg3's real API.
+- ✅ **Pooled psycopg3 pattern** (`with pool.connection() as conn: … conn.execute`) — *passed* when adapted with `psycopg_pool.ConnectionPool` — matches psycopg3's real API.
 - ❌ **PgBouncer Docker command** (`docker run … edoburu/pgbouncer -e DATABASES_HOST=…`)
 — *failed*: "Container exits immediately with `DB_HOST: … You must set DB_HOST env` — the image needs `DB_HOST/DB_USER/DB_PASSWORD/DB_NAME`, not `DATABASES_*`. Even after fixing env var names, the image listens on 5432 by default, so `-p 6432:6432` also fails unless `LISTEN_PORT=6432` is added." This is quest source lines 184–186.
 - ❌ **`pgbouncer.ini`** (Chapter 3) — *failed* to load in real PgBouncer 1.22.0:
@@ -80,8 +75,7 @@ quest's stated output*: the index worked and time dropped 5.7 ms → 0.13 ms, "B
 *failed*: "psycopg2 Connection objects have no `.execute()` method (verified `hasattr(conn,'execute')` is False); running this literally raises AttributeError." (Illustrative, but technically wrong for the named driver.)
 - ❌ **`docker run … postgres:16 -p 5432:5432`** — *failed* on `port is already
 allocated` in the sandbox; succeeded on 5433 — base command is sound but fragile to a learner's existing local Postgres.
-- `skipped`/`reasoned`: sudo-gated Linux setup (packages confirmed current on Ubuntu
-  24.04 via non-root download) and the macOS/Windows brew/winget paths.
+- `skipped`/`reasoned`: sudo-gated Linux setup (packages confirmed current on Ubuntu 24.04 via non-root download) and the macOS/Windows brew/winget paths.
 
 ## 🐞 Issues Found
 
@@ -92,8 +86,7 @@ Every issue below cites an observed sandbox result or a quoted source line. Seve
 `treasure` table (the other 3 paths do, line 146/159/173) and every later `pg_dump/ createdb/psql/pg_restore/pg_basebackup` has no host/user/password flags. **Observed:** bare `pg_dump -Fc restoration_vault` against the container fails with a Unix-socket connection error. **Fix:** add the `CREATE TABLE treasure(...)` step to the Docker path and instruct `export PGHOST=localhost PGUSER=postgres PGPASSWORD=quest` (or add `-h localhost -U postgres` to every subsequent command).
 - **medium** · Chapter 2 recovery config (lines 252–256) · The recovery snippet omits
 the `recovery.signal` file that PostgreSQL 12+ requires to enter recovery mode. **Observed (reasoned against a live PG16):** a learner copying only what's shown would not actually trigger PITR. **Fix:** mention `touch recovery.signal` in the data dir.
-- **medium** · Secondary objective "Backup Encryption" (line 106) · **Observed:** zero
-  supporting content anywhere in the quest body; only punted to a different quest under
+- **medium** · Secondary objective "Backup Encryption" (line 106) · **Observed:** zero supporting content anywhere in the quest body; only punted to a different quest under
   Next Steps. **Fix:** add a short `pg_dump … | gpg --symmetric` example or relabel the
   objective as out-of-scope.
 - **low** · Chapter 1 `pg_basebackup` (line 216) · Requires replication privileges /
@@ -108,10 +101,8 @@ the EDB installer, which does not map the OS user to a Postgres role. **Fix:** a
 **Observed:** covering indexes / index-only scans (`INCLUDE`) are never taught in the body. **Fix:** add a short covering-index subsection or drop "Covering" from the title.
 - **medium** · Secondary objective "Statistics & ANALYZE" (line 105) · **Observed:** only
 a one-line comment `-- refresh planner statistics` (line 207). **Fix:** show a stale-stats plan vs post-ANALYZE plan and mention autovacuum.
-- **low** · Novice Challenge validation ("Seq Scan to Index Scan") · **Fix:** reword to
-  "to an index-based scan (Index Scan or Bitmap Heap Scan)" to match real planner output.
-- **low** · Chapter 3 `db.query(...)` snippet (lines 203–217 region) · **Observed:** the
-  API matches no real Python driver. **Fix:** label as pseudocode or use psycopg2/SQLAlchemy.
+- **low** · Novice Challenge validation ("Seq Scan to Index Scan") · **Fix:** reword to "to an index-based scan (Index Scan or Bitmap Heap Scan)" to match real planner output.
+- **low** · Chapter 3 `db.query(...)` snippet (lines 203–217 region) · **Observed:** the API matches no real Python driver. **Fix:** label as pseudocode or use psycopg2/SQLAlchemy.
 
 **Connection Pooling** (`pages/_quests/0110/connection-pooling.md`) — *quest fails at 52%*
 - **high** · Chapter 3 `pgbouncer.ini` (lines 282–284) · Trailing inline `; comment`
@@ -124,8 +115,7 @@ PASSWORD` and no `LISTEN_PORT`. **Observed:** container exits immediately demand
 `AttributeError` on a psycopg2 connection. **Fix:** disambiguate the driver and use `cur = conn.cursor(); cur.execute(query)` for psycopg2.
 - **low** · Intermediate Challenge validation (line 331) · No concrete way to observe
 "many clients → few server connections". **Fix:** point to PgBouncer's `SHOW POOLS;` / `SHOW CLIENTS;` admin console.
-- **low** · Secondary objective "Application Pools" · **Observed:** never demonstrated.
-  **Fix:** add a short HikariCP or SQLAlchemy pool config example.
+- **low** · Secondary objective "Application Pools" · **Observed:** never demonstrated. **Fix:** add a short HikariCP or SQLAlchemy pool config example.
 
 ## 🔗 Chain Continuity
 

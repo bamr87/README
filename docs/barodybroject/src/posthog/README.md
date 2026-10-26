@@ -88,8 +88,7 @@ The following categories of variables are configured:
    cp .env.example .env
    ```
 
-2. **Customize the `.env` file:**
-   Edit `.env` and update values as needed:
+2. **Customize the `.env` file:** Edit `.env` and update values as needed:
    - Change passwords for production use
    - Update `SECRET_KEY` (generate a new one)
    - Update `SITE_URL` if not using localhost
@@ -125,8 +124,7 @@ The following categories of variables are configured:
    docker-compose logs -f web
    ```
 
-4. **Access PostHog:**
-   Open your browser to: `http://localhost:8080` (or your configured `SITE_URL`)
+4. **Access PostHog:** Open your browser to: `http://localhost:8080` (or your configured `SITE_URL`)
 
 ### Stopping PostHog
 

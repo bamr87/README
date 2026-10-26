@@ -28,8 +28,7 @@ If your environment's default locale is not UTF-8, Jekyll's SCSS converter will 
 
 ## Adding an example
 
-1. Create `examples/<name>/` with its own `_config.yml`, `_config_dev.yml`,
-   `Gemfile`, and `.gitignore` (ignore `_site/`, `Gemfile.lock`).
+1. Create `examples/<name>/` with its own `_config.yml`, `_config_dev.yml`, `Gemfile`, and `.gitignore` (ignore `_site/`, `Gemfile.lock`).
 2. Point the `Gemfile` at the theme with `gem "jekyll-theme-zer0", path: "../.."`.
 3. Put site-specific styling in `assets/css/user-overrides.css` and set
 `user_overrides: true` — do not edit theme files to make an example look right. If an example cannot be built without changing the theme, that is a theme gap worth filing rather than patching locally.

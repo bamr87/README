@@ -1,16 +1,17 @@
 {
   "corpus": {
-    "file_count": 51,
-    "fingerprint": "527c292123a3dcad",
+    "file_count": 99,
+    "fingerprint": "1f67dd0840c68d11",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 571575
+    "total_bytes": 713755
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
       "Overview",
       "\ud83c\udfae Play it",
+      "\ud83c\udf93 Learn",
       "\ud83e\udded What's in the box",
       "\ud83d\udd27 For developers",
       "\ud83d\ude4f Lineage",
@@ -34,13 +35,13 @@
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "9543236af17fa153",
+    "fingerprint": "125bcfa8894d04b3",
     "index": "bashcrawl/README.md",
     "max_depth": 3,
-    "pages": 44,
+    "pages": 89,
     "present": true,
-    "sections": 9,
-    "skipped": 3,
+    "sections": 17,
+    "skipped": 5,
     "title": "Bash Crawl",
     "top_sections": [
       {
@@ -51,8 +52,15 @@
         "type": "group"
       },
       {
+        "index": null,
+        "pages": 31,
+        "path": "courses",
+        "title": "Courses",
+        "type": "section"
+      },
+      {
         "index": "bashcrawl/docs/index.md",
-        "pages": 29,
+        "pages": 41,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -84,21 +92,21 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 51
+      "bashcrawl": 99
     },
     "code_languages": [
       "bash",
       "plaintext",
       "json",
       "yaml",
-      "python",
-      "text",
       "js",
+      "text",
+      "python",
       "markdown"
     ],
-    "indexed_documents": 51,
+    "indexed_documents": 99,
     "top_tags": [],
-    "total_words": 66187
+    "total_words": 84856
   },
   "schema_version": "1.0",
   "signals": {
@@ -114,12 +122,17 @@
       "AGENTS.md",
       "CHANGELOG.md",
       "CLAUDE.md",
+      "PRD.md",
       "README.md"
     ],
     "top_dirs": [
       {
-        "doc_count": 29,
+        "doc_count": 42,
         "name": "docs"
+      },
+      {
+        "doc_count": 31,
+        "name": "courses"
       },
       {
         "doc_count": 6,
@@ -132,6 +145,10 @@
       {
         "doc_count": 3,
         "name": "entrance"
+      },
+      {
+        "doc_count": 2,
+        "name": ".claude"
       },
       {
         "doc_count": 1,

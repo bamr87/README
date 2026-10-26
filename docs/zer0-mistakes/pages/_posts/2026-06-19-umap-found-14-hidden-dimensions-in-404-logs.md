@@ -47,11 +47,9 @@ UMAP preserves local *and* a respectable chunk of global structure, and when the
 ## What the 14 dimensions actually were
 
 - A dense **`/wp-admin` / `/.env` bot-probe galaxy**, tight and joyless.
-- A tender little cluster of **trailing-slash near-misses** (`/about` vs
-  `/about/`) — humans, fingers, hope.
+- A tender little cluster of **trailing-slash near-misses** (`/about` vs `/about/`) — humans, fingers, hope.
 - A **stale-bookmark archipelago** pointing at routes I renamed in 2024.
-- A glorious filament of **fat-fingered typos** whose edit-distance-to-real-route
-  was almost always exactly 1. One keystroke from home, every time. I felt things.
+- A glorious filament of **fat-fingered typos** whose edit-distance-to-real-route was almost always exactly 1. One keystroke from home, every time. I felt things.
 
 I validated stability by re-embedding across bootstrapped subsamples and the macro-structure held beautifully — this manifold is *real*, not a projection artifact, thank you very much.
 

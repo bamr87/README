@@ -66,26 +66,19 @@ means adding a translation in `providers.js` (request in, SSE/JSON out), never a
 
 - Widget config is injected as a JSON `<script id="aiChatConfig">` block; add
 new options there with a `site.ai_chat.*` default and read them in `ai-chat.js`. Compute boolean render flags with Liquid `if`-tags, not `assign` (Liquid stores a truthy string for boolean expressions in `assign`).
-- The Worker and `dev-proxy.mjs` share logic — `dev-proxy.mjs` imports and runs
-  the real `worker.js`, so worker changes must keep working under Node.
-- Model id defaults to `claude-opus-5-5` for Claude and `grok-4.6` for Grok;
-  do not send `temperature` (current Claude models reject sampling params).
+- The Worker and `dev-proxy.mjs` share logic — `dev-proxy.mjs` imports and runs the real `worker.js`, so worker changes must keep working under Node.
+- Model id defaults to `claude-opus-5-5` for Claude and `grok-4.6` for Grok; do not send `temperature` (current Claude models reject sampling params).
 - Session state that is safe to keep in the browser (provider, model, mode,
 image renderer) lives in `localStorage` under `zer0-site-builder-prefs`; a token never does.
-- `ANTHROPIC_API_KEY` is shared with the AI content reviewer
-  (`ai-content-review.yml`) — see `docs/systems/github-secrets-setup.md`.
+- `ANTHROPIC_API_KEY` is shared with the AI content reviewer (`ai-content-review.yml`) — see `docs/systems/github-secrets-setup.md`.
 
 ## Validation
 
-- `node --check` the six proxy JS files, `assets/js/ai-chat.js`,
-  `assets/js/setup-wizard.js` and `assets/js/site-builder.js`.
+- `node --check` the six proxy JS files, `assets/js/ai-chat.js`, `assets/js/setup-wizard.js` and `assets/js/site-builder.js`.
 - `node test/test_providers.mjs` — provider selection, model pinning, the
 Anthropic ⇄ OpenAI translation, the Worker against a mock xAI/Anthropic upstream, and the credential store (all offline).
-- `node test/test_wizard_store.mjs` — the sandbox's path, allow-list,
-  overwrite, project-session and image-asset rules against a temp target root.
+- `node test/test_wizard_store.mjs` — the sandbox's path, allow-list, overwrite, project-session and image-asset rules against a temp target root.
 - `node test/visual/site-builder-walkthrough.mjs` (theme + dev proxy running) —
 a full randomised build per site type (`SCENARIO=`, `SEED=`), recorded on video, ending in a Docker-served site whose routes/title/skin are asserted. Run it after any change to the generators, the tools, or the proxy routes.
-- Build with `_config.yml,_config_dev.yml` (dev: widget on, `localEdit` true)
-  and confirm the rendered `aiChatConfig` JSON is valid.
-- For proxy changes, exercise `worker.js` with mocked `fetch`/KV and the
-  `/api/page/*` routes against a temp sandbox (see the chat-proxy README).
+- Build with `_config.yml,_config_dev.yml` (dev: widget on, `localEdit` true) and confirm the rendered `aiChatConfig` JSON is valid.
+- For proxy changes, exercise `worker.js` with mocked `fetch`/KV and the `/api/page/*` routes against a temp sandbox (see the chat-proxy README).

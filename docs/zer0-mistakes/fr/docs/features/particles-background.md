@@ -31,13 +31,11 @@ Un champ de particules animé optionnel qui se place derrière le contenu des se
 
 ## Vue d'ensemble
 
-- **Champ de particules configurable** — le nombre, la taille, la vitesse, la couleur et la
-  distance des liens sont tous pilotés par les données.
+- **Champ de particules configurable** — le nombre, la taille, la vitesse, la couleur et la distance des liens sont tous pilotés par les données.
 - **Interactif** — les particules réagissent au survol de la souris et aux clics.
 - **Configuration JSON** — le comportement est lu depuis
 [`assets/particles.json`](https://github.com/bamr87/zer0-mistakes/blob/main/assets/particles.json), ce qui vous permet de réajuster l'apparence sans toucher au JavaScript.
-- **Soucieux des performances** — destiné aux sections d'accueil/hero plutôt qu'à
-  chaque page, de sorte que le coût de l'animation reste limité aux endroits où elle apporte de la valeur.
+- **Soucieux des performances** — destiné aux sections d'accueil/hero plutôt qu'à chaque page, de sorte que le coût de l'animation reste limité aux endroits où elle apporte de la valeur.
 
 ## Fonctionnement
 

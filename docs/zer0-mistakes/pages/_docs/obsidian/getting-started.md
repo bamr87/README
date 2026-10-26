@@ -23,8 +23,7 @@ title: Getting Started with the Obsidian Vault
 1. Install [Obsidian](https://obsidian.md/download).
 2. Launch Obsidian → **Open folder as vault**.
 3. Pick the root of your `zer0-mistakes` clone.
-4. Trust the author when prompted (the vault ships with shared settings
-   under `.obsidian/`; nothing executes automatically).
+4. Trust the author when prompted (the vault ships with shared settings under `.obsidian/`; nothing executes automatically).
 
 The repo's `.gitignore` excludes Obsidian's per-user state (`workspace*`, `cache`, `plugins/*/data.json`) so multiple contributors can share the same vault without merge conflicts.
 
@@ -81,10 +80,8 @@ Obsidian shows these fields in its **Properties** sidebar; the values map 1:1 to
 
 ## 5. Next steps
 
-- Skim the [syntax reference]({{ "/docs/obsidian/syntax-reference/" | relative_url }})
-  to see exactly which Obsidian features render on the site.
-- Learn the [authoring workflow]({{ "/docs/obsidian/authoring-workflow/" | relative_url }})
-  for the round-trip from Obsidian to published page.
+- Skim the [syntax reference]({{ "/docs/obsidian/syntax-reference/" | relative_url }}) to see exactly which Obsidian features render on the site.
+- Learn the [authoring workflow]({{ "/docs/obsidian/authoring-workflow/" | relative_url }}) for the round-trip from Obsidian to published page.
 - If something looks off, jump to
   [troubleshooting]({{ "/docs/obsidian/troubleshooting/" | relative_url }}).
 

@@ -26,13 +26,10 @@ The top navigation bar gets out of the way while you read: it slides up and hide
 
 ## Overview
 
-- **Hide on scroll down** — the navbar translates off-screen once you scroll
-  past a small threshold, so long-form content gets the full viewport.
+- **Hide on scroll down** — the navbar translates off-screen once you scroll past a small threshold, so long-form content gets the full viewport.
 - **Show on scroll up** — any upward scroll brings the navbar straight back.
-- **Smooth CSS transitions** — the show/hide uses a CSS transform, not a layout
-  change, so it stays smooth and doesn't reflow the page.
-- **Mobile-optimised** — the behaviour is most useful on touch devices where
-  screen real estate is scarce.
+- **Smooth CSS transitions** — the show/hide uses a CSS transform, not a layout change, so it stays smooth and doesn't reflow the page.
+- **Mobile-optimised** — the behaviour is most useful on touch devices where screen real estate is scarce.
 
 ## How it works
 

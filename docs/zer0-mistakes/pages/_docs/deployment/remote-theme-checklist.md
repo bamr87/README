@@ -14,7 +14,7 @@ keywords:
 - remote_theme setup
 - deployment troubleshooting
 - jekyll-theme-zer0
-lastmod: 2026-09-03 00:00:00+00:00
+lastmod: 2026-10-18 00:00:00+00:00
 layout: default
 permalink: /docs/deployment/remote-theme-checklist/
 prerequisites:
@@ -67,7 +67,7 @@ plugins:
 
 None of these are inherited from the theme — declare your own: `collections`, `defaults`, `permalink`, `theme_skin`, `theme_color`, `theme_background`.
 
-The `favicon:` block, by contrast, is entirely optional: `favicon.theme_color_light` / `favicon.theme_color_dark` fall back to the theme's surface colors (`#ffffff` / `#212529`), and the `theme-color` tags are emitted even when you declare nothing.
+The `favicon:` block, by contrast, is entirely optional: `favicon.theme_color_light` / `favicon.theme_color_dark` fall back to the theme's surface colors (`#ffffff` / `#212529`), and the `theme-color` tags are emitted even when you declare nothing. Without `favicon.ico`, the theme links a root `/favicon.ico`, `/favicon.png` or `/favicon.svg` only if your site actually ships that file (none → no icon link, rather than a 404 on every page). Set `favicon.ico: /path/to/icon` to point it at an icon kept elsewhere. Likewise, tag and category badges in the page intro link to `/tags/` only when your site has that page (or sets `tags_page:`); otherwise they render as plain labels.
 
 ### 3. ⚠️ Do not copy the theme's `_config.yml` wholesale
 
@@ -78,8 +78,7 @@ The theme's config ships a live `google_analytics:` ID and a PostHog `api_key:`.
 At minimum:
 
 - `_data/navigation/main.yml` — without it the navbar is empty.
-- `_data/ui-text.yml` — read as `site.data.ui` by the footer, breadcrumbs, and
-  search modal; without it labels are blank.
+- `_data/ui-text.yml` — read as `site.data.ui` by the footer, breadcrumbs, and search modal; without it labels are blank.
 - `_data/authors.yml` — without it bylines and author cards have no data.
 
 ### 5. Hand-author `/search.json` and `/sitemap/`
@@ -144,8 +143,7 @@ Tag badges, the local-graph "Full graph" link, the breadcrumb collection-root cr
 
 - Open the navbar search and type — results appear (item 5).
 - The navbar and footer show your labels and links (items 2, 4).
-- View source on a post — no `google_analytics` ID or PostHog key you didn't set
-  (item 3).
+- View source on a post — no `google_analytics` ID or PostHog key you didn't set (item 3).
 - Run a link checker over the built `_site` — no theme-injected 404s.
 
 ## See also

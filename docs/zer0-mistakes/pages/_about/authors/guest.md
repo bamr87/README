@@ -24,8 +24,7 @@ The **Guest Author** credits one-off and first-time contributions. Anyone can wr
 words**, a **30–60 char** `title`, a **120–160 char** `description`, 3–10 `keywords`, and a `preview` image (see the
    [preview-image generator]({{ '/docs/features/preview-image-generator/' | relative_url }})).
 4. **Preview locally** with `docker-compose up` → <http://localhost:4000>.
-5. **Open a pull request.** An automated content review plus a maintainer review
-   check SEO, accessibility, links, and accuracy before merge.
+5. **Open a pull request.** An automated content review plus a maintainer review check SEO, accessibility, links, and accuracy before merge.
 
 Credit a one-off contribution to the Guest author with `author: guest`.
 
@@ -51,8 +50,7 @@ draft: false
 
 Contributing once, or planning to write regularly? Get your own byline, avatar, and an aggregated profile page:
 
-1. **Add yourself to [`_data/authors.yml`](https://github.com/bamr87/zer0-mistakes/blob/main/_data/authors.yml)**
-   with a unique key:
+1. **Add yourself to [`_data/authors.yml`](https://github.com/bamr87/zer0-mistakes/blob/main/_data/authors.yml)** with a unique key:
 
    ```yaml
    yourkey:
@@ -83,8 +81,7 @@ for the two example personas, Cassandra and Vega.
 
 ## What the review checks
 
-- **SEO / AIEO** — `title` and `description` lengths, `keywords`, slug, and a
-  preview image.
+- **SEO / AIEO** — `title` and `description` lengths, `keywords`, slug, and a preview image.
 - **Accessibility** — image alt text, heading order, and descriptive link text.
 - **Accuracy & polish** — working links, code that runs, and a consistent voice.
 - A **`CHANGELOG.md`** entry for user-visible content where it applies.

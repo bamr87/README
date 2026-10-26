@@ -4,6 +4,8 @@ title: Development Environment Setup
 ---
 # Development Environment Setup
 
+> Step-by-step local setup — prerequisites, Ruby or Docker, IDE and environment variables — with common development tasks and troubleshooting (last revised 2025-10).
+
 This guide provides step-by-step instructions for setting up a local development environment for the IT-Journey repository.
 
 ## Prerequisites

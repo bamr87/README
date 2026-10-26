@@ -32,8 +32,7 @@ The output was captured from an instrumented playthrough, so prompts, area conte
 
 Before playing Bashcrawl, ensure you have:
 
-1. **A terminal** — Terminal.app (macOS), GNOME Terminal (Linux),
-   or Windows Subsystem for Linux (WSL)
+1. **A terminal** — Terminal.app (macOS), GNOME Terminal (Linux), or Windows Subsystem for Linux (WSL)
 2. **Bash shell** — Most systems include it by default
 3. **Git** — To clone the repository
 

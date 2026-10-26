@@ -18,8 +18,7 @@ Based on a full interactive playtest session (2026-02-16), this document catalog
 
 **Files to change:**
 
-- `entrance/.chapel/courtyard/aviary/hall/monster` — add unlock after combat victory,
-  OR
+- `entrance/.chapel/courtyard/aviary/hall/monster` — add unlock after combat victory, OR
 - `entrance/.vault/stronghold/goblet` — add unlock after goblet collection
 
 ---
@@ -33,8 +32,7 @@ Based on a full interactive playtest session (2026-02-16), this document catalog
 - **A) Use env vars instead of file mutation:** Replace the `perl` command with
 instructions for the player to `export I=diamonds,$I` directly. Remove `rm treasure` / `rm spell` from the loss path — instead set a file-based flag (e.g., `touch .statue_defeated`) and check it on re-entry.
 
-- **B) Copy-on-play:** At session start (in `setup.sh`), snapshot
-  mutable game files to a temp directory and restore on reset.
+- **B) Copy-on-play:** At session start (in `setup.sh`), snapshot mutable game files to a temp directory and restore on reset.
 
 **Files to change:**
 
@@ -81,10 +79,8 @@ instructions for the player to `export I=diamonds,$I` directly. Remove `rm treas
 
 **Fix options:**
 
-- **A) Remove it:** Delete `entrance/workshop/` entirely — it adds no value and may
-  confuse new players.
-- **B) Make it a tutorial room:** Add a `scroll` teaching `mkdir`, `touch`, `rm` as
-  "workshop tools". Gate it behind a flag so it's optional side-content.
+- **A) Remove it:** Delete `entrance/workshop/` entirely — it adds no value and may confuse new players.
+- **B) Make it a tutorial room:** Add a `scroll` teaching `mkdir`, `touch`, `rm` as "workshop tools". Gate it behind a flag so it's optional side-content.
 
 **Files to change:**
 

@@ -41,8 +41,7 @@ All outcomes below come from the sealed execute-engine evidence (`walk-evidence.
 ### 1 · GitHub Pages Basics — ⚠️ 74 · ran 7/7 runnable (1 ✗), 3 reasoned, 4 skipped
 - **passed** — `bundle exec jekyll build --baseurl "/my-castle"` produced
 `href="/my-castle/assets/main.css"` and `/my-castle/`-prefixed canonical URLs, confirming the Chapter 2 baseurl/`relative_url` claims.
-- **passed** — `bundle exec jekyll serve --baseurl "/my-castle"` printed
-  `Server address: http://127.0.0.1:4000/my-castle/` (matches the quest text).
+- **passed** — `bundle exec jekyll serve --baseurl "/my-castle"` printed `Server address: http://127.0.0.1:4000/my-castle/` (matches the quest text).
 - **passed** — `JEKYLL_ENV=production bundle exec jekyll build` ran clean, produced `_site/`.
 - **passed** — `git init && git add . && git commit -m "Initial site"` ran standalone.
 - **failed** — `gh api -X POST repos/:owner/my-castle/pages ...` (lines 146-147):
@@ -51,28 +50,20 @@ All outcomes below come from the sealed execute-engine evidence (`walk-evidence.
 call require real GitHub auth + external repo mutation; correctly out of sandbox scope (so the quest's most consequential steps are unverifiable by any QA pass).
 
 ### 2 · Jekyll Fundamentals — ⚠️ 68 · ran 13/10 runnable (1 ✗), 3 reasoned, 5 skipped
-- **passed** — full Linux path end-to-end: `gem install jekyll bundler`
-  (jekyll 4.4.1, bundler 4.0.16) → `jekyll new my-castle` → `bundle exec jekyll serve`.
-- **passed** — Chapter 3 collections walkthrough verbatim: `collections: recipes`
-  in `_config.yml` + `_recipes/bread.md` rendered at the documented permalink.
-- **passed** — `bundle exec jekyll serve --livereload --drafts` and
-  `JEKYLL_ENV=production bundle exec jekyll build` both ran clean.
+- **passed** — full Linux path end-to-end: `gem install jekyll bundler` (jekyll 4.4.1, bundler 4.0.16) → `jekyll new my-castle` → `bundle exec jekyll serve`.
+- **passed** — Chapter 3 collections walkthrough verbatim: `collections: recipes` in `_config.yml` + `_recipes/bread.md` rendered at the documented permalink.
+- **passed** — `bundle exec jekyll serve --livereload --drafts` and `JEKYLL_ENV=production bundle exec jekyll build` both ran clean.
 - **failed** — Chapter 4 dev/prod config: `theme: "jekyll-theme-zer0"` in
 `_config_dev.yml` merged via `--config _config.yml,_config_dev.yml` throws `MissingDependencyException` — the theme gem is never installed.
-- **reasoned** — `echo "_site/" >> .gitignore` runs but is redundant; `jekyll new`
-  already seeds `.gitignore`. `docker-compose up -d` has no accompanying compose file.
+- **reasoned** — `echo "_site/" >> .gitignore` runs but is redundant; `jekyll new` already seeds `.gitignore`. `docker-compose up -d` has no accompanying compose file.
 
 ### 3 · YAML Configuration — ✅ 100 · ran 14/7 runnable, 0 failed, 2 skipped
 - **passed** — core shapes, `about.md` front matter, and the practical
 `_config.yml` all parsed exactly as claimed; `_config.yml` fed to a real `jekyll build` (4.4.1) built with no errors.
-- **passed** — `_data/team.yml` + Liquid loop rendered `<p>Ada Lovelace - Architect</p>`
-  and `<p>Grace Hopper - Compiler Smith</p>` exactly.
-- **passed** — all 5 pitfalls reproduced bit-for-bit: `yes`→True, `on`→True,
-  `1.20`→1.2, `01234`→668 (octal), and the colon-in-value quoting case.
-- **passed** — `_config_dev.yml` layering order, `strict_front_matter: true`
-  fail-fast, `yamllint`, and the `cytopia/yamllint` Docker lint all verified.
-- **skipped** — `brew install yamllint` / `apt install yamllint` (no Homebrew,
-  no sudo/apt in sandbox); standard, well-known commands — reasoned, not run.
+- **passed** — `_data/team.yml` + Liquid loop rendered `<p>Ada Lovelace - Architect</p>` and `<p>Grace Hopper - Compiler Smith</p>` exactly.
+- **passed** — all 5 pitfalls reproduced bit-for-bit: `yes`→True, `on`→True, `1.20`→1.2, `01234`→668 (octal), and the colon-in-value quoting case.
+- **passed** — `_config_dev.yml` layering order, `strict_front_matter: true` fail-fast, `yamllint`, and the `cytopia/yamllint` Docker lint all verified.
+- **skipped** — `brew install yamllint` / `apt install yamllint` (no Homebrew, no sudo/apt in sandbox); standard, well-known commands — reasoned, not run.
 
 ### 4 · Git Workflow Mastery — ✅ 83 · ran 7/10 runnable, 3 reasoned, 4 skipped
 - **passed** — `git switch -c`, `add`, `commit`, `push -u`, `status`,
@@ -81,8 +72,7 @@ call require real GitHub auth + external repo mutation; correctly out of sandbox
 confirming the "rewrites history" claim; conflict scenario produced the exact `<<<<<<< / ======= / >>>>>>>` markers the quest shows.
 - **reasoned** — the Chapter 2 `git merge` example captioned "adds a merge commit"
 actually fast-forwarded in the sandbox (no divergent main commits) — diagram omits the fast-forward case.
-- **skipped** — `gh pr create` / `gh pr merge --squash --delete-branch` need an
-  authenticated remote (`gh auth status` → not logged in); inherent QA limit.
+- **skipped** — `gh pr create` / `gh pr merge --squash --delete-branch` need an authenticated remote (`gh auth status` → not logged in); inherent QA limit.
 
 ### 5 · Liquid Templating — ⚠️ 71 · ran 13/4 runnable (1 ✗), 1 reasoned, 1 skipped
 - **passed** — Chapters 1/3/4 snippets reproduced under Jekyll 4.4.1:

@@ -184,10 +184,8 @@ With this in place the chat only works for you, even though the site is public.
 
 [`.github/workflows/deploy-chat-proxy.yml`](../../../.github/workflows/deploy-chat-proxy.yml) deploys [`wrangler.toml`](wrangler.toml) on every push to `main` that touches the proxy (and on manual dispatch), and sets the Worker's `ANTHROPIC_API_KEY` from a GitHub secret. One-time setup:
 
-1. Cloudflare → **My Profile → API Tokens → Create Token → "Edit Cloudflare
-   Workers"**. Note your **Account ID** (Workers & Pages overview).
-2. Add three **repo → Settings → Secrets and variables → Actions** secrets:
-   `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `ANTHROPIC_API_KEY`.
+1. Cloudflare → **My Profile → API Tokens → Create Token → "Edit Cloudflare Workers"**. Note your **Account ID** (Workers & Pages overview).
+2. Add three **repo → Settings → Secrets and variables → Actions** secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `ANTHROPIC_API_KEY`.
 3. Merge to `main` (or run the workflow via **Actions → Deploy chat proxy →
 Run workflow**). First run creates the Worker and prints its URL: `https://zer0-mistakes-chat-proxy.<your-subdomain>.workers.dev`.
 4. Put that URL in `_config.yml` and flip the widget on:
@@ -239,14 +237,11 @@ A fine-grained personal access token scoped to the site repository with **Issues
 ## Security notes
 
 - OAuth mode = your personal account. Cloudflare Access is mandatory, not optional.
-- `ALLOWED_ORIGINS` is a secondary gate (Origin headers are spoofable by
-  non-browser clients) — Cloudflare Access is the real one.
+- `ALLOWED_ORIGINS` is a secondary gate (Origin headers are spoofable by non-browser clients) — Cloudflare Access is the real one.
 - `CHAT_PROVIDER`, `CHAT_MODEL` / `XAI_CHAT_MODEL` and `MAX_TOKENS_CAP` are
 enforced server-side, so a tampered client cannot pick another provider, a more expensive model or unbounded output.
-- Session credentials exist only in the dev proxy, only in memory, only from a
-  browser origin on the local allowlist, and are never echoed back.
-- The KV namespace stores live tokens — keep the worker and its KV private to
-  your account.
+- Session credentials exist only in the dev proxy, only in memory, only from a browser origin on the local allowlist, and are never echoed back.
+- The KV namespace stores live tokens — keep the worker and its KV private to your account.
 
 ## Porting to other platforms
 

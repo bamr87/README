@@ -47,18 +47,15 @@ All outcomes below come from the sealed `walk-evidence.json` (mode: **execute**,
 
 ### 1. API Gateway Patterns — ❌ 44% (ran 5/6 runnable; 2 passed, 3 failed, 3 reasoned)
 Per-dimension: commands_work **1**, content_accuracy 2, completeness 2, clarity 3, structure 3, safety 5.
-- **`docker run … -v nginx.conf … nginx:alpine` → FAILED.** Container crash-loops:
-  `nginx: [emerg] host not found in upstream "users:8000"`. Confirmed via `docker logs`
+- **`docker run … -v nginx.conf … nginx:alpine` → FAILED.** Container crash-loops: `nginx: [emerg] host not found in upstream "users:8000"`. Confirmed via `docker logs`
   + `docker ps -a` (`Exited (1)`). The quest never provisions the `users`/`orders`
 upstreams the config references; the engine had to hand-create a network and stub containers to get NGINX to even start — none of that scaffolding is in the quest.
 - **FastAPI edge-auth middleware → FAILED.** A live uvicorn instance of the exact
 Chapter 2 snippet, sent a tokenless request, returned **HTTP 500** with an unhandled `HTTPException` traceback — **not** the `401 invalid token` the prose and the Intermediate Challenge validation require. (Real Starlette `BaseHTTPMiddleware` gotcha: `raise HTTPException` inside `@app.middleware("http")` doesn't convert to a response.)
-- **`nginx -t` on the config alone → FAILED** (same missing-upstream cause; directive
-  syntax itself is valid).
+- **`nginx -t` on the config alone → FAILED** (same missing-upstream cause; directive syntax itself is valid).
 - **Cloud path `docker run -d -p 8080:80 nginx:alpine` → PASSED** (serves default page;
 makes no routing claim). **Aggregation `asyncio.gather`+`httpx` snippet → PASSED** syntactically (fails only on DNS for nonexistent hosts, expected for a fragment).
-- Both mermaid diagrams: `reasoned` (mermaid-cli blocked by sandbox Chromium sandbox
-  restriction; static inspection = valid).
+- Both mermaid diagrams: `reasoned` (mermaid-cli blocked by sandbox Chromium sandbox restriction; static inspection = valid).
 
 ### 2. Event-Driven Design — ⚠️ 61% (ran 6/9 runnable; 5 passed, 1 failed, 2 reasoned)
 Per-dimension: commands_work 2, content_accuracy 4, completeness 2, clarity 3, structure 4, safety 5.
@@ -73,28 +70,23 @@ Idempotency guard → PASSED (double-delivery of `evt-1` left `processed_ids` at
 ### 3. Scaling Strategies — ✅ 83% (ran 5/6 runnable; 5 passed, 0 failed, 2 reasoned)
 Per-dimension: commands_work 4, content_accuracy 4, completeness 4, clarity 4, structure 5, safety 5.
 - **Redis `docker run … redis:7-alpine` → PASSED** (both Linux and Cloud paths).
-- **Kubernetes Deployment+Service YAML → PASSED** (two valid docs via PyYAML;
-  `kubectl --dry-run=client` limited by no API server, noted).
+- **Kubernetes Deployment+Service YAML → PASSED** (two valid docs via PyYAML; `kubectl --dry-run=client` limited by no API server, noted).
 - **Cache-aside Python → PASSED** against live Redis, *after the engine supplied the
 missing `db_fetch_product`/`db_update_product` stubs* — produced the described MISS→DB then HIT-no-DB sequence.
-- **Shard router `shard_for(1024)` → PASSED**, printed `db-shard-0` (1024 % 4 == 0),
-  exactly as the inline comment states. CAP/PACELC text block → `reasoned` (accurate).
+- **Shard router `shard_for(1024)` → PASSED**, printed `db-shard-0` (1024 % 4 == 0), exactly as the inline comment states. CAP/PACELC text block → `reasoned` (accurate).
 
 ### 4. Weaving the Whole — ✅ 83% (ran 2/1 recorded; 2 passed, 0 failed, 2 reasoned)
 Per-dimension: commands_work 4, content_accuracy 4, completeness 4, clarity 4, structure 5, safety 5.
 - **Merge-warden `auto-merge.yml` → PASSED.** Parsed cleanly; the wait-loop's four
 branches (fail-blocks / pending-waits / self-only-waits / all-green-merges) were extracted and exercised against a mocked `gh` and behaved exactly as documented.
-- **Smuggle-guard step → PASSED.** A content-only diff (`potions/…`) passes silently;
-  a diff also touching `scripts/check.sh` is correctly caught and labeled `needs-human`.
+- **Smuggle-guard step → PASSED.** A content-only diff (`potions/…`) passes silently; a diff also touching `scripts/check.sh` is correctly caught and labeled `needs-human`.
 - **Chapter 3 end-to-end (`gh variable set …`, `gh workflow run first-turn.yml`) →
 SKIPPED.** Requires an authenticated `gh` session against a live pre-built repo; the sandbox has no GitHub auth. Reasonable for a series finale but limits verification.
 
 ### 5. System Design Interviews — ✅ 95% (ran 5/6 runnable; 5 passed, 0 failed, 2 reasoned)
 Per-dimension: commands_work 5, content_accuracy 5, completeness 4, clarity 5, structure 5, safety 4.
-- **Estimation `estimate.py` → PASSED**, output *"Writes: ~40/s | Reads: ~4000/s"* and
-  *"Storage: ~50 GB/month, ~3 TB / 5yr"* — exactly the quest's stated figures.
-- **Short-code generators `codegen.py` → PASSED**: `code_by_hash(...)` → valid 7-char
-  base62; `code_by_counter(0)`→`a`, `(12345)`→`dnh`, `(62**7-1)`→`9999999`.
+- **Estimation `estimate.py` → PASSED**, output *"Writes: ~40/s | Reads: ~4000/s"* and *"Storage: ~50 GB/month, ~3 TB / 5yr"* — exactly the quest's stated figures.
+- **Short-code generators `codegen.py` → PASSED**: `code_by_hash(...)` → valid 7-char base62; `code_by_counter(0)`→`a`, `(12345)`→`dnh`, `(62**7-1)`→`9999999`.
 - **Both mermaid diagrams → PASSED** (rendered to SVG via mermaid-cli with
 `--no-sandbox`). Cheat-sheet figures (`86,400 s/day`, `~2.5M s/month`, latency numbers) verified accurate. Platform install lines `skipped` (no brew/winget/sudo).
 
@@ -125,26 +117,19 @@ guards in-process duplicates, not a real broker redelivery the challenge implies
 `db_update_product` (a copy-paste `NameError`). *Observed:* engine had to add stubs to run it. *Fix:* define minimal stubs or comment that they stand in for the reader's DB layer.
 - **Scaling · Mastery Challenges** — conceptual sections ship full code, but the "lab"
 challenges (3 replicas + LB, cache timing) have no starter code. *Fix:* add minimal scaffolding / a compose file.
-- **Weaving the Whole · Ch.2 self-exclusion filter** — an undisclosed fragility: the
-  merge warden assumes a check `link` always contains `/<RUN_ID>/`. *Fix:* anchor to
+- **Weaving the Whole · Ch.2 self-exclusion filter** — an undisclosed fragility: the merge warden assumes a check `link` always contains `/<RUN_ID>/`. *Fix:* anchor to
   `/actions/runs/${RUN_ID}(/|$)` or resolve via `gh api`, and probe it in a Knowledge
   Check.
 - **System Design · "Two Worked Designs" / news-feed** — the objective promises a
 worked news-feed and the Intermediate Challenge validates "within 10x of a worked reference," but no news-feed reference numbers exist. *Fix:* add a short news-feed estimation or soften the wording.
 
 **LOW**
-- **Scaling · cache-aside** — `cache.setex(key, TTL, …)` raises a redis-py
-  DeprecationWarning; prefer `cache.set(key, value, ex=TTL)`.
-- **Scaling · CAP examples** — classifying DynamoDB as purely "AP" omits its optional
-  strongly-consistent reads; add a caveat.
-- **Event-Driven · deserializer** — kafka-python 3.x emits a DeprecationWarning for
-  callable `value_(de)serializer`; note the current class-based interface.
-- **Weaving the Whole · `first-turn.yml`** — Chapter 3 references it without defining
-  it; add a sentence or link to the defining chapter.
-- **System Design · Linux path** — `sudo apt install` assumes admin rights; offer a
-  non-sudo alternative.
-- **API Gateway / others · mermaid** — diagrams validated only by static inspection
-  where headless-Chromium sandboxing was restricted (not a defect, a coverage note).
+- **Scaling · cache-aside** — `cache.setex(key, TTL, …)` raises a redis-py DeprecationWarning; prefer `cache.set(key, value, ex=TTL)`.
+- **Scaling · CAP examples** — classifying DynamoDB as purely "AP" omits its optional strongly-consistent reads; add a caveat.
+- **Event-Driven · deserializer** — kafka-python 3.x emits a DeprecationWarning for callable `value_(de)serializer`; note the current class-based interface.
+- **Weaving the Whole · `first-turn.yml`** — Chapter 3 references it without defining it; add a sentence or link to the defining chapter.
+- **System Design · Linux path** — `sudo apt install` assumes admin rights; offer a non-sudo alternative.
+- **API Gateway / others · mermaid** — diagrams validated only by static inspection where headless-Chromium sandboxing was restricted (not a defect, a coverage note).
 
 ## 🔗 Chain Continuity
 

@@ -6,8 +6,8 @@ kind: game
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: 527c292123a3dcad
+enrichment: heuristic
+source_fingerprint: 1f67dd0840c68d11
 tags:
   - bash
   - education
@@ -16,7 +16,7 @@ tags:
 
 # ⚔️ Bashcrawl — learn the terminal by playing
 
-> Bashcrawl (v3.1, active) is an interactive game for learning Bash and the terminal by exploring a dungeon, offered two ways from the same content: the classic filesystem dungeon you play in your own shell starting from the entrance directory, and a free browser trainer with mini-games and cheatsheets. The repo includes the playable dungeon, repository tooling under src, and a 29-page docs section with a demo walkthrough, a demo critical path, and a log viewer reference, plus AGENTS.md, CLAUDE.md, and a CHANGELOG for contributors and coding agents
+> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. v3.1 — one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.
 
 | | |
 |---|---|
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 51 docs |
+| Corpus | `docs/bashcrawl` - 99 docs |
 | External | no |
 
 ## Signals
@@ -32,15 +32,16 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~66,187 words across 51 indexed documents
-- code samples in: bash, plaintext, json, yaml, python, text, js, markdown
+- ~84,856 words across 99 indexed documents
+- code samples in: bash, plaintext, json, yaml, js, text, python, markdown
 
 ## Navigation
 
-44 published pages in 9 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+89 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (6 pages)
-- **Documentation** (29 pages)
+- **Courses** (31 pages)
+- **Documentation** (41 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents

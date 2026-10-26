@@ -19,8 +19,7 @@ Canonical rules live in [`version-control.instructions.md`](../../instructions/v
 ## When to use
 
 - At the **start** of any change — before you edit a single file.
-- When a working tree already holds several unrelated changes and you need to
-  split them into clean, reviewable PRs.
+- When a working tree already holds several unrelated changes and you need to split them into clean, reviewable PRs.
 - When you're unsure how to name a branch/commit, or which files belong together.
 
 ## Golden rules (memorize these)
@@ -28,8 +27,7 @@ Canonical rules live in [`version-control.instructions.md`](../../instructions/v
 1. **Branch before you edit.** Never change files on `main`.
 2. **One concern per branch/PR.** A fix, a feature, or a chore — pick one.
 3. **Stage by path, never `git add -A`.** Keep stray/generated files out.
-4. **Generated & lock files travel alone.** `_data/content_statistics.yml` and
-   `Gemfile.lock` never ride inside a feature PR.
+4. **Generated & lock files travel alone.** `_data/content_statistics.yml` and `Gemfile.lock` never ride inside a feature PR.
 5. **Validate before you push.** Use the `validate-build` skill.
 6. **Ship a feature → register it.** If your change adds or materially alters a
 user-visible feature (new layout, include, plugin, script, or workflow), add its `ZER0-NNN` entry to `_data/features.yml` (with `provenance` + `tests`) and run `ruby scripts/tag-features --write` in the **same** PR — the `features` CI suite hard-fails otherwise. See [`features.instructions.md`](../../instructions/features.instructions.md).
@@ -66,8 +64,7 @@ git status --short        # review EVERY modified path
 - Stage only the files for this concern, **by path**: `git add <path> <path>`.
 - If `_data/content_statistics.yml` shows up and stats aren't your concern,
 leave it unstaged (it's plugin-generated — it rides its own `chore` commit or CI).
-- If `Gemfile.lock` changed and this isn't a release/deps PR, leave it unstaged.
-  The lock's `jekyll-theme-zer0 (X.Y.Z)` line must always match `version.rb`.
+- If `Gemfile.lock` changed and this isn't a release/deps PR, leave it unstaged. The lock's `jekyll-theme-zer0 (X.Y.Z)` line must always match `version.rb`.
 
 ### 4. Validate
 

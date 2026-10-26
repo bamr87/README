@@ -43,12 +43,9 @@ All per-quest verdicts below come from the sealed `walk-evidence.json` (mode: `e
 
 ### 1 · API Fundamentals — 89 ✅ (ran 11/10 runnable snippets, 0 failed)
 Dimensions: commands_work **5**, content_accuracy **4**, completeness 3, clarity 5, structure 5, safety 5.
-- `curl https://jsonplaceholder.typicode.com/posts/1` → exact JSON shown in the quest
-  (userId 1, id 1). **passed**
-- `curl -X POST .../posts -H "Content-Type: application/json" -d '{...}'` → `201` with
-  echoed body plus `"id": 101`, exactly as the quest claims. **passed**
-- `curl -s -o /dev/null -w "%{http_code}\n" .../posts/9999` → `404`, matching the
-  inline comment. **passed**
+- `curl https://jsonplaceholder.typicode.com/posts/1` → exact JSON shown in the quest (userId 1, id 1). **passed**
+- `curl -X POST .../posts -H "Content-Type: application/json" -d '{...}'` → `201` with echoed body plus `"id": 101`, exactly as the quest claims. **passed**
+- `curl -s -o /dev/null -w "%{http_code}\n" .../posts/9999` → `404`, matching the inline comment. **passed**
 - Python `requests` snippet → `200` + exact title; Node `fetch` (Node v20.20.2) → `200`
   + identical title. **passed**
 - Novice challenge: `.../users/octocat` → `200`, `jq .public_repos` → `8`. **passed**
@@ -57,11 +54,9 @@ negotiates **HTTP/2** by default, so a learner sees `HTTP/2 200` (no reason phra
 
 ### 2 · Initiation Rites: Agents in the SDLC — 88 ✅ (ran 5/5, 0 failed)
 Dimensions: commands_work 4, content_accuracy **5**, completeness 4, clarity 4, structure 5, safety 5.
-- The standalone `scripts/agent-trace.sh` ran and produced the exact JSONL trace output
-  the quest shows. **passed**
+- The standalone `scripts/agent-trace.sh` ran and produced the exact JSONL trace output the quest shows. **passed**
 - YAML workflows, `permissions:` blocks, and `gh` syntax all verified correct.
-- The four `gh`-CLI lab steps (Steps 1–5) need a live authenticated GitHub account, so
-  they were **skipped** in-sandbox but read as syntactically correct. Honestly labeled.
+- The four `gh`-CLI lab steps (Steps 1–5) need a live authenticated GitHub account, so they were **skipped** in-sandbox but read as syntactically correct. Honestly labeled.
 - Key structural strength (see Chain Continuity): this quest's lab creates a **fresh
 scratch repo** (`gh repo create codex-rites-lab`) instead of assuming `work/gh-600`, which is *why* it works where quests 4–5 do not.
 
@@ -70,21 +65,16 @@ Dimensions: commands_work **5**, content_accuracy 4, completeness 3, clarity 5, 
 - `curl -s .../comments?postId=1&_limit=3 | jq 'length'` and the GitHub `_url`-count
 jq snippet ran against live APIs (via docker-tunneled curl, host net sandboxed) and returned sane results. **passed**
 - Constraints table, RMM ladder, and HATEOAS JSON example are all correct.
-- Dings: a stated-but-never-taught "Idempotency and Safety" secondary objective and one
-  dead MDN resource link.
+- Dings: a stated-but-never-taught "Idempotency and Safety" secondary objective and one dead MDN resource link.
 
 ### 4 · Initiation Rites: Embedding Agents in the SDLC — 49 ❌ (ran 7, **3 failed**)
 Dimensions: commands_work **1**, content_accuracy 3, completeness 2, clarity 3, structure 3, safety 5.
 - Setup (line 158–159 bash / 175–176 PowerShell): `git clone .../it-journey.git` then
 `cd it-journey/work/gh-600` — the sandbox clone succeeds but **`work/gh-600` does not exist in the repo**, so the `cd`/`Set-Location` **failed** on both shells.
-- Quest Validation (line 342): `python3 scripts/validate_quest.py --quest q1` references
-  a script that **does not exist**. **failed**
-- Exercises 1.1/1.2/1.3/1.5 write into `work/gh-600/notes|task-cards|diagrams/…` —
-  paths under the phantom sandbox, so every hands-on step is unfollowable as written.
-- **Host confirmation (`reasoned`):** `ls work/gh-600` → *No such file or directory*;
-  `find . -name validate_quest.py` → no results. Corroborates the sandbox exactly.
-- Conceptual content (agent-vs-assistant table, SDLC decision grid, anti-patterns,
-  Mermaid) is solid — the failure is purely the broken exercise scaffold.
+- Quest Validation (line 342): `python3 scripts/validate_quest.py --quest q1` references a script that **does not exist**. **failed**
+- Exercises 1.1/1.2/1.3/1.5 write into `work/gh-600/notes|task-cards|diagrams/…` — paths under the phantom sandbox, so every hands-on step is unfollowable as written.
+- **Host confirmation (`reasoned`):** `ls work/gh-600` → *No such file or directory*; `find . -name validate_quest.py` → no results. Corroborates the sandbox exactly.
+- Conceptual content (agent-vs-assistant table, SDLC decision grid, anti-patterns, Mermaid) is solid — the failure is purely the broken exercise scaffold.
 
 ### 5 · The Three Sigils: Plan, Reason, Act — 25 ❌ (ran 12, **3 failed**)
 Dimensions: commands_work **0**, content_accuracy 2, completeness 1, clarity 1, structure 1, safety 4.
@@ -92,8 +82,7 @@ Dimensions: commands_work **0**, content_accuracy 2, completeness 1, clarity 1, 
 block, which errored):** the Chapter 2 block opens ` ```markdown ` (line 150), nests ` ```json ` (line 162), then "closes" with ` ```markdown ` (line 178) and stray ` ```bash `/` ```text ` fences (lines 200, 235, 249, 316, 347). Because a CommonMark closing fence must be *bare*, everything from ~line 121 to EOF collapses into one malformed code block — Chapters 3–5, Quest Validation, Rewards, and the Knowledge Graph render as literal text. **failed**
 - Chapter 3 saves the schema to `work/gh-600/schemas/agent-plan.json` (line 206) but the
 validation snippet also opens `work/gh-600/sample-plan.json` (line 244) — **a file the quest never creates** — so it 404s. **failed**
-- Chapter 4 workflow reads `.github/schemas/agent-plan.json` (line 285) — **inconsistent
-  with** the Chapter 3 save path. Plus `scripts/validate_quest.py` again (line 339).
+- Chapter 4 workflow reads `.github/schemas/agent-plan.json` (line 285) — **inconsistent with** the Chapter 3 save path. Plus `scripts/validate_quest.py` again (line 339).
 - Same phantom `work/gh-600` sandbox as quest 4 (host-confirmed missing).
 
 > Machine summary (verbatim from `walk-evidence.md`): *"**5** quests evaluated · ✅ 3
@@ -116,21 +105,15 @@ opens `work/gh-600/sample-plan.json` that the quest never creates.** *Fix:* add 
 `work/gh-600/schemas/agent-plan.json` (L206) but the workflow reads `.github/schemas/agent-plan.json` (L285).** *Fix:* make the two paths agree.
 
 **Medium**
-6. **`agentic-plan-vs-action-boundaries.md` · Exercise numbering skips 2.2** (2.1 at L148,
-   then 2.3 at L255). *Fix:* label the Chapter 3 schema exercise 2.2.
-7. **`agentic-plan-vs-action-boundaries.md` · Chapter 4 uses `actions/GitHub-script@v7`
-   (L299).** *Fix:* use canonical `actions/github-script@v7`.
-8. **`rest-principles.md` · secondary objective "Idempotency and Safety" (L109) is stated
-   but never taught** in the body. *Fix:* add a short section or drop the objective.
+6. **`agentic-plan-vs-action-boundaries.md` · Exercise numbering skips 2.2** (2.1 at L148, then 2.3 at L255). *Fix:* label the Chapter 3 schema exercise 2.2.
+7. **`agentic-plan-vs-action-boundaries.md` · Chapter 4 uses `actions/GitHub-script@v7` (L299).** *Fix:* use canonical `actions/github-script@v7`.
+8. **`rest-principles.md` · secondary objective "Idempotency and Safety" (L109) is stated but never taught** in the body. *Fix:* add a short section or drop the objective.
 
 **Low**
 9. **`api-fundamentals.md` · Chapter 1 `curl -v` illustration shows `HTTP/1.1 200 OK`
 (L226/234)** but modern curl negotiates HTTP/2 (`HTTP/2 200`, no reason phrase). *Fix:* note that HTTP/2 output differs, or add `--http1.1` to the illustrated command.
-10. **Mermaid `\n` line-breaks render literally** — e.g. `Q2[🎯 Q2: The Three Sigils\nPlan
-    vs Action]` (`agentic-sdlc-integration.md` L104–106, `agentic-plan-vs-action-boundaries.md`
-    L88). *Fix:* use `<br/>`.
-11. **`rest-principles.md` · one dead MDN resource link** (HATEOAS glossary, flagged by the
-    engine). *Fix:* update to a live URL.
+10. **Mermaid `\n` line-breaks render literally** — e.g. `Q2[🎯 Q2: The Three Sigils\nPlan vs Action]` (`agentic-sdlc-integration.md` L104–106, `agentic-plan-vs-action-boundaries.md` L88). *Fix:* use `<br/>`.
+11. **`rest-principles.md` · one dead MDN resource link** (HATEOAS glossary, flagged by the engine). *Fix:* update to a live URL.
 
 *No blocking issues in quests 1–3.*
 

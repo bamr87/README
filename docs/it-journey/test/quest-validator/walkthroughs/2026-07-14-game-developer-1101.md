@@ -125,19 +125,12 @@ path, yet all five quests are generic Data-Science/ML content (`categories: [Que
 - **What I ran vs. reasoned:** I ran no quest commands myself — all `passed`/`failed`
 outcomes above are the engine's actual sandbox executions, quoted from the evidence. I **read all five quest sources in plan order** and reasoned about the linked journey (prerequisites, ordering, character relevance, beginner friction) in §6. Anything I could only judge statically is labeled `reasoned` (notably **all** of MLOps and the alternate-OS setup blocks the engine chose not to run).
 - **Coverage / limits (honest):**
-  - **4 of 5 quests scored; MLOps was NOT evaluated** — the engine hit `max_turns: 40` while
-    standing up the FastAPI service, so there is no MLOps verdict, no per-dimension scores,
-    and no snippet tally. I did **not** invent one; its row is `—` and its issues are
-    `reasoned`.
-  - This is **window 1 of 2** (5 of the level's 10 quests). I walked exactly the planned
-    window and did not expand to the other window or other characters.
-  - Snippet coverage was partial by design: the engine ran one representative OS setup path
-    per quest and reasoned about the others, and skipped `sudo apt` lines in a couple quests.
-    Totals: DLF 5/8 ran, CV 6/7, NLP 8 (1 failed), Ethics 5/6.
+  - **4 of 5 quests scored; MLOps was NOT evaluated** — the engine hit `max_turns: 40` while standing up the FastAPI service, so there is no MLOps verdict, no per-dimension scores, and no snippet tally. I did **not** invent one; its row is `—` and its issues are `reasoned`.
+  - This is **window 1 of 2** (5 of the level's 10 quests). I walked exactly the planned window and did not expand to the other window or other characters.
+  - Snippet coverage was partial by design: the engine ran one representative OS setup path per quest and reasoned about the others, and skipped `sudo apt` lines in a couple quests. Totals: DLF 5/8 ran, CV 6/7, NLP 8 (1 failed), Ethics 5/6.
 - **Confidence:** **High** on the four scored quests — findings are backed by real,
 reproducible sandbox output (and the NLP fix was independently verified by the engine). **Low** on MLOps — no execution evidence exists; its "fail" reflects a harness timeout, and the maintainer should re-run it before drawing any content conclusion.
-- **Deliverable:** this single report. No quest content was edited; no branch/commit/PR was
-  made. The workflow handles git. **STOP.**
+- **Deliverable:** this single report. No quest content was edited; no branch/commit/PR was made. The workflow handles git. **STOP.**
 
 ---
 

@@ -63,8 +63,7 @@ The slide-in menu is clamped to `min(21rem, 86vw)`; at 360px its right edge land
 
 [`../navbar-responsive.spec.js`](../navbar-responsive.spec.js) — **26 tests, all passing** in the `smoke` (CI) tier:
 
-- 16-width matrix (320 → 1920px): no page overflow, header spans the viewport,
-  utilities stay on-screen, brand renders, inline menubar never clips.
+- 16-width matrix (320 → 1920px): no page overflow, header spans the viewport, utilities stay on-screen, brand renders, inline menubar never clips.
 - Content pages (`/`, `/docs/`) at 375 / 768 / 1280px: no horizontal overflow.
 - Mobile offcanvas fits the viewport; desktop dropdown stays within the viewport.
 - Stress: long title ellipsizes; many items never force a page scrollbar.

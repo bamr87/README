@@ -24,16 +24,11 @@ title: Backlog Instructions
 
 - **Edit the file, never the issues.** Issue bodies are auto-generated and
 overwritten on every sync (they carry a `<!-- backlog-id: T-NNN -->` marker used for matching). Issue state follows the task `status`.
-- **Ids are stable and never reused.** New tasks take the next `T-NNN` from
-  `meta.next_id`; increment `meta.next_id` and bump `meta.updated` when adding.
-- **Every task needs checkable `acceptance` criteria.** The implement routine
-  verifies them before opening a PR.
-- **Set `risk` honestly.** `risk: low` is reserved for `docs`/`deps`/`lint` work
-  with no public-API or schema change — only those are auto-merge eligible.
-- **Validate before committing:** `ruby scripts/sync-backlog.rb --check` (this is
-  also the PR gate; a malformed backlog fails CI).
-- **Mark completion in the backlog, not by closing the issue.** Set the task to
-  `status: done`; the next sync closes its issue.
+- **Ids are stable and never reused.** New tasks take the next `T-NNN` from `meta.next_id`; increment `meta.next_id` and bump `meta.updated` when adding.
+- **Every task needs checkable `acceptance` criteria.** The implement routine verifies them before opening a PR.
+- **Set `risk` honestly.** `risk: low` is reserved for `docs`/`deps`/`lint` work with no public-API or schema change — only those are auto-merge eligible.
+- **Validate before committing:** `ruby scripts/sync-backlog.rb --check` (this is also the PR gate; a malformed backlog fails CI).
+- **Mark completion in the backlog, not by closing the issue.** Set the task to `status: done`; the next sync closes its issue.
 - **Keep the script dependency-free** (Ruby stdlib only) and compatible with the
 macOS system Ruby 2.6 — mirror the YAML-load fallback used in `scripts/generate-roadmap.rb`.
 

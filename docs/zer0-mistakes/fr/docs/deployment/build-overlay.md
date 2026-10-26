@@ -45,8 +45,7 @@ translation_source_url: /docs/deployment/build-overlay/
 
 Lorsque vous compilez *en dehors* de GitHub Pages — votre propre GitHub Actions, GitLab CI, ou un `jekyll build` local — rien ne reproduit à votre place les deux contraintes de Pages :
 
-1. `remote_theme` ne fournit que `_layouts/`, `_includes/`, `_sass/` et
-   `assets/`. Vos `_config.yml`, `_data/` et votre contenu restent locaux.
+1. `remote_theme` ne fournit que `_layouts/`, `_includes/`, `_sass/` et `assets/`. Vos `_config.yml`, `_data/` et votre contenu restent locaux.
 2. Pages exécute Jekyll en **mode sécurisé**, ce qui **ignore `_plugins/*.rb`**. Les
 générateurs du thème (recherche, sitemap, pages d'auteur, aperçus) ne s'exécutent jamais lors d'un build consommateur Pages.
 
@@ -120,11 +119,9 @@ Après le build, assurez-vous que vous n'avez rien livré que Pages ne servirait
 
 - **Aucune route dépendant uniquement des plugins** — `/search.json`, `/sitemap/`, `/authors/` etc. devraient
 être absentes à moins que vous n'ayez commité des stubs statiques pour elles. Leur présence en local mais pas sur Pages est la divergence classique que cette recette évite.
-- **Exécutez un vérificateur de liens** sur `_site` et traitez les 404 injectées par le thème comme des
-  échecs de build, afin qu'une régression apparaisse en CI plutôt que pour un visiteur.
+- **Exécutez un vérificateur de liens** sur `_site` et traitez les 404 injectées par le thème comme des échecs de build, afin qu'une régression apparaisse en CI plutôt que pour un visiteur.
 
 ## Voir aussi
 
-- [Liste de contrôle du consommateur de thème distant](/docs/deployment/remote-theme-checklist/) — les
-  fichiers et la configuration à ajouter lors de la consommation du thème via `remote_theme`.
+- [Liste de contrôle du consommateur de thème distant](/docs/deployment/remote-theme-checklist/) — les fichiers et la configuration à ajouter lors de la consommation du thème via `remote_theme`.
 - [Vue d'ensemble du déploiement](/docs/deployment/) — options d'hébergement et compromis.

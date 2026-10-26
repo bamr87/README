@@ -191,8 +191,7 @@ window.addEventListener('scroll', function() {
 1. **Cookie consent integration** — The PostHog loader runs in production, then
 `_includes/components/cookie-consent.html` calls `posthog.opt_in_capturing()` when a visitor accepts analytics cookies and `posthog.opt_out_capturing()` otherwise. Consent therefore gates event *capturing*, not whether the library loads.
 2. **Disable cookies** — Set `disable_cookie: true` for cookieless tracking
-3. **IP anonymization** — Set `privacy.ip_anonymization: true` (the include then
-   passes `ip: false` to `posthog.init`)
+3. **IP anonymization** — Set `privacy.ip_anonymization: true` (the include then passes `ip: false` to `posthog.init`)
 4. **Session recordings** — Keep `session_recording: false` unless needed
 5. **Data retention** — Configure in PostHog dashboard
 

@@ -6,8 +6,8 @@ kind: site
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: 430a761accf7d02a
+enrichment: heuristic
+source_fingerprint: 26d051159234c8fb
 tags:
   - ctf
   - security
@@ -16,7 +16,7 @@ tags:
 
 # Wargames
 
-> OverTheWire-website is an external reference corpus mirroring the OverTheWire community's site (OverTheWireOrg/OverTheWire-website, gh-pages branch), whose wargames help you learn and practice security concepts through fun-filled games. Of its 232 Markdown pages, 219 live under wargames, covering per-level guides for games such as Bandit, Leviathan, Krypton, Drifter and Blacksun. A smaller information section documents the SSH infrastructure, and a rules page sits alongside it. Open it when you need the level-by-level challenge text, game reading material, or connection details for these security and CTF-style exercises.
+> OverTheWire wargame guides and security-challenge documentation (external reference corpus). The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games.
 
 | | |
 |---|---|

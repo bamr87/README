@@ -24,8 +24,7 @@ BASE_URL=http://localhost:4605 BASE_PATH=/zer0-mistakes \
 
 - **`01-before-after-baseurl.png`** — the graph page on the baseurl'd build.
 BEFORE: the renderer fetches `/assets/data/wiki-index.json` (no baseurl) → **404** → "Failed to load graph data: HTTP 404" alert, empty container. AFTER: it fetches `/zer0-mistakes/assets/data/wiki-index.json` → **200** and renders the force-directed graph (164 pages · 272 links).
-- **`metrics.json`** — the measured facts behind the montage: every
-  wiki-index request (path + status) and the rendered state per scenario.
+- **`metrics.json`** — the measured facts behind the montage: every wiki-index request (path + status) and the rendered state per scenario.
 
 ## Measured before → after (from `metrics.json`)
 

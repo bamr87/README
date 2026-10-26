@@ -47,8 +47,7 @@ warning produced sorted, `sort_keys=True` JSONL and return value 1, matching the
 not runnable in isolation (depends on `finding()` from the prior snippet); by design, superseded by the full assembled file. Exercised indirectly below.
 - Complete assembled `scripts/ci/verify.py` → **passed** across 5 scenarios:
 (1) clean file → exit 0, empty `findings.jsonl`; (2) missing `author` key → exit 1, `fm-required-key` error; (3) no `---` block → `fm-missing` error; (4) malformed front matter → handled gracefully, no crash; (5) dead site-absolute link → `link-broken` **warning** (does not fail gate), relative dead links ignored. **Determinism confirmed**: re-ran twice on identical state → byte-identical `findings.jsonl`.
-- `pip install pyyaml && python scripts/ci/verify.py` → **passed** — pyyaml 6.0.3
-  already present on Python 3.12.13; ran verbatim.
+- `pip install pyyaml && python scripts/ci/verify.py` → **passed** — pyyaml 6.0.3 already present on Python 3.12.13; ran verbatim.
 - `.github/workflows/verify.yml` → **reasoned** — not executable outside GitHub
 Actions; YAML parses, action versions (`checkout@v4`, `setup-python@v5`, `upload-artifact@v4`) current as of 2026.
 - Mermaid quest-network diagram → **skipped** — sandbox lacks a usable Chromium
@@ -70,8 +69,7 @@ existing `theme` logic (grep returned no matches), so Step 5/6's "add theme clas
 - `_data/contributors/` → **exists** ✓ with `_template.yml` + real contributor YAML
 (`bamr87.yml`, etc.), so Step 5's `_data/contributors/YOUR_USERNAME.yml` edit has a realistic target.
 - Prerequisite quest `/quests/0001/forge-your-character/` → file **exists** ✓.
-- `assets/css/themes/` directory → **does not pre-exist**, but Step 3 *creates* a file
-  there and Git will create the directory on `git add`, so this is not a blocker.
+- `assets/css/themes/` directory → **does not pre-exist**, but Step 3 *creates* a file there and Git will create the directory on `git add`, so this is not a blocker.
 
 ## 🐞 Issues Found
 
@@ -97,8 +95,7 @@ my-first-quest.git` + `git push -u origin main` assumes the learner has already 
 
 - **low · Quest 3 · Step 7 build command** — `bundle exec jekyll serve` conflicts with
 this repo's documented reality (host Ruby can't build the site; the Docker path via the `run-it-journey` skill is required for the `jekyll-theme-zer0` gem ≥1.21 / Ruby ≥3.2). A contributor following this literally on the host may hit a gem/Ruby version wall. *Fix:* point at the repo's Docker build (`make serve`) or note the Ruby version requirement. *(Reasoned.)*
-- **no blocking issues otherwise** — every repo-internal path the quest references was
-  verified to exist, and the prerequisite quest resolves.
+- **no blocking issues otherwise** — every repo-internal path the quest references was verified to exist, and the prerequisite quest resolves.
 
 ## 🔗 Chain Continuity
 
@@ -122,7 +119,5 @@ engine sealed evidence for **only 1** (`evaluated: 1, requested: 3, auth_truncat
 environment, not defect); two snippets were `reasoned` (the isolated checks-half, and the workflow YAML that can't run outside GitHub Actions).
 - **Verdict rationale:** `warn`, not `pass` — the single evaluated quest is a clean
 92% pass, but reporting the slice as green would misrepresent the 1/3 execution coverage and bury the chain-ordering inversion. `warn` reflects "no blockers found, but incomplete evidence + real structural gaps to address."
-- **Confidence:** high for Quest 1 (machine-executed, determinism confirmed); medium
-  for Quests 2 and 3 (static reasoning plus file-existence checks, no runtime).
-- **Scope discipline:** read-only over all content; my only write is this report. No
-  quest edited, no branch/commit/PR, no engine re-run.
+- **Confidence:** high for Quest 1 (machine-executed, determinism confirmed); medium for Quests 2 and 3 (static reasoning plus file-existence checks, no runtime).
+- **Scope discipline:** read-only over all content; my only write is this report. No quest edited, no branch/commit/PR, no engine re-run.

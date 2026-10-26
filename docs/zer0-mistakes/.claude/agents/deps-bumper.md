@@ -17,17 +17,13 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 
 ## Universal executor rules (every lane inherits these)
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or
-  credentials; never run `env`/`printenv` or read dotfiles.
+- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or credentials; never run `env`/`printenv` or read dotfiles.
 - **CODEOWNERS is a wall — central to this lane.** `Gemfile`, `Gemfile.lock`,
 `package.json`, `package-lock.json`, and the gemspec are **owned**. You may *read* them and *propose* a change, but editing them → **STOP**, hand to a human (Dependabot + release tooling own the manifests). Never add a new runtime dependency.
 - **One task → one PR.** Minimal, surgical.
 - **Lane escape → STOP** and hand back.
 
 ## This lane
-- **Load:** the [`change-workflow`](../../.github/skills/change-workflow/SKILL.md)
-  and [`validate-build`](../../.github/skills/validate-build/SKILL.md) skills.
-- **Typical work:** confirm a bump builds + tests green; refresh committed vendor
-  assets with `./scripts/vendor-install.sh`; record a dep decision in docs.
-- **Done when:** the build and tests are green and no owned manifest was edited
-  (re-check the diff before opening the PR).
+- **Load:** the [`change-workflow`](../../.github/skills/change-workflow/SKILL.md) and [`validate-build`](../../.github/skills/validate-build/SKILL.md) skills.
+- **Typical work:** confirm a bump builds + tests green; refresh committed vendor assets with `./scripts/vendor-install.sh`; record a dep decision in docs.
+- **Done when:** the build and tests are green and no owned manifest was edited (re-check the diff before opening the PR).

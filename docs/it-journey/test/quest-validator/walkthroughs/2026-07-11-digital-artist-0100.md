@@ -70,8 +70,7 @@ Dimension scores: commands_work 1 · content_accuracy 1 · completeness 1 · cla
 
 - **failed** — `docker-compose run jekyll jekyll new .`: `docker-compose: command not
 found` (v1 CLI absent); retried as `docker compose run …` → `Conflict: /srv/jekyll exists and is not empty` (Dockerfile/compose already occupy the mounted dir).
-- **failed** — `cd my-jekyll-site`: `bash: cd: my-jekyll-site: No such file or
-  directory` — that directory is never created by any prior step.
+- **failed** — `cd my-jekyll-site`: `bash: cd: my-jekyll-site: No such file or directory` — that directory is never created by any prior step.
 - **failed** — `index.html` homepage: after `jekyll build`, the file lacks front
 matter so `{% include %}` tags are **not** processed — verified literal `{% include head.html %}` / `{% include footer.html %}` text left in built `_site/index.html`; also references a never-created `_includes/footer.html`.
 - **failed** — `docker compose up`: container crashes with
@@ -88,20 +87,16 @@ Dimension scores: commands_work 2 · content_accuracy 3 · completeness 2 · cla
 only succeeded after a manual `bundle config set --local path 'vendor/bundle'` the quest never mentions.
 - **failed** — Steps 3–4 edit `_includes/head.html` and `_layouts/default.html`:
 verified via `find` that neither exists in a fresh `jekyll new` + minima project — they live only inside the gem (`vendor/bundle/.../minima-2.5.2/…`). No Bootstrap CDN link or grid markup is given anywhere in the quest.
-- **verified accurate** — Chapter 9 (Jekyll build pipeline, layouts/includes, Liquid,
-  overriding a remote-theme gem) is technically correct and well-verified.
+- **verified accurate** — Chapter 9 (Jekyll build pipeline, layouts/includes, Liquid, overriding a remote-theme gem) is technically correct and well-verified.
 
 ### 5. jekyll-component-refactoring.md — ⚠️ 73 (execute)
 Dimension scores: commands_work 3 · content_accuracy 4 · completeness 3 · clarity 4 · structure 4 · safety 5. Command coverage: **8 passed · 2 failed · 1 skipped · 3 reasoned** (of 14); md snippet coverage `10/3 (2✗)`.
 
-- **passed** — config-driven nanobar include, scoped SCSS, full-width footer fix, and
-  a direct `jekyll build` (exit 0) all worked once the parent dir existed.
+- **passed** — config-driven nanobar include, scoped SCSS, full-width footer fix, and a direct `jekyll build` (exit 0) all worked once the parent dir existed.
 - **failed** — Step 2.1 `touch _includes/components/nanobar.html`:
 `touch: cannot touch …: No such file or directory` — `touch` doesn't create parents; needed a manual `mkdir -p _includes/components` first (Step 3.1 does this correctly with `mkdir -p`, so the pattern is known).
-- **failed** — Phase 7 `bundle exec jekyll build`: `bundle: command not found` — no
-  Gemfile/bundler is set up anywhere in the quest; `jekyll build` directly succeeded.
-- **skipped** — Phase 7 `docker-compose exec … jekyll build`: no compose/Dockerfile
-  exists in this quest (assumed to come from the unlinked-in-body Frontend Docker quest).
+- **failed** — Phase 7 `bundle exec jekyll build`: `bundle: command not found` — no Gemfile/bundler is set up anywhere in the quest; `jekyll build` directly succeeded.
+- **skipped** — Phase 7 `docker-compose exec … jekyll build`: no compose/Dockerfile exists in this quest (assumed to come from the unlinked-in-body Frontend Docker quest).
 
 ## 🐞 Issues Found
 

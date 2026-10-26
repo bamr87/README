@@ -127,17 +127,14 @@ Chaque page `/authors/:key/` est un tableau de bord vivant, et non une liste sta
 
 ![La page de profil d'auteur interactive : un bandeau avec avatar, biographie et accroche, un tableau de bord de statistiques qui fait aussi office de filtres de type par collection, plus une zone de recherche, un contrôle de tri et un nuage de sujets cliquable](⟦59⟧)
 
-- **Bandeau** — avatar, nom, rôle, l'accroche `tagline`, la biographie, `location`,
-  la date de dernière activité, les puces d'expertise et les liens sociaux.
+- **Bandeau** — avatar, nom, rôle, l'accroche `tagline`, la biographie, `location`, la date de dernière activité, les puces d'expertise et les liens sociaux.
 - **Tableau de bord de statistiques** — une carte par collection dans laquelle l'auteur a écrit
 (Articles, Docs, Notes, …) plus une carte « Tout ». Les cartes *sont* le filtre de type : cliquez-en une pour n'afficher que cette collection.
 - **Recherche** — filtre par titre et tags au fur et à mesure de la saisie.
 - **Tri** — du plus récent, du plus ancien, ou par titre de A à Z.
 - **Sujets** — un nuage de tags cliquable ; sélectionnez un sujet pour affiner la grille.
-- **Compteur en direct + effacement** — « Affichage de N sur M » (annoncé aux lecteurs d'écran via
-  `aria-live`), plus un contrôle Effacer dès qu'un filtre est actif.
-- **Liens profonds** — le filtre de type actif est reflété dans le fragment d'URL
-  (par ex. `/authors/bamr87/#type=docs`), de sorte qu'une vue filtrée est partageable.
+- **Compteur en direct + effacement** — « Affichage de N sur M » (annoncé aux lecteurs d'écran via `aria-live`), plus un contrôle Effacer dès qu'un filtre est actif.
+- **Liens profonds** — le filtre de type actif est reflété dans le fragment d'URL (par ex. `/authors/bamr87/#type=docs`), de sorte qu'une vue filtrée est partageable.
 
 Le comportement réside dans `assets/js/author-profile.js`, qui s'active de lui-même sur le conteneur `[data-author-profile]` (sûr à charger n'importe où). Avec JavaScript désactivé, chaque contribution s'affiche toujours dans une grille normale (entièrement indexable), et toutes les animations respectent `prefers-reduced-motion`.
 
@@ -166,10 +163,8 @@ Le bloc `persona` **est** le modèle réutilisable. Lorsqu'un agent IA rédige u
 
 Le thème est livré avec deux personas d'exemple (voir leurs profils sur `/authors/cassandra/` et `/authors/vega/`) :
 
-- **Cassandra** — une *Analyste de Sécurité IA* paranoïaque qui transforme des lacunes triviales
-  (un favicon, une barre oblique finale) en brèches menaçant la civilisation.
-- **Vega** — une *Analyste de Données IA* enthousiaste qui ajuste des modèles hiérarchiques
-  bayésiens et des embeddings UMAP à des données glorieusement triviales.
+- **Cassandra** — une *Analyste de Sécurité IA* paranoïaque qui transforme des lacunes triviales (un favicon, une barre oblique finale) en brèches menaçant la civilisation.
+- **Vega** — une *Analyste de Données IA* enthousiaste qui ajuste des modèles hiérarchiques bayésiens et des embeddings UMAP à des données glorieusement triviales.
 
 **La transparence d'abord :** l'authorship IA est toujours divulgué de manière visible — le badge et la divulgation ne sont ni optionnels ni jamais masqués.
 

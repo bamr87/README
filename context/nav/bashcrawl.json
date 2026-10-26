@@ -5,22 +5,24 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 44,
-    "sections": 9,
+    "pages": 89,
+    "sections": 17,
     "max_depth": 3,
-    "skipped": 3
+    "skipped": 5
   },
   "skipped": [
     ".archives",
+    ".claude",
     ".github",
+    "docs/README.md",
     "logs/README.md"
   ],
-  "fingerprint": "9543236af17fa153",
+  "fingerprint": "125bcfa8894d04b3",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 44,
+    "pages": 89,
     "children": [
       {
         "type": "group",
@@ -104,15 +106,22 @@
       },
       {
         "type": "page",
-        "title": "Changelog",
-        "path": "bashcrawl/CHANGELOG.md",
-        "rel": "CHANGELOG.md"
+        "title": "bashcrawl",
+        "path": "bashcrawl/CLAUDE.md",
+        "rel": "CLAUDE.md"
       },
       {
         "type": "page",
-        "title": "CLAUDE.md",
-        "path": "bashcrawl/CLAUDE.md",
-        "rel": "CLAUDE.md"
+        "title": "bashcrawl tools",
+        "path": "bashcrawl/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "bashcrawl/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
       },
       {
         "type": "page",
@@ -123,6 +132,12 @@
       },
       {
         "type": "page",
+        "title": "PRD \u2014 Bashcrawl",
+        "path": "bashcrawl/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
         "title": "TermForge",
         "path": "bashcrawl/termforge/README.md",
         "rel": "termforge/README.md",
@@ -130,10 +145,250 @@
       },
       {
         "type": "section",
+        "title": "Courses",
+        "rel": "courses",
+        "pages": 31,
+        "children": [
+          {
+            "type": "section",
+            "title": "Navigator",
+            "rel": "courses/navigator",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Course",
+                "path": "bashcrawl/courses/navigator/course.md",
+                "rel": "courses/navigator/course.md",
+                "order": 1.0
+              },
+              {
+                "type": "page",
+                "title": "01 Where Am I",
+                "path": "bashcrawl/courses/navigator/01-where-am-i.md",
+                "rel": "courses/navigator/01-where-am-i.md"
+              },
+              {
+                "type": "page",
+                "title": "02 Look Around",
+                "path": "bashcrawl/courses/navigator/02-look-around.md",
+                "rel": "courses/navigator/02-look-around.md"
+              },
+              {
+                "type": "page",
+                "title": "03 Moving",
+                "path": "bashcrawl/courses/navigator/03-moving.md",
+                "rel": "courses/navigator/03-moving.md"
+              },
+              {
+                "type": "page",
+                "title": "04 Paths",
+                "path": "bashcrawl/courses/navigator/04-paths.md",
+                "rel": "courses/navigator/04-paths.md"
+              },
+              {
+                "type": "page",
+                "title": "05 Big Picture",
+                "path": "bashcrawl/courses/navigator/05-big-picture.md",
+                "rel": "courses/navigator/05-big-picture.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Pipelines",
+            "rel": "courses/pipelines",
+            "pages": 7,
+            "children": [
+              {
+                "type": "page",
+                "title": "Course",
+                "path": "bashcrawl/courses/pipelines/course.md",
+                "rel": "courses/pipelines/course.md",
+                "order": 3.0
+              },
+              {
+                "type": "page",
+                "title": "01 Grep",
+                "path": "bashcrawl/courses/pipelines/01-grep.md",
+                "rel": "courses/pipelines/01-grep.md"
+              },
+              {
+                "type": "page",
+                "title": "02 First Pipe",
+                "path": "bashcrawl/courses/pipelines/02-first-pipe.md",
+                "rel": "courses/pipelines/02-first-pipe.md"
+              },
+              {
+                "type": "page",
+                "title": "03 Sort And Uniq",
+                "path": "bashcrawl/courses/pipelines/03-sort-and-uniq.md",
+                "rel": "courses/pipelines/03-sort-and-uniq.md"
+              },
+              {
+                "type": "page",
+                "title": "04 Cut",
+                "path": "bashcrawl/courses/pipelines/04-cut.md",
+                "rel": "courses/pipelines/04-cut.md"
+              },
+              {
+                "type": "page",
+                "title": "05 Redirect",
+                "path": "bashcrawl/courses/pipelines/05-redirect.md",
+                "rel": "courses/pipelines/05-redirect.md"
+              },
+              {
+                "type": "page",
+                "title": "06 The Guild Report",
+                "path": "bashcrawl/courses/pipelines/06-the-guild-report.md",
+                "rel": "courses/pipelines/06-the-guild-report.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Reading",
+            "rel": "courses/reading",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Course",
+                "path": "bashcrawl/courses/reading/course.md",
+                "rel": "courses/reading/course.md",
+                "order": 2.0
+              },
+              {
+                "type": "page",
+                "title": "01 Cat And File",
+                "path": "bashcrawl/courses/reading/01-cat-and-file.md",
+                "rel": "courses/reading/01-cat-and-file.md"
+              },
+              {
+                "type": "page",
+                "title": "02 Head And Tail",
+                "path": "bashcrawl/courses/reading/02-head-and-tail.md",
+                "rel": "courses/reading/02-head-and-tail.md"
+              },
+              {
+                "type": "page",
+                "title": "03 Counting",
+                "path": "bashcrawl/courses/reading/03-counting.md",
+                "rel": "courses/reading/03-counting.md"
+              },
+              {
+                "type": "page",
+                "title": "04 Numbers And Pages",
+                "path": "bashcrawl/courses/reading/04-numbers-and-pages.md",
+                "rel": "courses/reading/04-numbers-and-pages.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Shell Craft",
+            "rel": "courses/shell-craft",
+            "pages": 7,
+            "children": [
+              {
+                "type": "page",
+                "title": "Course",
+                "path": "bashcrawl/courses/shell-craft/course.md",
+                "rel": "courses/shell-craft/course.md",
+                "order": 5.0
+              },
+              {
+                "type": "page",
+                "title": "01 Variables",
+                "path": "bashcrawl/courses/shell-craft/01-variables.md",
+                "rel": "courses/shell-craft/01-variables.md"
+              },
+              {
+                "type": "page",
+                "title": "02 Arithmetic",
+                "path": "bashcrawl/courses/shell-craft/02-arithmetic.md",
+                "rel": "courses/shell-craft/02-arithmetic.md"
+              },
+              {
+                "type": "page",
+                "title": "03 Aliases",
+                "path": "bashcrawl/courses/shell-craft/03-aliases.md",
+                "rel": "courses/shell-craft/03-aliases.md"
+              },
+              {
+                "type": "page",
+                "title": "04 Globs And Quotes",
+                "path": "bashcrawl/courses/shell-craft/04-globs-and-quotes.md",
+                "rel": "courses/shell-craft/04-globs-and-quotes.md"
+              },
+              {
+                "type": "page",
+                "title": "05 History",
+                "path": "bashcrawl/courses/shell-craft/05-history.md",
+                "rel": "courses/shell-craft/05-history.md"
+              },
+              {
+                "type": "page",
+                "title": "The Grimoire of Words of Power",
+                "path": "bashcrawl/courses/shell-craft/lab/grimoire.md",
+                "rel": "courses/shell-craft/lab/grimoire.md",
+                "folder": "courses/shell-craft/lab"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Workshop",
+            "rel": "courses/workshop",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Course",
+                "path": "bashcrawl/courses/workshop/course.md",
+                "rel": "courses/workshop/course.md",
+                "order": 4.0
+              },
+              {
+                "type": "page",
+                "title": "01 Make",
+                "path": "bashcrawl/courses/workshop/01-make.md",
+                "rel": "courses/workshop/01-make.md"
+              },
+              {
+                "type": "page",
+                "title": "02 Copy And Move",
+                "path": "bashcrawl/courses/workshop/02-copy-and-move.md",
+                "rel": "courses/workshop/02-copy-and-move.md"
+              },
+              {
+                "type": "page",
+                "title": "03 Remove",
+                "path": "bashcrawl/courses/workshop/03-remove.md",
+                "rel": "courses/workshop/03-remove.md"
+              },
+              {
+                "type": "page",
+                "title": "04 Permissions",
+                "path": "bashcrawl/courses/workshop/04-permissions.md",
+                "rel": "courses/workshop/04-permissions.md"
+              },
+              {
+                "type": "page",
+                "title": "05 Write",
+                "path": "bashcrawl/courses/workshop/05-write.md",
+                "rel": "courses/workshop/05-write.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
         "title": "Documentation",
         "rel": "docs",
         "index": "bashcrawl/docs/index.md",
-        "pages": 29,
+        "pages": 41,
         "children": [
           {
             "type": "page",
@@ -153,6 +408,12 @@
             "title": "Agent Mode Protocol Specification",
             "path": "bashcrawl/docs/agent-protocol.md",
             "rel": "docs/agent-protocol.md"
+          },
+          {
+            "type": "page",
+            "title": "Authoring Courses",
+            "path": "bashcrawl/docs/authoring-courses.md",
+            "rel": "docs/authoring-courses.md"
           },
           {
             "type": "page",
@@ -177,6 +438,12 @@
             "title": "Bashcrawl Observatory \u2014 Log & Screenshot Viewer",
             "path": "bashcrawl/docs/viewer.md",
             "rel": "docs/viewer.md"
+          },
+          {
+            "type": "page",
+            "title": "bashcrawl \u2014 Constitution",
+            "path": "bashcrawl/docs/constitution.md",
+            "rel": "docs/constitution.md"
           },
           {
             "type": "page",
@@ -234,9 +501,71 @@
           },
           {
             "type": "page",
+            "title": "The Bashcrawl Platform",
+            "path": "bashcrawl/docs/PLATFORM.md",
+            "rel": "docs/PLATFORM.md"
+          },
+          {
+            "type": "page",
             "title": "Web Frontend API Design (Phase 2 Proposal)",
             "path": "bashcrawl/docs/web-api-design.md",
             "rel": "docs/web-api-design.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 bashcrawl",
+            "rel": "docs/amendments",
+            "index": "bashcrawl/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 bashcrawl",
+                "path": "bashcrawl/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "bashcrawl/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "bashcrawl/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "bashcrawl/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "bashcrawl/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "bashcrawl/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "bashcrawl/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
           },
           {
             "type": "section",
@@ -274,13 +603,31 @@
             "type": "section",
             "title": "Schemas",
             "rel": "docs/schemas",
-            "pages": 3,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
                 "title": "Content Registry Contract (v1)",
                 "path": "bashcrawl/docs/schemas/content-registries.v1.md",
                 "rel": "docs/schemas/content-registries.v1.md"
+              },
+              {
+                "type": "page",
+                "title": "Events v1",
+                "path": "bashcrawl/docs/schemas/events.v1.md",
+                "rel": "docs/schemas/events.v1.md"
+              },
+              {
+                "type": "page",
+                "title": "Plugins v1",
+                "path": "bashcrawl/docs/schemas/plugin.v1.md",
+                "rel": "docs/schemas/plugin.v1.md"
+              },
+              {
+                "type": "page",
+                "title": "Rules v1",
+                "path": "bashcrawl/docs/schemas/rules.v1.md",
+                "rel": "docs/schemas/rules.v1.md"
               },
               {
                 "type": "page",

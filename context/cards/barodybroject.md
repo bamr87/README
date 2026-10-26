@@ -6,8 +6,8 @@ kind: app
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: c1a4961e2a49033d
+enrichment: heuristic
+source_fingerprint: 2f309bd74896ca48
 tags:
   - agricultural technology
   - azure
@@ -25,7 +25,7 @@ tags:
 
 # Barodybroject
 
-> Barodybroject is an active Django and React web app that generates and publishes AI-written parody news, paired with a Jekyll site and Azure deployment. Its 321-file documentation corpus (about 243,000 words) covers the source tree, a docs section, a "Forbidden Library" README collection, and infrastructure tooling, plus a PRD, CLAUDE.md, contributing guide, and changelog at the root. Open it to understand or extend the parody-generation pipeline, run the development quick start and tests, or work on the Azure deploy
+> Full-stack application platform with infrastructure, testing, and deployment tooling. Django + React web app that generates and publishes AI-written parody news, with a Jekyll site and Azure deploy.
 
 | | |
 |---|---|

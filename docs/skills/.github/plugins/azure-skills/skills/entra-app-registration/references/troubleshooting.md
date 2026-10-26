@@ -94,8 +94,7 @@ AADSTS65001: The user or administrator has not consented to use the application
    az ad app permission admin-consent --id $APP_ID
    ```
 
-2. **Request user consent (interactive flow):**
-   This requires the client app to have access to UI such as browser, terminal window, etc. Follow the best practices of your client app to implement the interactive flow.
+2. **Request user consent (interactive flow):** This requires the client app to have access to UI such as browser, terminal window, etc. Follow the best practices of your client app to implement the interactive flow.
 
 3. **Check API permissions in portal:**
    - Ensure permissions are added

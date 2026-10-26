@@ -23,8 +23,7 @@ Generates the GitHub Actions workflow + `staticwebapp.config.json` required by A
 ## Post-install steps
 
 1. Create the Static Web App in the Azure portal (or via `az staticwebapp create`).
-2. Copy the deployment token into the GitHub repository secret
-   `AZURE_STATIC_WEB_APPS_API_TOKEN`.
+2. Copy the deployment token into the GitHub repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN`.
 3. Push to `main` to trigger the first deployment.
 
 ## Documentation

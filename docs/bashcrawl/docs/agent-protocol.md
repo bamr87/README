@@ -247,12 +247,8 @@ The agent mode is designed for AI coding assistants (e.g., GitHub Copilot, Claud
 
 ### Key Design Decisions
 
-1. **Line-buffered I/O**: All output is line-buffered with explicit `flush=True`
-   so callers receive output immediately.
-2. **`READY>` sentinel**: Unambiguous signal that the agent is ready for the next
-   command, making it safe for automated parsing.
-3. **No alternate buffer**: The Textual app runs via `run_test()` (headless), so
-   it never enters the terminal's alternate screen buffer.
+1. **Line-buffered I/O**: All output is line-buffered with explicit `flush=True` so callers receive output immediately.
+2. **`READY>` sentinel**: Unambiguous signal that the agent is ready for the next command, making it safe for automated parsing.
+3. **No alternate buffer**: The Textual app runs via `run_test()` (headless), so it never enters the terminal's alternate screen buffer.
 4. **JSON status**: Machine-readable game state for programmatic decision-making.
-5. **SVG screenshots**: Visual snapshots for documentation, debugging, and
-   screenshot regression testing.
+5. **SVG screenshots**: Visual snapshots for documentation, debugging, and screenshot regression testing.

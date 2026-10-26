@@ -239,12 +239,9 @@ kill <PID>             # free the port
 
 ## Related
 
-- [Site Builder](/quickstart/site-builder/) — the guided path that runs these
-  prerequisite checks for you.
-- [Site Builder reference](/docs/features/site-builder/) — what the wizard
-  generates, the tools it exposes, and its safety boundaries.
-- [Jekyll Setup](/quickstart/jekyll-setup/) — the next step once these tools
-  are installed.
+- [Site Builder](/quickstart/site-builder/) — the guided path that runs these prerequisite checks for you.
+- [Site Builder reference](/docs/features/site-builder/) — what the wizard generates, the tools it exposes, and its safety boundaries.
+- [Jekyll Setup](/quickstart/jekyll-setup/) — the next step once these tools are installed.
 
 ---
 

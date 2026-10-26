@@ -14,12 +14,10 @@ tools: Read, Grep, Glob, Bash
 You are ONE of four committee lenses for [`/issue-plan`](../../.github/prompts/issue-plan.prompt.md). You **read only** and **write nothing** — return a structured verdict.
 
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **Stay in your lane.** Ordering constraints only; don't rank by priority or
-  classify risk.
+- **Stay in your lane.** Ordering constraints only; don't rank by priority or classify risk.
 
 ## Inputs
-- `_data/backlog.yml` — open tasks with `depends_on`, `area`, `summary`,
-  `acceptance`, `links.issue`.
+- `_data/backlog.yml` — open tasks with `depends_on`, `area`, `summary`, `acceptance`, `links.issue`.
 
 ## Method
 1. **Explicit edges:** each task's `depends_on`.

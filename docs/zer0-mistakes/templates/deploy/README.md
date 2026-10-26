@@ -29,8 +29,6 @@ Each subdirectory holds the static files (workflow YAML, Dockerfile, config snip
 ## Adding a new target
 
 1. Create `templates/deploy/<slug>/` with the assets.
-2. Add `scripts/lib/install/deploy/<slug>.sh` exporting the four hooks
-   (`deploy_<slug>_check_prereqs`, `_install`, `_verify`, `_doc_url`).
+2. Add `scripts/lib/install/deploy/<slug>.sh` exporting the four hooks (`deploy_<slug>_check_prereqs`, `_install`, `_verify`, `_doc_url`).
 3. Register the slug in `scripts/lib/install/deploy/registry.sh`.
-4. (Optional) Reference the slug under `deploy_targets:` in any
-   `templates/profiles/*.yml` profile that should suggest it.
+4. (Optional) Reference the slug under `deploy_targets:` in any `templates/profiles/*.yml` profile that should suggest it.

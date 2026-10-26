@@ -118,8 +118,7 @@ Lorsque le site s'exécute en mode développement (`theme: "jekyll-theme-zer0"`)
 
 La version et les détails de construction sont exposés via le volet **Réglages** (`_includes/components/info-section.html`), qui intègre `_includes/components/theme-info.html`. Ouvrez-le depuis :
 
-- L'**icône d'engrenage** dans l'en-tête (`_includes/core/header.html`,
-  `data-bs-target="#info-section"`).
+- L'**icône d'engrenage** dans l'en-tête (`_includes/core/header.html`, `data-bs-target="#info-section"`).
 - Le bouton **Info** dans le pied de page (`_includes/core/footer.html`).
 
 Dans le panneau, la section *Thème et construction* de l'onglet **Site** affiche le thème, la version de Jekyll, l'heure de la dernière construction et le dépôt. L'include `theme-info.html` affiche le nom du thème depuis `site.remote_theme` / `site.theme` et les métadonnées de construction depuis `jekyll.version`, `jekyll.environment` et `site.time`.

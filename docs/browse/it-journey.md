@@ -9,7 +9,7 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **945 pages** across **95 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **956 pages** across **98 sections** (max depth 7).
 
 - **[Repository & tooling](../it-journey/redirects/README.md)** <small>(233)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
@@ -266,12 +266,13 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
         - [Weekly SEO Review: Dec 15 - Dec 21, 2025](../it-journey/TODO/seo/reports/weekly-review-2025-12-20.md)
         - [📅 Content Freshness Report](../it-journey/TODO/seo/reports/content-freshness-2025-12-20.md)
 - [Welcome to IT-Journey.dev: Where Heroes are Made! 🧙‍♂️⚔️](../it-journey/index.md)
-- [AGENTS.md](../it-journey/AGENTS.md)
 - [Changelog](../it-journey/CHANGELOG.md)
 - [Citizen Code of Conduct](../it-journey/CODE_OF_CONDUCT.md)
-- [CLAUDE.md — Claude Code guide for IT-Journey](../it-journey/CLAUDE.md)
 - [Contributing to IT-Journey](../it-journey/CONTRIBUTING.md)
-- [IT-Journey](../it-journey/PRD.md)
+- [it-journey (AGENTS)](../it-journey/AGENTS.md)
+- [it-journey (CLAUDE)](../it-journey/CLAUDE.md)
+- [IT-Journey (PRD)](../it-journey/PRD.md)
+- [it-journey tools](../it-journey/tools/README.md)
 - [PRD Machine Requirement Conflicts - Resolution Report](../it-journey/RESOLUTION_REPORT.md)
 - [Roadmap](../it-journey/roadmap.md)
 - [Security Policy](../it-journey/SECURITY.md)
@@ -287,20 +288,30 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Digs — Section Guide](../it-journey/_data/brand/sections/dig.md)
       - [Docs — Section Guide](../it-journey/_data/brand/sections/docs.md)
       - [Quests — Section Guide](../it-journey/_data/brand/sections/quest.md)
-- **[Documentation](../it-journey/docs/README.md)** <small>(39)</small>
-  - [IT-Journey Developer Documentation](../it-journey/docs/README.md)
+- **[Documentation](../it-journey/docs/README.md)** <small>(49)</small>
+  - [it-journey documentation](../it-journey/docs/README.md)
   - [Developer Contribution Guide](../it-journey/docs/CONTRIBUTING_DEVELOPER.md)
+  - [it-journey — Constitution](../it-journey/docs/constitution.md)
   - [Notes Workbench — the design](../it-journey/docs/notes/WORKBENCH.md)
   - [Prose Oneline Universal](../it-journey/docs/prose-oneline-universal.md)
+  - [Roadmap](../it-journey/docs/ROADMAP.md)
   - [Testing Frameworks](../it-journey/docs/testing/TESTING_FRAMEWORKS.md)
   - **[Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)** <small>(3)</small>
     - [Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)
     - [Agent Failure RCA — <date> <short title>](../it-journey/docs/agents/rca-template.md)
     - [Agent Instruction Changelog](../it-journey/docs/agents/instructions-changelog.md)
+  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(3)</small>
+    - [Amendments — it-journey](../it-journey/docs/amendments/README.md)
+    - [0001 — Ratify the constitution](../it-journey/docs/amendments/0001-ratify-constitution.md)
+    - [NNNN — Title of the amendment](../it-journey/docs/amendments/0000-template.md)
   - **Architecture** <small>(3)</small>
     - [About Directory Reorganization Summary](../it-journey/docs/architecture/ABOUT_REORGANIZATION_SUMMARY.md)
     - [IT-Journey Repository Structure](../it-journey/docs/architecture/REPOSITORY_STRUCTURE.md)
     - [Jekyll Implementation Details](../it-journey/docs/architecture/JEKYLL_IMPLEMENTATION.md)
+  - **[Architecture Decision Records](../it-journey/docs/adr/README.md)** <small>(3)</small>
+    - [Architecture Decision Records](../it-journey/docs/adr/README.md)
+    - [ADR 0001 — Record architecture decisions](../it-journey/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR NNNN — Title in sentence case](../it-journey/docs/adr/0000-template.md)
   - **Archive** <small>(3)</small>
     - **Link Health 2025** <small>(3)</small>
       - [IT-Journey Link Health Analysis - Executive Summary](../it-journey/docs/archive/link-health-2025/ANALYSIS_SUMMARY.md)
@@ -318,6 +329,9 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Quest Build Plan: Complete Placeholder Quest System](../it-journey/docs/quests/QUEST_BUILD_PLAN.md)
     - [Quest Environment Matrix — the refactoring plan](../it-journey/docs/quests/ENVIRONMENT_MATRIX.md)
     - [Quest Walkthrough Video Framework](../it-journey/docs/quests/VIDEO_FRAMEWORK.md)
+  - **Reference** <small>(2)</small>
+    - [Make targets](../it-journey/docs/reference/make-targets.md)
+    - [Workflow reference](../it-journey/docs/reference/workflows.md)
   - **Scripts** <small>(4)</small>
     - [PRD MACHINE Documentation](../it-journey/docs/scripts/PRD_MACHINE.md)
     - [Script Directory Cleanup Summary](../it-journey/docs/scripts/CLEANUP_SUMMARY.md)

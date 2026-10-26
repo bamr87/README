@@ -38,12 +38,10 @@ deploy_targets:
 1. Copy an existing YAML and edit the fields.
 2. The filename stem **must** match the `name:` field.
 3. `./scripts/bin/install list-profiles` will pick it up automatically.
-4. To wire a new `legacy_flag`, add support in `install.sh` (or wait for the
-   Phase 4 deploy modules to consume `steps:` declaratively).
+4. To wire a new `legacy_flag`, add support in `install.sh` (or wait for the Phase 4 deploy modules to consume `steps:` declaratively).
 
 ## Notes
 
 - These YAMLs are intentionally simple (key/value + flat lists) so the bash
 3.2 loader can parse them with grep/awk/sed — no external `yq` or python dependency required.
-- Future phases will extend the schema with `steps:` (manifest-driven file
-  copies) and `deploy:` (target-specific configuration overlays).
+- Future phases will extend the schema with `steps:` (manifest-driven file copies) and `deploy:` (target-specific configuration overlays).

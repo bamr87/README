@@ -68,9 +68,6 @@ directement les mises en page et les styles. Contrôle maximal ; suivez [Forker 
 
 ## Étapes suivantes
 
-- Nouveau dans la structure du thème ? Lisez
-  [l'aperçu de prise en main](/docs/getting-started/).
-- Prêt à publier ? Chaque parcours se termine par la
-  référence [Déployer sur GitHub Pages](/docs/deployment/github-pages/).
-- Vous voulez personnaliser l'apparence ? Consultez le
-  [Guide du thème](/docs/getting-started/theme-guide/).
+- Nouveau dans la structure du thème ? Lisez [l'aperçu de prise en main](/docs/getting-started/).
+- Prêt à publier ? Chaque parcours se termine par la référence [Déployer sur GitHub Pages](/docs/deployment/github-pages/).
+- Vous voulez personnaliser l'apparence ? Consultez le [Guide du thème](/docs/getting-started/theme-guide/).

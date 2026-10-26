@@ -16,18 +16,15 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 
 ## Universal executor rules (every lane inherits these)
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or
-  credentials; never run `env`/`printenv` or read dotfiles.
+- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or credentials; never run `env`/`printenv` or read dotfiles.
 - **CODEOWNERS is a wall.** Never edit `version.rb`, the gemspec, `Gemfile*`,
   `package*.json`, `CHANGELOG.md`, release configs, `.github/workflows|actions/`,
   `_plugins/`, or `scripts/bin|lib/`. If the task needs one → **STOP**.
 - **One task → one PR.** Minimal, surgical.
-- **Lane escape → STOP.** If the task really needs a *fix* (not a test), hand back
-  so `/issue-implement` re-routes to the code/theme lane.
+- **Lane escape → STOP.** If the task really needs a *fix* (not a test), hand back so `/issue-implement` re-routes to the code/theme lane.
 
 ## This lane
-- **Load:** `.github/instructions/{testing,visual-evidence}.instructions.md`, plus
-  the [`validate-build`](../../.github/skills/validate-build/SKILL.md) skill.
+- **Load:** `.github/instructions/{testing,visual-evidence}.instructions.md`, plus the [`validate-build`](../../.github/skills/validate-build/SKILL.md) skill.
 - **Characterize, don't paper over.** A regression test must **fail before** the
 fix and **pass after** — demonstrate both. For UI behaviour, use the `test/visual/*.spec.js` + evidence-kit pattern.
 - **Done when:** the new test fails on the unfixed code and passes on the fixed

@@ -15,25 +15,14 @@ To give you an idea of what's needed:
 
 **You'll need to**
 
-1.  If you are behind a NAT/PAT, you might want to do vortex level0, and
-    complete this level from vortex, as otherwise your known IP address
-    and port information changes.
+1.  If you are behind a NAT/PAT, you might want to do vortex level0, and complete this level from vortex, as otherwise your known IP address and port information changes.
 2.  Examine how the RC4 keys are generated, and how they are applied
-3.  [mmap2()][] some memory. You will get the address where the memory
-    was allocated in the response from the server. mmap2() takes its
-    arguments from registers, not the stack.
-4.  [read()][] into that allocated buffer to get the file name. The
-    source fd that you need will be 4. (0-2 = stdin/stdout/stderr, 3
-    will be network socket, so 4 in next in line. You will want to read
-    in enough data for the filename "instructions"
-5.  Write the filename ("instructions" sans quotes) to the allocated
-    memory location to your client socket
-6.  [open()][] the "instructions" file. You will get the fd it was
-    allocated to in response
-7.  [read()][] from the allocated file descriptor to your allocated
-    memory
-8.  [write()][] from the allocated buffer to the socket on the server
-    (fd 4)
+3.  [mmap2()][] some memory. You will get the address where the memory was allocated in the response from the server. mmap2() takes its arguments from registers, not the stack.
+4.  [read()][] into that allocated buffer to get the file name. The source fd that you need will be 4. (0-2 = stdin/stdout/stderr, 3 will be network socket, so 4 in next in line. You will want to read in enough data for the filename "instructions"
+5.  Write the filename ("instructions" sans quotes) to the allocated memory location to your client socket
+6.  [open()][] the "instructions" file. You will get the fd it was allocated to in response
+7.  [read()][] from the allocated file descriptor to your allocated memory
+8.  [write()][] from the allocated buffer to the socket on the server (fd 4)
 
 Once all that is done, you will have the contents of the instructions file printed to your screen.
 

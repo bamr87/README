@@ -1,24 +1,24 @@
 {
   "corpus": {
-    "file_count": 1260,
-    "fingerprint": "21f1a12d63ec4c61",
+    "file_count": 1287,
+    "fingerprint": "ab9a25fe8b65c679",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 15085845
+    "total_bytes": 15215563
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
       "Overview",
-      "\ud83d\udcca Quick Comparison: IT-Journey vs Traditional Learning",
-      "\ud83d\ude80 Getting Started",
-      "\ud83d\udcda Content Structure",
-      "\ud83d\udee0\ufe0f Key Features",
-      "\ud83d\udd27 Technical Implementation",
-      "\ud83d\udd17 Link Health Guardian v3.0",
-      "\ud83d\udcc8 Learning Outcomes",
-      "\u2753 Frequently Asked Questions",
-      "\ud83d\udcd6 Documentation"
+      "Features",
+      "Quick start",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing",
+      "Related projects",
+      "Changelog",
+      "License"
     ],
     "readme": "README.md",
     "summary": "Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.",
@@ -36,12 +36,12 @@
   ],
   "navigation": {
     "browse": "docs/browse/it-journey.md",
-    "fingerprint": "197f709f5b4f72b6",
+    "fingerprint": "b0b935db8f69a2ba",
     "index": "it-journey/index.md",
     "max_depth": 7,
-    "pages": 945,
+    "pages": 956,
     "present": true,
-    "sections": 95,
+    "sections": 98,
     "skipped": 17,
     "title": "IT Journey",
     "top_sections": [
@@ -61,7 +61,7 @@
       },
       {
         "index": "it-journey/docs/README.md",
-        "pages": 39,
+        "pages": 49,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -100,7 +100,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 1260
+      "it-journey": 1287
     },
     "code_languages": [
       "bash",
@@ -112,7 +112,7 @@
       "mermaid",
       "text"
     ],
-    "indexed_documents": 1260,
+    "indexed_documents": 1287,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -130,7 +130,7 @@
       "ci-cd",
       "agentic-ai"
     ],
-    "total_words": 1927154
+    "total_words": 1944926
   },
   "schema_version": "1.0",
   "signals": {
@@ -161,12 +161,16 @@
         "name": "pages"
       },
       {
-        "doc_count": 207,
+        "doc_count": 221,
         "name": ".cms"
       },
       {
         "doc_count": 152,
         "name": "test"
+      },
+      {
+        "doc_count": 49,
+        "name": "docs"
       },
       {
         "doc_count": 45,
@@ -177,11 +181,7 @@
         "name": "redirects"
       },
       {
-        "doc_count": 39,
-        "name": "docs"
-      },
-      {
-        "doc_count": 36,
+        "doc_count": 38,
         "name": ".claude"
       },
       {

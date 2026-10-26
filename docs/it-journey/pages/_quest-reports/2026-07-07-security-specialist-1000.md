@@ -49,8 +49,7 @@ Plan order (window 1 of 2; `stats.total_quests` = 9):
 tracing workflow is broken as written: `{​% raw %​}`/`{​% endraw %​}` tags leaked *inside* every `${​{ }​}` expression → immediate bash `bad substitution`.
 2. ❌ **Forging the Agent's Arsenal: Tool Selection & Permissions** — 57% · Data
 artifacts are clean, but the only runnable command (validation script) doesn't exist, and it frames markdown prompts as real least-privilege *enforcement*.
-3. ✅ **Cloud Computing Fundamentals: IaaS, PaaS, SaaS** — 80% · Accurate, working
-   verify commands across all three CLIs; two secondary objectives are never taught.
+3. ✅ **Cloud Computing Fundamentals: IaaS, PaaS, SaaS** — 80% · Accurate, working verify commands across all three CLIs; two secondary objectives are never taught.
 4. ⚠️ **Forging the Arsenal: Tool Use & Environment** (codex-02 hub) — 67% · Core
 lab genuinely works and outputs matched exactly, but the closing "delete `exit 1`, watch exit=0" exercise actually causes an infinite loop.
 5. ❌ **The MCP Conclave: Mastering Model Context Protocol Servers** — 37% · Deprecated
@@ -67,20 +66,17 @@ exact `run:` text and ran it: `run_id=${​% raw %​}{​{ github.run_id }​}{
 `gh api --help` confirms `-f/--raw-field` always sends a *string*; the command uses it for `reviewers` (JSON array), `deployment_branch_policy` (JSON object), and `wait_timer` (integer), which the API would reject (422). Correct form is `--input -`.
 - **`stamp_artifact.py` → PASSED.** Ran, prepended the metadata header, printed success.
 - **Mermaid network diagram → PASSED** (rendered to SVG).
-- **`python3 scripts/validate_quest.py --quest q3` → FAILED.** `No such file or
-  directory` — script never provided or linked anywhere in the quest.
+- **`python3 scripts/validate_quest.py --quest q3` → FAILED.** `No such file or directory` — script never provided or linked anywhere in the quest.
 
 ### 2. Forging the Agent's Arsenal — Tool Selection (57%, fail) — ran 3/1 runnable, 2 passed / 1 failed / 1 reasoned
 - **`dependency-updater-tools.yml` → PASSED** (valid YAML, loaded into expected dict).
 - **`.github/copilot-instructions.md` block → PASSED** (valid Markdown, drops in clean).
-- **`python3 scripts/validate_quest.py --quest q4` → FAILED.** Same nonexistent script
-  as quest 1; the *only* literally runnable command in the quest cannot run.
+- **`python3 scripts/validate_quest.py --quest q4` → FAILED.** Same nonexistent script as quest 1; the *only* literally runnable command in the quest cannot run.
 - Content-accuracy finding (score 2): the quest presents natural-language "Forbidden
 Tools" prose in `copilot-instructions.md` as `least-privilege` *enforcement*; the engine flags this as a soft prompt guardrail, not a hard boundary — reasoned, not a command failure.
 
 ### 3. Cloud Computing Fundamentals (80%, pass) — ran 5/5 runnable, 3 passed / 2 failed / 4 skipped / 2 reasoned
-- **`aws --version` / `az version` / `gcloud version` → PASSED** against real
-  pre-installed CLIs (aws-cli 2.35.11, azure-cli 2.87.0, Google Cloud SDK 574.0.0).
+- **`aws --version` / `az version` / `gcloud version` → PASSED** against real pre-installed CLIs (aws-cli 2.35.11, azure-cli 2.87.0, Google Cloud SDK 574.0.0).
 - **`brew` / `winget` install blocks → SKIPPED** (macOS/Windows-only; correctly gated
   in collapsible OS sections). **Linux `curl … | sudo bash` / `sudo ./aws/install`
   → SKIPPED** per sandbox policy (needs sudo + network).
@@ -95,8 +91,7 @@ matched the documented "Expected" blocks **byte-for-byte** (two transient failur
 valid; `permissions:` block + `agent-task.yml` valid GitHub Actions YAML). Note: this quest correctly wraps its YAML in `{​% raw %​}…{​% endraw %​}` blocks (lines 152–160, 273–299) — the exact pattern quest 1 got wrong.
 - **Closing "break the wrapper — delete `exit 1`, watch exit=0" exercise → FAILED.**
 The engine removed only the `exit 1` line and re-ran: the `until` loop ran **forever**, re-escalating on every pass, force-killed after 60s (exit 143). The quest's claimed `exit=0` is factually wrong — and this is the chapter's central safety lesson.
-- Content-accuracy also flags the unverifiable **"GH-600"** certification identifier
-  (exact "20–25%" domain weight, sub-skills 2.1–2.4) — reasoned, author should verify.
+- Content-accuracy also flags the unverifiable **"GH-600"** certification identifier (exact "20–25%" domain weight, sub-skills 2.1–2.4) — reasoned, author should verify.
 
 ### 5. The MCP Conclave — MCP Servers (37%, fail) — ran 5/6 runnable, 1 passed / 4 failed / 2 skipped / 4 reasoned
 - **`npx @modelcontextprotocol/server-github` (bash) → PASSED but DEPRECATED.** Returned
@@ -107,8 +102,7 @@ allowed as the first element of a pipeline` on `$env:GITHUB_PERSONAL_ACCESS_TOKE
 @modelcontextprotocol/sdk` pulled current v1.29.0, `node src/index.js` crashed: `Error: Schema is missing a method literal` at `Server.setRequestHandler`. The string-based `setRequestHandler("tools/list", …)` API (source lines 224, 245) no longer exists in the SDK.
 - **`.vscode/settings.json` `github.copilot.chat.mcpServers` key → REASONED wrong.**
 Parses as JSON but the settings key doesn't match current VS Code MCP format (`mcp.servers` / `.vscode/mcp.json` `servers`).
-- **`python3 scripts/validate_quest.py --quest q5` → FAILED** (nonexistent script, third
-  occurrence). `gh secret set` correctly SKIPPED (not authenticated).
+- **`python3 scripts/validate_quest.py --quest q5` → FAILED** (nonexistent script, third occurrence). `gh secret set` correctly SKIPPED (not authenticated).
 
 ## 🐞 Issues Found
 
@@ -147,10 +141,8 @@ pipe/assignment sequencing (ParserError) + missing `-y` on `npx`. *Fix:* set the
 
 - **low · Cloud Fundamentals (Q3) · Chapter 2 AWS commands** — `aws sts
 get-caller-identity` and `describe-availability-zones` error with `Unable to locate credentials` for anyone without the optional account; no warning that this is expected.
-- **low · Tool-Selection (Q2) · Exercise 4.1, line 116** — Depends on "the dependency
-  updater agent you designed in Q1"; no inline fallback for a windowed learner.
-- **low · MCP Conclave (Q5) · Chapter 5** — `export GITHUB_TOKEN=…` lands in shell
-  history; suggest a git-ignored `.env` for local dev, not just "prod".
+- **low · Tool-Selection (Q2) · Exercise 4.1, line 116** — Depends on "the dependency updater agent you designed in Q1"; no inline fallback for a windowed learner.
+- **low · MCP Conclave (Q5) · Chapter 5** — `export GITHUB_TOKEN=…` lands in shell history; suggest a git-ignored `.env` for local dev, not just "prod".
 
 ## 🔗 Chain Continuity
 

@@ -119,17 +119,9 @@ Self-Operating Website" campaign; its real prerequisite is *Chapter II — The P
 - **What I ran vs. reasoned:** I ran only *read-only inspection* commands on the host
 to substantiate reasoned issues — reading the four quest sources and the `azure-jekyll-deploy.sh` script (confirming `main()` orders `safe_mkdir` before `parse_args` and that `LOG_FILE` defaults under `/var/log`). All `passed`/`failed` snippet outcomes in §Evidence are the sandbox engine's, not mine. Everything I derived from source is labeled **reasoned**; the one `docker -it` failure is labeled **tested** because the engine executed it.
 - **Coverage & limits:**
-  - AWS Essentials ran **2/8** runnable snippets — the rest legitimately need live
-    AWS credentials the sandbox intentionally lacks, so completeness/teardown gaps
-    are **reasoned**, not executed.
-  - **Azure Ascension is unscored** — the engine hit `max_turns` (40) and produced no
-    dimension scores or snippet coverage. I did **not** substitute a number; it is
-    reported as a coverage gap plus one corroborating reasoned script issue. It needs
-    a re-run (ideally with the deploy-script log path made user-writable, or the
-    engine turn budget raised) before it can be scored.
-  - IaC (9 ran) and War Machine (7/7) are the well-evidenced quests; my confidence in
-    their pass verdicts is **high**.
+  - AWS Essentials ran **2/8** runnable snippets — the rest legitimately need live AWS credentials the sandbox intentionally lacks, so completeness/teardown gaps are **reasoned**, not executed.
+  - **Azure Ascension is unscored** — the engine hit `max_turns` (40) and produced no dimension scores or snippet coverage. I did **not** substitute a number; it is reported as a coverage gap plus one corroborating reasoned script issue. It needs a re-run (ideally with the deploy-script log path made user-writable, or the engine turn budget raised) before it can be scored.
+  - IaC (9 ran) and War Machine (7/7) are the well-evidenced quests; my confidence in their pass verdicts is **high**.
 - **Confidence:** High on the two executed passes; medium on the AWS warn (sound but
 provably incomplete on teardown); the Azure fail is **not** a content judgment — confidence that it's a *harness/log-path* problem rather than broken content is medium, based on the script source I read.
-- **Scope discipline:** one slice, one report. No quest content edited, no branch,
-  commit, push, or merge — the workflow handles git. Read-only over all content.
+- **Scope discipline:** one slice, one report. No quest content edited, no branch, commit, push, or merge — the workflow handles git. Read-only over all content.

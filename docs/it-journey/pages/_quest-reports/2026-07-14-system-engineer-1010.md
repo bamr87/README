@@ -54,23 +54,19 @@ Per-dimension (engine, 1–5 scale): commands_work **3**, content_accuracy **4**
 All evidence below comes from the sealed `walk-evidence.json` (execute mode, session `839f69f8…`, 22 turns, 268.7s). Snippet coverage for the quest: **available 6 (2 runnable) · recorded 16 · ran 12 · passed 11 · failed 1 · skipped 1 · reasoned 3.**
 
 **Chapter 1 — backlog selection & claim-back (passed):**
-- `yq '.items[] | select(.status == "ready") | .id' .forge/backlog.yml | head -n1`
-  → returned `forge-001` from the sample two-item backlog. ✅
+- `yq '.items[] | select(.status == "ready") | .id' .forge/backlog.yml | head -n1` → returned `forge-001` from the sample two-item backlog. ✅
 - `yq e '(.items[] | select(.id == env(ITEM_ID))).status = "claimed"' -i
 .forge/backlog.yml` → flipped `forge-001` from `ready` to `claimed`, staged the file, wrote `item_id=forge-001` to `GITHUB_OUTPUT`. ✅
-- Matrix-filtered select (`… and .collection == "docs"`) → returned `forge-001`
-  for `docs`, empty for `about` (correct per-lane idle behavior). ✅
+- Matrix-filtered select (`… and .collection == "docs"`) → returned `forge-001` for `docs`, empty for `about` (correct per-lane idle behavior). ✅
 - Brief extraction for the `claude -p` prompt → returned the expected brief. ✅
 
 **Chapter 2 — the Prime Directive gate `verify.py` (5/5 passed):**
 - `file_exists` **true** claim → `All claims verified. Forge may strike.`, exit 0. ✅
 - `file_exists` **false** claim → `PRIME DIRECTIVE VIOLATION`, exit 1 (fail-closed). ✅
-- `command_succeeds` allowlisted but genuinely failing (`make build`, no Makefile)
-  → correctly reported as a violation, exit 1. ✅
+- `command_succeeds` allowlisted but genuinely failing (`make build`, no Makefile) → correctly reported as a violation, exit 1. ✅
 - `command_succeeds` **injection-style** target off the allowlist
 (`make definitely-not-a-target; echo pwned`) → rejected purely by the string-equality allowlist **before** reaching `subprocess.run`; payload inert, exit 1. ✅
-- **unknown** claim kind (`link_resolves`) → fails closed with a violation, exit 1,
-  matching the "unknown claim type fails closed" rule. ✅
+- **unknown** claim kind (`link_resolves`) → fails closed with a violation, exit 1, matching the "unknown claim type fails closed" rule. ✅
 
 **Concurrency & workflow YAML (passed):**
 - The `concurrency` excerpt and the full `content-forge.yml` both parse under
@@ -83,17 +79,14 @@ of the complete workflow). The engine simulated the exact step with **no `draft/
 **Reasoned (not executed):**
 - `claude -p … --allowedTools "Write,Edit,Read" --output-format text` — not invoked
 (needs API/network); all flags validated against the installed `claude --help`, plus `claude setup-token` confirmed a real subcommand. 🧠
-- `sudo wget -qO /usr/local/bin/yq …` install step — not run (needs sudo + network
-  write); reasoned as correct-but-redundant boilerplate (ubuntu-latest ships yq). 🧠
+- `sudo wget -qO /usr/local/bin/yq …` install step — not run (needs sudo + network write); reasoned as correct-but-redundant boilerplate (ubuntu-latest ships yq). 🧠
 
 **Skipped:**
-- The Mermaid Quest Network diagram — the sandbox had no usable browser sandbox
-  (Chromium/AppArmor); syntax was manually reviewed as valid `graph LR`. ⏭️
+- The Mermaid Quest Network diagram — the sandbox had no usable browser sandbox (Chromium/AppArmor); syntax was manually reviewed as valid `graph LR`. ⏭️
 
 ## 🐞 Issues Found
 
-- **HIGH · The Content Forge · "The Complete Forge Workflow", gate step (line 317),
-  vs. agent prompt (lines 306–310) & the "brief in, draft out" contract (line 150).**
+- **HIGH · The Content Forge · "The Complete Forge Workflow", gate step (line 317), vs. agent prompt (lines 306–310) & the "brief in, draft out" contract (line 150).**
   *Observed:* The gate runs `cat draft/claims.json | python .forge/verify.py`, but
 the agent is only told to write `$DRAFT_PATH` (=`pages/_<collection>/<item_id>.md`) "plus a claims.json" — the `draft/claims.json` path is never defined, created, or reconciled anywhere. Reproduced: with no `draft/` dir, `cat` fails and `verify.py` throws an unhandled `JSONDecodeError` traceback instead of the showcased clean violation message. This breaks the Mastery Challenge's second checkbox ("a verification step aborts… and opens no PR when you plant a deliberately false claim") for anyone following it literally. *Suggested fix:* Pin one path and make the prompt and gate agree — e.g. prompt says *"Write ONLY `$DRAFT_PATH` plus `draft/claims.json`"* and the workflow `mkdir -p draft` (or `run-if-exists` guard), **or** change the gate to read a path derived from `$DRAFT_PATH`'s directory (e.g. `pages/_${​{ matrix.collection }​}/claims-${ITEM_ID}.json`).
 

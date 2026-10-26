@@ -46,11 +46,9 @@ All results below are from the sealed execute-engine run (`mode: execute`, `exec
 **failed**. Engine finding: "`$RANDOM` produced 26288, 13907 on two runs, but every following command hardcodes `my-quest-bucket-12345` — a bucket that was never created … a learner copy-pasting verbatim gets `NoSuchBucket`/`AccessDenied` on the very next line." Confirmed against quest source lines 309–323.
 - **`aws ec2 run-instances … --dry-run`** → skipped/verified: "parsed successfully,
 failed only at NoCredentials stage, confirming valid CLI syntax including the `resolve:ssm:` AMI alias."
-- **IAM least-privilege policy JSON** → **passed**: validated as syntactically valid
-  JSON, grants match stated intent (`s3:GetObject`/`ListBucket` on one bucket).
+- **IAM least-privilege policy JSON** → **passed**: validated as syntactically valid JSON, grants match stated intent (`s3:GetObject`/`ListBucket` on one bucket).
 - **`chmod 400 quest-key.pem`** → **passed** (file mechanics work locally).
-- IAM/EC2/VPC provisioning sequences → skipped (need a live billable account, by the
-  quest's own design), each subcommand's flags verified real via `aws <svc> <cmd> help`.
+- IAM/EC2/VPC provisioning sequences → skipped (need a live billable account, by the quest's own design), each subcommand's flags verified real via `aws <svc> <cmd> help`.
 - Safety scored **5/5**: explicit live-billing warning, root-MFA warning, and the
 "most common cloud breach is a public S3 bucket" warning paired with `put-public-access-block`.
 
@@ -60,8 +58,7 @@ and even if `bundle` were resolvable there is no Gemfile anywhere reachable, sin
 - **`bundle exec jekyll build`** → **failed** (same root cause, exit 127).
 - **`../../scripts/deployment/azure-jekyll-deploy.sh setup`** → **failed** (exit 127):
 "`No such file or directory` … the quest never states from which directory the script should be invoked, so the relative path `../../` is only valid if the learner is standing in the exact quest markdown's own folder."
-- **`… deploy --app-name <…> --github-repo <…>`** → **failed**: script not found; its
-  flag contract "cannot be verified anywhere in this quest or its linked files."
+- **`… deploy --app-name <…> --github-repo <…>`** → **failed**: script not found; its flag contract "cannot be verified anywhere in this quest or its linked files."
 - `commands_work` scored **1/5**. Safety still **4/5** (no destructive local commands).
 
 ### 3. Infrastructure as Code — 81 (pass) · ran 9/6 runnable snippets (7✓ 2✗), 2 skipped, 1 reasoned
@@ -69,28 +66,23 @@ and even if `bundle` were resolvable there is no Gemfile anywhere reachable, sin
 "downloaded hashicorp/aws v5.100.0 … `terraform validate` returned 'Success! The configuration is valid.'"
 - **Full init/plan/apply/destroy lifecycle** → **passed** via a substitute
 `hashicorp/local` config (no AWS creds in sandbox): "plan showed '+ create … Plan: 1 to add, 0 to change, 0 to destroy', apply succeeded, destroy produced 'Destroy complete! Resources: 1 destroyed.'" — matching the quest text verbatim.
-- **Idempotency text** → **passed**: a second apply reproduced "No changes. Your
-  infrastructure matches the configuration." verbatim.
-- **variables.tf/outputs.tf + `-var` + `terraform output`** → **passed** end-to-end on
-  the substitute config.
+- **Idempotency text** → **passed**: a second apply reproduced "No changes. Your infrastructure matches the configuration." verbatim.
+- **variables.tf/outputs.tf + `-var` + `terraform output`** → **passed** end-to-end on the substitute config.
 - **`docker run --rm -it … hashicorp/terraform:latest version`** → **failed**: "'the
 input device is not a TTY' … removing `-it` succeeded and printed 'Terraform v1.15.7'." A real gotcha for non-interactive/CI shells.
-- **S3 remote-backend `terraform init`** → **failed** on "No valid credential sources
-  found" (expected without live AWS), HCL syntax itself confirmed valid.
+- **S3 remote-backend `terraform init`** → **failed** on "No valid credential sources found" (expected without live AWS), HCL syntax itself confirmed valid.
 
 ### 4. The War Machine — 38 (fail) · ran 9/7 runnable snippets (6✓ 3✗), 1 reasoned
 - **`lease.sh` concurrent same-HEAD race** → **failed** (the headline): engine ran the
 exact `lease.sh` against a real local bare-repo remote with two independent clones on the identical HEAD SHA — "Runner C's push created the ref (exit 0). Runner D's identical push also returned exit 0 with 'Everything up-to-date' instead of being rejected … BOTH runners believe they won and would both call `work.sh` on the same task." Rejection only worked when SHAs were forced to differ.
 - **`ruff check scripts/`** (CI lint tier) → **failed**: "`E401 Multiple imports on
 one line` on `import json, sys` in both build_backlog.py and decide.py … the lint tier would go red out of the box."
-- **`pytest tests/unit -q`** (CI unit tier) → **failed**: "exits with code 5 ('no
-  tests ran') because the quest never provides any content for `tests/unit/`."
+- **`pytest tests/unit -q`** (CI unit tier) → **failed**: "exits with code 5 ('no tests ran') because the quest never provides any content for `tests/unit/`."
 - **`python3 scripts/build_backlog.py | python3 scripts/decide.py`** → **failed**:
 "`ModuleNotFoundError: No module named 'decide_core'` because the quest never states where to save the decide_core.py snippet" (no `# path` header). Worked only after guessing to place it in `scripts/`.
 - **Fifty-case simulation `pytest tests/sim/test_dispatch_sim.py`** → **passed** 50/50,
 deterministic across 5 runs — **but** the Mastery Challenge's "prove the test has teeth" sabotage (remove `threading.Lock()`) still passed **20/20**, so the promised failure never reproduced (CPython GIL + tiny critical section).
-- Chapter 1 (Task/rice_score/decide, build_backlog.py, dispatch.sh, work.sh single-run
-  lease) all → **passed**.
+- Chapter 1 (Task/rice_score/decide, build_backlog.py, dispatch.sh, work.sh single-run lease) all → **passed**.
 
 ## 🐞 Issues Found
 

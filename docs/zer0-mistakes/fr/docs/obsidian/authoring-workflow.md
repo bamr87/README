@@ -41,11 +41,9 @@ proposera `note-template.md` depuis `pages/_notes/_templates/`. Le sélectionner
 4. **Déposez des images** dans l'éditeur — Obsidian les enregistre sous
 `assets/images/notes/` (configuré dans `.obsidian/app.json`), soit exactement là où `⟦11⟧` est résolu sur le site.
 5. **Validez et poussez.**
-   - Avec le **plugin Obsidian Git** : `Ctrl/Cmd + P` → *Source control: Commit
-     all changes* → *Push*.
+   - Avec le **plugin Obsidian Git** : `Ctrl/Cmd + P` → *Source control: Commit all changes* → *Push*.
    - Depuis le terminal : `git add / git commit / git push` standard.
-6. **GitHub Pages** reconstruit automatiquement. En ~1 minute, la nouvelle note
-   est en ligne au permalink déclaré dans son frontmatter.
+6. **GitHub Pages** reconstruit automatiquement. En ~1 minute, la nouvelle note est en ligne au permalink déclaré dans son frontmatter.
 
 ## Modifier du contenu existant
 

@@ -43,8 +43,7 @@ For a multi-week breaking **2.0** that must stabilize alongside 1.x, create a *t
 
 The rules above only work if they are followed *before* you start editing. They prevent the most common failure mode: unrelated changes piling up uncommitted on `main` and then needing to be untangled into branches after the fact.
 
-1. **Branch first, then edit.** Create the branch off an up-to-date `main`
-   *before* touching any file. Never make changes directly on `main`.
+1. **Branch first, then edit.** Create the branch off an up-to-date `main` *before* touching any file. Never make changes directly on `main`.
 
    ```bash
    git switch main && git pull --ff-only
@@ -66,10 +65,8 @@ things at once, give each branch its own checkout. The Docker dev server can kee
 
 4. **Keep generated & lock files out of feature PRs.** A change to `_layouts/`,
 `_includes/`, `scripts/`, etc. must not also carry an unrelated regenerated artifact:
-   - `_data/content_statistics.yml` is plugin-generated — let it ride in its own
-     `chore` commit (or regenerate it in CI), never bundled into a feature diff.
-   - `Gemfile.lock` changes belong to the release flow (see Semantic
-     Versioning), not feature PRs.
+   - `_data/content_statistics.yml` is plugin-generated — let it ride in its own `chore` commit (or regenerate it in CI), never bundled into a feature diff.
+   - `Gemfile.lock` changes belong to the release flow (see Semantic Versioning), not feature PRs.
 
 Stage files **by path**, not with `git add -A`, and review `git status --short` before committing so stray modifications don't leak in.
 
@@ -196,8 +193,7 @@ Then bump to next patch with a fix — never re-publish the yanked version.
 ## Hard Rules
 
 - Never edit directly on `main` — branch first, one concern per branch/PR.
-- Never bundle a regenerated artifact (`_data/content_statistics.yml`) or a
-  `Gemfile.lock` change into an unrelated feature PR.
+- Never bundle a regenerated artifact (`_data/content_statistics.yml`) or a `Gemfile.lock` change into an unrelated feature PR.
 - Never let `Gemfile.lock` and `version.rb` disagree.
 - Never bump version outside a release commit.
 - Never tag before commit + push.

@@ -50,5 +50,4 @@ discovery fails, or the provider reports `supports_model_discovery = False`) it 
 
 ## Related Paths
 - Incoming: Called via Django's management command system (`python manage.py`)
-- Outgoing: Interact with Django models, the database, and AI providers through
-  [`parodynews.ai`](../../ai/README.md)
+- Outgoing: Interact with Django models, the database, and AI providers through [`parodynews.ai`](../../ai/README.md)

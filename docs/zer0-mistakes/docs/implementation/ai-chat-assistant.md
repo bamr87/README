@@ -41,14 +41,11 @@ A page-aware AI chat assistant built on the **Claude Messages API** (`POST /v1/m
 
 The widget sends `{model, max_tokens, system, messages, tools?, stream: true}`:
 
-- `system` is the top-level system prompt (page context + grounding rules +
-  GitHub guidance) — not a `system`-role message.
-- `messages` alternate `user`/`assistant`; assistant turns store the full
-  content-block array so `tool_use` blocks survive in history.
+- `system` is the top-level system prompt (page context + grounding rules + GitHub guidance) — not a `system`-role message.
+- `messages` alternate `user`/`assistant`; assistant turns store the full content-block array so `tool_use` blocks survive in history.
 - The SSE stream is parsed from `content_block_start` /
 `content_block_delta` (`text_delta`, `input_json_delta`) / `content_block_stop` / `message_delta` events; text deltas render incrementally, and `tool_use` inputs are accumulated from partial JSON.
-- No `temperature` is sent — current Claude models (Opus 4.7+) reject
-  sampling parameters.
+- No `temperature` is sent — current Claude models (Opus 4.7+) reject sampling parameters.
 - Direct mode adds `x-api-key`, `anthropic-version`, and
 `anthropic-dangerous-direct-browser-access: true` (browser CORS) headers; proxy mode sends no credentials from the browser at all.
 
@@ -70,8 +67,7 @@ The static site never holds an Anthropic credential — the proxy does. The bund
 Code / Claude.ai login, kept alive automatically. The worker sends `Authorization: Bearer <sk-ant-oat…>` + `anthropic-beta: oauth-2025-04-20`, caches the live credential in a Cloudflare **KV** namespace, and refreshes via the OAuth2 `refresh_token` grant (`client_id` / `token_endpoint` supplied as config — never hardcoded). The chat handler retries once on a `401` after forcing a refresh.
 2. **Long-lived OAuth token** (`CLAUDE_CODE_OAUTH_TOKEN`) — a non-rotating token
 from `claude setup-token`, sent as the same Bearer + beta header with no KV/refresh. This is the **local development** path and works on the Worker too.
-3. **API key** (`ANTHROPIC_API_KEY`) — `x-api-key`. Appropriate for a
-   workspace-scoped key with a spend cap on a public deployment.
+3. **API key** (`ANTHROPIC_API_KEY`) — `x-api-key`. Appropriate for a workspace-scoped key with a spend cap on a public deployment.
 
 Modes 1 and 2 use a personal, account-scoped credential, so the worker must sit behind **Cloudflare Access** (`REQUIRE_CF_ACCESS`) — only you can reach it even though the site is public.
 
@@ -112,10 +108,8 @@ Assistant messages render through an escape-first markdown subset (bold, inline 
 
 - Proxy mode keeps both secrets (Anthropic key, GitHub token) server-side.
 - `ALLOWED_ORIGINS` on the worker gates who can spend the API budget.
-- The GitHub token should be a fine-grained PAT scoped to the one site
-  repository (Issues/Contents/Pull requests RW).
-- Direct mode remains for local experimentation only; the key is visible in
-  the page source.
+- The GitHub token should be a fine-grained PAT scoped to the one site repository (Issues/Contents/Pull requests RW).
+- Direct mode remains for local experimentation only; the key is visible in the page source.
 - Tool execution is human-in-the-loop by construction (confirmation cards).
 
 ## GitHub Pages Compatibility

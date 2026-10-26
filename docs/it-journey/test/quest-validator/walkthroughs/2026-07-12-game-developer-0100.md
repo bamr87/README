@@ -44,20 +44,16 @@ All statuses below are from commands the sealed execute engine actually ran in t
 ### Quest 1 — The Proving Grounds (86, pass · ran 4/5 runnable snippets)
 
 - `mkdir -p scripts/ci` → **passed** (created dir, exit 0).
-- Emitter half `emit()/finding()` → **passed** — produced sorted, `sort_keys=True`
-  JSONL, returned `rc=1` for an error-severity finding, matching the determinism claim.
+- Emitter half `emit()/finding()` → **passed** — produced sorted, `sort_keys=True` JSONL, returned `rc=1` for an error-severity finding, matching the determinism claim.
 - Complete assembled `scripts/ci/verify.py` (copied end-to-end) → **passed** — clean
 repo exits 0 with empty `findings.jsonl`; a file missing `author`/`description` produced two `fm-required-key` errors + one `link-broken` warning and exit 1; two runs were **byte-identical** (verified with `diff`); fixing the file flipped back to exit 0 — exactly the Mastery Challenge's break-fix cycle.
-- `pip install pyyaml && python scripts/ci/verify.py` → **passed** (pyyaml 6.0.3 already
-  satisfied; ran regardless).
+- `pip install pyyaml && python scripts/ci/verify.py` → **passed** (pyyaml 6.0.3 already satisfied; ran regardless).
 - **Discovered robustness bug (edge-case test beyond the quest's own walkthrough):** a
 front-matter block with a missing closing `---`, or an unterminated quote (`title: "test`), crashes the whole harness with an unhandled `yaml.scanner.ScannerError` traceback instead of a clean finding. Reproduced twice.
 - `.github/workflows/verify.yml` → **reasoned** — valid YAML, current action versions
 (`checkout@v4`, `setup-python@v5`, `upload-artifact@v4`), correct `if: ${{ always() }}` semantics; not executable on real GitHub Actions from the sandbox.
-- Mermaid quest-network diagram → **reasoned** — valid syntax; CLI render blocked only
-  by missing container browser sandbox.
-- Content-accuracy note: all six Resource Codex / Reproduce-It links returned **HTTP
-  200** when fetched.
+- Mermaid quest-network diagram → **reasoned** — valid syntax; CLI render blocked only by missing container browser sandbox.
+- Content-accuracy note: all six Resource Codex / Reproduce-It links returned **HTTP 200** when fetched.
 
 ### Quest 2 — Source Control Sorcery (80, pass · ran 4/5 runnable snippets)
 
@@ -67,23 +63,17 @@ front-matter block with a missing closing `---`, or an unterminated quote (`titl
 documented expected failure** — died with `fatal: could not read Username for 'https://github.com': No such device or address`, exactly as the quest's 🔑 Heads-up callout predicts.
 - Chapter 2 `git checkout -b feature/user-authentication … merge … branch -d` →
   **passed** — fast-forward merge (`auth.js | 1 +`) and safe branch delete succeeded.
-- Platform install blocks (brew / choco+PowerShell / apt·yum·pacman+sudo) → **skipped**
-  — wrong OS / require sudo; git 2.54.0 already present so the underlying tool is fine.
+- Platform install blocks (brew / choco+PowerShell / apt·yum·pacman+sudo) → **skipped** — wrong OS / require sudo; git 2.54.0 already present so the underlying tool is fine.
 - Chapter 3 PR template + Chapter 4 workflow → **reasoned/parsed**: the
 `ci-cd-pipeline.yml` **parsed** as valid YAML, but if wired into the Ch.1–2 repo, `npm ci` fails immediately — `npm error … can only install with an existing package-lock.json` — because the quest never creates a `package.json`. Also pins `node-version: '18'` (Node 18 Hydrogen reached EOL 2025-04-30, >1yr before today).
 
 ### Quest 3 — Profile Themes (78, warn · ran 5/2 recorded runnable snippets)
 
-- Step 3 CSS template (placeholders filled with cyberpunk values) → **passed** —
-  brace-balanced, valid custom properties + `prefers-color-scheme` media query.
-- Step 5 YAML `profile:\n  theme: YOUR_THEME` → **passed** — parses to
-  `{'profile': {'theme': 'cyberpunk'}}`.
-- Step 5 Liquid (raw/endraw stripped) → **passed** — rendered
-  `<div class="contributor-sheet contributor-theme--cyberpunk">`.
-- Step 6 Liquid `<link>` chain → **passed** — rendered
-  `<link rel="stylesheet" href="/assets/css/themes/contributor-theme-cyberpunk.css">`.
-- Step 8 `git checkout -b … && git add … && git commit` → **passed** in a scratch repo
-  with a real theme file; `git push origin` not exercised (no remote) — standard fork/PR.
+- Step 3 CSS template (placeholders filled with cyberpunk values) → **passed** — brace-balanced, valid custom properties + `prefers-color-scheme` media query.
+- Step 5 YAML `profile:\n  theme: YOUR_THEME` → **passed** — parses to `{'profile': {'theme': 'cyberpunk'}}`.
+- Step 5 Liquid (raw/endraw stripped) → **passed** — rendered `<div class="contributor-sheet contributor-theme--cyberpunk">`.
+- Step 6 Liquid `<link>` chain → **passed** — rendered `<link rel="stylesheet" href="/assets/css/themes/contributor-theme-cyberpunk.css">`.
+- Step 8 `git checkout -b … && git add … && git commit` → **passed** in a scratch repo with a real theme file; `git push origin` not exercised (no remote) — standard fork/PR.
 - Step 7 `bundle exec jekyll serve` → **skipped** — no `bundle`/Gemfile in the isolated
 sandbox; the quest assumes it runs inside the real IT-Journey repo (prerequisite quest sets that up).
 - **Accuracy contradiction (computed directly):** of the five Step 2 example palettes,
@@ -132,15 +122,9 @@ skill's step 2, `walk-evidence.json` already existed, so I did **not** re-run th
 - **What I ran vs. reasoned:** I ran no quest commands myself — all `passed`/`failed`/
 `skipped` statuses above come from the sealed engine's sandbox run. My contribution is the **linked-journey pass (step 3)**: I `Read` all three quest sources in plan order and reasoned about ordering, prerequisites, and beginner friction. Everything I mark `reasoned` is from quoted source lines or the engine's own `reasoned` verdicts, not from execution.
 - **Coverage & limits honestly stated:**
-  - This is **3 of 8 quests** (the second rotating window); the level is not fully swept
-    in this run — the perfection-loop ledger accumulates the rest over other runs.
-  - Snippet coverage per engine: Proving Grounds 4/5 runnable ran (3 reasoned: workflow
-    YAML, mermaid, checks-half needing the emitter); Source Control Sorcery 4/5 (3
-    platform installs skipped for OS/sudo, 2 doc templates reasoned); Profile Themes 5
-    ran / 1 skipped (`bundle exec jekyll serve`, no Jekyll env) / 2 reasoned.
-  - **Not exercisable in-sandbox** (environment limits, not defects): real GitHub Actions
-    runs, branch-protection / required-status-check promotion, `git push` to real remotes,
-    mermaid rendering, and the full Jekyll build. These remain `reasoned`.
+  - This is **3 of 8 quests** (the second rotating window); the level is not fully swept in this run — the perfection-loop ledger accumulates the rest over other runs.
+  - Snippet coverage per engine: Proving Grounds 4/5 runnable ran (3 reasoned: workflow YAML, mermaid, checks-half needing the emitter); Source Control Sorcery 4/5 (3 platform installs skipped for OS/sudo, 2 doc templates reasoned); Profile Themes 5 ran / 1 skipped (`bundle exec jekyll serve`, no Jekyll env) / 2 reasoned.
+  - **Not exercisable in-sandbox** (environment limits, not defects): real GitHub Actions runs, branch-protection / required-status-check promotion, `git push` to real remotes, mermaid rendering, and the full Jekyll build. These remain `reasoned`.
 - **Confidence:** High on the executed findings (core commands demonstrably ran and
 matched the quests) and on the three flagged defects (each reproduced or computed directly by the engine). Medium on the CI-workflow and branch-protection portions, which were validated by parsing/inspection only. The chain-continuity conclusions are reasoned from source + frontmatter, labeled as such throughout.
 

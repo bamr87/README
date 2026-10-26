@@ -6,8 +6,8 @@ kind: site
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: 21f1a12d63ec4c61
+enrichment: heuristic
+source_fingerprint: ab9a25fe8b65c679
 tags:
   - agentic-ai
   - automation
@@ -25,7 +25,7 @@ tags:
 
 # IT-Journey
 
-> IT-Journey is an active, open-source Jekyll site that teaches IT and software development through gamified, hands-on quests, taking learners from "zer0 to her0." Its corpus of 1,260 documents (about 1.9 million words) is mostly the 652-page pages section of quests, blog posts, and walkthroughs. Those pages cover topics such as web fundamentals, automation, DevOps, CI/CD, and agentic AI, alongside project documentation, data files, and repository tooling. Open it to work through structured learning quests or to contribute content, using its CONTRIBUTING, AGENTS, and CLAUDE guides.
+> Educational IT platform with quests, blog posts, and technical documentation. Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1260 docs |
+| Corpus | `docs/it-journey` - 1287 docs |
 | External | no |
 
 ## Signals
@@ -43,16 +43,16 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,927,154 words across 1260 indexed documents
+- ~1,944,926 words across 1287 indexed documents
 - code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
 
 ## Navigation
 
-945 published pages in 95 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
+956 published pages in 98 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
 
 - **Repository & tooling** (233 pages)
 - **Data** (9 pages)
-- **Documentation** (39 pages)
+- **Documentation** (49 pages)
 - **Home** (652 pages)
 - **Includes** (2 pages)
 

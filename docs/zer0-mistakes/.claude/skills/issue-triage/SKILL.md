@@ -19,8 +19,7 @@ The single source of loop behavior for the zer0-mistakes issue autopilot, used i
 
 ## 0. Read the policy first
 
-- `.issues/config.yml` — disposition rules, the label namespace, the
-  `resolve_allow_globs` (docs/pages only), per-run `limits`.
+- `.issues/config.yml` — disposition rules, the label namespace, the `resolve_allow_globs` (docs/pages only), per-run `limits`.
 - `.issues/budget.yml` — backpressure caps.
 - `CLAUDE.md` + `AGENTS.md` + `.github/instructions/*` — zer0's non-negotiables
 (branch off main, conventional commits, never bump version, Docker-first build, theme code needs visual review). The autopilot inherits all of them.
@@ -55,8 +54,7 @@ Pick the ONE docs batch you were asked to resolve. Confirm each issue is open, u
 
 ## 5. Validate, then hand off
 
-- Triager: ensure `.issues/plan.json` + the dated worklist are written (CI uploads
-  them as an artifact).
+- Triager: ensure `.issues/plan.json` + the dated worklist are written (CI uploads them as an artifact).
 - Resolver: build the docs, then `gh pr create`; write the PR URL to
 `pr-result.txt`. Never leave a half-applied edit — revert partial changes if you bail.
 

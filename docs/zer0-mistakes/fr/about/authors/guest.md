@@ -29,8 +29,7 @@ L'**Auteur invité** crédite les contributions ponctuelles et les premières pa
 3. **Ajoutez le front matter** (modèle ci-dessous) et rédigez votre texte. Visez **≥ 300
 mots**, un `title` de **30 à 60 caractères**, une `description` de **120 à 160 caractères**, 3 à 10 `keywords`, et une image `preview` (voir le [générateur d'image d'aperçu](⟦14⟧)).
 4. **Prévisualisez en local** avec `docker-compose up` → <http://localhost:4000>.
-5. **Ouvrez une pull request.** Une revue de contenu automatisée ainsi qu'une revue par un mainteneur
-   vérifient le SEO, l'accessibilité, les liens et l'exactitude avant la fusion.
+5. **Ouvrez une pull request.** Une revue de contenu automatisée ainsi qu'une revue par un mainteneur vérifient le SEO, l'accessibilité, les liens et l'exactitude avant la fusion.
 
 Créditez une contribution ponctuelle à l'auteur invité avec `author: guest`.
 
@@ -56,8 +55,7 @@ draft: false
 
 Vous contribuez une fois, ou vous prévoyez d'écrire régulièrement ? Obtenez votre propre signature, avatar et une page de profil agrégée :
 
-1. **Ajoutez-vous à [`_data/authors.yml`](https://github.com/bamr87/zer0-mistakes/blob/main/_data/authors.yml)**
-   avec une clé unique :
+1. **Ajoutez-vous à [`_data/authors.yml`](https://github.com/bamr87/zer0-mistakes/blob/main/_data/authors.yml)** avec une clé unique :
 
    ```yaml
    yourkey:
@@ -85,8 +83,7 @@ Si un texte est généré ou assisté par IA, **déclarez-le**. Marquez l'auteur
 
 ## Ce que vérifie la revue
 
-- **SEO / AIEO** — longueurs de `title` et `description`, `keywords`, slug, et une
-  image d'aperçu.
+- **SEO / AIEO** — longueurs de `title` et `description`, `keywords`, slug, et une image d'aperçu.
 - **Accessibilité** — texte alternatif des images, ordre des titres et texte de lien descriptif.
 - **Exactitude & finition** — liens fonctionnels, code qui s'exécute et une voix cohérente.
 - Une entrée **`CHANGELOG.md`** pour le contenu visible par l'utilisateur, le cas échéant.

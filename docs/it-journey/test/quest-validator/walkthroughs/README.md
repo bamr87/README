@@ -47,18 +47,13 @@ Produced by `scripts/quest/walkthrough_screenshots.mjs` (Playwright). Run it loc
 
 ## Report contract (sections every report keeps)
 
-1. **Frontmatter** — `title`, `date`, `character`, `level`, `theme`, `tier`,
-   `quest_count`, `mode` (`execute`/`review`), `overall_verdict`, `session` notes.
+1. **Frontmatter** — `title`, `date`, `character`, `level`, `theme`, `tier`, `quest_count`, `mode` (`execute`/`review`), `overall_verdict`, `session` notes.
 2. **🎯 Session Summary** — the slice, how many quests walked, headline verdict, why.
 3. **🗺️ The Journey** — the ordered quest list, one line of verdict + takeaway each.
-4. **🔬 Evidence** — per quest: commands actually run and their real outcome
-   (`passed`/`failed`/`skipped`/`reasoned`) + snippet coverage. The proof.
-5. **🐞 Issues Found** — each issue: severity · quest · where · what was observed ·
-   suggested fix. "No blocking issues" is a valid, explicit result.
-6. **🔗 Chain Continuity** — does the slice hold together as a learning path for this
-   character: prerequisite gaps, ordering, does quest N set up quest N+1.
-7. **🧠 Reasoning & Method** — what was run vs. reasoned about, the mode/limits, and
-   the agent's confidence. Honest coverage is mandatory.
+4. **🔬 Evidence** — per quest: commands actually run and their real outcome (`passed`/`failed`/`skipped`/`reasoned`) + snippet coverage. The proof.
+5. **🐞 Issues Found** — each issue: severity · quest · where · what was observed · suggested fix. "No blocking issues" is a valid, explicit result.
+6. **🔗 Chain Continuity** — does the slice hold together as a learning path for this character: prerequisite gaps, ordering, does quest N set up quest N+1.
+7. **🧠 Reasoning & Method** — what was run vs. reasoned about, the mode/limits, and the agent's confidence. Honest coverage is mandatory.
 
 ## Honesty rule
 

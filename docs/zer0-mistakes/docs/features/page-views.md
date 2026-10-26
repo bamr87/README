@@ -113,10 +113,8 @@ page_views:
   count_key : 'views'
 ```
 
-- `{path}` in the URL is replaced with the URL-encoded page path. Without it,
-  the path is appended as `?path=…`.
-- `GET`/`HEAD` methods send no body; anything else sends `{"path": "/some/page/"}`
-  as JSON.
+- `{path}` in the URL is replaced with the URL-encoded page path. Without it, the path is appended as `?path=…`.
+- `GET`/`HEAD` methods send no body; anything else sends `{"path": "/some/page/"}` as JSON.
 - The response is read at `count_key` (`views` by default, dotted paths
 supported). Anything that isn't a finite number is treated as "no count", and the badge stays hidden.
 - Requests are `credentials: "omit"`, so the endpoint needs permissive CORS.

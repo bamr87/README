@@ -43,8 +43,7 @@ All evidence below is from the sealed execute-mode run (`walk-evidence.json` / `
 
 **Quest 1 — `pages/_quests/0010/side-quest-contribution-calendar.md`**
 
-- ✅ **`passed` — Background YAML (`contribution_calendar` example data):** parsed
-  cleanly with PyYAML; valid list-of-weeks shape.
+- ✅ **`passed` — Background YAML (`contribution_calendar` example data):** parsed cleanly with PyYAML; valid list-of-weeks shape.
 - ❌ **`failed` — Step 1 include (`_includes/contributor/contribution_calendar.html`):**
 the block was copy-pasted verbatim and rendered with the `liquid` gem (v5.13.0). Output was the **literal, un-executed tag text** (e.g. `{% assign calendar = include.calendar %}`), producing "zero interactivity, no cells, nothing but escaped tag text." When the engine *stripped* the per-tag `{% raw %}/{% endraw %}` wrappers, the same logic rendered correctly — sample commits `3/0/7/20/1` produced `calendar-medium/zero/high/max/low`, confirming the bucket thresholds (`0 / <3 / <7 / <15 / else`) are correct.
 - ✅ **`passed` — Step 2 CSS (`assets/css/contributor-profile.css`):** copied into a

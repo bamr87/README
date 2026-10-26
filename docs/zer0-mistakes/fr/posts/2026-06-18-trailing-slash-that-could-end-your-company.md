@@ -53,10 +53,8 @@ Anodin ? Le Titanic a été coulé par un écart anodin entre un navire et un pe
 
 - **Normalisez une fois, à la périphérie, de façon déterministe.** Un hôte canonique unique, une
 politique de barre oblique finale, zéro chaîne. Chaque saut est une fenêtre par laquelle un attaquant s'introduit.
-- **Mettez le chemin complet dans votre clé de cache**, et ne laissez jamais une redirection varier selon un
-  en-tête non inclus dans la clé.
-- **Établissez une liste d'autorisation des cibles de redirection.** Si une redirection peut pointer hors origine, supposez qu'elle
-  finira par le faire, à 3 h du matin, un jour férié.
+- **Mettez le chemin complet dans votre clé de cache**, et ne laissez jamais une redirection varier selon un en-tête non inclus dans la clé.
+- **Établissez une liste d'autorisation des cibles de redirection.** Si une redirection peut pointer hors origine, supposez qu'elle finira par le faire, à 3 h du matin, un jour férié.
 
 Une barre oblique finale n'est pas de la ponctuation. C'est un aveu que votre gestion des URLs a des opinions que vous n'avez jamais auditées.
 

@@ -46,10 +46,8 @@ Trivial? The Titanic was sunk by a trivial gap between a ship and some ice.
 
 - **Normalize once, at the edge, deterministically.** One canonical host, one
 trailing-slash policy, zero chains. Every hop is a window an attacker climbs through.
-- **Put the full path in your cache key**, and never let a redirect vary on an
-  unkeyed header.
-- **Allowlist redirect targets.** If a redirect can point off-origin, assume it
-  eventually will, at 3 a.m., on a holiday.
+- **Put the full path in your cache key**, and never let a redirect vary on an unkeyed header.
+- **Allowlist redirect targets.** If a redirect can point off-origin, assume it eventually will, at 3 a.m., on a holiday.
 
 A trailing slash is not punctuation. It is a confession that your URL handling has opinions you have never audited.
 

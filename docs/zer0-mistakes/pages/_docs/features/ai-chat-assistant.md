@@ -58,8 +58,7 @@ The proxy can authenticate to Claude two ways (auto-detected from which secrets 
 
 - **Claude Code connector (OAuth)** — use your Claude Code / Claude.ai login
 token (`sk-ant-oat…`) instead of an API key. Best for a **private/personal** chat: the proxy sends a Bearer token, refreshes it automatically (KV-cached), and must sit behind **Cloudflare Access** so only you can use it — the token spends your personal account. See the [chat-proxy README](https://github.com/bamr87/zer0-mistakes/tree/main/templates/deploy/chat-proxy) for the OAuth setup.
-- **API key** — set `ANTHROPIC_API_KEY` on the proxy instead. Best for a
-  **public** site (use a workspace-scoped key with a spend cap).
+- **API key** — set `ANTHROPIC_API_KEY` on the proxy instead. Best for a **public** site (use a workspace-scoped key with a spend cap).
 
 ## Configuration
 
@@ -86,8 +85,7 @@ ai_chat:
 - `proxy_ready: false` keeps the widget hidden unless your proxy is deployed.
 - `strict_context: true` grounds answers to the current page; the GitHub
 tools still work because grounding only restricts how questions are answered.
-- `model: 'claude-opus-5-5'` — any current Claude model ID works; the proxy
-  template can pin the model server-side so clients cannot change it.
+- `model: 'claude-opus-5-5'` — any current Claude model ID works; the proxy template can pin the model server-side so clients cannot change it.
 
 ## GitHub Actions from the Chat
 
@@ -136,8 +134,7 @@ No client-side Anthropic key is required in proxy mode.
 A static Jekyll site can't hold a secret, so local dev runs a small **dev proxy** that executes the same Worker logic on Node and reads your credential from `.env`:
 
 1. Get a long-lived Claude Code token (Claude Pro/Max): `claude setup-token`.
-2. Add it to `.env` (git-ignored): `CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-…`
-   (or set `ANTHROPIC_API_KEY` instead).
+2. Add it to `.env` (git-ignored): `CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-…` (or set `ANTHROPIC_API_KEY` instead).
 3. Run it alongside `docker-compose up`:
 
    ```bash
@@ -187,10 +184,8 @@ bundle exec jekyll serve \
 
 - **Streaming**: responses render token-by-token over SSE.
 - **Strict grounding**: answers are constrained to page metadata and content.
-- **Out-of-scope fallback**: a configured fallback message is used when
-  context is missing.
-- **Safe markdown rendering**: assistant output supports a small markdown
-  subset without unsafe HTML execution.
+- **Out-of-scope fallback**: a configured fallback message is used when context is missing.
+- **Safe markdown rendering**: assistant output supports a small markdown subset without unsafe HTML execution.
 
 ## Troubleshooting
 
@@ -202,19 +197,15 @@ bundle exec jekyll serve \
 
 ### Requests fail in browser
 
-1. Proxy endpoint URL is correct and returns CORS headers for your origin
-   (`ALLOWED_ORIGINS` in the worker).
+1. Proxy endpoint URL is correct and returns CORS headers for your origin (`ALLOWED_ORIGINS` in the worker).
 2. Proxy holds a valid `ANTHROPIC_API_KEY`.
-3. Direct mode: the key is valid and the model ID exists (e.g.
-   `claude-opus-5-5`).
+3. Direct mode: the key is valid and the model ID exists (e.g. `claude-opus-5-5`).
 
 ### Issue/PR actions don't work
 
 1. `ai_chat.github.enabled` is `true` (and the chips appear in the panel).
-2. `proxy` mode: the worker has `GITHUB_TOKEN` + `GITHUB_REPOSITORY` set and
-   the token has Issues/Contents/Pull requests read-write on the repo.
-3. `url` mode: pop-ups are allowed for your site (the pre-filled form opens
-   in a new tab).
+2. `proxy` mode: the worker has `GITHUB_TOKEN` + `GITHUB_REPOSITORY` set and the token has Issues/Contents/Pull requests read-write on the repo.
+3. `url` mode: pop-ups are allowed for your site (the pre-filled form opens in a new tab).
 
 ### Replies are too generic
 

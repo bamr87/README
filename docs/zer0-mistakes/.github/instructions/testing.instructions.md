@@ -55,12 +55,9 @@ Snapshot baselines live in `test/visual/snapshots/` and are committed to the rep
 
 When adding a new Playwright spec:
 
-- Use helpers in `test/visual/fixtures.js` (`waitForJekyll`, `setSkin`,
-  `gotoBeforeScrollSpy`) instead of raw `page.goto(..., 'networkidle')`.
-- Avoid `page.waitForTimeout()` — wait on a deterministic condition
-  (attribute change, event, `expect.poll`).
-- If the spec relies on visible UI in a Bootstrap tab, **activate the
-  tab and wait for `.tab-pane.active` to be visible** before interacting.
+- Use helpers in `test/visual/fixtures.js` (`waitForJekyll`, `setSkin`, `gotoBeforeScrollSpy`) instead of raw `page.goto(..., 'networkidle')`.
+- Avoid `page.waitForTimeout()` — wait on a deterministic condition (attribute change, event, `expect.poll`).
+- If the spec relies on visible UI in a Bootstrap tab, **activate the tab and wait for `.tab-pane.active` to be visible** before interacting.
 - Mark known product bugs with `test.fixme(...)` and a `// TODO:` comment
 linking to the tracking issue. Never delete a failing test to make CI green.
 

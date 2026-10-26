@@ -104,13 +104,11 @@ If migrating from the previous complex URL configuration:
    - `portfolio`
    - `dg_port`
 
-2. **Update custom variables**: If you have custom Liquid templates that reference the old URL
-   structure, update them to use:
+2. **Update custom variables**: If you have custom Liquid templates that reference the old URL structure, update them to use:
    - `{{ site.url }}{{ site.baseurl }}` for full site URL
    - `{{ site.baseurl }}` for relative paths
 
-3. **Test thoroughly**: After migration, test both local development and production builds to
-   ensure all links work correctly.
+3. **Test thoroughly**: After migration, test both local development and production builds to ensure all links work correctly.
 
 ## Troubleshooting
 

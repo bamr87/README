@@ -14,16 +14,14 @@ Open `index.html`. It loads the design-system bundle (`_ds_bundle.js`) for the s
 
 - **Navbar** (`Navbar.jsx`) — fixed/sticky bar, `bg-body-tertiary`, brand cluster
 (wizard logo + title + subtitle), primary nav, and the utility controls: search with `/` hint, **light/dark toggle**, **skin switcher** (all 7 skins + default), and a GitHub button.
-- **Hero** (`Hero.jsx`) — solid `bg-primary` block, white `display-4` headline,
-  CTA cluster, and the wizard hero art in a rounded, shadowed 4:3 frame.
+- **Hero** (`Hero.jsx`) — solid `bg-primary` block, white `display-4` headline, CTA cluster, and the wizard hero art in a rounded, shadowed 4:3 frame.
 - **Sections** (`Sections.jsx`) — feature-pill quick links, the three-up
 **features grid** (reuses `FeatureCard`), the **Get Started** install cards (Fork / Remote-theme / Docker), and a multi-column footer.
 
 ## Interactions
 
 - Toggle the moon/sun icon to switch **light ↔ dark** (`data-bs-theme`).
-- Open the palette menu to apply any **skin** (`data-theme-skin`) live — primary,
-  accent, links, and borders all re-point.
+- Open the palette menu to apply any **skin** (`data-theme-skin`) live — primary, accent, links, and borders all re-point.
 
 ## Fidelity notes
 

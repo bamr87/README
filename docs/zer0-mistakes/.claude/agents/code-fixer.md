@@ -17,15 +17,12 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 
 ## Universal executor rules (every lane inherits these)
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **No secrets / no env.** Never read, echo, or commit env vars, tokens, model
-  identifiers, or credentials; never run `env`/`printenv` or read dotfiles.
+- **No secrets / no env.** Never read, echo, or commit env vars, tokens, model identifiers, or credentials; never run `env`/`printenv` or read dotfiles.
 - **CODEOWNERS is a wall.** Never edit `version.rb`, the gemspec, `Gemfile*`,
   `package*.json`, `CHANGELOG.md`, release configs, `.github/workflows|actions/`,
   `_plugins/`, or `scripts/bin|lib/`. If the task needs one → **STOP**, hand back.
-- **One task → one PR.** Minimal, surgical. An adjacent bug → file ONE new backlog
-  task, don't expand scope.
-- **Lane escape → STOP.** If the work is really content/UI/tests/infra, hand back so
-  `/issue-implement` can re-route.
+- **One task → one PR.** Minimal, surgical. An adjacent bug → file ONE new backlog task, don't expand scope.
+- **Lane escape → STOP.** If the work is really content/UI/tests/infra, hand back so `/issue-implement` can re-route.
 
 ## This lane
 - **Load:** `.github/instructions/{includes,layouts,scripts}.instructions.md` as they

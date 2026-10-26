@@ -40,16 +40,14 @@ All rows below come from commands the execute engine actually ran in its disposa
 Per-dimension: commands_work **4**, content_accuracy **4**, completeness **4**, clarity **4**, structure **5**, safety **5**.
 
 - `mkdir -p scripts/ci` → **passed** — directory created.
-- Emitter half (`emit`/`finding`) → **passed** — "emit() correctly wrote sorted,
-  deterministic JSONL and returned exit code 1 for an error-severity finding."
+- Emitter half (`emit`/`finding`) → **passed** — "emit() correctly wrote sorted, deterministic JSONL and returned exit code 1 for an error-severity finding."
 - Complete assembled `python scripts/ci/verify.py` → **passed** — "in a clean
 synthetic Jekyll-style repo it exits 0 with an empty findings.jsonl; deleting a required front-matter key (`author`) reproduced the exact Mastery Challenge scenario — exit 1, findings.jsonl contains `{"rule": "fm-required-key", "severity": "error", "message": "missing key: author"}`." Determinism claim verified: "running verify.py twice on the same tree produced byte-identical findings.jsonl (diff showed no changes)."
 - `pip install pyyaml && python scripts/ci/verify.py` → **passed** — pyyaml already
 6.0.3; behaved exactly as the "clean repo exits 0" claim states in an isolated clean dir.
 - `.github/workflows/verify.yml` → **passed** — parses as valid GitHub Actions YAML;
 action pins (`checkout@v4`, `setup-python@v5`, `upload-artifact@v4`) confirmed current as of 2026.
-- Mermaid quest-network diagram → **reasoned** — could not render (headless Chromium
-  "No usable sandbox"); syntax reviewed and valid.
+- Mermaid quest-network diagram → **reasoned** — could not render (headless Chromium "No usable sandbox"); syntax reviewed and valid.
 - *Robustness gap found through hands-on testing:* malformed front-matter YAML
 (e.g. `title: Test: Bad Colon Here: Nested`) makes `yaml.safe_load` raise an uncaught `ScannerError`, crashing the whole harness with a traceback instead of emitting a graceful finding — undercuts the "frozen contract / deterministic checker other tools can trust" framing.
 
@@ -62,8 +60,7 @@ Per-dimension: commands_work **5**, content_accuracy **4**, completeness **3**, 
 "Expected Output" block near-verbatim (`[main (root-commit) <hash>] feat: Add initial quest README`, `1 file changed, 1 insertion(+)`).
 - `git remote add origin … && git push -u origin main` → **passed (documented
 failure)** — failed with the exact predicted `fatal: could not read Username for 'https://github.com': No such device or address`; the quest's 🔑 warning box primes the learner for precisely this.
-- Chapter 2 `git checkout -b … / commit / checkout main / git merge / git branch -d`
-  → **passed** — fast-forward merge and safe branch delete all as described.
+- Chapter 2 `git checkout -b … / commit / checkout main / git merge / git branch -d` → **passed** — fast-forward merge and safe branch delete all as described.
 - macOS `brew` / Windows `choco` / Linux `sudo apt` installer blocks → **skipped**
 (wrong OS / require sudo / mutate system state); git already v2.54.0. Reasonable, not a quest fault.
 - Chapter 4 `ci-cd-pipeline.yml` + Chapter 3 PR template → **reasoned** — YAML parses

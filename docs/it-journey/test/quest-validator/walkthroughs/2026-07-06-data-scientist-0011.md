@@ -48,8 +48,7 @@ All command outcomes below come from the sealed execute-engine run (`walk-eviden
 ### 1. PRD Codex — score 39, weight covered 1.0
 Snippet coverage: **ran 13 of 12 runnable** (5 passed · 8 failed) · 2 skipped · 4 reasoned · 19 recorded. Dimensions: commands_work **1**, content_accuracy 2, completeness 1, clarity 2, structure 4, safety 5.
 
-- **failed** — *macOS / Linux / Cloud platform paths* and the `sync`, `status`,
-  `conflicts`, and "Quick Win" command blocks: engine detail —
+- **failed** — *macOS / Linux / Cloud platform paths* and the `sync`, `status`, `conflicts`, and "Quick Win" command blocks: engine detail —
   > "`docker compose build prd-machine` fails with 'no configuration file provided:
   > not found' since no docker-compose.yml or scripts/prd-machine exist in this
   > sandbox (or is created by the quest)."
@@ -59,8 +58,7 @@ Snippet coverage: **ran 13 of 12 runnable** (5 passed · 8 failed) · 2 skipped 
   > signals processed: 146'."
 - **passed** — the Mermaid diagrams (Signal Source Architecture, Quest Network
 Position, Implementation Flow) and the illustrative YAML blocks (frontmatter, `features.yml`) parse cleanly.
-- **failed** — the "Best Practices for Commit Signals" block is fenced ` ```bash `
-  but contains commit-message prose, not runnable shell.
+- **failed** — the "Best Practices for Commit Signals" block is fenced ` ```bash ` but contains commit-message prose, not runnable shell.
 
 ### 2. GitHub Pages Hidden Gem — score 65, weight covered 1.0
 Snippet coverage: **ran 7 of 3 runnable** (5 passed · 2 failed) · 3 skipped · 2 reasoned · 12 recorded. Dimensions: commands_work 3, content_accuracy 3, completeness 3, clarity 3, structure 4, safety 5.
@@ -77,8 +75,7 @@ Snippet coverage: **ran 9 of 9 runnable** (9 passed · 0 failed) · 3 skipped ·
 
 - **passed** — every runnable scaffolding command worked across all four platform
 paths: `mkdir -p .github/prompts && touch .github/copilot-instructions.md` (macOS/Linux), the PowerShell `New-Item …` equivalents, and the Cloud `echo … > .github/copilot-instructions.md`. Zero command failures.
-- **skipped** — the `code --install-extension GitHub.copilot …` lines (Copilot CLI
-  install can't run in the sandbox) — a coverage gap, not a defect.
+- **skipped** — the `code --install-extension GitHub.copilot …` lines (Copilot CLI install can't run in the sandbox) — a coverage gap, not a defect.
 - **reasoned** — the 23 prompt/template text blocks are illustrative, not executable.
 Two content problems verified in source: the `.prompt.md` templates literally carry `{% raw %}{{ inputs.x }}{% endraw %}` Liquid escaping (lines 794–829, 861–919), and the frontmatter `inputs:` + `{{ inputs.x }}` convention (lines 789–791, 856–858, 898–900) implies native Copilot variable substitution that does not exist.
 
@@ -108,8 +105,7 @@ Output ~348, ~400)** — *Observed:* commit-message prose fenced as ` ```bash ` 
 recommends the Live Server extension to preview a Jekyll site, but Live Server can't render Liquid. *Fix:* recommend `bundle exec jekyll serve --livereload`, or scope Live Server to static `_site` output only.
 - **MEDIUM · Prompt Crystal · Platform install blocks (lines 193–269)** — *Observed
 (reasoned):* `code --install-extension …` assumes the `code` CLI is on PATH and an active Copilot subscription. *Fix:* add a one-line prerequisite note (enable "Shell Command: Install 'code'…"; Copilot requires a subscription/trial).
-- **LOW · PRD Codex** — Challenge 4 references `.github/workflows/prd-sync.yml` but
-  doesn't include/link it (lines 593–604); consider adding it.
+- **LOW · PRD Codex** — Challenge 4 references `.github/workflows/prd-sync.yml` but doesn't include/link it (lines 593–604); consider adding it.
 - **LOW · GitHub Pages** — Chapter 2 lists 5 "essential" extensions but only installs
 2 via command (lines 197–201); either provide all install commands or trim the list. Also add the "Install 'code' in PATH" note before the CLI commands.
 - **LOW · Prompt Crystal** — several ` ```javascript ` fences (≈lines 296, 307, 683,

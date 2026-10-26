@@ -16,8 +16,7 @@ The content layer for the open-issue queue, ported from it-journey and adapted t
 
 ## What makes this port theme-safe
 
-- **Backlog-synced issues are never touched.** `sync.yml` mirrors
-  `_data/backlog.yml` → GitHub Issues (marked with `<!-- backlog-id: T-### -->`
+- **Backlog-synced issues are never touched.** `sync.yml` mirrors `_data/backlog.yml` → GitHub Issues (marked with `<!-- backlog-id: T-### -->`
   + the `agent-ready` label). The engine's FIRST disposition (`backlog-managed`)
 catches these and lists them under **"Left alone (protected)"** — the autopilot records but never comments/labels/closes them. Edit the backlog file instead.
 - **The resolver never edits theme code.** Auto-resolution PRs are scoped to
@@ -27,12 +26,9 @@ gated paths close issues: bot-noise (`eligible_autoclose`, under `ISSUE_AUTOCLOS
 
 ## The loop
 
-1. `scripts/issues/triage.py plan` — classify + group + write the worklist/plan.
-   **Read/plan only** — never mutates GitHub.
-2. `scripts/issues/dispatch.py` — observe open `auto:issue` PRs, decide which docs
-   batches to resolve this run (`budget.yml` backpressure).
-3. `issue-triager` (label/route/flag) and `issue-resolver` (one docs batch → one
-   PR) run the `issue-triage` skill via `.github/workflows/issue-autopilot.yml`.
+1. `scripts/issues/triage.py plan` — classify + group + write the worklist/plan. **Read/plan only** — never mutates GitHub.
+2. `scripts/issues/dispatch.py` — observe open `auto:issue` PRs, decide which docs batches to resolve this run (`budget.yml` backpressure).
+3. `issue-triager` (label/route/flag) and `issue-resolver` (one docs batch → one PR) run the `issue-triage` skill via `.github/workflows/issue-autopilot.yml`.
 4. `issue-verifier` (read-only) judges whether each `verify_candidate` human issue
 is already fixed on `main` → `.issues/verify.json`; `scripts/issues/verify_close.py` closes the resolved + high-confidence ones, gated on a green `main` CI/CD suite.
 5. `issue-pr-auto-merge.yml` merges green docs-only `auto:issue` PRs.

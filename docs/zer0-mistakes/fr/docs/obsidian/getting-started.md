@@ -28,8 +28,7 @@ translation_source_url: /docs/obsidian/getting-started/
 1. Installez [Obsidian](https://obsidian.md/download).
 2. Lancez Obsidian → **Ouvrir le dossier comme coffre**.
 3. Choisissez la racine de votre clone `zer0-mistakes`.
-4. Faites confiance à l'auteur lorsque cela est demandé (le coffre est fourni avec des paramètres partagés
-   sous `.obsidian/` ; rien ne s'exécute automatiquement).
+4. Faites confiance à l'auteur lorsque cela est demandé (le coffre est fourni avec des paramètres partagés sous `.obsidian/` ; rien ne s'exécute automatiquement).
 
 Le `.gitignore` du dépôt exclut l'état par utilisateur d'Obsidian (`workspace*`, `cache`, `plugins/*/data.json`) afin que plusieurs contributeurs puissent partager le même coffre sans conflits de fusion.
 
@@ -86,12 +85,9 @@ Obsidian affiche ces champs dans sa barre latérale **Propriétés** ; les valeu
 
 ## 5. Étapes suivantes
 
-- Parcourez la [référence de syntaxe](⟦29⟧)
-  pour voir exactement quelles fonctionnalités d'Obsidian sont rendues sur le site.
-- Apprenez le [flux de travail de rédaction](⟦31⟧)
-  pour l'aller-retour entre Obsidian et la page publiée.
-- Si quelque chose semble anormal, passez au
-  [dépannage](⟦33⟧).
+- Parcourez la [référence de syntaxe](⟦29⟧) pour voir exactement quelles fonctionnalités d'Obsidian sont rendues sur le site.
+- Apprenez le [flux de travail de rédaction](⟦31⟧) pour l'aller-retour entre Obsidian et la page publiée.
+- Si quelque chose semble anormal, passez au [dépannage](⟦33⟧).
 
 ## Voir aussi
 

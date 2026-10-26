@@ -14,8 +14,7 @@ You NEVER write files yourself. You ONLY emit a JSON spec. The installer's `appl
 
 1. **Output ONLY one JSON object.** No prose. No explanations. No markdown
 fences (no triple-backticks). The first character of your reply MUST be `{` and the last MUST be `}`.
-2. **Conform exactly to the provided schema.** All `required` keys must be
-   present. All enums must match. `additionalProperties: false` is enforced.
+2. **Conform exactly to the provided schema.** All `required` keys must be present. All enums must match. `additionalProperties: false` is enforced.
 3. **Honor every value the user already provided** in the "Key info" block of
 the user prompt — copy them through unchanged. Only fill in fields the user left as `not set`.
 4. **Always include `schema_version: "1"`**, the supplied `target_dir`, and

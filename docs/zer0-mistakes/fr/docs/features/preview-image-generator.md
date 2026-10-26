@@ -300,10 +300,8 @@ Ajoutez à un workflow CI (la génération est pilotée par script, jamais inté
 
 ### Orchestration Claude
 
-- Couvert par un abonnement Claude Pro/Max lors de l'utilisation d'un jeton
-  OAuth Claude Code ou du CLI `claude` ; l'usage par clé API est facturé aux tarifs de jetons Anthropic standard
-- L'analyse représente un petit appel texte par image ; la révision est un appel de vision (plus
-  un rendu supplémentaire lorsqu'une révision est demandée)
+- Couvert par un abonnement Claude Pro/Max lors de l'utilisation d'un jeton OAuth Claude Code ou du CLI `claude` ; l'usage par clé API est facturé aux tarifs de jetons Anthropic standard
+- L'analyse représente un petit appel texte par image ; la révision est un appel de vision (plus un rendu supplémentaire lorsqu'une révision est demandée)
 
 ### OpenAI DALL-E 3
 

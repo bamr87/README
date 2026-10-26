@@ -64,18 +64,14 @@ I walked the **System Engineer · Level 0010 (Terminal Mastery, Apprentice 🌱)
 Statuses below are **real outcomes** from commands I ran (`passed`/`failed`/`skipped`) or static judgements (`reasoned`). Full transcript in `walk-evidence.md`.
 
 ### 1 · Action Triggers — ran 1/1 runnable snippet
-- **`python3 yaml.safe_load(<workflow>)`** → **passed**. The CI/CD workflow parses
-  cleanly: `jobs = ['test','release']`, triggers `['pull_request','push']`.
-- Action refs `actions/checkout@v4`, `actions/setup-python@v5`,
-  `release-drafter/release-drafter@v6` → **reasoned**: all current, valid tags.
-- `{​% raw %​}{​{ secrets.GITHUB_TOKEN }​}{​% endraw %​}` renders to `${​{ secrets.GITHUB_TOKEN }​}`
-  → **reasoned**: the Liquid `raw` guard is correct; the leading `$` is intended (not a bug).
+- **`python3 yaml.safe_load(<workflow>)`** → **passed**. The CI/CD workflow parses cleanly: `jobs = ['test','release']`, triggers `['pull_request','push']`.
+- Action refs `actions/checkout@v4`, `actions/setup-python@v5`, `release-drafter/release-drafter@v6` → **reasoned**: all current, valid tags.
+- `{​% raw %​}{​{ secrets.GITHUB_TOKEN }​}{​% endraw %​}` renders to `${​{ secrets.GITHUB_TOKEN }​}` → **reasoned**: the Liquid `raw` guard is correct; the leading `$` is intended (not a bug).
 - `## 🎯 Quest Objectives` present? → **failed** (grep): section absent.
 
 ### 2 · Branches & Pull Requests — 0 runnable commands
 - PR template Markdown / branch-naming conventions → **reasoned**: well-formed, correct.
-- Objectives + hands-on git commands → **failed** (grep): none present; the only `- [ ]`
-  checkboxes are inside the *PR template example*, not quest objectives.
+- Objectives + hands-on git commands → **failed** (grep): none present; the only `- [ ]` checkboxes are inside the *PR template example*, not quest objectives.
 
 ### 3 · Changelogs — 0 runnable commands
 - Changelog format + `MAJOR.MINOR.PATCH` SemVer claim + `semver.org` link → **reasoned**: correct.

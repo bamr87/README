@@ -22,10 +22,8 @@ Generates a GitHub Actions workflow that builds the Jekyll site with Bundler and
 ## Post-install steps
 
 1. Push the new workflow to GitHub.
-2. In the repository settings, set **Pages → Build and deployment →
-   Source** to **Deploy from a branch** and select `gh-pages` / `/(root)`.
-3. Trigger a build by pushing to `main` (or running the workflow
-   manually from the Actions tab).
+2. In the repository settings, set **Pages → Build and deployment → Source** to **Deploy from a branch** and select `gh-pages` / `/(root)`.
+3. Trigger a build by pushing to `main` (or running the workflow manually from the Actions tab).
 
 ## Documentation
 

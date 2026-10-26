@@ -64,17 +64,14 @@ workflow object, the `user_story_schema.json`, and `intake_agent.py` imports all
 Dimensions: commands 5 · accuracy 5 · completeness 4 · clarity 4 · structure 5 · safety 5. Coverage: 11 blocks — **9 executed, all passed; 1 reasoned, 1 skipped (external `gh api`).**
 - ✅ The full **mint → seal → forge → restore → ledger** chain was reconstructed and run:
 the mint step wrote `evidence.txt`, seal copied it to `$RUNNER_TEMP/sealed`, the boss-fight forgery edited `evidence.txt` to fake success, the restore step's `cmp -s` **caught the tamper** and restored the sealed copy, and the ledger `grep FAIL` parse then reflected the true result — *every step behaved exactly as documented.*
-- ✅ Both Mermaid diagrams (architecture `graph TD`, quest-network `graph LR`) rendered
-  without syntax errors.
-- ⏭️ `gh api repos/bamr87/it-journey/pulls/433` skipped (external repo, not reproducible
-  standalone) — the one completeness gap for an isolated learner.
+- ✅ Both Mermaid diagrams (architecture `graph TD`, quest-network `graph LR`) rendered without syntax errors.
+- ⏭️ `gh api repos/bamr87/it-journey/pulls/433` skipped (external repo, not reproducible standalone) — the one completeness gap for an isolated learner.
 
 ### 4. Secure Coding: Preventing the OWASP Top 10 — ⚠️ 77
 Dimensions: commands 3 · accuracy 4 · completeness 4 · clarity 4 · structure 5 · safety 5. Coverage: 14 blocks — **9 executed (8 passed, 1 failed), 5 reasoned (incl. 3 other-OS installers).**
 - ✅ Passed as documented: bcrypt (`gensalt(rounds=12)` / `checkpw`), the parameterized-vs-
 concat SQL contrast, `subprocess.run` list-form vs `shell=True`, the allowlist `re.fullmatch(r"[A-Z]{2}\d{6}", …)`, `os.environ["API_KEY"]`, `detect-secrets scan`, `pip-audit` / `npm audit` / `npm audit fix`, and `bandit -r ./src`.
-- ❌ `docker run --rm -it python:3.12-slim bash -lc "…"` — **failed**: *"the input device
-  is not a TTY"*. Re-running with `-it` removed **succeeded** and printed `Python 3.12.13`.
+- ❌ `docker run --rm -it python:3.12-slim bash -lc "…"` — **failed**: *"the input device is not a TTY"*. Re-running with `-it` removed **succeeded** and printed `Python 3.12.13`.
 - 🧠 (reasoned) `detect-secrets scan` without `--all-files` only scans git-tracked files,
 so a freshly-created secret file the section is trying to catch produces a false all-clear; the SQL `%s` placeholder does not work with Python's stdlib `sqlite3` (qmark `?` style), so a learner testing it with the built-in module hits a syntax error.
 
@@ -82,8 +79,7 @@ so a freshly-created secret file the section is trying to catch produces a false
 Dimensions: commands 4 · accuracy 5 · completeness 4 · clarity 5 · structure 5 · safety 5. Coverage: 8 blocks — **2 executed passed, 3 skipped (other-OS installers), 3 reasoned.**
 - ✅ The cloud-path echo snippet and the **Chapter 1 Mermaid DFD** (User → Web App → DB /
 Payment Provider with trust boundaries) executed/rendered successfully; all **nine external resource links resolved live**.
-- 🧠 (reasoned) STRIDE walk-through, attack tree, and DREAD/priority table are prose/table
-  teaching blocks (nothing to execute) and are internally consistent.
+- 🧠 (reasoned) STRIDE walk-through, attack tree, and DREAD/priority table are prose/table teaching blocks (nothing to execute) and are internally consistent.
 
 ## 🐞 Issues Found
 
@@ -94,50 +90,38 @@ Grouped by quest, severity from the sealed engine's own recommendations, each ti
 that job uses job-level `continue-on-error: true`; the known GHA behavior reports `success` downstream, silently defeating the "failure detection" objective. *Fix:* thread the custom `needs.sub-agent-1.outputs.status` (as sub-agent-2 already does) and align `recovery_coordinator.py`'s check (`failed` vs `failure`). *(reasoned)*
 - **high** · Missing scripts — `subtask.py`, `save_checkpoint.py`, `redelegate_tasks.py`
 are referenced for the "retry/backoff" and "re-delegation" objectives but never shown. *Fix:* provide them or scope the quest to assessment/compensation only. *(reasoned)*
-- **medium** · Quest Validation — `scripts/validate_quest.py` does not exist; the final
-  step **fails outright** (tested). *Fix:* ship the script or use a manual checklist.
+- **medium** · Quest Validation — `scripts/validate_quest.py` does not exist; the final step **fails outright** (tested). *Fix:* ship the script or use a manual checklist.
 - **medium** · YAML block leaks literal `{% raw %}`/`{% endraw %}` into the fenced code —
 a learner copying from the raw `.md` gets invalid YAML (tested: only parses after stripping). *Fix:* pre-render or escape differently.
-- **low** · Add a "before you begin" note stating the assumed `work/gh-600/scripts/`
-  scaffold state from the prior quest. *(reasoned)*
+- **low** · Add a "before you begin" note stating the assumed `work/gh-600/scripts/` scaffold state from the prior quest. *(reasoned)*
 
 **AI Feature Pipeline Architect (❌ 59)**
 - **high** · Chapters 2–5 reference undefined agent classes with no save/run steps — the
 "5-stage pipeline" objective is not demonstrable. *Fix:* label as pseudocode **or** flesh out to Chapter-1 rigor. *(reasoned)*
-- **high** · MCP is a Primary Objective but `self.mcp_session` stays `None`; add a minimal
-  working transport/session example. *(reasoned)*
+- **high** · MCP is a Primary Objective but `self.mcp_session` stays `None`; add a minimal working transport/session example. *(reasoned)*
 - **medium** · `model="claude-3-5-sonnet-latest"` is stale — update to a current alias.
-- **medium** · `intake_agent.py` raises a raw `KeyError` on a missing `ANTHROPIC_API_KEY`
-  (tested) — wrap with a friendly check.
-- **medium** · macOS block: `brew install docker` installs only the CLI, not the daemon
-  the stated requirement needs; add `brew install --cask docker`. *(reasoned)*
+- **medium** · `intake_agent.py` raises a raw `KeyError` on a missing `ANTHROPIC_API_KEY` (tested) — wrap with a friendly check.
+- **medium** · macOS block: `brew install docker` installs only the CLI, not the daemon the stated requirement needs; add `brew install --cask docker`. *(reasoned)*
 - **low** · Validation is self-assessed checkboxes only; add checkable success criteria.
 - **low** · "Architectural Decision Records" artifact required but no ADR template shown.
 - **process** · The quest is `draft: true` — either it should not appear in the learner
 path yet, or it needs to graduate; shipping a fail-scoring draft in the sweep is a mixed signal.
 
 **The Sealed Evidence (✅ 94)**
-- **medium** · Mastery Challenge points at an external repo's workflow file with no inline
-  starting artifact — a learner outside `bamr87/it-journey` has nothing to extend. *(reasoned)*
+- **medium** · Mastery Challenge points at an external repo's workflow file with no inline starting artifact — a learner outside `bamr87/it-journey` has nothing to extend. *(reasoned)*
 - **low** · PR #433 reference is unverifiable offline (skipped) — add a short inline diff.
-- **low** · Note that `uses: ./.github/actions/claude-run` and `.claude/agents/potion-scribe.md`
-  are repo-specific so learners know which parts to swap. *(reasoned)*
+- **low** · Note that `uses: ./.github/actions/claude-run` and `.claude/agents/potion-scribe.md` are repo-specific so learners know which parts to swap. *(reasoned)*
 
 **Secure Coding (⚠️ 77)**
-- **high** · Cloud Realms Docker snippet uses `-it` and **fails** with "input device is not
-  a TTY" non-interactively (tested; works with `-it` removed). *Fix:* drop `-it` or use `-i`.
-- **medium** · `detect-secrets scan` without `--all-files` misses untracked files —
-  undermines the very "never commit secrets" scenario. *Fix:* recommend `--all-files`. *(reasoned)*
+- **high** · Cloud Realms Docker snippet uses `-it` and **fails** with "input device is not a TTY" non-interactively (tested; works with `-it` removed). *Fix:* drop `-it` or use `-i`.
+- **medium** · `detect-secrets scan` without `--all-files` misses untracked files — undermines the very "never commit secrets" scenario. *Fix:* recommend `--all-files`. *(reasoned)*
 - **medium** · SQL `%s` placeholder fails with stdlib `sqlite3` — specify a driver or use `?`. *(reasoned)*
-- **low** · Two `@app.get("/invoices/<invoice_id>")` blocks would raise a Flask duplicate-
-  endpoint error if pasted together — rename the secure version. *(reasoned)*
+- **low** · Two `@app.get("/invoices/<invoice_id>")` blocks would raise a Flask duplicate- endpoint error if pasted together — rename the secure version. *(reasoned)*
 - **low** · XSS snippet is browser-only (Node has no DOM) — note it or add a jsdom variant. *(reasoned)*
 
 **Threat Modeling (✅ 91)**
-- **low** · "Living Threat Models" secondary objective is checklisted but never taught —
-  add a short callout on revisiting the model as the design changes. *(reasoned)*
-- **low** · Author double-check the `Microsoft.ThreatModelingTool` winget id still resolves
-  (couldn't re-verify live from the sandbox). *(reasoned)*
+- **low** · "Living Threat Models" secondary objective is checklisted but never taught — add a short callout on revisiting the model as the design changes. *(reasoned)*
+- **low** · Author double-check the `Microsoft.ThreatModelingTool` winget id still resolves (couldn't re-verify live from the sandbox). *(reasoned)*
 
 **No blocking issues** exist for the two ✅ quests beyond the standalone-reproducibility notes above; they are safe and accurate for a learner.
 
@@ -172,8 +156,7 @@ engine **actually executed** in a disposable temp dir (quoted outputs are its re
 perfection ledger accumulates the other two windows over subsequent runs; this report does **not** certify the whole level. Snippet coverage varied (2/8 executed on the conceptual Threat Modeling quest up to 9/11 on Sealed Evidence); other-OS installers and external-repo/network calls were skipped by design, not overlooked. No timeout occurred (engine ran to completion, ≈$3.51).
 - **Confidence:** high on the two ✅ quests and on the tested defects (Docker `-it`,
 missing `validate_quest.py`, `intake_agent.py` KeyError — all reproduced live). Medium on the `continue-on-error` GHA bug and the "missing scripts" scope gaps, which were reasoned/statically flagged rather than executed end-to-end in a real multi-job run.
-- **Scope discipline:** one slice, one report. No quest content, data, or config was
-  modified; no branch/commit/PR was made. The caller handles git.
+- **Scope discipline:** one slice, one report. No quest content, data, or config was modified; no branch/commit/PR was made. The caller handles git.
 
 ---
 

@@ -9,16 +9,16 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **665 pages** across **98 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **671 pages** across **99 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(79)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(82)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(69)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(72)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(66)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(66)</small>
+    - **Visual** <small>(69)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(69)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [agent-issue-265 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-265/README.md)
         - [agent-issue-412 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-412/README.md)
@@ -74,13 +74,16 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — TOC scroll spy tracks the section being read](../zer0-mistakes/test/visual/evidence/scroll-spy/README.md)
         - [fix-a11y-intro-actions-nav-toggle-badges — visual evidence](../zer0-mistakes/test/visual/evidence/fix-a11y-intro-actions-nav-toggle-badges/README.md)
         - [fix-cookie-banner-compact — visual evidence](../zer0-mistakes/test/visual/evidence/fix-cookie-banner-compact/README.md)
+        - [fix-includes-favicon-tags-404 — visual evidence](../zer0-mistakes/test/visual/evidence/fix-includes-favicon-tags-404/README.md)
         - [fix-includes-preview-path-join — visual evidence](../zer0-mistakes/test/visual/evidence/fix-includes-preview-path-join/README.md)
         - [fix-perf-lazy-mermaid-graph-posthog-nav — visual evidence](../zer0-mistakes/test/visual/evidence/fix-perf-lazy-mermaid-graph-posthog-nav/README.md)
         - [fix-search-page-sitemap — visual evidence](../zer0-mistakes/test/visual/evidence/fix-search-page-sitemap/README.md)
+        - [Footer duplicate copyright (backlog T-054)](../zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md)
         - [Heading-level skips (#436)](../zer0-mistakes/test/visual/evidence/heading-level-skips/README.md)
         - [Mobile navigation panel collapsed to a 60px sliver](../zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md)
         - [Mobile responsive audit — evidence](../zer0-mistakes/test/visual/evidence/mobile-responsive/README.md)
         - [Navbar label tiers, merged chevron, centred grid — evidence (#405)](../zer0-mistakes/test/visual/evidence/navbar-tiers-405/README.md)
+        - [port-zer0-cms-2026-10 — visual evidence](../zer0-mistakes/test/visual/evidence/port-zer0-cms-2026-10/README.md)
         - [Section topic filter — whole-tag matching](../zer0-mistakes/test/visual/evidence/section-topic-filter/README.md)
         - [theme-color (#281)](../zer0-mistakes/test/visual/evidence/theme-color-surface/README.md)
         - **[Evidence: Site Builder — bring your own AI provider (Claude or Grok)…](../zer0-mistakes/test/visual/evidence/site-builder-providers/README.md)** <small>(2)</small>
@@ -774,3 +777,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
     - [Deploy target: Azure Static Web Apps](../zer0-mistakes/templates/deploy/azure-swa/README.md)
     - [Deploy target: docker-prod (self-hosted production)](../zer0-mistakes/templates/deploy/docker-prod/README.md)
     - [Deploy target: GitHub Pages](../zer0-mistakes/templates/deploy/github-pages/README.md)
+- **[zer0 studio](../zer0-mistakes/studio/README.md)** <small>(3)</small>
+  - [zer0 studio](../zer0-mistakes/studio/README.md)
+  - [AGENTS.md — working rules for AI coding agents in studio/](../zer0-mistakes/studio/AGENTS.md)
+  - [Changelog](../zer0-mistakes/studio/test/fixtures/theme/CHANGELOG.md)

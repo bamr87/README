@@ -110,8 +110,7 @@ Blog posts (`pages/_posts/`, the `article` layout) and notes/notebooks show comm
      --config '_config.yml,_config_dev.yml'
    ```
 
-2. Confirm the Giscus script is emitted on a built post and your IDs were
-   interpolated (no empty attributes):
+2. Confirm the Giscus script is emitted on a built post and your IDs were interpolated (no empty attributes):
 
    ```bash
    grep -A1 'giscus.app/client.js' _site/**/index.html | grep -m1 data-repo-id
@@ -137,8 +136,7 @@ Blog posts (`pages/_posts/`, the `article` layout) and notes/notebooks show comm
 
    You will not be able to *sign in and post* from `localhost` (GitHub's OAuth redirect is bound to the deployed origin), but everything up to that point is faithful.
 
-4. Confirm the full chain — repo public, Discussions on, **app installed**, category valid —
-   with one request, no browser needed:
+4. Confirm the full chain — repo public, Discussions on, **app installed**, category valid — with one request, no browser needed:
 
    ```bash
    # Replace the repo and category with your own
@@ -202,8 +200,7 @@ comments: false
 
 Because comments are GitHub Discussions, you can read, draft, and reply to them from the terminal — and Claude Code can drive the whole flow. Two pieces ship with the theme:
 
-- **`scripts/bin/giscus-discussions`** — a `gh`-powered engine with subcommands
-  `doctor`, `categories`, `list`, `thread`, `draft`, `seed`, and `post`.
+- **`scripts/bin/giscus-discussions`** — a `gh`-powered engine with subcommands `doctor`, `categories`, `list`, `thread`, `draft`, `seed`, and `post`.
 - **The `giscus-conversation` skill** (`.github/skills/giscus-conversation/`) —
 tells Claude Code how to read a page's thread, draft a maintainer reply with the reader's context in mind, and publish it.
 
@@ -249,10 +246,8 @@ posts/2025/01/21/remote-work-revolution/
 
 **not** `/posts/2025/01/21/remote-work-revolution/`. This matters in exactly two situations:
 
-- **You seed a thread by hand.** A leading slash produces a discussion Giscus
-  will never find — the page keeps showing an empty widget while the discussion sits in the category looking correct. `giscus-discussions seed --page /any/form/` normalizes this for you; passing `--title` yourself does not.
-- **You migrate or rename discussions.** Retitle to the no-leading-slash form or
-  the mapping breaks silently.
+- **You seed a thread by hand.** A leading slash produces a discussion Giscus will never find — the page keeps showing an empty widget while the discussion sits in the category looking correct. `giscus-discussions seed --page /any/form/` normalizes this for you; passing `--title` yourself does not.
+- **You migrate or rename discussions.** Retitle to the no-leading-slash form or the mapping breaks silently.
 
 In the normal case you never think about this: Giscus creates the discussion itself, correctly titled, the first time a visitor comments.
 

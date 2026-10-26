@@ -26,8 +26,7 @@ Mirror of [`.github/prompts/content-review.prompt.md`](../../.github/prompts/con
 
 ## Procedure
 
-1. Resolve scope — files changed vs `origin/main` matching `pages/**/*.md`,
-   honouring `scope.exclude` in the config.
+1. Resolve scope — files changed vs `origin/main` matching `pages/**/*.md`, honouring `scope.exclude` in the config.
 2. Run the deterministic tier first:
    ```bash
    ruby scripts/content-review.rb --changed --base origin/main \
@@ -41,7 +40,5 @@ changes) and findings tagged 🔴 must-fix · 🟡 should-fix · 🔵 nice-to-ha
 ## Rules
 
 - Content only — no Ruby/Liquid/SCSS/JS review (that's `/code-review`).
-- Prefer suggestions with exact replacement text. In `fix` mode apply only
-  objective fixes and **always bump `lastmod`** on edited files.
-- Reserve 🔴 for objective problems (missing required field, broken link,
-  truncated description, missing alt text, factual error) — not taste.
+- Prefer suggestions with exact replacement text. In `fix` mode apply only objective fixes and **always bump `lastmod`** on edited files.
+- Reserve 🔴 for objective problems (missing required field, broken link, truncated description, missing alt text, factual error) — not taste.

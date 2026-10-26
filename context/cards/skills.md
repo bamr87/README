@@ -6,8 +6,8 @@ kind: docs
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: a595ab0372a11167
+enrichment: heuristic
+source_fingerprint: 8bee55625627b534
 tags:
   - agents
   - ai
@@ -22,7 +22,7 @@ tags:
 
 # Agent Skills
 
-> Agent Skills (bamr87/skills) is an actively developed library of agent skills, prompts, MCP server configurations, and AI development patterns, organized around a skill catalog with accompanying plugins and guidance for testing skills. Its 712 indexed documents, nearly all under .github, include agent definitions such as a scaffolder agent, prompt files like scaffold-foundry-app, and Copilot instructions, with examples in Python, TypeScript, Java, C#, Rust, and Bash. Open it when you want a ready-made skill or MCP setup to drop into an AI coding agent, or a reference for how skills are structured and tested, keeping in mind that it is still a work in progress with skills being added and updated
+> Agent skills — prompts, MCP configurations, and AI development patterns. [!NOTE] Work in Progress — This repository is under active development. More skills are being added, existing skills are being updated to use the latest SDK patterns, and tests are being expanded to ensure quality. Contributions welcome!.
 
 | | |
 |---|---|

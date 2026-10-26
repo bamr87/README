@@ -110,14 +110,11 @@ The evidence gate and the pixel-snapshot tier only ever **verified**. Their inpu
 
 1. **plan** — from the diff: which evidence folders lack generated proof, which
 `*-evidence.mjs` generators the PR ships, whether the pixel tier is in scope (the same paths as ci.yml's `styling` filter), and whether it may act at all (loop guard on its own commits; a three-commit budget per PR).
-2. **generate** — `docker compose up`, then the PR's generators or the generic
-   [`test/visual/pr-evidence.mjs`](../../test/visual/pr-evidence.mjs), which renders the **base branch** and the head side by side so nobody has to hand-write an `unfixCss`; then `UPDATE_SNAPSHOTS=0 ./test/update-snapshots.sh` to verify the baselines — all inside the same jammy image CI compares with, via that script's new `PRE_TEST_SCRIPT` / `POST_TEST_SCRIPT` hooks.
+2. **generate** — `docker compose up`, then the PR's generators or the generic [`test/visual/pr-evidence.mjs`](../../test/visual/pr-evidence.mjs), which renders the **base branch** and the head side by side so nobody has to hand-write an `unfixCss`; then `UPDATE_SNAPSHOTS=0 ./test/update-snapshots.sh` to verify the baselines — all inside the same jammy image CI compares with, via that script's new `PRE_TEST_SCRIPT` / `POST_TEST_SCRIPT` hooks.
 3. **review** — the [`visual-evidence-reviewer`](../../.claude/agents/visual-evidence-reviewer.md)
    agent reads the brief, views the expected | actual | diff montage and the evidence, and writes `verdict.json` (`intentional` / `regression` / `unclear`) plus the evidence README narrative. It never touches baselines.
-4. **decide → bless** — code reads the verdict. Only a well-formed `intentional`
-   on a genuinely failing verify may run `UPDATE_SNAPSHOTS=1`; the diff montage is kept beside the evidence so a human still sees what was blessed.
-5. **stage → commit → push → comment** — only the planner's paths are ever
-   `git add`ed; the commit carries a `[visual-autogen]` marker and a `Visual-Autogen:` trailer; one sticky comment shows the montages and the verdict.
+4. **decide → bless** — code reads the verdict. Only a well-formed `intentional` on a genuinely failing verify may run `UPDATE_SNAPSHOTS=1`; the diff montage is kept beside the evidence so a human still sees what was blessed.
+5. **stage → commit → push → comment** — only the planner's paths are ever `git add`ed; the commit carries a `[visual-autogen]` marker and a `Visual-Autogen:` trailer; one sticky comment shows the montages and the verdict.
 
 Why the split matters: issue #417 was a regression blessed into the baselines because the check was red and the fix was one command. Here the model only *proposes* and code *disposes* — the same arrangement the issue autopilot uses before it closes an issue. Without a Claude credential the lane still generates evidence; baselines are then left alone and the comment says how a human blesses them (`bless --force` after looking).
 
@@ -147,15 +144,12 @@ Each task carries `priority` (P0–P3), `area`, `risk`, `effort`, `source`, and 
 A PR may **auto-merge** only when ALL hold (enforced by the implement prompt and re-checked by `auto-merge.yml`):
 
 - `risk: low`
-- no change to public API, `lib/jekyll-theme-zer0/version.rb`, the gemspec, a
-  dependency manifest, or a data schema
+- no change to public API, `lib/jekyll-theme-zer0/version.rb`, the gemspec, a dependency manifest, or a data schema
 - no new runtime dependency
 - all acceptance criteria verified green in CI
 - **and one of:**
   - the change is non-visual — `area` ∈ { `docs`, `deps`, `lint` }; **or**
-  - it is a low-risk **fix** that ships a passing regression test **and**
-    before/after visual evidence (the [`visual-evidence`](../../.github/skills/visual-evidence/SKILL.md)
-    standard), with the required `evidence-gate` check green.
+  - it is a low-risk **fix** that ships a passing regression test **and** before/after visual evidence (the [`visual-evidence`](../../.github/skills/visual-evidence/SKILL.md) standard), with the required `evidence-gate` check green.
 
 This is the policy that lets **fixes** automate end-to-end: a `risk: low` bug fix proven by a test + evidence is as safe to auto-merge as a docs/deps/lint change. Everything else — `feat`, `refactor`, anything `risk: standard` — is **PR-only** and waits for a human. CI is the merge gate in every case.
 
@@ -168,12 +162,9 @@ When a fix **uncovers a new issue** (e.g. the navbar fix surfaced a `version.rb`
 ### Guardrails
 
 - **One task ⇒ one PR.** Conventional commits.
-- **Agents never bump the version, edit `version.rb`, or publish gems** — releases
-  stay human via [`/commit-publish`](../../.github/prompts/commit-publish.prompt.md).
-- **Loop-prevention:** the audit dedupes by task id/intent and caps new tasks at 5
-  per run; the implement routine does at most one task per invocation.
-- **Default-safe:** with no branch protection, `auto-merge.yml` is a no-op and PRs
-  simply wait for a human.
+- **Agents never bump the version, edit `version.rb`, or publish gems** — releases stay human via [`/commit-publish`](../../.github/prompts/commit-publish.prompt.md).
+- **Loop-prevention:** the audit dedupes by task id/intent and caps new tasks at 5 per run; the implement routine does at most one task per invocation.
+- **Default-safe:** with no branch protection, `auto-merge.yml` is a no-op and PRs simply wait for a human.
 
 ## One-time setup (maintainer)
 
@@ -191,8 +182,7 @@ The loop is driven by two scheduled Claude Code routines. Create them with the `
 
 - **Routine A — Weekly audit + issue intake** (e.g. Mondays):
 *"In the zer0-mistakes repo, run `/repo-audit` (includes issue intake) and open the backlog PR."* — model `haiku`; token scope `issues:write` + PR-create.
-- **Routine B — Implementation cadence** (e.g. 2–3×/week, unchanged):
-  *"In the zer0-mistakes repo, run `/backlog-implement` for the next open task."*
+- **Routine B — Implementation cadence** (e.g. 2–3×/week, unchanged): *"In the zer0-mistakes repo, run `/backlog-implement` for the next open task."*
 - **Routine C — Committee planning** (e.g. Tuesdays, a day behind A):
 *"In the zer0-mistakes repo, run `/issue-plan` and refresh the plan + pinned issue."* — model `sonnet`.
 
@@ -223,6 +213,5 @@ To **pause** the loop: disable the routines (and/or set tasks to `blocked`). To 
 
 - [`_data/backlog.yml`](../../_data/backlog.yml) — the task queue
 - [`AGENTS.md`](../../AGENTS.md) — agent guidance entry point
-- [`docs/systems/release-automation.md`](./release-automation.md) — the
-  human-owned release path the loop never touches
+- [`docs/systems/release-automation.md`](./release-automation.md) — the human-owned release path the loop never touches
 - [`docs/systems/automated-version-system.md`](./automated-version-system.md)

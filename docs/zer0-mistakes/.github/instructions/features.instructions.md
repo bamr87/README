@@ -125,8 +125,7 @@ Documentation-only changes (typos, formatting in `pages/features.md` or `feature
 - [ ] Every active feature has a `provenance:` block and a `tests:` block
 - [ ] `ruby scripts/validate-features.rb` passes (the canonical gate)
 - [ ] `ruby scripts/tag-features --check` passes (referenced source files carry their `Feature: ZER0-NNN` comment; `--write` applies them)
-- [ ] Jekyll renders the showcase page without Liquid errors:
-      `docker-compose exec -T jekyll bundle exec jekyll build --config '_config.yml,_config_dev.yml'`
+- [ ] Jekyll renders the showcase page without Liquid errors: `docker-compose exec -T jekyll bundle exec jekyll build --config '_config.yml,_config_dev.yml'`
 
 ## 🧱 Renderer Contract (`feature-card.html`)
 

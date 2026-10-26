@@ -4,6 +4,8 @@ title: PostHog Analytics for IT-Journey Scripts
 ---
 # PostHog Analytics for IT-Journey Scripts
 
+> How the Ruby SEO and content scripts emit optional PostHog run events, which events they send, and how to enable and verify them.
+
 IT-Journey's Ruby SEO/content scripts optionally emit structured PostHog events on each run, so script activity and content health can be tracked over time. The integration uses the instance-based `PostHog::Client` API (from the `posthog-ruby` gem) and always calls `shutdown` in an `ensure` block so buffered events are flushed before the process exits.
 
 ## Opt-in by design
@@ -50,8 +52,7 @@ All events are captured with the `distinct_id` `it-journey-ci`.
 The integration was verified end-to-end by pointing `POSTHOG_HOST` at a local mock ingestion server and running each script:
 
 - All five events fire with correct, well-typed properties.
-- With `POSTHOG_PROJECT_TOKEN` unset, no events are sent, no network call is
-  attempted, and exit codes are unchanged.
+- With `POSTHOG_PROJECT_TOKEN` unset, no events are sent, no network call is attempted, and exit codes are unchanged.
 - The event capture is placed **before** each script's `exit`, so events are not
 lost when a script exits non-zero (e.g. content-freshness exiting `1` on critical content).
 

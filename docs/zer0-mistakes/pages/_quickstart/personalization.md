@@ -613,8 +613,7 @@ docker compose restart
 
 - The browser tab and navbar show your **Site Title**.
 - `/about/` shows your author name and email.
-- If you set a skin, the page colors change; if nothing changes, check that
-  `theme_skin` is one of the seven names listed above.
+- If you set a skin, the page colors change; if nothing changes, check that `theme_skin` is one of the seven names listed above.
 
 ## You're All Set
 

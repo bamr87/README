@@ -51,8 +51,7 @@ All `passed`/`failed` below come from commands the sealed execute engine actuall
 
 ### 1. Database Fundamentals — 70 (⚠️) · ran 5/8 runnable snippets (4 passed, 1 failed, 2 skipped, 2 reasoned)
 
-- ✅ **Chapter 1** `CREATE TABLE members … INSERT … SELECT *` — *passed*. Produced
-  exactly 2 rows matching the documented column layout.
+- ✅ **Chapter 1** `CREATE TABLE members … INSERT … SELECT *` — *passed*. Produced exactly 2 rows matching the documented column layout.
 - ✅ **Chapter 2** FK example — *passed*. Second insert failed with
 `ERROR: insert or update on table "loans" violates foreign key constraint "loans_member_id_fkey"`, matching the quest's documented ERROR line.
 - ❌ **Chapter 3 ACID block** `BEGIN; UPDATE accounts …` — *failed*.
@@ -66,10 +65,8 @@ tables confirmed; Intermediate Challenge validated (rollback leaves `loans_3nf` 
 
 - ✅ **Chapter 2 schema** `departments/courses/students/enrolments` — *passed*.
 All 4 `CREATE TABLE`s ran verbatim; `\d` confirmed every PK/FK/UNIQUE/CHECK/ composite-PK. Inserting a duplicate `(student_id, course_id)` correctly raised `duplicate key value violates unique constraint "enrolments_pkey"`, empirically proving the quest's "a student cannot enrol in the same course twice" claim.
-- ✅ **Cloud/Docker path** — *passed* end-to-end (`select version()` → 16.14; only
-  the literal `-it` flag fails in a non-TTY sandbox, not a quest defect).
-- `reasoned` — Chapter 1/2/3 prose (entities, cardinality, 1NF→3NF) is accurate;
-  Windows `winget` path and macOS `brew` path *skipped* (no OS).
+- ✅ **Cloud/Docker path** — *passed* end-to-end (`select version()` → 16.14; only the literal `-it` flag fails in a non-TTY sandbox, not a quest defect).
+- `reasoned` — Chapter 1/2/3 prose (entities, cardinality, 1NF→3NF) is accurate; Windows `winget` path and macOS `brew` path *skipped* (no OS).
 
 ### 3. SQL Mastery — 75 (⚠️) · ran 8/11 runnable snippets (8 passed, 2 skipped, 1 reasoned)
 
@@ -77,15 +74,12 @@ All 4 `CREATE TABLE`s ran verbatim; `\d` confirmed every PK/FK/UNIQUE/CHECK/ com
 inline expected output **exactly**: Chapter 1 `WHERE city='Rivenhold'` → Aria, Cora; Chapter 2 INNER JOIN 5 rows (Dorn absent) / LEFT JOIN 6 rows (Dorn, total NULL); Chapter 3 `GROUP BY … HAVING` → Aria 200.00 / Bram 200.00 / Cora 100.00; Chapter 4 subquery, `CREATE VIEW`, `CREATE INDEX`, and the `BEGIN…currval()…COMMIT` transaction all succeeded.
 - ✅ **Docker path** — *passed*, but the container lands in the default `postgres`
 database because this path (unlike macOS/Windows/Linux) never runs `createdb query_codex`.
-- `reasoned` — Windows path likely fails as written (no role matching OS user,
-  `psql`/`createdb` not on PATH after a fresh install).
+- `reasoned` — Windows path likely fails as written (no role matching OS user, `psql`/`createdb` not on PATH after a fresh install).
 
 ### 4. Database Migrations — 72 (⚠️) · ran 14 snippets (11 passed, 3 failed, 2 skipped, 2 reasoned)
 
-- ✅ **Chapter 1** `CREATE TABLE users`, **V2** `ALTER TABLE users ADD COLUMN
-  display_name` — *passed*.
-- ✅ `alembic init migrations`, `alembic revision -m "…"` — *passed* (correct file
-  layout / skeleton generated).
+- ✅ **Chapter 1** `CREATE TABLE users`, **V2** `ALTER TABLE users ADD COLUMN display_name` — *passed*.
+- ✅ `alembic init migrations`, `alembic revision -m "…"` — *passed* (correct file layout / skeleton generated).
 - ❌ **Chapter 2 `upgrade()`** `op.add_column('orders', …)` then
 `alembic upgrade head` — *failed*. `psycopg2.errors.UndefinedTable: relation "orders" does not exist`. Only after manually creating an `orders` table (a step the quest never mentions) did upgrade/downgrade succeed.
 - ❌ **Cloud/Docker path** — *failed twice*: `docker run … postgres:16` never sets
@@ -157,12 +151,9 @@ The planner's ordering is dependency-clean, and I confirmed each quest's `quest_
 
 - `database-fundamentals` → required: none (correct opener).
 - `data-modeling` → required: `database-fundamentals` ✅ (position 2).
-- `sql-mastery` → required: `database-fundamentals` ✅, recommended:
-  `data-modeling` ✅ (both precede it).
-- `database-migrations` → required: `data-modeling` ✅, recommended:
-  `sql-mastery` ✅ (both precede it).
-- `database-security` → required: `database-fundamentals` ✅, recommended:
-  `sql-mastery` ✅.
+- `sql-mastery` → required: `database-fundamentals` ✅, recommended: `data-modeling` ✅ (both precede it).
+- `database-migrations` → required: `data-modeling` ✅, recommended: `sql-mastery` ✅ (both precede it).
+- `database-security` → required: `database-fundamentals` ✅, recommended: `sql-mastery` ✅.
 
 **As a learning path it holds together conceptually.** Normalization is introduced in Fundamentals Ch4 and deliberately revisited in Data Modeling Ch3 (which even says "You met it briefly in Database Fundamentals") — good reinforcing continuity. JOIN/aggregation in SQL Mastery build naturally on the keys taught earlier. A Data Scientist reader accumulates relational modeling → querying → schema evolution → security in a sensible arc.
 
@@ -170,10 +161,8 @@ The planner's ordering is dependency-clean, and I confirmed each quest's `quest_
 
 **Systemic theme — "phantom tables."** Three of the five quests present a *headline* worked example that references an object the quest never creates:
 - Fundamentals: the ACID demo needs `accounts` — never created.
-- Migrations: the Alembic Ch2 demo alters `orders` — never created; Ch3 reads
-  `username` — never added.
-- Security: the injection demo needs `users`; the pgcrypto demo needs `secrets` —
-  neither created.
+- Migrations: the Alembic Ch2 demo alters `orders` — never created; Ch3 reads `username` — never added.
+- Security: the injection demo needs `users`; the pgcrypto demo needs `secrets` — neither created.
 
 Because each quest opens a psql session during platform setup and then invites the learner to "follow along," these gaps are not cosmetic — they are the exact points where a real beginner is stopped cold by `relation "…" does not exist`. This is a **level-wide authoring pattern** a content pass should sweep, not five unrelated one-offs.
 

@@ -58,13 +58,10 @@ The second row carries `role="status"` / `aria-live="polite"` on its cell, becau
 
 Behaviour notes:
 
-- Clicks originating inside an `input`, `textarea`, `select`, or `label` are
-  ignored by the sort handler, so typing in a column's filter does not re-sort it.
-- Sorting is single-column: activating one header clears `data-order`/`aria-sort`
-  on the others.
+- Clicks originating inside an `input`, `textarea`, `select`, or `label` are ignored by the sort handler, so typing in a column's filter does not re-sort it.
+- Sorting is single-column: activating one header clears `data-order`/`aria-sort` on the others.
 - **Filtering is multi-column and conjunctive.** `filterTable(table)` takes only the table and re-reads *every* `input.filter` on each keystroke, so a row must match all active filters. Re-reading is also what makes clearing one filter re-apply the others instead of revealing rows they still exclude.
-- Binding happens once, at `DOMContentLoaded`. Tables inserted into the DOM later
-  are **not** wired up.
+- Binding happens once, at `DOMContentLoaded`. Tables inserted into the DOM later are **not** wired up.
 
 In Django templates the `data-type` value comes from the `sort_data_type` filter in `parodynews/templatetags/custom_filters.py`, which maps a model field's internal type to `number`, `date`, or `""`.
 

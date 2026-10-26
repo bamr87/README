@@ -94,8 +94,7 @@ This PR introduces the following fixes/improvements:
 
 ```yaml
 # YAML diff showing the proposed change
-- name: Lint Markdown
-  run: mdl .
+- name: Lint Markdown run: mdl .
 + - name: Install markdownlint
 +   run: npm install -g markdownlint-cli
 + - name: Lint Markdown

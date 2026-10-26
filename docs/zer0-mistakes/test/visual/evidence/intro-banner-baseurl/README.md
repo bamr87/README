@@ -22,10 +22,8 @@ Both preview-resolution branches a project site exercises:
 
 - **`01-faq.png`** — `/faq/` (the `site.info_banner` fallback branch).
 BEFORE: background URL `/zer0-mistakes/zer0-mistakes/assets/images/info-banner-mountain-wizard.png` → **404**, hero is a flat gradient. AFTER: single prefix → **200**, the banner image renders.
-- **`02-graph.png`** — `/docs/obsidian/graph/` (a `page.preview` without the
-  `/assets` prefix — the auto-prefix branch). Same 404 → 200 flip.
-- **`metrics.json`** — the measured background-image URL and its HTTP status
-  per page and state.
+- **`02-graph.png`** — `/docs/obsidian/graph/` (a `page.preview` without the `/assets` prefix — the auto-prefix branch). Same 404 → 200 flip.
+- **`metrics.json`** — the measured background-image URL and its HTTP status per page and state.
 
 ## Measured before → after (from `metrics.json`)
 

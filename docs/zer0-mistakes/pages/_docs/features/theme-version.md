@@ -112,8 +112,7 @@ When the site runs in development mode (`theme: "jekyll-theme-zer0"`), `version`
 
 The version and build details are surfaced through the **Settings** offcanvas (`_includes/components/info-section.html`), which embeds `_includes/components/theme-info.html`. Open it from:
 
-- The **gear icon** in the header (`_includes/core/header.html`,
-  `data-bs-target="#info-section"`).
+- The **gear icon** in the header (`_includes/core/header.html`, `data-bs-target="#info-section"`).
 - The **Info** button in the footer (`_includes/core/footer.html`).
 
 In the panel, the **Site** tab's *Theme & Build* section shows the theme, Jekyll version, last build time, and repository. The `theme-info.html` include renders the theme name from `site.remote_theme` / `site.theme` and the build metadata from `jekyll.version`, `jekyll.environment`, and `site.time`.

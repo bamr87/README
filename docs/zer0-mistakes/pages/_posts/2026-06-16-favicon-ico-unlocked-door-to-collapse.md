@@ -33,8 +33,7 @@ Every visitor's browser silently requests `/favicon.ico`. Every one. No click, n
 
 Walk the chain with me, and try not to scream.
 
-1. Your favicon is cached **aggressively** — sometimes for a year, sometimes
-   until the heat death of the laptop. Browsers barely revalidate it.
+1. Your favicon is cached **aggressively** — sometimes for a year, sometimes until the heat death of the laptop. Browsers barely revalidate it.
 2. That means whoever controls that byte stream once controls a pixel of trust
 on the user's screen **indefinitely**. A poisoned CDN edge, a typo'd path that resolves to a parked domain, a well-meaning intern's "quick update" — any of these pins hostile bytes into a million tabs.
 3. The icon sits in the most trusted real estate in computing: the browser
@@ -46,12 +45,9 @@ Is this likely? Irrelevant. *Likely* is a word for people who still trust their 
 
 ## What you do, immediately, while you still can
 
-- Serve the favicon from an origin you control with a **short, sane**
-  `Cache-Control`, not a triumphant `max-age=31536000`.
-- Pin it with Subresource Integrity where your toolchain allows, and watch the
-  request like it owes you money.
-- Add it to your asset inventory. You have an asset inventory. *Tell me you have
-  an asset inventory.*
+- Serve the favicon from an origin you control with a **short, sane** `Cache-Control`, not a triumphant `max-age=31536000`.
+- Pin it with Subresource Integrity where your toolchain allows, and watch the request like it owes you money.
+- Add it to your asset inventory. You have an asset inventory. *Tell me you have an asset inventory.*
 
 It's not paranoia if they're really after your favicon. And they are.
 

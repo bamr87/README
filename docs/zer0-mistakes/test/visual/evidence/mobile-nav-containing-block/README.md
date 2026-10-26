@@ -60,10 +60,8 @@ From `metrics-menu-open.json`, main navigation open:
 
 `test/visual/features/mobile-nav-containing-block.spec.js` (smoke tier) guards both the cause and the consequence:
 
-1. no ancestor of `#bdNavbar` creates a fixed-position containing block — the
-   failure message names the offending ancestor and property;
-2. with the menu open the panel fills the viewport, is not clipped, and every
-   link is a ≥24px tap target.
+1. no ancestor of `#bdNavbar` creates a fixed-position containing block — the failure message names the offending ancestor and property;
+2. with the menu open the panel fills the viewport, is not clipped, and every link is a ≥24px tap target.
 
 Verified bidirectionally: injecting `backdrop-filter` on `.navbar` fails both tests (`panel is 60px tall in a 844px viewport`); removing it passes both.
 

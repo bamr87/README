@@ -23,8 +23,7 @@ BASE_URL=http://localhost:4000 node test/visual/search-degradation-evidence.mjs
 typed. BEFORE: "No results found." (misleading). AFTER: "Search is unavailable on this site." (honest about the missing index).
 - **`02-index-present-after.png`** — fixed JS with the index **present**: results
 and the `/sitemap/` "View all results" link render exactly as before — the fix changes nothing on a full site.
-- **`metrics.json`** — the measured facts behind the montages (empty-state copy,
-  `/sitemap/` link presence, and where form-submit navigated) for each state.
+- **`metrics.json`** — the measured facts behind the montages (empty-state copy, `/sitemap/` link presence, and where form-submit navigated) for each state.
 
 ## Measured before → after (from `metrics.json`)
 

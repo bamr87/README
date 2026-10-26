@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **44 pages** across **9 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **89 pages** across **17 sections** (max depth 3).
 
 - **Repository & tooling** <small>(6)</small>
   - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
@@ -22,18 +22,59 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Ti](../bashcrawl/src/terminal-illness/ti/audio/assets/README.md)
 - [⚔️ Bashcrawl — learn the terminal by playing](../bashcrawl/README.md)
 - [AGENTS.md](../bashcrawl/AGENTS.md)
+- [bashcrawl](../bashcrawl/CLAUDE.md)
+- [bashcrawl tools](../bashcrawl/tools/README.md)
 - [Changelog](../bashcrawl/CHANGELOG.md)
-- [CLAUDE.md](../bashcrawl/CLAUDE.md)
 - [motion/](../bashcrawl/motion/README.md)
+- [PRD — Bashcrawl](../bashcrawl/PRD.md)
 - [TermForge](../bashcrawl/termforge/README.md)
-- **[Documentation](../bashcrawl/docs/index.md)** <small>(29)</small>
+- **Courses** <small>(31)</small>
+  - **Navigator** <small>(6)</small>
+    - [Course](../bashcrawl/courses/navigator/course.md)
+    - [01 Where Am I](../bashcrawl/courses/navigator/01-where-am-i.md)
+    - [02 Look Around](../bashcrawl/courses/navigator/02-look-around.md)
+    - [03 Moving](../bashcrawl/courses/navigator/03-moving.md)
+    - [04 Paths](../bashcrawl/courses/navigator/04-paths.md)
+    - [05 Big Picture](../bashcrawl/courses/navigator/05-big-picture.md)
+  - **Pipelines** <small>(7)</small>
+    - [Course](../bashcrawl/courses/pipelines/course.md)
+    - [01 Grep](../bashcrawl/courses/pipelines/01-grep.md)
+    - [02 First Pipe](../bashcrawl/courses/pipelines/02-first-pipe.md)
+    - [03 Sort And Uniq](../bashcrawl/courses/pipelines/03-sort-and-uniq.md)
+    - [04 Cut](../bashcrawl/courses/pipelines/04-cut.md)
+    - [05 Redirect](../bashcrawl/courses/pipelines/05-redirect.md)
+    - [06 The Guild Report](../bashcrawl/courses/pipelines/06-the-guild-report.md)
+  - **Reading** <small>(5)</small>
+    - [Course](../bashcrawl/courses/reading/course.md)
+    - [01 Cat And File](../bashcrawl/courses/reading/01-cat-and-file.md)
+    - [02 Head And Tail](../bashcrawl/courses/reading/02-head-and-tail.md)
+    - [03 Counting](../bashcrawl/courses/reading/03-counting.md)
+    - [04 Numbers And Pages](../bashcrawl/courses/reading/04-numbers-and-pages.md)
+  - **Shell Craft** <small>(7)</small>
+    - [Course](../bashcrawl/courses/shell-craft/course.md)
+    - [01 Variables](../bashcrawl/courses/shell-craft/01-variables.md)
+    - [02 Arithmetic](../bashcrawl/courses/shell-craft/02-arithmetic.md)
+    - [03 Aliases](../bashcrawl/courses/shell-craft/03-aliases.md)
+    - [04 Globs And Quotes](../bashcrawl/courses/shell-craft/04-globs-and-quotes.md)
+    - [05 History](../bashcrawl/courses/shell-craft/05-history.md)
+    - [The Grimoire of Words of Power](../bashcrawl/courses/shell-craft/lab/grimoire.md)
+  - **Workshop** <small>(6)</small>
+    - [Course](../bashcrawl/courses/workshop/course.md)
+    - [01 Make](../bashcrawl/courses/workshop/01-make.md)
+    - [02 Copy And Move](../bashcrawl/courses/workshop/02-copy-and-move.md)
+    - [03 Remove](../bashcrawl/courses/workshop/03-remove.md)
+    - [04 Permissions](../bashcrawl/courses/workshop/04-permissions.md)
+    - [05 Write](../bashcrawl/courses/workshop/05-write.md)
+- **[Documentation](../bashcrawl/docs/index.md)** <small>(41)</small>
   - [Bashcrawl Documentation](../bashcrawl/docs/index.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Agent Mode Protocol Specification](../bashcrawl/docs/agent-protocol.md)
+  - [Authoring Courses](../bashcrawl/docs/authoring-courses.md)
   - [Bashcrawl Agent Playtest Report & Recommendations](../bashcrawl/docs/agent-playtest-report.md)
   - [Bashcrawl Improvement Plan](../bashcrawl/docs/improvement-plan.md)
   - [Bashcrawl Logging Framework Plan](../bashcrawl/docs/logging-framework-plan.md)
   - [Bashcrawl Observatory — Log & Screenshot Viewer](../bashcrawl/docs/viewer.md)
+  - [bashcrawl — Constitution](../bashcrawl/docs/constitution.md)
   - [Bashcrawl: Complete Game Walkthrough (demo-critical-path)](../bashcrawl/docs/demo-critical-path.md)
   - [Bashcrawl: Complete Game Walkthrough (demo-walkthrough)](../bashcrawl/docs/demo-walkthrough.md)
   - [Bashcrawl: Complete Walkthrough](../bashcrawl/docs/walkthrough.md)
@@ -43,14 +84,26 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
   - [Getting Started](../bashcrawl/docs/getting-started.md)
   - [Log & Screenshot Viewer — Design Reference](../bashcrawl/docs/log-viewer-reference.md)
   - [Runtime Architecture](../bashcrawl/docs/architecture-runtime.md)
+  - [The Bashcrawl Platform](../bashcrawl/docs/PLATFORM.md)
   - [Web Frontend API Design (Phase 2 Proposal)](../bashcrawl/docs/web-api-design.md)
+  - **[Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)** <small>(3)</small>
+    - [Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)
+    - [0001 — Ratify the constitution](../bashcrawl/docs/amendments/0001-ratify-constitution.md)
+    - [NNNN — Title of the amendment](../bashcrawl/docs/amendments/0000-template.md)
+  - **[Architecture Decision Records](../bashcrawl/docs/adr/README.md)** <small>(3)</small>
+    - [Architecture Decision Records](../bashcrawl/docs/adr/README.md)
+    - [ADR 0001 — Record architecture decisions](../bashcrawl/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR NNNN — Title in sentence case](../bashcrawl/docs/adr/0000-template.md)
   - **Generated** <small>(4)</small>
     - [Motion Clips and Art](../bashcrawl/docs/generated/motion.md)
     - [Quest Index](../bashcrawl/docs/generated/quests.md)
     - [Rooms Index](../bashcrawl/docs/generated/rooms.md)
     - [Runtime Commands](../bashcrawl/docs/generated/runtime-commands.md)
-  - **Schemas** <small>(3)</small>
+  - **Schemas** <small>(6)</small>
     - [Content Registry Contract (v1)](../bashcrawl/docs/schemas/content-registries.v1.md)
+    - [Events v1](../bashcrawl/docs/schemas/events.v1.md)
+    - [Plugins v1](../bashcrawl/docs/schemas/plugin.v1.md)
+    - [Rules v1](../bashcrawl/docs/schemas/rules.v1.md)
     - [Terminal Protocol v1](../bashcrawl/docs/schemas/terminal-protocol.v1.md)
     - [Terminal Protocol v2](../bashcrawl/docs/schemas/terminal-protocol.v2.md)
   - **Termforge** <small>(5)</small>

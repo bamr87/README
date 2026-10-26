@@ -54,11 +54,9 @@ UMAP préserve la structure locale *et* une part respectable de la structure glo
 ## Ce qu'étaient vraiment ces 14 dimensions
 
 - Une dense **galaxie de sondages de bots `/wp-admin` / `/.env`**, serrée et sans joie.
-- Un tendre petit cluster de **quasi-manqués à barre oblique finale** (`/about` contre
-  `/about/`) — des humains, des doigts, de l'espoir.
+- Un tendre petit cluster de **quasi-manqués à barre oblique finale** (`/about` contre `/about/`) — des humains, des doigts, de l'espoir.
 - Un **archipel de signets périmés** pointant vers des routes que j'ai renommées en 2024.
-- Un glorieux filament de **fautes de frappe aux gros doigts** dont la distance d'édition à la route réelle
-  était presque toujours exactement de 1. À une frappe de la maison, à chaque fois. J'ai ressenti des choses.
+- Un glorieux filament de **fautes de frappe aux gros doigts** dont la distance d'édition à la route réelle était presque toujours exactement de 1. À une frappe de la maison, à chaque fois. J'ai ressenti des choses.
 
 J'ai validé la stabilité en ré-embarquant à travers des sous-échantillons bootstrap et la macro-structure a magnifiquement tenu — cette variété est *réelle*, ce n'est pas un artéfact de projection, merci bien.
 

@@ -140,17 +140,10 @@ Not a clean slice — **four high-severity, sandbox-reproduced defects** across 
 - **What was tested vs reasoned:** Every `passed`/`failed` above is a command the
 engine ran in a live PostgreSQL 16 sandbox — including the four high-severity failures, which were each reproduced (FATAL logs / container exit codes quoted verbatim). Items marked `reasoned` are OS-specific install paths (sudo denied, no macOS/Windows in a Linux sandbox), illustrative pseudocode, or arithmetic (HikariCP formula) — I did not manufacture output for any of them.
 - **Coverage / limits:**
-  - Snippets actually run: Backup **6/7** runnable, Query Optimization **5/9**
-    (3 install paths skipped as OS-specific), Connection Pooling **8/6** (the 8
-    includes the engine's corrected re-runs proving each fix).
-  - The macOS, Windows, and Linux-sudo install blocks in every quest are
-    **`reasoned` only** — not executable in this sandbox — so platform-specific
-    breakage on those paths could exist beyond what I observed.
-  - `database-fundamentals` and `sql-mastery` (this window's declared
-    prerequisites) were **outside the walked window** and not verified here.
-  - The cross-quest Docker port collision is a **reasoned** chain observation; the
-    engine scores each quest in isolation and did not run the three containers
-    concurrently.
+  - Snippets actually run: Backup **6/7** runnable, Query Optimization **5/9** (3 install paths skipped as OS-specific), Connection Pooling **8/6** (the 8 includes the engine's corrected re-runs proving each fix).
+  - The macOS, Windows, and Linux-sudo install blocks in every quest are **`reasoned` only** — not executable in this sandbox — so platform-specific breakage on those paths could exist beyond what I observed.
+  - `database-fundamentals` and `sql-mastery` (this window's declared prerequisites) were **outside the walked window** and not verified here.
+  - The cross-quest Docker port collision is a **reasoned** chain observation; the engine scores each quest in isolation and did not run the three containers concurrently.
 - **Confidence:** High on the four high-severity defects (sandbox-reproduced with
 quoted failure output) and on the Docker-path pattern. Medium on the reasoned cross-quest and install-path observations. The **fail** session verdict is driven by the capstone quest failing (45%) with two broken safety-critical artifacts on the level's terminating quest, compounded by the systemic Docker-path defect.
 - **Cost:** ~$2.53 across the three-quest execute run.

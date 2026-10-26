@@ -14,10 +14,8 @@ Operational checklist for the planning committee. Canonical contract: [`/issue-p
 
 ## Golden rules
 1. **Read-only on code.** Only `_data/roadmap_plan.yml` and the pinned issue change.
-2. **Order only.** Reference task ids; never copy a backlog-owned field
-   (risk/priority/area/status) into the plan — `sync-plan.rb --check` rejects it.
-3. **Deterministic.** Same corpus ⇒ byte-identical plan. Skip the whole run when
-   the corpus hash is unchanged.
+2. **Order only.** Reference task ids; never copy a backlog-owned field (risk/priority/area/status) into the plan — `sync-plan.rb --check` rejects it.
+3. **Deterministic.** Same corpus ⇒ byte-identical plan. Skip the whole run when the corpus hash is unchanged.
 4. **Bounded.** Exactly 4 lenses, no recursion; batches ≤6 tasks; ≤5 batches/run.
 5. **Autonomy is derived, never re-encoded** — point at `continuous-evolution.md`.
 
@@ -42,5 +40,4 @@ Open a `chore(plan)` PR (no auto-merge). On merge, `scripts/sync-plan.sh` upsert
 
 ## Idempotency
 - The corpus-hash gate makes a no-change run a no-op (cheap on schedule).
-- The pinned issue is marker-fenced (`<!-- roadmap-plan:pinned -->`) and upserted,
-  never duplicated.
+- The pinned issue is marker-fenced (`<!-- roadmap-plan:pinned -->`) and upserted, never duplicated.

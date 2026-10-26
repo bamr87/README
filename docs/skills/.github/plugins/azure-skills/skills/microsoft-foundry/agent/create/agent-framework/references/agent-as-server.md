@@ -45,8 +45,7 @@ from_agent_framework(agent).run()
 ```
 
 Notes:
-- User may or may not have `azure.ai.agentserver.agentframework` installed, if not, install it via or equivalent with other package managers:
-  `pip install azure-ai-agentserver-core==1.0.0b10 azure-ai-agentserver-agentframework==1.0.0b10`
+- User may or may not have `azure.ai.agentserver.agentframework` installed, if not, install it via or equivalent with other package managers: `pip install azure-ai-agentserver-core==1.0.0b10 azure-ai-agentserver-agentframework==1.0.0b10`
 
 - When changing the startup command line, make sure the http server mode is the default one (without any additional flag), which is better for further development (like local debugging) and deployment (like containerization and deploy to Microsoft Foundry).
 

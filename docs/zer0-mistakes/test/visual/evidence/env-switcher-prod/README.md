@@ -15,13 +15,9 @@ The include renders server-side, so the production states are **real `JEKYLL_ENV
 ## What each file shows
 
 - **`01-quick-links-prod.png`** — the Quick Links card, three states:
-  1. **BEFORE (production)**: rows Prod · **Dev** · Source — the dead
-     `localhost:4000/` row, with working open/copy buttons, shipped to
-     production visitors.
-  2. **AFTER (production)**: rows Prod · Source — no Dev row, zero
-     `localhost:4000` occurrences in the Settings chrome.
-  3. **AFTER (development)**: rows Prod · Dev · Source — the Dev row is
-     preserved for local work.
+  1. **BEFORE (production)**: rows Prod · **Dev** · Source — the dead `localhost:4000/` row, with working open/copy buttons, shipped to production visitors.
+  2. **AFTER (production)**: rows Prod · Source — no Dev row, zero `localhost:4000` occurrences in the Settings chrome.
+  3. **AFTER (development)**: rows Prod · Dev · Source — the Dev row is preserved for local work.
 - **`metrics.json`** — the row list (badge + href) and the count of
 `localhost:4000` occurrences inside `#info-section` per state. (Page *content* legitimately mentions `localhost:4000` in setup code samples; the counted leak is chrome only.)
 

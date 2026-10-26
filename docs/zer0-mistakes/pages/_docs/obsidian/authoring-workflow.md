@@ -31,17 +31,14 @@ Obsidian (edit)  →  git commit  →  GitHub push  →  Pages build  →  live 
 1. **Open the vault** in Obsidian (root of the repo).
 2. **Create a note** with `Cmd/Ctrl + N`. The Templates core plugin will
 offer `note-template.md` from `pages/_notes/_templates/`. Picking it stamps the canonical frontmatter (title, layout, permalink, …).
-3. **Write freely** with `[[wiki-links]]`, `![[embeds]]`, callouts, and
-   `#tags`. Every one of those renders 1:1 on the site (see
+3. **Write freely** with `[[wiki-links]]`, `![[embeds]]`, callouts, and `#tags`. Every one of those renders 1:1 on the site (see
    [syntax reference]({{ "/docs/obsidian/syntax-reference/" | relative_url }})).
 4. **Drop images** into the editor — Obsidian saves them under
 `assets/images/notes/` (configured in `.obsidian/app.json`), which is exactly where `![[image.png]]` resolves on the site.
 5. **Commit & push.**
-   - With **Obsidian Git plugin**: `Ctrl/Cmd + P` → *Source control: Commit
-     all changes* → *Push*.
+   - With **Obsidian Git plugin**: `Ctrl/Cmd + P` → *Source control: Commit all changes* → *Push*.
    - From the terminal: standard `git add / git commit / git push`.
-6. **GitHub Pages** rebuilds automatically. Within ~1 minute the new note
-   is live at the permalink declared in its frontmatter.
+6. **GitHub Pages** rebuilds automatically. Within ~1 minute the new note is live at the permalink declared in its frontmatter.
 
 ## Editing existing content
 

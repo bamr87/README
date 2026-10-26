@@ -125,8 +125,7 @@ Execute the complete release pipeline for the current changes in the repository.
    git add -A
    ```
 
-2. **Create Semantic Commit Message**:
-   Format: `<type>(<scope>): <description>`
+2. **Create Semantic Commit Message**: Format: `<type>(<scope>): <description>`
    
    Types:
    - `feat`: New feature

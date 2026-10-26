@@ -34,11 +34,9 @@ Modules use the lightweight `deploy_render` placeholder set (`{{RUBY_VERSION}}`,
 
 1. Add `templates/deploy/<slug>/` with the assets (workflow YAML,
 Dockerfile, README, etc.). Use `*.template` for files that need variable substitution.
-2. Create `scripts/lib/install/deploy/<slug>.sh` exporting the four
-   hooks above.
+2. Create `scripts/lib/install/deploy/<slug>.sh` exporting the four hooks above.
 3. Add `<slug>` to `DEPLOY_TARGETS_LIST` in `registry.sh` (alphabetical).
-4. Optionally reference `<slug>` under `deploy_targets:` in
-   `templates/profiles/*.yml` so the profile can suggest it.
+4. Optionally reference `<slug>` under `deploy_targets:` in `templates/profiles/*.yml` so the profile can suggest it.
 5. Update `templates/deploy/README.md` with the new target row.
 
 ## CLI integration

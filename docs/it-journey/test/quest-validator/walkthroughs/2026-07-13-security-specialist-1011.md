@@ -46,20 +46,17 @@ Dimensions: commands_work **2**, content_accuracy **2**, completeness **2**, cla
 - **`failed`** · `python recovery_coordinator.py --results-dir ./results/ --task-id test-task-123`
 — with realistic downloaded-artifact JSON (`subtask1-result/subtask1-analysis.json`, `checkpoint_available=true`) the script produced strategy `redelegate`/task `unknown` instead of the expected `retry_from_checkpoint`, because `results.get(f"{agent_id}-result")` builds key `sub-agent-1-result` which never matches the `subtask1-*` naming used everywhere else in the same quest. Reproducible naming-mismatch bug that defeats the quest's core checkpoint-recovery objective even though the script exits 0.
 - `passed` · same script with empty results dir + both agents failed (degenerate path runs).
-- `skipped` · `python3 scripts/validate_quest.py --quest q16` — script not present in
-  quest content (parent-repo infra), FileNotFoundError; not runnable from the quest alone.
+- `skipped` · `python3 scripts/validate_quest.py --quest q16` — script not present in quest content (parent-repo infra), FileNotFoundError; not runnable from the quest alone.
 - Also verified statically: the script emits deprecated `print("::set-output name=…")`
 (disabled on GitHub runners since mid-2023) rather than writing `$GITHUB_OUTPUT`, so the downstream `if: fromJSON(steps.assess.outputs.needs_redelegation)` step never fires.
-- `subtask.py`, `save_checkpoint.py`, `redelegate_tasks.py` are invoked in YAML but never
-  defined — the workflow cannot run end-to-end even after the templating/output fixes.
+- `subtask.py`, `save_checkpoint.py`, `redelegate_tasks.py` are invoked in YAML but never defined — the workflow cannot run end-to-end even after the templating/output fixes.
 
 ### 2. AI Feature Pipeline Architect: DevSecOps Mastery Quest — 30% (fail)
 Dimensions: commands_work **1**, content_accuracy **1**, completeness **1**, clarity 2, structure 2, safety 4. Snippets run: **10/11 (8✗)**. Frontmatter `draft: true`.
 - `passed` · devcontainer.json `echo` write; `passed` · requirement schema JSON block.
 - **`failed`** · `pip install langchain anthropic openai mcp-client` + `RequirementProcessor`
 — `mcp-client` is not a real PyPI package; `from langchain.agents import Agent` and `from mcp import MCPClient` are not real exports; `Anthropic` is used but never imported.
-- **`failed`** · `echo "…reset their passwords…" | python intake_agent.py` — `intake_agent.py`
-  is never provided, so the "Expected output" claim is unreachable.
+- **`failed`** · `echo "…reset their passwords…" | python intake_agent.py` — `intake_agent.py` is never provided, so the "Expected output" claim is unreachable.
 - **`failed` ×4** · Chapter 2–5 orchestrator classes (`ImplementationOrchestrator`,
 `DocumentationAgent`, `TestingOrchestrator`, `DeploymentOrchestrator`) all reference undefined agent classes → NameError/AttributeError the instant they're exercised.
 - **`failed`** · Windows Chocolatey bootstrap; `reasoned` · Linux apt block; `skipped` ·
@@ -68,8 +65,7 @@ macOS brew block (includes `brew install --cask github-copilot-cli`, which appea
 ### 3. The Sealed Evidence: Slaying the Self-Grading Golem — 77% (warn)
 Dimensions: commands_work 3, content_accuracy 4, completeness 4, clarity 4, structure 5, safety 5. Snippets run: conceptual (no directly-runnable learner snippets).
 - `passed` · Chapter 1 diagnostic `echo "TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-SCRUBBED}"`.
-- `passed` · Chapter 2 MINT / SEAL / RESTORE shell steps hand-simulated with stub scripts:
-  the `cmp -s` tamper guard + sealed-copy-wins restore logic behaves exactly as taught.
+- `passed` · Chapter 2 MINT / SEAL / RESTORE shell steps hand-simulated with stub scripts: the `cmp -s` tamper guard + sealed-copy-wins restore logic behaves exactly as taught.
 - `skipped` · CONSUME step (needs a live `claude-run` action + credentials — correctly
 not exercised in-sandbox). `reasoned` · design/network mermaid diagrams and Boss-Fight adversarial prompt block.
 - Gaps: no hands-on local lab (a learner only reads a CI-bound YAML fragment), and the
@@ -89,11 +85,9 @@ git-tracked files, so the untracked-`.env` scenario the quest walks through repo
 ### 5. Threat Modeling: STRIDE Framework and Attack Trees Analysis — 91% (pass)
 Dimensions: commands_work 4, content_accuracy 5, completeness 4, clarity 5, structure 5, safety 5. Snippets run: **1/4**.
 - `passed` · Cloud-Realms `echo "Open https://www.threatdragon.com/ …"` executed as described.
-- `reasoned` · Mermaid DFD with trust-boundary subgraphs, STRIDE walkthrough table, attack
-  tree, and likelihood×impact priority table — all technically accurate.
+- `reasoned` · Mermaid DFD with trust-boundary subgraphs, STRIDE walkthrough table, attack tree, and likelihood×impact priority table — all technically accurate.
 - `skipped` · macOS/Windows/Linux editor-install blocks — legitimately OS-gated, not broken.
-- Gap: the "Living Threat Models" secondary objective is listed (line 108) but never
-  covered in a chapter; knowledge-check questions have no answer keys.
+- Gap: the "Living Threat Models" secondary objective is listed (line 108) but never covered in a chapter; knowledge-check questions have no answer keys.
 
 ## 🐞 Issues Found
 

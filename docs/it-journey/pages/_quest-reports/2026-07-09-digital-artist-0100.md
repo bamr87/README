@@ -63,37 +63,29 @@ quest.** Reading the source, the quest is well-structured (clear image-vs-contai
 
 ### 2 · Docker Compose Orchestration — ✅ 83
 - Snippets: **ran 13, passed 12, failed 1, skipped 4** (available_runnable 8).
-- `passed` — `app.py` (Flask+Redis), `Dockerfile` (python:3.12-slim), `compose.yaml`
-  web+redis stack, full `up -d / ps / logs -f / down` lifecycle.
+- `passed` — `app.py` (Flask+Redis), `Dockerfile` (python:3.12-slim), `compose.yaml` web+redis stack, full `up -d / ps / logs -f / down` lifecycle.
 - `passed` — custom `frontend`/`backend` networks compose file (network isolation
 claim verified); postgres named-volume + bind-mount; volume persistence across `down`/`up` and removal on `down -v`.
-- `passed` — `.env` + full stack with `env_file`, `healthcheck`,
-  `depends_on: condition` (health-gated startup order verified).
+- `passed` — `.env` + full stack with `env_file`, `healthcheck`, `depends_on: condition` (health-gated startup order verified).
 - `failed` — Chapter 3 final block `docker compose up -d --scale web=3`:
   > "`config` and `up -d` passed cleanly (db went healthy, web started).
   > `docker compose up -d --scale web=3` **FAILED**: 'Error response from daemon: …
   > Bind for 0.0.0.0:8080 failed: port is already allocated' — because web publishes
   > a fixed host port. `down -v` afterward worked fine."
 - `skipped` — the macOS/Windows/other-platform install blocks (sandbox is Linux).
-- Dimensions: commands_work 4, content_accuracy 4, completeness 4, clarity 4,
-  structure 5, safety 5.
+- Dimensions: commands_work 4, content_accuracy 4, completeness 4, clarity 4, structure 5, safety 5.
 
 ### 3 · Dockering Jekyll with Bootstrap 5 — ❌ 33
 - Snippets: **ran 8, passed 4, failed 4, skipped 1, reasoned 1** (runnable 4).
-- `passed` — create `Dockerfile` (FROM jekyll/jekyll:latest); create
-  `docker-compose.yml`; `git init && add && commit`.
+- `passed` — create `Dockerfile` (FROM jekyll/jekyll:latest); create `docker-compose.yml`; `git init && add && commit`.
 - `failed` — `docker-compose run jekyll jekyll new .` → conflicts with the
 Dockerfile/compose files created two steps earlier. Engine confirmed the workaround `jekyll new . --force` `passed`.
-- `failed` — `cd my-jekyll-site` → **directory never exists** (`jekyll new .`
-  installs into the current dir, so there is no subfolder).
+- `failed` — `cd my-jekyll-site` → **directory never exists** (`jekyll new .` installs into the current dir, so there is no subfolder).
 - `failed` — `index.html` containing `{​% raw %​}{​% include head.html %​}{​% endraw %​}`
 → the `{​% raw %​}` wrapper is in the *copy-pasteable* sample, so the include (and thus Bootstrap) never loads when built.
-- `failed` — final `docker-compose up` → crashes `Bundler::GemNotFound` because
-  installed gems don't persist between container runs (no bundle volume).
-- `reasoned` — the `head.html` Bootstrap tags carry `integrity="sha384-xxx"`
-  placeholder hashes.
-- Dimensions: commands_work 1, content_accuracy 1, completeness 2, clarity 2,
-  structure 2, safety 4.
+- `failed` — final `docker-compose up` → crashes `Bundler::GemNotFound` because installed gems don't persist between container runs (no bundle volume).
+- `reasoned` — the `head.html` Bootstrap tags carry `integrity="sha384-xxx"` placeholder hashes.
+- Dimensions: commands_work 1, content_accuracy 1, completeness 2, clarity 2, structure 2, safety 4.
 
 ### 4 · Frontend Forests: Building a Jekyll Site with Bootstrap — ❌ 55
 - Snippets: **ran 8, passed 6, failed 2, skipped 1, reasoned 9** (runnable 0 fenced-
@@ -103,8 +95,7 @@ runnable; much of the quest is prose/Liquid explanation, verified by reasoning +
 - `failed` — Step 3 "Open `_includes/head.html` and add the Bootstrap CSS link" and
 Step 3/4 "Edit `_layouts/default.html`" → **these files don't exist** in a freshly scaffolded site using the default gem theme; no guidance to create/override them. This is the quest's central task and it can't be completed as written.
 - `reasoned` — Chapter 9 Liquid/layout-chain/`include` explanations (accurate).
-- Dimensions: commands_work 2, content_accuracy 3, completeness 2, clarity 3,
-  structure 3, safety 5.
+- Dimensions: commands_work 2, content_accuracy 3, completeness 2, clarity 3, structure 3, safety 5.
 
 ### 5 · The Artisan's Forge: Refactoring Jekyll Theme Components — ⚠️ 78
 - Snippets: **ran 11, passed 11, failed 0, skipped 1, reasoned 2** (runnable 3).
@@ -113,8 +104,7 @@ Step 3/4 "Edit `_layouts/default.html`" → **these files don't exist** in a fre
 - **Not surfaced as a failure by the engine but flagged in its summary:** the quest
 never shows how to `@import "components/nanobar"` into a compiled stylesheet, so a learner gets a green `jekyll build` with **no nanobar CSS actually shipped**.
 - `skipped` — `docker-compose exec -T jekyll …` (Compose V1 binary absent in sandbox).
-- Dimensions: commands_work 4, content_accuracy 4, completeness 3, clarity 4,
-  structure 3, safety 5.
+- Dimensions: commands_work 4, content_accuracy 4, completeness 3, clarity 4, structure 3, safety 5.
 
 ## 🐞 Issues Found
 
@@ -123,18 +113,15 @@ Every item below cites a command the engine ran or an exact line from the quest 
 ### Dockering Jekyll with Bootstrap 5 (`frontend-docker.md`) — the most broken quest
 - **HIGH · Step 2.3 (`jekyll new .` conflict)** — observed the command `failed`
 against the Dockerfile/compose files created two steps earlier. *Fix:* run `jekyll new .` in an empty dir first, or document `--force` and why.
-- **HIGH · Step 3.1 (`cd my-jekyll-site`)** — observed the directory does not exist.
-  *Fix:* remove the step; `jekyll new .` stays in the current directory.
+- **HIGH · Step 3.1 (`cd my-jekyll-site`)** — observed the directory does not exist. *Fix:* remove the step; `jekyll new .` stays in the current directory.
 - **HIGH · Step 4 (`{​% raw %​}{​% include head.html %​}{​% endraw %​}`)** — observed the
 built site never includes Bootstrap because the `raw` wrapper is in the pasteable sample. *Fix:* use plain `{​% include head.html %​}`.
 - **HIGH · Final `docker-compose up` (gem persistence)** — observed
 `Bundler::GemNotFound` crash. *Fix:* add a named `bundle_cache:/usr/local/bundle` volume, or run `bundle install && jekyll serve` in the serving container.
 - **MEDIUM · Bootstrap 5 markup accuracy** — sample uses `data-toggle`, `sr-only`,
 `.jumbotron`, jQuery+Popper (all Bootstrap 4). *Fix:* `data-bs-toggle`, `visually-hidden`, drop `.jumbotron`/jQuery; `bootstrap.bundle.min.js` includes Popper.
-- **MEDIUM · `docker-compose` vs `docker compose`** — the standalone binary is
-  deprecated / absent on the sandbox. *Fix:* use Compose V2 `docker compose`.
-- **MEDIUM · SRI `sha384-xxx` placeholders** — `reasoned` from source. *Fix:* ship
-  the real hash or link the exact CDN snippet page.
+- **MEDIUM · `docker-compose` vs `docker compose`** — the standalone binary is deprecated / absent on the sandbox. *Fix:* use Compose V2 `docker compose`.
+- **MEDIUM · SRI `sha384-xxx` placeholders** — `reasoned` from source. *Fix:* ship the real hash or link the exact CDN snippet page.
 - **LOW** · obsolete `version: '3'` key; **LOW** · auto-seeded placeholder objectives.
 
 ### Frontend Forests (`frontend.md`)
@@ -148,8 +135,7 @@ theme-override explanation before Step 3; **LOW** · add explicit Prerequisites 
 ### The Artisan's Forge (`jekyll-component-refactoring.md`)
 - **HIGH · Phase 3 (SCSS never imported)** — verified a green build ships zero
 nanobar CSS because no step wires `_nanobar.scss` into a compiled stylesheet. *Fix:* add `@import "components/nanobar";` in `assets/css/main.scss` (with front matter).
-- **HIGH · duplicated "📚 Resources" section** — appears twice verbatim. *Fix:*
-  delete the copy after the closing banner.
+- **HIGH · duplicated "📚 Resources" section** — appears twice verbatim. *Fix:* delete the copy after the closing banner.
 - **MEDIUM** · under-specified bonus objectives ("step animation", "CI validation
 test") with no body instructions; **MEDIUM** · `docker-compose exec` → `docker compose exec` (V1 absent, confirmed skipped); **LOW** footer-example / step-order clarifications.
 
@@ -158,8 +144,7 @@ test") with no body instructions; **MEDIUM** · `docker-compose exec` → `docke
 web=3` fails ("port is already allocated") because `web` publishes a fixed host port. *Fix:* remove the fixed `ports:` mapping for the scaled service (use a range or a reverse proxy), or explicitly caveat that `--scale` needs the host port dropped.
 
 ### Container Fundamentals (`container-fundamentals.md`)
-- **No content issue witnessed.** The engine unscored it (max-turns while curling a
-  container the sandbox can't run). Flagged only as a **coverage gap** (see §7).
+- **No content issue witnessed.** The engine unscored it (max-turns while curling a container the sandbox can't run). Flagged only as a **coverage gap** (see §7).
 
 **Not "no blocking issues":** this slice has 4 HIGH content bugs across the two Jekyll main quests plus the SCSS-import bug — all blocking for a beginner.
 
@@ -191,17 +176,9 @@ workflow** in `walk-evidence.json` / `walk-evidence.md`. I consumed it verbatim 
 - **What I ran vs. reasoned:** every `passed`/`failed`/`skipped` above is a command
 the engine actually executed in a disposable temp dir (12 passed / 1 failed for Compose; 4/4 for `frontend-docker`; 6 passed / 2 failed for `frontend`; 11/0 for the refactor quest). My own contribution — the chain-continuity analysis and the ordering/prerequisite findings — is `reasoned` from reading each quest source in plan order, and is labelled as such.
 - **Coverage caps / honesty:**
-  - **Quest 1 (`container-fundamentals`) is unscored** — the engine hit its 40-turn
-    limit retrying `curl localhost:8080` against a container the sandbox can't run.
-    I report it as an executed-but-**errored** coverage gap, not as pass or fail, and
-    I did not invent a score for it. Its clean structure is a `reasoned` observation
-    only.
-  - `frontend`'s content is heavily prose/Liquid (0 fenced *runnable* snippets); 9 of
-    its items are `reasoned`, so its evidence is weaker than the container quests'.
-  - Platform-specific (macOS/Windows) install blocks and Docker Compose **V1**
-    (`docker-compose`) commands were `skipped` — the Linux sandbox has neither, which
-    is itself a signal the quests should move to Compose V2.
-  - **Window:** this was window **1 of 2** — quests 6-8 of the 8-quest level were
-    not walked this run and are out of scope for this report.
+  - **Quest 1 (`container-fundamentals`) is unscored** — the engine hit its 40-turn limit retrying `curl localhost:8080` against a container the sandbox can't run. I report it as an executed-but-**errored** coverage gap, not as pass or fail, and I did not invent a score for it. Its clean structure is a `reasoned` observation only.
+  - `frontend`'s content is heavily prose/Liquid (0 fenced *runnable* snippets); 9 of its items are `reasoned`, so its evidence is weaker than the container quests'.
+  - Platform-specific (macOS/Windows) install blocks and Docker Compose **V1** (`docker-compose`) commands were `skipped` — the Linux sandbox has neither, which is itself a signal the quests should move to Compose V2.
+  - **Window:** this was window **1 of 2** — quests 6-8 of the 8-quest level were not walked this run and are out of scope for this report.
 - **Confidence:** High on the four scored quests (direct sandbox execution).
 Medium-low on quest 1 (unverified). High on the chain-continuity findings, since they rest on declared frontmatter dependencies + observed shared defects, not on guesswork.

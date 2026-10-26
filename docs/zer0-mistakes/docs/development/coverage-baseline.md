@@ -59,8 +59,7 @@ Remaining gaps (see T-020):
 
 - **`scripts/lib/install/wizard_interactive.sh`** (189 lines): the prompt
 helpers and `wizard_interactive_run` have zero CI coverage (the `--ai` tier needs `OPENAI_API_KEY`; the interactive tier needs a TTY).
-- **`scripts/lib/install/upgrade.sh`** (184 lines): the migration/upgrade
-  path for an existing site has no dedicated assertions.
+- **`scripts/lib/install/upgrade.sh`** (184 lines): the migration/upgrade path for an existing site has no dedicated assertions.
 
 ### 5 · Consumer audit tooling — MODERATE coverage ✅
 
@@ -90,9 +89,7 @@ Front matter validated by `test_core.sh` and `scripts/lint-pages --strict` (all 
 ## Methodology notes
 
 - Line counts from `wc -l` on 2026-06-12; they drift as files change.
-- "Dedicated tests" = test files that explicitly import, source, or name the
-  module under test (verified with `grep -l`).
-- Indirect coverage (a module called by a higher-level test but not directly
-  asserted) is noted but not counted as "covered" for baseline purposes.
+- "Dedicated tests" = test files that explicitly import, source, or name the module under test (verified with `grep -l`).
+- Indirect coverage (a module called by a higher-level test but not directly asserted) is noted but not counted as "covered" for baseline purposes.
 - No numeric percentage yet: no line-instrumentation tool is wired into CI.
 A future task should wire `simplecov` (Ruby) and `bashcov`/`kcov` (shell) to replace this structural estimate with measured percentages.

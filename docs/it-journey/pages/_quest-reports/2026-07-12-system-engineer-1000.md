@@ -140,21 +140,10 @@ by running `test/quest-validator/agentic_validate.py --mode execute` in the disp
 - **What I ran vs. reasoned:** the *engine* ran the commands (AWS CLI v2.35.15,
 Terraform v1.15.8 via Docker with a local-provider stand-in, and the War Machine's Python/bash/git scripts against a local bare repo). I independently **read all four quest sources in plan order** and cross-checked the engine's findings against the actual lines, then reasoned about the linked journey (§6). Every issue is labelled `tested` (sandbox run) or `reasoned` (quoted source). I additionally verified on the host filesystem that the Azure quest's referenced deploy script exists.
 - **Coverage & limits (honest):**
-  - **Azure Ascension has NO machine score** — the engine exited 1 at max_turns(40).
-    I report it as no-evidence/tooling-error and only reasoned statically; I did not
-    fabricate a score or verdict for it. This is the single biggest coverage gap of
-    the session.
-  - Cloud provisioning could not be exercised for real (no AWS/Azure credentials,
-    outbound network denied, `sudo` out of policy). AWS and Terraform commands were
-    therefore **syntax/parse-verified** (they reached the expected `NoCredentials`
-    stage) and, for Terraform, **functionally reproduced** with a credential-free
-    local provider. This is strong evidence for correctness of syntax and lifecycle,
-    but does **not** prove a live provision succeeds end-to-end.
-  - Snippet coverage per quest: AWS 2/8 runnable ran; IaC 7/6 ran (some run more than
-    once across substitutes); War Machine 13/7 ran; Azure 0 (errored).
-  - No link-checking or rendered-site validation was performed; the Azure
-    relative-link note is flagged for a content pass, not verified here.
+  - **Azure Ascension has NO machine score** — the engine exited 1 at max_turns(40). I report it as no-evidence/tooling-error and only reasoned statically; I did not fabricate a score or verdict for it. This is the single biggest coverage gap of the session.
+  - Cloud provisioning could not be exercised for real (no AWS/Azure credentials, outbound network denied, `sudo` out of policy). AWS and Terraform commands were therefore **syntax/parse-verified** (they reached the expected `NoCredentials` stage) and, for Terraform, **functionally reproduced** with a credential-free local provider. This is strong evidence for correctness of syntax and lifecycle, but does **not** prove a live provision succeeds end-to-end.
+  - Snippet coverage per quest: AWS 2/8 runnable ran; IaC 7/6 ran (some run more than once across substitutes); War Machine 13/7 ran; Azure 0 (errored).
+  - No link-checking or rendered-site validation was performed; the Azure relative-link note is flagged for a content pass, not verified here.
 - **Confidence:** High on Terraform (pass, reproduced verbatim) and on the two
 `high` War Machine findings (directly reproduced). High on the AWS security-group ordering gap (engine-traced + confirmed against source lines). **None** on Azure (no evidence). Medium on the Azure structural observations (source-only).
-- **Scope discipline:** one slice, one report. No quest content was modified; no
-  branch/commit/PR was made. Fixable bugs live in §5 for a content pass to act on.
+- **Scope discipline:** one slice, one report. No quest content was modified; no branch/commit/PR was made. Fixable bugs live in §5 for a content pass to act on.
