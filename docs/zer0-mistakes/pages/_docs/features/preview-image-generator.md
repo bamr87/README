@@ -295,10 +295,8 @@ Add to a CI workflow (generation is script-driven, never part of the Jekyll buil
 
 ### Claude orchestration
 
-- Covered by a Claude Pro/Max subscription when using a Claude Code OAuth
-  token or the `claude` CLI; API-key usage bills normal Anthropic token rates
-- Analysis is one small text call per image; review is one vision call (plus
-  one extra render when a revision is requested)
+- Covered by a Claude Pro/Max subscription when using a Claude Code OAuth token or the `claude` CLI; API-key usage bills normal Anthropic token rates
+- Analysis is one small text call per image; review is one vision call (plus one extra render when a revision is requested)
 
 ### OpenAI DALL-E 3
 

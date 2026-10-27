@@ -19,8 +19,7 @@ Scoping the rule to `.code-block-header` / `pre.highlight` is therefore not a no
 on this branch (AFTER), at 390px and 1280px. Read the hero buttons and the badge row: BEFORE they are thin strips squashed to zero vertical padding; AFTER they carry the theme's own `.btn` metrics. Nothing else on the page moves, and page overflow is 0px on both.
 - **`02-viewport-matrix-home.png`** — the header band from 320px to 1440px on
 this branch. Included because a change to button metrics is exactly the kind that breaks a narrow navbar; it does not. Overflow stays 0px at every width.
-- **`metrics.json`** — the measured sweep behind that claim: six widths, before
-  and after status + overflow.
+- **`metrics.json`** — the measured sweep behind that claim: six widths, before and after status + overflow.
 - **`CHANGELOG-snippet.txt`** — the link line pasted into `CHANGELOG.md`.
 
 The nine refreshed baselines under `test/visual/snapshots/` were reviewed as per-skin pixel diffs before being blessed. Every red region in them is a `<button>` — the navbar dropdown toggles and the cookie-consent banner's three buttons. No text, imagery, colour, or layout outside a button changed.

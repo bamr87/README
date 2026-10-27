@@ -106,12 +106,10 @@ matching `_data/features.yml`'s `tests:` links (`search.spec.js`, `admin.spec.js
 
 The Playwright runner is split into tiers selected via `PLAYWRIGHT_PROJECT`:
 
-- **smoke** (default) — every spec in `core/` and `features/` except the
-  pixel-snapshot test.
+- **smoke** (default) — every spec in `core/` and `features/` except the pixel-snapshot test.
 - **snapshots** — pixel screenshots of the homepage in each of the 9 theme
 skins, isolated in `features/appearance-snapshot.spec.js` (path-filtered in CI).
-- **regression-{chromium,firefox,webkit}** — all specs across all browsers
-  (manual `workflow_dispatch` only).
+- **regression-{chromium,firefox,webkit}** — all specs across all browsers (manual `workflow_dispatch` only).
 
 ```bash
 # Smoke tier — starts Jekyll on 127.0.0.1:4000 unless BASE_URL is already set

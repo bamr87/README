@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 17,
-    "fingerprint": "3a15e2a411867948",
+    "file_count": 30,
+    "fingerprint": "c554a5c09b9d8ea3",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 145453
+    "total_bytes": 173522
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -27,24 +27,31 @@
   "key_docs": [
     "README.md",
     "CLAUDE.md",
+    "AGENTS.md",
     "CHANGELOG.md",
     "SECURITY.md",
     "FORKME/FORKME.md",
     "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
-    "FORKME/FORKME-EXAMPLES.md",
-    "FORKME/IMPROVEMENTS.md"
+    "FORKME/FORKME-EXAMPLES.md"
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "c719dd1841f8e626",
+    "fingerprint": "d7e0e72808aa396e",
     "index": "scripts/README.md",
-    "max_depth": 2,
-    "pages": 17,
+    "max_depth": 3,
+    "pages": 28,
     "present": true,
-    "sections": 2,
-    "skipped": 0,
+    "sections": 5,
+    "skipped": 1,
     "title": "Scripts",
     "top_sections": [
+      {
+        "index": "scripts/docs/README.md",
+        "pages": 8,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
       {
         "index": "scripts/FORKME/README.md",
         "pages": 7,
@@ -79,7 +86,7 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 17
+      "scripts": 30
     },
     "code_languages": [
       "bash",
@@ -87,13 +94,13 @@
       "yaml",
       "text"
     ],
-    "indexed_documents": 17,
+    "indexed_documents": 30,
     "top_tags": [],
-    "total_words": 17624
+    "total_words": 21448
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": false,
+    "has_agents_md": true,
     "has_changelog": true,
     "has_claude_md": true,
     "has_contributing": false,
@@ -102,13 +109,19 @@
   },
   "structure": {
     "root_docs": [
+      "AGENTS.md",
       "CHANGELOG.md",
       "CLAUDE.md",
+      "PRD.md",
       "README.md",
       "RENAME-DIRECTORY-QUICK-REFERENCE.md",
       "SECURITY.md"
     ],
     "top_dirs": [
+      {
+        "doc_count": 8,
+        "name": "docs"
+      },
       {
         "doc_count": 7,
         "name": "FORKME"
@@ -118,8 +131,16 @@
         "name": "STASHME"
       },
       {
+        "doc_count": 2,
+        "name": ".claude"
+      },
+      {
         "doc_count": 1,
         "name": "linting"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
       }
     ]
   }

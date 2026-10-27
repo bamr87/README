@@ -33,8 +33,7 @@ Contains abstract base classes and mixins that can be shared across different mo
 ### config.py
 Application-wide configuration and settings:
 - `AppConfig`: GitHub publishing configuration
-- `AIProviderConfig`: Per-provider credentials and defaults, one row per provider,
-  at most one flagged `is_default` (enforced in `save()`)
+- `AIProviderConfig`: Per-provider credentials and defaults, one row per provider, at most one flagged `is_default` (enforced in `save()`)
 - `PoweredBy`: Attribution links for technologies used
 - `FieldDefaults`: Dynamic default values for model fields
 

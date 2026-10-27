@@ -83,12 +83,10 @@ produced a working `test` script; `total.js`/`total.test.js` ran via `npm test` 
 ~369, and the CI YAML lines ~284/299/310 imply) → **`npm error Missing script: "test:unit"`**. The quest never shows how to create `test:unit`/`test:integration`/ `test:e2e`, yet the Chapter 2 checkpoint (line ~322) asserts the learner has them.
 - **reasoned** — On Ubuntu 24.04 the default apt candidate for `sudo apt install -y
 nodejs npm` is `nodejs 18.19.1` — **Node 18**, contradicting the quest's own stated "Node.js 20+" requirement (line 127).
-- **reasoned** — `npm test` on the ESM examples emits `[MODULE_TYPELESS_PACKAGE_JSON]`
-  because `"type": "module"` is never set.
+- **reasoned** — `npm test` on the ESM examples emits `[MODULE_TYPELESS_PACKAGE_JSON]` because `"type": "module"` is never set.
 
 ### 3. Deployment Pipelines — 89 (pass) · ran 4, passed 4, failed 0, skipped 2, reasoned 2 (of 8 / 5 runnable)
-- **passed** — `docker build -t myapp:$(git rev-parse --short HEAD) .` built against a
-  test Dockerfile; `docker tag ... registry.example.com/myapp:staging` tagged correctly.
+- **passed** — `docker build -t myapp:$(git rev-parse --short HEAD) .` built against a test Dockerfile; `docker tag ... registry.example.com/myapp:staging` tagged correctly.
 - **passed** — `gh api repos/:owner/:repo/environments || echo "..."` behaved exactly as
 documented (unauth call failed, fallback echo fired). Verified with `--verbose` that the legacy `:owner`/`:repo` colon syntax resolves identically to `{owner}`/`{repo}`.
 - **passed** — The rollback idiom `./scripts/health-check.sh production ||
@@ -97,8 +95,7 @@ documented (unauth call failed, fallback echo fired). Verified with `--verbose` 
 absent), reasoned correct by package name. `deploy.sh`/`smoke-test.sh`/ `health-check.sh`/`rollback.sh` are referenced but **never scaffolded** anywhere.
 
 ### 4. Environment Management — 88 (pass) · ran 7, passed 6, failed 1, skipped 1, reasoned 1 (of 9 / 6 runnable)
-- **passed** — macOS/Linux bash and the PowerShell snippet (run via `pwsh -NoProfile`)
-  all printed "Running in: development against postgres://localhost:5432/app_dev".
+- **passed** — macOS/Linux bash and the PowerShell snippet (run via `pwsh -NoProfile`) all printed "Running in: development against postgres://localhost:5432/app_dev".
 - **passed** — `config.js` run under Node 20: with vars set it printed the config; with
 `DATABASE_URL` unset it threw `Error: Missing required config: DATABASE_URL` — the "fail loudly" claim is verified true.
 - **passed** — `config/base.yml` + `config/production.yml` parse as valid YAML; the
@@ -143,12 +140,10 @@ Detection" and "Environment Naming" are objectives but never taught. **Fix:** ad
 set` context** — "Environment Scoping" and "Leak Detection" have no hands-on snippet; `gh secret set NAME` never notes it needs a repo context / `--repo owner/repo`. **Fix:** add minimal snippets and a one-line repo-context note.
 
 ### Low
-- **[tested] · Testing Integration · Chapter 1 (lines 229–248)** — ESM examples emit
-  `MODULE_TYPELESS_PACKAGE_JSON`; add `npm pkg set type=module` or a note.
+- **[tested] · Testing Integration · Chapter 1 (lines 229–248)** — ESM examples emit `MODULE_TYPELESS_PACKAGE_JSON`; add `npm pkg set type=module` or a note.
 - **[reasoned] · Deployment Pipelines · Cloud Realms (lines 196–201)** — Prose says
 "deploy the identical digest" but the snippet only tags `:staging`; show promotion to production (or soften "digest" → "tag/image").
-- **[reasoned] · Environment Management · Chapter 3 `main.tf` (lines 297–306)** — Label
-  the fictional `app_service` resource as a placeholder, or use a real provider.
+- **[reasoned] · Environment Management · Chapter 3 `main.tf` (lines 297–306)** — Label the fictional `app_service` resource as a placeholder, or use a real provider.
 
 No fabricated results are included; where the sandbox couldn't run something (no auth, no `terraform`/`brew`/`winget`, network-restricted) it is marked skipped/reasoned, not passed.
 

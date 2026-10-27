@@ -82,10 +82,8 @@ Définissez le mode avec la clé de front matter `sidebar.nav` (ou une valeur pa
 
 1. **L'arborescence organisée l'emporte** — si `_data/navigation/<collection>.yml` existe
 (par ex. `docs.yml` pour la collection `docs`), elle est rendue avec `nav-tree.html`.
-2. **Arborescence de collection** — sinon, une page à l'intérieur d'une collection obtient l'arborescence de dossiers
-   `collection` en direct.
-3. **Catégories** — les pages en dehors de toute collection reviennent aux
-   catégories d'articles (lorsque le site comporte des articles avec catégories).
+2. **Arborescence de collection** — sinon, une page à l'intérieur d'une collection obtient l'arborescence de dossiers `collection` en direct.
+3. **Catégories** — les pages en dehors de toute collection reviennent aux catégories d'articles (lorsque le site comporte des articles avec catégories).
 
 La colonne de gauche n'est rendue que lorsque le mode résolu contient réellement du contenu, de sorte qu'une page ne réserve jamais une colonne de barre latérale vide.
 

@@ -33,8 +33,7 @@ translation_source_url: /docs/obsidian/troubleshooting/
 1. Vérifiez que le fichier cible a `title:` défini dans le frontmatter YAML.
 2. Déclenchez une reconstruction — `assets/data/wiki-index.json` est généré à chaque exécution de Jekyll
 run. Sur GitHub Pages, cela se produit automatiquement lors d'un push ; en local, arrêtez et redémarrez `docker-compose up` (ou enregistrez n'importe quel fichier pour relancer les builds incrémentaux).
-3. Ajoutez une entrée `aliases:` sur la cible si le lien utilise une orthographe
-   alternative.
+3. Ajoutez une entrée `aliases:` sur la cible si le lien utilise une orthographe alternative.
 
 ## L'image intégrée affiche une icône d'image cassée
 
@@ -50,8 +49,7 @@ run. Sur GitHub Pages, cela se produit automatiquement lors d'un push ; en local
   ```
 
   avant le chargement du script du résolveur.
-- Pour un chemin absolu, préfixez la cible de l'intégration avec `/` :
-  `![[/assets/images/special/diagram.png]]`.
+- Pour un chemin absolu, préfixez la cible de l'intégration avec `/` : `![[/assets/images/special/diagram.png]]`.
 
 ## Le callout s'affiche comme un simple `<blockquote>`
 
@@ -88,8 +86,7 @@ tags: [obsidian, your-inline-tag]
 
 - Un layout autre que `note` ? Ajoutez `backlinks: true` au frontmatter.
 - Explicitement désactivé ? Supprimez `backlinks: false`.
-- Aucun lien entrant n'existe encore — le panneau est masqué lorsqu'il est vide plutôt
-  que d'afficher une section vide.
+- Aucun lien entrant n'existe encore — le panneau est masqué lorsqu'il est vide plutôt que d'afficher une section vide.
 
 ## Le plugin personnalisé (`_plugins/obsidian_links.rb`) ne s'exécute pas dans le build GitHub Pages de mon fork
 

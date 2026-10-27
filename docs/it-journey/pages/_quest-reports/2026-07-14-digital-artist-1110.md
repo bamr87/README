@@ -62,16 +62,14 @@ snippet executed and matched the quest's own stated numbers exactly; one promise
 All outcomes below come from the sealed `--mode execute` run (real commands in a disposable Linux sandbox). Root-cause diagnoses I derived by reading the quest source are labeled `reasoned`.
 
 ### 1. API Gateway Patterns — ❌ errored, no score (`overall: 0.0`, `verdict: fail`)
-- The engine **reached its 40-turn ceiling and exited 1** — this is an *errored* run, not a
-  genuine 0% quality verdict. `meta` is empty; there is no per-dimension score.
+- The engine **reached its 40-turn ceiling and exited 1** — this is an *errored* run, not a genuine 0% quality verdict. `meta` is empty; there is no per-dimension score.
 - What it actually ran (from the sealed error transcript): repeated
 `docker logs gw-test2`, `curl -s -i localhost:8080/users/`, `curl -s -i http://127.0.0.1:8080/users/`, and a `wget` fallback — all trying and failing to get the gateway to answer, `terminal_reason: max_turns`. **`tested` evidence: the gateway never served a request in the sandbox.**
 - **Root cause (`reasoned`, from source lines 241–267):** the Chapter 2 `nginx.conf`
 declares `upstream users { server users:8000; }` and `upstream orders { server orders:8000; }`. Those hostnames only resolve inside a Docker network that has `users`/`orders` service containers — which **the quest never provides** (no compose file, no service stubs, no network). `nginx:alpine` refuses to start when an upstream host can't be resolved, so `docker run … -v "$PWD/nginx.conf:…"` exits immediately and the Novice Challenge validation (`curl localhost:8080/users/`, line 359) can never succeed. That is exactly the wall the engine spent 40 turns hitting.
 
 ### 2. Event-Driven Design — ⚠️ 74 (`commands 3, accuracy 4, completeness 3, clarity 4, structure 5, safety 5`)
-- Snippet coverage: **ran 6/9 runnable** (5 passed, **1 failed**), 2 skipped (macOS/Windows
-  installers), 2 reasoned (mermaid render blocked by Chromium sandbox; Linux apt path).
+- Snippet coverage: **ran 6/9 runnable** (5 passed, **1 failed**), 2 skipped (macOS/Windows installers), 2 reasoned (mermaid render blocked by Chromium sandbox; Linux apt path).
 - `passed`: live Redpanda container started (`docker run … redpandadata/redpanda` → logs
 "Successfully started Redpanda!"); `KafkaProducer.send('user-events', …)` → "Sent OK"; the event-sourcing fold printed `70`, **exactly** matching the inline `# 70` comment; the idempotency snippet correctly skipped the second delivery (`['applied','skipped']`).
 - `failed`: the **Chapter 1 consumer** (`KafkaConsumer('user-events', …)`, lines 236–246)
@@ -82,20 +80,17 @@ run exactly as written against the broker with a matching event already publishe
 sudo-apt install paths), 3 reasoned (K8s YAML parsed valid but no live cluster to `kubectl apply`; mermaid; CAP text block).
 - `passed`: `docker run … redis:7-alpine` came up; the cache-aside snippet (with DB stubs
 supplied) showed the documented `MISS → HIT → invalidate-on-write → MISS` cycle against live Redis; `shard_for(1024)` printed `db-shard-0`, **matching** the inline `# db-shard-0`.
-- `reasoned`: the Chapter 1 Deployment+Service YAML parsed as two valid docs (PyYAML);
-  CAP/PACELC narrative reviewed and accurate.
+- `reasoned`: the Chapter 1 Deployment+Service YAML parsed as two valid docs (PyYAML); CAP/PACELC narrative reviewed and accurate.
 
 ### 4. Weaving the Whole (Ouroboros VII) — ✅ 94 (`commands 5, accuracy 5, completeness 4, clarity 4, structure 5, safety 5`)
-- Snippet coverage: **ran 6, all 6 passed**, 3 skipped (require authenticated `gh` against a
-  real repo), 0 reasoned.
+- Snippet coverage: **ran 6, all 6 passed**, 3 skipped (require authenticated `gh` against a real repo), 0 reasoned.
 - `passed`: both workflow YAMLs → `yamllint` 0 issues + `yaml.safe_load` clean; the
 merge-warden wait loop and smuggle-guard step → `shellcheck` clean, and the four verdict branches (self-only→wait, real-fail→exit1+label, pending→wait, all-green→merge) were hand-simulated correctly; both mermaid diagrams rendered to SVG via mermaid-cli; the Chapter 3 `git add/commit` ran in a fresh sandbox repo.
 - `skipped` (legitimately un-runnable in isolation, not broken): `gh variable set …`,
 `gh workflow run first-turn.yml`, `gh run watch` — all need real auth/CI history; syntax verified via each command's `--help`.
 
 ### 5. System Design Interviews — ✅ 97 (`commands 5, accuracy 5, completeness 4, clarity 5, structure 5, safety 5`)
-- Snippet coverage: **ran 9, all 9 passed**, 3 skipped (macOS/Windows installers, redundant
-  apt), 1 reasoned (functional-vs-non-functional text block).
+- Snippet coverage: **ran 9, all 9 passed**, 3 skipped (macOS/Windows installers, redundant apt), 1 reasoned (functional-vs-non-functional text block).
 - `passed`: the URL-shortener estimation script printed
   `Writes: ~40/s | Reads: ~4000/s` and `Storage: ~50 GB/month, ~3 TB / 5yr` — **exactly** the
 quest's stated numbers; `code_by_hash`/`code_by_counter` produced valid 7-char codes and `62**7 = 3,521,614,606,208 ≈ 3.5 trillion` confirmed; both mermaid diagrams rendered; the powers-of-two/ten cheat sheet's numbers verified (86,400 s/day ≈ 10^5).
@@ -142,17 +137,10 @@ No fabricated issues: every HIGH/failed item above is tied to a command the engi
 - **What I ran vs. reasoned:** The `passed`/`failed`/`skipped` outcomes and all quoted command
 output are the engine's real sandbox results (a disposable Linux host with Docker, Python 3.12, Redis, Redpanda, yamllint, shellcheck, mermaid-cli, `gh`). Everything I label `reasoned` — the API-gateway root cause, the missing-secondary-objective gaps, the cross-campaign continuity finding, and the character-fit note — I derived by reading the five quest sources in plan order (`Read` on each `path`), quoting line numbers.
 - **Coverage & limits, stated honestly:**
-  - This is **window 1 of 2** — I walked 5 of the level's 10 quests. Window 0 (microservices +
-    the other four) was out of scope; I did not assess it.
-  - **Quest 1 (API Gateway) has no engine score** — it errored on max-turns. I report it as
-    *errored*, not as a 0% quality judgment, and my score-free diagnosis of *why* is `reasoned`
-    from the config plus the engine's `tested` failed-curl transcript.
-  - Several snippets were **skipped by design** (macOS/Windows installers, sudo-apt, and `gh`
-    commands needing real auth) — these are honest environment limits, not quest defects; the
-    engine verified their syntax via `--help`.
-  - Two mermaid renders were **blocked by Chromium sandbox restrictions** in the engine
-    environment (marked `reasoned`), though other mermaid diagrams in the same slice did render
-    — so the diagrams themselves are not implicated.
+  - This is **window 1 of 2** — I walked 5 of the level's 10 quests. Window 0 (microservices + the other four) was out of scope; I did not assess it.
+  - **Quest 1 (API Gateway) has no engine score** — it errored on max-turns. I report it as *errored*, not as a 0% quality judgment, and my score-free diagnosis of *why* is `reasoned` from the config plus the engine's `tested` failed-curl transcript.
+  - Several snippets were **skipped by design** (macOS/Windows installers, sudo-apt, and `gh` commands needing real auth) — these are honest environment limits, not quest defects; the engine verified their syntax via `--help`.
+  - Two mermaid renders were **blocked by Chromium sandbox restrictions** in the engine environment (marked `reasoned`), though other mermaid diagrams in the same slice did render — so the diagrams themselves are not implicated.
 - **Confidence:** High on the two capstones (94/97, full snippet pass) and on the two
 HIGH-severity findings (both witnessed by a real failed/hung command). Medium on the completeness gaps (consistent across quests, source-verified, but judgment calls about what a quest "promises"). The overall **warn** reflects one genuinely blocking lab (API Gateway) and a recurring "objective promised, not taught" pattern against an otherwise technically excellent, well-sequenced slice.
 

@@ -37,8 +37,7 @@ Measured on each state, not asserted by eye:
 
 Two things worth reading off that table:
 
-- **Session dedupe works.** "reload, same session" holds at `1`; only a new
-  session advances it. A reload cannot inflate the number.
+- **Session dedupe works.** "reload, same session" holds at `1`; only a new session advances it. A reload cannot inflate the number.
 - **The meta row does not reflow.** Desktop height is 31 px from `1` to
 `12,438` — `font-variant-numeric: tabular-nums` on the count keeps the row stable as digits are added.
 

@@ -8,8 +8,7 @@ title: 'Evidence — search-modal form action existence-gate (issue #202)'
 
 `_includes/components/search-modal.html` gates the `<form action>` attribute on whether `/sitemap/` is present in the build:
 
-- **Sitemap page present** → `action="/sitemap/"` (the canonical search-results
-  page for this theme).
+- **Sitemap page present** → `action="/sitemap/"` (the canonical search-results page for this theme).
 - **Sitemap page absent** → `action="#"` (safe no-op; the form navigates
 nowhere, which is correct because `search-modal.js` always intercepts the submit event and keeps results in-modal regardless).
 
@@ -64,12 +63,10 @@ Evidence for this change is therefore a DOM/template comparison, not a screensho
 
 This pattern mirrors two pre-existing existence gates:
 
-- **`_includes/core/footer.html`** (lines 149-160) — the Quick Links block
-  gates the "Sitemap" footer link on `_sitemap_page` via the same
+- **`_includes/core/footer.html`** (lines 149-160) — the Quick Links block gates the "Sitemap" footer link on `_sitemap_page` via the same
   `site.html_pages | where: "url", _sitemap_url | first` idiom; falls back to
   linking the XML sitemap if the HTML sitemap is absent.
-- **`_includes/navigation/section-sidebar.html`** (lines 67-73, 131-134) —
-  the "Browse All Tags" button is gated on `_tags_page` (a
+- **`_includes/navigation/section-sidebar.html`** (lines 67-73, 131-134) — the "Browse All Tags" button is gated on `_tags_page` (a
   `site.html_pages | where: "url", _tags_url | first` check), with the
 comment "Mirrors the footer Quick-Links guard". The search-modal gate is written to the same contract.
 
@@ -78,9 +75,7 @@ comment "Mirrors the footer Quick-Links guard". The search-modal gate is written
 [`../../search-modal-action-gate.spec.js`](../../search-modal-action-gate.spec.js) (Playwright, smoke tier) asserts:
 
 - The dev build serves `/sitemap/` with HTTP 200 (precondition).
-- After opening the modal via the `/` keyboard shortcut, the `[data-search-form]`
-  `action` attribute matches `/sitemap/` (positive branch).
-- The form action target resolves with HTTP 200 (not 404) and is not `#` in a
-  full build.
+- After opening the modal via the `/` keyboard shortcut, the `[data-search-form]` `action` attribute matches `/sitemap/` (positive branch).
+- The form action target resolves with HTTP 200 (not 404) and is not `#` in a full build.
 
 The negative branch (`action="#"`) cannot be demonstrated via a live server test without rebuilding the site without the sitemap page; it is covered by reading the Liquid source and by the spec comment explaining how a pre-fix template would fail.

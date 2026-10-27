@@ -27,8 +27,7 @@ BASE_URL=http://localhost:4000 node test/visual/obsidian-graph-revamp-evidence.m
 
 - **`01-graph-controls.png`** — the full graph page: default view (orphans hidden
 by default, hub labels visible, stats badges), the settings card open on the Filters section (collection toggles with counts), the largest collection toggled off (stats drop from "82 of 164 pages" to the filtered count with the connected edges gone), and dark color mode (canvas restyled from the live `data-bs-theme`, no reload).
-- **`02-local-graph-depth.png`** — the local graph offcanvas panel at depth 1
-  vs depth 2, with the new depth selector and direction switches visible.
+- **`02-local-graph-depth.png`** — the local graph offcanvas panel at depth 1 vs depth 2, with the new depth selector and direction switches visible.
 - **`metrics.json`** — measured node counts / stats strings per scenario.
 
 ## Regression tests

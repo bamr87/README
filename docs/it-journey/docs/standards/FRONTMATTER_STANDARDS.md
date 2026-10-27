@@ -4,6 +4,8 @@ title: Frontmatter Standards
 ---
 # Frontmatter Standards
 
+> Required and optional frontmatter fields per content type, with the date, list and quoting rules and the common mistakes (last revised 2025-10; AGENTS.md and the validators are authoritative).
+
 This document defines the required and optional frontmatter fields for each content type in the IT-Journey repository.
 
 ## Overview

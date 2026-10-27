@@ -42,38 +42,21 @@ Legend: **tested** = commands actually run by the sealed engine in-sandbox; **re
 
 ### Quest 1 — AWS Essentials *(execute mode, tested)*
 
-- **Snippet coverage:** engine recorded 23 commands, **ran 18 / 8 runnable
-  snippets, 18 passed, 0 failed, 3 skipped, 2 reasoned** (`executed: true`).
-- **Per-dimension:** commands_work **4**, content_accuracy **4**, completeness
-  **2**, clarity **4**, structure **4**, safety **4** → overall **74% (warn)**.
+- **Snippet coverage:** engine recorded 23 commands, **ran 18 / 8 runnable snippets, 18 passed, 0 failed, 3 skipped, 2 reasoned** (`executed: true`).
+- **Per-dimension:** commands_work **4**, content_accuracy **4**, completeness **2**, clarity **4**, structure **4**, safety **4** → overall **74% (warn)**.
 - **Real commands run in the sandbox** (all reached the `NoCredentials`/auth
 boundary rather than an "unrecognized argument" error, confirming syntax is valid and current against `aws-cli/2.35.15`):
-  - `aws --version` → **passed** — `aws-cli/2.35.15` pre-installed, matches the
-    quest's expected `aws-cli/2.x`.
-  - IAM chain — `create-group`, `attach-group-policy … arn:aws:iam::aws:policy/ReadOnlyAccess`,
-    `create-user`, `add-user-to-group`, `list-groups-for-user` → all **passed**
-    (parsed, reached NoCredentials).
-  - The IAM least-privilege policy JSON block → **passed** — validated cleanly with
-    both `python3 -m json.tool` and `jq .`.
-  - EC2 — `create-key-pair … > quest-key.pem`, `run-instances` with the
-    `resolve:ssm:/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64`
-    alias, `terminate-instances` → all **passed**.
-  - `chmod 400 quest-key.pem` → **passed** — resulting perms verified exactly
-    `-r--------`.
-  - S3 — `BUCKET=my-quest-bucket-$RANDOM` (produced e.g. `my-quest-bucket-32646`),
-    `s3 mb`, `s3 cp` up/down, `s3api put-public-access-block` (4 Block/Ignore/Restrict
-    flags, matched `aws s3api put-public-access-block help`), `s3 rb --force` → all
-    **passed**.
-  - VPC — `create-vpc`, `create-security-group`, `authorize-security-group-ingress`
-    → all **passed** (with dummy IDs).
+  - `aws --version` → **passed** — `aws-cli/2.35.15` pre-installed, matches the quest's expected `aws-cli/2.x`.
+  - IAM chain — `create-group`, `attach-group-policy … arn:aws:iam::aws:policy/ReadOnlyAccess`, `create-user`, `add-user-to-group`, `list-groups-for-user` → all **passed** (parsed, reached NoCredentials).
+  - The IAM least-privilege policy JSON block → **passed** — validated cleanly with both `python3 -m json.tool` and `jq .`.
+  - EC2 — `create-key-pair … > quest-key.pem`, `run-instances` with the `resolve:ssm:/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-x86_64` alias, `terminate-instances` → all **passed**.
+  - `chmod 400 quest-key.pem` → **passed** — resulting perms verified exactly `-r--------`.
+  - S3 — `BUCKET=my-quest-bucket-$RANDOM` (produced e.g. `my-quest-bucket-32646`), `s3 mb`, `s3 cp` up/down, `s3api put-public-access-block` (4 Block/Ignore/Restrict flags, matched `aws s3api put-public-access-block help`), `s3 rb --force` → all **passed**.
+  - VPC — `create-vpc`, `create-security-group`, `authorize-security-group-ingress` → all **passed** (with dummy IDs).
 - **Skipped / reasoned (environment-inapplicable, honestly not run):**
-  - Linux installer (`curl … awscli-exe-linux-x86_64.zip && unzip && sudo ./aws/install`)
-    → **skipped** — outbound network denied by sandbox; URL matches AWS's official
-    installer, `bash -n` passed.
-  - macOS `brew install awscli` → **reasoned**; Windows `winget install Amazon.AWSCLI`
-    → **skipped** — no macOS/Windows env; package identifiers confirmed correct.
-  - CloudShell `aws sts get-caller-identity` → **reasoned** — ran, failed
-    NoCredentials as expected (real CloudShell is pre-authenticated).
+  - Linux installer (`curl … awscli-exe-linux-x86_64.zip && unzip && sudo ./aws/install`) → **skipped** — outbound network denied by sandbox; URL matches AWS's official installer, `bash -n` passed.
+  - macOS `brew install awscli` → **reasoned**; Windows `winget install Amazon.AWSCLI` → **skipped** — no macOS/Windows env; package identifiers confirmed correct.
+  - CloudShell `aws sts get-caller-identity` → **reasoned** — ran, failed NoCredentials as expected (real CloudShell is pre-authenticated).
 
 > Engine summary (verbatim): *"The quest's CLI commands are technically accurate and
 > all parse correctly against a real aws-cli/2.35.15 install (verified live
@@ -107,8 +90,7 @@ teaches capturing values into a variable (`BUCKET=…`), but the VPC section rev
 
 - **MEDIUM · Azure Ascension · Ch.2 dependency on a repo script** — *Observed
 (reasoned, lines 88–96):* the whole deploy hinges on `scripts/deployment/azure-jekyll-deploy.sh setup` / `deploy`. A learner who only reads the quest can't see what that script assumes or does; if the script path drifts, the quest silently breaks. I did **not** run it (needs a real Azure account
-  + `az login`). *Fix:* at minimum note the script is repo-local to `it-journey` and
-  summarise its prerequisites/effects, or link its source.
+  + `az login`). *Fix:* at minimum note the script is repo-local to `it-journey` and summarise its prerequisites/effects, or link its source.
 - **LOW · Azure Ascension · relative `.md` "Related Quests" links** — *Observed
 (reasoned, lines 122–124):* links use raw markdown-relative paths (`../0001/github-pages-portal.md`, `../1010/link-to-the-future-...md`) instead of site permalinks like the other quests. On the rendered Jekyll site these may not resolve to the quest permalink. I did **not** build the site to confirm. *Fix:* switch to permalink-style links (`/quests/0001/github-pages-portal/`).
 
@@ -151,5 +133,4 @@ step after the first quest (this is the workflow's sealed evidence, which the ag
 AWS-CLI installer skipped); macOS/Windows install blocks weren't runnable on the Linux sandbox; all AWS API calls stopped at the `NoCredentials` boundary by design (no live account), which still verifies syntax/flags but not real resource creation. No SSH, Terraform apply, Azure deploy, or GitHub-Actions run was executed.
 - **Confidence:** **High** on the AWS Essentials findings (each cites an executed
 command or an engine dimension finding). **Moderate** on the chain-continuity and Quest 2–4 observations (source-based reasoning, unverified by execution). The two link/render concerns for Azure are explicitly *unconfirmed by a site build*.
-- **Scope discipline:** one slice, one report. No quest content, data, or config was
-  edited; no branch/commit/PR was made. The caller handles git.
+- **Scope discipline:** one slice, one report. No quest content, data, or config was edited; no branch/commit/PR was made. The caller handles git.

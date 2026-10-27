@@ -62,9 +62,6 @@ layouts and styles directly. Most control; follow [Fork & Deploy](/docs/quicksta
 
 ## Next steps
 
-- New to the theme's structure? Read the
-  [Getting Started overview](/docs/getting-started/).
-- Ready to publish? Every path ends at the
-  [Deploy to GitHub Pages](/docs/deployment/github-pages/) reference.
-- Want to customize the look? See the
-  [Theme Guide](/docs/getting-started/theme-guide/).
+- New to the theme's structure? Read the [Getting Started overview](/docs/getting-started/).
+- Ready to publish? Every path ends at the [Deploy to GitHub Pages](/docs/deployment/github-pages/) reference.
+- Want to customize the look? See the [Theme Guide](/docs/getting-started/theme-guide/).

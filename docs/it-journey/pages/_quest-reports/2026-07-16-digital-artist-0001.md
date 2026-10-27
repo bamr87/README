@@ -49,8 +49,7 @@ Plan order (as `walk-plan.json` selected — note this window is **not** depende
 `relative_url` / `JEKYLL_ENV=production` / `gh api :owner` path ran clean; docked for a stated-but-undelivered "GitHub Actions Build" objective and no plugin-safelist warning.
 2. ✅ **Jekyll Fundamentals: Build Static Sites with Ruby** — **88** · strongest quest;
 install → `jekyll new` → serve → collections → build all verified live; the one real failure is `remote_theme` silently no-op'ing without the unmentioned `jekyll-remote-theme` plugin.
-3. ❌ **YAML Configuration: Site Settings Mastery** — **no verdict** · engine hit
-   `max_turns` (40); **no commands recorded**. Reasoned-only below — treat as **uncovered**.
+3. ❌ **YAML Configuration: Site Settings Mastery** — **no verdict** · engine hit `max_turns` (40); **no commands recorded**. Reasoned-only below — treat as **uncovered**.
 4. ✅ **Git Workflow Mastery: Branches, Merging & Team Collaboration** — **80** · branch/commit/push,
 true merge-commit vs rebase, and a hand-built conflict all reproduced exactly; docked for no `gh auth login` step and `git revert` named-but-never-shown.
 5. ❌ **Liquid Templating: Dynamic Content for Jekyll Sites** — **no verdict** · engine hit
@@ -137,22 +136,12 @@ no execute evidence, so I cannot certify that quest 2→3 or 4→5 hand-offs act
 
 - **What I ran vs. reasoned:** I ran **no** engine myself. The evidence is the sealed
 `walk-evidence.json` / `walk-evidence.md` the workflow pre-computed in a deterministic execute-mode step (the engine's child `claude` processes can't authenticate from an agent's Bash tool). I consumed those files **as-is**, then read all five quest sources in plan order and reasoned about the linked journey. Every "passed"/"failed" above is quoted from the sealed evidence; everything I judged from source alone is marked **reasoned**.
-- **Mode:** `execute` (disposable sandbox), as recorded in the evidence. Not review-only,
-  not `--mock`.
+- **Mode:** `execute` (disposable sandbox), as recorded in the evidence. Not review-only, not `--mock`.
 - **Coverage limits (stated plainly):**
-  - **2 of 5 quests have no evidence** — `yaml-configuration` and `liquid-templating` both
-    exhausted the engine's `max_turns` (40) and returned `verdict_obj: null` / `overall: 0.0`.
-    Their `verdict: "fail"` is an **engine-exhaustion artifact, not a witnessed content
-    failure.** I did not fabricate scores for them; they are reasoned-only and flagged
-    **uncovered**. They should be re-run with a higher turn budget (or fewer snippets per
-    turn) before this slice is called complete.
-  - The `average` (83.3) and `pass 3 / fail 2` counts in the evidence are computed only over
-    the scored quests; do not read the "2 fail" as two bad quests.
-  - Publish/auth "last-mile" steps (`gh auth login`, `gh repo create --push`, live Pages
-    publish, custom-domain DNS) are inherently unrunnable in a credential-less sandbox and
-    were correctly skipped — not counted against the quests.
+  - **2 of 5 quests have no evidence** — `yaml-configuration` and `liquid-templating` both exhausted the engine's `max_turns` (40) and returned `verdict_obj: null` / `overall: 0.0`. Their `verdict: "fail"` is an **engine-exhaustion artifact, not a witnessed content failure.** I did not fabricate scores for them; they are reasoned-only and flagged **uncovered**. They should be re-run with a higher turn budget (or fewer snippets per turn) before this slice is called complete.
+  - The `average` (83.3) and `pass 3 / fail 2` counts in the evidence are computed only over the scored quests; do not read the "2 fail" as two bad quests.
+  - Publish/auth "last-mile" steps (`gh auth login`, `gh repo create --push`, live Pages publish, custom-domain DNS) are inherently unrunnable in a credential-less sandbox and were correctly skipped — not counted against the quests.
   - Windows/macOS platform blocks were skipped on the Linux sandbox (reasoned, not tested).
 - **Confidence:** **High** for the three scored quests — their commands were genuinely
 executed and the recommendations align with the quest rubric's dimensions. **Low** for YAML Configuration and Liquid Templating — no evidence gathered; treat my notes there as hypotheses to verify, not findings.
-- **Scope discipline:** one slice, one report. No quest content was edited; no other
-  character/level was touched. The caller handles git.
+- **Scope discipline:** one slice, one report. No quest content was edited; no other character/level was touched. The caller handles git.

@@ -22,13 +22,10 @@ Bug class exploitation
 
 ### Heap exploitation
 
--   [Once upon a free()][] - Historical document, later glibc's have
-    additional checking
--   [Vudo - An object superstitiously believed to embody magical
-    powers][] - ""
+-   [Once upon a free()][] - Historical document, later glibc's have additional checking
+-   [Vudo - An object superstitiously believed to embody magical powers][] - ""
 -   [Advanced Doug lea's malloc exploits][] - ""
--   [Malloc Maleficarum][] - Recent glibc malloc exploitation document,
-    should be relevant for blacksun
+-   [Malloc Maleficarum][] - Recent glibc malloc exploitation document, should be relevant for blacksun
 
 ### Frame pointer overwrites
 
@@ -44,8 +41,7 @@ Bug class exploitation
 ### Execshield documents
 
 -   [A Solution To Red Hat PIE Protection][] - External link
--   [How to Exploit Overflow Vulnerability Under Fedora Core][] -
-    External link
+-   [How to Exploit Overflow Vulnerability Under Fedora Core][] - External link
 
 ### Stackguard / Stack smashing protection
 

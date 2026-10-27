@@ -97,8 +97,7 @@ python3 -m src.viewer --game-root /path/to/bashcrawl
 
 The landing page shows a high-level summary of all data in the `logs/` directory:
 
-- Total session count, event count, screenshot session count, and feedback
-  report count
+- Total session count, event count, screenshot session count, and feedback report count
 - Aggregate analytics (rooms visited, encounters, deaths, items collected)
 - A table of the 10 most recent sessions with quick stats
 
@@ -221,8 +220,7 @@ Cards showing report date, session SID, and key metrics (rooms, encounters, deat
 
 - **Rendered Markdown** — full report displayed as HTML
 - **Metrics sidebar** — key stats pulled from the report in visual cards
-- **Cross-links** — buttons to view the source session log and any linked
-  screenshots
+- **Cross-links** — buttons to view the source session log and any linked screenshots
 
 ---
 
@@ -308,12 +306,10 @@ Once a test completes, its data is available in the standard viewer pages:
 
 - **Sessions** — http://127.0.0.1:5000/sessions — filter by mode `ai_test`.
 Click the session card for the full event timeline, room path, and inventory tracker.
-- **Screenshots** — http://127.0.0.1:5000/screenshots — any SVG screenshots
-  captured by the agent appear as a filmstrip gallery linked to the session.
+- **Screenshots** — http://127.0.0.1:5000/screenshots — any SVG screenshots captured by the agent appear as a filmstrip gallery linked to the session.
 - **Feedback** — http://127.0.0.1:5000/feedback — the AI's self-evaluation
 report (if the test script emits a `feedback` event) is rendered as formatted Markdown.
-- **Analytics** — http://127.0.0.1:5000/analytics — AI sessions are included
-  in the cross-session aggregates. Filter by mode to isolate them.
+- **Analytics** — http://127.0.0.1:5000/analytics — AI sessions are included in the cross-session aggregates. Filter by mode to isolate them.
 
 ---
 

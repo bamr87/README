@@ -4,6 +4,8 @@ title: Content Guidelines
 ---
 # Content Guidelines
 
+> Writing style, markdown conventions and document structures for repository docs, tutorials and quests (last revised 2025-10).
+
 This document establishes writing style, formatting conventions, and content standards for the IT-Journey repository.
 
 ## Writing Style
@@ -344,7 +346,7 @@ Wrap-up or next steps.
 
 **Tutorial Structure:**
 
-```markdown
+````markdown
 # Tutorial Title
 
 Brief description of what learner will accomplish.
@@ -380,7 +382,7 @@ Common issues and solutions.
 ## Next Steps
 
 Where to go from here.
-```
+````
 
 ### Quest Content
 
@@ -689,7 +691,7 @@ Edit `pages/_posts/2025-10-13-my-post.md` to update the post.
 
 Show commands with context:
 
-```markdown
+````markdown
 To start the development server:
 
 ```bash
@@ -697,13 +699,13 @@ cd it-journey bundle exec jekyll serve --config _config_dev.yml
 ```
 
 This will start Jekyll on port 4002 (configured in `_config_dev.yml`).
-```
+````
 
 ### Expected Output
 
 Show expected output after commands:
 
-```markdown
+````markdown
 Run the link checker:
 
 ```bash
@@ -714,7 +716,7 @@ Expected output:
 ```
 [INFO] Starting link health check... [INFO] Scope: website [INFO] Found 1,250 links to check [SUCCESS] Link checking completed [INFO] Results: 1,245 valid, 5 broken
 ```
-```
+````
 
 ## Additional Resources
 

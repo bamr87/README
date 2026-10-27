@@ -70,22 +70,18 @@ found the literal string `{​% raw %​}` embedded in **12** GitHub Actions exp
 (`<< 'EOF'`), so `"completed_at": "$(date -u ...)"` is written **literally**, not substituted — even if the Liquid-tag bug were fixed.
 - ❌ **`gh api ... environments/agent-production` (Exercise 3.2)** — run with a fake token
 under `--verbose`; `-f/--raw-field` serialized `reviewers` and `deployment_branch_policy` as **JSON-escaped strings**, not the array/object the real API requires → **422** against live GitHub.
-- ✅ **`stamp_artifact.py` (Exercise 3.3)** — ran against a sample file; prepended the
-  metadata header correctly and picked up `GITHUB_REPOSITORY`.
+- ✅ **`stamp_artifact.py` (Exercise 3.3)** — ran against a sample file; prepended the metadata header correctly and picked up `GITHUB_REPOSITORY`.
 - ✅ **mermaid network diagram** — rendered to valid SVG via `mmdc` 11.16.0.
 - ⏭️ **`scripts/validate_quest.py --quest q3`** — skipped: script not shipped with the quest.
 
 ### Quest 2 — Tool Selection & Permissions (execute · 55% · fail)
 Snippet coverage: **ran 2 of 1 runnable** (4 recorded, 1 passed, 1 failed, 2 reasoned). Per-dimension: commands_work **2**, content_accuracy **2**, completeness **3**, clarity **4**, structure **4**, safety **4**.
 
-- ✅ **`dependency-updater-tools.yml`** — written verbatim and parsed cleanly with
-  `yaml.safe_load`; structure (required_tools/excluded_tools) is internally consistent.
+- ✅ **`dependency-updater-tools.yml`** — written verbatim and parsed cleanly with `yaml.safe_load`; structure (required_tools/excluded_tools) is internally consistent.
 - ❌ **`python3 scripts/validate_quest.py --quest q4`** — ran verbatim; failed with
 *"can't open file '.../scripts/validate_quest.py': [Errno 2] No such file or directory"*. The closing validation gate is not completable from the quest content.
-- 🟰 **`copilot-instructions.md` tool-permissions block** — reasoned (prose, not
-  executable); consistent with the YAML's forbidden-tools list.
-- 🟰 **mermaid diagram** — reasoned; valid syntax, but headless-Chrome sandbox refused to
-  launch (`No usable sandbox!`) so it wasn't rendered here (environment limit, not a defect).
+- 🟰 **`copilot-instructions.md` tool-permissions block** — reasoned (prose, not executable); consistent with the YAML's forbidden-tools list.
+- 🟰 **mermaid diagram** — reasoned; valid syntax, but headless-Chrome sandbox refused to launch (`No usable sandbox!`) so it wasn't rendered here (environment limit, not a defect).
 
 ### Quests 3–5 — no machine evidence
 The engine stopped after quest 2 (`auth_truncated: true`; `evaluated: 2, requested: 5`). I did **not** run any command from these three quests. Everything under Issues/Chain below for them is `reasoned` from the quoted source lines — no `passed`/`failed` claim is made for them.
@@ -118,12 +114,10 @@ low confidence):* `new Server(...)` + `server.setRequestHandler("tools/list", �
 Q4 uses `.vscode/mcp.json` with a secure `${input:github-token}` prompt (lines 184–204); Q5 uses `.vscode/settings.json` → `github.copilot.chat.mcpServers` with a raw `${env:GITHUB_TOKEN}` PAT (lines 128–142). A learner walking both sees conflicting "the right way" guidance. *Fix:* cross-reference and standardize on the prompt-input pattern.
 
 **Low**
-- **[Q1 · Exercise 3.2 · line 225] `YOUR_GITHUB_USER_ID` placeholder unexplained** —
-  *observed (execute, clarity=2):* no hint how to obtain it. *Fix:* add `gh api user --jq .id`.
+- **[Q1 · Exercise 3.2 · line 225] `YOUR_GITHUB_USER_ID` placeholder unexplained** — *observed (execute, clarity=2):* no hint how to obtain it. *Fix:* add `gh api user --jq .id`.
 - **[Q1 · line 208] "90 days is a common compliance minimum"** — *observed (execute,
 content_accuracy):* 90 days is GitHub's out-of-the-box *maximum* artifact retention, not a minimum; the framing muddies the guidance.
-- **[Q2 · lines 84 vs 216] Diagram/Rewards mismatch** — *observed (execute, structure):*
-  mermaid shows Q4 → Q5 **and** Q4 → Q6, but the Rewards "Unlocks" row lists only Q5.
+- **[Q2 · lines 84 vs 216] Diagram/Rewards mismatch** — *observed (execute, structure):* mermaid shows Q4 → Q5 **and** Q4 → Q6, but the Rewards "Unlocks" row lists only Q5.
 - **[Q4 · line 59 & Q3 · line 18] Empty `required_quests` on chained content** —
 *reasoned:* Codex Ch. II declares `required_quests: []` (only a *recommended* Ch. I), which is why the planner floats it after quests it introduces — see Chain Continuity.
 

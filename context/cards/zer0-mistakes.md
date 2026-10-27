@@ -6,8 +6,8 @@ kind: theme
 status: active
 generated: true
 generated_by: context_engine 1.0.0
-enrichment: ai:anthropic
-source_fingerprint: b52e7b861661bf6b
+enrichment: heuristic
+source_fingerprint: 43f23928b721d394
 tags:
   - accessibility
   - ai
@@ -25,7 +25,7 @@ tags:
 
 # zer0-mistakes
 
-> zer0-mistakes is an active, AI-native, Docker-first Jekyll theme for GitHub Pages sites, built on Bootstrap 5 and published as a Ruby gem. Its 746-document corpus includes 217 site pages, a 170-page French section, 111 documentation pages, 52 examples, a design system, templates, and test and tooling docs, along with AGENTS.md and CLAUDE.md guidance for AI-assisted work. Open it to start a GitHub Pages site from the three-file, zero-install starter, explore its advanced features and architecture, or contribute to the theme itself.
+> Jekyll theme and software architecture patterns for GitHub Pages. AI-native, Docker-first Jekyll theme for GitHub Pages sites, built on Bootstrap 5 and published as a Ruby gem.
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 746 docs |
+| Corpus | `docs/zer0-mistakes` - 752 docs |
 | External | no |
 
 ## Signals
@@ -43,14 +43,14 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~615,774 words across 746 indexed documents
+- ~618,819 words across 752 indexed documents
 - code samples in: bash, yaml, html, liquid, plaintext, text, markdown, javascript
 
 ## Navigation
 
-665 published pages in 98 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
+671 published pages in 99 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
 
-- **Repository & tooling** (79 pages)
+- **Repository & tooling** (82 pages)
 - **Data** (2 pages)
 - **Design System** (13 pages)
 - **Documentation** (111 pages)
@@ -59,6 +59,7 @@ tags:
 - **Includes** (3 pages)
 - **Pages** (215 pages)
 - **Templates Directory** (11 pages)
+- **zer0 studio** (3 pages)
 
 ## Key documents
 

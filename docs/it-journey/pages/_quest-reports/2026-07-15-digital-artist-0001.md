@@ -65,14 +65,12 @@ All outcomes below come from commands the sealed execute engine actually ran in 
 created; `code guide.md` reported `command not found` only because VS Code isn't in the sandbox (environment gap, not a defect).
 - **Markdown table with `:---`/`:--:`/`---:`** → `passed`. Rendered via kramdown
 2.5.2 to `<th style="text-align: left/center/right">`, exactly per the alignment markers.
-- **Footnote `[^speed]`** → `passed`. Produced `<sup id="fnref:speed">` linked to a
-  backlinked `<li id="fn:speed">`.
+- **Footnote `[^speed]`** → `passed`. Produced `<sup id="fnref:speed">` linked to a backlinked `<li id="fn:speed">`.
 - **Task list `- [x]` / fenced ```` ```python ````** → `passed` *with a caveat*:
 under plain kramdown both render as literal text; they only become checkboxes / highlighted code once `kramdown-parser-gfm` (GFM input mode) is loaded — Jekyll's default, but the quest states it unconditionally.
 - **Attribute list `{: .lead #intro }`, definition list, `{​% raw %​}` Liquid block,
 YAML frontmatter** → all `passed` (kramdown / liquid gem / PyYAML), matching the quest's claims.
-- **Windows PowerShell block** → `skipped` (Linux/pwsh backslash-path artifact, not
-  a quest defect). **Cloud Realms block** → `reasoned` (comment-only, nothing to run).
+- **Windows PowerShell block** → `skipped` (Linux/pwsh backslash-path artifact, not a quest defect). **Cloud Realms block** → `reasoned` (comment-only, nothing to run).
 
 ### 2. Barodybroject Stack Analysis — NO SCORE (engine error)
 - The engine **errored (`claude exited 1` … "Reached maximum number of turns (40)")**
@@ -85,27 +83,22 @@ is the error bucket, not a content grade. Everything I say about it below is `re
 files created; **`xdg-open index.html`** → `failed`, but only because the headless sandbox has no browser (`no method available for opening`) — an environment artifact, explicitly not a quest bug.
 - **Cumulative index.html + styles.css built exactly as instructed, rendered with
 headless Chromium** → selectors (type/class/id/descendant), box-model math with `box-sizing: border-box`, the flexbox header, and the `repeat(auto-fit, minmax(...))` grid all `passed` (screenshot-verified).
-- **Mobile-first media queries at 500/700/1000px** → `passed`: exactly 1 / 2 / 3
-  grid columns at the documented 600px & 960px breakpoints.
+- **Mobile-first media queries at 500/700/1000px** → `passed`: exactly 1 / 2 / 3 grid columns at the documented 600px & 960px breakpoints.
 - **Theming variables (`[data-theme="dark"]`)** → `passed` for the re-skin, but the
 engine reproduced an **unflagged cascade conflict**: the closing Theming section's second `:root` block silently overrides Chapter 3's `--brand` (`#2563eb` → `#007bff`) if appended to the same stylesheet (screenshot-confirmed).
-- `.center-box`, `@media (prefers-color-scheme: dark)`, macOS/Windows setup blocks →
-  `reasoned` (valid but not exercised live).
+- `.center-box`, `@media (prefers-color-scheme: dark)`, macOS/Windows setup blocks → `reasoned` (valid but not exercised live).
 
 ### 4. Bootstrap Framework — 70% (warn), ran 9/10 snippets (8 passed, 1 failed, 1 skipped)
 - **Setup + all four HTML snippets (grid page, navbar, card, utilities)** → `passed`;
 the combined 67-line page validates cleanly with `npx htmlhint` ("no errors found") and Python's html.parser. `mt-4 → margin-top:1.5rem` and `col-md-8 → 66.66%` were cross-checked against real compiled Bootstrap CSS.
-- **CSS-variable customization (`--bs-primary` / `--bs-btn-bg`)** → `passed` (parses
-  under postcss).
+- **CSS-variable customization (`--bs-primary` / `--bs-btn-bg`)** → `passed` (parses under postcss).
 - **Sass snippet `@import "bootstrap/scss/bootstrap";`** → **`failed`**. After the
 quest's own `npm install bootstrap sass`, running the obvious `sass custom.scss custom.css` errors with `Error: Can't find stylesheet to import` — the CLI doesn't search `node_modules`. It only compiles once `--load-path=node_modules` (never mentioned) is added; with that flag it succeeds (custom `$primary` present 41× in output). A reproducible dead end as written.
 - **`open`/`xdg-open` opens** → environment-limited (no browser), not a defect.
 
 ### 5. Building & Testing the Git Init Shell Script — 19% (fail), ran 4/5 snippets (0 passed, 4 failed, 1 skipped)
-- **`bash -n scripts/git_init.sh`** → `failed`: `bash: scripts/git_init.sh: No such
-  file or directory` (exit 127). The script is never provided or linked.
-- **`bash scripts/git_init.sh --headless -n test-quest-sample …`** → `failed`, same
-  missing-file (exit 127).
+- **`bash -n scripts/git_init.sh`** → `failed`: `bash: scripts/git_init.sh: No such file or directory` (exit 127). The script is never provided or linked.
+- **`bash scripts/git_init.sh --headless -n test-quest-sample …`** → `failed`, same missing-file (exit 127).
 - **"Run Bats tests" block, run verbatim** → `failed`: the auto-seeded
 `## 🎯 Quest Objectives` checklist + smart-quote note is literally spliced inside the ```` ```bash ```` fence (source lines 126–137), producing `line 5: By: command not found`, `line 7/8/9: -: command not found`, and a fatal `unexpected EOF while looking for matching \`''`. I confirmed this corruption directly in the source.
 - **`shellcheck scripts/git_init.sh`** → `failed` (`openBinaryFile: does not exist`,

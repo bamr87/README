@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-19T03:13:22+00:00",
+  "generated_at": "2026-10-26T03:14:56+00:00",
   "engine_version": "1.0.0",
   "enrichment": "ai:anthropic",
   "project_count": 7,
   "fingerprints": {
-    "scripts": "3a15e2a411867948",
-    "skills": "a595ab0372a11167",
-    "barodybroject": "c1a4961e2a49033d",
-    "bashcrawl": "527c292123a3dcad",
-    "zer0-mistakes": "b52e7b861661bf6b",
-    "it-journey": "21f1a12d63ec4c61",
-    "OverTheWire-website": "430a761accf7d02a"
+    "scripts": "c554a5c09b9d8ea3",
+    "skills": "8bee55625627b534",
+    "barodybroject": "2f309bd74896ca48",
+    "bashcrawl": "1f67dd0840c68d11",
+    "zer0-mistakes": "43f23928b721d394",
+    "it-journey": "ab9a25fe8b65c679",
+    "OverTheWire-website": "26d051159234c8fb"
   },
   "corpus_index_present": true,
-  "corpus_index_generated_at": "2026-10-19T03:12:44.670918",
+  "corpus_index_generated_at": "2026-10-26T03:14:51.478270",
   "navigation": {
-    "pages": 2182,
+    "pages": 2261,
     "corpora": 7,
     "fingerprints": {
-      "it-journey": "197f709f5b4f72b6",
-      "zer0-mistakes": "4af53796123d349d",
+      "it-journey": "b0b935db8f69a2ba",
+      "zer0-mistakes": "88d8f5bf92a6d39b",
       "barodybroject": "ba6ba8ee5ae0cefe",
-      "bashcrawl": "9543236af17fa153",
+      "bashcrawl": "125bcfa8894d04b3",
       "skills": "292f000a4ab20ef9",
-      "scripts": "c719dd1841f8e626",
+      "scripts": "d7e0e72808aa396e",
       "OverTheWire-website": "ceab543eb82ca094"
     }
   }

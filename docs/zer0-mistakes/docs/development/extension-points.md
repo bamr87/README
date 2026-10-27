@@ -37,17 +37,14 @@ A bubbling `CustomEvent`, dispatched from the wrapper once per code block, **aft
 
 Two surfaces, both public:
 
-- `window.zer0OnCodeBlock(fn)` — replays `window.__zer0CodeBlocks` (every block
-  already processed) and then subscribes. Returns an unsubscribe function.
-- `window.__zer0CodeBlocks` — the array itself, for a consumer that would rather
-  poll than subscribe.
+- `window.zer0OnCodeBlock(fn)` — replays `window.__zer0CodeBlocks` (every block already processed) and then subscribes. Returns an unsubscribe function.
+- `window.__zer0CodeBlocks` — the array itself, for a consumer that would rather poll than subscribe.
 
 **The replay is the load-bearing half.** The sweep runs on `DOMContentLoaded`; a deferred consumer script is *normally* later than that, so a plain `addEventListener` would receive nothing at all and the contract would appear broken to the first person who tried it.
 
 **Invariants the tests pin** (`test/visual/features/extension-points.spec.js`):
 
-- exactly one event per code block — the duplicate-button failure mode is the
-  reason this exists, so it is asserted directly;
+- exactly one event per code block — the duplicate-button failure mode is the reason this exists, so it is asserted directly;
 - a listener registered *after* `DOMContentLoaded` still receives every block;
 - `detail.header` is non-null for Rouge-wrapped blocks;
 - the event is dispatched only after the copy button is attached.
@@ -80,11 +77,8 @@ The pre-existing stub pattern, listed here so the four extension points are in o
 
 ## Adding a new extension point
 
-1. Make it reachable without reading theme source — an event, a frontmatter key,
-   or a documented include.
+1. Make it reachable without reading theme source — an event, a frontmatter key, or a documented include.
 2. Pin the shape in `test/visual/features/extension-points.spec.js`, not just
 the happy path. The duplicate-event assertion exists because a duplicate is what actually shipped downstream.
-3. Document it in both places: here, and the consumer page at
-   `pages/_docs/customization/extension-points.md`.
-4. Say what is *not* a contract. The consumer page's closing section does this
-   deliberately — internal DOM shape is the thing people pin to by accident.
+3. Document it in both places: here, and the consumer page at `pages/_docs/customization/extension-points.md`.
+4. Say what is *not* a contract. The consumer page's closing section does this deliberately — internal DOM shape is the thing people pin to by accident.

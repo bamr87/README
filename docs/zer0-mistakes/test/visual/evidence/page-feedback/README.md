@@ -12,8 +12,7 @@ Proof for the new runtime **"Improve this page"** widget (`_includes/components/
 
 - It could **not** capture any runtime state — no console logs, no browser/OS,
 no viewport, no real URL/hash. (There is no runtime state to screenshot for it, which is why BEFORE is described rather than pictured.)
-- Its `labels=ai-agent` **doesn't exist in the repo**, so GitHub silently
-  dropped it and the issues landed unlabeled.
+- Its `labels=ai-agent` **doesn't exist in the repo**, so GitHub silently dropped it and the issues landed unlabeled.
 - Pre-baked mega-URLs risked the browser/GitHub URL-length ceiling.
 
 **AFTER** (runtime): a focused dialog captures the request type + description + live page context + a buffered console/error log, builds a compact issue with **labels that exist**, guards the URL length (clipboard fallback), and opens the GitHub prefill — with an optional AI clarify/prioritize step in between.
@@ -32,8 +31,7 @@ The AFTER numbers behind the pictures, asserted by the regression spec [`test/vi
 
 - `repository`: `bamr87/zer0-mistakes` — resolved from `site.repository`, never hardcoded.
 - `requestTypes`: 9.
-- `exampleLabels` (fix-page): `["page-feedback", "bug"]` — **both exist in the repo**
-  (contrast the old `ai-agent`, which did not). `page-feedback` was created for this channel.
+- `exampleLabels` (fix-page): `["page-feedback", "bug"]` — **both exist in the repo** (contrast the old `ai-agent`, which did not). `page-feedback` was created for this channel.
 - `issueUrlLength`: ~2.3 KB for a real report *with logs* — comfortably under the 7 KB guard.
 - `bodyIncludesPageContext` / `bodyIncludesLogs`: `true`.
 

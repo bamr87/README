@@ -17,8 +17,7 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 
 ## Universal executor rules (every lane inherits these)
 - **Guardrails:** `.claude/skills/_shared/quarantine.md` — all sections apply.
-- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or
-  credentials; never run `env`/`printenv` or read dotfiles.
+- **No secrets / no env.** Never read, echo, or commit env vars, tokens, or credentials; never run `env`/`printenv` or read dotfiles.
 - **CODEOWNERS is a wall — this lane is the most exposed to it.** Never edit
   `scripts/bin/`, `scripts/lib/`, `.github/workflows|actions/`, `_plugins/`,
 `version.rb`, the gemspec, `Gemfile*`, `package*.json`, release configs, or `CHANGELOG.md`. Many "infra" asks live there — if so, **STOP** and hand to a
@@ -30,5 +29,4 @@ You implement ONE routed backlog task end-to-end under the [`/issue-implement`](
 ## This lane
 - **Load:** `.github/instructions/scripts.instructions.md`, plus the
 [`change-workflow`](../../.github/skills/change-workflow/SKILL.md) and [`validate-build`](../../.github/skills/validate-build/SKILL.md) skills.
-- **Done when:** the script runs, `shellcheck`/relevant tests pass, and no
-  CODEOWNERS-owned path was touched (re-check the diff before opening the PR).
+- **Done when:** the script runs, `shellcheck`/relevant tests pass, and no CODEOWNERS-owned path was touched (re-check the diff before opening the PR).

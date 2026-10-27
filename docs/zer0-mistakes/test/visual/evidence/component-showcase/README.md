@@ -10,8 +10,7 @@ title: 'Evidence — component-showcase demo links existence-guarded (issue #219
 
 1. **Include could not render** — usage examples in the HTML comment were live
 Liquid tags that recursively re-included the file (`stack level too deep`). Fixed by wrapping them in `{% raw %}`.
-2. **Demo links were site-absolute** (`/docs/`, `/pages/`, etc.) — 404 on
-   remote-theme consumers. Fixed by making them inert (`href="#"`).
+2. **Demo links were site-absolute** (`/docs/`, `/pages/`, etc.) — 404 on remote-theme consumers. Fixed by making them inert (`href="#"`).
 
 ## Phase 2 (this PR): existence-guarded real links
 
@@ -42,10 +41,8 @@ BASE_URL=http://localhost:4000 node test/visual/component-showcase-evidence.mjs
 
 ## What each file shows
 
-- **`01-demo-links-after.png`** — phase 1 evidence: breadcrumb + list-group with
-  inert `href="#"` links (rendered on `/about/settings/components/`).
-- **`02-existence-guard-after.png`** — phase 2 evidence: the same sections with
-  existence-guarded real links (or plain text where the page is absent).
+- **`01-demo-links-after.png`** — phase 1 evidence: breadcrumb + list-group with inert `href="#"` links (rendered on `/about/settings/components/`).
+- **`02-existence-guard-after.png`** — phase 2 evidence: the same sections with existence-guarded real links (or plain text where the page is absent).
 - **`metrics.json`** — measured hrefs and onclick counts before vs after.
 
 ## Measured before → after (from `metrics.json`)

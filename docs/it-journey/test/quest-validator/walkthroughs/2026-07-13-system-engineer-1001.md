@@ -49,20 +49,17 @@ All statuses below come from the sealed engine run (`--mode execute`, `walk-evid
 commit → drift-guard snapshot/verify → context-handoff freshness check) all ran and matched output. Step 4 reproduced the `exit=0` → `exit=78` drift transition and the `README.md: FAILED` / `WARNING` lines exactly as documented.
 - ❌ `bash scripts/drift-guard.sh` (Chapter-3 version): `sha256sum: _config.yml: No
 such file or directory`, exits 1 under `set -euo pipefail` before reaching drift logic. The quest's own inline comment warns about this (`a missing file kills snapshot() under set -e`) and the lab supplies a corrected `WATCH` array — so the gap is **disclosed, not hidden**, but a learner running the pre-lab snippet verbatim still hits a crash.
-- ✅ Dimensions: commands_work 4, content_accuracy 5, completeness 5, clarity 5,
-  structure 5, safety 5.
+- ✅ Dimensions: commands_work 4, content_accuracy 5, completeness 5, clarity 5, structure 5, safety 5.
 
 ### 2. Dev Environment Integration — 5 runnable snippets, 4 failed
 - ❌ `markdown block — AGENTS.md content (Exercise 6.1)`: nested triple-backtick fences
 (` ```markdown ` / ` ```bash ` closers inside a ` ```markdown ` block) corrupt both the page rendering and any AGENTS.md copied from it. (Visible in source at lines 162–196.)
 - ❌ `check_agent_env.sh` definition + run: under `set -euo pipefail`, `((PASS++))`
 evaluates to 0 on the first success and returns exit 1, killing the script after the first check — reproduced by the engine.
-- ❌ `python3 scripts/validate_quest.py --quest q6`: script does not exist; fails
-  immediately in a learner's sandbox.
+- ❌ `python3 scripts/validate_quest.py --quest q6`: script does not exist; fails immediately in a learner's sandbox.
 - ⏭️ Cold-start block skipped (network clone of placeholder `YOUR_ORG/YOUR_REPO`).
 - ✅ `devcontainer.json` (Exercise 6.2) parsed clean.
-- Dimensions: commands_work 1, content_accuracy 3, completeness 2, clarity 3,
-  structure 4, safety 5.
+- Dimensions: commands_work 1, content_accuracy 3, completeness 2, clarity 3, structure 4, safety 5.
 
 ### 3. Safe Execution & Error Handling — 5 runnable snippets, 3 failed
 - ❌ `agent-with-retries.yml` (Exercise 7.1): inline `{% raw %}{% raw %}…{% endraw %}{% endraw %}` tags land
@@ -71,26 +68,21 @@ evaluates to 0 on the first success and returns exit 1, killing the script after
 (after a path comment), and the body is comment-only stubs — the exercise's stated objective ("Test failure recovery") is never actually delivered.
 - ❌ `python3 scripts/validate_quest.py --quest q7`: missing script.
 - ✅ Exercise 7.2 label-step fragment and the Chapter-5 error-report JSON both valid.
-- Dimensions: commands_work 1, content_accuracy 2, completeness 2, clarity 3,
-  structure 4, safety 4.
+- Dimensions: commands_work 1, content_accuracy 2, completeness 2, clarity 3, structure 4, safety 4.
 
 ### 4. Agent Memory Strategies — 4 runnable snippets, 2 failed
 - ❌ `agent-with-session-memory.yml` (Exercise 8.1): the `cat > … << 'EOF'` and
 `python3 - << 'EOF'` heredocs have **indented** closing `EOF` delimiters, so plain `<<` (not `<<-`) throws a bash syntax error; and the same inline `{% raw %}{% raw %}{% endraw %}{% endraw %}` leak corrupts every Actions expression in the cache keys and artifact names.
 - ❌ `python3 scripts/validate_quest.py --quest q8`: missing script.
-- ✅ Exercise 8.2 (`mkdir docs/agent-memory` + `touch`) and the Chapter-4
-  `learned-patterns.md` example both ran / parsed fine.
-- Dimensions: commands_work 1, content_accuracy 2, completeness 3, clarity 3,
-  structure 4, safety 5.
+- ✅ Exercise 8.2 (`mkdir docs/agent-memory` + `touch`) and the Chapter-4 `learned-patterns.md` example both ran / parsed fine.
+- Dimensions: commands_work 1, content_accuracy 2, completeness 3, clarity 3, structure 4, safety 5.
 
 ### 5. Kubernetes Fundamentals — 10 runnable snippets, all passed
 - ✅ Linux install + `kind create cluster --name citadel`, `kubectl get nodes -o
 wide`, `hello-pod.yaml` apply, `kubectl get pods --watch`, `describe`, `logs`, imperative-vs-declarative, namespace `dojo`, and the self-healing `kubectl delete pod` lesson all executed against a real cluster and matched documented behavior.
 - ✅ Both failure-state repros (`ImagePullBackOff`, `CrashLoopBackOff`) reproduced.
-- ⏭️/💭 macOS + Windows install blocks reasoned (OS-specific, not run on the Linux
-  sandbox) — acceptable, they're clearly labeled alternatives.
-- Dimensions: commands_work 5, content_accuracy 5, completeness 5, clarity 4,
-  structure 5, safety 5.
+- ⏭️/💭 macOS + Windows install blocks reasoned (OS-specific, not run on the Linux sandbox) — acceptable, they're clearly labeled alternatives.
+- Dimensions: commands_work 5, content_accuracy 5, completeness 5, clarity 4, structure 5, safety 5.
 
 ## 🐞 Issues Found
 
@@ -120,8 +112,7 @@ comment-only stubs; delivers none of the promised failure-recovery testing. *Fix
 - **medium · Memory & State · Chapter 3 `drift-guard.sh` ·** crashes on missing
 `_config.yml` under `set -e` before reaching drift logic. It's disclosed inline and fixed in the lab, so it's not launch-blocking — but the *first* appearance of the script is the broken one. *Fix:* make the Chapter-3 snippet guard missing files (`[ -f "$f" ]`) so the teaching version can't crash before the lab corrects it.
 - **low · Dev Env · Node 18 references ·** EOL since April 2025; bump to current LTS.
-- **low · Kubernetes Fundamentals ·** minor clarity nits only (unbounded `--watch`, a
-  TTY caveat for `exec`, the `Error`→`CrashLoopBackOff` status flicker). Non-blocking.
+- **low · Kubernetes Fundamentals ·** minor clarity nits only (unbounded `--watch`, a TTY caveat for `exec`, the `Error`→`CrashLoopBackOff` status flicker). Non-blocking.
 
 ## 🔗 Chain Continuity
 
@@ -145,19 +136,11 @@ myself — per the workflow contract the evidence (`walk-evidence.json` / `walk-
 - **What I ran vs. reasoned:** every `passed`/`failed`/`skipped` above is an engine
 command actually executed (or skipped) in the sandbox; every `reasoned` item was judged statically by the engine. My own contribution was the **linked-journey reasoning** in Chain Continuity, derived from reading the four agentic quests in full and the Kubernetes quest's frontmatter, cross-referenced against the sealed command results — I did not invent any output or score.
 - **Coverage / limits:**
-  - Window only: **5 of 9** quests in the level (window 1 of 2). The other 4 quests
-    of Level 1001 are out of scope for this run and unassessed here.
-  - The Kubernetes quest's **macOS/Windows install blocks were reasoned, not run**
-    (Linux sandbox) — acceptable, they're labeled OS alternatives.
-  - The Dev Env **cold-start block was skipped** (it clones a placeholder repo over
-    the network) — correctly not attempted in-sandbox.
-  - One **out-of-slice prerequisite** (`/quests/1000/agentic-mcp-server-mastery`) is
-    assumed by the GH-600 chain and was not walked.
-  - The leaked-Liquid-tag issue carries a **source-vs-rendered nuance** I stated
-    explicitly rather than overclaiming: the engine tests raw `.md`, so on the live
-    rendered page the tags are stripped; the defects that survive rendering are the
-    heredoc indentation, the `((PASS++))` bug, the nested fences, and the missing
-    `validate_quest.py`.
+  - Window only: **5 of 9** quests in the level (window 1 of 2). The other 4 quests of Level 1001 are out of scope for this run and unassessed here.
+  - The Kubernetes quest's **macOS/Windows install blocks were reasoned, not run** (Linux sandbox) — acceptable, they're labeled OS alternatives.
+  - The Dev Env **cold-start block was skipped** (it clones a placeholder repo over the network) — correctly not attempted in-sandbox.
+  - One **out-of-slice prerequisite** (`/quests/1000/agentic-mcp-server-mastery`) is assumed by the GH-600 chain and was not walked.
+  - The leaked-Liquid-tag issue carries a **source-vs-rendered nuance** I stated explicitly rather than overclaiming: the engine tests raw `.md`, so on the live rendered page the tags are stripped; the defects that survive rendering are the heredoc indentation, the `((PASS++))` bug, the nested fences, and the missing `validate_quest.py`.
 - **Confidence:** High on the per-quest defects (each reproduced by an executed
 command). High on the theme-mismatch and duplicate-title continuity findings (from frontmatter I read directly). Medium on the precise learner impact of the Liquid-tag leak, given the rendered-page nuance above.
 

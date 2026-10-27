@@ -67,10 +67,8 @@ Snippets: **ran 4 of 6 recorded (3 runnable); 2 passed, 2 failed, 2 reasoned.**
 but `bash -c 'echo "run_id=${​% raw %​}{​{ github.run_id }​}{​% endraw %​}"'` → **`bash: bad substitution` (exit 1)**. The leaked Jekyll tags are in the source at lines 163–204.
 - ❌ **Trace heredoc** — `cat > agent-execution-trace.json << 'EOF'` uses a **quoted**
 delimiter, so `"completed_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"` is written **literally**, never evaluated — the trace has no real timestamp.
-- ❌ **`python3 scripts/validate_quest.py --quest q3`** — "No such file or directory"; the
-  validation gate references a script the quest never ships.
-- ✅ **`stamp_artifact.py <file> <run_id> <task>`** — exit 0, prepended the expected
-  metadata header. The one genuinely working artifact.
+- ❌ **`python3 scripts/validate_quest.py --quest q3`** — "No such file or directory"; the validation gate references a script the quest never ships.
+- ✅ **`stamp_artifact.py <file> <run_id> <task>`** — exit 0, prepended the expected metadata header. The one genuinely working artifact.
 - ✅ **`agent-act` job YAML fragment** — parses; `needs: agent-run` correctly matches Ch.2's job.
 - 🧠 **`gh api ... /environments/agent-production -f reviewers=...`** (reasoned) — per `gh api
 --help`, `-f` sends **string literals**, not the nested array/object the environments API needs; would 422 against the real API.
@@ -80,19 +78,15 @@ Snippets: **ran 3 of 4 (1 runnable); 2 passed, 1 failed, 1 reasoned.**
 - ✅ **`dependency-updater-tools.yml`** — written and `yaml.safe_load`-parsed cleanly.
 - ✅ **`.github/copilot-instructions.md` Tool Permissions section** — valid, well-formed markdown.
 - ❌ **`python3 scripts/validate_quest.py --quest q4`** — same missing-script failure as Q1 (exit 2).
-- 🧠 Content note (reasoned): Ch.3–4 present `copilot-instructions.md` prose as an enforced
-  permission boundary; it is a **soft** prompt-level instruction, not a security control.
+- 🧠 Content note (reasoned): Ch.3–4 present `copilot-instructions.md` prose as an enforced permission boundary; it is a **soft** prompt-level instruction, not a security control.
 
 ### 3. Cloud Computing Fundamentals (75 · WARN)
 Snippets: **ran 3 of 9 recorded (5 runnable); 1 passed, 2 failed, 2 skipped, 4 reasoned.**
-- ✅ **`aws --version` / `az version` / `gcloud version`** — all ran (aws-cli 2.35.11,
-  azure-cli 2.87.0, gcloud 574.0.0); quest syntax matches current CLIs.
+- ✅ **`aws --version` / `az version` / `gcloud version`** — all ran (aws-cli 2.35.11, azure-cli 2.87.0, gcloud 574.0.0); quest syntax matches current CLIs.
 - ❌ **`aws sts get-caller-identity`** — `An error occurred (NoCredentials): Unable to locate
 credentials.` Correct syntax, but no prerequisite/credentials note for a "no prior cloud experience" learner running it outside CloudShell.
-- ❌ **`aws ec2 describe-availability-zones --region us-east-1 ...`** — identical `NoCredentials`
-  failure, same missing caveat.
-- ⏭️ macOS `brew` / Windows `winget` install blocks — skipped (Linux sandbox); package IDs
-  reasoned-correct.
+- ❌ **`aws ec2 describe-availability-zones --region us-east-1 ...`** — identical `NoCredentials` failure, same missing caveat.
+- ⏭️ macOS `brew` / Windows `winget` install blocks — skipped (Linux sandbox); package IDs reasoned-correct.
 - 🧠 Two of three **Secondary Objectives** (Deployment Models; Economics of Elasticity) have
 **zero** body content — a full-text search finds no "hybrid", "multi-cloud", "elasticity", "pay-as-you-go", "on-demand", or "reserved" anywhere. Content accuracy on what *is* covered scored 5/5.
 
@@ -104,19 +98,16 @@ blocks **byte for byte**, including transient-failure absorption (exit=0 on atte
 Note: this quest correctly wraps whole fenced blocks in `{​% raw %​}` (source lines 152, 273) — the *right* way to do what Quest 1 got wrong.
 - ❌ **Final "break it on purpose" instruction** — quest claims deleting `exit 1` yields
 "exit=0 while the tool never succeeded." **Actually run, it loops forever**: the retry/`sleep` lines sit inside the `until` loop but outside the `if`, so removing `exit 1` re-fires `::error::` + `gh issue create` every iteration and never exits — had to be killed after 60s / 5+ iterations. Confirmed by static read of source lines 303–324.
-- 🧠 Cites certification code **"GH-600"** with a specific Microsoft Learn URL and weightings;
-  the engine could not verify this exam code exists (known GitHub codes run GH-100…GH-500).
+- 🧠 Cites certification code **"GH-600"** with a specific Microsoft Learn URL and weightings; the engine could not verify this exam code exists (known GitHub codes run GH-100…GH-500).
 
 ### 5. The MCP Conclave — MCP Servers (— · FAIL / timeout)
 Snippets: **none — `claude timed out after 600s`; no machine verdict.** Everything here is **`reasoned`** from a static read of the source only:
-- 🧠 **`python3 scripts/validate_quest.py --quest q5`** (line 304) — the **same** missing
-  validator that the engine actually failed on in Q1 and Q2; near-certain to fail identically.
+- 🧠 **`python3 scripts/validate_quest.py --quest q5`** (line 304) — the **same** missing validator that the engine actually failed on in Q1 and Q2; near-certain to fail identically.
 - 🧠 **Windows PowerShell block (lines 160–167)** — `echo ... | $env:GITHUB_PERSONAL_ACCESS_TOKEN=$env:GITHUB_TOKEN`
 then a separate `npx` line is not valid PowerShell (piping into a variable assignment); a Windows learner following it literally would get a parser error.
 - 🧠 **Custom MCP server (Ch.4)** — uses `server.setRequestHandler("tools/list", …)` with a
 **string** method name; current `@modelcontextprotocol/sdk` expects a request *schema object*, so this may not run as written (low confidence — not executed; SDK version-dependent).
-- 🧠 Token guidance mixes fine-grained-PAT language with classic `ghp_`/`repo:write`/`admin:org`
-  scope names — a minor inconsistency for a security-focused chapter.
+- 🧠 Token guidance mixes fine-grained-PAT language with classic `ghp_`/`repo:write`/`admin:org` scope names — a minor inconsistency for a security-focused chapter.
 
 ## 🐞 Issues Found
 
@@ -145,11 +136,9 @@ unverifiable. *Fix:* verify against GitHub's catalog or frame the domain model a
 variable assignment. *Fix:* correct the PowerShell to set `$env:GITHUB_PERSONAL_ACCESS_TOKEN` then pipe into `npx` on its own line.
 
 **Low**
-- **L1 · Q1** — trace JSON omits `commit_sha` (`${​{ github.sha }​}`), so it can't prove the
-  commit-level traceability the objective claims.
+- **L1 · Q1** — trace JSON omits `commit_sha` (`${​{ github.sha }​}`), so it can't prove the commit-level traceability the objective claims.
 - **L2 · Q1** — secondary "multi-run dashboard" objective has no supporting snippet at all.
-- **L3 · Q2/Q4** — both reference a "dependency updater agent you designed in Q1" without
-  recapping it; not self-contained for a fresh reader (see §6 for why "Q1" is ambiguous here).
+- **L3 · Q2/Q4** — both reference a "dependency updater agent you designed in Q1" without recapping it; not self-contained for a fresh reader (see §6 for why "Q1" is ambiguous here).
 - **L4 · Q3** — knowledge-check questions have no answer key for self-verification.
 - **L5 · Q5 (reasoned)** — custom MCP server may use a stale SDK `setRequestHandler` signature.
 
@@ -169,18 +158,11 @@ variable assignment. *Fix:* correct the PowerShell to set `$env:GITHUB_PERSONAL_
 
 - **What I ran vs. reasoned:** I did **not** execute the engine — I consumed the sealed
 `./walk-evidence.json` / `./walk-evidence.md` the workflow produced with `agentic_validate.py --mode execute`, exactly as the skill's step 2 requires when evidence pre-exists. Every `passed`/`failed` in §4 is a command the engine ran in its disposable sandbox; I additionally **read all five quest sources in plan order** and cross-checked the engine's findings against the raw markdown (e.g., confirmed the `{​% raw %​}` leak at Q1 lines 163–204 and the Q4 loop bug at lines 303–324, and verified Q4 escapes `{​% raw %​}` correctly).
-- **Mode:** `execute`, real (not `--mock`). 4 quests scored, average 61.2%, engine cost
-  ~$2.67, reported by the sealed evidence.
+- **Mode:** `execute`, real (not `--mock`). 4 quests scored, average 61.2%, engine cost ~$2.67, reported by the sealed evidence.
 - **Coverage limits (honest):**
-  - **Quest 5 (MCP Conclave) has NO machine evidence** — the engine `claude` process timed out
-    at 600s. All Quest-5 items are `reasoned` static reads; I did not run any MCP command,
-    and its score is `—`, counted as a fail for the slice verdict but **not** a tested fail.
-  - This was **window 1 of 2** — only 5 of the level's 9 quests were in scope; I did not walk
-    the remaining 4 (the perfection ledger accumulates them on a later run).
-  - Several snippets are inherently un-runnable in a headless Linux sandbox (macOS `brew`,
-    Windows `winget`/PowerShell, live `gh api`/`aws` calls needing credentials, and the
-    Copilot-agent-in-VS-Code interactions of Q2/Q5) — these are `skipped`/`reasoned`, not
-    proof of correctness.
+  - **Quest 5 (MCP Conclave) has NO machine evidence** — the engine `claude` process timed out at 600s. All Quest-5 items are `reasoned` static reads; I did not run any MCP command, and its score is `—`, counted as a fail for the slice verdict but **not** a tested fail.
+  - This was **window 1 of 2** — only 5 of the level's 9 quests were in scope; I did not walk the remaining 4 (the perfection ledger accumulates them on a later run).
+  - Several snippets are inherently un-runnable in a headless Linux sandbox (macOS `brew`, Windows `winget`/PowerShell, live `gh api`/`aws` calls needing credentials, and the Copilot-agent-in-VS-Code interactions of Q2/Q5) — these are `skipped`/`reasoned`, not proof of correctness.
 - **Confidence:** **High** on the four scored quests' concrete failures (each independently
 reproduced by a real command and corroborated by the source). **Medium/low** on Quest 5, which is static-only — the missing-validator finding is high-confidence (same script the engine already failed twice), the PowerShell and SDK-signature findings are lower-confidence reasoned notes.
 - **Scope discipline:** read-only over content. I made no edits to any quest, `walk-plan.json`,

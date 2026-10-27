@@ -50,8 +50,7 @@ Optional intro markdown (shown in the cover hero).
 
 ## What it renders
 
-- **Cover hero** — cover image, title, subtitle, a series badge (from
-  `_data/series.yml`), letter count, audience, and a "Start at A" button.
+- **Cover hero** — cover image, title, subtitle, a series badge (from `_data/series.yml`), letter count, audience, and a "Start at A" button.
 - **A–Z quick-jump** strip — each card is anchored `#letter-a` … `#letter-z`.
 - **The alphabet board** — a responsive grid of `abc-letter` cards. The big
 letter is HTML typography (a badge), never baked into the art, so raster models never garble it. A card whose `status` is `planned` (no plate yet) shows a tinted **"illustration coming soon"** placeholder instead of a broken image, so the book reads end-to-end before any art runs.

@@ -38,8 +38,7 @@ Citations below include file:line where useful — treat them as pointers to re-
 `bump-theme-pins.sh`, `.theme-overrides.yml`) — the self-service bump pipeline this repo built exists on one side of a conversation nobody joined.
 - **`detect_consumer_mode()` misclassifies 6 of 9 consumers as `gem` mode**
 because their `_config.yml` uses padded key-alignment YAML — confirmed independently against six repos — which silently skips the required-plugin check wherever it fires.
-- **`audit-consumer --format json` emits invalid JSON** (trailing comma before
-  the closing bracket) — unusable for CI without a workaround.
+- **`audit-consumer --format json` emits invalid JSON** (trailing comma before the closing bracket) — unusable for CI without a workaround.
 - **The theme's own homepage JSON-LD describes the theme, not the consumer** —
 live today on bashconsultants.com, whose structured data currently claims a Denver IT-consulting practice is a free, open-source Ruby gem.
 - **Two org hubs (year-of-ai, ai-world-view) run zero pre-merge validation**
@@ -152,8 +151,7 @@ which sets `author:` front matter on every post: with no `authors.yml`, `is_know
 
 - **year-of-ai / ai-world-view**: ai-world-view's CLAUDE.md still describes a
 single-member org; it has three. Its `_config_dev.yml` comment claims to disable `remote_theme` — it doesn't. Both hubs' "never float on HEAD" rule is scoped to `_config.yml`/`hub.yml` in the docs, but `_config_dev.yml` floats in both, unremarked.
-- **lifehacker.dev**: entry-point table omits the fully-wired `theme-scout`
-  agent; documented commit types cover barely half of what the log actually uses.
+- **lifehacker.dev**: entry-point table omits the fully-wired `theme-scout` agent; documented commit types cover barely half of what the log actually uses.
 - **irony-works**: CLAUDE.md never mentions any theme-layer file; five exist.
 - **bashconsultants**: "three build stacks" implied equally validated; CI only
 ever builds two. Gemfile's "ZERO VERSION PINS" philosophy is immediately contradicted by a hard local path pin, and cites a doc file that doesn't exist.
@@ -161,10 +159,8 @@ ever builds two. Gemfile's "ZERO VERSION PINS" philosophy is immediately contrad
 but don't exist on disk or in config; a real collection (`_quest-reports`, 117 files) isn't documented at all. `AGENTS.md`'s Ruby/Jekyll version claims are already known-stale per the repo's own quest-walkthrough ledger.
 - **zer0-pages**: the headline override-justification claim is backwards — both
 cited bugs are documented as *fixed inside* the v1.26.0 release it cites as "still broken as of." The repo actually runs `1.25.0`, so the forks are real and needed, just not for the stated reason.
-- **zer0-pages-remote**: CLAUDE.md is a mostly-unfilled scaffold — fair for a
-  bare demo, but real.
-- **wargames**: `AGENTS.md` is stale installer boilerplate that contradicts the
-  repo's real structure on three points; CLAUDE.md gets all three right.
+- **zer0-pages-remote**: CLAUDE.md is a mostly-unfilled scaffold — fair for a bare demo, but real.
+- **wargames**: `AGENTS.md` is stale installer boilerplate that contradicts the repo's real structure on three points; CLAUDE.md gets all three right.
 
 ## I. Patterns worth propagating fleet-wide
 
@@ -176,40 +172,28 @@ a now-outdated justification, this is exactly what `.theme-overrides.yml` is mea
 (lifehacker.dev's and it-journey's `theme-scout` agents) — it-journey pairs each of its three CSS workarounds with a written upstream-fix proposal under `TODO/theme-issues/`.
 - **Accessibility-conscious overrides** — lifehacker.dev's two additive
 includes add `role="img" aria-label` / `aria-hidden` handling the theme's own stock markup lacks; a candidate for upstreaming.
-- **CODEOWNERS + branch protection paired together** (lifehacker.dev,
-  it-journey) — makes "a bot's own PR can't approve itself" structural.
-- **Cross-stack CI that builds every real deployment target**
-  (bashconsultants' Pages + Azure gate).
+- **CODEOWNERS + branch protection paired together** (lifehacker.dev, it-journey) — makes "a bot's own PR can't approve itself" structural.
+- **Cross-stack CI that builds every real deployment target** (bashconsultants' Pages + Azure gate).
 
 ## Recommended actions
 
 ### Quick, low-risk, high-signal
 
-1. Fix `detect_consumer_mode()`'s regex (B1) — one line, unblocks accurate
-   plugin checks for 6 repos immediately.
+1. Fix `detect_consumer_mode()`'s regex (B1) — one line, unblocks accurate plugin checks for 6 repos immediately.
 2. Fix the trailing comma in `audit-consumer --format json` (B2) — one line.
-3. Add the four unregistered repos to `consumers.yml` (A1) — note `zer0-pages`'
-   `gem` mode and `pages/` source root explicitly.
-4. `bundle lock --update jekyll-theme-zer0` in `zer0-pages` (D) — nothing is
-   blocking except that nobody ran it.
-5. Delete the retirable overrides: bashconsultants' `posthog.html` fork
-   (adopt `posthog.privacy.*` instead) and it-journey's `particles-source.js`.
+3. Add the four unregistered repos to `consumers.yml` (A1) — note `zer0-pages`' `gem` mode and `pages/` source root explicitly.
+4. `bundle lock --update jekyll-theme-zer0` in `zer0-pages` (D) — nothing is blocking except that nobody ran it.
+5. Delete the retirable overrides: bashconsultants' `posthog.html` fork (adopt `posthog.privacy.*` instead) and it-journey's `particles-source.js`.
 
 ### Structural
 
-1. Land `.theme-overrides.yml` in irony-works, bashconsultants, it-journey,
-   and zer0-pages (A3) — every override already has a verified reason.
-2. Resolve the obsidian-plugin contradiction (B4) — gate the manifest
-   requirement on actual wikilink usage, or stop calling the plugin optional.
-3. Scope `jsonld-software.html` to the theme's own site (C1) — currently
-   live and incorrect on at least one real consumer homepage.
+1. Land `.theme-overrides.yml` in irony-works, bashconsultants, it-journey, and zer0-pages (A3) — every override already has a verified reason.
+2. Resolve the obsidian-plugin contradiction (B4) — gate the manifest requirement on actual wikilink usage, or stop calling the plugin optional.
+3. Scope `jsonld-software.html` to the theme's own site (C1) — currently live and incorrect on at least one real consumer homepage.
 4. Give year-of-ai and ai-world-view a real pre-merge `jekyll build` gate (G).
-5. Regenerate `consumers.yml`'s prose risk notes from the audit tool's actual
-   output rather than hand-maintained estimates that drift from the code.
+5. Regenerate `consumers.yml`'s prose risk notes from the audit tool's actual output rather than hand-maintained estimates that drift from the code.
 
 ### Worth a decision, not urgent
 
-1. Retire bashconsultants' obsolete path-gem dev workaround (D) — touches
-   `docker-compose.yml`, `Dockerfile`, and an agent doctrine file.
-2. Backfill `_data/authors.yml` on bashconsultants (F) — the one
-   missing-data-file gap with a verified visible UX cost today.
+1. Retire bashconsultants' obsolete path-gem dev workaround (D) — touches `docker-compose.yml`, `Dockerfile`, and an agent doctrine file.
+2. Backfill `_data/authors.yml` on bashconsultants (F) — the one missing-data-file gap with a verified visible UX cost today.

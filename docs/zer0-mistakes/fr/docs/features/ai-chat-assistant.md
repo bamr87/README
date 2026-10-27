@@ -64,8 +64,7 @@ Le proxy peut s'authentifier auprès de Claude de deux manières (détectées au
 
 - **Connecteur Claude Code (OAuth)** — utilisez votre jeton de connexion Claude Code / Claude.ai
 (`sk-ant-oat…`) au lieu d'une clé API. Idéal pour un chat **privé/personnel** : le proxy envoie un jeton Bearer, le rafraîchit automatiquement (mis en cache dans KV) et doit se trouver derrière **Cloudflare Access** afin que vous seul puissiez l'utiliser — le jeton puise dans votre compte personnel. Voir le [README de chat-proxy](https://github.com/bamr87/zer0-mistakes/tree/main/templates/deploy/chat-proxy) pour la configuration OAuth.
-- **Clé API** — définissez plutôt `ANTHROPIC_API_KEY` sur le proxy. Idéal pour un
-  site **public** (utilisez une clé limitée à un espace de travail avec un plafond de dépenses).
+- **Clé API** — définissez plutôt `ANTHROPIC_API_KEY` sur le proxy. Idéal pour un site **public** (utilisez une clé limitée à un espace de travail avec un plafond de dépenses).
 
 ## Configuration
 
@@ -92,8 +91,7 @@ ai_chat:
 - `proxy_ready: false` garde le widget masqué tant que votre proxy n'est pas déployé.
 - `strict_context: true` ancre les réponses à la page courante ; les outils
 GitHub fonctionnent toujours car l'ancrage ne restreint que la façon dont les questions reçoivent une réponse.
-- `model: 'claude-opus-5-5'` — tout identifiant de modèle Claude actuel fonctionne ; le
-  modèle du proxy peut fixer le modèle côté serveur afin que les clients ne puissent pas le changer.
+- `model: 'claude-opus-5-5'` — tout identifiant de modèle Claude actuel fonctionne ; le modèle du proxy peut fixer le modèle côté serveur afin que les clients ne puissent pas le changer.
 
 ## Actions GitHub depuis le chat
 
@@ -142,8 +140,7 @@ Aucune clé Anthropic côté client n'est requise en mode proxy.
 Un site Jekyll statique ne peut pas contenir de secret, donc le développement local exécute un petit **proxy de développement** qui exécute la même logique de Worker sur Node et lit votre identifiant depuis `.env` :
 
 1. Obtenez un jeton Claude Code à longue durée de vie (Claude Pro/Max) : `claude setup-token`.
-2. Ajoutez-le à `.env` (ignoré par git) : `CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-…`
-   (ou définissez plutôt `ANTHROPIC_API_KEY`).
+2. Ajoutez-le à `.env` (ignoré par git) : `CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-…` (ou définissez plutôt `ANTHROPIC_API_KEY`).
 3. Exécutez-le en parallèle de `docker-compose up` :
 
    ```bash
@@ -193,10 +190,8 @@ bundle exec jekyll serve \
 
 - **Streaming** : les réponses s'affichent jeton par jeton via SSE.
 - **Ancrage strict** : les réponses sont limitées aux métadonnées et au contenu de la page.
-- **Repli hors périmètre** : un message de repli configuré est utilisé lorsque
-  le contexte est manquant.
-- **Rendu markdown sécurisé** : la sortie de l'assistant prend en charge un petit
-  sous-ensemble markdown sans exécution de HTML non sécurisé.
+- **Repli hors périmètre** : un message de repli configuré est utilisé lorsque le contexte est manquant.
+- **Rendu markdown sécurisé** : la sortie de l'assistant prend en charge un petit sous-ensemble markdown sans exécution de HTML non sécurisé.
 
 ## Dépannage
 
@@ -208,19 +203,15 @@ bundle exec jekyll serve \
 
 ### Les requêtes échouent dans le navigateur
 
-1. L'URL du point de terminaison du proxy est correcte et renvoie les en-têtes CORS pour votre origine
-   (`ALLOWED_ORIGINS` dans le worker).
+1. L'URL du point de terminaison du proxy est correcte et renvoie les en-têtes CORS pour votre origine (`ALLOWED_ORIGINS` dans le worker).
 2. Le proxy détient un `ANTHROPIC_API_KEY` valide.
-3. Mode direct : la clé est valide et l'ID du modèle existe (par ex.
-   `claude-opus-5-5`).
+3. Mode direct : la clé est valide et l'ID du modèle existe (par ex. `claude-opus-5-5`).
 
 ### Les actions d'issue/PR ne fonctionnent pas
 
 1. `ai_chat.github.enabled` est `true` (et les puces apparaissent dans le panneau).
-2. Mode `proxy` : le worker a `GITHUB_TOKEN` + `GITHUB_REPOSITORY` définis et
-   le jeton dispose des permissions de lecture-écriture sur Issues/Contents/Pull requests du dépôt.
-3. Mode `url` : les pop-ups sont autorisées pour votre site (le formulaire pré-rempli s'ouvre
-   dans un nouvel onglet).
+2. Mode `proxy` : le worker a `GITHUB_TOKEN` + `GITHUB_REPOSITORY` définis et le jeton dispose des permissions de lecture-écriture sur Issues/Contents/Pull requests du dépôt.
+3. Mode `url` : les pop-ups sont autorisées pour votre site (le formulaire pré-rempli s'ouvre dans un nouvel onglet).
 
 ### Les réponses sont trop génériques
 

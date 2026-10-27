@@ -283,12 +283,13 @@ nav:
                       - "Weekly SEO Review: Dec 15 - Dec 21, 2025": it-journey/TODO/seo/reports/weekly-review-2025-12-20.md
                       - "📅 Content Freshness Report": it-journey/TODO/seo/reports/content-freshness-2025-12-20.md
       - "Welcome to IT-Journey.dev: Where Heroes are Made! 🧙‍♂️⚔️": it-journey/index.md
-      - "AGENTS.md": it-journey/AGENTS.md
       - "Changelog": it-journey/CHANGELOG.md
       - "Citizen Code of Conduct": it-journey/CODE_OF_CONDUCT.md
-      - "CLAUDE.md — Claude Code guide for IT-Journey": it-journey/CLAUDE.md
       - "Contributing to IT-Journey": it-journey/CONTRIBUTING.md
-      - "IT-Journey": it-journey/PRD.md
+      - "it-journey (AGENTS)": it-journey/AGENTS.md
+      - "it-journey (CLAUDE)": it-journey/CLAUDE.md
+      - "IT-Journey (PRD)": it-journey/PRD.md
+      - "it-journey tools": it-journey/tools/README.md
       - "PRD Machine Requirement Conflicts - Resolution Report": it-journey/RESOLUTION_REPORT.md
       - "Roadmap": it-journey/roadmap.md
       - "Security Policy": it-journey/SECURITY.md
@@ -305,19 +306,29 @@ nav:
                   - "Docs — Section Guide": it-journey/_data/brand/sections/docs.md
                   - "Quests — Section Guide": it-journey/_data/brand/sections/quest.md
       - "Documentation":
-          - "IT-Journey Developer Documentation": it-journey/docs/README.md
+          - "it-journey documentation": it-journey/docs/README.md
           - "Developer Contribution Guide": it-journey/docs/CONTRIBUTING_DEVELOPER.md
+          - "it-journey — Constitution": it-journey/docs/constitution.md
           - "Notes Workbench — the design": it-journey/docs/notes/WORKBENCH.md
           - "Prose Oneline Universal": it-journey/docs/prose-oneline-universal.md
+          - "Roadmap": it-journey/docs/ROADMAP.md
           - "Testing Frameworks": it-journey/docs/testing/TESTING_FRAMEWORKS.md
           - "Agent Evaluation & Tuning (GH-600 Domain 4, implemented)":
               - "Agent Evaluation & Tuning (GH-600 Domain 4, implemented)": it-journey/docs/agents/README.md
               - "Agent Failure RCA — <date> <short title>": it-journey/docs/agents/rca-template.md
               - "Agent Instruction Changelog": it-journey/docs/agents/instructions-changelog.md
+          - "Amendments — it-journey":
+              - "Amendments — it-journey": it-journey/docs/amendments/README.md
+              - "0001 — Ratify the constitution": it-journey/docs/amendments/0001-ratify-constitution.md
+              - "NNNN — Title of the amendment": it-journey/docs/amendments/0000-template.md
           - "Architecture":
               - "About Directory Reorganization Summary": it-journey/docs/architecture/ABOUT_REORGANIZATION_SUMMARY.md
               - "IT-Journey Repository Structure": it-journey/docs/architecture/REPOSITORY_STRUCTURE.md
               - "Jekyll Implementation Details": it-journey/docs/architecture/JEKYLL_IMPLEMENTATION.md
+          - "Architecture Decision Records":
+              - "Architecture Decision Records": it-journey/docs/adr/README.md
+              - "ADR 0001 — Record architecture decisions": it-journey/docs/adr/0001-record-architecture-decisions.md
+              - "ADR NNNN — Title in sentence case": it-journey/docs/adr/0000-template.md
           - "Archive":
               - "Link Health 2025":
                   - "IT-Journey Link Health Analysis - Executive Summary": it-journey/docs/archive/link-health-2025/ANALYSIS_SUMMARY.md
@@ -335,6 +346,9 @@ nav:
               - "Quest Build Plan: Complete Placeholder Quest System": it-journey/docs/quests/QUEST_BUILD_PLAN.md
               - "Quest Environment Matrix — the refactoring plan": it-journey/docs/quests/ENVIRONMENT_MATRIX.md
               - "Quest Walkthrough Video Framework": it-journey/docs/quests/VIDEO_FRAMEWORK.md
+          - "Reference":
+              - "Make targets": it-journey/docs/reference/make-targets.md
+              - "Workflow reference": it-journey/docs/reference/workflows.md
           - "Scripts":
               - "PRD MACHINE Documentation": it-journey/docs/scripts/PRD_MACHINE.md
               - "Script Directory Cleanup Summary": it-journey/docs/scripts/CLEANUP_SUMMARY.md
@@ -1132,13 +1146,16 @@ nav:
                       - "Evidence — TOC scroll spy tracks the section being read": zer0-mistakes/test/visual/evidence/scroll-spy/README.md
                       - "fix-a11y-intro-actions-nav-toggle-badges — visual evidence": zer0-mistakes/test/visual/evidence/fix-a11y-intro-actions-nav-toggle-badges/README.md
                       - "fix-cookie-banner-compact — visual evidence": zer0-mistakes/test/visual/evidence/fix-cookie-banner-compact/README.md
+                      - "fix-includes-favicon-tags-404 — visual evidence": zer0-mistakes/test/visual/evidence/fix-includes-favicon-tags-404/README.md
                       - "fix-includes-preview-path-join — visual evidence": zer0-mistakes/test/visual/evidence/fix-includes-preview-path-join/README.md
                       - "fix-perf-lazy-mermaid-graph-posthog-nav — visual evidence": zer0-mistakes/test/visual/evidence/fix-perf-lazy-mermaid-graph-posthog-nav/README.md
                       - "fix-search-page-sitemap — visual evidence": zer0-mistakes/test/visual/evidence/fix-search-page-sitemap/README.md
+                      - "Footer duplicate copyright (backlog T-054)": zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md
                       - "Heading-level skips (#436)": zer0-mistakes/test/visual/evidence/heading-level-skips/README.md
                       - "Mobile navigation panel collapsed to a 60px sliver": zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md
                       - "Mobile responsive audit — evidence": zer0-mistakes/test/visual/evidence/mobile-responsive/README.md
                       - "Navbar label tiers, merged chevron, centred grid — evidence (#405)": zer0-mistakes/test/visual/evidence/navbar-tiers-405/README.md
+                      - "port-zer0-cms-2026-10 — visual evidence": zer0-mistakes/test/visual/evidence/port-zer0-cms-2026-10/README.md
                       - "Section topic filter — whole-tag matching": zer0-mistakes/test/visual/evidence/section-topic-filter/README.md
                       - "theme-color (#281)": zer0-mistakes/test/visual/evidence/theme-color-surface/README.md
                       - "Evidence: Site Builder — bring your own AI provider (Claude or Grok)…":
@@ -1832,6 +1849,10 @@ nav:
               - "Deploy target: Azure Static Web Apps": zer0-mistakes/templates/deploy/azure-swa/README.md
               - "Deploy target: docker-prod (self-hosted production)": zer0-mistakes/templates/deploy/docker-prod/README.md
               - "Deploy target: GitHub Pages": zer0-mistakes/templates/deploy/github-pages/README.md
+      - "zer0 studio":
+          - "zer0 studio": zer0-mistakes/studio/README.md
+          - "AGENTS.md — working rules for AI coding agents in studio/": zer0-mistakes/studio/AGENTS.md
+          - "Changelog": zer0-mistakes/studio/test/fixtures/theme/CHANGELOG.md
   - "Barody Project":
       - "Repository & tooling":
           - "Infrastructure":
@@ -2170,18 +2191,59 @@ nav:
               - "Ti": bashcrawl/src/terminal-illness/ti/audio/assets/README.md
       - "⚔️ Bashcrawl — learn the terminal by playing": bashcrawl/README.md
       - "AGENTS.md": bashcrawl/AGENTS.md
+      - "bashcrawl": bashcrawl/CLAUDE.md
+      - "bashcrawl tools": bashcrawl/tools/README.md
       - "Changelog": bashcrawl/CHANGELOG.md
-      - "CLAUDE.md": bashcrawl/CLAUDE.md
       - "motion/": bashcrawl/motion/README.md
+      - "PRD — Bashcrawl": bashcrawl/PRD.md
       - "TermForge": bashcrawl/termforge/README.md
+      - "Courses":
+          - "Navigator":
+              - "Course": bashcrawl/courses/navigator/course.md
+              - "01 Where Am I": bashcrawl/courses/navigator/01-where-am-i.md
+              - "02 Look Around": bashcrawl/courses/navigator/02-look-around.md
+              - "03 Moving": bashcrawl/courses/navigator/03-moving.md
+              - "04 Paths": bashcrawl/courses/navigator/04-paths.md
+              - "05 Big Picture": bashcrawl/courses/navigator/05-big-picture.md
+          - "Pipelines":
+              - "Course": bashcrawl/courses/pipelines/course.md
+              - "01 Grep": bashcrawl/courses/pipelines/01-grep.md
+              - "02 First Pipe": bashcrawl/courses/pipelines/02-first-pipe.md
+              - "03 Sort And Uniq": bashcrawl/courses/pipelines/03-sort-and-uniq.md
+              - "04 Cut": bashcrawl/courses/pipelines/04-cut.md
+              - "05 Redirect": bashcrawl/courses/pipelines/05-redirect.md
+              - "06 The Guild Report": bashcrawl/courses/pipelines/06-the-guild-report.md
+          - "Reading":
+              - "Course": bashcrawl/courses/reading/course.md
+              - "01 Cat And File": bashcrawl/courses/reading/01-cat-and-file.md
+              - "02 Head And Tail": bashcrawl/courses/reading/02-head-and-tail.md
+              - "03 Counting": bashcrawl/courses/reading/03-counting.md
+              - "04 Numbers And Pages": bashcrawl/courses/reading/04-numbers-and-pages.md
+          - "Shell Craft":
+              - "Course": bashcrawl/courses/shell-craft/course.md
+              - "01 Variables": bashcrawl/courses/shell-craft/01-variables.md
+              - "02 Arithmetic": bashcrawl/courses/shell-craft/02-arithmetic.md
+              - "03 Aliases": bashcrawl/courses/shell-craft/03-aliases.md
+              - "04 Globs And Quotes": bashcrawl/courses/shell-craft/04-globs-and-quotes.md
+              - "05 History": bashcrawl/courses/shell-craft/05-history.md
+              - "The Grimoire of Words of Power": bashcrawl/courses/shell-craft/lab/grimoire.md
+          - "Workshop":
+              - "Course": bashcrawl/courses/workshop/course.md
+              - "01 Make": bashcrawl/courses/workshop/01-make.md
+              - "02 Copy And Move": bashcrawl/courses/workshop/02-copy-and-move.md
+              - "03 Remove": bashcrawl/courses/workshop/03-remove.md
+              - "04 Permissions": bashcrawl/courses/workshop/04-permissions.md
+              - "05 Write": bashcrawl/courses/workshop/05-write.md
       - "Documentation":
           - "Bashcrawl Documentation": bashcrawl/docs/index.md
           - "Advanced Topics": bashcrawl/docs/advanced.md
           - "Agent Mode Protocol Specification": bashcrawl/docs/agent-protocol.md
+          - "Authoring Courses": bashcrawl/docs/authoring-courses.md
           - "Bashcrawl Agent Playtest Report & Recommendations": bashcrawl/docs/agent-playtest-report.md
           - "Bashcrawl Improvement Plan": bashcrawl/docs/improvement-plan.md
           - "Bashcrawl Logging Framework Plan": bashcrawl/docs/logging-framework-plan.md
           - "Bashcrawl Observatory — Log & Screenshot Viewer": bashcrawl/docs/viewer.md
+          - "bashcrawl — Constitution": bashcrawl/docs/constitution.md
           - "Bashcrawl: Complete Game Walkthrough (demo-critical-path)": bashcrawl/docs/demo-critical-path.md
           - "Bashcrawl: Complete Game Walkthrough (demo-walkthrough)": bashcrawl/docs/demo-walkthrough.md
           - "Bashcrawl: Complete Walkthrough": bashcrawl/docs/walkthrough.md
@@ -2191,7 +2253,16 @@ nav:
           - "Getting Started": bashcrawl/docs/getting-started.md
           - "Log & Screenshot Viewer — Design Reference": bashcrawl/docs/log-viewer-reference.md
           - "Runtime Architecture": bashcrawl/docs/architecture-runtime.md
+          - "The Bashcrawl Platform": bashcrawl/docs/PLATFORM.md
           - "Web Frontend API Design (Phase 2 Proposal)": bashcrawl/docs/web-api-design.md
+          - "Amendments — bashcrawl":
+              - "Amendments — bashcrawl": bashcrawl/docs/amendments/README.md
+              - "0001 — Ratify the constitution": bashcrawl/docs/amendments/0001-ratify-constitution.md
+              - "NNNN — Title of the amendment": bashcrawl/docs/amendments/0000-template.md
+          - "Architecture Decision Records":
+              - "Architecture Decision Records": bashcrawl/docs/adr/README.md
+              - "ADR 0001 — Record architecture decisions": bashcrawl/docs/adr/0001-record-architecture-decisions.md
+              - "ADR NNNN — Title in sentence case": bashcrawl/docs/adr/0000-template.md
           - "Generated":
               - "Motion Clips and Art": bashcrawl/docs/generated/motion.md
               - "Quest Index": bashcrawl/docs/generated/quests.md
@@ -2199,6 +2270,9 @@ nav:
               - "Runtime Commands": bashcrawl/docs/generated/runtime-commands.md
           - "Schemas":
               - "Content Registry Contract (v1)": bashcrawl/docs/schemas/content-registries.v1.md
+              - "Events v1": bashcrawl/docs/schemas/events.v1.md
+              - "Plugins v1": bashcrawl/docs/schemas/plugin.v1.md
+              - "Rules v1": bashcrawl/docs/schemas/rules.v1.md
               - "Terminal Protocol v1": bashcrawl/docs/schemas/terminal-protocol.v1.md
               - "Terminal Protocol v2": bashcrawl/docs/schemas/terminal-protocol.v2.md
           - "Termforge":
@@ -2226,10 +2300,24 @@ nav:
   - "Scripts":
       - "🛠️ scripts": scripts/README.md
       - "Changelog": scripts/CHANGELOG.md
-      - "CLAUDE.md": scripts/CLAUDE.md
+      - "CLAUDE.md": scripts/AGENTS.md
       - "Linting Configuration Management": scripts/linting/README.md
+      - "PRD — scripts": scripts/PRD.md
       - "Rename Directory Utility - Quick Reference": scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md
+      - "scripts": scripts/CLAUDE.md
+      - "scripts tools": scripts/tools/README.md
       - "Security Policy": scripts/SECURITY.md
+      - "Documentation":
+          - "scripts documentation": scripts/docs/README.md
+          - "scripts — Constitution": scripts/docs/constitution.md
+          - "Amendments — scripts":
+              - "Amendments — scripts": scripts/docs/amendments/README.md
+              - "0001 — Ratify the constitution": scripts/docs/amendments/0001-ratify-constitution.md
+              - "NNNN — Title of the amendment": scripts/docs/amendments/0000-template.md
+          - "Architecture Decision Records":
+              - "Architecture Decision Records": scripts/docs/adr/README.md
+              - "ADR 0001 — Record architecture decisions": scripts/docs/adr/0001-record-architecture-decisions.md
+              - "ADR NNNN — Title in sentence case": scripts/docs/adr/0000-template.md
       - "🍴 ForkMe - Advanced GitHub Repository Forking Utility":
           - "🍴 ForkMe - Advanced GitHub Repository Forking Utility": scripts/FORKME/README.md
           - "ForkMe - Advanced GitHub Repository Forking Utility": scripts/FORKME/FORKME.md

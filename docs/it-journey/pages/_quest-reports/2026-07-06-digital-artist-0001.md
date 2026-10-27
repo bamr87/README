@@ -78,8 +78,7 @@ Jekyll/Liquid filter — verified against jekyll-4.4.1's filters.rb; Liquid sile
 ### 2. Terminal Mastery — `pages/_quests/0001/terminal-mastery.md` — ran 18/21 runnable (9✔ 9✗), 1 reasoned
 Dimensions: commands_work **2** · content_accuracy **2** · completeness **2** · clarity **2** · structure **4** · safety **3**.
 
-- ✅ Worked cleanly: `whoami`/`pwd`, `ls`/`ls -la`/`ls -lah`, `tree`, `ls -R`,
-  `mkdir -p` with brace expansion, `touch`, `echo`/heredoc redirects, `wc`/`wc -l`,
+- ✅ Worked cleanly: `whoami`/`pwd`, `ls`/`ls -la`/`ls -lah`, `tree`, `ls -R`, `mkdir -p` with brace expansion, `touch`, `echo`/heredoc redirects, `wc`/`wc -l`,
   the `ls|grep|wc` pipelines, and the Novice/Apprentice/Expert challenge scaffolds.
 - ❌ **State bug (root cause):** Chapter 2 Step 3 runs `mkdir -p projects/...`
 *before* `cd terminal-practice`, so `projects/` lands as a **sibling** of the workspace. Consequently Chapter 3 Step 2 `cp -r projects/ backup-projects/` — **failed** ("cannot stat 'projects/'").
@@ -87,12 +86,9 @@ Dimensions: commands_work **2** · content_accuracy **2** · completeness **2** 
 backup/` — **failed**: `backups/`, `styles/`, `backup/`, and `important-file.txt` are never created earlier in the quest.
 - ❌ Chapter 4 `grep "terminal" learning-notes.txt` — **failed (no match, exit 1)**
 even though the quest created `learning-notes.txt` — the file capitalizes "Terminal" and grep is case-sensitive. This is the *one* grep example run against a real quest-created file, and it silently fails to demonstrate its own claim.
-- ❌ `tail -f logfile.txt`, `grep -r "function" projects/`, `grep -n "error"
-  logfile.txt`, etc. — **failed**: referenced files/dirs never created.
-- ❌ "Expected Output Example" fenced ` ```bash ` block whose first line is
-  `$ ls -lah` — **failed** verbatim: `$: command not found` (exit 127).
-- Completeness gap (reasoned + confirmed by engine): "Process Management" is a
-  stated Primary Objective and completion-checklist item but is **never taught** —
+- ❌ `tail -f logfile.txt`, `grep -r "function" projects/`, `grep -n "error" logfile.txt`, etc. — **failed**: referenced files/dirs never created.
+- ❌ "Expected Output Example" fenced ` ```bash ` block whose first line is `$ ls -lah` — **failed** verbatim: `$: command not found` (exit 127).
+- Completeness gap (reasoned + confirmed by engine): "Process Management" is a stated Primary Objective and completion-checklist item but is **never taught** —
   the only `ps` appearance is one incidental `ps aux | grep "node"` line.
 
 ### 3. Forge Your Character — `pages/_quests/0001/forge-your-character.md` — **NO VERDICT (engine errored)**
@@ -107,22 +103,17 @@ profile page → `make contributor-stats` → `bundle exec jekyll serve` → PR)
 Dimensions: commands_work **4** · content_accuracy **4** · completeness **3** · clarity **4** · structure **4** · safety **5**.
 
 - ✅ Both YAML avatar snippets (GitHub `.png` URL and repo-relative path) — valid.
-- ✅ `mkdir -p assets/images/contributors && cp /path/to/your/avatar.png …` —
-  **passed** (mechanics correct; `/path/to/...` is an obvious placeholder).
+- ✅ `mkdir -p assets/images/contributors && cp /path/to/your/avatar.png …` — **passed** (mechanics correct; `/path/to/...` is an obvious placeholder).
 - ✅ `bundle exec jekyll serve` — **passed** as a command form.
-- Weaknesses (reasoned): no `bundle install` for a fresh clone; the checklist item
-  "Fallback still works if image fails to load" has no concrete way to verify.
+- Weaknesses (reasoned): no `bundle install` for a fresh clone; the checklist item "Fallback still works if image fails to load" has no concrete way to verify.
 
 ### 5. Badge Collector — `pages/_quests/0001/side-quest-badge-collector.md` — ran 3/2 runnable (0✔ 3✗), 2 reasoned
 Dimensions: commands_work **2** · content_accuracy **3** · completeness **4** · clarity **4** · structure **5** · safety **5**.
 
-- ❌ `make contributor-stats USERNAME=YOUR_USERNAME` — **failed** in-sandbox: no
-  cloned/`bundle install`ed repo and no existing contributor data file.
-- ❌ `cat _data/contributors/YOUR_USERNAME.yml` — **failed**: file doesn't exist
-  (it is produced by the prerequisite quest, not this one).
+- ❌ `make contributor-stats USERNAME=YOUR_USERNAME` — **failed** in-sandbox: no cloned/`bundle install`ed repo and no existing contributor data file.
+- ❌ `cat _data/contributors/YOUR_USERNAME.yml` — **failed**: file doesn't exist (it is produced by the prerequisite quest, not this one).
 - ❌ `bundle exec jekyll serve` — **failed**: same missing prerequisite.
-- `reasoned`: the threshold pseudocode block and the `badges_pinned` YAML snippet
-  are internally consistent with the achievement catalog and the pinning rules.
+- `reasoned`: the threshold pseudocode block and the `badges_pinned` YAML snippet are internally consistent with the achievement catalog and the pinning rules.
 
 ## 🐞 Issues Found
 
@@ -151,21 +142,17 @@ is not a real Liquid/Jekyll filter (verified: silently no-ops). *Fix:* drop it o
 objective and checklist item but is never taught. *Fix:* add a chapter covering `ps`/`top`/`kill`/`jobs`, or remove the objective.
 - **medium** · Terminal Mastery · illustrative ` ```bash ` blocks ("Expected Output
 Example", "Special directory symbols") error when pasted. *Fix:* fence as plain text or mark "sample output — do not run".
-- **medium** · Terminal Mastery · hard-coded `Expected output: bamr87` /
-  `/home/bamr87`. *Fix:* use `<your-username>` placeholders.
+- **medium** · Terminal Mastery · hard-coded `Expected output: bamr87` / `/home/bamr87`. *Fix:* use `<your-username>` placeholders.
 - **medium** · Avatar Forge · Step 4 · no `bundle install`; no way to test the
 "fallback still works" checklist item. *Fix:* add `bundle install` and a concrete fallback test (e.g., point avatar at a broken URL, confirm identicon).
 
 **Low severity**
 
-- **low** · Stats Portal · Knowledge Check asks about a `sort` filter in the
-  categories loop, but no `sort` filter is used there (sorting is Ruby-side).
+- **low** · Stats Portal · Knowledge Check asks about a `sort` filter in the categories loop, but no `sort` filter is used there (sorting is Ruby-side).
 - **low** · Terminal Mastery · macOS-only `cd /Users/username/...` in a
   cross-platform chapter; `ps aux | grep node` self-match gotcha unmentioned.
-- **low** · Avatar Forge · clarify `/path/to/your/avatar.png` is a placeholder;
-  note commit/push is what makes the avatar live.
-- **low** · Badge Collector · clarify `YOUR_USERNAME` placeholder; document what
-  happens if a learner pins >3 or an unearned badge.
+- **low** · Avatar Forge · clarify `/path/to/your/avatar.png` is a placeholder; note commit/push is what makes the avatar live.
+- **low** · Badge Collector · clarify `YOUR_USERNAME` placeholder; document what happens if a learner pins >3 or an unearned badge.
 
 *This is not an empty result — there are real blocking issues, concentrated in the two core main quests.*
 
@@ -180,8 +167,7 @@ Example", "Special directory symbols") error when pasted. *Fix:* fence as plain 
 **Where a real beginner gets stuck:**
 - *Stats Portal:* dead on arrival at Chapter 2 — the generator crashes on run 1
 (`iso8601`), then writes to a bad path, then reports 0 posts. The "Expected Output: Total posts: 76" is unreachable following the steps verbatim.
-- *Terminal Mastery:* fine through Chapter 2, then Chapter 3's copy/move demos start
-  failing because the workspace state doesn't match what the text assumes.
+- *Terminal Mastery:* fine through Chapter 2, then Chapter 3's copy/move demos start failing because the workspace state doesn't match what the text assumes.
 - *Contributor Path:* the side quests are readable and correct in intent, but a
 learner who hasn't done a full clone + `bundle install` (never explicitly required) hits toolchain failures at the verify step.
 
@@ -192,13 +178,8 @@ deterministic engine step; I consumed `walk-evidence.json` / `walk-evidence.md` 
 - **What I ran vs. reasoned:** I ran nothing new against the quests. Every
 `passed`/`failed` in §Evidence comes verbatim from the sealed sandbox commands. The only commands I executed myself were **read-only existence checks** in the host repo (`ls`/`grep` for the contributor templates, scripts, and Makefile target) to strengthen the chain reasoning about Forge Your Character — those are labelled `reasoned`, not tested, and touched no content.
 - **Coverage caps / honesty:**
-  - **Quest 3 (Forge Your Character) has no score.** The engine hit its 40-turn
-    limit and errored; I did not substitute a number. It is reasoned-only here, and
-    its `overall: 0.0` should be read as an engine error, not a quality verdict.
-    Re-running that single quest with a higher turn budget is the way to close this
-    gap.
-  - This is **window 3 of 6** (5 of 26 quests). The other 21 quests of Level 0001
-    are out of scope for this run and are swept by other windows/days.
+  - **Quest 3 (Forge Your Character) has no score.** The engine hit its 40-turn limit and errored; I did not substitute a number. It is reasoned-only here, and its `overall: 0.0` should be read as an engine error, not a quality verdict. Re-running that single quest with a higher turn budget is the way to close this gap.
+  - This is **window 3 of 6** (5 of 26 quests). The other 21 quests of Level 0001 are out of scope for this run and are swept by other windows/days.
   - Long-running/interactive/system-mutating commands were `skipped` by the engine
     by design (Homebrew `curl|bash`, `wsl --install`, `apt/dnf upgrade`, `less`,
     `tail -f`, live dev-server + browser-open); coverage for the Stats template was

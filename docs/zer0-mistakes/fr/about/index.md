@@ -45,14 +45,10 @@ Un thème Jekyll pensé pour Docker avec Bootstrap 5, un installateur alimenté 
 
 Il repose sur quatre piliers :
 
-- 🐳 **Développement centré sur Docker** — `docker-compose up` est la seule commande
-  dont vous avez besoin pour commencer à coder, quel que soit votre système d'exploitation ou votre version de Ruby.
-- 🤖 **Installation alimentée par l'IA** — un installateur auto-réparateur (`install.sh`)
-  qui détecte et corrige automatiquement les problèmes d'environnement courants.
-- 🎨 **Bootstrap 5 + prise en charge du remote-theme** — une interface moderne et responsive qui
-  fonctionne sur GitHub Pages sans aucune étape de build personnalisée.
-- 🚀 **Publications sémantiques automatisées** — analyse des conventional commits,
-  génération de changelog et publication du gem en une seule commande.
+- 🐳 **Développement centré sur Docker** — `docker-compose up` est la seule commande dont vous avez besoin pour commencer à coder, quel que soit votre système d'exploitation ou votre version de Ruby.
+- 🤖 **Installation alimentée par l'IA** — un installateur auto-réparateur (`install.sh`) qui détecte et corrige automatiquement les problèmes d'environnement courants.
+- 🎨 **Bootstrap 5 + prise en charge du remote-theme** — une interface moderne et responsive qui fonctionne sur GitHub Pages sans aucune étape de build personnalisée.
+- 🚀 **Publications sémantiques automatisées** — analyse des conventional commits, génération de changelog et publication du gem en une seule commande.
 
 ## En bref
 
@@ -99,8 +95,7 @@ Pour exécuter ce site — ou tout site construit sur le gem `jekyll-theme-zer0`
 
 **Recommandé (centré sur Docker) :**
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) 4.0+ (ou
-  Docker Engine + Docker Compose v2)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) 4.0+ (ou Docker Engine + Docker Compose v2)
 - Git 2.30+
 
 **Alternative (Ruby natif) :**

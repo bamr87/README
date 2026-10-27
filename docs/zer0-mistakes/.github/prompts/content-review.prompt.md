@@ -72,10 +72,8 @@ Honour the `scope.exclude` globs in [`.github/config/content_review.yml`](../con
 
 ## Rules
 
-- Content only — no Ruby/Liquid/SCSS/JS review (that's `/code-review`). Note any
-  code bug in one line under "Out of scope".
+- Content only — no Ruby/Liquid/SCSS/JS review (that's `/code-review`). Note any code bug in one line under "Out of scope".
 - Prefer suggestions with exact replacement text over silent edits. In `fix`
 mode, only apply objective fixes (front matter, terminology, alt text, fenced languages) and **always bump `lastmod`** on edited files.
-- Reserve 🔴 for objective problems (missing required field, broken link,
-  truncated description, missing alt text, factual error) — not taste.
+- Reserve 🔴 for objective problems (missing required field, broken link, truncated description, missing alt text, factual error) — not taste.
 - Re-run `ruby scripts/content-review.rb --changed` after any `fix`.

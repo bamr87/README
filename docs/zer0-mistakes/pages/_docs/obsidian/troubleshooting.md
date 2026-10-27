@@ -27,8 +27,7 @@ title: Obsidian Integration Troubleshooting
 1. Confirm the target file has `title:` set in YAML frontmatter.
 2. Trigger a rebuild — `assets/data/wiki-index.json` is built per Jekyll
 run. On GitHub Pages this happens automatically on push; locally, stop and restart `docker-compose up` (or save any file to retrigger incremental builds).
-3. Add an `aliases:` entry on the target if the link uses an alternate
-   spelling.
+3. Add an `aliases:` entry on the target if the link uses an alternate spelling.
 
 ## Image embed shows a broken image icon
 
@@ -44,8 +43,7 @@ run. On GitHub Pages this happens automatically on push; locally, stop and resta
   ```
 
   before the resolver script loads.
-- For an absolute path, prefix the embed target with `/`:
-  `![[/assets/images/special/diagram.png]]`.
+- For an absolute path, prefix the embed target with `/`: `![[/assets/images/special/diagram.png]]`.
 
 ## Callout renders as a plain `<blockquote>`
 
@@ -82,8 +80,7 @@ tags: [obsidian, your-inline-tag]
 
 - Layout other than `note`? Add `backlinks: true` to frontmatter.
 - Explicitly disabled? Remove `backlinks: false`.
-- No incoming links exist yet — the panel is hidden when empty rather
-  than showing an empty section.
+- No incoming links exist yet — the panel is hidden when empty rather than showing an empty section.
 
 ## Custom plugin (`_plugins/obsidian_links.rb`) doesn't run on my fork's GitHub Pages build
 

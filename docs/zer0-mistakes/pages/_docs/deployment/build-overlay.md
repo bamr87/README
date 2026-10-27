@@ -39,8 +39,7 @@ title: Safe-Mode Build Overlay
 
 When you build *outside* GitHub Pages — your own GitHub Actions, GitLab CI, or a local `jekyll build` — nothing replicates Pages' two constraints for you:
 
-1. `remote_theme` only delivers `_layouts/`, `_includes/`, `_sass/`, and
-   `assets/`. Your `_config.yml`, `_data/`, and content stay local.
+1. `remote_theme` only delivers `_layouts/`, `_includes/`, `_sass/`, and `assets/`. Your `_config.yml`, `_data/`, and content stay local.
 2. Pages runs Jekyll in **safe mode**, which **ignores `_plugins/*.rb`**. The
 theme's generators (search, sitemap, author pages, previews) never run on a Pages consumer build.
 
@@ -114,11 +113,9 @@ After the build, sanity-check that you didn't ship anything Pages wouldn't:
 
 - **No plugin-only routes** — `/search.json`, `/sitemap/`, `/authors/` etc. should
 be absent unless you committed static stubs for them. Their presence locally but not on Pages is the classic divergence this recipe prevents.
-- **Run a link checker** over `_site` and treat theme-injected 404s as build
-  failures, so a regression surfaces in CI rather than for a visitor.
+- **Run a link checker** over `_site` and treat theme-injected 404s as build failures, so a regression surfaces in CI rather than for a visitor.
 
 ## See also
 
-- [Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/) — the
-  files and config to add when consuming the theme via `remote_theme`.
+- [Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/) — the files and config to add when consuming the theme via `remote_theme`.
 - [Deployment overview](/docs/deployment/) — hosting options and trade-offs.

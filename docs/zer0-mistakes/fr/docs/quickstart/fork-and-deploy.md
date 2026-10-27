@@ -117,8 +117,7 @@ GitHub construit et publie le site automatiquement à chaque push. La référenc
 
 ## Dépannage
 
-- **Le build échoue sur `Unknown tag 'include_cached'`** — ajoutez `jekyll-include-cache`
-  à votre `plugins:` (Étape 2a).
+- **Le build échoue sur `Unknown tag 'include_cached'`** — ajoutez `jekyll-include-cache` à votre `plugins:` (Étape 2a).
 - **Les styles ou les layouts semblent non définis** — pour le modèle remote theme, redéclarez vos
 `collections`, `defaults` et `permalink` dans votre propre `_config.yml` ; ils ne sont pas hérités du thème.
 - **Erreurs 404 sur des pages que vous n'avez pas créées** — les pages générées par les plugins (profils
@@ -126,7 +125,5 @@ d'auteur, recherche, sitemap) sont ignorées par le mode sécurisé de GitHub Pa
 
 ## Étapes suivantes
 
-- Personnalisez les couleurs et la mise en page avec le
-  [Guide du thème](/docs/getting-started/theme-guide/).
-- Suivez la [série de démarrage rapide pas à pas](/quickstart/) pour les détails de configuration de la machine et
-  de Jekyll.
+- Personnalisez les couleurs et la mise en page avec le [Guide du thème](/docs/getting-started/theme-guide/).
+- Suivez la [série de démarrage rapide pas à pas](/quickstart/) pour les détails de configuration de la machine et de Jekyll.

@@ -306,8 +306,7 @@ The agent guidance system is designed to be **extendable**. Use these patterns w
 
 Skills are operational checklists an agent reads before performing a recurring action (validating, branching, reviewing). They differ from prompts: a prompt is a task you invoke; a skill is a reusable procedure referenced by prompts, agents, and `CLAUDE.md`.
 
-1. Create `.github/skills/<name>/SKILL.md` with this front matter (mirror
-   `change-workflow` / `validate-build`):
+1. Create `.github/skills/<name>/SKILL.md` with this front matter (mirror `change-workflow` / `validate-build`):
 
    ```yaml
    ---
@@ -316,12 +315,9 @@ Skills are operational checklists an agent reads before performing a recurring a
    ---
    ```
 
-2. Write it as a numbered, checkable procedure with a "When to use" section and a
-   "Reporting back to the user" section.
-3. Add it to the **Structure** diagram above and the workflow-skills table in
-   [`AGENTS.md`](../../AGENTS.md).
-4. If it governs how *all* changes are made, reference it from `CLAUDE.md` and
-   the relevant `*.instructions.md`.
+2. Write it as a numbered, checkable procedure with a "When to use" section and a "Reporting back to the user" section.
+3. Add it to the **Structure** diagram above and the workflow-skills table in [`AGENTS.md`](../../AGENTS.md).
+4. If it governs how *all* changes are made, reference it from `CLAUDE.md` and the relevant `*.instructions.md`.
 
 ### Onboard a new AI tool / IDE
 

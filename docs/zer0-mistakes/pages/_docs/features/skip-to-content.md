@@ -79,8 +79,7 @@ The `visually-hidden-focusable` class:
 
 - Hides the element visually until it receives focus
 - Keeps it accessible to screen readers at all times
-- Reveals it on keyboard focus (the `position-absolute top-0 start-0 m-3`
-  utilities pin it to the top-left corner when shown)
+- Reveals it on keyboard focus (the `position-absolute top-0 start-0 m-3` utilities pin it to the top-left corner when shown)
 
 ### Token-based SCSS alternative
 

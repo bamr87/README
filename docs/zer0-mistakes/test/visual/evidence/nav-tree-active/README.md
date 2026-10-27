@@ -20,8 +20,7 @@ The active state is decided server-side, so both states are **real Jekyll builds
 
 - **`01-before-all-active.png`** — the left sidebar on `/docs/wargames/natas/`.
 Every game group link is highlighted (`.active`): **219 of 219** nav-tree links active.
-- **`02-after-single-active.png`** — the same page after the fix. Only the
-  current page's link (**Natas**) is highlighted: **1 of 219** active.
+- **`02-after-single-active.png`** — the same page after the fix. Only the current page's link (**Natas**) is highlighted: **1 of 219** active.
 - **`metrics.json`** — the measured active/total counts per state.
 
 ## Measured before → after

@@ -52,8 +52,7 @@ Dimensions: commands_work 3 · content_accuracy 3 · completeness 3 · clarity 3
 both containers `Up`; repeated requests to `http://localhost:8080/` incremented the Redis counter `1,2,3,4`. `logs`/`down` behaved as documented.
 - **passed** — Ch.2 volume persistence *fully verified*: wrote a row, `docker compose
 down` (no `-v`), volume `ch2-volumes_db-data` survived, `up -d` again, `SELECT * FROM test;` still returned the row; then `down -v` genuinely deleted the volume (`docker volume ls` confirmed gone).
-- **passed** — Ch.3 `depends_on: condition: service_healthy`: log showed
-  `ch3-db-1 Waiting → Healthy` before `ch3-web-1 Starting`, exactly as promised.
+- **passed** — Ch.3 `depends_on: condition: service_healthy`: log showed `ch3-db-1 Waiting → Healthy` before `ch3-web-1 Starting`, exactly as promised.
 - **failed** — Ch.3 "Full Stack in Action": the compose.yaml defines only `web`+`db`
 (no redis) but `app.py` still `import redis` / `cache.incr`, so `http://localhost:8080/` returns **HTTP 500**: `redis.exceptions.ConnectionError: Error -3 connecting to redis:6379. Temporary failure in name resolution.`
 - **failed** — same block, `docker compose up -d --scale web=3` →
@@ -61,15 +60,12 @@ down` (no `-v`), volume `ch2-volumes_db-data` survived, `up -d` again, `SELECT *
 
 ### 3 · Dockering Jekyll with Bootstrap 5 — ❌ 30 · ran 8/4 runnable snippets (6✗)
 Dimensions: commands_work 1 · content_accuracy 1 · completeness 1 · clarity 2 · structure 2 · safety 4.
-- **failed** — `docker-compose run jekyll jekyll new .` → `Conflict: /srv/jekyll exists
-  and is not empty` (Dockerfile + compose file were created first in Step 2).
-- **failed** — the literal `docker-compose` (hyphenated v1) binary is **absent**; only
-  `docker compose` (v2 plugin) exists. Every `docker-compose …` snippet fails as written.
+- **failed** — `docker-compose run jekyll jekyll new .` → `Conflict: /srv/jekyll exists and is not empty` (Dockerfile + compose file were created first in Step 2).
+- **failed** — the literal `docker-compose` (hyphenated v1) binary is **absent**; only `docker compose` (v2 plugin) exists. Every `docker-compose …` snippet fails as written.
 - **failed** — `cd my-jekyll-site` → `No such file or directory` (that dir is never created).
 - **failed** — final `docker-compose up` → reproducible `Bundler::GemNotFound` (compose
 never runs `bundle install`); even patched, the server binds only `127.0.0.1` inside the container (confirmed via `/proc/net/tcp`), so `localhost:4000` on the host resets.
-- **failed** — Step 4 homepage renders literal `{% raw %}{% include head.html %}{% endraw %}`
-  text (a stray `{% raw %}` wrapper) instead of pulling in Bootstrap — verified via a real `jekyll build`.
+- **failed** — Step 4 homepage renders literal `{% raw %}{% include head.html %}{% endraw %}` text (a stray `{% raw %}` wrapper) instead of pulling in Bootstrap — verified via a real `jekyll build`.
 - **passed** — only `git init && git add . && git commit …` (deploy scaffolding) ran clean.
 - **reasoned/content** — BS4 holdovers confirmed by read: `jquery-3.3.1.slim.min.js`,
 `data-toggle`/`data-target`, `.jumbotron`, `.sr-only`, and placeholder `integrity="sha384-xxx"` hashes that browsers will reject.
@@ -84,8 +80,7 @@ write permissions for the /var/lib/gems/3.2.0 directory`; only succeeded with `-
 `_layouts/default.html`, but a fresh `jekyll new` (minima) site has **neither directory** — verified: `find . -type f` shows only `404.html, about.markdown, Gemfile, _config.yml, _posts/, index.markdown`. Those files live inside the minima gem.
 - **passed** — *after manually copying* the gem's `_includes/head.html` +
 `_layouts/default.html` and adding the CDN tags, `bundle exec jekyll build` succeeded and `_site/index.html` contained both `bootstrap@5.3.3/dist/css/bootstrap.min.css` and `…/js/bootstrap.bundle.min.js` — so the technique is sound once the missing step is filled.
-- **skipped** — `bundle exec jekyll serve` (backgrounding + curl denied by sandbox);
-  build is the proxy.
+- **skipped** — `bundle exec jekyll serve` (backgrounding + curl denied by sandbox); build is the proxy.
 - **reasoned** — Liquid basics, filter table (`date/slugify/where/markdownify`), data-file
 loop, theme-override diagram all read as accurate; Chapter 9 describes a *different* theme's `root/default/article` chain than the minima site the steps build.
 
@@ -99,16 +94,14 @@ site, producing `<div class="nanobar nanobar--top" … style="--nanobar-height: 
 - **passed** — footer BEFORE/AFTER container restructuring renders full-width as claimed.
 - **gap (reasoned)** — the `_nanobar.scss` partial compiles *only when* wired to an entry
 point (`assets/css/main.scss` with `@import "components/nanobar";`), which the quest never creates → following the written steps leaves the CSS partial uncompiled.
-- **skipped** — `docker-compose exec -T jekyll … --config '_config.yml,_config_dev.yml'`:
-  no compose file / `_config_dev.yml` exists in this quest, so it can't run standalone.
+- **skipped** — `docker-compose exec -T jekyll … --config '_config.yml,_config_dev.yml'`: no compose file / `_config_dev.yml` exists in this quest, so it can't run standalone.
 
 ## 🐞 Issues Found
 
 **High**
 - **frontend-docker · Step 2/3 sequencing · `jekyll new .`** — running `jekyll new .`
 after creating Dockerfile/compose files gives `Conflict: … not empty`; and `cd my-jekyll-site` targets a directory nothing ever creates. *Fix:* scaffold into an empty dir (or `--force`) and make the `cd` match the real directory name.
-- **frontend-docker · CLI syntax (all `docker-compose …`)** — the v1 hyphenated binary
-  is absent on modern Docker and is EOL. *Fix:* replace with `docker compose …` (v2).
+- **frontend-docker · CLI syntax (all `docker-compose …`)** — the v1 hyphenated binary is absent on modern Docker and is EOL. *Fix:* replace with `docker compose …` (v2).
 - **frontend-docker · compose `command:` + host binding** — `docker-compose up` crashes
 with `Bundler::GemNotFound`, and even fixed the server binds loopback-only so `localhost:4000` never loads. *Fix:* `bash -c "bundle install && jekyll serve --watch --force_polling --host 0.0.0.0"`.
 - **frontend-docker · Step 4 HTML** — stray `{% raw %}…{% endraw %}` wrapper renders as
@@ -119,8 +112,7 @@ literal text; no front-matter block, so Jekyll won't process the page. *Fix:* re
 `_layouts/default.html` do not exist in a fresh `jekyll new` + minima site; learner gets "file not found" with no guidance. *Fix:* add a step to copy them out of the gem (`cp $(bundle show minima)/_includes/head.html _includes/`, same for `_layouts/`).
 - **frontend · gem-permission failure** — `gem install jekyll bundler` fails with
 `Gem::FilePermissionError` on a non-writable system Ruby. *Fix:* recommend rbenv/rvm/asdf or `--user-install` / `bundle config set --local path vendor/bundle`.
-- **jekyll-component-refactoring · Step 2.1 `touch`** — fails without a preceding
-  `mkdir -p _includes/components`. *Fix:* add the `mkdir -p`, matching Step 3.1.
+- **jekyll-component-refactoring · Step 2.1 `touch`** — fails without a preceding `mkdir -p _includes/components`. *Fix:* add the `mkdir -p`, matching Step 3.1.
 - **jekyll-component-refactoring · Phase 3 stylesheet wiring** — the SCSS partial is
 never `@import`ed into a front-matter'd entry stylesheet, so it's never compiled. *Fix:* add an `assets/css/main.scss` step.
 
@@ -129,14 +121,11 @@ never `@import`ed into a front-matter'd entry stylesheet, so it's never compiled
 produces HTTP 500 (missing redis) and `--scale web=3` fails on the fixed host port. *Fix:* add a redis service (matching the "three-service" framing) or strip Redis from `app.py`; use a port range or drop the fixed host port before scaling; add a caveat.
 - **docker-compose-orchestration · "three-service" claim** — the chapter body never
 assembles web+db+cache; that's deferred to an unsolved Advanced Challenge. *Fix:* add a worked three-service example or reword the stated skill.
-- **frontend-docker · unused Dockerfile** — created in Step 2, never used (compose uses
-  `image:` not `build:`). *Fix:* wire via `build: .` or remove.
+- **frontend-docker · unused Dockerfile** — created in Step 2, never used (compose uses `image:` not `build:`). *Fix:* wire via `build: .` or remove.
 - **frontend · Chapter 9 mismatch** — describes a zer0-mistakes `root/default/article`
 chain that doesn't exist in the minima site the steps build. *Fix:* label Chapter 9 as separate background, or align it to the tutorial's theme.
-- **jekyll-component-refactoring · duplicated Resources section** — the `## 📚 Resources`
-  block appears twice verbatim near the end. *Fix:* delete the duplicate.
-- **jekyll-component-refactoring · dead `step_animation` flag** — `_config.yml` defines
-  it but nothing reads it. *Fix:* implement or remove.
+- **jekyll-component-refactoring · duplicated Resources section** — the `## 📚 Resources` block appears twice verbatim near the end. *Fix:* delete the duplicate.
+- **jekyll-component-refactoring · dead `step_animation` flag** — `_config.yml` defines it but nothing reads it. *Fix:* implement or remove.
 
 **Low**
 - **frontend-docker / frontend** — Quest Objectives are auto-seeded placeholder text

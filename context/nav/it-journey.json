@@ -5,8 +5,8 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 945,
-    "sections": 95,
+    "pages": 956,
+    "sections": 98,
     "max_depth": 7,
     "skipped": 17
   },
@@ -29,12 +29,12 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "197f709f5b4f72b6",
+  "fingerprint": "b0b935db8f69a2ba",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 945,
+    "pages": 956,
     "children": [
       {
         "type": "group",
@@ -1651,12 +1651,6 @@
       },
       {
         "type": "page",
-        "title": "AGENTS.md",
-        "path": "it-journey/AGENTS.md",
-        "rel": "AGENTS.md"
-      },
-      {
-        "type": "page",
         "title": "Changelog",
         "path": "it-journey/CHANGELOG.md",
         "rel": "CHANGELOG.md"
@@ -1669,21 +1663,34 @@
       },
       {
         "type": "page",
-        "title": "CLAUDE.md \u2014 Claude Code guide for IT-Journey",
-        "path": "it-journey/CLAUDE.md",
-        "rel": "CLAUDE.md"
-      },
-      {
-        "type": "page",
         "title": "Contributing to IT-Journey",
         "path": "it-journey/CONTRIBUTING.md",
         "rel": "CONTRIBUTING.md"
       },
       {
         "type": "page",
-        "title": "IT-Journey",
+        "title": "it-journey (AGENTS)",
+        "path": "it-journey/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "it-journey (CLAUDE)",
+        "path": "it-journey/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "IT-Journey (PRD)",
         "path": "it-journey/PRD.md",
         "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "it-journey tools",
+        "path": "it-journey/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
       },
       {
         "type": "page",
@@ -1792,11 +1799,11 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "it-journey/docs/README.md",
-        "pages": 39,
+        "pages": 49,
         "children": [
           {
             "type": "page",
-            "title": "IT-Journey Developer Documentation",
+            "title": "it-journey documentation",
             "path": "it-journey/docs/README.md",
             "rel": "docs/README.md",
             "is_index": true
@@ -1806,6 +1813,12 @@
             "title": "Developer Contribution Guide",
             "path": "it-journey/docs/CONTRIBUTING_DEVELOPER.md",
             "rel": "docs/CONTRIBUTING_DEVELOPER.md"
+          },
+          {
+            "type": "page",
+            "title": "it-journey \u2014 Constitution",
+            "path": "it-journey/docs/constitution.md",
+            "rel": "docs/constitution.md"
           },
           {
             "type": "page",
@@ -1819,6 +1832,12 @@
             "title": "Prose Oneline Universal",
             "path": "it-journey/docs/prose-oneline-universal.md",
             "rel": "docs/prose-oneline-universal.md"
+          },
+          {
+            "type": "page",
+            "title": "Roadmap",
+            "path": "it-journey/docs/ROADMAP.md",
+            "rel": "docs/ROADMAP.md"
           },
           {
             "type": "page",
@@ -1857,6 +1876,34 @@
           },
           {
             "type": "section",
+            "title": "Amendments \u2014 it-journey",
+            "rel": "docs/amendments",
+            "index": "it-journey/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 it-journey",
+                "path": "it-journey/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "it-journey/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "it-journey/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
             "title": "Architecture",
             "rel": "docs/architecture",
             "pages": 3,
@@ -1878,6 +1925,34 @@
                 "title": "Jekyll Implementation Details",
                 "path": "it-journey/docs/architecture/JEKYLL_IMPLEMENTATION.md",
                 "rel": "docs/architecture/JEKYLL_IMPLEMENTATION.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "it-journey/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "it-journey/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "it-journey/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "it-journey/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
               }
             ]
           },
@@ -1993,6 +2068,26 @@
                 "title": "Quest Walkthrough Video Framework",
                 "path": "it-journey/docs/quests/VIDEO_FRAMEWORK.md",
                 "rel": "docs/quests/VIDEO_FRAMEWORK.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Reference",
+            "rel": "docs/reference",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Make targets",
+                "path": "it-journey/docs/reference/make-targets.md",
+                "rel": "docs/reference/make-targets.md"
+              },
+              {
+                "type": "page",
+                "title": "Workflow reference",
+                "path": "it-journey/docs/reference/workflows.md",
+                "rel": "docs/reference/workflows.md"
               }
             ]
           },

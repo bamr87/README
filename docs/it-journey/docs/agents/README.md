@@ -4,6 +4,8 @@ title: Agent Evaluation & Tuning (GH-600 Domain 4, implemented)
 ---
 # Agent Evaluation & Tuning (GH-600 Domain 4, implemented)
 
+> How this repository grades its agents with machine-verifiable gates, runs a root-cause analysis before any re-run, and logs every instruction change (GH-600 Domain 4).
+
 How this repository grades its agents with **machine-verifiable signals**, diagnoses failures instead of re-running them, and tunes instructions like code. This directory is the Domain 4 convention the fleet operates under; the campaign that teaches it is [Chapter IV — The Oracle Rubric](https://it-journey.dev/quests/1010/agentic-codex-04-evaluation-and-tuning/), and the full domain→artifact map is [GH-600 in the Wild](https://it-journey.dev/notes/gh-600/implemented-in-it-journey/).
 
 ## The rubric: machine-verifiable gates (no vibes)
@@ -26,8 +28,7 @@ The keep/revert gate is the purest Domain 4 artifact in the repo: the quest-fixe
 Re-running a failed agent without understanding it manufactures intermittent failures that never get fixed. When a fleet run fails:
 
 1. Pull the forensic trail: `gh run download <RUN_ID> --dir ./forensics/run-<RUN_ID>`
-2. Classify the failure by **layer** (reasoning / tool misuse / permissions /
-   context drift / environment / completion).
+2. Classify the failure by **layer** (reasoning / tool misuse / permissions / context drift / environment / completion).
 3. Drive it to a root cause with 5-Why using [`rca-template.md`](rca-template.md).
 4. Ship the prevention, and record it in the instruction changelog below.
 

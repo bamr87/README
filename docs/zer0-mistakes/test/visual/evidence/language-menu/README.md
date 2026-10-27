@@ -37,8 +37,7 @@ elements to the source page, so the existing `zer0-lang` preference handler (whi
 `.dropdown-item.active` count is 1 → **0**, replaced by `.is-current` (tint + `bi-check2`) while `aria-current="true"` is retained.
 - **Trigger is icon-only at all widths with an accessible name** — the `EN` span
 and the caret are gone, the button is a 38px square, and `aria-label` / `title` are the only accessible name — so `title` now names the language being read rather than just "Language".
-- **One footnote instead of per-row text** — 2 per-row strings → **1** footnote
-  under a divider, referenced by each marked row via `aria-describedby`.
+- **One footnote instead of per-row text** — 2 per-row strings → **1** footnote under a divider, referenced by each marked row via `aria-describedby`.
 
 ## How this was measured — and the caveat
 

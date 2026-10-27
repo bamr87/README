@@ -104,8 +104,7 @@ If you want to customize or extend Bootstrap mixins, follow these steps:
    @import "bootstrap/scss/bootstrap";
    ```
 
-3. **Override or Add Your Mixins**:
-   You can redefine mixins by creating your own custom styles or modifying existing ones.
+3. **Override or Add Your Mixins**: You can redefine mixins by creating your own custom styles or modifying existing ones.
 
    Example:
    ```scss

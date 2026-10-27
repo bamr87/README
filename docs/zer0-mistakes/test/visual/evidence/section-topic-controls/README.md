@@ -17,8 +17,7 @@ Two consequences, both live on this repo's own demo site:
 
 - **`grid` and `list` sections emitted one dead anchor per tag.** Neither branch
 emits any sub-topic `id`. `section_style` also *defaults* to `grid` (`_layouts/section.html:102`), so this was the common case, not the edge case.
-- **`magazine` sections emitted dead anchors for tags 6–15**, because the sidebar
-  iterated `limit: 15` while the layout rendered `limit: 5`.
+- **`magazine` sections emitted dead anchors for tags 6–15**, because the sidebar iterated `limit: 15` while the layout rendered `limit: 5`.
 
 Dead anchors are invalid markup, a dead click for keyboard and screen-reader users, and they left the sidebar's `IntersectionObserver` scrollspy unable to activate — while the include's own header advertises "Smooth scroll to sections" as a feature.
 

@@ -53,8 +53,7 @@ The reviewer is wired to these — use them rather than reinventing checks. The 
    ```
    Skip anything matching the `scope.exclude` globs in the config.
 
-2. **Run the deterministic tier first** so you don't spend reasoning on the
-   mechanical checks it already covers:
+2. **Run the deterministic tier first** so you don't spend reasoning on the mechanical checks it already covers:
    ```bash
    ruby scripts/content-review.rb --changed --base origin/main \
      --json /tmp/content-review.json --summary /tmp/content-review.md --quiet
@@ -72,35 +71,28 @@ what changed in the PR; don't relitigate untouched content unless the change mak
 Weigh each finding by the focus list in `content_review.yml` (`ai_review.focus`).
 
 - **SEO / AIEO**
-  - Title and `description` read naturally *and* sit in range (the script
-    flags length; you judge whether they're compelling and keyword-bearing).
-  - `description` is a complete, self-contained sentence — never truncated to
-    hit the cap.
+  - Title and `description` read naturally *and* sit in range (the script flags length; you judge whether they're compelling and keyword-bearing).
+  - `description` is a complete, self-contained sentence — never truncated to hit the cap.
   - `keywords` (when present) are genuinely searched phrases, not tag dumps.
-  - The first ~100 words answer the page's implied question (featured-snippet /
-    AI-answer friendly). Headings phrased as the questions readers ask.
+  - The first ~100 words answer the page's implied question (featured-snippet / AI-answer friendly). Headings phrased as the questions readers ask.
   - Internal links to related content exist where natural (topic clustering).
 
 - **Consistency**
-  - Terminology and casing match `style.terminology` and the rest of the site
-    (e.g. *GitHub*, *Jekyll*, *Markdown*, *front matter*, *Bootstrap 5*).
+  - Terminology and casing match `style.terminology` and the rest of the site (e.g. *GitHub*, *Jekyll*, *Markdown*, *front matter*, *Bootstrap 5*).
   - Voice: second person, active, present tense for instructions.
-  - Front matter conventions (categories/tags as lists, ISO-8601 dates, sensible
-    `categories`/`tags` reused from existing taxonomy — check with a quick grep).
+  - Front matter conventions (categories/tags as lists, ISO-8601 dates, sensible `categories`/`tags` reused from existing taxonomy — check with a quick grep).
 
 - **Polish & clarity**
   - No fluff, dead links, TODOs, or placeholder text left in.
   - Logical heading hierarchy; sections scannable; lists used where apt.
-  - Code blocks are runnable and language-tagged; commands match the repo's real
-    tooling (Docker-first, `scripts/bin/*`, `bundle exec jekyll …`).
+  - Code blocks are runnable and language-tagged; commands match the repo's real tooling (Docker-first, `scripts/bin/*`, `bundle exec jekyll …`).
 
 - **Accessibility**
   - Every image has meaningful alt text; heading levels never skip.
   - Link text is descriptive (no "click here").
 
 - **Technical accuracy**
-  - Claims about the theme/Jekyll/Bootstrap are correct (verify against the repo
-    when unsure — grep for the include/config you're describing).
+  - Claims about the theme/Jekyll/Bootstrap are correct (verify against the repo when unsure — grep for the include/config you're describing).
   - No leaked secrets or real tokens; use placeholders.
 
 ## Output format
@@ -127,11 +119,8 @@ Severity legend: 🔴 must-fix before merge · 🟡 should-fix · 🔵 nice-to-h
 
 ## Rules of engagement
 
-- **Prefer suggestions over edits.** Give the exact replacement text so a human
-  (or a follow-up agent) can apply it in seconds.
-- **Stay in your lane**: content only. If you spot a code/theme bug, note it in
-  one line under "Out of scope" — don't fix it here.
-- **Don't block on taste.** Reserve 🔴 for objective problems (missing required
-  field, broken link, truncated description, missing alt text, factual error).
+- **Prefer suggestions over edits.** Give the exact replacement text so a human (or a follow-up agent) can apply it in seconds.
+- **Stay in your lane**: content only. If you spot a code/theme bug, note it in one line under "Out of scope" — don't fix it here.
+- **Don't block on taste.** Reserve 🔴 for objective problems (missing required field, broken link, truncated description, missing alt text, factual error).
 - **Be concise.** A reviewer should be able to act on every line you write.
 - **No secrets, no model identifiers** in anything you output to the PR.

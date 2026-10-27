@@ -63,16 +63,14 @@ verbatim → `sha256sum: 'standard input': no properly formatted checksum lines 
 ### 2. Reforging the Agent's Mind — 49 (fail) · ran 3/2 runnable (1 passed · 2 failed · 2 reasoned)
 - **FAILED** — `work/gh-600/scripts/measure_agent_baseline.sh` (Ex 13.1) run as given
 aborts at the first `gh run list --workflow=agent-task.yml` with `gh: … set the GH_TOKEN environment variable` (exit 4). No auth/repo precheck; `set -euo pipefail` means it dies before writing any partial result.
-- **FAILED** — `python3 scripts/validate_quest.py --quest q13` →
-  `can't open file '…/scripts/validate_quest.py': [Errno 2] No such file or directory`.
+- **FAILED** — `python3 scripts/validate_quest.py --quest q13` → `can't open file '…/scripts/validate_quest.py': [Errno 2] No such file or directory`.
 - **PASSED (reasoned)** — `bash -n` on the baseline script passes; its `gh` flags
 (`--search`, `-q`, `--json`) are real/current. Logic is sound; only missing execution context (auth + a pre-existing `agent-task.yml` + prior PRs) makes it fail out of the box.
 
 ### 3. Multi-Agent Coordination — 72 (warn) · ran 8/4 runnable (7 passed · 1 failed · 2 reasoned)
 - **PASSED** — Hands-On Lab Steps 1–3 (`mkdir`/`export CID`, the `trace()` function, 8
 `trace()` calls, and the `jq` collect/stitch) ran verbatim and reproduced the quest's "Expected" block **line for line**.
-- **PASSED** — all 4 YAML snippets parse as valid YAML (PyYAML + yamllint, cosmetic
-  warnings only).
+- **PASSED** — all 4 YAML snippets parse as valid YAML (PyYAML + yamllint, cosmetic warnings only).
 - **FAILED** — the Chapter 2 collect snippet
   `cat trace-*-"$cid"/*.jsonl | jq -s 'sort_by(.event) …'` produced silent empty output:
 the `trace-*-$cid/` layout only exists after an unshown `actions/download-artifact@v4` step, and `sort_by(.event)` sorts **alphabetically** (done/error/handoff/start), not chronologically — tested output came back `done, done, start, start`, contradicting the prose that this "sort[s] by event order." (The Lab correctly uses an explicit `seq` field.)
@@ -122,12 +120,9 @@ target file path (unlike 13.1/13.3), and "select top-2 failure patterns" + "re-m
 order and the glob assumes an unshown `download-artifact` step (both demonstrated). *Fix:* add a `seq`/timestamp field and sort on it; add the missing download step.
 - **MEDIUM · coordination, orchestration-patterns · unverifiable cert citations** — "GH-600",
 "Domain 5", "17% of the exam", sub-skills 5.1–5.4 could not be corroborated (known GitHub certs use GH-100/200/300/500). *Fix:* verify against the live Microsoft Learn study guide before publish.
-- **MEDIUM · orchestration-patterns · Chapter 4 JSON block** — leading `//` comment breaks
-  `json.load()` (confirmed). *Fix:* move the path hint into prose or use a JSONC-aware fence.
-- **MEDIUM · orchestration-patterns · missing event-driven example** — Objective 1 + the Chapter 1
-  table promise `workflow_run`/`repository_dispatch`, but only fan-out and chain are ever worked.
-- **HIGH · observability · Ch1↔Ch3 extension mismatch** — `.json` output vs `*.jsonl` glob →
-  silent empty audit log (confirmed). *Fix:* align on `.jsonl` or glob both.
+- **MEDIUM · orchestration-patterns · Chapter 4 JSON block** — leading `//` comment breaks `json.load()` (confirmed). *Fix:* move the path hint into prose or use a JSONC-aware fence.
+- **MEDIUM · orchestration-patterns · missing event-driven example** — Objective 1 + the Chapter 1 table promise `workflow_run`/`repository_dispatch`, but only fan-out and chain are ever worked.
+- **HIGH · observability · Ch1↔Ch3 extension mismatch** — `.json` output vs `*.jsonl` glob → silent empty audit log (confirmed). *Fix:* align on `.jsonl` or glob both.
 - **MEDIUM (needs render verification) · orchestration-patterns (15 lines), observability (5) ·
 `{% raw %}` leakage** — engine flagged `${% raw %}{{ … }}{% endraw %}` as broken copy-paste in raw source. See §7: this likely renders to correct `${{ … }}` — verify against built HTML before treating as a real learner defect. Coordination uses the correct block form and was not flagged.
 

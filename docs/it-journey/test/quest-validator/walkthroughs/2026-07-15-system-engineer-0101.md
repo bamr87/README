@@ -21,8 +21,7 @@ title: 2026 07 15 System Engineer 0101
 
 - **Character / class:** 🏗️ System Engineer (Adventurer tier ⚔️)
 - **Level:** `0101` — theme **CI/CD & DevOps**, permalink `/quests/0101/`
-- **Quests walked:** 5 (window 1 of 3; the full level holds 13 quests — this is a
-  rotating window, not the whole level)
+- **Quests walked:** 5 (window 1 of 3; the full level holds 13 quests — this is a rotating window, not the whole level)
 - **Mode:** `execute` — quest commands were run for real in a disposable sandbox by
 the agentic engine; I consumed the **workflow-sealed** `walk-evidence.json` / `walk-evidence.md` as-is (I did not and cannot re-run the engine from the agent).
 - **Headline verdict:** ⚠️ **WARN** — 3 pass / 0 warn / 2 fail, average **60.8%**.
@@ -131,20 +130,12 @@ Net: as a *System Engineer CI/CD path*, the slice's spine is coherent and recomm
 
 - **What I ran vs. reasoned.** I ran **nothing** against the quests myself — the
 agentic execute engine had already been run deterministically by the workflow and its results sealed into `walk-evidence.json` / `walk-evidence.md` before this session (the engine's child `claude` processes can't authenticate from the agent's Bash tool). I consumed that evidence verbatim and did **not** edit, regenerate, or hand-write it. Every `passed`/`failed`/`skipped`/`reasoned` above is the engine's recorded outcome; the linked-journey analysis in **Chain Continuity** is my own reasoning over the five quest sources, which I read in full in plan order.
-- **Mode & sandbox.** `execute` mode, disposable sandbox, per-quest isolation
-  (`mock: false`). Total engine cost ~$2.71, 5/5 quests scored, 0 errored.
+- **Mode & sandbox.** `execute` mode, disposable sandbox, per-quest isolation (`mock: false`). Total engine cost ~$2.71, 5/5 quests scored, 0 errored.
 - **Coverage limits (honest).**
-  - This is **window 1 of 3** — only 5 of the level's **13** quests were walked. The
-    other 8 (rotating windows) are **not** covered by this report.
-  - Anything needing a **live authenticated GitHub repo** is unverified: the GitHub
-    Actions Cloud-Realms `gh run list`, and The Warden's Gate's `gh variable`/`gh
-    workflow run`/`gh run watch` sequence and its headline live `startup_failure`
-    text. These are inherent to CI/CD topics, not defects — but the "green Actions
-    tab" end state is `reasoned`, never witnessed.
-  - LaTeX install commands (`brew`, `apt-get texlive-full`, `tlmgr`) were `skipped`
-    (no root/network/correct OS); judged by static review only.
-  - The GitHub Actions YAML deploy/CI workflows and the Warden's Gate YAML were
-    validated as parse-correct, not executed by a runner (no `act`).
+  - This is **window 1 of 3** — only 5 of the level's **13** quests were walked. The other 8 (rotating windows) are **not** covered by this report.
+  - Anything needing a **live authenticated GitHub repo** is unverified: the GitHub Actions Cloud-Realms `gh run list`, and The Warden's Gate's `gh variable`/`gh workflow run`/`gh run watch` sequence and its headline live `startup_failure` text. These are inherent to CI/CD topics, not defects — but the "green Actions tab" end state is `reasoned`, never witnessed.
+  - LaTeX install commands (`brew`, `apt-get texlive-full`, `tlmgr`) were `skipped` (no root/network/correct OS); judged by static review only.
+  - The GitHub Actions YAML deploy/CI workflows and the Warden's Gate YAML were validated as parse-correct, not executed by a runner (no `act`).
 - **Confidence.** High on the two failures (Docker = template, LaTeX-CV = missing
 artifact + `\\` defect — both reproduced by real sandbox commands) and on the git-remote gap (reproduced verbatim). Medium on the "green Actions tab" completion claims, which are reasoned rather than executed because they need live GitHub auth.
 - **Scope discipline.** One slice, one report. I made no content edits, opened no PR,

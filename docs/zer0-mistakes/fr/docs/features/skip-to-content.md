@@ -85,8 +85,7 @@ La classe `visually-hidden-focusable` :
 
 - Masque l'élément visuellement jusqu'à ce qu'il reçoive le focus
 - Le maintient accessible aux lecteurs d'écran en permanence
-- Le révèle lors du focus clavier (les utilitaires `position-absolute top-0 start-0 m-3`
-  l'épinglent dans le coin supérieur gauche lorsqu'il s'affiche)
+- Le révèle lors du focus clavier (les utilitaires `position-absolute top-0 start-0 m-3` l'épinglent dans le coin supérieur gauche lorsqu'il s'affiche)
 
 ### Alternative SCSS à base de tokens
 

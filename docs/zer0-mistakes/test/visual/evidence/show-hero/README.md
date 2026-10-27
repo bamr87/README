@@ -13,8 +13,7 @@ This is a **new visual capability**, so the evidence covers both halves of the c
 
 Two **real Jekyll builds of the same content** — which includes one standard post opted in via `show_hero: true` (`pages/_posts/2026-06-17-bayesian-modeled-my-coffee-and-wept-with-joy.md`, the flag's demo usage):
 
-- **BEFORE** — the merge-base `_layouts/article.html` (pre-feature): the flag
-  is inert; the opted-in post renders no hero.
+- **BEFORE** — the merge-base `_layouts/article.html` (pre-feature): the flag is inert; the opted-in post renders no hero.
 - **AFTER** — the PR head: the flag renders the hero; nothing else changes.
 
 Driven by [`../../show-hero-evidence.mjs`](../../show-hero-evidence.mjs) (exact commands in its header), which also computes a **whole-build rendered-output diff** (normalizing non-rendered noise: HTML comments — the layout's doc comment is emitted into every article page — the `?v=<site.time>` cache-buster, and build timestamps).
@@ -25,8 +24,7 @@ Driven by [`../../show-hero-evidence.mjs`](../../show-hero-evidence.mjs) (exact 
 no hero (pre-feature layout ignores the flag). AFTER: the preview renders as the hero; byline, category badge, tags, TOC, and typography are identical.
 - **`02-scope-guard.png`** — the AFTER build's controls: a standard post
 without the flag still renders no hero, and a featured post keeps its automatic hero (identical to BEFORE).
-- **`metrics.json`** — hero presence/loaded state per scenario, plus the
-  whole-build diff result.
+- **`metrics.json`** — hero presence/loaded state per scenario, plus the whole-build diff result.
 
 ## Measured (from `metrics.json`)
 

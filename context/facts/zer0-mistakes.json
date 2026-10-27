@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 746,
-    "fingerprint": "b52e7b861661bf6b",
+    "file_count": 752,
+    "fingerprint": "43f23928b721d394",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 5022684
+    "total_bytes": 5042256
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "4af53796123d349d",
+    "fingerprint": "88d8f5bf92a6d39b",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 665,
+    "pages": 671,
     "present": true,
-    "sections": 98,
+    "sections": 99,
     "skipped": 9,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 79,
+        "pages": 82,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -107,6 +107,13 @@
         "path": "templates",
         "title": "Templates Directory",
         "type": "section"
+      },
+      {
+        "index": "zer0-mistakes/studio/README.md",
+        "pages": 3,
+        "path": "studio",
+        "title": "zer0 studio",
+        "type": "section"
       }
     ],
     "tree": "context/nav/zer0-mistakes.json"
@@ -128,7 +135,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 746
+      "zer0-mistakes": 752
     },
     "code_languages": [
       "bash",
@@ -140,7 +147,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 746,
+    "indexed_documents": 752,
     "top_tags": [
       "jekyll",
       "docker",
@@ -158,7 +165,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 615774
+    "total_words": 618819
   },
   "schema_version": "1.0",
   "signals": {
@@ -193,7 +200,7 @@
         "name": "docs"
       },
       {
-        "doc_count": 69,
+        "doc_count": 72,
         "name": "test"
       },
       {

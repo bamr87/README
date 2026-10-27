@@ -25,10 +25,8 @@ Comments on this site are stored as **GitHub Discussions** (via Giscus, mapped b
 ## Prerequisites
 
 - An authenticated GitHub CLI: `gh auth status` (needs `repo`/`discussion` scope to post).
-- Discussions enabled on the repo + the [Giscus app](https://github.com/apps/giscus)
-  installed (required for the widget; the script only needs `gh`).
-- The Giscus category id in `_config.yml` (`giscus.data-category-id`) must match a
-  real category — verify with `giscus-discussions categories`.
+- Discussions enabled on the repo + the [Giscus app](https://github.com/apps/giscus) installed (required for the widget; the script only needs `gh`).
+- The Giscus category id in `_config.yml` (`giscus.data-category-id`) must match a real category — verify with `giscus-discussions categories`.
 
 **Check all of the above at once** with `./scripts/bin/giscus-discussions doctor`. If a user reports comments are missing/broken, run this FIRST — it distinguishes a config problem from the far more common "the giscus GitHub App isn't installed on the repo", which no build-time test in this repo can detect.
 
@@ -92,10 +90,8 @@ The title **must** equal the page's pathname so Giscus maps the widget to it.
 - **Posting and seeding write to public GitHub Discussions.** Always run with
 `--dry-run` first, show the rendered body, and get explicit user confirmation before the real call. Never post on the user's behalf unprompted.
 - **One reply per intent.** Don't spray comments; compose one considered reply.
-- **Stay in the project's voice** and only state things you can support from the
-  thread, the page, or the repo. Don't invent commitments or roadmap promises.
-- **Reply to the right node.** Use `--reply-to <comment id>` (from `thread`
-  output) to thread under a specific comment; omit it for a top-level comment.
+- **Stay in the project's voice** and only state things you can support from the thread, the page, or the repo. Don't invent commitments or roadmap promises.
+- **Reply to the right node.** Use `--reply-to <comment id>` (from `thread` output) to thread under a specific comment; omit it for a top-level comment.
 - The script reads the repo from `gh repo view` and the category from
 `_config.yml`; override with `--repo` / `--category-id` (or `GISCUS_REPO` / `GISCUS_CATEGORY_ID`) when working against a fork.
 

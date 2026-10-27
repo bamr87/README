@@ -17,8 +17,7 @@ Zer0-Mistakes is a Docker-first Jekyll theme published as the Ruby gem `jekyll-t
 This repo uses a layered guidance model — load only the layers matching the files you touch:
 
 - [`AGENTS.md`](./AGENTS.md) — cross-tool entry point and operating rules.
-- [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) —
-  canonical detailed conventions (architecture, commit/release workflow).
+- [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) — canonical detailed conventions (architecture, commit/release workflow).
 - `.github/instructions/*.instructions.md` — file-scoped rules; each file has
 an `applyTo:` glob in its front matter (layouts, includes, scripts, install, obsidian, sass, testing, documentation, version-control, backlog, content-review, ai-chat). Read the matching file before editing those paths.
 - `.github/prompts/*.prompt.md` — reusable multi-step workflows
@@ -99,10 +98,8 @@ Make targets (`make test`, `make release-patch`, …) and Rake tasks (`rake test
 
 **Dual configuration system** — the core pattern to understand first:
 
-- `_config.yml` — production; uses `remote_theme: "bamr87/zer0-mistakes"` for
-  GitHub Pages, analytics enabled.
-- `_config_dev.yml` — development overrides; `remote_theme: false`, loads the
-  local theme files, analytics disabled. Docker runs Jekyll with both configs.
+- `_config.yml` — production; uses `remote_theme: "bamr87/zer0-mistakes"` for GitHub Pages, analytics enabled.
+- `_config_dev.yml` — development overrides; `remote_theme: false`, loads the local theme files, analytics disabled. Docker runs Jekyll with both configs.
 
 **Layout hierarchy**: `_layouts/root.html` (base) → `default.html` (main) → content layouts (`article.html`, `home.html`, …).
 
@@ -122,18 +119,14 @@ header block.
 
 1. **Branch first; one concern per PR.** Create a branch off `main` *before*
 editing — never commit to `main` directly (it's protected). Each branch/PR holds one logical change; stage by path so generated/lock files don't leak in. See the `change-workflow` skill and `version-control.instructions.md`.
-2. **Make minimal, surgical changes.** Match existing style; don't refactor
-   unrelated code.
-3. **Validate before declaring done.** Run the relevant test suite; for any
-   layout/include/sass change, run the Docker Jekyll build above.
-4. **Update `CHANGELOG.md`** for user-visible changes (Keep a Changelog
-   format, newest entry at the top).
+2. **Make minimal, surgical changes.** Match existing style; don't refactor unrelated code.
+3. **Validate before declaring done.** Run the relevant test suite; for any layout/include/sass change, run the Docker Jekyll build above.
+4. **Update `CHANGELOG.md`** for user-visible changes (Keep a Changelog format, newest entry at the top).
 5. **Version bumps happen via release automation** — release-please's release PR
 (canonical) or `./scripts/bin/release` (manual fallback), never in unrelated PRs. A `version.rb` bump MUST re-lock `Gemfile.lock` *and* `package-lock.json` in the same change — a stale lock breaks the frozen `bundle install` in the publish workflow. Keep the generated `_data/content_statistics.yml` out of feature PRs (its own `chore` commit or CI).
 6. **Conventional commits**: types `feat|fix|docs|style|refactor|perf|test|chore`;
 scopes include `search`, `navigation`, `layouts`, `includes`, `sass`, `config`, `ci`, `scripts`, `analytics`. Commit analysis drives the automatic version-bump type.
-7. **Prefer existing patterns**: Bootstrap 5 components, Bootstrap Icons, and
-   the modular `_includes/` system cover most UI needs.
+7. **Prefer existing patterns**: Bootstrap 5 components, Bootstrap Icons, and the modular `_includes/` system cover most UI needs.
 8. **Backlog**: edit `_data/backlog.yml`, not the mirrored GitHub Issues.
 9. When asked to "commit", "release", or "publish", follow the structured
 workflow in `.github/copilot-instructions.md` (§ Commit and Release Workflow) or the `/commit-publish` prompt.

@@ -9,10 +9,8 @@ Level2 is a test application from a [pop3 library][] that's pretty buggy. The id
 
 **Notes**
 
--   -fpic -fPIC was added to the compile options to remote DT\_TEXTREL's
-    :p
--   If you're feeling generous, perhaps drop the author a note about any
-    bugs you find so that future versions of the library can be fixed.
+-   -fpic -fPIC was added to the compile options to remote DT\_TEXTREL's :p
+-   If you're feeling generous, perhaps drop the author a note about any bugs you find so that future versions of the library can be fixed.
 -   ASLR remote fun!
 
 Binary information

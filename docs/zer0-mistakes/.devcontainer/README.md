@@ -25,8 +25,7 @@ Building the image the first time still costs a couple of minutes. **Prebuilds**
 
 1. Repo **Settings → Codespaces → Set up prebuild**.
 2. Target branch `main`, region(s) as needed.
-3. Trigger: *On configuration change* (rebuilds when `.devcontainer/**`,
-   `docker/Dockerfile`, or `Gemfile.lock` change).
+3. Trigger: *On configuration change* (rebuilds when `.devcontainer/**`, `docker/Dockerfile`, or `Gemfile.lock` change).
 
 After the first prebuild completes, **Code → Codespaces → Create codespace on main** launches with gems preloaded and Jekyll already serving.
 

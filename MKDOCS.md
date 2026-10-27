@@ -1,8 +1,10 @@
 # MkDocs Documentation Site
 
+> How the published site at bamr87.github.io/README is built from the aggregated corpus: the config files, the generated navigation, and the build and deploy commands.
+
 This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) site from the aggregated documentation under [`docs/`](docs/) and publishes it to GitHub Pages at **<https://bamr87.github.io/README/>**.
 
-> `docs/` is **generated aggregation output** (produced by the pipeline — see [`CLAUDE.md`](CLAUDE.md) and [`scripts/README.md`](scripts/README.md)). Don't hand-edit pages under `docs/` to fix content or build issues; fix the upstream repo or the processing script and re-run the pipeline.
+> `docs/` is **generated aggregation output** (produced by the pipeline — see [`AGENTS.md`](AGENTS.md) and [`scripts/README.md`](scripts/README.md)). Don't hand-edit pages under `docs/` to fix content or build issues; fix the upstream repo or the processing script and re-run the pipeline.
 
 ## Files that drive the site
 

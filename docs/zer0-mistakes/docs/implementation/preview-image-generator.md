@@ -468,14 +468,11 @@ Run with verbose output for detailed diagnostics:
 
 ### Version 1.27.0 (Current)
 
-- Consolidated Bash/Python duplicates into one Python engine
-  (`scripts/lib/preview_generator.py`) with a renderer framework
+- Consolidated Bash/Python duplicates into one Python engine (`scripts/lib/preview_generator.py`) with a renderer framework
 - **Claude orchestrates every generation** — analyzes the article into a
 subject-specific art brief (`prompt_engine: claude`) and vision-reviews the rendered image, regenerating once with a corrected prompt when it misrepresents the article (`review_engine: claude`)
-- Renderers: OpenAI gpt-image-2 (default), xAI unified into the main engine,
-  Google Gemini added, Stability retained
-- `local` provider now produces a real deterministic SVG/PNG banner
-  (sanitized; rasterized via a local tool chain)
+- Renderers: OpenAI gpt-image-2 (default), xAI unified into the main engine, Google Gemini added, Stability retained
+- `local` provider now produces a real deterministic SVG/PNG banner (sanitized; rasterized via a local tool chain)
 - Front-matter updates are scoped to the front-matter block (body-corruption fix)
 - `enabled`, `assets_prefix`, and `auto_prefix` config keys are now honored
 

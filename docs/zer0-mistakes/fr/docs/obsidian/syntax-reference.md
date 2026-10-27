@@ -68,8 +68,7 @@ Correspond à `<div class="alert alert-… obsidian-callout obsidian-callout-…
 Les marqueurs de repli transforment l'encadré en un **panneau d'affichage accessible** : le titre devient un `<button aria-expanded>` actionnable au clavier avec un chevron, et le corps s'affiche/se masque au clic (Entrée/Espace).
 
 - `> [!warning]+` — repliable, **déplié** par défaut.
-- `> [!warning]-` — repliable, **replié** par défaut (`data-collapsed="true"`
-  et le corps est `hidden` jusqu'à ce qu'on le bascule).
+- `> [!warning]-` — repliable, **replié** par défaut (`data-collapsed="true"` et le corps est `hidden` jusqu'à ce qu'on le bascule).
 
 Un encadré **sans** marqueur de repli s'affiche comme un titre statique (pas un bouton). Les types inconnus retombent sur la variante `note`, jamais supprimés silencieusement.
 

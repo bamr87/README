@@ -39,14 +39,10 @@ A Docker-first Jekyll theme with Bootstrap 5, an AI-powered installer, and autom
 
 It is built around four pillars:
 
-- 🐳 **Docker-first development** — `docker-compose up` is the only command
-  you need to start hacking, regardless of OS or Ruby version.
-- 🤖 **AI-powered installation** — a self-healing installer (`install.sh`)
-  that detects and recovers from common environment issues automatically.
-- 🎨 **Bootstrap 5 + remote-theme support** — modern responsive UI that
-  works on GitHub Pages without any custom build step.
-- 🚀 **Automated semantic releases** — conventional-commit analysis,
-  changelog generation, and gem publishing in a single command.
+- 🐳 **Docker-first development** — `docker-compose up` is the only command you need to start hacking, regardless of OS or Ruby version.
+- 🤖 **AI-powered installation** — a self-healing installer (`install.sh`) that detects and recovers from common environment issues automatically.
+- 🎨 **Bootstrap 5 + remote-theme support** — modern responsive UI that works on GitHub Pages without any custom build step.
+- 🚀 **Automated semantic releases** — conventional-commit analysis, changelog generation, and gem publishing in a single command.
 
 ## Quick Facts
 
@@ -93,8 +89,7 @@ To run this site — or any site built on the `jekyll-theme-zer0` gem — locall
 
 **Recommended (Docker-first):**
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) 4.0+ (or
-  Docker Engine + Docker Compose v2)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) 4.0+ (or Docker Engine + Docker Compose v2)
 - Git 2.30+
 
 **Alternative (native Ruby):**

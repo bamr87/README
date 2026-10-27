@@ -92,10 +92,8 @@ No configuration or database changes.
 
 - `test_delete_passes_client_message_and_thread` — asserts the helper is called with
 `(client, message_id, thread_id)`, that the response redirects to `thread_detail`, and that the `Message` row is gone. Patched with `autospec=True`, so the two-argument form from issue #30 raises `TypeError: missing a required argument: 'thread_id'` here rather than passing.
-- `test_openai_delete_runs_before_local_row_is_removed` — asserts the local row still exists at the
-  moment the remote delete is invoked. This is the test that fails without the reordering.
-- `test_local_row_survives_when_openai_delete_fails` — a raising remote delete leaves the local
-  `Message` in place.
+- `test_openai_delete_runs_before_local_row_is_removed` — asserts the local row still exists at the moment the remote delete is invoked. This is the test that fails without the reordering.
+- `test_local_row_survives_when_openai_delete_fails` — a raising remote delete leaves the local `Message` in place.
 
 ### Test Results
 

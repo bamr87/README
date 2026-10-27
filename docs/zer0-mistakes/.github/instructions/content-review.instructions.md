@@ -59,8 +59,7 @@ See [`pages/_docs/seo/meta-tags.md`](../../pages/_docs/seo/meta-tags.md) and [`p
 
 ## 2. Content quality (default — collections may override)
 
-- **Word count**: 100–3500 words (posts ≥300, quests ≥400, notes ≥50, …).
-  Split, don't trim meaningful content.
+- **Word count**: 100–3500 words (posts ≥300, quests ≥400, notes ≥50, …). Split, don't trim meaningful content.
 - **Headings**: ≥1 H2; never skip a level (no H2 → H4).
 - **Code fences**: always language-tagged (```` ```bash ````, ```` ```ruby ````).
 - **Images**: every image needs meaningful alt text.
@@ -71,12 +70,10 @@ See [`pages/_docs/seo/meta-tags.md`](../../pages/_docs/seo/meta-tags.md) and [`p
 
 ## 3. Consistency & style
 
-- Canonical casing (from `content_review.yml` → `style.terminology`):
-  *GitHub*, *Jekyll*, *JavaScript*, *Markdown*, *front matter*, *Bootstrap 5*.
+- Canonical casing (from `content_review.yml` → `style.terminology`): *GitHub*, *Jekyll*, *JavaScript*, *Markdown*, *front matter*, *Bootstrap 5*.
 - Voice: second person, active, present tense for instructions.
 - Reuse existing `categories`/`tags` taxonomy — grep before inventing new ones.
-- Commands must match the repo's real tooling (Docker-first, `scripts/bin/*`,
-  `bundle exec jekyll …`).
+- Commands must match the repo's real tooling (Docker-first, `scripts/bin/*`, `bundle exec jekyll …`).
 
 ---
 
@@ -117,8 +114,7 @@ Always update `lastmod` on any file you edit.
 
 ## 6. Out of scope (open a separate PR)
 
-- ❌ Editing the reviewer itself (`scripts/content-review.rb`,
-  `.claude/agents/content-reviewer.md`, the workflow) inside a content PR.
+- ❌ Editing the reviewer itself (`scripts/content-review.rb`, `.claude/agents/content-reviewer.md`, the workflow) inside a content PR.
 - ❌ Code/theme bugs — note them under "Out of scope" and use `/code-review`.
 - ❌ Renaming/restructuring directories or changing permalinks in bulk.
 

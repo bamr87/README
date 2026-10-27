@@ -39,24 +39,17 @@ I walked window **1 of 3** of the Data Scientist's Level **1100 (Data Engineerin
 All outcomes below come from commands the execute engine actually ran in its disposable per-quest sandbox (quoted/trimmed from `walk-evidence.json`). Snippet coverage is reported as ran/passed/failed/reasoned against the recorded snippets.
 
 ### 1. Data Warehousing — ✅ 92 (ran 7/9 runnable, 7 passed, 0 failed, 2 reasoned)
-- **Linux setup** `python3 -m venv .venv && … pip install … duckdb` → *"ran cleanly,
-  installing duckdb 1.5.4 into the venv with no errors."* **passed**
-- **Star-schema DDL** (`dim_date, dim_product, dim_customer, fact_sales`) → *"executed in
-  SQLite 3.45.1 with zero errors; `.tables` confirmed all four tables created."* **passed**
-- **Revenue-by-city-by-quarter GROUP BY** → *"returned correct sensible aggregates (Denver
-  199.99, Austin 49.95 + 29.97 split by quarter) exactly as the quest promises."* **passed**
-- **Type-2 SCD walkthrough** → *"produced exactly the documented result: one closed
-  historical row … and one current row."* **passed**
-- **`columnar_demo.py` in DuckDB** → *"ran … in 0.36s, generating 5M rows and returning
-  COUNT/SUM/AVG as documented — no modification needed."* **passed**
-- macOS/Windows setup blocks → **reasoned** (Linux sandbox; syntax standard, consistent
-  with the verified Linux path).
+- **Linux setup** `python3 -m venv .venv && … pip install … duckdb` → *"ran cleanly, installing duckdb 1.5.4 into the venv with no errors."* **passed**
+- **Star-schema DDL** (`dim_date, dim_product, dim_customer, fact_sales`) → *"executed in SQLite 3.45.1 with zero errors; `.tables` confirmed all four tables created."* **passed**
+- **Revenue-by-city-by-quarter GROUP BY** → *"returned correct sensible aggregates (Denver 199.99, Austin 49.95 + 29.97 split by quarter) exactly as the quest promises."* **passed**
+- **Type-2 SCD walkthrough** → *"produced exactly the documented result: one closed historical row … and one current row."* **passed**
+- **`columnar_demo.py` in DuckDB** → *"ran … in 0.36s, generating 5M rows and returning COUNT/SUM/AVG as documented — no modification needed."* **passed**
+- macOS/Windows setup blocks → **reasoned** (Linux sandbox; syntax standard, consistent with the verified Linux path).
 - Accuracy caveat (**reasoned**): the `REFERENCES` clauses imply enforced FK integrity, but
 *"SQLite does not enforce foreign keys unless `PRAGMA foreign_keys = ON` is set — the quest never mentions this."*
 
 ### 2. The Editor's Eye — ⚠️ 64 (ran 6/6 recorded, 5 passed, 1 failed)
-- **Smuggle-guard logic** — content-only diff → *"'Smuggle guard passed: content-only.'"*;
-  a diff adding `.github/workflows/evil.yml` → *"correctly failed with exit 1."* **passed**
+- **Smuggle-guard logic** — content-only diff → *"'Smuggle guard passed: content-only.'"*; a diff adding `.github/workflows/evil.yml` → *"correctly failed with exit 1."* **passed**
 - **Loop-breaker** (`git log -1 --format='%an'` vs `content-review[bot]`) → *"correctly
 produced skip=true for a bot-authored commit and skip=false for a human-authored commit."* **passed**
 - **BROKEN example YAML** `with: { ref: ${{ github.head_ref }} }` → **failed**: *"both
@@ -67,8 +60,7 @@ PyYAML … and Ruby's Psych … reject it, because the flow-mapping `{ }` collid
 Chapter 2 smuggle-guard `git diff "origin/${BASE}...HEAD"` → *"fails with 'fatal: ambiguous argument origin/main...HEAD'."* **reasoned via reproduction**
 
 ### 3. The Bard Forge — ❌ 57 (recorded 7, ran 5, 4 passed, 1 failed, 1 skipped, 1 reasoned)
-- **`scripts/mine_merge.sh` end-to-end** (mocked `gh`, real squash-merge repo) → *"The
-  script's core logic … worked exactly as described and produced correct output."* **passed**
+- **`scripts/mine_merge.sh` end-to-end** (mocked `gh`, real squash-merge repo) → *"The script's core logic … worked exactly as described and produced correct output."* **passed**
 - **Permissions bug** — Chapter 1 sets `permissions: contents: read` only → *"specifying
 any permission explicitly sets all unlisted scopes to `none` — including `pull-requests`. `gh pr view` … would fail with a 403."* **failed (verified against GitHub's model)**
 - **Git-identity bug** — Chapter 2 "Open proposal PR" runs `git commit` on a fresh clone →
@@ -81,14 +73,12 @@ any permission explicitly sets all unlisted scopes to `none` — including `pull
 → *"the resulting string is `health-report-${% raw %}{{ github.run_id }}{% endraw %}` — NOT `${{ github.run_id }}` … the artifact name would literally contain the Jekyll tag text."* **failed**
 - **Missing scripts** — `load_registry.py`, `agent_health_check.py` → *"neither script
 exists anywhere in the quest content; a learner … gets an immediate 'No such file or directory' failure on the very first job step."* **failed**
-- **`python3 scripts/validate_quest.py --quest q17`** → *"failed with … No such file or
-  directory — the validator is never provided or linked."* **failed**
+- **`python3 scripts/validate_quest.py --quest q17`** → *"failed with … No such file or directory — the validator is never provided or linked."* **failed**
 - Internal contradictions (**reasoned/accuracy**): `status: beta` used in Chapter 3 but
 absent from the Chapter 1 enum; `agent-health-check.yml` vs the created `agent-health-monitor.yml`.
 
 ### 5. The Autonomy Scales — ❌ 59 (ran 2/5, 1 passed, 1 failed, 2 skipped, 1 reasoned)
-- **`_data/autonomy-matrix.yml`** → *"parses cleanly with PyYAML (5 task_classifications …);
-  yamllint only flags cosmetic issues."* **passed**
+- **`_data/autonomy-matrix.yml`** → *"parses cleanly with PyYAML (5 task_classifications …); yamllint only flags cosmetic issues."* **passed**
 - **Leaked Jekyll tag ×4** — `${% raw %}{{ github.event.issue.number }}{% endraw %}` in
 `feature-agent-l2.yml` → *"I extracted the exact `run:` string and executed it in bash: `line 1: ${% raw %}…{% endraw %}: bad substitution`, exit 1."* **failed**
 - **`\n` in PR body** — `--body "…\n\n…"` in a plain double-quoted bash string → *"bash does
@@ -118,8 +108,7 @@ fresh clone with no identity → exit 128 (reproduced). *Fix:* add `git config u
 absent from the documented enum; `agent-health-check.yml` vs the created `agent-health-monitor.yml`. *Fix:* reconcile the enum and the filename everywhere.
 - **[high] The Autonomy Scales · Chapter 3 `feature-agent-l2.yml`** — *Observed:* leaked
 `${% raw %}{{ github.event.issue.number }}{% endraw %}` (×4) → verified `bad substitution` at runtime. *Fix:* strip the leaked raw tags so the block renders valid `${{ github.event.issue.number }}`.
-- **[medium] The Autonomy Scales · PR-body `\n`** — *Observed:* `\n\n` in a plain
-  double-quoted bash arg stays literal. *Fix:* use `$'...\n\n...'` or a heredoc.
+- **[medium] The Autonomy Scales · PR-body `\n`** — *Observed:* `\n\n` in a plain double-quoted bash arg stays literal. *Fix:* use `$'...\n\n...'` or a heredoc.
 - **[medium] The Autonomy Scales · `review_autonomy_compliance.sh`** — *Observed:* unscoped
 `gh pr list --search "head:copilot/"` returns the first match every iteration. *Fix:* scope the lookup to the specific run/branch.
 - **[low] Data Warehousing · SQLite FK enforcement** — *Observed:* `REFERENCES` clauses

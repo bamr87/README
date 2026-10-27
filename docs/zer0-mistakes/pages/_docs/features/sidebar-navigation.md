@@ -76,10 +76,8 @@ Set the mode with the `sidebar.nav` front matter key (or a collection/site defau
 
 1. **Curated tree wins** — if `_data/navigation/<collection>.yml` exists
 (e.g. `docs.yml` for the `docs` collection), it is rendered with `nav-tree.html`.
-2. **Collection tree** — otherwise, a page inside a collection gets the live
-   `collection` folder tree.
-3. **Categories** — pages outside any collection fall back to post
-   categories (when the site has posts with categories).
+2. **Collection tree** — otherwise, a page inside a collection gets the live `collection` folder tree.
+3. **Categories** — pages outside any collection fall back to post categories (when the site has posts with categories).
 
 The left column is only rendered when the resolved mode actually has content, so a page never reserves an empty sidebar column.
 

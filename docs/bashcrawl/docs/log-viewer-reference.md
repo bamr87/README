@@ -75,10 +75,8 @@ title: Log & Screenshot Viewer — Design Reference
 - **Read-only.** The viewer never modifies log files. Pure read + watch.
 - **No database.** JSONL files are parsed on-demand and cached in memory. At
 current scale (~244 sessions, 2K total events, 61 MB logs) this fits comfortably in a single Python process.
-- **No JS build step.** Vanilla JS modules (`<script type="module">`), CSS
-  custom properties for theming. Chart.js loaded via CDN for analytics charts.
-- **Fantasy theme.** The UI uses the same dungeon/adventure aesthetic as the
-  game — parchment textures, fantasy fonts, dungeon map iconography.
+- **No JS build step.** Vanilla JS modules (`<script type="module">`), CSS custom properties for theming. Chart.js loaded via CDN for analytics charts.
+- **Fantasy theme.** The UI uses the same dungeon/adventure aesthetic as the game — parchment textures, fantasy fonts, dungeon map iconography.
 
 ---
 
@@ -467,10 +465,8 @@ Persistent top navigation bar with fantasy theme:
 
 ### Theme
 
-- **Colors:** Dark parchment background (`#1a1a2e`), gold accents (`#d4a574`),
-  muted text (`#c4b998`), green for success, red for death/errors
-- **Typography:** Monospace for log data, serif/fantasy heading font
-  (system fonts, no custom font files)
+- **Colors:** Dark parchment background (`#1a1a2e`), gold accents (`#d4a574`), muted text (`#c4b998`), green for success, red for death/errors
+- **Typography:** Monospace for log data, serif/fantasy heading font (system fonts, no custom font files)
 - **Cards:** Rounded corners with subtle border, shadow on hover
 - **Responsive:** CSS Grid / Flexbox, works on tablet+ (not optimized for phone)
 

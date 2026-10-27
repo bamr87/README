@@ -1,0 +1,4049 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "scope": "local working trees (each on the branch shown)",
+  "summary": {
+    "repositories": 24,
+    "documents": 380,
+    "words": 583237,
+    "conformant": 23,
+    "failing_by_row": {
+      "DOC-09": 1,
+      "DOC-10": 0,
+      "DOC-02": 1,
+      "DOC-03": 1,
+      "DOC-04": 0,
+      "DOC-08": 1,
+      "DOC-01": 0
+    }
+  },
+  "repositories": {
+    ".github": {
+      "repo": "bamr87/.github",
+      "url": "https://github.com/bamr87/.github",
+      "kind": "docs",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "39940e7298c6",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 576,
+        "README.md": 957,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 576,
+          "summary": "The bamr87 owner-level `.github` repo: the community-health defaults every bamr87 repo inherits, the starter release workflow template, and the reusable release and publish workflows other repos call.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 145,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "words": 37,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 222,
+          "summary": "How to contribute: branches, commits, local gates and pull requests.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 227,
+          "summary": "Product requirements for [`bamr87/.github`](https://github.com/bamr87/.github). Derived from the README, agent docs, config and code in this repo. Anything not stated in those sources is marked **TBD**; success metrics are proposals.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 78,
+          "summary": "Supported versions and how to report a vulnerability privately.",
+          "source": "well-known"
+        }
+      ]
+    },
+    "README": {
+      "repo": "bamr87/README",
+      "url": "https://github.com/bamr87/README",
+      "kind": "tooling",
+      "branch": "docs/fleet-docs-framework",
+      "doc_base": "",
+      "head": "c52afb65886c",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 989,
+        "README.md": 1101,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "~",
+        "DOC-08": "✓",
+        "DOC-01": "~"
+      },
+      "findings": [
+        {
+          "key": "G10:README:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "README",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "DOC-04:README:root",
+          "check": "DOC-04",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "README",
+          "subject": "root",
+          "path": null,
+          "message": "Root documents that are not docs of record: MKDOCS.md, PLAN.md, WIKIJS-QUICKSTART.md (waived under Standard deviations)",
+          "remedy": "Move them into docs/ and fix the links.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "MKDOCS.md",
+              "PLAN.md",
+              "WIKIJS-QUICKSTART.md"
+            ]
+          }
+        },
+        {
+          "key": "DOC-01:README:repeat-45c1c134c168",
+          "check": "DOC-01",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "README",
+          "subject": "repeat-45c1c134c168",
+          "path": null,
+          "message": "The same paragraph appears in docs/OverTheWire-website/wargames/bandit/bandit28.md, docs/OverTheWire-website/wargames/bandit/bandit29.md, docs/OverTheWire-website/wargames/bandit/bandit30.md, docs/OverTheWire-website/wargames/bandit/bandit31.md, docs/OverTheWire-website/wargames/bandit/bandit32.md",
+          "remedy": "Keep it in its one home and link to it from the others.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "docs/OverTheWire-website/wargames/bandit/bandit28.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit29.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit30.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit31.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit32.md"
+            ],
+            "excerpt": "From your local machine (not the OverTheWire machine!), clone the repository and find the password for the next level. This needs git installed locally on your "
+          }
+        },
+        {
+          "key": "DOC-01:README:repeat-e7f9f8032861",
+          "check": "DOC-01",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "README",
+          "subject": "repeat-e7f9f8032861",
+          "path": null,
+          "message": "The same paragraph appears in docs/OverTheWire-website/wargames/bandit/bandit22.md, docs/OverTheWire-website/wargames/bandit/bandit23.md, docs/OverTheWire-website/wargames/bandit/bandit24.md",
+          "remedy": "Keep it in its one home and link to it from the others.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "docs/OverTheWire-website/wargames/bandit/bandit22.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit23.md",
+              "docs/OverTheWire-website/wargames/bandit/bandit24.md"
+            ],
+            "excerpt": "A program is running automatically at regular intervals from **cron**, the time-based job scheduler. Look in **/etc/cron.d/** for the configuration and see what"
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 989,
+          "summary": "The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 213,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "MKDOCS.md",
+          "words": 1139,
+          "summary": "How the published site at bamr87.github.io/README is built from the aggregated corpus: the config files, the generated navigation, and the build and deploy commands.",
+          "source": "blockquote"
+        },
+        {
+          "path": "PLAN.md",
+          "words": 10423,
+          "summary": "Redesign plan turning the README context engine into a documentation intelligence platform with drift checks, gap detection, a continuous alignment loop, and autonomous review and merge of necessary updates",
+          "source": "front-matter"
+        },
+        {
+          "path": "PRD.md",
+          "words": 989,
+          "summary": "v2 repurposes this repository from a generic documentation aggregator (the v1 MVP, preserved in git history) into the **consolidated README of the bamr87/bamr87 monorepo**: a dedicated, continuously evolving context engine — MCP- and…",
+          "source": "blockquote"
+        },
+        {
+          "path": "SCHEMA.md",
+          "words": 822,
+          "summary": "Consolidated-context submodule of the `bamr87/bamr87` monorepo: crawlers, distillers, and an MCP server that turn the fleet's repositories into a queryable, continuously regenerated README pyramid.",
+          "source": "blockquote"
+        },
+        {
+          "path": "WIKIJS-QUICKSTART.md",
+          "words": 335,
+          "summary": "Commands for the optional Wiki.js + Postgres stack in `docker-compose.yml`: start, stop, back up and restore it with `scripts/wiki-manage.sh`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 130,
+          "summary": "Decisions for README that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "SCHEMA": {
+      "repo": "bamr87/SCHEMA",
+      "url": "https://github.com/bamr87/SCHEMA",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "89a13d230e73",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 863,
+        "README.md": 820,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:SCHEMA:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "SCHEMA",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 863,
+          "summary": "The Pyramid Schema package — spec, seed template, agent protocol, linter and fixture repos — and the rules for changing it without breaking the copies adopters vendor.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 194,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 266,
+          "summary": "Product requirements for [`bamr87/SCHEMA`](https://github.com/bamr87/SCHEMA). Derived from the README, agent docs, config and code in this repo. Anything not stated in those sources is marked **TBD**; success metrics are proposals.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SCHEMA.md",
+          "words": 447,
+          "summary": "Distribution package for the Pyramid Schema paradigm: spec, seed template, agent protocol, linter, and schematized example repos. It validates itself.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/2026-07-15-effectiveness-report.md",
+          "words": 846,
+          "summary": "Measurements, not claims: how the v0.1 package held up against real repository scenarios and three real-repo adoptions, and what schema-chain reads do to an agent's context spend.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md",
+          "words": 930,
+          "summary": "Blog post introducing the Pyramid Schema: a lintable SCHEMA.md in every directory, so stateless AI agents look up where things go instead of guessing.",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/2026-09-03-the-copy-you-forgot-you-made.md",
+          "words": 2536,
+          "summary": "Essay: how \"this repo has gone quiet\" led to a fan-out that could not reach unmounted repos and an upstream copy nobody checked, and why every vendored file needs a content-addressed contract with parity tiers.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SCHEMA.md",
+          "words": 109,
+          "summary": "Essays, blog posts, and reports about the paradigm — dated, human-facing writing.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "bamr87": {
+      "repo": "bamr87/bamr87",
+      "url": "https://github.com/bamr87/bamr87",
+      "kind": "hub",
+      "branch": "docs/fleet-docs-framework",
+      "doc_base": "",
+      "head": "798c8240fac3",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1830,
+        "README.md": 1592,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "~",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G2:bamr87:usage",
+          "check": "G2",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "bamr87",
+          "subject": "usage",
+          "path": "README.md",
+          "message": "README has no usage section",
+          "remedy": "Add a 'Usage' section to README.md.",
+          "component": "",
+          "evidence": {
+            "headings": [
+              "👋 hi, i'm amr abdel-motaleb",
+              "🚀 about me",
+              "🗂️ portfolio",
+              "🛰️ fleet platform & standards",
+              "🎨 zer0 jekyll ecosystem",
+              "🌐 websites",
+              "📚 knowledge bases & learning",
+              "🤖 ai applications & research",
+              "🧠 ai agents & sdlc automation",
+              "💼 business & career apps",
+              "🛠️ developer tools & extensions",
+              "🕹️ games & retro computing"
+            ]
+          }
+        },
+        {
+          "key": "D8:bamr87:CATALOG.md->_data/project_health.yml",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bamr87",
+          "subject": "CATALOG.md->_data/project_health.yml",
+          "path": "CATALOG.md",
+          "message": "`CATALOG.md` links to `_data/project_health.yml`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "_data/project_health.yml"
+          }
+        },
+        {
+          "key": "D8:bamr87:CATALOG.md->_data/project_health_meta.yml",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bamr87",
+          "subject": "CATALOG.md->_data/project_health_meta.yml",
+          "path": "CATALOG.md",
+          "message": "`CATALOG.md` links to `_data/project_health_meta.yml`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "_data/project_health_meta.yml"
+          }
+        },
+        {
+          "key": "D8:bamr87:tools/README.md->../docs/FORGE-CI.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bamr87",
+          "subject": "tools/README.md->../docs/FORGE-CI.md",
+          "path": "tools/README.md",
+          "message": "`tools/README.md` links to `../docs/FORGE-CI.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../docs/FORGE-CI.md"
+          }
+        },
+        {
+          "key": "DOC-10:bamr87:readme-skeleton",
+          "check": "DOC-10",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "bamr87",
+          "subject": "readme-skeleton",
+          "path": "README.md",
+          "message": "README has no Project structure, Development, Contributing section",
+          "remedy": "Add them where they apply.",
+          "component": "",
+          "evidence": {
+            "missing": [
+              "Project structure",
+              "Development",
+              "Contributing"
+            ]
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1830,
+          "summary": "The fleet's control plane: about forty projects mounted as Git submodules and managed, monitored and standardized from one hub, which is also the GitHub profile and the public Harness Console site.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CATALOG.md",
+          "words": 7053,
+          "summary": "Everything the hub provides to the ~40 fleet repos and to any AI agent working in them, in one place: the **specs** repos are built to, the **kits** that seed them, the **reference implementations** they lift from, the **registries** that…",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 594,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 1363,
+          "summary": "How to contribute: branches, commits, local gates and pull requests.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 404,
+          "summary": "Product requirements for [`bamr87/bamr87`](https://github.com/bamr87/bamr87). Derived from the README, agent docs, config and code in this repo. Anything not stated in those sources is marked **TBD**; success metrics are proposals.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SCHEMA.md",
+          "words": 903,
+          "summary": "Control plane for a fleet of ~40 project submodules: the root repo is the machinery (registry, gates, seeds, site) that manages and standardizes them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/AI-INTEGRATION.md",
+          "words": 3422,
+          "summary": "The AI layer — every surface where Claude runs, the Claude auth order and secrets matrix, the loops, and how all of it propagates to the fleet.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/COCKPIT.md",
+          "words": 1080,
+          "summary": "Decision record (2026-09-18): GitFactory (gitorio) as the one front door for designing, running and refining harnesses, with this hub as its runtime.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONSOLE-PAGES.md",
+          "words": 957,
+          "summary": "The public site is the Harness Console built static: the API snapshot it reads, connecting GitHub or a running console from the page, and what is never published.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONSOLIDATION.md",
+          "words": 1735,
+          "summary": "The 2026-10-19 repository consolidation: which repositories merged into which, the zer0-CMS recipe, the hub's add and retire steps, and the decisions still open.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONTAINERS.md",
+          "words": 1442,
+          "summary": "How some two dozen compose files run as one fleet: the shared network, Postgres and Redis, the registry-driven port map, the generated overrides, and `dash up`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONTENT-ATLAS.md",
+          "words": 1555,
+          "summary": "Content observability and editorial direction for the fleet's content sites, and the committed editorial plan in `_data/editorial.yml`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DAILY-ANALYSIS.md",
+          "words": 2954,
+          "summary": "The daily fleet loop (`fleet-pulse.yml`): gather every signal, rank the failing and expensive workflows into one queue, and let the doctor open the fixes.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DASH.md",
+          "words": 2331,
+          "summary": "The dash architecture — the registry as the source of truth, the surfaces, monitoring, the drift gates and the self-evolution loop. Start here for the machinery.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DEPENDENCIES.md",
+          "words": 1280,
+          "summary": "The always-latest dependency policy: no exact pins, no ceilings, no committed lockfiles, and the few sanctioned exceptions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DEVELOPMENT.md",
+          "words": 781,
+          "summary": "Prerequisites, getting the source, running the console and the site, containers, and which check to run for what you changed.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DOCKER.md",
+          "words": 1625,
+          "summary": "One image standard for every Dockerfile and compose file in the fleet — versions from `_data/fleet.yml`, a harmonizer, a fan-out — and the `/docker/` view.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DOCS-SYSTEM.md",
+          "words": 4560,
+          "summary": "Plan (2026-10-03) for documentation by role across the fleet — a Jekyll front door, MkDocs guides, Sphinx API reference and a private handbook, on one content contract; its repo layer is now specs/DOCS.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ESTIMATION.md",
+          "words": 832,
+          "summary": "Every project as a client: deterministic estimates from open issues, actuals from usage evidence, and the leverage between them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/EVOLUTION.md",
+          "words": 1558,
+          "summary": "The weekly repo-evolution loop — a signal-led, draft-only AI improvement pass in each opted-in submodule's own repository.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/FLEET-COMPOSE.md",
+          "words": 1099,
+          "summary": "Launching and debugging any submodule from the hub with its real services, on a port nobody else claims, without a commit in the submodule.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/FORGE-HOST.md",
+          "words": 401,
+          "summary": "Running the fleet's containers on the `forge` LAN host while the Mac runs the terminal dash.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/HARNESS-OPS.md",
+          "words": 3849,
+          "summary": "Managing the fleet's AI harnesses and schedules: the `harnesses:` contract, the daily inventory, mass deploy via harness-fanout, caps, cost forecasting, and the local stack.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/HARNESS.md",
+          "words": 3260,
+          "summary": "The six-layer harness architecture (Agent = Model + Harness) mapped onto this control plane: the layers, the ratchet rule, the health scorecard and the trip wires.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ISSUE-PIPELINE.md",
+          "words": 1624,
+          "summary": "The three-tier loop that turns an open issue into a merge-ready PR: label state machine, evidence bundles, caps, autonomy gates and the two human brakes.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/MACHINE-API.md",
+          "words": 220,
+          "summary": "The agent-facing JSON the site publishes (`/api/v1/*.json`, `llms.txt`) and how to start from it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/OBSERVABILITY.md",
+          "words": 3551,
+          "summary": "The local log, metrics and trace planes joined on one `trace.id`: retention, redaction, the console's Observe portal and the code index.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/PORTFOLIO.md",
+          "words": 1018,
+          "summary": "The portfolio standard: repository descriptions, the topic taxonomy, the homepage rule, the README skeleton and the profile index.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/RELEASES.md",
+          "words": 633,
+          "summary": "Release and versioning methodology across the fleet.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SCHEMA-FRAMEWORK.md",
+          "words": 562,
+          "summary": "The Pyramid Schema — `SCHEMA.md` structural contracts across the fleet, and how to follow, propagate and verify them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SCHEMA.md",
+          "words": 102,
+          "summary": "Operator documentation for the dash machinery — how the hub, gates, and fleet workflows are meant to be run.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SMOKE.md",
+          "words": 710,
+          "summary": "The live smoke test: record every running container's probes, then re-run them and fail on any regression.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/STANDARDS.md",
+          "words": 817,
+          "summary": "The tiered standardization baseline — which files each kind of repository must have — and the way to the Universal Project Standard in `specs/`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SUBMODULES.md",
+          "words": 442,
+          "summary": "The submodule workflow, documented once: where the project list lives, how a change moves (commit in the submodule first, then record its pointer here), and what the automation does in each direction.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/TERMINAL-FRAMEWORK.md",
+          "words": 6886,
+          "summary": "The plan to consolidate the fleet's CLIs and TUIs onto bashOS: the inventory, `keys v1`, the per-repo plan and the phases.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/TOKEN-ROTATION.md",
+          "words": 2454,
+          "summary": "The weekly credential loop: what rotating a browser-minted token can mean, the propagate / audit / re-mint split, and the values-free ledger.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/UX-HARNESS.md",
+          "words": 345,
+          "summary": "Continuous UI/UX audit for the fleet: the `ux-audit` kit's computational gate and the hub's critique loop.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/VERIFICATION.md",
+          "words": 1671,
+          "summary": "The agent verification standard — feature index, user scenarios, evidence bundles, the `fleet-verify.yml` gate and the fleet coverage index.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/WORKFLOW-OPTIMIZATION.md",
+          "words": 3318,
+          "summary": "The fleet-wide GitHub Actions audit of 2026-09 and the record of what changed because of it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/WORKFLOW-VERSIONING.md",
+          "words": 987,
+          "summary": "How the reusable workflows are tagged (`vX.Y.Z` plus a floating `vX`), what each bump promises, and how a release is cut and rolled back.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 130,
+          "summary": "Decisions for bamr87 that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "bamr87.github.io": {
+      "repo": "bamr87/bamr87.github.io",
+      "url": "https://github.com/bamr87/bamr87.github.io",
+      "kind": "site",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "2fb03d0a8bf5",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1144,
+        "README.md": 2253,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "~",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "~",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G2:bamr87.github.io:install",
+          "check": "G2",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "bamr87.github.io",
+          "subject": "install",
+          "path": "README.md",
+          "message": "README has no install section",
+          "remedy": "Add a 'Install' section to README.md.",
+          "component": "",
+          "evidence": {
+            "headings": [
+              "about me",
+              "quick dashboard — github repositories",
+              "quick stats & profile",
+              "featured projects",
+              "how to use this dashboard",
+              "clone a project",
+              "preview a jekyll site (recommended with docker compose)",
+              "or: bundle exec jekyll serve --livereload",
+              "contributing & support",
+              "contact & social",
+              "example diagram (mermaid) — repo relationship",
+              "cv"
+            ]
+          }
+        },
+        {
+          "key": "G10:bamr87.github.io:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "bamr87.github.io",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "DOC-10:bamr87.github.io:readme-skeleton",
+          "check": "DOC-10",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "bamr87.github.io",
+          "subject": "readme-skeleton",
+          "path": "README.md",
+          "message": "README has no Project structure, Contributing section",
+          "remedy": "Add them where they apply.",
+          "component": "",
+          "evidence": {
+            "missing": [
+              "Project structure",
+              "Contributing"
+            ]
+          }
+        },
+        {
+          "key": "DOC-08:bamr87.github.io:budget-README.md",
+          "check": "DOC-08",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "bamr87.github.io",
+          "subject": "budget-README.md",
+          "path": "README.md",
+          "message": "README.md is 2253 words (budget 2000) (waived under Standard deviations)",
+          "remedy": "Move deep dives into docs/ and link them.",
+          "component": "",
+          "evidence": {
+            "words": 2253
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1144,
+          "summary": "Amr Abdel-Motaleb's GitHub Pages site — profile, résumé and project portfolio plus blog, docs and notes collections — and the rules for changing it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 201,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 230,
+          "summary": "Product requirements for the bamr87.github.io profile and portfolio site — problem, users, goals, features and proposed success metrics — derived from the repo's README, agent docs, config and code, with anything they do not state marked…",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 145,
+          "summary": "The hard-to-reverse decisions for this site, one numbered file each, and the format every new ADR follows.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/collections.md",
+          "words": 211,
+          "summary": "Every Jekyll collection `_config.yml` declares — its directory, permalink, and the layout and sidebar its front-matter defaults give it — generated from the config.",
+          "source": "blockquote"
+        },
+        {
+          "path": "scripts/README.md",
+          "words": 477,
+          "summary": "The generators that write the site's portfolio, features index and collections reference from curated sources, how to run each one, and the validator other repos use for their features metadata.",
+          "source": "blockquote"
+        },
+        {
+          "path": "_data/README.md",
+          "words": 151,
+          "summary": "The site's data files: the curated project registry, the generated portfolio data the homepage renders, the navigation menus and the theme's UI strings.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "bashcrawl": {
+      "repo": "bamr87/bashcrawl",
+      "url": "https://github.com/bamr87/bashcrawl",
+      "kind": "game",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "c7b894e16e7c",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1701,
+        "README.md": 1303,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "D8:bashcrawl:CHANGELOG.md->docs/agent-playtest-report.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bashcrawl",
+          "subject": "CHANGELOG.md->docs/agent-playtest-report.md",
+          "path": "CHANGELOG.md",
+          "message": "`CHANGELOG.md` links to `docs/agent-playtest-report.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "docs/agent-playtest-report.md"
+          }
+        },
+        {
+          "key": "D8:bashcrawl:CHANGELOG.md->docs/agent-protocol.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bashcrawl",
+          "subject": "CHANGELOG.md->docs/agent-protocol.md",
+          "path": "CHANGELOG.md",
+          "message": "`CHANGELOG.md` links to `docs/agent-protocol.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "docs/agent-protocol.md"
+          }
+        },
+        {
+          "key": "D8:bashcrawl:CHANGELOG.md->docs/log-viewer-plan.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "bashcrawl",
+          "subject": "CHANGELOG.md->docs/log-viewer-plan.md",
+          "path": "CHANGELOG.md",
+          "message": "`CHANGELOG.md` links to `docs/log-viewer-plan.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "docs/log-viewer-plan.md"
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1701,
+          "summary": "How to work in Bashcrawl, the terminal-teaching dungeon crawl: exact commands, layout, conventions and the invariants the gates enforce; canonical for every agent and contributor.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 7663,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 319,
+          "summary": "The product requirements for Bashcrawl — problem, users, goals, features and open questions — derived from the README, agent docs, config and code, with anything those sources do not state marked **TBD**.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 3147,
+          "summary": "The component map behind AGENTS.md: where every part of the dungeon, the TermForge framework, the game engine, the React web app and the tooling lives, what each owns, and the web app's design rules.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/PLATFORM.md",
+          "words": 1027,
+          "summary": "The platform's five layers, the learning loop, how its patterns align with bashOS and chui, how to extend it, and the contracts that keep it honest.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/advanced.md",
+          "words": 315,
+          "summary": "Hidden areas, the full dungeon map, scroll format standards, the executable encounter template and agent playtesting, for players and authors going deeper.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/authoring-courses.md",
+          "words": 663,
+          "summary": "Write a course without JavaScript: Markdown lessons with rule objectives in their frontmatter, a lab of practice files, and how to check your work.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/contributing.md",
+          "words": 487,
+          "summary": "How to report issues, set up a development checkout, add rooms, encounters and scrolls, follow the code standards, and open a pull request.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/gameplay.md",
+          "words": 525,
+          "summary": "The game's mechanics: core commands, room progression, inventory, health, encounters, hidden rooms, combat and game state.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/generated/README.md",
+          "words": 50,
+          "summary": "Reference pages generated from the content registries, the courses, the `Makefile` and the launcher; rebuild them with `make generate-contract-docs` instead of editing them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/getting-started.md",
+          "words": 232,
+          "summary": "Install and start playing: clone and play, Binder or a macOS download, the web trainer, the help system, resetting the game and the playtest harness.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/schemas/content-registries.v1.md",
+          "words": 143,
+          "summary": "The minimum fields `rooms.yaml`, `encounters.yaml` and `quests.yaml` must carry for the shell and Python runtimes, and how CI enforces them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/schemas/events.v1.md",
+          "words": 576,
+          "summary": "The normative contract for TermForge typed events: the event shape, delivery rules, every type and how events relate to the HUD's state diff.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/schemas/plugin.v1.md",
+          "words": 496,
+          "summary": "The normative contract for TermForge plugins: the descriptor, its lifecycle, the rules for plugins in `termforge/core/`, and validation.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/schemas/rules.v1.md",
+          "words": 757,
+          "summary": "The normative contract for TermForge rules — declarative predicates over a session that let content say when something is true, as data.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/schemas/terminal-protocol.v2.md",
+          "words": 556,
+          "summary": "The normative contract for the TermForge Line protocol (v2): the record every command handler, frontend and fixture exchanges, its display kinds and control actions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/termforge/architecture.md",
+          "words": 1539,
+          "summary": "TermForge, the universal terminal framework under the web game: its module map, dependency rules, hook spine, platform services, VFS, sessions and vendoring contract.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/termforge/ascii-motion.md",
+          "words": 1001,
+          "summary": "How every picture is an ASCII Motion file: where the art lives, how to change or add one, the motion CLI, and what plays where.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/termforge/authoring-apps.md",
+          "words": 851,
+          "summary": "Build your own terminal tool on TermForge: the App descriptor, command packs, worlds, plugins, hooks, branding and registering it with the hosts.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/termforge/hidden-gem.md",
+          "words": 1549,
+          "summary": "DAEMON STORM, the secret pixel shooter in the TermForge HUD: how to open it, how its pixels and rules work, and how to recapture its screenshots.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/termforge/telnet-host.md",
+          "words": 1015,
+          "summary": "Serve the game or any TermForge app over lightweight telnet/TCP: flags, negotiated and raw modes, the session model, hub mode and the security posture.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/walkthrough.md",
+          "words": 2504,
+          "summary": "Every path, puzzle and command in the dungeon, quest by quest: a complete guide to learning real UNIX commands by exploring the catacombs, solving puzzles and defeating monsters from the command line.",
+          "source": "blockquote"
+        },
+        {
+          "path": "src/help/README.md",
+          "words": 134,
+          "summary": "The bash help engine: its scripts, how to run it, and how it works out where the player is and what to suggest next.",
+          "source": "blockquote"
+        },
+        {
+          "path": "termforge/README.md",
+          "words": 416,
+          "summary": "TermForge in brief — the zero-dependency terminal framework behind every surface — with the commands to try its hosts and links to the full docs.",
+          "source": "blockquote"
+        },
+        {
+          "path": "motion/README.md",
+          "words": 88,
+          "summary": "Where Bashcrawl's ASCII Motion art lives — stage clips and static art — and how to change a picture.",
+          "source": "blockquote"
+        },
+        {
+          "path": "logs/README.md",
+          "words": 185,
+          "summary": "What lands in `logs/` during play and testing — JSONL gameplay and playtest telemetry, all of it gitignored — and the format of each file.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "bashos": {
+      "repo": "bamr87/bashos",
+      "url": "https://github.com/bamr87/bashos",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "9525b27da50d",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1490,
+        "README.md": 1480,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:bashos:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "bashos",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1490,
+          "summary": "How to work in bashOS: the exact commands, the layout, the hard rules and the generated files, canonical for every coding agent and contributor.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 228,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 270,
+          "summary": "How to set up, the architecture rules a pull request must keep, and how releases are cut; the full command list and hard rules are in AGENTS.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 3142,
+          "summary": "A buildable software stack for bashOS — an image-based Linux appliance where the agent kernel is a first-class OS service, from microVMs to policy plane",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/DESKTOP-TOUR.md",
+          "words": 2738,
+          "summary": "Everything `bashos gui` does, scene by scene, with real captures of the running app: the console, side by side, the desktop, commands, runs, health, the engine, settings and keys.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DESKTOP.md",
+          "words": 2227,
+          "summary": "The two interactive surfaces on the kernel — the Textual desktop and the `bashos gui` front end: launching, keys, the window model, the apps, the guard model, and how to add a scene.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/FORGE.md",
+          "words": 1000,
+          "summary": "How a physical dev box is provisioned and watched, the hard-won rules behind it, and how that process became bashOS userland: `bin/os-health`, `/health`, `/dash` and `bashos remote`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/HARNESS.md",
+          "words": 1670,
+          "summary": "The design of the AI harness at the core of bashOS: its layers, the kernel, the loop contract, the engine and model runtime, failure semantics, and how to extend each one.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/OPENCODE.md",
+          "words": 1283,
+          "summary": "Why OpenCode is bashOS's engine and runs as a separate process, how the Claude Code credential reaches it, what the deny-by-default policy enforces, and how the command registry is compiled into its config.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/SERVICES.md",
+          "words": 513,
+          "summary": "Deploying and observing the optional container stack: Phoenix tracing, the kernel over HTTP through LangGraph, auth inside containers, and the image layout.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 130,
+          "summary": "Decisions for bashos that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/frontend/README.md",
+          "words": 724,
+          "summary": "The proposals for evolving `bashos gui` into an OS shell — multi-window, side-by-side and desktop metaphors — with the PRD, spec, roadmap and PostHog research behind them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "chui/README.md",
+          "words": 615,
+          "summary": "The optional macOS terminal environment of bashOS — Oh My Zsh, Powerlevel10k, Zellij and the modern CLI — and how to install, use, configure and roll it back.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/README.md",
+          "words": 81,
+          "summary": "Repository scripts for bashOS — the desktop capture and the documentation generators; nothing here ships to users.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "cv-pro": {
+      "repo": "bamr87/cv-pro",
+      "url": "https://github.com/bamr87/cv-pro",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "a1e7a2b8a462",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 505,
+        "README.md": 721,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G1:cv-pro:CONTRIBUTING.md",
+          "check": "G1",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "cv-pro",
+          "subject": "CONTRIBUTING.md",
+          "path": null,
+          "message": "No CONTRIBUTING.md",
+          "remedy": "Add CONTRIBUTING.md at the repository root.",
+          "component": "",
+          "evidence": {
+            "kind": "app",
+            "tier": "expected"
+          }
+        },
+        {
+          "key": "G10:cv-pro:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "cv-pro",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 505,
+          "summary": "Amr's CV as code (cv/) and the CV Builder Pro app that edits it (app/), in one repository that shares one CVData contract.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 86,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 146,
+          "summary": "The architecture decision log for cv-pro: when to write an ADR, the format, and the list of decisions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "cv/README.md",
+          "words": 903,
+          "summary": "Amr's CV as code: one cv.json rendered to Markdown, LaTeX, HTML and PDF, with automated publishing and releases.",
+          "source": "blockquote"
+        },
+        {
+          "path": "app/README.md",
+          "words": 1093,
+          "summary": "React web app for building CVs and résumés with LaTeX templates, Markdown/PDF export and optional AI parsing.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "djangoerp": {
+      "repo": "bamr87/djangoerp",
+      "url": "https://github.com/bamr87/djangoerp",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "99864a55fe18",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1891,
+        "README.md": 972,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G1:djangoerp:CONTRIBUTING.md",
+          "check": "G1",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "djangoerp",
+          "subject": "CONTRIBUTING.md",
+          "path": null,
+          "message": "No CONTRIBUTING.md",
+          "remedy": "Add CONTRIBUTING.md at the repository root.",
+          "component": "",
+          "evidence": {
+            "kind": "app",
+            "tier": "expected"
+          }
+        },
+        {
+          "key": "G10:djangoerp:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "djangoerp",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1891,
+          "summary": "Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 196,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 310,
+          "summary": "Product requirements for DjangoERP — the problem, target users, goals, current features and open questions — with anything the sources do not state marked TBD.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 1486,
+          "summary": "How DjangoERP is put together: the module map and dependency direction, the invariants that hold it together, the GL posting matrix, the MRP algorithm, and which open-source designs were adopted and why.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DOCKER.md",
+          "words": 599,
+          "summary": "How to run DjangoERP in Docker against PostgreSQL and Redis, which ports it publishes and why they stay on loopback, and how to attach the VS Code debugger to the web, worker and one-shot containers.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/api-routes.md",
+          "words": 1984,
+          "summary": "Every route DjangoERP serves — method, path, view or viewset action, the DRF permission classes it enforces, and its summary — read from Django's URL resolver.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "fredgar-ai": {
+      "repo": "bamr87/fredgar-ai",
+      "url": "https://github.com/bamr87/fredgar-ai",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "65fbf954c31a",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1358,
+        "README.md": 680,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:fredgar-ai:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "fredgar-ai",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1358,
+          "summary": "Django + DRF backend and Vite/React UI for SEC EDGAR company data and FRED macro series, with AI-assisted analysis layered on top.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 21,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 235,
+          "summary": "How to set up a local environment, run the same lint, test and migration checks as CI, and land a change in fredgar-ai.",
+          "source": "blockquote"
+        },
+        {
+          "path": "PRD.md",
+          "words": 1983,
+          "summary": "Product vision, scope and roadmap for Fredgar AI, with what is implemented today marked apart from what is planned.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 144,
+          "summary": "Index and format of fredgar-ai's Architecture Decision Records — the decisions that are hard to reverse.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/api-and-cli.md",
+          "words": 396,
+          "summary": "How the REST API and the `manage.py` commands fit together — base paths, auth, async jobs and caching flags — with links to the generated route and command reference.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture.md",
+          "words": 451,
+          "summary": "Django apps, data flow from SEC to the warehouse, and the DB-first JSON caching pattern — for backend developers and operators.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/distributed-storage.md",
+          "words": 3654,
+          "summary": "Proposed (not built) content-addressed EDGAR/FRED extract store: incremental pulls, a local compressed backup and Kaggle clean snapshots.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/enrichment.md",
+          "words": 1585,
+          "summary": "How the enrichment framework turns a list of organization names into an auditable customer/vendor master: providers propose claims, resolution disposes.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/leadership-methodology.md",
+          "words": 932,
+          "summary": "How leadership is extracted from SEC Forms 3/4/5 and how the transparent people-vs-profits index is computed, with its limits — read before relying on either.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/notes/README.md",
+          "words": 391,
+          "summary": "Dated design essays on the enrichment framework, kept for the reasoning behind its rules rather than as reference.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/api-routes.md",
+          "words": 1613,
+          "summary": "Every REST route the versioned API serves — method, path, view, access rule, parameters and summary — read from the DRF router and `src/api/v1/urls.py`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/management-commands.md",
+          "words": 856,
+          "summary": "Every `manage.py` command the Django apps ship, grouped by app, with its help text and options — read from `src/*/management/commands/*.py`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/releasing.md",
+          "words": 176,
+          "summary": "How a fredgar-ai release happens: release-please turns Conventional Commit PR titles into a release PR, and merging that PR tags and publishes it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/sec-reference/edgar-api.md",
+          "words": 1806,
+          "summary": "The SEC `data.sec.gov` endpoints and response shapes, with the SEC developer FAQ rules (User-Agent, 10 req/s fair access, lag, ticker files).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/sec-reference/edgar_pds_spec_summary.md",
+          "words": 498,
+          "summary": "Summary of the SEC EDGAR Public Dissemination Service (PDS) specification for real-time filing feeds.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/sec-reference/sec-edgar-database-2024-04-13.md",
+          "words": 1660,
+          "summary": "The SEC's Edgar database provides insights into the financial health and operational performance of publicly-traded companies in the U.S.",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/static-site.md",
+          "words": 1193,
+          "summary": "The public static mirror on GitHub Pages: what is generated, the `publish_static_site` pipeline, deployment setup, and cross-links with the interactive app.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "githubai": {
+      "repo": "bamr87/githubai",
+      "url": "https://github.com/bamr87/githubai",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "a7a1404c4239",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1008,
+        "README.md": 885,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:githubai:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "githubai",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1008,
+          "summary": "GitHubAI, the GitHub-native framework that wires Claude Code into the whole SDLC: reusable workflows, a config action, repo-type profiles, an installer, and a GitHub App relay.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 736,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 945,
+          "summary": "The product requirements: why GitHubAI exists, the promise it makes, its public API, invariants, milestones and scope.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture.md",
+          "words": 917,
+          "summary": "The design decisions behind GitHubAI and the invariants each one protects.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/configuration.md",
+          "words": 495,
+          "summary": "The full `.github/githubai.yml` schema, the profile merge semantics, and the org-policy layer for app mode.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/getting-started.md",
+          "words": 438,
+          "summary": "Adopt GitHubAI in any repo: install, secrets, configuration and the first issue.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/migration-v0.md",
+          "words": 372,
+          "summary": "Where every capability of the v0.x Django application went in the framework.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/labels.md",
+          "words": 253,
+          "summary": "The default label set (name, color, meaning) that profiles inherit and `setup/install.sh --labels` creates, generated from `profiles/_base.yml`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/workflows.md",
+          "words": 1430,
+          "summary": "The triggers, `workflow_call` inputs and secrets, job permissions, timeouts and concurrency of every `claude*.yml` workflow, generated from the workflow files.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/security.md",
+          "words": 929,
+          "summary": "The auth model, who can authorize what, how untrusted issue and PR content is contained, and the auto-merge gate.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/workflows.md",
+          "words": 745,
+          "summary": "What each Claude workflow does, when it fires and what gates it, and how this repo's own CI guards the framework.",
+          "source": "blockquote"
+        },
+        {
+          "path": "app/README.md",
+          "words": 953,
+          "summary": "GitHubAI as a GitHub App: org-scale event routing, org policy, and the activity dashboard.",
+          "source": "blockquote"
+        },
+        {
+          "path": "profiles/README.md",
+          "words": 297,
+          "summary": "The repo-type profiles: what each one sets, how the three config layers merge, and how to add a profile.",
+          "source": "blockquote"
+        },
+        {
+          "path": "template/README.md",
+          "words": 165,
+          "summary": "The files `setup/install.sh` copies into an adopting repo, and what each one is for.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "gitorio": {
+      "repo": "bamr87/gitorio",
+      "url": "https://github.com/bamr87/gitorio",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "6461a252e66b",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1843,
+        "README.md": 1512,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:gitorio:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "gitorio",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "Q4:gitorio:docs/ARCHITECTURE.md#override-attempt",
+          "check": "Q4",
+          "class": "quality",
+          "severity": "error",
+          "repo": "gitorio",
+          "subject": "docs/ARCHITECTURE.md#override-attempt",
+          "path": "docs/ARCHITECTURE.md",
+          "message": "`docs/ARCHITECTURE.md` contains override attempt text",
+          "remedy": "Review by hand: this content is served to AI clients.",
+          "component": "",
+          "evidence": {
+            "excerpt": "tes output obligations, no secrets, no \"ignore previous instructions\"-style suffix traps. - Scheduling = `tr"
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1843,
+          "summary": "gitorio is GitFactory: a static, Factorio-style factory builder whose blueprints compile to GitHub Actions workflows that run Claude Code agents against real repositories.",
+          "source": "blockquote"
+        },
+        {
+          "path": "BACKLOG.md",
+          "words": 4931,
+          "summary": "The repo's append-only engineering work register: every `BL-*` item, open, claimed by a spec, or done.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 233,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 459,
+          "summary": "How to propose a change: the session workflow, the local gates, and what a pull request needs — with the rules themselves kept in AGENTS.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "PRD.md",
+          "words": 375,
+          "summary": "The product requirements for GitFactory: the problem, target users, goals, scope and proposed success measures.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 348,
+          "summary": "How to report a vulnerability privately, and a summary of the security invariants every compiled workflow keeps.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/AO-SDLC.md",
+          "words": 660,
+          "summary": "How work moves from BACKLOG.md through spec packages to merged code: the stages, the slash commands, the three mechanical gates and the autonomy invariants.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 5843,
+          "summary": "The full design — components, auth phases, the blueprint model, how each machine compiles, the compiler spec, telemetry, prompts, Fleet Ops, maps, the harness and the security model.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DECISIONS.md",
+          "words": 11787,
+          "summary": "The append-only log of every architecture and process decision (ADR-001…039) — what was decided, why, and the alternatives rejected.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DOCUMENTATION-MAP.md",
+          "words": 1158,
+          "summary": "Which of the four prose directories — `docs/`, `_docs/`, `specs/` and `blog/` — a piece of writing belongs in, who reads each one, and how long it lives.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/GENERATED-FILES.md",
+          "words": 1046,
+          "summary": "Which files in this repo are generated, from what and by which command, and the header, determinism and action-pinning guarantees that compiled workflows carry.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ROADMAP.md",
+          "words": 2329,
+          "summary": "The product phases and their acceptance history, from the bootstrap seeds through Fleet Ops, maps and the harness; open work lives in BACKLOG.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 149,
+          "summary": "The fleet-format ADR directory (UPS-WORK-04): the file format, the status values and the index; the repo's ADR-001…039 history is in DECISIONS.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/machines.md",
+          "words": 3285,
+          "summary": "Every machine type the canvas offers — its id, category, blurb, config fields and defaults — generated from the machine registry.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "godotgo": {
+      "repo": "bamr87/godotgo",
+      "url": "https://github.com/bamr87/godotgo",
+      "kind": "game",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "a36d0c3625c8",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1721,
+        "README.md": 857,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1721,
+          "summary": "A workspace for building Godot 4 games: one shared framework addon, five sample games that exercise it, tooling that treats every project the same, and a Claude Code integration that can build, test and improve any of them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 102,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 339,
+          "summary": "The product requirements for GodotGo: problem, users, goals and non-goals, features, requirements and proposed success measures.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 151,
+          "summary": "The index and format of godotgo's architecture decisions — the choices that are hard to reverse, recorded in the PR that makes them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ai-development.md",
+          "words": 1747,
+          "summary": "How Claude Code is wired into this workspace: OAuth setup, `tools/claude.sh`, the MCP servers and the live-editor bridge, the Docker toolchain and the GitHub workflows.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/authoring-games.md",
+          "words": 1081,
+          "summary": "How to start, structure, illustrate, level-design and verify a new game on the shared framework, with the sample games as worked examples.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/framework.md",
+          "words": 1045,
+          "summary": "Why each piece of the shared `addons/godotgo` framework exists, how a game uses it, and the behaviours that are easy to trip over; the member-by-member API is generated separately.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/material-maker.md",
+          "words": 465,
+          "summary": "How to install Material Maker, author a material and export it headlessly through Docker into a game's `materials/` folder for Godot 4.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/framework-api.md",
+          "words": 3484,
+          "summary": "Every class, signal, constant, property and method of the shared `addons/godotgo` framework, generated from the `##` doc comments in `framework/addons/godotgo/`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/verification.md",
+          "words": 1562,
+          "summary": "The matrix that maps every framework, game and toolchain feature to the test that proves it, plus how to run everything and the known harmless noise.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "it-journey": {
+      "repo": "bamr87/it-journey",
+      "url": "https://github.com/bamr87/it-journey",
+      "kind": "site",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "33df7f4bad57",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1786,
+        "README.md": 887,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "D8:it-journey:.crush/workflows/README.md->.github/instructions/posts.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/README.md->.github/instructions/posts.instructions.md",
+          "path": ".crush/workflows/README.md",
+          "message": "`.crush/workflows/README.md` links to `.github/instructions/posts.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": ".github/instructions/posts.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/README.md->.github/instructions/quest.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/README.md->.github/instructions/quest.instructions.md",
+          "path": ".crush/workflows/README.md",
+          "message": "`.crush/workflows/README.md` links to `.github/instructions/quest.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": ".github/instructions/quest.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/README.md->.github/instructions/work.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/README.md->.github/instructions/work.instructions.md",
+          "path": ".crush/workflows/README.md",
+          "message": "`.crush/workflows/README.md` links to `.github/instructions/work.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": ".github/instructions/work.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/README.md->.github/prompts/README.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/README.md->.github/prompts/README.md",
+          "path": ".crush/workflows/README.md",
+          "message": "`.crush/workflows/README.md` links to `.github/prompts/README.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": ".github/prompts/README.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/templates/README.md->../../.github/instructions/posts.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/templates/README.md->../../.github/instructions/posts.instructions.md",
+          "path": ".crush/workflows/templates/README.md",
+          "message": "`.crush/workflows/templates/README.md` links to `../../.github/instructions/posts.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../.github/instructions/posts.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/templates/README.md->../../.github/instructions/quest.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/templates/README.md->../../.github/instructions/quest.instructions.md",
+          "path": ".crush/workflows/templates/README.md",
+          "message": "`.crush/workflows/templates/README.md` links to `../../.github/instructions/quest.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../.github/instructions/quest.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.crush/workflows/templates/README.md->../../.github/prompts/README.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".crush/workflows/templates/README.md->../../.github/prompts/README.md",
+          "path": ".crush/workflows/templates/README.md",
+          "message": "`.crush/workflows/templates/README.md` links to `../../.github/prompts/README.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../.github/prompts/README.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:.devcontainer/README.md->.github/copilot-instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": ".devcontainer/README.md->.github/copilot-instructions.md",
+          "path": ".devcontainer/README.md",
+          "message": "`.devcontainer/README.md` links to `.github/copilot-instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": ".github/copilot-instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:TODO/README.md->./todo.instructions.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "TODO/README.md->./todo.instructions.md",
+          "path": "TODO/README.md",
+          "message": "`TODO/README.md` links to `./todo.instructions.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "./todo.instructions.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:TODO/links/README.md->../../actions/workflows/link-checker.yml",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "TODO/links/README.md->../../actions/workflows/link-checker.yml",
+          "path": "TODO/links/README.md",
+          "message": "`TODO/links/README.md` links to `../../actions/workflows/link-checker.yml`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../actions/workflows/link-checker.yml"
+          }
+        },
+        {
+          "key": "D8:it-journey:scripts/core/README.md->../deployment/README.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "scripts/core/README.md->../deployment/README.md",
+          "path": "scripts/core/README.md",
+          "message": "`scripts/core/README.md` links to `../deployment/README.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../deployment/README.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/README.md->../pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/README.md->../pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md",
+          "path": "test/README.md",
+          "message": "`test/README.md` links to `../pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../pages/_quests/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0000/README.md->../../pages/_quests/0000/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0000/README.md->../../pages/_quests/0000/",
+          "path": "test/quest-solutions/0000/README.md",
+          "message": "`test/quest-solutions/0000/README.md` links to `../../pages/_quests/0000/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0000/"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0001/README.md->../../pages/_quests/0001/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0001/README.md->../../pages/_quests/0001/",
+          "path": "test/quest-solutions/0001/README.md",
+          "message": "`test/quest-solutions/0001/README.md` links to `../../pages/_quests/0001/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0001/"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0010/README.md->../../pages/_quests/0010/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0010/README.md->../../pages/_quests/0010/",
+          "path": "test/quest-solutions/0010/README.md",
+          "message": "`test/quest-solutions/0010/README.md` links to `../../pages/_quests/0010/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0010/"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0010/README.md->../../pages/_quests/0010/oh-my-zsh-terminal-enchantment.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0010/README.md->../../pages/_quests/0010/oh-my-zsh-terminal-enchantment.md",
+          "path": "test/quest-solutions/0010/README.md",
+          "message": "`test/quest-solutions/0010/README.md` links to `../../pages/_quests/0010/oh-my-zsh-terminal-enchantment.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0010/oh-my-zsh-terminal-enchantment.md"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0011/README.md->../../pages/_quests/0011/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0011/README.md->../../pages/_quests/0011/",
+          "path": "test/quest-solutions/0011/README.md",
+          "message": "`test/quest-solutions/0011/README.md` links to `../../pages/_quests/0011/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0011/"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0100/README.md->../../pages/_quests/0100/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0100/README.md->../../pages/_quests/0100/",
+          "path": "test/quest-solutions/0100/README.md",
+          "message": "`test/quest-solutions/0100/README.md` links to `../../pages/_quests/0100/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0100/"
+          }
+        },
+        {
+          "key": "D8:it-journey:test/quest-solutions/0101/README.md->../../pages/_quests/0101/",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "it-journey",
+          "subject": "test/quest-solutions/0101/README.md->../../pages/_quests/0101/",
+          "path": "test/quest-solutions/0101/README.md",
+          "message": "`test/quest-solutions/0101/README.md` links to `../../pages/_quests/0101/`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../../pages/_quests/0101/"
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1786,
+          "summary": "How to work in it-journey, the GitHub Pages Jekyll site behind it-journey.dev: commands, layout, quest and frontmatter rules, and the Warden Pact every agent obeys.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 6083,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "words": 966,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 501,
+          "summary": "How to contribute to IT-Journey — the five-minute first pull request, the branch-commit-PR workflow, the local gates to run first, and where the detailed standards live.",
+          "source": "front-matter"
+        },
+        {
+          "path": "PRD.md",
+          "words": 1463,
+          "summary": "Product requirements for IT-Journey, an open-source educational platform with gamified quests, practical tutorials, and AI-enhanced learning",
+          "source": "front-matter"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 90,
+          "summary": "Supported versions and how to report a vulnerability privately.",
+          "source": "well-known"
+        },
+        {
+          "path": "docs/CONTRIBUTING_DEVELOPER.md",
+          "words": 937,
+          "summary": "The full contribution workflow for developers and AI agents — fork and sync, branch naming, commit format, code and markdown standards, testing requirements and the pull-request checklist (last revised 2025-10).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ROADMAP.md",
+          "words": 3389,
+          "summary": "The 2024–2026 master roadmap: the four learning realms (QuickStart, Journey, Library, Notebook — three since retired), beginner-to-expert paths and the Q1 2026 priorities; kept for history, not maintained.",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 152,
+          "summary": "How this repository records hard-to-reverse decisions as numbered ADRs — the format, required sections and status values — and the index of every ADR.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/agents/README.md",
+          "words": 383,
+          "summary": "How this repository grades its agents with machine-verifiable gates, runs a root-cause analysis before any re-run, and logs every instruction change (GH-600 Domain 4).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture/JEKYLL_IMPLEMENTATION.md",
+          "words": 1141,
+          "summary": "How Jekyll is configured here — versions, collections, plugins, markdown processing, the remote theme, layouts, includes, data files and the build (last revised 2025-10; parts still describe the removed posts and docs collections).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture/REPOSITORY_STRUCTURE.md",
+          "words": 1157,
+          "summary": "A directory-by-directory tour of the repository with its naming conventions and content-organization principles (last revised 2025-10; the AGENTS.md **Layout** table is the current map).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/cms/BRANDING_GOVERNANCE_PLAN.md",
+          "words": 2892,
+          "summary": "The brand store in `_data/brand/`, its per-section guides, the skill, prompts and instructions that load it, and the `.cms` brand-drift scoring — a shipped plan, since narrowed from posts to quests and docs.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/cms/EXTENSION_DESIGN.md",
+          "words": 1024,
+          "summary": "The design and stable data contract for the separate VS Code CMS extension that reads this repository's `.cms/` index, reports and worklists.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/git-archaeology/README.md",
+          "words": 181,
+          "summary": "Bounded retrospectives of this repository's own Git history — one evidence index per commit range, with the published reading at /digs/.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/notes/WORKBENCH.md",
+          "words": 1188,
+          "summary": "The design of the interactive /notes/ board: local notes, site-wide snippet clipping, and the public/private split.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/prose-oneline-universal.md",
+          "words": 1123,
+          "summary": "How the oneline prose rule is enforced everywhere — CI backstop, hub auto-fix, the shared AI runner, a Claude Code hook, and a pre-commit hook.",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/quests/CHARACTER_SKILLS.md",
+          "words": 844,
+          "summary": "The six per-character skill sheets the quest-perfection loop role-plays — persona, voice and per-level exercises — and the generator that keeps their roadmaps in step with the character paths.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/quests/ENVIRONMENT_MATRIX.md",
+          "words": 929,
+          "summary": "The quest `environment:` contract — OS, shell, editor, package manager and project folder as declared data — and how the page control, the step planner and validation consume it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/quests/LOOP_VS_VIDEO.md",
+          "words": 854,
+          "summary": "A side-by-side run of the quest-perfection loop and the walkthrough video it produced, showing where the two must agree and what each medium is for.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/quests/QUEST_BUILD_PLAN.md",
+          "words": 2856,
+          "summary": "Comprehensive plan for building all placeholder quests across all levels with complete linking and mapping",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/quests/VIDEO_FRAMEWORK.md",
+          "words": 1917,
+          "summary": "The VIDEO lane of the quest-perfection loop: recording a verified quest run side by side, publishing it to YouTube, referencing it from the quest page, and whole-stack capture.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/make-targets.md",
+          "words": 1196,
+          "summary": "Every `make` target in the Makefile — the ones `make help` lists, in its groups, then the rest — generated from the Makefile itself.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/workflows.md",
+          "words": 1102,
+          "summary": "Every GitHub Actions workflow in this repository — its triggers, cron schedules, kill-switch variables and how it calls a model — generated from the workflow files.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/scripts/PRD_MACHINE.md",
+          "words": 1423,
+          "summary": "The PRD Machine (`scripts/prd-machine/`), which distills repository signals into `PRD.md` — its architecture, setup, CLI, signal sources, CI integration and configuration.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/scripts/SCRIPTS_GUIDE.md",
+          "words": 857,
+          "summary": "What the automation scripts under `scripts/` do and how to run them, plus the conventions for writing new ones (last revised 2025-10; `scripts/README.md` is the maintained index).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/setup/DEVELOPMENT_ENVIRONMENT.md",
+          "words": 628,
+          "summary": "Step-by-step local setup — prerequisites, Ruby or Docker, IDE and environment variables — with common development tasks and troubleshooting (last revised 2025-10).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/setup/POSTHOG_ANALYTICS.md",
+          "words": 468,
+          "summary": "How the Ruby SEO and content scripts emit optional PostHog run events, which events they send, and how to enable and verify them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/standards/CONTENT_GUIDELINES.md",
+          "words": 986,
+          "summary": "Writing style, markdown conventions and document structures for repository docs, tutorials and quests (last revised 2025-10).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/standards/FRONTMATTER_STANDARDS.md",
+          "words": 895,
+          "summary": "Required and optional frontmatter fields per content type, with the date, list and quoting rules and the common mistakes (last revised 2025-10; AGENTS.md and the validators are authoritative).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/testing/TESTING_FRAMEWORKS.md",
+          "words": 836,
+          "summary": "The repository's test and validation tools — the Hyperlink Guardian link checker and the quest validator — and how to run them locally and in CI (last revised 2025-10).",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "law-ai": {
+      "repo": "bamr87/law-ai",
+      "url": "https://github.com/bamr87/law-ai",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "60fb8b91a7e9",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1901,
+        "README.md": 931,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G1:law-ai:CONTRIBUTING.md",
+          "check": "G1",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "law-ai",
+          "subject": "CONTRIBUTING.md",
+          "path": null,
+          "message": "No CONTRIBUTING.md",
+          "remedy": "Add CONTRIBUTING.md at the repository root.",
+          "component": "",
+          "evidence": {
+            "kind": "app",
+            "tier": "expected"
+          }
+        },
+        {
+          "key": "G10:law-ai:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "law-ai",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1901,
+          "summary": "How to build Law AI — an open-source, agent-orchestrated legal-intelligence platform — with the exact commands, layout, rules and gates every agent and contributor follows.",
+          "source": "blockquote"
+        },
+        {
+          "path": "BACKLOG.md",
+          "words": 27351,
+          "summary": "Law AI's backlog of record: append-only `BL-YYYYMMDD-NN` follow-ups in Open, Claimed and Done, linted by `scripts/backlog_lint.py`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 229,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 3697,
+          "summary": "The product requirements for Law AI — problem, users, goals, prioritized features, agent specifications, UX and the roadmap; open work is tracked in BACKLOG.md.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 322,
+          "summary": "The index and format of Law AI's Architecture Decision Records — the decisions that amend or deviate from the constitution.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/agent-roles.md",
+          "words": 2201,
+          "summary": "Every agent that exists or is planned — its status (Live, Stub, Not started), responsibilities, tools and the module that implements it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ao-sdlc-guide.md",
+          "words": 2280,
+          "summary": "The AO-SDLC operating guide (v2.0): the spec-driven loop, governance, runtime chain, gates and observability as this repository actually enforces them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ao-sdlc.md",
+          "words": 1922,
+          "summary": "How each AO-SDLC phase maps onto this repository's prompts, specs, agents, scripts and CI jobs, and the autonomy level it runs at.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/api-examples.md",
+          "words": 816,
+          "summary": "Copy-paste `curl` examples for the public REST endpoints, with the per-scope API keys each router checks.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture.md",
+          "words": 3619,
+          "summary": "The system diagram, component responsibilities, data flow, autonomy loop, scanned-page intake, LSAT delivery channel and the rationale behind each technology choice.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/constitution.md",
+          "words": 2827,
+          "summary": "The rules every spec, plan and PR must satisfy to be valid — mission, locked stack, quality gates, provenance, HITL, testing, security, autonomy invariants and jurisprudential honesty.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/data-model.md",
+          "words": 4598,
+          "summary": "The Neo4j knowledge-graph schema — nodes, relationships and mandatory provenance properties — and the Postgres quarantine that ingestion writes to.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/data-sources.md",
+          "words": 1682,
+          "summary": "The open legal corpora Law AI ingests — URL, license, auth, rate limit and status for each — with a sample command for every ingester.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/django-conventions.md",
+          "words": 2097,
+          "summary": "How to work inside the `backend/law_ai/` Django package: the settings split, async ORM discipline, Channels routing, Celery naming, migration gotchas and strict typing.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/e2e-testing.md",
+          "words": 1663,
+          "summary": "The browser end-to-end harness: what the Playwright suite covers that the jsdom unit tests cannot, how to run it, and what it deliberately does not do.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/law-ai-proposal.md",
+          "words": 2229,
+          "summary": "The original April 2026 technical proposal, kept as a historical record — its architecture section is out of date, so read architecture.md for the current system.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/legalbench.md",
+          "words": 2610,
+          "summary": "How the LegalBench harness runs and scores the tracked subsets, how the real data is cached, and how the baseline and regression gate decide a pass.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/llm-provider-chain.md",
+          "words": 1361,
+          "summary": "Reference for `law_ai.core.llm`: how the ordered provider chain picks a tier and audits every call, and how the Claude, xAI and Ollama tiers are configured.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/local-ai.md",
+          "words": 4539,
+          "summary": "The operator manual for the local AI substrate — Ollama, LangGraph checkpointers and Phoenix — across laptop, GPU workstation, server and air-gapped installs.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-answer-shuffling.md",
+          "words": 946,
+          "summary": "Why and how a served LSAT question's answer choices are permuted per attempt and graded back through a signed token, on the platform and the static site.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-library.md",
+          "words": 2403,
+          "summary": "The LSAT knowledge library: where articles and the concept catalog live, the entry template and Markdown dialect, search, and the maintenance loop.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-playbooks.md",
+          "words": 1171,
+          "summary": "LSAT question-type playbooks: how each type is recognised and solved, how bank items get their type stamp, and the Diagnose-first exercise, contrast variations and judge-driven rewrites built on them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-solve-guides.md",
+          "words": 583,
+          "summary": "The solve-guide runbook: what a guide is, where it lives, and how guides are backfilled, judged and promoted through the review queue.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-static.md",
+          "words": 1173,
+          "summary": "The architecture of the static LSAT site — how practice content reaches the GitHub Pages export, what gates it, and which specs shaped it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/lsat-synthesis.md",
+          "words": 4332,
+          "summary": "The deterministic item-synthesis engine: skeletons whose keys a finite-model checker proves, domain packs that vary the surface, and difficulty that is measured rather than declared.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/nextjs-scoped-app-shell-architecture.md",
+          "words": 1890,
+          "summary": "A generic Next.js design for an enterprise app shell over hierarchical, inheritable settings scopes — the essay spec 040 adapted, not a plan to implement as written.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/philosophy.md",
+          "words": 2005,
+          "summary": "What we believe law *is*, what that makes a legal-intelligence system responsible for, and which of those beliefs are binding rules rather than opinions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/http-routes.md",
+          "words": 1739,
+          "summary": "Every route the Django backend serves, grouped by mount, with the methods its view defines and the first line of the view's docstring — generated from the URLconf.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/make-targets.md",
+          "words": 1612,
+          "summary": "Every `make` target in the Makefile, grouped as `make help` groups them, with the VS Code task that runs it — generated from the Makefile and `.vscode/tasks.json`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/related-github-repos.md",
+          "words": 2390,
+          "summary": "Open-source projects, by category, that Law AI can build on for agents, legal NLP, knowledge graphs, GraphRAG, data pipelines, benchmarks and visualization.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/security.md",
+          "words": 3811,
+          "summary": "The API-token and session model that gates the `/api/*` routers: threat model, scope matrix, token lifecycle, rate limits, auditability and the production hardening checklist.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ui-ux-review.md",
+          "words": 2697,
+          "summary": "The repeatable UI/UX review pass — the rubric, what counts as visual evidence, and the mechanical `ux_audit.py` contract each fix is promoted into.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ui-ux.md",
+          "words": 4417,
+          "summary": "Every user-facing surface, what actually ships versus what docs once claimed, the token and component inventory, and the design-system contract new UI follows.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "lifehacker.dev": {
+      "repo": "bamr87/lifehacker.dev",
+      "url": "https://github.com/bamr87/lifehacker.dev",
+      "kind": "site",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "97bf60f0685d",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1719,
+        "README.md": 1020,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1719,
+          "summary": "How to work in lifehacker.dev, the self-publishing Jekyll site whose repository is its CMS: the commands, the layout, the content gates and the rules an agent must not break.",
+          "source": "blockquote"
+        },
+        {
+          "path": "AI_USAGE.md",
+          "words": 175,
+          "summary": "What the AI fleet has spent: model calls, output tokens and API-equivalent cost by time window, workflow and pull request.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 209,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 455,
+          "summary": "The product requirements for lifehacker.dev — problem, users, goals and non-goals, current features, requirements and proposed success metrics.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SITE_HEALTH.md",
+          "words": 306,
+          "summary": "The latest triage run's ranked queue of site-health findings — counts by severity and route, then the top of the queue.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/AI-USAGE.md",
+          "words": 1329,
+          "summary": "How every model call in the repo is metered — what the cost numbers mean, how records flow from capture to the public ledger, the audit checks that keep metering wired, and its known gaps.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 853,
+          "summary": "The map of the autopilot: the closed Test → Report → Balance loop, the contracts between its layers, the invariants enforced in code, and how to extend it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/AUTOPILOT.md",
+          "words": 1279,
+          "summary": "How to run, schedule and steer the Claude Code autopilot that writes this site: the data that drives it, one assisted cycle, the guardrails, the switches and the loop's memory.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CICD.md",
+          "words": 2683,
+          "summary": "How the workflows gate, test and ship this site: the tiered `verify` pipeline, change-type routing, the autonomous content factory and its switches, token hygiene, and the one AI runner every lane shares.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONTENT_IMPORT.md",
+          "words": 2508,
+          "summary": "The record of the it-journey → lifehacker.dev content import (PR #55): which of the 110 imported files are rewritten, in which batches, and why the rest were skipped.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/GIT-WITH-THE-PROGRAM.md",
+          "words": 446,
+          "summary": "How to draft a Git With the Program Field Note — a repository's real history told as comedy — from an evidence bundle, and what a draft must carry before a human may publish it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/PREVIEW-IMAGES.md",
+          "words": 3127,
+          "summary": "How cover art is made: the Trace Bloom generator, the Claude-drawn illustration layer, the contracts and gate that keep every banner unique, the weekly-epic figures and the opt-in xAI covers.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/RETROSPECTIVE-HOOK.md",
+          "words": 1268,
+          "summary": "How every finished Claude Code thread gets queued and later published as an honest Field Note — the flow, its components, how to enable, run and maintain it, and the design trade-offs.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/RETROSPECTIVE.md",
+          "words": 1103,
+          "summary": "How the autopilot that runs this site was built: what got built, the four bugs the harness caught on its first run, the deviations from the design, and the lessons for the next site that copies it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/TRACE-BLOOM.md",
+          "words": 1664,
+          "summary": "The algorithmic philosophy behind the cover art — what each banner draws, why it is computed from its own article, and which parameters a human or an agent may turn.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 145,
+          "summary": "Where the hard-to-reverse decisions for lifehacker.dev are recorded, the ADR format, and the index of every record.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/github-pages-custom-domain.md",
+          "words": 5672,
+          "summary": "A reproducible walkthrough for publishing a zer0-mistakes Jekyll site on GitHub Pages at your own apex domain — scaffold, push, DNS, the first-build `include_cached` fix and enforced HTTPS.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/journey/README.md",
+          "words": 398,
+          "summary": "The honest, behind-the-scenes log of turning a five-file remote-theme starter into a real site run by a robot. The *published*, funnier versions of these stories live in the [Field Notes](https://lifehacker.dev/news/field-notes/); this…",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/proposals/common-framework.md",
+          "words": 2356,
+          "summary": "A cross-repo proposal (2026-09-08): what six surveys of eleven fleet repos found, one canonical home per layer, the shared conventions and kits, and the pull-request series that moves the fleet there.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/proposals/mcp-integration.md",
+          "words": 4080,
+          "summary": "A draft proposal for exposing the whole site to any AI over the Model Context Protocol — review, explore, query and evolve it — without creating a self-merge loophole.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/workflows.md",
+          "words": 989,
+          "summary": "Every GitHub Actions workflow in `.github/workflows/` — its triggers, kill switch, repository variables and secrets — generated from the workflow files themselves.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/runbook-fleet.md",
+          "words": 1239,
+          "summary": "One-time setup and day-to-day operation of the autonomy fleet: the bot identity, branch protection, secrets, running the harness, triage, orchestration and the kill switches.",
+          "source": "blockquote"
+        },
+        {
+          "path": "mcp/lifehacker-read/README.md",
+          "words": 542,
+          "summary": "The read-only MCP server that exposes the site as a queryable resource tree: what it serves, how to run it and wire it into a client, and what it deliberately leaves out.",
+          "source": "blockquote"
+        },
+        {
+          "path": "scripts/ai/README.md",
+          "words": 707,
+          "summary": "This repo's half of the fleet `ai-runner` kit: how every model call reaches the hub's `claude-run` runner, the metering scripts that live here, the runner's contract, and how a sibling repo adopts the kit.",
+          "source": "blockquote"
+        },
+        {
+          "path": "scripts/media/README.md",
+          "words": 343,
+          "summary": "The weekly epic's in-body media: deterministic figures computed from the week's publications, and the opt-in AI-painted hero image.",
+          "source": "blockquote"
+        },
+        {
+          "path": "scripts/preview/README.md",
+          "words": 474,
+          "summary": "The dependency-free Trace Bloom banner renderer: how to run it, what it writes, and the rules for changing it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/README.md",
+          "words": 90,
+          "summary": "The operator tools vendored into this repository; none of them ship to the site.",
+          "source": "blockquote"
+        },
+        {
+          "path": ".github/site-quality/README.md",
+          "words": 556,
+          "summary": "What the advisory site-quality check measures on every site PR — Lighthouse CI, axe and pa11y against a locally served safe-mode build — and how to tighten its levels.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "ocrmd": {
+      "repo": "bamr87/ocrmd",
+      "url": "https://github.com/bamr87/ocrmd",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "359791bd4657",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1998,
+        "README.md": 944,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:ocrmd:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "ocrmd",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1998,
+          "summary": "A webcam, image and PDF book scanner that reads every page twice — local OCR and a vision LLM — and diffs the readings into cross-checked Markdown with a searchable inventory.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 6231,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 418,
+          "summary": "What ocrmd is for and whom it serves: the problem, users, goals and non-goals, current features, requirements, proposed success metrics and open questions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 12479,
+          "summary": "The design, module by module, with the measurement behind each default: capture and the auto-shutter, preprocessing, local OCR and the LLM pass, reconciliation, the page format, storage, concurrency, and the build history.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 144,
+          "summary": "Every hard-to-reverse decision made for ocrmd, one record each, and the format a new record follows.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/corpus.md",
+          "words": 647,
+          "summary": "What to do with pages once they are scanned: the SQLite inventory and full-text search, the four export formats, and structured-data extraction with `ocrmd etl`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/integrations.md",
+          "words": 445,
+          "summary": "How a page leaves ocrmd: the sink contract a receiver speaks (law-ai is the worked example), and `ocrmd.api.Library` for embedding the whole pipeline in another program.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/operations.md",
+          "words": 394,
+          "summary": "Running ocrmd day to day — degraded mode, costs, camera drop-outs, health checks, upgrades, logs, sharing one root — and debugging it in VS Code.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/output.md",
+          "words": 500,
+          "summary": "What ocrmd writes under its root, what each page's verification status means and what to do about it, and which of your edits survive a re-run.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/cli.md",
+          "words": 3549,
+          "summary": "Every `ocrmd` command, argument and option with its default — read from the typer app in `ocrmd/cli.py`, so it cannot drift from the code.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/settings.md",
+          "words": 2137,
+          "summary": "Every `Settings` field in `ocrmd/config.py` — its `OCRMD_*` environment variable, type, built-in default and the note written beside it in the source.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/round-trip.md",
+          "words": 453,
+          "summary": "`ocrmd reconstruct` rebuilds each page from its Markdown and scores it against the photograph; `ocrmd annotate` folds pen and highlighter marks made on scanned paper back into the Markdown.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/scanning.md",
+          "words": 2394,
+          "summary": "How to set up the camera rig, read the scan window, get captures the OCR can use, and tune the auto-shutter — with the measurement behind each default.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/setup.md",
+          "words": 412,
+          "summary": "What a working install needs beyond `pip install`: macOS camera permission, Claude credentials and which models they reach, the local OCR engines, and where settings come from.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/web-ui.md",
+          "words": 494,
+          "summary": "What each view of `ocrmd serve` shows and does — library, scan, documents, page, jobs and settings — and the rules it shares with the CLI.",
+          "source": "blockquote"
+        },
+        {
+          "path": "examples/captures/README.md",
+          "words": 226,
+          "summary": "Real webcam frames and two generated PDFs from this project's own scans, for trying the pipeline without a camera — and what each one exercises.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "outbox": {
+      "repo": "bamr87/outbox",
+      "url": "https://github.com/bamr87/outbox",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "40afa5d2b1e6",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 774,
+        "README.md": 727,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:outbox:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "outbox",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 774,
+          "summary": "How to work in outbox, the three-agent competitive outbox harness: the exact commands, the layout, the trial and relay rules the code enforces, and the conventions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 147,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 337,
+          "summary": "The product requirements for outbox: the problem, its users, goals and non-goals, the protocol and scoring requirements, proposed success metrics and open questions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SCHEMA.md",
+          "words": 222,
+          "summary": "Where each kind of file lives in this repository, what is forbidden there, and the rule for adding a directory.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 130,
+          "summary": "Decisions for outbox that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/cli.md",
+          "words": 340,
+          "summary": "Every `outbox` subcommand with its flags and defaults, generated from the argparse parser in `src/outbox/cli.py`.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "rewind-arcade": {
+      "repo": "bamr87/rewind-arcade",
+      "url": "https://github.com/bamr87/rewind-arcade",
+      "kind": "game",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "54eba7ed4b2c",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 905,
+        "README.md": 861,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 905,
+          "summary": "A three-pillar retro gaming monorepo: play browser recreations (`arcade/`), emulate consoles with ES-DE and RetroArch (`emulate/`), and catalog the physical collection (`catalog/`), all on one set of system ids.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 194,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 343,
+          "summary": "The product requirements for Rewind Arcade: problem, users, goals and non-goals, features, requirements and proposed success measures.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 151,
+          "summary": "The index and format of rewind-arcade's architecture decisions — the choices that are hard to reverse, recorded in the PR that makes them.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/architecture.md",
+          "words": 375,
+          "summary": "How the three pillars share system ids and stay decoupled, what each pillar owns, and the steps for adding a game, a console or a platform.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/formats.md",
+          "words": 491,
+          "summary": "Cartridge, disc, floppy, tape, PCB and software: how each kind of media is treated as a first-class field next to the system id.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/getting-started.md",
+          "words": 359,
+          "summary": "Play, emulate and catalog from a fresh clone: the three entry points, in order, and what each needs on your machine.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/legal.md",
+          "words": 229,
+          "summary": "What this repository ships, what it downloads, and what it refuses to (games, BIOS images, dumps).",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/systems/README.md",
+          "words": 138,
+          "summary": "Every platform id this monorepo knows and which pillar supports it, generated from `systems/registry.yaml`, with links to the per-family encyclopedia pages.",
+          "source": "blockquote"
+        },
+        {
+          "path": "arcade/README.md",
+          "words": 3977,
+          "summary": "The browser pillar: an ES-DE-style frontend with original game recreations, an in-browser console loader for dumps you own, and a browser for cartidx catalog exports, all static with no backend.",
+          "source": "blockquote"
+        },
+        {
+          "path": "emulate/README.md",
+          "words": 866,
+          "summary": "The emulation pillar: one tree that installs, configures and maintains ES-DE, RetroArch and libretro cores on macOS, Raspberry Pi and Debian from declarative per-console manifests.",
+          "source": "blockquote"
+        },
+        {
+          "path": "catalog/README.md",
+          "words": 1138,
+          "summary": "The catalog pillar: the titles you track, the cartridges on the shelf and optional dump file references, identified and priced in one SQLite catalog with a browser for analytics.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "scripts": {
+      "repo": "bamr87/scripts",
+      "url": "https://github.com/bamr87/scripts",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "7a5db8780899",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 773,
+        "README.md": 1153,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:scripts:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "scripts",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 773,
+          "summary": "Standalone Bash utilities (plus one Python tool) for project scaffolding, GitHub repository management and multi-repo maintenance.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 198,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 354,
+          "summary": "The product requirements for bamr87/scripts: the problem, users, goals, features, requirements, success measures and open questions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 401,
+          "summary": "Which version is supported (the tip of main) and how to report a vulnerability privately.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 147,
+          "summary": "The architecture decision log for this repo: when to write an ADR, the format, and the list of decisions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/rename-directory-quick-reference.md",
+          "words": 315,
+          "summary": "How to use rename-directory.sh: common renames, the pre-flight checks and prompts, what is preserved, follow-up steps and recovering from a backup.",
+          "source": "blockquote"
+        },
+        {
+          "path": "FORKME/README.md",
+          "words": 204,
+          "summary": "ForkMe at a glance: what it does, its prerequisites, a quick start, and where each ForkMe document lives.",
+          "source": "blockquote"
+        },
+        {
+          "path": "STASHME/README.md",
+          "words": 339,
+          "summary": "StashMe at a glance: what it does, how it works, its use cases, and where each StashMe document lives.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/README.md",
+          "words": 75,
+          "summary": "The maintenance tools in tools/, both vendored from the hub, and what each one does.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "vs-sonic-pi": {
+      "repo": "bamr87/vs-sonic-pi",
+      "url": "https://github.com/bamr87/vs-sonic-pi",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "0e182e2cbf7e",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 897,
+        "README.md": 1196,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 897,
+          "summary": "Sonic Pi for VS Code, an extension to write and perform Sonic Pi music live over OSC — the commands, layout, conventions and module rules for working on it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "words": 722,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 366,
+          "summary": "How to set up, build, test and lint the extension locally, and the branch, commit and pull request conventions for contributing.",
+          "source": "blockquote"
+        },
+        {
+          "path": "PRD.md",
+          "words": 3434,
+          "summary": "The product requirements for the Sonic Pi VS Code extension: vision and goals, users, functional requirements by phase, architecture, module specifications, data models, UX, the phased delivery plan and the testing strategy.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 235,
+          "summary": "Which versions receive security fixes, how to report a vulnerability privately, and the extension's local security surface.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/00-architecture.md",
+          "words": 359,
+          "summary": "How the extension's functional components fit together: the component map, a reading order for the design documents, and the cross-cutting disposable, error-reporting and event-flow patterns.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/01-osc-transport.md",
+          "words": 894,
+          "summary": "`OscTransport`, the low-level OSC-over-UDP send/receive layer that wraps `node-osc` and carries all of the extension's network I/O.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/02-connection-manager.md",
+          "words": 814,
+          "summary": "`ConnectionManager`, the state machine for the connection lifecycle (Disconnected → Connecting → Connected → Disconnecting) that orchestrates port discovery, handshake, heartbeat and health monitoring.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/03-command-handler.md",
+          "words": 971,
+          "summary": "`CommandHandler`, which maps VS Code commands (Run, Stop, Record, Beautify and the rest) to OSC messages, reads editor state, guards against a disconnected server and handles responses.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/04-language-provider.md",
+          "words": 1298,
+          "summary": "The language support for `.spi` files: TextMate syntax highlighting, code snippets, IntelliSense completions, hover documentation and inline error diagnostics.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/05-log-manager.md",
+          "words": 1044,
+          "summary": "`LogManager`, which receives `/multi_message`, `/info` and `/error` from the server and renders them in a VS Code Output channel with timestamps, type prefixes and log-level filtering.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/06-status-bar.md",
+          "words": 505,
+          "summary": "`StatusBarManager`, the persistent status bar indicator that shows the connection state and connects or disconnects on click.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/07-config-manager.md",
+          "words": 435,
+          "summary": "`ConfigManager`, typed and validated access to every `sonicpi.*` setting, with change events so modules can react without a restart.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/08-daemon-spawner.md",
+          "words": 1055,
+          "summary": "`PortDiscovery`, which finds the ports the Sonic Pi server is using (port file, config, defaults), and `DaemonSpawner`, which can start `daemon.rb` without the Qt GUI.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/09-sonic-pi-codebase-analysis.md",
+          "words": 3440,
+          "summary": "A reference analysis of the forked Sonic Pi repository that catalogues every library, data file and protocol detail the extension can use or integrate.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/10-codespaces-support.md",
+          "words": 332,
+          "summary": "Running the extension in GitHub Codespaces: remote/container environment detection, the devcontainer's headless audio stack, streamed audio playback and stale port-file recovery.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/commands.md",
+          "words": 270,
+          "summary": "Every command the *Sonic Pi for VS Code* extension contributes, with its ID, when the Command Palette offers it and which menus show it, generated from `package.json` `contributes.commands`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/keybindings.md",
+          "words": 90,
+          "summary": "Every default keyboard shortcut the *Sonic Pi for VS Code* extension contributes, with the command it runs and when it is active, generated from `package.json` `contributes.keybindings`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/settings.md",
+          "words": 255,
+          "summary": "Every setting the *Sonic Pi for VS Code* extension contributes, with its type, default and allowed values, generated from `package.json` `contributes.configuration`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/user-manual.md",
+          "words": 1476,
+          "summary": "How to install, connect and use the extension — editor features, connection states, commands, configuration, the built-in tutorial, examples, recording and troubleshooting.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "zer0-CMS": {
+      "repo": "bamr87/zer0-CMS",
+      "url": "https://github.com/bamr87/zer0-CMS",
+      "kind": "app",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "12daad4f527a",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 3293,
+        "README.md": 2000,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "~",
+        "DOC-01": "~"
+      },
+      "findings": [
+        {
+          "key": "G10:zer0-CMS:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "D8:zer0-CMS:sites/2005/README.md->seed.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "sites/2005/README.md->seed.md",
+          "path": "sites/2005/README.md",
+          "message": "`sites/2005/README.md` links to `seed.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "seed.md"
+          }
+        },
+        {
+          "key": "D8:zer0-CMS:sites/2005/telemetry/README.md->../.github/workflows/telemetry.yml",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "sites/2005/telemetry/README.md->../.github/workflows/telemetry.yml",
+          "path": "sites/2005/telemetry/README.md",
+          "message": "`sites/2005/telemetry/README.md` links to `../.github/workflows/telemetry.yml`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../.github/workflows/telemetry.yml"
+          }
+        },
+        {
+          "key": "D8:zer0-CMS:sites/zer0-pages/PRD.md->./barodybroject-prd.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "sites/zer0-pages/PRD.md->./barodybroject-prd.md",
+          "path": "sites/zer0-pages/PRD.md",
+          "message": "`sites/zer0-pages/PRD.md` links to `./barodybroject-prd.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "./barodybroject-prd.md"
+          }
+        },
+        {
+          "key": "D8:zer0-CMS:sites/zer0-pages/PRD.md->./githubai-prd.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "sites/zer0-pages/PRD.md->./githubai-prd.md",
+          "path": "sites/zer0-pages/PRD.md",
+          "message": "`sites/zer0-pages/PRD.md` links to `./githubai-prd.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "./githubai-prd.md"
+          }
+        },
+        {
+          "key": "D8:zer0-CMS:sites/zer0-pages/PRD.md->./zer0-mistakes-prd.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-CMS",
+          "subject": "sites/zer0-pages/PRD.md->./zer0-mistakes-prd.md",
+          "path": "sites/zer0-pages/PRD.md",
+          "message": "`sites/zer0-pages/PRD.md` links to `./zer0-mistakes-prd.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "./zer0-mistakes-prd.md"
+          }
+        },
+        {
+          "key": "DOC-08:zer0-CMS:budget-AGENTS.md",
+          "check": "DOC-08",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "zer0-CMS",
+          "subject": "budget-AGENTS.md",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md is 3293 words (budget 2000) (waived under Standard deviations)",
+          "remedy": "Move deep dives into docs/ and link them.",
+          "component": "",
+          "evidence": {
+            "words": 3293
+          }
+        },
+        {
+          "key": "DOC-01:zer0-CMS:repeat-05ed252e54ed",
+          "check": "DOC-01",
+          "class": "alignment",
+          "severity": "info",
+          "repo": "zer0-CMS",
+          "subject": "repeat-05ed252e54ed",
+          "path": null,
+          "message": "The same paragraph appears in AGENTS.md, docs/adr/0006-one-python-platform.md",
+          "remedy": "Keep it in its one home and link to it from the others.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "AGENTS.md",
+              "docs/adr/0006-one-python-platform.md"
+            ],
+            "excerpt": "Hand-edit a generated file tree (a site's exported source, a book's `library/<slug>/`) as if it were the source. Edit in the platform; the files are regenerated"
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 3293,
+          "summary": "How to work in zer0-CMS while it becomes one Python platform with a React frontend (ADR 0006): the target and what an agent must not do, the commands, the layout, the conventions, the platform boundary and the invariants today's build…",
+          "source": "blockquote"
+        },
+        {
+          "path": "ATTRIBUTION.md",
+          "words": 299,
+          "summary": "Where zer0-CMS came from — a fork of Front Matter CMS, since rewritten from scratch — what of its design remains, and the MIT notice that covers it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 5644,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "words": 710,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "words": 647,
+          "summary": "How to set up, the rules the build enforces, style, tests, and how to report a problem — for anyone sending a change to zer0-CMS.",
+          "source": "blockquote"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 387,
+          "summary": "Supported versions and how to report a vulnerability privately.",
+          "source": "well-known"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "words": 6078,
+          "summary": "The design decisions D1–D17 and why the code follows them: the `src/core` layer boundary, the five bundles, the webview contract, the ledger, the Fleet console's guards, and the shared-files boundary with the Rails CMS.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CICD.md",
+          "words": 1695,
+          "summary": "Every workflow and what its green means, the reusable doctor, the commands to run before a PR, and the specs CI actually pins.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/CONFIG.md",
+          "words": 8457,
+          "summary": "Every configuration key: the three layers and their precedence, all of `zer0.json`, every `zer0Cms.*` setting (generated from `package.json`), the placeholder tokens, and which layer a decision belongs in.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/DISTRIBUTION.md",
+          "words": 3575,
+          "summary": "The governed LinkedIn lane — queue, brand guard, human approval, ledger and the reusable workflow — that carries a site's content to LinkedIn and its aggregate response back.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/MONOREPO.md",
+          "words": 2273,
+          "summary": "Every project under `packages/`, `sites/` and `apps/` — the sources the platform is absorbing (ADR 0006) — how `workspace.yml` and `bin/zer0` manage them as one repository, how they were imported with their history, and what still runs…",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/PLATFORM.md",
+          "words": 2624,
+          "summary": "The Rails fleet CMS: the index models and the sync, the write-back rules, every route and filter, the security posture, the image-engine seam, the ABC wizard, and how to run it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/RELEASING.md",
+          "words": 1741,
+          "summary": "What release-please owns, the repo-owned marketplace job and the secrets it needs, and the operator steps still outstanding.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/ZER0-STACK.md",
+          "words": 1179,
+          "summary": "The zer0 stack from this repository's side: the three pillars, the consumer contract `zer0 doctor` checks, and the reusable workflow that runs it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 429,
+          "summary": "The architecture decision records, 0001–0006, one per decision that changes how the repository is put together; ADR 0006 (one Python platform with a React frontend, every merged repository absorbed, no Ruby) is the current target.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/plan/PLAN.md",
+          "words": 11209,
+          "summary": "The build plan: ADR 0006's order of work (§ 3), every milestone and phase with what is done, what is blocked and what overtook it, and the open decisions.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/plan/TARGET.md",
+          "words": 3620,
+          "summary": "A comprehensive application for writing articles, creating content, brainstorming ideas, gathering information, operating a news site and writing books — a robust React frontend over a Python and Postgres backend, with AI integrations and…",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/plan/agent-native-design.md",
+          "words": 1986,
+          "summary": "The design note the plan implements (\"the note\"): agent runs as content-adjacent data — Wagtail revisions, moderation tasks and graph edges — across a Django/Wagtail content plane and a Rails experience plane.",
+          "source": "blockquote"
+        },
+        {
+          "path": "src/README.md",
+          "words": 1553,
+          "summary": "The VS Code extension's layers — the pure core, the MCP server, the webviews and the `vscode` shell — the shell's files, and the five things in it that are easy to get wrong.",
+          "source": "blockquote"
+        },
+        {
+          "path": "content/README.md",
+          "words": 642,
+          "summary": "The Django 5.2 + Wagtail 7.4 platform — pages and revisions, the agent harness and tool registry, suggestions, the graph, the outbox, the operational baseline, and its GraphQL, REST and MCP surfaces — and how to run it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "schemas/events/README.md",
+          "words": 270,
+          "summary": "The CloudEvents contracts between the planes: every event type, who publishes and consumes it, and the schema its data is validated against.",
+          "source": "blockquote"
+        },
+        {
+          "path": "media/README.md",
+          "words": 1299,
+          "summary": "The extension's design system: four stylesheets, the `--z-*` token layer, themes, metrics and icons, and the rules for adding a style.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/history/README.md",
+          "words": 214,
+          "summary": "`graft.sh`, which restores the imported history a squash merge dropped (cutover milestone C0), and how to run it safely.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/workspace/README.md",
+          "words": 803,
+          "summary": "The tooling behind `bin/zer0`: every command, the contract `bin/zer0 check` enforces, ownership of files, and the library's layout.",
+          "source": "blockquote"
+        }
+      ]
+    },
+    "zer0-mistakes": {
+      "repo": "bamr87/zer0-mistakes",
+      "url": "https://github.com/bamr87/zer0-mistakes",
+      "kind": "theme",
+      "branch": "main",
+      "doc_base": "",
+      "head": "98e978d21f2d",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1346,
+        "README.md": 5743,
+        "CLAUDE.md lines": 112
+      },
+      "framework": {
+        "DOC-09": "✗",
+        "DOC-10": "✓",
+        "DOC-02": "✗",
+        "DOC-03": "✗",
+        "DOC-04": "✓",
+        "DOC-08": "✗",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "D8:zer0-mistakes:.github/seed/README.md->../.seed.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": ".github/seed/README.md->../.seed.md",
+          "path": ".github/seed/README.md",
+          "message": "`.github/seed/README.md` links to `../.seed.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../.seed.md"
+          }
+        },
+        {
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../implementation/copilot-agent-prompt-button.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "docs/templates/README.md->../implementation/copilot-agent-prompt-button.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../implementation/copilot-agent-prompt-button.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../implementation/copilot-agent-prompt-button.md"
+          }
+        },
+        {
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../implementation/lint-pages-fixes.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "docs/templates/README.md->../implementation/lint-pages-fixes.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../implementation/lint-pages-fixes.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../implementation/lint-pages-fixes.md"
+          }
+        },
+        {
+          "key": "D8:zer0-mistakes:docs/templates/README.md->../releases/v0.3.0-release-notes.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "docs/templates/README.md->../releases/v0.3.0-release-notes.md",
+          "path": "docs/templates/README.md",
+          "message": "`docs/templates/README.md` links to `../releases/v0.3.0-release-notes.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../releases/v0.3.0-release-notes.md"
+          }
+        },
+        {
+          "key": "D8:zer0-mistakes:test/README.md->../docs/systems/testing-framework.md",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "test/README.md->../docs/systems/testing-framework.md",
+          "path": "test/README.md",
+          "message": "`test/README.md` links to `../docs/systems/testing-framework.md`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../docs/systems/testing-framework.md"
+          }
+        },
+        {
+          "key": "D8:zer0-mistakes:test/visual/evidence/README.md->../navbar-responsive.spec.js",
+          "check": "D8",
+          "class": "drift",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "test/visual/evidence/README.md->../navbar-responsive.spec.js",
+          "path": "test/visual/evidence/README.md",
+          "message": "`test/visual/evidence/README.md` links to `../navbar-responsive.spec.js`, which is not in the repository",
+          "remedy": "Fix the path or remove the link.",
+          "component": "",
+          "evidence": {
+            "target": "../navbar-responsive.spec.js"
+          }
+        },
+        {
+          "key": "DOC-09:zer0-mistakes:agents-title",
+          "check": "DOC-09",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "agents-title",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md is titled `# AGENTS.md — AI Agent Guide for zer0-mistakes`",
+          "remedy": "Title it with the repository's name.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "DOC-09:zer0-mistakes:agents-headings",
+          "check": "DOC-09",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "agents-headings",
+          "path": "AGENTS.md",
+          "message": "AGENTS.md lacks `## What this repo is`, `## Stack & commands`, `## Layout`, `## Conventions`, `## Fleet context`, `## Standard deviations`",
+          "remedy": "Use the six UPS-AGENT-07 headings.",
+          "component": "",
+          "evidence": {
+            "missing": [
+              "What this repo is",
+              "Stack & commands",
+              "Layout",
+              "Conventions",
+              "Fleet context",
+              "Standard deviations"
+            ]
+          }
+        },
+        {
+          "key": "DOC-09:zer0-mistakes:claude-pointer",
+          "check": "DOC-09",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "claude-pointer",
+          "path": "CLAUDE.md",
+          "message": "CLAUDE.md is not the pointer (112 non-blank lines, no `@AGENTS.md` import)",
+          "remedy": "Move its rules into AGENTS.md and replace it with the kit pointer.",
+          "component": "",
+          "evidence": {
+            "lines": 112
+          }
+        },
+        {
+          "key": "DOC-02:zer0-mistakes:summaries",
+          "check": "DOC-02",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "summaries",
+          "path": null,
+          "message": "9 of 14 documents have no summary line",
+          "remedy": "Add `> one sentence` under each H1 (or `description:` in front matter); `python3 tools/docs_index.py --lint` lists them.",
+          "component": "",
+          "evidence": {
+            "paths": [
+              "docs/architecture/README.md",
+              "docs/archive/README.md",
+              "docs/development/README.md",
+              "docs/features/README.md",
+              "docs/implementation/README.md",
+              "docs/releases/README.md",
+              "docs/systems/README.md",
+              "docs/templates/README.md",
+              "docs/ui/README.md"
+            ]
+          }
+        },
+        {
+          "key": "DOC-03:zer0-mistakes:index",
+          "check": "DOC-03",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "index",
+          "path": "docs/README.md",
+          "message": "docs/README.md has no `AUTO:docs-index` span",
+          "remedy": "Vendor tools/docs_index.py and run `python3 tools/docs_index.py --write`.",
+          "component": "",
+          "evidence": {}
+        },
+        {
+          "key": "DOC-08:zer0-mistakes:budget-README.md",
+          "check": "DOC-08",
+          "class": "alignment",
+          "severity": "warn",
+          "repo": "zer0-mistakes",
+          "subject": "budget-README.md",
+          "path": "README.md",
+          "message": "README.md is 5743 words (budget 2000)",
+          "remedy": "Move deep dives into docs/ and link them.",
+          "component": "",
+          "evidence": {
+            "words": 5743
+          }
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1346,
+          "summary": "**Cross-tool entry point** for AI coding agents working in this repository (GitHub Copilot, OpenAI Codex, Cursor, Aider, Jules, Continue, Claude Code, and any future agent that follows the [agents.md](https://agents.md/) convention).",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 44616,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "CODE_OF_CONDUCT.md",
+          "words": 989,
+          "summary": "The standards of behaviour for everyone taking part.",
+          "source": "well-known"
+        },
+        {
+          "path": "SECURITY.md",
+          "words": 100,
+          "summary": "Supported versions and how to report a vulnerability privately.",
+          "source": "well-known"
+        },
+        {
+          "path": "docs/architecture/README.md",
+          "words": 336,
+          "summary": "Technical architecture documentation for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/archive/README.md",
+          "words": 99,
+          "summary": "This directory contains historical documentation from the **Release Automation Modernization Project** (November 2025).",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/development/README.md",
+          "words": 180,
+          "summary": "Guides for setting up a development environment and contributing to the Zer0-Mistakes theme.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/features/README.md",
+          "words": 128,
+          "summary": "Per-feature design notes and implementation details for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/implementation/README.md",
+          "words": 194,
+          "summary": "Technical implementation details and changelogs for theme features.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/installation/index.md",
+          "words": 369,
+          "summary": "Overview of the modular, profile-driven Zer0-Mistakes installer CLI, the classic install.sh one-liner, and how to choose the right install path.",
+          "source": "front-matter"
+        },
+        {
+          "path": "docs/releases/README.md",
+          "words": 536,
+          "summary": "This directory contains comprehensive release documentation for all versions of the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/systems/README.md",
+          "words": 151,
+          "summary": "Infrastructure, CI/CD, release automation, and dependency management for the Zer0-Mistakes Jekyll theme.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/templates/README.md",
+          "words": 190,
+          "summary": "Reusable templates for consistent documentation across the Zer0-Mistakes project.",
+          "source": "fallback"
+        },
+        {
+          "path": "docs/ui/README.md",
+          "words": 143,
+          "summary": "Core theme styling and component documentation for contributors and maintainers.",
+          "source": "fallback"
+        }
+      ]
+    },
+    "zpl-viewer": {
+      "repo": "bamr87/zpl-viewer",
+      "url": "https://github.com/bamr87/zpl-viewer",
+      "kind": "tooling",
+      "branch": "docs/harmonize-docs",
+      "doc_base": "",
+      "head": "bc9b7ae8f9c2",
+      "error": "",
+      "sizes": {
+        "AGENTS.md": 1017,
+        "README.md": 1819,
+        "CLAUDE.md lines": 4
+      },
+      "framework": {
+        "DOC-09": "✓",
+        "DOC-10": "✓",
+        "DOC-02": "✓",
+        "DOC-03": "✓",
+        "DOC-04": "✓",
+        "DOC-08": "✓",
+        "DOC-01": "✓"
+      },
+      "findings": [
+        {
+          "key": "G10:zpl-viewer:description",
+          "check": "G10",
+          "class": "gap",
+          "severity": "warn",
+          "repo": "zpl-viewer",
+          "subject": "description",
+          "path": null,
+          "message": "GitHub repository description is empty",
+          "remedy": "Set the About description - it is the first and most widely syndicated sentence about the project.",
+          "component": "",
+          "evidence": {}
+        }
+      ],
+      "docs": [
+        {
+          "path": "AGENTS.md",
+          "words": 1017,
+          "summary": "Label Studio (`zpl-viewer`), an offline VS Code extension for ZPL II and EPL2 thermal labels — the commands, layout, conventions and layering rules for working on it.",
+          "source": "blockquote"
+        },
+        {
+          "path": "CHANGELOG.md",
+          "words": 1343,
+          "summary": "Release history: the notable changes in each version, newest first.",
+          "source": "well-known"
+        },
+        {
+          "path": "PRD.md",
+          "words": 310,
+          "summary": "Product requirements for Label Studio: problem, users, goals, scope and proposed success metrics, derived from this repo's README, agent docs, config and code, with anything they do not state marked **TBD**.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/adr/README.md",
+          "words": 148,
+          "summary": "The decisions about zpl-viewer that are hard to reverse, one numbered record each, with the format every new ADR follows.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/commands.md",
+          "words": 579,
+          "summary": "Every command the *Label Studio — Labels, Barcodes & Data* extension contributes, with its ID, when the Command Palette offers it and which menus show it, generated from `package.json` `contributes.commands`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/keybindings.md",
+          "words": 93,
+          "summary": "Every default keyboard shortcut the *Label Studio — Labels, Barcodes & Data* extension contributes, with the command it runs and when it is active, generated from `package.json` `contributes.keybindings`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/reference/settings.md",
+          "words": 858,
+          "summary": "Every setting the *Label Studio — Labels, Barcodes & Data* extension contributes, with its type, default and allowed values, generated from `package.json` `contributes.configuration`.",
+          "source": "blockquote"
+        },
+        {
+          "path": "docs/testing.md",
+          "words": 386,
+          "summary": "The four test layers, what each one proves, why rendering is checked with recorded draw calls instead of golden images, and the test-only preview hook.",
+          "source": "blockquote"
+        },
+        {
+          "path": "src/README.md",
+          "words": 1181,
+          "summary": "What each source module does and which layer it belongs to — the vscode layer, the pure layer shared with the webview, and the node-only layer.",
+          "source": "blockquote"
+        },
+        {
+          "path": "tools/README.md",
+          "words": 68,
+          "summary": "Operator scripts vendored from the bamr87 hub; nothing here ships to users, and nothing here is edited in this repo.",
+          "source": "blockquote"
+        }
+      ]
+    }
+  }
+}

@@ -19,8 +19,7 @@ This file is intentionally short. It tells an agent **where to look** for the de
 with Bootstrap 5.3.3, GitHub Pages remote-theme support, automated semantic releases to RubyGems, and privacy-compliant analytics.
 - **Primary language(s)**: Ruby (gem), Liquid/HTML (theme), SCSS, Bash (tooling).
 - **Version source of truth**: `lib/jekyll-theme-zer0/version.rb`.
-- **Default dev environment**: Docker Compose (`docker-compose up`). A local
-  Ruby/Bundler workflow also works.
+- **Default dev environment**: Docker Compose (`docker-compose up`). A local Ruby/Bundler workflow also works.
 
 For the full architectural and product overview, see [`README.md`](./README.md) and [`.github/copilot-instructions.md`](./.github/copilot-instructions.md).
 
@@ -96,8 +95,7 @@ This repo runs a self-sustaining backlog loop so AI agents can keep improving it
 
 1. **Audit + issue intake** (`/repo-audit`, scheduled weekly) reviews tests, docs,
 and roadmap delivery **and triages all open GitHub issues** into [`_data/backlog.yml`](./_data/backlog.yml) (`source: issue`, adopted via `links.issue` — no duplicates). The committee `/issue-plan` then sequences them and `/issue-implement` (human-dispatched) routes each to a specialized agent. See [`docs/systems/continuous-evolution.md`](./docs/systems/continuous-evolution.md).
-2. **Sync** (`.github/workflows/sync.yml`) mirrors open tasks to GitHub
-   Issues (`agent-ready` label) and closes issues for tasks marked `done`.
+2. **Sync** (`.github/workflows/sync.yml`) mirrors open tasks to GitHub Issues (`agent-ready` label) and closes issues for tasks marked `done`.
 3. **Implement** (`/backlog-implement`, scheduled) picks the top open task, builds
 it on a branch, validates, and opens a PR. Low-risk classes (`docs`/`deps`/`lint` with `risk: low`) auto-merge once CI is green via `.github/workflows/auto-merge.yml`; everything else waits for human review.
 
@@ -132,28 +130,30 @@ docker-compose exec -T jekyll bundle exec jekyll build \
 # Quality
 markdownlint "**/*.md" --ignore node_modules
 yamllint -c .github/config/.yamllint.yml .
+
+# zer0 studio — the Rails workbench beside the theme (studio/AGENTS.md)
+docker compose --profile studio up --build # http://localhost:3300
+cd studio && bin/rails test && bin/rails zeitwerk:check
 ```
+
+`studio/` is a Rails app that edits this theme (tokens, skins, consumer configs) through digest-guarded writes and runs the theme's own scripts as jobs. It is excluded by both Jekyll configs, never packaged by the gemspec and never in the theme image; work inside it follows [`studio/AGENTS.md`](./studio/AGENTS.md).
 
 ---
 
 ## ✅ Operating Rules for Agents
 
-1. **Make minimal, surgical changes.** Match the existing style. Do not refactor
-   unrelated code.
-2. **Respect the layered guidance.** When a file-scoped instruction conflicts
-   with a generic best practice, the file-scoped instruction wins.
+1. **Make minimal, surgical changes.** Match the existing style. Do not refactor unrelated code.
+2. **Respect the layered guidance.** When a file-scoped instruction conflicts with a generic best practice, the file-scoped instruction wins.
 3. **Validate before declaring done.** At minimum, run the relevant test
 command(s) above. For theme/layout/include changes, run the Docker Jekyll build.
 4. **Update `CHANGELOG.md`** for any user-visible change. Follow the
 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format already in the file.
 5. **Bump the version only via `./scripts/bin/release`** (or by editing
 `lib/jekyll-theme-zer0/version.rb` as part of a release commit). Never bump it in unrelated PRs.
-6. **Do not commit secrets.** Use environment variables; `RUBYGEMS_API_KEY` and
-   `GITHUB_TOKEN` are provided in CI.
+6. **Do not commit secrets.** Use environment variables; `RUBYGEMS_API_KEY` and `GITHUB_TOKEN` are provided in CI.
 7. **Prefer existing libraries and patterns.** Bootstrap 5 components, the
 Bootstrap Icons set, and the modular `_includes/` system already cover most UI needs.
-8. **Document non-obvious decisions** in the relevant instruction file so the
-   next agent benefits from the context.
+8. **Document non-obvious decisions** in the relevant instruction file so the next agent benefits from the context.
 
 ---
 
@@ -172,10 +172,8 @@ This repository is designed to be **extendable** by both humans and agents. To a
    ---
    ```
 
-2. Cover: overview, structure, standards, patterns, best practices, testing,
-   documentation (mirror existing files such as `layouts.instructions.md`).
-3. List it in [`.github/instructions/README.md`](./.github/instructions/README.md)
-   and add a row to the **File-scoped instruction map** above.
+2. Cover: overview, structure, standards, patterns, best practices, testing, documentation (mirror existing files such as `layouts.instructions.md`).
+3. List it in [`.github/instructions/README.md`](./.github/instructions/README.md) and add a row to the **File-scoped instruction map** above.
 
 ### Add a reusable prompt / agent mode
 
@@ -190,10 +188,8 @@ This repository is designed to be **extendable** by both humans and agents. To a
    ---
    ```
 
-2. Write the prompt as a numbered, checkable workflow (see
-   `commit-publish.prompt.md` for the canonical pattern).
-3. If you want it available as a Cursor slash-command, mirror the file into
-   `.cursor/commands/<task>.md`.
+2. Write the prompt as a numbered, checkable workflow (see `commit-publish.prompt.md` for the canonical pattern).
+3. If you want it available as a Cursor slash-command, mirror the file into `.cursor/commands/<task>.md`.
 
 ### Add a new tool-specific config
 
@@ -210,8 +206,7 @@ This keeps a single source of truth and prevents drift.
 1. Place the implementation under `scripts/bin/<name>` (executable, `set -euo pipefail`).
 2. Share logic via `scripts/lib/*.sh` modules.
 3. Optionally add a thin wrapper at `scripts/<name>` for backward compatibility.
-4. Follow the conventions in `.github/instructions/scripts.instructions.md`
-   (logging helpers, parameter validation, `--dry-run` support, help text).
+4. Follow the conventions in `.github/instructions/scripts.instructions.md` (logging helpers, parameter validation, `--dry-run` support, help text).
 
 ---
 

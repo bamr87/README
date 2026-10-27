@@ -26,13 +26,11 @@ An optional animated particle field that sits behind hero and landing content, a
 
 ## Overview
 
-- **Configurable particle field** — count, size, speed, colour, and link
-  distance are all data-driven.
+- **Configurable particle field** — count, size, speed, colour, and link distance are all data-driven.
 - **Interactive** — particles respond to mouse hover and clicks.
 - **JSON configuration** — behaviour is read from
 [`assets/particles.json`](https://github.com/bamr87/zer0-mistakes/blob/main/assets/particles.json), so you can retune the look without touching JavaScript.
-- **Performance-conscious** — intended for landing/hero sections rather than
-  every page, so the animation cost is scoped to where it adds value.
+- **Performance-conscious** — intended for landing/hero sections rather than every page, so the animation cost is scoped to where it adds value.
 
 ## How it works
 

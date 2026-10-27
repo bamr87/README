@@ -46,8 +46,7 @@ All outcomes below are from the sealed execute-mode engine run (`walk-evidence.j
 the quest's "Expected" block *byte-for-byte*: `Snapshot taken.` / `No drift — safe to act.` / `exit=0` / `README.md: FAILED` / `sha256sum: WARNING: 1 computed checksum did NOT match` / `::warning::Context drift detected…` / `exit=78`. Tier-2 plan/act emitted exactly `read`/`edit`/`verify`; Tier-3 JSONL register read back `local-1 → completed`; context-handoff produced `handoff fresh (0s old) — proceeding`.
 - **Chapter-3 `drift-guard.sh` (WATCH includes `_config.yml`)** — **failed** in a scratch
 dir (`sha256sum: _config.yml: No such file or directory`, exit 1). This is the *exact* failure the quest flags inline ("EDIT for YOUR repo — a missing file kills snapshot() under set -e"), so it is documented/intentional template behavior, not a defect.
-- 4 workflow YAML blocks + the context-handoff JSON — **reasoned** (parse-valid;
-  Actions-only pieces can't run in-sandbox, but their local analogues matched).
+- 4 workflow YAML blocks + the context-handoff JSON — **reasoned** (parse-valid; Actions-only pieces can't run in-sandbox, but their local analogues matched).
 
 ### 2 · Q6 — Dev Environment Integration — 56 ❌ (ran 4, 2 passed / 2 failed, 2 skipped; 1 reasoned)
 
@@ -56,10 +55,8 @@ dir (`sha256sum: _config.yml: No such file or directory`, exit 1). This is the *
 - **`check_agent_env.sh` (Ex 6.3)** — **failed**. Ran cleanly as a script but reported
   `Passed: 7 | Failed: 1`, exit 1, `❌ Environment not ready for agent use.` — because
 its `check "copilot-instructions.md present" "test -f .github/copilot-instructions.md"` looks for a file **no exercise ever creates**.
-- **Cold-start clone & Quest Validation** — **skipped**: `YOUR_ORG/YOUR_REPO` is a
-  placeholder (intentional templating), and `scripts/validate_quest.py` is not present.
-- Caveat surfaced by testing: `jq` / `python json.load` both reject the devcontainer file
-  because of its leading `// .devcontainer/devcontainer.json` comment (JSONC, not strict JSON).
+- **Cold-start clone & Quest Validation** — **skipped**: `YOUR_ORG/YOUR_REPO` is a placeholder (intentional templating), and `scripts/validate_quest.py` is not present.
+- Caveat surfaced by testing: `jq` / `python json.load` both reject the devcontainer file because of its leading `// .devcontainer/devcontainer.json` comment (JSONC, not strict JSON).
 
 ### 3 · Q7 — Safe Execution & Error Handling — 67 ⚠️ (ran 5, 4 passed / 1 failed; 2 reasoned)
 
@@ -67,8 +64,7 @@ its `check "copilot-instructions.md present" "test -f .github/copilot-instructio
 mock `run_agent_task.py`: transient error retried with 1s/2s backoff then succeeded on attempt 3 (exit 0); `auth_error` escalated immediately with no retry (exit 1); persistent errors exhausted 3 attempts and emitted `error_code=max_retries_exceeded`. All three documented behaviors verified. YAML passes `yamllint`; the error-report JSON schema is valid.
 - **`test_failure_scenarios.sh` (Ex 7.3)** — recorded **passed** only in the sense that
 the shell exited 0; the engine flags it as a **hollow stub** — every "scenario" is just an `echo` and a `# Mock a 503 response and verify…` comment; it never invokes the workflow, mocks a response, or asserts anything.
-- **`python3 scripts/validate_quest.py --quest q7`** — **failed**: `python3: can't open
-  file '.../scripts/validate_quest.py': [Errno 2] No such file or directory`.
+- **`python3 scripts/validate_quest.py --quest q7`** — **failed**: `python3: can't open file '.../scripts/validate_quest.py': [Errno 2] No such file or directory`.
 
 ### 4 · Q8 — Agent Memory Strategies — 65 ⚠️ (ran 2, 1 passed / 1 failed, 4 skipped; 1 reasoned)
 
@@ -80,12 +76,10 @@ after correctly accounting for YAML block-scalar dedent, the heredoc runs, but b
 
 ### 5 · Kubernetes Fundamentals — 92 ✅ (ran 10, 10 passed, 2 skipped; 1 reasoned)
 
-- **`kind create cluster --name citadel` → `kubectl cluster-info` / `get nodes`** —
-  **passed**; node `Ready` after ~30s.
+- **`kind create cluster --name citadel` → `kubectl cluster-info` / `get nodes`** — **passed**; node `Ready` after ~30s.
 - **`hello-pod.yaml` apply / describe / logs / exec**, imperative `kubectl run
 hello --image=nginx:1.27`, namespace workflow (`create namespace dojo` → apply → set context) — all **passed**.
-- **Self-healing demo** — **passed**: after `kubectl delete pod hello-pod`, the bare Pod
-  did **not** return, confirming the quest's central claim.
+- **Self-healing demo** — **passed**: after `kubectl delete pod hello-pod`, the bare Pod did **not** return, confirming the quest's central claim.
 - **Advanced Challenge** — **passed**: `image: nginx:does-not-exist` reproduced
 `ErrImagePull` → `ImagePullBackOff`, diagnosed via the Events pipeline, fixed to `nginx:1.27`, re-applied → `Running`.
 - macOS `brew` / Windows `winget` install blocks — **skipped** (OS-gated on a Linux sandbox).
@@ -103,8 +97,7 @@ Concrete, evidence-backed problems. Severity per the rubric's learner-impact len
 echo-only stub; it fulfils the "Test failure recovery" objective on paper but tests nothing. *Fix:* replace with a real script that mocks each failure mode and asserts the retry-count / escalation output (the engine's sandbox did exactly this with a stub `run_agent_task.py`).
 - **HIGH · Q8 · Chapter 3 / `session.json` `started_at` · verified** — `$(date …)` inside
 the quoted `<< 'EOF'` heredoc never expands; the timestamp field is stored as the literal command string. *Fix:* unquote the delimiter for expanded fields, or compute `NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)` on a separate `run` line and interpolate `$NOW`.
-- **HIGH · Q8 · Quest Validation · verified** — same missing `scripts/validate_quest.py`
-  as Q7 (`No such file or directory`). *Fix:* provide the script or mark the block illustrative.
+- **HIGH · Q8 · Quest Validation · verified** — same missing `scripts/validate_quest.py` as Q7 (`No such file or directory`). *Fix:* provide the script or mark the block illustrative.
 - **MEDIUM · Q7 · Chapter 2 workflow dependency · reasoned** — the workflow calls
 `python3 work/gh-600/scripts/run_agent_task.py`, never defined in this quest and not produced by Q6 (which only creates `check_agent_env.sh`). Prerequisites don't call it out, so the workflow is unrunnable from the chain alone. *Fix:* state where it comes from, or include a minimal stub.
 - **MEDIUM · Q6 · Chapter 5 / cold-start · verified+reasoned** — `AGENTS.md` calls
@@ -119,8 +112,7 @@ never explicitly named; the filename `hello-pod.yaml` is only inferable from the
 strict JSON linters reject the file even though `@devcontainers/cli` accepts it. *Fix:* drop the comment or add a one-line JSONC note.
 - **LOW · Codex Ch. III · Prerequisites vs Lab · verified** — Prerequisites promise "you
 will run real workflows that upload artifacts and commit files," but the lab is entirely local git/jq/sha256sum; real Actions is never exercised. *Fix:* add a minimal `workflow_dispatch` exercise or soften the prerequisite wording.
-- **LOW · Q7 · jq fallback · verified** — `jq -r '.error_code // "unknown"'` yields an
-  empty string (not `"unknown"`) when `agent-result.json` is absent entirely. *Fix:*
+- **LOW · Q7 · jq fallback · verified** — `jq -r '.error_code // "unknown"'` yields an empty string (not `"unknown"`) when `agent-result.json` is absent entirely. *Fix:*
   guard with `[ -f agent-result.json ]` or `|| echo unknown`.
 - **LOW · Q6/Q7/Q8 · Level metadata · reasoned** — filed under "Kubernetes Orchestration"
 but contain zero Kubernetes; they are GH-600 / GitHub Actions content. *Fix:* reclassify under the GH-600 / agentic-CI track (see Chain Continuity).
@@ -133,20 +125,9 @@ Reading the five in order as one learner, the slice is really **three overlappin
 
 1. **The clean linear chain Q6 → Q7 → Q8** (dev-env → safe-execution → memory-strategies)
 is well-wired by frontmatter (`required_quests`/`unlocks_quests`) and by `sub_title` ("Quest 1/3, 2/3, 3/3"). Ordering is correct and each quest's mermaid "Quest Network Position" agrees with its neighbors (Q5→Q6→Q7→Q8→Q9). **But three prerequisite/handoff gaps break the journey:**
-   - **`copilot-instructions.md` is orphaned across the chain.** Q6's parity check
-     *requires* `.github/copilot-instructions.md` (verified failure), and Q8 twice tells
-     the learner to "update in `copilot-instructions.md`" — yet **no quest in the slice
-     ever has the learner create that file**. Even a learner who completes the entire
-     Q6→Q7→Q8 chain still cannot make Q6's own validation pass. This is the single
-     highest-value fix: introduce the file once (logically in Q6) and the whole chain
-     coheres.
-   - **`run_agent_task.py` is assumed but never delivered.** Q7's headline workflow calls
-     it; Q6 — the stated prerequisite — creates only `check_agent_env.sh`. The chain never
-     provides the script the next link depends on.
-   - **The `scripts/validate_quest.py` "Quest Validation" gate is broken in Q6, Q7 *and*
-     Q8** (verified `FileNotFoundError` in Q7 and Q8; skipped-as-absent in Q6). Three
-     consecutive quests end on a completion command that can't run — a repeated dead-end
-     that a learner hits at the finish line of each.
+   - **`copilot-instructions.md` is orphaned across the chain.** Q6's parity check *requires* `.github/copilot-instructions.md` (verified failure), and Q8 twice tells the learner to "update in `copilot-instructions.md`" — yet **no quest in the slice ever has the learner create that file**. Even a learner who completes the entire Q6→Q7→Q8 chain still cannot make Q6's own validation pass. This is the single highest-value fix: introduce the file once (logically in Q6) and the whole chain coheres.
+   - **`run_agent_task.py` is assumed but never delivered.** Q7's headline workflow calls it; Q6 — the stated prerequisite — creates only `check_agent_env.sh`. The chain never provides the script the next link depends on.
+   - **The `scripts/validate_quest.py` "Quest Validation" gate is broken in Q6, Q7 *and* Q8** (verified `FileNotFoundError` in Q7 and Q8; skipped-as-absent in Q6). Three consecutive quests end on a completion command that can't run — a repeated dead-end that a learner hits at the finish line of each.
 
 2. **Codex Ch. III (quest 1) is a parallel "campaign" map**, not a step in the Q6→Q7→Q8
 line. Its own network diagram is Codex Ch. II → III → IV (levels 1000→1001→1010), and it explicitly points at `agentic-memory-strategies` (Q8) as one of "the chambers" of Domain 3. So it *does* connect to Q8 — but it also **overlaps** it: both teach the three-tier memory model, and they disagree in a way a learner would notice. Codex Ch. III defines **Tier 2 / session = "one run, across jobs," artifacts**; Q8's table defines **Session = "Hours to days," artifacts + issue comments, persist across runs.** A learner reading both gets two different lifespans for "session memory." Worth reconciling so the map and the chamber agree. (Notably, Codex Ch. III is the far stronger, fully-runnable treatment; Q8 is the weaker duplicate.)

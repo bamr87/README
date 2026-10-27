@@ -40,8 +40,7 @@ Out of scope: `mode="proxy"`, which needs a server-side token, and the server-si
 
 - `src/frontend/src/components/Layout.test.tsx`: exactly one `fleet-feedback` element with
 `repo="bamr87/barodybroject"`, none when the repo is empty, the vendored script loaded from `/static/js/`, and the footer link pointing at `page_feedback.yml`. Three of its four cases fail on the previous `Layout.tsx`. The empty-repo case holds both before and after.
-- `src/parodynews/tests/test_templates.py`: the capture script is in the shell's `<head>`, and
-  `GITHUB_ISSUE_REPO` defaults to this repository.
+- `src/parodynews/tests/test_templates.py`: the capture script is in the shell's `<head>`, and `GITHUB_ISSUE_REPO` defaults to this repository.
 - Browser check against a running app (Django + built bundle, Playwright Chromium, light and dark themes).
 The dialog opens. With **Feature request** selected and a `console.error("probe")` fired first, submitting opens `https://github.com/bamr87/barodybroject/issues/new?…` with `labels=page-feedback,feature`, the Page context / Environment / Console & error logs sections (with `probe` in the logs), and the body ending in `<!-- fleet-feedback v1 type=feature -->`.
 

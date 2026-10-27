@@ -56,8 +56,7 @@ From a Claude Code session with design access (`/design-login` if needed), use t
 1. `list_files` to diff structure; `get_file` only for files you must compare.
 2. `finalize_plan` with the exact paths you'll write (e.g.
 `tokens/*.css`, `styles.css`, `SKILL.md`, `readme.md`), `localDir` = `_design-system/`.
-3. `write_files` with `localPath` entries. Push brand imagery from
-   `assets/images/` in a separate plan when it changes.
+3. `write_files` with `localPath` entries. Push brand imagery from `assets/images/` in a separate plan when it changes.
 
 Push **incrementally** — the changed files only, never a wholesale replace.
 

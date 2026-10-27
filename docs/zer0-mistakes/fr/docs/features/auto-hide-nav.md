@@ -32,13 +32,10 @@ La barre de navigation supérieure s'efface pendant que vous lisez : elle glisse
 
 ## Aperçu
 
-- **Masquage au défilement vers le bas** — la barre de navigation se déplace hors de l'écran dès que vous faites défiler
-  au-delà d'un petit seuil, afin que le contenu long occupe toute la fenêtre d'affichage.
+- **Masquage au défilement vers le bas** — la barre de navigation se déplace hors de l'écran dès que vous faites défiler au-delà d'un petit seuil, afin que le contenu long occupe toute la fenêtre d'affichage.
 - **Affichage au défilement vers le haut** — tout défilement vers le haut ramène immédiatement la barre de navigation.
-- **Transitions CSS fluides** — l'affichage/masquage utilise une transformation CSS, et non une modification
-  de la mise en page, ce qui garantit une fluidité et évite de recomposer la page.
-- **Optimisée pour le mobile** — le comportement est particulièrement utile sur les appareils tactiles où
-  l'espace à l'écran est limité.
+- **Transitions CSS fluides** — l'affichage/masquage utilise une transformation CSS, et non une modification de la mise en page, ce qui garantit une fluidité et évite de recomposer la page.
+- **Optimisée pour le mobile** — le comportement est particulièrement utile sur les appareils tactiles où l'espace à l'écran est limité.
 
 ## Fonctionnement
 

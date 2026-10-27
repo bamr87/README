@@ -619,8 +619,7 @@ docker compose restart
 
 - L'onglet du navigateur et la barre de navigation affichent votre **Titre du site**.
 - `/about/` affiche votre nom d'auteur et votre e-mail.
-- Si vous avez défini un thème, les couleurs de la page changent ; si rien ne change, vérifiez que
-  `theme_skin` est l'un des sept noms listés ci-dessus.
+- Si vous avez défini un thème, les couleurs de la page changent ; si rien ne change, vérifiez que `theme_skin` est l'un des sept noms listés ci-dessus.
 
 ## Tout est prêt
 

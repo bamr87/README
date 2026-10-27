@@ -741,8 +741,7 @@ cat > CHANGELOG.md << 'EOF'
 
 - Initial release
 - Core theme functionality
-- Docker-first development
-  EOF
+- Docker-first development EOF
 
 # Create LICENSE
 

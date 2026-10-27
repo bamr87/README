@@ -44,7 +44,7 @@ coverage: listed
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
-| `tools/` | dir | Vendored hub kit: `unwrap-prose.py`, the one-paragraph-per-line prose gate run by CI and at ingest | required terminal |
+| `tools/` | dir | Vendored hub kit: `unwrap-prose.py` (the one-paragraph-per-line prose gate run by CI and at ingest) and `docs_index.py` (the docs index generator the survey's framework checks reuse) | required terminal |
 | `verify/` | dir | Hub verify kit: `verify.yml` (how to serve the site), `runner.mjs`, `scenarios/*.yml` | terminal |
 | `.editorconfig` | file | Editor defaults (standardization baseline) | |
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
@@ -86,7 +86,8 @@ coverage: listed
 - No `nav:` key in `mkdocs.yml` — it would shadow the generated one and the
   sidebar would silently stop tracking the corpus.
 - No local edits to `tools/` — it is vendored verbatim from the hub
-  (`tools/fanout.sh --kit prose`); fix it there and re-fan it out, or the
-  conformance checker reports the copy as drifted.
+  (`tools/fanout.sh --kit prose`, and `tools/docs_index.py` copied from the
+  hub's `tools/`); fix it there and re-vendor, or the conformance checker
+  reports the copy as drifted.
 - No fleet-project source code here — it belongs in the project's own repo;
   this repo only carries distilled context about it.

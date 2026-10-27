@@ -61,10 +61,8 @@ network-heavy installs and container pulls — `brew install --cask zap/burp-sui
 
 ### Quest 2 — Compliance Standards (✅ executed, 97%)
 
-- **Coverage:** `ran 4/4` runnable snippets — **4 passed, 0 failed, 0 skipped**;
-  4 additional non-runnable text blocks judged `reasoned`. Executed in 101.6s / 9 turns.
-- **Per-dimension:** commands_work **5**, content_accuracy **5**, completeness **4**,
-  clarity **5**, structure **5**, safety **5**.
+- **Coverage:** `ran 4/4` runnable snippets — **4 passed, 0 failed, 0 skipped**; 4 additional non-runnable text blocks judged `reasoned`. Executed in 101.6s / 9 turns.
+- **Per-dimension:** commands_work **5**, content_accuracy **5**, completeness **4**, clarity **5**, structure **5**, safety **5**.
 
 Commands actually run (from `walk-evidence.json`):
 

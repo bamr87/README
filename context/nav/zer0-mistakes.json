@@ -5,8 +5,8 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 665,
-    "sections": 98,
+    "pages": 671,
+    "sections": 99,
     "max_depth": 6,
     "skipped": 9
   },
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "4af53796123d349d",
+  "fingerprint": "88d8f5bf92a6d39b",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 665,
+    "pages": 671,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 79,
+        "pages": 82,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 69,
+            "pages": 72,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 66,
+                "pages": 69,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 66,
+                    "pages": 69,
                     "children": [
                       {
                         "type": "page",
@@ -469,6 +469,13 @@
                       },
                       {
                         "type": "page",
+                        "title": "fix-includes-favicon-tags-404 \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/fix-includes-favicon-tags-404/README.md",
+                        "rel": "test/visual/evidence/fix-includes-favicon-tags-404/README.md",
+                        "folder": "test/visual/evidence/fix-includes-favicon-tags-404"
+                      },
+                      {
+                        "type": "page",
                         "title": "fix-includes-preview-path-join \u2014 visual evidence",
                         "path": "zer0-mistakes/test/visual/evidence/fix-includes-preview-path-join/README.md",
                         "rel": "test/visual/evidence/fix-includes-preview-path-join/README.md",
@@ -487,6 +494,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/fix-search-page-sitemap/README.md",
                         "rel": "test/visual/evidence/fix-search-page-sitemap/README.md",
                         "folder": "test/visual/evidence/fix-search-page-sitemap"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Footer duplicate copyright (backlog T-054)",
+                        "path": "zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md",
+                        "rel": "test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md",
+                        "folder": "test/visual/evidence/fix-includes-footer-duplicate-copyright"
                       },
                       {
                         "type": "page",
@@ -515,6 +529,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/navbar-tiers-405/README.md",
                         "rel": "test/visual/evidence/navbar-tiers-405/README.md",
                         "folder": "test/visual/evidence/navbar-tiers-405"
+                      },
+                      {
+                        "type": "page",
+                        "title": "port-zer0-cms-2026-10 \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/port-zer0-cms-2026-10/README.md",
+                        "rel": "test/visual/evidence/port-zer0-cms-2026-10/README.md",
+                        "folder": "test/visual/evidence/port-zer0-cms-2026-10"
                       },
                       {
                         "type": "page",
@@ -5069,6 +5090,35 @@
                 "folder": "templates/deploy/github-pages"
               }
             ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "zer0 studio",
+        "rel": "studio",
+        "index": "zer0-mistakes/studio/README.md",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "zer0 studio",
+            "path": "zer0-mistakes/studio/README.md",
+            "rel": "studio/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "AGENTS.md \u2014 working rules for AI coding agents in studio/",
+            "path": "zer0-mistakes/studio/AGENTS.md",
+            "rel": "studio/AGENTS.md"
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "zer0-mistakes/studio/test/fixtures/theme/CHANGELOG.md",
+            "rel": "studio/test/fixtures/theme/CHANGELOG.md",
+            "folder": "studio/test"
           }
         ]
       }

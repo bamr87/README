@@ -149,8 +149,7 @@ Execute the complete release pipeline for bashcrawl. This workflow covers shell 
    git add -A
    ```
 
-3. **Create Semantic Commit Message**:
-   Format: `<type>(<scope>): <description>`
+3. **Create Semantic Commit Message**: Format: `<type>(<scope>): <description>`
 
    Types:
    - `feat`: New room, encounter, mechanic, or feature
@@ -321,7 +320,7 @@ bash help.sh commands                   # Command reference
 
 # Static web trainer
 make web-build                          # Rebuild web/ data from the registries
-make web-preview                        # Serve web/ at http://127.0.0.1:8000
+make web-dev                            # The web app with hot reload at http://127.0.0.1:5173
 
 # Git workflow
 git add -A                              # Stage all changes

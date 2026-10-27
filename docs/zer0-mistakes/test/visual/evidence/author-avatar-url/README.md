@@ -23,8 +23,7 @@ The include renders server-side, so both states are **real Jekyll builds** of th
 authors with site-relative avatars (Zer0-Mistakes Team, Cassandra, Vega) render `src="//assets/…"` and show **no image**; the two full-URL (GitHub) avatars are unaffected. AFTER: 0 protocol-relative srcs, **5/5 avatars load**.
 - **`02-profile-hero.png`** — the `/authors/cassandra/` profile hero. BEFORE:
 broken 128px avatar (`//assets/images/authors/cassandra.svg`). AFTER: the avatar renders (`/assets/images/authors/cassandra.svg`).
-- **`metrics.json`** — every avatar's `src`, protocol-relative flag, and
-  loaded state per page and state.
+- **`metrics.json`** — every avatar's `src`, protocol-relative flag, and loaded state per page and state.
 
 ## Measured before → after (from `metrics.json`)
 

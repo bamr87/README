@@ -57,8 +57,7 @@ present so `apt install` was skipped as redundant; `mkdir cicd-quest && cd`, `gi
 `git commit -am` succeeded; `git push -u origin add-greeting` **failed as expected** (`origin does not appear to be a git repository`) — no remote in the isolated sandbox.
 - **Both GitHub Actions YAML blocks + text diagrams — reasoned.** Not run through a
 real Actions runner (none in sandbox); validated as syntactically correct YAML, action versions `@v4` current. Diagrams are descriptive, not executable.
-- **macOS / Windows setup blocks — skipped.** Sandbox is Linux; Homebrew/winget
-  unavailable. Judged by analogy to the Linux path, which passed.
+- **macOS / Windows setup blocks — skipped.** Sandbox is Linux; Homebrew/winget unavailable. Judged by analogy to the Linux path, which passed.
 
 ### Quest 2 — Docker Containerization Mastery `pages/_quests/0101/docker-mastery-example.md` — ❌ 15 (execute)
 
@@ -124,12 +123,10 @@ tool-mastery quest sitting in a "CI/CD & DevOps" level, requiring a heavy TeX to
 by the workflow's sealed execute-engine pass (`walk-evidence.json`), which I consumed **as-is** and did not edit or regenerate (per the skill's step 2). All `passed`/`failed` claims for quests 1–2 come from that machine evidence; every claim for quests 3–5 is labeled **`reasoned`** and cites exact source lines only.
 - **Mode:** `execute` — but only for the **2 of 5** quests the engine reached before
 `auth_truncated: true` (OAuth rate limit). Coverage is therefore **partial**: 2 executed, 3 read-only. I did not substitute numbers for the unexecuted three; they carry no score.
-- **Slice context:** window 1 of 3 over a 12-quest level (`stats.windowed: true`), so this
-  report is one rotating sample; the ledger accumulates coverage across runs.
+- **Slice context:** window 1 of 3 over a 12-quest level (`stats.windowed: true`), so this report is one rotating sample; the ledger accumulates coverage across runs.
 - **Limits:** no network beyond what the engine itself used; macOS/Windows blocks are
 inherently unexecutable on the Linux sandbox and were correctly skipped; GitHub Actions YAML can only be statically validated (no real runner). The empty-template finding on Docker is high-confidence (a real `docker build` failure). The chain/ordering findings are high-confidence (frontmatter is explicit). The quality of quests 3–5 is **unverified** by execution and should be re-run in a future window before trusting their pass state.
-- **Confidence:** high on the two executed verdicts and on the structural/continuity issues;
-  low-to-none on any runtime behavior of quests 3–5.
+- **Confidence:** high on the two executed verdicts and on the structural/continuity issues; low-to-none on any runtime behavior of quests 3–5.
 
 ### Machine evidence (verbatim excerpt from `walk-evidence.md`)
 

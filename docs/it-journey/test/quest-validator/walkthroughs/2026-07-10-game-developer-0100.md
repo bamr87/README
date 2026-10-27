@@ -48,16 +48,12 @@ Key commands the engine actually ran (quoted/trimmed from `walk-evidence.json`):
 - `mkdir -p scripts/ci` → **passed** — "Directory created successfully."
 - **Assembled `python scripts/ci/verify.py`** → **passed** — "Wrote the full file
 verbatim and ran it against QUEST.md itself: correctly detected missing front matter (exit 1) and 7 dead-link warnings… built a controlled fixture repo… correct fm-required-key/fm-missing/link-broken findings, exit 0 when only warnings exist, exit 1 when any error exists, and **byte-identical findings.jsonl across repeated runs (determinism confirmed via diff)**." — the quest's central claim holds.
-- `pip install pyyaml && python scripts/ci/verify.py` → **passed** — "pyyaml 6.0.3
-  already present in Python 3.12.13 sandbox… behaved exactly as documented."
+- `pip install pyyaml && python scripts/ci/verify.py` → **passed** — "pyyaml 6.0.3 already present in Python 3.12.13 sandbox… behaved exactly as documented."
 - `.github/workflows/verify.yml` → **passed** — "Valid YAML… action versions
 (checkout@v4, setup-python@v5, upload-artifact@v4) are current and compatible with python-version 3.12." (Note: a local PyYAML `on:`→`True` YAML-1.1 quirk is cosmetic and does not affect real CI.)
-- Emitter-half snippet (no `__main__`) → **passed** — "just defines functions and
-  exits 0… Confirms the quest's own claim."
-- Checks-only snippet (no driver) → **reasoned** — "Not independently runnable… the
-  quest presents it purely as an intermediate explanation."
-- Mermaid quest-network diagram → **reasoned** — "mermaid-cli… failed to render only
-  due to a Chromium sandbox restriction… Statically the syntax… is valid."
+- Emitter-half snippet (no `__main__`) → **passed** — "just defines functions and exits 0… Confirms the quest's own claim."
+- Checks-only snippet (no driver) → **reasoned** — "Not independently runnable… the quest presents it purely as an intermediate explanation."
+- Mermaid quest-network diagram → **reasoned** — "mermaid-cli… failed to render only due to a Chromium sandbox restriction… Statically the syntax… is valid."
 
 The engine also verified **two real bugs by running them** (see Issues):
 > "a markdown file with malformed/unterminated YAML front matter… makes

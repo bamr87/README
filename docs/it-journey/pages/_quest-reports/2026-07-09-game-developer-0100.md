@@ -64,33 +64,21 @@ All live outcomes below come from the workflow's sealed execute-mode run (`walk-
 from the source only (see Issues / Chain Continuity) and make **no** pass/fail claim about its commands.
 
 ### 2. Docker Compose Orchestration — ⚠️ warn · 75%
-- **Per-dimension:** commands_work 3 · content_accuracy 3 · completeness 5 · clarity 4
-  · structure 5 · safety 5 · weight_covered 1.0.
-- **Snippet coverage:** `ran 16` (available_runnable 8; recorded 20) — **15 passed,
-  1 failed, 1 skipped, 3 reasoned**. Every runnable snippet executed.
+- **Per-dimension:** commands_work 3 · content_accuracy 3 · completeness 5 · clarity 4 · structure 5 · safety 5 · weight_covered 1.0.
+- **Snippet coverage:** `ran 16` (available_runnable 8; recorded 20) — **15 passed, 1 failed, 1 skipped, 3 reasoned**. Every runnable snippet executed.
 - **Passed, live:** Chapter 1 full stack built and ran with `docker compose up -d`;
 `docker compose ps` showed both services Up and "the Flask counter incremented correctly across three requests (1, 2, 3)." Chapter 2 service discovery by name (`redis`) worked over a custom network; named-volume persistence verified end-to-end — a Postgres row **survived `docker compose down` and reappeared after `up -d`**, then `down -v` "verifiably deleted the named volume." Chapter 3 `.env` substitution and `condition: service_healthy` startup gating both confirmed live.
 - **Failed, live:** `docker compose up -d --scale web=3` →
 `"Error response from daemon: … Bind for 0.0.0.0:8080 failed: port is already allocated"`. The `web` service publishes a fixed host port (`"${APP_PORT}:5000"`), so scaling cannot work as written.
 
 ### 3. Dockering Jekyll with Bootstrap 5 — ❌ fail · 30%
-- **Per-dimension:** commands_work 1 · content_accuracy 1 · completeness 1 · clarity 2
-  · structure 2 · safety 4 · weight_covered 1.0.
-- **Snippet coverage:** `ran 8` (available_runnable 4; recorded 9) — **4 passed, 4
-  failed, 1 skipped**.
+- **Per-dimension:** commands_work 1 · content_accuracy 1 · completeness 1 · clarity 2 · structure 2 · safety 4 · weight_covered 1.0.
+- **Snippet coverage:** `ran 8` (available_runnable 4; recorded 9) — **4 passed, 4 failed, 1 skipped**.
 - **Failed, live:**
-  - `docker-compose run jekyll jekyll new .` → `"docker-compose: command not found"`
-    (sandbox is Docker 28.0.4 / Compose v2.38.2 — only the `docker compose` space form
-    exists). Every hyphenated invocation fails.
-  - Even corrected to `docker compose …`, `jekyll new .` → `"Conflict: /srv/jekyll
-    exists and is not empty"` because the Dockerfile/compose file are bind-mounted in.
-  - `cd my-jekyll-site` → `"No such file or directory"` — `jekyll new .` never creates
-    that subfolder.
-  - A real `jekyll build` proved the Step 4 HTML snippet produces invalid nested HTML
-    (literal `<p>&lt;!DOCTYPE html&gt;</p>`, duplicated `<html>/<head>/<body>`) because
-    `layout: home` is left in place, and `{​% raw %​}{​% include head.html %​}{​% endraw %​}`
-    leaks verbatim into `_site/index.html` (grep-confirmed) because the `{​% raw %​}`
-    wrapper defeats the include.
+  - `docker-compose run jekyll jekyll new .` → `"docker-compose: command not found"` (sandbox is Docker 28.0.4 / Compose v2.38.2 — only the `docker compose` space form exists). Every hyphenated invocation fails.
+  - Even corrected to `docker compose …`, `jekyll new .` → `"Conflict: /srv/jekyll exists and is not empty"` because the Dockerfile/compose file are bind-mounted in.
+  - `cd my-jekyll-site` → `"No such file or directory"` — `jekyll new .` never creates that subfolder.
+  - A real `jekyll build` proved the Step 4 HTML snippet produces invalid nested HTML (literal `<p>&lt;!DOCTYPE html&gt;</p>`, duplicated `<html>/<head>/<body>`) because `layout: home` is left in place, and `{​% raw %​}{​% include head.html %​}{​% endraw %​}` leaks verbatim into `_site/index.html` (grep-confirmed) because the `{​% raw %​}` wrapper defeats the include.
 - **Passed, live:** `git init && git add . && git commit …` ran cleanly.
 
 ### 4. Frontend Forests — 🟨 not evaluated (reasoned only)
@@ -130,8 +118,7 @@ deprecated hyphenated CLI that was proven fatal in quest 3. **Fix:** `docker com
 **Low**
 - **[reasoned] · Frontend Forests · frontmatter/objectives** — `draft: true`,
 auto-seeded placeholder objectives, empty `tags`/`categories`. **Fix:** author real objectives + taxonomy before publishing (or keep drafted).
-- **[reasoned] · The Artisan's Forge · duplicate Resources section** — The Resources
-  block appears twice verbatim. **Fix:** delete the duplicate.
+- **[reasoned] · The Artisan's Forge · duplicate Resources section** — The Resources block appears twice verbatim. **Fix:** delete the duplicate.
 - **[reasoned] · Docker Compose Orchestration · `.gitignore` guidance** — Tells the
 reader to "add it to `.gitignore`" without the literal line. **Fix:** show `echo '.env' >> .gitignore`.
 - **[reasoned] · Docker Container Fundamentals · Chapter 3 multi-stage example** — The
@@ -157,16 +144,12 @@ is dependency-plausible (5 recommends 3), but a learner would get the best arc a
 
 - **What I ran vs. reasoned:** I ran **no** quest commands myself this session. All
 `passed`/`failed` outcomes above are transcribed from the **workflow-sealed** execute-mode evidence (`walk-evidence.json`), which the pipeline pre-computed because the engine's child `claude` processes can't authenticate from an agent's Bash tool. I read all five quest sources in plan order and reasoned about the linked journey (Chain Continuity + all issues tagged `[reasoned]`).
-- **Mode:** execute (per the sealed evidence). Sandbox: stock Docker 28.0.4 / Compose
-  v2.38.2 on the disposable runner.
-- **Coverage limits (mandatory honesty):** The evidence is **`auth_truncated: true`** —
-  the engine `requested 5` quests but `evaluated 3` and `scored 2`:
+- **Mode:** execute (per the sealed evidence). Sandbox: stock Docker 28.0.4 / Compose v2.38.2 on the disposable runner.
+- **Coverage limits (mandatory honesty):** The evidence is **`auth_truncated: true`** — the engine `requested 5` quests but `evaluated 3` and `scored 2`:
   - `docker-compose-orchestration` — full live verdict (33 turns, $0.94).
   - `frontend-docker` — full live verdict (36 turns, $1.35).
-  - `container-fundamentals` — **errored mid-run** (`claude exited 1`, hit `max_turns`);
-    **no verdict**, judged `reasoned` only.
-  - `frontend` and `jekyll-component-refactoring` — **never evaluated**; judged
-    `reasoned` only.
+  - `container-fundamentals` — **errored mid-run** (`claude exited 1`, hit `max_turns`); **no verdict**, judged `reasoned` only.
+  - `frontend` and `jekyll-component-refactoring` — **never evaluated**; judged `reasoned` only.
 So **only 2 of 5 quests carry live sandbox evidence.** The other 3 are static reads and are labeled as such throughout; I make no pass/fail claims about their commands.
 - **Confidence:** High for the two live-scored quests (real commands, real output).
 Medium for the three reasoned quests — my issues there are quotable from source (draft flags, placeholder objectives, deprecated `docker-compose`, `{​% raw %​}` reasoning), but they were not executed this session and deserve a real engine pass.

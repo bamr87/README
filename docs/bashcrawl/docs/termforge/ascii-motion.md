@@ -13,7 +13,7 @@ the file in the editor, not editing JavaScript.
 | Files | Registry | Bundled into | Drawn by |
 |---|---|---|---|
 | `termforge/motion/*.asciimtn` (banner, cow, sl) | file name | `termforge/core/art.js` (`TermForge.art`, vendored) | `Shell#art(name)`, the flavour pack |
-| `motion/art/*.asciimtn` (banner, encounters, rooms, …) | `src/help/data/motion.yaml` `art:` | `web/assets/js/art-clips.js` | the game `Runtime` (`art` option), `hud.js`, `shell.js` (`data-art`) |
+| `motion/art/*.asciimtn` (banner, encounters, rooms, …) | `src/help/data/motion.yaml` `art:` | `web/assets/js/art-clips.js` | the game `Runtime` (`art` option), `hud.js`, the React app's `<ArtClip name>` (`web/src/fx/ArtClip.tsx`); multi-frame art plays on the web through `ambient.js` |
 | `motion/clips/*.asciimtn` (radar, scan, warp, …) | `src/help/data/motion.yaml` `clips:` | `web/assets/js/fx-clips.js` (+ manifest) | `fx.js` (web stage), `apps/bashcrawl-motion.js` (TTY/telnet stage) |
 
 `scripts/build_motion.py` (run by `make web-build`) writes all three bundles. `make web-test`, `make test`, and CI fail when a bundle is stale. The generated index is [docs/generated/motion.md](../generated/motion.md).
@@ -24,17 +24,15 @@ the file in the editor, not editing JavaScript.
 2. Draw. Add frames, color, layers, keyframes, or effects. All of it plays (see below).
 3. Export → **Session (.asciimtn)** and save it over the original file.
 4. Preview it in a terminal: `make motion CLIP=motion/art/encounter-ghost.asciimtn`.
-5. `make web-build && make validate-contracts && make test-js`, then commit the
-   `.asciimtn` together with the regenerated bundles.
+5. `make web-build && make validate-contracts && make test-js`, then commit the `.asciimtn` together with the regenerated bundles.
 
 ## Workflow: add a picture
 
 - **Art the game prints:** save `motion/art/<name>.asciimtn`, add
-`art.<name>` (file, title, description) to `motion.yaml`, then draw it with `this.art("<name>")` in the runtime. Encounter portraits are found by name (`encounter-<script basename>`), and so are room vignettes (`room-<key>` for each key in `BashcrawlHud.VIGNETTE_KEYS`). Page markup uses `<pre data-art="<name>"></pre>`. The validator fails when the code asks for a name with no registry entry.
+`art.<name>` (file, title, description) to `motion.yaml`, then draw it with `this.art("<name>")` in the runtime. Art may have any number of frames: `art` lines and the terminal HUD print frame 0, and the web plays the whole clip (see *Ambient art* below). Encounter portraits are found by name (`encounter-<script basename>`), and so are room vignettes (`room-<key>` for each key in `BashcrawlHud.VIGNETTE_KEYS`). Page art is a React component: `<ArtClip name="<name>" />` (it renders the `<pre data-art>` and plays the clip). The validator fails when the code asks for a name with no registry entry (`.art("x")`, `<ArtClip name="x">`).
 - **A stage animation for a command:** save `motion/clips/<motion>.asciimtn`,
 where `<motion>` is a motion name from `web/assets/js/fx.js`. Then add `clips.<motion>` to `motion.yaml`. `aliases` reuse a clip for other motions, and `events` let a game event (levelup/quest/unlock) replace the command's motion.
-- **Framework default art:** save `termforge/motion/<name>.asciimtn`. It has
-  to stay brand-neutral (`test/content-separation.test.js`).
+- **Framework default art:** save `termforge/motion/<name>.asciimtn`. It has to stay brand-neutral (`test/content-separation.test.js`).
 
 Have existing text art? Convert it with `node termforge/node/motion-cli.js from-text art.txt --name ghost -o motion/art/ghost.asciimtn`.
 
@@ -75,6 +73,15 @@ Not rendered: procedural generator layers and WebGL post effects. `flattenSessio
 
 API: `parse`, `flattenSession`, `Player`, `renderFrame` (cells, text, 24-bit ANSI, Line-protocol `art` records), `Library` (named clips + aliases, each parsed once), `describe`, `toSession`, `toText`, `evaluateEasing`, `interpolateKeyframes`.
 
+## Ambient art on the web
+
+The browser plays multi-frame art in place, through `web/assets/js/ambient.js` (`BashcrawlAmbient`):
+
+- the room vignette in the Location panel loops (`room-*`: torches flicker at the entrance, the cellar drips, mist drifts through the graveyard, light glints across the vault's gems, the rift breathes, a bat crosses the deep). A room change crossfades the old scene into the new one.
+- `<ArtClip>` art in the page plays once and rests on its last frame (the landing logo materialises out of static); `loop` makes it ambient.
+
+Cells painted in the clip's default colour (`#ffffff`) inherit the CSS colour of their element, so one clip follows the theme and the per-area colours in `terminal.css`; only highlights (flames, water, a glint) carry their own hue. A hidden tab pauses every clip; a detached node ends its loop; under `prefers-reduced-motion` a loop shows its first frame and a reveal its last, with no timer. The terminal HUD draws frame 0 of the same files.
+
 ## Authoring with an AI agent (optional)
 
 The [`ascii-motion-mcp`](https://www.npmjs.com/package/ascii-motion-mcp) MCP server lets an agent draw and animate in the editor. The original stage clips were made with it. It is not in the repo's `.mcp.json`, so the blank-slate playtest never starts it. To use it, add it to your own client config:
@@ -96,5 +103,4 @@ Ask the agent to export a **session**, save it under `motion/`, and register it 
 
 - **Terminal-core** (`entrance/` scrolls and encounter scripts) is pure POSIX
 shell played with real `cat`. Its heredoc art stays plain text, because the game has no dependencies and no JSON reader.
-- **`node/gem.js` sprites** are pixel bitmaps for the half-block `PixelBuffer`,
-  not text art. The golden pixel-identity contract pins them.
+- **`node/gem.js` sprites** are pixel bitmaps for the half-block `PixelBuffer`, not text art. The golden pixel-identity contract pins them.

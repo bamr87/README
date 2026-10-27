@@ -9,14 +9,28 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **17 pages** across **2 sections** (max depth 2).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **28 pages** across **5 sections** (max depth 3).
 
 - [🛠️ scripts](../scripts/README.md)
 - [Changelog](../scripts/CHANGELOG.md)
-- [CLAUDE.md](../scripts/CLAUDE.md)
+- [CLAUDE.md](../scripts/AGENTS.md)
 - [Linting Configuration Management](../scripts/linting/README.md)
+- [PRD — scripts](../scripts/PRD.md)
 - [Rename Directory Utility - Quick Reference](../scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md)
+- [scripts](../scripts/CLAUDE.md)
+- [scripts tools](../scripts/tools/README.md)
 - [Security Policy](../scripts/SECURITY.md)
+- **[Documentation](../scripts/docs/README.md)** <small>(8)</small>
+  - [scripts documentation](../scripts/docs/README.md)
+  - [scripts — Constitution](../scripts/docs/constitution.md)
+  - **[Amendments — scripts](../scripts/docs/amendments/README.md)** <small>(3)</small>
+    - [Amendments — scripts](../scripts/docs/amendments/README.md)
+    - [0001 — Ratify the constitution](../scripts/docs/amendments/0001-ratify-constitution.md)
+    - [NNNN — Title of the amendment](../scripts/docs/amendments/0000-template.md)
+  - **[Architecture Decision Records](../scripts/docs/adr/README.md)** <small>(3)</small>
+    - [Architecture Decision Records](../scripts/docs/adr/README.md)
+    - [ADR 0001 — Record architecture decisions](../scripts/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR NNNN — Title in sentence case](../scripts/docs/adr/0000-template.md)
 - **[🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)** <small>(7)</small>
   - [🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)
   - [ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/FORKME.md)

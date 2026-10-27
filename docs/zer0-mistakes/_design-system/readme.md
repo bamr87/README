@@ -28,8 +28,7 @@ Everything here is derived from the upstream repository — explore it to build 
   - `docs/ui/design-system.md`, `docs/ui/design-tokens.md`, `docs/ui/components.md` — upstream design docs
 - **Live demo:** https://zer0-mistakes.com/
 - **RubyGems:** https://rubygems.org/gems/jekyll-theme-zer0
-- Theme version at last sync: **1.28.0** (first captured at 1.18.1; kept in
-  lockstep with the repo's `_design-system/` mirror — see its `SYNC.md`)
+- Theme version at last sync: **1.28.0** (first captured at 1.18.1; kept in lockstep with the repo's `_design-system/` mirror — see its `SYNC.md`)
 
 > The reader may not have access to all of these — they are recorded so that, if
 > you do, you can go deeper than this snapshot.
@@ -103,12 +102,10 @@ with a third "auto" mode following system preference, persisted to localStorage.
 
 **System: [Bootstrap Icons](https://icons.getbootstrap.com/).** This is the single, unified icon set across the entire theme — referenced as `<i class="bi bi-name">`. It is a **font/SVG icon library** loaded via CDN; `site.default_icon` is `bi`.
 
-- **Stroke/style:** Bootstrap Icons' clean, mostly-outline style at a consistent
-  weight. Sizes via Bootstrap's `.fs-*` utilities; color via `text-primary`, etc.
+- **Stroke/style:** Bootstrap Icons' clean, mostly-outline style at a consistent weight. Sizes via Bootstrap's `.fs-*` utilities; color via `text-primary`, etc.
 - **Where they appear:** navbar (`bi-search`, `bi-gear`, `bi-list`, `bi-three-dots`,
 `bi-house`, `bi-github`), feature cards (`bi-shield-check`, `bi-boxes`, `bi-lightning-charge`), CTAs (`bi-rocket-takeoff`, `bi-list-check`), blog cards (`bi-journal-richtext`, `bi-calendar3`, `bi-tags`, `bi-collection`), callouts, and the FAB stack.
-- **Icon chips:** feature icons sit inside a circular tinted disc — `rounded-circle`,
-  `rgba(primary, .12)` background, primary-colored icon, ~3.5rem.
+- **Icon chips:** feature icons sit inside a circular tinted disc — `rounded-circle`, `rgba(primary, .12)` background, primary-colored icon, ~3.5rem.
 
 **To use Bootstrap Icons in your HTML**, link the CDN in `<head>`:
 ```html

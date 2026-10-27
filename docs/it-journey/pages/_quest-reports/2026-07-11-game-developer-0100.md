@@ -145,19 +145,10 @@ Read as one Game-Developer → 0100 journey, the slice **does not currently hold
 - **What I ran vs. reasoned.** I ran no quest commands myself (read-only session); the
 *engine* ran them in its disposable sandbox and I reported its witnessed results. For quests **3–5** that evidence is real and rich (per-dimension scores + executed snippet tallies). For quests **1–2** there is **no content verdict** — I reasoned about them statically from the source only, and I have labelled every statement about them `reasoned`.
 - **Coverage limits (honest).**
-  1. **2 of 5 quests errored** (`max_turns`) and are un-scored — the two most important
-     quests in the level (the Docker foundation) among them. The engine's own `fail /
-     0.0` for these reflects an execution abort, **not** a content judgment, and I have
-     not reported it as one.
-  2. The abort cause was a **sandbox networking limitation**: published container ports
-     were not reachable via `curl localhost:8080`, so the agent looped until the turn
-     cap. This is an engine/sandbox artifact and may recur; the Docker quests likely
-     need a lighter verification step (or a longer turn budget / `--no-network` shim) to
-     ever score.
-  3. This is a **window (1 of 2)** of an 8-quest level; quests 6–8 were out of scope and
-     the level cannot be certified from this run alone.
-  4. Browser-dependent behavior (scroll animation, live Bootstrap rendering) was not
-     exercised — no browser in the sandbox — and is marked `reasoned` where relevant.
+  1. **2 of 5 quests errored** (`max_turns`) and are un-scored — the two most important quests in the level (the Docker foundation) among them. The engine's own `fail / 0.0` for these reflects an execution abort, **not** a content judgment, and I have not reported it as one.
+  2. The abort cause was a **sandbox networking limitation**: published container ports were not reachable via `curl localhost:8080`, so the agent looped until the turn cap. This is an engine/sandbox artifact and may recur; the Docker quests likely need a lighter verification step (or a longer turn budget / `--no-network` shim) to ever score.
+  3. This is a **window (1 of 2)** of an 8-quest level; quests 6–8 were out of scope and the level cannot be certified from this run alone.
+  4. Browser-dependent behavior (scroll animation, live Bootstrap rendering) was not exercised — no browser in the sandbox — and is marked `reasoned` where relevant.
 - **Confidence.** *High* for the three scored quests (real, reproducible command
 failures with quoted output). *Low* for quests 1–2 — structurally they look strong and well-linked, but I witnessed nothing, so I make no quality claim about them.
 - **Overall verdict = fail** for the slice: average 51.7% across scored quests, two

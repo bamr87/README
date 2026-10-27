@@ -18,7 +18,7 @@ There is no application to build and no dependency install — every script is s
 
 | Script | Command | What it does |
 | --- | --- | --- |
-| [`project-init.sh`](project-init.sh) | `project-wizard` | Interactive/non-interactive project scaffolding wizard — Django, React, Node, Python, Rust, Go, custom; optional Docker, CI, license, and GitHub repo creation |
+| [`project-init.sh`](project-init.sh) | `project-wizard` | Interactive/non-interactive project scaffolding wizard — Django, React, Node, Python, custom; optional Docker, CI, license, and GitHub repo creation |
 | [`forkme.sh`](FORKME/forkme.sh) → `FORKME/forkme.sh` | `forkme` | Repository forking/cloning utility with 10 strategies (full, shallow, sparse, toplevel, structure, filetype, analysis, mirror, bundle, metadata-only) |
 | [`STASHME/stashme.sh`](STASHME/stashme.sh) | `stashme` | Multi-repo cloud stash — pushes uncommitted work across many repos to timestamped `stashme/…` backup branches, with restore and cleanup modes |
 | [`git_init.sh`](git_init.sh) | `git-init` | Interactive/headless git + GitHub repo creator; prefers `gh`, falls back to `npx degit` for templates, uses gitignore.io for `.gitignore` |
@@ -39,7 +39,7 @@ cd /path/to/bamr87        # the hub checkout
 ./tools/setup.sh          # or: ./tools/setup-dev.sh
 ```
 
-**If you only have this repo**, use the standalone installer. It is narrower on purpose — it wires up the Project Initialization Wizard only (`project-wizard`), creates `~/.project-wizard/`, appends `~/.local/bin` to your shell `PATH`, and drops a copy of `env.example` for you to customize:
+**If you only have this repo**, use the standalone installer. It is narrower on purpose — it wires up the Project Initialization Wizard only (`project-wizard`), creates `~/.project-wizard/`, appends `~/.local/bin` to your shell `PATH`, and drops a copy of `.env.example` for you to customize:
 
 ```bash
 git clone https://github.com/bamr87/scripts.git
@@ -79,14 +79,17 @@ PROJECT_TYPE=django PROJECT_NAME=my-api SETUP_DOCKER=true SETUP_CI=true \
 ./project-init.sh --type react --name my-react-app --dir ~/projects/my-react-app
 ```
 
-Copy [`env.example`](env.example) to `.env` to set your own defaults. Key options:
+To set your own defaults, copy [`.env.example`](.env.example) and either pass it with `--config FILE` (any mode; it is applied where it appears, so put it first and let later flags override it) or save it as `.env` in the directory you run the wizard from (interactive mode only; a `.env` overrides flags and `--config`). Only the variables below are read; the rest of `.env.example` is reserved and currently ignored. An unsupported `PROJECT_TYPE` stops the wizard before anything is created. Key options:
 
 | Variable | Description | Options |
 | --- | --- | --- |
-| `PROJECT_TYPE` | Type of project to create | `django`, `react`, `node`, `python`, `rust`, `go`, `custom` |
+| `PROJECT_TYPE` | Type of project to create | `django`, `react`, `node`, `python`, `custom` |
 | `PROJECT_NAME` | Name of your project | Any valid directory name |
-| `GITHUB_USERNAME` | Your GitHub handle | — |
-| `LICENSE` | License type | `MIT`, `Apache-2.0`, `GPL-3.0`, `BSD-3-Clause`, `None` |
+| `PROJECT_DIR` | Where to create it | Defaults to `~/github/$PROJECT_NAME` |
+| `PROJECT_DESCRIPTION` | Used in the README and GitHub repo | — |
+| `GITHUB_USERNAME` / `GITHUB_EMAIL` | Your GitHub handle and email | Default to `git config user.name` / `user.email` |
+| `LICENSE` | License type | `MIT`, `Apache-2.0`, `GPL-3.0`, `None` |
+| `PRIVATE_REPO` | Create the GitHub repo as private | `true`, `false` |
 | `SETUP_DOCKER` | Create Docker configuration | `true`, `false` |
 | `SETUP_CI` | Set up GitHub Actions | `true`, `false` |
 
@@ -95,12 +98,12 @@ Full option list:
 ```text
 Usage: project-init.sh [OPTIONS]
 
-    --config FILE       Use specific configuration file
-    --type TYPE         Set project type
+    --config FILE       Load defaults from an env-style file (e.g. a copy of .env.example)
+    --type TYPE         Set project type (django, react, node, python, custom)
     --name NAME         Set project name
     --dir DIRECTORY     Set project directory
     --non-interactive   Run in non-interactive mode (uses env vars)
-    --help              Show help message
+    -h, --help          Show help message
 ```
 
 The wizard logs to `~/.project-wizard/wizard.log`.
@@ -168,17 +171,20 @@ Renames a directory with pre-flight validation — checks source/target paths an
 
 ```bash
 ./create_package.sh awesome-lib   # → ~/github/awesome-lib, seeded from microsoft/python-package-template
+./create_package.sh --help
 ```
+
+The name must be a plain directory name; anything starting with `-` or containing `/` is rejected. The template files are staged (`git add .`) but not committed.
 
 ## 🔒 Prerequisites
 
 **Required**: Git and Bash 4.0+ (plus Python 3 for `tools/unwrap-prose.py`).
 
-**Optional, depending on the tool**: GitHub CLI (`gh`) for repository creation and forking, `curl` for gitignore.io lookups, `rsync` for `create_package.sh`, Docker for `rename-directory.sh` container handling, and the language toolchains (Python 3.8+, Node 16+, Rust/Cargo, Go 1.21+) matching whatever `project-init.sh` scaffolds.
+**Optional, depending on the tool**: GitHub CLI (`gh`) for repository creation and forking, `curl` for gitignore.io lookups, `rsync` for `create_package.sh`, Docker for `rename-directory.sh` container handling, and the language toolchains (Python 3.8+ for `django`/`python`, Node 16+ with `npm`/`npx` for `react`/`node`) matching whatever `project-init.sh` scaffolds.
 
 ## Project structure
 
-Each script sits at the root (or in its own folder, such as `FORKME/` and `STASHME/`); see the [Tool index](#-tool-index) for what each one does. `tools/` holds repo maintenance scripts.
+Each script sits at the root (or in its own folder, such as `FORKME/` and `STASHME/`); see the [Tool index](#-tool-index) for what each one does. `tools/` holds repo maintenance scripts ([index](tools/README.md)). The rest is hub-seeded SDLC scaffolding rather than tooling: [`docs/`](docs/README.md) (docs index and the [`docs/adr/`](docs/adr/README.md) decision log), [`features/features.yml`](features/features.yml) (the feature index) with [`verify/`](verify/verify.yml) (user scenarios), [`public/`](public/) (the page-feedback widget), and [`.github/sdlc.yml`](.github/sdlc.yml) (this repo's SDLC profile).
 
 ## ✅ Development
 
@@ -192,7 +198,7 @@ shellcheck --severity=warning *.sh FORKME/forkme.sh STASHME/stashme.sh
 python3 tools/unwrap-prose.py --check     # fix with: --write
 ```
 
-CI is [`.github/workflows/ci.yml`](.github/workflows/ci.yml), a thin caller of the hub's shared `bamr87/bamr87/.github/workflows/standard-ci.yml` gate — don't edit gate logic here. [`.github/workflows/claude.yml`](.github/workflows/claude.yml) is the hub-seeded `@claude` mention handler, and [`.github/workflows/markdown-oneline.yml`](.github/workflows/markdown-oneline.yml) is the prose gate.
+CI is [`.github/workflows/ci.yml`](.github/workflows/ci.yml), a thin caller of the hub's shared `bamr87/bamr87/.github/workflows/standard-ci.yml` gate — don't edit gate logic here. [`.github/workflows/claude.yml`](.github/workflows/claude.yml) is the hub-seeded `@claude` mention handler, [`.github/workflows/markdown-oneline.yml`](.github/workflows/markdown-oneline.yml) is the prose gate, and `conformance.yml`, `release.yml` (release-please), and `verify.yml` are likewise thin callers of hub workflows.
 
 New scripts follow the existing conventions: `set -euo pipefail`, a structured header comment (File/Description/Author/Version), colour-aware logging helpers, and a row in the tool index above.
 

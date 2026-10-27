@@ -1,0 +1,9 @@
+---
+source_file: README
+title: Readme
+---
+Welcome, traveller.
+
+This lab is a tiny map of a filesystem. North, south, east and west are
+directories; inside them are files and more directories. Somewhere a gem is
+hidden. Walk it with cd, look with ls, and read with cat.

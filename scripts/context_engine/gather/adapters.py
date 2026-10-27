@@ -139,6 +139,21 @@ def _run(args: Sequence[str], cwd: Optional[Path] = None,
                           capture_output=True, text=True, timeout=timeout)
 
 
+def work_tree_root(path: Path) -> Optional[Path]:
+    """The top of the git working tree that holds `path`, or None outside one.
+
+    A monorepo package (zer0-CMS's `packages/zer0-mistakes/`) is reviewed in
+    place: git run from inside it lists only that package's files and reports
+    the containing checkout's branch and commit.
+    """
+    try:
+        done = _run(["git", "rev-parse", "--show-toplevel"], cwd=path)
+    except (subprocess.TimeoutExpired, OSError):
+        return None
+    top = done.stdout.strip()
+    return Path(top).resolve() if done.returncode == 0 and top else None
+
+
 def _git_show(clone_dir: Path, path: str) -> Optional[str]:
     try:
         done = _run(["git", "show", f"HEAD:{path}"], cwd=clone_dir)
@@ -227,7 +242,7 @@ def gather_local(path: Path, name: Optional[str] = None,
     source = RepoSource(name=name or path.name, repo=repo or path.name,
                         url=url or str(path), clone_dir=path,
                         meta=dict(meta or {}), working_tree=True)
-    if not (path / ".git").exists():
+    if work_tree_root(path) is None:
         source.error = f"not a git working tree: {path}"
         return source
 

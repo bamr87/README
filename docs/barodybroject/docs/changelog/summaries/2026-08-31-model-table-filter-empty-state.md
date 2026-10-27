@@ -66,8 +66,7 @@ The multi-column defect had the same shape: the function's signature only admitt
 
 ### Fix Description
 
-1. **Template** — `model_table.html` now renders a second empty-state row,
-   always present and shipping hidden:
+1. **Template** — `model_table.html` now renders a second empty-state row, always present and shipping hidden:
 
    ```html
    <tr data-filter-empty style="display: none;">

@@ -45,8 +45,7 @@ Both v0.6.0 migrations were written to reverse cleanly, and neither did so on th
 
 1. **Reversing a `RemoveField` re-adds the column with no default.** If the
 column was `NOT NULL`, the reverse fails on any populated table before your restore step can run. `0002` fixes this by altering the three `AppConfig` columns to `blank=True, default=""` *before* removing them, so the reverse `AddField` succeeds and the restore then repopulates them.
-2. **`null=True` to `NOT NULL` fails while NULLs remain.** Postgres refuses
-   `SET NOT NULL` outright. `0003` backfills first in a `RunPython` step.
+2. **`null=True` to `NOT NULL` fails while NULLs remain.** Postgres refuses `SET NOT NULL` outright. `0003` backfills first in a `RunPython` step.
 
 Test the whole cycle, not just forward, against a database with realistic rows:
 

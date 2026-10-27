@@ -84,8 +84,7 @@ La config du thème embarque un ID `google_analytics:` actif et un `api_key:` Po
 Au minimum :
 
 - `_data/navigation/main.yml` — sans lui, la barre de navigation est vide.
-- `_data/ui-text.yml` — lu en tant que `site.data.ui` par le pied de page, le fil d'Ariane et
-  la modale de recherche ; sans lui, les libellés sont vides.
+- `_data/ui-text.yml` — lu en tant que `site.data.ui` par le pied de page, le fil d'Ariane et la modale de recherche ; sans lui, les libellés sont vides.
 - `_data/authors.yml` — sans lui, les signatures et les cartes d'auteur n'ont pas de données.
 
 ### 5. Rédigez à la main `/search.json` et `/sitemap/`
@@ -150,8 +149,7 @@ Les badges de tags, le lien « Graphe complet » du graphe local, le fil d'Arian
 
 - Ouvrez la recherche de la barre de navigation et saisissez du texte — les résultats apparaissent (élément 5).
 - La barre de navigation et le pied de page affichent vos libellés et liens (éléments 2, 4).
-- Affichez le code source d'un article — aucun identifiant `google_analytics` ni clé PostHog que vous n'avez pas défini
-  (élément 3).
+- Affichez le code source d'un article — aucun identifiant `google_analytics` ni clé PostHog que vous n'avez pas défini (élément 3).
 - Exécutez un vérificateur de liens sur le `_site` généré — aucune erreur 404 injectée par le thème.
 
 ## Voir aussi

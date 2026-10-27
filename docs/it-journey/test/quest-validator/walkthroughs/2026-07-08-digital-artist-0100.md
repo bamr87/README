@@ -93,8 +93,7 @@ the locally-generated `findings.jsonl` / scratch test files. · *Suggested fix:*
 - **MEDIUM (reasoned)** · Quest 2 · Chapter 4 CI example (lines 353–401) · *Observed
 in source:* the "first GitHub Action" runs `npm ci`, `npm test`, `npm run lint`, `npm audit`, `npm run coverage` — all assume a Node/npm project with those scripts defined. A learner who followed Chapter 1 (a repo seeded only with `README.md` / `auth.js`) and copies this verbatim gets failing steps with no npm project. · *Suggested fix:* state the Node/`package.json` assumption, or provide a stack-agnostic first workflow. *Not tested — reasoned from source only.*
 
-- **LOW (reasoned)** · Quest 2 · Chapter 1 remote push (lines 193–197) · *Observed in
-  source:* `git remote add origin https://github.com/yourusername/my-first-quest.git`
+- **LOW (reasoned)** · Quest 2 · Chapter 1 remote push (lines 193–197) · *Observed in source:* `git remote add origin https://github.com/yourusername/my-first-quest.git`
   + `git push -u origin main` will fail unless the learner first creates that repo on
 GitHub; the quest doesn't call out the "create the empty remote first" step. · *Suggested fix:* add a one-line "create the repo on GitHub first" note. *Reasoned.*
 

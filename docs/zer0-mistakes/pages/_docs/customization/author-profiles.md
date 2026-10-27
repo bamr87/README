@@ -121,17 +121,14 @@ Every `/authors/:key/` page is a live dashboard, not a static list — all clien
 
 ![The interactive author profile page: a hero with avatar, bio and blurb, a stats dashboard that doubles as per-collection type filters, plus a search box, sort control and a clickable topic cloud]({{ '/assets/images/docs/author-profiles/interactive-profile.png' | relative_url }})
 
-- **Hero** — avatar, name, role, the `tagline` blurb, bio, `location`,
-  last-active date, expertise chips, and social links.
+- **Hero** — avatar, name, role, the `tagline` blurb, bio, `location`, last-active date, expertise chips, and social links.
 - **Stats dashboard** — one card per collection the author has written in
 (Posts, Docs, Notes, …) plus an "All" card. The cards *are* the type filter: click one to show only that collection.
 - **Search** — filters by title and tags as you type.
 - **Sort** — newest, oldest, or title A–Z.
 - **Topics** — a clickable tag cloud; pick a topic to narrow the grid.
-- **Live count + clear** — "Showing N of M" (announced to screen readers via
-  `aria-live`), plus a Clear control whenever a filter is active.
-- **Deep links** — the active type filter is reflected in the URL hash
-  (e.g. `/authors/bamr87/#type=docs`), so a filtered view is shareable.
+- **Live count + clear** — "Showing N of M" (announced to screen readers via `aria-live`), plus a Clear control whenever a filter is active.
+- **Deep links** — the active type filter is reflected in the URL hash (e.g. `/authors/bamr87/#type=docs`), so a filtered view is shareable.
 
 Behaviour lives in `assets/js/author-profile.js`, which self-activates on the `[data-author-profile]` container (safe to load anywhere). With JavaScript disabled, every contribution still renders in a normal grid (fully crawlable), and all animations respect `prefers-reduced-motion`.
 
@@ -160,10 +157,8 @@ The `persona` block **is** the reusable template. When an AI agent writes a post
 
 The theme ships two example personas (see their profiles at `/authors/cassandra/` and `/authors/vega/`):
 
-- **Cassandra** — a paranoid *AI Security Analyst* who escalates trivial gaps
-  (a favicon, a trailing slash) into civilization-ending breaches.
-- **Vega** — an enthusiastic *AI Data Analyst* who fits Bayesian hierarchical
-  models and UMAP embeddings to gloriously trivial data.
+- **Cassandra** — a paranoid *AI Security Analyst* who escalates trivial gaps (a favicon, a trailing slash) into civilization-ending breaches.
+- **Vega** — an enthusiastic *AI Data Analyst* who fits Bayesian hierarchical models and UMAP embeddings to gloriously trivial data.
 
 **Transparency first:** AI authorship is always disclosed visibly — the badge and disclosure are not optional and never hidden.
 

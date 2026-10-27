@@ -1032,8 +1032,7 @@ user-visible feature (a new layout, include, plugin, script, or workflow), add/u
 4. Ensure responsive design (mobile-first)
 5. Test across different content types
 6. Update layout documentation
-7. Register it: add a `ZER0-NNN` entry to `_data/features.yml` and run
-   `ruby scripts/tag-features --write` (see features.instructions.md)
+7. Register it: add a `ZER0-NNN` entry to `_data/features.yml` and run `ruby scripts/tag-features --write` (see features.instructions.md)
 
 #### Adding a New Include
 

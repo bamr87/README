@@ -63,8 +63,7 @@ All results are from **execute mode** (`walk-evidence.json`, sealed by the workf
 ### 1. Summon the Golem — 88 ✅ (5/5 passed, 1 skipped, 2 reasoned)
 Dimensions: commands_work 4 · content_accuracy 5 · completeness 4 · clarity 4 · structure 5 · safety 5
 
-- **passed** — Composite `action.yml` and the workflow step YAML fragments parse
-  cleanly with pyyaml (no syntax errors).
+- **passed** — Composite `action.yml` and the workflow step YAML fragments parse cleanly with pyyaml (no syntax errors).
 - **passed** — The no-auth guard `if [ -z "${CLAUDE_CODE_OAUTH_TOKEN:-}" ]; then …
 exit 0; fi` was extracted and run with the var unset: it printed the `::warning::` line and exited 0, exactly as the quest claims ("No auth = exit 0 with a warning").
 - **passed** — The gate logic (`go=false; if [ "$ENABLED" = "true" ] && [ -n
@@ -190,8 +189,7 @@ Prerequisite reality for a learner walking in plan order:
 the only real intra-slice dependency edge, and the planner honored it by ordering PRD before those two. But PRD is exactly the quest that *fails*: its Docker core is unrunnable, so the "unlock" is hollow — a learner following the intended order hits a wall on quest 2 and cannot legitimately complete it before moving on. The good news: Hidden Gem and Prompt Crystal don't actually consume any artifact PRD produces, so the wall is a motivation/credential break, not a hard technical block on quests 3–4.
 - **Hidden Gem** requires `/quests/0000/hello-noob/` (an earlier level — reasonable and
 met by normal progression) and is the gentlest, most self-contained entry (🟢 Easy) — arguably the best *first* quest for a newcomer to this level, ahead of the Medium ones.
-- **Prompt Crystal** requires `/quests/0010/prompt-engineering-mastery/` (prior level).
-  It stands alone fine; its defects are content-quality, not continuity.
+- **Prompt Crystal** requires `/quests/0010/prompt-engineering-mastery/` (prior level). It stands alone fine; its defects are content-quality, not continuity.
 
 **Ordering observation for a maintainer:** as a *learning* path for a Data Scientist, Hidden Gem (Easy, self-contained) → Prompt Crystal (prompt skills) → Golem (agent in CI, but flag the 0101 Warden's-Gate prerequisite) is a smoother ramp than the current dependency-sort, and PRD Codex should be treated as *not yet walkable* until its tooling bootstrap is added. No quest in the slice silently depends on an artifact produced by another that I could not otherwise obtain — the friction is (a) the unmet Warden's-Gate repo state Golem assumes, and (b) PRD's missing tooling.
 

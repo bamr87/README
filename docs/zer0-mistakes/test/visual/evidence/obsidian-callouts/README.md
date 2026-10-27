@@ -21,10 +21,8 @@ BASE_URL=http://localhost:4000 node test/visual/obsidian-callouts-evidence.mjs
 
 - **`01-disclosure-before-after.png`** — the collapsed `[!note]-` callout before
 vs after activating its title: the chevron rotates, the body is revealed, and `aria-expanded` flips `false → true`.
-- **`02-expanded-default.png`** — a `[!tip]+` callout renders open by default
-  (`aria-expanded="true"`, body visible).
-- **`metrics.json`** — the measured `aria-expanded` / `body hidden` /
-  `data-collapsed` values for each state.
+- **`02-expanded-default.png`** — a `[!tip]+` callout renders open by default (`aria-expanded="true"`, body visible).
+- **`metrics.json`** — the measured `aria-expanded` / `body hidden` / `data-collapsed` values for each state.
 
 ## Measured transitions (from `metrics.json`)
 

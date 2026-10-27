@@ -105,27 +105,9 @@ All outcomes below are from commands the execute engine **actually ran** in the 
 (no deps) → `rest-principles` (`required_quests: [api-fundamentals]`). Continuity is **clean**: quest 1 teaches HTTP methods/status/JSON and quest 3 legitimately builds on it (resources, statelessness, RMM). A learner finishing quest 1 is genuinely ready for quest 3. Only soft gap: quest 3's status-code challenge leans on knowledge quest 1 covers but quest 3 doesn't re-teach — acceptable given the hard dependency.
 
 - **Agentic gh-600 thread** (*The Agentic Codex*): here continuity **breaks**.
-  1. **Duplicate/divergent openers.** Quest 2 ("Initiation Rites: Agents in the SDLC",
-     `agentic-codex-01`) and quest 4 ("Initiation Rites: **Embedding** Agents in the
-     SDLC", `agentic-sdlc-integration`) are near-duplicate Domain-1 "agents in the
-     SDLC" quests with almost identical titles but different `quest_series`
-     (`The Agentic Codex` vs `agentic-ai-mastery`) and wildly different quality
-     (86 ✅ vs 52 ❌). A learner meeting both in one window will be confused about
-     which is canonical. Worth a maintainer decision to merge or clearly differentiate.
-  2. **A phantom shared prerequisite.** Quests 4 and 5 both assume a populated
-     `work/gh-600/` scaffold (with `notes/`, `task-cards/`, `schemas/`,
-     `scripts/validate_quest.py`) as if an earlier quest created it — but **no quest
-     in the slice ever does**. Quest 2, the passing opener, writes `scripts/agent-trace.sh`
-     ad hoc and never establishes `work/gh-600/`. So the dependency chain
-     `agentic-sdlc-integration` (`unlocks` → `agentic-plan-vs-action-boundaries`,
-     which lists it as `required_quests`) is honored on paper but the actual working
-     directory the two quests share is never provisioned. The result is that the
-     entire gh-600 sub-chain fails on its **first command** and again at its closing
-     self-check — a beginner is blocked end-to-end.
-  3. **Compounding breakage downstream.** Quest 5 inherits the same missing-scaffold
-     and missing-`validate_quest.py` bugs *and* adds structurally broken code fences,
-     so even the conceptual reading experience degrades. The learner who somehow
-     pushed past quest 4 lands on a page that renders garbled.
+  1. **Duplicate/divergent openers.** Quest 2 ("Initiation Rites: Agents in the SDLC", `agentic-codex-01`) and quest 4 ("Initiation Rites: **Embedding** Agents in the SDLC", `agentic-sdlc-integration`) are near-duplicate Domain-1 "agents in the SDLC" quests with almost identical titles but different `quest_series` (`The Agentic Codex` vs `agentic-ai-mastery`) and wildly different quality (86 ✅ vs 52 ❌). A learner meeting both in one window will be confused about which is canonical. Worth a maintainer decision to merge or clearly differentiate.
+  2. **A phantom shared prerequisite.** Quests 4 and 5 both assume a populated `work/gh-600/` scaffold (with `notes/`, `task-cards/`, `schemas/`, `scripts/validate_quest.py`) as if an earlier quest created it — but **no quest in the slice ever does**. Quest 2, the passing opener, writes `scripts/agent-trace.sh` ad hoc and never establishes `work/gh-600/`. So the dependency chain `agentic-sdlc-integration` (`unlocks` → `agentic-plan-vs-action-boundaries`, which lists it as `required_quests`) is honored on paper but the actual working directory the two quests share is never provisioned. The result is that the entire gh-600 sub-chain fails on its **first command** and again at its closing self-check — a beginner is blocked end-to-end.
+  3. **Compounding breakage downstream.** Quest 5 inherits the same missing-scaffold and missing-`validate_quest.py` bugs *and* adds structurally broken code fences, so even the conceptual reading experience degrades. The learner who somehow pushed past quest 4 lands on a page that renders garbled.
 
 **Net:** the API half of this window is a sound, ship-ready mini-path; the agentic half does not hold together as a learnable chain until the `work/gh-600` scaffold is created (or the instructions switched to `mkdir -p`), the `validate_quest.py` script is provided or removed, and quest 5's fences are repaired.
 

@@ -16,10 +16,8 @@ title: Run zer0-mistakes
 
 ## Prerequisites
 
-- **Docker Desktop running** (`docker ps` must work). Serving is Docker-only —
-  see Gotchas for why you should not use the host's `bundle exec jekyll serve`.
-- **Node.js** (tested with v25) and the project's Playwright install. In a fresh
-  clone, install it once:
+- **Docker Desktop running** (`docker ps` must work). Serving is Docker-only — see Gotchas for why you should not use the host's `bundle exec jekyll serve`.
+- **Node.js** (tested with v25) and the project's Playwright install. In a fresh clone, install it once:
   ```bash
   npm install                       # installs @playwright/test
   npx playwright install chromium   # downloads the Chromium browser
@@ -110,8 +108,7 @@ Docker is already up, either reuse it (`BASE_URL=http://localhost:4000`, no spaw
 `SyntaxError: Failed to execute 'querySelector' on 'Element': '#404' is not a valid selector.` (an ID starting with a digit). The `--smoke` run marks that route **FAIL** because of it, even though it returns 200 and renders. It is a pre-existing issue, not something your change broke.
 - **Skins are applied via JS, not URL.** The driver calls
 `window.zer0Bg.setSkin(name)` and waits for `html[data-theme-skin]` to flip — there's no `?skin=` query param. Valid names are the nine in `--skin`.
-- **The driver tolerates an already-running site.** It only connects to a
-  server; it never starts Jekyll. Start the server first (Docker), then drive.
+- **The driver tolerates an already-running site.** It only connects to a server; it never starts Jekyll. Start the server first (Docker), then drive.
 - **`port is already allocated` across worktrees.** Each worktree/checkout is a
 separate compose project (`<dir>-jekyll-1`), but they all try to bind host port `:4000`. If the main repo's `zer0-mistakes-jekyll-1` (or another worktree's container) holds `:4000`, `docker compose up` here fails with `Bind for 0.0.0.0:4000 failed: port is already allocated`. Either reuse that running container (the site is the same), or `docker stop <other>-jekyll-1` to free the port first.
 - **Per-project `bundle_cache` volume.** Because the worktree is its own compose

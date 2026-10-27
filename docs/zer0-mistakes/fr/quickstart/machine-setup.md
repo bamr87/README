@@ -245,12 +245,9 @@ kill <PID>             # free the port
 
 ## Ressources connexes
 
-- [Site Builder](/quickstart/site-builder/) — le parcours guidé qui exécute pour vous ces
-  vérifications de prérequis.
-- [Référence du Site Builder](/docs/features/site-builder/) — ce que l'assistant
-  génère, les outils qu'il expose et ses limites de sécurité.
-- [Configuration de Jekyll](/quickstart/jekyll-setup/) — l'étape suivante une fois ces outils
-  installés.
+- [Site Builder](/quickstart/site-builder/) — le parcours guidé qui exécute pour vous ces vérifications de prérequis.
+- [Référence du Site Builder](/docs/features/site-builder/) — ce que l'assistant génère, les outils qu'il expose et ses limites de sécurité.
+- [Configuration de Jekyll](/quickstart/jekyll-setup/) — l'étape suivante une fois ces outils installés.
 
 ---
 

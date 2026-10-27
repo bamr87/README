@@ -51,8 +51,7 @@ Ordered as walked (plan order = `walk-plan.json`):
 Sound guardrail concepts, but the only runnable command fails and the CODEOWNERS example silently defeats its own file-scope guardrail.
 2. ⚠️ **Trial of the Agentic Codex: The Grand Capstone** — 68% · The `validate-capstone.sh`
 contract genuinely works, but the quest's own `acceptance-criteria.json` fails the exact `jq -e` check that validator runs.
-3. ✅ **Apache Spark Mastery: Big Data with PySpark** — 83% · Technically solid; all six
-   PySpark snippets ran and behaved as described. Only the platform-setup notes have bugs.
+3. ✅ **Apache Spark Mastery: Big Data with PySpark** — 83% · Technically solid; all six PySpark snippets ran and behaved as described. Only the platform-setup notes have bugs.
 4. ❌ **Stream Processing: Real-Time Data with Apache Kafka & Flink** — 44% · Excellent
 theory, but the hands-on setup is broken end-to-end: dead broker image + missing replication overrides mean no consumer group ever receives messages.
 5. ❌ **Data Quality Engineering: Validation & Monitoring** — 51% · Accurate concepts and
@@ -75,35 +74,28 @@ is the **last** rule, and GitHub CODEOWNERS is "last matching pattern wins", so 
 ["*Agent*", "*Copilot*"]` uses wildcards this filter doesn't support (needs exact names); the final `git push` has no `permissions: contents: write` and will likely 403.
 - Verified via PyYAML that all three YAML blocks parse, but every `${​{ ... }​}`
 expression is wrapped in literal `{​% raw %​}...{​% endraw %​}` — copied from raw markdown they are not valid Actions expressions.
-- Audit heredoc reproduced locally → produces a pretty-printed multi-line JSON block,
-  not JSON-Lines, contradicting the `.jsonl` filename the workflow uses.
+- Audit heredoc reproduced locally → produces a pretty-printed multi-line JSON block, not JSON-Lines, contradicting the `.jsonl` filename the workflow uses.
 
 ### 2. The Grand Capstone — 68% ⚠️ (22 turns · commands_work 3/5, content_accuracy 3/5, safety 5/5)
 Coverage: **6 passed · 1 failed · 3 reasoned** (of 10).
 
 - `validate-capstone.sh` (lines 448–486) → **PASSED**. Verified it correctly fails on a
 partial build and cleanly passes once all 14 seal artifacts exist. This is the quest's strongest artifact.
-- `acceptance-criteria.json` (lines 311–336) → **FAILED**. As given (with the leading
-  `// work/gh-600/capstone/acceptance-criteria.json` comment) it is invalid JSON:
+- `acceptance-criteria.json` (lines 311–336) → **FAILED**. As given (with the leading `// work/gh-600/capstone/acceptance-criteria.json` comment) it is invalid JSON:
   `jq -e '.criteria | length >= 3' ...` → `jq: parse error: Invalid numeric literal at
 line 1, column 3`. This is the exact command `validate-capstone.sh` runs for seal S4, so a verbatim copy fails the quest's own validator. Removing the comment line makes jq return true.
-- `plan-then-execute.yml` and the `permissions:` block (Challenges 1.2 / 2.1) → **PASSED**
-  as valid YAML; the `sdlc-diagram.md` and `grand-reflection.md` templates → **PASSED**.
-- `.vscode/mcp.json` (lines 250–263) → **reasoned**: missing the `inputs` array VS Code
-  needs to resolve `${input:github-token}`, so it isn't a working config as shown.
+- `plan-then-execute.yml` and the `permissions:` block (Challenges 1.2 / 2.1) → **PASSED** as valid YAML; the `sdlc-diagram.md` and `grand-reflection.md` templates → **PASSED**.
+- `.vscode/mcp.json` (lines 250–263) → **reasoned**: missing the `inputs` array VS Code needs to resolve `${input:github-token}`, so it isn't a working config as shown.
 
 ### 3. Apache Spark Mastery — 83% ✅ (17 turns · commands_work 4/5, structure 5/5, safety 5/5)
 Coverage: **7 passed · 0 failed · 2 reasoned · 3 skipped** (of 12). Skips are the macOS/Windows/Docker setup paths not applicable to the Linux sandbox.
 
-- Linux setup path (lines 173–178, `apt install openjdk-17-jdk … pip install pyspark`) →
-  **PASSED**.
+- Linux setup path (lines 173–178, `apt install openjdk-17-jdk … pip install pyspark`) → **PASSED**.
 - `spark_intro.py` (SparkSession + createDataFrame + printSchema + show) → **PASSED**.
-- Lazy pipeline `filter/groupBy/agg/orderBy` then `.show()` / `.explain(mode="formatted")`
-  → **PASSED**; the `Exchange` (shuffle) step was visible in the plan as taught.
+- Lazy pipeline `filter/groupBy/agg/orderBy` then `.show()` / `.explain(mode="formatted")` → **PASSED**; the `Exchange` (shuffle) step was visible in the plan as taught.
 - `groupByKey().mapValues(sum)` vs `reduceByKey(...)` → **PASSED** (same result verified).
 - `coalesce(1).write` vs `repartition(200,"service")` → **PASSED** (file counts as claimed).
-- `spark.sql(...).explain("cost")` and the `.cache()`/`count()`/`unpersist()` flow →
-  **PASSED**.
+- `spark.sql(...).explain("cost")` and the `.cache()`/`count()`/`unpersist()` flow → **PASSED**.
 - The one substantive accuracy gap is **reasoned/tested in setup**: the prereq says
 "JDK 11/17" (line 127), but the engine directly disproved JDK 11 — current PySpark (4.1.2) against JDK 11 raises `UnsupportedClassVersionError`. Windows PowerShell activation `.\.venv\Scripts\activate` is also broken (should be `Activate.ps1`).
 
@@ -120,21 +112,18 @@ offsets-topic replication override) the consumer received **0 messages after 25s
 indefinitely (30s timeout, zero output) on the quest's config; broker logs showed infinite `__transaction_state` retries. Passed only after adding `KAFKA_CFG_TRANSACTION_STATE_LOG_REPLICATION_FACTOR=1` and `..._MIN_ISR=1`, neither of which the quest provides.
 - Linux setup (line 176, `apt install … docker-compose-plugin`) → **FAILED**:
 `apt-cache policy` on the Ubuntu 24.04 sandbox shows `docker-compose-plugin` Candidate `(none)` — not installable without adding Docker's official apt repo first.
-- Net effect verified by reproduction: **none of the three Mastery Challenges are
-  completable** by following the quest as written today.
+- Net effect verified by reproduction: **none of the three Mastery Challenges are completable** by following the quest as written today.
 
 ### 5. Data Quality Engineering — 51% ❌ (24 turns · commands_work 2/5, content_accuracy 2/5, safety 5/5)
 Coverage: **5 passed · 2 failed · 1 reasoned · 1 skipped** (of 9).
 
 - Linux + Cloud `pip install pandas great-expectations pandera` → **PASSED**.
-- `profile.py`, `validate_simple.py`, `anomaly.py` → **PASSED** (the dependency-free and
-  pure-logic snippets run correctly).
+- `profile.py`, `validate_simple.py`, `anomaly.py` → **PASSED** (the dependency-free and pure-logic snippets run correctly).
 - `validate_ge.py` (Chapter 3, lines 270–289) → **FAILED**:
 `context.sources.add_pandas('orders_src')` raises `AttributeError: 'EphemeralDataContext' object has no attribute 'sources'` on great_expectations **1.19.0** (what `pip install great-expectations` resolves to today). The fluent `.sources` API was removed in GE 1.0+.
 - `contract.py` (Chapter 4, lines 339–353) → **FAILED**: correctly raised `SchemaErrors`
 on the corrupted CSV, but **also fails on a fully clean CSV** — `WRONG_DATATYPE: expected series 'created_at' to have type datetime64[ns]` because `pd.read_csv` has no `parse_dates=['created_at']`. This contradicts the Novice Challenge's "on a clean copy it passes" criterion.
-- Underlying all of it: every hands-on snippet reads `orders.csv` (first used line 239),
-  which the quest **never provides or generates** — so nothing is runnable out of the box.
+- Underlying all of it: every hands-on snippet reads `orders.csv` (first used line 239), which the quest **never provides or generates** — so nothing is runnable out of the box.
 
 ## 🐞 Issues Found
 
@@ -159,26 +148,21 @@ it is never supplied. *Fix:* add a downloadable `orders.csv` or a short "generat
 **Medium**
 - **Capstone · Challenge 4.1 `acceptance-criteria.json` (line 312) · invalid JSON.** The
 leading `// …` comment breaks the `jq -e` check `validate-capstone.sh` itself runs (S4). Observed `jq: parse error: Invalid numeric literal`. *Fix:* move the comment to prose above the fenced block.
-- **The Warden's Pact · Ch.2 `guardrail-file-scope.yml` (line 155) · missing `GH_TOKEN`.**
-  `gh pr view` will fail in Actions. *Fix:* add `env: { GH_TOKEN: ${​{ secrets.GITHUB_TOKEN }​} }`.
+- **The Warden's Pact · Ch.2 `guardrail-file-scope.yml` (line 155) · missing `GH_TOKEN`.** `gh pr view` will fail in Actions. *Fix:* add `env: { GH_TOKEN: ${​{ secrets.GITHUB_TOKEN }​} }`.
 - **The Warden's Pact · Ch.4 `agent-audit-trail.yml` (lines 254, 292) · wildcard
 `workflow_run.workflows` + missing push permissions.** *Fix:* use exact workflow names and add `permissions: contents: write`.
 - **Stream Processing · Ch.3 windowing has no runnable code.** The Intermediate Challenge
 ("late event lands in its true window") is only described. *Fix:* add a minimal runnable tumbling-window-over-event-time example.
 - **Stream Processing · Ch.4 elided EOS offset commit (line 394).** The `# … also commit the
 consumed offsets …` comment hides the exact mechanism the Advanced Challenge tests. *Fix:* spell out `producer.send_offsets_to_transaction(...)`.
-- **Capstone · Challenge 2.2 `mcp.json` (line 252) · not a working config.** Missing the
-  `inputs` array to resolve `${input:github-token}`. *Fix:* add it or note it must be added.
+- **Capstone · Challenge 2.2 `mcp.json` (line 252) · not a working config.** Missing the `inputs` array to resolve `${input:github-token}`. *Fix:* add it or note it must be added.
 - **Data Quality · Advanced Challenge · no quarantine/lineage examples.** Required
 deliverables with zero worked example in the body. *Fix:* add a small quarantine-DataFrame snippet and a lineage-map template.
 
 **Low**
-- **Apache Spark · prereq "JDK 11/17" (line 127) is wrong for current PySpark.** Testing
-  PySpark 4.1.2 on JDK 11 gave `UnsupportedClassVersionError`. *Fix:* state JDK 17 (drop 11).
-- **Apache Spark / Stream Processing · Windows PowerShell activation.** `.\.venv\Scripts\activate`
-  → should be `.\.venv\Scripts\Activate.ps1`.
-- **Data Quality · setup blocks · unpinned installs.** Pin `great-expectations==1.x` (and
-  peers) so a future breaking API change doesn't silently reappear.
+- **Apache Spark · prereq "JDK 11/17" (line 127) is wrong for current PySpark.** Testing PySpark 4.1.2 on JDK 11 gave `UnsupportedClassVersionError`. *Fix:* state JDK 17 (drop 11).
+- **Apache Spark / Stream Processing · Windows PowerShell activation.** `.\.venv\Scripts\activate` → should be `.\.venv\Scripts\Activate.ps1`.
+- **Data Quality · setup blocks · unpinned installs.** Pin `great-expectations==1.x` (and peers) so a future breaking API change doesn't silently reappear.
 
 **No issues** were found in Apache Spark's core teaching content — all six PySpark snippets ran and matched the quest's claims about lazy evaluation, shuffles, and caching.
 
@@ -212,17 +196,10 @@ sources in plan order and judging whether each quest leaves a learner ready for 
 - **Mode / sandbox:** execute, sealed by `quest-perfection`/`quest-walkthrough` workflow;
 Ubuntu 24.04 runner sandbox. Safety scored 5/5 on all five quests — no destructive or unsafe commands were needed or run.
 - **Coverage & limits, stated honestly:**
-  - This is a **windowed** slice: **5 of the level's 15 quests** were walked (window 2/3). I did
-    **not** expand to the other 10; `stats.total_quests=15` is context only.
-  - Setup paths for **non-Linux OSes** (macOS/Windows/Docker-desktop) were `skipped` by the
-    engine (3 in Spark, 1 in Data Quality) — those platform commands are **reasoned-only**, not
-    tested, so Windows/macOS-specific bugs (e.g. the PowerShell `Activate.ps1` issue) are
-    flagged from source inspection, not execution.
-  - A few quest artifacts are non-executable config (CODEOWNERS, workflow YAML, mermaid) and are
-    necessarily `reasoned`, not run.
-  - Stream Processing consumed the most engine turns (35) and still could not complete its
-    challenges even after the engine substituted a working image — I report it as **verified
-    broken**, not merely suspected.
+  - This is a **windowed** slice: **5 of the level's 15 quests** were walked (window 2/3). I did **not** expand to the other 10; `stats.total_quests=15` is context only.
+  - Setup paths for **non-Linux OSes** (macOS/Windows/Docker-desktop) were `skipped` by the engine (3 in Spark, 1 in Data Quality) — those platform commands are **reasoned-only**, not tested, so Windows/macOS-specific bugs (e.g. the PowerShell `Activate.ps1` issue) are flagged from source inspection, not execution.
+  - A few quest artifacts are non-executable config (CODEOWNERS, workflow YAML, mermaid) and are necessarily `reasoned`, not run.
+  - Stream Processing consumed the most engine turns (35) and still could not complete its challenges even after the engine substituted a working image — I report it as **verified broken**, not merely suspected.
 - **Confidence:** High on the three FAIL verdicts — each rests on a reproduced command with
 quoted real output (dead manifest, 0 messages, `AttributeError`, `WRONG_DATATYPE`, `No such file`). High on Spark's PASS. Medium-high on the Capstone WARN (structure works; the one hard failure is its own JSON-vs-validator contradiction).
 

@@ -40,8 +40,7 @@ Le navigateur de chaque visiteur demande silencieusement `/favicon.ico`. Chacun 
 
 Parcourez la chaîne avec moi, et essayez de ne pas hurler.
 
-1. Votre favicon est mis en cache de manière **agressive** — parfois pendant un an, parfois
-   jusqu'à la mort thermique de l'ordinateur portable. Les navigateurs le revalident à peine.
+1. Votre favicon est mis en cache de manière **agressive** — parfois pendant un an, parfois jusqu'à la mort thermique de l'ordinateur portable. Les navigateurs le revalident à peine.
 2. Cela signifie que quiconque contrôle ce flux d'octets une seule fois contrôle un pixel de confiance
 sur l'écran de l'utilisateur **indéfiniment**. Un nœud CDN empoisonné, un chemin mal orthographié qui résout vers un domaine parqué, la « mise à jour rapide » d'un stagiaire bien intentionné — chacun de ces éléments épingle des octets hostiles dans un million d'onglets.
 3. L'icône occupe l'emplacement le plus digne de confiance de l'informatique : le chrome
@@ -53,12 +52,9 @@ Est-ce probable ? Sans importance. *Probable* est un mot pour ceux qui font enco
 
 ## Ce que vous devez faire, immédiatement, tant que vous le pouvez encore
 
-- Servez le favicon depuis une origine que vous contrôlez avec un **court et raisonnable**
-  `Cache-Control`, et non un triomphant `max-age=31536000`.
-- Épinglez-le avec Subresource Integrity là où votre chaîne d'outils le permet, et surveillez la
-  requête comme si elle vous devait de l'argent.
-- Ajoutez-le à votre inventaire d'actifs. Vous avez un inventaire d'actifs. *Dites-moi que vous avez
-  un inventaire d'actifs.*
+- Servez le favicon depuis une origine que vous contrôlez avec un **court et raisonnable** `Cache-Control`, et non un triomphant `max-age=31536000`.
+- Épinglez-le avec Subresource Integrity là où votre chaîne d'outils le permet, et surveillez la requête comme si elle vous devait de l'argent.
+- Ajoutez-le à votre inventaire d'actifs. Vous avez un inventaire d'actifs. *Dites-moi que vous avez un inventaire d'actifs.*
 
 Ce n'est pas de la paranoïa s'ils en veulent vraiment à votre favicon. Et c'est le cas.
 

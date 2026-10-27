@@ -30,17 +30,13 @@ The gate only verifies. Its **producer** is [`visual-evidence-autogen.yml`](../w
 
 ## Why
 
-- A fixed-position navbar/header makes whole-page regressions look like local
-  bugs; element-level overflow evidence catches the real cause (PR #215).
+- A fixed-position navbar/header makes whole-page regressions look like local bugs; element-level overflow evidence catches the real cause (PR #215).
 - Screenshots in the PR + release notes give reviewers and users proof, not prose.
 - The test is what lets a low-risk **fix** auto-merge without a human (see the
 autonomy policy in [`continuous-evolution.md`](../../docs/systems/continuous-evolution.md)).
 
 ## Reuse, don't reinvent
 
-- Measurement/montage logic lives in `evidence-kit.mjs` — import
-  `generateEvidence`; do not re-implement.
-- Layout/overflow assertions live in `test/visual/fixtures.js`
-  (`measureNavbarLayout`, `NAV_WIDTHS`, `boxesOverlap`, `assertStackedVertically`).
-- `test/visual/navbar-evidence.mjs` + `test/visual/features/navbar.spec.js` are
-  the reference implementations.
+- Measurement/montage logic lives in `evidence-kit.mjs` — import `generateEvidence`; do not re-implement.
+- Layout/overflow assertions live in `test/visual/fixtures.js` (`measureNavbarLayout`, `NAV_WIDTHS`, `boxesOverlap`, `assertStackedVertically`).
+- `test/visual/navbar-evidence.mjs` + `test/visual/features/navbar.spec.js` are the reference implementations.

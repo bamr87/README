@@ -14,16 +14,11 @@ Generated in the same jammy Playwright image the snapshot gate uses, by `test/vi
 
 ## Files
 
-- `01-before-after-posts-2025-01-22-git-workflow-best-practices.png` —
-  BEFORE/AFTER pairs of an `article`-layout post at 390px and 1280px.
-- `02-viewport-matrix-posts-2025-01-22-git-workflow-best-practices.png` —
-  the same post's header band at all six widths (after).
-- `03-before-after-notes-git-cheatsheet.png` — BEFORE/AFTER pairs of a
-  `note`-layout page at 390px and 1280px.
-- `04-viewport-matrix-notes-git-cheatsheet.png` — that note's header band at
-  all six widths (after).
-- `metrics.json` — page overflow per route × width: **0px before and 0px after
-  on every one of the 12 measurements**, HTTP 200/200 throughout.
+- `01-before-after-posts-2025-01-22-git-workflow-best-practices.png` — BEFORE/AFTER pairs of an `article`-layout post at 390px and 1280px.
+- `02-viewport-matrix-posts-2025-01-22-git-workflow-best-practices.png` — the same post's header band at all six widths (after).
+- `03-before-after-notes-git-cheatsheet.png` — BEFORE/AFTER pairs of a `note`-layout page at 390px and 1280px.
+- `04-viewport-matrix-notes-git-cheatsheet.png` — that note's header band at all six widths (after).
+- `metrics.json` — page overflow per route × width: **0px before and 0px after on every one of the 12 measurements**, HTTP 200/200 throughout.
 - `CHANGELOG-snippet.txt` — the evidence link for the changelog entry.
 
 The **`notebook`** layout is fixed by the same commit but is not rendered here: its collection is `output: false` in `_config_dev.yml`, so no notebook page exists on the dev server this tooling serves. It is covered instead by the source-level case in `landmarks.spec.js`, and was verified by hand with a one-off build that enables the collection — `<main id="main-content" tabindex="-1">` once, zero `role="main"`, and `<article class="notebook-article h-entry" itemscope itemtype="…/TechArticle">`.

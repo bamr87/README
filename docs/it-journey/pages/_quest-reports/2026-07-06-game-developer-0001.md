@@ -63,19 +63,10 @@ All command results below come from the workflow-sealed **execute-mode** engine 
 
 ### 1. Forging the Stats Portal — `48` ❌ (ran 8 snippets, 4 passed / 4 failed; 5 runnable, 6 reasoned)
 - **`commands_work` = 1/5 (verified `failed`):**
-  - `ruby scripts/generation/generate_statistics.rb` → **crashes immediately**:
-    `NoMethodError: undefined method 'iso8601' for ...:Time` — script only does
-    `require 'date'`, never `require 'time'`. Verified on stock Ruby 3.2.3.
-  - After patching the require → `@site_root = File.expand_path('../..', __FILE__)`
-    resolves to `<site_root>/scripts` (one level too shallow) for the documented
-    invocation, so `File.write` hits **ENOENT** because `scripts/_data/` doesn't exist.
-  - After fixing the path → `YAML.safe_load($1)` raises
-    `Psych::DisallowedClass: Tried to load unspecified class: Date` on normal
-    unquoted `date:` frontmatter; the `rescue` swallows it and **`total_posts` stays
-    0 forever**.
-  - Only after all three fixes (`require 'time'`; `../../..`; `permitted_classes:
-    [Date, Time]`) does it compute `total_posts: 2` correctly on a 2-post fixture —
-    the algorithm is sound, the printed code is not runnable.
+  - `ruby scripts/generation/generate_statistics.rb` → **crashes immediately**: `NoMethodError: undefined method 'iso8601' for ...:Time` — script only does `require 'date'`, never `require 'time'`. Verified on stock Ruby 3.2.3.
+  - After patching the require → `@site_root = File.expand_path('../..', __FILE__)` resolves to `<site_root>/scripts` (one level too shallow) for the documented invocation, so `File.write` hits **ENOENT** because `scripts/_data/` doesn't exist.
+  - After fixing the path → `YAML.safe_load($1)` raises `Psych::DisallowedClass: Tried to load unspecified class: Date` on normal unquoted `date:` frontmatter; the `rescue` swallows it and **`total_posts` stays 0 forever**.
+  - Only after all three fixes (`require 'time'`; `../../..`; `permitted_classes: [Date, Time]`) does it compute `total_posts: 2` correctly on a 2-post fixture — the algorithm is sound, the printed code is not runnable.
   - The "Expected Output" (`Total posts: 76`) is **unreachable** by following the steps.
 - **`content_accuracy` = 2 (reasoned/verified):** the three bugs are factual API/path
 errors; the "sort filter" Knowledge Check references a filter that appears nowhere in the shown template; the `nil:NilClass` troubleshooting block is mis-fenced as

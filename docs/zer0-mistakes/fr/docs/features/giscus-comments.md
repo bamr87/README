@@ -116,8 +116,7 @@ Les articles de blog (`pages/_posts/`, la mise en page `article`) ainsi que les 
      --config '_config.yml,_config_dev.yml'
    ```
 
-2. Vérifiez que le script Giscus est bien émis sur un article généré et que vos identifiants ont été
-   interpolés (aucun attribut vide) :
+2. Vérifiez que le script Giscus est bien émis sur un article généré et que vos identifiants ont été interpolés (aucun attribut vide) :
 
    ```bash
    grep -A1 'giscus.app/client.js' _site/**/index.html | grep -m1 data-repo-id
@@ -143,8 +142,7 @@ Les articles de blog (`pages/_posts/`, la mise en page `article`) ainsi que les 
 
    Vous ne pourrez pas *vous connecter et publier* depuis `localhost` (la redirection OAuth de GitHub est liée à l'origine déployée), mais tout le reste jusqu'à ce point est fidèle.
 
-4. Confirmez la chaîne complète — dépôt public, Discussions activées, **application installée**, catégorie valide —
-   avec une seule requête, sans navigateur :
+4. Confirmez la chaîne complète — dépôt public, Discussions activées, **application installée**, catégorie valide — avec une seule requête, sans navigateur :
 
    ```bash
    # Replace the repo and category with your own
@@ -208,8 +206,7 @@ comments: false
 
 Comme les commentaires sont des Discussions GitHub, vous pouvez les lire, les rédiger et y répondre depuis le terminal — et Claude Code peut piloter l'ensemble du flux. Deux éléments sont fournis avec le thème :
 
-- **`scripts/bin/giscus-discussions`** — un moteur propulsé par `gh` avec les sous-commandes
-  `doctor`, `categories`, `list`, `thread`, `draft`, `seed` et `post`.
+- **`scripts/bin/giscus-discussions`** — un moteur propulsé par `gh` avec les sous-commandes `doctor`, `categories`, `list`, `thread`, `draft`, `seed` et `post`.
 - **La compétence `giscus-conversation`** (`.github/skills/giscus-conversation/`) —
 indique à Claude Code comment lire le fil d'une page, rédiger une réponse de mainteneur en tenant compte du contexte du lecteur, et la publier.
 
@@ -255,10 +252,8 @@ posts/2025/01/21/remote-work-revolution/
 
 **et non** `/posts/2025/01/21/remote-work-revolution/`. Cela importe dans exactement deux situations :
 
-- **Vous amorcez un fil à la main.** Une barre oblique de tête produit une discussion que Giscus
-  ne trouvera jamais — la page continue d'afficher un widget vide tandis que la discussion reste dans la catégorie en paraissant correcte. `giscus-discussions seed --page /any/form/` normalise cela pour vous ; passer `--title` vous-même ne le fait pas.
-- **Vous migrez ou renommez des discussions.** Renommez vers la forme sans barre oblique de tête, sinon
-  la correspondance se casse silencieusement.
+- **Vous amorcez un fil à la main.** Une barre oblique de tête produit une discussion que Giscus ne trouvera jamais — la page continue d'afficher un widget vide tandis que la discussion reste dans la catégorie en paraissant correcte. `giscus-discussions seed --page /any/form/` normalise cela pour vous ; passer `--title` vous-même ne le fait pas.
+- **Vous migrez ou renommez des discussions.** Renommez vers la forme sans barre oblique de tête, sinon la correspondance se casse silencieusement.
 
 Dans le cas normal, vous n'y pensez jamais : Giscus crée lui-même la discussion, correctement intitulée, la première fois qu'un visiteur commente.
 

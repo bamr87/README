@@ -52,8 +52,7 @@ sandbox); `postgresql.conf` WAL config (verified `wal_level=replica` is already 
 
 ### 2. Query Optimization — 73% (warn) · ran 5/9 runnable snippets (2✗), 2 reasoned, 3 skipped
 
-- ✅ **passed** · Seed script `CREATE TABLE events (…); INSERT … generate_series(1,100000); ANALYZE events;`
-  — `INSERT 0 100000` on a local PG 16.14, exact match to expected.
+- ✅ **passed** · Seed script `CREATE TABLE events (…); INSERT … generate_series(1,100000); ANALYZE events;` — `INSERT 0 100000` on a local PG 16.14, exact match to expected.
 - ✅ **passed** · `EXPLAIN ANALYZE SELECT * FROM events WHERE user_id = 42;` (pre-index) —
 produced `Seq Scan … Rows Removed by Filter: 99983 … Execution Time: 5.555 ms`, matching the quest's described *shape* (absolute timing differs from the sample's 49.1 ms, expected hardware variance).
 - ✅ **passed** · composite index `CREATE INDEX idx_events_user_action ON events(user_id, action)`
@@ -62,23 +61,19 @@ produced `Seq Scan … Rows Removed by Filter: 99983 … Execution Time: 5.555 m
 — index worked and query got ~40× faster (0.131 ms), but PG16 rendered a **Bitmap Heap Scan + Bitmap Index Scan**, not the `Index Scan using idx_events_user_id` the quest prints as sample output. Concept holds; the literal output does not reproduce.
 - ❌ **failed** · Chapter 3 N+1 rewrite (JOIN/`IN` against `users`) — the embedded SQL
 references a `users` table the quest's own seed script never creates; running it against the built schema fails with `ERROR: relation "users" does not exist`.
-- 🧠 **reasoned / skipped** · macOS path (reasoned), Windows + Docker + illustrative
-  EXPLAIN text block (skipped as unrunnable/conflicting-port).
+- 🧠 **reasoned / skipped** · macOS path (reasoned), Windows + Docker + illustrative EXPLAIN text block (skipped as unrunnable/conflicting-port).
 
 ### 3. Connection Pooling — 52% (fail) · ran 5/6 runnable snippets (3✗), 3 skipped
 
-- ✅ **passed** · pool-sizing formula `(8*2)+1 = 17` — arithmetic verified; matches
-  HikariCP's published guidance.
-- ✅ **passed** · `SELECT pid, state, query, state_change FROM pg_stat_activity WHERE datname='gatekeeper' …`
-  — ran verbatim against a real PG16 `gatekeeper` DB, returned the expected columns.
+- ✅ **passed** · pool-sizing formula `(8*2)+1 = 17` — arithmetic verified; matches HikariCP's published guidance.
+- ✅ **passed** · `SELECT pid, state, query, state_change FROM pg_stat_activity WHERE datname='gatekeeper' …` — ran verbatim against a real PG16 `gatekeeper` DB, returned the expected columns.
 - ❌ **failed** · Cloud Realms `docker run --name pgbouncer … edoburu/pgbouncer` — container
 exits immediately: `DB_HOST: … You must set DB_HOST env` (the image wants `DB_HOST/DB_USER/DB_PASSWORD`, not the `DATABASES_*` the quest uses); even after fixing env, `-p 6432:6432` fails because the image listens on 5432 internally.
 - ❌ **failed** · `pgbouncer.ini` — loaded verbatim into real PgBouncer 1.25.2:
 `FATAL cannot load config file` / `invalid value "transaction          ; return the connection after each transaction" for parameter pool_mode`. PgBouncer does **not** accept trailing same-line `;` comments; removing them made it start.
 - ❌ **failed** · Chapter 1 Python — `conn.execute(query)` raises
 `AttributeError: 'psycopg2.extensions.connection' object has no attribute 'execute'` (psycopg2 needs a cursor); and `ConnectionPool`/`pool.connection()` is psycopg3's API, imported nowhere.
-- ⏭️ **skipped** · macOS/Windows/Linux package-manager setup paths (no sudo/brew/winget
-  in sandbox; package IDs verified to exist via `apt-cache policy`).
+- ⏭️ **skipped** · macOS/Windows/Linux package-manager setup paths (no sudo/brew/winget in sandbox; package IDs verified to exist via `apt-cache policy`).
 
 ## 🐞 Issues Found
 
@@ -95,8 +90,7 @@ own Docker container the physical backup fails with `no pg_hba.conf entry for re
 the shown `restore_command`/`recovery_target_time` alone won't trigger recovery on the quest's stated PG14+ minimum. *Fix:* mention the PG12+ `recovery.signal` file.
 - **low** · *Objectives vs body* (lines 105–106) — "Backup Automation" and "Backup
 Encryption" are listed as objectives but taught nowhere. *Fix:* add a short cron/`gpg -c` example or drop the claims.
-- **low** · *No teardown* — several scratch DBs + a container are created with no
-  cleanup step. *Fix:* add a drop/`docker rm -f` teardown.
+- **low** · *No teardown* — several scratch DBs + a container are created with no cleanup step. *Fix:* add a drop/`docker rm -f` teardown.
 
 **Query Optimization**
 - **high** · *Chapter 3 N+1 + Advanced Challenge* (lines 296–311, 342–350) — the rewrite
@@ -105,8 +99,7 @@ and the challenge's "returns identical data" validation depend on a `users` tabl
 `Index Scan using idx_events_user_id`. **Observed:** PG16.14 chose a **Bitmap Heap Scan** instead. *Fix:* update the sample or add a caveat that a Bitmap scan is the normal PG16 choice for this selectivity (both mean the index is used).
 - **medium** · *Objective vs body* (line 104) — "Composite & Covering Indexes" is
 promised but `INCLUDE`/index-only scans are never shown. *Fix:* add a covering-index demo or trim the objective.
-- **low** · Knowledge Check questions have no answer key; the accurate `LOWER(email)`
-  sargability point (line 278) has no runnable snippet.
+- **low** · Knowledge Check questions have no answer key; the accurate `LOWER(email)` sargability point (line 278) has no runnable snippet.
 
 **Connection Pooling**
 - **high** · *Cloud Realms Docker snippet* (lines 183–187) — **Observed:** container exits
@@ -115,8 +108,7 @@ with `You must set DB_HOST env`; port mapping also wrong. *Fix:* use `DB_HOST/DB
 the file: `invalid value "transaction          ; …" for parameter pool_mode`. *Fix:* move the `;` comments to their own lines above each setting.
 - **medium** · *Chapter 1 Python* (lines 203–217) — **Observed:**
 `AttributeError: … no attribute 'execute'`; `ConnectionPool` is psycopg3 API. *Fix:* either label the block pseudocode, or make it runnable (psycopg2 `cursor().execute` + `ThreadedConnectionPool`, or switch consistently to psycopg3 `ConnectionPool`).
-- **low** · Advanced "Catch a Leak" challenge gives no concrete leak-inducing sample;
-  macOS `postgresql@16` is keg-only and may need `brew link` before `createdb`.
+- **low** · Advanced "Catch a Leak" challenge gives no concrete leak-inducing sample; macOS `postgresql@16` is keg-only and may need `brew link` before `createdb`.
 
 **No slice-wide blocking issue** prevents a knowledgeable reader from *learning* the material — every defect is a broken artifact inside an otherwise sound chapter.
 

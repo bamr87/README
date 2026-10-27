@@ -1,5 +1,7 @@
 # Wiki.js Quick Reference
 
+> Commands for the optional Wiki.js + Postgres stack in `docker-compose.yml`: start, stop, back up and restore it with `scripts/wiki-manage.sh`.
+
 ## Quick Commands
 
 ```bash
