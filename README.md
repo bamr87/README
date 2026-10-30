@@ -121,9 +121,15 @@ The survey also consolidates the fleet's documentation for review. `python3 -m s
 | `hooks.d/` | Build lifecycle hooks |
 | `tools/` | Vendored hub kit — `unwrap-prose.py` (the one-paragraph-per-line prose gate) and `docs_index.py` (the docs index generator) |
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
+| `features/`, `verify/` | Hub verify kit — feature index and Playwright user scenarios run by `.github/workflows/verify.yml` |
+| `_includes/custom/`, `assets/js/` | Hub page-feedback widget kit (Jekyll-shaped; not yet wired into the MkDocs theme) |
+| `_drafts/` | Session hand-off posts drafted for bamr87/it-journey |
+| `docker-compose.yml` | Optional Wiki.js + Postgres stack serving `docs/` ([WIKIJS-QUICKSTART.md](WIKIJS-QUICKSTART.md)) |
+| `AGENTS.md` | Canonical agent instructions (`CLAUDE.md` imports it) |
 | `SCHEMA.md` | Root of this repo's structure pyramid |
 | `PRD.md` | Product spec for the context engine |
 | `PLAN.md` | Redesign plan (v3): audit, target architecture, check catalogue, roadmap |
+| `MKDOCS.md` | Site build and generated-navigation documentation |
 
 ## Development
 

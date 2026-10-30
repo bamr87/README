@@ -31,21 +31,28 @@ coverage: listed
 
 | entry | kind | purpose | rules |
 |---|---|---|---|
+| `.claude/` | dir | Hub verify kit for Claude Code: `verifier` agent + `verify-feature` skill | terminal |
 | `.github/` | dir | Actions control plane: aggregation cron, quality gate, pages deploy, standard CI caller | terminal |
 | `_data/` | dir | Registries — projects.yml is the source of truth for the fleet | required |
 | `_drafts/` | dir | Session hand-off posts drafted for bamr87/it-journey; deleted once published | terminal |
+| `_includes/` | dir | Hub feedback kit: `custom/fleet-feedback.html` widget include (Jekyll-shaped; not yet wired into MkDocs) | terminal |
+| `assets/` | dir | Hub feedback kit: `js/fleet-feedback.js` + `js/fleet-feedback-capture.js` | terminal |
 | `context/` | dir | The context pyramid: facts, cards, apex, query index (rebuilt by the engine) | generated |
 | `docs/` | dir | L3 corpus: markdown aggregated from fleet repos (build artifact of stages 1–3) | generated |
+| `features/` | dir | Hub verify kit: `features.yml`, the feature index graded by the hub | terminal |
 | `hooks.d/` | dir | Lifecycle hooks the engine runs at each build stage | required |
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
 | `tools/` | dir | Vendored hub kit: `unwrap-prose.py` (the one-paragraph-per-line prose gate run by CI and at ingest) and `docs_index.py` (the docs index generator the survey's framework checks reuse) | required terminal |
+| `verify/` | dir | Hub verify kit: `verify.yml` (how to serve the site), `runner.mjs`, `scenarios/*.yml` | terminal |
 | `.editorconfig` | file | Editor defaults (standardization baseline) | |
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
 | `.gitignore` | file | Ignore rules for temp/, raw_docs/, site/, venvs | |
 | `.mcp.json` | file | MCP server registration for Claude Code and other clients | required |
-| `CLAUDE.md` | file | Claude Code guidance, including the SCHEMA protocol | required |
+| `.release-please-manifest.json` | file | release-please version manifest (release kit) | |
+| `AGENTS.md` | file | Canonical agent guidance, including the SCHEMA protocol | required |
+| `CLAUDE.md` | file | Pointer that imports `AGENTS.md` for Claude Code | required |
 | `LICENSE` | file | MIT license | |
 | `CHANGELOG.md` | file | Notable changes, in Keep a Changelog format | |
 | `MKDOCS.md` | file | Site build documentation | |
@@ -57,6 +64,7 @@ coverage: listed
 | `docker-compose.yml` | file | Wiki.js + Postgres stack (mounts docs/ read-only) | |
 | `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT` | required |
 | `nav.yml` | file | Published navigation: MkDocs `nav` + `exclude_docs`, rendered by the engine's navigator | generated |
+| `release-please-config.json` | file | release-please configuration (release kit) | |
 | `repos.txt` | file | Aggregation input — regenerated from _data/projects.yml | generated |
 | `requirements-docs.txt` | file | Python deps for the MkDocs build | |
 | `requirements.txt` | file | Python deps for pipeline + engine | |

@@ -85,12 +85,14 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-006](features/features.yml) | Index | shipped | [`context`](context) · [`PRD.md`](PRD.md) | §4 |
 | [README-007](features/features.yml) | Serve | shipped | [`mcp`](mcp) · [`PRD.md`](PRD.md) | §4 |
 | [README-008](features/features.yml) | Evolve | shipped | [`hooks.d`](hooks.d) · [`PRD.md`](PRD.md) | §4 |
+| [README-009](features/features.yml) | Published fleet documentation site | shipped | [``](.) · [`MKDOCS.md`](MKDOCS.md) | TBD |
 
 **Requirement → feature trace**
 
 | Requirement | Features |
 | --- | --- |
 | §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008 |
+| TBD | README-009 |
 <!-- features:end -->
 
 ## 7. Success criteria
