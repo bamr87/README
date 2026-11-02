@@ -139,6 +139,7 @@ python3 scripts/schema_lint.py check .       # structure drift gate
 python3 -m scripts.context_engine navcheck   # nav.yml / context/nav / docs/browse match the corpus
 python3 scripts/check_tracked_surfaces.py    # every surface names only git-tracked files
 bash scripts/run_doc_checks.sh               # corpus quality checks
+python3 tools/unwrap-prose.py --check --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$' --exclude '^docs/'   # one paragraph per line (markdown-oneline.yml scope)
 ```
 
 If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit the regenerated surfaces. Don't edit them by hand.
