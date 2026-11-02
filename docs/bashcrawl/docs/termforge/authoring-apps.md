@@ -4,6 +4,8 @@ title: Authoring TermForge Apps
 ---
 # Authoring TermForge Apps
 
+> Build your own terminal tool on TermForge: the App descriptor, command packs, worlds, plugins, hooks, branding and registering it with the hosts.
+
 A TermForge **app** is a world + command packs + hooks, wrapped in a small descriptor the hosts understand. The same app runs in the browser (the core as classic scripts under the React app in `web/src/`), in a local terminal (`host-tty.js`), and over telnet (`host-telnet.js`).
 
 ## The App descriptor

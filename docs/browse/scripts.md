@@ -9,19 +9,20 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **28 pages** across **5 sections** (max depth 3).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **29 pages** across **5 sections** (max depth 3).
 
 - [🛠️ scripts](../scripts/README.md)
 - [Changelog](../scripts/CHANGELOG.md)
-- [CLAUDE.md](../scripts/AGENTS.md)
 - [Linting Configuration Management](../scripts/linting/README.md)
 - [PRD — scripts](../scripts/PRD.md)
 - [Rename Directory Utility - Quick Reference](../scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md)
-- [scripts](../scripts/CLAUDE.md)
+- [scripts (AGENTS)](../scripts/AGENTS.md)
+- [scripts (CLAUDE)](../scripts/CLAUDE.md)
 - [scripts tools](../scripts/tools/README.md)
 - [Security Policy](../scripts/SECURITY.md)
-- **[Documentation](../scripts/docs/README.md)** <small>(8)</small>
+- **[Documentation](../scripts/docs/README.md)** <small>(9)</small>
   - [scripts documentation](../scripts/docs/README.md)
+  - [Rename Directory Utility - Quick Reference](../scripts/docs/rename-directory-quick-reference.md)
   - [scripts — Constitution](../scripts/docs/constitution.md)
   - **[Amendments — scripts](../scripts/docs/amendments/README.md)** <small>(3)</small>
     - [Amendments — scripts](../scripts/docs/amendments/README.md)

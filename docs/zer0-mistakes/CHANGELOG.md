@@ -449,6 +449,17 @@ feature docs with captured screenshots of both the broken widget and the giscus.
 
 ### Changed
 
+- **CI stops re-downloading the Playwright browser on every run.** A new
+  `.github/actions/setup-playwright` composite action installs npm dependencies
+  and a **cached** chromium (`~/.cache/ms-playwright`, keyed on
+  `package-lock.json`), and `ci.yml`, `nightly-extended.yml`, `ui-audit.yml` and
+  the `playwright-tests` action all go through it. `codeql.yml` and
+  `install-matrix.yml` also gained a concurrency group that cancels superseded
+  pull-request runs (pushes to `main` and the scheduled scans are never
+  cancelled, so the Security tab's alert set is never replaced by a
+  half-finished analysis). Test coverage is unchanged — this is Actions-minute
+  cost only (ZER0-016, ZER0-027).
+
 - **Navigation start-up no longer runs as one long task.**
   `assets/js/modules/navigation/index.js` now wires sidebar state, keyboard
   shortcuts, focus management and the navbar first, then yields to the main
@@ -930,6 +941,42 @@ feature docs with captured screenshots of both the broken widget and the giscus.
   `ANTHROPIC_API_KEY` used only when it's absent.
 
 ### Fixed
+
+- **Cookie preferences no longer pre-tick Analytics** ([#553](https://github.com/bamr87/zer0-mistakes/issues/553), ZER0-007).
+  `#analyticsCookies` carried a hard-coded `checked` attribute, and the
+  component synced the modal switches from stored consent *only* for returning
+  visitors — so a first-time visitor who opened Cookie Preferences saw Analytics
+  already on, and "Save Preferences" recorded `analytics: true` (and called
+  `posthog.opt_in_capturing()`) without them touching the switch. Pre-ticked
+  boxes are not valid consent (GDPR/ePrivacy Recital 32; CJEU *Planet49*,
+  C-673/17), and the component's own `defaultConsent` already said off. The
+  attribute is gone and `updateModalUI(existingConsent || defaultConsent)` now
+  runs on every first paint, so the switches always mirror the state actually in
+  force; `updateModalUI` became null-safe for consumers that ship the banner
+  without the modal. Accept All is unchanged (explicit consent) and returning
+  visitors still see their saved choices. Regression test:
+  `test/visual/features/cookie-consent-defaults.spec.js`.
+
+- **Accessibility: section landings have a continuous heading outline** ([#555](https://github.com/bamr87/zer0-mistakes/issues/555)). `layout: section` picked heading tags for their font size, so on `/news/<section>/` the sidebar's `<h5>`/`<h6>` came before the page `<h1>` and card titles jumped `h1 → h5` (WCAG 1.3.1). `_layouts/section.html` and `_includes/navigation/section-sidebar.html` now choose tags by document depth and keep each size with an `.h4`/`.h5`/`.h6` class (the #436 pattern); source order, and so focus order, is unchanged. Visual sizes are unchanged. Pinned by `test/visual/core/heading-outline.spec.js` for the grid, list and magazine styles (evidence: [`test/visual/evidence/section-heading-outline/`](test/visual/evidence/section-heading-outline/README.md)).
+
+- **CI: the two recurring red/cancelled run sources on `main` are gone.**
+  Over the five weeks to 2026-10-29, `main` decided 197 runs and only 2 of them
+  actually failed; the repo's poor headline pass rate came from 37 cancelled and
+  166 skipped runs. Two fixable causes:
+  - `Dependabot Updates` errored on every re-check of the `rubyzip` advisory
+    (2026-09-26, 10-03, 10-07, 10-27): the fix needs `>= 3.4.0`, but
+    `github-pages (232)` pins `rubyzip (>= 1.3.0, < 3.0)` via
+    `jekyll-remote-theme (0.4.3)`, so `security_update_not_possible` failed the
+    whole run. `.github/dependabot.yml` now carries a `bundler` entry — version
+    updates off, so `update-dependencies.yml` keeps ownership of gems — whose
+    only job is to ignore `rubyzip >= 3.0` until `github-pages` allows it. The
+    advisory stays visible in the Security tab.
+  - `🧭 Issue Autopilot` used a workflow-level concurrency group with a constant
+    name, so every `issues: [labeled]` event — including the labels the pipeline
+    applies itself — joined it even though `gate`'s job-level `if` skips them.
+    With one pass running and one queued, each further no-op event cancelled the
+    queued run: 13 of the 37 cancellations. Non-actionable label events now get
+    their own group; real passes stay serialized.
 
 - **`require_consent` now means no analytics until the visitor accepts.** With `posthog.privacy.require_consent: true`, PostHog used to load opted-out on a first visit: the browser still fetched `array.js`, `config.js` and `surveys.js` and stored `ph_<key>_posthog` before any banner choice, and Google Analytics ignored consent entirely. `_includes/analytics/posthog.html` now boots PostHog only once analytics consent exists, and `_includes/analytics/google-analytics.html` follows the same flag (override per site with `google_analytics_require_consent`). Both load as soon as the visitor clicks Accept All or saves preferences with Analytics on, through the banner's `cookieConsentChanged` event, so no reload is needed. Reject All keeps them off. Sites without the flag load exactly as before. Regression test: `test/visual/features/analytics-consent.spec.js`.
 

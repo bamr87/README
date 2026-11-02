@@ -12,13 +12,13 @@
       "repo": "bamr87/scripts",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 30,
-      "fingerprint": "c554a5c09b9d8ea3",
+      "corpus_files": 31,
+      "fingerprint": "dba6c81e2cf63161",
       "card": "context/cards/scripts.md",
       "facts": "context/facts/scripts.json",
       "nav": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
-      "nav_pages": 28,
+      "nav_pages": 29,
       "nav_sections": 5
     },
     "skills": {
@@ -51,39 +51,39 @@
       "repo": "bamr87/bashcrawl",
       "kind": "game",
       "status": "active",
-      "corpus_files": 99,
-      "fingerprint": "1f67dd0840c68d11",
+      "corpus_files": 104,
+      "fingerprint": "d05826aeb2911391",
       "card": "context/cards/bashcrawl.md",
       "facts": "context/facts/bashcrawl.json",
       "nav": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
-      "nav_pages": 89,
+      "nav_pages": 94,
       "nav_sections": 17
     },
     "zer0-mistakes": {
       "repo": "bamr87/zer0-mistakes",
       "kind": "theme",
       "status": "active",
-      "corpus_files": 752,
-      "fingerprint": "43f23928b721d394",
+      "corpus_files": 759,
+      "fingerprint": "b4872c9304edd4fe",
       "card": "context/cards/zer0-mistakes.md",
       "facts": "context/facts/zer0-mistakes.json",
       "nav": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
-      "nav_pages": 671,
-      "nav_sections": 99
+      "nav_pages": 678,
+      "nav_sections": 100
     },
     "it-journey": {
       "repo": "bamr87/it-journey",
       "kind": "site",
       "status": "active",
-      "corpus_files": 1287,
-      "fingerprint": "ab9a25fe8b65c679",
+      "corpus_files": 1304,
+      "fingerprint": "b7fa560e8676e654",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
-      "nav_pages": 956,
+      "nav_pages": 959,
       "nav_sections": 98
     },
     "OverTheWire-website": {
@@ -114,7 +114,7 @@
       "path": "context/nav/it-journey.json",
       "title": "IT Journey navigation",
       "project": "it-journey",
-      "summary": "956 pages in 98 sections",
+      "summary": "959 pages in 98 sections",
       "browse": "docs/browse/it-journey.md"
     },
     {
@@ -147,7 +147,7 @@
       "path": "context/nav/zer0-mistakes.json",
       "title": "Zer0 Mistakes navigation",
       "project": "zer0-mistakes",
-      "summary": "671 pages in 99 sections",
+      "summary": "678 pages in 100 sections",
       "browse": "docs/browse/zer0-mistakes.md"
     },
     {
@@ -214,16 +214,16 @@
       "path": "context/nav/bashcrawl.json",
       "title": "Bash Crawl navigation",
       "project": "bashcrawl",
-      "summary": "89 pages in 17 sections",
+      "summary": "94 pages in 17 sections",
       "browse": "docs/browse/bashcrawl.md"
     },
     {
       "id": "card:bashcrawl",
       "type": "card",
       "path": "context/cards/bashcrawl.md",
-      "title": "\u2694\ufe0f Bashcrawl \u2014 learn the terminal by playing",
+      "title": "Bashcrawl",
       "project": "bashcrawl",
-      "summary": "v3.1 \u2014 one game, two doors: the classic filesystem dungeon in your terminal, and a free browser trainer with mini-games and cheatsheets built from the same content.",
+      "summary": "Learn real terminal skills by playing a fantasy dungeon crawl \u2014 in your own shell, or in a free browser trainer built from the same content.",
       "kind": "game",
       "topics": [
         "bash",
@@ -281,7 +281,7 @@
       "path": "context/nav/scripts.json",
       "title": "Scripts navigation",
       "project": "scripts",
-      "summary": "28 pages in 5 sections",
+      "summary": "29 pages in 5 sections",
       "browse": "docs/browse/scripts.md"
     },
     {
@@ -303,8 +303,8 @@
         "docs/scripts/AGENTS.md",
         "docs/scripts/CHANGELOG.md",
         "docs/scripts/SECURITY.md",
-        "docs/scripts/FORKME/FORKME.md",
         "docs/scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
+        "docs/scripts/FORKME/FORKME.md",
         "docs/scripts/FORKME/FORKME-EXAMPLES.md"
       ]
     },
@@ -394,6 +394,10 @@
       "card:skills": 2,
       "card:zer0-mistakes": 2
     },
+    "100": {
+      "apex": 2,
+      "card:zer0-mistakes": 2
+    },
     "1000": {
       "card:it-journey": 1,
       "nav:it-journey": 1
@@ -410,6 +414,10 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
+    "104": {
+      "apex": 2,
+      "card:bashcrawl": 5
+    },
     "1100": {
       "card:it-journey": 1,
       "nav:it-journey": 1
@@ -417,9 +425,6 @@
     "1101": {
       "card:it-journey": 1,
       "nav:it-journey": 1
-    },
-    "111": {
-      "card:zer0-mistakes": 3
     },
     "1110": {
       "card:it-journey": 1,
@@ -429,8 +434,8 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "125bcfa8894d04b3": {
-      "card:bashcrawl": 1
+    "115": {
+      "card:zer0-mistakes": 3
     },
     "126": {
       "card:barodybroject": 2
@@ -438,18 +443,21 @@
     "128": {
       "card:barodybroject": 1
     },
-    "1287": {
-      "apex": 2,
-      "card:it-journey": 5
-    },
     "128853": {
       "card:OverTheWire-website": 1
+    },
+    "1304": {
+      "apex": 2,
+      "card:it-journey": 5
     },
     "152": {
       "card:it-journey": 1
     },
-    "15215563": {
+    "15385476": {
       "card:it-journey": 1
+    },
+    "161782": {
+      "card:scripts": 1
     },
     "162": {
       "card:barodybroject": 1
@@ -460,14 +468,11 @@
     "170": {
       "card:zer0-mistakes": 3
     },
-    "173522": {
-      "card:scripts": 1
-    },
-    "1944926": {
+    "1967916": {
       "card:it-journey": 1
     },
-    "1f67dd0840c68d11": {
-      "card:bashcrawl": 2
+    "20220": {
+      "card:scripts": 1
     },
     "2025": {
       "card:it-journey": 1,
@@ -475,9 +480,6 @@
     },
     "2139546": {
       "card:barodybroject": 1
-    },
-    "21448": {
-      "card:scripts": 1
     },
     "215": {
       "card:zer0-mistakes": 3,
@@ -489,8 +491,8 @@
     "219": {
       "card:OverTheWire-website": 3
     },
-    "221": {
-      "card:it-journey": 1
+    "220": {
+      "card:scripts": 1
     },
     "232": {
       "apex": 3,
@@ -498,6 +500,9 @@
     },
     "233": {
       "card:it-journey": 2
+    },
+    "235": {
+      "card:it-journey": 1
     },
     "243": {
       "card:barodybroject": 1
@@ -518,6 +523,9 @@
     "292f000a4ab20ef9": {
       "card:skills": 1
     },
+    "2e6921e424fc4431": {
+      "card:it-journey": 1
+    },
     "2f309bd74896ca48": {
       "card:barodybroject": 2
     },
@@ -531,16 +539,10 @@
     "396": {
       "card:skills": 1
     },
-    "43f23928b721d394": {
-      "card:zer0-mistakes": 2
-    },
-    "448": {
-      "card:scripts": 1
-    },
     "4994372": {
       "card:skills": 1
     },
-    "5042256": {
+    "5079941": {
       "card:zer0-mistakes": 1
     },
     "509": {
@@ -549,19 +551,22 @@
     "509396": {
       "card:skills": 1
     },
-    "618": {
+    "529720b4afba9a54": {
+      "card:scripts": 1
+    },
+    "623": {
       "card:zer0-mistakes": 1
     },
-    "618819": {
+    "623850": {
       "card:zer0-mistakes": 1
-    },
-    "652": {
-      "card:it-journey": 2
     },
     "653": {
+      "card:it-journey": 2
+    },
+    "654": {
       "card:it-journey": 1
     },
-    "671": {
+    "678": {
       "apex": 1,
       "card:zer0-mistakes": 2
     },
@@ -572,40 +577,37 @@
       "apex": 2,
       "card:skills": 5
     },
-    "713755": {
+    "737816": {
       "card:bashcrawl": 1
     },
-    "752": {
+    "759": {
       "apex": 2,
       "card:zer0-mistakes": 5
     },
-    "819": {
+    "850": {
       "card:zer0-mistakes": 1
     },
-    "84856": {
+    "87946": {
       "card:bashcrawl": 1
-    },
-    "856": {
-      "card:bashcrawl": 1
-    },
-    "88d8f5bf92a6d39b": {
-      "card:zer0-mistakes": 1
     },
     "8bee55625627b534": {
       "card:skills": 2
     },
-    "926": {
+    "916": {
       "card:it-journey": 1
     },
-    "944": {
-      "card:it-journey": 1
+    "92d0e21b64ca4336": {
+      "card:zer0-mistakes": 1
     },
-    "956": {
+    "946": {
+      "card:bashcrawl": 1
+    },
+    "959": {
       "apex": 1,
       "card:it-journey": 2
     },
-    "ab9a25fe8b65c679": {
-      "card:it-journey": 2
+    "967": {
+      "card:it-journey": 1
     },
     "about": {
       "card:barodybroject": 1,
@@ -716,9 +718,11 @@
       "card:bashcrawl": 1,
       "card:it-journey": 1,
       "card:scripts": 1,
+      "card:zer0-mistakes": 1,
       "nav:bashcrawl": 1,
       "nav:it-journey": 1,
-      "nav:scripts": 1
+      "nav:scripts": 1,
+      "nav:zer0-mistakes": 1
     },
     "analysis": {
       "card:it-journey": 1,
@@ -795,8 +799,11 @@
       "apex": 1,
       "card:barodybroject": 4
     },
-    "b0b935db8f69a2ba": {
-      "card:it-journey": 1
+    "b4872c9304edd4fe": {
+      "card:zer0-mistakes": 2
+    },
+    "b7fa560e8676e654": {
+      "card:it-journey": 2
     },
     "ba6ba8ee5ae0cefe": {
       "card:barodybroject": 1
@@ -892,9 +899,6 @@
     "bootstrap": {
       "card:zer0-mistakes": 4
     },
-    "box": {
-      "card:bashcrawl": 1
-    },
     "branch": {
       "apex": 1,
       "card:OverTheWire-website": 2,
@@ -943,9 +947,6 @@
       "nav:it-journey": 1,
       "nav:zer0-mistakes": 2
     },
-    "c554a5c09b9d8ea3": {
-      "card:scripts": 2
-    },
     "can": {
       "card:OverTheWire-website": 2
     },
@@ -993,9 +994,9 @@
     },
     "changelog": {
       "card:barodybroject": 3,
-      "card:bashcrawl": 2,
+      "card:bashcrawl": 1,
       "card:it-journey": 2,
-      "card:scripts": 2,
+      "card:scripts": 1,
       "card:zer0-mistakes": 1,
       "nav:barodybroject": 2
     },
@@ -1007,7 +1008,6 @@
       "card:zer0-mistakes": 4
     },
     "cheatsheets": {
-      "card:bashcrawl": 2,
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
@@ -1017,9 +1017,6 @@
     },
     "ci-cd": {
       "card:it-journey": 2
-    },
-    "classic": {
-      "card:bashcrawl": 2
     },
     "claude": {
       "card:bashcrawl": 1,
@@ -1133,7 +1130,7 @@
       "card:barodybroject": 2,
       "card:bashcrawl": 2,
       "card:it-journey": 2,
-      "card:scripts": 3,
+      "card:scripts": 2,
       "card:skills": 2,
       "card:zer0-mistakes": 2
     },
@@ -1218,7 +1215,7 @@
       "nav:bashcrawl": 1
     },
     "crawl": {
-      "card:bashcrawl": 1
+      "card:bashcrawl": 3
     },
     "creates": {
       "card:zer0-mistakes": 2,
@@ -1246,8 +1243,11 @@
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
     },
-    "d7e0e72808aa396e": {
-      "card:scripts": 1
+    "d05826aeb2911391": {
+      "card:bashcrawl": 2
+    },
+    "da85573772d01cb8": {
+      "card:bashcrawl": 1
     },
     "dash": {
       "apex": 1
@@ -1267,6 +1267,9 @@
     "database": {
       "card:it-journey": 1,
       "nav:it-journey": 1
+    },
+    "dba6c81e2cf63161": {
+      "card:scripts": 2
     },
     "decision": {
       "card:bashcrawl": 1,
@@ -1330,12 +1333,10 @@
     "devcontainer": {
       "card:barodybroject": 1
     },
-    "developers": {
-      "card:bashcrawl": 1
-    },
     "development": {
       "apex": 2,
       "card:barodybroject": 1,
+      "card:bashcrawl": 1,
       "card:it-journey": 10,
       "card:scripts": 1,
       "card:skills": 4,
@@ -1408,9 +1409,6 @@
     },
     "dontreadme.md": {
       "card:barodybroject": 1
-    },
-    "doors": {
-      "card:bashcrawl": 2
     },
     "drifter": {
       "card:OverTheWire-website": 4,
@@ -1552,6 +1550,9 @@
       "card:skills": 5,
       "card:zer0-mistakes": 2
     },
+    "fantasy": {
+      "card:bashcrawl": 2
+    },
     "feature": {
       "card:it-journey": 1,
       "card:zer0-mistakes": 1,
@@ -1563,7 +1564,9 @@
     },
     "features": {
       "card:barodybroject": 2,
+      "card:bashcrawl": 1,
       "card:it-journey": 1,
+      "card:scripts": 1,
       "card:zer0-mistakes": 4,
       "nav:barodybroject": 1,
       "nav:zer0-mistakes": 2
@@ -1580,9 +1583,6 @@
       "card:scripts": 1,
       "card:skills": 1,
       "card:zer0-mistakes": 1
-    },
-    "filesystem": {
-      "card:bashcrawl": 2
     },
     "fingerprint": {
       "card:OverTheWire-website": 2,
@@ -1603,7 +1603,7 @@
     },
     "fleet": {
       "apex": 4,
-      "card:scripts": 3
+      "card:scripts": 2
     },
     "fonctionnalit": {
       "card:zer0-mistakes": 2,
@@ -1684,7 +1684,7 @@
     },
     "game": {
       "apex": 2,
-      "card:bashcrawl": 7
+      "card:bashcrawl": 5
     },
     "games": {
       "card:OverTheWire-website": 2
@@ -1998,7 +1998,7 @@
       "card:barodybroject": 8,
       "card:bashcrawl": 5,
       "card:it-journey": 8,
-      "card:scripts": 5,
+      "card:scripts": 4,
       "card:skills": 3,
       "card:zer0-mistakes": 15,
       "nav:OverTheWire-website": 15,
@@ -2203,6 +2203,9 @@
     "latest": {
       "card:skills": 2
     },
+    "launcher": {
+      "card:bashcrawl": 1
+    },
     "layer": {
       "apex": 1
     },
@@ -2211,9 +2214,9 @@
       "nav:it-journey": 1
     },
     "learn": {
-      "apex": 3,
+      "apex": 2,
       "card:OverTheWire-website": 2,
-      "card:bashcrawl": 6
+      "card:bashcrawl": 5
     },
     "learning": {
       "card:it-journey": 6,
@@ -2248,7 +2251,6 @@
       "nav:zer0-mistakes": 1
     },
     "license": {
-      "card:bashcrawl": 1,
       "card:it-journey": 1,
       "card:skills": 1
     },
@@ -2401,9 +2403,6 @@
     "migration": {
       "card:barodybroject": 1,
       "nav:barodybroject": 1
-    },
-    "mini-games": {
-      "card:bashcrawl": 2
     },
     "minutes": {
       "card:zer0-mistakes": 1
@@ -2595,6 +2594,7 @@
       "card:zer0-mistakes": 1
     },
     "own": {
+      "card:bashcrawl": 2,
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
     },
@@ -2669,12 +2669,8 @@
       "card:barodybroject": 2,
       "card:it-journey": 4
     },
-    "play": {
-      "card:bashcrawl": 1
-    },
     "playing": {
-      "apex": 1,
-      "card:bashcrawl": 3
+      "card:bashcrawl": 2
     },
     "ploiement": {
       "card:zer0-mistakes": 1,
@@ -2756,7 +2752,7 @@
       "apex": 7,
       "card:OverTheWire-website": 1,
       "card:barodybroject": 3,
-      "card:bashcrawl": 1,
+      "card:bashcrawl": 2,
       "card:it-journey": 3,
       "card:scripts": 6,
       "card:skills": 1,
@@ -2848,6 +2844,7 @@
     },
     "quick": {
       "card:barodybroject": 1,
+      "card:bashcrawl": 1,
       "card:it-journey": 1,
       "card:scripts": 1,
       "card:skills": 1,
@@ -2905,6 +2902,9 @@
       "card:skills": 7,
       "card:zer0-mistakes": 14
     },
+    "real": {
+      "card:bashcrawl": 2
+    },
     "records": {
       "card:bashcrawl": 1,
       "card:it-journey": 1,
@@ -2920,7 +2920,9 @@
     "reference": {
       "apex": 2,
       "card:OverTheWire-website": 2,
+      "card:bashcrawl": 1,
       "card:it-journey": 1,
+      "nav:bashcrawl": 1,
       "nav:it-journey": 1
     },
     "reflection": {
@@ -3231,7 +3233,7 @@
       "nav:it-journey": 1
     },
     "shell": {
-      "card:bashcrawl": 1,
+      "card:bashcrawl": 3,
       "card:it-journey": 1,
       "nav:bashcrawl": 1,
       "nav:it-journey": 1
@@ -3277,6 +3279,7 @@
     },
     "skills": {
       "apex": 8,
+      "card:bashcrawl": 2,
       "card:skills": 34
     },
     "skills.json": {
@@ -3350,6 +3353,7 @@
     },
     "start": {
       "card:barodybroject": 2,
+      "card:bashcrawl": 1,
       "card:it-journey": 1,
       "card:scripts": 1,
       "card:skills": 1,
@@ -3392,7 +3396,7 @@
     "structure": {
       "card:OverTheWire-website": 1,
       "card:barodybroject": 2,
-      "card:bashcrawl": 1,
+      "card:bashcrawl": 2,
       "card:it-journey": 2,
       "card:scripts": 2,
       "card:skills": 2,
@@ -3485,8 +3489,7 @@
       "nav:bashcrawl": 1
     },
     "terminal": {
-      "apex": 1,
-      "card:bashcrawl": 8,
+      "card:bashcrawl": 5,
       "card:it-journey": 3,
       "nav:bashcrawl": 1,
       "nav:it-journey": 3
@@ -3520,7 +3523,6 @@
     "text": {
       "card:bashcrawl": 2,
       "card:it-journey": 2,
-      "card:scripts": 2,
       "card:zer0-mistakes": 2
     },
     "theme": {
@@ -3550,9 +3552,6 @@
     },
     "todo.md": {
       "card:barodybroject": 1
-    },
-    "tool": {
-      "card:scripts": 1
     },
     "tooling": {
       "apex": 3,
@@ -3667,9 +3666,6 @@
       "card:zer0-mistakes": 2,
       "nav:zer0-mistakes": 2
     },
-    "two": {
-      "card:bashcrawl": 2
-    },
     "type": {
       "card:OverTheWire-website": 3,
       "card:barodybroject": 4,
@@ -3686,11 +3682,8 @@
       "card:zer0-mistakes": 1
     },
     "u2014": {
-      "card:bashcrawl": 4,
+      "card:bashcrawl": 2,
       "card:skills": 2
-    },
-    "u2694": {
-      "card:bashcrawl": 2
     },
     "u26a1": {
       "card:zer0-mistakes": 1
@@ -3702,19 +3695,17 @@
       "card:zer0-mistakes": 2
     },
     "ud83c": {
-      "card:bashcrawl": 2,
+      "card:bashcrawl": 1,
       "card:scripts": 2,
       "card:zer0-mistakes": 2
     },
     "ud83d": {
       "card:barodybroject": 1,
-      "card:bashcrawl": 3,
+      "card:bashcrawl": 2,
       "card:scripts": 6,
       "card:zer0-mistakes": 2
     },
     "ud83e": {
-      "card:bashcrawl": 1,
-      "card:scripts": 1,
       "card:zer0-mistakes": 2
     },
     "udc65": {
@@ -3734,13 +3725,6 @@
     },
     "udd16": {
       "card:zer0-mistakes": 1
-    },
-    "udd27": {
-      "card:bashcrawl": 1
-    },
-    "udded": {
-      "card:bashcrawl": 1,
-      "card:scripts": 1
     },
     "uddf0": {
       "card:zer0-mistakes": 1
@@ -3764,9 +3748,6 @@
     "udf93": {
       "card:bashcrawl": 1
     },
-    "udfae": {
-      "card:bashcrawl": 1
-    },
     "udfaf": {
       "card:scripts": 1,
       "card:zer0-mistakes": 1
@@ -3775,7 +3756,6 @@
       "card:zer0-mistakes": 1
     },
     "ufe0f": {
-      "card:bashcrawl": 2,
       "card:scripts": 2
     },
     "ui-components.md": {
@@ -3799,6 +3779,9 @@
       "card:scripts": 1,
       "card:skills": 1,
       "card:zer0-mistakes": 1
+    },
+    "usage": {
+      "card:scripts": 1
     },
     "use": {
       "card:skills": 2
@@ -3827,9 +3810,6 @@
     "v1.0.0": {
       "card:barodybroject": 1,
       "nav:barodybroject": 1
-    },
-    "v3.1": {
-      "card:bashcrawl": 2
     },
     "validation": {
       "card:it-journey": 1,
@@ -3900,7 +3880,6 @@
     },
     "what": {
       "apex": 1,
-      "card:bashcrawl": 1,
       "card:skills": 1,
       "card:zer0-mistakes": 1
     },
@@ -3960,8 +3939,8 @@
     },
     "zer0-mistakes": {
       "apex": 6,
-      "card:zer0-mistakes": 38,
-      "nav:zer0-mistakes": 4
+      "card:zer0-mistakes": 39,
+      "nav:zer0-mistakes": 5
     },
     "zer0-mistakes.json": {
       "apex": 3,

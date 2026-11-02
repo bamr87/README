@@ -27,7 +27,7 @@ keywords:
   secondary:
   - operating-systems
   - beginner
-lastmod: '2026-06-30T00:00:00.000Z'
+lastmod: '2026-10-27T12:00:00.000Z'
 layout: quest
 learning_style: hands-on
 level: '0000'
@@ -50,6 +50,7 @@ quest_dependencies:
   - /quests/0000/character-selection/
   required_quests: []
   unlocks_quests:
+  - /quests/0000/install-windows-11/
   - /quests/0000/hello-windows/
   - /quests/0000/hello-macos/
   - /quests/0000/linux-fundamentals/
@@ -236,5 +237,5 @@ wsl --set-default-version 2
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[IT Fundamentals]] **Unlocks:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Sequel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Parallel quests:** [[Character Selection]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[IT Fundamentals]] **Unlocks:** [[Install Windows 11: Summon a Fresh World onto a Blank Drive]] · [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Sequel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Parallel quests:** [[Character Selection]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
 

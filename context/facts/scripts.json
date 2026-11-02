@@ -1,24 +1,24 @@
 {
   "corpus": {
-    "file_count": 30,
-    "fingerprint": "c554a5c09b9d8ea3",
+    "file_count": 31,
+    "fingerprint": "dba6c81e2cf63161",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 173522
+    "total_bytes": 161782
   },
   "engine_version": "1.0.0",
   "identity": {
     "headings": [
       "Overview",
-      "\ud83d\udce6 Tool index",
+      "\ud83d\udce6 Features",
+      "Quick start",
       "\ud83d\ude80 Installation",
-      "\ud83c\udfaf Quick start",
+      "\ud83c\udfaf Usage",
       "\ud83d\udd12 Prerequisites",
+      "Documentation",
       "Project structure",
       "\u2705 Development",
-      "\ud83e\udded Fleet context",
-      "Contributing",
-      "Changelog"
+      "Contributing"
     ],
     "readme": "README.md",
     "summary": "Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.",
@@ -30,16 +30,16 @@
     "AGENTS.md",
     "CHANGELOG.md",
     "SECURITY.md",
-    "FORKME/FORKME.md",
     "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
+    "FORKME/FORKME.md",
     "FORKME/FORKME-EXAMPLES.md"
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "d7e0e72808aa396e",
+    "fingerprint": "529720b4afba9a54",
     "index": "scripts/README.md",
     "max_depth": 3,
-    "pages": 28,
+    "pages": 29,
     "present": true,
     "sections": 5,
     "skipped": 1,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "scripts/docs/README.md",
-        "pages": 8,
+        "pages": 9,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -86,17 +86,16 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 30
+      "scripts": 31
     },
     "code_languages": [
       "bash",
       "plaintext",
-      "yaml",
-      "text"
+      "yaml"
     ],
-    "indexed_documents": 30,
+    "indexed_documents": 31,
     "top_tags": [],
-    "total_words": 21448
+    "total_words": 20220
   },
   "schema_version": "1.0",
   "signals": {
@@ -119,7 +118,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 8,
+        "doc_count": 9,
         "name": "docs"
       },
       {

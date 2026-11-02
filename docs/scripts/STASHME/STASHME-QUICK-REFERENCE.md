@@ -4,6 +4,8 @@ title: 📋 StashMe Quick Reference Card
 ---
 # 📋 StashMe Quick Reference Card
 
+> A one-page StashMe cheat sheet: basic commands, common options, modes, branch naming and common workflows.
+
 ## Basic Commands
 
 ```bash

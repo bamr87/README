@@ -4,6 +4,8 @@ title: Contributing
 ---
 # Contributing
 
+> How to report issues, set up a development checkout, add rooms, encounters and scrolls, follow the code standards, and open a pull request.
+
 ## Reporting Issues
 
 Open an issue at [github.com/bamr87/bashcrawl/issues](https://github.com/bamr87/bashcrawl/issues) with steps to reproduce.

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **956 pages** across **98 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **959 pages** across **98 sections** (max depth 7).
 
 - **[Repository & tooling](../it-journey/redirects/README.md)** <small>(233)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
@@ -288,21 +288,23 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Digs — Section Guide](../it-journey/_data/brand/sections/dig.md)
       - [Docs — Section Guide](../it-journey/_data/brand/sections/docs.md)
       - [Quests — Section Guide](../it-journey/_data/brand/sections/quest.md)
-- **[Documentation](../it-journey/docs/README.md)** <small>(49)</small>
+- **[Documentation](../it-journey/docs/README.md)** <small>(51)</small>
   - [it-journey documentation](../it-journey/docs/README.md)
   - [Developer Contribution Guide](../it-journey/docs/CONTRIBUTING_DEVELOPER.md)
   - [it-journey — Constitution](../it-journey/docs/constitution.md)
   - [Notes Workbench — the design](../it-journey/docs/notes/WORKBENCH.md)
   - [Prose Oneline Universal](../it-journey/docs/prose-oneline-universal.md)
+  - [Purpose Page Rewrite](../it-journey/docs/purpose-page-rewrite.md)
   - [Roadmap](../it-journey/docs/ROADMAP.md)
   - [Testing Frameworks](../it-journey/docs/testing/TESTING_FRAMEWORKS.md)
   - **[Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)** <small>(3)</small>
     - [Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)
     - [Agent Failure RCA — <date> <short title>](../it-journey/docs/agents/rca-template.md)
     - [Agent Instruction Changelog](../it-journey/docs/agents/instructions-changelog.md)
-  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — it-journey](../it-journey/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../it-journey/docs/amendments/0001-ratify-constitution.md)
+    - [NEW — Agent merge of mergeable PRs, and a review gate](../it-journey/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../it-journey/docs/amendments/0000-template.md)
   - **Architecture** <small>(3)</small>
     - [About Directory Reorganization Summary](../it-journey/docs/architecture/ABOUT_REORGANIZATION_SUMMARY.md)
@@ -352,7 +354,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Link Checker Workflow Test Results](../it-journey/docs/workflows/LINK_CHECKER_VALIDATION.md)
     - [Link Health Guardian Consolidation Summary](../it-journey/docs/workflows/LINK_CONSOLIDATION_SUMMARY.md)
     - [Organize Posts Weekly Workflow Documentation](../it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md)
-- **[Home](../it-journey/pages/home.md)** <small>(652)</small>
+- **[Home](../it-journey/pages/home.md)** <small>(653)</small>
   - [Home](../it-journey/pages/home.md)
   - [Categories](../it-journey/pages/categories.md)
   - [Home](../it-journey/pages/_hobbies/home.md)
@@ -612,7 +614,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Perfect for showcasing open-source projects](../it-journey/pages/_posts/web development/2025-11-15-github-pages-hidden-gem.md)
       - [Recommended: rbenv + Bundler](../it-journey/pages/_posts/web development/2025-08-31-404-hunting-quest.md)
       - [🎉 Interactive JavaScript & Jekyll Layout Integration Demo](../it-journey/pages/_posts/web development/2025-11-16-javascript-jekyll-interactive-demo.md)
-  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(280)</small>
+  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(281)</small>
     - [Readme](../it-journey/pages/_quests/README.md)
     - [2025 11 17 Azure Ascension Jekyll Deployment Quest](../it-journey/pages/_quests/2025-11-17-azure-ascension-jekyll-deployment-quest.md)
     - [Home](../it-journey/pages/_quests/home.md)
@@ -629,7 +631,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Quest Validation Fixes Summary](../it-journey/pages/_quests/docs/VALIDATION_FIXES_SUMMARY.md)
       - [🎉 Phase 5 Complete: Master & Legend Tier Quest Generation](../it-journey/pages/_quests/docs/PHASE5_COMPLETE.md)
       - [🎯 Phase 6: Polish & Integration](../it-journey/pages/_quests/docs/PHASE6_PLAN.md)
-    - **[Level 0000: Foundation & Init World](../it-journey/pages/_quests/0000/README.md)** <small>(32)</small>
+    - **[Level 0000: Foundation & Init World](../it-journey/pages/_quests/0000/README.md)** <small>(33)</small>
       - [Level 0000: Foundation & Init World](../it-journey/pages/_quests/0000/README.md)
       - [Character Selection](../it-journey/pages/_quests/0000/character-selection.md)
       - [Choose your path](../it-journey/pages/_quests/0000/begin-your-it-journey.md)
@@ -643,6 +645,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Hello Noob](../it-journey/pages/_quests/0000/hello-noob.md)
       - [Inside a treasure script, reveal a hidden room](../it-journey/pages/_quests/0000/bash-run.md)
       - [Install Homebrew, the de facto package manager for macOS](../it-journey/pages/_quests/0000/os-selection.md)
+      - [Install Rufus from the Windows Package Manager](../it-journey/pages/_quests/0000/install-windows-11.md)
       - [It Fundamentals](../it-journey/pages/_quests/0000/it-fundamentals.md)
       - [Linux Fundamentals (linux-fundamentals)](../it-journey/pages/_quests/0000/linux-fundamentals.md)
       - [Linux Fundamentals (linux-fundamentals)](../it-journey/pages/_quests/0000/hello-linux/linux-fundamentals.md)

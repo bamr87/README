@@ -4,6 +4,8 @@ title: 📚 StashMe - Real-World Examples
 ---
 # 📚 StashMe - Real-World Examples
 
+> StashMe scenarios worked end to end: daily workflows, emergencies, machine migration, team collaboration, CI/CD and cron, advanced usage, and sample output.
+
 Practical examples for common scenarios using StashMe.
 
 ## Table of Contents

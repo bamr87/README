@@ -5,7 +5,7 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 28,
+    "pages": 29,
     "sections": 5,
     "max_depth": 3,
     "skipped": 1
@@ -13,12 +13,12 @@
   "skipped": [
     ".claude"
   ],
-  "fingerprint": "d7e0e72808aa396e",
+  "fingerprint": "529720b4afba9a54",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 28,
+    "pages": 29,
     "children": [
       {
         "type": "page",
@@ -32,12 +32,6 @@
         "title": "Changelog",
         "path": "scripts/CHANGELOG.md",
         "rel": "CHANGELOG.md"
-      },
-      {
-        "type": "page",
-        "title": "CLAUDE.md",
-        "path": "scripts/AGENTS.md",
-        "rel": "AGENTS.md"
       },
       {
         "type": "page",
@@ -60,7 +54,13 @@
       },
       {
         "type": "page",
-        "title": "scripts",
+        "title": "scripts (AGENTS)",
+        "path": "scripts/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "scripts (CLAUDE)",
         "path": "scripts/CLAUDE.md",
         "rel": "CLAUDE.md"
       },
@@ -82,7 +82,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "scripts/docs/README.md",
-        "pages": 8,
+        "pages": 9,
         "children": [
           {
             "type": "page",
@@ -90,6 +90,12 @@
             "path": "scripts/docs/README.md",
             "rel": "docs/README.md",
             "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Rename Directory Utility - Quick Reference",
+            "path": "scripts/docs/rename-directory-quick-reference.md",
+            "rel": "docs/rename-directory-quick-reference.md"
           },
           {
             "type": "page",

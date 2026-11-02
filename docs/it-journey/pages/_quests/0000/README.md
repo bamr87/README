@@ -6,7 +6,7 @@ date: '2025-11-29T16:46:02.000Z'
 description: Your starting point in the IT-Journey. Character creation, OS selection,
   terminal basics, and first steps into the digital realm
 draft: false
-lastmod: '2026-05-20T20:57:50.000Z'
+lastmod: '2026-10-27T12:00:00.000Z'
 layout: quest-collection
 level: '0000'
 local_graph: false
@@ -46,6 +46,7 @@ Level 0000 quests focus on:
 | [Linux Fundamentals](/quests/0000/linux-fundamentals/) | 🟡 Medium | 60-90 minutes | main_quest | ✅ Complete |
 | [Hello macOS: Setting Up the Apple Kingdom](/quests/0000/hello-macos/) | 🟢 Easy | 60-90 minutes | main_quest | ✅ Complete |
 | [Hello Windows: Mastering the Windows Development Environment](/quests/0000/hello-windows/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
+| [Install Windows 11: Summon a Fresh World onto a Blank Drive](/quests/0000/install-windows-11/) | 🟡 Medium | 2-3 hours | main_quest | ✅ Complete |
 | [Hello n00b: Your First Steps into the IT Journey](/quests/0000/hello-noob/) | 🟢 Easy | 15-30 minutes | main_quest | ✅ Complete |
 | [Git Basics: Version Control Introduction](/quests/0000/git-basics/) | 🟢 Easy | 60-75 minutes | main_quest | ✅ Complete |
 | [Markdown Mastery: Content Formatting Fundamentals](/quests/0000/markdown-mastery/) | 🟢 Easy | 30-45 minutes | main_quest | ✅ Complete |
@@ -150,6 +151,19 @@ Choose your primary operating system realm. Understand the strengths of each pla
 **Prerequisites:** [IT Fundamentals](it-fundamentals.md) recommended
 
 ### 💻 Platform-Specific Onboarding
+
+#### [Install Windows 11](install-windows-11.md)
+**Quest Type**: Main 🏰 | **Difficulty**: 🟡 Medium | **Estimated Time**: 2-3 hours
+
+Summon Windows 11 onto a laptop with a brand-new SSD: fit the drive, build a bootable USB on any OS, check the UEFI firmware, and walk Setup and first boot.
+
+**Skills You'll Master:**
+- Bootable install media on Windows, macOS and Linux
+- UEFI firmware settings, Secure Boot and TPM
+- Storage driver loading and GPT partition layout
+- Activation, drivers and BitLocker recovery keys
+
+**Prerequisites:** [OS Selection](os-selection.md) recommended
 
 #### [Hello Windows](hello-win.md)
 **Quest Type**: Main 🏰 | **Difficulty**: 🟡 Medium | **Estimated Time**: 60-90 minutes

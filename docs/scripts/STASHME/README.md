@@ -4,6 +4,8 @@ title: 💾 StashMe - Multi-Repository Cloud Stash Utility
 ---
 # 💾 StashMe - Multi-Repository Cloud Stash Utility
 
+> StashMe at a glance: what it does, how it works, its use cases, and where each StashMe document lives.
+
 Save uncommitted changes across multiple git repositories to remote backup branches. Essentially saves your open work to the cloud for all your repos at once.
 
 ## 📚 Documentation

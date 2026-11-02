@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 752,
-    "fingerprint": "43f23928b721d394",
+    "file_count": 759,
+    "fingerprint": "b4872c9304edd4fe",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 5042256
+    "total_bytes": 5079941
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "88d8f5bf92a6d39b",
+    "fingerprint": "92d0e21b64ca4336",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 671,
+    "pages": 678,
     "present": true,
-    "sections": 99,
+    "sections": 100,
     "skipped": 9,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
         "index": "zer0-mistakes/test/README.md",
-        "pages": 82,
+        "pages": 85,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -68,7 +68,7 @@
       },
       {
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 111,
+        "pages": 115,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -135,7 +135,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 752
+      "zer0-mistakes": 759
     },
     "code_languages": [
       "bash",
@@ -147,7 +147,7 @@
       "markdown",
       "javascript"
     ],
-    "indexed_documents": 752,
+    "indexed_documents": 759,
     "top_tags": [
       "jekyll",
       "docker",
@@ -165,7 +165,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 618819
+    "total_words": 623850
   },
   "schema_version": "1.0",
   "signals": {
@@ -196,11 +196,11 @@
         "name": "fr"
       },
       {
-        "doc_count": 111,
+        "doc_count": 115,
         "name": "docs"
       },
       {
-        "doc_count": 72,
+        "doc_count": 75,
         "name": "test"
       },
       {

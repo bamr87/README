@@ -4,6 +4,8 @@ title: Content Registry Contract (v1)
 ---
 # Content Registry Contract (v1)
 
+> The minimum fields `rooms.yaml`, `encounters.yaml` and `quests.yaml` must carry for the shell and Python runtimes, and how CI enforces them.
+
 This contract defines the minimum fields used by both shell and Python runtimes.
 
 ## `rooms.yaml`

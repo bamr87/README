@@ -5,7 +5,7 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 89,
+    "pages": 94,
     "sections": 17,
     "max_depth": 3,
     "skipped": 5
@@ -17,12 +17,12 @@
     "docs/README.md",
     "logs/README.md"
   ],
-  "fingerprint": "125bcfa8894d04b3",
+  "fingerprint": "da85573772d01cb8",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 89,
+    "pages": 94,
     "children": [
       {
         "type": "group",
@@ -93,20 +93,20 @@
       },
       {
         "type": "page",
-        "title": "\u2694\ufe0f Bashcrawl \u2014 learn the terminal by playing",
+        "title": "Bashcrawl (README)",
         "path": "bashcrawl/README.md",
         "rel": "README.md",
         "is_index": true
       },
       {
         "type": "page",
-        "title": "AGENTS.md",
+        "title": "bashcrawl (AGENTS)",
         "path": "bashcrawl/AGENTS.md",
         "rel": "AGENTS.md"
       },
       {
         "type": "page",
-        "title": "bashcrawl",
+        "title": "bashcrawl (CLAUDE)",
         "path": "bashcrawl/CLAUDE.md",
         "rel": "CLAUDE.md"
       },
@@ -388,7 +388,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bashcrawl/docs/index.md",
-        "pages": 41,
+        "pages": 46,
         "children": [
           {
             "type": "page",
@@ -420,6 +420,12 @@
             "title": "Bashcrawl Agent Playtest Report & Recommendations",
             "path": "bashcrawl/docs/agent-playtest-report.md",
             "rel": "docs/agent-playtest-report.md"
+          },
+          {
+            "type": "page",
+            "title": "Bashcrawl architecture",
+            "path": "bashcrawl/docs/ARCHITECTURE.md",
+            "rel": "docs/ARCHITECTURE.md"
           },
           {
             "type": "page",
@@ -569,10 +575,36 @@
           },
           {
             "type": "section",
-            "title": "Generated",
+            "title": "Generated reference",
             "rel": "docs/generated",
-            "pages": 4,
+            "index": "bashcrawl/docs/generated/README.md",
+            "pages": 8,
             "children": [
+              {
+                "type": "page",
+                "title": "Generated reference",
+                "path": "bashcrawl/docs/generated/README.md",
+                "rel": "docs/generated/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Course Catalogue",
+                "path": "bashcrawl/docs/generated/courses.md",
+                "rel": "docs/generated/courses.md"
+              },
+              {
+                "type": "page",
+                "title": "Launcher Commands",
+                "path": "bashcrawl/docs/generated/launcher.md",
+                "rel": "docs/generated/launcher.md"
+              },
+              {
+                "type": "page",
+                "title": "Make Targets",
+                "path": "bashcrawl/docs/generated/make-targets.md",
+                "rel": "docs/generated/make-targets.md"
+              },
               {
                 "type": "page",
                 "title": "Motion Clips and Art",

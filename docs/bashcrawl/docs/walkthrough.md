@@ -4,9 +4,7 @@ title: 'Bashcrawl: Complete Walkthrough'
 ---
 # Bashcrawl: Complete Walkthrough
 
-> A comprehensive guide to the Bashcrawl terminal adventure game.
-> Learn real UNIX commands by exploring mystical catacombs, solving puzzles,
-> and defeating monsters — all from the command line.
+> Every path, puzzle and command in the dungeon, quest by quest: a complete guide to learning real UNIX commands by exploring the catacombs, solving puzzles and defeating monsters from the command line.
 
 ---
 

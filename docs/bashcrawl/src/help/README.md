@@ -4,6 +4,8 @@ title: Bashcrawl Help System
 ---
 # Bashcrawl Help System
 
+> The bash help engine: its scripts, how to run it, and how it works out where the player is and what to suggest next.
+
 Context-aware assistance for players navigating the bashcrawl adventure.
 
 ## Architecture

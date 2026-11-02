@@ -5,8 +5,8 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 671,
-    "sections": 99,
+    "pages": 678,
+    "sections": 100,
     "max_depth": 6,
     "skipped": 9
   },
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "88d8f5bf92a6d39b",
+  "fingerprint": "92d0e21b64ca4336",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 671,
+    "pages": 678,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 82,
+        "pages": 85,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 72,
+            "pages": 75,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 69,
+                "pages": 72,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 69,
+                    "pages": 72,
                     "children": [
                       {
                         "type": "page",
@@ -130,6 +130,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/agent-issue-522/README.md",
                         "rel": "test/visual/evidence/agent-issue-522/README.md",
                         "folder": "test/visual/evidence/agent-issue-522"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Article TOC scoped to the post body (#552)",
+                        "path": "zer0-mistakes/test/visual/evidence/toc-article-scope/README.md",
+                        "rel": "test/visual/evidence/toc-article-scope/README.md",
+                        "folder": "test/visual/evidence/toc-article-scope"
                       },
                       {
                         "type": "page",
@@ -504,6 +511,13 @@
                       },
                       {
                         "type": "page",
+                        "title": "grokbot-fix-cookie-consent-analytics-default \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md",
+                        "rel": "test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md",
+                        "folder": "test/visual/evidence/grokbot-fix-cookie-consent-analytics-default"
+                      },
+                      {
+                        "type": "page",
                         "title": "Heading-level skips (#436)",
                         "path": "zer0-mistakes/test/visual/evidence/heading-level-skips/README.md",
                         "rel": "test/visual/evidence/heading-level-skips/README.md",
@@ -543,6 +557,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/section-topic-filter/README.md",
                         "rel": "test/visual/evidence/section-topic-filter/README.md",
                         "folder": "test/visual/evidence/section-topic-filter"
+                      },
+                      {
+                        "type": "page",
+                        "title": "section-heading-outline \u2014 visual evidence (issue #555)",
+                        "path": "zer0-mistakes/test/visual/evidence/section-heading-outline/README.md",
+                        "rel": "test/visual/evidence/section-heading-outline/README.md",
+                        "folder": "test/visual/evidence/section-heading-outline"
                       },
                       {
                         "type": "page",
@@ -901,7 +922,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 111,
+        "pages": 115,
         "children": [
           {
             "type": "page",
@@ -1003,6 +1024,12 @@
           },
           {
             "type": "page",
+            "title": "zer0-mistakes \u2014 Constitution",
+            "path": "zer0-mistakes/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
             "title": "\ud83d\udcd6 Documentation Workflow Guide",
             "path": "zer0-mistakes/docs/DOCUMENTATION_WORKFLOW.md",
             "rel": "docs/DOCUMENTATION_WORKFLOW.md"
@@ -1012,6 +1039,34 @@
             "title": "\ud83d\ude80 Product Requirements Document: zer0-mistakes Jekyll Theme",
             "path": "zer0-mistakes/docs/PRD.md",
             "rel": "docs/PRD.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 zer0-mistakes",
+            "rel": "docs/amendments",
+            "index": "zer0-mistakes/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 zer0-mistakes",
+                "path": "zer0-mistakes/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "zer0-mistakes/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "zer0-mistakes/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
           },
           {
             "type": "section",

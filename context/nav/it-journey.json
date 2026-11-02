@@ -5,7 +5,7 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 956,
+    "pages": 959,
     "sections": 98,
     "max_depth": 7,
     "skipped": 17
@@ -29,12 +29,12 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "b0b935db8f69a2ba",
+  "fingerprint": "2e6921e424fc4431",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 956,
+    "pages": 959,
     "children": [
       {
         "type": "group",
@@ -1799,7 +1799,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "it-journey/docs/README.md",
-        "pages": 49,
+        "pages": 51,
         "children": [
           {
             "type": "page",
@@ -1832,6 +1832,12 @@
             "title": "Prose Oneline Universal",
             "path": "it-journey/docs/prose-oneline-universal.md",
             "rel": "docs/prose-oneline-universal.md"
+          },
+          {
+            "type": "page",
+            "title": "Purpose Page Rewrite",
+            "path": "it-journey/docs/purpose-page-rewrite.md",
+            "rel": "docs/purpose-page-rewrite.md"
           },
           {
             "type": "page",
@@ -1879,7 +1885,7 @@
             "title": "Amendments \u2014 it-journey",
             "rel": "docs/amendments",
             "index": "it-journey/docs/amendments/README.md",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -1893,6 +1899,13 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "it-journey/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
+                "path": "it-journey/docs/amendments/proposed/agent-merge-review-gate.md",
+                "rel": "docs/amendments/proposed/agent-merge-review-gate.md",
+                "folder": "docs/amendments/proposed"
               },
               {
                 "type": "page",
@@ -2226,7 +2239,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 652,
+        "pages": 653,
         "children": [
           {
             "type": "page",
@@ -3894,7 +3907,7 @@
             "title": "Quests",
             "rel": "pages/_quests",
             "index": "it-journey/pages/_quests/README.md",
-            "pages": 280,
+            "pages": 281,
             "children": [
               {
                 "type": "page",
@@ -4001,7 +4014,7 @@
                 "title": "Level 0000: Foundation & Init World",
                 "rel": "pages/_quests/0000",
                 "index": "it-journey/pages/_quests/0000/README.md",
-                "pages": 32,
+                "pages": 33,
                 "children": [
                   {
                     "type": "page",
@@ -4083,6 +4096,12 @@
                     "title": "Install Homebrew, the de facto package manager for macOS",
                     "path": "it-journey/pages/_quests/0000/os-selection.md",
                     "rel": "pages/_quests/0000/os-selection.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Install Rufus from the Windows Package Manager",
+                    "path": "it-journey/pages/_quests/0000/install-windows-11.md",
+                    "rel": "pages/_quests/0000/install-windows-11.md"
                   },
                   {
                     "type": "page",

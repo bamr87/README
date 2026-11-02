@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **89 pages** across **17 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **94 pages** across **17 sections** (max depth 3).
 
 - **Repository & tooling** <small>(6)</small>
   - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
@@ -20,9 +20,9 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Readme](../bashcrawl/src/terminal-illness/README.md)
     - [AI Prompt: Fantasy Terminal Learning Game Architecture](../bashcrawl/src/terminal-illness/seed_prompt.instructions.md)
     - [Ti](../bashcrawl/src/terminal-illness/ti/audio/assets/README.md)
-- [⚔️ Bashcrawl — learn the terminal by playing](../bashcrawl/README.md)
-- [AGENTS.md](../bashcrawl/AGENTS.md)
-- [bashcrawl](../bashcrawl/CLAUDE.md)
+- [Bashcrawl (README)](../bashcrawl/README.md)
+- [bashcrawl (AGENTS)](../bashcrawl/AGENTS.md)
+- [bashcrawl (CLAUDE)](../bashcrawl/CLAUDE.md)
 - [bashcrawl tools](../bashcrawl/tools/README.md)
 - [Changelog](../bashcrawl/CHANGELOG.md)
 - [motion/](../bashcrawl/motion/README.md)
@@ -65,12 +65,13 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [03 Remove](../bashcrawl/courses/workshop/03-remove.md)
     - [04 Permissions](../bashcrawl/courses/workshop/04-permissions.md)
     - [05 Write](../bashcrawl/courses/workshop/05-write.md)
-- **[Documentation](../bashcrawl/docs/index.md)** <small>(41)</small>
+- **[Documentation](../bashcrawl/docs/index.md)** <small>(46)</small>
   - [Bashcrawl Documentation](../bashcrawl/docs/index.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Agent Mode Protocol Specification](../bashcrawl/docs/agent-protocol.md)
   - [Authoring Courses](../bashcrawl/docs/authoring-courses.md)
   - [Bashcrawl Agent Playtest Report & Recommendations](../bashcrawl/docs/agent-playtest-report.md)
+  - [Bashcrawl architecture](../bashcrawl/docs/ARCHITECTURE.md)
   - [Bashcrawl Improvement Plan](../bashcrawl/docs/improvement-plan.md)
   - [Bashcrawl Logging Framework Plan](../bashcrawl/docs/logging-framework-plan.md)
   - [Bashcrawl Observatory — Log & Screenshot Viewer](../bashcrawl/docs/viewer.md)
@@ -94,7 +95,11 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Architecture Decision Records](../bashcrawl/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../bashcrawl/docs/adr/0001-record-architecture-decisions.md)
     - [ADR NNNN — Title in sentence case](../bashcrawl/docs/adr/0000-template.md)
-  - **Generated** <small>(4)</small>
+  - **[Generated reference](../bashcrawl/docs/generated/README.md)** <small>(8)</small>
+    - [Generated reference](../bashcrawl/docs/generated/README.md)
+    - [Course Catalogue](../bashcrawl/docs/generated/courses.md)
+    - [Launcher Commands](../bashcrawl/docs/generated/launcher.md)
+    - [Make Targets](../bashcrawl/docs/generated/make-targets.md)
     - [Motion Clips and Art](../bashcrawl/docs/generated/motion.md)
     - [Quest Index](../bashcrawl/docs/generated/quests.md)
     - [Rooms Index](../bashcrawl/docs/generated/rooms.md)

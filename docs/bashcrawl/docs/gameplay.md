@@ -4,6 +4,8 @@ title: Gameplay Guide
 ---
 # Gameplay Guide
 
+> The game's mechanics: core commands, room progression, inventory, health, encounters, hidden rooms, combat and game state.
+
 Bashcrawl teaches terminal commands through a fantasy dungeon adventure. Directories are rooms, files named `scroll` are educational content, and executable scripts are interactive encounters.
 
 ## Core Commands

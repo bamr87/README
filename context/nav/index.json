@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2261
+    "pages": 2277
   },
   "projects": {
     "it-journey": {
@@ -21,11 +21,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 956,
+      "pages": 959,
       "sections": 98,
       "max_depth": 7,
       "skipped": 17,
-      "fingerprint": "b0b935db8f69a2ba"
+      "fingerprint": "2e6921e424fc4431"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 671,
-      "sections": 99,
+      "pages": 678,
+      "sections": 100,
       "max_depth": 6,
       "skipped": 9,
-      "fingerprint": "88d8f5bf92a6d39b"
+      "fingerprint": "92d0e21b64ca4336"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -57,11 +57,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 89,
+      "pages": 94,
       "sections": 17,
       "max_depth": 3,
       "skipped": 5,
-      "fingerprint": "125bcfa8894d04b3"
+      "fingerprint": "da85573772d01cb8"
     },
     "skills": {
       "title": "Agent Skills",
@@ -81,11 +81,11 @@
       "tree": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
       "registered": true,
-      "pages": 28,
+      "pages": 29,
       "sections": 5,
       "max_depth": 3,
       "skipped": 1,
-      "fingerprint": "d7e0e72808aa396e"
+      "fingerprint": "529720b4afba9a54"
     },
     "OverTheWire-website": {
       "title": "OverTheWire",
