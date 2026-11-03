@@ -245,7 +245,7 @@ def build_parser() -> argparse.ArgumentParser:
     survey_cmd.add_argument("--kind", help="override the governance profile")
     survey_cmd.set_defaults(func=_cmd_survey)
 
-    fleet = sub.add_parser("fleet", help="list the fleet inventory")
+    fleet = sub.add_parser("fleet", help="list the fleet inventory (_data/fleet.yml)")
     fleet.add_argument("--json", action="store_true")
     fleet.set_defaults(func=_cmd_fleet)
 

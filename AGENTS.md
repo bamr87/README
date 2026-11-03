@@ -19,7 +19,7 @@ pip install -r requirements.txt                     # pip install -r requirement
 bash scripts/aggregate.sh                           # crawl the registry's repos into docs/ (self-bootstraps .venv)
 python3 -m scripts.context_engine build             # rebuild the pyramid (--ai auto|off|anthropic|xai|mock)
 python3 -m scripts.context_engine sync              # registry -> repos.txt
-python3 -m scripts.context_engine query <terms>     # also: card / facts / apex / status / projects / nav
+python3 -m scripts.context_engine query <terms>     # also: card / facts / apex / status / projects / fleet / nav
 python3 -m scripts.context_engine survey [repo]     # fleet survey of default branches -> fleet_health + docs_review
 python3 -m scripts.context_engine survey --workspace ~/github   # review local checkouts -> docs_review only
 python3 -m scripts.context_engine survey --local PATH           # one working tree, nothing written
@@ -28,7 +28,7 @@ python3 scripts/schema_lint.py check .              # SCHEMA drift gate
 python3 -m scripts.context_engine navcheck          # nav surfaces match the corpus (fix: rebuild)
 python3 scripts/check_tracked_surfaces.py           # surfaces name only git-tracked files
 bash scripts/run_doc_checks.sh [--apply]            # corpus quality checks / fixers
-python3 tools/unwrap-prose.py --check               # one paragraph per line
+python3 tools/unwrap-prose.py --check --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$' --exclude '^docs/'   # one paragraph per line, same scope as markdown-oneline.yml
 python3 tools/docs_index.py --check                 # docs/README.md index is fresh
 ```
 
