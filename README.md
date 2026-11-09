@@ -75,7 +75,7 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 | 1. Aggregate | `_data/projects.yml` → `repos.txt` | `docs/` corpus (L3) | `scripts/aggregate.sh` |
 | 2. Process | `raw_docs/` | `docs/{project}/` + frontmatter | `scripts/process.py` |
 | 3. Validate | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` |
-| 4. Index | `docs/` | `docs/docs_index.json` | `scripts/generate_docs_index.py` |
+| 4. Index | `docs/` | `docs/docs_index.json`, `docs/results/docs_quality_report.json` | `scripts/generate_docs_index.py`, `scripts/generate_docs_report.py` |
 | 5. Navigate | `docs/` + registry `navigation:` | `nav.yml`, `context/nav/`, `docs/browse/` | `scripts/context_engine/navigator.py` |
 | 6. Distill | corpus + registry + nav | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
 | 7. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
