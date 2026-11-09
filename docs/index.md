@@ -15,13 +15,13 @@ The left sidebar mirrors each corpus's own folder hierarchy — see the [content
 
 ### [IT-Journey](it-journey/index.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1304 documents, 98 sections)*
+Educational IT platform with quests, blog posts, and technical documentation. *(1327 documents, 98 sections)*
 
 [Content map](browse/it-journey.md)
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(759 documents, 100 sections)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(760 documents, 100 sections)*
 
 [Content map](browse/zer0-mistakes.md)
 

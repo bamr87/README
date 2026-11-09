@@ -5,7 +5,7 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 959,
+    "pages": 968,
     "sections": 98,
     "max_depth": 7,
     "skipped": 17
@@ -29,12 +29,12 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "2e6921e424fc4431",
+  "fingerprint": "0ca248ad5fead296",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 959,
+    "pages": 968,
     "children": [
       {
         "type": "group",
@@ -2239,7 +2239,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 653,
+        "pages": 662,
         "children": [
           {
             "type": "page",
@@ -3907,7 +3907,7 @@
             "title": "Quests",
             "rel": "pages/_quests",
             "index": "it-journey/pages/_quests/README.md",
-            "pages": 281,
+            "pages": 290,
             "children": [
               {
                 "type": "page",
@@ -4236,7 +4236,7 @@
                 "title": "Level 0010: Terminal Enhancement & Shell Mastery",
                 "rel": "pages/_quests/0010",
                 "index": "it-journey/pages/_quests/0010/README.md",
-                "pages": 14,
+                "pages": 15,
                 "children": [
                   {
                     "type": "page",
@@ -4244,6 +4244,12 @@
                     "path": "it-journey/pages/_quests/0010/README.md",
                     "rel": "pages/_quests/0010/README.md",
                     "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "A rule of thumb only. The GPU maker's recommended PSU rating outranks\u2026",
+                    "path": "it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest.md",
+                    "rel": "pages/_quests/0010/twin-rigs-01-the-war-chest.md"
                   },
                   {
                     "type": "page",
@@ -4330,7 +4336,7 @@
                 "title": "Level 0011: Development Tools & AI Integration",
                 "rel": "pages/_quests/0011",
                 "index": "it-journey/pages/_quests/0011/README.md",
-                "pages": 11,
+                "pages": 12,
                 "children": [
                   {
                     "type": "page",
@@ -4344,6 +4350,12 @@
                     "title": ".github/actions/claude-run/action.yml",
                     "path": "it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md",
                     "rel": "pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Advanced Options > Boot Order > NVMe/USB boot, then Finish",
+                    "path": "it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet.md",
+                    "rel": "pages/_quests/0011/twin-rigs-02-the-rewind-cabinet.md"
                   },
                   {
                     "type": "page",
@@ -4606,7 +4618,7 @@
                 "title": "Level 0100: Frontend Development & Docker",
                 "rel": "pages/_quests/0100",
                 "index": "it-journey/pages/_quests/0100/README.md",
-                "pages": 13,
+                "pages": 14,
                 "children": [
                   {
                     "type": "page",
@@ -4683,6 +4695,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "Twin Rigs 03 Waking The Arcade",
+                    "path": "it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade.md",
+                    "rel": "pages/_quests/0100/twin-rigs-03-waking-the-arcade.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "\ud83c\udfad Profile Themes: Unleashing the Style Sorcerer",
                     "path": "it-journey/pages/_quests/0100/side-quest-profile-themes.md",
                     "rel": "pages/_quests/0100/side-quest-profile-themes.md"
@@ -4694,7 +4712,7 @@
                 "title": "Level 0101: Advanced Docker & DevOps",
                 "rel": "pages/_quests/0101",
                 "index": "it-journey/pages/_quests/0101/README.md",
-                "pages": 16,
+                "pages": 17,
                 "children": [
                   {
                     "type": "page",
@@ -4765,6 +4783,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "rsync needs a Linux shell, so run this chapter's fortress steps inside\u2026",
+                    "path": "it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road.md",
+                    "rel": "pages/_quests/0101/twin-rigs-04-the-caravan-road.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "Set and read an environment variable in zsh/bash",
                     "path": "it-journey/pages/_quests/0101/environment-management.md",
                     "rel": "pages/_quests/0101/environment-management.md"
@@ -4800,7 +4824,7 @@
                 "title": "Level 0110 (6) - Database Mastery",
                 "rel": "pages/_quests/0110",
                 "index": "it-journey/pages/_quests/0110/README.md",
-                "pages": 10,
+                "pages": 11,
                 "children": [
                   {
                     "type": "page",
@@ -4814,6 +4838,12 @@
                     "title": "Data Modeling",
                     "path": "it-journey/pages/_quests/0110/data-modeling.md",
                     "rel": "pages/_quests/0110/data-modeling.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Etcher's AppImage works here too, from https://etcher.balena.io/",
+                    "path": "it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge.md",
+                    "rel": "pages/_quests/0110/twin-rigs-05-the-great-forge.md"
                   },
                   {
                     "type": "page",
@@ -4870,7 +4900,7 @@
                 "title": "Level 0111 (7) - API Development",
                 "rel": "pages/_quests/0111",
                 "index": "it-journey/pages/_quests/0111/README.md",
-                "pages": 12,
+                "pages": 13,
                 "children": [
                   {
                     "type": "page",
@@ -4935,6 +4965,12 @@
                   },
                   {
                     "type": "page",
+                    "title": "Open Etcher, choose the recovery file, choose your USB drive, then\u2026",
+                    "path": "it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite.md",
+                    "rel": "pages/_quests/0111/twin-rigs-06-the-steam-rite.md"
+                  },
+                  {
+                    "type": "page",
                     "title": "port 11050.00 2100.50",
                     "path": "it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md",
                     "rel": "pages/_quests/0111/relic-raisers-06-the-strangler-fig.md"
@@ -4952,7 +4988,7 @@
                 "title": "Level 1000 (8) - Cloud Computing Fundamentals",
                 "rel": "pages/_quests/1000",
                 "index": "it-journey/pages/_quests/1000/README.md",
-                "pages": 11,
+                "pages": 12,
                 "children": [
                   {
                     "type": "page",
@@ -4972,6 +5008,12 @@
                     "title": ".github/workflows/agent.yml \u2014 least-privilege scope for a PR-opening\u2026",
                     "path": "it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md",
                     "rel": "pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "After downloading a game into ~/Games",
+                    "path": "it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls.md",
+                    "rel": "pages/_quests/1000/twin-rigs-07-the-free-stalls.md"
                   },
                   {
                     "type": "page",
@@ -5028,7 +5070,7 @@
                 "title": "Level 1001 (9) - Kubernetes Orchestration",
                 "rel": "pages/_quests/1001",
                 "index": "it-journey/pages/_quests/1001/README.md",
-                "pages": 10,
+                "pages": 11,
                 "children": [
                   {
                     "type": "page",
@@ -5048,6 +5090,12 @@
                     "title": ".github/workflows/content-factory.yml (excerpt)",
                     "path": "it-journey/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust.md",
                     "rel": "pages/_quests/1001/self-operating-website-04-the-sigils-of-trust.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "After it comes back, connect again",
+                    "path": "it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith.md",
+                    "rel": "pages/_quests/1001/twin-rigs-08-the-throttle-wraith.md"
                   },
                   {
                     "type": "page",
@@ -5736,7 +5784,7 @@
                 "title": "\ud83d\udcdc The Codex",
                 "rel": "pages/_quests/codex",
                 "index": "it-journey/pages/_quests/codex/index.md",
-                "pages": 13,
+                "pages": 14,
                 "children": [
                   {
                     "type": "page",
@@ -5810,6 +5858,12 @@
                     "title": "Quest Organization Enhancement Summary",
                     "path": "it-journey/pages/_quests/codex/QUEST_ORGANIZATION_SUMMARY.md",
                     "rel": "pages/_quests/codex/QUEST_ORGANIZATION_SUMMARY.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Twin Rigs",
+                    "path": "it-journey/pages/_quests/codex/twin-rigs.md",
+                    "rel": "pages/_quests/codex/twin-rigs.md"
                   },
                   {
                     "type": "page",

@@ -12,7 +12,7 @@
   ],
   "counts": {
     "projects": 7,
-    "pages": 2277
+    "pages": 2287
   },
   "projects": {
     "it-journey": {
@@ -21,11 +21,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 959,
+      "pages": 968,
       "sections": 98,
       "max_depth": 7,
       "skipped": 17,
-      "fingerprint": "2e6921e424fc4431"
+      "fingerprint": "0ca248ad5fead296"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,11 +33,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 678,
+      "pages": 679,
       "sections": 100,
       "max_depth": 6,
       "skipped": 9,
-      "fingerprint": "92d0e21b64ca4336"
+      "fingerprint": "0da7b1282875a0d0"
     },
     "barodybroject": {
       "title": "Barody Project",

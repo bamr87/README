@@ -685,6 +685,7 @@ nav:
                       - "The Rift gate requires all four fragments": it-journey/pages/_quests/0000/bashcrawl/rift.md
               - "Level 0010: Terminal Enhancement & Shell Mastery":
                   - "Level 0010: Terminal Enhancement & Shell Mastery": it-journey/pages/_quests/0010/README.md
+                  - "A rule of thumb only. The GPU maker's recommended PSU rating outranks…": it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest.md
                   - "Iteration 1 (Baseline)": it-journey/pages/_quests/0010/prompt-engineering.md
                   - "macOS-specific commands and setup (advanced-markdown)": it-journey/pages/_quests/0010/advanced-markdown.md
                   - "macOS-specific commands and setup (bootstrap-framework)": it-journey/pages/_quests/0010/bootstrap-framework.md
@@ -701,6 +702,7 @@ nav:
               - "Level 0011: Development Tools & AI Integration":
                   - "Level 0011: Development Tools & AI Integration": it-journey/pages/_quests/0011/README.md
                   - ".github/actions/claude-run/action.yml": it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md
+                  - "Advanced Options > Boot Order > NVMe/USB boot, then Finish": it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet.md
                   - "cobc (GnuCOBOL) 3.1.2.0": it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site.md
                   - "Install VS Code Copilot extensions via CLI": it-journey/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot.md
                   - "macOS-specific commands and setup (advanced-git-workflows)": it-journey/pages/_quests/0011/advanced-git-workflows.md
@@ -755,6 +757,7 @@ nav:
                   - "Install Docker Desktop (includes the engine, CLI, and a small VM)": it-journey/pages/_quests/0100/container-fundamentals.md
                   - "Install Git using Homebrew (the macOS package enchantment)": it-journey/pages/_quests/0100/sourcery-code-methods.md
                   - "scripts/ci/verify.py — the FROZEN findings contract (emitter half)": it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds.md
+                  - "Twin Rigs 03 Waking The Arcade": it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade.md
                   - "🎭 Profile Themes: Unleashing the Style Sorcerer": it-journey/pages/_quests/0100/side-quest-profile-themes.md
               - "Level 0101: Advanced Docker & DevOps":
                   - "Level 0101: Advanced Docker & DevOps": it-journey/pages/_quests/0101/README.md
@@ -768,6 +771,7 @@ nav:
                   - "Install the GitHub CLI to manage repository secrets from the terminal": it-journey/pages/_quests/0101/secrets-management.md
                   - "Install the GitHub CLI to view runs from your terminal": it-journey/pages/_quests/0101/github-actions-basics.md
                   - "Install VS Code extension": it-journey/pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae.md
+                  - "rsync needs a Linux shell, so run this chapter's fortress steps inside…": it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road.md
                   - "Set and read an environment variable in zsh/bash": it-journey/pages/_quests/0101/environment-management.md
                   - "Start Jekyll development environment": it-journey/pages/_quests/0101/jekyll-quest-tracking.md
                   - "The summoning circle: the relic runs identically in every world.": it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md
@@ -776,6 +780,7 @@ nav:
               - "Level 0110 (6) - Database Mastery":
                   - "Level 0110 (6) - Database Mastery": it-journey/pages/_quests/0110/README.md
                   - "Data Modeling": it-journey/pages/_quests/0110/data-modeling.md
+                  - "Etcher's AppImage works here too, from https://etcher.balena.io/": it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge.md
                   - "Install Alembic (Python migration tool)": it-journey/pages/_quests/0110/database-migrations.md
                   - "Install PostgreSQL with Homebrew": it-journey/pages/_quests/0110/database-fundamentals.md
                   - "Logical backup: a portable file that can recreate the database anywhere.": it-journey/pages/_quests/0110/backup-recovery.md
@@ -795,12 +800,14 @@ nav:
                   - "httpbin lets you request any status code on demand": it-journey/pages/_quests/0111/error-handling.md
                   - "Inspect GitHub's rate-limit headers (works unauthenticated, lower limit)": it-journey/pages/_quests/0111/rate-limiting.md
                   - "Install the Redocly CLI to lint and preview OpenAPI docs": it-journey/pages/_quests/0111/api-documentation.md
+                  - "Open Etcher, choose the recovery file, choose your USB drive, then…": it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite.md
                   - "port 11050.00 2100.50": it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md
                   - "Python ships with macOS; install the JWT library for the lab": it-journey/pages/_quests/0111/api-authentication.md
               - "Level 1000 (8) - Cloud Computing Fundamentals":
                   - "Level 1000 (8) - Cloud Computing Fundamentals": it-journey/pages/_quests/1000/README.md
                   - ".github/workflows/agent-with-tracing.yml": it-journey/pages/_quests/1000/agentic-observability-and-control.md
                   - ".github/workflows/agent.yml — least-privilege scope for a PR-opening…": it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md
+                  - "After downloading a game into ~/Games": it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls.md
                   - "Install Terraform via the HashiCorp tap": it-journey/pages/_quests/1000/infrastructure-as-code.md
                   - "Install the AWS CLI v2": it-journey/pages/_quests/1000/aws-essentials.md
                   - "Install the CLI for the provider you want to explore (pick one or more)": it-journey/pages/_quests/1000/cloud-computing-fundamentals.md
@@ -813,6 +820,7 @@ nav:
                   - "Level 1001 (9) - Kubernetes Orchestration": it-journey/pages/_quests/1001/README.md
                   - ".github/workflows/agent-with-retries.yml": it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling.md
                   - ".github/workflows/content-factory.yml (excerpt)": it-journey/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust.md
+                  - "After it comes back, connect again": it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith.md
                   - "AGENTS.md — Agent Operating Guide": it-journey/pages/_quests/1001/agentic-dev-environment-integration.md
                   - "Confirm the cluster and set a working namespace": it-journey/pages/_quests/1001/k8s-config-secrets.md
                   - "Deploy a backend workload to expose": it-journey/pages/_quests/1001/k8s-services-networking.md
@@ -934,6 +942,7 @@ nav:
                   - "macOS comes with excellent terminal support": it-journey/pages/_quests/codex/terminal-mastery-main-quest-example.md
                   - "Quest Network Mapping Examples": it-journey/pages/_quests/codex/quest-network-mapping-example.md
                   - "Quest Organization Enhancement Summary": it-journey/pages/_quests/codex/QUEST_ORGANIZATION_SUMMARY.md
+                  - "Twin Rigs": it-journey/pages/_quests/codex/twin-rigs.md
                   - "World Map": it-journey/pages/_quests/codex/world_map.md
           - "This becomes an <h1>":
               - "This becomes an <h1>": it-journey/pages/_quickstart/index.md
@@ -1156,6 +1165,7 @@ nav:
                       - "fix-search-page-sitemap — visual evidence": zer0-mistakes/test/visual/evidence/fix-search-page-sitemap/README.md
                       - "Footer duplicate copyright (backlog T-054)": zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md
                       - "grokbot-fix-cookie-consent-analytics-default — visual evidence": zer0-mistakes/test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md
+                      - "grokbot-fix-fab-layer-tokens — visual evidence": zer0-mistakes/test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md
                       - "Heading-level skips (#436)": zer0-mistakes/test/visual/evidence/heading-level-skips/README.md
                       - "Mobile navigation panel collapsed to a 60px sliver": zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md
                       - "Mobile responsive audit — evidence": zer0-mistakes/test/visual/evidence/mobile-responsive/README.md

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: b4872c9304edd4fe
+source_fingerprint: d36eecd7a9d8e33d
 tags:
   - accessibility
   - ai
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 759 docs |
+| Corpus | `docs/zer0-mistakes` - 760 docs |
 | External | no |
 
 ## Signals
@@ -43,14 +43,14 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~623,850 words across 759 indexed documents
+- ~624,887 words across 760 indexed documents
 - code samples in: bash, yaml, html, liquid, plaintext, text, markdown, javascript
 
 ## Navigation
 
-678 published pages in 100 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
+679 published pages in 100 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
 
-- **Repository & tooling** (85 pages)
+- **Repository & tooling** (86 pages)
 - **Data** (2 pages)
 - **Design System** (13 pages)
 - **Documentation** (115 pages)

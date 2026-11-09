@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 678,
+    "pages": 679,
     "sections": 100,
     "max_depth": 6,
     "skipped": 9
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "92d0e21b64ca4336",
+  "fingerprint": "0da7b1282875a0d0",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 678,
+    "pages": 679,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 85,
+        "pages": 86,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 75,
+            "pages": 76,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 72,
+                "pages": 73,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 72,
+                    "pages": 73,
                     "children": [
                       {
                         "type": "page",
@@ -515,6 +515,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md",
                         "rel": "test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md",
                         "folder": "test/visual/evidence/grokbot-fix-cookie-consent-analytics-default"
+                      },
+                      {
+                        "type": "page",
+                        "title": "grokbot-fix-fab-layer-tokens \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md",
+                        "rel": "test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md",
+                        "folder": "test/visual/evidence/grokbot-fix-fab-layer-tokens"
                       },
                       {
                         "type": "page",

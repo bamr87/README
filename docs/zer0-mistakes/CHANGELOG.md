@@ -942,6 +942,22 @@ feature docs with captured screenshots of both the broken widget and the giscus.
 
 ### Fixed
 
+- **Docs: the safe-mode build overlay recipe is Pages-faithful** ([#565](https://github.com/bamr87/zer0-mistakes/issues/565)). [`/docs/deployment/build-overlay/`](pages/_docs/deployment/build-overlay.md) used to clone the whole theme repo into the build dir and copy the site on top. The theme's `_data/` (its `navigation/docs.yml` sidebar), its root pages (`/AGENTS/`, `/CLAUDE/`), `examples/`, `templates/`, `features/` and `fr/` all leaked into consumer CI builds that production never serves. The recipe now starts from the consumer site and copies in only `_layouts/`, `_includes/`, `_sass/` and `assets/` with `rsync --ignore-existing` (consumer files win), and it explains why an allowlist beats a denylist. The reusable `lh_overlay()` gets the same inversion, and it now writes to the caller's `_site` (`-d "$PWD/$out"` used to expand after the `cd`, so the site landed in the temp dir). `THEME_URL`/`THEME_REF` are overridable, and the "Verifying the overlay matches Pages" checklist gains the `/AGENTS/`, `/features/`, `/fr/` and theme-`_data` checks. Regression test: `test/test_build_overlay_recipe.sh` (run by `test_core.sh`) runs both code blocks verbatim against a minimal consumer.
+- **An open overlay now covers the floating action buttons**
+  ([#572](https://github.com/bamr87/zer0-mistakes/issues/572), ZER0-081).
+  The FAB band in `_sass/tokens/_layers.scss` sat *above* the overlay surfaces
+  (back-to-top 1050, feedback 1051, chat 1052, toc 1055, local-graph 1060
+  against backdrop 1040, offcanvas 1045, modal 1055), so with the search modal,
+  the main-nav offcanvas or the TOC panel open the TOC and local-graph FABs
+  painted over it undimmed and stayed hit-testable — `fab-toc` tied with `modal`
+  and won on DOM order, because the FABs render after the footer. The band moved
+  to 1031-1035, between the header (1030) and the backdrop (1040), which is the
+  ordering the file's own header already promised. FABs never overlap the fixed
+  header, so nothing else moved; the non-modal local-graph panel still opens
+  over its own FAB and still has its close button. Stale `var(…, 1051)` /
+  `var(…, 1052)` fallbacks in `_includes/components/ai-chat.html` and
+  `_sass/components/_page-feedback.scss` were retuned with it. New source
+  contract: `test/visual/features/fab-layer-order.spec.js`.
 - **Cookie preferences no longer pre-tick Analytics** ([#553](https://github.com/bamr87/zer0-mistakes/issues/553), ZER0-007).
   `#analyticsCookies` carried a hard-coded `checked` attribute, and the
   component synced the modal switches from stored consent *only* for returning
