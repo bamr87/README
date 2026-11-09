@@ -106,3 +106,29 @@ features:
     scenarios:
       - verify/scenarios/smoke-home.yml
     evidence: []
+  - id: README-010
+    title: "MCP get_doc tool"
+    description: "Read one indexed corpus page by path over MCP, confined to docs/ and size-capped, so search_context/get_nav pointers resolve without leaving MCP. Issue #59."
+    implemented: false
+    status: planned
+    prd: ["§4"]
+    surface: api
+    link: mcp/server.py
+    docs: mcp/README.md
+    tags: [mcp, retrieval]
+    tests: []
+    scenarios: []
+    evidence: []
+  - id: README-011
+    title: "MCP provenance and trust markers"
+    description: "Every MCP answer carries source, upstream repo, commit, path, enrichment mode and an untrusted-third-party marker; upstream text is fenced as data. Issue #60."
+    implemented: false
+    status: planned
+    prd: ["§4"]
+    surface: api
+    link: mcp/server.py
+    docs: mcp/README.md
+    tags: [mcp, security, provenance]
+    tests: []
+    scenarios: []
+    evidence: []
