@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/bamr87/README/compare/v0.2.0...v0.2.1) (2026-11-12)
+
+
+### Documentation
+
+* **prd:** plan README-010 (get_doc) and README-011 (MCP provenance) ([1e9f6c7](https://github.com/bamr87/README/commit/1e9f6c74384503286f46d5c767e3dbcb17947ba1))
+* **prd:** plan README-010 get_doc and README-011 MCP provenance ([8fdb882](https://github.com/bamr87/README/commit/8fdb882a446c15a3aaf16a2215731a68f7b27bac))
+
 ## [0.2.0](https://github.com/bamr87/README/compare/v0.1.0...v0.2.0) (2026-10-30)
 
 
