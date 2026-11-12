@@ -9,16 +9,16 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **679 pages** across **100 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **683 pages** across **100 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(86)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(89)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(76)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(79)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(73)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(73)</small>
+    - **Visual** <small>(76)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(76)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [agent-issue-265 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-265/README.md)
         - [agent-issue-412 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-412/README.md)
@@ -26,6 +26,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [agent-issue-484 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-484/README.md)
         - [agent-issue-521 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-521/README.md)
         - [agent-issue-522 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-522/README.md)
+        - [agent-issue-573 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-573/README.md)
         - [Article TOC scoped to the post body (#552)](../zer0-mistakes/test/visual/evidence/toc-article-scope/README.md)
         - [book-abc layout — visual evidence (ZER0-081)](../zer0-mistakes/test/visual/evidence/book-abc/README.md)
         - [claude-universal-frontend-feedback-gnnzua — visual evidence](../zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md)
@@ -43,6 +44,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — cookbook & recipes collection (ZER0-084)](../zer0-mistakes/test/visual/evidence/recipes-collection/README.md)
         - [Evidence — cookie settings modal dark-mode contrast (issue #280)](../zer0-mistakes/test/visual/evidence/cookie-consent-contrast/README.md)
         - [Evidence — dialog titles no longer skip heading levels (issue #318)](../zer0-mistakes/test/visual/evidence/dialog-heading-levels/README.md)
+        - [Evidence — docs-sidebar FAB vs local-graph FAB (#571)](../zer0-mistakes/test/visual/evidence/fab-stack-sidebar/README.md)
         - [Evidence — feature card HTML-escape fix (ZER0-061 card swallowing)](../zer0-mistakes/test/visual/evidence/features-card-escape/README.md)
         - [Evidence — feature registry provenance on /features/ (PR B)](../zer0-mistakes/test/visual/evidence/features-provenance/README.md)
         - [Evidence — foldable Obsidian callouts are accessible disclosures (PR…](../zer0-mistakes/test/visual/evidence/obsidian-callouts/README.md)
@@ -73,6 +75,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Evidence — SoftwareApplication JSON-LD is now opt-in (2026-08 fleet…](../zer0-mistakes/test/visual/evidence/jsonld-software-optin/README.md)
         - [Evidence — the Claude-guided Site Builder (ZER0-086, extends ZER0-067)](../zer0-mistakes/test/visual/evidence/site-builder/README.md)
         - [Evidence — TOC scroll spy tracks the section being read](../zer0-mistakes/test/visual/evidence/scroll-spy/README.md)
+        - [Evidence: cookie-consent gate (#566)](../zer0-mistakes/test/visual/evidence/cookie-consent-gate/README.md)
         - [fix-a11y-intro-actions-nav-toggle-badges — visual evidence](../zer0-mistakes/test/visual/evidence/fix-a11y-intro-actions-nav-toggle-badges/README.md)
         - [fix-cookie-banner-compact — visual evidence](../zer0-mistakes/test/visual/evidence/fix-cookie-banner-compact/README.md)
         - [fix-includes-favicon-tags-404 — visual evidence](../zer0-mistakes/test/visual/evidence/fix-includes-favicon-tags-404/README.md)
@@ -138,7 +141,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Card.Prompt](../zer0-mistakes/_design-system/components/surfaces/Card.prompt.md)
       - [Featurecard.Prompt](../zer0-mistakes/_design-system/components/surfaces/FeatureCard.prompt.md)
       - [Postcard.Prompt](../zer0-mistakes/_design-system/components/surfaces/PostCard.prompt.md)
-- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(115)</small>
+- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(116)</small>
   - [Developer Documentation](../zer0-mistakes/docs/README.md)
   - [Dependency Management Strategy](../zer0-mistakes/docs/DEPENDENCY_MANAGEMENT.md)
   - [Documentation Organization Summary](../zer0-mistakes/docs/ORGANIZATION_SUMMARY.md)
@@ -158,9 +161,10 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
   - [zer0-mistakes — Constitution](../zer0-mistakes/docs/constitution.md)
   - [📖 Documentation Workflow Guide](../zer0-mistakes/docs/DOCUMENTATION_WORKFLOW.md)
   - [🚀 Product Requirements Document: zer0-mistakes Jekyll Theme](../zer0-mistakes/docs/PRD.md)
-  - **[Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../zer0-mistakes/docs/amendments/0001-ratify-constitution.md)
+    - [NEW — Agent merge of mergeable PRs, and a review gate](../zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../zer0-mistakes/docs/amendments/0000-template.md)
   - **[Architecture Documentation](../zer0-mistakes/docs/architecture/README.md)** <small>(7)</small>
     - [Architecture Documentation](../zer0-mistakes/docs/architecture/README.md)

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: d05826aeb2911391
+source_fingerprint: aa70530f9329a558
 tags:
   - bash
   - education
@@ -32,7 +32,7 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~87,946 words across 104 indexed documents
+- ~88,864 words across 104 indexed documents
 - code samples in: bash, plaintext, json, yaml, text, js, python, markdown
 
 ## Navigation

@@ -9,6 +9,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1](https://github.com/bamr87/it-journey/compare/v0.3.0...v0.3.1) (2026-11-12)
+
+
+### Documentation
+
+* **setup:** record AUTO_PR_GITHUB_TOKEN permissions and rotation ([f065975](https://github.com/bamr87/it-journey/commit/f06597561dbf4a4b37b16611f2539c0be9e3a6a6))
+* **setup:** record AUTO_PR_GITHUB_TOKEN permissions and rotation ([778ef59](https://github.com/bamr87/it-journey/commit/778ef5927a5d5bc186c1189c68ed6aba448f2b7d))
+
+## [0.3.0](https://github.com/bamr87/it-journey/compare/v0.2.3...v0.3.0) (2026-11-10)
+
+
+### Added
+
+* **quests:** extend SEO quest with AI-citability trifecta chapter (POST-129) ([e3b39cd](https://github.com/bamr87/it-journey/commit/e3b39cda0f6a48eaef740998adec5bd080016f01))
+
+
+### Documentation
+
+* **readme:** pitch, links and hero on the first screen, plus a large homepage share card ([cee541a](https://github.com/bamr87/it-journey/commit/cee541a7047752c0f4ff0a2cdf029e906d82d998))
+
 ## [0.2.3](https://github.com/bamr87/it-journey/compare/v0.2.2...v0.2.3) (2026-10-31)
 
 
