@@ -37,12 +37,6 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(10
 
 [Content map](browse/bashcrawl.md)
 
-### [Agent Skills](skills/README.md)
-
-Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents, 3 sections)*
-
-[Content map](browse/skills.md)
-
 ### [🛠️ scripts](scripts/README.md)
 
 Automation scripts for forking, linting, stashing, and project management across the fleet. *(31 documents, 5 sections)*

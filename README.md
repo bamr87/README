@@ -40,7 +40,6 @@ Every governed directory carries a `SCHEMA.md` (structure table + rules), mirror
 | [zer0-mistakes](context/cards/zer0-mistakes.md) | theme | active | 760 | 100 | Jekyll theme and software architecture patterns for GitHub Pages. |
 | [barodybroject](context/cards/barodybroject.md) | app | active | 321 | 56 | Full-stack application platform with infrastructure, testing, and deployment tooling. |
 | [bashcrawl](context/cards/bashcrawl.md) | game | active | 104 | 17 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [skills](context/cards/skills.md) | docs | active | 712 | 3 | Agent skills — prompts, MCP configurations, and AI development patterns. |
 | [scripts](context/cards/scripts.md) | tooling | active | 31 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [OverTheWire-website](context/cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
 <!-- AUTO:projects:end -->

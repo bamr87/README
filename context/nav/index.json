@@ -6,13 +6,12 @@
     "zer0-mistakes",
     "barodybroject",
     "bashcrawl",
-    "skills",
     "scripts",
     "OverTheWire-website"
   ],
   "counts": {
-    "projects": 7,
-    "pages": 2287
+    "projects": 6,
+    "pages": 2280
   },
   "projects": {
     "it-journey": {
@@ -62,18 +61,6 @@
       "max_depth": 3,
       "skipped": 5,
       "fingerprint": "da85573772d01cb8"
-    },
-    "skills": {
-      "title": "Agent Skills",
-      "corpus": "docs/skills",
-      "tree": "context/nav/skills.json",
-      "browse": "docs/browse/skills.md",
-      "registered": true,
-      "pages": 7,
-      "sections": 3,
-      "max_depth": 3,
-      "skipped": 1,
-      "fingerprint": "292f000a4ab20ef9"
     },
     "scripts": {
       "title": "Scripts",
