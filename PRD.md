@@ -48,6 +48,8 @@ into the root README `AUTO:projects` span; mirror the fleet overview to the publ
 7. **Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/
 projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status` + `context://` resources).
 8. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits; hooks allow agents to extend every build.
+9. **Read a document** (planned, README-010, #59): an MCP `get_doc` tool returns one indexed corpus page by path, confined to `docs/` and capped in size, so a client can follow a `search_context`/`get_nav` pointer without leaving MCP.
+10. **Provenance** (planned, README-011, #60): every MCP answer carries its source (engine or upstream repo), commit, path, enrichment mode and a trust marker, with upstream text fenced as untrusted data.
 
 ## 5. Non-functional requirements
 
@@ -85,13 +87,15 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-006](features/features.yml) | Index | shipped | [`context`](context) · [`PRD.md`](PRD.md) | §4 |
 | [README-007](features/features.yml) | Serve | shipped | [`mcp`](mcp) · [`PRD.md`](PRD.md) | §4 |
 | [README-008](features/features.yml) | Evolve | shipped | [`hooks.d`](hooks.d) · [`PRD.md`](PRD.md) | §4 |
-| [README-009](features/features.yml) | Published fleet documentation site | shipped | [``](.) · [`MKDOCS.md`](MKDOCS.md) | TBD |
+| [README-009](features/features.yml) | Published fleet documentation site | shipped | route `/` · [`MKDOCS.md`](MKDOCS.md) | TBD |
+| [README-010](features/features.yml) | MCP get_doc tool | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | §4 |
+| [README-011](features/features.yml) | MCP provenance and trust markers | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | §4 |
 
 **Requirement → feature trace**
 
 | Requirement | Features |
 | --- | --- |
-| §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008 |
+| §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008, README-010, README-011 |
 | TBD | README-009 |
 <!-- features:end -->
 
