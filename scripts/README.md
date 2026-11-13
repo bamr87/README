@@ -90,15 +90,23 @@ scripts/
 ├── fix_h1.py               # H1 heading fixer
 ├── fix_whitespace.py       # Trailing whitespace remover
 ├── generate_docs_index.py  # Comprehensive JSON index generator
-├── generate_docs_report.py # Quality report generator
+├── generate_docs_report.py # Quality report generator (docs/results/)
 ├── lint_docs.py            # Documentation linter
 ├── normalize_tags.py       # Tag normalization utility
 ├── run_doc_checks.sh       # Quality check orchestrator
 ├── schema_lint.py          # SCHEMA.md pyramid drift gate
 ├── check_tracked_surfaces.py # Integrity gate: surfaces reference tracked files
+├── fix_mkdocs_links.py     # MkDocs link converter/validator (outside the pipeline)
+├── aggregate_mkdocs.py     # Alternative category-bucketing aggregator (outside the pipeline)
+├── mkdocs_quality_report.py # MkDocs compatibility/quality analyzer (outside the pipeline)
+├── analyze_doc_structure.py # Corpus structure analysis utility (outside the pipeline)
+├── cleanup_docs.py         # Corpus cleanup utility (outside the pipeline)
+├── wiki-manage.sh          # Wiki.js stack wrapper (see ../WIKIJS-QUICKSTART.md)
 ├── context_engine/         # Context engine package (stages 5-7, 10)
+│   ├── config.py           # Shared paths and constants
 │   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
 │   ├── extractor.py        # Corpus -> structured facts (L2)
+│   ├── navigator.py        # Corpus + navigation contract -> context/nav/, nav.yml, docs/browse/
 │   ├── synthesizer.py      # Facts -> project cards (L1)
 │   ├── assembler.py        # Apex README, AUTO span, site index (L0)
 │   ├── indexer.py          # Query index + freshness manifest
