@@ -85,7 +85,7 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 
 ## Continuous evolution
 
-- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it.
+- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it. Setting the repository variable `AGGREGATE_DOCS_ENABLED` to `false` pauses the cron without a commit; a manual run ignores it.
 - **`docs-quality-check.yaml`** runs on every PR: the SCHEMA drift gate, the navigation drift gate (`context_engine navcheck`), and the tracked-surfaces integrity gate (`scripts/check_tracked_surfaces.py`), then lints the corpus and posts a report. The cron runs the same three gates before it commits.
 - **`deploy-pages.yaml`** publishes `docs/` (whose home page is the generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
 - **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples.
