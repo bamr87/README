@@ -2,7 +2,10 @@ name: Aggregate Documentation
 
 on:
   schedule:
-    - cron: '0 3 * * 1'  # Weekly, Monday 03:00 UTC (off the congested midnight slot)
+    # Weekly, Monday 03:23 UTC (off the congested midnight slot). Not on the
+    # hour: :00 is the minute GitHub delays and drops most (fleet rule,
+    # bamr87/bamr87 docs/HARNESS-OPS.md, the schedule map). Was 0 3 * * 1.
+    - cron: '23 3 * * 1'
   workflow_dispatch:  # Manual trigger
 
 # The default GITHUB_TOKEN on this repo is read-only; the commit step needs
@@ -12,6 +15,13 @@ permissions:
 
 jobs:
   aggregate:
+    # Kill switch (fleet convention — bamr87/bamr87 docs/HARNESS-OPS.md): a
+    # scheduled loop must be disarmable from the repo's Variables, without a
+    # commit. The "Build context pyramid" step below calls a model when a
+    # provider key is configured, which makes this one of the fleet's
+    # harnesses. AGGREGATE_DOCS_ENABLED absent, or anything but 'false', keeps
+    # the schedule on; a manual dispatch always runs.
+    if: ${{ github.event_name != 'schedule' || vars.AGGREGATE_DOCS_ENABLED != 'false' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
