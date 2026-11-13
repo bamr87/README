@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/bamr87/README/compare/v0.2.1...v0.2.2) (2026-11-13)
+
+
+### Fixed
+
+* **registry:** remove stale vendored skills corpus (dead upstream source) ([5ef5cf5](https://github.com/bamr87/README/commit/5ef5cf51a3375e3d50668eef3811e90c5fb2dcbf))
+* **registry:** remove stale vendored skills corpus (dead upstream source) ([de09726](https://github.com/bamr87/README/commit/de0972633a7fb830c4d5694df80a6f145517abb2))
+
 ## [0.2.1](https://github.com/bamr87/README/compare/v0.2.0...v0.2.1) (2026-11-12)
 
 
