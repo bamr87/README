@@ -321,8 +321,11 @@ nav:
           - "Amendments — it-journey":
               - "Amendments — it-journey": it-journey/docs/amendments/README.md
               - "0001 — Ratify the constitution": it-journey/docs/amendments/0001-ratify-constitution.md
-              - "NEW — Agent merge of mergeable PRs, and a review gate": it-journey/docs/amendments/proposed/agent-merge-review-gate.md
               - "NNNN — Title of the amendment": it-journey/docs/amendments/0000-template.md
+              - "docs/amendments/proposed/ — unnumbered amendment records":
+                  - "docs/amendments/proposed/ — unnumbered amendment records": it-journey/docs/amendments/proposed/README.md
+                  - "NEW — Agent merge of mergeable PRs, and a review gate": it-journey/docs/amendments/proposed/agent-merge-review-gate.md
+                  - "NEW — Editorial charter for quests": it-journey/docs/amendments/proposed/editorial-charter.md
           - "Architecture":
               - "About Directory Reorganization Summary": it-journey/docs/architecture/ABOUT_REORGANIZATION_SUMMARY.md
               - "IT-Journey Repository Structure": it-journey/docs/architecture/REPOSITORY_STRUCTURE.md
@@ -359,6 +362,7 @@ nav:
           - "Setup":
               - "Development Environment Setup": it-journey/docs/setup/DEVELOPMENT_ENVIRONMENT.md
               - "PostHog Analytics for IT-Journey Scripts": it-journey/docs/setup/POSTHOG_ANALYTICS.md
+              - "The automation token (AUTOPRGITHUBTOKEN)": it-journey/docs/setup/AUTO_PR_TOKEN.md
               - "zer0-mistakes Theme Installation Update": it-journey/docs/setup/INSTALLATION_UPDATE.md
           - "Standards":
               - "Content Guidelines": it-journey/docs/standards/CONTENT_GUIDELINES.md
@@ -815,6 +819,7 @@ nav:
                   - "Reach the box and give it a memorable name in your SSH config": it-journey/pages/_quests/1000/forge-your-own-dev-server.md
                   - "scripts/decidecore.py — the pure OODA/RICE decision functions, imported…": it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine.md
                   - "setup: verifies prerequisites and provisions the Azure Static Web App": it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment.md
+                  - "UEFI firmware ships with Homebrew's QEMU": it-journey/pages/_quests/1000/pxe-boot-server.md
                   - "work/gh-600/tool-inventories/dependency-updater-tools.yml": it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions.md
               - "Level 1001 (9) - Kubernetes Orchestration":
                   - "Level 1001 (9) - Kubernetes Orchestration": it-journey/pages/_quests/1001/README.md
@@ -1110,6 +1115,7 @@ nav:
                       - "agent-issue-484 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-484/README.md
                       - "agent-issue-521 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-521/README.md
                       - "agent-issue-522 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-522/README.md
+                      - "agent-issue-573 — visual evidence": zer0-mistakes/test/visual/evidence/agent-issue-573/README.md
                       - "Article TOC scoped to the post body (#552)": zer0-mistakes/test/visual/evidence/toc-article-scope/README.md
                       - "book-abc layout — visual evidence (ZER0-081)": zer0-mistakes/test/visual/evidence/book-abc/README.md
                       - "claude-universal-frontend-feedback-gnnzua — visual evidence": zer0-mistakes/test/visual/evidence/claude-universal-frontend-feedback-gnnzua/README.md
@@ -1127,6 +1133,7 @@ nav:
                       - "Evidence — cookbook & recipes collection (ZER0-084)": zer0-mistakes/test/visual/evidence/recipes-collection/README.md
                       - "Evidence — cookie settings modal dark-mode contrast (issue #280)": zer0-mistakes/test/visual/evidence/cookie-consent-contrast/README.md
                       - "Evidence — dialog titles no longer skip heading levels (issue #318)": zer0-mistakes/test/visual/evidence/dialog-heading-levels/README.md
+                      - "Evidence — docs-sidebar FAB vs local-graph FAB (#571)": zer0-mistakes/test/visual/evidence/fab-stack-sidebar/README.md
                       - "Evidence — feature card HTML-escape fix (ZER0-061 card swallowing)": zer0-mistakes/test/visual/evidence/features-card-escape/README.md
                       - "Evidence — feature registry provenance on /features/ (PR B)": zer0-mistakes/test/visual/evidence/features-provenance/README.md
                       - "Evidence — foldable Obsidian callouts are accessible disclosures (PR…": zer0-mistakes/test/visual/evidence/obsidian-callouts/README.md
@@ -1157,6 +1164,7 @@ nav:
                       - "Evidence — SoftwareApplication JSON-LD is now opt-in (2026-08 fleet…": zer0-mistakes/test/visual/evidence/jsonld-software-optin/README.md
                       - "Evidence — the Claude-guided Site Builder (ZER0-086, extends ZER0-067)": zer0-mistakes/test/visual/evidence/site-builder/README.md
                       - "Evidence — TOC scroll spy tracks the section being read": zer0-mistakes/test/visual/evidence/scroll-spy/README.md
+                      - "Evidence: cookie-consent gate (#566)": zer0-mistakes/test/visual/evidence/cookie-consent-gate/README.md
                       - "fix-a11y-intro-actions-nav-toggle-badges — visual evidence": zer0-mistakes/test/visual/evidence/fix-a11y-intro-actions-nav-toggle-badges/README.md
                       - "fix-cookie-banner-compact — visual evidence": zer0-mistakes/test/visual/evidence/fix-cookie-banner-compact/README.md
                       - "fix-includes-favicon-tags-404 — visual evidence": zer0-mistakes/test/visual/evidence/fix-includes-favicon-tags-404/README.md
@@ -1245,6 +1253,7 @@ nav:
           - "Amendments — zer0-mistakes":
               - "Amendments — zer0-mistakes": zer0-mistakes/docs/amendments/README.md
               - "0001 — Ratify the constitution": zer0-mistakes/docs/amendments/0001-ratify-constitution.md
+              - "NEW — Agent merge of mergeable PRs, and a review gate": zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md
               - "NNNN — Title of the amendment": zer0-mistakes/docs/amendments/0000-template.md
           - "Architecture Documentation":
               - "Architecture Documentation": zer0-mistakes/docs/architecture/README.md
@@ -2312,17 +2321,6 @@ nav:
           - "🌟 The Cellar of True Sight":
               - "🌟 The Cellar of True Sight": bashcrawl/entrance/cellar/README.md
               - "🗡️ The Grand Armoury": bashcrawl/entrance/cellar/armoury/README.md
-  - "Agent Skills":
-      - "Documentation":
-          - "Astro Starter Kit: Minimal": skills/docs-site/README.md
-      - "Repository & tooling":
-          - "Hooks": skills/hooks/continual-learning/README.md
-          - "Skill Evaluation Test Harness":
-              - "Skill Evaluation Test Harness": skills/tests/README.md
-              - "Test Harness Agent Instructions": skills/tests/AGENTS.md
-      - "Agent Skills (README)": skills/README.md
-      - "Agent Skills (Agents)": skills/Agents.md
-      - "Security": skills/SECURITY.md
   - "Scripts":
       - "🛠️ scripts": scripts/README.md
       - "Changelog": scripts/CHANGELOG.md
@@ -2626,7 +2624,6 @@ nav:
       - "Zer0 Mistakes": browse/zer0-mistakes.md
       - "Barody Project": browse/barodybroject.md
       - "Bash Crawl": browse/bashcrawl.md
-      - "Agent Skills": browse/skills.md
       - "Scripts": browse/scripts.md
       - "OverTheWire": browse/OverTheWire-website.md
       - "Adr": browse/adr.md

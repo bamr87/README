@@ -114,39 +114,6 @@ projects:
       title: Scripts
       order: 60
 
-  - name: skills
-    repo: bamr87/skills
-    url: https://github.com/bamr87/skills
-    kind: docs
-    description: >-
-      Agent skills — prompts, MCP configurations, and AI development
-      patterns.
-    topics: [ai, agents, mcp, prompts]
-    nav:
-      title: Agent Skills
-      order: 50
-      max_depth: 7
-      # Almost all of this corpus lives under .github/, which GitHub Pages
-      # cannot serve, so navigate_hidden keeps it out of the sidebar and only
-      # the handful of top-level pages are navigable today. These groups are
-      # kept because they are what the sidebar should look like the moment
-      # that content becomes servable (see navigate_hidden above).
-      groups:
-        - title: Skills
-          match: [".github/skills"]
-        - title: Agents
-          match: [".github/agents"]
-        - title: Prompts
-          match: [".github/prompts"]
-        - title: Plugins
-          match: [".github/plugins"]
-        - title: Documentation
-          match: [".github/docs", "docs-site"]
-        - title: Workflows
-          match: [".github/workflows"]
-        - title: Repository & tooling
-          match: [".github", "hooks", "tests"]
-
   - name: barodybroject
     repo: bamr87/barodybroject
     url: https://github.com/bamr87/barodybroject

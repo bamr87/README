@@ -9,15 +9,14 @@ generated: true
 
 # Content map
 
-**2,287** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**2,288** published pages across **6** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 968 | 98 | Repository & tooling, Data, Documentation, Home, Includes |
-| [Zer0 Mistakes](zer0-mistakes.md) | 679 | 100 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
+| [IT Journey](it-journey.md) | 972 | 99 | Repository & tooling, Data, Documentation, Home, Includes |
+| [Zer0 Mistakes](zer0-mistakes.md) | 683 | 100 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
 | [Barody Project](barodybroject.md) | 269 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
 | [Bash Crawl](bashcrawl.md) | 94 | 17 | Repository & tooling, Courses, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
-| [Agent Skills](skills.md) | 7 | 3 | Documentation, Repository & tooling |
 | [Scripts](scripts.md) | 29 | 5 | Documentation, 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |
 | [OverTheWire](OverTheWire-website.md) | 232 | 17 | Includes, Index (wargames), Information |
 

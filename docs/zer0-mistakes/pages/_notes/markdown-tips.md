@@ -129,6 +129,8 @@ title: Heading 1
 - [x] Completed task
 - [ ] Incomplete task
 - [ ] Another task
+  - [x] Nested completed
+  - [ ] Nested incomplete
 
 ### Definition Lists
 

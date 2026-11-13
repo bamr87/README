@@ -9,7 +9,7 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **968 pages** across **98 sections** (max depth 7).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **972 pages** across **99 sections** (max depth 7).
 
 - **[Repository & tooling](../it-journey/redirects/README.md)** <small>(233)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
@@ -288,7 +288,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Digs — Section Guide](../it-journey/_data/brand/sections/dig.md)
       - [Docs — Section Guide](../it-journey/_data/brand/sections/docs.md)
       - [Quests — Section Guide](../it-journey/_data/brand/sections/quest.md)
-- **[Documentation](../it-journey/docs/README.md)** <small>(51)</small>
+- **[Documentation](../it-journey/docs/README.md)** <small>(54)</small>
   - [it-journey documentation](../it-journey/docs/README.md)
   - [Developer Contribution Guide](../it-journey/docs/CONTRIBUTING_DEVELOPER.md)
   - [it-journey — Constitution](../it-journey/docs/constitution.md)
@@ -301,11 +301,14 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)
     - [Agent Failure RCA — <date> <short title>](../it-journey/docs/agents/rca-template.md)
     - [Agent Instruction Changelog](../it-journey/docs/agents/instructions-changelog.md)
-  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(6)</small>
     - [Amendments — it-journey](../it-journey/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../it-journey/docs/amendments/0001-ratify-constitution.md)
-    - [NEW — Agent merge of mergeable PRs, and a review gate](../it-journey/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../it-journey/docs/amendments/0000-template.md)
+    - **[docs/amendments/proposed/ — unnumbered amendment records](../it-journey/docs/amendments/proposed/README.md)** <small>(3)</small>
+      - [docs/amendments/proposed/ — unnumbered amendment records](../it-journey/docs/amendments/proposed/README.md)
+      - [NEW — Agent merge of mergeable PRs, and a review gate](../it-journey/docs/amendments/proposed/agent-merge-review-gate.md)
+      - [NEW — Editorial charter for quests](../it-journey/docs/amendments/proposed/editorial-charter.md)
   - **Architecture** <small>(3)</small>
     - [About Directory Reorganization Summary](../it-journey/docs/architecture/ABOUT_REORGANIZATION_SUMMARY.md)
     - [IT-Journey Repository Structure](../it-journey/docs/architecture/REPOSITORY_STRUCTURE.md)
@@ -339,9 +342,10 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Script Directory Cleanup Summary](../it-journey/docs/scripts/CLEANUP_SUMMARY.md)
     - [Script Directory Consolidation Plan](../it-journey/docs/scripts/CONSOLIDATION_PLAN.md)
     - [Scripts Guide](../it-journey/docs/scripts/SCRIPTS_GUIDE.md)
-  - **Setup** <small>(3)</small>
+  - **Setup** <small>(4)</small>
     - [Development Environment Setup](../it-journey/docs/setup/DEVELOPMENT_ENVIRONMENT.md)
     - [PostHog Analytics for IT-Journey Scripts](../it-journey/docs/setup/POSTHOG_ANALYTICS.md)
+    - [The automation token (AUTOPRGITHUBTOKEN)](../it-journey/docs/setup/AUTO_PR_TOKEN.md)
     - [zer0-mistakes Theme Installation Update](../it-journey/docs/setup/INSTALLATION_UPDATE.md)
   - **Standards** <small>(3)</small>
     - [Content Guidelines](../it-journey/docs/standards/CONTENT_GUIDELINES.md)
@@ -354,7 +358,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [Link Checker Workflow Test Results](../it-journey/docs/workflows/LINK_CHECKER_VALIDATION.md)
     - [Link Health Guardian Consolidation Summary](../it-journey/docs/workflows/LINK_CONSOLIDATION_SUMMARY.md)
     - [Organize Posts Weekly Workflow Documentation](../it-journey/docs/workflows/ORGANIZE_POSTS_WORKFLOW.md)
-- **[Home](../it-journey/pages/home.md)** <small>(662)</small>
+- **[Home](../it-journey/pages/home.md)** <small>(663)</small>
   - [Home](../it-journey/pages/home.md)
   - [Categories](../it-journey/pages/categories.md)
   - [Home](../it-journey/pages/_hobbies/home.md)
@@ -614,7 +618,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Perfect for showcasing open-source projects](../it-journey/pages/_posts/web development/2025-11-15-github-pages-hidden-gem.md)
       - [Recommended: rbenv + Bundler](../it-journey/pages/_posts/web development/2025-08-31-404-hunting-quest.md)
       - [🎉 Interactive JavaScript & Jekyll Layout Integration Demo](../it-journey/pages/_posts/web development/2025-11-16-javascript-jekyll-interactive-demo.md)
-  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(290)</small>
+  - **[Quests](../it-journey/pages/_quests/README.md)** <small>(291)</small>
     - [Readme](../it-journey/pages/_quests/README.md)
     - [2025 11 17 Azure Ascension Jekyll Deployment Quest](../it-journey/pages/_quests/2025-11-17-azure-ascension-jekyll-deployment-quest.md)
     - [Home](../it-journey/pages/_quests/home.md)
@@ -786,7 +790,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Open Etcher, choose the recovery file, choose your USB drive, then…](../it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite.md)
       - [port 11050.00 2100.50](../it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md)
       - [Python ships with macOS; install the JWT library for the lab](../it-journey/pages/_quests/0111/api-authentication.md)
-    - **[Level 1000 (8) - Cloud Computing Fundamentals](../it-journey/pages/_quests/1000/README.md)** <small>(12)</small>
+    - **[Level 1000 (8) - Cloud Computing Fundamentals](../it-journey/pages/_quests/1000/README.md)** <small>(13)</small>
       - [Level 1000 (8) - Cloud Computing Fundamentals](../it-journey/pages/_quests/1000/README.md)
       - [.github/workflows/agent-with-tracing.yml](../it-journey/pages/_quests/1000/agentic-observability-and-control.md)
       - [.github/workflows/agent.yml — least-privilege scope for a PR-opening…](../it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md)
@@ -798,6 +802,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Reach the box and give it a memorable name in your SSH config](../it-journey/pages/_quests/1000/forge-your-own-dev-server.md)
       - [scripts/decidecore.py — the pure OODA/RICE decision functions, imported…](../it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine.md)
       - [setup: verifies prerequisites and provisions the Azure Static Web App](../it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment.md)
+      - [UEFI firmware ships with Homebrew's QEMU](../it-journey/pages/_quests/1000/pxe-boot-server.md)
       - [work/gh-600/tool-inventories/dependency-updater-tools.yml](../it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions.md)
     - **[Level 1001 (9) - Kubernetes Orchestration](../it-journey/pages/_quests/1001/README.md)** <small>(11)</small>
       - [Level 1001 (9) - Kubernetes Orchestration](../it-journey/pages/_quests/1001/README.md)

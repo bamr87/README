@@ -683,7 +683,7 @@ Derivation rules: titles come from frontmatter `title` → first H1 → humanize
 ```bash
 python3 scripts/fix_frontmatter_icons.py                    # report (exit 1 if any remain)
 python3 scripts/fix_frontmatter_icons.py --apply            # rewrite in place
-python3 scripts/fix_frontmatter_icons.py --root docs/skills --apply
+python3 scripts/fix_frontmatter_icons.py --root docs/zer0-mistakes --apply
 ```
 
 Runs automatically in two places: `process.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.

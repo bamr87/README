@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 31,
-    "fingerprint": "ad5eaab369046c72",
+    "fingerprint": "2df02d508c89497e",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 162224
+    "total_bytes": 166352
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -95,7 +95,7 @@
     ],
     "indexed_documents": 31,
     "top_tags": [],
-    "total_words": 20279
+    "total_words": 20761
   },
   "schema_version": "1.0",
   "signals": {

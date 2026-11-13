@@ -5,8 +5,8 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 968,
-    "sections": 98,
+    "pages": 972,
+    "sections": 99,
     "max_depth": 7,
     "skipped": 17
   },
@@ -29,12 +29,12 @@
     "link-check-results/summary.md",
     "pages/_quickstart/README.md"
   ],
-  "fingerprint": "0ca248ad5fead296",
+  "fingerprint": "f3bd0eadf6aaa70b",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/index.md",
-    "pages": 968,
+    "pages": 972,
     "children": [
       {
         "type": "group",
@@ -1799,7 +1799,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "it-journey/docs/README.md",
-        "pages": 51,
+        "pages": 54,
         "children": [
           {
             "type": "page",
@@ -1885,7 +1885,7 @@
             "title": "Amendments \u2014 it-journey",
             "rel": "docs/amendments",
             "index": "it-journey/docs/amendments/README.md",
-            "pages": 4,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -1902,16 +1902,37 @@
               },
               {
                 "type": "page",
-                "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
-                "path": "it-journey/docs/amendments/proposed/agent-merge-review-gate.md",
-                "rel": "docs/amendments/proposed/agent-merge-review-gate.md",
-                "folder": "docs/amendments/proposed"
-              },
-              {
-                "type": "page",
                 "title": "NNNN \u2014 Title of the amendment",
                 "path": "it-journey/docs/amendments/0000-template.md",
                 "rel": "docs/amendments/0000-template.md"
+              },
+              {
+                "type": "section",
+                "title": "docs/amendments/proposed/ \u2014 unnumbered amendment records",
+                "rel": "docs/amendments/proposed",
+                "index": "it-journey/docs/amendments/proposed/README.md",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "docs/amendments/proposed/ \u2014 unnumbered amendment records",
+                    "path": "it-journey/docs/amendments/proposed/README.md",
+                    "rel": "docs/amendments/proposed/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
+                    "path": "it-journey/docs/amendments/proposed/agent-merge-review-gate.md",
+                    "rel": "docs/amendments/proposed/agent-merge-review-gate.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "NEW \u2014 Editorial charter for quests",
+                    "path": "it-journey/docs/amendments/proposed/editorial-charter.md",
+                    "rel": "docs/amendments/proposed/editorial-charter.md"
+                  }
+                ]
               }
             ]
           },
@@ -2140,7 +2161,7 @@
             "type": "section",
             "title": "Setup",
             "rel": "docs/setup",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -2153,6 +2174,12 @@
                 "title": "PostHog Analytics for IT-Journey Scripts",
                 "path": "it-journey/docs/setup/POSTHOG_ANALYTICS.md",
                 "rel": "docs/setup/POSTHOG_ANALYTICS.md"
+              },
+              {
+                "type": "page",
+                "title": "The automation token (AUTOPRGITHUBTOKEN)",
+                "path": "it-journey/docs/setup/AUTO_PR_TOKEN.md",
+                "rel": "docs/setup/AUTO_PR_TOKEN.md"
               },
               {
                 "type": "page",
@@ -2239,7 +2266,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "it-journey/pages/home.md",
-        "pages": 662,
+        "pages": 663,
         "children": [
           {
             "type": "page",
@@ -3907,7 +3934,7 @@
             "title": "Quests",
             "rel": "pages/_quests",
             "index": "it-journey/pages/_quests/README.md",
-            "pages": 290,
+            "pages": 291,
             "children": [
               {
                 "type": "page",
@@ -4988,7 +5015,7 @@
                 "title": "Level 1000 (8) - Cloud Computing Fundamentals",
                 "rel": "pages/_quests/1000",
                 "index": "it-journey/pages/_quests/1000/README.md",
-                "pages": 12,
+                "pages": 13,
                 "children": [
                   {
                     "type": "page",
@@ -5056,6 +5083,12 @@
                     "title": "setup: verifies prerequisites and provisions the Azure Static Web App",
                     "path": "it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment.md",
                     "rel": "pages/_quests/1000/azure-ascension-jekyll-deployment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "UEFI firmware ships with Homebrew's QEMU",
+                    "path": "it-journey/pages/_quests/1000/pxe-boot-server.md",
+                    "rel": "pages/_quests/1000/pxe-boot-server.md"
                   },
                   {
                     "type": "page",

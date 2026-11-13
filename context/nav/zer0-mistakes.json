@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 679,
+    "pages": 683,
     "sections": 100,
     "max_depth": 6,
     "skipped": 9
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "0da7b1282875a0d0",
+  "fingerprint": "d120f1791f78cae5",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 679,
+    "pages": 683,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 86,
+        "pages": 89,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 76,
+            "pages": 79,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 73,
+                "pages": 76,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 73,
+                    "pages": 76,
                     "children": [
                       {
                         "type": "page",
@@ -130,6 +130,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/agent-issue-522/README.md",
                         "rel": "test/visual/evidence/agent-issue-522/README.md",
                         "folder": "test/visual/evidence/agent-issue-522"
+                      },
+                      {
+                        "type": "page",
+                        "title": "agent-issue-573 \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/agent-issue-573/README.md",
+                        "rel": "test/visual/evidence/agent-issue-573/README.md",
+                        "folder": "test/visual/evidence/agent-issue-573"
                       },
                       {
                         "type": "page",
@@ -249,6 +256,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/dialog-heading-levels/README.md",
                         "rel": "test/visual/evidence/dialog-heading-levels/README.md",
                         "folder": "test/visual/evidence/dialog-heading-levels"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence \u2014 docs-sidebar FAB vs local-graph FAB (#571)",
+                        "path": "zer0-mistakes/test/visual/evidence/fab-stack-sidebar/README.md",
+                        "rel": "test/visual/evidence/fab-stack-sidebar/README.md",
+                        "folder": "test/visual/evidence/fab-stack-sidebar"
                       },
                       {
                         "type": "page",
@@ -459,6 +473,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/scroll-spy/README.md",
                         "rel": "test/visual/evidence/scroll-spy/README.md",
                         "folder": "test/visual/evidence/scroll-spy"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Evidence: cookie-consent gate (#566)",
+                        "path": "zer0-mistakes/test/visual/evidence/cookie-consent-gate/README.md",
+                        "rel": "test/visual/evidence/cookie-consent-gate/README.md",
+                        "folder": "test/visual/evidence/cookie-consent-gate"
                       },
                       {
                         "type": "page",
@@ -929,7 +950,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 115,
+        "pages": 116,
         "children": [
           {
             "type": "page",
@@ -1052,7 +1073,7 @@
             "title": "Amendments \u2014 zer0-mistakes",
             "rel": "docs/amendments",
             "index": "zer0-mistakes/docs/amendments/README.md",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -1066,6 +1087,13 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "zer0-mistakes/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
+                "path": "zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md",
+                "rel": "docs/amendments/proposed/agent-merge-review-gate.md",
+                "folder": "docs/amendments/proposed"
               },
               {
                 "type": "page",
