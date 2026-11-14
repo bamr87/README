@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 24
-source_file: vortex24.md
+source_file: wargames/vortex/vortex24.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex24.md
 title: Vortex24
 ---
 Guess the seed

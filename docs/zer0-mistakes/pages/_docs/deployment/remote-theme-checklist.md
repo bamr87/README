@@ -23,7 +23,9 @@ prerequisites:
 preview: /images/previews/remote-theme-consumer-checklist.png
 sidebar:
   nav: docs
-source_file: remote-theme-checklist.md
+source_file: pages/_docs/deployment/remote-theme-checklist.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/remote-theme-checklist.md
 tags:
 - github-pages
 - remote-theme
@@ -31,6 +33,7 @@ tags:
 - troubleshooting
 title: Remote-Theme Consumer Checklist
 ---
+
 # Remote-Theme Consumer Checklist
 
 **What you'll do:** wire up the files and config that GitHub Pages does *not* inherit when you consume Zer0-Mistakes via `remote_theme`, so search, navigation, comments, and internal links all work.
@@ -42,7 +45,7 @@ title: Remote-Theme Consumer Checklist
 The result is a chain of *silent* degradations. The checklist below is the shortest path through all of them.
 
 > **Building outside GitHub Pages?** If you run your own CI instead of Pages, see
-> the [Safe-Mode Build Overlay](/docs/deployment/build-overlay/) recipe — it
+> the [[zer0-mistakes/pages/_docs/deployment/build-overlay|Safe-Mode Build Overlay]] recipe — it
 > reproduces Pages' plugin-stripping behaviour so your custom build matches
 > production.
 
@@ -148,5 +151,5 @@ Tag badges, the local-graph "Full graph" link, the breadcrumb collection-root cr
 
 ## See also
 
-- [Deploy to GitHub Pages](/docs/deployment/github-pages/)
-- [Custom Domain](/docs/deployment/custom-domain/)
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain]]

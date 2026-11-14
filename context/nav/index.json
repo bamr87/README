@@ -4,15 +4,32 @@
   "order": [
     "it-journey",
     "zer0-mistakes",
-    "barodybroject",
     "bashcrawl",
     "skills",
     "scripts",
-    "OverTheWire-website"
+    "OverTheWire-website",
+    "bamr87",
+    "bamr87.github.io",
+    "bashos",
+    "cv-pro",
+    "djangoerp",
+    "fredgar-ai",
+    "githubai",
+    "gitorio",
+    "godotgo",
+    "law-ai",
+    "lifehacker.dev",
+    "ocrmd",
+    "outbox",
+    "rewind-arcade",
+    "SCHEMA",
+    "vs-sonic-pi",
+    "zer0-CMS",
+    "zpl-viewer"
   ],
   "counts": {
-    "projects": 7,
-    "pages": 2277
+    "projects": 24,
+    "pages": 4239
   },
   "projects": {
     "it-journey": {
@@ -21,11 +38,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 959,
-      "sections": 98,
-      "max_depth": 7,
-      "skipped": 17,
-      "fingerprint": "2e6921e424fc4431"
+      "pages": 535,
+      "sections": 53,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "a913c383f9d5f497"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -33,23 +50,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 678,
-      "sections": 100,
+      "pages": 554,
+      "sections": 94,
       "max_depth": 6,
-      "skipped": 9,
-      "fingerprint": "92d0e21b64ca4336"
-    },
-    "barodybroject": {
-      "title": "Barody Project",
-      "corpus": "docs/barodybroject",
-      "tree": "context/nav/barodybroject.json",
-      "browse": "docs/browse/barodybroject.md",
-      "registered": true,
-      "pages": 269,
-      "sections": 56,
-      "max_depth": 7,
-      "skipped": 8,
-      "fingerprint": "ba6ba8ee5ae0cefe"
+      "skipped": 2,
+      "fingerprint": "8cdbf29cca70b426"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -57,11 +62,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 94,
-      "sections": 17,
+      "pages": 78,
+      "sections": 16,
       "max_depth": 3,
-      "skipped": 5,
-      "fingerprint": "da85573772d01cb8"
+      "skipped": 0,
+      "fingerprint": "becb0312cd0830d0"
     },
     "skills": {
       "title": "Agent Skills",
@@ -69,11 +74,11 @@
       "tree": "context/nav/skills.json",
       "browse": "docs/browse/skills.md",
       "registered": true,
-      "pages": 7,
-      "sections": 3,
-      "max_depth": 3,
-      "skipped": 1,
-      "fingerprint": "292f000a4ab20ef9"
+      "pages": 68,
+      "sections": 24,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "fb1082f114d0de74"
     },
     "scripts": {
       "title": "Scripts",
@@ -81,11 +86,11 @@
       "tree": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
       "registered": true,
-      "pages": 29,
+      "pages": 24,
       "sections": 5,
       "max_depth": 3,
-      "skipped": 1,
-      "fingerprint": "529720b4afba9a54"
+      "skipped": 0,
+      "fingerprint": "1312b35ba279a08d"
     },
     "OverTheWire-website": {
       "title": "OverTheWire",
@@ -97,7 +102,223 @@
       "sections": 17,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "ceab543eb82ca094"
+      "fingerprint": "d13ab0297f60cc87"
+    },
+    "bamr87": {
+      "title": "Fleet Hub",
+      "corpus": "docs/bamr87",
+      "tree": "context/nav/bamr87.json",
+      "browse": "docs/browse/bamr87.md",
+      "registered": true,
+      "pages": 223,
+      "sections": 36,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "6734ef5687442dfb"
+    },
+    "bamr87.github.io": {
+      "title": "Personal Site",
+      "corpus": "docs/bamr87.github.io",
+      "tree": "context/nav/bamr87.github.io.json",
+      "browse": "docs/browse/bamr87.github.io.md",
+      "registered": true,
+      "pages": 94,
+      "sections": 19,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "9dbe4519b0f1f8cd"
+    },
+    "bashos": {
+      "title": "BashOS",
+      "corpus": "docs/bashos",
+      "tree": "context/nav/bashos.json",
+      "browse": "docs/browse/bashos.md",
+      "registered": true,
+      "pages": 38,
+      "sections": 8,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "22669e5e45f807f9"
+    },
+    "cv-pro": {
+      "title": "CV Pro",
+      "corpus": "docs/cv-pro",
+      "tree": "context/nav/cv-pro.json",
+      "browse": "docs/browse/cv-pro.md",
+      "registered": true,
+      "pages": 32,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "18b990201059e6d1"
+    },
+    "djangoerp": {
+      "title": "Django ERP",
+      "corpus": "docs/djangoerp",
+      "tree": "context/nav/djangoerp.json",
+      "browse": "docs/browse/djangoerp.md",
+      "registered": true,
+      "pages": 17,
+      "sections": 3,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "5d9a629df7696a9b"
+    },
+    "fredgar-ai": {
+      "title": "Fredgar AI",
+      "corpus": "docs/fredgar-ai",
+      "tree": "context/nav/fredgar-ai.json",
+      "browse": "docs/browse/fredgar-ai.md",
+      "registered": true,
+      "pages": 36,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "ac0a94a98977836b"
+    },
+    "githubai": {
+      "title": "GitHub AI",
+      "corpus": "docs/githubai",
+      "tree": "context/nav/githubai.json",
+      "browse": "docs/browse/githubai.md",
+      "registered": true,
+      "pages": 48,
+      "sections": 10,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "c3f4144edf0db6e0"
+    },
+    "gitorio": {
+      "title": "Gitorio",
+      "corpus": "docs/gitorio",
+      "tree": "context/nav/gitorio.json",
+      "browse": "docs/browse/gitorio.md",
+      "registered": true,
+      "pages": 142,
+      "sections": 37,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "6914adddb6060317"
+    },
+    "godotgo": {
+      "title": "GodotGo",
+      "corpus": "docs/godotgo",
+      "tree": "context/nav/godotgo.json",
+      "browse": "docs/browse/godotgo.md",
+      "registered": true,
+      "pages": 30,
+      "sections": 6,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "94e54f2131ce9e81"
+    },
+    "law-ai": {
+      "title": "Law AI",
+      "corpus": "docs/law-ai",
+      "tree": "context/nav/law-ai.json",
+      "browse": "docs/browse/law-ai.md",
+      "registered": true,
+      "pages": 285,
+      "sections": 71,
+      "max_depth": 6,
+      "skipped": 0,
+      "fingerprint": "b3546ca78393d7b0"
+    },
+    "lifehacker.dev": {
+      "title": "Lifehacker",
+      "corpus": "docs/lifehacker.dev",
+      "tree": "context/nav/lifehacker.dev.json",
+      "browse": "docs/browse/lifehacker.dev.md",
+      "registered": true,
+      "pages": 136,
+      "sections": 12,
+      "max_depth": 4,
+      "skipped": 1,
+      "fingerprint": "c8d20685156f1150"
+    },
+    "ocrmd": {
+      "title": "OCRmd",
+      "corpus": "docs/ocrmd",
+      "tree": "context/nav/ocrmd.json",
+      "browse": "docs/browse/ocrmd.md",
+      "registered": true,
+      "pages": 25,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "b175f4a8c3b103e5"
+    },
+    "outbox": {
+      "title": "Outbox",
+      "corpus": "docs/outbox",
+      "tree": "context/nav/outbox.json",
+      "browse": "docs/browse/outbox.md",
+      "registered": true,
+      "pages": 21,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "459191c53e4947ec"
+    },
+    "rewind-arcade": {
+      "title": "Rewind Arcade",
+      "corpus": "docs/rewind-arcade",
+      "tree": "context/nav/rewind-arcade.json",
+      "browse": "docs/browse/rewind-arcade.md",
+      "registered": true,
+      "pages": 76,
+      "sections": 11,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "739dd7de909b9687"
+    },
+    "SCHEMA": {
+      "title": "SCHEMA Protocol",
+      "corpus": "docs/SCHEMA",
+      "tree": "context/nav/SCHEMA.json",
+      "browse": "docs/browse/SCHEMA.md",
+      "registered": true,
+      "pages": 35,
+      "sections": 10,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "c307422bd8ced662"
+    },
+    "vs-sonic-pi": {
+      "title": "VS Sonic Pi",
+      "corpus": "docs/vs-sonic-pi",
+      "tree": "context/nav/vs-sonic-pi.json",
+      "browse": "docs/browse/vs-sonic-pi.md",
+      "registered": true,
+      "pages": 117,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "9891325ca0bbb5c3"
+    },
+    "zer0-CMS": {
+      "title": "Zer0 CMS",
+      "corpus": "docs/zer0-CMS",
+      "tree": "context/nav/zer0-CMS.json",
+      "browse": "docs/browse/zer0-CMS.md",
+      "registered": true,
+      "pages": 1181,
+      "sections": 177,
+      "max_depth": 6,
+      "skipped": 6,
+      "fingerprint": "dbf78bbbbcd27cba"
+    },
+    "zpl-viewer": {
+      "title": "ZPL Viewer",
+      "corpus": "docs/zpl-viewer",
+      "tree": "context/nav/zpl-viewer.json",
+      "browse": "docs/browse/zpl-viewer.md",
+      "registered": true,
+      "pages": 19,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "bc06688437978d88"
     },
     "adr": {
       "title": "Adr",
@@ -105,11 +326,11 @@
       "tree": "context/nav/adr.json",
       "browse": "docs/browse/adr.md",
       "registered": false,
-      "pages": 3,
+      "pages": 4,
       "sections": 0,
       "max_depth": 1,
       "skipped": 0,
-      "fingerprint": "4a1e5aee1763e8ad"
+      "fingerprint": "5e760fee94927e8b"
     },
     "amendments": {
       "title": "Amendments",
@@ -122,6 +343,18 @@
       "max_depth": 1,
       "skipped": 0,
       "fingerprint": "a763036fe9f9e13b"
+    },
+    "brain": {
+      "title": "Brain",
+      "corpus": "docs/brain",
+      "tree": "context/nav/brain.json",
+      "browse": "docs/browse/brain.md",
+      "registered": false,
+      "pages": 183,
+      "sections": 2,
+      "max_depth": 2,
+      "skipped": 0,
+      "fingerprint": "03e2ac1c19761ce4"
     },
     "results": {
       "title": "Results",

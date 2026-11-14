@@ -80,7 +80,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 0001 Web Fundamentals quest line
 skill_focus: frontend
-source_file: jekyll-fundamentals.md
+source_file: pages/_quests/0001/jekyll-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/jekyll-fundamentals.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Jekyll'
 tags:
 - '0001'
@@ -92,7 +94,7 @@ tags:
 - frontend
 - hands-on
 - beginner
-title: Install a modern Ruby with Homebrew (the system Ruby is too old)
+title: 'Jekyll Fundamentals: Build Static Sites with Ruby'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -140,7 +142,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Basic command line navigation (`cd`, `ls`, `mkdir`)
 - [ ] Comfort creating and editing plain text files
-- [ ] Recommended: completion of [Git Basics](/quests/0000/git-basics/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0000/git-basics|Git Basics]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -531,17 +533,17 @@ docker-compose up -d
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [GitHub Pages Basics](/quests/0001/github-pages-basics/) - Host your Jekyll site for free
+- 🎯 [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]] - Host your Jekyll site for free
 
 **Explore Side Adventures**:
-- ⚔️ [Liquid Templating](/quests/0001/liquid-templating/) - The templating language Jekyll speaks
-- ⚔️ [YAML Configuration](/quests/0001/yaml-configuration/) - Configure sites and store data
+- ⚔️ [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]] - The templating language Jekyll speaks
+- ⚔️ [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]] - Configure sites and store data
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
-**🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]]  
+**🎨 Frontend Specialist**: Advance to [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]]
 
 ## 📚 Resources
 
@@ -570,6 +572,6 @@ docker-compose up -d
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[GitHub Pages Basics]] · [[Liquid Templating]] · [[YAML Configuration]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[GitHub Pages Basics]] · [[Liquid Templating]] · [[YAML Configuration]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

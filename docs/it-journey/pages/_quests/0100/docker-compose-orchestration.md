@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Readiness for the CI/CD & DevOps quest line at Level 0101
 skill_focus: devops
-source_file: docker-compose-orchestration.md
+source_file: pages/_quests/0100/docker-compose-orchestration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/docker-compose-orchestration.md
 sub_title: 'Level 0100 (4) Quest: Main Quest - Docker Compose'
 tags:
 - '0100'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Docker Desktop already bundles the Compose plugin
+title: 'Docker Compose Orchestration: Multi-Container Apps'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Container Fundamentals](/quests/0100/container-fundamentals/) (images, containers, build, run)
+- [ ] Completion of [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]] (images, containers, build, run)
 - [ ] Comfort building and running a single container
 - [ ] Ability to edit YAML carefully (indentation matters)
 
@@ -528,8 +530,8 @@ You now have a reproducible, version-controlled, multi-service environment that 
 - 🎯 Level 0101 - CI/CD & DevOps - Automate building and deploying your containerized stacks
 
 **Explore Side Adventures**:
-- ⚔️ [Frontend Docker](/quests/0100/frontend-docker/) - Containerize a Jekyll + Bootstrap site
-- ⚔️ [Container Fundamentals](/quests/0100/container-fundamentals/) - Revisit images, layers, and registries
+- ⚔️ [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker]] - Containerize a Jekyll + Bootstrap site
+- ⚔️ [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]] - Revisit images, layers, and registries
 
 ### Character Class Recommendations
 
@@ -564,6 +566,6 @@ You now have a reproducible, version-controlled, multi-service environment that 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend & Containers]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[Docker Container Fundamentals: Master Isolation & Portability for DevOps]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0100 - Frontend & Containers]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[Docker Container Fundamentals: Master Isolation & Portability for DevOps]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

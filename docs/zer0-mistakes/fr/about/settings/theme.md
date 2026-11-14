@@ -8,13 +8,16 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/settings/theme/
 preview: /images/previews/theme-customizer.png
-source_file: theme.md
+source_file: fr/about/settings/theme.md
 source_icon: bi-palette
-title: Theme
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/settings/theme.md
+title: Personnalisateur de thème
 translated_from_sha: 227959a1fb26
 translation_of: pages/_about/settings/theme.md
 translation_source_url: /about/settings/theme/
 ---
+
 <!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->
 <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
 

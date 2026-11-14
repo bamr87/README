@@ -1,5 +1,7 @@
 ---
-source_file: plugin.v1.md
+source_file: docs/schemas/plugin.v1.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/schemas/plugin.v1.md
 title: Plugins v1
 ---
 # Plugins v1

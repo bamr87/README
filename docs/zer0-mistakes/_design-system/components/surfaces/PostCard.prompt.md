@@ -1,5 +1,7 @@
 ---
-source_file: PostCard.prompt.md
+source_file: _design-system/components/surfaces/PostCard.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/surfaces/PostCard.prompt.md
 title: Postcard.Prompt
 ---
 Blog preview card for zer0-mistakes — use wherever posts, docs, or articles are listed (news grids, section indexes, archives, "related posts").

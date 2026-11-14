@@ -8,13 +8,16 @@ lastmod: 2026-04-18 00:00:00+00:00
 layout: default
 mermaid: true
 permalink: /roadmap/
-source_file: roadmap.md
+source_file: pages/roadmap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/roadmap.md
 tags:
 - roadmap
 - releases
 - planning
-title: '{{ page.title }}'
+title: Roadmap
 ---
+
 # {{ page.title }}
 
 {{ site.data.roadmap.meta.tagline }} All versions follow [Semantic Versioning](https://semver.org/).
@@ -69,7 +72,7 @@ gantt
 | **v{{ m.version }}** | {{ status_label }} | {{ target_label }} | {{ m.summary }} |
 {%- endfor %}
 
-See the full [CHANGELOG](/CHANGELOG) for detailed release notes.
+See the full [[zer0-mistakes/CHANGELOG|CHANGELOG]] for detailed release notes.
 
 ---
 

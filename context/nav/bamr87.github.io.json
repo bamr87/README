@@ -1,0 +1,770 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "bamr87.github.io",
+  "title": "Personal Site",
+  "corpus": "docs/bamr87.github.io",
+  "counts": {
+    "pages": 94,
+    "sections": 19,
+    "max_depth": 5,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "9dbe4519b0f1f8cd",
+  "tree": {
+    "type": "section",
+    "title": "Personal Site",
+    "index": "bamr87.github.io/README.md",
+    "pages": 94,
+    "children": [
+      {
+        "type": "page",
+        "title": "Profile & R\u00e9sum\u00e9",
+        "path": "bamr87.github.io/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "bamr87.github.io (AGENTS)",
+        "path": "bamr87.github.io/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "bamr87.github.io (CLAUDE)",
+        "path": "bamr87.github.io/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "bamr87.github.io/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Data",
+        "path": "bamr87.github.io/_data/README.md",
+        "rel": "_data/README.md",
+        "folder": "_data"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 bamr87.github.io",
+        "path": "bamr87.github.io/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "Site generation scripts",
+        "path": "bamr87.github.io/scripts/README.md",
+        "rel": "scripts/README.md",
+        "folder": "scripts"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "bamr87.github.io/docs/README.md",
+        "pages": 9,
+        "children": [
+          {
+            "type": "page",
+            "title": "bamr87.github.io documentation",
+            "path": "bamr87.github.io/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "bamr87.github.io \u2014 Constitution",
+            "path": "bamr87.github.io/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "Collections reference",
+            "path": "bamr87.github.io/docs/reference/collections.md",
+            "rel": "docs/reference/collections.md",
+            "folder": "docs/reference"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 bamr87.github.io",
+            "rel": "docs/amendments",
+            "index": "bamr87.github.io/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 bamr87.github.io",
+                "path": "bamr87.github.io/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "bamr87.github.io/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "bamr87.github.io/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "bamr87.github.io/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "bamr87.github.io/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "bamr87.github.io/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "bamr87.github.io/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Home",
+        "rel": "pages",
+        "index": "bamr87.github.io/pages/home.md",
+        "pages": 78,
+        "children": [
+          {
+            "type": "page",
+            "title": "Home",
+            "path": "bamr87.github.io/pages/home.md",
+            "rel": "pages/home.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "search",
+            "path": "bamr87.github.io/pages/search.md",
+            "rel": "pages/search.md"
+          },
+          {
+            "type": "page",
+            "title": "Tags",
+            "path": "bamr87.github.io/pages/tags.md",
+            "rel": "pages/tags.md"
+          },
+          {
+            "type": "page",
+            "title": "The Quest Log",
+            "path": "bamr87.github.io/pages/quest-log.md",
+            "rel": "pages/quest-log.md"
+          },
+          {
+            "type": "section",
+            "title": "About",
+            "rel": "pages/_about",
+            "pages": 16,
+            "children": [
+              {
+                "type": "page",
+                "title": "About",
+                "path": "bamr87.github.io/pages/_about/about.md",
+                "rel": "pages/_about/about.md"
+              },
+              {
+                "type": "page",
+                "title": "Bootstrap Theme Examples",
+                "path": "bamr87.github.io/pages/_about/theme.md",
+                "rel": "pages/_about/theme.md"
+              },
+              {
+                "type": "page",
+                "title": "Navigate to your current repository",
+                "path": "bamr87.github.io/pages/_about/profile/bamr87.md",
+                "rel": "pages/_about/profile/bamr87.md",
+                "folder": "pages/_about/profile"
+              },
+              {
+                "type": "page",
+                "title": "Portfolio",
+                "path": "bamr87.github.io/pages/_about/portfolio/index.md",
+                "rel": "pages/_about/portfolio/index.md",
+                "folder": "pages/_about/portfolio"
+              },
+              {
+                "type": "page",
+                "title": "Purpose",
+                "path": "bamr87.github.io/pages/_about/purpose.md",
+                "rel": "pages/_about/purpose.md"
+              },
+              {
+                "type": "page",
+                "title": "versioning",
+                "path": "bamr87.github.io/pages/_about/versioning.md",
+                "rel": "pages/_about/versioning.md"
+              },
+              {
+                "type": "section",
+                "title": "Contribute",
+                "rel": "pages/_about/contribute",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "contributing",
+                    "path": "bamr87.github.io/pages/_about/contribute/contributing.md",
+                    "rel": "pages/_about/contribute/contributing.md"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Contributors",
+                    "rel": "pages/_about/contribute/contributors",
+                    "index": "bamr87.github.io/pages/_about/contribute/contributors/index.md",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Contributors",
+                        "path": "bamr87.github.io/pages/_about/contribute/contributors/index.md",
+                        "rel": "pages/_about/contribute/contributors/index.md",
+                        "is_index": true
+                      },
+                      {
+                        "type": "page",
+                        "title": "Bamr87",
+                        "path": "bamr87.github.io/pages/_about/contribute/contributors/bamr87/README.md",
+                        "rel": "pages/_about/contribute/contributors/bamr87/README.md",
+                        "folder": "pages/_about/contribute/contributors/bamr87"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Features Index (Consolidated)",
+                "rel": "pages/_about/features",
+                "index": "bamr87.github.io/pages/_about/features/index.md",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Features Index (Consolidated)",
+                    "path": "bamr87.github.io/pages/_about/features/index.md",
+                    "rel": "pages/_about/features/index.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Add Floating Back-to-Top button",
+                    "path": "bamr87.github.io/pages/_about/features/add-floating-back-to-top-button.md",
+                    "rel": "pages/_about/features/add-floating-back-to-top-button.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Consolidated Feature Index",
+                    "path": "bamr87.github.io/pages/_about/features/_template.md",
+                    "rel": "pages/_about/features/_template.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jeykll",
+                    "path": "bamr87.github.io/pages/_about/features/jekyll.md",
+                    "rel": "pages/_about/features/jekyll.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Settings",
+                "rel": "pages/_about/settings",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Jekyll Configuration",
+                    "path": "bamr87.github.io/pages/_about/settings/config.md",
+                    "rel": "pages/_about/settings/config.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Sitemap",
+                    "path": "bamr87.github.io/pages/_about/settings/sitemap.md",
+                    "rel": "pages/_about/settings/sitemap.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Tree",
+                    "path": "bamr87.github.io/pages/_about/settings/tree.md",
+                    "rel": "pages/_about/settings/tree.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Docs (~) Index",
+            "rel": "pages/_docs",
+            "index": "bamr87.github.io/pages/_docs/index.md",
+            "pages": 23,
+            "children": [
+              {
+                "type": "page",
+                "title": "Docs (~) Index",
+                "path": "bamr87.github.io/pages/_docs/index.md",
+                "rel": "pages/_docs/index.md",
+                "is_index": true
+              },
+              {
+                "type": "section",
+                "title": "Jekyll",
+                "rel": "pages/_docs/jekyll",
+                "index": "bamr87.github.io/pages/_docs/jekyll/index.md",
+                "pages": 22,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Jekyll",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/index.md",
+                    "rel": "pages/_docs/jekyll/index.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Cannot Start Jekyll at Specific Port",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/cannot-start-jekyll-at-specific-port.md",
+                    "rel": "pages/_docs/jekyll/cannot-start-jekyll-at-specific-port.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Configuration Options | Jekyll \u2022 Simple, blog-aware, static sites",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-config.md",
+                    "rel": "pages/_docs/jekyll/jekyll-config.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Continuously Deploy Jekyll to GitHub Pages with Travis-CI",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/continuously-deploy-jekyll-website-to-gitHub-pages-with-travis-ci.md",
+                    "rel": "pages/_docs/jekyll/continuously-deploy-jekyll-website-to-gitHub-pages-with-travis-ci.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Deploying Jekyll Website to Netlify",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/deploying-jekyll-website-to-netlify.md",
+                    "rel": "pages/_docs/jekyll/deploying-jekyll-website-to-netlify.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Deploying Personal Website with Custom Domain",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/deploying-personal-website-with-custom-domain.md",
+                    "rel": "pages/_docs/jekyll/deploying-personal-website-with-custom-domain.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Generating Diagrams and Flowcharts with Mermaid",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/generating-diagrams-and-flowcharts-with-mermaid.md",
+                    "rel": "pages/_docs/jekyll/generating-diagrams-and-flowcharts-with-mermaid.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Comments with Disqus",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-comments-with-disqus.md",
+                    "rel": "pages/_docs/jekyll/jekyll-comments-with-disqus.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Diagram with Mermaid",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-diagram-with-mermaid.md",
+                    "rel": "pages/_docs/jekyll/jekyll-diagram-with-mermaid.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Google Analytics - Draft",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-google-analytics.md",
+                    "rel": "pages/_docs/jekyll/jekyll-google-analytics.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Highlighting",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-highlighting.md",
+                    "rel": "pages/_docs/jekyll/jekyll-highlighting.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Liquid",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-liquid.md",
+                    "rel": "pages/_docs/jekyll/jekyll-liquid.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Math Symbols with MathJax",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-math-symbols-with-mathjax.md",
+                    "rel": "pages/_docs/jekyll/jekyll-math-symbols-with-mathjax.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Pagination",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-pagination.md",
+                    "rel": "pages/_docs/jekyll/jekyll-pagination.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Performance Optimization",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-performance-optimization.md",
+                    "rel": "pages/_docs/jekyll/jekyll-performance-optimization.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Progress Bar",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-progress-bar.md",
+                    "rel": "pages/_docs/jekyll/jekyll-progress-bar.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Search Function for Static Website - draft",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-search-function-for-static-website.md",
+                    "rel": "pages/_docs/jekyll/jekyll-search-function-for-static-website.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Security",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-security.md",
+                    "rel": "pages/_docs/jekyll/jekyll-security.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Social Share Buttons",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-social-share-buttons.md",
+                    "rel": "pages/_docs/jekyll/jekyll-social-share-buttons.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Social Share Buttons with ShareThis",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-social-share-buttons-with-sharethis.md",
+                    "rel": "pages/_docs/jekyll/jekyll-social-share-buttons-with-sharethis.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll - Usage and Customization",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-usage-and-customization.md",
+                    "rel": "pages/_docs/jekyll/jekyll-usage-and-customization.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Jekyll Frontmatter CMS",
+                    "path": "bamr87.github.io/pages/_docs/jekyll/jekyll-frontmatter-cms.md",
+                    "rel": "pages/_docs/jekyll/jekyll-frontmatter-cms.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "hobbies",
+            "rel": "pages/_hobbies",
+            "index": "bamr87.github.io/pages/_hobbies/home.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "hobbies",
+                "path": "bamr87.github.io/pages/_hobbies/home.md",
+                "rel": "pages/_hobbies/home.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Music Index",
+                "path": "bamr87.github.io/pages/_hobbies/music.md",
+                "rel": "pages/_hobbies/music.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Notebooks (~) Index",
+            "rel": "pages/_notebooks",
+            "index": "bamr87.github.io/pages/_notebooks/index.md",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Notebooks (~) Index",
+                "path": "bamr87.github.io/pages/_notebooks/index.md",
+                "rel": "pages/_notebooks/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Chat GPT Text Generation",
+                "path": "bamr87.github.io/pages/_notebooks/JeykLLM-create.md",
+                "rel": "pages/_notebooks/JeykLLM-create.md"
+              },
+              {
+                "type": "page",
+                "title": "HTML to markdown web scraping",
+                "path": "bamr87.github.io/pages/_notebooks/html_md_doc_scrapper.md",
+                "rel": "pages/_notebooks/html_md_doc_scrapper.md"
+              },
+              {
+                "type": "page",
+                "title": "Jupyter",
+                "path": "bamr87.github.io/pages/_notebooks/jupyter.md",
+                "rel": "pages/_notebooks/jupyter.md"
+              },
+              {
+                "type": "page",
+                "title": "Jupyter Notebook to Markdown Converter",
+                "path": "bamr87.github.io/pages/_notebooks/jupyter-to-markdown.md",
+                "rel": "pages/_notebooks/jupyter-to-markdown.md"
+              },
+              {
+                "type": "page",
+                "title": "Markdown To Script",
+                "path": "bamr87.github.io/pages/_notebooks/markdown-to-script.md",
+                "rel": "pages/_notebooks/markdown-to-script.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Notes (~) Index",
+            "rel": "pages/_notes",
+            "index": "bamr87.github.io/pages/_notes/index.md",
+            "pages": 27,
+            "children": [
+              {
+                "type": "page",
+                "title": "Notes (~) Index",
+                "path": "bamr87.github.io/pages/_notes/index.md",
+                "rel": "pages/_notes/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "HTML to markdown web scraping",
+                "path": "bamr87.github.io/pages/_notes/html_md_doc_scrapper.md",
+                "rel": "pages/_notes/html_md_doc_scrapper.md"
+              },
+              {
+                "type": "page",
+                "title": "Jekyll LLM Integration Ideas",
+                "path": "bamr87.github.io/pages/_notes/jekyllm-integration.md",
+                "rel": "pages/_notes/jekyllm-integration.md"
+              },
+              {
+                "type": "page",
+                "title": "Start",
+                "path": "bamr87.github.io/pages/_notes/zero/Start.md",
+                "rel": "pages/_notes/zero/Start.md",
+                "folder": "pages/_notes/zero"
+              },
+              {
+                "type": "page",
+                "title": "test",
+                "path": "bamr87.github.io/pages/_notes/code-snippets/test.md",
+                "rel": "pages/_notes/code-snippets/test.md",
+                "folder": "pages/_notes/code-snippets"
+              },
+              {
+                "type": "section",
+                "title": "Cheetsheets",
+                "rel": "pages/_notes/cheetsheets",
+                "pages": 9,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Bash cheatsheet",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/Bash cheatsheet.md",
+                    "rel": "pages/_notes/cheetsheets/Bash cheatsheet.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bash cheatsheet (bash)",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/bash.md",
+                    "rel": "pages/_notes/cheetsheets/bash.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Mac keyboard shortcuts",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/mac-shortcuts.md",
+                    "rel": "pages/_notes/cheetsheets/mac-shortcuts.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Markdown",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/markdown.md",
+                    "rel": "pages/_notes/cheetsheets/markdown.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Programming",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/programming.md",
+                    "rel": "pages/_notes/cheetsheets/programming.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Shell and the CLI",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/Shell and the CLI.md",
+                    "rel": "pages/_notes/cheetsheets/Shell and the CLI.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Shell and the CLI (command-line)",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/command-line.md",
+                    "rel": "pages/_notes/cheetsheets/command-line.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Windows Powershell Cheatsheet",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/Windows Powershell Cheatsheet.md",
+                    "rel": "pages/_notes/cheetsheets/Windows Powershell Cheatsheet.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Windows Powershell Cheatsheet (2022-10-07-powershell)",
+                    "path": "bamr87.github.io/pages/_notes/cheetsheets/2022-10-07-powershell.md",
+                    "rel": "pages/_notes/cheetsheets/2022-10-07-powershell.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Dev",
+                "rel": "pages/_notes/dev",
+                "pages": 7,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Curiculum",
+                    "path": "bamr87.github.io/pages/_notes/dev/Curiculum.md",
+                    "rel": "pages/_notes/dev/Curiculum.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "side-bar-folders",
+                    "path": "bamr87.github.io/pages/_notes/dev/2024-05-14-side-bar-folders.md",
+                    "rel": "pages/_notes/dev/2024-05-14-side-bar-folders.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Take good notes",
+                    "path": "bamr87.github.io/pages/_notes/dev/Take good notes.md",
+                    "rel": "pages/_notes/dev/Take good notes.md"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Projects",
+                    "rel": "pages/_notes/dev/projects",
+                    "pages": 4,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Master's Project",
+                        "path": "bamr87.github.io/pages/_notes/dev/projects/Master_s Project.md",
+                        "rel": "pages/_notes/dev/projects/Master_s Project.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "People",
+                        "path": "bamr87.github.io/pages/_notes/dev/projects/People.md",
+                        "rel": "pages/_notes/dev/projects/People.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Production",
+                        "path": "bamr87.github.io/pages/_notes/dev/projects/Production.md",
+                        "rel": "pages/_notes/dev/projects/Production.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Project List",
+                        "path": "bamr87.github.io/pages/_notes/dev/projects/Project List.md",
+                        "rel": "pages/_notes/dev/projects/Project List.md"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Journal Entries",
+                "rel": "pages/_notes/Journal Entries",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Github's hidden gem",
+                    "path": "bamr87.github.io/pages/_notes/Journal Entries/Github_s hidden gem.md",
+                    "rel": "pages/_notes/Journal Entries/Github_s hidden gem.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "GPT App Build",
+                    "path": "bamr87.github.io/pages/_notes/Journal Entries/GPT App Build.md",
+                    "rel": "pages/_notes/Journal Entries/GPT App Build.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "What is my PiDentity?",
+                    "path": "bamr87.github.io/pages/_notes/Journal Entries/What is my PiDentity_.md",
+                    "rel": "pages/_notes/Journal Entries/What is my PiDentity_.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Misc",
+                "rel": "pages/_notes/misc",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "AWS Practice Question Set",
+                    "path": "bamr87.github.io/pages/_notes/misc/AWS Practice Question Set.md",
+                    "rel": "pages/_notes/misc/AWS Practice Question Set.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "AWS Practice Question Set (cloud)",
+                    "path": "bamr87.github.io/pages/_notes/misc/cloud.md",
+                    "rel": "pages/_notes/misc/cloud.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Favicons",
+                    "path": "bamr87.github.io/pages/_notes/misc/Favicons.md",
+                    "rel": "pages/_notes/misc/Favicons.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

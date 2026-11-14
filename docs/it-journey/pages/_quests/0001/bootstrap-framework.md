@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - Access to the scripting quests of Level 0001 Web Fundamentals
 skill_focus: frontend
-source_file: bootstrap-framework.md
+source_file: pages/_quests/0001/bootstrap-framework.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/bootstrap-framework.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Bootstrap'
 tags:
 - '0001'
@@ -90,7 +92,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: Create a folder and a single HTML file
+title: 'Bootstrap Framework: Build Responsive Sites Fast'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -138,7 +140,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfort editing and saving HTML files
 - [ ] Basic command line navigation (`cd`, `ls`)
-- [ ] Recommended: completion of [CSS Styling Basics](/quests/0001/css-styling-basics/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -458,17 +460,17 @@ The CSS-variable route needs no build step and is perfect for this tier. The Sas
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/) - Make your Bootstrap page interactive
+- 🎯 [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]] - Make your Bootstrap page interactive
 
 **Explore Side Adventures**:
-- ⚔️ [CSS Styling Basics](/quests/0001/css-styling-basics/) - The raw CSS under the framework
-- ⚔️ [Advanced Markdown](/quests/0001/advanced-markdown/) - Author rich content for your pages
+- ⚔️ [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]] - The raw CSS under the framework
+- ⚔️ [[it-journey/pages/_quests/0001/advanced-markdown|Advanced Markdown]] - Author rich content for your pages
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
-**🏗️ System Engineer**: Explore [CSS Styling Basics](/quests/0001/css-styling-basics/)  
-**🎨 Frontend Specialist**: Master [CSS Styling Basics](/quests/0001/css-styling-basics/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]  
+**🎨 Frontend Specialist**: Master [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]  
 
 ## 📚 Resources
 
@@ -497,6 +499,6 @@ The CSS-variable route needs no build step and is perfect for this tier. The Sas
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[JavaScript Fundamentals]] · [[CSS Styling Basics]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[JavaScript Fundamentals]] · [[CSS Styling Basics]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

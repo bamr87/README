@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29826801543
 slice: system-engineer/0101
-source_file: 2026-07-21-system-engineer-0101.md
+source_file: pages/_quest-reports/2026-07-21-system-engineer-0101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-21-system-engineer-0101.md
 tags:
 - system-engineer
 - level-0101
@@ -25,13 +27,14 @@ tags:
 - ci-cd-devops
 theme: CI/CD & DevOps
 tier: Adventurer
-title: 2026 07 21 System Engineer 0101
+title: System Engineer · L0101 · 2026-07-21
 verdict: warn
 walk_date: '2026-07-21'
 ---
+
 > **Slice** `system-engineer/0101` · **Level** 0101 (CI/CD & DevOps) · **Adventurer tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-21
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md)
 
 ---
 

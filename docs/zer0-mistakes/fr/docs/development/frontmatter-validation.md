@@ -16,7 +16,9 @@ permalink: /fr/docs/development/frontmatter-validation/
 preview: /images/previews/config-driven-frontmatter-validation.png
 sidebar:
   nav: docs
-source_file: frontmatter-validation.md
+source_file: fr/docs/development/frontmatter-validation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/frontmatter-validation.md
 tags:
 - validation
 - frontmatter
@@ -28,6 +30,7 @@ translated_from_sha: c8e6c41854b1
 translation_of: pages/_docs/development/frontmatter-validation.md
 translation_source_url: /docs/development/frontmatter-validation/
 ---
+
 # Validation du frontmatter pilotée par configuration
 
 Le thème zer0-mistakes est livré avec un système de validation du frontmatter piloté par un schéma. Il détecte les champs obligatoires manquants, les formats de date invalides et les références à des layouts inconnus avant même que Jekyll ne démarre sa construction, ce qui permet de gagner du temps en CI et d'éviter les erreurs de contenu silencieuses.
@@ -140,12 +143,12 @@ Utilisez le format ISO 8601 : `YYYY-MM-DD` ou `YYYY-MM-DDTHH:MM:SSZ`.
 
 ## Voir aussi
 
-- [Guide de documentation](/docs/development/documentation/)
-- [Aperçu des scripts](/docs/development/scripts/)
-- [Pipeline CI/CD](/docs/development/ci-cd/)
+- [[zer0-mistakes/pages/_docs/development/documentation|Guide de documentation]]
+- [[zer0-mistakes/pages/_docs/development/scripts|Aperçu des scripts]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|Pipeline CI/CD]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Testing]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/fr/docs/development/testing|Testing]]
 - [[CI/CD]]

@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - The capstone of the Architecture & Design Patterns quest line
 skill_focus: fullstack
-source_file: system-design-interviews.md
+source_file: pages/_quests/1110/system-design-interviews.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/system-design-interviews.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - System Design Interviews'
 tags:
 - '1110'
@@ -85,7 +87,7 @@ tags:
 - interviews
 - problem-solving
 - gamified-learning
-title: Excalidraw runs in the browser; or install draw.io desktop
+title: 'System Design Interviews: A Framework for the Whiteboard'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -133,8 +135,8 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Comfort with scaling, caching, and databases
-- [ ] Completed [Scaling Strategies](/quests/1110/scaling-strategies/) (required)
-- [ ] Completed [Microservices Architecture](/quests/1110/microservices-architecture/) (recommended)
+- [ ] Completed [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]] (required)
+- [ ] Completed [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -412,15 +414,15 @@ For every decision, say the alternative and its cost: SQL vs. NoSQL (consistency
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Technical Leadership](/quests/1111/technical-leadership/) - From designing systems to leading those who build them
+- 🎯 [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] - From designing systems to leading those who build them
 
 **Explore Side Adventures**:
-- ⚔️ [Scaling Strategies](/quests/1110/scaling-strategies/) - Sharpen the scaling tools you used here
-- ⚔️ [Microservices Architecture](/quests/1110/microservices-architecture/) - Revisit decomposition with interview eyes
+- ⚔️ [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]] - Sharpen the scaling tools you used here
+- ⚔️ [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] - Revisit decomposition with interview eyes
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Technical Leadership](/quests/1111/technical-leadership/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]]  
 **🏗️ System Engineer**: Practice more prompts from the System Design Primer  
 **📊 Data Scientist**: Apply the framework to data-pipeline design prompts
 
@@ -452,6 +454,6 @@ For every decision, say the alternative and its cost: SQL vs. NoSQL (consistency
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Scaling Strategies: Horizontal Growth, Caching, and CAP]] · [[Microservices Architecture: Decomposing the Monolith]] **Unlocks:** [[Technical Leadership]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies: Horizontal Growth, Caching, and CAP]] · [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] **Unlocks:** [[Technical Leadership]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -57,7 +57,9 @@ rewards:
 - 🛠️ Bash Mastery - Advanced shell scripting capabilities
 - 🎯 System Administration Skills - Foundation for DevOps practices
 skill_focus: fullstack
-source_file: bash-scripting.md
+source_file: pages/_quests/0010/bash-scripting.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/bash-scripting.md
 sub_title: 'Level 0010 (2) Quest: Shell Scripting Mastery and Automation Arts'
 tags:
 - '0010'
@@ -67,7 +69,7 @@ tags:
 - automation
 - system-administration
 - gamified-learning
-title: Verify bash version (macOS defaults to older bash)
+title: 'Bash Incantations: Level 0010 Scripting Quest'
 validation_criteria:
 - Create functional bash scripts with error handling
 - Demonstrate automation of repetitive tasks
@@ -1109,7 +1111,7 @@ Your newfound bash powers open several paths:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

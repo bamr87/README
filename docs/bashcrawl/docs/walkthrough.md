@@ -1,5 +1,7 @@
 ---
-source_file: walkthrough.md
+source_file: docs/walkthrough.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/walkthrough.md
 title: 'Bashcrawl: Complete Walkthrough'
 ---
 # Bashcrawl: Complete Walkthrough

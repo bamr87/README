@@ -13,11 +13,13 @@ objectives:
     all:
     - file_exists: /lab/shell-craft/history.txt
     - line_includes: history
-source_file: 05-history.md
+source_file: courses/shell-craft/05-history.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/shell-craft/05-history.md
 teaches:
 - history
 - redirection
-title: 05 History
+title: History never forgets
 xp: 30
 ---
 Every line you type is remembered. `history` lists them, and the Up and Down arrows walk back through them.

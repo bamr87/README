@@ -21,20 +21,22 @@ lastmod: '2026-06-30T00:00:00.000Z'
 permalink: /notes/cheatsheets/
 redirect_from:
 - /notes/cheetsheets/
-source_file: index.md
+source_file: pages/_notes/cheatsheets/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/index.md
 tags:
 - cheatsheets
 - reference
 - bash
 - powershell
 - markdown
-title: 📑 Cheatsheets
+title: Cheatsheets
 toc: true
 toc_sticky: true
 ---
 # 📑 Cheatsheets
 
-Fast, scannable reference cards for the tools you reach for every day. These are the **reference** companions to the [quests](/quests/) — keep them open in a tab while you work.
+Fast, scannable reference cards for the tools you reach for every day. These are the **reference** companions to the [[it-journey/pages/_quests/README|quests]] — keep them open in a tab while you work.
 
 ## Command line
 
@@ -48,5 +50,5 @@ Fast, scannable reference cards for the tools you reach for every day. These are
 ---
 
 > 💡 Looking to *learn* these tools rather than look them up? Start with the
-> [Terminal Fundamentals quest](/quests/0000/terminal-fundamentals/) or browse the
-> [full quest map](/quests/home/).
+> [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals quest]] or browse the
+> [[it-journey/pages/_quests/home|full quest map]].

@@ -21,12 +21,14 @@ objectives:
     - file_contains: /lab/pipelines/report.txt
       text: cara
     - line_includes: sort -rn
-source_file: 06-the-guild-report.md
+source_file: courses/pipelines/06-the-guild-report.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/06-the-guild-report.md
 teaches:
 - pipelines
 - sort -rn
 - head -n 1
-title: 06 The Guild Report
+title: 'Capstone: the guild report'
 xp: 50
 ---
 Time to put the whole forge to work. The question: **which member made the most deposits?**

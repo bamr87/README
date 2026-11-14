@@ -6,7 +6,9 @@ date: 2026-05-31 20:54:48+00:00
 description: 'Comprehensive UI/UX redesign of the Zer0-Mistakes navigation system:
   responsive design, WCAG 2.1 AA accessibility, animations, and keyboard navigation.'
 lastmod: 2026-05-31 20:54:48+00:00
-source_file: navigation-redesign.md
+source_file: docs/implementation/navigation-redesign.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/navigation-redesign.md
 tags:
 - implementation
 - changelog
@@ -14,6 +16,7 @@ tags:
 - accessibility
 title: Navigation Redesign
 ---
+
 # Navigation Redesign
 
 ## Summary

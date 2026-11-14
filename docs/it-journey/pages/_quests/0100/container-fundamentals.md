@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the Docker Compose Orchestration quest
 skill_focus: devops
-source_file: container-fundamentals.md
+source_file: pages/_quests/0100/container-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/container-fundamentals.md
 sub_title: 'Level 0100 (4) Quest: Main Quest - Docker Fundamentals'
 tags:
 - '0100'
@@ -85,7 +87,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Docker Desktop (includes the engine, CLI, and a small VM)
+title: 'Docker Container Fundamentals: Images to Registries'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -564,14 +566,14 @@ This is your on-ramp to the next quest, where Compose wires *several* containers
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/) - Run an app, a database, and a cache together with one command
+- 🎯 [[it-journey/pages/_quests/0100/docker-compose-orchestration|Docker Compose Orchestration]] - Run an app, a database, and a cache together with one command
 
 **Explore Side Adventures**:
-- ⚔️ [Frontend Docker](/quests/0100/frontend-docker/) - Containerize a Jekyll + Bootstrap site
+- ⚔️ [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker]] - Containerize a Jekyll + Bootstrap site
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0100/docker-compose-orchestration|Docker Compose Orchestration]]  
 **🏗️ System Engineer**: Explore image hardening and registries in depth  
 **🛡️ Security Specialist**: Study minimal base images and image scanning
 
@@ -602,6 +604,6 @@ This is your on-ramp to the next quest, where Compose wires *several* containers
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend & Containers]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Docker Compose Orchestration: Build Multi-Container Applications]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0100 - Frontend & Containers]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Docker Compose Orchestration: Build Multi-Container Applications]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

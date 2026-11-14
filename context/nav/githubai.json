@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "githubai",
+  "title": "GitHub AI",
+  "corpus": "docs/githubai",
+  "counts": {
+    "pages": 48,
+    "sections": 10,
+    "max_depth": 4,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "c3f4144edf0db6e0",
+  "tree": {
+    "type": "section",
+    "title": "GitHub AI",
+    "index": "githubai/README.md",
+    "pages": 48,
+    "children": [
+      {
+        "type": "page",
+        "title": "GitHubAI \u2014 the Claude Code SDLC framework",
+        "path": "githubai/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "githubai/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "githubai (AGENTS)",
+        "path": "githubai/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "githubai (CLAUDE)",
+        "path": "githubai/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "githubai tools",
+        "path": "githubai/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "Repo-type profiles",
+        "path": "githubai/profiles/README.md",
+        "rel": "profiles/README.md",
+        "folder": "profiles"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "githubai/docs/README.md",
+        "pages": 17,
+        "children": [
+          {
+            "type": "page",
+            "title": "githubai documentation",
+            "path": "githubai/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Architecture",
+            "path": "githubai/docs/architecture.md",
+            "rel": "docs/architecture.md"
+          },
+          {
+            "type": "page",
+            "title": "Configuration reference",
+            "path": "githubai/docs/configuration.md",
+            "rel": "docs/configuration.md"
+          },
+          {
+            "type": "page",
+            "title": "Getting started",
+            "path": "githubai/docs/getting-started.md",
+            "rel": "docs/getting-started.md"
+          },
+          {
+            "type": "page",
+            "title": "GitHubAI Product Requirements Document",
+            "path": "githubai/docs/PRD.md",
+            "rel": "docs/PRD.md"
+          },
+          {
+            "type": "page",
+            "title": "githubai \u2014 Constitution",
+            "path": "githubai/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "Migrating from GitHubAI v0.x",
+            "path": "githubai/docs/migration-v0.md",
+            "rel": "docs/migration-v0.md"
+          },
+          {
+            "type": "page",
+            "title": "Security model",
+            "path": "githubai/docs/security.md",
+            "rel": "docs/security.md"
+          },
+          {
+            "type": "page",
+            "title": "Workflow reference",
+            "path": "githubai/docs/workflows.md",
+            "rel": "docs/workflows.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 githubai",
+            "rel": "docs/amendments",
+            "index": "githubai/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 githubai",
+                "path": "githubai/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "githubai/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "githubai/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "githubai/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "githubai/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "githubai/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "githubai/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Reference",
+            "rel": "docs/reference",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Label taxonomy",
+                "path": "githubai/docs/reference/labels.md",
+                "rel": "docs/reference/labels.md"
+              },
+              {
+                "type": "page",
+                "title": "Reusable workflow contract",
+                "path": "githubai/docs/reference/workflows.md",
+                "rel": "docs/reference/workflows.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "GitHubAI as a GitHub App",
+        "rel": "app",
+        "index": "githubai/app/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "GitHubAI as a GitHub App",
+            "path": "githubai/app/README.md",
+            "rel": "app/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Marketplace listing",
+            "path": "githubai/app/MARKETPLACE.md",
+            "rel": "app/MARKETPLACE.md"
+          },
+          {
+            "type": "page",
+            "title": "Relay operations runbook",
+            "path": "githubai/app/OPERATIONS.md",
+            "rel": "app/OPERATIONS.md"
+          },
+          {
+            "type": "page",
+            "title": "What the hosted relay stores",
+            "path": "githubai/app/DATA-HANDLING.md",
+            "rel": "app/DATA-HANDLING.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Template files installed into consumer repos",
+        "rel": "template",
+        "index": "githubai/template/README.md",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "Template files installed into consumer repos",
+            "path": "githubai/template/README.md",
+            "rel": "template/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "CLAUDE.md",
+            "path": "githubai/template/CLAUDE.md",
+            "rel": "template/CLAUDE.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "\ud83c\udf31 AI-Seed \u2014 the autonomous AI orchestration framework",
+        "rel": "ai-seed",
+        "index": "githubai/ai-seed/README.md",
+        "pages": 19,
+        "children": [
+          {
+            "type": "page",
+            "title": "\ud83c\udf31 AI-Seed \u2014 the autonomous AI orchestration framework",
+            "path": "githubai/ai-seed/README.md",
+            "rel": "ai-seed/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "AI-Seed End-to-End Test Report",
+            "path": "githubai/ai-seed/TEST_REPORT.md",
+            "rel": "ai-seed/TEST_REPORT.md"
+          },
+          {
+            "type": "page",
+            "title": "AI-Seed Refactoring Recommendations",
+            "path": "githubai/ai-seed/evaluation-results/recommendations.md",
+            "rel": "ai-seed/evaluation-results/recommendations.md",
+            "folder": "ai-seed/evaluation-results"
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "githubai/ai-seed/CHANGELOG.md",
+            "rel": "ai-seed/CHANGELOG.md"
+          },
+          {
+            "type": "page",
+            "title": "CLAUDE.md",
+            "path": "githubai/ai-seed/CLAUDE.md",
+            "rel": "ai-seed/CLAUDE.md"
+          },
+          {
+            "type": "page",
+            "title": "CONCEPT \u2014 ai-seed",
+            "path": "githubai/ai-seed/CONCEPT.md",
+            "rel": "ai-seed/CONCEPT.md"
+          },
+          {
+            "type": "page",
+            "title": "GitHub Workflows Testing and Validation Report",
+            "path": "githubai/ai-seed/WORKFLOW_TEST_REPORT.md",
+            "rel": "ai-seed/WORKFLOW_TEST_REPORT.md"
+          },
+          {
+            "type": "section",
+            "title": "Documentation",
+            "rel": "ai-seed/docs",
+            "index": "githubai/ai-seed/docs/index.md",
+            "pages": 8,
+            "children": [
+              {
+                "type": "page",
+                "title": "AI-Seed",
+                "path": "githubai/ai-seed/docs/index.md",
+                "rel": "ai-seed/docs/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "AI-Seed Architecture \u2014 the autonomous orchestration framework",
+                "path": "githubai/ai-seed/docs/ARCHITECTURE.md",
+                "rel": "ai-seed/docs/ARCHITECTURE.md"
+              },
+              {
+                "type": "page",
+                "title": "AI-Seed: Complete Developer Guide",
+                "path": "githubai/ai-seed/docs/DEVELOPER_GUIDE.md",
+                "rel": "ai-seed/docs/DEVELOPER_GUIDE.md"
+              },
+              {
+                "type": "page",
+                "title": "API Reference",
+                "path": "githubai/ai-seed/docs/API.md",
+                "rel": "ai-seed/docs/API.md"
+              },
+              {
+                "type": "page",
+                "title": "Pattern provenance \u2014 where every mechanism was proven",
+                "path": "githubai/ai-seed/docs/PATTERNS.md",
+                "rel": "ai-seed/docs/PATTERNS.md"
+              },
+              {
+                "type": "page",
+                "title": "Proposal \u2014 Seed recipes: mining feature progressions into replayable\u2026",
+                "path": "githubai/ai-seed/docs/proposals/seed-recipes.md",
+                "rel": "ai-seed/docs/proposals/seed-recipes.md",
+                "folder": "ai-seed/docs/proposals"
+              },
+              {
+                "type": "page",
+                "title": "\ud83c\udf31 AI-Seed Architecture Documentation",
+                "path": "githubai/ai-seed/docs/architecture/IMPLEMENTATION.md",
+                "rel": "ai-seed/docs/architecture/IMPLEMENTATION.md",
+                "folder": "ai-seed/docs/architecture"
+              },
+              {
+                "type": "page",
+                "title": "\ud83c\udf31 Periodic Growth Workflows (legacy \u2014 G1 era)",
+                "path": "githubai/ai-seed/docs/guides/periodic-growth-workflows.md",
+                "rel": "ai-seed/docs/guides/periodic-growth-workflows.md",
+                "folder": "ai-seed/docs/guides"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "seed/ \u2014 the plantable kernel",
+            "rel": "ai-seed/seed",
+            "index": "githubai/ai-seed/seed/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "seed/ \u2014 the plantable kernel",
+                "path": "githubai/ai-seed/seed/README.md",
+                "rel": "ai-seed/seed/README.md",
+                "is_index": true
+              },
+              {
+                "type": "section",
+                "title": "Kernel",
+                "rel": "ai-seed/seed/kernel",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "CLAUDE.md",
+                    "path": "githubai/ai-seed/seed/kernel/CLAUDE.md",
+                    "rel": "ai-seed/seed/kernel/CLAUDE.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "CONCEPT \u2014 SEEDNAME",
+                    "path": "githubai/ai-seed/seed/kernel/CONCEPT.md",
+                    "rel": "ai-seed/seed/kernel/CONCEPT.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 SEEDNAME",
+                    "path": "githubai/ai-seed/seed/kernel/SCHEMA.md",
+                    "rel": "ai-seed/seed/kernel/SCHEMA.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

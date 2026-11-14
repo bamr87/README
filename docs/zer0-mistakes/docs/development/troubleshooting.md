@@ -6,12 +6,15 @@ date: 2026-05-31 20:54:47+00:00
 description: 'Diagnose and fix common failures in the Zer0-Mistakes release automation
   scripts: version bumps, gem builds, tagging, and RubyGems publishing.'
 lastmod: 2026-05-31 20:54:47+00:00
-source_file: troubleshooting.md
+source_file: docs/development/troubleshooting.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/troubleshooting.md
 tags:
 - development
 - contributing
 title: 'Troubleshooting Guide: Release Automation System'
 ---
+
 # Troubleshooting Guide: Release Automation System
 
 **Last Updated:** 2025-11-25  

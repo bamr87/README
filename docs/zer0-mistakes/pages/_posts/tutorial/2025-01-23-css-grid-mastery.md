@@ -19,15 +19,18 @@ keywords:
 lastmod: 2026-06-22 12:00:00+00:00
 layout: article
 preview: /images/previews/css-grid-mastery-build-any-layout-you-can-imagine.png
-source_file: 2025-01-23-css-grid-mastery.md
+source_file: pages/_posts/tutorial/2025-01-23-css-grid-mastery.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/tutorial/2025-01-23-css-grid-mastery.md
 tags:
 - css
 - grid
 - layout
 - web-design
 - frontend
-title: 2025 01 23 Css Grid Mastery
+title: 'CSS Grid Mastery: Build Any Layout You Can Imagine'
 ---
+
 CSS Grid is the most powerful layout system in CSS. This tutorial takes you from your first grid to complex, real-world layouts — and every concept comes with a **live demo you can see rendered right here in the browser**, sitting next to the code that produces it. Resize the window or open your browser's grid inspector to watch each example respond.
 
 <style>
@@ -510,8 +513,8 @@ For the complete property reference, keep [MDN's CSS Grid Layout guide](https://
 
 - [Build a Responsive Documentation Card Grid](/posts/2026/04/28/responsive-documentation-card-grid/) — put `auto-fit` and `minmax()` to work on a real documentation index.
 - [Accessible Form Patterns: Labels, Errors, and Helpful States](/posts/2026/04/28/accessible-form-patterns/) — pair these layouts with forms everyone can use.
-- [Bootstrap 5 integration](/docs/bootstrap/) — how the theme's flexbox-based Bootstrap grid complements native CSS Grid.
-- [Customizing layouts](/docs/customization/layouts/) — the theme's layout hierarchy and where your grids fit in.
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap 5 integration]] — how the theme's flexbox-based Bootstrap grid complements native CSS Grid.
+- [[zer0-mistakes/pages/_docs/customization/layouts|Customizing layouts]] — the theme's layout hierarchy and where your grids fit in.
 
 <script>
 (function () { var pg = document.getElementById('gd-playground'); if (pg) {

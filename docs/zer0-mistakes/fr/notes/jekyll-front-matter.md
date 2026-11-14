@@ -13,17 +13,20 @@ lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 machine_translated: true
 permalink: /fr/notes/jekyll-front-matter/
-source_file: jekyll-front-matter.md
+source_file: fr/notes/jekyll-front-matter.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/notes/jekyll-front-matter.md
 tags:
 - jekyll
 - yaml
 - front-matter
 - documentation
-title: Article-specific
+title: Référence du Front Matter Jekyll
 translated_from_sha: ff5f5fc70714
 translation_of: pages/_notes/jekyll-front-matter.md
 translation_source_url: /notes/jekyll-front-matter/
 ---
+
 ## Qu'est-ce que le Front Matter ?
 
 Le front matter est constitué de métadonnées YAML placées au début de tout fichier Jekyll (Markdown ou HTML). Il doit être la première chose dans le fichier et être encadré par des lignes composées de trois tirets.
@@ -427,4 +430,4 @@ defaults:
 
 - [Documentation du Front Matter Jekyll](https://jekyllrb.com/docs/front-matter/)
 - [Guide de la syntaxe YAML](https://yaml.org/spec/1.2.2/)
-- [Documentation du thème Zer0-Mistakes](/docs/)
+- [[zer0-mistakes/pages/_docs/index|Documentation du thème Zer0-Mistakes]]

@@ -8,7 +8,9 @@ description: Single source of truth for every front-end UI/UX component in the z
   / plugins), its API surface (classes, data-attributes, JS globals, events, CSS tokens),
   and its automated test coverage. Use it to define, test, and improve the UI.
 lastmod: 2026-09-05 00:00:00+00:00
-source_file: ui-components.md
+source_file: docs/architecture/ui-components.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/ui-components.md
 tags:
 - architecture
 - design
@@ -17,6 +19,7 @@ tags:
 - components
 title: UI/UX Component Spec
 ---
+
 # UI/UX Component Spec
 
 > **Single point of reference** for the theme's front-end. Every UI feature is catalogued with its purpose, source files, public API surface, and test coverage — so each component can be **defined**, **tested**, and **improved** from one place.
@@ -357,7 +360,7 @@ The fixed top header (brand, primary menubar, utility controls, mobile/tablet sh
   - SCSS: `_sass/layouts/_navbar-extras.scss`; tokens in `_sass/tokens/_layers.scss` (`--zer0-layer-fab-*`), `_spacing.scss` (`--zer0-space-fab-*`)
   - Markup: `_includes/navigation/toc-fab.html`, `local-graph-fab.html` (rendered from `footer.html`)
   - JS: visibility driven by `toc-visibility.js` / `sidebar-visibility.js` (toggle `--restore` classes)
-- **API surface:** classes `.bd-toc-fab`, `.bd-sidebar-fab`, `.bd-toc-toggle`, `.bd-sidebar-toggle`, `.bd-toc-fab--restore`, `.bd-sidebar-fab--restore`; ids `#tocFab`, `#sidebarFab`; CSS vars `--zer0-layer-fab-toc` (1055), `--zer0-layer-fab-back-to-top` (1050), `--zer0-layer-fab-local-graph` (1060), `--zer0-space-fab-offset/size/gap`
+- **API surface:** classes `.bd-toc-fab`, `.bd-sidebar-fab`, `.bd-toc-toggle`, `.bd-sidebar-toggle`, `.bd-toc-fab--restore`, `.bd-sidebar-fab--restore`; ids `#tocFab`, `#sidebarFab`; CSS vars `--zer0-layer-fab-toc` (1034), `--zer0-layer-fab-back-to-top` (1031), `--zer0-layer-fab-local-graph` (1035) — the whole FAB band sits below `--zer0-layer-backdrop` (1040) so an open overlay covers it (#572), `--zer0-space-fab-offset/size/gap`
 - **Tests:** `test/visual/features/content-enhancements.spec.js` — "mobile exposes sidebar FAB and ToC FAB" (asserts `#sidebarFab, .bd-sidebar-fab` visible and `#tocFab` attached at the mobile viewport).
 - **Gaps / improvement ideas:** The actual stacking (FABs not overlapping back-to-top) is computed via CSS `calc()` but never asserted with bounding-box overlap checks — `fixtures.js` already provides `boxesOverlap`/`assertStackedVertically` helpers that could verify it. The restore-mode visibility transitions and the local-graph FAB are untested.
 

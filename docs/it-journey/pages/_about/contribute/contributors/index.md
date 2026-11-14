@@ -9,13 +9,15 @@ draft: false
 excerpt: Meet the adventurers who build and maintain IT-Journey
 lastmod: '2026-03-21T00:00:00.000Z'
 permalink: /about/contributors/
-source_file: index.md
+source_file: pages/_about/contribute/contributors/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/contribute/contributors/index.md
 tags:
 - contributors
 - community
 - profiles
 - gamification
-title: 🏛️ The Guild Hall — Contributors
+title: Contributors
 ---
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">
 
@@ -162,7 +164,7 @@ Every contributor gets a **Character Profile** — an RPG-style character sheet 
 3. Choose your **class**: Wizard, Warrior, Ranger, Rogue, Healer, Bard, or Paladin
 4. Submit a PR — the CI pipeline will auto-generate your stats on merge
 
-See the [Forge Your Character quest](/quests/0001/forge-your-character/) for the full walkthrough.
+See the [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character quest]] for the full walkthrough.
 
 ---
 

@@ -1,0 +1,166 @@
+{
+  "corpus": {
+    "file_count": 35,
+    "fingerprint": "77ffc73e4a825563",
+    "path": "docs/SCHEMA",
+    "present": true,
+    "total_bytes": 92773
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Vendoring: the distribution contract",
+      "Staying current",
+      "Monorepos & submodules (federation)",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing"
+    ],
+    "readme": "README.md",
+    "summary": "Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.",
+    "title": "Pyramid Schema (SCHEMA.md)"
+  },
+  "key_docs": [
+    "README.md",
+    "SCHEMA.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "docs/2026-09-03-the-copy-you-forgot-you-made.md",
+    "spec/pyramid-schema-spec-v0.1.md",
+    "docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/SCHEMA.md",
+    "fingerprint": "c307422bd8ced662",
+    "index": "SCHEMA/README.md",
+    "max_depth": 5,
+    "pages": 35,
+    "present": true,
+    "sections": 10,
+    "skipped": 0,
+    "title": "SCHEMA Protocol",
+    "top_sections": [
+      {
+        "index": "SCHEMA/docs/README.md",
+        "pages": 10,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 11,
+        "path": "example",
+        "title": "Example",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 2,
+        "path": "protocol",
+        "title": "Protocol",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 2,
+        "path": "spec",
+        "title": "Spec",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 2,
+        "path": "templates",
+        "title": "Templates",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/SCHEMA.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "SCHEMA",
+    "registry_description": "Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.",
+    "repo": "bamr87/SCHEMA",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/SCHEMA"
+  },
+  "rollups": {
+    "categories": {
+      "SCHEMA": 35
+    },
+    "code_languages": [
+      "plaintext",
+      "bash",
+      "markdown",
+      "python"
+    ],
+    "indexed_documents": 35,
+    "top_tags": [
+      "claude-code",
+      "agents",
+      "schema-md",
+      "repo-structure",
+      "lint"
+    ],
+    "total_words": 12871
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": true,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md",
+      "SCHEMA.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 11,
+        "name": "example"
+      },
+      {
+        "doc_count": 10,
+        "name": "docs"
+      },
+      {
+        "doc_count": 2,
+        "name": "protocol"
+      },
+      {
+        "doc_count": 2,
+        "name": "spec"
+      },
+      {
+        "doc_count": 2,
+        "name": "templates"
+      },
+      {
+        "doc_count": 1,
+        "name": "features"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

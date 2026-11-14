@@ -17,7 +17,9 @@ layout: default
 mermaid: true
 permalink: /about/features/readme/
 preview: /images/previews/zer0-mistakes-features-documentation.png
-source_file: README.md
+source_file: pages/_about/features/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/README.md
 tags:
 - features
 - documentation
@@ -30,6 +32,7 @@ technical_requirements:
 - VS Code with Copilot extension (recommended)
 title: Zer0-Mistakes Features Documentation
 ---
+
 # Zer0-Mistakes Features Documentation
 
 **Comprehensive documentation hub** for all Zer0-Mistakes Jekyll theme features, automation systems, and AI-assisted development workflows optimized for VS Code Copilot collaboration.
@@ -184,7 +187,7 @@ graph TD
 
 ### **For Users**
 
-1. **Browse Feature Index**: Start with [Feature Index](/about/features/)
+1. **Browse Feature Index**: Start with [[zer0-mistakes/pages/_about/features/index|Feature Index]]
 2. **Choose Your Path**: Select features based on your needs
 3. **Follow Implementation Guides**: Each feature includes step-by-step setup
 4. **Customize as Needed**: All features support configuration
@@ -293,7 +296,7 @@ Found an issue? Want to improve the documentation?
 - **Last Updated**: 2025-10-19
 - **Contributors**: Zer0-Mistakes Development Team
 
-**Questions?** Ask in [Discussions](https://github.com/bamr87/zer0-mistakes/discussions) or check the [main documentation](/about/features/)
+**Questions?** Ask in [Discussions](https://github.com/bamr87/zer0-mistakes/discussions) or check the [[zer0-mistakes/pages/_about/features/index|main documentation]]
 
 ---
 

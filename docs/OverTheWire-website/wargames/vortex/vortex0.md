@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 0
-source_file: vortex0.md
+source_file: wargames/vortex/vortex0.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex0.md
 title: Vortex0
 ---
 Level Goal

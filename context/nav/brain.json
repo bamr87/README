@@ -1,0 +1,1140 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "brain",
+  "title": "Brain",
+  "corpus": "docs/brain",
+  "counts": {
+    "pages": 183,
+    "sections": 2,
+    "max_depth": 2,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "03e2ac1c19761ce4",
+  "tree": {
+    "type": "section",
+    "title": "Brain",
+    "index": "brain/index.md",
+    "pages": 183,
+    "children": [
+      {
+        "type": "page",
+        "title": "Second Brain",
+        "path": "brain/index.md",
+        "rel": "index.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "All pages",
+        "path": "brain/pages.md",
+        "rel": "pages.md"
+      },
+      {
+        "type": "page",
+        "title": "Canvas",
+        "path": "brain/canvas.md",
+        "rel": "canvas.md"
+      },
+      {
+        "type": "page",
+        "title": "Change log",
+        "path": "brain/log.md",
+        "rel": "log.md"
+      },
+      {
+        "type": "page",
+        "title": "Graph view",
+        "path": "brain/graph.md",
+        "rel": "graph.md"
+      },
+      {
+        "type": "page",
+        "title": "Hot cache",
+        "path": "brain/hot.md",
+        "rel": "hot.md"
+      },
+      {
+        "type": "page",
+        "title": "Reading the vault",
+        "path": "brain/notes/reading-the-vault.md",
+        "rel": "notes/reading-the-vault.md",
+        "folder": "notes"
+      },
+      {
+        "type": "page",
+        "title": "Tags",
+        "path": "brain/tags.md",
+        "rel": "tags.md"
+      },
+      {
+        "type": "page",
+        "title": "Vault health",
+        "path": "brain/health.md",
+        "rel": "health.md"
+      },
+      {
+        "type": "section",
+        "title": "Concepts",
+        "rel": "concepts",
+        "pages": 150,
+        "children": [
+          {
+            "type": "page",
+            "title": "Accessibility",
+            "path": "brain/concepts/accessibility.md",
+            "rel": "concepts/accessibility.md"
+          },
+          {
+            "type": "page",
+            "title": "Agentic AI",
+            "path": "brain/concepts/agentic-ai.md",
+            "rel": "concepts/agentic-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "Agents",
+            "path": "brain/concepts/agents.md",
+            "rel": "concepts/agents.md"
+          },
+          {
+            "type": "page",
+            "title": "AI",
+            "path": "brain/concepts/ai.md",
+            "rel": "concepts/ai.md"
+          },
+          {
+            "type": "page",
+            "title": "AI Agents",
+            "path": "brain/concepts/ai-agents.md",
+            "rel": "concepts/ai-agents.md"
+          },
+          {
+            "type": "page",
+            "title": "AI Assisted Development",
+            "path": "brain/concepts/ai-assisted-development.md",
+            "rel": "concepts/ai-assisted-development.md"
+          },
+          {
+            "type": "page",
+            "title": "AI Ethics and Responsible AI: Bias Detection, Fairness & Governance",
+            "path": "brain/concepts/ai-ethics-and-responsible-ai-bias-detection-fairness-governance.md",
+            "rel": "concepts/ai-ethics-and-responsible-ai-bias-detection-fairness-governance.md"
+          },
+          {
+            "type": "page",
+            "title": "Alerting Systems: Alertmanager, Routing, and On-Call",
+            "path": "brain/concepts/alerting-systems-alertmanager-routing-and-on-call.md",
+            "rel": "concepts/alerting-systems-alertmanager-routing-and-on-call.md"
+          },
+          {
+            "type": "page",
+            "title": "Analytics",
+            "path": "brain/concepts/analytics.md",
+            "rel": "concepts/analytics.md"
+          },
+          {
+            "type": "page",
+            "title": "Architecture",
+            "path": "brain/concepts/architecture.md",
+            "rel": "concepts/architecture.md"
+          },
+          {
+            "type": "page",
+            "title": "article:answer-choice-elimination",
+            "path": "brain/concepts/article-answer-choice-elimination.md",
+            "rel": "concepts/article-answer-choice-elimination.md"
+          },
+          {
+            "type": "page",
+            "title": "article:blind-review-method",
+            "path": "brain/concepts/article-blind-review-method.md",
+            "rel": "concepts/article-blind-review-method.md"
+          },
+          {
+            "type": "page",
+            "title": "article:conditional-logic-foundations",
+            "path": "brain/concepts/article-conditional-logic-foundations.md",
+            "rel": "concepts/article-conditional-logic-foundations.md"
+          },
+          {
+            "type": "page",
+            "title": "article:lr-assumption-family",
+            "path": "brain/concepts/article-lr-assumption-family.md",
+            "rel": "concepts/article-lr-assumption-family.md"
+          },
+          {
+            "type": "page",
+            "title": "article:lr-inference-family",
+            "path": "brain/concepts/article-lr-inference-family.md",
+            "rel": "concepts/article-lr-inference-family.md"
+          },
+          {
+            "type": "page",
+            "title": "article:pacing-and-time-management",
+            "path": "brain/concepts/article-pacing-and-time-management.md",
+            "rel": "concepts/article-pacing-and-time-management.md"
+          },
+          {
+            "type": "page",
+            "title": "Authoring",
+            "path": "brain/concepts/authoring.md",
+            "rel": "concepts/authoring.md"
+          },
+          {
+            "type": "page",
+            "title": "Automation",
+            "path": "brain/concepts/automation.md",
+            "rel": "concepts/automation.md"
+          },
+          {
+            "type": "page",
+            "title": "Bash",
+            "path": "brain/concepts/bash.md",
+            "rel": "concepts/bash.md"
+          },
+          {
+            "type": "page",
+            "title": "Beginner",
+            "path": "brain/concepts/beginner.md",
+            "rel": "concepts/beginner.md"
+          },
+          {
+            "type": "page",
+            "title": "Bootstrap",
+            "path": "brain/concepts/bootstrap.md",
+            "rel": "concepts/bootstrap.md"
+          },
+          {
+            "type": "page",
+            "title": "Bootstrap Integration",
+            "path": "brain/concepts/bootstrap-integration.md",
+            "rel": "concepts/bootstrap-integration.md"
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "brain/concepts/changelog.md",
+            "rel": "concepts/changelog.md"
+          },
+          {
+            "type": "page",
+            "title": "Cheatsheet",
+            "path": "brain/concepts/cheatsheet.md",
+            "rel": "concepts/cheatsheet.md"
+          },
+          {
+            "type": "page",
+            "title": "CI",
+            "path": "brain/concepts/ci.md",
+            "rel": "concepts/ci.md"
+          },
+          {
+            "type": "page",
+            "title": "CI CD",
+            "path": "brain/concepts/ci-cd.md",
+            "rel": "concepts/ci-cd.md"
+          },
+          {
+            "type": "page",
+            "title": "CI/CD Fundamentals: Continuous Integration and Continuous Deployment\u2026",
+            "path": "brain/concepts/ci-cd-fundamentals-continuous-integration-and-continuous-deployment-essentials.md",
+            "rel": "concepts/ci-cd-fundamentals-continuous-integration-and-continuous-deployment-essentials.md"
+          },
+          {
+            "type": "page",
+            "title": "Claude",
+            "path": "brain/concepts/claude.md",
+            "rel": "concepts/claude.md"
+          },
+          {
+            "type": "page",
+            "title": "Claude Code",
+            "path": "brain/concepts/claude-code.md",
+            "rel": "concepts/claude-code.md"
+          },
+          {
+            "type": "page",
+            "title": "Climate",
+            "path": "brain/concepts/climate.md",
+            "rel": "concepts/climate.md"
+          },
+          {
+            "type": "page",
+            "title": "Collaboration",
+            "path": "brain/concepts/collaboration.md",
+            "rel": "concepts/collaboration.md"
+          },
+          {
+            "type": "page",
+            "title": "Collections",
+            "path": "brain/concepts/collections.md",
+            "rel": "concepts/collections.md"
+          },
+          {
+            "type": "page",
+            "title": "Components",
+            "path": "brain/concepts/components.md",
+            "rel": "concepts/components.md"
+          },
+          {
+            "type": "page",
+            "title": "Configuration",
+            "path": "brain/concepts/configuration.md",
+            "rel": "concepts/configuration.md"
+          },
+          {
+            "type": "page",
+            "title": "Containers",
+            "path": "brain/concepts/containers.md",
+            "rel": "concepts/containers.md"
+          },
+          {
+            "type": "page",
+            "title": "Contributing",
+            "path": "brain/concepts/contributing.md",
+            "rel": "concepts/contributing.md"
+          },
+          {
+            "type": "page",
+            "title": "Copilot",
+            "path": "brain/concepts/copilot.md",
+            "rel": "concepts/copilot.md"
+          },
+          {
+            "type": "page",
+            "title": "CSS",
+            "path": "brain/concepts/css.md",
+            "rel": "concepts/css.md"
+          },
+          {
+            "type": "page",
+            "title": "CTF",
+            "path": "brain/concepts/ctf.md",
+            "rel": "concepts/ctf.md"
+          },
+          {
+            "type": "page",
+            "title": "Customization",
+            "path": "brain/concepts/customization.md",
+            "rel": "concepts/customization.md"
+          },
+          {
+            "type": "page",
+            "title": "Dashboard",
+            "path": "brain/concepts/dashboard.md",
+            "rel": "concepts/dashboard.md"
+          },
+          {
+            "type": "page",
+            "title": "Data Quality Engineering: Testing, Validation & Monitoring Frameworks",
+            "path": "brain/concepts/data-quality-engineering-testing-validation-monitoring-frameworks.md",
+            "rel": "concepts/data-quality-engineering-testing-validation-monitoring-frameworks.md"
+          },
+          {
+            "type": "page",
+            "title": "Data Science",
+            "path": "brain/concepts/data-science.md",
+            "rel": "concepts/data-science.md"
+          },
+          {
+            "type": "page",
+            "title": "Data Visualization",
+            "path": "brain/concepts/data-visualization.md",
+            "rel": "concepts/data-visualization.md"
+          },
+          {
+            "type": "page",
+            "title": "Deployment",
+            "path": "brain/concepts/deployment.md",
+            "rel": "concepts/deployment.md"
+          },
+          {
+            "type": "page",
+            "title": "Development",
+            "path": "brain/concepts/development.md",
+            "rel": "concepts/development.md"
+          },
+          {
+            "type": "page",
+            "title": "Devops",
+            "path": "brain/concepts/devops.md",
+            "rel": "concepts/devops.md"
+          },
+          {
+            "type": "page",
+            "title": "Docker",
+            "path": "brain/concepts/docker.md",
+            "rel": "concepts/docker.md"
+          },
+          {
+            "type": "page",
+            "title": "ESG",
+            "path": "brain/concepts/esg.md",
+            "rel": "concepts/esg.md"
+          },
+          {
+            "type": "page",
+            "title": "ETL Pipeline Design: Build Scalable Data Pipelines with Python",
+            "path": "brain/concepts/etl-pipeline-design-build-scalable-data-pipelines-with-python.md",
+            "rel": "concepts/etl-pipeline-design-build-scalable-data-pipelines-with-python.md"
+          },
+          {
+            "type": "page",
+            "title": "Features",
+            "path": "brain/concepts/features.md",
+            "rel": "concepts/features.md"
+          },
+          {
+            "type": "page",
+            "title": "Frontend",
+            "path": "brain/concepts/frontend.md",
+            "rel": "concepts/frontend.md"
+          },
+          {
+            "type": "page",
+            "title": "Frontmatter",
+            "path": "brain/concepts/frontmatter.md",
+            "rel": "concepts/frontmatter.md"
+          },
+          {
+            "type": "page",
+            "title": "Getting Started",
+            "path": "brain/concepts/getting-started.md",
+            "rel": "concepts/getting-started.md"
+          },
+          {
+            "type": "page",
+            "title": "GIT",
+            "path": "brain/concepts/git.md",
+            "rel": "concepts/git.md"
+          },
+          {
+            "type": "page",
+            "title": "Github",
+            "path": "brain/concepts/github.md",
+            "rel": "concepts/github.md"
+          },
+          {
+            "type": "page",
+            "title": "Github Actions",
+            "path": "brain/concepts/github-actions.md",
+            "rel": "concepts/github-actions.md"
+          },
+          {
+            "type": "page",
+            "title": "Github Pages",
+            "path": "brain/concepts/github-pages.md",
+            "rel": "concepts/github-pages.md"
+          },
+          {
+            "type": "page",
+            "title": "Glossary",
+            "path": "brain/concepts/glossary.md",
+            "rel": "concepts/glossary.md"
+          },
+          {
+            "type": "page",
+            "title": "Governance",
+            "path": "brain/concepts/governance.md",
+            "rel": "concepts/governance.md"
+          },
+          {
+            "type": "page",
+            "title": "Hosting",
+            "path": "brain/concepts/hosting.md",
+            "rel": "concepts/hosting.md"
+          },
+          {
+            "type": "page",
+            "title": "Html",
+            "path": "brain/concepts/html.md",
+            "rel": "concepts/html.md"
+          },
+          {
+            "type": "page",
+            "title": "Http",
+            "path": "brain/concepts/http.md",
+            "rel": "concepts/http.md"
+          },
+          {
+            "type": "page",
+            "title": "Infrastructure",
+            "path": "brain/concepts/infrastructure.md",
+            "rel": "concepts/infrastructure.md"
+          },
+          {
+            "type": "page",
+            "title": "Installation",
+            "path": "brain/concepts/installation.md",
+            "rel": "concepts/installation.md"
+          },
+          {
+            "type": "page",
+            "title": "IT Fundamentals",
+            "path": "brain/concepts/it-fundamentals.md",
+            "rel": "concepts/it-fundamentals.md"
+          },
+          {
+            "type": "page",
+            "title": "Javascript",
+            "path": "brain/concepts/javascript.md",
+            "rel": "concepts/javascript.md"
+          },
+          {
+            "type": "page",
+            "title": "Jekyll",
+            "path": "brain/concepts/jekyll.md",
+            "rel": "concepts/jekyll.md"
+          },
+          {
+            "type": "page",
+            "title": "Jupyter",
+            "path": "brain/concepts/jupyter.md",
+            "rel": "concepts/jupyter.md"
+          },
+          {
+            "type": "page",
+            "title": "Keyboard",
+            "path": "brain/concepts/keyboard.md",
+            "rel": "concepts/keyboard.md"
+          },
+          {
+            "type": "page",
+            "title": "Latex",
+            "path": "brain/concepts/latex.md",
+            "rel": "concepts/latex.md"
+          },
+          {
+            "type": "page",
+            "title": "Layouts",
+            "path": "brain/concepts/layouts.md",
+            "rel": "concepts/layouts.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 0001 - Web Fundamentals",
+            "path": "brain/concepts/level-0001-web-fundamentals.md",
+            "rel": "concepts/level-0001-web-fundamentals.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 0101 - CI/CD & DevOps",
+            "path": "brain/concepts/level-0101-ci-cd-devops.md",
+            "rel": "concepts/level-0101-ci-cd-devops.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 0110 - Database Mastery",
+            "path": "brain/concepts/level-0110-database-mastery.md",
+            "rel": "concepts/level-0110-database-mastery.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 0111 - API Development",
+            "path": "brain/concepts/level-0111-api-development.md",
+            "rel": "concepts/level-0111-api-development.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1000 (8) - Cloud Computing",
+            "path": "brain/concepts/level-1000-8-cloud-computing.md",
+            "rel": "concepts/level-1000-8-cloud-computing.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1010 - Monitoring & Observability",
+            "path": "brain/concepts/level-1010-monitoring-observability.md",
+            "rel": "concepts/level-1010-monitoring-observability.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1011 - Security & Compliance",
+            "path": "brain/concepts/level-1011-security-compliance.md",
+            "rel": "concepts/level-1011-security-compliance.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1100 - Data & Templates",
+            "path": "brain/concepts/level-1100-data-templates.md",
+            "rel": "concepts/level-1100-data-templates.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1100 - Data Engineering",
+            "path": "brain/concepts/level-1100-data-engineering.md",
+            "rel": "concepts/level-1100-data-engineering.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1101 - Machine Learning & AI",
+            "path": "brain/concepts/level-1101-machine-learning-ai.md",
+            "rel": "concepts/level-1101-machine-learning-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "Level 1110 - Architecture & Design Patterns",
+            "path": "brain/concepts/level-1110-architecture-design-patterns.md",
+            "rel": "concepts/level-1110-architecture-design-patterns.md"
+          },
+          {
+            "type": "page",
+            "title": "Linux",
+            "path": "brain/concepts/linux.md",
+            "rel": "concepts/linux.md"
+          },
+          {
+            "type": "page",
+            "title": "Linux Fundamentals",
+            "path": "brain/concepts/linux-fundamentals.md",
+            "rel": "concepts/linux-fundamentals.md"
+          },
+          {
+            "type": "page",
+            "title": "Liquid",
+            "path": "brain/concepts/liquid.md",
+            "rel": "concepts/liquid.md"
+          },
+          {
+            "type": "page",
+            "title": "Machine Learning",
+            "path": "brain/concepts/machine-learning.md",
+            "rel": "concepts/machine-learning.md"
+          },
+          {
+            "type": "page",
+            "title": "Machine Learning Fundamentals: Supervised & Unsupervised Learning with\u2026",
+            "path": "brain/concepts/machine-learning-fundamentals-supervised-unsupervised-learning-with-scikit-learn.md",
+            "rel": "concepts/machine-learning-fundamentals-supervised-unsupervised-learning-with-scikit-learn.md"
+          },
+          {
+            "type": "page",
+            "title": "Manufacturing",
+            "path": "brain/concepts/manufacturing.md",
+            "rel": "concepts/manufacturing.md"
+          },
+          {
+            "type": "page",
+            "title": "Markdown",
+            "path": "brain/concepts/markdown.md",
+            "rel": "concepts/markdown.md"
+          },
+          {
+            "type": "page",
+            "title": "Mathjax",
+            "path": "brain/concepts/mathjax.md",
+            "rel": "concepts/mathjax.md"
+          },
+          {
+            "type": "page",
+            "title": "MCP",
+            "path": "brain/concepts/mcp.md",
+            "rel": "concepts/mcp.md"
+          },
+          {
+            "type": "page",
+            "title": "Mermaid",
+            "path": "brain/concepts/mermaid.md",
+            "rel": "concepts/mermaid.md"
+          },
+          {
+            "type": "page",
+            "title": "Meta",
+            "path": "brain/concepts/meta.md",
+            "rel": "concepts/meta.md"
+          },
+          {
+            "type": "page",
+            "title": "MLOps Engineering: CI/CD Pipelines for Machine Learning Production",
+            "path": "brain/concepts/mlops-engineering-ci-cd-pipelines-for-machine-learning-production.md",
+            "rel": "concepts/mlops-engineering-ci-cd-pipelines-for-machine-learning-production.md"
+          },
+          {
+            "type": "page",
+            "title": "Monitoring",
+            "path": "brain/concepts/monitoring.md",
+            "rel": "concepts/monitoring.md"
+          },
+          {
+            "type": "page",
+            "title": "Navigation",
+            "path": "brain/concepts/navigation.md",
+            "rel": "concepts/navigation.md"
+          },
+          {
+            "type": "page",
+            "title": "Netlify",
+            "path": "brain/concepts/netlify.md",
+            "rel": "concepts/netlify.md"
+          },
+          {
+            "type": "page",
+            "title": "Observability",
+            "path": "brain/concepts/observability.md",
+            "rel": "concepts/observability.md"
+          },
+          {
+            "type": "page",
+            "title": "Obsidian",
+            "path": "brain/concepts/obsidian.md",
+            "rel": "concepts/obsidian.md"
+          },
+          {
+            "type": "page",
+            "title": "Onboarding",
+            "path": "brain/concepts/onboarding.md",
+            "rel": "concepts/onboarding.md"
+          },
+          {
+            "type": "page",
+            "title": "Open Source",
+            "path": "brain/concepts/open-source.md",
+            "rel": "concepts/open-source.md"
+          },
+          {
+            "type": "page",
+            "title": "Operations",
+            "path": "brain/concepts/operations.md",
+            "rel": "concepts/operations.md"
+          },
+          {
+            "type": "page",
+            "title": "OS Selection",
+            "path": "brain/concepts/os-selection.md",
+            "rel": "concepts/os-selection.md"
+          },
+          {
+            "type": "page",
+            "title": "Performance",
+            "path": "brain/concepts/performance.md",
+            "rel": "concepts/performance.md"
+          },
+          {
+            "type": "page",
+            "title": "Planning",
+            "path": "brain/concepts/planning.md",
+            "rel": "concepts/planning.md"
+          },
+          {
+            "type": "page",
+            "title": "PRD",
+            "path": "brain/concepts/prd.md",
+            "rel": "concepts/prd.md"
+          },
+          {
+            "type": "page",
+            "title": "Privacy",
+            "path": "brain/concepts/privacy.md",
+            "rel": "concepts/privacy.md"
+          },
+          {
+            "type": "page",
+            "title": "Product",
+            "path": "brain/concepts/product.md",
+            "rel": "concepts/product.md"
+          },
+          {
+            "type": "page",
+            "title": "Productivity",
+            "path": "brain/concepts/productivity.md",
+            "rel": "concepts/productivity.md"
+          },
+          {
+            "type": "page",
+            "title": "Python",
+            "path": "brain/concepts/python.md",
+            "rel": "concepts/python.md"
+          },
+          {
+            "type": "page",
+            "title": "Quickstart",
+            "path": "brain/concepts/quickstart.md",
+            "rel": "concepts/quickstart.md"
+          },
+          {
+            "type": "page",
+            "title": "Reference",
+            "path": "brain/concepts/reference.md",
+            "rel": "concepts/reference.md"
+          },
+          {
+            "type": "page",
+            "title": "Release",
+            "path": "brain/concepts/release.md",
+            "rel": "concepts/release.md"
+          },
+          {
+            "type": "page",
+            "title": "Remote Theme",
+            "path": "brain/concepts/remote-theme.md",
+            "rel": "concepts/remote-theme.md"
+          },
+          {
+            "type": "page",
+            "title": "Research",
+            "path": "brain/concepts/research.md",
+            "rel": "concepts/research.md"
+          },
+          {
+            "type": "page",
+            "title": "Responsive",
+            "path": "brain/concepts/responsive.md",
+            "rel": "concepts/responsive.md"
+          },
+          {
+            "type": "page",
+            "title": "Responsive Design",
+            "path": "brain/concepts/responsive-design.md",
+            "rel": "concepts/responsive-design.md"
+          },
+          {
+            "type": "page",
+            "title": "Ruby",
+            "path": "brain/concepts/ruby.md",
+            "rel": "concepts/ruby.md"
+          },
+          {
+            "type": "page",
+            "title": "Search",
+            "path": "brain/concepts/search.md",
+            "rel": "concepts/search.md"
+          },
+          {
+            "type": "page",
+            "title": "Security",
+            "path": "brain/concepts/security.md",
+            "rel": "concepts/security.md"
+          },
+          {
+            "type": "page",
+            "title": "Security Fundamentals: CIA Triad and Defense in Depth Strategies",
+            "path": "brain/concepts/security-fundamentals-cia-triad-and-defense-in-depth-strategies.md",
+            "rel": "concepts/security-fundamentals-cia-triad-and-defense-in-depth-strategies.md"
+          },
+          {
+            "type": "page",
+            "title": "SEO",
+            "path": "brain/concepts/seo.md",
+            "rel": "concepts/seo.md"
+          },
+          {
+            "type": "page",
+            "title": "Setup",
+            "path": "brain/concepts/setup.md",
+            "rel": "concepts/setup.md"
+          },
+          {
+            "type": "page",
+            "title": "Shortcuts",
+            "path": "brain/concepts/shortcuts.md",
+            "rel": "concepts/shortcuts.md"
+          },
+          {
+            "type": "page",
+            "title": "Sidebar",
+            "path": "brain/concepts/sidebar.md",
+            "rel": "concepts/sidebar.md"
+          },
+          {
+            "type": "page",
+            "title": "Sitemap",
+            "path": "brain/concepts/sitemap.md",
+            "rel": "concepts/sitemap.md"
+          },
+          {
+            "type": "page",
+            "title": "Statistics",
+            "path": "brain/concepts/statistics.md",
+            "rel": "concepts/statistics.md"
+          },
+          {
+            "type": "page",
+            "title": "Strategy",
+            "path": "brain/concepts/strategy.md",
+            "rel": "concepts/strategy.md"
+          },
+          {
+            "type": "page",
+            "title": "Syntax",
+            "path": "brain/concepts/syntax.md",
+            "rel": "concepts/syntax.md"
+          },
+          {
+            "type": "page",
+            "title": "Technology",
+            "path": "brain/concepts/technology.md",
+            "rel": "concepts/technology.md"
+          },
+          {
+            "type": "page",
+            "title": "Templates",
+            "path": "brain/concepts/templates.md",
+            "rel": "concepts/templates.md"
+          },
+          {
+            "type": "page",
+            "title": "Terminal",
+            "path": "brain/concepts/terminal.md",
+            "rel": "concepts/terminal.md"
+          },
+          {
+            "type": "page",
+            "title": "Testing",
+            "path": "brain/concepts/testing.md",
+            "rel": "concepts/testing.md"
+          },
+          {
+            "type": "page",
+            "title": "The Agentic Codex: GH-600 Study Hub",
+            "path": "brain/concepts/the-agentic-codex-gh-600-study-hub.md",
+            "rel": "concepts/the-agentic-codex-gh-600-study-hub.md"
+          },
+          {
+            "type": "page",
+            "title": "Theme",
+            "path": "brain/concepts/theme.md",
+            "rel": "concepts/theme.md"
+          },
+          {
+            "type": "page",
+            "title": "Threat Modeling",
+            "path": "brain/concepts/threat-modeling.md",
+            "rel": "concepts/threat-modeling.md"
+          },
+          {
+            "type": "page",
+            "title": "Tools",
+            "path": "brain/concepts/tools.md",
+            "rel": "concepts/tools.md"
+          },
+          {
+            "type": "page",
+            "title": "Tracking",
+            "path": "brain/concepts/tracking.md",
+            "rel": "concepts/tracking.md"
+          },
+          {
+            "type": "page",
+            "title": "Troubleshooting",
+            "path": "brain/concepts/troubleshooting.md",
+            "rel": "concepts/troubleshooting.md"
+          },
+          {
+            "type": "page",
+            "title": "Tutorial",
+            "path": "brain/concepts/tutorial.md",
+            "rel": "concepts/tutorial.md"
+          },
+          {
+            "type": "page",
+            "title": "UI",
+            "path": "brain/concepts/ui.md",
+            "rel": "concepts/ui.md"
+          },
+          {
+            "type": "page",
+            "title": "Version Control",
+            "path": "brain/concepts/version-control.md",
+            "rel": "concepts/version-control.md"
+          },
+          {
+            "type": "page",
+            "title": "Wargames",
+            "path": "brain/concepts/wargames.md",
+            "rel": "concepts/wargames.md"
+          },
+          {
+            "type": "page",
+            "title": "WEB",
+            "path": "brain/concepts/web.md",
+            "rel": "concepts/web.md"
+          },
+          {
+            "type": "page",
+            "title": "WEB Development",
+            "path": "brain/concepts/web-development.md",
+            "rel": "concepts/web-development.md"
+          },
+          {
+            "type": "page",
+            "title": "Workflow",
+            "path": "brain/concepts/workflow.md",
+            "rel": "concepts/workflow.md"
+          },
+          {
+            "type": "page",
+            "title": "Writing",
+            "path": "brain/concepts/writing.md",
+            "rel": "concepts/writing.md"
+          },
+          {
+            "type": "page",
+            "title": "Yaml",
+            "path": "brain/concepts/yaml.md",
+            "rel": "concepts/yaml.md"
+          },
+          {
+            "type": "page",
+            "title": "ZSH",
+            "path": "brain/concepts/zsh.md",
+            "rel": "concepts/zsh.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Projects",
+        "rel": "projects",
+        "pages": 24,
+        "children": [
+          {
+            "type": "page",
+            "title": "Agent Skills",
+            "path": "brain/projects/skills.md",
+            "rel": "projects/skills.md"
+          },
+          {
+            "type": "page",
+            "title": "Bash Crawl",
+            "path": "brain/projects/bashcrawl.md",
+            "rel": "projects/bashcrawl.md"
+          },
+          {
+            "type": "page",
+            "title": "BashOS",
+            "path": "brain/projects/bashos.md",
+            "rel": "projects/bashos.md"
+          },
+          {
+            "type": "page",
+            "title": "CV Pro",
+            "path": "brain/projects/cv-pro.md",
+            "rel": "projects/cv-pro.md"
+          },
+          {
+            "type": "page",
+            "title": "Django ERP",
+            "path": "brain/projects/djangoerp.md",
+            "rel": "projects/djangoerp.md"
+          },
+          {
+            "type": "page",
+            "title": "Fleet Hub",
+            "path": "brain/projects/bamr87.md",
+            "rel": "projects/bamr87.md"
+          },
+          {
+            "type": "page",
+            "title": "Fredgar AI",
+            "path": "brain/projects/fredgar-ai.md",
+            "rel": "projects/fredgar-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "GitHub AI",
+            "path": "brain/projects/githubai.md",
+            "rel": "projects/githubai.md"
+          },
+          {
+            "type": "page",
+            "title": "Gitorio",
+            "path": "brain/projects/gitorio.md",
+            "rel": "projects/gitorio.md"
+          },
+          {
+            "type": "page",
+            "title": "GodotGo",
+            "path": "brain/projects/godotgo.md",
+            "rel": "projects/godotgo.md"
+          },
+          {
+            "type": "page",
+            "title": "IT Journey",
+            "path": "brain/projects/it-journey.md",
+            "rel": "projects/it-journey.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI",
+            "path": "brain/projects/law-ai.md",
+            "rel": "projects/law-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "Lifehacker",
+            "path": "brain/projects/lifehacker.dev.md",
+            "rel": "projects/lifehacker.dev.md"
+          },
+          {
+            "type": "page",
+            "title": "OCRmd",
+            "path": "brain/projects/ocrmd.md",
+            "rel": "projects/ocrmd.md"
+          },
+          {
+            "type": "page",
+            "title": "Outbox",
+            "path": "brain/projects/outbox.md",
+            "rel": "projects/outbox.md"
+          },
+          {
+            "type": "page",
+            "title": "OverTheWire",
+            "path": "brain/projects/OverTheWire-website.md",
+            "rel": "projects/OverTheWire-website.md"
+          },
+          {
+            "type": "page",
+            "title": "Personal Site",
+            "path": "brain/projects/bamr87.github.io.md",
+            "rel": "projects/bamr87.github.io.md"
+          },
+          {
+            "type": "page",
+            "title": "Rewind Arcade",
+            "path": "brain/projects/rewind-arcade.md",
+            "rel": "projects/rewind-arcade.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA Protocol",
+            "path": "brain/projects/SCHEMA.md",
+            "rel": "projects/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "Scripts",
+            "path": "brain/projects/scripts.md",
+            "rel": "projects/scripts.md"
+          },
+          {
+            "type": "page",
+            "title": "VS Sonic Pi",
+            "path": "brain/projects/vs-sonic-pi.md",
+            "rel": "projects/vs-sonic-pi.md"
+          },
+          {
+            "type": "page",
+            "title": "Zer0 CMS",
+            "path": "brain/projects/zer0-CMS.md",
+            "rel": "projects/zer0-CMS.md"
+          },
+          {
+            "type": "page",
+            "title": "Zer0 Mistakes",
+            "path": "brain/projects/zer0-mistakes.md",
+            "rel": "projects/zer0-mistakes.md"
+          },
+          {
+            "type": "page",
+            "title": "ZPL Viewer",
+            "path": "brain/projects/zpl-viewer.md",
+            "rel": "projects/zpl-viewer.md"
+          }
+        ]
+      }
+    ]
+  },
+  "registered": false
+}

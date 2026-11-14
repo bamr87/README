@@ -6,17 +6,20 @@ personas:
 - practitioner
 - learner
 section: docs
-source_file: docs.md
-title: Docs — Section Guide
+source_file: _data/brand/sections/docs.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/sections/docs.md
+title: Docs
 voice_profile: reference
 ---
+
 # Docs — Section Guide
 
 > Governs the `pages/_docs` collection (resolved via
 > `_registry.yml › collection_defaults`), excluding vendored read-only content
 > (any upstream content carrying `source_repo`/`source_url`, which is never
 > rewritten). Voice/values live in `_data/brand/`. Structural rules:
-> [`docs.instructions.md`](../../../.github/instructions/docs.instructions.md).
+> [`docs.instructions.md`](../../../dot-github/instructions/docs.instructions.md).
 
 ## Audience
 

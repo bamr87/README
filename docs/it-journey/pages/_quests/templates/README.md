@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: pages/_quests/templates/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/templates/README.md
 title: Quest Templates and Tools
 ---
 # Quest Templates and Tools

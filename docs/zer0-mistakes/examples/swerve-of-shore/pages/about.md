@@ -7,9 +7,12 @@ permalink: /about/
 sidebar:
   nav: series
   title: Browse the series
-source_file: about.md
+source_file: examples/swerve-of-shore/pages/about.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/about.md
 title: About
 ---
+
 {% include page-header.html %}
 
 ![]({{ '/assets/images/posts/008-3-omphalos-the-center-of-it-all.jpg' | relative_url }}){: .mn-figure}

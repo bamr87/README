@@ -22,6 +22,9 @@
 #   aggregate   - include in the docs/ corpus aggregation (default true)
 #   external    - true when the project is not owned by the bamr87 org
 #   nav         - navigation overrides (see the `navigation:` block below)
+#   collect     - what counts as this project's official documentation:
+#                 `exclude` and `include` globs added to the fleet-wide
+#                 `collect:` block below
 
 version: 1
 
@@ -32,6 +35,72 @@ hub:
   description: >-
     Monorepo dash — control plane for the project fleet: registry, gates,
     seeds, and site. This README repo is its consolidated-context submodule.
+
+# ---------------------------------------------------------------------------
+# collect - what the crawl treats as official documentation. The ETL in
+# `scripts/context_engine/collect.py` takes every git-tracked Markdown file of
+# a project, drops the paths matching `exclude` unless a project's `include`
+# claims them back, and writes the rest to docs/<name>/.
+#
+# Dot-directories are renamed with `hidden_prefix`, segment by segment
+# (.github/skills -> dot-github/skills), because neither GitHub Pages nor
+# Obsidian shows a dot-prefixed path. The structure is otherwise untouched.
+collect:
+  hidden_prefix: "dot-"
+  exclude:
+    # Dot-directories hold agent and editor configuration and repository
+    # plumbing, not documentation. A project claims one back with `include`.
+    - ".*/**"
+    - "**/.*/**"
+    # Generated output and working files.
+    - "**/_reports/**"
+    - "**/_site/**"
+    - "**/drafts/**"
+    - "**/node_modules/**"
+    - "**/vendor/**"
+    - "link-check-results/**"
+    - "logs/**"
+    - "TODO/**"
+    # Test fixtures and solutions.
+    - "test/**"
+    - "tests/**"
+    - "**/tests/**"
+    - "**/fixtures/**"
+
+# ---------------------------------------------------------------------------
+# brain - the generated notes under docs/brain/. A tag or an unresolved
+# wikilink becomes a concept note once enough pages share it, so the notes
+# follow the corpus. See `scripts/context_engine/brain.py`.
+#
+#   concept_min_pages - pages that must carry a tag before it becomes a concept
+#   concept_min_links - unresolved [[wikilinks]] needed to create a stub concept
+#   concept_max       - cap on concept notes, most-connected first
+#   ai_budget         - concept summaries the AI may refresh per build
+#   concept_stop      - tags that describe a page's status, not its subject
+#   concept_aliases   - spelling variants folded into one concept
+brain:
+  concept_min_pages: 5
+  concept_min_links: 3
+  concept_max: 150
+  ai_budget: 25
+  concept_stop:
+    - documentation
+    - draft
+    - fail
+    - gamified-learning
+    - hands-on
+    - main_quest
+    - pass
+    - quest-perfection
+    - side_quest
+    - todo
+    - walkthrough
+    - warn
+  concept_aliases:
+    ci/cd: ci-cd
+    cicd: ci-cd
+    github_actions: github-actions
+    gh-pages: github-pages
 
 # ---------------------------------------------------------------------------
 # navigation - the contract between the corpus folder hierarchy and the
@@ -45,8 +114,9 @@ hub:
 #                    flattened into the deepest allowed section (never dropped)
 #   index_names    - filenames treated as a section's landing page, in order
 #   exclude        - glob patterns removed from navigation *and* from the site
-#   publish_hidden - build dot-directories (.github, .claude, ...) into the
-#                    site; MkDocs excludes them by default
+#   publish_hidden - build dot-directories into the site; MkDocs excludes them
+#                    by default. Off: the crawl renames the ones it keeps
+#                    (`collect.hidden_prefix`), and docs/.obsidian must stay out
 #   navigate_hidden - put those dot-directories in the sidebar too. Left off:
 #                    GitHub Pages does not serve a URL containing a
 #                    dot-prefixed segment (verified - `_underscore` and plain
@@ -56,31 +126,23 @@ hub:
 #   section_titles - directory name -> sidebar label (an index page's own
 #                    frontmatter title still wins)
 #
-# Per-project `nav:` keys: title, order, max_depth, exclude, groups.
+# Per-project `nav:` keys: title, order, max_depth, exclude, groups, tab.
+# `tab` nests a project under a shared top-level tab instead of giving it one.
 # A group lifts matching paths into a curated top-level section; patterns are
 # matched against project-relative paths (`*` stays inside one path segment,
 # `**` spans segments) and matching a directory moves its whole subtree.
 navigation:
   max_depth: 6
   index_names: [index.md, README.md, readme.md, home.md]
-  publish_hidden: true
+  publish_hidden: false
   navigate_hidden: false
   exclude:
     - "**/node_modules/**"
     - "**/.git/**"
   section_titles:
-    .archives: Archives
-    .claude: Claude
-    .cms: CMS
-    .crush: Crush
-    .cursor: Cursor
-    .devcontainer: Dev Container
-    .frontend: Frontend
-    .frontmatter: Frontmatter
-    .github: GitHub
-    .issues: Issues
-    .obsidian: Obsidian
-    .quests: Quests
+    dot-frontend: Frontend
+    dot-github: GitHub
+    dot-quests: Quests
     _data: Data
     _design-system: Design System
     _includes: Includes
@@ -115,41 +177,43 @@ projects:
       order: 60
 
   - name: skills
-    repo: bamr87/skills
-    url: https://github.com/bamr87/skills
+    repo: microsoft/skills
+    url: https://github.com/microsoft/skills
     kind: docs
+    external: true
     description: >-
       Agent skills — prompts, MCP configurations, and AI development
       patterns.
     topics: [ai, agents, mcp, prompts]
+    # This repository's product lives under .github/, so it claims back what
+    # the fleet-wide rules drop as plumbing.
+    collect:
+      include:
+        - ".github/agents/**"
+        - ".github/docs/**"
+        - ".github/prompts/**"
+        - ".github/skills/**"
     nav:
       title: Agent Skills
       order: 50
       max_depth: 7
-      # Almost all of this corpus lives under .github/, which GitHub Pages
-      # cannot serve, so navigate_hidden keeps it out of the sidebar and only
-      # the handful of top-level pages are navigable today. These groups are
-      # kept because they are what the sidebar should look like the moment
-      # that content becomes servable (see navigate_hidden above).
       groups:
         - title: Skills
-          match: [".github/skills"]
+          match: ["dot-github/skills"]
         - title: Agents
-          match: [".github/agents"]
+          match: ["dot-github/agents"]
         - title: Prompts
-          match: [".github/prompts"]
-        - title: Plugins
-          match: [".github/plugins"]
+          match: ["dot-github/prompts"]
         - title: Documentation
-          match: [".github/docs", "docs-site"]
-        - title: Workflows
-          match: [".github/workflows"]
+          match: ["dot-github/docs", "docs-site"]
         - title: Repository & tooling
-          match: [".github", "hooks", "tests"]
+          match: ["dot-github", "hooks"]
 
+  # Absorbed into zer0-CMS as apps/parodynews; the repository no longer exists.
   - name: barodybroject
     repo: bamr87/barodybroject
     url: https://github.com/bamr87/barodybroject
+    status: archived
     kind: app
     description: >-
       Full-stack application platform with infrastructure, testing, and
@@ -161,7 +225,7 @@ projects:
       max_depth: 7
       groups:
         - title: Repository & tooling
-          match: [".devcontainer", ".github", "infra", "scripts", "test"]
+          match: ["infra", "scripts", "test"]
 
   - name: bashcrawl
     repo: bamr87/bashcrawl
@@ -174,10 +238,9 @@ projects:
     nav:
       title: Bash Crawl
       order: 40
-      exclude: ["logs/**"]
       groups:
         - title: Repository & tooling
-          match: [".archives", ".github", "src"]
+          match: ["src"]
 
   - name: zer0-mistakes
     repo: bamr87/zer0-mistakes
@@ -192,12 +255,6 @@ projects:
       groups:
         - title: Repository & tooling
           match:
-            - ".claude"
-            - ".cursor"
-            - ".devcontainer"
-            - ".github"
-            - ".issues"
-            - ".obsidian"
             - "docker"
             - "scripts"
             - "test"
@@ -213,21 +270,12 @@ projects:
     nav:
       title: IT Journey
       order: 10
-      exclude: ["link-check-results/**"]
       groups:
         - title: Quests
-          match: [".quests"]
+          match: ["dot-quests"]
         - title: Repository & tooling
           match:
-            - ".claude"
-            - ".cms"
-            - ".crush"
-            - ".cursor"
-            - ".devcontainer"
-            - ".frontend"
-            - ".frontmatter"
-            - ".github"
-            - ".issues"
+            - "dot-frontend"
             - "TODO"
             - "redirects"
             - "scripts"
@@ -246,3 +294,191 @@ projects:
     nav:
       title: OverTheWire
       order: 70
+
+  - name: bamr87
+    collect:
+      exclude: ["templates/**"]
+    repo: bamr87/bamr87
+    url: https://github.com/bamr87/bamr87
+    kind: hub
+    description: "Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards."
+    nav:
+      title: Fleet Hub
+      tab: Fleet
+      order: 100
+
+  - name: bamr87.github.io
+    # A personal blog's posts are not documentation.
+    collect:
+      exclude: ["pages/_posts/**"]
+    repo: bamr87/bamr87.github.io
+    url: https://github.com/bamr87/bamr87.github.io
+    kind: site
+    description: "Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages."
+    nav:
+      title: Personal Site
+      tab: Fleet
+      order: 101
+
+  - name: bashos
+    repo: bamr87/bashos
+    url: https://github.com/bamr87/bashos
+    kind: tooling
+    description: "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine."
+    nav:
+      title: BashOS
+      tab: Fleet
+      order: 102
+
+  - name: cv-pro
+    repo: bamr87/cv-pro
+    url: https://github.com/bamr87/cv-pro
+    kind: app
+    description: "CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder)."
+    nav:
+      title: CV Pro
+      tab: Fleet
+      order: 103
+
+  - name: djangoerp
+    repo: bamr87/djangoerp
+    url: https://github.com/bamr87/djangoerp
+    kind: app
+    description: "Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning."
+    nav:
+      title: Django ERP
+      tab: Fleet
+      order: 104
+
+  - name: fredgar-ai
+    repo: bamr87/fredgar-ai
+    url: https://github.com/bamr87/fredgar-ai
+    kind: app
+    description: "Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries."
+    nav:
+      title: Fredgar AI
+      tab: Fleet
+      order: 105
+
+  - name: githubai
+    repo: bamr87/githubai
+    url: https://github.com/bamr87/githubai
+    kind: tooling
+    description: "Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases."
+    nav:
+      title: GitHub AI
+      tab: Fleet
+      order: 106
+
+  - name: gitorio
+    repo: bamr87/gitorio
+    url: https://github.com/bamr87/gitorio
+    kind: app
+    description: "Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code."
+    nav:
+      title: Gitorio
+      tab: Fleet
+      order: 107
+
+  - name: godotgo
+    repo: bamr87/godotgo
+    url: https://github.com/bamr87/godotgo
+    kind: game
+    description: "Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same."
+    nav:
+      title: GodotGo
+      tab: Fleet
+      order: 108
+
+  - name: law-ai
+    repo: bamr87/law-ai
+    url: https://github.com/bamr87/law-ai
+    kind: app
+    description: "Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama."
+    nav:
+      title: Law AI
+      tab: Fleet
+      order: 109
+
+  - name: lifehacker.dev
+    # A personal blog's posts are not documentation.
+    collect:
+      exclude: ["pages/_posts/**"]
+    repo: bamr87/lifehacker.dev
+    url: https://github.com/bamr87/lifehacker.dev
+    kind: site
+    description: "Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code."
+    nav:
+      title: Lifehacker
+      tab: Fleet
+      order: 110
+
+  - name: ocrmd
+    repo: bamr87/ocrmd
+    url: https://github.com/bamr87/ocrmd
+    kind: tooling
+    description: "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search."
+    nav:
+      title: OCRmd
+      tab: Fleet
+      order: 111
+
+  - name: outbox
+    repo: bamr87/outbox
+    url: https://github.com/bamr87/outbox
+    kind: tooling
+    description: "Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer."
+    nav:
+      title: Outbox
+      tab: Fleet
+      order: 112
+
+  - name: rewind-arcade
+    repo: bamr87/rewind-arcade
+    url: https://github.com/bamr87/rewind-arcade
+    kind: game
+    description: "Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog."
+    nav:
+      title: Rewind Arcade
+      tab: Fleet
+      order: 113
+
+  - name: SCHEMA
+    repo: bamr87/SCHEMA
+    url: https://github.com/bamr87/SCHEMA
+    kind: tooling
+    description: "Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it."
+    nav:
+      title: SCHEMA Protocol
+      tab: Fleet
+      order: 114
+
+  - name: vs-sonic-pi
+    repo: bamr87/vs-sonic-pi
+    url: https://github.com/bamr87/vs-sonic-pi
+    kind: tooling
+    description: "VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control."
+    nav:
+      title: VS Sonic Pi
+      tab: Fleet
+      order: 115
+
+  - name: zer0-CMS
+    repo: bamr87/zer0-CMS
+    url: https://github.com/bamr87/zer0-CMS
+    kind: app
+    description: "Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites."
+    nav:
+      title: Zer0 CMS
+      tab: Fleet
+      order: 116
+
+  - name: zpl-viewer
+    repo: bamr87/zpl-viewer
+    url: https://github.com/bamr87/zpl-viewer
+    kind: tooling
+    description: "Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels."
+    nav:
+      title: ZPL Viewer
+      tab: Fleet
+      order: 117

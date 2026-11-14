@@ -77,7 +77,9 @@ rewards:
   - '[Feature or capability unlocked]'
 skill_focus:
 - '[skill-category]'
-source_file: main-quest-template.md
+source_file: pages/_quests/templates/main-quest-template.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/templates/main-quest-template.md
 sub_title: 'Level XXXX (XX) Quest: Main Quest - [Technology]'
 tags:
 - XXXX
@@ -86,7 +88,7 @@ tags:
 - skill-focus
 - hands-on
 - gamified-learning
-title: macOS-specific commands and setup
+title: '[Quest Title]: [Descriptive Subtitle]'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -506,9 +508,9 @@ Before marking this quest as complete, ensure you've:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level {% raw %}{{fm.level}}{% endraw %} - ...]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Prerequisite Quest Title]] **Unlocks:** [[Follow-up Quest Title]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level {% raw %}{{fm.level}}{% endraw %} - ...]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Prerequisite Quest Title]] **Unlocks:** [[Follow-up Quest Title]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 
 > Run `python3 scripts/quest/add-obsidian-wiki-references.py` to regenerate wiki links from `quest_dependencies` after editing frontmatter.
 

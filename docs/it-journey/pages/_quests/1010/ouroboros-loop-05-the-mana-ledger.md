@@ -59,7 +59,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: devops
-source_file: ouroboros-loop-05-the-mana-ledger.md
+source_file: pages/_quests/1010/ouroboros-loop-05-the-mana-ledger.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/ouroboros-loop-05-the-mana-ledger.md
 tags:
 - '1010'
 - python
@@ -67,7 +69,7 @@ tags:
 - monitoring
 - automation
 - gamified-learning
-title: budget.yml — the loop's mana policy (humans edit; the planner obeys)
+title: 'The Mana Ledger: Budgets, Windows, and Coverage'
 ---
 *Every spell draws mana, and every portal meters it. The realm's engine forgot this once: told to walk six curriculum slices, it planned **every** quest in each — 26 here, 26 there, 109 in one night — and three hours in, the mana ran dry. The trials began refusing mid-batch. Five of six slices died. The cure was not a bigger mana pool; it was an older discipline: **do less per turn, remember across turns, and certify only the whole.** Today your loop learns to budget, to sweep in windows, and to keep the kind of ledger that can honestly say "perfect".*
 
@@ -259,8 +261,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- ⚖️ [Chapter VI — The Fixer's Oath](/quests/1101/ouroboros-loop-06-the-fixers-oath/): the loop finally earns the right to *repair* what it witnessed break
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- ⚖️ [[it-journey/pages/_quests/1101/ouroboros-loop-06-the-fixers-oath|Chapter VI — The Fixer's Oath]]: the loop finally earns the right to *repair* what it witnessed break
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -272,4 +274,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[The Sealed Evidence]] · **Next:** [[The Fixer's Oath]] **Level home:** [[Level 1010 - Monitoring & Observability]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[The Sealed Evidence]] · **Next:** [[The Fixer's Oath]] **Level home:** [[Level 1010 - Monitoring & Observability]]

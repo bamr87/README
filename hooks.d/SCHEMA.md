@@ -17,7 +17,7 @@ coverage: listed
   and `CONTEXT_ENRICHMENT` in the environment and run from the repo root.
 - Failures are reported but non-fatal; set `CONTEXT_HOOKS_STRICT=1` to make
   a failing hook abort the build.
-- Stages: `pre_build`, `post_extract`, `post_synthesize`, `post_assemble`,
+- Stages: `pre_build`, `post_extract`, `post_brain`, `post_navigate`, `post_synthesize`, `post_assemble`,
   `post_index`, `post_build`.
 
 ## Structure

@@ -9,11 +9,13 @@ jupyter_metadata: true
 lastmod: 2026-07-01 03:24:13+00:00
 layout: notebook
 permalink: /notebooks/api-requests/
-source_file: api-requests.md
+source_file: pages/_notebooks/api-requests.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notebooks/api-requests.md
 tags:
 - jupyter
 - python
-title: Working with APIs in Python
+title: Api Requests
 ---
 ---
 title: "Working with APIs in Python" description: "Learn to fetch, process, and analyze data from web APIs using Python's requests library" date: 2025-01-27 lastmod: 2025-01-27 author: "Zer0-Mistakes Team" layout: notebook difficulty: beginner tags: [python, api, requests, json, web-scraping] categories: [Notebooks, Tutorials] toc: true
@@ -268,9 +270,9 @@ print("\n" + "=" * 60)
 
 This tutorial covered the basics of working with APIs in Python. To continue learning:
 
-1. **Analyze your data** - Check out the [Pandas Data Analysis](/notebooks/pandas-data-analysis/) tutorial
-2. **Visualize API data** - See the [Matplotlib Visualization](/notebooks/matplotlib-visualization/) tutorial
-3. **Statistical analysis** - Learn more in the [Python Statistics](/notebooks/python-statistics/) tutorial
+1. **Analyze your data** - Check out the [[zer0-mistakes/pages/_notebooks/pandas-data-analysis|Pandas Data Analysis]] tutorial
+2. **Visualize API data** - See the [[zer0-mistakes/pages/_notebooks/matplotlib-visualization|Matplotlib Visualization]] tutorial
+3. **Statistical analysis** - Learn more in the [[zer0-mistakes/pages/_notebooks/python-statistics|Python Statistics]] tutorial
 
 **Key Takeaways:**
 - Use `requests.get()` for fetching data, `requests.post()` for sending data

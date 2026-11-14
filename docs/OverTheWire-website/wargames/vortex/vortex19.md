@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 19
-source_file: vortex19.md
+source_file: wargames/vortex/vortex19.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex19.md
 title: Vortex19
 ---
 Key Generation

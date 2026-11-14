@@ -63,12 +63,14 @@ rewards:
   - Foundation for all technical quests
 skill_focus: fullstack
 slug: fundamentals
-source_file: it-fundamentals.md
+source_file: pages/_quests/0000/it-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/it-fundamentals.md
 tags:
 - fundamentals
 - it-basics
 - '0000'
-title: It Fundamentals
+title: 'IT Fundamentals: Your Digital Awakening Quest'
 validation_criteria:
   completion_requirements:
   - Complete all 9 hands-on exercises
@@ -257,7 +259,7 @@ Absolutely! Hands-on exercises are like spells and incantations – they're best
 ### 7. **Virtualization and Containers**
 
 - **Exercise**: Create a Docker container.
-  - Install Docker on your machine ([Docker Desktop](https://www.docker.com/products/docker-desktop/) is the easiest way on Windows and macOS). Confirm it works with `docker --version`. For a deeper dive later, see the [Frontend Docker quest](/quests/0100/frontend-docker/).
+  - Install Docker on your machine ([Docker Desktop](https://www.docker.com/products/docker-desktop/) is the easiest way on Windows and macOS). Confirm it works with `docker --version`. For a deeper dive later, see the [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker quest]].
   - **Run your very first container** — this pulls the image and prints a welcome message, then exits:
 
     ```bash
@@ -329,7 +331,7 @@ Absolutely! Hands-on exercises are like spells and incantations – they're best
     git clone https://github.com/bamr87/it-journey.git
     ```
 
-  - **Want to go deeper?** This is just the spark — the dedicated [Git Basics quest](/quests/0000/git-basics/) walks you through version control end-to-end.
+  - **Want to go deeper?** This is just the spark — the dedicated [[it-journey/pages/_quests/0000/git-basics|Git Basics quest]] walks you through version control end-to-end.
 
 These exercises are your first steps. As you complete each one, you'll build a strong foundation in IT. Remember, the key is to practice regularly and keep challenging yourself with more complex tasks as you grow. Happy learning! 🌟💻🔧
 
@@ -357,7 +359,7 @@ These exercises are your first steps. As you complete each one, you'll build a s
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[OS Selection]] **Sequel quests:** [[OS Selection]] **Parallel quests:** [[Begin your IT Journey]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0000/hello-noob|Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[OS Selection]] **Sequel quests:** [[OS Selection]] **Parallel quests:** [[Begin your IT Journey]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

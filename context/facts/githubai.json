@@ -1,0 +1,151 @@
+{
+  "corpus": {
+    "file_count": 48,
+    "fingerprint": "256def175a251e46",
+    "path": "docs/githubai",
+    "present": true,
+    "total_bytes": 300618
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "How it works",
+      "Standards from repo type and purpose",
+      "Auth: Claude Code OAuth by default",
+      "Org-scale: app mode",
+      "Migrating from GitHubAI v0.x",
+      "Documentation",
+      "Project structure"
+    ],
+    "readme": "README.md",
+    "summary": "Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.",
+    "title": "GitHubAI \u2014 the Claude Code SDLC framework"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "ai-seed/docs/ARCHITECTURE.md",
+    "ai-seed/docs/PATTERNS.md",
+    "ai-seed/README.md",
+    "ai-seed/CONCEPT.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/githubai.md",
+    "fingerprint": "c3f4144edf0db6e0",
+    "index": "githubai/README.md",
+    "max_depth": 4,
+    "pages": 48,
+    "present": true,
+    "sections": 10,
+    "skipped": 0,
+    "title": "GitHub AI",
+    "top_sections": [
+      {
+        "index": "githubai/docs/README.md",
+        "pages": 17,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "githubai/app/README.md",
+        "pages": 4,
+        "path": "app",
+        "title": "GitHubAI as a GitHub App",
+        "type": "section"
+      },
+      {
+        "index": "githubai/template/README.md",
+        "pages": 2,
+        "path": "template",
+        "title": "Template files installed into consumer repos",
+        "type": "section"
+      },
+      {
+        "index": "githubai/ai-seed/README.md",
+        "pages": 19,
+        "path": "ai-seed",
+        "title": "\ud83c\udf31 AI-Seed \u2014 the autonomous AI orchestration framework",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/githubai.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "githubai",
+    "registry_description": "Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.",
+    "repo": "bamr87/githubai",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/githubai"
+  },
+  "rollups": {
+    "categories": {
+      "githubai": 48
+    },
+    "code_languages": [
+      "bash",
+      "json",
+      "yaml",
+      "plaintext",
+      "text",
+      "javascript",
+      "mermaid",
+      "python"
+    ],
+    "indexed_documents": 48,
+    "top_tags": [],
+    "total_words": 40776
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": true,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 19,
+        "name": "ai-seed"
+      },
+      {
+        "doc_count": 17,
+        "name": "docs"
+      },
+      {
+        "doc_count": 4,
+        "name": "app"
+      },
+      {
+        "doc_count": 2,
+        "name": "template"
+      },
+      {
+        "doc_count": 1,
+        "name": "profiles"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

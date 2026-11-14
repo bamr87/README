@@ -12,7 +12,9 @@ permalink: /docs/features/auto-hide-nav/
 preview: /images/previews/auto-hide-navigation.png
 sidebar:
   nav: docs
-source_file: auto-hide-nav.md
+source_file: pages/_docs/features/auto-hide-nav.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/auto-hide-nav.md
 tags:
 - ui
 - navigation
@@ -20,6 +22,7 @@ tags:
 - mobile
 title: Auto-hide Navigation
 ---
+
 # Auto-hide Navigation
 
 The top navigation bar gets out of the way while you read: it slides up and hides as you scroll **down** the page, then reappears the moment you scroll **up**. This reclaims vertical space — especially valuable on small screens — without removing access to the menu.
@@ -44,5 +47,5 @@ The behaviour is a small, dependency-free controller in [`assets/js/auto-hide-na
 
 ## Related features
 
-- [Enhanced Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Enhanced Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

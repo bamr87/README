@@ -9,24 +9,42 @@ generated: true
 
 # Content map
 
-**2,277** published pages across **7** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**4,239** published pages across **24** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 959 | 98 | Repository & tooling, Data, Documentation, Home, Includes |
-| [Zer0 Mistakes](zer0-mistakes.md) | 678 | 100 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
-| [Barody Project](barodybroject.md) | 269 | 56 | Repository & tooling, Documentation, Source, 📚 The Forbidden Library |
-| [Bash Crawl](bashcrawl.md) | 94 | 17 | Repository & tooling, Courses, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
-| [Agent Skills](skills.md) | 7 | 3 | Documentation, Repository & tooling |
-| [Scripts](scripts.md) | 29 | 5 | Documentation, 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |
-| [OverTheWire](OverTheWire-website.md) | 232 | 17 | Includes, Index (wargames), Information |
+| [IT Journey](it-journey.md) | 535 | 53 | Repository & tooling, Data, Documentation, IT-Journey — Home |
+| [Zer0 Mistakes](zer0-mistakes.md) | 554 | 94 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
+| [Bash Crawl](bashcrawl.md) | 78 | 16 | Repository & tooling, Courses, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
+| [Agent Skills](skills.md) | 68 | 24 | Skills, Agents, Prompts, Documentation, Repository & tooling |
+| [Scripts](scripts.md) | 24 | 5 | Documentation, 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |
+| [OverTheWire](OverTheWire-website.md) | 232 | 17 | Includes, Information, Wargames |
+| [Fleet Hub](bamr87.md) | 223 | 36 | changelog.d/ — pending changelog entries, compose/ — the hub's half of the fleet dev stack, Data, diagrams/, Documentati |
+| [Personal Site](bamr87.github.io.md) | 94 | 19 | Documentation, Home |
+| [BashOS](bashos.md) | 38 | 8 | chui, Documentation, os — bashOS as the operating system |
+| [CV Pro](cv-pro.md) | 32 | 6 | CV Builder Pro, cv — the CV build, maintain & publish machine, Documentation |
+| [Django ERP](djangoerp.md) | 17 | 3 | Documentation |
+| [Fredgar AI](fredgar-ai.md) | 36 | 6 | Documentation |
+| [GitHub AI](githubai.md) | 48 | 10 | Documentation, GitHubAI as a GitHub App, Template files installed into consumer repos, 🌱 AI-Seed — the autonomous AI orc |
+| [Gitorio](gitorio.md) | 142 | 37 | Docs, Documentation, Examples — reference compiler output, Packages, Seeds — the bootstrap-era build plan (historical),  |
+| [GodotGo](godotgo.md) | 30 | 6 | Documentation, Games |
+| [Law AI](law-ai.md) | 285 | 71 | Documentation, Law AI — Backend, LawMode.ai, Specs — Spec-Driven Development for Law AI |
+| [Lifehacker](lifehacker.dev.md) | 136 | 12 | Documentation, MCP, Pages, Scripts |
+| [OCRmd](ocrmd.md) | 25 | 4 | Documentation |
+| [Outbox](outbox.md) | 21 | 4 | Agents, Documentation |
+| [Rewind Arcade](rewind-arcade.md) | 76 | 11 | Catalog — cartridge-index, Documentation, Emulate — retro-pi, Play — Rewind Arcade, retro-pi |
+| [SCHEMA Protocol](SCHEMA.md) | 35 | 10 | Documentation, Example, Protocol, Spec, Templates |
+| [VS Sonic Pi](vs-sonic-pi.md) | 117 | 6 | Documentation, Media |
+| [Zer0 CMS](zer0-CMS.md) | 1,181 | 177 | Apps, content/ — the platform, Documentation, media/ — the design system, Packages, Sites, Source, Tools, web/ — the Rea |
+| [ZPL Viewer](zpl-viewer.md) | 19 | 4 | Documentation |
 
 ## Not in the fleet registry
 
 Corpora published from `docs/` that no registry entry claims — they navigate under **Reference**.
 
-- **Adr** — 3 pages (`docs/adr/`)
+- **Adr** — 4 pages (`docs/adr/`)
 - **Amendments** — 3 pages (`docs/amendments/`)
+- **Brain** — 183 pages (`docs/brain/`)
 - **Results** — 1 page (`docs/results/`)
 - **Setup** — 1 page (`docs/setup/`)
 - **Wargames** — 1 page (`docs/wargames/`)

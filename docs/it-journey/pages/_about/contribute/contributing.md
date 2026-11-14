@@ -15,7 +15,9 @@ permalink: /about/contributing/
 redirect_from:
 - /docs/contributing/contributing-developer/contributing-developer/
 snippet: Transform IT education through open-source collaboration
-source_file: contributing.md
+source_file: pages/_about/contribute/contributing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/contribute/contributing.md
 tags:
 - contributing
 - community
@@ -39,7 +41,7 @@ Welcome, adventurer! 🎯 IT-Journey thrives on community collaboration. Whether
 ## 🎭 Types of Contributions
 
 ### 📝 Content Creation
-- **Propose a Quest**: Shape an idea in the [Quest Idea Forge](/quests/ideas/) — live duplicate radar and readiness scoring, then one-click submission for AI review
+- **Propose a Quest**: Shape an idea in the [[it-journey/pages/quest-ideas|Quest Idea Forge]] — live duplicate radar and readiness scoring, then one-click submission for AI review
 - **Write Quests**: Create gamified learning experiences
 - **Develop Tutorials**: Build step-by-step guides and quickstart paths
 - **Improve Docs & Notes**: Expand the reference docs and curated cheatsheets
@@ -167,7 +169,7 @@ We're proud to recognize everyone who has contributed to IT-Journey:
 
 ### Core Contributors
 
-- [Amr (bamr87)](/contributors/bamr87/) - Founder & Maintainer
+- [[it-journey/pages/_about/contribute/contributors/bamr87/README|Amr (bamr87)]] - Founder & Maintainer
 
 ### How to Add Your Profile
 
@@ -188,7 +190,7 @@ Every contributor gets a **Character Profile** — an RPG-style character sheet 
 4. Choose your **class**: Wizard, Warrior, Ranger, Rogue, Healer, Bard, or Paladin
 5. Commit + push — the GitHub Action will auto-generate your stats on the next push to `main`
 
-See the [Forge Your Character quest](/quests/0001/forge-your-character/) for a full walkthrough.
+See the [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character quest]] for a full walkthrough.
 
 **Alternative — Git Subtree Method:**
 

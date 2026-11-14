@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/git-archaeology/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/git-archaeology/README.md
 title: Git archaeology
 ---
 # Git archaeology

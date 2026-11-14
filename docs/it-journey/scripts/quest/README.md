@@ -4,9 +4,12 @@ description: The single source of truth, schema, data pipeline, and tooling for 
   quests.
 lastmod: 2026-08-29 00:00:00+00:00
 permalink: /scripts/quest/readme/
-source_file: README.md
+source_file: scripts/quest/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/quest/README.md
 title: Quest Framework & Tooling
 ---
+
 # Quest Framework & Tooling
 
 Everything about the quest taxonomy and schema is defined exactly once, in [`quest_registry.py`](quest_registry.py). Every data file, validator, template, and generator derives from it, so the framework cannot drift.
@@ -163,4 +166,4 @@ python3 test/quest-validator/quest_validator.py pages/_quests/0110/sql-sorcery.m
 - **graph integrity** — `validate-quest-network.py` (errors fail the job).
 - **non-stale data** — regenerates all derived data and fails if the committed copies differ (so a registry change must ship with regenerated data).
 
-These should be marked **required** in branch protection (see [`.github/workflows/README.md`](../../.github/workflows/README.md)).
+These should be marked **required** in branch protection (see [`.github/workflows/README.md`](../../dot-github/workflows/README.md)).

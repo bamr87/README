@@ -17,14 +17,17 @@ lastmod: 2026-07-13 00:00:00+00:00
 layout: default
 permalink: /docs/customization/author-profiles/
 preview: /images/previews/author-profiles-and-about-the-author-bylines.png
-source_file: author-profiles.md
+source_file: pages/_docs/customization/author-profiles.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/author-profiles.md
 tags:
 - authors
 - components
 - collections
 - seo
-title: Author Profiles
+title: Author Profiles and About-the-Author Bylines
 ---
+
 The theme ships a single, layered author system so every collection — posts, docs, notes, notebooks, quickstart, about, and any you add — presents authors consistently: a linked byline with an avatar, an "About the Author" bio card, and an **interactive** per-author profile page that aggregates everything they've written, with filter / search / sort controls.
 
 > **Want to contribute?** The [Guest author page]({{ '/authors/guest/' | relative_url }})

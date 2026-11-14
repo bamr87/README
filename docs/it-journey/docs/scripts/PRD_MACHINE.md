@@ -1,5 +1,7 @@
 ---
-source_file: PRD_MACHINE.md
+source_file: docs/scripts/PRD_MACHINE.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/scripts/PRD_MACHINE.md
 title: PRD MACHINE Documentation
 ---
 # PRD MACHINE Documentation

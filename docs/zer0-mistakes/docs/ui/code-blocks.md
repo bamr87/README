@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:56+00:00
 description: Syntax highlighting, language headers, line numbers, and copy-to-clipboard
   for code blocks in the Zer0-Mistakes theme, including notebook code cells.
 lastmod: 2026-05-31 20:54:56+00:00
-source_file: code-blocks.md
+source_file: docs/ui/code-blocks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/code-blocks.md
 tags:
 - ui
 - styling
 - theme
 title: Code blocks
 ---
+
 # Code blocks
 
 Syntax highlighting, language headers, line numbers, and copy-to-clipboard for zer0-mistakes.
@@ -260,7 +263,7 @@ document.querySelectorAll('.copy').forEach(btn => {
 
 Code block samples render on the theme style guide:
 
-**[/about/settings/theme-preview/#preview-code](/about/settings/theme-preview/)**
+**[[zer0-mistakes/pages/_about/settings/theme-preview|/about/settings/theme-preview/#preview-code]]**
 
 Switch skins with the controls bar to verify contrast in all palettes.
 

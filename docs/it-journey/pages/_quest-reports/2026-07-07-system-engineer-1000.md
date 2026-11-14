@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29190829265
 slice: system-engineer/1000
-source_file: 2026-07-07-system-engineer-1000.md
+source_file: pages/_quest-reports/2026-07-07-system-engineer-1000.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-07-system-engineer-1000.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-07-system-engineer-1000.md
 tags:
 - system-engineer
 - level-1000
@@ -25,13 +27,14 @@ tags:
 - cloud-computing
 theme: Cloud Computing
 tier: Warrior
-title: 2026 07 07 System Engineer 1000
+title: System Engineer · L1000 · 2026-07-07
 verdict: fail
 walk_date: '2026-07-07'
 ---
+
 > **Slice** `system-engineer/1000` · **Level** 1000 (Cloud Computing) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-07
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-system-engineer-1000.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-system-engineer-1000.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-system-engineer-1000.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-system-engineer-1000.md)
 
 ---
 

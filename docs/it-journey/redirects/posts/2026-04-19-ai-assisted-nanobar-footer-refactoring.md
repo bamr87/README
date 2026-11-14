@@ -2,6 +2,8 @@
 permalink: /posts/2026/04/19/ai-assisted-nanobar-footer-refactoring/
 redirect_to: https://lifehacker.dev/posts/2026/04/19/ai-assisted-nanobar-footer-refactoring/
 sitemap: false
-source_file: 2026-04-19-ai-assisted-nanobar-footer-refactoring.md
-title: 2026 04 19 Ai Assisted Nanobar Footer Refactoring
+source_file: redirects/posts/2026-04-19-ai-assisted-nanobar-footer-refactoring.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/redirects/posts/2026-04-19-ai-assisted-nanobar-footer-refactoring.md
+title: 'AI-Assisted UI/UX Refactoring: Nanobar Modularization and Footer Fix'
 ---

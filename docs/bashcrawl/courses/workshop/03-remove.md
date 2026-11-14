@@ -17,10 +17,12 @@ objectives:
     - args_contains: inbox
     - not:
         output_includes: junk
-source_file: 03-remove.md
+source_file: courses/workshop/03-remove.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/workshop/03-remove.md
 teaches:
 - rm
-title: 03 Remove
+title: Removing things
 xp: 20
 ---
 `rm FILE` deletes a file. **There is no trash can.** A shell `rm` is final.

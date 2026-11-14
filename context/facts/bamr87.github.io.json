@@ -1,0 +1,146 @@
+{
+  "corpus": {
+    "file_count": 94,
+    "fingerprint": "3a0fffcf80fb8d5f",
+    "path": "docs/bamr87.github.io",
+    "present": true,
+    "total_bytes": 1036688
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "About Me",
+      "Quick Dashboard \u2014 GitHub Repositories",
+      "CV",
+      "Education",
+      "Professional Experience",
+      "Projects - Enterprise Systems",
+      "Technical / Skills",
+      "Strengths",
+      "Favorite Dish",
+      "Working with this repo"
+    ],
+    "readme": "README.md",
+    "summary": "Featured: the Quest Log, my repositories written up as levels and side quests, one per deep dive. This site is one of the side quests: read its entry.",
+    "title": "Profile & R\u00e9sum\u00e9"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "pages/_notes/html_md_doc_scrapper.md",
+    "pages/_notebooks/html_md_doc_scrapper.md",
+    "pages/_hobbies/music.md",
+    "pages/_about/about.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/bamr87.github.io.md",
+    "fingerprint": "9dbe4519b0f1f8cd",
+    "index": "bamr87.github.io/README.md",
+    "max_depth": 5,
+    "pages": 94,
+    "present": true,
+    "sections": 19,
+    "skipped": 0,
+    "title": "Personal Site",
+    "top_sections": [
+      {
+        "index": "bamr87.github.io/docs/README.md",
+        "pages": 9,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "bamr87.github.io/pages/home.md",
+        "pages": 78,
+        "path": "pages",
+        "title": "Home",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/bamr87.github.io.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "site",
+    "name": "bamr87.github.io",
+    "registry_description": "Amr Abdel-Motaleb's personal profile, r\u00e9sum\u00e9 and project portfolio site, built with Jekyll on GitHub Pages.",
+    "repo": "bamr87/bamr87.github.io",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/bamr87.github.io"
+  },
+  "rollups": {
+    "categories": {
+      "bamr87.github.io": 94
+    },
+    "code_languages": [
+      "plaintext",
+      "powershell",
+      "html",
+      "python",
+      "raw",
+      "bash",
+      "shell",
+      "yaml"
+    ],
+    "indexed_documents": 94,
+    "top_tags": [
+      "jekyll",
+      "notes",
+      "markdown",
+      "mermaid",
+      "python",
+      "web scraping",
+      "html",
+      "note",
+      "powershell",
+      "bash",
+      "linux",
+      "script",
+      "shell",
+      "about",
+      "principles"
+    ],
+    "total_words": 142723
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 78,
+        "name": "pages"
+      },
+      {
+        "doc_count": 9,
+        "name": "docs"
+      },
+      {
+        "doc_count": 1,
+        "name": "_data"
+      },
+      {
+        "doc_count": 1,
+        "name": "scripts"
+      }
+    ]
+  }
+}

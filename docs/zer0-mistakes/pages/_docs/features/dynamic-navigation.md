@@ -13,7 +13,9 @@ permalink: /docs/features/dynamic-navigation/
 preview: /images/previews/dynamic-collection-based-navigation.png
 sidebar:
   nav: docs
-source_file: dynamic-navigation.md
+source_file: pages/_docs/features/dynamic-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/dynamic-navigation.md
 tags:
 - navigation
 - ui
@@ -21,6 +23,7 @@ tags:
 - jekyll
 title: Dynamic Collection-Based Navigation
 ---
+
 # Dynamic Collection-Based Navigation
 
 zer0-mistakes ships a **zero-config navigation fallback**: when no custom `_data/navigation.yml` entry exists for the navbar, the theme auto-discovers your Jekyll collections and generates a working nav menu on first launch.
@@ -88,14 +91,14 @@ Collections prefixed with `_` in the site config can be hidden by setting `outpu
 
 ## Sidebar Navigation
 
-The sidebar uses a separate `_data/navigation.yml` key (`docs`, `sidebar`, etc.) and is unaffected by the dynamic fallback. See the [Sidebar Navigation](/docs/features/sidebar-navigation/) guide for details.
+The sidebar uses a separate `_data/navigation.yml` key (`docs`, `sidebar`, etc.) and is unaffected by the dynamic fallback. See the [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]] guide for details.
 
 ## Related
 
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [ES6 Modular Navigation](/docs/features/navigation-architecture/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/navigation-architecture|ES6 Modular Navigation]]
 
 ## See also
 
-- [[Features]]
-- [[Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/about/settings/navigation|Navigation]]

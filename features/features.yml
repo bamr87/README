@@ -106,3 +106,63 @@ features:
     scenarios:
       - verify/scenarios/smoke-home.yml
     evidence: []
+  - id: README-010
+    title: "Collect"
+    description: "One stage replaces the crawl scripts: select official documentation with the registry's collect rules, normalize, weave links, write docs/, and remove what upstream dropped."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "scripts/context_engine/collect.py"
+    docs: "scripts/README.md"
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
+      - tests/integration/test_integration.py
+  - id: README-011
+    title: "Obsidian vault"
+    description: "docs/ opens as an Obsidian vault with one link resolver shared by the crawl, the site and MCP, plus graph colour groups, a canvas and a Bases view."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "scripts/context_engine/vault.py"
+    docs: "README.md"
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
+  - id: README-012
+    title: "Second brain notes"
+    description: "Each build regenerates concept and project notes, a hot cache, a change log and vault health in docs/brain/, and publishes hand-written notes from notes/."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: cli
+    link: "scripts/context_engine/brain.py"
+    docs: "README.md"
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
+  - id: README-013
+    title: "Obsidian views on the site"
+    description: "The published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: ui
+    link: /brain/
+    docs: MKDOCS.md
+    tags: [site, mkdocs, obsidian, graph]
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
+    scenarios:
+      - verify/scenarios/second-brain.yml
+    evidence: []
+  - id: README-014
+    title: "Vault reads for agents"
+    description: "CLI commands and read-only MCP tools for a note, its neighbours, the hot cache and vault health, plus a Claude Code skill and a save command for durable notes."
+    implemented: true
+    status: shipped
+    prd: ["§4"]
+    surface: api
+    link: "mcp/server.py"
+    docs: "mcp/README.md"
+    tests:
+      - tests/unit/test_cases/test_second_brain.py

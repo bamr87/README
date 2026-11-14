@@ -86,7 +86,9 @@ rewards:
   - Advanced automation quest access
   - CI/CD workflow templates
 skill_focus: fullstack
-source_file: prd-codex-mastery.md
+source_file: pages/_quests/0011/prd-codex-mastery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/prd-codex-mastery.md
 sub_title: 'Level 0011 (3) Quest: Main Quest - Documentation Automation'
 tags:
 - '0011'
@@ -98,7 +100,7 @@ tags:
 - prd
 - cli-tools
 - ci-cd
-title: Verify Docker is installed and running
+title: 'The PRD Codex: Master Product Reality Distillation'
 validation_criteria:
   completion_requirements:
   - Generated PRD.md with all 10 sections
@@ -871,7 +873,7 @@ Before marking this quest complete:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0011 - Development Tools & AI Integration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Related quests:** [[SEO Optimization: Boost Search Engine Visibility for Jekyll Sites]] · [[Custom Domains for GitHub Pages: Professional Website Setup Guide]] · [[Google Analytics for Jekyll: Complete User Tracking Integration Guide]] · [[Jekyll Plugins: Extend Your Static Site Safely]] · [[Advanced Git Workflows: Master Rebase, Cherry-pick, and Stash Commands]] · [[Forging the Prompt Crystal: VS Code Copilot Mastery Quest]] · [[The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0011/README|Level 0011 - Development Tools & AI Integration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Related quests:** [[SEO Optimization: Boost Search Engine Visibility for Jekyll Sites]] · [[Custom Domains for GitHub Pages: Professional Website Setup Guide]] · [[Google Analytics for Jekyll: Complete User Tracking Integration Guide]] · [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins: Extend Your Static Site Safely]] · [[Advanced Git Workflows: Master Rebase, Cherry-pick, and Stash Commands]] · [[it-journey/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot|Forging the Prompt Crystal: VS Code Copilot Mastery Quest]] · [[The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

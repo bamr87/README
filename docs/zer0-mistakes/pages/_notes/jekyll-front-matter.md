@@ -11,14 +11,17 @@ difficulty: beginner
 lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 permalink: /notes/jekyll-front-matter/
-source_file: jekyll-front-matter.md
+source_file: pages/_notes/jekyll-front-matter.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notes/jekyll-front-matter.md
 tags:
 - jekyll
 - yaml
 - front-matter
 - documentation
-title: Article-specific
+title: Jekyll Front Matter Reference
 ---
+
 ## What is Front Matter?
 
 Front matter is YAML metadata at the beginning of any Jekyll file (Markdown or HTML). It must be the first thing in the file and must be enclosed between triple-dashed lines.
@@ -422,4 +425,4 @@ defaults:
 
 - [Jekyll Front Matter Docs](https://jekyllrb.com/docs/front-matter/)
 - [YAML Syntax Guide](https://yaml.org/spec/1.2.2/)
-- [Zer0-Mistakes Theme Documentation](/docs/)
+- [[zer0-mistakes/pages/_docs/index|Zer0-Mistakes Theme Documentation]]

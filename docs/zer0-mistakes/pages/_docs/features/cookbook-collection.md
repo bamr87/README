@@ -19,20 +19,23 @@ permalink: /docs/features/cookbook-collection/
 preview: /images/zer0-mistakes-wizard.png
 sidebar:
   nav: docs
-source_file: cookbook-collection.md
+source_file: pages/_docs/features/cookbook-collection.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/cookbook-collection.md
 tags:
 - recipes
 - cookbook
 - collections
 - layouts
 - unit-conversion
-title: Cookbook Collection
+title: Cookbook Collection — Recipes That Scale Themselves
 ---
+
 # Cookbook Collection
 
 The `recipes` collection turns front matter into a working recipe page. You describe the recipe as data — ingredients with amounts and units, steps, timings, a yield — and the theme renders the fact bar, the ingredient checklist, the method, a baker's-percentage table, and a control bar that rescales every quantity and switches the whole page between the units it was written in, metric, and US customary.
 
-The theme ships a demo cookbook — [The Zer0 Kitchen](/recipes/) — that exercises everything on this page.
+The theme ships a demo cookbook — [[zer0-mistakes/pages/_recipes/index|The Zer0 Kitchen]] — that exercises everything on this page.
 
 ## What the reader gets
 

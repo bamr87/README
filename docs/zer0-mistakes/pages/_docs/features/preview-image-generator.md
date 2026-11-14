@@ -26,15 +26,18 @@ prerequisites:
 preview: /images/previews/ai-preview-image-generator.png
 sidebar:
   nav: docs
-source_file: preview-image-generator.md
+source_file: pages/_docs/features/preview-image-generator.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/preview-image-generator.md
 tags:
 - ai
 - preview
 - images
 - claude
 - dall-e
-title: AI Preview Image Generator
+title: AI Preview Image Generator for Jekyll Posts
 ---
+
 # AI Preview Image Generator
 
 Automatically generate preview images for your posts and pages using AI image generation services.
@@ -344,7 +347,7 @@ export OPENAI_API_KEY="sk-..."
 
 ## Related
 
-- [SEO Meta Tags](/docs/seo/meta-tags/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|SEO Meta Tags]]
 - [OpenAI API Documentation](https://platform.openai.com/docs/guides/images)
 
 ## Technical Reference
@@ -355,5 +358,5 @@ For implementation details (multi-provider architecture, xAI Grok integration, g
 
 ## See also
 
-- [[Features]]
+- [[zer0-mistakes/features/README|Features]]
 - [[SEO]]

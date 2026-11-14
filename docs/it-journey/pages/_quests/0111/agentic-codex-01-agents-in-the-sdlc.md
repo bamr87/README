@@ -63,7 +63,9 @@ rewards:
   unlocks_features:
   - Continue The Agentic Codex into Domain 2 — Tool Use & Environment
 skill_focus: ai-ml
-source_file: agentic-codex-01-agents-in-the-sdlc.md
+source_file: pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc.md
 tags:
 - '0111'
 - github-copilot
@@ -73,7 +75,7 @@ tags:
 - sdlc
 - ci-cd
 - gamified-learning
-title: A bounded-agent task contract (paste the body into a Copilot-assigned issue)
+title: 'Initiation Rites: Agents in the SDLC'
 validation_criteria:
   completion_requirements:
   - Can name the four properties of a bounded agent and spot the "does too much" anti-pattern
@@ -85,6 +87,7 @@ validation_criteria:
   - Defines inputs, outputs, and success criteria for an agent task
   - Emits a structured JSONL trace and a workflow step summary from an agent run
 ---
+
 *The realm has summoned its first familiars — tireless constructs that read your code, draft your changes, and stand ready at the gate. But a familiar without a leash is a liability. Loose one with the keys to the whole castle and no record of where it walked, and the first night it errs you will have no torch to follow its steps. The Initiation Rites teach the oldest discipline of the agentic order: give every familiar a **bound** — a door it enters, rooms it may touch, a task it knows is finished, and a trail of footprints anyone can read.*
 
 *Behind the spellcraft is a core GH-600 Domain 1 idea ([study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600) weight **15–20%** — Learn publishes ranges, not a fixed percent): an agent is most useful and least dangerous when it has a **bounded role** in the software development lifecycle. You will design where Copilot's coding agent enters the SDLC, separate the act of **planning** from the act of **doing** with a human-approved gate, and make every agent run leave an **observable trace**. These are not three tricks — they are the contract that lets autonomy scale without becoming a runaway machine.*
@@ -120,7 +123,7 @@ This is the first chapter of **The Agentic Codex**, so there is no prior chapter
 - **A repository you own with Actions enabled** — Settings → Actions → General → allow workflows to run.
 - **Comfort with Git branches, commits, and pull requests** — agents act *through* PRs, so this is the medium you will gate.
 - **Basic GitHub Actions familiarity** — you can read a workflow YAML and know where `.github/workflows/` lives.
-- **Recommended:** start at the campaign hub, [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/), so the six-domain map is in view before you begin Domain 1.
+- **Recommended:** start at the campaign hub, [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]], so the six-domain map is in view before you begin Domain 1.
 
 ## 🧙‍♂️ Rite One: The Bound — Four Walls Around a Familiar
 
@@ -434,9 +437,9 @@ You reconstructed the run from its trace and step summaries alone — Rite Three
 
 Domain 1 splits into three playable quests — one per sub-skill. Clear all three to complete the Initiation Rites:
 
-- 🎯 **[Initiation Rites: Embedding Agents in the SDLC](/quests/0111/agentic-sdlc-integration/)** — sub-skill 1.1: integrate agents into the SDLC, identify and mitigate anti-patterns, and define inputs, outputs, and success criteria for an agent task.
-- 🎯 **[The Three Sigils: Plan, Reason, Act](/quests/0111/agentic-plan-vs-action-boundaries/)** — sub-skill 1.2: separate planning from execution, output a structured plan, validate it, and block action until it is checked and approved.
-- 🎯 **[The All-Seeing Eye: Observability for AI Agents](/quests/1000/agentic-observability-and-control/)** — sub-skill 1.3: configure autonomy and guardrails, produce inspectable artifacts in standard tooling, and add human intervention without slowing delivery. *(Housed at level `1000` rather than `0111`: observability is where Domain 1 hands off to Domain 2's tooling, so this quest lives beside the arsenal it instruments.)*
+- 🎯 **[[it-journey/pages/_quests/0111/agentic-sdlc-integration|Initiation Rites: Embedding Agents in the SDLC]]** — sub-skill 1.1: integrate agents into the SDLC, identify and mitigate anti-patterns, and define inputs, outputs, and success criteria for an agent task.
+- 🎯 **[[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]]** — sub-skill 1.2: separate planning from execution, output a structured plan, validate it, and block action until it is checked and approved.
+- 🎯 **[[it-journey/pages/_quests/1000/agentic-observability-and-control|The All-Seeing Eye: Observability for AI Agents]]** — sub-skill 1.3: configure autonomy and guardrails, produce inspectable artifacts in standard tooling, and add human intervention without slowing delivery. *(Housed at level `1000` rather than `0111`: observability is where Domain 1 hands off to Domain 2's tooling, so this quest lives beside the arsenal it instruments.)*
 
 ## 🎮 Mastery Challenge
 
@@ -476,8 +479,8 @@ graph LR
 
 The familiars now know their bounds, wait at the gate, and leave footprints. Next, you arm them: the tools they may wield, the MCP servers they may reach, and the environments they may enter.
 
-- ➡️ **Next chapter:** [Chapter 2 — Tool Use & Environment](/quests/1000/agentic-codex-02-tool-use-and-environment/)
-- 👑 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment|Chapter 2 — Tool Use & Environment]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
 - 📜 **Go deeper on Domain 1:** play the three domain quests above in order.
 
 ## 📚 Resource Codex
@@ -488,10 +491,10 @@ The familiars now know their bounds, wait at the gate, and leave footprints. Nex
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — the tool-and-context standard you arm agents with in Chapter 2
 - [GitHub Actions: environments & required reviewers](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment) — the human-approval gate behind plan-then-act
 - [Workflow commands: job summaries](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary) — `$GITHUB_STEP_SUMMARY` for inspectable agent traces
-- 🏰 **In the wild (this repo):** [`agent-plan-then-act.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-plan-then-act.yml) is this chapter's pattern running for real — plan job, `agent-approval` gate, observable trace. Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- 🏰 **In the wild (this repo):** [`agent-plan-then-act.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-plan-then-act.yml) is this chapter's pattern running for real — plan job, `agent-approval` gate, observable trace. Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** none — first chapter of the Codex **Next:** [[Tool Use & Environment]] **Domain 1 quests:** [[Initiation Rites: Embedding Agents in the SDLC]] · [[The Three Sigils: Plan, Reason, Act]] · [[The All-Seeing Eye: Observability for AI Agents]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** none — first chapter of the Codex **Next:** [[Tool Use & Environment]] **Domain 1 quests:** [[it-journey/pages/_quests/0111/agentic-sdlc-integration|Initiation Rites: Embedding Agents in the SDLC]] · [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]] · [[it-journey/pages/_quests/1000/agentic-observability-and-control|The All-Seeing Eye: Observability for AI Agents]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

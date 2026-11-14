@@ -63,7 +63,9 @@ rewards:
   unlocks_features:
   - Domain 6 — Guardrails & Accountability
 skill_focus: ai-ml
-source_file: agentic-codex-05-multi-agent-coordination.md
+source_file: pages/_quests/1011/agentic-codex-05-multi-agent-coordination.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/agentic-codex-05-multi-agent-coordination.md
 tags:
 - '1011'
 - gh-600
@@ -72,7 +74,7 @@ tags:
 - orchestration
 - github-actions
 - gamified-learning
-title: .github/workflows/council-fanout.yml
+title: 'The Council of Many: Multi-Agent Coordination'
 validation_criteria:
   completion_requirements:
   - Build a fan-out orchestrator that runs two sub-agents in parallel and collects
@@ -84,6 +86,7 @@ validation_criteria:
     fits
   - Can read a multi-agent trace and locate which agent introduced a fault
 ---
+
 *The trials of the single familiar are behind you. You taught one agent to plan, to act, to be measured and reforged. But the great works of the realm are never raised by one pair of hands — they are raised by a **council**. Summon many familiars at once and the realm's work multiplies; summon them carelessly and they trip over one another in the dark, each undoing the next's labor, no scribe able to say which one broke the bridge. This chapter is the law of the council: how to convene many agents, keep a record every one of them signs, and know exactly which to blame when a wall falls.*
 
 *The real-world skill beneath the spellcraft is multi-agent system design — and on GitHub it is, almost entirely, a **GitHub Actions design problem**. The primitives are not exotic: workflow triggers, job dependencies, job outputs, artifacts, and environments. Master orchestration patterns, distributed tracing, failure recovery, and lifecycle management and you have the whole of GH-600 Domain 5 — 17% of the exam, and the moment the certification stops asking "can you build one agent?" and starts asking "can you run a system of them that works reliably together?"*
@@ -113,7 +116,7 @@ Every guild that scaled past a single craftsperson faced the same reckoning: coo
 
 Convening a council assumes you can already command a single familiar. Gather these before you draw the larger circle:
 
-- **A tuned single agent (Domain 4)** — finish [Chapter IV — Evaluation & Tuning](/quests/1010/agentic-codex-04-evaluation-and-tuning/) so you know how to measure one agent before you measure many.
+- **A tuned single agent (Domain 4)** — finish [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning|Chapter IV — Evaluation & Tuning]] so you know how to measure one agent before you measure many.
 - **Fluency in GitHub Actions YAML** — you will write `jobs`, `needs`, `outputs`, and `if` conditions by hand. Know where `.github/workflows/` lives and how a workflow is triggered.
 - **A GitHub repository with Actions enabled** — the arena where your council runs. Settings → Actions → General → allow workflows to run.
 - **GitHub Copilot coding-agent access** — the agent that actually does the sub-tasks. You orchestrate it; Actions schedules it.
@@ -387,10 +390,10 @@ Everything above maps one-to-one onto the `council-fanout.yml` workflow from Cha
 
 Domain 5 splits into four trials, each a standalone quest that drills one sub-skill to mastery. Play them in order to convert this chapter's overview into hands-on command:
 
-- **[The Council of Many: Multi-Agent Orchestration Patterns](/quests/1011/agentic-multi-agent-orchestration-patterns/)** — build the full fan-out and chain workflows by hand, configure parallel isolation, and resolve agent conflicts at the join (Sub-skill 5.1).
-- **[The Scribe's Codex: Observability in Multi-Agent Systems](/quests/1011/agentic-multi-agent-observability/)** — implement the correlation-ID trace writer and produce the review-and-audit artifact that documents every handoff (Sub-skill 5.2).
-- **[When Familiars Fall: Multi-Agent Failure Recovery](/quests/1011/agentic-multi-agent-failure-recovery/)** — build the recovery coordinator that detects stalled versus conflicting agents and routes abort/continue/retry/escalate (Sub-skill 5.3).
-- **[The Agent Pantheon: Multi-Agent Lifecycle Management](/quests/1100/agentic-multi-agent-lifecycle-management/)** — author the `agents.yml` registry schema and the scheduled health-monitoring workflow that provisions, watches, and retires agents (Sub-skill 5.4).
+- **[[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]]** — build the full fan-out and chain workflows by hand, configure parallel isolation, and resolve agent conflicts at the join (Sub-skill 5.1).
+- **[[it-journey/pages/_quests/1011/agentic-multi-agent-observability|The Scribe's Codex: Observability in Multi-Agent Systems]]** — implement the correlation-ID trace writer and produce the review-and-audit artifact that documents every handoff (Sub-skill 5.2).
+- **[[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]]** — build the recovery coordinator that detects stalled versus conflicting agents and routes abort/continue/retry/escalate (Sub-skill 5.3).
+- **[[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management|The Agent Pantheon: Multi-Agent Lifecycle Management]]** — author the `agents.yml` registry schema and the scheduled health-monitoring workflow that provisions, watches, and retires agents (Sub-skill 5.4).
 
 ## 🎮 Mastery Challenge
 
@@ -429,9 +432,9 @@ graph LR
 
 The council convenes, traces its own work, and survives a fallen familiar. But a council that can act in parallel can also do harm in parallel — many hands moving at once need many brakes. The next chapter teaches the law that binds them: autonomy levels, least-privilege scope, and the human-in-the-loop gate that keeps a fast council from becoming a runaway one.
 
-- ➡️ **Next chapter:** [Chapter VI — Guardrails & Accountability](/quests/1100/agentic-codex-06-guardrails-and-accountability/)
-- ⬅️ **Previous chapter:** [Chapter IV — Evaluation & Tuning](/quests/1010/agentic-codex-04-evaluation-and-tuning/)
-- 🏰 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability|Chapter VI — Guardrails & Accountability]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning|Chapter IV — Evaluation & Tuning]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
 
 ## 📚 Resource Codex
 
@@ -442,10 +445,10 @@ The council convenes, traces its own work, and survives a fallen familiar. But a
 - [Storing and sharing workflow data with artifacts](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts) — where the correlation-ID traces live
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — the tool-integration standard agents share across a council
 - [GitHub Models](https://docs.github.com/en/github-models) — the Models API for reconciling agent outputs in the collector
-- 🏰 **In the wild (this repo):** [`_data/agents/registry.yml`](https://github.com/bamr87/it-journey/blob/main/_data/agents/registry.yml) is the living roster (nine agents, lanes, kill switches, review dates), [`quest-perfection.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/quest-perfection.yml) chains walk → fix per slice, and the weekly [`agent-audit.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-audit.yml) is lifecycle management running on a schedule. Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- 🏰 **In the wild (this repo):** [`_data/agents/registry.yml`](https://github.com/bamr87/it-journey/blob/main/_data/agents/registry.yml) is the living roster (nine agents, lanes, kill switches, review dates), [`quest-perfection.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/quest-perfection.yml) chains walk → fix per slice, and the weekly [`agent-audit.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-audit.yml) is lifecycle management running on a schedule. Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** [[Evaluation and Tuning: Reforging the Agent's Mind]] **Next:** [[Guardrails and Accountability: The Warden's Pact]] **Domain quests:** [[The Council of Many: Multi-Agent Orchestration Patterns]] · [[The Scribe's Codex: Observability in Multi-Agent Systems]] · [[When Familiars Fall: Multi-Agent Failure Recovery]] · [[The Agent Pantheon: Multi-Agent Lifecycle Management]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** [[Evaluation and Tuning: Reforging the Agent's Mind]] **Next:** [[Guardrails and Accountability: The Warden's Pact]] **Domain quests:** [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]] · [[The Scribe's Codex: Observability in Multi-Agent Systems]] · [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]] · [[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management|The Agent Pantheon: Multi-Agent Lifecycle Management]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

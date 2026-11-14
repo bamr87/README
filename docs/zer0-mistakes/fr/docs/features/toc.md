@@ -23,17 +23,20 @@ permalink: /fr/docs/features/toc/
 preview: /images/previews/table-of-contents.png
 sidebar:
   nav: docs
-source_file: toc.md
+source_file: fr/docs/features/toc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/toc.md
 tags:
 - toc
 - navigation
 - headings
 - documentation
-title: Table des matières
+title: Table des matières avec Scroll Spy
 translated_from_sha: 0560ebf13ef1
 translation_of: pages/_docs/features/toc.md
 translation_source_url: /docs/features/toc/
 ---
+
 # Table des matières
 
 Génération automatique d'une table des matières à partir des titres de la page, avec mise en évidence de la section active.
@@ -259,7 +262,7 @@ La table des matières apparaît dans la barre latérale droite :
 
 ### Mobile
 
-Table des matières en offcanvas (voir [Table des matières mobile](/docs/features/mobile-toc/)) :
+Table des matières en offcanvas (voir [[zer0-mistakes/pages/_docs/features/mobile-toc|Table des matières mobile]]) :
 
 ```html
 <div class="offcanvas offcanvas-end d-lg-none" id="tocSidebar">
@@ -305,12 +308,12 @@ Table des matières en offcanvas (voir [Table des matières mobile](/docs/featur
 
 ## Connexes
 
-- [Navigation de la barre latérale](/docs/features/sidebar-navigation/)
-- [Table des matières mobile](/docs/features/mobile-toc/)
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation de la barre latérale]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Table des matières mobile]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Mobile TOC Floating Action Button]]
-- [[Sidebar Navigation System]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]

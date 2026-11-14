@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 2
-source_file: semtex2.md
+source_file: wargames/semtex/semtex2.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex2.md
 title: Semtex2
 ---
 Dynamic tricks

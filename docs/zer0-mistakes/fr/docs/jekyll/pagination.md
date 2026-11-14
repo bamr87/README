@@ -14,7 +14,9 @@ permalink: /fr/docs/jekyll/pagination/
 preview: /images/previews/pagination.png
 sidebar:
   nav: docs
-source_file: pagination.md
+source_file: fr/docs/jekyll/pagination.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/jekyll/pagination.md
 tags:
 - pagination
 - jekyll
@@ -24,6 +26,7 @@ translated_from_sha: da789c476b8b
 translation_of: pages/_docs/jekyll/pagination.md
 translation_source_url: /docs/jekyll/pagination/
 ---
+
 # Pagination
 
 > Ajoutez des boutons de pagination pour naviguer entre les pages et les articles.
@@ -188,6 +191,6 @@ Ajoutez du CSS pour les boutons de pagination :
 
 ## Voir aussi
 
-- [[Jekyll]]
-- [[Liquid]]
-- [[front-matter]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

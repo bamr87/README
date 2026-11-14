@@ -10,11 +10,14 @@ layout: default
 permalink: /docs/obsidian/graph/
 preview: /images/previews/obsidian-graph-view.png
 sitemap: false
-source_file: graph.md
+source_file: pages/_docs/obsidian/graph.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/graph.md
 tags:
 - obsidian
 - graph
 - navigation
-title: Graph
+title: Obsidian Graph View
 ---
+
 {% include obsidian/full-graph.html %}

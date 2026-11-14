@@ -45,14 +45,16 @@ rewards:
   progression_points: 0
   skills_unlocked: []
 skill_focus: fullstack
-source_file: building-testing-git-init-script.md
+source_file: pages/_quests/0001/building-testing-git-init-script.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/building-testing-git-init-script.md
 sub_title: 'Level 0001 (1) Quest: Shell Script Unit & Integration Testing'
 tags:
 - shell-scripting
 - testing
 - automation
 - bash
-title: git_init.sh — interactive and headless repository initializer.
+title: Building & Testing the Git Init Shell Script
 validation_criteria:
   completion_requirements: []
   skill_demonstrations: []
@@ -283,7 +285,7 @@ Good luck! 🛠️
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

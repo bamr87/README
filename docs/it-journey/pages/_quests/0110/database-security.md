@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Backup and disaster-recovery quests in the Database Mastery line
 skill_focus: security
-source_file: database-security.md
+source_file: pages/_quests/0110/database-security.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/database-security.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Warded Vault'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - security
 - hands-on
 - gamified-learning
-title: '❌ VULNERABLE: user input is glued directly into the SQL string.'
+title: 'Database Security: Access Control and Data Encryption'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understanding of how applications connect to and query a database
 - [ ] Familiarity with at least one programming language
-- [ ] Completion of [Database Fundamentals](/quests/0110/database-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -368,17 +370,17 @@ SELECT pgp_sym_decrypt(payload, 'encryption-key') FROM secrets WHERE label = 'ap
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Backup and Recovery](/quests/0110/backup-recovery/) - Defend against data loss
+- 🎯 [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]] - Defend against data loss
 
 **Explore Side Adventures**:
-- ⚔️ [Database Migrations](/quests/0110/database-migrations/) - Change schemas safely
-- ⚔️ [Security Fundamentals](/quests/1011/security-fundamentals/) - The CIA triad and defense in depth
+- ⚔️ [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]] - Change schemas safely
+- ⚔️ [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] - The CIA triad and defense in depth
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)  
-**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)  
-**🛡️ Security Specialist**: Advance to [Security Fundamentals](/quests/1011/security-fundamentals/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]]
 
 ## 📚 Resources
 
@@ -407,7 +409,7 @@ SELECT pgp_sym_decrypt(payload, 'encryption-key') FROM secrets WHERE label = 'ap
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Backup and Recovery: Data Protection Strategies for Databases]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Backup and Recovery: Data Protection Strategies for Databases]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

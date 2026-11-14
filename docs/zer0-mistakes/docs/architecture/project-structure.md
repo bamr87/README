@@ -6,12 +6,15 @@ date: 2026-01-25 03:38:33+00:00
 description: 'A tour of the Zer0-Mistakes theme repository: directory layout, key
   files, content collections, and where layouts, includes, and scripts live.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: project-structure.md
+source_file: docs/architecture/project-structure.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/project-structure.md
 tags:
 - architecture
 - design
 title: Project Structure
 ---
+
 # Project Structure
 
 Overview of the Zer0-Mistakes theme directory layout and file organization.

@@ -1,5 +1,7 @@
 ---
-source_file: STASHME.md
+source_file: STASHME/STASHME.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/STASHME/STASHME.md
 title: 💾 StashMe - Complete Documentation
 ---
 # 💾 StashMe - Complete Documentation

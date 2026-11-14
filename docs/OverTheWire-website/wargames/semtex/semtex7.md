@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 7
-source_file: semtex7.md
+source_file: wargames/semtex/semtex7.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex7.md
 title: Semtex7
 ---
 Multi-vitamin

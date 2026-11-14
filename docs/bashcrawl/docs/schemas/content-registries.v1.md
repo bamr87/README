@@ -1,5 +1,7 @@
 ---
-source_file: content-registries.v1.md
+source_file: docs/schemas/content-registries.v1.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/schemas/content-registries.v1.md
 title: Content Registry Contract (v1)
 ---
 # Content Registry Contract (v1)

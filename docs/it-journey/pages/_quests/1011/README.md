@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/1011/
 preview: /images/previews/level-1011-feature-development.webp
-source_file: README.md
+source_file: pages/_quests/1011/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/README.md
 tags:
 - quests
 - '1011'
 - warrior
 - security
 - compliance
-title: 'Level 1011: Feature Development'
+title: Level 1011 - Feature Development
 ---
 # Level 1011: Feature Development
 
@@ -38,12 +40,12 @@ Level 1011 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [AI Feature Pipeline Architect: DevSecOps Mastery Quest](/quests/1011/ai-feature-pipeline-architect/) | 🔴 Hard | 240-360 minutes | main_quest | 🔮 Placeholder |
-| [Compliance Standards: SOC 2, GDPR, and HIPAA Requirements](/quests/1011/compliance-standards/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Penetration Testing: Tools and Ethical Hacking Methodologies](/quests/1011/penetration-testing/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
-| [Secure Coding Practices: OWASP Top 10 Vulnerability Prevention](/quests/1011/secure-coding/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
-| [Security Fundamentals: CIA Triad and Defense in Depth Strategies](/quests/1011/security-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Threat Modeling: STRIDE Framework and Attack Trees Analysis](/quests/1011/threat-modeling/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/ai-feature-pipeline-architect\|AI Feature Pipeline Architect: DevSecOps Mastery Quest]] | 🔴 Hard | 240-360 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/compliance-standards\|Compliance Standards: SOC 2, GDPR, and HIPAA Requirements]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/penetration-testing\|Penetration Testing: Tools and Ethical Hacking Methodologies]] | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/secure-coding\|Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/security-fundamentals\|Security Fundamentals: CIA Triad and Defense in Depth Strategies]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1011/threat-modeling\|Threat Modeling: STRIDE Framework and Attack Trees Analysis]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 📋 Feature Workflows

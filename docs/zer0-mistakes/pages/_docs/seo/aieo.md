@@ -12,7 +12,9 @@ permalink: /docs/seo/aieo/
 preview: /images/previews/aieo-ai-engine-optimization.png
 sidebar:
   nav: docs
-source_file: aieo.md
+source_file: pages/_docs/seo/aieo.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/seo/aieo.md
 tags:
 - seo
 - aieo
@@ -22,6 +24,7 @@ tags:
 - ai
 title: AIEO — AI Engine Optimization
 ---
+
 # AIEO — AI Engine Optimization
 
 **AI Engine Optimization (AIEO)** extends traditional SEO practices to improve how AI-powered search engines, LLMs, and AI assistants discover, understand, and cite your content. zer0-mistakes ships a built-in AIEO toolkit.
@@ -133,13 +136,13 @@ schema_type: "SoftwareApplication"
 
 ## Related
 
-- [Meta Tags & SEO](/docs/seo/meta-tags/)
-- [Sitemap](/docs/seo/sitemap/)
-- [FAQ Page](/faq/)
-- [Glossary](/glossary/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Meta Tags & SEO]]
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Sitemap]]
+- [[zer0-mistakes/pages/faq|FAQ Page]]
+- [[zer0-mistakes/pages/glossary|Glossary]]
 
 ## See also
 
 - [[SEO]]
-- [[Structured Data]]
-- [[Features]]
+- [[zer0-CMS/apps/aieo/backend/prompts/patterns/structured_data|Structured Data]]
+- [[zer0-mistakes/features/README|Features]]

@@ -72,12 +72,14 @@ rewards:
   - Foundation for development environment setup
 skill_focus: fullstack
 slug: os-selection
-source_file: os-selection.md
+source_file: pages/_quests/0000/os-selection.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/os-selection.md
 tags:
 - '0000'
 - operating-systems
 - beginner
-title: Install Homebrew, the de facto package manager for macOS
+title: 'OS Selection: Choose Your Realm of Power'
 validation_criteria:
   completion_requirements:
   - Understand the strengths of Windows, macOS, and Linux
@@ -235,7 +237,7 @@ wsl --set-default-version 2
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[IT Fundamentals]] **Unlocks:** [[Install Windows 11: Summon a Fresh World onto a Blank Drive]] · [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Sequel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Parallel quests:** [[Character Selection]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[IT Fundamentals]] **Unlocks:** [[it-journey/pages/_quests/0000/install-windows-11|Install Windows 11: Summon a Fresh World onto a Blank Drive]] · [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[it-journey/pages/_quests/0000/hello-mac|Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Sequel quests:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[it-journey/pages/_quests/0000/hello-mac|Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Parallel quests:** [[Character Selection]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

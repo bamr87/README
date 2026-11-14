@@ -18,7 +18,9 @@ prerequisites:
 preview: /images/previews/giscus-comments.png
 sidebar:
   nav: docs
-source_file: giscus-comments.md
+source_file: fr/docs/features/giscus-comments.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/giscus-comments.md
 tags:
 - giscus
 - jekyll
@@ -29,6 +31,7 @@ translated_from_sha: b2fb5564968e
 translation_of: pages/_docs/features/giscus-comments.md
 translation_source_url: /docs/features/giscus-comments/
 ---
+
 # Commentaires Giscus
 
 > Ajoutez à votre site Jekyll un système de commentaires basé sur GitHub Discussions, avec détection automatique du thème et conception respectueuse de la vie privée.
@@ -351,5 +354,5 @@ Si les pages créent des discussions en double :
 
 ## Voir aussi
 
-- [[Features]]
-- [[PostHog Analytics]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/features/posthog-analytics|PostHog Analytics]]

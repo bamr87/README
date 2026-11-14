@@ -47,7 +47,9 @@ rewards:
 - Dungeon Master Badge
 - Bashcrawl automation mastery
 skill_focus: devops
-source_file: agent-mode.md
+source_file: pages/_quests/0000/bashcrawl/agent-mode.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/agent-mode.md
 tags:
 - bashcrawl
 - terminal
@@ -56,7 +58,7 @@ tags:
 - ai
 - contribution
 - '0000'
-title: Play through the dungeon normally (--classic runs in plain, non-TUI mode)
+title: 'Bashcrawl Agent Mode: AI Automation and Contribution'
 validation_criteria:
 - Launch Bashcrawl in agent mode
 - Capture a screenshot sequence to a directory
@@ -276,7 +278,7 @@ Complete all 10 side-quests and you have earned the right to call yourself a Bas
 - **Share your completion** → Post in the IT-Journey Discussions
 - **Teach others** → Use your screenshots to write a blog post
 - **Advanced Shell** → Try `awk`, `sed`, `find`, `xargs` quests at level 0001
-- **Back to hub** → [Bashcrawl Hub](/quests/0000/bashcrawl/)
+- **Back to hub** → [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Hub]]
 
 ---
 
@@ -289,7 +291,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual](https://www.gnu.org/software/bash/manual/) — Official Bash reference for every master wizard
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [GitHub CLI Documentation](https://cli.github.com/manual/) — Become a hero contributor
 
 ---
@@ -298,7 +300,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/bashcrawl/rift|Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

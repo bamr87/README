@@ -66,7 +66,9 @@ rewards:
   - Advanced scripting quest access
   - Terminal automation capabilities
 skill_focus: fullstack
-source_file: bash-run.md
+source_file: pages/_quests/0000/bash-run.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bash-run.md
 sub_title: 'Level 000 Quest: Extending bashcrawl''s Terminal Dungeon'
 tags:
 - bash
@@ -74,7 +76,7 @@ tags:
 - game-development
 - shell-scripting
 - '0'
-title: 'Inside a treasure script, reveal a hidden room:'
+title: 'bashcrawl and Beyond: Extending a Terminal Dungeon Adventure'
 validation_criteria:
 - Add a new room with a scroll and interactive treasure to bashcrawl
 - Create a hidden room mechanic using dot-prefixed directories
@@ -562,7 +564,7 @@ Before opening a pull request or sharing your mod, verify your addition like a m
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Linux Fundamentals]] **Recommended:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Linux Fundamentals]] **Recommended:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

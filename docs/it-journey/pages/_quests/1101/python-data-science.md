@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Readiness for the Machine Learning Fundamentals quest
 skill_focus: data-engineering
-source_file: python-data-science.md
+source_file: pages/_quests/1101/python-data-science.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/python-data-science.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - Python for Data Science'
 tags:
 - '1101'
@@ -85,7 +87,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: Google Colab and most data science images ship these preinstalled.
+title: 'Python for Data Science: NumPy, Pandas & Matplotlib'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -429,17 +431,17 @@ A chart without axis labels is a riddle. Always title it and label both axes.
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/) - Train your first models
+- 🎯 [[it-journey/pages/_quests/1101/ml-fundamentals|Machine Learning Fundamentals]] - Train your first models
 
 **Explore Side Adventures**:
-- ⚔️ [Computer Vision](/quests/1101/computer-vision/) - Work with image data
-- ⚔️ [Natural Language Processing](/quests/1101/natural-language-processing/) - Work with text data
+- ⚔️ [[it-journey/pages/_quests/1101/computer-vision|Computer Vision]] - Work with image data
+- ⚔️ [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]] - Work with text data
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
-**📊 Data Scientist**: Advance to [Machine Learning Fundamentals](/quests/1101/ml-fundamentals/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/ml-fundamentals|Machine Learning Fundamentals]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/ml-fundamentals|Machine Learning Fundamentals]]
 
 ## 📚 Resources
 
@@ -468,6 +470,6 @@ A chart without axis labels is a riddle. Always title it and label both axes.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: STASHME/README.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/STASHME/README.md
 title: 💾 StashMe - Multi-Repository Cloud Stash Utility
 ---
 # 💾 StashMe - Multi-Repository Cloud Stash Utility

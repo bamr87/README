@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Continue The Relic Raisers campaign
 skill_focus: ai-ml
-source_file: relic-raisers-01-the-dig-site.md
+source_file: pages/_quests/0011/relic-raisers-01-the-dig-site.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/relic-raisers-01-the-dig-site.md
 tags:
 - '0011'
 - cobol
@@ -85,7 +87,7 @@ tags:
 - ai-assisted
 - hands-on
 - gamified-learning
-title: cobc (GnuCOBOL) 3.1.2.0
+title: 'The Dig Site: Unearth the Relic and Name What You Do Not Know'
 validation_criteria:
   completion_requirements:
   - The relic compiles, runs, and produces the aging report shown in this chapter
@@ -576,8 +578,8 @@ graph LR
 
 The relic runs and you have a list of what you do not know. Next you read its data the way it reads it — field by field — and let the data itself confirm or deny the dictionary.
 
-- ➡️ **Next chapter:** [Chapter II — The Strata](/quests/0110/relic-raisers-02-the-strata/)
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0110/relic-raisers-02-the-strata|Chapter II — The Strata]]
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
 
 ## 📚 Resource Codex
 
@@ -587,6 +589,6 @@ The relic runs and you have a list of what you do not know. Next you read its da
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 0011 - Development Tools & AI Integration]] **Previous:** none — first chapter **Next:** [[The Strata: Read the Copybook, Then Let the Data Testify]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/0011/README|Level 0011 - Development Tools & AI Integration]] **Previous:** none — first chapter **Next:** [[it-journey/pages/_quests/0110/relic-raisers-02-the-strata|The Strata: Read the Copybook, Then Let the Data Testify]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

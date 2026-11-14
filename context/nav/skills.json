@@ -5,26 +5,547 @@
   "title": "Agent Skills",
   "corpus": "docs/skills",
   "counts": {
-    "pages": 7,
-    "sections": 3,
-    "max_depth": 3,
-    "skipped": 1
+    "pages": 68,
+    "sections": 24,
+    "max_depth": 4,
+    "skipped": 0
   },
-  "skipped": [
-    ".github"
-  ],
-  "fingerprint": "292f000a4ab20ef9",
+  "skipped": [],
+  "fingerprint": "fb1082f114d0de74",
   "tree": {
     "type": "section",
     "title": "Agent Skills",
     "index": "skills/README.md",
-    "pages": 7,
+    "pages": 68,
     "children": [
       {
         "type": "group",
+        "title": "Skills",
+        "rel": "dot-github/skills",
+        "order": 0.0,
+        "pages": 47,
+        "children": [
+          {
+            "type": "page",
+            "title": "Continual Learning",
+            "path": "skills/dot-github/skills/continual-learning/SKILL.md",
+            "rel": "dot-github/skills/continual-learning/SKILL.md",
+            "folder": "dot-github/skills/continual-learning"
+          },
+          {
+            "type": "page",
+            "title": "Copilot SDK",
+            "path": "skills/dot-github/skills/copilot-sdk/SKILL.md",
+            "rel": "dot-github/skills/copilot-sdk/SKILL.md",
+            "folder": "dot-github/skills/copilot-sdk"
+          },
+          {
+            "type": "page",
+            "title": "Github Issue Creator",
+            "path": "skills/dot-github/skills/github-issue-creator/SKILL.md",
+            "rel": "dot-github/skills/github-issue-creator/SKILL.md",
+            "folder": "dot-github/skills/github-issue-creator"
+          },
+          {
+            "type": "page",
+            "title": "Microsoft Docs",
+            "path": "skills/dot-github/skills/microsoft-docs/SKILL.md",
+            "rel": "dot-github/skills/microsoft-docs/SKILL.md",
+            "folder": "dot-github/skills/microsoft-docs"
+          },
+          {
+            "type": "section",
+            "title": "Applicationinsights Web Ts",
+            "rel": "dot-github/skills/applicationinsights-web-ts",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Application Insights JavaScript SDK (Web) for TypeScript",
+                "path": "skills/dot-github/skills/applicationinsights-web-ts/SKILL.md",
+                "rel": "dot-github/skills/applicationinsights-web-ts/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/applicationinsights-web-ts/references",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Configuration Reference",
+                    "path": "skills/dot-github/skills/applicationinsights-web-ts/references/configuration.md",
+                    "rel": "dot-github/skills/applicationinsights-web-ts/references/configuration.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Framework Extensions",
+                    "path": "skills/dot-github/skills/applicationinsights-web-ts/references/framework-extensions.md",
+                    "rel": "dot-github/skills/applicationinsights-web-ts/references/framework-extensions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "GenAI Agent Traces \u2014 OpenTelemetry Semantic Conventions (distilled)",
+                    "path": "skills/dot-github/skills/applicationinsights-web-ts/references/agent-traces.md",
+                    "rel": "dot-github/skills/applicationinsights-web-ts/references/agent-traces.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Cloud Solution Architect",
+            "rel": "dot-github/skills/cloud-solution-architect",
+            "pages": 8,
+            "children": [
+              {
+                "type": "page",
+                "title": "Cloud Solution Architect",
+                "path": "skills/dot-github/skills/cloud-solution-architect/SKILL.md",
+                "rel": "dot-github/skills/cloud-solution-architect/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/cloud-solution-architect/references",
+                "pages": 7,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Azure Architecture Styles Reference",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/architecture-styles.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/architecture-styles.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Azure Design Principles",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/design-principles.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/design-principles.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Azure Technology Choice Decision Frameworks",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/technology-choices.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/technology-choices.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Cloud Application Best Practices",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/best-practices.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/best-practices.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Cloud Design Patterns",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/design-patterns.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/design-patterns.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Mission-Critical Architecture on Azure",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/mission-critical.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/mission-critical.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Performance Antipatterns",
+                    "path": "skills/dot-github/skills/cloud-solution-architect/references/performance-antipatterns.md",
+                    "rel": "dot-github/skills/cloud-solution-architect/references/performance-antipatterns.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Debugview",
+            "rel": "dot-github/skills/debugview",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Sysinternals DebugView CLI (DbgViewCli)",
+                "path": "skills/dot-github/skills/debugview/SKILL.md",
+                "rel": "dot-github/skills/debugview/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/debugview/references",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Driver IOCTLs and Buffer Formats",
+                    "path": "skills/dot-github/skills/debugview/references/driver-ioctls.md",
+                    "rel": "dot-github/skills/debugview/references/driver-ioctls.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Output Formats",
+                    "path": "skills/dot-github/skills/debugview/references/output-formats.md",
+                    "rel": "dot-github/skills/debugview/references/output-formats.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Remote Monitoring Protocol",
+                    "path": "skills/dot-github/skills/debugview/references/remote-protocol.md",
+                    "rel": "dot-github/skills/debugview/references/remote-protocol.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Entra Agent ID",
+            "rel": "dot-github/skills/entra-agent-id",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Microsoft Entra Agent ID",
+                "path": "skills/dot-github/skills/entra-agent-id/SKILL.md",
+                "rel": "dot-github/skills/entra-agent-id/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/entra-agent-id/references",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Known Limitations (Preview)",
+                    "path": "skills/dot-github/skills/entra-agent-id/references/known-limitations.md",
+                    "rel": "dot-github/skills/entra-agent-id/references/known-limitations.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Microsoft Entra SDK for AgentID: Polyglot Agent Authentication",
+                    "path": "skills/dot-github/skills/entra-agent-id/references/sdk-sidecar.md",
+                    "rel": "dot-github/skills/entra-agent-id/references/sdk-sidecar.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "OAuth2 Token Flow",
+                    "path": "skills/dot-github/skills/entra-agent-id/references/oauth2-token-flow.md",
+                    "rel": "dot-github/skills/entra-agent-id/references/oauth2-token-flow.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Frontend Design Review",
+            "rel": "dot-github/skills/frontend-design-review",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Frontend Design Review",
+                "path": "skills/dot-github/skills/frontend-design-review/SKILL.md",
+                "rel": "dot-github/skills/frontend-design-review/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/frontend-design-review/references",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Pattern Examples",
+                    "path": "skills/dot-github/skills/frontend-design-review/references/pattern-examples.md",
+                    "rel": "dot-github/skills/frontend-design-review/references/pattern-examples.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Quick Checklist",
+                    "path": "skills/dot-github/skills/frontend-design-review/references/quick-checklist.md",
+                    "rel": "dot-github/skills/frontend-design-review/references/quick-checklist.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Review Output Format",
+                    "path": "skills/dot-github/skills/frontend-design-review/references/review-output-format.md",
+                    "rel": "dot-github/skills/frontend-design-review/references/review-output-format.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Review Type Modifiers",
+                    "path": "skills/dot-github/skills/frontend-design-review/references/review-type-modifiers.md",
+                    "rel": "dot-github/skills/frontend-design-review/references/review-type-modifiers.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Kql",
+            "rel": "dot-github/skills/kql",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "KQL Mastery",
+                "path": "skills/dot-github/skills/kql/SKILL.md",
+                "rel": "dot-github/skills/kql/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/kql/references",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Advanced KQL Patterns",
+                    "path": "skills/dot-github/skills/kql/references/advanced-patterns.md",
+                    "rel": "dot-github/skills/kql/references/advanced-patterns.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Error Recovery Reference",
+                    "path": "skills/dot-github/skills/kql/references/error-recovery.md",
+                    "rel": "dot-github/skills/kql/references/error-recovery.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "KQL Query Templates",
+                    "path": "skills/dot-github/skills/kql/references/query-templates.md",
+                    "rel": "dot-github/skills/kql/references/query-templates.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "KQL Schema Discovery Queries",
+                    "path": "skills/dot-github/skills/kql/references/discovery-queries.md",
+                    "rel": "dot-github/skills/kql/references/discovery-queries.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "MCP Builder",
+            "rel": "dot-github/skills/mcp-builder",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "MCP Server Development Guide",
+                "path": "skills/dot-github/skills/mcp-builder/SKILL.md",
+                "rel": "dot-github/skills/mcp-builder/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "Reference",
+                "rel": "dot-github/skills/mcp-builder/reference",
+                "pages": 5,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "MCP Server Best Practices",
+                    "path": "skills/dot-github/skills/mcp-builder/reference/mcp_best_practices.md",
+                    "rel": "dot-github/skills/mcp-builder/reference/mcp_best_practices.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "MCP Server Evaluation Guide",
+                    "path": "skills/dot-github/skills/mcp-builder/reference/evaluation.md",
+                    "rel": "dot-github/skills/mcp-builder/reference/evaluation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Microsoft MCP Patterns",
+                    "path": "skills/dot-github/skills/mcp-builder/reference/microsoft_mcp_patterns.md",
+                    "rel": "dot-github/skills/mcp-builder/reference/microsoft_mcp_patterns.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Node/TypeScript MCP Server Implementation Guide",
+                    "path": "skills/dot-github/skills/mcp-builder/reference/node_mcp_server.md",
+                    "rel": "dot-github/skills/mcp-builder/reference/node_mcp_server.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Python MCP Server Implementation Guide",
+                    "path": "skills/dot-github/skills/mcp-builder/reference/python_mcp_server.md",
+                    "rel": "dot-github/skills/mcp-builder/reference/python_mcp_server.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Podcast Generation",
+            "rel": "dot-github/skills/podcast-generation",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Podcast Generation with GPT Realtime Mini",
+                "path": "skills/dot-github/skills/podcast-generation/SKILL.md",
+                "rel": "dot-github/skills/podcast-generation/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/podcast-generation/references",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Architecture Reference",
+                    "path": "skills/dot-github/skills/podcast-generation/references/architecture.md",
+                    "rel": "dot-github/skills/podcast-generation/references/architecture.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Code Examples",
+                    "path": "skills/dot-github/skills/podcast-generation/references/code-examples.md",
+                    "rel": "dot-github/skills/podcast-generation/references/code-examples.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Skill Creator",
+            "rel": "dot-github/skills/skill-creator",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Skill Creator",
+                "path": "skills/dot-github/skills/skill-creator/SKILL.md",
+                "rel": "dot-github/skills/skill-creator/SKILL.md"
+              },
+              {
+                "type": "section",
+                "title": "References",
+                "rel": "dot-github/skills/skill-creator/references",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Azure SDK Patterns by Language",
+                    "path": "skills/dot-github/skills/skill-creator/references/azure-sdk-patterns.md",
+                    "rel": "dot-github/skills/skill-creator/references/azure-sdk-patterns.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Output Patterns",
+                    "path": "skills/dot-github/skills/skill-creator/references/output-patterns.md",
+                    "rel": "dot-github/skills/skill-creator/references/output-patterns.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Workflow Patterns",
+                    "path": "skills/dot-github/skills/skill-creator/references/workflows.md",
+                    "rel": "dot-github/skills/skill-creator/references/workflows.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "title": "Agents",
+        "rel": "dot-github/agents",
+        "order": 1.0,
+        "pages": 6,
+        "children": [
+          {
+            "type": "page",
+            "title": "Backend.Agent",
+            "path": "skills/dot-github/agents/backend.agent.md",
+            "rel": "dot-github/agents/backend.agent.md"
+          },
+          {
+            "type": "page",
+            "title": "Frontend",
+            "path": "skills/dot-github/agents/scaffolder.agent.md",
+            "rel": "dot-github/agents/scaffolder.agent.md"
+          },
+          {
+            "type": "page",
+            "title": "Frontend.Agent",
+            "path": "skills/dot-github/agents/frontend.agent.md",
+            "rel": "dot-github/agents/frontend.agent.md"
+          },
+          {
+            "type": "page",
+            "title": "Planner.Agent",
+            "path": "skills/dot-github/agents/planner.agent.md",
+            "rel": "dot-github/agents/planner.agent.md"
+          },
+          {
+            "type": "page",
+            "title": "Presenter.Agent",
+            "path": "skills/dot-github/agents/presenter.agent.md",
+            "rel": "dot-github/agents/presenter.agent.md"
+          },
+          {
+            "type": "page",
+            "title": "Start emulators (Intel/AMD)",
+            "path": "skills/dot-github/agents/infrastructure.agent.md",
+            "rel": "dot-github/agents/infrastructure.agent.md"
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "title": "Prompts",
+        "rel": "dot-github/prompts",
+        "order": 2.0,
+        "pages": 5,
+        "children": [
+          {
+            "type": "page",
+            "title": "Add API Endpoint",
+            "path": "skills/dot-github/prompts/add-endpoint.prompt.md",
+            "rel": "dot-github/prompts/add-endpoint.prompt.md"
+          },
+          {
+            "type": "page",
+            "title": "Code Review Checklist",
+            "path": "skills/dot-github/prompts/code-review.prompt.md",
+            "rel": "dot-github/prompts/code-review.prompt.md"
+          },
+          {
+            "type": "page",
+            "title": "Create New Node Type",
+            "path": "skills/dot-github/prompts/create-node.prompt.md",
+            "rel": "dot-github/prompts/create-node.prompt.md"
+          },
+          {
+            "type": "page",
+            "title": "Create Zustand Store",
+            "path": "skills/dot-github/prompts/create-store.prompt.md",
+            "rel": "dot-github/prompts/create-store.prompt.md"
+          },
+          {
+            "type": "page",
+            "title": "Scaffold Foundry App",
+            "path": "skills/dot-github/prompts/scaffold-foundry-app.prompt.md",
+            "rel": "dot-github/prompts/scaffold-foundry-app.prompt.md"
+          }
+        ]
+      },
+      {
+        "type": "group",
         "title": "Documentation",
-        "order": 4.0,
-        "pages": 1,
+        "order": 3.0,
+        "pages": 6,
         "children": [
           {
             "type": "page",
@@ -32,15 +553,52 @@
             "path": "skills/docs-site/README.md",
             "rel": "docs-site/README.md",
             "folder": "docs-site"
+          },
+          {
+            "type": "section",
+            "title": "Documentation",
+            "rel": "dot-github/docs",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "Agent Integration with Skills",
+                "path": "skills/dot-github/docs/agent-integration.md",
+                "rel": "dot-github/docs/agent-integration.md"
+              },
+              {
+                "type": "page",
+                "title": "Agent Skills",
+                "path": "skills/dot-github/docs/skills.md",
+                "rel": "dot-github/docs/skills.md"
+              },
+              {
+                "type": "page",
+                "title": "MCP Server Usage for Agents",
+                "path": "skills/dot-github/docs/mcp-usage.md",
+                "rel": "dot-github/docs/mcp-usage.md"
+              },
+              {
+                "type": "page",
+                "title": "Pattern Enforcement with Skills",
+                "path": "skills/dot-github/docs/pattern-enforcement.md",
+                "rel": "dot-github/docs/pattern-enforcement.md"
+              },
+              {
+                "type": "page",
+                "title": "Workflow Patterns: Combining Skills and Prompts",
+                "path": "skills/dot-github/docs/workflow-patterns.md",
+                "rel": "dot-github/docs/workflow-patterns.md"
+              }
+            ]
           }
         ]
       },
       {
         "type": "group",
         "title": "Repository & tooling",
-        "order": 6.0,
-        "index": "skills/tests/README.md",
-        "pages": 3,
+        "order": 4.0,
+        "pages": 1,
         "children": [
           {
             "type": "page",
@@ -48,28 +606,6 @@
             "path": "skills/hooks/continual-learning/README.md",
             "rel": "hooks/continual-learning/README.md",
             "folder": "hooks"
-          },
-          {
-            "type": "section",
-            "title": "Skill Evaluation Test Harness",
-            "rel": "tests",
-            "index": "skills/tests/README.md",
-            "pages": 2,
-            "children": [
-              {
-                "type": "page",
-                "title": "Skill Evaluation Test Harness",
-                "path": "skills/tests/README.md",
-                "rel": "tests/README.md",
-                "is_index": true
-              },
-              {
-                "type": "page",
-                "title": "Test Harness Agent Instructions",
-                "path": "skills/tests/AGENTS.md",
-                "rel": "tests/AGENTS.md"
-              }
-            ]
           }
         ]
       },

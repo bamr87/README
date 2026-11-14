@@ -30,7 +30,9 @@ preview: Complete terminal shortcuts cheat sheet - boost your command line produ
 redirect_from:
 - /docs/terminal-shortcuts-cheat-sheet/
 - /docs/terminal/
-source_file: terminal-shortcuts.md
+source_file: pages/_notes/cheatsheets/terminal-shortcuts.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/terminal-shortcuts.md
 tags:
 - terminal
 - shortcuts
@@ -40,7 +42,7 @@ tags:
 - command-line
 - productivity
 - reference
-title: ⌨️ Essential Terminal Shortcuts Cheat Sheet
+title: 'Terminal Shortcuts Cheat Sheet: macOS, Linux & Windows'
 ---
 # ⌨️ Essential Terminal Shortcuts Cheat Sheet
 
@@ -273,9 +275,9 @@ popd
 - [PowerShell PSReadLine](https://docs.microsoft.com/en-us/powershell/module/psreadline/)
 
 ### Related Quests
-- [Terminal Fundamentals Quest](/quests/0000/terminal-fundamentals/)
-- [Git Basics Quest](/quests/0000/git-basics/)
-- [VS Code Mastery Quest](/quests/0000/vscode-mastery/)
+- [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals Quest]]
+- [[it-journey/pages/_quests/0000/git-basics|Git Basics Quest]]
+- [[it-journey/pages/_quests/0000/vscode-mastery|VS Code Mastery Quest]]
 
 ---
 

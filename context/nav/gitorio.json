@@ -1,0 +1,1206 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "gitorio",
+  "title": "Gitorio",
+  "corpus": "docs/gitorio",
+  "counts": {
+    "pages": 142,
+    "sections": 37,
+    "max_depth": 5,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "6914adddb6060317",
+  "tree": {
+    "type": "section",
+    "title": "Gitorio",
+    "index": "gitorio/README.md",
+    "pages": 142,
+    "children": [
+      {
+        "type": "page",
+        "title": "\u2699 GitFactory",
+        "path": "gitorio/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "App",
+        "path": "gitorio/app/public/maps/README.md",
+        "rel": "app/public/maps/README.md",
+        "folder": "app"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "gitorio/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributing to GitFactory",
+        "path": "gitorio/CONTRIBUTING.md",
+        "rel": "CONTRIBUTING.md"
+      },
+      {
+        "type": "page",
+        "title": "GitFactory \u2014 Backlog",
+        "path": "gitorio/BACKLOG.md",
+        "rel": "BACKLOG.md"
+      },
+      {
+        "type": "page",
+        "title": "gitorio (AGENTS)",
+        "path": "gitorio/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "gitorio (CLAUDE)",
+        "path": "gitorio/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "gitorio tools",
+        "path": "gitorio/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 gitorio (GitFactory)",
+        "path": "gitorio/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "gitorio/SECURITY.md",
+        "rel": "SECURITY.md"
+      },
+      {
+        "type": "page",
+        "title": "Session logs \u2192 it-journey",
+        "path": "gitorio/blog/README.md",
+        "rel": "blog/README.md",
+        "folder": "blog"
+      },
+      {
+        "type": "section",
+        "title": "Docs",
+        "rel": "_docs",
+        "pages": 6,
+        "children": [
+          {
+            "type": "page",
+            "title": "What is GitFactory?",
+            "path": "gitorio/_docs/what-is-gitfactory.md",
+            "rel": "_docs/what-is-gitfactory.md",
+            "order": 1.0
+          },
+          {
+            "type": "page",
+            "title": "Machines and Belts",
+            "path": "gitorio/_docs/machines-and-belts.md",
+            "rel": "_docs/machines-and-belts.md",
+            "order": 2.0
+          },
+          {
+            "type": "page",
+            "title": "Feedback Loops",
+            "path": "gitorio/_docs/feedback-loops.md",
+            "rel": "_docs/feedback-loops.md",
+            "order": 3.0
+          },
+          {
+            "type": "page",
+            "title": "Power and Security",
+            "path": "gitorio/_docs/power-and-security.md",
+            "rel": "_docs/power-and-security.md",
+            "order": 4.0
+          },
+          {
+            "type": "page",
+            "title": "The Docs Gardener",
+            "path": "gitorio/_docs/the-docs-gardener.md",
+            "rel": "_docs/the-docs-gardener.md",
+            "order": 5.0
+          },
+          {
+            "type": "page",
+            "title": "The Harness",
+            "path": "gitorio/_docs/the-harness.md",
+            "rel": "_docs/the-harness.md",
+            "order": 6.0
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "gitorio/docs/README.md",
+        "pages": 16,
+        "children": [
+          {
+            "type": "page",
+            "title": "gitorio documentation",
+            "path": "gitorio/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "AO-SDLC \u2014 the spec-driven development loop",
+            "path": "gitorio/docs/AO-SDLC.md",
+            "rel": "docs/AO-SDLC.md"
+          },
+          {
+            "type": "page",
+            "title": "Decisions (ADR-lite)",
+            "path": "gitorio/docs/DECISIONS.md",
+            "rel": "docs/DECISIONS.md"
+          },
+          {
+            "type": "page",
+            "title": "Documentation map",
+            "path": "gitorio/docs/DOCUMENTATION-MAP.md",
+            "rel": "docs/DOCUMENTATION-MAP.md"
+          },
+          {
+            "type": "page",
+            "title": "Generated files \u2014 the contract",
+            "path": "gitorio/docs/GENERATED-FILES.md",
+            "rel": "docs/GENERATED-FILES.md"
+          },
+          {
+            "type": "page",
+            "title": "GitFactory Architecture",
+            "path": "gitorio/docs/ARCHITECTURE.md",
+            "rel": "docs/ARCHITECTURE.md"
+          },
+          {
+            "type": "page",
+            "title": "gitorio \u2014 Constitution",
+            "path": "gitorio/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "Machine reference",
+            "path": "gitorio/docs/reference/machines.md",
+            "rel": "docs/reference/machines.md",
+            "folder": "docs/reference"
+          },
+          {
+            "type": "page",
+            "title": "Roadmap",
+            "path": "gitorio/docs/ROADMAP.md",
+            "rel": "docs/ROADMAP.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 gitorio",
+            "rel": "docs/amendments",
+            "index": "gitorio/docs/amendments/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 gitorio",
+                "path": "gitorio/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "gitorio/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
+                "path": "gitorio/docs/amendments/proposed/agent-merge-review-gate.md",
+                "rel": "docs/amendments/proposed/agent-merge-review-gate.md",
+                "folder": "docs/amendments/proposed"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "gitorio/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "gitorio/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "gitorio/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "gitorio/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "gitorio/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Examples \u2014 reference compiler output",
+        "rel": "examples",
+        "index": "gitorio/examples/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "Examples \u2014 reference compiler output",
+            "path": "gitorio/examples/README.md",
+            "rel": "examples/README.md",
+            "is_index": true
+          },
+          {
+            "type": "section",
+            "title": "Issue Factory \u2014 worked example (target: bamr87/lifehacker.dev)",
+            "rel": "examples/issue-factory",
+            "index": "gitorio/examples/issue-factory/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Issue Factory \u2014 worked example (target: bamr87/lifehacker.dev)",
+                "path": "gitorio/examples/issue-factory/README.md",
+                "rel": "examples/issue-factory/README.md",
+                "is_index": true
+              },
+              {
+                "type": "section",
+                "title": "Prompts",
+                "rel": "examples/issue-factory/prompts",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Issue Batcher",
+                    "path": "gitorio/examples/issue-factory/prompts/issue-batcher.md",
+                    "rel": "examples/issue-factory/prompts/issue-batcher.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Issue Fixer",
+                    "path": "gitorio/examples/issue-factory/prompts/issue-fixer.md",
+                    "rel": "examples/issue-factory/prompts/issue-fixer.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Packages",
+        "rel": "packages",
+        "pages": 50,
+        "children": [
+          {
+            "type": "section",
+            "title": "Git with the Program",
+            "rel": "packages/git-with-the-program",
+            "index": "gitorio/packages/git-with-the-program/README.md",
+            "pages": 35,
+            "children": [
+              {
+                "type": "page",
+                "title": "Git with the Program",
+                "path": "gitorio/packages/git-with-the-program/README.md",
+                "rel": "packages/git-with-the-program/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Changelog",
+                "path": "gitorio/packages/git-with-the-program/CHANGELOG.md",
+                "rel": "packages/git-with-the-program/CHANGELOG.md"
+              },
+              {
+                "type": "page",
+                "title": "CLAUDE.md",
+                "path": "gitorio/packages/git-with-the-program/CLAUDE.md",
+                "rel": "packages/git-with-the-program/CLAUDE.md"
+              },
+              {
+                "type": "page",
+                "title": "Contributing to Git with the Program",
+                "path": "gitorio/packages/git-with-the-program/CONTRIBUTING.md",
+                "rel": "packages/git-with-the-program/CONTRIBUTING.md"
+              },
+              {
+                "type": "page",
+                "title": "Glossary",
+                "path": "gitorio/packages/git-with-the-program/GLOSSARY.md",
+                "rel": "packages/git-with-the-program/GLOSSARY.md"
+              },
+              {
+                "type": "page",
+                "title": "Roadmap",
+                "path": "gitorio/packages/git-with-the-program/ROADMAP.md",
+                "rel": "packages/git-with-the-program/ROADMAP.md"
+              },
+              {
+                "type": "section",
+                "title": "Documentation",
+                "rel": "packages/git-with-the-program/docs",
+                "pages": 17,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Proposal \u2014 RL drift learning: calibrating drift against outcomes across\u2026",
+                    "path": "gitorio/packages/git-with-the-program/docs/proposals/rl-drift-learning.md",
+                    "rel": "packages/git-with-the-program/docs/proposals/rl-drift-learning.md",
+                    "folder": "packages/git-with-the-program/docs/proposals"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Vision: Git with the Program",
+                    "path": "gitorio/packages/git-with-the-program/docs/vision.md",
+                    "rel": "packages/git-with-the-program/docs/vision.md"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Adr",
+                    "rel": "packages/git-with-the-program/docs/adr",
+                    "pages": 8,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "ADR-0001: Split core memory into normative program and observational\u2026",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0001-two-store-split.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0001-two-store-split.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0002: Event-sourced, content-addressed ledger with derived\u2026",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0002-event-sourced-ledger.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0002-event-sourced-ledger.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0003: Judges are author-blind and accumulator-blind",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0003-judge-blindness.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0003-judge-blindness.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0004: Accumulator decay runs on committer time",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0004-committer-time-decay.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0004-committer-time-decay.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0005: Severity is an anchored ordinal; citations are mandatory",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0005-anchored-severity.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0005-anchored-severity.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0006: Reference implementation stack",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0006-reference-stack.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0006-reference-stack.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0007: The nexus \u2014 a code knowledge graph as the perception layer",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0007-nexus-code-knowledge-graph.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0007-nexus-code-knowledge-graph.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "ADR-0008: Repository upkeep: a deterministic plan with authored content\u2026",
+                        "path": "gitorio/packages/git-with-the-program/docs/adr/0008-repository-upkeep.md",
+                        "rel": "packages/git-with-the-program/docs/adr/0008-repository-upkeep.md"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "title": "Spec",
+                    "rel": "packages/git-with-the-program/docs/spec",
+                    "pages": 7,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "Open Questions",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/OPEN-QUESTIONS.md",
+                        "rel": "packages/git-with-the-program/docs/spec/OPEN-QUESTIONS.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 01 \u2014 Core Memory",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/01-core-memory.md",
+                        "rel": "packages/git-with-the-program/docs/spec/01-core-memory.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 02 \u2014 The Ledger",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/02-ledger.md",
+                        "rel": "packages/git-with-the-program/docs/spec/02-ledger.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 03 \u2014 The Judge",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/03-judge.md",
+                        "rel": "packages/git-with-the-program/docs/spec/03-judge.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 04 \u2014 The Distillation Walk",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/04-distillation.md",
+                        "rel": "packages/git-with-the-program/docs/spec/04-distillation.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 05 \u2014 The Nexus",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/05-nexus.md",
+                        "rel": "packages/git-with-the-program/docs/spec/05-nexus.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "Spec 06 \u2014 Repository Upkeep",
+                        "path": "gitorio/packages/git-with-the-program/docs/spec/06-upkeep.md",
+                        "rel": "packages/git-with-the-program/docs/spec/06-upkeep.md"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Posts",
+                "rel": "packages/git-with-the-program/posts",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Git with the Program: Teaching a Repo to Know Its Own Law",
+                    "path": "gitorio/packages/git-with-the-program/posts/2026-07-23-git-with-the-program.md",
+                    "rel": "packages/git-with-the-program/posts/2026-07-23-git-with-the-program.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The Self-Maintaining Repo: Letting AI Write the Words, Never the Rules",
+                    "path": "gitorio/packages/git-with-the-program/posts/2026-10-03-self-maintaining-repo.md",
+                    "rel": "packages/git-with-the-program/posts/2026-10-03-self-maintaining-repo.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Prompts",
+                "rel": "packages/git-with-the-program/prompts",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Invariant Judge \u2014 system prompt template",
+                    "path": "gitorio/packages/git-with-the-program/prompts/invariant-judge.md",
+                    "rel": "packages/git-with-the-program/prompts/invariant-judge.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Regression Judge \u2014 system prompt template",
+                    "path": "gitorio/packages/git-with-the-program/prompts/regression-judge.md",
+                    "rel": "packages/git-with-the-program/prompts/regression-judge.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Proposals",
+                "rel": "packages/git-with-the-program/proposals",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Proposed amendment to .program/",
+                    "path": "gitorio/packages/git-with-the-program/proposals/PROPOSED-program-amendment.md",
+                    "rel": "packages/git-with-the-program/proposals/PROPOSED-program-amendment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Proposed amendment to .program/ \u2014 the learner joins the program's\u2026",
+                    "path": "gitorio/packages/git-with-the-program/proposals/PROPOSED-learning-amendment.md",
+                    "rel": "packages/git-with-the-program/proposals/PROPOSED-learning-amendment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Proposed amendment to .program/ \u2014 the nexus joins the blind zone",
+                    "path": "gitorio/packages/git-with-the-program/proposals/PROPOSED-nexus-amendment.md",
+                    "rel": "packages/git-with-the-program/proposals/PROPOSED-nexus-amendment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Proposed edit to CLAUDE.md",
+                    "path": "gitorio/packages/git-with-the-program/proposals/PROPOSED-claude-md-update.md",
+                    "rel": "packages/git-with-the-program/proposals/PROPOSED-claude-md-update.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Seeds",
+                "rel": "packages/git-with-the-program/seeds",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "SEED-01 \u2014 Scaffold the engine workspace",
+                    "path": "gitorio/packages/git-with-the-program/seeds/SEED-01-scaffold.md",
+                    "rel": "packages/git-with-the-program/seeds/SEED-01-scaffold.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SEED-02 \u2014 Ledger engine",
+                    "path": "gitorio/packages/git-with-the-program/seeds/SEED-02-ledger-engine.md",
+                    "rel": "packages/git-with-the-program/seeds/SEED-02-ledger-engine.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SEED-03 \u2014 Judge harness",
+                    "path": "gitorio/packages/git-with-the-program/seeds/SEED-03-judge-harness.md",
+                    "rel": "packages/git-with-the-program/seeds/SEED-03-judge-harness.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SEED-04 \u2014 Distillation walk",
+                    "path": "gitorio/packages/git-with-the-program/seeds/SEED-04-distillation-miner.md",
+                    "rel": "packages/git-with-the-program/seeds/SEED-04-distillation-miner.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Nexus Forge (gitnexus)",
+            "rel": "packages/gitnexus",
+            "index": "gitorio/packages/gitnexus/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Nexus Forge (gitnexus)",
+                "path": "gitorio/packages/gitnexus/README.md",
+                "rel": "packages/gitnexus/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "App Builder Workspace",
+                "path": "gitorio/packages/gitnexus/AGENTS.md",
+                "rel": "packages/gitnexus/AGENTS.md"
+              },
+              {
+                "type": "page",
+                "title": "Changelog",
+                "path": "gitorio/packages/gitnexus/CHANGELOG.md",
+                "rel": "packages/gitnexus/CHANGELOG.md"
+              },
+              {
+                "type": "page",
+                "title": "CLAUDE.md",
+                "path": "gitorio/packages/gitnexus/CLAUDE.md",
+                "rel": "packages/gitnexus/CLAUDE.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "\ud83d\ude80 WTD \u2013 What To Do",
+            "rel": "packages/wtd",
+            "index": "gitorio/packages/wtd/README.md",
+            "pages": 11,
+            "children": [
+              {
+                "type": "page",
+                "title": "\ud83d\ude80 WTD \u2013 What To Do",
+                "path": "gitorio/packages/wtd/README.md",
+                "rel": "packages/wtd/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Changelog",
+                "path": "gitorio/packages/wtd/CHANGELOG.md",
+                "rel": "packages/wtd/CHANGELOG.md"
+              },
+              {
+                "type": "page",
+                "title": "CLAUDE.md",
+                "path": "gitorio/packages/wtd/CLAUDE.md",
+                "rel": "packages/wtd/CLAUDE.md"
+              },
+              {
+                "type": "page",
+                "title": "DONTIGNORETHISPRD.md",
+                "path": "gitorio/packages/wtd/PRD.md",
+                "rel": "packages/wtd/PRD.md"
+              },
+              {
+                "type": "page",
+                "title": "Release Notes \u2014 0.1.1",
+                "path": "gitorio/packages/wtd/RELEASE_NOTES_0.1.1.md",
+                "rel": "packages/wtd/RELEASE_NOTES_0.1.1.md"
+              },
+              {
+                "type": "section",
+                "title": "Documentation",
+                "rel": "packages/wtd/docs",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "The Fleet Manifest Spec (fleet/v1)",
+                    "path": "gitorio/packages/wtd/docs/FLEET-SPEC.md",
+                    "rel": "packages/wtd/docs/FLEET-SPEC.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "WTD Fleet Architecture",
+                    "path": "gitorio/packages/wtd/docs/FLEET.md",
+                    "rel": "packages/wtd/docs/FLEET.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "WTD Project TODOs",
+                "rel": "packages/wtd/TODO",
+                "index": "gitorio/packages/wtd/TODO/README.md",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "WTD Project TODOs",
+                    "path": "gitorio/packages/wtd/TODO/README.md",
+                    "rel": "packages/wtd/TODO/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Alpha Release TODOs",
+                    "path": "gitorio/packages/wtd/TODO/alpha-release.md",
+                    "rel": "packages/wtd/TODO/alpha-release.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Bug Fixes Needed",
+                    "path": "gitorio/packages/wtd/TODO/bugs.md",
+                    "rel": "packages/wtd/TODO/bugs.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Routine TODOs",
+                    "path": "gitorio/packages/wtd/TODO/routines.md",
+                    "rel": "packages/wtd/TODO/routines.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Seeds \u2014 the bootstrap-era build plan (historical)",
+        "rel": "seeds",
+        "index": "gitorio/seeds/README.md",
+        "pages": 9,
+        "children": [
+          {
+            "type": "page",
+            "title": "Seeds \u2014 the bootstrap-era build plan (historical)",
+            "path": "gitorio/seeds/README.md",
+            "rel": "seeds/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Seed 00 \u2014 Bootstrap & verify",
+            "path": "gitorio/seeds/00-bootstrap.md",
+            "rel": "seeds/00-bootstrap.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 01 \u2014 Canvas MVP polish",
+            "path": "gitorio/seeds/01-canvas-mvp.md",
+            "rel": "seeds/01-canvas-mvp.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 02 \u2014 Compiler v1",
+            "path": "gitorio/seeds/02-compiler.md",
+            "rel": "seeds/02-compiler.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 03 \u2014 GitHub connect (read/write/deploy)",
+            "path": "gitorio/seeds/03-github-connect.md",
+            "rel": "seeds/03-github-connect.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 04 \u2014 Telemetry (\"the circuit network\")",
+            "path": "gitorio/seeds/04-telemetry.md",
+            "rel": "seeds/04-telemetry.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 05 \u2014 Prompt Studio & scheduling view",
+            "path": "gitorio/seeds/05-prompt-studio.md",
+            "rel": "seeds/05-prompt-studio.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 06 \u2014 Agent patterns: belt mode, watchdog, gates",
+            "path": "gitorio/seeds/06-agent-patterns.md",
+            "rel": "seeds/06-agent-patterns.md"
+          },
+          {
+            "type": "page",
+            "title": "Seed 07 \u2014 GitHub App & device flow",
+            "path": "gitorio/seeds/07-github-app.md",
+            "rel": "seeds/07-github-app.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Specs \u2014 spec-driven development for GitFactory",
+        "rel": "specs",
+        "index": "gitorio/specs/README.md",
+        "pages": 46,
+        "children": [
+          {
+            "type": "page",
+            "title": "Specs \u2014 spec-driven development for GitFactory",
+            "path": "gitorio/specs/README.md",
+            "rel": "specs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "section",
+            "title": "001 Issue Sweep",
+            "rel": "specs/001-issue-sweep",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Issue Sweep",
+                "path": "gitorio/specs/001-issue-sweep/plan.md",
+                "rel": "specs/001-issue-sweep/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Issue Sweep \u2014 clear the defect/tech-debt/infra backlog",
+                "path": "gitorio/specs/001-issue-sweep/spec.md",
+                "rel": "specs/001-issue-sweep/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Issue Sweep",
+                "path": "gitorio/specs/001-issue-sweep/tasks.md",
+                "rel": "specs/001-issue-sweep/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "002 Law AI Factory",
+            "rel": "specs/002-law-ai-factory",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Law-AI Factory",
+                "path": "gitorio/specs/002-law-ai-factory/plan.md",
+                "rel": "specs/002-law-ai-factory/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Law-AI Factory \u2014 GitFactory builds and manages law-ai's AI\u2026",
+                "path": "gitorio/specs/002-law-ai-factory/spec.md",
+                "rel": "specs/002-law-ai-factory/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Law-AI Factory",
+                "path": "gitorio/specs/002-law-ai-factory/tasks.md",
+                "rel": "specs/002-law-ai-factory/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "003 Verification Grant",
+            "rel": "specs/003-verification-grant",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Verification Grant",
+                "path": "gitorio/specs/003-verification-grant/plan.md",
+                "rel": "specs/003-verification-grant/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Verification Grant \u2014 repo-declared checks for agent lines",
+                "path": "gitorio/specs/003-verification-grant/spec.md",
+                "rel": "specs/003-verification-grant/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Verification Grant",
+                "path": "gitorio/specs/003-verification-grant/tasks.md",
+                "rel": "specs/003-verification-grant/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "004 Sha Pinned Actions",
+            "rel": "specs/004-sha-pinned-actions",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: SHA-Pinned Actions Mode",
+                "path": "gitorio/specs/004-sha-pinned-actions/plan.md",
+                "rel": "specs/004-sha-pinned-actions/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: SHA-Pinned Actions Mode",
+                "path": "gitorio/specs/004-sha-pinned-actions/spec.md",
+                "rel": "specs/004-sha-pinned-actions/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: SHA-Pinned Actions Mode",
+                "path": "gitorio/specs/004-sha-pinned-actions/tasks.md",
+                "rel": "specs/004-sha-pinned-actions/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "005 Label Gated Merge",
+            "rel": "specs/005-label-gated-merge",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Label-Gated Merge Line",
+                "path": "gitorio/specs/005-label-gated-merge/plan.md",
+                "rel": "specs/005-label-gated-merge/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Label-Gated Merge Line",
+                "path": "gitorio/specs/005-label-gated-merge/spec.md",
+                "rel": "specs/005-label-gated-merge/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Label-Gated Merge Line",
+                "path": "gitorio/specs/005-label-gated-merge/tasks.md",
+                "rel": "specs/005-label-gated-merge/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "006 Per Line Names",
+            "rel": "specs/006-per-line-names",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Per-Line Names",
+                "path": "gitorio/specs/006-per-line-names/plan.md",
+                "rel": "specs/006-per-line-names/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Per-Line Names for Multi-Line Blueprints",
+                "path": "gitorio/specs/006-per-line-names/spec.md",
+                "rel": "specs/006-per-line-names/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Per-Line Names",
+                "path": "gitorio/specs/006-per-line-names/tasks.md",
+                "rel": "specs/006-per-line-names/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "007 Repository Dispatch",
+            "rel": "specs/007-repository-dispatch",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Cross-Repo Signal Trigger",
+                "path": "gitorio/specs/007-repository-dispatch/plan.md",
+                "rel": "specs/007-repository-dispatch/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Cross-Repo Signal Trigger (repositorydispatch)",
+                "path": "gitorio/specs/007-repository-dispatch/spec.md",
+                "rel": "specs/007-repository-dispatch/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Cross-Repo Signal Trigger",
+                "path": "gitorio/specs/007-repository-dispatch/tasks.md",
+                "rel": "specs/007-repository-dispatch/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "008 Dispatch Sender",
+            "rel": "specs/008-dispatch-sender",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Cross-Repo Signal Sender",
+                "path": "gitorio/specs/008-dispatch-sender/plan.md",
+                "rel": "specs/008-dispatch-sender/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Cross-Repo Signal Sender (sink.repositorydispatch)",
+                "path": "gitorio/specs/008-dispatch-sender/spec.md",
+                "rel": "specs/008-dispatch-sender/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Cross-Repo Signal Sender",
+                "path": "gitorio/specs/008-dispatch-sender/tasks.md",
+                "rel": "specs/008-dispatch-sender/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "009 Demo Environment",
+            "rel": "specs/009-demo-environment",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Browser demo environment",
+                "path": "gitorio/specs/009-demo-environment/plan.md",
+                "rel": "specs/009-demo-environment/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Browser demo environment",
+                "path": "gitorio/specs/009-demo-environment/spec.md",
+                "rel": "specs/009-demo-environment/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Browser demo environment",
+                "path": "gitorio/specs/009-demo-environment/tasks.md",
+                "rel": "specs/009-demo-environment/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "010 Archify Maps",
+            "rel": "specs/010-archify-maps",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Archify maps",
+                "path": "gitorio/specs/010-archify-maps/plan.md",
+                "rel": "specs/010-archify-maps/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Archify maps \u2014 vendored renderer, pure Blueprint\u2192IR compiler\u2026",
+                "path": "gitorio/specs/010-archify-maps/spec.md",
+                "rel": "specs/010-archify-maps/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Archify maps",
+                "path": "gitorio/specs/010-archify-maps/tasks.md",
+                "rel": "specs/010-archify-maps/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "011 Evidence Console",
+            "rel": "specs/011-evidence-console",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: The Evidence Console",
+                "path": "gitorio/specs/011-evidence-console/plan.md",
+                "rel": "specs/011-evidence-console/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: The Evidence Console \u2014 archify's design language as GitFactory's\u2026",
+                "path": "gitorio/specs/011-evidence-console/spec.md",
+                "rel": "specs/011-evidence-console/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: The Evidence Console",
+                "path": "gitorio/specs/011-evidence-console/tasks.md",
+                "rel": "specs/011-evidence-console/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "012 Fleet Studio",
+            "rel": "specs/012-fleet-studio",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Fleet Studio",
+                "path": "gitorio/specs/012-fleet-studio/plan.md",
+                "rel": "specs/012-fleet-studio/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Fleet Studio \u2014 the bamr87 fleet model as GitFactory's roster\u2026",
+                "path": "gitorio/specs/012-fleet-studio/spec.md",
+                "rel": "specs/012-fleet-studio/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Fleet Studio",
+                "path": "gitorio/specs/012-fleet-studio/tasks.md",
+                "rel": "specs/012-fleet-studio/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "013 Archify Console",
+            "rel": "specs/013-archify-console",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: The archify console",
+                "path": "gitorio/specs/013-archify-console/plan.md",
+                "rel": "specs/013-archify-console/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: The archify console \u2014 GitFactory's surfaces rebuilt on archify's\u2026",
+                "path": "gitorio/specs/013-archify-console/spec.md",
+                "rel": "specs/013-archify-console/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: The archify console",
+                "path": "gitorio/specs/013-archify-console/tasks.md",
+                "rel": "specs/013-archify-console/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "014 Harness Parity",
+            "rel": "specs/014-harness-parity",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Harness parity",
+                "path": "gitorio/specs/014-harness-parity/plan.md",
+                "rel": "specs/014-harness-parity/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Harness parity \u2014 the hub's six-layer harness as GitFactory's\u2026",
+                "path": "gitorio/specs/014-harness-parity/spec.md",
+                "rel": "specs/014-harness-parity/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Harness parity",
+                "path": "gitorio/specs/014-harness-parity/tasks.md",
+                "rel": "specs/014-harness-parity/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Template",
+            "rel": "specs/_template",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: {Feature Name}",
+                "path": "gitorio/specs/_template/plan.md",
+                "rel": "specs/_template/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: {Feature Name}",
+                "path": "gitorio/specs/_template/spec.md",
+                "rel": "specs/_template/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: {Feature Name}",
+                "path": "gitorio/specs/_template/tasks.md",
+                "rel": "specs/_template/tasks.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

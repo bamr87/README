@@ -12,7 +12,9 @@ permalink: /docs/features/color-modes/
 preview: /images/previews/dark-light-mode-toggle.png
 sidebar:
   nav: docs
-source_file: color-modes.md
+source_file: pages/_docs/features/color-modes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/color-modes.md
 tags:
 - dark-mode
 - theme
@@ -20,6 +22,7 @@ tags:
 - ui
 title: Dark/Light Mode Toggle
 ---
+
 # Dark/Light Mode Toggle
 
 The Zer0-Mistakes theme includes a color mode switcher supporting light, dark, and automatic system preference detection.
@@ -288,11 +291,11 @@ Ensure using Bootstrap 5.3+:
 
 ## Related
 
-- [Bootstrap Integration](/docs/bootstrap/)
-- [Custom Styles](/docs/customization/styles/)
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap Integration]]
+- [[zer0-mistakes/pages/_docs/customization/styles|Custom Styles]]
 
 ## See also
 
-- [[Features]]
-- [[Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
 - [[Bootstrap Integration]]

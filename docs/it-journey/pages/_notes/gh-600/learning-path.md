@@ -22,7 +22,9 @@ layout: default
 permalink: /notes/gh-600/learning-path/
 redirect_from:
 - /docs/certifications/gh-600/learning-path/
-source_file: learning-path.md
+source_file: pages/_notes/gh-600/learning-path.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/learning-path.md
 tags:
 - gh-600
 - agentic-ai
@@ -62,7 +64,7 @@ toc_sticky: true
 | Tue | Complete **Q1: Initiation Rites** — SDLC Integration | 90 min |
 | Wed | Complete **Q2: The Three Sigils** — Plan vs. Action Boundaries | 90 min |
 | Thu | Complete **Q3: The All-Seeing Eye** — Observability & Control | 90 min |
-| Fri | Write a 1-page reflection: anti-patterns you've seen in your own AI usage; review [Chapter I — Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/) | 30 min |
+| Fri | Write a 1-page reflection: anti-patterns you've seen in your own AI usage; review [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc\|Chapter I — Agents in the SDLC]] | 30 min |
 
 ---
 
@@ -72,7 +74,7 @@ toc_sticky: true
 
 | Day | Activity | Time |
 |---|---|---|
-| Mon | Read [MCP Quick Reference](/notes/gh-600/mcp-quickref/) · Skim [MCP specification](https://modelcontextprotocol.io/) | 1 hr |
+| Mon | Read [[it-journey/pages/_notes/gh-600/mcp-quickref\|MCP Quick Reference]] · Skim [MCP specification](https://modelcontextprotocol.io/) | 1 hr |
 | Tue | Complete **Q4: Forging the Arsenal** — Tool Selection & Permissions | 90 min |
 | Wed | Complete **Q5: The MCP Conclave** — MCP Server Mastery | 2 hrs |
 | Thu | Complete **Q6: Bind the Realm** — Dev Environment Integration | 2 hrs |
@@ -90,7 +92,7 @@ toc_sticky: true
 | Tue | Complete **Q8: Vaults of Recollection** — Memory Strategies | 90 min |
 | Wed | Complete **Q9: Anchoring the Drifting Agent** — State Persistence & Drift | 90 min |
 | Thu | Complete **Q10: Crossing the Tool Planes** — State Continuity Cross-Tools | 90 min |
-| Fri | Review [Chapter III — Vaults of Recollection: Memory & State](/quests/1001/agentic-codex-03-memory-state-and-execution/) | 30 min |
+| Fri | Review [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution\|Chapter III — Vaults of Recollection: Memory & State]] | 30 min |
 
 ---
 
@@ -100,11 +102,11 @@ toc_sticky: true
 
 | Day | Activity | Time |
 |---|---|---|
-| Mon | Read [Evaluation Signals Table](/notes/gh-600/evaluation-signals-table/) | 30 min |
+| Mon | Read [[it-journey/pages/_notes/gh-600/evaluation-signals-table\|Evaluation Signals Table]] | 30 min |
 | Tue | Complete **Q11: The Oracle's Rubric** — Success Criteria & Signals | 90 min |
 | Wed | Complete **Q12: The Necromancer's Inquest** — Failure Root Cause Analysis | 90 min |
 | Thu | Complete **Q13: Reforging the Agent's Mind** — Behavior Tuning | 2 hrs |
-| Fri | Review [Chapter IV — The Oracle Rubric: Evaluation & Tuning](/quests/1010/agentic-codex-04-evaluation-and-tuning/) | 30 min |
+| Fri | Review [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning\|Chapter IV — The Oracle Rubric: Evaluation & Tuning]] | 30 min |
 
 ---
 
@@ -128,10 +130,10 @@ toc_sticky: true
 
 | Day | Activity | Time |
 |---|---|---|
-| Mon | Read [Autonomy Levels Matrix](/notes/gh-600/autonomy-levels-matrix/) | 30 min |
+| Mon | Read [[it-journey/pages/_notes/gh-600/autonomy-levels-matrix\|Autonomy Levels Matrix]] | 30 min |
 | Tue | Complete **Q18: The Autonomy Scales** — Autonomy Levels Matrix | 90 min |
 | Wed | Complete **Q19: The Warden's Pact** — Guardrails & HITL | 2 hrs |
-| Thu | Review [Skills Checklist](/notes/gh-600/skills-checklist/) — mark every box | 30 min |
+| Thu | Review [[it-journey/pages/_notes/gh-600/skills-checklist\|Skills Checklist]] — mark every box | 30 min |
 | Fri–Sat | Complete **🏆 Capstone: Trial of the Agentic Codex** (includes 50-question self-assessment) | 4 hrs |
 
 ---
@@ -141,7 +143,7 @@ toc_sticky: true
 - [ ] All 19 quests completed and validated
 - [ ] Skills Checklist: every box ticked
 - [ ] Capstone self-assessment score ≥ 80%
-- [ ] Reviewed [Glossary](/notes/gh-600/glossary/) the night before
+- [ ] Reviewed [[it-journey/pages/_notes/gh-600/glossary|Glossary]] the night before
 - [ ] Rested, fed, and ready
 - [ ] [Schedule your exam at Pearson VUE](https://learn.microsoft.com/en-us/credentials/certifications/exam-gh-600)
 
@@ -151,7 +153,7 @@ toc_sticky: true
 
 *For experienced GitHub Copilot users who already understand agent concepts and need structured exam preparation rather than a full learning journey.*
 
-**Prerequisites:** Active GitHub Copilot usage, familiarity with GitHub Actions, and basic awareness of LLM concepts. Complete the [Skills Checklist](/notes/gh-600/skills-checklist/) self-assessment first — aim to already pass ≥60% before starting the sprint.
+**Prerequisites:** Active GitHub Copilot usage, familiarity with GitHub Actions, and basic awareness of LLM concepts. Complete the [[it-journey/pages/_notes/gh-600/skills-checklist|Skills Checklist]] self-assessment first — aim to already pass ≥60% before starting the sprint.
 
 **Total time:** ~20 hours over 14 days
 
@@ -163,14 +165,14 @@ toc_sticky: true
 | 4 | Domain 3 memory | Q8 + Q9 + Q10 | 3 hrs |
 | 5 | Domain 4 eval | Q11 + Q12 | 2 hrs |
 | 6 | Domain 4 tuning | Q13 + review Chapter IV | 2 hrs |
-| 7 | **Rest day** — light review of [Glossary](/notes/gh-600/glossary/) | 30 min |
+| 7 | **Rest day** — light review of [[it-journey/pages/_notes/gh-600/glossary\|Glossary]] | 30 min |
 | 8 | Domain 5 part 1 | Q14 + Q15 | 3 hrs |
 | 9 | Domain 5 part 2 | Q16 + Q17 | 3 hrs |
 | 10 | Domain 6 | Q18 + Q19 | 3 hrs |
 | 11 | Weaknesses | Re-do quests where you scored below 80% | 2 hrs |
-| 12 | Reference pass | Read all 7 [Quick-Reference Notes](/notes/gh-600/) | 1 hr |
+| 12 | Reference pass | Read all 7 [[it-journey/pages/_notes/gh-600/index\|Quick-Reference Notes]] | 1 hr |
 | 13 | Capstone attempt | Full capstone — identify gaps | 4 hrs |
-| 14 | Final review | Gaps from capstone + [Skills Checklist](/notes/gh-600/skills-checklist/) | 2 hrs |
+| 14 | Final review | Gaps from capstone + [[it-journey/pages/_notes/gh-600/skills-checklist\|Skills Checklist]] | 2 hrs |
 
 ---
 
@@ -184,7 +186,7 @@ toc_sticky: true
 
 | Day | Session |
 |---|---|
-| 1 | Read [Exam at a Glance](/notes/gh-600/) (the hub table) |
+| 1 | Read [[it-journey/pages/_notes/gh-600/index\|Exam at a Glance]] (the hub table) |
 | 2 | Read [Domain 1 Skills Measured](../skills-measured/#domain-1) |
 | 3 | Skim [Copilot coding agent docs](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-for-pull-requests/about-copilot-coding-agent) |
 | 4 | Start **Q1** (first half — read through "Quest Setup") |
@@ -193,7 +195,7 @@ toc_sticky: true
 | 7 | Finish **Q2** |
 | 8 | Start **Q3** |
 | 9 | Finish **Q3** |
-| 10 | Read [Chapter I — Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/) |
+| 10 | Read [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc\|Chapter I — Agents in the SDLC]] |
 
 ### Phase 2 — Tools & Environment (Days 11–30)
 

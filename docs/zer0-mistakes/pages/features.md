@@ -8,15 +8,18 @@ description: Comprehensive list of zer0-mistakes Jekyll theme features with docu
 lastmod: 2026-05-05
 layout: default
 permalink: /features/
-source_file: features.md
+source_file: pages/features.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/features.md
 subtitle: Complete Feature List
 tags:
 - features
 - documentation
 - reference
-title: '{{ page.title }}'
+title: Features
 toc: true
 ---
+
 # {{ page.title }}
 
 Complete feature registry for the zer0-mistakes Jekyll theme. All {{ site.data.features.features.size }} features are documented with references, links, and implementation details.

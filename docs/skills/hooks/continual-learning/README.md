@@ -2,7 +2,9 @@
 description: Hooks that enable AI coding agents to learn, reflect, and persist knowledge
   across sessions
 name: Continual Learning
-source_file: README.md
+source_file: hooks/continual-learning/README.md
+source_repo: microsoft/skills
+source_url: https://github.com/microsoft/skills/blob/main/hooks/continual-learning/README.md
 tags:
 - learning
 - memory
@@ -11,6 +13,7 @@ tags:
 - featured
 title: Continual Learning Hook
 ---
+
 # Continual Learning Hook
 
 Your agent forgets everything between sessions. This hook fixes that.

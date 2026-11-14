@@ -58,7 +58,9 @@ rewards:
   - 🔍 Agent Forensics
   - 📊 RCA Framework
 skill_focus: devops
-source_file: agentic-failure-root-cause-analysis.md
+source_file: pages/_quests/1010/agentic-failure-root-cause-analysis.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/agentic-failure-root-cause-analysis.md
 sub_title: 'Level 1010 Quest 4/4 — Domain 4: Evaluating Agent Performance'
 tags:
 - '1010'
@@ -68,7 +70,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: 'Step 1: Find the failed run'
+title: 'The Necromancer''s Inquest: Agent Failure Root Cause Analysis'
 validation_criteria:
   completion_requirements:
   - RCA framework documented with 5-Why template
@@ -234,11 +236,11 @@ python3 scripts/validate_quest.py --quest q12
 | 💀 Inquest Master Badge | Earned on completion |
 | 🔍 Agent Forensics | Skill unlocked |
 | 100 XP | Added to Level 1010 total |
-| Unlocks | [Q13: Reforging the Agent's Mind](/quests/1011/agentic-behavior-tuning/) |
+| Unlocks | [[it-journey/pages/_quests/1011/agentic-behavior-tuning\|Q13: Reforging the Agent's Mind]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Automation & Testing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Unlocks:** [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] **Sequel quests:** [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1010/README|Level 1010 - Automation & Testing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Unlocks:** [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] **Sequel quests:** [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

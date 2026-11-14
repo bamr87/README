@@ -55,7 +55,9 @@ rewards:
 - 🛠️ AI Integration Proficiency - Intelligent analysis and reporting capabilities
 - 🎯 Site Quality Assurance Excellence - Proactive issue detection and resolution
 skill_focus: devops
-source_file: link-to-the-future-automated-hyperlink-checking-and-error-reporting.md
+source_file: pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting.md
 sub_title: 'Level 1010 (10) Quest: Advanced CI/CD Automation and AI Integration'
 tags:
 - '1010'
@@ -64,7 +66,7 @@ tags:
 - ai-analysis
 - devops-automation
 - link-validation
-title: Install required tools using Homebrew
+title: 'Link to the Future: Automated Hyperlink Guardian Quest'
 validation_criteria:
 - Functional GitHub Actions workflow that runs daily link checks
 - Working link testing script with comprehensive coverage
@@ -1602,7 +1604,7 @@ if __name__ == "__main__":
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Automation & Testing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1010/README|Level 1010 - Automation & Testing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

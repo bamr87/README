@@ -7,9 +7,12 @@ permalink: /series/ulysses/
 sidebar:
   nav: series
   title: Browse the series
-source_file: ulysses.md
+source_file: examples/swerve-of-shore/pages/series/ulysses.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses.md
 title: Ulysses
 ---
+
 {% include page-header.html %}
 
 The main sequence: eighteen episodes covering a single day in Dublin, 16 June 1904, read in order from the 1922 first printing by Shakespeare & Co.

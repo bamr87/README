@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Artifact and optimization quests in Level 0101
 skill_focus: security
-source_file: secrets-management.md
+source_file: pages/_quests/0101/secrets-management.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/secrets-management.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Security'
 tags:
 - '0101'
@@ -84,7 +86,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install the GitHub CLI to manage repository secrets from the terminal
+title: 'Secrets Management: Secure CI Credentials'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -415,17 +417,17 @@ The overlap window in step 1 means rotation causes zero downtime: nothing breaks
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Artifact Management](/quests/0101/artifact-management/) - Provenance and signed builds
+- 🎯 [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]] - Provenance and signed builds
 
 **Explore Side Adventures**:
-- ⚔️ [Workflow Optimization](/quests/0101/workflow-optimization/) - Speed without sacrificing safety
-- ⚔️ [Environment Management](/quests/0101/environment-management/) - Per-environment secret scoping
+- ⚔️ [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]] - Speed without sacrificing safety
+- ⚔️ [[it-journey/pages/_quests/0101/environment-management|Environment Management]] - Per-environment secret scoping
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Artifact Management](/quests/0101/artifact-management/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
-**🛡️ Security Specialist**: Advance to [Artifact Management](/quests/0101/artifact-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]]
 
 ## 📚 Resources
 
@@ -454,6 +456,6 @@ The overlap window in step 1 means rotation causes zero downtime: nothing breaks
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Artifact Management: Build Output Storage and Dependency Caching]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Artifact Management: Build Output Storage and Dependency Caching]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

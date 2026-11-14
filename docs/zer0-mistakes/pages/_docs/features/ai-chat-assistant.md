@@ -23,7 +23,9 @@ prerequisites:
 preview: /images/previews/ai-chat-assistant-claude-github.png
 sidebar:
   nav: docs
-source_file: ai-chat-assistant.md
+source_file: pages/_docs/features/ai-chat-assistant.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/ai-chat-assistant.md
 tags:
 - ai
 - chatbot
@@ -32,8 +34,9 @@ tags:
 - github
 - github-pages
 - proxy
-title: AI Chat Assistant
+title: AI Chat Assistant (Claude + GitHub)
 ---
+
 # AI Chat Assistant
 
 A floating chat assistant powered by the **Claude Messages API**, grounded in the current page's content. Responses stream token-by-token, and the assistant can take GitHub actions on your repository: file an issue when a visitor reports a problem, or open a pull request that improves the page's content or UI/UX.
@@ -52,7 +55,7 @@ A ready-to-deploy Cloudflare Worker that does all of this — streaming chat pas
 
 ### Which Anthropic credential does the proxy use?
 
-The proxy answers with Claude (Anthropic) by default, or with Grok (xAI) when you give it an `XAI_API_KEY` and set `ai_chat.provider: xai` (or pin `CHAT_PROVIDER=xai` on the proxy). The widget is unchanged either way: the proxy translates Grok's OpenAI-compatible API into the Anthropic Messages stream the widget parses, tools included. Locally, the Site Builder's Connect step can hand the dev proxy either token for the session — see [Site Builder](/docs/features/site-builder/).
+The proxy answers with Claude (Anthropic) by default, or with Grok (xAI) when you give it an `XAI_API_KEY` and set `ai_chat.provider: xai` (or pin `CHAT_PROVIDER=xai` on the proxy). The widget is unchanged either way: the proxy translates Grok's OpenAI-compatible API into the Anthropic Messages stream the widget parses, tools included. Locally, the Site Builder's Connect step can hand the dev proxy either token for the session — see [[zer0-mistakes/pages/_docs/features/site-builder|Site Builder]].
 
 The proxy can authenticate to Claude two ways (auto-detected from which secrets you set):
 
@@ -217,4 +220,4 @@ bundle exec jekyll serve \
 
 - [PostHog Analytics](posthog-analytics/)
 - [Site Search](site-search/)
-- [Features Index](/docs/features/)
+- [[zer0-mistakes/pages/_docs/features/index|Features Index]]

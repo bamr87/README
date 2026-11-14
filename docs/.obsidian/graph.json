@@ -1,0 +1,186 @@
+{
+  "centerStrength": 0.5,
+  "colorGroups": [
+    {
+      "color": {
+        "a": 1,
+        "rgb": 16766287
+      },
+      "query": "path:brain/concepts"
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 6056896
+      },
+      "query": "path:\"it-journey/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 2533018
+      },
+      "query": "path:\"zer0-mistakes/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 15690752
+      },
+      "query": "path:\"bashcrawl/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 11225020
+      },
+      "query": "path:\"skills/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 4367861
+      },
+      "query": "path:\"scripts/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 10275941
+      },
+      "query": "path:\"OverTheWire-website/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 15483002
+      },
+      "query": "path:\"bamr87/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 16763432
+      },
+      "query": "path:\"bamr87.github.io/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 9268835
+      },
+      "query": "path:\"bashos/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 2541274
+      },
+      "query": "path:\"cv-pro/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 13951319
+      },
+      "query": "path:\"djangoerp/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 16740419
+      },
+      "query": "path:\"fredgar-ai/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 8280002
+      },
+      "query": "path:\"githubai/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 6732650
+      },
+      "query": "path:\"gitorio/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 2733814
+      },
+      "query": "path:\"godotgo/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 16754470
+      },
+      "query": "path:\"law-ai/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 7901340
+      },
+      "query": "path:\"lifehacker.dev/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 12216520
+      },
+      "query": "path:\"ocrmd/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 5093036
+      },
+      "query": "path:\"outbox/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 15753874
+      },
+      "query": "path:\"rewind-arcade/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 11457921
+      },
+      "query": "path:\"SCHEMA/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 9479342
+      },
+      "query": "path:\"vs-sonic-pi/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 16766287
+      },
+      "query": "path:\"zer0-CMS/\""
+    },
+    {
+      "color": {
+        "a": 1,
+        "rgb": 5227511
+      },
+      "query": "path:\"zpl-viewer/\""
+    }
+  ],
+  "linkDistance": 120,
+  "linkStrength": 1,
+  "repelStrength": 12,
+  "scale": 0.4,
+  "showOrphans": false,
+  "showTags": false
+}

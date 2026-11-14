@@ -1,5 +1,7 @@
 ---
-source_file: report.md
+source_file: docs/git-archaeology/000-first-steps/report.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/git-archaeology/000-first-steps/report.md
 title: First steps
 ---
 # First steps

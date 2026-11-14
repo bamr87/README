@@ -12,12 +12,15 @@ prerequisites: []
 preview: /images/previews/front-matter.png
 sidebar:
   nav: docs
-source_file: front-matter.md
+source_file: pages/_docs/front-matter.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/front-matter.md
 tags:
 - front-matter
 - yaml
 title: Front Matter
 ---
+
 # Front Matter
 
 Front matter is YAML metadata at the top of Markdown or HTML files that controls how Jekyll processes the content.
@@ -200,13 +203,13 @@ comments: true
 
 ## Related
 
-- [Jekyll Guide](/docs/jekyll/)
-- [Jekyll Configuration](/docs/jekyll/)
-- [Liquid Templating](/docs/liquid/)
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Guide]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Configuration]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Liquid Templating]]
 
 ## See also
 
-- [[Jekyll]]
-- [[Liquid]]
-- [[SEO]]
-- [[Customization]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Liquid]]
+- [[zer0-mistakes/pages/_docs/seo/index|SEO]]
+- [[zer0-mistakes/pages/_docs/customization/index|Customization]]

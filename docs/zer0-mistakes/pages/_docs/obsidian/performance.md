@@ -14,7 +14,9 @@ permalink: /docs/obsidian/performance/
 preview: /images/previews/obsidian-resolver-performance-caching.png
 sidebar:
   nav: docs
-source_file: performance.md
+source_file: pages/_docs/obsidian/performance.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/performance.md
 tags:
 - obsidian
 - performance
@@ -22,6 +24,7 @@ tags:
 - optimization
 title: Obsidian Resolver — Performance & Caching
 ---
+
 # Obsidian Resolver — Performance & Caching
 
 The zer0-mistakes Obsidian integration resolves `[[Wiki-links]]` on every page at build time (Ruby plugin path) or at page-load time (JavaScript path). Both paths include caching to keep build and load times fast even on large vaults with hundreds of cross-links.
@@ -109,12 +112,12 @@ Look for the `obsidian_links.rb` hook in the `:pre_render` section of the output
 
 ## Related
 
-- [Obsidian Getting Started](/docs/obsidian/getting-started/)
-- [Obsidian Syntax Reference](/docs/obsidian/syntax-reference/)
-- [Obsidian Graph View](/docs/obsidian/graph/)
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Obsidian Getting Started]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
 
 ## See also
 
 - [[Obsidian]]
-- [[Performance]]
-- [[Development]]
+- [[zer0-mistakes/pages/_docs/obsidian/performance|Performance]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

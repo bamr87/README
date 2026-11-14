@@ -60,12 +60,14 @@ rewards:
   - Specialization-specific quest recommendations
 skill_focus: fullstack
 slug: character-selection
-source_file: character-selection.md
+source_file: pages/_quests/0000/character-selection.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/character-selection.md
 tags:
 - character-selection
 - career-paths
 - '0000'
-title: Character Selection
+title: 'Character Selection: Choose Your IT Class'
 validation_criteria:
   completion_requirements:
   - Identify your primary IT character class
@@ -181,7 +183,7 @@ Remember, these roles often intersect and overlap, and it's common to switch rol
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Begin your IT Journey]] **Unlocks:** [[Character Building: Forge Your IT Identity and Development Environment]] **Sequel quests:** [[Character Building: Forge Your IT Identity and Development Environment]] **Parallel quests:** [[IT Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[Begin your IT Journey]] **Unlocks:** [[Character Building: Forge Your IT Identity and Development Environment]] **Sequel quests:** [[Character Building: Forge Your IT Identity and Development Environment]] **Parallel quests:** [[IT Fundamentals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:58+00:00
 description: 'Minimal copy-paste recipes for extending Zer0-Mistakes: adding layouts,
   components, skins, and other building blocks on top of the design system.'
 lastmod: 2026-05-31 20:54:58+00:00
-source_file: extending.md
+source_file: docs/ui/extending.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/extending.md
 tags:
 - ui
 - styling
 - theme
 title: Extending the theme
 ---
+
 # Extending the theme
 
 Recipes for adding new building blocks to zer0-mistakes. Each recipe is intentionally minimal — copy, paste, and adjust.
@@ -226,4 +229,4 @@ Drop a `*.spec.js` under `test/visual/core/` (cross-cutting quality baseline) or
 
 ---
 
-> **User guide**: For usage and configuration examples (how to extend the theme as a user), see [Customization](/docs/customization/) in the user documentation.
+> **User guide**: For usage and configuration examples (how to extend the theme as a user), see [[zer0-mistakes/pages/_docs/customization/index|Customization]] in the user documentation.

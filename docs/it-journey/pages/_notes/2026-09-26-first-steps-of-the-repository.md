@@ -14,12 +14,14 @@ keywords:
 - it-journey
 lastmod: '2026-09-26T21:01:42.000Z'
 permalink: /notes/git-archaeology/first-steps/
-source_file: 2026-09-26-first-steps-of-the-repository.md
+source_file: pages/_notes/2026-09-26-first-steps-of-the-repository.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/2026-09-26-first-steps-of-the-repository.md
 tags:
 - git
 - history
 - archaeology
-title: 2026 09 26 First Steps Of The Repository
+title: The repository's first six commits
 ---
 The repository does not begin as a platform. It begins as two lines in `README.md`, committed on 2020-07-30 at 10:19:45 -0600, with no parent. The file says `# it-journey` and then `From zero to hero collection of docs, tools, scripts, and information to support your IT journey`. The committer is GitHub, not a local Git identity. That is the whole root. [git-commit:ab523954f523ddaf7402682c79630b36958fad79](https://github.com/bamr87/it-journey/commit/ab523954f523ddaf7402682c79630b36958fad79)
 

@@ -28,18 +28,21 @@ prerequisites:
 preview: /images/previews/ai-preview-image-generator.png
 sidebar:
   nav: docs
-source_file: preview-image-generator.md
+source_file: fr/docs/features/preview-image-generator.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/preview-image-generator.md
 tags:
 - ai
 - preview
 - images
 - claude
 - dall-e
-title: Générateur d'images d'aperçu par IA
+title: Générateur d'images de prévisualisation IA pour les articles Jekyll
 translated_from_sha: 9901ab3fc428
 translation_of: pages/_docs/features/preview-image-generator.md
 translation_source_url: /docs/features/preview-image-generator/
 ---
+
 # Générateur d'images d'aperçu par IA
 
 Générez automatiquement des images d'aperçu pour vos articles et vos pages à l'aide de services de génération d'images par IA.
@@ -349,7 +352,7 @@ export OPENAI_API_KEY="sk-..."
 
 ## Voir aussi
 
-- [Balises méta SEO](/docs/seo/meta-tags/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Balises méta SEO]]
 - [Documentation de l'API OpenAI](https://platform.openai.com/docs/guides/images)
 
 ## Référence technique
@@ -360,5 +363,5 @@ Pour les détails d'implémentation (architecture multi-fournisseurs, intégrati
 
 ## Voir aussi
 
-- [[Features]]
+- [[zer0-mistakes/features/README|Features]]
 - [[SEO]]

@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/climate-data-dashboards/
 preview: /images/previews/climate-data-dashboards-turning-measurements-into-.png
-source_file: 2026-04-28-climate-data-dashboards.md
+source_file: fr/posts/science/2026-04-28-climate-data-dashboards.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/science/2026-04-28-climate-data-dashboards.md
 tags:
 - climate
 - data-visualization
 - dashboards
 - decision-science
-title: 2026 04 28 Climate Data Dashboards
+title: 'Tableaux de bord des données climatiques : transformer les mesures en décisions'
 translated_from_sha: c10375efe992
 translation_of: pages/_posts/science/2026-04-28-climate-data-dashboards.md
 translation_source_url: /posts/2026/04/28/climate-data-dashboards/
 ---
+
 Les données climatiques sont abondantes, mais l'abondance ne crée pas automatiquement de la compréhension. Les réseaux de capteurs, les produits satellitaires, les rapports de terrain et les archives historiques résident souvent dans des systèmes séparés. Un tableau de bord utile transforme ces preuves dispersées en une décision que les gens peuvent prendre dès aujourd'hui.
 
 Le défi n'est pas seulement technique. Il est éditorial. Un tableau de bord doit décider de ce qui compte, de ce qui peut être masqué et de ce qui nécessite une attention immédiate.

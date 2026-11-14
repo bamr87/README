@@ -11,7 +11,9 @@ lastmod: '2026-05-23T00:00:00.000Z'
 layout: index
 permalink: /sitemap/
 slug: sitemap
-source_file: sitemap.md
+source_file: pages/sitemap.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/sitemap.md
 tags:
 - search
 - sitemap

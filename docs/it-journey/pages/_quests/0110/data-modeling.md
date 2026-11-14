@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Deeper schema-design challenges in the Database Mastery line
 skill_focus: data-engineering
-source_file: data-modeling.md
+source_file: pages/_quests/0110/data-modeling.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/data-modeling.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - ER Modeling & Schema Design'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: Data Modeling
+title: 'Data Modeling: Schema Design and Database Relationships'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understanding of tables, rows, columns, and keys
 - [ ] Familiarity with primary and foreign keys
-- [ ] Completion of [Database Fundamentals](/quests/0110/database-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -381,17 +383,17 @@ The result is exactly the four tables from Chapter 2. Normalization is not acade
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [SQL Mastery](/quests/0110/sql-mastery/) - JOIN across the tables you modeled
+- 🎯 [[it-journey/pages/_quests/0110/sql-mastery|SQL Mastery]] - JOIN across the tables you modeled
 
 **Explore Side Adventures**:
-- ⚔️ [Query Optimization](/quests/0110/query-optimization/) - Tune queries over your schema
-- ⚔️ [Database Migrations](/quests/0110/database-migrations/) - Evolve the schema safely
+- ⚔️ [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]] - Tune queries over your schema
+- ⚔️ [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]] - Evolve the schema safely
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)  
-**🏗️ System Engineer**: Explore [Database Migrations](/quests/0110/database-migrations/)  
-**📊 Data Scientist**: Advance to [Query Optimization](/quests/0110/query-optimization/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/sql-mastery|SQL Mastery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]]
 
 ## 📚 Resources
 
@@ -420,7 +422,7 @@ The result is exactly the four tables from Chapter 2. Normalization is not acade
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] · [[Query Optimization: Performance Tuning for Fast Database Queries]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] · [[Query Optimization: Performance Tuning for Fast Database Queries]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

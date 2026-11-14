@@ -16,15 +16,18 @@ keywords:
 - teaching to learn
 - developer education
 lastmod: '2026-06-13T00:00:00.000Z'
-source_file: curriculum.md
+source_file: pages/_notes/dev/curriculum.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/dev/curriculum.md
 tags:
 - curriculum
 - learning-methodology
 - teaching
 - developer-education
-title: Curriculum
+title: 'IT-Journey Curriculum: Build to Teach'
 updated: 2026-06-13 00:00:00+00:00
 ---
+
 You don't know what you can't teach.
 
 That's the governing constraint. If you cannot explain a concept clearly enough for someone else to act on it, you don't actually understand it — you've just memorized enough to get through the task.

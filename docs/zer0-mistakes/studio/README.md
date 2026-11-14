@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: studio/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/studio/README.md
 title: zer0 studio
 ---
 # zer0 studio

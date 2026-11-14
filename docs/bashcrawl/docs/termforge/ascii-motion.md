@@ -1,5 +1,7 @@
 ---
-source_file: ascii-motion.md
+source_file: docs/termforge/ascii-motion.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/termforge/ascii-motion.md
 title: ASCII Motion in TermForge
 ---
 # ASCII Motion in TermForge

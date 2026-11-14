@@ -4,9 +4,26 @@
 # Format: one clone URL per line, optional #branch suffix.
 
 https://github.com/bamr87/scripts
-https://github.com/bamr87/skills
-https://github.com/bamr87/barodybroject
+https://github.com/microsoft/skills
 https://github.com/bamr87/bashcrawl
 https://github.com/bamr87/zer0-mistakes
 https://github.com/bamr87/it-journey
 https://github.com/OverTheWireOrg/OverTheWire-website#gh-pages
+https://github.com/bamr87/bamr87
+https://github.com/bamr87/bamr87.github.io
+https://github.com/bamr87/bashos
+https://github.com/bamr87/cv-pro
+https://github.com/bamr87/djangoerp
+https://github.com/bamr87/fredgar-ai
+https://github.com/bamr87/githubai
+https://github.com/bamr87/gitorio
+https://github.com/bamr87/godotgo
+https://github.com/bamr87/law-ai
+https://github.com/bamr87/lifehacker.dev
+https://github.com/bamr87/ocrmd
+https://github.com/bamr87/outbox
+https://github.com/bamr87/rewind-arcade
+https://github.com/bamr87/SCHEMA
+https://github.com/bamr87/vs-sonic-pi
+https://github.com/bamr87/zer0-CMS
+https://github.com/bamr87/zpl-viewer

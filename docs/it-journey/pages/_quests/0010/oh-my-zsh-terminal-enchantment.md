@@ -85,7 +85,9 @@ rewards:
   - Access to advanced shell scripting quests
   - Eligibility for DevOps automation quest line
 skill_focus: devops
-source_file: oh-my-zsh-terminal-enchantment.md
+source_file: pages/_quests/0010/oh-my-zsh-terminal-enchantment.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/oh-my-zsh-terminal-enchantment.md
 sub_title: 'Level 0010 (2) Quest: Terminal Supercharging and Customization'
 tags:
 - '0010'
@@ -98,7 +100,7 @@ tags:
 - development-workflow
 - command-line-efficiency
 - gamified-learning
-title: macOS-specific preparation
+title: 'Terminal Enchantment: Oh-My-Zsh Mastery'
 validation_criteria:
   completion_requirements:
   - Successfully install Oh-My-Zsh framework
@@ -1432,7 +1434,7 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Recommended:** [[Nerd Font Enchantment: Terminal Icon Mastery]] **Unlocks:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Sequel quests:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Parallel quests:** [[Advanced Markdown: Tables, Footnotes & Extended Syntax]] **Related quests:** [[Nerd Font Enchantment: Terminal Icon Mastery]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Recommended:** [[it-journey/pages/_quests/0010/nerd-font-enchantment|Nerd Font Enchantment: Terminal Icon Mastery]] **Unlocks:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Sequel quests:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Parallel quests:** [[Advanced Markdown: Tables, Footnotes & Extended Syntax]] **Related quests:** [[it-journey/pages/_quests/0010/nerd-font-enchantment|Nerd Font Enchantment: Terminal Icon Mastery]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

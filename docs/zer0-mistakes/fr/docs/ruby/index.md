@@ -14,15 +14,18 @@ prerequisites: []
 preview: /images/previews/ruby.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/ruby/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/ruby/index.md
 tags:
 - ruby
 - bundler
-title: Ruby & Bundler
+title: Ruby
 translated_from_sha: 06536d065d91
 translation_of: pages/_docs/ruby/index.md
 translation_source_url: /docs/ruby/
 ---
+
 # Ruby & Bundler
 
 Jekyll est conçu avec Ruby. Comprendre les bases facilite le dépannage et la personnalisation.
@@ -103,18 +106,18 @@ bundle update
 
 ## En savoir plus
 
-- [Ruby 101](/docs/ruby-101/) - Bases détaillées de Ruby
+- [[zer0-mistakes/pages/_docs/ruby-101|Ruby 101]] - Bases détaillées de Ruby
 - [Documentation officielle de Ruby](https://www.ruby-lang.org/en/documentation/)
 - [Documentation de Bundler](https://bundler.io/docs.html)
 
 ## Connexe
 
-- [Guide d'installation](/docs/installation/)
-- [Guide Jekyll](/docs/jekyll/)
-- [Développement avec Docker](/docs/docker/)
+- [[zer0-mistakes/pages/_docs/installation|Guide d'installation]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Guide Jekyll]]
+- [[zer0-mistakes/pages/_docs/docker/index|Développement avec Docker]]
 
 ## Voir aussi
 
-- [[Jekyll]]
-- [[Docker]]
-- [[Installation]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

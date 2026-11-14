@@ -6,10 +6,13 @@ personas:
 - practitioner
 - contributor
 section: dig
-source_file: dig.md
-title: Digs — Section Guide
+source_file: _data/brand/sections/dig.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/sections/dig.md
+title: Digs
 voice_profile: git-dig
 ---
+
 # Digs — Section Guide
 
 This is the voice layer for `pages/_digs`. Structure is owned by `.github/instructions/digs.instructions.md` and checked by `scripts/digs/validate_dig.py`. Do not restate the brand pillars here.

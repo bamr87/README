@@ -11,13 +11,16 @@ permalink: /docs/getting-started/
 preview: /images/previews/getting-started.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/getting-started/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/getting-started/index.md
 tags:
 - quickstart
 - setup
 - installation
 title: Getting Started
 ---
+
 # Getting Started
 
 Welcome to Zer0-Mistakes! Choose your path to get started with the theme.
@@ -50,15 +53,15 @@ For most installation methods, you'll need:
 
 After installation:
 
-1. [Configure your site](/docs/front-matter/) — Set up front matter for your pages
-2. [Enable features](/docs/features/) — Add diagrams, comments, analytics
-3. [Deploy your site](/docs/deployment/) — Publish to GitHub Pages or Netlify
+1. [[zer0-mistakes/pages/_docs/front-matter|Configure your site]] — Set up front matter for your pages
+2. [[zer0-mistakes/pages/_docs/features/index|Enable features]] — Add diagrams, comments, analytics
+3. [[zer0-mistakes/pages/_docs/deployment/index|Deploy your site]] — Publish to GitHub Pages or Netlify
 
 ## See also
 
-- [[Installation]]
-- [[front-matter]]
-- [[Customization]]
-- [[Features]]
-- [[Deployment]]
-- [[Obsidian Vault Integration]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]

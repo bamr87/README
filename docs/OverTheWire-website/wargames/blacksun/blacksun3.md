@@ -2,7 +2,9 @@
 gamename: blacksun
 layout: default
 level: 3
-source_file: blacksun3.md
+source_file: wargames/blacksun/blacksun3.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/blacksun3.md
 title: Blacksun3
 ---
 Level3 is a blast from the past, with not much details and a sstriped binary!

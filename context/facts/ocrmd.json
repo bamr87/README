@@ -1,0 +1,114 @@
+{
+  "corpus": {
+    "file_count": 25,
+    "fingerprint": "68d9d2fc209634fd",
+    "path": "docs/ocrmd",
+    "present": true,
+    "total_bytes": 250401
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Usage",
+      "Configuration",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing",
+      "Changelog"
+    ],
+    "readme": "README.md",
+    "summary": "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.",
+    "title": "ocrmd"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "docs/ARCHITECTURE.md",
+    "docs/reference/cli.md",
+    "docs/scanning.md",
+    "docs/reference/settings.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/ocrmd.md",
+    "fingerprint": "b175f4a8c3b103e5",
+    "index": "ocrmd/README.md",
+    "max_depth": 3,
+    "pages": 25,
+    "present": true,
+    "sections": 4,
+    "skipped": 0,
+    "title": "OCRmd",
+    "top_sections": [
+      {
+        "index": "ocrmd/docs/README.md",
+        "pages": 19,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/ocrmd.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "ocrmd",
+    "registry_description": "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.",
+    "repo": "bamr87/ocrmd",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/ocrmd"
+  },
+  "rollups": {
+    "categories": {
+      "ocrmd": 25
+    },
+    "code_languages": [
+      "text",
+      "plaintext",
+      "sh",
+      "python",
+      "bash",
+      "markdown",
+      "toml"
+    ],
+    "indexed_documents": 25,
+    "top_tags": [],
+    "total_words": 38008
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 19,
+        "name": "docs"
+      },
+      {
+        "doc_count": 1,
+        "name": "examples"
+      }
+    ]
+  }
+}

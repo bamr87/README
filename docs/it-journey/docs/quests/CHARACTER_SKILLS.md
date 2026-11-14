@@ -1,5 +1,7 @@
 ---
-source_file: CHARACTER_SKILLS.md
+source_file: docs/quests/CHARACTER_SKILLS.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/quests/CHARACTER_SKILLS.md
 title: Character Skills — per-path voices and exercises for the quest-perfection loop
 ---
 # Character Skills — per-path voices and exercises for the quest-perfection loop

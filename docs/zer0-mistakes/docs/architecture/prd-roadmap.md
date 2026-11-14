@@ -6,15 +6,18 @@ date: 2026-04-11 00:00:00+00:00
 description: Success metrics, release roadmap, security and compliance requirements,
   stakeholder needs, and acceptance criteria for the zer0-mistakes theme.
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: prd-roadmap.md
+source_file: docs/architecture/prd-roadmap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/prd-roadmap.md
 status: Active
 tags:
 - architecture
 - product
 - prd
 - roadmap
-title: Prd Roadmap
+title: 'PRD: Roadmap, Metrics, and Compliance'
 ---
+
 ## 📊 Success Metrics & KPIs
 
 ### Installation Success
@@ -444,7 +447,7 @@ title: Prd Roadmap
 - [README.md](../../README.md) - User-facing project overview
 - [CHANGELOG.md](../../CHANGELOG.md) - Version history and changes
 - [CONTRIBUTING.md](../../CONTRIBUTING.md) - Contribution guidelines
-- [.github/seed/](../../.github/seed/) - Comprehensive seed documentation
+- [.github/seed/](../../dot-github/seed/) - Comprehensive seed documentation
 
 ### Appendix C: References
 

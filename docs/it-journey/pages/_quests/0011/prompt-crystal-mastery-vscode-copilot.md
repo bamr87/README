@@ -85,7 +85,9 @@ rewards:
   - Ability to create team-wide prompt standards
   - Foundation for MCP server prompt patterns
 skill_focus: fullstack
-source_file: prompt-crystal-mastery-vscode-copilot.md
+source_file: pages/_quests/0011/prompt-crystal-mastery-vscode-copilot.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot.md
 sub_title: 'Level 0011 (3) Quest: Main Quest - VS Code Copilot Prompt Mastery'
 tags:
 - '0011'
@@ -95,7 +97,7 @@ tags:
 - tool-mastery
 - hands-on
 - gamified-learning
-title: Install VS Code Copilot extensions via CLI
+title: 'Forging the Prompt Crystal: VS Code Copilot Mastery Quest'
 validation_criteria:
   completion_requirements:
   - Create and test 3 structured prompts using the RCTF pattern
@@ -1321,7 +1323,7 @@ Before completing this quest, verify you can:
 | `.github/instructions/prompts.instructions.md` | Kaizen-integrated prompt engineering guide |
 | `.github/instructions/posts.instructions.md` | Post creation standards |
 | `.github/prompts/` | Example prompt templates |
-| [Prompt Engineering Quest](/quests/0010/prompt-engineering-mastery/) | Prerequisite fundamentals |
+| [[it-journey/pages/_quests/0010/prompt-engineering\|Prompt Engineering Quest]] | Prerequisite fundamentals |
 
 ### 💬 Community Support
 
@@ -1431,7 +1433,7 @@ After completing this quest, update:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0011 - Development Tools & AI Integration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0011/README|Level 0011 - Development Tools & AI Integration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

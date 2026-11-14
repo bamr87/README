@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 11
-source_file: semtex11.md
+source_file: wargames/semtex/semtex11.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex11.md
 title: Semtex11
 ---
 Deja vue

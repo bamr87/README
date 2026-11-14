@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 1101 Machine Learning & AI quest line
 skill_focus: ai-ml
-source_file: ai-ethics.md
+source_file: pages/_quests/1101/ai-ethics.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/ai-ethics.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - AI Ethics'
 tags:
 - '1101'
@@ -85,7 +87,7 @@ tags:
 - data-science
 - conceptual
 - gamified-learning
-title: Verify the fairness toolkit loads
+title: 'AI Ethics: Bias Detection, Fairness & Governance'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -400,17 +402,17 @@ MODEL CARD — Loan Default Classifier v2.1
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 You have reached the conscience of the Tower. Return to the [Level 1101 hub](/quests/1101/) to review your mastery.
+- 🎯 You have reached the conscience of the Tower. Return to the [[it-journey/pages/_quests/1101/README|Level 1101 hub]] to review your mastery.
 
 **Explore Side Adventures**:
-- ⚔️ [MLOps Engineering](/quests/1101/mlops/) - Govern models in production
-- ⚔️ [Natural Language Processing](/quests/1101/natural-language-processing/) - Where bias hides in language
+- ⚔️ [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]] - Govern models in production
+- ⚔️ [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]] - Where bias hides in language
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [MLOps Engineering](/quests/1101/mlops/) with governance in mind  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/) for oversight tooling  
-**📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
+**💻 Software Developer**: Revisit [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]] with governance in mind  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]] for oversight tooling  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]]
 
 ## 📚 Resources
 
@@ -439,6 +441,6 @@ MODEL CARD — Loan Default Classifier v2.1
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Required:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Recommended:** [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Required:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Recommended:** [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

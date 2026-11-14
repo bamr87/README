@@ -22,7 +22,9 @@ layout: default
 permalink: /notes/gh-600/recommended-resources/
 redirect_from:
 - /docs/certifications/gh-600/recommended-resources/
-source_file: recommended-resources.md
+source_file: pages/_notes/gh-600/recommended-resources.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/recommended-resources.md
 tags:
 - gh-600
 - agentic-ai
@@ -121,11 +123,11 @@ These posts cover real-world agentic AI patterns directly relevant to GH-600 exa
 
 ### Weak-Area Triage
 
-Use the [Skills Checklist](/notes/gh-600/skills-checklist/) to identify gaps, then:
+Use the [[it-journey/pages/_notes/gh-600/skills-checklist|Skills Checklist]] to identify gaps, then:
 
 1. Re-do the corresponding quest for any sub-skill below confidence
 2. Re-read the chronicle post that covers the domain
-3. Use the [Evaluation Signals Table](/notes/gh-600/evaluation-signals-table/) or [Autonomy Levels Matrix](/notes/gh-600/autonomy-levels-matrix/) reference notes to solidify decision-making frameworks
+3. Use the [[it-journey/pages/_notes/gh-600/evaluation-signals-table|Evaluation Signals Table]] or [[it-journey/pages/_notes/gh-600/autonomy-levels-matrix|Autonomy Levels Matrix]] reference notes to solidify decision-making frameworks
 
 ### Common Mistakes to Avoid
 

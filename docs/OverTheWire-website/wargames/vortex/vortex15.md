@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 15
-source_file: vortex15.md
+source_file: wargames/vortex/vortex15.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex15.md
 title: Vortex15
 ---
 Weak Encryption

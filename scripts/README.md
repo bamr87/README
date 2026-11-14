@@ -26,8 +26,8 @@ This directory contains a comprehensive suite of automation scripts for document
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Script Inventory](#script-inventory)
-  - [Aggregation Scripts](#aggregation-scripts)
-  - [Processing Scripts](#processing-scripts)
+  - [Collect](#collect-context_enginecollectpy)
+  - [Vault and brain](#vault-and-brain-context_enginevaultpy-context_enginebrainpy)
   - [Quality Assurance Scripts](#quality-assurance-scripts)
   - [AI Harmonization System](#ai-harmonization-system)
   - [Orchestration Scripts](#orchestration-scripts)
@@ -54,8 +54,8 @@ The documentation processing pipeline automates the following tasks:
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   Repository    │────▶│   Aggregation   │────▶│   Processing    │
-│   Sources       │     │   (aggregate.sh)│     │   (process.py)  │
+│   Repository    │────▶│   Collect       │────▶│   Vault         │
+│   Sources       │     │   (collect.py)  │     │   docs/         │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
                                                         │
                         ┌───────────────────────────────┘
@@ -81,9 +81,6 @@ The documentation processing pipeline automates the following tasks:
 
 ```
 scripts/
-├── aggregate.py            # Repository operations module
-├── aggregate.sh            # Main aggregation orchestrator
-├── process.py              # Documentation processing pipeline
 ├── check_frontmatter.py    # YAML frontmatter validator
 ├── clean_frontmatter.py    # Frontmatter normalizer
 ├── fix_frontmatter_icons.py # Navigation gate: icon: frontmatter normalizer
@@ -98,6 +95,9 @@ scripts/
 ├── check_tracked_surfaces.py # Integrity gate: surfaces reference tracked files
 ├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
+│   ├── collect.py          # Extract, transform, load: repositories -> docs/
+│   ├── vault.py            # Notes, link resolution, weaving, the graph
+│   ├── brain.py            # Generated notes under docs/brain/ + Obsidian settings
 │   ├── extractor.py        # Corpus -> structured facts (L2)
 │   ├── synthesizer.py      # Facts -> project cards (L1)
 │   ├── assembler.py        # Apex README, AUTO span, site index (L0)
@@ -125,10 +125,10 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
-| 2. Processing | `raw_docs/` | `docs/` | `process.py`, `../tools/unwrap-prose.py` |
+| 1-2. Collect | `_data/projects.yml` | `docs/{project}/`, `context/vault/collect.json` | `context_engine/collect.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
+| 4b. Brain | `docs/` + registry `brain:` + `../notes/` | `docs/brain/`, `docs/.obsidian/` | `context_engine/brain.py` |
 | 5. Navigation | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `context_engine/navigator.py` |
 | 6. Distillation | `docs/` + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
 | 7. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
@@ -169,30 +169,6 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 **Output**: Fixed markdown files, detailed compatibility report
 
-#### aggregate_mkdocs.py
-**Purpose**: Aggregate documentation from multiple repositories with MkDocs-optimized structure
-
-**Key Features:**
-- Organizes docs into MkDocs-friendly categories (setup, api, architecture, etc.)
-- Normalizes YAML frontmatter for MkDocs
-- Preserves source repository structure
-- Generates category index files
-- Creates metadata for navigation
-
-**Usage:**
-```bash
-# Aggregate with structure preservation
-./aggregate_mkdocs.py ../temp ../docs
-
-# Flatten structure
-./aggregate_mkdocs.py ../temp ../docs --flatten
-
-# Skip automatic index creation
-./aggregate_mkdocs.py ../temp ../docs --no-create-indexes
-```
-
-**Output**: Categorized documentation, index files, repos_metadata.yaml
-
 #### mkdocs_quality_report.py
 **Purpose**: Analyze documentation quality and MkDocs compatibility
 
@@ -219,113 +195,48 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 ---
 
-### Aggregation Scripts
+### Collect (`context_engine/collect.py`)
 
-#### `aggregate.sh`
+**Purpose**: The whole extract, transform and load path of the corpus, as one stage.
 
-**Purpose**: Main orchestration script for cloning/updating repositories and extracting documentation files.
+**Key features**:
 
-**Features**:
-- Reads repository URLs from `repos.txt`
-- Clones new repositories or pulls updates for existing ones
-- Extracts markdown files while skipping `.git` directories
-- Sets up Python virtual environment with required dependencies
-- Invokes `process.py` for documentation processing
-- Unwraps soft-wrapped prose in the freshly written corpus (`../tools/unwrap-prose.py --write docs`, excluding `SCHEMA.md` and `CHANGELOG.md` exactly as the `markdown-oneline` workflow does) so the crawl and that gate stop rewriting each other's work
-
-**Usage**:
-```bash
-./scripts/aggregate.sh
-```
-
-**Input**: `repos.txt` (one repository URL per line, supports comments with `#`)
-
-**Output Directories**:
-- `temp/` - Temporary clone directory (cleaned up after processing)
-- `raw_docs/` - Extracted documentation files
-- `docs/` - Processed and organized documentation
-
-**Example `repos.txt`**:
-```text
-# Main documentation repositories
-https://github.com/owner/repo1
-https://github.com/owner/repo2.git
-
-# Skipped (commented out)
-# https://github.com/owner/archived-repo
-```
-
----
-
-#### `aggregate.py`
-
-**Purpose**: Python module providing core repository operations for the aggregation pipeline.
-
-**Functions**:
-
-| Function | Description |
-|----------|-------------|
-| `extract_repo_name(repo_url)` | Extract repository name from URL (handles `.git` suffix) |
-| `is_valid_repo_url(repo_url)` | Validate GitHub/GitLab repository URLs |
-| `git_clone_repo(repo_url, dest_dir)` | Clone a repository with timeout handling |
-| `git_pull_repo(repo_dir)` | Pull latest changes from existing repository |
-| `find_documentation_files(repo_dir)` | Find `.md`, `README`, `.rst`, `.txt` files |
-| `copy_documentation_files(source_dir, dest_dir)` | Copy documentation preserving structure |
-| `process_repository(repo_url, temp_dir, raw_docs_dir)` | Process a single repository end-to-end |
-
-**Supported URL Patterns**:
-- `https://github.com/owner/repo`
-- `https://github.com/owner/repo.git`
-- `git@github.com:owner/repo.git`
-- `https://gitlab.com/owner/repo`
-
----
-
-### Processing Scripts
-
-#### `process.py`
-
-**Purpose**: Core documentation processing pipeline that categorizes, enriches, and organizes documentation files.
-
-**Features**:
-- **Content Categorization**: Automatically categorizes docs into `api`, `setup`, `user-guides`, `development`, `architecture`, or `misc`
-- **YAML Frontmatter Generation**: Creates comprehensive metadata for each file
-- **AI-Enhanced Analysis** (optional): Uses AI API for enhanced content analysis
-- **Tag Generation**: Extracts technology and category tags from content
-- **Summary Extraction**: Generates summaries from first substantial paragraph
-
-**Categories**:
-
-| Category | Keywords Detected |
-|----------|-------------------|
-| `setup` | install, installation, setup, configuration, deployment |
-| `api` | api, endpoint, rest, graphql, swagger, openapi, reference |
-| `user-guides` | guide, tutorial, how-to, walkthrough, getting started |
-| `development` | development, contributing, build, testing, ci/cd, pipeline |
-| `architecture` | architecture, design, overview, concepts, principles |
-| `misc` | Default for uncategorized content |
-
-**Generated Frontmatter**:
-```yaml
----
-title: Extracted or generated title
-summary: First paragraph summary (max 200 chars)
-tags:
-  - detected-technology
-  - category-tag
-category: determined-category
-source_file: original-filename.md
-last_updated: null
----
-```
+- Reads `_data/projects.yml`; a project's `collect:` rules, plus the fleet-wide ones, say what counts as official documentation
+- Takes only git-tracked Markdown, so ignored build output never enters the corpus
+- Normalizes in memory: front matter, provenance (`source_repo`, `source_file`, `source_url`), icons, tags, one paragraph per line
+- Renames dot-directories with `collect.hidden_prefix`, since neither GitHub Pages nor Obsidian shows them
+- Stages every project first, then weaves links across the whole corpus, then writes only what changed and deletes what upstream dropped
+- Freezes a project it cannot reach: its pages stay, re-normalized, and the hot note says so. The run fails only when no repository is reachable
 
 **Usage**:
+
 ```bash
-python3 scripts/process.py
+python3 -m scripts.context_engine collect                        # every aggregated project
+python3 -m scripts.context_engine collect bashcrawl it-journey   # some of them
+python3 -m scripts.context_engine collect --workspace ~/github   # local checkouts where they exist
 ```
 
-**Environment Variables**:
-- `XAI_API_KEY`: Optional API key for AI-enhanced content analysis
+**Outputs**: `docs/<project>/`, `context/vault/collect.json` (the commit each crawl read), `context/vault/log.jsonl` (one line per corpus change).
+
+A second run over unchanged sources changes nothing.
+
+---
+
+### Vault and brain (`context_engine/vault.py`, `context_engine/brain.py`)
+
+**Purpose**: Read `docs/` as one Obsidian vault and write the notes that connect it.
+
+`vault.py` is the single definition of a note and of what a link points at. The crawl, the generator, the query layer and the MkDocs hook all resolve links through its `Resolver`, so Obsidian, the site and MCP clients agree. Its weave step rewrites Jekyll permalink links and title wikilinks into path-qualified wikilinks; what it cannot resolve stays as written and shows up in `lint`.
+
+`brain.py` regenerates `docs/brain/` on each build: concept notes (from shared tags and from links nothing answers), project notes, the hot cache, the change log, vault health, the tag index, `fleet.canvas`, `pages.base` and `docs/.obsidian/`. Tune it with the `brain:` block in the registry. AI summaries are cached in `context/vault/synthesis.json`, so a build without a key reproduces the last one.
+
+```bash
+python3 -m scripts.context_engine hot                     # what changed, what connects
+python3 -m scripts.context_engine note "Docker"           # text, backlinks, links
+python3 -m scripts.context_engine neighbours "Docker" --depth 2
+python3 -m scripts.context_engine lint                    # unresolved links, orphans
+python3 -m scripts.context_engine save "Title" "Body"     # file a note under notes/
+```
 
 ---
 
@@ -686,7 +597,7 @@ python3 scripts/fix_frontmatter_icons.py --apply            # rewrite in place
 python3 scripts/fix_frontmatter_icons.py --root docs/skills --apply
 ```
 
-Runs automatically in two places: `process.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.
+Runs automatically in two places: `context_engine/collect.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.
 
 ---
 
@@ -1010,15 +921,12 @@ client = GrokClient(config)
 
 ### Quick Start
 
-1. **Setup repositories list**:
-   ```bash
-   cp repos.txt.example repos.txt
-   # Edit repos.txt with your repository URLs
-   ```
+1. **Add a repository** to `_data/projects.yml`.
 
-2. **Run full aggregation pipeline**:
+2. **Collect the corpus and build**:
    ```bash
-   ./scripts/aggregate.sh
+   python3 -m scripts.context_engine collect
+   python3 -m scripts.context_engine build
    ```
 
 3. **Run quality checks**:
@@ -1034,9 +942,6 @@ client = GrokClient(config)
 ### Individual Script Usage
 
 ```bash
-# Process raw docs into organized structure
-python3 scripts/process.py
-
 # Validate frontmatter
 python3 scripts/check_frontmatter.py --fix
 
@@ -1055,13 +960,13 @@ python3 scripts/generate_docs_report.py
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `XAI_API_KEY` | API key for AI-enhanced content analysis in `process.py` | No |
+| `XAI_API_KEY` | API key for AI enrichment in the context engine | No |
 
 ### File-Based Configuration
 
 | File | Purpose |
 |------|---------|
-| `repos.txt` | List of repository URLs to aggregate |
+| `repos.txt` | Generated list of aggregated repositories; nothing reads it to crawl |
 | `requirements.txt` | Python dependencies |
 
 ---
@@ -1087,7 +992,7 @@ requests
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Or use virtual environment (handled automatically by aggregate.sh)
+# Or use a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -1158,9 +1063,9 @@ repos:
 | Issue | Solution |
 |-------|----------|
 | `No python interpreter found` | Install Python 3.7+ and ensure it's in PATH |
-| `Module yaml not found` | Run `pip install pyyaml` or let `aggregate.sh` create venv |
+| `Module yaml not found` | Run `pip install -r requirements.txt` |
 | `Permission denied` | Make scripts executable: `chmod +x scripts/*.sh` |
-| `Git clone timeout` | Check network connection; increase timeout in `aggregate.py` |
+| `Git clone timeout` | Check network connection; increase `CLONE_TIMEOUT` in `context_engine/collect.py` |
 
 ### Debug Mode
 
@@ -1168,7 +1073,7 @@ For verbose output, examine script execution:
 
 ```bash
 # Run with bash debug mode
-bash -x scripts/aggregate.sh
+python3 -m scripts.context_engine collect bashcrawl
 
 # Check Python script errors
 python3 scripts/lint_docs.py 2>&1 | tee lint_output.log

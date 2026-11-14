@@ -15,7 +15,9 @@ permalink: /fr/docs/seo/aieo/
 preview: /images/previews/aieo-ai-engine-optimization.png
 sidebar:
   nav: docs
-source_file: aieo.md
+source_file: fr/docs/seo/aieo.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/seo/aieo.md
 tags:
 - seo
 - aieo
@@ -28,6 +30,7 @@ translated_from_sha: 2ca067bf7e91
 translation_of: pages/_docs/seo/aieo.md
 translation_source_url: /docs/seo/aieo/
 ---
+
 # AIEO — Optimisation pour les moteurs d'IA
 
 **L'optimisation pour les moteurs d'IA (AIEO)** étend les pratiques SEO traditionnelles pour améliorer la façon dont les moteurs de recherche pilotés par l'IA, les LLM et les assistants IA découvrent, comprennent et citent votre contenu. zer0-mistakes fournit une boîte à outils AIEO intégrée.
@@ -139,13 +142,13 @@ schema_type: "SoftwareApplication"
 
 ## Voir aussi
 
-- [Balises méta et SEO](/docs/seo/meta-tags/)
-- [Sitemap](/docs/seo/sitemap/)
-- [Page FAQ](/faq/)
-- [Glossaire](/glossary/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Balises méta et SEO]]
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Sitemap]]
+- [[zer0-mistakes/pages/faq|Page FAQ]]
+- [[zer0-mistakes/pages/glossary|Glossaire]]
 
 ## Voir aussi
 
 - [[SEO]]
-- [[Structured Data]]
-- [[Features]]
+- [[zer0-CMS/apps/aieo/backend/prompts/patterns/structured_data|Structured Data]]
+- [[zer0-mistakes/features/README|Features]]

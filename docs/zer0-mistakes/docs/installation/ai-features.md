@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'The installer''s opt-in AI features: every action is sandboxed, shown
   as a diff first, and never contacts a third party unless you explicitly invoke it.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: ai-features.md
+source_file: docs/installation/ai-features.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/ai-features.md
 tags:
 - installation
 - setup
 title: AI Features
 ---
+
 # AI Features
 
 Every AI feature in the installer is **opt-in, sandboxed, and visible**. Nothing reaches a third party unless you explicitly invoke an `--ai`-flagged subcommand or set `OPENAI_API_KEY` and run a wizard. Everything written to disk is shown as a unified diff first.

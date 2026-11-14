@@ -15,13 +15,15 @@ keywords:
 - contributor stats
 lastmod: '2026-05-24T00:00:00.000Z'
 permalink: /stats/
-source_file: stats.md
+source_file: pages/stats.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/stats.md
 tags:
 - statistics
 - analytics
 - meta
 - content-metrics
-title: Stats
+title: IT-Journey Statistics Portal
 ---
 <div class="container my-5">
   <div class="row">

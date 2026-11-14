@@ -27,7 +27,9 @@ quickstart:
   step: 4
 sidebar:
   nav: quickstart
-source_file: personalization.md
+source_file: fr/quickstart/personalization.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/personalization.md
 tags:
 - jekyll
 - configuration
@@ -39,11 +41,12 @@ translated_from_sha: 097b8c40314c
 translation_of: pages/_quickstart/personalization.md
 translation_source_url: /quickstart/personalization/
 ---
+
 # Personnalisation et configuration du site
 
-Après avoir terminé l'[installation du démarrage rapide](/quickstart/), utilisez ce guide pour personnaliser votre site Jekyll. Remplissez les formulaires interactifs ci-dessous pour générer vos paramètres `_config.yml` personnalisés.
+Après avoir terminé l'[[zer0-mistakes/pages/_quickstart/index|installation du démarrage rapide]], utilisez ce guide pour personnaliser votre site Jekyll. Remplissez les formulaires interactifs ci-dessous pour générer vos paramètres `_config.yml` personnalisés.
 
-> **Vous préférez une interface en direct ?** Le [personnalisateur de thème](/about/settings/theme/) vous permet de prévisualiser les changements de skin et de couleurs en temps réel directement sur votre site en cours d'exécution.
+> **Vous préférez une interface en direct ?** Le [[zer0-mistakes/pages/_about/settings/theme|personnalisateur de thème]] vous permet de prévisualiser les changements de skin et de couleurs en temps réel directement sur votre site en cours d'exécution.
 
 ![Personnalisateur de thème — aperçu du skin et des couleurs](/assets/images/quickstart/06-theme-customizer.png)
 
@@ -54,7 +57,7 @@ Après avoir terminé l'[installation du démarrage rapide](/quickstart/), utili
   <p class="mb-0 mt-2">Remplissez les formulaires de chaque section. Vos paramètres seront automatiquement enregistrés et combinés en un fichier <code>_config.yml</code> complet en bas de la page. Copiez-collez pour personnaliser votre site !</p>
 </div>
 
-> Cette page est un générateur interactif et nécessite JavaScript. S'il est désactivé, utilisez le [générateur de site](/quickstart/site-builder/), qui produit le même `_config.yml` et peut écrire l'ensemble du projet pour vous.
+> Cette page est un générateur interactif et nécessite JavaScript. S'il est désactivé, utilisez le [[zer0-mistakes/pages/_quickstart/site-builder|générateur de site]], qui produit le même `_config.yml` et peut écrire l'ensemble du projet pour vous.
 
 ## Sections de configuration
 
@@ -635,7 +638,7 @@ Félicitations, vous avez terminé le guide de démarrage rapide ! Votre site es
 - **Créer du contenu** - Ajoutez des articles de blog dans `pages/_posts/`
 - **Personnaliser les mises en page** - Modifiez les modèles dans `_layouts/` et `_includes/`
 - **Déployer en production** - Poussez vers GitHub et activez GitHub Pages
-- **Explorer la documentation** - Consultez la [documentation complète](/docs/)
+- **Explorer la documentation** - Consultez la [[zer0-mistakes/pages/_docs/index|documentation complète]]
 
 ---
 
@@ -643,10 +646,10 @@ Félicitations, vous avez terminé le guide de démarrage rapide ! Votre site es
 
 | Étape | Guide | Description |
 |------|-------|-------------|
-| 1 | **[Configuration de la machine](/quickstart/machine-setup/)** | Installer Docker, Git et les outils de développement |
-| 2 | **[Configuration de Jekyll](/quickstart/jekyll-setup/)** | Démarrer le serveur de développement et créer du contenu |
-| 3 | **[Configuration de GitHub](/quickstart/github-setup/)** | Contrôle de version et déploiement GitHub Pages |
-| 4 | **[Personnalisation](/quickstart/personalization/)** | Personnaliser l'identité et la configuration du site |
+| 1 | **[[zer0-mistakes/pages/_quickstart/machine-setup\|Configuration de la machine]]** | Installer Docker, Git et les outils de développement |
+| 2 | **[[zer0-mistakes/pages/_quickstart/jekyll-setup\|Configuration de Jekyll]]** | Démarrer le serveur de développement et créer du contenu |
+| 3 | **[[zer0-mistakes/pages/_quickstart/github-setup\|Configuration de GitHub]]** | Contrôle de version et déploiement GitHub Pages |
+| 4 | **[[zer0-mistakes/pages/_quickstart/personalization\|Personnalisation]]** | Personnaliser l'identité et la configuration du site |
 
 ---
 

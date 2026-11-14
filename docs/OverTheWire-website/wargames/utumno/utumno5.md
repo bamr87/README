@@ -2,7 +2,9 @@
 gamename: utumno
 layout: default
 level: 5
-source_file: utumno5.md
+source_file: wargames/utumno/utumno5.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/utumno/utumno5.md
 title: Utumno5
 ---
 There is no information for this level, intentionally.

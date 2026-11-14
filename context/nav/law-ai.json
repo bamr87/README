@@ -1,0 +1,2321 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "law-ai",
+  "title": "Law AI",
+  "corpus": "docs/law-ai",
+  "counts": {
+    "pages": 285,
+    "sections": 71,
+    "max_depth": 6,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "b3546ca78393d7b0",
+  "tree": {
+    "type": "section",
+    "title": "Law AI",
+    "index": "law-ai/README.md",
+    "pages": 285,
+    "children": [
+      {
+        "type": "page",
+        "title": "Law AI (README)",
+        "path": "law-ai/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "law-ai/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Frontend",
+        "path": "law-ai/frontend/ui/README.md",
+        "rel": "frontend/ui/README.md",
+        "folder": "frontend"
+      },
+      {
+        "type": "page",
+        "title": "Law AI (CLAUDE)",
+        "path": "law-ai/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "Law AI \u2014 Agent Coding Instructions",
+        "path": "law-ai/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "Law AI \u2014 Backlog",
+        "path": "law-ai/BACKLOG.md",
+        "rel": "BACKLOG.md"
+      },
+      {
+        "type": "page",
+        "title": "law-ai tools",
+        "path": "law-ai/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "LSAT Practice \u2014 static site (lsat-static)",
+        "path": "law-ai/lsat-static/README.md",
+        "rel": "lsat-static/README.md",
+        "folder": "lsat-static"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "law-ai/docs/README.md",
+        "pages": 40,
+        "children": [
+          {
+            "type": "page",
+            "title": "law-ai documentation",
+            "path": "law-ai/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Browser end-to-end testing",
+            "path": "law-ai/docs/e2e-testing.md",
+            "rel": "docs/e2e-testing.md"
+          },
+          {
+            "type": "page",
+            "title": "Data Model",
+            "path": "law-ai/docs/data-model.md",
+            "rel": "docs/data-model.md"
+          },
+          {
+            "type": "page",
+            "title": "Data Sources",
+            "path": "law-ai/docs/data-sources.md",
+            "rel": "docs/data-sources.md"
+          },
+          {
+            "type": "page",
+            "title": "Django Conventions",
+            "path": "law-ai/docs/django-conventions.md",
+            "rel": "docs/django-conventions.md"
+          },
+          {
+            "type": "page",
+            "title": "Enterprise App Shell + Scoped Settings \u2014 Next.js Architecture",
+            "path": "law-ai/docs/app-shell-architecture.md",
+            "rel": "docs/app-shell-architecture.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI (2026-04-proposal)",
+            "path": "law-ai/docs/history/2026-04-proposal.md",
+            "rel": "docs/history/2026-04-proposal.md",
+            "folder": "docs/history"
+          },
+          {
+            "type": "page",
+            "title": "Law AI (prd)",
+            "path": "law-ai/docs/prd.md",
+            "rel": "docs/prd.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI Architecture",
+            "path": "law-ai/docs/architecture.md",
+            "rel": "docs/architecture.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI UI / UX",
+            "path": "law-ai/docs/ui-ux.md",
+            "rel": "docs/ui-ux.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI \u2014 Agent Roles & Specifications",
+            "path": "law-ai/docs/agent-roles.md",
+            "rel": "docs/agent-roles.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI \u2014 API Examples",
+            "path": "law-ai/docs/api-examples.md",
+            "rel": "docs/api-examples.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI \u2014 Constitution",
+            "path": "law-ai/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "Law AI \u2014 Philosophy",
+            "path": "law-ai/docs/philosophy.md",
+            "rel": "docs/philosophy.md"
+          },
+          {
+            "type": "page",
+            "title": "LegalBench Evaluation Harness",
+            "path": "law-ai/docs/legalbench.md",
+            "rel": "docs/legalbench.md"
+          },
+          {
+            "type": "page",
+            "title": "Local AI Stack (Spec 010)",
+            "path": "law-ai/docs/local-ai.md",
+            "rel": "docs/local-ai.md"
+          },
+          {
+            "type": "page",
+            "title": "LSAT Item Synthesis Engine",
+            "path": "law-ai/docs/lsat-synthesis.md",
+            "rel": "docs/lsat-synthesis.md"
+          },
+          {
+            "type": "page",
+            "title": "LSAT Knowledge Library",
+            "path": "law-ai/docs/lsat-library.md",
+            "rel": "docs/lsat-library.md"
+          },
+          {
+            "type": "page",
+            "title": "LSAT Question-Type Playbooks",
+            "path": "law-ai/docs/lsat-playbooks.md",
+            "rel": "docs/lsat-playbooks.md"
+          },
+          {
+            "type": "page",
+            "title": "LSAT Solve Guides",
+            "path": "law-ai/docs/lsat-solve-guides.md",
+            "rel": "docs/lsat-solve-guides.md"
+          },
+          {
+            "type": "page",
+            "title": "Per-attempt answer shuffling",
+            "path": "law-ai/docs/lsat-answer-shuffling.md",
+            "rel": "docs/lsat-answer-shuffling.md"
+          },
+          {
+            "type": "page",
+            "title": "Related GitHub Repositories for Law AI",
+            "path": "law-ai/docs/related-github-repos.md",
+            "rel": "docs/related-github-repos.md"
+          },
+          {
+            "type": "page",
+            "title": "Security Model",
+            "path": "law-ai/docs/security.md",
+            "rel": "docs/security.md"
+          },
+          {
+            "type": "page",
+            "title": "The LLM provider chain (lawai.core.llm)",
+            "path": "law-ai/docs/llm-provider-chain.md",
+            "rel": "docs/llm-provider-chain.md"
+          },
+          {
+            "type": "page",
+            "title": "The LSAT static site (lsat-static/)",
+            "path": "law-ai/docs/lsat-static.md",
+            "rel": "docs/lsat-static.md"
+          },
+          {
+            "type": "page",
+            "title": "The spec-driven loop in Law AI",
+            "path": "law-ai/docs/spec-driven.md",
+            "rel": "docs/spec-driven.md"
+          },
+          {
+            "type": "page",
+            "title": "The UI/UX review loop",
+            "path": "law-ai/docs/ui-ux-review.md",
+            "rel": "docs/ui-ux-review.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 law-ai",
+            "rel": "docs/amendments",
+            "index": "law-ai/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 law-ai",
+                "path": "law-ai/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "law-ai/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "law-ai/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "law-ai/docs/adr/README.md",
+            "pages": 8,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "law-ai/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Adopt Django as the backend HTTP / orchestration framework",
+                "path": "law-ai/docs/adr/0001-adopt-django-backend.md",
+                "rel": "docs/adr/0001-adopt-django-backend.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0003 \u2014 Autonomy Orchestrator (Two-Pillar Loop, Strict Level-2)",
+                "path": "law-ai/docs/adr/0003-autonomy-orchestrator.md",
+                "rel": "docs/adr/0003-autonomy-orchestrator.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0004 \u2014 Jurisprudential Stance (Thrasymachus as Descriptive Premise)",
+                "path": "law-ai/docs/adr/0004-jurisprudential-stance.md",
+                "rel": "docs/adr/0004-jurisprudential-stance.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0005 \u2014 Claude-default LLM provider chain",
+                "path": "law-ai/docs/adr/0005-claude-default-runtime.md",
+                "rel": "docs/adr/0005-claude-default-runtime.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0006 \u2014 First-party design system (replace the shadcn/ui lock)",
+                "path": "law-ai/docs/adr/0006-first-party-design-system.md",
+                "rel": "docs/adr/0006-first-party-design-system.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0007 \u2014 xAI as a sanctioned runtime provider",
+                "path": "law-ai/docs/adr/0007-xai-runtime-provider.md",
+                "rel": "docs/adr/0007-xai-runtime-provider.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0008 \u2014 Retire the test pillar (autonomous test synthesis)",
+                "path": "law-ai/docs/adr/0008-retire-test-pillar.md",
+                "rel": "docs/adr/0008-retire-test-pillar.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Reference",
+            "rel": "docs/reference",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "HTTP and WebSocket routes",
+                "path": "law-ai/docs/reference/http-routes.md",
+                "rel": "docs/reference/http-routes.md"
+              },
+              {
+                "type": "page",
+                "title": "Make targets",
+                "path": "law-ai/docs/reference/make-targets.md",
+                "rel": "docs/reference/make-targets.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Law AI \u2014 Backend",
+        "rel": "backend",
+        "index": "law-ai/backend/README.md",
+        "pages": 58,
+        "children": [
+          {
+            "type": "page",
+            "title": "Law AI \u2014 Backend",
+            "path": "law-ai/backend/README.md",
+            "rel": "backend/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "LegalBench Dataset Licenses",
+            "path": "law-ai/backend/var/legalbench/LICENSES.md",
+            "rel": "backend/var/legalbench/LICENSES.md",
+            "folder": "backend/var"
+          },
+          {
+            "type": "section",
+            "title": "Law AI",
+            "rel": "backend/law_ai",
+            "pages": 56,
+            "children": [
+              {
+                "type": "section",
+                "title": "Agents Runtime",
+                "rel": "backend/law_ai/agents_runtime",
+                "pages": 20,
+                "children": [
+                  {
+                    "type": "section",
+                    "title": "Prompts",
+                    "rel": "backend/law_ai/agents_runtime/prompts",
+                    "pages": 20,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "LSAT Argumentative Writing \u2014 prompt authoring",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_factory_writing.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_factory_writing.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT contrast author \u2014 re-ask one stimulus as a different question type\u2026",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_contrast_author.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_contrast_author.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT draft judge \u2014 adversarial review of one drafted item",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_draft_judge.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_draft_judge.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT Factory \u2014 Item Generation (v1)",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_factory_item.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_factory_item.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT Factory \u2014 Passage / Game Set Generation (v1)",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_factory_passage.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_factory_passage.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT question editor \u2014 fix one bank item to a reviewer's objections \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_question_editor.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_question_editor.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT Tutor Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_tutor.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_tutor.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSAT type reviewer \u2014 blind read of one question's type \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_type_reviewer.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_type_reviewer.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATContentAuthor Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_content_author.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_content_author.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATContentAuthor Prompt \u2014 v2",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_content_author.v2.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_content_author.v2.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATContentReviewer Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_content_reviewer.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_content_reviewer.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATGuideReviewer Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_guide_reviewer.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_guide_reviewer.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATLibrarian Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_librarian.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_librarian.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATSolveGuideAuthor Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_solve_guide_author.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_solve_guide_author.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATSourceExtractor Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_source_extractor.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_source_extractor.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "LSATWritingEvaluator Prompt \u2014 v1",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lsat_writing_evaluator.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lsat_writing_evaluator.v1.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "TopicFrontier \u2014 Prioritize",
+                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/topic_frontier_prioritize.v1.md",
+                        "rel": "backend/law_ai/agents_runtime/prompts/topic_frontier_prioritize.v1.md"
+                      },
+                      {
+                        "type": "section",
+                        "title": "Legal Workflow",
+                        "rel": "backend/law_ai/agents_runtime/prompts/legal_workflow",
+                        "pages": 3,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "Analyze Node Prompt \u2014 Spec 010 / LegalWorkflow",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/legal_workflow/analyze.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/legal_workflow/analyze.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Cite Check Node \u2014 Spec 010 / LegalWorkflow",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/legal_workflow/cite_check.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/legal_workflow/cite_check.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "Retrieve Node Prompt \u2014 Spec 010 / LegalWorkflow",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/legal_workflow/retrieve.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/legal_workflow/retrieve.md"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Lsat",
+                "rel": "backend/law_ai/lsat",
+                "pages": 36,
+                "children": [
+                  {
+                    "type": "section",
+                    "title": "Services",
+                    "rel": "backend/law_ai/lsat/services",
+                    "pages": 36,
+                    "children": [
+                      {
+                        "type": "section",
+                        "title": "Data",
+                        "rel": "backend/law_ai/lsat/services/data",
+                        "pages": 36,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "library \u203a Answer-Choice Elimination",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/answer-choice-elimination.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/answer-choice-elimination.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Argument Anatomy \u2014 Finding the Conclusion",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/argument-anatomy.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/argument-anatomy.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Argumentative Writing \u2014 Section Guide",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/writing-section-guide.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/writing-section-guide.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Article Title \u2014 Optional Subtitle After an Em-Dash",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/_template.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/_template.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Blind Review",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/blind-review-method.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/blind-review-method.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Building a Study Plan That Survives Contact",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/building-a-study-plan.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/building-a-study-plan.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Causal Reasoning \u2014 Correlation, Cause, and the Four Attacks",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/causal-reasoning-foundations.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/causal-reasoning-foundations.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Comparative Passages",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/rc-comparative-passages.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/rc-comparative-passages.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Completing the Argument",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-completing-the-argument.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-completing-the-argument.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Conditional Logic \u2014 Necessary, Sufficient, and the Contrapositive",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/conditional-logic-foundations.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/conditional-logic-foundations.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Flaw Questions",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-flaw-family.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-flaw-family.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Game Setup and Notation",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lg-setup-and-notation.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lg-setup-and-notation.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Game Types and Question Types",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lg-game-types.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lg-game-types.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a How the LSAT Is Built",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lsat-exam-architecture.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lsat-exam-architecture.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Inference Questions \u2014 Must Be True, Most Strongly Supported, Cannot Be\u2026",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-inference-family.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-inference-family.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Inferences and Frames",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lg-inference-and-frames.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lg-inference-and-frames.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Logic Games \u2014 Section Guide",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lg-section-guide.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lg-section-guide.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Logical Reasoning \u2014 Section Guide",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-section-guide.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-section-guide.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Numbers, Percentages, and Rates",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-numbers-and-percentages.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-numbers-and-percentages.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Pacing",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/pacing-and-time-management.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/pacing-and-time-management.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Paradox and Evaluate",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-paradox-and-evaluate.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-paradox-and-evaluate.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Parallel Reasoning and Parallel Flaw",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-parallel-family.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-parallel-family.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Passage Mapping",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/rc-passage-types-and-mapping.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/rc-passage-types-and-mapping.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Principle Questions",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-principle-family.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-principle-family.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Quantifiers \u2014 All, Most, Some, and What Combines",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/quantifiers-and-overlap.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/quantifiers-and-overlap.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Reading Comprehension Question Families",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/rc-question-families.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/rc-question-families.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Reading Comprehension \u2014 Section Guide",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/rc-section-guide.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/rc-section-guide.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Scoring, Scaling, and What a Point Is Worth",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lsat-scoring-and-percentiles.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lsat-scoring-and-percentiles.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Strengthen and Weaken",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-strengthen-and-weaken.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-strengthen-and-weaken.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Structure Questions \u2014 Main Point, Role, Method, Point at Issue",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-main-point-and-role.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-main-point-and-role.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Test-Day Conduct",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/test-day-logistics.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/test-day-logistics.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a The Argumentative Writing Method",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/writing-argumentative-method.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/writing-argumentative-method.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a The Assumption Family",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/lr-assumption-family.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/lr-assumption-family.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a The Error Log",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/error-log-and-diagnosis.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/error-log-and-diagnosis.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a The Flaw Catalog",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/formal-fallacies-catalog.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/formal-fallacies-catalog.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "library \u203a Triage and Guessing",
+                            "path": "law-ai/backend/law_ai/lsat/services/data/library/guessing-and-triage.md",
+                            "rel": "backend/law_ai/lsat/services/data/library/guessing-and-triage.md"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "LawMode.ai",
+        "rel": "lawmode",
+        "index": "law-ai/lawmode/README.md",
+        "pages": 10,
+        "children": [
+          {
+            "type": "page",
+            "title": "LawMode.ai",
+            "path": "law-ai/lawmode/README.md",
+            "rel": "lawmode/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "law-ai/lawmode/CHANGELOG.md",
+            "rel": "lawmode/CHANGELOG.md"
+          },
+          {
+            "type": "page",
+            "title": "CLAUDE.md",
+            "path": "law-ai/lawmode/CLAUDE.md",
+            "rel": "lawmode/CLAUDE.md"
+          },
+          {
+            "type": "page",
+            "title": "DISCLAIMER",
+            "path": "law-ai/lawmode/DISCLAIMER.md",
+            "rel": "lawmode/DISCLAIMER.md"
+          },
+          {
+            "type": "page",
+            "title": "Installation Guide",
+            "path": "law-ai/lawmode/INSTALL.md",
+            "rel": "lawmode/INSTALL.md"
+          },
+          {
+            "type": "page",
+            "title": "LawMode.ai Implementation Summary",
+            "path": "law-ai/lawmode/IMPLEMENTATION.md",
+            "rel": "lawmode/IMPLEMENTATION.md"
+          },
+          {
+            "type": "page",
+            "title": "LawMode.ai \u2013 Comprehensive Product Requirements Document (PRD)",
+            "path": "law-ai/lawmode/PRD.md",
+            "rel": "lawmode/PRD.md"
+          },
+          {
+            "type": "page",
+            "title": "Quick Start Guide",
+            "path": "law-ai/lawmode/QUICKSTART.md",
+            "rel": "lawmode/QUICKSTART.md"
+          },
+          {
+            "type": "section",
+            "title": "LawMode.ai VSCode Extension",
+            "rel": "lawmode/vscode-extension",
+            "index": "law-ai/lawmode/vscode-extension/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "LawMode.ai VSCode Extension",
+                "path": "law-ai/lawmode/vscode-extension/README.md",
+                "rel": "lawmode/vscode-extension/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Testing the LawMode VSCode Extension",
+                "path": "law-ai/lawmode/vscode-extension/test-extension.md",
+                "rel": "lawmode/vscode-extension/test-extension.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Specs \u2014 Spec-Driven Development for Law AI",
+        "rel": "specs",
+        "index": "law-ai/specs/README.md",
+        "pages": 169,
+        "children": [
+          {
+            "type": "page",
+            "title": "Specs \u2014 Spec-Driven Development for Law AI",
+            "path": "law-ai/specs/README.md",
+            "rel": "specs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "section",
+            "title": "001 Ingest Courtlistener Opinions",
+            "rel": "specs/001-ingest-courtlistener-opinions",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Ingest CourtListener Opinions",
+                "path": "law-ai/specs/001-ingest-courtlistener-opinions/plan.md",
+                "rel": "specs/001-ingest-courtlistener-opinions/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Ingest CourtListener Opinions",
+                "path": "law-ai/specs/001-ingest-courtlistener-opinions/spec.md",
+                "rel": "specs/001-ingest-courtlistener-opinions/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Ingest CourtListener Opinions",
+                "path": "law-ai/specs/001-ingest-courtlistener-opinions/tasks.md",
+                "rel": "specs/001-ingest-courtlistener-opinions/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "002 Resolve Citations To Cases",
+            "rel": "specs/002-resolve-citations-to-cases",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 002 \u2014 Resolve Citations to Case Nodes",
+                "path": "law-ai/specs/002-resolve-citations-to-cases/plan.md",
+                "rel": "specs/002-resolve-citations-to-cases/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Resolve Citations to Case Nodes (Graph Densification)",
+                "path": "law-ai/specs/002-resolve-citations-to-cases/spec.md",
+                "rel": "specs/002-resolve-citations-to-cases/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 002 \u2014 Resolve Citations to Case Nodes",
+                "path": "law-ai/specs/002-resolve-citations-to-cases/tasks.md",
+                "rel": "specs/002-resolve-citations-to-cases/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "003 Agent Ops Dashboard",
+            "rel": "specs/003-agent-ops-dashboard",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 003 \u2014 Agent Operations Dashboard",
+                "path": "law-ai/specs/003-agent-ops-dashboard/plan.md",
+                "rel": "specs/003-agent-ops-dashboard/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Agent Operations Dashboard",
+                "path": "law-ai/specs/003-agent-ops-dashboard/spec.md",
+                "rel": "specs/003-agent-ops-dashboard/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 003 \u2014 Agent Operations Dashboard",
+                "path": "law-ai/specs/003-agent-ops-dashboard/tasks.md",
+                "rel": "specs/003-agent-ops-dashboard/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "004 Async Quarantine Postgres",
+            "rel": "specs/004-async-quarantine-postgres",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 004 \u2014 Native-async HITL quarantine to Postgres",
+                "path": "law-ai/specs/004-async-quarantine-postgres/plan.md",
+                "rel": "specs/004-async-quarantine-postgres/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Native-async HITL quarantine to Postgres",
+                "path": "law-ai/specs/004-async-quarantine-postgres/spec.md",
+                "rel": "specs/004-async-quarantine-postgres/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 004 \u2014 Native-async HITL quarantine to Postgres",
+                "path": "law-ai/specs/004-async-quarantine-postgres/tasks.md",
+                "rel": "specs/004-async-quarantine-postgres/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "005 Lsat Lab",
+            "rel": "specs/005-lsat-lab",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 005-lsat-lab",
+                "path": "law-ai/specs/005-lsat-lab/plan.md",
+                "rel": "specs/005-lsat-lab/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Lab",
+                "path": "law-ai/specs/005-lsat-lab/spec.md",
+                "rel": "specs/005-lsat-lab/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 005-lsat-lab",
+                "path": "law-ai/specs/005-lsat-lab/tasks.md",
+                "rel": "specs/005-lsat-lab/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "006 Knowledge Graph",
+            "rel": "specs/006-knowledge-graph",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 006 \u2014 Knowledge Graph Explorer",
+                "path": "law-ai/specs/006-knowledge-graph/plan.md",
+                "rel": "specs/006-knowledge-graph/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Knowledge Graph Explorer",
+                "path": "law-ai/specs/006-knowledge-graph/spec.md",
+                "rel": "specs/006-knowledge-graph/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 006 \u2014 Knowledge Graph Explorer",
+                "path": "law-ai/specs/006-knowledge-graph/tasks.md",
+                "rel": "specs/006-knowledge-graph/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "007 Analysis Studio",
+            "rel": "specs/007-analysis-studio",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 007 \u2014 Analysis Studio",
+                "path": "law-ai/specs/007-analysis-studio/plan.md",
+                "rel": "specs/007-analysis-studio/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Analysis Studio",
+                "path": "law-ai/specs/007-analysis-studio/spec.md",
+                "rel": "specs/007-analysis-studio/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 007 \u2014 Analysis Studio",
+                "path": "law-ai/specs/007-analysis-studio/tasks.md",
+                "rel": "specs/007-analysis-studio/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "008 Agent API Auth",
+            "rel": "specs/008-agent-api-auth",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 008 \u2014 Agent API Authentication",
+                "path": "law-ai/specs/008-agent-api-auth/plan.md",
+                "rel": "specs/008-agent-api-auth/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Agent API Authentication",
+                "path": "law-ai/specs/008-agent-api-auth/spec.md",
+                "rel": "specs/008-agent-api-auth/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 008 \u2014 Agent API Authentication",
+                "path": "law-ai/specs/008-agent-api-auth/tasks.md",
+                "rel": "specs/008-agent-api-auth/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "009 Extend API Auth",
+            "rel": "specs/009-extend-api-auth",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: 009 \u2014 Extend API Authentication",
+                "path": "law-ai/specs/009-extend-api-auth/plan.md",
+                "rel": "specs/009-extend-api-auth/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Extend API Authentication to Analysis, Graph, and LSAT Routers",
+                "path": "law-ai/specs/009-extend-api-auth/spec.md",
+                "rel": "specs/009-extend-api-auth/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 009 \u2014 Extend API Authentication",
+                "path": "law-ai/specs/009-extend-api-auth/tasks.md",
+                "rel": "specs/009-extend-api-auth/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "010 Local AI Stack",
+            "rel": "specs/010-local-ai-stack",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Local AI Stack (Ollama + LangGraph + Checkpointers + Phoenix)",
+                "path": "law-ai/specs/010-local-ai-stack/plan.md",
+                "rel": "specs/010-local-ai-stack/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Local AI Stack (Ollama + LangGraph + Checkpointers + Phoenix)",
+                "path": "law-ai/specs/010-local-ai-stack/spec.md",
+                "rel": "specs/010-local-ai-stack/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Local AI Stack (Ollama + LangGraph + Checkpointers + Phoenix)",
+                "path": "law-ai/specs/010-local-ai-stack/tasks.md",
+                "rel": "specs/010-local-ai-stack/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "011 Django Backend",
+            "rel": "specs/011-django-backend",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Refactor Backend from FastAPI to Django",
+                "path": "law-ai/specs/011-django-backend/plan.md",
+                "rel": "specs/011-django-backend/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Refactor Backend from FastAPI to Django",
+                "path": "law-ai/specs/011-django-backend/spec.md",
+                "rel": "specs/011-django-backend/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Refactor Backend from FastAPI to Django",
+                "path": "law-ai/specs/011-django-backend/tasks.md",
+                "rel": "specs/011-django-backend/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "013 Ingestion Integration Tests",
+            "rel": "specs/013-ingestion-integration-tests",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Docker-Backed Integration Tests for IngestionScout",
+                "path": "law-ai/specs/013-ingestion-integration-tests/plan.md",
+                "rel": "specs/013-ingestion-integration-tests/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Docker-Backed Integration Tests for IngestionScout",
+                "path": "law-ai/specs/013-ingestion-integration-tests/spec.md",
+                "rel": "specs/013-ingestion-integration-tests/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: 013 \u2014 Docker-Backed Integration Tests for IngestionScout",
+                "path": "law-ai/specs/013-ingestion-integration-tests/tasks.md",
+                "rel": "specs/013-ingestion-integration-tests/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "014 Densify Extraction Integration Tests",
+            "rel": "specs/014-densify-extraction-integration-tests",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Docker-Backed Integration Tests for densifyextraction",
+                "path": "law-ai/specs/014-densify-extraction-integration-tests/plan.md",
+                "rel": "specs/014-densify-extraction-integration-tests/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Docker-Backed Integration Tests for densifyextraction",
+                "path": "law-ai/specs/014-densify-extraction-integration-tests/spec.md",
+                "rel": "specs/014-densify-extraction-integration-tests/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Docker-Backed Integration Tests for densifyextraction",
+                "path": "law-ai/specs/014-densify-extraction-integration-tests/tasks.md",
+                "rel": "specs/014-densify-extraction-integration-tests/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "015 Legal Corpus Schema",
+            "rel": "specs/015-legal-corpus-schema",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Legal Corpus Schema",
+                "path": "law-ai/specs/015-legal-corpus-schema/plan.md",
+                "rel": "specs/015-legal-corpus-schema/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Legal Corpus Schema (Statutes, Codes, Ordinances, Regulations\u2026",
+                "path": "law-ai/specs/015-legal-corpus-schema/spec.md",
+                "rel": "specs/015-legal-corpus-schema/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Legal Corpus Schema",
+                "path": "law-ai/specs/015-legal-corpus-schema/tasks.md",
+                "rel": "specs/015-legal-corpus-schema/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "016 Ingest Colorado Statutes",
+            "rel": "specs/016-ingest-colorado-statutes",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Colorado Statute Ingestion (CRS Title 18, MVP slice)",
+                "path": "law-ai/specs/016-ingest-colorado-statutes/plan.md",
+                "rel": "specs/016-ingest-colorado-statutes/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Colorado Statute Ingestion (CRS Title 18, MVP slice)",
+                "path": "law-ai/specs/016-ingest-colorado-statutes/spec.md",
+                "rel": "specs/016-ingest-colorado-statutes/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Colorado Statute Ingestion",
+                "path": "law-ai/specs/016-ingest-colorado-statutes/tasks.md",
+                "rel": "specs/016-ingest-colorado-statutes/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "017 Fix Init DB Sh",
+            "rel": "specs/017-fix-init-db-sh",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Fix init-db.sh \u2014 Correct Migration Paths + Delegate Postgres DDL\u2026",
+                "path": "law-ai/specs/017-fix-init-db-sh/plan.md",
+                "rel": "specs/017-fix-init-db-sh/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Fix init-db.sh \u2014 Correct Migration Paths + Delegate Postgres DDL\u2026",
+                "path": "law-ai/specs/017-fix-init-db-sh/spec.md",
+                "rel": "specs/017-fix-init-db-sh/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Fix init-db.sh \u2014 Correct Migration Paths + Delegate Postgres DDL\u2026",
+                "path": "law-ai/specs/017-fix-init-db-sh/tasks.md",
+                "rel": "specs/017-fix-init-db-sh/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "018 Autonomous Framework",
+            "rel": "specs/018-autonomous-framework",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Autonomous Testing & Recursive Content-Generation Framework",
+                "path": "law-ai/specs/018-autonomous-framework/plan.md",
+                "rel": "specs/018-autonomous-framework/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Autonomous Testing & Recursive Content-Generation Framework",
+                "path": "law-ai/specs/018-autonomous-framework/spec.md",
+                "rel": "specs/018-autonomous-framework/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Autonomous Testing & Recursive Content-Generation Framework",
+                "path": "law-ai/specs/018-autonomous-framework/tasks.md",
+                "rel": "specs/018-autonomous-framework/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "019 Lsat Content Autogen",
+            "rel": "specs/019-lsat-content-autogen",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSATContentAuthor \u2014 Autonomous LSAT Content Generation &\u2026",
+                "path": "law-ai/specs/019-lsat-content-autogen/plan.md",
+                "rel": "specs/019-lsat-content-autogen/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSATContentAuthor \u2014 Autonomous LSAT Content Generation &\u2026",
+                "path": "law-ai/specs/019-lsat-content-autogen/spec.md",
+                "rel": "specs/019-lsat-content-autogen/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSATContentAuthor \u2014 Autonomous LSAT Content Generation &\u2026",
+                "path": "law-ai/specs/019-lsat-content-autogen/tasks.md",
+                "rel": "specs/019-lsat-content-autogen/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "020 Enforce Hitl Quarantine",
+            "rel": "specs/020-enforce-hitl-quarantine",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Enforce HITL Quarantine for requireshumanapproval Adapters",
+                "path": "law-ai/specs/020-enforce-hitl-quarantine/plan.md",
+                "rel": "specs/020-enforce-hitl-quarantine/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Enforce HITL Quarantine for requireshumanapproval Adapters",
+                "path": "law-ai/specs/020-enforce-hitl-quarantine/spec.md",
+                "rel": "specs/020-enforce-hitl-quarantine/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Enforce HITL Quarantine for requireshumanapproval Adapters",
+                "path": "law-ai/specs/020-enforce-hitl-quarantine/tasks.md",
+                "rel": "specs/020-enforce-hitl-quarantine/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "021 Fix Ao Sdlc Doc Links",
+            "rel": "specs/021-fix-ao-sdlc-doc-links",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Fix AO-SDLC Doc-Link Case Mismatch + Restore Backlog Gate",
+                "path": "law-ai/specs/021-fix-ao-sdlc-doc-links/plan.md",
+                "rel": "specs/021-fix-ao-sdlc-doc-links/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Fix AO-SDLC Doc-Link Case Mismatch + Restore Backlog Gate",
+                "path": "law-ai/specs/021-fix-ao-sdlc-doc-links/spec.md",
+                "rel": "specs/021-fix-ao-sdlc-doc-links/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Fix AO-SDLC Doc-Link Case Mismatch + Restore Backlog Gate",
+                "path": "law-ai/specs/021-fix-ao-sdlc-doc-links/tasks.md",
+                "rel": "specs/021-fix-ao-sdlc-doc-links/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "022 Agent Ws Streaming",
+            "rel": "specs/022-agent-ws-streaming",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Agent WebSocket Streaming \u2014 Live Progress from LegalAnalyst &\u2026",
+                "path": "law-ai/specs/022-agent-ws-streaming/plan.md",
+                "rel": "specs/022-agent-ws-streaming/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Agent WebSocket Streaming \u2014 Live Progress from LegalAnalyst &\u2026",
+                "path": "law-ai/specs/022-agent-ws-streaming/spec.md",
+                "rel": "specs/022-agent-ws-streaming/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Agent WebSocket Streaming \u2014 Live Progress from LegalAnalyst &\u2026",
+                "path": "law-ai/specs/022-agent-ws-streaming/tasks.md",
+                "rel": "specs/022-agent-ws-streaming/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "023 Hitl Quarantine Enforcement",
+            "rel": "specs/023-hitl-quarantine-enforcement",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: HITL Quarantine Enforcement \u2014 Test Coverage & Regression Guard",
+                "path": "law-ai/specs/023-hitl-quarantine-enforcement/plan.md",
+                "rel": "specs/023-hitl-quarantine-enforcement/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: HITL Quarantine Enforcement \u2014 Test Coverage & Regression Guard",
+                "path": "law-ai/specs/023-hitl-quarantine-enforcement/spec.md",
+                "rel": "specs/023-hitl-quarantine-enforcement/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: HITL Quarantine Enforcement \u2014 Test Coverage & Regression Guard",
+                "path": "law-ai/specs/023-hitl-quarantine-enforcement/tasks.md",
+                "rel": "specs/023-hitl-quarantine-enforcement/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "024 Lsat Content Factory",
+            "rel": "specs/024-lsat-content-factory",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Content Factory",
+                "path": "law-ai/specs/024-lsat-content-factory/plan.md",
+                "rel": "specs/024-lsat-content-factory/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Content Factory \u2014 Scalable Multi-Model Question Generation",
+                "path": "law-ai/specs/024-lsat-content-factory/spec.md",
+                "rel": "specs/024-lsat-content-factory/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Content Factory",
+                "path": "law-ai/specs/024-lsat-content-factory/tasks.md",
+                "rel": "specs/024-lsat-content-factory/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "025 Lsat Static Site",
+            "rel": "specs/025-lsat-static-site",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Static Practice Site",
+                "path": "law-ai/specs/025-lsat-static-site/plan.md",
+                "rel": "specs/025-lsat-static-site/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Static Practice Site \u2014 Serverless Delivery on GitHub Pages",
+                "path": "law-ai/specs/025-lsat-static-site/spec.md",
+                "rel": "specs/025-lsat-static-site/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Static Practice Site",
+                "path": "law-ai/specs/025-lsat-static-site/tasks.md",
+                "rel": "specs/025-lsat-static-site/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "026 Truthful Harness Dev Substrate",
+            "rel": "specs/026-truthful-harness-dev-substrate",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Truthful Agent Harness + Resilient Dev Substrate",
+                "path": "law-ai/specs/026-truthful-harness-dev-substrate/plan.md",
+                "rel": "specs/026-truthful-harness-dev-substrate/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Truthful Agent Harness + Resilient Dev Substrate",
+                "path": "law-ai/specs/026-truthful-harness-dev-substrate/spec.md",
+                "rel": "specs/026-truthful-harness-dev-substrate/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Truthful Agent Harness + Resilient Dev Substrate",
+                "path": "law-ai/specs/026-truthful-harness-dev-substrate/tasks.md",
+                "rel": "specs/026-truthful-harness-dev-substrate/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "027 Langchain Langgraph Default",
+            "rel": "specs/027-langchain-langgraph-default",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LangChain + LangGraph as the Framework-Wide Engine",
+                "path": "law-ai/specs/027-langchain-langgraph-default/plan.md",
+                "rel": "specs/027-langchain-langgraph-default/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LangChain + LangGraph as the Framework-Wide Engine",
+                "path": "law-ai/specs/027-langchain-langgraph-default/spec.md",
+                "rel": "specs/027-langchain-langgraph-default/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LangChain + LangGraph as the Framework-Wide Engine",
+                "path": "law-ai/specs/027-langchain-langgraph-default/tasks.md",
+                "rel": "specs/027-langchain-langgraph-default/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "028 Real Graphrag Retrieval",
+            "rel": "specs/028-real-graphrag-retrieval",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Real GraphRAG Retrieval (Lexical + Citation Expansion)",
+                "path": "law-ai/specs/028-real-graphrag-retrieval/plan.md",
+                "rel": "specs/028-real-graphrag-retrieval/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Real GraphRAG Retrieval (Lexical + Citation Expansion)",
+                "path": "law-ai/specs/028-real-graphrag-retrieval/spec.md",
+                "rel": "specs/028-real-graphrag-retrieval/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Real GraphRAG Retrieval (Lexical + Citation Expansion)",
+                "path": "law-ai/specs/028-real-graphrag-retrieval/tasks.md",
+                "rel": "specs/028-real-graphrag-retrieval/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "029 Close Ingestion Hitl Loop",
+            "rel": "specs/029-close-ingestion-hitl-loop",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Close the Ingestion HITL Loop (Approval \u2192 Graph)",
+                "path": "law-ai/specs/029-close-ingestion-hitl-loop/plan.md",
+                "rel": "specs/029-close-ingestion-hitl-loop/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Close the Ingestion HITL Loop (Approval \u2192 Graph)",
+                "path": "law-ai/specs/029-close-ingestion-hitl-loop/spec.md",
+                "rel": "specs/029-close-ingestion-hitl-loop/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Close the Ingestion HITL Loop (Approval \u2192 Graph)",
+                "path": "law-ai/specs/029-close-ingestion-hitl-loop/tasks.md",
+                "rel": "specs/029-close-ingestion-hitl-loop/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "030 Safety Guardrails",
+            "rel": "specs/030-safety-guardrails",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Safety Guardrails \u2014 UPL Disclaimer, Audit Durability, LLM\u2026",
+                "path": "law-ai/specs/030-safety-guardrails/plan.md",
+                "rel": "specs/030-safety-guardrails/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Safety Guardrails \u2014 UPL Disclaimer, Audit Durability, LLM\u2026",
+                "path": "law-ai/specs/030-safety-guardrails/spec.md",
+                "rel": "specs/030-safety-guardrails/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Safety Guardrails \u2014 UPL Disclaimer, Audit Durability, LLM\u2026",
+                "path": "law-ai/specs/030-safety-guardrails/tasks.md",
+                "rel": "specs/030-safety-guardrails/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "031 Legalbench Real Measurement",
+            "rel": "specs/031-legalbench-real-measurement",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Make LegalBench Measure Something Real",
+                "path": "law-ai/specs/031-legalbench-real-measurement/plan.md",
+                "rel": "specs/031-legalbench-real-measurement/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Make LegalBench Measure Something Real",
+                "path": "law-ai/specs/031-legalbench-real-measurement/spec.md",
+                "rel": "specs/031-legalbench-real-measurement/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Make LegalBench Measure Something Real",
+                "path": "law-ai/specs/031-legalbench-real-measurement/tasks.md",
+                "rel": "specs/031-legalbench-real-measurement/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "032 Deliverable Agent Streaming",
+            "rel": "specs/032-deliverable-agent-streaming",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Deliverable, Authenticated Agent Streaming + Real Ollama Readiness",
+                "path": "law-ai/specs/032-deliverable-agent-streaming/plan.md",
+                "rel": "specs/032-deliverable-agent-streaming/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Deliverable, Authenticated Agent Streaming + Real Ollama Readiness",
+                "path": "law-ai/specs/032-deliverable-agent-streaming/spec.md",
+                "rel": "specs/032-deliverable-agent-streaming/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Deliverable, Authenticated Agent Streaming + Real Ollama\u2026",
+                "path": "law-ai/specs/032-deliverable-agent-streaming/tasks.md",
+                "rel": "specs/032-deliverable-agent-streaming/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "033 Reviewer Surfaces Devcontainer",
+            "rel": "specs/033-reviewer-surfaces-devcontainer",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Reviewer Surfaces (Live Trace, Verified Citations) + Dev Container",
+                "path": "law-ai/specs/033-reviewer-surfaces-devcontainer/plan.md",
+                "rel": "specs/033-reviewer-surfaces-devcontainer/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Reviewer Surfaces (Live Trace, Verified Citations) + Dev Container",
+                "path": "law-ai/specs/033-reviewer-surfaces-devcontainer/spec.md",
+                "rel": "specs/033-reviewer-surfaces-devcontainer/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Reviewer Surfaces (Live Trace, Verified Citations) + Dev\u2026",
+                "path": "law-ai/specs/033-reviewer-surfaces-devcontainer/tasks.md",
+                "rel": "specs/033-reviewer-surfaces-devcontainer/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "034 Claude Default Runtime",
+            "rel": "specs/034-claude-default-runtime",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Claude-default LLM provider chain",
+                "path": "law-ai/specs/034-claude-default-runtime/plan.md",
+                "rel": "specs/034-claude-default-runtime/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Claude-default LLM provider chain",
+                "path": "law-ai/specs/034-claude-default-runtime/spec.md",
+                "rel": "specs/034-claude-default-runtime/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Claude-default LLM provider chain",
+                "path": "law-ai/specs/034-claude-default-runtime/tasks.md",
+                "rel": "specs/034-claude-default-runtime/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "035 Langchain First Class",
+            "rel": "specs/035-langchain-first-class",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LangChain/LangGraph first-class + AO-SDLC guide reimplementation",
+                "path": "law-ai/specs/035-langchain-first-class/plan.md",
+                "rel": "specs/035-langchain-first-class/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LangChain/LangGraph first-class + AO-SDLC guide reimplementation",
+                "path": "law-ai/specs/035-langchain-first-class/spec.md",
+                "rel": "specs/035-langchain-first-class/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LangChain/LangGraph first-class + AO-SDLC guide reimplementation",
+                "path": "law-ai/specs/035-langchain-first-class/tasks.md",
+                "rel": "specs/035-langchain-first-class/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "036 Legal Journey Platform",
+            "rel": "specs/036-legal-journey-platform",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Legal journey platform \u2014 the matter spine",
+                "path": "law-ai/specs/036-legal-journey-platform/plan.md",
+                "rel": "specs/036-legal-journey-platform/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Legal journey platform \u2014 the matter spine",
+                "path": "law-ai/specs/036-legal-journey-platform/spec.md",
+                "rel": "specs/036-legal-journey-platform/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Legal journey platform \u2014 the matter spine",
+                "path": "law-ai/specs/036-legal-journey-platform/tasks.md",
+                "rel": "specs/036-legal-journey-platform/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "037 Gitfactory Orchestration",
+            "rel": "specs/037-gitfactory-orchestration",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: GitFactory-Managed Agentic Orchestration",
+                "path": "law-ai/specs/037-gitfactory-orchestration/plan.md",
+                "rel": "specs/037-gitfactory-orchestration/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: GitFactory-Managed Agentic Orchestration",
+                "path": "law-ai/specs/037-gitfactory-orchestration/spec.md",
+                "rel": "specs/037-gitfactory-orchestration/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: GitFactory-Managed Agentic Orchestration",
+                "path": "law-ai/specs/037-gitfactory-orchestration/tasks.md",
+                "rel": "specs/037-gitfactory-orchestration/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "038 Framework Hardening",
+            "rel": "specs/038-framework-hardening",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: AO-SDLC Framework Hardening (gitorio backport)",
+                "path": "law-ai/specs/038-framework-hardening/plan.md",
+                "rel": "specs/038-framework-hardening/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: AO-SDLC Framework Hardening (gitorio backport)",
+                "path": "law-ai/specs/038-framework-hardening/spec.md",
+                "rel": "specs/038-framework-hardening/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: AO-SDLC Framework Hardening (gitorio backport)",
+                "path": "law-ai/specs/038-framework-hardening/tasks.md",
+                "rel": "specs/038-framework-hardening/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "039 Design System",
+            "rel": "specs/039-design-system",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: First-party design system",
+                "path": "law-ai/specs/039-design-system/plan.md",
+                "rel": "specs/039-design-system/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: First-party design system",
+                "path": "law-ai/specs/039-design-system/spec.md",
+                "rel": "specs/039-design-system/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: First-party design system",
+                "path": "law-ai/specs/039-design-system/tasks.md",
+                "rel": "specs/039-design-system/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "040 App Shell",
+            "rel": "specs/040-app-shell",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: App shell + scoped settings",
+                "path": "law-ai/specs/040-app-shell/plan.md",
+                "rel": "specs/040-app-shell/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: App shell + scoped settings (instance-only)",
+                "path": "law-ai/specs/040-app-shell/spec.md",
+                "rel": "specs/040-app-shell/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: App shell + scoped settings",
+                "path": "law-ai/specs/040-app-shell/tasks.md",
+                "rel": "specs/040-app-shell/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "041 Shell Navigation Scroll",
+            "rel": "specs/041-shell-navigation-scroll",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Application shell navigation & scroll contract",
+                "path": "law-ai/specs/041-shell-navigation-scroll/plan.md",
+                "rel": "specs/041-shell-navigation-scroll/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Application shell navigation & scroll contract",
+                "path": "law-ai/specs/041-shell-navigation-scroll/spec.md",
+                "rel": "specs/041-shell-navigation-scroll/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Application shell navigation & scroll contract",
+                "path": "law-ai/specs/041-shell-navigation-scroll/tasks.md",
+                "rel": "specs/041-shell-navigation-scroll/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "042 Composite Widget A11y",
+            "rel": "specs/042-composite-widget-a11y",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Composite-widget keyboard accessibility",
+                "path": "law-ai/specs/042-composite-widget-a11y/plan.md",
+                "rel": "specs/042-composite-widget-a11y/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Composite-widget keyboard accessibility",
+                "path": "law-ai/specs/042-composite-widget-a11y/spec.md",
+                "rel": "specs/042-composite-widget-a11y/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Composite-widget keyboard accessibility",
+                "path": "law-ai/specs/042-composite-widget-a11y/tasks.md",
+                "rel": "specs/042-composite-widget-a11y/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "043 Dockable Section Timer",
+            "rel": "specs/043-dockable-section-timer",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Dockable LSAT section timer",
+                "path": "law-ai/specs/043-dockable-section-timer/plan.md",
+                "rel": "specs/043-dockable-section-timer/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Dockable LSAT section timer",
+                "path": "law-ai/specs/043-dockable-section-timer/spec.md",
+                "rel": "specs/043-dockable-section-timer/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Dockable LSAT section timer",
+                "path": "law-ai/specs/043-dockable-section-timer/tasks.md",
+                "rel": "specs/043-dockable-section-timer/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "044 Static Site UX Parity",
+            "rel": "specs/044-static-site-ux-parity",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Static LSAT site UI/UX parity",
+                "path": "law-ai/specs/044-static-site-ux-parity/plan.md",
+                "rel": "specs/044-static-site-ux-parity/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Static LSAT site UI/UX parity",
+                "path": "law-ai/specs/044-static-site-ux-parity/spec.md",
+                "rel": "specs/044-static-site-ux-parity/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Static LSAT site UI/UX parity",
+                "path": "law-ai/specs/044-static-site-ux-parity/tasks.md",
+                "rel": "specs/044-static-site-ux-parity/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "045 Lsat Solving Aids",
+            "rel": "specs/045-lsat-solving-aids",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Interactive LSAT solving aids \u2014 progressive hints + incremental\u2026",
+                "path": "law-ai/specs/045-lsat-solving-aids/plan.md",
+                "rel": "specs/045-lsat-solving-aids/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Interactive LSAT solving aids \u2014 progressive hints + incremental\u2026",
+                "path": "law-ai/specs/045-lsat-solving-aids/spec.md",
+                "rel": "specs/045-lsat-solving-aids/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Interactive LSAT solving aids \u2014 progressive hints + incremental\u2026",
+                "path": "law-ai/specs/045-lsat-solving-aids/tasks.md",
+                "rel": "specs/045-lsat-solving-aids/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "046 Static Lsat Feature Parity",
+            "rel": "specs/046-static-lsat-feature-parity",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Static LSAT solving-aid parity",
+                "path": "law-ai/specs/046-static-lsat-feature-parity/plan.md",
+                "rel": "specs/046-static-lsat-feature-parity/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Static LSAT solving-aid parity",
+                "path": "law-ai/specs/046-static-lsat-feature-parity/spec.md",
+                "rel": "specs/046-static-lsat-feature-parity/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Static LSAT solving-aid parity",
+                "path": "law-ai/specs/046-static-lsat-feature-parity/tasks.md",
+                "rel": "specs/046-static-lsat-feature-parity/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "047 Lsat Continuous Curriculum",
+            "rel": "specs/047-lsat-continuous-curriculum",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Continuous Curriculum",
+                "path": "law-ai/specs/047-lsat-continuous-curriculum/plan.md",
+                "rel": "specs/047-lsat-continuous-curriculum/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Continuous Curriculum",
+                "path": "law-ai/specs/047-lsat-continuous-curriculum/spec.md",
+                "rel": "specs/047-lsat-continuous-curriculum/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Continuous Curriculum",
+                "path": "law-ai/specs/047-lsat-continuous-curriculum/tasks.md",
+                "rel": "specs/047-lsat-continuous-curriculum/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "048 Lsat Knowledge Library",
+            "rel": "specs/048-lsat-knowledge-library",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Knowledge Library",
+                "path": "law-ai/specs/048-lsat-knowledge-library/plan.md",
+                "rel": "specs/048-lsat-knowledge-library/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Knowledge Library",
+                "path": "law-ai/specs/048-lsat-knowledge-library/spec.md",
+                "rel": "specs/048-lsat-knowledge-library/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Knowledge Library",
+                "path": "law-ai/specs/048-lsat-knowledge-library/tasks.md",
+                "rel": "specs/048-lsat-knowledge-library/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "049 Lsat Synthesis Engine",
+            "rel": "specs/049-lsat-synthesis-engine",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Item Synthesis Engine",
+                "path": "law-ai/specs/049-lsat-synthesis-engine/plan.md",
+                "rel": "specs/049-lsat-synthesis-engine/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Item Synthesis Engine",
+                "path": "law-ai/specs/049-lsat-synthesis-engine/spec.md",
+                "rel": "specs/049-lsat-synthesis-engine/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Item Synthesis Engine",
+                "path": "law-ai/specs/049-lsat-synthesis-engine/tasks.md",
+                "rel": "specs/049-lsat-synthesis-engine/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "050 Xai Oauth Provider",
+            "rel": "specs/050-xai-oauth-provider",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: xAI Grok OAuth provider tier",
+                "path": "law-ai/specs/050-xai-oauth-provider/plan.md",
+                "rel": "specs/050-xai-oauth-provider/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: xAI Grok OAuth provider tier",
+                "path": "law-ai/specs/050-xai-oauth-provider/spec.md",
+                "rel": "specs/050-xai-oauth-provider/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: xAI Grok OAuth provider tier",
+                "path": "law-ai/specs/050-xai-oauth-provider/tasks.md",
+                "rel": "specs/050-xai-oauth-provider/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "051 Layout Preferences",
+            "rel": "specs/051-layout-preferences",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Layout preferences",
+                "path": "law-ai/specs/051-layout-preferences/plan.md",
+                "rel": "specs/051-layout-preferences/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Layout preferences \u2014 show, hide, and move the shell's parts",
+                "path": "law-ai/specs/051-layout-preferences/spec.md",
+                "rel": "specs/051-layout-preferences/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Layout preferences",
+                "path": "law-ai/specs/051-layout-preferences/tasks.md",
+                "rel": "specs/051-layout-preferences/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "052 Backlog Zero",
+            "rel": "specs/052-backlog-zero",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Backlog Zero",
+                "path": "law-ai/specs/052-backlog-zero/plan.md",
+                "rel": "specs/052-backlog-zero/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Backlog Zero",
+                "path": "law-ai/specs/052-backlog-zero/spec.md",
+                "rel": "specs/052-backlog-zero/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Backlog Zero",
+                "path": "law-ai/specs/052-backlog-zero/tasks.md",
+                "rel": "specs/052-backlog-zero/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "053 Lsat Question Diagnosis",
+            "rel": "specs/053-lsat-question-diagnosis",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Question-Type Diagnosis",
+                "path": "law-ai/specs/053-lsat-question-diagnosis/plan.md",
+                "rel": "specs/053-lsat-question-diagnosis/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Question-Type Diagnosis",
+                "path": "law-ai/specs/053-lsat-question-diagnosis/spec.md",
+                "rel": "specs/053-lsat-question-diagnosis/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Question-Type Diagnosis",
+                "path": "law-ai/specs/053-lsat-question-diagnosis/tasks.md",
+                "rel": "specs/053-lsat-question-diagnosis/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "054 Lsat Contrast Variations",
+            "rel": "specs/054-lsat-contrast-variations",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: LSAT Contrast Variations and the Agent Quality Loop",
+                "path": "law-ai/specs/054-lsat-contrast-variations/plan.md",
+                "rel": "specs/054-lsat-contrast-variations/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: LSAT Contrast Variations and the Agent Quality Loop",
+                "path": "law-ai/specs/054-lsat-contrast-variations/spec.md",
+                "rel": "specs/054-lsat-contrast-variations/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: LSAT Contrast Variations and the Agent Quality Loop",
+                "path": "law-ai/specs/054-lsat-contrast-variations/tasks.md",
+                "rel": "specs/054-lsat-contrast-variations/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "055 Ocrmd Plugin",
+            "rel": "specs/055-ocrmd-plugin",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: ocrmd as a plug-in",
+                "path": "law-ai/specs/055-ocrmd-plugin/plan.md",
+                "rel": "specs/055-ocrmd-plugin/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: ocrmd as a plug-in \u2014 scanned pages as LSAT drafts and as matter\u2026",
+                "path": "law-ai/specs/055-ocrmd-plugin/spec.md",
+                "rel": "specs/055-ocrmd-plugin/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: ocrmd as a plug-in",
+                "path": "law-ai/specs/055-ocrmd-plugin/tasks.md",
+                "rel": "specs/055-ocrmd-plugin/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "056 Legalbench Baseline",
+            "rel": "specs/056-legalbench-baseline",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: Commit the first real LegalBench baseline",
+                "path": "law-ai/specs/056-legalbench-baseline/plan.md",
+                "rel": "specs/056-legalbench-baseline/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: Commit the first real LegalBench baseline",
+                "path": "law-ai/specs/056-legalbench-baseline/spec.md",
+                "rel": "specs/056-legalbench-baseline/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: Commit the first real LegalBench baseline",
+                "path": "law-ai/specs/056-legalbench-baseline/tasks.md",
+                "rel": "specs/056-legalbench-baseline/tasks.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Template",
+            "rel": "specs/_template",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan: {Feature Name}",
+                "path": "law-ai/specs/_template/plan.md",
+                "rel": "specs/_template/plan.md"
+              },
+              {
+                "type": "page",
+                "title": "Spec: {Feature Name}",
+                "path": "law-ai/specs/_template/spec.md",
+                "rel": "specs/_template/spec.md"
+              },
+              {
+                "type": "page",
+                "title": "Tasks: {Feature Name}",
+                "path": "law-ai/specs/_template/tasks.md",
+                "rel": "specs/_template/tasks.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

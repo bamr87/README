@@ -88,7 +88,9 @@ rewards:
   - AI agent prompt engineering techniques
   - Enterprise architecture pattern library
 skill_focus: fullstack
-source_file: stack-attack.md
+source_file: pages/_quests/0001/stack-attack.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/stack-attack.md
 sub_title: 'Level 0001 (1) Quest: AI-Powered Enterprise Stack Architecture'
 tags:
 - '0001'
@@ -102,7 +104,7 @@ tags:
 - rest-api
 - celery
 - postgresql
-title: 'Stack Attack: Enterprise ERP Architecture Agent'
+title: 'Stack Attack: AI-Built Django + React Enterprise ERP'
 validation_criteria:
   completion_requirements:
   - Successfully deploy /stackattack AI agent prompt
@@ -1859,7 +1861,7 @@ The open-source ERP landscape is vast — ERPNext, Odoo, and dozens of specializ
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

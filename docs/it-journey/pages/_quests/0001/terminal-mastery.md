@@ -54,7 +54,9 @@ rewards:
 - 🛠️ Command-Line Mastery Foundation
 - 🎯 Advanced Developer Toolkit Access
 skill_focus: fullstack
-source_file: terminal-mastery.md
+source_file: pages/_quests/0001/terminal-mastery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/terminal-mastery.md
 sub_title: 'Level 0001 (1) Quest: Command-Line Interface Mastery'
 tags:
 - '0001'
@@ -66,7 +68,7 @@ tags:
 - developer-tools
 - hands-on
 - gamified-learning
-title: Open Terminal (Command + Space, type "Terminal")
+title: 'Terminal Mastery: Conquering the Command-Line Realm'
 validation_criteria:
 - Navigate complex directory structures using only terminal commands
 - Execute file operations (create, copy, move, delete) with confidence
@@ -705,11 +707,11 @@ Your newfound terminal powers open several exciting paths:
 
 ---
 
-*May your commands execute flawlessly, your scripts run without errors, and your terminal sessions be filled with productivity and discovery! Ready for your next adventure? Check the [Quest Map](/quests/) for your next challenge!* ⚔️✨
+*May your commands execute flawlessly, your scripts run without errors, and your terminal sessions be filled with productivity and discovery! Ready for your next adventure? Check the [[it-journey/pages/_quests/README|Quest Map]] for your next challenge!* ⚔️✨
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

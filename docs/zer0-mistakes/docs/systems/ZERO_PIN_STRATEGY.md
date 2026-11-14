@@ -6,12 +6,15 @@ date: 2025-11-29 05:33:55+00:00
 description: 'The zero-version-pin strategy: always use the latest compatible dependencies
   while keeping reproducible builds via lockfiles and fail-fast checks.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: ZERO_PIN_STRATEGY.md
+source_file: docs/systems/ZERO_PIN_STRATEGY.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/ZERO_PIN_STRATEGY.md
 tags:
 - systems
 - automation
 title: Zero Version Pin Strategy
 ---
+
 # Zero Version Pin Strategy
 
 > **Always use the latest compatible versions of everything, with zero version pins anywhere — while maintaining 100% reproducible builds and failing fast in TEST/DEV.**

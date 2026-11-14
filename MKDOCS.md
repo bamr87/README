@@ -12,7 +12,8 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 |------|---------|
 | [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
 | [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
-| [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`) |
+| [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and its views |
+| [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`); the hook also needs `requirements.txt` |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
 | [`docs/`](docs/) | Source content (generated; one folder per aggregated repo) |
 
@@ -23,7 +24,7 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 ```bash
 # from the repo root
 python3 -m venv .venv && source .venv/bin/activate   # a .venv/ already exists in-tree
-pip install -r requirements-docs.txt
+pip install -r requirements.txt -r requirements-docs.txt
 
 mkdocs serve            # dev server with live reload
 mkdocs build            # static build into site/
@@ -38,15 +39,34 @@ To serve without the base-path redirect during quick edits, point `mkdocs serve`
 - **The build is intentionally non-strict.** `mkdocs build` exits 0 but prints several hundred `WARNING` lines about broken links and missing anchors. These are inherent to aggregating Markdown from many independent repos (relative links point at files that weren't aggregated). They are expected — do **not** add `--strict` to the deploy, and don't hand-edit `docs/` to chase them.
 - **Navigation is generated, not curated.** `mkdocs.yml` carries no `nav:` key; it pulls `nav.yml` in with `INHERIT`, and the context engine's navigator renders that file from the `docs/` folder hierarchy plus the `navigation:` contract in `_data/projects.yml`. Every published page has a sidebar entry. Never hand-edit `nav.yml` and never add a `nav:` key to `mkdocs.yml` — it would shadow the generated tree and the sidebar would silently stop tracking the corpus.
 - **`nav.yml` also carries `exclude_docs` and `not_in_nav`.** `exclude_docs` drops what the registry excludes and re-includes the dot-directories MkDocs skips by default; `not_in_nav` then declares those same dot-paths as deliberately unlisted. Every nav entry points at a page the site builds, and MkDocs does not warn about the pages that are built without one.
-- **Dot-directories are built but not navigable.** GitHub Pages does not serve a URL containing a dot-prefixed segment — verified against the live site: `_underscore` and plain paths return 200, every `/.dot/` path returns 404. So `navigation.navigate_hidden` is `false` in the registry: the ~1,000 pages under `.github/`, `.claude/`, `.cms/` and friends stay in the build (and the sitemap) but get no sidebar entry, because a sidebar entry for them would be a dead link. Set `navigate_hidden: true` only if those paths ever become servable — e.g. if the corpus renames dot-directories at ingest.
+- **Dot-directories no longer reach the corpus.** The crawl drops them as plumbing unless a project claims one back with `collect.include`, and renames those it keeps (`.github` → `dot-github`). `navigation.publish_hidden` is `false`, which also keeps `docs/.obsidian/` out of the site. The next paragraph is why.
+- **GitHub Pages does not serve dot-paths.** GitHub Pages does not serve a URL containing a dot-prefixed segment — verified against the live site: `_underscore` and plain paths return 200, every `/.dot/` path returns 404. So `navigation.navigate_hidden` is `false` in the registry: the ~1,000 pages under `.github/`, `.claude/`, `.cms/` and friends stay in the build (and the sitemap) but get no sidebar entry, because a sidebar entry for them would be a dead link. Set `navigate_hidden: true` only if those paths ever become servable — e.g. if the corpus renames dot-directories at ingest.
 - **Upstream `icon:` frontmatter is normalized at ingest.** Material resolves `page.meta.icon` as a bundled SVG for every nav entry, so a Jekyll value like `icon: globe` used to fail the whole build — which is why the nav was hand-curated before. `scripts/fix_frontmatter_icons.py` now maps those onto Material icons (keeping the original as `source_icon`), so every page is safe to place in the nav.
 - Adding a new aggregated repo? Add it to `_data/projects.yml` and rebuild — `python3 -m scripts.context_engine build` regenerates `nav.yml`, `context/nav/` and `docs/browse/`. There is nothing to add here by hand.
+
+## Obsidian on the site
+
+`docs/` stays a plain Obsidian vault. The hook reads `context/vault/graph.json`, and it resolves links with the engine's own `Resolver`, so the site and the app agree. What it adds:
+
+| Obsidian | On the site | Where |
+|---|---|---|
+| Wikilinks, callouts | Links and admonitions | `hook.py`, at render time; `docs/` is not changed |
+| Graph view | `/brain/graph/`: filter, groups, forces, orphans | `brain.js` on `/brain/graph/` |
+| Local graph | Right sidebar of each page | `brain.js` |
+| Backlinks, outgoing links | Panel at the foot of each page | `hook.py` |
+| Page preview | Hovering an internal link | `brain.js` |
+| Quick switcher | `Ctrl+O` / `Cmd+O`, or the header button | `brain.js` |
+| Canvas | `/brain/canvas/`, drawn from `brain/fleet.canvas` | `brain.js` |
+| Bases | `/brain/pages/`, a sortable table | `brain.js` |
+| Tag pane | `/brain/tags/` | generated |
+
+Everything re-attaches on `document$`, because `navigation.instant` swaps pages without a reload. A build needs `context/vault/graph.json`, so run `python3 -m scripts.context_engine build` first. To use the vault in the app, open `docs/` as a vault; the graph colours and core plugins are in `docs/.obsidian/`.
 
 ## Deployment (GitHub Pages)
 
 Deployment is automated by [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml):
 
-- **Triggers:** pushes to `main` touching `docs/**`, `mkdocs.yml`, `requirements-docs.txt`, or the workflow itself; plus manual `workflow_dispatch`.
+- **Triggers:** each successful run of `Aggregate Documentation`, because a commit made with `GITHUB_TOKEN` starts no workflow; pushes to `main` touching `docs/**`, `brain_site/**`, `context/vault/**`, `mkdocs.yml`, `nav.yml`, `requirements-docs.txt`, or the workflow itself; plus manual `workflow_dispatch`.
 - **How:** builds with `mkdocs build`, uploads the `site/` artifact, and publishes via the official `actions/deploy-pages` (no `gh-pages` branch — uses the Pages artifact flow).
 
 **One-time setup:** in the repo's **Settings → Pages**, set **Source = "GitHub Actions"**. Until that's done the workflow build will succeed but the deploy step has nowhere to publish.

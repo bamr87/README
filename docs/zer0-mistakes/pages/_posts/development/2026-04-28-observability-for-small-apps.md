@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:15:00+00:00
 layout: article
 preview: /images/previews/observability-for-small-apps-logs-metrics-and-trac.png
-source_file: 2026-04-28-observability-for-small-apps.md
+source_file: pages/_posts/development/2026-04-28-observability-for-small-apps.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/development/2026-04-28-observability-for-small-apps.md
 tags:
 - observability
 - monitoring
 - logging
 - reliability
-title: 2026 04 28 Observability For Small Apps
+title: 'Observability for Small Apps: Logs, Metrics, and Traces Without the Drama'
 ---
+
 Observability can sound like a platform engineering project, but small applications need it too. The difference is scope. A small app does not need a giant telemetry program on day one. It needs enough visibility to answer three questions quickly.
 
 1. Is the app working?

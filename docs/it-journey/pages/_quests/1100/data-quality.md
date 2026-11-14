@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Completes the core Level 1100 Data Engineering quest line
 skill_focus: data-engineering
-source_file: data-quality.md
+source_file: pages/_quests/1100/data-quality.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/data-quality.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - Data Quality'
 tags:
 - '1100'
@@ -83,7 +85,7 @@ tags:
 - main_quest
 - data-engineering
 - hands-on
-title: Any Codespace or container with Python works.
+title: 'Data Quality Engineering: Validation & Monitoring'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfortable writing Python functions and using `pip` packages
 - [ ] Basic SQL and how relational tables and keys work
-- [ ] The ETL stages and idempotency (complete [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) first)
+- [ ] The ETL stages and idempotency (complete [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]] first)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -445,16 +447,16 @@ The same idea applies to null rates, value distributions, and freshness - watch 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Machine Learning Fundamentals](/quests/1101/) - Feed trustworthy data into models (Level 1101)
+- 🎯 [[it-journey/pages/_quests/1101/README|Machine Learning Fundamentals]] - Feed trustworthy data into models (Level 1101)
 
 **Explore Side Adventures**:
-- ⚔️ [Apache Spark](/quests/1100/apache-spark/) - Run these checks at distributed scale
-- ⚔️ [Stream Processing](/quests/1100/stream-processing/) - Validate events in flight
+- ⚔️ [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]] - Run these checks at distributed scale
+- ⚔️ [[it-journey/pages/_quests/1100/stream-processing|Stream Processing]] - Validate events in flight
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Bring data-testing discipline back to [ETL Pipeline Design](/quests/1100/etl-pipeline-design/)  
-**🏗️ System Engineer**: Scale checks with [Apache Spark](/quests/1100/apache-spark/)  
+**💻 Software Developer**: Bring data-testing discipline back to [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]]  
+**🏗️ System Engineer**: Scale checks with [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]]  
 **📊 Data Scientist**: Guard model inputs, then advance toward the Machine Learning tier
 
 ## 📚 Resources
@@ -485,6 +487,6 @@ The same idea applies to null rates, value distributions, and freshness - watch 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Related:** [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Stream Processing: Real-Time Data with Apache Kafka & Flink]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Related:** [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[it-journey/pages/_quests/1100/stream-processing|Stream Processing: Real-Time Data with Apache Kafka & Flink]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

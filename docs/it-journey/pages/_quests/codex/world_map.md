@@ -31,14 +31,16 @@ quest_type: side_quest
 skill_focus:
 - codex
 - reference
-source_file: world_map.md
+source_file: pages/_quests/codex/world_map.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/world_map.md
 tags:
 - navigation
 - site-map
 - world-map
 - it-journey
 - learning-paths
-title: World Map
+title: '🗺️ World Map: Navigation Guide to the IT-Journey Realm'
 toc: true
 toc_sticky: true
 ---
@@ -90,9 +92,9 @@ graph TD
 
 ### 🎯 Quick Navigation Links
 
-- [Machine Setup Guide](/quickstart/machine-setup/) - Configure your development fortress
-- [Essential Tools](/quickstart/) - Arm yourself with the right weapons
-- [Zer0-Mistakes Starter](/quests/codex/zer0-to-her0-cmstyle/) - Foundation principles and practices
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup Guide]] - Configure your development fortress
+- [[zer0-mistakes/pages/_quickstart/index|Essential Tools]] - Arm yourself with the right weapons
+- [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Zer0-Mistakes Starter]] - Foundation principles and practices
 
 ## ⚔️ Journey Domain - The Epic Quest Realm
 
@@ -160,19 +162,19 @@ graph TD
 
 | Quest | Difficulty | Description |
 |-------|------------|-------------|
-| [Begin Your IT Journey](/quests/0000/begin-your-it-journey/) | 🌱 n00b | The Hero's Call |
-| [Character Building](/quests/0000/character-building/) | 🌱 n00b | Forge Your Identity |
-| [IT Fundamentals](/quests/0000/it-fundamentals/) | 🌱 n00b | Learn the Ancient Arts |
-| [Character Selection](/quests/0000/character-selection/) | 🟢 Easy | Choose Your Destiny |
-| [OS Selection](/quests/0000/os-selection/) | 🟢 Easy | Pick Your Realm |
+| [[it-journey/pages/_quests/0000/begin-your-it-journey\|Begin Your IT Journey]] | 🌱 n00b | The Hero's Call |
+| [[it-journey/pages/_quests/0000/character-building\|Character Building]] | 🌱 n00b | Forge Your Identity |
+| [[it-journey/pages/_quests/0000/it-fundamentals\|IT Fundamentals]] | 🌱 n00b | Learn the Ancient Arts |
+| [[it-journey/pages/_quests/0000/character-selection\|Character Selection]] | 🟢 Easy | Choose Your Destiny |
+| [[it-journey/pages/_quests/0000/os-selection\|OS Selection]] | 🟢 Easy | Pick Your Realm |
 
 **Platform-Specific Quests:**
 
-- [Hello n00b](/quests/0000/hello-noob/) - Your first steps into the digital realm
-- [Hello Windows](/quests/0000/hello-windows/) - Mastering the Microsoft Kingdom
-- [Hello macOS](/quests/0000/hello-macos/) - Conquering the Apple Empire
-- [Hello Linux](/quests/0000/linux-fundamentals/) - Taming the Penguin's Domain
-- [Hello Cloud](/quests/0000/hello-cloud/) - Ascending to the Digital Heavens
+- [[it-journey/pages/_quests/0000/hello-noob|Hello n00b]] - Your first steps into the digital realm
+- [[it-journey/pages/_quests/0000/hello-win|Hello Windows]] - Mastering the Microsoft Kingdom
+- [[it-journey/pages/_quests/0000/hello-mac|Hello macOS]] - Conquering the Apple Empire
+- [[it-journey/pages/_quests/0000/linux-fundamentals|Hello Linux]] - Taming the Penguin's Domain
+- [[it-journey/pages/_quests/0000/hello-cloud|Hello Cloud]] - Ascending to the Digital Heavens
 
 #### ⚡ Level Progression System
 
@@ -201,29 +203,29 @@ Complex application development
 
 Become a master of user interfaces and digital aesthetics
 
-- [Frontend Fundamentals](/quests/0100/frontend/) - The Art of Digital Presentation
-- [Frontend Docker Adventures](/quests/0100/frontend-docker/) - Containerized UI Magic
-- [Frontend Level Progression](/quests/0100/frontend/) - Structured Learning Path
-- [Level 000 Frontend](/quests/0100/frontend-docker/) - Beginner Container Magic
-- [Level 001 Frontend](/quests/0100/frontend-docker/) - Intermediate UI Sorcery
-- [Level 010 Frontend](/quests/0100/frontend-docker/) - Advanced Interface Wizardry
+- [[it-journey/pages/_quests/0100/frontend|Frontend Fundamentals]] - The Art of Digital Presentation
+- [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker Adventures]] - Containerized UI Magic
+- [[it-journey/pages/_quests/0100/frontend|Frontend Level Progression]] - Structured Learning Path
+- [[it-journey/pages/_quests/0100/frontend-docker|Level 000 Frontend]] - Beginner Container Magic
+- [[it-journey/pages/_quests/0100/frontend-docker|Level 001 Frontend]] - Intermediate UI Sorcery
+- [[it-journey/pages/_quests/0100/frontend-docker|Level 010 Frontend]] - Advanced Interface Wizardry
 
 #### 📚 Quest Codex (`/quests/codex/`)
 
 Reference materials and navigation aids
 
-- [🗺️ World Map](/quests/codex/world-map/) - This guide to every quest, doc, and learning path
-- [📖 Glossary](/quests/codex/glossary/) - Dictionary of Digital Spells and Terms
+- [[it-journey/pages/_quests/codex/world_map|🗺️ World Map]] - This guide to every quest, doc, and learning path
+- [[it-journey/pages/_quests/codex/glossary|📖 Glossary]] - Dictionary of Digital Spells and Terms
 
 #### 🕰️ Recent Quest Chronicles (2025)
 
-- [Django & Git Mastery](/quests/0010/django-and-git/) - Web Framework Sorcery
-- [Action Triggers](/quests/0010/action-triggers/) - Automation Spell Casting
-- [Branches & Pull Requests](/quests/0010/branches-and-pull-requests/) - Version Control Mastery
-- [Change Log Chronicles](/quests/0010/change-logs/) - Document Your Journey
-- [Clean Commit Commitments](/quests/0010/commitments-to-clean-commits/) - Perfect Your Git Ritual
-- [AI Automation Revolution](/quests/0010/revolutionizing-work-with-ai-automation/) - Summon AI Familiars
-- [Sourcery Code Methods](/quests/0100/source-control-sorcery/) - Advanced Coding Incantations
+- [[it-journey/pages/_quests/tools/django-and-git|Django & Git Mastery]] - Web Framework Sorcery
+- [[it-journey/pages/_quests/tools/action-triggers|Action Triggers]] - Automation Spell Casting
+- [[it-journey/pages/_quests/tools/branches-and-pull-requests|Branches & Pull Requests]] - Version Control Mastery
+- [[it-journey/pages/_quests/tools/change-logs|Change Log Chronicles]] - Document Your Journey
+- [[it-journey/pages/_quests/tools/commitments-to-clean-commits|Clean Commit Commitments]] - Perfect Your Git Ritual
+- [[it-journey/pages/_quests/tools/revolutionizing-work-with-ai-automation|AI Automation Revolution]] - Summon AI Familiars
+- [[it-journey/pages/_quests/0100/sourcery-code-methods|Sourcery Code Methods]] - Advanced Coding Incantations
 
 ## 📚 Library Domain - The Sacred Repository of Knowledge
 
@@ -316,22 +318,22 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 #### 🏠 Central Hubs
 
 - [🏛️ Main Portal](/) - Primary entrance to IT-Journey
-- [🏰 Quest Central](/quests/) - Complete quest index and navigation
+- [[it-journey/pages/_quests/README|🏰 Quest Central]] - Complete quest index and navigation
 - [📜 Chronicle Archive](https://lifehacker.dev/news/) - All chronicles and blog posts, at the sister site lifehacker.dev
-- [📚 Library Index](/docs/) - Documentation and guides
-- [📔 Personal Notebook](/notes/) - Your learning space
+- [[it-journey/_data/brand/sections/docs|📚 Library Index]] - Documentation and guides
+- [[it-journey/pages/_notes/index|📔 Personal Notebook]] - Your learning space
 
 #### 🔧 Platform Management
 
-- [🏰 The Self-Operating Website](/quests/codex/self-operating-website/) - Build & configure the site as an epic quest
-- [🤝 Contributing Guide](/about/contributing/) - How to contribute content
-- [✨ Feature Overview](/about/features/) - Platform capabilities
+- [[it-journey/pages/_quests/codex/self-operating-website|🏰 The Self-Operating Website]] - Build & configure the site as an epic quest
+- [[it-journey/pages/_about/contribute/contributing|🤝 Contributing Guide]] - How to contribute content
+- [[it-journey/pages/_about/features/index|✨ Feature Overview]] - Platform capabilities
 
 #### 🔍 Discovery Tools
 
-- [🔎 Site Search](/search/) - Find content across all domains
-- [🏷️ All Categories](/quests/) - Browse content by topic
-- [📊 Progress Tracking](/quests/home/) - Monitor your learning journey
+- [[it-journey/pages/search|🔎 Site Search]] - Find content across all domains
+- [[it-journey/pages/_quests/README|🏷️ All Categories]] - Browse content by topic
+- [[it-journey/pages/_quests/home|📊 Progress Tracking]] - Monitor your learning journey
 
 ### 🛡️ Authentication & Access
 
@@ -344,24 +346,24 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 
 ### 🎯 For Complete Beginners
 
-1. **Start Here:** [Hello n00b Quest](/quests/0000/hello-noob/)
-2. **Setup Environment:** [Machine Setup Guide](/quickstart/machine-setup/)
-3. **Choose Platform:** [OS Selection Quest](/quests/0000/os-selection/)
-4. **Begin Journey:** [Character Creation](/quests/0000/character-building/)
+1. **Start Here:** [[it-journey/pages/_quests/0000/hello-noob|Hello n00b Quest]]
+2. **Setup Environment:** [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup Guide]]
+3. **Choose Platform:** [[it-journey/pages/_quests/0000/os-selection|OS Selection Quest]]
+4. **Begin Journey:** [[it-journey/pages/_quests/0000/character-building|Character Creation]]
 
 ### ⚡ For Experienced Developers
 
-1. **Skill Assessment:** [Browse Quest Levels](/quests/#level-progression-system)
-2. **Specialization:** [Choose Frontend](/quests/0100/frontend/) or [Backend Path](/quests/0001/)
-3. **Advanced Challenges:** [Level 010 Quests](/quests/0010/)
-4. **Contribute Content:** [Contributing Guide](/about/contributing/)
+1. **Skill Assessment:** [[it-journey/pages/_quests/README#level-progression-system|Browse Quest Levels]]
+2. **Specialization:** [[it-journey/pages/_quests/0100/frontend|Choose Frontend]] or [[it-journey/pages/_quests/0001/README|Backend Path]]
+3. **Advanced Challenges:** [[it-journey/pages/_quests/0010/README|Level 010 Quests]]
+4. **Contribute Content:** [[it-journey/pages/_about/contribute/contributing|Contributing Guide]]
 
 ### 🔧 For System Administrators
 
-1. **Platform Setup:** [The Self-Operating Website epic](/quests/codex/self-operating-website/)
+1. **Platform Setup:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website epic]]
 2. **Docker Environment:** [Docker from Zero: Essential Commands](https://lifehacker.dev/hacks/docker-from-zero-essential-commands/)
 3. **CI/CD Integration:** [GitHub Actions hacks on lifehacker.dev](https://lifehacker.dev/news/hacks/)
-4. **Monitoring:** [Site Analytics](/about/features/)
+4. **Monitoring:** [[it-journey/pages/_about/features/index|Site Analytics]]
 
 ## 🌟 Hidden Treasures & Advanced Features
 
@@ -395,7 +397,7 @@ Site navigation is managed through YAML files in `_data/navigation/`:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

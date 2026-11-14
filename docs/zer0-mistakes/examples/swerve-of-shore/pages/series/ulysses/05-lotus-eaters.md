@@ -8,9 +8,12 @@ permalink: /series/ulysses/05-lotus-eaters/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 05-lotus-eaters.md
-title: 05 Lotus Eaters
+source_file: examples/swerve-of-shore/pages/series/ulysses/05-lotus-eaters.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/05-lotus-eaters.md
+title: 05 · Lotus Eaters
 ---
+
 {% include page-header.html %}
 
 Episode 5 of *Ulysses*. 10am, the bath house and the post office.

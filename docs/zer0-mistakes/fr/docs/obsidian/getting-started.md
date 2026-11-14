@@ -11,7 +11,9 @@ layout: default
 machine_translated: true
 permalink: /fr/docs/obsidian/getting-started/
 preview: /images/previews/getting-started-with-the-obsidian-vault.png
-source_file: getting-started.md
+source_file: fr/docs/obsidian/getting-started.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/obsidian/getting-started.md
 tags:
 - obsidian
 - setup
@@ -21,6 +23,7 @@ translated_from_sha: 90cee16fcdf6
 translation_of: pages/_docs/obsidian/getting-started.md
 translation_source_url: /docs/obsidian/getting-started/
 ---
+
 # Premiers pas avec le coffre Obsidian
 
 ## 1. Ouvrir le dépôt comme coffre
@@ -91,10 +94,10 @@ Obsidian affiche ces champs dans sa barre latérale **Propriétés** ; les valeu
 
 ## Voir aussi
 
-- [[Obsidian Vault Integration]]
-- [[Obsidian Syntax Reference]]
-- [[Obsidian Authoring Workflow]]
-- [[Obsidian Integration Troubleshooting]]
-- [[Obsidian Graph View]]
-- [[front-matter]]
-- [[Installation]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow|Obsidian Authoring Workflow]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

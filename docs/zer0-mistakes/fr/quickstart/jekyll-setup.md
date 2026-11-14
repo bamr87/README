@@ -25,18 +25,21 @@ quickstart:
   step: 2
 sidebar:
   nav: quickstart
-source_file: jekyll-setup.md
+source_file: fr/quickstart/jekyll-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/jekyll-setup.md
 tags:
 - jekyll
 - docker
 - development
 - configuration
 - theme
-title: Configuration de Jekyll
+title: 'Configuration de Jekyll : lancer le serveur de développement et créer du contenu'
 translated_from_sha: fe9345270029
 translation_of: pages/_quickstart/jekyll-setup.md
 translation_source_url: /quickstart/jekyll-setup/
 ---
+
 # Configuration de Jekyll
 
 Démarrez votre serveur de développement Jekyll basé sur Docker et créez votre premier contenu. **Aucune installation locale de Ruby requise** — tout s'exécute à l'intérieur du conteneur.
@@ -54,7 +57,7 @@ flowchart LR
 
 ## Prérequis
 
-Complétez d'abord [Configuration de la machine](/quickstart/machine-setup/) (Docker Desktop, Git, GitHub CLI).
+Complétez d'abord [[zer0-mistakes/pages/_quickstart/machine-setup|Configuration de la machine]] (Docker Desktop, Git, GitHub CLI).
 
 ## Étape 1 — Cloner le dépôt
 

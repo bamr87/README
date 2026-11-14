@@ -1,5 +1,7 @@
 ---
 source_file: AGENTS.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/AGENTS.md
 title: bashcrawl
 ---
 <!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->

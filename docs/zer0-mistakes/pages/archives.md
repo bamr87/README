@@ -3,9 +3,12 @@ description: Post archives by month.
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /archives/
-source_file: archives.md
+source_file: pages/archives.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/archives.md
 title: Archives
 ---
+
 # Archives
 
 {% assign posts_by_month = site.posts | group_by_exp: 'post', "post.date | date: '%B %Y'" %}

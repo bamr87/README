@@ -11,14 +11,17 @@ difficulty: intermediate
 lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 permalink: /notes/docker-commands/
-source_file: docker-commands.md
+source_file: pages/_notes/docker-commands.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notes/docker-commands.md
 tags:
 - docker
 - containers
 - devops
 - reference
-title: Run container from image
+title: Docker Commands Reference
 ---
+
 ## Container Management
 
 ### Running Containers

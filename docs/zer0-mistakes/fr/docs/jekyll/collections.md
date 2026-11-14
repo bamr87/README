@@ -14,7 +14,9 @@ permalink: /fr/docs/jekyll/collections/
 preview: /images/previews/jekyll-collections.png
 sidebar:
   nav: docs
-source_file: collections.md
+source_file: fr/docs/jekyll/collections.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/jekyll/collections.md
 tags:
 - collections
 - jekyll
@@ -25,6 +27,7 @@ translated_from_sha: 031612b6df21
 translation_of: pages/_docs/jekyll/collections.md
 translation_source_url: /docs/jekyll/collections/
 ---
+
 # Collections Jekyll
 
 Le thème Zer0-Mistakes utilise les collections Jekyll pour organiser différents types de contenu avec des permaliens et des mises en page personnalisés.
@@ -355,12 +358,12 @@ layout: default
 
 ## Voir aussi
 
-- [Configuration de Jekyll](/docs/jekyll/)
-- [Mises en page](/docs/customization/layouts/)
-- [Front Matter](/docs/front-matter/)
+- [[zer0-mistakes/pages/_docs/jekyll/index|Configuration de Jekyll]]
+- [[zer0-mistakes/pages/_docs/customization/layouts|Mises en page]]
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]]
 
 ## Voir aussi
 
-- [[Jekyll]]
-- [[front-matter]]
-- [[Liquid]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]

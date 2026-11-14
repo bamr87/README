@@ -11,12 +11,15 @@ layout: author
 machine_translated: true
 permalink: /fr/authors/guest/
 sidebar: false
-source_file: guest.md
-title: Guest
+source_file: fr/about/authors/guest.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/authors/guest.md
+title: Devenir auteur — Contribuer à zer0-mistakes
 translated_from_sha: cd27b030744f
 translation_of: pages/_about/authors/guest.md
 translation_source_url: /authors/guest/
 ---
+
 L'**Auteur invité** crédite les contributions ponctuelles et les premières participations. Tout le monde peut écrire pour zer0-mistakes — cette page est votre point de départ, d'un simple article invité jusqu'à votre propre profil d'auteur.
 
 ## Contribuer à un article

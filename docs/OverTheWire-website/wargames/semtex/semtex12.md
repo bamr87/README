@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 12
-source_file: semtex12.md
+source_file: wargames/semtex/semtex12.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex12.md
 title: Semtex12
 ---
 Authentication Daemon

@@ -15,16 +15,19 @@ permalink: /fr/docs/development/
 preview: /images/previews/development-docs.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/development/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/index.md
 tags:
 - development
 - contributing
 - ci-cd
-title: Contribuer à Zer0-Mistakes
+title: Développement
 translated_from_sha: 13bb41961ce9
 translation_of: pages/_docs/development/index.md
 translation_source_url: /docs/development/
 ---
+
 # Contribuer à Zer0-Mistakes
 
 Cette section fournit des guides pour les **contributeurs du thème** — les développeurs qui souhaitent contribuer, étendre ou modifier le thème Jekyll Zer0-Mistakes lui-même.
@@ -105,13 +108,13 @@ Consultez [CONTRIBUTING.md](https://github.com/bamr87/zer0-mistakes/blob/main/CO
 
 ## Connexe
 
-- [Guide d'installation](/docs/installation/)
-- [Développement Docker](/docs/docker/)
-- [Personnalisation](/docs/customization/)
+- [[zer0-mistakes/pages/_docs/installation|Guide d'installation]]
+- [[zer0-mistakes/pages/_docs/docker/index|Développement Docker]]
+- [[zer0-mistakes/pages/_docs/customization/index|Personnalisation]]
 
 ## Voir aussi
 
-- [[Docker]]
-- [[Jekyll]]
-- [[Customization]]
-- [[Installation]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

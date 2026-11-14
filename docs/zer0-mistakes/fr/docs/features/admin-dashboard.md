@@ -15,7 +15,9 @@ permalink: /fr/docs/features/admin-dashboard/
 preview: /images/previews/admin-layout-configuration-dashboards.png
 sidebar:
   nav: docs
-source_file: admin-dashboard.md
+source_file: fr/docs/features/admin-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/admin-dashboard.md
 tags:
 - admin
 - dashboard
@@ -26,6 +28,7 @@ translated_from_sha: 06e9923ed1a1
 translation_of: pages/_docs/features/admin-dashboard.md
 translation_source_url: /docs/features/admin-dashboard/
 ---
+
 # Mises en page d'administration et tableaux de bord de configuration
 
 Le thème zer0-mistakes fournit une mise en page `admin` et un ensemble de partials de tableau de bord pour faire remonter la configuration du site, les métadonnées de build et les indicateurs de fonctionnalités — le tout au même endroit, sans nécessiter de CMS ni de backend.
@@ -126,10 +129,10 @@ Add your content here. Use Bootstrap 5 components freely.
 
 ## Associé
 
-- [Navigation dynamique](/docs/features/dynamic-navigation/)
-- [Configuration du thème](/docs/customization/)
+- [[zer0-mistakes/pages/_docs/features/dynamic-navigation|Navigation dynamique]]
+- [[zer0-mistakes/pages/_docs/customization/index|Configuration du thème]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]

@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 1111 Leadership & Innovation quest line
 skill_focus: architecture
-source_file: architecture-reviews.md
+source_file: pages/_quests/1111/architecture-reviews.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/architecture-reviews.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Architecture Reviews'
 tags:
 - '1111'
@@ -83,7 +85,7 @@ tags:
 - design-review
 - trade-offs
 - gamified-learning
-title: Store ADRs in the repo; adr-tools automates numbering and templating
+title: 'Architecture Reviews: ADRs and Trade-off Facilitation'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Experience designing or building non-trivial systems
 - [ ] Comfort reasoning about trade-offs (latency, cost, complexity, consistency)
-- [ ] Completion of [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] A Markdown editor for ADRs and review notes
@@ -401,14 +403,14 @@ Then connect it back to the vision and the reversibility rule from earlier quest
 - 🎯 You have completed the Leadership & Innovation quest line - the highest keep of the realm. Revisit any quest to go deeper.
 
 **Explore Side Adventures**:
-- ⚔️ [Technical Leadership](/quests/1111/technical-leadership/) - Apply reviews to a team you lead
-- ⚔️ [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/) - Sharpen the docs your reviews depend on
+- ⚔️ [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] - Apply reviews to a team you lead
+- ⚔️ [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]] - Sharpen the docs your reviews depend on
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Innovation and R&D](/quests/1111/innovation-rnd/) to pressure-test new bets  
-**🏗️ System Engineer**: Return to [Technical Leadership](/quests/1111/technical-leadership/) to lead design forums  
-**🛡️ Security Specialist**: Apply reviews to [Security Fundamentals](/quests/1011/security-fundamentals/) threat models
+**💻 Software Developer**: Revisit [[it-journey/pages/_quests/1111/innovation-rnd|Innovation and R&D]] to pressure-test new bets  
+**🏗️ System Engineer**: Return to [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] to lead design forums  
+**🛡️ Security Specialist**: Apply reviews to [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] threat models
 
 ## 📚 Resources
 
@@ -437,6 +439,6 @@ Then connect it back to the vision and the reversibility rule from earlier quest
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Career Advancement: IC vs Management Tracks, Leveling, and Negotiation]] **Related quests:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] · [[Tech Speaking and Writing: RFCs, Design Docs, and Talks That Persuade]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Career Advancement: IC vs Management Tracks, Leveling, and Negotiation]] **Related quests:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] · [[Tech Speaking and Writing: RFCs, Design Docs, and Talks That Persuade]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

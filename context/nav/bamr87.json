@@ -1,0 +1,1725 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "bamr87",
+  "title": "Fleet Hub",
+  "corpus": "docs/bamr87",
+  "counts": {
+    "pages": 223,
+    "sections": 36,
+    "max_depth": 4,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "6734ef5687442dfb",
+  "tree": {
+    "type": "section",
+    "title": "Fleet Hub",
+    "index": "bamr87/README.md",
+    "pages": 223,
+    "children": [
+      {
+        "type": "page",
+        "title": "\ud83d\udc4b Hi, I'm Amr Abdel-Motaleb",
+        "path": "bamr87/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "bamr87 (AGENTS)",
+        "path": "bamr87/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "bamr87 (CLAUDE)",
+        "path": "bamr87/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "bamr87/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributing to Amr Abdel-Motaleb's Projects",
+        "path": "bamr87/CONTRIBUTING.md",
+        "rel": "CONTRIBUTING.md"
+      },
+      {
+        "type": "page",
+        "title": "Index \u2014 the bamr87 hub as the fleet's central repository",
+        "path": "bamr87/CATALOG.md",
+        "rel": "CATALOG.md"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 bamr87 (dash)",
+        "path": "bamr87/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA \u2014 bamr87 dash",
+        "path": "bamr87/SCHEMA.md",
+        "rel": "SCHEMA.md"
+      },
+      {
+        "type": "section",
+        "title": "changelog.d/ \u2014 pending changelog entries",
+        "rel": "changelog.d",
+        "index": "bamr87/changelog.d/README.md",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "changelog.d/ \u2014 pending changelog entries",
+            "path": "bamr87/changelog.d/README.md",
+            "rel": "changelog.d/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 changelog.d",
+            "path": "bamr87/changelog.d/SCHEMA.md",
+            "rel": "changelog.d/SCHEMA.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "compose/ \u2014 the hub's half of the fleet dev stack",
+        "rel": "compose",
+        "index": "bamr87/compose/README.md",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "compose/ \u2014 the hub's half of the fleet dev stack",
+            "path": "bamr87/compose/README.md",
+            "rel": "compose/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 compose",
+            "path": "bamr87/compose/SCHEMA.md",
+            "rel": "compose/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 compose/initdb",
+            "path": "bamr87/compose/initdb/SCHEMA.md",
+            "rel": "compose/initdb/SCHEMA.md",
+            "folder": "compose/initdb"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Data",
+        "rel": "_data",
+        "pages": 6,
+        "children": [
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 data",
+            "path": "bamr87/_data/SCHEMA.md",
+            "rel": "_data/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 data/voices",
+            "path": "bamr87/_data/voices/SCHEMA.md",
+            "rel": "_data/voices/SCHEMA.md",
+            "folder": "_data/voices"
+          },
+          {
+            "type": "section",
+            "title": "data/harnesslibrary/ \u2014 the harness experience library",
+            "rel": "_data/harness_library",
+            "index": "bamr87/_data/harness_library/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "data/harnesslibrary/ \u2014 the harness experience library",
+                "path": "bamr87/_data/harness_library/README.md",
+                "rel": "_data/harness_library/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 data/harnesslibrary",
+                "path": "bamr87/_data/harness_library/SCHEMA.md",
+                "rel": "_data/harness_library/SCHEMA.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "data/roadmap.d/ \u2014 pending roadmap entries",
+            "rel": "_data/roadmap.d",
+            "index": "bamr87/_data/roadmap.d/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "data/roadmap.d/ \u2014 pending roadmap entries",
+                "path": "bamr87/_data/roadmap.d/README.md",
+                "rel": "_data/roadmap.d/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 data/roadmap.d",
+                "path": "bamr87/_data/roadmap.d/SCHEMA.md",
+                "rel": "_data/roadmap.d/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "diagrams/",
+        "rel": "diagrams",
+        "index": "bamr87/diagrams/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "diagrams/",
+            "path": "bamr87/diagrams/README.md",
+            "rel": "diagrams/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 diagrams",
+            "path": "bamr87/diagrams/SCHEMA.md",
+            "rel": "diagrams/SCHEMA.md"
+          },
+          {
+            "type": "section",
+            "title": "diagrams/pipeline-map/",
+            "rel": "diagrams/pipeline-map",
+            "index": "bamr87/diagrams/pipeline-map/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "diagrams/pipeline-map/",
+                "path": "bamr87/diagrams/pipeline-map/README.md",
+                "rel": "diagrams/pipeline-map/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 diagrams/pipeline-map",
+                "path": "bamr87/diagrams/pipeline-map/SCHEMA.md",
+                "rel": "diagrams/pipeline-map/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "bamr87/docs/README.md",
+        "pages": 134,
+        "children": [
+          {
+            "type": "page",
+            "title": "bamr87 documentation",
+            "path": "bamr87/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Agent Verification \u2014 proving features work the way a user experiences\u2026",
+            "path": "bamr87/docs/VERIFICATION.md",
+            "rel": "docs/VERIFICATION.md"
+          },
+          {
+            "type": "page",
+            "title": "AI Integration \u2014 surfaces, auth, and the loops",
+            "path": "bamr87/docs/AI-INTEGRATION.md",
+            "rel": "docs/AI-INTEGRATION.md"
+          },
+          {
+            "type": "page",
+            "title": "Architecture Research Harness \u2014 R&D loop for fleet architecture",
+            "path": "bamr87/docs/ARCH-RESEARCH-HARNESS.md",
+            "rel": "docs/ARCH-RESEARCH-HARNESS.md"
+          },
+          {
+            "type": "page",
+            "title": "Backlog fan-out",
+            "path": "bamr87/docs/BACKLOG-FANOUT.md",
+            "rel": "docs/BACKLOG-FANOUT.md"
+          },
+          {
+            "type": "page",
+            "title": "bamr87 portfolio standard",
+            "path": "bamr87/docs/PORTFOLIO.md",
+            "rel": "docs/PORTFOLIO.md"
+          },
+          {
+            "type": "page",
+            "title": "bamr87 \u2014 Constitution",
+            "path": "bamr87/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "bashOS \u2014 consolidating the fleet's CLIs and TUIs into one terminal\u2026",
+            "path": "bamr87/docs/TERMINAL-FRAMEWORK.md",
+            "rel": "docs/TERMINAL-FRAMEWORK.md"
+          },
+          {
+            "type": "page",
+            "title": "Cockpit \u2014 Gitorio as the one-stop harness & orchestration platform",
+            "path": "bamr87/docs/COCKPIT.md",
+            "rel": "docs/COCKPIT.md"
+          },
+          {
+            "type": "page",
+            "title": "Containers \u2014 how ~24 compose files become one runnable fleet",
+            "path": "bamr87/docs/CONTAINERS.md",
+            "rel": "docs/CONTAINERS.md"
+          },
+          {
+            "type": "page",
+            "title": "Content atlas",
+            "path": "bamr87/docs/CONTENT-ATLAS.md",
+            "rel": "docs/CONTENT-ATLAS.md"
+          },
+          {
+            "type": "page",
+            "title": "Daily repo deep dive",
+            "path": "bamr87/docs/DEEP-DIVE.md",
+            "rel": "docs/DEEP-DIVE.md"
+          },
+          {
+            "type": "page",
+            "title": "DEPENDENCIES \u2014 the always-latest policy",
+            "path": "bamr87/docs/DEPENDENCIES.md",
+            "rel": "docs/DEPENDENCIES.md"
+          },
+          {
+            "type": "page",
+            "title": "Development Guide",
+            "path": "bamr87/docs/DEVELOPMENT.md",
+            "rel": "docs/DEVELOPMENT.md"
+          },
+          {
+            "type": "page",
+            "title": "DOCKER \u2014 one standard for every Dockerfile and compose file in the fleet",
+            "path": "bamr87/docs/DOCKER.md",
+            "rel": "docs/DOCKER.md"
+          },
+          {
+            "type": "page",
+            "title": "Docs System \u2014 one content contract, one front door, specialist backends",
+            "path": "bamr87/docs/DOCS-SYSTEM.md",
+            "rel": "docs/DOCS-SYSTEM.md"
+          },
+          {
+            "type": "page",
+            "title": "Engagement estimation & cost tracking",
+            "path": "bamr87/docs/ESTIMATION.md",
+            "rel": "docs/ESTIMATION.md"
+          },
+          {
+            "type": "page",
+            "title": "Evals",
+            "path": "bamr87/docs/EVALS.md",
+            "rel": "docs/EVALS.md"
+          },
+          {
+            "type": "page",
+            "title": "Expedite sprints \u2014 accelerated, monitored pilots run by agentic loops",
+            "path": "bamr87/docs/EXPEDITE-SPRINTS.md",
+            "rel": "docs/EXPEDITE-SPRINTS.md"
+          },
+          {
+            "type": "page",
+            "title": "Fleet consolidation \u2014 fewer repos, one place per concern",
+            "path": "bamr87/docs/CONSOLIDATION.md",
+            "rel": "docs/CONSOLIDATION.md"
+          },
+          {
+            "type": "page",
+            "title": "Fleet design harmonization \u2014 roadmap and plan",
+            "path": "bamr87/docs/DESIGN-HARMONIZATION.md",
+            "rel": "docs/DESIGN-HARMONIZATION.md"
+          },
+          {
+            "type": "page",
+            "title": "Fleet frontend platform \u2014 layers, tiers and fan-out",
+            "path": "bamr87/docs/FRONTEND-PLATFORM.md",
+            "rel": "docs/FRONTEND-PLATFORM.md"
+          },
+          {
+            "type": "page",
+            "title": "Fleet work-tracking framework \u2014 GitHub Projects (v2)",
+            "path": "bamr87/docs/PROJECTS-FRAMEWORK.md",
+            "rel": "docs/PROJECTS-FRAMEWORK.md"
+          },
+          {
+            "type": "page",
+            "title": "FLEET-COMPOSE \u2014 launching and debugging any submodule from the hub",
+            "path": "bamr87/docs/FLEET-COMPOSE.md",
+            "rel": "docs/FLEET-COMPOSE.md"
+          },
+          {
+            "type": "page",
+            "title": "Forge as the Docker host",
+            "path": "bamr87/docs/FORGE-HOST.md",
+            "rel": "docs/FORGE-HOST.md"
+          },
+          {
+            "type": "page",
+            "title": "Harness Engineering \u2014 the six-layer architecture, mapped onto this\u2026",
+            "path": "bamr87/docs/HARNESS.md",
+            "rel": "docs/HARNESS.md"
+          },
+          {
+            "type": "page",
+            "title": "Harness Operations \u2014 centrally managing the fleet's AI harnesses and\u2026",
+            "path": "bamr87/docs/HARNESS-OPS.md",
+            "rel": "docs/HARNESS-OPS.md"
+          },
+          {
+            "type": "page",
+            "title": "Harness refinement \u2014 the Harness\u00b2 method on the hub's own loops",
+            "path": "bamr87/docs/HARNESS-REFINEMENT.md",
+            "rel": "docs/HARNESS-REFINEMENT.md"
+          },
+          {
+            "type": "page",
+            "title": "Issue Pipeline",
+            "path": "bamr87/docs/ISSUE-PIPELINE.md",
+            "rel": "docs/ISSUE-PIPELINE.md"
+          },
+          {
+            "type": "page",
+            "title": "JEV \u2014 the agent logic engine",
+            "path": "bamr87/docs/JEV.md",
+            "rel": "docs/JEV.md"
+          },
+          {
+            "type": "page",
+            "title": "Machine API",
+            "path": "bamr87/docs/MACHINE-API.md",
+            "rel": "docs/MACHINE-API.md"
+          },
+          {
+            "type": "page",
+            "title": "Observability \u2014 the three local planes and the one front door",
+            "path": "bamr87/docs/OBSERVABILITY.md",
+            "rel": "docs/OBSERVABILITY.md"
+          },
+          {
+            "type": "page",
+            "title": "Platform \u2014 local first, placed across nodes, portable to any cluster",
+            "path": "bamr87/docs/PLATFORM.md",
+            "rel": "docs/PLATFORM.md"
+          },
+          {
+            "type": "page",
+            "title": "Quest Log showcase",
+            "path": "bamr87/docs/SHOWCASE.md",
+            "rel": "docs/SHOWCASE.md"
+          },
+          {
+            "type": "page",
+            "title": "Release & Versioning Methodology",
+            "path": "bamr87/docs/RELEASES.md",
+            "rel": "docs/RELEASES.md"
+          },
+          {
+            "type": "page",
+            "title": "Repo Evolution",
+            "path": "bamr87/docs/EVOLUTION.md",
+            "rel": "docs/EVOLUTION.md"
+          },
+          {
+            "type": "page",
+            "title": "Repo Scout",
+            "path": "bamr87/docs/SCOUT.md",
+            "rel": "docs/SCOUT.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 docs",
+            "path": "bamr87/docs/SCHEMA.md",
+            "rel": "docs/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA-FRAMEWORK \u2014 Pyramid Schema across the fleet",
+            "path": "bamr87/docs/SCHEMA-FRAMEWORK.md",
+            "rel": "docs/SCHEMA-FRAMEWORK.md"
+          },
+          {
+            "type": "page",
+            "title": "Security posture",
+            "path": "bamr87/docs/SECURITY-POSTURE.md",
+            "rel": "docs/SECURITY-POSTURE.md"
+          },
+          {
+            "type": "page",
+            "title": "SMOKE \u2014 the monorepo's live smoke test",
+            "path": "bamr87/docs/SMOKE.md",
+            "rel": "docs/SMOKE.md"
+          },
+          {
+            "type": "page",
+            "title": "Standardization",
+            "path": "bamr87/docs/STANDARDS.md",
+            "rel": "docs/STANDARDS.md"
+          },
+          {
+            "type": "page",
+            "title": "Submodules",
+            "path": "bamr87/docs/SUBMODULES.md",
+            "rel": "docs/SUBMODULES.md"
+          },
+          {
+            "type": "page",
+            "title": "The Daily Fleet Loop",
+            "path": "bamr87/docs/DAILY-ANALYSIS.md",
+            "rel": "docs/DAILY-ANALYSIS.md"
+          },
+          {
+            "type": "page",
+            "title": "The Dash Architecture",
+            "path": "bamr87/docs/DASH.md",
+            "rel": "docs/DASH.md"
+          },
+          {
+            "type": "page",
+            "title": "The PM review",
+            "path": "bamr87/docs/PM.md",
+            "rel": "docs/PM.md"
+          },
+          {
+            "type": "page",
+            "title": "The public site is the console",
+            "path": "bamr87/docs/CONSOLE-PAGES.md",
+            "rel": "docs/CONSOLE-PAGES.md"
+          },
+          {
+            "type": "page",
+            "title": "The spec-driven loop (AO-SDLC), run from the hub",
+            "path": "bamr87/docs/SPEC-DRIVEN.md",
+            "rel": "docs/SPEC-DRIVEN.md"
+          },
+          {
+            "type": "page",
+            "title": "The Work board",
+            "path": "bamr87/docs/WORK-BOARD.md",
+            "rel": "docs/WORK-BOARD.md"
+          },
+          {
+            "type": "page",
+            "title": "The workflow atlas",
+            "path": "bamr87/docs/WORKFLOW-ATLAS.md",
+            "rel": "docs/WORKFLOW-ATLAS.md"
+          },
+          {
+            "type": "page",
+            "title": "Token Rotation \u2014 the weekly credential loop",
+            "path": "bamr87/docs/TOKEN-ROTATION.md",
+            "rel": "docs/TOKEN-ROTATION.md"
+          },
+          {
+            "type": "page",
+            "title": "UX Harness \u2014 continuous UI/UX audit for the fleet",
+            "path": "bamr87/docs/UX-HARNESS.md",
+            "rel": "docs/UX-HARNESS.md"
+          },
+          {
+            "type": "page",
+            "title": "Versioning the hub's reusable workflows",
+            "path": "bamr87/docs/WORKFLOW-VERSIONING.md",
+            "rel": "docs/WORKFLOW-VERSIONING.md"
+          },
+          {
+            "type": "page",
+            "title": "Visual evidence backlog \u2014 hub guides lacking visuals",
+            "path": "bamr87/docs/visual-evidence-backlog.md",
+            "rel": "docs/visual-evidence-backlog.md"
+          },
+          {
+            "type": "page",
+            "title": "Visual evidence for guides and tutorials",
+            "path": "bamr87/docs/VISUAL-EVIDENCE.md",
+            "rel": "docs/VISUAL-EVIDENCE.md"
+          },
+          {
+            "type": "page",
+            "title": "Workflow Optimization",
+            "path": "bamr87/docs/WORKFLOW-OPTIMIZATION.md",
+            "rel": "docs/WORKFLOW-OPTIMIZATION.md"
+          },
+          {
+            "type": "section",
+            "title": "Agentic design patterns in the fleet",
+            "rel": "docs/agentic-patterns",
+            "index": "bamr87/docs/agentic-patterns/README.md",
+            "pages": 25,
+            "children": [
+              {
+                "type": "page",
+                "title": "Agentic design patterns in the fleet",
+                "path": "bamr87/docs/agentic-patterns/README.md",
+                "rel": "docs/agentic-patterns/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/agentic-patterns",
+                "path": "bamr87/docs/agentic-patterns/SCHEMA.md",
+                "rel": "docs/agentic-patterns/SCHEMA.md"
+              },
+              {
+                "type": "section",
+                "title": "Patterns",
+                "rel": "docs/agentic-patterns/patterns",
+                "pages": 23,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Evaluation and Monitoring",
+                    "path": "bamr87/docs/agentic-patterns/patterns/19-evaluation-and-monitoring.md",
+                    "rel": "docs/agentic-patterns/patterns/19-evaluation-and-monitoring.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Exception Handling and Recovery",
+                    "path": "bamr87/docs/agentic-patterns/patterns/12-exception-handling-and-recovery.md",
+                    "rel": "docs/agentic-patterns/patterns/12-exception-handling-and-recovery.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Exploration and Discovery",
+                    "path": "bamr87/docs/agentic-patterns/patterns/21-exploration-and-discovery.md",
+                    "rel": "docs/agentic-patterns/patterns/21-exploration-and-discovery.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Goal Setting and Monitoring",
+                    "path": "bamr87/docs/agentic-patterns/patterns/11-goal-setting-and-monitoring.md",
+                    "rel": "docs/agentic-patterns/patterns/11-goal-setting-and-monitoring.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Guardrails / Safety Patterns",
+                    "path": "bamr87/docs/agentic-patterns/patterns/18-guardrails-safety.md",
+                    "rel": "docs/agentic-patterns/patterns/18-guardrails-safety.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Human-in-the-Loop",
+                    "path": "bamr87/docs/agentic-patterns/patterns/13-human-in-the-loop.md",
+                    "rel": "docs/agentic-patterns/patterns/13-human-in-the-loop.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Inter-Agent Communication (A2A)",
+                    "path": "bamr87/docs/agentic-patterns/patterns/15-inter-agent-communication.md",
+                    "rel": "docs/agentic-patterns/patterns/15-inter-agent-communication.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Introduction: what makes a system an agent, and the fleet's agent levels",
+                    "path": "bamr87/docs/agentic-patterns/patterns/00-introduction.md",
+                    "rel": "docs/agentic-patterns/patterns/00-introduction.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Knowledge Retrieval (RAG)",
+                    "path": "bamr87/docs/agentic-patterns/patterns/14-knowledge-retrieval-rag.md",
+                    "rel": "docs/agentic-patterns/patterns/14-knowledge-retrieval-rag.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Learning and Adaptation",
+                    "path": "bamr87/docs/agentic-patterns/patterns/09-learning-and-adaptation.md",
+                    "rel": "docs/agentic-patterns/patterns/09-learning-and-adaptation.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Memory Management",
+                    "path": "bamr87/docs/agentic-patterns/patterns/08-memory-management.md",
+                    "rel": "docs/agentic-patterns/patterns/08-memory-management.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Model Context Protocol (MCP)",
+                    "path": "bamr87/docs/agentic-patterns/patterns/10-model-context-protocol.md",
+                    "rel": "docs/agentic-patterns/patterns/10-model-context-protocol.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Multi-Agent Collaboration",
+                    "path": "bamr87/docs/agentic-patterns/patterns/07-multi-agent-collaboration.md",
+                    "rel": "docs/agentic-patterns/patterns/07-multi-agent-collaboration.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Parallelization",
+                    "path": "bamr87/docs/agentic-patterns/patterns/03-parallelization.md",
+                    "rel": "docs/agentic-patterns/patterns/03-parallelization.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Planning",
+                    "path": "bamr87/docs/agentic-patterns/patterns/06-planning.md",
+                    "rel": "docs/agentic-patterns/patterns/06-planning.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Prioritization",
+                    "path": "bamr87/docs/agentic-patterns/patterns/20-prioritization.md",
+                    "rel": "docs/agentic-patterns/patterns/20-prioritization.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Prompt Chaining",
+                    "path": "bamr87/docs/agentic-patterns/patterns/01-prompt-chaining.md",
+                    "rel": "docs/agentic-patterns/patterns/01-prompt-chaining.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Reasoning Techniques",
+                    "path": "bamr87/docs/agentic-patterns/patterns/17-reasoning-techniques.md",
+                    "rel": "docs/agentic-patterns/patterns/17-reasoning-techniques.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Reflection",
+                    "path": "bamr87/docs/agentic-patterns/patterns/04-reflection.md",
+                    "rel": "docs/agentic-patterns/patterns/04-reflection.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Resource-Aware Optimization",
+                    "path": "bamr87/docs/agentic-patterns/patterns/16-resource-aware-optimization.md",
+                    "rel": "docs/agentic-patterns/patterns/16-resource-aware-optimization.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Routing",
+                    "path": "bamr87/docs/agentic-patterns/patterns/02-routing.md",
+                    "rel": "docs/agentic-patterns/patterns/02-routing.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 docs/agentic-patterns/patterns",
+                    "path": "bamr87/docs/agentic-patterns/patterns/SCHEMA.md",
+                    "rel": "docs/agentic-patterns/patterns/SCHEMA.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Tool Use (Function Calling)",
+                    "path": "bamr87/docs/agentic-patterns/patterns/05-tool-use.md",
+                    "rel": "docs/agentic-patterns/patterns/05-tool-use.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 bamr87",
+            "rel": "docs/amendments",
+            "index": "bamr87/docs/amendments/README.md",
+            "pages": 31,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 bamr87",
+                "path": "bamr87/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "bamr87/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0002 \u2014 Assign sequential ids at merge, not in a pull request",
+                "path": "bamr87/docs/amendments/0002-conflict-free-numbering.md",
+                "rel": "docs/amendments/0002-conflict-free-numbering.md"
+              },
+              {
+                "type": "page",
+                "title": "0003 \u2014 GitHub Projects as the fleet's system of record for work",
+                "path": "bamr87/docs/amendments/0003-github-projects-work-tracking.md",
+                "rel": "docs/amendments/0003-github-projects-work-tracking.md"
+              },
+              {
+                "type": "page",
+                "title": "0004 \u2014 Generated files are written on main only",
+                "path": "bamr87/docs/amendments/0004-generated-files-main-only.md",
+                "rel": "docs/amendments/0004-generated-files-main-only.md"
+              },
+              {
+                "type": "page",
+                "title": "0005 \u2014 DevOps methodology for GitHub Projects across all submodules\u2026",
+                "path": "bamr87/docs/amendments/0005-projects-devops-methodology.md",
+                "rel": "docs/amendments/0005-projects-devops-methodology.md"
+              },
+              {
+                "type": "page",
+                "title": "0006 \u2014 Guarded harness write-back to GitHub Projects, issues and pull\u2026",
+                "path": "bamr87/docs/amendments/0006-projects-write-back.md",
+                "rel": "docs/amendments/0006-projects-write-back.md"
+              },
+              {
+                "type": "page",
+                "title": "0007 \u2014 Every fleet repo publishes a public site with all its\u2026",
+                "path": "bamr87/docs/amendments/0007-public-docs-site.md",
+                "rel": "docs/amendments/0007-public-docs-site.md"
+              },
+              {
+                "type": "page",
+                "title": "0008 \u2014 Prior-art research before any new harness or loop design",
+                "path": "bamr87/docs/amendments/0008-harness-prior-art-research.md",
+                "rel": "docs/amendments/0008-harness-prior-art-research.md"
+              },
+              {
+                "type": "page",
+                "title": "0009 \u2014 Agent merge of mergeable PRs, and a review gate for human review",
+                "path": "bamr87/docs/amendments/0009-agent-merge-review-gate.md",
+                "rel": "docs/amendments/0009-agent-merge-review-gate.md"
+              },
+              {
+                "type": "page",
+                "title": "0010 \u2014 Test evidence for major changes, visual evidence for frontend\u2026",
+                "path": "bamr87/docs/amendments/0010-major-change-evidence.md",
+                "rel": "docs/amendments/0010-major-change-evidence.md"
+              },
+              {
+                "type": "page",
+                "title": "0011 \u2014 Eval baseline and risk tiers for every agent, harness and loop",
+                "path": "bamr87/docs/amendments/0011-eval-baseline-risk-tiers.md",
+                "rel": "docs/amendments/0011-eval-baseline-risk-tiers.md"
+              },
+              {
+                "type": "page",
+                "title": "0012 \u2014 QA Lead first: a short warn-only bridge for the \u00a7 15\u2026",
+                "path": "bamr87/docs/amendments/0012-qa-lead-bridge.md",
+                "rel": "docs/amendments/0012-qa-lead-bridge.md"
+              },
+              {
+                "type": "page",
+                "title": "0013 \u2014 AI-ready foundation: every repo exposes an API layer, MCP, agent\u2026",
+                "path": "bamr87/docs/amendments/0013-ai-ready-foundation.md",
+                "rel": "docs/amendments/0013-ai-ready-foundation.md"
+              },
+              {
+                "type": "page",
+                "title": "0014 \u2014 Every scheduled or AI workflow has a centrally managed kill\u2026",
+                "path": "bamr87/docs/amendments/0014-central-loop-switches.md",
+                "rel": "docs/amendments/0014-central-loop-switches.md"
+              },
+              {
+                "type": "page",
+                "title": "0015 \u2014 The post-merge job records ratification, acceptance and\u2026",
+                "path": "bamr87/docs/amendments/0015-ratification-records.md",
+                "rel": "docs/amendments/0015-ratification-records.md"
+              },
+              {
+                "type": "page",
+                "title": "0016 \u2014 One front-end shell, layout and design language across the fleet",
+                "path": "bamr87/docs/amendments/0016-fleet-design-consistency.md",
+                "rel": "docs/amendments/0016-fleet-design-consistency.md"
+              },
+              {
+                "type": "page",
+                "title": "0017 \u2014 Fleet PR review runs through one reusable workflow with one\u2026",
+                "path": "bamr87/docs/amendments/0017-fleet-pr-review.md",
+                "rel": "docs/amendments/0017-fleet-pr-review.md"
+              },
+              {
+                "type": "page",
+                "title": "0018 \u2014 The editor is a front door: every harness surface from VS Code\u2026",
+                "path": "bamr87/docs/amendments/0018-editor-front-door.md",
+                "rel": "docs/amendments/0018-editor-front-door.md"
+              },
+              {
+                "type": "page",
+                "title": "0019 \u2014 Container images are built once, from pinned bases, and promoted\u2026",
+                "path": "bamr87/docs/amendments/0019-container-management.md",
+                "rel": "docs/amendments/0019-container-management.md"
+              },
+              {
+                "type": "page",
+                "title": "0020 \u2014 The OPS remote-write path: how the console and the local loop\u2026",
+                "path": "bamr87/docs/amendments/0020-ops-remote-write-path.md",
+                "rel": "docs/amendments/0020-ops-remote-write-path.md"
+              },
+              {
+                "type": "page",
+                "title": "0021 \u2014 The writing section keeps a daily chronicle of fleet operations\u2026",
+                "path": "bamr87/docs/amendments/0021-writing-chronicle.md",
+                "rel": "docs/amendments/0021-writing-chronicle.md"
+              },
+              {
+                "type": "page",
+                "title": "0022 \u2014 Visual evidence is required for tutorials, guides and setup docs",
+                "path": "bamr87/docs/amendments/0022-visual-evidence.md",
+                "rel": "docs/amendments/0022-visual-evidence.md"
+              },
+              {
+                "type": "page",
+                "title": "0023 \u2014 The bamr87 account holds at most 42 repositories, and a new repo\u2026",
+                "path": "bamr87/docs/amendments/0023-repo-cap-42.md",
+                "rel": "docs/amendments/0023-repo-cap-42.md"
+              },
+              {
+                "type": "page",
+                "title": "0024 \u2014 Roadmap entries are numbered at merge, like every other\u2026",
+                "path": "bamr87/docs/amendments/0024-roadmap-numbering-at-merge.md",
+                "rel": "docs/amendments/0024-roadmap-numbering-at-merge.md"
+              },
+              {
+                "type": "page",
+                "title": "0025 \u2014 Expedite sprints run by agentic loops",
+                "path": "bamr87/docs/amendments/0025-expedite-sprints.md",
+                "rel": "docs/amendments/0025-expedite-sprints.md"
+              },
+              {
+                "type": "page",
+                "title": "0026 \u2014 Expedite sprints run by agentic loops",
+                "path": "bamr87/docs/amendments/0026-expedite-sprints.md",
+                "rel": "docs/amendments/0026-expedite-sprints.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "bamr87/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/amendments",
+                "path": "bamr87/docs/amendments/SCHEMA.md",
+                "rel": "docs/amendments/SCHEMA.md"
+              },
+              {
+                "type": "section",
+                "title": "docs/amendments/proposed/ \u2014 unnumbered amendment records",
+                "rel": "docs/amendments/proposed",
+                "index": "bamr87/docs/amendments/proposed/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "docs/amendments/proposed/ \u2014 unnumbered amendment records",
+                    "path": "bamr87/docs/amendments/proposed/README.md",
+                    "rel": "docs/amendments/proposed/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 docs/amendments/proposed",
+                    "path": "bamr87/docs/amendments/proposed/SCHEMA.md",
+                    "rel": "docs/amendments/proposed/SCHEMA.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "bamr87/docs/adr/README.md",
+            "pages": 11,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "bamr87/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "bamr87/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0002 \u2014 Agent step specs and the local loop runner",
+                "path": "bamr87/docs/adr/0002-agent-step-specs-and-local-runner.md",
+                "rel": "docs/adr/0002-agent-step-specs-and-local-runner.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0003 \u2014 The fleet platform: workloads placed across nodes, OpenTofu\u2026",
+                "path": "bamr87/docs/adr/0003-fleet-platform-nodes-iac-and-scale-out.md",
+                "rel": "docs/adr/0003-fleet-platform-nodes-iac-and-scale-out.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0004 \u2014 Recursive harness refinement: the Harness\u00b2 method adopted\u2026",
+                "path": "bamr87/docs/adr/0004-recursive-harness-refinement.md",
+                "rel": "docs/adr/0004-recursive-harness-refinement.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0005 \u2014 The Harness Console is the fleet's portal: one launcher from\u2026",
+                "path": "bamr87/docs/adr/0005-console-as-fleet-portal.md",
+                "rel": "docs/adr/0005-console-as-fleet-portal.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0006 \u2014 Django is the hub's management backend and what a frontend's\u2026",
+                "path": "bamr87/docs/adr/0006-django-management-backend.md",
+                "rel": "docs/adr/0006-django-management-backend.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0007 \u2014 The Workflow Studio: the atlas grown to the fleet, one read\u2026",
+                "path": "bamr87/docs/adr/0007-workflow-studio.md",
+                "rel": "docs/adr/0007-workflow-studio.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0008 \u2014 GitHub Actions as the agentic SDLC substrate: typed\u2026",
+                "path": "bamr87/docs/adr/0008-typed-decisions-as-pipeline-gates.md",
+                "rel": "docs/adr/0008-typed-decisions-as-pipeline-gates.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "bamr87/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/adr",
+                "path": "bamr87/docs/adr/SCHEMA.md",
+                "rel": "docs/adr/SCHEMA.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Assets",
+            "rel": "docs/assets",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/assets",
+                "path": "bamr87/docs/assets/SCHEMA.md",
+                "rel": "docs/assets/SCHEMA.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/assets/guides",
+                "path": "bamr87/docs/assets/guides/SCHEMA.md",
+                "rel": "docs/assets/guides/SCHEMA.md",
+                "folder": "docs/assets/guides"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "PRD",
+            "rel": "docs/prd",
+            "pages": 9,
+            "children": [
+              {
+                "type": "page",
+                "title": "Plan \u2014 Fleet activity replay: implementation plan and epic",
+                "path": "bamr87/docs/prd/FLEET-ACTIVITY-REPLAY-PLAN.md",
+                "rel": "docs/prd/FLEET-ACTIVITY-REPLAY-PLAN.md"
+              },
+              {
+                "type": "page",
+                "title": "Plan \u2014 GitHub Actions as the agentic SDLC platform: typed decisions\u2026",
+                "path": "bamr87/docs/prd/AGENTIC-SDLC.md",
+                "rel": "docs/prd/AGENTIC-SDLC.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Common harness protocol and platform",
+                "path": "bamr87/docs/prd/HARNESS-PROTOCOL.md",
+                "rel": "docs/prd/HARNESS-PROTOCOL.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Expedite sprints run by agentic loops",
+                "path": "bamr87/docs/prd/EXPEDITE-SPRINTS.md",
+                "rel": "docs/prd/EXPEDITE-SPRINTS.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Fleet activity log",
+                "path": "bamr87/docs/prd/FLEET-ACTIVITY-LOG.md",
+                "rel": "docs/prd/FLEET-ACTIVITY-LOG.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Fleet activity replay (live and historical animated view)",
+                "path": "bamr87/docs/prd/FLEET-ACTIVITY-REPLAY.md",
+                "rel": "docs/prd/FLEET-ACTIVITY-REPLAY.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Harness pipeline map (the \"illustration\")",
+                "path": "bamr87/docs/prd/HARNESS-PIPELINE-MAP.md",
+                "rel": "docs/prd/HARNESS-PIPELINE-MAP.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD \u2014 Visual evidence for guides and tutorials",
+                "path": "bamr87/docs/prd/VISUAL-EVIDENCE.md",
+                "rel": "docs/prd/VISUAL-EVIDENCE.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/prd",
+                "path": "bamr87/docs/prd/SCHEMA.md",
+                "rel": "docs/prd/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "evals",
+        "rel": "evals",
+        "index": "bamr87/evals/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "evals",
+            "path": "bamr87/evals/README.md",
+            "rel": "evals/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 evals",
+            "path": "bamr87/evals/SCHEMA.md",
+            "rel": "evals/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 jev-classify",
+            "path": "bamr87/evals/jev-classify/SCHEMA.md",
+            "rel": "evals/jev-classify/SCHEMA.md",
+            "folder": "evals/jev-classify"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 t1-intake",
+            "path": "bamr87/evals/t1-intake/SCHEMA.md",
+            "rel": "evals/t1-intake/SCHEMA.md",
+            "folder": "evals/t1-intake"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "features/",
+        "rel": "features",
+        "index": "bamr87/features/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "features/",
+            "path": "bamr87/features/README.md",
+            "rel": "features/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 features",
+            "path": "bamr87/features/SCHEMA.md",
+            "rel": "features/SCHEMA.md"
+          },
+          {
+            "type": "section",
+            "title": "features/features.d/ \u2014 pending feature entries",
+            "rel": "features/features.d",
+            "index": "bamr87/features/features.d/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "features/features.d/ \u2014 pending feature entries",
+                "path": "bamr87/features/features.d/README.md",
+                "rel": "features/features.d/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 features/features.d",
+                "path": "bamr87/features/features.d/SCHEMA.md",
+                "rel": "features/features.d/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Infrastructure",
+        "rel": "infra",
+        "index": "bamr87/infra/README.md",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "infra \u2014 the fleet's infrastructure as code",
+            "path": "bamr87/infra/README.md",
+            "rel": "infra/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 infra",
+            "path": "bamr87/infra/SCHEMA.md",
+            "rel": "infra/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 infra/node",
+            "path": "bamr87/infra/node/SCHEMA.md",
+            "rel": "infra/node/SCHEMA.md",
+            "folder": "infra/node"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Pages",
+        "rel": "pages",
+        "pages": 8,
+        "children": [
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 pages",
+            "path": "bamr87/pages/SCHEMA.md",
+            "rel": "pages/SCHEMA.md"
+          },
+          {
+            "type": "section",
+            "title": "Posts",
+            "rel": "pages/posts",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Giving Your AI Agents a Flight Recorder",
+                "path": "bamr87/pages/posts/2026-09-03-observability-for-ai-agents.md",
+                "rel": "pages/posts/2026-09-03-observability-for-ai-agents.md"
+              },
+              {
+                "type": "page",
+                "title": "Triaging a fleet backlog through a governed write path",
+                "path": "bamr87/pages/posts/2026-11-04-triaging-a-fleet-backlog-through-a-governed-write-path.md",
+                "rel": "pages/posts/2026-11-04-triaging-a-fleet-backlog-through-a-governed-write-path.md"
+              },
+              {
+                "type": "page",
+                "title": "Welcome to the new site",
+                "path": "bamr87/pages/posts/2026-06-05-welcome.md",
+                "rel": "pages/posts/2026-06-05-welcome.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Profile",
+            "rel": "pages/profile",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "About",
+                "path": "bamr87/pages/profile/about.md",
+                "rel": "pages/profile/about.md",
+                "order": 1.0
+              },
+              {
+                "type": "page",
+                "title": "Professional Experience",
+                "path": "bamr87/pages/profile/experience.md",
+                "rel": "pages/profile/experience.md",
+                "icon": "material/briefcase",
+                "order": 2.0
+              },
+              {
+                "type": "page",
+                "title": "Consulting Services",
+                "path": "bamr87/pages/profile/services.md",
+                "rel": "pages/profile/services.md",
+                "icon": "material/tools",
+                "order": 3.0
+              },
+              {
+                "type": "page",
+                "title": "Let's Collaborate",
+                "path": "bamr87/pages/profile/contact.md",
+                "rel": "pages/profile/contact.md",
+                "order": 4.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "projects/ \u2014 submodule container",
+        "rel": "projects",
+        "index": "bamr87/projects/README.md",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "projects/ \u2014 submodule container",
+            "path": "bamr87/projects/README.md",
+            "rel": "projects/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 projects",
+            "path": "bamr87/projects/SCHEMA.md",
+            "rel": "projects/SCHEMA.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "tools/",
+        "rel": "tools",
+        "index": "bamr87/tools/README.md",
+        "pages": 30,
+        "children": [
+          {
+            "type": "page",
+            "title": "tools/",
+            "path": "bamr87/tools/README.md",
+            "rel": "tools/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 fleet",
+            "path": "bamr87/tools/fleet/SCHEMA.md",
+            "rel": "tools/fleet/SCHEMA.md",
+            "folder": "tools/fleet"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 observability",
+            "path": "bamr87/tools/observability/SCHEMA.md",
+            "rel": "tools/observability/SCHEMA.md",
+            "folder": "tools/observability"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 tools",
+            "path": "bamr87/tools/SCHEMA.md",
+            "rel": "tools/SCHEMA.md"
+          },
+          {
+            "type": "section",
+            "title": "Harness Console",
+            "rel": "tools/console",
+            "index": "bamr87/tools/console/README.md",
+            "pages": 10,
+            "children": [
+              {
+                "type": "page",
+                "title": "Harness Console",
+                "path": "bamr87/tools/console/README.md",
+                "rel": "tools/console/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 tools/console",
+                "path": "bamr87/tools/console/SCHEMA.md",
+                "rel": "tools/console/SCHEMA.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 tools/console/mcplayer",
+                "path": "bamr87/tools/console/mcp_layer/SCHEMA.md",
+                "rel": "tools/console/mcp_layer/SCHEMA.md",
+                "folder": "tools/console/mcp_layer"
+              },
+              {
+                "type": "section",
+                "title": "@bamr87/harness-console-ui",
+                "rel": "tools/console/design-system",
+                "index": "bamr87/tools/console/design-system/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "@bamr87/harness-console-ui",
+                    "path": "bamr87/tools/console/design-system/README.md",
+                    "rel": "tools/console/design-system/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/console/design-system",
+                    "path": "bamr87/tools/console/design-system/SCHEMA.md",
+                    "rel": "tools/console/design-system/SCHEMA.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Documentation",
+                "rel": "tools/console/docs",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Harness Console MCP layer",
+                    "path": "bamr87/tools/console/docs/mcp-layer.md",
+                    "rel": "tools/console/docs/mcp-layer.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Job status for agents",
+                    "path": "bamr87/tools/console/docs/job-status.md",
+                    "rel": "tools/console/docs/job-status.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Real-time bot-activity dashboard \u2014 spec",
+                    "path": "bamr87/tools/console/docs/realtime-bot-dashboard-spec.md",
+                    "rel": "tools/console/docs/realtime-bot-dashboard-spec.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Harness Console \u2014 the page",
+                "rel": "tools/console/web",
+                "index": "bamr87/tools/console/web/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Harness Console \u2014 the page",
+                    "path": "bamr87/tools/console/web/README.md",
+                    "rel": "tools/console/web/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/console/web",
+                    "path": "bamr87/tools/console/web/SCHEMA.md",
+                    "rel": "tools/console/web/SCHEMA.md"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "tools/fleetcore \u2014 one core, three surfaces",
+            "rel": "tools/fleetcore",
+            "index": "bamr87/tools/fleetcore/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "tools/fleetcore \u2014 one core, three surfaces",
+                "path": "bamr87/tools/fleetcore/README.md",
+                "rel": "tools/fleetcore/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 tools/fleetcore",
+                "path": "bamr87/tools/fleetcore/SCHEMA.md",
+                "rel": "tools/fleetcore/SCHEMA.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "tools/jev/ \u2014 JEV",
+            "rel": "tools/jev",
+            "index": "bamr87/tools/jev/README.md",
+            "pages": 12,
+            "children": [
+              {
+                "type": "page",
+                "title": "tools/jev/ \u2014 JEV",
+                "path": "bamr87/tools/jev/README.md",
+                "rel": "tools/jev/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 tools/jev",
+                "path": "bamr87/tools/jev/SCHEMA.md",
+                "rel": "tools/jev/SCHEMA.md"
+              },
+              {
+                "type": "section",
+                "title": "tools/jev/adapters/ \u2014 loop adapters",
+                "rel": "tools/jev/adapters",
+                "index": "bamr87/tools/jev/adapters/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "tools/jev/adapters/ \u2014 loop adapters",
+                    "path": "bamr87/tools/jev/adapters/README.md",
+                    "rel": "tools/jev/adapters/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/adapters",
+                    "path": "bamr87/tools/jev/adapters/SCHEMA.md",
+                    "rel": "tools/jev/adapters/SCHEMA.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "tools/jev/missions/ \u2014 the refinement stage prompts",
+                "rel": "tools/jev/missions",
+                "index": "bamr87/tools/jev/missions/README.md",
+                "pages": 2,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "tools/jev/missions/ \u2014 the refinement stage prompts",
+                    "path": "bamr87/tools/jev/missions/README.md",
+                    "rel": "tools/jev/missions/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/missions",
+                    "path": "bamr87/tools/jev/missions/SCHEMA.md",
+                    "rel": "tools/jev/missions/SCHEMA.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "tools/jev/steps/ \u2014 loop step specs",
+                "rel": "tools/jev/steps",
+                "index": "bamr87/tools/jev/steps/README.md",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "tools/jev/steps/ \u2014 loop step specs",
+                    "path": "bamr87/tools/jev/steps/README.md",
+                    "rel": "tools/jev/steps/README.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/steps",
+                    "path": "bamr87/tools/jev/steps/SCHEMA.md",
+                    "rel": "tools/jev/steps/SCHEMA.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/steps/fanout",
+                    "path": "bamr87/tools/jev/steps/fanout/SCHEMA.md",
+                    "rel": "tools/jev/steps/fanout/SCHEMA.md",
+                    "folder": "tools/jev/steps/fanout"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/steps/fleet-pulse",
+                    "path": "bamr87/tools/jev/steps/fleet-pulse/SCHEMA.md",
+                    "rel": "tools/jev/steps/fleet-pulse/SCHEMA.md",
+                    "folder": "tools/jev/steps/fleet-pulse"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/steps/repo-evolution",
+                    "path": "bamr87/tools/jev/steps/repo-evolution/SCHEMA.md",
+                    "rel": "tools/jev/steps/repo-evolution/SCHEMA.md",
+                    "folder": "tools/jev/steps/repo-evolution"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 tools/jev/steps/repo-scout",
+                    "path": "bamr87/tools/jev/steps/repo-scout/SCHEMA.md",
+                    "rel": "tools/jev/steps/repo-scout/SCHEMA.md",
+                    "folder": "tools/jev/steps/repo-scout"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "tools/tui \u2014 terminal command center",
+            "rel": "tools/tui",
+            "index": "bamr87/tools/tui/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "tools/tui \u2014 terminal command center",
+                "path": "bamr87/tools/tui/README.md",
+                "rel": "tools/tui/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 tools/tui",
+                "path": "bamr87/tools/tui/SCHEMA.md",
+                "rel": "tools/tui/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Universal Project Standard (UPS)",
+        "rel": "specs",
+        "index": "bamr87/specs/README.md",
+        "pages": 13,
+        "children": [
+          {
+            "type": "page",
+            "title": "Universal Project Standard (UPS)",
+            "path": "bamr87/specs/README.md",
+            "rel": "specs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Conformance: declaring, auditing, adopting",
+            "path": "bamr87/specs/CONFORMANCE.md",
+            "rel": "specs/CONFORMANCE.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 specs",
+            "path": "bamr87/specs/SCHEMA.md",
+            "rel": "specs/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "Stack profiles and the applicability matrix",
+            "path": "bamr87/specs/STACKS.md",
+            "rel": "specs/STACKS.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-AGENT \u2014 Agent context",
+            "path": "bamr87/specs/AGENT-CONTEXT.md",
+            "rel": "specs/AGENT-CONTEXT.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-BE \u2014 HTTP API conventions and the client contract",
+            "path": "bamr87/specs/BACKEND.md",
+            "rel": "specs/BACKEND.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-DOC \u2014 Documentation",
+            "path": "bamr87/specs/DOCS.md",
+            "rel": "specs/DOCS.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-FB \u2014 The universal feedback component",
+            "path": "bamr87/specs/FEEDBACK.md",
+            "rel": "specs/FEEDBACK.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-FE \u2014 Frontend: design system, core components, UX standards",
+            "path": "bamr87/specs/FRONTEND.md",
+            "rel": "specs/FRONTEND.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-OPS \u2014 Configuration, observability, security, data",
+            "path": "bamr87/specs/OPERATIONS.md",
+            "rel": "specs/OPERATIONS.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-QA \u2014 Quality gates",
+            "path": "bamr87/specs/QUALITY.md",
+            "rel": "specs/QUALITY.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-REPO \u2014 Repository layout and required files",
+            "path": "bamr87/specs/REPOSITORY.md",
+            "rel": "specs/REPOSITORY.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-WORK \u2014 Planning & delivery",
+            "path": "bamr87/specs/WORK.md",
+            "rel": "specs/WORK.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "verify",
+        "rel": "verify",
+        "index": "bamr87/verify/README.md",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "verify",
+            "path": "bamr87/verify/README.md",
+            "rel": "verify/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 verify",
+            "path": "bamr87/verify/SCHEMA.md",
+            "rel": "verify/SCHEMA.md"
+          }
+        ]
+      }
+    ]
+  }
+}

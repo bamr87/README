@@ -17,7 +17,9 @@ prerequisites:
 preview: /images/previews/jekyll.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/jekyll/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/jekyll/index.md
 tags:
 - jekyll
 - getting-started
@@ -27,6 +29,7 @@ translated_from_sha: fa145fad7d08
 translation_of: pages/_docs/jekyll/index.md
 translation_source_url: /docs/jekyll/
 ---
+
 # Jekyll
 
 Jekyll est le générateur de site statique qui propulse Zer0-Mistakes. Cette section couvre tout ce dont vous avez besoin pour travailler efficacement avec Jekyll.
@@ -35,7 +38,7 @@ Jekyll est le générateur de site statique qui propulse Zer0-Mistakes. Cette se
 
 ### Prérequis
 
-- Suivez le [Guide d'installation](/docs/installation/)
+- Suivez le [[zer0-mistakes/pages/_docs/installation|Guide d'installation]]
 - Ayez Docker Desktop en cours d'exécution (ou Ruby + Bundler installés)
 
 ### Exécuter en local
@@ -100,27 +103,27 @@ docker-compose exec jekyll jekyll clean
 
 ### Configuration et installation
 
-- [Configuration de Jekyll](/docs/jekyll/) — Paramètres et options du site
-- [Front Matter](/docs/front-matter/) — Métadonnées et options de page
-- [Coloration syntaxique](/docs/jekyll/code-highlighting/) — Mise en évidence du code
-- [Pagination](/docs/jekyll/pagination/) — Navigation entre les articles
+- [[zer0-mistakes/pages/_docs/jekyll/index|Configuration de Jekyll]] — Paramètres et options du site
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]] — Métadonnées et options de page
+- [[zer0-mistakes/pages/_docs/jekyll/code-highlighting|Coloration syntaxique]] — Mise en évidence du code
+- [[zer0-mistakes/pages/_docs/jekyll/pagination|Pagination]] — Navigation entre les articles
 
 ### Fonctionnalités
 
-Consultez la section [Fonctionnalités](/docs/features/) pour :
+Consultez la section [[zer0-mistakes/pages/_docs/features/index|Fonctionnalités]] pour :
 
-- [Diagrammes Mermaid](/docs/features/mermaid-diagrams/) — Organigrammes et diagrammes
-- [Mathématiques MathJax](/docs/features/mathjax-math/) — Notation mathématique
-- [Commentaires Giscus](/docs/features/giscus-comments/) — Commentaires via GitHub Discussions
-- [Analytique PostHog](/docs/features/posthog-analytics/) — Analytique respectueuse de la vie privée
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Diagrammes Mermaid]] — Organigrammes et diagrammes
+- [[zer0-mistakes/pages/_docs/features/mathjax-math|Mathématiques MathJax]] — Notation mathématique
+- [[zer0-mistakes/pages/_docs/features/giscus-comments|Commentaires Giscus]] — Commentaires via GitHub Discussions
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|Analytique PostHog]] — Analytique respectueuse de la vie privée
 
 ### Déploiement
 
-Consultez la section [Déploiement](/docs/deployment/) pour :
+Consultez la section [[zer0-mistakes/pages/_docs/deployment/index|Déploiement]] pour :
 
-- [GitHub Pages](/docs/deployment/github-pages/) — Hébergement gratuit avec GitHub
-- [Netlify](/docs/deployment/netlify/) — Fonctionnalités d'hébergement avancées
-- [Domaine personnalisé](/docs/deployment/custom-domain/) — Utilisez votre propre domaine
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|GitHub Pages]] — Hébergement gratuit avec GitHub
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Netlify]] — Fonctionnalités d'hébergement avancées
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Domaine personnalisé]] — Utilisez votre propre domaine
 
 ## Ressources
 
@@ -130,14 +133,14 @@ Consultez la section [Déploiement](/docs/deployment/) pour :
 
 ## Voir aussi
 
-- [Ruby et Bundler](/docs/ruby/) — Gestion des dépendances Ruby
-- [Templating Liquid](/docs/liquid/) — Référence du langage de templates
-- [Développement Docker](/docs/docker/) — Flux de travail basé sur les conteneurs
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby et Bundler]] — Gestion des dépendances Ruby
+- [[zer0-mistakes/pages/_docs/liquid/index|Templating Liquid]] — Référence du langage de templates
+- [[zer0-mistakes/pages/_docs/docker/index|Développement Docker]] — Flux de travail basé sur les conteneurs
 
 ## Voir aussi
 
-- [[Liquid]]
-- [[Ruby]]
-- [[Docker]]
-- [[Customization]]
-- [[front-matter]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]
+- [[zer0-mistakes/fr/docs/ruby/index|Ruby]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

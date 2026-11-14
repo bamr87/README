@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: b4872c9304edd4fe
+source_fingerprint: b9c75d45ad71e884
 tags:
   - accessibility
   - ai
@@ -33,7 +33,7 @@ tags:
 | Kind | theme |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-mistakes` - 759 docs |
+| Corpus | `docs/zer0-mistakes` - 556 docs |
 | External | no |
 
 ## Signals
@@ -43,23 +43,23 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~623,850 words across 759 indexed documents
-- code samples in: bash, yaml, html, liquid, plaintext, text, markdown, javascript
+- ~485,849 words across 556 indexed documents
+- code samples in: bash, yaml, html, text, liquid, markdown, javascript, css
 
 ## Navigation
 
-678 published pages in 100 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
+554 published pages in 94 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-mistakes.md) · [tree as JSON](../nav/zer0-mistakes.json)
 
-- **Repository & tooling** (85 pages)
+- **Repository & tooling** (10 pages)
 - **Data** (2 pages)
 - **Design System** (13 pages)
-- **Documentation** (115 pages)
+- **Documentation** (79 pages)
 - **Examples** (52 pages)
 - **Français** (170 pages)
 - **Includes** (3 pages)
-- **Pages** (215 pages)
+- **Pages** (203 pages)
 - **Templates Directory** (11 pages)
-- **zer0 studio** (3 pages)
+- **zer0 studio** (2 pages)
 
 ## Key documents
 

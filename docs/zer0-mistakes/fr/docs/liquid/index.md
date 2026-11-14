@@ -14,7 +14,9 @@ prerequisites: []
 preview: /images/previews/liquid.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/liquid/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/liquid/index.md
 tags:
 - liquid
 - jekyll
@@ -23,6 +25,7 @@ translated_from_sha: ec79a55a9d22
 translation_of: pages/_docs/liquid/index.md
 translation_source_url: /docs/liquid/
 ---
+
 # Liquid
 
 Liquid est le langage de templates utilisé par Jekyll pour traiter les templates et créer du contenu dynamique.
@@ -182,12 +185,12 @@ Explorez l'utilisation de Liquid dans Zer0-Mistakes :
 
 ## Connexe
 
-- [Guide Jekyll](/docs/jekyll/)
-- [Front Matter](/docs/front-matter/)
-- [Templates Liquid de Jekyll](/docs/liquid/)
+- [[zer0-mistakes/pages/_docs/jekyll/index|Guide Jekyll]]
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Templates Liquid de Jekyll]]
 
 ## Voir aussi
 
-- [[Jekyll]]
-- [[Customization]]
-- [[front-matter]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

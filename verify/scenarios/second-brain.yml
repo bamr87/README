@@ -1,0 +1,17 @@
+# A reader moves through the second brain: graph, concept note, backlinks.
+schema: scenario/v1
+id: second-brain
+feature: README-013
+title: "The vault's views work on the published site"
+viewports: [desktop]
+steps:
+  - goto: /brain/graph/
+  - wait: { selector: ".brain-view canvas" }
+  - expect: { visible: ".brain-controls" }
+  - screenshot: graph
+  - goto: /brain/concepts/docker/
+  - wait: { selector: ".brain-local canvas" }
+  - expect: { visible: ".admonition" }
+  - expect: { count: { selector: ".brain-panel a", min: 1 } }
+  - screenshot: concept
+  - expect: { no_console_errors: true }

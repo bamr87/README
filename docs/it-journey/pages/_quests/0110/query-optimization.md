@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Connection-level performance tuning in the Database Mastery line
 skill_focus: data-engineering
-source_file: query-optimization.md
+source_file: pages/_quests/0110/query-optimization.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/query-optimization.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Speed Sanctum'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: '❌ N+1: one query for users, then one query PER user for their events.'
+title: 'Query Optimization: Tuning Fast Database Queries'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Confident writing JOINs and aggregations
 - [ ] Understanding of what an index is
-- [ ] Completion of [SQL Mastery](/quests/0110/sql-mastery/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/sql-mastery|SQL Mastery]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -381,17 +383,17 @@ Each network round trip to the database costs a fixed overhead (often a millisec
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Connection Pooling](/quests/0110/connection-pooling/) - Cut connection overhead
+- 🎯 [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]] - Cut connection overhead
 
 **Explore Side Adventures**:
-- ⚔️ [Database Migrations](/quests/0110/database-migrations/) - Add indexes without downtime
-- ⚔️ [Backup and Recovery](/quests/0110/backup-recovery/) - Protect the database
+- ⚔️ [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]] - Add indexes without downtime
+- ⚔️ [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]] - Protect the database
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
-**📊 Data Scientist**: Advance to [Database Migrations](/quests/0110/database-migrations/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]]
 
 ## 📚 Resources
 
@@ -420,7 +422,7 @@ Each network round trip to the database costs a fixed overhead (often a millisec
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] **Unlocks:** [[Connection Pooling: Efficient Database Resource Management]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] **Unlocks:** [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling: Efficient Database Resource Management]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

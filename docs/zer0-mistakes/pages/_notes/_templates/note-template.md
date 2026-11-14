@@ -1,5 +1,7 @@
 ---
-source_file: note-template.md
+source_file: pages/_notes/_templates/note-template.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notes/_templates/note-template.md
 title: Obsidian aliases map to Jekyll redirect_from (jekyll-redirect-from is enabled).
 ---
 ---

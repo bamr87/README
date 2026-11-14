@@ -1,5 +1,7 @@
 ---
-source_file: gameplay.md
+source_file: docs/gameplay.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/gameplay.md
 title: Gameplay Guide
 ---
 # Gameplay Guide

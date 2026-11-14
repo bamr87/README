@@ -24,18 +24,21 @@ prerequisites:
 preview: /images/previews/jekyll-theme-guide.png
 sidebar:
   nav: docs
-source_file: theme-guide.md
+source_file: fr/docs/getting-started/theme-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/getting-started/theme-guide.md
 tags:
 - jekyll
 - tutorial
 - customization
 - docker
 - bootstrap
-title: Guide du thème Jekyll
+title: 'Guide du thème Jekyll : configuration, personnalisation, déploiement'
 translated_from_sha: 446d47041206
 translation_of: pages/_docs/getting-started/theme-guide.md
 translation_source_url: /docs/getting-started/theme-guide/
 ---
+
 # Guide du thème Jekyll
 
 > Guide complet du thème Jekyll Zer0-Mistakes — de l'installation à la personnalisation jusqu'au déploiement.
@@ -398,11 +401,11 @@ $primary-color: #007bff;
 
 | Fonctionnalité | Documentation | Front Matter |
 |---------|---------------|--------------|
-| Commentaires | [Guide Giscus](/docs/features/giscus-comments/) | `comments: true` |
-| Analytique | [Guide PostHog](/docs/features/posthog-analytics/) | (auto) |
-| Diagrammes | [Guide Mermaid](/docs/features/mermaid-diagrams/) | `mermaid: true` |
-| Mathématiques | [Guide MathJax](/docs/features/mathjax-math/) | `mathjax: true` |
-| Pagination | [Guide de pagination](/docs/jekyll/pagination/) | (auto) |
+| Commentaires | [[zer0-mistakes/pages/_docs/features/giscus-comments\|Guide Giscus]] | `comments: true` |
+| Analytique | [[zer0-mistakes/pages/_docs/features/posthog-analytics\|Guide PostHog]] | (auto) |
+| Diagrammes | [[zer0-mistakes/pages/_docs/features/mermaid-diagrams\|Guide Mermaid]] | `mermaid: true` |
+| Mathématiques | [[zer0-mistakes/pages/_docs/features/mathjax-math\|Guide MathJax]] | `mathjax: true` |
+| Pagination | [[zer0-mistakes/pages/_docs/jekyll/pagination\|Guide de pagination]] | (auto) |
 
 ---
 
@@ -424,7 +427,7 @@ $primary-color: #007bff;
 
 ### Domaine personnalisé
 
-Consultez [Configuration d'un domaine personnalisé](/docs/deployment/custom-domain/).
+Consultez [[zer0-mistakes/pages/_docs/deployment/custom-domain|Configuration d'un domaine personnalisé]].
 
 ---
 
@@ -469,10 +472,10 @@ bundle exec jekyll clean
 
 ## Étapes suivantes
 
-- **[Commentaires Giscus](/docs/features/giscus-comments/)** — Ajoutez une fonctionnalité de commentaires
-- **[Analytique PostHog](/docs/features/posthog-analytics/)** — Suivez l'utilisation du site
-- **[Diagrammes Mermaid](/docs/features/mermaid-diagrams/)** — Créez une documentation visuelle
-- **[Navigation au clavier](/docs/features/keyboard-navigation/)** — Fonctionnalités d'accessibilité
+- **[[zer0-mistakes/pages/_docs/features/giscus-comments|Commentaires Giscus]]** — Ajoutez une fonctionnalité de commentaires
+- **[[zer0-mistakes/pages/_docs/features/posthog-analytics|Analytique PostHog]]** — Suivez l'utilisation du site
+- **[[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Diagrammes Mermaid]]** — Créez une documentation visuelle
+- **[[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]** — Fonctionnalités d'accessibilité
 
 ---
 
@@ -480,7 +483,7 @@ bundle exec jekyll clean
 
 ## Voir aussi
 
-- [[Getting Started]]
-- [[Customization]]
-- [[Features]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/features/README|Features]]
 - [[Bootstrap Integration]]

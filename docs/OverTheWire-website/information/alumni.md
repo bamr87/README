@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: alumni.md
+source_file: information/alumni.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/alumni.md
 title: Alumni
 ---
+
 OverTheWire Alumni
 ==================
 

@@ -1,16 +1,20 @@
 """
-Build orchestration: registry -> extract -> navigate -> synthesize -> assemble
--> index, with lifecycle hooks between stages.
+Build orchestration: registry -> extract -> brain -> navigate -> synthesize ->
+assemble -> index -> graph, with lifecycle hooks between stages.
 
 `navigate` sits between extraction and synthesis because the navigation tree
 is both an output (nav.yml, context/nav/, docs/browse/) and an input: cards
 and facts describe a project's structure using the same sections the sidebar
 shows, so the two can never drift.
+
+`brain` comes before `navigate` so its notes get sidebar entries, and `graph`
+comes last so it covers every note the build wrote.
 """
 
 from typing import Dict, Optional
 
 from .ai import BaseProvider, get_provider
+from .brain import generate as generate_brain
 from .assembler import (
     build_apex, fleet_table, inject_auto_span, write_context_tree,
     write_site_index,
@@ -21,6 +25,7 @@ from .indexer import build_index, write_index
 from .navigator import navigate
 from .registry import Registry, load_registry, sync_repos_txt
 from .synthesizer import build_card
+from .vault import build_graph, scan, write_graph
 
 
 def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
@@ -50,6 +55,11 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     print(f"[extract] {len(facts_by_name)} projects "
           f"(corpus index: {'present' if docs_index else 'absent'})")
     hooks("post_extract")
+
+    brain = generate_brain(registry, ai=provider)
+    print(f"[brain] {brain['concepts']} concepts ({brain['stubs']} stubs), "
+          f"{brain['projects']} project notes, {brain['ai_summaries']} AI summaries")
+    hooks("post_brain")
 
     fleet_nav = navigate(registry, write_mkdocs=update_nav, write_browse=update_nav)
     for name, facts in facts_by_name.items():
@@ -81,10 +91,16 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     print(f"[index] {len(index['terms'])} terms across {len(index['documents'])} documents")
     hooks("post_index")
 
+    graph = build_graph(scan()[0])
+    write_graph(graph)
+    print(f"[graph] {graph['counts']['notes']} notes, {graph['counts']['edges']} edges, "
+          f"{graph['counts']['unresolved']} unresolved targets")
+
     hooks("post_build")
     return {
         "projects": len(facts_by_name),
         "enrichment": enrichment,
         "terms": len(index["terms"]),
         "nav_pages": fleet_nav["counts"]["pages"],
+        "graph": graph["counts"],
     }

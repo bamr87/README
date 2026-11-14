@@ -13,12 +13,14 @@ order: 92.0
 preview: /assets/images/posts/092-0-calypso-wip.jpg
 section: 04-calypso
 series: ulysses
-source_file: 092-0-calypso-wip.md
-source_url: https://www.swerveofshore.com/post/092-0-calypso-wip
+source_file: examples/swerve-of-shore/pages/_series/ulysses/04-calypso/092-0-calypso-wip.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/04-calypso/092-0-calypso-wip.md
 sub-title: Episode 4 · Calypso
-title: 092 0 Calypso Wip
+title: 092.0 - Calypso - WIP
 wip: true
 ---
+
 An in-progress entry in the *Episode 4 · Calypso* thread on [Swerve of Shore](https://www.swerveofshore.com/post/092-0-calypso-wip), by Brandon Nicklaus.
 
 > Leopold Bloom: The main character of this story. We find that Bloom has a fascination with excrement and the anus. He is extremely giving to his wife as she lays in bed this entire episode while he serves her. Bloom carries a potato around for good luck, sells ad space for the Freeman’s Journal, insinuates Ireland is full of drunks, and is a “horny” gentlemen. He day dreams in this episode about ladies “hams”. Bloom is seen as an outsider. His father is a Hungarian Jew and mother is Irish. He is our Odysseus.

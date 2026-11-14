@@ -13,7 +13,9 @@ permalink: /docs/features/cookie-consent/
 preview: /images/previews/cookie-consent-management.png
 sidebar:
   nav: docs
-source_file: cookie-consent.md
+source_file: pages/_docs/features/cookie-consent.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/cookie-consent.md
 tags:
 - cookies
 - gdpr
@@ -22,6 +24,7 @@ tags:
 - consent
 title: Cookie Consent Management
 ---
+
 # Cookie Consent Management
 
 The Zer0-Mistakes theme includes a GDPR/CCPA compliant cookie consent system with granular permission controls.
@@ -267,12 +270,12 @@ categories:
 
 ## Related
 
-- [PostHog Analytics](/docs/features/posthog-analytics/)
-- [Privacy Policy](/privacy-policy/)
-- [Google Analytics](/docs/analytics/google-analytics/)
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]]
+- [[zer0-mistakes/pages/privacy-policy|Privacy Policy]]
+- [[zer0-mistakes/pages/_docs/analytics/google-analytics|Google Analytics]]
 
 ## See also
 
-- [[Features]]
-- [[PostHog Analytics]]
-- [[Google Analytics]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/features/posthog-analytics|PostHog Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/google-analytics|Google Analytics]]

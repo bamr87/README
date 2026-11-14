@@ -23,13 +23,15 @@ redirect_from:
 - /notes/obsidian/
 sidebar:
   nav: auto
-source_file: index.md
+source_file: pages/_notes/obsidian/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/obsidian/index.md
 tags:
 - obsidian
 - wiki-links
 - knowledge-graph
 - notes
-title: Obsidian Knowledge Graph
+title: Obsidian Knowledge Graph and Wiki Links
 toc_sticky: true
 ---
 # Obsidian Knowledge Graph
@@ -45,18 +47,18 @@ IT-Journey uses the `zer0-mistakes` theme for Obsidian-style knowledge features 
 
 ## Start Here
 
-- [Open the Obsidian Graph View](/notes/obsidian/graph/)
-- [Browse all notes](/notes/)
-- [Browse documentation](/docs/)
+- [[it-journey/pages/_notes/obsidian/graph|Open the Obsidian Graph View]]
+- [[it-journey/pages/_notes/index|Browse all notes]]
+- [[it-journey/_data/brand/sections/docs|Browse documentation]]
 
 ## Related Wiki Links
 
 - [[Learning Resources Library]]
 - [[Jekyll Documentation]]
 - [[Terminal and Bash Learning Path]]
-- [[Notes Index]]
+- [[bamr87.github.io/pages/_notes/index|Notes Index]]
 - [[Quick Start: Build a Jekyll Site from Scratch]]
-- [[Markdown Mastery: Content Formatting Fundamentals]]
+- [[it-journey/pages/_quests/0000/markdown-mastery|Markdown Mastery: Content Formatting Fundamentals]]
 
 ## Authoring Guidance
 

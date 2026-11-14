@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 22
-source_file: vortex22.md
+source_file: wargames/vortex/vortex22.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex22.md
 title: Vortex22
 ---
 Object Analysis

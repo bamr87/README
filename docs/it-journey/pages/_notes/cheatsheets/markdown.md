@@ -11,14 +11,16 @@ excerpt: Essential Markdown syntax reference for content creation
 lastmod: '2021-12-27T17:46:18.040Z'
 redirect_from:
 - /notes/cheetsheets/markdown/
-source_file: markdown.md
+source_file: pages/_notes/cheatsheets/markdown.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/markdown.md
 tags:
 - markdown
 - syntax
 - reference
 - cheatsheet
 - kramdown
-title: Jekyll Markdown Quick Reference
+title: Markdown Cheatsheet
 ---
 [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 # Jekyll Markdown Quick Reference

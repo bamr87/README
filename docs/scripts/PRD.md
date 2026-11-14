@@ -1,5 +1,7 @@
 ---
 source_file: PRD.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/PRD.md
 title: PRD — scripts
 ---
 # PRD — scripts

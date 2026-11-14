@@ -1,9 +1,12 @@
 ---
 gamename: natas
 layout: default
-source_file: index.md
-title: Index
+source_file: wargames/natas/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/natas/index.md
+title: Natas
 ---
+
 Natas
 =====
 

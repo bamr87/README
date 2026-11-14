@@ -6,15 +6,18 @@ personas:
 - learner
 - contributor
 section: quest
-source_file: quest.md
-title: Quests — Section Guide
+source_file: _data/brand/sections/quest.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/sections/quest.md
+title: Quests
 voice_profile: quest-fantasy
 ---
+
 # Quests — Section Guide
 
 > Governs the whole `pages/_quests` collection (resolved via
 > `_registry.yml › collection_defaults`). Voice/values live in `_data/brand/`.
-> **Structure** is owned by [`quest.instructions.md`](../../../.github/instructions/quest.instructions.md)
+> **Structure** is owned by [`quest.instructions.md`](../../../dot-github/instructions/quest.instructions.md)
 > and enforced by `quest_validator.py` — this guide is the *voice* layer only.
 
 ## Audience
@@ -23,7 +26,7 @@ Learners climbing the 4-bit ladder (0000 → 1111) and contributors authoring ne
 
 ## Voice profile
 
-`quest-fantasy` (see `../voice.md`). Second person, imperative, playful, heavily fantasy-framed ("wield", "spell", "rank up"). **Emoji are on-brand and are not policed for quests** — the fantasy framing (🎯 ⚔️ 🏆 🧙) is expected. Fantasy vocabulary comes from the [Codex Glossary](/quests/codex/glossary/) — the naming canon: no synonyms for terms it already names; new coinages land there first.
+`quest-fantasy` (see `../voice.md`). Second person, imperative, playful, heavily fantasy-framed ("wield", "spell", "rank up"). **Emoji are on-brand and are not policed for quests** — the fantasy framing (🎯 ⚔️ 🏆 🧙) is expected. Fantasy vocabulary comes from the [[it-journey/pages/_quests/codex/glossary|Codex Glossary]] — the naming canon: no synonyms for terms it already names; new coinages land there first.
 
 ## Tone
 

@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 759,
-    "fingerprint": "b4872c9304edd4fe",
+    "file_count": 556,
+    "fingerprint": "b9c75d45ad71e884",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 5079941
+    "total_bytes": 4031560
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,18 +36,18 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-mistakes.md",
-    "fingerprint": "92d0e21b64ca4336",
+    "fingerprint": "8cdbf29cca70b426",
     "index": "zer0-mistakes/README.md",
     "max_depth": 6,
-    "pages": 678,
+    "pages": 554,
     "present": true,
-    "sections": 100,
-    "skipped": 9,
+    "sections": 94,
+    "skipped": 2,
     "title": "Zer0 Mistakes",
     "top_sections": [
       {
-        "index": "zer0-mistakes/test/README.md",
-        "pages": 85,
+        "index": "zer0-mistakes/scripts/README.md",
+        "pages": 10,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -68,7 +68,7 @@
       },
       {
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 115,
+        "pages": 79,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -96,7 +96,7 @@
       },
       {
         "index": null,
-        "pages": 215,
+        "pages": 203,
         "path": "pages",
         "title": "Pages",
         "type": "section"
@@ -110,7 +110,7 @@
       },
       {
         "index": "zer0-mistakes/studio/README.md",
-        "pages": 3,
+        "pages": 2,
         "path": "studio",
         "title": "zer0 studio",
         "type": "section"
@@ -135,19 +135,19 @@
   },
   "rollups": {
     "categories": {
-      "zer0-mistakes": 759
+      "zer0-mistakes": 556
     },
     "code_languages": [
       "bash",
       "yaml",
       "html",
-      "liquid",
-      "plaintext",
       "text",
+      "liquid",
       "markdown",
-      "javascript"
+      "javascript",
+      "css"
     ],
-    "indexed_documents": 759,
+    "indexed_documents": 556,
     "top_tags": [
       "jekyll",
       "docker",
@@ -165,7 +165,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 623850
+    "total_words": 485849
   },
   "schema_version": "1.0",
   "signals": {
@@ -188,7 +188,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 217,
+        "doc_count": 205,
         "name": "pages"
       },
       {
@@ -196,24 +196,12 @@
         "name": "fr"
       },
       {
-        "doc_count": 115,
+        "doc_count": 79,
         "name": "docs"
-      },
-      {
-        "doc_count": 75,
-        "name": "test"
       },
       {
         "doc_count": 52,
         "name": "examples"
-      },
-      {
-        "doc_count": 45,
-        "name": ".github"
-      },
-      {
-        "doc_count": 20,
-        "name": ".claude"
       },
       {
         "doc_count": 13,
@@ -226,6 +214,18 @@
       {
         "doc_count": 9,
         "name": "scripts"
+      },
+      {
+        "doc_count": 3,
+        "name": "_includes"
+      },
+      {
+        "doc_count": 2,
+        "name": "_data"
+      },
+      {
+        "doc_count": 2,
+        "name": "studio"
       }
     ]
   }

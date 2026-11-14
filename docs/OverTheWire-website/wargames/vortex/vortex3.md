@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 3
-source_file: vortex3.md
+source_file: wargames/vortex/vortex3.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex3.md
 title: Vortex3
 ---
 A Stack Overflow with a Difference

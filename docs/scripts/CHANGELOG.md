@@ -1,5 +1,7 @@
 ---
 source_file: CHANGELOG.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/CHANGELOG.md
 title: Changelog
 ---
 # Changelog

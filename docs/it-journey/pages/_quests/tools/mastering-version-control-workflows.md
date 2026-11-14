@@ -76,7 +76,9 @@ rewards:
   - Access to CI/CD pipeline mastery quests
   - Eligibility for open-source maintainer role
 skill_focus: devops
-source_file: mastering-version-control-workflows.md
+source_file: pages/_quests/tools/mastering-version-control-workflows.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/mastering-version-control-workflows.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - Advanced Git Mastery'
 tags:
 - '1100'
@@ -87,7 +89,7 @@ tags:
 - branch-strategy
 - release-management
 - conventional-commits
-title: 'The commit that would trigger this:'
+title: 'Mastering Version Control Workflows: The Grand Merge Ritual'
 validation_criteria:
   completion_requirements:
   - Successfully orchestrate a multi-branch workflow with dependent PRs
@@ -136,8 +138,8 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completed [Branches and Pull Requests quest](/quests/0010/branches-and-pull-requests/)
-- [ ] Completed [Commitments to Clean Commits quest](/quests/0010/commitments-to-clean-commits/)
+- [ ] Completed [[it-journey/pages/_quests/tools/branches-and-pull-requests|Branches and Pull Requests quest]]
+- [ ] Completed [[it-journey/pages/_quests/tools/commitments-to-clean-commits|Commitments to Clean Commits quest]]
 - [ ] Comfortable with `git log`, `git diff`, and `git stash`
 
 ### 🛠️ System Requirements
@@ -871,7 +873,7 @@ Apply everything you've learned to the actual IT-Journey repository:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Mastering Branches and Pull Requests for Developers]] · [[Commitments to clean commits]] **Recommended:** [[Change Logs]] · [[Understanding Action Triggers in Depth]] **Sequel quests:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Parallel quests:** [[Understanding Action Triggers in Depth]] **Related quests:** [[Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] · [[Stream Processing: Real-Time Data with Apache Kafka & Flink]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] · [[The Siege of King EDGAR: Storming the SEC Data Castle]] · [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle]] · [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] · [[The Temple of Templates: Binary Abstractions and Reusable Realms]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/tools/branches-and-pull-requests|Mastering Branches and Pull Requests for Developers]] · [[Commitments to clean commits]] **Recommended:** [[Change Logs]] · [[it-journey/pages/_quests/tools/action-triggers|Understanding Action Triggers in Depth]] **Sequel quests:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Parallel quests:** [[it-journey/pages/_quests/tools/action-triggers|Understanding Action Triggers in Depth]] **Related quests:** [[Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] · [[it-journey/pages/_quests/1100/stream-processing|Stream Processing: Real-Time Data with Apache Kafka & Flink]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] · [[The Siege of King EDGAR: Storming the SEC Data Castle]] · [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle]] · [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] · [[The Temple of Templates: Binary Abstractions and Reusable Realms]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -6,11 +6,14 @@ date: 2026-05-31 20:54:47+00:00
 description: How Zer0-Mistakes converts Jupyter notebooks to Jekyll Markdown at build
   time for GitHub Pages, preserving code, outputs, and math without plugins.
 lastmod: 2026-05-31 20:54:47+00:00
-source_file: jupyter-notebooks.md
+source_file: docs/features/jupyter-notebooks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/jupyter-notebooks.md
 tags:
 - features
 title: Jupyter Notebook Integration for Jekyll
 ---
+
 # Jupyter Notebook Integration for Jekyll
 
 ## Overview
@@ -410,4 +413,4 @@ Your implementation is working correctly if:
 
 ---
 
-> **User guide**: For setup and usage instructions, see [Jupyter Notebook Integration](/docs/features/jupyter-notebooks/) in the user documentation.
+> **User guide**: For setup and usage instructions, see [[zer0-mistakes/pages/_docs/features/jupyter-notebooks|Jupyter Notebook Integration]] in the user documentation.

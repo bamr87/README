@@ -15,7 +15,9 @@ local_graph: false
 mermaid: true
 permalink: /quests/0110/
 preview: /images/previews/level-0110-database-mastery.png
-source_file: README.md
+source_file: pages/_quests/0110/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/README.md
 tags:
 - '0110'
 - databases
@@ -187,13 +189,13 @@ Upon completing all main quests:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Backup and Recovery: Data Protection Strategies for Databases](/quests/0110/backup-recovery/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Connection Pooling: Efficient Database Resource Management](/quests/0110/connection-pooling/) | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [Data Modeling: Schema Design and Database Relationships](/quests/0110/data-modeling/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Database Fundamentals: Data Storage and Retrieval](/quests/0110/database-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Database Migrations: Schema Evolution and Version Control](/quests/0110/database-migrations/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Database Security: Access Control and Data Encryption](/quests/0110/database-security/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Query Optimization: Performance Tuning for Fast Database Queries](/quests/0110/query-optimization/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [SQL Mastery: Query Language Proficiency for Data Professionals](/quests/0110/sql-mastery/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/backup-recovery\|Backup and Recovery: Data Protection Strategies for Databases]] | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/connection-pooling\|Connection Pooling: Efficient Database Resource Management]] | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/data-modeling\|Data Modeling: Schema Design and Database Relationships]] | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/database-fundamentals\|Database Fundamentals: Data Storage and Retrieval]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/database-migrations\|Database Migrations: Schema Evolution and Version Control]] | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/database-security\|Database Security: Access Control and Data Encryption]] | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/query-optimization\|Query Optimization: Performance Tuning for Fast Database Queries]] | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0110/sql-mastery\|SQL Mastery: Query Language Proficiency for Data Professionals]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
 
 

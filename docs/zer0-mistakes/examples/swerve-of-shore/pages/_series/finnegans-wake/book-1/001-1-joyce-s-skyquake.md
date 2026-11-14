@@ -11,11 +11,13 @@ order: 1.1
 preview: /assets/images/posts/001-1-joyce-s-skyquake.jpg
 section: book-1
 series: finnegans-wake
-source_file: 001-1-joyce-s-skyquake.md
-source_url: https://www.swerveofshore.com/post/001-1-joyce-s-skyquake
+source_file: examples/swerve-of-shore/pages/_series/finnegans-wake/book-1/001-1-joyce-s-skyquake.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/finnegans-wake/book-1/001-1-joyce-s-skyquake.md
 sub-title: Finnegans Wake · Book 1
-title: 001 1 Joyce S Skyquake
+title: 001.1 - Joyce's Skyquake
 ---
+
 From the *Finnegans Wake · Book 1* thread on [Swerve of Shore](https://www.swerveofshore.com/post/001-1-joyce-s-skyquake), by Brandon Nicklaus.
 
 > We are using the 1999 Penguin Classics edition of Finnegans Wake, with an introduction by John Bishop.

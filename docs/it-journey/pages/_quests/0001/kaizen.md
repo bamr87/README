@@ -72,7 +72,9 @@ rewards:
   - Access to advanced Lean Software Development quests
   - Team leadership and culture transformation paths
 skill_focus: fullstack
-source_file: kaizen.md
+source_file: pages/_quests/0001/kaizen.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/kaizen.md
 sub_title: 'Level 0001 (1) Quest: Process Improvement and Team Culture Mastery'
 tags:
 - '0001'
@@ -81,7 +83,7 @@ tags:
 - lean-development
 - process-optimization
 - team-culture
-title: 'Example: Add simple linting to CI pipeline'
+title: 'Kaizen Quest: Continuous Improvement Alchemy'
 validation_criteria:
   completion_requirements:
   - Implement at least one PDCA cycle in your development process
@@ -1265,7 +1267,7 @@ A successful improvement will:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

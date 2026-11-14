@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": false,
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false,
+  "userIgnoreFilters": [
+    "results/"
+  ]
+}

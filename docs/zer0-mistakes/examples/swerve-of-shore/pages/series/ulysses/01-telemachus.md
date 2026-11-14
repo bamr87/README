@@ -8,9 +8,12 @@ permalink: /series/ulysses/01-telemachus/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 01-telemachus.md
-title: 01 Telemachus
+source_file: examples/swerve-of-shore/pages/series/ulysses/01-telemachus.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/01-telemachus.md
+title: 01 · Telemachus
 ---
+
 {% include page-header.html %}
 
 Episode 1 of *Ulysses*. 8am, the Martello tower at Sandycove.

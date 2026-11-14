@@ -71,7 +71,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: community
-source_file: open-source-contribution.md
+source_file: pages/_quests/1111/open-source-contribution.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/open-source-contribution.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Open Source'
 tags:
 - '1111'
@@ -81,7 +83,7 @@ tags:
 - licensing
 - maintainership
 - gamified-learning
-title: Install Git and the GitHub CLI for a smooth contribution flow
+title: 'Open Source Contribution: Maintaining and Licensing'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfortable with Git branches, commits, and pull requests
 - [ ] A GitHub or GitLab account
-- [ ] Completion of [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Git installed and configured (`git config --global user.name/email`)
@@ -375,17 +377,17 @@ The big distinction: **permissive** licenses (MIT, Apache) let anyone do almost 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Building Technical Communities](/quests/1111/building-technical-communities/) - Grow a community around your work
+- 🎯 [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]] - Grow a community around your work
 
 **Explore Side Adventures**:
-- ⚔️ [Innovation and R&D](/quests/1111/innovation-rnd/) - Experiment in the open
-- ⚔️ [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/) - Document and evangelize your project
+- ⚔️ [[it-journey/pages/_quests/1111/innovation-rnd|Innovation and R&D]] - Experiment in the open
+- ⚔️ [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]] - Document and evangelize your project
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Building Technical Communities](/quests/1111/building-technical-communities/)  
-**🏗️ System Engineer**: Explore [Innovation and R&D](/quests/1111/innovation-rnd/)  
-**🛡️ Security Specialist**: Advance to [Architecture Reviews](/quests/1111/architecture-reviews/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/innovation-rnd|Innovation and R&D]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]]
 
 ## 📚 Resources
 
@@ -415,6 +417,6 @@ The big distinction: **permissive** licenses (MIT, Apache) let anyone do almost 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Tech Speaking and Writing: RFCs, Design Docs, and Talks That Persuade]] **Unlocks:** [[Building Technical Communities: Growing Developer Ecosystems]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Tech Speaking and Writing: RFCs, Design Docs, and Talks That Persuade]] **Unlocks:** [[Building Technical Communities: Growing Developer Ecosystems]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

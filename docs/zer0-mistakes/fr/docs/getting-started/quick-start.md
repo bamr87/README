@@ -14,7 +14,9 @@ permalink: /fr/docs/getting-started/quick-start/
 preview: /images/previews/quick-start-guide.png
 sidebar:
   nav: docs
-source_file: quick-start.md
+source_file: fr/docs/getting-started/quick-start.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/getting-started/quick-start.md
 tags:
 - quickstart
 - installation
@@ -24,6 +26,7 @@ translated_from_sha: f48dddacb177
 translation_of: pages/_docs/getting-started/quick-start.md
 translation_source_url: /docs/getting-started/quick-start/
 ---
+
 # Guide de démarrage rapide
 
 Ce guide couvre toutes les méthodes d'installation du thème Jekyll Zer0-Mistakes.
@@ -356,9 +359,9 @@ docker-compose up
 ## Étapes suivantes
 
 - [Guide du thème](../theme-guide/) — Guide de personnalisation complet
-- [Front Matter](/docs/front-matter/) — Configurez les métadonnées des pages
-- [Fonctionnalités](/docs/features/) — Activez les diagrammes Mermaid, les commentaires, les outils d'analyse
-- [Déploiement](/docs/deployment/) — Publiez votre site
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]] — Configurez les métadonnées des pages
+- [[zer0-mistakes/pages/_docs/features/index|Fonctionnalités]] — Activez les diagrammes Mermaid, les commentaires, les outils d'analyse
+- [[zer0-mistakes/pages/_docs/deployment/index|Déploiement]] — Publiez votre site
 
 ## Référence technique
 
@@ -368,7 +371,7 @@ Pour les détails destinés aux contributeurs (architecture de l'installateur, s
 
 ## Voir aussi
 
-- [[Getting Started]]
-- [[Installation]]
-- [[Docker]]
-- [[Customization]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]

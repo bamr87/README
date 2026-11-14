@@ -12,14 +12,16 @@ permalink: /quests/inventory/
 preview: /images/previews/inventory-learner-collection-tracker.webp
 sidebar:
   nav: quests
-source_file: README.md
+source_file: pages/_quests/inventory/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/inventory/README.md
 tags:
 - quests
 - inventory
 - progress
 - tracking
 - badges
-title: 🎒 Inventory & Progress Vault
+title: 🎒 Inventory & Quest Progress Vault
 ---
 <link rel="stylesheet" href="{{ '/assets/css/quest-system.css' | relative_url }}">
 

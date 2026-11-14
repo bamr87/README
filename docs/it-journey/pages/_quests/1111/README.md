@@ -19,7 +19,9 @@ permalink: /quests/1111/
 preview: /images/previews/level-1111-leadership-innovation.webp
 sidebar:
   nav: quests
-source_file: README.md
+source_file: pages/_quests/1111/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/README.md
 tags:
 - leadership
 - innovation
@@ -28,7 +30,7 @@ tags:
 - community
 - architecture
 - career
-title: '👑 Level 1111: Leadership & Innovation'
+title: 'Level 1111: Leadership & Innovation'
 toc: true
 toc_sticky: true
 ---
@@ -180,8 +182,8 @@ To achieve Legendary Status, you must:
 ## 🔗 Related Resources
 
 - [Level 1110: Architecture & Design](../1110/)
-- [System Engineer Path](/quests/#-system-engineer-path)
-- [Contributing to IT-Journey](/about/contributing/)
+- [[it-journey/pages/_quests/README#-system-engineer-path|System Engineer Path]]
+- [[it-journey/pages/_about/contribute/contributing|Contributing to IT-Journey]]
 
 ## 💭 Wisdom from the Legends
 
@@ -202,13 +204,13 @@ To achieve Legendary Status, you must:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Architecture Reviews: Leading Technical Design Discussions](/quests/1111/architecture-reviews/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [Building Technical Communities: Growing Developer Ecosystems](/quests/1111/building-technical-communities/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Career Advancement Strategies: Growing from Engineer to Leader](/quests/1111/career-advancement/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [Innovation and R&D: Driving Technical Innovation](/quests/1111/innovation-rnd/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
-| [Mentorship Programs: Developing and Growing Engineering Talent](/quests/1111/mentorship-programs/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [Open Source Contribution: Leading and Maintaining Projects](/quests/1111/open-source-contribution/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Tech Speaking and Writing: Building Your Technical Brand](/quests/1111/tech-speaking-writing/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [Technical Leadership: Building High-Performance Engineering Teams](/quests/1111/technical-leadership/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/architecture-reviews\|Architecture Reviews: Leading Technical Design Discussions]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/building-technical-communities\|Building Technical Communities: Growing Developer Ecosystems]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/career-advancement\|Career Advancement Strategies: Growing from Engineer to Leader]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/innovation-rnd\|Innovation and R&D: Driving Technical Innovation]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/mentorship-programs\|Mentorship Programs: Developing and Growing Engineering Talent]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/open-source-contribution\|Open Source Contribution: Leading and Maintaining Projects]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/tech-speaking-writing\|Tech Speaking and Writing: Building Your Technical Brand]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1111/technical-leadership\|Technical Leadership: Building High-Performance Engineering Teams]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
 
 

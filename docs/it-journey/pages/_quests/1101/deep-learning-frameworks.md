@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the computer vision, NLP, and MLOps quests of Level 1101
 skill_focus: ai-ml
-source_file: deep-learning-frameworks.md
+source_file: pages/_quests/1101/deep-learning-frameworks.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/deep-learning-frameworks.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - Deep Learning Frameworks'
 tags:
 - '1101'
@@ -87,7 +89,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: Apple Silicon Macs accelerate PyTorch via the MPS backend - no CUDA needed.
+title: 'Deep Learning Frameworks: PyTorch vs TensorFlow'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -415,17 +417,17 @@ PyTorch shows you the loop; Keras hides it. PyTorch is favored in research for t
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Computer Vision Mastery](/quests/1101/computer-vision/) - Convolutions and image models
+- 🎯 [[it-journey/pages/_quests/1101/computer-vision|Computer Vision Mastery]] - Convolutions and image models
 
 **Explore Side Adventures**:
-- ⚔️ [Natural Language Processing](/quests/1101/natural-language-processing/) - Transformers and LLMs
-- ⚔️ [MLOps Engineering](/quests/1101/mlops/) - From notebook to production
+- ⚔️ [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]] - Transformers and LLMs
+- ⚔️ [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]] - From notebook to production
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Computer Vision Mastery](/quests/1101/computer-vision/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
-**📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/computer-vision|Computer Vision Mastery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]]
 
 ## 📚 Resources
 
@@ -454,6 +456,6 @@ PyTorch shows you the loop; Keras hides it. PyTorch is favored in research for t
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Required:** [[Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch]] **Unlocks:** [[Computer Vision Mastery: Image Classification, Object Detection & Segmentation]] · [[Natural Language Processing: Text Analysis, Transformers & LLMs with Python]] · [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Required:** [[Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch]] **Unlocks:** [[Computer Vision Mastery: Image Classification, Object Detection & Segmentation]] · [[Natural Language Processing: Text Analysis, Transformers & LLMs with Python]] · [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

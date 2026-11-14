@@ -25,12 +25,14 @@ objectives:
     - args_contains: ballad.txt
     - not:
         args_contains: '-'
-source_file: 03-counting.md
+source_file: courses/reading/03-counting.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/reading/03-counting.md
 teaches:
 - wc
 - wc -l
 - wc -w
-title: 03 Counting
+title: How big is it?
 xp: 20
 ---
 `wc` (*word count*) measures text:

@@ -17,7 +17,9 @@ prerequisites:
 preview: /images/previews/version-bump-workflow.png
 sidebar:
   nav: docs
-source_file: version-bump.md
+source_file: fr/docs/development/version-bump.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/version-bump.md
 tags:
 - version
 - automation
@@ -27,6 +29,7 @@ translated_from_sha: 894bc95d515f
 translation_of: pages/_docs/development/version-bump.md
 translation_source_url: /docs/development/version-bump/
 ---
+
 # Workflow d'incrémentation de version
 
 Le thème utilise les [Conventional Commits](https://www.conventionalcommits.org/) pour déterminer automatiquement les incréments de version :

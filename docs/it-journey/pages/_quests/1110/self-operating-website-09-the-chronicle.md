@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-09-the-chronicle.md
+source_file: pages/_quests/1110/self-operating-website-09-the-chronicle.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/self-operating-website-09-the-chronicle.md
 tags:
 - '1110'
 - bash
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: '.claude/hooks/chronicle.sh — SessionEnd hook: enqueue, do not process.'
+title: 'The Chronicle: A SessionEnd Hook That Remembers'
 ---
+
 *The castle could move now — it could survey its own walls and draw its own map. But every dawn it woke with no memory of the night before. The same wisp of the same agent had walked the same corridors a hundred times, and each time it cost candles, ink, and hours, and not one of those costs was ever written down. A realm that cannot remember what it spent cannot decide what to do next.*
 
 *So you go down to the scriptorium and appoint a Chronicler: a hook that fires the instant a session ends, and writes — quietly, durably, before the lights go out — exactly what just happened. The real-world skill is **observability for autonomous agents**: SessionEnd hooks, an append-only ledger, and the quiet data-corruption trap that lurks in every careless YAML round-trip.*
@@ -95,7 +98,7 @@ In the old stories, a chronicler is not a hero — they are the one who survives
 
 Before the Chronicler can pick up the quill, gather these:
 
-- **Prior chapter:** Complete [The Cartographer](/quests/0101/self-operating-website-08-the-cartographer/) — you should already have a working Claude Code project with a `.claude/` directory and a repo you own.
+- **Prior chapter:** Complete [[it-journey/pages/_quests/0101/self-operating-website-08-the-cartographer|The Cartographer]] — you should already have a working Claude Code project with a `.claude/` directory and a repo you own.
 - **Tools on your machine:**
   - `bash` (the hook is a shell script)
   - [`jq`](https://jqlang.github.io/jq/) for parsing the hook's JSON payload (`brew install jq` / `apt-get install jq`)
@@ -365,8 +368,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- **Next chapter:** [The Bard Forge](/quests/1100/self-operating-website-10-the-bard-forge/) — the realm learns to compose, not just remember.
-- **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/)
+- **Next chapter:** [[it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge|The Bard Forge]] — the realm learns to compose, not just remember.
+- **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -377,6 +380,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Cartographer]] **Next:** [[The Bard Forge]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Cartographer]] **Next:** [[The Bard Forge]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

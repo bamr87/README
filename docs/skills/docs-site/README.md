@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs-site/README.md
+source_repo: microsoft/skills
+source_url: https://github.com/microsoft/skills/blob/main/docs-site/README.md
 title: 'Astro Starter Kit: Minimal'
 ---
 # Astro Starter Kit: Minimal

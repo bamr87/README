@@ -1,5 +1,7 @@
 ---
-source_file: ARCHITECTURE.md
+source_file: docs/ARCHITECTURE.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/ARCHITECTURE.md
 title: Bashcrawl architecture
 ---
 # Bashcrawl architecture

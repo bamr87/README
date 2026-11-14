@@ -57,7 +57,9 @@ rewards:
   - 🌱 Agent Provisioning
   - 🔄 Agent Lifecycle
 skill_focus: devops
-source_file: agentic-multi-agent-lifecycle-management.md
+source_file: pages/_quests/1100/agentic-multi-agent-lifecycle-management.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/agentic-multi-agent-lifecycle-management.md
 sub_title: 'Level 1100 Quest 1/4 — Domain 5: Multi-Agent Systems'
 tags:
 - '1100'
@@ -67,7 +69,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: _data/agents.yml — Agent Lifecycle Registry
+title: 'The Agent Pantheon: Multi-Agent Lifecycle Management'
 validation_criteria:
   completion_requirements:
   - Agent registry documented and maintained in repository
@@ -301,11 +303,11 @@ python3 scripts/validate_quest.py --quest q17
 | 🏛️ Pantheon Keeper Badge | Earned on completion |
 | 🌱 Agent Provisioning | Skill unlocked |
 | 150 XP | Added to Level 1100 total |
-| Unlocks | [Q18: The Autonomy Scales](/quests/1100/agentic-autonomy-levels-matrix/) |
+| Unlocks | [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix\|Q18: The Autonomy Scales]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[When Familiars Fall: Multi-Agent Failure Recovery]] **Unlocks:** [[The Autonomy Scales: Mapping Agent Autonomy Levels]] **Sequel quests:** [[The Autonomy Scales: Mapping Agent Autonomy Levels]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]] **Unlocks:** [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] **Sequel quests:** [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -77,7 +77,9 @@ rewards:
   - Access to advanced Jekyll customization quests
   - Eligibility for web development learning paths
 skill_focus: fullstack
-source_file: github-pages-hidden-gem.md
+source_file: pages/_quests/0011/github-pages-hidden-gem.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/github-pages-hidden-gem.md
 sub_title: 'Level 0011 (3) Quest: Web Publishing and AI Capture Mastery'
 tags:
 - github-pages
@@ -88,8 +90,7 @@ tags:
 - static-sites
 - version-control
 - markdown
-title: 'The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and
-  Conquer AI Realms'
+title: 'Hidden Gem Quest: Publish AI Chats on GitHub Pages'
 validation_criteria:
   completion_requirements:
   - Successfully create and deploy a GitHub Pages site
@@ -494,7 +495,7 @@ This quest advances you from basic GitHub usage to web publishing proficiency, o
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0011 - Development Tools & AI Integration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0011/README|Level 0011 - Development Tools & AI Integration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29642483805
 slice: data-scientist/1100
-source_file: 2026-07-18-data-scientist-1100.md
+source_file: pages/_quest-reports/2026-07-18-data-scientist-1100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-18-data-scientist-1100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-18-data-scientist-1100.md
 tags:
 - data-scientist
 - level-1100
@@ -25,13 +27,14 @@ tags:
 - data-engineering
 theme: Data Engineering
 tier: Master ⚡
-title: 2026 07 18 Data Scientist 1100
+title: Data Scientist · L1100 · 2026-07-18
 verdict: warn
 walk_date: '2026-07-18'
 ---
+
 > **Slice** `data-scientist/1100` · **Level** 1100 (Data Engineering) · **Master ⚡ tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-18
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29642483805) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-18-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-18-data-scientist-1100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29642483805) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-18-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-18-data-scientist-1100.md)
 
 ---
 

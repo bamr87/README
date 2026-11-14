@@ -29,13 +29,15 @@ objectives:
     - option: v
     - arg: member
     - args_contains: ledger.csv
-source_file: 04-cut.md
+source_file: courses/pipelines/04-cut.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/04-cut.md
 teaches:
 - cut
 - -d
 - -f
 - CSV
-title: 04 Cut
+title: Columns with cut
 xp: 30
 ---
 `ledger.csv` is **comma-separated values**: one record per line, with fields split by `,`. The first line is a header that names the fields: `date,member,action,gold`.

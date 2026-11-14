@@ -3,7 +3,7 @@ Fleet registry access.
 
 _data/projects.yml is the source of truth for the set of projects the
 engine describes. repos.txt (the aggregation input) is a generated surface
-regenerated from the registry by `sync`.
+regenerated from the registry by `sync`; the crawl reads the registry directly.
 
 The registry also owns the *navigation contract*: the `navigation:` block
 carries fleet-wide defaults (depth cap, exclusions, section titles) and each
@@ -72,6 +72,7 @@ class NavSpec:
     max_depth: Optional[int] = None
     exclude: List[str] = field(default_factory=list)
     groups: List[NavGroup] = field(default_factory=list)
+    tab: Optional[str] = None
 
 
 @dataclass
@@ -85,6 +86,74 @@ class NavDefaults:
     navigate_hidden: bool = False
     section_titles: Dict[str, str] = field(
         default_factory=lambda: dict(DEFAULT_SECTION_TITLES))
+
+
+@dataclass
+class CollectRules:
+    """What counts as official documentation (`collect:` in the registry).
+
+    A path is collected when it is a tracked Markdown file, is not excluded,
+    or is excluded but matches `include`. Per-project rules extend the
+    fleet-wide ones.
+    """
+
+    exclude: List[str] = field(default_factory=list)
+    include: List[str] = field(default_factory=list)
+    hidden_prefix: str = "dot-"
+
+
+@dataclass
+class BrainConfig:
+    """Rules for the generated notes (`brain:` in the registry)."""
+
+    concept_min_pages: int = 5
+    concept_min_links: int = 3
+    concept_max: int = 150
+    ai_budget: int = 25
+    concept_stop: List[str] = field(default_factory=list)
+    concept_aliases: Dict[str, str] = field(default_factory=dict)
+
+
+def _string_list(raw: Any, where: str) -> List[str]:
+    if raw is None:
+        return []
+    if isinstance(raw, str):
+        return [raw]
+    if not isinstance(raw, list):
+        raise RegistryError(f"{where} must be a list")
+    return [str(item) for item in raw]
+
+
+def _parse_collect(raw: Any, where: str) -> CollectRules:
+    if raw is None:
+        return CollectRules()
+    if not isinstance(raw, dict):
+        raise RegistryError(f"{where} must be a mapping")
+    return CollectRules(
+        exclude=_string_list(raw.get("exclude"), f"{where}.exclude"),
+        include=_string_list(raw.get("include"), f"{where}.include"),
+        hidden_prefix=str(raw.get("hidden_prefix", "dot-")),
+    )
+
+
+def _parse_brain(raw: Any) -> BrainConfig:
+    config = BrainConfig()
+    if raw is None:
+        return config
+    if not isinstance(raw, dict):
+        raise RegistryError("`brain` must be a mapping")
+    for key in ("concept_min_pages", "concept_min_links", "concept_max", "ai_budget"):
+        if raw.get(key) is not None:
+            if not isinstance(raw[key], int) or raw[key] < 0:
+                raise RegistryError(f"`brain.{key}` must be an integer >= 0")
+            setattr(config, key, raw[key])
+    config.concept_stop = [s.lower() for s in
+                           _string_list(raw.get("concept_stop"), "`brain.concept_stop`")]
+    aliases = raw.get("concept_aliases") or {}
+    if not isinstance(aliases, dict):
+        raise RegistryError("`brain.concept_aliases` must be a mapping")
+    config.concept_aliases = {str(k).lower(): str(v).lower() for k, v in aliases.items()}
+    return config
 
 
 def _parse_nav_groups(raw: Any, where: str) -> List[NavGroup]:
@@ -130,6 +199,7 @@ def _parse_nav_spec(raw: Any, where: str) -> NavSpec:
         max_depth=max_depth,
         exclude=[str(p) for p in exclude],
         groups=_parse_nav_groups(raw.get("groups"), f"{where}.nav"),
+        tab=str(raw["tab"]) if raw.get("tab") else None,
     )
 
 
@@ -176,6 +246,7 @@ class Project:
     aggregate: bool = True
     external: bool = False
     nav: NavSpec = field(default_factory=NavSpec)
+    collect: CollectRules = field(default_factory=CollectRules)
 
     @property
     def nav_title(self) -> str:
@@ -198,6 +269,8 @@ class Registry:
     projects: List[Project]
     version: int = 1
     navigation: NavDefaults = field(default_factory=NavDefaults)
+    collect: CollectRules = field(default_factory=CollectRules)
+    brain: BrainConfig = field(default_factory=BrainConfig)
 
     def nav_ordered(self) -> List[Project]:
         """Active projects in sidebar order (`nav.order`, then registry order)."""
@@ -254,11 +327,15 @@ def load_registry(path: Path = REGISTRY_PATH) -> Registry:
             aggregate=bool(merged.get("aggregate", True)),
             external=bool(merged.get("external", False)),
             nav=_parse_nav_spec(merged.get("nav"), f"project {merged['name']!r}"),
+            collect=_parse_collect(merged.get("collect"),
+                                   f"project {merged['name']!r}: `collect`"),
         ))
 
     return Registry(hub=data.get("hub") or {}, projects=projects,
                     version=int(data.get("version", 1)),
-                    navigation=_parse_nav_defaults(data.get("navigation")))
+                    navigation=_parse_nav_defaults(data.get("navigation")),
+                    collect=_parse_collect(data.get("collect"), "`collect`"),
+                    brain=_parse_brain(data.get("brain")))
 
 
 def render_repos_txt(registry: Registry) -> str:

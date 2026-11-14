@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Ability to threat model a design before a single line of code ships
 skill_focus: security
-source_file: threat-modeling.md
+source_file: pages/_quests/1011/threat-modeling.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/threat-modeling.md
 sub_title: 'Level 1011 (11) Quest: Main Quest - Threat Modeling'
 tags:
 - '1011'
@@ -85,7 +87,7 @@ tags:
 - threat-modeling
 - conceptual
 - gamified-learning
-title: Use VS Code with a Mermaid preview extension to diagram in plain text
+title: 'Threat Modeling: STRIDE Framework and Attack Trees Analysis'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Security Fundamentals](/quests/1011/security-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] (recommended)
 - [ ] Ability to describe how a system's components talk to each other
 - [ ] Familiarity with the CIA triad
 
@@ -379,17 +381,17 @@ DoS via query flood            Low          Medium   P3
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Penetration Testing](/quests/1011/penetration-testing/) - Validate threats with real testing
+- 🎯 [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]] - Validate threats with real testing
 
 **Explore Side Adventures**:
-- ⚔️ [Secure Coding Practices](/quests/1011/secure-coding/) - Mitigate the threats you found
-- ⚔️ [Compliance Standards](/quests/1011/compliance-standards/) - Turn the model into evidence
+- ⚔️ [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]] - Mitigate the threats you found
+- ⚔️ [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]] - Turn the model into evidence
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)  
-**🛡️ Security Specialist**: Advance to [Compliance Standards](/quests/1011/compliance-standards/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]]
 
 ## 📚 Resources
 
@@ -418,6 +420,6 @@ DoS via query flood            Low          Medium   P3
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[Penetration Testing: Tools and Ethical Hacking Methodologies]] **Related quests:** [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing: Tools and Ethical Hacking Methodologies]] **Related quests:** [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

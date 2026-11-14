@@ -6,8 +6,11 @@ description: How to contribute to IT-Journey — the five-minute first pull requ
 lastmod: 2026-10-22 00:00:00+00:00
 slug: contributing
 source_file: CONTRIBUTING.md
-title: Contributing to IT-Journey
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/CONTRIBUTING.md
+title: Contributing
 ---
+
 # Contributing to IT-Journey
 
 Thank you for your interest in contributing to IT-Journey! We welcome contributions from developers, content creators, and learners of all experience levels. The user-facing version of this guide is the [contributing page](https://it-journey.dev/about/contributing/) on it-journey.dev.
@@ -43,7 +46,7 @@ Have an idea for a whole new quest? Shape it in the [Quest Idea Forge](https://i
 
 ## Types of Contributions
 
-- **Quests** — write a new quest or improve an existing one under `pages/_quests/` (see the [quest instructions](.github/instructions/quest.instructions.md)).
+- **Quests** — write a new quest or improve an existing one under `pages/_quests/` (see the [quest instructions](dot-github/instructions/quest.instructions.md)).
 - **Notes** — cheatsheets and reference notes under `pages/_notes/`.
 - **Code** — the validation, CMS and quest tooling under `scripts/` and `test/`.
 - **Documentation** — the contributor docs indexed in [docs/README.md](docs/README.md).
@@ -93,10 +96,10 @@ Layout, CSS or JavaScript changes need before/after screenshots in the pull requ
 
 ### For AI Agents
 - **[AGENTS.md](AGENTS.md)** - The canonical instructions every agent reads first
-- **[Contributing Instructions](.github/instructions/contributing.instructions.md)** - How agents assist human contributors
-- **[README Instructions](.github/instructions/README.instructions.md)** - Documentation standards
-- **[Quest Instructions](.github/instructions/quest.instructions.md)** - Quest creation patterns
-- **[Feature Instructions](.github/instructions/features.instructions.md)** - Feature development
+- **[Contributing Instructions](dot-github/instructions/contributing.instructions.md)** - How agents assist human contributors
+- **[README Instructions](dot-github/instructions/README.instructions.md)** - Documentation standards
+- **[Quest Instructions](dot-github/instructions/quest.instructions.md)** - Quest creation patterns
+- **[Feature Instructions](dot-github/instructions/features.instructions.md)** - Feature development
 
 ### Reference
 - **[Jekyll Implementation](docs/architecture/JEKYLL_IMPLEMENTATION.md)** - Jekyll details

@@ -6,12 +6,15 @@ date: 2026-01-25 03:38:33+00:00
 description: 'Coding conventions for contributing to Zer0-Mistakes: naming, formatting,
   Liquid and SCSS idioms, and the consistency rules enforced in review.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: code-style.md
+source_file: docs/development/code-style.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/code-style.md
 tags:
 - development
 - contributing
 title: Code Style Guide
 ---
+
 # Code Style Guide
 
 Coding conventions and best practices for contributing to the Zer0-Mistakes theme.

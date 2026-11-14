@@ -29,7 +29,9 @@ quest_series: Quest Templates
 quest_type: template
 skill_focus:
 - template
-source_file: level-readme-template.md
+source_file: pages/_quests/templates/level-readme-template.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/templates/level-readme-template.md
 tags:
 - BINARY
 - theme-tag

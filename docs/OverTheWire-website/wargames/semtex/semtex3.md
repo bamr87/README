@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 3
-source_file: semtex3.md
+source_file: wargames/semtex/semtex3.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex3.md
 title: Semtex3
 ---
 Number-Lock Action

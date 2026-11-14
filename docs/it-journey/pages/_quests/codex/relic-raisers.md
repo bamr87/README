@@ -88,7 +88,9 @@ rewards:
   - A portfolio repository that revives a real legacy program without losing what
     it knows
 skill_focus: backend
-source_file: relic-raisers.md
+source_file: pages/_quests/codex/relic-raisers.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/relic-raisers.md
 tags:
 - '1110'
 - cobol
@@ -99,7 +101,7 @@ tags:
 - strangler-fig
 - project-based
 - gamified-learning
-title: cobc (GnuCOBOL) 3.1.2.0
+title: 'Epic Quest: The Relic Raisers'
 validation_criteria:
   completion_requirements:
   - All seven chapters completed and the Plausible Ghost defeated
@@ -164,13 +166,13 @@ Play them in order; each unlocks the next, and the whole campaign runs through t
 
 | # | Chapter | Level | Difficulty | XP | Class | What you make |
 |---|---|---|---|---|---|---|
-| I | [The Dig Site](/quests/0011/relic-raisers-01-the-dig-site/) | `0011` | 🟢 Easy | 50 | 🧙 Wizard | The relic compiled and running, plus your first field notes |
-| II | [The Strata](/quests/0110/relic-raisers-02-the-strata/) | `0110` | 🟡 Medium | 75 | 📚 Librarian | A data dictionary the data itself confirmed, and a dated strata map |
-| III | [The Elders](/quests/1111/relic-raisers-03-the-elders/) | `1111` | 🟡 Medium | 75 | 📜 Sage | Decision records with evidence, recovered from people and comments |
-| IV | [The Gauntlet of Trials](/quests/0101/relic-raisers-04-the-gauntlet-of-trials/) | `0101` | 🔴 Hard | 100 | ⚙️ Artificer | Golden-master trials, a summoning circle, and a Factory run |
-| V | [The Rosetta Ledger](/quests/1100/relic-raisers-05-the-rosetta-ledger/) | `1100` | 🔴 Hard | 120 | 🧙 Wizard | A Python port and the reconciliation that proves it — 🐉 boss |
-| VI | [The Strangler Fig](/quests/0111/relic-raisers-06-the-strangler-fig/) | `0111` | 🔴 Hard | 120 | 🧙 Wizard | An HTTP gate with relic, shadow, and port routing |
-| VII | [Write for the Archaeologist](/quests/1110/relic-raisers-07-write-for-the-archaeologist/) | `1110` | ⚔️ Epic | 150 | 🛡️ Paladin | The map, the runbook, the roadmap, and the verify script |
+| I | [[it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site\|The Dig Site]] | `0011` | 🟢 Easy | 50 | 🧙 Wizard | The relic compiled and running, plus your first field notes |
+| II | [[it-journey/pages/_quests/0110/relic-raisers-02-the-strata\|The Strata]] | `0110` | 🟡 Medium | 75 | 📚 Librarian | A data dictionary the data itself confirmed, and a dated strata map |
+| III | [[it-journey/pages/_quests/1111/relic-raisers-03-the-elders\|The Elders]] | `1111` | 🟡 Medium | 75 | 📜 Sage | Decision records with evidence, recovered from people and comments |
+| IV | [[it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials\|The Gauntlet of Trials]] | `0101` | 🔴 Hard | 100 | ⚙️ Artificer | Golden-master trials, a summoning circle, and a Factory run |
+| V | [[it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger\|The Rosetta Ledger]] | `1100` | 🔴 Hard | 120 | 🧙 Wizard | A Python port and the reconciliation that proves it — 🐉 boss |
+| VI | [[it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig\|The Strangler Fig]] | `0111` | 🔴 Hard | 120 | 🧙 Wizard | An HTTP gate with relic, shadow, and port routing |
+| VII | [[it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist\|Write for the Archaeologist]] | `1110` | ⚔️ Epic | 150 | 🛡️ Paladin | The map, the runbook, the roadmap, and the verify script |
 
 > 🐉 **Boss gate.** The Plausible Ghost haunts Chapter V. You cannot pass to the Strangler Fig until your port's ledger ties out against the relic on every line — the familiar's first translation will not, and finding out why is the fight.
 
@@ -224,7 +226,7 @@ This campaign was authored from a working lab, not from a manifest of merged pul
 
 1. The `epic_quest` hub (this file) lives at `pages/_quests/codex/relic-raisers.md`. Each chapter is a `main_quest` in its **binary-level** directory (`pages/_quests/XXXX/relic-raisers-NN-<slug>.md`) with a `/quests/XXXX/<slug>/` permalink, so it also surfaces on that level's hub.
 2. Chapters chain via `quest_dependencies.recommended_quests` / `unlocks_quests`; the hub `unlocks_quests` every chapter.
-3. The campaign coins eight terms — archaeology, relic-raising, strata, the Elders, the Rosetta Ledger, the Strangler Fig, characterization trials, and the Plausible Ghost — all landed in the [Codex Glossary](/quests/codex/glossary/) in the same change, per the scribes' law.
+3. The campaign coins eight terms — archaeology, relic-raising, strata, the Elders, the Rosetta Ledger, the Strangler Fig, characterization trials, and the Plausible Ghost — all landed in the [[it-journey/pages/_quests/codex/glossary|Codex Glossary]] in the same change, per the scribes' law.
 4. Badges are free-text `rewards.badges`; XP per chapter is `rewards.progression_points`.
 
 ## 🗺️ Campaign Map
@@ -264,9 +266,9 @@ graph TD
 
 ## 🔮 Next Adventures
 
-- 🏺 Begin the campaign: [Chapter I — The Dig Site](/quests/0011/relic-raisers-01-the-dig-site/)
-- 🤖 Sibling campaign: [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — build and govern the familiars you will command here
-- 🏰 Sibling campaign: [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/) — the same verify-before-trust discipline, applied to a site that runs itself
+- 🏺 Begin the campaign: [[it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site|Chapter I — The Dig Site]]
+- 🤖 Sibling campaign: [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — build and govern the familiars you will command here
+- 🏰 Sibling campaign: [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] — the same verify-before-trust discipline, applied to a site that runs itself
 
 ## 📚 Resource Codex
 
@@ -285,6 +287,6 @@ graph TD
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Overworld:** [[🏰 Overworld - Master Quest Map]] **Chapters:** [[The Dig Site: Unearth the Relic and Name What You Do Not Know]] · [[The Strata: Read the Copybook, Then Let the Data Testify]] · [[The Elders: Recover the Reasons Before They Retire]] · [[The Gauntlet of Trials: Pin the Relic Before You Touch It]] · [[The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] · [[The Strangler Fig: Put a Modern Gate in Front of the Relic]] · [[Write for the Archaeologist: Leave the Lore Where the Next One Digs]] **Siblings:** [[Epic Quest: The Agentic Codex]] · [[Epic Quest: The Self-Operating Website]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Chapters:** [[it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site|The Dig Site: Unearth the Relic and Name What You Do Not Know]] · [[it-journey/pages/_quests/0110/relic-raisers-02-the-strata|The Strata: Read the Copybook, Then Let the Data Testify]] · [[it-journey/pages/_quests/1111/relic-raisers-03-the-elders|The Elders: Recover the Reasons Before They Retire]] · [[it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials|The Gauntlet of Trials: Pin the Relic Before You Touch It]] · [[it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger|The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] · [[it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig|The Strangler Fig: Put a Modern Gate in Front of the Relic]] · [[it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist|Write for the Archaeologist: Leave the Lore Where the Next One Digs]] **Siblings:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] · [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

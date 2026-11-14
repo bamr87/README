@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/responsive-documentation-card-grid/
 preview: /images/previews/build-a-responsive-documentation-card-grid.png
-source_file: 2026-04-28-responsive-documentation-card-grid.md
+source_file: fr/posts/tutorial/2026-04-28-responsive-documentation-card-grid.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/tutorial/2026-04-28-responsive-documentation-card-grid.md
 tags:
 - css
 - bootstrap
 - documentation
 - responsive-design
-title: 2026 04 28 Responsive Documentation Card Grid
+title: Créer une grille de cartes de documentation responsive
 translated_from_sha: dc8038417e38
 translation_of: pages/_posts/tutorial/2026-04-28-responsive-documentation-card-grid.md
 translation_source_url: /posts/2026/04/28/responsive-documentation-card-grid/
 ---
+
 Les index de documentation doivent être faciles à parcourir. Une grille de cartes responsive convient bien lorsque les lecteurs ont besoin de comparer des guides, d'accéder à un sujet ou de découvrir des ressources connexes.
 
 Ce tutoriel construit une grille simple qui fonctionne avec du HTML et du CSS simples, puis montre comment l'adapter aux utilitaires Bootstrap.

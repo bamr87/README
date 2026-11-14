@@ -11,13 +11,16 @@ permalink: /docs/customization/navigation/
 preview: /images/previews/navigation.png
 sidebar:
   nav: docs
-source_file: navigation.md
+source_file: pages/_docs/customization/navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/navigation.md
 tags:
 - navigation
 - menus
 - sidebar
 title: Navigation
 ---
+
 # Navigation
 
 Configure the navigation menus and sidebars for your site.
@@ -207,6 +210,6 @@ Show navigation items based on conditions:
 
 ## See also
 
-- [[Customization]]
-- [[Sidebar Navigation System]]
-- [[Breadcrumbs Navigation]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]
+- [[zer0-CMS/sites/zer0-pages/pages/_docs/features/breadcrumbs|Breadcrumbs Navigation]]

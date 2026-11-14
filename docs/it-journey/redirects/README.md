@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: redirects/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/redirects/README.md
 title: redirects/
 ---
 # redirects/

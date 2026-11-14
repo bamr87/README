@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: donate.md
-title: Donate
+source_file: information/donate.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/donate.md
+title: Donating
 ---
+
 Donating
 ========
 

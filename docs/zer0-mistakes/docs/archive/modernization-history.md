@@ -6,7 +6,9 @@ date: 2025-11-25 00:00:00+00:00
 description: History of the three-phase refactoring that replaced monolithic release
   scripts with a modular library architecture and simplified CLI.
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: modernization-history.md
+source_file: docs/archive/modernization-history.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/archive/modernization-history.md
 tags:
 - archive
 - systems
@@ -14,6 +16,7 @@ tags:
 - release-automation
 title: Release Automation Modernization History
 ---
+
 # Release Automation Modernization History
 
 > **Context**: This document preserves the history of a three-phase refactoring effort (Nov–Dec 2025) that replaced three overlapping, 1,100-line-plus monolithic release scripts with a modular library architecture and a single canonical `scripts/bin/release` command. For the current system, see [docs/systems/release-automation.md](../systems/release-automation.md).

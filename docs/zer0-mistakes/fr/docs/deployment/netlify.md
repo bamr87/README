@@ -18,7 +18,9 @@ prerequisites:
 preview: /images/previews/deploy-to-netlify.png
 sidebar:
   nav: docs
-source_file: netlify.md
+source_file: fr/docs/deployment/netlify.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/deployment/netlify.md
 tags:
 - deployment
 - netlify
@@ -29,6 +31,7 @@ translated_from_sha: c5996bf99001
 translation_of: pages/_docs/deployment/netlify.md
 translation_source_url: /docs/deployment/netlify/
 ---
+
 # Déployer sur Netlify
 
 > Déployez votre site Jekyll sur Netlify avec un déploiement continu depuis GitHub.
@@ -254,11 +257,11 @@ Si HTTPS ne fonctionne pas :
 
 ## Étapes suivantes
 
-- [Configuration d'un domaine personnalisé](/docs/deployment/custom-domain/)
-- [En-têtes de sécurité](/docs/development/security/) — Renforcez votre site
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Configuration d'un domaine personnalisé]]
+- [[zer0-mistakes/pages/_docs/development/security|En-têtes de sécurité]] — Renforcez votre site
 
 ## Voir aussi
 
-- [[Deployment]]
-- [[Deploy to GitHub Pages]]
-- [[Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]

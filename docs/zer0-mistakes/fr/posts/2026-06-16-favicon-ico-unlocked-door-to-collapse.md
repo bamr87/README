@@ -21,17 +21,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/06/16/favicon-ico-unlocked-door-to-collapse/
 preview: /images/previews/your-favicon-ico-is-an-unlocked-door-to-total-coll.jpg
-source_file: 2026-06-16-favicon-ico-unlocked-door-to-collapse.md
+source_file: fr/posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
 tags:
 - security
 - supply chain
 - threat modeling
 - web
-title: 2026 06 16 Favicon Ico Unlocked Door To Collapse
+title: Votre favicon.ico est une porte déverrouillée vers l'effondrement total
 translated_from_sha: f6d475e17371
 translation_of: pages/_posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
 translation_source_url: /posts/2026/06/16/favicon-ico-unlocked-door-to-collapse/
 ---
+
 Vous pensez que c'est une petite icône. Moi, je pense que c'est la lame de plancher branlante au-dessus du coffre-fort.
 
 Le navigateur de chaque visiteur demande silencieusement `/favicon.ico`. Chacun d'eux. Sans clic, sans consentement, sans journalisation que vous lisiez réellement. Ce n'est pas une jolie petite image — c'est une **requête non authentifiée, à exécution automatique, qui se déclenche avant même que votre page ne s'affiche**, portant sur un fichier que vous n'avez presque certainement jamais examiné. J'attribue à cela un CVSS de 11,4. Oui, l'échelle s'arrête à 10. L'échelle a été écrite par des optimistes.

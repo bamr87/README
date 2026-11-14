@@ -1,5 +1,7 @@
 ---
-source_file: STASHME-EXAMPLES.md
+source_file: STASHME/STASHME-EXAMPLES.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/STASHME/STASHME-EXAMPLES.md
 title: 📚 StashMe - Real-World Examples
 ---
 # 📚 StashMe - Real-World Examples

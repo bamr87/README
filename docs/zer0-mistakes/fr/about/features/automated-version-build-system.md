@@ -17,7 +17,9 @@ machine_translated: true
 permalink: /fr/about/features/automated-version-build-system/
 preview: /images/previews/automated-version-build-system.png
 snippet: null
-source_file: automated-version-build-system.md
+source_file: fr/about/features/automated-version-build-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/automated-version-build-system.md
 sub-title: Publications sans clic avec validation complète
 tags:
 - Automation
@@ -29,11 +31,12 @@ tags:
 - DRY
 - KIS
 - AIPD
-title: Semantic versioning with validation
+title: Système de build de versions automatisé
 translated_from_sha: e093558c8a5e
 translation_of: pages/_about/features/automated-version-build-system.md
 translation_source_url: /about/features/automated-version-build-system/
 ---
+
 ## 🚀 Vue d'ensemble du système
 
 Un écosystème d'automatisation prêt pour la production qui incarne tous les principes fondamentaux d'IT-Journey (**DFF**, **DRY**, **KIS**, **REnO**, **MVP**, **COLAB**, **AIPD**) pour gérer l'intégralité du cycle de vie du développement de thèmes Jekyll, du développement local à la publication sur RubyGems.

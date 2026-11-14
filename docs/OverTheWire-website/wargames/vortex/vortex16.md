@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 16
-source_file: vortex16.md
+source_file: wargames/vortex/vortex16.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex16.md
 title: Vortex16
 ---
 The BOFH

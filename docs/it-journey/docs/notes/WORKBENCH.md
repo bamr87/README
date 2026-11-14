@@ -1,5 +1,7 @@
 ---
-source_file: WORKBENCH.md
+source_file: docs/notes/WORKBENCH.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/notes/WORKBENCH.md
 title: Notes Workbench — the design
 ---
 # Notes Workbench — the design

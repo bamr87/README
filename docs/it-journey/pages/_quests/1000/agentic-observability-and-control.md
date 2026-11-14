@@ -56,7 +56,9 @@ rewards:
   skills_unlocked:
   - 👁️ Agent Tracing & Audit
 skill_focus: devops
-source_file: agentic-observability-and-control.md
+source_file: pages/_quests/1000/agentic-observability-and-control.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/agentic-observability-and-control.md
 sub_title: 'Level 1000 Quest 1/4 — Domain 1: Agent Architecture & SDLC'
 tags:
 - '1000'
@@ -66,7 +68,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: .github/workflows/agent-with-tracing.yml
+title: 'The All-Seeing Eye: Observability for AI Agents'
 validation_criteria:
   completion_requirements:
   - GitHub Actions workflow configured to capture agent execution traces
@@ -325,19 +327,19 @@ python3 scripts/validate_quest.py --quest q3
 | 🔭 Observability Warden Badge | Earned on completion |
 | 👁️ Agent Tracing & Audit | Skill unlocked |
 | 80 XP | Added to Level 1000 total |
-| Unlocks | [Q4: Forging the Agent's Arsenal](/quests/1000/agentic-tool-selection-and-permissions/) |
+| Unlocks | [[it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions\|Q4: Forging the Agent's Arsenal]] |
 
 ---
 
 ## 🔗 Continue Your Journey
 
-- **Next quest:** [Q4: Forging the Agent's Arsenal](/quests/1000/agentic-tool-selection-and-permissions/) — Domain 2 begins
-- **Codex chapter:** [Initiation Rites: Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/)
-- **Related note:** [Evaluation Signals Table](/notes/gh-600/evaluation-signals-table/)
+- **Next quest:** [[it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions|Q4: Forging the Agent's Arsenal]] — Domain 2 begins
+- **Codex chapter:** [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Initiation Rites: Agents in the SDLC]]
+- **Related note:** [[it-journey/pages/_notes/gh-600/evaluation-signals-table|Evaluation Signals Table]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Three Sigils: Plan, Reason, Act]] **Unlocks:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Sequel quests:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1000/README|Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]] **Unlocks:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Sequel quests:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

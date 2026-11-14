@@ -7,9 +7,12 @@ permalink: /series/ulysses/12-cyclops/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 12-cyclops.md
-title: 12 Cyclops
+source_file: examples/swerve-of-shore/pages/series/ulysses/12-cyclops.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/12-cyclops.md
+title: 12 · Cyclops
 ---
+
 {% include page-header.html %}
 
 Episode 12 of *Ulysses*. 5pm, Barney Kiernan's pub.

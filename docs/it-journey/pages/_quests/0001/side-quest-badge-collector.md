@@ -50,7 +50,9 @@ rewards:
   - 🏅 Badge Collector — Curated a pinned badge showcase
   progression_points: 75
 skill_focus: devops
-source_file: side-quest-badge-collector.md
+source_file: pages/_quests/0001/side-quest-badge-collector.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/side-quest-badge-collector.md
 tags:
 - '0001'
 - contributor
@@ -59,7 +61,7 @@ tags:
 - yaml
 - gamified-learning
 - hands-on
-title: '🏅 Badge Collector: Showcasing Your Achievements'
+title: 'Badge Collector: Showcasing Your Achievements'
 validation_criteria:
   completion_requirements:
   - badges_pinned array has 1-3 valid badge IDs
@@ -123,7 +125,7 @@ Badges include an `earned_on` date that's preserved across regeneration — your
 
 ### Step 1: Check Your Current Badges
 
-`_data/contributors/YOUR_USERNAME.yml` is created by the **[Forge Your Character](/quests/0001/forge-your-character/)** prerequisite quest and kept up to date by the stats generator — you don't create it here; run the generator (or check your data file after it's been auto-updated):
+`_data/contributors/YOUR_USERNAME.yml` is created by the **[[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character]]** prerequisite quest and kept up to date by the stats generator — you don't create it here; run the generator (or check your data file after it's been auto-updated):
 
 ```bash
 make contributor-stats USERNAME=YOUR_USERNAME
@@ -198,7 +200,7 @@ Once you've pinned at least one badge to your Featured section, you've earned th
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Avatar Forge: Crafting Your Digital Portrait]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[it-journey/pages/_quests/0001/side-quest-avatar-forge|Avatar Forge: Crafting Your Digital Portrait]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

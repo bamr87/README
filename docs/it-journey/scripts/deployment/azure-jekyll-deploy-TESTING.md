@@ -1,5 +1,7 @@
 ---
-source_file: azure-jekyll-deploy-TESTING.md
+source_file: scripts/deployment/azure-jekyll-deploy-TESTING.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/deployment/azure-jekyll-deploy-TESTING.md
 title: Azure Jekyll Deploy Testing
 ---
 ## Testing Checklist

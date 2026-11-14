@@ -1,5 +1,7 @@
 ---
 source_file: CLAUDE.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/CLAUDE.md
 title: CLAUDE.md
 ---
 # CLAUDE.md
@@ -17,7 +19,7 @@ Zer0-Mistakes is a Docker-first Jekyll theme published as the Ruby gem `jekyll-t
 This repo uses a layered guidance model — load only the layers matching the files you touch:
 
 - [`AGENTS.md`](./AGENTS.md) — cross-tool entry point and operating rules.
-- [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) — canonical detailed conventions (architecture, commit/release workflow).
+- [`.github/copilot-instructions.md`](./dot-github/copilot-instructions.md) — canonical detailed conventions (architecture, commit/release workflow).
 - `.github/instructions/*.instructions.md` — file-scoped rules; each file has
 an `applyTo:` glob in its front matter (layouts, includes, scripts, install, obsidian, sass, testing, documentation, version-control, backlog, content-review, ai-chat). Read the matching file before editing those paths.
 - `.github/prompts/*.prompt.md` — reusable multi-step workflows
@@ -29,13 +31,13 @@ GitHub issues. `/repo-audit` triages all open issues into `_data/backlog.yml` (`
 - **AI content reviewer** — reviews content PRs (Markdown under `pages/**`) for
 SEO, consistency, polish, accessibility, and accuracy. Two tiers: `scripts/content-review.rb` (deterministic, per-collection thresholds from `.github/config/content_review.yml`) and the `.claude/agents/content-reviewer.md` Claude Code agent, run on PRs by `.github/workflows/ai-content-review.yml`. Skill: `.github/skills/content-review/`.
 - **AI chat assistant** — opt-in Claude-powered chat widget grounded in the
-current page, with GitHub issue/PR tools and a dev-only local page-edit mode. Widget: `_includes/components/ai-chat.html` + `assets/js/ai-chat.js`; proxy: `templates/deploy/chat-proxy/` (Cloudflare Worker + Node dev proxy), deployed by `.github/workflows/deploy-chat-proxy.yml`. Governed by [`ai-chat.instructions.md`](./.github/instructions/ai-chat.instructions.md).
+current page, with GitHub issue/PR tools and a dev-only local page-edit mode. Widget: `_includes/components/ai-chat.html` + `assets/js/ai-chat.js`; proxy: `templates/deploy/chat-proxy/` (Cloudflare Worker + Node dev proxy), deployed by `.github/workflows/deploy-chat-proxy.yml`. Governed by [`ai-chat.instructions.md`](./dot-github/instructions/ai-chat.instructions.md).
 - **Site Builder** — the Claude-guided setup wizard at `/setup/` (and on the
-`welcome` layout): nine steps from prerequisites to a written, running site. Form + generators: `_includes/setup/wizard.html` + `assets/js/setup-wizard.js` (pure client-side, GitHub Pages-safe); Claude session: `_includes/setup/claude-session.html` + `assets/js/site-builder.js`, proxy-only via the dev proxy's `/api/wizard/*` routes, which exist only in `templates/deploy/chat-proxy/dev-proxy.mjs` and are bounded by `wizard-store.mjs` (fixed check table, read-only theme source, scaffold into a new folder under `WIZARD_TARGET_ROOT`, fixed `docker compose` actions). Catalogs and the framework brief live in `_data/site_builder.yml`; config under `site_builder:`. Governed by [`ai-chat.instructions.md`](./.github/instructions/ai-chat.instructions.md) §9; docs at `pages/_docs/features/site-builder.md`.
+`welcome` layout): nine steps from prerequisites to a written, running site. Form + generators: `_includes/setup/wizard.html` + `assets/js/setup-wizard.js` (pure client-side, GitHub Pages-safe); Claude session: `_includes/setup/claude-session.html` + `assets/js/site-builder.js`, proxy-only via the dev proxy's `/api/wizard/*` routes, which exist only in `templates/deploy/chat-proxy/dev-proxy.mjs` and are bounded by `wizard-store.mjs` (fixed check table, read-only theme source, scaffold into a new folder under `WIZARD_TARGET_ROOT`, fixed `docker compose` actions). Catalogs and the framework brief live in `_data/site_builder.yml`; config under `site_builder:`. Governed by [`ai-chat.instructions.md`](./dot-github/instructions/ai-chat.instructions.md) §9; docs at `pages/_docs/features/site-builder.md`.
 - **Page-feedback widget** — the "Improve this page" capture flow: a runtime
 modal + global FAB turn a reader's report (request type + description + live page context + a captured console/error log buffer) into a well-formed, correctly-**labeled** GitHub issue. Base layer is a token-free `issues/new` prefill (GitHub Pages-safe); an optional AI layer sends the capture to Claude via the chat proxy's `/api/feedback` route (Claude Code OAuth) to clarify, vet, prioritize, and recommend before filing. Widget: `_includes/components/page-feedback.html` + `assets/js/page-feedback.js` + `_includes/core/console-capture.html`; request types in `_data/feedback_types.yml`; config under `page_feedback:` in `_config.yml`. Replaces the old build-time Copilot dropdown (which could not capture logs).
 - **Multilingual translation pipeline** — English (`pages/**`,
-`_data/ui-text.yml` `en`) is the only human-maintained language; alternates (`fr/**`, `_data/i18n/**`) are GENERATED by `scripts/translate.rb` (Claude Code OAuth) via `.github/workflows/translate.yml` (dispatch `mode=full` bulk job + incremental on content pushes; output lands as a `chore/i18n-translations` PR). Never hand-edit generated translations. Frontend: `_includes/components/language-toggle.html`, `_includes/core/{i18n,hreflang}.html`. Governed by [`translation.instructions.md`](./.github/instructions/translation.instructions.md); see [`docs/systems/multilingual-translation.md`](./docs/systems/multilingual-translation.md).
+`_data/ui-text.yml` `en`) is the only human-maintained language; alternates (`fr/**`, `_data/i18n/**`) are GENERATED by `scripts/translate.rb` (Claude Code OAuth) via `.github/workflows/translate.yml` (dispatch `mode=full` bulk job + incremental on content pushes; output lands as a `chore/i18n-translations` PR). Never hand-edit generated translations. Frontend: `_includes/components/language-toggle.html`, `_includes/core/{i18n,hreflang}.html`. Governed by [`translation.instructions.md`](./dot-github/instructions/translation.instructions.md); see [`docs/systems/multilingual-translation.md`](./docs/systems/multilingual-translation.md).
 - **Giscus comment conversations** — comments are GitHub Discussions (config:
 `_config.yml` `giscus:` block; include: `_includes/content/giscus.html`). `scripts/bin/giscus-discussions` (gh GraphQL) can list/read/draft/seed/post, driven by the `giscus-conversation` skill (`.github/skills/giscus-conversation/`). Read-only digest workflow: `.github/workflows/giscus-digest.yml`.
 - **Theme propagation** — how a release reaches the ~5 downstream sites built on

@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - The quest-perfection engine — the loop that maintains this realm's own quests
 skill_focus: devops
-source_file: ouroboros-loop.md
+source_file: pages/_quests/codex/ouroboros-loop.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/ouroboros-loop.md
 tags:
 - '1110'
 - github-actions
@@ -82,7 +84,7 @@ tags:
 - ci-cd
 - loops
 - gamified-learning
-title: '1. On a machine logged into Claude Code, mint an OAuth token:'
+title: 'Epic Quest: The Ouroboros Loop'
 validation_criteria:
   completion_requirements:
   - All seven chapters completed and the boss fight survived
@@ -97,7 +99,7 @@ validation_criteria:
 ---
 *A serpent that eats its own tail is a warning in most realms. In the Factory it is a blueprint. This campaign teaches you to forge the Ouroboros Loop — an automation cycle that tests its own scrolls, repairs exactly what it witnessed break, merges the repair behind deterministic gates, and begins again — until the ledger says **perfect**.*
 
-*This is a sequel to **[Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/)**. There you taught a castle to propose its own changes. Here you close the circle: the loop no longer just proposes — it verifies, repairs, and merges, while every dangerous decision stays chained to a deterministic gate a model cannot sweet-talk. The campaign is reverse-engineered from the real quest-perfection engine that maintains this realm's own curriculum, and every chapter cites the true battle: the startup failure, the forged evidence, the mana drought, and the warden who deadlocked watching himself.*
+*This is a sequel to **[[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]]**. There you taught a castle to propose its own changes. Here you close the circle: the loop no longer just proposes — it verifies, repairs, and merges, while every dangerous decision stays chained to a deterministic gate a model cannot sweet-talk. The campaign is reverse-engineered from the real quest-perfection engine that maintains this realm's own curriculum, and every chapter cites the true battle: the startup failure, the forged evidence, the mana drought, and the warden who deadlocked watching himself.*
 
 ## 📖 The Legend Behind This Quest
 
@@ -133,7 +135,7 @@ You will know you have mastered this campaign when you can:
 | **Tier** | ⚡ Master `1110` capstone — chapters span 🌱 Apprentice → ⚡ Master |
 | **Total XP** | ~990 XP across 7 chapters + this hub |
 | **Primary classes** | ⚙️ Artificer (DevOps) · 🧙 Wizard (Developer) · 🗡️ Rogue (Security) |
-| **Prerequisites** | Git + GitHub Actions basics; the [Self-Operating Website](/quests/codex/self-operating-website/) epic is the natural prequel |
+| **Prerequisites** | Git + GitHub Actions basics; the [[it-journey/pages/_quests/codex/self-operating-website\|Self-Operating Website]] epic is the natural prequel |
 | **Boss** | 🐉 The Self-Grading Golem (an agent that writes its own trial results) |
 | **Source build** | `bamr87/it-journey` — the live quest-perfection engine (see the Build Ledger below) |
 
@@ -143,13 +145,13 @@ Play them in order; each unlocks the next. The chapters live at their **difficul
 
 | # | Chapter | Level | Difficulty | XP | Class | Reference PRs |
 |---|---|---|---|---|---|---|
-| I | [The First Turn](/quests/0000/ouroboros-loop-01-the-first-turn/) | `0000` | 🟢 Easy | 50 | ⚙️ Artificer | your own repo |
-| II | [The Warden's Gate](/quests/0101/ouroboros-loop-02-the-wardens-gate/) | `0101` | 🟡 Medium | 75 | ⚙️ Artificer | #422 |
-| III | [Summon the Golem](/quests/0011/ouroboros-loop-03-summon-the-golem/) | `0011` | 🟡 Medium | 75 | 🧙 Wizard | #421 |
-| IV | [The Sealed Evidence](/quests/1011/ouroboros-loop-04-the-sealed-evidence/) | `1011` | 🔴 Hard | 120 | 🗡️ Rogue | 🐉 #433 |
-| V | [The Mana Ledger](/quests/1010/ouroboros-loop-05-the-mana-ledger/) | `1010` | 🔴 Hard | 120 | ⚙️ Artificer | #438 |
-| VI | [The Fixer's Oath](/quests/1101/ouroboros-loop-06-the-fixers-oath/) | `1101` | 🔴 Hard | 150 | 🧙 Wizard | #445 |
-| VII | [Weaving the Whole](/quests/1110/ouroboros-loop-07-weaving-the-whole/) | `1110` | ⚔️ Epic | 200 | ⚙️ Artificer | #441 · #444 |
+| I | [[it-journey/pages/_quests/0000/ouroboros-loop-01-the-first-turn\|The First Turn]] | `0000` | 🟢 Easy | 50 | ⚙️ Artificer | your own repo |
+| II | [[it-journey/pages/_quests/0101/ouroboros-loop-02-the-wardens-gate\|The Warden's Gate]] | `0101` | 🟡 Medium | 75 | ⚙️ Artificer | #422 |
+| III | [[it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem\|Summon the Golem]] | `0011` | 🟡 Medium | 75 | 🧙 Wizard | #421 |
+| IV | [[it-journey/pages/_quests/1011/ouroboros-loop-04-the-sealed-evidence\|The Sealed Evidence]] | `1011` | 🔴 Hard | 120 | 🗡️ Rogue | 🐉 #433 |
+| V | [[it-journey/pages/_quests/1010/ouroboros-loop-05-the-mana-ledger\|The Mana Ledger]] | `1010` | 🔴 Hard | 120 | ⚙️ Artificer | #438 |
+| VI | [[it-journey/pages/_quests/1101/ouroboros-loop-06-the-fixers-oath\|The Fixer's Oath]] | `1101` | 🔴 Hard | 150 | 🧙 Wizard | #445 |
+| VII | [[it-journey/pages/_quests/1110/ouroboros-loop-07-weaving-the-whole\|Weaving the Whole]] | `1110` | ⚔️ Epic | 200 | ⚙️ Artificer | #441 · #444 |
 
 > 🐉 **Boss gate.** The Self-Grading Golem stands inside Chapter IV. You cannot pass to the Mana Ledger until your evidence survives an agent that tries to rewrite it — and your seal proves it did.
 
@@ -232,10 +234,10 @@ Every chapter's **🔁 Reproduce It** section cites the real merged pull request
 
 ## 🔮 Next Adventures
 
-- 🎯 Begin the campaign: [Chapter I — The First Turn](/quests/0000/ouroboros-loop-01-the-first-turn/)
-- 👑 The prequel: [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/)
-- 🤖 Sibling campaign: [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
-- 📖 The lexicon this campaign speaks: [Codex Glossary](/quests/codex/glossary/)
+- 🎯 Begin the campaign: [[it-journey/pages/_quests/0000/ouroboros-loop-01-the-first-turn|Chapter I — The First Turn]]
+- 👑 The prequel: [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]]
+- 🤖 Sibling campaign: [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
+- 📖 The lexicon this campaign speaks: [[it-journey/pages/_quests/codex/glossary|Codex Glossary]]
 
 ## 📚 Resource Codex
 
@@ -253,6 +255,6 @@ Every chapter's **🔁 Reproduce It** section cites the real merged pull request
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Overworld:** [[🏰 Overworld - Master Quest Map]] **Prequel:** [[Epic Quest: The Self-Operating Website]] **Chapters:** [[The First Turn]] · [[The Warden's Gate]] · [[Summon the Golem]] · [[The Sealed Evidence]] · [[The Mana Ledger]] · [[The Fixer's Oath]] · [[Weaving the Whole]] **Lexicon:** [[Codex Glossary: Fantasy Terms to IT Reality]]
+**Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prequel:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Chapters:** [[The First Turn]] · [[The Warden's Gate]] · [[Summon the Golem]] · [[The Sealed Evidence]] · [[The Mana Ledger]] · [[The Fixer's Oath]] · [[Weaving the Whole]] **Lexicon:** [[it-journey/pages/_quests/codex/glossary|Codex Glossary: Fantasy Terms to IT Reality]]

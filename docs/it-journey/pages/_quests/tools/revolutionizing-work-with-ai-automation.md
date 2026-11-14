@@ -32,14 +32,16 @@ primary_technology: AI Automation
 quest_series: Tools Collection
 quest_type: main_quest
 skill_focus: devops
-source_file: revolutionizing-work-with-ai-automation.md
+source_file: pages/_quests/tools/revolutionizing-work-with-ai-automation.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/revolutionizing-work-with-ai-automation.md
 tags:
 - AI Automation
 - Best Practices
 - Code Review
 - GitHub Copilot
 - OpenAI API
-title: Revolutionizing Work With Ai Automation
+title: Revolutionizing Work with AI Automation
 ---
 **Ah, the final frontier... the arcane fusion of human cleverness and artificial intelligence.** You've set up branches, written perfect commits, documented your journey, and summoned automation spells---but now it's time to meet your **AI familiars**.
 
@@ -159,7 +161,7 @@ Need a final summary scroll of your complete best practice workflow? Or perhaps 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

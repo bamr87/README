@@ -1,5 +1,7 @@
 ---
-source_file: STASHME-QUICK-REFERENCE.md
+source_file: STASHME/STASHME-QUICK-REFERENCE.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/STASHME/STASHME-QUICK-REFERENCE.md
 title: 📋 StashMe Quick Reference Card
 ---
 # 📋 StashMe Quick Reference Card

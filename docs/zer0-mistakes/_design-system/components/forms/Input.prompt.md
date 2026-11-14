@@ -1,5 +1,7 @@
 ---
-source_file: Input.prompt.md
+source_file: _design-system/components/forms/Input.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/forms/Input.prompt.md
 title: Input.Prompt
 ---
 Labelled text field for forms, search, and the config wizard.

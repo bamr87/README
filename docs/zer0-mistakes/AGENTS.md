@@ -1,5 +1,7 @@
 ---
 source_file: AGENTS.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/AGENTS.md
 title: AGENTS.md — AI Agent Guide for zer0-mistakes
 ---
 # AGENTS.md — AI Agent Guide for zer0-mistakes
@@ -21,7 +23,7 @@ with Bootstrap 5.3.3, GitHub Pages remote-theme support, automated semantic rele
 - **Version source of truth**: `lib/jekyll-theme-zer0/version.rb`.
 - **Default dev environment**: Docker Compose (`docker-compose up`). A local Ruby/Bundler workflow also works.
 
-For the full architectural and product overview, see [`README.md`](./README.md) and [`.github/copilot-instructions.md`](./.github/copilot-instructions.md).
+For the full architectural and product overview, see [`README.md`](./README.md) and [`.github/copilot-instructions.md`](./dot-github/copilot-instructions.md).
 
 ---
 
@@ -173,7 +175,7 @@ This repository is designed to be **extendable** by both humans and agents. To a
    ```
 
 2. Cover: overview, structure, standards, patterns, best practices, testing, documentation (mirror existing files such as `layouts.instructions.md`).
-3. List it in [`.github/instructions/README.md`](./.github/instructions/README.md) and add a row to the **File-scoped instruction map** above.
+3. List it in [`.github/instructions/README.md`](./dot-github/instructions/README.md) and add a row to the **File-scoped instruction map** above.
 
 ### Add a reusable prompt / agent mode
 
@@ -217,8 +219,8 @@ This keeps a single source of truth and prevents drift.
 - Security policy: [`SECURITY.md`](./SECURITY.md)
 - Code of conduct: [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md)
 - Changelog: [`CHANGELOG.md`](./CHANGELOG.md)
-- Main Copilot instructions: [`.github/copilot-instructions.md`](./.github/copilot-instructions.md)
-- Instruction index: [`.github/instructions/README.md`](./.github/instructions/README.md)
+- Main Copilot instructions: [`.github/copilot-instructions.md`](./dot-github/copilot-instructions.md)
+- Instruction index: [`.github/instructions/README.md`](./dot-github/instructions/README.md)
 
 ---
 

@@ -1,170 +1,53 @@
 """
-Integration tests for the documentation aggregator.
+Integration test for the collect stage, against a local git repository.
 """
 
-import os
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
 
-# Add the project root to the path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from scripts.aggregate import process_repository
-from scripts.process import main as process_main
+from scripts.context_engine.collect import collect
+from scripts.context_engine.registry import CollectRules, Project, Registry
 
 
-class TestIntegration(unittest.TestCase):
-    """Integration tests for the full documentation aggregator workflow."""
-    
-    def setUp(self):
-        """Set up test fixtures."""
-        self.orig_cwd = os.getcwd()
-        self.temp_dir = tempfile.mkdtemp()
-        self.raw_docs_dir = Path(self.temp_dir) / "raw_docs"
-        self.docs_dir = Path(self.temp_dir) / "docs"
-        self.raw_docs_dir.mkdir()
-        self.docs_dir.mkdir()
+def _git(cwd: Path, *args: str) -> None:
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.com", *args],
+                   cwd=cwd, check=True, capture_output=True)
 
-    def tearDown(self):
-        """Clean up test fixtures."""
-        import shutil
-        # Restore cwd — tests chdir into temp_dir; leaking it breaks
-        # later tests that rely on repo-relative paths.
-        os.chdir(self.orig_cwd)
-        shutil.rmtree(self.temp_dir)
-    
-    def test_full_workflow_simple_repo(self):
-        """Test the full workflow with a simple repository."""
-        # Test with a simple repository
-        repo_url = "https://github.com/octocat/Hello-World"
-        
-        # Process repository
-        result = process_repository(repo_url, self.temp_dir, str(self.raw_docs_dir))
-        
-        # Check repository processing
-        self.assertTrue(result['success'])
-        self.assertGreater(result['files_found'], 0)
-        self.assertGreater(result['files_copied'], 0)
-        
-        # Check if files were copied
-        raw_files = list(self.raw_docs_dir.rglob("*"))
-        self.assertGreater(len(raw_files), 0)
-        
-        # Process the files
-        os.chdir(self.temp_dir)
-        process_main()
-        
-        # Check if organized files were created (Hello-World ships a bare
-        # "README" with no .md extension; filenames are preserved)
-        organized_files = [p for p in self.docs_dir.rglob("*") if p.is_file()]
-        self.assertGreater(len(organized_files), 0)
-        
-        # Check if files have front matter
-        for file_path in organized_files:
-            content = file_path.read_text()
-            self.assertIn("---", content)  # Should have front matter
-            self.assertIn("title:", content)
-            self.assertIn("source_file:", content)
-    
-    def test_workflow_with_multiple_repos(self):
-        """Test workflow with multiple repositories."""
-        repos = [
-            "https://github.com/octocat/Hello-World",
-            # Add more repos as needed for testing
-        ]
-        
-        results = []
-        for repo_url in repos:
-            result = process_repository(repo_url, self.temp_dir, str(self.raw_docs_dir))
-            results.append(result)
-        
-        # Check that all repositories were processed successfully
-        for result in results:
-            self.assertTrue(result['success'])
-            self.assertGreater(result['files_found'], 0)
-    
-    def test_error_handling_invalid_repo(self):
-        """Test error handling with invalid repository URL."""
-        invalid_repo = "https://github.com/nonexistent/repo"
-        
-        result = process_repository(invalid_repo, self.temp_dir, str(self.raw_docs_dir))
-        
-        # Should handle error gracefully
-        self.assertFalse(result['success'])
-        self.assertIsNotNone(result['error'])
-        self.assertEqual(result['files_found'], 0)
-        self.assertEqual(result['files_copied'], 0)
-    
-    def test_file_organization_by_repo(self):
-        """Test that files are organized under docs/{repo_name}/."""
-        # Create test files with different content
-        test_files = {
-            "api-docs.md": "# API Reference\n\nThis is API documentation.",
-            "user-guide.md": "# User Guide\n\nThis is a user guide.",
-            "installation.md": "# Installation\n\nHow to install the software.",
-            "misc-doc.md": "# Random Document\n\nSome random content."
-        }
 
-        # Create raw docs structure
-        raw_repo_dir = self.raw_docs_dir / "test_repo"
-        raw_repo_dir.mkdir()
+class TestCollectFromGit(unittest.TestCase):
+    def test_clone_select_and_prune(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "origin"
+            (source / "docs").mkdir(parents=True)
+            (source / "tests").mkdir()
+            (source / "README.md").write_text("# Hello\n\nSee [[Guide]].\n")
+            (source / "docs" / "guide.md").write_text("---\ntitle: Guide\n---\nBody\n")
+            (source / "tests" / "fixture.md").write_text("# Fixture\n")
+            _git(source, "init", "-q", "-b", "main")
+            _git(source, "add", "-A")
+            _git(source, "commit", "-qm", "seed")
 
-        for filename, content in test_files.items():
-            (raw_repo_dir / filename).write_text(content)
+            project = Project(name="demo", repo="o/demo", url=str(source))
+            registry = Registry(hub={}, projects=[project],
+                                collect=CollectRules(exclude=["tests/**"]))
+            kwargs = dict(docs_dir=root / "docs", cache_dir=root / "cache" / "collect",
+                          manifest_path=root / "m.json", log_path=root / "l.jsonl")
+            collect(registry, **kwargs)
+            readme = (root / "docs" / "demo" / "README.md").read_text()
+            self.assertIn("[[demo/docs/guide|Guide]]", readme)
+            self.assertFalse((root / "docs" / "demo" / "tests").exists())
 
-        # Process files
-        os.chdir(self.temp_dir)
-        process_main()
+            _git(source, "rm", "-q", "docs/guide.md")
+            _git(source, "commit", "-qm", "drop")
+            collect(registry, **kwargs)
+            self.assertFalse((root / "docs" / "demo" / "docs" / "guide.md").exists())
 
-        # Check organization: docs/{repo_name}/{filename}
-        for filename in test_files:
-            expected_path = self.docs_dir / "test_repo" / filename
-            self.assertTrue(expected_path.exists(), f"File {filename} not found under test_repo")
-
-            # Check front matter
-            content = expected_path.read_text()
-            self.assertIn("title:", content)
-            self.assertIn(f"source_file: {filename}", content)
-    
-    def test_front_matter_generation(self):
-        """Test front matter generation for different content types."""
-        test_cases = [
-            {
-                "filename": "api-docs.md",
-                "content": "# API Documentation\n\nThis document describes our REST API endpoints.",
-                "expected_title": "API Documentation"
-            },
-            {
-                "filename": "tutorial.md",
-                "content": "# Getting Started Tutorial\n\nThis tutorial will help you get started.",
-                "expected_title": "Getting Started Tutorial"
-            }
-        ]
-
-        # Create test files
-        raw_repo_dir = self.raw_docs_dir / "test_repo"
-        raw_repo_dir.mkdir()
-
-        for case in test_cases:
-            (raw_repo_dir / case["filename"]).write_text(case["content"])
-
-        # Process files
-        os.chdir(self.temp_dir)
-        process_main()
-
-        # Check results
-        for case in test_cases:
-            expected_path = self.docs_dir / "test_repo" / case["filename"]
-            self.assertTrue(expected_path.exists())
-
-            content = expected_path.read_text()
-
-            # Check front matter
-            self.assertIn("---", content)
-            self.assertIn(f"title: {case['expected_title']}", content)
-            self.assertIn(f"source_file: {case['filename']}", content)
 
 if __name__ == "__main__":
     unittest.main()

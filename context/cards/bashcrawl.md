@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: d05826aeb2911391
+source_fingerprint: df0819227fec0c68
 tags:
   - bash
   - education
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 104 docs |
+| Corpus | `docs/bashcrawl` - 78 docs |
 | External | no |
 
 ## Signals
@@ -32,16 +32,16 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~87,946 words across 104 indexed documents
-- code samples in: bash, plaintext, json, yaml, text, js, python, markdown
+- ~44,984 words across 78 indexed documents
+- code samples in: bash, plaintext, js, text, json, yaml
 
 ## Navigation
 
-94 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+78 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
-- **Repository & tooling** (6 pages)
+- **Repository & tooling** (2 pages)
 - **Courses** (31 pages)
-- **Documentation** (46 pages)
+- **Documentation** (34 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents
@@ -50,10 +50,10 @@ tags:
 - [`CLAUDE.md`](../../docs/bashcrawl/CLAUDE.md)
 - [`AGENTS.md`](../../docs/bashcrawl/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/bashcrawl/CHANGELOG.md)
-- [`docs/demo-walkthrough.md`](../../docs/bashcrawl/docs/demo-walkthrough.md)
-- [`.github/instructions/scrolls.instructions.md`](../../docs/bashcrawl/.github/instructions/scrolls.instructions.md)
-- [`docs/log-viewer-reference.md`](../../docs/bashcrawl/docs/log-viewer-reference.md)
-- [`docs/demo-critical-path.md`](../../docs/bashcrawl/docs/demo-critical-path.md)
+- [`docs/ARCHITECTURE.md`](../../docs/bashcrawl/docs/ARCHITECTURE.md)
+- [`docs/walkthrough.md`](../../docs/bashcrawl/docs/walkthrough.md)
+- [`docs/termforge/architecture.md`](../../docs/bashcrawl/docs/termforge/architecture.md)
+- [`docs/termforge/hidden-gem.md`](../../docs/bashcrawl/docs/termforge/hidden-gem.md)
 
 ## Query this context
 

@@ -61,7 +61,9 @@ rewards:
   unlocks_features:
   - Continue The Agentic Codex into multi-agent coordination
 skill_focus: ai-ml
-source_file: agentic-codex-04-evaluation-and-tuning.md
+source_file: pages/_quests/1010/agentic-codex-04-evaluation-and-tuning.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning.md
 tags:
 - '1010'
 - github-copilot
@@ -71,7 +73,7 @@ tags:
 - evaluation
 - behavior-tuning
 - project-based
-title: .github/workflows/check-task-completion.yml
+title: 'The Oracle Rubric: Evaluation & Tuning'
 validation_criteria:
   completion_requirements:
   - A success-criteria schema mapped to concrete GitHub signals
@@ -114,7 +116,7 @@ You will know you have mastered this chapter when you can:
 
 This is Chapter 4 of **The Agentic Codex**. You do not need the earlier chapters checked off to *learn* here, but they make the work land:
 
-- **Recommended — [Chapter 3: Memory, State & Execution](/quests/1001/agentic-codex-03-memory-state-and-execution/)** — evaluation often surfaces *memory* failures (an agent "forgot" a prior decision), so knowing the memory model helps you classify root causes correctly.
+- **Recommended — [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution|Chapter 3: Memory, State & Execution]]** — evaluation often surfaces *memory* failures (an agent "forgot" a prior decision), so knowing the memory model helps you classify root causes correctly.
 - **A GitHub repository with Actions enabled** and **branch protection** with at least one required status check — you need real signals to grade against.
 - **The GitHub CLI (`gh`)** installed and authenticated — the forensics steps download run logs and query PR state through it.
 - **At least one prior agent run** — a Copilot coding agent task, or any workflow-invoked agent, so you have a real trace to read rather than a hypothetical one.
@@ -481,9 +483,9 @@ The fabricated `checks`/`new_alerts` fields are the two signals that need a work
 
 This chapter is the campaign hub for Domain 4. Each linked quest takes one craft deep with hands-on exercises — play them in order:
 
-- **[The Oracle's Rubric: Agent Success Signals](/quests/1010/agentic-success-criteria-and-signals/)** — define the acceptance-criteria schema, map it to GitHub signals, and build the completion detector that grades a run with no human in the loop.
-- **[The Necromancer's Inquest: Agent Failure Root Cause Analysis](/quests/1010/agentic-failure-root-cause-analysis/)** — read Actions logs and artifacts, classify failures with the taxonomy, and drive a real failure to its root cause with 5-Why.
-- **[Reforging the Agent's Mind: Tuning Behavior by Instruction](/quests/1011/agentic-behavior-tuning/)** — baseline behaviour, iterate on `copilot-instructions.md`/`AGENTS.md`, and keep an instruction changelog that ties every change to a measured outcome.
+- **[[it-journey/pages/_quests/1010/agentic-success-criteria-and-signals|The Oracle's Rubric: Agent Success Signals]]** — define the acceptance-criteria schema, map it to GitHub signals, and build the completion detector that grades a run with no human in the loop.
+- **[[it-journey/pages/_quests/1010/agentic-failure-root-cause-analysis|The Necromancer's Inquest: Agent Failure Root Cause Analysis]]** — read Actions logs and artifacts, classify failures with the taxonomy, and drive a real failure to its root cause with 5-Why.
+- **[[it-journey/pages/_quests/1011/agentic-behavior-tuning|Reforging the Agent's Mind: Tuning Behavior by Instruction]]** — baseline behaviour, iterate on `copilot-instructions.md`/`AGENTS.md`, and keep an instruction changelog that ties every change to a measured outcome.
 
 ## 🎮 Mastery Challenge
 
@@ -524,9 +526,9 @@ graph LR
 
 You can now grade an agent, diagnose its failures, and reforge its mind. The next domain raises the stakes from one agent to *many* — where evaluation must cover handoffs, conflicts, and stalled familiars.
 
-- ➡️ **Next chapter:** [Chapter V — Multi-Agent Coordination](/quests/1011/agentic-codex-05-multi-agent-coordination/)
-- ⬅️ **Previous chapter:** [Chapter III — Memory, State & Execution](/quests/1001/agentic-codex-03-memory-state-and-execution/)
-- 🏰 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1011/agentic-codex-05-multi-agent-coordination|Chapter V — Multi-Agent Coordination]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution|Chapter III — Memory, State & Execution]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
 
 ## 📚 Resource Codex
 
@@ -537,11 +539,11 @@ You can now grade an agent, diagnose its failures, and reforge its mind. The nex
 - [GitHub CLI: `gh run`](https://cli.github.com/manual/gh_run) — downloading run logs and artifacts for forensics
 - [GitHub Models](https://docs.github.com/en/github-models) — adding an LLM-as-judge signal for qualitative criteria
 - [Code scanning REST API](https://docs.github.com/en/rest/code-scanning) — reading the "no new alerts" signal
-- [Evaluation Signals Table (GH-600 notes)](/notes/gh-600/evaluation-signals-table/) — every Domain 4 signal and the API call that reads it
-- 🏰 **In the wild (this repo):** the quest-fix **deterministic keep/revert gate** ([`quest-fix.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/quest-fix.yml)) keeps an agent's edit only if tier-1 score + brand lint improved — the model never grades its own work; the RCA template and instruction changelog live in [`docs/agents/`](https://github.com/bamr87/it-journey/tree/main/docs/agents). Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- [[it-journey/pages/_notes/gh-600/evaluation-signals-table|Evaluation Signals Table (GH-600 notes)]] — every Domain 4 signal and the API call that reads it
+- 🏰 **In the wild (this repo):** the quest-fix **deterministic keep/revert gate** ([`quest-fix.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/quest-fix.yml)) keeps an agent's edit only if tier-1 score + brand lint improved — the model never grades its own work; the RCA template and instruction changelog live in [`docs/agents/`](https://github.com/bamr87/it-journey/tree/main/docs/agents). Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** [[Memory, State & Execution]] **Next:** [[Multi-Agent Coordination]] **Domain 4 quests:** [[The Oracle's Rubric: Agent Success Signals]] · [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] · [[Reforging the Agent's Mind: Tuning Behavior by Instruction]] **Reference:** [[Evaluating and Tuning Agents with GitHub Signals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** [[Memory, State & Execution]] **Next:** [[Multi-Agent Coordination]] **Domain 4 quests:** [[The Oracle's Rubric: Agent Success Signals]] · [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] · [[Reforging the Agent's Mind: Tuning Behavior by Instruction]] **Reference:** [[Evaluating and Tuning Agents with GitHub Signals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -14,15 +14,12 @@ coverage: full
 |---|---|---|---|
 | `README.md` | file | Stage-by-stage script documentation | required |
 | `SCHEMA.md` | file | This file | required |
-| `aggregate.py` | file | Repo-operations module (clone/pull/find/copy docs) | required |
-| `aggregate.sh` | file | Stage 1-2 orchestrator: repos.txt → raw_docs/ → docs/ | required |
-| `aggregate_mkdocs.py` | file | Alternative category-bucketing aggregator (MkDocsAggregator) | |
 | `analyze_doc_structure.py` | file | Corpus structure analysis utility | |
 | `check_frontmatter.py` | file | Frontmatter validator (+ --fix) | required |
 | `check_tracked_surfaces.py` | file | Integrity gate: every path a generated surface names is a git-tracked file, and no corpus path is gitignored | required |
 | `clean_frontmatter.py` | file | Frontmatter normalizer | |
 | `cleanup_docs.py` | file | Corpus cleanup utility | |
-| `context_engine/` | dir | Stages 5-7: the context engine package (extract→navigate→synthesize→assemble→index), plus the fleet survey (gather→analyze→report) | required terminal |
+| `context_engine/` | dir | Stages 1-2 and 5-7: the context engine package (collect, then extract→brain→navigate→synthesize→assemble→index→graph), plus the fleet survey (gather→analyze→report) | required terminal |
 | `fix_frontmatter_icons.py` | file | Navigation gate: maps upstream `icon:` frontmatter onto bundled Material icons | required |
 | `fix_h1.py` | file | H1 heading fixer | |
 | `fix_mkdocs_links.py` | file | MkDocs link converter/validator | |
@@ -34,7 +31,6 @@ coverage: full
 | `lint_docs.py` | file | Markdown linter | required |
 | `mkdocs_quality_report.py` | file | MkDocs compatibility/quality analyzer | |
 | `normalize_tags.py` | file | Tag normalizer | |
-| `process.py` | file | Stage 2: raw_docs/ → docs/{repo}/ with frontmatter | required |
 | `run_doc_checks.sh` | file | Stage 3 orchestrator: lint + fixers (+ --apply) | required |
 | `schema_lint.py` | file | SCHEMA.md pyramid drift gate (`check .`) | required |
 | `wiki-manage.sh` | file | Wiki.js stack management wrapper | |

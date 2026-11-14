@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - 'The sequel campaign: The Self-Operating Website'
 skill_focus: fullstack
-source_file: zer0-to-her0-cmstyle.md
+source_file: pages/_quests/codex/zer0-to-her0-cmstyle.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/zer0-to-her0-cmstyle.md
 tags:
 - '0010'
 - ai-integration
@@ -89,7 +91,7 @@ tags:
 - gamified-learning
 - open-source
 - project-based
-title: '1. Install the holy trinity: Git, VS Code, and the GitHub CLI'
+title: 'Epic Quest: Zer0-to-Her0 CMStyle'
 validation_criteria:
   completion_requirements:
   - All three acts completed and their chapter quests finished
@@ -106,7 +108,7 @@ validation_criteria:
 ---
 *In the vast digital wilderness, where code reigns supreme and innovation is the ultimate currency, one determined nerd embarked on an epic IT journey — no fancy degrees, no corporate backing, just sheer curiosity and open source grit. What began as late-night tinkering with GitHub, VS Code, and Jekyll became a fully fledged open-source content management system with AI handling the tedious work: automated setups, intelligent error resolution, even content enhancement.*
 
-*This campaign retraces that road so you can walk it yourself. Three acts chain the real quests of the realm into one journey: spark the toolchain, raise your castle, then enchant it with AI. It ends where the sequel begins — with a living site of your own, ready to learn to run itself in **[The Self-Operating Website](/quests/codex/self-operating-website/)**.*
+*This campaign retraces that road so you can walk it yourself. Three acts chain the real quests of the realm into one journey: spark the toolchain, raise your castle, then enchant it with AI. It ends where the sequel begins — with a living site of your own, ready to learn to run itself in **[[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]**.*
 
 ## 📖 The Legend Behind This Quest
 
@@ -144,7 +146,7 @@ You will know you have mastered this campaign when you can:
 | **Primary classes** | 💻 Software Developer · 🎨 Frontend Developer · 📝 Content Creator |
 | **Stack** | VS Code · Git & GitHub · Jekyll · GitHub Pages · Bootstrap · GitHub Copilot |
 | **Reference builds** | [`bamr87/zer0-mistakes`](https://github.com/bamr87/zer0-mistakes) · [`bamr87/it-journey`](https://github.com/bamr87/it-journey) |
-| **Sequel** | [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/) |
+| **Sequel** | [[it-journey/pages/_quests/codex/self-operating-website\|Epic Quest: The Self-Operating Website]] |
 
 ## 📜 The Campaign — Three Acts
 
@@ -154,29 +156,29 @@ Each act chains existing quests of the realm into one storyline. Play the chapte
 
 | # | Chapter | Level | Difficulty | Time |
 |---|---|---|---|---|
-| I | [VS Code Mastery: Forge Your Ultimate Dev Weapon](/quests/0000/vscode-mastery/) | `0000` | 🟢 Easy | 45–60 min |
-| II | [Git Workflow Mastery: Branches, Merging & Collaboration](/quests/0001/git-workflow-mastery/) | `0001` | 🟡 Medium | 75–90 min |
-| III | [YAML Configuration: Site Settings Mastery](/quests/0001/yaml-configuration/) | `0001` | 🟢 Easy | 45–60 min |
+| I | [[it-journey/pages/_quests/0000/vscode-mastery\|VS Code Mastery: Forge Your Ultimate Dev Weapon]] | `0000` | 🟢 Easy | 45–60 min |
+| II | [[it-journey/pages/_quests/0001/git-workflow-mastery\|Git Workflow Mastery: Branches, Merging & Collaboration]] | `0001` | 🟡 Medium | 75–90 min |
+| III | [[it-journey/pages/_quests/0001/yaml-configuration\|YAML Configuration: Site Settings Mastery]] | `0001` | 🟢 Easy | 45–60 min |
 
 ### 🏰 Act II — Raising the Castle: Jekyll & GitHub Pages
 
 | # | Chapter | Level | Difficulty | Time |
 |---|---|---|---|---|
-| IV | [Jekyll Fundamentals: Build Static Sites with Ruby](/quests/0001/jekyll-fundamentals/) | `0001` | 🟢 Easy | 75–90 min |
-| V | [Liquid Templating: Dynamic Content for Jekyll Sites](/quests/0001/liquid-templating/) | `0001` | 🟡 Medium | 75–90 min |
-| VI | [Bootstrap Framework: Build Responsive Sites Fast](/quests/0001/bootstrap-framework/) | `0001` | 🟢 Easy | 60–75 min |
-| VII | [The GitHub Pages Portal: Forging Your Digital Realm](/quests/0001/github-pages-portal/) | `0001` | 🟢 Easy | 2–4 hours |
+| IV | [[it-journey/pages/_quests/0001/jekyll-fundamentals\|Jekyll Fundamentals: Build Static Sites with Ruby]] | `0001` | 🟢 Easy | 75–90 min |
+| V | [[it-journey/pages/_quests/0001/liquid-templating\|Liquid Templating: Dynamic Content for Jekyll Sites]] | `0001` | 🟡 Medium | 75–90 min |
+| VI | [[it-journey/pages/_quests/0001/bootstrap-framework\|Bootstrap Framework: Build Responsive Sites Fast]] | `0001` | 🟢 Easy | 60–75 min |
+| VII | [[it-journey/pages/_quests/0001/github-pages-portal\|The GitHub Pages Portal: Forging Your Digital Realm]] | `0001` | 🟢 Easy | 2–4 hours |
 
-> 🏅 **Act II milestone.** Cement the act with the side quest [Build a Personal Website with GitHub Pages](/quests/0001/personal-site/) — your own castle, live on the web, is the proof that Act II is truly complete.
+> 🏅 **Act II milestone.** Cement the act with the side quest [[it-journey/pages/_quests/0001/personal-site|Build a Personal Website with GitHub Pages]] — your own castle, live on the web, is the proof that Act II is truly complete.
 
 ### 🪄 Act III — The Enchantment: AI Does the Heavy Lifting
 
 | # | Chapter | Level | Difficulty | Time |
 |---|---|---|---|---|
-| VIII | [Revolutionizing Work with AI Automation](/quests/0010/revolutionizing-work-with-ai-automation/) | `0010` | 🟢 Easy | 30–60 min |
-| IX | [The Knowledge Vault: Automated Documentation Hub](/quests/0001/docs-in-a-row/) | `0001` | 🟡 Medium | 2–3 hours |
-| X | [Forging the Stats Portal: Data Analytics Quest](/quests/0001/stating-the-stats/) | `0001` | 🟢 Easy | 60–90 min |
-| XI | [Link to the Future: Automated Hyperlink Guardian](/quests/1010/automated-hyperlink-guardian/) | `1010` | 🟡 Medium | 2–3 hours |
+| VIII | [[it-journey/pages/_quests/tools/revolutionizing-work-with-ai-automation\|Revolutionizing Work with AI Automation]] | `0010` | 🟢 Easy | 30–60 min |
+| IX | [[it-journey/pages/_quests/0001/docs-in-a-row\|The Knowledge Vault: Automated Documentation Hub]] | `0001` | 🟡 Medium | 2–3 hours |
+| X | [[it-journey/pages/_quests/0001/stating-the-stats\|Forging the Stats Portal: Data Analytics Quest]] | `0001` | 🟢 Easy | 60–90 min |
+| XI | [[it-journey/pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting\|Link to the Future: Automated Hyperlink Guardian]] | `1010` | 🟡 Medium | 2–3 hours |
 
 > 🪄 **The Enchanter's rule.** Every automation in Act III follows the same discipline the sequel campaign is built on: the robot does the tedious work — drafting, counting, checking — and a human reviews what ships. Learn that habit here and the Self-Operating Website will feel like a natural next step, not a leap.
 
@@ -291,9 +293,9 @@ graph TD
 
 ## 🔮 Next Adventures
 
-- 🎯 Begin the campaign: [Chapter I — VS Code Mastery](/quests/0000/vscode-mastery/)
-- 🏰 The sequel: [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/) — teach the castle you just built to run itself
-- 🤖 The advanced path: [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — govern autonomous agents on GitHub-native rails
+- 🎯 Begin the campaign: [[it-journey/pages/_quests/0000/vscode-mastery|Chapter I — VS Code Mastery]]
+- 🏰 The sequel: [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] — teach the castle you just built to run itself
+- 🤖 The advanced path: [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — govern autonomous agents on GitHub-native rails
 
 ## 📚 Resource Codex
 
@@ -313,6 +315,6 @@ graph TD
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Overworld:** [[🏰 Overworld - Master Quest Map]] **Sequel:** [[Epic Quest: The Self-Operating Website]] **Chapters:** [[VS Code Mastery: Forge Your Ultimate Dev Weapon]] · [[Git Workflow Mastery: Branches, Merging & Team Collaboration]] · [[Jekyll Fundamentals: Build Static Sites with Ruby]] · [[The GitHub Pages Portal: Forging Your Digital Realm]] · [[Link to the Future: Automated Hyperlink Guardian Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Sequel:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Chapters:** [[it-journey/pages/_quests/0000/vscode-mastery|VS Code Mastery: Forge Your Ultimate Dev Weapon]] · [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery: Branches, Merging & Team Collaboration]] · [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals: Build Static Sites with Ruby]] · [[it-journey/pages/_quests/0001/github-pages-portal|The GitHub Pages Portal: Forging Your Digital Realm]] · [[it-journey/pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting|Link to the Future: Automated Hyperlink Guardian Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

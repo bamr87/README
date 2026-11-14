@@ -6,10 +6,13 @@ lastmod: 2026-04-05 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme/
 preview: /images/previews/theme-customizer.png
-source_file: theme.md
+source_file: pages/_about/settings/theme.md
 source_icon: bi-palette
-title: Theme
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/theme.md
+title: Theme Customizer
 ---
+
 <!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->
 <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
 

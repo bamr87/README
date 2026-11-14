@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 5
-source_file: vortex5.md
+source_file: wargames/vortex/vortex5.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex5.md
 title: Vortex5
 ---
 MD5 Brute Force

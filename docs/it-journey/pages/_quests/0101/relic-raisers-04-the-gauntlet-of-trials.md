@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Continue The Relic Raisers campaign
 skill_focus: devops
-source_file: relic-raisers-04-the-gauntlet-of-trials.md
+source_file: pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials.md
 tags:
 - '0101'
 - github-actions
@@ -88,7 +90,7 @@ tags:
 - ci-cd
 - hands-on
 - gamified-learning
-title: 'The summoning circle: the relic runs identically in every world.'
+title: 'The Gauntlet of Trials: Pin the Relic Before You Touch It'
 validation_criteria:
   completion_requirements:
   - Two golden masters captured and five trials passing locally
@@ -397,9 +399,9 @@ graph LR
 
 The relic is pinned. Now comes the boss: translate it into a modern tongue, and prove — not argue — that the translation says the same thing.
 
-- ➡️ **Next chapter:** [Chapter V — The Rosetta Ledger](/quests/1100/relic-raisers-05-the-rosetta-ledger/) 🐉
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
-- 🏭 **More Factory craft:** [GitHub Actions Basics](/quests/0101/github-actions-basics/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger|Chapter V — The Rosetta Ledger]] 🐉
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
+- 🏭 **More Factory craft:** [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]]
 
 ## 📚 Resource Codex
 
@@ -410,6 +412,6 @@ The relic is pinned. Now comes the boss: translate it into a modern tongue, and 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Previous:** [[The Elders: Recover the Reasons Before They Retire]] **Next:** [[The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/0101/README|Level 0101 - Advanced Docker & DevOps]] **Previous:** [[it-journey/pages/_quests/1111/relic-raisers-03-the-elders|The Elders: Recover the Reasons Before They Retire]] **Next:** [[it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger|The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

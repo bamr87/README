@@ -6,12 +6,15 @@ date: 2025-10-25 23:02:17+00:00
 description: 'Technical implementation of the unified sitemap system: merged collection
   layout, stats, dark mode, dual view modes, filtering, and accessibility improvements.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: sitemap-integration.md
+source_file: docs/implementation/sitemap-integration.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/sitemap-integration.md
 tags:
 - implementation
 - changelog
 title: Comprehensive Sitemap Integration Summary
 ---
+
 # Comprehensive Sitemap Integration Summary
 
 ## 🎯 Project Overview

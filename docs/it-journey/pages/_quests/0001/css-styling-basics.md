@@ -79,7 +79,9 @@ rewards:
   unlocks_features:
   - Access to the framework and scripting quests of Level 0001
 skill_focus: frontend
-source_file: css-styling-basics.md
+source_file: pages/_quests/0001/css-styling-basics.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/css-styling-basics.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - CSS'
 tags:
 - '0001'
@@ -91,7 +93,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: Make a project folder with an HTML and a CSS file
+title: 'CSS Styling Basics: Selectors, the Box Model & Layout'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -541,17 +543,17 @@ The same idea scales: a `--space` scale, a `--radius`, and a handful of color to
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/) - Make your styled page interactive
+- 🎯 [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]] - Make your styled page interactive
 
 **Explore Side Adventures**:
-- ⚔️ [Bootstrap Framework](/quests/0001/bootstrap-framework/) - Pre-built, responsive components
-- ⚔️ [Advanced Markdown](/quests/0001/advanced-markdown/) - Rich content for the pages you style
+- ⚔️ [[it-journey/pages/_quests/0001/bootstrap-framework|Bootstrap Framework]] - Pre-built, responsive components
+- ⚔️ [[it-journey/pages/_quests/0001/advanced-markdown|Advanced Markdown]] - Rich content for the pages you style
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)  
-**🏗️ System Engineer**: Explore [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
-**🎨 Frontend Specialist**: Master [Bootstrap Framework](/quests/0001/bootstrap-framework/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/bootstrap-framework|Bootstrap Framework]]  
+**🎨 Frontend Specialist**: Master [[it-journey/pages/_quests/0001/bootstrap-framework|Bootstrap Framework]]  
 
 ## 📚 Resources
 
@@ -580,6 +582,6 @@ The same idea scales: a `--space` scale, a `--radius`, and a handful of color to
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[JavaScript Fundamentals]] · [[Bootstrap Framework]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[JavaScript Fundamentals]] · [[Bootstrap Framework]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

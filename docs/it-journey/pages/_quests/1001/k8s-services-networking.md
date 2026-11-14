@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the Configuration and Secrets quest
 skill_focus: devops
-source_file: k8s-services-networking.md
+source_file: pages/_quests/1001/k8s-services-networking.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/k8s-services-networking.md
 sub_title: 'Level 1001 (9) Quest: Main Quest - K8s Networking'
 tags:
 - '1001'
@@ -83,7 +85,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Deploy a backend workload to expose
+title: 'Kubernetes Services and Networking: Ingress and DNS'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/) and [Pods and Workloads](/quests/1001/k8s-pods-workloads/)
+- [ ] Completion of [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]] and [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]]
 - [ ] Comfort deploying a Deployment and reading its labels
 - [ ] Basic understanding of ports, TCP/IP, and DNS
 
@@ -472,15 +474,15 @@ spec:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/) - Inject configuration safely
+- 🎯 [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]] - Inject configuration safely
 
 **Explore Side Adventures**:
-- ⚔️ [Pods and Workloads](/quests/1001/k8s-pods-workloads/) - Revisit the workloads you exposed
+- ⚔️ [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]] - Revisit the workloads you exposed
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
-**🏗️ System Engineer**: Revisit [Pods and Workloads](/quests/1001/k8s-pods-workloads/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]]  
 **🛡️ Security Specialist**: Study the NetworkPolicy section above closely
 
 ## 📚 Resources
@@ -512,6 +514,6 @@ Before marking this quest as complete, ensure you've:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Kubernetes Fundamentals: Container Orchestration Essentials]] · [[Kubernetes Pods and Workloads: Deployments and StatefulSets]] **Unlocks:** [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals: Container Orchestration Essentials]] · [[it-journey/pages/_quests/1001/k8s-pods-workloads|Kubernetes Pods and Workloads: Deployments and StatefulSets]] **Unlocks:** [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

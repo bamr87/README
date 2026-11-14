@@ -57,7 +57,9 @@ rewards:
   - 🔗 Correlation Tracing
   - 📊 Multi-Agent Audit
 skill_focus: devops
-source_file: agentic-multi-agent-observability.md
+source_file: pages/_quests/1011/agentic-multi-agent-observability.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/agentic-multi-agent-observability.md
 sub_title: 'Level 1011 Quest 3/4 — Domain 5: Multi-Agent Systems'
 tags:
 - '1011'
@@ -67,7 +69,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: .github/workflows/orchestrator-with-tracing.yml
+title: 'The Scribe''s Codex: Observability in Multi-Agent Systems'
 validation_criteria:
   completion_requirements:
   - Correlation ID propagated across all agents in a workflow
@@ -350,11 +352,11 @@ python3 scripts/validate_quest.py --quest q15
 | 📜 The Scribe Badge | Earned on completion |
 | 🔗 Correlation Tracing | Skill unlocked |
 | 100 XP | Added to Level 1011 total |
-| Unlocks | [Q16: When Familiars Fall](/quests/1011/agentic-multi-agent-failure-recovery/) |
+| Unlocks | [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery\|Q16: When Familiars Fall]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Feature Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Council of Many: Multi-Agent Orchestration Patterns]] **Unlocks:** [[When Familiars Fall: Multi-Agent Failure Recovery]] **Sequel quests:** [[When Familiars Fall: Multi-Agent Failure Recovery]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1011/README|Level 1011 - Feature Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]] **Unlocks:** [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]] **Sequel quests:** [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

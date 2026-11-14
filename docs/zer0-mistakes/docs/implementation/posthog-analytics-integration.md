@@ -6,12 +6,15 @@ date: 2025-11-16 17:04:56+00:00
 description: 'PostHog analytics in Zer0-Mistakes: privacy-first, consent-gated event
   tracking with GDPR/CCPA compliance and a cookie banner, enabled in production.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: posthog-analytics-integration.md
+source_file: docs/implementation/posthog-analytics-integration.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/posthog-analytics-integration.md
 tags:
 - implementation
 - changelog
 title: PostHog Analytics Integration
 ---
+
 # PostHog Analytics Integration
 
 ## Overview
@@ -356,4 +359,4 @@ _This integration provides a complete, privacy-compliant analytics solution for 
 
 ---
 
-> **User guide**: For setup and configuration examples, see [PostHog Analytics](/docs/features/posthog-analytics/) in the user documentation.
+> **User guide**: For setup and configuration examples, see [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]] in the user documentation.

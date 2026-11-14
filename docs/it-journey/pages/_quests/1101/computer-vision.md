@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the MLOps and AI Ethics quests of Level 1101
 skill_focus: ai-ml
-source_file: computer-vision.md
+source_file: pages/_quests/1101/computer-vision.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/computer-vision.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - Computer Vision'
 tags:
 - '1101'
@@ -87,7 +89,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: Apple Silicon can accelerate with the MPS backend
+title: 'Computer Vision Mastery: CNNs and Transfer Learning'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -415,17 +417,17 @@ Because ResNet's early layers already know edges, textures, and shapes that gene
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [MLOps Engineering](/quests/1101/mlops/) - Take vision models to production
+- 🎯 [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]] - Take vision models to production
 
 **Explore Side Adventures**:
-- ⚔️ [Natural Language Processing](/quests/1101/natural-language-processing/) - The other half of perception
-- ⚔️ [AI Ethics](/quests/1101/ai-ethics/) - Build vision systems responsibly
+- ⚔️ [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]] - The other half of perception
+- ⚔️ [[it-journey/pages/_quests/1101/ai-ethics|AI Ethics]] - Build vision systems responsibly
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [MLOps Engineering](/quests/1101/mlops/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
-**📊 Data Scientist**: Advance to [Natural Language Processing](/quests/1101/natural-language-processing/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]]
 
 ## 📚 Resources
 
@@ -454,6 +456,6 @@ Because ResNet's early layers already know edges, textures, and shapes that gene
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Required:** [[Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation]] **Unlocks:** [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] · [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Required:** [[Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation]] **Unlocks:** [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] · [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

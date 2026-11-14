@@ -54,7 +54,9 @@ rewards:
   skill: Container Orchestration Mastery
   tool: Docker Development Environment
 skill_focus: devops
-source_file: docker-mastery-example.md
+source_file: pages/_quests/0101/docker-mastery-example.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/docker-mastery-example.md
 sub_title: 'Level 0101 (5) Quest: Tool-mastery - Docker'
 tags:
 - '0101'
@@ -63,7 +65,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Docker Desktop via Homebrew Cask
+title: 'Docker Containerization Mastery: Level 0101 (5) Quest'
 validation_criteria:
 - Successfully create and run Docker containers from custom images
 - Build multi-container applications using Docker Compose
@@ -423,11 +425,11 @@ Your newfound docker powers open several paths:
 
 ---
 
-*May your code compile without errors, your deployments be swift and stable, and your learning journey be filled with discovery and joy! Ready for your next adventure? Check the [Quest Map](/quests/) for your next challenge!* ⚔️✨
+*May your code compile without errors, your deployments be swift and stable, and your learning journey be filled with discovery and joy! Ready for your next adventure? Check the [[it-journey/pages/_quests/README|Quest Map]] for your next challenge!* ⚔️✨
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0101/README|Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

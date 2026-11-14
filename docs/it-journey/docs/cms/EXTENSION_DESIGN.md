@@ -1,5 +1,7 @@
 ---
-source_file: EXTENSION_DESIGN.md
+source_file: docs/cms/EXTENSION_DESIGN.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/cms/EXTENSION_DESIGN.md
 title: IT-Journey CMS — VS Code extension design & contract
 ---
 # IT-Journey CMS — VS Code extension design & contract

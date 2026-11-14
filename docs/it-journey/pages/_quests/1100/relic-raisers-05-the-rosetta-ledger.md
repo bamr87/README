@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - The Strangler Fig — a gate that can route to a port it can trust
 skill_focus: data-engineering
-source_file: relic-raisers-05-the-rosetta-ledger.md
+source_file: pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger.md
 tags:
 - '1100'
 - python
@@ -83,7 +85,7 @@ tags:
 - boss-fight
 - problem-solving
 - gamified-learning
-title: '0.30000000000000004'
+title: 'The Rosetta Ledger: Translate the Relic and Prove It Ties Out'
 validation_criteria:
   completion_requirements:
   - reconcile.py reports three mismatches against the first port and RECONCILED against
@@ -457,9 +459,9 @@ graph LR
 
 You have a port you can prove. Now put a gate in front of the relic and let the port earn its place one request at a time.
 
-- ➡️ **Next chapter:** [Chapter VI — The Strangler Fig](/quests/0111/relic-raisers-06-the-strangler-fig/)
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
-- 🧪 **More on data that must tie out:** [Data Quality](/quests/1100/data-quality/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig|Chapter VI — The Strangler Fig]]
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
+- 🧪 **More on data that must tie out:** [[it-journey/pages/_quests/1100/data-quality|Data Quality]]
 
 ## 📚 Resource Codex
 
@@ -470,6 +472,6 @@ You have a port you can prove. Now put a gate in front of the relic and let the 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 1100 - Data Integration & Template Systems]] **Previous:** [[The Gauntlet of Trials: Pin the Relic Before You Touch It]] **Next:** [[The Strangler Fig: Put a Modern Gate in Front of the Relic]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/1100/README|Level 1100 - Data Integration & Template Systems]] **Previous:** [[it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials|The Gauntlet of Trials: Pin the Relic Before You Touch It]] **Next:** [[it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig|The Strangler Fig: Put a Modern Gate in Front of the Relic]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

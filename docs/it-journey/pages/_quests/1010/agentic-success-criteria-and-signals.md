@@ -56,7 +56,9 @@ rewards:
   skills_unlocked:
   - 📋 Success Signal Configuration
 skill_focus: devops
-source_file: agentic-success-criteria-and-signals.md
+source_file: pages/_quests/1010/agentic-success-criteria-and-signals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/agentic-success-criteria-and-signals.md
 sub_title: 'Level 1010 Quest 3/4 — Domain 4: Evaluating Agent Performance'
 tags:
 - '1010'
@@ -66,7 +68,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: .github/workflows/check-task-completion.yml
+title: 'The Oracle''s Rubric: Agent Success Signals'
 validation_criteria:
   completion_requirements:
   - Acceptance criteria schema defined and embedded in issue template
@@ -266,11 +268,11 @@ python3 scripts/validate_quest.py --quest q11
 | 🔮 Oracle's Scribe Badge | Earned on completion |
 | 📋 Success Signal Configuration | Skill unlocked |
 | 100 XP | Added to Level 1010 total |
-| Unlocks | [Q12: The Necromancer's Inquest](/quests/1010/agentic-failure-root-cause-analysis/) |
+| Unlocks | [[it-journey/pages/_quests/1010/agentic-failure-root-cause-analysis\|Q12: The Necromancer's Inquest]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Automation & Testing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] · [[Evaluation Signals Table]] **Prerequisites:** [[Crossing the Tool Planes: State Continuity Across Tools]] **Unlocks:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Sequel quests:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1010/README|Level 1010 - Automation & Testing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · [[it-journey/pages/_notes/gh-600/evaluation-signals-table|Evaluation Signals Table]] **Prerequisites:** [[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools|Crossing the Tool Planes: State Continuity Across Tools]] **Unlocks:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Sequel quests:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

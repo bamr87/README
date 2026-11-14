@@ -1,5 +1,7 @@
 ---
-source_file: voice.md
+source_file: _data/brand/voice.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/voice.md
 title: IT-Journey — Voice & Tone
 ---
 # IT-Journey — Voice & Tone

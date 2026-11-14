@@ -1,5 +1,7 @@
 ---
-source_file: advanced.md
+source_file: docs/advanced.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/advanced.md
 title: Advanced Topics
 ---
 # Advanced Topics

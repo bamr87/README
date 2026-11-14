@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: wechall.md
-title: Wechall
+source_file: information/wechall.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/wechall.md
+title: WeChall Scoreboard
 ---
+
 WeChall Scoreboard
 ==================
 

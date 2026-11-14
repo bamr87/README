@@ -1,5 +1,7 @@
 ---
 source_file: README.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/README.md
 title: 🛠️ scripts
 ---
 # 🛠️ scripts
@@ -94,7 +96,7 @@ PROJECT_TYPE=django PROJECT_NAME=my-api SETUP_DOCKER=true SETUP_CI=true \
 ./project-init.sh --type react --name my-react-app --dir ~/projects/my-react-app
 ```
 
-To set your own defaults, copy [`.env.example`](.env.example) and either pass it with `--config FILE` (any mode; it is applied where it appears, so put it first and let later flags override it) or save it as `.env` in the directory you run the wizard from (interactive mode only; a `.env` overrides flags and `--config`). Only the variables below are read; the rest of `.env.example` is reserved and currently ignored. An unsupported `PROJECT_TYPE` stops the wizard before anything is created. Key options:
+To set your own defaults, copy [`.env.example`](dot-env.example) and either pass it with `--config FILE` (any mode; it is applied where it appears, so put it first and let later flags override it) or save it as `.env` in the directory you run the wizard from (interactive mode only; a `.env` overrides flags and `--config`). Only the variables below are read; the rest of `.env.example` is reserved and currently ignored. An unsupported `PROJECT_TYPE` stops the wizard before anything is created. Key options:
 
 | Variable | Description | Options |
 | --- | --- | --- |
@@ -204,7 +206,7 @@ The [docs index](docs/README.md) lists every document with a one-line summary: t
 
 ## ✅ Development
 
-There is no test suite: the gates are ShellCheck, the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`markdown-oneline.yml`](.github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](.github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`; ShellCheck runs locally. [`claude.yml`](.github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
+There is no test suite: the gates are ShellCheck, the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`markdown-oneline.yml`](dot-github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](dot-github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`; ShellCheck runs locally. [`claude.yml`](dot-github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
 
 ## Contributing
 

@@ -17,7 +17,9 @@ machine_translated: true
 permalink: /fr/about/features/comprehensive-gem-automation-system/
 preview: /images/previews/comprehensive-gem-automation-system.png
 snippet: null
-source_file: comprehensive-gem-automation-system.md
+source_file: fr/about/features/comprehensive-gem-automation-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/comprehensive-gem-automation-system.md
 sub-title: Publications sans clic avec validation complète
 tags:
 - Automation
@@ -29,11 +31,12 @@ tags:
 - DRY
 - KIS
 - AIPD
-title: Semantic versioning with validation
+title: Système complet d'automatisation de gem
 translated_from_sha: bbc7431d4a78
 translation_of: pages/_about/features/comprehensive-gem-automation-system.md
 translation_source_url: /about/features/comprehensive-gem-automation-system/
 ---
+
 ## 🚀 Vue d'ensemble du système
 
 Un écosystème d'automatisation prêt pour la production qui incarne tous les principes fondamentaux d'IT-Journey (**DFF**, **DRY**, **KIS**, **REnO**, **MVP**, **COLAB**, **AIPD**) pour gérer l'intégralité du cycle de vie du développement d'un thème Jekyll, du développement local à la publication sur RubyGems.
@@ -414,7 +417,7 @@ Votre gem `zer0-mistakes` dispose désormais d'un système d'automatisation prê
 
 ## Documentation associée
 
-- [Scripts README](/scripts/README.md) - Documentation détaillée des scripts
-- [CHANGELOG.md](/CHANGELOG.md) - Historique des versions et modifications
+- [[zer0-mistakes/scripts/README|Scripts README]] - Documentation détaillée des scripts
+- [[zer0-mistakes/CHANGELOG|CHANGELOG.md]] - Historique des versions et modifications
 - [Workflows GitHub Actions](https://github.com/bamr87/zer0-mistakes/tree/main/.github/workflows) - Détails du pipeline CI/CD
 - [Makefile](/Makefile) - Référence et utilisation des commandes

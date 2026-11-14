@@ -10,15 +10,18 @@ estimated_reading_time: 8 min
 featured: false
 lastmod: 2026-08-15 12:00:00+00:00
 layout: article
-source_file: 2026-08-15-jekyll-preview-server-from-an-old-pc.md
+source_file: pages/_posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md
 tags:
 - jekyll
 - docker
 - homelab
 - livereload
 - workflow
-title: 'on the server, once:'
+title: Turn a Retired PC into an Always-Ready Jekyll Preview Server
 ---
+
 Theme work has a preview problem. `jekyll serve` on your laptop dies when the lid closes, hogs a port you wanted for something else, and shows the site to exactly one screen — yours. Meanwhile there is probably a perfectly good desktop in a closet somewhere that could hold a build of your site all day, on every device in the house.
 
 This tutorial turns that machine into a standing preview server: your theme served over the LAN with LiveReload, updated by one command from your laptop. The reference hardware is a 2012 Core i7 tower — 14 years old — and it handles this without noticing. Jekyll builds are CPU-light and RAM-tolerant; this is exactly the workload old hardware is still good at.

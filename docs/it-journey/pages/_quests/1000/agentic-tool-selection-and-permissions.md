@@ -56,7 +56,9 @@ rewards:
   skills_unlocked:
   - 🔐 Least-Privilege Tool Config
 skill_focus: devops
-source_file: agentic-tool-selection-and-permissions.md
+source_file: pages/_quests/1000/agentic-tool-selection-and-permissions.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/agentic-tool-selection-and-permissions.md
 sub_title: 'Level 1000 Quest 2/4 — Domain 2: Tool Use & Environment Interaction'
 tags:
 - '1000'
@@ -66,7 +68,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: work/gh-600/tool-inventories/dependency-updater-tools.yml
+title: 'Forging the Agent''s Arsenal: Tool Selection & Permissions'
 validation_criteria:
   completion_requirements:
   - Tool inventory created for a sample agent task
@@ -216,11 +218,11 @@ python3 scripts/validate_quest.py --quest q4
 | ⚒️ Tool Smith Badge | Earned on completion |
 | 🔐 Least-Privilege Tool Config | Skill unlocked |
 | 80 XP | Added to Level 1000 total |
-| Unlocks | [Q5: The MCP Conclave](/quests/1000/agentic-mcp-server-mastery/) |
+| Unlocks | [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery\|Q5: The MCP Conclave]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Unlocks:** [[The MCP Conclave: Mastering Model Context Protocol Servers]] **Sequel quests:** [[The MCP Conclave: Mastering Model Context Protocol Servers]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1000/README|Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Unlocks:** [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]] **Sequel quests:** [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -36,7 +36,7 @@ Supporting contracts:
 
 ## 4. Functional requirements
 
-1. **Crawl**: aggregate markdown from every active registry project (clone/pull, branch pins, external repos) — stages 1–3 (existing).
+1. **Collect**: take the official documentation of every active registry project in one stage: clone, select by the `collect:` rules, normalize, weave links, write `docs/`, and remove what upstream dropped. An unreachable repository is frozen, not lost.
 2. **Extract**: derive per-project facts offline from the corpus: identity
 (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md, AGENTS.md, …), structure, rollups (tags/categories/languages/words), key documents, and a corpus fingerprint for change detection.
 3. **Navigate**: turn each corpus's folder hierarchy into one canonical
@@ -46,8 +46,11 @@ navigation tree — sections from folders, landing pages from `index.md`/`README
 into the root README `AUTO:projects` span; mirror the fleet overview to the published site home (`docs/index.md`).
 6. **Index**: build a term index + manifest so queries need no rescan; navigation section titles are indexed alongside cards and facts.
 7. **Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/
-projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status` + `context://` resources).
+projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`, `get_note`, `get_neighbours`, `get_hot`, `vault_lint` + `context://` resources).
 8. **Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits; hooks allow agents to extend every build.
+9. **Vault**: `docs/` opens as an Obsidian vault. Every link is resolved by one resolver, and permalink and title links that would not resolve in Obsidian or MkDocs are woven into path-qualified wikilinks at ingest.
+10. **Second brain**: each build regenerates notes in `docs/brain/`: concepts from shared tags and unanswered links, project notes, a hot cache, a change log and vault health, with AI summaries cached so a keyless build reproduces them. `notes/` holds hand and agent-written notes.
+11. **Obsidian on the site**: the published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note.
 
 ## 5. Non-functional requirements
 
@@ -62,8 +65,10 @@ navigation entry is a corpus defect, not a nav exception. Frontmatter that break
 ## 6. Interfaces
 
 ```bash
+python3 -m scripts.context_engine collect [<name>...] [--workspace DIR]
 python3 -m scripts.context_engine build [--ai auto|off|anthropic|xai|mock]
 python3 -m scripts.context_engine sync|status|projects
+python3 -m scripts.context_engine hot | note <target> | neighbours <target> | lint | save <title> <body>
 python3 -m scripts.context_engine query <terms> | card <name> | facts <name> | apex
 python3 -m scripts.context_engine nav [<name>] [--depth N] [--json]
 python3 scripts/schema_lint.py check .
@@ -85,13 +90,18 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-006](features/features.yml) | Index | shipped | [`context`](context) · [`PRD.md`](PRD.md) | §4 |
 | [README-007](features/features.yml) | Serve | shipped | [`mcp`](mcp) · [`PRD.md`](PRD.md) | §4 |
 | [README-008](features/features.yml) | Evolve | shipped | [`hooks.d`](hooks.d) · [`PRD.md`](PRD.md) | §4 |
-| [README-009](features/features.yml) | Published fleet documentation site | shipped | [``](.) · [`MKDOCS.md`](MKDOCS.md) | TBD |
+| [README-009](features/features.yml) | Published fleet documentation site | shipped | route `/` · [`MKDOCS.md`](MKDOCS.md) | TBD |
+| [README-010](features/features.yml) | Collect | shipped | [`scripts/context_engine/collect.py`](scripts/context_engine/collect.py) · [`scripts/README.md`](scripts/README.md) | §4 |
+| [README-011](features/features.yml) | Obsidian vault | shipped | [`scripts/context_engine/vault.py`](scripts/context_engine/vault.py) · [`README.md`](README.md) | §4 |
+| [README-012](features/features.yml) | Second brain notes | shipped | [`scripts/context_engine/brain.py`](scripts/context_engine/brain.py) · [`README.md`](README.md) | §4 |
+| [README-013](features/features.yml) | Obsidian views on the site | shipped | route `/brain/` · [`MKDOCS.md`](MKDOCS.md) | §4 |
+| [README-014](features/features.yml) | Vault reads for agents | shipped | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | §4 |
 
 **Requirement → feature trace**
 
 | Requirement | Features |
 | --- | --- |
-| §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008 |
+| §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008, README-010, README-011, README-012, README-013, README-014 |
 | TBD | README-009 |
 <!-- features:end -->
 

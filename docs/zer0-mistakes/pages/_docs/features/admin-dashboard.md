@@ -12,7 +12,9 @@ permalink: /docs/features/admin-dashboard/
 preview: /images/previews/admin-layout-configuration-dashboards.png
 sidebar:
   nav: docs
-source_file: admin-dashboard.md
+source_file: pages/_docs/features/admin-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/admin-dashboard.md
 tags:
 - admin
 - dashboard
@@ -20,6 +22,7 @@ tags:
 - configuration
 title: Admin Layout & Configuration Dashboards
 ---
+
 # Admin Layout & Configuration Dashboards
 
 The zer0-mistakes theme ships an `admin` layout and a set of dashboard partials for surfacing site configuration, build metadata, and feature flags — all in one place, without requiring a CMS or backend.
@@ -120,10 +123,10 @@ Add your content here. Use Bootstrap 5 components freely.
 
 ## Related
 
-- [Dynamic Navigation](/docs/features/dynamic-navigation/)
-- [Theme Configuration](/docs/customization/)
+- [[zer0-mistakes/pages/_docs/features/dynamic-navigation|Dynamic Navigation]]
+- [[zer0-mistakes/pages/_docs/customization/index|Theme Configuration]]
 
 ## See also
 
-- [[Features]]
-- [[Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]

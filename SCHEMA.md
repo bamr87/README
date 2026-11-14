@@ -24,6 +24,9 @@ coverage: listed
   editing the registry, never the nav.
 - `docs/*` mirrors independent repos: the pyramid stops at their boundary
   (`terminal`); each fleet project carries its own pyramid in its own repo.
+- `docs/` is an Obsidian vault. `scripts/context_engine/vault.py` defines what a
+  note and a link are; `docs/brain/` is generated from the corpus, and `notes/`
+  is the only hand-written source of vault content.
 - Validate with `python3 scripts/schema_lint.py check .` — wired into the
   docs quality gate.
 
@@ -36,11 +39,13 @@ coverage: listed
 | `_data/` | dir | Registries — projects.yml is the source of truth for the fleet | required |
 | `_drafts/` | dir | Session hand-off posts drafted for bamr87/it-journey; deleted once published | terminal |
 | `_includes/` | dir | Hub feedback kit: `custom/fleet-feedback.html` widget include (Jekyll-shaped; not yet wired into MkDocs) | terminal |
+| `brain_site/` | dir | MkDocs hook and browser assets: wikilinks, callouts, backlinks, graph, canvas, previews, quick switcher | required terminal |
 | `assets/` | dir | Hub feedback kit: `js/fleet-feedback.js` + `js/fleet-feedback-capture.js` | terminal |
 | `context/` | dir | The context pyramid: facts, cards, apex, query index (rebuilt by the engine) | generated |
-| `docs/` | dir | L3 corpus: markdown aggregated from fleet repos (build artifact of stages 1–3) | generated |
+| `docs/` | dir | The Obsidian vault: L3 corpus collected from fleet repos, plus the generated notes in `docs/brain/` | generated |
 | `features/` | dir | Hub verify kit: `features.yml`, the feature index graded by the hub | terminal |
 | `hooks.d/` | dir | Lifecycle hooks the engine runs at each build stage | required |
+| `notes/` | dir | Hand and agent-written notes, copied into the vault at `docs/brain/notes/` | required |
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
@@ -48,7 +53,7 @@ coverage: listed
 | `verify/` | dir | Hub verify kit: `verify.yml` (how to serve the site), `runner.mjs`, `scenarios/*.yml` | terminal |
 | `.editorconfig` | file | Editor defaults (standardization baseline) | |
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
-| `.gitignore` | file | Ignore rules for temp/, raw_docs/, site/, venvs | |
+| `.gitignore` | file | Ignore rules for temp/, site/, .cache/, venvs | |
 | `.mcp.json` | file | MCP server registration for Claude Code and other clients | required |
 | `.release-please-manifest.json` | file | release-please version manifest (release kit) | |
 | `AGENTS.md` | file | Canonical agent guidance, including the SCHEMA protocol | required |
@@ -65,7 +70,7 @@ coverage: listed
 | `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT` | required |
 | `nav.yml` | file | Published navigation: MkDocs `nav` + `exclude_docs`, rendered by the engine's navigator | generated |
 | `release-please-config.json` | file | release-please configuration (release kit) | |
-| `repos.txt` | file | Aggregation input — regenerated from _data/projects.yml | generated |
+| `repos.txt` | file | Readable list of aggregated repositories, regenerated from _data/projects.yml | generated |
 | `requirements-docs.txt` | file | Python deps for the MkDocs build | |
 | `requirements.txt` | file | Python deps for pipeline + engine | |
 

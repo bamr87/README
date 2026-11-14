@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "cv-pro",
+  "title": "CV Pro",
+  "corpus": "docs/cv-pro",
+  "counts": {
+    "pages": 32,
+    "sections": 6,
+    "max_depth": 3,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "18b990201059e6d1",
+  "tree": {
+    "type": "section",
+    "title": "CV Pro",
+    "index": "cv-pro/README.md",
+    "pages": 32,
+    "children": [
+      {
+        "type": "page",
+        "title": "cv-pro \u2014 the CV machine and its builder, in one repository",
+        "path": "cv-pro/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "cv-pro/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "cv-pro (AGENTS)",
+        "path": "cv-pro/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "cv-pro (CLAUDE)",
+        "path": "cv-pro/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "section",
+        "title": "CV Builder Pro",
+        "rel": "app",
+        "index": "cv-pro/app/README.md",
+        "pages": 10,
+        "children": [
+          {
+            "type": "page",
+            "title": "CV Builder Pro",
+            "path": "cv-pro/app/README.md",
+            "rel": "app/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "cv-pro/app/CHANGELOG.md",
+            "rel": "app/CHANGELOG.md"
+          },
+          {
+            "type": "page",
+            "title": "contract/ \u2014 the two-repo CVData contract",
+            "path": "cv-pro/app/contract/README.md",
+            "rel": "app/contract/README.md",
+            "folder": "app/contract"
+          },
+          {
+            "type": "page",
+            "title": "CV Builder - Comprehensive Features & Functions",
+            "path": "cv-pro/app/FEATURES.md",
+            "rel": "app/FEATURES.md"
+          },
+          {
+            "type": "page",
+            "title": "CV Builder - Features & Functions Documentation",
+            "path": "cv-pro/app/CV_BUILDER_FEATURES.md",
+            "rel": "app/CV_BUILDER_FEATURES.md"
+          },
+          {
+            "type": "page",
+            "title": "CV Builder - Product Requirements Document",
+            "path": "cv-pro/app/PRD.md",
+            "rel": "app/PRD.md"
+          },
+          {
+            "type": "page",
+            "title": "CV Builder Pro (app/) (AGENTS)",
+            "path": "cv-pro/app/AGENTS.md",
+            "rel": "app/AGENTS.md"
+          },
+          {
+            "type": "page",
+            "title": "CV Builder Pro (app/) (CLAUDE)",
+            "path": "cv-pro/app/CLAUDE.md",
+            "rel": "app/CLAUDE.md"
+          },
+          {
+            "type": "page",
+            "title": "Security",
+            "path": "cv-pro/app/SECURITY.md",
+            "rel": "app/SECURITY.md"
+          },
+          {
+            "type": "page",
+            "title": "Source",
+            "path": "cv-pro/app/src/features-and-functions.md",
+            "rel": "app/src/features-and-functions.md",
+            "folder": "app/src"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "cv \u2014 the CV build, maintain & publish machine",
+        "rel": "cv",
+        "index": "cv-pro/cv/README.md",
+        "pages": 10,
+        "children": [
+          {
+            "type": "page",
+            "title": "cv \u2014 the CV build, maintain & publish machine",
+            "path": "cv-pro/cv/README.md",
+            "rel": "cv/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Amr Abdel-Motaleb",
+            "path": "cv-pro/cv/CV.md",
+            "rel": "cv/CV.md"
+          },
+          {
+            "type": "page",
+            "title": "builder/ \u2014 the generation engine",
+            "path": "cv-pro/cv/builder/README.md",
+            "rel": "cv/builder/README.md",
+            "folder": "cv/builder"
+          },
+          {
+            "type": "page",
+            "title": "Changelog",
+            "path": "cv-pro/cv/CHANGELOG.md",
+            "rel": "cv/CHANGELOG.md"
+          },
+          {
+            "type": "page",
+            "title": "cv (AGENTS)",
+            "path": "cv-pro/cv/AGENTS.md",
+            "rel": "cv/AGENTS.md"
+          },
+          {
+            "type": "page",
+            "title": "cv (CLAUDE)",
+            "path": "cv-pro/cv/CLAUDE.md",
+            "rel": "cv/CLAUDE.md"
+          },
+          {
+            "type": "page",
+            "title": "data/ \u2014 the canonical CV",
+            "path": "cv-pro/cv/data/README.md",
+            "rel": "cv/data/README.md",
+            "folder": "cv/data"
+          },
+          {
+            "type": "section",
+            "title": "jd/ \u2014 job descriptions & tailored variants",
+            "rel": "cv/jd",
+            "index": "cv-pro/cv/jd/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "jd/ \u2014 job descriptions & tailored variants",
+                "path": "cv-pro/cv/jd/README.md",
+                "rel": "cv/jd/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Aesse Investments | ERP Architect",
+                "path": "cv-pro/cv/jd/aesse-erp-architect.md",
+                "rel": "cv/jd/aesse-erp-architect.md"
+              },
+              {
+                "type": "page",
+                "title": "Sr. Manager \u2013 Financial Systems and ITBP / Senior Manager \u2013 Accounting\u2026",
+                "path": "cv-pro/cv/jd/valmont-sr-mgr-financial-systems-itbp.md",
+                "rel": "cv/jd/valmont-sr-mgr-financial-systems-itbp.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "cv-pro/docs/README.md",
+        "pages": 8,
+        "children": [
+          {
+            "type": "page",
+            "title": "cv-pro documentation",
+            "path": "cv-pro/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "cv-pro \u2014 Constitution",
+            "path": "cv-pro/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 cv-pro",
+            "rel": "docs/amendments",
+            "index": "cv-pro/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 cv-pro",
+                "path": "cv-pro/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "cv-pro/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "cv-pro/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "cv-pro/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "cv-pro/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "cv-pro/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "cv-pro/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

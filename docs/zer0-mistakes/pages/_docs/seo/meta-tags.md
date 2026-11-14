@@ -12,7 +12,9 @@ permalink: /docs/seo/meta-tags/
 preview: /images/previews/seo-meta-tags.png
 sidebar:
   nav: docs
-source_file: meta-tags.md
+source_file: pages/_docs/seo/meta-tags.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/seo/meta-tags.md
 tags:
 - seo
 - meta
@@ -20,6 +22,7 @@ tags:
 - twitter-cards
 title: SEO Meta Tags
 ---
+
 # SEO Meta Tags
 
 Automatic generation of SEO meta tags for better search engine and social media visibility.
@@ -143,7 +146,7 @@ author: "Different Author"
 
 ### Automatic Generation
 
-The theme can generate preview images automatically. See [Preview Image Generator](/docs/features/preview-image-generator/).
+The theme can generate preview images automatically. See [[zer0-mistakes/docs/implementation/preview-image-generator|Preview Image Generator]].
 
 ### Manual Configuration
 
@@ -265,12 +268,12 @@ Test Twitter Cards at [https://cards-dev.twitter.com/validator](https://cards-de
 
 ## Related
 
-- [Sitemap](/docs/seo/sitemap/)
-- [Preview Image Generator](/docs/features/preview-image-generator/)
-- [Breadcrumbs](/docs/features/breadcrumbs/)
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Sitemap]]
+- [[zer0-mistakes/docs/implementation/preview-image-generator|Preview Image Generator]]
+- [[zer0-mistakes/pages/_docs/features/breadcrumbs|Breadcrumbs]]
 
 ## See also
 
 - [[SEO]]
-- [[front-matter]]
-- [[Analytics]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]

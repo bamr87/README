@@ -18,18 +18,21 @@ prerequisites:
 preview: /images/previews/posthog-analytics.png
 sidebar:
   nav: docs
-source_file: posthog-analytics.md
+source_file: fr/docs/features/posthog-analytics.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/posthog-analytics.md
 tags:
 - posthog
 - jekyll
 - analytics
 - privacy
 - gdpr
-title: Analytics PostHog
+title: PostHog Analytics
 translated_from_sha: b61e1e545b0d
 translation_of: pages/_docs/features/posthog-analytics.md
 translation_source_url: /docs/features/posthog-analytics/
 ---
+
 # Analytics PostHog
 
 > Mettez en place des analytics respectueux de la vie privée et conformes au RGPD dans votre site Jekyll grâce à PostHog, avec suivi d'événements personnalisés et prise en charge de Do Not Track.
@@ -273,7 +276,7 @@ Pour les détails d'implémentation (configuration RGPD/CCPA, architecture de su
 
 ## Voir aussi
 
-- [[Features]]
-- [[Google Analytics]]
-- [[Cookie Consent Management]]
-- [[Analytics]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/analytics/google-analytics|Google Analytics]]
+- [[zer0-mistakes/pages/_docs/features/cookie-consent|Cookie Consent Management]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]

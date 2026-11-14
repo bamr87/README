@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/ai/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/ai/README.md
 title: IT-Journey AI runner & content fleet
 ---
 # IT-Journey AI runner & content fleet
@@ -78,7 +80,7 @@ The **issue→quest** lane closes the loop with lifehacker.dev: its quest-forge 
 
 ## The issue autopilot (analyze open issues → grouped resolution PRs)
 
-The issue-side analogue of the content fleet. A deterministic engine (`scripts/issues/triage.py`) classifies every open issue into a **disposition** and groups them into PR-sized **batches**; `scripts/issues/dispatch.py` applies backpressure (`.issues/budget.yml`) so the loop never buries the reviewer. See [`.issues/README.md`](../../.issues/README.md) for the full data-layer contract.
+The issue-side analogue of the content fleet. A deterministic engine (`scripts/issues/triage.py`) classifies every open issue into a **disposition** and groups them into PR-sized **batches**; `scripts/issues/dispatch.py` applies backpressure (`.issues/budget.yml`) so the loop never buries the reviewer. See [`.issues/README.md`](../../dot-issues/README.md) for the full data-layer contract.
 
 | Workflow | Trigger | Agent | What it does | Gate variable |
 |---|---|---|---|---|
@@ -136,7 +138,7 @@ Quest pages embed the published video via `_includes/quest/quest-video.html` (la
 |---|---|---|---|---|
 | `theme-scout.yml` | weekly Tue 06:00 | `theme-scout` | a Playwright crawler tests the **it-journey.dev** frontend; the agent files **theme** bugs (site-wide / theme-injected) upstream to `bamr87/zer0-mistakes`, deduped | `THEME_SCOUT_ENABLED` (+ `THEME_REPO_TOKEN`) |
 
-it-journey.dev consumes the theme via `remote_theme`, so it's a live canary: the deterministic `scripts/frontend/crawl.mjs` + `triage_findings.py` find site-wide defects (e.g. 404s on theme-injected `/tags/`, `/search.json`), and the `theme-scout` agent reports them to the theme repo. See [`.frontend/README.md`](../../.frontend/README.md).
+it-journey.dev consumes the theme via `remote_theme`, so it's a live canary: the deterministic `scripts/frontend/crawl.mjs` + `triage_findings.py` find site-wide defects (e.g. 404s on theme-injected `/tags/`, `/search.json`), and the `theme-scout` agent reports them to the theme repo. See [`.frontend/README.md`](../../dot-frontend/README.md).
 
 Roles live in `.claude/agents/*.md`; procedures in `.claude/skills/` (the `content-curator` skill composes `cms-curator` + `brand-voice`; the `issue-triage` skill drives the issue-triager + issue-resolver; the `theme-scout` skill drives the frontend canary; the `quest-walkthrough` skill drives the quest-walker; the six `quest-character-*` sheets give the walk/fix lanes each path's persona, voice, and per-level exercises — kept in sync with `_data/quests/paths.yml` by `scripts/quest/character_skills.py`). Brand is anchored by `_data/brand/*` and enforced cheaply by `scripts/ci/brand_lint.py`; the auto-merge guard is `scripts/ci/classify_changes.py`.
 

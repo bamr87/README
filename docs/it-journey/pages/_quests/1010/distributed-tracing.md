@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Access to the Alerting Systems quest
 skill_focus: devops
-source_file: distributed-tracing.md
+source_file: pages/_quests/1010/distributed-tracing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/distributed-tracing.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Distributed Tracing'
 tags:
 - '1010'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Jaeger all-in-one exposes OTLP on 4317/4318 and the UI on 16686
+title: Distributed Tracing with Jaeger & OpenTelemetry
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] The three pillars of observability (complete [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) first)
+- [ ] The three pillars of observability (complete [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] first)
 - [ ] Basic Python: functions, imports, running a script
 - [ ] How HTTP services make requests to one another
 
@@ -444,16 +446,16 @@ processors:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Alerting Systems](/quests/1010/alerting-systems/) - Route and respond to the problems tracing reveals
+- 🎯 [[it-journey/pages/_quests/1010/alerting-systems|Alerting Systems]] - Route and respond to the problems tracing reveals
 
 **Explore Side Adventures**:
-- ⚔️ [ELK Stack](/quests/1010/elk-stack/) - Correlate traces with the logs each span produced
+- ⚔️ [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]] - Correlate traces with the logs each span produced
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Alerting Systems](/quests/1010/alerting-systems/)  
-**🏗️ System Engineer**: Explore [ELK Stack](/quests/1010/elk-stack/)  
-**🛡️ Security Specialist**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) for SLO grounding
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1010/alerting-systems|Alerting Systems]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]]  
+**🛡️ Security Specialist**: Revisit [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] for SLO grounding
 
 ## 📚 Resources
 
@@ -483,6 +485,6 @@ processors:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

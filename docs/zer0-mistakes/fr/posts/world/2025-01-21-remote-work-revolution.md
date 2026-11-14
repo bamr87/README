@@ -22,17 +22,21 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/21/remote-work-revolution/
 preview: /images/previews/the-remote-work-revolution-how-global-teams-are-re.png
-source_file: 2025-01-21-remote-work-revolution.md
+source_file: fr/posts/world/2025-01-21-remote-work-revolution.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/world/2025-01-21-remote-work-revolution.md
 tags:
 - remote-work
 - global
 - business
 - future-of-work
-title: 2025 01 21 Remote Work Revolution
+title: 'La révolution du travail à distance : comment les équipes mondiales redessinent
+  l''entreprise'
 translated_from_sha: eca7d4a2c777
 translation_of: pages/_posts/world/2025-01-21-remote-work-revolution.md
 translation_source_url: /posts/2025/01/21/remote-work-revolution/
 ---
+
 La façon dont nous travaillons a fondamentalement changé. Ce qui a commencé comme une réponse d'urgence s'est installé comme une transformation permanente, remodelant les lieux de vie, le fonctionnement des entreprises et les villes qui prospèrent. Cet article cartographie la révolution mondiale du télétravail — les données, les points chauds, l'économie et ce qu'il faut pour bien diriger des équipes distribuées.
 
 ## L'état du télétravail en 2025

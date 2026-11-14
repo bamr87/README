@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:57+00:00
 description: Supported ways to change the look and behavior of Zer0-Mistakes without
   forking the whole theme, layered from smallest tweak to deepest override.
 lastmod: 2026-05-31 20:54:57+00:00
-source_file: customization.md
+source_file: docs/ui/customization.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/customization.md
 tags:
 - ui
 - styling
 - theme
 title: Customization
 ---
+
 # Customization
 
 Supported ways to change zer0-mistakes' look and behavior **without forking the entire theme**. Pick the smallest layer that meets your need.

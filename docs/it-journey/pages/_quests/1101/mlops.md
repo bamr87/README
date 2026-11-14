@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the AI Ethics quest of Level 1101
 skill_focus: ai-ml
-source_file: mlops.md
+source_file: pages/_quests/1101/mlops.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/mlops.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - MLOps Engineering'
 tags:
 - '1101'
@@ -86,7 +88,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: Verify MLflow, then launch its tracking UI on http://localhost:5000
+title: 'MLOps Engineering: CI/CD Pipelines for ML in Production'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -412,17 +414,17 @@ When drift fires, you investigate and often **retrain**. This is where **CI/CD f
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [AI Ethics](/quests/1101/ai-ethics/) - Govern the models you can now deploy
+- 🎯 [[it-journey/pages/_quests/1101/ai-ethics|AI Ethics]] - Govern the models you can now deploy
 
 **Explore Side Adventures**:
-- ⚔️ [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/) - Build deeper models to deploy
-- ⚔️ [ML Fundamentals](/quests/1101/ml-fundamentals/) - Refresh the evaluation discipline
+- ⚔️ [[it-journey/pages/_quests/1101/deep-learning-frameworks|Deep Learning Frameworks]] - Build deeper models to deploy
+- ⚔️ [[it-journey/pages/_quests/1101/ml-fundamentals|ML Fundamentals]] - Refresh the evaluation discipline
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [AI Ethics](/quests/1101/ai-ethics/)  
-**🏗️ System Engineer**: Explore [AI Ethics](/quests/1101/ai-ethics/)  
-**📊 Data Scientist**: Advance to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/ai-ethics|AI Ethics]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/ai-ethics|AI Ethics]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/deep-learning-frameworks|Deep Learning Frameworks]]
 
 ## 📚 Resources
 
@@ -451,6 +453,6 @@ When drift fires, you investigate and often **retrain**. This is where **CI/CD f
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Required:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Unlocks:** [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Required:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Unlocks:** [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

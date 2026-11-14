@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 9
-source_file: semtex9.md
+source_file: wargames/semtex/semtex9.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex9.md
 title: Semtex9
 ---
 Tunneling your firewall

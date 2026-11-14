@@ -1,0 +1,326 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "SCHEMA",
+  "title": "SCHEMA Protocol",
+  "corpus": "docs/SCHEMA",
+  "counts": {
+    "pages": 35,
+    "sections": 10,
+    "max_depth": 5,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "c307422bd8ced662",
+  "tree": {
+    "type": "section",
+    "title": "SCHEMA Protocol",
+    "index": "SCHEMA/README.md",
+    "pages": 35,
+    "children": [
+      {
+        "type": "page",
+        "title": "Pyramid Schema (SCHEMA.md)",
+        "path": "SCHEMA/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "SCHEMA/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 Pyramid Schema (SCHEMA)",
+        "path": "SCHEMA/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA (AGENTS)",
+        "path": "SCHEMA/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA (CLAUDE)",
+        "path": "SCHEMA/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA \u2014 features",
+        "path": "SCHEMA/features/SCHEMA.md",
+        "rel": "features/SCHEMA.md",
+        "folder": "features"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA \u2014 pyramid-schema",
+        "path": "SCHEMA/SCHEMA.md",
+        "rel": "SCHEMA.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA \u2014 tools",
+        "path": "SCHEMA/tools/SCHEMA.md",
+        "rel": "tools/SCHEMA.md",
+        "folder": "tools"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "SCHEMA/docs/README.md",
+        "pages": 10,
+        "children": [
+          {
+            "type": "page",
+            "title": "SCHEMA documentation",
+            "path": "SCHEMA/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Pyramid Schema \u2014 Effectiveness & Token-Reduction Report",
+            "path": "SCHEMA/docs/2026-07-15-effectiveness-report.md",
+            "rel": "docs/2026-07-15-effectiveness-report.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 Constitution",
+            "path": "SCHEMA/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 docs",
+            "path": "SCHEMA/docs/SCHEMA.md",
+            "rel": "docs/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "The Copy You Forgot You Made",
+            "path": "SCHEMA/docs/2026-09-03-the-copy-you-forgot-you-made.md",
+            "rel": "docs/2026-09-03-the-copy-you-forgot-you-made.md"
+          },
+          {
+            "type": "page",
+            "title": "The Pyramid Schema: SCHEMA.md in Every Directory, and Why Stateless\u2026",
+            "path": "SCHEMA/docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md",
+            "rel": "docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 SCHEMA",
+            "rel": "docs/amendments",
+            "index": "SCHEMA/docs/amendments/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 SCHEMA",
+                "path": "SCHEMA/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "SCHEMA/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "SCHEMA/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 docs/amendments",
+                "path": "SCHEMA/docs/amendments/SCHEMA.md",
+                "rel": "docs/amendments/SCHEMA.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Example",
+        "rel": "example",
+        "pages": 11,
+        "children": [
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 example",
+            "path": "SCHEMA/example/SCHEMA.md",
+            "rel": "example/SCHEMA.md"
+          },
+          {
+            "type": "section",
+            "title": "acme-app",
+            "rel": "example/acme-app",
+            "index": "SCHEMA/example/acme-app/README.md",
+            "pages": 10,
+            "children": [
+              {
+                "type": "page",
+                "title": "acme-app",
+                "path": "SCHEMA/example/acme-app/README.md",
+                "rel": "example/acme-app/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "CLAUDE.md \u2014 acme-app",
+                "path": "SCHEMA/example/acme-app/CLAUDE.md",
+                "rel": "example/acme-app/CLAUDE.md"
+              },
+              {
+                "type": "page",
+                "title": "SCHEMA \u2014 acme-app",
+                "path": "SCHEMA/example/acme-app/SCHEMA.md",
+                "rel": "example/acme-app/SCHEMA.md"
+              },
+              {
+                "type": "section",
+                "title": "Documentation",
+                "rel": "example/acme-app/docs",
+                "index": "SCHEMA/example/acme-app/docs/index.md",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "acme-app documentation",
+                    "path": "SCHEMA/example/acme-app/docs/index.md",
+                    "rel": "example/acme-app/docs/index.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 docs",
+                    "path": "SCHEMA/example/acme-app/docs/SCHEMA.md",
+                    "rel": "example/acme-app/docs/SCHEMA.md"
+                  },
+                  {
+                    "type": "section",
+                    "title": "Adr",
+                    "rel": "example/acme-app/docs/adr",
+                    "pages": 2,
+                    "children": [
+                      {
+                        "type": "page",
+                        "title": "0001 \u2014 Adopt the Pyramid Schema",
+                        "path": "SCHEMA/example/acme-app/docs/adr/0001-adopt-pyramid-schema.md",
+                        "rel": "example/acme-app/docs/adr/0001-adopt-pyramid-schema.md"
+                      },
+                      {
+                        "type": "page",
+                        "title": "SCHEMA \u2014 docs/adr",
+                        "path": "SCHEMA/example/acme-app/docs/adr/SCHEMA.md",
+                        "rel": "example/acme-app/docs/adr/SCHEMA.md"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Source",
+                "rel": "example/acme-app/src",
+                "pages": 3,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 src",
+                    "path": "SCHEMA/example/acme-app/src/SCHEMA.md",
+                    "rel": "example/acme-app/src/SCHEMA.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 src/components",
+                    "path": "SCHEMA/example/acme-app/src/components/SCHEMA.md",
+                    "rel": "example/acme-app/src/components/SCHEMA.md",
+                    "folder": "example/acme-app/src/components"
+                  },
+                  {
+                    "type": "page",
+                    "title": "SCHEMA \u2014 src/lib",
+                    "path": "SCHEMA/example/acme-app/src/lib/SCHEMA.md",
+                    "rel": "example/acme-app/src/lib/SCHEMA.md",
+                    "folder": "example/acme-app/src/lib"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Protocol",
+        "rel": "protocol",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "Claude.Snippet",
+            "path": "SCHEMA/protocol/CLAUDE.snippet.md",
+            "rel": "protocol/CLAUDE.snippet.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 protocol",
+            "path": "SCHEMA/protocol/SCHEMA.md",
+            "rel": "protocol/SCHEMA.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Spec",
+        "rel": "spec",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "Pyramid Schema (SCHEMA.md) \u2014 Specification v0.1",
+            "path": "SCHEMA/spec/pyramid-schema-spec-v0.1.md",
+            "rel": "spec/pyramid-schema-spec-v0.1.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 spec",
+            "path": "SCHEMA/spec/SCHEMA.md",
+            "rel": "spec/SCHEMA.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Templates",
+        "rel": "templates",
+        "pages": 2,
+        "children": [
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 templates",
+            "path": "SCHEMA/templates/SCHEMA.md",
+            "rel": "templates/SCHEMA.md"
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 {{directoryname}}",
+            "path": "SCHEMA/templates/SCHEMA.template.md",
+            "rel": "templates/SCHEMA.template.md"
+          }
+        ]
+      }
+    ]
+  }
+}

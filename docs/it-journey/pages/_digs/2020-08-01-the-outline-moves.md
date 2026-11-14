@@ -19,13 +19,15 @@ permalink: /digs/2020-08-01-the-outline-moves/
 range_end: 2020-08-17
 range_start: 2020-08-01
 repository: bamr87/it-journey
-source_file: 2020-08-01-the-outline-moves.md
+source_file: pages/_digs/2020-08-01-the-outline-moves.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_digs/2020-08-01-the-outline-moves.md
 start_sha: 00dd4b5b4104cfa4f9354e3926672e8e342f41a5
 tags:
 - git
 - history
 - archaeology
-title: 2020 08 01 The Outline Moves
+title: The outline moves, the paths do not
 voice_profile: git-dig
 ---
 A repository that has promised a journey now spends sixteen days moving the luggage. The subjects get vaguer as the tree gets more organized. `Update`. `test`. `commit`. `Clean up`. If the history were a diary, these would be the days it forgot to say what happened, and then carefully recorded the furniture.

@@ -16,7 +16,9 @@ lastmod: 2026-04-29 00:00:00+00:00
 layout: article
 mermaid: true
 preview: /images/wizard-on-journey.png
-source_file: 2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
+source_file: pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
 tags:
 - satire
 - ethics
@@ -26,8 +28,9 @@ tags:
 - open-source
 - esg
 - algorithmic-accountability
-title: scripts/ingest_edgar.py
+title: Wizard Topples Capitalist Dominance Ingeniously
 ---
+
 In a stunning turn of events, the world was saved from the clutches of capitalism by a wizard who used non-arcane magic—practical technology and ethical reasoning—to eliminate the evils of the system while still maintaining shareholder value. The wizard, known only as Merlin Financialis, has been hailed as a hero for his groundbreaking efforts to expose the financial puppeteering that has plagued humanity for generations.
 
 > ⚠️ **Satire notice**: This post is a tongue-in-cheek allegory. The wizard is fictional; the tools, frameworks, and patterns referenced below are very real and linked at the end.

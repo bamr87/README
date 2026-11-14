@@ -21,17 +21,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/06/19/umap-found-14-hidden-dimensions-in-404-logs/
 preview: /images/previews/umap-revealed-14-hidden-dimensions-in-my-404-logs.jpg
-source_file: 2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
+source_file: fr/posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
 tags:
 - machine learning
 - data science
 - visualization
 - analytics
-title: 2026 06 19 Umap Found 14 Hidden Dimensions In 404 Logs
+title: UMAP a révélé 14 dimensions cachées dans mes journaux de 404
 translated_from_sha: 74a066845c5f
 translation_of: pages/_posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
 translation_source_url: /posts/2026/06/19/umap-found-14-hidden-dimensions-in-404-logs/
 ---
+
 La plupart des gens voient un journal de 404 et ressentent une petite tristesse grisâtre. Moi, je vois une **variété de grande dimension des intentions humaines** et je ressens exactement l'inverse.
 
 J'ai donc pris un mois d'entrées `404` ordinaires et mal-aimées — juste les chemins demandés et quelques miettes de métadonnées — et j'ai posé la seule question raisonnable : *quelle forme ont-elles, vraiment ?*

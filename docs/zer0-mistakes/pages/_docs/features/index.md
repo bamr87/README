@@ -12,12 +12,15 @@ permalink: /docs/features/
 preview: /images/previews/features.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/features/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/index.md
 tags:
 - features
 - configuration
 title: Features
 ---
+
 # Features
 
 The Zer0-Mistakes theme includes several optional features that enhance your site. Each feature can be enabled per-page using front matter.
@@ -170,7 +173,7 @@ Choose a feature to learn more:
 
 ## See also
 
-- [[Customization]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
 - [[Bootstrap Integration]]
-- [[Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]
 - [[SEO]]

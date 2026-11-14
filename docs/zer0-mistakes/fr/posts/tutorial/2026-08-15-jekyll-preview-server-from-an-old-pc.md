@@ -15,18 +15,22 @@ lastmod: 2026-08-15 12:00:00+00:00
 layout: article
 machine_translated: true
 permalink: /fr/posts/2026/08/15/jekyll-preview-server-from-an-old-pc/
-source_file: 2026-08-15-jekyll-preview-server-from-an-old-pc.md
+source_file: fr/posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md
 tags:
 - jekyll
 - docker
 - homelab
 - livereload
 - workflow
-title: 'on the server, once:'
+title: Transformez un PC à la retraite en serveur de prévisualisation Jekyll toujours
+  prêt
 translated_from_sha: 22764b20a0e9
 translation_of: pages/_posts/tutorial/2026-08-15-jekyll-preview-server-from-an-old-pc.md
 translation_source_url: /posts/2026/08/15/jekyll-preview-server-from-an-old-pc/
 ---
+
 Le travail sur les thèmes pose un problème de prévisualisation. `jekyll serve` sur votre ordinateur portable s'arrête quand vous rabattez l'écran, monopolise un port dont vous aviez besoin pour autre chose, et n'affiche le site que sur un seul écran — le vôtre. Pendant ce temps, il y a probablement un ordinateur de bureau parfaitement fonctionnel dans un placard, capable de faire tourner un build de votre site toute la journée, sur tous les appareils de la maison.
 
 Ce tutoriel transforme cette machine en serveur de prévisualisation permanent : votre thème servi sur le réseau local avec LiveReload, mis à jour d'une seule commande depuis votre ordinateur portable. Le matériel de référence est une tour Core i7 de 2012 — 14 ans d'âge — et elle s'en sort sans broncher. Les builds Jekyll sont peu gourmands en CPU et tolérants en RAM ; c'est exactement la charge de travail à laquelle le vieux matériel reste bon.

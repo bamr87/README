@@ -2,7 +2,9 @@
 gamename: drifter
 layout: default
 level: 5
-source_file: drifter5.md
+source_file: wargames/drifter/drifter5.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/drifter/drifter5.md
 title: Drifter5
 ---
 Level 5 is a series of relatively simple logic/math games.

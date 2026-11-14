@@ -17,14 +17,17 @@ layout: book
 permalink: /books/zer0-tales/
 preview: /assets/images/zer0-mistakes-wizard.png
 sitemap: true
-source_file: index.md
+source_file: pages/_books/zer0-tales/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_books/zer0-tales/index.md
 status: complete
 subtitle: A tiny demo picture book for the books collection
 synopsis: Zer0 the wizard keeps a very tidy website. But when a pixel goes missing
   the night before launch, Zer0 must journey through the Mountains of Markdown to
   bring it home.
-title: Index
+title: The Tales of Zer0
 ---
+
 **The Tales of Zer0** is the theme's built-in demonstration book. It exists so theme developers can see the `books` collection end to end: a landing page with a cover hero and table of contents, story pages with plates and prev/next navigation, and the collapsed illustration-prompt colophon.
 
-To build your own book, copy this folder's structure: an `index.md` with `layout: book` and a shared `book:` slug, plus one file per story with `layout: book-story` (set by the collection defaults) and a numeric `chapter:`. The full guide lives at [Books collection](/docs/features/book-collection/).
+To build your own book, copy this folder's structure: an `index.md` with `layout: book` and a shared `book:` slug, plus one file per story with `layout: book-story` (set by the collection defaults) and a numeric `chapter:`. The full guide lives at [[zer0-mistakes/pages/_docs/features/book-collection|Books collection]].

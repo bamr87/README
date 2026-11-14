@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the deep learning and MLOps quests of Level 1101
 skill_focus: ai-ml
-source_file: ml-fundamentals.md
+source_file: pages/_quests/1101/ml-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/ml-fundamentals.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - Machine Learning Fundamentals'
 tags:
 - '1101'
@@ -87,7 +89,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: Create and activate an isolated environment
+title: Machine Learning Fundamentals with Scikit-Learn
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -446,17 +448,17 @@ The "elbow method" - plotting inertia against k - helps choose how many clusters
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Neural Networks Deep Dive](/quests/1101/neural-networks/) - From linear models to deep nets
+- 🎯 [[it-journey/pages/_quests/1101/neural-networks|Neural Networks Deep Dive]] - From linear models to deep nets
 
 **Explore Side Adventures**:
-- ⚔️ [Python for Data Science](/quests/1101/python-data-science/) - Sharpen NumPy and pandas
-- ⚔️ [AI Ethics](/quests/1101/ai-ethics/) - Build models responsibly
+- ⚔️ [[it-journey/pages/_quests/1101/python-data-science|Python for Data Science]] - Sharpen NumPy and pandas
+- ⚔️ [[it-journey/pages/_quests/1101/ai-ethics|AI Ethics]] - Build models responsibly
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Neural Networks Deep Dive](/quests/1101/neural-networks/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
-**📊 Data Scientist**: Advance to [Python for Data Science](/quests/1101/python-data-science/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/neural-networks|Neural Networks Deep Dive]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/python-data-science|Python for Data Science]]
 
 ## 📚 Resources
 
@@ -485,6 +487,6 @@ The "elbow method" - plotting inertia against k - helps choose how many clusters
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Python for Data Science: NumPy, Pandas & Matplotlib Complete Guide]] **Unlocks:** [[Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch]] · [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] · [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[Python for Data Science: NumPy, Pandas & Matplotlib Complete Guide]] **Unlocks:** [[Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch]] · [[MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] · [[AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

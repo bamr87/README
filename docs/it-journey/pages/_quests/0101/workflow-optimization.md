@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 0101 CI/CD quest line
 skill_focus: devops
-source_file: workflow-optimization.md
+source_file: pages/_quests/0101/workflow-optimization.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/workflow-optimization.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Optimization'
 tags:
 - '0101'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Time your local build so you have a baseline to optimize against
+title: 'Workflow Optimization: Caching and Parallel CI/CD'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -437,14 +439,14 @@ The mindset: **fast feedback and low cost are the same goal** - both come from d
 - 🎯 Advance to the next level in your tier - you have mastered the Forge of Automation
 
 **Explore Side Adventures**:
-- ⚔️ [Artifact Management](/quests/0101/artifact-management/) - Speed up artifact builds
-- ⚔️ [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Optimize the deploy stage too
+- ⚔️ [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]] - Speed up artifact builds
+- ⚔️ [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Optimize the deploy stage too
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Testing Integration](/quests/0101/testing-integration/) and shard your slow suites  
-**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Revisit [[it-journey/pages/_quests/0101/testing-integration|Testing Integration]] and shard your slow suites  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -473,6 +475,6 @@ The mindset: **fast feedback and low cost are the same goal** - both come from d
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

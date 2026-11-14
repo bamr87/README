@@ -13,12 +13,15 @@ prerequisites:
 preview: /images/previews/docker.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/docker/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/docker/index.md
 tags:
 - docker
 - docker-compose
-title: Docker Development
+title: Docker
 ---
+
 # Docker Development
 
 Zer0-Mistakes uses a **Docker-first** approach for consistent development across all platforms.
@@ -137,13 +140,13 @@ docker-compose down -v && docker-compose up --build
 
 ## Related
 
-- [Installation Guide](/docs/installation/)
-- [Troubleshooting](/docs/troubleshooting/)
-- [Jekyll Configuration](/docs/jekyll/)
+- [[zer0-mistakes/pages/_docs/installation|Installation Guide]]
+- [[zer0-mistakes/pages/_docs/troubleshooting|Troubleshooting]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Configuration]]
 
 ## See also
 
-- [[Jekyll]]
-- [[Ruby]]
-- [[Deployment]]
-- [[Installation]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/fr/docs/ruby/index|Ruby]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

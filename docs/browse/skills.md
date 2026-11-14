@@ -9,15 +9,97 @@ nav_exclude: true
 
 # Agent Skills - content map
 
-Every published page in [`docs/skills/`](../skills/) as it appears in the sidebar: **7 pages** across **3 sections** (max depth 3).
+Every published page in [`docs/skills/`](../skills/) as it appears in the sidebar: **68 pages** across **24 sections** (max depth 4).
 
-- **Documentation** <small>(1)</small>
+- **Skills** <small>(47)</small>
+  - [Continual Learning](../skills/dot-github/skills/continual-learning/SKILL.md)
+  - [Copilot SDK](../skills/dot-github/skills/copilot-sdk/SKILL.md)
+  - [Github Issue Creator](../skills/dot-github/skills/github-issue-creator/SKILL.md)
+  - [Microsoft Docs](../skills/dot-github/skills/microsoft-docs/SKILL.md)
+  - **Applicationinsights Web Ts** <small>(4)</small>
+    - [Application Insights JavaScript SDK (Web) for TypeScript](../skills/dot-github/skills/applicationinsights-web-ts/SKILL.md)
+    - **References** <small>(3)</small>
+      - [Configuration Reference](../skills/dot-github/skills/applicationinsights-web-ts/references/configuration.md)
+      - [Framework Extensions](../skills/dot-github/skills/applicationinsights-web-ts/references/framework-extensions.md)
+      - [GenAI Agent Traces — OpenTelemetry Semantic Conventions (distilled)](../skills/dot-github/skills/applicationinsights-web-ts/references/agent-traces.md)
+  - **Cloud Solution Architect** <small>(8)</small>
+    - [Cloud Solution Architect](../skills/dot-github/skills/cloud-solution-architect/SKILL.md)
+    - **References** <small>(7)</small>
+      - [Azure Architecture Styles Reference](../skills/dot-github/skills/cloud-solution-architect/references/architecture-styles.md)
+      - [Azure Design Principles](../skills/dot-github/skills/cloud-solution-architect/references/design-principles.md)
+      - [Azure Technology Choice Decision Frameworks](../skills/dot-github/skills/cloud-solution-architect/references/technology-choices.md)
+      - [Cloud Application Best Practices](../skills/dot-github/skills/cloud-solution-architect/references/best-practices.md)
+      - [Cloud Design Patterns](../skills/dot-github/skills/cloud-solution-architect/references/design-patterns.md)
+      - [Mission-Critical Architecture on Azure](../skills/dot-github/skills/cloud-solution-architect/references/mission-critical.md)
+      - [Performance Antipatterns](../skills/dot-github/skills/cloud-solution-architect/references/performance-antipatterns.md)
+  - **Debugview** <small>(4)</small>
+    - [Sysinternals DebugView CLI (DbgViewCli)](../skills/dot-github/skills/debugview/SKILL.md)
+    - **References** <small>(3)</small>
+      - [Driver IOCTLs and Buffer Formats](../skills/dot-github/skills/debugview/references/driver-ioctls.md)
+      - [Output Formats](../skills/dot-github/skills/debugview/references/output-formats.md)
+      - [Remote Monitoring Protocol](../skills/dot-github/skills/debugview/references/remote-protocol.md)
+  - **Entra Agent ID** <small>(4)</small>
+    - [Microsoft Entra Agent ID](../skills/dot-github/skills/entra-agent-id/SKILL.md)
+    - **References** <small>(3)</small>
+      - [Known Limitations (Preview)](../skills/dot-github/skills/entra-agent-id/references/known-limitations.md)
+      - [Microsoft Entra SDK for AgentID: Polyglot Agent Authentication](../skills/dot-github/skills/entra-agent-id/references/sdk-sidecar.md)
+      - [OAuth2 Token Flow](../skills/dot-github/skills/entra-agent-id/references/oauth2-token-flow.md)
+  - **Frontend Design Review** <small>(5)</small>
+    - [Frontend Design Review](../skills/dot-github/skills/frontend-design-review/SKILL.md)
+    - **References** <small>(4)</small>
+      - [Pattern Examples](../skills/dot-github/skills/frontend-design-review/references/pattern-examples.md)
+      - [Quick Checklist](../skills/dot-github/skills/frontend-design-review/references/quick-checklist.md)
+      - [Review Output Format](../skills/dot-github/skills/frontend-design-review/references/review-output-format.md)
+      - [Review Type Modifiers](../skills/dot-github/skills/frontend-design-review/references/review-type-modifiers.md)
+  - **Kql** <small>(5)</small>
+    - [KQL Mastery](../skills/dot-github/skills/kql/SKILL.md)
+    - **References** <small>(4)</small>
+      - [Advanced KQL Patterns](../skills/dot-github/skills/kql/references/advanced-patterns.md)
+      - [Error Recovery Reference](../skills/dot-github/skills/kql/references/error-recovery.md)
+      - [KQL Query Templates](../skills/dot-github/skills/kql/references/query-templates.md)
+      - [KQL Schema Discovery Queries](../skills/dot-github/skills/kql/references/discovery-queries.md)
+  - **MCP Builder** <small>(6)</small>
+    - [MCP Server Development Guide](../skills/dot-github/skills/mcp-builder/SKILL.md)
+    - **Reference** <small>(5)</small>
+      - [MCP Server Best Practices](../skills/dot-github/skills/mcp-builder/reference/mcp_best_practices.md)
+      - [MCP Server Evaluation Guide](../skills/dot-github/skills/mcp-builder/reference/evaluation.md)
+      - [Microsoft MCP Patterns](../skills/dot-github/skills/mcp-builder/reference/microsoft_mcp_patterns.md)
+      - [Node/TypeScript MCP Server Implementation Guide](../skills/dot-github/skills/mcp-builder/reference/node_mcp_server.md)
+      - [Python MCP Server Implementation Guide](../skills/dot-github/skills/mcp-builder/reference/python_mcp_server.md)
+  - **Podcast Generation** <small>(3)</small>
+    - [Podcast Generation with GPT Realtime Mini](../skills/dot-github/skills/podcast-generation/SKILL.md)
+    - **References** <small>(2)</small>
+      - [Architecture Reference](../skills/dot-github/skills/podcast-generation/references/architecture.md)
+      - [Code Examples](../skills/dot-github/skills/podcast-generation/references/code-examples.md)
+  - **Skill Creator** <small>(4)</small>
+    - [Skill Creator](../skills/dot-github/skills/skill-creator/SKILL.md)
+    - **References** <small>(3)</small>
+      - [Azure SDK Patterns by Language](../skills/dot-github/skills/skill-creator/references/azure-sdk-patterns.md)
+      - [Output Patterns](../skills/dot-github/skills/skill-creator/references/output-patterns.md)
+      - [Workflow Patterns](../skills/dot-github/skills/skill-creator/references/workflows.md)
+- **Agents** <small>(6)</small>
+  - [Backend.Agent](../skills/dot-github/agents/backend.agent.md)
+  - [Frontend](../skills/dot-github/agents/scaffolder.agent.md)
+  - [Frontend.Agent](../skills/dot-github/agents/frontend.agent.md)
+  - [Planner.Agent](../skills/dot-github/agents/planner.agent.md)
+  - [Presenter.Agent](../skills/dot-github/agents/presenter.agent.md)
+  - [Start emulators (Intel/AMD)](../skills/dot-github/agents/infrastructure.agent.md)
+- **Prompts** <small>(5)</small>
+  - [Add API Endpoint](../skills/dot-github/prompts/add-endpoint.prompt.md)
+  - [Code Review Checklist](../skills/dot-github/prompts/code-review.prompt.md)
+  - [Create New Node Type](../skills/dot-github/prompts/create-node.prompt.md)
+  - [Create Zustand Store](../skills/dot-github/prompts/create-store.prompt.md)
+  - [Scaffold Foundry App](../skills/dot-github/prompts/scaffold-foundry-app.prompt.md)
+- **Documentation** <small>(6)</small>
   - [Astro Starter Kit: Minimal](../skills/docs-site/README.md)
-- **[Repository & tooling](../skills/tests/README.md)** <small>(3)</small>
+  - **Documentation** <small>(5)</small>
+    - [Agent Integration with Skills](../skills/dot-github/docs/agent-integration.md)
+    - [Agent Skills](../skills/dot-github/docs/skills.md)
+    - [MCP Server Usage for Agents](../skills/dot-github/docs/mcp-usage.md)
+    - [Pattern Enforcement with Skills](../skills/dot-github/docs/pattern-enforcement.md)
+    - [Workflow Patterns: Combining Skills and Prompts](../skills/dot-github/docs/workflow-patterns.md)
+- **Repository & tooling** <small>(1)</small>
   - [Hooks](../skills/hooks/continual-learning/README.md)
-  - **[Skill Evaluation Test Harness](../skills/tests/README.md)** <small>(2)</small>
-    - [Skill Evaluation Test Harness](../skills/tests/README.md)
-    - [Test Harness Agent Instructions](../skills/tests/AGENTS.md)
 - [Agent Skills (README)](../skills/README.md)
 - [Agent Skills (Agents)](../skills/Agents.md)
 - [Security](../skills/SECURITY.md)

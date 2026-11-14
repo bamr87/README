@@ -22,12 +22,14 @@ objectives:
     all:
     - command: cd
     - cwd: /lab/navigator
-source_file: 04-paths.md
+source_file: courses/navigator/04-paths.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/navigator/04-paths.md
 teaches:
 - relative paths
 - absolute paths
 - cat
-title: 04 Paths
+title: Reading from afar
 xp: 25
 ---
 You don't have to walk somewhere to read a file there. A path can point at it from anywhere:

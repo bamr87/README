@@ -12,7 +12,9 @@ permalink: /docs/development/release-management/
 preview: /images/previews/release-management.png
 sidebar:
   nav: docs
-source_file: release-management.md
+source_file: pages/_docs/development/release-management.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/release-management.md
 tags:
 - release
 - versioning
@@ -20,6 +22,7 @@ tags:
 - rubygems
 title: Release Management
 ---
+
 # Release Management
 
 Releases follow [Conventional Commits](https://www.conventionalcommits.org/) and [Semantic Versioning](https://semver.org/). The release process is fully automated via `scripts/bin/release`:

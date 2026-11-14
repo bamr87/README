@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 26d051159234c8fb
+source_fingerprint: 880c692317be6f62
 tags:
   - ctf
   - security
@@ -38,8 +38,8 @@ tags:
 232 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/OverTheWire-website.md) · [tree as JSON](../nav/OverTheWire-website.json)
 
 - **Includes** (3 pages)
-- **Index (wargames)** (219 pages)
 - **Information** (8 pages)
+- **Wargames** (219 pages)
 
 ## Key documents
 

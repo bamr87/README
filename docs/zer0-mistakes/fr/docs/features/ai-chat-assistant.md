@@ -26,7 +26,9 @@ prerequisites:
 preview: /images/previews/ai-chat-assistant-claude-github.png
 sidebar:
   nav: docs
-source_file: ai-chat-assistant.md
+source_file: fr/docs/features/ai-chat-assistant.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/ai-chat-assistant.md
 tags:
 - ai
 - chatbot
@@ -35,11 +37,12 @@ tags:
 - github
 - github-pages
 - proxy
-title: Assistant de chat IA
+title: Assistant de chat IA (Claude + GitHub)
 translated_from_sha: 0957be79c588
 translation_of: pages/_docs/features/ai-chat-assistant.md
 translation_source_url: /docs/features/ai-chat-assistant/
 ---
+
 # Assistant de chat IA
 
 Un assistant de chat flottant propulsé par l'**API Claude Messages**, ancré dans le contenu de la page courante. Les réponses sont diffusées jeton par jeton, et l'assistant peut effectuer des actions GitHub sur votre dépôt : ouvrir un ticket lorsqu'un visiteur signale un problème, ou soumettre une pull request qui améliore le contenu ou l'UI/UX de la page.
@@ -58,7 +61,7 @@ Un Cloudflare Worker prêt à déployer qui fait tout cela — passage du chat e
 
 ### Quel identifiant Anthropic le proxy utilise-t-il ?
 
-Le proxy répond avec Claude (Anthropic) par défaut, ou avec Grok (xAI) lorsque vous lui fournissez un `XAI_API_KEY` et définissez `ai_chat.provider: xai` (ou fixez `CHAT_PROVIDER=xai` sur le proxy). Le widget reste inchangé dans les deux cas : le proxy traduit l'API compatible OpenAI de Grok en flux Anthropic Messages que le widget analyse, outils compris. En local, l'étape Connect du Site Builder peut fournir au proxy de développement l'un ou l'autre jeton pour la session — voir [Site Builder](/docs/features/site-builder/).
+Le proxy répond avec Claude (Anthropic) par défaut, ou avec Grok (xAI) lorsque vous lui fournissez un `XAI_API_KEY` et définissez `ai_chat.provider: xai` (ou fixez `CHAT_PROVIDER=xai` sur le proxy). Le widget reste inchangé dans les deux cas : le proxy traduit l'API compatible OpenAI de Grok en flux Anthropic Messages que le widget analyse, outils compris. En local, l'étape Connect du Site Builder peut fournir au proxy de développement l'un ou l'autre jeton pour la session — voir [[zer0-mistakes/pages/_docs/features/site-builder|Site Builder]].
 
 Le proxy peut s'authentifier auprès de Claude de deux manières (détectées automatiquement selon les secrets que vous définissez) :
 
@@ -223,4 +226,4 @@ bundle exec jekyll serve \
 
 - [Analytique PostHog](posthog-analytics/)
 - [Recherche du site](site-search/)
-- [Index des fonctionnalités](/docs/features/)
+- [[zer0-mistakes/pages/_docs/features/index|Index des fonctionnalités]]

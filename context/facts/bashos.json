@@ -1,0 +1,148 @@
+{
+  "corpus": {
+    "file_count": 38,
+    "fingerprint": "027eec82fe650b1d",
+    "path": "docs/bashos",
+    "present": true,
+    "total_bytes": 304503
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Commands",
+      "Terminal environment (macOS) \u2014 chui",
+      "The operating system (Linux) \u2014 os",
+      "Auth \u2014 Claude Code OAuth, wired into the engine",
+      "Desktop (GUI)",
+      "Architecture",
+      "Extending"
+    ],
+    "readme": "README.md",
+    "summary": "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.",
+    "title": "bashOS"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/frontend/posthog-os-research.md",
+    "docs/ARCHITECTURE.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/bashos.md",
+    "fingerprint": "22669e5e45f807f9",
+    "index": "bashos/README.md",
+    "max_depth": 3,
+    "pages": 38,
+    "present": true,
+    "sections": 8,
+    "skipped": 0,
+    "title": "BashOS",
+    "top_sections": [
+      {
+        "index": "bashos/chui/README.md",
+        "pages": 3,
+        "path": "chui",
+        "title": "chui",
+        "type": "section"
+      },
+      {
+        "index": "bashos/docs/README.md",
+        "pages": 24,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "bashos/os/README.md",
+        "pages": 4,
+        "path": "os",
+        "title": "os \u2014 bashOS as the operating system",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/bashos.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "bashos",
+    "registry_description": "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.",
+    "repo": "bamr87/bashos",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/bashos"
+  },
+  "rollups": {
+    "categories": {
+      "bashos": 38
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "ts",
+      "text",
+      "js",
+      "markdown",
+      "mermaid",
+      "json"
+    ],
+    "indexed_documents": 38,
+    "top_tags": [
+      "ai",
+      "agentic-ai",
+      "architecture",
+      "linux",
+      "operating-systems",
+      "security",
+      "mcp",
+      "open-source",
+      "system-design"
+    ],
+    "total_words": 42327
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CONTRIBUTING.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 24,
+        "name": "docs"
+      },
+      {
+        "doc_count": 4,
+        "name": "os"
+      },
+      {
+        "doc_count": 3,
+        "name": "chui"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

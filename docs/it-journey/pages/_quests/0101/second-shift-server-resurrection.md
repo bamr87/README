@@ -70,7 +70,9 @@ rewards:
   unlocks_features:
   - Secrets and environment quests hardened on your own always-on host
 skill_focus: devops
-source_file: second-shift-server-resurrection.md
+source_file: pages/_quests/0101/second-shift-server-resurrection.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/second-shift-server-resurrection.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - The Reforged Iron'
 tags:
 - '0101'
@@ -79,7 +81,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: docker-compose.override.yml
+title: 'The Second Shift: Resurrect an Ancient Tower as Your Home Server'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -91,6 +93,7 @@ validation_criteria:
   - Can wake, connect to, and administer the box without touching its keyboard
   - Can explain why each firewall rule exists
 ---
+
 *Hark, adventurer! In every homestead there stands a tomb — a storage closet where a once-mighty tower sleeps beneath dust and cable-tangle. The merchants would have you believe only new iron can serve, that a machine of fourteen winters belongs to the scrapheap. They lie. This quest is an act of necromancy: you will raise that machine, bind it with containers, teach it to sleep without dying and wake at a whispered packet, and set it working the second shift — while learning more about servers than any cloud console will ever teach you.*
 
 *The reference corpse for this quest was a 2012 Core i7 tower. By quest's end it ran ten containers and a monitoring stack. Yours will too.*
@@ -185,7 +188,7 @@ Completing this quest grants the badges and skills listed in the quest scroll ab
 
 ## 🗺️ Next Steps in Your Journey
 
-With an always-available host of your own, carry your loot onward to [Secrets Management](/quests/0101/secrets-management/) — real machines demand real credential hygiene — and deepen the container craft in [Environment Management](/quests/0101/environment-management/).
+With an always-available host of your own, carry your loot onward to [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]] — real machines demand real credential hygiene — and deepen the container craft in [[it-journey/pages/_quests/0101/environment-management|Environment Management]].
 
 ## 🤝 Quest Completion Checklist
 

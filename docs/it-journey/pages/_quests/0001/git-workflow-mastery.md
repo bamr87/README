@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - A repeatable, safe workflow for every project you build
 skill_focus: devops
-source_file: git-workflow-mastery.md
+source_file: pages/_quests/0001/git-workflow-mastery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/git-workflow-mastery.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Git Workflow'
 tags:
 - '0001'
@@ -87,7 +89,7 @@ tags:
 - devops
 - hands-on
 - beginner
-title: Install Git and the GitHub CLI
+title: 'Git Workflow Mastery: Branches, Merging & Team Collaboration'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -134,7 +136,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Basic Git: `init`, `add`, `commit`, `push`
-- [ ] Completion of [Git Basics](/quests/0000/git-basics/)
+- [ ] Completion of [[it-journey/pages/_quests/0000/git-basics|Git Basics]]
 - [ ] A GitHub account
 
 ### 🛠️ System Requirements
@@ -424,16 +426,16 @@ git merge --abort      # or: git rebase --abort
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/) - Build the site this workflow will protect
+- 🎯 [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]] - Build the site this workflow will protect
 
 **Explore Side Adventures**:
-- ⚔️ [GitHub Pages Basics](/quests/0001/github-pages-basics/) - Deploy from your branches
-- ⚔️ [YAML Configuration](/quests/0001/yaml-configuration/) - Version your config with care
+- ⚔️ [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]] - Deploy from your branches
+- ⚔️ [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]] - Version your config with care
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)  
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]]  
 **🛠️ DevOps Specialist**: Take this workflow into CI/CD in the Adventurer tier
 
 ## 📚 Resources
@@ -463,6 +465,6 @@ git merge --abort      # or: git rebase --abort
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Git Basics]] **Unlocks:** [[Jekyll Fundamentals]] · [[GitHub Pages Basics]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Git Basics]] **Unlocks:** [[Jekyll Fundamentals]] · [[GitHub Pages Basics]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/lib/install/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/lib/install/README.md
 title: '`scripts/lib/install/` — Installer Library Modules'
 ---
 # `scripts/lib/install/` — Installer Library Modules

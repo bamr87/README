@@ -24,17 +24,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/urban-resilience-extreme-heat/
 preview: /images/previews/urban-resilience-how-cities-prepare-for-extreme-he.png
-source_file: 2026-04-28-urban-resilience-extreme-heat.md
+source_file: fr/posts/world/2026-04-28-urban-resilience-extreme-heat.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/world/2026-04-28-urban-resilience-extreme-heat.md
 tags:
 - cities
 - climate-adaptation
 - public-health
 - infrastructure
-title: 2026 04 28 Urban Resilience Extreme Heat
+title: 'Résilience urbaine : comment les villes se préparent à la chaleur extrême'
 translated_from_sha: 9068abb43e74
 translation_of: pages/_posts/world/2026-04-28-urban-resilience-extreme-heat.md
 translation_source_url: /posts/2026/04/28/urban-resilience-extreme-heat/
 ---
+
 La chaleur extrême est l'un des risques climatiques les plus immédiats pour les villes. Elle met à rude épreuve les réseaux électriques, augmente les urgences sanitaires, réduit la productivité des travailleurs et affecte les quartiers de manière inégale.
 
 La résilience urbaine, c'est le travail de préparation avant l'arrivée de la semaine la plus chaude de l'année.

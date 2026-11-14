@@ -10,7 +10,9 @@ feature_id: ZER0-004
 lastmod: 2026-07-13 00:00:00+00:00
 layout: default
 permalink: /docs/features/preview-image-generator/
-source_file: preview-image-generator.md
+source_file: docs/implementation/preview-image-generator.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/preview-image-generator.md
 tags:
 - implementation
 - ai
@@ -18,6 +20,7 @@ tags:
 title: AI Preview Image Generator
 version: 1.27.0
 ---
+
 # AI Preview Image Generator
 
 ## Overview
@@ -497,4 +500,4 @@ Part of the zer0-mistakes Jekyll theme. MIT License.
 
 ---
 
-> **User guide**: For setup and configuration examples, see [AI Preview Image Generator](/docs/features/preview-image-generator/) in the user documentation.
+> **User guide**: For setup and configuration examples, see [[zer0-mistakes/docs/implementation/preview-image-generator|AI Preview Image Generator]] in the user documentation.

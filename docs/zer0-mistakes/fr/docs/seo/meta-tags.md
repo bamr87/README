@@ -14,7 +14,9 @@ permalink: /fr/docs/seo/meta-tags/
 preview: /images/previews/seo-meta-tags.png
 sidebar:
   nav: docs
-source_file: meta-tags.md
+source_file: fr/docs/seo/meta-tags.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/seo/meta-tags.md
 tags:
 - seo
 - meta
@@ -25,6 +27,7 @@ translated_from_sha: 697066a7bd7f
 translation_of: pages/_docs/seo/meta-tags.md
 translation_source_url: /docs/seo/meta-tags/
 ---
+
 # Balises méta SEO
 
 Génération automatique de balises méta SEO pour une meilleure visibilité sur les moteurs de recherche et les réseaux sociaux.
@@ -148,7 +151,7 @@ author: "Different Author"
 
 ### Génération automatique
 
-Le thème peut générer des images d'aperçu automatiquement. Consultez [Preview Image Generator](/docs/features/preview-image-generator/).
+Le thème peut générer des images d'aperçu automatiquement. Consultez [[zer0-mistakes/docs/implementation/preview-image-generator|Preview Image Generator]].
 
 ### Configuration manuelle
 
@@ -270,12 +273,12 @@ Testez les Twitter Cards sur [https://cards-dev.twitter.com/validator](https://c
 
 ## Ressources associées
 
-- [Sitemap](/docs/seo/sitemap/)
-- [Générateur d'image d'aperçu](/docs/features/preview-image-generator/)
-- [Fil d'Ariane](/docs/features/breadcrumbs/)
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Sitemap]]
+- [[zer0-mistakes/docs/implementation/preview-image-generator|Générateur d'image d'aperçu]]
+- [[zer0-mistakes/pages/_docs/features/breadcrumbs|Fil d'Ariane]]
 
 ## Voir aussi
 
 - [[SEO]]
-- [[front-matter]]
-- [[Analytics]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]

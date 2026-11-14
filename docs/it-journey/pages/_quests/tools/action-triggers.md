@@ -32,14 +32,16 @@ primary_technology: automation
 quest_series: Tools Collection
 quest_type: main_quest
 skill_focus: devops
-source_file: action-triggers.md
+source_file: pages/_quests/tools/action-triggers.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/action-triggers.md
 tags:
 - automation
 - CI/CD
 - GitHub Actions
 - workflows
 - YAML
-title: .github/workflows/main.yml
+title: Understanding Action Triggers in Depth
 ---
 **Ah yes, the winds of automation are calling!** You've chronicled your changelogs and blessed your docs, but now it's time to awaken the ancient machinery of your kingdom: **GitHub Actions.** This, dear dev-sorcerer, is where the magic truly begins to automate itself.
 
@@ -166,7 +168,7 @@ Shall we proceed to the final mystical chapter: **AI-Assisted Automation**? Beca
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

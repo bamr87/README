@@ -3,10 +3,13 @@ description: Use this skill to generate well-branded interfaces and assets for z
   either for production or throwaway prototypes/mocks/etc. Contains essential design
   guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
 name: zer0-mistakes-design
-source_file: SKILL.md
+source_file: _design-system/SKILL.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/SKILL.md
 title: Skill
 user-invocable: true
 ---
+
 Read the `readme.md` file within this skill, and explore the other available files.
 
 If creating visual artifacts (slides, mocks, throwaway prototypes, etc), copy assets out and create static HTML files for the user to view. If working on production code, you can copy assets and read the rules here to become an expert in designing with this brand.

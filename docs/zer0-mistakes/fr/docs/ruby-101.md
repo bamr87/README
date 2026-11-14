@@ -16,7 +16,9 @@ permalink: /fr/docs/ruby-101/
 prerequisites:
 - Ruby installed
 preview: /images/previews/ruby-101.png
-source_file: ruby-101.md
+source_file: fr/docs/ruby-101.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/ruby-101.md
 tags:
 - ruby
 - bundler
@@ -28,6 +30,7 @@ translated_from_sha: 43ad3ba65d71
 translation_of: pages/_docs/ruby-101.md
 translation_source_url: /docs/ruby-101/
 ---
+
 # Ruby 101
 
 Cette page couvre les fondamentaux de Ruby dont vous avez besoin pour travailler avec le thème Jekyll Zer0-Mistakes — de l'installation des gems à la gestion des dépendances avec Bundler.
@@ -256,15 +259,15 @@ bundle exec jekyll serve
 
 ## Étapes suivantes
 
-- [Référence Ruby et Bundler](/docs/ruby/) — Approfondissement de la gestion des versions
-- [Guide d'installation](/docs/installation/) — Configuration complète de l'environnement
-- [Guide Jekyll](/docs/jekyll/) — Comprendre le générateur de site statique
-- [Développement Docker](/docs/docker/) — Flux de travail basé sur des conteneurs
+- [[zer0-mistakes/pages/_docs/ruby/index|Référence Ruby et Bundler]] — Approfondissement de la gestion des versions
+- [[zer0-mistakes/pages/_docs/installation|Guide d'installation]] — Configuration complète de l'environnement
+- [[zer0-mistakes/pages/_docs/jekyll/index|Guide Jekyll]] — Comprendre le générateur de site statique
+- [[zer0-mistakes/pages/_docs/docker/index|Développement Docker]] — Flux de travail basé sur des conteneurs
 
 ---
 
 ## Voir aussi
 
-- [[Ruby]]
-- [[Jekyll]]
-- [[Installation]]
+- [[zer0-mistakes/fr/docs/ruby/index|Ruby]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

@@ -14,7 +14,9 @@ permalink: /fr/docs/seo/sitemap/
 preview: /images/previews/sitemap-generation.png
 sidebar:
   nav: docs
-source_file: sitemap.md
+source_file: fr/docs/seo/sitemap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/seo/sitemap.md
 tags:
 - sitemap
 - seo
@@ -25,6 +27,7 @@ translated_from_sha: c0a70d349c49
 translation_of: pages/_docs/seo/sitemap.md
 translation_source_url: /docs/seo/sitemap/
 ---
+
 # Génération de sitemap
 
 Génération automatique de sitemaps XML pour les moteurs de recherche et d'index JSON pour la recherche sur le site.
@@ -289,12 +292,12 @@ Vérifiez l'état du sitemap dans Search Console → Sitemaps
 
 ## Ressources associées
 
-- [Balises Meta](/docs/seo/meta-tags/)
-- [Recherche sur le site](/docs/features/site-search/)
-- [Fils d'Ariane](/docs/features/breadcrumbs/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Balises Meta]]
+- [[zer0-mistakes/pages/_docs/features/site-search|Recherche sur le site]]
+- [[zer0-mistakes/pages/_docs/features/breadcrumbs|Fils d'Ariane]]
 
 ## Voir aussi
 
 - [[SEO]]
-- [[Deployment]]
-- [[Analytics]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]

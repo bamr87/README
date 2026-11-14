@@ -7,14 +7,17 @@ description: Comprehensive site navigation with advanced search, filtering, and 
 lastmod: 2025-12-20 22:15:46.563000+00:00
 layout: default
 preview: /images/previews/enhanced-sitemap-feature.png
-source_file: sitemap.md
+source_file: pages/_about/features/sitemap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/sitemap.md
 tags:
 - sitemap
 - navigation
 - search
 - discovery
-title: 🗺️ Enhanced Sitemap Feature
+title: Enhanced Sitemap Feature
 ---
+
 # 🗺️ Enhanced Sitemap Feature
 
 The Enhanced Sitemap is a powerful navigation and content discovery tool that provides a comprehensive overview of all content on the site with advanced search, filtering, and sorting capabilities.

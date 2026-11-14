@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the Infrastructure as Code quest, where you automate all of this
 skill_focus: cloud
-source_file: aws-essentials.md
+source_file: pages/_quests/1000/aws-essentials.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/aws-essentials.md
 sub_title: 'Level 1000 (8) Quest: Main Quest - AWS Essentials'
 tags:
 - '1000'
@@ -84,7 +86,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Install the AWS CLI v2
+title: 'AWS Essentials: Core Services and Architecture'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Cloud Computing Fundamentals](/quests/1000/cloud-computing-fundamentals/) (strongly recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1000/cloud-computing-fundamentals|Cloud Computing Fundamentals]] (strongly recommended)
 - [ ] Comfort with the terminal and editing files
 - [ ] Basic understanding of IP addresses, ports, and SSH
 
@@ -454,16 +456,16 @@ AWS distills good design into six pillars. Use them as a checklist for any archi
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Infrastructure as Code](/quests/1000/infrastructure-as-code/) - Provision everything you did here, declaratively and repeatably
+- 🎯 [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]] - Provision everything you did here, declaratively and repeatably
 
 **Explore Side Adventures**:
-- ⚔️ [Azure Ascension](/quests/1000/azure-ascension-jekyll-deployment/) - See the same ideas on another cloud
-- ⚔️ [Cloud Computing Fundamentals](/quests/1000/cloud-computing-fundamentals/) - Revisit the concepts if any felt shaky
+- ⚔️ [[it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment|Azure Ascension]] - See the same ideas on another cloud
+- ⚔️ [[it-journey/pages/_quests/1000/cloud-computing-fundamentals|Cloud Computing Fundamentals]] - Revisit the concepts if any felt shaky
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
-**🏗️ System Engineer**: Deepen VPC and networking mastery before [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]]  
+**🏗️ System Engineer**: Deepen VPC and networking mastery before [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]]  
 **🛡️ Security Specialist**: Audit your IAM policies against least privilege
 
 ## 📚 Resources
@@ -495,6 +497,6 @@ AWS distills good design into six pillars. Use them as a checklist for any archi
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Cloud Computing Fundamentals: IaaS, PaaS, and SaaS Explained]] **Unlocks:** [[Infrastructure as Code: Terraform and CloudFormation Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1000/cloud-computing-fundamentals|Cloud Computing Fundamentals: IaaS, PaaS, and SaaS Explained]] **Unlocks:** [[Infrastructure as Code: Terraform and CloudFormation Fundamentals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

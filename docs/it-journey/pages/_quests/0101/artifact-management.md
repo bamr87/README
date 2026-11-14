@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Workflow optimization quest in Level 0101
 skill_focus: devops
-source_file: artifact-management.md
+source_file: pages/_quests/0101/artifact-management.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/artifact-management.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Artifacts'
 tags:
 - '0101'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Docker to build and push a container artifact
+title: 'Artifact Management: Versioned, Signed Build Output'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -407,17 +409,17 @@ Now a consumer can verify provenance before deploying, closing the door on suppl
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Workflow Optimization](/quests/0101/workflow-optimization/) - Build these artifacts faster
+- 🎯 [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]] - Build these artifacts faster
 
 **Explore Side Adventures**:
-- ⚔️ [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Promote the artifact you signed
-- ⚔️ [Secrets Management](/quests/0101/secrets-management/) - Authenticate to your registry safely
+- ⚔️ [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Promote the artifact you signed
+- ⚔️ [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]] - Authenticate to your registry safely
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Workflow Optimization](/quests/0101/workflow-optimization/)  
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -446,6 +448,6 @@ Now a consumer can verify provenance before deploying, closing the door on suppl
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

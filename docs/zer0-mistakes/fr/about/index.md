@@ -20,7 +20,9 @@ preview: /images/previews/about.png
 sidebar:
   nav: auto
 slug: about
-source_file: index.md
+source_file: fr/about/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/index.md
 tags:
 - about
 - site-info
@@ -28,11 +30,12 @@ tags:
 - bootstrap
 - docker
 - getting-started
-title: 1. AI-powered one-line install (creates a new site in ./my-site)
+title: À propos
 translated_from_sha: 70e0f353668e
 translation_of: pages/_about/index.md
 translation_source_url: /about/
 ---
+
 {{ site.description }}
 
 <p class="lead text-body-secondary mb-4">
@@ -172,12 +175,12 @@ Pour en savoir plus, consultez le [README](https://github.com/bamr87/zer0-mistak
 
 Maintenant que vous savez ce qu'est Zer0-Mistakes, voici la suite :
 
-- 🎨 [**Fonctionnalités du thème**](/about/features/) — liste complète des composants, mises en page et intégrations
-- 🧩 [**Exemples de composants Bootstrap**](/about/theme/) — extraits d'interface prêts à copier-coller
-- 📊 [**Tableau de bord des statistiques du site**](/about/stats/) — métriques de contenu en temps réel
-- ⚙️ [**Référence de configuration**](/about/config/) — chaque option `_config.yml` expliquée
-- 🤖 [**Guide de développement avec l'IA**](/about/features/ai-development-guide/) — comment travailler sur ce thème avec Copilot, Codex, Cursor et consorts
-- 🚀 [**Système de publication automatisé**](/about/features/comprehensive-gem-automation-system/) — comment sont produits les versions, journaux des modifications et publications de gem
+- 🎨 [[zer0-mistakes/pages/_about/features/index|**Fonctionnalités du thème**]] — liste complète des composants, mises en page et intégrations
+- 🧩 [[zer0-mistakes/pages/_about/theme|**Exemples de composants Bootstrap**]] — extraits d'interface prêts à copier-coller
+- 📊 [[zer0-mistakes/pages/_about/stats|**Tableau de bord des statistiques du site**]] — métriques de contenu en temps réel
+- ⚙️ [[zer0-mistakes/pages/_about/settings/config|**Référence de configuration**]] — chaque option `_config.yml` expliquée
+- 🤖 [[zer0-mistakes/pages/_about/features/ai-development-guide|**Guide de développement avec l'IA**]] — comment travailler sur ce thème avec Copilot, Codex, Cursor et consorts
+- 🚀 [[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|**Système de publication automatisé**]] — comment sont produits les versions, journaux des modifications et publications de gem
 
 <div class="alert alert-primary d-flex flex-column flex-md-row align-items-md-center gap-3 mt-4">
   <div class="flex-grow-1">

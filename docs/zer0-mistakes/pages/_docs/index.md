@@ -11,13 +11,16 @@ permalink: /docs/
 preview: /images/previews/published-documentation-library.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/index.md
 tags:
 - documentation
 - jekyll
-title: Zer0-Mistakes Documentation
+title: Documentation
 toc_sticky: true
 ---
+
 # Zer0-Mistakes Documentation
 
 Welcome to the Zer0-Mistakes Jekyll theme documentation. This section contains **user-facing guides** for installing, configuring, and customizing the theme.
@@ -105,11 +108,11 @@ Looking to contribute to the theme? See the developer documentation in the repos
 
 ## See also
 
-- [[Installation]]
-- [[Features]]
-- [[Customization]]
-- [[Deployment]]
-- [[Obsidian Vault Integration]]
-- [[Jekyll]]
-- [[Docker]]
+- [[zer0-mistakes/pages/_docs/installation|Installation]]
+- [[zer0-mistakes/pages/_docs/features/index|Features]]
+- [[zer0-mistakes/pages/_docs/customization/index|Customization]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/pages/_docs/docker/index|Docker]]
 - [[Bootstrap Integration]]

@@ -56,7 +56,9 @@ rewards:
   skills_unlocked:
   - 🧵 Cross-Tool Context Weaving
 skill_focus: devops
-source_file: agentic-state-continuity-cross-tools.md
+source_file: pages/_quests/1010/agentic-state-continuity-cross-tools.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/agentic-state-continuity-cross-tools.md
 sub_title: 'Level 1010 Quest 2/4 — Domain 3: Context & Memory Management'
 tags:
 - '1010'
@@ -66,7 +68,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: work/gh-600/scripts/inject_cross_surface_context.py
+title: 'Crossing the Tool Planes: State Continuity Across Tools'
 validation_criteria:
   completion_requirements:
   - State handoff schema defined for issue → branch → PR → Actions pipeline
@@ -312,11 +314,11 @@ python3 scripts/validate_quest.py --quest q10
 | 🌀 Plane Walker Badge | Earned on completion |
 | 🧵 Cross-Tool Context Weaving | Skill unlocked |
 | 100 XP | Added to Level 1010 total |
-| Unlocks | [Q11: The Oracle's Rubric](/quests/1010/agentic-success-criteria-and-signals/) |
+| Unlocks | [[it-journey/pages/_quests/1010/agentic-success-criteria-and-signals\|Q11: The Oracle's Rubric]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Automation & Testing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Unlocks:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Sequel quests:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1010/README|Level 1010 - Automation & Testing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Unlocks:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Sequel quests:** [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -1,0 +1,996 @@
+{
+ "edges": [
+  {
+   "fromNode": "c-security",
+   "id": "e-security-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-security",
+   "id": "e-security-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-security",
+   "id": "e-security-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-security",
+   "id": "e-security-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-security",
+   "id": "e-security-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-jekyll",
+   "id": "e-jekyll-bamr87",
+   "toNode": "p-bamr87"
+  },
+  {
+   "fromNode": "c-jekyll",
+   "id": "e-jekyll-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-jekyll",
+   "id": "e-jekyll-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-jekyll",
+   "id": "e-jekyll-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-jekyll",
+   "id": "e-jekyll-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-ai",
+   "id": "e-ai-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-ai",
+   "id": "e-ai-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-ai",
+   "id": "e-ai-lifehacker-dev",
+   "toNode": "p-lifehacker-dev"
+  },
+  {
+   "fromNode": "c-ai",
+   "id": "e-ai-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-ai",
+   "id": "e-ai-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-python",
+   "id": "e-python-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-python",
+   "id": "e-python-fredgar-ai",
+   "toNode": "p-fredgar-ai"
+  },
+  {
+   "fromNode": "c-python",
+   "id": "e-python-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-python",
+   "id": "e-python-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-python",
+   "id": "e-python-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-open-source",
+   "id": "e-open-source-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-open-source",
+   "id": "e-open-source-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-open-source",
+   "id": "e-open-source-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-open-source",
+   "id": "e-open-source-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-open-source",
+   "id": "e-open-source-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-governance",
+   "id": "e-governance-bamr87",
+   "toNode": "p-bamr87"
+  },
+  {
+   "fromNode": "c-governance",
+   "id": "e-governance-gitorio",
+   "toNode": "p-gitorio"
+  },
+  {
+   "fromNode": "c-governance",
+   "id": "e-governance-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-governance",
+   "id": "e-governance-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-governance",
+   "id": "e-governance-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-linux",
+   "id": "e-linux-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-linux",
+   "id": "e-linux-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-linux",
+   "id": "e-linux-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-linux",
+   "id": "e-linux-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-automation",
+   "id": "e-automation-gitorio",
+   "toNode": "p-gitorio"
+  },
+  {
+   "fromNode": "c-automation",
+   "id": "e-automation-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-automation",
+   "id": "e-automation-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-automation",
+   "id": "e-automation-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-github-pages",
+   "id": "e-github-pages-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-github-pages",
+   "id": "e-github-pages-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-github-pages",
+   "id": "e-github-pages-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-github-pages",
+   "id": "e-github-pages-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-bootstrap",
+   "id": "e-bootstrap-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-bootstrap",
+   "id": "e-bootstrap-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-bootstrap",
+   "id": "e-bootstrap-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-bootstrap",
+   "id": "e-bootstrap-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-setup",
+   "id": "e-setup-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-setup",
+   "id": "e-setup-law-ai",
+   "toNode": "p-law-ai"
+  },
+  {
+   "fromNode": "c-setup",
+   "id": "e-setup-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-setup",
+   "id": "e-setup-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-bash",
+   "id": "e-bash-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-bash",
+   "id": "e-bash-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-bash",
+   "id": "e-bash-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-bash",
+   "id": "e-bash-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-git",
+   "id": "e-git-gitorio",
+   "toNode": "p-gitorio"
+  },
+  {
+   "fromNode": "c-git",
+   "id": "e-git-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-git",
+   "id": "e-git-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-git",
+   "id": "e-git-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-github-actions",
+   "id": "e-github-actions-gitorio",
+   "toNode": "p-gitorio"
+  },
+  {
+   "fromNode": "c-github-actions",
+   "id": "e-github-actions-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-github-actions",
+   "id": "e-github-actions-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-github-actions",
+   "id": "e-github-actions-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-search",
+   "id": "e-search-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-search",
+   "id": "e-search-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-search",
+   "id": "e-search-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-search",
+   "id": "e-search-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-github",
+   "id": "e-github-gitorio",
+   "toNode": "p-gitorio"
+  },
+  {
+   "fromNode": "c-github",
+   "id": "e-github-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-github",
+   "id": "e-github-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-github",
+   "id": "e-github-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-markdown",
+   "id": "e-markdown-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-markdown",
+   "id": "e-markdown-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-markdown",
+   "id": "e-markdown-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-markdown",
+   "id": "e-markdown-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-contributing",
+   "id": "e-contributing-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-contributing",
+   "id": "e-contributing-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-contributing",
+   "id": "e-contributing-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-contributing",
+   "id": "e-contributing-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-tutorial",
+   "id": "e-tutorial-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-tutorial",
+   "id": "e-tutorial-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-tutorial",
+   "id": "e-tutorial-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-tutorial",
+   "id": "e-tutorial-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-observability",
+   "id": "e-observability-bamr87",
+   "toNode": "p-bamr87"
+  },
+  {
+   "fromNode": "c-observability",
+   "id": "e-observability-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-observability",
+   "id": "e-observability-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-observability",
+   "id": "e-observability-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-statistics",
+   "id": "e-statistics-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-statistics",
+   "id": "e-statistics-law-ai",
+   "toNode": "p-law-ai"
+  },
+  {
+   "fromNode": "c-statistics",
+   "id": "e-statistics-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-statistics",
+   "id": "e-statistics-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-tracking",
+   "id": "e-tracking-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-tracking",
+   "id": "e-tracking-law-ai",
+   "toNode": "p-law-ai"
+  },
+  {
+   "fromNode": "c-tracking",
+   "id": "e-tracking-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-tracking",
+   "id": "e-tracking-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
+   "fromNode": "c-liquid",
+   "id": "e-liquid-bamr87-github-io",
+   "toNode": "p-bamr87-github-io"
+  },
+  {
+   "fromNode": "c-liquid",
+   "id": "e-liquid-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-liquid",
+   "id": "e-liquid-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-liquid",
+   "id": "e-liquid-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  }
+ ],
+ "nodes": [
+  {
+   "color": "5",
+   "file": "brain/projects/it-journey.md",
+   "height": 70,
+   "id": "p-it-journey",
+   "type": "file",
+   "width": 260,
+   "x": 1370,
+   "y": -35
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/zer0-mistakes.md",
+   "height": 70,
+   "id": "p-zer0-mistakes",
+   "type": "file",
+   "width": 260,
+   "x": 1319,
+   "y": 250
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/bashcrawl.md",
+   "height": 70,
+   "id": "p-bashcrawl",
+   "type": "file",
+   "width": 260,
+   "x": 1169,
+   "y": 515
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/skills.md",
+   "height": 70,
+   "id": "p-skills",
+   "type": "file",
+   "width": 260,
+   "x": 931,
+   "y": 743
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/scripts.md",
+   "height": 70,
+   "id": "p-scripts",
+   "type": "file",
+   "width": 260,
+   "x": 620,
+   "y": 918
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/OverTheWire-website.md",
+   "height": 70,
+   "id": "p-overthewire-website",
+   "type": "file",
+   "width": 260,
+   "x": 258,
+   "y": 1028
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/bamr87.md",
+   "height": 70,
+   "id": "p-bamr87",
+   "type": "file",
+   "width": 260,
+   "x": -130,
+   "y": 1065
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/bamr87.github.io.md",
+   "height": 70,
+   "id": "p-bamr87-github-io",
+   "type": "file",
+   "width": 260,
+   "x": -518,
+   "y": 1028
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/bashos.md",
+   "height": 70,
+   "id": "p-bashos",
+   "type": "file",
+   "width": 260,
+   "x": -880,
+   "y": 918
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/cv-pro.md",
+   "height": 70,
+   "id": "p-cv-pro",
+   "type": "file",
+   "width": 260,
+   "x": -1191,
+   "y": 743
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/djangoerp.md",
+   "height": 70,
+   "id": "p-djangoerp",
+   "type": "file",
+   "width": 260,
+   "x": -1429,
+   "y": 515
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/fredgar-ai.md",
+   "height": 70,
+   "id": "p-fredgar-ai",
+   "type": "file",
+   "width": 260,
+   "x": -1579,
+   "y": 250
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/githubai.md",
+   "height": 70,
+   "id": "p-githubai",
+   "type": "file",
+   "width": 260,
+   "x": -1630,
+   "y": -35
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/gitorio.md",
+   "height": 70,
+   "id": "p-gitorio",
+   "type": "file",
+   "width": 260,
+   "x": -1579,
+   "y": -320
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/godotgo.md",
+   "height": 70,
+   "id": "p-godotgo",
+   "type": "file",
+   "width": 260,
+   "x": -1429,
+   "y": -585
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/law-ai.md",
+   "height": 70,
+   "id": "p-law-ai",
+   "type": "file",
+   "width": 260,
+   "x": -1191,
+   "y": -813
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/lifehacker.dev.md",
+   "height": 70,
+   "id": "p-lifehacker-dev",
+   "type": "file",
+   "width": 260,
+   "x": -880,
+   "y": -988
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/ocrmd.md",
+   "height": 70,
+   "id": "p-ocrmd",
+   "type": "file",
+   "width": 260,
+   "x": -518,
+   "y": -1098
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/outbox.md",
+   "height": 70,
+   "id": "p-outbox",
+   "type": "file",
+   "width": 260,
+   "x": -130,
+   "y": -1135
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/rewind-arcade.md",
+   "height": 70,
+   "id": "p-rewind-arcade",
+   "type": "file",
+   "width": 260,
+   "x": 258,
+   "y": -1098
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/SCHEMA.md",
+   "height": 70,
+   "id": "p-schema",
+   "type": "file",
+   "width": 260,
+   "x": 620,
+   "y": -988
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/vs-sonic-pi.md",
+   "height": 70,
+   "id": "p-vs-sonic-pi",
+   "type": "file",
+   "width": 260,
+   "x": 931,
+   "y": -813
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/zer0-CMS.md",
+   "height": 70,
+   "id": "p-zer0-cms",
+   "type": "file",
+   "width": 260,
+   "x": 1169,
+   "y": -585
+  },
+  {
+   "color": "5",
+   "file": "brain/projects/zpl-viewer.md",
+   "height": 70,
+   "id": "p-zpl-viewer",
+   "type": "file",
+   "width": 260,
+   "x": 1319,
+   "y": -320
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/security.md",
+   "height": 60,
+   "id": "c-security",
+   "type": "file",
+   "width": 220,
+   "x": 650,
+   "y": -30
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/jekyll.md",
+   "height": 60,
+   "id": "c-jekyll",
+   "type": "file",
+   "width": 220,
+   "x": 296,
+   "y": 52
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/ai.md",
+   "height": 60,
+   "id": "c-ai",
+   "type": "file",
+   "width": 220,
+   "x": 548,
+   "y": 255
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/python.md",
+   "height": 60,
+   "id": "c-python",
+   "type": "file",
+   "width": 220,
+   "x": 187,
+   "y": 193
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/open-source.md",
+   "height": 60,
+   "id": "c-open-source",
+   "type": "file",
+   "width": 220,
+   "x": 270,
+   "y": 464
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/governance.md",
+   "height": 60,
+   "id": "c-governance",
+   "type": "file",
+   "width": 220,
+   "x": -1,
+   "y": 274
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/linux.md",
+   "height": 60,
+   "id": "c-linux",
+   "type": "file",
+   "width": 220,
+   "x": -110,
+   "y": 540
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/automation.md",
+   "height": 60,
+   "id": "c-automation",
+   "type": "file",
+   "width": 220,
+   "x": -219,
+   "y": 274
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/github-pages.md",
+   "height": 60,
+   "id": "c-github-pages",
+   "type": "file",
+   "width": 220,
+   "x": -490,
+   "y": 464
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/bootstrap.md",
+   "height": 60,
+   "id": "c-bootstrap",
+   "type": "file",
+   "width": 220,
+   "x": -407,
+   "y": 193
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/setup.md",
+   "height": 60,
+   "id": "c-setup",
+   "type": "file",
+   "width": 220,
+   "x": -768,
+   "y": 255
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/bash.md",
+   "height": 60,
+   "id": "c-bash",
+   "type": "file",
+   "width": 220,
+   "x": -516,
+   "y": 52
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/git.md",
+   "height": 60,
+   "id": "c-git",
+   "type": "file",
+   "width": 220,
+   "x": -870,
+   "y": -30
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/github-actions.md",
+   "height": 60,
+   "id": "c-github-actions",
+   "type": "file",
+   "width": 220,
+   "x": -516,
+   "y": -112
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/search.md",
+   "height": 60,
+   "id": "c-search",
+   "type": "file",
+   "width": 220,
+   "x": -768,
+   "y": -315
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/github.md",
+   "height": 60,
+   "id": "c-github",
+   "type": "file",
+   "width": 220,
+   "x": -407,
+   "y": -253
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/markdown.md",
+   "height": 60,
+   "id": "c-markdown",
+   "type": "file",
+   "width": 220,
+   "x": -490,
+   "y": -524
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/architecture.md",
+   "height": 60,
+   "id": "c-architecture",
+   "type": "file",
+   "width": 220,
+   "x": -219,
+   "y": -334
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/contributing.md",
+   "height": 60,
+   "id": "c-contributing",
+   "type": "file",
+   "width": 220,
+   "x": -110,
+   "y": -600
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/tutorial.md",
+   "height": 60,
+   "id": "c-tutorial",
+   "type": "file",
+   "width": 220,
+   "x": -1,
+   "y": -334
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/observability.md",
+   "height": 60,
+   "id": "c-observability",
+   "type": "file",
+   "width": 220,
+   "x": 270,
+   "y": -524
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/statistics.md",
+   "height": 60,
+   "id": "c-statistics",
+   "type": "file",
+   "width": 220,
+   "x": 187,
+   "y": -253
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/tracking.md",
+   "height": 60,
+   "id": "c-tracking",
+   "type": "file",
+   "width": 220,
+   "x": 548,
+   "y": -315
+  },
+  {
+   "color": "4",
+   "file": "brain/concepts/liquid.md",
+   "height": 60,
+   "id": "c-liquid",
+   "type": "file",
+   "width": 220,
+   "x": 296,
+   "y": -112
+  }
+ ]
+}

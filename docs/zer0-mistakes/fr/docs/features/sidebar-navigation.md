@@ -15,24 +15,27 @@ permalink: /fr/docs/features/sidebar-navigation/
 preview: /images/previews/sidebar-navigation-system.png
 sidebar:
   nav: docs
-source_file: sidebar-navigation.md
+source_file: fr/docs/features/sidebar-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/sidebar-navigation.md
 tags:
 - sidebar
 - navigation
 - scroll-spy
 - accessibility
-title: Système de navigation par barre latérale amélioré
+title: Système de navigation par barre latérale
 translated_from_sha: 7b2f6d514ad2
 translation_of: pages/_docs/features/sidebar-navigation.md
 translation_source_url: /docs/features/sidebar-navigation/
 ---
+
 # Système de navigation par barre latérale amélioré
 
 Le thème Zer0-Mistakes inclut un système moderne de navigation par barre latérale avec un suivi du défilement optimisé pour les performances et des fonctionnalités d'accessibilité.
 
 ![Une page de documentation affichant la barre latérale rétractable « Browse docs » à gauche, l'article au centre et une table des matières « On this page » à droite](/assets/images/docs/features/docs-layout.png)
 
-La barre latérale **Browse docs** à gauche est le système de navigation amélioré ; le panneau **On this page** à droite est la [table des matières](/docs/features/toc/).
+La barre latérale **Browse docs** à gauche est le système de navigation amélioré ; le panneau **On this page** à droite est la [[zer0-mistakes/pages/_docs/features/toc|table des matières]].
 
 ## Vue d'ensemble
 
@@ -388,9 +391,9 @@ Utilisation des Bootstrap Icons partout :
 
 ## Ressources associées
 
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
-- [Bouton de table des matières mobile](/docs/features/mobile-toc/)
-- [Table des matières](/docs/features/toc/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Bouton de table des matières mobile]]
+- [[zer0-mistakes/pages/_docs/features/toc|Table des matières]]
 
 ## Référence technique
 
@@ -401,6 +404,6 @@ Pour les détails d'implémentation (scroll spy, gestes de balayage, raccourcis 
 
 ## Voir aussi
 
-- [[Features]]
-- [[Breadcrumbs Navigation]]
-- [[Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-CMS/sites/zer0-pages/pages/_docs/features/breadcrumbs|Breadcrumbs Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]

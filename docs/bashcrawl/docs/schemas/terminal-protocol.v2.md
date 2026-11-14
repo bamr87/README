@@ -1,5 +1,7 @@
 ---
-source_file: terminal-protocol.v2.md
+source_file: docs/schemas/terminal-protocol.v2.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/schemas/terminal-protocol.v2.md
 title: Terminal Protocol v2
 ---
 # Terminal Protocol v2

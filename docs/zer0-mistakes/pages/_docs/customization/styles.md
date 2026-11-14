@@ -11,7 +11,9 @@ permalink: /docs/customization/styles/
 preview: /images/previews/styles.png
 sidebar:
   nav: docs
-source_file: styles.md
+source_file: pages/_docs/customization/styles.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/styles.md
 tags:
 - css
 - scss
@@ -19,6 +21,7 @@ tags:
 - bootstrap
 title: Styles
 ---
+
 # Styles
 
 Customize the visual appearance of your site using SCSS and CSS.
@@ -293,6 +296,6 @@ For contributor-level details (SCSS pipeline, design token catalog, Bootstrap in
 
 ## See also
 
-- [[Customization]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
 - [[Bootstrap Integration]]
-- [[Dark/Light Mode Toggle]]
+- [[zer0-mistakes/pages/_docs/features/color-modes|Dark/Light Mode Toggle]]

@@ -1,5 +1,7 @@
 ---
-source_file: ENVIRONMENT_MATRIX.md
+source_file: docs/quests/ENVIRONMENT_MATRIX.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/quests/ENVIRONMENT_MATRIX.md
 title: Quest Environment Matrix — the refactoring plan
 ---
 # Quest Environment Matrix — the refactoring plan

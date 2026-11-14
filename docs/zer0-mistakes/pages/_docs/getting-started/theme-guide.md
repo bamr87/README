@@ -22,15 +22,18 @@ prerequisites:
 preview: /images/previews/jekyll-theme-guide.png
 sidebar:
   nav: docs
-source_file: theme-guide.md
+source_file: pages/_docs/getting-started/theme-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/getting-started/theme-guide.md
 tags:
 - jekyll
 - tutorial
 - customization
 - docker
 - bootstrap
-title: Jekyll Theme Guide
+title: 'Jekyll Theme Guide: Setup, Customize, Deploy'
 ---
+
 # Jekyll Theme Guide
 
 > Complete guide to the Zer0-Mistakes Jekyll theme — from setup to customization to deployment.
@@ -393,11 +396,11 @@ $primary-color: #007bff;
 
 | Feature | Documentation | Front Matter |
 |---------|---------------|--------------|
-| Comments | [Giscus Guide](/docs/features/giscus-comments/) | `comments: true` |
-| Analytics | [PostHog Guide](/docs/features/posthog-analytics/) | (auto) |
-| Diagrams | [Mermaid Guide](/docs/features/mermaid-diagrams/) | `mermaid: true` |
-| Math | [MathJax Guide](/docs/features/mathjax-math/) | `mathjax: true` |
-| Pagination | [Pagination Guide](/docs/jekyll/pagination/) | (auto) |
+| Comments | [[zer0-mistakes/pages/_docs/features/giscus-comments\|Giscus Guide]] | `comments: true` |
+| Analytics | [[zer0-mistakes/pages/_docs/features/posthog-analytics\|PostHog Guide]] | (auto) |
+| Diagrams | [[zer0-mistakes/pages/_docs/features/mermaid-diagrams\|Mermaid Guide]] | `mermaid: true` |
+| Math | [[zer0-mistakes/pages/_docs/features/mathjax-math\|MathJax Guide]] | `mathjax: true` |
+| Pagination | [[zer0-mistakes/pages/_docs/jekyll/pagination\|Pagination Guide]] | (auto) |
 
 ---
 
@@ -419,7 +422,7 @@ $primary-color: #007bff;
 
 ### Custom Domain
 
-See [Custom Domain Setup](/docs/deployment/custom-domain/).
+See [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]].
 
 ---
 
@@ -464,10 +467,10 @@ bundle exec jekyll clean
 
 ## Next Steps
 
-- **[Giscus Comments](/docs/features/giscus-comments/)** — Add comment functionality
-- **[PostHog Analytics](/docs/features/posthog-analytics/)** — Track site usage
-- **[Mermaid Diagrams](/docs/features/mermaid-diagrams/)** — Create visual documentation
-- **[Keyboard Navigation](/docs/features/keyboard-navigation/)** — Accessibility features
+- **[[zer0-mistakes/pages/_docs/features/giscus-comments|Giscus Comments]]** — Add comment functionality
+- **[[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]]** — Track site usage
+- **[[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Mermaid Diagrams]]** — Create visual documentation
+- **[[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]** — Accessibility features
 
 ---
 
@@ -475,7 +478,7 @@ bundle exec jekyll clean
 
 ## See also
 
-- [[Getting Started]]
-- [[Customization]]
-- [[Features]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/features/README|Features]]
 - [[Bootstrap Integration]]

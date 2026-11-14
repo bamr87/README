@@ -7,15 +7,18 @@ description: 'The canonical upstream bug-intake protocol every downstream theme-
   must follow when filing zer0-mistakes theme defects: labels, deterministic dedupe
   key, pre-filing search, per-run cap, and evidence format.'
 lastmod: 2026-08-07 00:00:00+00:00
-source_file: theme-canary-contract.md
+source_file: docs/systems/theme-canary-contract.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/theme-canary-contract.md
 tags:
 - systems
 - canary
 - issues
 - consumers
 - automation
-title: Theme-canary reporting contract
+title: Theme-Canary Reporting Contract
 ---
+
 # Theme-canary reporting contract
 
 Every site that renders with this theme is a live **canary**: a defect that shows up site-wide on a consumer is almost always a *theme* bug that every consumer hits. Several consumers run **theme-scout** agents that file those defects upstream into `bamr87/zer0-mistakes`. This document is the **canonical contract** those scouts must follow — the upstream-intake counterpart to [theme propagation](theme-propagation.md) (the downstream release fan-out). The consumer registry is [`_data/consumers.yml`](../../_data/consumers.yml).
@@ -34,7 +37,7 @@ This contract is derived from the two founding scouts (it-journey's deterministi
 | Pre-filing search | Both mandated commands below, over **open AND closed** issues; any hit ⇒ don't file |
 | Per-run cap | ≤ **5** new issues per consumer per run |
 | Evidence | Theme version/commit observed, page URL(s), rendered-vs-expected, minimal repro, raw evidence |
-| Issue form | [`.github/ISSUE_TEMPLATE/theme-canary.yml`](../../.github/ISSUE_TEMPLATE/theme-canary.yml) mirrors this format |
+| Issue form | [`.github/ISSUE_TEMPLATE/theme-canary.yml`](../../dot-github/ISSUE_TEMPLATE/theme-canary.yml) mirrors this format |
 
 ## 1. Required labels
 
@@ -115,7 +118,7 @@ A consumer files at most **5** new canary issues per run. Rank candidates by sev
 
 ## 5. Required evidence format
 
-Every canary issue provides, in this order (the [issue form](../../.github/ISSUE_TEMPLATE/theme-canary.yml) mirrors these fields):
+Every canary issue provides, in this order (the [issue form](../../dot-github/ISSUE_TEMPLATE/theme-canary.yml) mirrors these fields):
 
 1. **Theme version/commit observed** — what makes fixed-in-release triage mechanical:
    - *Pinned consumers* (`remote_theme: bamr87/zer0-mistakes@vX.Y.Z` or a Gemfile pin): the pinned version.

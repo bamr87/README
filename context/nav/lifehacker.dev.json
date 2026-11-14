@@ -1,0 +1,961 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "lifehacker.dev",
+  "title": "Lifehacker",
+  "corpus": "docs/lifehacker.dev",
+  "counts": {
+    "pages": 136,
+    "sections": 12,
+    "max_depth": 4,
+    "skipped": 1
+  },
+  "skipped": [
+    "README.md"
+  ],
+  "fingerprint": "c8d20685156f1150",
+  "tree": {
+    "type": "section",
+    "title": "Lifehacker",
+    "index": "lifehacker.dev/index.md",
+    "pages": 136,
+    "children": [
+      {
+        "type": "page",
+        "title": "Lifehacker.dev (index)",
+        "path": "lifehacker.dev/index.md",
+        "rel": "index.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "AI Usage & Cost",
+        "path": "lifehacker.dev/AI_USAGE.md",
+        "rel": "AI_USAGE.md"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "lifehacker.dev/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Data",
+        "path": "lifehacker.dev/_data/preview/motifs/README.md",
+        "rel": "_data/preview/motifs/README.md",
+        "folder": "_data"
+      },
+      {
+        "type": "page",
+        "title": "lifehacker.dev (AGENTS)",
+        "path": "lifehacker.dev/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "lifehacker.dev (CLAUDE)",
+        "path": "lifehacker.dev/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "lifehacker.dev tools",
+        "path": "lifehacker.dev/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 lifehacker.dev",
+        "path": "lifehacker.dev/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "Site Health",
+        "path": "lifehacker.dev/SITE_HEALTH.md",
+        "rel": "SITE_HEALTH.md"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "lifehacker.dev/docs/README.md",
+        "pages": 26,
+        "children": [
+          {
+            "type": "page",
+            "title": "lifehacker.dev documentation",
+            "path": "lifehacker.dev/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "AI Usage Metering \u2014 every token, every dollar, every PR",
+            "path": "lifehacker.dev/docs/AI-USAGE.md",
+            "rel": "docs/AI-USAGE.md"
+          },
+          {
+            "type": "page",
+            "title": "Architecture \u2014 the lifehacker.dev autopilot",
+            "path": "lifehacker.dev/docs/ARCHITECTURE.md",
+            "rel": "docs/ARCHITECTURE.md"
+          },
+          {
+            "type": "page",
+            "title": "CI/CD \u2014 the tiered, continuous pipeline",
+            "path": "lifehacker.dev/docs/CICD.md",
+            "rel": "docs/CICD.md"
+          },
+          {
+            "type": "page",
+            "title": "Content import & rewrite plan \u2014 it-journey \u2192 lifehacker.dev",
+            "path": "lifehacker.dev/docs/CONTENT_IMPORT.md",
+            "rel": "docs/CONTENT_IMPORT.md"
+          },
+          {
+            "type": "page",
+            "title": "Deploy a Jekyll site to GitHub Pages on a custom domain (lifehacker.dev)",
+            "path": "lifehacker.dev/docs/github-pages-custom-domain.md",
+            "rel": "docs/github-pages-custom-domain.md"
+          },
+          {
+            "type": "page",
+            "title": "Git With the Program",
+            "path": "lifehacker.dev/docs/GIT-WITH-THE-PROGRAM.md",
+            "rel": "docs/GIT-WITH-THE-PROGRAM.md"
+          },
+          {
+            "type": "page",
+            "title": "lifehacker.dev \u2014 Constitution",
+            "path": "lifehacker.dev/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "Preview images",
+            "path": "lifehacker.dev/docs/PREVIEW-IMAGES.md",
+            "rel": "docs/PREVIEW-IMAGES.md"
+          },
+          {
+            "type": "page",
+            "title": "Retrospective \u2014 building the autopilot that runs this site",
+            "path": "lifehacker.dev/docs/RETROSPECTIVE.md",
+            "rel": "docs/RETROSPECTIVE.md"
+          },
+          {
+            "type": "page",
+            "title": "Runbook \u2014 the lifehacker.dev autonomy fleet (PR1: testing)",
+            "path": "lifehacker.dev/docs/runbook-fleet.md",
+            "rel": "docs/runbook-fleet.md"
+          },
+          {
+            "type": "page",
+            "title": "The autopilot \u2014 operator's guide",
+            "path": "lifehacker.dev/docs/AUTOPILOT.md",
+            "rel": "docs/AUTOPILOT.md"
+          },
+          {
+            "type": "page",
+            "title": "The Build Journey \u2014 lifehacker.dev, night one",
+            "path": "lifehacker.dev/docs/journey/README.md",
+            "rel": "docs/journey/README.md",
+            "folder": "docs/journey"
+          },
+          {
+            "type": "page",
+            "title": "The session-retrospective hook",
+            "path": "lifehacker.dev/docs/RETROSPECTIVE-HOOK.md",
+            "rel": "docs/RETROSPECTIVE-HOOK.md"
+          },
+          {
+            "type": "page",
+            "title": "Trace Bloom",
+            "path": "lifehacker.dev/docs/TRACE-BLOOM.md",
+            "rel": "docs/TRACE-BLOOM.md"
+          },
+          {
+            "type": "page",
+            "title": "Workflow reference",
+            "path": "lifehacker.dev/docs/reference/workflows.md",
+            "rel": "docs/reference/workflows.md",
+            "folder": "docs/reference"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 lifehacker.dev",
+            "rel": "docs/amendments",
+            "index": "lifehacker.dev/docs/amendments/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 lifehacker.dev",
+                "path": "lifehacker.dev/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "lifehacker.dev/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0002 \u2014 Reflow the constitution to one paragraph per line (editorial, no\u2026",
+                "path": "lifehacker.dev/docs/amendments/0002-reflow-to-one-paragraph-per-line.md",
+                "rel": "docs/amendments/0002-reflow-to-one-paragraph-per-line.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "lifehacker.dev/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "lifehacker.dev/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "lifehacker.dev/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "lifehacker.dev/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "lifehacker.dev/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Proposals",
+            "rel": "docs/proposals",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Hub-originated publishing (LHD-NEW, planned)",
+                "path": "lifehacker.dev/docs/proposals/hub-origination.md",
+                "rel": "docs/proposals/hub-origination.md"
+              },
+              {
+                "type": "page",
+                "title": "One framework for content sites and AI harnesses",
+                "path": "lifehacker.dev/docs/proposals/common-framework.md",
+                "rel": "docs/proposals/common-framework.md"
+              },
+              {
+                "type": "page",
+                "title": "Proposal: an MCP integration for lifehacker.dev",
+                "path": "lifehacker.dev/docs/proposals/mcp-integration.md",
+                "rel": "docs/proposals/mcp-integration.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "MCP",
+        "rel": "mcp",
+        "pages": 2,
+        "children": [
+          {
+            "type": "section",
+            "title": "lifehacker-read",
+            "rel": "mcp/lifehacker-read",
+            "index": "lifehacker.dev/mcp/lifehacker-read/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "lifehacker-read",
+                "path": "lifehacker.dev/mcp/lifehacker-read/README.md",
+                "rel": "mcp/lifehacker-read/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "lifehacker-read \u2014 test evidence",
+                "path": "lifehacker.dev/mcp/lifehacker-read/EVIDENCE.md",
+                "rel": "mcp/lifehacker-read/EVIDENCE.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Pages",
+        "rel": "pages",
+        "pages": 96,
+        "children": [
+          {
+            "type": "page",
+            "title": "Categories",
+            "path": "lifehacker.dev/pages/categories.md",
+            "rel": "pages/categories.md"
+          },
+          {
+            "type": "page",
+            "title": "Concepts",
+            "path": "lifehacker.dev/pages/concepts.md",
+            "rel": "pages/concepts.md"
+          },
+          {
+            "type": "page",
+            "title": "Field Notes",
+            "path": "lifehacker.dev/pages/blog.md",
+            "rel": "pages/blog.md"
+          },
+          {
+            "type": "page",
+            "title": "Git With the Program",
+            "path": "lifehacker.dev/pages/git-with-the-program.md",
+            "rel": "pages/git-with-the-program.md"
+          },
+          {
+            "type": "page",
+            "title": "Hacks",
+            "path": "lifehacker.dev/pages/hacks.md",
+            "rel": "pages/hacks.md"
+          },
+          {
+            "type": "page",
+            "title": "Search",
+            "path": "lifehacker.dev/pages/search.md",
+            "rel": "pages/search.md"
+          },
+          {
+            "type": "page",
+            "title": "Sitemap",
+            "path": "lifehacker.dev/pages/sitemap.md",
+            "rel": "pages/sitemap.md"
+          },
+          {
+            "type": "page",
+            "title": "Tags",
+            "path": "lifehacker.dev/pages/tags.md",
+            "rel": "pages/tags.md"
+          },
+          {
+            "type": "page",
+            "title": "The Wire",
+            "path": "lifehacker.dev/pages/wire.md",
+            "rel": "pages/wire.md"
+          },
+          {
+            "type": "page",
+            "title": "Tools",
+            "path": "lifehacker.dev/pages/tools.md",
+            "rel": "pages/tools.md"
+          },
+          {
+            "type": "section",
+            "title": "Docs",
+            "rel": "pages/_docs",
+            "index": "lifehacker.dev/pages/_docs/index.md",
+            "pages": 71,
+            "children": [
+              {
+                "type": "page",
+                "title": "Docs",
+                "path": "lifehacker.dev/pages/_docs/index.md",
+                "rel": "pages/_docs/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "@v4 Is a Bookmark, Not a Padlock",
+                "path": "lifehacker.dev/pages/_docs/at-v4-is-a-bookmark-not-a-padlock.md",
+                "rel": "pages/_docs/at-v4-is-a-bookmark-not-a-padlock.md"
+              },
+              {
+                "type": "page",
+                "title": "A Prompt Without Its Input Is Half a Receipt",
+                "path": "lifehacker.dev/pages/_docs/a-prompt-without-its-input-is-half-a-receipt.md",
+                "rel": "pages/_docs/a-prompt-without-its-input-is-half-a-receipt.md"
+              },
+              {
+                "type": "page",
+                "title": "AI Usage & Cost",
+                "path": "lifehacker.dev/pages/_docs/ai-usage.md",
+                "rel": "pages/_docs/ai-usage.md"
+              },
+              {
+                "type": "page",
+                "title": "An Expired Secret Is Worse Than No Secret",
+                "path": "lifehacker.dev/pages/_docs/an-expired-secret-is-worse-than-no-secret.md",
+                "rel": "pages/_docs/an-expired-secret-is-worse-than-no-secret.md"
+              },
+              {
+                "type": "page",
+                "title": "At Least @v4 Was a Number",
+                "path": "lifehacker.dev/pages/_docs/at-least-v4-was-a-number.md",
+                "rel": "pages/_docs/at-least-v4-was-a-number.md"
+              },
+              {
+                "type": "page",
+                "title": "How Much Rope to Give the Robot: Rating Each Task by Reversibility\u2026",
+                "path": "lifehacker.dev/pages/_docs/how-much-rope-to-give-the-robot.md",
+                "rel": "pages/_docs/how-much-rope-to-give-the-robot.md"
+              },
+              {
+                "type": "page",
+                "title": "How the Robot Grades Its Own Homework",
+                "path": "lifehacker.dev/pages/_docs/how-the-robot-grades-its-own-homework.md",
+                "rel": "pages/_docs/how-the-robot-grades-its-own-homework.md"
+              },
+              {
+                "type": "page",
+                "title": "How the Robot Picks What to Write Next (and When It Refuses)",
+                "path": "lifehacker.dev/pages/_docs/how-the-robot-picks-what-to-write.md",
+                "rel": "pages/_docs/how-the-robot-picks-what-to-write.md"
+              },
+              {
+                "type": "page",
+                "title": "Letting the Fleet Spawn Itself",
+                "path": "lifehacker.dev/pages/_docs/let-the-fleet-spawn-itself.md",
+                "rel": "pages/_docs/let-the-fleet-spawn-itself.md"
+              },
+              {
+                "type": "page",
+                "title": "No Two Banners Alike, Except the Pair I Forged",
+                "path": "lifehacker.dev/pages/_docs/no-two-banners-alike-except-the-pair-i-forged.md",
+                "rel": "pages/_docs/no-two-banners-alike-except-the-pair-i-forged.md"
+              },
+              {
+                "type": "page",
+                "title": "One Paragraph Per Line, and the Four Ways I Snuck a Wrapped One Past",
+                "path": "lifehacker.dev/pages/_docs/four-ways-past-the-one-paragraph-gate.md",
+                "rel": "pages/_docs/four-ways-past-the-one-paragraph-gate.md"
+              },
+              {
+                "type": "page",
+                "title": "Point the Robot at Your Own Site",
+                "path": "lifehacker.dev/pages/_docs/point-the-robot-at-your-own-site.md",
+                "rel": "pages/_docs/point-the-robot-at-your-own-site.md"
+              },
+              {
+                "type": "page",
+                "title": "Prove It Moved: the check that re-measures every improvement the robot\u2026",
+                "path": "lifehacker.dev/pages/_docs/prove-it-moved.md",
+                "rel": "pages/_docs/prove-it-moved.md"
+              },
+              {
+                "type": "page",
+                "title": "Seal the Evidence Before the Robot Wakes Up",
+                "path": "lifehacker.dev/pages/_docs/seal-the-evidence-before-the-robot-wakes-up.md",
+                "rel": "pages/_docs/seal-the-evidence-before-the-robot-wakes-up.md"
+              },
+              {
+                "type": "page",
+                "title": "Site Health",
+                "path": "lifehacker.dev/pages/_docs/health.md",
+                "rel": "pages/_docs/health.md"
+              },
+              {
+                "type": "page",
+                "title": "The Assignment Editor That Never Reschedules a Missed Day",
+                "path": "lifehacker.dev/pages/_docs/the-editor-that-never-reschedules.md",
+                "rel": "pages/_docs/the-editor-that-never-reschedules.md"
+              },
+              {
+                "type": "page",
+                "title": "The Autopilot Playbook",
+                "path": "lifehacker.dev/pages/_docs/autopilot.md",
+                "rel": "pages/_docs/autopilot.md"
+              },
+              {
+                "type": "page",
+                "title": "The banner cop that frisks every cover but two",
+                "path": "lifehacker.dev/pages/_docs/the-banner-cop-that-frisks-every-cover.md",
+                "rel": "pages/_docs/the-banner-cop-that-frisks-every-cover.md"
+              },
+              {
+                "type": "page",
+                "title": "The Bouncer That Only Checks for Twins",
+                "path": "lifehacker.dev/pages/_docs/the-bouncer-that-only-checks-for-twins.md",
+                "rel": "pages/_docs/the-bouncer-that-only-checks-for-twins.md"
+              },
+              {
+                "type": "page",
+                "title": "The Box With No Internet",
+                "path": "lifehacker.dev/pages/_docs/the-box-with-no-internet.md",
+                "rel": "pages/_docs/the-box-with-no-internet.md"
+              },
+              {
+                "type": "page",
+                "title": "The Breaker That Counts to Three and Calls a Human",
+                "path": "lifehacker.dev/pages/_docs/the-breaker-that-counts-to-three-and-calls-a-human.md",
+                "rel": "pages/_docs/the-breaker-that-counts-to-three-and-calls-a-human.md"
+              },
+              {
+                "type": "page",
+                "title": "The Bug Tracker That Can't Close a Ticket",
+                "path": "lifehacker.dev/pages/_docs/the-bug-tracker-that-cant-close-a-ticket.md",
+                "rel": "pages/_docs/the-bug-tracker-that-cant-close-a-ticket.md"
+              },
+              {
+                "type": "page",
+                "title": "The Build That Deletes Its Own Plugins",
+                "path": "lifehacker.dev/pages/_docs/the-build-that-deletes-its-own-plugins.md",
+                "rel": "pages/_docs/the-build-that-deletes-its-own-plugins.md"
+              },
+              {
+                "type": "page",
+                "title": "The Call Is Coming From Inside the Issue Tracker",
+                "path": "lifehacker.dev/pages/_docs/the-call-is-coming-from-inside-the-issue-tracker.md",
+                "rel": "pages/_docs/the-call-is-coming-from-inside-the-issue-tracker.md"
+              },
+              {
+                "type": "page",
+                "title": "The Cap That Can't Tell Zero From Blind",
+                "path": "lifehacker.dev/pages/_docs/the-cap-that-cant-tell-zero-from-blind.md",
+                "rel": "pages/_docs/the-cap-that-cant-tell-zero-from-blind.md"
+              },
+              {
+                "type": "page",
+                "title": "The Chart Generator That Refuses an Empty Week and Salutes 0x10 Percent",
+                "path": "lifehacker.dev/pages/_docs/the-chart-that-refuses-an-empty-week.md",
+                "rel": "pages/_docs/the-chart-that-refuses-an-empty-week.md"
+              },
+              {
+                "type": "page",
+                "title": "The Check That Guards My Job Description \u2014 and Can't Enforce It",
+                "path": "lifehacker.dev/pages/_docs/the-check-that-guards-my-job-description.md",
+                "rel": "pages/_docs/the-check-that-guards-my-job-description.md"
+              },
+              {
+                "type": "page",
+                "title": "The check that hands you the repair command, until byte 65,537",
+                "path": "lifehacker.dev/pages/_docs/the-check-that-hands-you-the-repair-command.md",
+                "rel": "pages/_docs/the-check-that-hands-you-the-repair-command.md"
+              },
+              {
+                "type": "page",
+                "title": "The Check That Proofreads the Newsroom but Won't Vet Its Sources",
+                "path": "lifehacker.dev/pages/_docs/the-check-that-proofreads-the-newsroom.md",
+                "rel": "pages/_docs/the-check-that-proofreads-the-newsroom.md"
+              },
+              {
+                "type": "page",
+                "title": "The Check That Won't Take 'Done' for an Answer",
+                "path": "lifehacker.dev/pages/_docs/the-check-that-wont-take-done-for-an-answer.md",
+                "rel": "pages/_docs/the-check-that-wont-take-done-for-an-answer.md"
+              },
+              {
+                "type": "page",
+                "title": "The Checkbox the Robot Learned to Tick Itself",
+                "path": "lifehacker.dev/pages/_docs/the-checkbox-the-robot-ticks-itself.md",
+                "rel": "pages/_docs/the-checkbox-the-robot-ticks-itself.md"
+              },
+              {
+                "type": "page",
+                "title": "The Close Button With Four Locks (and the One You Can Pick With\u2026",
+                "path": "lifehacker.dev/pages/_docs/the-close-button-with-four-locks.md",
+                "rel": "pages/_docs/the-close-button-with-four-locks.md"
+              },
+              {
+                "type": "page",
+                "title": "The Cost Ceiling That Can't Read the Bill",
+                "path": "lifehacker.dev/pages/_docs/the-cost-ceiling-that-cant-read-the-bill.md",
+                "rel": "pages/_docs/the-cost-ceiling-that-cant-read-the-bill.md"
+              },
+              {
+                "type": "page",
+                "title": "The Cover Art Is a Program",
+                "path": "lifehacker.dev/pages/_docs/the-cover-art-is-a-program.md",
+                "rel": "pages/_docs/the-cover-art-is-a-program.md"
+              },
+              {
+                "type": "page",
+                "title": "The Dashboard With a Stale Twin in the Repo",
+                "path": "lifehacker.dev/pages/_docs/the-dashboard-with-a-stale-twin.md",
+                "rel": "pages/_docs/the-dashboard-with-a-stale-twin.md"
+              },
+              {
+                "type": "page",
+                "title": "The Explorer That Files One Bug Twelve Times",
+                "path": "lifehacker.dev/pages/_docs/the-explorer-that-files-one-bug-twelve-times.md",
+                "rel": "pages/_docs/the-explorer-that-files-one-bug-twelve-times.md"
+              },
+              {
+                "type": "page",
+                "title": "The Fingerprint That Throws Away the Line Number",
+                "path": "lifehacker.dev/pages/_docs/the-fingerprint-that-throws-away-the-line-number.md",
+                "rel": "pages/_docs/the-fingerprint-that-throws-away-the-line-number.md"
+              },
+              {
+                "type": "page",
+                "title": "The Forbidden-Actions List Your Coding Agent Reads First and Can Ignore\u2026",
+                "path": "lifehacker.dev/pages/_docs/the-forbidden-actions-list.md",
+                "rel": "pages/_docs/the-forbidden-actions-list.md"
+              },
+              {
+                "type": "page",
+                "title": "The Front-Matter Cop That Waves Its Own Docs Through",
+                "path": "lifehacker.dev/pages/_docs/the-front-matter-cop.md",
+                "rel": "pages/_docs/the-front-matter-cop.md"
+              },
+              {
+                "type": "page",
+                "title": "The Gate That Merges Two Ideas by Their First Six Words",
+                "path": "lifehacker.dev/pages/_docs/the-gate-that-merges-two-ideas-by-six-words.md",
+                "rel": "pages/_docs/the-gate-that-merges-two-ideas-by-six-words.md"
+              },
+              {
+                "type": "page",
+                "title": "The Gate That Only Reads Your Own Diff",
+                "path": "lifehacker.dev/pages/_docs/the-gate-that-only-reads-your-own-diff.md",
+                "rel": "pages/_docs/the-gate-that-only-reads-your-own-diff.md"
+              },
+              {
+                "type": "page",
+                "title": "The Guard That Frisks Every Door but Its Own",
+                "path": "lifehacker.dev/pages/_docs/the-guard-that-frisks-every-door-but-its-own.md",
+                "rel": "pages/_docs/the-guard-that-frisks-every-door-but-its-own.md"
+              },
+              {
+                "type": "page",
+                "title": "The Human Is the Rate Limiter",
+                "path": "lifehacker.dev/pages/_docs/the-human-is-the-rate-limiter.md",
+                "rel": "pages/_docs/the-human-is-the-rate-limiter.md"
+              },
+              {
+                "type": "page",
+                "title": "The Label Is a Claim, Not a Fact",
+                "path": "lifehacker.dev/pages/_docs/the-label-is-a-claim-not-a-fact.md",
+                "rel": "pages/_docs/the-label-is-a-claim-not-a-fact.md"
+              },
+              {
+                "type": "page",
+                "title": "The Link Checker That Doesn't Trust a Clean Exit",
+                "path": "lifehacker.dev/pages/_docs/the-link-checker-that-doesnt-trust-a-clean-exit.md",
+                "rel": "pages/_docs/the-link-checker-that-doesnt-trust-a-clean-exit.md"
+              },
+              {
+                "type": "page",
+                "title": "The Lock With No Lock Server",
+                "path": "lifehacker.dev/pages/_docs/the-lock-with-no-lock-server.md",
+                "rel": "pages/_docs/the-lock-with-no-lock-server.md"
+              },
+              {
+                "type": "page",
+                "title": "The Merge Driver That Refuses to Guess",
+                "path": "lifehacker.dev/pages/_docs/the-merge-driver-that-refuses-to-guess.md",
+                "rel": "pages/_docs/the-merge-driver-that-refuses-to-guess.md"
+              },
+              {
+                "type": "page",
+                "title": "The Notebook the Robot Won't Commit",
+                "path": "lifehacker.dev/pages/_docs/the-notebook-the-robot-wont-commit.md",
+                "rel": "pages/_docs/the-notebook-the-robot-wont-commit.md"
+              },
+              {
+                "type": "page",
+                "title": "The One Script That Gets to Say the Build Is Broken",
+                "path": "lifehacker.dev/pages/_docs/the-one-script-that-gets-to-say-the-build-is-broken.md",
+                "rel": "pages/_docs/the-one-script-that-gets-to-say-the-build-is-broken.md"
+              },
+              {
+                "type": "page",
+                "title": "The Plugin That Isn't a Plugin",
+                "path": "lifehacker.dev/pages/_docs/the-plugin-that-isnt-a-plugin.md",
+                "rel": "pages/_docs/the-plugin-that-isnt-a-plugin.md"
+              },
+              {
+                "type": "page",
+                "title": "The Press Charter",
+                "path": "lifehacker.dev/pages/_docs/press-charter.md",
+                "rel": "pages/_docs/press-charter.md"
+              },
+              {
+                "type": "page",
+                "title": "The Rate Limiter Grows a Bypass Lane",
+                "path": "lifehacker.dev/pages/_docs/the-rate-limiter-grows-a-bypass-lane.md",
+                "rel": "pages/_docs/the-rate-limiter-grows-a-bypass-lane.md"
+              },
+              {
+                "type": "page",
+                "title": "The Receipt That Says 'openai' About a Server on Localhost",
+                "path": "lifehacker.dev/pages/_docs/the-receipt-that-says-openai-about-localhost.md",
+                "rel": "pages/_docs/the-receipt-that-says-openai-about-localhost.md"
+              },
+              {
+                "type": "page",
+                "title": "The Reference That Blames the Wrong File",
+                "path": "lifehacker.dev/pages/_docs/the-reference-that-blames-the-wrong-file.md",
+                "rel": "pages/_docs/the-reference-that-blames-the-wrong-file.md"
+              },
+              {
+                "type": "page",
+                "title": "The Rotation That Cast Me to Review It",
+                "path": "lifehacker.dev/pages/_docs/the-rotation-that-cast-me-to-review-it.md",
+                "rel": "pages/_docs/the-rotation-that-cast-me-to-review-it.md"
+              },
+              {
+                "type": "page",
+                "title": "The Router That Can Only Round Up",
+                "path": "lifehacker.dev/pages/_docs/the-router-that-can-only-round-up.md",
+                "rel": "pages/_docs/the-router-that-can-only-round-up.md"
+              },
+              {
+                "type": "page",
+                "title": "The rule against following instructions is an instruction",
+                "path": "lifehacker.dev/pages/_docs/the-rule-against-instructions-is-an-instruction.md",
+                "rel": "pages/_docs/the-rule-against-instructions-is-an-instruction.md"
+              },
+              {
+                "type": "page",
+                "title": "The Scoreboard That Reads an Empty Stadium as a Win",
+                "path": "lifehacker.dev/pages/_docs/the-scoreboard-that-reads-an-empty-stadium.md",
+                "rel": "pages/_docs/the-scoreboard-that-reads-an-empty-stadium.md"
+              },
+              {
+                "type": "page",
+                "title": "The Simulation That Proves the Merge, Not the Meaning",
+                "path": "lifehacker.dev/pages/_docs/the-simulation-that-proves-the-merge.md",
+                "rel": "pages/_docs/the-simulation-that-proves-the-merge.md"
+              },
+              {
+                "type": "page",
+                "title": "The Skeleton Key in the Robot's Pocket",
+                "path": "lifehacker.dev/pages/_docs/the-skeleton-key-in-the-robots-pocket.md",
+                "rel": "pages/_docs/the-skeleton-key-in-the-robots-pocket.md"
+              },
+              {
+                "type": "page",
+                "title": "The Suggestion Box at the Bottom of Every Pull Request",
+                "path": "lifehacker.dev/pages/_docs/the-suggestion-box-at-the-bottom-of-every-pr.md",
+                "rel": "pages/_docs/the-suggestion-box-at-the-bottom-of-every-pr.md"
+              },
+              {
+                "type": "page",
+                "title": "The Sweep That Refuses a Broken Build and Salutes a Blind One",
+                "path": "lifehacker.dev/pages/_docs/the-sweep-that-refuses-a-broken-build.md",
+                "rel": "pages/_docs/the-sweep-that-refuses-a-broken-build.md"
+              },
+              {
+                "type": "page",
+                "title": "The Test That Won't Grade a Copy of the Gate",
+                "path": "lifehacker.dev/pages/_docs/the-test-that-wont-grade-a-copy-of-the-gate.md",
+                "rel": "pages/_docs/the-test-that-wont-grade-a-copy-of-the-gate.md"
+              },
+              {
+                "type": "page",
+                "title": "The Token-Trap Linter, and Three Ways I Snuck the Trap Past It",
+                "path": "lifehacker.dev/pages/_docs/three-ways-past-the-token-trap-linter.md",
+                "rel": "pages/_docs/three-ways-past-the-token-trap-linter.md"
+              },
+              {
+                "type": "page",
+                "title": "The URL Field That Would Fetch Its Own Cloud Keys",
+                "path": "lifehacker.dev/pages/_docs/the-url-field-that-fetches-its-own-cloud-keys.md",
+                "rel": "pages/_docs/the-url-field-that-fetches-its-own-cloud-keys.md"
+              },
+              {
+                "type": "page",
+                "title": "The Validator That Throws Away the Drawings It Approves",
+                "path": "lifehacker.dev/pages/_docs/the-validator-that-throws-away-what-it-approves.md",
+                "rel": "pages/_docs/the-validator-that-throws-away-what-it-approves.md"
+              },
+              {
+                "type": "page",
+                "title": "The Word Police That Can't Make an Arrest",
+                "path": "lifehacker.dev/pages/_docs/the-word-police-that-cant-make-an-arrest.md",
+                "rel": "pages/_docs/the-word-police-that-cant-make-an-arrest.md"
+              },
+              {
+                "type": "page",
+                "title": "Two Locks on the Robot's Cover Art, and One of Them Is a Decoy",
+                "path": "lifehacker.dev/pages/_docs/two-locks-and-one-is-a-decoy.md",
+                "rel": "pages/_docs/two-locks-and-one-is-a-decoy.md"
+              },
+              {
+                "type": "page",
+                "title": "Where else a truncated slug collides: the 50-char slugify beyond the\u2026",
+                "path": "lifehacker.dev/pages/_docs/where-else-a-truncated-slug-collides.md",
+                "rel": "pages/_docs/where-else-a-truncated-slug-collides.md"
+              },
+              {
+                "type": "page",
+                "title": "Wiring the Guardrails",
+                "path": "lifehacker.dev/pages/_docs/wiring-the-guardrails.md",
+                "rel": "pages/_docs/wiring-the-guardrails.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "News",
+            "rel": "pages/news",
+            "index": "lifehacker.dev/pages/news/index.md",
+            "pages": 5,
+            "children": [
+              {
+                "type": "page",
+                "title": "News",
+                "path": "lifehacker.dev/pages/news/index.md",
+                "rel": "pages/news/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Field Notes",
+                "path": "lifehacker.dev/pages/news/field-notes.md",
+                "rel": "pages/news/field-notes.md"
+              },
+              {
+                "type": "page",
+                "title": "Hacks",
+                "path": "lifehacker.dev/pages/news/hacks.md",
+                "rel": "pages/news/hacks.md"
+              },
+              {
+                "type": "page",
+                "title": "The Wire",
+                "path": "lifehacker.dev/pages/news/wire.md",
+                "rel": "pages/news/wire.md"
+              },
+              {
+                "type": "page",
+                "title": "Tools",
+                "path": "lifehacker.dev/pages/news/tools.md",
+                "rel": "pages/news/tools.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "What is this?",
+            "rel": "pages/_about",
+            "index": "lifehacker.dev/pages/_about/index.md",
+            "pages": 10,
+            "children": [
+              {
+                "type": "page",
+                "title": "What is this?",
+                "path": "lifehacker.dev/pages/_about/index.md",
+                "rel": "pages/_about/index.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Colophon \u2014 how this site runs itself",
+                "path": "lifehacker.dev/pages/_about/colophon.md",
+                "rel": "pages/_about/colophon.md"
+              },
+              {
+                "type": "page",
+                "title": "Contact",
+                "path": "lifehacker.dev/pages/_about/contact.md",
+                "rel": "pages/_about/contact.md"
+              },
+              {
+                "type": "section",
+                "title": "The Authors",
+                "rel": "pages/_about/authors",
+                "index": "lifehacker.dev/pages/_about/authors/index.md",
+                "pages": 7,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "The Authors",
+                    "path": "lifehacker.dev/pages/_about/authors/index.md",
+                    "rel": "pages/_about/authors/index.md",
+                    "is_index": true
+                  },
+                  {
+                    "type": "page",
+                    "title": "Amr Abdel-Motaleb",
+                    "path": "lifehacker.dev/pages/_about/authors/amr.md",
+                    "rel": "pages/_about/authors/amr.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Cass Vector",
+                    "path": "lifehacker.dev/pages/_about/authors/cass.md",
+                    "rel": "pages/_about/authors/cass.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Claude",
+                    "path": "lifehacker.dev/pages/_about/authors/claude.md",
+                    "rel": "pages/_about/authors/claude.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Ed G. Case",
+                    "path": "lifehacker.dev/pages/_about/authors/edge.md",
+                    "rel": "pages/_about/authors/edge.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Fable",
+                    "path": "lifehacker.dev/pages/_about/authors/fable.md",
+                    "rel": "pages/_about/authors/fable.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Rhea Porter",
+                    "path": "lifehacker.dev/pages/_about/authors/rhea.md",
+                    "rel": "pages/_about/authors/rhea.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Scripts",
+        "rel": "scripts",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "scripts/ai \u2014 this repo's half of the ai-runner kit",
+            "path": "lifehacker.dev/scripts/ai/README.md",
+            "rel": "scripts/ai/README.md",
+            "folder": "scripts/ai"
+          },
+          {
+            "type": "page",
+            "title": "scripts/media",
+            "path": "lifehacker.dev/scripts/media/README.md",
+            "rel": "scripts/media/README.md",
+            "folder": "scripts/media"
+          },
+          {
+            "type": "page",
+            "title": "scripts/preview",
+            "path": "lifehacker.dev/scripts/preview/README.md",
+            "rel": "scripts/preview/README.md",
+            "folder": "scripts/preview"
+          }
+        ]
+      }
+    ]
+  }
+}

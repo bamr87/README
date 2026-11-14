@@ -1,0 +1,155 @@
+{
+  "corpus": {
+    "file_count": 76,
+    "fingerprint": "dd6d28b07f6ba7c6",
+    "path": "docs/rewind-arcade",
+    "present": true,
+    "total_bytes": 355200
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Systems and formats",
+      "Constraints that do not move",
+      "retro-pi (imported)",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing"
+    ],
+    "readme": "README.md",
+    "summary": "Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.",
+    "title": "Rewind Arcade"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "arcade/README.md",
+    "emulate/docs/ml-integration-plan.md",
+    "retro-pi/ML integration plan.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/rewind-arcade.md",
+    "fingerprint": "739dd7de909b9687",
+    "index": "rewind-arcade/README.md",
+    "max_depth": 3,
+    "pages": 76,
+    "present": true,
+    "sections": 11,
+    "skipped": 0,
+    "title": "Rewind Arcade",
+    "top_sections": [
+      {
+        "index": "rewind-arcade/catalog/README.md",
+        "pages": 6,
+        "path": "catalog",
+        "title": "Catalog \u2014 cartridge-index",
+        "type": "section"
+      },
+      {
+        "index": "rewind-arcade/docs/README.md",
+        "pages": 19,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "rewind-arcade/emulate/README.md",
+        "pages": 21,
+        "path": "emulate",
+        "title": "Emulate \u2014 retro-pi",
+        "type": "section"
+      },
+      {
+        "index": "rewind-arcade/arcade/README.md",
+        "pages": 3,
+        "path": "arcade",
+        "title": "Play \u2014 Rewind Arcade",
+        "type": "section"
+      },
+      {
+        "index": "rewind-arcade/retro-pi/README.md",
+        "pages": 21,
+        "path": "retro-pi",
+        "title": "retro-pi",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/rewind-arcade.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "game",
+    "name": "rewind-arcade",
+    "registry_description": "Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.",
+    "repo": "bamr87/rewind-arcade",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/rewind-arcade"
+  },
+  "rollups": {
+    "categories": {
+      "rewind-arcade": 76
+    },
+    "code_languages": [
+      "sh",
+      "plaintext",
+      "yaml",
+      "bash",
+      "python",
+      "text",
+      "toml"
+    ],
+    "indexed_documents": 76,
+    "top_tags": [],
+    "total_words": 50667
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 21,
+        "name": "emulate"
+      },
+      {
+        "doc_count": 21,
+        "name": "retro-pi"
+      },
+      {
+        "doc_count": 19,
+        "name": "docs"
+      },
+      {
+        "doc_count": 6,
+        "name": "catalog"
+      },
+      {
+        "doc_count": 3,
+        "name": "arcade"
+      }
+    ]
+  }
+}

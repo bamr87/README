@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/0010/
 preview: /images/previews/level-0010-terminal-enhancement-shell-mastery.webp
-source_file: README.md
+source_file: pages/_quests/0010/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/README.md
 tags:
 - quests
 - '0010'
 - apprentice
 - terminal
 - mastery
-title: 'Level 0010: Terminal Enhancement & Shell Mastery'
+title: Level 0010 - Terminal Enhancement & Shell Mastery
 ---
 # Level 0010: Terminal Enhancement & Shell Mastery
 
@@ -39,23 +41,23 @@ Level 0010 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest](/quests/0010/bash-scripting/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
-| [Terminal Enchantment: Oh-My-Zsh Mastery related_quests:](/quests/0010/oh-my-zsh-mastery/) | 🟡 Medium | 45-90 minutes | main_quest | 🔮 Placeholder |
-| [The Diagrammatic Enchantment: Jekyll-Mermaid Integration Quest](/quests/0010/jekyll-mermaid-integration/) | 🟡 Medium | 2-3 hours | main_quest | ✅ Complete |
-| [Understanding Action Triggers in Depth](/quests/0010/action-triggers/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0010/bash-scripting\|Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/0010/oh-my-zsh-terminal-enchantment\|Terminal Enchantment: Oh-My-Zsh Mastery related_quests:]] | 🟡 Medium | 45-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0010/jekyll-mermaid-integration\|The Diagrammatic Enchantment: Jekyll-Mermaid Integration Quest]] | 🟡 Medium | 2-3 hours | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/tools/action-triggers\|Understanding Action Triggers in Depth]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
 | [Advanced Markdown: Tables, Footnotes & Extended Syntax](/quests/0010/advanced-markdown/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
 | [Bootstrap Framework: Build Responsive Sites Fast](/quests/0010/bootstrap-framework/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Mastering Branches and Pull Requests for Developers](/quests/0010/branches-and-pull-requests/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
-| [Change Logs](/quests/0010/change-logs/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
-| [Commitments to clean commits](/quests/0010/commitments-to-clean-commits/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/tools/branches-and-pull-requests\|Mastering Branches and Pull Requests for Developers]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/tools/change-logs\|Change Logs]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/tools/commitments-to-clean-commits\|Commitments to clean commits]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
 | [CSS Styling Basics: Selectors, Layout & Responsive Design](/quests/0010/css-styling-basics/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Setting up Django and Git](/quests/0010/django-and-git/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
-| [Epic Quest: Zer0-to-Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/) | ⚔️ Epic | 15-25 hours | epic_quest | ✅ Complete |
+| [[it-journey/pages/_quests/tools/django-and-git\|Setting up Django and Git]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle\|Epic Quest: Zer0-to-Her0 CMStyle]] | ⚔️ Epic | 15-25 hours | epic_quest | ✅ Complete |
 | [JavaScript Fundamentals: DOM Manipulation & Events](/quests/0010/javascript-fundamentals/) | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [planting seeds](/quests/0010/planting-seeds/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
-| [Forging the Prompt Crystal: Master AI Communication](/quests/0010/prompt-engineering-mastery/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Recursive Realms: Testing Infinite Loops with AI](/quests/0010/recursive-realms-testing/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
-| [Revolutionizing Work with AI Automation](/quests/0010/revolutionizing-work-with-ai-automation/) | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/tools/planting-seeds\|planting seeds]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0010/prompt-engineering\|Forging the Prompt Crystal: Master AI Communication]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0010/testing-quests-with-recursive-questing\|Recursive Realms: Testing Infinite Loops with AI]] | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/tools/revolutionizing-work-with-ai-automation\|Revolutionizing Work with AI Automation]] | 🟢 Easy | 30-60 minutes | main_quest | 🔮 Placeholder |
 | [Terminal Artificer: Forging the Glass Interface](/quests/0010/side-quests/terminal-artificer/) | 🟢 Easy | 30-45 minutes | side_quest | 🔮 Placeholder |
 | [Nerd Font Enchantment: Terminal Icon Mastery](/quests/0010/side-quests/nerd-font-enchantment/) | 🟢 Easy | 20-30 minutes | side_quest | 🔮 Placeholder |
 

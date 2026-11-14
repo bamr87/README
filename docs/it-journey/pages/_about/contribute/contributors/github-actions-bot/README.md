@@ -14,12 +14,14 @@ keywords:
   - deployment
 lastmod: '2026-03-21T00:00:00.000Z'
 permalink: /contributors/github-actions-bot/
-source_file: README.md
+source_file: pages/_about/contribute/contributors/github-actions-bot/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/contribute/contributors/github-actions-bot/README.md
 tags:
 - ci-cd
 - automation
 - contributor
-title: Readme
+title: GitHub Actions Bot
 username: github-actions-bot
 ---
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">

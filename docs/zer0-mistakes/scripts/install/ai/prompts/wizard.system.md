@@ -1,5 +1,7 @@
 ---
-source_file: wizard.system.md
+source_file: scripts/install/ai/prompts/wizard.system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/install/ai/prompts/wizard.system.md
 title: zer0-mistakes AI Installation Wizard
 ---
 # zer0-mistakes AI Installation Wizard

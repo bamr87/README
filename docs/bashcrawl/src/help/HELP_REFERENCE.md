@@ -1,5 +1,7 @@
 ---
-source_file: HELP_REFERENCE.md
+source_file: src/help/HELP_REFERENCE.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/src/help/HELP_REFERENCE.md
 title: 🎯 Bashcrawl Help System Quick Reference
 ---
 # 🎯 Bashcrawl Help System Quick Reference

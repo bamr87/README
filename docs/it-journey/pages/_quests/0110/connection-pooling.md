@@ -71,7 +71,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 0110 Database Mastery quest line
 skill_focus: data-engineering
-source_file: connection-pooling.md
+source_file: pages/_quests/0110/connection-pooling.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/connection-pooling.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Gatekeeper''s Discipline'
 tags:
 - '0110'
@@ -80,7 +82,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: PgBouncer config lives at /opt/homebrew/etc/pgbouncer.ini
+title: 'Connection Pooling: Efficient Database Resource Management'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -129,7 +131,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understanding of how applications open database connections
 - [ ] Comfort editing config files and running services
-- [ ] Completion of [Database Fundamentals](/quests/0110/database-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -374,14 +376,14 @@ Connections piling up as `idle in transaction` are the classic fingerprint of a 
 - 🎯 Advance to Level 0111: API Development - serve your well-pooled database over HTTP
 
 **Explore Side Adventures**:
-- ⚔️ [Query Optimization](/quests/0110/query-optimization/) - Fewer, faster queries need fewer connections
-- ⚔️ [Backup and Recovery](/quests/0110/backup-recovery/) - Protect the database behind the gate
+- ⚔️ [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]] - Fewer, faster queries need fewer connections
+- ⚔️ [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]] - Protect the database behind the gate
 
 ### Character Class Recommendations
 
 **💻 Software Developer**: Continue to Level 0111: API Development  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
-**📊 Data Scientist**: Revisit [Query Optimization](/quests/0110/query-optimization/)
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]]  
+**📊 Data Scientist**: Revisit [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]]
 
 ## 📚 Resources
 
@@ -410,7 +412,7 @@ Connections piling up as `idle in transaction` are the classic fingerprint of a 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Level 0111 - API Development]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Level 0111 - API Development]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

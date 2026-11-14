@@ -1,0 +1,195 @@
+{
+  "corpus": {
+    "file_count": 142,
+    "fingerprint": "ff8e2cfa004f6b66",
+    "path": "docs/gitorio",
+    "present": true,
+    "total_bytes": 1019515
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Why this shape",
+      "The console",
+      "The harness",
+      "Imported packages",
+      "Documentation",
+      "Project structure",
+      "Development"
+    ],
+    "readme": "README.md",
+    "summary": "Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.",
+    "title": "\u2699 GitFactory"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/DECISIONS.md",
+    "docs/ARCHITECTURE.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/gitorio.md",
+    "fingerprint": "6914adddb6060317",
+    "index": "gitorio/README.md",
+    "max_depth": 5,
+    "pages": 142,
+    "present": true,
+    "sections": 37,
+    "skipped": 0,
+    "title": "Gitorio",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 6,
+        "path": "_docs",
+        "title": "Docs",
+        "type": "section"
+      },
+      {
+        "index": "gitorio/docs/README.md",
+        "pages": 16,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "gitorio/examples/README.md",
+        "pages": 4,
+        "path": "examples",
+        "title": "Examples \u2014 reference compiler output",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 50,
+        "path": "packages",
+        "title": "Packages",
+        "type": "section"
+      },
+      {
+        "index": "gitorio/seeds/README.md",
+        "pages": 9,
+        "path": "seeds",
+        "title": "Seeds \u2014 the bootstrap-era build plan (historical)",
+        "type": "section"
+      },
+      {
+        "index": "gitorio/specs/README.md",
+        "pages": 46,
+        "path": "specs",
+        "title": "Specs \u2014 spec-driven development for GitFactory",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/gitorio.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "gitorio",
+    "registry_description": "Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.",
+    "repo": "bamr87/gitorio",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/gitorio"
+  },
+  "rollups": {
+    "categories": {
+      "gitorio": 142
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "yaml",
+      "diff",
+      "mermaid",
+      "jsonc",
+      "text",
+      "json"
+    ],
+    "indexed_documents": 142,
+    "top_tags": [
+      "ai-agents",
+      "git",
+      "governance",
+      "llm-judges",
+      "event-sourcing",
+      "system-design",
+      "github",
+      "automation",
+      "github-actions",
+      "json-schema",
+      "semver",
+      "release-engineering",
+      "prompt-injection"
+    ],
+    "total_words": 147045
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "BACKLOG.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CONTRIBUTING.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 50,
+        "name": "packages"
+      },
+      {
+        "doc_count": 46,
+        "name": "specs"
+      },
+      {
+        "doc_count": 16,
+        "name": "docs"
+      },
+      {
+        "doc_count": 9,
+        "name": "seeds"
+      },
+      {
+        "doc_count": 6,
+        "name": "_docs"
+      },
+      {
+        "doc_count": 4,
+        "name": "examples"
+      },
+      {
+        "doc_count": 1,
+        "name": "app"
+      },
+      {
+        "doc_count": 1,
+        "name": "blog"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

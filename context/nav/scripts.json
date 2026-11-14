@@ -5,20 +5,18 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 29,
+    "pages": 24,
     "sections": 5,
     "max_depth": 3,
-    "skipped": 1
+    "skipped": 0
   },
-  "skipped": [
-    ".claude"
-  ],
-  "fingerprint": "529720b4afba9a54",
+  "skipped": [],
+  "fingerprint": "1312b35ba279a08d",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 29,
+    "pages": 24,
     "children": [
       {
         "type": "page",
@@ -35,22 +33,9 @@
       },
       {
         "type": "page",
-        "title": "Linting Configuration Management",
-        "path": "scripts/linting/README.md",
-        "rel": "linting/README.md",
-        "folder": "linting"
-      },
-      {
-        "type": "page",
         "title": "PRD \u2014 scripts",
         "path": "scripts/PRD.md",
         "rel": "PRD.md"
-      },
-      {
-        "type": "page",
-        "title": "Rename Directory Utility - Quick Reference",
-        "path": "scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md",
-        "rel": "RENAME-DIRECTORY-QUICK-REFERENCE.md"
       },
       {
         "type": "page",
@@ -166,7 +151,7 @@
         "title": "\ud83c\udf74 ForkMe - Advanced GitHub Repository Forking Utility",
         "rel": "FORKME",
         "index": "scripts/FORKME/README.md",
-        "pages": 7,
+        "pages": 4,
         "children": [
           {
             "type": "page",
@@ -183,18 +168,6 @@
           },
           {
             "type": "page",
-            "title": "ForkMe Implementation Summary",
-            "path": "scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
-            "rel": "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md"
-          },
-          {
-            "type": "page",
-            "title": "ForkMe Improvements Summary",
-            "path": "scripts/FORKME/IMPROVEMENTS.md",
-            "rel": "FORKME/IMPROVEMENTS.md"
-          },
-          {
-            "type": "page",
             "title": "ForkMe Quick Reference Card",
             "path": "scripts/FORKME/FORKME-QUICK-REFERENCE.md",
             "rel": "FORKME/FORKME-QUICK-REFERENCE.md"
@@ -204,12 +177,6 @@
             "title": "ForkMe Real-World Examples",
             "path": "scripts/FORKME/FORKME-EXAMPLES.md",
             "rel": "FORKME/FORKME-EXAMPLES.md"
-          },
-          {
-            "type": "page",
-            "title": "ForkMe Review & Improvements - Complete Summary",
-            "path": "scripts/FORKME/REVIEW-SUMMARY.md",
-            "rel": "FORKME/REVIEW-SUMMARY.md"
           }
         ]
       },

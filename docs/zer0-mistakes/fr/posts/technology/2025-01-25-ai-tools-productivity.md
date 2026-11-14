@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/25/ai-tools-productivity/
 preview: /images/previews/10-ai-tools-that-will-transform-your-productivity-.png
-source_file: 2025-01-25-ai-tools-productivity.md
+source_file: fr/posts/technology/2025-01-25-ai-tools-productivity.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/technology/2025-01-25-ai-tools-productivity.md
 tags:
 - ai
 - productivity
 - tools
 - automation
-title: Just write a comment describing what you want
+title: 10 outils d'IA qui transformeront votre productivité en 2025
 translated_from_sha: b64e95aceef7
 translation_of: pages/_posts/technology/2025-01-25-ai-tools-productivity.md
 translation_source_url: /posts/2025/01/25/ai-tools-productivity/
 ---
+
 L'intelligence artificielle révolutionne notre façon de travailler. Voici les meilleurs outils d'IA qui peuvent améliorer considérablement votre productivité.
 
 ## Code et développement

@@ -1,0 +1,159 @@
+---
+source_file: docs/07-config-manager.md
+source_repo: bamr87/vs-sonic-pi
+source_url: https://github.com/bamr87/vs-sonic-pi/blob/main/docs/07-config-manager.md
+title: Configuration Manager
+---
+# Configuration Manager
+
+> `ConfigManager`, typed and validated access to every `sonicpi.*` setting, with change events so modules can react without a restart.
+
+**Module:** `src/config/ConfigManager.ts`  
+**Phase:** 1 (MVP)  
+**Dependencies:** VS Code `workspace.getConfiguration` API
+
+---
+
+## Purpose
+
+The Configuration Manager provides a single, typed interface for reading extension settings. All other modules read their configuration through this module rather than calling `vscode.workspace.getConfiguration` directly. This centralizes default values, validation, and change detection.
+
+---
+
+## Responsibilities
+
+1. **Read** settings from the `sonicpi.*` namespace in VS Code's configuration system.
+2. **Provide typed accessors** for each setting, with validated defaults.
+3. **Emit change events** when the user modifies settings (so modules like ConnectionManager can react without a restart).
+4. **Validate** values at read time (e.g., port numbers must be 1–65535).
+
+---
+
+## Public Interface
+
+```typescript
+import { Disposable, Event } from 'vscode';
+
+interface SonicPiConfig {
+  osc: {
+    host: string;
+    sendPort: number;
+    listenPort: number;
+    daemonPort: number;
+  };
+  autoConnect: boolean;
+  heartbeatInterval: number;
+  sonicPiPath: string;
+  logLevel: LogLevel;
+}
+
+type LogLevel = 'debug' | 'info' | 'warning' | 'error';
+
+class ConfigManager implements Disposable {
+
+  /** Event fired when any sonicpi.* setting changes. */
+  readonly onDidChangeConfig: Event<SonicPiConfig>;
+
+  /** Read the current configuration snapshot. */
+  getConfig(): SonicPiConfig;
+
+  /** Clean up the configuration change listener. */
+  dispose(): void;
+}
+```
+
+---
+
+## Settings Reference
+
+The settings themselves — keys, types, defaults, ranges and allowed values — are generated from `package.json` into [reference/settings.md](reference/settings.md); that file, not this one, is the reference.
+
+`ConfigManager` also validates at read time: the three OSC ports are clamped to 1–65535 (`sonicpi.osc.daemonPort` allows `0`, meaning auto-discover), `sonicpi.heartbeatInterval` is clamped to 500–10000 ms, and an unknown `sonicpi.logLevel` falls back to `info`.
+
+---
+
+## Implementation Detail
+
+### Reading Configuration
+
+```typescript
+class ConfigManager implements Disposable {
+  private disposables: Disposable[] = [];
+  private emitter = new vscode.EventEmitter<SonicPiConfig>();
+  readonly onDidChangeConfig = this.emitter.event;
+
+  constructor() {
+    this.disposables.push(
+      vscode.workspace.onDidChangeConfiguration((e) => {
+        if (e.affectsConfiguration('sonicpi')) {
+          this.emitter.fire(this.getConfig());
+        }
+      }),
+    );
+  }
+
+  getConfig(): SonicPiConfig {
+    const cfg = vscode.workspace.getConfiguration('sonicpi');
+    return {
+      osc: {
+        host: cfg.get<string>('osc.host', '127.0.0.1'),
+        sendPort: this.clampPort(cfg.get<number>('osc.sendPort', 4557)),
+        listenPort: this.clampPort(cfg.get<number>('osc.listenPort', 4558)),
+        daemonPort: this.clampPort(cfg.get<number>('osc.daemonPort', 0), true),
+      },
+      autoConnect: cfg.get<boolean>('autoConnect', true),
+      heartbeatInterval: this.clamp(cfg.get<number>('heartbeatInterval', 30000), 5000, 120000),
+      sonicPiPath: cfg.get<string>('sonicPiPath', ''),
+      logLevel: this.validateLogLevel(cfg.get<string>('logLevel', 'info')),
+    };
+  }
+
+  private clampPort(value: number, allowZero = false): number {
+    const min = allowZero ? 0 : 1;
+    return Math.max(min, Math.min(65535, Math.round(value)));
+  }
+
+  private clamp(value: number, min: number, max: number): number {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  private validateLogLevel(value: string): LogLevel {
+    const valid: LogLevel[] = ['debug', 'info', 'warning', 'error'];
+    return valid.includes(value as LogLevel) ? (value as LogLevel) : 'info';
+  }
+
+  dispose(): void {
+    this.emitter.dispose();
+    this.disposables.forEach(d => d.dispose());
+  }
+}
+```
+
+### Change Detection
+
+When the user changes a setting in VS Code's Settings UI or `settings.json`, the `onDidChangeConfiguration` event fires. The ConfigManager checks if the change affects the `sonicpi` namespace and, if so, emits a new `SonicPiConfig` snapshot.
+
+Consumers react to changes:
+
+| Consumer | Reaction to config change |
+|----------|---------------------------|
+| `ConnectionManager` | If port settings changed while connected, show notification: "Port settings changed. Reconnect to apply." |
+| `LogManager` | If `logLevel` changed, apply new filter immediately (no reconnect needed). |
+| `Heartbeat` | If `heartbeatInterval` changed, restart the timer with the new interval. |
+
+---
+
+## Testing
+
+### Unit Tests (`test/unit/ConfigManager.test.ts`)
+
+| Test | Description |
+|------|-------------|
+| `returns defaults when no config set` | Verify all fields match documented defaults. |
+| `reads overridden values` | Mock VS Code config with custom values. Verify `getConfig()` returns them. |
+| `clamps invalid port to range` | Set `sendPort` to 99999. Verify clamped to 65535. |
+| `clamps negative port` | Set `sendPort` to -1. Verify clamped to 1. |
+| `validates logLevel` | Set `logLevel` to "invalid". Verify falls back to "info". |
+| `clamps heartbeat interval` | Set to 1000 (below minimum). Verify clamped to 5000. |
+| `emits change event` | Simulate config change. Verify `onDidChangeConfig` fires with new snapshot. |
+| `change event only fires for sonicpi namespace` | Simulate change to unrelated setting. Verify event does not fire. |

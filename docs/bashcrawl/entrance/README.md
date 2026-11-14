@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: entrance/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/entrance/README.md
 title: 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here
 ---
 # 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here

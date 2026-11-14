@@ -15,17 +15,21 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/building-ai-ready-knowledge-base/
 preview: /images/previews/building-an-ai-ready-knowledge-base-from-documents.png
-source_file: 2026-04-28-building-ai-ready-knowledge-base.md
+source_file: fr/posts/technology/2026-04-28-building-ai-ready-knowledge-base.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/technology/2026-04-28-building-ai-ready-knowledge-base.md
 tags:
 - ai
 - knowledge-management
 - documentation
 - search
-title: 2026 04 28 Building Ai Ready Knowledge Base
+title: 'Construire une base de connaissances prête pour l''IA : des documents aux
+  réponses'
 translated_from_sha: 2cd71e27a7b3
 translation_of: pages/_posts/technology/2026-04-28-building-ai-ready-knowledge-base.md
 translation_source_url: /posts/2026/04/28/building-ai-ready-knowledge-base/
 ---
+
 Les outils d'IA deviennent plus utiles lorsqu'ils peuvent récupérer des informations précises, actuelles et bien structurées. La plupart des organisations disposent déjà de la matière première : PDF, pages de wiki, tickets de support, manuels, feuilles de calcul et fils de discussion. Le plus difficile est de transformer cette matière en une base de connaissances à laquelle un système d'IA peut faire confiance.
 
 ## Commencez par les questions, pas par les fichiers

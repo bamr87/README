@@ -12,14 +12,17 @@ machine_translated: true
 permalink: /fr/docs/obsidian/graph/
 preview: /images/previews/obsidian-graph-view.png
 sitemap: false
-source_file: graph.md
+source_file: fr/docs/obsidian/graph.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/obsidian/graph.md
 tags:
 - obsidian
 - graph
 - navigation
-title: Graph
+title: Vue graphique Obsidian
 translated_from_sha: f8d79a65ff41
 translation_of: pages/_docs/obsidian/graph.md
 translation_source_url: /docs/obsidian/graph/
 ---
+
 {% include obsidian/full-graph.html %}

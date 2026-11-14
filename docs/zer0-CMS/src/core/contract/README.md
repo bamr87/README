@@ -1,0 +1,74 @@
+---
+source_file: src/core/contract/README.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/src/core/contract/README.md
+title: '`src/core/contract` — the `.cms/` file bus'
+---
+# `src/core/contract` — the `.cms/` file bus
+
+Two files that read what the content engine produced, and run the engine that produces it. Pure Node — see `../README.md` for the layering rule.
+
+| File | Exports | Owner |
+|---|---|---|
+| `contract.ts` | `CMS_DIRNAME`, `INDEX_DIRNAME`, `DISTRIBUTION_DIRNAME`, `PUBLISHABLE_HEALTH`, `FRESH_BANDS`, `METRICS`, `Contract`, `ContractScan`, `LoadContractOptions`, `CmsSummary`, `CollectionSummary`, `loadContract`, `loadContractOrScan`, `cmsDir`/`indexDir`/`distributionDir`, `isDistributable`, `isEditable`, `healthBucket`, `recordSlug`, `distributable`, `byPath`, `byCollection`, `issueKinds`, `issuesByLane`, `issuesBySeverity`, `normalisePerformance`, `performancePath`, `loadPerformance`, `writePerformance`, `worklistPath`, `writeWorklist` | WP07 |
+| `engine.ts` | `EngineCommand`, `ENGINE_COMMANDS`, `ExecLayer`, `EngineConfig`, `EngineResult`, `ENGINE_TIMEOUT_MS`, `CHANGES_PENDING_CODE`, `SKIP_MARKER`, `engineLayer`, `engineConfigFor`, `runEngine`, `runNormalizerPreview`, `runNormalizerApply`, `runVerifyCommand`, `condenseNormalizerOutput` | WP07, WP1.3 |
+
+## What `.cms/` is
+
+A directory the *user's* repository owns, written by a Python content engine that lives there — not by this extension. It is the machine-readable view of a whole site, so that a health score means the same thing in the dashboard, in the catering worklist and in an MCP tool result.
+
+    .cms/
+      index/content-index.json     ← read: one record per page
+      index/summary.json           ← read: the engine's roll-up
+      distribution/performance.json   ← written by us: aggregate engagement
+      distribution/worklists/<date>-catering.md  ← written by us
+
+We read the index and write only under `distribution/`. `zer0Cms.cms.root` moves the whole directory, which is why `Contract` carries `dir` rather than recomputing `<root>/.cms` in every writer.
+
+## Contracts worth knowing before you change anything
+
+**Absence is a normal state (D9), and `loadContract` never throws.** No `.cms/` yields `{ present: false, generatedAt: '', records: [], summary: {} }` — the same shape, so callers branch on `present`, not on `undefined`. A missing file, a directory where a file should be, and malformed JSON are all the same answer: this repository has no engine yet. Turning that into a rejected promise would make "no engine" an error at every call site in the product.
+
+`loadContractOrScan(cfg, log?, cache?)` is the version the shell and the MCP server use (the server reaches it through `src/mcp/cache.ts`, which keeps one `IndexCache` per root for the life of the process): when the index is missing it fills `records` from `content/pageIndex`, with `health: -1` and `freshness: 'unknown'`. **`present` stays `false`** — the records are real, the engine's judgement is not. A scan failure degrades to "no records" and a `log.warn`, for the same reason.
+
+**The cache goes in and comes back out.** The result is a `ContractScan` — a `Contract` plus the `IndexCache` the fallback scan left behind, or the one that was passed in when `.cms/` answered and no scan ran. Additive on purpose: every caller that only reads `Contract` fields is untouched, and a caller that keeps the cache and hands it back next time turns the second scan into a stat-per-file walk instead of a full re-parse. That is the point for the MCP server, one process answering many tool calls against one repository.
+
+**What counts as a date prefix is the platform's answer.** `byPath(contract, pathOrSlug, profile?)` resolves a reference by exact path, then by filename stem, then by the stem with a leading date removed — because a Jekyll file is called `2026-07-31-hello.md` and every human who refers to it says "hello". *Which* prefix is a date comes from `profile.frontMatter.filenameDate` (decision D12): on Hugo the digits are part of the name, and stripping them would resolve a reference to a page nobody meant. `loadContractOrScan` takes the profile too, but passes it only to the fallback scan — a repository that adopted `.cms/` has already answered every question a profile answers, and overruling its engine with a guess about its generator would be the opposite of D9. Both default to `JEKYLL_PROFILE`.
+
+**Health `70` in, `69` out, `-1` in.** `isDistributable` refuses drafts, generated files and structural pages outright; a *scored* page must reach `PUBLISHABLE_HEALTH = 70`; an *unscored* one is not punished for the engine's absence and only needs a title. That last clause is what makes the D9 fallback honest instead of empty. The three boundary values are pinned by test.
+
+**`isEditable` is a different question.** `isDistributable` asks "may we show this to an audience"; `isEditable` asks "may a tool write to it". A vendored, generated or notebook file is off limits however well it scores.
+
+**Issues keep their lane.** `ContentRecord.issues` is `CmsIssue[]` — kind, severity, field, message, **lane**, suggestion. BASH-CMS's port flattened this to a list of `kind` strings; the mechanical-versus-substantive split is the premise of the whole curation workflow (mechanical is safely auto-fixable, and `normalize-apply` fixes exactly that half), so it survives here and `issueKinds()` is the derived helper for callers that only wanted the names.
+
+Two coercion defaults are deliberate: an **unrecognised severity becomes `warning`**, so a level we have not met yet is not silently made invisible, and an **unrecognised lane becomes `substantive`**, because "a human should look at this" is the safe answer when we cannot tell whether a fix is mechanical.
+
+**Everything is coerced at the boundary.** `Number` + `Math.trunc` with a defined fallback, `String(x ?? '')`, explicit `null` for `draft`/`date`/ `lastmod`. `NaN` never escapes. The engine's spelling is snake_case and our own writers use camelCase, so `pick()` accepts both. A malformed index produces a wrong-but-well-typed record instead of a `TypeError` three modules away.
+
+**`CmsSummary` is typed, and every field is optional.** An absent `.cms/` yields the literal `{}`, and an engine version that has not learned a key yet must not force every reader through a `?? 0` dance for a number it never wrote.
+
+**`normalisePerformance` drops unknown keys.** Only the five metrics in `METRICS` survive, and `engagements` is derived (`reactions + comments + shares`), never read raw. That is what makes `performance.json` safe to hand to an agent: whatever an upstream export contains, only five counters get into the repository.
+
+**Writes under `distribution/` are atomic; nothing else is written at all.** `writePerformance` uses `pyJsonDump(…, { indent: 2, ensureAscii: true }) + '\n'` so the Python lane can read and rewrite the same file byte for byte.
+
+## The engine driver
+
+`EngineConfig.root` is the **working directory the scripts run in** — the repository root, because that is what their relative paths resolve against. It is *not* `Zer0Config.cms.root`, which locates the `.cms/` output directory. `engineConfigFor(cfg, { trusted, layer })` makes the distinction for you; the two being different things with the same name is the one trap in this module.
+
+**Nothing rejects.** Every runner resolves an `EngineResult`. A missing interpreter, a missing script and a script that exited 1 are all normal outcomes for a tool that runs against somebody else's repository, and the caller wants to show the output either way. A failure to *start* the process (`ENOENT`, `EACCES`) is reported as code 1 with the reason prepended to stderr, so "python3 is not installed" reads as a failed run rather than a silent zero.
+
+**Exit code 2 means "changes pending", not failure** — the normalizer's dry-run signal for "there is work to do". The zer0 layer documented that in a comment and then dropped it on the floor; `EngineResult.changesPending` makes it a value. Note that the promise is the *normalizer's*: `python3` itself exits 2 when it cannot open a script, so a caller reporting an engine subcommand should say "exited 2", and only the normalize paths should say "changes pending". `src/mcp/tools.ts` does exactly that.
+
+**Every spawn passes `evaluateExecGate` first (decision D13), and a refusal is a result.** `EngineConfig.trusted` is VS Code Workspace Trust for `root`, passed in because this module never imports `vscode`, and it has **no default** — a caller that forgets it does not compile, which is the only way a gate whose whole job is to be un-forgettable stays un-forgotten. An untrusted workspace, or a script path that resolves outside `root`, yields `{ code: 1 }` with the refusal on `stderr`; nothing is thrown, because "nothing rejects" is this module's older promise and a security check is a poor reason to break it. The path check applies in a *trusted* workspace too: a `zer0.json` arrives with the clone, so `cms.engineScript: "../../../evil.py"` is refused whoever is sitting at the editor.
+
+**`layer` is for the log line, not for the decision.** `EngineConfig.layer` records who named the interpreter and the scripts — a person's VS Code settings, the project file, or the built-in default — and every run logs it *before* the gate answers, so the output channel shows what a freshly-cloned repository asked this extension to execute even when nothing ran. `engineLayer(settingsCms, fileCms)` is the pure resolver over the two raw layers; the shell passes its settings snapshot's `cms` group and `zer0.json`'s, and the MCP server passes `undefined` for the first because it has no settings layer at all.
+
+**Ten minutes, and then the process is killed.** `ENGINE_TIMEOUT_MS` closes the case where a script waits on stdin and holds a progress notification open until the window is reloaded. It is deliberately far longer than the placeholder layer's five seconds: `cms all` over a large site legitimately runs for minutes. A timed-out run reports code 1 with `timed out after 10 minutes and was killed.` on `stderr`, the same shape as a missing interpreter.
+
+**`runVerifyCommand` is here because `node:child_process` is fenced to this file and `../content/placeholders.ts`.** It runs `zer0Cms.cms.verifyCommand`, already split into an argv array by its caller — `argv[0]` is the executable, the rest are its arguments, and there is **no shell**, so a repository path containing a quote is an argument and never a second command. An empty argv refuses as a value like everything else. Its one caller lives in `src/commands/`, and the point of the fence is that it cannot spawn from there.
+
+`condenseNormalizerOutput` strips the `read-only/vendored` chorus and returns the count. On a large site those lines outnumber the real ones ten to one, and a reviewer scrolling past them is a reviewer who has stopped reading.
+
+## Tests
+
+`src/test/governance.test.ts` covers health 70/69/-1, `present: false` on a missing index, `normalisePerformance` dropping unknown keys, the `CmsIssue` lane surviving a round trip through `loadContract`, and the scan fallback producing the same record shape. `src/test/golden.test.ts` holds the cross-lane byte contract for `distribution/`.

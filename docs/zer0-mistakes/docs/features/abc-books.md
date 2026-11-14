@@ -6,13 +6,16 @@ date: 2026-07-23 00:00:00+00:00
 description: 'The book-abc layout: a single-scroll toddler alphabet board book driven
   by an alphabet front-matter list, with per-style CSS skins and series-grouped shelves.'
 lastmod: 2026-07-23 00:00:00+00:00
-source_file: abc-books.md
+source_file: docs/features/abc-books.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/abc-books.md
 tags:
 - features
 - books
 - layouts
-title: ABC board books (`book-abc` layout)
+title: ABC board books (book-abc layout)
 ---
+
 # ABC board books (`book-abc` layout)
 
 The `books` collection publishes two kinds of picture book: **story books** (`layout: book` + chapters) and **ABC / alphabet board books** (`layout: book-abc`). This page documents the ABC layout — a single-scroll toddler board book where every page is one big letter, one word, and one picture.

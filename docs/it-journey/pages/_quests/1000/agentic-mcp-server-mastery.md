@@ -58,7 +58,9 @@ rewards:
   skills_unlocked:
   - 🔌 MCP Server Configuration
 skill_focus: devops
-source_file: agentic-mcp-server-mastery.md
+source_file: pages/_quests/1000/agentic-mcp-server-mastery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/agentic-mcp-server-mastery.md
 sub_title: 'Level 1000 Quest 3/4 — Domain 2: Tool Use & Environment Interaction'
 tags:
 - '1000'
@@ -68,7 +70,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: macOS / Linux — set your PAT in the environment
+title: 'The MCP Conclave: Mastering Model Context Protocol Servers'
 validation_criteria:
   completion_requirements:
   - MCP server configured in VS Code or GitHub Copilot settings
@@ -319,17 +321,17 @@ python3 scripts/validate_quest.py --quest q5
 | 🌐 MCP Initiate Badge | Earned on completion |
 | 🔌 MCP Server Configuration | Skill unlocked |
 | 100 XP | Added to Level 1000 total |
-| Unlocks | [Q6: Bind the Agent to the Realm](/quests/1001/agentic-dev-environment-integration/) |
+| Unlocks | [[it-journey/pages/_quests/1001/agentic-dev-environment-integration\|Q6: Bind the Agent to the Realm]] |
 
 ## 🔗 Continue Your Journey
 
-- **Next:** [Q6: Bind the Agent to the Realm](/quests/1001/agentic-dev-environment-integration/)
-- **Reference note:** [MCP Quick Reference](/notes/gh-600/mcp-quickref/)
-- **Codex chapter:** [Forging the Arsenal: Tool Use & Environment](/quests/1000/agentic-codex-02-tool-use-and-environment/)
+- **Next:** [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Q6: Bind the Agent to the Realm]]
+- **Reference note:** [[it-journey/pages/_notes/gh-600/mcp-quickref|MCP Quick Reference]]
+- **Codex chapter:** [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment|Forging the Arsenal: Tool Use & Environment]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] · [[MCP Quick Reference]] **Prerequisites:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Unlocks:** [[Bind the Agent to the Realm: Dev Environment Integration]] **Sequel quests:** [[Bind the Agent to the Realm: Dev Environment Integration]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1000/README|Level 1000 (8) - Cloud Computing Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · [[it-journey/pages/_notes/gh-600/mcp-quickref|MCP Quick Reference]] **Prerequisites:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] **Unlocks:** [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]] **Sequel quests:** [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

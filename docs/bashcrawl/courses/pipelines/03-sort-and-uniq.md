@@ -31,12 +31,14 @@ objectives:
     - command: uniq
     - option: c
     - piped: true
-source_file: 03-sort-and-uniq.md
+source_file: courses/pipelines/03-sort-and-uniq.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/03-sort-and-uniq.md
 teaches:
 - sort
 - uniq
 - uniq -c
-title: 03 Sort And Uniq
+title: Sorting and counting
 xp: 30
 ---
 - `sort` puts lines in order: `-r` reverses it, and `-n` sorts by number instead of by text.

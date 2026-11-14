@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 4
-source_file: semtex4.md
+source_file: wargames/semtex/semtex4.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex4.md
 title: Semtex4
 ---
 Ptrace your way

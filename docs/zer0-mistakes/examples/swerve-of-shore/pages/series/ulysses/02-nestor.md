@@ -7,9 +7,12 @@ permalink: /series/ulysses/02-nestor/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 02-nestor.md
-title: 02 Nestor
+source_file: examples/swerve-of-shore/pages/series/ulysses/02-nestor.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/02-nestor.md
+title: 02 · Nestor
 ---
+
 {% include page-header.html %}
 
 Episode 2 of *Ulysses*. 10am, Mr Deasy's school in Dalkey.

@@ -1,5 +1,7 @@
 ---
-source_file: organization-summary.md
+source_file: docs/archive/organization-summary.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/archive/organization-summary.md
 title: Documentation Organization Summary
 ---
 # Documentation Organization Summary

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: _data/navigation/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/navigation/README.md
 title: Navigation Data Schema Documentation
 ---
 # Navigation Data Schema Documentation

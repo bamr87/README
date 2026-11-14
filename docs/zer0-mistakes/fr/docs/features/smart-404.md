@@ -16,7 +16,9 @@ permalink: /fr/docs/features/smart-404/
 preview: /images/previews/smart-404-site-configuration-detection.png
 sidebar:
   nav: docs
-source_file: smart-404.md
+source_file: fr/docs/features/smart-404.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/smart-404.md
 tags:
 - setup
 - '404'
@@ -27,6 +29,7 @@ translated_from_sha: a36e25dd68dc
 translation_of: pages/_docs/features/smart-404.md
 translation_source_url: /docs/features/smart-404/
 ---
+
 # 404 intelligente et détection de la configuration du site
 
 La `404.html` de zer0-mistakes n'est pas un simple espace réservé « page introuvable ». Elle détecte la manière dont le site est déployé et propose au visiteur des conseils adaptés au contexte.
@@ -95,10 +98,10 @@ La `404.html` du thème n'est utilisée que lorsqu'aucune substitution locale n'
 
 ## Ressources associées
 
-- [Guide de démarrage rapide](/docs/getting-started/quick-start/)
-- [Modèle minimal](/docs/quickstart/bare-minimum/)
+- [[zer0-mistakes/pages/_docs/getting-started/quick-start|Guide de démarrage rapide]]
+- [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Modèle minimal]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Getting Started]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]

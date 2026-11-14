@@ -12,7 +12,9 @@ permalink: /docs/jekyll/code-highlighting/
 preview: /images/previews/code-highlighting.png
 sidebar:
   nav: docs
-source_file: code-highlighting.md
+source_file: pages/_docs/jekyll/code-highlighting.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/jekyll/code-highlighting.md
 tags:
 - highlighting
 - jekyll
@@ -20,6 +22,7 @@ tags:
 - rouge
 title: Code Highlighting
 ---
+
 # Code Highlighting
 
 > Configure syntax highlighting for code blocks in your Jekyll site.
@@ -157,6 +160,6 @@ Popular themes:
 
 ## See also
 
-- [[Jekyll]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
 - [[Syntax Highlighting]]
-- [[Code Copy Button]]
+- [[zer0-mistakes/pages/_docs/features/code-copy|Code Copy Button]]

@@ -11,11 +11,13 @@ order: 1.3
 preview: /assets/images/posts/001-3-phall-if-you-but-will-rise-you-must.jpg
 section: book-1
 series: finnegans-wake
-source_file: 001-3-phall-if-you-but-will-rise-you-must.md
-source_url: https://www.swerveofshore.com/post/001-3-phall-if-you-but-will-rise-you-must
+source_file: examples/swerve-of-shore/pages/_series/finnegans-wake/book-1/001-3-phall-if-you-but-will-rise-you-must.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/finnegans-wake/book-1/001-3-phall-if-you-but-will-rise-you-must.md
 sub-title: Finnegans Wake · Book 1
-title: 001 3 Phall If You But Will Rise You Must
+title: 001.3 - Phall if you but will, rise you must
 ---
+
 From the *Finnegans Wake · Book 1* thread on [Swerve of Shore](https://www.swerveofshore.com/post/001-3-phall-if-you-but-will-rise-you-must), by Brandon Nicklaus.
 
 > We are using the 1999 Penguin Classics edition of Finnegans Wake, with an introduction by John Bishop.

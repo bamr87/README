@@ -11,15 +11,18 @@ difficulty: beginner
 lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 permalink: /notes/bash-shortcuts/
-source_file: bash-shortcuts.md
+source_file: pages/_notes/bash-shortcuts.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notes/bash-shortcuts.md
 tags:
 - bash
 - terminal
 - shortcuts
 - productivity
 - zsh
-title: Use arrow keys + Ctrl for word jumping
+title: Bash Terminal Shortcuts
 ---
+
 ## Cursor Navigation
 
 ### Moving Around

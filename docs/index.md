@@ -11,41 +11,37 @@ Aggregated, continuously refreshed documentation for every project in the [bamr8
 
 The left sidebar mirrors each corpus's own folder hierarchy — see the [content map](browse/index.md) to browse any project in full.
 
+To see how it all connects, open the [Second Brain](brain/index.md): the [graph](brain/graph.md), [concepts that span repositories](brain/index.md#concepts) and [what changed lately](brain/hot.md). Press `Ctrl+O` anywhere to jump to a note.
+
 ## Documentation by project
 
-### [IT-Journey](it-journey/index.md)
+### [README - it-journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(1304 documents, 98 sections)*
+Educational IT platform with quests, blog posts, and technical documentation. *(535 documents, 53 sections)*
 
 [Content map](browse/it-journey.md)
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(759 documents, 100 sections)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(556 documents, 94 sections)*
 
 [Content map](browse/zer0-mistakes.md)
 
-### [Barodybroject](barodybroject/README.md)
-
-Full-stack application platform with infrastructure, testing, and deployment tooling. *(321 documents, 56 sections)*
-
-[Content map](browse/barodybroject.md)
-
 ### [Bashcrawl](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(104 documents, 17 sections)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(78 documents, 16 sections)*
 
 [Content map](browse/bashcrawl.md)
 
 ### [Agent Skills](skills/README.md)
 
-Agent skills — prompts, MCP configurations, and AI development patterns. *(712 documents, 3 sections)*
+Agent skills — prompts, MCP configurations, and AI development patterns. *(68 documents, 24 sections)*
 
 [Content map](browse/skills.md)
 
 ### [🛠️ scripts](scripts/README.md)
 
-Automation scripts for forking, linting, stashing, and project management across the fleet. *(31 documents, 5 sections)*
+Automation scripts for forking, linting, stashing, and project management across the fleet. *(24 documents, 5 sections)*
 
 [Content map](browse/scripts.md)
 
@@ -54,6 +50,114 @@ Automation scripts for forking, linting, stashing, and project management across
 OverTheWire wargame guides and security-challenge documentation (external reference corpus). *(232 documents, 17 sections)*
 
 [Content map](browse/OverTheWire-website.md)
+
+### [👋 Hi, I'm Amr Abdel-Motaleb](bamr87/README.md)
+
+Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(223 documents, 36 sections)*
+
+[Content map](browse/bamr87.md)
+
+### [Profile & Résumé](bamr87.github.io/README.md)
+
+Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. *(94 documents, 19 sections)*
+
+[Content map](browse/bamr87.github.io.md)
+
+### [bashOS](bashos/README.md)
+
+Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. *(38 documents, 8 sections)*
+
+[Content map](browse/bashos.md)
+
+### [cv-pro — the CV machine and its builder, in one repository](cv-pro/README.md)
+
+CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder). *(32 documents, 6 sections)*
+
+[Content map](browse/cv-pro.md)
+
+### [DjangoERP](djangoerp/README.md)
+
+Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. *(17 documents, 3 sections)*
+
+[Content map](browse/djangoerp.md)
+
+### [Fredgar AI](fredgar-ai/README.md)
+
+Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. *(36 documents, 6 sections)*
+
+[Content map](browse/fredgar-ai.md)
+
+### [GitHubAI — the Claude Code SDLC framework](githubai/README.md)
+
+Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases. *(48 documents, 10 sections)*
+
+[Content map](browse/githubai.md)
+
+### [⚙ GitFactory](gitorio/README.md)
+
+Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code. *(142 documents, 37 sections)*
+
+[Content map](browse/gitorio.md)
+
+### [GodotGo](godotgo/README.md)
+
+Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same. *(30 documents, 6 sections)*
+
+[Content map](browse/godotgo.md)
+
+### [Law AI](law-ai/README.md)
+
+Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(285 documents, 71 sections)*
+
+[Content map](browse/law-ai.md)
+
+### [lifehacker.dev](lifehacker.dev/index.md)
+
+Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code. *(137 documents, 12 sections)*
+
+[Content map](browse/lifehacker.dev.md)
+
+### [ocrmd](ocrmd/README.md)
+
+Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. *(25 documents, 4 sections)*
+
+[Content map](browse/ocrmd.md)
+
+### [outbox](outbox/README.md)
+
+Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. *(21 documents, 4 sections)*
+
+[Content map](browse/outbox.md)
+
+### [Rewind Arcade](rewind-arcade/README.md)
+
+Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. *(76 documents, 11 sections)*
+
+[Content map](browse/rewind-arcade.md)
+
+### [Pyramid Schema (SCHEMA.md)](SCHEMA/README.md)
+
+Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. *(35 documents, 10 sections)*
+
+[Content map](browse/SCHEMA.md)
+
+### [Sonic Pi for VS Code](vs-sonic-pi/README.md)
+
+VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control. *(117 documents, 6 sections)*
+
+[Content map](browse/vs-sonic-pi.md)
+
+### [zer0-CMS](zer0-CMS/README.md)
+
+Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites. *(1187 documents, 177 sections)*
+
+[Content map](browse/zer0-CMS.md)
+
+### [Label Studio](zpl-viewer/README.md)
+
+Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels. *(19 documents, 4 sections)*
+
+[Content map](browse/zpl-viewer.md)
 
 ---
 

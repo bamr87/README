@@ -15,7 +15,9 @@ permalink: /fr/docs/features/keyboard-navigation/
 preview: /images/previews/keyboard-navigation.png
 sidebar:
   nav: docs
-source_file: keyboard-navigation.md
+source_file: fr/docs/features/keyboard-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/keyboard-navigation.md
 tags:
 - keyboard
 - shortcuts
@@ -26,6 +28,7 @@ translated_from_sha: d0be119d5f6c
 translation_of: pages/_docs/features/keyboard-navigation.md
 translation_source_url: /docs/features/keyboard-navigation/
 ---
+
 # Navigation au clavier
 
 Le thème Zer0-Mistakes inclut une prise en charge complète de la navigation au clavier pour améliorer l'accessibilité et l'efficacité de la navigation pour tous les utilisateurs.
@@ -197,6 +200,6 @@ Pour les détails d'implémentation (conformité WCAG 2.1 AA, attributs ARIA, ge
 
 ## Voir aussi
 
-- [[Features]]
-- [[Skip-to-Content Accessibility Link]]
-- [[Sidebar Navigation System]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/skip-to-content|Skip-to-Content Accessibility Link]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]

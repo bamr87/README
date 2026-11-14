@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Continue The Relic Raisers campaign
 skill_focus: backend
-source_file: relic-raisers-03-the-elders.md
+source_file: pages/_quests/1111/relic-raisers-03-the-elders.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/relic-raisers-03-the-elders.md
 tags:
 - '1111'
 - markdown
@@ -82,7 +84,7 @@ tags:
 - decision-records
 - hands-on
 - gamified-learning
-title: Elders of ARAGE01
+title: 'The Elders: Recover the Reasons Before They Retire'
 validation_criteria:
   completion_requirements:
   - At least two ADRs under lore/ with all five sections and at least one evidence
@@ -372,9 +374,9 @@ graph LR
 
 You know what the relic does and, for two of its rules, why. Before you change a line, pin what it does so the Hydra cannot grow a head unnoticed.
 
-- ➡️ **Next chapter:** [Chapter IV — The Gauntlet of Trials](/quests/0101/relic-raisers-04-the-gauntlet-of-trials/)
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
-- 👥 **A related craft:** [Mentorship Programs](/quests/1111/mentorship-programs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials|Chapter IV — The Gauntlet of Trials]]
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
+- 👥 **A related craft:** [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]]
 
 ## 📚 Resource Codex
 
@@ -384,6 +386,6 @@ You know what the relic does and, for two of its rules, why. Before you change a
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 1111: Leadership & Innovation]] **Previous:** [[The Strata: Read the Copybook, Then Let the Data Testify]] **Next:** [[The Gauntlet of Trials: Pin the Relic Before You Touch It]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Previous:** [[it-journey/pages/_quests/0110/relic-raisers-02-the-strata|The Strata: Read the Copybook, Then Let the Data Testify]] **Next:** [[it-journey/pages/_quests/0101/relic-raisers-04-the-gauntlet-of-trials|The Gauntlet of Trials: Pin the Relic Before You Touch It]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

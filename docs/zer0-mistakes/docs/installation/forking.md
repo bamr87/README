@@ -6,12 +6,15 @@ date: 2026-05-31 20:54:51+00:00
 description: 'A progressive guide to deploying your own site from a Zer0-Mistakes
   fork: repository cleanup, configuration, and personalization, phase by phase.'
 lastmod: 2026-05-31 20:54:51+00:00
-source_file: forking.md
+source_file: docs/installation/forking.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/forking.md
 tags:
 - installation
 - setup
 title: 'Forking Guide: From Fork to Personalized Site'
 ---
+
 # Forking Guide: From Fork to Personalized Site
 
 This guide walks you through the progressive workflow of deploying your own site using the Zer0-Mistakes theme — from fork to configuration to personalization.

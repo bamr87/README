@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: Overview of the modular, profile-driven Zer0-Mistakes installer CLI,
   the classic install.sh one-liner, and how to choose the right install path.
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: index.md
+source_file: docs/installation/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/index.md
 tags:
 - installation
 - setup
 title: Installation Guide
 ---
+
 # Installation Guide
 
 The `zer0-mistakes` installer is a modular, profile-driven, AI-aware CLI built around the canonical entrypoint [`scripts/bin/install`](../../scripts/bin/install). The classic `install.sh` one-liner still works — it now bootstraps the same modular pipeline.
@@ -87,4 +90,4 @@ cd zer0-mistakes
 
 ---
 
-> **User guide**: For theme end users, the quick-start paths are at [Quick Start Guide](/docs/getting-started/quick-start/) in the user documentation.
+> **User guide**: For theme end users, the quick-start paths are at [[zer0-mistakes/pages/_docs/getting-started/quick-start|Quick Start Guide]] in the user documentation.

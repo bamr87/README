@@ -1,5 +1,7 @@
 ---
-source_file: Callout.prompt.md
+source_file: _design-system/components/feedback/Callout.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/feedback/Callout.prompt.md
 title: Callout.Prompt
 ---
 Inline notice for docs and posts — the rendered form of Obsidian `> [!note]` callouts.

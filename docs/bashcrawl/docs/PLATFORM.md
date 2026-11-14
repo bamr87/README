@@ -1,5 +1,7 @@
 ---
-source_file: PLATFORM.md
+source_file: docs/PLATFORM.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/PLATFORM.md
 title: The Bashcrawl Platform
 ---
 # The Bashcrawl Platform

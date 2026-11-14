@@ -1,5 +1,7 @@
 ---
-source_file: index.md
+source_file: wargames/kishi/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/kishi/index.md
 title: Index
 ---
 ---

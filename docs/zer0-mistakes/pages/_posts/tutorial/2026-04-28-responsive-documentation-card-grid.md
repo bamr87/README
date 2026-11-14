@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-06-22 12:00:00+00:00
 layout: article
 preview: /images/previews/build-a-responsive-documentation-card-grid.png
-source_file: 2026-04-28-responsive-documentation-card-grid.md
+source_file: pages/_posts/tutorial/2026-04-28-responsive-documentation-card-grid.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/tutorial/2026-04-28-responsive-documentation-card-grid.md
 tags:
 - css
 - bootstrap
 - documentation
 - responsive-design
-title: 2026 04 28 Responsive Documentation Card Grid
+title: Build a Responsive Documentation Card Grid
 ---
+
 Documentation indexes need to be scannable. A responsive card grid is a good fit when readers need to compare guides, jump into a topic, or discover related resources.
 
 This tutorial builds a simple grid that works with plain HTML and CSS, then shows how to adapt it to Bootstrap utilities.

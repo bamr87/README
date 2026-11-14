@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/28703664065
 slice: system-engineer/0010
-source_file: 2026-07-04-system-engineer-0010.md
+source_file: pages/_quest-reports/2026-07-04-system-engineer-0010.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-04-system-engineer-0010.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-04-system-engineer-0010.md
 tags:
 - system-engineer
 - level-0010
@@ -25,13 +27,14 @@ tags:
 - terminal-mastery
 theme: Terminal Mastery
 tier: Apprentice 🌱
-title: 2026 07 04 System Engineer 0010
+title: System Engineer · L0010 · 2026-07-04
 verdict: warn
 walk_date: '2026-07-04'
 ---
+
 > **Slice** `system-engineer/0010` · **Level** 0010 (Terminal Mastery) · **Apprentice 🌱 tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-04
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28703664065) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-04-system-engineer-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-04-system-engineer-0010.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28703664065) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-04-system-engineer-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-04-system-engineer-0010.md)
 
 ---
 
@@ -53,11 +56,11 @@ I walked the **System Engineer · Level 0010 (Terminal Mastery, Apprentice 🌱)
 
 | # | Quest | Score | Verdict | One-line takeaway |
 |---|---|---|---|---|
-| 1 | [Understanding Action Triggers in Depth](/quests/0010/action-triggers/) | 65% | ⚠️ warn | Workflow YAML is valid & current, but no objectives and the block is fenced ` ```markdown ` not ` ```yaml `. |
-| 2 | [Mastering Branches and Pull Requests](/quests/0010/branches-and-pull-requests/) | 71% | ⚠️ warn | Accurate PR/branch reference; zero runnable commands despite `learning_style: hands-on`. |
-| 3 | [Changelogs & the Chronicles of Code](/quests/0010/change-logs/) | 68% | ⚠️ warn | Correct SemVer/Release-Drafter primer; empty `categories:[]`/`tags:[]` and a cliffhanger ending. |
-| 4 | [Commit Hygiene: Clean, Atomic Commits](/quests/0010/commitments-to-clean-commits/) | 69% | ⚠️ warn | Sound Conventional-Commits guidance; commit examples mis-fenced ` ```yaml `; `rebase -i` unwarned. |
-| 5 | [Conjure a Django Project into a GitHub Vault](/quests/0010/django-and-git/) | 61% | ⚠️ warn | Happy path RAN end-to-end; appended script has a runtime-breaking corrupted line. |
+| 1 | [[it-journey/pages/_quests/tools/action-triggers\|Understanding Action Triggers in Depth]] | 65% | ⚠️ warn | Workflow YAML is valid & current, but no objectives and the block is fenced ` ```markdown ` not ` ```yaml `. |
+| 2 | [[it-journey/pages/_quests/tools/branches-and-pull-requests\|Mastering Branches and Pull Requests]] | 71% | ⚠️ warn | Accurate PR/branch reference; zero runnable commands despite `learning_style: hands-on`. |
+| 3 | [[it-journey/pages/_quests/tools/change-logs\|Changelogs & the Chronicles of Code]] | 68% | ⚠️ warn | Correct SemVer/Release-Drafter primer; empty `categories:[]`/`tags:[]` and a cliffhanger ending. |
+| 4 | [[it-journey/pages/_quests/tools/commitments-to-clean-commits\|Commit Hygiene: Clean, Atomic Commits]] | 69% | ⚠️ warn | Sound Conventional-Commits guidance; commit examples mis-fenced ` ```yaml `; `rebase -i` unwarned. |
+| 5 | [[it-journey/pages/_quests/tools/django-and-git\|Conjure a Django Project into a GitHub Vault]] | 61% | ⚠️ warn | Happy path RAN end-to-end; appended script has a runtime-breaking corrupted line. |
 
 ## 🔬 Evidence
 

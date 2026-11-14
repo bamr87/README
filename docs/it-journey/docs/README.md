@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/README.md
 title: it-journey documentation
 ---
 <!-- kit: sdlc v0.1.0 · docs index (UPS-DOC-03). Lands at docs/README.md; tools/docs_index.py --write fills the span from each document's summary line. -->

@@ -6,13 +6,16 @@ date: 2026-10-22 00:00:00+00:00
 description: 'The highest-precedence rule set for zer0-mistakes: mission, invariants,
   quality gates, roles and how the PRD, feature catalog, ADRs and agent guide relate.'
 lastmod: 2026-10-22 00:00:00+00:00
-source_file: constitution.md
+source_file: docs/constitution.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/constitution.md
 tags:
 - governance
 - constitution
 - agents
-title: zer0-mistakes — Constitution
+title: zer0-mistakes Constitution
 ---
+
 <!-- kit: governance v0.1.0 · seeded from bamr87/bamr87 templates/governance/. Owned by this repo after seeding;
      change it ONLY through an amendment record in docs/amendments/ (see § 8). Validate: python3 <hub>/tools/governance_lint.py check . -->
 # zer0-mistakes — Constitution

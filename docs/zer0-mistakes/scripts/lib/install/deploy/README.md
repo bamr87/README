@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/lib/install/deploy/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/lib/install/deploy/README.md
 title: scripts/lib/install/deploy/
 ---
 # scripts/lib/install/deploy/

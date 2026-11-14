@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/climate-data-primer/
 preview: /images/previews/climate-data-primer-reading-trends-without-losing-.png
-source_file: 2026-04-28-climate-data-primer.md
+source_file: fr/posts/science/2026-04-28-climate-data-primer.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/science/2026-04-28-climate-data-primer.md
 tags:
 - climate
 - data
 - statistics
 - research
-title: 2026 04 28 Climate Data Primer
+title: 'Introduction aux données climatiques : lire les tendances sans perdre le signal'
 translated_from_sha: 90f6bb8478b6
 translation_of: pages/_posts/science/2026-04-28-climate-data-primer.md
 translation_source_url: /posts/2026/04/28/climate-data-primer/
 ---
+
 Les données climatiques sont faciles à mal interpréter, car les chiffres décrivent souvent des tendances à long terme, et non la météo de la veille. Une seule tempête, canicule ou vague de froid peut être spectaculaire, mais les tendances climatiques émergent de nombreuses mesures réalisées sur de nombreuses années.
 
 Ce guide d'introduction présente les concepts qui rendent les jeux de données climatiques plus faciles à lire.

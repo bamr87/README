@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 1
-source_file: semtex1.md
+source_file: wargames/semtex/semtex1.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex1.md
 title: Semtex1
 ---
 Simple encryption

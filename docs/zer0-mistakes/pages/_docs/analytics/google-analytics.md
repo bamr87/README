@@ -14,7 +14,9 @@ prerequisites:
 preview: /images/previews/google-analytics.png
 sidebar:
   nav: docs
-source_file: google-analytics.md
+source_file: pages/_docs/analytics/google-analytics.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/analytics/google-analytics.md
 tags:
 - analytics
 - google
@@ -22,6 +24,7 @@ tags:
 - ga4
 title: Google Analytics
 ---
+
 # Google Analytics
 
 Integrate Google Analytics 4 (GA4) for comprehensive website traffic analysis.
@@ -261,14 +264,14 @@ gtag('config', 'UA-XXXXXXX-X');
 
 ## Related
 
-- [PostHog Analytics](/docs/features/posthog-analytics/)
-- [Google Tag Manager](/docs/analytics/google-tag-manager/)
-- [Cookie Consent](/docs/features/cookie-consent/)
-- [Privacy Policy](/privacy-policy/)
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]]
+- [[zer0-mistakes/pages/_docs/analytics/google-tag-manager|Google Tag Manager]]
+- [[zer0-mistakes/pages/_docs/features/cookie-consent|Cookie Consent]]
+- [[zer0-mistakes/pages/privacy-policy|Privacy Policy]]
 
 ## See also
 
-- [[Analytics]]
-- [[PostHog Analytics]]
-- [[Google Tag Manager]]
-- [[Cookie Consent Management]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]
+- [[zer0-mistakes/fr/docs/features/posthog-analytics|PostHog Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/google-tag-manager|Google Tag Manager]]
+- [[zer0-mistakes/pages/_docs/features/cookie-consent|Cookie Consent Management]]

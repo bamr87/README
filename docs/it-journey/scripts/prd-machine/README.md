@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/prd-machine/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/prd-machine/README.md
 title: PRD MACHINE v2
 ---
 # PRD MACHINE v2

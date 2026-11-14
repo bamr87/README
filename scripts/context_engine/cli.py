@@ -7,11 +7,13 @@ import sys
 from typing import List
 
 from . import ENGINE_VERSION
+from .brain import save_note
 from .builder import build_all
+from .collect import collect
 from .navigator import check_nav
 from .query import (
-    ContextMissing, get_apex, get_card, get_facts, get_manifest, get_nav,
-    list_nav, list_projects, search,
+    ContextMissing, get_apex, get_card, get_facts, get_hot, get_manifest, get_nav,
+    get_neighbours, get_note, list_nav, list_projects, search, vault_lint,
 )
 from .registry import RegistryError, load_registry, sync_repos_txt
 from .survey import (FleetError, load_fleet, summarize, summarize_review, survey,
@@ -27,6 +29,67 @@ def _cmd_build(args: argparse.Namespace) -> int:
     )
     print(f"[done] {summary['projects']} projects, {summary['terms']} terms, "
           f"enrichment={summary['enrichment']}")
+    return 0
+
+
+def _cmd_collect(args: argparse.Namespace) -> int:
+    workspace = Path(args.workspace).expanduser() if args.workspace else None
+    entries = collect(load_registry(), names=args.repo or None, workspace=workspace)
+    print(f"[done] {len(entries)} projects, "
+          f"{sum(e['pages'] for e in entries.values())} pages")
+    return 0
+
+
+def _cmd_note(args: argparse.Namespace) -> int:
+    note = get_note(args.target)
+    if note is None:
+        print(f"no note matches {args.target!r}", file=sys.stderr)
+        return 1
+    if args.json:
+        print(json.dumps(note, indent=2, ensure_ascii=False))
+        return 0
+    print(f"{note['title']}  ({note['path']})\n{note['summary']}\n")
+    print(f"backlinks ({len(note['backlinks'])}):")
+    for row in note["backlinks"][:args.limit]:
+        print(f"  <- {row['path']}")
+    print(f"links ({len(note['links'])}):")
+    for row in note["links"][:args.limit]:
+        print(f"  -> {row['path']}")
+    return 0
+
+
+def _cmd_neighbours(args: argparse.Namespace) -> int:
+    rows = get_neighbours(args.target, depth=args.depth)
+    if args.json:
+        print(json.dumps(rows, indent=2, ensure_ascii=False))
+        return 0
+    for row in rows[:args.limit]:
+        print(f"{row['distance']}  {row['path']}")
+    return 0 if rows else 1
+
+
+def _cmd_hot(_args: argparse.Namespace) -> int:
+    print(get_hot())
+    return 0
+
+
+def _cmd_lint(args: argparse.Namespace) -> int:
+    report = vault_lint()
+    if args.json:
+        print(json.dumps(report, indent=2, ensure_ascii=False))
+    else:
+        counts = report["counts"]
+        print(f"{counts['notes']} notes, {counts['edges']} links, "
+              f"{report['orphans']} orphans, {counts['unresolved']} unresolved targets")
+        for row in report["unresolved"][:20]:
+            print(f"  {row['pages']:>4}  {row['target']}  (e.g. {row['example']})")
+    return 1 if args.strict and report["counts"]["unresolved"] else 0
+
+
+def _cmd_save(args: argparse.Namespace) -> int:
+    body = sys.stdin.read() if args.body == "-" else args.body
+    path = save_note(args.title, body, tags=args.tag, sources=args.source)
+    print(f"wrote {path.name} - run `python3 -m scripts.context_engine build` to publish it")
     return 0
 
 
@@ -200,6 +263,45 @@ def build_parser() -> argparse.ArgumentParser:
                        help="don't rewrite docs/index.md")
     build.set_defaults(func=_cmd_build)
 
+    collect_cmd = sub.add_parser(
+        "collect", help="crawl the registry's repositories into docs/")
+    collect_cmd.add_argument("repo", nargs="*",
+                             help="project names (default: every aggregated project)")
+    collect_cmd.add_argument("--workspace", metavar="DIR",
+                             help="read local checkouts under DIR where they exist "
+                                  "instead of cloning")
+    collect_cmd.set_defaults(func=_cmd_collect)
+
+    note = sub.add_parser("note", help="read a note with its backlinks and links")
+    note.add_argument("target", help="a path, title or alias, as in a [[wikilink]]")
+    note.add_argument("--limit", type=int, default=20)
+    note.add_argument("--json", action="store_true")
+    note.set_defaults(func=_cmd_note)
+
+    neighbours = sub.add_parser("neighbours", help="notes within N links of a note")
+    neighbours.add_argument("target")
+    neighbours.add_argument("--depth", type=int, default=1)
+    neighbours.add_argument("--limit", type=int, default=50)
+    neighbours.add_argument("--json", action="store_true")
+    neighbours.set_defaults(func=_cmd_neighbours)
+
+    hot = sub.add_parser("hot", help="print the hot cache: what changed, what connects")
+    hot.set_defaults(func=_cmd_hot)
+
+    lint = sub.add_parser("lint", help="report unresolved links and orphan notes")
+    lint.add_argument("--strict", action="store_true",
+                      help="exit 1 when any link is unresolved")
+    lint.add_argument("--json", action="store_true")
+    lint.set_defaults(func=_cmd_lint)
+
+    save = sub.add_parser("save", help="file a durable note under notes/")
+    save.add_argument("title")
+    save.add_argument("body", help="note text, or - to read it from stdin")
+    save.add_argument("--tag", action="append", help="repeatable")
+    save.add_argument("--source", action="append",
+                      help="a note this draws on, as a wikilink target; repeatable")
+    save.set_defaults(func=_cmd_save)
+
     sync = sub.add_parser("sync", help="regenerate repos.txt from _data/projects.yml")
     sync.set_defaults(func=_cmd_sync)
 
@@ -266,6 +368,6 @@ def main(argv: List[str]) -> int:
     args = build_parser().parse_args(argv)
     try:
         return args.func(args)
-    except (ContextMissing, RegistryError, FleetError, ValueError) as exc:
+    except (ContextMissing, RegistryError, FleetError, ValueError, RuntimeError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1

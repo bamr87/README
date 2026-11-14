@@ -1,0 +1,266 @@
+---
+source_file: docs/ARCHITECTURE.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/docs/ARCHITECTURE.md
+title: Architecture
+---
+# Architecture
+
+> The design decisions D1–D17 and why the code follows them: the `src/core` layer boundary, the six bundles, the webview contract, the ledger, the Fleet console's guards, and the shared-files boundary with the Rails CMS (retired with it, ADR 0008).
+
+This repository is two products that share a git remote: a **VS Code extension** (`src/`) and the **content plane** (`content/`, Django + Wagtail, with its studio in `web/`), which [ADR 0001](adr/0001-target-architecture.md) makes the centre of the target architecture; the Rails fleet CMS that was a third went in [ADR 0008](adr/0008-retire-the-rails-cms.md). [ADR 0006](adr/0006-one-python-platform.md) adds the React frontend (`web/`), whose packages the extension's studio webviews are built from. This document is the extension's internal boundary; the content plane's is [`content/AGENTS.md`](../content/AGENTS.md). The pipeline is [`CICD.md`](CICD.md).
+
+The extension has a hard internal boundary. This section explains where that boundary is, why it is there, and what it buys.
+
+## Design decisions D1–D16
+
+The first fourteen decisions are the reason the extension's code looks the way it does; D15 and D16 governed the Rails half and its boundary with the extension, and were retired with it (ADR 0008); the platform's site files keep the line-surgery rule (`content/sites/frontmatter.py`). They were made before the first line was written and lived, until now, only in a design conversation — fifteen source and doc files cited them as `PLAN §x.y` against a document that was never in this repository. They are restated here from the code, so a citation resolves and an amendment has somewhere to land. Each names the mechanism that enforces it, because a decision no mechanism defends is a preference.
+
+| # | Decision | Enforced by |
+|---|---|---|
+| **D1** | **`src/core` and `src/mcp` are pure Node.** The editor API is available only in the shell (`extension.ts`, `config.ts`, `commands/`, `views/`, `panel/`, `dashboard/`, `agent/`). If core needs the editor, it takes a parameter or an injected callback. | eslint `no-restricted-imports`; the MCP bundle's empty `external` list turns a stray import into a build error; every core test runs without an extension host |
+| **D2** | **Configuration is three layers** — VS Code settings, then `zer0.json`, then the manifest defaults — resolved per key. `src/config.ts` reads settings through `inspect()` rather than `get()`, because every setting has a default and `get()` would always return one, so `zer0.json` could never win. Nothing is cached: `currentConfig()` re-reads on every call, which is why flipping a gate takes effect without a window reload. | `explicit()` in `src/config.ts`; `resolveConfig` is pure and shared by the extension, the MCP server and the tests |
+| **D3** | **Zero *shipped* runtime dependencies.** `dependencies` is `{}` and stays `{}`. *Amended 2026-09-09 (see D14):* build-time libraries may be bundled by esbuild from `devDependencies` when they are named in the bundler's allow-list. The Claude Agent SDK remains the one optional, dynamically-imported exception. *Amended 2026-10-22 ([ADR 0006](adr/0006-one-python-platform.md) decision 9, PLAN G10):* libraries over hand-rolled code — the YAML subset, the glob translator, the date token subset and the JSONC sanitiser are gone, replaced by `yaml`, `picomatch`, `date-fns` with `@date-fns/tz`, and `jsonc-parser`; and the studio webviews are built from `web/packages/` with React, Mantine, TanStack Query and TipTap. All of it is bundled, per bundle, by name; nothing ships as a dependency. | `dependencies: {}`; the per-bundle bare-import gate in `esbuild.js`; a test that `dist/mcp-server.js` holds only `CORE_LIBRARIES` |
+| **D4** | **One full-state snapshot per render.** The host posts a whole `state` object; the webview never asks for a fragment. A protocol with a hundred wire names has a hundred entry points to audit. | `WorkspaceStore`'s single `Snapshot`; the `RequestOp` union is eleven named operations, not an open channel |
+| **D5** | **The webview is UI, never the gate.** A button posts an intent and a target — never a payload, never an override. Every gate is re-checked host-side, in the same function the command palette calls, after re-reading state from disk. A disabled button is a courtesy to the person, not a control. | `doApprove`/`doPublish`/`doToggleSwitch`/`doDispatchLane` re-read and re-evaluate; the message shapes carry ids only |
+| **D6** | **Eighteen field types, not the upstream twenty-two.** The five dropped (`dataFile`, `dataBlock`, `block`, `fieldCollection` as a storage type, `dropdown`) either needed a second configuration file or duplicated another type. | `FIELD_TYPES` and its test; `schemas/zer0.schema.json` |
+| **D7** | **Front matter is edited by line surgery.** Only the lines belonging to changed keys are rewritten; untouched lines come out byte-identical, so comments and hand-formatting survive. Dates stay strings end to end. | `updateFrontMatterKeys`; full re-serialization is a documented fallback, not the path |
+| **D8** | **Publishing is an interface, not a vendor.** `PublishTarget` has a pure `build` and an effectful `send`; the registry is open. A target's `build` never touches the network or the disk, which is what makes a preview provably free of side effects. | `registerTarget`/`targetById`; a throwing-`fetch` plus tree-snapshot test per target |
+| **D9** | **`.cms/` absence is a normal state.** With no contract, the page index supplies the same `ContentRecord` shape with `health: -1`, `freshness: 'unknown'` and `UNKNOWN_COUNT` sentinels. Report less; never invent a number. | `pageToRecord`; `countLabel`; the contract's `{present: false}` branch |
+| **D10** | **`canUseTool` is the single agent gate.** `allowedTools` is never passed to the SDK, because a tool allow-list negotiated at session start cannot show a person the diff it is about to write. Read-only tools run freely; everything else goes through an approve/deny card. **`acceptEdits` is not an available mode** — measured against the SDK, a `Write` under it landed on disk with `canUseTool` never called, so a setting this extension itself offered was quietly disarming the gate. It is gone from the manifest and clamped at every layer. | `QueryOptions` deliberately omits `allowedTools`; `AgentPermissionMode` is two values; the file and settings layers both clamp; `READ_ONLY_TOOLS` |
+| **D11** | **Network only from an explicit user action.** Activation opens no socket, and neither does the MCP server process. A GitHub session is obtained lazily inside the action, asked for per request, and never stored. Every call the console can make is declared as data and checked against that plan before a socket opens. | `FLEET_PLAN`; `fleetSurfaceIsRepoScopedOnly`; the injected `fetch`; a suite that intercepts `fetch` to prove it from outside |
+| **D12** | **A site's platform is a profile, resolved once, never guessed twice.** Jekyll, MkDocs, Wiki.js, Hugo, Docusaurus, Astro and a generic fallback are data — content roots, front-matter dialect and keys, the draft convention, date keys and formats, the slug and permalink rules, output directories to skip, the serve command and preview URL. Detection is by marker file; an explicit `platform.id` in `zer0.json` always wins; zer0-mistakes is an **overlay on Jekyll**, never a sibling identity. Nothing platform-specific is hard-coded outside a profile. | `src/core/platform/`; a golden that pins the Jekyll projection byte-for-byte against the pre-refactor code |
+| **D13** | **VS Code Workspace Trust is the outer gate; the settings-only switches are the inner one.** The extension declares `untrustedWorkspaces: limited`. In an untrusted workspace it reads and edits front matter but runs nothing: not the content engine, not a placeholder script, not the verify command, not the agent, and it registers no MCP server. Trust is re-checked inside every function that spawns, not only in a `when` clause. | `capabilities.untrustedWorkspaces.restrictedConfigurations`; `evaluateExecGate`; `workspaceTrusted()` inside `mcpPublishAllowed`, `settingsFleetDispatchAllow` and `settingsFleetScaffoldAllow` |
+| **D14** | **A build-time dependency is bundled and allow-listed; a runtime dependency is still forbidden.** `@bamr87/fleet-engines` (and the `yaml` it needs) are exact-pinned `devDependencies`, and the bundler's allow-list admits them into `dist/extension.js` alone — so they enter the shipped bundle when, and only when, a surface in the extension host consumes the seam. One seam, `src/core/fleet/engines.ts`, is the only importer, and it is never re-exported through the core barrel: everything else takes the engines as injected data, which is why the seam can stay out of the MCP graph entirely rather than relying on tree-shaking to remove it. *Amended 2026-10-22 (ADR 0006 decision 9):* the MCP bundle admits exactly the libraries core reads with (`CORE_LIBRARIES`: `yaml`, `jsonc-parser`, `picomatch`, `date-fns`, `@date-fns/tz`) and still never the engines package, `vscode` or anything else; the gate reads what this repository's own code imports, and each bundled library brings its own dependencies. | the per-target bare-import gate in `esbuild.js`; the metafile assertion on `dist/mcp-server.js`; eslint patterns forbidding the seam under `src/mcp/**` |
+| **D15** | *Retired with `rails/` ([ADR 0008](adr/0008-retire-the-rails-cms.md)).* **The browser CMS and the extension share on-disk content, not a process.** Rails (`rails/`) is the fleet CMS; the extension stays the in-editor editor, and neither is folded into the other. Both edit front matter by line surgery — the extension with `updateFrontMatterKeys`, Rails with its port `Zer0Cms::Cms::FrontMatter.update_keys` — so a save from either leaves every untouched line byte-identical (D7). The library under `rails/lib` stays stdlib-only; gems belong in the Rails app. *Amended 2026-09-14:* the Ruby port is held to the extension's cases (fence kept, insertion before the closing fence, block continuation lines, YAML-correct quoting, deletion, CRLF and BOM), and the Rails catalog reads a site with Jekyll 4.4's own reader rules rather than a glob, so both surfaces agree with Jekyll about what is content. | `rails/bin/test-stdlib` in `abc-engine.yml` (no bundler, Ruby 3.3 and 4.0.5); `test_front_matter.rb`; `test_catalog.rb` against expected lists Jekyll 4.4.1 generated (`rails/bin/jekyll-parity`); `PLATFORM.md` (deleted with `rails/`) |
+| **D16** | *Retired with `rails/` ([ADR 0008](adr/0008-retire-the-rails-cms.md)).* **Administrate over a disk-synced index; git stays the source of truth.** The Rails UI is Administrate 1.0 dashboards over four ActiveRecord models — `Site`, `Page`, `Asset`, `Term` — that are only an index: `Site#sync!` rebuilds a site's rows from disk in one transaction, upserting by natural key and deleting what vanished. Nothing is written through ActiveRecord. Every write goes to the file: `PageEditor` re-reads it, refuses when its digest differs from the index, edits by line surgery, renames atomically and re-syncs that one path. Administrate supplies what is general — index search, sort and pagination, generated show and edit forms, collection filters, custom fields and actions, namespaced routes — and zer0-CMS writes only what is specific: the sync, the write-back editor, the image-engine bridge and the ABC wizard. Chosen 2026-09-14 on evidence: administrate 1.0.0, activeadmin 4.0.0.beta22, avo 4.2.3, trestle 0.10.1, alchemy_cms 8.3.9 and spina 2.21.0 all resolve with rails 8.1.3, propshaft, importmap-rails, turbo, stimulus and sqlite3. Administrate is MIT, stable 1.0 since 2025-10-31, with overridable ERB views and no asset build. activeadmin is still a beta and needs a Tailwind build; avo is LGPL-3.0 plus a commercial tier that gates the useful features; trestle is LGPL-3.0 with no release in twelve months; alchemy_cms and spina keep pages in the database, so content would fork away from Jekyll and git would stop being the source of truth. | `PageEditor` and `Zer0Cms::Cms::Writer` are the only writers; `page_editing_test.rb` (an unchanged save of every indexed file is byte-for-byte a no-op; a stale file or form is refused); `site_sync_test.rb`; `rails-app.yml` |
+| **D17** | **Distribution is one lane over a site's own files, with a declared call plan; files describe, the environment arms.** Every LinkedIn call is a declared plan entry with a sentence saying what comes back, and the client's `request` takes a call id, never a URL. The queue, the brand guard, the ledger and `.cms/distribution/performance.json` keep the extension's dialect, rule names and byte format, so a draft, a finding or a statistic means the same thing in the editor, the browser and CI, and the extension's catering worklist ranks subjects from numbers this lane fetched. A live publish needs `ZER0_LINKEDIN_PUBLISH=1` in the environment of the process doing it; no `zer0.json` key can arm it (D13's rule for a cloned repository). Chosen 2026-09-15 to replace bash-365.com's per-site Python publisher and the zer0-distribute prototype; [`DISTRIBUTION.md`](DISTRIBUTION.md) is the contract. *Amended 2026-10-22 (PLAN G5, ADR 0004):* the lane is the platform's — `content/distribution/linkedin/` (the client, over httpx) and `content/distribution/lane/` (`manage.py linkedin`, the reusable `zer0-linkedin.yml` workflow, the lane's MCP server) — held by a recording to what the stdlib Ruby lane in `rails/lib/zer0_cms/{linkedin,distribution}` computed, and the Ruby and the Rails CMS's `/admin/distribution` deleted. The platform's own channels (LinkedIn, WordPress, GitHub pull requests, newsletters) run the same gates in the same order and write the same ledger; one of them also needs a person to have armed it, and keeps its credential encrypted with the AI layer's keys. | `content/tests/distribution/`: `test_linkedin.py` (every declared call returns own content and none reaches a forbidden path; an undeclared call, a foreign upload host and an unheld scope are refused before a socket; a write is not retried after a 5xx), `test_lane.py` (the gate order; a preview writes and sends nothing; the ledger bytes equal Python's `json.dump`; a file cannot arm; force never lifts approval or arming; parity with `golden/ruby-lane.json`), `test_platform.py` (connecting is state and PKCE, one use; a credential is encrypted and write-only; every gate in the request and again on the worker) |
+
+**Why the engines arrive by dependency rather than by copy.** The audit rulebook, the workflow-facts scanner and the metrics engine already exist twice in this fleet — once in GitFactory's browser app and once in the hub's package — and the two copies have already diverged by one rule. A third copy inside this extension would diverge again, silently, and the two consoles would then disagree about whether a lane is safe. Consuming the published package is what keeps one answer.
+
+## Lettered decisions D-A–D-I
+
+Nine more decisions are cited in the code by letter rather than number. They are indexed here from the files that cite them, so a citation resolves; each is enforced where it is cited.
+
+| # | Decision | Cited in |
+|---|---|---|
+| **D-A** | The fleet's shared engines arrive by dependency — bundled into `dist/extension.js` alone, through one seam that is never re-exported (the dependency half is D14) — and this console still reads a manifest with its own parser, which refuses a foreign `spec_version` and keeps the tristate guardrail. | `esbuild.js`, `src/core/index.ts`, `src/core/fleet/engines.ts`, `src/core/fleet/README.md`, `src/core/shared/types.ts`, `src/test/engines.test.ts` |
+| **D-B** | Multi-root: every folder-touching function takes an optional scope, and the resolver the site registry installs answers which folder a call is about. | `src/config.ts`, `src/webview/shared/protocol.ts` |
+| **D-C** | A site's platform is a profile — the type vocabulary behind D12. | `src/core/shared/types.ts` |
+| **D-D** | The site-wide front-matter audit: lifehacker.dev's thirteen rule ids, the site's own schema, and a fix-it that never writes on its own. | `src/core/content/audit.ts`, `src/core/content/README.md`, `src/core/shared/types.ts`, `src/webview/shared/protocol.ts`, `src/test/audit.test.ts` |
+| **D-E** | Lane generation: a described lane becomes files a person reviews and commits, or a `bespoke` refusal with reasons. | `src/core/shared/types.ts`, `src/webview/shared/protocol.ts`, `src/test/lanes.test.ts` |
+| **D-F** | One harness vocabulary: the editor agent and the fleet's CI resolve a run's roles, skills and model once, in the runner's own precedence, and project that value two ways. | `src/core/harness/profile.ts`, `src/core/harness/aiConfig.ts`, `src/core/shared/types.ts`, `src/agent/README.md`, `src/test/harness.test.ts` |
+| **D-G** | Fleet slice 2: the roster, the pull strip, cost and drift. | `src/core/shared/types.ts`, `src/webview/shared/protocol.ts` |
+| **D-H** | The route registry: `DASHBOARD_ROUTES` and `DASHBOARD_TABS` are one table seen twice. | `src/webview/shared/protocol.ts` |
+| **D-I** | The workflow catalogue is read-only: this console never edits an arbitrary workflow's attributes in place. | `src/webview/shared/protocol.ts`, `src/webview/dashboard/workflows.ts`, `src/webview/dashboard/README.md`, `src/commands/harness.ts` |
+
+## The layer map
+
+```text
+┌──────────────────────────────┐ ┌──────────────────────────────┐
+│ src/webview/   file mode     │ │ web/packages/  platform mode │
+│  vanilla TS + CSS            │ │  the studio's React          │
+│  shared/ panel/ dashboard/   │ │  workspaces (@zer0/ui), the  │
+│  agent/                      │ │  generated client, the       │
+│  • no vscode, no innerHTML   │ │  tokens; webview/ is the     │
+│                              │ │  extension's entry           │
+└──────────────▲───────────────┘ └──────────────▲───────────────┘
+               │ postMessage: an intent         │ postMessage: a method, a
+               │ and a target                   │ path, a JSON body
+┌──────────────┴────────────────────────────────┴───────────────┐
+│ src/  (the shell)       the only code that imports `vscode`  │
+│   extension.ts  config.ts  store.ts  logger.ts               │
+│   commands/  views/  panel/  dashboard/  agent/  studio/     │
+└───────────────▲──────────────────────────────────────────────┘
+                │  plain values in, plain values out
+┌───────────────┴──────────────────────────────────────────────┐
+│ src/core/               pure Node. No `vscode`, ever.        │
+│   shared/  content/  governance/  catering/  contract/       │
+│   analytics/  portfolio/  media/  fleet/  platform/  harness/│
+│   studio/  (the gates on every request a studio webview asks)│
+└───────────────▲──────────────────────────────────────────────┘
+                │
+┌───────────────┴──────────────────────────────────────────────┐
+│ src/mcp/                the standalone MCP server            │
+│   also pure Node — it runs outside the extension host        │
+└──────────────────────────────────────────────────────────────┘
+```
+
+## Why `src/core` cannot import `vscode`
+
+Three enforcement mechanisms, on purpose:
+
+1. **eslint** — `no-restricted-imports` on `src/core/**` and `src/mcp/**`.
+2. **The MCP bundle** — `esbuild.js` builds `dist/mcp-server.js` with an **empty `external` list**. A stray `import 'vscode'` anywhere in that import graph fails the build, loudly, at build time, instead of crashing inside somebody's MCP client at runtime.
+3. **The tests** — `src/core` is exercised by plain unit tests that never launch an extension host, which is only possible because it has no editor dependency.
+
+The payoff is not tidiness. It is that **the same publish gate runs identically from a command, a webview and an MCP client**, because all three call the same pure function. There is one gate to audit.
+
+## The six bundles
+
+| Bundle | Platform | External | Bundles (the allow-list) |
+|---|---|---|---|
+| `dist/extension.js` | node20, cjs | `vscode`, `@anthropic-ai/claude-agent-sdk` | the engines package, `eventsource`, `CORE_LIBRARIES` |
+| `dist/mcp-server.js` | node20, cjs | *nothing* | `CORE_LIBRARIES` only |
+| `dist/panel.js` | browser, iife | nothing | `date-fns`, `@date-fns/tz` (the date field) |
+| `dist/dashboard.js` | browser, iife | nothing | nothing |
+| `dist/agent.js` | browser, iife | nothing | nothing |
+| `dist/studio.js` (+ `studio.css`) | browser, iife | nothing | the studio's libraries: `@zer0/*`, React, Mantine, TanStack Query, TipTap, jsdiff, `openapi-fetch` |
+
+`media/*.css` is copied to `dist/media/` at build time and loaded through `webview.asWebviewUri`. `dist/studio.js` is built from `web/packages/webview/src/main.tsx`, with `web/`'s own lockfile installed by the root `postinstall`, so the extension and the studio build from one set of library versions.
+
+## The webview contract
+
+**One full-state message per render.** The host posts a single `state` snapshot; the webview posts back one of a small set of message shapes carrying an intent and a target.
+
+This replaces the more common pattern — every control talking to the host with its own message name — for one reason: a protocol with a hundred wire names has a hundred entry points to audit, and each one is a place where a webview can ask for something a person did not.
+
+The rule that follows from it:
+
+> **The webview is UI, never the gate.**
+>
+> A button posts `{type: 'command', id: 'draft.publish', args: {draftPath}}`. It does not post the payload to publish, the guard result, or an override flag. The host re-reads the draft from disk, re-runs the guard, and re-evaluates every blocker before it does anything — in the same function the command palette calls.
+
+A disabled Publish button in the webview is a courtesy to the person, not a security control.
+
+## Security posture of the webviews
+
+- Strict CSP with a per-render nonce; `default-src 'none'`.
+- No external resources of any kind — no CDN, no font fetch, no image host. A studio webview may show an image from the configured platform (a page's own media), and from no other host: an image URL is a request, and a page that could load one from anywhere could send what it shows anywhere.
+- Content is inserted with `textContent` via `el()`. `innerHTML`, `outerHTML` and `insertAdjacentHTML` are eslint errors in `src/webview/**`.
+- Colours come from VS Code theme variables only, mapped through one file (`media/tokens.css`) so themes stay consistent and the rest of the CSS never touches `--vscode-*` directly. The studio webviews load it too, and `web/packages/webview/src/editor.css` points every `--zer0-*` design token at its `--z-*` tokens, so the studio's workspaces wear the editor's light, dark and high-contrast themes; `styling.test.ts` holds `web/packages/` to the same rule.
+- A studio webview (platform mode) has `default-src 'none'` — no connection at all — scripts and styles only by the render's nonce, and `img-src` the extension, the platform's origin, `data:` and `blob:`; Mantine's `<style>` elements carry the nonce and TipTap's injected CSS is off, so there is no `'unsafe-inline'`. Its requests and event streams go through the host (next section), which is what keeps the person's token out of the page.
+
+## The studio in the webviews (PLAN G10)
+
+[ADR 0006](adr/0006-one-python-platform.md) decision 9: the extension is built from the studio's code. With `zer0Cms.platform.url` set, the dashboard and the agent view load `dist/studio.js` — `@zer0/ui`'s workspaces, `@zer0/api`'s generated client and `@zer0/tokens` — and so does the Metadata view for a file the platform has a page for; the extension's own code is the host around them.
+
+- **No host code per workspace.** `@zer0/ui` exports `WORKSPACES` — the studio's areas in its navigation order: Home, Write, Create, Ideas, Research, Newsroom, Books, Review, AI, Outbox, Sites, Distribution — and `HOME`, the workspace each destination is shown in, typed over the whole `Destination` union so a destination added without a home fails the type check; the dashboard renders a tab per entry, the agent view opens `ai`, and a destination a view does not show goes to the dashboard. A workspace the studio gains is a registry entry, and the extension renders it.
+- **The page behind the open file, decided per file.** The file's path from its workspace folder, starting with the folder's name (`drsai/_posts/a.md`), asks `GET /api/v2/content/pages/?source=<path>`, which the platform answers from what its import recorded (`ImportedSource.legacy_path`, and the site's `source_root`, which the folders above the file must match — two sites' `_posts/a.md` are told apart, and a path with no folder matches no site). The host asks first (`Studio.modeFor`) and mounts the studio's page editor only when there is a page; any other file — a site still on files beside a platform site in a multi-root window, a file never imported, a platform that cannot be reached — keeps file mode. Several pages are offered as a choice.
+- **The transport.** The webview's `openapi-fetch` client posts a method, a path, a JSON body and the request headers the platform reads (`Idempotency-Key`, `If-Match`); an upload (any body that is not JSON) is refused in the webview with `extension.unsupported_body`, since the bridge carries text. `sendToPlatform` in `src/core/studio/bridge.ts` (pure, so the fast suite tests it) gates the URL it will send, not the text it was given: a path under `/api/v2/` exactly as the platform routes it — no `%`, no `.`, `..` or empty segment, nothing the URL parser rewrites, so `%70ublish/` or `./publish/` cannot reach a publish without the modal — never the session endpoints, a modal before every request that changes a live site or reaches people past the platform — a page published, unpublished or scheduled; a newsroom story moved to published or scheduled (read from the body that is sent); a distribution post published, scheduled, or approved (on a channel with a cadence, approving schedules it); a newsletter issue sent (D5: the webview is never the gate; an id is any one segment, so a UUID asks too). It adds the platform URL from the settings layer — https, or http on this machine only, so the token never crosses a network in clear text — and the person's token from SecretStorage, kept per platform origin so a URL changed under the person finds no token, and posts back the status, the body and the response headers a workspace reads (`Content-Type`, `Location`, `Retry-After`, `X-Request-Id`). Event streams are followed host-side with the `eventsource` package, which can send the token as a header. Nothing is posted, logged or reported with the token in it.
+- **D11.** `Studio` is constructed at activation and reads nothing; a request leaves only when a webview a person opened asks, and the startup dashboard stays file mode.
+- **The token.** `zer0Cms.platform.setToken` / `clearToken`; the platform's `accounts.UserToken` (`Authorization: Bearer zer0u_…`, issued in the studio's account menu (PLAN G3: scoped `read` or `read`+`write`, 1 to 365 days) or by `manage.py user_token`, 90 days unless the issuer says otherwise, a superuser's only on purpose) is a person, with their Wagtail permissions, over REST and GraphQL; one without the `write` scope only reads.
+- **File mode is untouched.** With no platform configured nothing above runs. With one, `zer0Cms.dashboard.files` still opens the file-mode dashboard — the fleet console, the monitor, the audit, the harness and the drafts open it through that command — and the Metadata view is file mode for every file the platform has no page for.
+
+## Front matter is edited by line surgery
+
+`updateFrontMatterKeys(raw, changes)` rewrites **only the lines belonging to changed keys** and appends new keys before the closing fence. Untouched lines come out byte-identical.
+
+This is why comments and hand-formatting survive an edit from the panel, and it is deliberate rather than incidental: a CMS that reformats a file on every field change makes its own diffs unreadable and its users distrust it. Full re-serialization exists as a documented fallback for changes the line-locator cannot resolve.
+
+Dates stay strings through the whole pipeline. Round-tripping a date through a JS `Date` is how CMSes silently shift published timestamps by a timezone.
+
+## The `.cms/` contract, and its absence
+
+When the repo runs a content engine, `.cms/index/content-index.json` gives per-file health, freshness, and typed issues split into **mechanical** (a script can fix it) and **substantive** (a person has to) lanes.
+
+When it does not, `loadContract()` returns `{present: false}` and the page index supplies the same `ContentRecord` shape with `health: -1` and `freshness: 'unknown'`. The distributable rule degrades honestly to "not a draft and has a title".
+
+Absence is a normal state, not an error. The UI reports less; it does not break, and it does not pretend to know a health score it has not been given.
+
+## The ledger
+
+A flat JSON file keyed by **canonical URL**, written atomically with Python-compatible formatting (`sort_keys`, `ensure_ascii`, 2-space indent, trailing newline).
+
+Two properties matter:
+
+- **Idempotency.** Whichever lane publishes first — this extension or a CI workflow — the other one sees the key and skips. That is the whole reason the key is the canonical URL rather than a file path or a timestamp.
+- **Byte compatibility.** Both lanes write the same file in the same repo. If the two serializers disagreed by so much as a space, the file would churn on every run and the git history would be noise. Golden fixtures in `src/test/fixtures/golden/` pin this.
+
+## Activation
+
+`activate()` does no network I/O, no telemetry, and no auth check — the studio host is constructed and reads nothing (PLAN G10). In a folderless window it installs zero watchers and returns. The store keeps one snapshot for all five tree views (Sites, Content, Drafts, Distribution, Published) and both webviews, with refreshes coalesced through a single in-flight promise so a burst of file events costs one rebuild.
+
+## Sites, and the active-site rule
+
+A window can hold more than one site. The fleet's own workspace holds twelve folders, seven of them Jekyll sites this extension can detect, audit and publish — and until this release eleven of them were invisible, because everything resolved `workspaceFolders[0]`.
+
+The unit is still one folder. `Zer0Config` describes one root, `WorkspaceStore` holds one snapshot, the page-index cache is keyed to one root, and the bundled MCP server is rooted in one directory. Nothing about that changed, and that is the point: multi-root is composition *above* the single-site model rather than a second model threaded through it. A `SiteRegistry` holds one store per folder; each store reads that folder's configuration, watches that folder's files, and writes its own cache key.
+
+**Which site a command acts on is decided by the command, not by the window.** A command invoked on a file acts on that file's site — the file names its folder, and the folder names its configuration. Only a command with no argument falls back to the *active* site, and that is resolved in this order:
+
+1. the site a person explicitly picked, if it still exists,
+2. the folder owning the active editor,
+3. the first folder.
+
+The rule lives in a pure function with tests, because a rule like this quietly acquires a fourth case, and one nobody can test is one nobody can change.
+
+**Settings follow the folder.** Most of the 45 settings are `resource`-scoped, so each folder answers them for itself: that is what lets one window hold a Jekyll site and an MkDocs site without either one's conventions leaking into the other. The gates keep their own discipline — `governance.publishAllow` and the two fleet switches are read from the settings layer alone, per folder, so arming one site arms one site. Workspace Trust remains the outer gate and is per *workspace*, not per folder: a window is all-trusted or all-restricted, and in a restricted one nothing runs anywhere in it.
+
+**The MCP server is per site.** One definition per configured, trusted folder, each rooted in its own directory, because a server that had to be told which site to answer about would be a server that could be told the wrong one. The two-phase registration is unchanged: the definitions carry an empty environment, and the flag is read at resolve time, from that folder's settings, and nowhere else.
+
+## The Fleet console
+
+The first surface in the extension that talks to another system. It reads this repository's `fleet.manifest.yml` (spec `fleet/v1`, from bamr87/wtd's `docs/FLEET-SPEC.md`): the AI lanes, each with its harness, its workflow file, its triggers, its `*_ENABLED` repository-variable switch, the tokens it spends and the guardrails it declares. The dashboard's Fleet tab draws that table and, from GitHub, the live columns — the switch's current value, the workflow's newest run, the open pull requests attributed to the lane — and offers five verbs: flip the switch, dispatch the lane once, re-run its last failure, cancel a run in flight, and enable or disable its workflow file. The Monitor tab draws the same columns across the whole roster, and the Workflows tab catalogues every lane and, behind `zer0Cms.fleet.scaffoldAllow`, writes a new one's files.
+
+**What it reads, declared before it is read.** `core/fleet/github.ts` lists every call as data — **eight reads and seven writes**, each with a sentence naming *the repository's own* thing that comes back. The reads are a variable and the whole variable list, the registered workflows and their state, one bounded page of recent runs, one bounded page of open pull requests, a file, and the default branch. The writes set a variable, dispatch a lane, re-run a failed run, cancel one in progress, and enable or disable a workflow file. Page sizes live in the declared path, so "bounded" is something the plan check enforces rather than a comment; there is no pagination, no retry, no ETag.
+
+**Two guards keep that list honest, and they were both tightened when it grew.** `fleetSurfaceIsRepoScopedOnly` used to check only that a path began with `/repos/{owner}/{repo}` — a prefix test that would have admitted `/issues`, `/hooks`, `/keys`, `/collaborators` and `/actions/secrets` the moment anyone added one. It now matches an explicit allow-list of sub-roots, whole-segment. `fleetPlanHasNoMergeVerbs` is the second: it refuses `/merge`, `/reviews`, `/update-branch`, `/actions/secrets`, `/collaborators`, any `DELETE`, and any write to `/labels`. Both are asserted from both directions — every planned call passes, and a hand-written forbidden one fails. A `..` segment is refused before a URL is built, because `fetch` would have normalised it into an endpoint the plan never named.
+
+The client refuses a request outside the plan before opening a socket, and the suite intercepts `fetch` to prove it from the outside. No secret is ever read: the manifest names tokens, the console shows names.
+
+**The gates.** `evaluateFleetGates(mode, input)` is `governance/approval.ts` with a different vocabulary and the same properties: pure, a fixed and tested blocker order (`noWorkspace, dispatchDisabled, noCredential, manifestAbsent, laneUnknown, laneHasNoSwitch, laneNotDispatchable, guardrailViolation`), and a master gate nothing overrides. That gate is `zer0Cms.fleet.enabled` **and** `zer0Cms.fleet.dispatchAllow`, and the second is read from the VS Code settings layer alone — a `zer0.json` or a manifest arriving with a cloned repository cannot arm it, for the reason the MCP publish flag cannot be armed by a file. `guardrailViolation` refuses a lane whose own manifest admits to merging or writing to the default branch. Both privileged actions (`doToggleSwitch`, `doDispatchLane` in `src/commands/fleet.ts`) re-read the configuration, re-read the manifest from disk, re-run the gate and ask modally — naming the repository, the lane, the variable and the value — inside the same function the palette calls. The webview sends `{repo, lane}` and nothing else; a toggle's new value is derived host-side from the variable as fetched a moment earlier, never from a message.
+
+**Decision D11.** The activation promise above stands. The relaxation is exactly this: network happens only from an explicit user action — the Refresh button, a toggle, a dispatch, or opening the Fleet tab (a passive read that never prompts for sign-in) — through a `fetch` the shell injects into the core's client, and never at activation. The credential is `vscode.authentication.getSession('github', …)`, obtained lazily inside the action and asked for per request; the extension stores no token. The bundled MCP server keeps its side of the rule absolutely: `zer0_fleet_status` reads the local manifest and reports the switch state as unknown, because that process never opens a socket.
+
+**Slice 2 is a fleet.** A roster — the workspace's own folders that carry a manifest, plus repositories you enrolled in your settings, plus, only when you ask, the hub's registry — and per repository four calls per Refresh rather than four per lane. Beside each lane: its switch, its newest run, the open pull requests attributed to it, what it has cost, and the grade the shared audit gives its workflows. Three more verbs act on a run rather than on configuration: re-run the last failure, cancel what is in flight, disable the workflow file.
+
+The honesty rule matters more here than anywhere else in the extension, because a fleet view is mostly cells. **A cell nobody has read says `unknown`, and looks different from `off`.** A repository with no local checkout and no refresh shows as unread rather than as empty. `listVariables` (and, since the re-land, `listWorkflows`, `recentRuns` and `openPulls`) returning `null` rather than `[]` on a 403/404 is that rule in the type system: "there are no variables" and "you are not allowed to read them" are different answers, and a console that rendered both as a blank would be lying about one of them.
+
+## The front-matter audit
+
+Decision D-D. `auditSite` checks every page's front matter against the site's own schema — a `frontmatter_schema.yml`, a `.cms/` contract, `zer0.json`, or the platform's defaults, and every report names which one answered — under thirteen rule ids spelled exactly as lifehacker.dev's `scripts/ci/lint_frontmatter.rb` spells them, so a finding raised in the editor and one filed by that site's CI dedupe against each other. A block the parser could not fully read is reported as `unreadable-frontmatter` rather than audited on a misreading, and the fix-it refuses it. A fix is proposed by `fixFor` and rendered by `dryRunFix` through the ordinary line-surgery path without touching the disk; applying one re-reads the file, re-runs the rule against what is on disk now, and shows the real diff before it asks.
+
+## Where the AI lives
+
+Two separate, independently-disableable surfaces:
+
+- **The MCP server** (`src/mcp/`) — sixteen tools for any MCP client. The doctrine-preferred path is `zer0_draft`: the model writes a draft, a person approves it. `zer0_publish` needs an environment flag *and* a per-call confirmation.
+- **The agent** (`src/agent/`) — the Claude Agent SDK, loaded through a dynamic import so it is never bundled, gated on a setting that defaults to off, and absent from the dependency tree unless you ask for it. Read-only tools run freely; every mutating tool goes through an approve/deny card showing the diff.
+
+Neither is required to use the CMS, and neither can publish without walking through the same gate a human command does.
+
+**One vocabulary, two projections.** The agent in this editor and the AI lanes in CI used to share nothing: the editor did not read the repository's own model configuration, did not know its `.claude/agents` roles, did not attach this extension's MCP server, and defaulted to a model the fleet does not use — so "run this as the content role" was possible in a workflow and impossible at the desk, and the two disagreed about the model without anyone noticing. A harness profile now resolves the repository's roles, skills and model once, in the runner's own precedence (a setting, then `zer0.json`, then the site's AI configuration, then the built-in default), and projects to either an editor run or the equivalent CI invocation. The console can hand you that invocation to paste into a workflow.
+
+The differentiator between the two is the human gate, not a second runner. Which is why the `settingSources` question matters: loading a repository's `.claude/settings.json` means its hooks — command lines, under your credential — apply to a run you started. That is off unless the workspace is trusted *and* you opt in for that run, and the extension's own MCP server is attached with the publish and scaffold flags explicitly removed from the child environment, because an editor run must not inherit whatever armed something else.
+
+## The contract map
+
+This console is one of several tools operating the same fleet, and almost nothing it consumes is its own invention. Each row names who owns a shape, what this repository consumes of it, and where that consumption is pinned so a drift upstream is a failing test rather than a surprise.
+
+| Contract | Owner | What this console consumes | Pinned here |
+|---|---|---|---|
+| `fleet/v1` manifest | `bamr87/wtd`, `docs/FLEET-SPEC.md` | the lanes, their harness, triggers, `*_ENABLED` switch, tokens and guardrails | `src/core/fleet/manifest.ts` keeps its own tolerant parser (a wrong `spec_version` is refused, an unsaid guardrail stays `null` rather than becoming `false`), with a parity test against the package's parser over every committed manifest in the fleet |
+| `@bamr87/fleet-engines` | the hub, `templates/fleet-engines` | workflow facts, the audit rulebook, run metrics, harness health, the hub reader, the roster helpers | one seam, `src/core/fleet/engines.ts`, never re-exported through the barrel; goldens carry the engines version that generated them |
+| the `ai-runner` kit | the hub, `.github/actions/claude-run` and `.github/workflows/ai-lane.yml` | the reusable lane's inputs and the caller template a generated lane is written from | a stamped vendored copy under `media/templates/`, byte-compared against a fixture copy of the hub's, with a drift test on the input list |
+| `wtd fleet adopt` derivation | `bamr87/wtd` | how a workflow becomes a lane: the harness patterns, the switch pick, the token list | a TypeScript port used only to **agree**, never to overwrite a committed manifest; where the two disagree, the console shows a drift row |
+| the front-matter rule ids | `lifehacker.dev`, `scripts/ci/lint_frontmatter.rb` | the names of the audit's findings | the same id strings, one test per rule, so an issue filed from CI and one raised in the editor dedupe against each other |
+| the GitFactory deep link | `bamr87/gitorio` | the roster URL this console hands off to | asserted **parseable by** that app's own parser, not byte-equal to its writer |
+
+**The division of labour.** GitFactory designs and observes in the browser and owns the workflow files it compiles. `wtd` owns deriving a manifest from workflows. The hub owns the runtime, the registry and the engines. This console operates, inside the editor, on files a person already has open. Where those boundaries touch a write, the rule is written down in `src/core/fleet/README.md` and defended by a test.
+
+## What this console will never do
+
+It never merges, approves, closes, or removes a review label. It never reads or writes an Actions secret. It never opens a socket during activation, from the bundled MCP server, or on a timer. It never stores a credential. It never edits a workflow file GitFactory compiled. It never writes a manifest field it derived rather than read. Each of those is a test, not a promise: the fleet plan is data, and two guards assert both that every declared call stays inside this repository's own sub-resources and that no declared call is a merge verb.
+
+## Security: the five execution vectors
+
+Five paths in this extension can start a process, and Workspace Trust is the outer gate on all of them: the content engine, the front-matter normalizer, a `placeholders[].script`, the verify command, and the AI agent. In an untrusted workspace every one refuses — as a result value, never as a thrown exception — and the extension registers no MCP server at all, because that server would inherit the same reach. The bundled MCP server is a separate process and learns trust from its environment: `zer0_contract` refuses unless `ZER0_CMS_MCP_ALLOW_EXEC=1`, which the editor sets only for a trusted workspace and removes otherwise.
+
+The inner gate is different in kind. A cloned repository ships its own `zer0.json`, so anything that arms a write is read from the VS Code settings layer alone and never from the file: publishing, fleet dispatch, and lane scaffolding. A path that resolves outside the workspace root is refused whichever layer supplied it. The `when` clause on a command is the courtesy; the check inside the function is the gate, and it re-reads trust rather than trusting a context key that was set at activation.
+
+## Appendix: the inherited design baseline
+
+Fifteen files in this repository cite a plan document by section number. That document was a design conversation, not a file, and it was never committed — `git log --diff-filter=D` finds no deletion because there was nothing to delete. What those sections actually govern is restated below, from the code, so the citations resolve. Where a number appears, the test that pins it is named, because a number in prose rots and a number in a test cannot.
+
+**The panel's sections** (cited as §3.1). Seven section ids exist — governance, metadata, seo, actions, recent, settings, other — and `zer0Cms.panel.sections` chooses which appear and in what order. Their order in `PANEL_SECTION_IDS` is the render order; each section's collapse state persists under `zer0Cms:Panel:collapse_<id>`, where the absent value means expanded and the string `'false'` means collapsed.
+
+**The dashboard's routes** (cited as §3.2). `DASHBOARD_ROUTES` is the closed set of route ids in display order; `DASHBOARD_TABS` is the subset currently offered, in the same relative order. Rendering passes three gates in this order and no other: no snapshot yet renders a loader with a five-second escape hatch; an uninitialized project or one with no content folders renders Welcome alone, with no tab bar; otherwise the persisted route renders if the host offered it, and degrades to Contents if it did not. A tab the host drops — Distribution without a `.cms/` contract, Fleet with the fleet console off — is absent from `state.tabs`, which is what makes a stale persisted route degrade rather than blank the page.
+
+**The request operations** (cited as §4.3). `RequestOp` is a closed union of named operations the webview may ask the host to perform and await a reply for. It is deliberately not an open channel: a new operation is a new literal, reviewed, and implemented in exactly one host.
+
+**The webview's chrome** (cited as §4.4). `localResourceRoots` is limited to the extension's own `dist/media`; the Content-Security-Policy is `default-src 'none'` with a per-render nonce for script and style, the webview's own source for fonts and images, and no host anywhere in it. Only the route id is templated into the HTML shell — everything else is built as DOM with `textContent`. `enableCommandUris` names exactly two workbench commands, both developer affordances, because `true` would let any anchor in the page invoke any command in the editor.
+
+**The persisted view state** (cited as §4.5). `UI_STATE_KEYS` is the only set of workspace-state keys a webview may write, and a key not in that table is refused rather than written. The seven existing keys keep their historical names verbatim; new keys use the `zer0Cms:Dashboard:<Route>:<Name>` family.
+
+**The contribution surface** (cited as §5.1). Commands, settings, context keys, tree views, routes, request operations and MCP tools are the extension's public API, and each count is asserted by a test rather than described here: the command list in the extension-host suite, the setting ids against the manifest in the same suite, the route registry in its own suite, and the MCP tool list in the stdio suite. Adding to any of them means editing the manifest, the code, the count assertion and the documentation together — which is the point of pinning them.

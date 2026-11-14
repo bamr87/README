@@ -1,0 +1,128 @@
+{
+  "corpus": {
+    "file_count": 117,
+    "fingerprint": "0c8eb2e3394510f0",
+    "path": "docs/vs-sonic-pi",
+    "present": true,
+    "total_bytes": 568705
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Requirements",
+      "Commands, settings and keybindings",
+      "Tutorial",
+      "GitHub Codespaces",
+      "Acknowledgments",
+      "Documentation",
+      "Project structure"
+    ],
+    "readme": "README.md",
+    "summary": "VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.",
+    "title": "Sonic Pi for VS Code"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "docs/PRD.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/vs-sonic-pi.md",
+    "fingerprint": "9891325ca0bbb5c3",
+    "index": "vs-sonic-pi/README.md",
+    "max_depth": 3,
+    "pages": 117,
+    "present": true,
+    "sections": 6,
+    "skipped": 0,
+    "title": "VS Sonic Pi",
+    "top_sections": [
+      {
+        "index": "vs-sonic-pi/docs/README.md",
+        "pages": 24,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 85,
+        "path": "media",
+        "title": "Media",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/vs-sonic-pi.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "vs-sonic-pi",
+    "registry_description": "VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.",
+    "repo": "bamr87/vs-sonic-pi",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/vs-sonic-pi"
+  },
+  "rollups": {
+    "categories": {
+      "vs-sonic-pi": 117
+    },
+    "code_languages": [
+      "plaintext",
+      "typescript",
+      "ruby",
+      "bash",
+      "jsonc",
+      "markdown",
+      "json",
+      "cpp"
+    ],
+    "indexed_documents": 117,
+    "top_tags": [],
+    "total_words": 82830
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 85,
+        "name": "media"
+      },
+      {
+        "doc_count": 24,
+        "name": "docs"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

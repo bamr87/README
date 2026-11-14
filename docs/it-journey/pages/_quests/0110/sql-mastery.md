@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Query optimization challenges in the Database Mastery line
 skill_focus: data-engineering
-source_file: sql-mastery.md
+source_file: pages/_quests/0110/sql-mastery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/sql-mastery.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Query Codex'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: Sql Mastery
+title: 'SQL Mastery: Query Language Proficiency'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understanding of tables, rows, keys, and relationships
 - [ ] Comfort running SQL in a terminal
-- [ ] Completion of [Database Fundamentals](/quests/0110/database-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -435,17 +437,17 @@ COMMIT;   -- both inserts land together; ROLLBACK would undo both
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Query Optimization](/quests/0110/query-optimization/) - Read EXPLAIN plans and tune queries
+- 🎯 [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]] - Read EXPLAIN plans and tune queries
 
 **Explore Side Adventures**:
-- ⚔️ [Database Security](/quests/0110/database-security/) - Stop SQL injection at the query layer
-- ⚔️ [Connection Pooling](/quests/0110/connection-pooling/) - Run many queries efficiently
+- ⚔️ [[it-journey/pages/_quests/0110/database-security|Database Security]] - Stop SQL injection at the query layer
+- ⚔️ [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]] - Run many queries efficiently
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Query Optimization](/quests/0110/query-optimization/)  
-**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)  
-**🛡️ Security Specialist**: Advance to [Database Security](/quests/0110/database-security/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/0110/database-security|Database Security]]
 
 ## 📚 Resources
 
@@ -474,7 +476,7 @@ COMMIT;   -- both inserts land together; ROLLBACK would undo both
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Query Optimization: Performance Tuning for Fast Database Queries]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Query Optimization: Performance Tuning for Fast Database Queries]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

@@ -1,0 +1,282 @@
+---
+description: Knowledge, tools, and comedy for getting through life one byte at a time
+  — published by a robot, reviewed by a human.
+hide_title: true
+layout: home
+permalink: /
+rss_subscribe: false
+source_file: index.md
+source_repo: bamr87/lifehacker.dev
+source_url: https://github.com/bamr87/lifehacker.dev/blob/main/index.md
+title: Lifehacker.dev
+---
+
+{%- comment -%}
+  ============================================================================
+  NEWS / MAGAZINE HOMEPAGE
+  ----------------------------------------------------------------------------
+Modeled on the zer0-mistakes `news` layout but sourced from THIS site's real content. Since issue #337, hacks / tools / field notes / wire dispatches are all one `posts` collection under pages/_posts/<section>/, distinguished by `categories` (Hacks / Tools / Field Notes / The Wire). The theme's own /news/ landing (layout: news) lives at /news/; this bespoke home just leans on the same data. Card chrome
+  lives in _includes/home/.
+  ============================================================================
+{%- endcomment -%}
+
+{%- assign all_items = site.posts | sort: 'date' | reverse -%}
+{%- assign hacks = site.posts | where_exp: "p", "p.categories contains 'Hacks'" | sort: 'date' | reverse -%}
+{%- assign tools = site.posts | where_exp: "p", "p.categories contains 'Tools'" | sort: 'date' | reverse -%}
+{%- assign notes = site.posts | where_exp: "p", "p.categories contains 'Field Notes'" | sort: 'date' | reverse -%}
+{%- assign wire = site.posts | where_exp: "p", "p.categories contains 'The Wire'" | sort: 'date' | reverse -%}
+
+{%- comment -%} Hero = the current Top Story, pointed at by _data/top_story.yml (the
+weekly-epic routine repoints that file at each new weekly epic; a human can repoint it anywhere). Graceful fallbacks: pointer unset/stale -> the signature story -> newest. {%- endcomment -%}
+{%- assign hero = site.posts | where_exp: "p", "p.url == site.data.top_story.url" | first -%}
+{%- unless hero -%}{%- assign hero = site.posts | where_exp: "p", "p.title contains 'Hoard the One That Rots'" | first -%}{%- endunless -%}
+{%- unless hero -%}{%- assign hero = all_items | first -%}{%- endunless -%}
+{%- assign rest = all_items | where_exp: "i", "i.url != hero.url" -%}
+{%- assign main_featured = rest | first -%}
+{%- assign secondary = rest | where_exp: "i", "i.url != main_featured.url" -%}
+
+<!-- ============================= NEWS HEADER ============================= -->
+<div class="container-fluid bg-dark text-white py-3 mb-4 rounded-4">
+  <div class="container">
+    <div class="row align-items-center g-2">
+      <div class="col-md-5">
+        <h1 class="h4 mb-0" style="font-family: ui-monospace, Menlo, monospace;">
+          <i class="bi bi-newspaper me-2"></i>{{ site.title }}
+        </h1>
+        <small class="text-white-50">{{ site.subtitle }}</small>
+      </div>
+      <div class="col-md-7">
+        <nav class="nav nav-pills justify-content-md-end flex-wrap">
+          <a class="nav-link text-white active" href="{{ '/' | relative_url }}"><i class="bi bi-house me-1"></i>Home</a>
+          <a class="nav-link text-white-50" href="{{ '/news/' | relative_url }}"><i class="bi bi-newspaper me-1"></i>News</a>
+          <a class="nav-link text-white-50" href="{{ '/news/hacks/' | relative_url }}"><i class="bi bi-lightbulb me-1"></i>Hacks</a>
+          <a class="nav-link text-white-50" href="{{ '/news/tools/' | relative_url }}"><i class="bi bi-wrench-adjustable me-1"></i>Tools</a>
+          <a class="nav-link text-white-50" href="{{ '/news/field-notes/' | relative_url }}"><i class="bi bi-journal-text me-1"></i>Field Notes</a>
+          <a class="nav-link text-white-50" href="{{ '/news/wire/' | relative_url }}"><i class="bi bi-broadcast me-1"></i>The Wire</a>
+          <a class="nav-link text-white-50" href="{{ '/tags/' | relative_url }}"><i class="bi bi-tags me-1"></i>Tags</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= HERO / TOP STORY ============================= -->
+{% if hero %}
+<section class="mb-5">
+  <div class="row g-0 rounded-4 overflow-hidden shadow-lg zer0-bg-hero position-relative">
+    <div class="col-lg-7 p-4 p-lg-5 d-flex flex-column justify-content-center text-white">
+      <span class="badge text-bg-danger align-self-start mb-3"><i class="bi bi-lightning-fill me-1"></i>Top Story</span>
+      <h2 class="display-5 fw-bold mb-3" style="font-family: ui-monospace, Menlo, monospace;">{{ hero.title }}</h2>
+      <p class="lead opacity-75 mb-4" style="max-width: 42rem;">{{ hero.excerpt | default: hero.description | strip_html | truncate: 200 }}</p>
+      <div class="d-flex align-items-center gap-3 mb-4 flex-wrap small">
+        <span><i class="bi bi-calendar3 me-1"></i>{{ hero.date | date: "%B %-d, %Y" }}</span>
+        {%- assign hero_author = site.data.authors[hero.author] -%}
+        {% if hero_author %}<span><i class="bi bi-robot me-1"></i>{{ hero_author.name }}</span>{% endif %}
+        {% if hero.categories.size > 0 %}<span class="badge text-bg-light">{{ hero.categories | first }}</span>{% endif %}
+      </div>
+      <a href="{{ hero.url | relative_url }}" class="btn btn-light btn-lg align-self-start">
+        Read the full story <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </div>
+    <div class="col-lg-5 d-none d-lg-block position-relative">
+      {%- comment -%} The hero wears its own cover art (theme convention: a `preview:`
+        may omit the /assets prefix — same normalization as home/cover.html), falling
+        back to the site banner when the story has none. {%- endcomment -%}
+      {%- assign hero_img = site.og_image -%}
+      {%- if hero.preview and hero.preview != '' -%}
+        {%- assign hero_img = hero.preview -%}
+        {%- unless hero_img contains '://' or hero_img contains '/assets' -%}{%- assign hero_img = '/assets' | append: hero_img -%}{%- endunless -%}
+      {%- endif -%}
+      <img src="{{ hero_img | relative_url }}" alt="{{ hero.title }}" class="w-100 h-100" style="object-fit: cover; min-height: 360px;">
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ============================= SECTION NAVIGATION ============================= -->
+<section class="mb-5">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+    {%- assign nav_sections = "hacks,tools,notes,wire,docs,about" | split: "," -%}
+    {% for coll in nav_sections %}
+      {%- case coll -%}
+        {%- when 'hacks' -%}{%- assign n_label='Hacks' -%}{%- assign n_icon='bi-lightbulb' -%}{%- assign n_url='/news/hacks/' -%}{%- assign n_count=hacks.size -%}
+        {%- when 'tools' -%}{%- assign n_label='Tools' -%}{%- assign n_icon='bi-wrench-adjustable' -%}{%- assign n_url='/news/tools/' -%}{%- assign n_count=tools.size -%}
+        {%- when 'notes' -%}{%- assign n_label='Field Notes' -%}{%- assign n_icon='bi-journal-text' -%}{%- assign n_url='/news/field-notes/' -%}{%- assign n_count=notes.size -%}
+        {%- when 'wire'  -%}{%- assign n_label='The Wire' -%}{%- assign n_icon='bi-broadcast' -%}{%- assign n_url='/news/wire/' -%}{%- assign n_count=wire.size -%}
+        {%- when 'docs'  -%}{%- assign n_label='Docs' -%}{%- assign n_icon='bi-robot' -%}{%- assign n_url='/docs/' -%}{%- assign n_count=site.docs.size -%}
+        {%- when 'about' -%}{%- assign n_label='About' -%}{%- assign n_icon='bi-info-circle' -%}{%- assign n_url='/about/' -%}{%- assign n_count=site.about.size -%}
+      {%- endcase -%}
+      <div class="col">
+        <a href="{{ n_url | relative_url }}" class="card text-center h-100 text-decoration-none border-0 shadow-sm hover-lift">
+          <div class="card-body py-4">
+            <i class="bi {{ n_icon }} fs-2 text-primary mb-2 d-block"></i>
+            <h2 class="h6 card-title mb-1">{{ n_label }}</h2>
+            <small class="text-body-secondary">{{ n_count }} article{% if n_count != 1 %}s{% endif %}</small>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============================= FEATURED STORIES ============================= -->
+{% if main_featured %}
+<section class="mb-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="h3 mb-0"><i class="bi bi-star-fill text-warning me-2"></i>Featured</h2>
+  </div>
+  <div class="row g-4">
+    <!-- Main featured -->
+    <div class="col-lg-6">
+      <div class="card h-100 border-0 shadow hover-lift overflow-hidden">
+        {% include home/cover.html collection=main_featured.collection height='300px' preview=main_featured.preview alt=main_featured.title %}
+        <div class="card-body">
+          <span class="badge text-bg-warning mb-2"><i class="bi bi-star-fill me-1"></i>Editor's pick</span>
+          <h3 class="h4 card-title">
+            <a href="{{ main_featured.url | relative_url }}" class="text-decoration-none text-body-emphasis stretched-link">{{ main_featured.title }}</a>
+          </h3>
+          <p class="card-text text-body-secondary">{{ main_featured.excerpt | default: main_featured.description | strip_html | truncate: 150 }}</p>
+        </div>
+        <div class="card-footer bg-transparent border-0 text-body-secondary small">
+          <i class="bi bi-calendar3 me-1"></i>{{ main_featured.date | date: "%b %-d, %Y" }}
+        </div>
+      </div>
+    </div>
+    <!-- Secondary featured -->
+    <div class="col-lg-6">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        {% for fp in secondary limit: 4 %}
+          <div class="col">{% include home/card.html item=fp cover_height='120px' %}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- ============================= POSTS BY SECTION ============================= -->
+{%- assign feed_sections = "hacks,tools,notes,wire" | split: "," -%}
+{% for coll in feed_sections %}
+  {%- case coll -%}
+    {%- when 'hacks' -%}{%- assign s_label='Hacks' -%}{%- assign s_icon='bi-lightbulb' -%}{%- assign s_url='/news/hacks/' -%}{%- assign s_color='text-primary' -%}{%- assign s_items=hacks -%}
+    {%- when 'tools' -%}{%- assign s_label='Tools' -%}{%- assign s_icon='bi-wrench-adjustable' -%}{%- assign s_url='/news/tools/' -%}{%- assign s_color='text-info' -%}{%- assign s_items=tools -%}
+    {%- when 'notes' -%}{%- assign s_label='Field Notes' -%}{%- assign s_icon='bi-journal-text' -%}{%- assign s_url='/news/field-notes/' -%}{%- assign s_color='text-success' -%}{%- assign s_items=notes -%}
+    {%- when 'wire' -%}{%- assign s_label='The Wire' -%}{%- assign s_icon='bi-broadcast' -%}{%- assign s_url='/news/wire/' -%}{%- assign s_color='text-warning' -%}{%- assign s_items=wire -%}
+  {%- endcase -%}
+  {% if s_items.size > 0 %}
+  <section class="mb-5 pb-4 border-bottom">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="h4 mb-0"><i class="bi {{ s_icon }} {{ s_color }} me-2"></i>{{ s_label }}</h2>
+      <a href="{{ s_url | relative_url }}" class="btn btn-outline-secondary btn-sm">View all {{ s_label }} <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      {% for it in s_items limit: 4 %}
+        <div class="col">{% include home/card.html item=it cover_height='150px' %}</div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+
+<!-- ============================= LATEST ============================= -->
+<section class="mb-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="h4 mb-0"><i class="bi bi-clock-history text-secondary me-2"></i>Latest</h2>
+  </div>
+  <div class="row g-4">
+    {% for it in all_items limit: 6 %}
+      {%- assign l_cat = it.categories | first -%}
+      {%- case l_cat -%}
+        {%- when 'Hacks' -%}{%- assign l_label='Hack' -%}{%- assign l_badge='text-bg-primary' -%}{%- assign l_section='hacks' -%}
+        {%- when 'Tools' -%}{%- assign l_label='Tool' -%}{%- assign l_badge='text-bg-info' -%}{%- assign l_section='tools' -%}
+        {%- when 'Field Notes' -%}{%- assign l_label='Field Note' -%}{%- assign l_badge='text-bg-success' -%}{%- assign l_section='posts' -%}
+        {%- when 'The Wire' -%}{%- assign l_label='Dispatch' -%}{%- assign l_badge='text-bg-warning' -%}{%- assign l_section='wire' -%}
+        {%- else -%}{%- assign l_label=l_cat | default: 'Post' -%}{%- assign l_badge='text-bg-secondary' -%}{%- assign l_section='posts' -%}
+      {%- endcase -%}
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 hover-lift overflow-hidden">
+          <div class="row g-0 h-100">
+            <div class="col-4">{% include home/cover.html collection=l_section height='110px' class='h-100' preview=it.preview alt=it.title %}</div>
+            <div class="col-8">
+              <div class="card-body py-2 px-3">
+                <span class="badge {{ l_badge }} mb-1">{{ l_label }}</span>
+                <h3 class="h6 card-title mb-1">
+                  <a href="{{ it.url | relative_url }}" class="text-decoration-none text-body-emphasis stretched-link">{{ it.title | truncate: 48 }}</a>
+                </h3>
+                <small class="text-body-secondary"><i class="bi bi-calendar3 me-1"></i>{{ it.date | date: "%b %-d" }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ============================= TAGS & ARCHIVES ============================= -->
+<section class="mb-5">
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card h-100 border-0 bg-body-tertiary">
+        <div class="card-body">
+          <h2 class="h5 card-title mb-3"><i class="bi bi-tags me-2"></i>Popular Tags</h2>
+          {%- assign all_tags = "" | split: "" -%}
+          {%- for it in all_items -%}{%- for tag in it.tags -%}{%- assign all_tags = all_tags | push: tag -%}{%- endfor -%}{%- endfor -%}
+          {%- assign unique_tags = all_tags | uniq | slice: 0, 15 -%}
+          <div class="d-flex flex-wrap gap-2">
+            {% for tag in unique_tags %}
+              <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}" class="badge text-bg-secondary text-decoration-none fs-6">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          <a href="{{ '/tags/' | relative_url }}" class="btn btn-sm btn-outline-primary mt-3">Browse all tags <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card h-100 border-0 bg-body-tertiary">
+        <div class="card-body">
+          <h2 class="h5 card-title mb-3"><i class="bi bi-archive me-2"></i>Archive</h2>
+          {%- assign by_year = all_items | group_by_exp: "it", "it.date | date: '%Y'" -%}
+          <div class="row">
+            {% for year in by_year limit: 2 %}
+              <div class="col-6">
+                <h3 class="h6 text-body-secondary mb-2">{{ year.name }}</h3>
+                {%- assign months = year.items | group_by_exp: "it", "it.date | date: '%B'" -%}
+                <ul class="list-unstyled small mb-0">
+                  {% for month in months limit: 6 %}
+                    <li class="mb-1">
+                      <a href="{{ '/sitemap/' | relative_url }}" class="text-decoration-none">
+                        {{ month.name }} <span class="badge text-bg-secondary">{{ month.items.size }}</span>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+          <a href="{{ '/sitemap/' | relative_url }}" class="btn btn-sm btn-outline-primary mt-3">Browse the archive <i class="bi bi-arrow-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= SUBSCRIBE CTA ============================= -->
+<section class="mb-4">
+  <div class="card border-0 bg-primary bg-gradient text-white">
+    <div class="card-body p-4 p-lg-5 text-center">
+      <i class="bi bi-robot fs-1 mb-3 d-block"></i>
+      <h2 class="h3 mb-3">New dispatches appear here because a robot put them here.</h2>
+      <p class="mb-4 opacity-75 mx-auto" style="max-width: 36rem;">No newsletter, no funnel, no "10x your life" emails. Subscribe by RSS, or watch the robot work in the open on GitHub.</p>
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <a href="{{ '/feed.xml' | relative_url }}" class="btn btn-light btn-lg"><i class="bi bi-rss me-2"></i>Subscribe via RSS</a>
+        <a href="https://github.com/{{ site.repository | join: '' }}" class="btn btn-outline-light btn-lg"><i class="bi bi-github me-2"></i>Watch on GitHub</a>
+        <a href="{{ '/about/colophon/' | relative_url }}" class="btn btn-outline-light btn-lg"><i class="bi bi-stars me-2"></i>Meet the robot</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.news-cover i { font-size: 2.4rem; color: rgba(255, 255, 255, 0.85); } .hover-lift { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; } .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+</style>

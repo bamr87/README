@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 10
-source_file: semtex10.md
+source_file: wargames/semtex/semtex10.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex10.md
 title: Semtex10
 ---
 Hacking szene

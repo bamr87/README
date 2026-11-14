@@ -19,7 +19,9 @@ permalink: /quests/1101/
 preview: /images/previews/level-1101-machine-learning-ai.webp
 sidebar:
   nav: quests
-source_file: README.md
+source_file: pages/_quests/1101/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/README.md
 tags:
 - machine-learning
 - ai
@@ -28,7 +30,7 @@ tags:
 - data-science
 - nlp
 - computer-vision
-title: '⚡ Level 1101: Machine Learning & AI'
+title: 'Level 1101: Machine Learning & AI'
 toc: true
 toc_sticky: true
 ---
@@ -161,7 +163,7 @@ To advance to Level 1110 (Architecture & Design), you must:
 
 - [Level 1100: Data Engineering](../1100/)
 - [Level 1110: Architecture & Design](../1110/)
-- [Data Scientist Path](/quests/#-data-scientist-path)
+- [[it-journey/pages/_quests/README#-data-scientist-path|Data Scientist Path]]
 
 ---
 
@@ -175,12 +177,12 @@ To advance to Level 1110 (Architecture & Design), you must:
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
 | AI Ethics and Responsible AI: Bias Detection, Fairness & Governance | 🟡 Medium | 2-3 hours | side_quest | 🔮 Placeholder |
-| [Computer Vision Mastery: Image Classification, Object Detection & Segmentation](/quests/1101/computer-vision/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation](/quests/1101/deep-learning-frameworks/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn](/quests/1101/ml-fundamentals/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [MLOps Engineering: CI/CD Pipelines for Machine Learning Production](/quests/1101/mlops/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Natural Language Processing: Text Analysis, Transformers & LLMs with Python](/quests/1101/natural-language-processing/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch](/quests/1101/neural-networks/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
-| [Python for Data Science: NumPy, Pandas & Matplotlib Complete Guide](/quests/1101/python-data-science/) | 🟡 Medium | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/computer-vision\|Computer Vision Mastery: Image Classification, Object Detection & Segmentation]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/deep-learning-frameworks\|Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/ml-fundamentals\|Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/mlops\|MLOps Engineering: CI/CD Pipelines for Machine Learning Production]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/natural-language-processing\|Natural Language Processing: Text Analysis, Transformers & LLMs with Python]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/neural-networks\|Neural Networks Deep Dive: Build CNNs, RNNs & Transformers from Scratch]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1101/python-data-science\|Python for Data Science: NumPy, Pandas & Matplotlib Complete Guide]] | 🟡 Medium | 4-5 hours | main_quest | 🔮 Placeholder |
 
 

@@ -3,9 +3,12 @@ description: Interactive Jupyter notebooks with tutorials and data analysis exam
 lastmod: 2026-04-18 19:30:20+00:00
 layout: default
 permalink: /notebooks/
-source_file: notebooks.md
+source_file: pages/notebooks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/notebooks.md
 title: Notebooks
 ---
+
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">

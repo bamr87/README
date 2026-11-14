@@ -205,6 +205,10 @@ def build_site_index(registry: Registry, facts_by_name: Dict[str, Dict]) -> str:
         "The left sidebar mirrors each corpus's own folder hierarchy — see the"
         " [content map](browse/index.md) to browse any project in full.",
         "",
+        "To see how it all connects, open the [Second Brain](brain/index.md): the"
+        " [graph](brain/graph.md), [concepts that span repositories](brain/index.md#concepts)"
+        " and [what changed lately](brain/hot.md). Press `Ctrl+O` anywhere to jump to a note.",
+        "",
         "## Documentation by project",
         "",
     ]
@@ -267,6 +271,7 @@ def build_context_schema() -> str:
         "| `index/` | dir | Query layer - context_index.json + manifest.json | generated |",
         "| `reports/` | dir | Analysis reports - fleet documentation health and the fleet documentation review | generated |",
         "| `sources/` | dir | Source manifests, one per surveyed repository | generated |",
+        "| `vault/` | dir | The note graph, crawl manifest, change log and cached AI summaries | generated |",
         "",
         "## Forbidden",
         "",

@@ -6,15 +6,18 @@ categories:
 date: 2026-07-22 00:00:00+00:00
 description: How the oneline prose rule is enforced everywhere — CI backstop, hub
   auto-fix, the shared AI runner, a Claude Code hook, and a pre-commit hook.
-source_file: prose-oneline-universal.md
+source_file: docs/prose-oneline-universal.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/prose-oneline-universal.md
 tags:
 - ci
 - prose
 - markdown
 - agents
 - hooks
-title: Prose Oneline Universal
+title: Making one-paragraph-per-line universal across repos
 ---
+
 ## The problem
 
 AI agents (and humans) soft-wrap markdown prose at ~80 cols by habit. The house rule is **one paragraph per line**, enforced by the `markdown-oneline` CI gate (`tools/unwrap-prose.py --check`). Wrapped prose fails the gate — e.g. the `quest-fix` PR #534. The check is already fanned out to every repo; what was missing is *enforcement at the source* so agents stop producing it and PRs stop going red.

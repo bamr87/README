@@ -14,12 +14,14 @@ objectives:
     all:
     - command: pwd
     - cwd_includes: /lab/navigator
-source_file: 01-where-am-i.md
+source_file: courses/navigator/01-where-am-i.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/navigator/01-where-am-i.md
 teaches:
 - pwd
 - cd
 - absolute paths
-title: 01 Where Am I
+title: Where am I?
 xp: 20
 ---
 A shell always has a **current working directory**: the directory your commands act on unless you name another one.

@@ -1,0 +1,106 @@
+---
+source_file: docs/CICD.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/docs/CICD.md
+title: SDLC / CI
+---
+# SDLC / CI
+
+> Every workflow and what its green means, the reusable doctor, the commands to run before a PR, and the specs CI actually pins.
+
+Every project in this repository is gated on its own terms: the VS Code extension (`src/`), the platform (`content/`) and its studio (`web/`), and the image generator, books app, sites and the parodynews and aieo apps imported under `packages/`, `sites/` and `apps/`. The zer0-mistakes theme the sites build with is gated in its own repository ([ADR 0005](adr/0005-theme-goes-home.md)). Each has one root workflow filtered to its own tree (named in its `ci:` entry in `workspace.yml`), and `zer0-workspace.yml` checks on every pull request that the registry and the tree still agree ([`MONOREPO.md`](MONOREPO.md)). `main` is not branch-protected and no check is required; still never push to it — branch and open a PR. Every workflow here declares `permissions: contents: read` at the top (a job widens it only where it must write) and a `concurrency` group — except the called `zer0-linkedin.yml` and `zer0-x.yml`, which declare no permissions so that their caller's grant applies (`contents: write` to publish or read statistics, `contents: read` to check a token), and set their concurrency per job.
+
+## The workflows
+
+| Workflow | Runs on | What green means |
+|---|---|---|
+| `extension.yml` | PR and push to `main`, unless every changed file is under `packages/**`, `sites/**`, `apps/**`, `content/**`, `web/studio/**`, `web/site/**` or the content plane's schemas (`schemas/{events,graphql,content,books}/**`), or is `docker-compose.yml` — a change to `web/packages/**` or web's lockfile runs it, because `dist/studio.js` is built from them (PLAN G10) | `npm ci` (whose postinstall installs `web/` from its lockfile), type-check, lint, the six bundles, the VS Code test host under `xvfb-run`, `tools/check-config-docs.py`, `vsce package`, and the packaged file list diffed against `.vsix-manifest.txt`; the vsix is uploaded as an artifact named by commit |
+| `content.yml` | PR and push to `main` touching `content/**`, `schemas/events/**`, `schemas/graphql/**`, `schemas/content/**`, `schemas/openapi/**` or the workflow | Two jobs, both inside `content/`. **sqlite** (Python 3.12 and 3.13): ruff lint and format, `makemigrations --check`, the full pytest suite (including the byte-for-byte round trips of zer0-pages and of the theme's docs site, checked out at a pinned tag into `.cache/zer0-mistakes` — that case skips where the checkout is absent), the committed GraphQL SDL, agent schema and OpenAPI document unchanged, and every agent's eval suite on the recorded models (`run_evals --all --recorded`). **postgres**: the fast tier against `pgvector/pgvector:pg16` and `redis:7`, where the vector column, `<=>` kNN and `SKIP LOCKED` are real. No job calls a model provider |
+| `web.yml` | PR and push to `main` touching `web/**`, `schemas/openapi/**` or the workflow | Inside `web/` on Node 24: `npm ci` (the committed lockfile), ESLint (including the gate that keeps `@zer0/ui` free of routers, transports and page globals), `tsc --noEmit`, the Vitest suites, `npm run check:api` (the generated client regenerated from the committed OpenAPI document must equal `packages/api/src/schema.d.ts`) and the studio's production build |
+| `zer0-image-generator.yml` | PR and push to `main` touching `packages/zer0-image-generator/**` or the workflow | The package's old `test.yml`, run inside the package: the Python engine's unit tests on 3.9 and 3.12, the Ruby port's byte-identity tests against it, a gem build that must contain the engine and the rasterizer helper, and the fixture site's `jekyll preview-images` run with the deterministic `local` provider (real PNGs, idempotent second run) |
+| `zer0-pages.yml` | PR and push to `main` touching `sites/zer0-pages/**`, `workspace.yml`, the workspace tool, the Jekyll-theme option (`tools/jekyll_theme.py`, `tools/jekyll/**`, `tools/obsidian/**`), the bridge's tests or the workflow | The Python Obsidian bridge's, graph index's and vault reader's tests (`tools/tests/test_obsidian_bridge.py`, `test_graph_index.py`, `test_obsidian_vault.py`, which replaced the site's minitest suites), its SCHEMA.md pyramid lint (`tools/schema_lint.py check .`) and the site's `build` task — the Jekyll-theme option, the theme at its pinned tag, the jekyll-4 server in Docker (its image built from `tools/jekyll/Dockerfile` with the GitHub Actions cache), no Ruby (PLAN P-D7) |
+| `zer0-workspace.yml` | every PR and push to `main` | On Python 3.13 with PyYAML and jsonschema and the full history: the workspace tool's tests (`python -m unittest discover tools/workspace`, including the golden replay of its Ruby predecessor on a commit of that history), then `bin/zer0 check` (every directory under `packages/`, `sites/`, `apps/` registered; paths, workflows, Pages routes and vendored copies consistent), then the ADR 0006 absorption gate (`tools/tests` and `tools/check_absorption.py --report`); writes the affected projects and a report-only `bin/zer0 doctor` of every site to the job summary (the platform's doctor, Python since PLAN G4: nothing here installs Ruby) |
+| `pages.yml` | PR and push to `main` touching `sites/**`, `apps/parodynews/src/pages/**`, `workspace.yml`, the workspace tool (`bin/zer0`, `tools/workspace/**`), `tools/site_manifest.py`, the Jekyll-theme option (`tools/jekyll_theme.py`, `tools/jekyll/**`, `tools/obsidian/**`), `web/site/fixtures/**` or the workflow; `workflow_dispatch` (input `check`) | The one Pages deploy (ADR 0002 §4 as amended by ADR 0005, PLAN C4): `bin/zer0 routes --json` plans a matrix (Python and PyYAML), each routed site runs its own `pages` task with a generated config setting only `url`/`baseurl` for its route (in UTC) — for a site on the Jekyll-theme option (PLAN P2) that is `tools/jekyll_theme.py`, which builds it with the Jekyll server its `render:` setting names in Docker (GitHub Pages' own builder, or the jekyll-4 image, built from `tools/jekyll/Dockerfile` by `docker/build-push-action` with the GitHub Actions cache) and reports what it resolved; no leg installs Ruby since zer0-pages moved to the option (PLAN P-D7) — must produce an `index.html`, and is warned on a Liquid warning; then `tools/site_manifest.py` records what it wrote and compares it with the site's recorded Jekyll build (`web/site/fixtures/<site>/manifest.json`, PLAN P1, [`web/site/fixtures/README.md`](../web/site/fixtures/README.md)) — the fresh recording is uploaded as the `site-manifest-<site>` artifact (commit it to re-record) and a difference is listed in the job summary; on a pull request a site on the Jekyll-theme option fails on a difference (the option reproduces its recording exactly, so the same pull request re-records an intended change), a push to `main` only warns (a difference never blocks a deploy), and a dispatch with `check: true` fails on any; the parts are stitched into one artifact. PRs deploy nothing; a push to `main` deploys only while `vars.PAGES_DEPLOY_ENABLED` is `true`; the default target is this repository's project site (`vars.PAGES_URL`, `PAGES_BASE_PATH` aim it elsewhere) |
+| `sites.yml` | PR and push to `main` touching `sites/zer0-pages-remote/**`, `sites/zer0-demo-cookbook/**`, `sites/zer0-demo-garden/**`, `sites/2005/**`, `sites/wargames/**`, `workspace.yml`, the workspace tool, the Jekyll-theme option (`tools/jekyll_theme.py`, `tools/jekyll/**`, `tools/obsidian/**`), `tools/site_manifest.py`, `web/site/fixtures/2005/**` or the workflow | Each changed site's `build` task (a matrix planned by `bin/zer0 affected`; every site when `workspace.yml`, the workspace tool, the option, the comparison or the 2005 recording changes): the Jekyll-theme option with the site's own `url` and `baseurl`, no Ruby; 2005, which nothing routes, is also compared with its recording — a difference fails, and the fresh recording is uploaded as `site-manifest-2005` to commit when the change is intended |
+| `parodynews.yml` | PR and push to `main` touching `apps/parodynews/**` or the workflow | Django pre-checks and pytest on Python 3.10–3.12 against PostgreSQL, the frontend typecheck, Vitest and build, and lint, dependency-scan and quality analysis — all through the app's own `.github/scripts/*.sh` |
+| `aieo.yml` | PR and push to `main` touching `apps/aieo/**` or the workflow | The app's own `ci.yml`, ported: the FastAPI backend's pytest against PostgreSQL 15 and Redis 7, the React frontend's eslint, smoke test and Vite build, and black + ruff (mypy advisory) over the backend |
+| `irony-works.yml` | PR and push to `main` touching `sites/irony-works/**`, `workspace.yml`, the workspace tool, the Jekyll-theme option, `tools/site_manifest.py`, `web/site/fixtures/irony-works/**` or the workflow | The build half of the site's `publish.yml` through the Jekyll-theme option: its `build` task installs js-yaml at the version its recording publishes, renders the previews and transplants the vault into `_entries/` on a copy of the site, then builds it with GitHub Pages' own builder (the image `actions/jekyll-build-pages` runs) in Docker; the build is compared with its recording — a difference fails, and the fresh recording is uploaded as `site-manifest-irony-works`; nothing is deployed |
+| `books.yml` | PR and push to `main` touching `packages/books/**` or the workflow | The bookshelf app's `pytest` and `ruff check src tests` on Python 3.10 and 3.12 |
+| `drsai.yml` | PR and push to `main` touching `sites/drsai/**`, `workspace.yml`, the workspace tool, the Jekyll-theme option or the workflow | The story engine's ruff, black and pytest on Python 3.10–3.12; `tools/import_abc_book.py --check` and the prose gate; and the site's `build` task — the Jekyll-theme option, the theme at its pinned tag, GitHub Pages' own builder in Docker, no Ruby (the theme cannot move under it, so there is no weekly run) |
+| `zer0-doctor.yml` | `workflow_call` from a content repository; `workflow_dispatch` here | The zer0 stack consumer contract check on the caller's site (below); fails only when asked to |
+| `zer0-linkedin.yml` | `workflow_call` from a content repository | Optional, beside the platform's channels: the LinkedIn distribution lane on the caller's site at its branch tip — the platform's `manage.py linkedin` on Python 3.13, which opens no database: `publish` (a rehearsal, or live with `ZER0_LINKEDIN_PUBLISH=1` set for that one step; `ZER0_LINKEDIN_MERGED=1` on the default branch), `status` (fails on a dead token or one within `warn-days` of expiry) or `stats`; commits the ledger, the queue and `performance.json` back with `[skip ci]` and uploads them as `zer0-linkedin-results`; skips with a notice when the caller has no LinkedIn credential. Contract: [`DISTRIBUTION.md`](DISTRIBUTION.md#ci-the-reusable-workflow) |
+| `zer0-x.yml` | `workflow_call` from a content repository | Optional, beside the platform's channels: the X distribution lane on the caller's site at its branch tip — the platform's `manage.py x` on Python 3.13, which opens no database: `publish` (a rehearsal, or live with `ZER0_X_PUBLISH=1` set for that one step; `ZER0_X_MERGED=1` on the default branch) or `status` (fails when the keys are rejected or post as another account than `distribution.x.account`); commits the ledger and the queue back with `[skip ci]` and uploads them as `zer0-x-results`; skips with a notice unless the caller passes all four X secrets. Contract: [`DISTRIBUTION.md`](DISTRIBUTION.md#x) |
+| `ci.yml` | every PR and push to `main` | The hub's shared `standard-ci.yml` (a thin caller; the logic lives in bamr87/bamr87) |
+| `markdown-oneline.yml` | PR and push to `main` touching markdown | On a same-repo PR it runs `tools/unwrap-prose.py --write` (skipping `SCHEMA.md` and `CHANGELOG.md`) and pushes the repair to the PR branch; on a fork PR or a push to `main` it fails with the fix command instead |
+| `codeql-analysis.yml` | push and PR to `main`, weekly (Fridays 14:24 UTC) | CodeQL over `javascript-typescript` and `ruby`, both `build-mode: none` |
+| `release.yml` | push to `main` | The hub's release-please workflow maintains the release PR; when that PR merges, the repo-owned `marketplace` job packages the vsix at the tag, attaches it to the GitHub Release, and publishes to the Marketplace and Open VSX when their tokens exist (see [`RELEASING.md`](RELEASING.md)) |
+| `claude.yml` | `@claude` in an issue, comment or review | The mention handler (`anthropics/claude-code-action@v1`), one run per thread; it never merges |
+
+A change to `src/` runs `extension.yml`; a change to `content/` runs `content.yml` alone; a change to `web/studio/` or `web/site/` runs `web.yml` alone, a change to `web/packages/` runs `web.yml` and `extension.yml` (the extension's studio webviews are built from those packages), and a change to the OpenAPI document runs both `content.yml` and `web.yml`, because the studio's client is generated from it.
+
+Nothing in CI builds the Docker image: the platform's image is verified by hand before a change to `content/Dockerfile` or `docker-compose.yml` merges (the commands are below).
+
+## The reusable doctor
+
+`zer0-doctor.yml` is how a content repository runs `zer0 doctor` (the consumer contract, [`ZER0-STACK.md`](ZER0-STACK.md)) without vendoring anything:
+
+```yaml
+jobs:
+  doctor:
+    uses: bamr87/zer0-CMS/.github/workflows/zer0-doctor.yml@main
+    with:
+      site-path: "."          # the Jekyll root, relative to the caller repository
+      fail-on-error: false    # report-only unless set
+```
+
+It checks out the caller repository and `bamr87/zer0-CMS` at `main` side by side, runs `python -m sites.doctor <site> --format findings` from zer0-CMS's `content/` on Python 3.13 with PyYAML and jsonschema (the doctor needs no Django), writes a job summary — errors and non-content warnings as a table, content warnings counted per rule — and uploads the findings JSONL as the `zer0-doctor-findings` artifact. The job fails only when `fail-on-error` is true and the doctor reported an error, or when `site-path` is absolute, climbs out of the checkout, or is not a directory. The content repositories' callers run it on `workflow_dispatch` and a weekly schedule, never on `pull_request`, so a doctor change here cannot redden their pull requests.
+
+## Commands to run before a PR
+
+```bash
+# extension
+npm run compile && npm test
+python3 tools/check-config-docs.py
+
+# the platform (what content.yml runs)
+cd content && pip install -r requirements-dev.txt
+ruff check . && ruff format --check . && python manage.py makemigrations --check --dry-run
+python -m pytest -q                                  # DATABASE_URL=postgres://… for the Postgres job
+python manage.py wagtail_ai_schema --check ../schemas/content/ai-schema.json
+python manage.py graphql_schema --out /tmp/s.graphql && diff ../schemas/graphql/schema.graphql /tmp/s.graphql
+python manage.py spectacular --format openapi-json --urlconf ops.openapi --fail-on-warn --file /tmp/o.json && diff ../schemas/openapi/openapi.json /tmp/o.json
+
+# the studio and its packages (what web.yml runs)
+cd web && npm ci && npm run lint && npm run typecheck && npm test && npm run check:api && npm run build
+
+# the platform's stack, when content/Dockerfile, web/ or docker-compose.yml changed (the image builds the studio)
+GIT_SHA=$(git rev-parse --short HEAD) BUILT_AT=$(date -u +%FT%TZ) docker compose --profile content up -d --build --wait db redis content worker research-worker beat relay belt-publisher events
+curl -fsS http://localhost:8000/healthz && curl -fsS http://localhost:8000/readyz && curl -fsS http://localhost:8000/version
+curl -fsS -o /dev/null -w '%{http_code}\n' http://localhost:8000/studio/   # 200, with an enforced Content-Security-Policy
+docker compose --profile content down -v
+
+# the same checks as pre-commit hooks (pip install pre-commit && pre-commit install)
+pre-commit run --all-files
+
+# one paragraph per line, with the two excludes markdown-oneline.yml passes
+python3 tools/unwrap-prose.py --check --exclude '(^|/)SCHEMA\.md$' --exclude '(^|/)CHANGELOG\.md$'
+
+# the workspace and the absorption gate (what zer0-workspace.yml runs; any Python with PyYAML,
+# such as the repository's .venv — tools/workspace/README.md § PyYAML)
+python3 -m unittest discover tools/workspace && bin/zer0 check
+python3 -m unittest discover tools/tests && python3 tools/check_absorption.py
+```
+
+The image-engine tests run the locked `zer0-image-generator` gem's Python engine and skip without python3 and PyYAML. With `ZER0_IMAGE_GENERATOR_LIB` pointing at an image generator checkout's `lib/` that ships `Zer0ImageGenerator::Facade`, the facade path runs too.
+
+## Specs that CI actually pins
+
+- **Reader parity:** `content/tests/fixtures/jekyll-site` and its expected lists, generated by Jekyll 4.4.1 itself with the Rails tool `jekyll-parity` before it was deleted; `content/tests/sites/test_catalog.py`. Re-recording them needs that tool rebuilt ([`plan/rails-cms-spec.md`](plan/rails-cms-spec.md), `rails.parity-tools`).
+- **Front-matter surgery:** `content/tests/sites/test_frontmatter.py` (table-driven, every Ruby case ported) and the write-back's guard in `content/tests/sites/test_sites.py` (an unchanged write-back writes nothing; a stale file is refused).
+- **Confined writes:** `content/tests/sites/test_writer.py` (plain relative paths, no symlink at any component, the realpath inside the root).
+- **Doctor:** `content/tests/sites/test_doctor.py` (the Ruby doctor's recorded findings, rule for rule).
+- **ABC Book Spec:** `schemas/books/abc-book.schema.json` — nothing validates against it until the platform's ABC generator is built ([`plan/rails-cms-spec.md`](plan/rails-cms-spec.md), `rails.abc-generator`).
+- **Extension goldens** under `src/test/fixtures/golden/` — regenerate with their generators, never hand-edit.
+- **Event contracts:** `schemas/events/` (CloudEvents envelope, one data schema per type, one example each), checked by `content/tests/outbox/test_contracts.py`.
+- **The Jekyll bridge:** `content/tests/importers/test_jekyll.py` — every Jekyll site in the repository imports into Wagtail and exports back byte for byte.
+- **Agent behaviour:** each definition's eval suite in `content/agents/definitions/*.yaml`, over recordings in `content/agents/recordings/`; a definition revision goes live only when its suite passes.

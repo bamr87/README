@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - The ability to ship every later Web Fundamentals quest to a live URL
 skill_focus: frontend
-source_file: github-pages-basics.md
+source_file: pages/_quests/0001/github-pages-basics.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/github-pages-basics.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - GitHub Pages'
 tags:
 - '0001'
@@ -89,7 +91,7 @@ tags:
 - frontend
 - hands-on
 - beginner
-title: Authenticate the GitHub CLI (one-time)
+title: 'GitHub Pages Basics: Host Your Jekyll Site for Free'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -136,8 +138,8 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Basic Git: `add`, `commit`, `push`
-- [ ] Completion of [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)
-- [ ] Recommended: [Git Basics](/quests/0000/git-basics/)
+- [ ] Completion of [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]]
+- [ ] Recommended: [[it-journey/pages/_quests/0000/git-basics|Git Basics]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -391,7 +393,7 @@ Any of these realms will happily host the same static output:
 | **AWS S3 + CloudFront** | `aws s3 sync _site/ s3://bucket/` | Upload then serve via CDN |
 | **Any web server** | FTP/SCP upload | Copy `_site/` contents into the docroot |
 
-> 🔮 For a heavier-duty deployment with managed CI/CD on Microsoft's cloud, see the [Azure Ascension](/quests/1000/azure-ascension-jekyll-deployment/) quest - it scripts the whole Azure Static Web Apps setup.
+> 🔮 For a heavier-duty deployment with managed CI/CD on Microsoft's cloud, see the [[it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment|Azure Ascension]] quest - it scripts the whole Azure Static Web Apps setup.
 
 ### 🔍 Knowledge Check: The Production Build
 - [ ] What command produces an optimized, deployable `_site/` folder?
@@ -462,17 +464,17 @@ Before you summon your site to a live URL, walk this final checklist:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Git Workflow Mastery](/quests/0001/git-workflow-mastery/) - Branch, review, and merge like a pro
+- 🎯 [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery]] - Branch, review, and merge like a pro
 
 **Explore Side Adventures**:
-- ⚔️ [Liquid Templating](/quests/0001/liquid-templating/) - Power up your templates
-- ⚔️ [YAML Configuration](/quests/0001/yaml-configuration/) - Master `_config.yml`
+- ⚔️ [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]] - Power up your templates
+- ⚔️ [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]] - Master `_config.yml`
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Git Workflow Mastery](/quests/0001/git-workflow-mastery/)  
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
-**🎨 Frontend Specialist**: Advance to [Liquid Templating](/quests/0001/liquid-templating/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]]  
+**🎨 Frontend Specialist**: Advance to [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]]
 
 ## 📚 Resources
 
@@ -501,6 +503,6 @@ Before you summon your site to a live URL, walk this final checklist:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[Git Workflow Mastery]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[Git Workflow Mastery]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

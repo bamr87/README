@@ -58,7 +58,9 @@ rewards:
   - ♻️ Agent Retry Patterns
   - 🚨 Graceful Escalation
 skill_focus: devops
-source_file: agentic-safe-execution-and-error-handling.md
+source_file: pages/_quests/1001/agentic-safe-execution-and-error-handling.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/agentic-safe-execution-and-error-handling.md
 sub_title: 'Level 1001 Quest 2/3 — Domain 2: Tool Use & Environment Interaction'
 tags:
 - '1001'
@@ -68,7 +70,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: .github/workflows/agent-with-retries.yml
+title: 'The Shield of Retries: Safe Execution and Error Handling'
 validation_criteria:
   completion_requirements:
   - Retry policy documented and implemented in at least one workflow
@@ -310,11 +312,11 @@ grep -q 'error_report_version' work/gh-600/scripts/*.json 2>/dev/null && echo "�
 | 🛡️ Resilience Keeper Badge | Earned on completion |
 | ♻️ Agent Retry Patterns | Skill unlocked |
 | 100 XP | Added to Level 1001 total |
-| Unlocks | [Q8: Vaults of Recollection](/quests/1001/agentic-memory-strategies/) |
+| Unlocks | [[it-journey/pages/_quests/1001/agentic-memory-strategies\|Q8: Vaults of Recollection]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[Bind the Agent to the Realm: Dev Environment Integration]] **Unlocks:** [[Vaults of Recollection: Agent Memory Strategies]] **Sequel quests:** [[Vaults of Recollection: Agent Memory Strategies]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]] **Unlocks:** [[it-journey/pages/_quests/1001/agentic-memory-strategies|Vaults of Recollection: Agent Memory Strategies]] **Sequel quests:** [[it-journey/pages/_quests/1001/agentic-memory-strategies|Vaults of Recollection: Agent Memory Strategies]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

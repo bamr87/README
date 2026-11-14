@@ -1,5 +1,7 @@
 ---
 source_file: PRD.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/PRD.md
 title: PRD — Bashcrawl
 ---
 # PRD — Bashcrawl

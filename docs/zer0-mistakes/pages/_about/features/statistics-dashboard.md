@@ -5,9 +5,12 @@ lastmod: 2026-04-18 19:30:05+00:00
 layout: default
 permalink: /about/features/statistics-dashboard/
 preview: /images/previews/statistics-dashboard-feature.png
-source_file: statistics-dashboard.md
+source_file: pages/_about/features/statistics-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/statistics-dashboard.md
 title: Statistics Dashboard Feature
 ---
+
 # Statistics Dashboard Feature
 
 The Zer0-Mistakes theme now includes a comprehensive statistics dashboard that provides real-time analytics and insights about your Jekyll site's content.

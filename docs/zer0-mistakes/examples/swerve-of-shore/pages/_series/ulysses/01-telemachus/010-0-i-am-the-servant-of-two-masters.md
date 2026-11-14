@@ -10,11 +10,13 @@ order: 10.0
 preview: /assets/images/posts/010-0-i-am-the-servant-of-two-masters.jpg
 section: 01-telemachus
 series: ulysses
-source_file: 010-0-i-am-the-servant-of-two-masters.md
-source_url: https://www.swerveofshore.com/post/010-0-i-am-the-servant-of-two-masters
+source_file: examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/010-0-i-am-the-servant-of-two-masters.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/010-0-i-am-the-servant-of-two-masters.md
 sub-title: Episode 1 · Telemachus
-title: 010 0 I Am The Servant Of Two Masters
+title: 010.0 - I Am The Servant of Two Masters
 ---
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/010-0-i-am-the-servant-of-two-masters), by Brandon Nicklaus.
 
 > We are using the original 1922 First Printing by Shakespeare & Co. - section attached

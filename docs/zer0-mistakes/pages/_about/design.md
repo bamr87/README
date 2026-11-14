@@ -8,14 +8,17 @@ icon: material/palette-outline
 lastmod: 2026-08-14 00:00:00+00:00
 layout: default
 permalink: /design/
-source_file: design.md
+source_file: pages/_about/design.md
 source_icon: bi-palette2
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/design.md
 tags:
 - design-system
 - tokens
 - ui
-title: Design
+title: Design system
 ---
+
 One visual contract, stated once. The theme's `--zer0-*` tokens compile into every page of this site, mirror to a [Claude Design project](https://claude.ai/design/p/e75121c0-9210-42d1-ade3-2c8af9111cbe) for design work, and publish here as live, linkable CSS — kept in lockstep by a CI parity check.
 
 ## Use the tokens anywhere

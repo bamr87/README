@@ -9,13 +9,16 @@ lastmod: '2026-04-24T15:06:30Z'
 layout: default
 permalink: /docs/obsidian/authoring-workflow/
 preview: /images/previews/obsidian-authoring-workflow.png
-source_file: authoring-workflow.md
+source_file: pages/_docs/obsidian/authoring-workflow.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/authoring-workflow.md
 tags:
 - obsidian
 - workflow
 - authoring
 title: Obsidian Authoring Workflow
 ---
+
 # Obsidian Authoring Workflow
 
 ## The round-trip
@@ -83,9 +86,9 @@ Use **Obsidian Git** for the canonical sync — it pulls on open and prompts to 
 
 ## See also
 
-- [[Obsidian Vault Integration]]
-- [[Getting Started with the Obsidian Vault]]
-- [[Obsidian Syntax Reference]]
-- [[Obsidian Graph View]]
-- [[Obsidian Integration Troubleshooting]]
-- [[Docker]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Getting Started with the Obsidian Vault]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/docker/README|Docker]]

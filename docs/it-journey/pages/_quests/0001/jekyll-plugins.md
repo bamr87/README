@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 0001 Web Fundamentals quest line
 skill_focus: backend
-source_file: jekyll-plugins.md
+source_file: pages/_quests/0001/jekyll-plugins.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/jekyll-plugins.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Jekyll Plugins'
 tags:
 - '0001'
@@ -88,7 +90,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: In your Jekyll site, add a couple of safe plugins
+title: 'Jekyll Plugins: Extend Your Static Site Safely'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -136,7 +138,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] A working Jekyll site and familiarity with `_config.yml`
 - [ ] Basic command line navigation (`cd`, `ls`)
-- [ ] Recommended: completion of [SEO Optimization](/quests/0001/seo-optimization/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -452,17 +454,17 @@ After a build, visit `/stats.html` - a page that did not exist as a source file,
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Analytics Integration](/quests/0001/analytics-integration/) - Measure your now-extensible site
+- 🎯 [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]] - Measure your now-extensible site
 
 **Explore Side Adventures**:
-- ⚔️ [SEO Optimization](/quests/0001/seo-optimization/) - The SEO plugins in depth
-- ⚔️ [Advanced Markdown](/quests/0001/advanced-markdown/) - The content your plugins process
+- ⚔️ [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]] - The SEO plugins in depth
+- ⚔️ [[it-journey/pages/_quests/0001/advanced-markdown|Advanced Markdown]] - The content your plugins process
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]]  
 **🏗️ System Engineer**: Explore building beyond the whitelist with Actions  
-**🎨 Frontend Specialist**: Revisit [SEO Optimization](/quests/0001/seo-optimization/)  
+**🎨 Frontend Specialist**: Revisit [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]]  
 
 ## 📚 Resources
 
@@ -491,6 +493,6 @@ After a build, visit `/stats.html` - a page that did not exist as a source file,
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Analytics Integration]] · [[SEO Optimization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Analytics Integration]] · [[SEO Optimization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

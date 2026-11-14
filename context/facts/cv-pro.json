@@ -1,0 +1,129 @@
+{
+  "corpus": {
+    "file_count": 32,
+    "fingerprint": "61a27df1fa9fda58",
+    "path": "docs/cv-pro",
+    "present": true,
+    "total_bytes": 124268
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Status",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing",
+      "Changelog",
+      "License"
+    ],
+    "readme": "README.md",
+    "summary": "Amr's CV as code and the CV Builder Pro app, consolidated: cv/ holds the canonical data, the CVData contract and every render; app/ holds the React builder that edits it.",
+    "title": "cv-pro \u2014 the CV machine and its builder, in one repository"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "cv/CV.md",
+    "app/README.md",
+    "app/FEATURES.md",
+    "app/src/features-and-functions.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/cv-pro.md",
+    "fingerprint": "18b990201059e6d1",
+    "index": "cv-pro/README.md",
+    "max_depth": 3,
+    "pages": 32,
+    "present": true,
+    "sections": 6,
+    "skipped": 0,
+    "title": "CV Pro",
+    "top_sections": [
+      {
+        "index": "cv-pro/app/README.md",
+        "pages": 10,
+        "path": "app",
+        "title": "CV Builder Pro",
+        "type": "section"
+      },
+      {
+        "index": "cv-pro/cv/README.md",
+        "pages": 10,
+        "path": "cv",
+        "title": "cv \u2014 the CV build, maintain & publish machine",
+        "type": "section"
+      },
+      {
+        "index": "cv-pro/docs/README.md",
+        "pages": 8,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/cv-pro.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "cv-pro",
+    "registry_description": "CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder).",
+    "repo": "bamr87/cv-pro",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/cv-pro"
+  },
+  "rollups": {
+    "categories": {
+      "cv-pro": 32
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "ts",
+      "typescript",
+      "text"
+    ],
+    "indexed_documents": 32,
+    "top_tags": [],
+    "total_words": 16554
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 10,
+        "name": "app"
+      },
+      {
+        "doc_count": 10,
+        "name": "cv"
+      },
+      {
+        "doc_count": 8,
+        "name": "docs"
+      }
+    ]
+  }
+}

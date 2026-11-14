@@ -6,12 +6,15 @@ date: 2026-05-31 20:54:55+00:00
 description: How to configure the GitHub Actions secrets and variables the Zer0-Mistakes
   workflows need for releases, gem publishing, and scheduled automation.
 lastmod: 2026-05-31 20:54:55+00:00
-source_file: github-secrets-setup.md
+source_file: docs/systems/github-secrets-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/github-secrets-setup.md
 tags:
 - systems
 - automation
 title: GitHub Secrets and Variables Setup
 ---
+
 # GitHub Secrets and Variables Setup
 
 This document explains how to configure GitHub Actions secrets and variables for the zer0-mistakes theme repository.

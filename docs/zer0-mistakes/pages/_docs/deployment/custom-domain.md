@@ -15,7 +15,9 @@ prerequisites:
 preview: /images/previews/custom-domain-setup.png
 sidebar:
   nav: docs
-source_file: custom-domain.md
+source_file: pages/_docs/deployment/custom-domain.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/custom-domain.md
 tags:
 - custom-domain
 - dns
@@ -23,6 +25,7 @@ tags:
 - deployment
 title: Custom Domain Setup
 ---
+
 # Custom Domain Setup
 
 > Configure a custom domain for your Jekyll site.
@@ -253,11 +256,11 @@ Configure a redirect in your hosting platform:
 
 ## Next Steps
 
-- [GitHub Pages Guide](/docs/deployment/github-pages/)
-- [Netlify Guide](/docs/deployment/netlify/)
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|GitHub Pages Guide]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Netlify Guide]]
 
 ## See also
 
-- [[Deployment]]
-- [[Deploy to GitHub Pages]]
-- [[Deploy to Netlify]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Deploy to Netlify]]

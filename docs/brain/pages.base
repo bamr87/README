@@ -1,0 +1,29 @@
+filters:
+  and:
+  - file.ext == "md"
+views:
+- type: table
+  name: All pages
+  order:
+  - file.name
+  - title
+  - source_repo
+  - tags
+- type: table
+  name: Concepts
+  filters:
+    and:
+    - kind == "concept"
+  order:
+  - file.name
+  - pages
+  - projects
+- type: table
+  name: Projects
+  filters:
+    and:
+    - kind == "project"
+  order:
+  - file.name
+  - repo
+  - pages

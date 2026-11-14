@@ -6,12 +6,15 @@ date: 2026-05-31 20:54:54+00:00
 description: 'The Zero Pin plus lockfile plus automated-updates dependency strategy:
   flexible Gemfiles with reproducible, regularly refreshed lockfiles for the theme.'
 lastmod: 2026-05-31 20:54:54+00:00
-source_file: dependency-management.md
+source_file: docs/systems/dependency-management.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/dependency-management.md
 tags:
 - systems
 - automation
 title: Dependency Management Strategy
 ---
+
 # Dependency Management Strategy
 
 ## Overview
@@ -189,4 +192,4 @@ gem "problematic-gem", "~> 1.2.0"  # Pin to working version
 
 - [Bundler Documentation](https://bundler.io/guides/updating_gems.html)
 - [GitHub Pages Dependency Versions](https://pages.github.com/versions/)
-- [Zero Pin Strategy Context](../../.github/copilot-instructions.md#development-environment)
+- [Zero Pin Strategy Context](../../dot-github/copilot-instructions.md#development-environment)

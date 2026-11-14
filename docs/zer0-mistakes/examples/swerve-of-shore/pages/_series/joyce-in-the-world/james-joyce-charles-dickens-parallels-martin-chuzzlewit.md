@@ -13,11 +13,13 @@ order: 999.0
 preview: /assets/images/posts/james-joyce-charles-dickens-parallels-martin-chuzzlewit.jpg
 section: joyce-in-the-world
 series: joyce-in-the-world
-source_file: james-joyce-charles-dickens-parallels-martin-chuzzlewit.md
-source_url: https://www.swerveofshore.com/post/james-joyce-charles-dickens-parallels-martin-chuzzlewit
+source_file: examples/swerve-of-shore/pages/_series/joyce-in-the-world/james-joyce-charles-dickens-parallels-martin-chuzzlewit.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/joyce-in-the-world/james-joyce-charles-dickens-parallels-martin-chuzzlewit.md
 sub-title: Joyce in the World
-title: James Joyce Charles Dickens Parallels Martin Chuzzlewit
+title: 'James Joyce & Charles Dickens Parallels: Martin Chuzzlewit'
 ---
+
 From the *Joyce in the World* thread on [Swerve of Shore](https://www.swerveofshore.com/post/james-joyce-charles-dickens-parallels-martin-chuzzlewit), by Brandon Nicklaus.
 
 > In Martin Chuzzlewit, Mr. Pecksniff, the master of self-serving morality, reflects on his higher status, contrasting himself with a beggar he saw on the way to London. With seemingly insincere tears, he tells his daughters:

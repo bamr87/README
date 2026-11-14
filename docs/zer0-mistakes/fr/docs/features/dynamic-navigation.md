@@ -16,7 +16,9 @@ permalink: /fr/docs/features/dynamic-navigation/
 preview: /images/previews/dynamic-collection-based-navigation.png
 sidebar:
   nav: docs
-source_file: dynamic-navigation.md
+source_file: fr/docs/features/dynamic-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/dynamic-navigation.md
 tags:
 - navigation
 - ui
@@ -27,6 +29,7 @@ translated_from_sha: 1224dc4dea33
 translation_of: pages/_docs/features/dynamic-navigation.md
 translation_source_url: /docs/features/dynamic-navigation/
 ---
+
 # Navigation dynamique basée sur les collections
 
 zer0-mistakes fournit un **repli de navigation sans configuration** : lorsqu'aucune entrée `_data/navigation.yml` personnalisée n'existe pour la barre de navigation, le thème découvre automatiquement vos collections Jekyll et génère un menu de navigation fonctionnel au premier lancement.
@@ -94,14 +97,14 @@ Les collections préfixées par `_` dans la configuration du site peuvent être 
 
 ## Navigation latérale
 
-La barre latérale utilise une clé `_data/navigation.yml` distincte (`docs`, `sidebar`, etc.) et n'est pas affectée par le repli dynamique. Consultez le guide [Navigation latérale](/docs/features/sidebar-navigation/) pour plus de détails.
+La barre latérale utilise une clé `_data/navigation.yml` distincte (`docs`, `sidebar`, etc.) et n'est pas affectée par le repli dynamique. Consultez le guide [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation latérale]] pour plus de détails.
 
 ## Voir aussi
 
-- [Navigation latérale](/docs/features/sidebar-navigation/)
-- [Navigation modulaire ES6](/docs/features/navigation-architecture/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation latérale]]
+- [[zer0-mistakes/pages/_docs/features/navigation-architecture|Navigation modulaire ES6]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/about/settings/navigation|Navigation]]

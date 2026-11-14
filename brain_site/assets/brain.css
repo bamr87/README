@@ -1,0 +1,53 @@
+/* On the scheme element, not :root: Material defines its colours there, and a
+   custom property resolves where it is declared. */
+[data-md-color-scheme] {
+  --brain-bg: var(--md-default-bg-color);
+  --brain-line: var(--md-default-fg-color--lightest);
+  --brain-muted: var(--md-default-fg-color--light);
+}
+.brain-unresolved { color: var(--brain-muted); border-bottom: 1px dashed var(--brain-muted); cursor: help; }
+.brain-panel { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--brain-line); font-size: .7rem; }
+/* Material styles every <details> in page content as an admonition. */
+.md-typeset .brain-panel details, .md-typeset .brain-controls details { margin: .4rem 0 0; padding: 0; overflow: visible; font-size: inherit; background: none; border: 0; border-radius: 0; box-shadow: none; }
+.md-typeset .brain-panel summary, .md-typeset .brain-controls summary { margin: 0; padding: .15rem 0; font-weight: 700; cursor: pointer; background: none; border: 0; }
+.md-typeset .brain-panel summary::before, .md-typeset .brain-panel summary::after, .md-typeset .brain-controls summary::before, .md-typeset .brain-controls summary::after { display: none; }
+.brain-panel ul { list-style: none; margin: 0 0 .6rem; padding: 0; }
+.md-typeset .brain-panel ul li { margin: .15rem 0; }
+.brain-origin { color: var(--brain-muted); margin-left: .5em; font-size: .9em; }
+.brain-source { color: var(--brain-muted); margin: 0 0 .4rem; }
+.brain-more { color: var(--brain-muted); }
+
+.brain-local { margin: .6rem .6rem 0; border: 1px solid var(--brain-line); border-radius: .2rem; position: relative; height: 220px; overflow: hidden; }
+.brain-local-title { font-size: .6rem; font-weight: 700; color: var(--brain-muted); margin: .8rem .6rem 0; }
+.brain-canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.brain-canvas.is-dragging { cursor: grabbing; }
+
+.brain-view { position: relative; }
+.brain-view[data-brain-view="graph"], .brain-view[data-brain-view="canvas"] { height: 72vh; min-height: 420px; border: 1px solid var(--brain-line); border-radius: .2rem; overflow: hidden; background: var(--brain-bg); }
+.brain-controls { position: absolute; top: .5rem; left: .5rem; z-index: 2; width: 13rem; max-width: calc(100% - 1rem); max-height: calc(100% - 1rem); overflow: auto; padding: .5rem .6rem; font-size: .62rem; background: var(--brain-bg); border: 1px solid var(--brain-line); border-radius: .2rem; }
+.brain-controls input[type=search] { width: 100%; box-sizing: border-box; padding: .25rem .35rem; color: inherit; background: transparent; border: 1px solid var(--brain-line); border-radius: .15rem; }
+.brain-controls label { display: flex; align-items: center; gap: .35rem; margin-top: .3rem; }
+.brain-controls input[type=range] { flex: 1; min-width: 0; }
+.brain-swatch { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; flex: none; }
+.brain-stats { margin-top: .4rem; color: var(--brain-muted); }
+
+.brain-preview { position: fixed; z-index: 10; width: 20rem; max-width: calc(100vw - 2rem); padding: .6rem .7rem; font-size: .68rem; line-height: 1.45; color: var(--md-default-fg-color); background: var(--brain-bg); border: 1px solid var(--brain-line); border-radius: .2rem; box-shadow: var(--md-shadow-z2); pointer-events: none; }
+.brain-preview strong { display: block; margin-bottom: .2rem; font-size: .75rem; }
+.brain-preview small { display: block; margin-top: .3rem; color: var(--brain-muted); }
+
+.brain-switcher { position: fixed; inset: 0; z-index: 20; display: flex; justify-content: center; align-items: flex-start; padding: 12vh 1rem 1rem; background: rgba(0, 0, 0, .45); }
+.brain-switcher-box { width: 34rem; max-width: 100%; background: var(--brain-bg); color: var(--md-default-fg-color); border-radius: .25rem; box-shadow: var(--md-shadow-z3); overflow: hidden; }
+.brain-switcher input { width: 100%; box-sizing: border-box; padding: .7rem .8rem; font-size: .85rem; color: inherit; background: transparent; border: 0; border-bottom: 1px solid var(--brain-line); outline: none; }
+.brain-switcher ul { list-style: none; margin: 0; padding: 0; max-height: 50vh; overflow: auto; }
+.brain-switcher li { padding: .45rem .8rem; font-size: .72rem; cursor: pointer; }
+.brain-switcher li.is-active { background: var(--md-accent-fg-color--transparent); }
+.brain-switcher li span { color: var(--brain-muted); margin-left: .5em; }
+
+.md-header__button.brain-button { cursor: pointer; }
+.brain-table-tools { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .5rem; }
+.brain-table-tools input, .brain-table-tools select { padding: .25rem .35rem; font-size: .68rem; color: inherit; background: var(--brain-bg); border: 1px solid var(--brain-line); border-radius: .15rem; }
+.brain-table-scroll { overflow-x: auto; }
+.md-typeset .brain-table { display: table; width: 100%; font-size: .66rem; }
+.md-typeset .brain-table th { cursor: pointer; white-space: nowrap; }
+
+@media print { .brain-panel, .brain-local, .brain-local-title { display: none; } }

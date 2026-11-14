@@ -32,13 +32,15 @@ objectives:
     - command: grep
     - option: i
     - output_includes: ALERT
-source_file: 01-grep.md
+source_file: courses/pipelines/01-grep.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/01-grep.md
 teaches:
 - grep
 - grep -c
 - grep -v
 - grep -i
-title: 01 Grep
+title: Searching with grep
 xp: 25
 ---
 Start in your lab: `cd /lab/pipelines`.

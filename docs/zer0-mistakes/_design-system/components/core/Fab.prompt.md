@@ -1,5 +1,7 @@
 ---
-source_file: Fab.prompt.md
+source_file: _design-system/components/core/Fab.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/core/Fab.prompt.md
 title: Fab.Prompt
 ---
 Circular floating action button for the zer0-mistakes bottom-right utility stack (back-to-top, chat, table-of-contents, local-graph). Sized by `--zer0-space-fab-size`, shadowed by `--zer0-shadow-fab`, layered by `--zer0-layer-fab-*`.

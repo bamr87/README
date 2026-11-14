@@ -15,17 +15,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/05/web-accessibility-guide/
 preview: /images/previews/building-accessible-web-applications.png
-source_file: 2025-01-05-web-accessibility-guide.md
+source_file: fr/posts/2025-01-05-web-accessibility-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2025-01-05-web-accessibility-guide.md
 tags:
 - accessibility
 - a11y
 - wcag
 - inclusive-design
-title: 2025 01 05 Web Accessibility Guide
+title: Créer des applications web accessibles
 translated_from_sha: 9e36acbd9ad4
 translation_of: pages/_posts/2025-01-05-web-accessibility-guide.md
 translation_source_url: /posts/2025/01/05/web-accessibility-guide/
 ---
+
 L'accessibilité web n'est pas seulement une exigence légale — il s'agit de créer des expériences inclusives pour tous. Ce guide couvre les pratiques d'accessibilité essentielles pour le développement web moderne.
 
 ## Pourquoi l'accessibilité est importante

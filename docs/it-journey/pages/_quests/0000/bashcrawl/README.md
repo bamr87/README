@@ -62,7 +62,9 @@ skill_focus:
 - Terminal
 - Navigation
 - File System
-source_file: README.md
+source_file: pages/_quests/0000/bashcrawl/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/README.md
 tags:
 - bashcrawl
 - terminal
@@ -70,7 +72,7 @@ tags:
 - adventure-game
 - bash
 - '0000'
-title: Readme
+title: 'Bashcrawl Quest: Terminal Adventure RPG'
 validation_criteria:
 - Navigate through the entrance and read the first scroll
 - Navigate through at least five chambers

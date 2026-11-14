@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/33083807177
 slice: game-developer/0001
-source_file: 2026-08-27-game-developer-0001.md
+source_file: pages/_quest-reports/2026-08-27-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-27-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 27 Game Developer 0001
+title: Game Developer · L0001 · 2026-08-27
 verdict: warn
 walk_date: '2026-08-27'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn (avg 81.8%) · **Walked** 2026-08-27
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33083807177) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33083807177) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-27-game-developer-0001.md)
 
 ---
 

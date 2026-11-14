@@ -1,0 +1,61 @@
+---
+source_file: tools/fleetcore/README.md
+source_repo: bamr87/bamr87
+source_url: https://github.com/bamr87/bamr87/blob/main/tools/fleetcore/README.md
+title: tools/fleetcore — one core, three surfaces
+---
+# tools/fleetcore — one core, three surfaces
+
+The Harness Console (browser, `tools/console/`) and the terminal dash (TTY, `tools/tui/`) used to load the same YAML twice, through two loaders with two ideas of "stale", and to draw the same red dot in two different reds. This package is what they now share.
+
+| Module | Browser console | Terminal dash |
+| --- | --- | --- |
+| `fleet.py` + `views.py` | `/api/fleet`, `/api/fleet/docker`, `/api/project/:name` → **Projects**, **Inbox**, **Containers** and each project's page | Apps, Inbox, Attention, Monitor, Harness, Docker tabs |
+| `apps.py` | `/api/apps` → **Desktop** (an icon per app, each in a window; the Fleet window from `repos`), **Apps** (every fleet frontend, framed at its live or local address) and the origins in the console's Content-Security-Policy | — (planned: the Apps tab opens and checks a frontend); today `tools/dash apps` |
+| `keys.py` (keys v1) | `/api/keys` → the page's key handler and `?` sheet | its Bindings, footer and `?` panel |
+| `theme.py` (bashOS palette) | `/theme.css` (Mantine's variables point at it) and `/api/theme` (the Terminal page's xterm colours) | the `bashos-dark` Textual theme |
+| `client.py` | — (the console *is* the runtime) | the **Jobs** tab and the `:` palette submit jobs to the console |
+| `loopjob.py` | `/api/jobs/:id` → `loop` on a `loop-run` job (the Job page's run summary) | the Jobs tab's summary under a finished loop-run |
+| `nodes.py` | — (planned: a Nodes page, `/api/nodes`, MCP `fleet_nodes`; ADR 0003 phase 11) | — (planned: a node column on the Docker tab); today `tools/dash node` and `tools/dash infra` |
+| `mcp_server.py` | — | — (the third surface: AI agents, below) |
+
+## One runtime
+
+The console process owns the operation allowlist and the job manager. The browser page is one client of its API and the TUI is another, so a job started in either one shows up in both, and every gate (allowlist, parameter validation, confirm before a GitHub write) runs server-side.
+
+| How it runs | `DASH_CONSOLE_URL` the TUI uses |
+| --- | --- |
+| native `tools/dash console` + `tools/dash tui` | `http://127.0.0.1:4001` (the default) |
+| `tools/dash tui --docker` | `unix:///home/vscode/.dash-run/console.sock`. The `console` service also listens on a Unix socket in the `console-run` volume, which only the `tui` service mounts. Reaching that file is the authorization, so no hostname joins the console's DNS-rebinding allowlist and no secret has to be shared. |
+| no console | empty: the Jobs tab says how to start one, and the TUI stays read-only |
+
+`DASH_CONSOLE_TOKEN`, when the console requires it, is sent as a bearer token, as the page does.
+
+## For agents: the `fleet` MCP server
+
+`mcp_server.py` made the console AI-native; it is now merged into the Harness Console MCP layer ([`tools/console/docs/mcp-layer.md`](../console/docs/mcp-layer.md)), which reuses its tools and keeps the name. It's registered in the repo's [`.mcp.json`](../../dot-mcp.json) as `fleet`, so Claude Code in this repo (or any MCP host) gets what a person gets in the browser or the terminal, and no more.
+
+| Tool | Does | Needs the console |
+| --- | --- | --- |
+| `fleet_overview` | KPIs, signal freshness, tripped harness wires, the red repos | no |
+| `fleet_apps` | the Apps view: filter by text and level, sort like the dashboards | no |
+| `fleet_inbox` | the flagged inbox, or every open item of one repo | no |
+| `fleet_docker` | containers on every `DASH_DOCKER_HOST`, attributed to projects | no |
+| `fleet_work` | the Work board in the loops' order: lanes, each loop's cap and next run, the human's pins and overrides first ([docs/WORK-BOARD.md](../../docs/WORK-BOARD.md)) | no |
+| `fleet_workflows` | the hub's workflows and composite actions as one model with every lint finding; one in full with `workflow`; run health and failure causes from the lake with `health` ([docs/WORKFLOW-ATLAS.md](../../docs/WORKFLOW-ATLAS.md)) | no |
+| `workflow_lint` | a draft workflow's findings against the hub's standards and `_data/fleet.yml` — nothing is written | no |
+| `console_ops` | the console's allowlisted operations and which can write to GitHub | yes |
+| `console_run` | run one as a job, the same job the browser and the TUI list. A writing operation is refused unless `confirm=true` | yes |
+| `console_jobs` · `console_job_log` · `console_cancel` | list jobs, follow a log by offset, cancel | yes |
+
+Notes:
+
+- **Transport:** MCP over stdio, standard library only, no SDK.
+- **Gates:** the actions go through `client.py`, so the console's allowlist, parameter validation and confirm gate apply to an agent exactly as to a person. Tool annotations mark the read tools `readOnlyHint` and `console_run` / `console_cancel` `destructiveHint`, so a host can ask before calling them.
+- **Token:** when `DASH_CONSOLE_TOKEN` isn't in the environment, the server reads that one line from the repo's `.env`. It parses the file and never sources it.
+
+To try it by hand: `FLEET_MCP_STDLIB=1 python3 tools/fleetcore/mcp_server.py` (without the variable it delegates to the merged layer), then send newline-delimited JSON-RPC (`initialize`, `tools/list`, `tools/call`).
+
+## Tests
+
+`python3 tools/test_tui_fleet.py` (data layer), `python3 tools/test_fleetcore_apps.py` (the launcher: targets, the ports join, embed rules, address resolution), `python3 tools/test_fleetcore.py` (keys, theme, client, the MCP protocol) and `python3 tools/test_fleetcore_nodes.py` (placement, overlays, the link key, the infra gate, and the committed model), all on PyYAML alone. `tools/console/test_console.py` asserts the console serves exactly these objects and reaches the job API over the socket. `tools/tui/test_app.py` drives the keys and the Jobs tab against a fake console.

@@ -22,12 +22,14 @@ objectives:
       - arg: '2'
       - arg: '-2'
       - arg: -n2
-source_file: 02-head-and-tail.md
+source_file: courses/reading/02-head-and-tail.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/reading/02-head-and-tail.md
 teaches:
 - head
 - tail
 - -n
-title: 02 Head And Tail
+title: Just the beginning, just the end
 xp: 20
 ---
 Long files don't fit on one screen. You rarely need all of them anyway:

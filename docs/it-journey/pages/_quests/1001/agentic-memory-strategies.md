@@ -56,7 +56,9 @@ rewards:
   skills_unlocked:
   - 🧠 Agent Memory Architecture
 skill_focus: devops
-source_file: agentic-memory-strategies.md
+source_file: pages/_quests/1001/agentic-memory-strategies.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/agentic-memory-strategies.md
 sub_title: 'Level 1001 Quest 3/3 — Domain 3: Context & Memory Management'
 tags:
 - '1001'
@@ -66,7 +68,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: In copilot-instructions.md — ensure the agent loads the right context
+title: 'Vaults of Recollection: Agent Memory Strategies'
 validation_criteria:
   completion_requirements:
   - Three memory tiers implemented (ephemeral/session/persistent) using GitHub artifacts
@@ -299,17 +301,17 @@ grep -q 'Memory Loading Protocol' .github/copilot-instructions.md 2>/dev/null &&
 | 🗄️ Vault Keeper Badge | Earned on completion |
 | 🧠 Agent Memory Architecture | Skill unlocked |
 | 100 XP | Added to Level 1001 total |
-| Unlocks | [Q9: Anchoring the Drifting Agent](/quests/1010/agentic-state-persistence-and-drift/) |
+| Unlocks | [[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift\|Q9: Anchoring the Drifting Agent]] |
 
 ## 🔗 Continue Your Journey
 
-- **Next:** [Q9: Anchoring the Drifting Agent](/quests/1010/agentic-state-persistence-and-drift/)
-- **Codex chapter:** [Vaults of Recollection: Memory & State](/quests/1001/agentic-codex-03-memory-state-and-execution/)
-- **Related note:** [Evaluation Signals Table](/notes/gh-600/evaluation-signals-table/)
+- **Next:** [[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift|Q9: Anchoring the Drifting Agent]]
+- **Codex chapter:** [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution|Vaults of Recollection: Memory & State]]
+- **Related note:** [[it-journey/pages/_notes/gh-600/evaluation-signals-table|Evaluation Signals Table]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Shield of Retries: Safe Execution and Error Handling]] **Unlocks:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Sequel quests:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling|The Shield of Retries: Safe Execution and Error Handling]] **Unlocks:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Sequel quests:** [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

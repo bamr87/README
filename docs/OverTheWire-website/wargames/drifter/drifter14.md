@@ -2,7 +2,9 @@
 gamename: drifter
 layout: default
 level: 14
-source_file: drifter14.md
+source_file: wargames/drifter/drifter14.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/drifter/drifter14.md
 title: Drifter14
 ---
 This level utilises code from several places. The main vulnerable code lies in a 3rd party library. The other code present may allow you to more easily gain code execution.

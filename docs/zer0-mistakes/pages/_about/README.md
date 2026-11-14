@@ -4,9 +4,12 @@ draft: false
 lastmod: 2025-01-13 00:00:00+00:00
 permalink: /about/readme/
 preview: /images/previews/zer0-mistakes-about-section.png
-source_file: README.md
-title: Zer0-Mistakes Theme Documentation
+source_file: pages/_about/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/README.md
+title: Zer0-Mistakes About Section
 ---
+
 # Zer0-Mistakes Theme Documentation
 
 This directory contains technical documentation, theme features, and developer resources for the Zer0-Mistakes Jekyll theme.
@@ -94,11 +97,11 @@ Visit the **[IT-Journey Platform](https://it-journey.dev/about/)** for:
 
 ### Key Pages
 
-- **[Theme Features](/about/features/)** - Comprehensive feature list
-- **[Statistics Dashboard](/about/stats/)** - Site analytics
-- **[Automation System](/about/features/comprehensive-gem-automation-system/)** - Build & release automation
-- **[Jekyll Reference](/about/features/jekyll/)** - Technical documentation
-- **[Theme Examples](/about/theme/)** - Bootstrap components
+- **[[zer0-mistakes/pages/_about/features/index|Theme Features]]** - Comprehensive feature list
+- **[[zer0-mistakes/pages/_about/stats|Statistics Dashboard]]** - Site analytics
+- **[[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|Automation System]]** - Build & release automation
+- **[[zer0-mistakes/pages/_about/features/jekyll-technical-reference|Jekyll Reference]]** - Technical documentation
+- **[[zer0-mistakes/pages/_about/theme|Theme Examples]]** - Bootstrap components
 
 ## Development Resources
 

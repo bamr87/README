@@ -11,7 +11,9 @@ lastmod: 2025-12-20 22:15:46.302000+00:00
 machine_translated: true
 permalink: /fr/about/features/jekyll/
 preview: /images/previews/jekyll-technical-reference.png
-source_file: jekyll-technical-reference.md
+source_file: fr/about/features/jekyll-technical-reference.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/jekyll-technical-reference.md
 tags:
 - Jekyll
 - Documentation
@@ -20,6 +22,7 @@ translated_from_sha: 445d8224c84e
 translation_of: pages/_about/features/jekyll-technical-reference.md
 translation_source_url: /about/features/jekyll/
 ---
+
 # Référence technique Jekyll
 
 - Documentation publique : [Documentation Jekyll](⟦1⟧)

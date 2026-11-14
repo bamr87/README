@@ -1,0 +1,169 @@
+{
+  "corpus": {
+    "file_count": 285,
+    "fingerprint": "7c7e6d44065e6440",
+    "path": "docs/law-ai",
+    "present": true,
+    "total_bytes": 2653652
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Who it is for",
+      "How it works",
+      "Quick start (5 minutes to running)",
+      "Project structure",
+      "Working on Law AI",
+      "Project status",
+      "License"
+    ],
+    "readme": "README.md",
+    "summary": "An open legal-intelligence platform for prospective law students, current law students and practicing lawyers: LSAT preparation, guided legal study, and legal analysis grounded in a citation knowledge graph \u2014 with provenance on every answer and a human in the loop where it matters.",
+    "title": "Law AI"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "BACKLOG.md",
+    "specs/052-backlog-zero/tasks.md",
+    "docs/data-model.md",
+    "specs/011-django-backend/spec.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/law-ai.md",
+    "fingerprint": "b3546ca78393d7b0",
+    "index": "law-ai/README.md",
+    "max_depth": 6,
+    "pages": 285,
+    "present": true,
+    "sections": 71,
+    "skipped": 0,
+    "title": "Law AI",
+    "top_sections": [
+      {
+        "index": "law-ai/docs/README.md",
+        "pages": 40,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "law-ai/backend/README.md",
+        "pages": 58,
+        "path": "backend",
+        "title": "Law AI \u2014 Backend",
+        "type": "section"
+      },
+      {
+        "index": "law-ai/lawmode/README.md",
+        "pages": 10,
+        "path": "lawmode",
+        "title": "LawMode.ai",
+        "type": "section"
+      },
+      {
+        "index": "law-ai/specs/README.md",
+        "pages": 169,
+        "path": "specs",
+        "title": "Specs \u2014 Spec-Driven Development for Law AI",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/law-ai.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "law-ai",
+    "registry_description": "Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama.",
+    "repo": "bamr87/law-ai",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/law-ai"
+  },
+  "rollups": {
+    "categories": {
+      "law-ai": 285
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "json",
+      "mermaid",
+      "python",
+      "yaml",
+      "sql",
+      "cypher"
+    ],
+    "indexed_documents": 285,
+    "top_tags": [
+      "structure",
+      "foundations",
+      "section-guide",
+      "technique",
+      "method",
+      "strategy",
+      "inference",
+      "review",
+      "diagnosis",
+      "weaken",
+      "strengthen",
+      "conditional",
+      "notation",
+      "flaw",
+      "fallacy"
+    ],
+    "total_words": 368234
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "BACKLOG.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "README.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 169,
+        "name": "specs"
+      },
+      {
+        "doc_count": 58,
+        "name": "backend"
+      },
+      {
+        "doc_count": 40,
+        "name": "docs"
+      },
+      {
+        "doc_count": 10,
+        "name": "lawmode"
+      },
+      {
+        "doc_count": 1,
+        "name": "frontend"
+      },
+      {
+        "doc_count": 1,
+        "name": "lsat-static"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

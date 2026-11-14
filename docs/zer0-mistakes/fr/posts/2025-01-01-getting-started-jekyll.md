@@ -15,17 +15,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/01/getting-started-jekyll/
 preview: /images/previews/getting-started-with-jekyll-your-first-static-site.png
-source_file: 2025-01-01-getting-started-jekyll.md
+source_file: fr/posts/2025-01-01-getting-started-jekyll.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2025-01-01-getting-started-jekyll.md
 tags:
 - jekyll
 - beginner
 - static-site
 - getting-started
-title: 2025 01 01 Getting Started Jekyll
+title: 'Débuter avec Jekyll : votre premier site statique'
 translated_from_sha: 8d3fbba92fb2
 translation_of: pages/_posts/2025-01-01-getting-started-jekyll.md
 translation_source_url: /posts/2025/01/01/getting-started-jekyll/
 ---
+
 Bienvenue dans Jekyll ! Ce tutoriel vous guidera dans la création de votre premier site web statique avec Jekyll, le générateur de sites statiques populaire.
 
 ## Qu'est-ce que Jekyll ?

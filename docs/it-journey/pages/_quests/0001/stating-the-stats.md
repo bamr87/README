@@ -67,7 +67,9 @@ rewards:
   - Access to advanced analytics quest line
   - Data-driven site optimization capabilities
 skill_focus: data-engineering
-source_file: stating-the-stats.md
+source_file: pages/_quests/0001/stating-the-stats.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/stating-the-stats.md
 sub_title: 'Level 0001 (1) Quest: Jekyll Data Analytics and Visualization Mastery'
 tags:
 - '0001'
@@ -78,7 +80,7 @@ tags:
 - site-statistics
 - data-visualization
 - yaml-data-files
-title: _data/content_statistics.yml (Example structure)
+title: 'Forging the Stats Portal: Data Analytics Quest'
 validation_criteria:
   completion_requirements:
   - Statistics page accessible at /stats/ or /statistics/
@@ -1071,7 +1073,7 @@ Liquid Exception: undefined method
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

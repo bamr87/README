@@ -8,9 +8,12 @@ permalink: /series/ulysses/10-wandering-rocks/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 10-wandering-rocks.md
-title: 10 Wandering Rocks
+source_file: examples/swerve-of-shore/pages/series/ulysses/10-wandering-rocks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/10-wandering-rocks.md
+title: 10 · Wandering Rocks
 ---
+
 {% include page-header.html %}
 
 Episode 10 of *Ulysses*. 3pm, nineteen short scenes across the city.

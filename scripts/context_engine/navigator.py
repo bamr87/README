@@ -575,6 +575,9 @@ def build_fleet_nav(registry: Registry, docs_dir: Optional[Path] = None) -> Dict
 # renderers
 # --------------------------------------------------------------------------
 
+BRAIN_CORPUS = "brain"      # generated notes: a top-level tab, not a Reference entry
+
+
 def _yaml_scalar(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)     # JSON scalars are valid YAML
 
@@ -642,15 +645,30 @@ def render_mkdocs_nav(fleet: Dict, registry: Registry,
         ]
 
     lines += ["", "nav:", '  - "Home": index.md']
+    brain = [nav for nav in fleet["extras"] if nav["project"] == BRAIN_CORPUS]
+    extras = [nav for nav in fleet["extras"] if nav["project"] != BRAIN_CORPUS]
+    for nav in brain:
+        lines.extend(_render_corpus("Second Brain", nav["tree"], 2))
+
+    tabs: Dict[str, List[Dict]] = {}
     for name in fleet["order"]:
         nav = fleet["projects"].get(name)
         if not nav or not nav["counts"]["pages"]:
             continue
-        lines.extend(_render_corpus(nav["title"], nav["tree"], 2))
+        project = registry.get(name)
+        tab = project.nav.tab if project else None
+        if tab:
+            tabs.setdefault(tab, []).append(nav)
+        else:
+            lines.extend(_render_corpus(nav["title"], nav["tree"], 2))
+    for tab, navs in tabs.items():
+        lines.append(f"  - {_yaml_scalar(tab)}:")
+        for nav in navs:
+            lines.extend(_render_corpus(nav["title"], nav["tree"], 6))
 
-    if fleet["extras"]:
+    if extras:
         lines.append('  - "Reference":')
-        for nav in fleet["extras"]:
+        for nav in extras:
             lines.extend(_render_corpus(nav["title"], nav["tree"], 6))
 
     lines.append('  - "Browse":')

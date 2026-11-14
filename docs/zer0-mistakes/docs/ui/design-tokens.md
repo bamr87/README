@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:57+00:00
 description: Quick reference for the semantic --zer0-* CSS custom properties used
   across Zer0-Mistakes, with pointers to the full design-system architecture.
 lastmod: 2026-05-31 20:54:57+00:00
-source_file: design-tokens.md
+source_file: docs/ui/design-tokens.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/design-tokens.md
 tags:
 - ui
 - styling
 - theme
 title: Design tokens — quick reference
 ---
+
 # Design tokens — quick reference
 
 Semantic CSS custom properties (`--zer0-*`) used across zer0-mistakes. For architecture, SCSS import order, and override strategies, see **[design-system.md](design-system.md)**.

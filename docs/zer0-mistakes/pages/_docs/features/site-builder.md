@@ -28,7 +28,9 @@ prerequisites:
   API key) or an xAI key
 sidebar:
   nav: docs
-source_file: site-builder.md
+source_file: pages/_docs/features/site-builder.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/site-builder.md
 tags:
 - ai
 - claude
@@ -38,8 +40,9 @@ tags:
 - onboarding
 - docker
 - proxy
-title: Site Builder
+title: Site Builder (AI-Guided Setup Wizard — Claude or Grok)
 ---
+
 # Site Builder
 
 The Site Builder is the theme's onboarding wizard. The form half runs anywhere the theme renders, GitHub Pages included. The AI half connects through the local dev proxy with **your own provider token — Claude (Anthropic) or Grok (xAI)** — and turns the wizard into an assisted build: the assistant sees every answer, proposes and applies values, checks the machine, reads the theme's source, writes the project, runs Docker, and, in an open session, modifies an existing site file by file and generates images for it.
@@ -91,7 +94,7 @@ The Connect step shows one card per provider from `_data/site_builder.yml` and a
 
 Switching the provider also sets the generated site's `ai_chat.provider` on the Integrations step, and the image choice pre-configures `preview_images`, so the site you build is ready for the provider you used; `.env.example` lists the matching keys.
 
-The proxy is authoritative: it decides which providers are configured, pins the provider and model when told to, and translates for xAI so the browser always speaks the Anthropic Messages dialect. The chat widget on every page gains the same choice (`ai_chat.provider`) — see [AI Chat Assistant](/docs/features/ai-chat-assistant/).
+The proxy is authoritative: it decides which providers are configured, pins the provider and model when told to, and translates for xAI so the browser always speaks the Anthropic Messages dialect. The chat widget on every page gains the same choice (`ai_chat.provider`) — see [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|AI Chat Assistant]].
 
 ## Guided steps or an open session
 
@@ -259,6 +262,6 @@ Scenarios live in `test/visual/site-builder-scenarios.mjs` (`blog`, `docs`, `coo
 
 ## Related
 
-- [Site Builder quickstart](/quickstart/site-builder/) is the walkthrough for first-time users.
-- [AI Chat Assistant](/docs/features/ai-chat-assistant/) documents the shared proxy and its auth modes.
-- [Machine Setup](/quickstart/machine-setup/) is the manual reference for the Prerequisites step.
+- [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder quickstart]] is the walkthrough for first-time users.
+- [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|AI Chat Assistant]] documents the shared proxy and its auth modes.
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] is the manual reference for the Prerequisites step.

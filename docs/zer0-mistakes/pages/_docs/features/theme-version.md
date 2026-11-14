@@ -12,7 +12,9 @@ permalink: /docs/features/theme-version/
 preview: /images/previews/theme-version-display-plugin.png
 sidebar:
   nav: docs
-source_file: theme-version.md
+source_file: pages/_docs/features/theme-version.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/theme-version.md
 tags:
 - version
 - plugin
@@ -20,6 +22,7 @@ tags:
 - gem
 title: Theme Version Display Plugin
 ---
+
 # Theme Version Display Plugin
 
 The Zer0-Mistakes theme includes a Jekyll plugin (`_plugins/theme_version.rb`) that automatically extracts the theme version from the installed gem specification during the build, then exposes it to Liquid so the UI can show it.
@@ -188,9 +191,9 @@ There is no `theme_version` or `show_theme_version` config key — render the va
 
 ## Related
 
-- [Release Management](/docs/development/release-management/)
-- [Version Bump](/docs/development/version-bump/)
-- [Gem Publishing](/docs/development/release-management/#rubygems-publishing)
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/version-bump|Version Bump]]
+- [[zer0-mistakes/pages/_docs/development/release-management#rubygems-publishing|Gem Publishing]]
 
 ## Technical Reference
 
@@ -200,5 +203,5 @@ For implementation details (Jekyll plugin architecture, version extraction, moda
 
 ## See also
 
-- [[Features]]
-- [[Development]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

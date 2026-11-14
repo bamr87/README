@@ -21,17 +21,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/06/18/trailing-slash-that-could-end-your-company/
 preview: /images/previews/the-trailing-slash-that-could-end-your-entire-comp.jpg
-source_file: 2026-06-18-trailing-slash-that-could-end-your-company.md
+source_file: fr/posts/2026-06-18-trailing-slash-that-could-end-your-company.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2026-06-18-trailing-slash-that-could-end-your-company.md
 tags:
 - security
 - threat modeling
 - web
 - http
-title: 2026 06 18 Trailing Slash That Could End Your Company
+title: La barre oblique finale qui pourrait anéantir votre entreprise entière
 translated_from_sha: df6965219e48
 translation_of: pages/_posts/2026-06-18-trailing-slash-that-could-end-your-company.md
 translation_source_url: /posts/2026/06/18/trailing-slash-that-could-end-your-company/
 ---
+
 Quelqu'un dans votre équipe a déployé une redirection de `/about` vers `/about/` et a appelé ça « faire le ménage dans les URLs ». Moi, j'appelle ça le coup d'ouverture d'un événement d'extinction massive.
 
 Restez avec moi. Une 301 n'est pas une commodité. Une 301, c'est votre serveur qui **indique au navigateur où aller et se fait obéir sans discussion**. Vous avez construit une machine dont le seul but est de rerouter à la demande des clients confiants, puis vous êtes parti déjeuner.

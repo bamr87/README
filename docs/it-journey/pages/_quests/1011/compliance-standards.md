@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Ability to help an organization prepare for a real security audit
 skill_focus: security
-source_file: compliance-standards.md
+source_file: pages/_quests/1011/compliance-standards.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/compliance-standards.md
 sub_title: 'Level 1011 (11) Quest: Main Quest - Compliance Standards'
 tags:
 - '1011'
@@ -85,7 +87,7 @@ tags:
 - iso-27001
 - conceptual
 - gamified-learning
-title: Build your controls matrix as version-controlled, plain-text Markdown/CSV
+title: 'Compliance Standards: SOC 2, ISO 27001, GDPR, and PCI-DSS'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Security Fundamentals](/quests/1011/security-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] (recommended)
 - [ ] Understanding of security controls and the CIA triad
 - [ ] General awareness of how organizations collect and store data
 
@@ -386,14 +388,14 @@ Mature teams pursue **continuous compliance** - automating evidence collection (
 - 🎯 Advance to the Master tier (Level 1100+) - Data Engineering and beyond
 
 **Explore Side Adventures**:
-- ⚔️ [Penetration Testing](/quests/1011/penetration-testing/) - Often a required PCI/SOC 2 control
-- ⚔️ [Threat Modeling](/quests/1011/threat-modeling/) - Evidence of risk assessment for auditors
+- ⚔️ [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]] - Often a required PCI/SOC 2 control
+- ⚔️ [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]] - Evidence of risk assessment for auditors
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Revisit [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Penetration Testing](/quests/1011/penetration-testing/)  
-**🛡️ Security Specialist**: Deepen [Threat Modeling](/quests/1011/threat-modeling/)
+**💻 Software Developer**: Revisit [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]]  
+**🛡️ Security Specialist**: Deepen [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]]
 
 ## 📚 Resources
 
@@ -424,6 +426,6 @@ Mature teams pursue **continuous compliance** - automating evidence collection (
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Related quests:** [[Penetration Testing: Tools and Ethical Hacking Methodologies]] · [[Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Related quests:** [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing: Tools and Ethical Hacking Methodologies]] · [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

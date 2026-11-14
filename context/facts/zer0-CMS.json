@@ -1,0 +1,223 @@
+{
+  "corpus": {
+    "file_count": 1187,
+    "fingerprint": "ed764aab34495d3e",
+    "path": "docs/zer0-CMS",
+    "present": true,
+    "total_bytes": 6698991
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Usage",
+      "How publishing works",
+      "Configuration",
+      "The `.cms/` contract",
+      "Fleet",
+      "MCP server",
+      "The optional AI agent"
+    ],
+    "readme": "README.md",
+    "summary": "An agent-native CMS for markdown sites: one Python platform (Django, with Wagtail as a headless library), a React studio and site renderer, and a VS Code extension with the studio's capabilities \u2014 publishing only through a gate a human has to walk through.",
+    "title": "zer0-CMS"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "docs/plan/PLAN.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/zer0-CMS.md",
+    "fingerprint": "dbf78bbbbcd27cba",
+    "index": "zer0-CMS/README.md",
+    "max_depth": 6,
+    "pages": 1181,
+    "present": true,
+    "sections": 177,
+    "skipped": 6,
+    "title": "Zer0 CMS",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 252,
+        "path": "apps",
+        "title": "Apps",
+        "type": "section"
+      },
+      {
+        "index": "zer0-CMS/content/README.md",
+        "pages": 58,
+        "path": "content",
+        "title": "content/ \u2014 the platform",
+        "type": "section"
+      },
+      {
+        "index": "zer0-CMS/docs/README.md",
+        "pages": 29,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "zer0-CMS/media/README.md",
+        "pages": 3,
+        "path": "media",
+        "title": "media/ \u2014 the design system",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 74,
+        "path": "packages",
+        "title": "Packages",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 726,
+        "path": "sites",
+        "title": "Sites",
+        "type": "section"
+      },
+      {
+        "index": "zer0-CMS/src/README.md",
+        "pages": 24,
+        "path": "src",
+        "title": "Source",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 2,
+        "path": "tools",
+        "title": "Tools",
+        "type": "section"
+      },
+      {
+        "index": "zer0-CMS/web/README.md",
+        "pages": 2,
+        "path": "web",
+        "title": "web/ \u2014 the React frontend",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/zer0-CMS.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "zer0-CMS",
+    "registry_description": "Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites.",
+    "repo": "bamr87/zer0-CMS",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/zer0-CMS"
+  },
+  "rollups": {
+    "categories": {
+      "zer0-CMS": 1187
+    },
+    "code_languages": [
+      "bash",
+      "yaml",
+      "python",
+      "plaintext",
+      "html",
+      "text",
+      "javascript",
+      "liquid"
+    ],
+    "indexed_documents": 1187,
+    "top_tags": [
+      "security",
+      "wargames",
+      "linux",
+      "ctf",
+      "cybersecurity",
+      "jekyll",
+      "obsidian",
+      "navigation",
+      "github-pages",
+      "united states",
+      "ai",
+      "docker",
+      "concept",
+      "europe",
+      "documentation"
+    ],
+    "total_words": 848041
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": true,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "ATTRIBUTION.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CODE_OF_CONDUCT.md",
+      "CONTRIBUTING.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 731,
+        "name": "sites"
+      },
+      {
+        "doc_count": 253,
+        "name": "apps"
+      },
+      {
+        "doc_count": 74,
+        "name": "packages"
+      },
+      {
+        "doc_count": 58,
+        "name": "content"
+      },
+      {
+        "doc_count": 29,
+        "name": "docs"
+      },
+      {
+        "doc_count": 24,
+        "name": "src"
+      },
+      {
+        "doc_count": 3,
+        "name": "media"
+      },
+      {
+        "doc_count": 2,
+        "name": "tools"
+      },
+      {
+        "doc_count": 2,
+        "name": "web"
+      },
+      {
+        "doc_count": 1,
+        "name": "schemas"
+      }
+    ]
+  }
+}

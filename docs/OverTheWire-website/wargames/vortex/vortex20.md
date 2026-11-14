@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 20
-source_file: vortex20.md
+source_file: wargames/vortex/vortex20.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex20.md
 title: Vortex20
 ---
 Remote Integer Fun

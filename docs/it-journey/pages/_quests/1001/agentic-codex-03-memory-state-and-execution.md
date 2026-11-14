@@ -62,7 +62,9 @@ rewards:
   unlocks_features:
   - Domain 4 — Evaluation, Error Analysis & Tuning
 skill_focus: ai-ml
-source_file: agentic-codex-03-memory-state-and-execution.md
+source_file: pages/_quests/1001/agentic-codex-03-memory-state-and-execution.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/agentic-codex-03-memory-state-and-execution.md
 tags:
 - '1001'
 - github-copilot
@@ -72,7 +74,7 @@ tags:
 - memory
 - context-management
 - project-based
-title: 'Tier 1 — ephemeral: a value passed step-to-step inside ONE job'
+title: 'Vaults of Recollection: Memory & State'
 validation_criteria:
   completion_requirements:
   - Can place a piece of agent state in the correct memory tier and justify it
@@ -87,6 +89,7 @@ validation_criteria:
   - Writes a context-handoff JSON that survives the issue → branch → PR → Actions
     transition
 ---
+
 *The agent stands again at the threshold of your repository, exactly as it stood yesterday — and it remembers nothing. Not the decision you reached together at dusk, not the file it carefully rewrote, not the plan it swore to follow. Every workflow run is a fresh-summoned familiar with no past. This is not a flaw to be patched over; it is the iron law of the realm. An agent forgets by design — and so **memory is something you must build, deliberately, from stone you lay yourself.***
 
 *Beneath this castle lie the Vaults of Recollection. Some chambers hold what vanishes when a single job ends. Some hold what survives a run but no longer. And one deep vault — sealed with a committed file — holds what endures across every awakening. Learn which vault holds which truth, and you will have learned a Domain 3 lesson (Learn weight **10–15%**), and the skill on which most real agentic systems quietly fail. The real-world stakes are blunt: an agent that "forgets" a prior decision will happily undo a colleague's work, re-run an irreversible step, or ship a plan built on a world that no longer exists.*
@@ -117,7 +120,7 @@ The Agentic Codex models this with **three tiers** of memory, each mapped to a c
 
 Before you descend into the vaults, confirm your bench is ready:
 
-- **Chapter II cleared** — you should already know how an agent selects tools and binds to an environment (see [Tool Use & Environment](/quests/1000/agentic-codex-02-tool-use-and-environment/)). Memory builds directly on that execution context.
+- **Chapter II cleared** — you should already know how an agent selects tools and binds to an environment (see [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment|Tool Use & Environment]]). Memory builds directly on that execution context.
 - **A GitHub repository you own, with Actions enabled** — you will run real workflows that upload artifacts and commit files.
 - **Comfort reading workflow YAML** — you will edit `.github/workflows/` and reason about jobs, steps, and `needs:`.
 - **Basic JSON + shell** — the drift detector and handoff document are a few lines each of `jq`, `sha256sum`, and `bash`. *(macOS ships without GNU `sha256sum` — `brew install coreutils`, or substitute `shasum -a 256`.)*
@@ -493,9 +496,9 @@ Close the lab with the placement drill from the Mastery Indicators. For each ite
 
 This chapter is the map of the Vaults; these three quests are the chambers you descend into. Each carries complete workflows, drift-detection scripts, and the handoff schema — finish all three to seal Domain 3.
 
-- 🧠 [**Vaults of Recollection: Agent Memory Strategies**](/quests/1001/agentic-memory-strategies/) — choose between short-term, long-term, and external memory, scope it to the task, and set expiration and reset rules (sub-skill 3.1).
-- 🧭 [**Anchoring the Drifting Agent: Stop Context Drift**](/quests/1010/agentic-state-persistence-and-drift/) — capture progress as durable artifacts, resume without repeating steps, and detect and correct drift mid-run (sub-skill 3.2).
-- 🌉 [**Crossing the Tool Planes: State Continuity Across Tools**](/quests/1010/agentic-state-continuity-cross-tools/) — share agent state across surfaces and prevent conflicting or stale context with a handoff document (sub-skill 3.3).
+- 🧠 [[it-journey/pages/_quests/1001/agentic-memory-strategies|**Vaults of Recollection: Agent Memory Strategies**]] — choose between short-term, long-term, and external memory, scope it to the task, and set expiration and reset rules (sub-skill 3.1).
+- 🧭 [[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift|**Anchoring the Drifting Agent: Stop Context Drift**]] — capture progress as durable artifacts, resume without repeating steps, and detect and correct drift mid-run (sub-skill 3.2).
+- 🌉 [[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools|**Crossing the Tool Planes: State Continuity Across Tools**]] — share agent state across surfaces and prevent conflicting or stale context with a handoff document (sub-skill 3.3).
 
 ## 🎮 Mastery Challenge
 
@@ -534,9 +537,9 @@ graph LR
 
 The vaults are carved and the world can no longer drift out from under your agent. But memory that is never measured is memory you cannot trust — and that is the next domain.
 
-- ➡️ **Next chapter:** [Chapter IV — Evaluation & Tuning](/quests/1010/agentic-codex-04-evaluation-and-tuning/)
-- ⬅️ **Previous chapter:** [Chapter II — Tool Use & Environment](/quests/1000/agentic-codex-02-tool-use-and-environment/)
-- 🏰 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning|Chapter IV — Evaluation & Tuning]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment|Chapter II — Tool Use & Environment]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
 
 ## 📚 Resource Codex
 
@@ -546,11 +549,11 @@ The vaults are carved and the world can no longer drift out from under your agen
 - [Caching dependencies with `actions/cache`](https://docs.github.com/en/actions/using-workflows/caching-dependencies-to-speed-up-workflows) — non-authoritative persistent state
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) — stateless tool surfaces that need explicit shared state
 - [GitHub Models](https://docs.github.com/en/github-models) — the reasoning engine behind cheap re-planning
-- [GH-600 Study Hub](/notes/gh-600/) — the campaign map: domains, weights, and the full quest line
-- 🏰 **In the wild (this repo):** [`scripts/ai/drift-guard.sh`](https://github.com/bamr87/it-journey/blob/main/scripts/ai/drift-guard.sh) is this chapter's drift detector in production, and the committed [`.quests/` ledger](https://github.com/bamr87/it-journey/blob/main/.quests/README.md) is Tier-3 memory the quest-perfection loop resumes from daily. Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- [[it-journey/pages/_notes/gh-600/index|GH-600 Study Hub]] — the campaign map: domains, weights, and the full quest line
+- 🏰 **In the wild (this repo):** [`scripts/ai/drift-guard.sh`](https://github.com/bamr87/it-journey/blob/main/scripts/ai/drift-guard.sh) is this chapter's drift detector in production, and the committed [`.quests/` ledger](https://github.com/bamr87/it-journey/blob/main/.quests/README.md) is Tier-3 memory the quest-perfection loop resumes from daily. Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** [[Tool Use & Environment]] **Next:** [[Evaluation & Tuning]] **Domain quests:** [[Vaults of Recollection: Agent Memory Strategies]] · [[Anchoring the Drifting Agent: Stop Context Drift]] · [[Crossing the Tool Planes: State Continuity Across Tools]] **Reference:** [[Taming Agent Memory and Context Drift]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** [[Tool Use & Environment]] **Next:** [[Evaluation & Tuning]] **Domain quests:** [[it-journey/pages/_quests/1001/agentic-memory-strategies|Vaults of Recollection: Agent Memory Strategies]] · [[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift|Anchoring the Drifting Agent: Stop Context Drift]] · [[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools|Crossing the Tool Planes: State Continuity Across Tools]] **Reference:** [[Taming Agent Memory and Context Drift]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -24,13 +24,15 @@ objectives:
     - command: ls
     - option: F
     - output_includes: north/
-source_file: 02-look-around.md
+source_file: courses/navigator/02-look-around.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/navigator/02-look-around.md
 teaches:
 - ls
 - ls -a
 - ls -F
 - hidden files
-title: 02 Look Around
+title: Look around
 xp: 20
 ---
 `ls` lists a directory: the current one by default, or any directory you name (`ls south`).

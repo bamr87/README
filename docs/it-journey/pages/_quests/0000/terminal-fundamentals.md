@@ -70,7 +70,9 @@ rewards:
   - Foundation for all scripting and development quests
   - Confident terminal usage across platforms
 skill_focus: devops
-source_file: terminal-fundamentals.md
+source_file: pages/_quests/0000/terminal-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/terminal-fundamentals.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Terminal'
 tags:
 - '0000'
@@ -79,7 +81,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Print your current working directory
+title: 'Terminal Fundamentals: Command Line Navigation Quest'
 validation_criteria:
   completion_requirements:
   - Navigate the file system using terminal commands
@@ -366,7 +368,7 @@ Once you can use `pwd`, `ls`, `cd`, and `cat`, reinforce those skills in [Bashcr
 - `cd cellar` moves you deeper into the adventure
 - `F1` opens in-game documentation when you need a hint
 
-After your first online run, continue with the [Bashcrawl Terminal Adventure Quest](/quests/0000/bashcrawl/) for the full quest checklist and then [Bash Scripting Mastery](/quests/0010/bash-scripting/) when you are ready to automate.
+After your first online run, continue with the [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Terminal Adventure Quest]] for the full quest checklist and then [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting Mastery]] when you are ready to automate.
 
 ---
 
@@ -415,7 +417,7 @@ After your first online run, continue with the [Bashcrawl Terminal Adventure Que
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Mastering the Bash Incantations: Binary Level 0010 (2) Command Line Sorcery Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

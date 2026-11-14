@@ -15,7 +15,9 @@ prerequisites:
 preview: /images/previews/giscus-comments.png
 sidebar:
   nav: docs
-source_file: giscus-comments.md
+source_file: pages/_docs/features/giscus-comments.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/giscus-comments.md
 tags:
 - giscus
 - jekyll
@@ -23,6 +25,7 @@ tags:
 - github-discussions
 title: Giscus Comments
 ---
+
 # Giscus Comments
 
 > Add a GitHub Discussions-powered comment system to your Jekyll site with automatic theme detection and privacy-friendly design.
@@ -345,5 +348,5 @@ If pages are creating duplicate discussions:
 
 ## See also
 
-- [[Features]]
-- [[PostHog Analytics]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/features/posthog-analytics|PostHog Analytics]]

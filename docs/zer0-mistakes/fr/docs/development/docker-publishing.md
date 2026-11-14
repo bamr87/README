@@ -18,7 +18,9 @@ prerequisites:
 preview: /images/previews/local-docker-publishing-pipeline.png
 sidebar:
   nav: docs
-source_file: docker-publishing.md
+source_file: fr/docs/development/docker-publishing.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/docker-publishing.md
 tags:
 - docker
 - release
@@ -30,6 +32,7 @@ translated_from_sha: 2c3546d339fc
 translation_of: pages/_docs/development/docker-publishing.md
 translation_source_url: /docs/development/docker-publishing/
 ---
+
 # Pipeline de publication Docker en local
 
 Vous pouvez compiler et publier la gem `jekyll-theme-zer0` entièrement à l'intérieur d'un conteneur Docker. Cela reproduit exactement le chemin de release CI, évitant les problèmes de décalage de version causés par des environnements Ruby différents sur l'hôte.
@@ -144,12 +147,12 @@ docker compose build --no-cache
 
 ## Ressources associées
 
-- [Gestion des releases](/docs/development/release-management/)
-- [Pipeline CI/CD](/docs/development/ci-cd/)
-- [Configuration DevContainer](/docs/development/devcontainer/)
+- [[zer0-mistakes/pages/_docs/development/release-management|Gestion des releases]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|Pipeline CI/CD]]
+- [[zer0-mistakes/pages/_docs/development/devcontainer|Configuration DevContainer]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Docker]]
-- [[Release Management]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]

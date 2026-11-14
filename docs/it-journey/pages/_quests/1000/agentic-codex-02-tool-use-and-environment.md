@@ -64,7 +64,9 @@ rewards:
   unlocks_features:
   - Continue The Agentic Codex — Domain 3 (Memory, State & Execution)
 skill_focus: ai-ml
-source_file: agentic-codex-02-tool-use-and-environment.md
+source_file: pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/agentic-codex-02-tool-use-and-environment.md
 tags:
 - '1000'
 - github-copilot
@@ -74,7 +76,7 @@ tags:
 - gh-600
 - tooling
 - project-based
-title: .github/workflows/agent.yml — least-privilege scope for a PR-opening agent
+title: 'Forging the Arsenal: Tool Use & Environment'
 validation_criteria:
   completion_requirements:
   - Configured a scoped tool set and an MCP server for an agent
@@ -86,6 +88,7 @@ validation_criteria:
   - Can select the minimum tool set for a stated agent task
   - Can write an MCP allow list and a least-privilege Actions permissions block
 ---
+
 *The forge glows in the dark of the smithy. You have summoned an agent and taught it to plan before it acts — but a planner without tools is a strategist with empty hands. It can reason about a pull request it cannot open, describe a build it cannot run, name an API it cannot reach. This chapter is the arming-room: you will choose its weapons, fit its armor, and bind it to the realm it must defend — granting exactly the reach it needs and not one tool more.*
 
 *The real-world skill under the spellcraft is the highest-weighted domain on the GH-600 exam: **how an agent acquires capability**. You will select and configure tools, stand up a Model Context Protocol (MCP) server so the agent can reach systems beyond the repository, scope its permissions to least privilege, and invoke it safely inside a GitHub Actions workflow. Get the arsenal wrong and the agent is either useless or dangerous. Get it right and it becomes a trusted member of your team.*
@@ -121,7 +124,7 @@ You will know you have mastered this chapter when you can:
 
 Before you light the forge, gather your reagents. This is Chapter II of **The Agentic Codex** — the previous chapter taught the agent to plan and to keep planning distinct from action. Now it earns its tools:
 
-- **Domain 1 under your belt** — finish [Chapter I — Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/) (or be comfortable with embedding agents in the software lifecycle and the plan-vs-action boundary).
+- **Domain 1 under your belt** — finish [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Chapter I — Agents in the SDLC]] (or be comfortable with embedding agents in the software lifecycle and the plan-vs-action boundary).
 - **A GitHub account and a repository you own** — you need push access and the ability to add secrets and variables.
 - **GitHub Copilot access** — VS Code with the Copilot extension, or access to the **Copilot coding agent** (the asynchronous agent that opens its own pull requests).
 - **A fine-grained personal access token** — minted with only the scopes you intend the agent to use, for wiring the GitHub MCP server.
@@ -420,10 +423,10 @@ Swap the stub for reality: commit `run-agent.sh` and `agent-step.sh` to a scratc
 
 This chapter is the field guide; the four quests below are the forge where you swing the hammer. Walk them in order — they ascend Domain 2's sub-skills 2.1 → 2.4.
 
-- **[Forging the Agent's Arsenal: Tool Selection & Permissions](/quests/1000/agentic-tool-selection-and-permissions/)** — sub-skill 2.1: identify, configure, and restrict the exact tools your agent needs, then scope its permissions to least privilege.
-- **[The MCP Conclave: Mastering Model Context Protocol Servers](/quests/1000/agentic-mcp-server-mastery/)** — sub-skill 2.2: configure local and remote MCP servers, registries, and allow lists so agents reach external systems securely.
-- **[Bind the Agent to the Realm: Dev Environment Integration](/quests/1001/agentic-dev-environment-integration/)** — sub-skill 2.3: wire `AGENTS.md`, a dev container, and secrets so an agent runs identically in Codespaces, CI, and on your machine.
-- **[The Shield of Retries: Safe Execution and Error Handling](/quests/1001/agentic-safe-execution-and-error-handling/)** — sub-skill 2.4: build retry logic, timeouts, rollbacks, and escalation paths that survive tool and API failures.
+- **[[it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions|Forging the Agent's Arsenal: Tool Selection & Permissions]]** — sub-skill 2.1: identify, configure, and restrict the exact tools your agent needs, then scope its permissions to least privilege.
+- **[[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]]** — sub-skill 2.2: configure local and remote MCP servers, registries, and allow lists so agents reach external systems securely.
+- **[[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]]** — sub-skill 2.3: wire `AGENTS.md`, a dev container, and secrets so an agent runs identically in Codespaces, CI, and on your machine.
+- **[[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling|The Shield of Retries: Safe Execution and Error Handling]]** — sub-skill 2.4: build retry logic, timeouts, rollbacks, and escalation paths that survive tool and API failures.
 
 ## 🎮 Mastery Challenge
 
@@ -465,9 +468,9 @@ graph LR
 
 The agent now holds its weapons and stands inside the realm's walls — but it has no memory. Run it twice and it repeats itself, forgetting every decision it made an hour ago. The next chapter teaches it to remember.
 
-- ➡️ **Next chapter:** [Chapter III — Memory, State & Execution](/quests/1001/agentic-codex-03-memory-state-and-execution/)
-- ⬅️ **Previous chapter:** [Chapter I — Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/)
-- 🏰 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution|Chapter III — Memory, State & Execution]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Chapter I — Agents in the SDLC]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]]
 
 ## 📚 Resource Codex
 
@@ -478,10 +481,10 @@ The agent now holds its weapons and stands inside the realm's walls — but it h
 - [Copilot coding agent — GitHub Docs](https://docs.github.com/en/copilot/using-github-copilot/coding-agent) — the asynchronous, PR-opening agent
 - [Controlling permissions for `GITHUB_TOKEN`](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication#permissions-for-the-github_token) — the least-privilege `permissions:` block
 - [Using environments for deployment — GitHub Docs](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment) — environment protection rules and required reviewers
-- 🏰 **In the wild (this repo):** [`.vscode/mcp.json`](https://github.com/bamr87/it-journey/blob/main/.vscode/mcp.json) (editor MCP, prompt-supplied token), [`scripts/ai/mcp/github-readonly.json`](https://github.com/bamr87/it-journey/blob/main/scripts/ai/mcp/github-readonly.json) (runner MCP + allow-list convention), and the least-privilege `permissions:` blocks in every workflow. Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- 🏰 **In the wild (this repo):** [`.vscode/mcp.json`](https://github.com/bamr87/it-journey/blob/main/.vscode/mcp.json) (editor MCP, prompt-supplied token), [`scripts/ai/mcp/github-readonly.json`](https://github.com/bamr87/it-journey/blob/main/scripts/ai/mcp/github-readonly.json) (runner MCP + allow-list convention), and the least-privilege `permissions:` blocks in every workflow. Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** [[Agents in the SDLC]] **Next:** [[Memory, State & Execution]] **Domain 2 quests:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] · [[The MCP Conclave: Mastering Model Context Protocol Servers]] · [[Bind the Agent to the Realm: Dev Environment Integration]] · [[The Shield of Retries: Safe Execution and Error Handling]] **Reference doc:** [[MCP Servers and Agent Tooling in Practice]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** [[Agents in the SDLC]] **Next:** [[Memory, State & Execution]] **Domain 2 quests:** [[Forging the Agent's Arsenal: Tool Selection & Permissions]] · [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]] · [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]] · [[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling|The Shield of Retries: Safe Execution and Error Handling]] **Reference doc:** [[MCP Servers and Agent Tooling in Practice]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

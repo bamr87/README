@@ -13,13 +13,15 @@ permalink: /about/features/
 preview: null
 quest: /quests/featured-future/
 slug: features
-source_file: index.md
+source_file: pages/_about/features/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/features/index.md
 tags:
 - features
 - learning
 - education
 - community
-title: Index
+title: Learning Platform Features
 type: default
 ---
 ## Educational Features
@@ -31,11 +33,11 @@ These are the learning-focused features that make IT-Journey an end-to-end educa
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature                                               | Status      | Description | Quest |
 | ----------------------------------------------------- | ----------- | ----------- | ----- |
-| **AI-Powered Learning Paths**                         | ✅ Active   | Personalized learning recommendations using AI | [AI Journey](/quests/) |
-| **Interactive Quests System**                         | ✅ Active   | Gamified learning challenges and exercises | [Quest System](/quests/) |
-| **Progressive Skill Levels**                          | ✅ Active   | Structured progression from zero to hero | [Levels](/quests/home/) |
+| **AI-Powered Learning Paths**                         | ✅ Active   | Personalized learning recommendations using AI | [[it-journey/pages/_quests/README\|AI Journey]] |
+| **Interactive Quests System**                         | ✅ Active   | Gamified learning challenges and exercises | [[it-journey/pages/_quests/README\|Quest System]] |
+| **Progressive Skill Levels**                          | ✅ Active   | Structured progression from zero to hero | [[it-journey/pages/_quests/home\|Levels]] |
 | **Community Discussions**                             | ✅ Active   | GitHub Discussions for peer learning | [Join Discussion](https://github.com/bamr87/it-journey/discussions) |
-| **Collaborative Learning**                            | ✅ Active   | Open-source contribution opportunities | [Contributing](/about/contributing/) |
+| **Collaborative Learning**                            | ✅ Active   | Open-source contribution opportunities | [[it-journey/pages/_about/contribute/contributing\|Contributing]] |
 
 ### 📚 Content & Documentation
 
@@ -120,7 +122,7 @@ Have an idea for a new learning feature? [Submit a feature request](https://gith
 
 ## About Our Features
 
-All features are designed following our [Core Principles](/about/#core-principles):
+All features are designed following our [[it-journey/pages/_about/about#core-principles|Core Principles]]:
 - 🔒 **Design for Failure (DFF)** - Reliable and resilient
 - 🔄 **Don't Repeat Yourself (DRY)** - Efficient and maintainable
 - ⚡ **Keep It Simple (KIS)** - Intuitive and accessible
@@ -131,7 +133,7 @@ All features are designed following our [Core Principles](/about/#core-principle
 ---
 
 **Related Pages:**
-- [About IT-Journey](/about/) - Our mission and vision
-- [Getting Started](/quickstart/) - Begin your learning journey
-- [Community Guidelines](/about/contributing/) - Join our community
+- [[it-journey/pages/_about/about|About IT-Journey]] - Our mission and vision
+- [[zer0-mistakes/pages/_quickstart/index|Getting Started]] - Begin your learning journey
+- [[it-journey/pages/_about/contribute/contributing|Community Guidelines]] - Join our community
 - [Theme Documentation](https://zer0-mistakes.com/about/features/) - Technical details

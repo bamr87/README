@@ -20,7 +20,9 @@ lastmod: 2025-10-19 00:00:00+00:00
 permalink: /about/features/ai-development-guide/
 preview: /images/previews/ai-assisted-development-with-zer0-mistakes.png
 snippet: AI-powered development for modern Jekyll themes
-source_file: ai-development-guide.md
+source_file: pages/_about/features/ai-development-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/ai-development-guide.md
 sub-title: VS Code Copilot optimization for Jekyll theme development
 tags:
 - ai-development
@@ -33,8 +35,9 @@ technical_requirements:
 - Jekyll 3.9+ or 4.x
 - Ruby 2.7+
 - Git for version control
-title: 🤖 AI-Assisted Development with Zer0-Mistakes
+title: AI-Assisted Development with Zer0-Mistakes
 ---
+
 # 🤖 AI-Assisted Development with Zer0-Mistakes
 
 **Master AI-powered Jekyll theme development** using VS Code Copilot, automated workflows, and IT-Journey principles for maximum productivity and code quality.
@@ -563,7 +566,7 @@ lighthouse-cli http://localhost:4000 # Performance audit
 
 ---
 
-**Ready to supercharge your Jekyll development with AI? Start with our [comprehensive automation system](/about/features/comprehensive-gem-automation-system/) and experience the future of theme development!** 🚀
+**Ready to supercharge your Jekyll development with AI? Start with our [[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|comprehensive automation system]] and experience the future of theme development!** 🚀
 
 ---
 

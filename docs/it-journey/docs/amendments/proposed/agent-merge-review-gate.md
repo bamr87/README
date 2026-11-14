@@ -1,5 +1,7 @@
 ---
-source_file: agent-merge-review-gate.md
+source_file: docs/amendments/proposed/agent-merge-review-gate.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/proposed/agent-merge-review-gate.md
 title: NEW — Agent merge of mergeable PRs, and a review gate
 ---
 # NEW — Agent merge of mergeable PRs, and a review gate

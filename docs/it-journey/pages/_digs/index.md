@@ -10,11 +10,13 @@ excerpt: A shelf for the repository's own history, one bounded dig at a time.
 lastmod: '2026-09-26T21:21:40.000Z'
 permalink: /digs/
 render_with_liquid: true
-source_file: index.md
+source_file: pages/_digs/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_digs/index.md
 tags:
 - git
 - archaeology
-title: Index
+title: Digs
 ---
 A dig is a published reading of Git history. Each installment names one bamr87 repository and one commit range on or after 2020-01-01. The commits are the evidence. The prose may interpret them, but it has to say when it is inferring.
 

@@ -1,5 +1,7 @@
 ---
-source_file: index.md
+source_file: wargames/abraxas/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/abraxas/index.md
 title: Index
 ---
 ---

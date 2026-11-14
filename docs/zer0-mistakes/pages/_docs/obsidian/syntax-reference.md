@@ -9,13 +9,16 @@ lastmod: '2026-04-24T15:06:30Z'
 layout: default
 permalink: /docs/obsidian/syntax-reference/
 preview: /images/previews/obsidian-syntax-reference.png
-source_file: syntax-reference.md
+source_file: pages/_docs/obsidian/syntax-reference.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/syntax-reference.md
 tags:
 - obsidian
 - syntax
 - reference
 title: Obsidian Syntax Reference
 ---
+
 # Obsidian Syntax Reference
 
 Everything in this reference is handled by **either** `assets/js/obsidian-wiki-links.js` (client-side, default GH Pages build) **or** `_plugins/obsidian_links.rb` (server-side, opt-in for forks that build with vanilla Jekyll). Both produce equivalent HTML.
@@ -112,15 +115,15 @@ The panel is a server-side Liquid include (`_includes/content/backlinks.html`) â
 | Excalidraw `.excalidraw.md` | Excluded from the build | Embed exported PNG/SVG |
 | Dataview queries | Obsidian-only | Use Liquid loops on the site |
 | Live block references (`^block-id`) | Degrades to plain link | Use heading anchors instead |
-| Interactive global graph view | Available at [/docs/obsidian/graph/](/docs/obsidian/graph/) | Force-directed cytoscape view of every wiki-link |
+| Interactive global graph view | Available at [[zer0-mistakes/pages/_docs/obsidian/graph\|/docs/obsidian/graph/]] | Force-directed cytoscape view of every wiki-link |
 
 These are all candidates for a v2 follow-up. None of them break a build when present in source â€” they are simply hidden from the published site or rendered without the interactive layer.
 
 ## See also
 
-- [[Obsidian Vault Integration]]
-- [[Getting Started with the Obsidian Vault]]
-- [[Obsidian Authoring Workflow]]
-- [[Obsidian Graph View]]
-- [[Obsidian Integration Troubleshooting]]
-- [[front-matter]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Getting Started with the Obsidian Vault]]
+- [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow|Obsidian Authoring Workflow]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

@@ -1,0 +1,66 @@
+---
+source_file: tools/jev/steps/README.md
+source_repo: bamr87/bamr87
+source_url: https://github.com/bamr87/bamr87/blob/main/tools/jev/steps/README.md
+title: tools/jev/steps/ — loop step specs
+---
+# tools/jev/steps/ — loop step specs
+
+> One spec per agent step a loop runs: the hard-rules prompt, its inputs, the tool allowlist, the wall clock, the workspace contract and the risk tags, in one reviewed file pair that CI and the local loop engine render the same bytes from.
+
+This is JEV capability two ([bamr87/bamr87#485](https://github.com/bamr87/bamr87/issues/485), epic [#484](https://github.com/bamr87/bamr87/issues/484)). The decision, the survey of what was considered instead, and the governance trade-off are in [ADR 0002](../../../docs/adr/0002-agent-step-specs-and-local-runner.md); the loader is [`../spec.py`](../spec.py); the operator doc is [`docs/JEV.md`](../../../docs/JEV.md#capability-two--loop-step-specs).
+
+## Layout
+
+`steps/<loop>/<step>.yml` + `steps/<loop>/<step>.prompt.txt`. `<loop>` is the workflow's file stem (`repo-scout` for `.github/workflows/repo-scout.yml`); the console's `LOOPS` id (`repo_scout`) joins it through its `workflow` field. `<step>` is the job the agent step runs in.
+
+## Review gate
+
+Any change under `tools/jev/steps/**` is security-sensitive config under constitution § 12.3: the pull request is gated (the `needs-amr` label and *Needs Amr* on the Fleet project, § 12.4 — the label is not created yet, HUB-045), so no agent merges it under § 12.2, and the maintainer's review is the control that decides it.
+
+## The keys (`schema: loop-step/v1`)
+
+| Key | What it holds |
+| --- | --- |
+| `loop`, `step` | equal to the directory and the file stem |
+| `call_site` | `<workflow>.yml:<job>`, the key of `_data/fleet.yml` `budget.call_sites` — the dollar cap |
+| `step_id` | the `id:` of the `anthropics/claude-code-action` step in that job |
+| `prompt` | `<step>.prompt.txt`, beside the spec |
+| `inputs` | `{{TOKEN}}` → the caller's row key that fills it (for scout, a `plan.json` `include[]` key); `{}` for a prompt with no caller-filled part (the doctor), which renders to its own bytes |
+| `model_from`, `max_turns_from` | dotted `_data/fleet.yml` keys; the model must resolve to an exact id in `ai_models.allowed` (constitution § 13.3) |
+| `timeout_minutes` | the job's `timeout-minutes`, and the local engine's wall clock |
+| `allowed_tools` | the `--allowedTools` grant, in order |
+| `workspace` | `cwd` (`target`: the item's repository is the checkout, scout; `hub`: the hub itself is, whatever the item names, the doctor — parity then requires the job's first checkout to be the hub), `brief_dir` (a relative path inside the clone: no `..`, `.` or `.git` part; the engine's own directory — TMPDIR, the context pack), `outputs` (may be empty), `github_credential` (`none`: no GitHub credential reaches the agent step by any route; `fleet-write`: CI hands the step FLEET_TOKEN as `FLEET_WRITE_TOKEN` and the resolve-fleet-token probe's winner as its `github_token` — parity holds the step to exactly those routes, and the local engine hands the agent no credential under either) — what a runner must reproduce; optional `exceptions` names a gap CI still leaves open (`app-token`, `setting-sources`) with the reason, which `steps check` reports instead of hiding; optional `brief_file` is the fixed name a prompt reads its brief by in the clone root (the doctor's `remediation-workorder.md`: CI downloads it with no path, the engine places the item's brief there and git-excludes it); `no_brief: true` (the agent fill): the prompt is the whole work order, so CI downloads no artifact, the planner's rows carry no brief, the engine places none and `local.context.mode` must be `'off'` |
+| `risk` (optional) | per action: `what`, `tags` from reversible / external / money, `tier` low / medium / high; an irreversible, external or money action starts high (§ 13.6) |
+| `evals` (optional) | the eval set's hub-relative path, or `null` during the § 13.1 grace period |
+| `local` (optional) | how `python3 -m tools.jev loop` runs the step on a workstation: `adapter` (a key of `tools/jev/adapters` `REGISTRY`), `switch {config, variable, default}` (a `_data/fleet.yml` bool honoured on every run, and the repo variable a `--scheduled` run reads; `steps check` holds it equal to the workflow's gating `if:` — default `'off'` needs `vars.<VARIABLE> == 'true'`, `'on'` needs `!= 'false'`; a step without one refuses `--scheduled`), `planner {argv, flags}` and `publish {argv, apply_flag, risk}` (`tools/dash-gen` argv templates whose subcommand is pinned in `tools/jev/spec.py` — a planner only `PLANNER_COMMANDS` (`scout`, `remediate`), a filer only `PUBLISH_COMMANDS` (`scout-file`, `doctor-file`), whose entry also pins its `apply_flag`, and `PUBLISH_REVIEWED_FLAGS` the filer's reviewed flag the engine adds to every apply — and which never carry the apply flag (`--apply`, and the spec's own), the reviewed flag, a prefix of either or a `--` passthrough, with `{plan_dir}` `{nwo}` `{name}` `{branch}` `{item_dir}` `{bodies_dir}` (the publish phase's own directory) `{validated}` (the adapter's validated file) `{run_ref}` placeholders, filled in one pass; `risk` names the `risk.<action>` whose tier is recorded with the write; every local filing, whatever its tier, needs the maintainer's `--apply`) and `on_budget_hit` (`discard`), `harvest` (`outputs`, the default: the declared outputs are copied out and tracked edits are discarded, as CI's tree check does; `patch`: the agent's edits ARE the output — the engine diffs the clone against the fresh HEAD with its own git into `changes.patch`, the clone may carry the agent's own branch and commits, and the step declares no outputs — the doctor), and `context {mode, file, providers, max_chars, deadline_s, days}` (every key optional, an absent block is all the defaults: the host-built context pack the engine places as `<brief_dir>/<file>` beside the brief in the clone — `mode` `auto`, `'off'` quoted, or `require`, which fails an item before any spend when a plane is unavailable; `file` a bare `.md` name that is never a brief's name, a declared output under the brief directory or an engine file's stem; `providers` a subset of `history`, `lake_issues`, `lake_ci`, `lake_agents`, `index_code`, `telemetry_errors`; `max_chars` 2000..64000; `deadline_s` up to 300; `days` 1..365). CI ignores it ([docs/JEV.md](../../../docs/JEV.md#the-loop-runner-p1), [the context pack](../../../docs/JEV.md#the-context-pack)) |
+
+`loop-step/v1` evolves the way `harness-registry/v1` does: an optional key added together with its loader support keeps v1; removing or renaming a key, making an optional key required, or changing a key's meaning bumps to `loop-step/v2`. The loader stays strict — an older loader refuses a newer spec rather than ignoring what it does not know — and every consumer reads specs through `tools/jev/spec.py`, never by parsing the YAML itself.
+
+A spec carries **no literal model, turn cap or dollar cap**: those already live in `_data/fleet.yml`, and the spec references them (AGENTS.md, central configuration). The workflow still carries its caps as literals in `claude_args`, because `harness_registry`, the workflow atlas and `test_ai_budget.py` read literals; `python3 -m tools.jev steps check` holds every one of them equal to what the spec resolves to.
+
+## Placeholders
+
+A prompt uses `{{UPPER_SNAKE}}` tokens, the same syntax the brief templates use, and every token is filled by the caller. Rendering is a single pass: a value is never scanned again for tokens, an undeclared, missing or empty value is refused, and so is a value with a line break. A prompt never contains `${{` — Actions does not re-evaluate an expression's result, so one would reach the agent verbatim.
+
+## Why `.prompt.txt`
+
+The fleet's Markdown gates rewrite `*.md` to one paragraph per line; a `.md` prompt would be reflowed from 60 lines to 28 and pushed back by CI. `.txt` is outside those gates. The whitespace hooks still touch it, so the loader requires the state they produce — LF only, no trailing whitespace, exactly one final newline — and `.gitattributes` pins `eol=lf`.
+
+## Who renders it
+
+For the agent fill (`fanout/agent-fill-standardize`, `fanout/agent-fill-schema`), nobody fills anything either: the dispatch's kit chooses the step, each kit's brief is its own spec pair and its own claude-code-action step (`fill-<kit>`, gated on `inputs.kit`) with the inline prompt held byte-equal, and the two steps share the job's cap (`fanout.yml:agent-fill`) because only one runs. The shell `case` over two heredocs it replaced could not be one prompt: a token's value is a single line.
+
+For the doctor (`fleet-pulse/doctor`), nobody fills anything: the prompt has no token, so the workflow's inline `prompt: |` is the spec's bytes and `steps check` holds them equal; a prompt edit without the spec, or the reverse, fails the gate, and the `fix` step's `JEV_STEP_SHA256` pins the pair. Locally the planner (`dash-gen remediate --plan-dir`) carries the same render in every row and the loop runner checks it.
+
+For evolve (`repo-evolution/evolve`), the four tokens (`{{NWO}}`, `{{REPO_NAME}}`, `{{BRANCH}}`, `{{BRIEF}}`) are the matrix row's keys: the workflow keeps its `prompt: |` inline with the matrix expressions in their places, which parity accepts when it is byte-equal to the spec rendered with those expressions, so CI's behaviour did not change; the plan job (`dash-gen targets`) still carries the spec's render in every row (`include[].prompt`, the row's last key) for the local engine's parity check, and the `evolve` step pins `JEV_STEP_SHA256`.
+
+For scout, the plan job: `dash-gen scout` (`repo_scout.build_plan`) loads `repo-scout/scout.yml` once, renders the prompt for every leg from that leg's `plan.json` row (`include[].prompt`, the row's last key), and the workflow's agent step reads `prompt: ${{ matrix.prompt }}`. The plan fails before any spend when the spec does not load or a leg has no prompt. Locally, `python3 -m tools.jev steps render <loop> <step> --set TOKEN=value …` prints the same bytes, and the loop runner (`python3 -m tools.jev loop`) renders from the same spec and refuses a plan row whose prompt differs from its own render by a byte. While a workflow still carries its prompt inline, `steps check` accepts that inline text only when it is byte-equal to the spec rendered with the matrix expressions (`${{ matrix.<key> }}`), so a move is proven before the workflow changes.
+
+## Changing a prompt, a grant or a cap
+
+1. Edit the `.prompt.txt` or the spec. A prompt that orders a tool by name ("with the Read tool") needs that tool in `allowed_tools` — the check fails otherwise (bamr87/bamr87#89, where a prompt ordered a Read it was never granted).
+2. A cap or model change is made in `_data/fleet.yml`, and the workflow's literal is changed to match.
+3. Set the agent step's `env: JEV_STEP_SHA256` in the workflow to the spec pair's new content hash (`steps check` prints it). Any edit to `<step>.yml` or `<step>.prompt.txt` therefore touches the workflow file, which keeps GitHub's `workflow`-scope barrier over the hard rules ([ADR 0002](../../../docs/adr/0002-agent-step-specs-and-local-runner.md#governance-trade-off)).
+4. Update the pinned hashes in `tools/test_jev_spec.py` (and `.github/scripts/dash-gen/test_scout.py` for scout; for the doctor, the workflow's inline copy too) in the same PR. That speed bump is deliberate, but it is not a barrier: the same PR re-pins them.
+5. Run `python3 -m tools.jev steps check` and `python3 tools/test_jev_spec.py`.

@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "outbox",
+  "title": "Outbox",
+  "corpus": "docs/outbox",
+  "counts": {
+    "pages": 21,
+    "sections": 4,
+    "max_depth": 3,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "459191c53e4947ec",
+  "tree": {
+    "type": "section",
+    "title": "Outbox",
+    "index": "outbox/README.md",
+    "pages": 21,
+    "children": [
+      {
+        "type": "page",
+        "title": "outbox (README)",
+        "path": "outbox/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "outbox/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "e2e \u2014 local end-to-end proof of the platform plan",
+        "path": "outbox/e2e/README.md",
+        "rel": "e2e/README.md",
+        "folder": "e2e"
+      },
+      {
+        "type": "page",
+        "title": "outbox (AGENTS)",
+        "path": "outbox/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "outbox (CLAUDE)",
+        "path": "outbox/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "PRD \u2014 outbox",
+        "path": "outbox/PRD.md",
+        "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "SCHEMA \u2014 bamr87/outbox",
+        "path": "outbox/SCHEMA.md",
+        "rel": "SCHEMA.md"
+      },
+      {
+        "type": "section",
+        "title": "Agents",
+        "rel": "agents",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "Claimant-A",
+            "path": "outbox/agents/claimant_a.md",
+            "rel": "agents/claimant_a.md"
+          },
+          {
+            "type": "page",
+            "title": "Claimant-B",
+            "path": "outbox/agents/claimant_b.md",
+            "rel": "agents/claimant_b.md"
+          },
+          {
+            "type": "page",
+            "title": "Grok Bots group kickoff",
+            "path": "outbox/agents/grok_bots_kickoff.md",
+            "rel": "agents/grok_bots_kickoff.md"
+          },
+          {
+            "type": "page",
+            "title": "Scout",
+            "path": "outbox/agents/scout.md",
+            "rel": "agents/scout.md"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "outbox/docs/README.md",
+        "pages": 10,
+        "children": [
+          {
+            "type": "page",
+            "title": "outbox documentation",
+            "path": "outbox/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "outbox CLI reference",
+            "path": "outbox/docs/reference/cli.md",
+            "rel": "docs/reference/cli.md",
+            "folder": "docs/reference"
+          },
+          {
+            "type": "page",
+            "title": "outbox \u2014 Constitution",
+            "path": "outbox/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 outbox",
+            "rel": "docs/amendments",
+            "index": "outbox/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 outbox",
+                "path": "outbox/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "outbox/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "outbox/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "outbox/docs/adr/README.md",
+            "pages": 4,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "outbox/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "outbox/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0002 \u2014 Belt profile and claim desk",
+                "path": "outbox/docs/adr/0002-belt-profile-and-claim-desk.md",
+                "rel": "docs/adr/0002-belt-profile-and-claim-desk.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "outbox/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

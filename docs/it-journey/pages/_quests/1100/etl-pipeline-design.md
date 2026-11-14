@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the Data Warehousing and Apache Spark quests
 skill_focus: data-engineering
-source_file: etl-pipeline-design.md
+source_file: pages/_quests/1100/etl-pipeline-design.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/etl-pipeline-design.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - ETL Pipelines'
 tags:
 - '1100'
@@ -86,7 +88,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: 'Any Codespace or container with Python works. For the Airflow chapter:'
+title: 'ETL Pipeline Design: Scalable Python Data Pipelines'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -501,17 +503,17 @@ The `>>` operator declares dependencies: `load` cannot start until `transform` s
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Data Warehousing](/quests/1100/data-warehousing/) - Design the analytical destination
+- 🎯 [[it-journey/pages/_quests/1100/data-warehousing|Data Warehousing]] - Design the analytical destination
 
 **Explore Side Adventures**:
-- ⚔️ [Apache Spark](/quests/1100/apache-spark/) - Distribute your transformations
-- ⚔️ [Data Quality Engineering](/quests/1100/data-quality/) - Validate every load
+- ⚔️ [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]] - Distribute your transformations
+- ⚔️ [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]] - Validate every load
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Data Warehousing](/quests/1100/data-warehousing/)  
-**🏗️ System Engineer**: Explore [Apache Spark](/quests/1100/apache-spark/)  
-**📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1100/data-warehousing|Data Warehousing]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]]
 
 ## 📚 Resources
 
@@ -540,6 +542,6 @@ The `>>` operator declares dependencies: `load` cannot start until `transform` s
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] · [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] · [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -22,7 +22,9 @@ permalink: /fr/docs/features/navigation-architecture/
 preview: /images/previews/es6-modular-navigation-architecture.png
 sidebar:
   nav: docs
-source_file: navigation-architecture.md
+source_file: fr/docs/features/navigation-architecture.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/navigation-architecture.md
 tags:
 - navigation
 - javascript
@@ -34,6 +36,7 @@ translated_from_sha: 4e083aa40f50
 translation_of: pages/_docs/features/navigation-architecture.md
 translation_source_url: /docs/features/navigation-architecture/
 ---
+
 # Architecture de navigation modulaire ES6
 
 Le JavaScript de navigation de zer0-mistakes est organisé sous forme de modules ES6 dans `assets/js/modules/navigation/`. Cette approche modulaire permet le tree-shaking, des tests unitaires indépendants et une extension facile sans toucher à des fichiers monolithiques.
@@ -101,7 +104,7 @@ localStorage.setItem('zer0-nav-expanded-nodes', JSON.stringify([...expandedNodeI
 
 ### Scroll Spy
 
-`scroll-spy.js` met en surbrillance la section courante dans la table des matières au fur et à mesure que l'utilisateur défile. L'entrée active est le dernier titre dont le haut a franchi la ligne de lecture (`scroll-padding-top` sous le haut de la fenêtre), recalculée à chaque frame d'animation à partir des décalages de titres mis en cache. Voir [Table des matières](/docs/features/toc/#scroll-spy).
+`scroll-spy.js` met en surbrillance la section courante dans la table des matières au fur et à mesure que l'utilisateur défile. L'entrée active est le dernier titre dont le haut a franchi la ligne de lecture (`scroll-padding-top` sous le haut de la fenêtre), recalculée à chaque frame d'animation à partir des décalages de titres mis en cache. Voir [[zer0-mistakes/pages/_docs/features/toc#scroll-spy|Table des matières]].
 
 ### Dégradation progressive
 
@@ -147,12 +150,12 @@ L'include de la barre de navigation affiche la barre Bootstrap 5, remplit les li
 
 ## Voir aussi
 
-- [Repli de navigation dynamique](/docs/features/dynamic-navigation/)
-- [Navigation par barre latérale](/docs/features/sidebar-navigation/)
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/dynamic-navigation|Repli de navigation dynamique]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation par barre latérale]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
 
 ## Voir aussi
 
-- [[Navigation]]
-- [[Keyboard Navigation]]
-- [[Features]]
+- [[zer0-mistakes/fr/about/settings/navigation|Navigation]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]

@@ -32,9 +32,11 @@ redirect_from:
 - /quickstart/theme-architecture/
 skill_focus: fullstack
 slug: frontend-forests
-source_file: frontend.md
+source_file: pages/_quests/0100/frontend.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/frontend.md
 tags: []
-title: Frontend
+title: 'Frontend Forests: Building a Jekyll Site with Bootstrap'
 type: default
 ---
 ## 🎯 Quest Objectives
@@ -201,7 +203,7 @@ Drop a file with the same path into your project to replace the theme's version,
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0100/README|Level 0100 - Frontend Development & Docker]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

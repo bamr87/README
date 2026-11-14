@@ -9,13 +9,16 @@ machine_translated: true
 permalink: /fr/about/theme/
 preview: /images/previews/bootstrap-theme-examples.png
 source: https://getbootstrap.com/docs/5.3/examples/cheatsheet/
-source_file: theme.md
+source_file: fr/about/theme.md
 source_icon: bi-palette
-title: Theme
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/theme.md
+title: Exemples de thème Bootstrap
 translated_from_sha: f1e267f28ce1
 translation_of: pages/_about/theme.md
 translation_source_url: /about/theme/
 ---
+
 ## Aide-mémoire Bootstrap
 
 L'iframe suivant charge l'aide-mémoire officiel de Bootstrap pour une référence rapide sur les composants, utilitaires et assistants disponibles.

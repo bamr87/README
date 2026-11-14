@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 10:15:00+00:00
 layout: article
 preview: /images/previews/local-resilience-networks-how-communities-coordina.png
-source_file: 2026-04-28-local-resilience-networks.md
+source_file: pages/_posts/world/2026-04-28-local-resilience-networks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/world/2026-04-28-local-resilience-networks.md
 tags:
 - communities
 - resilience
 - planning
 - civic-infrastructure
-title: 2026 04 28 Local Resilience Networks
+title: 'Local Resilience Networks: How Communities Coordinate Before a Crisis'
 ---
+
 Resilience is often discussed after a crisis, but the strongest communities build coordination habits before they need them. A local resilience network is a practical way for neighbors, small organizations, public agencies, and businesses to share information and resources when normal systems are strained.
 
 ## Map the Everyday Network

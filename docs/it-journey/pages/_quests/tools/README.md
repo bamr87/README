@@ -12,14 +12,16 @@ layout: default
 mermaid: true
 permalink: /quests/tools/
 preview: /images/previews/tools-collection-development-tools-workflows.webp
-source_file: README.md
+source_file: pages/_quests/tools/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/README.md
 tags:
 - quests
 - tools
 - git
 - version-control
 - workflows
-title: 'Tools Collection: Development Tools & Workflows'
+title: Tools Collection - Development Tools & Workflows
 ---
 # Tools Collection: Development Tools & Workflows
 
@@ -143,10 +145,10 @@ Master Git workflows specifically for Django projects. Learn migration managemen
 
 ### 👑 Epic Adventures
 
-#### [Epic Quest: Zer0 to Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/)
+#### [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0 to Her0 CMStyle]]
 **Quest Type**: Epic 👑 | **Difficulty**: ⚔️ Epic | **Estimated Time**: 15-25 hours
 
-> 🏰 This epic now lives in [the Codex](/quests/codex/) with the realm's other campaign hubs.
+> 🏰 This epic now lives in [[it-journey/pages/_quests/codex/index|the Codex]] with the realm's other campaign hubs.
 
 The ultimate journey from complete beginner to configuration management hero. A multi-session quest covering environment setup, version control, CI/CD pipelines, and documentation.
 
@@ -172,7 +174,7 @@ The ultimate journey from complete beginner to configuration management hero. A 
 3. [Planting Seeds: Software Evolution](planting-seeds.md)
 
 ### For the Complete Journey
-1. [Epic Quest: Zer0 to Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/) - Start here for the full experience!
+1. [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0 to Her0 CMStyle]] - Start here for the full experience!
 
 ## Collection Integration
 

@@ -13,7 +13,9 @@ permalink: /docs/features/site-search/
 preview: /images/previews/site-search.png
 sidebar:
   nav: docs
-source_file: site-search.md
+source_file: pages/_docs/features/site-search.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/site-search.md
 tags:
 - search
 - navigation
@@ -21,6 +23,7 @@ tags:
 - keyboard
 title: Site Search
 ---
+
 # Site Search
 
 Client-side search functionality with a Bootstrap modal interface and keyboard shortcut activation.
@@ -313,10 +316,10 @@ searchInput.addEventListener('input', () => {
 
 ## Related
 
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
-- [Modal Components](/docs/bootstrap/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Modal Components]]
 
 ## See also
 
-- [[Features]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

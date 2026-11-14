@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'What installer profiles are: declarative YAML manifests under templates/profiles
   that replace the old mode flags and control what gets installed.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: profiles.md
+source_file: docs/installation/profiles.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/profiles.md
 tags:
 - installation
 - setup
 title: Profiles
 ---
+
 # Profiles
 
 A **profile** is a declarative YAML manifest under [`templates/profiles/`](../../templates/profiles/) that tells the installer what to install and how to brand it. Profiles replaced the old if/elif `--minimal | --full | --fork | --remote | --github` mode dispatcher.

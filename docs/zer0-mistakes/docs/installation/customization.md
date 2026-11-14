@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'Three fork-friendly extension points for customizing the Zer0-Mistakes
   installer without editing the bootstrap or CLI: templates, profiles, and modules.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: customization.md
+source_file: docs/installation/customization.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/customization.md
 tags:
 - installation
 - setup
 title: Customization
 ---
+
 # Customization
 
 The installer is designed for forking. Three extension points cover almost every customization scenario without modifying the bootstrap or CLI dispatcher.

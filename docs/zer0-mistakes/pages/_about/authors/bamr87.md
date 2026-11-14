@@ -7,6 +7,8 @@ lastmod: 2026-06-22 00:00:00+00:00
 layout: author
 permalink: /authors/bamr87/
 sidebar: false
-source_file: bamr87.md
-title: Bamr87
+source_file: pages/_about/authors/bamr87.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/authors/bamr87.md
+title: Amr Abdel-Motaleb
 ---

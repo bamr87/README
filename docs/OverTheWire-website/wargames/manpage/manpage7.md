@@ -2,7 +2,9 @@
 gamename: manpage
 layout: default
 level: 7
-source_file: manpage7.md
+source_file: wargames/manpage/manpage7.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/manpage/manpage7.md
 title: Manpage7
 ---
 There is no information for this level, intentionally.

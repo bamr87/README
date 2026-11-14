@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - Access to the deep learning frameworks, vision, and NLP quests
 skill_focus: ai-ml
-source_file: neural-networks.md
+source_file: pages/_quests/1101/neural-networks.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/neural-networks.md
 sub_title: 'Level 1101 (13) Quest: Main Quest - Neural Networks Deep Dive'
 tags:
 - '1101'
@@ -89,7 +91,7 @@ tags:
 - data-science
 - hands-on
 - gamified-learning
-title: 'Apple Silicon: PyTorch can use the MPS backend for acceleration'
+title: 'Neural Networks Deep Dive: Build One From Scratch'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -420,17 +422,17 @@ print("Predictions:", model(X).detach().round().ravel().tolist())
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/) - PyTorch vs. TensorFlow
+- 🎯 [[it-journey/pages/_quests/1101/deep-learning-frameworks|Deep Learning Frameworks]] - PyTorch vs. TensorFlow
 
 **Explore Side Adventures**:
-- ⚔️ [Computer Vision](/quests/1101/computer-vision/) - Convolutional networks for images
-- ⚔️ [Natural Language Processing](/quests/1101/natural-language-processing/) - Transformers for text
+- ⚔️ [[it-journey/pages/_quests/1101/computer-vision|Computer Vision]] - Convolutional networks for images
+- ⚔️ [[it-journey/pages/_quests/1101/natural-language-processing|Natural Language Processing]] - Transformers for text
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deep Learning Frameworks](/quests/1101/deep-learning-frameworks/)  
-**🏗️ System Engineer**: Explore [MLOps Engineering](/quests/1101/mlops/)  
-**📊 Data Scientist**: Advance to [Computer Vision](/quests/1101/computer-vision/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1101/deep-learning-frameworks|Deep Learning Frameworks]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1101/mlops|MLOps Engineering]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1101/computer-vision|Computer Vision]]
 
 ## 📚 Resources
 
@@ -459,6 +461,6 @@ print("Predictions:", model(X).detach().round().ravel().tolist())
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Unlocks:** [[Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation]] · [[Computer Vision Mastery: Image Classification, Object Detection & Segmentation]] · [[Natural Language Processing: Text Analysis, Transformers & LLMs with Python]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1101 - Machine Learning & AI]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn]] **Unlocks:** [[Deep Learning Frameworks: PyTorch vs TensorFlow Comparison & Implementation]] · [[Computer Vision Mastery: Image Classification, Object Detection & Segmentation]] · [[Natural Language Processing: Text Analysis, Transformers & LLMs with Python]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

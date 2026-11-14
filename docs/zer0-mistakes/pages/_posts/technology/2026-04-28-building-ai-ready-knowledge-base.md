@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:45:00+00:00
 layout: article
 preview: /images/previews/building-an-ai-ready-knowledge-base-from-documents.png
-source_file: 2026-04-28-building-ai-ready-knowledge-base.md
+source_file: pages/_posts/technology/2026-04-28-building-ai-ready-knowledge-base.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/technology/2026-04-28-building-ai-ready-knowledge-base.md
 tags:
 - ai
 - knowledge-management
 - documentation
 - search
-title: 2026 04 28 Building Ai Ready Knowledge Base
+title: 'Building an AI-Ready Knowledge Base: From Documents to Answers'
 ---
+
 AI tools become more useful when they can retrieve accurate, current, well-structured information. Most organizations already have the raw material: PDFs, wiki pages, support tickets, manuals, spreadsheets, and chat threads. The hard part is turning that material into a knowledge base an AI system can trust.
 
 ## Start With Questions, Not Files

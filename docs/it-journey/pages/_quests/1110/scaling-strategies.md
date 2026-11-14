@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - The scaling toolkit needed for the system-design capstone
 skill_focus: infrastructure
-source_file: scaling-strategies.md
+source_file: pages/_quests/1110/scaling-strategies.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/scaling-strategies.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - Scaling Strategies'
 tags:
 - '1110'
@@ -85,7 +87,7 @@ tags:
 - caching
 - conceptual
 - gamified-learning
-title: A Redis cache for the caching exercise
+title: 'Scaling Strategies: Horizontal Growth, Caching, and CAP'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -134,7 +136,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understand stateless vs. stateful services
 - [ ] Familiarity with databases and HTTP load
-- [ ] Completed [Microservices Architecture](/quests/1110/microservices-architecture/) (required)
+- [ ] Completed [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] (required)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -402,15 +404,15 @@ There is no "CA" system in the real world, because partitions are not optional -
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [System Design Interviews](/quests/1110/system-design-interviews/) - The capstone that ties it all together
+- 🎯 [[it-journey/pages/_quests/1110/system-design-interviews|System Design Interviews]] - The capstone that ties it all together
 
 **Explore Side Adventures**:
-- ⚔️ [Event-Driven Design](/quests/1110/event-driven-design/) - Async is a scaling strategy too
-- ⚔️ [API Gateway Patterns](/quests/1110/api-gateway-patterns/) - Where load balancing meets the edge
+- ⚔️ [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]] - Async is a scaling strategy too
+- ⚔️ [[it-journey/pages/_quests/1110/api-gateway-patterns|API Gateway Patterns]] - Where load balancing meets the edge
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [System Design Interviews](/quests/1110/system-design-interviews/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/system-design-interviews|System Design Interviews]]  
 **🏗️ System Engineer**: Deepen auto-scaling and capacity planning  
 **📊 Data Scientist**: Note how sharding shapes analytical query design
 
@@ -441,6 +443,6 @@ There is no "CA" system in the real world, because partitions are not optional -
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Microservices Architecture: Decomposing the Monolith]] · [[Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Unlocks:** [[System Design Interviews: A Framework for the Whiteboard]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] · [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Unlocks:** [[it-journey/pages/_quests/1110/system-design-interviews|System Design Interviews: A Framework for the Whiteboard]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

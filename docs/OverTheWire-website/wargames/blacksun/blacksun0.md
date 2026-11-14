@@ -2,7 +2,9 @@
 gamename: blacksun
 layout: default
 level: 0
-source_file: blacksun0.md
+source_file: wargames/blacksun/blacksun0.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/blacksun0.md
 title: Blacksun0
 ---
 Level0 is a remote format string intended to get you started with blacksun. It is a remote format string bug with you being able to see the reply, with address space randomisation enabled. You'll need to use the direct parameter access method to analyse the stack and to manipulate it.

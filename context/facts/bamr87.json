@@ -1,0 +1,240 @@
+{
+  "corpus": {
+    "file_count": 223,
+    "fingerprint": "3afc2e280b5d1109",
+    "path": "docs/bamr87",
+    "present": true,
+    "total_bytes": 2171948
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "\ud83d\ude80 About me",
+      "\ud83d\uddc2\ufe0f Portfolio",
+      "\ud83d\udcc1 This repository",
+      "\ud83d\ude80 Quick start",
+      "\ud83d\udcd6 Documentation",
+      "\ud83d\udcc4 License",
+      "\ud83d\udcbc Experience & skills",
+      "\ud83d\udcec Get in touch",
+      "\ud83d\udcca GitHub stats"
+    ],
+    "readme": "README.md",
+    "summary": "Solutions Architect | ERP Specialist | Full-Stack Developer",
+    "title": "\ud83d\udc4b Hi, I'm Amr Abdel-Motaleb"
+  },
+  "key_docs": [
+    "README.md",
+    "SCHEMA.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "docs/adr/0002-agent-step-specs-and-local-runner.md",
+    "docs/JEV.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/bamr87.md",
+    "fingerprint": "6734ef5687442dfb",
+    "index": "bamr87/README.md",
+    "max_depth": 4,
+    "pages": 223,
+    "present": true,
+    "sections": 36,
+    "skipped": 0,
+    "title": "Fleet Hub",
+    "top_sections": [
+      {
+        "index": "bamr87/changelog.d/README.md",
+        "pages": 2,
+        "path": "changelog.d",
+        "title": "changelog.d/ \u2014 pending changelog entries",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/compose/README.md",
+        "pages": 3,
+        "path": "compose",
+        "title": "compose/ \u2014 the hub's half of the fleet dev stack",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 6,
+        "path": "_data",
+        "title": "Data",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/diagrams/README.md",
+        "pages": 4,
+        "path": "diagrams",
+        "title": "diagrams/",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/docs/README.md",
+        "pages": 134,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/evals/README.md",
+        "pages": 4,
+        "path": "evals",
+        "title": "evals",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/features/README.md",
+        "pages": 4,
+        "path": "features",
+        "title": "features/",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/infra/README.md",
+        "pages": 3,
+        "path": "infra",
+        "title": "Infrastructure",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 8,
+        "path": "pages",
+        "title": "Pages",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/projects/README.md",
+        "pages": 2,
+        "path": "projects",
+        "title": "projects/ \u2014 submodule container",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/tools/README.md",
+        "pages": 30,
+        "path": "tools",
+        "title": "tools/",
+        "type": "section"
+      },
+      {
+        "index": "bamr87/specs/README.md",
+        "pages": 13,
+        "path": "specs",
+        "title": "Universal Project Standard (UPS)",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/bamr87.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "hub",
+    "name": "bamr87",
+    "registry_description": "Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards.",
+    "repo": "bamr87/bamr87",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/bamr87"
+  },
+  "rollups": {
+    "categories": {
+      "bamr87": 223
+    },
+    "code_languages": [
+      "bash",
+      "text",
+      "plaintext",
+      "yaml",
+      "markdown",
+      "python",
+      "json",
+      "console"
+    ],
+    "indexed_documents": 223,
+    "top_tags": [
+      "claude-code",
+      "jekyll",
+      "zer0-mistakes",
+      "portfolio",
+      "opentelemetry",
+      "openinference",
+      "phoenix",
+      "sqlite",
+      "observability",
+      "github-projects",
+      "issue-triage",
+      "governance",
+      "monorepo"
+    ],
+    "total_words": 323504
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": true,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CATALOG.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CONTRIBUTING.md",
+      "PRD.md",
+      "README.md",
+      "SCHEMA.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 134,
+        "name": "docs"
+      },
+      {
+        "doc_count": 30,
+        "name": "tools"
+      },
+      {
+        "doc_count": 13,
+        "name": "specs"
+      },
+      {
+        "doc_count": 8,
+        "name": "pages"
+      },
+      {
+        "doc_count": 6,
+        "name": "_data"
+      },
+      {
+        "doc_count": 4,
+        "name": "diagrams"
+      },
+      {
+        "doc_count": 4,
+        "name": "evals"
+      },
+      {
+        "doc_count": 4,
+        "name": "features"
+      },
+      {
+        "doc_count": 3,
+        "name": "compose"
+      },
+      {
+        "doc_count": 3,
+        "name": "infra"
+      }
+    ]
+  }
+}

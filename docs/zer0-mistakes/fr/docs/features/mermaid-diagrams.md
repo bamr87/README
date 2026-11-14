@@ -28,7 +28,9 @@ prerequisites:
 preview: /images/previews/mermaid-diagrams.png
 sidebar:
   nav: docs
-source_file: mermaid-diagrams.md
+source_file: fr/docs/features/mermaid-diagrams.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/mermaid-diagrams.md
 tags:
 - mermaid
 - diagrams
@@ -40,6 +42,7 @@ translated_from_sha: 6c7f9bbc21dd
 translation_of: pages/_docs/features/mermaid-diagrams.md
 translation_source_url: /docs/features/mermaid-diagrams/
 ---
+
 # Diagrammes Mermaid pour les sites Jekyll
 
 Les diagrammes Mermaid sont activés avec un seul indicateur de front matter et un bloc de code standard : aucun plugin côté serveur ni dépendance CDN, car le moteur de rendu est fourni avec le thème.
@@ -213,7 +216,7 @@ mermaid:
 
 Les étiquettes de la barre d'outils sont traduites avec le reste de l'interface via `_data/ui-text.yml` (clés `diagram_*`).
 
-Consultez [Assets Bootstrap et icônes intégrés](/docs/features/vendored-assets/) pour le workflow complet d'actualisation des assets.
+Consultez [[zer0-mistakes/pages/_docs/features/vendored-assets|Assets Bootstrap et icônes intégrés]] pour le workflow complet d'actualisation des assets.
 
 ### Comment ça fonctionne
 
@@ -690,6 +693,6 @@ Pour les détails d'implémentation (modifications de fichiers, suite de tests) 
 
 ## Voir aussi
 
-- [[Features]]
-- [[MathJax Math]]
-- [[Jupyter Notebook Integration]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/features/mathjax-math|MathJax Math]]
+- [[zer0-mistakes/pages/_docs/features/jupyter-notebooks|Jupyter Notebook Integration]]

@@ -1,5 +1,7 @@
 ---
-source_file: Badge.prompt.md
+source_file: _design-system/components/core/Badge.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/core/Badge.prompt.md
 title: Badge.Prompt
 ---
 Small status/label pill — categories, tags, version chips, and counts.

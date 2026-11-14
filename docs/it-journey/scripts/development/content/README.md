@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/development/content/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/development/content/README.md
 title: Post Organizer Utility
 ---
 # Post Organizer Utility

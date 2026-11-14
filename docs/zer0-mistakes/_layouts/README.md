@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: _layouts/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_layouts/README.md
 title: Layout Files Documentation
 ---
 # Layout Files Documentation

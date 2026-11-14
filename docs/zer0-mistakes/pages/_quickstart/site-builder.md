@@ -24,7 +24,9 @@ quickstart:
   prev: /quickstart/
 sidebar:
   nav: quickstart
-source_file: site-builder.md
+source_file: pages/_quickstart/site-builder.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_quickstart/site-builder.md
 tags:
 - setup
 - wizard
@@ -32,8 +34,9 @@ tags:
 - grok
 - docker
 - ai-powered
-title: Site Builder
+title: 'Site Builder: Guided Setup with Claude or Grok'
 ---
+
 # Site Builder
 
 The Site Builder is a nine-step wizard that takes you from an empty folder to a personalized, running zer0-mistakes site. It lives at `/setup/` on any local build of the theme and on the welcome screen of a fresh remote-theme site. An embedded AI session sits beside every step, answered by the provider you connect with your own token — Claude (Anthropic) or Grok (xAI). It can read your answers, fill in the forms, check your machine, read the theme's real source code, write the generated project to disk, start Docker, and, in an open session, modify a site you already have and generate images for it.
@@ -122,9 +125,9 @@ cd my-site && docker compose up
 
 ## Related
 
-- [Machine Setup](/quickstart/machine-setup/) is the manual reference behind the Prerequisites step.
-- [Site Builder feature reference](/docs/features/site-builder/) documents the tools, the proxy routes, and the safety model.
-- [AI Chat Assistant](/docs/features/ai-chat-assistant/) explains the proxy the builder reuses.
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] is the manual reference behind the Prerequisites step.
+- [[zer0-mistakes/pages/_docs/features/site-builder|Site Builder feature reference]] documents the tools, the proxy routes, and the safety model.
+- [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|AI Chat Assistant]] explains the proxy the builder reuses.
 
 ---
 

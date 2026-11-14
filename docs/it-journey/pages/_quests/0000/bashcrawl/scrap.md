@@ -48,7 +48,9 @@ rewards:
 - Portal Crystal
 - Symbolic links mastery
 skill_focus: fullstack
-source_file: scrap.md
+source_file: pages/_quests/0000/bashcrawl/scrap.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/scrap.md
 tags:
 - bashcrawl
 - terminal
@@ -56,7 +58,7 @@ tags:
 - symlinks
 - ln
 - '0000'
-title: broken_sword  empty_bottle  portal_mirror@  scrap_pile/  crystal_hint
+title: 'Bashcrawl Scrap Heap: Symbolic Links and Portal Creation'
 validation_criteria:
 - Create a symbolic link with ln -s
 - Verify the symlink with ls -l
@@ -198,7 +200,7 @@ inventory
 
 - **Complete other branches** → [Hidden Chapel](/quests/0000/side-quests/hidden-chapel/) · [Vault](/quests/0000/side-quests/vault/)
 - **Enter the final gauntlet** → [The Rift](/quests/0000/side-quests/rift/)
-- **Back to hub** → [Bashcrawl Hub](/quests/0000/bashcrawl/)
+- **Back to hub** → [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Hub]]
 
 ---
 
@@ -211,7 +213,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual — Symbolic Links](https://www.gnu.org/software/bash/manual/bash.html) — Portal magic for brave adventurers
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [Linux Symlinks Guide](https://linuxize.com/post/how-to-create-symbolic-links-in-linux-using-the-ln-command/) — Master the art of magical portals
 
 ---
@@ -220,7 +222,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Unlocks:** [[Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Sequel quests:** [[Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/bashcrawl/cellar|Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Unlocks:** [[it-journey/pages/_quests/0000/bashcrawl/rift|Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Sequel quests:** [[it-journey/pages/_quests/0000/bashcrawl/rift|Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

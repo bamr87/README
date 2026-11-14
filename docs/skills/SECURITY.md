@@ -1,10 +1,9 @@
 ---
-
 source_file: SECURITY.md
+source_repo: microsoft/skills
+source_url: https://github.com/microsoft/skills/blob/main/SECURITY.md
 title: Security
 ---
-# Security
-
 <!-- BEGIN MICROSOFT SECURITY.MD V1.0.0 BLOCK -->
 
 ## Security

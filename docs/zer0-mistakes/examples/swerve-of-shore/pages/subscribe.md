@@ -7,9 +7,12 @@ permalink: /subscribe/
 sidebar:
   nav: series
   title: Browse the series
-source_file: subscribe.md
+source_file: examples/swerve-of-shore/pages/subscribe.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/subscribe.md
 title: Subscribe
 ---
+
 {% include page-header.html %}
 
 New entries are posted as the reading goes.

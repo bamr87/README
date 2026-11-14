@@ -15,17 +15,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/edge-ai-practical-patterns/
 preview: /images/previews/edge-ai-in-the-real-world-practical-patterns-for-s.png
-source_file: 2026-04-28-edge-ai-practical-patterns.md
+source_file: fr/posts/technology/2026-04-28-edge-ai-practical-patterns.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/technology/2026-04-28-edge-ai-practical-patterns.md
 tags:
 - edge-ai
 - machine-learning
 - embedded-systems
 - privacy
-title: 2026 04 28 Edge Ai Practical Patterns
+title: 'L''IA embarquée dans le monde réel : modèles pratiques pour les petits modèles'
 translated_from_sha: 8a96393b25f7
 translation_of: pages/_posts/technology/2026-04-28-edge-ai-practical-patterns.md
 translation_source_url: /posts/2026/04/28/edge-ai-practical-patterns/
 ---
+
 Toutes les charges de travail d'IA n'ont pas leur place dans un centre de données cloud. Certaines décisions doivent se prendre au plus près du capteur, de la machine, du véhicule ou de la personne. C'est là que l'IA embarquée trouve sa raison d'être.
 
 L'IA embarquée consiste à exécuter des modèles sur des appareils locaux plutôt que d'envoyer chaque requête à une API distante. Le modèle peut être plus petit, mais le produit peut être plus rapide, plus respectueux de la vie privée et plus résilient.

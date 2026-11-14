@@ -1,9 +1,12 @@
 ---
 gamename: leviathan
 layout: default
-source_file: index.md
-title: Index
+source_file: wargames/leviathan/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/leviathan/index.md
+title: Leviathan
 ---
+
 Leviathan
 =========
 

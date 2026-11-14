@@ -19,13 +19,15 @@ permalink: /digs/2020-07-30-first-steps/
 range_end: 2020-07-31
 range_start: 2020-07-30
 repository: bamr87/it-journey
-source_file: 2020-07-30-first-steps.md
+source_file: pages/_digs/2020-07-30-first-steps.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_digs/2020-07-30-first-steps.md
 start_sha: ab523954f523ddaf7402682c79630b36958fad79
 tags:
 - git
 - history
 - archaeology
-title: 2020 07 30 First Steps
+title: The repository's first six commits
 voice_profile: git-dig
 ---
 A journey from zero to hero announces itself, and the first tool it adds is a workflow that says hello. That is a grand sentence with a very small echo. The interesting question is not whether the echo was ambitious. It is what a beginning is allowed to be before it has done anything.

@@ -10,11 +10,14 @@ location: Denver, CO
 name: Amr Abdel-Motaleb
 permalink: /about/bamr87/
 preview: /images/previews/amr-abdel-motaleb.png
-source_file: bamr87.md
-title: Amr Abdel-Motaleb
+source_file: pages/_about/profile/bamr87.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/profile/bamr87.md
+title: Amr Abdel-Motaleb — Software Architect & IT Journey Author
 twitter: bamr42
 website: https://it-journey.dev
 ---
+
 # Amr Abdel-Motaleb
 
 IT Wizard, Software Architect, and Tech Enthusiast based in Denver, CO. Creator of the [Zer0-Mistakes](https://github.com/bamr87/zer0-mistakes) Jekyll theme and the [IT-Journey](https://it-journey.dev) learning platform.

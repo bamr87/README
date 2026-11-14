@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 23
-source_file: vortex23.md
+source_file: wargames/vortex/vortex23.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex23.md
 title: Vortex23
 ---
 The Properties of a Mirror

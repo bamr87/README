@@ -27,7 +27,9 @@ prerequisites:
 preview: /images/previews/mermaid-diagrams.png
 sidebar:
   nav: docs
-source_file: mermaid-diagrams.md
+source_file: pages/_docs/features/mermaid-diagrams.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/mermaid-diagrams.md
 tags:
 - mermaid
 - diagrams
@@ -36,6 +38,7 @@ tags:
 - documentation
 title: Mermaid Diagrams for Jekyll Sites
 ---
+
 # Mermaid Diagrams for Jekyll Sites
 
 Mermaid diagrams are enabled with one front matter flag and a standard code fence: no server-side plugin and no CDN dependency, because the renderer is vendored with the theme.
@@ -209,7 +212,7 @@ mermaid:
 
 The toolbar labels are translated with the rest of the UI through `_data/ui-text.yml` (`diagram_*` keys).
 
-See [Vendored Bootstrap & Icon Assets](/docs/features/vendored-assets/) for the full asset refresh workflow.
+See [[zer0-mistakes/pages/_docs/features/vendored-assets|Vendored Bootstrap & Icon Assets]] for the full asset refresh workflow.
 
 ### How it works
 
@@ -686,6 +689,6 @@ For implementation details (file changes, test suite):
 
 ## See also
 
-- [[Features]]
-- [[MathJax Math]]
-- [[Jupyter Notebook Integration]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/features/mathjax-math|MathJax Math]]
+- [[zer0-mistakes/pages/_docs/features/jupyter-notebooks|Jupyter Notebook Integration]]

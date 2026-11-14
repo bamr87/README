@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Ability to run a basic authorized penetration test end to end
 skill_focus: security
-source_file: penetration-testing.md
+source_file: pages/_quests/1011/penetration-testing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/penetration-testing.md
 sub_title: 'Level 1011 (11) Quest: Main Quest - Penetration Testing'
 tags:
 - '1011'
@@ -85,7 +87,7 @@ tags:
 - ethical-hacking
 - hands-on
 - gamified-learning
-title: Tools
+title: 'Penetration Testing: Tools and Ethical Hacking Methodologies'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Security Fundamentals](/quests/1011/security-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] (recommended)
 - [ ] Basic networking: IP addresses, ports, TCP, HTTP
 - [ ] Familiarity with the OWASP Top 10
 
@@ -401,17 +403,17 @@ A report's value is measured by how easily a developer can act on it - clear sev
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Compliance Standards](/quests/1011/compliance-standards/) - Where pentests become required evidence
+- 🎯 [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]] - Where pentests become required evidence
 
 **Explore Side Adventures**:
-- ⚔️ [Threat Modeling](/quests/1011/threat-modeling/) - Plan your attacks before you run them
-- ⚔️ [Secure Coding Practices](/quests/1011/secure-coding/) - Fix what you find
+- ⚔️ [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]] - Plan your attacks before you run them
+- ⚔️ [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]] - Fix what you find
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
-**🛡️ Security Specialist**: Advance to [Threat Modeling](/quests/1011/threat-modeling/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]]
 
 ## 📚 Resources
 
@@ -441,6 +443,6 @@ A report's value is measured by how easily a developer can act on it - clear sev
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[Compliance Standards: SOC 2, GDPR, and HIPAA Requirements]] **Related quests:** [[Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[Compliance Standards: SOC 2, GDPR, and HIPAA Requirements]] **Related quests:** [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

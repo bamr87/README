@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/README.md
 title: Scripts Directory
 ---
 # Scripts Directory
@@ -396,7 +398,7 @@ This system serves as both a practical tool and an educational example of modern
 ### 🔗 Related Documentation
 
 ### IT-Journey Documentation
-- [Scripts Instructions](../.github/instructions/scripts.instructions.md) - Standards and best practices for scripts
+- [Scripts Instructions](../dot-github/instructions/scripts.instructions.md) - Standards and best practices for scripts
 - [Scripts Guide](../docs/scripts/SCRIPTS_GUIDE.md) - Comprehensive scripts documentation
 - [Development Environment](../docs/setup/DEVELOPMENT_ENVIRONMENT.md) - Setup guide
 - [Contributing Guide](../docs/CONTRIBUTING_DEVELOPER.md) - Contribution workflow

@@ -1,0 +1,34 @@
+---
+coverage: strict
+schema: '0.1'
+source_file: tools/SCHEMA.md
+source_repo: bamr87/SCHEMA
+source_url: https://github.com/bamr87/SCHEMA/blob/main/tools/SCHEMA.md
+title: SCHEMA — tools
+---
+
+# SCHEMA — tools
+
+> Executable tooling for the paradigm: the linter and its companions. Stdlib-only Python.
+
+## Conventions
+
+- Python 3.10+, standard library only — adopters must be able to vendor a single file.
+- snake_case module names.
+
+## Structure
+
+| entry | kind | purpose | rules |
+|---|---|---|---|
+| `schema_lint.py` | file | Validator (`check`, with `--fix` remediation) and scaffolder (`init`) for schema pyramids | required |
+| `schema_bench.py` | file | Context-cost benchmark: schema-chain reads vs tree-dump baseline | required |
+| `schema_dist.py` | file | Distribution integrity: the vendored-surface manifest, package self-consistency, and drift audits of a consumer's copies | required |
+| `docs_index.py` | file | Docs index generator for `docs/README.md` (UPS-DOC-03), vendored byte-identical from the bamr87 hub — never edit here | |
+
+## Placement
+
+- New executable tool → one self-contained `<name>.py` here, registered first.
+
+## Forbidden
+
+- No third-party dependencies, ever.

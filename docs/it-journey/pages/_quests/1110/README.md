@@ -13,7 +13,9 @@ local_graph: false
 mermaid: true
 permalink: /quests/1110/
 preview: /images/previews/level-1110-quality-assurance.webp
-source_file: README.md
+source_file: pages/_quests/1110/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/README.md
 tags:
 - quests
 - '1110'
@@ -21,7 +23,7 @@ tags:
 - architecture
 - design
 - patterns
-title: 'Level 1110: Quality Assurance'
+title: Level 1110 - Quality Assurance
 ---
 # Level 1110: Quality Assurance
 
@@ -39,14 +41,14 @@ Level 1110 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [404 Hunting: Binary Wards for Unbreakable Links](/quests/1110/404-hunting-quest/) | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
-| [API Gateway Patterns: Routing, Load Balancing and Security](/quests/1110/api-gateway-patterns/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [Software Design Patterns: Gang of Four and Modern Patterns](/quests/1110/design-patterns/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Domain-Driven Design: Strategic and Tactical Patterns](/quests/1110/domain-driven-design/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Event-Driven Architecture: Message Queues and Event Sourcing](/quests/1110/event-driven-design/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [Microservices Architecture: Building Scalable Distributed Systems](/quests/1110/microservices-architecture/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
-| [Scaling Strategies: Horizontal and Vertical Scaling Patterns](/quests/1110/scaling-strategies/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [System Design Interview Mastery: Ace Technical Interviews](/quests/1110/system-design-interviews/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/404-hunting\|404 Hunting: Binary Wards for Unbreakable Links]] | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/api-gateway-patterns\|API Gateway Patterns: Routing, Load Balancing and Security]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/design-patterns\|Software Design Patterns: Gang of Four and Modern Patterns]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/domain-driven-design\|Domain-Driven Design: Strategic and Tactical Patterns]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/event-driven-design\|Event-Driven Architecture: Message Queues and Event Sourcing]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/microservices-architecture\|Microservices Architecture: Building Scalable Distributed Systems]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/scaling-strategies\|Scaling Strategies: Horizontal and Vertical Scaling Patterns]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1110/system-design-interviews\|System Design Interview Mastery: Ace Technical Interviews]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
 
 
 ### 🔍 Error Handling

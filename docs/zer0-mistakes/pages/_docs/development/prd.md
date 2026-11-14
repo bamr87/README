@@ -18,14 +18,17 @@ permalink: /docs/development/prd/
 preview: /images/previews/product-requirements-document.png
 sidebar:
   nav: docs
-source_file: prd.md
+source_file: pages/_docs/development/prd.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/prd.md
 tags:
 - prd
 - requirements
 - product
 - vision
-title: Product Requirements Document
+title: Zer0-Mistakes Product Requirements Document
 ---
+
 # Product Requirements Document
 
 The Zer0-Mistakes Jekyll theme keeps its full PRD — vision, user personas, feature requirements, technical architecture, KPIs, roadmap, and acceptance criteria — as a contributor reference in the repository's technical docs.

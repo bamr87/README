@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29412020762
 slice: data-scientist/1101
-source_file: 2026-07-15-data-scientist-1101.md
+source_file: pages/_quest-reports/2026-07-15-data-scientist-1101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-15-data-scientist-1101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-15-data-scientist-1101.md
 tags:
 - data-scientist
 - level-1101
@@ -25,13 +27,14 @@ tags:
 - machine-learning-ai
 theme: Machine Learning & AI
 tier: Master
-title: 2026 07 15 Data Scientist 1101
+title: Data Scientist · L1101 · 2026-07-15
 verdict: warn
 walk_date: '2026-07-15'
 ---
+
 > **Slice** `data-scientist/1101` · **Level** 1101 (Machine Learning & AI) · **Master tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-15
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-data-scientist-1101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-data-scientist-1101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-data-scientist-1101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-data-scientist-1101.md)
 
 ---
 

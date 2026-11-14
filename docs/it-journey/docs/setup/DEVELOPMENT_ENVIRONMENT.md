@@ -1,5 +1,7 @@
 ---
-source_file: DEVELOPMENT_ENVIRONMENT.md
+source_file: docs/setup/DEVELOPMENT_ENVIRONMENT.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/setup/DEVELOPMENT_ENVIRONMENT.md
 title: Development Environment Setup
 ---
 # Development Environment Setup

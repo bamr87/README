@@ -24,13 +24,15 @@ objectives:
     all:
     - command: head
     - piped: true
-source_file: 02-first-pipe.md
+source_file: courses/pipelines/02-first-pipe.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/02-first-pipe.md
 teaches:
 - pipes
 - '|'
 - wc -l
 - head
-title: 02 First Pipe
+title: Your first pipe
 xp: 30
 ---
 The `|` (pipe) takes everything the command on its left **prints** and feeds it to the command on its right as **input**. Neither command knows the other exists.

@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/28/customer-onboarding-scorecards/
 preview: /images/previews/customer-onboarding-scorecards-that-reveal-revenue.png
-source_file: 2026-04-28-customer-onboarding-scorecards.md
+source_file: fr/posts/business/2026-04-28-customer-onboarding-scorecards.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/business/2026-04-28-customer-onboarding-scorecards.md
 tags:
 - customer-success
 - onboarding
 - revenue
 - operations
-title: 2026 04 28 Customer Onboarding Scorecards
+title: Des tableaux de bord d'intégration client qui révèlent le risque de revenus
 translated_from_sha: b8028c5a07d3
 translation_of: pages/_posts/business/2026-04-28-customer-onboarding-scorecards.md
 translation_source_url: /posts/2026/04/28/customer-onboarding-scorecards/
 ---
+
 L'intégration des clients, c'est le moment où une vente devient une relation. C'est aussi là que des transferts mal maîtrisés, des attentes floues et des données manquantes se transforment discrètement en risque d'attrition. Un tableau de bord donne aux équipes un moyen partagé de repérer ce risque tôt.
 
 Les meilleurs tableaux de bord sont assez simples pour être mis à jour chaque semaine et assez précis pour déclencher l'action. Ils n'ont pas besoin de prédire l'avenir parfaitement. Ils doivent rendre l'état actuel visible.

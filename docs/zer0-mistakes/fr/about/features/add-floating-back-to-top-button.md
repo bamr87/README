@@ -12,15 +12,18 @@ machine_translated: true
 permalink: /fr/about/features/add-floating-back-to-top-button/
 preview: /images/previews/add-floating-back-to-top-button.png
 snippet: null
-source_file: add-floating-back-to-top-button.md
+source_file: fr/about/features/add-floating-back-to-top-button.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/add-floating-back-to-top-button.md
 sub-title: null
 tags:
 - Bootstrap
-title: Add Floating Back To Top Button
+title: Ajouter un bouton flottant de retour en haut
 translated_from_sha: cbc5f327ba28
 translation_of: pages/_about/features/add-floating-back-to-top-button.md
 translation_source_url: /about/features/add-floating-back-to-top-button/
 ---
+
 [w3 schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 ## Comment créer un bouton de retour en haut

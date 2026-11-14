@@ -21,6 +21,8 @@ permalink: /readme/
 repo: https://github.com/bamr87/it-journey
 slug: readme
 source_file: README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/README.md
 tags:
 - it-journey
 - jekyll
@@ -28,7 +30,7 @@ tags:
 - learning-path
 - quests
 - documentation
-title: IT-Journey
+title: README - it-journey
 version: 0.0.1
 ---
 # IT-Journey
@@ -86,7 +88,7 @@ make hooks-install           # once per clone: pre-commit one-paragraph-per-line
 - [docs/README.md](docs/README.md) — the index of every document in the repository, one line each.
 - [AGENTS.md](AGENTS.md) — commands, layout, conventions and the rules agents and contributors follow.
 - [scripts/ai/README.md](scripts/ai/README.md) — the AI runner and the content, issue and quest lanes.
-- [.github/instructions/quest.instructions.md](.github/instructions/quest.instructions.md) — how to write a quest that passes validation.
+- [.github/instructions/quest.instructions.md](dot-github/instructions/quest.instructions.md) — how to write a quest that passes validation.
 
 ## Project structure
 

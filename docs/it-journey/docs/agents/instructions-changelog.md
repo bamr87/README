@@ -1,5 +1,7 @@
 ---
-source_file: instructions-changelog.md
+source_file: docs/agents/instructions-changelog.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/agents/instructions-changelog.md
 title: Agent Instruction Changelog
 ---
 # Agent Instruction Changelog

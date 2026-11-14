@@ -26,18 +26,21 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/22/git-workflow-best-practices/
 preview: /images/previews/git-workflow-best-practices-for-modern-teams.png
-source_file: 2025-01-22-git-workflow-best-practices.md
+source_file: fr/posts/development/2025-01-22-git-workflow-best-practices.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/development/2025-01-22-git-workflow-best-practices.md
 tags:
 - git
 - version-control
 - workflow
 - collaboration
 - code-review
-title: Create a feature branch
+title: Bonnes pratiques de workflow Git pour les équipes modernes
 translated_from_sha: 935ef23978aa
 translation_of: pages/_posts/development/2025-01-22-git-workflow-best-practices.md
 translation_source_url: /posts/2025/01/22/git-workflow-best-practices/
 ---
+
 ![Bonnes pratiques de workflow Git pour les équipes de développement modernes - branches, commits et revue de code](/assets/images/previews/git-workflow-best-practices-for-modern-teams.png "Bonnes pratiques de workflow Git pour les équipes modernes"){: .img-fluid .rounded .mb-4}
 
 Un **workflow Git** fiable est la colonne vertébrale du développement logiciel moderne. Ce guide passe en revue les stratégies de branches, les conventions de commit et les pratiques de revue de code qui aident les équipes à livrer plus vite, avec moins de régressions et bien moins de casse-têtes de fusion.

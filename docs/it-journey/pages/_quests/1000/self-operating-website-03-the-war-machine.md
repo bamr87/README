@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: devops
-source_file: self-operating-website-03-the-war-machine.md
+source_file: pages/_quests/1000/self-operating-website-03-the-war-machine.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/self-operating-website-03-the-war-machine.md
 tags:
 - '1000'
 - github-actions
@@ -66,10 +68,10 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: scripts/decide_core.py — the pure OODA/RICE decision functions, imported by
-  decide.py.
+title: 'The War Machine: Dispatch, Leasing, and a Fifty-Case Simulation'
 ---
-*The scouts have returned. In [Chapter II — The Proving Grounds](/quests/0100/self-operating-website-02-the-proving-grounds/) you taught your realm to look at itself — to survey the terrain, score its own weaknesses, and write an honest ledger of what was broken. But a ledger is not a campaign. A pile of grievances is not an army. Today you build the **War Machine**: the thing that decides what to fight, claims a single battle so no two soldiers swing at the same foe, and rehearses fifty skirmishes in a war-room sandbox before a single real blade is drawn.*
+
+*The scouts have returned. In [[it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds|Chapter II — The Proving Grounds]] you taught your realm to look at itself — to survey the terrain, score its own weaknesses, and write an honest ledger of what was broken. But a ledger is not a campaign. A pile of grievances is not an army. Today you build the **War Machine**: the thing that decides what to fight, claims a single battle so no two soldiers swing at the same foe, and rehearses fifty skirmishes in a war-room sandbox before a single real blade is drawn.*
 
 *The real-world skill underneath the fantasy is **autonomous work orchestration**: an OODA dispatch loop, distributed leasing with no database, RICE prioritization, and end-to-end simulation. Master this and you can build any fleet of agents that picks its own work and never trips over itself.*
 
@@ -96,7 +98,7 @@ Every great keep eventually outgrows the lone caretaker who walks the halls fixi
 
 Before you fire up the war machine, make sure your armory is stocked:
 
-- **Prior chapter:** Finish [Chapter II — The Proving Grounds](/quests/0100/self-operating-website-02-the-proving-grounds/). You need its self-survey worklist — the ledger of issues — because that ledger *is* the backlog this dispatcher observes.
+- **Prior chapter:** Finish [[it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds|Chapter II — The Proving Grounds]]. You need its self-survey worklist — the ledger of issues — because that ledger *is* the backlog this dispatcher observes.
 - **Tools on your bench:** `git` (2.30+), `python3` (3.10+ for the `Task | None` union syntax used below), and a text editor or IDE. The CI tier also installs `ruff` and `pytest` — locally, `pip install ruff pytest`.
 - **Accounts & access:** A **GitHub repository you own** (you must be able to push refs to it), and a **Claude Code OAuth token** stored as the `CLAUDE_CODE_OAUTH_TOKEN` repository secret to drive the agent steps that perform the leased work.
 - **Concepts you should already hold:** Git branches and pull requests, and a basic feel for GitHub Actions jobs and the `needs:` keyword.
@@ -394,8 +396,8 @@ graph LR
 
 The machine now picks its battles and claims them safely — but who *signs off* on the work it ships? Next you'll forge the trust layer: gated permissions, smuggle-guards, and the sigils that let agents merge without a human on the keyboard.
 
-- **Next chapter:** [The Sigils of Trust](/quests/1001/self-operating-website-04-the-sigils-of-trust/)
-- **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/)
+- **Next chapter:** [[it-journey/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust|The Sigils of Trust]]
+- **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -406,6 +408,6 @@ The machine now picks its battles and claims them safely — but who *signs off*
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Proving Grounds]] **Next:** [[The Sigils of Trust]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Proving Grounds]] **Next:** [[The Sigils of Trust]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

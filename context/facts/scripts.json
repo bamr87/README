@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 31,
-    "fingerprint": "dba6c81e2cf63161",
+    "file_count": 24,
+    "fingerprint": "bc107f0934005712",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 161782
+    "total_bytes": 111480
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -30,19 +30,19 @@
     "AGENTS.md",
     "CHANGELOG.md",
     "SECURITY.md",
-    "FORKME/FORKME-IMPLEMENTATION-SUMMARY.md",
     "FORKME/FORKME.md",
-    "FORKME/FORKME-EXAMPLES.md"
+    "FORKME/FORKME-EXAMPLES.md",
+    "STASHME/STASHME-EXAMPLES.md"
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "529720b4afba9a54",
+    "fingerprint": "1312b35ba279a08d",
     "index": "scripts/README.md",
     "max_depth": 3,
-    "pages": 29,
+    "pages": 24,
     "present": true,
     "sections": 5,
-    "skipped": 1,
+    "skipped": 0,
     "title": "Scripts",
     "top_sections": [
       {
@@ -54,7 +54,7 @@
       },
       {
         "index": "scripts/FORKME/README.md",
-        "pages": 7,
+        "pages": 4,
         "path": "FORKME",
         "title": "\ud83c\udf74 ForkMe - Advanced GitHub Repository Forking Utility",
         "type": "section"
@@ -86,16 +86,16 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 31
+      "scripts": 24
     },
     "code_languages": [
       "bash",
       "plaintext",
       "yaml"
     ],
-    "indexed_documents": 31,
+    "indexed_documents": 24,
     "top_tags": [],
-    "total_words": 20220
+    "total_words": 14117
   },
   "schema_version": "1.0",
   "signals": {
@@ -113,7 +113,6 @@
       "CLAUDE.md",
       "PRD.md",
       "README.md",
-      "RENAME-DIRECTORY-QUICK-REFERENCE.md",
       "SECURITY.md"
     ],
     "top_dirs": [
@@ -122,20 +121,12 @@
         "name": "docs"
       },
       {
-        "doc_count": 7,
+        "doc_count": 4,
         "name": "FORKME"
       },
       {
         "doc_count": 4,
         "name": "STASHME"
-      },
-      {
-        "doc_count": 2,
-        "name": ".claude"
-      },
-      {
-        "doc_count": 1,
-        "name": "linting"
       },
       {
         "doc_count": 1,

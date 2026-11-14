@@ -1,5 +1,7 @@
 ---
-source_file: BRANDING_GOVERNANCE_PLAN.md
+source_file: docs/cms/BRANDING_GOVERNANCE_PLAN.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/cms/BRANDING_GOVERNANCE_PLAN.md
 title: IT-Journey — Branding & Content-Governance System (plan)
 ---
 # IT-Journey — Branding & Content-Governance System (plan)
@@ -268,7 +270,7 @@ Phases 1–5 are merged in it-journey **and validated** (build-ci + content-audi
 
 ## 9. Follow-up — upstream the framework to the zer0-mistakes theme
 
-**Why.** `_config.yml` line 227 already states the governing philosophy — *"Keep implementation in the zer0-mistakes theme; configure only site paths here."* And [`.github/FRONTMATTER.md`](../../.github/FRONTMATTER.md) is already a **shared canonical asset across bashconsultants / zer0-mistakes / it-journey, with zer0-mistakes as the source of truth** (FRONTMATTER.md: "Keep the three copies in sync"). So the branding-governance *framework* is a natural **theme feature**: any site on `bamr87/zer0-mistakes` inherits the scaffolding and overrides only its own brand facts. This task ports the reusable parts upstream after they have proven out in it-journey.
+**Why.** `_config.yml` line 227 already states the governing philosophy — *"Keep implementation in the zer0-mistakes theme; configure only site paths here."* And [`.github/FRONTMATTER.md`](../../dot-github/FRONTMATTER.md) is already a **shared canonical asset across bashconsultants / zer0-mistakes / it-journey, with zer0-mistakes as the source of truth** (FRONTMATTER.md: "Keep the three copies in sync"). So the branding-governance *framework* is a natural **theme feature**: any site on `bamr87/zer0-mistakes` inherits the scaffolding and overrides only its own brand facts. This task ports the reusable parts upstream after they have proven out in it-journey.
 
 **Gate (do this only after it-journey is finalized/validated).** PR #338 + Phases 1–5 merged; `make build-ci` + `make content-audit` green; brand-drift output reviewed; the `brand-voice` skill and `/draft-muse` / `/brand-audit` prompts used on at least one real post and one real muse.
 

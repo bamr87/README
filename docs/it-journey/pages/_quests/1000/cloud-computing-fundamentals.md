@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the hands-on AWS, Terraform, and Azure quests of Level 1000
 skill_focus: cloud
-source_file: cloud-computing-fundamentals.md
+source_file: pages/_quests/1000/cloud-computing-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/cloud-computing-fundamentals.md
 sub_title: 'Level 1000 (8) Quest: Main Quest - Cloud Fundamentals'
 tags:
 - '1000'
@@ -83,7 +85,7 @@ tags:
 - cloud-engineering
 - conceptual
 - gamified-learning
-title: Install the CLI for the provider you want to explore (pick one or more)
+title: 'Cloud Computing Fundamentals: IaaS, PaaS, and SaaS Explained'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -403,17 +405,17 @@ Once you can name the category a service belongs to, you can learn any new produ
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [AWS Essentials](/quests/1000/aws-essentials/) - Turn these concepts into real provisioned services
+- 🎯 [[it-journey/pages/_quests/1000/aws-essentials|AWS Essentials]] - Turn these concepts into real provisioned services
 
 **Explore Side Adventures**:
-- ⚔️ [Infrastructure as Code](/quests/1000/infrastructure-as-code/) - Define cloud resources in version-controlled code
-- ⚔️ [Azure Ascension](/quests/1000/azure-ascension-jekyll-deployment/) - Ship a site to a managed platform
+- ⚔️ [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]] - Define cloud resources in version-controlled code
+- ⚔️ [[it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment|Azure Ascension]] - Ship a site to a managed platform
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [AWS Essentials](/quests/1000/aws-essentials/)  
-**🏗️ System Engineer**: Explore [Infrastructure as Code](/quests/1000/infrastructure-as-code/)  
-**🛡️ Security Specialist**: Revisit the shared responsibility model before [AWS Essentials](/quests/1000/aws-essentials/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1000/aws-essentials|AWS Essentials]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]]  
+**🛡️ Security Specialist**: Revisit the shared responsibility model before [[it-journey/pages/_quests/1000/aws-essentials|AWS Essentials]]
 
 ## 📚 Resources
 
@@ -442,6 +444,6 @@ Once you can name the category a service belongs to, you can learn any new produ
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[AWS Essentials: Core Services and Cloud Architecture Patterns]] · [[Infrastructure as Code: Terraform and CloudFormation Fundamentals]] · [[Azure Ascension: Deploying Jekyll to the Cloud Kingdom]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[AWS Essentials: Core Services and Cloud Architecture Patterns]] · [[Infrastructure as Code: Terraform and CloudFormation Fundamentals]] · [[it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment|Azure Ascension: Deploying Jekyll to the Cloud Kingdom]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

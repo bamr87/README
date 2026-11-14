@@ -17,3 +17,4 @@ Add an ADR in the same PR as the change it justifies.
 | ID | Title | Status |
 | --- | --- | --- |
 | 0001 | [Record architecture decisions](0001-record-architecture-decisions.md) | accepted |
+| 0002 | [Treat docs/ as an Obsidian vault with one link resolver](0002-docs-as-an-obsidian-vault.md) | accepted |

@@ -5,39 +5,26 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 94,
-    "sections": 17,
+    "pages": 78,
+    "sections": 16,
     "max_depth": 3,
-    "skipped": 5
+    "skipped": 0
   },
-  "skipped": [
-    ".archives",
-    ".claude",
-    ".github",
-    "docs/README.md",
-    "logs/README.md"
-  ],
-  "fingerprint": "da85573772d01cb8",
+  "skipped": [],
+  "fingerprint": "becb0312cd0830d0",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 94,
+    "pages": 78,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "rel": "src",
         "order": 0.0,
-        "pages": 6,
+        "pages": 2,
         "children": [
-          {
-            "type": "page",
-            "title": "Bashcrawl Observatory \u2014 src/viewer/",
-            "path": "bashcrawl/src/viewer/README.md",
-            "rel": "src/viewer/README.md",
-            "folder": "src/viewer"
-          },
           {
             "type": "section",
             "title": "Bashcrawl Help System",
@@ -57,35 +44,6 @@
                 "title": "\ud83c\udfaf Bashcrawl Help System Quick Reference",
                 "path": "bashcrawl/src/help/HELP_REFERENCE.md",
                 "rel": "src/help/HELP_REFERENCE.md"
-              }
-            ]
-          },
-          {
-            "type": "section",
-            "title": "Readme",
-            "rel": "src/terminal-illness",
-            "index": "bashcrawl/src/terminal-illness/README.md",
-            "pages": 3,
-            "children": [
-              {
-                "type": "page",
-                "title": "Readme",
-                "path": "bashcrawl/src/terminal-illness/README.md",
-                "rel": "src/terminal-illness/README.md",
-                "is_index": true
-              },
-              {
-                "type": "page",
-                "title": "AI Prompt: Fantasy Terminal Learning Game Architecture",
-                "path": "bashcrawl/src/terminal-illness/seed_prompt.instructions.md",
-                "rel": "src/terminal-illness/seed_prompt.instructions.md"
-              },
-              {
-                "type": "page",
-                "title": "Ti",
-                "path": "bashcrawl/src/terminal-illness/ti/audio/assets/README.md",
-                "rel": "src/terminal-illness/ti/audio/assets/README.md",
-                "folder": "src/terminal-illness/ti"
               }
             ]
           }
@@ -157,40 +115,40 @@
             "children": [
               {
                 "type": "page",
-                "title": "Course",
+                "title": "Finding Your Way",
                 "path": "bashcrawl/courses/navigator/course.md",
                 "rel": "courses/navigator/course.md",
                 "order": 1.0
               },
               {
                 "type": "page",
-                "title": "01 Where Am I",
-                "path": "bashcrawl/courses/navigator/01-where-am-i.md",
-                "rel": "courses/navigator/01-where-am-i.md"
-              },
-              {
-                "type": "page",
-                "title": "02 Look Around",
+                "title": "Look around",
                 "path": "bashcrawl/courses/navigator/02-look-around.md",
                 "rel": "courses/navigator/02-look-around.md"
               },
               {
                 "type": "page",
-                "title": "03 Moving",
+                "title": "Moving around",
                 "path": "bashcrawl/courses/navigator/03-moving.md",
                 "rel": "courses/navigator/03-moving.md"
               },
               {
                 "type": "page",
-                "title": "04 Paths",
+                "title": "Reading from afar",
                 "path": "bashcrawl/courses/navigator/04-paths.md",
                 "rel": "courses/navigator/04-paths.md"
               },
               {
                 "type": "page",
-                "title": "05 Big Picture",
+                "title": "The big picture",
                 "path": "bashcrawl/courses/navigator/05-big-picture.md",
                 "rel": "courses/navigator/05-big-picture.md"
+              },
+              {
+                "type": "page",
+                "title": "Where am I?",
+                "path": "bashcrawl/courses/navigator/01-where-am-i.md",
+                "rel": "courses/navigator/01-where-am-i.md"
               }
             ]
           },
@@ -202,46 +160,46 @@
             "children": [
               {
                 "type": "page",
-                "title": "Course",
+                "title": "The Pipeline Forge",
                 "path": "bashcrawl/courses/pipelines/course.md",
                 "rel": "courses/pipelines/course.md",
                 "order": 3.0
               },
               {
                 "type": "page",
-                "title": "01 Grep",
-                "path": "bashcrawl/courses/pipelines/01-grep.md",
-                "rel": "courses/pipelines/01-grep.md"
+                "title": "Capstone: the guild report",
+                "path": "bashcrawl/courses/pipelines/06-the-guild-report.md",
+                "rel": "courses/pipelines/06-the-guild-report.md"
               },
               {
                 "type": "page",
-                "title": "02 First Pipe",
-                "path": "bashcrawl/courses/pipelines/02-first-pipe.md",
-                "rel": "courses/pipelines/02-first-pipe.md"
-              },
-              {
-                "type": "page",
-                "title": "03 Sort And Uniq",
-                "path": "bashcrawl/courses/pipelines/03-sort-and-uniq.md",
-                "rel": "courses/pipelines/03-sort-and-uniq.md"
-              },
-              {
-                "type": "page",
-                "title": "04 Cut",
+                "title": "Columns with cut",
                 "path": "bashcrawl/courses/pipelines/04-cut.md",
                 "rel": "courses/pipelines/04-cut.md"
               },
               {
                 "type": "page",
-                "title": "05 Redirect",
+                "title": "Saving your work",
                 "path": "bashcrawl/courses/pipelines/05-redirect.md",
                 "rel": "courses/pipelines/05-redirect.md"
               },
               {
                 "type": "page",
-                "title": "06 The Guild Report",
-                "path": "bashcrawl/courses/pipelines/06-the-guild-report.md",
-                "rel": "courses/pipelines/06-the-guild-report.md"
+                "title": "Searching with grep",
+                "path": "bashcrawl/courses/pipelines/01-grep.md",
+                "rel": "courses/pipelines/01-grep.md"
+              },
+              {
+                "type": "page",
+                "title": "Sorting and counting",
+                "path": "bashcrawl/courses/pipelines/03-sort-and-uniq.md",
+                "rel": "courses/pipelines/03-sort-and-uniq.md"
+              },
+              {
+                "type": "page",
+                "title": "Your first pipe",
+                "path": "bashcrawl/courses/pipelines/02-first-pipe.md",
+                "rel": "courses/pipelines/02-first-pipe.md"
               }
             ]
           },
@@ -253,34 +211,34 @@
             "children": [
               {
                 "type": "page",
-                "title": "Course",
+                "title": "Reading the Runes",
                 "path": "bashcrawl/courses/reading/course.md",
                 "rel": "courses/reading/course.md",
                 "order": 2.0
               },
               {
                 "type": "page",
-                "title": "01 Cat And File",
-                "path": "bashcrawl/courses/reading/01-cat-and-file.md",
-                "rel": "courses/reading/01-cat-and-file.md"
-              },
-              {
-                "type": "page",
-                "title": "02 Head And Tail",
-                "path": "bashcrawl/courses/reading/02-head-and-tail.md",
-                "rel": "courses/reading/02-head-and-tail.md"
-              },
-              {
-                "type": "page",
-                "title": "03 Counting",
+                "title": "How big is it?",
                 "path": "bashcrawl/courses/reading/03-counting.md",
                 "rel": "courses/reading/03-counting.md"
               },
               {
                 "type": "page",
-                "title": "04 Numbers And Pages",
+                "title": "Just the beginning, just the end",
+                "path": "bashcrawl/courses/reading/02-head-and-tail.md",
+                "rel": "courses/reading/02-head-and-tail.md"
+              },
+              {
+                "type": "page",
+                "title": "Numbered lines and paging",
                 "path": "bashcrawl/courses/reading/04-numbers-and-pages.md",
                 "rel": "courses/reading/04-numbers-and-pages.md"
+              },
+              {
+                "type": "page",
+                "title": "Open the scroll",
+                "path": "bashcrawl/courses/reading/01-cat-and-file.md",
+                "rel": "courses/reading/01-cat-and-file.md"
               }
             ]
           },
@@ -292,38 +250,32 @@
             "children": [
               {
                 "type": "page",
-                "title": "Course",
+                "title": "Words of Power",
                 "path": "bashcrawl/courses/shell-craft/course.md",
                 "rel": "courses/shell-craft/course.md",
                 "order": 5.0
               },
               {
                 "type": "page",
-                "title": "01 Variables",
-                "path": "bashcrawl/courses/shell-craft/01-variables.md",
-                "rel": "courses/shell-craft/01-variables.md"
-              },
-              {
-                "type": "page",
-                "title": "02 Arithmetic",
-                "path": "bashcrawl/courses/shell-craft/02-arithmetic.md",
-                "rel": "courses/shell-craft/02-arithmetic.md"
-              },
-              {
-                "type": "page",
-                "title": "03 Aliases",
+                "title": "Aliases",
                 "path": "bashcrawl/courses/shell-craft/03-aliases.md",
                 "rel": "courses/shell-craft/03-aliases.md"
               },
               {
                 "type": "page",
-                "title": "04 Globs And Quotes",
+                "title": "Arithmetic",
+                "path": "bashcrawl/courses/shell-craft/02-arithmetic.md",
+                "rel": "courses/shell-craft/02-arithmetic.md"
+              },
+              {
+                "type": "page",
+                "title": "Globs and quotes",
                 "path": "bashcrawl/courses/shell-craft/04-globs-and-quotes.md",
                 "rel": "courses/shell-craft/04-globs-and-quotes.md"
               },
               {
                 "type": "page",
-                "title": "05 History",
+                "title": "History never forgets",
                 "path": "bashcrawl/courses/shell-craft/05-history.md",
                 "rel": "courses/shell-craft/05-history.md"
               },
@@ -333,6 +285,12 @@
                 "path": "bashcrawl/courses/shell-craft/lab/grimoire.md",
                 "rel": "courses/shell-craft/lab/grimoire.md",
                 "folder": "courses/shell-craft/lab"
+              },
+              {
+                "type": "page",
+                "title": "Variables",
+                "path": "bashcrawl/courses/shell-craft/01-variables.md",
+                "rel": "courses/shell-craft/01-variables.md"
               }
             ]
           },
@@ -344,38 +302,38 @@
             "children": [
               {
                 "type": "page",
-                "title": "Course",
+                "title": "The Artificer's Workshop",
                 "path": "bashcrawl/courses/workshop/course.md",
                 "rel": "courses/workshop/course.md",
                 "order": 4.0
               },
               {
                 "type": "page",
-                "title": "01 Make",
-                "path": "bashcrawl/courses/workshop/01-make.md",
-                "rel": "courses/workshop/01-make.md"
-              },
-              {
-                "type": "page",
-                "title": "02 Copy And Move",
+                "title": "Copying and moving",
                 "path": "bashcrawl/courses/workshop/02-copy-and-move.md",
                 "rel": "courses/workshop/02-copy-and-move.md"
               },
               {
                 "type": "page",
-                "title": "03 Remove",
-                "path": "bashcrawl/courses/workshop/03-remove.md",
-                "rel": "courses/workshop/03-remove.md"
-              },
-              {
-                "type": "page",
-                "title": "04 Permissions",
+                "title": "Making it executable",
                 "path": "bashcrawl/courses/workshop/04-permissions.md",
                 "rel": "courses/workshop/04-permissions.md"
               },
               {
                 "type": "page",
-                "title": "05 Write",
+                "title": "Making things",
+                "path": "bashcrawl/courses/workshop/01-make.md",
+                "rel": "courses/workshop/01-make.md"
+              },
+              {
+                "type": "page",
+                "title": "Removing things",
+                "path": "bashcrawl/courses/workshop/03-remove.md",
+                "rel": "courses/workshop/03-remove.md"
+              },
+              {
+                "type": "page",
+                "title": "Writing files from the shell",
                 "path": "bashcrawl/courses/workshop/05-write.md",
                 "rel": "courses/workshop/05-write.md"
               }
@@ -387,14 +345,14 @@
         "type": "section",
         "title": "Documentation",
         "rel": "docs",
-        "index": "bashcrawl/docs/index.md",
-        "pages": 46,
+        "index": "bashcrawl/docs/README.md",
+        "pages": 34,
         "children": [
           {
             "type": "page",
-            "title": "Bashcrawl Documentation",
-            "path": "bashcrawl/docs/index.md",
-            "rel": "docs/index.md",
+            "title": "Bashcrawl documentation",
+            "path": "bashcrawl/docs/README.md",
+            "rel": "docs/README.md",
             "is_index": true
           },
           {
@@ -405,21 +363,9 @@
           },
           {
             "type": "page",
-            "title": "Agent Mode Protocol Specification",
-            "path": "bashcrawl/docs/agent-protocol.md",
-            "rel": "docs/agent-protocol.md"
-          },
-          {
-            "type": "page",
             "title": "Authoring Courses",
             "path": "bashcrawl/docs/authoring-courses.md",
             "rel": "docs/authoring-courses.md"
-          },
-          {
-            "type": "page",
-            "title": "Bashcrawl Agent Playtest Report & Recommendations",
-            "path": "bashcrawl/docs/agent-playtest-report.md",
-            "rel": "docs/agent-playtest-report.md"
           },
           {
             "type": "page",
@@ -429,39 +375,9 @@
           },
           {
             "type": "page",
-            "title": "Bashcrawl Improvement Plan",
-            "path": "bashcrawl/docs/improvement-plan.md",
-            "rel": "docs/improvement-plan.md"
-          },
-          {
-            "type": "page",
-            "title": "Bashcrawl Logging Framework Plan",
-            "path": "bashcrawl/docs/logging-framework-plan.md",
-            "rel": "docs/logging-framework-plan.md"
-          },
-          {
-            "type": "page",
-            "title": "Bashcrawl Observatory \u2014 Log & Screenshot Viewer",
-            "path": "bashcrawl/docs/viewer.md",
-            "rel": "docs/viewer.md"
-          },
-          {
-            "type": "page",
             "title": "bashcrawl \u2014 Constitution",
             "path": "bashcrawl/docs/constitution.md",
             "rel": "docs/constitution.md"
-          },
-          {
-            "type": "page",
-            "title": "Bashcrawl: Complete Game Walkthrough (demo-critical-path)",
-            "path": "bashcrawl/docs/demo-critical-path.md",
-            "rel": "docs/demo-critical-path.md"
-          },
-          {
-            "type": "page",
-            "title": "Bashcrawl: Complete Game Walkthrough (demo-walkthrough)",
-            "path": "bashcrawl/docs/demo-walkthrough.md",
-            "rel": "docs/demo-walkthrough.md"
           },
           {
             "type": "page",
@@ -477,12 +393,6 @@
           },
           {
             "type": "page",
-            "title": "Cursor AI and automation",
-            "path": "bashcrawl/docs/cursor-ai.md",
-            "rel": "docs/cursor-ai.md"
-          },
-          {
-            "type": "page",
             "title": "Gameplay Guide",
             "path": "bashcrawl/docs/gameplay.md",
             "rel": "docs/gameplay.md"
@@ -495,27 +405,9 @@
           },
           {
             "type": "page",
-            "title": "Log & Screenshot Viewer \u2014 Design Reference",
-            "path": "bashcrawl/docs/log-viewer-reference.md",
-            "rel": "docs/log-viewer-reference.md"
-          },
-          {
-            "type": "page",
-            "title": "Runtime Architecture",
-            "path": "bashcrawl/docs/architecture-runtime.md",
-            "rel": "docs/architecture-runtime.md"
-          },
-          {
-            "type": "page",
             "title": "The Bashcrawl Platform",
             "path": "bashcrawl/docs/PLATFORM.md",
             "rel": "docs/PLATFORM.md"
-          },
-          {
-            "type": "page",
-            "title": "Web Frontend API Design (Phase 2 Proposal)",
-            "path": "bashcrawl/docs/web-api-design.md",
-            "rel": "docs/web-api-design.md"
           },
           {
             "type": "section",
@@ -635,7 +527,7 @@
             "type": "section",
             "title": "Schemas",
             "rel": "docs/schemas",
-            "pages": 6,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
@@ -660,12 +552,6 @@
                 "title": "Rules v1",
                 "path": "bashcrawl/docs/schemas/rules.v1.md",
                 "rel": "docs/schemas/rules.v1.md"
-              },
-              {
-                "type": "page",
-                "title": "Terminal Protocol v1",
-                "path": "bashcrawl/docs/schemas/terminal-protocol.v1.md",
-                "rel": "docs/schemas/terminal-protocol.v1.md"
               },
               {
                 "type": "page",

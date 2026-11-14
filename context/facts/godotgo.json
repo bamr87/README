@@ -1,0 +1,133 @@
+{
+  "corpus": {
+    "file_count": 30,
+    "fingerprint": "677bab1cba1a85ce",
+    "path": "docs/godotgo",
+    "present": true,
+    "total_bytes": 134501
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "The sample games",
+      "The framework",
+      "Placeholder assets are generated",
+      "AI-assisted development",
+      "Documentation",
+      "Project structure",
+      "Development"
+    ],
+    "readme": "README.md",
+    "summary": "Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.",
+    "title": "GodotGo"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/reference/framework-api.md",
+    "docs/ai-development.md",
+    "docs/verification.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/godotgo.md",
+    "fingerprint": "94e54f2131ce9e81",
+    "index": "godotgo/README.md",
+    "max_depth": 4,
+    "pages": 30,
+    "present": true,
+    "sections": 6,
+    "skipped": 0,
+    "title": "GodotGo",
+    "top_sections": [
+      {
+        "index": "godotgo/docs/README.md",
+        "pages": 14,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": null,
+        "pages": 7,
+        "path": "games",
+        "title": "Games",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/godotgo.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "game",
+    "name": "godotgo",
+    "registry_description": "Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.",
+    "repo": "bamr87/godotgo",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/godotgo"
+  },
+  "rollups": {
+    "categories": {
+      "godotgo": 30
+    },
+    "code_languages": [
+      "bash",
+      "gdscript",
+      "plaintext",
+      "text",
+      "json",
+      "python"
+    ],
+    "indexed_documents": 30,
+    "top_tags": [],
+    "total_words": 19110
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 14,
+        "name": "docs"
+      },
+      {
+        "doc_count": 7,
+        "name": "games"
+      },
+      {
+        "doc_count": 1,
+        "name": "framework"
+      },
+      {
+        "doc_count": 1,
+        "name": "templates"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

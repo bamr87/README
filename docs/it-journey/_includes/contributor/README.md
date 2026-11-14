@@ -1,9 +1,12 @@
 ---
 description: Jekyll Liquid includes for the gamified contributor character sheet system
 lastmod: 2026-03-20
-source_file: README.md
+source_file: _includes/contributor/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_includes/contributor/README.md
 title: Contributor Profile Includes
 ---
+
 # Contributor Profile Includes
 
 Jekyll includes that compose the RPG-style character sheet displayed on contributor profile pages.

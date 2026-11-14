@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: _data/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_data/README.md
 title: 📊 Zer0-Mistakes Data Directory
 ---
 # 📊 Zer0-Mistakes Data Directory

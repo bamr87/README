@@ -1,5 +1,7 @@
 ---
 source_file: SECURITY.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/SECURITY.md
 title: Security Policy
 ---
 # Security Policy

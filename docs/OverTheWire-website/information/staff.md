@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: staff.md
+source_file: information/staff.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/staff.md
 title: Staff
 ---
+
 Staff
 =====
 

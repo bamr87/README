@@ -1,5 +1,7 @@
 ---
-source_file: 0000-template.md
+source_file: docs/amendments/0000-template.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/0000-template.md
 title: NNNN — Title of the amendment
 ---
 <!-- kit: governance v0.1.0 · copy to NNNN-kebab-slug.md (next free number) -->

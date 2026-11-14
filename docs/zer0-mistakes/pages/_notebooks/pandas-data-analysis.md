@@ -11,7 +11,9 @@ jupyter_metadata: true
 lastmod: 2026-07-01 03:24:05+00:00
 layout: notebook
 permalink: /notebooks/pandas-data-analysis/
-source_file: pandas-data-analysis.md
+source_file: pages/_notebooks/pandas-data-analysis.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notebooks/pandas-data-analysis.md
 tags:
 - jupyter
 - python
@@ -1244,9 +1246,9 @@ print("=" * 60)
 
 Now that you've learned the basics of Pandas data analysis, you can:
 
-1. **Visualize your data** - Check out the [Matplotlib Visualization](/notebooks/matplotlib-visualization/) tutorial
-2. **Perform statistical analysis** - See the [Python Statistics](/notebooks/python-statistics/) tutorial
-3. **Work with APIs** - Learn to fetch data in the [API Requests](/notebooks/api-requests/) tutorial
+1. **Visualize your data** - Check out the [[zer0-mistakes/pages/_notebooks/matplotlib-visualization|Matplotlib Visualization]] tutorial
+2. **Perform statistical analysis** - See the [[zer0-mistakes/pages/_notebooks/python-statistics|Python Statistics]] tutorial
+3. **Work with APIs** - Learn to fetch data in the [[zer0-mistakes/pages/_notebooks/api-requests|API Requests]] tutorial
 
 **Key Takeaways:**
 - Use `head()`, `info()`, and `describe()` for initial data exploration

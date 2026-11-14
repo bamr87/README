@@ -11,14 +11,17 @@ featured: true
 lastmod: 2026-04-18 19:30:07+00:00
 layout: article
 preview: /images/info-banner-mountain-wizard.png
-source_file: 2025-01-10-bootstrap-5-components.md
+source_file: pages/_posts/2025-01-10-bootstrap-5-components.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2025-01-10-bootstrap-5-components.md
 tags:
 - bootstrap
 - css
 - web-design
 - responsive
-title: 2025 01 10 Bootstrap 5 Components
+title: Bootstrap 5 Components for Modern Jekyll Themes
 ---
+
 Bootstrap 5 is the perfect companion for Jekyll themes. In this article, we'll explore the most useful Bootstrap components for creating modern, responsive Jekyll sites.
 
 ## The Bootstrap 5 Advantage

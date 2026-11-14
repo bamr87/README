@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Strategic design foundation for the rest of the Citadel
 skill_focus: fullstack
-source_file: domain-driven-design.md
+source_file: pages/_quests/1110/domain-driven-design.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/domain-driven-design.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - Domain-Driven Design'
 tags:
 - '1110'
@@ -87,7 +89,7 @@ tags:
 - ddd
 - conceptual
 - gamified-learning
-title: ❌ Anemic, framework-shaped — the business vocabulary has vanished
+title: 'Domain-Driven Design: Modeling the Business in Code'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -135,7 +137,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Comfortable with OO modeling and composition
-- [ ] Completed [Software Design Patterns](/quests/1110/design-patterns/) (recommended)
+- [ ] Completed [[it-journey/pages/_quests/1110/design-patterns|Software Design Patterns]] (recommended)
 - [ ] Have worked on a system with real business rules
 
 ### 🛠️ System Requirements
@@ -431,15 +433,15 @@ A **context map** documents the relationships between contexts - shared kernel, 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Microservices Architecture](/quests/1110/microservices-architecture/) - Bounded contexts become services
+- 🎯 [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] - Bounded contexts become services
 
 **Explore Side Adventures**:
-- ⚔️ [Event-Driven Design](/quests/1110/event-driven-design/) - Domain events as the connective tissue
+- ⚔️ [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]] - Domain events as the connective tissue
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Microservices Architecture](/quests/1110/microservices-architecture/)  
-**🏗️ System Engineer**: Explore [Event-Driven Design](/quests/1110/event-driven-design/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]]  
 **📊 Data Scientist**: Note how bounded contexts clarify which data is authoritative where
 
 ## 📚 Resources
@@ -468,6 +470,6 @@ A **context map** documents the relationships between contexts - shared kernel, 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Software Design Patterns: Gang of Four and Modern Patterns]] **Unlocks:** [[Microservices Architecture: Decomposing the Monolith]] · [[Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/design-patterns|Software Design Patterns: Gang of Four and Modern Patterns]] **Unlocks:** [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] · [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

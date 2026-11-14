@@ -49,7 +49,9 @@ rewards:
 - Rift Conquest Badge
 - Pipes and redirection mastery
 skill_focus: fullstack
-source_file: rift.md
+source_file: pages/_quests/0000/bashcrawl/rift.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/rift.md
 tags:
 - bashcrawl
 - terminal
@@ -57,7 +59,7 @@ tags:
 - pipes
 - redirection
 - '0000'
-title: The Rift gate requires all four fragments
+title: 'Bashcrawl Rift: Pipes, Redirection, and the Final Boss'
 validation_criteria:
 - Use | to pipe output between commands
 - Chain commands with && and ||
@@ -242,7 +244,7 @@ The satellite boss is the final encounter. It uses all skills: pipe a command th
 - **The dungeon is complete!** Celebrate your mastery.
 - **Capstone** → [Agent Mode](/quests/0000/side-quests/agent-mode/) for advanced automation
 - **Extend the dungeon** → [Bash Run](/quests/0000/side-quests/bash-run/)
-- **Back to hub** → [Bashcrawl Hub](/quests/0000/bashcrawl/)
+- **Back to hub** → [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Hub]]
 
 ---
 
@@ -255,7 +257,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual — Pipelines](https://www.gnu.org/software/bash/manual/bash.html#Pipelines) — The adventurer's guide to command chaining
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [Bash Redirections Cheat Sheet](https://catonmat.net/bash-one-liners-explained-part-three) — Every spell for the master wizard
 
 ---
@@ -264,7 +266,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] · [[Bashcrawl Hidden Chapel: Hidden Files and Man Pages]] **Unlocks:** [[Bashcrawl Agent Mode: AI Automation and Contribution]] **Sequel quests:** [[Bashcrawl Agent Mode: AI Automation and Contribution]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/bashcrawl/chamber|Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] · [[it-journey/pages/_quests/0000/bashcrawl/hidden-chapel|Bashcrawl Hidden Chapel: Hidden Files and Man Pages]] **Unlocks:** [[it-journey/pages/_quests/0000/bashcrawl/agent-mode|Bashcrawl Agent Mode: AI Automation and Contribution]] **Sequel quests:** [[it-journey/pages/_quests/0000/bashcrawl/agent-mode|Bashcrawl Agent Mode: AI Automation and Contribution]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

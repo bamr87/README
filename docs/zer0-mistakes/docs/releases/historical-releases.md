@@ -6,12 +6,15 @@ date: 2025-10-04 20:39:25+00:00
 description: Condensed release notes for early zer0-mistakes versions. For v0.7.0
   and later, see CHANGELOG.md.
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: historical-releases.md
+source_file: docs/releases/historical-releases.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/releases/historical-releases.md
 tags:
 - releases
 - history
-title: Historical Releases
+title: Historical Releases (v0.3.0 – v0.7.0)
 ---
+
 # Historical Releases
 
 > **Note**: This file covers early releases (v0.3.0–v0.7.0). For v0.8.0 and later, the canonical record is [CHANGELOG.md](../../CHANGELOG.md). For detailed historical notes on each release below, see the git tag annotations.

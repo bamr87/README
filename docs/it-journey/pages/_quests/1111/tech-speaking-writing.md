@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: communication
-source_file: tech-speaking-writing.md
+source_file: pages/_quests/1111/tech-speaking-writing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/tech-speaking-writing.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Tech Speaking and Writing'
 tags:
 - '1111'
@@ -83,7 +85,7 @@ tags:
 - rfc
 - public-speaking
 - gamified-learning
-title: A versioned writing folder makes your drafts reviewable and reusable
+title: 'Tech Speaking and Writing: RFCs, Docs, and Talks'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Real technical experience worth writing and speaking about
 - [ ] Comfort writing in Markdown
-- [ ] Completion of [Technical Leadership](/quests/1111/technical-leadership/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] A Markdown editor for design docs and RFCs
@@ -395,17 +397,17 @@ The most common talk failure is *too much content*. Cut ruthlessly: a talk that 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Open Source Contribution](/quests/1111/open-source-contribution/) - Put your writing to work in public
+- 🎯 [[it-journey/pages/_quests/1111/open-source-contribution|Open Source Contribution]] - Put your writing to work in public
 
 **Explore Side Adventures**:
-- ⚔️ [Building Technical Communities](/quests/1111/building-technical-communities/) - Reach a wider audience
-- ⚔️ [Architecture Reviews](/quests/1111/architecture-reviews/) - Where design docs meet live debate
+- ⚔️ [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]] - Reach a wider audience
+- ⚔️ [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]] - Where design docs meet live debate
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Open Source Contribution](/quests/1111/open-source-contribution/)  
-**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🛡️ Security Specialist**: Advance to [Building Technical Communities](/quests/1111/building-technical-communities/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/open-source-contribution|Open Source Contribution]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]]
 
 ## 📚 Resources
 
@@ -434,6 +436,6 @@ The most common talk failure is *too much content*. Cut ruthlessly: a talk that 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] **Unlocks:** [[Open Source Contribution: Leading and Maintaining Projects]] · [[Building Technical Communities: Growing Developer Ecosystems]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] **Unlocks:** [[Open Source Contribution: Leading and Maintaining Projects]] · [[Building Technical Communities: Growing Developer Ecosystems]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

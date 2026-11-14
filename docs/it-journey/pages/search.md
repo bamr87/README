@@ -10,12 +10,14 @@ lastmod: '2023-03-11T01:12:55.000Z'
 layout: index
 permalink: /search/
 slug: search
-source_file: search.md
+source_file: pages/search.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/search.md
 tags:
 - search
 - sitemap
 - navigation
-title: Search Index and Sitemap
+title: Search
 ---
 # Search Index and Sitemap
 

@@ -59,7 +59,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: devops
-source_file: ouroboros-loop-06-the-fixers-oath.md
+source_file: pages/_quests/1101/ouroboros-loop-06-the-fixers-oath.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/ouroboros-loop-06-the-fixers-oath.md
 tags:
 - '1101'
 - claude-code
@@ -67,7 +69,7 @@ tags:
 - ai-agents
 - automation
 - gamified-learning
-title: potion-fixer
+title: 'The Fixer''s Oath: Repairs Kept by Gates, Not Grades'
 ---
 *Until now your loop could witness a broken spell but never mend it. Today it earns hands — under the strictest oath in the campaign. A fixer golem may repair **only what the sealed evidence witnessed break**, with the smallest edit that mends it, and every edit is kept or reverted by a **deterministic gate** — a score the golem cannot charm, a linter it cannot flatter. And when the evidence is partial? It walks away. In this realm, a golem that does nothing honestly outranks one that does something plausible.*
 
@@ -229,8 +231,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- ♾️ [Chapter VII — Weaving the Whole](/quests/1110/ouroboros-loop-07-weaving-the-whole/): the capstone — the serpent closes its own circle with self-merging gates
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- ♾️ [[it-journey/pages/_quests/1110/ouroboros-loop-07-weaving-the-whole|Chapter VII — Weaving the Whole]]: the capstone — the serpent closes its own circle with self-merging gates
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -242,4 +244,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[The Mana Ledger]] · **Next:** [[Weaving the Whole]] **Level home:** [[Level 1101 - Machine Learning & AI]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[The Mana Ledger]] · **Next:** [[Weaving the Whole]] **Level home:** [[Level 1101 - Machine Learning & AI]]

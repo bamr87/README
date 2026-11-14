@@ -31,7 +31,9 @@ quest_type: side_quest
 skill_focus:
 - codex
 - reference
-source_file: glossary.md
+source_file: pages/_quests/codex/glossary.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/glossary.md
 tags:
 - codex
 - glossary
@@ -39,11 +41,12 @@ tags:
 - fantasy
 - reference
 - world-building
-title: Glossary
+title: 'Codex Glossary: Fantasy Terms to IT Reality'
 toc: true
 toc_sticky: true
 ---
-*Every realm keeps a codex — the book its scribes consult so that a dragon in one tale is not a lizard in the next. This is ours: the shared dictionary that maps the fantasy of IT-Journey onto the technology it teaches. Met a strange word mid-quest? Look it up here. Writing a quest? Take your words from here. For where things **are**, see the [World Map](/quests/codex/world-map/); for what things are **called**, you're home.*
+
+*Every realm keeps a codex — the book its scribes consult so that a dragon in one tale is not a lizard in the next. This is ours: the shared dictionary that maps the fantasy of IT-Journey onto the technology it teaches. Met a strange word mid-quest? Look it up here. Writing a quest? Take your words from here. For where things **are**, see the [[it-journey/pages/_quests/codex/world_map|World Map]]; for what things are **called**, you're home.*
 
 ## 🧭 How to Read This Codex
 
@@ -72,7 +75,7 @@ Each entry has three parts:
 | **The Microsoft Kingdom** | Windows | Vast and orderly; its court speaks PowerShell. |
 | **The Apple Empire** | macOS | Polished marble over Unix stone — a walled garden with excellent weather. |
 | **The Penguin's Domain** | Linux | A thousand provinces (distributions), open borders, and the terminal as the king's road. |
-| **The Digital Heavens** | The cloud (AWS, Azure, GCP) | Castles rented by the hour, floating above someone else's Farmlands. Ascend at [Level 1000](/quests/1000/). |
+| **The Digital Heavens** | The cloud (AWS, Azure, GCP) | Castles rented by the hour, floating above someone else's Farmlands. Ascend at [[it-journey/pages/_quests/1000/README\|Level 1000]]. |
 | **Your Home Village** | `localhost` (127.0.0.1) | Where every journey begins. There's no place like 127.0.0.1. |
 | **The Proving Grounds** | Staging and test environments | Where work faces its trials before meeting the world. Break things here — that is what the grounds are for. |
 | **The Frontier** | Production | Real users, real stakes, real dragons. Nothing crosses without the Wardens' seal. |
@@ -88,26 +91,26 @@ Each entry has three parts:
 | **The Labyrinth** | An undocumented legacy codebase | Bring thread: write down your path as you go, so the next traveler doesn't wander where you did. |
 | **The Void** | `/dev/null` | A place of no return for unwanted output. See *Words of Power* before casting anything into it. |
 | **The Molten Core** | The kernel | The deepest layer of any world, where its laws are enforced. Few descend; all depend on it. |
-| **The Overworld** | The [master quest map](/quests/home/) | The view from above — all sixteen levels at once, and your own footprints across them. |
-| **Init World** | [Level 0000](/quests/0000/) | Where characters are created and every journey begins. |
+| **The Overworld** | The [[it-journey/pages/_quests/home\|master quest map]] | The view from above — all sixteen levels at once, and your own footprints across them. |
+| **Init World** | [[it-journey/pages/_quests/0000/README\|Level 0000]] | Where characters are created and every journey begins. |
 
 ## 🏰 Strongholds and Workshops — Where the Work Happens
 
 | Fantasy | In the mortal world | Field notes |
 |---|---|---|
-| **Your Fortress** | Your development machine | Provision it early and raise the walls: updates, encryption, backups. First provisioned in [Init World](/quests/0000/). |
-| **Your Castle** | Your personal website and domain | Every traveler should raise one — the realm judges you by what you've built. Foundations are laid at [Level 0001](/quests/0001/). |
+| **Your Fortress** | Your development machine | Provision it early and raise the walls: updates, encryption, backups. First provisioned in [[it-journey/pages/_quests/0000/README\|Init World]]. |
+| **Your Castle** | Your personal website and domain | Every traveler should raise one — the realm judges you by what you've built. Foundations are laid at [[it-journey/pages/_quests/0001/README\|Level 0001]]. |
 | **The Bit Forge** | Your IDE or editor | Where raw ideas are hammered into working code. VS Code is the realm's most crowded forge floor. |
 | **The Grand Bazaar** | GitHub | Market, meeting hall, and commons in one: work is offered, copied (forked), improved, and given back. Karma is earned here. |
 | **Market Stalls** | Package registries (npm, PyPI, RubyGems) | Potions by the hundred thousand. Read the label and know your brewer — see *Potions*. |
-| **The Factory** | CI/CD pipelines | A golem-run assembly line: every change walks the same gauntlet, no exceptions, no moods. Built at [Level 0101](/quests/0101/). |
-| **The Library** | Documentation, manuals, references | The realm's collected knowledge; the strongest adventurers are the ones you meet here mid-quest. Its reference wing holds the [cheatsheets](/notes/cheatsheets/). |
-| **Your Grimoire** | Your personal notes ([/notes/](/notes/)) | Spells that worked, monsters slain, and how. Future-you is its most grateful reader. |
+| **The Factory** | CI/CD pipelines | A golem-run assembly line: every change walks the same gauntlet, no exceptions, no moods. Built at [[it-journey/pages/_quests/0101/README\|Level 0101]]. |
+| **The Library** | Documentation, manuals, references | The realm's collected knowledge; the strongest adventurers are the ones you meet here mid-quest. Its reference wing holds the [[it-journey/pages/_notes/cheatsheets/index\|cheatsheets]]. |
+| **Your Grimoire** | Your personal notes ([[it-journey/pages/_notes/index\|/notes/]]) | Spells that worked, monsters slain, and how. Future-you is its most grateful reader. |
 | **The Tavern** | Stack Overflow, Discord, forums | Where travelers trade war stories and answers. Tavern manners: search before you shout, and show what you tried. |
 | **The Training Grounds** | Sandboxes, tutorials, katas | Wooden swords, real technique. Mini-games — coding challenges and capture-the-flag contests — are played here for sport and skill. |
 | **The Vault** | Secrets managers (environment variables, GitHub Secrets) | Keys, tokens, and passwords under lock. Never inscribe a secret on a public scroll — the Bazaar never forgets, and neither does git history. |
-| **The Watchtower** | Monitoring and dashboards | Where Sentinels scry the horizon. Climb it at [Level 1010](/quests/1010/). |
-| **The Archives** | Databases | The realm's memory vaults — information kept, indexed, and guarded. Librarians keep them; SQL is the formal speech for petitioning them. Delve at [Level 0110](/quests/0110/). |
+| **The Watchtower** | Monitoring and dashboards | Where Sentinels scry the horizon. Climb it at [[it-journey/pages/_quests/1010/README\|Level 1010]]. |
+| **The Archives** | Databases | The realm's memory vaults — information kept, indexed, and guarded. Librarians keep them; SQL is the formal speech for petitioning them. Delve at [[it-journey/pages/_quests/0110/README\|Level 0110]]. |
 | **The Treasury** | Your computing budget | Funds are computing power. The Digital Heavens bill by the hour — someone must watch the coin. |
 | **The Empire** | Enterprise organizations and their systems | Many castles, old maps, much ceremony. Adventuring rules differ inside its walls, and it pays well for those who learn them. |
 
@@ -119,11 +122,11 @@ Each entry has three parts:
 |---|---|---|
 | **zer0 → her0** | The journey from beginner to practitioner | The realm's founding prophecy — always written with zeroes. |
 | **n00b** | An absolute beginner | A title of honor here, never an insult. Every Master remembers wearing it. |
-| **Your Character** | Your professional identity | Forged in [Init World](/quests/0000/), leveled everywhere else. |
+| **Your Character** | Your professional identity | Forged in [[it-journey/pages/_quests/0000/README\|Init World]], leveled everywhere else. |
 | **Character Class** | Your IT specialization | Eight to choose from (see below). Multi-classing is common and encouraged. |
 | **XP** | Experience points | Earned by completing quests, 0 to 9000+. The count is honest: no quest, no XP. |
 | **Levels** | The sixteen stages, 0000 → 1111 | The realm counts in binary, its native tongue: 1111 is 15. Read a level aloud and you've counted like a machine. |
-| **The Quest Log** | Your progress tracker | This realm keeps yours in your own browser (localStorage). Consult it from the [Overworld](/quests/home/). |
+| **The Quest Log** | Your progress tracker | This realm keeps yours in your own browser (localStorage). Consult it from the [[it-journey/pages/_quests/home\|Overworld]]. |
 | **Badges and Loot** | Skills and portfolio artifacts | The loot that matters is the working thing you built — and the proof you understand it. |
 | **Karma** | Open-source contributions | Green sigils on your Bazaar profile. Earned, never bought. |
 | **Your Party** | Your team, your pair-programming partner | Dungeons are safer with company. So is production. |
@@ -141,7 +144,7 @@ Each entry has three parts:
 
 ### The Eight Classes
 
-Chosen — and re-chosen — in the [Character Selection quest](/quests/0000/character-selection/):
+Chosen — and re-chosen — in the [[it-journey/pages/_quests/0000/character-selection|Character Selection quest]]:
 
 | Class | Mortal title | Powers |
 |---|---|---|
@@ -161,7 +164,7 @@ Chosen — and re-chosen — in the [Character Selection quest](/quests/0000/cha
 | **Magic** | Software | Any sufficiently documented magic is indistinguishable from technology. |
 | **Spells** | Scripts and programs | Written words that make machines act. Wizards keep theirs under version control. |
 | **Incantations** | Terminal commands | Cast one line at a time. `ls`, `cd`, `grep` — cantrips first, rituals later. |
-| **Your Spellbook** | The terminal (the shell) | *"Your terminal is a spellbook you haven't opened yet."* Open it daily; it opens everything else. Mastered at [Level 0010](/quests/0010/). |
+| **Your Spellbook** | The terminal (the shell) | *"Your terminal is a spellbook you haven't opened yet."* Open it daily; it opens everything else. Mastered at [[it-journey/pages/_quests/0010/README\|Level 0010]]. |
 | **Personal Enchantments** | Dotfiles and shell configuration | Notes in your spellbook's margins — `.zshrc`, aliases, prompts. Carried from fortress to fortress in a dotfiles repository. |
 | **Algorithm Weaving** | Programming | The craft itself: threads of logic woven into cloth that bears weight. |
 | **Runecraft** | Regular expressions | Dense symbols, great force, easy to miscast. Test your runes before etching them into a spell. |
@@ -174,7 +177,7 @@ Chosen — and re-chosen — in the [Character Selection quest](/quests/0000/cha
 
 ## 🕰️ Chronomancy — Git and the Weave of Time
 
-*Git is the realm's school of time magic: chronicle branching and timeline weaving. It is taught early — [Level 0001](/quests/0001/) — because chronomancers fear almost nothing: every mistake sits one counter-spell from undone.*
+*Git is the realm's school of time magic: chronicle branching and timeline weaving. It is taught early — [[it-journey/pages/_quests/0001/README|Level 0001]] — because chronomancers fear almost nothing: every mistake sits one counter-spell from undone.*
 
 | Fantasy | In the mortal world | Field notes |
 |---|---|---|
@@ -238,22 +241,22 @@ Chosen — and re-chosen — in the [Character Selection quest](/quests/0000/cha
 | **The Forge** | Build systems and compilers | Raw source in, artifact out, sparks along the way. The sparks are warnings — heed them. |
 | **The Gauntlet of Trials** | The test suite | Truth-table trials: every claim your code makes, challenged in order. Write the trial before you slay the hydra. |
 | **The Ship's Log** | Application and system logs | What *actually* happened, timestamped. Read the log before forming theories — it is the dungeon's torch. |
-| **Scrying** | Monitoring and observability | Watching distant events through enchanted glass: dashboards, traces, metrics. The Watchtower's craft, mastered at [Level 1010](/quests/1010/). |
+| **Scrying** | Monitoring and observability | Watching distant events through enchanted glass: dashboards, traces, metrics. The Watchtower's craft, mastered at [[it-journey/pages/_quests/1010/README\|Level 1010]]. |
 | **The Sentinel's Horn** | Alerts and paging | Sounded only for true danger. A horn that cries nightly is soon ignored — that fatigue has a name in both worlds. |
 | **Summoning** | Deployment | The work steps out of the chronicle and into the world — digital manifestation. Summon to the Proving Grounds before the Frontier. |
-| **Summoning Circles** | Containers | A Dockerfile inscribes the circle; the creature bound inside behaves identically in every world. *"Works in my fortress"* ceases to be an excuse. Drawn at [Level 0100](/quests/0100/). |
-| **The Marshal of Legions** | Kubernetes | Commands armies of summoned creatures: replaces any that fall (self-healing), raises more when the horde swells (autoscaling). Sworn in at [Level 1001](/quests/1001/). |
-| **Wards** | Firewalls, authentication, hardening | Layered protections placed *before* trouble: walls, gates, watchwords. Raised properly at [Level 1011](/quests/1011/). |
+| **Summoning Circles** | Containers | A Dockerfile inscribes the circle; the creature bound inside behaves identically in every world. *"Works in my fortress"* ceases to be an excuse. Drawn at [[it-journey/pages/_quests/0100/README\|Level 0100]]. |
+| **The Marshal of Legions** | Kubernetes | Commands armies of summoned creatures: replaces any that fall (self-healing), raises more when the horde swells (autoscaling). Sworn in at [[it-journey/pages/_quests/1001/README\|Level 1001]]. |
+| **Wards** | Firewalls, authentication, hardening | Layered protections placed *before* trouble: walls, gates, watchwords. Raised properly at [[it-journey/pages/_quests/1011/README\|Level 1011]]. |
 | **Benign Necromancy** | Backups and disaster recovery | The one school of necromancy the realm honors: raising dead systems whole. No backup, no resurrection — only permadeath. Rehearse the rites (restore drills) before you need them. |
 | **Transmutation** | Refactoring | Change the form, preserve the essence. The Gauntlet proves the essence held. |
 | **Characterization Trials** | Characterization (golden-master) tests | Trials that pin what a relic *does*, not what it should do. Write them before you swing at the Hydra. |
 | **Archaeology** | Legacy-system analysis — recovering what a system does and why from its code, data, and history | The Labyrinth's craft. Bring thread, read the Chronicle, find the Elders, and never trust a guess with good grammar. |
 | **The Rosetta Ledger** | A reconciliation between an old system and its replacement | The same decree in two scripts — a trial balance that ties out on both sides. Until it does, you have copied the relic, not read it. |
 | **The Strangler Fig** | The strangler-fig migration pattern — a new system grows around the old until the old can be cut away | Nothing goes dark on cutover day; the gate routes one request at a time, and rollback is a flag. |
-| **Relic-raising** | Legacy modernization | Reviving a relic without losing what it knows: read it, pin it, translate it, then replace its housing one gate at a time. Taught in [The Relic Raisers](/quests/codex/relic-raisers/). |
-| **Alchemy** | Data engineering | Distilling rivers of raw data into gold. Pipelines are the stills; [Level 1100](/quests/1100/) is the school. |
-| **Prophecy** | Machine learning | Foretelling from patterns of the past. Honest prophets state their confidence — every prophecy carries error bars. Studied at [Level 1101](/quests/1101/). |
-| **The Ouroboros Loop** | A self-perfecting automation cycle (test → fix → merge → re-test) | The Factory's highest art: an oath-bound golem loop that walks the realm's own scrolls, repairs only what it witnessed break, and rests only when the seals say *perfect*. Forged in the [epic of the same name](/quests/codex/ouroboros-loop/). |
+| **Relic-raising** | Legacy modernization | Reviving a relic without losing what it knows: read it, pin it, translate it, then replace its housing one gate at a time. Taught in [[it-journey/pages/_quests/codex/relic-raisers\|The Relic Raisers]]. |
+| **Alchemy** | Data engineering | Distilling rivers of raw data into gold. Pipelines are the stills; [[it-journey/pages/_quests/1100/README\|Level 1100]] is the school. |
+| **Prophecy** | Machine learning | Foretelling from patterns of the past. Honest prophets state their confidence — every prophecy carries error bars. Studied at [[it-journey/pages/_quests/1101/README\|Level 1101]]. |
+| **The Ouroboros Loop** | A self-perfecting automation cycle (test → fix → merge → re-test) | The Factory's highest art: an oath-bound golem loop that walks the realm's own scrolls, repairs only what it witnessed break, and rests only when the seals say *perfect*. Forged in the [[it-journey/pages/_quests/codex/ouroboros-loop\|epic of the same name]]. |
 
 ## 🏛️ Law and Fellowship — Governance and Community
 
@@ -314,6 +317,6 @@ becomes a quest line without losing a single fact:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

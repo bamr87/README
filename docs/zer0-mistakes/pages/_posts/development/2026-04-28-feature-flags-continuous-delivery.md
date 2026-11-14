@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:10:00+00:00
 layout: article
 preview: /images/previews/feature-flags-for-safer-continuous-delivery.png
-source_file: 2026-04-28-feature-flags-continuous-delivery.md
+source_file: pages/_posts/development/2026-04-28-feature-flags-continuous-delivery.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/development/2026-04-28-feature-flags-continuous-delivery.md
 tags:
 - feature-flags
 - continuous-delivery
 - release-management
 - devops
-title: 2026 04 28 Feature Flags Continuous Delivery
+title: Feature Flags for Safer Continuous Delivery
 ---
+
 Feature flags let teams separate deployment from release. Code can reach production before every user sees it, which makes releases smaller, rollouts calmer, and recovery faster when something goes wrong.
 
 The pattern is simple: wrap new behavior behind a runtime decision, deploy the code safely, and turn it on for the right audience when the team is ready.

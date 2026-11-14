@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 712,
-    "fingerprint": "8bee55625627b534",
+    "file_count": 68,
+    "fingerprint": "50c2c085394f9898",
     "path": "docs/skills",
     "present": true,
-    "total_bytes": 4994372
+    "total_bytes": 783493
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -27,34 +27,55 @@
   "key_docs": [
     "README.md",
     "SECURITY.md",
-    ".github/prompts/scaffold-foundry-app.prompt.md",
-    ".github/docs/skills.md",
-    "tests/AGENTS.md",
+    "dot-github/prompts/scaffold-foundry-app.prompt.md",
+    "dot-github/docs/skills.md",
     "Agents.md",
-    ".github/copilot-instructions.md",
-    ".github/agents/scaffolder.agent.md"
+    "dot-github/agents/scaffolder.agent.md",
+    "dot-github/docs/pattern-enforcement.md",
+    "dot-github/prompts/add-endpoint.prompt.md"
   ],
   "navigation": {
     "browse": "docs/browse/skills.md",
-    "fingerprint": "292f000a4ab20ef9",
+    "fingerprint": "fb1082f114d0de74",
     "index": "skills/README.md",
-    "max_depth": 3,
-    "pages": 7,
+    "max_depth": 4,
+    "pages": 68,
     "present": true,
-    "sections": 3,
-    "skipped": 1,
+    "sections": 24,
+    "skipped": 0,
     "title": "Agent Skills",
     "top_sections": [
       {
         "index": null,
-        "pages": 1,
+        "pages": 47,
+        "path": "dot-github/skills",
+        "title": "Skills",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 6,
+        "path": "dot-github/agents",
+        "title": "Agents",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 5,
+        "path": "dot-github/prompts",
+        "title": "Prompts",
+        "type": "group"
+      },
+      {
+        "index": null,
+        "pages": 6,
         "path": null,
         "title": "Documentation",
         "type": "group"
       },
       {
-        "index": "skills/tests/README.md",
-        "pages": 3,
+        "index": null,
+        "pages": 1,
         "path": null,
         "title": "Repository & tooling",
         "type": "group"
@@ -64,11 +85,11 @@
   },
   "project": {
     "branch": null,
-    "external": false,
+    "external": true,
     "kind": "docs",
     "name": "skills",
     "registry_description": "Agent skills \u2014 prompts, MCP configurations, and AI development patterns.",
-    "repo": "bamr87/skills",
+    "repo": "microsoft/skills",
     "status": "active",
     "topics": [
       "ai",
@@ -76,23 +97,23 @@
       "mcp",
       "prompts"
     ],
-    "url": "https://github.com/bamr87/skills"
+    "url": "https://github.com/microsoft/skills"
   },
   "rollups": {
     "categories": {
-      "skills": 712
+      "skills": 68
     },
     "code_languages": [
-      "python",
-      "java",
+      "kql",
       "typescript",
-      "csharp",
-      "bash",
       "plaintext",
-      "rust",
-      "markdown"
+      "python",
+      "bash",
+      "markdown",
+      "csharp",
+      "rust"
     ],
-    "indexed_documents": 712,
+    "indexed_documents": 68,
     "top_tags": [
       "learning",
       "memory",
@@ -100,11 +121,11 @@
       "productivity",
       "featured"
     ],
-    "total_words": 509396
+    "total_words": 88804
   },
   "schema_version": "1.0",
   "signals": {
-    "has_agents_md": true,
+    "has_agents_md": false,
     "has_changelog": false,
     "has_claude_md": false,
     "has_contributing": false,
@@ -119,12 +140,8 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 705,
-        "name": ".github"
-      },
-      {
-        "doc_count": 2,
-        "name": "tests"
+        "doc_count": 63,
+        "name": "dot-github"
       },
       {
         "doc_count": 1,

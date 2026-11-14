@@ -20,7 +20,9 @@ machine_translated: true
 mermaid: true
 permalink: /fr/posts/2024/06/17/wizard-topples-capitalist-dominance-ingeniously/
 preview: /images/wizard-on-journey.png
-source_file: 2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
+source_file: fr/posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
 tags:
 - satire
 - ethics
@@ -30,11 +32,12 @@ tags:
 - open-source
 - esg
 - algorithmic-accountability
-title: scripts/ingest_edgar.py
+title: Un magicien renverse ingénieusement la domination capitaliste
 translated_from_sha: 5ba30eeebe4f
 translation_of: pages/_posts/2024-06-17-wizard-topples-capitalist-dominance-ingeniously.md
 translation_source_url: /posts/2024/06/17/wizard-topples-capitalist-dominance-ingeniously/
 ---
+
 Dans un retournement de situation stupéfiant, le monde a été sauvé des griffes du capitalisme par un sorcier qui a utilisé une magie non-arcanique—technologie pratique et raisonnement éthique—pour éliminer les maux du système tout en préservant la valeur pour les actionnaires. Le sorcier, connu uniquement sous le nom de Merlin Financialis, a été salué comme un héros pour ses efforts révolutionnaires visant à dénoncer la marionnettisation financière qui afflige l'humanité depuis des générations.
 
 > ⚠️ **Avertissement satirique** : Cet article est une allégorie ironique. Le sorcier est fictif ; les outils, frameworks et modèles évoqués ci-dessous sont bien réels et référencés à la fin.

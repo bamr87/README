@@ -56,12 +56,14 @@ rewards:
   - Access to specialization selection
 skill_focus: fullstack
 slug: journey
-source_file: begin-your-it-journey.md
+source_file: pages/_quests/0000/begin-your-it-journey.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/begin-your-it-journey.md
 tags:
 - getting-started
 - beginner
 - '0000'
-title: Choose your path
+title: 'Begin Your IT Journey: Survey the Realm'
 validation_criteria:
   completion_requirements:
   - Identify at least one IT career path of interest
@@ -233,7 +235,7 @@ No wizard learns alone. Claim your place in a community so you have somewhere to
 
 ### 🎖️ Rewards
 
-> 🏆 Completing this quest awards **50 progression points**, the **Journey Initiate Badge**, and the **⚡ IT Awareness Achievement** — and unlocks the next quest: [Character Building: Forge Your IT Identity](/quests/0000/character-building/).
+> 🏆 Completing this quest awards **50 progression points**, the **Journey Initiate Badge**, and the **⚡ IT Awareness Achievement** — and unlocks the next quest: [[it-journey/pages/_quests/0000/character-building|Character Building: Forge Your IT Identity]].
 
 ## 📚 References & Resources
 
@@ -247,7 +249,7 @@ Remember, becoming a master system builder is a journey of continuous learning a
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[Character Building: Forge Your IT Identity and Development Environment]] · [[Character Selection]] **Sequel quests:** [[Character Building: Forge Your IT Identity and Development Environment]] **Parallel quests:** [[IT Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0000/hello-noob|Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[Character Building: Forge Your IT Identity and Development Environment]] · [[Character Selection]] **Sequel quests:** [[Character Building: Forge Your IT Identity and Development Environment]] **Parallel quests:** [[IT Fundamentals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

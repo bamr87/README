@@ -1,5 +1,7 @@
 ---
-source_file: information.md
+source_file: _includes/information.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/_includes/information.md
 title: Information
 ---
 <div id="sidemenu">

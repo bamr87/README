@@ -10,11 +10,13 @@ order: 11.0
 preview: /assets/images/posts/011-0-i-m-the-ubermensch.jpg
 section: 01-telemachus
 series: ulysses
-source_file: 011-0-i-m-the-ubermensch.md
-source_url: https://www.swerveofshore.com/post/011-0-i-m-the-%C3%BCbermensch
+source_file: examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/011-0-i-m-the-ubermensch.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/011-0-i-m-the-ubermensch.md
 sub-title: Episode 1 · Telemachus
-title: 011 0 I M The Ubermensch
+title: 011.0 - I’m the Übermensch
 ---
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/011-0-i-m-the-%C3%BCbermensch), by Brandon Nicklaus.
 
 > We are using the original 1922 First Printing by Shakespeare & Co. - section attached

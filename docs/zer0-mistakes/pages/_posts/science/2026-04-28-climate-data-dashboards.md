@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:20:00+00:00
 layout: article
 preview: /images/previews/climate-data-dashboards-turning-measurements-into-.png
-source_file: 2026-04-28-climate-data-dashboards.md
+source_file: pages/_posts/science/2026-04-28-climate-data-dashboards.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/science/2026-04-28-climate-data-dashboards.md
 tags:
 - climate
 - data-visualization
 - dashboards
 - decision-science
-title: 2026 04 28 Climate Data Dashboards
+title: 'Climate Data Dashboards: Turning Measurements into Decisions'
 ---
+
 Climate data is abundant, but abundance does not automatically create insight. Sensor networks, satellite products, field reports, and historical records often live in separate systems. A useful dashboard turns that scattered evidence into a decision people can make today.
 
 The challenge is not only technical. It is editorial. A dashboard has to decide what matters, what can be hidden, and what needs attention now.

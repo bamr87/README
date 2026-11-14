@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: motion/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/motion/README.md
 title: motion/
 ---
 # motion/

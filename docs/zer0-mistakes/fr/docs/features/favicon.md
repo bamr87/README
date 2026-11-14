@@ -22,16 +22,19 @@ machine_translated: true
 permalink: /fr/docs/features/favicon/
 sidebar:
   nav: docs
-source_file: favicon.md
+source_file: fr/docs/features/favicon.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/favicon.md
 tags:
 - seo
 - branding
 - configuration
-title: Favicon et identité du navigateur
+title: Configuration du favicon et de l'identité du navigateur
 translated_from_sha: 29f638af9118
 translation_of: pages/_docs/features/favicon.md
 translation_source_url: /docs/features/favicon/
 ---
+
 # Favicon et identité du navigateur
 
 Le thème émet les balises d'identité du navigateur — favicon, icône SVG évolutive, icône Apple touch, manifeste web et `theme-color` — depuis `_includes/core/favicon.html`, inclus dans l'en-tête du document sur chaque page.
@@ -131,5 +134,5 @@ L'intérêt de ces balises est que vous ne pouvez pas en voir la plupart, alors 
 
 ## Voir aussi
 
-- [Liste de contrôle du consommateur de thème distant](/docs/deployment/remote-theme-checklist/) — ce qu'un site `remote_theme` doit déclarer pour lui-même, y compris les ressources d'icônes et le bloc `favicon:` optionnel
-- [Fonctionnalités](/docs/features/) — index de toutes les fonctionnalités du thème
+- [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Liste de contrôle du consommateur de thème distant]] — ce qu'un site `remote_theme` doit déclarer pour lui-même, y compris les ressources d'icônes et le bloc `favicon:` optionnel
+- [[zer0-mistakes/pages/_docs/features/index|Fonctionnalités]] — index de toutes les fonctionnalités du thème

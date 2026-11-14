@@ -24,7 +24,9 @@ redirect_from:
 related_quests:
 - /quests/0000/bashcrawl/
 - /quests/0000/side-quests/bash-run/
-source_file: bash-cheatsheet.md
+source_file: pages/_notes/cheatsheets/bash-cheatsheet.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/bash-cheatsheet.md
 tags:
 - bash
 - linux
@@ -32,7 +34,7 @@ tags:
 - shell
 - cheatsheet
 - reference
-title: This is an inline Bash comment.
+title: 'Bash Cheatsheet: Essential Commands & Scripts'
 ---
 [![hackmd-GitHub-sync-badge](https://hackmd.io/mCoifzaSQLOH_18DCH1IQg/badge)](https://hackmd.io/mCoifzaSQLOH_18DCH1IQg)
 

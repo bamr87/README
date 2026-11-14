@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 9
-source_file: vortex9.md
+source_file: wargames/vortex/vortex9.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex9.md
 title: Vortex9
 ---
 BlackBox

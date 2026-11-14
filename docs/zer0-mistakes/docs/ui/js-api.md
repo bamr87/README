@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:58+00:00
 description: 'The public JavaScript API of Zer0-Mistakes: the navigation, background,
   and UI surfaces intended for consumers, plus their stability expectations.'
 lastmod: 2026-09-05 00:00:00+00:00
-source_file: js-api.md
+source_file: docs/ui/js-api.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/js-api.md
 tags:
 - ui
 - styling
 - theme
 title: JavaScript API
 ---
+
 # JavaScript API
 
 Public JS surface area for zer0-mistakes. Everything below is intended for consumers; anything not listed here may change without notice.

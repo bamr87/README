@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:58+00:00
 description: 'Theming in Zer0-Mistakes: separating color mode (light/dark/auto) from
   skin (palette plus SVG backgrounds), set at build time and adjusted at runtime.'
 lastmod: 2026-05-31 20:54:58+00:00
-source_file: theming.md
+source_file: docs/ui/theming.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/theming.md
 tags:
 - ui
 - styling
 - theme
 title: Theming
 ---
+
 # Theming
 
 zer0-mistakes separates **color mode** (light/dark/auto) from **skin** (decorative palette + SVG backgrounds). Both can be configured at build time in `_config.yml`, adjusted at runtime via JavaScript APIs, and previewed in the admin theme pages.
@@ -293,4 +296,4 @@ See [extending.md § Add a new skin](extending.md#4-add-a-new-skin). Summary:
 
 ---
 
-> **User guide**: For usage and configuration examples (how to customize as a theme user), see [Styles & Customization](/docs/customization/styles/) in the user documentation.
+> **User guide**: For usage and configuration examples (how to customize as a theme user), see [[zer0-mistakes/pages/_docs/customization/styles|Styles & Customization]] in the user documentation.

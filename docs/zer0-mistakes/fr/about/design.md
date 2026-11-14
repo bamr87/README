@@ -10,17 +10,20 @@ lastmod: 2026-08-14 00:00:00+00:00
 layout: default
 machine_translated: true
 permalink: /fr/design/
-source_file: design.md
+source_file: fr/about/design.md
 source_icon: bi-palette2
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/design.md
 tags:
 - design-system
 - tokens
 - ui
-title: Design
+title: Design system
 translated_from_sha: 1603b6e4656c
 translation_of: pages/_about/design.md
 translation_source_url: /design/
 ---
+
 Un contrat visuel unique, énoncé une seule fois. Les tokens `--zer0-*` du thème se compilent dans chaque page de ce site, se reflètent dans un [projet Claude Design](https://claude.ai/design/p/e75121c0-9210-42d1-ade3-2c8af9111cbe) pour le travail de conception, et sont publiés ici sous forme de CSS vivant et liable — maintenus synchronisés par une vérification de parité en CI.
 
 ## Utilisez les tokens partout

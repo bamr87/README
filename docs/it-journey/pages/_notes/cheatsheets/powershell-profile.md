@@ -18,16 +18,19 @@ keywords:
   - powershell gist sync
 lastmod: '2026-08-22T00:00:00.000Z'
 permalink: /notes/cheatsheets/powershell-profile/
-source_file: powershell-profile.md
+source_file: pages/_notes/cheatsheets/powershell-profile.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/powershell-profile.md
 tags:
 - powershell
 - windows
 - profile
 - environment-variables
 - shell
-title: Powershell Profile
+title: PowerShell Profile and Environment Setup
 toc: true
 ---
+
 Your PowerShell profile is the script that runs every time a session starts. Keeping it in a gist means a new machine is one download away from feeling like your own.
 
 ## Open PowerShell as administrator
@@ -118,4 +121,4 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ## See also
 
 - [PowerShell cheatsheet](/notes/cheatsheets/powershell/) — the broader command reference
-- [Terminal shortcuts](/notes/cheatsheets/terminal-shortcuts/) — keyboard movement that works in most shells
+- [[it-journey/pages/_notes/cheatsheets/terminal-shortcuts|Terminal shortcuts]] — keyboard movement that works in most shells

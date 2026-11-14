@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the API Versioning and API Documentation quests
 skill_focus: backend
-source_file: rate-limiting.md
+source_file: pages/_quests/0111/rate-limiting.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/rate-limiting.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - Rate Limiting'
 tags:
 - '0111'
@@ -84,7 +86,7 @@ tags:
 - backend
 - hands-on
 - gamified-learning
-title: Inspect GitHub's rate-limit headers (works unauthenticated, lower limit)
+title: 'Rate Limiting: Token Buckets, 429s, and Quotas'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -392,17 +394,17 @@ In production, limiters usually live in a shared store like **Redis** so that ev
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [API Versioning](/quests/0111/api-versioning/) - Evolve without breaking clients
+- 🎯 [[it-journey/pages/_quests/0111/api-versioning|API Versioning]] - Evolve without breaking clients
 
 **Explore Side Adventures**:
-- ⚔️ [Error Handling](/quests/0111/error-handling/) - The 429 in context
-- ⚔️ [API Documentation](/quests/0111/api-documentation/) - Document your limits
+- ⚔️ [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - The 429 in context
+- ⚔️ [[it-journey/pages/_quests/0111/api-documentation|API Documentation]] - Document your limits
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)  
-**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)  
-**🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/api-versioning|API Versioning]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/error-handling|Error Handling]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]
 
 ## 📚 Resources
 
@@ -432,6 +434,6 @@ In production, limiters usually live in a shared store like **Redis** so that ev
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[API Versioning: URI, Headers, and Backward Compatibility]] · [[API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0111/api-fundamentals|API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[it-journey/pages/_quests/0111/api-versioning|API Versioning: URI, Headers, and Backward Compatibility]] · [[it-journey/pages/_quests/0111/api-documentation|API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

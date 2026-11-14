@@ -14,7 +14,9 @@ permalink: /fr/docs/features/back-to-top/
 preview: /images/previews/back-to-top-button.png
 sidebar:
   nav: docs
-source_file: back-to-top.md
+source_file: fr/docs/features/back-to-top.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/back-to-top.md
 tags:
 - ui
 - navigation
@@ -25,6 +27,7 @@ translated_from_sha: 07233eb5a5a3
 translation_of: pages/_docs/features/back-to-top.md
 translation_source_url: /docs/features/back-to-top/
 ---
+
 # Bouton Retour en haut
 
 Un bouton flottant qui apparaît lorsque les utilisateurs font défiler la page vers le bas, offrant une navigation rapide vers le haut de la page.
@@ -262,11 +265,11 @@ Positionnez-le pour ne pas interférer avec le bouton de sommaire mobile :
 
 ## Connexe
 
-- [Navigation latérale](/docs/features/sidebar-navigation/)
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation latérale]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Keyboard Navigation]]
-- [[Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]

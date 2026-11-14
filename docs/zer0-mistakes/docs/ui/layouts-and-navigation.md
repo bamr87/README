@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:58+00:00
 description: 'How Zer0-Mistakes structures pages: the layout hierarchy, sidebars,
   table of contents, the navbar, and floating action buttons (FABs).'
 lastmod: 2026-05-31 20:54:58+00:00
-source_file: layouts-and-navigation.md
+source_file: docs/ui/layouts-and-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/layouts-and-navigation.md
 tags:
 - ui
 - styling
 - theme
 title: Layouts and navigation
 ---
+
 # Layouts and navigation
 
 How zer0-mistakes structures pages, sidebars, table of contents, navbar, and floating action buttons (FABs).
@@ -404,4 +407,4 @@ Fork spacing tokens:
 
 ---
 
-> **User guide**: For usage and configuration examples (available layouts, navigation configuration), see [Layouts](/docs/customization/layouts/) in the user documentation.
+> **User guide**: For usage and configuration examples (available layouts, navigation configuration), see [[zer0-mistakes/pages/_docs/customization/layouts|Layouts]] in the user documentation.

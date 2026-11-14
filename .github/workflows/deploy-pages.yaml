@@ -13,10 +13,18 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'brain_site/**'
+      - 'context/vault/**'
       - 'mkdocs.yml'
       - 'nav.yml'
       - 'requirements-docs.txt'
       - '.github/workflows/deploy-pages.yaml'
+  # The refresh commits with GITHUB_TOKEN, and a push made with that token
+  # starts no workflow, so the push trigger alone would never publish it.
+  workflow_run:
+    workflows: ['Aggregate Documentation']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 # Allow this workflow to deploy to Pages via the official deploy action.
@@ -32,6 +40,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -46,7 +55,7 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install -r requirements-docs.txt
+        run: pip install -r requirements.txt -r requirements-docs.txt
 
       # Enables GitHub Pages (build_type: workflow) via the API on first run,
       # so the deploy job below doesn't 404 on a repo where Pages was never

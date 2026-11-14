@@ -48,14 +48,16 @@ rewards:
 - Bashcrawl Brass Key
 - Terminal navigation proficiency
 skill_focus: fullstack
-source_file: entrance.md
+source_file: pages/_quests/0000/bashcrawl/entrance.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/entrance.md
 tags:
 - bashcrawl
 - terminal
 - bash
 - navigation
 - '0000'
-title: 'Output: /home/<user>/bashcrawl/ENTRANCE  (or similar)'
+title: 'Bashcrawl Entrance: Your First Terminal Commands'
 validation_criteria:
 - Run pwd and explain the output
 - List the entrance contents with ls and ls -F
@@ -191,7 +193,7 @@ You are now ready to explore deeper. Choose your path:
 
 - **Continue the main line** → [Cellar](/quests/0000/side-quests/cellar/)
 - **Side trip first** → [Workshop](/quests/0000/side-quests/workshop/)
-- **Back to hub** → [Bashcrawl Hub](/quests/0000/bashcrawl/)
+- **Back to hub** → [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Hub]]
 
 ---
 
@@ -204,7 +206,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual](https://www.gnu.org/software/bash/manual/) — Official Bash reference for heroes
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [The Linux Command Line](https://linuxcommand.org/tlcl.php) — Free book covering every command you'll meet
 
 ---
@@ -213,7 +215,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Bashcrawl Workshop: File Management Fundamentals]] · [[Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Sequel quests:** [[Bashcrawl Workshop: File Management Fundamentals]] · [[Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[it-journey/pages/_quests/0000/bashcrawl/workshop|Bashcrawl Workshop: File Management Fundamentals]] · [[it-journey/pages/_quests/0000/bashcrawl/cellar|Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Sequel quests:** [[it-journey/pages/_quests/0000/bashcrawl/workshop|Bashcrawl Workshop: File Management Fundamentals]] · [[it-journey/pages/_quests/0000/bashcrawl/cellar|Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

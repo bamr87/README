@@ -57,7 +57,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: devops
-source_file: ouroboros-loop-03-summon-the-golem.md
+source_file: pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/ouroboros-loop-03-summon-the-golem.md
 tags:
 - '0011'
 - claude-code
@@ -65,7 +67,7 @@ tags:
 - ai-agents
 - automation
 - gamified-learning
-title: .github/actions/claude-run/action.yml
+title: 'Summon the Golem: An AI Agent Joins the Loop'
 ---
 *Your loop can check and record, but it cannot **read**. A broken potion lands in the ledger as `"fail"` and waits for mortal eyes. Today you summon a golem — a Claude Code agent, shaped from prompts and clay-cold YAML — to read what broke and write the report a human would want. But golems are summoned under oath in this realm: a named role, a bounded toolset, and one absolute law — **the golem never touches git.** The workflow giveth branches; the workflow taketh away.*
 
@@ -239,8 +241,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- 🧾 [Chapter IV — The Sealed Evidence](/quests/1011/ouroboros-loop-04-the-sealed-evidence/): the boss chapter — what happens when a golem is asked to gather the evidence it will be judged by
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- 🧾 [[it-journey/pages/_quests/1011/ouroboros-loop-04-the-sealed-evidence|Chapter IV — The Sealed Evidence]]: the boss chapter — what happens when a golem is asked to gather the evidence it will be judged by
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -252,4 +254,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[The Warden's Gate]] · **Next:** [[The Sealed Evidence]] **Level home:** [[Level 0011 - AI-Assisted Development]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[The Warden's Gate]] · **Next:** [[The Sealed Evidence]] **Level home:** [[Level 0011 - AI-Assisted Development]]

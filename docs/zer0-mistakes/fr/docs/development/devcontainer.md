@@ -22,17 +22,20 @@ permalink: /fr/docs/development/devcontainer/
 preview: /images/previews/devcontainer-configuration.png
 sidebar:
   nav: docs
-source_file: devcontainer.md
+source_file: fr/docs/development/devcontainer.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/devcontainer.md
 tags:
 - devcontainer
 - codespaces
 - development
 - docker
-title: Configuration DevContainer
+title: Configuration DevContainer pour Codespaces
 translated_from_sha: 4af1a1fd3c52
 translation_of: pages/_docs/development/devcontainer.md
 translation_source_url: /docs/development/devcontainer/
 ---
+
 # Configuration DevContainer
 
 zer0-mistakes fournit un `.devcontainer/devcontainer.json` qui vous permet d'ouvrir un environnement de développement Jekyll entièrement configuré en un seul clic — sans installation locale de Ruby, Bundler ou Node.
@@ -128,12 +131,12 @@ Vous pouvez utiliser l'un ou l'autre (ou les deux) selon votre flux de travail.
 
 ## Voir aussi
 
-- [Développement Docker](/docs/docker/)
-- [Guide de démarrage rapide](/docs/getting-started/quick-start/)
-- [Publication Docker locale](/docs/development/docker-publishing/)
+- [[zer0-mistakes/pages/_docs/docker/index|Développement Docker]]
+- [[zer0-mistakes/pages/_docs/getting-started/quick-start|Guide de démarrage rapide]]
+- [[zer0-mistakes/pages/_docs/development/docker-publishing|Publication Docker locale]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Docker]]
-- [[Getting Started]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]

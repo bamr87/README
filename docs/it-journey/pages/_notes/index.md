@@ -23,16 +23,19 @@ permalink: /notes/
 redirect_from:
 - /docs/
 sidebar: false
-source_file: index.md
+source_file: pages/_notes/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/index.md
 tags:
 - notes
 - snippets
 - reference
 - workbench
 - tools
-title: Index
+title: Notes Workbench — Clip, Pin, and Write
 toc: false
 ---
+
 Two kinds of notes live here. **Public notes** are the cheatsheets and references kept in this repository — the same for everyone, and the ones listed in the library below. **Your notes** are whatever you write or clip while you are here; they stay in this browser, and nothing is uploaded anywhere.
 
 The scissors button beside any code block on this site clips it to your board, along with a link back to the exact section it came from. Select a paragraph anywhere and the same option appears. Pin a page you keep returning to, drag the cards into an order that suits you, and the board will look the same when you come back.

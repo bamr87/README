@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 2
-source_file: vortex2.md
+source_file: wargames/vortex/vortex2.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex2.md
 title: Vortex2
 ---
 Level Goal

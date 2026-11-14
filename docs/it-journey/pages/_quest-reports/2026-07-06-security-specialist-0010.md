@@ -14,8 +14,10 @@ quest_count: 1
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/28791022929
 slice: security-specialist/0010
-source_file: 2026-07-06-security-specialist-0010.md
+source_file: pages/_quest-reports/2026-07-06-security-specialist-0010.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-06-security-specialist-0010.md
 tags:
 - security-specialist
 - level-0010
@@ -25,13 +27,14 @@ tags:
 - terminal-mastery
 theme: Terminal Mastery
 tier: Apprentice
-title: 📆 Quest Walkthrough — Security Specialist · Level 0010
+title: Security Specialist · L0010 · 2026-07-06
 verdict: warn
 walk_date: '2026-07-06'
 ---
+
 > **Slice** `security-specialist/0010` · **Level** 0010 (Terminal Mastery) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-06
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
 
 ---
 

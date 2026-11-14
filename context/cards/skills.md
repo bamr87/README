@@ -1,13 +1,13 @@
 ---
 title: "Agent Skills"
-repo: bamr87/skills
+repo: microsoft/skills
 category: project-card
 kind: docs
 status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 8bee55625627b534
+source_fingerprint: 50c2c085394f9898
 tags:
   - agents
   - ai
@@ -26,37 +26,39 @@ tags:
 
 | | |
 |---|---|
-| Repository | [bamr87/skills](https://github.com/bamr87/skills) |
+| Repository | [microsoft/skills](https://github.com/microsoft/skills) |
 | Kind | docs |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/skills` - 712 docs |
-| External | no |
+| Corpus | `docs/skills` - 68 docs |
+| External | yes |
 
 ## Signals
 
-- has AGENTS.md operating manual
 - has a security policy
-- ~509,396 words across 712 indexed documents
-- code samples in: python, java, typescript, csharp, bash, plaintext, rust, markdown
+- ~88,804 words across 68 indexed documents
+- code samples in: kql, typescript, plaintext, python, bash, markdown, csharp, rust
 
 ## Navigation
 
-7 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/skills.md) · [tree as JSON](../nav/skills.json)
+68 published pages in 24 sections (max depth 4) — [browse the full map](../../docs/browse/skills.md) · [tree as JSON](../nav/skills.json)
 
-- **Documentation** (1 pages)
-- **Repository & tooling** (3 pages)
+- **Skills** (47 pages)
+- **Agents** (6 pages)
+- **Prompts** (5 pages)
+- **Documentation** (6 pages)
+- **Repository & tooling** (1 pages)
 
 ## Key documents
 
 - [`README.md`](../../docs/skills/README.md)
 - [`SECURITY.md`](../../docs/skills/SECURITY.md)
-- [`.github/prompts/scaffold-foundry-app.prompt.md`](../../docs/skills/.github/prompts/scaffold-foundry-app.prompt.md)
-- [`.github/docs/skills.md`](../../docs/skills/.github/docs/skills.md)
-- [`tests/AGENTS.md`](../../docs/skills/tests/AGENTS.md)
+- [`dot-github/prompts/scaffold-foundry-app.prompt.md`](../../docs/skills/dot-github/prompts/scaffold-foundry-app.prompt.md)
+- [`dot-github/docs/skills.md`](../../docs/skills/dot-github/docs/skills.md)
 - [`Agents.md`](../../docs/skills/Agents.md)
-- [`.github/copilot-instructions.md`](../../docs/skills/.github/copilot-instructions.md)
-- [`.github/agents/scaffolder.agent.md`](../../docs/skills/.github/agents/scaffolder.agent.md)
+- [`dot-github/agents/scaffolder.agent.md`](../../docs/skills/dot-github/agents/scaffolder.agent.md)
+- [`dot-github/docs/pattern-enforcement.md`](../../docs/skills/dot-github/docs/pattern-enforcement.md)
+- [`dot-github/prompts/add-endpoint.prompt.md`](../../docs/skills/dot-github/prompts/add-endpoint.prompt.md)
 
 ## Query this context
 
