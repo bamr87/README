@@ -21,10 +21,27 @@ class ContextMissing(RuntimeError):
 
 def _require(path: Path) -> Path:
     if not path.is_file():
+        # Never put an absolute path in the message: it can reach MCP clients.
+        shown = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path.name
         raise ContextMissing(
-            f"{path.relative_to(ROOT)} not found - run "
+            f"{shown} not found - run "
             "`python3 -m scripts.context_engine build` first")
     return path
+
+
+def _confined(base: Path, name: str, suffix: str) -> Path:
+    """
+    `base/<name><suffix>`, refusing any name that is not a plain file stem
+    or that resolves outside `base` (relative segments, absolute paths,
+    symlinks). The refusal names neither the base nor the resolved path.
+    """
+    name = str(name or "")
+    candidate = base / f"{name}{suffix}"
+    if (not name or name in (".", "..") or "/" in name or "\\" in name
+            or "\0" in name
+            or not candidate.resolve().is_relative_to(base.resolve())):
+        raise ContextMissing("unknown name: expected a plain project name")
+    return candidate
 
 
 def load_index() -> Dict:
@@ -36,16 +53,16 @@ def get_apex() -> str:
 
 
 def get_card(name: str) -> str:
-    return _require(CARDS_DIR / f"{name}.md").read_text(encoding="utf-8")
+    return _require(_confined(CARDS_DIR, name, ".md")).read_text(encoding="utf-8")
 
 
 def get_facts(name: str) -> Dict:
-    return json.loads(_require(FACTS_DIR / f"{name}.json").read_text(encoding="utf-8"))
+    return json.loads(_require(_confined(FACTS_DIR, name, ".json")).read_text(encoding="utf-8"))
 
 
 def get_nav(name: Optional[str] = None) -> Dict:
     """Navigation tree for one corpus, or the fleet navigation manifest."""
-    path = NAV_FLEET_PATH if not name else NAV_DIR / f"{name}.json"
+    path = NAV_FLEET_PATH if not name else _confined(NAV_DIR, name, ".json")
     return json.loads(_require(path).read_text(encoding="utf-8"))
 
 
