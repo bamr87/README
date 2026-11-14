@@ -6,6 +6,7 @@ fixtures.
 
 import importlib.util
 import json
+import os
 import shutil
 import sys
 import tempfile
@@ -690,11 +691,16 @@ class TestMCPServer(unittest.TestCase):
             {"jsonrpc": "2.0", "id": request_id, "method": method,
              "params": params or {}})
 
-    def test_initialize_echoes_protocol_version(self):
+    def test_initialize_echoes_supported_protocol_version(self):
         response = self._call("initialize", {"protocolVersion": "2024-11-05"})
         self.assertEqual(response["result"]["protocolVersion"], "2024-11-05")
         self.assertEqual(response["result"]["serverInfo"]["name"],
                          "readme-context-engine")
+
+    def test_initialize_unsupported_version_gets_server_version(self):
+        response = self._call("initialize", {"protocolVersion": "1999-01-01"})
+        self.assertEqual(response["result"]["protocolVersion"],
+                         self.server.PROTOCOL_VERSION)
 
     def test_notifications_get_no_response(self):
         self.assertIsNone(self.server.handle_request(
@@ -754,6 +760,140 @@ class TestMCPServer(unittest.TestCase):
         projects = json.loads(response["result"]["content"][0]["text"])
         self.assertTrue(any(p["name"] == "bashcrawl" for p in projects))
 
+
+
+CONTEXT_BUILT = (PROJECT_ROOT / "context" / "index" / "context_index.json").is_file() \
+    and (PROJECT_ROOT / "context" / "nav" / "index.json").is_file()
+
+
+class TestMCPConfinement(unittest.TestCase):
+    """Tool arguments never reach files outside context/ or the repo."""
+
+    MARKER = "TOP-SECRET-MCP-CONFINEMENT-MARKER"
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_mcp_server()
+
+    def setUp(self):
+        from unittest.mock import patch
+        # Outside the repo: the system temp dir.
+        self.outside = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.outside, ignore_errors=True)
+        (self.outside / "secret.md").write_text(self.MARKER, encoding="utf-8")
+        (self.outside / "secret.json").write_text(json.dumps({
+            "project": self.MARKER, "title": self.MARKER, "counts": {},
+            "tree": {"title": self.MARKER}, "marker": self.MARKER}),
+            encoding="utf-8")
+        self.reads = []
+        original = Path.read_text
+
+        def spy(path, *args, **kwargs):
+            self.reads.append(Path(path).resolve())
+            return original(path, *args, **kwargs)
+
+        patcher = patch.object(Path, "read_text", autospec=True, side_effect=spy)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def _call(self, tool, arguments):
+        response = self.server.handle_request(
+            {"jsonrpc": "2.0", "id": 1, "method": "tools/call",
+             "params": {"name": tool, "arguments": arguments}})
+        return response["result"]
+
+    def _assert_refused(self, result, outside=None):
+        outside = (outside or self.outside).resolve()
+        self.assertTrue(result["isError"], result)
+        text = result["content"][0]["text"]
+        self.assertNotIn(self.MARKER, text)
+        self.assertNotIn(str(self.server.ROOT), text)
+        self.assertFalse([r for r in self.reads if r.is_relative_to(outside)],
+                         "a file outside the context tree was read")
+
+    def _names(self, base):
+        from scripts.context_engine import config
+        absolute = str(self.outside / "secret")
+        relative = os.path.relpath(absolute, getattr(config, base))
+        return {"absolute": absolute, "relative": relative}
+
+    def test_get_project_rejects_traversal_and_absolute_names(self):
+        for kind, name in self._names("CARDS_DIR").items():
+            with self.subTest(kind=kind):
+                self._assert_refused(self._call("get_project", {"name": name}))
+
+    def test_get_nav_rejects_traversal_and_absolute_names(self):
+        for kind, name in self._names("NAV_DIR").items():
+            with self.subTest(kind=kind):
+                self._assert_refused(self._call("get_nav", {"name": name}))
+
+    def test_query_layer_is_confined_too(self):
+        from scripts.context_engine import query
+        for getter, base in ((query.get_card, "CARDS_DIR"),
+                             (query.get_facts, "FACTS_DIR"),
+                             (query.get_nav, "NAV_DIR")):
+            for kind, name in self._names(base).items():
+                with self.subTest(getter=getter.__name__, kind=kind):
+                    with self.assertRaises(query.ContextMissing) as ctx:
+                        getter(name)
+                    self.assertNotIn(str(PROJECT_ROOT), str(ctx.exception))
+        self.assertFalse([r for r in self.reads if r.is_relative_to(self.outside.resolve())])
+
+    def test_get_schema_rejects_sibling_prefix_directory(self):
+        root = self.server.ROOT
+        sibling = Path(tempfile.mkdtemp(prefix=root.name + "-x", dir=root.parent))
+        self.addCleanup(shutil.rmtree, sibling, ignore_errors=True)
+        (sibling / "SCHEMA.md").write_text(self.MARKER, encoding="utf-8")
+        result = self._call("get_schema", {"path": "../" + sibling.name})
+        self._assert_refused(result, outside=sibling)
+
+    def test_tool_error_hides_detail_and_logs_it(self):
+        import contextlib
+        import io
+        from unittest.mock import patch
+        root = str(self.server.ROOT)
+        stderr = io.StringIO()
+        with patch.object(self.server, "get_apex",
+                          side_effect=OSError(f"denied: {root}/secret")), \
+                contextlib.redirect_stderr(stderr):
+            result = self._call("get_readme", {})
+        self.assertTrue(result["isError"])
+        self.assertNotIn(root, result["content"][0]["text"])
+        self.assertIn(f"denied: {root}/secret", stderr.getvalue())
+
+    def test_get_nav_depth_is_clamped(self):
+        from unittest.mock import patch
+        nav = {"project": "p", "title": "P", "counts": {},
+               "tree": {"type": "section", "title": "root", "children": []}}
+        for requested, expected in ((0, 1), (-5, 1), (99, 10), (4, 4)):
+            with self.subTest(depth=requested), \
+                    patch.object(self.server, "_known_corpus", return_value=True,
+                                 create=True), \
+                    patch.object(self.server, "get_nav", return_value=nav), \
+                    patch.object(self.server, "_prune_depth",
+                                 return_value={}) as prune:
+                self._call("get_nav", {"name": "p", "depth": requested})
+                self.assertEqual(prune.call_args.args[1], expected)
+
+    def test_search_limit_is_clamped(self):
+        from unittest.mock import patch
+        for requested, expected in ((-1, 1), (0, 1), (10000, 25), (7, 7)):
+            with self.subTest(limit=requested), \
+                    patch.object(self.server, "search", return_value=[]) as search:
+                self._call("search_context", {"query": "x", "limit": requested})
+                self.assertEqual(search.call_args.kwargs["limit"], expected)
+
+    @unittest.skipUnless(CONTEXT_BUILT, "context pyramid not built")
+    def test_valid_calls_are_unchanged(self):
+        project = json.loads(self._call("list_projects", {})["content"][0]["text"])[0]["name"]
+        corpus = json.loads(self._call("get_nav", {})["content"][0]["text"])[0]["name"]
+        for tool, arguments in (("get_project", {"name": project}),
+                                ("get_nav", {"name": corpus}),
+                                ("get_nav", {"name": corpus, "flat": True}),
+                                ("get_schema", {}),
+                                ("get_schema", {"path": "context"})):
+            with self.subTest(tool=tool, arguments=arguments):
+                self.assertFalse(self._call(tool, arguments)["isError"])
 
 if __name__ == "__main__":
     unittest.main()

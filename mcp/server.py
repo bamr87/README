@@ -20,6 +20,7 @@ Resources: context://apex, context://index, context://manifest,
 
 import json
 import sys
+import traceback
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -34,6 +35,13 @@ from scripts.context_engine.query import (                           # noqa: E40
 
 SERVER_INFO = {"name": "readme-context-engine", "version": ENGINE_VERSION}
 PROTOCOL_VERSION = "2025-06-18"
+# Versions this server can speak; any other client version gets ours.
+SUPPORTED_PROTOCOL_VERSIONS = frozenset({
+    "2024-11-05", "2025-03-26", "2025-06-18", "2025-11-25",
+})
+# Out-of-range integers are clamped to the inputSchema bounds below.
+LIMIT_BOUNDS = (1, 25)
+DEPTH_BOUNDS = (1, 10)
 
 TOOLS: List[Dict[str, Any]] = [
     {
@@ -124,12 +132,32 @@ def _text_result(text: str, is_error: bool = False) -> Dict:
     return {"content": [{"type": "text", "text": text}], "isError": is_error}
 
 
+def _int_arg(args: Dict, key: str, default: int, bounds: tuple) -> int:
+    """An integer argument clamped to its advertised [min, max]."""
+    try:
+        value = int(args.get(key, default))
+    except (TypeError, ValueError):
+        value = default
+    low, high = bounds
+    return max(low, min(high, value))
+
+
+def _known_project(name: str) -> bool:
+    return name in load_index().get("projects", {})
+
+
+def _known_corpus(name: str) -> bool:
+    return any(entry["name"] == name for entry in list_nav())
+
+
 def _tool_list_projects(_args: Dict) -> Dict:
     return _text_result(json.dumps(list_projects(), indent=2))
 
 
 def _tool_get_project(args: Dict) -> Dict:
-    name = args.get("name", "")
+    name = str(args.get("name", "")).strip()
+    if not _known_project(name):
+        return _text_result("unknown project (see list_projects)", is_error=True)
     card = get_card(name)
     facts = get_facts(name)
     return _text_result(card + "\n\n---\nFACTS (JSON)\n---\n"
@@ -140,7 +168,7 @@ def _tool_search_context(args: Dict) -> Dict:
     terms = str(args.get("query", "")).split()
     if not terms:
         return _text_result("empty query", is_error=True)
-    limit = int(args.get("limit", 10))
+    limit = _int_arg(args, "limit", 10, LIMIT_BOUNDS)
     results = search(terms, limit=limit)
     if not results:
         return _text_result("no matches in the context layer")
@@ -170,6 +198,9 @@ def _tool_get_nav(args: Dict) -> Dict:
     name = str(args.get("name", "")).strip()
     if not name:
         return _text_result(json.dumps(list_nav(), indent=2))
+    if not _known_corpus(name):
+        return _text_result("unknown corpus (call get_nav without a name to list them)",
+                            is_error=True)
     nav = get_nav(name)
     if args.get("flat"):
         return _text_result(json.dumps({
@@ -177,7 +208,7 @@ def _tool_get_nav(args: Dict) -> Dict:
             "counts": nav["counts"],
             "pages": nav_paths(nav["tree"]),
         }, indent=2))
-    depth = int(args.get("depth", 3))
+    depth = _int_arg(args, "depth", 3, DEPTH_BOUNDS)
     nav = {**nav, "tree": _prune_depth(nav["tree"], depth)}
     return _text_result(json.dumps(nav, indent=2))
 
@@ -185,7 +216,7 @@ def _tool_get_nav(args: Dict) -> Dict:
 def _tool_get_schema(args: Dict) -> Dict:
     rel = str(args.get("path", "")).strip().strip("/")
     target = (ROOT / rel / "SCHEMA.md").resolve()
-    if not str(target).startswith(str(ROOT)) or not target.is_file():
+    if not target.is_relative_to(ROOT) or not target.is_file():
         return _text_result(f"no SCHEMA.md at '{rel or '.'}'", is_error=True)
     return _text_result(target.read_text(encoding="utf-8"))
 
@@ -278,7 +309,9 @@ def handle_request(request: Dict) -> Optional[Dict]:
         return None
 
     if method == "initialize":
-        client_version = params.get("protocolVersion") or PROTOCOL_VERSION
+        client_version = params.get("protocolVersion")
+        if client_version not in SUPPORTED_PROTOCOL_VERSIONS:
+            client_version = PROTOCOL_VERSION
         return result({
             "protocolVersion": client_version,
             "capabilities": {"tools": {}, "resources": {}},
@@ -304,8 +337,13 @@ def handle_request(request: Dict) -> Optional[Dict]:
             return result(handler(params.get("arguments") or {}))
         except ContextMissing as exc:
             return result(_text_result(str(exc), is_error=True))
-        except Exception as exc:  # tool errors -> isError result, not protocol error
-            return result(_text_result(f"tool failed: {exc}", is_error=True))
+        except Exception:  # tool errors -> isError result, not protocol error
+            # Details (which may name absolute paths) go to stderr only.
+            print(f"[mcp] tool {name} failed:\n{traceback.format_exc()}",
+                  file=sys.stderr, flush=True)
+            return result(_text_result(
+                f"tool {name} failed: internal error (details in the server log)",
+                is_error=True))
     if method == "resources/list":
         return result({"resources": _resource_catalog()})
     if method == "resources/read":
