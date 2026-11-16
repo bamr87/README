@@ -550,3 +550,28 @@ class TestLocalFleetEntry(unittest.TestCase):
     def test_an_explicit_kind_still_overrides(self):
         name, repo, _ = self._survey("checkout-x", "https://github.com/bamr87/README", kind="default")
         self.assertEqual((name, repo["kind"]), ("README", "default"))
+
+    def test_a_monorepo_package_is_matched_by_its_directory_name(self):
+        # Its origin is the containing repository's, so the slug would pick that entry.
+        import subprocess
+        from scripts.context_engine.survey import survey_local
+
+        def git(*args):
+            subprocess.run(["git", *args], cwd=mono, check=True, capture_output=True)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            mono = Path(tmp) / "clone"
+            pkg = mono / "packages" / "zer0-mistakes"
+            pkg.mkdir(parents=True)
+            (mono / "README.md").write_text("# zer0-CMS\n\n> The monorepo root.\n")
+            (pkg / "README.md").write_text("# zer0-mistakes\n\n> A theme inside the monorepo.\n")
+            git("init", "-q", "-b", "main")
+            git("remote", "add", "origin", "https://github.com/bamr87/zer0-CMS.git")
+            git("add", ".")
+            git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-q", "-m", "init")
+            report = survey_local(pkg)
+            whole = survey_local(mono)
+        (name, repo), = report["repositories"].items()
+        self.assertEqual((name, repo["kind"], repo["repo"]), ("zer0-mistakes", "theme", "bamr87/zer0-mistakes"))
+        (name, repo), = whole["repositories"].items()
+        self.assertEqual((name, repo["kind"]), ("zer0-CMS", "app"))  # the clone itself still matches by origin
