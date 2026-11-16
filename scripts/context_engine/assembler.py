@@ -18,8 +18,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from . import ENGINE_VERSION
-from .ai import AIError, BaseProvider
+from . import ENGINE_VERSION, screen
+from .ai import AIError, BaseProvider, wrap_facts
 from .config import (
     APEX_PATH, AUTO_BEGIN, AUTO_END, CONTEXT_DIR, GENERATED_NOTICE,
     ROOT_README_PATH, SITE_INDEX_PATH,
@@ -67,7 +67,8 @@ def fleet_table(registry: Registry, facts_by_name: Dict[str, Dict],
 
 
 def _fleet_overview(registry: Registry, facts_by_name: Dict[str, Dict],
-                    ai: Optional[BaseProvider]) -> str:
+                    ai: Optional[BaseProvider],
+                    findings: Optional[List[Dict]] = None) -> str:
     hub = registry.hub or {}
     heuristic = " ".join(str(hub.get("description", "")).split()) or (
         "Consolidated context for the project fleet."
@@ -81,22 +82,39 @@ def _fleet_overview(registry: Registry, facts_by_name: Dict[str, Dict],
         }
         for name, facts in facts_by_name.items()
     }
+    # The digest is upstream text too: screened before the prompt, and the
+    # completion after it, exactly like a card's essence.
+    hits = screen.screen_facts(digest)
+    if hits:
+        screen.report("apex", hits, findings)
+        return heuristic
     prompt = (
         "Write a 2-3 sentence overview paragraph for the consolidated README "
         "of this project fleet - what the fleet collectively covers and how "
-        "the pieces relate.\n\nFLEET:\n" + json.dumps(digest, indent=2, sort_keys=True)
+        "the pieces relate.\n\n"
+        + wrap_facts(json.dumps(digest, indent=2, sort_keys=True))
     )
     try:
-        return ai.complete(prompt, max_tokens=400).strip()
+        completion = ai.complete(prompt, max_tokens=400).strip()
     except AIError as exc:
         print(f"[assembler] AI fleet overview failed, using registry text: {exc}")
         return heuristic
+    hits = [("ai overview", label) for label in screen.screen_text(completion)]
+    if hits:
+        screen.report("apex", hits, findings)
+        return heuristic
+    problem = screen.completion_problem(completion, screen.source_text(digest))
+    if problem:
+        print(f"[screen] apex: AI overview rejected ({problem}), using registry text")
+        return heuristic
+    return screen.one_paragraph(completion)
 
 
 def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
-               ai: Optional[BaseProvider] = None) -> str:
+               ai: Optional[BaseProvider] = None,
+               findings: Optional[List[Dict]] = None) -> str:
     hub = registry.hub or {}
-    overview = _fleet_overview(registry, facts_by_name, ai)
+    overview = _fleet_overview(registry, facts_by_name, ai, findings)
     lines: List[str] = [
         "---",
         'title: "bamr87 - consolidated README"',

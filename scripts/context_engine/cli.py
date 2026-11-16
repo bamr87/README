@@ -6,7 +6,7 @@ import json
 import sys
 from typing import List
 
-from . import ENGINE_VERSION
+from . import ENGINE_VERSION, screen
 from .builder import build_all
 from .navigator import check_nav
 from .query import (
@@ -25,8 +25,15 @@ def _cmd_build(args: argparse.Namespace) -> int:
         update_readme=not args.no_readme,
         update_site_index=not args.no_site_index,
     )
+    quarantined = summary.get("quarantined") or {}
     print(f"[done] {summary['projects']} projects, {summary['terms']} terms, "
-          f"enrichment={summary['enrichment']}")
+          f"enrichment={summary['enrichment']}"
+          + (f", quarantined={len(quarantined)}" if quarantined else ""))
+    if quarantined and screen.strict():
+        print(f"error: the injection screen quarantined {', '.join(quarantined)} "
+              f"({screen.STRICT_ENV}=1); review the hits above before publishing",
+              file=sys.stderr)
+        return 1
     return 0
 
 
