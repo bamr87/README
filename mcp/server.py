@@ -12,7 +12,7 @@ Run directly (registered for Claude Code in .mcp.json):
     python3 mcp/server.py
 
 Tools:    list_projects, get_project, search_context, get_readme,
-          get_nav, get_schema, context_status
+          get_nav, get_doc, get_schema, context_status
 Resources: context://apex, context://index, context://manifest,
            context://cards/<name>, context://facts/<name>,
            context://nav, context://nav/<name>
@@ -29,8 +29,9 @@ sys.path.insert(0, str(ROOT))
 
 from scripts.context_engine import ENGINE_VERSION                    # noqa: E402
 from scripts.context_engine.query import (                           # noqa: E402
-    ContextMissing, get_apex, get_card, get_facts, get_manifest, get_nav,
-    list_nav, list_projects, load_index, nav_paths, search,
+    DOC_MAX_CHARS, ContextMissing, get_apex, get_card, get_doc, get_facts,
+    get_manifest, get_nav, list_nav, list_projects, load_index, nav_paths,
+    search,
 )
 
 SERVER_INFO = {"name": "readme-context-engine", "version": ENGINE_VERSION}
@@ -42,6 +43,7 @@ SUPPORTED_PROTOCOL_VERSIONS = frozenset({
 # Out-of-range integers are clamped to the inputSchema bounds below.
 LIMIT_BOUNDS = (1, 25)
 DEPTH_BOUNDS = (1, 10)
+DOC_CHARS_BOUNDS = (1, 100000)
 
 TOOLS: List[Dict[str, Any]] = [
     {
@@ -101,6 +103,28 @@ TOOLS: List[Dict[str, Any]] = [
                 "flat": {"type": "boolean",
                          "description": "Return a flat page list with breadcrumbs"},
             },
+            "additionalProperties": False,
+        },
+    },
+    {
+        "name": "get_doc",
+        "description": "Read one page of the docs/ corpus by path: its body "
+                       "without front matter, headed by the project, upstream "
+                       "repo and path. Only pages listed in "
+                       "docs/docs_index.json are served; take the path from "
+                       "get_nav (flat) or a search_context key_docs entry.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "path": {"type": "string",
+                         "description": "Page path relative to docs/, e.g. "
+                                        "'bashcrawl/README.md' (a leading "
+                                        "'docs/' is accepted)"},
+                "max_chars": {"type": "integer", "minimum": 1, "maximum": 100000,
+                              "description": "Body characters to return before "
+                                             "truncating (default: 20000)"},
+            },
+            "required": ["path"],
             "additionalProperties": False,
         },
     },
@@ -213,6 +237,18 @@ def _tool_get_nav(args: Dict) -> Dict:
     return _text_result(json.dumps(nav, indent=2))
 
 
+def _tool_get_doc(args: Dict) -> Dict:
+    max_chars = _int_arg(args, "max_chars", DOC_MAX_CHARS, DOC_CHARS_BOUNDS)
+    doc = get_doc(str(args.get("path", "")), max_chars=max_chars)
+    # A page outside every registry project is this repository's own.
+    header = " · ".join([
+        f"project: {doc['project'] or '(none)'}",
+        f"repo: {doc['repo'] or '(this repository)'}",
+        f"path: {doc['path']}",
+    ])
+    return _text_result(f"{header}\n\n{doc['text']}")
+
+
 def _tool_get_schema(args: Dict) -> Dict:
     rel = str(args.get("path", "")).strip().strip("/")
     target = (ROOT / rel / "SCHEMA.md").resolve()
@@ -231,6 +267,7 @@ TOOL_HANDLERS = {
     "search_context": _tool_search_context,
     "get_readme": _tool_get_readme,
     "get_nav": _tool_get_nav,
+    "get_doc": _tool_get_doc,
     "get_schema": _tool_get_schema,
     "context_status": _tool_context_status,
 }
@@ -321,7 +358,8 @@ def handle_request(request: Dict) -> Optional[Dict]:
                 "list_projects or search_context; get_readme returns the "
                 "consolidated fleet README and get_nav returns a corpus's "
                 "published section/page hierarchy (use it to locate a document "
-                "before reading it). If context_status reports stale data, "
+                "before reading it); get_doc reads one of those pages by its "
+                "path. If context_status reports stale data, "
                 "rebuild with `python3 -m scripts.context_engine build`."),
         })
     if method == "ping":

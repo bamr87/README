@@ -65,7 +65,7 @@ python3 -m scripts.context_engine nav bashcrawl --depth 2
 python3 -m scripts.context_engine status
 ```
 
-AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
+AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
 
 ## How it works
 

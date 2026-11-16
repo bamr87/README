@@ -109,14 +109,15 @@ features:
   - id: README-010
     title: "MCP get_doc tool"
     description: "Read one indexed corpus page by path over MCP, confined to docs/ and size-capped, so search_context/get_nav pointers resolve without leaving MCP. Issue #59."
-    implemented: false
-    status: planned
+    implemented: true
+    status: shipped
     prd: ["§4"]
     surface: api
     link: mcp/server.py
     docs: mcp/README.md
     tags: [mcp, retrieval]
-    tests: []
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
     scenarios: []
     evidence: []
   - id: README-011
