@@ -10,6 +10,17 @@
 
 The bamr87 monorepo manages a fleet of independent project repos. Knowledge about the fleet is scattered across dozens of READMEs and doc trees that drift, duplicate, and go stale. Humans can't hold the whole picture; AI agents working on any one repo lack cheap, current context about the others. Hand-maintaining a master README does not scale past a handful of projects.
 
+
+## 1.1 Missions
+
+README's direction is to become the ultimate open home for all things fleet knowledge and project context — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, maintainers, documentation practitioners, agent builders and the general public.** Humans who cannot hold the whole fleet in their head, AI agents working in any one repo, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Make knowledge about every project in the fleet cheap, current and queryable, so humans and AI agents can look it up instead of relying on stale or scattered READMEs.** Crawlers and distillers build that context; an MCP interface is one way to serve it. Hand-maintaining a master README does not scale past a handful of projects — the engine exists so it does not have to.
+3. **Put that context in every human's and agent's hands, and make reviewing a repository's documentation against the fleet framework effortless and repeatable.** Serve it as a context pyramid and a review path for every repository — an open toolkit for working with all things fleet knowledge and project context.
+
+These missions set the course; they do not claim the work is finished. They serve the existing constitution and PRD problem statement: fleet knowledge is scattered and goes stale; agents lack cheap, current context. The earlier §1 paragraph is absorbed into these three. Every feature must trace to them.
+
 ## 2. Vision
 
 A README that is **built, not written**. This repo crawls the fleet, distills what it finds into a pyramid of context, publishes the apex as the consolidated README, and serves the whole pyramid through query interfaces. Because the pipeline reruns on a schedule, the context grows and corrects itself as the fleet evolves.
@@ -87,9 +98,10 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-006](features/features.yml) | Index | shipped | [`context`](context) · [`PRD.md`](PRD.md) | §4 |
 | [README-007](features/features.yml) | Serve | shipped | [`mcp`](mcp) · [`PRD.md`](PRD.md) | §4 |
 | [README-008](features/features.yml) | Evolve | shipped | [`hooks.d`](hooks.d) · [`PRD.md`](PRD.md) | §4 |
-| [README-009](features/features.yml) | Published fleet documentation site | shipped | route `/` · [`MKDOCS.md`](MKDOCS.md) | TBD |
+| [README-009](features/features.yml) | Published fleet documentation site | shipped | [``](.) · [`MKDOCS.md`](MKDOCS.md) | TBD |
 | [README-010](features/features.yml) | MCP get_doc tool | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | §4 |
 | [README-011](features/features.yml) | MCP provenance and trust markers | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | §4 |
+| [README-012](features/features.yml) | Missions in constitution §1 | planned | [`docs/constitution.md`](docs/constitution.md) | §1.1 |
 
 **Requirement → feature trace**
 
@@ -97,6 +109,7 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | --- | --- |
 | §4 | README-001, README-002, README-003, README-004, README-005, README-006, README-007, README-008, README-010, README-011 |
 | TBD | README-009 |
+| §1.1 | README-012 |
 <!-- features:end -->
 
 ## 7. Success criteria
