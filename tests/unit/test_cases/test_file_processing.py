@@ -309,6 +309,25 @@ class TestHiddenCarriers(unittest.TestCase):
                          "one\n\ntwo\n")
         self.assertEqual(strip_hidden("one\n\n<!-- note -->\n\ntwo\n"), "one\n\ntwo\n")
 
+    def test_a_comment_behind_a_block_marker_leaves_no_bare_marker(self):
+        # A bare `-` under a list item is a setext underline: Python-Markdown
+        # would turn "b" into a heading. The comment is emptied instead.
+        raw = "- a\n- b\n- <!-- x -->\n\nNext.\n"
+        out = strip_hidden(raw)
+        self.assertNotIn("<!-- x -->", out)
+        self.assertNotIn("-", [line.strip() for line in out.split("\n")])
+        self.assertEqual(out, "- a\n- b\n- <!---->\n\nNext.\n")
+        self.assertEqual(strip_hidden(out), out)
+        # An ordered list keeps its numbering, a trailing comment does not
+        # become a setext underline, and the comments behind a nested marker
+        # become one empty comment.
+        for raw, kept in (
+                ("1. a\n2. <!-- x -->\n3. b\n", "1. a\n2. <!---->\n3. b\n"),
+                ("Title\n=== <!-- x -->\n", "Title\n=== <!---->\n"),
+                ("> q\n> - <!-- a --> <!-- b -->\n", "> q\n> - <!---->\n")):
+            self.assertEqual(strip_hidden(raw), kept)
+            self.assertEqual(strip_hidden(kept), kept)
+
     def test_empty_and_unclosed_comments_are_left_alone(self):
         separator = "1. a\n2. b\n<!-- -->\n1. c\n"   # an empty comment splits two lists
         self.assertEqual(strip_hidden(separator), separator)

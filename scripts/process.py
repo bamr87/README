@@ -57,6 +57,13 @@ _CODE_OR_COMMENT = re.compile(
     r'(?P<fence>^[ \t]*(?:`{3,}|~{3,}))|(?P<ticks>(?<!\\)`+)|(?P<comment><!--)',
     re.M)
 _BLANK_LINE = re.compile(r'\n[ \t]*\n')
+# What is left of a line once its comments are gone, when that is only block
+# syntax: a list, heading or quote marker, a setext underline, a thematic
+# break, a fence or a table delimiter. Left bare, it changes how the page
+# renders: `- <!-- note -->` stripped to `-` turns the list item above into a
+# heading. Such a line keeps an empty comment instead, which hides nothing.
+_BLOCK_SYNTAX_ONLY = re.compile(r'[ \t\d.)*+_=#>`~|:-]+')
+_EMPTY_COMMENT = '<!---->'
 
 
 def _joins(char: str) -> bool:
@@ -146,8 +153,13 @@ def strip_comments(text: str) -> str:
     def tidy(line: str) -> Optional[str]:
         if mark not in line:
             return line
-        if not line.replace(mark, '').strip():
+        rest = line.replace(mark, '')
+        if not rest.strip():
             return None   # the line held only comments
+        if _BLOCK_SYNTAX_ONLY.fullmatch(rest):
+            # Keep the line as it renders, with each comment emptied.
+            return joins.sub(
+                lambda m: m.group(1) + _EMPTY_COMMENT + m.group(2), line)
 
         def around(match: 're.Match[str]') -> str:
             if match.start() == 0:
