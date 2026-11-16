@@ -462,6 +462,42 @@ class TestDocsReview(unittest.TestCase):
         self.assertIn("| [`docs/A.md`](https://github.com/bamr87/demo/blob/main/docs/A.md) | 10 |", first)
 
 
+class TestWorkingTreeReads(unittest.TestCase):
+    """`survey --local`/`--workspace` read only files that live in the checkout."""
+
+    def test_a_tracked_symlink_out_of_the_tree_is_never_read(self):
+        import os
+        import subprocess
+        from scripts.context_engine.gather import gather_local
+        from scripts.context_engine.survey import survey_local
+
+        def git(*args, cwd):
+            subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True)
+
+        marker = "PRIVATE-CONTENT-OUTSIDE-THE-CHECKOUT"
+        with tempfile.TemporaryDirectory() as tmp:
+            outside = Path(tmp) / "outside"
+            outside.mkdir()
+            (outside / "notes.md").write_text(f"# Notes\n\n> {marker}\n")
+            repo = Path(tmp) / "repo"
+            (repo / "docs").mkdir(parents=True)
+            (repo / "README.md").write_text("# demo\n\n> The demo checkout.\n")
+            os.symlink("../outside/notes.md", repo / "AGENTS.md")
+            os.symlink(outside / "notes.md", repo / "docs" / "index.md")
+            git("init", "-q", "-b", "main", cwd=repo)
+            git("add", ".", cwd=repo)
+            git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-q", "-m", "init", cwd=repo)
+
+            source = gather_local(repo)
+            self.assertEqual(sorted(source.tree), ["AGENTS.md", "README.md", "docs/index.md"])
+            self.assertIsNone(source.read("AGENTS.md"))
+            self.assertIsNone(source.read("docs/index.md"))
+            self.assertIn("The demo checkout.", source.read("README.md"))
+            self.assertNotIn(marker, json.dumps(source.bodies))
+            report = survey_local(repo)
+            self.assertNotIn(marker, json.dumps(report, default=str))
+
+
 class TestWorkspacePackages(unittest.TestCase):
     """A monorepo package is reviewed in place, on its checkout's branch."""
 

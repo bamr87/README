@@ -81,6 +81,8 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 
 Ingest normalizes as it writes: upstream `icon:` frontmatter is mapped onto bundled Material icons (`scripts/fix_frontmatter_icons.py`) and soft-wrapped prose is unwrapped (`tools/unwrap-prose.py`), so each crawled page lands in a state the navigation and the `markdown-oneline` gate already accept.
 
+Ingest also screens for secrets (`scripts/context_engine/redact.py`): a credential committed upstream by mistake (a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key) is replaced with `[REDACTED:<kind>]`, listed in `docs/results/secret_screen.json` without its value, and the crawl fails before it commits, so it never reaches the corpus, the site, AI prompts or MCP answers. Documentation placeholders such as `ghp_yourToken` pass.
+
 The engine (`scripts/context_engine/`) runs **extract → navigate → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with an Anthropic credential (`ANTHROPIC_API_KEY`, or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN` / `ANTHROPIC_AUTH_TOKEN`) or an xAI one (`XAI_API_KEY` / `GROK_API_KEY`) set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
 ## Continuous evolution
@@ -88,7 +90,7 @@ The engine (`scripts/context_engine/`) runs **extract → navigate → synthesiz
 - **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it.
 - **`docs-quality-check.yaml`** runs on every PR: the SCHEMA drift gate, the navigation drift gate (`context_engine navcheck`), and the tracked-surfaces integrity gate (`scripts/check_tracked_surfaces.py`), then lints the corpus and posts a report. The cron runs the same three gates before it commits.
 - **`deploy-pages.yaml`** publishes `docs/` (whose home page is the generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
-- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples.
+- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples. A hook gets an allowlisted environment, never the build's provider keys, and its output is secret-screened ([hooks.d/README.md](hooks.d/README.md)).
 
 ## The fleet documentation review
 

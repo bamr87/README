@@ -507,6 +507,108 @@ class TestIconNormalizer(unittest.TestCase):
         self.assertEqual(path.read_text(encoding="utf-8"), original)
 
 
+class TestSecretRedaction(unittest.TestCase):
+    """The secret screen: credentials are replaced and reported, never echoed."""
+
+    def setUp(self):
+        from scripts.context_engine.redact import KINDS, Hit, redact
+        from tests.fixtures.fake_secrets import PLACEHOLDERS, fake_secrets
+        self.redact, self.Hit = redact, Hit
+        self.fakes, self.placeholders = fake_secrets(), PLACEHOLDERS
+        self.assertEqual(sorted(self.fakes), sorted(KINDS))
+
+    def test_every_kind_is_redacted_and_reported_without_its_value(self):
+        for kind, value in self.fakes.items():
+            with self.subTest(kind=kind):
+                text = f"# Setup\n\nexport TOKEN={value}\nmore prose\n"
+                out, hits = self.redact(text)
+                self.assertEqual(out, f"# Setup\n\nexport TOKEN=[REDACTED:{kind}]\nmore prose\n")
+                self.assertEqual(hits, [self.Hit(kind, 3)])
+                self.assertNotIn(value, repr(hits))
+
+    def test_placeholders_and_lookalikes_survive(self):
+        lookalikes = ("keys start with sk-ant-oat01-...", "xoxb-not-a-real-token-at-all",
+                      "header only: -----BEGIN OPENSSH PRIV" + "ATE KEY-----", "xai-org/grok")
+        for text in self.placeholders + lookalikes:
+            with self.subTest(text=text[:24]):
+                out, hits = self.redact(f"use `{text}` here")
+                self.assertEqual(out, f"use `{text}` here")
+                self.assertEqual(hits, [])
+
+    def test_lines_refer_to_the_original_text(self):
+        # The eight-line key block starts on line 2, so the tokens are on line 11.
+        text = ("intro\n" + self.fakes["private-key"] + "\nprose\n"
+                + self.fakes["github-token"] + " and " + self.fakes["slack-token"] + "\n")
+        out, hits = self.redact(text)
+        self.assertEqual(out, "intro\n[REDACTED:private-key]\nprose\n"
+                              "[REDACTED:github-token] and [REDACTED:slack-token]\n")
+        self.assertEqual(hits, [self.Hit("private-key", 2), self.Hit("github-token", 11),
+                                self.Hit("slack-token", 11)])
+
+    def test_ai_errors_never_carry_a_credential(self):
+        from scripts.context_engine.ai import AIError
+        value = self.fakes["anthropic-key"]
+        error = AIError(f"HTTP 401: invalid x-api-key {value}")
+        self.assertEqual(str(error), "HTTP 401: invalid x-api-key [REDACTED:anthropic-key]")
+
+
+class TestHookEnvironment(unittest.TestCase):
+    """Hooks get an allowlisted environment and screened output (README #53)."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp, ignore_errors=True)
+        (self.tmp / "post_build").mkdir()
+
+    def _hook(self, name, body):
+        path = self.tmp / "post_build" / name
+        path.write_text("#!/bin/sh\n" + body, encoding="utf-8")
+        path.chmod(0o755)
+
+    def _run(self, **environ):
+        import contextlib
+        import io
+        from unittest.mock import patch
+        from scripts.context_engine.hooks import run_hooks
+        log = io.StringIO()
+        with patch.dict("os.environ", environ), contextlib.redirect_stdout(log):
+            results = run_hooks("post_build", hooks_dir=self.tmp)
+        return results, log.getvalue()
+
+    def test_provider_keys_stay_out_unless_named(self):
+        self._hook("10-env", 'echo "anthropic=${ANTHROPIC_API_KEY:-absent}"\n'
+                             'echo "xai=${XAI_API_KEY:-absent}"\n'
+                             'echo "context_token=${CONTEXT_API_TOKEN:-absent}"\n'
+                             'echo "opted=${HOOK_TEST_VAR:-absent}"\n'
+                             'echo "stage=$CONTEXT_STAGE path=${PATH:+set}"\n')
+        results, _ = self._run(ANTHROPIC_API_KEY="dummy-anthropic", XAI_API_KEY="dummy-xai",
+                               CONTEXT_API_TOKEN="dummy-context", HOOK_TEST_VAR="visible",
+                               CONTEXT_HOOK_ENV="HOOK_TEST_VAR")
+        self.assertTrue(results[0]["ok"], results)
+        self.assertEqual(results[0]["output"].splitlines(), [
+            "anthropic=absent", "xai=absent", "context_token=absent", "opted=visible",
+            "stage=post_build path=set"])
+
+    def test_opt_in_list_takes_commas_and_spaces(self):
+        from scripts.context_engine.hooks import hook_environment
+        env = hook_environment({
+            "PATH": "/bin", "LC_ALL": "C", "PYTHONPATH": "/lib", "CONTEXT_STAGE": "x",
+            "ANTHROPIC_API_KEY": "k", "CONTEXT_API_KEY": "k", "SSH_AUTH_SOCK": "/s",
+            "GITHUB_STEP_SUMMARY": "/sum", "XAI_API_KEY": "k",
+            "CONTEXT_HOOK_ENV": "GITHUB_STEP_SUMMARY, XAI_API_KEY",
+        })
+        self.assertEqual(sorted(env), ["CONTEXT_HOOK_ENV", "CONTEXT_STAGE", "GITHUB_STEP_SUMMARY",
+                                       "LC_ALL", "PATH", "PYTHONPATH", "XAI_API_KEY"])
+
+    def test_hook_output_is_screened_before_it_is_logged(self):
+        from tests.fixtures.fake_secrets import fake_secrets
+        value = fake_secrets()["github-token"]
+        self._hook("20-leak", f'echo "token: {value}"\n')
+        results, log = self._run()
+        self.assertEqual(results[0]["output"], "token: [REDACTED:github-token]")
+        self.assertIn("[REDACTED:github-token]", log)
+        self.assertNotIn(value, log)
+
 
 class TestSynthesizerAndAssembler(ContextEngineFixture):
     def _facts(self):

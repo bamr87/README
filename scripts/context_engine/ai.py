@@ -22,6 +22,8 @@ from typing import Dict, Optional
 
 import requests
 
+from .redact import redact
+
 DEFAULT_TIMEOUT = 60
 MAX_ATTEMPTS = 3
 
@@ -36,7 +38,16 @@ SYSTEM_PROMPT = (
 
 
 class AIError(RuntimeError):
-    """Raised when an enrichment call fails after retries."""
+    """
+    Raised when an enrichment call fails after retries.
+
+    Its message can quote a provider's response body, which a gateway or an
+    error page could echo a credential into, so the message is run through
+    the secret screen here and every handler that logs it stays safe.
+    """
+
+    def __init__(self, message: object = "") -> None:
+        super().__init__(redact(str(message))[0])
 
 
 class BaseProvider:

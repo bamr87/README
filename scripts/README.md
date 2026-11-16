@@ -104,9 +104,10 @@ scripts/
 │   ├── indexer.py          # Query index + freshness manifest
 │   ├── query.py            # Read-side API (shared by CLI and MCP)
 │   ├── ai.py               # Provider-agnostic enrichment (Anthropic/xAI/mock)
-│   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner
+│   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner (allowlisted env)
+│   ├── redact.py           # Secret screen: credential shapes -> [REDACTED:<kind>]
 │   ├── builder.py + cli.py # Orchestration + command-line interface
-│   ├── gather/             # Shallow blobless clones -> source manifests
+│   ├── gather/             # Shallow blobless clones / working trees -> source manifests
 │   ├── analyze/            # Checks -> findings -> health score; framework.py = UPS-DOC rows, review.py = docs review
 │   ├── survey.py           # Fleet documentation survey (`survey` command)
 │   └── __main__.py         # `python3 -m scripts.context_engine`
@@ -126,7 +127,7 @@ scripts/
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
 | 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
-| 2. Processing | `raw_docs/` | `docs/` | `process.py`, `../tools/unwrap-prose.py` |
+| 2. Processing | `raw_docs/` | `docs/` (secret-screened; `docs/results/secret_screen.json` on a hit) | `process.py`, `context_engine/redact.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
 | 5. Navigation | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `context_engine/navigator.py` |
@@ -232,6 +233,7 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 - Sets up Python virtual environment with required dependencies
 - Invokes `process.py` for documentation processing
 - Unwraps soft-wrapped prose in the freshly written corpus (`../tools/unwrap-prose.py --write docs`, excluding `SCHEMA.md` and `CHANGELOG.md` exactly as the `markdown-oneline` workflow does) so the crawl and that gate stop rewriting each other's work
+- Exits with `process.py`'s status once the corpus is finished and `temp/` is cleaned up, so a secret-screen hit (or a processing failure) stops `aggregate-docs.yaml` before its commit step
 
 **Usage**:
 ```bash
@@ -319,9 +321,11 @@ last_updated: null
 ---
 ```
 
+**Secret screen**: every page is run through `context_engine/redact.py` before anything else reads it. A GitHub (`ghp_`/`gho_`/`ghu_`/`ghs_`/`ghr_`, `github_pat_`), Anthropic (`sk-ant-`), xAI (`xai-`), AWS (`AKIA`) or Slack (`xox[abprs]-`) token, or a PEM private key carrying real key material, is replaced with `[REDACTED:<kind>]`. Documentation placeholders pass: a value containing `your`, `example`, `xxxx`, `placeholder`, `redacted`, `changeme`, `dummy`, `fake` or `sample`, a prefix followed by one repeated character, or a key block with no key material in it. On a hit the run writes `docs/results/secret_screen.json` (project, path, line and kind of each credential, never its value), prints the same list, and exits 1; a clean run writes no report and removes a stale one.
+
 **Usage**:
 ```bash
-python3 scripts/process.py
+python3 scripts/process.py    # exit 0 = clean, 1 = the secret screen redacted something
 ```
 
 **Environment Variables**:
@@ -656,6 +660,8 @@ python3 -m scripts.context_engine projects         # fleet roster
 ```
 
 **AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API.
+
+**Secret screen** (`redact.py`): the stdlib matcher behind ingest's credential check. `redact(text)` returns the text with each credential replaced by `[REDACTED:<kind>]` and one `Hit(kind, line)` per credential, never the value. `process.py` runs it on every crawled page, `hooks.py` on hook output (a hook also gets an allowlisted environment, never the build's provider keys: see `../hooks.d/README.md`), and `AIError` on its message, which can quote a provider's response body. The survey's working-tree mode (`survey --local`, `--workspace`) never follows a tracked symlink, so a link out of a checkout cannot pull a local file into the review.
 
 **Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/nav/*.json`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, `nav.yml`, `docs/browse/`, root README span, and `docs/index.md`. All generated — never hand-edit.
 
