@@ -38,7 +38,7 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 
 | Stage | Input | Output | Entry point |
 | --- | --- | --- | --- |
-| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh`, `aggregate.py` |
+| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh` (a repo it cannot fetch fails the run) |
 | Process | `raw_docs/` | `docs/{project}/` + front matter | `scripts/process.py` |
 | Validate | `docs/` | reports, in-place fixes | `scripts/run_doc_checks.sh` |
 | Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
@@ -53,7 +53,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 
 - **Backlog of record:** GitHub Issues with the fleet labels. **Definition of Done:** `.github/pull_request_template.md`. **Decisions:** `docs/adr/`.
 - **Commits:** Conventional Commits. **Branches:** `feature/`, `fix/`, `docs/`, `refactor/`, `test/`, `chore/` off `main`. `CHANGELOG.md` is release-please's.
-- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`.
+- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`. A project's `url` must be `https://github.com/<owner>/<repo>` and its `branch` letters, digits, `.`, `_`, `/` and `-`, not starting with `-`: `registry.py` rejects anything else, naming the project, before `sync` writes `repos.txt`.
 - **Generated surfaces are never hand-edited:** `context/**`, `docs/**` (the corpus, `docs/index.md`, `docs/browse/`), `repos.txt`, `nav.yml`, and the README `AUTO:projects` span. Fix the registry, the upstream repo or the engine, then rebuild. Never add a `nav:` key to `mkdocs.yml` (it would shadow the inherited one).
 - **Builds succeed with no key** (heuristic mode) and are diff-stable: outputs carry corpus fingerprints, not timestamps. Keep it that way.
 - **The corpus layout is the navigation contract.** `process.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.

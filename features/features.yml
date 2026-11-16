@@ -26,6 +26,8 @@ features:
     surface: cli
     link: "scripts"
     docs: "PRD.md"
+    tests:
+      - tests/unit/test_cases/test_repo_crawl.py
   - id: README-002
     title: "Extract"
     description: "Derive per-project facts offline: identity, governance signals, structure, rollups, key documents, corpus fingerprint."

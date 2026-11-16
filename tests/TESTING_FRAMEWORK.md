@@ -12,7 +12,7 @@ This testing framework provides comprehensive testing capabilities for the docum
   - `test_fleet_survey.py` - Fleet documentation survey checks and report
   - `test_tracked_surfaces.py` - Tracked-surfaces integrity gate
   - `test_file_processing.py` - Markdown file processing
-  - `test_repo_operations.py` - Repository operations
+  - `test_repo_crawl.py` - The crawler (`scripts/aggregate.sh`) against local bare repositories
 - **Test Runner**: `test_runner.py` - Executes unit tests and stores results
 
 ### 2. Integration Tests (`tests/integration/`)

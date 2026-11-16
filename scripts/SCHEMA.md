@@ -14,8 +14,7 @@ coverage: full
 |---|---|---|---|
 | `README.md` | file | Stage-by-stage script documentation | required |
 | `SCHEMA.md` | file | This file | required |
-| `aggregate.py` | file | Repo-operations module (clone/pull/find/copy docs) | required |
-| `aggregate.sh` | file | Stage 1-2 orchestrator: repos.txt → raw_docs/ → docs/ | required |
+| `aggregate.sh` | file | Stage 1-2 orchestrator: repos.txt → raw_docs/ → docs/; exits 1 when a repo cannot be fetched | required |
 | `aggregate_mkdocs.py` | file | Alternative category-bucketing aggregator (MkDocsAggregator) | |
 | `analyze_doc_structure.py` | file | Corpus structure analysis utility | |
 | `check_frontmatter.py` | file | Frontmatter validator (+ --fix) | required |

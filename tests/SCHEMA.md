@@ -17,6 +17,7 @@ coverage: listed
 | `TESTING_FRAMEWORK.md` | file | Test architecture documentation | |
 | `__init__.py` | file | Package marker | required |
 | `config.py` | file | Test configuration (integration repos, output paths) | required |
+| `crawl.py` | file | Runs `scripts/aggregate.sh` in a scratch working directory (unit + integration crawl tests) | |
 | `fixtures/` | dir | Test data and fixtures | |
 | `integration/` | dir | Integration tests (clone real repos; network required) | terminal |
 | `results/` | dir | Runner output artifacts | generated |

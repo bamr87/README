@@ -150,6 +150,45 @@ class TestRegistry(ContextEngineFixture):
         with self.assertRaises(RegistryError):
             load_registry(bad)
 
+    def _registry_with_delta(self, field: str, value: str) -> Path:
+        path = self.tmp / "delta.yml"
+        url = value if field == "url" else "https://github.com/owner/delta"
+        branch = f"\n    branch: {json.dumps(value)}" if field == "branch" else ""
+        path.write_text(REGISTRY_YAML + f"""
+  - name: delta
+    repo: owner/delta
+    url: {json.dumps(url)}{branch}
+""", encoding="utf-8")
+        return path
+
+    def test_clone_url_must_be_a_github_repository(self):
+        for url in ("https://gitlab.com/owner/delta", "git@github.com:owner/delta.git",
+                    "http://github.com/owner/delta", "file:///srv/delta.git",
+                    "--upload-pack=touch /tmp/pwned", "https://github.com.evil.example/owner/delta",
+                    "https://github.com/owner/delta/tree/main", "https://github.com/owner/..",
+                    "https://github.com/owner/delta\n"):
+            with self.subTest(url=url):
+                with self.assertRaisesRegex(RegistryError, "project 'delta': url"):
+                    load_registry(self._registry_with_delta("url", url))
+
+    def test_branch_must_not_be_readable_as_an_option(self):
+        for branch in ("--upload-pack=touch /tmp/pwned", "-b", "gh pages", "main;id",
+                       "$(id)", "main\n"):
+            with self.subTest(branch=branch):
+                with self.assertRaisesRegex(RegistryError, "project 'delta': branch"):
+                    load_registry(self._registry_with_delta("branch", branch))
+
+    def test_valid_clone_targets_pass(self):
+        for field, value in (("url", "https://github.com/owner/delta.git"),
+                             ("url", "https://github.com/owner/delta/"),
+                             ("url", "https://github.com/bamr87/bamr87.github.io"),
+                             ("branch", "gh-pages"), ("branch", "release/v1.2_rc")):
+            with self.subTest(**{field: value}):
+                delta = load_registry(self._registry_with_delta(field, value)).get("delta")
+                self.assertTrue(delta.clone_spec.startswith("https://github.com/"))
+        # The fleet registry itself, external OverTheWire gh-pages pin included.
+        self.assertTrue(load_registry().projects)
+
     def test_sync_repos_txt_generates_and_is_idempotent(self):
         out = self.tmp / "repos.txt"
         self.assertTrue(sync_repos_txt(self.registry, out))
