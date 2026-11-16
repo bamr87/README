@@ -9,16 +9,16 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **683 pages** across **100 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **684 pages** across **100 sections** (max depth 6).
 
-- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(89)</small>
+- **[Repository & tooling](../zer0-mistakes/test/README.md)** <small>(90)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
-  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(79)</small>
+  - **[Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)** <small>(80)</small>
     - [Consolidated Testing Framework for zer0-mistakes Jekyll Theme](../zer0-mistakes/test/README.md)
     - [CI/CD Testing Framework Enhancement Summary](../zer0-mistakes/test/CICD_ENHANCEMENT_SUMMARY.md)
     - [Sample Note](../zer0-mistakes/test/fixtures/obsidian/sample-note.md)
-    - **Visual** <small>(76)</small>
-      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(76)</small>
+    - **Visual** <small>(77)</small>
+      - **[Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)** <small>(77)</small>
         - [Navbar responsiveness — evidence (PR #215)](../zer0-mistakes/test/visual/evidence/README.md)
         - [agent-issue-265 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-265/README.md)
         - [agent-issue-412 — visual evidence](../zer0-mistakes/test/visual/evidence/agent-issue-412/README.md)
@@ -85,6 +85,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
         - [Footer duplicate copyright (backlog T-054)](../zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md)
         - [grokbot-fix-cookie-consent-analytics-default — visual evidence](../zer0-mistakes/test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md)
         - [grokbot-fix-fab-layer-tokens — visual evidence](../zer0-mistakes/test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md)
+        - [grokbot-fix-sidebar-offcanvas-layout-gate — visual evidence](../zer0-mistakes/test/visual/evidence/grokbot-fix-sidebar-offcanvas-layout-gate/README.md)
         - [Heading-level skips (#436)](../zer0-mistakes/test/visual/evidence/heading-level-skips/README.md)
         - [Mobile navigation panel collapsed to a 60px sliver](../zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md)
         - [Mobile responsive audit — evidence](../zer0-mistakes/test/visual/evidence/mobile-responsive/README.md)
