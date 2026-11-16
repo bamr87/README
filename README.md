@@ -145,7 +145,7 @@ If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit th
 
 ## Contributing
 
-Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents and contributors start with [AGENTS.md](AGENTS.md).
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. [CONTRIBUTING.md](CONTRIBUTING.md) describes the workflow, and the pull-request template carries the Definition of Done: the fleet's boxes plus this repository's gates. Report a vulnerability privately, as [SECURITY.md](SECURITY.md) describes. AI agents and contributors start with [AGENTS.md](AGENTS.md).
 
 ## Changelog
 
