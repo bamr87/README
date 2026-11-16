@@ -73,7 +73,7 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 Unit tests verify individual components in isolation. The runner discovers every `tests/unit/test_cases/test_*.py` module:
 
 - **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
-- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory, matching a `--local`/`--workspace` checkout to its fleet entry
+- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory
 - **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
 - **File processing** (`test_file_processing.py`): title extraction, front matter generation, ingest prose normalization
 - **Repository operations** (`test_repo_operations.py`): git operations and file discovery
