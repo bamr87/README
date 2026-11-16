@@ -324,6 +324,8 @@ last_updated: null
 python3 scripts/process.py
 ```
 
+**Hidden carriers** (`strip_hidden`): upstream docs are third-party input that agents read and the context engine pastes into AI prompts, so ingest drops what a reader never sees: HTML comments in prose, and zero-width or bidirectional formatting characters (U+200B, U+202A–U+202E, U+2060–U+206F, U+FEFF, Unicode tag characters, and a U+200C/U+200D joiner that does not sit between two non-ASCII characters). Fenced and inline code keep their comments (a comment in a code sample is content), an empty comment (`<!-- -->`, the usual way to split two lists) stays, emoji ZWJ sequences and subdivision flags stay, and front matter values lose only the formatting characters. A comment-only line between two paragraphs leaves a blank line, so the paragraphs stay apart. The pass is idempotent, and files are read as `utf-8-sig`, so a leading BOM no longer hides the front matter.
+
 **Environment Variables**:
 - `XAI_API_KEY`: Optional API key for AI-enhanced content analysis
 
