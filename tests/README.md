@@ -31,7 +31,7 @@ tests/
 ├── fixtures/                      # Test fixtures and sample data
 │   └── sample_docs.py             # Sample documentation files
 ├── test-docs/                     # Sample markdown fixtures
-├── results/                       # Test results storage (generated)
+├── results/                       # Runner output (generated per run, gitignored)
 ├── config.py                      # Test configuration
 ├── test_runner.py                 # Main test runner
 ├── TESTING_FRAMEWORK.md           # Framework architecture notes
@@ -141,11 +141,13 @@ Add repositories to test in `tests/config.py`:
 
 ### Result Storage
 
-Test results are stored in JSON format in the `tests/results/` directory:
+Each run writes its results as JSON into `tests/results/`, which the runner creates when it is missing:
 
 - `unit_test_results_YYYYMMDD_HHMMSS.json` - Unit test results
 - `integration_repo_results_YYYYMMDD_HHMMSS.json` - Integration test results
 - `combined_test_results_YYYYMMDD_HHMMSS.json` - Combined results
+
+These files stay local and are never committed: `.gitignore` covers `tests/results/`, so running the Definition of Done gate (`--type quick`) leaves the working tree clean. Pass `--output DIR` to write them somewhere else, for example a temporary directory or a CI artifact path.
 
 ### Result Format
 

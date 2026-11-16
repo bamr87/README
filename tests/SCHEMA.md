@@ -19,7 +19,7 @@ coverage: listed
 | `config.py` | file | Test configuration (integration repos, output paths) | required |
 | `fixtures/` | dir | Test data and fixtures | |
 | `integration/` | dir | Integration tests (clone real repos; network required) | terminal |
-| `results/` | dir | Runner output artifacts | generated |
+| `results/` | dir | Runner output, gitignored, created per run | generated |
 | `test-docs/` | dir | Sample markdown fixtures | terminal |
 | `test_runner.py` | file | Main runner (`--type` unit, integration, all, quick) | required |
 | `unit/` | dir | Unit runner + `test_cases/` (unittest discovery) | terminal |
