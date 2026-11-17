@@ -57,7 +57,7 @@ jobs:
         id: fix
         run: |
           # `docs/` is NOT this repo's prose. SCHEMA.md marks it `generated` and
-          # CLAUDE.md "never hand-edit": it is the L3 corpus that aggregate.sh
+          # CLAUDE.md "never hand-edit": it is the L3 corpus that the collect stage
           # mirrors out of every fleet repo, rewritten wholesale by the weekly
           # `aggregate-docs.yaml` auto-commit to main. Policing it here fails on
           # two counts — the gate cannot self-heal a push to the default branch,

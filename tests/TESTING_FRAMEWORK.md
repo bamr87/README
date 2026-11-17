@@ -11,14 +11,13 @@ This testing framework provides comprehensive testing capabilities for the docum
   - `test_context_engine.py` - Context engine stages, schema lint, MCP dispatch
   - `test_fleet_survey.py` - Fleet documentation survey checks and report
   - `test_tracked_surfaces.py` - Tracked-surfaces integrity gate
-  - `test_file_processing.py` - Markdown file processing
-  - `test_repo_operations.py` - Repository operations
+  - `test_second_brain.py` - Collect, vault, generated notes, site hook
 - **Test Runner**: `test_runner.py` - Executes unit tests and stores results
 
 ### 2. Integration Tests (`tests/integration/`)
 - **Test Cases**: Full workflow testing
-  - `test_integration.py` - Complete workflow tests
-  - `test_repo_runner.py` - Repository testing against real GitHub repos
+  - `test_integration.py` - The collect stage against a local git repository
+  - `test_repo_runner.py` - The collect stage against real GitHub repos
 - **Test Runner**: Executes integration tests with real repositories
 
 ### 3. Test Configuration (`tests/config.py`)
@@ -229,7 +228,7 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 python tests/test_runner.py --output /path/to/results
 
 # Run specific test module
-python tests/unit/test_runner.py --module test_file_processing
+python tests/unit/test_runner.py --module test_second_brain
 ```
 
 ## Conclusion

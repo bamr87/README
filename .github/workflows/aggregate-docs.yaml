@@ -13,7 +13,7 @@ permissions:
 jobs:
   aggregate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Checkout central repo
         uses: actions/checkout@v7
@@ -31,17 +31,20 @@ jobs:
       - name: Sync repos.txt from the fleet registry
         run: python3 -m scripts.context_engine sync
 
-      - name: Run aggregation script
-        run: bash scripts/aggregate.sh
+      # One stage: clone, select the official documentation, normalize, weave
+      # links and write docs/. Pages upstream deleted are removed here.
+      - name: Collect the corpus
+        run: python3 -m scripts.context_engine collect
 
       - name: Regenerate corpus index
         run: python3 scripts/generate_docs_index.py
 
-      # Rebuilds the context pyramid (facts -> cards -> apex -> query index)
-      # and regenerates the README AUTO span + docs/index.md. AI enrichment
+      # Rebuilds the second brain (docs/brain/) and the context pyramid (facts
+      # -> cards -> apex -> query index -> graph), and regenerates the README
+      # AUTO span + docs/index.md. AI enrichment
       # auto-enables when a provider key secret is configured; without one
       # the build is heuristic and fully deterministic.
-      - name: Build context pyramid
+      - name: Build second brain and context pyramid
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}

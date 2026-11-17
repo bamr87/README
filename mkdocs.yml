@@ -1,5 +1,5 @@
-site_name: bamr87 Documentation
-site_description: Aggregated documentation built from multiple source repositories
+site_name: bamr87 Second Brain
+site_description: The fleet's official documentation as one linked knowledge base
 site_author: Amr Abdel-Motaleb
 site_url: https://bamr87.github.io/README/
 
@@ -57,6 +57,11 @@ plugins:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - tags
+
+# The site side of the second brain: resolves [[wikilinks]] and callouts, adds
+# backlinks, and publishes the graph and its views. See brain_site/hook.py.
+hooks:
+  - brain_site/hook.py
 
 # Extensions
 markdown_extensions:

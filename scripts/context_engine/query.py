@@ -10,9 +10,10 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 from .config import (
-    APEX_PATH, CARDS_DIR, CONTEXT_INDEX_PATH, FACTS_DIR, MANIFEST_PATH,
-    NAV_DIR, NAV_FLEET_PATH, ROOT,
+    APEX_PATH, BRAIN_DIR, CARDS_DIR, CONTEXT_INDEX_PATH, DOCS_DIR, FACTS_DIR,
+    GRAPH_PATH, MANIFEST_PATH, NAV_DIR, NAV_FLEET_PATH, ROOT,
 )
+from .vault import Resolver, notes_from_graph
 
 
 class ContextMissing(RuntimeError):
@@ -121,3 +122,75 @@ def search(terms: List[str], index: Optional[Dict] = None, limit: int = 10) -> L
             "key_docs": doc.get("key_docs", [])[:5],
         })
     return results
+
+
+def load_graph() -> Dict:
+    return json.loads(_require(GRAPH_PATH).read_text(encoding="utf-8"))
+
+
+def _locate(target: str, graph: Dict) -> Optional[int]:
+    """A path, title, alias or stem -> node index, as a [[wikilink]] would resolve."""
+    found = Resolver(notes_from_graph(graph)).resolve(target)
+    if found is None:
+        return None
+    return next(i for i, node in enumerate(graph["nodes"]) if node["path"] == found)
+
+
+def _brief(node: Dict) -> Dict:
+    return {key: node[key] for key in ("path", "title", "project", "kind", "summary")}
+
+
+def get_note(target: str, graph: Optional[Dict] = None) -> Optional[Dict]:
+    """One note with its text, backlinks and outgoing links; None when unknown."""
+    graph = graph or load_graph()
+    index = _locate(target, graph)
+    if index is None:
+        return None
+    nodes = graph["nodes"]
+    links = [_brief(nodes[t]) for s, t in graph["edges"] if s == index]
+    backlinks = [_brief(nodes[s]) for s, t in graph["edges"] if t == index]
+    return {
+        **nodes[index],
+        "text": (DOCS_DIR / nodes[index]["path"]).read_text(encoding="utf-8", errors="replace"),
+        "links": links, "backlinks": backlinks,
+    }
+
+
+def get_neighbours(target: str, depth: int = 1, graph: Optional[Dict] = None) -> List[Dict]:
+    """Notes within `depth` links of a note, nearest first, in either direction."""
+    graph = graph or load_graph()
+    start = _locate(target, graph)
+    if start is None:
+        return []
+    adjacent: Dict[int, set] = {}
+    for source, dest in graph["edges"]:
+        adjacent.setdefault(source, set()).add(dest)
+        adjacent.setdefault(dest, set()).add(source)
+    seen = {start: 0}
+    frontier = [start]
+    for level in range(1, depth + 1):
+        frontier = sorted({n for i in frontier for n in adjacent.get(i, ())} - set(seen))
+        seen.update({i: level for i in frontier})
+    del seen[start]
+    return [{**_brief(graph["nodes"][i]), "distance": d}
+            for i, d in sorted(seen.items(), key=lambda row: (row[1], row[0]))]
+
+
+def get_hot() -> str:
+    """The hot cache: what an agent reads first to catch up."""
+    return _require(BRAIN_DIR / "hot.md").read_text(encoding="utf-8")
+
+
+def vault_lint(graph: Optional[Dict] = None) -> Dict:
+    """Deterministic vault health: counts, worst unresolved targets, orphans."""
+    graph = graph or load_graph()
+    connected = {i for edge in graph["edges"] for i in edge}
+    orphans = [n["path"] for i, n in enumerate(graph["nodes"])
+               if i not in connected and n["project"] != "brain"]
+    unresolved = sorted(graph["unresolved"].items(), key=lambda row: (-len(row[1]), row[0]))
+    return {
+        "counts": graph["counts"],
+        "unresolved": [{"target": t, "pages": len(p), "example": p[0]}
+                       for t, p in unresolved[:50]],
+        "orphans": len(orphans), "orphan_sample": orphans[:50],
+    }

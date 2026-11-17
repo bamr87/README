@@ -12,7 +12,8 @@ Run directly (registered for Claude Code in .mcp.json):
     python3 mcp/server.py
 
 Tools:    list_projects, get_project, search_context, get_readme,
-          get_nav, get_schema, context_status
+          get_nav, get_schema, context_status, get_note, get_neighbours,
+          get_hot, vault_lint
 Resources: context://apex, context://index, context://manifest,
            context://cards/<name>, context://facts/<name>,
            context://nav, context://nav/<name>
@@ -28,8 +29,9 @@ sys.path.insert(0, str(ROOT))
 
 from scripts.context_engine import ENGINE_VERSION                    # noqa: E402
 from scripts.context_engine.query import (                           # noqa: E402
-    ContextMissing, get_apex, get_card, get_facts, get_manifest, get_nav,
-    list_nav, list_projects, load_index, nav_paths, search,
+    ContextMissing, get_apex, get_card, get_facts, get_hot, get_manifest, get_nav,
+    get_neighbours, get_note, list_nav, list_projects, load_index, nav_paths,
+    search, vault_lint,
 )
 
 SERVER_INFO = {"name": "readme-context-engine", "version": ENGINE_VERSION}
@@ -117,6 +119,47 @@ TOOLS: List[Dict[str, Any]] = [
         "inputSchema": {"type": "object", "properties": {},
                         "additionalProperties": False},
     },
+    {
+        "name": "get_note",
+        "description": "Read one vault note with its backlinks and outgoing "
+                       "links. Accepts a path, title or alias, the way a "
+                       "[[wikilink]] does.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {"target": {"type": "string",
+                                      "description": "Path, title or alias"}},
+            "required": ["target"],
+            "additionalProperties": False,
+        },
+    },
+    {
+        "name": "get_neighbours",
+        "description": "Notes within `depth` links of a note, in either "
+                       "direction: the local graph as data.",
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "target": {"type": "string", "description": "Path, title or alias"},
+                "depth": {"type": "integer", "minimum": 1, "maximum": 3},
+            },
+            "required": ["target"],
+            "additionalProperties": False,
+        },
+    },
+    {
+        "name": "get_hot",
+        "description": "The hot cache: recent corpus changes, the most linked "
+                       "pages and the concepts that span repositories. Read "
+                       "this first to catch up.",
+        "inputSchema": {"type": "object", "properties": {},
+                        "additionalProperties": False},
+    },
+    {
+        "name": "vault_lint",
+        "description": "Vault health: unresolved link targets and orphan notes.",
+        "inputSchema": {"type": "object", "properties": {},
+                        "additionalProperties": False},
+    },
 ]
 
 
@@ -194,6 +237,27 @@ def _tool_context_status(_args: Dict) -> Dict:
     return _text_result(json.dumps(get_manifest(), indent=2))
 
 
+def _tool_get_note(args: Dict) -> Dict:
+    target = str(args.get("target", ""))
+    note = get_note(target)
+    if note is None:
+        return _text_result(f"no note matches '{target}'", is_error=True)
+    return _text_result(json.dumps(note, indent=2, ensure_ascii=False))
+
+
+def _tool_get_neighbours(args: Dict) -> Dict:
+    rows = get_neighbours(str(args.get("target", "")), depth=int(args.get("depth", 1)))
+    return _text_result(json.dumps(rows, indent=2, ensure_ascii=False))
+
+
+def _tool_get_hot(_args: Dict) -> Dict:
+    return _text_result(get_hot())
+
+
+def _tool_vault_lint(_args: Dict) -> Dict:
+    return _text_result(json.dumps(vault_lint(), indent=2, ensure_ascii=False))
+
+
 TOOL_HANDLERS = {
     "list_projects": _tool_list_projects,
     "get_project": _tool_get_project,
@@ -202,6 +266,10 @@ TOOL_HANDLERS = {
     "get_nav": _tool_get_nav,
     "get_schema": _tool_get_schema,
     "context_status": _tool_context_status,
+    "get_note": _tool_get_note,
+    "get_neighbours": _tool_get_neighbours,
+    "get_hot": _tool_get_hot,
+    "vault_lint": _tool_vault_lint,
 }
 
 
@@ -285,7 +353,8 @@ def handle_request(request: Dict) -> Optional[Dict]:
             "serverInfo": SERVER_INFO,
             "instructions": (
                 "Read-only context engine for the bamr87 fleet. Start with "
-                "list_projects or search_context; get_readme returns the "
+                "get_hot to catch up, then list_projects or search_context; "
+                "get_note follows a page's links and backlinks; get_readme returns the "
                 "consolidated fleet README and get_nav returns a corpus's "
                 "published section/page hierarchy (use it to locate a document "
                 "before reading it). If context_status reports stale data, "

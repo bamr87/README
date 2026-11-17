@@ -705,7 +705,8 @@ class TestMCPServer(unittest.TestCase):
         names = {tool["name"] for tool in response["result"]["tools"]}
         self.assertEqual(names, {"list_projects", "get_project", "search_context",
                                  "get_readme", "get_nav", "get_schema",
-                                 "context_status"})
+                                 "context_status", "get_note", "get_neighbours",
+                                 "get_hot", "vault_lint"})
 
     def test_unknown_method_is_json_rpc_error(self):
         response = self._call("prompts/list")
