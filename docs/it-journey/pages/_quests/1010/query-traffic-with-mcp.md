@@ -88,7 +88,9 @@ rewards:
   - On-demand traffic answers from your agent
 skill_focus: data
 snippet: Stop staring at dashboards. Ask questions.
-source_file: query-traffic-with-mcp.md
+source_file: pages/_quests/1010/query-traffic-with-mcp.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/query-traffic-with-mcp.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Analytics Data API'
 tags:
 - '1010'
@@ -99,7 +101,7 @@ tags:
 - hands-on
 - gamified-learning
 - observability
-title: Query Traffic With Mcp
+title: Query Your Traffic with the GA MCP Tools
 validation_criteria:
   completion_requirements:
   - Ran a top-pages report for a date range
@@ -112,6 +114,7 @@ validation_criteria:
   - Name the five GA MCP tools and when to use each
   - Explain the difference between a dimension and a metric
 ---
+
 ## 📖 The Legend Behind This Quest
 
 Your agent can reach Google Analytics now — but a connection without good questions is just a faster way to be confused. In this quest you'll learn the **five tools** the MCP server exposes, the GA4 vocabulary of **dimensions and metrics**, and how to turn "how's traffic?" into a precise, repeatable report.
@@ -134,7 +137,7 @@ Your agent can reach Google Analytics now — but a connection without good ques
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- Completed [Connect Google Analytics to Your AI Agent](/quests/1010/analytics-mcp-setup/)
+- Completed [[it-journey/pages/_quests/1010/analytics-mcp-setup|Connect Google Analytics to Your AI Agent]]
 - Basic GA4 concepts
 
 ### 🛠️ System Requirements
@@ -225,4 +228,4 @@ dimensionFilter: { filter: { fieldName: "hostName",
 
 ## ➡️ Next Quest
 
-Running reports by hand gets old. Put it on autopilot in **[Automate a Weekly Traffic Report](/quests/1010/automate-traffic-report/)**.
+Running reports by hand gets old. Put it on autopilot in **[[it-journey/pages/_quests/1010/automate-traffic-report|Automate a Weekly Traffic Report]]**.

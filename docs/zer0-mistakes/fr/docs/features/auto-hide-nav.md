@@ -15,7 +15,9 @@ permalink: /fr/docs/features/auto-hide-nav/
 preview: /images/previews/auto-hide-navigation.png
 sidebar:
   nav: docs
-source_file: auto-hide-nav.md
+source_file: fr/docs/features/auto-hide-nav.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/auto-hide-nav.md
 tags:
 - ui
 - navigation
@@ -26,6 +28,7 @@ translated_from_sha: 1ecda7444935
 translation_of: pages/_docs/features/auto-hide-nav.md
 translation_source_url: /docs/features/auto-hide-nav/
 ---
+
 # Navigation à masquage automatique
 
 La barre de navigation supérieure s'efface pendant que vous lisez : elle glisse vers le haut et se masque lorsque vous faites défiler la page vers le **bas**, puis réapparaît dès que vous faites défiler vers le **haut**. Cela permet de récupérer de l'espace vertical — particulièrement précieux sur les petits écrans — sans supprimer l'accès au menu.
@@ -50,5 +53,5 @@ Le comportement repose sur un petit contrôleur sans dépendances dans [`assets/
 
 ## Fonctionnalités associées
 
-- [Navigation améliorée de la barre latérale](/docs/features/sidebar-navigation/)
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation améliorée de la barre latérale]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]

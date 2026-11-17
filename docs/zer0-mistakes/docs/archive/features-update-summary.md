@@ -1,5 +1,7 @@
 ---
-source_file: features-update-summary.md
+source_file: docs/archive/features-update-summary.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/archive/features-update-summary.md
 title: Features.yml Update - Completion Summary
 ---
 # Features.yml Update - Completion Summary

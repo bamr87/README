@@ -7,9 +7,12 @@ permalink: /series/apota/
 sidebar:
   nav: series
   title: Browse the series
-source_file: apota.md
-title: Apota
+source_file: examples/swerve-of-shore/pages/series/apota.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/apota.md
+title: APOTA
 ---
+
 {% include page-header.html %}
 
 *A Portrait of the Artist as a Young Man* — the earlier novel, and the Stephen Dedalus who walks back into *Ulysses* a few years later with the departure undone.

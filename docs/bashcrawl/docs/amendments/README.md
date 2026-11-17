@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/amendments/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/amendments/README.md
 title: Amendments — bashcrawl
 ---
 <!-- kit: governance v0.1.0 -->

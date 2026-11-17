@@ -17,14 +17,17 @@ keywords:
 lastmod: 2026-06-18 09:00:00+00:00
 layout: article
 preview: /images/previews/the-trailing-slash-that-could-end-your-entire-comp.jpg
-source_file: 2026-06-18-trailing-slash-that-could-end-your-company.md
+source_file: pages/_posts/2026-06-18-trailing-slash-that-could-end-your-company.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2026-06-18-trailing-slash-that-could-end-your-company.md
 tags:
 - security
 - threat modeling
 - web
 - http
-title: 2026 06 18 Trailing Slash That Could End Your Company
+title: The Trailing Slash That Could End Your Entire Company
 ---
+
 Someone on your team shipped a redirect from `/about` to `/about/` and called it "tidying up the URLs." I call it the opening move of an extinction-level event.
 
 Stay with me. A 301 is not a convenience. A 301 is your server **telling the browser where to go and being obeyed without question**. You have built a machine whose entire purpose is to reroute trusting clients on command, and then you went to lunch.

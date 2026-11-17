@@ -10,14 +10,17 @@ excerpt: Live status of the autonomous quest-perfection loop — coverage, verdi
   and links to every walkthrough.
 permalink: /quest-reports/
 render_with_liquid: false
-source_file: index.md
+source_file: pages/_quest-reports/index.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/index.md
 tags:
 - quest-perfection
 - dashboard
 - walkthrough
 - quality
-title: ♾️ Quest Perfection Dashboard
+title: Quest Perfection Dashboard
 ---
+
 # ♾️ Quest Perfection Dashboard
 
 The autonomous **quest-perfection loop** walks IT-Journey's quests end-to-end as a learner, scores them with a sandboxed agentic engine, and opens content fixes for what it finds. This page mirrors the committed ledger ([`.quests/ledger.json`](https://github.com/bamr87/it-journey/blob/main/.quests/ledger.json)) — the source of truth — so you can review each incremental improvement here instead of in a PR.

@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 11
-source_file: vortex11.md
+source_file: wargames/vortex/vortex11.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex11.md
 title: Vortex11
 ---
 Chunk Corruption

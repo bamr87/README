@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29248386306
 slice: digital-artist/0111
-source_file: 2026-07-13-digital-artist-0111.md
+source_file: pages/_quest-reports/2026-07-13-digital-artist-0111.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-13-digital-artist-0111.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-13-digital-artist-0111.md
 tags:
 - digital-artist
 - level-0111
@@ -25,13 +27,14 @@ tags:
 - api-development
 theme: API Development
 tier: Adventurer
-title: 2026 07 13 Digital Artist 0111
+title: Digital Artist · L0111 · 2026-07-13
 verdict: fail
 walk_date: '2026-07-13'
 ---
+
 > **Slice** `digital-artist/0111` · **Level** 0111 (API Development) · **Adventurer tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-13
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-digital-artist-0111.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-digital-artist-0111.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-digital-artist-0111.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-digital-artist-0111.md)
 
 ---
 

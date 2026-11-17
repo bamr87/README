@@ -7,10 +7,13 @@ layout: admin
 permalink: /about/theme/
 preview: /images/previews/bootstrap-theme-examples.png
 source: https://getbootstrap.com/docs/5.3/examples/cheatsheet/
-source_file: theme.md
+source_file: pages/_about/theme.md
 source_icon: bi-palette
-title: Theme
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/theme.md
+title: Bootstrap Theme Examples
 ---
+
 ## Bootstrap Cheatsheet
 
 The following iframe loads Bootstrap's official cheatsheet for quick reference on available components, utilities, and helpers.

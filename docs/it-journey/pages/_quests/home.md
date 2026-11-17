@@ -23,13 +23,16 @@ redirect_from:
 - /quickstart/
 sidebar:
   nav: home
-source_file: home.md
+source_file: pages/_quests/home.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/home.md
 tags:
 - overworld
 - navigation
 - progress
 - dashboard
-title: Home
+title: 🏰 Overworld - Master Quest Map
 toc: false
 ---
+
 > **The whole game, in one place.** Everything on this dashboard is generated from the quest registry — pick a tier on the realm map, follow a class path, or jump back into your next quest. Hit **Customize** to choose what's shown and set your accent; your progress and preferences are saved in this browser and carry across the site.

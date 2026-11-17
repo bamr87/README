@@ -2,7 +2,9 @@
 gamename: bandit
 layout: default
 level: 12
-source_file: bandit12.md
+source_file: wargames/bandit/bandit12.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/bandit/bandit12.md
 title: Bandit12
 ---
 Level Goal

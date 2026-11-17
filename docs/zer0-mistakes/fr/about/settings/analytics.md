@@ -8,11 +8,14 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/settings/analytics/
 preview: /images/previews/analytics-dashboard.png
-source_file: analytics.md
+source_file: fr/about/settings/analytics.md
 source_icon: bi-graph-up
-title: Analytics
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/settings/analytics.md
+title: Tableau de bord analytique
 translated_from_sha: f1b35afd03f8
 translation_of: pages/_about/settings/analytics.md
 translation_source_url: /about/settings/analytics/
 ---
+
 {% include components/analytics-dashboard.html %}

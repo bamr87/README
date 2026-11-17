@@ -61,7 +61,9 @@ rewards:
   - CSS scoping and specificity management
   - Full-width layout techniques
 skill_focus: frontend
-source_file: jekyll-component-refactoring.md
+source_file: pages/_quests/0100/jekyll-component-refactoring.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/jekyll-component-refactoring.md
 sub_title: 'Level 0100 (4) Quest: Side Quest - Jekyll Theme Refactoring'
 tags:
 - '0100'
@@ -72,7 +74,7 @@ tags:
 - hands-on
 - refactoring
 - gamified-learning
-title: Create the include file
+title: 'The Artisan''s Forge: Refactoring Jekyll Theme Components'
 validation_criteria:
 - Nanobar renders from _config.yml settings without inline code
 - Footer section spans the full viewport width
@@ -412,7 +414,7 @@ Rebuild and confirm no nanobar appears and no build errors occur.
 ### What's Next?
 
 - **Side Quest:** [Profile Themes](/quests/0100/side-quests/profile-themes/) — Apply your CSS scoping skills to build full theme variants
-- **Main Quest:** [Frontend Docker](/quests/0100/frontend-docker/) — Containerise your development environment for cross-platform consistency
+- **Main Quest:** [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker]] — Containerise your development environment for cross-platform consistency
 - **Challenge:** Find another inline element in your theme and refactor it using the same pattern
 
 ## 📚 Resources
@@ -438,7 +440,7 @@ Rebuild and confirm no nanobar appears and no build errors occur.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Dockering Jekyll with Bootstrap 5]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0100/README|Level 0100 - Frontend Development & Docker]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0100/frontend-docker|Dockering Jekyll with Bootstrap 5]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -2,7 +2,9 @@
 gamename: krypton
 layout: default
 level: 3
-source_file: krypton3.md
+source_file: wargames/krypton/krypton3.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/krypton/krypton3.md
 title: Krypton3
 ---
 Level Info

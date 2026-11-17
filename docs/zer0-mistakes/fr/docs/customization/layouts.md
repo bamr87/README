@@ -19,7 +19,9 @@ permalink: /fr/docs/customization/layouts/
 preview: /images/previews/layouts.png
 sidebar:
   nav: docs
-source_file: layouts.md
+source_file: fr/docs/customization/layouts.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/customization/layouts.md
 tags:
 - layouts
 - templates
@@ -29,6 +31,7 @@ translated_from_sha: e61ed6fee085
 translation_of: pages/_docs/customization/layouts.md
 translation_source_url: /docs/customization/layouts/
 ---
+
 # Mises en page
 
 Les mises en page définissent la structure et l'apparence de vos pages. Le thème Zer0-Mistakes inclut plusieurs mises en page intégrées.
@@ -191,6 +194,6 @@ Pour les détails de niveau contributeur (hiérarchie des mises en page, hérita
 
 ## Voir aussi
 
-- [[Customization]]
-- [[Include Components]]
-- [[Liquid]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/pages/_docs/customization/includes|Include Components]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]

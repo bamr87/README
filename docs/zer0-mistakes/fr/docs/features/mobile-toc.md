@@ -14,17 +14,20 @@ permalink: /fr/docs/features/mobile-toc/
 preview: /images/previews/mobile-toc-floating-action-button.png
 sidebar:
   nav: docs
-source_file: mobile-toc.md
+source_file: fr/docs/features/mobile-toc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/mobile-toc.md
 tags:
 - mobile
 - toc
 - fab
 - responsive
-title: Bouton d'action flottant du sommaire mobile
+title: Bouton d'action flottant pour la table des matières mobile
 translated_from_sha: 0e7adef532b1
 translation_of: pages/_docs/features/mobile-toc.md
 translation_source_url: /docs/features/mobile-toc/
 ---
+
 # Bouton d'action flottant du sommaire mobile
 
 Le thème Zer0-Mistakes propose un sommaire mobile repensé avec un motif de bouton d'action flottant (FAB).
@@ -219,12 +222,12 @@ Le bouton annonce :
 
 ## Ressources associées
 
-- [Navigation par barre latérale](/docs/features/sidebar-navigation/)
-- [Table des matières](/docs/features/toc/)
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation par barre latérale]]
+- [[zer0-mistakes/pages/_docs/features/toc|Table des matières]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Table of Contents]]
-- [[Sidebar Navigation System]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-CMS/sites/zer0-pages/pages/_docs/features/toc|Table of Contents]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]

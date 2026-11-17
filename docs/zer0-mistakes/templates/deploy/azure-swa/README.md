@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: templates/deploy/azure-swa/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/deploy/azure-swa/README.md
 title: 'Deploy target: Azure Static Web Apps'
 ---
 # Deploy target: Azure Static Web Apps

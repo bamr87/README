@@ -7,9 +7,12 @@ permalink: /series/ulysses/03-proteus/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 03-proteus.md
-title: 03 Proteus
+source_file: examples/swerve-of-shore/pages/series/ulysses/03-proteus.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/03-proteus.md
+title: 03 · Proteus
 ---
+
 {% include page-header.html %}
 
 Episode 3 of *Ulysses*. 11am, Sandymount Strand.

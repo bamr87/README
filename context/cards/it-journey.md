@@ -1,5 +1,5 @@
 ---
-title: "IT-Journey"
+title: "README - it-journey"
 repo: bamr87/it-journey
 category: project-card
 kind: site
@@ -7,23 +7,23 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: b4a884c241073f8d
+source_fingerprint: aee0c54181705214
 tags:
   - agentic-ai
   - automation
-  - ci-cd
   - devops
+  - digital-artist
   - education
   - fail
+  - game-developer
   - gamified-learning
   - gh-600
   - hands-on
   - jekyll
   - level-0001
-  - main_quest
 ---
 
-# IT-Journey
+# README - it-journey
 
 > Educational IT platform with quests, blog posts, and technical documentation. Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.
 
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/it-journey` - 1345 docs |
+| Corpus | `docs/it-journey` - 554 docs |
 | External | no |
 
 ## Signals
@@ -43,18 +43,17 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~2,015,267 words across 1345 indexed documents
-- code samples in: bash, plaintext, yaml, markdown, powershell, python, mermaid, text
+- ~1,024,246 words across 554 indexed documents
+- code samples in: bash, plaintext, yaml, text, markdown, mermaid, powershell, python
 
 ## Navigation
 
-972 published pages in 99 sections (max depth 7) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
+554 published pages in 54 sections (max depth 5) — [browse the full map](../../docs/browse/it-journey.md) · [tree as JSON](../nav/it-journey.json)
 
-- **Repository & tooling** (233 pages)
+- **Repository & tooling** (54 pages)
 - **Data** (9 pages)
-- **Documentation** (54 pages)
-- **Home** (663 pages)
-- **Includes** (2 pages)
+- **Documentation** (40 pages)
+- **IT-Journey — Home** (441 pages)
 
 ## Key documents
 
@@ -65,7 +64,7 @@ tags:
 - [`CHANGELOG.md`](../../docs/it-journey/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/it-journey/SECURITY.md)
 - [`CODE_OF_CONDUCT.md`](../../docs/it-journey/CODE_OF_CONDUCT.md)
-- [`.github/copilot-instructions.md`](../../docs/it-journey/.github/copilot-instructions.md)
+- [`docs/ROADMAP.md`](../../docs/it-journey/docs/ROADMAP.md)
 
 ## Query this context
 

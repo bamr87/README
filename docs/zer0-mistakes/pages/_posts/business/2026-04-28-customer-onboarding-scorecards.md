@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:00:00+00:00
 layout: article
 preview: /images/previews/customer-onboarding-scorecards-that-reveal-revenue.png
-source_file: 2026-04-28-customer-onboarding-scorecards.md
+source_file: pages/_posts/business/2026-04-28-customer-onboarding-scorecards.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/business/2026-04-28-customer-onboarding-scorecards.md
 tags:
 - customer-success
 - onboarding
 - revenue
 - operations
-title: 2026 04 28 Customer Onboarding Scorecards
+title: Customer Onboarding Scorecards That Reveal Revenue Risk
 ---
+
 Customer onboarding is where a sale becomes a relationship. It is also where weak handoffs, unclear expectations, and missing data quietly turn into churn risk. A scorecard gives teams a shared way to see that risk early.
 
 The best scorecards are simple enough to update every week and specific enough to trigger action. They do not need to predict the future perfectly. They need to make the current state visible.

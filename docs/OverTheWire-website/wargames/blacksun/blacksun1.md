@@ -2,7 +2,9 @@
 gamename: blacksun
 layout: default
 level: 1
-source_file: blacksun1.md
+source_file: wargames/blacksun/blacksun1.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/blacksun1.md
 title: Blacksun1
 ---
 Level1 is a trivial stack buffer overflow. Note that you'll probably find it easier to use the compiled version than compiling it from source.

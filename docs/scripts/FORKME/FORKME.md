@@ -1,5 +1,7 @@
 ---
-source_file: FORKME.md
+source_file: FORKME/FORKME.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/FORKME/FORKME.md
 title: ForkMe - Advanced GitHub Repository Forking Utility
 ---
 # ForkMe - Advanced GitHub Repository Forking Utility

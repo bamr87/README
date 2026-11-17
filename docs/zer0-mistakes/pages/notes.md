@@ -3,9 +3,12 @@ description: Quick reference notes, cheatsheets, and command snippets for develo
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /notes/
-source_file: notes.md
+source_file: pages/notes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/notes.md
 title: Notes
 ---
+
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">

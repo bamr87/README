@@ -13,17 +13,20 @@ lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 machine_translated: true
 permalink: /fr/notes/git-cheatsheet/
-source_file: git-cheatsheet.md
+source_file: fr/notes/git-cheatsheet.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/notes/git-cheatsheet.md
 tags:
 - git
 - version-control
 - cheatsheet
 - reference
-title: Initialize a new repository
+title: Aide-mémoire des commandes Git
 translated_from_sha: 7bb8c6a30443
 translation_of: pages/_notes/git-cheatsheet.md
 translation_source_url: /notes/git-cheatsheet/
 ---
+
 ## Prise en main
 
 ### Initialiser et cloner

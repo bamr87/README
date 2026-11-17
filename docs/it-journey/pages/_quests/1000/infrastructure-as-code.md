@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - The foundation for automating Kubernetes clusters and full cloud stacks
 skill_focus: infrastructure
-source_file: infrastructure-as-code.md
+source_file: pages/_quests/1000/infrastructure-as-code.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/infrastructure-as-code.md
 sub_title: 'Level 1000 (8) Quest: Main Quest - Infrastructure as Code'
 tags:
 - '1000'
@@ -85,7 +87,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Install Terraform via the HashiCorp tap
+title: 'Infrastructure as Code: Terraform Fundamentals and State'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [AWS Essentials](/quests/1000/aws-essentials/) (the examples provision AWS resources)
+- [ ] Completion of [[it-journey/pages/_quests/1000/aws-essentials|AWS Essentials]] (the examples provision AWS resources)
 - [ ] Comfort with the terminal and editing text files
 - [ ] Basic Git for versioning your configurations
 
@@ -462,15 +464,15 @@ terraform output bucket_arn
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/) - Orchestrate containers atop the infrastructure you now automate
+- 🎯 [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]] - Orchestrate containers atop the infrastructure you now automate
 
 **Explore Side Adventures**:
-- ⚔️ [AWS Essentials](/quests/1000/aws-essentials/) - Revisit the services you are now automating
-- ⚔️ [Azure Ascension](/quests/1000/azure-ascension-jekyll-deployment/) - Apply IaC thinking to a managed platform deploy
+- ⚔️ [[it-journey/pages/_quests/1000/aws-essentials|AWS Essentials]] - Revisit the services you are now automating
+- ⚔️ [[it-journey/pages/_quests/1000/azure-ascension-jekyll-deployment|Azure Ascension]] - Apply IaC thinking to a managed platform deploy
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]]  
 **🏗️ System Engineer**: Master modules and remote state for team workflows  
 **🛡️ Security Specialist**: Audit state handling and secret management in your pipelines
 
@@ -502,6 +504,6 @@ terraform output bucket_arn
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[AWS Essentials: Core Services and Cloud Architecture Patterns]] **Unlocks:** [[Kubernetes Fundamentals: Container Orchestration Essentials]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[AWS Essentials: Core Services and Cloud Architecture Patterns]] **Unlocks:** [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals: Container Orchestration Essentials]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

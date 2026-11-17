@@ -71,7 +71,9 @@ rewards:
   - 📒 Reading spec sheets and part compatibility
   - 🧮 Budgeting a build as data
 skill_focus: infrastructure
-source_file: twin-rigs-01-the-war-chest.md
+source_file: pages/_quests/0010/twin-rigs-01-the-war-chest.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/twin-rigs-01-the-war-chest.md
 tags:
 - '0010'
 - hardware
@@ -80,8 +82,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: A rule of thumb only. The GPU maker's recommended PSU rating outranks this
-  line.
+title: 'The War Chest: Plan Two Rigs Before You Spend a Coin'
 validation_criteria:
   completion_requirements:
   - A ledger.json with real prices reports 0 problems
@@ -368,8 +369,8 @@ graph LR
 
 Your ledger is clean. Time to open the first box and raise a rig that fits in your hand.
 
-- ➡️ **Next chapter:** [Chapter II — The Rewind Cabinet](/quests/0011/twin-rigs-02-the-rewind-cabinet/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet|Chapter II — The Rewind Cabinet]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -380,6 +381,6 @@ Your ledger is clean. Time to open the first box and raise a rig that fits in yo
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Previous:** none — first chapter **Next:** [[The Rewind Cabinet: Raise a Healthy Raspberry Pi]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Previous:** none — first chapter **Next:** [[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet|The Rewind Cabinet: Raise a Healthy Raspberry Pi]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

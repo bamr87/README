@@ -9,13 +9,16 @@ lastmod: '2026-04-24T15:06:30Z'
 layout: default
 permalink: /docs/obsidian/
 preview: /images/previews/obsidian-vault-integration.png
-source_file: index.md
+source_file: pages/_docs/obsidian/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/index.md
 tags:
 - obsidian
 - authoring
 - workflow
 title: Obsidian Vault Integration
 ---
+
 # Obsidian Vault Integration
 
 The Zer0-Mistakes repository is a fully-functional [Obsidian](https://obsidian.md) vault. Open the repo root (or any subfolder containing notes) as a vault and every Markdown file is editable with Obsidian's wiki-links, embeds, callouts, graph view, and backlinks. The same files render on GitHub Pages with the equivalent presentation — no duplication, no separate sync step.
@@ -24,11 +27,11 @@ The Zer0-Mistakes repository is a fully-functional [Obsidian](https://obsidian.m
 
 | Page | What it covers |
 | --- | --- |
-| [Getting started](/docs/obsidian/getting-started/) | Open the repo as a vault, recommended plugins, frontmatter rules. |
-| [Syntax reference](/docs/obsidian/syntax-reference/) | Every Obsidian feature and how it renders on the site. |
-| [Graph view](/docs/obsidian/graph/) | Interactive force-directed map of every page and wiki-link. |
-| [Authoring workflow](/docs/obsidian/authoring-workflow/) | Daily note → commit → publish loop. |
-| [Troubleshooting](/docs/obsidian/troubleshooting/) | Broken links, missing embeds, conflicts. |
+| [[zer0-mistakes/pages/_docs/obsidian/getting-started\|Getting started]] | Open the repo as a vault, recommended plugins, frontmatter rules. |
+| [[zer0-mistakes/pages/_docs/obsidian/syntax-reference\|Syntax reference]] | Every Obsidian feature and how it renders on the site. |
+| [[zer0-mistakes/pages/_docs/obsidian/graph\|Graph view]] | Interactive force-directed map of every page and wiki-link. |
+| [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow\|Authoring workflow]] | Daily note → commit → publish loop. |
+| [[zer0-mistakes/pages/_docs/obsidian/troubleshooting\|Troubleshooting]] | Broken links, missing embeds, conflicts. |
 
 ## How it works
 
@@ -39,14 +42,14 @@ The integration has two pieces:
 2. **Client-side resolver.** `assets/js/obsidian-wiki-links.js` loads the
 index in the browser and rewrites `[[wiki-links]]`, `![[embeds]]`, inline `#tags`, and Obsidian callout blockquotes into Bootstrap-styled HTML. The result is indistinguishable from server-rendered output for readers, and lets the integration ship on plain GH Pages without a custom CI workflow.
 
-For users who self-build with vanilla Jekyll (no `github-pages` gem), an opt-in Ruby plugin (`_plugins/obsidian_links.rb`) performs the same transformations server-side for slightly better SEO. See the [syntax reference](/docs/obsidian/syntax-reference/) for the complete feature matrix.
+For users who self-build with vanilla Jekyll (no `github-pages` gem), an opt-in Ruby plugin (`_plugins/obsidian_links.rb`) performs the same transformations server-side for slightly better SEO. See the [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|syntax reference]] for the complete feature matrix.
 
 ## See also
 
-- [[Getting Started with the Obsidian Vault]]
-- [[Obsidian Syntax Reference]]
-- [[Obsidian Graph View]]
-- [[Obsidian Authoring Workflow]]
-- [[Obsidian Integration Troubleshooting]]
-- [[front-matter]]
-- [[Installation]]
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Getting Started with the Obsidian Vault]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow|Obsidian Authoring Workflow]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

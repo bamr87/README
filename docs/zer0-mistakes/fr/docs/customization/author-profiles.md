@@ -20,17 +20,20 @@ layout: default
 machine_translated: true
 permalink: /fr/docs/customization/author-profiles/
 preview: /images/previews/author-profiles-and-about-the-author-bylines.png
-source_file: author-profiles.md
+source_file: fr/docs/customization/author-profiles.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/customization/author-profiles.md
 tags:
 - authors
 - components
 - collections
 - seo
-title: Author Profiles
+title: Profils d'auteur et signatures « À propos de l'auteur »
 translated_from_sha: c6ab7cc3db38
 translation_of: pages/_docs/customization/author-profiles.md
 translation_source_url: /docs/customization/author-profiles/
 ---
+
 Le thème embarque un système d'auteurs unique et en couches, afin que chaque collection — articles, docs, notes, notebooks, quickstart, about, et toute autre que vous ajoutez — présente les auteurs de façon cohérente : une signature liée avec un avatar, une carte biographique « À propos de l'auteur », et une page de profil **interactive** par auteur qui agrège tout ce qu'ils ont écrit, avec des contrôles de filtrage / recherche / tri.
 
 > **Envie de contribuer ?** La [page Auteur invité](⟦1⟧)

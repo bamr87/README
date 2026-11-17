@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/templates/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/templates/README.md
 title: Documentation Templates
 ---
 # Documentation Templates

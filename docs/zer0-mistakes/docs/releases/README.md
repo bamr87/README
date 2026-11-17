@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/releases/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/releases/README.md
 title: Release Documentation
 ---
 # Release Documentation

@@ -72,7 +72,9 @@ rewards:
   - 💾 Flashing images and headless SSH setup
   - 🌡️ Reading temperature and throttle flags
 skill_focus: infrastructure
-source_file: twin-rigs-02-the-rewind-cabinet.md
+source_file: pages/_quests/0011/twin-rigs-02-the-rewind-cabinet.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet.md
 tags:
 - '0011'
 - raspberry-pi
@@ -82,7 +84,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: Advanced Options > Boot Order > NVMe/USB boot, then Finish
+title: 'The Rewind Cabinet: Raise a Healthy Raspberry Pi'
 validation_criteria:
   completion_requirements:
   - The Pi passes a ten-minute vigil with throttled=0x0
@@ -106,7 +108,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter I](/quests/0010/twin-rigs-01-the-war-chest/)** — your ledger and `twin-rigs` repository
+- **[[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|Chapter I]]** — your ledger and `twin-rigs` repository
 - **The Pi parts** — board, 27W supply, Active Cooler, case, microSD card, and micro-HDMI cable
 - **An SSH key on your fortress** — run `ssh-keygen -t ed25519` if you do not have one
 - **A network** — Ethernet is best, and you will want it for streaming in Chapter VIII
@@ -348,9 +350,9 @@ graph LR
 
 The cabinet is healthy but silent. Next you give it a library and a voice.
 
-- ➡️ **Next chapter:** [Chapter III — Waking the Arcade](/quests/0100/twin-rigs-03-waking-the-arcade/)
-- ⬅️ **Previous chapter:** [Chapter I — The War Chest](/quests/0010/twin-rigs-01-the-war-chest/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade|Chapter III — Waking the Arcade]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|Chapter I — The War Chest]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -360,6 +362,6 @@ The cabinet is healthy but silent. Next you give it a library and a voice.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0011 - Development Tools & AI Integration]] **Previous:** [[The War Chest: Plan Two Rigs Before You Spend a Coin]] **Next:** [[Waking the Arcade: Bring Rewind Arcade to Life on the Pi]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0011/README|Level 0011 - Development Tools & AI Integration]] **Previous:** [[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|The War Chest: Plan Two Rigs Before You Spend a Coin]] **Next:** [[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade|Waking the Arcade: Bring Rewind Arcade to Life on the Pi]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

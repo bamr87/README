@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: tools/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/tools/README.md
 title: bashcrawl tools
 ---
 # bashcrawl tools

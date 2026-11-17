@@ -3,7 +3,9 @@ date: '2025-10-12T20:17:00.000Z'
 description: Organization of the IT-Journey about pages and content structure
 lastmod: '2025-01-13T00:00:00.000Z'
 permalink: /about/readme/
-source_file: README.md
+source_file: pages/_about/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/README.md
 title: IT-Journey About Section
 ---
 # IT-Journey About Section
@@ -70,10 +72,10 @@ Visit the **[Zer0-Mistakes Theme Documentation](https://github.com/bamr87/zer0-m
 
 ### Key Pages
 
-- **[About IT-Journey](/about/)** - Mission, vision, and core principles
-- **[Learning Features](/about/features/)** - Platform capabilities
-- **[Contributing](/about/contributing/)** - How to get involved
-- **[Purpose](/about/purpose/)** - Educational mission statement
+- **[[it-journey/pages/_about/about|About IT-Journey]]** - Mission, vision, and core principles
+- **[[it-journey/pages/_about/features/index|Learning Features]]** - Platform capabilities
+- **[[it-journey/pages/_about/contribute/contributing|Contributing]]** - How to get involved
+- **[[it-journey/docs/purpose-page-rewrite|Purpose]]** - Educational mission statement
 
 ## Complementary Relationship
 

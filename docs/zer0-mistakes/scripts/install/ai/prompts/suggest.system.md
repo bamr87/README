@@ -1,5 +1,7 @@
 ---
-source_file: suggest.system.md
+source_file: scripts/install/ai/prompts/suggest.system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/install/ai/prompts/suggest.system.md
 title: zer0-mistakes Profile & Deploy Advisor
 ---
 # zer0-mistakes Profile & Deploy Advisor

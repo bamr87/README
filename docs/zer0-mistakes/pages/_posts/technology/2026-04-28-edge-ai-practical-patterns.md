@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:30:00+00:00
 layout: article
 preview: /images/previews/edge-ai-in-the-real-world-practical-patterns-for-s.png
-source_file: 2026-04-28-edge-ai-practical-patterns.md
+source_file: pages/_posts/technology/2026-04-28-edge-ai-practical-patterns.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/technology/2026-04-28-edge-ai-practical-patterns.md
 tags:
 - edge-ai
 - machine-learning
 - embedded-systems
 - privacy
-title: 2026 04 28 Edge Ai Practical Patterns
+title: 'Edge AI in the Real World: Practical Patterns for Small Models'
 ---
+
 Not every AI workload belongs in a cloud data center. Some decisions need to happen near the sensor, the machine, the vehicle, or the person. That is where edge AI earns its place.
 
 Edge AI means running models on local devices rather than sending every request to a remote API. The model may be smaller, but the product can be faster, more private, and more resilient.

@@ -17,13 +17,16 @@ permalink: /docs/customization/layouts/
 preview: /images/previews/layouts.png
 sidebar:
   nav: docs
-source_file: layouts.md
+source_file: pages/_docs/customization/layouts.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/layouts.md
 tags:
 - layouts
 - templates
 - jekyll
 title: Layouts
 ---
+
 # Layouts
 
 Layouts define the structure and appearance of your pages. The Zer0-Mistakes theme includes several built-in layouts.
@@ -186,6 +189,6 @@ For contributor-level details (layout hierarchy, Liquid template inheritance, si
 
 ## See also
 
-- [[Customization]]
-- [[Include Components]]
-- [[Liquid]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/pages/_docs/customization/includes|Include Components]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]

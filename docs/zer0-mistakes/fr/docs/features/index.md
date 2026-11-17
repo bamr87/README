@@ -14,7 +14,9 @@ permalink: /fr/docs/features/
 preview: /images/previews/features.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/features/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/index.md
 tags:
 - features
 - configuration
@@ -23,6 +25,7 @@ translated_from_sha: 5ad1befc459d
 translation_of: pages/_docs/features/index.md
 translation_source_url: /docs/features/
 ---
+
 # Fonctionnalités
 
 Le thème Zer0-Mistakes inclut plusieurs fonctionnalités optionnelles qui enrichissent votre site. Chaque fonctionnalité peut être activée par page à l'aide du front matter.
@@ -175,7 +178,7 @@ Choisissez une fonctionnalité pour en savoir plus :
 
 ## Voir aussi
 
-- [[Customization]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
 - [[Bootstrap Integration]]
-- [[Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]
 - [[SEO]]

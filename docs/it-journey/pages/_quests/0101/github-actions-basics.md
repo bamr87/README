@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Ability to automate any task on GitHub events
 skill_focus: devops
-source_file: github-actions-basics.md
+source_file: pages/_quests/0101/github-actions-basics.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/github-actions-basics.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - GitHub Actions Basics'
 tags:
 - '0101'
@@ -84,7 +86,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install the GitHub CLI to view runs from your terminal
+title: 'GitHub Actions Basics: Workflow Automation for Modern DevOps'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -422,17 +424,17 @@ A 2 × 3 grid is six jobs; the `exclude:` above drops one, leaving **five parall
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Testing Integration](/quests/0101/testing-integration/) - Add real test gates to your workflow
+- 🎯 [[it-journey/pages/_quests/0101/testing-integration|Testing Integration]] - Add real test gates to your workflow
 
 **Explore Side Adventures**:
-- ⚔️ [Secrets Management](/quests/0101/secrets-management/) - Credentials done right
-- ⚔️ [Workflow Optimization](/quests/0101/workflow-optimization/) - Make it fast
+- ⚔️ [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]] - Credentials done right
+- ⚔️ [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]] - Make it fast
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Testing Integration](/quests/0101/testing-integration/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/testing-integration|Testing Integration]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -461,6 +463,6 @@ A 2 × 3 grid is six jobs; the `exclude:` above drops one, leaving **five parall
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] · [[Secrets Management: Secure Configuration and Credential Handling]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] · [[Secrets Management: Secure Configuration and Credential Handling]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

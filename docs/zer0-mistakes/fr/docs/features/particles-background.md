@@ -14,7 +14,9 @@ permalink: /fr/docs/features/particles-background/
 preview: /images/previews/particles-background.png
 sidebar:
   nav: docs
-source_file: particles-background.md
+source_file: fr/docs/features/particles-background.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/particles-background.md
 tags:
 - ui
 - animation
@@ -25,6 +27,7 @@ translated_from_sha: 815b5d59e622
 translation_of: pages/_docs/features/particles-background.md
 translation_source_url: /docs/features/particles-background/
 ---
+
 # Arrière-plan de particules
 
 Un champ de particules animé optionnel qui se place derrière le contenu des sections hero et d'accueil, ajoutant un mouvement subtil et de la profondeur. Les particules dérivent, se connectent et réagissent au curseur, et tout l'effet se configure à partir d'un seul fichier JSON.
@@ -51,4 +54,4 @@ Le runtime intégré [`assets/js/particles.js`](https://github.com/bamr87/zer0-m
 
 ## Fonctionnalités connexes
 
-- [Modes de couleur du thème](/docs/features/color-modes/)
+- [[zer0-mistakes/pages/_docs/features/color-modes|Modes de couleur du thème]]

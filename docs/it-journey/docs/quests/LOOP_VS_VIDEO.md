@@ -1,5 +1,7 @@
 ---
-source_file: LOOP_VS_VIDEO.md
+source_file: docs/quests/LOOP_VS_VIDEO.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/quests/LOOP_VS_VIDEO.md
 title: Perfection loop vs. the video it produces — a side-by-side run
 ---
 # Perfection loop vs. the video it produces — a side-by-side run

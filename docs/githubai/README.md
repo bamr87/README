@@ -1,0 +1,161 @@
+---
+source_file: README.md
+source_repo: bamr87/githubai
+source_url: https://github.com/bamr87/githubai/blob/main/README.md
+title: GitHubAI — the Claude Code SDLC framework
+---
+# GitHubAI — the Claude Code SDLC framework
+
+> Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.
+
+[![CI](https://github.com/bamr87/githubai/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/githubai/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/githubai)](LICENSE)
+
+## Overview
+
+Wire [Claude Code](https://claude.com/claude-code) into every stage of a repository's lifecycle with one install command. Claude triages every issue, implements approved work, reviews every PR, safely auto-merges minor updates, runs weekly maintenance, and drafts releases — as GitHub Actions, with **Claude Code OAuth as the default auth**, no servers required.
+
+GitHubAI is three things at once:
+
+- **A framework** — reusable, hardened workflows and a composite action you reference at a ref, so every adopting repo upgrades by bumping one tag.
+- **A template** — repo-type profiles (library, webapp, service, cli, github-action, docs, data, template) that set standards based on what your repo *is* and what it's *for*.
+- **A GitHub App** — a [multi-tenant webhook relay](app/) that routes org-wide events into the same workflows, with org-level policy and a read-only activity dashboard, for orgs that would rather install once than add stubs everywhere.
+
+## Features
+
+Seven workflows cover the lifecycle, from first issue to release:
+
+| Workflow | Trigger | What Claude does |
+|----------|---------|------------------|
+| [`claude.yml`](dot-github/workflows/claude.yml) | `@claude` mention, issue assignment | Interactive: answers, fixes, implements whatever you ask |
+| [`claude-triage.yml`](dot-github/workflows/claude-triage.yml) | issue opened/reopened | Labels type/priority/size, finds duplicates, asks clarifying questions |
+| [`claude-implement.yml`](dot-github/workflows/claude-implement.yml) | `claude:implement` label | Builds the issue on a branch, runs your tests, opens a PR |
+| [`claude-review.yml`](dot-github/workflows/claude-review.yml) | PR opened/ready, `claude:review` label | Reviews against your repo type's standards, inline comments + verdict |
+| [`claude-auto-merge.yml`](dot-github/workflows/claude-auto-merge.yml) | `claude:auto-merge` label, trusted bot PRs | Read-only safety verdict; approves and enables auto-merge only for low-risk minor changes |
+| [`claude-maintenance.yml`](dot-github/workflows/claude-maintenance.yml) | weekly cron, manual | Docs drift, TODO sweep, dependency report, stale nudges, health report |
+| [`claude-release.yml`](dot-github/workflows/claude-release.yml) | tag push, manual | Categorized release notes; version-bump release PRs |
+
+Each workflow doubles as a reusable workflow (`workflow_call`), which is exactly how installed repos consume them: behavior in [docs/workflows.md](docs/workflows.md), the generated input/permission contract in [docs/reference/workflows.md](docs/reference/workflows.md).
+
+## Quick start
+
+Adopt it in any repo in about two minutes:
+
+```bash
+# from your repo's root
+curl -fsSL https://raw.githubusercontent.com/bamr87/githubai/main/setup/install.sh | bash -s -- --labels
+
+# authenticate: Claude Code OAuth token is the default for every workflow
+claude setup-token
+gh secret set CLAUDE_CODE_OAUTH_TOKEN
+```
+
+Then install the [Claude GitHub App](https://github.com/apps/claude) on the repo, set `repo.purpose` in the generated `.github/githubai.yml`, and open an issue — Claude triages it within minutes. Full walkthrough: [docs/getting-started.md](docs/getting-started.md).
+
+## How it works
+
+```mermaid
+flowchart LR
+    I[Issue opened] --> T[Claude triages<br/>labels, dedupe, questions]
+    T -->|"claude:implement" label| M[Claude implements<br/>branch + PR]
+    M --> R[Claude reviews<br/>standards + inline findings]
+    H[Human PRs] --> R
+    D[dependabot / renovate] --> A[Claude safety gate<br/>structured verdict]
+    R -->|minor + clean| A
+    A -->|approve + auto-merge<br/>waits for checks| G[Merged]
+    S[Weekly cron] --> W[Claude maintenance<br/>docs drift, TODOs, health]
+    V[Tag push] --> N[Claude release notes]
+```
+
+Every box runs `anthropics/claude-code-action@v1` authenticated OAuth-first, and every prompt is grounded in your repo's resolved standards: framework defaults ← repo-type profile ← your `.github/githubai.yml`.
+
+## Standards from repo type and purpose
+
+The [profiles](profiles/) encode what "good" means per repo type — a library gets semver-compatibility review focus, a webapp gets migration-safety and security focus, a GitHub Action repo gets injection and pinning focus. Your `.github/githubai.yml` picks the type, states the purpose, and overrides anything:
+
+```yaml
+repo:
+  type: library
+  purpose: "Date-parsing library consumed by our billing services."
+automation:
+  auto_merge:
+    enabled: true            # dependabot patch bumps merge themselves when green
+standards:
+  test_command: npm test
+```
+
+Schema reference: [docs/configuration.md](docs/configuration.md). Labels are the control plane: `claude:implement` authorizes work, `claude:auto-merge` nominates a PR for the merge lane, `claude:skip` opts anything out, `claude:needs-human` is Claude escalating to you.
+
+## Auth: Claude Code OAuth by default
+
+Every workflow authenticates with `CLAUDE_CODE_OAUTH_TOKEN` (from `claude setup-token` — included in Claude subscriptions) and falls back to `ANTHROPIC_API_KEY` only when the OAuth token is absent. One org-level secret can power every repo. Threat model, permissions, and the auto-merge safety design: [docs/security.md](docs/security.md).
+
+## Org-scale: app mode
+
+Installing stubs in fifty repositories is fine; governing fifty repositories from fifty files is not. [App mode](app/README.md) swaps the per-repo event stubs for one GitHub App: events reach a small Cloudflare Worker that verifies them, applies your organization's policy, and fires `repository_dispatch` into each repo's workflows. What it does **not** change is where Claude runs or whose token it uses — execution stays in each repository's own Actions with that repository's own `CLAUDE_CODE_OAUTH_TOKEN`. The relay holds no code, no credentials, and no model traffic ([full inventory](app/DATA-HANDLING.md)).
+
+Org policy lives in your own `.github` repository as `.github/githubai-org.yml` and is subtractive by design — it can keep events from reaching repositories, never grant a repository something its own config disabled:
+
+```yaml
+org:
+  repos:
+    exclude: ["legacy-*"]     # these repos see no automation
+automation:
+  auto_merge:
+    enabled: false            # no repo in this org enters the auto-merge lane
+```
+
+Signing in to the relay shows what it did with every delivery — dispatched, ignored, blocked by policy, or failed — which is the one question a router owes you. Deploy it with [`app/OPERATIONS.md`](app/OPERATIONS.md); it runs on Cloudflare's free tier.
+
+## Migrating from GitHubAI v0.x
+
+The Django/React application that previously lived here (last release v0.5.3) was replaced by this framework; every v0 capability has a lighter successor. See [docs/migration-v0.md](docs/migration-v0.md).
+
+## Documentation
+
+The [docs index](docs/README.md) lists every document with a one-line summary: [getting started](docs/getting-started.md), the [configuration schema](docs/configuration.md), [workflow behavior](docs/workflows.md), the [security model](docs/security.md), [architecture](docs/architecture.md), and the generated [workflow contract](docs/reference/workflows.md) and [label taxonomy](docs/reference/labels.md).
+
+## Project structure
+
+```text
+.github/workflows/   the framework: reusable claude-*.yml + this repo's CI
+actions/load-config/ composite action resolving profile + repo config
+profiles/            repo-type standards (the "based on type and purpose" part)
+template/            what the installer copies into adopting repos
+setup/install.sh     the one-command installer
+app/                 GitHub App: manifest, multi-tenant relay, operations docs
+docs/                getting started, configuration, workflows, security, architecture; reference/ is generated
+tests/               self-tests keeping the framework honest
+tools/               docs generators and the vendored markdown prose gate
+ai-seed/             the imported ai-seed project (see below)
+```
+
+This repo runs its own framework — the workflows above are live here, configured by [.github/githubai.yml](dot-github/githubai.yml) with the `template` profile. If the machinery doesn't work on itself, it doesn't ship.
+
+[`ai-seed/`](ai-seed/) is [bamr87/ai-seed](https://github.com/bamr87/ai-seed) — a plantable kernel that lets a repository germinate from a written concept and grow one draft PR at a time — imported with its full history. It is reference material, not part of the framework: its workflows sit under `ai-seed/.github/workflows/` and never run from a subdirectory, and its tests are outside this repo's `testpaths`. Run it from that directory (`cd ai-seed && python3 tools/seed.py --help`).
+
+## Development
+
+```bash
+pip install -r requirements-dev.txt
+python3 -m pytest -q                       # structure + convention tests (incl. generated docs freshness)
+(cd app/relay && npm test)                 # relay tests: Node 20+, no dependencies, no Cloudflare account
+```
+
+The full command list, conventions, sync duties and invariants for humans and AI agents live in [AGENTS.md](AGENTS.md).
+
+## Contributing
+
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents start with [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports it for Claude Code.
+
+## Changelog
+
+Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md); the full record is in the [commit history](https://github.com/bamr87/githubai/commits/main).
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+<!-- bamr87-portfolio-footer -->
+Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

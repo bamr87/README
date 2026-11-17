@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/1010/
 preview: /images/previews/level-1010-automation-testing.webp
-source_file: README.md
+source_file: pages/_quests/1010/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/README.md
 tags:
 - quests
 - '1010'
 - warrior
 - monitoring
 - observability
-title: 'Level 1010: Automation & Testing'
+title: Level 1010 - Automation & Testing
 ---
 # Level 1010: Automation & Testing
 
@@ -38,12 +40,12 @@ Level 1010 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Alerting Systems: PagerDuty Integration & Incident Management Guide](/quests/1010/alerting-systems/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Link to the Future: Automated Hyperlink Guardian Quest](/quests/1010/automated-hyperlink-guardian/) | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
-| [Distributed Tracing: Jaeger & OpenTelemetry Implementation Guide](/quests/1010/distributed-tracing/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [ELK Stack Tutorial: Elasticsearch, Logstash & Kibana for Log Analysis](/quests/1010/elk-stack/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
-| [Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability](/quests/1010/monitoring-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Prometheus & Grafana: Complete Metrics Collection & Visualization Tutorial](/quests/1010/prometheus-grafana/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/alerting-systems\|Alerting Systems: PagerDuty Integration & Incident Management Guide]] | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/link-to-the-future-automated-hyperlink-checking-and-error-reporting\|Link to the Future: Automated Hyperlink Guardian Quest]] | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/distributed-tracing\|Distributed Tracing: Jaeger & OpenTelemetry Implementation Guide]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/elk-stack\|ELK Stack Tutorial: Elasticsearch, Logstash & Kibana for Log Analysis]] | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/monitoring-fundamentals\|Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1010/prometheus-grafana\|Prometheus & Grafana: Complete Metrics Collection & Visualization Tutorial]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 🔗 Automated Validation

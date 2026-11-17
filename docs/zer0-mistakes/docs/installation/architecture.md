@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'The layered installer architecture: bootstrap script, CLI dispatcher,
   focused library modules, declarative YAML profiles, and pluggable deploy targets.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: architecture.md
+source_file: docs/installation/architecture.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/architecture.md
 tags:
 - installation
 - setup
 title: Installer Architecture
 ---
+
 # Installer Architecture
 
 The installer is layered: a thin **bootstrap** (legacy `install.sh` for `curl | bash`) hands off to a **CLI dispatcher** (`scripts/bin/install`), which loads **focused library modules** from `scripts/lib/install/`, which read **declarative YAML profiles** from `templates/profiles/`, which can attach **pluggable deploy modules** from `scripts/lib/install/deploy/`.

@@ -1,5 +1,7 @@
 ---
-source_file: CONTENT_GUIDELINES.md
+source_file: docs/standards/CONTENT_GUIDELINES.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/standards/CONTENT_GUIDELINES.md
 title: Content Guidelines
 ---
 # Content Guidelines

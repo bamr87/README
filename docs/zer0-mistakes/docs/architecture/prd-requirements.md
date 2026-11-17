@@ -6,15 +6,18 @@ date: 2026-04-11 00:00:00+00:00
 description: 'Full PRD for the zer0-mistakes Jekyll theme: vision, user personas,
   feature requirements, technical architecture, and design specifications.'
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: prd-requirements.md
+source_file: docs/architecture/prd-requirements.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/prd-requirements.md
 status: Active
 tags:
 - architecture
 - product
 - prd
 - requirements
-title: '🚀 Product Requirements Document: zer0-mistakes Jekyll Theme'
+title: Product Requirements Document
 ---
+
 # 🚀 Product Requirements Document: zer0-mistakes Jekyll Theme
 
 ## 📋 Executive Summary

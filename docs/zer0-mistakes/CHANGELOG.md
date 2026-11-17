@@ -1,5 +1,7 @@
 ---
 source_file: CHANGELOG.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/CHANGELOG.md
 title: Changelog
 ---
 # Changelog
@@ -1888,7 +1890,7 @@ off the `data-repo` attribute, not the page origin, so the iframe renders and re
   build-time utility ([`scripts/translate.rb`](scripts/translate.rb),
   Claude Code OAuth with API-key fallback, stdlib-only Ruby) generates the
   alternates and the
-  [`translate.yml`](.github/workflows/translate.yml) workflow commits them
+  [`translate.yml`](dot-github/workflows/translate.yml) workflow commits them
   via PR — one large `mode=full` dispatch job for the initial conversion,
   plus bounded incremental runs whenever English content changes on `main`:
   - Generated artifacts: `fr/**` page files (plain Jekyll pages with
@@ -2189,7 +2191,7 @@ off the `data-repo` attribute, not the page origin, so the iframe renders and re
 
 - **color_mode_default config knob** — new `color_mode_default` setting (`dark` | `light` | `auto`, default `auto`) in `_config.yml` controls Bootstrap's `data-bs-theme` both server-side (in `_layouts/root.html`) and client-side. An early inline script (`_includes/core/color-mode-init.html`, loaded before Bootstrap CSS) applies the correct theme before any `[data-bs-theme]` selector is evaluated, preventing FOUC. `localStorage["theme"]` (the Appearance panel override) always wins over the config default. `auto` follows `prefers-color-scheme` — backward-compatible with the previous behaviour. (evidence: [`test/visual/evidence/color-mode-default/`](test/visual/evidence/color-mode-default/README.md))
 - **feature provenance** — every entry in the feature registry (`_data/features.yml`) gained a `provenance:` block (`introduced_in` / `pr` / `commit` / `issue`) tracing the feature to the change that shipped it, surfaced on `/features/` as a `PR #N · <commit>` line on each card and a new **Provenance** column in the reference table. A registry-validation gate (`scripts/validate-features.rb`, the `features` test suite) now requires provenance on every active feature. (evidence: [`test/visual/evidence/features-provenance/`](test/visual/evidence/features-provenance/README.md))
-- **feature registry coverage** — reconciled the registry against the codebase: added 16 previously-undocumented features (ZER0-061…076 — author profiles, news/section/article layouts, theme-skins customizer, nanobar, setup wizard, table-CSV copy, share actions, archives, component showcase, and the AI-content-review / giscus-digest / evidence-gate / autonomous-pipeline / secret-scan workflows), each with provenance + a regression-test link. Every active feature now also declares a `tests:` block (`scripts/validate-features.rb` hard-enforces both provenance and tests), and the governance in [`features.instructions.md`](.github/instructions/features.instructions.md) requires them on every new entry.
+- **feature registry coverage** — reconciled the registry against the codebase: added 16 previously-undocumented features (ZER0-061…076 — author profiles, news/section/article layouts, theme-skins customizer, nanobar, setup wizard, table-CSV copy, share actions, archives, component showcase, and the AI-content-review / giscus-digest / evidence-gate / autonomous-pipeline / secret-scan workflows), each with provenance + a regression-test link. Every active feature now also declares a `tests:` block (`scripts/validate-features.rb` hard-enforces both provenance and tests), and the governance in [`features.instructions.md`](dot-github/instructions/features.instructions.md) requires them on every new entry.
 ### Bug Fixes
 
 * **search:** existence-gate search modal form action to `/sitemap/` only when that page is present in the build; falls back to `#` (safe no-op) for remote-theme Pages consumers without a `/sitemap/` stub (closes [#202](https://github.com/bamr87/zer0-mistakes/issues/202))

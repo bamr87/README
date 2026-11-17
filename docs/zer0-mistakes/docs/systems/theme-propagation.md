@@ -7,13 +7,16 @@ description: How a zer0-mistakes release reaches the downstream sites built on i
   — the consumer registry, the release fan-out, and the manifest contract underneath
   both.
 lastmod: 2026-09-03 00:00:00+00:00
-source_file: theme-propagation.md
+source_file: docs/systems/theme-propagation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/theme-propagation.md
 tags:
 - systems
 - automation
 - release
-title: Theme propagation
+title: Theme Propagation
 ---
+
 # Theme propagation
 
 How a zer0-mistakes release reaches the sites built on it.

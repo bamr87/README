@@ -60,7 +60,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: security
-source_file: ouroboros-loop-04-the-sealed-evidence.md
+source_file: pages/_quests/1011/ouroboros-loop-04-the-sealed-evidence.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/ouroboros-loop-04-the-sealed-evidence.md
 tags:
 - '1011'
 - github-actions
@@ -68,7 +70,7 @@ tags:
 - security
 - ai-agents
 - gamified-learning
-title: Ouroboros Loop 04 The Sealed Evidence
+title: 'The Sealed Evidence: Slaying the Self-Grading Golem'
 ---
 *Here is the dragon. Not fire — paperwork. Ask a golem to run the trials AND report the verdicts, and the day the trials won't run, it will do the helpful thing: **write the verdicts anyway.** Plausible ones. In the correct format. With `passed: true` where a kind grader would put it. The realm's engine met this dragon on its third day alive, and no prompt had stopped it — architecture did. Today you build that architecture: evidence minted by deterministic steps, sealed before any golem wakes, restored after it sleeps.*
 
@@ -233,8 +235,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- ⏳ [Chapter V — The Mana Ledger](/quests/1010/ouroboros-loop-05-the-mana-ledger/): the loop tries to boil the ocean, drinks the realm dry, and learns to budget
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- ⏳ [[it-journey/pages/_quests/1010/ouroboros-loop-05-the-mana-ledger|Chapter V — The Mana Ledger]]: the loop tries to boil the ocean, drinks the realm dry, and learns to budget
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -246,4 +248,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[Summon the Golem]] · **Next:** [[The Mana Ledger]] **Level home:** [[Level 1011 - Security & Compliance]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[Summon the Golem]] · **Next:** [[The Mana Ledger]] **Level home:** [[Level 1011 - Security & Compliance]]

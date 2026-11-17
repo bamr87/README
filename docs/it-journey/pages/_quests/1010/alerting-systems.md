@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Completes the Level 1010 Monitoring & Observability quest line
 skill_focus: devops
-source_file: alerting-systems.md
+source_file: pages/_quests/1010/alerting-systems.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/alerting-systems.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Alerting Systems'
 tags:
 - '1010'
@@ -83,7 +85,7 @@ tags:
 - main_quest
 - devops
 - hands-on
-title: 'Bring up the lab (compose file below), then open the UIs:'
+title: 'Alerting Systems: Alertmanager, Routing, On-Call & Runbooks'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] SLIs, SLOs, and error budgets (complete [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) first)
+- [ ] SLIs, SLOs, and error budgets (complete [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] first)
 - [ ] Comfort reading and writing YAML
 - [ ] Basic PromQL, or willingness to read the worked examples carefully
 
@@ -445,17 +447,17 @@ A runbook turns a panicked guess into a checklist. After the incident, a blamele
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Security Fundamentals](/quests/1011/security-fundamentals/) - Cross into the Security & Compliance tier
+- 🎯 [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] - Cross into the Security & Compliance tier
 
 **Explore Side Adventures**:
-- ⚔️ [Distributed Tracing](/quests/1010/distributed-tracing/) - Use traces to enrich incident response
-- ⚔️ [ELK Stack](/quests/1010/elk-stack/) - Correlate alerts with the logs behind them
+- ⚔️ [[it-journey/pages/_quests/1010/distributed-tracing|Distributed Tracing]] - Use traces to enrich incident response
+- ⚔️ [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]] - Correlate alerts with the logs behind them
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Security Fundamentals](/quests/1011/security-fundamentals/)  
-**🏗️ System Engineer**: Revisit [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) to tighten SLOs  
-**🛡️ Security Specialist**: Advance to [Security Fundamentals](/quests/1011/security-fundamentals/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] to tighten SLOs  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]]
 
 ## 📚 Resources
 
@@ -485,6 +487,6 @@ A runbook turns a panicked guess into a checklist. After the incident, a blamele
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

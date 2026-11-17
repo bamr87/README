@@ -8,13 +8,16 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/stats/
 preview: /images/previews/site-statistics-portal.png
-source_file: stats.md
+source_file: fr/about/stats.md
 source_icon: bi-bar-chart-line
-title: Stats
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/stats.md
+title: Portail de statistiques du site
 translated_from_sha: 06c9f7519562
 translation_of: pages/_about/stats.md
 translation_source_url: /about/stats/
 ---
+
 {% include stats/stats-header.html %}
 
 {% if site.data.content_statistics %}

@@ -15,7 +15,9 @@ permalink: /fr/docs/features/vendored-assets/
 preview: /images/previews/vendored-bootstrap-icon-assets.png
 sidebar:
   nav: docs
-source_file: vendored-assets.md
+source_file: fr/docs/features/vendored-assets.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/vendored-assets.md
 tags:
 - bootstrap
 - assets
@@ -27,6 +29,7 @@ translated_from_sha: e2786f28998b
 translation_of: pages/_docs/features/vendored-assets.md
 translation_source_url: /docs/features/vendored-assets/
 ---
+
 # Ressources Bootstrap et icônes intégrées (vendored)
 
 Le CSS/JS de Bootstrap 5.3.3 et les Bootstrap Icons sont **committés** sous `assets/vendor/` plutôt que chargés depuis un CDN. Cela garantit :
@@ -35,7 +38,7 @@ Le CSS/JS de Bootstrap 5.3.3 et les Bootstrap Icons sont **committés** sous `as
 - **Développement hors ligne** — fonctionne sans connexion internet
 - **Verrouillage des versions** — pas de mises à jour CDN inattendues cassant le thème
 
-Pour tous les détails sur l'actualisation des fichiers vendor, consultez le [guide des ressources Vendor](/docs/development/vendor-assets/).
+Pour tous les détails sur l'actualisation des fichiers vendor, consultez le [[zer0-mistakes/pages/_docs/development/vendor-assets|guide des ressources Vendor]].
 
 ## Organisation des répertoires
 
@@ -108,11 +111,11 @@ Placez les surcharges CSS spécifiques au site dans `assets/css/user-overrides.c
 
 ## Voir aussi
 
-- [Ressources Vendor (guide du mainteneur)](/docs/development/vendor-assets/)
-- [Intégration de Bootstrap](/docs/bootstrap/)
-- [Mises à jour des dépendances](/docs/development/dependency-updates/)
+- [[zer0-mistakes/pages/_docs/development/vendor-assets|Ressources Vendor (guide du mainteneur)]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Intégration de Bootstrap]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Mises à jour des dépendances]]
 
 ## Voir aussi
 
 - [[Bootstrap Integration]]
-- [[Development]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

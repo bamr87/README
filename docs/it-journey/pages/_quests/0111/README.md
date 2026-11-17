@@ -15,7 +15,9 @@ local_graph: false
 mermaid: true
 permalink: /quests/0111/
 preview: /images/previews/level-0111-api-development.png
-source_file: README.md
+source_file: pages/_quests/0111/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/README.md
 tags:
 - '0111'
 - api
@@ -187,12 +189,12 @@ Upon completing all core quests:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [API Authentication: OAuth, JWT, and API Keys Implementation](/quests/0111/api-authentication/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [API Documentation: OpenAPI Specification and Developer Experience](/quests/0111/api-documentation/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [API Fundamentals: Building Web Services and HTTP APIs](/quests/0111/api-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [API Versioning: Managing API Evolution and Backwards Compatibility](/quests/0111/api-versioning/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Error Handling: API Response Patterns and HTTP Status Codes](/quests/0111/error-handling/) | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [Rate Limiting: API Traffic Control and Throttling Strategies](/quests/0111/rate-limiting/) | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [REST Principles: RESTful API Design Best Practices](/quests/0111/rest-principles/) | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/api-authentication\|API Authentication: OAuth, JWT, and API Keys Implementation]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/api-documentation\|API Documentation: OpenAPI Specification and Developer Experience]] | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/api-fundamentals\|API Fundamentals: Building Web Services and HTTP APIs]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/api-versioning\|API Versioning: Managing API Evolution and Backwards Compatibility]] | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/error-handling\|Error Handling: API Response Patterns and HTTP Status Codes]] | 🔴 Hard | 45-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/rate-limiting\|Rate Limiting: API Traffic Control and Throttling Strategies]] | 🔴 Hard | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0111/rest-principles\|REST Principles: RESTful API Design Best Practices]] | 🔴 Hard | 75-90 minutes | main_quest | 🔮 Placeholder |
 
 

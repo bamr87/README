@@ -10,7 +10,9 @@ draft: false
 lastmod: '2026-05-17T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/mcp-quickref/
-source_file: mcp-quickref.md
+source_file: pages/_notes/gh-600/mcp-quickref.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/mcp-quickref.md
 tags:
 - gh-600
 - mcp
@@ -93,4 +95,4 @@ In Copilot Chat, test with: `@github list my open issues in {owner}/{repo}`
 
 ---
 
-*Part of: [[GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[The MCP Conclave: Mastering Model Context Protocol Servers]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*
+*Part of: [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*

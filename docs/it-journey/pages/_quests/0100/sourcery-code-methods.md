@@ -55,7 +55,9 @@ rewards:
 - 🛠️ GitHub Automation Expertise
 - 🎯 Professional Collaboration Skills
 skill_focus: fullstack
-source_file: sourcery-code-methods.md
+source_file: pages/_quests/0100/sourcery-code-methods.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/sourcery-code-methods.md
 sub_title: 'Level 0100 (4) Quest: Source Control and Collaboration Mastery'
 tags:
 - '0100'
@@ -64,7 +66,7 @@ tags:
 - version-control
 - collaboration
 - workflow-mastery
-title: Install Git using Homebrew (the macOS package enchantment)
+title: 'Quest: Mastering the Ancient Arts of Source Control Sorcery'
 validation_criteria:
 - Successfully demonstrate branching and merging workflows
 - Create professional pull request with proper documentation
@@ -605,7 +607,7 @@ jobs:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0100/README|Level 0100 - Frontend Development & Docker]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

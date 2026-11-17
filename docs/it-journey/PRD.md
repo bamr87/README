@@ -7,10 +7,13 @@ generator: prd-machine
 lastmod: 2026-03-30 19:01:29+00:00
 repository: https://github.com/bamr87/it-journey
 source_file: PRD.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/PRD.md
 status: Living
-title: IT-Journey
+title: 'PRD: IT-Journey – Open-Source IT Education Platform'
 version: 2026-03-30
 ---
+
 # IT-Journey
 
 *Open-Source IT Education Platform*
@@ -197,8 +200,8 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [FR-ITJ-007](features/features.yml) | Jupyter notebooks | tbd | route `/notebooks/` | §3 |
 | [FR-ITJ-008](features/features.yml) | Interactive terminal interface | shipped | [`journey.sh`](journey.sh) | §3 |
 | [FR-ITJ-009](features/features.yml) | Docker development and quest validation | shipped | [`docker-compose.yml`](docker-compose.yml) | §3 |
-| [FR-ITJ-010](features/features.yml) | Quest validation workflow | shipped | [`.github/workflows/quest-validation.yml`](.github/workflows/quest-validation.yml) | §3 |
-| [FR-ITJ-011](features/features.yml) | Front matter validation | shipped | [`.github/workflows/frontmatter-validation.yml`](.github/workflows/frontmatter-validation.yml) | §3 |
+| [FR-ITJ-010](features/features.yml) | Quest validation workflow | shipped | [`.github/workflows/quest-validation.yml`](dot-github/workflows/quest-validation.yml) | §3 |
+| [FR-ITJ-011](features/features.yml) | Front matter validation | shipped | [`.github/workflows/frontmatter-validation.yml`](dot-github/workflows/frontmatter-validation.yml) | §3 |
 | [FR-ITJ-012](features/features.yml) | Link health check | shipped | [`scripts/validation/link-checker.py`](scripts/validation/link-checker.py) | §3 |
 | [FR-ITJ-013](features/features.yml) | PRD synchronization (prd-machine) | partial | [`scripts/prd-machine`](scripts/prd-machine) | §3 |
 | [FR-ITJ-014](features/features.yml) | Quest Atom feed | shipped | route `/quests/feed.xml` · [`_includes/feed/quests-atom.xml`](_includes/feed/quests-atom.xml) | §3 |

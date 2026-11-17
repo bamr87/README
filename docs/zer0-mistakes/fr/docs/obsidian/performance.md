@@ -16,7 +16,9 @@ permalink: /fr/docs/obsidian/performance/
 preview: /images/previews/obsidian-resolver-performance-caching.png
 sidebar:
   nav: docs
-source_file: performance.md
+source_file: fr/docs/obsidian/performance.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/obsidian/performance.md
 tags:
 - obsidian
 - performance
@@ -27,6 +29,7 @@ translated_from_sha: 6586d60c57aa
 translation_of: pages/_docs/obsidian/performance.md
 translation_source_url: /docs/obsidian/performance/
 ---
+
 # Obsidian Resolver — Performances & mise en cache
 
 L'intégration Obsidian de zer0-mistakes résout `⟦1⟧` sur chaque page au moment de la construction (chemin du plugin Ruby) ou au moment du chargement de la page (chemin JavaScript). Les deux chemins incluent une mise en cache pour maintenir des temps de construction et de chargement rapides, même sur de grands coffres comportant des centaines de liens croisés.
@@ -114,12 +117,12 @@ Recherchez le hook `obsidian_links.rb` dans la section `:pre_render` de la sorti
 
 ## Ressources associées
 
-- [Prise en main d'Obsidian](/docs/obsidian/getting-started/)
-- [Référence de la syntaxe Obsidian](/docs/obsidian/syntax-reference/)
-- [Vue graphique d'Obsidian](/docs/obsidian/graph/)
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Prise en main d'Obsidian]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Référence de la syntaxe Obsidian]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Vue graphique d'Obsidian]]
 
 ## Voir aussi
 
 - [[Obsidian]]
-- [[Performance]]
-- [[Development]]
+- [[zer0-mistakes/fr/docs/obsidian/performance|Performance]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

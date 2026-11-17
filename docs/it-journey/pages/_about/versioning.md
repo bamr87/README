@@ -17,13 +17,16 @@ keywords:
 lastmod: '2026-06-13T00:00:00.000Z'
 meta: null
 snippet: null
-source_file: versioning.md
+source_file: pages/_about/versioning.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/versioning.md
 tags:
 - article
 - versioning
 - semver
-title: patch release
+title: 'IT-Journey Versioning: Semver and Release Strategy'
 ---
+
 ## Why Version a Content Site
 
 A blog does not ship binaries, but it does accumulate breaking changes: layout overhauls, frontmatter schema migrations, permalink restructures, dependency upgrades. Without version markers it is impossible to answer "what changed between two deploys?" or "which content was affected by that theme update?"
@@ -91,4 +94,4 @@ GitHub Actions picks up the tag, builds the site, and deploys to GitHub Pages. T
 
 - [semver.org](https://semver.org/)
 - [Keep a Changelog](https://keepachangelog.com/)
-- [About: Contributing](/about/contributing/)
+- [[it-journey/pages/_about/contribute/contributing|About: Contributing]]

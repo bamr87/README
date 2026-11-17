@@ -14,7 +14,9 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/07/ai-adoption-from-awareness-to-action/
 preview: /images/previews/from-ai-awareness-to-action-the-skills-systems-and.png
-source_file: 2026-04-07-ai-adoption-from-awareness-to-action.md
+source_file: fr/posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
 tags:
 - ai
 - manufacturing
@@ -22,11 +24,13 @@ tags:
 - strategy
 - b2b
 - content-operations
-title: 2026 04 07 Ai Adoption From Awareness To Action
+title: 'De la sensibilisation à l''IA à l''action : le modèle de compétences, de systèmes
+  et de partenariat qui comble l''écart'
 translated_from_sha: 25bbccc4ae7f
 translation_of: pages/_posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
 translation_source_url: /posts/2026/04/07/ai-adoption-from-awareness-to-action/
 ---
+
 Chaque PDG et dirigeant avec qui nous avons échangé sur le paysage de l'adoption de l'IA nous répond par la même question : « Nous sommes d'accord. Et maintenant ? Nous n'avons ni les personnes, ni les compétences, ni la capacité de le faire nous-mêmes. »
 
 Cette réponse n'est pas un signe de faiblesse. C'est un diagnostic exact de la situation. L'enquête RSM 2025 sur l'IA a révélé que les trois principaux obstacles à la mise en œuvre de l'IA sur le marché intermédiaire sont :

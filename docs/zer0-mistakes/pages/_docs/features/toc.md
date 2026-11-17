@@ -20,14 +20,17 @@ permalink: /docs/features/toc/
 preview: /images/previews/table-of-contents.png
 sidebar:
   nav: docs
-source_file: toc.md
+source_file: pages/_docs/features/toc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/toc.md
 tags:
 - toc
 - navigation
 - headings
 - documentation
-title: Table of Contents
+title: Table of Contents with Scroll Spy
 ---
+
 # Table of Contents
 
 Automatic table of contents generation from page headings with active section highlighting.
@@ -265,7 +268,7 @@ TOC appears in right sidebar:
 
 ### Mobile
 
-TOC in offcanvas (see [Mobile TOC](/docs/features/mobile-toc/)):
+TOC in offcanvas (see [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC]]):
 
 ```html
 <div class="offcanvas offcanvas-end d-lg-none" id="tocSidebar">
@@ -311,12 +314,12 @@ TOC in offcanvas (see [Mobile TOC](/docs/features/mobile-toc/)):
 
 ## Related
 
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [Mobile TOC](/docs/features/mobile-toc/)
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
 
 ## See also
 
-- [[Features]]
-- [[Mobile TOC Floating Action Button]]
-- [[Sidebar Navigation System]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]

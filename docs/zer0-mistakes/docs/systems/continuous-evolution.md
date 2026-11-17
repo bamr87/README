@@ -6,12 +6,15 @@ date: 2026-06-01 03:43:23+00:00
 description: The continuous-evolution loop that lets scheduled AI agents audit this
   repo into a backlog and implement the highest-priority tasks via PRs.
 lastmod: 2026-06-01 03:43:23+00:00
-source_file: continuous-evolution.md
+source_file: docs/systems/continuous-evolution.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/continuous-evolution.md
 tags:
 - systems
 - automation
 title: Continuous-Evolution Loop
 ---
+
 # Continuous-Evolution Loop
 
 **Status:** ✅ Active **Last Updated:** 2026-05-31 **Audience:** Maintainers & AI agents (technical tier)
@@ -100,18 +103,18 @@ The committee prefers Task-subagent fan-out but falls back to **inline sequentia
 
 ### CI self-repair (closing the loop post-PR)
 
-The implement loop verifies **before** opening a PR, but local-green ≠ CI-green. `.github/workflows/ci-self-repair.yml` closes that gap: on a **failed** CI run (`Comprehensive CI Pipeline`) for a PR that opted in via the **`auto-fix`** label, it runs Claude Code headless ([`/ci-self-repair`](../../.github/prompts/ci-self-repair.prompt.md)) to diagnose and fix the failing check **by root cause**, verify locally, and push — bounded by a **3-commit retry budget**. If it can't reach green — or the only fix would touch a CODEOWNERS path or *weaken* a check (delete a test, `continue-on-error`, lower a threshold) — it converts the PR to a **draft** and applies `agent-hold` for a human. It uses `workflow_run` (reacts after CI, base-repo context) and only ever acts on an **opted-in, same-repo** PR; it deliberately ignores `Evidence gate` and `Secret scan` (those must never be auto-"fixed" by removing the gate). `/issue-implement` applies `auto-fix` to every ready PR it opens.
+The implement loop verifies **before** opening a PR, but local-green ≠ CI-green. `.github/workflows/ci-self-repair.yml` closes that gap: on a **failed** CI run (`Comprehensive CI Pipeline`) for a PR that opted in via the **`auto-fix`** label, it runs Claude Code headless ([`/ci-self-repair`](../../dot-github/prompts/ci-self-repair.prompt.md)) to diagnose and fix the failing check **by root cause**, verify locally, and push — bounded by a **3-commit retry budget**. If it can't reach green — or the only fix would touch a CODEOWNERS path or *weaken* a check (delete a test, `continue-on-error`, lower a threshold) — it converts the PR to a **draft** and applies `agent-hold` for a human. It uses `workflow_run` (reacts after CI, base-repo context) and only ever acts on an **opted-in, same-repo** PR; it deliberately ignores `Evidence gate` and `Secret scan` (those must never be auto-"fixed" by removing the gate). `/issue-implement` applies `auto-fix` to every ready PR it opens.
 
 ### Visual-evidence autogen (producing what the gate checks)
 
 The evidence gate and the pixel-snapshot tier only ever **verified**. Their inputs — montages + `metrics.json` under `test/visual/evidence/<slug>/`, and the nine `test/visual/snapshots/**` baselines — can only be **rendered**: inside `mcr.microsoft.com/playwright:*-jammy`, against a live Jekyll, i.e. with Docker. The agents that author UI PRs mostly cannot: the fleet issue pipeline's tiers believed Docker was gated on their runner, and a Claude Code web session has no daemon. PR #454 was the case study — a correct navbar rework that arrived with a README-only evidence folder (which the gate accepted) and nine legitimately stale baselines, then collected three careful "one command on a Docker host finishes this" comments while staying red.
 
-[`visual-evidence-autogen.yml`](../../.github/workflows/visual-evidence-autogen.yml) makes the runner that producer. On every same-repo PR event it runs [`scripts/ci/visual_evidence_autogen.py`](../../scripts/ci/visual_evidence_autogen.py), which is deterministic end to end except for one judgment call:
+[`visual-evidence-autogen.yml`](../../dot-github/workflows/visual-evidence-autogen.yml) makes the runner that producer. On every same-repo PR event it runs [`scripts/ci/visual_evidence_autogen.py`](../../scripts/ci/visual_evidence_autogen.py), which is deterministic end to end except for one judgment call:
 
 1. **plan** — from the diff: which evidence folders lack generated proof, which
 `*-evidence.mjs` generators the PR ships, whether the pixel tier is in scope (the same paths as ci.yml's `styling` filter), and whether it may act at all (loop guard on its own commits; a three-commit budget per PR).
 2. **generate** — `docker compose up`, then the PR's generators or the generic [`test/visual/pr-evidence.mjs`](../../test/visual/pr-evidence.mjs), which renders the **base branch** and the head side by side so nobody has to hand-write an `unfixCss`; then `UPDATE_SNAPSHOTS=0 ./test/update-snapshots.sh` to verify the baselines — all inside the same jammy image CI compares with, via that script's new `PRE_TEST_SCRIPT` / `POST_TEST_SCRIPT` hooks.
-3. **review** — the [`visual-evidence-reviewer`](../../.claude/agents/visual-evidence-reviewer.md)
+3. **review** — the [`visual-evidence-reviewer`](../../dot-claude/agents/visual-evidence-reviewer.md)
    agent reads the brief, views the expected | actual | diff montage and the evidence, and writes `verdict.json` (`intentional` / `regression` / `unclear`) plus the evidence README narrative. It never touches baselines.
 4. **decide → bless** — code reads the verdict. Only a well-formed `intentional` on a genuinely failing verify may run `UPDATE_SNAPSHOTS=1`; the diff montage is kept beside the evidence so a human still sees what was blessed.
 5. **stage → commit → push → comment** — only the planner's paths are ever `git add`ed; the commit carries a `[visual-autogen]` marker and a `Visual-Autogen:` trailer; one sticky comment shows the montages and the verdict.
@@ -149,20 +152,20 @@ A PR may **auto-merge** only when ALL hold (enforced by the implement prompt and
 - all acceptance criteria verified green in CI
 - **and one of:**
   - the change is non-visual — `area` ∈ { `docs`, `deps`, `lint` }; **or**
-  - it is a low-risk **fix** that ships a passing regression test **and** before/after visual evidence (the [`visual-evidence`](../../.github/skills/visual-evidence/SKILL.md) standard), with the required `evidence-gate` check green.
+  - it is a low-risk **fix** that ships a passing regression test **and** before/after visual evidence (the [`visual-evidence`](../../dot-github/skills/visual-evidence/SKILL.md) standard), with the required `evidence-gate` check green.
 
 This is the policy that lets **fixes** automate end-to-end: a `risk: low` bug fix proven by a test + evidence is as safe to auto-merge as a docs/deps/lint change. Everything else — `feat`, `refactor`, anything `risk: standard` — is **PR-only** and waits for a human. CI is the merge gate in every case.
 
 ### Evidence & discovered issues — the standard for changes with visuals/tests
 
-Any change that alters what a user sees or how the UI behaves carries, in the same PR: a `test/visual/*.spec.js` regression test, before/after evidence under `test/visual/evidence/<slug>/` (from `test/visual/evidence-kit.mjs`), and a `CHANGELOG.md` link to that evidence (so it appears in release-please release notes). The `evidence-gate` check enforces this; `skip-evidence` opts out genuinely non-visual edits. Full checklist: the [`visual-evidence`](../../.github/skills/visual-evidence/SKILL.md) skill.
+Any change that alters what a user sees or how the UI behaves carries, in the same PR: a `test/visual/*.spec.js` regression test, before/after evidence under `test/visual/evidence/<slug>/` (from `test/visual/evidence-kit.mjs`), and a `CHANGELOG.md` link to that evidence (so it appears in release-please release notes). The `evidence-gate` check enforces this; `skip-evidence` opts out genuinely non-visual edits. Full checklist: the [`visual-evidence`](../../dot-github/skills/visual-evidence/SKILL.md) skill.
 
 When a fix **uncovers a new issue** (e.g. the navbar fix surfaced a `version.rb`↔`Gemfile.lock` drift), the fixer files it as a new `_data/backlog.yml` task (`source: issue`, referencing the PR) instead of silently fixing it. On merge `sync.yml` opens the Issue, and the IMPLEMENT routine picks it up — so a discovered issue is recorded and (if `risk: low` with tests+evidence) auto-fixed and auto-merged, closing the loop without human prompting.
 
 ### Guardrails
 
 - **One task ⇒ one PR.** Conventional commits.
-- **Agents never bump the version, edit `version.rb`, or publish gems** — releases stay human via [`/commit-publish`](../../.github/prompts/commit-publish.prompt.md).
+- **Agents never bump the version, edit `version.rb`, or publish gems** — releases stay human via [`/commit-publish`](../../dot-github/prompts/commit-publish.prompt.md).
 - **Loop-prevention:** the audit dedupes by task id/intent and caps new tasks at 5 per run; the implement routine does at most one task per invocation.
 - **Default-safe:** with no branch protection, `auto-merge.yml` is a no-op and PRs simply wait for a human.
 

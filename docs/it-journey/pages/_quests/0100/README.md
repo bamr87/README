@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/0100/
 preview: /images/previews/level-0100-frontend-development-docker.webp
-source_file: README.md
+source_file: pages/_quests/0100/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/README.md
 tags:
 - quests
 - '0100'
 - adventurer
 - frontend
 - containers
-title: 'Level 0100: Frontend Development & Docker'
+title: Level 0100 - Frontend Development & Docker
 ---
 # Level 0100: Frontend Development & Docker
 
@@ -38,15 +40,15 @@ Level 0100 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Dockering Jekyll with Bootstrap 5](/quests/0100/frontend-docker/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Frontend Forests: Building a Jekyll Site with Bootstrap](/quests/0100/frontend/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Docker Container Fundamentals: Master Isolation & Portability for DevOps](/quests/0100/container-fundamentals/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [Docker Compose Orchestration: Build Multi-Container Applications](/quests/0100/docker-compose-orchestration/) | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Frontend Forests Levels](/quests/0100/frontend/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Frontend Docker Level 001: Create Jekyll Site with Docker Container](/quests/0100/frontend-docker/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Frontend Docker Level 010: Adding Bootstrap 5 to Jekyll in Docker](/quests/0100/frontend-docker/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Quest: Mastering the Ancient Arts of Source Control Sorcery](/quests/0100/source-control-sorcery/) | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
-| [Frontend Docker - level 000](/quests/0100/frontend-docker/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend-docker\|Dockering Jekyll with Bootstrap 5]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend\|Frontend Forests: Building a Jekyll Site with Bootstrap]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/container-fundamentals\|Docker Container Fundamentals: Master Isolation & Portability for DevOps]] | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/docker-compose-orchestration\|Docker Compose Orchestration: Build Multi-Container Applications]] | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend\|Frontend Forests Levels]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend-docker\|Frontend Docker Level 001: Create Jekyll Site with Docker Container]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend-docker\|Frontend Docker Level 010: Adding Bootstrap 5 to Jekyll in Docker]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/sourcery-code-methods\|Quest: Mastering the Ancient Arts of Source Control Sorcery]] | 🟡 Medium | 120-180 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0100/frontend-docker\|Frontend Docker - level 000]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
 | [The Artisan's Forge: Refactoring Jekyll Theme Components](/quests/0100/side-quests/jekyll-component-refactoring/) | 🟡 Medium | 45-60 minutes | side_quest | ✅ Ready |
 
 

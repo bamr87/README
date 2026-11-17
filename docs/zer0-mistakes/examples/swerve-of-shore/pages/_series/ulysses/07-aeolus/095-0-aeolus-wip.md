@@ -11,12 +11,14 @@ order: 95.0
 preview: /assets/images/posts/095-0-aeolus-wip.jpg
 section: 07-aeolus
 series: ulysses
-source_file: 095-0-aeolus-wip.md
-source_url: https://www.swerveofshore.com/post/095-0-aeolus-wip
+source_file: examples/swerve-of-shore/pages/_series/ulysses/07-aeolus/095-0-aeolus-wip.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/07-aeolus/095-0-aeolus-wip.md
 sub-title: Episode 7 · Aeolus
-title: 095 0 Aeolus Wip
+title: 095.0 - Aeolus - WIP
 wip: true
 ---
+
 An in-progress entry in the *Episode 7 · Aeolus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/095-0-aeolus-wip), by Brandon Nicklaus.
 
 > Red Murray: This character was based on Joyce’s maternal uncle - John “Red” Murray. Red Murray worked in accounts for the Freemans Journal

@@ -9,9 +9,12 @@ layout: author
 machine_translated: true
 permalink: /fr/authors/default/
 sidebar: false
-source_file: default.md
-title: Default
+source_file: fr/about/authors/default.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/authors/default.md
+title: Équipe Zer0-Mistakes
 translated_from_sha: a9a97e4dfce7
 translation_of: pages/_about/authors/default.md
 translation_source_url: /authors/default/
 ---
+

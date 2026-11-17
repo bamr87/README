@@ -8,9 +8,12 @@ permalink: /series/ulysses/04-calypso/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 04-calypso.md
-title: 04 Calypso
+source_file: examples/swerve-of-shore/pages/series/ulysses/04-calypso.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/04-calypso.md
+title: 04 · Calypso
 ---
+
 {% include page-header.html %}
 
 Episode 4 of *Ulysses*. 8am again, this time at 7 Eccles Street.

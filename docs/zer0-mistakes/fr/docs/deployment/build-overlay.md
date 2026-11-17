@@ -26,17 +26,20 @@ prerequisites:
 preview: /images/previews/safe-mode-build-overlay-building-outside-github-pa.png
 sidebar:
   nav: docs
-source_file: build-overlay.md
+source_file: fr/docs/deployment/build-overlay.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/deployment/build-overlay.md
 tags:
 - github-pages
 - remote-theme
 - deployment
 - ci
-title: Superposition de build en mode sécurisé
+title: Superposition de build en mode sécurisé (compiler en dehors de GitHub Pages)
 translated_from_sha: fb72cf0bff9e
 translation_of: pages/_docs/deployment/build-overlay.md
 translation_source_url: /docs/deployment/build-overlay/
 ---
+
 # Superposition de build en mode sécurisé
 
 **Ce que vous allez faire :** reproduire un build GitHub Pages de votre site à thème distant dans votre propre CI, afin qu'un pipeline personnalisé (mise en cache, vérification des liens, builds multi-sites) génère exactement ce que Pages produirait — ni plus, ni moins.
@@ -49,7 +52,7 @@ Lorsque vous compilez *en dehors* de GitHub Pages — votre propre GitHub Action
 2. Pages exécute Jekyll en **mode sécurisé**, ce qui **ignore `_plugins/*.rb`**. Les
 générateurs du thème (recherche, sitemap, pages d'auteur, aperçus) ne s'exécutent jamais lors d'un build consommateur Pages.
 
-Si votre build personnalisé *ne supprime pas* `_plugins`, vous obtenez localement des pages qui renvoient une 404 sur le vrai site Pages — le build et la production divergent silencieusement. La recette de superposition fait correspondre exactement votre build CI à Pages. (Pour les fichiers que Pages ne fournit *pas*, consultez la [liste de contrôle du consommateur de thème distant](/docs/deployment/remote-theme-checklist/).)
+Si votre build personnalisé *ne supprime pas* `_plugins`, vous obtenez localement des pages qui renvoient une 404 sur le vrai site Pages — le build et la production divergent silencieusement. La recette de superposition fait correspondre exactement votre build CI à Pages. (Pour les fichiers que Pages ne fournit *pas*, consultez la [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|liste de contrôle du consommateur de thème distant]].)
 
 ## La recette
 
@@ -123,5 +126,5 @@ Après le build, assurez-vous que vous n'avez rien livré que Pages ne servirait
 
 ## Voir aussi
 
-- [Liste de contrôle du consommateur de thème distant](/docs/deployment/remote-theme-checklist/) — les fichiers et la configuration à ajouter lors de la consommation du thème via `remote_theme`.
-- [Vue d'ensemble du déploiement](/docs/deployment/) — options d'hébergement et compromis.
+- [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Liste de contrôle du consommateur de thème distant]] — les fichiers et la configuration à ajouter lors de la consommation du thème via `remote_theme`.
+- [[zer0-mistakes/pages/_docs/deployment/index|Vue d'ensemble du déploiement]] — options d'hébergement et compromis.

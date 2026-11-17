@@ -12,7 +12,9 @@ permalink: /docs/features/mobile-toc/
 preview: /images/previews/mobile-toc-floating-action-button.png
 sidebar:
   nav: docs
-source_file: mobile-toc.md
+source_file: pages/_docs/features/mobile-toc.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/mobile-toc.md
 tags:
 - mobile
 - toc
@@ -20,6 +22,7 @@ tags:
 - responsive
 title: Mobile TOC Floating Action Button
 ---
+
 # Mobile TOC Floating Action Button
 
 The Zer0-Mistakes theme features a redesigned mobile table of contents with a Floating Action Button (FAB) pattern.
@@ -214,12 +217,12 @@ The button announces:
 
 ## Related
 
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [Table of Contents](/docs/features/toc/)
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/toc|Table of Contents]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
 
 ## See also
 
-- [[Features]]
-- [[Table of Contents]]
-- [[Sidebar Navigation System]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-CMS/sites/zer0-pages/pages/_docs/features/toc|Table of Contents]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]

@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - The Bard Forge — the quest that writes quests
 skill_focus: fullstack
-source_file: self-operating-website.md
+source_file: pages/_quests/codex/self-operating-website.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/self-operating-website.md
 tags:
 - '1111'
 - github-actions
@@ -84,7 +86,7 @@ tags:
 - ci-cd
 - gamified-learning
 - project-based
-title: '1. On a machine logged into Claude, mint a Code OAuth token:'
+title: 'Epic Quest: The Self-Operating Website'
 validation_criteria:
   completion_requirements:
   - All ten chapters completed and their boss fights survived
@@ -99,7 +101,7 @@ validation_criteria:
 ---
 *You raised your castle from the `zer0-mistakes` stones. Now you will teach it to run itself — to write its own scrolls, mend its own walls, and keep a diary of every battle — without ever handing a stranger the keys to the gate.*
 
-*This is a direct sequel to **[Epic Quest: Zer0-to-Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/)**. There you built a living site. Here you teach it autonomy: a robot drafts content, screenshots it, files its own bugs, opens pull requests, reviews and improves them, contributes fixes upstream, and writes a retrospective of every working session — while a **human still holds the merge button.** This campaign is reverse-engineered from a real 40-branch build, so every chapter is a milestone you can actually complete and verify.*
+*This is a direct sequel to **[[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0-to-Her0 CMStyle]]**. There you built a living site. Here you teach it autonomy: a robot drafts content, screenshots it, files its own bugs, opens pull requests, reviews and improves them, contributes fixes upstream, and writes a retrospective of every working session — while a **human still holds the merge button.** This campaign is reverse-engineered from a real 40-branch build, so every chapter is a milestone you can actually complete and verify.*
 
 ## 📖 The Legend Behind This Quest
 
@@ -134,7 +136,7 @@ You will know you have mastered this campaign when you can:
 | **Tier** | ⚡ Master `1111` capstone — chapters span 🌱 Apprentice → ⚡ Master |
 | **Total XP** | ~955 XP across 10 chapters, plus two side-quest lines |
 | **Primary classes** | 🏗️ System Engineer · 💻 Software Developer · 🛡️ Security Specialist |
-| **Prerequisites** | [Zer0-to-Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/), basic Git, a GitHub account |
+| **Prerequisites** | [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle\|Zer0-to-Her0 CMStyle]], basic Git, a GitHub account |
 | **Boss** | 🐉 The Self-Retrigger Loop (a CI job that re-triggers itself forever) |
 | **Source build** | `bamr87/lifehacker.dev` — 40 merged branches, +16,223 / −499 lines (see issue [#365](https://github.com/bamr87/it-journey/issues/365)) |
 
@@ -144,16 +146,16 @@ Each chapter maps to merged branches from the reference build you can study and 
 
 | # | Chapter | Level | Difficulty | XP | Class | Reference PRs |
 |---|---|---|---|---|---|---|
-| I | [The Summoning](/quests/0001/self-operating-website-01-the-summoning/) | `0001` | 🟢 Easy | 50 | 💻 Developer | #1 · #2 · #11 |
-| II | [The Proving Grounds](/quests/0100/self-operating-website-02-the-proving-grounds/) | `0100` | 🟡 Medium | 75 | 🏗️ System Eng | #3 · #4 |
-| III | [The War Machine](/quests/1000/self-operating-website-03-the-war-machine/) | `1000` | ⚔️ Epic | 150 | 🏗️ System Eng | #7 · #16 · #21 |
-| IV | [The Sigils of Trust](/quests/1001/self-operating-website-04-the-sigils-of-trust/) | `1001` | 🔴 Hard | 90 | 🛡️ Security | #12 · #13 · #14 · #15 |
-| V | [The Content Forge](/quests/1010/self-operating-website-05-the-content-forge/) | `1010` | 🔴 Hard | 120 | 💻 Developer | #9 · #22 · #26 |
-| VI | [The Editor's Eye](/quests/1100/self-operating-website-06-the-editors-eye/) | `1100` | 🔴 Hard | 110 | 💻 Developer | #25 · #35 · #36 · 🐉 #49 |
-| VII | [The Named Familiars](/quests/1101/self-operating-website-07-the-named-familiars/) | `1101` | 🟡 Medium | 80 | 🏗️ System Eng | #45 · #46 |
-| VIII | [The Cartographer](/quests/0101/self-operating-website-08-the-cartographer/) | `0101` | 🟡 Medium | 60 | 💻 Developer | #42 |
-| IX | [The Chronicle](/quests/1110/self-operating-website-09-the-chronicle/) | `1110` | 🔴 Hard | 100 | 💻 Developer | #47 · #50 · #51 · #52 |
-| X | [The Bard Forge](/quests/1100/self-operating-website-10-the-bard-forge/) | `1100` | 🔴 Hard | 120 | 💻 Developer | #53 |
+| I | [[it-journey/pages/_quests/0001/self-operating-website-01-the-summoning\|The Summoning]] | `0001` | 🟢 Easy | 50 | 💻 Developer | #1 · #2 · #11 |
+| II | [[it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds\|The Proving Grounds]] | `0100` | 🟡 Medium | 75 | 🏗️ System Eng | #3 · #4 |
+| III | [[it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine\|The War Machine]] | `1000` | ⚔️ Epic | 150 | 🏗️ System Eng | #7 · #16 · #21 |
+| IV | [[it-journey/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust\|The Sigils of Trust]] | `1001` | 🔴 Hard | 90 | 🛡️ Security | #12 · #13 · #14 · #15 |
+| V | [[it-journey/pages/_quests/1010/self-operating-website-05-the-content-forge\|The Content Forge]] | `1010` | 🔴 Hard | 120 | 💻 Developer | #9 · #22 · #26 |
+| VI | [[it-journey/pages/_quests/1100/self-operating-website-06-the-editors-eye\|The Editor's Eye]] | `1100` | 🔴 Hard | 110 | 💻 Developer | #25 · #35 · #36 · 🐉 #49 |
+| VII | [[it-journey/pages/_quests/1101/self-operating-website-07-the-named-familiars\|The Named Familiars]] | `1101` | 🟡 Medium | 80 | 🏗️ System Eng | #45 · #46 |
+| VIII | [[it-journey/pages/_quests/0101/self-operating-website-08-the-cartographer\|The Cartographer]] | `0101` | 🟡 Medium | 60 | 💻 Developer | #42 |
+| IX | [[it-journey/pages/_quests/1110/self-operating-website-09-the-chronicle\|The Chronicle]] | `1110` | 🔴 Hard | 100 | 💻 Developer | #47 · #50 · #51 · #52 |
+| X | [[it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge\|The Bard Forge]] | `1100` | 🔴 Hard | 120 | 💻 Developer | #53 |
 
 > 🐉 **Boss gate.** The Self-Retrigger Loop stands between Chapter VI and Chapter VII. You cannot pass to the Named Familiars until you have broken the loop in the Editor's Eye (reference PR #49).
 
@@ -259,10 +261,10 @@ Each chapter's **🔁 Reproduce it** section cites the specific PRs and commits 
 
 ## 🔮 Next Adventures
 
-- 🎯 Begin the campaign: [Chapter I — The Summoning](/quests/0001/self-operating-website-01-the-summoning/)
-- 👑 Revisit the prequel: [Epic Quest: Zer0-to-Her0 CMStyle](/quests/codex/zer0-to-her0-cmstyle/)
-- 🪄 The closing twist: [Chapter X — The Bard Forge](/quests/1100/self-operating-website-10-the-bard-forge/)
-- 🤖 Sibling campaign: [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — master the agents that power a fleet like this one
+- 🎯 Begin the campaign: [[it-journey/pages/_quests/0001/self-operating-website-01-the-summoning|Chapter I — The Summoning]]
+- 👑 Revisit the prequel: [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0-to-Her0 CMStyle]]
+- 🪄 The closing twist: [[it-journey/pages/_quests/1100/self-operating-website-10-the-bard-forge|Chapter X — The Bard Forge]]
+- 🤖 Sibling campaign: [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — master the agents that power a fleet like this one
 
 ## 📚 Resource Codex
 
@@ -280,6 +282,6 @@ Each chapter's **🔁 Reproduce it** section cites the specific PRs and commits 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Overworld:** [[🏰 Overworld - Master Quest Map]] **Prequel:** [[Epic Quest: Zer0-to-Her0 CMStyle]] **Chapters:** [[The Summoning]] · [[The Proving Grounds]] · [[The War Machine]] · [[The Sigils of Trust]] · [[The Content Forge]] · [[The Editor's Eye]] · [[The Named Familiars]] · [[The Cartographer]] · [[The Chronicle]] · [[The Bard Forge]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prequel:** [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0-to-Her0 CMStyle]] **Chapters:** [[The Summoning]] · [[The Proving Grounds]] · [[The War Machine]] · [[The Sigils of Trust]] · [[The Content Forge]] · [[The Editor's Eye]] · [[The Named Familiars]] · [[The Cartographer]] · [[The Chronicle]] · [[The Bard Forge]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

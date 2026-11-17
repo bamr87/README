@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/amendments/proposed/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/proposed/README.md
 title: docs/amendments/proposed/ — unnumbered amendment records
 ---
 # docs/amendments/proposed/ — unnumbered amendment records

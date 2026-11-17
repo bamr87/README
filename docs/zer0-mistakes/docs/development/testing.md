@@ -6,12 +6,15 @@ date: 2026-01-25 03:38:33+00:00
 description: How to run the Zer0-Mistakes test suites and validators locally, and
   which checks to run before opening a pull request to keep CI green.
 lastmod: 2026-05-25 19:58:49+00:00
-source_file: testing.md
+source_file: docs/development/testing.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/testing.md
 tags:
 - development
 - contributing
 title: Testing
 ---
+
 # Testing
 
 Run tests and validate changes before submitting pull requests.
@@ -322,4 +325,4 @@ bash -x ./test/specific_test.sh
 
 ---
 
-> **User guide**: Contributors who access testing via the public site can find an overview at [Testing](/docs/development/testing/) in the user-facing docs.
+> **User guide**: Contributors who access testing via the public site can find an overview at [[zer0-mistakes/pages/_docs/development/testing|Testing]] in the user-facing docs.

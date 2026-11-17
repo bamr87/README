@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: chat.md
-title: Chat
+source_file: information/chat.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/chat.md
+title: Contact via chat
 ---
+
 Need help?
 ==========
 

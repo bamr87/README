@@ -1,0 +1,102 @@
+---
+source_file: docs/PRD.md
+source_repo: bamr87/githubai
+source_url: https://github.com/bamr87/githubai/blob/main/docs/PRD.md
+title: GitHubAI Product Requirements Document
+---
+# GitHubAI Product Requirements Document
+
+> The product requirements: why GitHubAI exists, the promise it makes, its public API, invariants, milestones and scope.
+
+## 0. WHY
+
+**North Star**: Every repository ships with an AI staff engineer. GitHubAI makes Claude Code a first-class participant in the whole SDLC — triage, implementation, review, merging, maintenance, releases — installable in any repo in one command.
+
+**KFI (Key Focus Indicator)**: share of routine SDLC events (new issues triaged, minor PRs merged, maintenance filed, releases drafted) handled end-to-end by Claude without a human touching them, while humans retain the authorization points that matter.
+
+**Why now**: v0.x proved the demand but carried a Django/React/Postgres/Celery stack and a bespoke OpenAI pipeline — heavy to host, impossible to adopt casually. GitHub Actions plus `claude-code-action` plus Claude Code OAuth tokens make the entire product expressible as workflows: zero servers, per-repo trust, adoption measured in minutes.
+
+## 1. MVP (Minimum Viable Promise)
+
+1. **As a maintainer**, I run one install command and my repo gains issue triage, label-gated implementation, PR review, an auto-merge lane, weekly maintenance, and release drafting — all authenticated by my `CLAUDE_CODE_OAUTH_TOKEN`.
+2. **As a maintainer**, I declare my repo's type and purpose in `.github/githubai.yml` and Claude's behavior follows standards appropriate to that type (a library is reviewed like a library, a webapp like a webapp).
+3. **As a contributor**, my issue gets triaged in minutes: classified, deduplicated, and — when it's under-specified — met with precise clarifying questions.
+4. **As a maintainer**, applying `claude:implement` to an issue produces a tested PR that closes it; applying `claude:auto-merge` to a minor PR (or letting dependabot open one) gets a safety verdict and, when low-risk and green, an automatic merge.
+5. **As an org owner**, I can route events through a GitHub App relay instead of per-repo event stubs, without changing the trust model (repos keep their own OAuth token), and I can narrow what the automation touches org-wide from one policy file in my own `.github` repository.
+
+All P0 except story 5 (P1, shipped and tested; a hosted deployment is a business decision, not a missing capability). Deferred: see OOS.
+
+## 2. UX
+
+The product's UI is GitHub itself. The user-visible surface is exactly: labels (`claude:*` as the control plane), Claude's comments (triage summaries, review verdicts, merge verdicts, health reports), PRs and releases it creates, and one config file. The installer is the only CLI moment, and `@claude` mentions are the escape hatch to interactive mode everywhere.
+
+```text
+issue opened ──▶ triage comment + labels
+      │  claude:implement (human)
+      ▼
+tested PR ──▶ review verdict + inline findings
+      │  claude:auto-merge (human or bot author)
+      ▼
+safety verdict ──▶ approve + auto-merge (waits for required checks)
+
+weekly ──▶ maintenance issues + health report        tag push ──▶ release notes
+```
+
+## 3. API (what consumers program against)
+
+| Surface | Contract |
+|---------|----------|
+| `setup/install.sh` | flags: `--profile`, `--ref`, `--source`, `--app`, `--labels`, `--force`, `--dry-run` |
+| Reusable workflows | `bamr87/githubai/.github/workflows/claude-{triage,implement,review,auto-merge,maintenance,release}.yml@ref` + `claude.yml`; inputs per file; secrets `CLAUDE_CODE_OAUTH_TOKEN` / `ANTHROPIC_API_KEY` |
+| `actions/load-config` | input `config_path`; outputs `config`, `type`, `model`, `max_turns`, `*_enabled`, `prompt_context` |
+| `.github/githubai.yml` | schema in [docs/configuration.md](docs/configuration.md); merged over `profiles/_base.yml` ← `profiles/<type>.yml` |
+| Labels | `claude:implement`, `claude:auto-merge`, `claude:review`, `claude:skip` (inputs); `claude:triaged`, `claude:in-progress`, `claude:needs-human` (outputs) |
+| Dispatch types (app mode) | `githubai-{triage,implement,review,auto-merge,maintenance}` with `client_payload.{issue_number,pr_number,tasks}` |
+| Org policy (app mode) | `<account>/.github` → `.github/githubai-org.yml`; keys `org.enabled`, `org.repos.{include,exclude}`, `automation.<area>.enabled`; subtractive only |
+| Relay endpoints | `POST /webhook`; `GET /health`, `/`, `/dashboard`, `/api/{installations,activity}`, `/setup`, `/login`, `/oauth/callback`, `/logout` |
+
+Compatibility rule: all of the above are public API; renames and removals are breaking changes requiring a major version.
+
+## 4. Architecture invariants
+
+- **OAuth-first**: every Claude invocation prefers `CLAUDE_CODE_OAUTH_TOKEN`; `ANTHROPIC_API_KEY` is a fallback, never the default.
+- **Actions are the execution substrate** in both modes; the app relay only routes events. AI never runs outside the repo's own CI context.
+- **Humans hold authorization**: implementation requires a maintainer-applied label; auto-merge requires label or trusted-bot authorship, a read-only structured verdict, and GitHub's own required checks; Claude never force-merges or approves outside the auto-merge lane. Org policy narrows what reaches these gates and can never widen it.
+- **Routing parity between modes**: any gate a workflow applies to a direct event (`claude:skip`, drafts, forks, bot authorship) is applied by the relay before dispatching, because a `repository_dispatch` run has no issue or PR context to re-check.
+- **Untrusted content is data**: issue/PR bodies are read via `gh` as analysis input, never interpolated into shell or treated as instructions; every automation prompt says so explicitly.
+- **Config over code**: behavior differences between repos live in profiles + `githubai.yml`, not in forked workflows.
+
+## Feature catalog
+
+<!-- features:start v1 · generated by bamr87/bamr87 tools/governance_lint.py prd-sync from features/features.yml — edit the catalog, then re-run; do not edit this table by hand -->
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](../features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [GHAI-001](../features/features.yml) | One-command install of the Claude lanes | shipped | [`setup`](../setup) · [`README.md`](../README.md) | §1 |
+| [GHAI-002](../features/features.yml) | Repo-type profiles | shipped | [`profiles`](../profiles) · [`README.md`](../README.md) | §1 |
+| [GHAI-003](../features/features.yml) | Issue triage | shipped | [`.github/workflows/claude-triage.yml`](../dot-github/workflows/claude-triage.yml) · [`README.md`](../README.md) | §1 |
+| [GHAI-004](../features/features.yml) | Implement and auto-merge lanes | shipped | [`.github/workflows/claude-implement.yml`](../dot-github/workflows/claude-implement.yml) · [`README.md`](../README.md) | §1 |
+| [GHAI-005](../features/features.yml) | PR review, maintenance and release lanes | shipped | [`.github/workflows/claude-review.yml`](../dot-github/workflows/claude-review.yml) · [`README.md`](../README.md) | §1 |
+| [GHAI-006](../features/features.yml) | GitHub App relay and org policy | shipped | [`app`](../app) · [`README.md`](../README.md) | §1 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| §1 | GHAI-001, GHAI-002, GHAI-003, GHAI-004, GHAI-005, GHAI-006 |
+<!-- features:end -->
+
+## 5. Milestones
+
+- **M1 (this rebuild)** — framework + template + installer + app scaffolding; dogfooding on this repo. *Done.*
+- **M2** — tagged `v1` releases; stubs pin by default; adoption in 3+ real repos of different types; prompt tuning from field results.
+- **M3** — hosted GitHubAI App. *Built:* multi-tenant relay with installation lifecycle, per-org policy read from each org's own `.github` repo, read-only activity dashboard behind GitHub sign-in, webhook deduplication, per-installation rate limits, 30-day telemetry retention, and a Node test suite in CI ([app/](app/)). *Remaining, and deliberately not engineering work:* a hosted deployment, a published privacy policy and terms, verified-publisher status, and a pricing decision before plan limits mean anything ([app/MARKETPLACE.md](app/MARKETPLACE.md)).
+- **M4** — fleet intelligence: cross-repo health rollups, org-wide maintenance campaigns, standards drift detection across an organization.
+
+## 6. OOS (Out of Scope)
+
+- Hosting or proxying model calls; storing user code or tokens outside GitHub.
+- A web UI beyond GitHub. The relay dashboard is not an exception to this: it renders routing telemetry the relay itself produced — what was dispatched, ignored, or blocked, and why — and offers no way to read code, file issues, change repository configuration, or talk to Claude. The v0 chat/dashboard stays gone.
+- Support for non-Claude models (the framework is Claude Code-native by design).
+- Auto-merging anything Claude rates above low risk, regardless of configuration.

@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 7
-source_file: vortex7.md
+source_file: wargames/vortex/vortex7.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex7.md
 title: Vortex7
 ---
 Checksum Fun

@@ -1,5 +1,7 @@
 ---
-source_file: contributing.md
+source_file: docs/contributing.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/contributing.md
 title: Contributing
 ---
 # Contributing

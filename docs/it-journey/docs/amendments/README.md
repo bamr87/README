@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/amendments/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/README.md
 title: Amendments — it-journey
 ---
 <!-- kit: governance v0.1.0 -->

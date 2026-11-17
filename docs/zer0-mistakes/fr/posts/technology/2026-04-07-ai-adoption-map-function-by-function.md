@@ -15,7 +15,9 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2026/04/07/ai-adoption-map-function-by-function/
 preview: /images/previews/the-ai-adoption-map-where-ai-will-augment-replace-.png
-source_file: 2026-04-07-ai-adoption-map-function-by-function.md
+source_file: fr/posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
 tags:
 - ai
 - manufacturing
@@ -24,11 +26,13 @@ tags:
 - marketing
 - finance
 - supply-chain
-title: 2026 04 07 Ai Adoption Map Function By Function
+title: 'La carte de l''adoption de l''IA : où l''IA va augmenter, remplacer et transformer
+  chaque fonction de l''entreprise'
 translated_from_sha: ec766a3a58a9
 translation_of: pages/_posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
 translation_source_url: /posts/2026/04/07/ai-adoption-map-function-by-function/
 ---
+
 Tous les services n'adopteront pas l'IA au même rythme, et les raisons tiennent moins à la technologie qu'aux personnes et aux dynamiques organisationnelles. Cet article passe en revue chaque grande fonction de l'entreprise chez un fabricant ou distributeur de taille intermédiaire et répond à trois questions : où l'IA viendra-t-elle augmenter vos collaborateurs actuels ? Où finira-t-elle par remplacer certains rôles ou certaines tâches ? Et à quoi ressemble le calendrier d'adoption ?
 
 Nous utilisons un cadre simple tout au long de cet article :

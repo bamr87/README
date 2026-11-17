@@ -9,13 +9,11 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **29 pages** across **5 sections** (max depth 3).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **24 pages** across **5 sections** (max depth 3).
 
 - [🛠️ scripts](../scripts/README.md)
 - [Changelog](../scripts/CHANGELOG.md)
-- [Linting Configuration Management](../scripts/linting/README.md)
 - [PRD — scripts](../scripts/PRD.md)
-- [Rename Directory Utility - Quick Reference](../scripts/RENAME-DIRECTORY-QUICK-REFERENCE.md)
 - [scripts (AGENTS)](../scripts/AGENTS.md)
 - [scripts (CLAUDE)](../scripts/CLAUDE.md)
 - [scripts tools](../scripts/tools/README.md)
@@ -32,14 +30,11 @@ Every published page in [`docs/scripts/`](../scripts/) as it appears in the side
     - [Architecture Decision Records](../scripts/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../scripts/docs/adr/0001-record-architecture-decisions.md)
     - [ADR NNNN — Title in sentence case](../scripts/docs/adr/0000-template.md)
-- **[🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)** <small>(7)</small>
+- **[🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)** <small>(4)</small>
   - [🍴 ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/README.md)
   - [ForkMe - Advanced GitHub Repository Forking Utility](../scripts/FORKME/FORKME.md)
-  - [ForkMe Implementation Summary](../scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md)
-  - [ForkMe Improvements Summary](../scripts/FORKME/IMPROVEMENTS.md)
   - [ForkMe Quick Reference Card](../scripts/FORKME/FORKME-QUICK-REFERENCE.md)
   - [ForkMe Real-World Examples](../scripts/FORKME/FORKME-EXAMPLES.md)
-  - [ForkMe Review & Improvements - Complete Summary](../scripts/FORKME/REVIEW-SUMMARY.md)
 - **[💾 StashMe - Multi-Repository Cloud Stash Utility](../scripts/STASHME/README.md)** <small>(4)</small>
   - [💾 StashMe - Multi-Repository Cloud Stash Utility](../scripts/STASHME/README.md)
   - [💾 StashMe - Complete Documentation](../scripts/STASHME/STASHME.md)

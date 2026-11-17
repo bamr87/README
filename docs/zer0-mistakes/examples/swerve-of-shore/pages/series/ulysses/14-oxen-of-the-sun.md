@@ -8,9 +8,12 @@ permalink: /series/ulysses/14-oxen-of-the-sun/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 14-oxen-of-the-sun.md
-title: 14 Oxen Of The Sun
+source_file: examples/swerve-of-shore/pages/series/ulysses/14-oxen-of-the-sun.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/14-oxen-of-the-sun.md
+title: 14 · Oxen of the Sun
 ---
+
 {% include page-header.html %}
 
 Episode 14 of *Ulysses*. 10pm, the maternity hospital.

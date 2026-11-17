@@ -1,0 +1,122 @@
+{
+  "corpus": {
+    "file_count": 21,
+    "fingerprint": "5db8f0a3896e7858",
+    "path": "docs/outbox",
+    "present": true,
+    "total_bytes": 53826
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Agents",
+      "Task families",
+      "Protocol",
+      "Arena layout",
+      "Watch column",
+      "Falsifiers",
+      "Documentation"
+    ],
+    "readme": "README.md",
+    "summary": "Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer.",
+    "title": "outbox"
+  },
+  "key_docs": [
+    "README.md",
+    "SCHEMA.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "e2e/README.md",
+    "docs/constitution.md",
+    "PRD.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/outbox.md",
+    "fingerprint": "459191c53e4947ec",
+    "index": "outbox/README.md",
+    "max_depth": 3,
+    "pages": 21,
+    "present": true,
+    "sections": 4,
+    "skipped": 0,
+    "title": "Outbox",
+    "top_sections": [
+      {
+        "index": null,
+        "pages": 4,
+        "path": "agents",
+        "title": "Agents",
+        "type": "section"
+      },
+      {
+        "index": "outbox/docs/README.md",
+        "pages": 10,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/outbox.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "outbox",
+    "registry_description": "Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer.",
+    "repo": "bamr87/outbox",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/outbox"
+  },
+  "rollups": {
+    "categories": {
+      "outbox": 21
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "json"
+    ],
+    "indexed_documents": 21,
+    "top_tags": [],
+    "total_words": 7481
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": true,
+    "has_security_policy": false
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md",
+      "SCHEMA.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 10,
+        "name": "docs"
+      },
+      {
+        "doc_count": 4,
+        "name": "agents"
+      },
+      {
+        "doc_count": 1,
+        "name": "e2e"
+      }
+    ]
+  }
+}

@@ -19,15 +19,18 @@ permalink: /quickstart/
 preview: /images/previews/zer0-mistakes-quick-start-guide.png
 sidebar:
   nav: quickstart
-source_file: index.md
+source_file: pages/_quickstart/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_quickstart/index.md
 tags:
 - jekyll
 - docker
 - setup
 - development
 - ai-powered
-title: Quick Start Guide
+title: Zer0-Mistakes Quick Start Guide
 ---
+
 # Quick Start Guide
 
 Get your **zer0-mistakes** Jekyll site running in under 5 minutes. Choose the path that fits your goal:
@@ -60,7 +63,7 @@ Your site will be live at `http://localhost:4000`.
 
 ![Install wizard running in terminal](/assets/images/quickstart/install-oneliner.png)
 
-Prefer a browser over a terminal? The **[Site Builder](/quickstart/site-builder/)** walks you through the same result step by step, with Claude checking your machine, drafting your configuration and content, and starting Docker for you.
+Prefer a browser over a terminal? The **[[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]]** walks you through the same result step by step, with Claude checking your machine, drafting your configuration and content, and starting Docker for you.
 
 ## What You Get
 
@@ -154,11 +157,11 @@ bundle install && bundle exec jekyll serve
 
 | Guide | Purpose | Time | Difficulty |
 |-------|---------|------|------------|
-| **[Site Builder](/quickstart/site-builder/)** | Guided wizard with Claude: prerequisites → configuration → running site | 15 min | Beginner |
-| **[Machine Setup](/quickstart/machine-setup/)** | Install Docker, Git, GitHub CLI | 10 min | Beginner |
-| **[Jekyll Setup](/quickstart/jekyll-setup/)** | Run the dev server, create content | 5 min | Beginner |
-| **[GitHub Setup](/quickstart/github-setup/)** | Fork, deploy to GitHub Pages | 10 min | Intermediate |
-| **[Personalization](/quickstart/personalization/)** | Configure `_config.yml` for your site | 5 min | Beginner |
+| **[[zer0-mistakes/pages/_quickstart/site-builder\|Site Builder]]** | Guided wizard with Claude: prerequisites → configuration → running site | 15 min | Beginner |
+| **[[zer0-mistakes/pages/_quickstart/machine-setup\|Machine Setup]]** | Install Docker, Git, GitHub CLI | 10 min | Beginner |
+| **[[zer0-mistakes/pages/_quickstart/jekyll-setup\|Jekyll Setup]]** | Run the dev server, create content | 5 min | Beginner |
+| **[[zer0-mistakes/pages/_quickstart/github-setup\|GitHub Setup]]** | Fork, deploy to GitHub Pages | 10 min | Intermediate |
+| **[[zer0-mistakes/pages/_quickstart/personalization\|Personalization]]** | Configure `_config.yml` for your site | 5 min | Beginner |
 
 ## Quick Troubleshooting
 
@@ -194,8 +197,8 @@ docker compose exec -T jekyll bundle exec jekyll build \
 |----------|---------|
 | [GitHub Issues](https://github.com/bamr87/zer0-mistakes/issues) | Bug reports and technical support |
 | [Discussions](https://github.com/bamr87/zer0-mistakes/discussions) | Community Q&A and feature requests |
-| [Installation Guide](/docs/installation/) | Deep-dive setup documentation |
+| [[zer0-mistakes/pages/_docs/installation\|Installation Guide]] | Deep-dive setup documentation |
 
 ---
 
-Start with **[Machine Setup →](/quickstart/machine-setup/)** if this is your first time, or jump straight to [Installation Options](#installation-options) to pick your path.
+Start with **[[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup →]]** if this is your first time, or jump straight to [Installation Options](#installation-options) to pick your path.

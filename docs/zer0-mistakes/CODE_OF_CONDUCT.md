@@ -1,5 +1,7 @@
 ---
 source_file: CODE_OF_CONDUCT.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/CODE_OF_CONDUCT.md
 title: '🤖 AI Code of Conduct: A Guide for Digital Beings and Their Human Friends'
 ---
 # 🤖 AI Code of Conduct: A Guide for Digital Beings and Their Human Friends

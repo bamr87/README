@@ -50,7 +50,9 @@ rewards:
   - 🎨 Portrait Artist — Custom avatar displayed on character sheet
   progression_points: 50
 skill_focus: frontend
-source_file: side-quest-avatar-forge.md
+source_file: pages/_quests/0001/side-quest-avatar-forge.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/side-quest-avatar-forge.md
 tags:
 - '0001'
 - contributor
@@ -59,7 +61,7 @@ tags:
 - customization
 - hands-on
 - gamified-learning
-title: '🎨 Avatar Forge: Crafting Your Digital Portrait'
+title: 'Avatar Forge: Crafting Your Digital Portrait'
 validation_criteria:
   completion_requirements:
   - Avatar URL set in contributor data file
@@ -149,7 +151,7 @@ Once your avatar is live, you've earned the **Portrait Artist** badge (+50 XP).
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character: Crafting Your Contributor Identity]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

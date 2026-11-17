@@ -12,7 +12,9 @@ permalink: /docs/features/particles-background/
 preview: /images/previews/particles-background.png
 sidebar:
   nav: docs
-source_file: particles-background.md
+source_file: pages/_docs/features/particles-background.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/particles-background.md
 tags:
 - ui
 - animation
@@ -20,6 +22,7 @@ tags:
 - landing
 title: Particles Background
 ---
+
 # Particles Background
 
 An optional animated particle field that sits behind hero and landing content, adding subtle motion and depth. Particles drift, connect, and react to the cursor, and the whole effect is configured from a single JSON file.
@@ -46,4 +49,4 @@ The vendored [`assets/js/particles.js`](https://github.com/bamr87/zer0-mistakes/
 
 ## Related features
 
-- [Theme Color Modes](/docs/features/color-modes/)
+- [[zer0-mistakes/pages/_docs/features/color-modes|Theme Color Modes]]

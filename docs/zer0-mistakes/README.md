@@ -34,6 +34,8 @@ preview: /assets/images/wizard-on-journey.png
 slug: zer0
 snippet: AI-native Jekyll theme — automated, agent-friendly, AIEO-optimized
 source_file: README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/README.md
 sub-title: AI-Native Jekyll Theme
 tags:
 - jekyll
@@ -239,10 +241,10 @@ zer0-mistakes treats AI as core infrastructure across **install → author → b
 | **AI wizard** | `install wizard --ai` generates a site spec via OpenAI, records AI provenance, falls back to profile defaults | [`scripts/install/ai/wizard.sh`](scripts/install/ai/wizard.sh) |
 | **Site scraper** | `install init --scrape <URL>` — BFS-crawls any site, classifies pages by kind, downloads assets, wires nav, seeds config; zero post-processing needed | [`scripts/install/scrape.sh`](scripts/install/scrape.sh), [`scripts/install/scrape_html.py`](scripts/install/scrape_html.py) |
 | **Cross-tool agent guide** | Single entry point for any [agents.md](https://agents.md/)-aware AI tool | [`AGENTS.md`](AGENTS.md) |
-| **Copilot project context** | Architecture, conventions, commands, release flow | [`.github/copilot-instructions.md`](.github/copilot-instructions.md) |
-| **File-scoped instructions** | `applyTo:` globs auto-load guidance for `_layouts/`, `_includes/`, `scripts/`, `test/`, `docs/`, version files | [`.github/instructions/`](.github/instructions/) |
-| **Reusable agent prompts** | `commit-publish`, `frontmatter-maintainer`, `seed` (full-rebuild blueprint) | [`.github/prompts/`](.github/prompts/) |
-| **Cursor slash-commands** | Mirrors prompts as `/commit-publish`, `/frontend-run-improve` | [`.cursor/commands/`](.cursor/commands/) |
+| **Copilot project context** | Architecture, conventions, commands, release flow | [`.github/copilot-instructions.md`](dot-github/copilot-instructions.md) |
+| **File-scoped instructions** | `applyTo:` globs auto-load guidance for `_layouts/`, `_includes/`, `scripts/`, `test/`, `docs/`, version files | [`.github/instructions/`](dot-github/instructions/) |
+| **Reusable agent prompts** | `commit-publish`, `frontmatter-maintainer`, `seed` (full-rebuild blueprint) | [`.github/prompts/`](dot-github/prompts/) |
+| **Cursor slash-commands** | Mirrors prompts as `/commit-publish`, `/frontend-run-improve` | [`.cursor/commands/`](dot-cursor/commands/) |
 | **AI preview images** | Python engine + script generate OpenAI/DALL·E images for posts missing previews | [`scripts/lib/preview_generator.py`](scripts/lib/preview_generator.py), [`scripts/generate-preview-images.sh`](scripts/generate-preview-images.sh) |
 | **AI release pipeline** | Conventional-commit analyzer chooses MAJOR/MINOR/PATCH, writes CHANGELOG, tags & publishes | [`scripts/analyze-commits.sh`](scripts/analyze-commits.sh), [`scripts/bin/release`](scripts/bin/release) |
 | **AIEO content layer** | `SoftwareApplication`, `WebPage`, `FAQPage`, `Person` JSON-LD; glossary; FAQ; dated roadmap | [See AIEO section](#-aieo-optimized--built-for-ai-citation) |
@@ -273,10 +275,10 @@ zer0-mistakes treats AI as core infrastructure across **install → author → b
 
 Clone the repo (or fork) and your editor's AI agent will pick up project context automatically:
 
-- **GitHub Copilot / VS Code** → reads [`.github/copilot-instructions.md`](.github/copilot-instructions.md) + `.github/instructions/*.instructions.md`
+- **GitHub Copilot / VS Code** → reads [`.github/copilot-instructions.md`](dot-github/copilot-instructions.md) + `.github/instructions/*.instructions.md`
 - **Cursor** → reads `.cursor/commands/` for slash-commands; falls back to `AGENTS.md`
 - **Claude Code / Codex / Aider / Jules / Continue** → read [`AGENTS.md`](AGENTS.md) per the [agents.md](https://agents.md/) convention
-- **Custom agents** → Load layered guidance from [`.github/`](.github/) on demand
+- **Custom agents** → Load layered guidance from [`.github/`](dot-github/) on demand
 
 > No configuration required. The guidance is layered — agents read only what's needed for the file they're touching.
 
@@ -682,7 +684,7 @@ zer0-mistakes documentation is split across three audiences. Pick the layer that
 
 - **`/docs/`** — technical reference for theme contributors (architecture, design system, internals).
 - **`/pages/_docs/`** — published user guides on [zer0-mistakes.com/docs/](https://zer0-mistakes.com/docs/) (tutorials, how-tos, FAQs).
-- **`.github/`** — AI agent guidance ([copilot-instructions.md](.github/copilot-instructions.md), file-scoped instructions, reusable prompts, project seed).
+- **`.github/`** — AI agent guidance ([copilot-instructions.md](dot-github/copilot-instructions.md), file-scoped instructions, reusable prompts, project seed).
 
 ### Quick Links
 
@@ -744,22 +746,22 @@ zer0-mistakes ships with a **complete CI/CD and automation suite** powered by [G
 
 ### Workflow Catalogue
 
-All workflows live under [`.github/workflows/`](.github/workflows/).
+All workflows live under [`.github/workflows/`](dot-github/workflows/).
 
 | # | Workflow | File | Trigger | Purpose |
 |---|----------|------|---------|---------|
-| 1 | **Comprehensive CI Pipeline** | [`ci.yml`](.github/workflows/ci.yml) | push / PR / dispatch | Detect changes → quality control (incl. quick preflight) → matrix test suite → integration tests → build & validate |
-| 2 | **TEST (Latest Dependencies)** | [`test-latest.yml`](.github/workflows/test-latest.yml) | daily schedule / push / dispatch | Zero-pin Docker build with bleeding-edge gems; tests then promotes passing images to Docker Hub |
-| 3 | **Release** | [`release.yml`](.github/workflows/release.yml) | push to `main` | release-please opens a release PR from Conventional Commits; merging it tags `vX.Y.Z` and publishes the gem to [RubyGems](https://rubygems.org/gems/jekyll-theme-zer0) |
-| 4 | **Update Dependencies** | [`update-dependencies.yml`](.github/workflows/update-dependencies.yml) | weekly schedule | Refreshes `Gemfile.lock` to latest compatible versions and opens an automated PR |
-| 5 | **CodeQL Security Scanning** | [`codeql.yml`](.github/workflows/codeql.yml) | push / PR on code paths + weekly | Static security analysis across Ruby, JavaScript/TypeScript, Python, and Actions |
-| 6 | **Content & Docs Review** | [`ai-content-review.yml`](.github/workflows/ai-content-review.yml) | PR on docs/content | Deterministic SEO/quality review + optional Claude agent + docs front matter, internal-link, and markdownlint checks |
-| 7 | **Convert Jupyter Notebooks** | [`convert-notebooks.yml`](.github/workflows/convert-notebooks.yml) | push to `pages/_notebooks/**.ipynb` | Auto-converts `.ipynb` → Jekyll-friendly Markdown with extracted images |
-| 8 | **Sync** | [`sync.yml`](.github/workflows/sync.yml) | push affecting `_data/backlog.yml` or `_data/roadmap.yml` | Mirrors the backlog to GitHub Issues and regenerates the README roadmap section |
-| 9 | **Install Matrix** | [`install-matrix.yml`](.github/workflows/install-matrix.yml) | PR on installer paths + weekly | Installer e2e across OS × Ruby, the `curl \| bash` bootstrap, and the `install doctor` diagnostic |
-| 10 | **Deploy chat proxy** | [`deploy-chat-proxy.yml`](.github/workflows/deploy-chat-proxy.yml) | push to chat-proxy worker files | Deploys the AI chat proxy Worker to Cloudflare |
-| 11 | **Auto-merge low-risk PRs** | [`auto-merge.yml`](.github/workflows/auto-merge.yml) | PR labeled `auto-merge` | Enables GitHub native auto-merge once required checks pass |
-| 12 | **Lint workflows** | [`lint-workflows.yml`](.github/workflows/lint-workflows.yml) | PR/push on `.github/**` | actionlint gate on the workflow + composite-action definitions |
+| 1 | **Comprehensive CI Pipeline** | [`ci.yml`](dot-github/workflows/ci.yml) | push / PR / dispatch | Detect changes → quality control (incl. quick preflight) → matrix test suite → integration tests → build & validate |
+| 2 | **TEST (Latest Dependencies)** | [`test-latest.yml`](dot-github/workflows/test-latest.yml) | daily schedule / push / dispatch | Zero-pin Docker build with bleeding-edge gems; tests then promotes passing images to Docker Hub |
+| 3 | **Release** | [`release.yml`](dot-github/workflows/release.yml) | push to `main` | release-please opens a release PR from Conventional Commits; merging it tags `vX.Y.Z` and publishes the gem to [RubyGems](https://rubygems.org/gems/jekyll-theme-zer0) |
+| 4 | **Update Dependencies** | [`update-dependencies.yml`](dot-github/workflows/update-dependencies.yml) | weekly schedule | Refreshes `Gemfile.lock` to latest compatible versions and opens an automated PR |
+| 5 | **CodeQL Security Scanning** | [`codeql.yml`](dot-github/workflows/codeql.yml) | push / PR on code paths + weekly | Static security analysis across Ruby, JavaScript/TypeScript, Python, and Actions |
+| 6 | **Content & Docs Review** | [`ai-content-review.yml`](dot-github/workflows/ai-content-review.yml) | PR on docs/content | Deterministic SEO/quality review + optional Claude agent + docs front matter, internal-link, and markdownlint checks |
+| 7 | **Convert Jupyter Notebooks** | [`convert-notebooks.yml`](dot-github/workflows/convert-notebooks.yml) | push to `pages/_notebooks/**.ipynb` | Auto-converts `.ipynb` → Jekyll-friendly Markdown with extracted images |
+| 8 | **Sync** | [`sync.yml`](dot-github/workflows/sync.yml) | push affecting `_data/backlog.yml` or `_data/roadmap.yml` | Mirrors the backlog to GitHub Issues and regenerates the README roadmap section |
+| 9 | **Install Matrix** | [`install-matrix.yml`](dot-github/workflows/install-matrix.yml) | PR on installer paths + weekly | Installer e2e across OS × Ruby, the `curl \| bash` bootstrap, and the `install doctor` diagnostic |
+| 10 | **Deploy chat proxy** | [`deploy-chat-proxy.yml`](dot-github/workflows/deploy-chat-proxy.yml) | push to chat-proxy worker files | Deploys the AI chat proxy Worker to Cloudflare |
+| 11 | **Auto-merge low-risk PRs** | [`auto-merge.yml`](dot-github/workflows/auto-merge.yml) | PR labeled `auto-merge` | Enables GitHub native auto-merge once required checks pass |
+| 12 | **Lint workflows** | [`lint-workflows.yml`](dot-github/workflows/lint-workflows.yml) | PR/push on `.github/**` | actionlint gate on the workflow + composite-action definitions |
 
 > 💡 GitHub Pages adds an additional managed `pages-build-deployment` run on every push to `main`.
 
@@ -788,8 +790,8 @@ gh run watch --repo bamr87/zer0-mistakes
 
 When you fork the theme as a starter, the workflows come with you. To make them safe and useful in your fork:
 
-1. **Configure gem publishing** if you plan to publish your own gem (`release.yml` uses [`bamr87/.github`](https://github.com/bamr87/.github) reusable workflows); otherwise disable [`release.yml`](.github/workflows/release.yml).
-2. **Tune triggers** in [`update-dependencies.yml`](.github/workflows/update-dependencies.yml) (default: weekly).
+1. **Configure gem publishing** if you plan to publish your own gem (`release.yml` uses [`bamr87/.github`](https://github.com/bamr87/.github) reusable workflows); otherwise disable [`release.yml`](dot-github/workflows/release.yml).
+2. **Tune triggers** in [`update-dependencies.yml`](dot-github/workflows/update-dependencies.yml) (default: weekly).
 3. **GitHub Pages** is auto-enabled when you push to `main` if your repo is `<username>.github.io`.
 
 ---
@@ -914,7 +916,7 @@ git push origin feature/awesome-feature
 
 | Metric | Value |
 |--------|-------|
-| **Current Version** | 1.19.1 ([RubyGems](https://rubygems.org/gems/jekyll-theme-zer0), [CHANGELOG](/CHANGELOG)) |
+| **Current Version** | 1.19.1 ([RubyGems](https://rubygems.org/gems/jekyll-theme-zer0), [[zer0-mistakes/CHANGELOG\|CHANGELOG]]) |
 | **Documented Features** | 43 ([Feature Registry](https://github.com/bamr87/zer0-mistakes/blob/main/_data/features.yml)) |
 | **Setup Time** | 2-5 minutes ([install.sh benchmarks](https://github.com/bamr87/zer0-mistakes/blob/main/install.sh)) |
 | **Documentation Pages** | 70+ ([browse docs](https://zer0-mistakes.com/pages/)) |

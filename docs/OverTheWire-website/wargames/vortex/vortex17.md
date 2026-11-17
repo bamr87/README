@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 17
-source_file: vortex17.md
+source_file: wargames/vortex/vortex17.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex17.md
 title: Vortex17
 ---
 Working Backwards

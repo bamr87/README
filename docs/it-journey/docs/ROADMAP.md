@@ -21,17 +21,20 @@ keywords:
 lastmod: 2026-04-25 00:00:00+00:00
 layout: default
 permalink: /roadmap/
-source_file: ROADMAP.md
+source_file: docs/ROADMAP.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/ROADMAP.md
 tags:
 - roadmap
 - learning-path
 - it-journey
 - gamified-learning
 - ai-powered-development
-title: Roadmap
+title: 'IT-Journey: The Master Roadmap'
 toc: true
 toc_sticky: true
 ---
+
 This roadmap is historical and no longer maintained: its task lists are not tracked. The backlog of record is [GitHub Issues](https://github.com/bamr87/it-journey/issues).
 
 > *"Every expert was once a beginner who refused to give up after their first segmentation fault."*
@@ -81,9 +84,9 @@ Your entry point into digital mastery - rapid deployment tutorials to get you st
 
 **Current State:** Active development with foundational tutorials
 
-* ✅ [Machine Setup Guide](/quickstart/machine-setup/) - Complete development environment
-* ✅ [GitHub Setup](/quickstart/github-setup/) - Version control fundamentals  
-* ✅ [Jekyll Setup](/quickstart/jekyll-setup/) - Static site generation
+* ✅ [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup Guide]] - Complete development environment
+* ✅ [[zer0-mistakes/pages/_quickstart/github-setup|GitHub Setup]] - Version control fundamentals  
+* ✅ [[zer0-mistakes/pages/_quickstart/jekyll-setup|Jekyll Setup]] - Static site generation
 * ✅ [Django & Git Setup](/quickstart/2025-03-08-setting-up-django-and-git/) - Web framework integration
 * 🔄 [VS Code for Neuroscience](/quickstart/2025-07-22-vscode-for-neuroscience/) - (In Progress)
 
@@ -91,9 +94,9 @@ Your entry point into digital mastery - rapid deployment tutorials to get you st
 
 | Tutorial | Focus Area | Time | Level |
 |----------|-----------|------|-------|
-| [Machine Setup](/quickstart/machine-setup/) | Development Environment | 30-60 min | 🟢 Beginner |
-| [GitHub Setup](/quickstart/github-setup/) | Version Control | 15-30 min | 🟢 Beginner |
-| [Jekyll Setup](/quickstart/jekyll-setup/) | Static Sites | 20-40 min | 🟡 Intermediate |
+| [[zer0-mistakes/pages/_quickstart/machine-setup\|Machine Setup]] | Development Environment | 30-60 min | 🟢 Beginner |
+| [[zer0-mistakes/pages/_quickstart/github-setup\|GitHub Setup]] | Version Control | 15-30 min | 🟢 Beginner |
+| [[zer0-mistakes/pages/_quickstart/jekyll-setup\|Jekyll Setup]] | Static Sites | 20-40 min | 🟡 Intermediate |
 | [Django & Git](/quickstart/2025-03-08-setting-up-django-and-git/) | Web Framework | 45-90 min | 🟡 Intermediate |
 
 **Roadmap Goals:**
@@ -121,7 +124,7 @@ Where learning becomes an adventure through Posts and Quests - 46+ gamified lear
 * ✅ Real-world skill application through challenges
 * ✅ AI-assisted development methodologies
 
-**Quest Navigation Hub:** [Browse All Quests](/quests/) | [World Map Guide](/quests/codex/world_map/)
+**Quest Navigation Hub:** [[it-journey/pages/_quests/README|Browse All Quests]] | [World Map Guide](/quests/codex/world_map/)
 
 #### 🗺️ Quest System by Level
 
@@ -129,40 +132,40 @@ Where learning becomes an adventure through Posts and Quests - 46+ gamified lear
 
 | Quest | Focus | Difficulty | Platform |
 |-------|-------|------------|----------|
-| [Hello n00b](/quests/0000/hello-noob/) | GitHub & Community | 🟢 Easy | All |
-| [Character Building](/quests/0000/character-building/) | Environment Setup | 🟢 Easy | All |
-| [IT Fundamentals](/quests/0000/it-fundamentals/) | Core Concepts | 🟢 Easy | All |
-| [OS Selection](/quests/0000/os-selection/) | Platform Choice | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/hello-noob\|Hello n00b]] | GitHub & Community | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/character-building\|Character Building]] | Environment Setup | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/it-fundamentals\|IT Fundamentals]] | Core Concepts | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/os-selection\|OS Selection]] | Platform Choice | 🟢 Easy | All |
 | [VS Code Mastery](/quests/0000/vscode-mastery-quest/) | IDE Configuration | 🟡 Medium | All |
-| [Terminal Fundamentals](/quests/0000/terminal-fundamentals/) | Command Line Basics | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/terminal-fundamentals\|Terminal Fundamentals]] | Command Line Basics | 🟢 Easy | All |
 | [Bashcrawl Online](https://bamr87.github.io/bashcrawl/) | Browser Terminal Practice | 🟢 Easy | All |
-| [Bashcrawl Adventure](/quests/0000/bashcrawl/) | Terminal Game Quest | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/bashcrawl/README\|Bashcrawl Adventure]] | Terminal Game Quest | 🟢 Easy | All |
 | [Bash-run Extension Lab](/quests/0000/side-quests/bash-run/) | Local Bash Project Extension | 🟡 Medium | All |
-| [Markdown Mastery](/quests/0000/markdown-mastery/) | Documentation | 🟢 Easy | All |
-| [Git Basics](/quests/0000/git-basics/) | Version Control | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/markdown-mastery\|Markdown Mastery]] | Documentation | 🟢 Easy | All |
+| [[it-journey/pages/_quests/0000/git-basics\|Git Basics]] | Version Control | 🟢 Easy | All |
 
 **Platform-Specific Paths:**
 - [Hello Windows](/quests/0000/hello-win/) - 🪟 Windows development setup
 - [Hello macOS](/quests/0000/hello-mac/) - 🍎 Mac development environment
 - [Hello Linux](/quests/0000/hello-linux/) - 🐧 Linux configuration
-- [Hello Cloud](/quests/0000/hello-cloud/) - ☁️ Cloud platform basics
+- [[it-journey/pages/_quests/0000/hello-cloud|Hello Cloud]] - ☁️ Cloud platform basics
 
 **🟢 Level 0001 - Apprentice Trials** *Build your first projects and master the web*
 
 | Quest | Technology | Time | Type |
 |-------|-----------|------|------|
-| [Personal Site](/quests/0001/personal-site/) | Web Development | 90-120 min | 🏰 Main |
-| [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/) | Static Sites | 60-90 min | 🏰 Main |
-| [GitHub Pages Basics](/quests/0001/github-pages-basics/) | Web Hosting | 45-60 min | 🏰 Main |
-| [Liquid Templating](/quests/0001/liquid-templating/) | Template Engine | 60-90 min | ⚔️ Side |
-| [YAML Configuration](/quests/0001/yaml-configuration/) | Data Formats | 30-45 min | ⚔️ Side |
+| [[it-journey/pages/_quests/0001/personal-site\|Personal Site]] | Web Development | 90-120 min | 🏰 Main |
+| [[it-journey/pages/_quests/0001/jekyll-fundamentals\|Jekyll Fundamentals]] | Static Sites | 60-90 min | 🏰 Main |
+| [[it-journey/pages/_quests/0001/github-pages-basics\|GitHub Pages Basics]] | Web Hosting | 45-60 min | 🏰 Main |
+| [[it-journey/pages/_quests/0001/liquid-templating\|Liquid Templating]] | Template Engine | 60-90 min | ⚔️ Side |
+| [[it-journey/pages/_quests/0001/yaml-configuration\|YAML Configuration]] | Data Formats | 30-45 min | ⚔️ Side |
 | [Terminal Illness](/quests/0001/terminal-illness/) | Advanced Terminal | 60-90 min | ⚔️ Side |
 
 **🟡 Level 0010 - Journeyman Challenges** *Master scripting and advanced tooling*
 
 | Quest | Focus | Deliverable | Level |
 |-------|-------|-------------|-------|
-| [Bash Scripting](/quests/0010/bash-scripting/) | Shell Automation | Scripts Library | 🟡 Medium |
+| [[it-journey/pages/_quests/0010/bash-scripting\|Bash Scripting]] | Shell Automation | Scripts Library | 🟡 Medium |
 | [Oh-My-Zsh Enchantment](/quests/0010/oh-my-zsh-terminal-enchantment/) | Terminal Enhancement | Custom Shell | 🟡 Medium |
 | [Nerd Font Enchantment](/quests/0010/nerd-font-enchantment-side-quest/) | Terminal Icons | Enhanced Terminal | 🟢 Easy |
 | [Jekyll-Mermaid Integration](/quests/0010/jekyll-mermaid-integration-quest/) | Diagram Integration | Documentation | 🟡 Medium |
@@ -181,16 +184,16 @@ Where learning becomes an adventure through Posts and Quests - 46+ gamified lear
 #### 🎯 Specialized Quest Categories
 
 **🔧 DevOps & Automation (Level 0100-0101)**
-- [Container Fundamentals](/quests/0100/container-fundamentals/) - Docker basics
-- [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/) - Multi-container apps
-- [GitHub Actions Basics](/quests/0101/github-actions-basics/) - CI/CD automation
-- [CI/CD Fundamentals](/quests/0101/cicd-fundamentals/) - Pipeline design
-- [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Production workflows
+- [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]] - Docker basics
+- [[it-journey/pages/_quests/0100/docker-compose-orchestration|Docker Compose Orchestration]] - Multi-container apps
+- [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]] - CI/CD automation
+- [[it-journey/pages/_quests/0101/cicd-fundamentals|CI/CD Fundamentals]] - Pipeline design
+- [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Production workflows
 
 **🎨 Frontend & Documentation (Level 0100)**
 - [Jekyll-Mermaid Integration](/quests/0010/jekyll-mermaid-integration-quest/) - Diagram integration
-- [Frontend Development](/quests/0100/frontend/) - UI/UX development
-- [Frontend Docker](/quests/0100/frontend-docker/) - Containerized frontend
+- [[it-journey/pages/_quests/0100/frontend|Frontend Development]] - UI/UX development
+- [[it-journey/pages/_quests/0100/frontend-docker|Frontend Docker]] - Containerized frontend
 - [Bootstrap Framework](/quests/0010/bootstrap-framework/) - CSS framework
 
 **🤖 AI-Powered Development (Level 0010-0011)**
@@ -236,22 +239,22 @@ Deep knowledge vaults for comprehensive understanding - your technical reference
 * ✅ Search functionality and navigation
 * ✅ Version control and collaborative editing
 
-**Library Access:** [Documentation Hub](/docs/)
+**Library Access:** [[it-journey/_data/brand/sections/docs|Documentation Hub]]
 
 #### 📖 Available Documentation
 
 **Core Documentation:**
-- [Jekyll Documentation](/docs/jekyll/) - Static site generation guides
-- [Site Configuration](/about/config/) - Platform settings and customization
-- [Theme Customization](/about/theme/) - Visual design and layouts
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Documentation]] - Static site generation guides
+- [[zer0-mistakes/pages/_about/settings/config|Site Configuration]] - Platform settings and customization
+- [[zer0-mistakes/pages/_about/theme|Theme Customization]] - Visual design and layouts
 
 **Platform Guides:**
-- [Contributing Guide](/about/contributing/) - How to add content
+- [[it-journey/pages/_about/contribute/contributing|Contributing Guide]] - How to add content
 - [Sitemap](/about/sitemap/) - Complete site structure
-- [Feature Overview](/about/features/) - Platform capabilities
+- [[it-journey/pages/_about/features/index|Feature Overview]] - Platform capabilities
 
 **Best Practices & Standards:**
-- [Development Principles](/about/) - DFF, DRY, KIS, REnO, MVP, COLAB, AIPD
+- [[it-journey/pages/_about/about|Development Principles]] - DFF, DRY, KIS, REnO, MVP, COLAB, AIPD
 - Quest Creation Instructions - See `.github/instructions/quest.instructions.md`
 - Post Creation Instructions - See `.github/instructions/posts.instructions.md`
 
@@ -282,7 +285,7 @@ Interactive code environments and personal knowledge capture - learn by doing!
 * ✅ Code snippet management system
 * ✅ Personal learning log capabilities
 
-**Notebook Hub:** [Interactive Notebooks](/notebooks/)
+**Notebook Hub:** [[zer0-mistakes/pages/notebooks|Interactive Notebooks]]
 
 #### 💻 Available Notebooks
 
@@ -338,20 +341,20 @@ graph LR
 ```
 
 **Step-by-Step Path:**
-1. [Hello n00b Quest](/quests/0000/hello-noob/) - 15-30 min - Set up GitHub account
-2. [Character Building](/quests/0000/character-building/) - 30-45 min - Configure development environment
-3. [IT Fundamentals](/quests/0000/it-fundamentals/) - 60 min - Learn core concepts
+1. [[it-journey/pages/_quests/0000/hello-noob|Hello n00b Quest]] - 15-30 min - Set up GitHub account
+2. [[it-journey/pages/_quests/0000/character-building|Character Building]] - 30-45 min - Configure development environment
+3. [[it-journey/pages/_quests/0000/it-fundamentals|IT Fundamentals]] - 60 min - Learn core concepts
 4. **Platform Selection:**
    - [Hello Windows](/quests/0000/hello-win/) OR
    - [Hello macOS](/quests/0000/hello-mac/) OR
    - [Hello Linux](/quests/0000/hello-linux/)
 5. [VS Code Mastery](/quests/0000/vscode-mastery-quest/) - 90 min - Master your primary tool
-6. [Bash Run Quest](/quests/0000/bash-run/) - 90 min - Terminal game learning
-7. [Personal Site Project](/quests/0001/personal-site/) - Build your portfolio
+6. [[it-journey/pages/_quests/0000/bash-run|Bash Run Quest]] - 90 min - Terminal game learning
+7. [[it-journey/pages/_quests/0001/personal-site|Personal Site Project]] - Build your portfolio
 
 **Supporting Resources:**
-- [Machine Setup QuickStart](/quickstart/machine-setup/) - Environment setup
-- [GitHub Setup QuickStart](/quickstart/github-setup/) - Version control basics
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup QuickStart]] - Environment setup
+- [[zer0-mistakes/pages/_quickstart/github-setup|GitHub Setup QuickStart]] - Version control basics
 
 ---
 
@@ -377,14 +380,14 @@ graph LR
 **Recommended Quest Path:**
 1. [Oh-My-Zsh Enchantment](/quests/0010/oh-my-zsh-terminal-enchantment/) - Enhanced terminal
 2. [Nerd Font Enchantment](/quests/0010/nerd-font-enchantment-side-quest/) - Terminal customization
-3. [Container Fundamentals](/quests/0100/container-fundamentals/) - Containerization
+3. [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]] - Containerization
 4. [Jekyll-Mermaid Integration](/quests/0010/jekyll-mermaid-integration-quest/) - Documentation
-5. [GitHub Actions Basics](/quests/0101/github-actions-basics/) - CI/CD automation
-6. [Hello Cloud](/quests/0000/hello-cloud/) - Cloud deployment
+5. [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]] - CI/CD automation
+6. [[it-journey/pages/_quests/0000/hello-cloud|Hello Cloud]] - Cloud deployment
 
 **Skill Building:**
-- [Frontend Development](/quests/0100/frontend/) - UI/UX development
-- [Bash Scripting](/quests/0010/bash-scripting/) - Automation scripts
+- [[it-journey/pages/_quests/0100/frontend|Frontend Development]] - UI/UX development
+- [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]] - Automation scripts
 - [Django & Git Setup](/quickstart/2025-03-08-setting-up-django-and-git/) - Web framework
 
 **Learn from Experience:**
@@ -477,20 +480,20 @@ graph LR
 ```
 
 1. **Foundation Realm** (QuickStart)
-   * [Jekyll Setup](/quickstart/jekyll-setup/) - Static site generation mastery
-   * [Machine Setup](/quickstart/machine-setup/) - Development environment
+   * [[zer0-mistakes/pages/_quickstart/jekyll-setup|Jekyll Setup]] - Static site generation mastery
+   * [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] - Development environment
    * HTML/CSS fundamentals with live examples
    * JavaScript essentials and modern ES6+ features
 
 2. **Adventure Realm** (Journey/Quests)
-   * [Personal Site Project](/quests/0001/personal-site/) - Build your portfolio
-   * [Frontend Development](/quests/0100/frontend/) - UI/UX development path
+   * [[it-journey/pages/_quests/0001/personal-site|Personal Site Project]] - Build your portfolio
+   * [[it-journey/pages/_quests/0100/frontend|Frontend Development]] - UI/UX development path
    * [Jekyll-Mermaid Integration](/quests/0010/jekyll-mermaid-integration-quest/) - Enhanced documentation
    * Backend API development challenges
 
 3. **Knowledge Vault** (Library)
-   * [Jekyll Documentation](/docs/jekyll/) - Comprehensive guides
-   * [Theme Customization](/about/theme/) - Design patterns
+   * [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Documentation]] - Comprehensive guides
+   * [[zer0-mistakes/pages/_about/theme|Theme Customization]] - Design patterns
    * Web performance optimization guides
    * Security best practices for web applications
    * Accessibility and inclusive design principles
@@ -527,24 +530,24 @@ graph LR
 ```
 
 1. **Foundation Realm** (QuickStart)
-   * [Machine Setup](/quickstart/machine-setup/) - Development tools
+   * [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] - Development tools
    * [Django & Git Setup](/quickstart/2025-03-08-setting-up-django-and-git/) - Version control integration
    * Docker containerization speedrun
    * CI/CD pipeline setup with GitHub Actions
 
 2. **Adventure Realm** (Journey/Quests)
-   * [Bash Scripting Quest](/quests/0010/bash-scripting/) - Automation fundamentals
-   * [Container Fundamentals](/quests/0100/container-fundamentals/) - Containerization deep dive
-   * [GitHub Actions Basics](/quests/0101/github-actions-basics/) - CI/CD automation
-   * [Hello Cloud](/quests/0000/hello-cloud/) - Cloud platform basics
-   * [CI/CD Fundamentals](/quests/0101/cicd-fundamentals/) - Pipeline design
+   * [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting Quest]] - Automation fundamentals
+   * [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]] - Containerization deep dive
+   * [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]] - CI/CD automation
+   * [[it-journey/pages/_quests/0000/hello-cloud|Hello Cloud]] - Cloud platform basics
+   * [[it-journey/pages/_quests/0101/cicd-fundamentals|CI/CD Fundamentals]] - Pipeline design
    * Container orchestration challenges
    * Infrastructure as Code (Terraform) quests
    * Monitoring and observability adventures
 
 3. **Knowledge Vault** (Library)
-   * [Contributing Guide](/about/contributing/) - Collaboration workflows
-   * [Site Configuration](/about/config/) - Platform management
+   * [[it-journey/pages/_about/contribute/contributing|Contributing Guide]] - Collaboration workflows
+   * [[zer0-mistakes/pages/_about/settings/config|Site Configuration]] - Platform management
    * Cloud architecture patterns and best practices
    * Security and compliance in cloud environments
    * Cost optimization strategies and tools
@@ -595,7 +598,7 @@ graph LR
    * Implement ML model deployment pipelines
 
 3. **Knowledge Vault** (Library)
-   * [Quest Creation Guide](../.github/instructions/quest.instructions.md) - AI-assisted content
+   * [Quest Creation Guide](../dot-github/instructions/quest.instructions.md) - AI-assisted content
    * AI integration patterns and best practices
    * Ethical AI development guidelines
    * Performance and scaling considerations
@@ -668,35 +671,35 @@ Transform IT-Journey into a comprehensive platform where:
 ### 📍 Essential Starting Points
 
 **Absolute Beginners:**
-1. [Hello n00b Quest](/quests/0000/hello-noob/) - Your first 30 minutes
-2. [Machine Setup QuickStart](/quickstart/machine-setup/) - Configure your system
-3. [Character Building](/quests/0000/character-building/) - Set up your environment
+1. [[it-journey/pages/_quests/0000/hello-noob|Hello n00b Quest]] - Your first 30 minutes
+2. [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup QuickStart]] - Configure your system
+3. [[it-journey/pages/_quests/0000/character-building|Character Building]] - Set up your environment
 4. [World Map Guide](/quests/codex/world_map/) - Navigate the platform
 
 **Developers with Experience:**
-1. [All Quests Index](/quests/) - Browse 46+ quests
-2. [Chronicle Archives](/posts/) - Learning from experience
-3. [Documentation Hub](/docs/) - Technical references
-4. [Interactive Notebooks](/notebooks/) - Hands-on labs
+1. [[it-journey/pages/_quests/README|All Quests Index]] - Browse 46+ quests
+2. [[zer0-CMS/sites/zer0-pages/pages/posts|Chronicle Archives]] - Learning from experience
+3. [[it-journey/_data/brand/sections/docs|Documentation Hub]] - Technical references
+4. [[zer0-mistakes/pages/notebooks|Interactive Notebooks]] - Hands-on labs
 
 ### 🎯 Quest Categories (Complete Index)
 
 **By Level:**
-- 🌱 [Level 0000](/quests/0000/) - Foundation & platform setup (15+ quests)
-- 🟢 [Level 0001](/quests/0001/) - Apprentice: Web development basics (10+ quests)
-- 🟡 [Level 0010](/quests/0010/) - Journeyman: Scripting & tooling (12+ quests)
-- 🟠 [Level 0011](/quests/0011/) - Advanced: Git & optimization (8+ quests)
-- 🔴 [Level 0100](/quests/0100/) - Expert: Containers & frontend (10+ quests)
-- 🟣 [Level 0101](/quests/0101/) - Master: CI/CD & deployment (10+ quests)
+- 🌱 [[it-journey/pages/_quests/0000/README|Level 0000]] - Foundation & platform setup (15+ quests)
+- 🟢 [[it-journey/pages/_quests/0001/README|Level 0001]] - Apprentice: Web development basics (10+ quests)
+- 🟡 [[it-journey/pages/_quests/0010/README|Level 0010]] - Journeyman: Scripting & tooling (12+ quests)
+- 🟠 [[it-journey/pages/_quests/0011/README|Level 0011]] - Advanced: Git & optimization (8+ quests)
+- 🔴 [[it-journey/pages/_quests/0100/README|Level 0100]] - Expert: Containers & frontend (10+ quests)
+- 🟣 [[it-journey/pages/_quests/0101/README|Level 0101]] - Master: CI/CD & deployment (10+ quests)
 
 **By Technology:**
-- 🎨 [Frontend Development](/quests/0100/frontend/) - UI/UX and web technologies
-- 🐳 Docker & Containers - [Container Fundamentals](/quests/0100/container-fundamentals/)
+- 🎨 [[it-journey/pages/_quests/0100/frontend|Frontend Development]] - UI/UX and web technologies
+- 🐳 Docker & Containers - [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]]
 - ⚡ Terminal Enhancement - [Oh-My-Zsh](/quests/0010/oh-my-zsh-terminal-enchantment/), [Nerd Fonts](/quests/0010/nerd-font-enchantment-side-quest/)
 - 🤖 AI Integration - [Prompt Crystal Mastery](/quests/0011/prompt-crystal-mastery-vscode-copilot-quest/)
 - 📝 Documentation - [Jekyll-Mermaid](/quests/0010/jekyll-mermaid-integration-quest/)
-- ⚙️ CI/CD - [GitHub Actions](/quests/0101/github-actions-basics/), [CI/CD Fundamentals](/quests/0101/cicd-fundamentals/)
-- 🧙‍♂️ Scripting - [Bash Scripting](/quests/0010/bash-scripting/), [Bash Run](/quests/0000/bash-run/)
+- ⚙️ CI/CD - [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions]], [[it-journey/pages/_quests/0101/cicd-fundamentals|CI/CD Fundamentals]]
+- 🧙‍♂️ Scripting - [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]], [[it-journey/pages/_quests/0000/bash-run|Bash Run]]
 
 **By Quest Type:**
 - 🏰 Main Quests - Core learning adventures with substantial content
@@ -707,28 +710,28 @@ Transform IT-Journey into a comprehensive platform where:
 ### 📚 Learning Resources by Topic
 
 **Version Control & Collaboration:**
-- [GitHub Setup QuickStart](/quickstart/github-setup/)
-- [Hello n00b Quest](/quests/0000/hello-noob/) - GitHub fundamentals
+- [[zer0-mistakes/pages/_quickstart/github-setup|GitHub Setup QuickStart]]
+- [[it-journey/pages/_quests/0000/hello-noob|Hello n00b Quest]] - GitHub fundamentals
 - [Django & Git](/quickstart/2025-03-08-setting-up-django-and-git/)
-- [Git Basics](/quests/0000/git-basics/) - Version control fundamentals
+- [[it-journey/pages/_quests/0000/git-basics|Git Basics]] - Version control fundamentals
 - [Advanced Git Workflows](/quests/0011/advanced-git-workflows/) - Advanced techniques
 
 **Development Environment:**
-- [Machine Setup Guide](/quickstart/machine-setup/)
-- [Character Building Quest](/quests/0000/character-building/)
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup Guide]]
+- [[it-journey/pages/_quests/0000/character-building|Character Building Quest]]
 - [VS Code Mastery](/quests/0000/vscode-mastery-quest/)
-- [Platform-Specific Guides](/quests/0000/) - Windows, Mac, Linux, Cloud
+- [[it-journey/pages/_quests/0000/README|Platform-Specific Guides]] - Windows, Mac, Linux, Cloud
 
 **Web Development:**
-- [Jekyll Setup](/quickstart/jekyll-setup/)
-- [Personal Site Project](/quests/0001/personal-site/)
-- [Frontend Development](/quests/0100/frontend/)
+- [[zer0-mistakes/pages/_quickstart/jekyll-setup|Jekyll Setup]]
+- [[it-journey/pages/_quests/0001/personal-site|Personal Site Project]]
+- [[it-journey/pages/_quests/0100/frontend|Frontend Development]]
 - [Jekyll-Mermaid Integration](/quests/0010/jekyll-mermaid-integration-quest/)
 
 **DevOps & Automation:**
-- [Container Fundamentals](/quests/0100/container-fundamentals/)
-- [GitHub Actions Basics](/quests/0101/github-actions-basics/)
-- [Bash Scripting](/quests/0010/bash-scripting/)
+- [[it-journey/pages/_quests/0100/container-fundamentals|Container Fundamentals]]
+- [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]]
+- [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]]
 - [DevOps Chronicles](/posts/devops/)
 
 **AI & Machine Learning:**
@@ -740,13 +743,13 @@ Transform IT-Journey into a comprehensive platform where:
 
 **Navigation Resources:**
 - [World Map - Complete Site Guide](/quests/codex/world_map/) - Comprehensive navigation
-- [Glossary](/quests/codex/glossary/) - IT terminology reference
+- [[it-journey/pages/_quests/codex/glossary|Glossary]] - IT terminology reference
 - [Sitemap](/about/sitemap/) - Complete site structure
-- [Feature Overview](/about/features/) - Platform capabilities
+- [[it-journey/pages/_about/features/index|Feature Overview]] - Platform capabilities
 
 **Community & Contribution:**
-- [Contributing Guide](/about/contributing/) - How to add content
-- [Development Principles](/about/) - Philosophy and standards
+- [[it-journey/pages/_about/contribute/contributing|Contributing Guide]] - How to add content
+- [[it-journey/pages/_about/about|Development Principles]] - Philosophy and standards
 - Quest Creation Guide - See `.github/instructions/quest.instructions.md`
 - Post Creation Guide - See `.github/instructions/posts.instructions.md`
 
@@ -788,10 +791,10 @@ gantt
 
 Ready to begin your adventure? Choose your starting path:
 
-* 🚀 **[QuickStart](/quickstart/)** - Get up and running fast
-* ⚔️ **[Quests](/quests/)** - Begin your epic learning adventure  
-* 📚 **[Library](/docs/)** - Dive deep into comprehensive guides
-* 📔 **[Notebook](/notebooks/)** - Explore interactive learning environments
+* 🚀 **[[zer0-mistakes/pages/_quickstart/index|QuickStart]]** - Get up and running fast
+* ⚔️ **[[it-journey/pages/_quests/README|Quests]]** - Begin your epic learning adventure  
+* 📚 **[[it-journey/_data/brand/sections/docs|Library]]** - Dive deep into comprehensive guides
+* 📔 **[[zer0-mistakes/pages/notebooks|Notebook]]** - Explore interactive learning environments
 
 > *"In this repository lies not just code, but the accumulated wisdom of countless developers who dared to push to production on Friday afternoons and lived to tell the tale."*
 
@@ -807,7 +810,7 @@ For additional roadmap visualization, see the interactive roadmap at [roadmap.sh
 - **Discussions:** Community Q&A and knowledge sharing
 
 ### Additional Learning Resources
-- [README - Getting Started](/readme/) - Platform overview
+- [[it-journey/README|README - Getting Started]] - Platform overview
 - [Zero to Hero Guide](/zer0/) - Alternative beginner path
 - [Code of Conduct](/code-of-conduct/) - Community guidelines
-- [Security Policy](/security/) - Reporting vulnerabilities
+- [[it-journey/SECURITY|Security Policy]] - Reporting vulnerabilities

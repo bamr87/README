@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Environment and secrets quests in Level 0101
 skill_focus: devops
-source_file: deployment-pipelines.md
+source_file: pages/_quests/0101/deployment-pipelines.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/deployment-pipelines.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Deployment'
 tags:
 - '0101'
@@ -85,7 +87,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install the GitHub CLI to manage environments and deployments
+title: 'Deployment Pipelines: Production Release Automation'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -410,17 +412,17 @@ The cardinal rule: **a deploy you cannot undo is not a deploy, it's a gamble.** 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Environment Management](/quests/0101/environment-management/) - Master parity and per-env config
+- 🎯 [[it-journey/pages/_quests/0101/environment-management|Environment Management]] - Master parity and per-env config
 
 **Explore Side Adventures**:
-- ⚔️ [Secrets Management](/quests/0101/secrets-management/) - Credentials without leaks
-- ⚔️ [Artifact Management](/quests/0101/artifact-management/) - The immutable thing you promote
+- ⚔️ [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]] - Credentials without leaks
+- ⚔️ [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]] - The immutable thing you promote
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Environment Management](/quests/0101/environment-management/)  
-**🏗️ System Engineer**: Explore [Secrets Management](/quests/0101/secrets-management/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/environment-management|Environment Management]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -449,6 +451,6 @@ The cardinal rule: **a deploy you cannot undo is not a deploy, it's a gamble.** 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] **Unlocks:** [[Environment Management: Dev, Staging, and Production Configuration]] · [[Secrets Management: Secure Configuration and Credential Handling]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] **Unlocks:** [[Environment Management: Dev, Staging, and Production Configuration]] · [[Secrets Management: Secure Configuration and Credential Handling]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -22,17 +22,20 @@ permalink: /fr/docs/quickstart/
 preview: /images/docs/quickstart/theme-home.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/quickstart/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/quickstart/index.md
 tags:
 - quickstart
 - getting-started
 - github-pages
 - remote-theme
-title: Guides de démarrage rapide
+title: Guides de démarrage rapide Zer0-Mistakes
 translated_from_sha: 2b6514fcc314
 translation_of: pages/_docs/quickstart/index.md
 translation_source_url: /docs/quickstart/
 ---
+
 # Guides de démarrage rapide
 
 Ce hub vous oriente vers l'itinéraire le plus rapide pour passer de zéro à un site Zer0-Mistakes publié. Chaque guide ci-dessous est autonome — commencez par celui qui correspond au niveau de contrôle que vous souhaitez.
@@ -43,9 +46,9 @@ Ce hub vous oriente vers l'itinéraire le plus rapide pour passer de zéro à un
 
 | Guide | Idéal pour | Durée |
 | --- | --- | --- |
-| [Démarrage minimal avec thème distant](/docs/quickstart/bare-minimum/) | Essayer le thème avec le moins de fichiers possible (`_config.yml`, `Gemfile`, `index.md`) | ~5 min |
-| [Forker et déployer sur GitHub Pages](/docs/quickstart/fork-and-deploy/) | Un vrai site que vous possédez et personnalisez, déployé sur GitHub Pages | ~15 min |
-| [Série de démarrage rapide étape par étape](/quickstart/) | Suivre le parcours de la configuration de la machine jusqu'à la personnalisation | ~30 min |
+| [[zer0-mistakes/pages/_docs/quickstart/bare-minimum\|Démarrage minimal avec thème distant]] | Essayer le thème avec le moins de fichiers possible (`_config.yml`, `Gemfile`, `index.md`) | ~5 min |
+| [[zer0-mistakes/pages/_docs/quickstart/fork-and-deploy\|Forker et déployer sur GitHub Pages]] | Un vrai site que vous possédez et personnalisez, déployé sur GitHub Pages | ~15 min |
+| [[zer0-mistakes/pages/_quickstart/index\|Série de démarrage rapide étape par étape]] | Suivre le parcours de la configuration de la machine jusqu'à la personnalisation | ~30 min |
 
 ## Ce qu'il vous faut d'abord
 
@@ -55,19 +58,19 @@ Tous les parcours supposent que vous disposez :
 - De [Git](https://git-scm.com/) installé en local (ou vous pouvez travailler entièrement dans l'interface web de GitHub pour le parcours avec thème distant).
 - En option, de [Docker](https://www.docker.com/) pour la boucle de développement local recommandée.
 
-Si vous n'avez jamais créé de site Jekyll auparavant, la [série de démarrage rapide étape par étape](/quickstart/) vous guide d'abord dans l'installation de ces outils.
+Si vous n'avez jamais créé de site Jekyll auparavant, la [[zer0-mistakes/pages/_quickstart/index|série de démarrage rapide étape par étape]] vous guide d'abord dans l'installation de ces outils.
 
 ## Deux façons d'utiliser le thème
 
 Il existe deux modèles pris en charge, et les guides ci-dessus couvrent les deux :
 
 1. **Thème distant** — votre dépôt ne conserve que votre contenu et
-votre configuration, et récupère les mises en page/includes/styles depuis `bamr87/zer0-mistakes` au moment de la génération. Maintenance minimale ; commencez par le [Démarrage minimal](/docs/quickstart/bare-minimum/).
+votre configuration, et récupère les mises en page/includes/styles depuis `bamr87/zer0-mistakes` au moment de la génération. Maintenance minimale ; commencez par le [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Démarrage minimal]].
 2. **Fork** — vous copiez l'intégralité du thème dans votre dépôt afin de pouvoir modifier
-directement les mises en page et les styles. Contrôle maximal ; suivez [Forker et déployer](/docs/quickstart/fork-and-deploy/).
+directement les mises en page et les styles. Contrôle maximal ; suivez [[zer0-mistakes/pages/_docs/quickstart/fork-and-deploy|Forker et déployer]].
 
 ## Étapes suivantes
 
-- Nouveau dans la structure du thème ? Lisez [l'aperçu de prise en main](/docs/getting-started/).
-- Prêt à publier ? Chaque parcours se termine par la référence [Déployer sur GitHub Pages](/docs/deployment/github-pages/).
-- Vous voulez personnaliser l'apparence ? Consultez le [Guide du thème](/docs/getting-started/theme-guide/).
+- Nouveau dans la structure du thème ? Lisez [[zer0-mistakes/pages/_docs/getting-started/index|l'aperçu de prise en main]].
+- Prêt à publier ? Chaque parcours se termine par la référence [[zer0-mistakes/pages/_docs/deployment/github-pages|Déployer sur GitHub Pages]].
+- Vous voulez personnaliser l'apparence ? Consultez le [[zer0-mistakes/pages/_docs/getting-started/theme-guide|Guide du thème]].

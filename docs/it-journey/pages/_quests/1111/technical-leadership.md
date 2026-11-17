@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 1111 Leadership & Innovation quest line
 skill_focus: leadership
-source_file: technical-leadership.md
+source_file: pages/_quests/1111/technical-leadership.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/technical-leadership.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Technical Leadership'
 tags:
 - '1111'
@@ -87,7 +89,7 @@ tags:
 - decision-making
 - delegation
 - gamified-learning
-title: Keep your leadership artifacts in a versioned, plain-text vault
+title: 'Technical Leadership: Leading Without a Crown'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -393,17 +395,17 @@ Delegate the outcome, not the steps. Set the guardrails ("must ship by Friday, m
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Mentorship Programs](/quests/1111/mentorship-programs/) - Develop the talent on your team
+- 🎯 [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]] - Develop the talent on your team
 
 **Explore Side Adventures**:
-- ⚔️ [Architecture Reviews](/quests/1111/architecture-reviews/) - Facilitate technical trade-offs
-- ⚔️ [Career Advancement](/quests/1111/career-advancement/) - IC vs management tracks
+- ⚔️ [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]] - Facilitate technical trade-offs
+- ⚔️ [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]] - IC vs management tracks
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Mentorship Programs](/quests/1111/mentorship-programs/)  
-**🏗️ System Engineer**: Explore [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🛡️ Security Specialist**: Advance to [Career Advancement](/quests/1111/career-advancement/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]]
 
 ## 📚 Resources
 
@@ -432,6 +434,6 @@ Delegate the outcome, not the steps. Set the guardrails ("must ship by Friday, m
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Mentorship Programs: Developing and Growing Engineering Talent]] · [[Architecture Reviews: Leading Technical Design Discussions]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Mentorship Programs: Developing and Growing Engineering Talent]] · [[Architecture Reviews: Leading Technical Design Discussions]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

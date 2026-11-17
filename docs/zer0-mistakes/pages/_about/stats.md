@@ -6,10 +6,13 @@ lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/stats/
 preview: /images/previews/site-statistics-portal.png
-source_file: stats.md
+source_file: pages/_about/stats.md
 source_icon: bi-bar-chart-line
-title: Stats
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/stats.md
+title: Site Statistics Portal
 ---
+
 {% include stats/stats-header.html %}
 
 {% if site.data.content_statistics %}

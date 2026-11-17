@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: templates/consumer/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/consumer/README.md
 title: Consumer adoption kit
 ---
 # Consumer adoption kit
@@ -115,7 +117,7 @@ Generation is script-driven and never runs inside `jekyll build`, so GitHub Page
 `zer0.json` is the zer0-CMS project file. Start from `zer0.json.template`, then:
 
 - point each `contentFolders[].path` at a directory that exists (the doctor reports a missing one as an error) and add a folder per collection the site actually has;
-- keep each content type's `required: true` fields equal to that collection's `required:` list plus `global.required_fields` in this theme's [`.github/config/frontmatter_schema.yml`](../../.github/config/frontmatter_schema.yml), which is what `scripts/lint-pages` enforces;
+- keep each content type's `required: true` fields equal to that collection's `required:` list plus `global.required_fields` in this theme's [`.github/config/frontmatter_schema.yml`](../../dot-github/config/frontmatter_schema.yml), which is what `scripts/lint-pages` enforces;
 - keep the `$schema` line so editors validate it.
 
 An existing `frontmatter.json` (Front Matter CMS) can stay until `zer0.json` covers every field it defines. Make sure `.gitignore` does not ignore `zer0.json`, and add it to `exclude:` in `_config.yml` so it is not published.

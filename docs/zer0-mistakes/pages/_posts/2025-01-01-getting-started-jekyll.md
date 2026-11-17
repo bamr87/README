@@ -12,14 +12,17 @@ featured: false
 lastmod: 2026-07-13 00:00:00+00:00
 layout: article
 preview: /images/previews/getting-started-with-jekyll-your-first-static-site.png
-source_file: 2025-01-01-getting-started-jekyll.md
+source_file: pages/_posts/2025-01-01-getting-started-jekyll.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2025-01-01-getting-started-jekyll.md
 tags:
 - jekyll
 - beginner
 - static-site
 - getting-started
-title: 2025 01 01 Getting Started Jekyll
+title: 'Getting Started with Jekyll: Your First Static Site'
 ---
+
 Welcome to Jekyll! This tutorial will guide you through creating your first static website using Jekyll, the popular static site generator.
 
 ## What is Jekyll?

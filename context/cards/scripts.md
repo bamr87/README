@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 2df02d508c89497e
+source_fingerprint: 67431c0fe95b69aa
 tags:
   - automation
   - bash
@@ -24,7 +24,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/scripts` - 31 docs |
+| Corpus | `docs/scripts` - 24 docs |
 | External | no |
 
 ## Signals
@@ -33,15 +33,15 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~20,761 words across 31 indexed documents
+- ~14,659 words across 24 indexed documents
 - code samples in: bash, plaintext, yaml
 
 ## Navigation
 
-29 published pages in 5 sections (max depth 3) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
+24 published pages in 5 sections (max depth 3) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
 
 - **Documentation** (9 pages)
-- **🍴 ForkMe - Advanced GitHub Repository Forking Utility** (7 pages)
+- **🍴 ForkMe - Advanced GitHub Repository Forking Utility** (4 pages)
 - **💾 StashMe - Multi-Repository Cloud Stash Utility** (4 pages)
 
 ## Key documents
@@ -51,9 +51,9 @@ tags:
 - [`AGENTS.md`](../../docs/scripts/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/scripts/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/scripts/SECURITY.md)
-- [`FORKME/FORKME-IMPLEMENTATION-SUMMARY.md`](../../docs/scripts/FORKME/FORKME-IMPLEMENTATION-SUMMARY.md)
 - [`FORKME/FORKME.md`](../../docs/scripts/FORKME/FORKME.md)
 - [`FORKME/FORKME-EXAMPLES.md`](../../docs/scripts/FORKME/FORKME-EXAMPLES.md)
+- [`STASHME/STASHME-EXAMPLES.md`](../../docs/scripts/STASHME/STASHME-EXAMPLES.md)
 
 ## Query this context
 

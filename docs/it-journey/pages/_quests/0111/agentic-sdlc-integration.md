@@ -61,7 +61,9 @@ rewards:
   skills_unlocked:
   - 🛠️ SDLC Agent Integration
 skill_focus: devops
-source_file: agentic-sdlc-integration.md
+source_file: pages/_quests/0111/agentic-sdlc-integration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/agentic-sdlc-integration.md
 sub_title: 'Level 0111 Quest 1/3 — Domain 1: Agent Architecture & SDLC'
 tags:
 - '0111'
@@ -72,7 +74,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: Clone the starter sandbox
+title: 'Initiation Rites: Embedding Agents in the SDLC'
 validation_criteria:
   completion_requirements:
   - Agent task card created with inputs, outputs, and success criteria
@@ -370,20 +372,20 @@ When every box is checked, you've completed Q1. 🏆
 | 🤖 Agent Initiate Badge | Earned on quest completion |
 | 🛠️ SDLC Agent Integration | Skill unlocked |
 | 70 XP | Added to your Level 0111 total |
-| Unlocks | [Q2: The Three Sigils](/quests/0111/agentic-plan-vs-action-boundaries/) |
+| Unlocks | [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries\|Q2: The Three Sigils]] |
 
 ---
 
 ## 🔗 Continue Your Journey
 
-- **Next quest:** [Q2: The Three Sigils — Plan, Reason, Act](/quests/0111/agentic-plan-vs-action-boundaries/)
-- **Domain hub:** [Domain 1 in the GH-600 Skills Measured breakdown](/notes/gh-600/skills-measured/#domain-1)
-- **Codex chapter:** [Initiation Rites: Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/)
+- **Next quest:** [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|Q2: The Three Sigils — Plan, Reason, Act]]
+- **Domain hub:** [[it-journey/pages/_notes/gh-600/skills-measured#domain-1|Domain 1 in the GH-600 Skills Measured breakdown]]
+- **Codex chapter:** [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Initiation Rites: Agents in the SDLC]]
 - **Official docs:** [GitHub Copilot coding agent](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-for-pull-requests/about-copilot-coding-agent)
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 (7) - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] · [[GH-600 Exam Overview]] **Recommended:** [[REST Principles: RESTful API Design Best Practices]] **Unlocks:** [[The Three Sigils: Plan, Reason, Act]] **Sequel quests:** [[The Three Sigils: Plan, Reason, Act]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0111/README|Level 0111 (7) - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · [[it-journey/pages/_notes/gh-600/exam-overview|GH-600 Exam Overview]] **Recommended:** [[REST Principles: RESTful API Design Best Practices]] **Unlocks:** [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]] **Sequel quests:** [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

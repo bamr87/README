@@ -1,5 +1,7 @@
 ---
 source_file: AGENTS.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/AGENTS.md
 title: it-journey
 ---
 <!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->

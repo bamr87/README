@@ -5,12 +5,15 @@ categories:
 date: 2026-10-22 00:00:00+00:00
 description: Amendment record that ratifies the zer0-mistakes constitution.
 lastmod: 2026-10-22 00:00:00+00:00
-source_file: 0001-ratify-constitution.md
+source_file: docs/amendments/0001-ratify-constitution.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/amendments/0001-ratify-constitution.md
 tags:
 - governance
 - amendments
-title: 0001 — Ratify the constitution
+title: 0001 Ratify the Constitution
 ---
+
 <!-- kit: governance v0.1.0 -->
 # 0001 — Ratify the constitution
 

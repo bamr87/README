@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: community
-source_file: building-technical-communities.md
+source_file: pages/_quests/1111/building-technical-communities.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/building-technical-communities.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Building Technical Communities'
 tags:
 - '1111'
@@ -83,7 +85,7 @@ tags:
 - events
 - inclusion
 - gamified-learning
-title: Keep governance docs in a public repo so the community can see and shape them
+title: 'Building Technical Communities: Govern and Include'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Experience participating in at least one technical community
-- [ ] Completion of [Open Source Contribution](/quests/1111/open-source-contribution/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/open-source-contribution|Open Source Contribution]] (recommended)
 - [ ] Comfort writing clear, public communication
 
 ### 🛠️ System Requirements
@@ -393,17 +395,17 @@ Belonging is the goal beyond diversity: people stay where they feel their contri
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Innovation and R&D](/quests/1111/innovation-rnd/) - Turn community energy into invention
+- 🎯 [[it-journey/pages/_quests/1111/innovation-rnd|Innovation and R&D]] - Turn community energy into invention
 
 **Explore Side Adventures**:
-- ⚔️ [Mentorship Programs](/quests/1111/mentorship-programs/) - Grow the leaders your community needs
-- ⚔️ [Career Advancement](/quests/1111/career-advancement/) - Build a public reputation
+- ⚔️ [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]] - Grow the leaders your community needs
+- ⚔️ [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]] - Build a public reputation
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Innovation and R&D](/quests/1111/innovation-rnd/)  
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
-**🛡️ Security Specialist**: Advance to [Career Advancement](/quests/1111/career-advancement/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/innovation-rnd|Innovation and R&D]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]]
 
 ## 📚 Resources
 
@@ -432,6 +434,6 @@ Belonging is the goal beyond diversity: people stay where they feel their contri
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Open Source Contribution: Contributing, Maintaining, and Licensing]] **Unlocks:** [[Innovation and R&D: Driving Experimentation and Managing Tech Bets]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Open Source Contribution: Contributing, Maintaining, and Licensing]] **Unlocks:** [[Innovation and R&D: Driving Experimentation and Managing Tech Bets]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

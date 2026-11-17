@@ -15,12 +15,15 @@ lastmod: '2026-06-26T00:00:00.000Z'
 layout: home-os
 permalink: /home/
 sidebar: false
-source_file: home.md
+source_file: pages/home.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/home.md
 tags:
 - home
 - dashboard
 - profile
 - github
-title: Home
+title: IT-Journey — Home
 ---
+
 Welcome to my corner of the journey — a desktop of widgets I actually use. Drag a window by its title bar to rearrange, use the ⤢ button to resize or the lights to minimize/close, hit **⌘K** to jump anywhere, and pick an accent in the dock (it re-themes the whole site). Everything is configurable and saved in your browser; the GitHub widgets sync automatically via a daily Action.

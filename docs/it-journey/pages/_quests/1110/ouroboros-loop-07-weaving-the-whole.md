@@ -59,7 +59,9 @@ rewards:
   unlocks_features:
   - 👑 Perfection Engineer — campaign completion
 skill_focus: devops
-source_file: ouroboros-loop-07-weaving-the-whole.md
+source_file: pages/_quests/1110/ouroboros-loop-07-weaving-the-whole.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/ouroboros-loop-07-weaving-the-whole.md
 tags:
 - '1110'
 - github-actions
@@ -68,7 +70,7 @@ tags:
 - ci-cd
 - ai-agents
 - gamified-learning
-title: .github/workflows/auto-merge.yml
+title: 'Weaving the Whole: The Serpent Closes the Circle'
 ---
 *Everything you have forged now joins: the turning wheel, the warden's gate, the oath-bound golems, the sealed evidence, the mana ledger, the honest fixer. One arc remains — the most dangerous one. For the serpent to close its circle, the loop must **merge its own repairs**. The realm grants that power only behind two final wards: a merge job that waits for every check except its own reflection, and a customs gate that inspects each pull request's cargo before the seal falls. Then you turn the whole wheel, hands off, and watch a defect you planted get witnessed, repaired, gated, merged, and certified — by nothing but the machine you built.*
 
@@ -252,7 +254,7 @@ The real closing of the real circle:
 ## 🎁 Rewards & Progression
 
 - ♾️ **Loop Weaver** — the serpent turned once, unaided, on a repo you built from an empty directory
-- 👑 **Perfection Engineer** — campaign complete: return to the [hub](/quests/codex/ouroboros-loop/) and claim it
+- 👑 **Perfection Engineer** — campaign complete: return to the [[it-journey/pages/_quests/codex/ouroboros-loop|hub]] and claim it
 - ⚡ Skills unlocked: loop architecture · self-merge safety · smuggle guards · runbook writing
 - 📊 **+200 XP**
 
@@ -268,9 +270,9 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- 👑 Claim the campaign: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
-- 🏰 The prequel, if you skipped it: [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/)
-- 🔭 Deepen the scrying: [Level 1010 — Monitoring & Observability](/quests/1010/)
+- 👑 Claim the campaign: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
+- 🏰 The prequel, if you skipped it: [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]]
+- 🔭 Deepen the scrying: [[it-journey/pages/_quests/1010/README|Level 1010 — Monitoring & Observability]]
 
 ## 📚 Resource Codex
 
@@ -282,4 +284,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[The Fixer's Oath]] **Level home:** [[Level 1110 - Architecture & Design Patterns]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[The Fixer's Oath]] **Level home:** [[Level 1110 - Architecture & Design Patterns]]

@@ -15,14 +15,17 @@ prerequisites:
 preview: /images/previews/scripts.png
 sidebar:
   nav: docs
-source_file: scripts.md
+source_file: pages/_docs/development/scripts.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/scripts.md
 tags:
 - scripts
 - automation
 - bash
 - utilities
-title: Shell Script Automation Library
+title: Scripts
 ---
+
 # Shell Script Automation Library
 
 The Zer0-Mistakes theme includes a comprehensive library of shell scripts for automating common development tasks.
@@ -330,12 +333,12 @@ docker-compose up -d
 
 ## Related
 
-- [Testing Guide](/docs/development/testing/)
-- [Release Management](/docs/development/release-management/)
-- [CI/CD Pipeline](/docs/development/ci-cd/)
+- [[zer0-mistakes/pages/_docs/development/testing|Testing Guide]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]
 
 ## See also
 
-- [[Development]]
-- [[Release Management]]
-- [[CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]

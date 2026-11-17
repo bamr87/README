@@ -1,5 +1,7 @@
 ---
-source_file: style.md
+source_file: _data/brand/style.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/style.md
 title: IT-Journey — Prose & Formatting Style
 ---
 # IT-Journey — Prose & Formatting Style

@@ -9,11 +9,13 @@ jupyter_metadata: true
 lastmod: 2026-07-01 03:24:08+00:00
 layout: notebook
 permalink: /notebooks/python-statistics/
-source_file: python-statistics.md
+source_file: pages/_notebooks/python-statistics.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notebooks/python-statistics.md
 tags:
 - jupyter
 - python
-title: Statistical Analysis with Python
+title: Python Statistics
 ---
 ---
 title: "Statistical Analysis with Python" description: "Learn statistical analysis using Python's scipy and pandas libraries with real survey data" date: 2025-01-27 lastmod: 2025-01-27 author: "Zer0-Mistakes Team" layout: notebook difficulty: intermediate tags: [python, statistics, scipy, data-analysis, surveys] categories: [Notebooks, Tutorials] toc: true
@@ -698,9 +700,9 @@ print("\n" + "=" * 70)
 
 This tutorial covered the fundamentals of statistical analysis with Python. To continue learning:
 
-1. **Visualize your statistics** - Check out the [Matplotlib Visualization](/notebooks/matplotlib-visualization/) tutorial
-2. **Analyze larger datasets** - See the [Pandas Data Analysis](/notebooks/pandas-data-analysis/) tutorial
-3. **Fetch external data** - Learn about APIs in the [API Requests](/notebooks/api-requests/) tutorial
+1. **Visualize your statistics** - Check out the [[zer0-mistakes/pages/_notebooks/matplotlib-visualization|Matplotlib Visualization]] tutorial
+2. **Analyze larger datasets** - See the [[zer0-mistakes/pages/_notebooks/pandas-data-analysis|Pandas Data Analysis]] tutorial
+3. **Fetch external data** - Learn about APIs in the [[zer0-mistakes/pages/_notebooks/api-requests|API Requests]] tutorial
 
 **Key Takeaways:**
 - Use `describe()` for quick descriptive statistics

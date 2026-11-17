@@ -22,23 +22,26 @@ permalink: /fr/docs/features/book-collection/
 preview: /images/zer0-mistakes-wizard.png
 sidebar:
   nav: docs
-source_file: book-collection.md
+source_file: fr/docs/features/book-collection.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/book-collection.md
 tags:
 - books
 - collections
 - layouts
 - storybook
 - ai-images
-title: Collection Livres
+title: Collection Livres — Publiez des livres illustrés par IA
 translated_from_sha: a058d4ca2e21
 translation_of: pages/_docs/features/book-collection.md
 translation_source_url: /docs/features/book-collection/
 ---
+
 # Collection Livres
 
 La collection `books` transforme le thème en une plateforme de publication de livres illustrés : chaque livre est un dossier de « chapitres » narratifs accompagné d'une page d'accueil, rendu avec des mises en page immersives et sans barre latérale, conçues pour du contenu à lire à voix haute et des planches d'illustration pleine largeur.
 
-Le thème est livré avec une petite démo — [Les Contes de Zer0](/books/zer0-tales/) — qui met en œuvre tout ce qui figure sur cette page. Le site de production de référence est la [plateforme de livres pour enfants drsai](https://github.com/bamr87/drsai), qui génère les histoires avec un LLM et les illustrations avec les modèles d'images d'OpenAI, puis les publie via cette collection.
+Le thème est livré avec une petite démo — [[zer0-mistakes/pages/_books/zer0-tales/index|Les Contes de Zer0]] — qui met en œuvre tout ce qui figure sur cette page. Le site de production de référence est la [plateforme de livres pour enfants drsai](https://github.com/bamr87/drsai), qui génère les histoires avec un LLM et les illustrations avec les modèles d'images d'OpenAI, puis les publie via cette collection.
 
 ## Activer la collection
 

@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the Rate Limiting and API Versioning quests
 skill_focus: backend
-source_file: error-handling.md
+source_file: pages/_quests/0111/error-handling.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/error-handling.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - Error Handling'
 tags:
 - '0111'
@@ -84,7 +86,7 @@ tags:
 - backend
 - hands-on
 - gamified-learning
-title: httpbin lets you request any status code on demand
+title: 'Error Handling: Status Codes, Problem Details, and Retries'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -398,17 +400,17 @@ Never retry a `400` or `422` - the request is wrong and will fail forever. Alway
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Rate Limiting](/quests/0111/rate-limiting/) - The other side of `429`
+- 🎯 [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting]] - The other side of `429`
 
 **Explore Side Adventures**:
-- ⚔️ [API Versioning](/quests/0111/api-versioning/) - Evolve without breaking clients
-- ⚔️ [API Authentication](/quests/0111/api-authentication/) - The source of your `401`s
+- ⚔️ [[it-journey/pages/_quests/0111/api-versioning|API Versioning]] - Evolve without breaking clients
+- ⚔️ [[it-journey/pages/_quests/0111/api-authentication|API Authentication]] - The source of your `401`s
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Rate Limiting](/quests/0111/rate-limiting/)  
-**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)  
-**🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/api-versioning|API Versioning]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]
 
 ## 📚 Resources
 
@@ -438,6 +440,6 @@ Never retry a `400` or `422` - the request is wrong and will fail forever. Alway
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[Rate Limiting: Token Buckets, 429s, and Quotas]] · [[API Versioning: URI, Headers, and Backward Compatibility]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0111/api-fundamentals|API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting: Token Buckets, 429s, and Quotas]] · [[it-journey/pages/_quests/0111/api-versioning|API Versioning: URI, Headers, and Backward Compatibility]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

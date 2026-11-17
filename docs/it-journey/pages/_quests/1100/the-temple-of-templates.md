@@ -55,7 +55,9 @@ rewards:
 - 🛠️ Template Mastery (C++/Jinja/React)
 - '🎯 Portfolio artifact: multi-language template demo'
 skill_focus: fullstack
-source_file: the-temple-of-templates.md
+source_file: pages/_quests/1100/the-temple-of-templates.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/the-temple-of-templates.md
 sub_title: 'Level 1100 (12) Quest: Function Crafting and Modular Abstractions'
 tags:
 - '1100'
@@ -64,7 +66,7 @@ tags:
 - software-architecture
 - reusable-components
 - hands-on
-title: Prereqs (optional if already installed)
+title: 'The Temple of Templates: Reusable Abstractions'
 validation_criteria:
 - Implements one working template per stack (C++ or Jinja or React)—two for bonus
 - Explains abstraction benefits and trade-offs
@@ -445,7 +447,7 @@ May your blueprints be clear, your APIs stable, and your sanctums extensible. �
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

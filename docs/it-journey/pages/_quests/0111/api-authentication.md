@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the Error Handling and Rate Limiting quests
 skill_focus: security
-source_file: api-authentication.md
+source_file: pages/_quests/0111/api-authentication.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/api-authentication.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - API Authentication'
 tags:
 - '0111'
@@ -85,7 +87,7 @@ tags:
 - security
 - hands-on
 - gamified-learning
-title: Python ships with macOS; install the JWT library for the lab
+title: 'API Authentication: Keys, Tokens, OAuth2, and JWT'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -399,17 +401,17 @@ curl -s -X POST https://auth.example.com/token \
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Error Handling](/quests/0111/error-handling/) - Respond to auth failures cleanly
+- 🎯 [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - Respond to auth failures cleanly
 
 **Explore Side Adventures**:
-- ⚔️ [Rate Limiting](/quests/0111/rate-limiting/) - Protect your API from abuse
-- ⚔️ [REST Principles](/quests/0111/rest-principles/) - Design the API you are securing
+- ⚔️ [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting]] - Protect your API from abuse
+- ⚔️ [[it-journey/pages/_quests/0111/rest-principles|REST Principles]] - Design the API you are securing
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Error Handling](/quests/0111/error-handling/)  
-**🏗️ System Engineer**: Explore [Rate Limiting](/quests/0111/rate-limiting/)  
-**🛡️ Security Specialist**: Advance to [Error Handling](/quests/0111/error-handling/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/error-handling|Error Handling]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/0111/error-handling|Error Handling]]
 
 ## 📚 Resources
 
@@ -439,6 +441,6 @@ curl -s -X POST https://auth.example.com/token \
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[Error Handling: Status Codes, Problem Details, and Idempotency]] · [[Rate Limiting: Token Buckets, 429s, and Quotas]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0111/api-fundamentals|API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[Error Handling: Status Codes, Problem Details, and Idempotency]] · [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting: Token Buckets, 429s, and Quotas]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

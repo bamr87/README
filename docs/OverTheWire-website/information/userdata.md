@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: userdata.md
-title: Userdata
+source_file: information/userdata.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/userdata.md
+title: User data
 ---
+
 User data
 =========
 

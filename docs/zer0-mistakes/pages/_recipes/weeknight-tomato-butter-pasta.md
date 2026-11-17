@@ -59,7 +59,9 @@ nutrition:
   saturated_fat: 9
   sodium: 620
 permalink: /recipes/weeknight-tomato-butter-pasta/
-source_file: weeknight-tomato-butter-pasta.md
+source_file: pages/_recipes/weeknight-tomato-butter-pasta.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_recipes/weeknight-tomato-butter-pasta.md
 steps:
 - text: Tip the tomatoes with all their juice into a saucepan. Add the butter, the
     halved onion, the garlic if using, and the salt. Bring to a bare simmer over medium-low
@@ -89,10 +91,11 @@ tags:
 times:
   cook: 45
   prep: 5
-title: Weeknight Tomato Butter Pasta
+title: Weeknight Tomato-Butter Pasta
 yield:
   amount: 4
   singular: serving
   unit: servings
 ---
+
 Marcella Hazan's tomato sauce, in the form most people actually cook it: straight into a bowl of pasta on a Tuesday. It is the best argument in this cookbook for leaving a recipe alone — three ingredients and forty minutes of low heat do something that no amount of technique does faster.

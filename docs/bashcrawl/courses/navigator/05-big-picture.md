@@ -21,11 +21,13 @@ objectives:
     all:
     - command: cat
     - output_includes: hidden gem
-source_file: 05-big-picture.md
+source_file: courses/navigator/05-big-picture.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/navigator/05-big-picture.md
 teaches:
 - tree
 - find
-title: 05 Big Picture
+title: The big picture
 xp: 30
 ---
 Moving around with `cd` and `ls` is fine for a few directories. For a whole tree you want the overview:

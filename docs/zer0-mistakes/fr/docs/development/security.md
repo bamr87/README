@@ -16,7 +16,9 @@ prerequisites:
 preview: /images/previews/security-scanning.png
 sidebar:
   nav: docs
-source_file: security.md
+source_file: fr/docs/development/security.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/security.md
 tags:
 - security
 - codeql
@@ -27,6 +29,7 @@ translated_from_sha: 2fcdc1279970
 translation_of: pages/_docs/development/security.md
 translation_source_url: /docs/development/security/
 ---
+
 # Analyse de sécurité
 
 Le thème Zer0-Mistakes utilise GitHub CodeQL pour l'analyse automatisée des vulnérabilités de sécurité dans plusieurs langages.
@@ -247,12 +250,12 @@ Pour les problèmes critiques :
 
 ## Ressources associées
 
-- [Guide de test](/docs/development/testing/)
-- [Pipeline CI/CD](/docs/development/ci-cd/)
-- [Mises à jour des dépendances](/docs/development/dependency-updates/)
+- [[zer0-mistakes/pages/_docs/development/testing|Guide de test]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|Pipeline CI/CD]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Mises à jour des dépendances]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Dependency Updates]]
-- [[CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Dependency Updates]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]

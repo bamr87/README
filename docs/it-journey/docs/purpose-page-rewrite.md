@@ -4,16 +4,19 @@ description: Why IT-Journey exists, how we teach, the principles we build by, an
   where the platform is headed next.
 lastmod: '2026-10-29T00:00:00.000Z'
 permalink: /about/purpose/
-source_file: purpose-page-rewrite.md
-title: Purpose Page Rewrite
+source_file: docs/purpose-page-rewrite.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/purpose-page-rewrite.md
+title: Purpose
 ---
+
 ## Why we exist
 
 The internet made information abundant, but it did not make it learnable. The skills that shape the future — software, systems, data, and now AI — still sit behind paywalls, jargon, and credential gates. IT-Journey exists to close that gap.
 
 Our purpose is simple: **free, open IT education, built with open source and AI, so that anyone with curiosity and dedication can learn.** Everything lives in a public [GitHub repository](https://github.com/bamr87/it-journey) you can read, fork, and improve. Any money the project receives goes only to upkeep — keeping the platform running for everyone, owned by no one.
 
-For the full story, read [About IT-Journey](/about/).
+For the full story, read [[it-journey/pages/_about/about|About IT-Journey]].
 
 ## How we teach: from zer0 to her0
 
@@ -43,7 +46,7 @@ IT-Journey practices what it teaches. Much of the work is drafted and maintained
 
 ## Where we're headed
 
-The [product requirements document (PRD)](https://github.com/bamr87/it-journey/blob/main/PRD.md) tracks the roadmap, and the [feature list](/about/features/) shows what has shipped. These items are **planned or in progress — not yet live**:
+The [product requirements document (PRD)](https://github.com/bamr87/it-journey/blob/main/PRD.md) tracks the roadmap, and the [[it-journey/pages/_about/features/index|feature list]] shows what has shipped. These items are **planned or in progress — not yet live**:
 
 - **Certification:** skill tracking and progress metrics so you can see how far you've come. This is about measuring growth, not selling credentials; IT-Journey does not plan to offer paid certifications.
 - **AI tutor:** personalized learning recommendations that suggest your next step. This is a longer-term vision.
@@ -53,4 +56,4 @@ The [product requirements document (PRD)](https://github.com/bamr87/it-journey/b
 
 ## Join us
 
-Start learning on the [quest map](/quests/), or help build the platform through [issues](https://github.com/bamr87/it-journey/issues), [discussions](https://github.com/bamr87/it-journey/discussions), and pull requests. Pick a quest, run the first command, and go from zer0 to her0.
+Start learning on the [[it-journey/pages/_quests/README|quest map]], or help build the platform through [issues](https://github.com/bamr87/it-journey/issues), [discussions](https://github.com/bamr87/it-journey/discussions), and pull requests. Pick a quest, run the first command, and go from zer0 to her0.

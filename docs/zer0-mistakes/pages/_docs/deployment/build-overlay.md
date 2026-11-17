@@ -24,14 +24,17 @@ prerequisites:
 preview: /images/previews/safe-mode-build-overlay-building-outside-github-pa.png
 sidebar:
   nav: docs
-source_file: build-overlay.md
+source_file: pages/_docs/deployment/build-overlay.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/build-overlay.md
 tags:
 - github-pages
 - remote-theme
 - deployment
 - ci
-title: Safe-Mode Build Overlay
+title: Safe-Mode Build Overlay (Building Outside GitHub Pages)
 ---
+
 # Safe-Mode Build Overlay
 
 **What you'll do:** reproduce a GitHub Pages build of your remote-theme site in your own CI, so a custom pipeline (caching, link-checking, multi-site builds) renders exactly what Pages would — no more, no less.
@@ -44,7 +47,7 @@ When you build *outside* GitHub Pages — your own GitHub Actions, GitLab CI, or
 2. Pages runs Jekyll in **safe mode**, which **ignores `_plugins/*.rb`**. The
 theme's generators (search, sitemap, author pages, previews) never run on a Pages consumer build.
 
-If your custom build *doesn't* strip `_plugins`, you get pages locally that 404 on the real Pages site — the build and production diverge silently. The overlay recipe makes your CI build match Pages exactly. (For the files Pages does *not* deliver, see the [Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/).)
+If your custom build *doesn't* strip `_plugins`, you get pages locally that 404 on the real Pages site — the build and production diverge silently. The overlay recipe makes your CI build match Pages exactly. (For the files Pages does *not* deliver, see the [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Remote-Theme Consumer Checklist]].)
 
 ## The recipe
 
@@ -82,7 +85,7 @@ The output in `$BUILD_DIR/_site` is what a real Pages consumer would serve: your
 
 ### Why an allowlist, not a denylist
 
-An earlier version of this recipe cloned the **whole** theme repo into `$BUILD_DIR` and copied the site on top. Everything else in the theme repo then leaked into the build: its `_data/` merged with yours (the theme's `_data/navigation/docs.yml` gave consumer `/docs/` pages a sidebar full of theme-only links), its root `README.md`/`AGENTS.md`/`CLAUDE.md` became `/AGENTS/` and `/CLAUDE/` routes, `examples/` and `templates/` broke strict builds, `features/README.md` became `/features/`, and the machine-translated `fr/` tree added pages the consumer does not have. A denylist (`rm -rf "$BUILD_DIR/examples"` …) has to grow every time the theme repo adds a top-level directory. Copying in exactly the four directories `remote_theme` delivers ([Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/)) matches Pages by construction.
+An earlier version of this recipe cloned the **whole** theme repo into `$BUILD_DIR` and copied the site on top. Everything else in the theme repo then leaked into the build: its `_data/` merged with yours (the theme's `_data/navigation/docs.yml` gave consumer `/docs/` pages a sidebar full of theme-only links), its root `README.md`/`AGENTS.md`/`CLAUDE.md` became `/AGENTS/` and `/CLAUDE/` routes, `examples/` and `templates/` broke strict builds, `features/README.md` became `/features/`, and the machine-translated `fr/` tree added pages the consumer does not have. A denylist (`rm -rf "$BUILD_DIR/examples"` …) has to grow every time the theme repo adds a top-level directory. Copying in exactly the four directories `remote_theme` delivers ([[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Remote-Theme Consumer Checklist]]) matches Pages by construction.
 
 > **Why strict?** `--strict_front_matter` fails the build on a malformed front
 > matter block instead of silently skipping the page — the same failure mode you
@@ -144,5 +147,5 @@ for p in AGENTS features fr; do test ! -e "_site/$p" || { echo "leaked: /$p/"; e
 
 ## See also
 
-- [Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/) — the files and config to add when consuming the theme via `remote_theme`.
-- [Deployment overview](/docs/deployment/) — hosting options and trade-offs.
+- [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Remote-Theme Consumer Checklist]] — the files and config to add when consuming the theme via `remote_theme`.
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment overview]] — hosting options and trade-offs.

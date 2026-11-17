@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 0111 API Development quest line
 skill_focus: backend
-source_file: api-documentation.md
+source_file: pages/_quests/0111/api-documentation.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/api-documentation.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - API Documentation'
 tags:
 - '0111'
@@ -82,7 +84,7 @@ tags:
 - backend
 - hands-on
 - gamified-learning
-title: Install the Redocly CLI to lint and preview OpenAPI docs
+title: 'API Documentation: OpenAPI, Swagger, and Contract-First'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -421,14 +423,14 @@ The golden rule is to keep the spec and the implementation in sync. Contract-fir
 - 🎯 Advance to Level 1000 - Cloud Computing - deploy the APIs you have learned to build
 
 **Explore Side Adventures**:
-- ⚔️ [API Versioning](/quests/0111/api-versioning/) - Document your versions in the spec
-- ⚔️ [Error Handling](/quests/0111/error-handling/) - Describe your error responses formally
+- ⚔️ [[it-journey/pages/_quests/0111/api-versioning|API Versioning]] - Document your versions in the spec
+- ⚔️ [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - Describe your error responses formally
 
 ### Character Class Recommendations
 
 **💻 Software Developer**: Advance to Level 1000 - Cloud Computing  
-**🏗️ System Engineer**: Explore [API Versioning](/quests/0111/api-versioning/)  
-**🛡️ Security Specialist**: Revisit [API Authentication](/quests/0111/api-authentication/) and document its security schemes
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/api-versioning|API Versioning]]  
+**🛡️ Security Specialist**: Revisit [[it-journey/pages/_quests/0111/api-authentication|API Authentication]] and document its security schemes
 
 ## 📚 Resources
 
@@ -458,6 +460,6 @@ The golden rule is to keep the spec and the implementation in sync. Contract-fir
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] **Unlocks:** [[Level 1000 - Cloud Computing]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] **Unlocks:** [[Level 1000 - Cloud Computing]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

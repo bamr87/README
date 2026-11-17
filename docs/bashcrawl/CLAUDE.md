@@ -1,5 +1,7 @@
 ---
 source_file: CLAUDE.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/CLAUDE.md
 title: bashcrawl
 ---
 <!-- kit: sdlc v0.1.0 · pointer only (decision D4, UPS-AGENT-08). The rules live in AGENTS.md. -->

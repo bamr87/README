@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:57+00:00
 description: 'The Zer0-Mistakes design system: Bootstrap 5.3.3, the semantic --zer0-*
   token layer, decomposed SCSS partials, and runtime config-driven overrides.'
 lastmod: 2026-05-31 20:54:57+00:00
-source_file: design-system.md
+source_file: docs/ui/design-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/design-system.md
 tags:
 - ui
 - styling
 - theme
 title: Design system
 ---
+
 # Design system
 
 zer0-mistakes is a **Bootstrap 5.3.3** Jekyll theme with a semantic token layer (`--zer0-*` CSS custom properties), decomposed SCSS partials, and runtime overrides from `_config.yml`, the Appearance panel, and optional user override files.
@@ -317,4 +320,4 @@ The mirror ships concrete `--bs-*`/`--bd-*` base values so Claude Design renders
 
 ---
 
-> **User guide**: For usage and configuration examples (how to customize as a theme user), see [Styles & Customization](/docs/customization/styles/) in the user documentation.
+> **User guide**: For usage and configuration examples (how to customize as a theme user), see [[zer0-mistakes/pages/_docs/customization/styles|Styles & Customization]] in the user documentation.

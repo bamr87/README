@@ -1,5 +1,7 @@
 ---
-source_file: 0000-template.md
+source_file: docs/adr/0000-template.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/adr/0000-template.md
 title: ADR NNNN — Title in sentence case
 ---
 # ADR NNNN — Title in sentence case

@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/18/quantum-computing-explained/
 preview: /images/previews/quantum-computing-explained-from-qubits-to-quantum.png
-source_file: 2025-01-18-quantum-computing-explained.md
+source_file: fr/posts/science/2025-01-18-quantum-computing-explained.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/science/2025-01-18-quantum-computing-explained.md
 tags:
 - quantum-computing
 - physics
 - technology
 - future
-title: 2025 01 18 Quantum Computing Explained
+title: 'L''informatique quantique expliquée : des qubits à l''avantage quantique'
 translated_from_sha: 7df0af9b5ebf
 translation_of: pages/_posts/science/2025-01-18-quantum-computing-explained.md
 translation_source_url: /posts/2025/01/18/quantum-computing-explained/
 ---
+
 L'informatique quantique représente l'une des avancées technologiques les plus significatives de notre époque. Cet article décompose ces concepts complexes en éléments compréhensibles.
 
 ## Qu'est-ce que l'informatique quantique ?

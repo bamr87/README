@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29740320814
 slice: security-specialist/1110
-source_file: 2026-07-20-security-specialist-1110.md
+source_file: pages/_quest-reports/2026-07-20-security-specialist-1110.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-20-security-specialist-1110.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-20-security-specialist-1110.md
 tags:
 - security-specialist
 - level-1110
@@ -26,13 +28,14 @@ tags:
 - architecture-design-patterns
 theme: Architecture & Design Patterns
 tier: Master
-title: 2026 07 20 Security Specialist 1110
+title: Security Specialist · L1110 · 2026-07-20
 verdict: pass
 walk_date: '2026-07-20'
 ---
+
 > **Slice** `security-specialist/1110` · **Level** 1110 (Architecture & Design Patterns) · **Master tier** · **Engine verdict** ✅ pass (avg 93.0%) · **Walked** 2026-07-20
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29740320814) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-20-security-specialist-1110.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-20-security-specialist-1110.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29740320814) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-20-security-specialist-1110.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-20-security-specialist-1110.md)
 
 ---
 

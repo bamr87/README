@@ -1,0 +1,781 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "vs-sonic-pi",
+  "title": "VS Sonic Pi",
+  "corpus": "docs/vs-sonic-pi",
+  "counts": {
+    "pages": 117,
+    "sections": 6,
+    "max_depth": 3,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "9891325ca0bbb5c3",
+  "tree": {
+    "type": "section",
+    "title": "VS Sonic Pi",
+    "index": "vs-sonic-pi/README.md",
+    "pages": 117,
+    "children": [
+      {
+        "type": "page",
+        "title": "Sonic Pi for VS Code",
+        "path": "vs-sonic-pi/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "vs-sonic-pi/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributing to Sonic Pi for VS Code",
+        "path": "vs-sonic-pi/CONTRIBUTING.md",
+        "rel": "CONTRIBUTING.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributor Covenant Code of Conduct",
+        "path": "vs-sonic-pi/CODE_OF_CONDUCT.md",
+        "rel": "CODE_OF_CONDUCT.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "vs-sonic-pi/SECURITY.md",
+        "rel": "SECURITY.md"
+      },
+      {
+        "type": "page",
+        "title": "vs-sonic-pi (AGENTS)",
+        "path": "vs-sonic-pi/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "vs-sonic-pi (CLAUDE)",
+        "path": "vs-sonic-pi/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "vs-sonic-pi tools",
+        "path": "vs-sonic-pi/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "vs-sonic-pi/docs/README.md",
+        "pages": 24,
+        "children": [
+          {
+            "type": "page",
+            "title": "vs-sonic-pi documentation",
+            "path": "vs-sonic-pi/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "10. Codespaces Support and Remote Audio Streaming",
+            "path": "vs-sonic-pi/docs/10-codespaces-support.md",
+            "rel": "docs/10-codespaces-support.md"
+          },
+          {
+            "type": "page",
+            "title": "Command Handler",
+            "path": "vs-sonic-pi/docs/03-command-handler.md",
+            "rel": "docs/03-command-handler.md"
+          },
+          {
+            "type": "page",
+            "title": "Configuration Manager",
+            "path": "vs-sonic-pi/docs/07-config-manager.md",
+            "rel": "docs/07-config-manager.md"
+          },
+          {
+            "type": "page",
+            "title": "Connection Manager",
+            "path": "vs-sonic-pi/docs/02-connection-manager.md",
+            "rel": "docs/02-connection-manager.md"
+          },
+          {
+            "type": "page",
+            "title": "Daemon Spawner & Port Discovery",
+            "path": "vs-sonic-pi/docs/08-daemon-spawner.md",
+            "rel": "docs/08-daemon-spawner.md"
+          },
+          {
+            "type": "page",
+            "title": "Language Provider",
+            "path": "vs-sonic-pi/docs/04-language-provider.md",
+            "rel": "docs/04-language-provider.md"
+          },
+          {
+            "type": "page",
+            "title": "Log Manager",
+            "path": "vs-sonic-pi/docs/05-log-manager.md",
+            "rel": "docs/05-log-manager.md"
+          },
+          {
+            "type": "page",
+            "title": "OSC Transport Layer",
+            "path": "vs-sonic-pi/docs/01-osc-transport.md",
+            "rel": "docs/01-osc-transport.md"
+          },
+          {
+            "type": "page",
+            "title": "Product Requirements Document: Sonic Pi VS Code Extension",
+            "path": "vs-sonic-pi/docs/PRD.md",
+            "rel": "docs/PRD.md"
+          },
+          {
+            "type": "page",
+            "title": "Sonic Pi Codebase Analysis \u2014 Libraries & Components for Extension\u2026",
+            "path": "vs-sonic-pi/docs/09-sonic-pi-codebase-analysis.md",
+            "rel": "docs/09-sonic-pi-codebase-analysis.md"
+          },
+          {
+            "type": "page",
+            "title": "Sonic Pi for VS Code \u2014 User Manual",
+            "path": "vs-sonic-pi/docs/user-manual.md",
+            "rel": "docs/user-manual.md"
+          },
+          {
+            "type": "page",
+            "title": "Sonic Pi VS Code Extension \u2014 Architecture Overview",
+            "path": "vs-sonic-pi/docs/00-architecture.md",
+            "rel": "docs/00-architecture.md"
+          },
+          {
+            "type": "page",
+            "title": "Status Bar Manager",
+            "path": "vs-sonic-pi/docs/06-status-bar.md",
+            "rel": "docs/06-status-bar.md"
+          },
+          {
+            "type": "page",
+            "title": "vs-sonic-pi \u2014 Constitution",
+            "path": "vs-sonic-pi/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 vs-sonic-pi",
+            "rel": "docs/amendments",
+            "index": "vs-sonic-pi/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 vs-sonic-pi",
+                "path": "vs-sonic-pi/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "vs-sonic-pi/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "vs-sonic-pi/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "vs-sonic-pi/docs/adr/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "vs-sonic-pi/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "vs-sonic-pi/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "vs-sonic-pi/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Reference",
+            "rel": "docs/reference",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Commands",
+                "path": "vs-sonic-pi/docs/reference/commands.md",
+                "rel": "docs/reference/commands.md"
+              },
+              {
+                "type": "page",
+                "title": "Keybindings",
+                "path": "vs-sonic-pi/docs/reference/keybindings.md",
+                "rel": "docs/reference/keybindings.md"
+              },
+              {
+                "type": "page",
+                "title": "Settings",
+                "path": "vs-sonic-pi/docs/reference/settings.md",
+                "rel": "docs/reference/settings.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Media",
+        "rel": "media",
+        "pages": 85,
+        "children": [
+          {
+            "type": "section",
+            "title": "Tutorial",
+            "rel": "media/tutorial",
+            "pages": 85,
+            "children": [
+              {
+                "type": "page",
+                "title": "8 Tips for Live Coding Practice",
+                "path": "vs-sonic-pi/media/tutorial/A.16-practice.md",
+                "rel": "media/tutorial/A.16-practice.md"
+              },
+              {
+                "type": "page",
+                "title": "Acid Bass",
+                "path": "vs-sonic-pi/media/tutorial/A.05-acid-bass.md",
+                "rel": "media/tutorial/A.05-acid-bass.md"
+              },
+              {
+                "type": "page",
+                "title": "Adding FX",
+                "path": "vs-sonic-pi/media/tutorial/06.1-Adding-FX.md",
+                "rel": "media/tutorial/06.1-Adding-FX.md"
+              },
+              {
+                "type": "page",
+                "title": "Additive Synthesis",
+                "path": "vs-sonic-pi/media/tutorial/A.18-additive-synthesis.md",
+                "rel": "media/tutorial/A.18-additive-synthesis.md"
+              },
+              {
+                "type": "page",
+                "title": "Amplitude Modulation",
+                "path": "vs-sonic-pi/media/tutorial/A.14-amplitude-modulation.md",
+                "rel": "media/tutorial/A.14-amplitude-modulation.md"
+              },
+              {
+                "type": "page",
+                "title": "Become a Minecraft VJ",
+                "path": "vs-sonic-pi/media/tutorial/A.08-minecraft-vj.md",
+                "rel": "media/tutorial/A.08-minecraft-vj.md"
+              },
+              {
+                "type": "page",
+                "title": "Bizet Beats",
+                "path": "vs-sonic-pi/media/tutorial/A.07-bizet.md",
+                "rel": "media/tutorial/A.07-bizet.md"
+              },
+              {
+                "type": "page",
+                "title": "Blocks",
+                "path": "vs-sonic-pi/media/tutorial/05.1-Blocks.md",
+                "rel": "media/tutorial/05.1-Blocks.md"
+              },
+              {
+                "type": "page",
+                "title": "Chords",
+                "path": "vs-sonic-pi/media/tutorial/08.2-Chords.md",
+                "rel": "media/tutorial/08.2-Chords.md"
+              },
+              {
+                "type": "page",
+                "title": "Code a Probabilistic Sequencer",
+                "path": "vs-sonic-pi/media/tutorial/A.13-probabilistic-sequencer.md",
+                "rel": "media/tutorial/A.13-probabilistic-sequencer.md"
+              },
+              {
+                "type": "page",
+                "title": "Coded Beats",
+                "path": "vs-sonic-pi/media/tutorial/A.03-coded-beats.md",
+                "rel": "media/tutorial/A.03-coded-beats.md"
+              },
+              {
+                "type": "page",
+                "title": "Conclusions",
+                "path": "vs-sonic-pi/media/tutorial/99-Conclusions.md",
+                "rel": "media/tutorial/99-Conclusions.md"
+              },
+              {
+                "type": "page",
+                "title": "Conditionals",
+                "path": "vs-sonic-pi/media/tutorial/05.3-Conditionals.md",
+                "rel": "media/tutorial/05.3-Conditionals.md"
+              },
+              {
+                "type": "page",
+                "title": "Controlling FX",
+                "path": "vs-sonic-pi/media/tutorial/07.2-Controlling-FX.md",
+                "rel": "media/tutorial/07.2-Controlling-FX.md"
+              },
+              {
+                "type": "page",
+                "title": "Controlling running sounds",
+                "path": "vs-sonic-pi/media/tutorial/07-Control.md",
+                "rel": "media/tutorial/07-Control.md"
+              },
+              {
+                "type": "page",
+                "title": "Controlling Running Synths",
+                "path": "vs-sonic-pi/media/tutorial/07.1-Controlling-Running-Synths.md",
+                "rel": "media/tutorial/07.1-Controlling-Running-Synths.md"
+              },
+              {
+                "type": "page",
+                "title": "Controlling Your Sound",
+                "path": "vs-sonic-pi/media/tutorial/A.10-controlling-your-sound.md",
+                "rel": "media/tutorial/A.10-controlling-your-sound.md"
+              },
+              {
+                "type": "page",
+                "title": "Creative coding in the classroom with Sonic Pi",
+                "path": "vs-sonic-pi/media/tutorial/A.20-creative-coding-in-the-classroom.md",
+                "rel": "media/tutorial/A.20-creative-coding-in-the-classroom.md"
+              },
+              {
+                "type": "page",
+                "title": "Data Structures",
+                "path": "vs-sonic-pi/media/tutorial/08-Data-Structures.md",
+                "rel": "media/tutorial/08-Data-Structures.md"
+              },
+              {
+                "type": "page",
+                "title": "Duration with Envelopes",
+                "path": "vs-sonic-pi/media/tutorial/02.4-Durations-with-Envelopes.md",
+                "rel": "media/tutorial/02.4-Durations-with-Envelopes.md"
+              },
+              {
+                "type": "page",
+                "title": "Enveloped Samples",
+                "path": "vs-sonic-pi/media/tutorial/03.4-Enveloped-Samples.md",
+                "rel": "media/tutorial/03.4-Enveloped-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Essential Knowledge",
+                "path": "vs-sonic-pi/media/tutorial/B-Essential-Knowledge.md",
+                "rel": "media/tutorial/B-Essential-Knowledge.md"
+              },
+              {
+                "type": "page",
+                "title": "External Samples",
+                "path": "vs-sonic-pi/media/tutorial/03.6-External-Samples.md",
+                "rel": "media/tutorial/03.6-External-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Five Live Coding Techniques",
+                "path": "vs-sonic-pi/media/tutorial/A.15-performance.md",
+                "rel": "media/tutorial/A.15-performance.md"
+              },
+              {
+                "type": "page",
+                "title": "Five Top Tips",
+                "path": "vs-sonic-pi/media/tutorial/A.01-tips.md",
+                "rel": "media/tutorial/A.01-tips.md"
+              },
+              {
+                "type": "page",
+                "title": "Functions",
+                "path": "vs-sonic-pi/media/tutorial/05.5-Functions.md",
+                "rel": "media/tutorial/05.5-Functions.md"
+              },
+              {
+                "type": "page",
+                "title": "FX in Practice",
+                "path": "vs-sonic-pi/media/tutorial/06.2-FX-in-Practice.md",
+                "rel": "media/tutorial/06.2-FX-in-Practice.md"
+              },
+              {
+                "type": "page",
+                "title": "Iteration and Loops",
+                "path": "vs-sonic-pi/media/tutorial/05.2-Iteration-and-Loops.md",
+                "rel": "media/tutorial/05.2-Iteration-and-Loops.md"
+              },
+              {
+                "type": "page",
+                "title": "Learning through Play",
+                "path": "vs-sonic-pi/media/tutorial/01.3-Learning-through-Play.md",
+                "rel": "media/tutorial/01.3-Learning-through-Play.md"
+              },
+              {
+                "type": "page",
+                "title": "Lists",
+                "path": "vs-sonic-pi/media/tutorial/08.1-Lists.md",
+                "rel": "media/tutorial/08.1-Lists.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Audio",
+                "path": "vs-sonic-pi/media/tutorial/13.2-Live-Audio.md",
+                "rel": "media/tutorial/13.2-Live-Audio.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Coding (01.1-Live-Coding)",
+                "path": "vs-sonic-pi/media/tutorial/01.1-Live-Coding.md",
+                "rel": "media/tutorial/01.1-Live-Coding.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Coding (09-Live-Coding)",
+                "path": "vs-sonic-pi/media/tutorial/09-Live-Coding.md",
+                "rel": "media/tutorial/09-Live-Coding.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Coding (09.1-Live-Coding-Fundamentals)",
+                "path": "vs-sonic-pi/media/tutorial/09.1-Live-Coding-Fundamentals.md",
+                "rel": "media/tutorial/09.1-Live-Coding-Fundamentals.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Coding (A.02-live-coding)",
+                "path": "vs-sonic-pi/media/tutorial/A.02-live-coding.md",
+                "rel": "media/tutorial/A.02-live-coding.md"
+              },
+              {
+                "type": "page",
+                "title": "Live Loops",
+                "path": "vs-sonic-pi/media/tutorial/09.2-Live-Loops.md",
+                "rel": "media/tutorial/09.2-Live-Loops.md"
+              },
+              {
+                "type": "page",
+                "title": "MagPi Articles",
+                "path": "vs-sonic-pi/media/tutorial/A-Articles.md",
+                "rel": "media/tutorial/A-Articles.md"
+              },
+              {
+                "type": "page",
+                "title": "MIDI",
+                "path": "vs-sonic-pi/media/tutorial/11-MIDI.md",
+                "rel": "media/tutorial/11-MIDI.md"
+              },
+              {
+                "type": "page",
+                "title": "MIDI In",
+                "path": "vs-sonic-pi/media/tutorial/11.1-MIDI-In.md",
+                "rel": "media/tutorial/11.1-MIDI-In.md"
+              },
+              {
+                "type": "page",
+                "title": "MIDI Out",
+                "path": "vs-sonic-pi/media/tutorial/11.2-MIDI-Out.md",
+                "rel": "media/tutorial/11.2-MIDI-Out.md"
+              },
+              {
+                "type": "page",
+                "title": "Multichannel Audio",
+                "path": "vs-sonic-pi/media/tutorial/13-Multichannel-Audio.md",
+                "rel": "media/tutorial/13-Multichannel-Audio.md"
+              },
+              {
+                "type": "page",
+                "title": "Multiple Live Loops",
+                "path": "vs-sonic-pi/media/tutorial/09.3-Multiple-Live-Loops.md",
+                "rel": "media/tutorial/09.3-Multiple-Live-Loops.md"
+              },
+              {
+                "type": "page",
+                "title": "Musical Minecraft",
+                "path": "vs-sonic-pi/media/tutorial/A.06-minecraft.md",
+                "rel": "media/tutorial/A.06-minecraft.md"
+              },
+              {
+                "type": "page",
+                "title": "OSC",
+                "path": "vs-sonic-pi/media/tutorial/12-OSC.md",
+                "rel": "media/tutorial/12-OSC.md"
+              },
+              {
+                "type": "page",
+                "title": "Partial Samples",
+                "path": "vs-sonic-pi/media/tutorial/03.5-Partial-Samples.md",
+                "rel": "media/tutorial/03.5-Partial-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Pattern Matching",
+                "path": "vs-sonic-pi/media/tutorial/10.3-Pattern-Matching.md",
+                "rel": "media/tutorial/10.3-Pattern-Matching.md"
+              },
+              {
+                "type": "page",
+                "title": "Performing",
+                "path": "vs-sonic-pi/media/tutorial/B.04-Performing.md",
+                "rel": "media/tutorial/B.04-Performing.md"
+              },
+              {
+                "type": "page",
+                "title": "Programming Structures",
+                "path": "vs-sonic-pi/media/tutorial/05-Programming-Structures.md",
+                "rel": "media/tutorial/05-Programming-Structures.md"
+              },
+              {
+                "type": "page",
+                "title": "Randomisation",
+                "path": "vs-sonic-pi/media/tutorial/04-Randomisation.md",
+                "rel": "media/tutorial/04-Randomisation.md"
+              },
+              {
+                "type": "page",
+                "title": "Receiving OSC",
+                "path": "vs-sonic-pi/media/tutorial/12.1-Receiving-OSC.md",
+                "rel": "media/tutorial/12.1-Receiving-OSC.md"
+              },
+              {
+                "type": "page",
+                "title": "Ring Chains",
+                "path": "vs-sonic-pi/media/tutorial/08.5-Ring-Chains.md",
+                "rel": "media/tutorial/08.5-Ring-Chains.md"
+              },
+              {
+                "type": "page",
+                "title": "Rings",
+                "path": "vs-sonic-pi/media/tutorial/08.4-Rings.md",
+                "rel": "media/tutorial/08.4-Rings.md"
+              },
+              {
+                "type": "page",
+                "title": "Sample Packs",
+                "path": "vs-sonic-pi/media/tutorial/03.7-Sample-Packs.md",
+                "rel": "media/tutorial/03.7-Sample-Packs.md"
+              },
+              {
+                "type": "page",
+                "title": "Sample Parameters: Amp and Pan",
+                "path": "vs-sonic-pi/media/tutorial/03.2-Sample-Params.md",
+                "rel": "media/tutorial/03.2-Sample-Params.md"
+              },
+              {
+                "type": "page",
+                "title": "Sample Slicing",
+                "path": "vs-sonic-pi/media/tutorial/A.12-sample-slicing.md",
+                "rel": "media/tutorial/A.12-sample-slicing.md"
+              },
+              {
+                "type": "page",
+                "title": "Sample Stretching",
+                "path": "vs-sonic-pi/media/tutorial/A.17-sample-stretching.md",
+                "rel": "media/tutorial/A.17-sample-stretching.md"
+              },
+              {
+                "type": "page",
+                "title": "Samples",
+                "path": "vs-sonic-pi/media/tutorial/03-Samples.md",
+                "rel": "media/tutorial/03-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Scales",
+                "path": "vs-sonic-pi/media/tutorial/08.3-Scales.md",
+                "rel": "media/tutorial/08.3-Scales.md"
+              },
+              {
+                "type": "page",
+                "title": "Sending OSC",
+                "path": "vs-sonic-pi/media/tutorial/12.2-Sending-OSC.md",
+                "rel": "media/tutorial/12.2-Sending-OSC.md"
+              },
+              {
+                "type": "page",
+                "title": "Set and Get",
+                "path": "vs-sonic-pi/media/tutorial/10.1-Set-and-Get.md",
+                "rel": "media/tutorial/10.1-Set-and-Get.md"
+              },
+              {
+                "type": "page",
+                "title": "Sharing",
+                "path": "vs-sonic-pi/media/tutorial/B.03-Sharing.md",
+                "rel": "media/tutorial/B.03-Sharing.md"
+              },
+              {
+                "type": "page",
+                "title": "Shortcut Cheatsheet",
+                "path": "vs-sonic-pi/media/tutorial/B.02-Shortcut-Cheatsheet.md",
+                "rel": "media/tutorial/B.02-Shortcut-Cheatsheet.md"
+              },
+              {
+                "type": "page",
+                "title": "Sliding Opts",
+                "path": "vs-sonic-pi/media/tutorial/07.3-Sliding-Parameters.md",
+                "rel": "media/tutorial/07.3-Sliding-Parameters.md"
+              },
+              {
+                "type": "page",
+                "title": "Sound In",
+                "path": "vs-sonic-pi/media/tutorial/13.1-Sound-In.md",
+                "rel": "media/tutorial/13.1-Sound-In.md"
+              },
+              {
+                "type": "page",
+                "title": "Sound Out",
+                "path": "vs-sonic-pi/media/tutorial/13.3-Sound-Out.md",
+                "rel": "media/tutorial/13.3-Sound-Out.md"
+              },
+              {
+                "type": "page",
+                "title": "Stretching Samples",
+                "path": "vs-sonic-pi/media/tutorial/03.3-Stretching-Samples.md",
+                "rel": "media/tutorial/03.3-Stretching-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Studio FX",
+                "path": "vs-sonic-pi/media/tutorial/06-FX.md",
+                "rel": "media/tutorial/06-FX.md"
+              },
+              {
+                "type": "page",
+                "title": "Subtractive Synthesis",
+                "path": "vs-sonic-pi/media/tutorial/A.19-subtractive-synthesis.md",
+                "rel": "media/tutorial/A.19-subtractive-synthesis.md"
+              },
+              {
+                "type": "page",
+                "title": "Surfing Random Streams",
+                "path": "vs-sonic-pi/media/tutorial/A.09-randomisation.md",
+                "rel": "media/tutorial/A.09-randomisation.md"
+              },
+              {
+                "type": "page",
+                "title": "Switching Synths",
+                "path": "vs-sonic-pi/media/tutorial/02.3-Switching-Synths.md",
+                "rel": "media/tutorial/02.3-Switching-Synths.md"
+              },
+              {
+                "type": "page",
+                "title": "Sync",
+                "path": "vs-sonic-pi/media/tutorial/10.2-Sync.md",
+                "rel": "media/tutorial/10.2-Sync.md"
+              },
+              {
+                "type": "page",
+                "title": "Synth Options: Amp and Pan",
+                "path": "vs-sonic-pi/media/tutorial/02.2-Synth-Params.md",
+                "rel": "media/tutorial/02.2-Synth-Params.md"
+              },
+              {
+                "type": "page",
+                "title": "Synth Riffs",
+                "path": "vs-sonic-pi/media/tutorial/A.04-synth-riffs.md",
+                "rel": "media/tutorial/A.04-synth-riffs.md"
+              },
+              {
+                "type": "page",
+                "title": "Synths",
+                "path": "vs-sonic-pi/media/tutorial/02-Synths.md",
+                "rel": "media/tutorial/02-Synths.md"
+              },
+              {
+                "type": "page",
+                "title": "The Sonic Pi Interface",
+                "path": "vs-sonic-pi/media/tutorial/01.2-Exploring-the-Interface.md",
+                "rel": "media/tutorial/01.2-Exploring-the-Interface.md"
+              },
+              {
+                "type": "page",
+                "title": "Thread Synchronisation",
+                "path": "vs-sonic-pi/media/tutorial/05.7-Thread-Synchronisation.md",
+                "rel": "media/tutorial/05.7-Thread-Synchronisation.md"
+              },
+              {
+                "type": "page",
+                "title": "Threads",
+                "path": "vs-sonic-pi/media/tutorial/05.4-Threads.md",
+                "rel": "media/tutorial/05.4-Threads.md"
+              },
+              {
+                "type": "page",
+                "title": "Ticking",
+                "path": "vs-sonic-pi/media/tutorial/09.4-Ticking.md",
+                "rel": "media/tutorial/09.4-Ticking.md"
+              },
+              {
+                "type": "page",
+                "title": "Time State",
+                "path": "vs-sonic-pi/media/tutorial/10-State.md",
+                "rel": "media/tutorial/10-State.md"
+              },
+              {
+                "type": "page",
+                "title": "Tracking the Beat",
+                "path": "vs-sonic-pi/media/tutorial/A.11-beat-tracking.md",
+                "rel": "media/tutorial/A.11-beat-tracking.md"
+              },
+              {
+                "type": "page",
+                "title": "Triggering Samples",
+                "path": "vs-sonic-pi/media/tutorial/03.1-Triggering-Samples.md",
+                "rel": "media/tutorial/03.1-Triggering-Samples.md"
+              },
+              {
+                "type": "page",
+                "title": "Using Shortcuts",
+                "path": "vs-sonic-pi/media/tutorial/B.01-Using-Shortcuts.md",
+                "rel": "media/tutorial/B.01-Using-Shortcuts.md"
+              },
+              {
+                "type": "page",
+                "title": "Variables",
+                "path": "vs-sonic-pi/media/tutorial/05.6-Variables.md",
+                "rel": "media/tutorial/05.6-Variables.md"
+              },
+              {
+                "type": "page",
+                "title": "Welcome friend :-)",
+                "path": "vs-sonic-pi/media/tutorial/01-Welcome-to-Sonic-Pi.md",
+                "rel": "media/tutorial/01-Welcome-to-Sonic-Pi.md"
+              },
+              {
+                "type": "page",
+                "title": "Your First Beeps",
+                "path": "vs-sonic-pi/media/tutorial/02.1-Your-First-Beeps.md",
+                "rel": "media/tutorial/02.1-Your-First-Beeps.md"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

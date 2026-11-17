@@ -6,12 +6,15 @@ date: 2025-10-04 20:39:25+00:00
 description: Implementation notes for Mermaid v2 integration, sidebar improvements,
   frontmatter validator bug fixes, and the Copilot Agent prompt button.
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: feature-change-log.md
+source_file: docs/implementation/feature-change-log.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/feature-change-log.md
 tags:
 - implementation
 - changelog
 title: Feature Change Log
 ---
+
 # Feature Change Log
 
 Condensed implementation records for completed features. For current feature documentation, see [docs/features/](../features/).

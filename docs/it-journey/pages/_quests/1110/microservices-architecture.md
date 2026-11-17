@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the gateway, scaling, and event-driven quests
 skill_focus: backend
-source_file: microservices-architecture.md
+source_file: pages/_quests/1110/microservices-architecture.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/microservices-architecture.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - Microservices Architecture'
 tags:
 - '1110'
@@ -87,7 +89,7 @@ tags:
 - distributed-systems
 - conceptual
 - gamified-learning
-title: Verify the engine is running
+title: 'Microservices Architecture: Decomposing the Monolith'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -136,7 +138,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understand HTTP APIs and service-to-service calls
 - [ ] Familiarity with Docker basics
-- [ ] Completed [Domain-Driven Design](/quests/1110/domain-driven-design/) (recommended)
+- [ ] Completed [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -410,16 +412,16 @@ Pair circuit breakers with **timeouts** (never wait forever) and **bounded retri
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [API Gateway Patterns](/quests/1110/api-gateway-patterns/) - The single front door for many services
+- 🎯 [[it-journey/pages/_quests/1110/api-gateway-patterns|API Gateway Patterns]] - The single front door for many services
 
 **Explore Side Adventures**:
-- ⚔️ [Event-Driven Design](/quests/1110/event-driven-design/) - Asynchronous, decoupled communication
-- ⚔️ [Scaling Strategies](/quests/1110/scaling-strategies/) - Scale horizontally with confidence
+- ⚔️ [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]] - Asynchronous, decoupled communication
+- ⚔️ [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]] - Scale horizontally with confidence
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Gateway Patterns](/quests/1110/api-gateway-patterns/)  
-**🏗️ System Engineer**: Explore [Scaling Strategies](/quests/1110/scaling-strategies/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/api-gateway-patterns|API Gateway Patterns]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]]  
 **🛡️ Security Specialist**: Note how a gateway centralizes auth across services
 
 ## 📚 Resources
@@ -449,6 +451,6 @@ Pair circuit breakers with **timeouts** (never wait forever) and **bounded retri
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Software Design Patterns: Gang of Four and Modern Patterns]] · [[Domain-Driven Design: Modeling the Business in Code]] **Unlocks:** [[API Gateway Patterns: The Single Front Door]] · [[Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] · [[Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/design-patterns|Software Design Patterns: Gang of Four and Modern Patterns]] · [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design: Modeling the Business in Code]] **Unlocks:** [[it-journey/pages/_quests/1110/api-gateway-patterns|API Gateway Patterns: The Single Front Door]] · [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] · [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

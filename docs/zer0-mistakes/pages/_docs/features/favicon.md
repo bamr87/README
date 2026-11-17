@@ -20,13 +20,16 @@ layout: default
 permalink: /docs/features/favicon/
 sidebar:
   nav: docs
-source_file: favicon.md
+source_file: pages/_docs/features/favicon.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/favicon.md
 tags:
 - seo
 - branding
 - configuration
-title: Favicon & Browser Identity
+title: Favicon and Browser Identity Setup
 ---
+
 # Favicon & Browser Identity
 
 The theme emits the browser-identity tags — favicon, scalable SVG icon, Apple touch icon, web manifest, and `theme-color` — from `_includes/core/favicon.html`, included in the document head on every page.
@@ -126,5 +129,5 @@ The point of these tags is that you cannot see most of them, so check them rathe
 
 ## See also
 
-- [Remote-Theme Consumer Checklist](/docs/deployment/remote-theme-checklist/) — what a `remote_theme` site must declare for itself, including the icon assets and the optional `favicon:` block
-- [Features](/docs/features/) — index of every theme feature
+- [[zer0-mistakes/pages/_docs/deployment/remote-theme-checklist|Remote-Theme Consumer Checklist]] — what a `remote_theme` site must declare for itself, including the icon assets and the optional `favicon:` block
+- [[zer0-mistakes/pages/_docs/features/index|Features]] — index of every theme feature

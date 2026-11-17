@@ -26,7 +26,9 @@ quickstart:
   prev: /quickstart/
 sidebar:
   nav: quickstart
-source_file: site-builder.md
+source_file: fr/quickstart/site-builder.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/site-builder.md
 tags:
 - setup
 - wizard
@@ -34,11 +36,12 @@ tags:
 - grok
 - docker
 - ai-powered
-title: Générateur de site
+title: 'Site Builder : configuration guidée avec Claude ou Grok'
 translated_from_sha: 45ea3ac202e1
 translation_of: pages/_quickstart/site-builder.md
 translation_source_url: /quickstart/site-builder/
 ---
+
 # Générateur de site
 
 Le Générateur de site est un assistant en neuf étapes qui vous mène d'un dossier vide à un site zer0-mistakes personnalisé et fonctionnel. Il est accessible à `/setup/` sur toute compilation locale du thème et sur l'écran d'accueil d'un nouveau site utilisant le thème distant. Une session IA intégrée accompagne chaque étape, prise en charge par le fournisseur que vous connectez avec votre propre token — Claude (Anthropic) ou Grok (xAI). Elle peut lire vos réponses, remplir les formulaires, vérifier votre machine, lire le code source réel du thème, écrire le projet généré sur le disque, démarrer Docker et, dans une session ouverte, modifier un site que vous possédez déjà et générer des images pour celui-ci.
@@ -127,9 +130,9 @@ cd my-site && docker compose up
 
 ## Voir aussi
 
-- [Machine Setup](/quickstart/machine-setup/) est la référence manuelle qui sous-tend l'étape Prérequis.
-- [Référence de la fonctionnalité Site Builder](/docs/features/site-builder/) documente les outils, les routes du proxy et le modèle de sécurité.
-- [Assistant de chat IA](/docs/features/ai-chat-assistant/) explique le proxy que le générateur réutilise.
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] est la référence manuelle qui sous-tend l'étape Prérequis.
+- [[zer0-mistakes/pages/_docs/features/site-builder|Référence de la fonctionnalité Site Builder]] documente les outils, les routes du proxy et le modèle de sécurité.
+- [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|Assistant de chat IA]] explique le proxy que le générateur réutilise.
 
 ---
 

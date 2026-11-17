@@ -8,7 +8,9 @@ description: Single source of truth for every front-end UI/UX component in the z
   / plugins), its API surface (classes, data-attributes, JS globals, events, CSS tokens),
   and its automated test coverage. Use it to define, test, and improve the UI.
 lastmod: 2026-09-05 00:00:00+00:00
-source_file: ui-components.md
+source_file: docs/architecture/ui-components.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/ui-components.md
 tags:
 - architecture
 - design
@@ -17,6 +19,7 @@ tags:
 - components
 title: UI/UX Component Spec
 ---
+
 # UI/UX Component Spec
 
 > **Single point of reference** for the theme's front-end. Every UI feature is catalogued with its purpose, source files, public API surface, and test coverage — so each component can be **defined**, **tested**, and **improved** from one place.

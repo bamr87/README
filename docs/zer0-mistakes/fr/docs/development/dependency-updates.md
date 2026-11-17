@@ -16,7 +16,9 @@ prerequisites:
 preview: /images/previews/dependency-updates.png
 sidebar:
   nav: docs
-source_file: dependency-updates.md
+source_file: fr/docs/development/dependency-updates.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/dependency-updates.md
 tags:
 - dependencies
 - gems
@@ -27,6 +29,7 @@ translated_from_sha: 42c6899a9066
 translation_of: pages/_docs/development/dependency-updates.md
 translation_source_url: /docs/development/dependency-updates/
 ---
+
 # Mises à jour des dépendances
 
 Le thème utilise une stratégie Zero-Pin : `Gemfile` ne spécifie aucune version épinglée ; `Gemfile.lock` est validé pour garantir des builds reproductibles. Les dépendances sont mises à jour chaque semaine via `bundle update` et un petit workflow de PR automatisé.

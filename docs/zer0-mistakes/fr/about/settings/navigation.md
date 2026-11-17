@@ -7,13 +7,16 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/settings/navigation/
 preview: /images/previews/navigation-editor.png
-source_file: navigation.md
+source_file: fr/about/settings/navigation.md
 source_icon: bi-signpost-2
-title: Navigation
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/settings/navigation.md
+title: Éditeur de navigation
 translated_from_sha: b10d3f9a2491
 translation_of: pages/_about/settings/navigation.md
 translation_source_url: /about/settings/navigation/
 ---
+
 <ul class="nav nav-tabs" id="navTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#pane-overview" type="button" role="tab" aria-controls="pane-overview" aria-selected="true">

@@ -57,7 +57,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: devops
-source_file: ouroboros-loop-02-the-wardens-gate.md
+source_file: pages/_quests/0101/ouroboros-loop-02-the-wardens-gate.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/ouroboros-loop-02-the-wardens-gate.md
 tags:
 - '0101'
 - github-actions
@@ -65,7 +67,7 @@ tags:
 - ci-cd
 - security
 - gamified-learning
-title: .github/workflows/first-turn.yml  (additions)
+title: 'The Warden''s Gate: Kill Switches and Stage Gates'
 ---
 *A loop that cannot be stopped is not an engine — it is a runaway cart. Before your serpent grows teeth (golems, fix lanes, self-merges), it must learn the Wardens' first law: **everything autonomous is OFF until a named switch turns it on, and it stops the instant that switch is unset.** Today you build the gate itself — and then you meet the failure that killed the real engine three mornings straight without producing a single log line.*
 
@@ -234,8 +236,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- 🤖 [Chapter III — Summon the Golem](/quests/0011/ouroboros-loop-03-summon-the-golem/): a Claude Code agent joins the loop, under oath
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- 🤖 [[it-journey/pages/_quests/0011/ouroboros-loop-03-summon-the-golem|Chapter III — Summon the Golem]]: a Claude Code agent joins the loop, under oath
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -247,4 +249,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Previous:** [[The First Turn]] · **Next:** [[Summon the Golem]] **Level home:** [[Level 0101 - CI/CD & DevOps]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Previous:** [[The First Turn]] · **Next:** [[Summon the Golem]] **Level home:** [[Level 0101 - CI/CD & DevOps]]

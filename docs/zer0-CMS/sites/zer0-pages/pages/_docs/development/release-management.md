@@ -1,0 +1,47 @@
+---
+aliases:
+- /docs/development/release-management/
+categories:
+- docs
+- development
+description: Overview of the release process for the Zer0-Mistakes theme. See docs/
+  for the full release automation reference.
+difficulty: advanced
+estimated_reading_time: 5 minutes
+lastmod: 2026-06-16 00:00:00+00:00
+layout: default
+permalink: /docs/development/release-management/
+preview: /images/previews/release-management.png
+sidebar:
+  nav: docs
+source_file: sites/zer0-pages/pages/_docs/development/release-management.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/sites/zer0-pages/pages/_docs/development/release-management.md
+tags:
+- release
+- versioning
+- changelog
+- rubygems
+title: Release Management
+type: doc
+---
+
+# Release Management
+
+Releases follow [Conventional Commits](https://www.conventionalcommits.org/) and [Semantic Versioning](https://semver.org/). The release process is fully automated via `scripts/bin/release`:
+
+```bash
+./scripts/bin/release patch           # e.g. 1.9.8 → 1.9.9
+./scripts/bin/release minor           # e.g. 1.9.8 → 1.10.0
+./scripts/bin/release patch --dry-run # preview without changes
+```
+
+The command handles version bumping, CHANGELOG generation, gem build, RubyGems publication, and GitHub release creation in one step.
+
+## Full Reference
+
+The complete release automation guide — 10-step workflow, flags, troubleshooting, library architecture — is in the contributor docs:
+
+**[Release Automation → docs/systems/release-automation.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/release-automation.md)**
+
+See also: [Automated Version System → docs/systems/automated-version-system.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/automated-version-system.md)

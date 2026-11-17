@@ -13,12 +13,14 @@ objectives:
     - file_exists: /lab/workshop/archive/report.txt
     - not:
         file_exists: /lab/workshop/inbox/report-draft.txt
-source_file: 02-copy-and-move.md
+source_file: courses/workshop/02-copy-and-move.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/workshop/02-copy-and-move.md
 teaches:
 - cp
 - mv
 - renaming
-title: 02 Copy And Move
+title: Copying and moving
 xp: 25
 ---
 - `cp SOURCE DEST` **copies**, so the original stays.

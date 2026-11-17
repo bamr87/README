@@ -6,12 +6,15 @@ date: 2026-01-25 03:38:33+00:00
 description: Set up a local Zer0-Mistakes development environment with Docker or a
   native Ruby toolchain, then run the dev server and validate your changes.
 lastmod: 2026-05-25 19:58:49+00:00
-source_file: local-setup.md
+source_file: docs/development/local-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/local-setup.md
 tags:
 - development
 - contributing
 title: Local Development Setup
 ---
+
 # Local Development Setup
 
 Set up your development environment for contributing to the Zer0-Mistakes theme.

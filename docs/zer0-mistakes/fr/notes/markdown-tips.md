@@ -13,17 +13,20 @@ lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 machine_translated: true
 permalink: /fr/notes/markdown-tips/
-source_file: markdown-tips.md
+source_file: fr/notes/markdown-tips.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/notes/markdown-tips.md
 tags:
 - markdown
 - formatting
 - writing
 - documentation
-title: Heading 1
+title: Conseils de mise en forme Markdown
 translated_from_sha: 1c8fdb9919a6
 translation_of: pages/_notes/markdown-tips.md
 translation_source_url: /notes/markdown-tips/
 ---
+
 ## Mise en forme de base
 
 ### Emphase du texte

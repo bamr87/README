@@ -8,10 +8,13 @@ layout: admin
 permalink: /about/config/
 preview: /images/previews/configuration-utility.png
 sidebar: false
-source_file: config.md
+source_file: pages/_about/settings/config.md
 source_icon: bi-gear
-title: Wraps the copy in Liquid raw markers so config comments that mention
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/config.md
+title: Configuration Utility
 ---
+
 {% comment %}
 Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML tab and the hidden copy-source element use this capture, so the live PostHog key (and any other secret-shaped line) never reaches the DOM in either place. Pure Liquid line filter (works on GitHub Pages where the sanitize_config_yaml plugin filter is a silent no-op) + the plugin filter as defense-in-depth on plugin-enabled builds. cfg_nl captures exactly one newline — keep both tags flush-left. Fail-closed: if the split degraded, the whole config matches the probe and renders as one redaction marker. Lines are HTML-escaped; copy buttons read textContent, which decodes entities back to the original characters.
 {% endcomment %}

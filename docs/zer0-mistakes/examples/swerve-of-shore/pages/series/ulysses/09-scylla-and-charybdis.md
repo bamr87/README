@@ -8,9 +8,12 @@ permalink: /series/ulysses/09-scylla-and-charybdis/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 09-scylla-and-charybdis.md
-title: 09 Scylla And Charybdis
+source_file: examples/swerve-of-shore/pages/series/ulysses/09-scylla-and-charybdis.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/09-scylla-and-charybdis.md
+title: 09 · Scylla & Charybdis
 ---
+
 {% include page-header.html %}
 
 Episode 9 of *Ulysses*. 2pm, the National Library.

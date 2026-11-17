@@ -23,13 +23,15 @@ objectives:
     - command: cd
     - arg: '-'
     - cwd: /lab/navigator/north/forest
-source_file: 03-moving.md
+source_file: courses/navigator/03-moving.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/navigator/03-moving.md
 teaches:
 - cd
 - relative paths
 - ..
 - cd -
-title: 03 Moving
+title: Moving around
 xp: 25
 ---
 A path that does **not** start with `/` is **relative**: it starts from where you are now.

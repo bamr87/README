@@ -66,7 +66,9 @@ rewards:
   - 📦 Flatpak on an immutable system
   - 📜 Reading software licences
 skill_focus: infrastructure
-source_file: twin-rigs-07-the-free-stalls.md
+source_file: pages/_quests/1000/twin-rigs-07-the-free-stalls.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/twin-rigs-07-the-free-stalls.md
 tags:
 - '1000'
 - steamos
@@ -76,7 +78,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: 'After downloading a game into ~/Games:'
+title: 'The Free Stalls: Stock SteamOS with Open Source Games'
 validation_criteria:
   completion_requirements:
   - Four open source games launch from Game Mode
@@ -100,7 +102,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter VI](/quests/0111/twin-rigs-06-the-steam-rite/)** — SteamOS running on the Great Rig
+- **[[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite|Chapter VI]]** — SteamOS running on the Great Rig
 - **Desktop Mode, a keyboard, and a mouse** — for the installs
 - **A gamepad** — to test everything from the couch
 
@@ -284,9 +286,9 @@ graph LR
 
 Both rigs are full of games. One question remains: will they hold up when it counts?
 
-- ➡️ **Next chapter:** [Chapter VIII — The Throttle Wraith](/quests/1001/twin-rigs-08-the-throttle-wraith/)
-- ⬅️ **Previous chapter:** [Chapter VI — The Steam Rite](/quests/0111/twin-rigs-06-the-steam-rite/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith|Chapter VIII — The Throttle Wraith]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite|Chapter VI — The Steam Rite]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -297,6 +299,6 @@ Both rigs are full of games. One question remains: will they hold up when it cou
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 1000 (8) - Cloud Computing Fundamentals]] **Previous:** [[The Steam Rite: Install SteamOS on the Great Rig]] **Next:** [[The Throttle Wraith: Prove Both Rigs Under Sustained Load]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/1000/README|Level 1000 (8) - Cloud Computing Fundamentals]] **Previous:** [[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite|The Steam Rite: Install SteamOS on the Great Rig]] **Next:** [[it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith|The Throttle Wraith: Prove Both Rigs Under Sustained Load]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

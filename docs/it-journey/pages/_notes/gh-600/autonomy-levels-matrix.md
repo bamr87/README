@@ -9,7 +9,9 @@ draft: false
 lastmod: '2026-05-17T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/autonomy-levels-matrix/
-source_file: autonomy-levels-matrix.md
+source_file: pages/_notes/gh-600/autonomy-levels-matrix.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/autonomy-levels-matrix.md
 tags:
 - gh-600
 - autonomy
@@ -62,8 +64,8 @@ When classifying a task, answer three questions:
 
 ## Related Quest
 
-[Q18: Autonomy Levels Matrix](/quests/1100/agentic-autonomy-levels-matrix/) — Full implementation with `_data/autonomy-matrix.yml` schema.
+[[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|Q18: Autonomy Levels Matrix]] — Full implementation with `_data/autonomy-matrix.yml` schema.
 
 ---
 
-*Part of: [[GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[The Autonomy Scales: Mapping Agent Autonomy Levels]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*
+*Part of: [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*

@@ -12,13 +12,16 @@ permalink: /docs/development/testing/
 preview: /images/previews/testing.png
 sidebar:
   nav: docs
-source_file: testing.md
+source_file: pages/_docs/development/testing.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/testing.md
 tags:
 - testing
 - ci-cd
 - quality
 title: Testing
 ---
+
 # Testing
 
 The Zer0-Mistakes theme includes a comprehensive test suite covering preflight validation, core functionality, deployment readiness, quality checks, and Playwright visual regression tests.

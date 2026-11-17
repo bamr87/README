@@ -3,9 +3,12 @@ description: Browse all categories and discover content by topic
 lastmod: 2026-04-18 19:30:22+00:00
 layout: default
 permalink: /categories/
-source_file: categories.md
+source_file: pages/categories.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/categories.md
 title: Categories
 ---
+
 <!--
   ===================================================================
   CATEGORIES INDEX PAGE - Browse all categories

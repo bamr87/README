@@ -1,5 +1,7 @@
 ---
-source_file: architecture.md
+source_file: docs/termforge/architecture.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/termforge/architecture.md
 title: TermForge Architecture
 ---
 # TermForge Architecture

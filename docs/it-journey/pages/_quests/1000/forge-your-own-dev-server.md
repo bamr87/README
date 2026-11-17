@@ -84,7 +84,9 @@ rewards:
   - The on-premises counterpart to cloud provisioning, and the box you will run every
     later quest on
 skill_focus: devops
-source_file: forge-your-own-dev-server.md
+source_file: pages/_quests/1000/forge-your-own-dev-server.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/forge-your-own-dev-server.md
 sub_title: 'Level 1000 (8) Quest: Main Quest - Forge Your Own Dev Server'
 tags:
 - '1000'
@@ -93,7 +95,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Reach the box and give it a memorable name in your SSH config
+title: 'Forge Your Own Dev Server: Bare Metal to Watchtower'
 validation_criteria:
   completion_requirements:
   - A renamed, firewalled box reachable over SSH with key authentication
@@ -158,9 +160,9 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Bash Scripting](/quests/0010/bash-scripting/) - you will write and read shell scripts throughout
+- [ ] Completion of [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]] - you will write and read shell scripts throughout
 - [ ] Comfort with the terminal: navigation, file editing, reading exit codes
-- [ ] Container basics, ideally [Docker Compose Orchestration](/quests/0100/docker-compose-orchestration/)
+- [ ] Container basics, ideally [[it-journey/pages/_quests/0100/docker-compose-orchestration|Docker Compose Orchestration]]
 
 ### 🛠️ System Requirements
 - [ ] A machine to sacrifice: an old desktop, a spare laptop, a VM, or a cloud instance
@@ -734,9 +736,9 @@ Turn everything you ran into four idempotent scripts - `01-system.sh`, `02-user.
 
 ## 🗺️ Next Steps in Your Journey
 
-- [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) - graduate from a health script to metrics, retention, and alerting
-- [Infrastructure as Code](/quests/1000/infrastructure-as-code/) - describe this machine declaratively instead of by hand
-- [Cloud Computing Fundamentals](/quests/1000/cloud-computing-fundamentals/) - compare what you built to what a provider rents you
+- [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] - graduate from a health script to metrics, retention, and alerting
+- [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]] - describe this machine declaratively instead of by hand
+- [[it-journey/pages/_quests/1000/cloud-computing-fundamentals|Cloud Computing Fundamentals]] - compare what you built to what a provider rents you
 
 ### Character Class Recommendations
 - **🛡️ Security Specialists** - extend the perimeter chapter with fail2ban, auditd, and key rotation
@@ -786,6 +788,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bash Scripting: Automation Fundamentals]] **Unlocks:** [[Monitoring Fundamentals: Observability Essentials]] **Related:** [[Infrastructure as Code: Terraform Fundamentals and State]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bash Scripting: Automation Fundamentals]] **Unlocks:** [[Monitoring Fundamentals: Observability Essentials]] **Related:** [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code: Terraform Fundamentals and State]]

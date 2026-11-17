@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Backup and recovery quests in the Database Mastery line
 skill_focus: data-engineering
-source_file: database-migrations.md
+source_file: pages/_quests/0110/database-migrations.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/database-migrations.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Living Schema'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: Install Alembic (Python migration tool)
+title: 'Database Migrations: Schema Evolution and Version Control'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfort with `CREATE TABLE` and `ALTER TABLE`
 - [ ] Basic familiarity with Git and version control
-- [ ] Completion of [Data Modeling](/quests/0110/data-modeling/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/data-modeling|Data Modeling]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -389,17 +391,17 @@ CREATE INDEX CONCURRENTLY idx_users_handle ON users(handle);
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Backup and Recovery](/quests/0110/backup-recovery/) - Protect against data loss
+- 🎯 [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]] - Protect against data loss
 
 **Explore Side Adventures**:
-- ⚔️ [Connection Pooling](/quests/0110/connection-pooling/) - Manage connections efficiently
-- ⚔️ [Query Optimization](/quests/0110/query-optimization/) - Add indexes the safe way
+- ⚔️ [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]] - Manage connections efficiently
+- ⚔️ [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]] - Add indexes the safe way
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Backup and Recovery](/quests/0110/backup-recovery/)  
-**🏗️ System Engineer**: Explore [Connection Pooling](/quests/0110/connection-pooling/)  
-**📊 Data Scientist**: Advance to [Query Optimization](/quests/0110/query-optimization/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]]
 
 ## 📚 Resources
 
@@ -428,7 +430,7 @@ CREATE INDEX CONCURRENTLY idx_users_handle ON users(handle);
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Data Modeling: Schema Design and Database Relationships]] **Unlocks:** [[Backup and Recovery: Data Protection Strategies for Databases]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/data-modeling|Data Modeling: Schema Design and Database Relationships]] **Unlocks:** [[Backup and Recovery: Data Protection Strategies for Databases]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

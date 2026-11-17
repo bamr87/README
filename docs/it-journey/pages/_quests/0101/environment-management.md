@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Secrets and artifact quests in Level 0101
 skill_focus: devops
-source_file: environment-management.md
+source_file: pages/_quests/0101/environment-management.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/environment-management.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Environments'
 tags:
 - '0101'
@@ -84,7 +86,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Set and read an environment variable in zsh/bash
+title: 'Environment Management: Dev, Staging, and Prod Parity'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -383,17 +385,17 @@ Because the definition is identical, staging genuinely rehearses what production
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Secrets Management](/quests/0101/secrets-management/) - The settings you must never commit
+- 🎯 [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]] - The settings you must never commit
 
 **Explore Side Adventures**:
-- ⚔️ [Artifact Management](/quests/0101/artifact-management/) - The thing you promote between envs
-- ⚔️ [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Ship across these environments
+- ⚔️ [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]] - The thing you promote between envs
+- ⚔️ [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Ship across these environments
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secrets Management](/quests/0101/secrets-management/)  
-**🏗️ System Engineer**: Explore [Artifact Management](/quests/0101/artifact-management/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -422,6 +424,6 @@ Because the definition is identical, staging genuinely rehearses what production
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Secrets Management: Secure Configuration and Credential Handling]] · [[Artifact Management: Build Output Storage and Dependency Caching]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Secrets Management: Secure Configuration and Credential Handling]] · [[Artifact Management: Build Output Storage and Dependency Caching]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

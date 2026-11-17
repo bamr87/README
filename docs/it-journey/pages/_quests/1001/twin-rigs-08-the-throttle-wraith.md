@@ -66,7 +66,9 @@ rewards:
   - 📡 Game streaming
   - 📈 Evidence-based performance tuning
 skill_focus: infrastructure
-source_file: twin-rigs-08-the-throttle-wraith.md
+source_file: pages/_quests/1001/twin-rigs-08-the-throttle-wraith.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/twin-rigs-08-the-throttle-wraith.md
 tags:
 - '1001'
 - steamos
@@ -76,7 +78,7 @@ tags:
 - main_quest
 - project-based
 - gamified-learning
-title: 'After it comes back, connect again:'
+title: 'The Throttle Wraith: Prove Both Rigs Under Sustained Load'
 validation_criteria:
   completion_requirements:
   - wraith_check.py passes on a real 30-minute log
@@ -100,8 +102,8 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter IV](/quests/0101/twin-rigs-04-the-caravan-road/)** — the Rewind Cabinet working as a console
-- **[Chapter VII](/quests/1000/twin-rigs-07-the-free-stalls/)** — the Great Rig stocked with games
+- **[[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road|Chapter IV]]** — the Rewind Cabinet working as a console
+- **[[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|Chapter VII]]** — the Great Rig stocked with games
 - **Wired Ethernet on both rigs** — Wi-Fi can work, but it makes streaming problems harder to diagnose
 - **A demanding game** — one that keeps your GPU busy for 30 minutes
 
@@ -333,8 +335,8 @@ You built two machines, and you can now prove what they do. Where you go next is
 - 🎨 Make your own game for the rigs with [Godot](https://godotengine.org/), which exports to Linux
 - 🔧 Add a console to Rewind Arcade: [one YAML file](https://github.com/bamr87/rewind-arcade/blob/main/emulate/docs/adding-systems.md) is all it takes, and a pull request earns you some karma
 - 🛰️ Set up the Sunshine and Moonlight side road from Chapter 1
-- ⬅️ **Previous chapter:** [Chapter VII — The Free Stalls](/quests/1000/twin-rigs-07-the-free-stalls/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|Chapter VII — The Free Stalls]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -345,6 +347,6 @@ You built two machines, and you can now prove what they do. Where you go next is
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Previous:** [[The Free Stalls: Stock SteamOS with Open Source Games]] **Next:** none — final chapter **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Previous:** [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|The Free Stalls: Stock SteamOS with Open Source Games]] **Next:** none — final chapter **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

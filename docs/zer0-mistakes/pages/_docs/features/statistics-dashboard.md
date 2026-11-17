@@ -12,7 +12,9 @@ permalink: /docs/features/statistics-dashboard/
 preview: /images/previews/statistics-dashboard-feature.png
 sidebar:
   nav: docs
-source_file: statistics-dashboard.md
+source_file: pages/_docs/features/statistics-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/statistics-dashboard.md
 tags:
 - dashboard
 - statistics
@@ -20,6 +22,7 @@ tags:
 - visualization
 title: Statistics Dashboard
 ---
+
 # Statistics Dashboard
 
 A ready-made dashboard that turns your content into metrics: how many posts you have, how they break down by category, and which tags you use most. It is built from a dedicated layout plus a set of modular include components, all fed by generated content statistics.
@@ -48,4 +51,4 @@ The [`stats.html`](https://github.com/bamr87/zer0-mistakes/blob/main/_layouts/st
 
 ## Related features
 
-- [SEO & Sitemap Generation](/docs/seo/sitemap/)
+- [[zer0-mistakes/pages/_docs/seo/sitemap|SEO & Sitemap Generation]]

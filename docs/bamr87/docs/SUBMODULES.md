@@ -1,0 +1,83 @@
+---
+source_file: docs/SUBMODULES.md
+source_repo: bamr87/bamr87
+source_url: https://github.com/bamr87/bamr87/blob/main/docs/SUBMODULES.md
+title: Submodules
+---
+# Submodules
+
+> The submodule workflow, documented once: where the project list lives, how a change moves (commit in the submodule first, then record its pointer here), and what the automation does in each direction.
+
+This repository is a **dash** (control plane) whose projects live as ~40 Git submodules under [`projects/`](../projects/). Each submodule is a separate repository with its own stack, branch, and release cycle.
+
+## Where the list lives (do not hardcode it here)
+
+The authoritative list is the registry, cross-checked against `.gitmodules`:
+
+- **[`_data/projects.yml`](../_data/projects.yml)** — the single source of truth (name, `submodule_path`, `branch`, stack, category, status, standards tier).
+- **[`.gitmodules`](../dot-gitmodules)** — the Git-level definitions.
+
+`tools/check-drift.sh` fails CI if these two disagree, so this document intentionally does **not** repeat the list — read the registry or run:
+
+```bash
+git submodule status              # checked-out SHAs + branches
+tools/dash status                 # registry + drift summary
+./tools/update-submodules.sh --status   # declared vs. checked-out branch
+```
+
+### Naming convention
+
+Every `.gitmodules` section is named by its path — `[submodule "projects/<name>"]` — and the file is kept sorted by path. A repo whose registry row has `submodule_path: null` (archived or external: `zer0-mistakes`, `amrchy`, `ai-seed`, `csv-vscoode`) is shown on the dash but never checked out here. If a clone predates a rename, run `git submodule sync` once; the checked-out trees keep pointing at their existing gitdirs.
+
+### Branch conventions
+
+All submodules track `main` (the former `sonic-pi` fork that tracked `dev` no longer exists; `vs-sonic-pi` is on `main`). `skills` is an external `microsoft/skills` mirror on `main` (`update = merge`). Always read the branch from `.gitmodules` — never assume.
+
+## Cloning and updating
+
+```bash
+git clone --recurse-submodules https://github.com/bamr87/bamr87.git
+# already cloned:
+git submodule update --init --recursive
+```
+
+## Working inside a submodule
+
+A change inside a submodule is committed **in its own repo first**, then the pointer is recorded in root:
+
+```bash
+cd projects/<name>
+git checkout <branch>                 # submodules often land in detached HEAD
+# ...edit...
+git add . && git commit -m "feat: ..."
+git push origin <branch>              # pushes to bamr87/<name>, NOT this repo
+cd ../..
+git add projects/<name> && git commit -m "chore: bump <name> submodule"
+```
+
+Don't bundle changes across multiple submodules into one PR.
+
+## Automated pointer updates
+
+`.github/workflows/update-submodules.yml` runs daily (or on demand) and commits submodule pointers **up** into root **directly on the base branch — no pull request**. A pointer bump records a SHA that was already reviewed and merged in the submodule's own repo, so a hub PR reviews nothing; it was pure queue. Publishing goes through `publish-data`, which pushes straight to the branch when allowed and falls back to a stable-branch PR only if a ruleset rejects the push. The commit carries `[skip ci]` — nothing needs to run on a pointer bump.
+
+It still never modifies submodule contents: content changes belong to the submodule's own repo. The complementary **downward** flow (`.github/workflows/fanout.yml`, kit `standardize`) opens standardization PRs _into_ submodules; see [`docs/STANDARDS.md`](STANDARDS.md).
+
+Local refresh (safe by default — skips submodules with uncommitted/diverged work):
+
+```bash
+./tools/update-submodules.sh            # refresh all onto declared branch
+./tools/update-submodules.sh <name>     # refresh one
+```
+
+## Adding or onboarding a project
+
+```bash
+git submodule add <url> projects/<name>
+# add a matching entry to _data/projects.yml (or use /register-project)
+tools/dash-gen readme        # refresh the profile README list
+tools/check-drift.sh         # verify .gitmodules <-> registry parity
+tools/dash audit <name>      # check it against the standardization baseline
+```
+
+If a project directory already exists on disk but is in neither `.gitmodules` nor the registry, the drift gate now flags it; use the `/onboard-dir` skill to adopt it (or remove it).

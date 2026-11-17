@@ -1,5 +1,7 @@
 ---
-source_file: getting-started.md
+source_file: docs/getting-started.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/getting-started.md
 title: Getting Started
 ---
 # Getting Started

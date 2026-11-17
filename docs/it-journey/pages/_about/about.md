@@ -11,7 +11,9 @@ excerpt: IT-Journey is an open-source platform that turns curiosity into capabil
 lastmod: '2026-06-26T00:00:00.000Z'
 permalink: /about/
 slug: about
-source_file: about.md
+source_file: pages/_about/about.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/about.md
 tags:
 - about
 - mission
@@ -20,9 +22,10 @@ tags:
 - gamification
 - learning
 - ai-development
-title: About
+title: About IT-Journey — From zer0 to her0
 toc: true
 ---
+
 <style>
 .itj-about-hero { margin: 0.5rem 0 2.5rem; padding: 3rem 1.5rem; border: 1px solid var(--zer0-color-border, rgba(168,85,247,0.35)); border-radius: 1rem; text-align: center; background:
     radial-gradient(1200px 400px at 50% -20%, rgba(168,85,247,0.22), transparent 70%),
@@ -54,7 +57,7 @@ We teach by doing, because the evidence is hard to argue with. A [meta-analysis 
 
 So the unit of learning here is the **quest**: a self-contained mission with a clear objective, a real artifact you produce, and a way to verify you got it right. Quests are organized into levels and tiers — a 4-bit map from `0000` toward her0 — so the difficulty climbs as your confidence does, and you always know the next step. That structure is not decoration. Clear goals, immediate feedback, and a staircase of increasing challenge are the same mechanics that make games hard to put down, pointed at learning instead of leaderboards.
 
-Start where you are. [Open the quest map](/quests/), pick the level that matches your nerve, and run the first command.
+Start where you are. [[it-journey/pages/_quests/README|Open the quest map]], pick the level that matches your nerve, and run the first command.
 
 ## The pillars
 
@@ -131,7 +134,7 @@ That openness is Design for Failure pointed inward. We would rather show a worki
 
 ## Join the journey
 
-There are two good ways in. If you want to learn, [open the quest map](/quests/) and start the level that matches where you are. If you want to build the platform itself, the project is open source and the door is unlocked — [report an issue](https://github.com/bamr87/it-journey/issues), [open a discussion](https://github.com/bamr87/it-journey/discussions), or send a pull request. New to contributing? [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) is a kind place to begin.
+There are two good ways in. If you want to learn, [[it-journey/pages/_quests/README|open the quest map]] and start the level that matches where you are. If you want to build the platform itself, the project is open source and the door is unlocked — [report an issue](https://github.com/bamr87/it-journey/issues), [open a discussion](https://github.com/bamr87/it-journey/discussions), or send a pull request. New to contributing? [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) is a kind place to begin.
 
 {% if site.founder %}
 This platform was founded by **{{ site.founder }}** — an IT nerd trying to be an IT hero — and is kept alive by a community of contributors.

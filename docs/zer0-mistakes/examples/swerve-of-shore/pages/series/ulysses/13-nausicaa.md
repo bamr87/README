@@ -7,9 +7,12 @@ permalink: /series/ulysses/13-nausicaa/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 13-nausicaa.md
-title: 13 Nausicaa
+source_file: examples/swerve-of-shore/pages/series/ulysses/13-nausicaa.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/13-nausicaa.md
+title: 13 · Nausicaa
 ---
+
 {% include page-header.html %}
 
 Episode 13 of *Ulysses*. 8pm, Sandymount Strand again.

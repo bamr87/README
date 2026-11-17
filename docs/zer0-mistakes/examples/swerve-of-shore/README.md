@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: examples/swerve-of-shore/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/README.md
 title: Swerve of Shore — a serialized reading-blog example
 ---
 # Swerve of Shore — a serialized reading-blog example

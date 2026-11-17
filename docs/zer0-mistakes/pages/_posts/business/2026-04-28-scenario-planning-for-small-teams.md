@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:00:00+00:00
 layout: article
 preview: /images/previews/scenario-planning-for-small-teams-a-practical-oper.png
-source_file: 2026-04-28-scenario-planning-for-small-teams.md
+source_file: pages/_posts/business/2026-04-28-scenario-planning-for-small-teams.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/business/2026-04-28-scenario-planning-for-small-teams.md
 tags:
 - planning
 - strategy
 - operations
 - decision-making
-title: 2026 04 28 Scenario Planning For Small Teams
+title: 'Scenario Planning for Small Teams: A Practical Operating Rhythm'
 ---
+
 Small teams rarely have the luxury of dedicated strategy departments, but they still need a reliable way to make decisions when the market gets noisy. Scenario planning is useful because it creates a shared language for uncertainty without requiring a 40-page deck.
 
 The goal is not to predict the future perfectly. The goal is to notice change early enough that the team can respond while options are still inexpensive.

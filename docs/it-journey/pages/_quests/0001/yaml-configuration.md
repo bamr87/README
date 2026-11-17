@@ -79,7 +79,9 @@ rewards:
   unlocks_features:
   - Structured data files that power data-driven Liquid templates
 skill_focus: frontend
-source_file: yaml-configuration.md
+source_file: pages/_quests/0001/yaml-configuration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/yaml-configuration.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - YAML'
 tags:
 - '0001'
@@ -91,7 +93,7 @@ tags:
 - frontend
 - hands-on
 - beginner
-title: Install yamllint to validate your YAML
+title: 'YAML Configuration: Site Settings Mastery'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -138,7 +140,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Comfort creating and editing plain text files
-- [ ] Completion of [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)
+- [ ] Completion of [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]]
 - [ ] No prior YAML experience required
 
 ### 🛠️ System Requirements
@@ -523,16 +525,16 @@ strict_front_matter: true
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Liquid Templating](/quests/0001/liquid-templating/) - Turn data into pages
+- 🎯 [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]] - Turn data into pages
 
 **Explore Side Adventures**:
-- ⚔️ [GitHub Pages Basics](/quests/0001/github-pages-basics/) - Config for the live web
-- ⚔️ [Git Workflow Mastery](/quests/0001/git-workflow-mastery/) - Version your config safely
+- ⚔️ [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]] - Config for the live web
+- ⚔️ [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery]] - Version your config safely
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Liquid Templating](/quests/0001/liquid-templating/)  
-**🏗️ System Engineer**: Explore [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]]  
 **🎨 Frontend Specialist**: Model richer data files for your theme
 
 ## 📚 Resources
@@ -563,6 +565,6 @@ strict_front_matter: true
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[Liquid Templating]] · [[GitHub Pages Basics]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[Liquid Templating]] · [[GitHub Pages Basics]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -1,9 +1,12 @@
 ---
 gamename: narnia
 layout: default
-source_file: index.md
-title: Index
+source_file: wargames/narnia/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/narnia/index.md
+title: Narnia
 ---
+
 Narnia
 ======
 

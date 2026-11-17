@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 232,
-    "fingerprint": "26d051159234c8fb",
+    "fingerprint": "880c692317be6f62",
     "path": "docs/OverTheWire-website",
     "present": true,
-    "total_bytes": 128853
+    "total_bytes": 168697
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -27,7 +27,7 @@
   ],
   "navigation": {
     "browse": "docs/browse/OverTheWire-website.md",
-    "fingerprint": "ceab543eb82ca094",
+    "fingerprint": "d13ab0297f60cc87",
     "index": "OverTheWire-website/README.md",
     "max_depth": 3,
     "pages": 232,
@@ -44,17 +44,17 @@
         "type": "section"
       },
       {
-        "index": "OverTheWire-website/wargames/index.md",
-        "pages": 219,
-        "path": "wargames",
-        "title": "Index (wargames)",
-        "type": "section"
-      },
-      {
         "index": null,
         "pages": 8,
         "path": "information",
         "title": "Information",
+        "type": "section"
+      },
+      {
+        "index": "OverTheWire-website/wargames/index.md",
+        "pages": 219,
+        "path": "wargames",
+        "title": "Wargames",
         "type": "section"
       }
     ],

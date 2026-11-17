@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 1011 Security & Compliance quest line
 skill_focus: security
-source_file: security-fundamentals.md
+source_file: pages/_quests/1011/security-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/security-fundamentals.md
 sub_title: 'Level 1011 (11) Quest: Main Quest - Security Fundamentals'
 tags:
 - '1011'
@@ -85,7 +87,7 @@ tags:
 - owasp
 - conceptual
 - gamified-learning
-title: Install Docker Desktop (or use colima) to run the practice lab
+title: 'Security Fundamentals: CIA Triad and Defense in Depth'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -396,17 +398,17 @@ GRANT SELECT ON shop.products TO 'app_user'@'10.0.%';
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Secure Coding Practices](/quests/1011/secure-coding/) - Turn principles into hardened code
+- 🎯 [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]] - Turn principles into hardened code
 
 **Explore Side Adventures**:
-- ⚔️ [Threat Modeling](/quests/1011/threat-modeling/) - STRIDE and attack trees
-- ⚔️ [Penetration Testing](/quests/1011/penetration-testing/) - Ethical hacking methodology
+- ⚔️ [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]] - STRIDE and attack trees
+- ⚔️ [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]] - Ethical hacking methodology
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Secure Coding Practices](/quests/1011/secure-coding/)  
-**🏗️ System Engineer**: Explore [Threat Modeling](/quests/1011/threat-modeling/)  
-**🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1011/secure-coding|Secure Coding Practices]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]]
 
 ## 📚 Resources
 
@@ -435,6 +437,6 @@ GRANT SELECT ON shop.products TO 'app_user'@'10.0.%';
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] · [[Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Penetration Testing: Tools and Ethical Hacking Methodologies]] · [[Compliance Standards: SOC 2, GDPR, and HIPAA Requirements]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Secure Coding Practices: OWASP Top 10 Vulnerability Prevention]] · [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing: Tools and Ethical Hacking Methodologies]] · [[Compliance Standards: SOC 2, GDPR, and HIPAA Requirements]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

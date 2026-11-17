@@ -17,11 +17,13 @@ objectives:
     all:
     - command: ls
     - output_includes: index.txt
-source_file: 01-make.md
+source_file: courses/workshop/01-make.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/workshop/01-make.md
 teaches:
 - mkdir
 - touch
-title: 01 Make
+title: Making things
 xp: 20
 ---
 Start in your lab: `cd /lab/workshop`.

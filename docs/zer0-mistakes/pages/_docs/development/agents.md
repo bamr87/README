@@ -12,7 +12,9 @@ permalink: /docs/development/agents/
 preview: /images/previews/agents-md-cross-tool-ai-agent-entry-point.png
 sidebar:
   nav: docs
-source_file: agents.md
+source_file: pages/_docs/development/agents.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/agents.md
 tags:
 - ai
 - agents
@@ -21,6 +23,7 @@ tags:
 - cursor
 title: AGENTS.md — Cross-Tool AI Agent Entry Point
 ---
+
 # AGENTS.md — Cross-Tool AI Agent Entry Point
 
 `AGENTS.md` in the repository root is a single, short entry-point file for AI coding agents. It follows the emerging [agents.md](https://agents.md/) convention and is read by GitHub Copilot, OpenAI Codex, Cursor, Aider, Jules, Continue, Claude Code, and any other agent that respects the convention.
@@ -98,10 +101,10 @@ To onboard a new AI tool without duplicating content:
 
 ## Related
 
-- [Scripts Overview](/docs/development/scripts/)
-- [CI/CD Pipeline](/docs/development/ci-cd/)
+- [[zer0-mistakes/pages/_docs/development/scripts|Scripts Overview]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]
 
 ## See also
 
-- [[Development]]
-- [[Documentation]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/pages/_docs/development/documentation|Documentation]]

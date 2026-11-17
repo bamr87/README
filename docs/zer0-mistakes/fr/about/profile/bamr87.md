@@ -12,14 +12,17 @@ machine_translated: true
 name: Amr Abdel-Motaleb
 permalink: /fr/about/bamr87/
 preview: /images/previews/amr-abdel-motaleb.png
-source_file: bamr87.md
-title: Amr Abdel-Motaleb
+source_file: fr/about/profile/bamr87.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/profile/bamr87.md
+title: Amr Abdel-Motaleb — Architecte logiciel et auteur d'IT Journey
 translated_from_sha: 42f0ae0cb763
 translation_of: pages/_about/profile/bamr87.md
 translation_source_url: /about/bamr87/
 twitter: bamr42
 website: https://it-journey.dev
 ---
+
 # Amr Abdel-Motaleb
 
 Magicien informatique, architecte logiciel et passionné de technologie basé à Denver, CO. Créateur du thème Jekyll [Zer0-Mistakes](https://github.com/bamr87/zer0-mistakes) et de la plateforme d'apprentissage [IT-Journey](https://it-journey.dev).

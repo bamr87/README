@@ -19,14 +19,17 @@ permalink: /docs/quickstart/
 preview: /images/docs/quickstart/theme-home.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/quickstart/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/quickstart/index.md
 tags:
 - quickstart
 - getting-started
 - github-pages
 - remote-theme
-title: Quickstart Guides
+title: Zer0-Mistakes Quickstart Guides
 ---
+
 # Quickstart Guides
 
 This hub points you at the fastest route from zero to a published Zer0-Mistakes site. Every guide below is self-contained — start with the one that matches how much you want to own.
@@ -37,9 +40,9 @@ This hub points you at the fastest route from zero to a published Zer0-Mistakes 
 
 | Guide | Best for | Time |
 | --- | --- | --- |
-| [Bare-Minimum Remote-Theme Starter](/docs/quickstart/bare-minimum/) | Trying the theme with the fewest files (`_config.yml`, `Gemfile`, `index.md`) | ~5 min |
-| [Fork & Deploy to GitHub Pages](/docs/quickstart/fork-and-deploy/) | A real site you own and customize, deployed on GitHub Pages | ~15 min |
-| [Step-by-step Quick Start series](/quickstart/) | Following along from machine setup through personalization | ~30 min |
+| [[zer0-mistakes/pages/_docs/quickstart/bare-minimum\|Bare-Minimum Remote-Theme Starter]] | Trying the theme with the fewest files (`_config.yml`, `Gemfile`, `index.md`) | ~5 min |
+| [[zer0-mistakes/pages/_docs/quickstart/fork-and-deploy\|Fork & Deploy to GitHub Pages]] | A real site you own and customize, deployed on GitHub Pages | ~15 min |
+| [[zer0-mistakes/pages/_quickstart/index\|Step-by-step Quick Start series]] | Following along from machine setup through personalization | ~30 min |
 
 ## What you need first
 
@@ -49,19 +52,19 @@ All paths assume you have:
 - [Git](https://git-scm.com/) installed locally (or you can work entirely in the GitHub web UI for the remote-theme path).
 - Optionally [Docker](https://www.docker.com/) for the recommended local development loop.
 
-If you have never built a Jekyll site before, the [step-by-step Quick Start series](/quickstart/) walks through installing those tools first.
+If you have never built a Jekyll site before, the [[zer0-mistakes/pages/_quickstart/index|step-by-step Quick Start series]] walks through installing those tools first.
 
 ## Two ways to consume the theme
 
 There are two supported models, and the guides above cover both:
 
 1. **Remote theme** — your repository keeps only your content and
-configuration, and pulls layouts/includes/styles from `bamr87/zer0-mistakes` at build time. Lowest maintenance; start with the [Bare-Minimum Starter](/docs/quickstart/bare-minimum/).
+configuration, and pulls layouts/includes/styles from `bamr87/zer0-mistakes` at build time. Lowest maintenance; start with the [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Bare-Minimum Starter]].
 2. **Fork** — you copy the whole theme into your repository so you can edit
-layouts and styles directly. Most control; follow [Fork & Deploy](/docs/quickstart/fork-and-deploy/).
+layouts and styles directly. Most control; follow [[zer0-mistakes/pages/_docs/quickstart/fork-and-deploy|Fork & Deploy]].
 
 ## Next steps
 
-- New to the theme's structure? Read the [Getting Started overview](/docs/getting-started/).
-- Ready to publish? Every path ends at the [Deploy to GitHub Pages](/docs/deployment/github-pages/) reference.
-- Want to customize the look? See the [Theme Guide](/docs/getting-started/theme-guide/).
+- New to the theme's structure? Read the [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started overview]].
+- Ready to publish? Every path ends at the [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]] reference.
+- Want to customize the look? See the [[zer0-mistakes/pages/_docs/getting-started/theme-guide|Theme Guide]].

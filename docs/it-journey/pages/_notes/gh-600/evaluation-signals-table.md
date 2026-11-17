@@ -10,7 +10,9 @@ draft: false
 lastmod: '2026-05-17T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/evaluation-signals-table/
-source_file: evaluation-signals-table.md
+source_file: pages/_notes/gh-600/evaluation-signals-table.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/evaluation-signals-table.md
 tags:
 - gh-600
 - evaluation
@@ -58,8 +60,8 @@ title: Evaluation Signals Table
 
 ## Related Quest
 
-[Q11: Success Criteria & Signals](/quests/1010/agentic-success-criteria-and-signals/) — Full `acceptance-criteria.json` schema and `check-task-completion.yml` workflow.
+[[it-journey/pages/_quests/1010/agentic-success-criteria-and-signals|Q11: Success Criteria & Signals]] — Full `acceptance-criteria.json` schema and `check-task-completion.yml` workflow.
 
 ---
 
-*Part of: [[GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*
+*Part of: [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · Related quest: [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*

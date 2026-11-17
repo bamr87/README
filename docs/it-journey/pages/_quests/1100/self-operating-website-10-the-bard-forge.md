@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-10-the-bard-forge.md
+source_file: pages/_quests/1100/self-operating-website-10-the-bard-forge.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/self-operating-website-10-the-bard-forge.md
 tags:
 - '1100'
 - claude-code
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: .github/workflows/bard-forge.yml (in the SOURCE repo)
+title: 'The Bard Forge: The Quest That Writes Quests'
 ---
+
 *The realm has learned to watch itself, heal itself, and chronicle its own deeds. Now, in the deepest chamber of the keep, one last forge glows: the **Bard Forge**, where finished labors are hammered into stories that teach the next generation of adventurers. The Bard does not change history — it cannot wield the hammer on its own past. It can only read the runes left in the merged branches and **propose** a new quest, sliding the parchment under the door of a separate keep for a human hand to accept.*
 
 *The real-world skill you are forging here is the most subtle automation move of all: an agent that **mines version-control metadata** (PR numbers, commit SHAs, diffstats) and emits a **proposal to a human gate in a different repository** — read-only at the source, write-nowhere-it-shouldn't, and incapable of inventing a fact it cannot cite.*
@@ -95,7 +98,7 @@ Every quest in this campaign ended with a Chronicle — a retrospective committe
 
 Before the forge will light, gather your gear:
 
-- **🏅 Prior chapter:** Complete [Chapter IX — The Chronicle](/quests/1110/self-operating-website-09-the-chronicle/). The retrospective it teaches you to publish is the *spark* this chapter listens for.
+- **🏅 Prior chapter:** Complete [[it-journey/pages/_quests/1110/self-operating-website-09-the-chronicle|Chapter IX — The Chronicle]]. The retrospective it teaches you to publish is the *spark* this chapter listens for.
 - **🧰 Tools on your bench:** `git`, the [GitHub CLI](https://cli.github.com/) (`gh`) authenticated against your account, and `jq` for shaping JSON. A text editor or IDE for reading the workflow files.
 - **🔑 Accounts & secrets:** A **source** GitHub repository you own (the one whose history you'll mine), a **separate target** repository to receive proposals (a "quest-forge" repo), a [Claude Code OAuth token](https://docs.claude.com/en/docs/claude-code/overview) stored as the `CLAUDE_CODE_OAUTH_TOKEN` secret, and a fine-grained personal access token scoped **only** to the target repo, stored as `QUEST_FORGE_TOKEN`.
 - **🧠 Concepts:** Comfort with Git branches and pull requests, and a working idea of how GitHub Actions events (`on:`) and `permissions:` scopes behave.
@@ -284,8 +287,8 @@ graph LR
 
 This is the final chapter of the campaign. Return to the hub to review the full arc, replay a chapter, or branch into a new epic:
 
-- 🏰 **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/)
-- 📜 **Previous chapter:** [The Chronicle](/quests/1110/self-operating-website-09-the-chronicle/)
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]
+- 📜 **Previous chapter:** [[it-journey/pages/_quests/1110/self-operating-website-09-the-chronicle|The Chronicle]]
 
 ## 📚 Resource Codex
 
@@ -296,6 +299,6 @@ This is the final chapter of the campaign. Return to the hub to review the full 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Chronicle]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Chronicle]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -23,18 +23,21 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/23/css-grid-mastery/
 preview: /images/previews/css-grid-mastery-build-any-layout-you-can-imagine.png
-source_file: 2025-01-23-css-grid-mastery.md
+source_file: fr/posts/tutorial/2025-01-23-css-grid-mastery.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/tutorial/2025-01-23-css-grid-mastery.md
 tags:
 - css
 - grid
 - layout
 - web-design
 - frontend
-title: 2025 01 23 Css Grid Mastery
+title: 'Maîtriser CSS Grid : construire toutes les mises en page imaginables'
 translated_from_sha: bdc8ce77df05
 translation_of: pages/_posts/tutorial/2025-01-23-css-grid-mastery.md
 translation_source_url: /posts/2025/01/23/css-grid-mastery/
 ---
+
 CSS Grid est le système de mise en page le plus puissant de CSS. Ce tutoriel vous accompagne depuis votre première grille jusqu'à des mises en page complexes et concrètes — et chaque concept s'accompagne d'une **démo interactive que vous pouvez voir rendue directement ici dans le navigateur**, à côté du code qui la produit. Redimensionnez la fenêtre ou ouvrez l'inspecteur de grille de votre navigateur pour observer la réaction de chaque exemple.
 
 <style>
@@ -517,8 +520,8 @@ Pour la référence complète des propriétés, gardez le [guide CSS Grid Layout
 
 - [Construire une grille de cartes de documentation responsive](/posts/2026/04/28/responsive-documentation-card-grid/) — mettez `auto-fit` et `minmax()` à l'œuvre sur un véritable index de documentation.
 - [Modèles de formulaires accessibles : libellés, erreurs et états utiles](/posts/2026/04/28/accessible-form-patterns/) — associez ces mises en page à des formulaires utilisables par tous.
-- [Intégration de Bootstrap 5](/docs/bootstrap/) — comment la grille Bootstrap basée sur flexbox du thème complète CSS Grid natif.
-- [Personnalisation des mises en page](/docs/customization/layouts/) — la hiérarchie des mises en page du thème et où s'insèrent vos grilles.
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Intégration de Bootstrap 5]] — comment la grille Bootstrap basée sur flexbox du thème complète CSS Grid natif.
+- [[zer0-mistakes/pages/_docs/customization/layouts|Personnalisation des mises en page]] — la hiérarchie des mises en page du thème et où s'insèrent vos grilles.
 
 <script>
 (function () { var pg = document.getElementById('gd-playground'); if (pg) {

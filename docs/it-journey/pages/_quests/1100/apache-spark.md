@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the Stream Processing and Data Quality quests
 skill_focus: data-engineering
-source_file: apache-spark.md
+source_file: pages/_quests/1100/apache-spark.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/apache-spark.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - Apache Spark'
 tags:
 - '1100'
@@ -84,7 +86,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: A ready-made Spark + Jupyter image, great for a Codespace or container host.
+title: 'Apache Spark Mastery: Big Data with PySpark'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -133,7 +135,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfortable writing Python functions and using `pip` packages
 - [ ] Basic SQL: `SELECT`, `GROUP BY`, `JOIN`
-- [ ] The ETL stages and idempotency (complete [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) first)
+- [ ] The ETL stages and idempotency (complete [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]] first)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -438,16 +440,16 @@ Cache only what you reuse; caching everything wastes memory and can slow you dow
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Stream Processing](/quests/1100/stream-processing/) - From batch to real-time with Kafka
+- 🎯 [[it-journey/pages/_quests/1100/stream-processing|Stream Processing]] - From batch to real-time with Kafka
 
 **Explore Side Adventures**:
-- ⚔️ [Data Quality Engineering](/quests/1100/data-quality/) - Guard the data Spark moves
+- ⚔️ [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]] - Guard the data Spark moves
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Stream Processing](/quests/1100/stream-processing/)  
-**🏗️ System Engineer**: Revisit [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) to scale your pipeline  
-**📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1100/stream-processing|Stream Processing]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]] to scale your pipeline  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]]
 
 ## 📚 Resources
 
@@ -477,6 +479,6 @@ Cache only what you reuse; caching everything wastes memory and can slow you dow
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[Stream Processing: Real-Time Data with Apache Kafka & Flink]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[it-journey/pages/_quests/1100/stream-processing|Stream Processing: Real-Time Data with Apache Kafka & Flink]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

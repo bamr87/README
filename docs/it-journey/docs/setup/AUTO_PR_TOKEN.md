@@ -1,5 +1,7 @@
 ---
-source_file: AUTO_PR_TOKEN.md
+source_file: docs/setup/AUTO_PR_TOKEN.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/setup/AUTO_PR_TOKEN.md
 title: The automation token (`AUTO_PR_GITHUB_TOKEN`)
 ---
 # The automation token (`AUTO_PR_GITHUB_TOKEN`)

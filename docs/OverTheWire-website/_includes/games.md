@@ -1,5 +1,7 @@
 ---
-source_file: games.md
+source_file: _includes/games.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/_includes/games.md
 title: Games
 ---
 <div id="sidemenu">

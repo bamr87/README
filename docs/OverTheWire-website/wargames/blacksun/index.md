@@ -1,7 +1,9 @@
 ---
 gamename: blacksun
 layout: default
-source_file: index.md
+source_file: wargames/blacksun/index.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/index.md
 title: Index
 ---
 {% include beginNote.html title="2012-04-17 - blacksun is temporarily down" %}

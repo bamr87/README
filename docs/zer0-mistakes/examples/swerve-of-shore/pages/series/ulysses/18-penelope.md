@@ -7,9 +7,12 @@ permalink: /series/ulysses/18-penelope/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 18-penelope.md
-title: 18 Penelope
+source_file: examples/swerve-of-shore/pages/series/ulysses/18-penelope.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/18-penelope.md
+title: 18 · Penelope
 ---
+
 {% include page-header.html %}
 
 Episode 18 of *Ulysses*. The small hours, Molly awake.

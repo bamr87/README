@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Completion of the Level 1001 Kubernetes Orchestration quest line
 skill_focus: devops
-source_file: k8s-config-secrets.md
+source_file: pages/_quests/1001/k8s-config-secrets.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/k8s-config-secrets.md
 sub_title: 'Level 1001 (9) Quest: Main Quest - K8s Config'
 tags:
 - '1001'
@@ -84,7 +86,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Confirm the cluster and set a working namespace
+title: 'Kubernetes ConfigMaps and Secrets: The Vault'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/) and [Pods and Workloads](/quests/1001/k8s-pods-workloads/)
+- [ ] Completion of [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]] and [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]]
 - [ ] Comfort writing and applying Deployment manifests
 - [ ] Awareness of why configuration should live outside code
 
@@ -444,15 +446,15 @@ kubectl rollout restart deployment/app   # required for env vars to refresh
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/) - See inside your cluster
+- 🎯 [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]] - See inside your cluster
 
 **Explore Side Adventures**:
-- ⚔️ [Services and Networking](/quests/1001/k8s-services-networking/) - Revisit how config flows between services
+- ⚔️ [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]] - Revisit how config flows between services
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Advance to [Monitoring Fundamentals](/quests/1010/monitoring-fundamentals/)  
-**🏗️ System Engineer**: Revisit [Services and Networking](/quests/1001/k8s-services-networking/)  
+**💻 Software Developer**: Advance to [[it-journey/pages/_quests/1010/monitoring-fundamentals|Monitoring Fundamentals]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]]  
 **🛡️ Security Specialist**: Study the Secret hardening notes above closely
 
 ## 📚 Resources
@@ -485,6 +487,6 @@ Before marking this quest as complete, ensure you've:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Kubernetes Fundamentals: Container Orchestration Essentials]] · [[Kubernetes Pods and Workloads: Deployments and StatefulSets]] **Sequel quests:** [[Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals: Container Orchestration Essentials]] · [[it-journey/pages/_quests/1001/k8s-pods-workloads|Kubernetes Pods and Workloads: Deployments and StatefulSets]] **Sequel quests:** [[Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -14,7 +14,9 @@ permalink: /fr/docs/features/color-modes/
 preview: /images/previews/dark-light-mode-toggle.png
 sidebar:
   nav: docs
-source_file: color-modes.md
+source_file: fr/docs/features/color-modes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/color-modes.md
 tags:
 - dark-mode
 - theme
@@ -25,6 +27,7 @@ translated_from_sha: 42ea6fdec8a0
 translation_of: pages/_docs/features/color-modes.md
 translation_source_url: /docs/features/color-modes/
 ---
+
 # Bascule mode sombre/clair
 
 Le thème Zer0-Mistakes inclut un sélecteur de mode de couleur prenant en charge les modes clair, sombre et la détection automatique des préférences du système.
@@ -293,11 +296,11 @@ Assurez-vous d'utiliser Bootstrap 5.3+ :
 
 ## Voir aussi
 
-- [Intégration Bootstrap](/docs/bootstrap/)
-- [Styles personnalisés](/docs/customization/styles/)
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Intégration Bootstrap]]
+- [[zer0-mistakes/pages/_docs/customization/styles|Styles personnalisés]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
 - [[Bootstrap Integration]]

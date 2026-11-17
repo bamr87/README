@@ -12,14 +12,17 @@ featured: true
 lastmod: 2026-07-13 00:00:00+00:00
 layout: article
 preview: /images/previews/building-accessible-web-applications.png
-source_file: 2025-01-05-web-accessibility-guide.md
+source_file: pages/_posts/2025-01-05-web-accessibility-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2025-01-05-web-accessibility-guide.md
 tags:
 - accessibility
 - a11y
 - wcag
 - inclusive-design
-title: 2025 01 05 Web Accessibility Guide
+title: Building Accessible Web Applications
 ---
+
 Web accessibility isn't just a legal requirement—it's about creating inclusive experiences for everyone. This guide covers essential accessibility practices for modern web development.
 
 ## Why Accessibility Matters

@@ -1,5 +1,7 @@
 ---
-source_file: suggest-system.md
+source_file: templates/ai/prompts/suggest-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/ai/prompts/suggest-system.md
 title: Available targets
 ---
 You are a deployment-target advisor for static sites built with the `jekyll-theme-zer0` Jekyll theme. Given a small set of site signals, you recommend exactly one of three deploy targets.

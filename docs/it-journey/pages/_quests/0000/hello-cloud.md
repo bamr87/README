@@ -69,7 +69,9 @@ rewards:
   - Access to advanced cloud quests
   - Foundation for infrastructure-as-code learning
 skill_focus: security
-source_file: hello-cloud.md
+source_file: pages/_quests/0000/hello-cloud.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/hello-cloud.md
 tags:
 - cloud
 - aws
@@ -77,7 +79,7 @@ tags:
 - gcp
 - cli
 - init-world
-title: Hello Cloud
+title: 'Hello Cloud: First Steps into the Sky Realm'
 validation_criteria:
   completion_requirements:
   - Successfully create a cloud account with MFA enabled
@@ -203,7 +205,7 @@ If you conjured other artifacts (storage buckets, networks), banish them now to 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[IT Fundamentals]] **Recommended:** [[OS Selection]] **Parallel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[IT Fundamentals]] **Recommended:** [[OS Selection]] **Parallel quests:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[it-journey/pages/_quests/0000/hello-mac|Hello macOS: Setting Up the Apple Kingdom]] · [[Linux Fundamentals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

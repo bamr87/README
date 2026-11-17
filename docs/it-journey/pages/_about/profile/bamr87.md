@@ -11,8 +11,10 @@ linkedin: amrabdel
 location: Denver, CO
 name: Amr Abdel-Motaleb
 permalink: /about/bamr87/
-source_file: bamr87.md
-title: Navigate to your current repository
+source_file: pages/_about/profile/bamr87.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/profile/bamr87.md
+title: bamr87
 twitter: bamr42
 website: https://it-journey.dev
 ---

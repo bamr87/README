@@ -24,7 +24,9 @@ quickstart:
   step: 4
 sidebar:
   nav: quickstart
-source_file: personalization.md
+source_file: pages/_quickstart/personalization.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_quickstart/personalization.md
 tags:
 - jekyll
 - configuration
@@ -33,11 +35,12 @@ tags:
 - yaml
 title: Site Personalization & Configuration
 ---
+
 # Site Personalization & Configuration
 
-After completing the [Quick Start installation](/quickstart/), use this guide to personalize your Jekyll site. Fill out the interactive forms below to generate your custom `_config.yml` settings.
+After completing the [[zer0-mistakes/pages/_quickstart/index|Quick Start installation]], use this guide to personalize your Jekyll site. Fill out the interactive forms below to generate your custom `_config.yml` settings.
 
-> **Prefer a live UI?** The [Theme Customizer](/about/settings/theme/) lets you preview skin and color changes in real time directly on your running site.
+> **Prefer a live UI?** The [[zer0-mistakes/pages/_about/settings/theme|Theme Customizer]] lets you preview skin and color changes in real time directly on your running site.
 
 ![Theme Customizer — skin and color preview](/assets/images/quickstart/06-theme-customizer.png)
 
@@ -48,7 +51,7 @@ After completing the [Quick Start installation](/quickstart/), use this guide to
   <p class="mb-0 mt-2">Fill out the forms in each section. Your settings will be automatically saved and combined into a complete <code>_config.yml</code> at the bottom of the page. Copy and paste to customize your site!</p>
 </div>
 
-> This page is an interactive generator and needs JavaScript. With it disabled, use the [Site Builder](/quickstart/site-builder/), which produces the same `_config.yml` and can write the whole project for you.
+> This page is an interactive generator and needs JavaScript. With it disabled, use the [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]], which produces the same `_config.yml` and can write the whole project for you.
 
 ## Configuration Sections
 
@@ -629,7 +632,7 @@ Congratulations on completing the Quick Start guide! Your site is now:
 - **Create content** - Add blog posts in `pages/_posts/`
 - **Customize layouts** - Modify templates in `_layouts/` and `_includes/`
 - **Deploy to production** - Push to GitHub and enable GitHub Pages
-- **Explore the docs** - Check out the [full documentation](/docs/)
+- **Explore the docs** - Check out the [[zer0-mistakes/pages/_docs/index|full documentation]]
 
 ---
 
@@ -637,10 +640,10 @@ Congratulations on completing the Quick Start guide! Your site is now:
 
 | Step | Guide | Description |
 |------|-------|-------------|
-| 1 | **[Machine Setup](/quickstart/machine-setup/)** | Install Docker, Git, and development tools |
-| 2 | **[Jekyll Setup](/quickstart/jekyll-setup/)** | Start development server and create content |
-| 3 | **[GitHub Setup](/quickstart/github-setup/)** | Version control and GitHub Pages deployment |
-| 4 | **[Personalization](/quickstart/personalization/)** | Customize site identity and configuration |
+| 1 | **[[zer0-mistakes/pages/_quickstart/machine-setup\|Machine Setup]]** | Install Docker, Git, and development tools |
+| 2 | **[[zer0-mistakes/pages/_quickstart/jekyll-setup\|Jekyll Setup]]** | Start development server and create content |
+| 3 | **[[zer0-mistakes/pages/_quickstart/github-setup\|GitHub Setup]]** | Version control and GitHub Pages deployment |
+| 4 | **[[zer0-mistakes/pages/_quickstart/personalization\|Personalization]]** | Customize site identity and configuration |
 
 ---
 

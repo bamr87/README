@@ -1,5 +1,7 @@
 ---
-source_file: 0001-ratify-constitution.md
+source_file: docs/amendments/0001-ratify-constitution.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/amendments/0001-ratify-constitution.md
 title: 0001 — Ratify the constitution
 ---
 <!-- kit: governance v0.1.0 -->

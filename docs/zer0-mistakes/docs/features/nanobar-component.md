@@ -17,7 +17,9 @@ dependencies:
 - Liquid
 description: Technical implementation of the config-driven page loading progress bar
 lastmod: 2026-04-19
-source_file: nanobar-component.md
+source_file: docs/features/nanobar-component.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/nanobar-component.md
 tags:
 - features
 - ui
@@ -25,6 +27,7 @@ tags:
 title: Nanobar Component Architecture
 type: feature-implementation
 ---
+
 # Nanobar Component Architecture
 
 ## Overview

@@ -50,8 +50,11 @@ lettering: slab
 palette: bright-primary
 permalink: /books/abc-demo/
 series: abc-language
-source_file: index.md
+source_file: pages/_books/abc-demo/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_books/abc-demo/index.md
 subtitle: A is for Anchor
-title: Index
+title: The Zer0 Alphabet
 ---
+
 A demo of the **book-abc** board-book layout — one big friendly letter per card, a word to say out loud, and a picture to point at. Every plate here is in its `planned` state, so the cards show the "illustration coming soon" placeholder.

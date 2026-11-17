@@ -10,9 +10,12 @@ layout: author
 machine_translated: true
 permalink: /fr/authors/cassandra/
 sidebar: false
-source_file: cassandra.md
+source_file: fr/about/authors/cassandra.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/authors/cassandra.md
 title: Cassandra
 translated_from_sha: e39500a06582
 translation_of: pages/_about/authors/cassandra.md
 translation_source_url: /authors/cassandra/
 ---
+

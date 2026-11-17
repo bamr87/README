@@ -21,6 +21,7 @@ coverage: full
 | `index/` | dir | Query layer - context_index.json + manifest.json | generated |
 | `reports/` | dir | Analysis reports - fleet documentation health and the fleet documentation review | generated |
 | `sources/` | dir | Source manifests, one per surveyed repository | generated |
+| `vault/` | dir | The note graph, crawl manifest, change log and cached AI summaries | generated |
 
 ## Forbidden
 

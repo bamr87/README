@@ -14,7 +14,9 @@ permalink: /fr/docs/quickstart/bare-minimum/
 preview: /images/previews/bare-minimum-remote-theme-starter.png
 sidebar:
   nav: docs
-source_file: bare-minimum.md
+source_file: fr/docs/quickstart/bare-minimum.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/quickstart/bare-minimum.md
 tags:
 - setup
 - quickstart
@@ -25,6 +27,7 @@ translated_from_sha: abd24f43d4b0
 translation_of: pages/_docs/quickstart/bare-minimum.md
 translation_source_url: /docs/quickstart/bare-minimum/
 ---
+
 # Modèle minimal pour thème distant
 
 Vous pouvez faire fonctionner un site zer0-mistakes complet sur GitHub Pages avec seulement **trois fichiers**. Tout le reste — mises en page, includes, ressources Bootstrap — est chargé automatiquement depuis la gem publiée.
@@ -113,10 +116,10 @@ Rendez-vous sur `http://localhost:4000`.
 | Documentation | Collection `_docs/` + entrée `_config.yml` |
 | Navigation personnalisée | `_data/navigation.yml` |
 | Analytics | Clés `posthog:` ou `google_analytics:` dans `_config.yml` |
-| Thème complet | Utilisez l'[assistant d'installation IA](/docs/getting-started/quick-start/) |
+| Thème complet | Utilisez l'[[zer0-mistakes/pages/_docs/getting-started/quick-start\|assistant d'installation IA]] |
 
 ## Voir aussi
 
 - [[Quick Start]]
-- [[Installation]]
-- [[Docker]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]
+- [[zer0-mistakes/docker/README|Docker]]

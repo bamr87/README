@@ -21,11 +21,13 @@ objectives:
     all:
     - command: file
     - args_contains: notes
-source_file: 01-cat-and-file.md
+source_file: courses/reading/01-cat-and-file.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/reading/01-cat-and-file.md
 teaches:
 - cat
 - file
-title: 01 Cat And File
+title: Open the scroll
 xp: 20
 ---
 Start in your lab: `cd /lab/reading`.

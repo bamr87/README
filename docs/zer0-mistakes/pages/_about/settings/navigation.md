@@ -5,10 +5,13 @@ lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/settings/navigation/
 preview: /images/previews/navigation-editor.png
-source_file: navigation.md
+source_file: pages/_about/settings/navigation.md
 source_icon: bi-signpost-2
-title: Navigation
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/navigation.md
+title: Navigation Editor
 ---
+
 <ul class="nav nav-tabs" id="navTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#pane-overview" type="button" role="tab" aria-controls="pane-overview" aria-selected="true">

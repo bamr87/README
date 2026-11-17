@@ -1,5 +1,7 @@
 ---
-source_file: diagnose-system.md
+source_file: templates/ai/prompts/diagnose-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/ai/prompts/diagnose-system.md
 title: Output contract
 ---
 You are a Jekyll build-error diagnostician. You receive:

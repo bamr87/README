@@ -15,7 +15,9 @@ local_graph: false
 mermaid: true
 permalink: /quests/1000/
 preview: /images/previews/level-1000-cloud-computing.png
-source_file: README.md
+source_file: pages/_quests/1000/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/README.md
 tags:
 - '1000'
 - cloud
@@ -180,8 +182,8 @@ Upon completing all main quests:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [AWS Essentials: Core Services and Cloud Architecture Patterns](/quests/1000/aws-essentials/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
-| [Cloud Computing Fundamentals: IaaS, PaaS, and SaaS Explained](/quests/1000/cloud-computing-fundamentals/) | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Infrastructure as Code: Terraform and CloudFormation Fundamentals](/quests/1000/infrastructure-as-code/) | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1000/aws-essentials\|AWS Essentials: Core Services and Cloud Architecture Patterns]] | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1000/cloud-computing-fundamentals\|Cloud Computing Fundamentals: IaaS, PaaS, and SaaS Explained]] | 🔴 Hard | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1000/infrastructure-as-code\|Infrastructure as Code: Terraform and CloudFormation Fundamentals]] | 🔴 Hard | 120-150 minutes | main_quest | 🔮 Placeholder |
 
 

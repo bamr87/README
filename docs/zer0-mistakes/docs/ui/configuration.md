@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:57+00:00
 description: 'Styling and UI keys in _config.yml for Zer0-Mistakes: what each controls,
   example values, and why Jekyll must be restarted after editing config.'
 lastmod: 2026-05-31 20:54:57+00:00
-source_file: configuration.md
+source_file: docs/ui/configuration.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/configuration.md
 tags:
 - ui
 - styling
 - theme
 title: Configuration — styling and UI
 ---
+
 # Configuration — styling and UI
 
 Styling-related keys in `_config.yml` for zer0-mistakes. Restart Jekyll after editing this file (`bundle exec jekyll serve` does not hot-reload config).

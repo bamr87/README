@@ -9,13 +9,16 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/settings/components/
 preview: /images/previews/theme-preview.png
-source_file: components.md
+source_file: fr/about/settings/components.md
 source_icon: bi-grid-3x3-gap
-title: Components
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/settings/components.md
+title: Vitrine des composants
 translated_from_sha: a775b0ade22f
 translation_of: pages/_about/settings/components.md
 translation_source_url: /about/settings/components/
 ---
+
 <p class="text-body-secondary">
 Rendu en direct de <code>_includes/components/component-showcase.html</code> — la galerie de motifs réutilisables Bootstrap 5.3. Le fil d'Ariane et les entrées list-group présents ici ne sont que <strong>des liens de démonstration</strong> : ils sont volontairement inertes (<code>href="#"</code>) afin que cet include n'injecte jamais de chemins absolus au site qui provoqueraient des erreurs 404 chez les consommateurs de remote-theme (issue #219).
 </p>

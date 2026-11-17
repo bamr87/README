@@ -11,7 +11,9 @@ layout: index
 permalink: /tags/
 sitemap: false
 slug: tags
-source_file: tags.md
+source_file: pages/tags.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/tags.md
 tags:
 - navigation
 - tags

@@ -48,7 +48,9 @@ rewards:
 - Enchanted Sword
 - File permissions mastery
 skill_focus: fullstack
-source_file: armoury.md
+source_file: pages/_quests/0000/bashcrawl/armoury.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/armoury.md
 tags:
 - bashcrawl
 - terminal
@@ -56,7 +58,7 @@ tags:
 - permissions
 - chmod
 - '0000'
-title: -rw-r--r-- 1 user group  512 Jan  1 00:00 potion
+title: 'Bashcrawl Armoury: File Permissions and Script Execution'
 validation_criteria:
 - Read ls -l permissions output correctly
 - Use chmod to make a script executable
@@ -207,7 +209,7 @@ With the sword equipped, the guardian falls and the door to the Chamber opens. L
 
 - **Continue main line** → [Chamber](/quests/0000/side-quests/chamber/)
 - **Explore other branches** → [Chapel](/quests/0000/side-quests/hidden-chapel/) · [Vault](/quests/0000/side-quests/vault/) · [Scrap](/quests/0000/side-quests/scrap/)
-- **Back to hub** → [Bashcrawl Hub](/quests/0000/bashcrawl/)
+- **Back to hub** → [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Hub]]
 
 ---
 
@@ -220,7 +222,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual](https://www.gnu.org/software/bash/manual/) — Official Bash reference for brave heroes
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [chmod Calculator](https://chmod-calculator.com/) — Permission wizard for every adventurer
 - [DailyDebian chmod Calculator](https://dailydebian.com/pages/chmod-calculator) — Numeric and symbolic modes, the exact command, plus SUID, SGID and the sticky bit
 
@@ -230,7 +232,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Unlocks:** [[Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] **Sequel quests:** [[Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/bashcrawl/cellar|Bashcrawl Cellar: File Types, Aliases, and Emerald Amulet]] **Unlocks:** [[it-journey/pages/_quests/0000/bashcrawl/chamber|Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] **Sequel quests:** [[it-journey/pages/_quests/0000/bashcrawl/chamber|Bashcrawl Chamber: Bash Arithmetic and the Statue Boss]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

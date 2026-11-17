@@ -71,7 +71,9 @@ rewards:
   unlocks_features:
   - Continue The Relic Raisers campaign
 skill_focus: data-engineering
-source_file: relic-raisers-02-the-strata.md
+source_file: pages/_quests/0110/relic-raisers-02-the-strata.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/relic-raisers-02-the-strata.md
 tags:
 - '0110'
 - python
@@ -81,7 +83,7 @@ tags:
 - fixed-width
 - hands-on
 - gamified-learning
-title: Relic Raisers 02 The Strata
+title: 'The Strata: Read the Copybook, Then Let the Data Testify'
 validation_criteria:
   completion_requirements:
   - DATA_DICTIONARY.md has one row per field with offset, length, type, meaning, and
@@ -362,9 +364,9 @@ graph LR
 
 The data has said everything it can. Two meanings are still marked HYPOTHESIS, and a comment names a person. Next you find the Elders and recover the reasons before they retire.
 
-- ➡️ **Next chapter:** [Chapter III — The Elders](/quests/1111/relic-raisers-03-the-elders/)
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
-- 📚 **Deeper in the Archives:** [Data Modeling](/quests/0110/data-modeling/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1111/relic-raisers-03-the-elders|Chapter III — The Elders]]
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
+- 📚 **Deeper in the Archives:** [[it-journey/pages/_quests/0110/data-modeling|Data Modeling]]
 
 ## 📚 Resource Codex
 
@@ -374,6 +376,6 @@ The data has said everything it can. Two meanings are still marked HYPOTHESIS, a
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 0110 (6) - Database Mastery]] **Previous:** [[The Dig Site: Unearth the Relic and Name What You Do Not Know]] **Next:** [[The Elders: Recover the Reasons Before They Retire]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/0110/README|Level 0110 (6) - Database Mastery]] **Previous:** [[it-journey/pages/_quests/0011/relic-raisers-01-the-dig-site|The Dig Site: Unearth the Relic and Name What You Do Not Know]] **Next:** [[it-journey/pages/_quests/1111/relic-raisers-03-the-elders|The Elders: Recover the Reasons Before They Retire]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

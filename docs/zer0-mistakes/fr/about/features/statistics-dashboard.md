@@ -8,12 +8,15 @@ layout: default
 machine_translated: true
 permalink: /fr/about/features/statistics-dashboard/
 preview: /images/previews/statistics-dashboard-feature.png
-source_file: statistics-dashboard.md
-title: Fonctionnalité de tableau de bord statistique
+source_file: fr/about/features/statistics-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/statistics-dashboard.md
+title: Fonctionnalité Tableau de bord des statistiques
 translated_from_sha: c42451b6434b
 translation_of: pages/_about/features/statistics-dashboard.md
 translation_source_url: /about/features/statistics-dashboard/
 ---
+
 # Fonctionnalité de tableau de bord statistique
 
 Le thème Zer0-Mistakes inclut désormais un tableau de bord statistique complet qui fournit des analyses et des informations en temps réel sur le contenu de votre site Jekyll.

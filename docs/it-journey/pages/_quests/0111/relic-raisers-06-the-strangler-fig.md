@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Continue The Relic Raisers campaign
 skill_focus: backend
-source_file: relic-raisers-06-the-strangler-fig.md
+source_file: pages/_quests/0111/relic-raisers-06-the-strangler-fig.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/relic-raisers-06-the-strangler-fig.md
 tags:
 - '0111'
 - python
@@ -85,7 +87,7 @@ tags:
 - shadow-mode
 - project-based
 - gamified-learning
-title: port 11050.00 2100.50
+title: 'The Strangler Fig: Put a Modern Gate in Front of the Relic'
 validation_criteria:
   completion_requirements:
   - The gate serves JSON totals from the relic, runs the port in shadow, and logs
@@ -524,9 +526,9 @@ graph LR
 
 The relic lives behind a gate it never knew was built. One chapter remains: leave the map, the reasons, and the roadmap where the next raiser will dig.
 
-- ➡️ **Next chapter:** [Chapter VII — Write for the Archaeologist](/quests/1110/relic-raisers-07-write-for-the-archaeologist/)
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/)
-- 🚪 **More on gates:** [API Fundamentals](/quests/0111/api-fundamentals/) · [Error Handling](/quests/0111/error-handling/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist|Chapter VII — Write for the Archaeologist]]
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]]
+- 🚪 **More on gates:** [[it-journey/pages/_quests/0111/api-fundamentals|API Fundamentals]] · [[it-journey/pages/_quests/0111/error-handling|Error Handling]]
 
 ## 📚 Resource Codex
 
@@ -537,6 +539,6 @@ The relic lives behind a gate it never knew was built. One chapter remains: leav
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 0111 (7) - API Development]] **Previous:** [[The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] **Next:** [[Write for the Archaeologist: Leave the Lore Where the Next One Digs]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/0111/README|Level 0111 (7) - API Development]] **Previous:** [[it-journey/pages/_quests/1100/relic-raisers-05-the-rosetta-ledger|The Rosetta Ledger: Translate the Relic and Prove It Ties Out]] **Next:** [[it-journey/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist|Write for the Archaeologist: Leave the Lore Where the Next One Digs]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

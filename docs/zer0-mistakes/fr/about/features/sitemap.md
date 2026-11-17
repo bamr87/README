@@ -10,17 +10,20 @@ layout: default
 machine_translated: true
 permalink: /fr/about/features/navigation/sitemap/
 preview: /images/previews/enhanced-sitemap-feature.png
-source_file: sitemap.md
+source_file: fr/about/features/sitemap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/sitemap.md
 tags:
 - sitemap
 - navigation
 - search
 - discovery
-title: 🗺️ Fonctionnalité de plan de site amélioré
+title: Fonctionnalité de plan du site amélioré
 translated_from_sha: 59933f686482
 translation_of: pages/_about/features/sitemap.md
 translation_source_url: /about/features/navigation/sitemap/
 ---
+
 # 🗺️ Fonctionnalité de plan de site amélioré
 
 Le plan de site amélioré est un puissant outil de navigation et de découverte de contenu qui offre une vue d'ensemble complète de tout le contenu du site, avec des capacités avancées de recherche, de filtrage et de tri.

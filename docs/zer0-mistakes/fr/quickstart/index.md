@@ -21,18 +21,21 @@ permalink: /fr/quickstart/
 preview: /images/previews/zer0-mistakes-quick-start-guide.png
 sidebar:
   nav: quickstart
-source_file: index.md
+source_file: fr/quickstart/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/index.md
 tags:
 - jekyll
 - docker
 - setup
 - development
 - ai-powered
-title: Guide de démarrage rapide
+title: Guide de démarrage rapide Zer0-Mistakes
 translated_from_sha: 66da1a1e9bc5
 translation_of: pages/_quickstart/index.md
 translation_source_url: /quickstart/
 ---
+
 # Guide de démarrage rapide
 
 Faites fonctionner votre site Jekyll **zer0-mistakes** en moins de 5 minutes. Choisissez le parcours qui correspond à votre objectif :
@@ -65,7 +68,7 @@ Votre site sera en ligne à l'adresse `http://localhost:4000`.
 
 ![Assistant d'installation en cours d'exécution dans le terminal](/assets/images/quickstart/install-oneliner.png)
 
-Vous préférez un navigateur à un terminal ? Le **[Générateur de site](/quickstart/site-builder/)** vous guide vers le même résultat étape par étape, avec Claude qui vérifie votre machine, rédige votre configuration et votre contenu, et démarre Docker à votre place.
+Vous préférez un navigateur à un terminal ? Le **[[zer0-mistakes/pages/_quickstart/site-builder|Générateur de site]]** vous guide vers le même résultat étape par étape, avec Claude qui vérifie votre machine, rédige votre configuration et votre contenu, et démarre Docker à votre place.
 
 ## Ce que vous obtenez
 
@@ -159,11 +162,11 @@ bundle install && bundle exec jekyll serve
 
 | Guide | Objectif | Durée | Difficulté |
 |-------|---------|------|------------|
-| **[Générateur de site](/quickstart/site-builder/)** | Assistant guidé avec Claude : prérequis → configuration → site fonctionnel | 15 min | Débutant |
-| **[Configuration de la machine](/quickstart/machine-setup/)** | Installer Docker, Git, GitHub CLI | 10 min | Débutant |
-| **[Configuration de Jekyll](/quickstart/jekyll-setup/)** | Lancer le serveur de développement, créer du contenu | 5 min | Débutant |
-| **[Configuration de GitHub](/quickstart/github-setup/)** | Forker, déployer sur GitHub Pages | 10 min | Intermédiaire |
-| **[Personnalisation](/quickstart/personalization/)** | Configurer `_config.yml` pour votre site | 5 min | Débutant |
+| **[[zer0-mistakes/pages/_quickstart/site-builder\|Générateur de site]]** | Assistant guidé avec Claude : prérequis → configuration → site fonctionnel | 15 min | Débutant |
+| **[[zer0-mistakes/pages/_quickstart/machine-setup\|Configuration de la machine]]** | Installer Docker, Git, GitHub CLI | 10 min | Débutant |
+| **[[zer0-mistakes/pages/_quickstart/jekyll-setup\|Configuration de Jekyll]]** | Lancer le serveur de développement, créer du contenu | 5 min | Débutant |
+| **[[zer0-mistakes/pages/_quickstart/github-setup\|Configuration de GitHub]]** | Forker, déployer sur GitHub Pages | 10 min | Intermédiaire |
+| **[[zer0-mistakes/pages/_quickstart/personalization\|Personnalisation]]** | Configurer `_config.yml` pour votre site | 5 min | Débutant |
 
 ## Dépannage rapide
 
@@ -199,8 +202,8 @@ docker compose exec -T jekyll bundle exec jekyll build \
 |----------|---------|
 | [GitHub Issues](https://github.com/bamr87/zer0-mistakes/issues) | Rapports de bogues et support technique |
 | [Discussions](https://github.com/bamr87/zer0-mistakes/discussions) | Questions-réponses communautaires et demandes de fonctionnalités |
-| [Guide d'installation](/docs/installation/) | Documentation de configuration approfondie |
+| [[zer0-mistakes/pages/_docs/installation\|Guide d'installation]] | Documentation de configuration approfondie |
 
 ---
 
-Commencez par la **[Configuration de la machine →](/quickstart/machine-setup/)** s'il s'agit de votre première fois, ou passez directement aux [Options d'installation](#installation-options) pour choisir votre parcours.
+Commencez par la **[[zer0-mistakes/pages/_quickstart/machine-setup|Configuration de la machine →]]** s'il s'agit de votre première fois, ou passez directement aux [Options d'installation](#installation-options) pour choisir votre parcours.

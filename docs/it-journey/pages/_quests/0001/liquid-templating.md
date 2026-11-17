@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - The ability to build data-driven pages in any later quest
 skill_focus: frontend
-source_file: liquid-templating.md
+source_file: pages/_quests/0001/liquid-templating.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/liquid-templating.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Liquid'
 tags:
 - '0001'
@@ -89,7 +91,7 @@ tags:
 - frontend
 - hands-on
 - beginner
-title: Serve your site with live reload so Liquid edits appear instantly
+title: 'Liquid Templating: Dynamic Content for Jekyll Sites'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -136,8 +138,8 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Basic HTML (tags, attributes)
-- [ ] Completion of [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/)
-- [ ] Recommended: [YAML Configuration](/quests/0001/yaml-configuration/) for data files
+- [ ] Completion of [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]]
+- [ ] Recommended: [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]] for data files
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -152,7 +154,7 @@ This **🟡 Medium** quest expects:
 
 ## 🌍 Choose Your Adventure Platform
 
-*Liquid lives inside your Jekyll site, so the only setup is a running site. Use `--livereload` so each edit shows instantly. The `my-castle` folder below is the site you scaffolded in [Jekyll Fundamentals](/quests/0001/jekyll-fundamentals/) - `cd` into that same directory, not a fresh one.*
+*Liquid lives inside your Jekyll site, so the only setup is a running site. Use `--livereload` so each edit shows instantly. The `my-castle` folder below is the site you scaffolded in [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals]] - `cd` into that same directory, not a fresh one.*
 
 ### 🍎 macOS Kingdom Path
 
@@ -494,16 +496,16 @@ The dashes on every `for`/`unless`/`endfor` tag matter here - without them, each
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [GitHub Pages Basics](/quests/0001/github-pages-basics/) - Take your templated site live
+- 🎯 [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]] - Take your templated site live
 
 **Explore Side Adventures**:
-- ⚔️ [YAML Configuration](/quests/0001/yaml-configuration/) - The data your templates loop over
-- ⚔️ [Git Workflow Mastery](/quests/0001/git-workflow-mastery/) - Ship template changes cleanly
+- ⚔️ [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]] - The data your templates loop over
+- ⚔️ [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery]] - Ship template changes cleanly
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Pages Basics](/quests/0001/github-pages-basics/)  
-**🏗️ System Engineer**: Explore [YAML Configuration](/quests/0001/yaml-configuration/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration]]  
 **🎨 Frontend Specialist**: Deepen your theming with custom layouts
 
 ## 📚 Resources
@@ -534,6 +536,6 @@ The dashes on every `for`/`unless`/`endfor` tag matter here - without them, each
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[GitHub Pages Basics]] · [[YAML Configuration]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Jekyll Fundamentals]] **Unlocks:** [[GitHub Pages Basics]] · [[YAML Configuration]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

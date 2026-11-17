@@ -7,15 +7,18 @@ description: 'A ground-truth review of every repo that builds on zer0-mistakes: 
   pins, undocumented overrides, tooling bugs in the consumer-audit scripts, CI coverage
   gaps, and docs-vs-reality drift, verified against the live repos.'
 lastmod: 2026-08-18
-source_file: fleet-harmonization-audit-2026-08.md
+source_file: docs/systems/fleet-harmonization-audit-2026-08.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/fleet-harmonization-audit-2026-08.md
 tags:
 - audit
 - consumers
 - propagation
 - harmonization
 - retrospective
-title: Fleet Harmonization Audit (August 2026)
+title: Fleet Harmonization Audit — theme consistency across the nine downstream consumers
 ---
+
 # Fleet Harmonization Audit (August 2026)
 
 A point-in-time, ground-truth review of every repo building on `bamr87/zer0-mistakes` (theme at `v1.28.0`), commissioned to identify differences, issues, inconsistencies, and improvements across the fleet and propose a harmonization plan. It complements [`theme-propagation.md`](./theme-propagation.md) (how the system is *supposed* to work) with what was actually found on disk.

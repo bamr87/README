@@ -28,13 +28,15 @@ quest_series: Quest Documentation
 quest_type: documentation
 skill_focus:
 - planning
-source_file: QUEST_BUILD_PLAN.md
+source_file: docs/quests/QUEST_BUILD_PLAN.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/quests/QUEST_BUILD_PLAN.md
 tags:
 - roadmap
 - quest-system
 - planning
 - infrastructure
-title: 'Quest Build Plan: Complete Placeholder Quest System'
+title: Quest Build Plan - Complete Placeholder Quest System
 toc: true
 toc_sticky: true
 ---

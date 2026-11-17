@@ -14,17 +14,20 @@ permalink: /fr/docs/customization/includes/
 preview: /images/previews/include-components.png
 sidebar:
   nav: docs
-source_file: includes.md
+source_file: fr/docs/customization/includes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/customization/includes.md
 tags:
 - includes
 - components
 - templates
 - jekyll
-title: Composants d'inclusion
+title: Composants d'include
 translated_from_sha: 85851dc85b90
 translation_of: pages/_docs/customization/includes.md
 translation_source_url: /docs/customization/includes/
 ---
+
 # Composants d'inclusion
 
 Le thème Zer0-Mistakes comprend plus de 70 composants réutilisables organisés par catégorie.
@@ -190,7 +193,7 @@ sidebar:
 {% raw %}{% include navigation/sidebar-left.html %}{% endraw %}
 ```
 
-Consultez [Navigation par barre latérale](/docs/features/sidebar-navigation/) pour la référence complète des modes et options.
+Consultez [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation par barre latérale]] pour la référence complète des modes et options.
 
 ## Inclusions de page d'accueil
 
@@ -321,9 +324,9 @@ bundle show jekyll-theme-zer0
 
 ## Ressources associées
 
-- [Layouts](/docs/customization/layouts/)
-- [Liquid de Jekyll](/docs/liquid/)
-- [Intégration Bootstrap](/docs/bootstrap/)
+- [[zer0-mistakes/pages/_docs/customization/layouts|Layouts]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Liquid de Jekyll]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Intégration Bootstrap]]
 
 ## Référence technique
 
@@ -333,6 +336,6 @@ Pour les détails destinés aux contributeurs (référence de l'API des composan
 
 ## Voir aussi
 
-- [[Customization]]
-- [[Layouts]]
-- [[Bootstrap 5 Integration in Zer0-Mistakes|Bootstrap 5 Integration]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/customization/layouts|Layouts]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap 5 Integration]]

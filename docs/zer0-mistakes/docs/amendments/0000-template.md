@@ -5,13 +5,16 @@ categories:
 date: 2026-10-22 00:00:00+00:00
 description: Template for a numbered constitution amendment record; copy to NNNN-kebab-slug.md.
 lastmod: 2026-10-22 00:00:00+00:00
-source_file: 0000-template.md
+source_file: docs/amendments/0000-template.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/amendments/0000-template.md
 tags:
 - governance
 - amendments
 - template
-title: NNNN — Title of the amendment
+title: Amendment Record Template
 ---
+
 <!-- kit: governance v0.1.0 · copy to NNNN-kebab-slug.md (next free number) -->
 # NNNN — Title of the amendment
 

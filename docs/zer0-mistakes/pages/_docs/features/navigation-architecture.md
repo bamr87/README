@@ -19,7 +19,9 @@ permalink: /docs/features/navigation-architecture/
 preview: /images/previews/es6-modular-navigation-architecture.png
 sidebar:
   nav: docs
-source_file: navigation-architecture.md
+source_file: pages/_docs/features/navigation-architecture.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/navigation-architecture.md
 tags:
 - navigation
 - javascript
@@ -28,6 +30,7 @@ tags:
 - performance
 title: ES6 Modular Navigation Architecture
 ---
+
 # ES6 Modular Navigation Architecture
 
 The zer0-mistakes navigation JavaScript is organized as ES6 modules under `assets/js/modules/navigation/`. This modular approach enables tree-shaking, independent unit testing, and easy extension without touching monolithic files.
@@ -95,7 +98,7 @@ localStorage.setItem('zer0-nav-expanded-nodes', JSON.stringify([...expandedNodeI
 
 ### Scroll Spy
 
-`scroll-spy.js` highlights the current section in the table-of-contents as the user scrolls. The active entry is the last heading whose top has crossed the reading line (`scroll-padding-top` below the viewport top), recomputed on each animation frame from cached heading offsets. See [Table of Contents](/docs/features/toc/#scroll-spy).
+`scroll-spy.js` highlights the current section in the table-of-contents as the user scrolls. The active entry is the last heading whose top has crossed the reading line (`scroll-padding-top` below the viewport top), recomputed on each animation frame from cached heading offsets. See [[zer0-mistakes/pages/_docs/features/toc#scroll-spy|Table of Contents]].
 
 ### Graceful Degradation
 
@@ -141,12 +144,12 @@ The navbar include renders the Bootstrap 5 navbar, populates links from `_data/n
 
 ## Related
 
-- [Dynamic Navigation Fallback](/docs/features/dynamic-navigation/)
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/dynamic-navigation|Dynamic Navigation Fallback]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
 
 ## See also
 
-- [[Navigation]]
-- [[Keyboard Navigation]]
-- [[Features]]
+- [[zer0-mistakes/fr/about/settings/navigation|Navigation]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]

@@ -9,12 +9,15 @@ lastmod: 2025-12-20 22:15:46.273000+00:00
 permalink: /about/features/add-floating-back-to-top-button/
 preview: /images/previews/add-floating-back-to-top-button.png
 snippet: null
-source_file: add-floating-back-to-top-button.md
+source_file: pages/_about/features/add-floating-back-to-top-button.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/add-floating-back-to-top-button.md
 sub-title: null
 tags:
 - Bootstrap
-title: Add Floating Back To Top Button
+title: Add Floating Back-to-Top button
 ---
+
 [w3 schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 ## How To Create a Scroll To Top Button

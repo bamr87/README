@@ -15,7 +15,9 @@ prerequisites:
 preview: /images/previews/local-docker-publishing-pipeline.png
 sidebar:
   nav: docs
-source_file: docker-publishing.md
+source_file: pages/_docs/development/docker-publishing.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/docker-publishing.md
 tags:
 - docker
 - release
@@ -24,6 +26,7 @@ tags:
 - automation
 title: Local Docker Publishing Pipeline
 ---
+
 # Local Docker Publishing Pipeline
 
 You can build and publish the `jekyll-theme-zer0` gem entirely inside a Docker container. This mirrors the CI release path exactly, avoiding version-skew issues caused by different host Ruby environments.
@@ -138,12 +141,12 @@ docker compose build --no-cache
 
 ## Related
 
-- [Release Management](/docs/development/release-management/)
-- [CI/CD Pipeline](/docs/development/ci-cd/)
-- [DevContainer Configuration](/docs/development/devcontainer/)
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/devcontainer|DevContainer Configuration]]
 
 ## See also
 
-- [[Development]]
-- [[Docker]]
-- [[Release Management]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]

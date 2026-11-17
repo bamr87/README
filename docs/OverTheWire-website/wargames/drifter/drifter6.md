@@ -2,7 +2,9 @@
 gamename: drifter
 layout: default
 level: 6
-source_file: drifter6.md
+source_file: wargames/drifter/drifter6.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/drifter/drifter6.md
 title: Drifter6
 ---
 Level 6 is a simple remote daemon with a particular vulnerability. In what I intended for this level, it is running in a vulnerable state :P

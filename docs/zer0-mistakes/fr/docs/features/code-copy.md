@@ -14,7 +14,9 @@ permalink: /fr/docs/features/code-copy/
 preview: /images/previews/code-copy-button.png
 sidebar:
   nav: docs
-source_file: code-copy.md
+source_file: fr/docs/features/code-copy.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/code-copy.md
 tags:
 - code
 - clipboard
@@ -25,6 +27,7 @@ translated_from_sha: 747017052ef0
 translation_of: pages/_docs/features/code-copy.md
 translation_source_url: /docs/features/code-copy/
 ---
+
 # Bouton de copie de code
 
 Boutons de copie automatiques sur tous les blocs de code pour une copie facile dans le presse-papiers.
@@ -271,10 +274,10 @@ if (lang) {
 
 ## Ressources associées
 
-- [Coloration syntaxique du code](/docs/jekyll/code-highlighting/)
-- [Diagrammes Mermaid](/docs/features/mermaid-diagrams/)
+- [[zer0-mistakes/pages/_docs/jekyll/code-highlighting|Coloration syntaxique du code]]
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Diagrammes Mermaid]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Code Highlighting]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/jekyll/code-highlighting|Code Highlighting]]

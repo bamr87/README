@@ -1,0 +1,54 @@
+---
+date: '2021-12-06T01:41:06.227Z'
+lastmod: '2021-12-06T01:41:06.227Z'
+permalink: /docs/jekyll/
+redirect_from:
+- /docs/jekyll/home/
+- /docs/jekyll/quickstart/
+- /docs/jekyll/extras/
+source_file: pages/_docs/jekyll/index.md
+source_repo: bamr87/bamr87.github.io
+source_url: https://github.com/bamr87/bamr87.github.io/blob/main/pages/_docs/jekyll/index.md
+title: Jekyll
+---
+Jekyll is a static site generator. It takes text written in your favorite markup language and uses layouts to create a static website. You can tweak the site's look and feel, URLs, the data displayed on the page, and more.
+
+## Prerequisites
+
+Jekyll requires the following:
+
+* Ruby version **{{ site.data.ruby.min_version }}** or higher
+* RubyGems
+* GCC and Make
+
+See [Requirements](https://jekyllrb.com/docs/installation/#requirements) for guides and details.
+
+## Instructions
+
+1. Install all [prerequisites](https://jekyllrb.com/docs/installation/).
+2. Install the jekyll and bundler [gems](https://jekyllrb.com/docs/ruby-101/#gems).
+```
+gem install jekyll bundler
+```
+3. Create a new Jekyll site at `./myblog`.
+```
+jekyll new myblog
+```
+4. Change into your new directory.
+```
+cd myblog
+```
+5. Build the site and make it available on a local server.
+```
+bundle exec jekyll serve
+```
+6. Browse to [http://localhost:4000](http://localhost:4000){:target="_blank"}
+
+{: .note .warning} If you are using Ruby version 3.0.0 or higher, step 5 [may fail](https://github.com/github/pages-gem/issues/752). You may fix it by adding `webrick` to your dependencies: `bundle add webrick`
+
+{: .note .info} Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files: `bundle exec jekyll serve --livereload`
+
+
+If you encounter any errors during this process, check that you have installed all the prerequisites in [Requirements](https://jekyllrb.com/docs/installation/#requirements). If you still have issues, see [Troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems).
+
+{: .note .info} Installation varies based on your operating system. See our [guides](https://jekyllrb.com/docs/installation/#guides) for OS-specific instructions.

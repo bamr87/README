@@ -97,7 +97,9 @@ rewards:
   - Hands-off weekly reporting
 skill_focus: devops
 snippet: A report you have to remember to run is a report you never run.
-source_file: automate-traffic-report.md
+source_file: pages/_quests/1010/automate-traffic-report.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/automate-traffic-report.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Scheduled Automation'
 tags:
 - '1010'
@@ -108,7 +110,7 @@ tags:
 - hands-on
 - gamified-learning
 - observability
-title: Mondays at 09:00 — note the absolute paths and env var
+title: Automate a Weekly Traffic Report
 validation_criteria:
   completion_requirements:
   - A script that writes a dated markdown digest
@@ -121,6 +123,7 @@ validation_criteria:
   - Explain why a cloud scheduler cannot reach the local key
   - Show the scheduled job is registered
 ---
+
 ## 📖 The Legend Behind This Quest
 
 A report you have to remember to run is a report you never run. In this final quest of the path you'll turn the on-demand queries from the last quest into a **hands-off weekly digest** — a small script the scheduler runs for you, dropping a Markdown summary on disk and opening a GitHub issue so the numbers show up where you already work.
@@ -143,7 +146,7 @@ A report you have to remember to run is a report you never run. In this final qu
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- Completed [Connect Google Analytics to Your AI Agent](/quests/1010/analytics-mcp-setup/)
+- Completed [[it-journey/pages/_quests/1010/analytics-mcp-setup|Connect Google Analytics to Your AI Agent]]
 - Node scripting and basic scheduling
 
 ### 🛠️ System Requirements
@@ -251,4 +254,4 @@ It's tempting to run this as a hosted cron, but the script needs the **local ser
 
 ## 🎓 Path Complete
 
-You've connected Google Analytics to your agent, learned to query it, and automated the reporting. Loop back to **[the series hub](/quests/1010/)** for more Monitoring & Observability quests — or read the full story in the post [The first thing analytics told me was that the analytics were wrong](https://lifehacker.dev/posts/2026/06/14/ai-assisted-analytics-seo-audit/).
+You've connected Google Analytics to your agent, learned to query it, and automated the reporting. Loop back to **[[it-journey/pages/_quests/1010/README|the series hub]]** for more Monitoring & Observability quests — or read the full story in the post [The first thing analytics told me was that the analytics were wrong](https://lifehacker.dev/posts/2026/06/14/ai-assisted-analytics-seo-audit/).

@@ -32,14 +32,16 @@ primary_technology: Django
 quest_series: Tools Collection
 quest_type: main_quest
 skill_focus: devops
-source_file: django-and-git.md
+source_file: pages/_quests/tools/django-and-git.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/django-and-git.md
 tags:
 - Django
 - Git
 - how-to
 - python
 - tutorial
-title: .gitignore
+title: Conjure a Django Project into a GitHub Vault
 ---
 **Setting Up a GitHub Repository for Your Django Project**
 
@@ -290,7 +292,7 @@ echo "🛠️ Happy coding, sorcerer! 🧙‍♂️"
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -12,10 +12,13 @@ lastmod: 2026-05-24 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme-preview/
 preview: /images/previews/theme-preview.png
-source_file: theme-preview.md
+source_file: pages/_about/settings/theme-preview.md
 source_icon: bi-easel
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/theme-preview.md
 title: Theme Preview
 ---
+
 {% include components/theme-controls-bar.html show_status=true %}
 
 <div class="row g-4">

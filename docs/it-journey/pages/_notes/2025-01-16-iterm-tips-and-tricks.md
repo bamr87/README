@@ -18,7 +18,9 @@ keywords:
 lastmod: '2025-01-17T02:11:14.000Z'
 preview: /assets/images/iTerm-shortcuts-2.webp
 snippet: null
-source_file: 2025-01-16-iterm-tips-and-tricks.md
+source_file: pages/_notes/2025-01-16-iterm-tips-and-tricks.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/2025-01-16-iterm-tips-and-tricks.md
 sub-title: null
 tags:
 - customization
@@ -26,7 +28,7 @@ tags:
 - macOS
 - productivity
 - terminal
-title: 2025 01 16 Iterm Tips And Tricks
+title: iTerm Tips and Tricks
 ---
 **How to Customize iTerm2 for Efficiency: Keybindings to Delete Words and Navigate Text**
 

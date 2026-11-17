@@ -62,7 +62,9 @@ rewards:
   - Access to Terminal Fundamentals quest
   - Foundation for Bash scripting quests
 skill_focus: fullstack
-source_file: linux-fundamentals.md
+source_file: pages/_quests/0000/linux-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/linux-fundamentals.md
 tags:
 - linux
 - fundamentals
@@ -70,7 +72,7 @@ tags:
 - scripting
 - security
 - networking
-title: Linux Fundamentals
+title: 'Linux Fundamentals: Enter the Penguin''s Domain'
 validation_criteria:
   completion_requirements:
   - Navigate the Linux file system using core commands
@@ -205,7 +207,7 @@ This guide covers essential Linux concepts that every IT professional should kno
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[OS Selection]] · [[Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[Terminal Fundamentals: Command Line Navigation Quest]] · [[bashcrawl and Beyond: Extending a Terminal Dungeon Adventure]] **Sequel quests:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Parallel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Hello macOS: Setting Up the Apple Kingdom]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[OS Selection]] · [[it-journey/pages/_quests/0000/hello-noob|Hello n00b: Your First Steps into the IT Journey]] **Unlocks:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] · [[it-journey/pages/_quests/0000/bash-run|bashcrawl and Beyond: Extending a Terminal Dungeon Adventure]] **Sequel quests:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Parallel quests:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[it-journey/pages/_quests/0000/hello-mac|Hello macOS: Setting Up the Apple Kingdom]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

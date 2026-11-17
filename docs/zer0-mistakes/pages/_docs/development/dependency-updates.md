@@ -14,7 +14,9 @@ prerequisites:
 preview: /images/previews/dependency-updates.png
 sidebar:
   nav: docs
-source_file: dependency-updates.md
+source_file: pages/_docs/development/dependency-updates.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/dependency-updates.md
 tags:
 - dependencies
 - gems
@@ -22,6 +24,7 @@ tags:
 - security
 title: Dependency Updates
 ---
+
 # Dependency Updates
 
 The theme uses a Zero-Pin strategy: `Gemfile` specifies no pinned versions; `Gemfile.lock` is committed to ensure reproducible builds. Dependencies are updated weekly via `bundle update` and a small automated PR workflow.

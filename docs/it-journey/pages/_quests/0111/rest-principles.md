@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the API Versioning and API Documentation quests
 skill_focus: backend
-source_file: rest-principles.md
+source_file: pages/_quests/0111/rest-principles.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/rest-principles.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - REST Principles'
 tags:
 - '0111'
@@ -83,7 +85,7 @@ tags:
 - backend
 - conceptual
 - gamified-learning
-title: Explore GitHub's REST API - a famously well-designed example
+title: 'REST Principles: Resources, Statelessness, and Maturity'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -372,17 +374,17 @@ curl -s https://api.github.com/repos/torvalds/linux | jq 'keys | map(select(test
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [API Versioning](/quests/0111/api-versioning/) - Evolve without breaking clients
+- 🎯 [[it-journey/pages/_quests/0111/api-versioning|API Versioning]] - Evolve without breaking clients
 
 **Explore Side Adventures**:
-- ⚔️ [API Documentation](/quests/0111/api-documentation/) - Describe your API with OpenAPI
-- ⚔️ [Error Handling](/quests/0111/error-handling/) - Consistent, helpful errors
+- ⚔️ [[it-journey/pages/_quests/0111/api-documentation|API Documentation]] - Describe your API with OpenAPI
+- ⚔️ [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - Consistent, helpful errors
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Versioning](/quests/0111/api-versioning/)  
-**🏗️ System Engineer**: Explore [API Documentation](/quests/0111/api-documentation/)  
-**🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/api-versioning|API Versioning]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/api-documentation|API Documentation]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]
 
 ## 📚 Resources
 
@@ -412,6 +414,6 @@ curl -s https://api.github.com/repos/torvalds/linux | jq 'keys | map(select(test
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[API Versioning: URI, Headers, and Backward Compatibility]] · [[API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0111/api-fundamentals|API Fundamentals: HTTP, Requests, and JSON]] **Unlocks:** [[it-journey/pages/_quests/0111/api-versioning|API Versioning: URI, Headers, and Backward Compatibility]] · [[it-journey/pages/_quests/0111/api-documentation|API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

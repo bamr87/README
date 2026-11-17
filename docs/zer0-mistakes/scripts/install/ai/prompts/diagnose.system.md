@@ -1,5 +1,7 @@
 ---
-source_file: diagnose.system.md
+source_file: scripts/install/ai/prompts/diagnose.system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/install/ai/prompts/diagnose.system.md
 title: zer0-mistakes Site Diagnosis
 ---
 # zer0-mistakes Site Diagnosis

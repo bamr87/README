@@ -1,5 +1,7 @@
 ---
-source_file: AGENTS.md
+source_file: studio/AGENTS.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/studio/AGENTS.md
 title: AGENTS.md — working rules for AI coding agents in `studio/`
 ---
 # AGENTS.md — working rules for AI coding agents in `studio/`

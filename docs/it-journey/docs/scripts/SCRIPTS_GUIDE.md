@@ -1,5 +1,7 @@
 ---
-source_file: SCRIPTS_GUIDE.md
+source_file: docs/scripts/SCRIPTS_GUIDE.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/scripts/SCRIPTS_GUIDE.md
 title: Scripts Guide
 ---
 # Scripts Guide

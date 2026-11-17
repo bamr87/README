@@ -19,7 +19,9 @@ prerequisites:
 preview: /images/previews/jupyter-notebook-integration.png
 sidebar:
   nav: docs
-source_file: jupyter-notebooks.md
+source_file: fr/docs/features/jupyter-notebooks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/jupyter-notebooks.md
 tags:
 - jupyter
 - notebooks
@@ -30,6 +32,7 @@ translated_from_sha: 491318d3fcb3
 translation_of: pages/_docs/features/jupyter-notebooks.md
 translation_source_url: /docs/features/jupyter-notebooks/
 ---
+
 # Intégration des notebooks Jupyter
 
 Le thème Zer0-Mistakes offre une prise en charge complète des notebooks Jupyter avec compatibilité GitHub Pages grâce à une conversion automatisée avant la génération.
@@ -296,9 +299,9 @@ Ajoutez un conteneur responsive :
 
 ## Voir aussi
 
-- [Mathématiques MathJax](/docs/features/mathjax-math/)
-- [Coloration syntaxique](/docs/jekyll/code-highlighting/)
-- [Diagrammes Mermaid](/docs/features/mermaid-diagrams/)
+- [[zer0-mistakes/pages/_docs/features/mathjax-math|Mathématiques MathJax]]
+- [[zer0-mistakes/pages/_docs/jekyll/code-highlighting|Coloration syntaxique]]
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Diagrammes Mermaid]]
 
 ## Référence technique
 
@@ -308,6 +311,6 @@ Pour les détails d'implémentation (pipeline de conversion Docker, configuratio
 
 ## Voir aussi
 
-- [[Features]]
-- [[Mermaid Diagrams]]
-- [[MathJax Math]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Mermaid Diagrams]]
+- [[zer0-mistakes/fr/docs/features/mathjax-math|MathJax Math]]

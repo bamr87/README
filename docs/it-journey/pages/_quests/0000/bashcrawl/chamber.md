@@ -48,7 +48,9 @@ rewards:
 - Stone Key Fragment
 - Bash arithmetic mastery
 skill_focus: fullstack
-source_file: chamber.md
+source_file: pages/_quests/0000/bashcrawl/chamber.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/bashcrawl/chamber.md
 tags:
 - bashcrawl
 - terminal
@@ -56,7 +58,7 @@ tags:
 - arithmetic
 - variables
 - '0000'
-title: runes  statue*  chest
+title: 'Bashcrawl Chamber: Bash Arithmetic and the Statue Boss'
 validation_criteria:
 - Use let, expr, and $(( )) to compute values
 - Assign arithmetic results to variables
@@ -212,7 +214,7 @@ Continue your terminal adventure with these resources:
 - [Bashcrawl Web Demo](https://bamr87.github.io/bashcrawl/) — Play in your browser, no installation required
 - [Bashcrawl on GitHub](https://github.com/bamr87/bashcrawl) — Source code, setup, and open contributions
 - [GNU Bash Manual — Arithmetic](https://www.gnu.org/software/bash/manual/bash.html#Arithmetic-Expansion) — Shell arithmetic for the brave adventurer
-- [IT-Journey Bashcrawl Hub](/quests/0000/bashcrawl/) — Full quest series and walkthroughs
+- [[it-journey/pages/_quests/0000/bashcrawl/README|IT-Journey Bashcrawl Hub]] — Full quest series and walkthroughs
 - [Bash Arithmetic Guide](https://tldp.org/LDP/abs/html/arith-expansion.html) — Master the realm of numbers
 
 ---
@@ -221,7 +223,7 @@ Continue your terminal adventure with these resources:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Bashcrawl Armoury: File Permissions and Script Execution]] **Unlocks:** [[Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Sequel quests:** [[Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/bashcrawl/armoury|Bashcrawl Armoury: File Permissions and Script Execution]] **Unlocks:** [[it-journey/pages/_quests/0000/bashcrawl/rift|Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Sequel quests:** [[it-journey/pages/_quests/0000/bashcrawl/rift|Bashcrawl Rift: Pipes, Redirection, and the Final Boss]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

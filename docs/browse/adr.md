@@ -9,8 +9,9 @@ nav_exclude: true
 
 # Adr - content map
 
-Every published page in [`docs/adr/`](../adr/) as it appears in the sidebar: **3 pages** across **0 sections** (max depth 1).
+Every published page in [`docs/adr/`](../adr/) as it appears in the sidebar: **4 pages** across **0 sections** (max depth 1).
 
 - [Architecture Decision Records](../adr/README.md)
 - [ADR 0001 — Record architecture decisions](../adr/0001-record-architecture-decisions.md)
+- [ADR 0002 — Treat docs/ as an Obsidian vault with one link resolver](../adr/0002-docs-as-an-obsidian-vault.md)
 - [ADR NNNN — Title in sentence case](../adr/0000-template.md)

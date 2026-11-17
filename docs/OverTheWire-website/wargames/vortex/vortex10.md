@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 10
-source_file: vortex10.md
+source_file: wargames/vortex/vortex10.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex10.md
 title: Vortex10
 ---
 Random?

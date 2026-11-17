@@ -14,7 +14,9 @@ permalink: /fr/docs/features/statistics-dashboard/
 preview: /images/previews/statistics-dashboard-feature.png
 sidebar:
   nav: docs
-source_file: statistics-dashboard.md
+source_file: fr/docs/features/statistics-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/statistics-dashboard.md
 tags:
 - dashboard
 - statistics
@@ -25,6 +27,7 @@ translated_from_sha: 1c020f7e148c
 translation_of: pages/_docs/features/statistics-dashboard.md
 translation_source_url: /docs/features/statistics-dashboard/
 ---
+
 # Tableau de bord des statistiques
 
 Un tableau de bord prêt à l'emploi qui transforme votre contenu en métriques : le nombre d'articles que vous possédez, leur répartition par catégorie et les balises que vous utilisez le plus. Il repose sur une mise en page dédiée ainsi qu'un ensemble de composants d'inclusion modulaires, tous alimentés par des statistiques de contenu générées.
@@ -53,4 +56,4 @@ La mise en page [`stats.html`](https://github.com/bamr87/zer0-mistakes/blob/main
 
 ## Fonctionnalités associées
 
-- [Génération SEO et plan du site](/docs/seo/sitemap/)
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Génération SEO et plan du site]]

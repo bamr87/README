@@ -9,7 +9,9 @@ draft: false
 lastmod: '2026-05-17T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/exam-overview/
-source_file: exam-overview.md
+source_file: pages/_notes/gh-600/exam-overview.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/exam-overview.md
 tags:
 - gh-600
 - exam
@@ -42,11 +44,11 @@ Official study guide: [Microsoft Learn — GH-600 Study Guide](https://learn.mic
 
 ## Key Preparation Milestones
 
-- [ ] Review all 19 sub-skills in the [Skills Measured](/notes/gh-600/skills-measured/) page
-- [ ] Complete all 20 quests in the [Agentic Codex arc](/notes/gh-600/)
+- [ ] Review all 19 sub-skills in the [[it-journey/pages/_notes/gh-600/skills-measured|Skills Measured]] page
+- [ ] Complete all 20 quests in the [[it-journey/pages/_notes/gh-600/index|Agentic Codex arc]]
 - [ ] Score ≥ 70% on each domain in the Capstone rubric
-- [ ] Review the [Glossary](/notes/gh-600/glossary/) before exam day
+- [ ] Review the [[it-journey/pages/_notes/gh-600/glossary|Glossary]] before exam day
 
 ---
 
-*Part of: [[GH-600 Agentic AI Quick-Reference Notes]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*
+*Part of: [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*

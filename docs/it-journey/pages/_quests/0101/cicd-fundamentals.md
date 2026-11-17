@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 0101 CI/CD & DevOps quest line
 skill_focus: devops
-source_file: cicd-fundamentals.md
+source_file: pages/_quests/0101/cicd-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/cicd-fundamentals.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - CI/CD Fundamentals'
 tags:
 - '0101'
@@ -86,7 +88,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Git and a runtime using Homebrew
+title: 'CI/CD Fundamentals: The Build-Test-Deploy Pipeline'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -471,17 +473,17 @@ The secret is injected into the job's environment but never written to the log o
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [GitHub Actions Basics](/quests/0101/github-actions-basics/) - Turn the concepts into real workflows
+- 🎯 [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]] - Turn the concepts into real workflows
 
 **Explore Side Adventures**:
-- ⚔️ [Testing Integration](/quests/0101/testing-integration/) - Make your gates meaningful
-- ⚔️ [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Ship safely
+- ⚔️ [[it-journey/pages/_quests/0101/testing-integration|Testing Integration]] - Make your gates meaningful
+- ⚔️ [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Ship safely
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [GitHub Actions Basics](/quests/0101/github-actions-basics/)  
-**🏗️ System Engineer**: Explore [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -510,6 +512,6 @@ The secret is injected into the job's environment but never written to the log o
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[GitHub Actions Basics: Workflow Automation for Modern DevOps]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] · [[Deployment Pipelines: Production Release Automation Strategies]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[it-journey/pages/_quests/0101/github-actions-basics|GitHub Actions Basics: Workflow Automation for Modern DevOps]] · [[Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] · [[Deployment Pipelines: Production Release Automation Strategies]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

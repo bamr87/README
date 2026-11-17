@@ -54,7 +54,9 @@ rewards:
 - 🛠️ Reusable CV template you can tailor per role
 - 🎯 ATS-friendly professional PDF
 skill_focus: fullstack
-source_file: the-lazytex-of-building-a-curriculum-vitae.md
+source_file: pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae.md
 sub_title: 'Level 0101 (5) Quest: LaTeX Tool Mastery and CV Construction'
 tags:
 - '0101'
@@ -63,7 +65,7 @@ tags:
 - resume
 - pdf
 - tool-mastery
-title: Install VS Code extension
+title: 'Forging the La(zy)TeX CV: Binary Level 0101 (5) Quest'
 validation_criteria:
 - Repository contains a customized cv.tex aligned to your details
 - VS Code compiles cv.tex to a PDF without errors
@@ -484,7 +486,7 @@ Before you depart, ensure you can:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0101/README|Level 0101 - Advanced Docker & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -1,9 +1,12 @@
 ---
 gamename: blacksun
 layout: default
-source_file: reading_material.md
-title: Reading Material
+source_file: wargames/blacksun/reading_material.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/reading_material.md
+title: Reading material
 ---
+
 Reading material
 ================
 

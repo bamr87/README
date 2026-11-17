@@ -14,7 +14,9 @@ permalink: /fr/docs/jekyll/code-highlighting/
 preview: /images/previews/code-highlighting.png
 sidebar:
   nav: docs
-source_file: code-highlighting.md
+source_file: fr/docs/jekyll/code-highlighting.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/jekyll/code-highlighting.md
 tags:
 - highlighting
 - jekyll
@@ -25,6 +27,7 @@ translated_from_sha: f7c0497eed72
 translation_of: pages/_docs/jekyll/code-highlighting.md
 translation_source_url: /docs/jekyll/code-highlighting/
 ---
+
 # Coloration syntaxique du code
 
 > Configurez la coloration syntaxique des blocs de code sur votre site Jekyll.
@@ -162,6 +165,6 @@ Thèmes populaires :
 
 ## Voir aussi
 
-- [[Jekyll]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
 - [[Syntax Highlighting]]
-- [[Code Copy Button]]
+- [[zer0-mistakes/pages/_docs/features/code-copy|Code Copy Button]]

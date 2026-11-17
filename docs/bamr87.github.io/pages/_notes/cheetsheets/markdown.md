@@ -1,0 +1,85 @@
+---
+author: bamr87
+categories:
+- Posts
+date: '2021-12-27T17:46:18.040Z'
+description: null
+draft: true
+lastmod: '2021-12-27T17:46:18.040Z'
+layout: default
+source_file: pages/_notes/cheetsheets/markdown.md
+source_repo: bamr87/bamr87.github.io
+source_url: https://github.com/bamr87/bamr87.github.io/blob/main/pages/_notes/cheetsheets/markdown.md
+title: Markdown
+---
+
+[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
+# Jekyll Markdown Quick Reference
+
+[Kramdown quickref](https://kramdown.gettalong.org/quickref.html)
+
+#### Write in simply awesome `markdown`
+
+
+This is a demo of all styled elements in Jekyll Now. 
+
+[View the markdown used to create this post](https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md).
+
+This is a paragraph, it's surrounded by whitespace. Next up are some headers, they're heavily influenced by GitHub's markdown style.
+
+## Header 2 (H1 is reserved for post titles)##
+
+### Header 3
+
+#### Header 4
+ 
+A link to [Jekyll Now](https://github.com/barryclark/jekyll-now/). A big ass literal link <https://github.com/barryclark/jekyll-now/>
+  
+An image, located within /images
+
+![an image alt text]({{ "/assets/images/jekyll-seo-preview.png" | relative_url }} "an image title")
+
+* A bulletted list
+- alternative syntax 1
++ alternative syntax 2
+  - an indented list item
+
+1. An
+2. ordered
+3. list
+
+Inline markup styles: 
+
+- _italics_
+- **bold**
+- `code()` 
+ 
+> Blockquote
+>> Nested Blockquote 
+ 
+Syntax highlighting can be used by wrapping your code in a liquid tag like so:
+
+{% raw %}
+```liquid
+{% highlight javascript %}
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+{% endhighlight %}
+```
+{% endraw %}
+
+creates...
+
+```javascript
+/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+```
+ 
+Use two trailing spaces  
+on the right  
+to create linebreak tags  
+ 
+Finally, horizontal lines
+ 
+----
+****

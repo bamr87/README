@@ -9,12 +9,14 @@ order: 98.0
 preview: /assets/images/posts/098-0-the-wandering-rocks-wip.jpg
 section: 10-wandering-rocks
 series: ulysses
-source_file: 098-0-the-wandering-rocks-wip.md
-source_url: https://www.swerveofshore.com/post/098-0-the-wandering-rocks-wip
+source_file: examples/swerve-of-shore/pages/_series/ulysses/10-wandering-rocks/098-0-the-wandering-rocks-wip.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/10-wandering-rocks/098-0-the-wandering-rocks-wip.md
 sub-title: Episode 10 · Wandering Rocks
-title: 098 0 The Wandering Rocks Wip
+title: 098.0 - The Wandering Rocks - WIP
 wip: true
 ---
+
 An in-progress entry in the *Episode 10 · Wandering Rocks* thread on [Swerve of Shore](https://www.swerveofshore.com/post/098-0-the-wandering-rocks-wip), by Brandon Nicklaus.
 
 > John Conmee S.J John Stephen Conmee SJ (- Reverend of Saint Francis Xavier’s Church

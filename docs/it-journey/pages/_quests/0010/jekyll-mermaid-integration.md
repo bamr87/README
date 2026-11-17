@@ -51,7 +51,9 @@ rewards:
   skill: Jekyll Integration Mastery
   tool: Mermaid Diagram System
 skill_focus: frontend
-source_file: jekyll-mermaid-integration.md
+source_file: pages/_quests/0010/jekyll-mermaid-integration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/jekyll-mermaid-integration.md
 sub_title: 'Level 0010 (2) Quest: Jekyll-Mermaid Integration Mastery'
 tags:
 - jekyll
@@ -62,7 +64,7 @@ tags:
 - documentation
 - javascript
 - cdn
-title: '🧙‍♂️ The Diagrammatic Enchantment: Jekyll-Mermaid Integration Quest'
+title: 'The Diagrammatic Enchantment: Jekyll-Mermaid Integration'
 validation_criteria:
 - Mermaid diagrams render correctly on Jekyll site
 - Conditional loading works based on page front matter

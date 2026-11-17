@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - Access to the data-driven quests of Level 0001 Web Fundamentals
 skill_focus: frontend
-source_file: javascript-fundamentals.md
+source_file: pages/_quests/0001/javascript-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/javascript-fundamentals.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - JavaScript'
 tags:
 - '0001'
@@ -89,7 +91,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: Create a working folder and an HTML file to host your script
+title: 'JavaScript Fundamentals: Variables, Functions & the DOM'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -137,7 +139,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfort creating and saving plain text/HTML files
 - [ ] Basic command line navigation (`cd`, `ls`)
-- [ ] Recommended: completion of [CSS Styling Basics](/quests/0001/css-styling-basics/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -478,17 +480,17 @@ Three ideas you just used:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Analytics Integration](/quests/0001/analytics-integration/) - Track the interactions you just built
+- 🎯 [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]] - Track the interactions you just built
 
 **Explore Side Adventures**:
-- ⚔️ [CSS Styling Basics](/quests/0001/css-styling-basics/) - Style the elements you now control
-- ⚔️ [Jekyll Plugins](/quests/0001/jekyll-plugins/) - Logic that runs at build time
+- ⚔️ [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]] - Style the elements you now control
+- ⚔️ [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]] - Logic that runs at build time
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Analytics Integration](/quests/0001/analytics-integration/)  
-**🏗️ System Engineer**: Explore [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
-**🎨 Frontend Specialist**: Revisit [CSS Styling Basics](/quests/0001/css-styling-basics/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]]  
+**🎨 Frontend Specialist**: Revisit [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]  
 
 ## 📚 Resources
 
@@ -517,6 +519,6 @@ Three ideas you just used:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Jekyll Plugins]] · [[Analytics Integration]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Jekyll Plugins]] · [[Analytics Integration]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

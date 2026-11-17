@@ -14,7 +14,9 @@ prerequisites:
 preview: /images/previews/google-tag-manager.png
 sidebar:
   nav: docs
-source_file: google-tag-manager.md
+source_file: pages/_docs/analytics/google-tag-manager.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/analytics/google-tag-manager.md
 tags:
 - gtm
 - analytics
@@ -22,6 +24,7 @@ tags:
 - marketing
 title: Google Tag Manager
 ---
+
 # Google Tag Manager
 
 Integrate Google Tag Manager (GTM) for centralized tag management without code changes.
@@ -315,12 +318,12 @@ Shows:
 
 ## Related
 
-- [Google Analytics](/docs/analytics/google-analytics/)
-- [PostHog Analytics](/docs/features/posthog-analytics/)
-- [Cookie Consent](/docs/features/cookie-consent/)
+- [[zer0-mistakes/pages/_docs/analytics/google-analytics|Google Analytics]]
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]]
+- [[zer0-mistakes/pages/_docs/features/cookie-consent|Cookie Consent]]
 
 ## See also
 
-- [[Analytics]]
-- [[Google Analytics]]
-- [[PostHog Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/google-analytics|Google Analytics]]
+- [[zer0-mistakes/fr/docs/features/posthog-analytics|PostHog Analytics]]

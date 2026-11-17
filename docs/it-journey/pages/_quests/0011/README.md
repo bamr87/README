@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/0011/
 preview: /images/previews/level-0011-development-tools-ai-integration.webp
-source_file: README.md
+source_file: pages/_quests/0011/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0011/README.md
 tags:
 - quests
 - '0011'
 - apprentice
 - ai-assisted
 - development
-title: 'Level 0011: Development Tools & AI Integration'
+title: Level 0011 - Development Tools & AI Integration
 ---
 # Level 0011: Development Tools & AI Integration
 
@@ -41,10 +43,10 @@ Level 0011 quests focus on:
 | Advanced Git Workflows: Master Rebase, Cherry-pick, and Stash Commands | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
 | [Google Analytics for Jekyll: Complete User Tracking Integration Guide](/quests/0011/analytics-integration/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
 | Custom Domains for GitHub Pages: Professional Website Setup Guide | 🟡 Medium | 30-45 minutes | main_quest | 🔮 Placeholder |
-| [The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms](/quests/0011/github-pages-hidden-gem/) | 🟢 Easy | 60-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0011/github-pages-hidden-gem\|The Epic Quest for the Hidden Gem: Unleashing GitHub Pages to Capture and Conquer AI Realms]] | 🟢 Easy | 60-90 minutes | main_quest | 🔮 Placeholder |
 | [Jekyll Plugins: Essential Extensions for Static Sites](/quests/0011/jekyll-plugins/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [The PRD Codex: Mastering the Art of Product Reality Distillation](/quests/0011/prd-codex-mastery/) | 🟡 Medium | 45-60 minutes | main_quest | ✅ Complete |
-| [Forging the Prompt Crystal: VS Code Copilot Mastery Quest](/quests/0011/prompt-crystal-vscode-copilot/) | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/0011/prd-codex-mastery\|The PRD Codex: Mastering the Art of Product Reality Distillation]] | 🟡 Medium | 45-60 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/0011/prompt-crystal-mastery-vscode-copilot\|Forging the Prompt Crystal: VS Code Copilot Mastery Quest]] | 🟡 Medium | 90-120 minutes | main_quest | ✅ Complete |
 | [SEO Optimization: Boost Search Engine Visibility for Jekyll Sites](/quests/0011/seo-optimization/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
 
 

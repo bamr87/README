@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: sshinfra.md
-title: Sshinfra
+source_file: information/sshinfra.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/sshinfra.md
+title: SSH/infrastructure
 ---
+
 SSH and the infrastructure
 ==========================
 

@@ -57,7 +57,9 @@ rewards:
   - ⚙️ Instruction Iteration
   - 📈 Behaviour Measurement
 skill_focus: devops
-source_file: agentic-behavior-tuning.md
+source_file: pages/_quests/1011/agentic-behavior-tuning.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/agentic-behavior-tuning.md
 sub_title: 'Level 1011 Quest 1/4 — Domain 4: Evaluating Agent Performance'
 tags:
 - '1011'
@@ -67,7 +69,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: work/gh-600/scripts/measure_agent_baseline.sh
+title: 'Reforging the Agent''s Mind: Tuning Behavior by Instruction'
 validation_criteria:
   completion_requirements:
   - Behaviour improvement cycle documented (baseline → change → measure → iterate)
@@ -173,7 +175,7 @@ fi
 echo "✅ Baseline recorded ($RECORDED task(s)) in $RESULTS_FILE"
 ```
 
-> **No agent history yet?** If you haven't yet run an `agent-task.yml` workflow (or you completed [Q12](/quests/1010/agentic-failure-root-cause-analysis/) on a different repo), run `bash work/gh-600/scripts/measure_agent_baseline.sh --seed` to write three synthetic sample records. This lets you finish the iteration cycle and pass Quest Validation now; re-run without `--seed` once real agent runs exist to replace the seed data with live measurements.
+> **No agent history yet?** If you haven't yet run an `agent-task.yml` workflow (or you completed [[it-journey/pages/_quests/1010/agentic-failure-root-cause-analysis|Q12]] on a different repo), run `bash work/gh-600/scripts/measure_agent_baseline.sh --seed` to write three synthetic sample records. This lets you finish the iteration cycle and pass Quest Validation now; re-run without `--seed` once real agent runs exist to replace the seed data with live measurements.
 
 ---
 
@@ -301,11 +303,11 @@ grep -qi "plan first" copilot-instructions.md 2>/dev/null \
 | 🔨 Forge Master Badge | Earned on completion |
 | ⚙️ Instruction Iteration | Skill unlocked |
 | 100 XP | Added to Level 1011 total |
-| Unlocks | [Q14: The Council of Many](/quests/1011/agentic-multi-agent-orchestration-patterns/) |
+| Unlocks | [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns\|Q14: The Council of Many]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Feature Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Unlocks:** [[The Council of Many: Multi-Agent Orchestration Patterns]] **Sequel quests:** [[The Council of Many: Multi-Agent Orchestration Patterns]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1011/README|Level 1011 - Feature Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] **Unlocks:** [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]] **Sequel quests:** [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

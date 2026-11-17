@@ -1,0 +1,89 @@
+---
+source_file: docs/AUTOPILOT.md
+source_repo: bamr87/lifehacker.dev
+source_url: https://github.com/bamr87/lifehacker.dev/blob/main/docs/AUTOPILOT.md
+title: The autopilot — operator's guide
+---
+# The autopilot — operator's guide
+
+> How to run, schedule and steer the Claude Code autopilot that writes this site: the data that drives it, one assisted cycle, the guardrails, the switches and the loop's memory.
+
+lifehacker.dev is a **headless CMS driven by Claude Code**. This file is the operator's guide. The reader-facing version lives at [/docs/autopilot/](https://lifehacker.dev/docs/autopilot/) and [/about/colophon/](https://lifehacker.dev/about/colophon/).
+
+## TL;DR
+
+A robot (Claude Code) reads this repo, writes content into it, and opens pull requests. A human reviews and merges. There is no dashboard — the repo **is** the CMS.
+
+## The data that drives it
+
+| File | Purpose |
+|---|---|
+| `_data/brand/identity.yml` | Who the site is: mission, pillars, the running joke, the cast of bylines, the prime directive. |
+| `_data/brand/voice.yml` | Voice profiles (`satire-deadpan`, `how-to-practical`, `tool-review-honest`, `meta-confession`, plus the persona voices `threat-model-everything`, `edge-case-maximalist`, `epic-weekly`, and `dateline-deadpan`) and when to use each. |
+| `_data/brand/glossary.yml` | Hype words banned when used sincerely, unenforced `watch_words` style guidance, and the (generous) satire word policy. |
+| `_data/authors.yml` | The bylines: the human, the robot, and the robot's declared AI personas (`cass`, `edge`, `fable`, `rhea`), each with a `voice:` profile. Any entry with a `voice:` joins the per-section byline rotation (`scripts/fleet/authors.rb`); opt one out with `rotate: false`. Two desks are pinned, not rotated: the weekly epic is always `fable`, and The Wire is always `rhea` (`authors.rb` `SECTION_AUTHORS`). |
+| `_data/backlog.yml` | The content queue: `{id, kind, title, brief, voice, priority, status}` + optional `author:` persona key. An item that pins no `author:` is auto-assigned the section's least-used AI persona at draft time (rotation), so the whole cast gets used. |
+| `.claude/skills/grow-lifehacker/SKILL.md` | The instructions the robot follows each run. |
+| `_data/wire/sources.yml` | The Wire's assignment editor: the news sources the `wire-scout` crawls for the model beat, each with its own frequency, trust tier, and keyword filters. Validated by the harness (`scripts/ci/lint_wire.rb`); the press charter that binds the resulting dispatches lives in `identity.yml` (`press_charter`), and every dispatch must pin front-matter `sources:`. |
+| `_data/top_story.yml` | The homepage hero pointer: which post leads the front page. Repointed weekly by the **weekly-epic** routine (`.claude/skills/weekly-epic` — the `fable` persona digests the prior week via `scripts/content/weekly_digest.rb`, sings one illustrated recap, and PRs it as the new Top Story). A human can repoint it any time. |
+| `_data/ai_usage/` + `AI_USAGE.md` | The meter: every model call's tokens + API-equivalent cost, folded nightly from run artifacts and published at `/docs/ai-usage/`. Each PR carries a sticky cost comment (creation vs downstream). See `docs/AI-USAGE.md`. |
+
+## Running a cycle (assisted mode — current)
+
+From the repo root, in Claude Code:
+
+```
+/grow-lifehacker
+```
+
+or just ask: *"do an autopilot run"* / *"publish the next backlog item"*. The skill will:
+
+1. Read the brand + backlog.
+2. Pick the highest-priority `status: todo` item (or your named topic).
+3. Research it **for real** (run the commands, reproduce the bug).
+4. Draft on-voice into the right collection, under the section's **rotating AI byline** — unless the item pins an `author:`, the writer runs `ruby scripts/fleet/authors.rb --section <kind>` and writes as the least-used persona it returns, so `cass`/`edge` actually get cast instead of everything defaulting to `claude`.
+5. **Generate the preview banner** (`node scripts/preview/generate.mjs -f <file>` — the Trace Bloom generative renderer, offline and deterministic; see `docs/PREVIEW-IMAGES.md`), then **illustrate it** (`node scripts/preview/illustrate.mjs -f <file>` — Claude draws the article's subject into the banner, once, and commits the drawing to `_data/preview/motifs/`), build locally (`scripts/preview.sh`), screenshot, verify.
+6. Open a PR on a branch (article + preview image + stamped `preview:`) and flip the backlog item to `done`. Then stop.
+
+You review the PR and merge. GitHub Pages deploys `main` automatically.
+
+## Guardrails (do not remove)
+
+- **No direct pushes to `main`.** Robot works on branches, opens PRs.
+- **No self-merge / no self-approve.** A human merges.
+- **No invented commands or output.** Everything shown was run.
+- **Honest attribution.** Robot byline = `claude`; human-written = human byline.
+- **Bugs go upstream** to `bamr87/zer0-mistakes` (`fix:` prefix, install mode "Remote theme (GitHub Pages)").
+- **No secrets / no deploy access.**
+
+If you loosen any of these, update [/about/colophon/](https://lifehacker.dev/about/colophon/) in the same change — in bold, with a date.
+
+## Scheduling fully-autonomous runs (wired, OFF until you flip the variables)
+
+Every loop's cron is wired and **idles behind its `*_ENABLED` repo variable** — the variable is the single ON switch (`gh variable set <NAME> true`), and the bot token can't set variables, so a loop can never enable itself. Flip only what you trust, and add a dated line to the Colophon when you do. Every switch is listed in [reference/workflows.md](reference/workflows.md); what turning one on means is in [CICD.md](CICD.md#turning-on-continuous-autonomy-deliberate).
+
+## Operating the loops from the console
+
+Every lane above can be watched and driven from GitFactory without opening this repo: [`bamr87.github.io/gitorio/?tab=fleet&roster=bamr87/lifehacker.dev,bamr87/irony-works`](https://bamr87.github.io/gitorio/?tab=fleet&roster=bamr87/lifehacker.dev,bamr87/irony-works) is the fleet's operator link (one roster, this repo and irony-works). Connect a fine-grained PAT (contents, workflows, actions, variables), press **Scan fleet**, and the Workflows board lists every lane with its last run, its `*_ENABLED` switch and its runner; the drawer offers ▶ Run now, ↻ Re-run, ✕ Cancel, ⚡ Arm / ○ Disarm and ⏻ enable/disable, each behind a confirm naming the repo, the workflow and the consequence. The Observe map draws the same lanes from `fleet.manifest.yml` with live run beacons; the Audit board grades them against the fleet conventions. The console reads and operates these lanes; it does not compile them — the runner they call is the hub's `claude-run`, consumed by reference.
+
+## The compounding loop (how each run improves the next)
+
+The framework doesn't just run on a schedule — it **remembers**, so every cycle starts from what the last one learned. All memory is committed data that reaches `main` through the same human-reviewed PR gate as everything else:
+
+| Memory | File | Written by | Read by |
+|---|---|---|---|
+| Improvements ledger | `_data/fleet/improvements.yml` | loop-tuner (one `pending` entry per change, with metric + baseline) | next loop-tuner run (`scripts/devops/verify_improvements.rb` settles each claim: `verified` / `regressed` / still `pending`) |
+| Metrics history | `_data/metrics/history.jsonl` | loop-tuner (`loop_metrics.rb --append-history`) | every measure run (trend signals: a tracked metric that worsened since the last snapshot is a regression to hunt) |
+| Backlog | `_data/backlog.yml` | humans, explorer gaps, **content-scout** (sister-site it-journey.dev ideas, before the factory), **wire-scout** (model-beat dispatch ideas from `_data/wire/sources.yml`, each pinned to its story URL), triage promotions | content factory + fleet (starved kinds surface as a loop-tuner signal; `scripts/triage/harvest_ideas.rb` recovers ideas from merged PR descriptions) |
+| Published-lessons ledger | `_data/retrospectives.yml` | session-retrospective | retrospective queue (a written-up thread is never re-proposed) |
+| Brand accept-ledger | `_data/brand/accepted.yml` | brand-fixer / humans | brand lint (an accepted use never re-flags) |
+| Issue tracker | GitHub issues carrying the `triage-fp:` marker | triage: `file_issues.rb` files/reopens (weekly still-failing heartbeat), `close_stale.rb` closes once a finding stops reproducing — fixed, moved, or rule retired — and closes factory work orders whose members are all closed; human issues are never touched | issue factory (batcher → work orders → fixer PRs); a regression auto-reopens the closed issue |
+
+The cycle: **measure → verify last run's claims → fix the upstream cause → record the claim + snapshot → PR → human merges → next run verifies.** A change whose number regresses becomes the next run's top priority; a dead-end hypothesis is recorded as `abandoned` and never re-tried. That's the ratchet.
+
+## Adapting this for another site
+
+1. Rewrite `_data/brand/*` for your identity and voice.
+2. Seed `_data/backlog.yml`.
+3. Adapt `.claude/skills/grow-lifehacker/SKILL.md` to your collections.
+4. Keep the guardrails — especially no-self-merge.

@@ -1,5 +1,7 @@
 ---
-source_file: zer0-to-hero-generated-README.md
+source_file: scripts/generation/zer0-to-hero-generated-README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/scripts/generation/zer0-to-hero-generated-README.md
 title: Generated Zer0-to-Hero Script
 ---
 # Generated Zer0-to-Hero Script

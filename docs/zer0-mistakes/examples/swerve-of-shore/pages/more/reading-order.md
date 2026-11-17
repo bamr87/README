@@ -7,9 +7,12 @@ permalink: /more/reading-order/
 sidebar:
   nav: series
   title: Browse the series
-source_file: reading-order.md
+source_file: examples/swerve-of-shore/pages/more/reading-order.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/more/reading-order.md
 title: Reading Order
 ---
+
 {% include page-header.html %}
 
 Entries are numbered rather than dated, because a serialized reading does not arrive in the order it is meant to be read.

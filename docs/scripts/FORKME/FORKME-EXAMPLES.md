@@ -1,5 +1,7 @@
 ---
-source_file: FORKME-EXAMPLES.md
+source_file: FORKME/FORKME-EXAMPLES.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/FORKME/FORKME-EXAMPLES.md
 title: ForkMe Real-World Examples
 ---
 # ForkMe Real-World Examples

@@ -1,5 +1,7 @@
 ---
-source_file: authoring-apps.md
+source_file: docs/termforge/authoring-apps.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/termforge/authoring-apps.md
 title: Authoring TermForge Apps
 ---
 # Authoring TermForge Apps

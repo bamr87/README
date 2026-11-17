@@ -1,5 +1,7 @@
 ---
-source_file: rules.v1.md
+source_file: docs/schemas/rules.v1.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/schemas/rules.v1.md
 title: Rules v1
 ---
 # Rules v1

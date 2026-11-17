@@ -14,7 +14,9 @@ lastmod: 2025-12-20 22:15:46.245000+00:00
 permalink: /about/features/comprehensive-gem-automation-system/
 preview: /images/previews/comprehensive-gem-automation-system.png
 snippet: null
-source_file: comprehensive-gem-automation-system.md
+source_file: pages/_about/features/comprehensive-gem-automation-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/comprehensive-gem-automation-system.md
 sub-title: Zero-click releases with comprehensive validation
 tags:
 - Automation
@@ -26,8 +28,9 @@ tags:
 - DRY
 - KIS
 - AIPD
-title: Semantic versioning with validation
+title: Comprehensive Gem Automation System
 ---
+
 ## 🚀 System Overview
 
 A production-ready automation ecosystem that embodies all IT-Journey core principles (**DFF**, **DRY**, **KIS**, **REnO**, **MVP**, **COLAB**, **AIPD**) for managing the complete Jekyll theme development lifecycle from local development to RubyGems publication.
@@ -408,7 +411,7 @@ Your `zer0-mistakes` gem now has a production-ready automation system that embod
 
 ## Related Documentation
 
-- [Scripts README](/scripts/README.md) - Detailed script documentation
-- [CHANGELOG.md](/CHANGELOG.md) - Version history and changes
+- [[zer0-mistakes/scripts/README|Scripts README]] - Detailed script documentation
+- [[zer0-mistakes/CHANGELOG|CHANGELOG.md]] - Version history and changes
 - [GitHub Actions Workflows](https://github.com/bamr87/zer0-mistakes/tree/main/.github/workflows) - CI/CD pipeline details
 - [Makefile](/Makefile) - Command reference and usage

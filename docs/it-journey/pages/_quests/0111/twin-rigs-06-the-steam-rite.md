@@ -71,7 +71,9 @@ rewards:
   - 💿 Safe disk imaging
   - 🔒 Working with an immutable operating system
 skill_focus: infrastructure
-source_file: twin-rigs-06-the-steam-rite.md
+source_file: pages/_quests/0111/twin-rigs-06-the-steam-rite.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/twin-rigs-06-the-steam-rite.md
 tags:
 - '0111'
 - steamos
@@ -81,7 +83,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: Open Etcher, choose the recovery file, choose your USB drive, then Flash.
+title: 'The Steam Rite: Install SteamOS on the Great Rig'
 validation_criteria:
   completion_requirements:
   - SteamOS boots without the USB drive
@@ -106,7 +108,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter V](/quests/0110/twin-rigs-05-the-great-forge/)** — a stable, memory-tested desktop with an AMD discrete GPU
+- **[[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge|Chapter V]]** — a stable, memory-tested desktop with an AMD discrete GPU
 - **A USB drive of at least 8GB** — it will be erased
 - **Wired Ethernet** if you can manage it, plus a keyboard and mouse
 - **A Steam account**
@@ -286,9 +288,9 @@ graph LR
 
 The Steam store is one door. The next chapter opens a much freer market.
 
-- ➡️ **Next chapter:** [Chapter VII — The Free Stalls](/quests/1000/twin-rigs-07-the-free-stalls/)
-- ⬅️ **Previous chapter:** [Chapter V — The Great Forge](/quests/0110/twin-rigs-05-the-great-forge/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|Chapter VII — The Free Stalls]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge|Chapter V — The Great Forge]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -300,6 +302,6 @@ The Steam store is one door. The next chapter opens a much freer market.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0111 (7) - API Development]] **Previous:** [[The Great Forge: Assemble a Desktop from Bare Parts]] **Next:** [[The Free Stalls: Stock SteamOS with Open Source Games]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0111/README|Level 0111 (7) - API Development]] **Previous:** [[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge|The Great Forge: Assemble a Desktop from Bare Parts]] **Next:** [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|The Free Stalls: Stock SteamOS with Open Source Games]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

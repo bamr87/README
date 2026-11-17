@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: innovation
-source_file: innovation-rnd.md
+source_file: pages/_quests/1111/innovation-rnd.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/innovation-rnd.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Innovation and R&D'
 tags:
 - '1111'
@@ -85,7 +87,7 @@ tags:
 - research
 - portfolio
 - gamified-learning
-title: A versioned lab notebook keeps every experiment honest and reviewable
+title: 'Innovation and R&D: Experimentation and Technical Bets'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -134,7 +136,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Experience shipping production systems
 - [ ] Comfort reasoning about uncertainty and risk
-- [ ] Completion of [Technical Leadership](/quests/1111/technical-leadership/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] A document tool for experiment briefs and a bet portfolio
@@ -379,17 +381,17 @@ The hardest leadership act here is **killing a project well**: thanking the team
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Architecture Reviews](/quests/1111/architecture-reviews/) - Subject your bets to rigorous review
+- 🎯 [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]] - Subject your bets to rigorous review
 
 **Explore Side Adventures**:
-- ⚔️ [Career Advancement](/quests/1111/career-advancement/) - Innovation as a career lever
-- ⚔️ [Technical Leadership](/quests/1111/technical-leadership/) - Lead the teams that innovate
+- ⚔️ [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]] - Innovation as a career lever
+- ⚔️ [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] - Lead the teams that innovate
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🏗️ System Engineer**: Explore [Career Advancement](/quests/1111/career-advancement/)  
-**🛡️ Security Specialist**: Advance to [Technical Leadership](/quests/1111/technical-leadership/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]]
 
 ## 📚 Resources
 
@@ -418,6 +420,6 @@ The hardest leadership act here is **killing a project well**: thanking the team
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Building Technical Communities: Events, Governance, and Inclusion]] **Unlocks:** [[Architecture Reviews: Running Reviews, ADRs, and Trade-off Facilitation]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Building Technical Communities: Events, Governance, and Inclusion]] **Unlocks:** [[Architecture Reviews: Running Reviews, ADRs, and Trade-off Facilitation]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: tools/README.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/tools/README.md
 title: scripts tools
 ---
 # scripts tools

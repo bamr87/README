@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - The edge layer that fronts the scaling quest
 skill_focus: backend
-source_file: api-gateway-patterns.md
+source_file: pages/_quests/1110/api-gateway-patterns.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/api-gateway-patterns.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - API Gateway Patterns'
 tags:
 - '1110'
@@ -84,7 +86,7 @@ tags:
 - bff
 - hands-on
 - gamified-learning
-title: Run NGINX with a custom config you will write below
+title: 'API Gateway Patterns: The Single Front Door'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -133,7 +135,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Understand microservices and HTTP routing
 - [ ] Familiarity with JWT or similar auth tokens
-- [ ] Completed [Microservices Architecture](/quests/1110/microservices-architecture/) (required)
+- [ ] Completed [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] (required)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -446,15 +448,15 @@ The trade-off: BFFs eliminate one-size-fits-none compromises but multiply the nu
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Scaling Strategies](/quests/1110/scaling-strategies/) - Scale the services behind your gateway
+- 🎯 [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]] - Scale the services behind your gateway
 
 **Explore Side Adventures**:
-- ⚔️ [Event-Driven Design](/quests/1110/event-driven-design/) - The async core behind the sync facade
-- ⚔️ [Microservices Architecture](/quests/1110/microservices-architecture/) - Revisit the services the gateway fronts
+- ⚔️ [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]] - The async core behind the sync facade
+- ⚔️ [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] - Revisit the services the gateway fronts
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]]  
 **🏗️ System Engineer**: Explore running the gateway in high availability  
 **🛡️ Security Specialist**: Deepen edge authentication and TLS termination
 
@@ -485,6 +487,6 @@ The trade-off: BFFs eliminate one-size-fits-none compromises but multiply the nu
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Microservices Architecture: Decomposing the Monolith]] **Unlocks:** [[Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] **Unlocks:** [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

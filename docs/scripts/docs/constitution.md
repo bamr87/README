@@ -1,5 +1,7 @@
 ---
-source_file: constitution.md
+source_file: docs/constitution.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/docs/constitution.md
 title: scripts — Constitution
 ---
 <!-- kit: governance v0.1.0 · seeded from bamr87/bamr87 templates/governance/. Owned by this repo after seeding;

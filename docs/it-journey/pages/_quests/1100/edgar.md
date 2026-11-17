@@ -58,7 +58,9 @@ rewards:
 - 🛠️ SEC XBRL and Frames API familiarity
 - 🎯 Reusable EDGAR data pipeline artifacts
 skill_focus: fullstack
-source_file: edgar.md
+source_file: pages/_quests/1100/edgar.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/edgar.md
 sub_title: 'Level 1100 (12) Quest: Epic API Data Extraction and Analysis'
 tags:
 - '1100'
@@ -69,7 +71,7 @@ tags:
 - data-engineering
 - project-based
 - gamified-learning
-title: Edgar
+title: 'Conquer King EDGAR: Siege of the SEC Data Castle'
 validation_criteria:
 - Fetch submissions for at least 2 CIKs with valid User-Agent
 - Extract one us-gaap concept via companyconcept and chart or tabulate trend
@@ -415,7 +417,7 @@ graph TD
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

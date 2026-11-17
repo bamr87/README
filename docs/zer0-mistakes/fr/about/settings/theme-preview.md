@@ -14,13 +14,16 @@ layout: admin
 machine_translated: true
 permalink: /fr/about/settings/theme-preview/
 preview: /images/previews/theme-preview.png
-source_file: theme-preview.md
+source_file: fr/about/settings/theme-preview.md
 source_icon: bi-easel
-title: Theme Preview
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/settings/theme-preview.md
+title: Aperçu du thème
 translated_from_sha: e283d9e761c8
 translation_of: pages/_about/settings/theme-preview.md
 translation_source_url: /about/settings/theme-preview/
 ---
+
 {% include components/theme-controls-bar.html show_status=true %}
 
 <div class="row g-4">

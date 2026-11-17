@@ -66,7 +66,9 @@ rewards:
   unlocks_features:
   - Continue The Ouroboros Loop campaign
 skill_focus: devops
-source_file: ouroboros-loop-01-the-first-turn.md
+source_file: pages/_quests/0000/ouroboros-loop-01-the-first-turn.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/ouroboros-loop-01-the-first-turn.md
 tags:
 - '0000'
 - github-actions
@@ -74,7 +76,7 @@ tags:
 - automation
 - loops
 - gamified-learning
-title: Forge the repository and clone it
+title: 'The First Turn: A Loop That Checks One Scroll a Day'
 ---
 *Every great engine begins as a wheel turning once. Before golems, before gates, before sealed evidence — there is a humbler rite: a loop that wakes each morning, picks **one** scroll from the shelf, tests whether its spell still casts, and writes the verdict in a ledger it never lies to. Build that today, in an hour, with nothing but a repository and a scheduled workflow — and you will hold the seed that the entire quest-perfection engine grew from.*
 
@@ -320,8 +322,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- 🚦 [Chapter II — The Warden's Gate](/quests/0101/ouroboros-loop-02-the-wardens-gate/): your loop gets a kill switch, least privilege, and its first hard lesson about permissions
-- 👑 Campaign hub: [Epic Quest: The Ouroboros Loop](/quests/codex/ouroboros-loop/)
+- 🚦 [[it-journey/pages/_quests/0101/ouroboros-loop-02-the-wardens-gate|Chapter II — The Warden's Gate]]: your loop gets a kill switch, least privilege, and its first hard lesson about permissions
+- 👑 Campaign hub: [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]]
 
 ## 📚 Resource Codex
 
@@ -333,4 +335,4 @@ graph LR
 
 *Structured wiki-links connect this quest to the IT-Journey knowledge graph.*
 
-**Campaign hub:** [[Epic Quest: The Ouroboros Loop]] **Next chapter:** [[The Warden's Gate]] **Level home:** [[Level 0000 - Foundation & Init World]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/ouroboros-loop|Epic Quest: The Ouroboros Loop]] **Next chapter:** [[The Warden's Gate]] **Level home:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]]

@@ -14,7 +14,9 @@ permalink: /fr/docs/development/testing/
 preview: /images/previews/testing.png
 sidebar:
   nav: docs
-source_file: testing.md
+source_file: fr/docs/development/testing.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/testing.md
 tags:
 - testing
 - ci-cd
@@ -24,6 +26,7 @@ translated_from_sha: 61cc694046fe
 translation_of: pages/_docs/development/testing.md
 translation_source_url: /docs/development/testing/
 ---
+
 # Tests
 
 Le thème Zer0-Mistakes inclut une suite de tests complète couvrant la validation préalable, les fonctionnalités de base, la préparation au déploiement, les contrôles de qualité et les tests de régression visuelle Playwright.

@@ -3,9 +3,12 @@ description: Browse all tags and discover content by topic
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /tags/
-source_file: tags.md
+source_file: pages/tags.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/tags.md
 title: Tags
 ---
+
 <!--
   ===================================================================
   TAGS INDEX PAGE - Browse all tags

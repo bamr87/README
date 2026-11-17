@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 0110 Database Mastery quest line
 skill_focus: data-engineering
-source_file: database-fundamentals.md
+source_file: pages/_quests/0110/database-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/database-fundamentals.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Relational Model & ACID'
 tags:
 - '0110'
@@ -85,7 +87,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: Install PostgreSQL with Homebrew
+title: 'Database Fundamentals: The Relational Model and ACID'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -452,17 +454,17 @@ Now an author who moves countries is updated in exactly one row. No anomalies, n
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [SQL Mastery](/quests/0110/sql-mastery/) - SELECT, JOIN, and transactions in depth
+- 🎯 [[it-journey/pages/_quests/0110/sql-mastery|SQL Mastery]] - SELECT, JOIN, and transactions in depth
 
 **Explore Side Adventures**:
-- ⚔️ [Data Modeling](/quests/0110/data-modeling/) - ER diagrams and schema design
-- ⚔️ [Query Optimization](/quests/0110/query-optimization/) - Make your queries fast
+- ⚔️ [[it-journey/pages/_quests/0110/data-modeling|Data Modeling]] - ER diagrams and schema design
+- ⚔️ [[it-journey/pages/_quests/0110/query-optimization|Query Optimization]] - Make your queries fast
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [SQL Mastery](/quests/0110/sql-mastery/)  
-**🏗️ System Engineer**: Explore [Backup and Recovery](/quests/0110/backup-recovery/)  
-**📊 Data Scientist**: Advance to [Data Modeling](/quests/0110/data-modeling/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/sql-mastery|SQL Mastery]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/backup-recovery|Backup and Recovery]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/0110/data-modeling|Data Modeling]]
 
 ## 📚 Resources
 
@@ -491,8 +493,8 @@ Now an author who moves countries is updated in exactly one row. No anomalies, n
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] · [[Data Modeling: Schema Design and Database Relationships]] · [[Database Security: Access Control and Data Encryption]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[SQL Mastery: Query Language Proficiency for Data Professionals]] · [[it-journey/pages/_quests/0110/data-modeling|Data Modeling: Schema Design and Database Relationships]] · [[it-journey/pages/_quests/0110/database-security|Database Security: Access Control and Data Encryption]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>
 </invoke>

@@ -12,13 +12,16 @@ prerequisites: []
 preview: /images/previews/installation.png
 sidebar:
   nav: docs
-source_file: installation.md
+source_file: pages/_docs/installation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/installation.md
 tags:
 - installation
 - prerequisites
 - docker
 title: Installation
 ---
+
 # Installation
 
 Get up and running with Zer0-Mistakes in minutes using our Docker-first approach.
@@ -102,9 +105,9 @@ docker-compose exec jekyll jekyll doctor
 
 ## Next Steps
 
-- [Docker Development Guide](/docs/docker/) - Learn Docker commands and workflows
-- [Jekyll Configuration](/docs/jekyll/) - Customize your site
-- [Troubleshooting](/docs/troubleshooting/) - Common issues and solutions
+- [[zer0-mistakes/pages/_docs/docker/index|Docker Development Guide]] - Learn Docker commands and workflows
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Configuration]] - Customize your site
+- [[zer0-mistakes/pages/_docs/troubleshooting|Troubleshooting]] - Common issues and solutions
 
 ## Technical Reference
 
@@ -115,8 +118,8 @@ For contributor-level details (installer architecture, profile system, AI-powere
 
 ## See also
 
-- [[Docker]]
-- [[Ruby]]
-- [[Jekyll]]
-- [[front-matter]]
-- [[Customization]]
+- [[zer0-mistakes/pages/_docs/docker/index|Docker]]
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/pages/_docs/front-matter|front-matter]]
+- [[zer0-mistakes/pages/_docs/customization/index|Customization]]
