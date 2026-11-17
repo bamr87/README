@@ -200,6 +200,10 @@ def summarize_concepts(concepts: List[Concept], notes: Dict[str, Note],
                                    max_tokens=400)
             except AIError as exc:
                 print(f"[brain] AI summary skipped for {concept.slug}: {exc}")
+                if "budget exhausted" in str(exc):
+                    # The build-level budget is shared with the cards and the
+                    # apex, which run after this: stop asking.
+                    budget = spent
             else:
                 entry = cache[concept.slug] = {"members": print_key, "text": text.strip(),
                                                "model": ai.model}

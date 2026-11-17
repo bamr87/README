@@ -109,7 +109,7 @@ class BrainConfig:
     concept_min_pages: int = 5
     concept_min_links: int = 3
     concept_max: int = 150
-    ai_budget: int = 25
+    ai_budget: int = 10
     concept_stop: List[str] = field(default_factory=list)
     concept_aliases: Dict[str, str] = field(default_factory=dict)
 

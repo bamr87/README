@@ -75,14 +75,16 @@ collect:
 #   concept_min_pages - pages that must carry a tag before it becomes a concept
 #   concept_min_links - unresolved [[wikilinks]] needed to create a stub concept
 #   concept_max       - cap on concept notes, most-connected first
-#   ai_budget         - concept summaries the AI may refresh per build
+#   ai_budget         - concept summaries the AI may refresh per build; these
+#                       calls come out of the build-wide CONTEXT_AI_* budget
+#                       before the cards and the apex, so keep it small
 #   concept_stop      - tags that describe a page's status, not its subject
 #   concept_aliases   - spelling variants folded into one concept
 brain:
   concept_min_pages: 5
   concept_min_links: 3
   concept_max: 150
-  ai_budget: 25
+  ai_budget: 10
   concept_stop:
     - documentation
     - draft

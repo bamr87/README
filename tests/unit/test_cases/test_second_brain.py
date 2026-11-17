@@ -284,6 +284,23 @@ class TestBrain(unittest.TestCase):
             docker = root / "docs" / "brain" / "concepts" / "docker.md"
             self.assertIn("A grounded summary.", docker.read_text())
 
+    def test_spent_build_budget_stops_concept_summaries(self):
+        class Spent:
+            model = "spent"
+            calls = 0
+
+            def complete(self, prompt, max_tokens=0):
+                Spent.calls += 1
+                raise brain.AIError("AI budget exhausted (CONTEXT_AI_MAX_CALLS=0)")
+
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            self._docs(root)
+            self._generate(root, ai=Spent())
+            self.assertEqual(Spent.calls, 1)
+            docker = root / "docs" / "brain" / "concepts" / "docker.md"
+            self.assertIn("cover this subject", docker.read_text())
+
     def test_own_notes_join_the_vault(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

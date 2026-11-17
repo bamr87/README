@@ -13,7 +13,7 @@ comes last so it covers every note the build wrote.
 
 from typing import Dict, Optional
 
-from .ai import BaseProvider, get_provider
+from .ai import BaseProvider, get_provider, reset_budget
 from .brain import generate as generate_brain
 from .assembler import (
     build_apex, fleet_table, inject_auto_span, write_context_tree,
@@ -35,6 +35,7 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     """Run the full pipeline; returns a summary dict."""
     registry = registry or load_registry()
     provider: Optional[BaseProvider] = get_provider(ai_spec)
+    reset_budget()
     enrichment = f"ai:{provider.name}" if provider else "heuristic"
 
     def hooks(stage: str) -> None:
@@ -73,6 +74,13 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     cards = {name: build_card(facts, ai=provider)
              for name, facts in facts_by_name.items()}
     print(f"[synthesize] {len(cards)} cards ({enrichment})")
+    # Cards that asked for AI but fell back to the heuristic essence (budget
+    # exhausted or provider error); each card's frontmatter records it too.
+    ai_skipped = sorted(name for name, card in cards.items()
+                        if provider and "\nenrichment: heuristic\n" in card)
+    if ai_skipped:
+        print(f"[synthesize] {len(ai_skipped)} card(s) fell back to heuristic: "
+              + ", ".join(ai_skipped))
     hooks("post_synthesize")
 
     apex_md = build_apex(registry, facts_by_name, ai=provider)
@@ -103,4 +111,5 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
         "terms": len(index["terms"]),
         "nav_pages": fleet_nav["counts"]["pages"],
         "graph": graph["counts"],
+        "ai_skipped": ai_skipped,
     }
