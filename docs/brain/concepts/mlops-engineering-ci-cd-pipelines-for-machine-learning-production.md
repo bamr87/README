@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'MLOps Engineering: CI/CD Pipelines for Machine Learning Production'
+category: brain
 generated: true
 kind: concept
 pages: 5

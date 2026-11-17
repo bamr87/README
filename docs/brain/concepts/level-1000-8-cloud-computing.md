@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 1000 (8) - Cloud Computing
+category: brain
 generated: true
 kind: concept
 pages: 6

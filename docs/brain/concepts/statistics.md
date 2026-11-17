@@ -1,6 +1,7 @@
 ---
 aliases:
 - statistics
+category: brain
 generated: true
 kind: concept
 pages: 11

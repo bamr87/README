@@ -1,6 +1,7 @@
 ---
 aliases:
 - shortcuts
+category: brain
 generated: true
 kind: concept
 pages: 7

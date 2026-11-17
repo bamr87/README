@@ -2,6 +2,7 @@
 aliases:
 - Collaboration
 - collaboration
+category: brain
 generated: true
 kind: concept
 pages: 8

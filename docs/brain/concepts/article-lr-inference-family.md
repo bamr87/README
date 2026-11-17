@@ -1,6 +1,7 @@
 ---
 aliases:
 - article:lr-inference-family
+category: brain
 generated: true
 kind: concept
 pages: 5

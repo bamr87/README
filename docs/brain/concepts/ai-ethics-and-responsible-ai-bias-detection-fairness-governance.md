@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'AI Ethics and Responsible AI: Bias Detection, Fairness & Governance'
+category: brain
 generated: true
 kind: concept
 pages: 4

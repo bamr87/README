@@ -2,6 +2,7 @@
 aliases:
 - Search
 - search
+category: brain
 generated: true
 kind: concept
 pages: 17

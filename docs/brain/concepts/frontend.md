@@ -1,6 +1,7 @@
 ---
 aliases:
 - frontend
+category: brain
 generated: true
 kind: concept
 pages: 20

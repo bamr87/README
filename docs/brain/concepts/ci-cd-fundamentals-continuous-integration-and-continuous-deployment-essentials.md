@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials'
+category: brain
 generated: true
 kind: concept
 pages: 7

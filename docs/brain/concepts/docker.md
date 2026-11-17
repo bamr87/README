@@ -1,6 +1,7 @@
 ---
 aliases:
 - docker
+category: brain
 generated: true
 kind: concept
 pages: 58

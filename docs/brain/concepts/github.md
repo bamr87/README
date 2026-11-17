@@ -2,6 +2,7 @@
 aliases:
 - GitHub
 - github
+category: brain
 generated: true
 kind: concept
 pages: 16

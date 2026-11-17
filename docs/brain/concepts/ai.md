@@ -1,6 +1,7 @@
 ---
 aliases:
 - ai
+category: brain
 generated: true
 kind: concept
 pages: 40

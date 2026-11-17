@@ -2,6 +2,7 @@
 aliases:
 - Jekyll
 - jekyll
+category: brain
 generated: true
 kind: concept
 pages: 126

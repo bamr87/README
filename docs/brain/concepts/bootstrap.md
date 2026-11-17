@@ -2,6 +2,7 @@
 aliases:
 - Bootstrap
 - bootstrap
+category: brain
 generated: true
 kind: concept
 pages: 34

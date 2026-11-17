@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 1010 - Monitoring & Observability
+category: brain
 generated: true
 kind: concept
 pages: 6

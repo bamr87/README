@@ -1,6 +1,7 @@
 ---
 aliases:
 - agentic-ai
+category: brain
 generated: true
 kind: concept
 pages: 32

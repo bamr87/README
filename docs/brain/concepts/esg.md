@@ -1,6 +1,7 @@
 ---
 aliases:
 - esg
+category: brain
 generated: true
 kind: concept
 pages: 7

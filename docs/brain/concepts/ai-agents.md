@@ -1,6 +1,7 @@
 ---
 aliases:
 - ai-agents
+category: brain
 generated: true
 kind: concept
 pages: 8

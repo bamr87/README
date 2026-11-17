@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 0001 - Web Fundamentals
+category: brain
 generated: true
 kind: concept
 pages: 12

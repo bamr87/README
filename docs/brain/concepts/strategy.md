@@ -1,6 +1,7 @@
 ---
 aliases:
 - strategy
+category: brain
 generated: true
 kind: concept
 pages: 12

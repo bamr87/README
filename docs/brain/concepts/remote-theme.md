@@ -1,6 +1,7 @@
 ---
 aliases:
 - remote-theme
+category: brain
 generated: true
 kind: concept
 pages: 16

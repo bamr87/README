@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 0101 - CI/CD & DevOps
+category: brain
 generated: true
 kind: concept
 pages: 9

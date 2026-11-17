@@ -2,6 +2,7 @@
 aliases:
 - Liquid
 - liquid
+category: brain
 generated: true
 kind: concept
 pages: 10

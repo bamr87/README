@@ -1,6 +1,7 @@
 ---
 aliases:
 - article:pacing-and-time-management
+category: brain
 generated: true
 kind: concept
 pages: 7

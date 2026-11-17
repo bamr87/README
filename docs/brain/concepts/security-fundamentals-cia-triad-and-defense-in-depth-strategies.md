@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'Security Fundamentals: CIA Triad and Defense in Depth Strategies'
+category: brain
 generated: true
 kind: concept
 pages: 5

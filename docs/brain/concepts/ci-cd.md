@@ -3,6 +3,7 @@ aliases:
 - CI/CD
 - ci-cd
 - cicd
+category: brain
 generated: true
 kind: concept
 pages: 41

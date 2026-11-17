@@ -1,6 +1,7 @@
 ---
 aliases:
 - responsive-design
+category: brain
 generated: true
 kind: concept
 pages: 5

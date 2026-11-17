@@ -1,6 +1,7 @@
 ---
 aliases:
 - development
+category: brain
 generated: true
 kind: concept
 pages: 29

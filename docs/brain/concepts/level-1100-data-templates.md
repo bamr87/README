@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 1100 - Data & Templates
+category: brain
 generated: true
 kind: concept
 pages: 7

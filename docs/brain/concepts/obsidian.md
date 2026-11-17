@@ -2,6 +2,7 @@
 aliases:
 - Obsidian
 - obsidian
+category: brain
 generated: true
 kind: concept
 pages: 29

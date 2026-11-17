@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'The Agentic Codex: GH-600 Study Hub'
+category: brain
 generated: true
 kind: concept
 pages: 27

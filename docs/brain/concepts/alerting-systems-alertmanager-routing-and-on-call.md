@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'Alerting Systems: Alertmanager, Routing, and On-Call'
+category: brain
 generated: true
 kind: concept
 pages: 4

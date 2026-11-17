@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 1101 - Machine Learning & AI
+category: brain
 generated: true
 kind: concept
 pages: 9

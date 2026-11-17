@@ -1,6 +1,7 @@
 ---
 aliases:
 - onboarding
+category: brain
 generated: true
 kind: concept
 pages: 6

@@ -3,6 +3,7 @@ aliases:
 - Version Control
 - version control
 - version-control
+category: brain
 generated: true
 kind: concept
 pages: 14

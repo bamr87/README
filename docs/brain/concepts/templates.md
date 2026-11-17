@@ -1,6 +1,7 @@
 ---
 aliases:
 - templates
+category: brain
 generated: true
 kind: concept
 pages: 10

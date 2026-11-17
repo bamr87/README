@@ -1,6 +1,7 @@
 ---
 aliases:
 - quickstart
+category: brain
 generated: true
 kind: concept
 pages: 15

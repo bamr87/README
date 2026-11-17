@@ -1,6 +1,7 @@
 ---
 aliases:
 - writing
+category: brain
 generated: true
 kind: concept
 pages: 8

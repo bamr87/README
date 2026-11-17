@@ -2,6 +2,7 @@
 aliases:
 - MathJax
 - mathjax
+category: brain
 generated: true
 kind: concept
 pages: 5

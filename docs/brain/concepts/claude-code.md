@@ -1,6 +1,7 @@
 ---
 aliases:
 - claude-code
+category: brain
 generated: true
 kind: concept
 pages: 9

@@ -17,5 +17,5 @@ coverage: listed
 
 ## Placement
 
-- A note is one Markdown file with `title`, `kind: note` and `tags` in its front matter.
+- A note is one Markdown file with `title`, `kind: note`, `category: notes` and `tags` in its front matter.
 - Knowledge owned by one repository belongs in that repository, not here.

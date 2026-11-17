@@ -1,6 +1,7 @@
 ---
 aliases:
 - article:blind-review-method
+category: brain
 generated: true
 kind: concept
 pages: 5

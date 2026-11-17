@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'Data Quality Engineering: Testing, Validation & Monitoring Frameworks'
+category: brain
 generated: true
 kind: concept
 pages: 5

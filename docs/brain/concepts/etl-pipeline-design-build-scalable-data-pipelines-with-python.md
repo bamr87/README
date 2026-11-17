@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'ETL Pipeline Design: Build Scalable Data Pipelines with Python'
+category: brain
 generated: true
 kind: concept
 pages: 5

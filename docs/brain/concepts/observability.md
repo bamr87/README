@@ -1,6 +1,7 @@
 ---
 aliases:
 - observability
+category: brain
 generated: true
 kind: concept
 pages: 11

@@ -2,6 +2,7 @@
 aliases:
 - machine learning
 - machine-learning
+category: brain
 generated: true
 kind: concept
 pages: 8

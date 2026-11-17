@@ -1,6 +1,7 @@
 ---
 aliases:
 - release
+category: brain
 generated: true
 kind: concept
 pages: 8

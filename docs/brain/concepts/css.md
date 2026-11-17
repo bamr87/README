@@ -1,6 +1,7 @@
 ---
 aliases:
 - css
+category: brain
 generated: true
 kind: concept
 pages: 17

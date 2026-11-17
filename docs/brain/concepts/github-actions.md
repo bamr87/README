@@ -2,6 +2,7 @@
 aliases:
 - GitHub Actions
 - github-actions
+category: brain
 generated: true
 kind: concept
 pages: 26

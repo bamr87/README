@@ -1,6 +1,7 @@
 ---
 aliases:
 - getting-started
+category: brain
 generated: true
 kind: concept
 pages: 13

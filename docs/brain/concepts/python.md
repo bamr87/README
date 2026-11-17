@@ -1,6 +1,7 @@
 ---
 aliases:
 - python
+category: brain
 generated: true
 kind: concept
 pages: 27

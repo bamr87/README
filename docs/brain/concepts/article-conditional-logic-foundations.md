@@ -1,6 +1,7 @@
 ---
 aliases:
 - article:conditional-logic-foundations
+category: brain
 generated: true
 kind: concept
 pages: 6

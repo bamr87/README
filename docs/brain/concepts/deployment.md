@@ -1,6 +1,7 @@
 ---
 aliases:
 - deployment
+category: brain
 generated: true
 kind: concept
 pages: 28

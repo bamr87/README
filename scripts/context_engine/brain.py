@@ -213,7 +213,8 @@ def summarize_concepts(concepts: List[Concept], notes: Dict[str, Note],
 
 
 def _front(**meta) -> str:
-    head = yaml.dump({**meta, "generated": True}, sort_keys=True, allow_unicode=True,
+    # `category` is part of the corpus front matter contract (check_frontmatter.py).
+    head = yaml.dump({"category": "brain", **meta, "generated": True}, sort_keys=True, allow_unicode=True,
                      default_flow_style=False)
     return f"---\n{head}---\n{GENERATED_NOTICE}\n\n"
 
@@ -520,7 +521,8 @@ def save_note(title: str, body: str, tags: Optional[List[str]] = None,
     path = notes_dir / f"{slugify(title)}.md"
     if path.exists():
         raise ValueError(f"{path.name} already exists: edit it instead")
-    meta = {"title": title, "kind": "note", "tags": ["brain/note", *(tags or [])]}
+    meta = {"title": title, "kind": "note", "category": "notes",
+            "tags": ["brain/note", *(tags or [])]}
     if sources:
         meta["sources"] = sources
     head = yaml.dump(meta, sort_keys=False, allow_unicode=True, default_flow_style=False)

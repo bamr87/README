@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 0110 - Database Mastery
+category: brain
 generated: true
 kind: concept
 pages: 8

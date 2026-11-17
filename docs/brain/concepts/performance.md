@@ -2,6 +2,7 @@
 aliases:
 - Performance
 - performance
+category: brain
 generated: true
 kind: concept
 pages: 11

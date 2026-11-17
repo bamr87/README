@@ -1,6 +1,7 @@
 ---
 aliases:
 - open-source
+category: brain
 generated: true
 kind: concept
 pages: 13

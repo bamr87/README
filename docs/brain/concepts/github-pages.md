@@ -2,6 +2,7 @@
 aliases:
 - Github Pages
 - github-pages
+category: brain
 generated: true
 kind: concept
 pages: 41

@@ -2,6 +2,7 @@
 aliases:
 - data science
 - data-science
+category: brain
 generated: true
 kind: concept
 pages: 18

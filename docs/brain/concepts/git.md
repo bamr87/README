@@ -2,6 +2,7 @@
 aliases:
 - Git
 - git
+category: brain
 generated: true
 kind: concept
 pages: 27

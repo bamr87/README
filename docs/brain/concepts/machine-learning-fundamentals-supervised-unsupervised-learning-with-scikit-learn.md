@@ -1,6 +1,7 @@
 ---
 aliases:
 - 'Machine Learning Fundamentals: Supervised & Unsupervised Learning with Scikit-Learn'
+category: brain
 generated: true
 kind: concept
 pages: 5

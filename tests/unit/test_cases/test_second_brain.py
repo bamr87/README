@@ -239,6 +239,9 @@ class TestBrain(unittest.TestCase):
             self.assertEqual(summary["stubs"], 1)
             self.assertIn("[[p/a|p/a]]", (concepts / "docker.md").read_text())
             self.assertIn("brain/stub", (concepts / "ghost.md").read_text())
+            for note in (root / "docs" / "brain").rglob("*.md"):
+                meta = split_note(note.read_text())[0]
+                self.assertTrue({"title", "tags", "category"} <= set(meta), note.name)
 
     def test_stub_answers_the_link_it_came_from(self):
         with tempfile.TemporaryDirectory() as temp:

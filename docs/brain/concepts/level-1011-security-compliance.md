@@ -1,6 +1,7 @@
 ---
 aliases:
 - Level 1011 - Security & Compliance
+category: brain
 generated: true
 kind: concept
 pages: 6

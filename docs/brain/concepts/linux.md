@@ -1,6 +1,7 @@
 ---
 aliases:
 - linux
+category: brain
 generated: true
 kind: concept
 pages: 229

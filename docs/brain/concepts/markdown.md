@@ -1,6 +1,7 @@
 ---
 aliases:
 - markdown
+category: brain
 generated: true
 kind: concept
 pages: 16

@@ -1,6 +1,7 @@
 ---
 aliases:
 - beginner
+category: brain
 generated: true
 kind: concept
 pages: 21

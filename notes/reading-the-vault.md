@@ -1,6 +1,7 @@
 ---
 title: Reading the vault
 kind: note
+category: notes
 tags:
   - brain/note
 ---

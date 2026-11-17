@@ -1,6 +1,7 @@
 ---
 aliases:
 - article:lr-assumption-family
+category: brain
 generated: true
 kind: concept
 pages: 6

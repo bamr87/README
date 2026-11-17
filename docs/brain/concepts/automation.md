@@ -2,6 +2,7 @@
 aliases:
 - Automation
 - automation
+category: brain
 generated: true
 kind: concept
 pages: 71
