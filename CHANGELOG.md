@@ -1,5 +1,50 @@
 # Changelog
 
+## [0.3.0](https://github.com/bamr87/README/compare/v0.2.2...v0.3.0) (2026-11-18)
+
+
+### Added
+
+* **engine:** collect the fleet into an Obsidian vault with a generated second brain ([e9b547e](https://github.com/bamr87/README/commit/e9b547e971c02f55d6f3174394238953e799e3b7))
+* **engine:** Obsidian vault and second brain for the fleet's docs ([be7a412](https://github.com/bamr87/README/commit/be7a412b912dae23a08f3d53d548402d418177e2))
+* **mcp:** add --version and --healthcheck flags to the stdio server ([771f7bb](https://github.com/bamr87/README/commit/771f7bba6f8e9856e4929ea561f0f92fcbab46ce))
+* **mcp:** add --version and --healthcheck flags to the stdio server ([82969d5](https://github.com/bamr87/README/commit/82969d5fbac7ea5814c9e9cfd40a3d45a5428f46)), closes [#67](https://github.com/bamr87/README/issues/67)
+* **mcp:** add get_doc to read one indexed corpus page ([c0f368c](https://github.com/bamr87/README/commit/c0f368ca5ff2642b104031eabb9dca38afecd053))
+* **mcp:** add get_doc to read one indexed corpus page ([507baf1](https://github.com/bamr87/README/commit/507baf17fba31d598aa61611bd500dcb0728a5ca)), closes [#59](https://github.com/bamr87/README/issues/59)
+
+
+### Fixed
+
+* **brain:** give generated and hand-written notes a category ([b877ac2](https://github.com/bamr87/README/commit/b877ac27f856dcb87f3b49ea7d4316d1e1a04af7))
+* **context-engine:** bound AI retries and add a per-build AI budget ([86205f9](https://github.com/bamr87/README/commit/86205f9f0db12fb0e1f4c2a824132ba2ba503727))
+* **context-engine:** bound AI retries and add a per-build AI budget ([fe5870c](https://github.com/bamr87/README/commit/fe5870cdb2bc45d26188c79a9371fde0ef8061fd)), closes [#54](https://github.com/bamr87/README/issues/54)
+* **context-engine:** screen untrusted facts and AI output at build ([8c22b8b](https://github.com/bamr87/README/commit/8c22b8b15fba8f0669fe2987cd5a892d77bc7580)), closes [#52](https://github.com/bamr87/README/issues/52)
+* **context-engine:** screen untrusted upstream docs at ingest and build ([6ecfc1c](https://github.com/bamr87/README/commit/6ecfc1cf629e442d44e28c573aaa57983d94af1c))
+* **crawl:** fail on unfetchable repos, validate clone targets, drop aggregate.py ([6dfcf70](https://github.com/bamr87/README/commit/6dfcf70ee2367a8a6fe1114ddf0d3e25be52ed57))
+* **crawl:** fail on unfetchable repos, validate clone targets, drop aggregate.py ([c31972f](https://github.com/bamr87/README/commit/c31972f06d36d3b05fcb769329961931d689c1f8)), closes [#55](https://github.com/bamr87/README/issues/55)
+* **ingest:** drop hidden carriers from the corpus at ingest ([18c4a98](https://github.com/bamr87/README/commit/18c4a982b77e3ca79c88f2b62ffe1aa5392fdb34)), closes [#52](https://github.com/bamr87/README/issues/52)
+* **ingest:** leave no bare block marker where a comment stood ([0c51623](https://github.com/bamr87/README/commit/0c51623c1c0b3acea32f0fd72625ffc02191a7ec))
+* **mcp:** confine tool arguments to the context tree ([4de80dd](https://github.com/bamr87/README/commit/4de80dd3b05a6069977f41b651280fbac69d9fdb))
+* **mcp:** confine tool arguments to the context tree ([82233f6](https://github.com/bamr87/README/commit/82233f60e09e70d25895487908d305a70aab3231)), closes [#51](https://github.com/bamr87/README/issues/51)
+* **mcp:** tell clients that results quote untrusted upstream docs ([b8e8b49](https://github.com/bamr87/README/commit/b8e8b498ccb6e2e3cc5c1738cd400e23a9342a59)), closes [#52](https://github.com/bamr87/README/issues/52)
+* **security:** screen the crawled corpus for secrets, keep provider keys out of hooks ([614378a](https://github.com/bamr87/README/commit/614378a5a8e8879fe1313e346395f1f851485a96))
+* **security:** screen the crawled corpus for secrets, keep provider keys out of hooks ([17d9c45](https://github.com/bamr87/README/commit/17d9c45f54ce7a7c753eaaf6243b789df362dc4c))
+* **survey:** match a --local checkout to its fleet entry by origin remote ([83df39d](https://github.com/bamr87/README/commit/83df39da6b14f6b102c8ab31e167b285f01f44d1))
+* **survey:** match a --local checkout to its fleet entry by origin remote ([d2cb720](https://github.com/bamr87/README/commit/d2cb720fbc6811ca5cacc93d0ac88617a7f01b62)), closes [#72](https://github.com/bamr87/README/issues/72)
+* **survey:** match a monorepo package by its directory name under --local ([baa7a78](https://github.com/bamr87/README/commit/baa7a78e12b5cfc1e16aa15a2a1c71dd81bb6c8f))
+* **tests:** run the docs fixers in the test's own directory ([9fd8356](https://github.com/bamr87/README/commit/9fd83562fc9f07751d4120d32dbc7aaec02eb23f))
+
+
+### Documentation
+
+* **community:** seed SECURITY, CONTRIBUTING and the PR template from the community kit ([fec2d5d](https://github.com/bamr87/README/commit/fec2d5d32e4ff904d6156409417da8602b5e494f)), closes [#56](https://github.com/bamr87/README/issues/56)
+* **constitution:** state the missions in §1 (amendment 0002) ([f9e1e5d](https://github.com/bamr87/README/commit/f9e1e5dd5bec3663ceaf981dbf6303f846f22635))
+* **constitution:** state the missions in §1 (amendment 0002) ([1ef3076](https://github.com/bamr87/README/commit/1ef3076b21344924a973af78b9c88a3fb9acf0b8))
+* **prd:** give requirements stable FR/NFR ids, record the survey, list the gates ([5fd62ee](https://github.com/bamr87/README/commit/5fd62eee7dafe2e08054972e55ef3cf837088963)), closes [#56](https://github.com/bamr87/README/issues/56)
+* regenerate navigation after the missions amendment ([2055bec](https://github.com/bamr87/README/commit/2055becbef384257bda124e79e3f66b144f0d0a8))
+* seed the community kit files and give the PRD stable requirement ids ([4924dec](https://github.com/bamr87/README/commit/4924decee253c7aadc71d94b97cb16a984faef7a))
+* **tests:** leave the survey coverage line to [#74](https://github.com/bamr87/README/issues/74) ([eceecd3](https://github.com/bamr87/README/commit/eceecd33b44a4e99176f93d6e2f44e3f2b30b4ee)), closes [#72](https://github.com/bamr87/README/issues/72)
+
 ## [0.2.2](https://github.com/bamr87/README/compare/v0.2.1...v0.2.2) (2026-11-13)
 
 
