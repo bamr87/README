@@ -51,5 +51,8 @@ printf '%s\n%s\n%s\n' \
 files via `scripts/context_engine/query.py` — one code path for the CLI and MCP surfaces.
 - `get_nav` is the cheap way to locate a document: it answers "what does this
 corpus contain, and where does it live" from one JSON tree instead of a directory crawl. Section titles are indexed too, so `search_context` ranks the navigation trees alongside cards and facts.
-- Errors inside a tool return an `isError` tool result (per MCP), not a protocol error; unknown methods return JSON-RPC `-32601`.
+- Errors inside a tool return an `isError` tool result (per MCP), not a protocol error; unknown methods return JSON-RPC `-32601`. An unexpected failure answers with a generic `tool <name> failed: internal error` and writes the traceback to the server's stderr, so absolute paths never reach the client.
+- **Confinement.** Tool arguments never name an arbitrary file. `get_project` accepts only a project listed in the context index and `get_nav` only a corpus listed in the fleet navigation manifest; anything else is `isError: "unknown project"` / `"unknown corpus"` before any file is opened. Underneath, `query.py` refuses any card, fact or nav name that is not a plain file stem resolving inside its `context/` directory, which also covers the CLI. `get_schema` serves a `SCHEMA.md` only when the resolved path is inside the repo (`Path.is_relative_to`, not a string prefix).
+- **Bounds.** Out-of-range integers are clamped to the advertised schema, not rejected: `search_context` `limit` to 1–25 and `get_nav` `depth` to 1–10.
+- **Protocol version.** `initialize` returns the client's `protocolVersion` when it is one the server supports (`2024-11-05`, `2025-03-26`, `2025-06-18`, `2025-11-25`), and otherwise the server's own (`2025-06-18`).
 - If the pyramid has not been built yet, every tool answers with a hint to run the engine rather than crashing.

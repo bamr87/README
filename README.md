@@ -74,25 +74,27 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 | 1. Aggregate | `_data/projects.yml` → `repos.txt` | `docs/` corpus (L3) | `scripts/aggregate.sh` |
 | 2. Process | `raw_docs/` | `docs/{project}/` + frontmatter | `scripts/process.py` |
 | 3. Validate | `docs/` | reports + in-place fixes | `scripts/run_doc_checks.sh` |
-| 4. Index | `docs/` | `docs/docs_index.json` | `scripts/generate_docs_index.py` |
+| 4. Index | `docs/` | `docs/docs_index.json`, `docs/results/docs_quality_report.json` | `scripts/generate_docs_index.py`, `scripts/generate_docs_report.py` |
 | 5. Navigate | `docs/` + registry `navigation:` | `nav.yml`, `context/nav/`, `docs/browse/` | `scripts/context_engine/navigator.py` |
 | 6. Distill | corpus + registry + nav | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
 | 7. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
 
 Ingest normalizes as it writes: upstream `icon:` frontmatter is mapped onto bundled Material icons (`scripts/fix_frontmatter_icons.py`) and soft-wrapped prose is unwrapped (`tools/unwrap-prose.py`), so each crawled page lands in a state the navigation and the `markdown-oneline` gate already accept.
 
+Ingest also screens for secrets (`scripts/context_engine/redact.py`): a credential committed upstream by mistake (a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key) is replaced with `[REDACTED:<kind>]`, listed in `docs/results/secret_screen.json` without its value, and the crawl fails before it commits, so it never reaches the corpus, the site, AI prompts or MCP answers. Documentation placeholders such as `ghp_yourToken` pass.
+
 The engine (`scripts/context_engine/`) runs **extract → navigate → synthesize → assemble → index**, firing hooks from [`hooks.d/`](hooks.d/README.md) at each stage. Enrichment is provider-agnostic: with an Anthropic credential (`ANTHROPIC_API_KEY`, or Claude Code OAuth via `CLAUDE_CODE_OAUTH_TOKEN` / `ANTHROPIC_AUTH_TOKEN`) or an xAI one (`XAI_API_KEY` / `GROK_API_KEY`) set, cards and the apex get AI-distilled prose; with no key the build is fully heuristic and deterministic. Rebuilds are diff-stable — outputs carry corpus fingerprints, not timestamps.
 
 ## Continuous evolution
 
-- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it.
+- **`aggregate-docs.yaml`** (cron + manual) re-crawls the fleet, rebuilds the pyramid, and commits the result — the context grows without anyone editing it. Setting the repository variable `AGGREGATE_DOCS_ENABLED` to `false` pauses the cron without a commit; a manual run ignores it.
 - **`docs-quality-check.yaml`** runs on every PR: the SCHEMA drift gate, the navigation drift gate (`context_engine navcheck`), and the tracked-surfaces integrity gate (`scripts/check_tracked_surfaces.py`), then lints the corpus and posts a report. The cron runs the same three gates before it commits.
 - **`deploy-pages.yaml`** publishes `docs/` (whose home page is the generated fleet overview) to [bamr87.github.io/README](https://bamr87.github.io/README/).
-- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples.
+- **Hooks** (`hooks.d/<stage>/`) let agents and automation extend every build — the freshness report (`post_index`) and the schema gate (`post_build`) ship as examples. A hook gets an allowlisted environment, never the build's provider keys, and its output is secret-screened ([hooks.d/README.md](hooks.d/README.md)).
 
 ## The fleet documentation review
 
-The survey also consolidates the fleet's documentation for review. `python3 -m scripts.context_engine survey --workspace <dir>` reads every checkout under `<dir>` — each on whatever branch it is on, so a set of open documentation PRs can be reviewed together; a symlink to a folder inside another checkout (a monorepo package such as zer0-CMS's `packages/zer0-mistakes/`) is reviewed in place on that checkout's branch — and writes [`context/reports/docs_review.md`](context/reports/docs_review.md): every repository's documents with their one-line summaries and sizes, the words in the files every agent session loads, and each repository's standing against the hub's [documentation framework](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md) (UPS-DOC). The weekly `survey` writes the same review from the default branches beside `fleet_health`. The checks reuse the hub's generator, vendored here as `tools/docs_index.py`, so the review and each repository's own `--check` agree.
+The survey also consolidates the fleet's documentation for review. `python3 -m scripts.context_engine survey --workspace <dir>` reads every checkout under `<dir>` — each on whatever branch it is on, so a set of open documentation PRs can be reviewed together; a symlink to a folder inside another checkout (a monorepo package such as zer0-CMS's `packages/zer0-mistakes/`) is reviewed in place on that checkout's branch — and writes [`context/reports/docs_review.md`](context/reports/docs_review.md): every repository's documents with their one-line summaries and sizes, the words in the files every agent session loads, and each repository's standing against the hub's [documentation framework](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md) (UPS-DOC). The weekly `survey` writes the same review from the default branches beside `fleet_health`. `survey --local <path>` checks one working tree and writes nothing. Both `--local` and `--workspace` match a checkout to its `_data/fleet.yml` entry by its origin remote as well as by its directory name, so a clone in a directory of any name keeps its entry's kind and `link_exclude`; a monorepo package folder is matched by its directory name alone, because its origin is the containing repository's. For `--local`, `--name` picks the entry by name and `--kind` overrides the entry's kind. The checks reuse the hub's generator, vendored here as `tools/docs_index.py`, so the review and each repository's own `--check` agree.
 
 ## Growing the fleet
 
@@ -145,7 +147,7 @@ If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit th
 
 ## Contributing
 
-Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents and contributors start with [AGENTS.md](AGENTS.md).
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. [CONTRIBUTING.md](CONTRIBUTING.md) describes the workflow, and the pull-request template carries the Definition of Done: the fleet's boxes plus this repository's gates. Report a vulnerability privately, as [SECURITY.md](SECURITY.md) describes. AI agents and contributors start with [AGENTS.md](AGENTS.md).
 
 ## Changelog
 
