@@ -599,7 +599,7 @@ Dot-directories are the one place published and navigable diverge: `publish_hidd
 
 Derivation rules: titles come from frontmatter `title` → first H1 → humanized filename (a section adopts its index page's title unless the registry names it); `index.md`/`README.md` become the section's landing page; ordering is landing page → pages → subsections, each by explicit frontmatter order (`nav_order`/`order`/`weight`/`sidebar_position`) then title; a folder holding a single page is collapsed into that page; pages below `max_depth` are flattened into the deepest allowed section rather than dropped; `nav_exclude: true` in a page's frontmatter keeps it out. Output carries a content fingerprint and no timestamps, so an unchanged corpus rebuilds to an empty diff.
 
-**Query surfaces**: the same `query.py` API backs the CLI and the MCP server (`../mcp/server.py`, registered in `../.mcp.json` with tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status`).
+**Query surfaces**: the same `query.py` API backs the CLI and the MCP server (`../mcp/server.py`, registered in `../.mcp.json` with tools `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`).
 
 ---
 

@@ -6,27 +6,39 @@ the MCP server (mcp/server.py). Purely read-only: it never rebuilds.
 """
 
 import json
+import re
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, FrozenSet, List, Optional, Tuple
 
 from .config import (
-    APEX_PATH, BRAIN_DIR, CARDS_DIR, CONTEXT_INDEX_PATH, DOCS_DIR, FACTS_DIR,
-    GRAPH_PATH, MANIFEST_PATH, NAV_DIR, NAV_FLEET_PATH, ROOT,
+    APEX_PATH, BRAIN_DIR, CARDS_DIR, CONTEXT_INDEX_PATH, DOCS_DIR,
+    DOCS_INDEX_PATH, FACTS_DIR, GRAPH_PATH, MANIFEST_PATH, NAV_DIR,
+    NAV_FLEET_PATH, ROOT,
 )
 from .vault import Resolver, notes_from_graph
+
+# get_doc returns at most this many characters of a page body by default.
+DOC_MAX_CHARS = 20000
+
+# A leading YAML front matter block: `---` lines around it, the corpus contract.
+_FRONT_MATTER = re.compile(r"\A---[ \t]*\r?\n(?:.*?\r?\n)?---[ \t]*(?:\r?\n|\Z)",
+                           re.DOTALL)
+
+# docs_index.json path set, keyed by (index path, mtime, size) so a rebuild
+# while the MCP server runs is picked up without re-reading on every call.
+_DOC_PATHS_CACHE: Dict[Tuple[str, int, int], FrozenSet[str]] = {}
 
 
 class ContextMissing(RuntimeError):
     """The context tree has not been built yet."""
 
 
-def _require(path: Path) -> Path:
+def _require(path: Path,
+             fix: str = "python3 -m scripts.context_engine build") -> Path:
     if not path.is_file():
         # Never put an absolute path in the message: it can reach MCP clients.
         shown = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path.name
-        raise ContextMissing(
-            f"{shown} not found - run "
-            "`python3 -m scripts.context_engine build` first")
+        raise ContextMissing(f"{shown} not found - run `{fix}` first")
     return path
 
 
@@ -88,6 +100,78 @@ def nav_paths(node: Dict, out: Optional[List[Dict]] = None,
         else:
             nav_paths(child, out, trail + [child.get("title", "")])
     return out
+
+
+def doc_paths() -> FrozenSet[str]:
+    """Every page path listed in docs/docs_index.json, relative to docs/."""
+    index_path = _require(DOCS_INDEX_PATH, fix="python3 scripts/generate_docs_index.py")
+    stat = index_path.stat()
+    key = (str(index_path), stat.st_mtime_ns, stat.st_size)
+    paths = _DOC_PATHS_CACHE.get(key)
+    if paths is None:
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+        paths = frozenset(
+            doc["path"] for doc in index.get("documents", [])
+            if isinstance(doc, dict) and isinstance(doc.get("path"), str))
+        _DOC_PATHS_CACHE.clear()
+        _DOC_PATHS_CACHE[key] = paths
+    return paths
+
+
+def _indexed_doc(path: str) -> Path:
+    """
+    The file under docs/ for an indexed page path, or ContextMissing.
+
+    Accepts the path as get_nav and search_context give it (`<project>/...`,
+    or `docs/<project>/...` from key_docs). Anything not listed in
+    docs/docs_index.json, or resolving outside docs/ (a symlink), is refused
+    before the file is opened; the refusal never echoes a filesystem path.
+    """
+    rel = str(path or "").strip()
+    if rel.startswith("docs/"):
+        rel = rel[len("docs/"):]
+    candidate = DOCS_DIR / rel
+    if (not rel or rel not in doc_paths()
+            or not candidate.resolve().is_relative_to(DOCS_DIR.resolve())):
+        raise ContextMissing(
+            "unknown document: pass a page path listed in docs/docs_index.json "
+            "(get_nav with flat=true, or search_context key_docs)")
+    # Listed but gone: the index is older than the corpus.
+    return _require(candidate, fix="python3 scripts/generate_docs_index.py")
+
+
+def get_doc(path: str, max_chars: int = DOC_MAX_CHARS) -> Dict:
+    """
+    One indexed corpus page: its body without front matter, capped at
+    `max_chars` with an explicit truncation note, plus where it comes from.
+
+    `project` and `repo` are the registry project the page was aggregated
+    from (the first path segment), or None for this repository's own pages.
+    """
+    target = _indexed_doc(path)
+    rel = target.relative_to(DOCS_DIR).as_posix()
+    body = _FRONT_MATTER.sub("", target.read_text(encoding="utf-8", errors="replace"),
+                             count=1).lstrip("\r\n")
+    total = len(body)
+    limit = max(1, int(max_chars))
+    truncated = total > limit
+    if truncated:
+        body = (body[:limit].rstrip()
+                + f"\n\n[truncated: {limit} of {total} characters]")
+    try:
+        projects = load_index().get("projects", {})
+    except ContextMissing:
+        projects = {}
+    segment = rel.split("/", 1)[0] if "/" in rel else ""
+    info = projects.get(segment)
+    return {
+        "project": segment if info is not None else None,
+        "repo": (info or {}).get("repo"),
+        "path": f"docs/{rel}",
+        "chars": total,
+        "truncated": truncated,
+        "text": body,
+    }
 
 
 def get_manifest() -> Dict:

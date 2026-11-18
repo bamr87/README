@@ -15,7 +15,7 @@ coverage: full
 |---|---|---|---|
 | `README.md` | file | Server usage, tool reference, client registration | required |
 | `SCHEMA.md` | file | This file | required |
-| `server.py` | file | Stdio JSON-RPC MCP server (stdlib-only, read-only) | required |
+| `server.py` | file | Stdio JSON-RPC MCP server (stdlib-only, read-only); `--version` and `--healthcheck` answer and exit without the stdio loop | required |
 
 ## Placement
 
@@ -28,5 +28,6 @@ coverage: full
 - No write/mutate tools — the server stays read-only; rebuilding the
   pyramid is an explicit `python3 -m scripts.context_engine build`.
 - No tool argument joined to a filesystem path unchecked — names are
-  validated against the index/nav manifest, paths are confined with
+  validated against the index/nav manifest, document paths against
+  `docs/docs_index.json`, paths are confined with
   `Path.is_relative_to`, and tool errors never echo absolute paths.

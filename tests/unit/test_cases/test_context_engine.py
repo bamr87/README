@@ -4,21 +4,26 @@ gate, and the MCP server dispatch. Everything runs offline against tempdir
 fixtures.
 """
 
+import contextlib
 import importlib.util
+import io
 import json
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 # Add the project root to the path
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.context_engine import (  # noqa: E402
-    assembler, extractor, indexer, navigator, query, screen, synthesizer,
+    ENGINE_VERSION, assembler, extractor, indexer, navigator, query, screen,
+    synthesizer,
 )
 from scripts.context_engine.ai import (  # noqa: E402
     SYSTEM_PROMPT, MockProvider, get_provider, wrap_facts,
@@ -1170,9 +1175,10 @@ class TestMCPServer(unittest.TestCase):
         response = self._call("tools/list")
         names = {tool["name"] for tool in response["result"]["tools"]}
         self.assertEqual(names, {"list_projects", "get_project", "search_context",
-                                 "get_readme", "get_nav", "get_schema",
+                                 "get_readme", "get_nav", "get_doc", "get_schema",
                                  "context_status", "get_note", "get_neighbours",
                                  "get_hot", "vault_lint"})
+        self.assertEqual(len(response["result"]["tools"]), 12)
 
     def test_unknown_method_is_json_rpc_error(self):
         response = self._call("prompts/list")
@@ -1226,6 +1232,96 @@ class TestMCPServer(unittest.TestCase):
         projects = json.loads(response["result"]["content"][0]["text"])
         self.assertTrue(any(p["name"] == "bashcrawl" for p in projects))
 
+
+class TestMCPServerFlags(unittest.TestCase):
+    """`--version` / `--healthcheck`: answer and exit, never enter the loop."""
+
+    SERVER_PATH = PROJECT_ROOT / "mcp" / "server.py"
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_mcp_server()
+
+    def _main(self, argv):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = self.server.main(argv)
+        return code, out.getvalue()
+
+    def _healthcheck(self, manifest_text=None):
+        """Run --healthcheck against a temp manifest (None: no manifest)."""
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp, ignore_errors=True)
+        manifest_path = tmp / "context" / "index" / "manifest.json"
+        if manifest_text is not None:
+            manifest_path.parent.mkdir(parents=True)
+            manifest_path.write_text(manifest_text, encoding="utf-8")
+        with mock.patch.object(query, "MANIFEST_PATH", manifest_path):
+            code, out = self._main(["--healthcheck"])
+        self.assertEqual(len(out.splitlines()), 1, out)
+        return code, json.loads(out)
+
+    def test_version_prints_name_and_engine_version(self):
+        code, out = self._main(["--version"])
+        self.assertEqual(code, 0)
+        self.assertEqual(out, f"readme-context-engine {ENGINE_VERSION}\n")
+
+    def test_healthcheck_ok_when_this_engine_built_the_context(self):
+        code, report = self._healthcheck(json.dumps({
+            "engine_version": ENGINE_VERSION,
+            "generated_at": "2026-11-12T21:23:47+00:00"}))
+        self.assertEqual(code, 0)
+        self.assertEqual(report, {"status": "ok", "version": ENGINE_VERSION,
+                                  "generated_at": "2026-11-12T21:23:47+00:00"})
+
+    def test_healthcheck_stale_when_another_engine_built_the_context(self):
+        code, report = self._healthcheck(json.dumps({
+            "engine_version": ENGINE_VERSION + "-old",
+            "generated_at": "2026-01-01T00:00:00+00:00"}))
+        self.assertEqual(code, 0)
+        self.assertEqual(report["status"], "stale")
+        self.assertEqual(report["version"], ENGINE_VERSION)
+
+    def test_healthcheck_missing_without_a_manifest(self):
+        code, report = self._healthcheck(None)
+        self.assertEqual(code, 1)
+        self.assertEqual(report, {"status": "missing", "version": ENGINE_VERSION,
+                                  "generated_at": None})
+
+    def test_healthcheck_missing_when_the_manifest_is_not_json(self):
+        code, report = self._healthcheck("{not json")
+        self.assertEqual(code, 1)
+        self.assertEqual(report["status"], "missing")
+
+    @unittest.skipUnless(
+        (PROJECT_ROOT / "context" / "index" / "manifest.json").is_file(),
+        "context pyramid not built")
+    def test_healthcheck_over_built_context(self):
+        code, out = self._main(["--healthcheck"])
+        report = json.loads(out)
+        manifest = json.loads((PROJECT_ROOT / "context" / "index"
+                               / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(code, 0)
+        self.assertIn(report["status"], {"ok", "stale"})
+        self.assertEqual(report["generated_at"], manifest["generated_at"])
+
+    def test_cli_version_flag(self):
+        proc = subprocess.run(
+            [sys.executable, str(self.SERVER_PATH), "--version"],
+            stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=60)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertEqual(proc.stdout, f"readme-context-engine {ENGINE_VERSION}\n")
+
+    def test_cli_without_flags_still_serves_stdio(self):
+        request = {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {}}
+        proc = subprocess.run(
+            [sys.executable, str(self.SERVER_PATH)],
+            input=json.dumps(request) + "\n", capture_output=True, text=True,
+            timeout=60)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        reply = json.loads(proc.stdout.splitlines()[0])
+        self.assertEqual(reply["result"]["serverInfo"],
+                         {"name": "readme-context-engine", "version": ENGINE_VERSION})
 
 
 CONTEXT_BUILT = (PROJECT_ROOT / "context" / "index" / "context_index.json").is_file() \
@@ -1360,6 +1456,172 @@ class TestMCPConfinement(unittest.TestCase):
                                 ("get_schema", {"path": "context"})):
             with self.subTest(tool=tool, arguments=arguments):
                 self.assertFalse(self._call(tool, arguments)["isError"])
+
+
+class TestMCPGetDoc(unittest.TestCase):
+    """get_doc serves only pages listed in docs/docs_index.json (README-010)."""
+
+    MARKER = "TOP-SECRET-GET-DOC-MARKER"
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_mcp_server()
+
+    def setUp(self):
+        from unittest.mock import patch
+        from scripts.context_engine import query
+        self.query = query
+        self.tmp = Path(tempfile.mkdtemp()).resolve()
+        self.addCleanup(shutil.rmtree, self.tmp, ignore_errors=True)
+        self.docs = self.tmp / "docs"
+        (self.docs / "demo" / "guide").mkdir(parents=True)
+        (self.docs / "demo" / "guide" / "intro.md").write_text(
+            "---\ntitle: Intro\nsource_file: intro.md\n---\n\n# Intro\n\nHello from demo.\n",
+            encoding="utf-8")
+        (self.docs / "demo" / "long.md").write_text("x" * 500, encoding="utf-8")
+        (self.docs / "own.md").write_text("# Own page\n", encoding="utf-8")
+        # Forbidden: a page under docs/ that is not indexed, a file outside
+        # docs/, and an indexed symlink that resolves outside docs/.
+        self.unindexed = self.docs / "demo" / "unindexed.md"
+        self.unindexed.write_text(self.MARKER, encoding="utf-8")
+        self.secret = self.tmp / "secret.md"
+        self.secret.write_text(self.MARKER, encoding="utf-8")
+        (self.docs / "demo" / "link.md").symlink_to(self.secret)
+        self._write_index(["demo/guide/intro.md", "demo/long.md", "own.md",
+                           "demo/link.md", "../secret.md"])
+
+        for name, value in (("DOCS_DIR", self.docs),
+                            ("DOCS_INDEX_PATH", self.docs / "docs_index.json")):
+            patcher = patch.object(query, name, value)
+            patcher.start()
+            self.addCleanup(patcher.stop)
+        patcher = patch.object(query, "load_index", return_value={
+            "projects": {"demo": {"repo": "owner/demo"}}})
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+        self.reads = []
+        original = Path.read_text
+
+        def spy(path, *args, **kwargs):
+            self.reads.append(Path(path).resolve())
+            return original(path, *args, **kwargs)
+
+        patcher = patch.object(Path, "read_text", autospec=True, side_effect=spy)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def _write_index(self, paths):
+        (self.docs / "docs_index.json").write_text(
+            json.dumps({"documents": [{"path": p} for p in paths]}), encoding="utf-8")
+
+    def _call(self, arguments):
+        response = self.server.handle_request(
+            {"jsonrpc": "2.0", "id": 1, "method": "tools/call",
+             "params": {"name": "get_doc", "arguments": arguments}})
+        return response["result"]
+
+    def test_indexed_page_returns_body_with_header(self):
+        for path in ("demo/guide/intro.md", "docs/demo/guide/intro.md"):
+            with self.subTest(path=path):
+                result = self._call({"path": path})
+                self.assertFalse(result["isError"], result)
+                text = result["content"][0]["text"]
+                self.assertTrue(text.startswith(
+                    "project: demo · repo: owner/demo · path: docs/demo/guide/intro.md\n\n# Intro"),
+                    text)
+                self.assertIn("Hello from demo.", text)
+                self.assertNotIn("source_file:", text)
+                self.assertNotIn("title: Intro", text)
+
+    def test_own_page_has_no_project(self):
+        text = self._call({"path": "own.md"})["content"][0]["text"]
+        self.assertEqual(text, "project: (none) · repo: (this repository)"
+                               " · path: docs/own.md\n\n# Own page\n")
+
+    def test_refuses_unindexed_traversal_absolute_and_symlink(self):
+        cases = {
+            "unindexed": "demo/unindexed.md",
+            "traversal": "demo/../../secret.md",
+            "indexed traversal": "../secret.md",
+            "absolute outside": str(self.secret),
+            "absolute inside": str(self.docs / "demo" / "guide" / "intro.md"),
+            "symlink": "demo/link.md",
+            "empty": "",
+            "docs root": "docs/",
+        }
+        for kind, path in cases.items():
+            with self.subTest(kind=kind):
+                result = self._call({"path": path})
+                self.assertTrue(result["isError"], result)
+                text = result["content"][0]["text"]
+                self.assertIn("unknown document", text)
+                self.assertNotIn(self.MARKER, text)
+                self.assertNotIn(str(self.tmp), text)
+                self.assertNotIn(str(self.server.ROOT), text)
+        self.assertNotIn(self.secret, self.reads, "a file outside docs/ was read")
+        self.assertNotIn(self.unindexed, self.reads, "an unindexed page was read")
+        self.assertNotIn(self.docs / "demo" / "guide" / "intro.md", self.reads)
+
+    def test_max_chars_truncates_with_note(self):
+        text = self._call({"path": "demo/long.md", "max_chars": 100})["content"][0]["text"]
+        body = text.split("\n\n", 1)[1]
+        self.assertEqual(body, "x" * 100 + "\n\n[truncated: 100 of 500 characters]")
+        whole = self._call({"path": "demo/long.md"})["content"][0]["text"]
+        self.assertNotIn("[truncated", whole)
+
+    def test_max_chars_is_clamped(self):
+        from unittest.mock import patch
+        doc = {"project": None, "repo": None, "path": "docs/x.md", "text": ""}
+        for requested, expected in ((None, 20000), (0, 1), (-5, 1),
+                                    (10 ** 9, 100000), ("50", 50)):
+            arguments = {"path": "x.md"}
+            if requested is not None:
+                arguments["max_chars"] = requested
+            with self.subTest(max_chars=requested), \
+                    patch.object(self.server, "get_doc", return_value=doc) as get_doc:
+                self._call(arguments)
+                self.assertEqual(get_doc.call_args.kwargs["max_chars"], expected)
+
+    def test_rebuilt_index_is_picked_up(self):
+        self._write_index(["demo/guide/intro.md"])
+        self.assertTrue(self._call({"path": "own.md"})["isError"])
+        self._write_index(["demo/guide/intro.md", "own.md"])
+        self.assertFalse(self._call({"path": "own.md"})["isError"])
+
+    def test_missing_index_is_a_hint_not_a_crash(self):
+        (self.docs / "docs_index.json").unlink()
+        result = self._call({"path": "own.md"})
+        self.assertTrue(result["isError"])
+        self.assertIn("generate_docs_index.py", result["content"][0]["text"])
+
+
+@unittest.skipUnless((PROJECT_ROOT / "docs" / "docs_index.json").is_file()
+                     and (PROJECT_ROOT / "context" / "nav" / "index.json").is_file(),
+                     "corpus index or navigation not built")
+class TestMCPGetDocOverCorpus(unittest.TestCase):
+    """A get_nav page path resolves through get_doc on the committed corpus."""
+
+    def test_nav_page_reads_through_get_doc(self):
+        server = _load_mcp_server()
+
+        def call(name, arguments):
+            return server.handle_request(
+                {"jsonrpc": "2.0", "id": 1, "method": "tools/call",
+                 "params": {"name": name, "arguments": arguments}})["result"]
+
+        projects = {p["name"] for p in json.loads(
+            call("list_projects", {})["content"][0]["text"])}
+        corpus = next(c["name"] for c in json.loads(call("get_nav", {})["content"][0]["text"])
+                      if c["name"] in projects)
+        pages = json.loads(call("get_nav", {"name": corpus, "flat": True})
+                           ["content"][0]["text"])["pages"]
+        result = call("get_doc", {"path": pages[0]["path"], "max_chars": 500})
+        self.assertFalse(result["isError"], result)
+        self.assertTrue(result["content"][0]["text"].startswith(
+            f"project: {corpus} · repo: "))
+        self.assertIn(f"path: docs/{pages[0]['path']}", result["content"][0]["text"])
+
 
 if __name__ == "__main__":
     unittest.main()

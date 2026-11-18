@@ -178,7 +178,7 @@ def build_apex(registry: Registry, facts_by_name: Dict[str, Dict],
         "",
         "AI clients connect through the MCP server (`mcp/server.py`, registered in"
         " `.mcp.json`): tools `list_projects`, `get_project`, `search_context`,"
-        " `get_readme`, `get_nav`, `get_schema`, `context_status`.",
+        " `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`.",
         "",
     ]
     return "\n".join(lines)
